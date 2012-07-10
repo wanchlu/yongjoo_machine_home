@@ -1,0 +1,488 @@
+\subsection{Information Retrieval Tutorial}
+
+This tutorial is about building a basic information retrieval system using Clairlib API. We will use a well-known IR test corpus, the Cranfield Collection, which contains 1,400 documents on aerodynamics. The main task is to process the Cranfield documents, and build an inverted index from them. After that, we will build a system that takes a query, processes it, finds and ranks documents matching that query, and returns a ranked list of results.
+
+\subsubsection{Corpus Description}
+The corpus used in this tutorial is the Cranfield Collection. You can download the Cranfield corpus from this link \emph{http://belobog.si.umich.edu/clair/clairlib/cranfield.tar.gz.} After downloading a copy of the file, create a new directory \emph{cranfield} and extract the file into it.
+\\
+\\
+\begin{boxedverbatim}
+   wget http://www.clairlib.org/clair/clairlib/cranfield.tar.gz
+   mkdir cranfield
+   cd cranfield
+   tar -xvzf ../cranfield.tar.gz
+\end{boxedverbatim}
+\\
+\subsubsection{Parse corpus files and store metadata}
+
+\textbf{Parse XML file}
+
+The first thing we need to do is to write a subroutine that parses a cranfield XML file and store its content in a hash.
+\\
+\\
+\begin{boxedverbatim}
+
+use XML::Simple;
+sub parse_file{
+   my $file=shift;
+   # create object
+   my $xml = new XML::Simple;
+   # read XML file
+   my $data = $xml->XMLin($file);
+   return $data;
+}
+\end{boxedverbatim}
+\\
+
+Next, we write another subroutine to process all the collection files, store them in a suitable format for indexing, and store their metadata. We need this step because the default format of the files isn't compatible with the input format that Clairlib expect. We will explain the parts of this subroutine first and show the whole code later.
+\\
+\\
+\textbf{Create dbm files to store metadata}
+
+We need first to create four db files to store the metadata: title, bibliography, author, and length.
+\\
+\\
+\begin{boxedverbatim}
+
+   %title_meta=();
+   dbmopen(%title_meta, "titles", 0666);
+   %bibl_meta=();
+   dbmopen(%bibl_meta, "bibl", 0666);
+   %author_meta=();
+   dbmopen(%author_meta, "authors", 0666);
+   %length=();
+   dbmopen(%length, "doclength", 0666);
+
+\end{boxedverbatim}
+\\
+
+This will create four db files and bind each of them to a hash.
+\\
+\\
+\textbf{Parse all files and store metadata}
+
+Then, we read all the files from their location, parse each file, store its content in a new txt file, and store its metadata in the db files through the hashes.
+\\
+\\
+\begin{boxedverbatim}
+if(-d $destination){
+    `rm -r $destination`;
+}
+`mkdir $destination`;
+@files = <$cranfield_path/*>;
+foreach my $doc(@files){
+   my $hash = parse_file("$doc");
+   my $text =  $hash->{"TITLE"} . "\n" . $hash->{"TEXT"}. "\n" .
+               $hash->{"AUTHOR"};
+   my $docno = $hash->{"DOCNO"};
+   $docno =~ s/[^0-9]*([0-9]+)[^0-9]*/$1/g;
+   open (FILE, ">$destination/$docno.txt") or die "Can't create file";
+   print FILE $text;
+   close (FILE);
+   $title_meta{$docno} = $hash->{"TITLE"};
+   $author_meta{$docno} = $hash->{"AUTHOR"};
+   $text =~ s/\.//g; $text =~ s/,//g;
+   my @doclength = split /\s+/, $text;
+   $length{$docno} = scalar @doclength;
+}
+\end{boxedverbatim}
+\\
+
+The first four lines of the code above check whether the directory \emph{\$destination} already exists or not. If it exists, it will be deleted and then a new empty directory is created. The rest of the code loops through the collection files and processes them as explained before.
+\\
+\\
+\textbf{Put all together}
+
+The whole code for processing the collection is shown next
+\\
+\\
+\begin{boxedverbatim}
+
+sub process_collection{
+   my ($cranfield_path, $destination) = @_;
+   print "parsing xml and storing metadata...\n";
+   @files = `ls $cranfield_path`;
+   %title_meta=();
+   dbmopen(%title_meta, "titles", 0666);
+   %bibl_meta=();
+   dbmopen(%bibl_meta, "bibl", 0666);
+   %author_meta=();
+   dbmopen(%author_meta, "authors", 0666);
+   %length=();
+   dbmopen(%length, "doclength", 0666);
+   if(-d $destination){
+      `rm -r $destination`;
+   }
+  `mkdir $destination`;
+   @files = <$cranfield_path/*>;
+   foreach my $doc(@files){
+       my $hash = parse_file("$doc");
+       my $text =  $hash->{"TITLE"} . "\n" . $hash->{"TEXT"}. "\n" /
+        . $hash->{"AUTHOR"};
+       my $docno = $hash->{"DOCNO"};
+       $docno =~ s/[^0-9]*([0-9]+)[^0-9]*/$1/g;
+       open (FILE, ">$destination/$docno.txt") or die "Can't create file";
+       print FILE $text;
+       close (FILE);
+       $title_meta{$docno} = $hash->{"TITLE"};
+       $author_meta{$docno} = $hash->{"AUTHOR"};
+       $text =~ s/\.//g; $text =~ s/,//g;
+       my @doclength = split /\s+/, $text;
+       $length{$docno} = scalar @doclength;
+   }
+}
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Compute TF and IDF}
+
+By now, we have the files ready for indexing and stored in \emph{\$destination}. The next step is to use the \emph{Clair::Utils::CorpusDownload} module to read these files and create a clairlib corpus.
+We start by creating a new object of the \emph{Clair::Utils::CorpusDownload}.
+\\
+\\
+\begin{boxedverbatim}
+$corpus = Clair::Utils::CorpusDownload->new(corpusname => "cranfield",
+          rootdir => "produced");
+\end{boxedverbatim}
+\\
+\\
+\emph{rootdir} is the path to the directory where the corpus and its TFIDF index will be built and stored.
+Using the \emph{\$corpus} object, we call \emph{build\_corpus\_from\_directory()} subroutine which builds a corpus from a set of files located on the computer.
+\\
+\\
+\begin{boxedverbatim}
+corpus->build_corpus_from_directory(dir=>$data_source, cleanup => 0,
+                                    skipCopy => 0);
+\end{boxedverbatim}
+\\
+\\
+This will read all the txt files that we created above and store them in the \emph{produced} directory in TREC "Text REtrieval Conference" format. \emph{cleanup=0} is used to retain metafiles produced during corpus build.
+Then, we build the Inverse Document Frequency (IDF) and the Term Frequency (TF).
+\\
+\\
+\begin{boxedverbatim}
+    $corpus->buildIdf(stemmed => 1);
+    $corpus->build_docno_dbm();
+    $corpus->buildTf(stemmed => 1);
+
+\end{boxedverbatim}
+\\
+\\
+The \emph{stemmed=1} option indicates that the TF and the IDF are computed using stemmed values. Notice that we have to call \emph{build\_docno\_dbm()} before the \emph{buildTF}. \emph{build\_docno\_dbm()} builds the \emph{DOCNO-to-URL} and \emph{URL-to-DOCNO} databases.
+The whole code for the \emph{create\_index()} subroutine that creates the corpus and builds the index is
+\\
+\\
+\begin{boxedverbatim}
+use Clair::Utils::CorpusDownload;
+use Clair::Utils::Tf;
+sub create_index{
+   my $data_source = shift;
+   my $corpus = Clair::Utils::CorpusDownload->new(corpusname => "corpus",
+                                                  rootdir => "produced");
+   $corpus->build_corpus_from_directory(dir=>"$data_source",
+                        cleanup => 0,  skipCopy => 0);
+   $corpus->buildIdf(stemmed => 1);
+   $corpus->build_docno_dbm();
+   $corpus->buildTf(stemmed => 1);
+   $corpus->build_term_counts(stemmed => 1);
+}
+\end{boxedverbatim}
+\\
+\\
+Now, put the three subroutines (\emph{parse\_file(), process\_collection(), and create\_index()}) in a module file and name it \emph{IR.pm}
+
+Create a Perl script file \emph{index.pl} and add the following to it
+\\
+\\
+\begin{boxedverbatim}
+
+#! /usr/bin/perl
+use IR;
+my $collection_path = shift;
+my $destination = "data";
+process_collection($collection_path,$destination);
+create_index($destination);
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Query description}
+We need our system to be able to handle the following types of queries:
+\\
+\begin{boxedverbatim}
+cat          : returns any document that has the word "cat" in it
+
+cat dog      : any document that has one or more of these words
+           ("fuzzy or" is assumed by default)
+
+cat dog rat  : up to 10 words in a query
+
+"tabby cat"  : phrases of up to 5 words in length
+
+!"tabby cat" : negations of single words or phrases
+
+!cat !dog    : multiple negations per query
+
+"small tabby cat" "shaggy dog" : multiple phrases in a query
+
+!cat
+\end{boxedverbatim}    
+\\
+\\
+In this tutorial, we will not worry about nested queries in parentheses. Each query should return zero or more matching documents. If multiple documents match, we should sort them by decreasing score. The score is defined as the number of query terms (or phrases) that match in the "fuzzy or", including repetitions and counting phrases as the number of words that are included in them. Negated terms are not included in the score. For example, if the query is: (cat dog "pack rat") and we have three documents D1, D2, and D3 that contain at least one of the query terms as follows:
+
+\begin{itemize}
+  \item D1: cat cat dog cat mouse
+  \item D2: pack rat cat rat rat
+  \item D3: rabbit elephant dog dog cat pack rat cat
+\end{itemize}
+
+their scores should be as follows:
+
+\begin{itemize}
+  \item 4
+  \item 3 ("pack rat" counts as two terms, but "rat" alone doesn't count)
+  \item 6
+\end{itemize}
+
+\subsubsection{Processing and handling the queries}
+
+We start by showing the code then the explanation follows:
+\\
+\\
+\begin{boxedverbatim}
+
+#!/usr/bin/perl
+use Clair::IR;
+print "Enter your query or type q to quit\n>";
+my $query= <>;
+while ($query ne "q\n"){
+  my @searchTerms=();
+  while ($query =~ s/!\"(.+?)\"//){
+    push(@searchTerms, "!".$1);
+  }
+  while ($query =~ s/\"(.+?)\"//){
+    push(@searchTerms, $1);
+  }
+  push(@searchTerms, split(/\s+/, $query));
+  my ($ref, $locref) = execute_query(@searchTerms);
+  my %results = %$ref;
+  my %locations = %$locref;
+  @sortedResults = reverse sort {$results{$a} <=> $results{$b}} keys %results;
+  foreach my $result(@sortedResults){
+     my $sum =  get_summary($result, $locations{$result});
+     print "Doc: $result  \tScore: $results{$result}\t$sum\n";
+  }
+  print "\n>";
+  $query=<>;
+}
+
+\end{boxedverbatim}
+\\
+
+Add the code above to a Perl script file and name it \emph{query.pl}
+\\
+\\
+The code for the \emph{get\_summary} subroutine is
+\\
+\\
+\begin{boxedverbatim}
+sub get_summary{
+   my ($docId, $position) = @_;
+   my $text = `cat data/$docId.txt`;
+   $text =~ s/\s\./\./g;
+   my $return = "";
+   my $start = 0;
+   @words = split /\s+/,$text;
+   if ($position > 11){
+       $start = $position - 11;
+   }
+   for($count = $start; $count <= ($start+20); $count++){
+       if (exists $words[$count]){$return .= "$words[$count] ";}
+       if ($count == $start +10){$return .= "\n\t\t";}
+   }
+   return $return;
+}
+\end{boxedverbatim}
+\\
+\\
+Add \emph{get\_summary} to \emph{IR.pm}
+
+\textbf{Read in the query and parse it}
+
+The code above starts by asking the user to enter a query to search for, or "q" to exit.
+\\
+\\
+\begin{boxedverbatim}
+print "Enter your query or type q to quit\n>";
+my $query= <>;
+\end{boxedverbatim}
+\\
+\\
+For each query, create a hash to store the query terms in  @searchTerms.
+
+The search term is a single word (e.g. cat), a negated word (e.g. !cat), a phrase (e.g. "cat dog"), a negated phrase (e.g. !"cat dog"). To parse the query into a set of search terms, we start by extract the negated phrases from the query (e.g. !"cat dog") and add each phrase as a single negated entry to the searchTerms hash.
+\\
+\\
+\begin{boxedverbatim}
+while ($query =~ s/!\"(.+?)\"//){
+    push(@searchTerms, "!".$1);
+}
+\end{boxedverbatim}
+\\
+\\
+For example, if the query is \textbf{cat !dog !"dog rat" "monkey cat"} The above while loop will extract \textbf{!dog rat} from the query and add it as one entry to the \textbf{searchTerms} hash and leaves \textbf{cat !dog "monkey cat"} in the query.
+Next, we extract the unnegated phrases from the query (e.g. "monkey cat")
+\\
+\\
+\begin{boxedverbatim}
+while ($query =~ s/\"(.+?)\"//){
+    push(@searchTerms, $1);
+}
+\end{boxedverbatim}
+\\
+\\
+The above while loop extracts the phrase \textbf{monkey cat} and add as a single search term leaving \textbf{cat !dog}.
+After that, we add all the remaining words (negated and unnegated) to \emph{@searchTerms}
+\\
+\\
+\begin{boxedverbatim}
+push(@searchTerms, split(/\s+/, $query));
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Execute the query and return the results}
+
+After adding all the search terms to \emph{@searchTerms} as explained in the previous subsection, \emph{@searchTerms} array is passed to a subroutine, \emph{execute\_query}
+\\
+\\
+\begin{boxedverbatim}
+my ($ref, $locref) = execute_query(@searchTerms);
+\end{boxedverbatim}
+\\
+\\
+\emph{execute\_query()} takes an array of search terms and returns two hashes; one of DocIds of matching documents along with their scores, and the other of the location of the first result.
+\\
+\\
+\begin{boxedverbatim}
+sub execute_query{
+   my @searchTerms = @_;
+   my $tf = Clair::Utils::Tf->new(rootdir => "produced",
+                   corpusname => "corpus", stemmed => 1);
+   my %results = ();
+   my %out = ();
+   my %location = ();
+   my @negation;
+   my $negationOnly = 1;
+   foreach $term(@searchTerms){
+       if ($term=~ s/!//g){
+           push(@negation, $term);
+       }else{
+           $negationOnly = 0;
+           my @words = split(/ /, $term);
+           $numWords = @words;
+           my $urls = $tf->getDocsWithPhrase(@words);
+           foreach my $key (keys %$urls){
+               $ref = $urls->{$key};
+               $toAdd = keys(%$ref) * $numWords;
+               $key =~ s/.*\/([0-9]+)\.txt/$1/g;
+               if (!exists $location{$key}){
+                   my ($position, $storedVal) = each %$ref;
+                   $location{$key} = $position;
+               }
+               if (exists $out{$key}){
+                   $out{$key}+= $toAdd;
+               }else{
+                   $out{$key}=$toAdd;
+               }
+           }
+       }
+   }
+   if ($negationOnly == 1){
+       %out = getAllDocKeys($tf);
+       foreach my $key(keys %out){
+           $location{$key} = 0;
+       }
+   }
+   if ((scalar @negation) > 0){
+       my @negatedDocs = negationResults(\@negation, $tf);
+       foreach $removeDoc(@negatedDocs){
+           if (exists $out{$removeDoc}){
+               delete $out{$removeDoc};
+           }
+       }
+   }
+   return \%out, \%location;
+}
+\end{boxedverbatim}
+\\
+\\
+\textbf{Sort the results by scores}
+\\
+\\
+\begin{boxedverbatim}
+
+my %results = %$ref;
+my %locations = %$locref;
+@sortedResults = reverse sort {$results{$a} <=> $results{$b}} keys %results;
+[edit]Print out the results
+foreach my $result(@sortedResults){
+   my $sum =  get_summary($result, $locations{$result});
+   print "Doc: $result  \tScore: $results{$result}\t$sum\n";
+}
+
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Test the system}
+
+Now, you should have created three files
+\begin{itemize}
+  \item IR.pm which includes four subroutines:
+  \begin{itemize}
+    \item \emph{parse\_file}
+    \item \emph{create\_index}
+    \item \emph{process\_collection}
+    \item \emph{execute\_query}
+    \item \emph{get\_summary}
+  \end{itemize}
+  \item index.pl
+  \item query.pl
+\end{itemize}
+
+Make sure that these files are in the same directory. To test the system, first run index.pl to create the index.
+
+\begin{verbatim}
+perl index.pl cranfield
+\end{verbatim}
+
+Then, run query.pl
+
+\begin{verbatim}
+perl query.pl
+\end{verbatim}
+
+Then, enter a search query (e.g. chemical reaction)
+
+\begin{verbatim}
+ Enter a query to search for, or enter "q" to exit
+>chemical reactions
+\end{verbatim}
+
+The output will something like
+
+\begin{boxedverbatim}
+
+Doc: 1061   Score: 8
+            to take place according to a single-step chemical reaction.
+            the solution of the problem is based on the simultaneous.
+Doc: 488    Score: 7
+            linearizing is achieved by expanding equation of rate of chemical
+            reaction in a taylor series and neglecting higher-order terms.
+Doc: 1296   Score: 7
+            non-equilibrium expansions of air with coupled chemical reactions.
+            analysis and solutions of the streamtube gas dynamics involving
+            coupled chemical rate
+...
+\end{boxedverbatim}

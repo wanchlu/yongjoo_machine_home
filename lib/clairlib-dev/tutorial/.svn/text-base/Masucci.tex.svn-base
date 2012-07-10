@@ -1,0 +1,164 @@
+\subsection{Network Properties of Written Human Language}
+
+In this tutorial we use Clairlib to replicate the work done by Masucci and Rodgers in their paper, \emph{Network Properties of Written Human Language}, in which they investigate the nature of written human language within the framework of complex network theory. Specifically, they analyze the topology of Orwell’s novel, 1984, focusing on network properties.
+
+
+\subsubsection{Network Properties}
+
+The properties that we will calculate for the network that represents the text are:
+\begin{itemize}
+  \item \textbf{Number of nodes:} each node corresponds to a word or a puncutation.
+  \item \textbf{Number of edges:} two nodes are linked by an edge if they are neighbors.
+  \item \textbf{Reciprocity value:} which quantifies the non-random presence of mutual edges between pairs of vertices.
+  \item \textbf{Mean degree (word frequency):} the number of different words this word is connected. The degree and the frequency of a word have the same meaning, and are equal, because every time a new word is added to the text it is the only vertex of the network to acquire an edge.
+  \item \textbf{Degree distribution:} the probability distribution of words degrees over the whole network.
+  \item \textbf{Zipf's power law exponent:} the exponent of the power law that relats the word's frequency of occurance to its rank (where words are ranked on their frequency of occurrence.)
+  \item \textbf{Growth exponent:} the exponent of the growth in the number of words with respect to time.
+\end{itemize}
+
+\subsubsection{Corpus}
+
+The corpus used in this tutorial is the well-known novel, Nineteen Eighty-Four (abbreviated to 1984) by English author George Orwell. The novel is available in txt format at \textbf{http://www.clairlib.org/mediawiki/index.php/Corpora}.
+
+\subsubsection{Convert Text to Network}
+
+The first step is to build a network from the novel text. We treat the text as a finite directed network in which the words are the vertices and two vertices are linked if they are neighbors. Punctuation is also considered as vertices.
+To convert the text to network, we do following steps:
+Read in the file:
+\\
+\\
+\begin{boxedverbatim}
+$file = "1984.txt";
+$text = `cat $file`;
+
+\end{boxedverbatim}
+\\
+\\
+Split the text into separate words and store them in an array:
+\\
+\\
+\begin{boxedverbatim}
+$text =~ s/ \'/ /g;
+$text =~ s/\' / /g;
+$text =~ s/([^A-Za-z])/ $1 /g;
+my @words = split /\s+/, $text;
+\end{boxedverbatim}
+\\
+\\
+Normalize the words' case by converting each to lower case:
+\\
+\\
+\begin{boxedverbatim}
+my @res = ();
+foreach my $w (@words) {
+    push @res, lc($w);
+}
+\end{boxedverbatim}
+\\
+\\
+Build the network and write it to a file:
+\\
+\begin{boxedverbatim}
+open(OUTFILE, ">1984.graph");
+my $i=0;
+for($i =0; $i<$#words; $i++)
+{
+   print OUTFILE "$words[$i] $words[$i+1]\n";
+}
+close (OUTFILE);
+\end{boxedverbatim}
+\\
+\\
+
+\subsubsection{Basic Network Statistics}
+
+These statistics include number of nodes, number of edges, mean degree, and degree power law distribution exponent. All these can be calculated using the clairlib utility script, print\_network\_stats.pl.
+\begin{verbatim}
+  print_network_stats.pl --input 1984.graph --all --force
+\end{verbatim}
+
+Following are the results that we got versus the results got by Masucci and Rodgers in their paper.
+\\
+\\
+\begin{tabular}{|l|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Property & Paper & Clairlib \\
+  \hline
+  Number of Nodes & 117687 & 117196 \\
+  Number of edges & 8992 & 8576 \\
+  Mean degree & 13.1 & 13.65 \\
+  Degree power law distribution exponent & -2.1 & -1.9 \\
+  \hline
+\end{tabular}
+
+\subsubsection{Calculate the reciprocity value}
+
+\begin{boxedverbatim}
+  use Clair::Network qw($verbose);
+  use Clair::Network::Reader::Edgelist;
+  $reader = Clair::Network::Reader::Edgelist->new();
+  $delim = "[ \t]+";
+  $filebased = 0;
+  $fname = "1984.graph";
+  $net = $reader->read_network($fname,
+                                 delim => $delim,
+                                 directed => 1,
+                                 filebased => $filebased,
+                                 edge_property => "lexrank_transition",
+                                 multiedge => 1);
+  $n = $net->num_nodes();
+  $l = scalar($net->get_edges());
+  $a = $l/$n/($n-1);
+  $mutual = $net->get_mutual_edges_num();
+  $r = $mutual/$l;
+  $rho =  ($r - $a)/(1-$a);
+  print "r=$r\na=$a\nrho=$rho\n";
+\end{boxedverbatim}
+\\
+\\
+The result is:
+\begin{itemize}
+  \item Clairlib 0.021
+  \item Paper 0.0204
+\end{itemize}
+
+\subsubsection{Calculate degree growth}
+
+\begin{boxedverbatim}
+  my $i=0;
+  my %list = ();
+  my %hist = ();
+  my $count = 0;
+  for($i =0; $i<$#words; $i++)
+  {
+          if(exists $list{$words[$i]})
+          {
+                  $hist{$count} = $i+1;
+          }
+          else{
+            $hist{$count++}= $i+1;
+                  $list{$words[$i]} = 0;
+          }
+  }
+  my $reader = Clair::Network::Reader::Edgelist->new();
+  my $delim = "[ \t]+";
+  my $filebased = 0;
+  my $net = $reader->read_network("1984.graph",
+                                 delim => $delim,
+                                 directed => 1,
+                                 filebased => $filebased,
+                                 edge_property => "lexrank_transition",
+                                 multiedge => 1);
+  my @fit = $net->linear_regression(\%hist, log => 1);
+  print "$fit[0]\n";
+
+\end{boxedverbatim}
+\\
+\\
+The result is:
+\begin{itemize}
+  \item Clairlib 1.53
+  \item Paper 1.8
+\end{itemize}
+

@@ -1,0 +1,15 @@
+\subsubsection{Generate a corpus by downloading files}
+
+\begin{boxedverbatim}
+
+ output: indexed corpus
+
+ mkdir corpus
+ cd corpus
+ wget -r -nd -nc \
+   http://belobog.si.umich.edu/clair/corpora/chemical
+ cd ..
+ directory_to_corpus.pl -c chemical -b produced -d corpus
+ index_corpus.pl -c chemical -b produced
+
+\end{boxedverbatim}

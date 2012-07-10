@@ -1,0 +1,9 @@
+\subsubsection{Generate a corpus by crawling a site}
+
+\begin{boxedverbatim}
+ output: indexed corpus
+
+ crawl_url.pl -u http://www.asdg.com/ -o asdg.urls
+ download_urls.pl -c asdg -i asdg.urls -b produced
+ index_corpus.pl -c asdg -b produced
+\end{boxedverbatim}

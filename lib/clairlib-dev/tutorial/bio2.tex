@@ -1,0 +1,82 @@
+\subsection{Clair::Bio::Connection}
+
+This module connects to the Bio database using SOAP.  There are a number of functions.  
+The first is get\_ids().  It returns a list of the ids of every paper in the database.  
+The second is get\_sentences(\$id), which Returns a list of hash references containing information about each sentence in the document with PMID \$id.   
+The third is get\_title(\$id).  It returns the title of the document with PMID \$id.  The fourth is get\_body(\$id), which returns all of the sentences of the document with PMID \$id concatenated together.
+The function get\_citing\_sentences(\$citer, \$cited) returns a list of sentences from the document with PMID \$citer that cite the document with PMID \$cited. This list will have the same structure as in get\_sentences.
+Next, count\_citations() returns the total number of citations in the database.
+If you want information from the abstract of an article, you can use get\_abstract\_sentences(\$id) and get\_abstract(\$id), which perform similar processes as the article functions.
+Then, you can build a network around these articles using some of the other functions present.  {g}et\_degree\_in(\$id) returns the total number of papers that cite the document with PMID \$id.  {g}et\_degree\_out(\$id) returns the total number of papers the document with PMID \$id cites.  {g}et\_citation\_network(@ids) returns a Clair::Network object of ids with an edge between id1 and id2 if id1 cites id2. Generates the network starting from the ids in @ids.
+To return a Clair::Network object containing the full citation network, use get\_full\_citation\_network().
+The last function is dbquery(\$statement), which executes the given statement on the database and returns the results. The result is an array of array references. See the synopsis for an example.
+The code to open a connection and perform some sample calculations would look like this:
+\\
+\\
+\begin{boxedverbatim}
+
+my $c = Clair::Bio::Connection->new();
+my $graph = $c->get_citation_network($id);
+
+foreach my $from (sort keys %$graph) {
+    foreach my $to (sort keys %{ $graph->{$from} }) {
+        print "$from => $to\n";
+    }
+}
+
+\end{boxedverbatim}
+
+\subsection{Clair::Bio::EUtils}
+
+Clair::Bio::EUtils is a base class for Clair::Bio::EUtils objects.  It is a container for variables useful inside of Clair::Bio::EUtils::*.
+It has two functions, hash2args and build\_url.
+\\
+\\
+\begin{boxedverbatim}
+
+my %args = ( this => "that thing" );
+my $base = "http://foo.bar/thing.cgi";
+my $url = build_url( base => $base, args => %ags );
+print "$url\n"; $ prints http://foo.bar/thing.cgi?this=that%20thing
+
+\end{boxedverbatim}
+\\
+\\
+\begin{boxedverbatim}
+
+my %hash = ( this => "that thing", foo => "bar" );
+my $str = hash2args(%hash);
+print "$str\n"; # prints this=that%20thing&foo=bar
+
+\end{boxedverbatim}
+
+\subsection{Clair::Bio::GeneRIF}
+
+This module is used to parse GeneRIFs files. A GeneRIF file has the following format: the first line is meta-data that labels each tab-delimited field, and the rest of the lines are those fields.
+The parsed file is saved into a DBM file after being parsed. The module will look for a DBM file before attempting to parse the text file, unless the 'reload' parameter is passed with a true value to the constructor.
+Access to the data is done by passing a gene\_id value to the get\_records\_from\_id method, which returns a list of all the GeneRIFs with the given gene\_id. Additionaly, you may access all GeneRIF entries at once using the get\_all\_records method. This will most likely be a large hash, backed by a DBM, so it would be best to use the each() function to iterate over its keys and values.
+This module uses DB\_File to store nested data structures.
+There are a number of methods in this module.
+The first, new, constructs a new GeneRIF object. The 'path' parameter must point to a GeneRIF text file. The 'reload' parameter is optional and will force the DBM to be recreated (this defaults to false).
+{g}et\_records\_from\_id returns a list of records with the given gene\_id. Each record is an array where the values are in the same order as the fields at the top of the file. Returns () if there are no records. 
+To get the total number of records, use get\_total\_records.  To get all of the records from the GeneRIF file as a hashref mapping gene\_ids to lists of records, use get\_all\_records.
+The function get\_fields returns a list of the field names. These are the keys in each record.
+An example of the usage of this module would look like this:
+\\
+\\
+\begin{boxedverbatim}
+
+my @records = $g->get_records_from_id($no);
+my @fields = $g->get_fields();
+foreach my $i (0 .. $#records) {
+    print "Record $i {\n";
+    my @rifs = @{$records[$i]};
+    foreach my $j (0 .. $#rifs) {
+        print "\t$fields[$j] => $rifs[$j]\n";
+    }
+    print "}\n";
+}
+
+\end{boxedverbatim}
+\\
+

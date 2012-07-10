@@ -1,0 +1,40 @@
+\subsection{Generate a Collection of Synthetic Documents}
+In this tutorial, we will use the Clairlib utility 'make\_synth\_collection.pl' to generate a collection of synthetic documents. It takes a pre-existing corpus and uses the 'produced' directory as the starting point to build a synthetic collection similar to the original. The utility takes some statistical information as arguments, which it uses to generate the synthetic collection. To see the options the utility provides, type the command
+
+\begin{verbatim}
+make_synth_collection.pl --help
+\end{verbatim}
+
+For this tutorial, we will generate a collection with the name SynthCollection from the files downloaded in Section 6.1 of this document. First, if you have already completed Section 6.1, rename the directory 'corpus' to 'source' to make things clearer:
+
+\begin{verbatim}
+mv corpus source
+\end{verbatim}
+
+If you haven't already completed that section of the tutorial, use the first few commands in Section 6.1 to download the required documents into 'source' and generate and index a corpus from 'source':
+\\
+\\
+\begin{boxedverbatim}
+mkdir source
+cd source
+wget -r -nd -nc http://belobog.si.umich.edu/clair/corpora/chemical
+cd ..
+directory_to_corpus.pl --corpus chemical --base produced \
+ --directory source
+index_corpus.pl --corpus chemical --base produced
+\end{boxedverbatim}
+\\
+\\
+Now, we will use the 'chemical' corpus in the directory 'produced' as a base to generate a synthetic collection. The collection's size will be 20 documents. The terms used in the synthetic documents will be chosen from the input corpus using a Zipfian distribution (with alpha = 1) with respect to term frequency. (That is, terms ranked higher in term frequency in the original corpus are more likely to appear in the synthetic collection. The probability is inversely proportional to rank * alpha, as dictated by Zipf's Law.) The lengths of the synthetic documents will mirror the lengths of the original documents.
+\\
+\\
+\begin{boxedverbatim}
+make_synth_collection.pl --output SynthCollection --directory synth_out \
+ --corpus chemical --base produced --size 20 --term-policy zipfian \
+ --term-alpha 1 --doclen-policy mirror --verbose
+\end{boxedverbatim}
+\\
+\\
+This will generate the synthetic collection in the directory 'synth\_out/'. The --size argument specifies the number of documents in the synthetic collection. --term-policy is the method used to pick terms from the source corpus to include in the synthetic collection. --doclen-policy is the method used to determine the lengths of the documents. The other 'term' and 'doclen' arguments are statistical variables that vary depending on the policies used. That is, different --term-policy and --doclen-policy arguments warrant the inclusion of different variables as arguments to the utility (as delineated in the --help command).
+
+One special term-policy is 'manualweights', which requires the user to provide a file containing a list of weights corresponding to all unique terms in the source corpus sorted from most to least frequent. One way of determining the rank of each term and modify it is to look at the file 'source\_tc.txt', generated in the output directory (in this tutorial, 'synth\_out').

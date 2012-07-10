@@ -1,0 +1,244 @@
+=head1 NAME
+
+Mail::Message::Convert::EmailSimple - translate Mail::Message to Email::Simple vv
+
+=head1 INHERITANCE
+
+ Mail::Message::Convert::EmailSimple
+   is a Mail::Message::Convert
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ use Mail::Message::Convert::EmailSimple;
+ my $convert = Mail::Message::Convert::EmailSimple->new;
+
+ my Mail::Message $msg    = Mail::Message->new;
+ my Email::Simple $intern = $convert->export($msg);
+
+ my Email::Simple $intern = Mail::Internet->new;
+ my Mail::Message $msg    = $convert->from($intern);
+
+ use Mail::Box::Manager;
+ my $mgr     = Mail::Box::Manager->new;
+ my $folder  = $mgr->open(folder => 'Outbox');
+ $folder->addMessage($intern);
+
+=head1 DESCRIPTION
+
+The Email::Simple class is one of the base objects used by the
+large set of Email* modules, which implement many e-mail needs
+which are also supported by MailBox.  You can use this class to
+gradularly move from a Email* based implementation into a MailBox
+implementation.
+
+The internals of this class are far from optimal.  The conversion
+does work (thanks to Ricardo Signes), but is expensive in time
+and memory usage.  It could easily be optimized.
+
+=head2 Converters between message objects
+
+=head2 Other converters
+
+=head1 METHODS
+
+=head2 Constructors
+
+Mail::Message::Convert::EmailSimple-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Convert/"METHODS">
+
+=back
+
+=head2 Converting
+
+$obj-E<gt>B<export>(MESSAGE, OPTIONS)
+
+=over 4
+
+Returns a new Email::Simple object based on the information from
+a L<Mail::Message|Mail::Message> object.  The MESSAGE specified is an
+instance of a Mail::Message.
+
+example: 
+
+ my $convert = Mail::Message::Convert::EmailSimple->new;
+ my Mail::Message  $msg   = Mail::Message->new;
+ my Mail::Internet $copy  = $convert->export($msg);
+
+=back
+
+$obj-E<gt>B<from>(OBJECT, OPTIONS)
+
+=over 4
+
+Returns a new L<Mail::Message|Mail::Message> object based on the information from
+an Email::Simple.
+
+example: 
+
+ my $convert = Mail::Message::Convert::EmailSimple->new;
+ my Mail::Internet $msg  = Mail::Internet->new;
+ my Mail::Message  $copy = $convert->from($msg);
+
+=back
+
+$obj-E<gt>B<selectedFields>(HEAD)
+
+=over 4
+
+See L<Mail::Message::Convert/"Converting">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Message::Convert::EmailSimple-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Message::Convert::EmailSimple-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Message::Convert::EmailSimple-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DIAGNOSTICS
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

@@ -1,0 +1,83 @@
+\subsection{Generate a URL-Based Network out of a Hyperlinked Dataset}
+In this tutorial we will use some Clairlib utils to generate a URL-based network out of a hyperlinked dataset without the need to index it since indexing takes a long time in large datasets. We will show two ways to do this:
+
+\subsubsection{By creating a CL corpus first}
+
+This way involves three steps:
+
+\begin{itemize}
+  \item  Create a corpus out of the dataset
+  \item  Generate the links database of the corpus
+  \item  Create the URL-based network
+\end{itemize}
+
+\textbf{Create a Corpus out of the dataset}
+
+For the purpose of this tutorial we'll build a corpus by downloading the dataset files from internet. We will use the chemical elements dataset as an example.
+\\
+\\
+\begin{boxedverbatim}
+ download_urls.pl -c chemical \
+ -i http://belobog.si.umich.edu/clair/corpora/chemical \
+ -b produced
+\end{boxedverbatim}
+\\
+\\
+If you have the files already downloaded and stored in some directory on your machine, you can use
+\\
+\\
+\begin{boxedverbatim}
+ directory_to_corpus.pl --corpus chemical \
+ --directory source --base produced --type html
+\end{boxedverbatim}
+\\
+\\
+where "source" the directory where the dataset is located.
+
+\textbf{Generate the links database of the corpus}
+
+To do this, we'll use index\_corpus.pl utility. However, we'll pass some parameters that instruct it to skip the indexing part and only build the files needed for the next step (i.e. building the URL network of the corpus)
+\\
+\\
+\begin{boxedverbatim}
+ index_corpus.pl --corpus checmial \
+ --base produced --notf --noidf --nostats
+\end{boxedverbatim}
+\\
+\\
+The --notf, the --noidf, and the --nostats arguments ask the code to skip the indexing steps.
+
+
+\textbf{Create the URL-Based Network}
+
+To create the URL network, we'll use the corpus\_to\_network.pl util as follows
+\\
+\\
+\begin{boxedverbatim}
+ corpus_to_network.pl -c chemical -b produced -o chemical.graph
+\end{boxedverbatim}
+\\
+\\
+Where chemical.graph is the name of the resulting graph file.
+
+
+\subsubsection{Without creating a corpus}
+
+To do this, lets download the chemical files and store them into a directory "chemical\_src"
+\\
+\\
+\begin{boxedverbatim}
+ mkdir chemical_src
+ cd chemical_src
+ wget -r -nd -nc http://belobog.si.umich.edu/clair/corpora/chemical
+ cd ..
+\end{boxedverbatim}
+\\
+\\
+Then, we will use the directory\_to\_URL\_network.pl utility as follows:
+\\
+\\
+\begin{boxedverbatim}
+ directory\_to\_URL_network.pl --directory chemical_src \
+ --output chemical.graph
+\end{boxedverbatim}

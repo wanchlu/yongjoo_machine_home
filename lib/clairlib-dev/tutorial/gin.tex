@@ -1,0 +1,85 @@
+\subsection{Gene Interaction Extraction}
+In this tutorial you will learn how to use Clairlib in one Bioinformatics application; i.e. Gene Interaction Extraction. Specifically, you will learn to do the following:
+
+\begin{itemize}
+  \item  Tag the Genes in a given sentence.
+  \item  Tag the interaction words in a sentence.
+  \item  Extract the interactions from a given sentence.
+\end{itemize}
+
+To be able to perform the tasks above, you need to make sure that you installed both the Geneia Tagger and the Stanford Parser, and configured Clairlib to properly use them by uncommenting the following lines and pointing the variables in them to the correct paths.
+\\
+\\
+\begin{boxedverbatim}
+  $STANFORD_PARSER_PATH = "/path/to/stanford-parser";
+  $GENIATAGGER_PATH = "/path/to/genia-tagger";
+\end{boxedverbatim}
+\\
+\\
+Then, create an instance of \emph{Clair::Bio::GIN}
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Bio::GIN;
+ my $gin = new Clair::Bio::GIN();
+\end{boxedverbatim}
+\\
+\\
+
+\subsubsection{Tag the Genes in a given sentence}
+
+If you have the sentence
+\\
+\\
+\begin{boxedverbatim}
+ my $sentence = "We provide evidence of a cross-talk between \
+ nuclear receptor and Ser / Thr protein phosphatases and show \
+ that vitamin D receptor (VDR) interacts with the catalytic \
+ subunit of protein phosphatases, PP1c and PP2Ac, and induces \
+ their enzymatic activity in a ligand-dependent manner.";
+\end{boxedverbatim}
+\\
+\\
+You can tag the genes in the that sentence by
+\\
+\\
+\begin{boxedverbatim}
+ my @genes = @{$gin->tag_genes($sentence)};
+ foreach my $gene (@genes){
+      print $gene,"\n";
+ }
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Tag the interaction words in a sentence}
+
+Or, you can tag and print the interaction words
+\\
+\\
+\begin{boxedverbatim}
+ my @int_words = @{$gin->tag_interaction_words($sentence)};
+ foreach my $word (@int_words){
+      print $word,"\n";
+ }
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Extract the interactions from a given sentence}
+
+To extract the interactions from the sentence use
+\\
+\\
+\begin{boxedverbatim}
+ @interactions = $gin->extract_interactions;
+\end{boxedverbatim}
+\\
+\\
+The returned array is an array of \emph{Clair::Bio::GIN::Interaction} instances. You can print the information of those interactions using
+
+\begin{boxedverbatim}
+ foreach my $interaction (@interactions){
+     print "Gene 1: ", $interaction->get_gene1(),"\n";
+     print "Gene 2: ", $interaction->get_gene2(),"\n";
+     print "Interaction Word: ",$interaction->get_interaction_word(),"\n\n";
+ }
+\end{boxedverbatim}

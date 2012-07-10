@@ -1,0 +1,14 @@
+pod2latex ../INSTALL.pod
+pod2latex ../Authors.pod
+pod2latex ../Changes.pod
+./generate_test_t_util_txt.sh
+./compile_test_lists.pl
+./compile_recipes.pl
+./ttt clTut
+./ttt clPolsciTut
+./ttt clBioTut
+./ttt clAllTut
+cp ./clTut.pdf /data2/html/clairlib/
+cp ./clPolsciTut.pdf /data2/html/clairlib/
+cp ./clBioTut.pdf /data2/html/clairlib/
+cp ./clAllTut.pdf /data2/html/clairlib/

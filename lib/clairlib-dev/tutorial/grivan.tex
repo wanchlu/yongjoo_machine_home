@@ -1,0 +1,71 @@
+\subsection{Graph Partitioning Using the GirvanNewman Algorithm}
+
+In this tutorial, you will use \emph{Clair::Network::GirvanNewman} to partition the Karate Club network into two partitions. For more information about Karate Club network, see \textbf{Spectral Partitioning Using Fiedler Vector} tutorial (the previous subsection).
+
+\subsubsection{Read in the network file and create a Clair::Network object}
+
+First you need to create a \emph{Clair::Network::Reader::GML} object
+\\
+\\
+\begin{boxedverbatim}
+
+ use Clair::Network::Reader::GML;
+ my $reader=new Clair::Network::Reader::GML();
+
+\end{boxedverbatim}
+\\
+\\
+Then, pass the network filename to the \emph{read\_network} subroutine via the \emph{\$reader} object. This will return a \emph{Clair::Network} object.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network;
+ my $filename = "karate.gml";
+ my $net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\subsubsection{Create a Clair::Network::GirvanNewman object}
+
+Create a new \emph{Clair::Network::GirvanNewman} by calling its constructor
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network::GirvanNewman;
+ $GN = new Clair::Network::GirvanNewman($net);
+\end{boxedverbatim}
+\\
+\subsubsection{Partition the graph}
+
+To partition the graph, simply call \emph{partition()} subroutine via the \emph{\$GN} object. \emph{partition()} returns the result as a hash.
+\\
+\\
+\begin{boxedverbatim}
+ my $graphPartition = $GN->partition();
+\end{boxedverbatim}
+\\
+\\
+\$graphPartition is a hash with "node id" as key and "partition number" as value. The hierarchy structure for each node is represented as (0|1|2|1|...). So the number between "|" is the partition the node belongs to in a specific hierarchy.
+
+You can use the dumper to print the contents of \emph{\$graphPartition}
+\\
+\\
+\begin{boxedverbatim}
+ use Data::Dumper
+ print Dumper($graphPartition);
+\end{boxedverbatim}
+\\
+\\
+The output will be something like. This is what's called the dendrogram
+\\
+\\
+\begin{boxedverbatim}
+ $VAR1 = {
+          '33' => '0|1|1|2|3|3|4|4|7|8|8|9|10...',
+          '32' => '0|1|1|2|1|1|2|2|5|6|6|7|8...',
+          . . .
+          . . .
+          '19' => '0|1|1|2|3|3|4|4|7|8|8|9|...',
+          '5' => '0|0|0|0|4|4|5|6|3|1|1|2|...'
+         };
+\end{boxedverbatim}
+

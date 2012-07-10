@@ -1,0 +1,205 @@
+INTRODUCTION
+
+The University of Michigan CLAIR (Computational Linguistics and Information Retrieval) group is happy to present the first release of the Clair Library.
+
+The Clair library is intended to simplify a number of generic tasks in Natural Language Processing (NLP) and Information Retrieval (IR).  Its architecture also allows for external software to be plugged in with very little effort.
+
+FUNCTIONALITY
+
+Native: Tokenization, Summarization, LexRank, Biased LexRank, Document Clustering, Document Indexing, PageRank, Web Graph Analysis.
+
+Imported: Stemming, Sentence segmentation, Web Page Download, Web Crawling
+
+DOWNLOADING
+
+The current version is available for beta testing.  Write to radev@umich.edu to get a beta copy.
+
+INSTALLING
+
+Prerequisites:
+You need Perl, some external software, and a number of external modules available for download from CPAN.
+- MEAD (Available from CLAIR: http://www.summarization.com)
+- Adwait Ratnaparkhi's MxTerminator
+- From CPAN: Net::Google, HTML::LinkExtractor, Statistics::ChisqIndep, Graph::Directed, BerkeleyDB, Math::MatrixReal, Lingua::Stem, IO::File, POSIX, Math::Random, IO::Handle, IO::File, IPC::Open2, Carp, IO::Pipe, Getopt::Long
+
+Installing the Clair Library:
+To install the Clair library, follow these steps:
+- Install MEAD 3.10
+- Install the remaining PERL modules listed above in the Prerequisites section
+- Install Ratnaparkhi's MxTerminator code (jmx)
+- Download clairlib 0.95
+- Unzip/untar it
+- cd to the top directory of the download
+- Edit lib/Clair/Config.pm and change at least the following three variables to the appropriate paths (e.g.):
+  - our $CLAIRLIB_HOME="/proj/nlptools/clairlib/clairlib";
+  - our $MEAD_HOME="/proj/nlptools/clairlib/mead";
+  - our $JMX_HOME="/proj/nlp/corpora/gale/parse/jmx_new";
+- To use WebSearch (and to pass test_web_search.t), you will need a key from Google.
+  - First, obtain a key from Google if you do not already have one.  A key is available from the Google SOAP Search API website: http://www.google.com/apis/
+  - Once you have your key, edit lib/Clair/Config.pm
+  - Find $GOOGLE_DEFAULT_KEY and replace the text with your new key (keeping the quotation marks).
+- cd to the top directory of the download
+- run "perl Makefile.PL"
+- Run "make test"
+
+PLATFORMS
+
+STRUCTURE OF CODE
+
+The clairlib code is divided into many modules, located in the lib directory.  Some of the key functionality is in the lib/Clair subdirectory:
+Clair::Document - Represents a single document
+Clair::Cluster - Represents a collection of many documents
+Clair::Network - Represents a network, like a graph.  The nodes of the network may often be of type Clair::Document, but do not have to be.
+Clair::Gen - Works with Poisson and Power Law distributions
+Clair::Util - Provides utility functions needed when using the Clair library
+Clair::Config - Provides configurable constants needed by the Clair library (library paths, etc)
+
+In the main lib directory, several modules are provided to work with corpora:
+CorpusDownload - Download corpora from a list of URLs or from a single URL as a starting point, compute IDF and TF values
+Idf - Retrieve IDF values calculated by CorpusDownload
+Tf - Retrieve TF values calculated by CorpusDownload
+TFIDFTUtils - Provides utility functions needed for the IDF/TF calculations
+
+TUTORIAL
+
+USING A SINGLE DOCUMENT
+
+Clairlib's Document class can be used to perform some basic analysis and perform some calculations on a single document.
+
+Documents have three types of values: 'html', 'text', and 'stem'.  A document must be created as one of the three types.  It can then be converted from html to text and from text to stem.  Performing a conversion does not cause the old information to be lost.  For example, if a document starts as html, and is converted to text, the html is not forgotten, the document now holds an html version and a text version of the original html document.
+
+Creating a new document:
+A new document can be created either from a string or from a file.  To create a document from a string, the string parameter should be specified, while the file parameter should be specified with the filename to load the document from.  It is an error if both are specified.
+
+The initial type of a document must be specified.  This is done by setting the type parameter to 'html', 'text', or 'stem'.  Additionally, an id must be specified for the document.  Care should be taken to keep ids of documents unique, as putting documents with the same id into a Cluster or Network can cause problems.
+
+Finally, the language of the document may be specified by passing a value as the language parameter.
+
+my $doc = new Clair::Document(file => 'doc.html', id => 'doc1', type => 'html');
+
+
+Using a single Document:
+strip_html and stem convert an html version of the document to text and a text version to stem, respectively.
+
+The html, text, or stem version of the document can be retrieved using get_html, get_text, and get_stem respectively.  For these methods and all those used by document, the programmer is expected to ensure that any time a particular type of a document is used, that type is valid.  That is, a document that is created as an html document and is never converted to a text document should never have get_text called or save (described later) called with type specified as anything but 'html'.
+
+# We start off with the html version
+my $html = $doc->get_html;
+
+# But can now get the text version
+my $text = $doc->strip_html();
+die if ($text ne $doc->get_text);
+
+# And then the stemmed version
+my $stem = $doc->stem();
+die if $stem ne $doc->get_stem;
+
+# Note that the html version is unchanged:
+die if $html ne $doc->get_html;
+
+Several different operations can be performed on a document.  It can be split into lines, sentences, or words using split_into_lines, split_into_sentences, and split_into_words which return an array of the text of the document separated appropriately.  split_into_lines and split_into_sentences can only be performed on the text version of the document, but split_into_words can be performed on any type of document.  It defaults to text, but this can be overridden by specifying the type parameter.
+
+A document can be saved to a file using the save method.  The method requires the type to be saved be specified.
+
+Documents may have parent documents as well.  This can be used to track the original source of a document.  For example, a new document could be created for each sentence of an original document.  By using set_parent_document and get_parent_document, each new document can point to the document it was created from.
+
+ANALYZING RELATIONSHIPS BETWEEN DOCUMENTS
+
+Clairlib makes analyzing relationships beween documents very simple.  Generally, for simplicity, documents should be loaded as a cluster, then converted to a network, but documents can be added directly to a network.
+
+Creating a Cluster:
+Documents can be added individually or loaded collectively into a cluster.  To add documents individually, the insert function is provided, taking the id and the document, in that order.  It is not a requirement that the id of the document in the cluster match the id of the document, but it is recommended for simplicity.
+
+Several functions are provided to load many documents quickly.  load_file_list_array adds each file from the provided array as a document and adds it to the cluster.  load_file_list_from_file does the same for a list of documents that are given in a provided file.  load_documents does the same for each document that matches the expression passed along as a parameter.  
+
+Each of these functions must assign a type to each document created.  'text' is the default, but this may be changed by specifying a type parameter.  Files can be loaded by filename or by 'count', an index that is incremented for each file.  Using the filename is the default, but specifying a parameter count_id of 1 changes that.  To allow the load functions to be called repeatedly, a start_count parameter may be specified to have the counts started at a higher number (to avoid repeated ids).  Each load function returns the next safe count (note that if start_count is not specified, this is the number of documents loaded).
+
+load_lines_from_file loads each line from a file as an individual document and adds it to the cluster.  It behaves very similarly to the other load functions expect that ids must be based on the count.
+
+my $cluster = Clair::Cluster->new();
+$cluster->load_documents("directory/*.txt", type => 'text');
+
+
+Working with Documents Collectively:
+The functions strip_all_documents, stem_all_documents, and save_documents_to_directory act on every document in the cluster, stripping the html, stemming the text, or saving the documents.
+
+$cluster->stem_all_documents();
+
+
+Analyzing a Cluster:
+The documents in a cluster can be analyzed in two ways.  The first is that an IDF database can be built from the documents in the cluster with build_idf.  The second is analyzing the similarity between documents in the cluster.  First, compute_cosine_matrix is provided which computes the similarity between every pair of documents in the cluster.  These values are returned in a hash, but are also saved with the cluster.  compute_binary_cosine returns a hash of cosine values that are above the threshold.  It can be provided a cosine hash or can use a previously computed hash stored with the cluster.  get_largest_cosine returns the largest cosine value, and the two keys that produced it in a hash.  It also can be passed a cosine hash or can use a hash stored with the cluster.
+
+my %cos_hash = $cluster->compute_cosine_matrix();
+my %bin_hash = $cluster->compute_binary_cosine(0.2);
+
+
+Creating a Network:
+There are three ways to create a network from a cluster, based on what statistics are desired from the network.  For statistics based on the similarity relationships, create_network creates a network based on a cosine hash.  Any two documents with a positive cosine relationship will have an edge between them in the network.  Optionally, all documents can have an edge by specifying parameter include_zeros as 1.  The transition values to compute lexrank are also set, although the values can be saved to a different attribute name by specifying a property parameter.
+
+For statistics based on hyperlink relationship, create_hyperlink_network_from_array and create_hyperlink_network_from_file creates a network with edges between pairs of documents in an array or on lines of a file, respectively.
+
+create_sentence_based_network creates a network with a node for every sentence in every document.  The cosine between each sentence is then computed and, if a threshold is specified, the binary cosine is computed.  The edges are created based on the similarity values as with create_network.
+
+my $network = $cluster->create_network(cosine_matrix => \%bin_hash);
+
+
+Analyzing a Network:
+Once a network has been created, much more analysis is possible.  Basic statistics like the number of nodes and edges are available from num_nodes and num_links.  The average and maximum diameters can be ascertained from diameter, specifying either a max parameter as 1 or an avg parameter as 1 (max is the default).  The average in degree, out degree, and total degree can be computed with avg_in_degree, avg_out_degree, and avg_total_degree respectively.
+
+To compute the lexrank from a network built from a cluster using create_network or create_sentence_based_network, compute_lexrank is provided.  Initial values or bias values can also be loaded from a file using read_lexrank_initial_distribution and read_lexrank_bias (the default for both is uniform).  If the network was not created from a cluster appropriately (or to change the values), transition values can also be loaded from a file using read_lexrank_probabilities_from_file.
+
+my %lex_hash = $network->compute_lexrank();
+
+Similarly, the pagerank can be computed with compute_pagerank.  Transition values are already set for a network created with one of the create_hyperlink_network functions, but can be read from a file using read_pagerank_probabilities_from_file otherwise.  Initial distribution and personalization values can be read from files using read_pagerank_initial_distribution and read_pagerank_personalization.
+
+The results of these computations are returned by compute_lexrank and compute_pagerank, but can also be saved to a file using save_current_lexrank_distribution or printed to standard out using print_current_lexrank_distribution (for pagerank, save_current_pagerank_distribution and print_current_pagerank_distribution, respectively).
+
+$network->print_current_lexrank_distribution();
+$network->save_current_lexrank_distribution('lex_out');
+
+Many other network based statistics can be computed.  For examples of what can be computed, please see test_network_stat.pl in the test directory.
+
+ANALYZING A CORPUS
+Several modules are provided to assist in analyzing a large corpus of files.
+
+Creating a Corpus:
+The CorpusDownload module is provided to create a corpus.  Create a CorpusDownload object using new().  A corpus name must be provided, and a rootdir is optional, but strongly recommended since the default is '/data0/projects/tfidf'.  The rootdir must be an absolute path, rather than a relative path.  The root directory is where the corpus files will be placed.  Many corpora can be made with the same root directory, as long as the corpusname is different for each.
+
+Two functions are provided to create a corpus.  buildCorpus is used to download files to form the corpus, while buildCorpusFromFiles is used to form a corpus with files already on the computer.  Both require a reference to an array with either the urls or absolute paths to the files for buildCorpus and buildCorpusFromFiles, respectively.  These files will then be copied to the root directory provided and a corpus created from them in TREC format.
+
+Because CorpusDownload was designed to use a downloaded corpus, results from a corpus build with buildCorpusFromFiles will list files with "http://" at the beginning, then the full path of the file.
+
+To use a base URL and find files based on links from that file, the function poach is provided as an interface to 'poacher.'  This returns an array with URLs that can be passed to buildCorpus.
+
+$corpus = new CorpusDownload(corpusname => 'new_corpus', rootdir => '/usr/username/');
+$corpus->buildCorpus(urlsref => $@urls);
+
+
+Computing IDF and TF Values:
+To compute the IDF and TF values for the corpus, buildIdf and buildTf are provided.  Both accept stemmed as a parameter which can be set to 1 to compute the stemmed values or 0 (the default) to compute the unstemmed values.  Before buildTf can be called, build_docno_dbm must be called.
+
+$corpus->buildIdf(stemmed => 0);
+$corpus->buildIdf(stemmed => 1);
+
+$corpus->build_docno_dbm();
+$corpus->buildTf(stemmed => 0);
+$corpus->buildTf(stemmed => 1);
+
+
+Accessing Computed IDF and TF Values:
+Once IDF values have been computed, they can be accessed by creating an Idf object.  In the constructor, rootdir and corpusname parameters should be supplied that match the CorpusDownload parameters, along with a stemmed parameter depending on whether stemmed or unstemmed values are desired (1 and 0 respectively).  To get the IDF for a word, then, use the method getIdfForWord, supplying the desired word.
+
+A Tf object is created with the same parameters passed to the constructor.  The function getFreq returns the number of times a word appears in the corpus, getNumDocsWithWord returns the number of documents it appears in, and getDocs returns the array of documents it appears in.
+
+my $idf = Idf::new( rootdir=> '/usr/username/', corpusname => 'new_corpus', stemmed => 0);
+print "The idf of 'and' is ", $idf->getIdfForWord("and"), "\n";
+
+my $tf = Idf::new( rootdir=> '/usr/username/', corpusname => 'new_corpus', stemmed => 0);
+print $tf->getNumDocsWithWord("and"), " docs have 'and' in them\n";
+print "'and' appears ", $tf->getFreq("and"), " times.\n";
+print "The documents are:\n"
+my @docs = $tf->getDocs("and");
+foreach my $doc (@docs) {
+  print "$doc\n";
+}
+

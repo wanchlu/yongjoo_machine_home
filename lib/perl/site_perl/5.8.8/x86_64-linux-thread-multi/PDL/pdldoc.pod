@@ -1,0 +1,54 @@
+=head1 NAME
+
+pdldoc - shell interface to PDL documentation
+
+=head1 SYNOPSIS
+
+B<pdldoc> <text>
+
+B<pdldoc> [B<-a>] [B<-b>] [B<-h>] [B<-s>] [B<-u>] <text>
+
+=head1 DESCRIPTION
+
+The aim of B<pdldoc> is to provide the same functionality
+as the C<apropos>, C<help>, C<sig>, 
+C<badinfo>, 
+and C<usage> commands available in the L<perldl|PDL::perldl> shell.
+
+Think of it as the PDL equivalent of C<perldoc -f>.
+
+=head1 OPTIONS
+
+=over 5
+
+=item B<-h> help
+
+print documentation about a PDL function or module or show a PDL manual.
+This is the default option.
+
+=item B<-a> apropos
+
+Regex search PDL documentation database.
+
+=item B<-b> badinfo
+
+Information on the support for bad values provided by the function.
+
+=item B<-s> sig
+
+prints signature of PDL function.
+
+=item B<-u> usage
+
+Prints usage information for a PDL function.
+
+=back
+
+=head1 VERSION
+
+This is pdldoc v0.2.
+
+=head1 AUTHOR
+
+Doug Burke <burke@ifa.hawaii.edu>.
+

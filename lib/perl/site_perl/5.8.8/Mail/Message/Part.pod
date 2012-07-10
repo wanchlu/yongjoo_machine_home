@@ -1,0 +1,952 @@
+=head1 NAME
+
+Mail::Message::Part - a part of a message, but a message by itself
+
+=head1 INHERITANCE
+
+ Mail::Message::Part
+   is a Mail::Message
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ my Mail::Message $message = ...;
+ if($message->isMultipart) {
+    my Mail::Message::Part $part;
+
+    foreach $part ($message->body->parts) {
+       $part->print(\*OUT);
+       my $attached_head = $part->head;
+       my $attached_body = $part->body;      # encoded as read
+       my $attached_body = $part->decoded;   # transfer-encoding removed
+    }
+ }
+
+=head1 DESCRIPTION
+
+A C<Mail::Message::Part> object contains a message which is included in
+the body of an other message.  For instance I<attachments> are I<parts>.
+
+READ L<Mail::Message|Mail::Message> FIRST.  A part is a special message: it has a
+reference to its parent message, and will usually not be sub-classed
+into mail folder specific variants.
+
+=head1 METHODS
+
+=head2 Constructors
+
+$obj-E<gt>B<clone>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message/"Constructors">
+
+=back
+
+Mail::Message::Part-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+Create a message part.
+
+ Option    --Defined in     --Default
+ body        Mail::Message    undef
+ body_type   Mail::Message    Mail::Message::Body::Lines
+ container                    <required>
+ deleted     Mail::Message    <false>
+ field_type  Mail::Message    undef
+ head        Mail::Message    <empty header>
+ head_type   Mail::Message    Mail::Message::Head::Complete
+ labels      Mail::Message    {}
+ log         Mail::Reporter   'WARNINGS'
+ messageId   Mail::Message    undef
+ modified    Mail::Message    <false>
+ trace       Mail::Reporter   'WARNINGS'
+ trusted     Mail::Message    <false>
+
+. body => OBJECT
+
+. body_type => CLASS
+
+. container => BODY
+
+=over 4
+
+Reference to the parental L<Mail::Message::Body|Mail::Message::Body> object where this part
+is a member of.  That object may be a L<Mail::Message::Body::Multipart|Mail::Message::Body::Multipart>
+or a L<Mail::Message::Body::Nested|Mail::Message::Body::Nested>.
+
+=back
+
+. deleted => BOOLEAN
+
+. field_type => CLASS
+
+. head => OBJECT
+
+. head_type => CLASS
+
+. labels => ARRAY|HASH
+
+. log => LEVEL
+
+. messageId => STRING
+
+. modified => BOOLEAN
+
+. trace => LEVEL
+
+. trusted => BOOLEAN
+
+=back
+
+=head2 Constructing a message
+
+$obj-E<gt>B<bounce>([RG-OBJECT|OPTIONS])
+
+=over 4
+
+See L<Mail::Message::Construct::Bounce/"Constructing a message">
+
+=back
+
+Mail::Message::Part-E<gt>B<build>([MESSAGE|PART|BODY], CONTENT)
+
+=over 4
+
+See L<Mail::Message::Construct::Build/"Constructing a message">
+
+=back
+
+Mail::Message::Part-E<gt>B<buildFromBody>(BODY, CONTAINER, HEADERS)
+
+=over 4
+
+Shape a message part around a BODY.  Bodies have information about their
+content in them, which is used to construct a header for the message.
+Next to that, more HEADERS can be specified.  No headers are obligatory.
+No extra headers are fabricated automatically.
+
+example: 
+
+ my $multi = Mail::Message::Body::Multipart->new;
+ my $part  = Mail::Message::Part->buildFromBody($body, $multi);
+
+=back
+
+$obj-E<gt>B<forward>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardAttach>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardEncapsulate>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardInline>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardNo>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardPostlude>
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardPrelude>
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<forwardSubject>(STRING)
+
+=over 4
+
+See L<Mail::Message::Construct::Forward/"Constructing a message">
+
+=back
+
+Mail::Message::Part-E<gt>B<read>(FILEHANDLE|SCALAR|REF-SCALAR|ARRAY-OF-LINES, OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Read/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<rebuild>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Rebuild/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<reply>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Reply/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<replyPrelude>([STRING|FIELD|ADDRESS|ARRAY-OF-THINGS])
+
+=over 4
+
+See L<Mail::Message::Construct::Reply/"Constructing a message">
+
+=back
+
+$obj-E<gt>B<replySubject>(STRING)
+
+Mail::Message::Part-E<gt>B<replySubject>(STRING)
+
+=over 4
+
+See L<Mail::Message::Construct::Reply/"Constructing a message">
+
+=back
+
+=head2 The message
+
+$obj-E<gt>B<container>
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<isDummy>
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<isPart>
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<messageId>
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<print>([FILEHANDLE])
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<printEscapedFrom>(FILEHANDLE)
+
+=over 4
+
+Prints the message part, but all lines which start with 'From ' will get
+a leading E<gt>.  See L<Mail::Message::Body::printEscapedFrom()|Mail::Message::Body/"Access to the payload">.
+
+=back
+
+$obj-E<gt>B<send>([MAILER], OPTIONS)
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<size>
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<toplevel>
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+$obj-E<gt>B<write>([FILEHANDLE])
+
+=over 4
+
+See L<Mail::Message/"The message">
+
+=back
+
+=head2 The header
+
+$obj-E<gt>B<bcc>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<cc>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<date>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<destinations>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<from>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<get>(FIELDNAME)
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<guessTimestamp>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<head>([HEAD])
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<nrLines>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<sender>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<study>(FIELDNAME)
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<subject>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<timestamp>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+$obj-E<gt>B<to>
+
+=over 4
+
+See L<Mail::Message/"The header">
+
+=back
+
+=head2 The body
+
+$obj-E<gt>B<body>([BODY])
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+$obj-E<gt>B<contentType>
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+$obj-E<gt>B<decoded>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+$obj-E<gt>B<encode>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+$obj-E<gt>B<isMultipart>
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+$obj-E<gt>B<isNested>
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+$obj-E<gt>B<parts>(['ALL'|'ACTIVE'|'DELETED'|'RECURSE'|FILTER])
+
+=over 4
+
+See L<Mail::Message/"The body">
+
+=back
+
+=head2 Flags
+
+$obj-E<gt>B<delete>
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<deleted>([BOOLEAN])
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<isDeleted>
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<isModified>
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<label>(LABEL|PAIRS)
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<labels>
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<labelsToStatus>
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<modified>([BOOLEAN])
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+$obj-E<gt>B<statusToLabels>
+
+=over 4
+
+See L<Mail::Message/"Flags">
+
+=back
+
+=head2 The whole message as text
+
+$obj-E<gt>B<file>
+
+=over 4
+
+See L<Mail::Message::Construct::Text/"The whole message as text">
+
+=back
+
+$obj-E<gt>B<lines>
+
+=over 4
+
+See L<Mail::Message::Construct::Text/"The whole message as text">
+
+=back
+
+$obj-E<gt>B<printStructure>([FILEHANDLE|undef],[INDENT])
+
+=over 4
+
+See L<Mail::Message::Construct::Text/"The whole message as text">
+
+=back
+
+$obj-E<gt>B<string>
+
+=over 4
+
+See L<Mail::Message::Construct::Text/"The whole message as text">
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<clonedFrom>
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+Mail::Message::Part-E<gt>B<coerce>(BODY|MESSAGE, MULTIPART, HEADERS)
+
+=over 4
+
+Transforms a BODY or MESSAGE to a real message part.  The MULTIPART
+refers to the parental body.
+
+When ta BODY is specified, extra HEADERS can be supplied as well.
+Bodies are coerced into message parts by calling L<buildFromBody()|Mail::Message::Part/"METHODS">.
+If you specify a MESSAGE residing in a folder, this message will
+automatically be cloned.
+
+=back
+
+$obj-E<gt>B<isDelayed>
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+$obj-E<gt>B<readBody>(PARSER, HEAD [, BODYTYPE])
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+$obj-E<gt>B<readFromParser>(PARSER, [BODYTYPE])
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+$obj-E<gt>B<readHead>(PARSER [,CLASS])
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+$obj-E<gt>B<recursiveRebuildPart>(PART, OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Construct::Rebuild/"Internals">
+
+=back
+
+$obj-E<gt>B<storeBody>(BODY)
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+$obj-E<gt>B<takeMessageId>([STRING])
+
+=over 4
+
+See L<Mail::Message/"Internals">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Message::Construct/"METHODS">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Message::Part-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Message::Part-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Message::Part-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<shortSize>([VALUE])
+
+Mail::Message::Part-E<gt>B<shortSize>([VALUE])
+
+=over 4
+
+See L<Mail::Message/"Error handling">
+
+=back
+
+$obj-E<gt>B<shortString>
+
+=over 4
+
+See L<Mail::Message/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Message/"Cleanup">
+
+=back
+
+$obj-E<gt>B<destruct>
+
+=over 4
+
+Message parts can not be destructed per part: only whole messages can
+be forcefully freed from memory.  Of course, you can L<delete()|Mail::Message/"Flags"> separate
+parts, which only sets a flag not to write a part again.  Furthermore,
+you may cosider L<rebuild()|Mail::Message::Construct::Rebuild/"Constructing a message"> to get rit of deleted parts.
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DETAILS
+
+=head1 DIAGNOSTICS
+
+Error: Cannot include forward source as $include.
+
+=over 4
+
+Unknown alternative for the L<forward(include)|Mail::Message::Construct::Forward/"Constructing a message">.  Valid choices are
+C<NO>, C<INLINE>, C<ATTACH>, and C<ENCAPSULATE>.
+
+=back
+
+Error: Cannot include reply source as $include.
+
+=over 4
+
+Unknown alternative for the C<include> option of L<reply()|Mail::Message::Construct::Reply/"Constructing a message">.  Valid
+choices are C<NO>, C<INLINE>, and C<ATTACH>.
+
+=back
+
+Error: Method bounce requires To, Cc, or Bcc
+
+=over 4
+
+The message L<bounce()|Mail::Message::Construct::Bounce/"Constructing a message"> method forwards a received message off to someone
+else without modification; you must specified it's new destination.
+If you have the urge not to specify any destination, you probably
+are looking for L<reply()|Mail::Message::Construct::Reply/"Constructing a message">. When you wish to modify the content, use
+L<forward()|Mail::Message::Construct::Forward/"Constructing a message">.
+
+=back
+
+Error: Method forwardAttach requires a preamble
+
+=over 4
+
+=back
+
+Error: Method forwardEncapsulate requires a preamble
+
+=over 4
+
+=back
+
+Error: No address to create forwarded to.
+
+=over 4
+
+If a forward message is created, a destination address must be specified.
+
+=back
+
+Error: No default mailer found to send message.
+
+=over 4
+
+The message L<send()|Mail::Message/"The message"> mechanism had not enough information to automatically
+find a mail transfer agent to sent this message.  Specify a mailer
+explicitly using the C<via> options.
+
+=back
+
+Error: No rebuild rule $name defined.
+
+=over 4
+
+=back
+
+Error: Only build() Mail::Message's; they are not in a folder yet
+
+=over 4
+
+You may wish to construct a message to be stored in a some kind
+of folder, but you need to do that in two steps.  First, create a
+normal L<Mail::Message|Mail::Message>, and then add it to the folder.  During this
+L<Mail::Box::addMessage()|Mail::Box/"The folder"> process, the message will get L<coerce()|Mail::Message::Part/"METHODS">-d
+into the right message type, adding storage information and the like.
+
+=back
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+Error: You cannot destruct message parts, only whole messages
+
+=over 4
+
+Message parts can not be destructed per part: only whole messages can
+be forcefully freed from memory. Consider L<delete()|Mail::Message/"Flags"> or L<rebuild()|Mail::Message::Construct::Rebuild/"Constructing a message">.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

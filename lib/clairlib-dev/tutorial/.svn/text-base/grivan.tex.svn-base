@@ -1,0 +1,70 @@
+\subsection{Graph Partitioning Using the GirvanNewman Algorithm}
+
+In this tutorial, you will use Clair::Network::GirvanNewman to partition Karate Club network. For more information about Karate Club network, see \textbf{Spectral Partitioning Using Fiedler Vector} tutorial (the previous subsection).
+
+\subsubsection{Read in the network file and create a Clair::Network object}
+
+First you need to create a Clair::Network::Reader::GML object
+\\
+\\
+\begin{boxedverbatim}
+
+ use Clair::Network::Reader::GML;
+ my $reader=new Clair::Network::Reader::GML();
+
+\end{boxedverbatim}
+\\
+\\
+Then, pass the network filename to the read\_network subroutine via the \$reader object. This will return a Clair::Network object.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network;
+ my $filename = "karate.gml";
+ my $net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Create a Clair::Network::GirvanNewman object}
+
+Create a new Clair::Network::GirvanNewman by calling its constructor
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network::GirvanNewman;
+ $GN = new Clair::Network::GirvanNewman($net);
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Partition the graph}
+
+To partition the graph, simply call \textbf{partition()} subroutine via the \$GN object. \textbf{partition()} returns the result as a hash.
+
+\begin{verbatim}
+ my $graphPartition = $GN->partition();
+\end{verbatim}
+
+\$graphPartition is a hash with "node id" as key and "partition number" as value. The hierarchy structure for each node is represented as (0|1|2|1|...). So the number between "|" is the partition the node belongs to in a specific hierarchy.
+
+You can use the dumper to print the contents of \$graphPartition
+\\
+\\
+\begin{boxedverbatim}
+ use Data::Dumper
+ print Dumper($graphPartition);
+\end{boxedverbatim}
+\\
+\\
+The output will be something like
+\\
+\\
+\begin{boxedverbatim}
+ $VAR1 = {
+          '33' => '0|1|1|2|3|3|4|4|7|8|8|9|10...',
+          '32' => '0|1|1|2|1|1|2|2|5|6|6|7|8...',
+          . . .
+          . . .
+          '19' => '0|1|1|2|3|3|4|4|7|8|8|9|...',
+          '5' => '0|0|0|0|4|4|5|6|3|1|1|2|...'
+         };
+\end{boxedverbatim}

@@ -1,0 +1,427 @@
+=pod
+
+=head3
+1.08 August 2009
+
+=item *
+
+Updated Clair::SynthCollection to generate synthetic documents based on (1 to 4)-grams.
+
+=item *
+
+Updated make_synth_collection.pl to fully utilize Clair::SyntheticCollection.
+
+=item *
+
+Fixed some Tokenizer issues.
+
+=item *
+
+Added summarize_document.pl to the utilities.
+
+=item *
+
+Added summarize_collection to the utilities.
+
+=item *
+
+Added learn.pl to the utilities.
+
+=item *
+
+Added classify.pl to the utilities.
+
+=item *
+
+Added bigrams_to_rand_doc.pl to the utilities.
+
+=item *
+
+Added make_synth_collection_Menczer.pl to the utilities.
+
+=item *
+
+Added Clair::RandomWalk for random walk on graphs.
+
+=item *
+
+Added Clair::Harmonic for computing harmonic functions based on the Relaxation and Montecarlo methods
+
+=item *
+
+Added random_walk.pl to the utilities.
+
+=item *
+
+Added harmonic.pl to the utilities.
+
+=item *
+
+Added directory_to_URL_network.pl to the utilities.
+
+=item *
+
+Fixed a bug in the crawling code.
+
+=item *
+
+Added new tutorials.
+
+=item *
+
+Added new sections to the documentation.
+
+=item *
+
+Added Clair::Bio::GIN for gene interaction extraction.
+
+=item *
+
+Added an interface to Stanford parser in Clair::Utils::Parse
+
+=item *
+
+Added tag_genes.pl to the utilities.
+
+=item *
+
+Added extract_interactions.pl to the utilities.
+
+=back
+
+=head3
+1.07 June 2009
+
+=over
+
+=item *
+
+Added Clair::Network::Spectral for spectral partitioning using Fiedler Vector.
+
+=item *
+
+Made Clairlib independent of MEAD (MEAD is no more required for Clairlib).
+
+=item *
+
+Added Naive Bayes learning and classification.
+
+=item *
+
+Added tests for feature extraction, learning, classification.
+
+=item *
+
+Fixed a bug in Clair::Cluster::create_lexical_network().
+
+=item *
+
+Added sampling options to Clair::Cluster.
+
+=item *
+
+Added "No IDF" option and sampling capabilities to corpus_to_cos.pl utility.
+
+=item *
+
+Fixed documentation typos.
+
+=item *
+
+Added new tutorials to the documentation.
+
+=item *
+
+Fixed bug in Clair::Utils::CorpusDownload.
+
+=item *
+
+Added 'manual weights' option to make_synth_collection util.
+
+=item *
+
+Fixed bug in extract_ngrams.
+
+=back
+
+=head3
+1.06 March 2009
+
+=over
+
+=item *
+
+Clair:Network:FordFulkerson module Added
+
+=item *
+
+new script, "change_perl_path.pl", Added to util/
+
+=item *
+
+Added new scripts to interface ACL Anthology Network
+
+=item *
+
+split_into_sentences() of Clair::Document modified
+
+=item *
+
+Clair::SentenceSegmenter::MxTerminator module removed
+
+=item *
+
+Lingua::EN::Sentence module is required to be installed for this distibution
+
+=back
+
+=head3
+1.05 July 2008
+
+=over
+
+=item *
+
+Fixed formatting bugs in CorpusDownload.pm
+
+=item *
+
+Added get_predecessor_matrix() function in Network.pm
+
+=item *
+
+Added get_shortest_path() function in Network.pm
+
+=item *
+
+Added  erase_corpus.pl script
+
+=item *
+added erase_isolated_nodes.pl script
+
+=item *
+added --ignore-isolated-nodes in convert_network.pl
+
+=item *
+added several options to print_network_stats.pl: a. --self-loop,
+
+=item *
+completed the descriptions of print_network_stats.pl: added the
+note of --force into usage.
+
+=item *
+
+added sentence_to_docs.pl , lines_to_docs.pl under util folder
+
+=back
+
+=head3
+1.04B June 2008
+
+=over
+
+=item *
+
+Added -no-duplicated-edges in convert_network.pl
+
+=item *
+Added largest connected component in cos_to_stats.pl
+
+=item *
+Added full avergage shortest path in print_network.pl
+
+=item *
+
+fixed divide by zero error in Network.pm, Betweeness.pm
+
+=back
+
+=head3
+1.04A April 2008
+
+=over
+
+=item *
+
+Added Clair::Network::GirvanNewman algorithm to do hierarchical clustering
+
+=item *
+
+Added Clair::Network::KernighanLin algorithm to do graph partition
+
+=back
+
+=head3
+1.04 Feburary 2008
+
+=over
+
+=item *
+
+Added Clair::Network::AdamicAdar to compute the adamic/adar value for a given network corpus
+
+=item *
+
+Added Clair::ChisqIndependent to compute p-value and degree of freedom for Chi square
+
+=back
+
+=head3
+1.03 August 2007
+
+=over
+
+=item *
+Added functionality to perform community finding within weighted, undirected networks
+
+=item *
+Added util/chunk\_document.pl to break documents into smaller files by word number
+
+=item *
+Added option to retain punctuation for idf and tf queries
+
+=item *
+Added option to print out full lists of idf and tf values for a corpus
+
+=item *
+LexRank moved from Clair::Network to Clair::Network::Centrality::LexRank
+
+=item *
+LexRank use now follows the same use pattern as the other centrality modules
+
+=back
+
+=head3 1.02 July 2007
+
+=over
+
+=item *
+Distribution reorganized in standard format
+
+=item *
+Improved and expanded installation documentation (INSTALL)
+
+=item *
+Improved POD (inline) documentation
+
+=item *
+Additional examples
+
+=item *
+Updated PDF documentation
+
+=back
+
+=head3
+1.01 May 2007
+
+=over
+
+=item *
+Added Phrase-based Retrieval and Fuzzy OR Queries
+
+=item *
+Extended Clairlib-ext with interfaces for the Cluster class and the Document class to the Weka machine learning toolkit
+
+=item *
+Added LSI functionality
+
+=item *
+Extended parsing of strings / files into Documents
+
+=item *
+Added perceptron learning and classification for documents
+
+=back
+
+=head3
+1.0 RC1 April 2007
+
+=over
+
+=item *
+Moved all Clair modules beneath the Clair::* namespace, updated documentation
+
+=item *
+Improved Network Analysis, added Clustering Coefficients code
+
+=item *
+Added Network Generation and Statistics modules
+
+=back
+
+=head3
+0.955 March 2007
+
+=over
+
+=item *
+Made it possible to distribute clairlib in two distributions, one containing core code and another containing code that may be dependent on other resources
+
+=item *
+Cleaned up unit tests
+
+=back
+
+=head3
+0.953 February 2007
+
+=over
+
+=item *
+Fixed bugs in Clair::Cluster, Clair::Document involving stemming
+
+=item *
+Cleaned up t/ and test/ directories
+
+=item *
+Created util/ directory
+
+=item *
+Added scripts to util/ directory to:
+
+=over
+
+=item *
+Run a Google query and save the returned URLs to a file
+
+=item *
+Download files from a URL and build a corpus
+
+=item *
+Segment a document into sentences and build a corpus of the sentences
+
+=item *
+Take all documents in a directory and create a corpus
+
+=item *
+Index the corpus (compute TF*IDF, etc.)
+
+=item *
+Compute cosine similarity measures between all documents in a corpus
+
+=item *
+Generate networks corresponding to various cosine thresholds
+
+=item *
+Print network statistics about a network file
+
+=item *
+Generate plots of degree distribution and cosine transitions
+
+=back
+
+=item *
+New methods in Clair::Network:
+
+    print_network_info
+    get_network_info_as_string
+    get_cumulative_distribution
+    cumulative_power_law_exponent
+    find_components
+    newman_clustering_coefficient
+    linear_regression
+
+=back
+
+=cut

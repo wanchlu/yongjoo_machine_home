@@ -1,0 +1,233 @@
+\subsection{Clair::Polisci::AustralianParser}
+
+The Clair::Polisci::AustralianParser module is used for parsing Australian hansard html.
+The basic setup would look like this:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Polisci::AustralianParser;
+my $p = Clair::Polisci::AustralianParser->new(file => "myfile.html");
+my $header = $p->get_header();
+my $speeches = $p->get_speeches();
+$p->write_xml();
+
+\end{boxedverbatim}
+
+It contains a few different functions.  The function new() creates a new object from the
+given file. "out" is an optional reference to a filehandle where the XML will be printed.
+If ``out'' is not specified, \texttt{\$p->write\_xml()} will print to STDOUT.  For example:
+\\
+\\
+\begin{boxedverbatim}
+
+my $out = \*OUT;
+$p->set_out($out);
+my $file = "somefile.html";
+$p = Clair::Polisci::AustralianParser->new(file => $file, out => $out);
+
+\end{boxedverbatim}
+
+The get\_header function returns a hashref containing header key/value pairs.
+\\
+\\
+\begin{boxedverbatim}
+
+my $header = $p->get_header();
+foreach my $key (keys(%$header)) {
+    print "$key => $header->{$key}\n";
+}
+
+\end{boxedverbatim}
+
+The get\_speeches function returns an arrayref containing hashrefs to speech info.
+\\
+\\
+\begin{boxedverbatim}
+
+my $speeches = $p->get_speeches();
+foreach my $speech (@$speeches) {
+    print "[\n";
+    print "\t$speech->{type}\n";
+    print "\t$speech->{speaker}\n";
+    print "\t$speech->{body}\n";
+    print "]\n";
+}
+
+\end{boxedverbatim}
+
+Finally, the write\_xml function converts the data from \$header and \$speeches into
+XML and prints it to ``out''.
+
+\subsection{Clair::Polisci::Graf}
+
+The Clair::Polisci::Graf module is an object representing a hansard graf.  The basic usage
+looks like this:
+\\
+\\
+\begin{boxedverbatim}
+
+my $speaker = Clair::Polisci::Speaker->new( ... );
+my $graf = Clair::Polisci::Graf->new(
+    source => "polisci_us",
+    index => 2,
+    content => "Four score and seven million years ago...",
+    speaker => $speaker
+);
+
+\end{boxedverbatim}
+
+This is a Graf object used to represent a generic graf from a hansard. A
+graf is the smallest unit of speech in a hansard. An ordered list of
+grafs makes up a record. Each graf must have a source, an index, some
+content, and a speaker.
+The new() function constructs a new graf from the given parameters.
+As mentioned, source, index, content,
+and speaker are all required. Additional information can be associated with
+this graf by passing it to the constructor as a parameter.
+
+The function to\_document() returns the graf as a Clair::Document object.
+The body of the document is from the graf's content.  The implementation
+would look like this:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Document;
+my $doc = $graf->to_document();
+
+\end{boxedverbatim}
+
+\subsection{Clair::Polisci::Record}
+
+The Clair::Polisci::Record module is a Record
+object used to represent a generic handard Record. A record
+is an ordered collection of grafs. This module contains methods to convert
+a record to cluster of grafs or a document and allows for filtering/projections
+of grafs based on their properties.
+A sample script would look like this:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Cluster;
+use Clair::Document;
+
+my $record = Clair::Polisci::Record->new( source => "some_db" );
+my $graf = Clair::Polisci::Graf->new( ... );
+my $speaker = Clair::Polisci::Speaker->new( ... );
+$record->add_graf($graf);
+...
+my %filter = ( is_speech => 1, speaker => $speaker );
+my @grafs = $record->get_grafs(%filter);
+my $cluster = $record->to_cluster(%filter);
+my $doc = $record->to_document(%filter);
+print $doc->to_string();
+
+\end{boxedverbatim}
+
+To instantiate a Record, you would use the new() function.  This creates
+a new record from the given source. Additional information can be
+associated with this graf by passing it to the constructor as a parameter.  For example:
+\\
+\\
+\begin{boxedverbatim}
+
+my $record = Clair::Polisci::Record->new(
+    source => "polisci_us",
+;
+
+\end{boxedverbatim}
+
+There is also a function to add a graf to the record. Its index in the record is
+determined by \texttt{\$graf->\{index\}} and is not guaranteed to be unique within this record.
+\\
+\\
+\begin{boxedverbatim}
+
+my $graf = Clair::Polisci::Graf->new( ... );
+$record->add_graf($graf);
+
+\end{boxedverbatim}
+
+The size() function returns the total number of grafs in this record.  There is also
+a get\_grafs() function that returns the list of grafs, ordered by their indices,
+from this record that satisfy the given filter.
+\\
+\\
+\begin{boxedverbatim}
+
+my %filter = (
+    speaker => $speaker,
+    is_speech => 1
+);
+my @grafs = $record->get_grafs(%filter);
+
+\end{boxedverbatim}
+\\
+
+In the above example, only grafs in \$record
+which satisfy
+\\
+\\
+\begin{boxedverbatim}
+
+$graf->{is_speech} == 1
+
+\end{boxedverbatim}
+\\
+and
+\\
+\\
+\begin{boxedverbatim}
+
+$graf->{speaker}->equals($speaker)
+
+\end{boxedverbatim}
+\\
+
+will be returned in the list.
+
+You can also return the contents of all grafs satisfying \%filter
+concatenated together. See the description of get\_graf(\%filter) for
+more information.  This is accomplished with the to\_string()
+function.  A similar function will do the same thing, only returning a
+Clair::Document as opposed to a string.  This is the to\_document()
+function.  Again, See the description of get\_graf(\%filter) for more
+information.
+
+The final function is to\_graf\_cluster().  This returns a cluster whose documents are
+the content of the grafs of this record that satify \%filter. See the description
+of get\_graf(\%filter) for more information.
+
+\subsection{Clair::Polisci::Speaker}
+
+Clair::Polisci::Speaker is a Speaker object used to represent a generic speaker from a hansard.
+It is basically a container object with a source, an id and an equality
+relation. Two Speakers are equal if they come from the same source and have
+the same id.  The basic usage would be:
+\\
+\\
+\begin{boxedverbatim}
+
+my $speaker = Clair::Polisci::Speaker->new(
+    source => "polisci_us",
+    id => 49238
+);
+
+\end{boxedverbatim}
+
+The new() function constructs a new speaker from the given source and id.
+Additional properties can be given to the speaker by adding them to the
+constructor's parameter list.
+\\
+\\
+\begin{boxedverbatim}
+
+my $speaker = Clair::Polisci::Speaker->new(
+    source => "some_db",
+    id => 49032
+);
+
+\end{boxedverbatim}
+

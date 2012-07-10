@@ -1,0 +1,89 @@
+=head1 NAME
+
+Hash::Case::Preserve - hash with enforced lower cased keys
+
+=head1 INHERITANCE
+
+ Hash::Case::Preserve
+   is a Hash::Case
+   is a Tie::StdHash
+
+=head1 SYNOPSIS
+
+ use Hash::Case::Preserve;
+ tie my(%cphash), 'Hash::Case::Preserve';
+ $cphash{StraNGeKeY} = 3;
+ print keys %cphash;         # StraNGeKeY
+ print $cphash{strangekey};  # 3
+ print $cphash{STRANGEKEY};  # 3
+
+=head1 DESCRIPTION
+
+Hash::Case::Preserve extends Hash::Case, which lets you play various trics
+with hash keys.  See L<Hash::Case> for the other implementations.
+
+=head1 METHODS
+
+$obj-E<gt>B<addHashData>(HASH)
+
+=over 4
+
+See L<Hash::Case/"METHODS">
+
+=back
+
+$obj-E<gt>B<addPairs>(PAIRS)
+
+=over 4
+
+See L<Hash::Case/"METHODS">
+
+=back
+
+$obj-E<gt>B<setHash>(HASH)
+
+=over 4
+
+See L<Hash::Case/"METHODS">
+
+=back
+
+B<tie>(HASH, 'Hash::Case::Preserve', [VALUES,] OPTIONS)
+
+=over 4
+
+Define HASH to be case insensitive, but case preserving.
+The hash is initialized with the VALUES, specified as ref-array or
+ref-hash.
+
+OPTIONS is a list of key/value pairs, which specify how the hash
+must handle preservation.  Current options:
+
+ Option--Default
+ keep    <required>
+
+. keep => =E<gt> 'FIRST' | 'LAST'
+
+=over 4
+
+Which casing is the prefered casing?  The FIRST appearance or the LAST.
+Only stores will affect the casing, deletes will undo the definition.
+Defaults to LAST, which is slightly faster.
+
+=back
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Hash-Case distribution version 1.006,
+built on June 19, 2008. Website: F<http://perl.overmeer.net/hash-case/>
+
+=head1 LICENSE
+
+Copyrights 2002-2003,2007-2008 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

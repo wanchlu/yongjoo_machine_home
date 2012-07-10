@@ -1,0 +1,27 @@
+\subsection{Extract N-Grams From a Batch of Files}
+In this tutorial, we will extract n-grams from a batch of files and list them in a single text file along with the frequency with which they appear. To do this, we will use the utility 'extract\_ngrams.pl' and the text file 11sent.txt. 'extract\_ngrams.pl' takes either text files or html as input and can take multiple files. It extracts all n-grams (given n), and it has a few more options, as explained by
+\\
+\\
+\begin{boxedverbatim}
+extract_ngrams.pl --help
+\end{boxedverbatim}
+\\
+\\
+To find all 3-grams in 11sent.txt (with sentences segmented) and sort them in descending order, enter
+\\
+\\
+\begin{boxedverbatim}
+ extract_ngrams.pl -r "11sent.txt" -f text \
+ -w 11sent_3grams.txt -N 3 --segment --sort --verbose
+\end{boxedverbatim}
+\\
+\\
+This should create the file '11sent\_3grams.txt' containing all 3-grams in 11sent.txt, with each sentence treated as a discrete entity. As the help command indicates, we can also extract n-grams from multiple files using the asterisk ('*') in the input file expression. For example, to extract n-grams in all files starting with "doc", use "doc*".
+
+The "extract\_ngrams.pl" script gives you the option to use either Clairlib or CMU-LM to extract the n-grams. By default, Clairlib will be used. If you want to use the CMU-LM instead, pass the "engine" option with value "CMU\_LM"
+\\
+\\
+\begin{boxedverbatim}
+extract_ngrams.pl -r "11sent.txt" -f text -w 11sent_3grams.txt \
+-N 3 --segment --sort --engine CMU_LM --verbose
+\end{boxedverbatim}

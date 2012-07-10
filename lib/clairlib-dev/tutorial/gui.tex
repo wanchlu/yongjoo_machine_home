@@ -1,0 +1,32 @@
+\section{Graphical User Interface}
+
+The graphical user interface is a distinguishing feature that was recently added to Clairlib and constituted a quantum leap in its development. It consists of a number of interactive and user-friendly visual tools, the main purpose of which is to make the rich set of Clairlib functionalities easier to access by a larger number of users from various levels and backgrounds.
+
+It is also intended to be used by educators to enhance the teaching process. It can also help students do their assignments, projects, and research experiments in an interactive environment. We believe that visual tools facilitate understanding and make learning a more enjoyable experience. Focusing on this purpose, the GUI is tuned for simplicity and ease of use more than high computational efficiency. Therefore, while it's suitable for small and medium scale projects, it's not guaranteed to work efficiently for large projects that involve very large datasets and require heavy processing. The command-line interface is more appropriate for such projects.
+
+The GUI encompasses three main components: the Network Editor/Visualizer/Analyzer, the Text Processor, and the Corpus Processor. 
+
+\subsubsection{Network Component}
+
+The Network component allows users to:
+  
+\begin{itemize}
+  \item Build a new network visually using a set of simple drawing and editing tools.
+  \item Open existing networks stored in files in different formats.
+  \item Visualize a network and interact with it.
+  \item Analyze the network and compute its statistics such as diameter, clustering coefficient, degree distribution, etc.
+  \item Simulate some network operations such as random walks and label propagation.
+\end{itemize}
+
+This component uses the open source package, JUNG\footnote{http://jung.sourceforge.net/} as an infrastructure for the visualization functionality.
+
+\subsection{Text Processing}
+
+The text processing component allows users to process textual data in plain, XHTML, PDF, or DOC format imported from a file stored on the disk or brought directly from the web. Most of the text processing capabilities implemented in Clairlib are accessible through this component. It uses some functionalities of the open-source package of the Stanford Parser\footnote{http://nlp.stanford.edu/software/lex-parser.shtml} to perform some tasks such as parse tree visualization.
+
+\subsection{Corpus Processing}
+
+The corpus processing component allows users to build a corpus of textual data out of a collection of files in plain, XHTML, or PDF format, or by crawling a website. Several tasks could then be performed on a corpus such as indexing, querying, summarization, information extraction, hyperlink or cosine network construction, etc.
+
+Although these three components can be run independently, they are designed to easily interact with each other. For example, the corpus processing component allows a computed cosine network to be forwarded to the network component for analysis or visualization.
+

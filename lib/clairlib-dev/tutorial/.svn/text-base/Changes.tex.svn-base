@@ -1,0 +1,162 @@
+\subsubsection*{\label{}\index{}}
+\subsubsection*{1.05 March 2009\label{1_05_March_2009}\index{1.05 March 2009}}
+\begin{itemize}
+
+\item 
+
+Added Clair:Network:FordFulkerson module
+
+
+\item 
+
+Added new script, "change\_perl\_path.pl", to util. (see page 17)
+
+
+\item 
+
+Added new scripts to interface ACL Anthology Network
+
+
+\item 
+
+Fixed some bugs in Clair::Document
+
+\end{itemize}
+\subsubsection*{1.05 July 2008\label{1_05_July_2008}\index{1.05 July 2008}}
+\begin{itemize}
+
+\item 
+
+Fixed formatting bugs in CorpusDownload.pm
+
+
+\item 
+
+Added get\_predecessor\_matrix() function in Network.pm
+
+
+\item 
+
+Added get\_shortest\_path() function in Network.pm
+
+
+\item 
+
+Added  erase\_corpus.pl script
+
+
+\item added erase\_isolated\_nodes.pl script
+\item added --ignore-isolated-nodes in convert\_network.pl
+\item added several options to print\_network\_stats.pl: a. --self-loop,
+\item completed the descriptions of print\_network\_stats.pl: added the
+note of --force into usage.
+\item 
+
+added sentence\_to\_docs.pl , lines\_to\_docs.pl under util folder
+
+\end{itemize}
+\subsubsection*{1.04B June 2008\label{1_04B_June_2008}\index{1.04B June 2008}}
+\begin{itemize}
+
+\item 
+
+Added -no-duplicated-edges in convert\_network.pl
+
+
+\item Added largest connected component in cos\_to\_stats.pl
+\item Added full avergage shortest path in print\_network.pl
+\item 
+
+fixed divide by zero error in Network.pm, Betweeness.pm
+
+\end{itemize}
+\subsubsection*{1.04A April 2008\label{1_04A_April_2008}\index{1.04A April 2008}}
+\begin{itemize}
+
+\item 
+
+Added Clair::Network::GirvanNewman algorithm to do hierarchical clustering
+
+
+\item 
+
+Added Clair::Network::KernighanLin algorithm to do graph partition
+
+\end{itemize}
+\subsubsection*{1.04 Feburary 2008\label{1_04_Feburary_2008}\index{1.04 Feburary 2008}}
+\begin{itemize}
+
+\item 
+
+Added Clair::Network::AdamicAdar to compute the adamic/adar value for a given network corpus
+
+
+\item 
+
+Added Clair::ChisqIndependent to compute p-value and degree of freedom for Chi square
+
+\end{itemize}
+\subsubsection*{1.03 August 2007\label{1_03_August_2007}\index{1.03 August 2007}}
+\begin{itemize}
+
+\item Added functionality to perform community finding within weighted, undirected networks
+\item Added util/chunk$\backslash$\_document.pl to break documents into smaller files by word number
+\item Added option to retain punctuation for idf and tf queries
+\item Added option to print out full lists of idf and tf values for a corpus
+\item LexRank moved from Clair::Network to Clair::Network::Centrality::LexRank
+\item LexRank use now follows the same use pattern as the other centrality modules\end{itemize}
+\subsubsection*{1.02 July 2007\label{1_02_July_2007}\index{1.02 July 2007}}
+\begin{itemize}
+
+\item Distribution reorganized in standard format
+\item Improved and expanded installation documentation (INSTALL)
+\item Improved POD (inline) documentation
+\item Additional examples
+\item Updated PDF documentation\end{itemize}
+\subsubsection*{1.01 May 2007\label{1_01_May_2007}\index{1.01 May 2007}}
+\begin{itemize}
+
+\item Added Phrase-based Retrieval and Fuzzy OR Queries
+\item Extended Clairlib-ext with interfaces for the Cluster class and the Document class to the Weka machine learning toolkit
+\item Added LSI functionality
+\item Extended parsing of strings / files into Documents
+\item Added perceptron learning and classification for documents\end{itemize}
+\subsubsection*{1.0 RC1 April 2007\label{1_0_RC1_April_2007}\index{1.0 RC1 April 2007}}
+\begin{itemize}
+
+\item Moved all Clair modules beneath the Clair::* namespace, updated documentation
+\item Improved Network Analysis, added Clustering Coefficients code
+\item Added Network Generation and Statistics modules\end{itemize}
+\subsubsection*{0.955 March 2007\label{0_955_March_2007}\index{0.955 March 2007}}
+\begin{itemize}
+
+\item Made it possible to distribute clairlib in two distributions, one containing core code and another containing code that may be dependent on other resources
+\item Cleaned up unit tests\end{itemize}
+\subsubsection*{0.953 February 2007\label{0_953_February_2007}\index{0.953 February 2007}}
+\begin{itemize}
+
+\item Fixed bugs in Clair::Cluster, Clair::Document involving stemming
+\item Cleaned up t/ and test/ directories
+\item Created util/ directory
+\item Added scripts to util/ directory to:\begin{itemize}
+
+\item Run a Google query and save the returned URLs to a file
+\item Download files from a URL and build a corpus
+\item Segment a document into sentences and build a corpus of the sentences
+\item Take all documents in a directory and create a corpus
+\item Index the corpus (compute TF*IDF, etc.)
+\item Compute cosine similarity measures between all documents in a corpus
+\item Generate networks corresponding to various cosine thresholds
+\item Print network statistics about a network file
+\item Generate plots of degree distribution and cosine transitions\end{itemize}
+
+\item New methods in Clair::Network:\begin{verbatim}
+    print_network_info
+    get_network_info_as_string
+    get_cumulative_distribution
+    cumulative_power_law_exponent
+    find_components
+    newman_clustering_coefficient
+    linear_regression
+\end{verbatim}
+\end{itemize}

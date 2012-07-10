@@ -1,0 +1,10 @@
+\subsubsection{Generate a corpus of sentences from a document}
+
+\begin{boxedverbatim}
+ input: collection of documents
+ output: indexed corpus
+
+ sentences_to_docs.pl -d $CLAIRLIB/corpora/1984/ -o docs
+ directory_to_corpus.pl -c 1984sents -b produced -d docs
+ index_corpus.pl -c 1984sents -b produced
+\end{boxedverbatim}

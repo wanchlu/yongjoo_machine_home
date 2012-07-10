@@ -1,0 +1,14 @@
+\subsection{Cosine Similarities and Lexrank Distribution Tutorial}
+In this tutorial, we will calculate the cosine similarities and Lexrank distribution for every pair of lines in a file. To do this, we will use the 'compute\_lexrank.pl' utility. It will create a node for each line in the provided text file and place them in a cluster. Then, it will calculate the cosine similarity matrix and Lexrank transition probabilities for each pair of nodes in the cluster and sort the nodes in descending order of Lexrank centrality. For the purposes of this demonstration, we will use 11sent.txt, provided in \textbf{http://www.clairlib.org/mediawiki/index.php/Corpora}
+
+\begin{verbatim}
+compute_lexrank.pl 11sent
+\end{verbatim}
+
+This will create 3 files in the same directory as 11sent.txt: 
+\begin{itemize}
+  \item 11sent.cos contains the cosine similarity matrix
+  \item 11sent.lr contains each line arranged in descending order of Lexrank centrality
+  \item 11sent.prob contains the transition probabilities used in Lexrank for each pair of nodes.
+\end{itemize}
+

@@ -1,0 +1,10 @@
+\subsubsection{Generate a corpus using Zipfian distribution}
+
+\begin{boxedverbatim}
+
+ input: indexed corpus
+ output: synthetic corpus
+
+ make_synth_collection.pl --policy zipfian --alpha 1 -o synth \
+   -d synth_out -c chemical -b produced --size 11 --verbose
+\end{boxedverbatim}

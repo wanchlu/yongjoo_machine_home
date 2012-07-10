@@ -1,0 +1,144 @@
+\section{Clairlib Network Processing Utilities Tutorial\label{Clairlib_Network_Processing_Utilities_Tutorial}\index{Clairlib Network Processing Utilities Tutorial}}
+
+
+A tutorial explaining how to use the Clairlib library and tools to create a network from a group of files and process that network to extract information.
+
+\subsection*{Introduction\label{Introduction}\index{Introduction}}
+
+
+This tutorial will walk you through downloading files, creating a corpus from them, creating a network from the corpus, and extracting information along the way.  We'll be using utilities included in the Clairlib package to do the work.
+
+
+
+Before beginning, install the clairlib package.  To do so, follow the instructions at:
+
+\begin{verbatim}
+ http://belobog.si.umich.edu/mediawiki/index.php/Installation.
+\end{verbatim}
+
+
+The best way to use this document is to read all the way through as each command is explained.  The commands at the end of the tutorial in the code section.
+
+\subsection*{Generating the corpus\label{Generating_the_corpus}\index{Generating the corpus}}
+
+
+The first thing we will need is a corpus of files to run our tests against.  As an example we will be using a set of files extracted from Wikipedia.  We'll first download those files into a folder:
+
+\begin{verbatim}
+ mkdir corpus
+\end{verbatim}
+
+
+We'll use the 'wget' command to download the files.  The -r means to recursively get all of the files in the folder, -nd means don't create the directory path, and -nc means only get one copy of each file:
+
+\begin{verbatim}
+ cd corpus
+ wget -r -nd -nc http://belobog.si.umich.edu/clair/corpora/chemical
+ cd ..
+\end{verbatim}
+
+
+Now that we have our files, we can create the corpus.  To do this we'll use the 'directory\_to\_corpus.pl' utility.  The options used here are fairly consistent for all utilities:  --corpus, or -c, refers to the name of the corpus we are creating.  This should be something fairly simple, since we use it often and it is used to name several of the files we'll be creating.  In this case, we call our corpus 'chemical'.  --base, or -b, refers to the base directory of our corpus' data files.  A common practice is to use 'produced'.  Lastly --directory, or -d, refers to the directory where our files to be converted are located:
+
+\begin{verbatim}
+ directory_to_corpus.pl --corpus chemical --base produced \
+  --directory corpus
+\end{verbatim}
+
+
+Now that our corpus has been organized, we'll index it so we can then start extacting data from it.  To do that we'll use 'index\_corpus.pl'.  Again, we'll specify the corpus name and the base directory where the index files should be produced:
+
+\begin{verbatim}
+ index_corpus.pl --corpus chemical --base produced
+\end{verbatim}
+
+
+We've now got our corpus and our indices and are ready to extract data.
+
+\subsection*{Tfs and Idfs\label{Tfs_and_Idfs}\index{Tfs and Idfs}}
+
+
+First we'll run a query for the term frequency of a single term.  To do this we'll use 'tf\_query.pl'.  Let's query 'health':
+
+\begin{verbatim}
+ tf_query.pl -c chemical -b produced -q health
+\end{verbatim}
+
+
+This outputs a list of the files in our corpus which contain the term 'health' and the number of times those terms occur in that file.  To get term frequencies for all terms in the corpus, pass the --all option:
+
+\begin{verbatim}
+ tf_query.pl -c chemical -b produced --all
+\end{verbatim}
+
+
+This returns a list of terms, their frequencies, and the number of documents each occurs in.
+
+
+
+In order to see the full list of term frequencies for stemmed terms, pass the stemmed option:
+
+\begin{verbatim}
+ tf_query.pl -c chemical -b produced --stemmed --all
+\end{verbatim}
+
+
+Next we'll run a query for the inverse document frequency of a single term.  To do this we'll use 'idf\_query'.  Again, we'll query 'health':
+
+\begin{verbatim}
+ idf_query.pl -c chemical -b produced -q health
+\end{verbatim}
+
+
+We can also pass the --all option to idf\_query.pl to get a list of idf's for all terms in the corpus:
+
+\begin{verbatim}
+ idf_query.pl -c chemical -b produced --all
+\end{verbatim}
+\subsection*{Creating a Network\label{Creating_a_Network}\index{Creating a Network}}
+
+
+We now have a corpus from which we can extract some data.  Next we'll create a network from this corpus.  To do this, we'll use 'corpus\_to\_network.pl'.  This command creates a network of hyperlinks from our corpus.  It produces a graph file with each line containing two linked nodes.  This command requires a specified output file which we'll call 'chemical.graph':
+
+\begin{verbatim}
+ corpus_to_network.pl -c chemical -b produced -o chemical.graph
+\end{verbatim}
+
+
+Now we can gather some data on this network.  To do that we'll run 'print\_network\_stats.pl' on our graph file.  This command can be used to produce many different types of data.  The easiest way to use it is with the --all option, which run all of its various tests.  We'll redirect its output to a file:
+
+\begin{verbatim}
+ print_network_stats.pl -i chemical.graph --all > chemical.graph.stats
+\end{verbatim}
+
+
+If we now look at 'chemical.graph.stats' we can see statistics for our network including numbers of nodes and edges, degree statistics, clustering coefficients, and path statistics.  This command also creates three centrality files (betweenness, closeness, and degree) which are lists of all terms and their centralities.
+
+\subsection*{Conclusions\label{Conclusions}\index{Conclusions}}
+
+
+With the tools described above you should be able to create a corpus from a set of files and extract statistics from that corpus.  For additional functionality or to get more information on the utilites used, go to
+
+\begin{verbatim}
+ http://belobog.si.umich.edu/mediawiki/index.php/Documentation.
+\end{verbatim}
+\subsection*{Code\label{Code}\index{Code}}
+
+
+This is a list of all of the commands used in this tutorial:
+
+\begin{verbatim}
+ mkdir corpus
+ cd corpus
+ wget -r -nd -nc http://belobog.si.umich.edu/clair/corpora/chemical
+ cd ..
+ directory_to_corpus.pl --corpus chemical --base produced \
+  --directory corpus
+ index_corpus.pl --corpus chemical --base produced
+ tf_query.pl -c chemical -b produced -q health
+ tf_query.pl -c chemical -b produced --all
+ idf_query.pl -c chemical -b produced -q health
+ idf_query.pl -c chemical -b produced --all
+ corpus_to_network.pl -c chemical -b produced -o chemical.graph
+ print_network_stats.pl -i chemical.graph --all > chemical.graph.stats
+\end{verbatim}

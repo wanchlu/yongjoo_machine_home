@@ -1,0 +1,37 @@
+THE TUTORIAL
+
+The tutorial is in the tutorial directory of clairlib-dev.  Most of the tutorial is stored in one tex file: tut.tex.  Any changes to the bulk of the tutorial should be made there.  The other file used is recipes.tex which holds the formatted recipes.  To recreate this file, run the script "compile_recipes.pl".  This script reads in all files with form "test_*.pl" in the test directory, wraps lines that are too long, then splits each recipe into the amount that can fit on one page.  The end result is a series of recipes in boxedverbatim tags output to recipes.tex.  This script should be re-run every time a .pl test is added or changed so that the changes are reflected in the tutorial.
+
+
+DISTRIBUTING CLAIRLIB
+
+There are several scripts that should be used to prepare a distributable clairlib.tar.gz file.  These scripts are in the dist_scripts directory of clarlib-dev.  The main script is prepare_to_distribute.pl which runs the other scripts a correct order.
+
+To quickly perform a few tasks, several key tasks are provided below with the script that performs them, so you can quickly skip ahead to the description of that script:
+- Regenerate pdoc: create_perldoc.pl
+- Regenerate the external web page: copy_tests_to_webpage.pl
+- Prevent certain files from being included in the tar.gz file: copy_to_clairlib.pl
+- Rebuild the tar.gz file: tar_clairlib.pl
+
+Before the script is run, /data0/projects/clairlib should exist, but be empty.  I have had some trouble in the past with automating this part because of permissions, so it is left as a manual task.  This should be made empty first so that any files that have been removed from clairlib-dev don't remain in clairlib.
+
+The scripts may also be run independently, so an explanation of each script is below (in the order they are called by prepare_to_distribute.pl):
+
+copy_to_clairlib.pl
+This copies the lib, t, and test directories from clairlib-dev to clairlib.  It first removes two large corpora from clairlib-dev to avoid copying them (they are created by test cases and not needed to run).  It then copies the directories, and a few additional files.  It then has a long list of files that are removed from the clairlib directory to prevent them from being included in the distribution.  Generally, these are files created by running the test cases that do not need to be included in the distribution.  Finally, it runs remove_Google_key.pl.
+
+remove_Google_key.pl
+This script reads Config.pm from clairlib and modifies it to remove the Google search key.  It removes any line containing "#GOOGLE_KEY" (which the line containing our test key should have).  It then removes the text "#GOOGLE_NOKEY" (but not the line) so that the code after that on the line becomes uncommented.
+
+create_perldoc.pl
+This script creates the pdoc pages from the library.  The webpages are saved to /clair/html/clairlib/pdoc, which corresponds to http://tangra.si.umich.edu/clair/clairlib/pdoc.
+
+copy_tests_to_webpage.pl
+This script copies the .t tests to txt files in the web directory, in the tests subdirectory (/clair/html/clairlib/tests).  Although all the files are copied, note that this does not add the links to the main webpages.  Any new test cases should be manually added to the clairlib webpage with a link to the .txt file in the web directory.
+
+tar_clairlib.pl
+This creates a clairlib.tar.gz from the contents of the clairlib directory, with the exception of any files listed in "exclude_tar.txt."  The resulting clairlib.tar.gz is placed in the clairlib directory.
+
+additional_tar.pl
+This creates the additional.tar.gz file with some files that were not included in clairlib.tar.gz.  The resulting additional.tar.gz is placed in the clairlib directory.
+

@@ -1,0 +1,209 @@
+\section{Graph Formats in Clairlib}
+
+In this section, we talk about the graph formats Clairlib accepts as input and those that it can produce as output. We describe each format and show how to use Clairlib to input or output graphs in it.
+
+Clairlib accepts the following graph formats as input:
+\begin{itemize}
+  \item Edgelist Format
+  \item Graph Modeling Language - GML
+  \item Graph Markup Language - GrpahML
+  \item Pajek Format
+\end{itemize}
+
+And it's able to output the following graph formats:
+
+\begin{itemize}
+  \item Edgelist Format
+  \item Graph Markup Language - GrpahML
+  \item Pajek Format
+  \item Graclus Format
+\end{itemize}
+
+\subsection{Edgelist Format}
+
+In the edgelist format, a graph is represented by its edges. Each line in the edgelist file corresponds to an edge in the graph. The edge can optionally have a weight. For example, if a graph file has four nodes (n1, n2, n3, and n4) and has two edges (n1-n2, n1-n3) and each edge is weighted 0.5, the edgelist file of this graph should be:
+\\
+\\
+\begin{boxedverbatim}
+n1 n2 0.5
+n1 n3 0.5
+n4
+\end{boxedverbatim}
+\\
+\\
+The default delimiter used to separate the components of each line is a single space but any other delimiter can be specified by the user. Notice that isolated nodes are allowed and represented by a line with a single node (as n4 in the example above.) Multiple edges are also allowed and take the following format:
+\\
+\\
+\begin{boxedverbatim}
+n1 n3 0.5
+n1 n3 0.9
+n1 n3 0.1
+\end{boxedverbatim}
+\\
+\\
+To read a graph stored in an edgelist file format, Clairlib provides \emph{Clair::Networks::Reader::Edgelist} module which reads the file line by line and creates a \emph{Clair::Network} instance. You need first to create an instance of \emph{Clair::Network::Reader::Edgelist} then use it to read the file.
+\\
+\\
+\begin{boxedverbatim}
+$reader = new Clair::Network::Reader::Edgelist(directed=>0, delim=>"~");
+$net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\\
+The \emph{directed} argument indicates that the graph is undirected if its value is 0 and directed if 1. Note that there is nothing in an edglist file that tells whether the graph is directed or not. By default, Clairlib will consider it as being undirected unless the user set the \emph{directed} parameter to 1 in which case the first node in the line will be the source and the second the target.
+
+The \emph{delim} argument tells the reader that the nodes in the file are separated by "~". The default delimiter is "[\\t ]+". \emph{\$filename} is the graph file name.
+
+If you have a \emph{Clair::Network} instance (e.g. \emph{\$net}) and want to write it to a file in edgelist format, create an instance of \emph{Clair::Network::Writer::Edgelist} first then use it to write the network to the file.
+\\
+\\
+\begin{boxedverbatim}
+$export = new Clair::Network::Writer::Edgelist();
+$export->write_network($net, $filename);
+\end{boxedverbatim}
+\\
+\subsection{Graph Modeling Language - GML}
+
+Graph Modelling Language (GML) is a hierarchical ASCII-based file format for describing graphs. GML is a portable file format supported by several graph programs. A GML file consists of a hierarchical key-value list. An example of a simple GML file is:
+\\
+\\
+\begin{boxedverbatim}
+graph [
+  comment "This is a sample graph"
+  directed 1
+  IsPlanar 1
+  node [
+    id 1
+    label
+    "Node 1"
+  ]
+  node [
+    id 2
+    label
+    "Node 2"
+  ]
+  edge [
+    source 1
+    target 2
+    label "Edge from node 1 to node 2"
+  ]
+]
+\end{boxedverbatim}
+\\
+\\
+For more information about the GML format, visit \emph{http://www.infosun.fim.uni-passau.de/Graphlet/GML/}.
+
+To read a graph stored in a GML file format, Clairlib provides \emph{Clair::Networks::Reader::GML} module which reads the file and creates a \emph{Clair::Network} instance. You need first to create an instance of \emph{Clair::Network::Reader::GML} then use it to read the file.
+\\
+\\
+\begin{boxedverbatim}
+$reader = new Clair::Network::Reader::GML();
+$net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\\
+There is no support for outputting graphs in GML format in this version of Clairlib.
+
+\subsection{Graph Markup Language - GraphML}
+
+GraphML is a comprehensive and easy-to-use file format for graphs. Unlike many other file formats for graphs, GraphML does not use a custom syntax. Instead, it is based on XML and hence ideally suited as a common denominator for all kinds of services generating, archiving, or processing graphs. An example of simple GraphML file is:
+\\
+\\
+\begin{boxedverbatim}
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <graph id="G" edgedefault="undirected">
+    <node id="n0"/>
+    <node id="n1"/>
+    <node id="n2"/>
+    <node id="n3"/>
+    <edge source="n0" target="n2"/>
+    <edge source="n1" target="n2"/>
+    <edge source="n2" target="n3"/>
+  </graph>
+</graphml>
+\end{boxedverbatim}
+\\
+\\
+For more information about the GraphML format, visit \emph{http://graphml.graphdrawing.org/}.
+
+To read a graph stored in a GraphML file format, Clairlib provides \emph{Clair::Networks::Reader::GraphML} module which reads the file and creates a \emph{Clair::Network} instance. You need first to create an instance of \emph{Clair::Network::Reader::GraphML} then use it to read the file.
+\\
+\\
+\begin{boxedverbatim}
+$reader = new Clair::Network::Reader::GraphML();
+$net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\\
+If you have a \emph{Clair::Network} instance (e.g. \emph{\$net}) and want to write it to a file in GraphML format, create an instance of \emph{Clair::Network::Writer::Edgelist} first then use it to write the file.
+\\
+\\
+\begin{boxedverbatim}
+$export = new Clair::Network::Writer::GraphML();
+$export->write_network($net, $filename);
+\end{boxedverbatim}
+\\
+\subsection{Pajek Format}
+
+Pajek is a popular network analysis program for Windows. The data (vertices and edges) as well as other attributes (e.g. vertex colour, label font size) of a network is stored in a plain text files. An example of simple Pajek file is:
+\\
+\\
+\begin{boxedverbatim}
+* Vertices n
+  1 "Vertice 1"
+  2 "Vertice 2"
+  ...
+* Edges
+  1 2
+  1 3
+  ...
+\end{boxedverbatim}
+\\
+\\
+The upper part of the file specifies the vertices of the network. In particular, n is the number of vertices in the network. This should agree with the number of lines following under the first line. For each line specifying a vertex, the first value is the vertex number (counting from 1), while the second is the vertex label. Besides, there are a set of optional attributes of the vertices that can be specified after the vertex label.
+
+For more information about the Pajek software and file format, visit \emph{http://vlado.fmf.uni-lj.si/pub/networks/pajek/}.
+
+To read a graph stored in a Pajek file format, Clairlib provides \emph{Clair::Networks::Reader::Pajek} module which reads the file and creates a \emph{Clair::Network} instance. You need first to create an instance of \emph{Clair::Network::Reader::Pajek} then use it to read the file.
+\\
+\\
+\begin{boxedverbatim}
+$reader = new Clair::Network::Reader::Pajek();
+$net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\\
+If you have a \emph{Clair::Network} instance (e.g. \emph{\$net}) and want to write it to a file in Pajek format, create an instance of \emph{Clair::Network::Writer::Pajek} first then use it to write the file.
+\\
+\\
+\begin{boxedverbatim}
+$export = new Clair::Network::Writer::Pajek();
+$export->write_network($net, $filename);
+\end{boxedverbatim}
+\\
+\subsection{Graclus Format}
+
+Graclus is a graph clustering software. A Graclus file contains a matrix in adjacent list format. For example, if a graph has 3 nodes(1,2,3) and 2 edges (1-2,2-3) and the edges are weighted (0.1, 0.2) respectively, the corresponding Graclus files should be:
+\\
+\\
+\begin{boxedverbatim}
+3 2         <--- # of nodes and edges and format
+2 0.1 	    <--- nodes adjacent to 1 and weights
+1 0.1 3 0.2	<--- nodes adjacent to 2 and weights
+2 0.2		<--- nodes adjacent to 3 and weights
+\end{boxedverbatim}
+\\
+\\
+For more information, visit \emph{http://www.cs.utexas.edu/users/dml/Software/graclus.html}.
+
+This version of Clairlib supports only outputting graphs in Graclus format. If you have a \emph{Clair::Network} instance (e.g. \emph{\$net}) and want to write it to a file in Graclus format, create an instance of \emph{Clair::Network::Writer::Graclus} first then use it to write the file.
+\\
+\\
+\begin{boxedverbatim}
+$export = new Clair::Network::Writer::Graclus();
+$export->write_network($net, $filename);
+\end{boxedverbatim}

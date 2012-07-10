@@ -1,0 +1,28 @@
+\subsection{Create a Lexical Network from a Corpus}
+In this tutorial, we will create a lexical network from a corpus. We will use the utility 'corpus\_to\_lexical\_network.pl', which will take as input a pre-indexed corpus and produce a graph where each node is a word and an edge exists between two words if they occur in the same sentences.  Multiple occurrences are weighted more. To see this utility's usage details, use the command
+
+\begin{verbatim}
+corpus_to_lexical_network.pl --help
+\end{verbatim}
+
+First off, we will copy the file 11sent.txt (http://belobog.si.umich.edu/clair/clairlib/11sent.txt) to our current working directory. Then, we will create a collection of documents with one line from 11sent.txt each using a utility called 'lines\_to\_docs.pl'. Then, we will create a corpus from that collection and index it.
+\\
+\\
+\begin{boxedverbatim}
+
+lines_to_docs.pl --input 11sent.txt --output 11sent_source
+directory_to_corpus.pl --corpus 11Sent --base 11sent_produced \
+ --directory 11sent_source
+index_corpus.pl --corpus 11Sent --base 11sent_produced
+
+\end{boxedverbatim}
+\\
+\\
+Next, we can directly use the utility to stem the corpus create a lexical network, '11sent.graph':
+
+\begin{verbatim}
+corpus_to_lexical_network.pl -c 11Sent -b 11sent_produced \
+ -o 11sent.graph --stem --verbose
+\end{verbatim}
+
+Now, our output file, '11sent.graph' contains a lexical network of stemmed terms.

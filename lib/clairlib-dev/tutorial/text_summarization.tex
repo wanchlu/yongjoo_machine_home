@@ -1,0 +1,432 @@
+\subsection{Text Summarization}
+
+\subsubsection{Single Document Summarization}
+In this tutorial you will learn how to use Clairlib to summarize a text document or html page. The basic idea behind text summarization is to identify the most important pieces of information from the document, omitting irrelevant information and minimizing details, and assemble them into a compact coherent report. One way to determining which pieces are most important is by splitting the document into pieces (e.g. sentences) and then computing some textual feature for each sentence, such as length, centroid, position, similarity to the first piece. The values of the features of each sentence are then combined in some way to score it. The sentences with the highest  and scores are finally returned as a summary. This method of automatic summarization is called \textbf{Sentence Extraction} and it is the one implemented in Clairlib and discussed in this tutorial.
+
+For the purpose of this tutorial, we will use an HTML formatted news article about a Gulf Air Airbus that crashed off the coast of Bahrain in the Persian Gulf on August 23, 2000 as a sample document. The article can be downloaded from \textbf{http://belobog.si.umich.edu/clair/clairlib/gulf.html}
+\\
+\\
+\textbf{Document Summarization Process}
+\\
+The process of summarizing a single text or html document in Clairlib involves the following steps:
+\begin{itemize}
+  \item Read in the file and create a Clair::Document object.
+  \item Split the document into sentences.
+  \item Calculate the sentences features.
+  \item Combine the features values to score the sentences.
+  \item  Return the sentences with highest scores.
+\end{itemize}
+
+The details of how to do these steps using Clairlib follows.
+\\
+\\
+\textbf{Read in the file and create a Clair::Document object}
+\\
+The first step is to create a new \emph{Clair::Document} object. The file name is passed to the constructor as a parameter.
+\\
+\\
+\begin{boxedverbatim}
+  use Clair::Document;
+  $file = "gulf.html";
+  my $doc = new Clair::Document(type=>"html", file=>"gulf.html");
+  $doc->strip_html();
+\end{boxedverbatim}
+\\
+\\
+The last line in the code above removes all html tags from the document and saves the resulting string as the text of the Document object.
+\\
+\\
+\textbf{Split the document into sentences}
+\\
+As was mentioned in the introduction of this tutorial, summarization starts by splitting the document into pieces (sentences, in our case). This can be easily done by calling the \emph{split\_into\_sentences} subroutine of the Document object.
+\\
+\\
+\begin{boxedverbatim}
+ $doc->split_into_sentences();
+\end{boxedverbatim}
+\\
+\\
+The \emph{split\_into\_sentences} subroutine splits the document into an array of sentences and store it internally in the Document object.
+\\
+\\
+\textbf{Calculate the sentences features}
+\\
+In this tutorial, we will calculate four features for each sentence, the length, the position, the centroid, and the similarity to the first sentence in the document. The \emph{compute\_sentence\_features} subroutine of the Document object takes a hash of features as input and computes the given features for each of the document sentences. The hash of features should have the name of the feature as the key and a reference to a subroutine that calculates the feature as the value. \emph{Clair::SentenceFeatures} module provides several subroutines to compute the features of a sentence. We will make of these functions to calculate our desired features.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::SentenceFeatures qw(length_feature
+                                position_feature
+                                sim_with_first_feature
+                                centroid_feature);
+ # define the features hash
+ my %features = (
+    'length' => \&length_feature,
+    'position' => \&position_feature,
+    'simwithfirst' => \&sim_with_first_feature,
+    'centroid' => \&centroid_feature
+ );
+ $doc->compute_sentence_features(%features);
+\end{boxedverbatim}
+\\
+\\
+Since the computed values are for different features (and thus are of different scales), those values need to be normalized (i.e make all the values of all the features between 0 and 1). The \emph{normalize\_sentence\_features} subroutine does this. It takes as input an array of the names of the features to be normalized.
+\\
+\\
+\begin{boxedverbatim}
+ @features_names = keys %features
+ $doc->normalize_sentence_features(keys %features);
+\end{boxedverbatim}
+\\
+\\
+\textbf{Combine the feature values to score the sentences}
+\\
+The next step is to combine the values of the features computed in the previous section to score the sentences. The \emph{score\_sentences} subroutine of the Document object scores the sentences using a given combiner subroutine. The combiner subroutine should be passed a hash containing feature names mapped to their values and should return a real number as a score. By default, the sentence scores will be normalized unless a \emph{normalize} argument is passed and set to 0. Alternatively, if a weights argument is specified and hash is specified and hash of weights for the features is passes, then the returned score will be a linear combination of the features specified in the hash according to their given weights. This option will override the combiner parameter. In this tutorial we'll use the weights option and weight all the features equally.
+\\
+\\
+\begin{boxedverbatim}
+ # Create the weights hash
+ my %weights=();
+ # weight all the features equally.
+ $weights{"lenght"}=1;
+ $weights{"position"}=1;
+ $weights{"simwithfirst"}=1;
+ $doc->score_sentences( weights => \%weights );
+\end{boxedverbatim}
+\\
+\\
+\textbf{Return the sentences with highest scores}
+\\
+Now we have all the sentences scored based on the desired features. The last step is to pick the sentences with highest scores and return them as the summary of the original document. The \emph{get\_summary} subroutine of the Document object returns the highest scored sentences. You can limit the maximum number of the returned sentences by passing a \emph{size} argument and you can also choose whether to preserve the sentences order as in the original document or to order them on their scores.
+\\
+\\
+\begin{boxedverbatim}
+ @summary = $doc->get_summary(size => 5, preserve_order => 1);
+\end{boxedverbatim}
+\\
+\\
+The returned \emph{\@summary} is an array of hash references. Each hash reference represents a sentence and contains the following key-value pairs:
+
+\begin{itemize}
+  \item index - The index of this sentence (starting at 0).
+  \item text - The text of this sentence.
+  \item features - A hash reference of this sentence's features.
+  \item score - The score of this sentence.
+\end{itemize}
+
+You can use the \emph{Data::Dumper} to see the structure and the values of the returned array
+\\
+\\
+\begin{boxedverbatim}
+ use Data::Dumper;
+ print Dumper(@summary);
+\end{boxedverbatim}
+\\
+\\
+You can also loop through the array and print the summary sentences.
+\\
+\\
+\begin{boxedverbatim}
+ foreach my $sent (@summary) {
+    print "$sent->{text} ";
+ }
+\end{boxedverbatim}
+\\
+\\
+\textbf{summarize\_document.pl utility}
+\\
+If you need to summarize a document and output the summary to a file you can also use the \emph{summarize\_document.pl} utility as follows:
+\\
+\\
+\begin{boxedverbatim}
+summarize_document.pl --input gulf.html --type html --output summary.txt \\
+--length 0.7 --position 0.8 --max_sentences 5
+\end{boxedverbatim}
+\\
+For more information about how to run this script run
+\\
+\\
+\begin{boxedverbatim}
+summarize_document --help
+\end{boxedverbatim}
+\\
+\subsubsection{Multi-Document Summarization}
+
+In this subsection of the tutorial you will learn how to summarize multiple documents into a single condense paragraph. As we did in the \textbf{Single Document Summarization}, we will use the \textbf{Sentence Extraction} method but instead of considering the sentences from one document, we will consider the sentences of a set of documents.
+
+We will use a set of news articles all talking about the Gulf Air Airbus that crashed off the coast of Bahrain in the Persian Gulf on August 23, 2000 as a sample set of documents. The collection can downloaded from \textbf{http://belobog.si.umich.edu/clair/clairlib/gulf.tar.gz.}
+\\
+\\
+\textbf{Multi-Document Summarization Process}
+The process of summarizing multiple documents in Clairlib involves the following steps:
+\begin{itemize}
+  \item  Create a cluster of all the documents.
+  \item  Compute the values of the desired features for all the sentences of all the documents in the cluster.
+  \item  Combine the features values to score the sentences.
+  \item  Return the sentences with highest scores as the summary.
+\end{itemize}
+
+The details of how to implement these steps using Clairlib follows.
+\\
+\\
+\textbf{Create a cluster of all documents}
+
+First, extract the articles files
+\\
+\\
+\begin{boxedverbatim}
+ tar xvf gult.tar.gz
+\end{boxedverbatim}
+\\
+\\
+Let's assume that files are extracted in "./gulf". Prepare a list of all the articles files.
+\\
+\\
+\begin{boxedverbatim}
+ @docs = glob("./gulf/*");
+\end{boxedverbatim}
+\\
+\\
+Then, create a new \emph{Clair::Cluster} object.
+\\
+\\
+\begin{boxedverbatim}
+  use Clair::Cluster;
+  my $cluster = new Clair::Cluster();
+\end{boxedverbatim}
+\\
+\\
+Add the documents to the cluster
+\\
+\\
+\begin{boxedverbatim}
+ $cluster->load_file_list_array(\@docs, type => "text", filename_id => 1);
+\end{boxedverbatim}
+\\
+\\
+The \emph{load\_file\_list\_array} subroutine reads in the files, creates a new \emph{Clair::Document} object of type \emph{text} for each file, assigns an incrementing number as a unique id for each Document object, and adds the Document objects to the cluster.
+\\
+\\
+\textbf{Compute the values of the desired features for all the sentences of all the documents in the cluster}
+\\
+We will compute three features for each sentence, the length, the position, and the similarity to the first sentence in the document. \emph{compute\_sentence\_features} subroutine of the Cluster object takes a hash of features as input and computes the given features for each of the sentences of all the document in the cluster. The hash of features should have the name of the feature as the key and a reference to a subroutine that calculates the feature as the value. \emph{Clair::SentenceFeatures} module provides several subroutines to compute the features of a sentence. We will make of these functions to calculate our desired features.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::SentenceFeatures qw(length_feature
+                                position_feature
+                                sim_with_first_feature
+                                centroid_feature);
+ # define the features hash
+ my %features = (
+    'length' => \&length_feature,
+    'position' => \&position_feature,
+    'simwithfirst' => \&sim_with_first_feature
+ );
+ $cluster->compute_sentence_features(%features);
+\end{boxedverbatim}
+\\
+\\
+Since the computed values are for different features (and thus are of different scales), those values need to be normalized (i.e make all the values of all the features between 0 and 1). \emph{normalize\_sentence\_features} subroutine does this. It takes as input an array of the names of the features to be normalized.
+\\
+\\
+\begin{boxedverbatim}
+ @features_names = keys %features
+ $cluster->normalize_sentence_features(keys %features);
+\end{boxedverbatim}
+\\
+\\
+\textbf{Combine the features values to score the sentences}
+\\
+The next step is to combine the values of the features computed in the previous section to score the sentences. The \emph{score\_sentences} subroutine of the Cluster object scores the sentences using a given combiner subroutine. The combiner subroutine should be passed a hash containing feature names mapped to their values and should return a real number as a score. By default, the sentence scores will be normalized unless a \emph{normalize} argument is passed and set to 0. Alternatively, if a weights argument is specified and hash is specified and hash of weights for the features is passes, then the returned score will be a linear combination of the features specified in the hash according to their given weights. This option will override the combiner parameter. In this tutorial we'll use the weights option and weight all the features equally.
+\\
+\\
+\begin{boxedverbatim}
+ # Create the weights hash
+ my %weights=();
+ # weight all the features equally.
+ $weights{"lenght"}=1;
+ $weights{"position"}=1;
+ $weights{"simwithfirst"}=1;
+ $cluster->score_sentences( weights => \%weights );
+\end{boxedverbatim}
+\\
+\\
+\textbf{Return the sentences with highest scores}
+\\
+Now, we have all the sentences scored based on the desired features. The last step is to pick the sentences with the highest scores and return them as the summary of the original set of documents. The \emph{get\_summary} subroutine of the Cluster object returns the highest scored sentences. You can limit the maximum number of the sentences in the summary by passing a \emph{size} argument. You can also choose whether to preserve the order of the sentences as in the original document or to order them on their scores.
+\\
+\\
+\begin{boxedverbatim}
+ @summary = $doc->get_summary(size => 5, preserve_order => 1);
+\end{boxedverbatim}
+\\
+\\
+The returned \emph{@summary} is an array of hash references. Each hash reference represents a sentence and contains the following key/value pairs:
+
+\begin{itemize}
+  \item index - The index of this sentence (starting at 0).
+  \item text - The text of this sentence.
+  \item features - A hash reference of this sentence's features.
+  \item score - The score of this sentence.
+\end{itemize}
+
+You can use the \emph{Data::Dumper} to see the structure and the values of the returned array
+\\
+\\
+\begin{boxedverbatim}
+ use Data::Dumper;
+ print Dumper(@summary);
+\end{boxedverbatim}
+\\
+\\
+You can also loop through the array and print the summary sentences.
+\\
+\\
+\begin{boxedverbatim}
+ foreach my $sent (@summary) {
+    print "$sent->{text} ";
+ }
+\end{boxedverbatim}
+\\
+\\
+\textbf{summarize\_corpus.pl utility}
+
+If you have your documents formatted as a Clairlib corpus, you can summarize those documents by using the \emph{summarize\_corpus.pl} utility as follows:
+\\
+\\
+\begin{boxedverbatim}
+summarize_corpus.pl --corpus Gulf --base produced --type text \\
+--output summary.txt --length 0.7 --position 0.8 --max_sentences 5
+\end{boxedverbatim}
+\\
+\\
+For more information about how to use this script, run
+\\
+\\
+\begin{boxedverbatim}
+summarize_corpus --help
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Using Mead as a summarizer with Clairlib}
+
+MEAD is a publicly available toolkit for multi-lingual summarization and evaluation. The toolkit implements multiple summarization algorithms (at arbitrary compression rates) such as position-based, Centroid, TF*IDF, and query-based methods. Methods for evaluating the quality of the summaries include co-selection (precision/recall, kappa, and relative utility) and content-based measures (cosine, word overlap, bigram overlap). You can download the latest version of MEAD from \textbf{http://www.summarization.com/mead}.
+
+The \emph{Clair::MEAD::*} modules forms an interface to MEAD. We'll use \emph{Clair::MEAD::Wrapper} to access MEAD summarization functionalities.
+
+For the purpose of this tutorial, we will use a set of news articles all talking about the Gulf Air Airbus that crashed off the coast of Bahrain in the Persian Gulf on August 23, 2000 as a sample set of documents. (http://belobog.si.umich.edu/clair/clairlib/gulf.tar.gz).
+\\
+\\
+\textbf{Summarization Process}
+\\
+\\
+The summarization process should go through the following steps:
+\begin{itemize}
+
+  \item  Create a cluster of all the documents.
+  \item  Create a Clair::Mead::Wrapper object.
+  \item  Specify the summarization options.
+  \item  Run MEAD and return the summary.
+
+\end{itemize}
+
+The details of how to implement these steps using Clairlib follows.
+\\
+\\
+\textbf{Create a cluster of all the documents}
+
+First, extract the articles files
+\\
+\\
+\begin{boxedverbatim}
+ tar xvf gult.tar.gz
+\end{boxedverbatim}
+\\
+\\
+Let's assume that the files are extracted in "./gulf". Prepare a list of all the article files.
+\\
+\\
+\begin{boxedverbatim}
+ @docs = glob("./gulf/*");
+\end{boxedverbatim}
+\\
+\\
+Then, create a new Clair::Cluster object.
+\\
+\\
+\begin{boxedverbatim}
+  use Clair::Cluster;
+  my $cluster = new Clair::Cluster();
+\end{boxedverbatim}
+\\
+\\
+Add the documents to the cluster
+\\
+\\
+\begin{boxedverbatim}
+ $cluster->load_file_list_array(\@docs, type => "text", filename_id => 1);
+\end{boxedverbatim}
+\\
+\\
+The \emph{load\_file\_list\_array} subroutine reads the files, creates a new \emph{Clair::Document} object of type \emph{text} for each file, assigns an incrementing number as a unique id for each Document object, and adds the Document instances to the cluster.
+\\
+\\
+\textbf{Create a Clair::Mead::Wrapper object}
+
+The \emph{Clair::MEAD::Wrapper} module is a wrapper for MEAD that enables you to access MEAD functionalities. To create a new \emph{Clair::MEAD::Wrapper} object, use
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::MEAD::Wrapper;
+ my $mead = Clair::MEAD::Wrapper->new(
+     mead_home => "/path/to/mead";
+     cluster => $cluster
+ );
+\end{boxedverbatim}
+\\
+\\
+The \emph{mead\_home} argument tells Clairlib where to find a MEAD instance. Change its value to the path of your MEAD installation. The \emph{cluster} argument is a \emph{Clair::Cluster} object containing the documents to summarize. We pass the \emph{\$cluster} object that we created in the previous subsection as a value for this argument.
+\\
+\\
+\textbf{Specify the summarization options}
+\\
+To control the way MEAD works, you can specify some options and pass them to mead using the \emph{add\_option} subroutine of the Wrapper object. Some of the common options are:
+
+\begin{itemize}
+
+  \item  \textbf{-sentences, -s:} produce a summary whose length is either an absolute number or a percentage of the number of sentences of the original cluster. (This is the default.)
+  \item \textbf{-words, -w:} produce a summary whose length is either an absolute number or a percentage of the number of words of the original cluster.
+  \item \textbf{-percent num, -p num, -compression\_percent num:} produce a summary whose length is num\% the length of the original cluster. (The default is -percent 20)
+  \item \textbf{-absolute num, -a num, -compression\_absolute num:} produce a summary whose length is num (words/sentences) regardless of the size of the original cluster. NOTE: if both -percent and -absolute are specified, MEAD’s behavior may be erratic.
+  \item \textbf{-system RANDOM, -RANDOM:} produce a random summary (and name the system “RANDOM”).
+  \item \textbf{-system LEADBASED, -LEADBASED:} produce a lead-based summary, selecting the first sentence from each document, then the second sentence, etc.. (and name the system “LEADBASED”). NOTE: RANDOM and LEADBASED systems override any classifier, reranker, and features that may be specified.
+  \item \textbf{-lang language:} The default is “ENG”. This option doesn’t really do a whole lot currently. Since mead.pl doesn’t currently do Chinese summarization, you’ll probably never have to specify “CHIN”. To do summarizaton in Chinese, refer to the appropriate section (you’ll have to use the old-fashioned meadconfig file method).
+\end{itemize}
+
+For example, if we want to produce a summary whose length is 5\% of the number of sentences of the original cluster, we use,
+\\
+\\
+\begin{boxedverbatim}
+ $mead->add_option("-s -p 5");
+\end{boxedverbatim}
+\\
+\\
+\textbf{Run MEAD and return the summary}
+
+The final step is to run MEAD to summarize the given cluster based on the specified options
+\\
+\\
+\begin{boxedverbatim}
+ my @summary = $mead->run_mead();
+\end{boxedverbatim}
+\\
+\\
+The \emph{run\_mead} subroutine returns the summary in the form of an array of string sentences. You can print the summary by looping through the array.
+\\
+\\
+\begin{boxedverbatim}
+ foreach my $sent (@summary) {
+    print "$sent->{text} ";
+ }
+ \end{boxedverbatim}

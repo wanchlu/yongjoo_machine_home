@@ -1,0 +1,307 @@
+<h3>Tests and/or scripts included in Clairlib-core, under t/*</h3>
+<ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_aleextract.t.txt">test_aleextract.t</a>
+</li><ul><li> Using ALE, extract a corpus in a DB and perform several searches on it </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_alesearch.t.txt">test_alesearch.t</a>
+</li><ul><li> From a small set of documents, build an ALE DB and do some searches </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_biased_lexrank.t.txt">test_biased_lexrank.t</a>
+</li><ul><li> Computes the lexrank value of a network given bias sentences</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_centrality.t.txt">test_centrality.t</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_cidr.t.txt">test_cidr.t</a>
+</li><ul><li> Verify CIDR functionality, document sketches, cluster insertion, clustering  </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_cidrwrapper.t.txt">test_cidrwrapper.t</a>
+</li><ul><li> Using CIDR::Wrapper, add a document cluster and verify clustering </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_cluster.t.txt">test_cluster.t</a>
+</li><ul><li> Test many basic functions of the Cluster class, including Document insertion, Network generation, and more. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_compare_idf.t.txt">test_compare_idf.t</a>
+</li><ul><li> Compare results of Clair::Util idf calculations with those performed by the build_idf script </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_connection.t.txt">test_connection.t</a>
+</li><ul><li> As part of Bio, test many basic functions of Connection, such as abstract retrieval, citation network analysis, etc.</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_corpus_download.t.txt">test_corpus_download.t</a>
+</li><ul><li> Test CorpusDownload, downloading a corpus and checking the produced TF and IDF against expected results </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_document_idf.t.txt">test_document_idf.t</a>
+</li><ul><li> Test the values assigned to various words in a generated IDF </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_document.t.txt">test_document.t</a>
+</li><ul><li> Test basic Document functionality: stripping, splitting, TF generation, filtering, etc. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_esearchhandler.t.txt">test_esearchhandler.t</a>
+</li><ul><li> Test Bio's ESearchHandler against a reference XML parser </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_esearch.t.txt">test_esearch.t</a>
+</li><ul><li> Perform a few basic ESearch queries </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_eutils.t.txt">test_eutils.t</a>
+</li><ul><li> Test Clair::Bio::EUtils' hash2args and build_url </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_generif.t.txt">test_generif.t</a>
+</li><ul><li> Test Clair::Bio::GeneRIF's basic record retrieval functions </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_gen.t.txt">test_gen.t</a>
+</li><ul><li> Test some statistical computations using Clair::Gen </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_girvanNewman.t.txt">test_girvanNewman.t</a>
+</li><ul><li> Test GirvanNewman algorithm on Karate data</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_graf.t.txt">test_graf.t</a>
+</li><ul><li> As part of Clair::Polisci, test basic Graf functions like to_document </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_hyperlink.t.txt">test_hyperlink.t</a>
+</li><ul><li> Test the ability to generate a hyperlink-based network from a small document cluster </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_idf.t.txt">test_idf.t</a>
+</li><ul><li> Test TF and IDF functions drawing on a pre-downloaded corpus </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_kernighanLin.t.txt">test_kernighanLin.t</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank2.t.txt">test_lexrank2.t</a>
+</li><ul><li> Computes lexrank from a stemmed line-based cluster </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank3.t.txt">test_lexrank3.t</a>
+</li><ul><li> Computes lexrank from line-based, stripped and stemmed cluster </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank4.t.txt">test_lexrank4.t</a>
+</li><ul><li> Based on an interactive script, this test builds a sentence- based cluster, then a network, computes lexrank, and then runs MMR on it </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank_large_mxt.t.txt">test_lexrank_large_mxt.t</a>
+</li><ul><li> Test lexrank calculation on a network having used MxTerminator as the tool to split sentences. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank_large.t.txt">test_lexrank_large.t</a>
+</li><ul><li> Test lexrank calculation on a network having used Text::Sentence as the tool to split sentences </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank.t.txt">test_lexrank.t</a>
+</li><ul><li> Computes lexrank on a small network </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_linear_algebra.t.txt">test_linear_algebra.t</a>
+</li><ul><li> A variety of arithmetic tests of the linear algebra module </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_mead_summary.t.txt">test_mead_summary.t</a>
+</li><ul><li> Tests the ability of Clair::MEAD::Summary to preserve features of sentences and other basic functions </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_meadwrapper_mxt.t.txt">test_meadwrapper_mxt.t</a>
+</li><ul><li> Test basic Clair::MEAD::Wrapper functions, such as summarization, varying compression ratios, feature sorting, etc., having assumed the use of MxTerminator as a sentence splitting tool </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_meadwrapper.t.txt">test_meadwrapper.t</a>
+</li><ul><li> Test basic Clair::MEAD::Wrapper functions, such as summarization, varying compression ratios, feature sorting, etc., having assumed the use of Text::Sentence as a sentence splitting tool </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_mmr.t.txt">test_mmr.t</a>
+</li><ul><li> Tests the lexrank mmr reranker on a network   </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_network_adamic.t.txt">test_network_adamic.t</a>
+</li><ul><li> Test the function of adamic/adar value in a network.</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_network_reader.t.txt">test_network_reader.t</a>
+</li><ul><li> Test basic Network functionality, such as node/edge addition and removal, path generation, statistics, matlab graphics generation, etc.</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_network_stat.t.txt">test_network_stat.t</a>
+</li><ul><li> Generates a network, then computes and displays a large           number of network statistics </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_network.t.txt">test_network.t</a>
+</li><ul><li> Test basic Network functionality, such as node/edge addition and removal, path generation, statistics, matlab graphics generation, etc. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_networkwrapper_docs.t.txt">test_networkwrapper_docs.t</a>
+</li><ul><li> Test the NetworkWrapper's lexrank generation for a small cluster of documents </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_networkwrapper_sents.t.txt">test_networkwrapper_sents.t</a>
+</li><ul><li> Test the NetworkWrapper's lexrank generation for a small         cluster of documents built from an array of sentences </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_pagerank.t.txt">test_pagerank.t</a>
+</li><ul><li> Creates a small cluster and runs pagerank, confirming the pagerank distribution</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_parse.t.txt">test_parse.t</a>
+</li><ul><li> Parses an input file and then runs chunklink on it, confirming the result </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_random_walk.t.txt">test_random_walk.t</a>
+</li><ul><li> Creates a network, assigns initial probabilities and tests taking single steps and calculating stationary distribution </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_record.t.txt">test_record.t</a>
+</li><ul><li> As part of Clair::Polisci, confirm Record's Graf selection functionalities, as well as conversion functions. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_sentence_combiner.t.txt">test_sentence_combiner.t</a>
+</li><ul><li> Test a variety of sentence-oriented Document functions, such as sentence scoring, and combining sentence feature scores </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_sentence_features_cluster.t.txt">test_sentence_features_cluster.t</a>
+</li><ul><li> Test the propagation of feature scores between sentences related to each other through clusters. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_sentence_features_subs.t.txt">test_sentence_features_subs.t</a>
+</li><ul><li> Test the assignment of standard features, such as length, position, and centroid, to sentences in a small Document </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_sentence_features.t.txt">test_sentence_features.t</a>
+</li><ul><li> Using a short document, test many sentence feature functions </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_speaker.t.txt">test_speaker.t</a>
+</li><ul><li> As part of Clair::Polisci, confirm Speaker object equality functions </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_summary.t.txt">test_summary.t</a>
+</li><ul><li> Test many basic functions of Document for summarization, varying summarization ratio, order conditions, as well as test Cluster's summarization functions </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_us_connection.t.txt">test_us_connection.t</a>
+</li><ul><li> Test the Clair::Polisci::US::Connection class and the contents of the underlying DB.  This test is not intended for general distribution (i.e. you may not have it in your copy of clairlib) </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_web_search.t.txt">test_web_search.t</a>
+</li><ul><li> Test Clair::Utils::WebSearch and its use of the Google search API for returning varying numbers of webpages in response to queries </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_xmldoc.t.txt">test_xmldoc.t</a>
+</li><ul><li> Test the get_text and get_sent functions of Document, basing them on an XML file input to Document </li></ul>
+</ul><h3>Tests and/or scripts included in Clairlib-core, under test/*</h3>
+<ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/biased_lexrank.txt">biased_lexrank.pl</a>
+</li><ul><li> Computes the lexrank value of a network given bias sentences</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/cfnetwork_basic.txt">cfnetwork_basic.pl</a>
+</li><ul><li> Creates a small network to demonstrate the CFNetwork object</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/cfnetwork_weighted.txt">cfnetwork_weighted.pl</a>
+</li><ul><li> Creates a small weighted network to demonstrate the CFNetwork object</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/cidr.txt">cidr.pl</a>
+</li><ul><li> Creates a CIDR from input files and writes sample centroid files </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/classify.txt">classify.pl</a>
+</li><ul><li> Classifies the test documents using the perceptron parameters calculated previously; requires that learn.pl has been run</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/classify_weka.txt">classify_weka.pl</a>
+</li><ul><li> Extracts bag-of-words features from each document in a training corpus of baseball and hockey documents, then trains and evaluates a Weka decision tree classifier, saving its output to files</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/cluster.txt">cluster.pl</a>
+</li><ul><li> Creates a cluster, a sentence-based network from it, calculates a binary cosine and builds a network based on the cosine, then exports it to Pajek </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/compare_idf.txt">compare_idf.pl</a>
+</li><ul><li> Compares results of Clair::Util idf calculations with those performed by the build_idf script </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/corpusdownload_hyperlink.txt">corpusdownload_hyperlink.pl</a>
+</li><ul><li> Downloads a corpus and creates a network based on the hyperlinks between the webpages</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/corpusdownload_list.txt">corpusdownload_list.pl</a>
+</li><ul><li> Downloads a corpus and makes stemmed and unstemmed IDFs  and TFs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/corpusdownload.txt">corpusdownload.pl</a>
+</li><ul><li> Downloads a corpus from a file containing URLs;  makes IDFs and TFs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/document_idf.txt">document_idf.pl</a>
+</li><ul><li> Loads documents from an input dir; strips and stems them, and then builds an IDF from them </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/document.txt">document.pl</a>
+</li><ul><li> Creates Documents from strings, files, strips and stems them, splits them into lines, sentences, counts words, saves them </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/features_io.txt">features_io.pl</a>
+</li><ul><li> Same as features.pl BUT, outputs the train data set as document and feature vectors in svm_light format, reads the svm_light formatted file and converts it to perl hash</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/features.txt">features.pl</a>
+</li><ul><li> Reads docs from input/features/train, calculates chi-squared values for all extracted features, shows ways to retrieve those features</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/features_traintest.txt">features_traintest.pl</a>
+</li><ul><li> Builds the feature vector for training and testing datasets, and is a prerequisite for learn.pl and classify.pl</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/genericdoc.txt">genericdoc.pl</a>
+</li><ul><li> Tests parsing of simple text/html file/string, conversion into xml file, instantiation via constructor and morph()</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/html.txt">html.pl</a>
+</li><ul><li> Tests the html stripping functionality in Documents </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/hyperlink.txt">hyperlink.pl</a>
+</li><ul><li> Makes and populates a cluster, builds a network from  hyperlinks between them; then tests making a subset</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/idf.txt">idf.pl</a>
+</li><ul><li> Creates a cluster from some input files, then builds an idf from the lines of the documents </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/index_dirfiles_incremental.txt">index_dirfiles_incremental.pl</a>
+</li><ul><li> Tests index update using Index/dirfiles.pm; requires index_dirfiles.pl to be run previously</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/index_dirfiles.txt">index_dirfiles.pl</a>
+</li><ul><li> Tests index update using Index/dirfiles.pm, index is created in produces/index_dirfiles, complementary to index_mldbm.pl</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/index_mldbm_incremental.txt">index_mldbm_incremental.pl</a>
+</li><ul><li> Tests index update using Index/mldbm.pm; requires that index_mldbm.pl was run previously</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/index_mldbm.txt">index_mldbm.pl</a>
+</li><ul><li> Tests index creation using Index/mldbm.pm, outputs stats, uses input/index/Shakespear, creates produces/index_mldbm</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/ir.txt">ir.pl</a>
+</li><ul><li> Builds a corpus from some text files, then makes an IDF, a TF, and outputs some information from them</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/learn.txt">learn.pl</a>
+</li><ul><li> Uses feature vectors in the svm_light format and calculates and saves perceptron parameters; needs features_traintest.pl</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lexrank2.txt">lexrank2.pl</a>
+</li><ul><li> Computes lexrank from a stemmed line-based cluster</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lexrank3.txt">lexrank3.pl</a>
+</li><ul><li> Computes lexrank from line-based, stripped and stemmed cluster</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lexrank4.txt">lexrank4.pl</a>
+</li><ul><li> Based on an interactive script, this test builds a sentence- based cluster, then a network, computes lexrank, and then runs MMR on it </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lexrank_large.txt">lexrank_large.pl</a>
+</li><ul><li> Builds a cluster from a set of files, computes a cosine matrix and then lexrank, then creates a network and a cluster using a lexrank-based threshold of 0.2</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lexrank.txt">lexrank.pl</a>
+</li><ul><li> Computes lexrank on a small network</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/linear_algebra.txt">linear_algebra.pl</a>
+</li><ul><li> A variety of arithmetic tests of the linear algebra module </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lsi.txt">lsi.pl</a>
+</li><ul><li> Constructs a latent semantic index from a corpus of baseball and hockey documents, then uses that index to map terms, queries, and documents to latent semantic space. The position vectors of documents in that space are then used to train and evaluate a SVM classifier using the Weka interface provided in Clair::Interface::Weka</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/mead_summary.txt">mead_summary.pl</a>
+</li><ul><li> Tests MEAD's summarizer on a cluster of two documents, prints features for each sentence of the summary </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/mega.txt">mega.pl</a>
+</li><ul><li> Downloads documents using CorpusDownload, then makes IDFs, TFs, builds a cluster from them, a network based on a binary cosine, and tests the network for a couple of properties</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/mmr.txt">mmr.pl</a>
+</li><ul><li> Tests the lexrank reranker on a network  </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/networkstat.txt">networkstat.pl</a>
+</li><ul><li> Generates a network, then computes and displays a large number of network statistics </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/pagerank.txt">pagerank.pl</a>
+</li><ul><li> Creates a small cluster and runs pagerank, displaying the pagerank distribution</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/parse.txt">parse.pl</a>
+</li><ul><li> Parses an input file and then runs chunklink on it </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/query.txt">query.pl</a>
+</li><ul><li> Requires indexes to be built via index_*.pl scripts, shows queries implemented in Clair::Info::Query, single-word and phrase queries, meta-data retrieval methods</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/random_walk.txt">random_walk.pl</a>
+</li><ul><li> Creates a network, assigns initial probabilities and tests taking single steps and calculating stationary distribution </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/read_dirfiles.txt">read_dirfiles.pl</a>
+</li><ul><li> Requires index_*.pl scripts to have been run, shows how to access the document_index and the inverted_index, how to use common access API to retrieve information</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/sampling.txt">sampling.pl</a>
+</li><ul><li> Exercises network sampling using RandomNode and ForestFire </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/statistics.txt">statistics.pl</a>
+</li><ul><li> Tests linear regression and T test code </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/stem.txt">stem.pl</a>
+</li><ul><li> Tests the Clair::Utils::Stem stemmer</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/summary.txt">summary.pl</a>
+</li><ul><li> Test the cluster summarization ability using various features </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/wordcount_dir.txt">wordcount_dir.pl</a>
+</li><ul><li> Counts the words in each file of a directory; outputs report </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/wordcount.txt">wordcount.pl</a>
+</li><ul><li> Using Cluster and Document, counts the words in each file of a directory </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/xmldoc.txt">xmldoc.pl</a>
+</li><ul><li> Tests the XML to text function of Document </li></ul>
+</ul><h3>Tests and/or scripts included in Clairlib-core, under util/*</h3>
+<ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/bfs_extract_subnet.txt">bfs_extract_subnet.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/chunk_document.txt">chunk_document.pl</a>
+</li><ul><li> Breaks a text file into multiple files of a given word length</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/compute_lexrank.txt">compute_lexrank.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/convert_network.txt">convert_network.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/corpus_to_cos.txt">corpus_to_cos.pl</a>
+</li><ul><li> Calculates cosine similarity for a corpus</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/corpus_to_cos-threaded.txt">corpus_to_cos-threaded.pl</a>
+</li><ul><li> Calculates cosine similarity using multiple threads</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/corpus_to_lexical_network.txt">corpus_to_lexical_network.pl</a>
+</li><ul><li> Generates a lexical network for a corpus</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/corpus_to_network.txt">corpus_to_network.pl</a>
+</li><ul><li> Generates a hyperlink network from corpus HTML files</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/cos_to_cosplots.txt">cos_to_cosplots.pl</a>
+</li><ul><li> Generates cosine distribution plots, creating a histogram in log-log space, and a cumulative cosine plot histogram in log-log space</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/cos_to_histograms.txt">cos_to_histograms.pl</a>
+</li><ul><li> Generates degree distribution histograms from degree distribution data</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/cos_to_networks.txt">cos_to_networks.pl</a>
+</li><ul><li> Generate series of networks by incrementing through cosine cutoffs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/cos_to_stats.txt">cos_to_stats.pl</a>
+</li><ul><li> Generates a table of network statistics for networks by incrementing through cosine cutoffs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/crawl_url.txt">crawl_url.pl</a>
+</li><ul><li> Crawls from a starting URL, returning a list of URLs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/directory_to_corpus.txt">directory_to_corpus.pl</a>
+</li><ul><li> Generates a clairlib Corpus from a directory of documents</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/download_urls.txt">download_urls.pl</a>
+</li><ul><li> Downloads a set of URLs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/erase_corpus.txt">erase_corpus.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/erase_isolated_nodes.txt">erase_isolated_nodes.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/extract_ngrams.txt">extract_ngrams.pl</a>
+</li><ul><li> Extracts n-gram counts from a file or set of files in a directory,</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/generate_random_network.txt">generate_random_network.pl</a>
+</li><ul><li> Generates a random network</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/idf_query.txt">idf_query.pl</a>
+</li><ul><li> Looks up idf values for terms in a corpus</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/index_corpus.txt">index_corpus.pl</a>
+</li><ul><li> Builds the TF and IDF indices for a corpus  as well as several other support indices</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/lines_to_docs.txt">lines_to_docs.pl</a>
+</li><ul><li> Converts a document with sentences into a set of documents with one sentence per document</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/link_synthetic_collection.txt">link_synthetic_collection.pl</a>
+</li><ul><li> Links a collection using a certain network generator</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/list_to_cos_stats.txt">list_to_cos_stats.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/list_to_lexrank.txt">list_to_lexrank.pl</a>
+</li><ul><li> uses file containing a list of sentences and thier cosines</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/make_synth_collection.txt">make_synth_collection.pl</a>
+</li><ul><li> Makes a synthetic document set based on a pre-existing corpus</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/manage_corpus.txt">manage_corpus.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/network_growth.txt">network_growth.pl</a>
+</li><ul><li> Generates graphs for queries in web search engine query logs and measures network statistics</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/network_to_plots.txt">network_to_plots.pl</a>
+</li><ul><li> Generates degree distribution plots, creating a histogram in log-log space, and a cumulative degree distribution histogram in log-log space.</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/print_network_stats.txt">print_network_stats.pl</a>
+</li><ul><li> Prints various network statistics</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/search_to_url.txt">search_to_url.pl</a>
+</li><ul><li> Searches on a Google query and prints a list of URLs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/sentences_to_docs.txt">sentences_to_docs.pl</a>
+</li><ul><li> Converts a document with sentences into a set of documents with one sentence per document</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/stats2html.txt">stats2html.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/stats2matlab.txt">stats2matlab.pl</a>
+</li><ul><li></li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/tf_query.txt">tf_query.pl</a>
+</li><ul><li> Looks up tf values for terms in a corpus</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/wordnet_to_network.txt">wordnet_to_network.pl</a>
+</li><ul><li> Generates a synonym network from WordNet</li></ul>
+</ul><h3>Tests and/or scripts included in Clairlib-ext, under t/*</h3>
+<ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_aleextract.t.txt">test_aleextract.t</a>
+</li><ul><li> Using ALE, extract a corpus in a DB and perform several searches on it </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_alesearch.t.txt">test_alesearch.t</a>
+</li><ul><li> From a small set of documents, build an ALE DB and do some searches </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_lexrank_large_mxt.t.txt">test_lexrank_large_mxt.t</a>
+</li><ul><li> Test lexrank calculation on a network having used MxTerminator as the tool to split sentences. </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_meadwrapper_mxt.t.txt">test_meadwrapper_mxt.t</a>
+</li><ul><li> Test basic Clair::MEAD::Wrapper functions, such as summarization, varying compression ratios, feature sorting, etc., having assumed the use of MxTerminator as a sentence splitting tool </li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/t/test_web_search.t.txt">test_web_search.t</a>
+</li><ul><li> Test Clair::Utils::WebSearch and its use of the Google search API for returning varying numbers of webpages in response to queries </li></ul>
+</ul><h3>Tests and/or scripts included in Clairlib-ext, under test/*</h3>
+<ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/classify_weka.txt">classify_weka.pl</a>
+</li><ul><li> Extracts bag-of-words features from each document in a training corpus of baseball and hockey documents, then trains and evaluates a Weka decision tree classifier, saving its output to files</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/lsi.txt">lsi.pl</a>
+</li><ul><li> Constructs a latent semantic index from a corpus of baseball and hockey documents, then uses that index to map terms, queries, and documents to latent semantic space. The position vectors of documents in that space are then used to train and evaluate a SVM classifier using the Weka interface provided in Clair::Interface::Weka</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/test/parse.txt">parse.pl</a>
+</li><ul><li> Parses an input file and then runs chunklink on it </li></ul>
+</ul><h3>Tests and/or scripts included in Clairlib-ext, under util/*</h3>
+<ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/search_to_url.txt">search_to_url.pl</a>
+</li><ul><li> Searches on a Google query and prints a list of URLs</li></ul>
+<li><a href="http://belobog.si.umich.edu/clair/clairlib/tests/util/wordnet_to_network.txt">wordnet_to_network.pl</a>
+</li><ul><li> Generates a synonym network from WordNet</li></ul>
+</ul>

@@ -1,0 +1,181 @@
+\subsection{ACL Anthology Network\label{ACL_Anthology_Network}\index{ACL Anthology Network}}
+
+
+One of the useful corpora that was recently added to the Clairlib distribution is AAN, the ACL
+Anthology Network. AAN is a collection of scientific publications in the NLP area, collected
+from many ACL venues.The network is currently built using 13,706 of the ACL papers. This includes all papers up to and including those published in November 2008 which were successfully processed.  From those papers, we have created several networks. Those networks include:
+
+\begin{itemize}
+\item \textbf{Paper citation: }
+A directed network composed of nodes. Each node corresponds to a paper and each edge
+represents a reference from one paper to another.
+
+\item \textbf{Paper citation network without self citations: }
+The same as above but edges that represent self citations are dropped.
+
+\item \textbf{Author citation: }
+A directed network composed of nodes. Each node corresponds to an author and each edge
+represents a reference from one author to another.
+
+\item \textbf{Author citation network without self citations: }
+The same as Author citation but edges that represent self citations, where an author references
+himself are dropped.
+
+\item \textbf{Authors collaboration: }
+An undirected network where nodes represent authors and edges represent instances where
+one author coauthored a paper with another author
+\end{itemize}
+
+
+AAN data files and some useful scripts to process them have been added to Clairlib. All the AAN related files can be found under \$PATH-TO-CLAIRLIB/aan/. A full description of the data and statistics files, and the usage of the scripts can be found in the release.README file in the aan path. In this chapter, we will show how to use the scripts to generate AAN networks from data files and then gather useful statistics and information from them.
+
+\subsubsection{Generating AAN Networks}
+
+  This distribution of AAN includes two data files, acl-metadata.txt and acl.txt, from which we can creat the different networks and statistics using in-house scripts. In this section we show you how to use the scripts to generate the aan networks we mentioned above.
+
+\textbf{Generate Paper Citation Network}
+
+\begin{verbatim}
+    aan_make_paper_citations.pl
+\end{verbatim}
+
+\textbf{Generate Paper Citation Network excluding self citations}
+
+\begin{verbatim}
+    aan_make_paper_citations.pl --nonself
+\end{verbatim}
+
+
+\textbf{Generate Author Citation Network}
+
+\begin{verbatim}
+    aan_make_author_citation.pl
+\end{verbatim}
+
+\textbf{Generate Author Citation Network excluding self citations}
+
+\begin{verbatim}
+    aan_make_author_citation.pl -nonself
+\end{verbatim}
+
+\textbf{Generate Author Collaboration Network}
+
+\begin{verbatim}
+    bin/aan_make_author_collaboration.pl
+\end{verbatim}
+
+All networks generated above are formatted using the Edgelist format, which lists a single edge per line. An edge is formatted as "\texttt{Node1\_label ==$>$ Node2\_label}".
+
+
+\subsubsection{Basic Statistics}
+
+The main script that can be used to generate statistics for any of the networks metioned above is \texttt{aan\_network\_stats.pl} which has the following format:
+
+\begin{verbatim}
+aan_network_stats.pl -input=acit|acoll|pcit
+[--delimout=output_delimiter] [--output=output_file]
+[-pajek=pajek_file] [--stats] [--graphml=graphml_file]
+[--sample=sample_size] [--sampletype=sample_type] [--extract]
+[--components] [--undirected] [--paths] [--wcc] [--cc] [--scc] [--triangles]
+[--assortativity] [--verbose] [--localcc] [--all] [--betweenness-centrality]
+[--degree-centrality] [--closeness-centrality] [--lexrank-centrality]
+[--force] [--graph-class=graph_class] [--filebased] [--help]
+\end{verbatim}
+
+\textbf{Some examples of how to use this script are:}
+
+\begin{itemize}
+  \item To generate the basic statistics of the author citation network:
+
+  \begin{verbatim}
+     aan_network_stats.pl -input="acit" --stats
+  \end{verbatim}
+
+  \item To generate the statistics of the paper citation network and output the result to a file in Pajek compatible format:
+
+  \begin{verbatim}
+     aan_network_stats.pl -input="pcit" –pajek "pajekfile"
+  \end{verbatim}
+
+  \item To generate the statistics of the author collaboration network while treating the network as undirected:
+
+  \begin{verbatim}
+     aan_network_stats.pl -input="acoll" –-undirected
+  \end{verbatim}
+
+  \item To generate the betweeness,degree and closeness centrality scores for every author based on the author citation network:
+
+  \begin{verbatim}
+     aan_network_stats.pl -input="acit" --degree-centrality
+     --betweenness-centrality --closeness-centrality
+  \end{verbatim}
+
+  \item To generate statistics for 100 samples of the authors network where samples are drawn using the randomnode algorithm :
+
+\begin{verbatim}
+     aan_network_stats.pl -input="acit"
+     --sample 100 --sampletype randomnode --all
+\end{verbatim}
+\end{itemize}
+
+You can also count the number of citations and collaborations for authors and papers. There are three scripts that help doing that: aan\_author\_citations.pl, aan\_author\_citations.pl, and aan\_author\_collaborations.pl. Some examples of how to use them are:
+
+\begin{itemize}
+  \item To get the number of all citations for every author provided that they are older than 2005
+
+\begin{verbatim}
+     aan_author_citations.pl -year 2005
+\end{verbatim}
+
+  \item To get the number of incoming citations for every paper excluding self citations .
+
+\begin{verbatim}
+     aan_author_citations.pl -incites -nonself
+\end{verbatim}
+
+  \item To get the number of collaborations for every author
+
+\begin{verbatim}
+     aan_author_collaborations.pl
+\end{verbatim}
+
+\end{itemize}
+
+\subsubsection{PageRank Scores}
+
+You can get the PageRank scores for papers or authors using \texttt{aan\_pageranks.pl} script. For example:
+
+\begin{itemize}
+  \item To get the PageRank scores of every paper
+
+\begin{verbatim}
+     aan_pageranks.pl -input="pcit"
+\end{verbatim}
+
+  \item To get the PageRank scores of every author
+
+\begin{verbatim}
+     aan_pageranks.pl -input="acit"
+\end{verbatim}
+
+\end{itemize}
+
+\subsubsection{H-index}
+
+You can also get the H-index for every author using \texttt{aan\_hindex.pl} script. For example
+
+\begin{itemize}
+  \item To get the H-index for every author after excluding self citations
+
+\begin{verbatim}
+     aan_hindex.pl -nonself
+\end{verbatim}
+
+\end{itemize}
+
+\subsubsection{More Information}
+
+\begin{itemize}
+  \item For more information about AAN please visit: http://belobog.si.umich.edu/clair/anthology/
+  \item For detailed information about scripts and use instructions, see the \texttt{release.README} file located in the AAN path in Clairlib.
+\end{itemize}

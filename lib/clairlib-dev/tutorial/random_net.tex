@@ -1,0 +1,17 @@
+\subsection{Generate Random Synthetic Network}
+In this tutorial, we will generate a random Erdos-Renyi graph with restrictions using 'generate\_random\_network.pl'. This utility can either take a pre-existing graph file and randomize it or create a file from scratch. Two different models can be generated: gnm and gnp. A gnm graph has a set number of nodes and edges, with random attachment. A gnp graph is a set number of nodes with an edge existing between two nodes with probability p.  For the purposes of this tutorial, we will first generate an undirected gnp graph by providing the number of nodes and the probability that an edge exists between two nodes.
+\\
+\\
+\begin{boxedverbatim}
+generate_random_network.pl --undirected --output random_one.graph \
+ --type erdos-renyi-gnp -n 20 -p 0.42 --stats
+\end{boxedverbatim}
+\\
+\\
+If we specify an input file, the utility will use the file's number of nodes (and number of edges, if we generate a gnm graph) to generate the random graph. The delimiter expression used to distinguish vertices is by default "[ \t]+" but it can be changed with '--delimiter \$DELIMITER' where \$DELIMITER is the character used in the input file. We will demonstrate this utility's ability to take an input file by generating a directed gnm graph from the graph we generated earlier.
+\\
+\\
+\begin{boxedverbatim}
+generate_random_network.pl --input random_one.graph \
+ --output random_two.graph --type erdos-renyi-gnm --stats
+\end{boxedverbatim} 

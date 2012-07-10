@@ -1,0 +1,190 @@
+\subsection{Automatic Link Extractor}
+
+ALE (Automatic Link Extractor) is a collection of tools and Perl libraries providing easy database access for indexing information about the links in HTML documents and retrieving information from those indices. The basic process used is to give a series of documents to the ALE indexer, then ask questions with the command-line search tool or the Perl modules. In this tutorial, you'll learn how to use run Clairlib ALE to index the pages of \textbf{http://www.kzoo.edu} as a sample.
+
+\subsubsection{Clairlib and System Configurations}
+
+To be able to use ALE, you need to:
+
+\begin{itemize}
+\item Have  MySQL (http://www.mysql.com/) installed on your machine (if it's not already installed). Create a new database named "clair" and create a new user that has full privileges on it.
+
+\item Uncomment the following three lines in \textbf{Config.pm} module (located in \$CLAILIB\_PATH/lib/Clair)
+\\
+\\
+\begin{boxedverbatim}
+ $ALE_PORT  = "/tmp/mysql.sock";
+ $ALE_DB_USER = "user";
+ $ALE_DB_PASS = "pass";
+\end{boxedverbatim}
+\\
+\\
+Point \$ALE\_PORT to your your MySQL socket and set \$ALE\_DB\_USER and \$ALE\_DB\_PASS to your MySQL user information.
+
+\item set the following ENVIRONMENT VARIABLES:
+
+\begin{itemize}
+  \item \textbf{ALESPACE:} which is the subdirectory where all data should be stored, and a prefix for all directory names. If you are working with data independent of other projects, you should try to set ALESPACE to something unique, perhaps starting with your username. It defaults to "default".
+  \item \textbf{ALECACHEBASE:} which determines the root of the location where ALE can find the documents its working with, in wget format.
+  \item \textbf{MYSQL\_UNIX\_PORT:} gives the path to the UNIX socket where the MySQL database ALE should use is running on.
+\end{itemize}
+
+\begin{boxedverbatim}
+ export ALESPACE=KZOO
+ export ALECACHE=/data0/ale/cache
+ export MYSQL_UNIX_PORT=/tmp/mysql.sock
+\end{boxedverbatim}
+\\
+\\
+\end{itemize}
+
+\subsubsection{Download Website Files}
+
+All the website pages should be downloaded to your machine before indexing it. The following script uses \textbf{wget} to do this:
+\\
+\\
+\begin{boxedverbatim}
+ #!/bin/sh
+ umask 002
+ if [ ! -d "$ALECACHE" ]
+ then
+   if mkdir "$ALECACHE"
+   then
+     :
+   else
+     exit $?
+   fi
+ fi
+ cd "$ALECACHE"
+ exec 2>&1
+ exec wget  --timeout 5  --reject gif,png,jpg,
+ jpeg,gz,tar,gzip,exe,sit,hxq,bin -S -x -U ALE/0.1 "$@"
+\end{boxedverbatim}
+\\
+\\
+put the code above in a file named "aleget" and then run it to download www.kzoo.edu
+
+\begin{verbatim}
+ aleget -r 'http://www.kzoo.edu/index.php'
+\end{verbatim}
+
+\subsubsection{Index the Files}
+
+To index the links information of the website files, you'll use Clair::ALE::Extract module. The following script does this.
+\\
+\\
+\begin{boxedverbatim}
+ !#/usr/bin/perl
+ use Clair::ALE::Extract;
+ use Clair::Config qw($ALE_PORT $ALE_DB_USER $ALE_DB_PASS);
+ if (not defined $ALE_PORT or not -e $ALE_PORT) {
+     die "ALE_PORT not defined in Clair::Config or doesn't exist";
+ }
+ $ENV{MYSQL_UNIX_PORT} = $ALE_PORT;
+ my $e = Clair::ALE::Extract->new();
+ my $alecache=$ENV{'ALECACHE'};
+ my $doc_dir="$alecache/www.kzoo.edu/";
+ open(ALL,'find $doc_dir -name "*.html" -print|');
+ my @files2;
+ foreach $file (<ALL>){
+   chomp($file);
+   push @files2, $file;
+   print "file = ",$file;
+ }
+ $e->extract( drop_tables => 1, files => \@files2 );
+
+\end{boxedverbatim}
+\\
+\\
+The code above creates three tables in the MySQL database and stores the indexing information in them.
+
+\subsubsection{Search ALE for connections by various criteria}
+
+\textbf{Clair::ALE::Search} module allows you to search the Automatic Link Extractor for connections that meet the criteria you give. Valid criteria are:
+
+\begin{itemize}
+  \item \textbf{limit:} Return at most this many connections.
+  \item \textbf{source\_url:} The first URL in the connection. Use \textbf{no\_source\_url} to exclude connections where the first URL is this one. The argument to this should just be a simple string.
+  \item \textbf{dest\_url:} The last URL in the connection. Use \textbf{no\_dest\_url} to exclude connections where the last URL is this one. The argument to this should just be a simple string.
+  \item \textbf{link\_text:} The text that links two pages. For multi-hop links, put a number after link. To exclude links with this text, use \textbf{no\_link\_text}.
+  \item \textbf{link\_word:} An individual word that links two pages. For multi-hop links, put a number after link. To exclude links which contain these words, use \textbf{no\_link\_word}.
+\end{itemize}
+
+To do the search, we need to create a new Clair::ALE::Search object and pass the desired criteria as parameters to the constructor
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::ALE::Search;
+ my $search = new Clair::ALE::Search(source_url=>"http://www.kzoo.edu/");
+\end{boxedverbatim}
+\\
+\\
+
+The queryresult() subroutine can be access via the \$search object. It returns the next result from the query, or undef if there are no more results. We can make use of this subroutine to loop through the results of our query as follows:
+\\
+\\
+\begin{boxedverbatim} 
+ use Clair::ALE:Conn;
+ while (my $conn = $search->queryresult)
+ {
+   my $conn = $search->queryresult;
+   $conn->print;
+ }
+\end{boxedverbatim}
+\\
+\\
+This will print the information of all the connections that match the query. The output of the code above should be something like:
+\\
+\\
+\begin{boxedverbatim}
+ (Connection)
+ Hop 1
+    (Link)
+    From:
+        (URL)
+        url: http://www.kzoo.edu/college/history
+         id: 73
+    To:
+        (URL)
+        url: http://www.kzoo.edu/map.html
+         id: 145
+    Link ID: 310
+    Link Text: Campus Map
+ (Connection)
+ Hop 1
+    (Link)
+    From:
+        (URL)
+        url: http://www.kzoo.edu/college/history
+         id: 73
+    To:
+        (URL)
+        url: http://www.kzoo.edu/directory.html
+         id: 36
+    Link ID: 312
+    Link Text: Directories
+\end{boxedverbatim}
+\\
+\\
+You can get the number of links in a connection using
+\begin{verbatim}
+ $num_links = $conn->{numlinks};
+\end{verbatim}
+
+And you can get an array of all the links in the connection using
+\begin{verbatim}
+  @links = $conn->{links}
+\end{verbatim}
+
+For each "link" in the array @links you can get the source URL, the destination URL, the link text, and the link ID
+\\
+\\
+\begin{boxedverbatim}
+  use Clair::ALE:Link;
+  $source_url=@link[0]->{from};
+  $destination_url=@link[0]->{to};
+  $text=@link[0]->{text};
+  $ID=@link[0]->{id};
+\end{boxedverbatim}
+\\
+\\

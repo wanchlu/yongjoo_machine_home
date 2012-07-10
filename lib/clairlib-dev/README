@@ -1,0 +1,310 @@
+Hello
+INTRODUCTION
+
+The University of Michigan's CLAIR (Computational Linguistics And Information Retrieval) group is happy to present version 1.02 of the Clair library.
+
+The Clair library is intended to simplify a number of generic tasks in Natural Language Processing (NLP), Information Retrieval (IR), and Network Analysis (NA). Its architecture also allows for external software to be plugged in with very little effort. Two distributions of the Clair library are available: Clairlib-core, with essential functionality and minimal dependence on external software, and Clairlib-ext, with extended functionality that may be of interest to a smaller audience.
+Functionality
+
+Native, in Clairlib-core: Tokenization, Summarization, LexRank, Biased LexRank, Document Clustering, Document Indexing, PageRank, Biased PageRank, Web Graph Analysis, Network Generation, Power Law Distribution Analysis, Network Analysis (clustering coefficient, degree distribution plotting, average shortest path, diameter, triangles, shortest path matrices, connected components), Cosine Similarity, Random Walks on Graphs, Statistics (distributions, tests), Tf, Idf, Perceptron Learning and Classification, Phrase Based Retrieval and Fuzzy OR Queries
+
+Native, in Clairlib-ext: Interface with Weka, a Java-based machine learning toolkit, LSI
+
+Imported functionality into Clairlib-core: Stemming, Sentence Segmentation, Web Page Download, Web Crawling, XML Parsing, XML Tree Building, XML Writing
+
+
+DOWNLOAD
+
+Version 1.02 is now available for download.
+
+To download Clairlib-core, click here. To download Clairlib-ext, click here.
+Clairlib-core
+The "core" distribution of the Clair library is provided to offer the most commonly used functionality while minimizing the library's dependence on external software.
+
+
+PREREQUISITES (for Clairlib-core)
+
+You need Perl (version 5.8.2 at least) and a number of external modules that you can obtain from CPAN (see list below).
+
+    * MEAD
+    * from CPAN:
+          o BerkeleyDB
+          o Carp
+          o File::Type
+          o Getopt::Long
+          o Graph::Directed
+          o HTML::LinkExtractor
+          o HTML::Parse
+          o IO::File
+          o IO::Handle
+          o IO::Pipe
+          o Lingua::Stem
+          o Math::MatrixReal
+          o Math::Random
+          o MLDBM
+          o PDL
+          o POSIX
+          o Scalar::Util
+          o Statistics::ChisqIndep
+          o Storable
+          o Test::More
+          o Text::Sentence
+          o XML::Parser
+          o XML::Simple 
+
+
+CLAIRLIB-EXT
+
+The "extended" distribution of the Clair library contains code that interfaces some core components of Clairlib with Weka, a Java machine learning toolkit. It also offers alternate implementations of some core functionalities that depend on external software not distributed by CLAIR, but that might be useful for somse users. Current alternate implementations include:
+
+    * Using MxTerminator instead of Text::Sentence for sentence segmentation 
+
+Clairlib-ext requires an installed version of Clairlib-core; it is not a stand-alone distribution. You need Perl (version 5.8.2 at least), Clairlib-core, and some additional modules from CPAN (see list below). Additional software that can be utilized (but that are not required) includes:
+
+    * Adwait Ratnaparkhi's MxTerminator
+    * Weka, a Java-based machine learning toolkit, available at Weka's site
+    * Required modules from CPAN:
+          o
+          o IPC::Open2
+          o Net::Google 
+
+
+GETTING STARTED
+
+If you are interested in installing either clairlib distribution, begin by reading the README file, which contains information about how to set up Clairlib-core and Clairlib-ext. This file is also available is included in both Clair library distributions. For a more detailed set of instructions for installation, please download the PDF Clairlib tutorial linked to in the documentation section. The rest of the following documentation may also be helpful.
+Documentation
+
+    * Clairlib tutorial (Covering Clairlib version 1.0. An updated tutorial will be available shortly covering the changes made in version 1.01.)
+    * Clairlib module documentation
+    * Mead tutorial
+    * Mead module documentation
+    * NCIBI Tools and Technology Presentation on Clairlib and GIN
+    * HISTORY: A description of the major changes made to Clairlib
+
+
+TESTS AND UTILITIES
+
+Here is the perl source for a number of the tests and utilities included in the Clairlib distributions. This is one place to begin looking at how the different components in Clairlib can be used. Tests located in clairlib/t/ (and ending in *.t) are unit tests designed to ensure that your installation is working properly. These are run when you give the instruction "make test" for your particular distribution. Tests located in clairlib/test/ (and ending in *.pl) are designed to be run individually, and provided for tutorial, or specialized testing, purposes. The files located in clairlib/util/ are tools useful for interacting with Clairlib from the command-line, as well as good examples of how Clairlib can be used.
+Tests and/or scriprs included in Clairlib-core, under t/*
+
+    * test_cidrwrapper.t
+          o Using CIDR::Wrapper, add a document cluster and verify clustering 
+    * test_corpus_download.t
+          o Test CorpusDownload, downloading a corpus and checking the produced TF and IDF against expected results 
+    * test_gen.t
+          o Test some statistical computations using Clair::Gen 
+    * test_meadwrapper.t
+          o Test basic Clair::MEAD::Wrapper functions, such as summarization, varying compression ratios, feature sorting, etc., having assumed the use of Text::Sentence as a sentence splitting tool 
+    * test_network.t
+          o Test basic Network functionality, such as node/edge addition and removal, path generation, statistics, matlab graphics generation, etc. 
+    * test_networkwrapper_docs.t
+          o Test the NetworkWrapper's lexrank generation for a small cluster of documents 
+    * test_networkwrapper_sents.t
+          o Test the NetworkWrapper's lexrank generation for a small cluster of documents built from an array of sentences 
+    * test_sentence_combiner.t
+          o Test a variety of sentence-oriented Document functions, such as sentence scoring, and combining sentence feature scores 
+    * test_sentence_features_cluster.t
+          o Test the propagation of feature scores between sentences related to each other through clusters. 
+    * test_sentence_features_subs.t
+          o Test the assignment of standard features, such as length, position, and centroid, to sentences in a small Document 
+    * test_sentence_features.t
+          o Using a short document, test many sentence feature functions 
+
+Tests and/or scriprs included in Clairlib-core, under test/*
+
+    * biased_lexrank.pl
+          o Computes the lexrank value of a network given bias sentences
+    * cidr.pl
+          o Creates a CIDR from input files; writes sample centroid files 
+    * classify.pl
+          o Classifies the test documents using the perceptron parameters calculated previously; requires learn.pl to be already ran
+    * cluster.pl
+          o Creates a cluster, a sentence-based network from it, calculates a binary cosine and builds a network based on the cosine, then exports it to Pajek 
+    * compare_idf.pl
+          o Compare results of Clair::Util idf calculations with those performed by the build_idf script 
+    * corpusdownload_hyperlink.pl
+          o Downloads a corpus and creates a network based on the hyperlinks between the webpages 
+    * corpusdownload_list.pl
+          o Downloads a corpus and makes stemmed and unstemmed IDFs and TFs 
+    * corpusdownload.pl
+          o Downloads a corpus from a file containing URLs; makes IDFs and TFs 
+    * document_idf.pl
+          o Loads documents from an input dir; strips and stems them, and then builds an IDF from them. 
+    * document.pl
+          o Creates Documents from strings, files, strips and stems them, splits them into lines, sentences, counts words, saves them. 
+    * features_io.pl
+          o Same as features.pl BUT, outputs the train data set as document and feature vectors in svm_light format, reads the svm_light formatted file and converts it to perl hash
+    * features.pl
+          o Reads docs from input/features/train, calculates chi-squared values for all extracted features, shows ways to retrieve those features
+    * features_traintest.pl
+          o Builds the feature vector for training and testing datasets, and is a prerequisite for learn.pl and classify.pl
+    * genericdoc.pl
+          o Tests parsing of simple text/html file/string, conversion into xml file, instantiation via constructor and morph()
+    * html.pl
+          o Tests the html stripping functionality in Documents 
+    * hyperlink.pl
+          o Makes and populates a cluster, builds a network from hyperlinks between them; then tests making a subset
+    * idf.pl
+          o Creates a cluster from some input files, then builds an idf from the lines of the documents 
+    * index_dirfiles_incremental.pl
+          o Tests index update using Index/dirfiles.pm, requires index_dirfiles.pl to be run previously
+    * index_dirfiles.pl
+          o Tests index update using Index/dirfiles.pm, index is created in produces/index_dirfiles, complementary to index_mldbm.pl
+    * index_mldbm_incremental.pl
+          o Tests index update using Index/mldbm.pm, requires that index_mldbm.pl was run previously
+    * index_mldbm.pl
+          o Tests index creation using Index/mldbm.pm, outputs stats, uses input/index/Shakespear, creates produces/index_mldbm
+    * ir.pl
+          o Builds a corpus from some text files, then makes an IDF, a TF, and outputs some information from them 
+    * learn.pl
+          o Uses feature vectors in the svm_light format and calculates and saves perceptron parameters; needs features_traintest.pl
+    * lexrank2.pl
+          o Computes lexrank from a stemmed line-based cluster 
+    * lexrank3.pl
+          o Computes lexrank from line-based, stripped and stemmed cluster 
+    * lexrank4.pl
+          o Based on an interactive script, this test builds a sentence- based cluster, then a network, computes lexrank, and then runs MMR on it 
+    * lexrank_large.pl
+          o Builds a cluster from a set of files, computes a cosine matrix and then lexrank, then creates a network and a cluster using a lexrank-based threshold of 0.2 
+    * lexrank.pl
+          o Computes lexrank on a small network 
+    * linear_algebra.pl
+          o A variety of arithmetic tests of the linear algebra module 
+    * mead_summary.pl
+          o Tests MEAD's summarizer on a cluster of two documents, prints features for each sentence of the summary 
+    * mega.pl
+          o Downloads documents using CorpusDownload, then makes IDFs, 
+    * mmr.pl
+          o Tests the lexrank reranker on a network 
+    * networkstat.pl
+          o Generates a network, then computes and displays a large number of network statistics 
+    * pagerank.pl
+          o Creates a small cluster and runs pagerank, displaying the pagerank distribution 
+    * query.pl
+          o Requires indexes to be built via index_*.pl scripts, shows queries implemented in Clair::Info::Query, single-word and phrase queries, meta-data retrieval methods
+    * random_walk.pl
+          o Creates a network, assigns initial probabilities and tests taking single steps and calculating stationary distribution 
+    * read_dirfiles.pl
+          o Requires index_*.pl scripts to have been run, shows how to access the document_index and the inverted_index, how to use common access API to retrieve information
+    * sampling.pl
+          o Exercises network sampling using RandomNode and ForestFire 
+    * statistics.pl
+          o Tests linear regression and T test code 
+    * stem.pl
+          o Tests the Clair::Utils::Stem stemmer
+    * summary.pl
+          o Test the cluster summarization ability using various features 
+    * wordcount_dir.pl
+          o Counts the words in each file of a directory; outputs report 
+    * wordcount.pl
+          o Using Cluster and Document, counts the words in each file of a directory 
+    * xmldoc.pl
+          o Tests the XML to text function of Document 
+
+Tests and/or scriprs included in Clairlib-core, under util/*
+
+    * corpus_to_cos.pl
+          o Script to calculate cosine similarity for a corpus
+    * corpus_to_cos-threaded.pl
+          o Script to calculate cosine similarity Uses multiple threads
+    * corpus_to_lexical_network.pl
+          o Script to generate a lexical network for a corpus
+    * corpus_to_network.pl
+          o Generate hyperlink network from corpus HTML files
+    * cos_to_cosplots.pl
+          o This script generates cosine distribution plots, creating a histogram in log-log space, and a cumulative cosine plot histogram in log-log space.
+    * cos_to_histograms.pl
+          o This script generates degree distribution histograms from degree distribution data
+    * cos_to_networks.pl
+          o Generate series of networks by incrementing through cosine cutoffs
+    * cos_to_stats.pl
+          o Generate table of network statistics for networks by incrementing through cosine cutoffs
+    * crawl_url.pl
+          o Script to crawl from a starting URL, returning a list of URLs
+    * directory_to_corpus.pl
+          o Generate a clairlib Corpus from a directory of documents
+    * download_urls.pl
+          o Script to download a set of URLs
+    * generate_random_network.pl
+          o Generate a random network
+    * index_corpus.pl
+          o This script builds the TF and IDF indices for a corpus It also builds several other support indices
+    * link_synthetic_collection.pl
+          o Link a collection using a certain network generator
+    * make_synth_collection.pl
+          o This script makes a synthetic document set
+    * network_growth.pl
+          o
+    * network_to_plots.pl
+          o This script generates degree distribution plots, creating a histogram in log-log space, and a cumulative degree distribution histogram in log-log space.
+    * print_network_stats.pl
+          o Print various network statistics
+    * sentences_to_docs.pl
+          o Script to convert a document with sentences into a set of documents one sentence per document
+    * tf_query.pl
+          o Lookup a term in a corpus
+
+Tests and/or scriprs included in Clairlib-ext, under t/*
+
+    * test_aleextract.t
+          o Using ALE, extract a corpus in a DB and perform several searches on it 
+    * test_alesearch.t
+          o From a small set of documents, build an ALE DB and do some searches 
+
+    * test_lexrank_large_mxt.t
+          o Test lexrank calculation on a network having used MxTerminator as the tool to split sentences. 
+    * test_meadwrapper_mxt.t
+          o Test basic Clair::MEAD::Wrapper functions, such as summarization, varying compression ratios, feature sorting, etc., having assumed the use of MxTerminator as a sentence splitting tool 
+    * test_web_search.t
+          o Test Clair::Utils::WebSearch and its use of the Google search API for returning varying numbers of webpages in response to queries 
+
+Tests and/or scriprs included in Clairlib-ext, under test/*
+
+    * classify_weka.pl
+          o Extracts bag-of-words features from each document in a training corpus of baseball and hockey documents, then trains and evaluates a Weka decision tree classifier, saving its output to files. 
+    * lsi.pl
+          o Constructs a latent semantic index from a corpus of baseball and hockey documents, then uses that index to map terms, queries, and documents to latent semantic space. The position vectors of documents in that space are then used to train and evaluate a SVM classifier using the Weka interface provided in Clair::Interface::Weka. 
+    * parse.pl
+          o Parses an input file and then runs chunklink on it 
+
+Tests and/or scripts included in Clairlib-ext, under util/*
+
+    * search_to_url.pl
+          o Script to search on Google query and print a list of URLs
+    * wordnet_to_network.pl
+          o Generate synonym network from WordNet
+
+
+ACKNOWLEDGMENTS
+
+This work has been supported in part by National Science Foundation grants:
+
+    * IIS 0534323 "Collaborative Research: BlogoCenter - Infrastructure for Collecting, Mining and Accessing Blogs", jointly awarded with IIS 0534784, Junghoo Cho, UCLA
+    * IIS 0329043 "Probabilistic and link-based Methods for Exploiting Very Large Textual Repositories" (previous funding)
+    * BCS 0527513 "DHB: The Dynamics of Political Representation and Political Rhetoric"
+
+And by National Institutes of Health grants:
+
+    * R01 LM008106 "Representing and Acquiring Knowledge of Genome Regulation"
+    * U54 DA021519 "National Center for Integrative Bioinformatics"
+
+
+ABOUT
+
+The Clair Library is developed by the Clair group at the University of Michigan.
+
+    * Project design: Dragomir R. Radev
+    * Developers: Jonathan DePeri, Anthony Fader, Joshua Gerrish, Mark Hodges, Mark Joseph, Mark Schaller, and Dragomir Radev
+    * Contributors: Timothy Allison, Michael Dagitses, Aaron Elkiss, Gunes Erkan, Scott Gifford, Patrick Jordan, Jung-bae Kim, Samuela Pollack, and Adam Winkel
+
+
+COPYRIGHT & LICENSE
+
+  Copyright (c) 2007 the Clair group, all rights reserved.
+
+  This module is free software; you can redistribute it and/or
+  modify it under the same terms as Perl itself. See L<perlartistic>.
+
+  This module is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.

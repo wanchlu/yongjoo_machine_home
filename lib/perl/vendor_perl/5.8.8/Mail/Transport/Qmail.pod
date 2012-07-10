@@ -1,0 +1,237 @@
+=head1 NAME
+
+Mail::Transport::Qmail - transmit messages using external Qmail program
+
+=head1 INHERITANCE
+
+ Mail::Transport::Qmail
+   is a Mail::Transport::Send
+   is a Mail::Transport
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ my $sender = Mail::Transport::Qmail->new(...);
+ $sender->send($message);
+
+=head1 DESCRIPTION
+
+Implements mail transport using the external programs C<'qmail-inject'>,
+part of the qmail mail-delivery system.
+
+=head1 METHODS
+
+=head2 Constructors
+
+=over 4
+
+=item Mail::Transport::Qmail-E<gt>B<new>(OPTIONS)
+
+ -Option    --Defined in     --Default
+  executable  Mail::Transport  undef
+  hostname    Mail::Transport  'localhost'
+  interval    Mail::Transport  30
+  log         Mail::Reporter   'WARNINGS'
+  password    Mail::Transport  undef
+  port        Mail::Transport  undef
+  proxy       Mail::Transport  'qmail-inject'
+  retry       Mail::Transport  <false>
+  timeout     Mail::Transport  120
+  trace       Mail::Reporter   'WARNINGS'
+  username    Mail::Transport  undef
+  via         Mail::Transport  'qmail'
+
+=over 2
+
+=item executable => FILENAME
+
+=item hostname => HOSTNAME|ARRAY-OF-HOSTNAMES
+
+=item interval => SECONDS
+
+=item log => LEVEL
+
+=item password => STRING
+
+=item port => INTEGER
+
+=item proxy => PATH
+
+=item retry => NUMBER|undef
+
+=item timeout => SECONDS
+
+=item trace => LEVEL
+
+=item username => STRING
+
+=item via => CLASS|NAME
+
+=back
+
+=back
+
+=head2 Sending mail
+
+=over 4
+
+=item $obj-E<gt>B<destinations>(MESSAGE, [ADDRESS|ARRAY-OF-ADDRESSES])
+
+See L<Mail::Transport::Send/"Sending mail">
+
+=item $obj-E<gt>B<putContent>(MESSAGE, FILEHANDLE, OPTIONS)
+
+See L<Mail::Transport::Send/"Sending mail">
+
+=item $obj-E<gt>B<send>(MESSAGE, OPTIONS)
+
+See L<Mail::Transport::Send/"Sending mail">
+
+=item $obj-E<gt>B<trySend>(MESSAGE, OPTIONS)
+
+=back
+
+=head2 Server connection
+
+=over 4
+
+=item $obj-E<gt>B<findBinary>(NAME [, DIRECTORIES])
+
+See L<Mail::Transport/"Server connection">
+
+=item $obj-E<gt>B<remoteHost>
+
+See L<Mail::Transport/"Server connection">
+
+=item $obj-E<gt>B<retry>
+
+See L<Mail::Transport/"Server connection">
+
+=back
+
+=head2 Error handling
+
+=over 4
+
+=item $obj-E<gt>B<AUTOLOAD>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<addReport>(OBJECT)
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Transport::Qmail-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<errors>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Transport::Qmail-E<gt>B<log>([LEVEL [,STRINGS]])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Transport::Qmail-E<gt>B<logPriority>(LEVEL)
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<logSettings>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<notImplemented>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<report>([LEVEL])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<reportAll>([LEVEL])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<trace>([LEVEL])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<warnings>
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+=over 4
+
+=item $obj-E<gt>B<DESTROY>
+
+See L<Mail::Reporter/"Cleanup">
+
+=item $obj-E<gt>B<inGlobalDestruction>
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DIAGNOSTICS
+
+=over 4
+
+=item Error: Errors when closing Qmail mailer $program: $!
+
+The Qmail mail transfer agent did start, but was not able to handle the
+message for some specific reason.
+
+=item Warning: Message has no destination
+
+It was not possible to figure-out where the message is intended to go
+to.
+
+=item Error: Package $package does not implement $method.
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=item Warning: Resent group does not specify a destination
+
+The message which is sent is the result of a bounce (for instance
+created with L<Mail::Message::bounce()|Mail::Message::Construct::Bounce/"Constructing a message">), and therefore starts with a
+C<Received> header field.  With the C<bounce>, the new destination(s)
+of the message are given, which should be included as C<Resent-To>,
+C<Resent-Cc>, and C<Resent-Bcc>.
+
+The C<To>, C<Cc>, and C<Bcc> header information is only used if no
+C<Received> was found.  That seems to be the best explanation of the RFC.
+
+As alternative, you may also specify the C<to> option to some of the senders
+(for instance L<Mail::Transport::SMTP::send(to)|Mail::Transport::Send/"Sending mail"> to overrule any information
+found in the message itself about the destination.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.097,
+built on January 26, 2011. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2011 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

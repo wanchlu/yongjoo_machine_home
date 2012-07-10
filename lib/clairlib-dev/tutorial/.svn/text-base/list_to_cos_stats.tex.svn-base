@@ -1,0 +1,14 @@
+\subsection{Generate Cosine Similarity Statistics for a List of Sentences}
+In this tutorial, we will take an input file containing a list of sentences, convert it into a corpus with one line per document, then generate detailed cosine similarity statistics for that corpus. We will use the utility 'list\_to\_cos\_stats.pl', a rather simple utility whose options can be seen using the command
+
+
+\begin{verbatim}
+list_to_cos_stats.pl --help
+\end{verbatim}
+
+Once again, we will use the file 11sent.txt, which is 11 lines long, each line containing a sentence. The utility will parse the text file and create 11 documents in the corpus, each one containing one line. Then, the utility will create files containing detailed cosine similarity statistics for this corpus. The level of detail we want for the cosine threshold statistics is 0.05 (the argument --step), and the utility will create the directories 'sentences\_produced' and 'sentences\_data'.
+
+\begin{verbatim}
+list_to_cos_stats.pl --corpus sentences --base sentences_produced \
+ --data sentences_data --input 11sent.txt --step 0.05
+\end{verbatim}

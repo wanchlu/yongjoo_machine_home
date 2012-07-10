@@ -1,0 +1,95 @@
+\subsection{Perceptron Learning and Classification}
+In this tutorial, you'll learn how to use Clairlib for extracting feature vectors from a set of document, how to train a model using the perceptron learning algorithm given the feature vectors of a training set of documents, and how to classify a set of testing documents given their feature vectors using the the perceptron classification algorithm.
+
+\subsubsection{Tutorial Materials}
+For the purpose of this tutorial, we will use two sets of XML formated documents taking about "sport", one of the two sets is for training a model and the other one is for testing the trained model. You can download the training set from http://belobog.si.umich.edu/clair/clairlib/training.tar
+
+wand the testing set from http://belobog.si.umich.edu/clair/clairlib/testing.tar
+
+Extract both datasets to two directories, "training" and "testing"
+\\
+\\
+\begin{boxedverbatim}
+ tar -xvf training.tar.gz
+ tar -xvf testing.tar.gz
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Extracting the feature vectors}
+We start by extracting the feature vectors for both the training and the testing sets. To do this, we will use the "extract\_features.pl" utility that comes with Clairlib and outputs the feature vectors for a set of documents in svm\_light format. For information on the usage of this utility, run
+\\
+\\
+\begin{boxedverbatim}
+ extract_features.pl --help
+\end{boxedverbatim}
+\\
+\\
+To extract the features for the training set, run
+\\
+\\
+\begin{boxedverbatim}
+ extract_features.pl --directory training --output features.train \
+ --parser sports --mode train --select 100 --verbose
+\end{boxedverbatim}
+\\
+\\
+This will compute the feature vectors for the training documents located in the "training" directory and then use the chi-square method to select the top 100 most descriminitive features, and finally outputs the vectors to the "features.train" files in the svm-light format.
+
+To extract the feature vectors for the testing dataset, run the same command with the proper arguments
+\\
+\\
+\begin{boxedverbatim}
+ extract_features.pl --directory testing --output features.test \
+  --parser sports --mode test --select 100 --verbose
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Training a model using the Perceptron algorithm}
+
+Now, we can pass the training set features file to the perceptron algorithm to train a model. To do this, we will use the "learn.pl" utility that takes a training features file and trains a model. For information on the usage of this utility run
+\\
+\\
+\begin{boxedverbatim}
+ learn.pl --help
+\end{boxedverbatim}
+\\
+\\
+To use our training dataset for training a model, run
+\\
+\\
+\begin{boxedverbatim}
+ learn.pl --train_features features.train --model model_file \
+ --eta 0.5 --verbose
+\end{boxedverbatim}
+\\
+\\
+This command will write the trained model to the "model\_file" file.
+
+\subsubsection{Classifying the testing set using a trained model}
+
+Now, we can use the trained model to classify the testing set. To do this, we will use the "classify.pl" utility which takes the testing features file and the model file as arguments and outputs the classification result in the following format
+\\
+\\
+\begin{boxedverbatim}
+ docid   score   computed_class   correct_class   y|n
+\end{boxedverbatim}
+\\
+\\
+For more information on the usage of this utility, run
+\\
+\\
+\begin{boxedverbatim}
+ classify.pl --help
+\end{boxedverbatim}
+\\
+\\
+To use this utility to classify the testing set by running
+\\
+\\
+\begin{boxedverbatim}
+ classify.pl --test_features features.test --model model_file \
+ --output results --verbose
+\end{boxedverbatim}
+\\
+\\
+The result of the classification will be written to the file and some statistics will be printed on the screen. 

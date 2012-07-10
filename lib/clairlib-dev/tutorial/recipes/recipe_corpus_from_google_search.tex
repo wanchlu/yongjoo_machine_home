@@ -1,0 +1,9 @@
+\subsubsection{Generate a corpus from a Google search}
+
+\begin{boxedverbatim}
+ output: indexed corpus
+
+ search_to_url.pl -q bulgaria -n 10 > bulgaria.10.urls
+ download_urls.pl -i bulgaria.10.urls -c bulgaria-10 -b produced
+ index_corpus.pl -c bulgaria-10 -b produced
+\end{boxedverbatim}

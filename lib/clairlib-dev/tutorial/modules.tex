@@ -1,0 +1,1026 @@
+\section{Modules}
+
+In this section, we talk briefly about the main components in Clairlib API.
+A detailed documentation of all the modules can be found online on http://belobog.si.umich.edu/clair/clairlib/pdoc/.
+
+\subsection{Clair::Document}
+
+Clairlib's Document class can be used to perform some basic analysis
+and perform some calculations on a single document.
+
+Documents have three types of values: `html', `text', and `stem'.  A
+document must be created as one of the three types.  It can then be
+converted from html to text and from text to stem.  Performing a
+conversion does not cause the old information to be lost.  For
+example, if a document starts as html, and is converted to text, the
+html is not forgotten, the document now holds an html version and a
+text version of the original html document.
+
+Creating a new document: A new document can be created either from a
+string or from a file.  To create a document from a string, the
+string parameter should be specified, while the file parameter
+should be specified with the filename to load the document from.  It
+is an error if both are specified.
+
+The initial type of a document must be specified.  This is done by
+setting the type parameter to `html', `text', or `stem'.
+Additionally, an id must be specified for the document.  Care should
+be taken to keep ids of documents unique, as putting documents with
+the same id into a Cluster or Network can cause problems.
+
+Finally, the language of the document may be specified by passing a
+value as the language parameter.
+\\
+\\
+\begin{boxedverbatim}
+
+my $doc = new Clair::Document(file => 'doc.html', id => 'doc1',
+                              type => 'html');
+
+\end{boxedverbatim}
+\\
+
+Using a single Document: strip\_html and stem convert an html
+version of the document to text and a text version to stem,
+respectively.
+
+The html, text, or stem version of the document can be retrieved
+using get\_html, get\_text, and get\_stem respectively.  For these
+methods and all those used by document, the programmer is expected
+to ensure that any time a particular type of a document is used,
+that type is valid.  That is, a document that is created as an html
+document and is never converted to a text document should never have
+get\_text called or save (described later) called with type
+specified as anything but `html'.
+\\
+\\
+\begin{boxedverbatim}
+
+# We start off with the html version
+my $html = $doc->get_html;
+
+# But can now get the text version
+my $text = $doc->strip_html();
+die if ($text ne $doc->get_text);
+
+# And then the stemmed version
+my $stem = $doc->stem();
+die if $stem ne $doc->get_stem;
+
+# Note that the html version is unchanged:
+die if $html ne $doc->get_html;
+
+\end{boxedverbatim}
+\\
+
+Several different operations can be performed on a document.  It can
+be split into lines, sentences, or words using split\_into\_lines,
+split\_into\_sentences, and split\_into\_words which return an array
+of the text of the document separated appropriately.
+split\_into\_lines and split\_into\_sentences can only be performed
+on the text version of the document, but split\_into\_words can be
+performed on any type of document.  It defaults to text, but this
+can be overridden by specifying the type parameter.
+
+A document can be saved to a file using the save method.  The method
+requires the type to be saved be specified.
+
+Documents may have parent documents as well.  This can be used to
+track the original source of a document.  For example, a new
+document could be created for each sentence of an original document.
+By using set\_parent\_document and get\_parent\_document, each new
+document can point to the document it was created from.
+
+\subsection{Clair::Cluster}
+
+Clairlib makes analyzing relationships beween documents very simple.
+Generally, for simplicity, documents should be loaded as a cluster,
+then converted to a network, but documents can be added directly to
+a network.
+
+Creating a Cluster: Documents can be added individually or loaded
+collectively into a cluster.  To add documents individually, the
+insert function is provided, taking the id and the document, in that
+order.  It is not a requirement that the id of the document in the
+cluster match the id of the document, but it is recommended for
+simplicity.
+
+Several functions are provided to load many documents quickly.
+load\_file\_list\_array adds each file from the provided array as a
+document and adds it to the cluster.  load\_file\_list\_from\_file
+does the same for a list of documents that are given in a provided
+file. load\_documents does the same for each document that matches
+the expression passed along as a parameter.
+
+Each of these functions must assign a type to each document created.
+`text' is the default, but this may be changed by specifying a type
+parameter.  Files can be loaded by filename or by `count', an index
+that is incremented for each file.  Using the filename is the
+default, but specifying a parameter count\_id of 1 changes that.  To
+allow the load functions to be called repeatedly, a start\_count
+parameter may be specified to have the counts started at a higher
+number (to avoid repeated ids).  Each load function returns the next
+safe count (note that if start\_count is not specified, this is the
+number of documents loaded).
+
+load\_lines\_from\_file loads each line from a file as an individual
+document and adds it to the cluster.  It behaves very similarly to
+the other load functions except that ids must be based on the count.
+\\
+\\
+\begin{boxedverbatim}
+
+my $cluster = Clair::Cluster->new();
+
+$cluster->load_documents("directory/*.txt", type => 'text');
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Working with Documents Collectively}
+The functions
+strip\_all\_documents, stem\_all\_documents, and
+save\_documents\_to\_directory act on every document in the cluster,
+stripping the html, stemming the text, or saving the documents.
+\\
+\\
+\begin{boxedverbatim}
+
+$cluster->stem_all_documents();
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Analyzing a Cluster}
+The documents in a cluster can be analyzed in
+two ways.  The first is that an IDF database can be built from the
+documents in the cluster with build\_idf.  The second is analyzing
+the similarity between documents in the cluster.  First,
+compute\_cosine\_matrix is provided which computes the similarity
+between every pair of documents in the cluster.  These values are
+returned in a hash, but are also saved with the cluster.
+compute\_binary\_cosine returns a hash of cosine values that are
+above the threshold.  It can be provided a cosine hash or can use a
+previously computed hash stored with the cluster.
+get\_largest\_cosine returns the largest cosine value, and the two
+keys that produced it in a hash.  It also can be passed a cosine
+hash or can use a hash stored with the cluster.
+\\
+\\
+\begin{boxedverbatim}
+
+my %cos_hash = $cluster->compute_cosine_matrix();
+
+my %bin_hash = $cluster->compute_binary_cosine(0.2);
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::Network}
+
+\subsubsection{Creating a Network}
+
+There are three ways to create a network from a cluster, based on
+what statistics are desired from the network.  For statistics based
+on similarity, create\_network creates a network
+based on a cosine hash.  Any two documents with a positive cosine
+relationship will have an edge between them in the network.
+Optionally, all documents can have an edge by setting the
+include\_zeros parameter as 1.  The transition values to compute lexrank are
+also set, although the values can be saved to a different attribute
+name by specifying a property parameter.
+
+For statistics based on hyperlink relationship,
+create\_hyperlink\_network\_from\_array and \linebreak
+create\_hyperlink\_network\_from\_file creates a network with edges
+between pairs of documents in an array or on lines of a file,
+respectively.
+
+create\_sentence\_based\_network creates a network with a node for
+every sentence in every document.  The cosine between each sentence
+is then computed and, if a threshold is specified, the binary cosine
+is computed.  The edges are created based on the similarity values
+as with create\_network.
+\\
+\\
+\begin{boxedverbatim}
+
+my $network = $cluster->create_network(cosine_matrix => %bin_hash);
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Importing a Network}
+
+Networks can also be read in from various cross-platform graph
+formats.  Currently, the following formats are supported:
+
+\begin{itemize}
+\item Edgelist
+\item GraphML
+\item Pajek
+\end{itemize}
+
+To read in a network, create a Clair::Network::Reader object of the
+appropiate type and call the read\_network method with a filename.  A
+new Clair::Network object will be returned.
+
+Example of reading a Pajek file:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Network::Reader::Pajek;
+
+my $reader = Clair::Network::Reader::Pajek->new();
+my $net = $reader->read_network("example.net");
+
+\end{boxedverbatim}
+
+\subsubsection{Exporting a Network}
+
+You can also export a Network to any of the above formats with the
+Writer classes.
+
+Example of writing a Pajek format network:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Network::Writer::Pajek;
+
+my $export = Clair::Network::Writer::Pajek->new();
+$export->set_name("networkname");
+$export->write_nework($net, "example.net");
+
+\end{boxedverbatim}
+
+
+\subsubsection{Analyzing a Network}
+
+Once a network has been created, much more analysis is possible.
+Basic statistics like the number of nodes and edges are available
+from num\_nodes and num\_links.  The average and maximum diameters
+can be ascertained from diameter, specifying either a max parameter
+as 1 or an avg parameter as 1 (max is the default).  The average in
+degree, out degree, and total degree can be computed with
+avg\_in\_degree, avg\_out\_degree, and avg\_total\_degree
+respectively.
+
+\textbf{Shortest Path Length}
+
+Clairlib can compute the shortest paths between all pairs of vertices.
+It returns the results as a hash of hashes of the shortest path
+matrix.
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Network;
+
+my $net = new Clair::Network();
+my $sp_matrix = $net->get_shortest_path_matrix();
+
+\end{boxedverbatim}
+\\
+
+\textbf{Average Shortest Path Length}
+
+Clairlib can compute the average shortest path length between all
+pairs of vertices.  See the code examples volume of the documentation for usage.
+
+\textbf{Clustering Coefficient}
+
+Clairlib supports two clustering coefficient functions: the
+Watts-Strogatz clustering coefficient and the Newman clustering
+coefficient.
+
+
+\textbf{Assortativity}
+
+Clairlib can compute degree assortativity.  It returns a global
+measure of network assortativity, the degree assortativity
+coefficient.
+\\
+\\
+\begin{boxedverbatim}
+
+my $sp_matrix = $net->degree_assortativity_coefficient();
+
+\end{boxedverbatim}
+\\
+
+\textbf{Centrality}
+
+
+Clairlib supports several network centrality measures.  These measures
+assign a value to each vertex depending on how ``central'' that vertex
+is.
+
+The Centrality modules are in namespace Clair::Network::Centrality.
+Each module has two centrality member functions, which both return a
+hash of vertices and their corresponding centrality.  The first
+function returns the base centrality measure.  The second returns a
+centrality normalized to between 0 and 1.
+
+\textbf{Degree Centrality}
+
+Ranking each vertex by vertex degree is the simplest measure of
+network centrality.  This is called degree centrality.  For undirected
+networks, it is simply the degree of each vertex.  For directed
+networks, it is the total degree divided by two.
+
+\textbf{Closeness Centrality}
+
+Closeness centrality measures how close each vertex is to the other
+vertices.  This is found by measuring the length from the target
+vertex to every other reachable vertex along the shortest path.  The
+reciprocal of this is the closeness centrality.
+
+\textbf{Betweenness Centrality}
+
+Betweenness centrality measures how many shortest paths the target
+vertex is in between.  The betweenness index is the sum of the number of
+shortest paths between two actors through the target actor, divided by
+the total number of shortest paths between the two actors.
+
+\textbf{LexRank Centrality}
+
+To compute lexrank from a network built from a cluster using
+create\_network or \linebreak
+create\_sentence\_based\_network,
+compute\_lexrank is provided.  Initial values or bias values can
+also be loaded from a file using
+read\_lexrank\_initial\_distribution and read\_lexrank\_bias (the
+default for both is uniform).  If the network was not created from a
+cluster appropriately (or to change the values), transition values
+can also be loaded from a file using
+read\_lexrank\_probabilities\_from\_file.
+\\
+\\
+\begin{boxedverbatim}
+
+my %lex_hash = $network->compute_lexrank();
+
+\end{boxedverbatim}
+\\
+
+\textbf{PageRank Centrality}
+
+Similarly, pagerank can be computed with compute\_pagerank.
+Transition values are already set for a network created with one of
+the create\_hyperlink\_network functions, but can be read from a
+file using \linebreak
+read\_pagerank\_probabilities\_from\_file otherwise.
+Initial distribution and personalization values can be read from
+files using read\_pagerank\_initial\_distribution and
+read\_pagerank\_personalization.
+
+The results of these computations are returned by compute\_lexrank
+and compute\_pagerank, but can also be saved to a file using
+save\_current\_lexrank\_distribution or printed to standard out
+using \linebreak
+print\_current\_lexrank\_distribution (for pagerank,
+save\_current\_pagerank\_distribution and \linebreak
+print\_current\_pagerank\_distribution, respectively).
+\\
+\\
+\begin{boxedverbatim}
+
+$network->print_current_lexrank_distribution();
+$network->save_current_lexrank_distribution('lex_out');
+
+\end{boxedverbatim}
+\\
+
+\textbf{Community finding using Girvan/Newman algorithm}
+
+The Girvan/Newman algorithm will perform hierarchical clustering on network
+data
+
+To do the clustering, first load a network object derived from
+Clair\:\:Network.
+\\
+\\
+\begin{boxedverbatim}
+use Clair::Network::GirvanNewman;
+
+$GN = Clair::Network::GirvanNewman->new($network);
+\end{boxedverbatim}
+\\
+\\
+then call:
+\\
+\\
+\begin{boxedverbatim}
+
+$graphPartition = $GN->generatePartition();
+
+\end{boxedverbatim}
+\\
+\\
+The result will be stored in a hash, where the key is the node id and
+the value is the cluster it belongs to
+To use the value, call:
+\\
+\\
+\begin{boxedverbatim}
+$str = $$graphPartition->{$nodeID};
+\end{boxedverbatim}
+\\
+\\
+the cluster is in the format of 0|1|2|...
+the number between ``|" is the cluster it belongs to at different level
+of the hierarchy. For example, to return the partition \$node1 belongs
+to when partition the network into two, call:
+\\
+\\
+\begin{boxedverbatim}
+@p = split(/\|/, $str);
+return $p[1];
+\end{boxedverbatim}
+\\
+
+
+
+
+
+\textbf{Finding maximum flow in a flow network using the Ford/Fulkerson algorithm}
+
+The Ford/Fulkerson algorithm computes the maximum flow in a flow network.
+
+The idea behind the algorithm is very simple: As long as there is a path from
+the source (start node) to the sink (end node), with available capacity on all
+edges in the path, we send flow along one of these paths. Then we find another
+path, and so on.
+
+To find the maximum flow in a network, first load a network object derived from
+Clair\:\:Network with the capacity of each edge specified as edge attribute.
+\\
+\\
+\begin{boxedverbatim}
+use Clair::Network::FordFulkerson;
+
+$FF = Clair::Network::FordFulkerson->new($network,$source,$destination);
+\end{boxedverbatim}
+\\
+\\
+then call:
+\\
+\\
+\begin{boxedverbatim}
+
+($flownet,$max) = $FF->run();
+
+\end{boxedverbatim}
+\\
+\\
+This function returns the residual flow network in \$flownet and the value of
+the maxumum flow in \$max.
+
+You can change the source and destination node using:
+\\
+\\
+\begin{boxedverbatim}
+$FF->set_source{$s};
+$FF->set_destination($t);
+\end{boxedverbatim}
+\\
+\\
+\textbf{Community finding using KernighanLin algorithm}
+
+The KernighanLin algorithm will divide a undirected weighted graph into
+two partitions such that the sum of the weight of edges between the
+two is the minimum (min cut).
+
+To do the partition, first load a network object derived from
+Clair::Network.
+\\
+\\
+\begin{boxedverbatim}
+use Clair::Network::KernighanLin;
+
+$KL = Clair::Network::KernighanLin->new($network);
+\end{boxedverbatim}
+\\
+\\
+then call:
+\\
+\\
+\begin{boxedverbatim}
+
+$graphPartition = $KL->generatePartition();
+
+\end{boxedverbatim}
+\\
+\\
+The result will be stored in a hash, where the key is the node id and
+the value is the partition (0/1) it belongs to
+To use the value, call:
+\\
+\\
+\begin{boxedverbatim}
+$$graphPartition->{$nodeID};
+\end{boxedverbatim}
+\\
+
+\textbf{Adamic/Adar Value}
+
+The Adamic/Adar value computes the similarity of any two nodes in
+a network.To compute the Adamic/Adar value, you need to preprocess
+ the corpus to get the attribute you want. The format should be:
+\\
+\\
+\begin{boxedverbatim}
+
+attribute1
+attribute2
+...
+
+\end{boxedverbatim}
+\\
+\\
+put all the files into one empty folder, and call:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Network::AdamicAdar;
+
+$aa = Clair::Network::AdamicAdar->new();
+$results = $aa->readCorpus($folderName);
+
+\end{boxedverbatim}
+\\
+\\
+The result will be stored in a two-dimensional hash.
+To use the value, call:
+\\
+\\
+\begin{boxedverbatim}
+$results->{$node1}->{$node2};
+\end{boxedverbatim}
+\\
+
+Note: In order to save memory, the results only saved for every one pair of value in ascending order.
+
+Many other network based statistics can be computed.  For examples, please see test\_network\_stat.pl in the
+test directory.
+
+\subsubsection{Network Generation}
+
+Random networks can also be generated with the
+Clair::Network::Generator package.  Currently, this includes
+generation of Erd\H{o}s-R\'{e}nyi random graphs.
+
+\textbf{Clair::Network::Generator::ErdosRenyi}
+
+Two models of Erd\H{o}s-R\'{e}nyi random networks can be generated.
+One includes a set number of nodes and edges.  The other type includes
+a set number of nodes with an edge existing between two nodes with a
+probability $p$.
+
+Example:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Network::Generator::ErdosRenyi;
+my $generator = Clair::Network::Generator::ErdosRenyi->new();
+my $set_edges = $generator->generate(10, 20, type => "gnm");
+my $random_number_edges = $generator->generate(10, 0.2, type => "gnp");
+
+\end{boxedverbatim}
+
+\subsubsection{Network Sampling}
+
+Sometimes a network may be too large to process in its entirety.
+Sampling can be used to extract a representive subset of the network
+for analysis.  Different methods preserve different network
+properties.  Clairlib provides several network sampling algorithms.
+
+\begin{itemize}
+\item{Clair::Network::Sample::RandomNode}
+
+  Random node sampling simply chooses a number of nodes from the
+  original graph, choosing nodes uniformly at random.  If there is an
+  edge between two nodes that have been selected in the original
+  network, that edge will be included in the sampled network.
+
+\item{Clair::Network::Sample::RandomEdge}
+
+  Random edge sampling chooses edges randomly from the original
+  network, and includes the two incident nodes.
+
+\item{Clair::Network::Sample::ForestFire}
+
+  ForestFire sampling chooses an initial random node, and performs a
+  probabilistic recursive breadth-first search from that initial node.
+  If the "fire" dies out, it will restart at another random node.
+
+\end{itemize}
+
+Example:
+\\
+\\
+\begin{boxedverbatim}
+
+use Clair::Network::Sample::ForestFire;
+
+my $fire = new Clair::Network::Sample::ForestFire($net);
+print "Sampling 3 nodes using the Forest Fire model\n";
+$new_net = $fire->sample(3, 0.9);
+
+\end{boxedverbatim}
+
+\subsection{Clair::Statistics}
+
+Clairlib provides several statistical tools for analyzing and
+generating distributions.  The distributions include Geometric,
+Gaussian, LogNormal, Zipfian and student's T-distribution.  There is
+also experimental support for statistical inference.  These
+distribution and test modules are included under the Clair::Statistics
+namespace.  See the test\_statistics.pl recipe for more information.
+The older Clair::Gen will be folded into this in the next release.
+
+\subsection{Clair::Gen}
+
+Clair::Gen is for use when working with distributions.  It can
+produce expected Power Law and Poisson distributions, or analyze
+observed distributions.  The read\_from\_file method reads an
+observed distribution from a file.
+
+The plEstimate function accepts a distribution as input and
+produces the best-fitting $\hat{c}$ and $\hat{\alpha}$ values.
+genPl does the opposite--using $\hat{c}$ and $\hat{\alpha}$ as
+input, it produces the expected distribution.
+
+For Poisson distributions, poisEstimate and genPois are provided
+which mirror the functionality of plEstimate and genPl.  plEstimate
+is currently just a stub function, however.
+
+To compare estimated and actual distributions, compareChiSquare is
+included in the package.  This returns the number of degrees of
+freedom and the p-value.
+\\
+\\
+\begin{boxedverbatim}
+
+my $g = new Clair::Gen;
+
+$g->read_from_file("trial1.dist");
+my @observed = $g->distribution;
+
+my ($c_hat, $alpha_hat) = g->plEstimate(\@observed);
+my @expected = g->genPL($c_hat, $alpha_hat);
+
+my ($df, $pv) = $g->compareChiSquare(\@observed, \@expected, 2);
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::ChisqIndependent}
+
+Clair::ChisqIndependent is for Gen to produce the Chi square
+for given data. It's subclassed from Statistics::ChisqIndep,
+ and adds one more method: recompute\_chisq to compute the p-value
+of the data when the number of degrees of freedom changes
+
+The recompute\_chisq function accepts the modified
+degree of freedom as input and
+produces the corresponding p-value.
+\\
+\\
+\begin{boxedverbatim}
+
+my $chi = new Clair::ChisqIndependent;
+my @chi_array = (\@observed, \@expected);
+
+$chi->load_data(\@chi_array);
+$chi->{df} -= $extra_df;
+$chi->recompute_chisq();
+
+return ($chi->{df}, $chi->{p_value});
+\end{boxedverbatim}
+\\
+
+
+\subsection{Clair::LM}
+
+Clair::LM provides functionality for the extraction of N-grams from text and HTML
+documents. The resulting N-gram dictionary can optionally be pruned of low-frequency
+N-grams before being written to a human-readable text file and/or serialized to a
+network-ordered Storable file.
+\\
+\\
+\begin{boxedverbatim}
+use Clair::Cluster
+use Clair::Utils::Ngram qw(load_ngramdict
+                dump_ngramdict
+                extract_ngrams
+                write_ngram_counts
+                enforce_count_thresholds);
+
+# Read in documents
+my $r_cluster = Clair::Cluster->new;
+$r_cluster->load_documents("*.html",
+                type => 'html',
+                filename_id => 1);
+
+# Strip markup and stem resulting document contents, segment into sentences,
+#   and extract bigrams, storing the bigram dictionary in $r_ngramdict
+my $r_ngramdict = {};
+extract_ngrams(cluster   => $r_cluster,
+                N         => 2,
+                ngramdict => $r_ngramdict,
+                format    => 'html',
+                stem      => 1,
+                segment   => 1,
+                verbose   => 1 );
+
+# Remove all bigrams having fewer than 2 occurrences and/or not occurring
+#   in the top 100 most frequent
+enforce_count_thresholds(N => 2,
+                ngramdict => $r_ngramdict,
+                mincount  => 2,
+                topcount  => 100 );
+
+# Sort bigrams in descending order by count and write bigram dictionary to file
+write_ngram_counts(N         => 2,
+                ngramdict => $r_ngramdict,
+                outfile   => 'test.2grams',
+                sort      => 1 );
+
+# Serialize bigram dictionary to (network-ordered) Storable file
+dump_ngramdict(N         => 2,
+                ngramdict => $r_ngramdict,
+                outfile   => 'test.2grams.dump' );
+
+# Restore N-gram dictionary from Storable file
+my $N;
+($N, $r_ngramdict2) = load_ngramdict(infile => 'test.2grams.dump');
+
+\end{boxedverbatim}
+\\
+
+
+\subsection{Clair::Util}
+
+Clair::Util provides several different methods that are useful but
+do not fit in other modules.  For example, build\_IDF\_database reads
+a list of files and writes the IDF values from those files to a
+database (Berkeley DB).  build\_idf\_by\_line can also be used to
+build an IDF database, in this case, using text pass to it and
+treating each line as a different document and computing the IDF
+from those.  read\_idf opens a database and returns the
+hash from it.  This is particularly useful for examining the contents
+of an IDF database, but can be easily used for many other tasks as well.
+\\
+\\
+\begin{boxedverbatim}
+
+Clair::Util::build_idf_by_line("This is a test.\n" .
+             "This is considered another document.\n" .
+             "A third sample document.",
+             "test_dbm_file");
+
+my %idf = Clair::Util::read_idf("test_dbm_file");
+
+print "The idf of 'this' is: ", $idf{this}, "\n";
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::Utils::CorpusDownload}
+
+\subsubsection{Creating a Corpus}
+
+The CorpusDownload module is provided to create a
+corpus.  Create a CorpusDownload object using new().  A corpus name
+must be provided, and a rootdir is optional, but strongly
+recommended since the default is `/data0/projects/tfidf'.  The
+rootdir must be an absolute path, rather than a relative path.  The
+root directory is where the corpus files will be placed.  Many
+corpora can be made with the same root directory, as long as the
+corpusname is different for each.
+
+Two functions are provided to create a corpus.  buildCorpus is used
+to download files to form the corpus, while buildCorpusFromFiles is
+used to form a corpus with files already on the computer.  Both
+require a reference to an array with either the urls or absolute
+paths to the files for buildCorpus and buildCorpusFromFiles,
+respectively.  These files will then be copied to the root directory
+provided and a corpus created from them in TREC format.
+
+Because CorpusDownload was designed to use a downloaded corpus,
+results from a corpus build with buildCorpusFromFiles will list
+files with ``http://'' at the beginning, then the full path of the
+file.
+
+To use a base URL and find files based on links from that file, the
+function poach is provided as an interface to `poacher.'  This
+returns an array with URLs that can be passed to buildCorpus.
+\\
+\\
+\begin{boxedverbatim}
+
+$corpus = Clair::Utils::CorpusDownload->new(corpusname => 'new_corpus',
+              rootdir => '/usr/username/');
+
+$corpus->buildCorpus(urlsref => $@urls);
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Computing IDF and TF Values}
+
+To compute the IDF and TF values for
+the corpus, buildIdf and buildTf are provided.  Both accept stemmed
+as a parameter which can be set to 1 to compute the stemmed values
+or 0 (the default) to compute the unstemmed values.  Before buildTf
+can be called, build\_docno\_dbm must be called.
+\\
+\\
+\begin{boxedverbatim}
+
+$corpus->buildIdf(stemmed => 0);
+$corpus->buildIdf(stemmed => 1);
+
+$corpus->build_docno_dbm();
+
+$corpus->buildTf(stemmed => 0);
+$corpus->buildTf(stemmed => 1);
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::Utils::TF and Clair::Utils::IDF}
+
+Once IDF values have been
+computed, they can be accessed by creating an Idf object.  In the
+constructor, rootdir and corpusname parameters should be supplied
+that match the CorpusDownload parameters, along with a stemmed
+parameter depending on whether stemmed or unstemmed values are
+desired (1 and 0 respectively).  To get the IDF for a word, then,
+use the method getIdfForWord, supplying the desired word.
+
+A Tf object is created with the same parameters passed to the
+constructor.  The function getFreq returns the number of times a
+word appears in the corpus, getNumDocsWithWord returns the number of
+documents it appears in, and getDocs returns the array of documents
+it appears in.
+\\
+\\
+\begin{boxedverbatim}
+
+my $idf = Clair::Utils::Idf->new( rootdir=> '/usr/username/',
+          corpusname =>'new\_corpus', stemmed => 0);
+
+print "The idf of 'and' is ", $idf->getIdfForWord("and"), "\n";
+
+my $tf = Clair::Utils::Idf->new( rootdir=> '/usr/username/',
+         corpusname =>'new_corpus', stemmed => 0);
+
+print $tf->getNumDocsWithWord("and"), " docs have 'and' in them\n";
+print "'and' appears ", $tf->getFreq("and"), "times.\n";
+
+print "The documents are:\n" my @docs = $tf->getDocs("and");
+foreach my $doc (@docs) {
+  print "$doc\n";
+}
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::Utils::WebSearch}
+
+\emph{This applies only to users of Clairlib-ext!}
+
+The WebSearch module is used to perform Google searches.  A key must
+be obtained from Google in order to do this.  Follow the instructions
+in the section "Installing the Clair Library" to obtain a key and
+have the WebSearch module use it.
+
+Once the key has been obtained and the appropriate variables are set,
+use the googleGet method to obtain a list of results to a Google query.
+The following code gets the top 20 results to a search for the
+"University of Michigan," and then prints the results to the screen.
+\\
+\\
+\begin{boxedverbatim}
+
+my @results = @{Clair::Utils::WebSearch::googleGet("University of \
+Michigan", 20)};
+
+foreach my $r (@results) {
+  print "$r\n\n";
+}
+
+\end{boxedverbatim}
+\\
+
+The WebSearch module also provides the ability to download a single page
+as a URI::URL-escaped file using the downloadUrl method.  This method
+needs two parameters: the URL to download and the filename where the
+downloaded page should be saved.
+\\
+\\
+\begin{boxedverbatim}
+
+Clair::Utils::WebSearch::downloadUrl("http://www.mgoblue.com/", \
+"mgoblue_home.htm");
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::Utils::Parse}
+
+\emph{This applies only to users of Clairlib-ext!}
+
+The Parse module provides a wrapper for the Charniak parser and the
+chunklink tool.
+
+\subsubsection{Preparing a File for the Charniak Parser}
+
+To be parsed by the Charniak parser, a file must be formatted in
+a specific way, with sentences on separate lines, placed inside
+$<$s$></$s$>$ tags.  For example:
+\\
+\\
+\begin{boxedverbatim}
+
+<s>This is one sentence.</s>
+<s>This is another sentence.</s>
+
+\end{boxedverbatim}
+\\
+
+To make this formatting easier, the the prepare\_for\_parse function
+is provided.  This function will read a file, split it into sentences
+(using Clair::Document::split\_into\_sentences), then put each sentence on
+its own line, surrounded by $<$s$></$s$>$ tags, in a new file.
+\\
+\\
+\begin{boxedverbatim}
+
+Clair::Utils::Parse::prepare_for_parse("input.txt", "output.txt");
+
+\end{boxedverbatim}
+\\
+
+If a file is already correctly formatted, this step should not be performed.
+
+\subsubsection{Charniak Parser}
+
+The parse function runs a file through the Charniak
+parser.  The result of parsing will be returned from
+the function as a string, and may optionally be written to a file
+by specifying an output file.
+
+Note that a file must be correctly
+formatted to be parsed.  See the previous section, ``Preparing a File
+for the Charniak Parser'' for more information.
+\\
+\\
+\begin{boxedverbatim}
+
+my $parse_output = Clair::Utils::Parse::parse("to_be_parsed.txt",
+                          output_file => "output.txt");
+
+\end{boxedverbatim}
+\\
+
+\subsubsection{Chunklink}
+
+Chunklink is a very useful tool to analyze file from the Penn Treebank.
+The Parse module also provides a wrapper to it, with the function
+Parse::chunklink.  This function takes an input file and returns the
+result as a string, and may optionally also write the results to a file.
+\\
+\\
+\begin{boxedverbatim}
+
+my $chunkout = Clair::Utils::Parse::chunklink("WSJ_0021.MRG",
+                      output_file => "output.txt");
+
+\end{boxedverbatim}
+\\
+
+\subsection{Clair::Utils::Stem}
+
+This is an implementation of a stemmer, to take one word at a time
+and return the stem of it.  There are only two functions: new and
+stem.  Creating an object with new initializes the stemmer.
+Subsequent calls to stem will return the stemmed version of a word.
+Note that this is not the same stemmer that is used by
+Document::stem.
+\\
+\\
+\begin{boxedverbatim}
+
+my $stemmer = new Clair::Utils::Stem;
+
+print "'testing' stemmed is: ", $stemmer->stem("testing"), "\n";
+
+\end{boxedverbatim}
+\\

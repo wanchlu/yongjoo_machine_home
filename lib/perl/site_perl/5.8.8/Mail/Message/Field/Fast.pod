@@ -1,0 +1,583 @@
+=head1 NAME
+
+Mail::Message::Field::Fast - one line of a message header
+
+=head1 INHERITANCE
+
+ Mail::Message::Field::Fast
+   is a Mail::Message::Field
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ See Mail::Message::Field
+
+=head1 DESCRIPTION
+
+This is the faster, but less flexible implementation of a header field.
+The data is stored in an array, and some hacks are made to speeds
+things up.  Be gentle with me, and consider that each message contains
+many of these lines, so speed is very important here.
+
+=head1 OVERLOADED
+
+overload: B<"">
+
+=over 4
+
+See L<Mail::Message::Field/"OVERLOADED">
+
+=back
+
+overload: B<+0>
+
+=over 4
+
+See L<Mail::Message::Field/"OVERLOADED">
+
+=back
+
+overload: B<<=>>
+
+=over 4
+
+See L<Mail::Message::Field/"OVERLOADED">
+
+=back
+
+overload: B<bool>
+
+=over 4
+
+See L<Mail::Message::Field/"OVERLOADED">
+
+=back
+
+overload: B<cmp>
+
+=over 4
+
+See L<Mail::Message::Field/"OVERLOADED">
+
+=back
+
+=head1 METHODS
+
+=head2 Constructors
+
+$obj-E<gt>B<clone>
+
+=over 4
+
+See L<Mail::Message::Field/"Constructors">
+
+=back
+
+Mail::Message::Field::Fast-E<gt>B<new>(DATA)
+
+=over 4
+
+The constructor of this object does not follow the usual practise within
+the Mail::Box suite: it does not use the constructor
+L<Mail::Reporter::new()|Mail::Reporter/"Constructors">.
+Therefor it has no logging or tracing facilities.
+
+The method can be used in one of the following ways:
+
+=over 4
+
+=item * B<new> LINE
+
+Pass a LINE as it could be found in a file: a (possibly folded) line
+which is terminated by a new-line.
+
+=item * B<new> NAME, (BODY|OBJECTS), [ATTRIBUTES]
+
+A set of values which shape the line.
+
+=back
+
+Create a new header field object.  Specify the whole LINE at once, and
+it will be split-up for you.  I case you already have the parts of the
+header line, you may specify them separately as NAME and BODY.
+
+In case you specify a single OBJECT, or a reference to an array of
+OBJECTS, these objects are processed to become suitable to fill a
+field, usually by simple strification.  When you specify one or more
+L<Mail::Address|Mail::Address> objects, these are transformed into a string using
+their C<format> method.  You may also add one L<Mail::Message::Field|Mail::Message::Field>,
+whose body is taken.  In case of an array, the elements are joined into
+one string with a comma.
+
+ATTRIBUTES can be exactly one string which may contain multiple attributes
+at once, quoted and formatted as required in RFC2822.  As alternative,
+list of key-value pairs can be used.  In this case, the values will get
+quoted if needed and everything formatted as the protocol demands.
+
+ Option--Defined in     --Default
+ log     Mail::Reporter   <disabled>
+ trace   Mail::Reporter   <disabled>
+
+. log => LEVEL
+
+. trace => LEVEL
+
+example: 
+
+ my $mime = Mail::Message::Field->new(
+  'Content-Type: text/plain; charset=US-ASCII');
+
+ my $mime = Mail::Message::Field->new(
+  'Content-Type' => 'text/plain; charset=US-ASCII');
+
+ my $mime = Mail::Message::Field->new(
+  'Content-Type' => 'text/plain', 'charset=US-ASCII');
+
+ my $mime = Mail::Message::Field->new(
+  'Content-Type' => 'text/plain', charset => 'Latin1');
+
+ my $mime = Mail::Message::Field->new(
+  To => Mail::Address->new('My', 'me@example.com');
+
+ my $mime = Mail::Message::Field->new(
+  Cc => [ Mail::Address->new('You', 'you@example.com')
+        , Mail::Address->new('His', 'he@example.com')
+        ]);
+
+But in practice, you can simply call
+
+ my $head = Mail::Message::Head->new;
+ $head->add( 'Content-Type' => 'text/plain'
+           , charset => 'utf8');
+
+which implicitly calls this constructor (when needed).  You can specify
+the same things for L<Mail::Message::Head::Complete::add()|Mail::Message::Head::Complete/"Access to the header"> as this
+C<new> accepts.
+
+=back
+
+=head2 The field
+
+$obj-E<gt>B<isStructured>
+
+Mail::Message::Field::Fast-E<gt>B<isStructured>
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+$obj-E<gt>B<length>
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+$obj-E<gt>B<nrLines>
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+$obj-E<gt>B<print>([FILEHANDLE])
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+$obj-E<gt>B<size>
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+$obj-E<gt>B<string>([WRAP])
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+$obj-E<gt>B<toDisclose>
+
+=over 4
+
+See L<Mail::Message::Field/"The field">
+
+=back
+
+=head2 Access to the name
+
+$obj-E<gt>B<Name>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the name">
+
+=back
+
+$obj-E<gt>B<name>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the name">
+
+=back
+
+$obj-E<gt>B<wellformedName>([STRING])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the name">
+
+=back
+
+=head2 Access to the body
+
+$obj-E<gt>B<body>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the body">
+
+=back
+
+$obj-E<gt>B<folded>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the body">
+
+=back
+
+$obj-E<gt>B<foldedBody>([BODY])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the body">
+
+=back
+
+$obj-E<gt>B<stripCFWS>([STRING])
+
+Mail::Message::Field::Fast-E<gt>B<stripCFWS>([STRING])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the body">
+
+=back
+
+$obj-E<gt>B<unfoldedBody>([BODY, [WRAP]])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the body">
+
+=back
+
+=head2 Access to the content
+
+$obj-E<gt>B<addresses>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+$obj-E<gt>B<attribute>(NAME [, VALUE])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+$obj-E<gt>B<attributes>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+$obj-E<gt>B<comment>([STRING])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+$obj-E<gt>B<study>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+$obj-E<gt>B<toDate>([TIME])
+
+Mail::Message::Field::Fast-E<gt>B<toDate>([TIME])
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+$obj-E<gt>B<toInt>
+
+=over 4
+
+See L<Mail::Message::Field/"Access to the content">
+
+=back
+
+=head2 Other methods
+
+$obj-E<gt>B<dateToTimestamp>(STRING)
+
+Mail::Message::Field::Fast-E<gt>B<dateToTimestamp>(STRING)
+
+=over 4
+
+See L<Mail::Message::Field/"Other methods">
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<consume>(LINE | (NAME,BODY|OBJECTS))
+
+=over 4
+
+See L<Mail::Message::Field/"Internals">
+
+=back
+
+$obj-E<gt>B<defaultWrapLength>([LENGTH])
+
+=over 4
+
+See L<Mail::Message::Field/"Internals">
+
+=back
+
+$obj-E<gt>B<fold>(NAME, BODY, [MAXCHARS])
+
+Mail::Message::Field::Fast-E<gt>B<fold>(NAME, BODY, [MAXCHARS])
+
+=over 4
+
+See L<Mail::Message::Field/"Internals">
+
+=back
+
+$obj-E<gt>B<setWrapLength>([LENGTH])
+
+=over 4
+
+See L<Mail::Message::Field/"Internals">
+
+=back
+
+$obj-E<gt>B<stringifyData>(STRING|ARRAY|OBJECTS)
+
+=over 4
+
+See L<Mail::Message::Field/"Internals">
+
+=back
+
+$obj-E<gt>B<unfold>(STRING)
+
+=over 4
+
+See L<Mail::Message::Field/"Internals">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Message::Field::Fast-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Message::Field::Fast-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Message::Field::Fast-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DETAILS
+
+=head1 DIAGNOSTICS
+
+Warning: Field content is not numerical: $content
+
+=over 4
+
+The numeric value of a field is requested (for instance the C<Lines> or
+C<Content-Length> fields should be numerical), however the data contains
+weird characters.
+
+=back
+
+Warning: Illegal character in field name $name
+
+=over 4
+
+A new field is being created which does contain characters not permitted
+by the RFCs.  Using this field in messages may break other e-mail clients
+or transfer agents, and therefore mutulate or extinguish your message.
+
+=back
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

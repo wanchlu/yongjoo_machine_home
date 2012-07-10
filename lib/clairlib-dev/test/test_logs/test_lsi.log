@@ -1,0 +1,116 @@
+
+---LSI TRAINING ROUND---
+Extracting 200 documents (train):
+    100 baseball documents
+    100 hockey documents
+
+Constructing document-term matrix and computing its singular value decomposition...
+  Done.
+Features written to /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/train.arff
+Training support vector machine (SVM) with 10-fold cross-validation...
+  Done.
+    See /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/train-crossval-SMO.log for log of classifier output from train
+ing and 10-fold cross-validation
+
+Assorted LSI Operations:
+
+1.  10 documents most similar to the first "baseball" document:
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/100521.xml    class: baseball distance: 0
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/104338.xml    class: baseball distance: 766.900906245389
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52600.xml     class: hockey   distance: 878.133816681718
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52617.xml     class: hockey   distance: 1170.79460196911
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/102620.xml    class: baseball distance: 1173.37206375472
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52571.xml     class: hockey   distance: 1228.38674691646
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/102702.xml    class: baseball distance: 1260.60382357027
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/102608.xml    class: baseball distance: 1539.09129033986
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/102707.xml    class: baseball distance: 1755.71666279044
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/102666.xml    class: baseball distance: 1813.9558980306
+
+    10 documents least similar to the first "baseball" document:
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/53468.xml     class: hockey   distance: 623678.78742266
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/104343.xml    class: baseball distance: 127195.542763888
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52550.xml     class: hockey   distance: 56772.692326505
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/102604.xml    class: baseball distance: 46249.7840967934
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52656.xml     class: hockey   distance: 42923.9454151177
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52623.xml     class: hockey   distance: 34216.018514725
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52647.xml     class: hockey   distance: 26279.3392230474
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52567.xml     class: hockey   distance: 25789.7688240899
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/53524.xml     class: hockey   distance: 25680.2148160797
+      /n/vespene/u/student/jmd2118/lib/clairlib-core/test/input/lsi/train/52621.xml     class: hockey   distance: 24484.4255599351
+
+2.  20 terms contextually most related to "hockey":
+        hockei          distance: 0
+        team            distance: 3552.13710320984
+        will            distance: 5426.19507574138
+        leagu           distance: 9355.56566969631
+        new             distance: 17804.490837988
+        game            distance: 18728.0736062202
+        on              distance: 19417.8280968805
+        from            distance: 20269.1760316003
+        i       distance: 22831.4599182794
+        nhl             distance: 22960.5078994346
+        be              distance: 28022.1166045679
+        with            distance: 33029.2159610246
+        season          distance: 33804.2631778893
+        for             distance: 34586.8743311679
+        it              distance: 41644.9819306
+        that            distance: 41918.170952464
+        player          distance: 43474.3700586909
+        wa              distance: 43474.7835417268
+        draft           distance: 44968.4591019083
+        division        distance: 45072.2185719763
+
+2.  20 terms contextually most related to "playoff":
+        playoff         distance: 0
+        tue     distance: 545.645489306016
+        north   distance: 546.541855670725
+        sweden          distance: 603.070476810131
+        left    distance: 631.618555775556
+        star    distance: 646.324222043395
+        lightn          distance: 647.234115293685
+        descript        distance: 659.765867562122
+        vancouv         distance: 772.933373584037
+        jose    distance: 783.887747065867
+        name    distance: 840.869193156701
+        n       distance: 870.599793246013
+        jet     distance: 909.823609278195
+        ottawa          distance: 920.115210177508
+        state   distance: 972.806763956748
+        keyword         distance: 978.036809123256
+        minor   distance: 994.874866503319
+        th      distance: 1001.40201717392
+        group   distance: 1036.55438834631
+        against         distance: 1037.64203846991
+
+3.  Set of unordered queries:
+        goalie stops puck
+        pitcher throws to catcher
+        extra innings
+        overtime
+    Ordered by contextual relationship to query "hockey":
+        "extra innings"                 distance: 89.4371287553442
+        "goalie stops puck"                     distance: 91.4877040918614
+        "overtime"                      distance: 97.3601561214853
+        "pitcher throws to catcher"                     distance: 129.371557925226
+    Ordered by contextual relationship to query "playoff":
+        "goalie stops puck"                     distance: 12.3288280059379
+        "overtime"                      distance: 14.1774468787578
+        "extra innings"                 distance: 150.834346221277
+        "pitcher throws to catcher"                     distance: 200.531792990538
+
+Saving latent semantic index to file /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/sports.lsi...
+  Done.
+
+---LSI TEST ROUND---
+Extracting 200 documents (test):
+    100 baseball documents
+    100 hockey documents
+
+Loading latent semantic index from file /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/sports.lsi...
+  Done.
+Features written to /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/test.arff
+Testing SVM predictions...
+    See /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/test-SMO.log for log of classifier output from testing
+    See /n/vespene/u/student/jmd2118/lib/clairlib-core/test/produced/lsi/test-SMO.pred for log of classifier predictions from testing
+
+Have a nice day!

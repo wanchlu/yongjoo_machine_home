@@ -1,0 +1,309 @@
+=head1 NAME
+
+Mail::Message::Body::Delayed - body of a Mail::Message but not read yet.
+
+=head1 INHERITANCE
+
+ Mail::Message::Body::Delayed realizes a Mail::Message::Body
+
+ Mail::Message::Body::Delayed
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ See Mail::Message::Body
+
+=head1 DESCRIPTION
+
+Message bodies of this type will be replaced by another type the moment you
+access the content.  In this documentation you will find the description of
+how a message body gets delay loaded.
+
+=head1 OVERLOADED
+
+overload: B<"">
+
+=over 4
+
+(stringification) Returns the body as string --which will trigger
+completion-- unless called to produce a string for C<Carp>.  The latter
+to avoid deep recursions.
+
+example: stringification of delayed body
+
+ print $msg->body;   # implicit by print
+
+ my $body = $msg->body;
+ my $x    = "$body"; # explicit by interpolation
+
+=back
+
+overload: B<@{}>
+
+=over 4
+
+When a body object is used as being an array reference, the lines of
+the body are returned.  This is the same as using the C<lines> method.
+
+=back
+
+overload: B<bool>
+
+=over 4
+
+Always returns a true value, which is needed to have overloaded
+objects to be used as in C<if($body)>.  Otherwise, C<if(defined $body)>
+would be needed to avoid a runtime error.
+
+=back
+
+=head1 METHODS
+
+=head2 Constructors
+
+Mail::Message::Body::Delayed-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+ Option --Defined in     --Default
+ log      Mail::Reporter   'WARNINGS'
+ message                   <required>
+ trace    Mail::Reporter   'WARNINGS'
+
+. log => LEVEL
+
+. message => MESSAGE
+
+=over 4
+
+The MESSAGE object which contains this delayed body.
+
+=back
+
+. trace => LEVEL
+
+=back
+
+=head2 The body
+
+$obj-E<gt>B<message>
+
+=over 4
+
+=back
+
+=head2 About to the payload
+
+$obj-E<gt>B<guessSize>
+
+=over 4
+
+=back
+
+$obj-E<gt>B<isDelayed>
+
+=over 4
+
+=back
+
+$obj-E<gt>B<isModified>
+
+=over 4
+
+=back
+
+$obj-E<gt>B<isMultipart>
+
+=over 4
+
+=back
+
+$obj-E<gt>B<modified>
+
+=over 4
+
+=back
+
+$obj-E<gt>B<nrLines>
+
+=over 4
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<fileLocation>([BEGIN, END])
+
+=over 4
+
+=back
+
+$obj-E<gt>B<load>
+
+=over 4
+
+Returns the loaded version of this body.
+
+=back
+
+$obj-E<gt>B<moveLocation>(DISTANCE)
+
+=over 4
+
+=back
+
+$obj-E<gt>B<read>(PARSER, HEAD, BODYTYPE)
+
+=over 4
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Message::Body::Delayed-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Message::Body::Delayed-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Message::Body::Delayed-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DIAGNOSTICS
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

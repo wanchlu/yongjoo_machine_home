@@ -1,0 +1,33 @@
+\subsection{Create a Linked Corpus Out of a Pre-generated Synthetic Collection}
+
+In this tutorial, we will create a linked corpus out of a pre-generated synthetic collection using the utility 'link\_synthetic\_collection.pl'. First off, we need to generate a synthetic collection to pass to this utility. We will use 'make\_synth\_collection.pl' to create a collection of documents called 'SynthCollection' in the directory 'synth\_out', as demonstrated earlier in this tutorial:
+\\
+\\
+\begin{boxedverbatim}
+mkdir source
+cd source
+wget -r -nd -nc http://belobog.si.umich.edu/clair/corpora/chemical
+cd ..
+directory_to_corpus.pl --corpus chemical --base produced \
+--directory source
+index_corpus.pl --corpus chemical --base produced
+make_synth_collection.pl --output SynthCollection --directory synth_out \
+--corpus chemical --base produced --size 20 --term-policy zipfian \
+--term-alpha 1 --doclen-policy mirror --verbose
+\end{boxedverbatim}
+\\
+\\
+Now, we can use 'link\_synthetic\_collection.pl' to link this collection of documents and create a corpus. 'link\_synthetic\_collection.pl' provides a number of policies to use when generating the synthetic corpus. Each link policy requires various arguments, as explained by the command:
+
+\begin{verbatim}
+link_synthetic_collection.pl --help
+\end{verbatim}
+
+For this tutorial, we will use the Watts-Strogatz option, which requires the arguments -p (link probability) and -k (number of neighbors per node).
+
+\begin{verbatim}
+link_synthetic_collection.pl -n SynthCorpus -b synth_corpus\
+ -c SynthCollection -d synth_out -l watts -p 0.42 -k 3
+\end{verbatim}
+
+This command will look in the directory 'synth\_out/' for a collection of documents called 'SynthCollection'. Then, it will create a directory called 'synth\_corpus/' and link 'SynthCollection' to create a corpus called 'SynthCorpus'. 

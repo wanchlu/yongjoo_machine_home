@@ -1,0 +1,59 @@
+\subsubsection{Generate plots and statistics from news samples}
+
+\begin{boxedverbatim}
+ input: sample news data
+ output: plots and statistics
+ optional: Matlab
+
+ sentences_to_docs.pl -i \
+   $CLAIRLIB/corpora/news-sample/lexrank-sample.txt \
+   -o lexrank-sample
+ directory_to_corpus.pl -c lexrank-sample  -b produced \
+   -d lexrank-sample
+ index_corpus.pl -c lexrank-sample -b produced
+ corpus_to_cos.pl -c lexrank-sample -b produced \
+    -o lexrank-sample.cos
+ cos_to_histograms.pl -i lexrank-sample.cos
+ cos_to_cosplots.pl -i lexrank-sample.cos
+ cos_to_stats.pl --graphs -i lexrank-sample.cos \
+   -o lexrank-sample.stats
+ print_network_stats.pl --triangles -i lexrank-sample-0.26.graph
+ stats2matlab.pl -i lexrank-sample.stats -o lexrank-sample.m
+ network_growth.pl -c lexrank-sample -b produced
+ stats2matlab.pl -i lexrank-sample.wordmodel.stats \
+   -o lexrank-sample-wordmodel.m
+\end{boxedverbatim}
+
+Now make the synthetic collection
+
+\begin{boxedverbatim}
+ make_synth_collection.pl --policy zipfian --alpha 1 -o synth \
+   -d synth_out -c lexrank-sample -b produced --size 11 --verbose
+ link_synthetic_collection.pl -n synth -b produced -c synth \
+   -d synth_out -l erdos -p 0.2
+ index_corpus.pl -c synth -b produced
+ corpus_to_cos.pl -c synth -b produced -o synth.cos
+ cos_to_histograms.pl -i synth.cos
+ cos_to_cosplots.pl -i synth.cos
+ cos_to_stats.pl -i synth.cos -o synth.stats --graphs --all -v
+ stats2matlab.pl -i synth.stats -o synth.m
+ network_growth.pl -c synth -b produced
+ stats2matlab.pl -i synth.wordmodel.stats -o synth-wordmodel.m
+\end{boxedverbatim}
+
+If you are on a machine with MATLAB, run the following to generate plots:
+
+\begin{boxedverbatim}
+ mkdir plots
+ mv *.m matlab
+ matlab -nojvm -nosplash < lexrank-sample-cosine-cumulative.m
+ matlab -nojvm -nosplash < lexrank-sample-cosine-hist.m
+ matlab -nojvm -nosplash < lexrank-sample-distplots.m
+ matlab -nojvm -nosplash < lexrank-sample.m
+ matlab -nojvm -nosplash < lexrank-sample-wordmodel.m
+ matlab -nojvm -nosplash < synth-cosine-cumulative.m
+ matlab -nojvm -nosplash < synth-cosine-hist.m
+ matlab -nojvm -nosplash < synth-distplots.m
+ matlab -nojvm -nosplash < synth.m
+ matlab -nojvm -nosplash < synth-wordmodel.m
+\end{boxedverbatim}

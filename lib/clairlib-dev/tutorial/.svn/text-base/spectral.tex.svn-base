@@ -1,0 +1,141 @@
+\subsection{Spectral Partitioning Using Fiedler Vector}
+In this tutorial you will use Clairlib module \textbf{Clair::Network::Spectral} to partition the Karate Club network into two subgraphs. \textbf{Clair::Network::Spectral} implements Spectral Partitioning using Fiedler Vector (i.e. the second smallest eigenvector of the Laplacian matrix).
+
+\subsubsection{Dataset}
+
+The dataset used in this tutorial is the Karate Club network, a network of friendships between the 34 members of a karate club at a US university, as described by Wayne Zachary in 1977. The network file is in GML format:
+
+\begin{boxedverbatim}
+ Creator "Mark Newman on Fri Jul 21 12:39:27 2006"
+ graph
+ [
+   node
+   [
+     id 1
+   ]
+   .
+   .
+   node
+   [
+     id 34
+   ]
+   edge
+   [
+     source 2
+     target 1
+   ]
+   .
+   .
+   edge
+   [
+     source 34
+     target 33
+   ]
+ ]
+\end{boxedverbatim}
+\\
+\\
+You can download the network from \textbf{http://www.clairlib.org/mediawiki/index.php/Corpora}
+
+\subsubsection{Read in the network file and create a Clair::Network object}
+
+First you need to create a Clair::Network::Reader::GML object
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network::Reader::GML;
+ my $reader=new Clair::Network::Reader::GML();
+\end{boxedverbatim}
+\\
+\\
+Then, pass the network filename to the read\_network subroutine via the \$reader object. This will return a \textbf{Clair::Network} object.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network;
+ my $filename = "karate.gml";
+ my $net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Create a Clair::Network::Spectral object}
+
+Create a new \textbf{Clair::Network::Spectral} by calling the constructor and passing the following two parameters:
+\begin{itemize}
+  \item \textbf{Network:} a Clair::Network object.
+  \item \textbf{Splitting Method (optional):} to specify the method used to choose the splitting value. This can take one of the following options:
+      \begin{itemize}
+        \item \textbf{Bisection:} The splitting value is the median of the Fiedler Vector components.
+        \item \textbf{Gap:} The splitting value is in the middle of largest gap within the Fiedler Vector components.
+        \item \textbf{Sign (Default):} The splitting value is 0.
+      \end{itemize}
+\end{itemize}
+
+
+The splitting value is used to partition the network into two parts by choosing all nodes whose corresponding Fiedler Vector component is larger than splitting value to be in one partition and the remaining nodes to be in the other partition. For the purpose of this tutorial we will use the "bisection" method.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network::Spectral;
+ $spectral = new Clair::Network::Spectral($net,"sign");
+\end{boxedverbatim}
+\\
+\\
+
+\subsubsection{Partition the network}
+
+To partition the network, simply call get\_partitions subroutine via \$spectral object. get\_partitions returns the nodes of each of the partitions in an array.
+
+\begin{verbatim}
+ my(@parta,@partb) = $spectral->get_partitions();
+\end{verbatim}
+
+You can print the result of partitioning the Karate Club network in by looping through the two resulting arrays or simply by using the dumper.
+\\
+\\
+\begin{boxedverbatim}
+ use Data::Dumper
+ print "PartA = ",Dumper(@parta),"\n";
+ print "PartB = ",Dumper(@partb),"\n";
+\end{boxedverbatim}
+\\
+\\
+The output should be as follows:
+\\
+\\
+\begin{boxedverbatim}
+ PartA = [
+          '25',
+          '15',
+           .
+           .
+          '31',
+          '30'
+         ];
+ PartB = [
+          '13',
+          '8',
+           .
+           .
+          '18',
+          '12'
+        ];
+\end{boxedverbatim}
+\\
+\\
+You can get the splitting value that was used to do the partitioning by calling get\_splitting\_value().
+
+
+\begin{verbatim}
+ my $splitting_value = $spectral->get_splitting_value();
+\end{verbatim}
+
+The result should be 0.0625504557748447. You can also get the Fiedler Vector by
+\begin{verbatim}
+  my $splitting_value = $spectral->get_fiedler_vector();
+\end{verbatim}
+
+You can change the splitting method anytime and then redo the partitioning using the new method.
+\begin{verbatim}
+  $spectral->set_splitting_method("gap");
+\end{verbatim} 

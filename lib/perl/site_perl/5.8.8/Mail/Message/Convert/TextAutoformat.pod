@@ -1,0 +1,226 @@
+=head1 NAME
+
+Mail::Message::Convert::TextAutoformat - Reformat plain text messages
+
+=head1 INHERITANCE
+
+ Mail::Message::Convert::TextAutoformat
+   is a Mail::Message::Convert
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ use Mail::Message::Convert::TextAutoformat;
+ my $af = Mail::Message::Convert::TextAutoformat->new;
+
+ my $beautified_body = $af->autoformatBody($body);
+
+=head1 DESCRIPTION
+
+Play trics with plain text, for instance bodies with type C<text/plain>
+using Damian Conway's Text::Autoformat.
+
+=head2 Converters between message objects
+
+=head2 Other converters
+
+=head1 METHODS
+
+=head2 Constructors
+
+Mail::Message::Convert::TextAutoformat-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+ Option --Defined in     --Default
+ fields   Mail::Message::Convert  <see description>
+ log      Mail::Reporter   'WARNINGS'
+ options                   { (all, 1) }
+ trace    Mail::Reporter   'WARNINGS'
+
+. fields => NAMES|ARRAY-OF-NAMES|REGEXS
+
+. log => LEVEL
+
+. options => HASH-REF
+
+=over 4
+
+Options to pass to Text::Autoformat, when its C<autoformat> method
+is called.
+
+=back
+
+. trace => LEVEL
+
+=back
+
+=head2 Converting
+
+$obj-E<gt>B<autoformatBody>(BODY)
+
+=over 4
+
+Formats a single message body (a L<Mail::Message::Body|Mail::Message::Body> object)
+into a new body object using Text::Autoformat.  If the
+Text::Autoformat is not installed, C<undef> is returned.
+
+=back
+
+$obj-E<gt>B<selectedFields>(HEAD)
+
+=over 4
+
+See L<Mail::Message::Convert/"Converting">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Message::Convert::TextAutoformat-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Message::Convert::TextAutoformat-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Message::Convert::TextAutoformat-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DIAGNOSTICS
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

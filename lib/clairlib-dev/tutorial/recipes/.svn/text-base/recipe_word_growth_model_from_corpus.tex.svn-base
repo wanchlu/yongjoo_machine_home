@@ -1,0 +1,11 @@
+\subsubsection{Generate statistics for word growth model from a corpus}
+
+\begin{boxedverbatim}
+ input: indexed corpus
+ output: stats
+ required: Matlab
+
+ network_growth.pl -c chemical -b produced
+ stats2matlab.pl -i chemical.wordmodel.stats -o wordmodel.m
+ matlab -nojvm -nosplash < wordmodel.m
+\end{boxedverbatim}

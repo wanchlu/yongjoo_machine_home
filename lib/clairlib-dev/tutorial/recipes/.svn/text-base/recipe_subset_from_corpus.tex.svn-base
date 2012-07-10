@@ -1,0 +1,12 @@
+\subsubsection{Selecting a subset of a corpus for processing}
+
+\begin{boxedverbatim}
+ input: existing corpus
+ output: directory containing subset of corpus
+ 
+ corpus_to_cluster.pl -c bulgaria-10 -b produced \
+  -f '^https://www.cia.gov/' \
+  -f '^http://en.wikipedia.org/' -o filtered 
+ directory_to_corpus.pl -c bulgaria-filtered -b produced \
+   -d filtered
+\end{boxedverbatim}

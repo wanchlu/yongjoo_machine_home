@@ -1,0 +1,84 @@
+\subsection{Random Walk on Graphs}
+In this tutorial you'll learn how to use Clairlib to perform random walk on graphs. 
+To do this we'll use random\_walk.pl utility. 
+This script takes a graph file in edgelist format as input and performs the random walk on 
+it based on several options as described by
+\\
+\\
+\begin{boxedverbatim}
+ random_walk.pl --help
+\end{boxedverbatim}
+\\
+\\
+For example, if you have the following graph "example.graph"
+\\
+\\
+\begin{boxedverbatim}
+ 1 2                
+ 1 4
+ 2 1
+ 2 3
+ 4 1
+ 4 3
+ 4 5
+ 5 1
+ 3 1
+\end{boxedverbatim}
+\\
+\\
+and the transition probabilities between the nodes are as follows "example.trans"
+\\
+\\
+\begin{boxedverbatim}
+ 1 2 0.30           
+ 1 4 0.70
+ 2 1 0.65
+ 2 3 0.35
+ 4 1 0.20
+ 4 3 0.50
+ 4 5 0.30
+ 5 1 1.00
+ 3 1 1.00
+\end{boxedverbatim}
+\\
+\\
+The probabilities after walking 100 random steps for 500 rounds, can be found by running
+\\
+\\
+\begin{boxedverbatim}
+ random_walk.pl --grpah example.graph --transition_file example.trans \
+ --steps 100 --rounds 500 --output example100.prob
+\end{boxedverbatim}
+\\
+\\
+The computed probabilities will be outputed to "example100.prob" and will be something like,
+\\
+\\
+\begin{boxedverbatim}
+ 5 0.098            
+ 2 0.098         
+ 3 0.168         
+ 1 0.350       
+ 4 0.286
+\end{boxedverbatim}
+\\
+\\
+To compute the stationary distribution (after walking so many random steps), run the following command,
+\\
+\\
+\begin{boxedverbatim}
+ random_walk.pl --grpah example.graph --transition_file example.trans \
+ --stationary --output example.prob
+\end{boxedverbatim}
+\\
+\\
+The content of the file "example.prob" after running the command will be something like this
+\\
+\\
+\begin{boxedverbatim}
+ 5 0.07             
+ 2 0.11
+ 3 0.17
+ 1 0.37
+ 4 0.26
+\end{boxedverbatim}

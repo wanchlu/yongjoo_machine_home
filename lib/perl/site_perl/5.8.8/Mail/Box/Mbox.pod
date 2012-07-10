@@ -1,0 +1,979 @@
+=head1 NAME
+
+Mail::Box::Mbox - handle folders in Mbox format
+
+=head1 INHERITANCE
+
+ Mail::Box::Mbox
+   is a Mail::Box::File
+   is a Mail::Box
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ use Mail::Box::Mbox;
+ my $folder = Mail::Box::Mbox->new(folder => $ENV{MAIL}, ...);
+
+=head1 DESCRIPTION
+
+This documentation describes how Mbox mailboxes work, and also describes
+what you can do with the Mbox folder object Mail::Box::Mbox.
+
+=head1 OVERLOADED
+
+overload: B<"">
+
+=over 4
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+overload: B<@{}>
+
+=over 4
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+overload: B<cmp>
+
+=over 4
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+=head1 METHODS
+
+=head2 Constructors
+
+Mail::Box::Mbox-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+ Option             --Defined in     --Default
+ access               Mail::Box        'r'
+ body_delayed_type    Mail::Box        Mail::Message::Body::Delayed
+ body_type            Mail::Box::File  <see description>
+ coerce_options       Mail::Box        []
+ create               Mail::Box        <false>
+ extract              Mail::Box        10240
+ field_type           Mail::Box        undef
+ fix_headers          Mail::Box        <false>
+ folder               Mail::Box        $ENV{MAIL}
+ folderdir            Mail::Box        $ENV{HOME}.'/Mail'
+ head_delayed_type    Mail::Box        Mail::Message::Head::Delayed
+ head_type            Mail::Box        Mail::Message::Head::Complete
+ keep_dups            Mail::Box        <false>
+ lock_extension       Mail::Box::File  '.lock'
+ lock_file            Mail::Box        <foldername><lock-extension>
+ lock_timeout         Mail::Box        1 hour
+ lock_type            Mail::Box        Mail::Box::Locker::DotLock
+ lock_wait            Mail::Box        10 seconds
+ locker               Mail::Box        undef
+ log                  Mail::Reporter   'WARNINGS'
+ manager              Mail::Box        undef
+ message_type         Mail::Box        Mail::Box::Mbox::Message
+ multipart_type       Mail::Box        Mail::Message::Body::Multipart
+ remove_when_empty    Mail::Box        <true>
+ save_on_exit         Mail::Box        <true>
+ subfolder_extension                   '.d'
+ trace                Mail::Reporter   'WARNINGS'
+ trusted              Mail::Box        <depends on folder location>
+ write_policy         Mail::Box::File  undef
+
+. access => MODE
+
+. body_delayed_type => CLASS
+
+. body_type => CLASS|CODE
+
+. coerce_options => ARRAY
+
+. create => BOOLEAN
+
+. extract => INTEGER | CODE | METHOD | 'LAZY'|'ALWAYS'
+
+. field_type => CLASS
+
+. fix_headers => BOOLEAN
+
+. folder => FOLDERNAME
+
+. folderdir => DIRECTORY
+
+. head_delayed_type => CLASS
+
+. head_type => CLASS
+
+. keep_dups => BOOLEAN
+
+. lock_extension => FILENAME|STRING
+
+. lock_file => FILENAME
+
+. lock_timeout => SECONDS
+
+. lock_type => CLASS|STRING|ARRAY
+
+. lock_wait => SECONDS
+
+. locker => OBJECT
+
+. log => LEVEL
+
+. manager => MANAGER
+
+. message_type => CLASS
+
+. multipart_type => CLASS
+
+. remove_when_empty => BOOLEAN
+
+. save_on_exit => BOOLEAN
+
+. subfolder_extension => STRING
+
+=over 4
+
+Mbox folders do not support sub-folders.  However, this module can
+simulate sub-directories if the user wants it to.  When a subfolder of
+folder C<xyz> is created, we create a directory which is called C<xyz.d>
+to contain them.  This extension C<.d> can be changed using this option.
+
+=back
+
+. trace => LEVEL
+
+. trusted => BOOLEAN
+
+. write_policy => 'REPLACE'|'INPLACE'|undef
+
+=back
+
+=head2 The folder
+
+$obj-E<gt>B<addMessage>(MESSAGE, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<addMessages>(MESSAGE [, MESSAGE, ...])
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+Mail::Box::Mbox-E<gt>B<appendMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box::File/"METHODS">
+
+=back
+
+$obj-E<gt>B<close>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<copyTo>(FOLDER, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<delete>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<filename>
+
+=over 4
+
+See L<Mail::Box::File/"The folder">
+
+=back
+
+$obj-E<gt>B<folderdir>([DIRECTORY])
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<name>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<organization>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<size>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<type>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<update>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<url>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+=head2 Folder flags
+
+$obj-E<gt>B<access>
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+$obj-E<gt>B<isModified>
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+$obj-E<gt>B<modified>([BOOLEAN])
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+$obj-E<gt>B<writable>
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+=head2 The messages
+
+$obj-E<gt>B<current>([NUMBER|MESSAGE|MESSAGE-ID])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<find>(MESSAGE-ID)
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<findFirstLabeled>(LABEL, [BOOLEAN, [ARRAY-OF-MSGS]])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<message>(INDEX [,MESSAGE])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<messageId>(MESSAGE-ID [,MESSAGE])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<messageIds>
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<messages>(['ALL',RANGE,'ACTIVE','DELETED',LABEL,!LABEL,FILTER])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<nrMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<scanForMessages>(MESSAGE, MESSAGE-IDS, TIMESPAN, WINDOW)
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+=head2 Sub-folders
+
+$obj-E<gt>B<listSubFolders>(OPTIONS)
+
+Mail::Box::Mbox-E<gt>B<listSubFolders>(OPTIONS)
+
+=over 4
+
+ Option             --Defined in     --Default
+ check                Mail::Box        <false>
+ folder               Mail::Box        <from calling object>
+ folderdir            Mail::Box        <from folder>
+ skip_empty           Mail::Box        <false>
+ subfolder_extension                   <from object>
+
+. check => BOOLEAN
+
+. folder => FOLDERNAME
+
+. folderdir => DIRECTORY
+
+. skip_empty => BOOL
+
+. subfolder_extension => STRING
+
+=over 4
+
+When the method is called on an open folder, the extension defined by it is
+used to detect sub-folders by default.  Otherwise, C<'.d'> is taken.
+
+=back
+
+=back
+
+$obj-E<gt>B<nameOfSubFolder>(SUBNAME, [PARENTNAME])
+
+Mail::Box::Mbox-E<gt>B<nameOfSubFolder>(SUBNAME, [PARENTNAME])
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<openRelatedFolder>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<openSubFolder>(SUBNAME, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<topFolderWithMessages>
+
+Mail::Box::Mbox-E<gt>B<topFolderWithMessages>
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<coerce>(MESSAGE, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<create>(FOLDERNAME, OPTIONS)
+
+Mail::Box::Mbox-E<gt>B<create>(FOLDERNAME, OPTIONS)
+
+=over 4
+
+ Option             --Defined in     --Default
+ folderdir            Mail::Box        undef
+ subfolder_extension                   undef
+
+. folderdir => DIRECTORY
+
+. subfolder_extension => STRING
+
+=over 4
+
+If a directory is found on the location of the folder to be created, this
+STRING is used to extend that directory name with.  This will cause the
+directory to be seen as sub-folder for the created folder.  This argument
+is passed to L<folderToFilename()|Mail::Box::Mbox/"Internals">.
+
+=back
+
+=back
+
+$obj-E<gt>B<determineBodyType>(MESSAGE, HEAD)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<folderToFilename>(FOLDERNAME, FOLDERDIR, [EXTENSION])
+
+Mail::Box::Mbox-E<gt>B<folderToFilename>(FOLDERNAME, FOLDERDIR, [EXTENSION])
+
+=over 4
+
+Translate a folder name into a filename, using the
+FOLDERDIR value to replace a leading C<=>.  If no EXTENSION is specified and
+this method is called as instance method, new(subfolder_extension) is used.
+Otherwise, the extension default to C<'.d'>.
+
+=back
+
+Mail::Box::Mbox-E<gt>B<foundIn>([FOLDERNAME], [OPTIONS])
+
+=over 4
+
+If no FOLDERNAME is specified, then the value of the C<folder> option
+is taken.  A mbox folder is a file which starts with a separator
+line: a line with C<'From '> as first characters.  Blank lines which
+start the file are ignored, which is not for all MUA's acceptable.
+
+ Option             --Defined in     --Default
+ folder                                undef
+ folderdir            Mail::Box        undef
+ subfolder_extension                   <from object>
+
+. folder => FOLDERNAME
+
+. folderdir => DIRECTORY
+
+. subfolder_extension => STRING
+
+=back
+
+$obj-E<gt>B<lineSeparator>([STRING|'CR'|'LF'|'CRLF'])
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<locker>
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<messageCreateOptions>([TYPE, CONFIG])
+
+=over 4
+
+See L<Mail::Box::File/"Internals">
+
+=back
+
+$obj-E<gt>B<moveAwaySubFolder>(DIRECTORY, EXTENSION)
+
+=over 4
+
+See L<Mail::Box::File/"Internals">
+
+=back
+
+$obj-E<gt>B<parser>
+
+=over 4
+
+See L<Mail::Box::File/"Internals">
+
+=back
+
+$obj-E<gt>B<read>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<readMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<storeMessage>(MESSAGE)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<toBeThreaded>(MESSAGES)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<toBeUnthreaded>(MESSAGES)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<updateMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box::File/"Internals">
+
+=back
+
+$obj-E<gt>B<write>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box::File/"Internals">
+
+=back
+
+$obj-E<gt>B<writeMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+=head2 Other methods
+
+$obj-E<gt>B<timespan2seconds>(TIME)
+
+Mail::Box::Mbox-E<gt>B<timespan2seconds>(TIME)
+
+=over 4
+
+See L<Mail::Box/"Other methods">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Box::Mbox-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Box::Mbox-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Box::Mbox-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Box/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head2 DETAILS
+
+=head1 DETAILS
+
+=head2 How MBOX folders work
+
+MBOX folders store many messages in one file.  Each message begins with a
+line which starts with the string C<From >.  Lines inside a message which
+accidentally start with C<From> are, in the file, preceded by `E<gt>'. This
+character is stripped when the message is read.
+
+In this respect must be noted that the format of the MBOX files is not
+strictly defined.  The exact content of the separator lines differ between
+Mail User Agents (MUA's).  Besides, some MUAs (like mutt) forget to encode
+the C<From > lines within message bodies, breaking other parsers....
+
+=head2 Simulation of sub-folders
+
+MBOX folders do not have a sub-folder concept as directory based folders
+do, but this MBOX module tries to simulate them.  In this implementation
+a directory like
+
+ Mail/subject1/
+
+is taken as an empty folder C<Mail/subject1>, with the folders in that
+directory as sub-folders for it.  You may also use
+
+ Mail/subject1
+ Mail/subject1.d/
+
+where C<Mail/subject1> is the folder, and the folders in the
+C<Mail/subject1.d> directory are used as sub-folders.  If your situation
+is similar to the first example and you want to put messages in that empty
+folder, the directory is automatically (and transparently) renamed, so
+that the second situation is reached.
+
+=head1 DIAGNOSTICS
+
+Error: Cannot append messages to folder file $filename: $!
+
+=over 4
+
+Appending messages to a not-opened file-organized folder may fail when the
+operating system does not allow write access to the file at hand.
+
+=back
+
+Error: Cannot move away sub-folder $dir
+
+=over 4
+
+=back
+
+Warning: Cannot remove folder $name file $filename: $!
+
+=over 4
+
+Writing an empty folder will usually cause that folder to be removed,
+which fails for the indicated reason.  L<new(remove_when_empty)|Mail::Box/"Constructors">
+
+=back
+
+Warning: Cannot remove folder $name file $filename: $!
+
+=over 4
+
+Writing an empty folder will usually cause that folder to be removed,
+which fails for the indicated reason.  L<new(remove_when_empty)|Mail::Box/"Constructors">
+controls whether the empty folder will removed; setting it to false
+(C<0>) may be needed to avoid this message.
+
+=back
+
+Error: Cannot replace $filename by $tempname, to update folder $name: $!
+
+=over 4
+
+The replace policy wrote a new folder file to update the existing, but
+was unable to give the final touch: replacing the old version of the
+folder file for the indicated reason.
+
+=back
+
+Warning: Changes not written to read-only folder $self.
+
+=over 4
+
+You have opened the folder read-only --which is the default set
+by L<new(access)|Mail::Box/"Constructors">--, made modifications, and now want to close it.
+Set L<close(force)|Mail::Box/"The folder"> if you want to overrule the access mode, or close
+the folder with L<close(write)|Mail::Box/"The folder"> set to C<NEVER>.
+
+=back
+
+Error: Copying failed for one message.
+
+=over 4
+
+For some reason, for instance disc full, removed by external process, or
+read-protection, it is impossible to copy one of the messages.  Copying will
+proceed for the other messages.
+
+=back
+
+Error: Destination folder $name is not writable.
+
+=over 4
+
+The folder where the messages are copied to is not opened with write
+access (see L<new(access)|Mail::Box/"Constructors">).  This has no relation with write permission
+to the folder which is controled by your operating system.
+
+=back
+
+Warning: Different messages with id $msgid
+
+=over 4
+
+The message id is discovered more than once within the same folder, but the
+content of the message seems to be different.  This should not be possible:
+each message must be unique.
+
+=back
+
+Error: File too short to get write message $nr ($size, $need)
+
+=over 4
+
+Mail::Box is lazy: it tries to leave messages in the folders until they
+are used, which saves time and memory usage.  When this message appears,
+something is terribly wrong: some lazy message are needed for updating the
+folder, but they cannot be retreived from the original file anymore.  In
+this case, messages can be lost.
+
+This message does appear regularly on Windows systems when using the
+'replace' write policy.  Please help to find the cause, probably something
+to do with Windows incorrectly handling multiple filehandles open in the
+same file.
+
+=back
+
+Error: Folder $name not deleted: not writable.
+
+=over 4
+
+The folder must be opened with write access via L<new(access)|Mail::Box/"Constructors">, otherwise
+removing it will be refused.  So, you may have write-access according to
+the operating system, but that will not automatically mean that this
+C<delete> method permits you to.  The reverse remark is valid as well.
+
+=back
+
+Error: Invalid timespan '$timespan' specified.
+
+=over 4
+
+The string does not follow the strict rules of the time span syntax which
+is permitted as parameter.
+
+=back
+
+Warning: Message-id '$msgid' does not contain a domain.
+
+=over 4
+
+According to the RFCs, message-ids need to contain a unique random part,
+then an C<@>, and then a domain name.  This is made to avoid the creation
+of two messages with the same id.  The warning emerges when the C<@> is
+missing from the string.
+
+=back
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+Error: Unable to create subfolder $name of $folder.
+
+=over 4
+
+The copy includes the subfolders, but for some reason it was not possible
+to copy one of these.  Copying will proceed for all other sub-folders.
+
+=back
+
+Error: Unable to update folder $self.
+
+=over 4
+
+When a folder is to be written, both replace and inplace write policies are
+tried,  If both fail, the whole update fails.  You may see other, related,
+error messages to indicate the real problem.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

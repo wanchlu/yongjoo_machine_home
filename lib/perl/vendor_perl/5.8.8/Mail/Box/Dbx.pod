@@ -1,0 +1,686 @@
+=head1 NAME
+
+Mail::Box::Dbx - read Outlook Express folders
+
+=head1 INHERITANCE
+
+ Mail::Box::Dbx
+   is a Mail::Box::File
+   is a Mail::Box
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ use Mail::Box::Dbx;
+ my $folder = Mail::Box::Dbx->new(...);
+
+=head1 DESCRIPTION
+
+This documentation describes how to read from Outlook Express (dbx)
+folders.  Even on Unix/Linux, you can access these folders to
+read the data, or copy it to a different format.  Modifying of
+xbd files is not supported.
+
+These dbx folders are accessed using Mail::Transport::Dbx which
+is distributed via CPAN as separate package.  This C<MAil::Transport::Dbx>
+module is based on the open source library named C<libpst>, which can
+be found at L<http://alioth.debian.org/projects/libpst/>.  The library does
+not support writing of dbx files, and therefore limits the possibilities
+of this package.
+
+=head1 OVERLOADED
+
+=over 4
+
+=item overload: B<"">
+
+See L<Mail::Box/"OVERLOADED">
+
+=item overload: B<@{}>
+
+See L<Mail::Box/"OVERLOADED">
+
+=item overload: B<cmp>
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+=head1 METHODS
+
+=head2 Constructors
+
+=over 4
+
+=item Mail::Box::Dbx-E<gt>B<new>(OPTIONS)
+
+ -Option           --Defined in     --Default
+  access             Mail::Box        always 'r'
+  body_delayed_type  Mail::Box        Mail::Message::Body::Delayed
+  body_type          Mail::Box::File  <see description>
+  coerce_options     Mail::Box        []
+  create             Mail::Box        not implemented
+  extract            Mail::Box        10240
+  field_type         Mail::Box        undef
+  fix_headers        Mail::Box        <false>
+  folder             Mail::Box        =Folders.dbx
+  folderdir          Mail::Box        .
+  head_delayed_type  Mail::Box        Mail::Message::Head::Delayed
+  head_type          Mail::Box        Mail::Message::Head::Complete
+  keep_dups          Mail::Box        <false>
+  lock_extension     Mail::Box::File  '.lock'
+  lock_file          Mail::Box        <foldername><lock-extension>
+  lock_timeout       Mail::Box        1 hour
+  lock_type          Mail::Box        'NONE'
+  lock_wait          Mail::Box        10 seconds
+  locker             Mail::Box        undef
+  log                Mail::Reporter   'WARNINGS'
+  manager            Mail::Box        undef
+  message_type       Mail::Box        Mail::Box::Dbx::Message
+  multipart_type     Mail::Box        Mail::Message::Body::Multipart
+  remove_when_empty  Mail::Box        not implemented
+  save_on_exit       Mail::Box        not implemented
+  trace              Mail::Reporter   'WARNINGS'
+  trusted            Mail::Box        <depends on folder location>
+  write_policy       Mail::Box::File  not implemented
+
+=over 2
+
+=item access => MODE
+
+=item body_delayed_type => CLASS
+
+=item body_type => CLASS|CODE
+
+=item coerce_options => ARRAY
+
+=item create => BOOLEAN
+
+=item extract => INTEGER | CODE | METHOD | 'LAZY'|'ALWAYS'
+
+=item field_type => CLASS
+
+=item fix_headers => BOOLEAN
+
+=item folder => FOLDERNAME
+
+=item folderdir => DIRECTORY
+
+=item head_delayed_type => CLASS
+
+=item head_type => CLASS
+
+=item keep_dups => BOOLEAN
+
+=item lock_extension => FILENAME|STRING
+
+=item lock_file => FILENAME
+
+=item lock_timeout => SECONDS
+
+=item lock_type => CLASS|STRING|ARRAY
+
+=item lock_wait => SECONDS
+
+=item locker => OBJECT
+
+=item log => LEVEL
+
+=item manager => MANAGER
+
+=item message_type => CLASS
+
+=item multipart_type => CLASS
+
+=item remove_when_empty => BOOLEAN
+
+=item save_on_exit => BOOLEAN
+
+=item trace => LEVEL
+
+=item trusted => BOOLEAN
+
+=item write_policy => 'REPLACE'|'INPLACE'|undef
+
+=back
+
+=back
+
+=head2 The folder
+
+=over 4
+
+=item $obj-E<gt>B<addMessage>(MESSAGE, OPTIONS)
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<addMessages>(MESSAGE [, MESSAGE, ...])
+
+See L<Mail::Box/"The folder">
+
+=item Mail::Box::Dbx-E<gt>B<appendMessages>(OPTIONS)
+
+See L<Mail::Box::File/"METHODS">
+
+=item $obj-E<gt>B<close>(OPTIONS)
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<copyTo>(FOLDER, OPTIONS)
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<delete>(OPTIONS)
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<filename>
+
+See L<Mail::Box::File/"The folder">
+
+=item $obj-E<gt>B<folderdir>([DIRECTORY])
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<name>
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<organization>
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<size>
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<type>
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<update>(OPTIONS)
+
+See L<Mail::Box/"The folder">
+
+=item $obj-E<gt>B<url>
+
+See L<Mail::Box/"The folder">
+
+=back
+
+=head2 Folder flags
+
+=over 4
+
+=item $obj-E<gt>B<access>
+
+See L<Mail::Box/"Folder flags">
+
+=item $obj-E<gt>B<isModified>
+
+See L<Mail::Box/"Folder flags">
+
+=item $obj-E<gt>B<modified>([BOOLEAN])
+
+See L<Mail::Box/"Folder flags">
+
+=item $obj-E<gt>B<writable>
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+=head2 The messages
+
+=over 4
+
+=item $obj-E<gt>B<current>([NUMBER|MESSAGE|MESSAGE-ID])
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<find>(MESSAGE-ID)
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<findFirstLabeled>(LABEL, [BOOLEAN, [ARRAY-OF-MSGS]])
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<message>(INDEX [,MESSAGE])
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<messageId>(MESSAGE-ID [,MESSAGE])
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<messageIds>
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<messages>(['ALL',RANGE,'ACTIVE','DELETED',LABEL,!LABEL,FILTER])
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<nrMessages>(OPTIONS)
+
+See L<Mail::Box/"The messages">
+
+=item $obj-E<gt>B<scanForMessages>(MESSAGE, MESSAGE-IDS, TIMESPAN, WINDOW)
+
+See L<Mail::Box/"The messages">
+
+=back
+
+=head2 Sub-folders
+
+=over 4
+
+=item $obj-E<gt>B<listSubFolders>(OPTIONS)
+
+Mail::Box::Dbx-E<gt>B<listSubFolders>(OPTIONS)
+
+It is advised to set the C<check> flag, because dbx folder often list
+large amounts of folder names which do not really exist.  However, checking
+does consume some time.
+
+ -Option    --Defined in     --Default
+  check       Mail::Box        <false>
+  folder      Mail::Box        <from calling object>
+  folderdir   Mail::Box        <from folder>
+  skip_empty  Mail::Box        <false>
+
+=over 2
+
+=item check => BOOLEAN
+
+=item folder => FOLDERNAME
+
+=item folderdir => DIRECTORY
+
+=item skip_empty => BOOL
+
+=back
+
+=item $obj-E<gt>B<nameOfSubFolder>(SUBNAME, [PARENTNAME])
+
+Mail::Box::Dbx-E<gt>B<nameOfSubFolder>(SUBNAME, [PARENTNAME])
+
+See L<Mail::Box/"Sub-folders">
+
+=item $obj-E<gt>B<openRelatedFolder>(OPTIONS)
+
+See L<Mail::Box/"Sub-folders">
+
+=item $obj-E<gt>B<openSubFolder>(SUBNAME, OPTIONS)
+
+See L<Mail::Box/"Sub-folders">
+
+=item $obj-E<gt>B<topFolderWithMessages>
+
+Mail::Box::Dbx-E<gt>B<topFolderWithMessages>
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+=head2 Internals
+
+=over 4
+
+=item $obj-E<gt>B<coerce>(MESSAGE, OPTIONS)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<create>(FOLDERNAME, OPTIONS)
+
+Mail::Box::Dbx-E<gt>B<create>(FOLDERNAME, OPTIONS)
+
+Creation is not supported for dbx folders.
+
+ -Option   --Defined in--Default
+  folderdir  Mail::Box   undef
+
+=over 2
+
+=item folderdir => DIRECTORY
+
+=back
+
+=item $obj-E<gt>B<determineBodyType>(MESSAGE, HEAD)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<folderToFilename>(FOLDERNAME, FOLDERDIR)
+
+Mail::Box::Dbx-E<gt>B<folderToFilename>(FOLDERNAME, FOLDERDIR)
+
+Translate a folder name into a filename, using the
+FOLDERDIR value to replace a leading C<=>.
+
+=item Mail::Box::Dbx-E<gt>B<foundIn>([FOLDERNAME], [OPTIONS])
+
+If no FOLDERNAME is specified, then the value of the C<folder> option
+is taken.  A dbx folder is a file which name ends on C<.dbx> (case
+insensitive).
+
+ -Option   --Defined in     --Default
+  folder                      undef
+  folderdir  Mail::Box        undef
+
+=over 2
+
+=item folder => FOLDERNAME
+
+=item folderdir => DIRECTORY
+
+=back
+
+=item $obj-E<gt>B<lineSeparator>([STRING|'CR'|'LF'|'CRLF'])
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<locker>
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<messageCreateOptions>([TYPE, CONFIG])
+
+See L<Mail::Box::File/"Internals">
+
+=item $obj-E<gt>B<moveAwaySubFolder>(DIRECTORY, EXTENSION)
+
+See L<Mail::Box::File/"Internals">
+
+=item $obj-E<gt>B<parser>
+
+The parsing of messages is a combined job for the Mail::Transport::Dbx
+module (to get the right data) and L<read()|Mail::Box/"Internals">.  Asking for the parser
+will provide the transporter object.  If asked more than once, each time
+the same object will be returned.
+
+=item $obj-E<gt>B<read>(OPTIONS)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<readMessages>(OPTIONS)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<storeMessage>(MESSAGE)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<toBeThreaded>(MESSAGES)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<toBeUnthreaded>(MESSAGES)
+
+See L<Mail::Box/"Internals">
+
+=item $obj-E<gt>B<updateMessages>(OPTIONS)
+
+See L<Mail::Box::File/"Internals">
+
+=item $obj-E<gt>B<write>(OPTIONS)
+
+See L<Mail::Box::File/"Internals">
+
+=item $obj-E<gt>B<writeMessages>(OPTIONS)
+
+See L<Mail::Box/"Internals">
+
+=back
+
+=head2 Other methods
+
+=over 4
+
+=item $obj-E<gt>B<timespan2seconds>(TIME)
+
+Mail::Box::Dbx-E<gt>B<timespan2seconds>(TIME)
+
+See L<Mail::Box/"Other methods">
+
+=back
+
+=head2 Error handling
+
+=over 4
+
+=item $obj-E<gt>B<AUTOLOAD>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<addReport>(OBJECT)
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Box::Dbx-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<errors>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Box::Dbx-E<gt>B<log>([LEVEL [,STRINGS]])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Box::Dbx-E<gt>B<logPriority>(LEVEL)
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<logSettings>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<notImplemented>
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<report>([LEVEL])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<reportAll>([LEVEL])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<trace>([LEVEL])
+
+See L<Mail::Reporter/"Error handling">
+
+=item $obj-E<gt>B<warnings>
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+=over 4
+
+=item $obj-E<gt>B<DESTROY>
+
+See L<Mail::Box/"Cleanup">
+
+=item $obj-E<gt>B<inGlobalDestruction>
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head2 DETAILS
+
+=head3 File based folders
+
+=head1 DETAILS
+
+=head2 Different kinds of folders
+
+=head2 Available folder types
+
+=head2 Folder class implementation
+
+=head2 How DBX folders work
+
+DBX files are create by Outlook Express.  I can not tell you too much
+about it, because me (as author) never use Windows or MicroSoft tools.
+Still, it is possible to access some Outlook created folders from Unix.
+
+The folder structure for dbx starts with a single C<Folders.dbx>
+file.  This folder contains names of sub-folders.  Each folder can
+either contain messages, or contains sub-folders.  Combinations are
+not possible.
+
+=head2 This implementation
+
+The ol2mbox project (see L<http://sourceforge.net/project/ol2mbox/>)
+has created a C<libdbx> which can read dbx files using nearly any
+operating system.  You can simply transport a dbx file from Windows
+to Unix/Linux and the read all the messages from it.
+
+Tassilo von Parseval wrote a Perl wrapper around this C-library,
+and distributes it as Mail::Transport::Dbx.  Although it named in
+one the MailBox namespaces, it is a separate product, because it
+requires a C compiler.  Besides, the module will have its own life.
+
+=head2 Converting DBX folders to MBOX
+
+The title of this section is to attract your attension, but is does
+not describe anything special related to DBX or MBOX: you can convert
+any kind of mail folder into another with the following code.
+
+=head1 DIAGNOSTICS
+
+=over 4
+
+=item Error: Cannot append messages to folder file $filename: $!
+
+Appending messages to a not-opened file-organized folder may fail when the
+operating system does not allow write access to the file at hand.
+
+=item Error: Cannot move away sub-folder $dir
+
+=item Error: Cannot read dbx folder file $filename.
+
+=item Warning: Cannot remove folder $name file $filename: $!
+
+Writing an empty folder will usually cause that folder to be removed,
+which fails for the indicated reason.  L<new(remove_when_empty)|Mail::Box/"Constructors">
+
+=item Warning: Cannot remove folder $name file $filename: $!
+
+Writing an empty folder will usually cause that folder to be removed,
+which fails for the indicated reason.  L<new(remove_when_empty)|Mail::Box/"Constructors">
+controls whether the empty folder will removed; setting it to false
+(C<0>) may be needed to avoid this message.
+
+=item Error: Cannot replace $filename by $tempname, to update folder $name: $!
+
+The replace policy wrote a new folder file to update the existing, but
+was unable to give the final touch: replacing the old version of the
+folder file for the indicated reason.
+
+=item Warning: Changes not written to read-only folder $self.
+
+You have opened the folder read-only --which is the default set
+by L<new(access)|Mail::Box/"Constructors">--, made modifications, and now want to close it.
+Set L<close(force)|Mail::Box/"The folder"> if you want to overrule the access mode, or close
+the folder with L<close(write)|Mail::Box/"The folder"> set to C<NEVER>.
+
+=item Error: Copying failed for one message.
+
+For some reason, for instance disc full, removed by external process, or
+read-protection, it is impossible to copy one of the messages.  Copying will
+proceed for the other messages.
+
+=item Warning: Dbx folders are read-only.
+
+=item Error: Destination folder $name is not writable.
+
+The folder where the messages are copied to is not opened with write
+access (see L<new(access)|Mail::Box/"Constructors">).  This has no relation with write permission
+to the folder which is controled by your operating system.
+
+=item Warning: Different messages with id $msgid
+
+The message id is discovered more than once within the same folder, but the
+content of the message seems to be different.  This should not be possible:
+each message must be unique.
+
+=item Error: File too short to get write message $nr ($size, $need)
+
+Mail::Box is lazy: it tries to leave messages in the folders until they
+are used, which saves time and memory usage.  When this message appears,
+something is terribly wrong: some lazy message are needed for updating the
+folder, but they cannot be retreived from the original file anymore.  In
+this case, messages can be lost.
+
+This message does appear regularly on Windows systems when using the
+'replace' write policy.  Please help to find the cause, probably something
+to do with Windows incorrectly handling multiple filehandles open in the
+same file.
+
+=item Error: Folder $name not deleted: not writable.
+
+The folder must be opened with write access via L<new(access)|Mail::Box/"Constructors">, otherwise
+removing it will be refused.  So, you may have write-access according to
+the operating system, but that will not automatically mean that this
+C<delete> method permits you to.  The reverse remark is valid as well.
+
+=item Error: Invalid timespan '$timespan' specified.
+
+The string does not follow the strict rules of the time span syntax which
+is permitted as parameter.
+
+=item Warning: Message-id '$msgid' does not contain a domain.
+
+According to the RFCs, message-ids need to contain a unique random part,
+then an C<@>, and then a domain name.  This is made to avoid the creation
+of two messages with the same id.  The warning emerges when the C<@> is
+missing from the string.
+
+=item Error: Package $package does not implement $method.
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=item Error: Unable to create subfolder $name of $folder.
+
+The copy includes the subfolders, but for some reason it was not possible
+to copy one of these.  Copying will proceed for all other sub-folders.
+
+=item Error: Unable to update folder $self.
+
+When a folder is to be written, both replace and inplace write policies are
+tried,  If both fail, the whole update fails.  You may see other, related,
+error messages to indicate the real problem.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.097,
+built on January 26, 2011. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2011 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

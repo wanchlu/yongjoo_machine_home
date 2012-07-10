@@ -1,0 +1,11 @@
+\subsubsection{Extract ngrams from document and create network}
+
+\begin{boxedverbatim}
+ input: document
+ output: stats
+
+ extract_ngrams.pl -r "$CLAIRLIB/corpora/1984/1984.txt" \
+   -f text -w 1984.2gram -N 2 -sort -v
+ print_network_stats -i 1984.2gram -v --all --sample 100 \
+   --sample-type forestfire > 1984.2gram.stats
+\end{boxedverbatim}

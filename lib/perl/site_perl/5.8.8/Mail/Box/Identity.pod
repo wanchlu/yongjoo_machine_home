@@ -1,0 +1,629 @@
+=head1 NAME
+
+Mail::Box::Identity - represents an unopened folder
+
+=head1 INHERITANCE
+
+ Mail::Box::Identity
+   is a User::Identity::Item
+
+ Mail::Box::Identity
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ use User::Identity;
+ use Mail::Box::Identity;
+ my $me   = User::Identity->new(...);
+
+ my $mailbox = Mail::Box::Identity->new(...);
+ $me->add(folders => $mailbox);
+
+ # Simpler
+
+ use User::Identity;
+ my $me   = User::Identity->new(...);
+ my $addr = $me->add(folders => ...);
+
+=head1 DESCRIPTION
+
+The C<Mail::Box::Identity> object contains the description of a
+single mailbox.  The mailboxes are collected by an L<Mail::Box::Collection|Mail::Box::Collection>
+object.  This corresponds with IMAP's C<\NoSelect>, for instance.
+
+Nearly all methods can return undef.
+
+=head1 METHODS
+
+=head2 Constructors
+
+Mail::Box::Identity-E<gt>B<new>([NAME], OPTIONS)
+
+=over 4
+
+ Option     --Defined in     --Default
+ deleted                       <false>
+ description  User::Identity::Item  undef
+ folder_type                   from parent
+ inferiors                     1
+ location                      undef
+ log          Mail::Reporter   'WARNINGS'
+ manager                       <from parent>
+ marked                        undef
+ name         User::Identity::Item  <required>
+ only_subs                     <foldertype and name dependent>
+ parent       User::Identity::Item  undef
+ subf_type                     <same as parent>
+ trace        Mail::Reporter   'WARNINGS'
+
+. deleted => BOOLEAN
+
+=over 4
+
+The folder is flagged for deletion.  This not have any implications yet,
+because it may still get undeleted.
+
+=back
+
+. description => STRING
+
+. folder_type => CLASS
+
+. inferiors => BOOLEAN
+
+=over 4
+
+Can this folder have childs?  If not, this is cleared.
+
+=back
+
+. location => DIRECTORY|FILENAME
+
+=over 4
+
+The location of this folder.  Often, only the manager can figure-out
+where this folder really is.
+
+=back
+
+. log => LEVEL
+
+. manager => OBJECT
+
+=over 4
+
+Any L<Mail::Box::Manager|Mail::Box::Manager> or L<Mail::Box::Manage::User|Mail::Box::Manage::User> OBJECT.
+
+=back
+
+. marked => BOOLEAN|C<undef>
+
+=over 4
+
+Whether the folder is flagged for some reason, for instance because
+new messages have arrived.
+
+=back
+
+. name => STRING
+
+. only_subs => BOOLEAN
+
+=over 4
+
+Some folder types can have messages in their toplevel folder, other
+cannot. That determines the default.
+See L<Mail::Box::topFolderWithMessages()|Mail::Box/"Sub-folders">
+
+=back
+
+. parent => OBJECT
+
+. subf_type => CLASS
+
+=over 4
+
+The type for a subfolder collection, must extend CLASS
+L<Mail::Box::Collection|Mail::Box::Collection>.
+
+=back
+
+. trace => LEVEL
+
+=back
+
+=head2 Attributes
+
+$obj-E<gt>B<deleted>({BOOLEAN])
+
+=over 4
+
+=back
+
+$obj-E<gt>B<description>
+
+=over 4
+
+See L<User::Identity::Item/"Attributes">
+
+=back
+
+$obj-E<gt>B<folderType>
+
+=over 4
+
+Returns the type of this folder.
+
+=back
+
+$obj-E<gt>B<fullname>([DELIMETER])
+
+=over 4
+
+Returns the name of the folder, from the toplevel until this one, with
+the DELIMETER string between each level.  DELIMETER default to a forward
+slash (a C</>).
+
+=back
+
+$obj-E<gt>B<inferiors>([BOOLEAN])
+
+=over 4
+
+C<Inferiors> are C<subfolders>.  When this flag is set, it is permitted
+to create subfolders.
+
+=back
+
+$obj-E<gt>B<location>([FILENAME|DIRECTORY|undef])
+
+=over 4
+
+Returns the directory or filename of the folder.  If this is not pre-defined,
+it is computed based on the knowledge about the folder type.  Be sure to set
+the location of the toplevel folder to the folderdir of the user to get
+this to work.
+
+=back
+
+$obj-E<gt>B<manager>
+
+=over 4
+
+Returns the manager (usually a L<Mail::Box::Manage::User|Mail::Box::Manage::User> which owns
+the folders.  May be undefined, by default from parent.
+
+=back
+
+$obj-E<gt>B<marked>([BOOLEAN|undef])
+
+=over 4
+
+When something special has happened with the folder, this flag can
+be set (or cleared).  The C<undef> status is an "unknown".  In the
+IMAP4 protocol, C<0> will result in a C<\Unmarked>, a C<1> results
+in a C<\Marked>, and C<undef> in nothing.
+
+=back
+
+$obj-E<gt>B<name>([NEWNAME])
+
+=over 4
+
+See L<User::Identity::Item/"Attributes">
+
+=back
+
+$obj-E<gt>B<onlySubfolders>([BOOLEAN])
+
+=over 4
+
+Than this folder be opened (without trying) or not?  The default
+depends on the folder type, and whether this is the toplevel folder
+or not.  See L<Mail::Box::topFolderWithMessages()|Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<topfolder>
+
+=over 4
+
+Run up the tree to find the highest level folder.
+
+=back
+
+=head2 Collections
+
+$obj-E<gt>B<add>(COLLECTION, ROLE)
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<addCollection>(OBJECT | ([TYPE], OPTIONS))
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<collection>(NAME)
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<find>(COLLECTION, ROLE)
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<parent>([PARENT])
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<removeCollection>(OBJECT|NAME)
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<type>
+
+Mail::Box::Identity-E<gt>B<type>
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+$obj-E<gt>B<user>
+
+=over 4
+
+See L<User::Identity::Item/"Collections">
+
+=back
+
+=head2 Attributes
+
+=head2 Subfolders
+
+$obj-E<gt>B<addSubfolder>(L<Mail::Box::Identity|Mail::Box::Identity>|DATA)
+
+=over 4
+
+Add a new folder into the administration.  With DATA, a new object
+will be instantiated first.  The identity is returned on success.
+
+=back
+
+$obj-E<gt>B<folder>([[NAME, ...], NAME])
+
+=over 4
+
+Returns the subfolder's object with NAME or C<undef> if it does not
+exist.  When multiple NAMEs are added, those super folders are traverst
+first.  Without any NAME, the current object is returned
+
+example: get some folder
+
+ my $a = $user->folders->folder('b', 'a');
+
+ my $name  = "a:b:c";
+ my $delim = ":";
+ my $f = $user->folders->folder(split $delim, $name);
+
+=back
+
+$obj-E<gt>B<foreach>(CODE)
+
+=over 4
+
+For each of the subfolders found below this point call CODE.  This current
+folder is called first.  Be warned that you may find identities with
+the L<deleted()|Mail::Box::Identity/"Attributes"> flag on.
+
+=back
+
+$obj-E<gt>B<open>(OPTIONS)
+
+=over 4
+
+Open the folder which is described by this identity.  Returned is some
+L<Mail::Box|Mail::Box>.  The options are passed to L<Mail::Box::Manager::open()|Mail::Box::Manager/"Manage open folders">.
+
+=back
+
+$obj-E<gt>B<remove>([NAME])
+
+=over 4
+
+Remove the folder (plus subfolders) with the NAME.  Without NAME, this
+C<Mail::Box::Identity> itself is removed.
+
+The removed structure is returned, which is C<undef> if not
+found.  This is only an administrative remove, you still need a
+L<Mail::Box::Manager::delete()|Mail::Box::Manager/"Manage existing folders">.
+
+=back
+
+$obj-E<gt>B<rename>(FOLDER, [NEWSUBNAME])
+
+=over 4
+
+Move the folder to a different super-FOLDER, under a NEW SUBfolder NAME.
+
+example: renaming a folder
+
+ my $top = $user->topfolder;
+ my $new = $top->folder('xyz') or die;
+ my $f   = $top->folder('abc', 'def')->rename($new, '123');
+
+ print $f->name;      # 123
+ print $f->fullname;  # =/xyz/123
+
+=back
+
+$obj-E<gt>B<subfolderNames>
+
+=over 4
+
+Convenience method: returns the names of the collected subfolders.
+
+=back
+
+$obj-E<gt>B<subfolders>
+
+=over 4
+
+Returns the subfolders or C<undef> if there are none.  This
+information is lazy evaluated and cached.  In LIST context, the folder
+objects are returned (L<Mail::Box::Identity|Mail::Box::Identity> objects), in SCALAR context
+the collection, the L<Mail::Box::Collection|Mail::Box::Collection>.
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Box::Identity-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Box::Identity-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Box::Identity-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DIAGNOSTICS
+
+Error: $object is not a collection.
+
+=over 4
+
+The first argument is an object, but not of a class which extends
+L<User::Identity::Collection|User::Identity::Collection>.
+
+=back
+
+Error: Cannot load collection module for $type ($class).
+
+=over 4
+
+Either the specified $type does not exist, or that module named $class returns
+compilation errors.  If the type as specified in the warning is not
+the name of a package, you specified a nickname which was not defined.
+Maybe you forgot the 'require' the package which defines the nickname.
+
+=back
+
+Error: Creation of a collection via $class failed.
+
+=over 4
+
+The $class did compile, but it was not possible to create an object
+of that class using the options you specified.
+
+=back
+
+Error: Don't know what type of collection you want to add.
+
+=over 4
+
+If you add a collection, it must either by a collection object or a
+list of options which can be used to create a collection object.  In
+the latter case, the type of collection must be specified.
+
+=back
+
+Error: It is not permitted to add subfolders to $name
+
+=over 4
+
+The L<inferiors()|Mail::Box::Identity/"Attributes"> flag prohibits the creation of subfolders to this
+folder.
+
+=back
+
+Warning: No collection $name
+
+=over 4
+
+The collection with $name does not exist and can not be created.
+
+=back
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+Error: The toplevel folder cannot be removed this way
+
+=over 4
+
+The L<Mail::Box::Identity|Mail::Box::Identity> folder administration structure requires
+a top directory.  That top is registered somewhere (for instance
+by a L<Mail::Box::Manage::User|Mail::Box::Manage::User>).  If you need to remove the top,
+you have to look for a method of that object.
+
+=back
+
+Error: Toplevel directory requires explicit folder type
+
+=over 4
+
+=back
+
+Error: Toplevel directory requires explicit location
+
+=over 4
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

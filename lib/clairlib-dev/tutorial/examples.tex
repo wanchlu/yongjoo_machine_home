@@ -1,0 +1,420 @@
+\let\oldboxedverbatim=\boxedverbatim
+\renewcommand{\boxedverbatim}{\footnotesize\oldboxedverbatim}
+
+\subsection{List of Recipes}
+
+\begin{itemize}
+\item Unit Tests
+
+\begin{itemize}
+  \item test\_aleextract.t
+
+ Using ALE, extract a corpus in a DB and perform several
+ searches on it 
+  \item test\_alesearch.t
+
+ From a small set of documents, build an ALE DB and do some
+ searches 
+  \item test\_biased\_lexrank.t
+
+ Computes the lexrank value of a network given bias sentences 
+  \item test\_centrality.t
+
+  \item test\_cidr.t
+
+ Verify CIDR functionality, document sketches, cluster
+ insertion, clustering  
+  \item test\_cidrwrapper.t
+
+ Using CIDR::Wrapper, add a document cluster and verify
+ clustering 
+  \item test\_cluster.t
+
+ Test many basic functions of the Cluster class, including
+ Document insertion, Network generation, and more. 
+  \item test\_compare\_idf.t
+
+ Compare results of Clair::Util idf calculations with
+ those performed by the build\_idf script 
+  \item test\_connection.t
+
+ As part of Bio, test many basic functions of Connection,
+ such as abstract retrieval, citation network analysis, etc.
+  \item test\_corpus\_download.t
+
+ Test CorpusDownload, downloading a corpus and checking the
+ produced TF and IDF against expected results 
+  \item test\_document\_idf.t
+
+ Test the values assigned to various words in a generated IDF 
+  \item test\_document.t
+
+ Test basic Document functionality: stripping, splitting,
+ TF generation, filtering, etc. 
+  \item test\_esearchhandler.t
+
+ Test Bio's ESearchHandler against a reference XML parser 
+  \item test\_esearch.t
+
+ Perform a few basic ESearch queries 
+  \item test\_eutils.t
+
+ Test Clair::Bio::EUtils' hash2args and build\_url 
+  \item test\_generif.t
+
+ Test Clair::Bio::GeneRIF's basic record retrieval functions 
+  \item test\_gen.t
+
+ Test some statistical computations using Clair::Gen 
+  \item test\_girvanNewman.t
+
+ Test GirvanNewman algorithm on Karate data
+  \item test\_graf.t
+
+ As part of Clair::Polisci, test basic Graf functions like
+ to\_document 
+  \item test\_hyperlink.t
+
+ Test the ability to generate a hyperlink-based network from
+ a small document cluster 
+  \item test\_idf.t
+
+ Test TF and IDF functions drawing on a pre-downloaded corpus 
+  \item test\_kernighanLin.t
+
+  \item test\_lexrank2.t
+
+ Computes lexrank from a stemmed line-based cluster 
+  \item test\_lexrank3.t
+
+ Computes lexrank from line-based, stripped and stemmed
+ cluster 
+  \item test\_lexrank4.t
+
+ Based on an interactive script, this test builds a sentence-
+ based cluster, then a network, computes lexrank, and then
+ runs MMR on it 
+  \item test\_lexrank\_large\_mxt.t
+
+ Test lexrank calculation on a network having used MxTerminator
+ as the tool to split sentences. 
+  \item test\_lexrank\_large.t
+
+ Test lexrank calculation on a network having used
+ Text::Sentence as the tool to split sentences 
+  \item test\_lexrank.t
+
+ Computes lexrank on a small network 
+  \item test\_linear\_algebra.t
+
+ A variety of arithmetic tests of the linear algebra module 
+  \item test\_mead\_summary.t
+
+ Tests the ability of Clair::MEAD::Summary to preserve
+ features of sentences and other basic functions 
+  \item test\_meadwrapper\_mxt.t
+
+ Test basic Clair::MEAD::Wrapper functions, such as
+ summarization, varying compression ratios, feature sorting,
+ etc., having assumed the use of MxTerminator as a sentence
+ splitting tool 
+  \item test\_meadwrapper.t
+
+ Test basic Clair::MEAD::Wrapper functions, such as
+ summarization, varying compression ratios, feature sorting,
+ etc., having assumed the use of Text::Sentence as a sentence
+ splitting tool 
+  \item test\_mmr.t
+
+ Tests the lexrank mmr reranker on a network   
+  \item test\_network\_adamic.t
+
+ Test the function of adamic/adar value in a network.
+  \item test\_network\_reader.t
+
+ Test basic Network functionality, such as node/edge addition
+ and removal, path generation, statistics, matlab graphics
+ generation, etc.
+  \item test\_network\_stat.t
+
+ Generates a network, then computes and displays a large          
+ number of network statistics 
+  \item test\_network.t
+
+ Test basic Network functionality, such as node/edge addition
+ and removal, path generation, statistics, matlab graphics
+ generation, etc. 
+  \item test\_networkwrapper\_docs.t
+
+ Test the NetworkWrapper's lexrank generation for a small
+ cluster of documents 
+  \item test\_networkwrapper\_sents.t
+
+ Test the NetworkWrapper's lexrank generation for a small        
+ cluster of documents built from an array of sentences 
+  \item test\_pagerank.t
+
+ Creates a small cluster and runs pagerank, confirming
+ the pagerank distribution
+  \item test\_parse.t
+
+ Parses an input file and then runs chunklink on it, confirming
+ the result 
+  \item test\_random\_walk.t
+
+ Creates a network, assigns initial probabilities and tests
+ taking single steps and calculating stationary distribution 
+  \item test\_record.t
+
+ As part of Clair::Polisci, confirm Record's Graf selection
+ functionalities, as well as conversion functions. 
+  \item test\_sentence\_combiner.t
+
+ Test a variety of sentence-oriented Document functions, such
+ as sentence scoring, and combining sentence feature scores 
+  \item test\_sentence\_features\_cluster.t
+
+ Test the propagation of feature scores between sentences
+ related to each other through clusters. 
+  \item test\_sentence\_features\_subs.t
+
+ Test the assignment of standard features, such as length,
+ position, and centroid, to sentences in a small Document 
+  \item test\_sentence\_features.t
+
+ Using a short document, test many sentence feature functions 
+  \item test\_speaker.t
+
+ As part of Clair::Polisci, confirm Speaker object equality
+ functions 
+  \item test\_summary.t
+
+ Test many basic functions of Document for summarization,
+ varying summarization ratio, order conditions, as well as
+ test Cluster's summarization functions 
+  \item test\_us\_connection.t
+
+ Test the Clair::Polisci::US::Connection class and the
+ contents of the underlying DB.  This test is not intended
+ for general distribution (i.e. you may not have it in your
+ copy of clairlib) 
+  \item test\_web\_search.t
+
+ Test Clair::Utils::WebSearch and its use of the Google
+ search API for returning varying numbers of webpages
+ in response to queries 
+  \item test\_xmldoc.t
+
+ Test the get\_text and get\_sent functions of Document, basing
+ them on an XML file input to Document 
+  \item test\_aleextract.t
+
+ Using ALE, extract a corpus in a DB and perform several
+ searches on it 
+  \item test\_alesearch.t
+
+ From a small set of documents, build an ALE DB and do some
+ searches 
+  \item test\_lexrank\_large\_mxt.t
+
+ Test lexrank calculation on a network having used MxTerminator
+ as the tool to split sentences. 
+  \item test\_meadwrapper\_mxt.t
+
+ Test basic Clair::MEAD::Wrapper functions, such as
+ summarization, varying compression ratios, feature sorting,
+ etc., having assumed the use of MxTerminator as a sentence
+ splitting tool 
+  \item test\_web\_search.t
+
+ Test Clair::Utils::WebSearch and its use of the Google
+ search API for returning varying numbers of webpages
+ in response to queries 
+\end{itemize}
+
+\item Example Tests
+
+\begin{itemize}
+  \item biased\_lexrank.pl
+
+ Computes the lexrank value of a network given bias sentences
+  \item cfnetwork\_basic.pl
+
+ Creates a small network to demonstrate the CFNetwork object
+  \item cfnetwork\_weighted.pl
+
+ Creates a small weighted network to demonstrate
+ the CFNetwork object
+  \item cidr.pl
+
+ Creates a CIDR from input files and writes sample
+ centroid files 
+  \item classify.pl
+
+ Classifies the test documents using the perceptron parameters
+ calculated previously; requires that learn.pl has been run
+  \item classify\_weka.pl
+
+ Extracts bag-of-words features from each document
+ in a training corpus of baseball and hockey documents,
+ then trains and evaluates a Weka decision tree classifier,
+ saving its output to files
+  \item cluster.pl
+
+ Creates a cluster, a sentence-based network from it,
+ calculates a binary cosine and builds a network based
+ on the cosine, then exports it to Pajek 
+  \item compare\_idf.pl
+
+ Compares results of Clair::Util idf calculations with
+ those performed by the build\_idf script 
+  \item corpusdownload\_hyperlink.pl
+
+ Downloads a corpus and creates a network based on the
+ hyperlinks between the webpages
+  \item corpusdownload\_list.pl
+
+ Downloads a corpus and makes stemmed and unstemmed IDFs
+  and TFs
+  \item corpusdownload.pl
+
+ Downloads a corpus from a file containing URLs;
+  makes IDFs and TFs
+  \item document\_idf.pl
+
+ Loads documents from an input dir; strips and stems them,
+ and then builds an IDF from them 
+  \item document.pl
+
+ Creates Documents from strings, files, strips and stems them,
+ splits them into lines, sentences, counts words, saves them 
+  \item features\_io.pl
+
+ Same as features.pl BUT, outputs the train data set as
+ document and feature vectors in svm\_light format, reads
+ the svm\_light formatted file and converts it to perl hash
+  \item features.pl
+
+ Reads docs from input/features/train, calculates chi-squared
+ values for all extracted features, shows ways to retrieve
+ those features
+  \item features\_traintest.pl
+
+ Builds the feature vector for training and testing datasets,
+ and is a prerequisite for learn.pl and classify.pl
+  \item genericdoc.pl
+
+ Tests parsing of simple text/html file/string, conversion
+ into xml file, instantiation via constructor and morph()
+  \item html.pl
+
+ Tests the html stripping functionality in Documents 
+  \item hyperlink.pl
+
+ Makes and populates a cluster, builds a network from
+  hyperlinks between them; then tests making a subset
+  \item idf.pl
+
+ Creates a cluster from some input files, then builds an idf
+ from the lines of the documents 
+  \item index\_dirfiles\_incremental.pl
+
+ Tests index update using Index/dirfiles.pm; requires
+ index\_dirfiles.pl to be run previously
+  \item index\_dirfiles.pl
+
+ Tests index update using Index/dirfiles.pm, index is created
+ in produces/index\_dirfiles, complementary to index\_mldbm.pl
+  \item index\_mldbm\_incremental.pl
+
+ Tests index update using Index/mldbm.pm; requires that
+ index\_mldbm.pl was run previously
+  \item index\_mldbm.pl
+
+ Tests index creation using Index/mldbm.pm, outputs stats,
+ uses input/index/Shakespear, creates produces/index\_mldbm
+  \item ir.pl
+
+ Builds a corpus from some text files, then makes an IDF, a
+ TF, and outputs some information from them
+  \item learn.pl
+
+ Uses feature vectors in the svm\_light format and calculates
+ and saves perceptron parameters; needs features\_traintest.pl
+  \item lexrank2.pl
+
+ Computes lexrank from a stemmed line-based cluster
+  \item lexrank3.pl
+
+ Computes lexrank from line-based, stripped and stemmed
+ cluster
+  \item lexrank4.pl
+
+ Based on an interactive script, this test builds a sentence-
+ based cluster, then a network, computes lexrank, and then
+ runs MMR on it 
+  \item lexrank\_large.pl
+
+ Builds a cluster from a set of files, computes a cosine matrix
+ and then lexrank, then creates a network and a cluster using
+ a lexrank-based threshold of 0.2
+  \item lexrank.pl
+
+ Computes lexrank on a small network
+  \item linear\_algebra.pl
+
+ A variety of arithmetic tests of the linear algebra module 
+  \item lsi.pl
+
+ Constructs a latent semantic index from a corpus of
+ baseball and hockey documents, then uses that index
+ to map terms, queries, and documents to latent semantic
+ space. The position vectors of documents in that space
+ are then used to train and evaluate a SVM classifier
+ using the Weka interface provided in Clair::Interface::Weka
+  \item mead\_summary.pl
+
+ Tests MEAD's summarizer on a cluster of two documents,
+ prints features for each sentence of the summary 
+  \item mega.pl
+
+ Downloads documents using CorpusDownload, then makes IDFs,
+ TFs, builds a cluster from them, a network based on a
+ binary cosine, and tests the network for a couple of
+ properties
+  \item mmr.pl
+
+ Tests the lexrank reranker on a network  
+  \item networkstat.pl
+
+ Generates a network, then computes and displays a large
+ number of network statistics 
+  \item pagerank.pl
+
+ Creates a small cluster and runs pagerank, displaying
+ the pagerank distribution
+  \item parse.pl
+
+ Parses an input file and then runs chunklink on it 
+  \item query.pl
+
+ Requires indexes to be built via index\_*.pl scripts, shows
+ queries implemented in Clair::Info::Query, single-word and
+ phrase queries, meta-data retrieval methods
+  \item random\_walk.pl
+
+ Creates a network, assigns initial probabilities and tests
+ taking single steps and calculating stationary distribution 
+  \item read\_dirfiles.pl
+
+ Requires index\_*.pl scripts to have been run, shows how to
+ access the document\_index and the inverted\_index, how to
+ use common access API to retrieve information
+  \item sampling.pl
+
+ Exercises network sampling using RandomNode and ForestFire 
+  \item statistics.pl
+
+ Tests linear regression and T test code 
+  \item stem.pl
+

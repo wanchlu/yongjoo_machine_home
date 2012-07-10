@@ -1,0 +1,32 @@
+\subsection{Generate a random document from bigrams using Random Walk}
+In this tutorial you'll learn how to use Clairlib to generate a random document by first extracting the bigrams of that document then build a network out of these bigrams and perform a random walk on that graph printing the words as the corresponding nodes are visited. The transition probabilities on the edges depend on the frequency of the bigrams.
+
+To do this, we will use the utility \emph{bigrams\_to\_random\_doc.pl} and the text file \emph{11sent.txt}. For information on the usage of \emph{bigrams\_to\_random\_doc.pl}, run
+\\
+\\
+\begin{boxedverbatim}
+ bigrams_to_random_doc.pl --help
+\end{boxedverbatim}
+\\
+\\
+First, extract the bigrams from \emph{11sent.txt} by running
+\\
+\\
+\begin{boxedverbatim}
+ extract_ngrams.pl -r "11sent.txt" -f text -w 11sent.2grams \
+ -N 2 --segment --verbose
+\end{boxedverbatim}
+\\
+\\
+The \emph{--segment} option here tells the script to segment the text into sentences and add the delimiter \emph{<s>} at the end of each sentence.
+
+Then run \emph{bigrams\_to\_random\_doc.pl}
+\\
+\\
+\begin{boxedverbatim}
+ bigrams_to_rand_doc.pl --input 11sent.2grams \
+ --output 11sent.synth --size 5 --delim <s>
+\end{boxedverbatim}
+\\
+\\
+This will generate a random document of 5 sentences maximum. 

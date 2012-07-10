@@ -1,0 +1,833 @@
+=head1 NAME
+
+Mail::Box::Net - handle folders which are stored remote.
+
+=head1 INHERITANCE
+
+ Mail::Box::Net
+   is a Mail::Box
+   is a Mail::Reporter
+
+ Mail::Box::Net is extended by
+   Mail::Box::IMAP4
+   Mail::Box::POP3
+
+=head1 SYNOPSIS
+
+ # Do not instantiate this object directly
+
+=head1 DESCRIPTION
+
+At the moment, this object is extended by
+
+=over 4
+
+=item * L<Mail::Box::POP3|Mail::Box::POP3>
+
+Implements the POP3 protocol.
+
+=item * L<Mail::Box::IMAP4|Mail::Box::IMAP4>
+
+Implements the IMAP4 protocol.  B<UNDER DEVELOPMENT>
+
+=back
+
+=head1 OVERLOADED
+
+overload: B<"">
+
+=over 4
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+overload: B<@{}>
+
+=over 4
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+overload: B<cmp>
+
+=over 4
+
+See L<Mail::Box/"OVERLOADED">
+
+=back
+
+=head1 METHODS
+
+=head2 Constructors
+
+Mail::Box::Net-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+ Option           --Defined in     --Default
+ access             Mail::Box        'r'
+ body_delayed_type  Mail::Box        Mail::Message::Body::Delayed
+ body_type          Mail::Box        Mail::Message::Body::Lines
+ coerce_options     Mail::Box        []
+ create             Mail::Box        <false>
+ extract            Mail::Box        10240
+ field_type         Mail::Box        undef
+ fix_headers        Mail::Box        <false>
+ folder             Mail::Box        '/'
+ folderdir          Mail::Box        <not used>
+ head_delayed_type  Mail::Box        Mail::Message::Head::Delayed
+ head_type          Mail::Box        Mail::Message::Head::Complete
+ keep_dups          Mail::Box        <false>
+ lock_file          Mail::Box        undef
+ lock_timeout       Mail::Box        1 hour
+ lock_type          Mail::Box        'NONE'
+ lock_wait          Mail::Box        10 seconds
+ locker             Mail::Box        undef
+ log                Mail::Reporter   'WARNINGS'
+ manager            Mail::Box        undef
+ message_type       Mail::Box        Mail::Box::Message
+ multipart_type     Mail::Box        Mail::Message::Body::Multipart
+ password                            undef
+ remove_when_empty  Mail::Box        <false>
+ save_on_exit       Mail::Box        <true>
+ server_name                         undef
+ server_port                         undef
+ trace              Mail::Reporter   'WARNINGS'
+ trusted            Mail::Box        <false>
+ username                            undef
+
+. access => MODE
+
+. body_delayed_type => CLASS
+
+. body_type => CLASS|CODE
+
+. coerce_options => ARRAY
+
+. create => BOOLEAN
+
+. extract => INTEGER | CODE | METHOD | 'LAZY'|'ALWAYS'
+
+. field_type => CLASS
+
+. fix_headers => BOOLEAN
+
+. folder => FOLDERNAME
+
+. folderdir => DIRECTORY
+
+. head_delayed_type => CLASS
+
+. head_type => CLASS
+
+. keep_dups => BOOLEAN
+
+. lock_file => FILENAME
+
+. lock_timeout => SECONDS
+
+. lock_type => CLASS|STRING|ARRAY
+
+. lock_wait => SECONDS
+
+. locker => OBJECT
+
+. log => LEVEL
+
+. manager => MANAGER
+
+. message_type => CLASS
+
+. multipart_type => CLASS
+
+. password => STRING
+
+=over 4
+
+The password which is required to contact the remote server.
+
+=back
+
+. remove_when_empty => BOOLEAN
+
+. save_on_exit => BOOLEAN
+
+. server_name => HOSTNAME
+
+=over 4
+
+The name of the host which contains the remote mail server.
+
+=back
+
+. server_port => INTEGER
+
+=over 4
+
+Port number in use by the server application.
+
+=back
+
+. trace => LEVEL
+
+. trusted => BOOLEAN
+
+. username => STRING
+
+=over 4
+
+The username which is to be used for the remote server.
+
+=back
+
+=back
+
+=head2 The folder
+
+$obj-E<gt>B<addMessage>(MESSAGE, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<addMessages>(MESSAGE [, MESSAGE, ...])
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+Mail::Box::Net-E<gt>B<appendMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<close>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<copyTo>(FOLDER, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<delete>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<folderdir>([DIRECTORY])
+
+=over 4
+
+Not applicatable for folders on a remote server, so will always return
+the C<undef>.
+
+=back
+
+$obj-E<gt>B<name>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<organization>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<size>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<type>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<update>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+$obj-E<gt>B<url>
+
+=over 4
+
+See L<Mail::Box/"The folder">
+
+=back
+
+=head2 Folder flags
+
+$obj-E<gt>B<access>
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+$obj-E<gt>B<isModified>
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+$obj-E<gt>B<modified>([BOOLEAN])
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+$obj-E<gt>B<writable>
+
+=over 4
+
+See L<Mail::Box/"Folder flags">
+
+=back
+
+=head2 The messages
+
+$obj-E<gt>B<current>([NUMBER|MESSAGE|MESSAGE-ID])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<find>(MESSAGE-ID)
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<findFirstLabeled>(LABEL, [BOOLEAN, [ARRAY-OF-MSGS]])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<message>(INDEX [,MESSAGE])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<messageId>(MESSAGE-ID [,MESSAGE])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<messageIds>
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<messages>(['ALL',RANGE,'ACTIVE','DELETED',LABEL,!LABEL,FILTER])
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<nrMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+$obj-E<gt>B<scanForMessages>(MESSAGE, MESSAGE-IDS, TIMESPAN, WINDOW)
+
+=over 4
+
+See L<Mail::Box/"The messages">
+
+=back
+
+=head2 Sub-folders
+
+$obj-E<gt>B<listSubFolders>(OPTIONS)
+
+Mail::Box::Net-E<gt>B<listSubFolders>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<nameOfSubFolder>(SUBNAME, [PARENTNAME])
+
+Mail::Box::Net-E<gt>B<nameOfSubFolder>(SUBNAME, [PARENTNAME])
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<openRelatedFolder>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<openSubFolder>(SUBNAME, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+$obj-E<gt>B<topFolderWithMessages>
+
+Mail::Box::Net-E<gt>B<topFolderWithMessages>
+
+=over 4
+
+See L<Mail::Box/"Sub-folders">
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<coerce>(MESSAGE, OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<create>(FOLDER, OPTIONS)
+
+Mail::Box::Net-E<gt>B<create>(FOLDER, OPTIONS)
+
+=over 4
+
+Create a new folder on the remote server.
+
+ Option   --Defined in--Default
+ folderdir  Mail::Box   <not used>
+
+. folderdir => DIRECTORY
+
+=back
+
+$obj-E<gt>B<determineBodyType>(MESSAGE, HEAD)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+Mail::Box::Net-E<gt>B<foundIn>([FOLDERNAME], OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<lineSeparator>([STRING|'CR'|'LF'|'CRLF'])
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<locker>
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<read>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<readMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<storeMessage>(MESSAGE)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<toBeThreaded>(MESSAGES)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<toBeUnthreaded>(MESSAGES)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<updateMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<write>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+$obj-E<gt>B<writeMessages>(OPTIONS)
+
+=over 4
+
+See L<Mail::Box/"Internals">
+
+=back
+
+=head2 Other methods
+
+$obj-E<gt>B<timespan2seconds>(TIME)
+
+Mail::Box::Net-E<gt>B<timespan2seconds>(TIME)
+
+=over 4
+
+See L<Mail::Box/"Other methods">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Box::Net-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Box::Net-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Box::Net-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Box/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DETAILS
+
+=head1 DIAGNOSTICS
+
+Warning: Changes not written to read-only folder $self.
+
+=over 4
+
+You have opened the folder read-only --which is the default set
+by L<new(access)|Mail::Box/"Constructors">--, made modifications, and now want to close it.
+Set L<close(force)|Mail::Box/"The folder"> if you want to overrule the access mode, or close
+the folder with L<close(write)|Mail::Box/"The folder"> set to C<NEVER>.
+
+=back
+
+Error: Copying failed for one message.
+
+=over 4
+
+For some reason, for instance disc full, removed by external process, or
+read-protection, it is impossible to copy one of the messages.  Copying will
+proceed for the other messages.
+
+=back
+
+Error: Destination folder $name is not writable.
+
+=over 4
+
+The folder where the messages are copied to is not opened with write
+access (see L<new(access)|Mail::Box/"Constructors">).  This has no relation with write permission
+to the folder which is controled by your operating system.
+
+=back
+
+Warning: Different messages with id $msgid
+
+=over 4
+
+The message id is discovered more than once within the same folder, but the
+content of the message seems to be different.  This should not be possible:
+each message must be unique.
+
+=back
+
+Error: Folder $name is opened read-only
+
+=over 4
+
+You can not write to this folder unless you have opened the folder to
+write or append with L<new(access)|Mail::Box/"Constructors">, or the C<force> option is set true.
+
+=back
+
+Error: Folder $name not deleted: not writable.
+
+=over 4
+
+The folder must be opened with write access via L<new(access)|Mail::Box/"Constructors">, otherwise
+removing it will be refused.  So, you may have write-access according to
+the operating system, but that will not automatically mean that this
+C<delete> method permits you to.  The reverse remark is valid as well.
+
+=back
+
+Error: Invalid timespan '$timespan' specified.
+
+=over 4
+
+The string does not follow the strict rules of the time span syntax which
+is permitted as parameter.
+
+=back
+
+Warning: Message-id '$msgid' does not contain a domain.
+
+=over 4
+
+According to the RFCs, message-ids need to contain a unique random part,
+then an C<@>, and then a domain name.  This is made to avoid the creation
+of two messages with the same id.  The warning emerges when the C<@> is
+missing from the string.
+
+=back
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+Error: Unable to create subfolder $name of $folder.
+
+=over 4
+
+The copy includes the subfolders, but for some reason it was not possible
+to copy one of these.  Copying will proceed for all other sub-folders.
+
+=back
+
+Error: Writing folder $name failed
+
+=over 4
+
+For some reason (you probably got more error messages about this problem)
+it is impossible to write the folder, although you should because there
+were changes made.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

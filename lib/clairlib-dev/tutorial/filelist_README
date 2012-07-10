@@ -1,0 +1,12 @@
+Files named {core,ext}_{t,test,util}_filelist.txt contain lists of filenames.
+They indicate which files in the subdirectories ../{t,test,util} end up being
+distributed in Clairlib-core and which end up in Clairlib-ext.  These lists of
+filenames are used by the perl script compile_test_lists.pl to determine what
+section the link to a file should go under. 
+
+After being generated simply via an appropriate "ls -1" command, they are
+edited to remove scripts that duplicate functionality.  Any test in t/ that
+shares a name with a script in test/ that differs only in its extension
+(.t instead of .pl) has been removed from the *_t_filelist.txt file so that
+is isn't included in the tutorial or online documentation. 
+

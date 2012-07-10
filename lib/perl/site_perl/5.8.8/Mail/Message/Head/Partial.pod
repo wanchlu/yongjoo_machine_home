@@ -1,0 +1,748 @@
+=head1 NAME
+
+Mail::Message::Head::Partial - subset of header information of a message
+
+=head1 INHERITANCE
+
+ Mail::Message::Head::Partial
+   is a Mail::Message::Head::Complete
+   is a Mail::Message::Head
+   is a Mail::Reporter
+
+=head1 SYNOPSIS
+
+ my $partial = $head->strip;
+ $partial->isa('Mail::Message::Head')  # true
+ $partial->isDelayed                      # false
+ $partial->isPartial                      # true
+
+ $partial->removeFields( qr/^X-/ );
+ $partial->removeFieldsExcept( qw/To From/ );
+ $partial->removeResentGroups;
+ $partial->removeListGroup;
+ $partial->removeSpamGroups;
+
+=head1 DESCRIPTION
+
+Header information consumes a considerable amount of memory.  Most of this
+information is only useful during a short period of time in your program,
+or sometimes it is not used at all.  You then can decide to remove most
+of the header information.  However, be warned that it will be lost
+permanently: the header (and therefore the messsage) gets mutulated!
+
+=head1 OVERLOADED
+
+overload: B<"">
+
+=over 4
+
+See L<Mail::Message::Head/"OVERLOADED">
+
+=back
+
+overload: B<bool>
+
+=over 4
+
+See L<Mail::Message::Head/"OVERLOADED">
+
+=back
+
+=head1 METHODS
+
+=head2 Constructors
+
+$obj-E<gt>B<build>([PAIR|FIELD]-LIST)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Constructors">
+
+=back
+
+$obj-E<gt>B<clone>([NAMES|ARRAY-OF-NAMES|REGEXS])
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Constructors">
+
+=back
+
+Mail::Message::Head::Partial-E<gt>B<new>(OPTIONS)
+
+=over 4
+
+See L<Mail::Message::Head/"Constructors">
+
+=back
+
+=head2 The header
+
+$obj-E<gt>B<isDelayed>
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<isEmpty>
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<isModified>
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<knownNames>
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<message>([MESSAGE])
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<modified>([BOOLEAN])
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<nrLines>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"The header">
+
+=back
+
+$obj-E<gt>B<orderedFields>
+
+=over 4
+
+See L<Mail::Message::Head/"The header">
+
+=back
+
+$obj-E<gt>B<size>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"The header">
+
+=back
+
+$obj-E<gt>B<wrap>(INTEGER)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"The header">
+
+=back
+
+=head2 Access to the header
+
+$obj-E<gt>B<add>(FIELD | LINE | (NAME,BODY[,ATTRS]))
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<addListGroup>(OBJECT)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<addResentGroup>(RESENT-GROUP|DATA)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<addSpamGroup>(OBJECT)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<cleanupOrderedFields>
+
+=over 4
+
+The header maintains a list of fields which are ordered in sequence of
+definition.  It is required to maintain the header order to keep the
+related fields of resent groups together.  The fields are also included
+in a hash, sorted on their name for fast access.
+
+The references to field objects in the hash are real, those in the ordered 
+list are weak.  So when field objects are removed from the hash, their
+references in the ordered list are automagically undef'd.
+
+When many fields are removed, for instance with L<removeFields()|Mail::Message::Head::Partial/"Access to the header"> or
+L<removeFieldsExcept()|Mail::Message::Head::Partial/"Access to the header">, then it is useful to remove the list of undefs
+from the ordered list as well.  In those cases, this method is called
+automatically, however you may have your own reasons to call this method.
+
+=back
+
+$obj-E<gt>B<count>(NAME)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<delete>(NAME)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<get>(NAME [,INDEX])
+
+=over 4
+
+See L<Mail::Message::Head/"Access to the header">
+
+=back
+
+$obj-E<gt>B<grepNames>([NAMES|ARRAY-OF-NAMES|REGEXS])
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<listGroup>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<names>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<print>([FILEHANDLE])
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<printSelected>(FILEHANDLE, (STRING|REGEXP)s)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<printUndisclosed>([FILEHANDLE])
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<removeContentInfo>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<removeField>(FIELD)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<removeFields>(STRING|REGEXP, [STRING|REGEXP, ...])
+
+=over 4
+
+Remove the fields from the header which are exactly named 'STRING' (case
+insensitive) or match the REGular EXPresssion.  Do not forget to add the
+'i' modifier to the REGEXP, because fields are case insensitive.
+
+See also L<removeField()|Mail::Message::Head::Complete/"Access to the header"> which is used to remove one field object from
+the header.  The reverse specification can be made with
+C<removeFieldsExcept()>.
+
+example: 
+
+ $head->removeFields('bcc', 'received');
+ $head->removeFields( qr/^content-/i );
+
+=back
+
+$obj-E<gt>B<removeFieldsExcept>(STRING|REGEXP, [STRING|REGEXP, ...])
+
+=over 4
+
+Remove all fields from the header which are not equivalent to one of the
+specified STRINGs (case-insensitive) and which are not matching one of
+the REGular EXPressions.  Do not forget to add the 'i' modifier to the
+REGEXP, because fields are case insensitive.
+
+See also L<removeField()|Mail::Message::Head::Complete/"Access to the header"> which is used to remove one field object from
+the header.  The reverse specification can be made with C<removeFields()>.
+
+example: 
+
+ $head->removeFieldsExcept('subject', qr/^content-/i ); 
+ $head->removeFieldsExcept( qw/subject to from sender cc/ );
+
+=back
+
+$obj-E<gt>B<removeListGroup>
+
+=over 4
+
+Removes all header lines which are used to administer mailing lists.
+Which fields that are is explained in L<Mail::Message::Head::ListGroup|Mail::Message::Head::ListGroup>.
+Returned is the number of removed lines.
+
+=back
+
+$obj-E<gt>B<removeResentGroups>
+
+=over 4
+
+Removes all header lines which are member of a I<resent group>, which
+are explained in L<Mail::Message::Head::ResentGroup|Mail::Message::Head::ResentGroup>.  Returned is the
+number of removed lines.
+
+For removing single groups (for instance because you want to keep the
+last), use L<Mail::Message::Head::FieldGroup::delete()|Mail::Message::Head::FieldGroup/"The header">.
+
+=back
+
+$obj-E<gt>B<removeSpamGroups>
+
+=over 4
+
+Removes all header lines which were produced by spam detection and
+spam-fighting software.  Which fields that are is explained in
+L<Mail::Message::Head::SpamGroup|Mail::Message::Head::SpamGroup>.  Returned is the number of removed lines.
+
+=back
+
+$obj-E<gt>B<resentGroups>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<reset>(NAME, FIELDS)
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<set>(FIELD | LINE | (NAME, BODY [,ATTRS]))
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<spamDetected>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<spamGroups>([NAMES])
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<string>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Access to the header">
+
+=back
+
+$obj-E<gt>B<study>(NAME [,INDEX])
+
+=over 4
+
+See L<Mail::Message::Head/"Access to the header">
+
+=back
+
+=head2 About the body
+
+$obj-E<gt>B<guessBodySize>
+
+=over 4
+
+See L<Mail::Message::Head/"About the body">
+
+=back
+
+$obj-E<gt>B<guessTimeStamp>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"About the body">
+
+=back
+
+$obj-E<gt>B<isMultipart>
+
+=over 4
+
+See L<Mail::Message::Head/"About the body">
+
+=back
+
+$obj-E<gt>B<recvstamp>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"About the body">
+
+=back
+
+$obj-E<gt>B<timestamp>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"About the body">
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<addNoRealize>(FIELD)
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+$obj-E<gt>B<addOrderedFields>(FIELDS)
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+$obj-E<gt>B<createFromLine>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Internals">
+
+=back
+
+$obj-E<gt>B<createMessageId>
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Internals">
+
+=back
+
+$obj-E<gt>B<fileLocation>
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+$obj-E<gt>B<load>
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+$obj-E<gt>B<messageIdPrefix>([PREFIX, [HOSTNAME]|CODE])
+
+Mail::Message::Head::Partial-E<gt>B<messageIdPrefix>([PREFIX, [HOSTNAME]|CODE])
+
+=over 4
+
+See L<Mail::Message::Head::Complete/"Internals">
+
+=back
+
+$obj-E<gt>B<moveLocation>(DISTANCE)
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+$obj-E<gt>B<read>(PARSER)
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+$obj-E<gt>B<setNoRealize>(FIELD)
+
+=over 4
+
+See L<Mail::Message::Head/"Internals">
+
+=back
+
+=head2 Error handling
+
+$obj-E<gt>B<AUTOLOAD>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<addReport>(OBJECT)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+Mail::Message::Head::Partial-E<gt>B<defaultTrace>([LEVEL]|[LOGLEVEL, TRACELEVEL]|[LEVEL, CALLBACK])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<errors>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<log>([LEVEL [,STRINGS]])
+
+Mail::Message::Head::Partial-E<gt>B<log>([LEVEL [,STRINGS]])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logPriority>(LEVEL)
+
+Mail::Message::Head::Partial-E<gt>B<logPriority>(LEVEL)
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<logSettings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<notImplemented>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<report>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<reportAll>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<trace>([LEVEL])
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+$obj-E<gt>B<warnings>
+
+=over 4
+
+See L<Mail::Reporter/"Error handling">
+
+=back
+
+=head2 Cleanup
+
+$obj-E<gt>B<DESTROY>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+$obj-E<gt>B<inGlobalDestruction>
+
+=over 4
+
+See L<Mail::Reporter/"Cleanup">
+
+=back
+
+=head1 DETAILS
+
+=head2 Reducing the header size
+
+A message header is very large in memory and quite large on disk, and
+therefore a good candidate for size reduction.  One way to reduce the
+size is by simply eliminating superfluous header fields.  Each field
+requires at least 100 bytes of run-time memory, so this may help!
+
+Before you start playing around with L<removeFields()|Mail::Message::Head::Partial/"Access to the header"> and
+L<removeFieldsExcept()|Mail::Message::Head::Partial/"Access to the header">, you may take a look at two large groups
+of fields which can be removes as sets: the resent headers and the
+mailinglist headers.
+
+Resent headers describe the intermediate steps in the transmission
+process for the messages.  After successful delivery, they are rarely
+useful.
+
+When you are archiving a mailinglist, it is hardly ever useful to
+store a the list administration lines for each message as well.
+
+example: see examples/reduce.pl in distribution
+
+ foreach my $msg ($folder->messages)
+ {  $msg->head->removeResentGroups;
+    $msg->head->removeResentList;
+ }
+
+=head1 DIAGNOSTICS
+
+Warning: Cannot remove field $name from header: not found.
+
+=over 4
+
+You ask to remove a field which is not known in the header.  Using
+L<delete()|Mail::Message::Head::Complete/"Access to the header">, L<reset()|Mail::Message::Head::Complete/"Access to the header">, or L<set()|Mail::Message::Head::Complete/"Access to the header"> to do the job will not result
+in warnings: those methods check the existence of the field first.
+
+=back
+
+Warning: Field objects have an implied name ($name)
+
+=over 4
+
+=back
+
+Error: Package $package does not implement $method.
+
+=over 4
+
+Fatal error: the specific package (or one of its superclasses) does not
+implement this method where it should. This message means that some other
+related classes do implement this method however the class at hand does
+not.  Probably you should investigate this and probably inform the author
+of the package.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

@@ -1,0 +1,14 @@
+\subsubsection{Convert a network from one format to another}
+
+\begin{boxedverbatim}
+
+ input: gml file (or pajek file)
+ output: edgelist file
+
+ convert_network.pl -v \
+   -input $CLAIRLIB/corpora/david_copperfield/adjnoun.gml \
+   --input-format gml --output ./adjnoun.graph \
+   --output-format edgelist
+ print_network_stats.pl -i ./adjnoun.graph --undirected
+
+\end{boxedverbatim}

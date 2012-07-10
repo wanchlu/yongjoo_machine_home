@@ -1,0 +1,306 @@
+=head1 NAME
+
+Mail::Message::Construct::Reply - reply to a Mail::Message
+
+=head1 SYNOPSIS
+
+ my Mail::Message $reply = $message->reply;
+ my $quoted  = $message->replyPrelude($head->get('From'));
+
+=head1 DESCRIPTION
+
+Complex functionality on L<Mail::Message|Mail::Message> objects is implemented in
+different files which are autoloaded.  This file implements the
+functionality related to creating message replies.
+
+=head1 METHODS
+
+=head2 Constructing a message
+
+$obj-E<gt>B<reply>(OPTIONS)
+
+=over 4
+
+Start a reply to this message. Some of the header-lines of the original
+message will be taken. A message-id will be assigned. Some header lines
+will be updated to facilitate message-thread detection
+(see L<Mail::Box::Thread::Manager|Mail::Box::Thread::Manager>).
+
+You may reply to a whole message or a message part.  You may wish to
+overrule some of the default header settings for the reply immediately,
+or you may do that later with C<set> on the header.
+
+ADDRESSES may be specified as string, or
+a L<Mail::Address|Mail::Address> object, or as array of L<Mail::Address|Mail::Address> objects.
+
+All OPTIONS which are not listed below AND start with a capital, will
+be added as additional headers to the reply message.
+
+ Option         --Default
+ Bcc              undef
+ Cc               <'cc' in current>
+ From             <'to' in current>
+ Message-ID       <uniquely generated>
+ Subject          replySubject()
+ To               <sender in current>
+ body             undef
+ group_reply      <true>
+ include          'INLINE'
+ max_signature    10
+ message_type     Mail::Message
+ postlude         undef
+ prelude          undef
+ quote            '> '
+ signature        undef
+ strip_signature  qr/^--\s/
+
+. Bcc => ADDRESSES
+
+=over 4
+
+Receivers of blind carbon copies: their names will not be published to
+other message receivers.
+
+=back
+
+. Cc => ADDRESSES
+
+=over 4
+
+The carbon-copy receivers, by default a copy of the C<Cc> field of
+the source message.
+
+=back
+
+. From => ADDRESSES
+
+=over 4
+
+Your identification, by default taken from the C<To> field of the
+source message.
+
+=back
+
+. Message-ID => STRING
+
+=over 4
+
+Supply a STRING as specific message-id for the reply.  By default, one is
+generated for you.  If there are no angles around your id, they will be
+added.
+
+=back
+
+. Subject => STRING|CODE
+
+=over 4
+
+Force the subject line to the specific STRING, or the result of the
+subroutine specified by CODE.  The subroutine will be called passing
+the subject of the original message as only argument.  By default,
+L<Mail::Message::replySubject()|Mail::Message::Construct::Reply/"Constructing a message"> is used.
+
+=back
+
+. To => ADDRESSES
+
+=over 4
+
+The destination of your message.  By default taken from the C<Reply-To>
+field in the source message.  If that field is not present as well, the
+C<From> line is scanned.  If they all fail, C<undef> is returned by this
+method: no reply message produced.
+
+=back
+
+. body => BODY
+
+=over 4
+
+Usually, the reply method can create a nice, sufficient message from the
+source message's body.  In case you like more complicated reformatting,
+you may also create a body yourself first, and pass this on to this
+C<reply> method. Some of the other options to this method will be ingored
+in this case.
+
+=back
+
+. group_reply => BOOLEAN
+
+=over 4
+
+Will the people listed in the C<Cc> headers (those who received the
+message where you reply to now) also receive this message as carbon
+copy?
+
+=back
+
+. include => 'NO'|'INLINE'|'ATTACH'
+
+=over 4
+
+Must the message where this is a reply to be included in the message?
+If C<NO> then not.  With C<INLINE> a reply body is composed. C<ATTACH>
+will create a multi-part body, where the original message is added
+after the specified body.  It is only possible to inline textual
+messages, therefore binary or multipart messages will always be
+enclosed as attachment.
+
+=back
+
+. max_signature => INTEGER
+
+=over 4
+
+Passed to C<stripSignature> on the body as parameter C<max_lines>.  Only
+effective for single-part messages.
+
+=back
+
+. message_type => CLASS
+
+=over 4
+
+Create a message with the requested type.  By default, it will be a
+Mail::Message.  This is correct, because it will be coerced into
+the correct folder message type when it is added to that folder.
+
+=back
+
+. postlude => BODY|LINES
+
+=over 4
+
+The line(s) which to be added after the quoted reply lines.  Create a
+body for it first.  This should not include the signature, which has its
+own option.  The signature will be added after the postlude when the
+reply is INLINEd.
+
+=back
+
+. prelude => BODY|LINES
+
+=over 4
+
+The line(s) which will be added before the quoted reply lines.  If nothing
+is specified, the result of the L<replyPrelude()|Mail::Message::Construct::Reply/"Constructing a message"> method
+is taken.  When C<undef> is specified, no prelude will be added.
+
+=back
+
+. quote => CODE|STRING
+
+=over 4
+
+Mangle the lines of an C<INLINE>d reply with CODE, or by prepending a
+STRING to each line.  The routine specified by CODE is called when the
+line is in C<$_>.
+
+By default, C<'E<gt> '> is added before each line.  Specify C<undef> to
+disable quoting.  This option is processed after the body has been decoded.
+
+=back
+
+. signature => BODY|MESSAGE
+
+=over 4
+
+The signature to be added in case of a multi-part reply.  The mime-type
+of the signature body should indicate this is a used as such.  However,
+in INLINE mode, the body will be taken, a line containing C<'-- '> added
+before it, and added behind the epilogue.
+
+=back
+
+. strip_signature => REGEXP|STRING|CODE
+
+=over 4
+
+Remove the signature of the sender.  The value of this parameter is
+passed to L<Mail::Message::Body::stripSignature(pattern)|Mail::Message::Body::Construct/"Constructing a body"> unless the
+source text is not included.  The signature is stripped from the message
+before quoting.
+
+When a multipart body is encountered, and the message is included to
+ATTACH, the parts which look like signatures will be removed.  If only
+one message remains, it will be the added as single attachment, otherwise
+a nested multipart will be the result.  The value of this option does not
+matter, as long as it is present.  See L<Mail::Message::Body::Multipart|Mail::Message::Body::Multipart>.
+
+=back
+
+example: 
+
+  my $reply = $msg->reply
+   ( prelude         => "No spam, please!\n\n"
+   , postlude        => "\nGreetings\n"
+   , strip_signature => 1
+   , signature       => $my_pgp_key
+   , group_reply     => 1
+   , 'X-Extra'       => 'additional header'
+   );
+
+=back
+
+$obj-E<gt>B<replyPrelude>([STRING|FIELD|ADDRESS|ARRAY-OF-THINGS])
+
+=over 4
+
+Produces a list of lines (usually only one), which will preceded the
+quoted body of the message.  STRING must comply to the RFC822 email
+address specification, and is usually the content of a C<To> or C<From>
+header line.  If a FIELD is specified, the field's body must be
+compliant.  Without argument -or when the argument is C<undef>- a
+slightly different line is produced.
+
+An characteristic example of the output is
+
+ On Thu Oct 13 04:54:34 1995, him@example.com wrote:
+
+=back
+
+$obj-E<gt>B<replySubject>(STRING)
+
+Mail::Message-E<gt>B<replySubject>(STRING)
+
+=over 4
+
+Create a subject for a message which is a reply for this one.  This routine
+tries to count the level of reply in subject field, and transform it into
+a standard form.  Please contribute improvements.
+
+example: 
+
+ subject                 --> Re: subject
+ Re: subject             --> Re[2]: subject
+ Re[X]: subject          --> Re[X+1]: subject
+ subject (Re)            --> Re[2]: subject
+ subject (Forw)          --> Re[2]: subject
+ <blank>                 --> Re: your mail
+
+=back
+
+=head1 DIAGNOSTICS
+
+Error: Cannot include reply source as $include.
+
+=over 4
+
+Unknown alternative for the C<include> option of L<reply()|Mail::Message::Construct::Reply/"Constructing a message">.  Valid
+choices are C<NO>, C<INLINE>, and C<ATTACH>.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

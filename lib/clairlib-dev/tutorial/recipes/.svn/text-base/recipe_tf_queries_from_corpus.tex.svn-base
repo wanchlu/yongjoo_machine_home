@@ -1,0 +1,11 @@
+\subsubsection{Run TF queries on a corpus}
+
+\begin{boxedverbatim}
+ input: indexed corpus
+ output: tf query data
+
+ tf_query.pl -c chemical -b produced -q health
+ tf_query.pl -c chemical -b produced --all
+ tf_query.pl -c chemical -b produced --stemmed --all
+ tf_query.pl -c chemical -b produced -q "atomic number"
+\end{boxedverbatim}

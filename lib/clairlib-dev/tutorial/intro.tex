@@ -1,0 +1,422 @@
+\maketitle
+
+\cleardoublepage
+
+\tableofcontents
+
+\cleardoublepage
+
+\pagestyle{fancy}
+\lhead {Clairlib}
+\rhead {User Documentation}
+
+\section{Introduction}
+
+The University of Michigan CLAIR (Computational Linguistics and
+Information Retrieval) group is happy to present version 1.08
+of the Clair Library.
+
+The Clair library is intended to simplify a number of generic tasks
+in Natural Language Processing (NLP), Information Retrieval (IR), and
+Network Analysis (NA).
+Its architecture also allows for external software to be plugged in
+with very little effort.
+
+We are distributing the Clair library in two forms: Clairlib-core,
+which has essential functionality and minimal dependence on external
+software, and Clairlib-ext, which has extended functionality that
+may be of interest to a smaller audience.  Depending on whether you
+choose to install only Clairlib-core or both Clairlib-core and
+Clairlib-ext, some of the content of this manual will not apply to
+your installation.  Throughout this
+document, for the sake of brevity, we will usually say ``the
+Clair library'' or the more abbreviated ``Clairlib'' to refer to the
+software we're distributing.
+
+This work has been supported in part by National Institutes of Health
+grants R01 LM008106 ``Representing and Acquiring Knowledge of Genome
+Regulation'' and U54 DA021519 ``National Center for Integrative
+Bioinformatics,'' as well as by grants IDM 0329043 ``Probabilistic and
+link-based Methods for Exploiting Very Large Textual Repositories,''
+DHB 0527513 ``The Dynamics of Political Representation and Political
+Rhetoric,'' 0534323 ``Collaborative Research: BlogoCenter - Infrastructure
+for Collecting, Mining and Accessing Blogs,'' and 0527513 ``The Dynamics of
+Political Representation and Political Rhetoric,'' from the National
+Science Foundation.
+
+
+\subsection{Functionality}
+
+Much can be done using Clairlib on its own.  Some of the things that
+Clairlib can do are listed below, in separate lists indicating whether
+that functionality comes from within a particular distribution of
+Clairlib, or is made available through Clairlib interfaces, but actually
+is imported from another source, such as a CPAN module, or external
+software.
+
+\subsubsection{Native to Clairlib-core}
+\begin{itemize}
+\item \textbf{Tokenization}:
+
+Convert a sequence of strings into a sequence of tokens.
+\item \textbf{Summarization}:
+
+Extract content from an information and present the most important parts to the user in a condensed form.
+\item \textbf{LexRank}:
+
+Multi-document summarization, classification, and many other tasks.
+\item \textbf{Biased LexRank}:
+
+Semi-supervised passage retrieval.
+\item \textbf{Document Clustering}:
+
+Unsupervised assignment of documents into groups.
+\item \textbf{Document Indexing}:
+
+Transforming a document into an indexed form.
+\item \textbf{PageRank}:
+
+Assigning a numerical weighting to each element of a hyperlinked set of documents.
+\item \textbf{Biased Pagerank}
+\item \textbf{Web Graph Analysis}:
+
+Study of link patterns emerging between documents.
+\item \textbf{Network Generation}:
+
+Generate random networks. Currently, this includes generation of Erdos-R´enyi random graphs.
+\item \textbf{Power Law Distribution Analysis}
+\item \textbf{Network Analysis}:
+        \begin{itemize}
+        \item clustering coefficient
+        \item degree distribution plotting
+        \item average shortest path
+        \item diameter
+        \item triangles
+        \item shortest path matrices
+        \item connected components
+        \item maximum flow
+        \end{itemize}
+\item \textbf{Cosine Similarity}:
+
+Similarity between two documents, represented by the vectors, by finding the cosine of the angle between them
+\item \textbf{Random Walks on Graphs}
+\item \textbf{Statistics}: Analyzing and generating distributions
+        \begin {itemize}
+        \item Distributions: Including Geometric, Gaussian, LogNormal, Zipfian and T-distribution
+        \item Tests
+        \end{itemize}
+\item \textbf{Tf}:
+
+Compute the Term Frequency
+\item \textbf{Idf}:
+
+Compute Inverse Document Frequency
+\item \textbf{Perceptron Learning and Classification}
+\item \textbf{Phrase Based Retrieval and Fuzzy OR Queries}
+\item \textbf{Harmonic Functions} Computing harmonic functions using the Relaxation and Monte Carlo methods
+\item \textbf{Synthetic Collection} Generation of synthetic document collections
+\item \textbf{Gene Interaction Extraction} Extract interactions between genes from biomedical texts.
+\end{itemize}
+
+\subsubsection{Imported and available via Clairlib-core}
+\begin{itemize}
+\item Parsing
+\item Stemming
+\item Sentence Segmentation
+\item Web Page Download
+\item Web Crawling
+\item XML Parsing
+\item XML Tree Building
+\item XML Writing
+\item Statistical Parsing
+\item Gene Tagging
+\item N-Grams extraction
+\end{itemize}
+
+\subsection{Native to Clairlib-ext}
+\begin{itemize}
+\item Interfacing with Weka, a machine-learning Java toolkit
+\item Latent Semantic Indexing
+\item Parsing using a Charniak Parser
+\item Using the Automatic Link Extractor (ALE)
+\item Using Google WebSearch
+\end{itemize}
+
+
+
+\subsection{Authors}
+
+Dragomir Radev, Mark Hodges, Anthony Fader, Mark Joseph, Joshua Gerrish, Mark Schaller, Jonathan dePeri, Bryan Gibson, Chen Huang, Amjad Abu Jbara, and Prem Ganeshkumar.
+
+\subsection{Contributors}
+
+Timothy Allison, Michael Dagitses, Aaron Elkiss,
+Gunes Erkan, Scott Gifford, Justin Joque, Patrick Jordan,  Jung-bae Kim,
+Samuela Pollack, and Adam Winkel
+
+\subsection{Changes}
+
+\input{Changes.tex}
+
+\section{Getting Started}
+
+\subsection{Downloading}
+
+Clairlib can be downloaded from http://www.clairlib.org.
+
+\subsection{Installing}
+
+\input{INSTALL.tex}
+
+\section{Structure of the Clairlib Code}
+
+The Clairlib code is divided into many modules, located in subdirectories within the \texttt{lib/Clair}
+directory.
+
+\subsection{Key Modules}
+Some of the key functionality is in the \texttt{lib/Clair} directory itself:
+
+\begin{itemize}
+\item \texttt{Clair::Document} - Represents a single document
+\item \texttt{Clair::Cluster} - Represents a collection of many documents
+\item \texttt{Clair::Network} - Represents a network, like a graph.  The
+nodes of the network may often be of type \texttt{Clair::Document}, but do
+not have to be.
+\item \texttt{Clair::Gen} - Works with Poisson and Power Law distributions
+\item \texttt{Clair::Util} - Provides utility functions needed when using the Clair library
+\item \texttt{Clair::Config} - Provides configurable constants needed by the Clair library (library paths, etc.)
+\end{itemize}
+
+Other modules in the top directory include the following:
+
+\begin{itemize}
+\item \texttt{Clair::Features} - Carry out feature selection using Chi-squared algorithm with Clair::GenericDoc
+\item \texttt{Clair::Debug} - A simple class that Exports debugmsg and errmsg subs.
+\item \texttt{Clair::Learn} - Implement various learning algorithms here. Default algorithm is Perceptron.
+\item \texttt{Clair::Index} - Creates various indexes from supplied Clair::GenericDoc objects.
+\item \texttt{Clair::Classify} - Take in the model file generated by Learn.pm and then carry out the classification.
+\item \texttt{Clair::StringManip} - Majority of the string manipulation routines required by other packages.
+\item \texttt{Clair::Centroid} - Compute the centroid of a cluster.
+\item \texttt{Clair::Corpus} - Class for dealing with TREC corpus format data.
+\item \texttt{Clair::CIDR} - Single pass document clustering.
+\item \texttt{Clair::SyntheticCollection} - Generate synthetic clusters of documents.
+\item \texttt{Clair::Extensions} - Versioning File for the Clairlib-ext distribution.
+\item \texttt{Clair::IDF} - Handle IDF databases.
+\item \texttt{Clair::SentenceFeatures} - A collection of sentence feature subroutines.
+\item \texttt{Clair::RandomWalk} - Random walk on graphs.
+\item \texttt{Clair::Harmonic} - Compute harmonic functions.
+\end{itemize}
+
+\subsection{Corpora Processing Modules}
+
+Within the \texttt{lib/Clair/Utils/} directory, several modules are provided to work with corpora:
+
+\begin{itemize}
+\item \texttt{Clair::Utils::CorpusDownload} - Download corpora from a list of URLs or from a single URL as a starting point, compute IDF and TF values
+\item \texttt{Clair::Utils::Idf} - Retrieve IDF values calculated by CorpusDownload
+\item \texttt{Clair::Utils::Tf} - Retrieve TF values calculated by CorpusDownload
+\item \texttt{Clair::Utils::TFIDFTUtils} - Provides utility functions needed for the IDF/TF calculations
+\item \texttt{Clair::Utils::Robot2} - configurable web traversal engine (for web robots \& agents)
+\item \texttt{Clair::Utils::LinearAlgebra}
+\item \texttt{Clair::Utils::Stem} - An implementation of a stemmer
+\item \texttt{Clair::Utils::MxTerminator} - Split text into sentences.
+\item \texttt{Clair::Utils::ALE} - The Automatic Link Extrapolator
+\end{itemize}
+
+\subsection{Clairlib-ext Modules}
+The Clairlib-ext distribution also contains the following modules in lib/Clair/Utils/:
+
+\begin{itemize}
+\item \texttt{Clair::Utils::WebSearch} - Performs Google searches and downloads files
+\item \texttt{Clair::Utils::Parse} - Parse a file using the Charniak parser or use
+the Chunklink tool.
+\end{itemize}
+
+\subsection{Network and Graph Processing}
+
+Clairlib includes a large collection of network and graph processing
+modules:
+
+\begin{itemize}
+\item \texttt{Clair::Network} - Network Class for the CLAIR Library
+\item \texttt{Clair::NetworkWrapper} - A subclass of \texttt{Clair::Network} that wraps the C++ version of Lexrank.
+
+\item \texttt{Clair::Network::AdamicAdar} - Adamic/Adar Algorithms, calculate the Adamic/Adar value of a network.
+
+\item \texttt{Clair::Network::Sample} - Network sampling algorithms
+\begin{itemize}
+\item \texttt{Clair::Network::Sample::RandomEdge} - Random edge sampling
+\item \texttt{Clair::Network::Sample::RandomNode} - Random node sampling
+\item \texttt{Clair::Network::Sample::ForestFire} - Random sampling using Forest Fire model
+\item \texttt{Clair::Network::Sample::SampleBase} - Abstract class for
+  network sampling
+\end{itemize}
+
+\item \texttt{Clair::Network::Reader} - Different network file type readers
+\begin{itemize}
+\item \texttt{Clair::Network::Reader} - Abstract class for reading in network formats
+\item \texttt{Clair::Network::Reader::GraphML} - Class for reading in GraphML network files
+\item \texttt{Clair::Network::Reader::Pajek} - Class for reading in Pajek network files
+\item \texttt{Clair::Network::Reader::Edgelist} - Class for reading in edgelist network files
+\end{itemize}
+
+\item \texttt{Clair::Network::Generator} - Random network generators
+\begin{itemize}
+\item \texttt{Clair::Network::Generator::GeneratorBase} - Network generator abstract class
+\item \texttt{Clair::Network::Generator::ErdosRenyi} - ErdosRenyi network generator abstract class
+\end{itemize}
+
+\item \texttt{Clair::Network::Writer} - Different network file type writers
+\begin{itemize}
+\item \texttt{Clair::Network::Writer} - Abstract class for exporting various Network formats
+\item \texttt{Clair::Network::Writer::GraphML} - Class for writing GraphML network files
+\item \texttt{Clair::Network::Writer::Pajek} - Class for writing Pajek network files
+\item \texttt{Clair::Network::Writer::Edgelist} - Class for writing edge list network files
+\end{itemize}
+
+\item \texttt{Clair::Network::Centrality} - Network centrality measures
+\begin{itemize}
+\item \texttt{Clair::Network::Centrality} - Abstract class for computing network centrality
+\item \texttt{Clair::Network::Centrality::Degree} - Class for computing degree
+\item \texttt{Clair::Network::Centrality::Closeness} - Class for computing closeness
+centrality
+\item \texttt{Clair::Network::Centrality::Betweenness} - Class for computing betweenness
+centrality
+\end{itemize}
+
+\item \texttt{Clair::Network::CFNetwork} - Class for performing community finding using Newman 2004 modularity algorithm
+\item \texttt{Clair::Network::KernighanLin} - Class for performing community finding and graph partition using KernighanLin algorithm
+\item \texttt{Clair::Network::GirvanNewman} - Class for performing community finding using Girvan/Newman Algorithm
+\item \texttt{Clair::Network::Spectral} - Class for performing spectral graph partitioning using Fiedler vector Algorithm
+\item \texttt{Clair::Network::FordFulkerson} - Class for finding maximum flow using Ford/Fulkerson Algorithm
+\end{itemize} % Network modules
+
+The Network modules uses the Graph CPAN module by default, but this
+other graph libraries such as Boost can be used:
+
+\begin{itemize}
+\item \texttt{Clair::GraphWrapper} - Abstract class for underlying graphs
+\item \texttt{Clair::GraphWrapper::Boost} - GraphWrapper class that provides an interface to the Boost graph library
+\end{itemize}
+
+\subsection{Distributions and Statistics Modules}
+There are also packages for dealing with discrete and continuous
+distributions:
+
+\begin{itemize}
+\item \texttt{Clair::RandomDistribution::RandomDistributionBase} - base class for all distributions
+\item \texttt{Clair::RandomDistribution::Gaussian}
+\item \texttt{Clair::RandomDistribution::LogNormal}
+\item \texttt{Clair::RandomDistribution::Poisson}
+\item \texttt{Clair::RandomDistribution::RandomDistributionFromWeights}
+\item \texttt{Clair::RandomDistribution::Zipfian}
+\end{itemize}
+
+\begin{itemize}
+\item \texttt{Clair::Statistics::Distributions::TDist}
+\item \texttt{Clair::Statistics::Distributions::DistBase}
+\item \texttt{Clair::Statistics::Distributions::Geometric}
+\end{itemize}
+
+\subsection{ALE Modules}
+
+\begin{itemize}
+\item \texttt{Clair::ALE::Default::Tokenizer} - ALE's default tokenizer.
+\item \texttt{Clair::ALE::Default::Stemmer} - ALE's default stemmer.
+\item \texttt{Clair::ALE::Tokenizer}
+\item \texttt{Clair::ALE::Stemmer} - Internal stemmer used by ALE
+
+\item \texttt{Clair::ALE::Conn} - A connection between two pages, consisting of one or more links, created the the Automatic Link Extrapolator.
+\item \texttt{Clair::ALE::Link} - A link between two URLs created by the Automatic Link Extrapolator.
+\item \texttt{Clair::ALE::\_SQL} - Internal SQL adapter for use by ALE
+\item \texttt{Clair::ALE::URL} - A URL created by the Automatic Link Extrapolator
+\item \texttt{Clair::ALE::NormalizeURL}
+
+\subsection{Political Science Modules}
+ \item \texttt{Clair::Polisci} - Polisci modules
+ \begin{itemize}
+ \item \texttt{Clair::Polisci::AU::XMLHandler}
+ \item \texttt{Clair::Polisci::US::XMLHandler}
+ \item \texttt{Clair::Polisci::US::Connection} - Read records from the US polisci database
+ \item \texttt{Clair::Polisci::Speaker} - An object representing a hansard speaker
+ \item \texttt{Clair::Polisci::Record} - An object representing a hansard record
+
+ \item \texttt{Clair::Polisci::Graf} - An object representing a hansard graf
+ \item \texttt{Clair::Polisci::AustralianParser} - A class for parsing Australian hansard html.
+ \end{itemize}
+
+\subsection{Mead Interfacing Modules}
+
+\item \texttt{Clair::MEAD::DocsentConverter} - Document => Mead Cluster converter
+\item \texttt{Clair::MEAD::Summary} - Access to a MEAD summary
+\item \texttt{Clair::MEAD::Wrapper} - A perl module wrapper for MEAD
+
+\subsection{Bio Modules}
+\begin{itemize}
+\item \texttt{Clair::Bio} - Bio utilities
+\item \texttt{Clair::Bio::EUtils::ESearchHandler} - An XML handler for parsing ESearch results
+\item \texttt{Clair::Bio::EUtils::ESearch} - A Perl interface to the ESearch utility
+\item \texttt{Clair::Bio::EUtils} - A base class for Bio::EUtils objects
+\item \texttt{Clair::Bio::Connection} - Connect to the Bio database using SOAP
+\item \texttt{Clair::Bio::GeneRIF} - Perl module for parsing GeneRIF files
+\item \texttt{Clair::Bio::GIN} - Gene interaction extraction.
+\item \texttt{Clair::Bio::GIN::Data} - Interface to data files used for interaction extraction.
+\item \texttt{Clair::Bio::GIN::Interaction} - Data structure for representing a gene interaction.
+\end{itemize}
+
+\subsection{Information Retrieval Modules}
+
+\item \texttt{Clair::IR} - Basic Information Retrieval operations
+
+\subsection{LinkPolicy Modules}
+
+\item \texttt{Clair::LinkPolicy} - Different document linking policies
+\begin{itemize}
+\item \texttt{Clair::LinkPolicy::MenczerMacro} - Class implementing the Menczer Micro link model
+\item \texttt{Clair::LinkPolicy::LinkPolicyBase} - Base class for creating corpora from collections
+\item \texttt{Clair::LinkPolicy::RadevPAMixed} - Class implementing the RadevPAMixed  link model
+\item \texttt{Clair::LinkPolicy::MenczerPAMixed} - Class implementing the MenczerPAMixed Micro link model
+\item \texttt{Clair::LinkPolicy::RadevMicro} - Class implementing the Radev Micro link model
+\item \texttt{Clair::LinkPolicy::BarabasiAlbert} - Class implementing the Barabasi Albert link model.
+\item \texttt{Clair::LinkPolicy::WattsStrogatz} - Class implementing the Watts/Strogatz link model
+\item \texttt{Clair::LinkPolicy::ErdosRenyi} - Class implementing the Erdos Renyi link model
+\end{itemize}
+
+\subsection{Sentence Segmentation Modules}
+
+\item \texttt{Clair::SentenceSegmenter} - Sentence segmentation
+\begin{itemize}
+\item \texttt{Clair::SentenceSegmenter::SentenceSegmenter}
+\item \texttt{Clair::SentenceSegmenter::Text}
+\end{itemize}
+
+\subsection{Generic Document Modules}
+\item \texttt{Clair::GenericDoc} - Generic document representations and parsing modules
+\begin{itemize}
+\item \texttt{Clair::GenericDoc} - A class to standardize and create generic representation of documents.
+\item \texttt{Clair::GenericDoc::html} - A submodule that strips out html tags.
+\item \texttt{Clair::GenericDoc::shakespeare} - specialized to parse shakespeare html files.
+\item \texttt{Clair::GenericDoc::octet\_stream} - A submodule that parses xml and converts it into a hash
+\item \texttt{Clair::GenericDoc::sports} - A specialized module for parsing docs for hw2
+\item \texttt{Clair::GenericDoc::xml} - A submodule that parses xml and converts it into a hash
+\item \texttt{Clair::GenericDoc::plain} - A submodule that returns the document as is.
+\end{itemize}
+
+\subsection{Other Modules}
+
+\item \texttt{Clair::CIDR::Wrapper} - A wrapper script for the original cidr script
+\item \texttt{Clair::Nutch::Search} - A class for performing simple Nutch searches.
+
+
+\item \texttt{Clair::Interface::Weka} - Interfacing with Weka, a machine-learning Java toolkit.
+\item \texttt{Clair::Index::mldbm} - A submodule that gets dynamically loaded by Index.pm.
+\item \texttt{Clair::Index::dirfiles} - Builds the index into the filesystem namespace.
+
+
+\item \texttt{Clair::Algorithm::LSI} - Latent Semantic Indexing.
+\item \texttt{Clair::Info::Query} - A module that implements different types of queries.
+\item \texttt{Clair::Info::Stats}
+
+\end{itemize}
+
+Many of the above modules are described in more details in the following section. 

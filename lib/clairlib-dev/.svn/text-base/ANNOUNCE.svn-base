@@ -1,0 +1,95 @@
+                    Clairlib, The Clair Library
+
+                    version 1.07 is now available
+
+                      http://www.clairlib.org
+
+
+
+INTRODUCTION
+
+The University of Michigan's CLAIR (Computational Linguistics And
+Information Retrieval) group is happy to present version 1.07 of
+clairlib, the Clair library.
+
+The Clair library is intended to simplify a number of generic tasks in
+Natural Language Processing (NLP), Information Retrieval (IR), and
+Network Analysis. Its architecture also allows for external software
+to be plugged in with very little effort.
+
+Two distributions of the Clair library are available: Clairlib-core,
+with essential functionality and minimal dependence on external
+software, and Clairlib-ext, with extended functionality that may be of
+interest to a smaller audience.  Work is underway on Clairlib-bio and
+Clairlib-polisci, extensions that will be of interest to people
+working on Bioinformatics and Political Science.
+
+FUNCTIONALITY
+
+Native in Clairlib-core: Tokenization, Summarization, LexRank, Biased
+LexRank, Document Clustering, Document Indexing, PageRank, Biased
+PageRank, Web Graph Analysis, Network Generation, Power Law
+Distribution Analysis, Network Analysis (clustering coefficient,
+degree distribution plotting, average shortest path, diameter,
+triangles, shortest path matrices, connected components), Cosine
+Similarity, Random Walks on Graphs, Statistics (distributions, tests),
+Tf, Idf, Community Finding*, Phrase-Based Queries*, Fuzzy OR Queries*
+
+Imported functionality into Clairlib-core: Stemming, Sentence
+Segmentation, Web Page Download, Web Crawling, XML Parsing, XML Tree
+Building, XML Writing
+
+Clairlib-ext features: Sentence Segmentation using MxTerminator,
+Sentence Parsing using the Charniak Parser and Chunklink
+
+* New and expanded functionality available this latest release
+
+
+CHANGES
+
+       1.07 Jun 2009
+       * Added Clair::Network::Spectral for spectral partitioning using Fiedler Vector.
+       * Made Clairlib independent of MEAD (MEAD is no more required for Clairlib).
+       * Added Naive Bayes learning and classification.
+       * Added tests for feature extraction, learning, classification.
+       * Fixed a bug in Clair::Cluster::create_lexical_network().
+       * Added sampling options to Clair::Cluster.
+       * Added "No IDF" option and sampling capabilities to corpus_to_cos.pl utility.
+       * Fixed documentation typos.
+       * Added new tutorials to the documentation.
+       * Fixed bug in Clair::Utils::CorpusDownload.
+       * Added 'manual weights' option to make_synth_collection utility.
+       * Fixed bug in extract_ngrams utility.
+
+DOWNLOAD
+
+Visit http://www.clairlib.org/ or write to radev@umich.edu to get a copy.
+
+FUNDING
+
+This work has been supported in part by National Institutes of Health
+grants R01 LM008106 "Representing and Acquiring Knowledge of Genome
+Regulation" and U54 DA021519 "National center for integrative
+bioinformatics", as well as by grants IDM 0329043 "Probabilistic and
+link-based Methods for Exploiting Very Large Textual Repositories,"
+0534323 "Collaborative Research: BlogoCenter - Infrastructure
+for Collecting, Mining and Accessing Blogs," and 0527513 "The Dynamics of
+Political Representation and Political Rhetoric," from the National
+Science Foundation.
+
+ABOUT
+
+The Clair Library is developed by the Clair group at the University of
+Michigan.
+
+Project design: Dragomir R. Radev
+
+Main implementers: Jonathan dePeri, Anthony Fader, Joshua Gerrish,
+Bryan Gibson, Mark Hodges, Mark Joseph, Dragomir Radev, Mark
+Schaller, Amjad Abu Jbara, and Prem Ganeshkumar.
+
+Additional code by: Timothy Allison, Michael Dagitses, Aaron Elkiss,
+Gunes Erkan, Scott Gifford, Patrick Jordan, Samuela Pollack, and Adam
+Winkel
+
+

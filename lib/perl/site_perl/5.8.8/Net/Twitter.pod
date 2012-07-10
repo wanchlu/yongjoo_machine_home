@@ -1,0 +1,2054 @@
+=head1 NAME
+
+Net::Twitter - A perl interface to the Twitter API
+
+=head1 VERSION
+
+This document describes Net::Twitter version 3.11004
+
+=head1 SYNOPSIS
+
+  use Net::Twitter;
+
+  my $nt = Net::Twitter->new(
+      traits   => [qw/API::REST/],
+      username => $user,
+      password => $password
+  );
+
+  my $result = $nt->update('Hello, world!');
+
+  eval {
+      my $statuses = $nt->friends_timeline({ since_id => $high_water, count => 100 });
+      for my $status ( @$statuses ) {
+          print "$status->{created_at} <$status->{user}{screen_name}> $status->{text}\n";
+      }
+  };
+  if ( my $err = $@ ) {
+      die $@ unless blessed $err && $err->isa('Net::Twitter::Error');
+
+      warn "HTTP Response Code: ", $err->code, "\n",
+           "HTTP Message......: ", $err->message, "\n",
+           "Twitter error.....: ", $err->error, "\n";
+  }
+
+
+=head1 DESCRIPTION
+
+This module provides a perl interface to the Twitter APIs.  See
+L<http://apiwiki.twitter.com/Twitter-API-Documentation> for a full description
+of the Twitter APIs.
+
+=head1 OMG! THE MOOSE!
+
+Net::Twitter is L<Moose> based. Moose provides some advantages, including the
+ability for the maintainer of this module to respond quickly to Twitter API
+changes.
+
+See L<Net::Twitter::Lite> if you need an alternative without Moose and its
+dependencies.
+
+Net::Twitter::Lite's API method definitions and documentation are generated
+from Net::Twitter.  It is a related module, but does not depend on
+Net::Twitter or Moose for installation.
+
+=head1 RETURN VALUES
+
+Net::Twitter decodes the data structures returned by the Twitter API into
+native perl data structures (HASH references and ARRAY references).  The full
+layout of those data structures are not documented, here.  They change often,
+usually with the addition of new elements, and documenting all of those
+changes would be a significant challenge.
+
+Instead, rely on the online Twitter API documentation and inspection of the
+returned data.
+
+The Twitter API online documentation is located at
+L<http://apiwiki.twitter.com/Twitter-API-Documentation>.
+
+To inspect the data, use L<Data::Dumper> or similar module of your choice.
+Here's a simple example using Data::Dumper:
+
+    use Data::Dumper;
+
+    my $r = $nt->search($search_term);
+    print Dumper $r;
+
+For more information on perl data structures, see L<perlreftut>, L<perldsc>,
+and L<perllol>.
+
+=head1 METHODS AND ARGUMENTS
+
+=over 4
+
+=item new
+
+This constructs a C<Net::Twitter> object.  It takes several named parameters,
+all of them optional:
+
+=over 4
+
+=item traits
+
+An ARRAY ref of traits used to control which APIs the constructed
+C<Net::Twitter> object will support and how it handles errors.  Possible
+values are:
+
+=over 4
+
+=item API::REST
+
+Provides support for the Twitter REST API methods.
+
+=item API::Search
+
+Provides support for the Twitter Search API methods.
+
+=item API::TwitterVision
+
+Provides support for the TwitterVision API.  See
+L<http://twittervision.com/api.html>.
+
+=item WrapError
+
+C<Net::Twitter> normally throws exceptions on error.  When this trait is
+included, C<Net::Twitter> returns undef when a method fails and makes the
+error available through method C<get_error>.  This is the way all errors were
+handled in Net::Twitter versions prior to version 3.00.
+
+=item OAuth
+
+The C<OAuth> trait provides OAuth authentication rather than the default Basic
+Authentication for Twitter API method calls.  See the L</Authentication>
+section and L<Net::Twitter::Role::OAuth> for full documentation.
+
+=item InflateObjects
+
+When this optional trait is included, Net::Twitter inflates HASH refs returned
+by Twitter into objects with read accessors for each element.  In addition, it
+inflates dates to L<DateTime> objects and URLs to L<URI> objects.  Objects that
+include a C<created_at> attribute also have a C<relative_created_at> method.
+
+For example, with C<InflateObjects> applied, the <friends_timeline> method
+returns an array of status objects:
+
+    $r = $nt->friends_timeline;
+    for my $status ( @$r ) {
+        $r->user->screen_name; # same as $r->{user}{screen_name}
+
+        # $created_at is a DateTime; $age is a DateTime::Duration
+        my $age = DateTime->now - $r->created_at;
+
+        # print an age in a similar style to the Twitter web site, e.g.:
+        # less than a minute ago
+        # about a minute ago
+        # 6 minutes ago
+        # 1 day ago
+        # etc.
+        print $r->relative_created_at;
+
+=item RateLimit
+
+The C<RateLimit> trait adds utility methods that return information about the
+current rate limit status.  See L<Net::Twitter::Role::RateLimit> for details.
+
+=item Legacy
+
+This trait provides backwards compatibility to C<Net::Twitter> versions prior
+to 3.00.  It implies the traits C<API::REST>, C<API::Search>,
+C<API::TwitterVision>, and C<API::WrapError>.  It also provides additional
+functionality to ensure consistent behavior for applications written for use
+with legacy versions of C<Net::Twitter>.
+
+In the current version, this trait is automatically included if the C<traits>
+option is not specified. This ensures backwards compatibility for existing
+applications using C<Net::Twitter> versions prior to 3.00.  See section
+L</LEGACY COMPATIBILITY> for more details.
+
+=back
+
+Some examples of using the C<traits> parameter in C<new>:
+
+    # provide support for *only* the REST API; throw exceptions on error
+    $nt = Net::Twitter->new(traits => ['API::REST']);
+
+    # provide support for both the REST and Search APIs; wrap errors
+    $nt = Net::Twitter->new(traits => [qw/API::REST API::Search WrapError/]);
+
+    # ensure full legacy support
+    $nt = Net::Twitter->new(traits => ['Legacy']);
+
+    # currently, these 2 calls to new are equivalent:
+    $nt = Net::Twitter->new();
+    $nt = Net::Twitter->new(traits => ['Legacy']);
+
+=item legacy
+
+A boolean.  If set to 0, C<new> constructs a C<Net::Twitter> object
+implementing the REST API and throws exceptions on API method errors.
+
+    Net::Twitter->new(legacy => 0);
+
+is a shortcut for:
+
+    Net::Twitter->new(traits => ['API::REST']);
+
+If set to 1, C<new> constructs a C<Net::Twitter> object with the C<Legacy> trait.
+
+    Net::Twitter->new(legacy => 1);
+
+is a shortcut for:
+
+    Net::Twitter->new(traits => ['Legacy']);
+
+=item username
+
+This is the screen name or email used to authenticate with Twitter.
+
+=item password
+
+This is the password used to authenticate with Twitter.
+
+=item clientname
+
+The value for the C<X-Twitter-Client-Name> HTTP header. It defaults to "Perl
+Net::Twitter".
+
+=item clientver
+
+The value for the C<X-Twitter-Client-Version> HTTP header. It defaults to
+current version of the C<Net::Twitter> module.
+
+=item clienturl
+
+The value for the C<X-Twitter-Client-URL> HTTP header. It defaults to the
+search.cpan.org page for the C<Net::Twitter> distribution.
+
+=item useragent_class
+
+The C<LWP::UserAgent> compatible class used internally by C<Net::Twitter>.  It
+defaults to "LWP::UserAgent".  For L<POE> based applications, consider using
+"LWP::UserAgent::POE".
+
+=item useragent_args
+
+An HASH ref of arguments to pass to constructor of the class specified with
+C<useragent_class>, above.  It defaults to {} (an empty HASH ref).
+
+=item useragent
+
+The value for C<User-Agent> HTTP header.  It defaults to
+"Net::Twitter/$VERSION (Perl)", where C<$VERSION> is the current version of
+C<Net::Twitter>.
+
+=item source
+
+The value used in the C<source> parameter of API method calls. It is currently
+only used in the C<update> method in the REST API.  It defaults to
+"twitterpm".  This results in the text "from Net::Twitter" rather than "from
+web" for status messages posted from C<Net::Twitter> when displayed via the
+Twitter web interface.
+
+Twitter is no longer registering source parameters.  New applications should
+implement OAuth and register via L<http://twitter.com/oauth_clients>.
+
+Only use the C<source> parameter if you have an existing, registered source
+parameter from Twitter.
+
+=item apiurl
+
+The URL for the Twitter API. This defaults to "http://api.twitter.com/1". This
+option is available when the C<API::REST> trait is included.
+
+=item apihost
+
+DEPRECATED - Setting the C<apiurl> is sufficient.
+
+=item apirealm
+
+A string containing the Twitter API realm used for Basic Authentication. It
+defaults to "Twitter API".  This option is available when the C<API::REST>
+trait is included.
+
+=item identica
+
+If set to 1, C<Net::Twitter> overrides the defaults for C<apiurl>, C<apihost>,
+and C<apirealm> to "http://identi.ca/api", "identi.ca:80", and "Laconica API"
+respectively.  It defaults to 0.  This option is available when the
+C<API::REST> trait is included.
+
+=item consumer_key
+
+A string containing the OAuth consumer key provided by Twitter when an application
+is registered.  This option is available when the C<OAuth> trait is included.
+
+=item consumer_secret
+
+A string containing the OAuth consumer secret.  This option is available when
+the C<OAuth> trait is included.
+
+=item ssl
+
+If set to 1, an SSL connection will be used for all API calls. Defaults to 0.
+
+=item netrc
+
+(Optional) Sets the I<machine> key to look up in C<.netrc> to obtain
+credentials. If set to 1, Net::Twitter will use the value of the C<netrc_machine>
+option (below).
+
+   # in .netrc
+   machine api.twitter.com
+     login YOUR_TWITTER_USER_NAME
+     password YOUR_TWITTER_PASSWORD
+   machine semifor.twitter.com
+     login semifor
+     password SUPERSECRET
+
+   # in your perl program
+   $nt = Net::Twitter->new(netrc => 1);
+   $nt = Net::Twitter->new(netrc => 'semifor.twitter.com');
+
+=item netrc_machine
+
+(Optional) Sets the C<machine> entry to look up in C<.netrc> when C<<netrc => 1>>
+is used.  Defaults to C<api.twitter.com>.
+
+=item decode_html_entities
+
+Twitter encodes HTML entities in the C<text> field of statuses.  Set this
+option to 1 to have them automatically decoded.  Default 0.
+
+=back
+
+=item credentials($username, $password)
+
+Set the credentials for Basic Authentication.  This is helpful for managing
+multiple accounts.
+
+=item ua
+
+Provides access to the constructed user agent object used internally by
+C<Net::Twitter>.  Use it with caution.
+
+=back
+
+=head1 AUTHENTICATION
+
+Twitter currently provides two authentication strategies: Basic Authentication and
+OAuth.  OAuth is officially in beta, however, Twitter has expressed a desire to
+deprecate Basic Authentication in the future, so consider using OAuth in your
+applications.
+
+To set up Basic Authentication in C<Net::Twitter>, provide the C<username> and
+C<password> options to L</new> or call the L</credentials> method.
+
+To set up OAuth, include the C<OAuth> trait and include the C<consumer_key> and
+C<consumer_secret> options to L</new>.  See L<Net::Twitter::Role::OAuth> for
+more information on using OAuth, including examples.
+
+In addition to the arguments specified for each API method described below, an
+additional C<authenticate> parameter can be passed.  To request an
+C<Authorization> header, pass C<< authenticated => 1 >>; to suppress an
+authentication header, pass C<< authentication => 0 >>.  Even if requested, an
+Authorization header will not be added if there are no user credentials
+(username and password for Basic Authentication; access tokens for OAuth).
+
+This is probably only useful for the L</rate_limit_status> method in the REST
+API, since it returns different values for an authenticated and a
+non-authenticated call.
+
+=head1 API METHODS AND ARGUMENTS
+
+Most Twitter API methods take parameters.  All Net::Twitter API
+methods will accept a HASH ref of named parameters as specified in the Twitter
+API documentation.  For convenience, many Net::Twitter methods accept
+simple positional arguments as documented, below.  The positional parameter
+passing style is optional; you can always use the named parameters in a hash
+ref if you prefer.
+
+For example, the REST API method C<update> has one required parameter,
+C<status>.  You can call C<update> with a HASH ref argument:
+
+    $nt->update({ status => 'Hello world!' });
+
+Or, you can use the convenient form:
+
+    $nt->update('Hello world!');
+
+The C<update> method also has an optional parameter, C<in_reply_to_status_id>.
+To use it, you B<must> use the HASH ref form:
+
+    $nt->update({ status => 'Hello world!', in_reply_to_status_id => $reply_to });
+
+Convenience form is provided for the required parameters of all API methods.
+So, these two calls are equivalent:
+
+    $nt->friendship_exists({ user_a => $fred, user_b => $barney });
+    $nt->friendship_exists($fred, $barney);
+
+Many API methods have aliases.  You can use the API method name, or any of its
+aliases, as you prefer.  For example, these calls are all equivalent:
+
+    $nt->friendship_exists($fred, $barney);
+    $nt->relationship_exists($fred, $barney);
+    $nt->follows($fred, $barney);
+
+Aliases support both the HASH ref and convenient forms:
+
+    $nt->follows({ user_a => $fred, user_b => $barney });
+
+=head2 Cursors and Paging
+
+Some methods return partial results a page at a time.  Originally, methods that
+returned partial results used a C<page> parameter.   A more recent addition to
+the Twitter API for retrieving multiple pages uses the C<cursor> parameter.
+Usually, a method uses either the C<page> parameter or the C<cursor> parameter,
+but not both.  There have been exceptions to this rule when Twitter
+deprecates the use of C<page> for a method in favor of C<cursor>.  In
+that case, both methods may work during a transition period. So, if a
+method supports both, you should always use the C<cursor> parameter.
+
+=head3 Paging
+
+For methods that support paging, the first page is returned by passing
+C<< page => 1 >>, the second page by passing C<< page => 2 >>, etc.  If no
+C<page> parameter is passed, the first page is returned.
+
+Here's an example that demonstrates how to obtain all favorites in a loop:
+
+    my @favs;
+    for ( my $page = 1; ; ++$page ) {
+        my $r = $nt->favorites({ page => $page });
+        last unless @$r;
+
+        push @favs, @$r;
+    }
+
+=head3 Cursors
+
+Cursoring employs a different strategy.  To obtain the first page of results,
+pass C<< cursor => -1 >>.  Twitter returns a reference to a hash that
+includes entries C<next_cursor>, C<previous_cursor>, and an entry
+with a reference to an array containing a page of the requested
+items.  The key for the array reference will be named C<users>,
+C<ids>, or something similar depending upon the type of returned
+items. For example, when C<cursor> parameter is used with the
+C<followers_ids> method, the returned in hash entry C<ids>.
+
+The C<next_cursor> value can be used in a subsequent call to obtain the next
+page of results.  When you have obtained the last page of results,
+C<next_cursor> will be 0.  Likewise, you can use the value for
+C<previous_cursor> to obtain the previous page of results.  When you have
+obtained the first page, C<previous_cursor> will be 0.
+
+Here's an example that demonstrates how to obtain all follower IDs in a loop
+using the C<cursor> parameter:
+
+    my @ids;
+    for ( my $cursor = -1, my $r; $cursor; $cursor = $r->{next_cursor} ) {
+        $r = $nt->followers_ids({ cursor => $cursor });
+        push @ids, @{ $r->{ids} };
+    }
+
+
+=head2 Synthetic Arguments
+
+In addition to the arguments described in the Twitter API Documentation for
+each API method, Net::Twitter supports additional I<synthetic> arguments.
+
+=over 4
+
+=item authenticate
+
+When set to 1, Net::Twitter will provide an Authorization header for the API
+call; when set to 0, it will suppress the Authentication header.  This argument
+overrides the defined authentication behavior for the API method.  It is
+probably only useful for the C<rate_limit_satus> method which returns different
+values for authenticated and unauthenticated calls.  See L</AUTHENTICATION> for
+more details.
+
+=item since
+
+API methods that accept the C<since_id> argument will also accept the synthetic
+C<since> argument, instead.  C<since> may be a C<Date::Time> object, an epoch
+time (the number of seconds since the system epoch), or a string in the same
+format returned by Twitter for the C<created_at> attribute.  Only statuses with a
+C<created_at> time greater than C<since> will be returned by the API call.
+
+=back
+
+=head1 REST API Methods
+
+These methods are provided when trait C<API::REST> is included in the C<traits>
+option to C<new>.
+
+Several of these methods accept a user ID as the C<id> parameter.  The user ID
+can be either a screen name, or the users numeric ID.  To disambiguate, use
+the C<screen_name> or C<user_id> parameters, instead.
+
+For example, These calls are equivalent:
+
+    $nt->create_friend('perl_api');    # screen name
+    $nt->create_friend(1564061);       # numeric ID
+    $nt->create_friend({ id => 'perl_api' });
+    $nt->create_friend({ screen_name => 'perl_api' });
+    $nt->create_friend({ user_id     => 1564061 });
+
+However user_id 911 and screen_name 911 are separate Twitter accounts.  These
+calls are NOT equivalent:
+
+    $nt->create_friend(911); # interpreted as screen name
+    $nt->create_friend({ user_id => 911 }); # screen name: richellis
+
+Whenever the C<id> parameter is required and C<user_id> and C<screen_name> are
+also parameters, using any one of them satisfies the requirement.
+
+
+
+=over 4
+
+=item B<block_exists>
+
+=item B<block_exists(id)>
+
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name
+
+=item Required: id
+
+=back
+
+Returns if the authenticating user is blocking a target user. Will return the blocked user's
+object if a block exists, and error with HTTP 404 response code otherwise.
+
+
+Returns: BasicUser
+
+=item B<blocking>
+
+=item B<blocking(page)>
+
+
+
+=over 4
+
+=item Parameters: page
+
+=item Required: I<none>
+
+=back
+
+Returns an array of user objects that the authenticating user is blocking.
+
+
+Returns: ArrayRef[BasicUser]
+
+=item B<blocking_ids>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns an array of numeric user ids the authenticating user is blocking.
+
+
+Returns: ArrayRef[Int]
+
+=item B<create_block>
+
+=item B<create_block(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Blocks the user specified in the ID parameter as the authenticating user.
+Returns the blocked user when successful.  You can find out more about
+blocking in the Twitter Support Knowledge Base.
+
+
+Returns: BasicUser
+
+=item B<create_favorite>
+
+=item B<create_favorite(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Favorites the status specified in the ID parameter as the
+authenticating user.  Returns the favorite status when successful.
+
+
+Returns: Status
+
+=item B<create_friend>
+
+=item B<create_friend(id)>
+
+
+=item alias: follow_new
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name, follow
+
+=item Required: id
+
+=back
+
+Befriends the user specified in the ID parameter as the authenticating user.
+Returns the befriended user when successful.  Returns a string describing the
+failure condition when unsuccessful.
+
+
+Returns: BasicUser
+
+=item B<create_saved_search>
+
+=item B<create_saved_search(query)>
+
+
+
+=over 4
+
+=item Parameters: query
+
+=item Required: query
+
+=back
+
+Creates a saved search for the authenticated user.
+
+
+Returns: SavedSearch
+
+=item B<destroy_block>
+
+=item B<destroy_block(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Un-blocks the user specified in the ID parameter as the authenticating user.
+Returns the un-blocked user when successful.
+
+
+Returns: BasicUser
+
+=item B<destroy_direct_message>
+
+=item B<destroy_direct_message(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Destroys the direct message specified in the required ID parameter.
+The authenticating user must be the recipient of the specified direct
+message.
+
+
+Returns: DirectMessage
+
+=item B<destroy_favorite>
+
+=item B<destroy_favorite(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Un-favorites the status specified in the ID parameter as the
+authenticating user.  Returns the un-favorited status.
+
+
+Returns: Status
+
+=item B<destroy_friend>
+
+=item B<destroy_friend(id)>
+
+
+=item alias: unfollow
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name
+
+=item Required: id
+
+=back
+
+Discontinues friendship with the user specified in the ID parameter as the
+authenticating user.  Returns the un-friended user when successful.
+Returns a string describing the failure condition when unsuccessful.
+
+
+Returns: BasicUser
+
+=item B<destroy_saved_search>
+
+=item B<destroy_saved_search(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Destroys a saved search. The search, specified by C<id>, must be owned
+by the authenticating user.
+
+
+Returns: SavedSearch
+
+=item B<destroy_status>
+
+=item B<destroy_status(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Destroys the status specified by the required ID parameter.  The
+authenticating user must be the author of the specified status.
+
+
+Returns: Status
+
+=item B<direct_messages>
+
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns a list of the 20 most recent direct messages sent to the authenticating
+user including detailed information about the sending and recipient users.
+
+
+Returns: ArrayRef[DirectMessage]
+
+=item B<disable_notifications>
+
+=item B<disable_notifications(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Disables notifications for updates from the specified user to the
+authenticating user.  Returns the specified user when successful.
+
+
+Returns: BasicUser
+
+=item B<enable_notifications>
+
+=item B<enable_notifications(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Enables notifications for updates from the specified user to the
+authenticating user.  Returns the specified user when successful.
+
+
+Returns: BasicUser
+
+=item B<end_session>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Ends the session of the authenticating user, returning a null cookie.
+Use this method to sign users out of client-facing applications like
+widgets.
+
+
+Returns: Error
+
+=item B<favorites>
+
+
+
+=over 4
+
+=item Parameters: id, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent favorite statuses for the authenticating
+user or user specified by the ID parameter.
+
+
+Returns: ArrayRef[Status]
+
+=item B<followers>
+
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name, cursor
+
+=item Required: I<none>
+
+=back
+
+Returns a reference to an array of the user's followers.  If C<id>, C<user_id>,
+or C<screen_name> is not specified, the followers of the authenticating user are
+returned.  The returned users are ordered from most recently followed to least
+recently followed.
+
+Use the optional C<cursor> parameter to retrieve users in pages of 100.  When
+the C<cursor> parameter is used, the return value is a reference to a hash with
+keys C<previous_cursor>, C<next_cursor>, and C<users>.  The value of C<users>
+is a reference to an array of the user's friends. The result set isn't
+guaranteed to be 100 every time as suspended users will be filtered out.  Set
+the optional C<cursor> parameter to -1 to get the first page of users.  Set it
+to the prior return's value of C<previous_cursor> or C<next_cursor> to page
+forward or backwards.  When there are no prior pages, the value of
+C<previous_cursor> will be 0.  When there are no subsequent pages, the value of
+C<next_cursor> will be 0.
+
+
+Returns: HashRef|ArrayRef[User]
+
+=item B<followers_ids>
+
+=item B<followers_ids(id)>
+
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name, cursor
+
+=item Required: id
+
+=back
+
+Returns a reference to an array of numeric IDs for every user following the
+specified user.
+
+Use the optional C<cursor> parameter to retrieve IDs in pages of 5000.  When
+the C<cursor> parameter is used, the return value is a reference to a hash with
+keys C<previous_cursor>, C<next_cursor>, and C<ids>.  The value of C<ids> is a
+reference to an array of IDS of the user's followers. Set the optional C<cursor>
+parameter to -1 to get the first page of IDs.  Set it to the prior return's
+value of C<previous_cursor> or C<next_cursor> to page forward or backwards.
+When there are no prior pages, the value of C<previous_cursor> will be 0.  When
+there are no subsequent pages, the value of C<next_cursor> will be 0.
+
+
+Returns: HashRef|ArrayRef[Int]
+
+=item B<friends>
+
+
+=item alias: following
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name, cursor
+
+=item Required: I<none>
+
+=back
+
+Returns a reference to an array of the user's friends.  If C<id>, C<user_id>,
+or C<screen_name> is not specified, the friends of the authenticating user are
+returned.  The returned users are ordered from most recently followed to least
+recently followed.
+
+Use the optional C<cursor> parameter to retrieve users in pages of 100.  When
+the C<cursor> parameter is used, the return value is a reference to a hash with
+keys C<previous_cursor>, C<next_cursor>, and C<users>.  The value of C<users>
+is a reference to an array of the user's friends. The result set isn't
+guaranteed to be 100 every time as suspended users will be filtered out.  Set
+the optional C<cursor> parameter to -1 to get the first page of users.  Set it
+to the prior return's value of C<previous_cursor> or C<next_cursor> to page
+forward or backwards.  When there are no prior pages, the value of
+C<previous_cursor> will be 0.  When there are no subsequent pages, the value of
+C<next_cursor> will be 0.
+
+
+Returns: Hashref|ArrayRef[User]
+
+=item B<friends_ids>
+
+=item B<friends_ids(id)>
+
+
+=item alias: following_ids
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name, cursor
+
+=item Required: id
+
+=back
+
+Returns a reference to an array of numeric IDs for every user followed the
+specified user.
+
+Use the optional C<cursor> parameter to retrieve IDs in pages of 5000.  When
+the C<cursor> parameter is used, the return value is a reference to a hash with
+keys C<previous_cursor>, C<next_cursor>, and C<ids>.  The value of C<ids> is a
+reference to an array of IDS of the user's friends. Set the optional C<cursor>
+parameter to -1 to get the first page of IDs.  Set it to the prior return's
+value of C<previous_cursor> or C<next_cursor> to page forward or backwards.
+When there are no prior pages, the value of C<previous_cursor> will be 0.  When
+there are no subsequent pages, the value of C<next_cursor> will be 0.
+
+
+Returns: HashRef|ArrayRef[Int]
+
+=item B<friends_timeline>
+
+
+=item alias: following_timeline
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent statuses posted by the authenticating user
+and that user's friends. This is the equivalent of /home on the Web.
+
+
+Returns: ArrayRef[Status]
+
+=item B<friendship_exists>
+
+=item B<friendship_exists(user_a, user_b)>
+
+
+=item alias: relationship_exists
+
+=item alias: follows
+
+
+=over 4
+
+=item Parameters: user_a, user_b
+
+=item Required: user_a, user_b
+
+=back
+
+Tests for the existence of friendship between two users. Will return true if
+user_a follows user_b, otherwise will return false.
+
+
+Returns: Bool
+
+=item B<home_timeline>
+
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent statuses, including retweets, posted by the
+authenticating user and that user's friends. This is the equivalent of
+/timeline/home on the Web.
+
+
+Returns: ArrayRef[Status]
+
+=item B<mentions>
+
+
+=item alias: replies
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent mentions (statuses containing @username) for the
+authenticating user.
+
+
+Returns: ArrayRef[Status]
+
+=item B<new_direct_message>
+
+=item B<new_direct_message(user, text)>
+
+
+
+=over 4
+
+=item Parameters: user, text, screen_name, user_id
+
+=item Required: user, text
+
+=back
+
+Sends a new direct message to the specified user from the authenticating user.
+Requires both the user and text parameters.  Returns the sent message when
+successful.  In order to support numeric screen names, the C<screen_name> or
+C<user_id> parameters may be used instead of C<user>.
+
+
+Returns: DirectMessage
+
+=item B<public_timeline>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent statuses from non-protected users who have
+set a custom user icon.  Does not require authentication.  Note that
+the public timeline is cached for 60 seconds so requesting it more
+often than that is a waste of resources.
+
+If user credentials are provided, C<public_timeline> calls are authenticated,
+so they count against the authenticated user's rate limit.  Use C<<
+->public_timeline({ authenticate => 0 }) >> to make an unauthenticated call
+which will count against the calling IP address' rate limit, instead.
+
+
+Returns: ArrayRef[Status]
+
+=item B<rate_limit_status>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns the remaining number of API requests available to the
+authenticated user before the API limit is reached for the current hour.
+
+Use C<< ->rate_limit_status({ authenticate => 0 }) >> to force an
+unauthenticated call, which will return the status for the IP address rather
+than the authenticated user. (Note: for a web application, this is the server's
+IP address.)
+
+
+Returns: RateLimitStatus
+
+=item B<report_spam>
+
+=item B<report_spam(id)>
+
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name
+
+=item Required: id
+
+=back
+
+The user specified in the id is blocked by the authenticated user and reported as a spammer.
+
+
+Returns: User
+
+=item B<retweet>
+
+=item B<retweet(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Retweets a tweet. Requires the id parameter of the tweet you are retweeting.
+Returns the original tweet with retweet details embedded.
+
+
+Returns: Status
+
+=item B<retweeted_by_me>
+
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent retweets posted by the authenticating user.
+
+
+Returns: ArrayRef[Status]
+
+=item B<retweeted_to_me>
+
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent retweets posted by the authenticating user's friends.
+
+
+Returns: ArrayRef[Status]
+
+=item B<retweets>
+
+=item B<retweets(id)>
+
+
+
+=over 4
+
+=item Parameters: id, count
+
+=item Required: id
+
+=back
+
+Returns up to 100 of the first retweets of a given tweet.
+
+
+Returns: Arrayref[Status]
+
+=item B<retweets_of_me>
+
+
+=item alias: rewtweeted_of_me
+
+
+=over 4
+
+=item Parameters: since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent tweets of the authenticated user that have been
+retweeted by others.
+
+
+Returns: ArrayRef[Status]
+
+=item B<saved_searches>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns the authenticated user's saved search queries.
+
+
+Returns: ArrayRef[SavedSearch]
+
+=item B<sent_direct_messages>
+
+
+
+=over 4
+
+=item Parameters: since_id, max_id, page
+
+=item Required: I<none>
+
+=back
+
+Returns a list of the 20 most recent direct messages sent by the authenticating
+user including detailed information about the sending and recipient users.
+
+
+Returns: ArrayRef[DirectMessage]
+
+=item B<show_friendship>
+
+=item B<show_friendship(id)>
+
+
+=item alias: show_relationship
+
+
+=over 4
+
+=item Parameters: source_id, source_screen_name, target_id, target_id_name
+
+=item Required: id
+
+=back
+
+Returns detailed information about the relationship between two users.
+
+
+Returns: Relationship
+
+=item B<show_saved_search>
+
+=item B<show_saved_search(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Retrieve the data for a saved search, by ID, owned by the authenticating user.
+
+
+Returns: SavedSearch
+
+=item B<show_status>
+
+=item B<show_status(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Returns a single status, specified by the id parameter.  The
+status's author will be returned inline.
+
+
+Returns: Status
+
+=item B<show_user>
+
+=item B<show_user(id)>
+
+
+
+=over 4
+
+=item Parameters: id
+
+=item Required: id
+
+=back
+
+Returns extended information of a given user, specified by ID or screen
+name as per the required id parameter.  This information includes
+design settings, so third party developers can theme their widgets
+according to a given user's preferences. You must be properly
+authenticated to request the page of a protected user.
+
+
+Returns: ExtendedUser
+
+=item B<test>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns the string "ok" status code.
+
+
+Returns: Str
+
+=item B<trends_available>
+
+
+
+=over 4
+
+=item Parameters: lat, long
+
+=item Required: I<none>
+
+=back
+
+Returns the locations with trending topic information. The response is an
+array of "locations" that encode the location's WOEID (a Yahoo!  Where On Earth
+ID L<http://developer.yahoo.com/geo/geoplanet/>) and some other human-readable
+information such as a the location's canonical name and country.
+
+When the optional C<lat> and C<long> parameters are passed, the available trend
+locations are sorted by distance from that location, nearest to farthest.
+
+Use the WOEID returned in the location object to query trends for a specific
+location.
+
+
+Returns: ArrayRef[Location]
+
+=item B<trends_location>
+
+=item B<trends_location(woeid)>
+
+
+
+=over 4
+
+=item Parameters: woeid
+
+=item Required: woeid
+
+=back
+
+Returns the top 10 trending topics for a specific location. The response is an
+array of "trend" objects that encode the name of the trending topic, the query
+parameter that can be used to search for the topic on Search, and the direct
+URL that can be issued against Search.  This information is cached for five
+minutes, and therefore users are discouraged from querying these endpoints
+faster than once every five minutes.  Global trends information is also
+available from this API by using a WOEID of 1.
+
+
+Returns: ArrayRef[Trend]
+
+=item B<update>
+
+=item B<update(status)>
+
+
+
+=over 4
+
+=item Parameters: status, lat, long, in_reply_to_status_id
+
+=item Required: status
+
+=back
+
+Updates the authenticating user's status.  Requires the status parameter
+specified.  A status update with text identical to the authenticating
+user's current status will be ignored.
+
+The optional C<lat> and C<long> parameters add location data to the status for
+a geo enabled account. They expect values in the ranges -90.0 to +90.0 and
+-180.0 to +180.0 respectively.  They are ignored unless the user's
+C<geo_enabled> field is true.
+
+
+Returns: Status
+
+=item B<update_delivery_device>
+
+=item B<update_delivery_device(device)>
+
+
+
+=over 4
+
+=item Parameters: device
+
+=item Required: device
+
+=back
+
+Sets which device Twitter delivers updates to for the authenticating
+user.  Sending none as the device parameter will disable IM or SMS
+updates.
+
+
+Returns: BasicUser
+
+=item B<update_profile>
+
+
+
+=over 4
+
+=item Parameters: name, email, url, location, description
+
+=item Required: I<none>
+
+=back
+
+Sets values that users are able to set under the "Account" tab of their
+settings page. Only the parameters specified will be updated; to only
+update the "name" attribute, for example, only include that parameter
+in your request.
+
+
+Returns: ExtendedUser
+
+=item B<update_profile_background_image>
+
+=item B<update_profile_background_image(image)>
+
+
+
+=over 4
+
+=item Parameters: image
+
+=item Required: image
+
+=back
+
+Updates the authenticating user's profile background image. The C<image>
+parameter must be an arrayref with the same interpretation as the C<image>
+parameter in the C<update_profile_image> method.  See that method's
+documentation for details.
+
+
+Returns: ExtendedUser
+
+=item B<update_profile_colors>
+
+
+
+=over 4
+
+=item Parameters: profile_background_color, profile_text_color, profile_link_color, profile_sidebar_fill_color, profile_sidebar_border_color
+
+=item Required: I<none>
+
+=back
+
+Sets one or more hex values that control the color scheme of the
+authenticating user's profile page on twitter.com.  These values are
+also returned in the /users/show API method.
+
+
+Returns: ExtendedUser
+
+=item B<update_profile_image>
+
+=item B<update_profile_image(image)>
+
+
+
+=over 4
+
+=item Parameters: image
+
+=item Required: image
+
+=back
+
+Updates the authenticating user's profile image.  The C<image> parameter is an
+arrayref with the following interpretation:
+
+  [ $file ]
+  [ $file, $filename ]
+  [ $file, $filename, Content_Type => $mime_type ]
+  [ undef, $filename, Content_Type => $mime_type, Content => $raw_image_data ]
+
+The first value of the array (C<$file>) is the name of a file to open.  The
+second value (C<$filename>) is the name given to Twitter for the file.  If
+C<$filename> is not provided, the basename portion of C<$file> is used.  If
+C<$mime_type> is not provided, it will be provided automatically using
+L<LWP::MediaTypes::guess_media_type()>.
+
+C<$raw_image_data> can be provided, rather than opening a file, by passing
+C<undef> as the first array value.
+
+
+Returns: ExtendedUser
+
+=item B<user_timeline>
+
+
+
+=over 4
+
+=item Parameters: id, user_id, screen_name, since_id, max_id, count, page
+
+=item Required: I<none>
+
+=back
+
+Returns the 20 most recent statuses posted from the authenticating
+user. It's also possible to request another user's timeline via the id
+parameter. This is the equivalent of the Web /archive page for
+your own user, or the profile page for a third party.
+
+
+Returns: ArrayRef[Status]
+
+=item B<users_search>
+
+=item B<users_search(q)>
+
+
+=item alias: find_people
+
+=item alias: search_users
+
+
+=over 4
+
+=item Parameters: q, per_page, page
+
+=item Required: q
+
+=back
+
+Run a search for users similar to Find People button on Twitter.com; the same
+results returned by people search on Twitter.com will be returned by using this
+API (about being listed in the People Search).  It is only possible to retrieve
+the first 1000 matches from this API.
+
+
+Returns: ArrayRef[Users]
+
+=item B<verify_credentials>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns an HTTP 200 OK response code and a representation of the
+requesting user if authentication was successful; returns a 401 status
+code and an error message if not.  Use this method to test if supplied
+user credentials are valid.
+
+
+Returns: ExtendedUser
+
+
+=back
+
+
+
+=head1 Search API Methods
+
+These methods are provided when trait C<API::Search> is included in the C<traits>
+option to C<new>.
+
+
+
+=over 4
+
+=item B<search>
+
+=item B<search(q)>
+
+
+
+=over 4
+
+=item Parameters: q, callback, lang, rpp, page, since_id, geocode, show_user
+
+=item Required: q
+
+=back
+
+Returns a HASH reference with some meta-data about the query including the
+C<next_page>, C<refresh_url>, and C<max_id>. The statuses are returned in
+C<results>.  To iterate over the results, use something similar to:
+
+    my $r = $nt->search($searh_term);
+    for my $status ( @{$r->{results}} ) {
+        print "$status->{text}\n";
+    }
+
+
+Returns: HashRef
+
+=item B<trends>
+
+
+
+=over 4
+
+=item Parameters: I<none>
+
+=item Required: I<none>
+
+=back
+
+Returns the top ten queries that are currently trending on Twitter.  The
+response includes the time of the request, the name of each trending topic, and
+the url to the Twitter Search results page for that topic.
+
+
+Returns: ArrayRef[Query]
+
+=item B<trends_current>
+
+=item B<trends_current(exclude)>
+
+
+
+=over 4
+
+=item Parameters: exclude
+
+=item Required: I<none>
+
+=back
+
+Returns the current top ten trending topics on Twitter.  The response includes
+the time of the request, the name of each trending topic, and query used on
+Twitter Search results page for that topic.
+
+
+Returns: HashRef
+
+=item B<trends_daily>
+
+
+
+=over 4
+
+=item Parameters: date, exclude
+
+=item Required: I<none>
+
+=back
+
+Returns the top 20 trending topics for each hour in a given day.
+
+
+Returns: HashRef
+
+=item B<trends_weekly>
+
+
+
+=over 4
+
+=item Parameters: date, exclude
+
+=item Required: I<none>
+
+=back
+
+Returns the top 30 trending topics for each day in a given week.
+
+
+Returns: HashRef
+
+
+=back
+
+
+
+=head1 TwitterVision API Methods
+
+These methods are provided when trait C<API::TwitterVision> is included in the
+C<traits> option to C<new>.
+
+
+
+=over 4
+
+=item B<current_status>
+
+=item B<current_status(id)>
+
+
+
+=over 4
+
+=item Parameters: id, callback
+
+=item Required: id
+
+=back
+
+Get the current location and status of a user.
+
+
+Returns: HashRef
+
+=item B<update_twittervision>
+
+=item B<update_twittervision(location)>
+
+
+
+=over 4
+
+=item Parameters: location
+
+=item Required: location
+
+=back
+
+Updates the location for the authenticated user.
+
+
+Returns: HashRef
+
+
+=back
+
+
+
+=head1 Lists API
+
+For Lists API support, add trait C<API::Lists> to the C<traits> option in
+C<new>.
+
+For full documentation of the Lists API, see L<Net::Twitter::Role::API::Lists>.
+
+  use Net::Twitter;
+
+  my $nt = Net::Twitter->new(traits => ['API::Lists'], ...);
+
+  $list = $nt->create_list($owner, { name => $name, description => $desc });
+  $list = $nt->update_list($owner, $list_id, { description => $desc });
+
+  $lists = $nt->get_lists($owner);
+  $lists = $nt->list_lists($owner);
+
+  $list = $nt->get_list($owner, $list_id);
+  $list = $nt->delete_list($owner, $list_id);
+
+  $statuses = $nt->list_statuses($owner, $list_id);
+
+  $lists = $nt->list_memberships($owner);
+  $lists = $nt->list_subscriptions($owner);
+
+  $users = $nt->list_members($owner, $list_id);
+
+  $user_or_undef = $nt->list_members($owner, $list_id, { id => $user_id });
+
+  $user = $nt->add_list_member($owner, $list_id, $user_id);
+
+  $user = $nt->delete_list_member($owner, $list_id, $user_id);
+  $user = $nt->remove_list_member($owner, $list_id, $user_id);
+
+  $user_or_undef = $nt->is_list_member($owner, $list_id, $user_id);
+
+  $users = $nt->list_subscribers($owner, $list_id);
+
+  $list = $nt->subscribe_list($owner, $list_id);
+  $list = $nt->unsubscribe_list($owner, $list_id);
+
+  $user_or_undef = $nt->is_subscribed_list($owner, $list_id, $user_id);
+  $user_or_undef = $nt->is_list_subscriber($owner, $list_id, $user_id);
+
+=head1 LEGACY COMPATIBILITY
+
+This version of C<Net::Twitter> automatically includes the C<Legacy> trait if
+no C<traits> option is provided to C<new>.  Therefore, these 2 calls are
+currently equivalent:
+
+    $nt = Net::Twitter->new(username => $user, password => $passwd);
+    $nt = Net::Twitter->new(
+        username => $user,
+        password => $passwd,
+        traits   => ['Legacy'],
+    );
+
+Thus, existing applications written for a prior version of C<Net::Twitter>
+should continue to run, without modification, with this version.
+
+In a future release, the default traits may change.  Prior to that change,
+however, a nearer future version will add a warning if no C<traits> option is
+provided to C<new>.  To avoid this warning, add an appropriate C<traits>
+option to your existing application code.
+
+=head1 ERROR HANDLING
+
+There are currently two strategies for handling errors: throwing exceptions and
+wrapping errors.  Exception handling is the newer, recommended strategy.
+
+=head2 Wrapping Errors
+
+When trait C<WrapError> is specified (or C<Legacy>, which includes trait
+C<WrapError>), C<Net::Twitter> returns undef on error.  To retrieve information
+about the error, use methods C<http_code>, C<http_message>, and C<get_error>.
+These methods are described in the L<Net::Twitter::Role::WrapError>.
+
+    if ( my $followers = $nt->followers ) {
+        for my $follower ( @$followers ) {
+            #...
+        }
+    }
+    else {
+        warn "HTTP message: ", $nt->http_message, "\n";
+    }
+
+Since an error is stored in the object instance, this error handling strategy
+is problematic when using a user agent like C<LWP::UserAgent::POE> that
+provides concurrent requests.  The error for one request can be overwritten by
+a concurrent request before you have an opportunity to access it.
+
+=head2 Exception Handling
+
+When C<Net::Twitter> encounters a Twitter API error or a network error, it
+throws a C<Net::Twitter::Error> object.  You can catch and process these
+exceptions by using C<eval> blocks and testing $@:
+
+    eval {
+        my $statuses = $nt->friends_timeline(); # this might die!
+
+        for my $status ( @$statuses ) {
+            #...
+        }
+    };
+    if ( $@ ) {
+        # friends_timeline encountered an error
+
+        if ( blessed $@ && $@->isa('Net::Twitter::Error') ) {
+            #... use the thrown error obj
+            warn $@->error;
+        }
+        else {
+            # something bad happened!
+            die $@;
+        }
+    }
+
+C<Net::Twitter::Error> stringifies to something reasonable, so if you don't need
+detailed error information, you can simply treat $@ as a string:
+
+    eval { $nt->update($status) };
+    if ( $@ ) {
+        warn "update failed because: $@\n";
+    }
+
+=head1 FAQ
+
+=over 4
+
+=item Why does C<< ->followers({ screen_name => $friend }) >> return I<my> followers instead of C<$friends>'s?
+
+First, check carefully to make sure you've spelled "screen_name" correctly.
+Twitter sometimes discards parameters it doesn't recognize.  In this case,
+the result is a list of your own followers---the same thing that would happen
+if you called C<followers> without the C<screen_name> parameter.
+
+=item How do I use the C<geocode> parameter in the Search API?
+
+The C<geocode> parameter value includes a latitude, longitude, and radius
+separated with commas.
+
+    $r = $nt->search({ geocode => "45.511795,-122.675629,25mi" });
+
+=back
+
+=head1 SEE ALSO
+
+=over 4
+
+=item L<Net::Twitter::Error>
+
+The C<Net::Twitter> exception object.
+
+=item L<http://apiwiki.twitter.com/Twitter-API-Documentation>
+
+This is the official Twitter API documentation. It describes the methods and their
+parameters in more detail and may be more current than the documentation provided
+with this module.
+
+=item L<LWP::UserAgent::POE>
+
+This LWP::UserAgent compatible class can be used in L<POE> based application
+along with Net::Twitter to provide concurrent, non-blocking requests.
+
+=item L<Catalyst::Authentication::Credential::Twitter>
+
+This module, by Jesse Stay, provides Twitter OAuth authentication support for
+the popular L<Catalyst> web application framework.
+
+=back
+
+=head1 SUPPORT
+
+Please report bugs to C<bug-net-twitter@rt.cpan.org>, or through the web
+interface at L<https://rt.cpan.org/Dist/Display.html?Queue=Net-Twitter>.
+
+Join the Net::Twitter IRC channel at L<irc://irc.perl.org/net-twitter>.
+
+Follow perl_api: L<http://twitter.com/perl_api>.
+
+Track Net::Twitter development at L<http://github.com/semifor/Net-Twitter>.
+
+=head1 ACKNOWLEDGEMENTS
+
+Many thanks to Chris Thompson <cpan@cthompson.com>, the original author of
+C<Net::Twitter> and all versions prior to 3.00.
+
+Also, thanks to Chris Prather (perigrin) for answering many design and
+implementation questions, especially with regards to Moose.
+
+=head1 AUTHOR
+
+Marc Mims <marc@questright.com> (@semifor on Twitter)
+
+=head1 CONTRIBUTORS
+
+Roberto Etcheverry <retcheverry@gmail.com> (@retcheverry on Twitter)
+
+=head1 LICENSE
+
+Copyright (c) 2009 Marc Mims
+
+The Twitter API itself, and the description text used in this module is:
+
+Copyright (c) 2009 Twitter
+
+This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
+=head1 DISCLAIMER OF WARRANTY
+
+BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
+ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE IS WITH
+YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL
+NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENSE, BE
+LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL,
+OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE
+THE SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+

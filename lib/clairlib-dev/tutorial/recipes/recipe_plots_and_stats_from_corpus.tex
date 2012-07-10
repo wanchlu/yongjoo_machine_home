@@ -1,0 +1,11 @@
+\subsubsection{Generate plots and statistics from a corpus}
+
+\begin{boxedverbatim}
+ input: indexed corpus
+ output: plots and stats
+
+ corpus_to_cos.pl -c chemical -o chemical.cos -b produced
+ cos_to_cosplots.pl -i chemical.cos
+ cos_to_histograms.pl -i chemical.cos
+ cos_to_stats.pl -i chemical.cos -o chemical.stats
+\end{boxedverbatim}

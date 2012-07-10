@@ -1,0 +1,23 @@
+\subsubsection{Generate synthetic network using Erdos/Renyi linking model}
+
+
+\begin{boxedverbatim}
+
+ output: synthetic graph
+
+# With n nodes and m edges 
+
+ generate_random_network.pl -o synthetic.graph \
+   -t erdos-renyi-gnm -n 100 -m 88
+
+# With n nodes and random edge with probability p
+
+ generate_random_network.pl -o synthetic.graph \
+   -t erdos-renyi-gnp -n 100 -p .1
+
+# Based on another graph
+
+ generate_random_network.pl -o synthetic.graph \
+   -i $CLAIRLIB/corpora/david_copperfield/adjnoun.graph \
+   -t erdos-renyi-gnp -p .1
+\end{boxedverbatim}

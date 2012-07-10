@@ -1,0 +1,254 @@
+=head1 NAME
+
+Mail::Message::Body::Encode - organize general message encodings
+
+=head1 SYNOPSIS
+
+ my Mail::Message $msg = ...;
+ my $decoded = $msg->decoded;
+ my $encoded = $msg->encode(mime_type => 'image/gif',
+     transfer_encoding => 'base64');
+
+ my $body = $msg->body;
+ my $decoded = $body->decoded;
+ my $encoded = $body->encode(transfer_encoding => '7bit');
+
+=head1 DESCRIPTION
+
+Manages the message's body encodings and decodings on request of the
+main program.  This package adds functionality to the L<Mail::Message::Body|Mail::Message::Body>
+class when the L<decoded()|Mail::Message::Body/"Constructing a body"> or L<encode()|Mail::Message::Body::Encode/"Constructing a body"> method is called.
+
+Four types of encodings are handled (in the right order)
+
+=over 4
+
+=item * eol encoding
+
+Various operating systems have different ideas about how to encode the
+line termination.  UNIX uses a LF character, MacOS uses a CR, and
+Windows uses a CR/LF combination.  Messages which are transported over
+Internet will always use the CRLF separator.
+
+=item * transfer encoding
+
+Messages transmitted over Internet have to be plain ASCII.  Complicated
+characters and binary files (like images and archives) must be encoded
+during transmission to an ASCII representation.
+
+The implementation of the required encoders and decoders is found in
+the L<Mail::Message::TransferEnc|Mail::Message::TransferEnc> set of packages.  The related
+manual page lists the transfer encodings which are supported.
+
+=item * mime-type translation
+
+NOT IMPLEMENTED YET
+
+=item * charset conversion
+
+=back
+
+=head1 METHODS
+
+=head2 Constructing a body
+
+$obj-E<gt>B<check>
+
+=over 4
+
+Check the content of the body not to include illegal characters.  Which
+characters are considered illegal depends on the encoding of this body.
+
+A body is returned which is checked.  This may be the body where this
+method is called upon, but also a new object, when serious changes had
+to be made.  If the check could not be made, because the decoder is not
+defined, then C<undef> is returned.
+
+=back
+
+$obj-E<gt>B<encode>(OPTIONS)
+
+=over 4
+
+Encode (translate) a L<Mail::Message::Body|Mail::Message::Body> into a different format.
+See the DESCRIPTION above.  Options which are not specified will not trigger
+conversions.
+
+ Option           --Default
+ charset            PERL if text
+ mime_type          undef
+ result_type        <same as source>
+ transfer_encoding  undef
+
+. charset => CODESET|'PERL'
+
+=over 4
+
+If the CODESET is explicitly specified (for instance C<iso-8859-10>, then
+the data is interpreted as raw bytes (blob), not as text.  However, in
+case of C<PERL>, it is considered to be an internal representation of
+characters (either latin1 or utf8 (not the same as utf-8), you should
+not know).
+
+=back
+
+. mime_type => STRING|FIELD
+
+=over 4
+
+Convert into the specified mime type, which can be specified as STRING
+or FIELD.  The FIELD is a L<Mail::Message::Field|Mail::Message::Field>, and the STRING is
+converted in such object before use.
+
+=back
+
+. result_type => CLASS
+
+=over 4
+
+The type of body to be created when the body is changed to fulfill the request
+on re-coding.  Also the intermediate stages in the translation process (if
+needed) will use this type. CLASS must extend L<Mail::Message::Body|Mail::Message::Body>.
+
+=back
+
+. transfer_encoding => STRING|FIELD
+
+=back
+
+$obj-E<gt>B<encoded>
+
+=over 4
+
+Encode the body to a format what is acceptable to transmit or write to
+a folder file.  This returns the body where this method was called
+upon when everything was already prepared, or a new encoded body
+otherwise.  In either case, the body is checked.
+
+=back
+
+$obj-E<gt>B<unify>(BODY)
+
+=over 4
+
+Unify the type of the given BODY objects with the type of the called
+body.  C<undef> is returned when unification is impossible.  If the
+bodies have the same settings, the BODY object is returned unchanged.
+
+Examples:
+
+ my $bodytype = Mail::Message::Body::Lines;
+ my $html  = $bodytype->new(mime_type=>'text/html', data => []);
+ my $plain = $bodytype->new(mime_type=>'text/plain', ...);
+
+ my $unified = $html->unify($plain);
+ # $unified is the data of plain translated to html (if possible).
+
+=back
+
+=head2 About the payload
+
+$obj-E<gt>B<dispositionFilename>([DIRECTORY])
+
+=over 4
+
+Returns the name which can be used as filename to store the information
+in the indicated DIRECTORY. To get a filename, various fields are searched
+for C<filename> and C<name> attributes.  Without DIRECTORY, the name found
+will be returned.
+
+Only the basename of the found name will be used, for security reasons:
+otherwise, it may be possible to access other directories than the
+one indicated.  If no name was found, or the name is already in use,
+then an unique name is generated.
+
+=back
+
+$obj-E<gt>B<isBinary>
+
+=over 4
+
+Returns true when the un-encoded message is binary data.  This information
+is retrieved from knowledge provided by L<MIME::Types|MIME::Types>.
+
+=back
+
+$obj-E<gt>B<isText>
+
+=over 4
+
+Returns true when the un-encoded message contains printable
+text.
+
+=back
+
+=head2 Internals
+
+$obj-E<gt>B<addTransferEncHandler>(NAME, CLASS|OBJECT)
+
+Mail::Message::Body-E<gt>B<addTransferEncHandler>(NAME, CLASS|OBJECT)
+
+=over 4
+
+Relate the NAMEd transfer encoding to an OBJECTs or object of the specified
+CLASS.  In the latter case, an object of that CLASS will be created on the
+moment that one is needed to do encoding or decoding.
+
+The CLASS or OBJECT must extend L<Mail::Message::TransferEnc|Mail::Message::TransferEnc>.  It will
+replace existing class and object for this NAME.
+
+Why aren't you contributing this class to MailBox?
+
+=back
+
+$obj-E<gt>B<getTransferEncHandler>(TYPE)
+
+=over 4
+
+Get the transfer encoder/decoder which is able to handle TYPE, or return
+undef if there is no such handler.
+
+=back
+
+=head1 DIAGNOSTICS
+
+Warning: Charset $name is not known
+
+=over 4
+
+The encoding or decoding of a message body encounters a character set which
+is not understood by Perl's Encode module.
+
+=back
+
+Warning: No decoder defined for transfer encoding $name.
+
+=over 4
+
+The data (message body) is encoded in a way which is not currently understood,
+therefore no decoding (or recoding) can take place.
+
+=back
+
+Warning: No encoder defined for transfer encoding $name.
+
+=over 4
+
+The data (message body) has been decoded, but the required encoding is
+unknown.  The decoded data is returned.
+
+=back
+
+=head1 SEE ALSO
+
+This module is part of Mail-Box distribution version 2.094,
+built on April 06, 2010. Website: F<http://perl.overmeer.net/mailbox/>
+
+=head1 LICENSE
+
+Copyrights 2001-2010 by Mark Overmeer. For other contributors see ChangeLog.
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+See F<http://www.perl.com/perl/misc/Artistic.html>
+

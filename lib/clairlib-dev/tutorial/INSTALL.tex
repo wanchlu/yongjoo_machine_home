@@ -1,0 +1,417 @@
+
+
+This guide explains how to install both Clairlib distributions, Clairlib-Core and Clairlib-Ext. To install Clairlib-core, follow the instructions in the section immediately below. To install Clairlib-Ext, first follow the instructions for installing
+Clairlib-Core, then follow those for Clairlib-Ext itself. Clairlib-Ext requires an installed version of Clairlib-Core in order to run; it is not a stand-alone distribution.
+
+\section{Install and Test Clairlib-Core\label{Install_and_Test_Clairlib-Core}\index{Install and Test Clairlib-Core}}
+\subsection*{System Requirements\label{System_Requirements}\index{System Requirements}}
+
+
+Clairlib-Core requires Perl 5.8.2 or greater. Before you proceed, confirm that the version of Perl you are running is at least this recent by entering the following at the shell prompt.
+
+\begin{verbatim}
+        perl -v
+\end{verbatim}
+\subsection*{Install CPAN Libraries\label{Install_CPAN_Libraries}\index{Install CPAN Libraries}}
+
+
+Clairlib-Core depends on access to the following Perl modules:
+
+\begin{description}
+
+\item[{BerkeleyDB}] \mbox{}
+\item[{Carp}] \mbox{}
+\item[{File::Type}] \mbox{}
+\item[{Getopt::Long}] \mbox{}
+\item[{Graph::Directed}] \mbox{}
+\item[{Hash::Flatten}] \mbox{}
+\item[{HTML::LinkExtractor}] \mbox{}
+\item[{HTML::Parse}] \mbox{}
+\item[{HTML::Strip}] \mbox{}
+\item[{IO::File}] \mbox{}
+\item[{IO::Handle}] \mbox{}
+\item[{IO::Pipe}] \mbox{}
+\item[{Lingua::Stem}] \mbox{}
+\item[{Lingua::EN::Sentence}] \mbox{}
+\item[{Math::MatrixReal}] \mbox{}
+\item[{Math::Random}] \mbox{}
+\item[{MLDBM}] \mbox{}
+\item[{PDL}] \mbox{}
+\item[{POSIX}] \mbox{}
+\item[{Scalar::Util}] \mbox{}
+\item[{Statistics::ChisqIndep}] \mbox{}
+\item[{Storable}] \mbox{}
+\item[{Test::More}] \mbox{}
+\item[{Text::Sentence}] \mbox{}
+\item[{XML::Parser}] \mbox{}
+\item[{XML::Simple}] \mbox{}\end{description}
+
+
+There are multiple approaches to locating and installing these modules; using the automated CPAN installer, which is bundled with Perl, is perhaps the quickest and easiest. To do so, enter the following at the shell prompt:
+
+\begin{verbatim}
+        $ perl -MCPAN -e shell
+\end{verbatim}
+
+
+If you have not yet configured the CPAN installer, then you'll have to do so this one time. If you do not know the answer to any of the questions asked, simply hit enter, and the default options will likely suit your environment adequately. However, when asked about parameter options for the \texttt{perl Makefile.PL} command, users without root permissions or who otherwise wish to install Perl libraries within their personal \textbf{\$HOME} directory structure should enter the suggested path when prompted:
+
+\begin{verbatim}
+        Your choice:  ] PREFIX=~/perl
+\end{verbatim}
+
+
+This will cause the CPAN installer to install all modules it downloads and tests into \textbf{\$HOME/perl}, which means that all subdirectories of this directory that contain Perl modules will need to be added to Perl's \texttt{@INC} variable so that they will be found when needed (see next section for further explanation).
+
+
+
+As a side note, if you ever need to reconfigure the installer, type at the shell prompt:
+
+\begin{verbatim}
+        $ perl -MCPAN -e shell
+        cpan>o conf init
+\end{verbatim}
+
+
+After configuration (if needed), return to the CPAN shell prompt,
+
+\begin{verbatim}
+        cpan>
+\end{verbatim}
+
+
+and type the following to upgrade the CPAN installer to the latest version:
+
+\begin{verbatim}
+        cpan>install Bundle::CPAN
+        cpan>q
+\end{verbatim}
+
+
+If asked whether to prepend the installation of required libraries to the queue, hit return (or enter \texttt{yes}). After quitting the shell, type the following to install or upgrade \texttt{Module::Build} and make it the preferred installer:
+
+\begin{verbatim}
+        $ perl -MCPAN -e shell
+        cpan>install Module::Build
+        cpan>o conf prefer_installer MB
+        cpan>o conf commit
+        cpan>q
+\end{verbatim}
+
+
+Finally, install each of the following dependencies (if you are at all unsure whether the latest versions of each have already been installed) by entering the following at the shell prompt:
+
+\begin{verbatim}
+        $ perl -MCPAN -e shell
+        cpan>install BerkeleyDB
+        cpan>install Carp
+        cpan>install File::Type
+        cpan>install Getopt::Long
+        cpan>install Graph::Directed
+        cpan>install HTML::LinkExtractor
+        cpan>install HTML::Parse
+        cpan>install HTML::Strip
+        cpan>install IO::File
+        cpan>install IO::Handle
+        cpan>install IO::Pipe
+        cpan>install Lingua::Stem
+        cpan>install Math::MatrixReal
+        cpan>install Math::Random
+        cpan>install MLDBM
+        cpan>install PDL
+        cpan>install POSIX
+        cpan>install Scalar::Util
+        cpan>install Statistics::ChisqIndep
+        cpan>install Storable
+        cpan>install Test::More
+        cpan>install Text::Sentence
+        cpan>install XML::Parser
+        cpan>install XML::Simple
+\end{verbatim}
+\subsection*{Configure Clairlib-Core\label{Configure_Clairlib-Core}\index{Configure Clairlib-Core}}
+
+
+Download the Clairlib-Core distribution (\textbf{clairlib-core.tar.gz}) into, say, the directory \textbf{\$HOME}. Then to install Clairlib-Core in \textbf{\$HOME/clairlib-core}, enter the following at the shell prompt:
+
+\begin{verbatim}
+        $ cd $HOME
+        $ gunzip clairlib-core.tar.gz
+        $ tar -xf clairlib-core.tar
+        $ cd clairlib-core/lib/Clair
+\end{verbatim}
+
+
+Then edit Config.pm, which is located in \textbf{clairlib-core/lib/Clair}. You will see the following message at the top of the file:
+
+\begin{verbatim}
+        #################################
+        # For Clairlib-core users:
+        # 1. Edit the value assigned to $CLAIRLIB_HOME and give it the value
+        #    of the path to your installation.
+        # 2. Edit the value assigned to $MEAD_HOME and give it the value
+        #    that points to your installation of MEAD.
+        # 3. Edit the value assigned to $EMAIL and give it an appropriate
+        #    value.
+\end{verbatim}
+
+
+Follow those instructions. In the case of our example, we would assign
+
+\begin{verbatim}
+        $CLAIRLIB_HOME=$HOME/clairlib-core
+\end{verbatim}
+
+
+and
+
+\begin{verbatim}
+        $MEAD_HOME=$HOME/mead
+\end{verbatim}
+
+
+where \textbf{\$HOME} must be replaced by an explicit path string such as \textbf{/home/username}. Also, note that the following MEAD variables reflect the structure of a standard MEAD installation and should typically be kept as assigned:
+
+\begin{verbatim}
+        $CIDR_HOME "$MEAD_HOME/bin/addons/cidr";
+        $PRMAIN    "$MEAD_HOME/bin/feature-scripts/lexrank/prmain";
+\end{verbatim}
+\subsection*{Test and Install the Clairlib-Core Modules\label{Test_and_Install_the_Clairlib-Core_Modules}\index{Test and Install the Clairlib-Core Modules}}
+
+
+Before testing and installing the Clairlib-core modules, you'll need to modify Perl's \texttt{@INC} variable to ensure that it includes 1) paths to all Clairlib dependencies (the required libraries installed above), and 2) the path to Clairlib's own modules (in the case of our example, \textbf{\$HOME/clairlib-core/lib}). The simplest way to do this is by modifying the contents of your \texttt{PERL5LIB} environment variable from the shell prompt:
+
+\begin{verbatim}
+        $ export PERL5LIB=$HOME/clairlib-core/lib:$HOME/perl/lib     (*)
+\end{verbatim}
+
+
+Here \textbf{\$HOME/clairlib-core/lib} is the path to Clairlib's own modules, while \textbf{\$HOME/perl} is the path to Clairlib's required modules, installed above (assuming that path is their location). However, doing this requires that you export \texttt{PERL5LIB} each time you invoke the shell environment, so a better way to modify \texttt{@INC} is the following:
+
+\begin{verbatim}
+        $ cd $HOME
+\end{verbatim}
+
+
+Edit \textbf{.profile} or the appropriate configuration file for your shell environment, or create it if it does not already exist. Add \texttt{(*)} to to the file, or prepend the necessary paths using colons, as in \texttt{(*)}. Save the file and enter:
+
+\begin{verbatim}
+        $ . .profile
+\end{verbatim}
+
+
+This way you will not have to export \texttt{PERL5LIB} each time you invoke the
+shell. Enter
+
+\begin{verbatim}
+        $ echo $PERL5LIB
+\end{verbatim}
+
+
+to confirm that your modifications have been applied.
+
+
+
+Now you may test your Clairlib-Core installation. Enter its directory, in the case of our example:
+
+\begin{verbatim}
+        $ cd $HOME/clairlib-core
+\end{verbatim}
+
+
+Then enter the following commands to test the Clairlib-Core modules:
+
+\begin{verbatim}
+        $ perl Makefile.PL
+        $ make
+        $ make test
+\end{verbatim}
+
+
+If you would like to have the Clairlib-Core modules installed for you, and you have the necessary (root) permissions to do so, you may install them by entering the following command:
+
+\begin{verbatim}
+        $ make install
+\end{verbatim}
+
+
+If, on the other hand, you have only local permissions, but you have a personal perl library located at, say, \textbf{\$HOME/perl} (as described earlier), then you can install Clairlib-Core there by entering the commands:
+
+\begin{verbatim}
+        $ perl Makefile.PL PREFIX=~/perl
+        $ make install
+\end{verbatim}
+\subsection*{Using the Clairlib-Core Modules\label{Using_the_Clairlib-Core_Modules}\index{Using the Clairlib-Core Modules}}
+
+
+To use the Clairlib-Core modules in a Perl script, you must add a path to the modules to Perl's \texttt{@INC} variable. You may use either 1) \textbf{\$CLAIRLIB\_HOME/lib}, where \texttt{\$CLAIRLIB\_HOME} is the path defined in \textbf{Config.pm}, or 2) \textbf{\$INSTALL\_PATH}, where \texttt{\$INSTALL\_PATH} is a path to the location of the installed Clairlib-Core modules (if you installed them as in the previous section, immediately above). Either of these paths can be added to \texttt{@INC} either by appending the path to the \texttt{PERL5LIB} environment variable or by putting a \texttt{use lib PATH} statement at the top of the script. See the beginning of the previous section above for a detailed explanation of how to modify the \texttt{PERL5LIB} variable.
+
+\section{Install and Test Clairlib-Ext\label{Install_and_Test_Clairlib-Ext}\index{Install and Test Clairlib-Ext}}
+
+
+The Clairlib-Ext distribution contains optional extensions to Clairlib-Core as well as functionality that depends on other software. The sections below explain how to configure different functionalities of Clairlib-Ext. As each is independent of the rest, you may configure as many or as few as you wish. This section provides instructions for the installation and testing of the Clairlib-ext modules itself.
+
+\subsection*{Sentence Segmentation using Adwait Ratnaparkhi's MxTerminator\label{Sentence_Segmentation_using_Adwait_Ratnaparkhi_s_MxTerminator}\index{Sentence Segmentation using Adwait Ratnaparkhi's MxTerminator}}
+
+
+To use MxTerminator for sentence segmentation, download the installation package from:
+
+
+
+\textsf{ftp://ftp.cis.upenn.edu/pub/adwait/jmx/jmx.tar.gz}.
+
+
+
+Putting the tarball in, say, \textbf{\$HOME/jmx}, enter the following to unpack:
+
+\begin{verbatim}
+        $ cd $HOME/jmx
+        $ gunzip jmx.tar.gz
+        $ tar -xf .tar
+\end{verbatim}
+
+
+Uncomment and modify the following lines in \textbf{clairlib-core/lib/Clair/Config.pm}. Point \texttt{\$JMX\_HOME} to the top directory of your MxTerminator installation, and point \texttt{\$JMX\_MODEL\_PATH} to the location of your MxTerminator trained data, as for example
+
+\begin{verbatim}
+        # $JMX_HOME                "$HOME/jmx";
+        # $SENTENCE_SEGMENTER_TYPE "MxTerminator";
+        # $JMX_MODEL_PATH          "$HOME/jmx/eos.project";
+\end{verbatim}
+
+
+where \texttt{\$HOME} must be replaced by a literal path string such as \textbf{/home/username}. Note that the \textbf{/bin} directory of a Java installation must be located in your search path, or MxTerminator will not work.
+
+\subsection*{Parsing using a Charniak Parser\label{Parsing_using_a_Charniak_Parser}\index{Parsing using a Charniak Parser}}
+
+
+To use a Charniak parser with Clairlib, uncomment the following variables in \textbf{clairlib-core/lib/Clair/Config.pm} and point them to it, as for example:
+
+\begin{verbatim}
+        # Default parser and data paths for the Charniak parser for use in Parse.pm
+        # (Note that CHARNIAK_DATA should end with a slash and that the other
+        # paths include the executable)
+        # $CHARNIAK_PATH      "/data0/tools/charniak/PARSE/parseIt";
+        # $CHARNIAK_DATA_PATH "/data0/tools/charniak/DATA/EN/";
+\end{verbatim}
+\begin{verbatim}
+        # Default path to Chunklink
+        # $CHUNKLINK_PATH "/data2/tools/chunklink/chunklink.pl";
+\end{verbatim}
+\subsection*{Using the Weka Machine Learning Toolkit\label{Using_the_Weka_Machine_Learning_Toolkit}\index{Using the Weka Machine Learning Toolkit}}
+
+
+To use the Weka Machine Learning Toolkit, a Java machine learning library, with Clairlib, download Weka from \textbf{\textsf{http://www.cs.waikato.ac.nz/ml/weka/}} and uncomment the following line in \textbf{clairlib-core/lib/Clair/Config.pm}. Point the variable to the location of Weka's \textbf{.jar} file, as for example:
+
+\begin{verbatim}
+        # $WEKA_JAR_PATH "$HOME/weka/weka-3-4-11/weka.jar"
+\end{verbatim}
+
+
+where \texttt{\$HOME} must be replaced by an explicit path string such as \textbf{/home/username}. Note that the \textbf{/bin} directory of a Java installation must be located in your search path, or MxTerminator will not work.
+
+\subsection*{Using the Automatic Link Extractor (ALE)\label{Using_the_Automatic_Link_Extractor_ALE_}\index{Using the Automatic Link Extractor (ALE)}}
+
+
+If you have MySQL installed and wish to use ALE, uncomment the following variables. Point \texttt{\$ALE\_PORT} at your MySQL socket, and provide the root password to your MySQL installation:
+
+\begin{verbatim}
+        # $ALE_PORT "/tmp/mysql.sock";
+        # $ALE_DB_USER "root";
+        # $ALE_DB_PASS "";
+\end{verbatim}
+\subsection*{Using Google WebSearch\label{Using_Google_WebSearch}\index{Using Google WebSearch}}
+
+
+To use the Google WebSearch module, first install the CPAN module \texttt{Net::Google} (refer to the of Clairlib-Core installation instructions for further explanation) Then, uncomment the following line and provide a Google SOAP API key. Unfortunately, Google no longer gives out SOAP API keys but has moved to an AJAX Search API. If you have a SOAP API key, you can still use it, and WebSearch will still work.
+
+\begin{verbatim}
+        # $GOOGLE_DEFAULT_KEY "";
+\end{verbatim}
+\subsection*{Using CMU-LM tool kit.\label{Using_CMU-LM_tool_kit_}\index{Using CMU-LM tool kit.}}
+
+
+The CMU-Cambridge Statistical Language Modeling toolkit is a suite of UNIX software tools to facilitate the construction and testing of statistical language models. CMU-LM is used by clairlib for N-grams extraction. It can be downloaded from \textsf{http://mi.eng.cam.ac.uk/\texttt{\~{}}prc14/toolkit.html}. Then, add the CMU-LM path to \$PATH (or modify \texttt{\~{}}/.profile):
+
+\begin{verbatim}
+        export PATH=/path/to/CMU-CAM-LM/bin:$PATH
+\end{verbatim}
+\subsection*{Using GENIA Tagger\label{Using_GENIA_Tagger}\index{Using GENIA Tagger}}
+
+
+The GENIA tagger analyzes English sentences and outputs the base forms, part-of-speech tags, chunk tags, and named entity tags. It is used in Clair::Bio::GIN. To be able to use it, download it from \textsf{http://www-tsujii.is.s.u-tokyo.ac.jp/GENIA/tagger/} then uncomment and point the following line in Clair::Config to point to the Genia tagger home.
+
+\begin{verbatim}
+        # $GENIATAGGER_PATH = "/path/to/geniatagger";
+\end{verbatim}
+\subsection*{Using the Stanford Parser\label{Using_the_Stanford_Parser}\index{Using the Stanford Parser}}
+
+
+To use the Stanford parser in Clairlib, download it from \textsf{http://nlp.stanford.edu/software/lex-parser.shtml} and install it as instructed in its documentation, then uncomment the following line and point it to the parser home directory.
+
+\begin{verbatim}
+        # $STANFORD_PARSER_PATH = "/path/to/stanford/parser";
+\end{verbatim}
+\subsection*{Configure Clairlib-Ext\label{Configure_Clairlib-Ext}\index{Configure Clairlib-Ext}}
+
+
+Download the Clairlib-Ext distribution (\textbf{clairlib-ext.tar.gz}) into, for example, the directory \textbf{\$HOME}. Then to install Clairlib-Ext in \textbf{\$HOME/clairlib-ext}, enter the following at the shell prompt:
+
+\begin{verbatim}
+        $ cd $HOME
+        $ gunzip clairlib-ext.tar.gz
+        $ tar -xf clairlib-ext.tar
+        $ cd clairlib-ext
+\end{verbatim}
+
+
+To test the Clairlib-Ext modules, you must first have installed the Clairlib-Core modules. Confirm that you have, then enter the following:
+
+\begin{verbatim}
+        $ perl Makefile.PL
+        $ make
+        $ make test
+\end{verbatim}
+
+
+If you would like to have the Clairlib-Ext modules installed, and you have the necessary (root) permissions to do so, you may install them by entering:
+
+\begin{verbatim}
+        $ make install
+\end{verbatim}
+
+
+If, on the other hand, you have only local permissions, but you have a personal perl library located at, say, \textbf{\$HOME/perl} (as described earlier), then you can install Clairlib-Ext there by entering the commands:
+
+\begin{verbatim}
+        $ perl Makefile.PL PREFIX=~/perl
+        $ make install
+\end{verbatim}
+\subsection*{Using the Clairlib-Ext Modules\label{Using_the_Clairlib-Ext_Modules}\index{Using the Clairlib-Ext Modules}}
+
+
+To use the Clairlib-Ext modules in a script, you must add a path to the modules to Perl's \texttt{@INC} variable. You may use either 1) \textbf{\$CLAIRLIB\_EXT\_HOME/lib}, where \textbf{\$CLAIRLIB\_EXT\_HOME} is the path to the top directory of your Clairlib-Ext installation, or 2) \textbf{\$INSTALL\_PATH}, where \textbf{\$INSTALL\_PATH} is a path to the location of the installed Clairlib-Ext modules (if you installed them as in the previous section). Either of these paths can be added to \texttt{@INC} either by appending the path to the \texttt{PERL5LIB} environment variable or by putting a \texttt{use lib PATH} statement at the top of the script. See the beginning of section V of the Clairlib-Core installation instructions for a detailed explanation of how to modify the \texttt{PERL5LIB} variable.
+
+\subsection*{Change Perl Path\label{Change_Perl_Path}\index{Change Perl Path}}
+
+
+To be able to run *.pl files, you may need to change the perl path in all *.pl files to the perl path on your machine. To make this easy for you, we provide a utility script "change\_perl\_path.pl" that changes the perl path in all the *.pl files in a specified directory and all its subdirectories to the path that you specify.
+For example, to change the perl path in all *.pl files in the "util" directroy to /usr/local/perl/
+
+\begin{verbatim}
+        $ change_perl_path.pl util/ /usr/local/perl/
+\end{verbatim}
+\subsection*{Support and Documentation\label{Support_and_Documentation}\index{Support and Documentation}}
+
+
+After installing Clairlib, you may access documentation for a module using the \texttt{perldoc} command, as for example:
+
+\begin{verbatim}
+        $ perldoc Clair::Document
+\end{verbatim}
+
+
+Each Clairlib distribution also includes a PDF tutorial. Online API documentation is available at:
+
+\begin{verbatim}
+        http://belobog.si.umich.edu/clair/clairlib/pdoc
+\end{verbatim}

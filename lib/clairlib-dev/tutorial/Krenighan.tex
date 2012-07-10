@@ -1,0 +1,69 @@
+\subsection{Graph Partitioning Using Krenighan-Lin Algorithm}
+
+In this tutorial, you will use Clair::Network::KrenighanLin to partition the Karate Club network into two partitions. For more information about Karate Club network, see \textbf{Spectral Partitioning Using Fiedler Vector tutorial}.
+
+\subsubsection{Read in the network file and create a Clair::Network object}
+
+First you need to create a \emph{Clair::Network::Reader::GML} object
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network::Reader::GML;
+ my $reader=new Clair::Network::Reader::GML();
+\end{boxedverbatim}
+\\
+\\
+Then, pass the network filename to the \emph{read\_network} subroutine via the \emph{\$reader object}. This will return a \emph{Clair::Network} object.
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network;
+ my $filename = "karate.gml";
+ my $net = $reader->read_network($filename);
+\end{boxedverbatim}
+\\
+\subsubsection{Create a Clair::Network::KrenighanLin object}
+
+Create a new \emph{Clair::Network::KrenighanLin} by calling its constructor
+\\
+\\
+\begin{boxedverbatim}
+ use Clair::Network::KrenighanLin;
+ $KL = new Clair::Network::KrenighanLin($net);
+\end{boxedverbatim}
+\\
+\\
+\subsubsection{Partition the graph}
+
+To partition the graph, simply call \emph{generatePartition()} subroutine via the \emph{\$GN} object. \emph{generatePartition()} returns the result as a hash.
+\\
+\\
+\begin{boxedverbatim}
+ my $graphPartition = $KL->generatePartition();
+\end{boxedverbatim}
+\\
+\\
+\emph{\$graphPartition} is a hash with "node id" as key and "partition number (0/1)" as value.
+
+You can use the dumper to print the contents of \emph{\$graphPartition}.
+\\
+\\
+\begin{boxedverbatim}
+ use Data::Dumper
+ print Dumper($graphPartition);
+\end{boxedverbatim}
+\\
+\\
+The output will be something like
+\\
+\\
+\begin{boxedverbatim}
+ $VAR1 = {
+          '33' => 0,
+          '32' => 0,
+            .
+            .
+          '19' => 0,
+          '5' => 1
+        };
+\end{boxedverbatim} 

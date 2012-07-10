@@ -1,0 +1,123 @@
+\subsection{Patterns in syntactic dependency networks}
+
+In this tutorial we use Clairlib to replicate the work done by Cancho et. al. in their papers, \emph{"Patterns in Syntactic Dependency Networks"} and \emph{"Universality in syntactic dependency networks"}, in which they study the architecture of syntactic graphs and show that they display small world patterns, scale-free structure, a well-defined hierarchical organization, and assortative mixing. Specifically, three different European languages will be used: Czech, Romanian, and German.
+
+\subsubsection{Data Set}
+
+Three datasets were used in the paper, Czech, Romanian, and German corpora. The Romanian is the only one freely available. It is available at the Dependency Grammar Annotator (DGA) website (http://www.phobos.ro/roric/DGA/dga.html). In this tutorial we will deal only with the Romanian corpus.
+
+\subsubsection{Network Properties}
+
+Using the Romanian corpus, we will build a Syntactic Dependency Network. This network has its nodes correspond to words and its edges correspond to binary relations (syntactic dependencies) between words. Most of the edges are directed and the arc goes from the head word to its modifier or vice versa depending on the convention used. Head and modifier are primitive concepts in the dependency grammar formalism.
+
+After building the network we will calculate some of the properties of this network. These properties are:
+\begin{itemize}
+  \item Number of nodes: Where each node corresponds to a word.
+  \item Number of edges: Where each edge represents a syntactic dependency between a head word and a modifier.
+  \item Clustering coefficient: The probability that two nodes (words) that are neighbors of a given node are neighbors of each other.
+  \item Diameter: Average minimum distance between pairs of nodes.
+  \item Power law exponent: The exponent of the power law distribution (if it exists).
+  \item Size of the giant component
+  \item Average shortest path
+\end{itemize}
+
+\subsubsection{Convert Corpus to Network}
+
+The first step is to parse the corpus and build a syntactic network from it.
+Read in the corpus XML files:
+\begin{verbatim}
+ my @files = glob($xml_dir . "/t*.xml");
+\end{verbatim}
+
+Where \$xml\_dir is the path where the corpus XML files are located. All the xml files has are named t*.xml (e.g. t10.xml and tp7.xml).
+\\
+\\
+\textbf{Parse the XML files and build the network}
+\\
+\\
+\begin{boxedverbatim}
+ use XML::Twig;
+ my $twig = new XML::Twig();
+ my %all_words = ();
+ my $num_sentences = 0;
+ my $num_words = 0;
+ my $total_words = 0;
+ # The maximum nuber of words used to build the network
+ my $word_limit = 100000;
+ foreach my $file (@files) {
+ $twig->parsefile($file) or die "Couldn't parse $file\n";
+ my $root = $twig->root;
+ # loop through the sentences in this document
+ my @sentences = $root->children;
+ $num_words = 0;
+ foreach my $sentence (@sentences) {
+   # loop through the tokens
+   # build up an associative array of the word and head, indexed by position
+   # which is then used to resolve the dependencies
+   my %tok_table = ();
+   my @tokens = $sentence->children;
+   $num_sentences++;
+   $num_words += scalar(@tokens);
+   # skip sentences with less than two words
+   if ((scalar(@tokens) >= 2) && ($num_words < $word_limit)) {
+     foreach my $token (@tokens) {
+       my $word = $token->field("orth");
+       my $ctag = $token->field("ctag");
+       $word = lc($word);
+       $all_words{$word}++;
+       my $ordno = $token->field("ordno");
+       my $syn = $token->first_child("syn");
+       my $head = $syn->field("head");
+       $tok_table{$ordno}{"word"} = $word;
+       $tok_table{$ordno}{"head"} = $head;
+     }
+     # Add the edges to the network
+     foreach my $key (keys %tok_table) {
+       my $word = $tok_table{$key}{"word"};
+       my $head = $tok_table{$key}{"head"};
+       if (not defined $tok_table{$head}) {
+       } else {
+         my $head_word = $tok_table{$head}{"word"};
+         $lex_network->add_edge($word, $head_word)
+       }
+     }
+   }
+ }
+ $total_words += $num_words;
+}
+\end{boxedverbatim}
+\\
+
+The full code that reads in the files and builds the network is available in \emph{http://belobog.si.umich.edu/clair/clairlib/parse\_dg.txt}. You can use this script by running this command
+
+\begin{verbatim}
+parse_dg.pl -o romanian-newspaper-dga.graph
+\end{verbatim}
+
+This will create a network and write it to a file, romanian-newspaper-dga.graph.
+
+\subsubsection{Network Statistics}
+
+These statistics include number of nodes, number of edges, clustering coefficient, diameter, power law distribution exponent, size of giant component, and average shortest path. All these can be calculated using the clairlib utility script, print\_network\_stats.pl.
+
+\begin{verbatim}
+  print_network_stats.pl -i romanian-newspaper-dga.graph --force
+\end{verbatim}
+
+The \textbf{force} option instructs the script to ignore the 2000 nodes limit. Following are the results that we got versus the results got by Cancho et. al. in their paper.
+\\
+\\
+\begin{tabular}{|l|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Property & Paper & Clairlib \\
+  \hline
+  Number of nodes & 5563 & 5598 \\
+  Number of edges & - & 14516 \\
+  Average Degree & 5.1 & 5.12 \\
+  Size of giant component & 5563 & 5594 \\
+  Power law exponent & -2.19 & -2.19 \\
+  Clustering Coefficient & 0.09 & 0.09 \\
+  Average shortest path & 3.4 & 3.49 \\
+  \hline
+\end{tabular}
