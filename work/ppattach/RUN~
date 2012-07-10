@@ -1,0 +1,5 @@
+cut -d" " -f2 ppattach.train ppattach.devtt ppattach.test | sort | uniq > X02
+cut -d" " -f3 ppattach.train ppattach.devtt ppattach.test | sort | uniq > X01
+cut -d" " -f4 ppattach.train ppattach.devtt ppattach.test | sort | uniq > X0
+cut -d" " -f5 ppattach.train ppattach.devtt ppattach.test | sort | uniq > X11
+wc -l X*
