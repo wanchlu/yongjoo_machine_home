@@ -16,7 +16,7 @@ foreach my $trainsize ( 25) {
 		`cat "trainfile/$trainsize.$cnt" "testfile/$testsize.1" > "network/$trainsize.$cnt"`;
 		`perl convert_to_tumbl_format.pl "network/$trainsize.$cnt"`;
 		`perl convert_tumbl_to_edgelist.pl "network/$trainsize.$cnt.tumbl" >"network/$trainsize.$cnt.edgelist"`;
-		my $acc = `sh run.sh "trainfile/$trainsize.$cnt" "testfile/$testsize.1"`;
+		my $acc = `./run.sh "trainfile/$trainsize.$cnt" "testfile/$testsize.1"`;
 		chomp ($acc);
 		$acc_sum += $acc;
 		print "Sample $cnt: $acc\n";
