@@ -12,7 +12,7 @@ while (<IN>) {
         foreach my $j (0..$i) {
             print "$tokens[$j]_";
         }
-        print "\t$polarity\n";
+        print "\t$polarity\n" if defined($polarity);
     }
 }
 
@@ -32,5 +32,6 @@ sub stem{
         $stemmed = $stemmed." ".$stemmer->stem($words[$i]);
     }
     $stemmed =~ s/^\s+//g;
+    $stemmed =~ s/\s+$//g;
     return $stemmed;
 }

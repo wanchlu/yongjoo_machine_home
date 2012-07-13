@@ -6,7 +6,7 @@ my %unigram;
 my %bigram;
 my %trigram;
 
-my @doclist = `cat doclist.xbankSubset doclist.ulaSubset doclist.ula-luSubset doclist.opqaSubset doclist.mpqaOriginalSubset doclist.attitudeSubset`;
+my @doclist = `cat doclist.xbankSubset doclist.ulaSubset doclist.ula-luSubset doclist.opqaSubset doclist.mpqaOriginalSubset `;
 chomp (@doclist);
 
 foreach my $doc (@doclist) {
@@ -15,7 +15,7 @@ foreach my $doc (@doclist) {
     local $/=undef;
     my $entire_string = <IN>;
     close IN;
-    my @tokens = split /\s+/, $entire_string;
+    my @tokens = split /[^a-zA-Z0-9_\-']+/, $entire_string;
     # stem and construct unigrams
     foreach my $i (0..$#tokens) {
         $tokens[$i] = stem($tokens[$i]);

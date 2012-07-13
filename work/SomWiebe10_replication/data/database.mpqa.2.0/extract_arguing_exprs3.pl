@@ -15,12 +15,13 @@ while (<IN>) {
         $pos_cnt{$cand} = 0;
         $neg_cnt{$cand} = 0;
     }
+    $total_cnt{$cand} ++;
+    next if not defined ($pol);
     if ($pol =~ m/positive/) {
         $pos_cnt{$cand} ++;
     }elsif ($pol =~ m/negative/) {
         $neg_cnt{$cand} ++;
     }
-    $total_cnt{$cand} ++;
 }
 close IN;
 

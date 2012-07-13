@@ -15,7 +15,7 @@ foreach my $doc (@doclist) {
     local $/=undef;
     my $entire_string = <IN>;
     close IN;
-    my @tokens = split /\s+/, $entire_string;
+    my @tokens = split /[^a-zA-Z0-9_\-']+/, $entire_string;
     # stem and construct unigrams
     foreach my $i (0..$#tokens) {
         $tokens[$i] = stem($tokens[$i]);
@@ -38,20 +38,20 @@ foreach my $doc (@doclist) {
 
 open OUT, ">data/unigram.txt";
 foreach my $k (reverse (sort { $unigram{$a} <=> $unigram{$b} } keys %unigram)) {
-    print OUT "$k\t$unigram{$k}";
+    print OUT "$k\t$unigram{$k}\n";
 }
 close OUT;
 
 open OUT, ">data/bigram.txt";
 foreach my $k (reverse (sort { $bigram{$a} <=> $bigram{$b} } keys %bigram)) {
-    print OUT "$k\t$bigram{$k}";
+    print OUT "$k\t$bigram{$k}\n";
 }
 close OUT;
 
 
 open OUT, ">data/trigram.txt";
 foreach my $k (reverse (sort { $trigram{$a} <=> $trigram{$b} } keys %trigram)) {
-    print OUT "$k\t$trigram{$k}";
+    print OUT "$k\t$trigram{$k}\n";
 }
 close OUT;
 
