@@ -1,5 +1,8 @@
-perl "tt.pl" $1 $2 >"out"
-cut -d " " -f1 $2 > "$2.label"
-let CORRECT=`paste "$2.label" out |grep -P "1\t1|0\t0" |wc -l`
-let TOTAL=`cat $2 | wc -l`
-echo "scale=4; $CORRECT/$TOTAL" |bc
+for topic in "abortion" "guns" "god" "gayRights" "healthcare" "creation"
+do
+    grep "^$topic" aaa >  $topic"_topics.txt"
+    grep "originalTopic" $topic"_topics.txt" | cut -d: -f2,3 >a
+    grep "originalStance" $topic"_topics.txt" | cut -d: -f2,3 >b
+    grep "#stance" $topic"_topics.txt" | cut -d: -f2,3 >c 
+    paste a b |sort |uniq >"topics/$topic.txt"
+done

@@ -5,7 +5,7 @@ use Clair::Utils::Stem;
 open IN, "inter/pre_process.txt" or die;
 while (<IN>) {
     chomp;
-    my ($domain, $label, $post_id, $sent_id, $sent) = split /\t/, $_;
+    my ($domain, $stance, $topic, $topic_text, $post_id, $sent_id, $sent) = split /\t/, $_;
     my @words = split /[^a-zA-Z0-9_\-']+/, $sent;
     my @stemmed_words = ();
     next if $#words < 0;
@@ -16,7 +16,7 @@ while (<IN>) {
         push (@stemmed_words, stem($w));
     }
     my $stemmed_sent = join " ", @stemmed_words;
-    print "$domain\t$label\t$post_id\t$sent_id\t$stemmed_sent\n";
+    print "$domain\t$stance\t$topic\t$topic_text\t$post_id\t$sent_id\t$stemmed_sent\n";
 }
 
 sub stem{

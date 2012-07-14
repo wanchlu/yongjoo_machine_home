@@ -10,14 +10,10 @@ foreach my $domain (@domains) {
     foreach my $id (@ids) {
         my $input = "$input_dir/$id";
         my @lines = `sentence_segmenter.pl $input`;
-        #print STDERR $_ foreach (@lines);
-        my $label = 0;
-        if ($lines[0] =~ m/stance2/) {
-            $label = 1;
-        }
+        chomp (@lines);
         foreach my $i (3..$#lines) {
             my $in = $i - 3;
-            print "$domain\t$label\t$id\t$id-$in\t$lines[$i]";
+            print "$domain\t$lines[0]\t$lines[2]\t$lines[1]\t$id\t$id-$in\t$lines[$i]\n";
         }
     }
 }
