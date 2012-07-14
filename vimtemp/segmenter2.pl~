@@ -1,0 +1,26 @@
+#!/usr/bin/perl -w
+use strict;
+use Clair::Document;
+use Lingua::EN::Sentence qw( get_sentences add_acronyms );
+add_acronyms('et al');
+add_acronyms('eq', 'vs');
+
+my @files = `ls -1 text_hyphen_removed`;
+foreach my $file(@files) {
+    open IN, "text_hyphen_removed/$file" or die;
+    chomp(my @ls = <IN>);
+    my $temp = join " ", @ls;
+    next if ($temp =~ /^\s*$/);
+    $temp =~ s/et al\.\s*\n/et al. /g;
+    $temp =~ s/eq\.\s*\n/eq. /g;
+    $temp =~ s/vs\.\s*\n/vs. /g;
+#my $doc =Clair::Document->new( string => $temp , type => "text");
+    my $sents = get_sentences($temp); 
+    open OUT, ">./text_body/$file" or die;
+    foreach (@{$sents}){
+        last if m/^(references|bibliograp)/i;
+        print OUT "$_\n";
+    }
+    close OUT;
+    close IN;
+}

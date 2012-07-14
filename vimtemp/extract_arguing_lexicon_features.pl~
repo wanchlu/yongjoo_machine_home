@@ -1,0 +1,28 @@
+#!/usr/bin/perl -w
+use strict;
+use Clair::Utils::Stem;
+
+open IN, "inter/pre_process.txt" or die;
+while (<IN>) {
+    chomp;
+    my ($domain, $label, $post_id, $sent_id, $sent) = split /\t/, $_;
+    my @words = split /[^a-zA-Z0-9_\-']+/, $sent;
+    next if not defined (@words);
+    my @stemmed_words = ();
+    foreach my $w (@words) {
+        $w =~ s/^[\-'_]+//g;
+        $w =~ s/[\-'_]+$//g;
+        next if not defined ($w);
+        push (@stemmed_words, $w);
+    }
+
+
+        sub stem{
+            my $word = shift;
+            $word= lc($word);
+            $word = "be" if ($word =~ m/\b(is|are|was|were)\b/);
+            $word = "have" if ($word =~ m/\b(has|had)\b/);
+            $word = "do" if ($word =~ m/\b(did|does)\b/);
+            my $stemmer = new Clair::Utils::Stem();
+            return $stemmer->stem($word);
+        }
