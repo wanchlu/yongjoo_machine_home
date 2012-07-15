@@ -11,7 +11,7 @@ while (<IN>) {
     # search for trigram in the arguing lexicon
     my $i = 0;
     foreach my $i (0..$#words) {
-        print "$sent_pol-$words[$i] ";
+        print $sent_pol."_".$words[$i]." ";
     }
     print "\n";
 }

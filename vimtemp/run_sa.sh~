@@ -1,0 +1,4 @@
+for domain in "abortion" "creation" "god" "healthcare" "guns" "gayRights"
+do
+java -mx2G -cp ./crftagger.jar crf.tagger.CRFTagger -modeldir ./model -inputdir "/home/wanchen/work/SomWiebe10_replication/data/SomasundaranWiebe-politicalDebates/$domain"
+done
