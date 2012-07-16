@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ s)
+      (NP
+        (NP
+          (NP (CD 125,000) (NNS babies))
+          (VP (VBN killed)
+            (NP (DT a) (NN month))
+            (, ,)
+            (S
+              (VP (VBG making)
+                (S
+                  (NP (PRP it))
+                  (NP
+                    (NP (CD 4,000) (NNS babies))
+                    (VP (VBN killed)
+                      (NP (DT each) (NN day)))))))))
+        (, ,)
+        (CC or)
+        (NP
+          (NP (CD one) (NN baby))
+          (VP (VBN killed)
+            (NP
+              (NP (DT every) (CD 20) (NNS seconds))
+              (, ,)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (RB so) (RB amazingly) (JJ awful))))))))))
+    (. .)))
+
+nsubj(babies-4, That-1)
+cop(babies-4, s-2)
+num(babies-4, 125,000-3)
+root(ROOT-0, babies-4)
+partmod(babies-4, killed-5)
+det(month-7, a-6)
+tmod(killed-5, month-7)
+partmod(killed-5, making-9)
+xcomp(killed-5, making-9)
+nsubj(babies-12, it-10)
+num(babies-12, 4,000-11)
+xcomp(making-9, babies-12)
+partmod(babies-12, killed-13)
+det(day-15, each-14)
+tmod(killed-13, day-15)
+num(baby-19, one-18)
+conj_or(babies-4, baby-19)
+partmod(baby-19, killed-20)
+det(seconds-23, every-21)
+num(seconds-23, 20-22)
+dobj(killed-20, seconds-23)
+nsubj(awful-29, seconds-23)
+cop(awful-29, is-26)
+advmod(awful-29, so-27)
+advmod(awful-29, amazingly-28)
+rcmod(seconds-23, awful-29)
+

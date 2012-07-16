@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP I))
+        (VP (VBD said))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (JJ few))
+          (ADVP (RB really))
+          (VP (VBP know)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP it))
+                (VP (VBZ is))))))))
+    (. .)))
+
+dobj(said-3, What-1)
+nsubj(said-3, I-2)
+csubj(is-4, said-3)
+root(ROOT-0, is-4)
+complm(know-8, that-5)
+nsubj(know-8, few-6)
+advmod(know-8, really-7)
+ccomp(is-4, know-8)
+dobj(is-11, what-9)
+nsubj(is-11, it-10)
+ccomp(know-8, is-11)
+
+(ROOT
+  (FRAG
+    (PP (IN About)
+      (S
+        (VP (VBG being)
+          (ADJP (`` ``) (JJ closed)))))
+    (: minded) (`` ``)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB n't)
+        (VP (VB matter)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT the) (NN thing))
+              (VP (VBZ looks)
+                (PP (IN like))))))))
+    (. .)))
+
+dep(matter-10, About-1)
+cop(closed-4, being-2)
+pcomp(About-1, closed-4)
+punct(matter-10, minded-5)
+nsubj(matter-10, it-7)
+aux(matter-10, does-8)
+neg(matter-10, n't-9)
+root(ROOT-0, matter-10)
+dep(looks-14, what-11)
+det(thing-13, the-12)
+nsubj(looks-14, thing-13)
+ccomp(matter-10, looks-14)
+prep(looks-14, like-15)
+

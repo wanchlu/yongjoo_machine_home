@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Similar) (NNS things))
+      (VP (MD might)
+        (VP (VB be)
+          (VP (VBN said)
+            (PP (IN about)
+              (NP
+                (NP (DT the) (NN development))
+                (PP (IN of)
+                  (NP (DT an) (NN acorn)))))
+            (PP (IN into)
+              (NP (DT an) (NN oak) (NNS trees)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB not)
+        (VP (VB follow)
+          (SBAR
+            (SBAR (IN that)
+              (S
+                (NP (NNS acorns))
+                (VP (VBP are)
+                  (NP (NN oak) (NNS trees)))))
+            (, ,)
+            (CC or)
+            (SBAR (IN that)
+              (S
+                (NP (PRP we))
+                (VP (VBD had)
+                  (NP
+                    (NP (JJR better))
+                    (SBAR
+                      (S
+                        (VP (VBP say)
+                          (SBAR
+                            (S
+                              (NP (PRP they))
+                              (VP (VBP are)))))))))))))))
+    (: ...)))
+
+amod(things-2, Similar-1)
+nsubjpass(said-5, things-2)
+aux(said-5, might-3)
+auxpass(said-5, be-4)
+root(ROOT-0, said-5)
+det(development-8, the-7)
+prep_about(said-5, development-8)
+det(acorn-11, an-10)
+prep_of(development-8, acorn-11)
+det(trees-15, an-13)
+nn(trees-15, oak-14)
+prep_into(said-5, trees-15)
+nsubj(follow-21, it-18)
+aux(follow-21, does-19)
+neg(follow-21, not-20)
+conj_and(said-5, follow-21)
+complm(trees-26, that-22)
+nsubj(trees-26, acorns-23)
+cop(trees-26, are-24)
+nn(trees-26, oak-25)
+ccomp(follow-21, trees-26)
+complm(had-31, that-29)
+nsubj(had-31, we-30)
+ccomp(follow-21, had-31)
+conj_or(trees-26, had-31)
+dobj(had-31, better-32)
+rcmod(better-32, say-33)
+nsubj(are-35, they-34)
+ccomp(say-33, are-35)
+

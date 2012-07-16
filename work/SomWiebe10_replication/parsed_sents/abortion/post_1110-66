@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Final))
+      (VP (VBD thought)))
+    (: :)
+    (S
+      (NP (NNP Morals))
+      (VP (VBP are)
+        (ADJP (JJ relative))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT all))
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP 'm)
+                      (VP (VBG trying)
+                        (S
+                          (VP (TO to)
+                            (VP (VB push)
+                              (PP (IN on)
+                                (NP (PRP you))))))))))))))))
+    (. .)))
+
+nsubj(thought-2, Final-1)
+root(ROOT-0, thought-2)
+nsubj(relative-6, Morals-4)
+cop(relative-6, are-5)
+parataxis(thought-2, relative-6)
+nsubj(all-10, which-8)
+cop(all-10, is-9)
+ccomp(relative-6, all-10)
+dobj(trying-13, all-10)
+nsubj(trying-13, I-11)
+xsubj(push-15, I-11)
+aux(trying-13, 'm-12)
+rcmod(all-10, trying-13)
+aux(push-15, to-14)
+xcomp(trying-13, push-15)
+prep_on(push-15, you-17)
+

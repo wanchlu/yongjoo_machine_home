@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Let) (POS 's))
+      (VP (VBP face)
+        (NP (PRP it))))
+    (, ,)
+    (NP (JJ unmarried) (NNS people))
+    (VP (VBP have)
+      (NP
+        (NP
+          (NP (NNS impulses))
+          (, ,)
+          (NP (NNS desires))
+          (, ,))
+        (X (NN etc.))))
+    (. .)))
+
+nsubj(face-3, Let-1)
+possessive(Let-1, 's-2)
+ccomp(have-8, face-3)
+dobj(face-3, it-4)
+amod(people-7, unmarried-6)
+nsubj(have-8, people-7)
+root(ROOT-0, have-8)
+dobj(have-8, impulses-9)
+appos(impulses-9, desires-11)
+dep(impulses-9, etc.-13)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB act)
+              (PP (IN on)
+                (NP (PRP it))))))))
+    (. .)))
+
+nsubj(going-3, They-1)
+xsubj(act-5, They-1)
+aux(going-3, are-2)
+root(ROOT-0, going-3)
+aux(act-5, to-4)
+xcomp(going-3, act-5)
+prep_on(act-5, it-7)
+

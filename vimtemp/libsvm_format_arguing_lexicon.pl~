@@ -1,0 +1,95 @@
+#!/usr/bin/perl -w
+use strict;
+
+my %true_label;
+my @domains = qw( abortion creation gayRights god guns healthcare);
+# read true labels
+open IN, "inter/pre_process.txt" or die;
+while (<IN>) {
+    chomp;
+    my ($domain, $stance, $topic, $topic_text, $post_id, $sent_id) = split "\t";
+    my $global_id = $domain."_".$post_id;
+    my $label = '1';
+    if ($stance =~ m/stance2$/) {
+        $label = "-1";
+    }
+    $true_label{"$global_id"} = $label;
+}
+close IN;
+
+
+
+# read features
+open IN, "inter/arguing_lexicon_feature.txt" or die;
+my %feature;
+my %f_lookup; # value = 1 if the key is a feature appeared
+my %f_index;  # value = key feature's index
+while (<IN>) {
+    chomp;
+    my ($domain, $post_id, $sent_id, $f_string) = split /\t/, $_;
+    my $global_id = $domain."_".$post_id;
+    $f_string =~ s/^\s+//g;
+    $f_string =~ s/\s+$//g;
+    my @features = split /\s+/, $f_string;
+    $feature{"$global_id"} = '' if not exists $feature{"$global_id"};
+    foreach my $f (@features) {
+        $feature{"$global_id"} = $feature{"$global_id"}.$f." ";
+        $f_lookup{"$f"} = 1;
+    }
+}
+close IN;
+#print STDERR "size of f_lookup is ".$#(keys %f_lookup)."\n";
+
+my @ranked_f = sort (keys %f_lookup);
+
+# assign each feature an index
+open OUT, ">inter/indexes_of_arguing_lexicon_feature.txt" or die;
+my $idx = 1;
+foreach (@ranked_f) {
+    $f_index{"$_"} = $idx;
+    print OUT $_."\t".$idx."\n";
+    $idx ++;
+}
+close OUT;
+
+# convert features of each post to their indexes
+open OUT, ">inter/arguing_lexicon_feature.libsvm" or die;
+foreach my $post_id (keys %feature) {
+    my ($domain, $id) = split "_", $post_id;
+    print OUT $domain."\t";
+    print OUT $true_label{"$post_id"}." ";
+    $feature{"$post_id"} =~ s/\s+$//g;
+    my @fs = split /\s+/, $feature{"$post_id"};
+    my $prev_idx = -1;
+#    print STDERR $post_id."\n" if $#fs > 600;
+    foreach my $f (sort @fs) {
+        my $cur_idx = $f_index{$f};
+        if ($cur_idx ne $prev_idx) {
+            print OUT $cur_idx.":1 ";
+        }
+    }
+    print OUT "\n";
+}
+close OUT;
+
+foreach my $domain (@domains) {
+    `mkdir "./libsvm/$domain" ` unless (-d  "./libsvm/$domain" );
+    my $file = "./libsvm/$domain/arguing_lexicon_feature.libsvm";
+    `grep $domain "./inter/arguing_lexicon_feature.libsvm" | cut -f2 | grep "^1" > temp1`;
+    `grep $domain "./inter/arguing_lexicon_feature.libsvm" | cut -f2 | grep "^-1" > temp2`;
+    my $size = `wc -l temp1`;
+    chomp ($size);
+    $size =~ s/(\d+)\s+.*/$1/g;
+    my $size2 = `wc -l temp2`;
+    chomp ($size2);
+    $size2 =~ s/(\d+)\s+.*/$1/g;
+    $size = $size2 if ($size2 > $size);
+    `shuffle.pl <temp1 | head -$size >$file`;
+    `shuffle.pl <temp2 | head -$size >>$file`;
+}
+
+
+
+
+
+    

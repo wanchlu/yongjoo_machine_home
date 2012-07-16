@@ -1,19 +1,52 @@
 #!/usr/bin/perl -w
 use strict;
+
+my @domains = ();
 open IN, "inter/arguing_lexicon_feature.txt" or die;
+my %feature;
+my %f_lookup; # value = 1 if the key is a feature appeared
+my %f_index;  # value = key feature's index
 while (<IN>) {
     chomp;
-    my ($domain, $stance, $topic, $topic_text, $post_id, $sent_id, $sent, $arguing_lex, $sent_pos, $sent_neg, $sent_pol) = split /\t/, $_;
-    $sent =~ s/^\s+//g;
-    $sent =~ s/\s+$//g;
-    my @words = split /\s+/, $sent;
-    print "$domain\t$stance\t$topic\t$topic_text\t$post_id\t$sent_id\t";
-    # search for trigram in the arguing lexicon
-    my $i = 0;
-    foreach my $i (0..$#words) {
-        print $sent_pol."_".$words[$i]." ";
+    my ($domain, $post_id, $sent_id, $f_string) = split /\t/, $_;
+    my $global_id = $domain."_".$post_id;
+    $f_string =~ s/^\s+//g;
+    $f_string =~ s/\s+$//g;
+    my @features = split /\s+/, $f_string;
+    $feature{"$global_id"} = '' if not exists $feature{"$global_id"};
+    foreach my $f (@features) {
+        $feature{"$global_id"} = $feature{"$global_id"}.$f." ";
+        $f_lookup{"$f"} = 1;
+    }
+}
+close IN;
+#print STDERR "size of f_lookup is ".$#(keys %f_lookup)."\n";
+
+my @ranked_f = sort (keys %f_lookup);
+
+# assign each feature an index
+my $idx = 0;
+foreach (@ranked_f) {
+    $f_index{"$_"} = $idx;
+    $idx ++;
+}
+# convert features of each post to their indexes
+foreach my $post_id (keys %feature) {
+    my ($domain, $id) = split "_", $post_id;
+
+    print $domain."\t".$post_id."\t";
+    $feature{"$post_id"} =~ s/\s+$//g;
+    my @fs = split /\s+/, $feature{"$post_id"};
+    my $prev_idx = -1;
+    foreach my $f (sort @fs) {
+        my $cur_idx = $f_index{$f};
+        if ($cur_idx ne $prev_idx) {
+            print $cur_idx.":1 ";
+        }
     }
     print "\n";
 }
 
 
+
+    

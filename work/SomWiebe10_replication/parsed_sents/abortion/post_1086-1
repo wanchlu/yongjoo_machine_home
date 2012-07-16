@@ -1,0 +1,37 @@
+(ROOT
+  (SQ
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBD were)
+            (VP (VBN raped)))
+          (, ,)
+          (CC and)
+          (VP
+            (ADVP (RB then))
+            (VBD got)
+            (ADJP (JJ pregnant))))))
+    (, ,) (MD would)
+    (NP (PRP you))
+    (ADVP (RB still))
+    (VP (VB keep)
+      (NP (DT the) (NN child)))
+    (. .)))
+
+mark(raped-4, if-1)
+nsubjpass(raped-4, you-2)
+nsubj(pregnant-9, you-2)
+auxpass(raped-4, were-3)
+advcl(keep-14, raped-4)
+advmod(pregnant-9, then-7)
+dep(pregnant-9, got-8)
+conj_and(raped-4, pregnant-9)
+advcl(keep-14, pregnant-9)
+aux(keep-14, would-11)
+nsubj(keep-14, you-12)
+advmod(keep-14, still-13)
+root(ROOT-0, keep-14)
+det(child-16, the-15)
+dobj(keep-14, child-16)
+

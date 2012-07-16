@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is)
+      (NP
+        (NP (RB not))
+        (: ;)
+        (SBARQ
+          (WHPP (IN at)
+            (WHNP (WDT what) (NN point)))
+          (SQ (MD can)
+            (NP (PRP we))
+            (VP (VB kill)
+              (UCP
+                (NP (PRP it))
+                (, ,)
+                (CC but)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ is)
+                      (NP (PRP it))))))))
+          (. ?))))))
+
+det(question-2, The-1)
+nsubj(not-4, question-2)
+cop(not-4, is-3)
+root(ROOT-0, not-4)
+det(point-8, what-7)
+prep_at(kill-11, point-8)
+aux(kill-11, can-9)
+nsubj(kill-11, we-10)
+dep(not-4, kill-11)
+dobj(kill-11, it-12)
+nsubj(it-17, what-15)
+cop(it-17, is-16)
+dobj(kill-11, it-17)
+conj_but(it-12, it-17)
+rcmod(it-12, it-17)
+

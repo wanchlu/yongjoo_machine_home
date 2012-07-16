@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNP Abstinence))
+    (VP
+      (VP (VBZ has) (RB not)
+        (VP (VBN been)
+          (VP (VBN tried)
+            (CC and)
+            (VBN found)
+            (S
+              (VP (VBG wanting))))))
+      (, ,)
+      (CC but)
+      (VP (VBD found)
+        (NP
+          (ADJP (JJ hard)
+            (CC and)
+            (JJ left))
+          (NNS untried))))
+    (. .)))
+
+nsubjpass(tried-5, Abstinence-1)
+nsubjpass(found-7, Abstinence-1)
+nsubjpass(found-11, Abstinence-1)
+aux(tried-5, has-2)
+neg(tried-5, not-3)
+auxpass(tried-5, been-4)
+root(ROOT-0, tried-5)
+conj_and(tried-5, found-7)
+xcomp(tried-5, wanting-8)
+conj_but(tried-5, found-11)
+amod(untried-15, hard-12)
+conj_and(hard-12, left-14)
+amod(untried-15, left-14)
+dobj(found-11, untried-15)
+

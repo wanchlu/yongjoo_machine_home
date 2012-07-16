@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB believe)
+        (NP (PRP me))))
+    (. .)))
+
+aux(believe-3, Do-1)
+neg(believe-3, n't-2)
+root(ROOT-0, believe-3)
+dobj(believe-3, me-4)
+
+(ROOT
+  (S
+    (PP (IN Watch)
+      (NP (DT the) (NN interview)))
+    (NP (NNP Dr.) (NNP Dobson))
+    (VP (VBD did)
+      (PP (IN with)
+        (NP (NNP Ted) (NNP Bundy)))
+      (NP (DT the) (NN night))
+      (PP (IN before)
+        (NP (PRP$ his) (NN execution))))
+    (. .)))
+
+det(interview-3, the-2)
+prep_watch(did-6, interview-3)
+nn(Dobson-5, Dr.-4)
+nsubj(did-6, Dobson-5)
+root(ROOT-0, did-6)
+nn(Bundy-9, Ted-8)
+prep_with(did-6, Bundy-9)
+det(night-11, the-10)
+tmod(did-6, night-11)
+poss(execution-14, his-13)
+prep_before(did-6, execution-14)
+

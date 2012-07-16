@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS Mathematics))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (NNS physics))
+        (, ,)
+        (NP (NN chemistry))
+        (, ,) (FW etc.))
+      (SBAR
+        (S
+          (VP (VBP are)
+            (NP
+              (NP (DT a) (NN set))
+              (PP (IN of)
+                (NP (NNS tools))))))))
+    (VP (VBD invented)
+      (PP (IN by)
+        (NP (NNS humans)))
+      (SBAR (IN in) (NN order)
+        (S
+          (VP (TO to)
+            (VP (VB explain)
+              (NP
+                (NP (NNS phenomena))
+                (SBAR
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP observe)
+                      (PRT (RP around))
+                      (NP (PRP us)))))))))))
+    (. .)))
+
+nsubj(invented-16, Mathematics-1)
+conj_and(Mathematics-1, physics-6)
+nn(Mathematics-1, physics-6)
+nsubj(invented-16, physics-6)
+conj_and(Mathematics-1, chemistry-8)
+nsubj(invented-16, chemistry-8)
+dep(Mathematics-1, etc.-10)
+cop(set-13, are-11)
+det(set-13, a-12)
+rcmod(Mathematics-1, set-13)
+prep_of(set-13, tools-15)
+root(ROOT-0, invented-16)
+prep_by(invented-16, humans-18)
+mark(explain-22, in-19)
+dep(explain-22, order-20)
+aux(explain-22, to-21)
+purpcl(invented-16, explain-22)
+dobj(explain-22, phenomena-23)
+nsubj(observe-25, we-24)
+rcmod(phenomena-23, observe-25)
+prt(observe-25, around-26)
+dobj(observe-25, us-27)
+

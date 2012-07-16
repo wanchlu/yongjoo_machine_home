@@ -1,0 +1,63 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBP do)
+        (NP
+          (NP
+            (NP (NN abortion))
+            (, ,)
+            (NP (JJ premarital) (NN sex))
+            (, ,)
+            (NP
+              (NP (NN homosexuality))
+              (, ,)
+              (NP (NN pornography)))
+            (PRN (-LRB- -LRB-)
+              (PP (VBG including)
+                (NP
+                  (NP (JJ soft) (NN porn))
+                  (, ,)
+                  (NP
+                    (NP (DT the) (NN kind))
+                    (VP (VBN found)
+                      (PP (IN in)
+                        (NP (NN supermarket) (NN checkout) (NNS lanes)))))))
+              (-RRB- -RRB-)))
+          (CC and)
+          (NP
+            (NP (NNP Ted) (NNP Bundy))
+            (SBAR
+              (S
+                (NP (DT all))
+                (VP (VBP have)
+                  (VP
+                    (PP (IN in)
+                      (NP (JJ common)))))))))))
+    (. ?)))
+
+nsubj(do-2, What-1)
+root(ROOT-0, do-2)
+dobj(do-2, abortion-3)
+amod(sex-6, premarital-5)
+appos(abortion-3, sex-6)
+appos(abortion-3, homosexuality-8)
+appos(homosexuality-8, pornography-10)
+dep(abortion-3, including-12)
+amod(porn-14, soft-13)
+pobj(including-12, porn-14)
+det(kind-17, the-16)
+appos(porn-14, kind-17)
+partmod(kind-17, found-18)
+nn(lanes-22, supermarket-20)
+nn(lanes-22, checkout-21)
+prep_in(found-18, lanes-22)
+nn(Bundy-26, Ted-25)
+dobj(do-2, Bundy-26)
+conj_and(abortion-3, Bundy-26)
+dobj(in-29, Bundy-26)
+nsubj(in-29, all-27)
+aux(in-29, have-28)
+rcmod(Bundy-26, in-29)
+pobj(in-29, common-30)
+

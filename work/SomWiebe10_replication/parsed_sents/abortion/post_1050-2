@@ -1,0 +1,30 @@
+(ROOT
+  (FRAG
+    (NP (NNS Depends))
+    (ADVP (RB entirely))
+    (. ?)))
+
+root(ROOT-0, Depends-1)
+dep(Depends-1, entirely-2)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ Heavily)
+      (PP (IN for)
+        (ADJP (JJ sure))))
+    (S (CC but)
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (VP (VBG buying)
+          (ADVP (RB entirely)))))
+    (. .)))
+
+root(ROOT-0, Heavily-1)
+prep_for(Heavily-1, sure-3)
+cc(buying-8, but-4)
+nsubj(buying-8, I-5)
+aux(buying-8, am-6)
+neg(buying-8, not-7)
+dep(Heavily-1, buying-8)
+advmod(buying-8, entirely-9)
+

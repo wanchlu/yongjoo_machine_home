@@ -1,0 +1,40 @@
+(ROOT
+  (NP
+    (NP (NNP Abortion))
+    (: :)
+    (NP
+      (NP (CD One))
+      (SBAR
+        (S
+          (NP (NNP Key) (NNP Issue))
+          (PP (IN By)
+            (NP (NNP Gregory) (NNP KouklAbortion)))
+          (VP (VBZ involves)
+            (S
+              (VP (VBG killing)
+                (CC and)
+                (VBG discarding)
+                (NP
+                  (NP (NN something))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ 's)
+                        (ADJP (JJ alive))))))))))))
+    (. .)))
+
+root(ROOT-0, Abortion-1)
+dep(Abortion-1, One-3)
+nn(Issue-5, Key-4)
+nsubj(involves-9, Issue-5)
+nn(KouklAbortion-8, Gregory-7)
+prep_by(involves-9, KouklAbortion-8)
+rcmod(One-3, involves-9)
+xcomp(involves-9, killing-10)
+xcomp(involves-9, discarding-12)
+conj_and(killing-10, discarding-12)
+dobj(killing-10, something-13)
+nsubj(alive-16, something-13)
+cop(alive-16, 's-15)
+rcmod(something-13, alive-16)
+

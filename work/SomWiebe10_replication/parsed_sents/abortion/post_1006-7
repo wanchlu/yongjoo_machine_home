@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT a) (NN fetus))
+              (VP (VBZ is) (, ,)
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP do) (RB n't))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP (NN science))
+        (VP (VBZ does)))
+      (, ,)
+      (CC and)
+      (S
+        (NP (NN science))
+        (VP (VBZ says)
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VBP are) (RB n't)
+                (NP (NNS people))
+                (ADVP (RB yet))))))))
+    (. .)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+dep(is-8, what-5)
+dobj(do-11, what-5)
+det(fetus-7, a-6)
+nsubj(is-8, fetus-7)
+ccomp(know-4, is-8)
+nsubj(do-11, you-10)
+ccomp(is-8, do-11)
+neg(do-11, n't-12)
+nsubj(does-16, science-15)
+conj_but(know-4, does-16)
+nsubj(says-20, science-19)
+conj_but(know-4, says-20)
+conj_and(does-16, says-20)
+nsubj(people-24, they-21)
+cop(people-24, are-22)
+neg(people-24, n't-23)
+ccomp(says-20, people-24)
+advmod(people-24, yet-25)
+

@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (JJ teen) (NN girl))
+        (VP (VBD was)
+          (VP (VBN found)
+            (S
+              (ADJP (JJ pregnant)))))))
+    (NP (PRP she))
+    (VP
+      (VP (MD could)
+        (VP (VB be)
+          (VP (VBN arrested)
+            (PP (IN for)
+              (NP (JJ underage) (NN sex))))))
+      (CC and)
+      (VP (MD could)
+        (VP (VB carry)
+          (PP (TO to)
+            (NP (NN term)))
+          (SBAR (IN while)
+            (S
+              (VP (VBD incarcerated)))))))
+    (. ...)))
+
+mark(found-6, If-1)
+det(girl-4, a-2)
+amod(girl-4, teen-3)
+nsubjpass(found-6, girl-4)
+auxpass(found-6, was-5)
+advcl(arrested-11, found-6)
+acomp(found-6, pregnant-7)
+nsubjpass(arrested-11, she-8)
+nsubj(carry-17, she-8)
+aux(arrested-11, could-9)
+auxpass(arrested-11, be-10)
+root(ROOT-0, arrested-11)
+amod(sex-14, underage-13)
+prep_for(arrested-11, sex-14)
+aux(carry-17, could-16)
+conj_and(arrested-11, carry-17)
+prep_to(carry-17, term-19)
+mark(incarcerated-21, while-20)
+advcl(carry-17, incarcerated-21)
+

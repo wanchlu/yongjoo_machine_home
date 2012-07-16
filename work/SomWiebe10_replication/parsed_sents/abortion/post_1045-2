@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB First))
+      (, ,)
+      (ADVP (RB logically))
+      (VP (VB explain)
+        (NP (PRP me))
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (VP (VBP do)
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP think)
+                    (SBAR
+                      (S
+                        (NP (DT this))
+                        (VP (VBZ is)
+                          (ADJP (RB absolutely) (JJ false))
+                          (, ,)
+                          (SBAR (IN as)
+                            (FRAG
+                              (PP (IN in)))))))))))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (ADVP (RB absolutely))
+      (NP
+        (NP (DT no) (NN situation))
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT which)))
+          (S
+            (NP (DT this))
+            (VP (MD could)
+              (VP (VB be)
+                (ADJP (JJ true))
+                (, ,)
+                (SBAR
+                  (ADVP (DT no) (NN matter))
+                  (WHNP (WDT which))
+                  (S
+                    (NP (JJ other) (NNS factors))
+                    (VP (VBP are)
+                      (ADJP (VBN involved)))))))))))
+    (. .)))
+
+advmod(explain-4, First-1)
+advmod(explain-4, logically-3)
+ccomp('s-19, explain-4)
+dobj(explain-4, me-5)
+advmod(do-7, why-6)
+advcl(explain-4, do-7)
+nsubj(think-9, you-8)
+ccomp(do-7, think-9)
+nsubj(false-13, this-10)
+cop(false-13, is-11)
+advmod(false-13, absolutely-12)
+ccomp(think-9, false-13)
+mark(in-16, as-15)
+advcl(false-13, in-16)
+expl('s-19, there-18)
+root(ROOT-0, 's-19)
+advmod('s-19, absolutely-20)
+det(situation-22, no-21)
+nsubj('s-19, situation-22)
+rel(true-28, which-24)
+nsubj(true-28, this-25)
+aux(true-28, could-26)
+cop(true-28, be-27)
+rcmod(situation-22, true-28)
+dep(matter-31, no-30)
+advmod(involved-36, matter-31)
+dobj(involved-36, which-32)
+amod(factors-34, other-33)
+nsubjpass(involved-36, factors-34)
+auxpass(involved-36, are-35)
+ccomp(true-28, involved-36)
+

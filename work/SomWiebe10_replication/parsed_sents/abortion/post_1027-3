@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ sounds)
+      (ADVP (RB just))
+      (PP (IN like)
+        (NP
+          (NP (DT the) (NN logic))
+          (PP (IN of)
+            (NP (DT the) (NNP Third) (NNP Reich)))))
+      (PP (TO to)
+        (NP (PRP me))))
+    (. .)))
+
+nsubj(sounds-2, That-1)
+root(ROOT-0, sounds-2)
+advmod(sounds-2, just-3)
+det(logic-6, the-5)
+prep_like(sounds-2, logic-6)
+det(Reich-10, the-8)
+nn(Reich-10, Third-9)
+prep_of(logic-6, Reich-10)
+prep_to(sounds-2, me-12)
+
+(ROOT
+  (S (CC And)
+    (S
+      (NP (DT that))
+      (VP (VBZ 's)
+        (SBAR
+          (WHADVP (RB exactly) (WRB how))
+          (S
+            (NP (PRP they))
+            (VP (VBN categorized)
+              (NP (PRP it)))))))
+    (: ;)
+    (S
+      (NP (DT the) (NN life))
+      (ADJP (NN unworthy)
+        (PP (IN of)
+          (NP (NN life)))))
+    (. .)))
+
+cc('s-3, And-1)
+nsubj('s-3, that-2)
+root(ROOT-0, 's-3)
+advmod(how-5, exactly-4)
+advmod(categorized-7, how-5)
+nsubj(categorized-7, they-6)
+ccomp('s-3, categorized-7)
+dobj(categorized-7, it-8)
+det(life-11, the-10)
+dep(unworthy-12, life-11)
+parataxis('s-3, unworthy-12)
+prep_of(unworthy-12, life-14)
+

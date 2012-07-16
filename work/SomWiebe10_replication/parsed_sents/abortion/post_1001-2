@@ -1,0 +1,27 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP (RB Only) (CD 1))
+        (NN %))
+      (PP (IN of)
+        (NP (DT all) (NNS abortions))))
+    (VP (VBP are)
+      (VP (VBN performed)
+        (PP (RB because) (IN of)
+          (NP (NN rape)
+            (CC or)
+            (NN incest)))))
+    (. .)))
+
+quantmod(1-2, Only-1)
+num(%-3, 1-2)
+nsubjpass(performed-8, %-3)
+det(abortions-6, all-5)
+prep_of(%-3, abortions-6)
+auxpass(performed-8, are-7)
+root(ROOT-0, performed-8)
+prep_because_of(performed-8, rape-11)
+prep_because_of(performed-8, incest-13)
+conj_or(rape-11, incest-13)
+

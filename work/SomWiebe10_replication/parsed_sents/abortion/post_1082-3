@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (FRAG (IN If) (RB not))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBZ invite)
+      (S
+        (NP (PRP you))
+        (VP (TO to)
+          (VP (VB look)
+            (PP (IN at)
+              (NP (PRP it)))
+            (PP (IN after)
+              (NP (DT the) (NN service)))
+            (NP (DT this) (NN morning))))))
+    (. .)))
+
+dep(invite-5, If-1)
+neg(If-1, not-2)
+nsubj(invite-5, I-4)
+root(ROOT-0, invite-5)
+nsubj(look-8, you-6)
+aux(look-8, to-7)
+xcomp(invite-5, look-8)
+prep_at(look-8, it-10)
+det(service-13, the-12)
+prep_after(look-8, service-13)
+det(morning-15, this-14)
+tmod(look-8, morning-15)
+

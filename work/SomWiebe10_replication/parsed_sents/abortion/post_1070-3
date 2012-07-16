@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (SBAR (IN Once)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (ADVP (RB out))
+          (PP (IN of)
+            (NP (DT the) (NN womb))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (PP (IN by)
+        (NP
+          (NP (NN definition))
+          (ADJP
+            (ADVP (RB no) (RBR longer))
+            (JJ dependent))))
+      (PP (IN on)
+        (NP
+          (NP (VBN said) (NN womb))
+          (PP (IN for)
+            (NP (NN survival))))))
+    (. .)))
+
+mark('s-3, Once-1)
+nsubj('s-3, it-2)
+advcl(is-10, 's-3)
+det(womb-7, the-6)
+prep_out_of('s-3, womb-7)
+nsubj(is-10, it-9)
+root(ROOT-0, is-10)
+prep_by(is-10, definition-12)
+advmod(longer-14, no-13)
+advmod(dependent-15, longer-14)
+amod(definition-12, dependent-15)
+amod(womb-18, said-17)
+prep_on(is-10, womb-18)
+prep_for(womb-18, survival-20)
+

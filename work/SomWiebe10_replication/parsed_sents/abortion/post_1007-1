@@ -1,0 +1,27 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN science))
+        (VP (VBD were)
+          (VP
+            (ADVP (RB always) (RB blindly))
+            (VBN trusted)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD would)
+      (ADVP (RB never))
+      (VP (VB progress)))
+    (. .)))
+
+mark(trusted-6, If-1)
+nsubjpass(trusted-6, science-2)
+auxpass(trusted-6, were-3)
+advmod(blindly-5, always-4)
+advmod(trusted-6, blindly-5)
+advcl(progress-11, trusted-6)
+nsubj(progress-11, we-8)
+aux(progress-11, would-9)
+neg(progress-11, never-10)
+root(ROOT-0, progress-11)
+

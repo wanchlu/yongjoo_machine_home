@@ -1,0 +1,45 @@
+(ROOT
+  (FRAG
+    (NP (PRP$ My) (NN question))
+    (PP (TO to)
+      (NP
+        (NP (PRP you))
+        (: :)
+        (SBARQ
+          (WHADVP (WRB Why))
+          (SQ (VBD did)
+            (NP (PRP$ your) (NN mother))
+            (VP
+              (ADVP (RB not))
+              (VB destroy)
+              (NP (PRP you))
+              (SBAR (IN while)
+                (S
+                  (NP (PRP you))
+                  (VP (VBD were)
+                    (NP
+                      (NP (NN nothing))
+                      (PP (CC but)
+                        (NP (DT a) (JJ cellular) (NN glob)))))))))
+          (. ?))))))
+
+poss(question-2, My-1)
+root(ROOT-0, question-2)
+dep(question-2, to-3)
+pobj(to-3, you-4)
+advmod(destroy-11, Why-6)
+aux(destroy-11, did-7)
+poss(mother-9, your-8)
+nsubj(destroy-11, mother-9)
+neg(destroy-11, not-10)
+dep(you-4, destroy-11)
+dobj(destroy-11, you-12)
+mark(nothing-16, while-13)
+nsubj(nothing-16, you-14)
+cop(nothing-16, were-15)
+advcl(destroy-11, nothing-16)
+prep(nothing-16, but-17)
+det(glob-20, a-18)
+amod(glob-20, cellular-19)
+dep(but-17, glob-20)
+

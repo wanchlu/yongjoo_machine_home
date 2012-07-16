@@ -1,0 +1,44 @@
+(ROOT
+  (X (CC But)
+    (S
+      (VP (VB let)
+        (SBAR
+          (S
+            (NP (PRP 's))
+            (VP (VBP say)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NN sake))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (NN argument))
+                            (: ;)
+                            (SBARQ
+                              (WHNP
+                                (WHNP (WP what) (NN kind))
+                                (PP (IN of)
+                                  (NP (NNS cells))))
+                              (SQ (VBP are)
+                                (NP (PRP they)))
+                              (. ?))))))))))))))))
+
+dep(let-2, But-1)
+root(ROOT-0, let-2)
+nsubj(say-4, 's-3)
+ccomp(let-2, say-4)
+nsubj(are-6, they-5)
+ccomp(say-4, are-6)
+det(sake-9, the-8)
+prep_for(are-6, sake-9)
+det(argument-12, the-11)
+prep_of(sake-9, argument-12)
+det(kind-15, what-14)
+attr(are-18, kind-15)
+prep_of(kind-15, cells-17)
+dep(argument-12, are-18)
+nsubj(are-18, they-19)
+

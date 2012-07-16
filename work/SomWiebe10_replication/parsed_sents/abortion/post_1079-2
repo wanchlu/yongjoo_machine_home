@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (DT the) (NN baby))
+          (VP (VBZ is)
+            (VP (VBN lost) (, ,)
+              (PP (IN through)
+                (NP
+                  (NP (NN abortion))
+                  (, ,)
+                  (NP (NN miscarriage))
+                  (, ,)
+                  (CC or)
+                  (NP (NN accident))))))))
+      (, ,)
+      (NP (DT all) (NNS women))
+      (VP (VBP go)
+        (ADVP (RB back))
+        (PP (TO to)
+          (NP
+            (NP (JJ normal) (NNS hormones))
+            (PP (IN in)
+              (NP (DT a) (JJ quick) (NN fashion)))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ causes)
+        (NP (NN depression))))
+    (. .)))
+
+advmod(lost-5, When-1)
+det(baby-3, the-2)
+nsubjpass(lost-5, baby-3)
+auxpass(lost-5, is-4)
+advcl(go-17, lost-5)
+prep_through(lost-5, abortion-8)
+prep_through(lost-5, miscarriage-10)
+conj_or(abortion-8, miscarriage-10)
+prep_through(lost-5, accident-13)
+conj_or(abortion-8, accident-13)
+det(women-16, all-15)
+nsubj(go-17, women-16)
+root(ROOT-0, go-17)
+advmod(go-17, back-18)
+amod(hormones-21, normal-20)
+prep_to(go-17, hormones-21)
+det(fashion-25, a-23)
+amod(fashion-25, quick-24)
+prep_in(hormones-21, fashion-25)
+nsubj(causes-28, it-27)
+conj_and(go-17, causes-28)
+dobj(causes-28, depression-29)
+

@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (VP (VBG misunderstanding)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT a) (JJ logical) (NN proposition))
+                  (VP (VBZ is)))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(misunderstanding-5, you-3)
+aux(misunderstanding-5, are-4)
+ccomp(think-2, misunderstanding-5)
+dobj(is-10, what-6)
+det(proposition-9, a-7)
+amod(proposition-9, logical-8)
+nsubj(is-10, proposition-9)
+ccomp(misunderstanding-5, is-10)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH True))
+      (, ,)
+      (NP (PRP we))
+      (VP (MD can)
+        (VP (VB pretend)
+          (S
+            (VP (TO to)
+              (VP (VB debate)
+                (NP (NN everything))
+                (PP (IN by)
+                  (NP
+                    (NP (NN use))
+                    (PP (IN of)
+                      (NP (JJ fallacious) (NNS thoughts)))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT an) (NN argument))
+          (VP (VBZ is)
+            (ADJP (JJ illogical)))))
+      (NP (NN nothing))
+      (VP (VBZ is)
+        (VP (VBN debated))))
+    (. .)))
+
+dep(pretend-5, True-1)
+nsubj(pretend-5, we-3)
+xsubj(debate-7, we-3)
+aux(pretend-5, can-4)
+root(ROOT-0, pretend-5)
+aux(debate-7, to-6)
+xcomp(pretend-5, debate-7)
+dobj(debate-7, everything-8)
+prep_by(debate-7, use-10)
+amod(thoughts-13, fallacious-12)
+prep_of(use-10, thoughts-13)
+advmod(illogical-20, when-16)
+det(argument-18, an-17)
+nsubj(illogical-20, argument-18)
+cop(illogical-20, is-19)
+advcl(debated-23, illogical-20)
+nsubjpass(debated-23, nothing-21)
+auxpass(debated-23, is-22)
+conj_but(pretend-5, debated-23)
+

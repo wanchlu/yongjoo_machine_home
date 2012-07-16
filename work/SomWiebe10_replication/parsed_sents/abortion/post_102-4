@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (NN addition)))
+      (, ,)
+      (NP
+        (NP (DT the) (NN demand))
+        (PP (IN for)
+          (NP (NNS abortions))))
+      (VP (MD will)
+        (ADVP (RB always))
+        (VP (VB exist))))
+    (: ;)
+    (X
+      (S
+        (VP (VBG making)
+          (NP
+            (NP (NN abortion))
+            (SBAR
+              (S
+                (S
+                  (ADJP (JJ illegal)))
+                (, ,)
+                (VP (MD will)
+                  (ADVP (RB simply))
+                  (VP (VB drive)
+                    (NP (PRP it))
+                    (ADVP (RB underground)))))))))
+      (CC and)
+      (PP (IN into)
+        (NP
+          (NP (NNS conditions))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP
+                (NP (DT the) (NN health)
+                  (CC and)
+                  (NN safety))
+                (PP (IN of)
+                  (NP (DT the) (NN woman))))
+              (VP (MD might)
+                (VP (VB be)
+                  (VP (VBN put)
+                    (PP (IN at)
+                      (NP (NN risk)))))))))))
+    (. .)))
+
+prep_in(exist-10, addition-2)
+det(demand-5, the-4)
+nsubj(exist-10, demand-5)
+prep_for(demand-5, abortions-7)
+aux(exist-10, will-8)
+advmod(exist-10, always-9)
+root(ROOT-0, exist-10)
+dep(exist-10, making-12)
+dobj(making-12, abortion-13)
+ccomp(drive-18, illegal-14)
+aux(drive-18, will-16)
+advmod(drive-18, simply-17)
+rcmod(abortion-13, drive-18)
+dobj(drive-18, it-19)
+advmod(drive-18, underground-20)
+dep(making-12, and-21)
+dep(making-12, into-22)
+pobj(into-22, conditions-23)
+advmod(put-34, where-24)
+det(health-26, the-25)
+nsubjpass(put-34, health-26)
+conj_and(health-26, safety-28)
+nsubjpass(put-34, safety-28)
+det(woman-31, the-30)
+prep_of(health-26, woman-31)
+aux(put-34, might-32)
+auxpass(put-34, be-33)
+rcmod(conditions-23, put-34)
+prep_at(put-34, risk-36)
+

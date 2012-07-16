@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (RB Just) (IN because)
+      (S
+        (NP (NNS people))
+        (VP (MD will)
+          (VP (VB try)
+            (S
+              (VP (TO to)
+                (VP (VB do)
+                  (NP (NN something))
+                  (PP (IN outside)
+                    (NP (DT the) (NN law))))))))))
+    (, ,)
+    (S
+      (VP (VBZ does) (RB not)
+        (VP (VB mean)
+          (NP (DT the) (NN government)))))
+    (VP (MD should)
+      (ADVP (RB just))
+      (VP (VB make)
+        (S
+          (NP (PRP it))
+          (ADJP (JJ legal)))))
+    (. .)))
+
+advmod(try-5, Just-1)
+dep(try-5, because-2)
+nsubj(try-5, people-3)
+xsubj(do-7, people-3)
+aux(try-5, will-4)
+advcl(make-20, try-5)
+aux(do-7, to-6)
+xcomp(try-5, do-7)
+dobj(do-7, something-8)
+det(law-11, the-10)
+prep_outside(do-7, law-11)
+aux(mean-15, does-13)
+neg(mean-15, not-14)
+csubj(make-20, mean-15)
+det(government-17, the-16)
+dobj(mean-15, government-17)
+aux(make-20, should-18)
+advmod(make-20, just-19)
+root(ROOT-0, make-20)
+nsubj(legal-22, it-21)
+xcomp(make-20, legal-22)
+

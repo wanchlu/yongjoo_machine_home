@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP
+            (NP
+              (QP (JJR more) (IN than) (CD one))
+              (NN abortion))
+            (SBAR (IN because)
+              (FRAG
+                (PP (IN of)
+                  (NP (PRP$ your) (JJ own) (JJ stupid) (NNS mistakes)))
+                (, ,) (RB then)
+                (NP (RB yes))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP
+      (ADVP (RBS most))
+      (VP
+        (ADVP (RB definitely))
+        (VBP carry)
+        (NP
+          (NP (DT the) (NN baby))
+          (PP (TO to)
+            (NP (NN term)))))
+      (CC and)
+      (VP (VBD put)
+        (NP (PRP it))
+        (PRT (RP up))
+        (PP (IN for)
+          (NP (NN adoption)))))
+    (. .)))
+
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl(carry-21, have-3)
+mwe(than-5, more-4)
+quantmod(one-6, than-5)
+num(abortion-7, one-6)
+dobj(have-3, abortion-7)
+mark(then-15, because-8)
+dep(then-15, of-9)
+poss(mistakes-13, your-10)
+amod(mistakes-13, own-11)
+amod(mistakes-13, stupid-12)
+pobj(of-9, mistakes-13)
+dep(abortion-7, then-15)
+dep(then-15, yes-16)
+nsubj(carry-21, you-18)
+nsubj(put-27, you-18)
+advmod(carry-21, most-19)
+advmod(carry-21, definitely-20)
+root(ROOT-0, carry-21)
+det(baby-23, the-22)
+dobj(carry-21, baby-23)
+prep_to(baby-23, term-25)
+conj_and(carry-21, put-27)
+dobj(put-27, it-28)
+prt(put-27, up-29)
+prep_for(put-27, adoption-31)
+

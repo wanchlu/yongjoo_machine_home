@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (PP (IN About)
+      (NP
+        (NP (NN legislation))
+        (: :)
+        (SBARQ
+          (WHNP (WP what) (RB else))
+          (SQ (VBP do)
+            (NP (PRP you))
+            (VP (VB base)
+              (NP (NN law))
+              (PP (IN on)
+                (NP
+                  (NP (JJ other))
+                  (PP (IN than)
+                    (NP (WP what))))))))))
+    (NP (PRP you))
+    (VP (VBP believe)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ right))))))
+    (. .)))
+
+prep_about(believe-15, legislation-2)
+dep(base-8, what-4)
+advmod(what-4, else-5)
+aux(base-8, do-6)
+nsubj(base-8, you-7)
+dep(legislation-2, base-8)
+dobj(base-8, law-9)
+prep_on(base-8, other-11)
+prep_than(other-11, what-13)
+nsubj(believe-15, you-14)
+xsubj(right-18, you-14)
+root(ROOT-0, believe-15)
+aux(right-18, to-16)
+cop(right-18, be-17)
+xcomp(believe-15, right-18)
+

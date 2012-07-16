@@ -12,12 +12,14 @@ foreach my $domain (@domains) {
         open IN, $input or die;
         my $sent = <IN>;
         close IN;
-        print $domain."\t".$file."\t";
+        my $post_id = $file;
+        $post_id =~ s/-\d+//g;
+        print $domain."\t".$post_id."\t".$file."\t";
 
         my @tokens = split /\s+/, $sent;
         foreach my $t (@tokens) {
             my ($w, $pos) = split /\//, $t;
-            if ($pos =~ m/^(NN.?|RB|VB.?|JJ.?)$/) {
+            if ($pos =~ m/^(PRP.?|NN.?|RB|VB.?|JJ.?)$/) {
                 print "$w ";
             }
         }

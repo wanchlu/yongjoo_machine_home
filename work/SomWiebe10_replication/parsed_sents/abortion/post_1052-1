@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (MD should)
+      (ADVP (RB never))
+      (VP (VB have)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB make)
+                (NP
+                  (NP (NNS decisions))
+                  (VP
+                    (VP (VBG pertaining)
+                      (PP (TO to)
+                        (NP
+                          (NP (CD one) (POS 's))
+                          (JJ own) (NN body))))
+                    (CC and\/or)
+                    (VP
+                      (NP (DT a) (NN decision)
+                        (S
+                          (VP (TO to)
+                            (VP (VB bring)
+                              (NP (DT a) (NN child))
+                              (PP (IN into)
+                                (NP (DT the) (NN world)
+                                  (CC or)
+                                  (RB not))))))))))))))))
+    (. .)))
+
+det(government-2, The-1)
+nsubj(have-5, government-2)
+aux(have-5, should-3)
+neg(have-5, never-4)
+root(ROOT-0, have-5)
+det(right-7, the-6)
+dobj(have-5, right-7)
+aux(make-9, to-8)
+infmod(right-7, make-9)
+dobj(make-9, decisions-10)
+dep(decisions-10, pertaining-11)
+poss(body-16, one-13)
+amod(body-16, own-15)
+prep_to(pertaining-11, body-16)
+det(decision-19, a-18)
+dep(decisions-10, decision-19)
+conj_and\/or(pertaining-11, decision-19)
+aux(bring-21, to-20)
+infmod(decision-19, bring-21)
+det(child-23, a-22)
+dobj(bring-21, child-23)
+det(world-26, the-25)
+prep_into(bring-21, world-26)
+prep_into(bring-21, not-28)
+conj_or(world-26, not-28)
+neg(world-26, not-28)
+

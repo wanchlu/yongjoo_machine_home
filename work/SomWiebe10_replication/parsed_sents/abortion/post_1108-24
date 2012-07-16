@@ -1,0 +1,26 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Prohibition))
+      (PP (IN on)
+        (NP
+          (NP (NN sex))
+          (PP (IN before)
+            (NP (NN marriage))))))
+    (VP
+      (VP (MD can) (RB not))
+      (CC and)
+      (VP (MD will) (RB not)
+        (VP (VB work))))
+    (. .)))
+
+nsubj(can-6, Prohibition-1)
+nsubj(work-11, Prohibition-1)
+prep_on(Prohibition-1, sex-3)
+prep_before(sex-3, marriage-5)
+root(ROOT-0, can-6)
+neg(can-6, not-7)
+aux(work-11, will-9)
+neg(work-11, not-10)
+conj_and(can-6, work-11)
+

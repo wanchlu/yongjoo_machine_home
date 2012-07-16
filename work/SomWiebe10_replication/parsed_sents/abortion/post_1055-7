@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBD said)
+          (ADVP (RBR earlier))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ turns)
+                (NP
+                  (NP (DT the) (NN law))
+                  (PP (IN on)
+                    (NP
+                      (NP
+                        (NP (PRP it) (POS 's))
+                        (NN head))
+                      (, ,)
+                      (NP (DT the) (JJ very) (NN law)))))))))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN supposed)
+        (S
+          (VP (TO to)
+            (VP (VB uphold))))))
+    (. .)))
+
+mark(said-3, As-1)
+nsubj(said-3, I-2)
+advcl(supposed-19, said-3)
+advmod(said-3, earlier-4)
+nsubj(turns-6, it-5)
+ccomp(said-3, turns-6)
+det(law-8, the-7)
+dobj(turns-6, law-8)
+poss(head-12, it-10)
+prep_on(law-8, head-12)
+det(law-16, the-14)
+amod(law-16, very-15)
+appos(head-12, law-16)
+nsubjpass(supposed-19, it-17)
+xsubj(uphold-21, it-17)
+auxpass(supposed-19, is-18)
+root(ROOT-0, supposed-19)
+aux(uphold-21, to-20)
+xcomp(supposed-19, uphold-21)
+

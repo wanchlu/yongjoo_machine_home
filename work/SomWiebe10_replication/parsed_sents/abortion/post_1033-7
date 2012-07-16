@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (FRAG
+      (INTJ (WRB Why))
+      (, ,)
+      (PP (IN because)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP have)
+      (VP (VBD confessed)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN innocence))
+            (PP (IN of)
+              (S
+                (VP (VBG killing)
+                  (NP (PRP$ your) (JJ own) (JJ would-be) (NN progeny)))))))))
+    (. .)))
+
+dep(confessed-7, Why-1)
+dep(Why-1, because-3)
+nsubj(confessed-7, you-5)
+aux(confessed-7, have-6)
+root(ROOT-0, confessed-7)
+det(innocence-10, the-9)
+prep_to(confessed-7, innocence-10)
+prepc_of(innocence-10, killing-12)
+poss(progeny-16, your-13)
+amod(progeny-16, own-14)
+amod(progeny-16, would-be-15)
+dobj(killing-12, progeny-16)
+

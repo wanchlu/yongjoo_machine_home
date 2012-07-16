@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP
+      (NP (# #) (CD 2))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP find)
+            (S
+              (NP (PRP it))
+              (ADJP (RB quite) (JJ humorous)))
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (MD must))))))))
+    (VP (VBP associate)
+      (NP (PRP yourself))
+      (PP (IN with)
+        (NP (DT some) (JJ legal) (NN professional)))
+      (SBAR (RB as) (IN though)
+        (S
+          (NP (DT that))
+          (VP (MD would)
+            (ADVP (RB somehow))
+            (VP (VB imply)
+              (NP
+                (NP (PRP$ your) (NN competence))
+                (PP (VBG concerning)
+                  (NP (JJ legal) (NNS concepts)))))))))
+    (. .)))
+
+dep(2-2, #-1)
+nsubj(associate-11, 2-2)
+nsubj(find-4, I-3)
+rcmod(2-2, find-4)
+nsubj(humorous-7, it-5)
+advmod(humorous-7, quite-6)
+xcomp(find-4, humorous-7)
+complm(must-10, that-8)
+nsubj(must-10, you-9)
+ccomp(find-4, must-10)
+root(ROOT-0, associate-11)
+dobj(associate-11, yourself-12)
+det(professional-16, some-14)
+amod(professional-16, legal-15)
+prep_with(associate-11, professional-16)
+advmod(imply-22, as-17)
+dep(imply-22, though-18)
+nsubj(imply-22, that-19)
+aux(imply-22, would-20)
+advmod(imply-22, somehow-21)
+dep(associate-11, imply-22)
+poss(competence-24, your-23)
+dobj(imply-22, competence-24)
+amod(concepts-27, legal-26)
+prep_concerning(competence-24, concepts-27)
+

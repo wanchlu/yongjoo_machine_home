@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS thousands))
+        (PP (IN of)
+          (NP
+            (NP (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB take)
+                        (NP (DT these) (NNS children))
+                        (SBAR (IN because)
+                          (S
+                            (NP (PRP they))
+                            (VP (MD can) (RB not)
+                              (VP (VB have)
+                                (NP (PRP$ their) (JJ own))))))))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, thousands-3)
+prep_of(thousands-3, people-5)
+nsubj(want-7, people-5)
+rcmod(people-5, want-7)
+aux(take-9, to-8)
+xcomp(want-7, take-9)
+det(children-11, these-10)
+dobj(take-9, children-11)
+mark(have-16, because-12)
+nsubj(have-16, they-13)
+aux(have-16, can-14)
+neg(have-16, not-15)
+advcl(take-9, have-16)
+poss(own-18, their-17)
+dobj(have-16, own-18)
+

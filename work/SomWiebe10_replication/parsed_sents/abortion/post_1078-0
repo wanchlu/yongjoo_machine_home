@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD wrote)
+      (NP
+        (NP (DT this) (NN speech))
+        (: ...)
+        (S
+          (S
+            (VP (VB read)
+              (NP (PRP it))))
+          (CC and)
+          (S
+            (NP (PRP it))
+            (VP (MD will)
+              (VP (VB answer)
+                (NP (PRP$ your) (NNS questions))))))))
+    (. .)))
+
+nsubj(wrote-2, I-1)
+root(ROOT-0, wrote-2)
+det(speech-4, this-3)
+dobj(wrote-2, speech-4)
+dep(speech-4, read-6)
+dobj(read-6, it-7)
+nsubj(answer-11, it-9)
+aux(answer-11, will-10)
+dep(speech-4, answer-11)
+conj_and(read-6, answer-11)
+poss(questions-13, your-12)
+dobj(answer-11, questions-13)
+

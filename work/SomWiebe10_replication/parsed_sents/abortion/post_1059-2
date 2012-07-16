@@ -1,0 +1,43 @@
+(ROOT
+  (FRAG (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (PRP I))
+        (VP (VBP 'm)
+          (NP
+            (NP (DT a) (NN doctor))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBP have)
+                  (NP
+                    (NP (JJR more))
+                    (PP (IN of)
+                      (NP (DT a) (NN right)
+                        (S
+                          (VP (TO to)
+                            (VP (VB do)
+                              (SBAR
+                                (WHNP (WP what))
+                                (S
+                                  (NP (PRP I))
+                                  (VP (VBP want)))))))))))))))))
+    (. ?)))
+
+dep(doctor-6, And-1)
+mark(doctor-6, if-2)
+nsubj(doctor-6, I-3)
+cop(doctor-6, 'm-4)
+det(doctor-6, a-5)
+root(ROOT-0, doctor-6)
+nsubj(have-8, I-7)
+rcmod(doctor-6, have-8)
+dobj(have-8, more-9)
+det(right-12, a-11)
+prep_of(more-9, right-12)
+aux(do-14, to-13)
+infmod(right-12, do-14)
+dobj(want-17, what-15)
+nsubj(want-17, I-16)
+ccomp(do-14, want-17)
+

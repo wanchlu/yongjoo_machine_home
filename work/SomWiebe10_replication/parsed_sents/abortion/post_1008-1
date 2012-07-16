@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NNP SCIENCE))
+    (VP (VBZ SAYS)
+      (SBAR
+        (S
+          (NP (PRP IT))
+          (VP (VBZ IS)
+            (NP (DT A) (NNP HUMAN) (NNP BEING))))))
+    (. .)))
+
+nsubj(SAYS-2, SCIENCE-1)
+root(ROOT-0, SAYS-2)
+nsubj(BEING-7, IT-3)
+cop(BEING-7, IS-4)
+det(BEING-7, A-5)
+nn(BEING-7, HUMAN-6)
+ccomp(SAYS-2, BEING-7)
+
+(ROOT
+  (S
+    (NP (NNP SCIENCE) (NNP SAYS) (NNP THAT) (NNP THIS) (NNP BABY))
+    (VP (VBZ IS)
+      (NP (NNP VERY) (NNP DEVELOPED) (NNP AT) (NNP TWELVE) (NNP WEEKS)))
+    (. .)))
+
+nn(BABY-5, SCIENCE-1)
+nn(BABY-5, SAYS-2)
+nn(BABY-5, THAT-3)
+nn(BABY-5, THIS-4)
+nsubj(WEEKS-11, BABY-5)
+cop(WEEKS-11, IS-6)
+nn(WEEKS-11, VERY-7)
+nn(WEEKS-11, DEVELOPED-8)
+nn(WEEKS-11, AT-9)
+nn(WEEKS-11, TWELVE-10)
+root(ROOT-0, WEEKS-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD might)
+            (VP (VB want)
+              (S
+                (VP (TO to)
+                  (VP (VB know)
+                    (NP (DT this))))))))))
+    (. .)))
+
+nsubj(thought-2, I-1)
+root(ROOT-0, thought-2)
+nsubj(want-5, you-3)
+xsubj(know-7, you-3)
+aux(want-5, might-4)
+ccomp(thought-2, want-5)
+aux(know-7, to-6)
+xcomp(want-5, know-7)
+dobj(know-7, this-8)
+

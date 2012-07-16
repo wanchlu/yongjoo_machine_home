@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (ADVP (RB First))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB probably))
+    (VP (MD ought)
+      (S
+        (VP (TO to)
+          (VP (VB know)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (NN abortion))
+                (VP (VBZ is))))))))
+    (. .)))
+
+advmod(ought-5, First-1)
+nsubj(ought-5, you-3)
+xsubj(know-7, you-3)
+advmod(ought-5, probably-4)
+root(ROOT-0, ought-5)
+aux(know-7, to-6)
+xcomp(ought-5, know-7)
+dobj(is-10, what-8)
+nsubj(is-10, abortion-9)
+ccomp(know-7, is-10)
+
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (VP (VBG killing)
+        (NP
+          (NP (DT the) (NN baby))
+          (PP (IN inside)
+            (NP (PRP you))))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (ADJP (JJ pregnant)))))))
+    (. .)))
+
+nsubj(killing-3, Abortion-1)
+aux(killing-3, is-2)
+root(ROOT-0, killing-3)
+det(baby-5, the-4)
+dobj(killing-3, baby-5)
+prep_inside(baby-5, you-7)
+advmod(pregnant-11, when-8)
+nsubj(pregnant-11, you-9)
+cop(pregnant-11, are-10)
+advcl(killing-3, pregnant-11)
+

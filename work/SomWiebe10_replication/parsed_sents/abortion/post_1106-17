@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (SBAR (WDT Whatever)
+      (FRAG
+        (NP (DT the) (NN reason))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADVP (RB certainly) (RB not))
+      (NP (DT an) (JJ easy) (NN choice)
+        (S
+          (VP (TO to)
+            (VP (VB make))))))
+    (. .)))
+
+dep(reason-3, Whatever-1)
+det(reason-3, the-2)
+dep(choice-11, reason-3)
+nsubj(choice-11, it-5)
+cop(choice-11, 's-6)
+advmod(not-8, certainly-7)
+neg(choice-11, not-8)
+det(choice-11, an-9)
+amod(choice-11, easy-10)
+root(ROOT-0, choice-11)
+aux(make-13, to-12)
+infmod(choice-11, make-13)
+

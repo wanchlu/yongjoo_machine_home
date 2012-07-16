@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Doctors))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP perform)
+            (NP (NNS abortions))))))
+    (VP (VBP are)
+      (VP
+        (ADVP (RB often) (RB emotionally))
+        (VBN damaged)
+        (NP
+          (NP (NNP Anonymous) (NN abortion) (NN doctor))
+          (, ,)
+          (VP (VBN quoted)
+            (PP (IN by)
+              (NP (NNP Jack) (NNP Hitt)))))
+        (PP (IN in))
+        ('' '')
+        (SBAR
+          (WHNP (WP Who))
+          (S
+            (NP (NNP Will))
+            (VP (VBP Do)
+              (NP (NNS Abortions))
+              (ADVP (RB Here)))))))
+    (. ?)))
+
+nsubj(perform-3, Doctors-1)
+nsubjpass(damaged-8, Doctors-1)
+rcmod(Doctors-1, perform-3)
+dobj(perform-3, abortions-4)
+auxpass(damaged-8, are-5)
+advmod(emotionally-7, often-6)
+advmod(damaged-8, emotionally-7)
+root(ROOT-0, damaged-8)
+nn(doctor-11, Anonymous-9)
+nn(doctor-11, abortion-10)
+dobj(damaged-8, doctor-11)
+partmod(doctor-11, quoted-13)
+nn(Hitt-16, Jack-15)
+agent(quoted-13, Hitt-16)
+prep(damaged-8, in-17)
+dobj(Do-21, Who-19)
+nsubj(Do-21, Will-20)
+dep(damaged-8, Do-21)
+dobj(Do-21, Abortions-22)
+advmod(Do-21, Here-23)
+

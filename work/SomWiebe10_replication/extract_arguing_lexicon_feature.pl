@@ -113,11 +113,13 @@ foreach my $domain (@domains) {
         }
         my $sent_pol = "ap";
         $sent_pol = "an" if ($sent_neg > $sent_pos);
-        print "$domain\t$file\t";
+        my $post_id = $file;
+        $post_id =~ s/-\d+//g;
         next if ($sent_neg == $sent_pos);  # neutral
+        print "$domain\t$post_id\t$file\t";
         foreach my $t (@tokens) {
             my ($w, $pos) = split /\//, $t;
-            if ($pos =~ m/^(NN.?|RB|VB.?|JJ.?)$/) {
+            if ($pos =~ m/^(PRP.?|NN.?|RB|VB.?|JJ.?)$/) {
                 print $sent_pol."_".stem($w)." ";
             }
             

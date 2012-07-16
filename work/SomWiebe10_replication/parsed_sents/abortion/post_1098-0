@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ simple))
+      (S
+        (ADJP (JJ innocent))
+        (SBAR
+          (SINV
+            (ADVP (RB simply))
+            (VP (VBZ means))
+            (NP
+              (NP (JJ free))
+              (PP (IN of)
+                (NP (NN blame)))))))
+      (, ,)
+      (FRAG
+        (NP (RB not) (JJ guilty))
+        (, ,) (RB not)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ wrong))
+            (, ,)
+            (NP (FW etc.))))))))
+
+nsubj(simple-3, it-1)
+cop(simple-3, is-2)
+root(ROOT-0, simple-3)
+dep(means-6, innocent-4)
+advmod(means-6, simply-5)
+dep(simple-3, means-6)
+nsubj(means-6, free-7)
+prep_of(free-7, blame-9)
+neg(guilty-12, not-11)
+dep(not-14, guilty-12)
+dep(simple-3, not-14)
+dep(not-14, in-15)
+det(wrong-17, the-16)
+pobj(in-15, wrong-17)
+appos(wrong-17, etc.-19)
+

@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (NP (DT the) (NN question))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ makes)
+              (S
+                (NP (PRP us))
+                (NP (DT a) (NN person))))))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ makes)
+              (S
+                (NP (PRP us))
+                (ADJP (JJ special)
+                  (PP (IN above)
+                    (NP
+                      (NP (DT those) (NNS beings))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBP are)
+                            (ADJP (JJ okay)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB kill) (-LRB- -LRB-)
+                                    (NP (JJS most) (NNS animals))
+                                    (, ,)
+                                    (S
+                                      (VP (VBG insects)
+                                        (NP (NNS plants))
+                                        (X (NN etc.)))))))))))))))))
+          (. .))))
+    (. .)))
+
+dep(is-5, Well-1)
+det(question-4, the-3)
+nsubj(is-5, question-4)
+root(ROOT-0, is-5)
+nsubj(makes-7, what-6)
+dep(is-5, makes-7)
+nsubj(person-10, us-8)
+det(person-10, a-9)
+xcomp(makes-7, person-10)
+nsubj(makes-14, what-13)
+dep(is-5, makes-14)
+conj_and(makes-7, makes-14)
+nsubj(special-16, us-15)
+xcomp(makes-14, special-16)
+det(beings-19, those-18)
+prep_above(special-16, beings-19)
+nsubj(okay-22, beings-19)
+cop(okay-22, are-21)
+rcmod(beings-19, okay-22)
+aux(kill-24, to-23)
+xcomp(okay-22, kill-24)
+amod(animals-27, most-26)
+dobj(kill-24, animals-27)
+partmod(kill-24, insects-29)
+xcomp(kill-24, insects-29)
+dobj(insects-29, plants-30)
+dep(insects-29, etc.-31)
+

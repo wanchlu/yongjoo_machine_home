@@ -1,0 +1,70 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (S
+          (NP
+            (NP (PRP you))
+            (CC and)
+            (NP (PRP$ your) (NN spouse)))
+          (VP (VBP have)
+            (NP (DT no) (NNPS STDs))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (NP (NN sex))
+            (PP (IN with)
+              (NP (RB no) (CD one) (RB else)))))))
+    (WHNP (WRB how))
+    (SQ
+      (VP (MD could)
+        (VP
+          (ADJP
+            (NP (PRP you))
+            (JJ possible))
+          (VB get)
+          (PP
+            (ADVP
+              (NP (DT an) (NN STD))
+              (RB apart))
+            (IN from)
+            (NP (DT a) (NN mishap)))
+          (PP (IN at)
+            (NP (DT the) (NNS doctors))))))
+    (. ?)))
+
+mark(have-6, If-1)
+nsubj(have-6, you-2)
+poss(spouse-5, your-4)
+conj_and(you-2, spouse-5)
+nsubj(have-6, spouse-5)
+dep(possible-20, have-6)
+det(STDs-8, no-7)
+dobj(have-6, STDs-8)
+nsubj(have-11, you-10)
+conj_and(have-6, have-11)
+dep(possible-20, have-11)
+dobj(have-11, sex-12)
+advmod(one-15, no-14)
+prep_with(have-11, one-15)
+advmod(one-15, else-16)
+nsubj(possible-20, how-17)
+aux(possible-20, could-18)
+npadvmod(possible-20, you-19)
+root(ROOT-0, possible-20)
+dep(possible-20, get-21)
+det(STD-23, an-22)
+npadvmod(possible-20, STD-23)
+det(mishap-27, a-26)
+prep_apart_from(possible-20, mishap-27)
+det(doctors-30, the-29)
+prep_at(possible-20, doctors-30)
+
+(ROOT
+  (FRAG
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, 1-1)
+

@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP need)
+            (S
+              (VP (TO to)
+                (VP (VB believe)
+                  (SBAR (IN that)
+                    (S
+                      (NP
+                        (NP (DT the) (NN majority))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNS people))
+                            (PP (IN in)
+                              (NP
+                                (NP (DT this) (NN country))
+                                (, ,)
+                                (CC and)
+                                (ADVP (IN around)
+                                  (NP (DT the) (NN world)))
+                                (, ,))))))
+                      (VP (VBP are)
+                        (NP
+                          (NP (JJ good) (NNS people))
+                          (VP (VBG seeking)
+                            (NP (NN nothing))
+                            (PP (JJR more) (IN than)
+                              (NP
+                                (NP (DT the) (JJS best) (NN chance))
+                                (PP (IN at)
+                                  (S
+                                    (VP (VBG living)
+                                      (NP (DT a)
+                                        (ADJP (JJ healthy)
+                                          (CC and)
+                                          (JJ happy))
+                                        (NN life)))))))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(need-4, we-3)
+xsubj(believe-6, we-3)
+ccomp(think-2, need-4)
+aux(believe-6, to-5)
+xcomp(need-4, believe-6)
+complm(people-23, that-7)
+det(majority-9, the-8)
+nsubj(people-23, majority-9)
+prep_of(majority-9, people-11)
+det(country-14, this-13)
+prep_in(people-11, country-14)
+prep_in(people-11, around-17)
+conj_and(country-14, around-17)
+det(world-19, the-18)
+pobj(around-17, world-19)
+cop(people-23, are-21)
+amod(people-23, good-22)
+ccomp(believe-6, people-23)
+partmod(people-23, seeking-24)
+dobj(seeking-24, nothing-25)
+dep(seeking-24, more-26)
+det(chance-30, the-28)
+amod(chance-30, best-29)
+prep_than(seeking-24, chance-30)
+prepc_at(chance-30, living-32)
+det(life-37, a-33)
+amod(life-37, healthy-34)
+conj_and(healthy-34, happy-36)
+amod(life-37, happy-36)
+dobj(living-32, life-37)
+

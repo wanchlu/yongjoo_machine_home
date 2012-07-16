@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (DT An) (NN example))
+    (VP (MD would)
+      (VP (VB be)
+        (NP
+          (NP (DT a) (NN girlfriend))
+          (PP (IN of)
+            (NP (NN mine)))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP
+                (VP (VBD needed)
+                  (NP (NN money)))
+                (CC and)
+                (VP (VBD decided)
+                  (S
+                    (VP (TO to)
+                      (VP (VB sell)
+                        (NP (PRP$ her) (NNS eggs))))))))))))
+    (. .)))
+
+det(example-2, An-1)
+nsubj(girlfriend-6, example-2)
+aux(girlfriend-6, would-3)
+cop(girlfriend-6, be-4)
+det(girlfriend-6, a-5)
+root(ROOT-0, girlfriend-6)
+nsubj(needed-10, girlfriend-6)
+nsubj(decided-13, girlfriend-6)
+prep_of(girlfriend-6, mine-8)
+rcmod(girlfriend-6, needed-10)
+dobj(needed-10, money-11)
+rcmod(girlfriend-6, decided-13)
+conj_and(needed-10, decided-13)
+aux(sell-15, to-14)
+xcomp(decided-13, sell-15)
+poss(eggs-17, her-16)
+dobj(sell-15, eggs-17)
+

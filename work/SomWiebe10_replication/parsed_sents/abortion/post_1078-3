@@ -1,0 +1,43 @@
+(ROOT
+  (S (CC But)
+    (, ,)
+    (SBAR (IN after)
+      (S
+        (NP (PRP she))
+        (VP (VBD had)
+          (NP (DT the) (NN abortion)))))
+    (, ,)
+    (S
+      (NP (PRP she))
+      (VP (VBD saw)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP she))
+            (VP (VBD thought)
+              (NP (JJ wasn) (NN t) (NN living)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB actually))
+      (VP (VBD was)))
+    (. .)))
+
+mark(had-5, after-3)
+nsubj(had-5, she-4)
+dep(saw-10, had-5)
+det(abortion-7, the-6)
+dobj(had-5, abortion-7)
+nsubj(saw-10, she-9)
+root(ROOT-0, saw-10)
+dobj(thought-13, what-11)
+nsubj(thought-13, she-12)
+ccomp(saw-10, thought-13)
+amod(living-16, wasn-14)
+nn(living-16, t-15)
+dobj(thought-13, living-16)
+nsubj(was-21, it-19)
+advmod(was-21, actually-20)
+conj_and(saw-10, was-21)
+

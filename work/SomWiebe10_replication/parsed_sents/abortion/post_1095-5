@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (NP (DT a) (NN human)
+            (S
+              (VP (VBG being)
+                (ADVP (RB then))))))))
+    (NP (PRP it))
+    (VP (VBZ requires)
+      (NP
+        (NP (DT a)
+          (ADJP (RB very) (JJ high))
+          (NN level))
+        (PP (IN of)
+          (NP (NN justification))))
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP
+              (NP (PRP it) (POS 's))
+              (NN life))))))
+    (. .)))
+
+mark(human-5, If-1)
+nsubj(human-5, it-2)
+cop(human-5, is-3)
+det(human-5, a-4)
+advcl(requires-9, human-5)
+dep(human-5, being-6)
+advmod(being-6, then-7)
+nsubj(requires-9, it-8)
+root(ROOT-0, requires-9)
+det(level-13, a-10)
+advmod(high-12, very-11)
+amod(level-13, high-12)
+dobj(requires-9, level-13)
+prep_of(level-13, justification-15)
+aux(take-17, to-16)
+xcomp(requires-9, take-17)
+poss(life-20, it-18)
+dobj(take-17, life-20)
+

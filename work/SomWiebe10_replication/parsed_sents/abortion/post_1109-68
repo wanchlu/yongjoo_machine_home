@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (ADVP (RB really))
+          (VP (VBD believed)
+            (SBAR (IN that)
+              (S
+                (NP (NN morality))
+                (VP (VBD was)
+                  (ADJP (JJ subjective))))))))
+      (NP (PRP you))
+      (VP (MD would)
+        (VP (VB go)
+          (VP
+            (VP (VB sit)
+              (PP (IN under)
+                (NP (DT a) (NN tree))))
+            (CC and)
+            (VP (VB talk)
+              (PP (TO to)
+                (NP (DT no) (NN one))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP you))
+      (VP (VBP do) (RB n't)))
+    (. .)))
+
+mark(believed-4, If-1)
+nsubj(believed-4, you-2)
+advmod(believed-4, really-3)
+advcl(go-11, believed-4)
+complm(subjective-8, that-5)
+nsubj(subjective-8, morality-6)
+cop(subjective-8, was-7)
+ccomp(believed-4, subjective-8)
+nsubj(go-11, you-9)
+aux(go-11, would-10)
+root(ROOT-0, go-11)
+dep(go-11, sit-12)
+det(tree-15, a-14)
+prep_under(sit-12, tree-15)
+dep(go-11, talk-17)
+conj_and(sit-12, talk-17)
+det(one-20, no-19)
+prep_to(talk-17, one-20)
+nsubj(do-24, you-23)
+conj_but(go-11, do-24)
+neg(do-24, n't-25)
+

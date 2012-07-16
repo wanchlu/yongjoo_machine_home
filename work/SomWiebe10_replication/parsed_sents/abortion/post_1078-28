@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (DT Some) (NNS people))
+      (VP (MD may)
+        (VP (VB think)
+          (SBAR
+            (SBAR (IN that)
+              (S
+                (NP (NN life))
+                (VP (VBZ begins)
+                  (PP (IN at)
+                    (NP
+                      (NP (NN birth))
+                      (, ,)
+                      (CC or)
+                      (NP (DT some) (NNS people))))
+                  (ADVP (RB even) (RB later)))))
+            (, ,)
+            (CC but)
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ wrong)))))))))
+    (, ,)
+    (NP (NN life))
+    (VP (VBZ begins)
+      (PP (IN at)
+        (NP (NN conception))))
+    (. .)))
+
+det(people-2, Some-1)
+nsubj(think-4, people-2)
+aux(think-4, may-3)
+ccomp(begins-23, think-4)
+complm(begins-7, that-5)
+nsubj(begins-7, life-6)
+ccomp(think-4, begins-7)
+prep_at(begins-7, birth-9)
+det(people-13, some-12)
+prep_at(begins-7, people-13)
+conj_or(birth-9, people-13)
+advmod(later-15, even-14)
+advmod(begins-7, later-15)
+nsubj(wrong-20, that-18)
+cop(wrong-20, is-19)
+ccomp(think-4, wrong-20)
+conj_but(begins-7, wrong-20)
+nsubj(begins-23, life-22)
+root(ROOT-0, begins-23)
+prep_at(begins-23, conception-25)
+

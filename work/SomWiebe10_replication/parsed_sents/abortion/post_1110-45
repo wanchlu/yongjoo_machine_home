@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP recognize)
+      (NP
+        (NP (DT the) (NN invalidity))
+        (PP (IN of)
+          (NP (DT these) (NNS laws))))
+      (SBAR (IN because)
+        (S
+          (NP (PRP they))
+          (VP (VBP understand)
+            (SBAR
+              (S
+                (NP (PRP$ their) (NNS bodies))
+                (VP (VBP are)
+                  (ADVP (RB ultimately))
+                  (NP (PRP theirs))
+                  (S
+                    (VP (TO to)
+                      (VP (VB do)
+                        (PP (IN with)
+                          (SBAR
+                            (WHNP (WP what))
+                            (S
+                              (NP (PRP they))
+                              (VP (VBP please)))))))))))))))
+    (. .)))
+
+nsubj(recognize-2, People-1)
+root(ROOT-0, recognize-2)
+det(invalidity-4, the-3)
+dobj(recognize-2, invalidity-4)
+det(laws-7, these-6)
+prep_of(invalidity-4, laws-7)
+mark(understand-10, because-8)
+nsubj(understand-10, they-9)
+advcl(recognize-2, understand-10)
+poss(bodies-12, their-11)
+nsubj(theirs-15, bodies-12)
+cop(theirs-15, are-13)
+advmod(theirs-15, ultimately-14)
+ccomp(understand-10, theirs-15)
+aux(do-17, to-16)
+xcomp(theirs-15, do-17)
+dobj(please-21, what-19)
+nsubj(please-21, they-20)
+prepc_with(do-17, please-21)
+

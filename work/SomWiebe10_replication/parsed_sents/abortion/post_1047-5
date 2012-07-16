@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD may)
+      (VP (VB think)
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (VP (VBN won)
+                  (NP (NN something))))))
+          (, ,)
+          (CC but)
+          (SBAR
+            (ADVP (IN at))
+            (WHNP (WP what))
+            (SQ
+              (VP (VBD cost)))
+            (. ?)))))))
+
+nsubj(think-3, You-1)
+aux(think-3, may-2)
+root(ROOT-0, think-3)
+complm(won-7, that-4)
+nsubj(won-7, you-5)
+nsubj(cost-13, you-5)
+aux(won-7, have-6)
+ccomp(think-3, won-7)
+dobj(won-7, something-8)
+advmod(cost-13, at-11)
+dep(cost-13, what-12)
+ccomp(think-3, cost-13)
+conj_but(won-7, cost-13)
+

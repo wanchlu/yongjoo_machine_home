@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (VB try))
+      (CC and)
+      (VP (VB persuade)
+        (NP (NNS people))
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (PRP$ your) (NN view))
+              (VP (VBZ is)
+                (NP (DT the) (JJ correct) (NN one)))))
+          (, ,)
+          (CC but)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (PRP I))
+              (VP (VBP ask)))))))
+    (. ?)))
+
+nsubj(try-2, You-1)
+nsubj(persuade-4, You-1)
+root(ROOT-0, try-2)
+conj_and(try-2, persuade-4)
+dobj(persuade-4, people-5)
+complm(one-12, that-6)
+poss(view-8, your-7)
+nsubj(one-12, view-8)
+cop(one-12, is-9)
+det(one-12, the-10)
+amod(one-12, correct-11)
+ccomp(persuade-4, one-12)
+advmod(ask-17, why-15)
+nsubj(ask-17, I-16)
+ccomp(persuade-4, ask-17)
+conj_but(one-12, ask-17)
+

@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN baby))
+      (VP (VBZ is)
+        (VP (VBN forced)
+          (PP (IN into)
+            (NP (DT the) (NN birth) (NN canal) (NNS legs)))
+          (ADVP (RB first)))))
+    (CC and)
+    (S
+      (NP
+        (NP (NN everything))
+        (PP (IN except)
+          (NP (DT the) (NN head))))
+      (VP (VBZ is)
+        (VP (VBN delivered))))
+    (. .)))
+
+det(baby-2, The-1)
+nsubjpass(forced-4, baby-2)
+auxpass(forced-4, is-3)
+root(ROOT-0, forced-4)
+det(legs-9, the-6)
+nn(legs-9, birth-7)
+nn(legs-9, canal-8)
+prep_into(forced-4, legs-9)
+advmod(forced-4, first-10)
+nsubjpass(delivered-17, everything-12)
+det(head-15, the-14)
+prep_except(everything-12, head-15)
+auxpass(delivered-17, is-16)
+conj_and(forced-4, delivered-17)
+

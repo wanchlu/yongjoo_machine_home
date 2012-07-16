@@ -1,0 +1,48 @@
+(ROOT
+  (NP
+    (NP (NNP Abortion))
+    (: ;)
+    (NP
+      (NP (NNP Renders))
+      (SBAR
+        (S
+          (S
+            (NP (DT the) (NN human))
+            (NP (DT a) (NN non-human)))
+          (CC and)
+          (S
+            (ADVP (RB therefore))
+            (NP (PRP it))
+            (VP (MD can)
+              (VP (VB be)
+                (VP (VBN disposed)
+                  (PP (IN of)
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (DT an) (NN individual))
+                        (VP (VBZ does) (RB n't)
+                          (VP (VB want)
+                            (NP (PRP it))))))))))))))
+    (. .)))
+
+root(ROOT-0, Abortion-1)
+dep(Abortion-1, Renders-3)
+det(human-5, the-4)
+dep(non-human-7, human-5)
+det(non-human-7, a-6)
+rcmod(Renders-3, non-human-7)
+advmod(disposed-13, therefore-9)
+nsubjpass(disposed-13, it-10)
+aux(disposed-13, can-11)
+auxpass(disposed-13, be-12)
+rcmod(Renders-3, disposed-13)
+conj_and(non-human-7, disposed-13)
+advmod(want-20, when-15)
+det(individual-17, an-16)
+nsubj(want-20, individual-17)
+aux(want-20, does-18)
+neg(want-20, n't-19)
+prepc_of(disposed-13, want-20)
+dobj(want-20, it-21)
+

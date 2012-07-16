@@ -1,0 +1,86 @@
+(ROOT
+  (FRAG (RB Not)
+    (VP (TO to)
+      (VP (VB mention)
+        (NP
+          (NP (DT the) (JJ financial) (NN burden))
+          (SBAR
+            (S
+              (NP (JJR more) (NNS children))
+              (VP (MD would)
+                (VP (VB put)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (JJ American) (NNS people))
+                      (PP (IN in)
+                        (NP
+                          (NP (NN light))
+                          (PP (IN of)
+                            (NP
+                              (NP (JJ high) (NN inflation)
+                                (CC and)
+                                (JJ low) (NNS wages))
+                              (, ,)
+                              (NP
+                                (NP (NN health) (NN care) (NNS costs))
+                                (, ,)
+                                (NP (NN education) (NN etc.))))))))))))))))
+    (. .)))
+
+root(ROOT-0, Not-1)
+aux(mention-3, to-2)
+dep(Not-1, mention-3)
+det(burden-6, the-4)
+amod(burden-6, financial-5)
+dobj(mention-3, burden-6)
+dobj(put-10, burden-6)
+amod(children-8, more-7)
+nsubj(put-10, children-8)
+aux(put-10, would-9)
+rcmod(burden-6, put-10)
+det(people-14, the-12)
+amod(people-14, American-13)
+prep_on(put-10, people-14)
+prep_in(people-14, light-16)
+amod(inflation-19, high-18)
+prep_of(light-16, inflation-19)
+amod(wages-22, low-21)
+prep_of(light-16, wages-22)
+conj_and(inflation-19, wages-22)
+nn(costs-26, health-24)
+nn(costs-26, care-25)
+appos(inflation-19, costs-26)
+nn(etc.-29, education-28)
+appos(costs-26, etc.-29)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Forcing)
+        (S
+          (NP (PRP you))
+          (VP (TO to)
+            (VP (VB keep)
+              (NP (DT a) (NN child)))))))
+    (VP (MD could)
+      (ADVP (RB very) (RB well))
+      (VP (VB sink)
+        (NP (JJ many) (NNS families))
+        (PP (IN into)
+          (NP (NN poverty)))))
+    (. .)))
+
+csubj(sink-10, Forcing-1)
+nsubj(keep-4, you-2)
+aux(keep-4, to-3)
+xcomp(Forcing-1, keep-4)
+det(child-6, a-5)
+dobj(keep-4, child-6)
+aux(sink-10, could-7)
+advmod(well-9, very-8)
+advmod(sink-10, well-9)
+root(ROOT-0, sink-10)
+amod(families-12, many-11)
+dobj(sink-10, families-12)
+prep_into(sink-10, poverty-14)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (DT An) (NN abortion))
+      (VP (VBZ kills)
+        (NP (NNS innocents))))
+    (: ;)
+    (S
+      (NP (NN capital) (NN punishment))
+      (VP (VBZ kills)
+        (NP
+          (NP (DT the) (JJ guilty))
+          (SBAR
+            (S
+              (NP (EX There))
+              (VP (VBZ is)
+                (NP
+                  (NP (DT no) (NN contradiction))
+                  (PP (IN between)
+                    (S
+                      (VP
+                        (VP (VBG opposing)
+                          (NP (NNS abortions)))
+                        (CC and)
+                        (VP (VBG supporting)
+                          (NP (NN capital) (NN punishment)))))))))))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP (JJ many) (NNS conservatives))
+            (VP (VBP do))))))
+    (. .)))
+
+det(abortion-2, An-1)
+nsubj(kills-3, abortion-2)
+root(ROOT-0, kills-3)
+dobj(kills-3, innocents-4)
+nn(punishment-7, capital-6)
+nsubj(kills-8, punishment-7)
+parataxis(kills-3, kills-8)
+det(guilty-10, the-9)
+dobj(kills-8, guilty-10)
+expl(is-12, There-11)
+rcmod(guilty-10, is-12)
+det(contradiction-14, no-13)
+nsubj(is-12, contradiction-14)
+prepc_between(contradiction-14, opposing-16)
+dobj(opposing-16, abortions-17)
+prepc_between(contradiction-14, supporting-19)
+conj_and(opposing-16, supporting-19)
+nn(punishment-21, capital-20)
+dobj(supporting-19, punishment-21)
+mark(do-26, as-23)
+amod(conservatives-25, many-24)
+nsubj(do-26, conservatives-25)
+advcl(kills-8, do-26)
+

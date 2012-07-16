@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (JJS Most) (NNS abortions))
+    (VP (VBP occur)
+      (PP (IN at)
+        (NP (CD 10) (NNS weeks)))
+      (, ,)
+      (SBAR
+        (S
+          (S
+            (NP (NN can) (NN somebody))
+            (INTJ (VB please))
+            (VP (VB look)
+              (PP (IN at)
+                (NP (DT these) (NNS pictures)))))
+          (CC and)
+          (S
+            (INTJ (VB please))
+            (VP (VB tell)
+              (NP (PRP me))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT that))
+                  (VP (VBZ is)
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ 's) (RB not)
+                          (ADJP (JJ human)))))))))))))
+    (. .)))
+
+amod(abortions-2, Most-1)
+nsubj(occur-3, abortions-2)
+root(ROOT-0, occur-3)
+num(weeks-6, 10-5)
+prep_at(occur-3, weeks-6)
+nn(somebody-9, can-8)
+nsubj(look-11, somebody-9)
+nsubj(tell-17, somebody-9)
+dep(look-11, please-10)
+dep(occur-3, look-11)
+det(pictures-14, these-13)
+prep_at(look-11, pictures-14)
+dep(tell-17, please-16)
+dep(occur-3, tell-17)
+conj_and(look-11, tell-17)
+dobj(tell-17, me-18)
+dep(is-21, what-19)
+dobj(human-26, what-19)
+nsubj(is-21, that-20)
+dep(tell-17, is-21)
+mark(human-26, if-22)
+nsubj(human-26, it-23)
+cop(human-26, 's-24)
+neg(human-26, not-25)
+advcl(is-21, human-26)
+

@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (NP
+      (NP (VBG Correcting) (NNS criminals))
+      (PP (IN like)
+        (NP
+          (NP (PRP yourself))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP think)
+                (NP (DT a) (NN debate))))))))
+    (VP (VBZ justifies)
+      (NP (PRP$ your) (JJ criminal) (NN intention)))
+    (. !)))
+
+amod(criminals-2, Correcting-1)
+nsubj(justifies-9, criminals-2)
+prep_like(criminals-2, yourself-4)
+nsubj(think-6, yourself-4)
+rcmod(yourself-4, think-6)
+det(debate-8, a-7)
+dobj(think-6, debate-8)
+root(ROOT-0, justifies-9)
+poss(intention-12, your-10)
+amod(intention-12, criminal-11)
+dobj(justifies-9, intention-12)
+
+(ROOT
+  (S
+    (S
+      (ADJP (RB Silly) (JJ criminal)))
+    (, ,)
+    (NP (NNS debates))
+    (VP (VBP are)
+      (PP (IN for)
+        (NP
+          (NP (RB just) (NNS persons))
+          (PP (IN with)
+            (NP
+              (NP (RB just) (NNS intentions))
+              (, ,) (RB not)
+              (NP (NNS criminals))))))
+      (PP (IN with)
+        (NP
+          (NP (NN crime))
+          (PP (IN in)
+            (NP (DT the) (JJ seared) (NN conscience))))))
+    (. !)))
+
+advmod(criminal-2, Silly-1)
+ccomp(are-5, criminal-2)
+nsubj(are-5, debates-4)
+root(ROOT-0, are-5)
+advmod(persons-8, just-7)
+prep_for(are-5, persons-8)
+advmod(intentions-11, just-10)
+prep_with(persons-8, intentions-11)
+neg(intentions-11, not-13)
+dep(intentions-11, criminals-14)
+prep_with(are-5, crime-16)
+det(conscience-20, the-18)
+amod(conscience-20, seared-19)
+prep_in(crime-16, conscience-20)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ STFU))
+    (. ?)))
+
+root(ROOT-0, STFU-1)
+

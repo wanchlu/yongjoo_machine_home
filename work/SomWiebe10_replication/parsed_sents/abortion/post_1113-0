@@ -1,0 +1,51 @@
+(ROOT
+  (NP
+    (NP (NNP Abortion))
+    (: :)
+    (S
+      (S
+        (VP (VBZ Gives)
+          (NP (DT a) (NN mother))
+          (NP
+            (NP (DT a) (NN choice))
+            (PP (IN in)
+              (S
+                (VP (VBG carrying)
+                  (NP (DT a) (NN life) (NN form))
+                  (PP (IN for)
+                    (NP (CD 9) (NNS months)))))))))
+      (CC and)
+      (ADVP (RB then))
+      (S
+        (VP (VBG raising)
+          (NP (PRP it))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN rest))
+              (PP (IN of)
+                (NP (PRP$ her) (NN life))))))))
+    (. .)))
+
+root(ROOT-0, Abortion-1)
+dep(Abortion-1, Gives-3)
+det(mother-5, a-4)
+iobj(Gives-3, mother-5)
+det(choice-7, a-6)
+dobj(Gives-3, choice-7)
+prepc_in(choice-7, carrying-9)
+det(form-12, a-10)
+nn(form-12, life-11)
+dobj(carrying-9, form-12)
+num(months-15, 9-14)
+prep_for(carrying-9, months-15)
+dep(Abortion-1, then-17)
+advmod(Gives-3, then-17)
+conj_and(Gives-3, then-17)
+dep(Abortion-1, raising-18)
+conj_and(Gives-3, raising-18)
+dobj(raising-18, it-19)
+det(rest-22, the-21)
+prep_for(raising-18, rest-22)
+poss(life-25, her-24)
+prep_of(rest-22, life-25)
+

@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (S
+      (NP (DT An) (NN abortion) (NN doctor))
+      (VP (VBD failed)
+        (S
+          (VP (TO to)
+            (VP (VB abort)
+              (NP (DT a) (NN baby)))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBD was)
+        (VP (VBN born)
+          (S
+            (ADJP (JJ alive))))))
+    (. .)))
+
+det(doctor-3, An-1)
+nn(doctor-3, abortion-2)
+nsubj(failed-4, doctor-3)
+xsubj(abort-6, doctor-3)
+root(ROOT-0, failed-4)
+aux(abort-6, to-5)
+xcomp(failed-4, abort-6)
+det(baby-8, a-7)
+dobj(abort-6, baby-8)
+nsubjpass(born-12, he-10)
+auxpass(born-12, was-11)
+conj_and(failed-4, born-12)
+acomp(born-12, alive-13)
+

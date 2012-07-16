@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN question))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (ADVP (RB probably))
+              (VP (MD will)
+                (VP (VB go)
+                  (NP (NN unanswered))
+                  (ADVP (RB forever)))))))))
+    (, ,)
+    (CC or)
+    (S
+      (NP (PRP they))
+      (VP (MD will)
+        (ADVP (RB just))
+        (VP (VB say)
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NN baby))
+              (VP (VBZ is) (RB not)
+                (NP
+                  (NP (NN living))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (NP (DT a) (JJ complete) (NN lie))))))))))))
+    (. .)))
+
+nsubj(question-4, That-1)
+cop(question-4, is-2)
+det(question-4, a-3)
+root(ROOT-0, question-4)
+nsubj(go-8, question-4)
+advmod(go-8, probably-6)
+aux(go-8, will-7)
+rcmod(question-4, go-8)
+dobj(go-8, unanswered-9)
+advmod(go-8, forever-10)
+nsubj(say-16, they-13)
+aux(say-16, will-14)
+advmod(say-16, just-15)
+conj_or(question-4, say-16)
+nsubj(go-8, say-16)
+complm(living-22, that-17)
+det(baby-19, the-18)
+nsubj(living-22, baby-19)
+cop(living-22, is-20)
+neg(living-22, not-21)
+ccomp(say-16, living-22)
+nsubj(lie-28, living-22)
+cop(lie-28, is-25)
+det(lie-28, a-26)
+amod(lie-28, complete-27)
+rcmod(living-22, lie-28)
+

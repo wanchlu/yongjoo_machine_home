@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n't)
+      (VP (VB make)
+        (NP (NNS laws))
+        (PP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (NNS exceptions))
+              (PP (TO to)
+                (NP (DT the) (NN norm))))))))
+    (. .)))
+
+nsubj(make-4, You-1)
+aux(make-4, do-2)
+neg(make-4, n't-3)
+root(ROOT-0, make-4)
+dobj(make-4, laws-5)
+prepc_based_on(make-4, on-7)
+pobj(make-4, exceptions-8)
+det(norm-11, the-10)
+prep_to(exceptions-8, norm-11)
+
+(ROOT
+  (FRAG
+    (ADVP (RB maybe)
+      (S
+        (VP (RB not) (VBN based)
+          (PP (IN on)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (NNS exceptions))
+        (PP (TO to)
+          (NP (DT the) (NN norm))))
+      (VP (MD should)
+        (PP (IN at)
+          (NP (NNS times)))
+        (VP (VB bear)
+          (ADVP (RB heavily))
+          (PP (IN during)
+            (NP (DT the) (JJ legislative) (NN process))))))
+    (. .)))
+
+root(ROOT-0, maybe-1)
+neg(based-3, not-2)
+dep(maybe-1, based-3)
+prep(based-3, on-4)
+dep(maybe-1, but-6)
+nsubj(bear-14, exceptions-7)
+det(norm-10, the-9)
+prep_to(exceptions-7, norm-10)
+aux(bear-14, should-11)
+prep_at(bear-14, times-13)
+dep(maybe-1, bear-14)
+advmod(bear-14, heavily-15)
+det(process-19, the-17)
+amod(process-19, legislative-18)
+prep_during(bear-14, process-19)
+

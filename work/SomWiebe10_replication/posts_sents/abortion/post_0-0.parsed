@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (DT A) (NN fetus))
+    (VP (MD can) (RB not)
+      (VP (VB have)
+        (NP (DT a) (NN right))
+        (PP (TO to)
+          (NP
+            (NP (DT a) (NN woman) (POS 's))
+            (NN body)))
+        (S
+          (VP (TO to)
+            (VP (VB sustain)
+              (NP
+                (NP (PRP$ its) (NN life))
+                (SBAR
+                  (S
+                    (NP (DT No) (NN individual))
+                    (VP (VBZ has)
+                      (NP
+                        (NP (NNS rights))
+                        (PP (IN over)
+                          (NP (DT another) (NN individual)))))))))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(have-5, fetus-2)
+xsubj(sustain-14, fetus-2)
+aux(have-5, can-3)
+neg(have-5, not-4)
+root(ROOT-0, have-5)
+det(right-7, a-6)
+dobj(have-5, right-7)
+det(woman-10, a-9)
+poss(body-12, woman-10)
+prep_to(have-5, body-12)
+aux(sustain-14, to-13)
+xcomp(have-5, sustain-14)
+poss(life-16, its-15)
+dobj(sustain-14, life-16)
+det(individual-18, No-17)
+nsubj(has-19, individual-18)
+rcmod(life-16, has-19)
+dobj(has-19, rights-20)
+det(individual-23, another-22)
+prep_over(rights-20, individual-23)
+

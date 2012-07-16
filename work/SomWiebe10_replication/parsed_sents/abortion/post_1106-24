@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (JJ Abstinence-only) (NN programming))
+    (VP (VBZ runs)
+      (NP
+        (NP (DT the) (JJ serious) (NN risk))
+        (PP (IN of)
+          (S
+            (VP (VBG leaving)
+              (S
+                (NP
+                  (NP (JJ young) (NNS people))
+                  (, ,) (RB especially)
+                  (NP
+                    (NP (DT those))
+                    (PP (IN at)
+                      (NP (JJ elevated) (NN risk))))
+                  (, ,))
+                (ADJP (JJ uninformed)
+                  (CC and)
+                  (JJ alienated))))))))
+    (. .)))
+
+amod(programming-2, Abstinence-only-1)
+nsubj(runs-3, programming-2)
+root(ROOT-0, runs-3)
+det(risk-6, the-4)
+amod(risk-6, serious-5)
+dobj(runs-3, risk-6)
+prepc_of(risk-6, leaving-8)
+amod(people-10, young-9)
+nsubj(uninformed-18, people-10)
+nsubj(alienated-20, people-10)
+advmod(people-10, especially-12)
+dep(people-10, those-13)
+amod(risk-16, elevated-15)
+prep_at(those-13, risk-16)
+xcomp(leaving-8, uninformed-18)
+xcomp(leaving-8, alienated-20)
+conj_and(uninformed-18, alienated-20)
+

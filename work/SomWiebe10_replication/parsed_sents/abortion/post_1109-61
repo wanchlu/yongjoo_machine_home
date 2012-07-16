@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (MD may)
+        (VP (VB fail)
+          (PP (TO to)
+            (NP (NN abstain))))))
+    (CC but)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (VP (VBG abstaining)))))
+      (NP (PRP you))
+      (VP (MD will)
+        (ADVP (RB never))
+        (VP (VB get)
+          (ADJP (JJ pregnant)))))
+    (. .)))
+
+nsubj(fail-3, You-1)
+aux(fail-3, may-2)
+root(ROOT-0, fail-3)
+prep_to(fail-3, abstain-5)
+mark(abstaining-10, if-7)
+nsubj(abstaining-10, you-8)
+aux(abstaining-10, are-9)
+advcl(pregnant-15, abstaining-10)
+nsubj(pregnant-15, you-11)
+aux(pregnant-15, will-12)
+neg(pregnant-15, never-13)
+dep(pregnant-15, get-14)
+conj_but(fail-3, pregnant-15)
+

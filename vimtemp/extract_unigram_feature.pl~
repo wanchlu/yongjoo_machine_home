@@ -1,6 +1,5 @@
 #!/usr/bin/perl -w
 use strict;
-use Clair::Utils::Stem;
 
 my @domains = qw( abortion creation gayRights god guns healthcare);
 foreach my $domain (@domains) {
@@ -13,7 +12,9 @@ foreach my $domain (@domains) {
         open IN, $input or die;
         my $sent = <IN>;
         close IN;
-        print $domain."\t".$file."\t";
+        my $post_id = $file;
+        $post_id =~ s/-\d+//g;
+        print $domain."\t".$post_id."\t".$file."\t";
 
         my @tokens = split /\s+/, $sent;
         foreach my $t (@tokens) {

@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP
+          (NP (PRP we))
+          (, ,)
+          (PP (IN as)
+            (NP (DT a) (NN culture)))
+          (, ,))
+        (VP
+          (VP (VB remove)
+            (NP
+              (NP (DT the) (NNS boundaries))
+              (PP (IN of)
+                (NP (JJ sexual) (NN conduct)))))
+          (CC and)
+          (VP (VB blur)
+            (NP (DT the) (NNS distinctions))))))
+    (NP (PRP it))
+    (VP (VBZ begins)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (JJ serious) (NNS consequences))
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (VBP do) (RB n't)
+                    (ADVP (RB immediately))
+                    (VP (VB recognize))))))))))
+    (. .)))
+
+mark(remove-8, As-1)
+nsubj(remove-8, we-2)
+nsubj(blur-15, we-2)
+det(culture-6, a-5)
+prep_as(we-2, culture-6)
+advcl(begins-19, remove-8)
+det(boundaries-10, the-9)
+dobj(remove-8, boundaries-10)
+amod(conduct-13, sexual-12)
+prep_of(boundaries-10, conduct-13)
+conj_and(remove-8, blur-15)
+advcl(begins-19, blur-15)
+det(distinctions-17, the-16)
+dobj(blur-15, distinctions-17)
+nsubj(begins-19, it-18)
+xsubj(have-21, it-18)
+root(ROOT-0, begins-19)
+aux(have-21, to-20)
+xcomp(begins-19, have-21)
+amod(consequences-23, serious-22)
+dobj(have-21, consequences-23)
+dobj(recognize-28, consequences-23)
+nsubj(recognize-28, we-24)
+aux(recognize-28, do-25)
+neg(recognize-28, n't-26)
+advmod(recognize-28, immediately-27)
+rcmod(consequences-23, recognize-28)
+

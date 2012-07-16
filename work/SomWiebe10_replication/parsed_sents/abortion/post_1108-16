@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (PRP You)
+      (CC and)
+      (PRP I))
+    (DT both)
+    (VP (VBP know)
+      (NP
+        (NP (DT the) (JJ distinct) (NNS differences))
+        (PP (IN between)
+          (S
+            (VP
+              (VP (VBG killing)
+                (NP
+                  (NP (DT a) (NN group))
+                  (PP (IN of)
+                    (NP (NNS cells))))
+                (SBAR
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP live)
+                        (PP (IN within)
+                          (NP (PRP you))))))
+                  (CC and)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP are)
+                        (ADJP (RB ultimately) (JJ responsible)
+                          (PP (IN for))))))))
+              (CC and)
+              (VP (VBG killing)
+                (NP (DT an) (JJ independent) (NN person))))))))
+    (. .)))
+
+nsubj(know-5, You-1)
+conj_and(You-1, I-3)
+nsubj(know-5, I-3)
+dep(know-5, both-4)
+root(ROOT-0, know-5)
+det(differences-8, the-6)
+amod(differences-8, distinct-7)
+dobj(know-5, differences-8)
+prepc_between(differences-8, killing-10)
+det(group-12, a-11)
+dobj(killing-10, group-12)
+prep_of(group-12, cells-14)
+nsubj(live-16, that-15)
+ccomp(killing-10, live-16)
+prep_within(live-16, you-18)
+complm(responsible-24, that-20)
+nsubj(responsible-24, you-21)
+cop(responsible-24, are-22)
+advmod(responsible-24, ultimately-23)
+ccomp(killing-10, responsible-24)
+conj_and(live-16, responsible-24)
+prep(responsible-24, for-25)
+prepc_between(differences-8, killing-27)
+conj_and(killing-10, killing-27)
+det(person-30, an-28)
+amod(person-30, independent-29)
+dobj(killing-27, person-30)
+

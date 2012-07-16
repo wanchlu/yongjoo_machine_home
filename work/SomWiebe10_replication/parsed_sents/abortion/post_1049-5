@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (DT The) (NN doctor))
+    (VP
+      (VP (VBD was) (RB not)
+        (VP (VBN charged)
+          (PP (IN with)
+            (NP (NN murder)))))
+      (CC but)
+      (VP (VBD was)
+        (VP (VBN charged)
+          (PP (IN with)
+            (NP (DT the) (NN failure)))
+          (S
+            (VP (TO to)
+              (VP (VB abort)
+                (NP (DT the) (NN baby))))))))
+    (. .)))
+
+det(doctor-2, The-1)
+nsubjpass(charged-5, doctor-2)
+nsubjpass(charged-10, doctor-2)
+xsubj(abort-15, doctor-2)
+auxpass(charged-5, was-3)
+neg(charged-5, not-4)
+root(ROOT-0, charged-5)
+prep_with(charged-5, murder-7)
+auxpass(charged-10, was-9)
+conj_but(charged-5, charged-10)
+det(failure-13, the-12)
+prep_with(charged-10, failure-13)
+aux(abort-15, to-14)
+xcomp(charged-10, abort-15)
+det(baby-17, the-16)
+dobj(abort-15, baby-17)
+

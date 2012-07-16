@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS Laws))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP tell)
+              (NP (PRP us))
+              (SBAR
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (PRP we))
+                    (VP (MD can)
+                      (VP (VB use)
+                        (NP (PRP them))
+                        (PRN (-LRB- -LRB-)
+                          (NP (NN sex))
+                          (-RRB- -RRB-))))))
+                (CC and)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP we))
+                    (VP (MD can)
+                      (VP (VB put)
+                        (PP (IN in)
+                          (NP (PRP them))))))))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NNS drugs))
+        (-RRB- -RRB-)))
+    (VP (VBP do) (RB not)
+      (VP (VB work)))
+    (. .)))
+
+nsubj(tell-3, Laws-1)
+nsubj(work-25, Laws-1)
+rcmod(Laws-1, tell-3)
+dobj(tell-3, us-4)
+advmod(use-8, how-5)
+nsubj(use-8, we-6)
+aux(use-8, can-7)
+dep(tell-3, use-8)
+dobj(use-8, them-9)
+dep(use-8, sex-11)
+dobj(put-17, what-14)
+nsubj(put-17, we-15)
+aux(put-17, can-16)
+dep(tell-3, put-17)
+conj_and(use-8, put-17)
+prep_in(put-17, them-19)
+appos(Laws-1, drugs-21)
+aux(work-25, do-23)
+neg(work-25, not-24)
+root(ROOT-0, work-25)
+

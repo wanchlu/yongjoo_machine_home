@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP (JJ 1-Comprehensive) (NN sex) (NN education) (NNS DOES))
+        (VP (VBP reduce)
+          (NP
+            (NP (NNS rates))
+            (PP (IN of)
+              (NP (NN pregnancy))))))
+      (CC and)
+      (S
+        (S
+          (NP (NNP STD) (POS 's)))
+        (, ,)
+        (NP (JJ 2-Comprehensive) (NN sex) (NN education))
+        (VP (VBZ DOES)
+          (NP
+            (NP (NNP NOT) (NN increase) (NNS rates))
+            (PP (IN of)
+              (NP (JJ teenage) (JJ sexual) (NN activity)))))))
+    (, ,)
+    (NP (JJ 3-Abstinence) (JJ only) (NN education))
+    (VP (VBZ DOES)
+      (S
+        (NP (NNP NOT))
+        (VP (VB reduce)
+          (NP
+            (NP (NNS rates))
+            (PP (IN of)
+              (NP (JJ teenage) (JJ sexual) (NN activity)))))))
+    (. .)))
+
+amod(DOES-4, 1-Comprehensive-1)
+nn(DOES-4, sex-2)
+nn(DOES-4, education-3)
+nsubj(reduce-5, DOES-4)
+ccomp(DOES-28, reduce-5)
+dobj(reduce-5, rates-6)
+prep_of(rates-6, pregnancy-8)
+ccomp(DOES-16, STD-10)
+possessive(STD-10, 's-11)
+amod(education-15, 2-Comprehensive-13)
+nn(education-15, sex-14)
+nsubj(DOES-16, education-15)
+conj_and(reduce-5, DOES-16)
+ccomp(DOES-28, DOES-16)
+nn(rates-19, NOT-17)
+nn(rates-19, increase-18)
+dobj(DOES-16, rates-19)
+amod(activity-23, teenage-21)
+amod(activity-23, sexual-22)
+prep_of(rates-19, activity-23)
+amod(education-27, 3-Abstinence-25)
+amod(education-27, only-26)
+nsubj(DOES-28, education-27)
+root(ROOT-0, DOES-28)
+nsubj(reduce-30, NOT-29)
+ccomp(DOES-28, reduce-30)
+dobj(reduce-30, rates-31)
+amod(activity-35, teenage-33)
+amod(activity-35, sexual-34)
+prep_of(rates-31, activity-35)
+

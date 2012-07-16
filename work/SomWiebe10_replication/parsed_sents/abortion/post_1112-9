@@ -1,0 +1,52 @@
+(ROOT
+  (NP
+    (NP (JJ Premarital) (NN sex))
+    (: :)
+    (S
+      (S
+        (VP (VBZ views)
+          (NP (JJ other) (NNS people))
+          (PP (IN as)
+            (NP (NNS objects)))
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN used)
+                  (PP (IN for)
+                    (NP
+                      (NP (NNS ones))
+                      (NP (JJ own) (JJ personal) (NN pleasure))))))))))
+      (CC and)
+      (ADVP (RB then))
+      (S
+        (VP (VBN discarded)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (ADVP (RB no) (RB longer))
+              (VP (VBD wanted)))))))
+    (. .)))
+
+amod(sex-2, Premarital-1)
+root(ROOT-0, sex-2)
+dep(sex-2, views-4)
+amod(people-6, other-5)
+dobj(views-4, people-6)
+prep_as(views-4, objects-8)
+aux(used-11, to-9)
+auxpass(used-11, be-10)
+xcomp(views-4, used-11)
+prep_for(used-11, ones-13)
+amod(pleasure-16, own-14)
+amod(pleasure-16, personal-15)
+dep(ones-13, pleasure-16)
+dep(sex-2, then-18)
+advmod(views-4, then-18)
+conj_and(views-4, then-18)
+dep(sex-2, discarded-19)
+conj_and(views-4, discarded-19)
+advmod(wanted-23, when-20)
+advmod(longer-22, no-21)
+advmod(wanted-23, longer-22)
+advcl(discarded-19, wanted-23)
+

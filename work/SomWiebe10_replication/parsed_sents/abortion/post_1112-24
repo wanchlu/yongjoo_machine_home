@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP I))
+        (VP (MD may)
+          (VP (VB be)
+            (VP (VBN mistaken)
+              (SBAR (CC but)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD thought)
+                    (SBAR
+                      (S
+                        (NP
+                          (NP (NNS ethics))
+                          (PRN (-LRB- -LRB-)
+                            (NP (NN ethos))
+                            (-RRB- -RRB-)))
+                        (VP (VBD were)
+                          (VP (VBN fixed)
+                            (NP (NNS standards)
+                              (CC and)
+                              (NN morality))
+                            (PRN (-LRB- -LRB-) (VB mores) (-RRB- -RRB-))))))))))))))
+    (VP (VBD were)
+      (VP (VBG changing)
+        (NP (NNS standards))))
+    (. .)))
+
+mark(mistaken-5, Because-1)
+nsubjpass(mistaken-5, I-2)
+aux(mistaken-5, may-3)
+auxpass(mistaken-5, be-4)
+csubj(changing-22, mistaken-5)
+cc(thought-8, but-6)
+nsubj(thought-8, I-7)
+ccomp(mistaken-5, thought-8)
+nsubjpass(fixed-14, ethics-9)
+appos(ethics-9, ethos-11)
+auxpass(fixed-14, were-13)
+ccomp(thought-8, fixed-14)
+dobj(fixed-14, standards-15)
+dobj(fixed-14, morality-17)
+conj_and(standards-15, morality-17)
+dep(fixed-14, mores-19)
+aux(changing-22, were-21)
+root(ROOT-0, changing-22)
+dobj(changing-22, standards-23)
+

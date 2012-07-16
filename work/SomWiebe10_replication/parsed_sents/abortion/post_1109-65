@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Final))
+      (VP (VBD thought)))
+    (: ;)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (NNS morals))
+          (VP (VBP are)
+            (ADJP (JJ relative)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP you))
+                  (VP (VBP claim) (, ,)
+                    (SBARQ
+                      (SBARQ
+                        (WHADVP (WRB why))
+                        (SQ (VBP are)
+                          (NP (PRP you))
+                          (VP (VBG trying)
+                            (S
+                              (VP (TO to)
+                                (VP (VB push)
+                                  (NP (PRP$ yours))
+                                  (PP (IN on)
+                                    (NP (PRP me)))))))))
+                      (CC and)
+                      (SBARQ
+                        (WHADVP (WRB why))
+                        (SQ (MD should)
+                          (NP (PRP I))
+                          (VP (VB follow)
+                            (NP (PRP$ yours))))))))
+                (CC and)
+                (RB not))))))
+      (VP (VBP mine)))
+    (. .)))
+
+nsubj(thought-2, Final-1)
+root(ROOT-0, thought-2)
+mark(relative-7, if-4)
+nsubj(relative-7, morals-5)
+cop(relative-7, are-6)
+csubj(mine-29, relative-7)
+mark(claim-10, as-8)
+nsubj(claim-10, you-9)
+ccomp(relative-7, claim-10)
+advmod(trying-15, why-12)
+aux(trying-15, are-13)
+nsubj(trying-15, you-14)
+xsubj(push-17, you-14)
+dep(claim-10, trying-15)
+aux(push-17, to-16)
+xcomp(trying-15, push-17)
+dobj(push-17, yours-18)
+prep_on(push-17, me-20)
+advmod(follow-25, why-22)
+aux(follow-25, should-23)
+nsubj(follow-25, I-24)
+dep(claim-10, follow-25)
+conj_and(trying-15, follow-25)
+dobj(follow-25, yours-26)
+ccomp(relative-7, not-28)
+conj_and(claim-10, not-28)
+parataxis(thought-2, mine-29)
+

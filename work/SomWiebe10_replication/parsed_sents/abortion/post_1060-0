@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP 'm)
+          (VP (VBG torturing)
+            (NP (JJ little) (NNS babies))
+            (PP (IN in)
+              (NP (PRP$ my) (NN basement)))))))
+    (VP (VBP are)
+      (S
+        (NP (PRP you))
+        (VP (VBG saying)
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBP have)
+                (NP (DT a)
+                  (ADJP (JJ right)
+                    (PP (TO to)
+                      (NP
+                        (NP (NN privacy))
+                        (PP (IN from)
+                          (NP (NN government))))))
+                  (NN intrusion))))))))
+    (. ?)))
+
+mark(torturing-4, If-1)
+nsubj(torturing-4, I-2)
+aux(torturing-4, 'm-3)
+csubj(are-10, torturing-4)
+amod(babies-6, little-5)
+dobj(torturing-4, babies-6)
+poss(basement-9, my-8)
+prep_in(torturing-4, basement-9)
+root(ROOT-0, are-10)
+nsubj(saying-12, you-11)
+dep(are-10, saying-12)
+complm(have-15, that-13)
+nsubj(have-15, I-14)
+ccomp(saying-12, have-15)
+det(intrusion-22, a-16)
+amod(intrusion-22, right-17)
+prep_to(right-17, privacy-19)
+prep_from(privacy-19, government-21)
+dobj(have-15, intrusion-22)
+

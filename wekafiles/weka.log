@@ -1,58 +1,758 @@
-2012-07-15 13:06:13 weka.core.WekaPackageManager main
+2012-07-15 21:01:00 weka.gui.GUIChooser main
 INFO: Logging started
-http://prdownloads.sourceforge.net/weka/LibSVM1.0.5.zip?download
-[DefaultPackageManager] Tmp file: /tmp/LibSVM1.0.57132203135934344279.zip
-%%[DefaultPackageManager] downloaded 2 KB
-%%[DefaultPackageManager] downloaded 4 KB
-%%[DefaultPackageManager] downloaded 5 KB
-%%[DefaultPackageManager] downloaded 10 KB
-%%[DefaultPackageManager] downloaded 13 KB
-%%[DefaultPackageManager] downloaded 15 KB
-%%[DefaultPackageManager] downloaded 20 KB
-%%[DefaultPackageManager] downloaded 21 KB
-%%[DefaultPackageManager] downloaded 23 KB
-%%[DefaultPackageManager] downloaded 28 KB
-%%[DefaultPackageManager] downloaded 33 KB
-%%[DefaultPackageManager] downloaded 36 KB
-%%[DefaultPackageManager] downloaded 39 KB
-%%[DefaultPackageManager] downloaded 40 KB
-%%[DefaultPackageManager] downloaded 43 KB
-%%[DefaultPackageManager] downloaded 44 KB
-%%[DefaultPackageManager] downloaded 50 KB
-%%[DefaultPackageManager] downloaded 57 KB
-%%[DefaultPackageManager] downloaded 59 KB
-%%[DefaultPackageManager] downloaded 66 KB
-%%[DefaultPackageManager] downloaded 68 KB
-%%[DefaultPackageManager] downloaded 72 KB
-%%[DefaultPackageManager] downloaded 73 KB
-%%[DefaultPackageManager] downloaded 81 KB
-%%[DefaultPackageManager] downloaded 86 KB
-%%[DefaultPackageManager] downloaded 91 KB
-%%[DefaultPackageManager] downloaded 101 KB
-%%[DefaultPackageManager] downloaded 102 KB
-%%[DefaultPackageManager] downloaded 108 KB
-%%[DefaultPackageManager] downloaded 111 KB
-[DefaultPackageManager] downloaded 111 KB
-[DefaultPackageManager] Installing: Description.props
-[DefaultPackageManager] Installing: LibSVM.jar
-[DefaultPackageManager] Installing: build_package.xml
-[DefaultPackageManager] Installing: doc/allclasses-frame.html
-[DefaultPackageManager] Installing: doc/allclasses-noframe.html
-[DefaultPackageManager] Installing: doc/constant-values.html
-[DefaultPackageManager] Installing: doc/deprecated-list.html
-[DefaultPackageManager] Installing: doc/help-doc.html
-[DefaultPackageManager] Installing: doc/index-all.html
-[DefaultPackageManager] Installing: doc/index.html
-[DefaultPackageManager] Installing: doc/overview-tree.html
-[DefaultPackageManager] Installing: doc/package-list
-[DefaultPackageManager] Installing: doc/resources/inherit.gif
-[DefaultPackageManager] Installing: doc/serialized-form.html
-[DefaultPackageManager] Installing: doc/stylesheet.css
-[DefaultPackageManager] Installing: doc/weka/classifiers/functions/LibSVM.html
-[DefaultPackageManager] Installing: doc/weka/classifiers/functions/package-frame.html
-[DefaultPackageManager] Installing: doc/weka/classifiers/functions/package-summary.html
-[DefaultPackageManager] Installing: doc/weka/classifiers/functions/package-tree.html
-[DefaultPackageManager] Installing: lib/libsvm.jar
-[DefaultPackageManager] Installing: pom.xml
-[DefaultPackageManager] Installing: src/main/java/weka/classifiers/functions/LibSVM.java
-[DefaultPackageManager] Installing: src/test/java/weka/classifiers/functions/LibSVMTest.java
+Refreshing GOE props...
+---Registering Weka Editors---
+Trying to add database driver (JDBC): RmiJdbc.RJDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): jdbc.idbDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): org.gjt.mm.mysql.Driver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): com.mckoi.JDBCDriver - Warning, not in CLASSPATH?
+Trying to add database driver (JDBC): org.hsqldb.jdbcDriver - Warning, not in CLASSPATH?
+[KnowledgeFlow] Loading properties and plugins...
+[KnowledgeFlow] Initializing KF...
+2012-07-15 21:01:08 weka.gui.explorer.Explorer <init>
+INFO: Weka Explorer
+2012-07-15 21:01:08 weka.gui.explorer.Explorer <init>
+INFO: (c) 1999-2012 The University of Waikato, Hamilton, New Zealand
+2012-07-15 21:01:08 weka.gui.explorer.Explorer <init>
+INFO: web: http://www.cs.waikato.ac.nz/~ml/weka/
+2012-07-15 21:01:08 weka.gui.explorer.Explorer <init>
+INFO: Started on Sunday, 15 July 2012
+2012-07-15 21:02:09 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm (862 instances)
+2012-07-15 21:02:36 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:02:49 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (862 instances)
+2012-07-15 21:03:18 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:03:18 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+.....*
+optimization finished, #iter = 4593
+nu = 0.09402659651250872
+obj = -41.62199610626967, rho = -0.5084326513356827
+nSV = 620, nBSV = 6
+Total nSV = 620
+.....*
+optimization finished, #iter = 3918
+nu = 0.08869636461426579
+obj = -35.12049660186906, rho = -0.5197930153023608
+nSV = 580, nBSV = 4
+Total nSV = 580
+....*
+optimization finished, #iter = 3792
+nu = 0.0898596169266015
+obj = -35.57725538224487, rho = 0.5226357974278786
+nSV = 562, nBSV = 6
+Total nSV = 562
+....*
+optimization finished, #iter = 3820
+nu = 0.09139604741098036
+obj = -36.365133382645716, rho = -0.49794817585766143
+nSV = 567, nBSV = 6
+Total nSV = 567
+.....*
+optimization finished, #iter = 4167
+nu = 0.09024526542386106
+obj = -35.77249077306559, rho = -0.5556264888250647
+nSV = 570, nBSV = 4
+Total nSV = 570
+....*
+optimization finished, #iter = 3846
+nu = 0.08800794441147239
+obj = -34.87361498655358, rho = -0.4652831553139351
+nSV = 572, nBSV = 4
+Total nSV = 572
+.....*
+optimization finished, #iter = 3891
+nu = 0.09075086843808312
+obj = -36.13649794559545, rho = -0.5574505726290011
+nSV = 581, nBSV = 6
+Total nSV = 581
+....*
+optimization finished, #iter = 3879
+nu = 0.08896297388793802
+obj = -35.36057392744214, rho = -0.5410831205324178
+nSV = 576, nBSV = 5
+Total nSV = 576
+.....*
+optimization finished, #iter = 4163
+nu = 0.08896906156889083
+obj = -35.335406876601375, rho = -0.5062737238313193
+nSV = 579, nBSV = 4
+Total nSV = 579
+....*
+optimization finished, #iter = 3751
+nu = 0.08954278984344742
+obj = -35.39749317388746, rho = 0.5215423266449929
+nSV = 565, nBSV = 3
+Total nSV = 565
+....*
+optimization finished, #iter = 3746
+nu = 0.08621037811108673
+obj = -34.1927914829871, rho = -0.6146571220055875
+nSV = 565, nBSV = 5
+Total nSV = 565
+2012-07-15 21:03:31 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:03:31 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:04:01 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm (862 instances)
+2012-07-15 21:04:35 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:04:47 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (862 instances)
+2012-07-15 21:05:08 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:05:08 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+.....*
+optimization finished, #iter = 4484
+nu = 0.09672305530602913
+obj = -44.636433455119416, rho = -0.39241317066018755
+nSV = 617, nBSV = 11
+Total nSV = 617
+....*
+optimization finished, #iter = 3713
+nu = 0.09085904721186448
+obj = -36.86812283250052, rho = -0.5361501928935332
+nSV = 554, nBSV = 8
+Total nSV = 554
+....*
+optimization finished, #iter = 3627
+nu = 0.09193617551029787
+obj = -38.25021924268029, rho = 0.35999088716185074
+nSV = 559, nBSV = 10
+Total nSV = 559
+.....*
+optimization finished, #iter = 3944
+nu = 0.10031377956735066
+obj = -41.57918009330107, rho = -0.39110097297412927
+nSV = 572, nBSV = 10
+Total nSV = 572
+....*
+optimization finished, #iter = 3687
+nu = 0.09098872969457715
+obj = -37.607271953192836, rho = -0.226747636053442
+nSV = 558, nBSV = 7
+Total nSV = 558
+....*
+optimization finished, #iter = 3683
+nu = 0.08552506997593701
+obj = -34.90036954130228, rho = -0.4561142548197232
+nSV = 579, nBSV = 8
+Total nSV = 579
+....*
+optimization finished, #iter = 3483
+nu = 0.09404693455618887
+obj = -39.16908139772725, rho = -0.4746811009688336
+nSV = 558, nBSV = 10
+Total nSV = 558
+.....*
+optimization finished, #iter = 3891
+nu = 0.09330627087434627
+obj = -38.111080630429626, rho = -0.27964413760488005
+nSV = 569, nBSV = 9
+Total nSV = 569
+....*
+optimization finished, #iter = 3767
+nu = 0.09409316632440316
+obj = -38.43453587089498, rho = -0.4975776238339893
+nSV = 570, nBSV = 9
+Total nSV = 570
+....*
+optimization finished, #iter = 3608
+nu = 0.09341561142595096
+obj = -38.487149751477205, rho = 0.4430243680964807
+nSV = 560, nBSV = 8
+Total nSV = 560
+....*
+optimization finished, #iter = 3820
+nu = 0.0951744110300182
+obj = -39.59376527575164, rho = -0.39171648113646823
+nSV = 566, nBSV = 11
+Total nSV = 566
+2012-07-15 21:05:20 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:05:20 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:06:39 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm (862 instances)
+2012-07-15 21:06:47 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:06:59 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (862 instances)
+2012-07-15 21:07:06 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:07:06 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+.....*
+optimization finished, #iter = 4582
+nu = 0.10377531348057044
+obj = -47.1167521040545, rho = -0.4464560380243195
+nSV = 623, nBSV = 9
+Total nSV = 623
+.....*
+optimization finished, #iter = 3934
+nu = 0.09615787105301132
+obj = -38.882533049974235, rho = -0.41404065870256884
+nSV = 569, nBSV = 7
+Total nSV = 569
+....*
+optimization finished, #iter = 3666
+nu = 0.10019836966733621
+obj = -40.829094663467735, rho = 0.48363724167484756
+nSV = 560, nBSV = 9
+Total nSV = 560
+.....*
+optimization finished, #iter = 3921
+nu = 0.10096957555012313
+obj = -40.992130483793254, rho = -0.4080285641617975
+nSV = 563, nBSV = 7
+Total nSV = 563
+.....*
+optimization finished, #iter = 4095
+nu = 0.10093806285849954
+obj = -40.69036684466145, rho = -0.43523395898713907
+nSV = 575, nBSV = 8
+Total nSV = 575
+....*
+optimization finished, #iter = 3669
+nu = 0.09798151335808433
+obj = -40.124787442823056, rho = -0.4235206989532024
+nSV = 566, nBSV = 9
+Total nSV = 566
+.....*
+optimization finished, #iter = 3983
+nu = 0.09564951775871933
+obj = -39.03921502145003, rho = -0.4307973544204131
+nSV = 576, nBSV = 8
+Total nSV = 576
+....*
+optimization finished, #iter = 3827
+nu = 0.09940075763469805
+obj = -40.136723881976266, rho = -0.4751621495103501
+nSV = 575, nBSV = 8
+Total nSV = 575
+.....*
+optimization finished, #iter = 3904
+nu = 0.10105030688107058
+obj = -41.21697846133345, rho = -0.5048018321570429
+nSV = 574, nBSV = 9
+Total nSV = 574
+....*
+optimization finished, #iter = 3844
+nu = 0.09854691375453263
+obj = -39.78812790705097, rho = 0.40320889990300907
+nSV = 572, nBSV = 5
+Total nSV = 572
+....*
+optimization finished, #iter = 3828
+nu = 0.10120027056021758
+obj = -41.27435960147871, rho = -0.40784018555689266
+nSV = 565, nBSV = 8
+Total nSV = 565
+2012-07-15 21:07:18 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:07:18 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:08:09 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm (862 instances)
+2012-07-15 21:08:53 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:09:08 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/creation/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (862 instances)
+2012-07-15 21:09:33 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:09:33 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+.....*
+optimization finished, #iter = 4553
+nu = 0.11083065652657478
+obj = -52.131818526087926, rho = -0.518294193798084
+nSV = 622, nBSV = 15
+Total nSV = 622
+.....*
+optimization finished, #iter = 3949
+nu = 0.1038526968816234
+obj = -43.394361055432626, rho = -0.6779293890229572
+nSV = 572, nBSV = 13
+Total nSV = 572
+....*
+optimization finished, #iter = 3840
+nu = 0.10323771905377024
+obj = -43.08813546955371, rho = 0.3931251431812563
+nSV = 568, nBSV = 14
+Total nSV = 568
+....*
+optimization finished, #iter = 3728
+nu = 0.11038305749771772
+obj = -45.915766606415, rho = -0.4600054128527742
+nSV = 555, nBSV = 13
+Total nSV = 555
+.....*
+optimization finished, #iter = 3892
+nu = 0.10897913513920783
+obj = -45.3016344244499, rho = -0.41610107978319466
+nSV = 579, nBSV = 16
+Total nSV = 579
+.....*
+optimization finished, #iter = 4039
+nu = 0.10537005226239295
+obj = -44.17701806728804, rho = -0.5031640767858095
+nSV = 571, nBSV = 10
+Total nSV = 571
+....*
+optimization finished, #iter = 3798
+nu = 0.10790932945022165
+obj = -45.26491172455305, rho = -0.537762569517607
+nSV = 570, nBSV = 13
+Total nSV = 570
+....*
+optimization finished, #iter = 3869
+nu = 0.11029841341002075
+obj = -46.16388639115798, rho = -0.5295905489877366
+nSV = 575, nBSV = 15
+Total nSV = 575
+....*
+optimization finished, #iter = 3795
+nu = 0.10561327878494618
+obj = -44.681831313211106, rho = -0.5600670780121368
+nSV = 572, nBSV = 14
+Total nSV = 572
+....*
+optimization finished, #iter = 3749
+nu = 0.10494919144166105
+obj = -43.56392968234086, rho = 0.49260043016200206
+nSV = 564, nBSV = 11
+Total nSV = 564
+....*
+optimization finished, #iter = 3738
+nu = 0.10299856581933284
+obj = -43.25976243038609, rho = -0.4148926876078618
+nSV = 564, nBSV = 11
+Total nSV = 564
+2012-07-15 21:09:47 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:09:47 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:11:57 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/gayRights/unigram_feature.libsvm (1486 instances)
+2012-07-15 21:12:04 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:12:25 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/gayRights/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (1486 instances)
+2012-07-15 21:13:09 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:13:09 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+.........*
+optimization finished, #iter = 9465
+nu = 0.13570993957501476
+obj = -111.6210884538899, rho = 0.08800766577827686
+nSV = 1011, nBSV = 43
+Total nSV = 1011
+........*
+optimization finished, #iter = 8397
+nu = 0.13644649281908275
+obj = -100.95970892896489, rho = 0.0633423227955362
+nSV = 933, nBSV = 34
+Total nSV = 933
+........*
+optimization finished, #iter = 8259
+nu = 0.13050393729909363
+obj = -95.85023493816045, rho = -0.12418800473132442
+nSV = 926, nBSV = 32
+Total nSV = 926
+........*
+optimization finished, #iter = 8076
+nu = 0.1292872976504014
+obj = -94.78210594856553, rho = 0.16830775516321264
+nSV = 910, nBSV = 29
+Total nSV = 910
+........*
+optimization finished, #iter = 8237
+nu = 0.12720534662461574
+obj = -94.29451574400807, rho = -0.08144253715384277
+nSV = 919, nBSV = 34
+Total nSV = 919
+........*
+optimization finished, #iter = 8978
+nu = 0.12781986280021276
+obj = -91.47356525896234, rho = 0.16545184573033175
+nSV = 933, nBSV = 28
+Total nSV = 933
+........*
+optimization finished, #iter = 8422
+nu = 0.13222630573275268
+obj = -96.88421741514398, rho = 0.04741575901582733
+nSV = 923, nBSV = 36
+Total nSV = 923
+........*
+optimization finished, #iter = 8786
+nu = 0.12659813485989152
+obj = -93.72849435353781, rho = 0.0737321086094151
+nSV = 959, nBSV = 32
+Total nSV = 959
+.......*
+optimization finished, #iter = 7858
+nu = 0.12573507473393042
+obj = -91.35977098235328, rho = 0.07183785168146345
+nSV = 887, nBSV = 28
+Total nSV = 887
+........*
+optimization finished, #iter = 8275
+nu = 0.12720817738282253
+obj = -93.25251969240914, rho = 0.09738068552778874
+nSV = 904, nBSV = 30
+Total nSV = 904
+........*
+optimization finished, #iter = 8302
+nu = 0.12965949451619527
+obj = -94.93667683918451, rho = 0.11429662610518976
+nSV = 933, nBSV = 31
+Total nSV = 933
+2012-07-15 21:13:39 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:13:39 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:14:32 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/abortion/unigram_feature.libsvm (1040 instances)
+2012-07-15 21:15:04 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:15:20 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/abortion/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (1040 instances)
+2012-07-15 21:15:29 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:15:29 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+......*
+optimization finished, #iter = 6067
+nu = 0.1303514963346898
+obj = -75.10502596672735, rho = -0.1319474436584298
+nSV = 723, nBSV = 31
+Total nSV = 723
+.....*
+optimization finished, #iter = 5111
+nu = 0.12444115817820199
+obj = -64.11232445934593, rho = 0.09649574137341334
+nSV = 666, nBSV = 21
+Total nSV = 666
+.....*
+optimization finished, #iter = 4976
+nu = 0.12711554405741518
+obj = -66.11174674325007, rho = -0.08326827621202329
+nSV = 664, nBSV = 24
+Total nSV = 664
+.....*
+optimization finished, #iter = 5157
+nu = 0.12303483915079962
+obj = -63.81829951326588, rho = -0.06902828775887401
+nSV = 657, nBSV = 24
+Total nSV = 657
+.....*
+optimization finished, #iter = 4822
+nu = 0.11982486959245649
+obj = -60.487488990916496, rho = -0.27402912060198176
+nSV = 651, nBSV = 21
+Total nSV = 651
+.....*
+optimization finished, #iter = 5289
+nu = 0.1264296425537489
+obj = -64.52612824624983, rho = 0.24397359955544365
+nSV = 661, nBSV = 23
+Total nSV = 661
+.....*
+optimization finished, #iter = 5136
+nu = 0.12306142395091765
+obj = -62.684163324210125, rho = -0.13645642265992974
+nSV = 658, nBSV = 21
+Total nSV = 658
+.....*
+optimization finished, #iter = 5006
+nu = 0.12438333771254685
+obj = -64.15267284525008, rho = -0.0685520087121324
+nSV = 666, nBSV = 23
+Total nSV = 666
+.....*
+optimization finished, #iter = 4871
+nu = 0.12549599218686258
+obj = -64.78668176780164, rho = -0.14671388655868414
+nSV = 659, nBSV = 24
+Total nSV = 659
+.....*
+optimization finished, #iter = 5164
+nu = 0.12597299886367272
+obj = -65.44984244707585, rho = 0.13506738227266823
+nSV = 655, nBSV = 23
+Total nSV = 655
+.....*
+optimization finished, #iter = 5201
+nu = 0.12159356975081967
+obj = -62.30406911977579, rho = -0.19714475832126058
+nSV = 644, nBSV = 19
+Total nSV = 644
+2012-07-15 21:15:45 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:15:45 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:19:28 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/abortion/arguing_lexicon_feature.libsvm (1022 instances)
+2012-07-15 21:19:59 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:20:18 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/abortion/arguing_lexicon_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (1022 instances)
+2012-07-15 21:21:07 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:21:07 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+....*
+optimization finished, #iter = 4946
+nu = 0.11156587952249868
+obj = -61.458511434479064, rho = -0.28395052112785535
+nSV = 745, nBSV = 15
+Total nSV = 745
+....*
+optimization finished, #iter = 4318
+nu = 0.10594109222398991
+obj = -52.325899276016365, rho = 0.2707078327775729
+nSV = 699, nBSV = 10
+Total nSV = 699
+....*
+optimization finished, #iter = 4115
+nu = 0.10583574785435268
+obj = -52.7020222558378, rho = 0.27280476024695366
+nSV = 687, nBSV = 13
+Total nSV = 687
+....*
+optimization finished, #iter = 4097
+nu = 0.10611209292045487
+obj = -52.740618215721234, rho = 0.31706796114847896
+nSV = 681, nBSV = 13
+Total nSV = 681
+....*
+optimization finished, #iter = 4314
+nu = 0.10981107244224039
+obj = -54.4013835838572, rho = 0.32741366985514314
+nSV = 695, nBSV = 11
+Total nSV = 695
+....*
+optimization finished, #iter = 4078
+nu = 0.10879800498430592
+obj = -53.68203408484731, rho = -0.30547747312484264
+nSV = 685, nBSV = 15
+Total nSV = 685
+....*
+optimization finished, #iter = 3763
+nu = 0.10470458569409596
+obj = -51.442311077359975, rho = -0.3127537336048266
+nSV = 674, nBSV = 12
+Total nSV = 674
+....*
+optimization finished, #iter = 3966
+nu = 0.10555599936505732
+obj = -51.29041836059043, rho = -0.24437575235380596
+nSV = 672, nBSV = 12
+Total nSV = 672
+....*
+optimization finished, #iter = 4332
+nu = 0.10370885531217001
+obj = -51.23774052107366, rho = 0.1850163989809894
+nSV = 691, nBSV = 11
+Total nSV = 691
+....*
+optimization finished, #iter = 4342
+nu = 0.10508400252370205
+obj = -51.914867661440134, rho = 0.32694245505691916
+nSV = 682, nBSV = 12
+Total nSV = 682
+....*
+optimization finished, #iter = 4117
+nu = 0.10596983871981862
+obj = -51.34945122398044, rho = -0.3346268169448006
+nSV = 672, nBSV = 11
+Total nSV = 672
+2012-07-15 21:21:20 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:21:20 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:23:08 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/god/unigram_feature.libsvm (922 instances)
+2012-07-15 21:23:31 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:23:46 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/god/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (922 instances)
+2012-07-15 21:23:55 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:23:55 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+.....*
+optimization finished, #iter = 5260
+nu = 0.1396541097071932
+obj = -70.30937907015527, rho = -0.30541552243602427
+nSV = 644, nBSV = 25
+Total nSV = 644
+.....*
+optimization finished, #iter = 4344
+nu = 0.13277639591977702
+obj = -59.65811399430587, rho = 0.20519184699906412
+nSV = 588, nBSV = 20
+Total nSV = 588
+.....*
+optimization finished, #iter = 4776
+nu = 0.1275733006740985
+obj = -56.598453496002925, rho = -0.3777450548641345
+nSV = 592, nBSV = 15
+Total nSV = 592
+.....*
+optimization finished, #iter = 4301
+nu = 0.12919296792056226
+obj = -58.12274874161644, rho = 0.36390912566650824
+nSV = 601, nBSV = 19
+Total nSV = 601
+.....*
+optimization finished, #iter = 4525
+nu = 0.13693426262860744
+obj = -61.9601466209515, rho = -0.27955931528877626
+nSV = 594, nBSV = 21
+Total nSV = 594
+.....*
+optimization finished, #iter = 4331
+nu = 0.13397463556998357
+obj = -60.95192594169163, rho = 0.3282645685407991
+nSV = 571, nBSV = 20
+Total nSV = 571
+.....*
+optimization finished, #iter = 4255
+nu = 0.13298270767951975
+obj = -60.360442603207076, rho = 0.2142884232373071
+nSV = 576, nBSV = 22
+Total nSV = 576
+.....*
+optimization finished, #iter = 4491
+nu = 0.13393780953516973
+obj = -60.41147093645151, rho = -0.1752187524831858
+nSV = 597, nBSV = 19
+Total nSV = 597
+.....*
+optimization finished, #iter = 4481
+nu = 0.1405178653262242
+obj = -63.71847617471755, rho = -0.2548636210955125
+nSV = 586, nBSV = 22
+Total nSV = 586
+.....*
+optimization finished, #iter = 4346
+nu = 0.13505034390847723
+obj = -60.507523872383686, rho = 0.27490685496378275
+nSV = 585, nBSV = 19
+Total nSV = 585
+.....*
+optimization finished, #iter = 4409
+nu = 0.13543405000749875
+obj = -60.51255004163463, rho = 0.40771131252426634
+nSV = 574, nBSV = 22
+Total nSV = 574
+2012-07-15 21:24:07 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:24:07 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:24:33 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/healthcare/unigram_feature.libsvm (642 instances)
+2012-07-15 21:24:42 weka.gui.explorer.PreprocessPanel$15 run
+INFO: Command: weka.filters.unsupervised.attribute.NumericToNominal -R first-last
+2012-07-15 21:24:51 weka.gui.explorer.PreprocessPanel$14 run
+INFO: Base relation is now /home/wanchen/work/SomWiebe10_replication/libsvm/healthcare/unigram_feature.libsvm-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last (642 instances)
+2012-07-15 21:25:02 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Started weka.classifiers.functions.LibSVM
+2012-07-15 21:25:02 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Command: weka.classifiers.functions.LibSVM -S 0 -K 0 -D 3 -G 0.0 -R 0.0 -N 0.5 -M 40.0 -C 1.0 -E 0.001 -P 0.1 -model /home/wanchen/tools/weka-3-7-6 -seed 1
+....*
+optimization finished, #iter = 2855
+nu = 0.10516083143205385
+obj = -36.26757906632103, rho = 0.23703754563994767
+nSV = 449, nBSV = 9
+Total nSV = 449
+....*
+optimization finished, #iter = 2382
+nu = 0.10191383783155543
+obj = -31.03972820752211, rho = 0.35128710316074513
+nSV = 423, nBSV = 4
+Total nSV = 423
+....*
+optimization finished, #iter = 2352
+nu = 0.10289839449136441
+obj = -32.38493701621892, rho = -0.17590786014460505
+nSV = 418, nBSV = 9
+Total nSV = 418
+....*
+optimization finished, #iter = 2413
+nu = 0.09690823298827907
+obj = -29.553447683558694, rho = 0.09132064099629957
+nSV = 409, nBSV = 5
+Total nSV = 409
+....*
+optimization finished, #iter = 2371
+nu = 0.10116712082053801
+obj = -31.380739248330745, rho = -0.11041273259396224
+nSV = 418, nBSV = 8
+Total nSV = 418
+....*
+optimization finished, #iter = 2481
+nu = 0.10164207324920273
+obj = -30.87737562963199, rho = -0.29247129421022583
+nSV = 417, nBSV = 6
+Total nSV = 417
+....*
+optimization finished, #iter = 2348
+nu = 0.09778141347254764
+obj = -30.80046769418722, rho = -0.19466677443768382
+nSV = 419, nBSV = 8
+Total nSV = 419
+....*
+optimization finished, #iter = 2507
+nu = 0.10249153074927428
+obj = -31.932683341093373, rho = -0.2846635343932313
+nSV = 424, nBSV = 7
+Total nSV = 424
+...*
+optimization finished, #iter = 2225
+nu = 0.0997332267264927
+obj = -31.250935529889393, rho = 0.2624348389822943
+nSV = 401, nBSV = 6
+Total nSV = 401
+....*
+optimization finished, #iter = 2437
+nu = 0.10154895652332385
+obj = -31.765633268930696, rho = -0.22780149870481006
+nSV = 409, nBSV = 7
+Total nSV = 409
+....*
+optimization finished, #iter = 2477
+nu = 0.10028395317366652
+obj = -31.130360634302964, rho = 0.24645910296272536
+nSV = 425, nBSV = 6
+Total nSV = 425
+2012-07-15 21:25:09 weka.gui.explorer.ClassifierPanel$18 run
+INFO: Finished weka.classifiers.functions.LibSVM
+Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:25:09 weka.gui.visualize.VisualizePanel$PlotPanel addPlot
+INFO: Warning : data contains more attributes than can be displayed as attribute bars.
+2012-07-15 21:26:27 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Started weka.attributeSelection.CfsSubsetEval
+2012-07-15 21:26:27 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Command: weka.attributeSelection.CfsSubsetEval -s "weka.attributeSelection.BestFirst -D 1 -N 5"
+2012-07-15 21:26:27 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Filter command: weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+2012-07-15 21:26:27 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Meta-classifier command: weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+2012-07-15 21:26:59 weka.gui.explorer.AttributeSelectionPanel$10 run
+INFO: Finished weka.attributeSelection.CfsSubsetEval weka.attributeSelection.BestFirst

@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP (RB Even) (JJR less) (NNS abortions))
+    (VP (VBP are)
+      (VP (VBN performed)
+        (SBAR (IN because)
+          (S
+            (NP (DT the) (NN pregnancy))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN result))
+                (PP (IN of)
+                  (NP (NN rape)
+                    (CC or)
+                    (NN incest)))))))))
+    (. .)))
+
+advmod(abortions-3, Even-1)
+amod(abortions-3, less-2)
+nsubjpass(performed-5, abortions-3)
+auxpass(performed-5, are-4)
+root(ROOT-0, performed-5)
+mark(result-11, because-6)
+det(pregnancy-8, the-7)
+nsubj(result-11, pregnancy-8)
+cop(result-11, is-9)
+det(result-11, the-10)
+advcl(performed-5, result-11)
+prep_of(result-11, rape-13)
+prep_of(result-11, incest-15)
+conj_or(rape-13, incest-15)
+

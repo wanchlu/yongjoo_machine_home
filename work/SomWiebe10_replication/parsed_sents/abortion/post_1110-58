@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (MD can)
+        (ADVP (RB also))
+        (VP (VB fail)
+          (S
+            (VP (TO to)
+              (VP (VB use)
+                (NP (PRP it))))))))
+    (CC but)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP use)
+            (NP (PRP it)))))
+      (, ,)
+      (NP (PRP it))
+      (VP (MD can)
+        (VP (VB fail))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD will)
+        (VP (VB get)
+          (ADJP (JJ pregnant)))))
+    (. .)))
+
+nsubj(fail-4, You-1)
+xsubj(use-6, You-1)
+aux(fail-4, can-2)
+advmod(fail-4, also-3)
+root(ROOT-0, fail-4)
+aux(use-6, to-5)
+xcomp(fail-4, use-6)
+dobj(use-6, it-7)
+mark(use-11, if-9)
+nsubj(use-11, you-10)
+advcl(fail-16, use-11)
+dobj(use-11, it-12)
+nsubj(fail-16, it-14)
+aux(fail-16, can-15)
+conj_but(fail-4, fail-16)
+nsubj(pregnant-21, you-18)
+aux(pregnant-21, will-19)
+dep(pregnant-21, get-20)
+conj_and(fail-4, pregnant-21)
+

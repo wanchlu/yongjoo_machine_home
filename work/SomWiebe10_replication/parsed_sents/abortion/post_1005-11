@@ -1,0 +1,31 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR
+        (WHADVP (WRB How))
+        (S
+          (VP (VBP do))))
+      (NP (PRP you))
+      (VP (VBP abort)
+        (NP (NN something))))
+    (PRN
+      (NP (PRP you))
+      (VP (VBP do) (RB n't)
+        (VP (VB know))))
+    (S
+      (NP (PRP you))
+      (VP (VBP have)))
+    (. ?)))
+
+advmod(do-3, How-2)
+dep(abort-5, do-3)
+nsubj(abort-5, you-4)
+root(ROOT-0, abort-5)
+dobj(abort-5, something-6)
+nsubj(know-10, you-7)
+aux(know-10, do-8)
+neg(know-10, n't-9)
+dep(abort-5, know-10)
+nsubj(have-12, you-11)
+ccomp(abort-5, have-12)
+

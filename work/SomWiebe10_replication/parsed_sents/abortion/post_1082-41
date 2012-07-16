@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB win))))
+    (, ,)
+    (NP (DT all) (PRP we))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (SBAR
+              (SBAR
+                (S
+                  (VP (VBZ is)
+                    (VP (VB convince)
+                      (NP (PRP$ our) (JJ fellow) (NNS Christians))
+                      (S
+                        (VP (TO to)
+                          (VP
+                            (ADVP (RB truly))
+                            (VB follow)
+                            (NP (NNP Christ)))))))))
+              (CC and)
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (ADVP (DT no) (NN doubt)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP they))
+                          (VP (MD will)
+                            (VP (VB vote)
+                              (ADJP (JJ pro-life)))))))))))))))
+    (. .)))
+
+aux(win-2, To-1)
+purpcl(have-6, win-2)
+det(we-5, all-4)
+nsubj(have-6, we-5)
+xsubj(do-8, we-5)
+root(ROOT-0, have-6)
+aux(do-8, to-7)
+xcomp(have-6, do-8)
+aux(convince-10, is-9)
+dep(do-8, convince-10)
+poss(Christians-13, our-11)
+amod(Christians-13, fellow-12)
+dobj(convince-10, Christians-13)
+aux(follow-16, to-14)
+advmod(follow-16, truly-15)
+xcomp(convince-10, follow-16)
+dobj(follow-16, Christ-17)
+expl(is-20, there-19)
+dep(do-8, is-20)
+conj_and(convince-10, is-20)
+dep(doubt-22, no-21)
+advmod(is-20, doubt-22)
+complm(vote-26, that-23)
+nsubj(vote-26, they-24)
+aux(vote-26, will-25)
+ccomp(doubt-22, vote-26)
+acomp(vote-26, pro-life-27)
+

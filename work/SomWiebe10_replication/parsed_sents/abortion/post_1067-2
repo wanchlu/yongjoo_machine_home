@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN argument))
+      (VP (VBZ looks)
+        (PP (IN like)
+          (NP (DT this)))))
+    (: :)
+    (S
+      (S
+        (NP (NNP X))
+        (VP (VBZ is) (RB not)
+          (ADJP (JJ worthy)
+            (PP (IN of)
+              (NP
+                (NP (NN life))
+                (PP (RB because) (IN of)
+                  (NP (NNP Y))))))))
+      (, ,)
+      (ADVP (RB therefore))
+      (S
+        (NP (PRP we))
+        (VP (VBP 're)
+          (ADJP (JJ justified)
+            (PP (IN in)
+              (S
+                (VP (VBG killing)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+det(argument-2, The-1)
+nsubj(looks-3, argument-2)
+root(ROOT-0, looks-3)
+prep_like(looks-3, this-5)
+nsubj(worthy-10, X-7)
+cop(worthy-10, is-8)
+neg(worthy-10, not-9)
+parataxis(looks-3, worthy-10)
+prep_of(worthy-10, life-12)
+prep_because_of(life-12, Y-15)
+advmod(worthy-10, therefore-17)
+nsubj(justified-20, we-18)
+cop(justified-20, 're-19)
+dep(worthy-10, justified-20)
+prepc_in(justified-20, killing-22)
+dobj(killing-22, it-23)
+
