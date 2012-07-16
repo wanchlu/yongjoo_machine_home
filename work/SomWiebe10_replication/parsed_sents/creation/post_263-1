@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (NP (DT a) (NN scientist))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB read)
+                  (NP
+                    (NP (NNP Lenski) (POS 's))
+                    (NN paper)))
+                (CC and)
+                (VP (VB understand)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+nsubj(scientist-5, I-1)
+cop(scientist-5, am-2)
+neg(scientist-5, not-3)
+det(scientist-5, a-4)
+root(ROOT-0, scientist-5)
+nsubj(able-10, I-8)
+cop(able-10, was-9)
+conj_but(scientist-5, able-10)
+aux(read-12, to-11)
+xcomp(able-10, read-12)
+poss(paper-15, Lenski-13)
+dobj(read-12, paper-15)
+xcomp(able-10, understand-17)
+conj_and(read-12, understand-17)
+dobj(understand-17, it-18)
+

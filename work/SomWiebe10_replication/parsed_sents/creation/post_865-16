@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (ADVP (RBS Most) (RB likely))
+    (, ,)
+    (NP
+      (NP (NNS people))
+      (PP (IN in)
+        (NP (DT those) (NNS times))))
+    (VP (VBD believed)
+      (NP (DT those) (NNS stories))
+      (PP (IN as)
+        (NP
+          (QP (JJR more) (IN than) (RB just))
+          (NNS stories))))
+    (. .)))
+
+advmod(likely-2, Most-1)
+advmod(believed-8, likely-2)
+nsubj(believed-8, people-4)
+det(times-7, those-6)
+prep_in(people-4, times-7)
+root(ROOT-0, believed-8)
+det(stories-10, those-9)
+dobj(believed-8, stories-10)
+quantmod(than-13, more-12)
+num(stories-15, than-13)
+quantmod(than-13, just-14)
+prep_as(believed-8, stories-15)
+

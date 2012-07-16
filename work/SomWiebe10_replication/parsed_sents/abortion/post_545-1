@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (ADVP (LS Second))
+    (, ,)
+    (S
+      (NP (DT a) (NN baby))
+      (VP (VBZ implies)
+        (SBAR
+          (S
+            (NP (NN birth))
+            (VP (VBZ has)
+              (VP (VBN happened)))))))
+    (CC and)
+    (S
+      (NP (DT no) (NN one))
+      (VP (VBZ disagrees)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (JJ human) (NN life))
+            (PP (IN of)
+              (NP (DT a) (NN baby)))))))
+    (. .)))
+
+advmod(implies-5, Second-1)
+det(baby-4, a-3)
+nsubj(implies-5, baby-4)
+root(ROOT-0, implies-5)
+nsubj(happened-8, birth-6)
+aux(happened-8, has-7)
+ccomp(implies-5, happened-8)
+det(one-11, no-10)
+nsubj(disagrees-12, one-11)
+conj_and(implies-5, disagrees-12)
+det(life-16, the-14)
+amod(life-16, human-15)
+prep_about(disagrees-12, life-16)
+det(baby-19, a-18)
+prep_of(life-16, baby-19)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (NP
+    (NP
+      (NP (NN contribution))
+      (PP (IN from)
+        (NP (NNP Joe) (NNP G))))
+    (: --)
+    (NP
+      (NP (NNP Joe) (NNP GGeez) (NNP PvM))
+      (SBAR
+        (S
+          (NP
+            (NP (PRP$ your) (NN position))
+            (SBAR (IN that)
+              (S
+                (NP (NN everything))
+                (VP (VBZ comes)
+                  (PRT (RP down))
+                  (PP (TO to)
+                    (NP (JJ sheer) (JJ dumb) (NN luck)))))))
+          (VP (VBZ is)
+            (ADJP (RB totally) (JJ vacuous))))))
+    (. .)))
+
+root(ROOT-0, contribution-1)
+nn(G-4, Joe-3)
+prep_from(contribution-1, G-4)
+nn(PvM-8, Joe-6)
+nn(PvM-8, GGeez-7)
+dep(contribution-1, PvM-8)
+poss(position-10, your-9)
+dobj(comes-13, position-10)
+nsubj(vacuous-21, position-10)
+complm(comes-13, that-11)
+nsubj(comes-13, everything-12)
+dep(position-10, comes-13)
+prt(comes-13, down-14)
+amod(luck-18, sheer-16)
+amod(luck-18, dumb-17)
+prep_to(comes-13, luck-18)
+cop(vacuous-21, is-19)
+advmod(vacuous-21, totally-20)
+rcmod(PvM-8, vacuous-21)
+

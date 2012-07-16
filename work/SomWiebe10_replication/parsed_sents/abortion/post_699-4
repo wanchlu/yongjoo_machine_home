@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (JJ neocortical) (NNP EEG) (NNS signals))
+        (VP (VBZ ends))))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (JJ rational) (JJ legal) (NN definition))
+        (PP (IN of)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT a) (NN human))
+              (VP (VBZ dies)))))))
+    (. .)))
+
+advmod(ends-5, When-1)
+amod(signals-4, neocortical-2)
+nn(signals-4, EEG-3)
+nsubj(ends-5, signals-4)
+advcl(definition-11, ends-5)
+csubj(definition-11, ends-5)
+cop(definition-11, is-6)
+advmod(definition-11, also-7)
+det(definition-11, a-8)
+amod(definition-11, rational-9)
+amod(definition-11, legal-10)
+root(ROOT-0, definition-11)
+advmod(dies-16, when-13)
+det(human-15, a-14)
+nsubj(dies-16, human-15)
+prepc_of(definition-11, dies-16)
+

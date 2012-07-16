@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (PP (IN of)
+                  (NP (PRP him)))
+                (NP (PRP He))
+                (VP (VBZ is)
+                  (VP (VBG setting)))))))))
+    (, ,)
+    (S
+      (S
+        (VP (VBG having)
+          (VP (VBN reached)
+            (NP
+              (NP (DT the) (NN end))
+              (PP (IN of)
+                (NP (DT the) (NN day)))))))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBZ inverts)
+        (NP (PRP himself))))
+    (: ;)
+    (S
+      (ADVP (RB thus))
+      (NP (PRP he))
+      (VP (VBZ makes)
+        (NP (NN evening))
+        (ADVP (RB below))))
+    (, ,)
+    (S
+      (NP (NN day))
+      (ADJP (JJ above)))
+    (. .)))
+
+dep(inverts-20, In-1)
+complm(think-4, that-2)
+nsubj(think-4, they-3)
+pcomp(In-1, think-4)
+prep_of(setting-9, him-6)
+nsubj(setting-9, He-7)
+aux(setting-9, is-8)
+ccomp(think-4, setting-9)
+aux(reached-12, having-11)
+partmod(inverts-20, reached-12)
+det(end-14, the-13)
+dobj(reached-12, end-14)
+det(day-17, the-16)
+prep_of(end-14, day-17)
+nsubj(inverts-20, he-19)
+root(ROOT-0, inverts-20)
+dobj(inverts-20, himself-21)
+advmod(makes-25, thus-23)
+nsubj(makes-25, he-24)
+parataxis(inverts-20, makes-25)
+tmod(makes-25, evening-26)
+advmod(makes-25, below-27)
+dep(above-30, day-29)
+ccomp(inverts-20, above-30)
+

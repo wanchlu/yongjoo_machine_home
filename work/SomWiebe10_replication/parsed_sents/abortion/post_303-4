@@ -1,0 +1,50 @@
+(ROOT
+  (SINV
+    (S
+      (NP
+        (NP (JJ Unfertilized) (NNS eggs))
+        (CC &)
+        (NP (NN sperm)))
+      (VP (VBP do) (RB n't)
+        (VP (VB have)
+          (NP (JJ complete) (NN DNA))
+          (: ;)
+          (ADVP
+            (ADVP (RB only) (RB half))
+            (PRN (: ;)
+              (CC and)
+              (ADVP (RB again)))))))
+    (, ,)
+    (VP (VBP are) (RB n't)
+      (ADJP (JJ complete)))
+    (NP
+      (NP (NNS organisms))
+      (, ,)
+      (NP
+        (NP (JJ only) (NN part))
+        (PP (IN of)
+          (NP (DT another) (NN organism)))))
+    (. .)))
+
+amod(eggs-2, Unfertilized-1)
+nsubj(have-7, eggs-2)
+conj_and(eggs-2, sperm-4)
+nsubj(have-7, sperm-4)
+aux(have-7, do-5)
+neg(have-7, n't-6)
+ccomp(complete-19, have-7)
+amod(DNA-9, complete-8)
+dobj(have-7, DNA-9)
+advmod(half-12, only-11)
+advmod(have-7, half-12)
+dep(again-15, and-14)
+dep(half-12, again-15)
+cop(complete-19, are-17)
+neg(complete-19, n't-18)
+root(ROOT-0, complete-19)
+nsubj(complete-19, organisms-20)
+amod(part-23, only-22)
+appos(organisms-20, part-23)
+det(organism-26, another-25)
+prep_of(part-23, organism-26)
+

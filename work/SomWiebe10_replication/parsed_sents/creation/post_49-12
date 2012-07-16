@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (DT this) (NN description))
+        (ADVP (RB only))
+        (VP
+          (ADVP (RB superficially))
+          (VBZ matches)
+          (NP (DT the) (NN design) (NN inference)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ shows)
+      (S
+        (NP
+          (NP (DT the) (NN gap) (NN filling))
+          (PP (IN of) (`` ``)
+            (NP
+              (NP (RB not) (NN chance) (RB thus))
+              (NP (NN design)))
+            ('' '')))
+        (, ,)
+        (ADJP
+          (ADJP (NN nothing) (JJR more))
+          (, ,)
+          (ADJP (NN nothing) (JJR less)))))
+    (. .)))
+
+mark(matches-6, While-1)
+det(description-3, this-2)
+nsubj(matches-6, description-3)
+advmod(matches-6, only-4)
+advmod(matches-6, superficially-5)
+advcl(shows-12, matches-6)
+det(inference-9, the-7)
+nn(inference-9, design-8)
+dobj(matches-6, inference-9)
+nsubj(shows-12, it-11)
+root(ROOT-0, shows-12)
+det(filling-15, the-13)
+nn(filling-15, gap-14)
+dep(nothing-24, filling-15)
+neg(chance-19, not-18)
+prep_of(filling-15, chance-19)
+advmod(chance-19, thus-20)
+dep(chance-19, design-21)
+dep(shows-12, nothing-24)
+dep(nothing-24, more-25)
+dep(nothing-24, nothing-27)
+dep(nothing-27, less-28)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Bible))
+      (VP (VBZ says)
+        (ADVP (RB so))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (VP (VBN written)
+          (PP (IN by)
+            (NP
+              (NP
+                (NP (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD thought)
+                      (SBAR
+                        (S
+                          (NP (DT the) (NN earth))
+                          (VP (VBD was)
+                            (ADJP (JJ flat)))))))))
+              (CC and)
+              (NP
+                (NP (DT the) (NN center))
+                (PP (IN of)
+                  (NP (DT the) (NN universe)))))))))
+    (. .)))
+
+det(Bible-2, The-1)
+nsubj(says-3, Bible-2)
+root(ROOT-0, says-3)
+advmod(says-3, so-4)
+nsubjpass(written-9, it-7)
+auxpass(written-9, was-8)
+conj_but(says-3, written-9)
+agent(written-9, people-11)
+nsubj(thought-13, people-11)
+rcmod(people-11, thought-13)
+det(earth-15, the-14)
+nsubj(flat-17, earth-15)
+cop(flat-17, was-16)
+ccomp(thought-13, flat-17)
+det(center-20, the-19)
+agent(written-9, center-20)
+conj_and(people-11, center-20)
+nsubj(thought-13, center-20)
+det(universe-23, the-22)
+prep_of(center-20, universe-23)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS numbers))
+      (PP (IN throughout)
+        (NP (DT the) (NN world))))
+    (ADVP (RB conclusively))
+    (VP (VBP show)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJ legal) (NN status))
+            (PP (IN of)
+              (NP (NN abortion))))
+          (VP (VBZ does) (RB not)
+            (VP (VB affect)
+              (NP
+                (NP (DT the) (NNS rates))
+                (PP (IN of)
+                  (NP (NN abortion)))))))))
+    (. .)))
+
+det(numbers-2, The-1)
+nsubj(show-7, numbers-2)
+det(world-5, the-4)
+prep_throughout(numbers-2, world-5)
+advmod(show-7, conclusively-6)
+root(ROOT-0, show-7)
+complm(affect-16, that-8)
+det(status-11, the-9)
+amod(status-11, legal-10)
+nsubj(affect-16, status-11)
+prep_of(status-11, abortion-13)
+aux(affect-16, does-14)
+neg(affect-16, not-15)
+ccomp(show-7, affect-16)
+det(rates-18, the-17)
+dobj(affect-16, rates-18)
+prep_of(rates-18, abortion-20)
+

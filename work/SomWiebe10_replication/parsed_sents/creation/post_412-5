@@ -1,0 +1,23 @@
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN observations))
+    (SQ (VBP are)
+      (VP (VBN considered)
+        (NP (NN evidence))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NNP Theory))
+            (PP (IN of)
+              (NP (NNP Intelligent) (NNP Design)))))))
+    (. ?)))
+
+det(observations-2, What-1)
+nsubjpass(considered-4, observations-2)
+auxpass(considered-4, are-3)
+root(ROOT-0, considered-4)
+dobj(considered-4, evidence-5)
+det(Theory-8, the-7)
+prep_for(considered-4, Theory-8)
+nn(Design-11, Intelligent-10)
+prep_of(Theory-8, Design-11)
+

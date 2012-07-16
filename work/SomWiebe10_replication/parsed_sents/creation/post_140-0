@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (NP (NNP Theism))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN belief))
+        (PP (IN in)
+          (NP (NNS god\/s)))))
+    (. .)))
+
+nsubj(belief-4, Theism-1)
+cop(belief-4, is-2)
+det(belief-4, a-3)
+root(ROOT-0, belief-4)
+prep_in(belief-4, god\/s-6)
+
+(ROOT
+  (S
+    (NP (NNP Atheism))
+    (VP (VBZ is)
+      (NP (DT a) (JJ \*) (NN lack))
+      (PP
+        (X (SYM \*))
+        (IN of)
+        (NP
+          (NP (NN belief))
+          (PP (IN in)
+            (NP (NNS god\/s))))))
+    (. .)))
+
+nsubj(lack-5, Atheism-1)
+cop(lack-5, is-2)
+det(lack-5, a-3)
+amod(lack-5, \*-4)
+root(ROOT-0, lack-5)
+dep(lack-5, \*-6)
+prep_of(lack-5, belief-8)
+prep_in(belief-8, god\/s-10)
+
+(ROOT
+  (S
+    (NP (NNS Atheists))
+    (VP (VBP do) (RB not)
+      (VP (VB claim)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (NN proof))
+              (SBAR (IN that)
+                (S
+                  (NP (EX there))
+                  (VP
+                    (VP (VBZ is)
+                      (NP (DT no) (NNP God)))
+                    (, ,)
+                    (CC but)
+                    (VP
+                      (ADVP (RB rather))
+                      (VBP are)
+                      (ADJP (JJ confident)
+                        (S
+                          (VP (TO to)
+                            (VP (VB work)
+                              (PP (IN on)
+                                (NP (DT the) (NN assumption)))
+                              (SBAR (IN that)
+                                (S
+                                  (NP (NN none))
+                                  (VP (VBZ exists)))))))))))))))))
+    (. .)))
+
+nsubj(claim-4, Atheists-1)
+xsubj(have-6, Atheists-1)
+aux(claim-4, do-2)
+neg(claim-4, not-3)
+root(ROOT-0, claim-4)
+aux(have-6, to-5)
+xcomp(claim-4, have-6)
+dobj(have-6, proof-7)
+complm(God-12, that-8)
+expl(God-12, there-9)
+cop(God-12, is-10)
+det(God-12, no-11)
+ccomp(have-6, God-12)
+advmod(confident-17, rather-15)
+cop(confident-17, are-16)
+ccomp(have-6, confident-17)
+conj_but(God-12, confident-17)
+aux(work-19, to-18)
+xcomp(confident-17, work-19)
+det(assumption-22, the-21)
+prep_on(work-19, assumption-22)
+complm(exists-25, that-23)
+nsubj(exists-25, none-24)
+ccomp(work-19, exists-25)
+

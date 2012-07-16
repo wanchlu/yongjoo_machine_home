@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP one))
+        (VP (VBZ is)
+          (ADJP (JJ present)
+            (PP (IN in)
+              (NP
+                (NP (DT an) (NN infant))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD would) (RB n't)
+                      (VP (VB be)
+                        (NP
+                          (NP (DT a) (NN basis))
+                          (PP (IN for)
+                            (S
+                              (VP (VBG denying)
+                                (NP (DT the) (NN infant))))))))))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ human))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ brings)
+              (NP (PRP us))
+              (ADVP (RB right) (RB back)
+                (PP (TO to)
+                  (SBAR
+                    (WHADVP (WRB where))
+                    (S
+                      (NP (PRP we))
+                      (VP (VBD started)))))))))))
+    (. .)))
+
+mark(present-4, If-1)
+nsubj(present-4, one-2)
+cop(present-4, is-3)
+csubj(human-20, present-4)
+det(infant-7, an-6)
+prep_in(present-4, infant-7)
+nsubj(basis-14, infant-7)
+aux(basis-14, would-10)
+neg(basis-14, n't-11)
+cop(basis-14, be-12)
+det(basis-14, a-13)
+rcmod(infant-7, basis-14)
+prepc_for(basis-14, denying-16)
+det(infant-18, the-17)
+dobj(denying-16, infant-18)
+cop(human-20, is-19)
+root(ROOT-0, human-20)
+nsubj(brings-23, human-20)
+rcmod(human-20, brings-23)
+dobj(brings-23, us-24)
+advmod(back-26, right-25)
+advmod(brings-23, back-26)
+advmod(started-30, where-28)
+nsubj(started-30, we-29)
+prepc_to(back-26, started-30)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP say)
+      (SBAR
+        (S
+          (NP
+            (NP (NN government))
+            (CC and)
+            (NP (NN church) (POS 's)))
+          (VP (VBP have)
+            (ADVP (RB no) (RB right))
+            (S
+              (VP (TO to)
+                (VP (VB interfere)
+                  (PP (IN in)
+                    (NP
+                      (NP
+                        (NP (DT a) (NN woman) (POS 's))
+                        (NN choice))
+                      (PP (IN about)
+                        (NP (PRP$ her) (JJ own) (NN body)))))))))
+          (. .))))
+    (. .)))
+
+nsubj(say-2, I-1)
+root(ROOT-0, say-2)
+nsubj(have-7, government-3)
+xsubj(interfere-11, government-3)
+conj_and(government-3, church-5)
+nsubj(have-7, church-5)
+xsubj(interfere-11, church-5)
+ccomp(say-2, have-7)
+advmod(right-9, no-8)
+advmod(have-7, right-9)
+aux(interfere-11, to-10)
+xcomp(have-7, interfere-11)
+det(woman-14, a-13)
+poss(choice-16, woman-14)
+prep_in(interfere-11, choice-16)
+poss(body-20, her-18)
+amod(body-20, own-19)
+prep_about(choice-16, body-20)
+

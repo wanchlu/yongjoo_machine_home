@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (PRN (, ,)
+            (S
+              (NP (PRP we))
+              (VP (VBP 've)
+                (VP (VBN got)
+                  (S
+                    (VP (VBG writing)
+                      (PP (IN from)
+                        (PP (IN before)
+                          (ADVP
+                            (NP (CD 4000) (NNS years))
+                            (RB ago)))))))))
+            (, ,))
+          (NP
+            (NP (NN evidence))
+            (PP (IN of)
+              (NP (NN mankind))))
+          (VP (VBZ 's)
+            (VP (VBG making)
+              (NP (NNS things))
+              (PP (IN over)
+                (ADJP
+                  (NP (CD 10,000) (NNS years))
+                  (JJ old))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+root(ROOT-0, mean-2)
+nsubj(got-6, we-4)
+aux(got-6, 've-5)
+parataxis(making-18, got-6)
+xcomp(got-6, writing-7)
+prep(writing-7, from-8)
+pcomp(from-8, before-9)
+prep(from-8, before-9)
+num(years-11, 4000-10)
+npadvmod(ago-12, years-11)
+pcomp(before-9, ago-12)
+nsubj(making-18, evidence-14)
+prep_of(evidence-14, mankind-16)
+aux(making-18, 's-17)
+ccomp(mean-2, making-18)
+dobj(making-18, things-19)
+num(years-22, 10,000-21)
+npadvmod(old-23, years-22)
+prep_over(making-18, old-23)
+

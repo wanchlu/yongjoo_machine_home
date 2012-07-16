@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP HE))
+    (VP (VBZ speaks)
+      (NP (NNS things))
+      (PP (IN into)
+        (NP
+          (NP (NN existance))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (RB ever) (WDT that))
+              (VP (MD may)
+                (VP (VB happen)
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP do) (RB not)
+                        (VP (VB presume)
+                          (S
+                            (VP (TO to)
+                              (VP (VB know)))))))))))))))
+    (: ...)))
+
+nsubj(speaks-2, HE-1)
+root(ROOT-0, speaks-2)
+dobj(speaks-2, things-3)
+prep_into(speaks-2, existance-5)
+advmod(happen-11, how-7)
+advmod(that-9, ever-8)
+nsubj(happen-11, that-9)
+aux(happen-11, may-10)
+dep(existance-5, happen-11)
+nsubj(presume-15, I-12)
+xsubj(know-17, I-12)
+aux(presume-15, do-13)
+neg(presume-15, not-14)
+ccomp(happen-11, presume-15)
+aux(know-17, to-16)
+xcomp(presume-15, know-17)
+

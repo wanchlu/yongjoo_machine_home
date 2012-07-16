@@ -1,0 +1,57 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (ADVP (RB really))
+    (VP (VBP feel)
+      (ADJP (JJ sorry))
+      (PP (IN for)
+        (NP (PRP you))))
+    (. .)))
+
+nsubj(feel-4, I-2)
+advmod(feel-4, really-3)
+root(ROOT-0, feel-4)
+acomp(feel-4, sorry-5)
+prep_for(feel-4, you-7)
+
+(ROOT
+  (S ('' '')
+    (NP (PRP I))
+    (VP (VBP feel)
+      (ADJP (JJ sorry))
+      (PP (IN for)
+        (NP (PRP$ our) (NN world))))
+    (. .)))
+
+nsubj(feel-3, I-2)
+root(ROOT-0, feel-3)
+acomp(feel-3, sorry-4)
+poss(world-7, our-6)
+prep_for(feel-3, world-7)
+
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ willing)
+          (S
+            (VP (TO to)
+              (VP (VB question)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP believe))))))))))
+    (. .)))
+
+nsubj(willing-4, Everyone-1)
+aux(willing-4, should-2)
+cop(willing-4, be-3)
+root(ROOT-0, willing-4)
+aux(question-6, to-5)
+xcomp(willing-4, question-6)
+dobj(believe-9, what-7)
+nsubj(believe-9, they-8)
+ccomp(question-6, believe-9)
+

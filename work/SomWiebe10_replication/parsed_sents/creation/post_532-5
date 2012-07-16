@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN quote))
+      (VP (VBZ stands) (: :) (`` ``)
+        (S
+          (NP
+            (NP (NNP Science))
+            (PP (IN without)
+              (NP (NN religion))))
+          (VP (VBZ is)
+            (ADJP (JJ lame))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NN religion))
+        (PP (IN without)
+          (NP (NN science))))
+      (VP (VBZ is)
+        (ADJP (JJ blind))))
+    (. .)))
+
+det(quote-2, The-1)
+nsubj(stands-3, quote-2)
+root(ROOT-0, stands-3)
+nsubj(lame-10, Science-6)
+prep_without(Science-6, religion-8)
+cop(lame-10, is-9)
+ccomp(stands-3, lame-10)
+nsubj(blind-16, religion-12)
+prep_without(religion-12, science-14)
+cop(blind-16, is-15)
+parataxis(stands-3, blind-16)
+

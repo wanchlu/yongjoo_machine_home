@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (PP (IN After)
+      (NP
+        (NP
+          (QP (CD 3.5) (CD billion))
+          (NNS years))
+        (PP (IN of)
+          (NP (NN evolution)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (RB unfathomably) (JJ unlikely))
+      (SBAR (IN that)
+        (S
+          (PP (IN in)
+            (NP
+              (NP (CD .00000001) (NN %))
+              (PP (IN of)
+                (NP (DT that) (NN time)))))
+          (NP (PRP we))
+          (VP (MD will)
+            (VP (VB see)
+              (NP
+                (NP (JJ natural) (NN selection) (NN produce)
+                  (CC and)
+                  (NN adaptation))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is)
+                      (NP
+                        (NP (DT a) (JJ pareto) (NN improvement))
+                        (PP (IN on)
+                          (NP
+                            (NP (DT the) (NN function))
+                            (PP (IN of)
+                              (NP (NNP E.) (NNS coli)))
+                            (, ,)
+                            (SBAR
+                              (WHNP (WDT that))
+                              (S
+                                (VP (VBZ is) (: :)
+                                  (NP
+                                    (NP (DT an) (NN improvement))
+                                    (PP (IN with)
+                                      (NP (DT no) (NN cost)))))))))))))))))))
+    (. .)))
+
+number(billion-3, 3.5-2)
+num(years-4, billion-3)
+prep_after(unlikely-11, years-4)
+prep_of(years-4, evolution-6)
+nsubj(unlikely-11, it-8)
+cop(unlikely-11, is-9)
+advmod(unlikely-11, unfathomably-10)
+root(ROOT-0, unlikely-11)
+complm(see-21, that-12)
+num(%-15, .00000001-14)
+prep_in(see-21, %-15)
+det(time-18, that-17)
+prep_of(%-15, time-18)
+nsubj(see-21, we-19)
+aux(see-21, will-20)
+ccomp(unlikely-11, see-21)
+amod(produce-24, natural-22)
+nn(produce-24, selection-23)
+dobj(see-21, produce-24)
+nsubj(improvement-31, produce-24)
+dobj(see-21, adaptation-26)
+conj_and(produce-24, adaptation-26)
+nsubj(improvement-31, adaptation-26)
+cop(improvement-31, is-28)
+det(improvement-31, a-29)
+amod(improvement-31, pareto-30)
+rcmod(produce-24, improvement-31)
+det(function-34, the-33)
+prep_on(improvement-31, function-34)
+nsubj(improvement-43, function-34)
+nn(coli-37, E.-36)
+prep_of(function-34, coli-37)
+cop(improvement-43, is-40)
+det(improvement-43, an-42)
+rcmod(function-34, improvement-43)
+det(cost-46, no-45)
+prep_with(improvement-43, cost-46)
+

@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (NNP Well))
+    (ADVP (RB first))
+    (ADVP (RB off))
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (RB pretty) (JJ obvious)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ makes)
+              (S
+                (NP (PRP it))
+                (ADJP (JJ human)))))))
+      (, ,)
+      (ADVP (RB genetics)))
+    (. .)))
+
+nsubj(obvious-7, Well-1)
+advmod(obvious-7, first-2)
+advmod(obvious-7, off-3)
+nsubj(obvious-7, it-4)
+cop(obvious-7, 's-5)
+advmod(obvious-7, pretty-6)
+root(ROOT-0, obvious-7)
+nsubj(makes-9, what-8)
+dep(obvious-7, makes-9)
+nsubj(human-11, it-10)
+xcomp(makes-9, human-11)
+advmod(obvious-7, genetics-13)
+
+(ROOT
+  (S
+    (PP (IN About)
+      (NP (NN thinking)))
+    (, ,)
+    (S
+      (VP
+        (VP (VBG feeling))
+        (, ,)
+        (VP (VBG seeing))
+        (CC and)
+        (VP (VBG hearing))))
+    (VP (VBP go)
+      (S
+        (VP
+          (VP (VB watch)
+            (NP (DT the) (JJ video) ('' '') (JJ Silent) (NN Scream)))
+          ('' '')
+          (CC and)
+          (VP (VB tell)
+            (NP (PRP me))
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (DT that) (NN baby))
+                (VP (VBZ is)
+                  (VP (VBG doing)))))))))
+    (. .)))
+
+prep_about(go-9, thinking-2)
+csubj(go-9, feeling-4)
+conj_and(feeling-4, seeing-6)
+csubj(go-9, seeing-6)
+conj_and(feeling-4, hearing-8)
+csubj(go-9, hearing-8)
+root(ROOT-0, go-9)
+ccomp(go-9, watch-10)
+det(Scream-15, the-11)
+amod(Scream-15, video-12)
+amod(Scream-15, Silent-14)
+dobj(watch-10, Scream-15)
+ccomp(go-9, tell-18)
+conj_and(watch-10, tell-18)
+dobj(tell-18, me-19)
+dobj(doing-24, what-20)
+det(baby-22, that-21)
+nsubj(doing-24, baby-22)
+aux(doing-24, is-23)
+dep(tell-18, doing-24)
+

@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNS comments))
+          (PP (IN on)
+            (NP (DT the) (NN post))))))
+    (VP (VBD was)
+      (PP (IN from)
+        (NP
+          (NP (DT a) (JJ pediatric) (NN cardiologist))
+          (, ,)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD stated)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBD was)
+                      (ADJP (JJ outrageous)
+                        (S
+                          (VP (TO to)
+                            (VP (VB abort)
+                              (S
+                                (NP (DT a) (NN child))
+                                (ADJP (JJ due)
+                                  (PP (TO to)
+                                    (NP (DT a) (NN heart) (NN defect))))
+                                (SBAR (IN because)
+                                  (S
+                                    (NP (DT those) (NNS infants))
+                                    (VP (VBP have)
+                                      (NP
+                                        (NP (JJ excellent) (NNS chances))
+                                        (PP (IN for)
+                                          (NP (NN survival)))))))))))))))))))))
+    (. .)))
+
+nsubj(was-8, One-1)
+det(comments-4, the-3)
+prep_of(One-1, comments-4)
+det(post-7, the-6)
+prep_on(comments-4, post-7)
+root(ROOT-0, was-8)
+det(cardiologist-12, a-10)
+amod(cardiologist-12, pediatric-11)
+prep_from(was-8, cardiologist-12)
+nsubj(stated-15, cardiologist-12)
+rcmod(cardiologist-12, stated-15)
+nsubj(outrageous-18, it-16)
+cop(outrageous-18, was-17)
+ccomp(stated-15, outrageous-18)
+aux(abort-20, to-19)
+xcomp(outrageous-18, abort-20)
+det(child-22, a-21)
+nsubj(have-31, child-22)
+det(defect-27, a-25)
+nn(defect-27, heart-26)
+prep_due_to(have-31, defect-27)
+mark(have-31, because-28)
+det(infants-30, those-29)
+nsubj(have-31, infants-30)
+xcomp(abort-20, have-31)
+amod(chances-33, excellent-32)
+dobj(have-31, chances-33)
+prep_for(chances-33, survival-35)
+

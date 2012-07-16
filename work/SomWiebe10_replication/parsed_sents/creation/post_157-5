@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN order))
+        (PP (IN for)
+          (NP (DT the) (NN design) (NN inference)))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ reliable)))))))
+    (, ,)
+    (NP (NNP ID))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ able)
+              (S
+                (VP (TO to)
+                  (VP (VB show)
+                    (SBAR (IN that)
+                      (S
+                        (NP (EX there))
+                        (VP (VBP are)
+                          (NP (DT no) (JJ false) (NNS positives)))))))))))))
+    (. .)))
+
+prep_in(has-12, order-2)
+det(inference-6, the-4)
+nn(inference-6, design-5)
+prep_for(order-2, inference-6)
+aux(reliable-9, to-7)
+cop(reliable-9, be-8)
+infmod(order-2, reliable-9)
+nsubj(has-12, ID-11)
+xsubj(able-15, ID-11)
+root(ROOT-0, has-12)
+aux(able-15, to-13)
+cop(able-15, be-14)
+xcomp(has-12, able-15)
+aux(show-17, to-16)
+xcomp(able-15, show-17)
+complm(are-20, that-18)
+expl(are-20, there-19)
+ccomp(show-17, are-20)
+det(positives-23, no-21)
+amod(positives-23, false-22)
+nsubj(are-20, positives-23)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP
+      (VP (VBP take)
+        (PP (TO to)
+          (NP
+            (NP (JJ deep) (NN faith))
+            (PP (IN in)
+              (NP (DT these) (NNS experiences))))))
+      (, ,)
+      (CC and)
+      (VP (MD would) (RB not)
+        (VP (VB accept)
+          (S
+            (NP (NN someone))
+            (ADJP (RB else))
+            (S
+              (VP (VBG telling)
+                (NP (PRP them))
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP$ their) (NN experience))
+                    (VP (VBD was)
+                      (UCP
+                        (ADJP (JJ false))
+                        (CC or)
+                        (NP (DT an) (NN illusion))))))))))))
+    (. .)))
+
+nsubj(take-2, People-1)
+nsubj(accept-13, People-1)
+root(ROOT-0, take-2)
+amod(faith-5, deep-4)
+prep_to(take-2, faith-5)
+det(experiences-8, these-7)
+prep_in(faith-5, experiences-8)
+aux(accept-13, would-11)
+neg(accept-13, not-12)
+conj_and(take-2, accept-13)
+nsubj(telling-16, someone-14)
+dep(telling-16, else-15)
+xcomp(accept-13, telling-16)
+dobj(telling-16, them-17)
+complm(false-22, that-18)
+poss(experience-20, their-19)
+nsubj(false-22, experience-20)
+cop(false-22, was-21)
+ccomp(telling-16, false-22)
+det(illusion-25, an-24)
+ccomp(telling-16, illusion-25)
+conj_or(false-22, illusion-25)
+

@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (MD should)
+      (VP
+        (ADVP (RB definitely))
+        (VBN banned)
+        (PP (IN except)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT the) (NNS mothers) (NN life))
+              (VP (MD may)
+                (VP (VB be)
+                  (PP (IN at)
+                    (NP (NN risk))))))))))
+    (. .)))
+
+nsubj(banned-4, Abortion-1)
+aux(banned-4, should-2)
+advmod(banned-4, definitely-3)
+root(ROOT-0, banned-4)
+advmod(be-11, when-6)
+det(life-9, the-7)
+nn(life-9, mothers-8)
+nsubj(be-11, life-9)
+aux(be-11, may-10)
+prepc_except(banned-4, be-11)
+prep_at(be-11, risk-13)
+

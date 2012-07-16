@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP roll)
+          (NP
+            (NP (CD one) (NNS dice))
+            (SBAR
+              (S
+                (NP
+                  (NP (DT the) (NN chance))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT a) (CD six))
+                      (VP (VBG coming)
+                        (PRT (RP up))))))
+                (VP (VBZ is)
+                  (NP (CD 1))))))
+          (PP (IN in)
+            (NP (CD 6)))
+          (: ...)
+          (CC but)
+          (FRAG
+            (SBAR (IN if)
+              (S
+                (NP (PRP I))
+                (VP (VBP roll)
+                  (NP (DT a) (CD thousand) (NNS dice))
+                  (NP (DT the) (NN chance))
+                  (SBAR (IN that)
+                    (S
+                      (NP
+                        (QP (IN at) (JJS least) (CD one)))
+                      (VP (MD will)
+                        (VP (VB be)
+                          (NP
+                            (QP (DT a) (CD six))))))))))))))
+    (VP (VBZ is)
+      (ADJP (RB rather) (JJ good)))
+    (. .)))
+
+mark(roll-3, If-1)
+nsubj(roll-3, I-2)
+csubj(good-37, roll-3)
+num(dice-5, one-4)
+dobj(roll-3, dice-5)
+det(chance-7, the-6)
+nsubj(1-14, chance-7)
+det(six-10, a-9)
+prep_of(chance-7, six-10)
+partmod(six-10, coming-11)
+prt(coming-11, up-12)
+cop(1-14, is-13)
+rcmod(dice-5, 1-14)
+prep_in(roll-3, 6-16)
+mark(roll-21, if-19)
+nsubj(roll-21, I-20)
+conj_but(roll-3, roll-21)
+csubj(good-37, roll-21)
+det(dice-24, a-22)
+num(dice-24, thousand-23)
+iobj(roll-21, dice-24)
+det(chance-26, the-25)
+dobj(roll-21, chance-26)
+complm(six-34, that-27)
+quantmod(one-30, at-28)
+mwe(at-28, least-29)
+pobj(at-28, least-29)
+nsubj(six-34, one-30)
+aux(six-34, will-31)
+cop(six-34, be-32)
+quantmod(six-34, a-33)
+ccomp(roll-21, six-34)
+cop(good-37, is-35)
+advmod(good-37, rather-36)
+root(ROOT-0, good-37)
+

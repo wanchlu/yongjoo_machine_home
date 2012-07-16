@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP God))
+      (VP
+        (VP (VBD created)
+          (NP (NNP Adam)))
+        (CC and)
+        (VP (VBD saw)
+          (SBAR (IN that)
+            (S
+              (NP (PRP he))
+              (VP (VBD was)
+                (ADJP (JJ lonely))))))))
+    (: ...)
+    (S (CC but)
+      (NP (NNP God))
+      (ADVP (RB already))
+      (VP (VBD knew)
+        (SBAR (IN that)
+          (S
+            (NP (NNP Adam))
+            (VP (VBD was)
+              (VP (VBG going)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ lonely)))))))))))
+    (. .)))
+
+nsubj(created-2, God-1)
+nsubj(saw-5, God-1)
+root(ROOT-0, created-2)
+dobj(created-2, Adam-3)
+conj_and(created-2, saw-5)
+complm(lonely-9, that-6)
+nsubj(lonely-9, he-7)
+cop(lonely-9, was-8)
+ccomp(saw-5, lonely-9)
+cc(knew-14, but-11)
+nsubj(knew-14, God-12)
+advmod(knew-14, already-13)
+parataxis(created-2, knew-14)
+complm(going-18, that-15)
+nsubj(going-18, Adam-16)
+xsubj(lonely-21, Adam-16)
+aux(going-18, was-17)
+ccomp(knew-14, going-18)
+aux(lonely-21, to-19)
+cop(lonely-21, be-20)
+xcomp(going-18, lonely-21)
+

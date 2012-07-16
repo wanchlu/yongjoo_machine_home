@@ -1,0 +1,47 @@
+(ROOT
+  (S (: --)
+    (S
+      (NP
+        (NP (NNP Behe))
+        (PRN (: --)
+          (FRAG (IN If)
+            (NP (JJ scientific) (NN merit)))))
+      (VP (VBZ is)
+        (VP (VBN judged)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN correspondence))
+              (PP (IN between)
+                (NP (NN theory))))))))
+    (CC and)
+    (S
+      (NP
+        (NP (JJ physical) (NN reality))
+        (, ,)
+        (NP
+          (NP (RB then) (DT the) (NN theory))
+          (PP (IN of)
+            (NP (JJ intelligent) (NN design) (NNS rates)))))
+      (ADJP (RB very) (RB strongly)))
+    (. .)))
+
+nsubjpass(judged-8, Behe-2)
+dep(Behe-2, If-4)
+amod(merit-6, scientific-5)
+dep(If-4, merit-6)
+auxpass(judged-8, is-7)
+root(ROOT-0, judged-8)
+det(correspondence-11, the-10)
+agent(judged-8, correspondence-11)
+prep_between(correspondence-11, theory-13)
+amod(reality-16, physical-15)
+dep(strongly-26, reality-16)
+advmod(theory-20, then-18)
+det(theory-20, the-19)
+appos(reality-16, theory-20)
+amod(rates-24, intelligent-22)
+nn(rates-24, design-23)
+prep_of(theory-20, rates-24)
+advmod(strongly-26, very-25)
+conj_and(judged-8, strongly-26)
+

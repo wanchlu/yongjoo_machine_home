@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN problem))
+      (, ,)
+      (PP (IN in)
+        (NP (PRP$ my) (NN view)))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT all) (NN anti))
+          (SBAR
+            (S
+              (NP (NN abortion) (NNS arguments))
+              (VP (VBZ is)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP 're)
+                      (PP (IN about)
+                        (NP (NN abortion))))))))))))
+    (VP (VBZ is)
+      (ADJP (JJ right)
+        (CC or)
+        (JJ wrong)))
+    (. .)))
+
+det(problem-2, The-1)
+nsubj(right-20, problem-2)
+nsubj(wrong-22, problem-2)
+poss(view-6, my-5)
+prep_in(problem-2, view-6)
+det(anti-10, all-9)
+prep_with(problem-2, anti-10)
+nn(arguments-12, abortion-11)
+nsubj(is-13, arguments-12)
+rcmod(anti-10, is-13)
+complm('re-16, that-14)
+nsubj('re-16, they-15)
+ccomp(is-13, 're-16)
+prep_about('re-16, abortion-18)
+cop(right-20, is-19)
+root(ROOT-0, right-20)
+conj_or(right-20, wrong-22)
+

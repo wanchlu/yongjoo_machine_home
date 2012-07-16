@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP continue)
+      (S
+        (VP (TO to)
+          (VP (VB quote)
+            (NP (JJ dishonest) (NNS sources))))))
+    (. .)))
+
+nsubj(continue-2, You-1)
+xsubj(quote-4, You-1)
+root(ROOT-0, continue-2)
+aux(quote-4, to-3)
+xcomp(continue-2, quote-4)
+amod(sources-6, dishonest-5)
+dobj(quote-4, sources-6)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP I))
+      (VP (VB waste)
+        (NP
+          (NP (DT any) (NN time))
+          (VP
+            (VP
+              (ADVP (RB even))
+              (VBG reading)
+              (NP (PRP them)))
+            (, ,)
+            (ADVP (RB much) (RBR less))
+            (VP (VBG bothering)
+              (S
+                (VP (TO to)
+                  (VP (VB reply)))))))))
+    (. .)))
+
+advmod(waste-4, Why-1)
+aux(waste-4, should-2)
+nsubj(waste-4, I-3)
+root(ROOT-0, waste-4)
+det(time-6, any-5)
+dobj(waste-4, time-6)
+xsubj(reply-15, time-6)
+advmod(reading-8, even-7)
+dep(time-6, reading-8)
+dobj(reading-8, them-9)
+advmod(less-12, much-11)
+advmod(reading-8, less-12)
+dep(reading-8, bothering-13)
+aux(reply-15, to-14)
+xcomp(bothering-13, reply-15)
+
+(ROOT
+  (S
+    (NP (PRP$ Your) (`` ``) (NN authorities) ('' ''))
+    (VP (VBP are) (RB not))
+    (. .)))
+
+poss(authorities-3, Your-1)
+nsubj(are-5, authorities-3)
+root(ROOT-0, are-5)
+neg(are-5, not-6)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN question))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ remains)
+            (PP (IN before)
+              (NP (PRP us)))
+            (ADVP (RB then))))))
+    (, ,)
+    (VP (VBZ is)
+      (SBARQ
+        (WHADVP (WRB when))
+        (SQ (VBZ does)
+          (NP (PRP it))
+          (VP (VB constitute)
+            (NP
+              (NP (DT a) (NN person))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (MD should)
+                    (VP (VB have)
+                      (NP (NN protection))
+                      (PP (IN under)
+                        (NP (DT the) (NN law))))))))))
+        (. ?)))))
+
+det(question-2, The-1)
+nsubj(remains-4, question-2)
+nsubj(is-9, question-2)
+rcmod(question-2, remains-4)
+prep_before(remains-4, us-6)
+advmod(remains-4, then-7)
+root(ROOT-0, is-9)
+advmod(constitute-13, when-10)
+aux(constitute-13, does-11)
+nsubj(constitute-13, it-12)
+dep(is-9, constitute-13)
+det(person-15, a-14)
+dobj(constitute-13, person-15)
+nsubj(have-18, person-15)
+aux(have-18, should-17)
+rcmod(person-15, have-18)
+dobj(have-18, protection-19)
+det(law-22, the-21)
+prep_under(have-18, law-22)
+

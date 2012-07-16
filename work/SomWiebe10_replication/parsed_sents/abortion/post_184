@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NN religion))
+        (ADVP (RB certainly))
+        (VP (VBZ influences)
+          (NP (PRP$ your) (NNS morals)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD can)
+      (ADVP (RB always))
+      (VP (VB vote)
+        (PP (IN for)
+          (NP
+            (NP (NN whomever))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP want)
+                  (PP (TO to)))))))))
+    (. .)))
+
+mark(influences-4, While-1)
+nsubj(influences-4, religion-2)
+advmod(influences-4, certainly-3)
+advcl(vote-11, influences-4)
+poss(morals-6, your-5)
+dobj(influences-4, morals-6)
+nsubj(vote-11, you-8)
+aux(vote-11, can-9)
+advmod(vote-11, always-10)
+root(ROOT-0, vote-11)
+prep_for(vote-11, whomever-13)
+dobj(want-15, whomever-13)
+prep_to(want-15, whomever-13)
+nsubj(want-15, you-14)
+rcmod(whomever-13, want-15)
+
+(ROOT
+  (S
+    (NP (DT The) (NN bible))
+    (VP (MD ca) (RB n't)
+      (VP (VB overrule)
+        (NP (DT the) (NNP Constitution))))
+    (. .)))
+
+det(bible-2, The-1)
+nsubj(overrule-5, bible-2)
+aux(overrule-5, ca-3)
+neg(overrule-5, n't-4)
+root(ROOT-0, overrule-5)
+det(Constitution-7, the-6)
+dobj(overrule-5, Constitution-7)
+

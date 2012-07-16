@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ seems)
+      (SBAR (IN that)
+        (S
+          (ADVP (RB so) (RB far))
+          (NP (NNP ID))
+          (VP (VBZ has)
+            (VP (VBN focused)
+              (PP
+                (PP (IN on)
+                  (NP (NN malaria)))
+                (CC and)
+                (PP (IN on)
+                  (NP
+                    (NP (DT the) (JJ bacterial) (NN flagellum))
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBZ shares)
+                          (ADVP (RB homology))
+                          (PP (IN with)
+                            (NP
+                              (NP (DT the) (NN type) (CD three) (NN secretory) (NN system))
+                              (, ,)
+                              (VP (VBN used)
+                                (PP (IN by)
+                                  (NP (NNS bacteria))))
+                              (ADJP (JJ responsible)
+                                (PP (IN for)
+                                  (NP (DT the) (JJ bubonic) (NN plague)))))))))))))))))
+    (. .)))
+
+nsubj(seems-2, It-1)
+root(ROOT-0, seems-2)
+complm(focused-8, that-3)
+advmod(far-5, so-4)
+advmod(focused-8, far-5)
+nsubj(focused-8, ID-6)
+aux(focused-8, has-7)
+ccomp(seems-2, focused-8)
+prep_on(focused-8, malaria-10)
+det(flagellum-15, the-13)
+amod(flagellum-15, bacterial-14)
+prep_on(focused-8, flagellum-15)
+conj_and(malaria-10, flagellum-15)
+nsubj(shares-17, flagellum-15)
+rcmod(flagellum-15, shares-17)
+advmod(shares-17, homology-18)
+det(system-24, the-20)
+nn(system-24, type-21)
+num(system-24, three-22)
+nn(system-24, secretory-23)
+prep_with(shares-17, system-24)
+partmod(system-24, used-26)
+agent(used-26, bacteria-28)
+amod(system-24, responsible-29)
+det(plague-33, the-31)
+amod(plague-33, bubonic-32)
+prep_for(responsible-29, plague-33)
+
+(ROOT
+  (S
+    (VP (VBZ Seems)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN designer))
+          (VP (VBZ has)
+            (NP
+              (NP (RB quite) (DT an) (NN interest))
+              (PP (IN in)
+                (S
+                  (VP (VBG punishing)
+                    (NP (NNS humans))))))))))
+    (. .)))
+
+root(ROOT-0, Seems-1)
+complm(has-5, that-2)
+det(designer-4, the-3)
+nsubj(has-5, designer-4)
+ccomp(Seems-1, has-5)
+advmod(interest-8, quite-6)
+det(interest-8, an-7)
+dobj(has-5, interest-8)
+prepc_in(interest-8, punishing-10)
+dobj(punishing-10, humans-11)
+

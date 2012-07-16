@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD would)
+      (VP (VB require)
+        (SBAR
+          (S
+            (NP
+              (NP (NN evidence))
+              (PP (IN that)
+                (NP (DT a) (-RRB- -RRB-) (NNP designers))))
+            (VP (VBD existed)
+              (SBAR
+                (S
+                  (S
+                    (LST (LS b) (-RRB- -RRB-))
+                    (NP (PRP they))
+                    (VP (VBD visited)
+                      (NP (NN earth))))
+                  (CC and)
+                  (S
+                    (LST (LS c) (-RRB- -RRB-))
+                    (NP (PRP they))
+                    (VP (VBD intervened)
+                      (PP (IN in)
+                        (NP
+                          (NP (DT the) (NN modification))
+                          (PP (IN of)
+                            (NP (NN life))))))))))))))
+    (. .)))
+
+nsubj(require-3, This-1)
+aux(require-3, would-2)
+root(ROOT-0, require-3)
+nsubj(existed-9, evidence-4)
+det(designers-8, a-6)
+prep_that(evidence-4, designers-8)
+ccomp(require-3, existed-9)
+dep(visited-13, b-10)
+nsubj(visited-13, they-12)
+dep(existed-9, visited-13)
+dobj(visited-13, earth-14)
+dep(intervened-19, c-16)
+nsubj(intervened-19, they-18)
+dep(existed-9, intervened-19)
+conj_and(visited-13, intervened-19)
+det(modification-22, the-21)
+prep_in(intervened-19, modification-22)
+prep_of(modification-22, life-24)
+

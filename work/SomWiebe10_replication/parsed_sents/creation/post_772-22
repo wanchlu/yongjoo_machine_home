@@ -1,0 +1,71 @@
+(ROOT
+  (FRAG
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (NP
+          (NP
+            (QP (RB about) (NNS billions)))
+          (PP (IN of)
+            (NP
+              (NP (JJ dead) (NNS animals)
+                (CC and)
+                (NNS plants))
+              (VP
+                (ADVP (RB rapidly))
+                (VBN buried)
+                (PP (IN under)
+                  (NP
+                    (NP (DT a) (NN mile))
+                    (PP (IN of)
+                      (NP (NN sediment)))))))))
+        (VP (VBD laid)
+          (ADVP (RB down) (RB quickly))
+          (, ,)
+          (S
+            (VP (VBG preserving)
+              (NP (NNS animals))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN middle))
+                  (PP (IN of)
+                    (S
+                      (VP
+                        (VP (VBG eating))
+                        (, ,)
+                        (CC or)
+                        (VP (VBG giving)
+                          (NP (NN birth)))))))))))))
+    (, ,)
+    (ADVP (RB all)
+      (PP (IN over)
+        (NP (DT the) (NN world))))
+    (. ?)))
+
+advmod(laid-16, How-1)
+quantmod(billions-3, about-2)
+nsubj(laid-16, billions-3)
+amod(animals-6, dead-5)
+prep_of(billions-3, animals-6)
+prep_of(billions-3, plants-8)
+conj_and(animals-6, plants-8)
+advmod(buried-10, rapidly-9)
+partmod(animals-6, buried-10)
+det(mile-13, a-12)
+prep_under(buried-10, mile-13)
+prep_of(mile-13, sediment-15)
+dep(all-32, laid-16)
+advmod(quickly-18, down-17)
+advmod(laid-16, quickly-18)
+xcomp(laid-16, preserving-20)
+dobj(preserving-20, animals-21)
+det(middle-24, the-23)
+prep_in(preserving-20, middle-24)
+prepc_of(middle-24, eating-26)
+prepc_of(middle-24, giving-29)
+conj_or(eating-26, giving-29)
+dobj(giving-29, birth-30)
+root(ROOT-0, all-32)
+det(world-35, the-34)
+prep_over(all-32, world-35)
+

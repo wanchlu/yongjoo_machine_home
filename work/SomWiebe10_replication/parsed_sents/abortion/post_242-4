@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (NN person))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN degree))
+            (PP (IN in)
+              (NP (NNP Biology)))))))
+    (NP (PRP I))
+    (VP (VBP realize)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Human) (NN life))
+          (VP (VBZ begins)
+            (PP (IN at)
+              (NP (NN conception)))))))
+    (. .)))
+
+det(person-3, a-2)
+prep_as(realize-10, person-3)
+det(degree-6, a-5)
+prep_with(person-3, degree-6)
+prep_in(degree-6, Biology-8)
+nsubj(realize-10, I-9)
+root(ROOT-0, realize-10)
+complm(begins-14, that-11)
+nn(life-13, Human-12)
+nsubj(begins-14, life-13)
+ccomp(realize-10, begins-14)
+prep_at(begins-14, conception-16)
+

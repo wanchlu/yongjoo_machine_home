@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP God))
+        (VP (VBZ speaks)
+          (PP (TO to)
+            (NP (PRP us))))))
+    (, ,)
+    (S
+      (ADVP (RB then))
+      (NP (PRP he))
+      (VP (MD must)
+        (VP (VB use)
+          (NP
+            (NP (DT the) (NNS words))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (MD can)
+                  (VP (VB understand)))))))))
+    (CC or)
+    (S
+      (NP (PRP we))
+      (VP (MD can) (RB not)
+        (VP (VB be)
+          (VP (VBN expected)
+            (S
+              (VP (TO to)
+                (VP (VB heed)
+                  (NP (PRP them)))))))))
+    (. .)))
+
+mark(speaks-3, If-1)
+nsubj(speaks-3, God-2)
+advcl(use-10, speaks-3)
+prep_to(speaks-3, us-5)
+advmod(use-10, then-7)
+nsubj(use-10, he-8)
+aux(use-10, must-9)
+root(ROOT-0, use-10)
+det(words-12, the-11)
+dobj(use-10, words-12)
+dobj(understand-15, words-12)
+nsubj(understand-15, we-13)
+aux(understand-15, can-14)
+rcmod(words-12, understand-15)
+nsubjpass(expected-21, we-17)
+aux(expected-21, can-18)
+neg(expected-21, not-19)
+auxpass(expected-21, be-20)
+conj_or(use-10, expected-21)
+aux(heed-23, to-22)
+xcomp(expected-21, heed-23)
+dobj(heed-23, them-24)
+

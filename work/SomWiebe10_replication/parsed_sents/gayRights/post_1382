@@ -1,0 +1,87 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP (VB do)
+        (SBAR (IN if)
+          (S
+            (NP (DT a) (JJ gay) (NN couple))
+            (VP (VBD adopted)
+              (NP (PRP$ your) (NN brother)))))))
+    (. ?)))
+
+dobj(do-4, What-1)
+aux(do-4, would-2)
+nsubj(do-4, you-3)
+root(ROOT-0, do-4)
+mark(adopted-9, if-5)
+det(couple-8, a-6)
+amod(couple-8, gay-7)
+nsubj(adopted-9, couple-8)
+advcl(do-4, adopted-9)
+poss(brother-11, your-10)
+dobj(adopted-9, brother-11)
+
+(ROOT
+  (FRAG
+    (SBARQ
+      (WHADVP (RB Or) (WRB why))
+      (SQ (RB not)
+        (NP (PRP you)))
+      (. ?))))
+
+advmod(why-2, Or-1)
+advmod(not-3, why-2)
+root(ROOT-0, not-3)
+dep(not-3, you-4)
+
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP
+          (NP (JJ many) (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP are) (RB n't)
+                (NP
+                  (NP (JJ gay))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP are) (RB not)
+                        (VP (VBN allowed)
+                          (S
+                            (VP (TO to)
+                              (VP (VB adopt)))))))))))))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (MD 'd)
+        (VP (VB be)
+          (NP (JJ good) (NNS parents)))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(people-4, many-3)
+nsubj(are-2, people-4)
+nsubj(gay-8, people-4)
+cop(gay-8, are-6)
+neg(gay-8, n't-7)
+rcmod(people-4, gay-8)
+nsubjpass(allowed-12, gay-8)
+auxpass(allowed-12, are-10)
+neg(allowed-12, not-11)
+rcmod(gay-8, allowed-12)
+aux(adopt-14, to-13)
+xcomp(allowed-12, adopt-14)
+nsubj(parents-20, they-16)
+aux(parents-20, 'd-17)
+cop(parents-20, be-18)
+amod(parents-20, good-19)
+conj_and(are-2, parents-20)
+

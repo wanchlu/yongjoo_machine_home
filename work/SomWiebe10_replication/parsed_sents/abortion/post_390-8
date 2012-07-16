@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Placing)
+        (NP
+          (NP (DT a) (NN fetus))
+          (PP (IN in)
+            (NP
+              (NP (DT an) (NN environment))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ gives)
+                    (NP (PRP it))
+                    (NP
+                      (ADJP (RBR more) (JJ external))
+                      (NN stimulation)
+                      (S
+                        (VP (TO to)
+                          (VP (VB respond)
+                            (PP (TO to))))))))))))))
+    (VP (VBZ does) (RB not)
+      (VP (VB make)
+        (S
+          (NP (PRP it))
+          (ADJP
+            (ADJP (DT any) (RBR more) (JJ human))
+            (PP (IN than)))
+          (SBAR (IN if)
+            (S
+              (NP (PRP it))
+              (VP (VBD stayed)
+                (PP (IN in)
+                  (NP (DT the) (NN womb)))))))))
+    (. .)))
+
+csubj(make-18, Placing-1)
+det(fetus-3, a-2)
+dobj(Placing-1, fetus-3)
+det(environment-6, an-5)
+prep_in(fetus-3, environment-6)
+nsubj(gives-8, environment-6)
+rcmod(environment-6, gives-8)
+iobj(gives-8, it-9)
+advmod(external-11, more-10)
+amod(stimulation-12, external-11)
+dobj(gives-8, stimulation-12)
+aux(respond-14, to-13)
+infmod(stimulation-12, respond-14)
+prep(respond-14, to-15)
+aux(make-18, does-16)
+neg(make-18, not-17)
+root(ROOT-0, make-18)
+nsubj(stayed-26, it-19)
+dep(human-22, any-20)
+advmod(human-22, more-21)
+dep(stayed-26, human-22)
+prep(human-22, than-23)
+mark(stayed-26, if-24)
+nsubj(stayed-26, it-25)
+xcomp(make-18, stayed-26)
+det(womb-29, the-28)
+prep_in(stayed-26, womb-29)
+

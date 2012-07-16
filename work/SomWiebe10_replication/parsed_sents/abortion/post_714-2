@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBD planned)
+      (SBAR
+        (S
+          (NP (PRP me)
+            (CC and)
+            (PRP it))
+          (VP (VBZ says)
+            (SBAR
+              (S
+                (NP (PRP He))
+                (VP (VBD knew)
+                  (NP (PRP me))
+                  (PP (IN before)
+                    (NP
+                      (NP (DT the) (NN creation))
+                      (PP (IN of)
+                        (NP (DT the) (NN world))))))))))))
+    (. .)))
+
+nsubj(planned-2, He-1)
+root(ROOT-0, planned-2)
+nsubj(says-6, me-3)
+conj_and(me-3, it-5)
+nsubj(says-6, it-5)
+ccomp(planned-2, says-6)
+nsubj(knew-8, He-7)
+ccomp(says-6, knew-8)
+dobj(knew-8, me-9)
+det(creation-12, the-11)
+prep_before(knew-8, creation-12)
+det(world-15, the-14)
+prep_of(creation-12, world-15)
+

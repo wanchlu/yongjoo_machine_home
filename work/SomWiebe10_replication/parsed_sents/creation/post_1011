@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have) (RB not)
+      (VP (VBN seen)
+        (NP
+          (NP (DT any) (NN animal))
+          (VP (VBG turning)
+            (PP (IN into)
+              (NP (DT another)))
+            (ADVP (RB recently))
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ honest)))))))))
+    (: ...)))
+
+nsubj(seen-4, I-1)
+aux(seen-4, have-2)
+neg(seen-4, not-3)
+root(ROOT-0, seen-4)
+det(animal-6, any-5)
+dobj(seen-4, animal-6)
+xsubj(honest-13, animal-6)
+partmod(animal-6, turning-7)
+prep_into(turning-7, another-9)
+advmod(turning-7, recently-10)
+aux(honest-13, to-11)
+cop(honest-13, be-12)
+xcomp(turning-7, honest-13)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (MD 'd) (RB rather)
+      (VP (VB prefer)
+        (S (RB not)
+          (VP (TO to)
+            (VP (VB think)
+              (PP (IN of)
+                (NP (PRP myself)))
+              (PP (IN as)
+                (S
+                  (VP (VBG coming)
+                    (PP (IN from)
+                      (NP (DT an) (NN ape)))))))))))
+    (. .)))
+
+cc(prefer-5, And-1)
+nsubj(prefer-5, I-2)
+xsubj(think-8, I-2)
+aux(prefer-5, 'd-3)
+advmod(prefer-5, rather-4)
+root(ROOT-0, prefer-5)
+neg(think-8, not-6)
+aux(think-8, to-7)
+xcomp(prefer-5, think-8)
+prep_of(think-8, myself-10)
+prepc_as(think-8, coming-12)
+det(ape-15, an-14)
+prep_from(coming-12, ape-15)
+
+(ROOT
+  (S
+    (PP (RB Not)
+      (ADJP (RB too) (JJ regal)))
+    (NP (PRP you))
+    (VP (VBP see))
+    (. .)))
+
+advcl(see-5, Not-1)
+prep(see-5, Not-1)
+advmod(regal-3, too-2)
+pobj(Not-1, regal-3)
+nsubj(see-5, you-4)
+root(ROOT-0, see-5)
+

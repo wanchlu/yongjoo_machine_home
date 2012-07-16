@@ -1,0 +1,38 @@
+(ROOT
+  (S (CC Or)
+    (PP (IN in)
+      (NP
+        (NP (DT a) (JJR simpler) (NN context))
+        (: :)
+        (S
+          (NP (NNS Dogs))
+          (VP (VBP have)
+            (NP (NNS tails))
+            (, ,)
+            (S
+              (NP (NNS cats))
+              (VP (VB have)
+                (NP (NNS tails))
+                (, ,)
+                (ADVP (RB therefore))))))))
+    (NP (DT all) (NNS cats))
+    (VP (VBP are)
+      (NP (NNS dogs)))
+    (. .)))
+
+cc(dogs-19, Or-1)
+det(context-5, a-3)
+amod(context-5, simpler-4)
+prep_in(dogs-19, context-5)
+nsubj(have-8, Dogs-7)
+dep(context-5, have-8)
+dobj(have-8, tails-9)
+nsubj(have-12, cats-11)
+ccomp(have-8, have-12)
+dobj(have-12, tails-13)
+advmod(have-12, therefore-15)
+det(cats-17, all-16)
+nsubj(dogs-19, cats-17)
+cop(dogs-19, are-18)
+root(ROOT-0, dogs-19)
+

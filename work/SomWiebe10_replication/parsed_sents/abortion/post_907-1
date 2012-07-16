@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (MD can))))
+    (VP (VBD chose)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP do) (RB n't)
+            (VP (VB want)
+              (S
+                (NP (PRP you))
+                (ADJP (RB baby) (JJ alive)))
+              (SBAR (IN than)
+                (S
+                  (NP (PRP you))
+                  (VP (MD should)
+                    (VP (VBD chose)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP do) (RB n't)
+                            (VP (VB want)
+                              (S
+                                (NP (NN someone) (RB else))
+                                (VP (TO to)
+                                  (VP
+                                    (VP (VB be)
+                                      (ADJP (JJ alive)))
+                                    (CC and)
+                                    (VP (VB kill)
+                                      (NP (PRP them)))))))))))))))))))
+    (. .)))
+
+mark(can-3, if-1)
+nsubj(can-3, you-2)
+csubj(chose-4, can-3)
+root(ROOT-0, chose-4)
+nsubj(want-8, you-5)
+aux(want-8, do-6)
+neg(want-8, n't-7)
+ccomp(chose-4, want-8)
+nsubj(alive-11, you-9)
+advmod(alive-11, baby-10)
+xcomp(want-8, alive-11)
+mark(chose-15, than-12)
+nsubj(chose-15, you-13)
+aux(chose-15, should-14)
+advcl(want-8, chose-15)
+complm(want-20, that-16)
+nsubj(want-20, you-17)
+aux(want-20, do-18)
+neg(want-20, n't-19)
+ccomp(chose-15, want-20)
+nsubj(alive-25, someone-21)
+nsubj(kill-27, someone-21)
+advmod(someone-21, else-22)
+aux(alive-25, to-23)
+cop(alive-25, be-24)
+xcomp(want-20, alive-25)
+xcomp(want-20, kill-27)
+conj_and(alive-25, kill-27)
+dobj(kill-27, them-28)
+

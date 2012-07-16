@@ -1,0 +1,53 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP
+      (ADVP
+        (ADVP (RB but) (RBR more))
+        (PP (IN of)
+          (NP (PRP$ your) (NN time)
+            (CC and)
+            (NN energy))
+          (PP (IN into)
+            (NP
+              (NP (DT those) (NNS problems))
+              (CC and)
+              (NP (NN help))))))
+      (VB get)
+      (NP
+        (NP
+          (NP (DT those))
+          (VP (VBN put)
+            (PP (IN into)
+              (NP (NN place)))))
+        (CONJP (RB instead) (IN of))
+        (NP
+          (NP (VBG browbeating) (NNS women))
+          (PP (IN over)
+            (NP (PRP$ their) (JJ private) (NNS decisions))))))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+advmod(more-4, but-3)
+advmod(get-15, more-4)
+poss(time-7, your-6)
+prep_of(more-4, time-7)
+prep_of(more-4, energy-9)
+conj_and(time-7, energy-9)
+det(problems-12, those-11)
+prep_into(more-4, problems-12)
+prep_into(more-4, help-14)
+conj_and(problems-12, help-14)
+dep(not-2, get-15)
+dobj(get-15, those-16)
+partmod(those-16, put-17)
+prep_into(put-17, place-19)
+amod(women-23, browbeating-22)
+dobj(get-15, women-23)
+conj_negcc(those-16, women-23)
+poss(decisions-27, their-25)
+amod(decisions-27, private-26)
+prep_over(women-23, decisions-27)
+

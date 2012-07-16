@@ -1,0 +1,66 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ OK))
+    (SBAR (IN so)
+      (S
+        (NP (PRP$ their))
+        (VP (RB not)
+          (S
+            (VP (VBG going)
+              (S
+                (VP (TO to)
+                  (VP (VB stop)
+                    (SBAR (IN so)
+                      (S
+                        (NP (PRP we))
+                        (VP (MD should)
+                          (ADVP (RB just))
+                          (RB not)
+                          (VP (VB hold)
+                            (S
+                              (NP (PRP them))
+                              (ADJP (JJ accountable)))))))))))))))
+    (. ?)))
+
+root(ROOT-0, OK-1)
+mark(not-4, so-2)
+nsubj(not-4, their-3)
+dep(OK-1, not-4)
+xcomp(not-4, going-5)
+aux(stop-7, to-6)
+xcomp(going-5, stop-7)
+mark(hold-13, so-8)
+nsubj(hold-13, we-9)
+aux(hold-13, should-10)
+advmod(hold-13, just-11)
+neg(hold-13, not-12)
+advcl(stop-7, hold-13)
+nsubj(accountable-15, them-14)
+xcomp(hold-13, accountable-15)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN problem))
+          (PP (IN with)
+            (NP (DT the) (NN world) (NN today))))))
+    (, ,)
+    (NP (NN nobody))
+    (VP (VBZ is)
+      (ADJP (JJ accountable)))
+    (. .)))
+
+nsubj(problem-4, This-1)
+cop(problem-4, is-2)
+det(problem-4, the-3)
+ccomp(accountable-12, problem-4)
+det(today-8, the-6)
+nn(today-8, world-7)
+prep_with(problem-4, today-8)
+nsubj(accountable-12, nobody-10)
+cop(accountable-12, is-11)
+root(ROOT-0, accountable-12)
+

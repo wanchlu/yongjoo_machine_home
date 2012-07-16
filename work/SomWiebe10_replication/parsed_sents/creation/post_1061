@@ -1,0 +1,186 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (VP (VBN called)
+        (NP
+          (NP (DT the) (NN THEORY))
+          (PP (IN of)
+            (NP (NN evolution))))
+        (PP (IN for)
+          (NP (DT a) (NN reason)))))
+    (. .)))
+
+nsubjpass(called-3, It-1)
+auxpass(called-3, 's-2)
+root(ROOT-0, called-3)
+det(THEORY-5, the-4)
+dobj(called-3, THEORY-5)
+prep_of(THEORY-5, evolution-7)
+det(reason-10, a-9)
+prep_for(called-3, reason-10)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB know)
+      (SBARQ
+        (WHADVP (WRB why))))
+    (. ?)))
+
+aux(know-3, Do-1)
+nsubj(know-3, you-2)
+root(ROOT-0, know-3)
+dep(know-3, why-4)
+
+(ROOT
+  (FRAG
+    (SBAR (IN Because)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's) (RB not)
+          (NP
+            (NP (DT the) (NN LAW))
+            (PP (IN of)
+              (NP (NN evolution))))
+          (SBAR (IN because)
+            (S
+              (NP (PRP it))
+              (VP (VBZ has)
+                (NP (DT no) (NN proof))))))))
+    (. !)))
+
+mark(LAW-6, Because-1)
+nsubj(LAW-6, it-2)
+cop(LAW-6, 's-3)
+neg(LAW-6, not-4)
+det(LAW-6, the-5)
+root(ROOT-0, LAW-6)
+prep_of(LAW-6, evolution-8)
+mark(has-11, because-9)
+nsubj(has-11, it-10)
+advcl(LAW-6, has-11)
+det(proof-13, no-12)
+dobj(has-11, proof-13)
+
+(ROOT
+  (S
+    (SBAR (RB Even) (IN IF)
+      (S
+        (NP (NN evolution))
+        (VP (VBD was)
+          (NP (NN truth)))))
+    (PRN (-LRB- -LRB-)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP it))
+          (VP (VBZ is) (RB n't))))
+      (-RRB- -RRB-))
+    (NP (PRP it))
+    (VP (VBZ does) (RB n't)
+      (VP (VB proove)
+        (PP (IN against)
+          (NP (JJ intelligent) (NN design)))))
+    (. .)))
+
+advmod(truth-5, Even-1)
+dep(truth-5, IF-2)
+nsubj(truth-5, evolution-3)
+cop(truth-5, was-4)
+advcl(proove-15, truth-5)
+dobj(is-9, which-7)
+nsubj(is-9, it-8)
+parataxis(proove-15, is-9)
+neg(is-9, n't-10)
+nsubj(proove-15, it-12)
+aux(proove-15, does-13)
+neg(proove-15, n't-14)
+root(ROOT-0, proove-15)
+amod(design-18, intelligent-17)
+prep_against(proove-15, design-18)
+
+(ROOT
+  (S
+    (S
+      (NP (JJ Intelligent) (NN design))
+      (VP (VBZ constitutes)
+        (SBAR (IN that)
+          (S
+            (NP (NN something))
+            (VP (VBD created)
+              (NP (DT the) (NN universe)))))))
+    (: ;)
+    (S
+      (NP (NNP Aithiesm))
+      (VP (VBZ constitutes)
+        (SBAR (IN that)
+          (S
+            (NP (NNP NOTHING))
+            (VP (VBD created)
+              (NP (DT the) (NN universe)))))))
+    (. .)))
+
+amod(design-2, Intelligent-1)
+nsubj(constitutes-3, design-2)
+root(ROOT-0, constitutes-3)
+complm(created-6, that-4)
+nsubj(created-6, something-5)
+ccomp(constitutes-3, created-6)
+det(universe-8, the-7)
+dobj(created-6, universe-8)
+nsubj(constitutes-11, Aithiesm-10)
+parataxis(constitutes-3, constitutes-11)
+complm(created-14, that-12)
+nsubj(created-14, NOTHING-13)
+ccomp(constitutes-11, created-14)
+det(universe-16, the-15)
+dobj(created-14, universe-16)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Personally))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN earth)
+              (CC and)
+              (NN universe))
+            (VP (VBD was)
+              (VP (VBN created)
+                (PP (IN in)
+                  (NP (CD six) (JJ literal) (NNS days)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN evolution))
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (JJR more) (NN proof))
+          (PP (IN than)
+            (NP (NNP creationism) (NNP IMHO))))))))
+
+advmod(believe-4, Personally-1)
+nsubj(believe-4, I-3)
+root(ROOT-0, believe-4)
+complm(created-11, that-5)
+det(earth-7, the-6)
+nsubjpass(created-11, earth-7)
+conj_and(earth-7, universe-9)
+nsubjpass(created-11, universe-9)
+auxpass(created-11, was-10)
+ccomp(believe-4, created-11)
+num(days-15, six-13)
+amod(days-15, literal-14)
+prep_in(created-11, days-15)
+nsubj(has-19, evolution-18)
+conj_and(believe-4, has-19)
+det(proof-22, no-20)
+amod(proof-22, more-21)
+dobj(has-19, proof-22)
+nn(IMHO-25, creationism-24)
+prep_than(proof-22, IMHO-25)
+

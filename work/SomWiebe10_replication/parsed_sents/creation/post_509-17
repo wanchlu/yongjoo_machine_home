@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP DI))
+      (VP (VBD opposed)
+        (SBAR
+          (S
+            (NP (NNP Dover))
+            (VP (VBZ s)
+              (NP
+                (NP (NN policy))
+                (PP (IN at)
+                  (NP
+                    (NP (DT every) (NN stage))
+                    (PP (IN of)
+                      (NP (DT the) (NN process)))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Irons))
+      (VP (VBZ s)
+        (ADJP (JJ contrary)
+          (SBAR
+            (S
+              (NP (NNS suggestions))
+              (VP (VBP are)
+                (ADJP (JJ false))))))))
+    (. .)))
+
+nsubj(opposed-2, DI-1)
+root(ROOT-0, opposed-2)
+nsubj(policy-5, Dover-3)
+cop(policy-5, s-4)
+ccomp(opposed-2, policy-5)
+det(stage-8, every-7)
+prep_at(policy-5, stage-8)
+det(process-11, the-10)
+prep_of(stage-8, process-11)
+nsubj(contrary-16, Irons-14)
+cop(contrary-16, s-15)
+conj_and(opposed-2, contrary-16)
+nsubj(false-19, suggestions-17)
+cop(false-19, are-18)
+dep(contrary-16, false-19)
+

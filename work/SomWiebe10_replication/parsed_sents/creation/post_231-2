@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ longest-running) (JJ microbial) (NN evolution) (NN experiment))
+    (VP (VBD was)
+      (VP (VBN started)
+        (PP (IN in)
+          (NP
+            (NP (CD 1988))
+            (, ,)
+            (SBAR
+              (WHPP (IN at)
+                (WHNP (WDT which) (NN time)))
+              (S
+                (NP (CD twelve) (NNS populations))
+                (VP (VBD were)
+                  (VP (VBN founded)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT the) (JJ same) (NN strain))
+                        (PP (IN of)
+                          (NP (NNP Escherichia) (NNS coli)))))))))))))
+    (. .)))
+
+det(experiment-5, The-1)
+amod(experiment-5, longest-running-2)
+amod(experiment-5, microbial-3)
+nn(experiment-5, evolution-4)
+nsubjpass(started-7, experiment-5)
+auxpass(started-7, was-6)
+root(ROOT-0, started-7)
+prep_in(started-7, 1988-9)
+det(time-13, 1988-9)
+rel(founded-17, time-13)
+num(populations-15, twelve-14)
+nsubjpass(founded-17, populations-15)
+auxpass(founded-17, were-16)
+rcmod(1988-9, founded-17)
+det(strain-21, the-19)
+amod(strain-21, same-20)
+agent(founded-17, strain-21)
+nn(coli-24, Escherichia-23)
+prep_of(strain-21, coli-24)
+

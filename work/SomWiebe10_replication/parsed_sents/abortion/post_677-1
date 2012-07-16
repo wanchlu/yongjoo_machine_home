@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (JJ other) (NNS folks))
+        (VP (VBP want))))
+    (NP (PRP it))
+    (VP (VBD changed)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBP need)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB change)
+                    (NP (DT the) (NN law)))
+                  (CC and)
+                  (VP (VB leave)
+                    (NP (NN everyone) (RB else))
+                    (ADVP (RB alone))))))))))
+    (. .)))
+
+mark(want-4, If-1)
+amod(folks-3, other-2)
+nsubj(want-4, folks-3)
+advcl(changed-6, want-4)
+nsubj(changed-6, it-5)
+root(ROOT-0, changed-6)
+nsubj(need-8, they-7)
+xsubj(change-10, they-7)
+ccomp(changed-6, need-8)
+aux(change-10, to-9)
+xcomp(need-8, change-10)
+det(law-12, the-11)
+dobj(change-10, law-12)
+xcomp(need-8, leave-14)
+conj_and(change-10, leave-14)
+dobj(leave-14, everyone-15)
+advmod(everyone-15, else-16)
+advmod(leave-14, alone-17)
+

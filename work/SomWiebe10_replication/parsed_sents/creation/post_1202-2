@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (ADVP (RB First))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (JJ periodic) (NN evolution))
+          (, ,) (RB then)
+          (NP (DT a) (JJ gradual) (VBG changing) (NN species)))
+        (, ,)
+        (CC or)
+        (NP
+          (NP (RB even) (DT a) (NN change))
+          (PP (IN in)
+            (NP
+              (NP (JJ genetic) (NN DNA))
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (NP (RB not) (NN mutation))
+                  (CC but)
+                  (NP (JJ simple) (NN reproduction)))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+advmod(is-3, First-1)
+expl(is-3, there-2)
+root(ROOT-0, is-3)
+amod(evolution-5, periodic-4)
+nsubj(is-3, evolution-5)
+advmod(evolution-5, then-7)
+det(species-11, a-8)
+amod(species-11, gradual-9)
+amod(species-11, changing-10)
+dep(evolution-5, species-11)
+advmod(change-16, even-14)
+det(change-16, a-15)
+nsubj(is-3, change-16)
+conj_or(evolution-5, change-16)
+amod(DNA-19, genetic-18)
+prep_in(change-16, DNA-19)
+neg(mutation-22, not-21)
+dep(DNA-19, mutation-22)
+amod(reproduction-25, simple-24)
+dep(DNA-19, reproduction-25)
+conj_but(mutation-22, reproduction-25)
+

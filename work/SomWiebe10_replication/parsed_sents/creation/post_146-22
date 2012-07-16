@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB say)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (MD 'd)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB give)
+                      (NP (PRP it))
+                      (NP
+                        (NP
+                          (NP (DT a) (NN right))
+                          (PP (TO to)
+                            (NP (NN dissent))))
+                        (: ...)
+                        (ADVP (NN matter)
+                          (PP (IN of)
+                            (FRAG
+                              (NP
+                                (NP (NN fact))
+                                (SBAR
+                                  (S
+                                    (NP (PRP I))
+                                    (VP (MD 'd)
+                                      (VP (VB give)
+                                        (NP (PRP it))
+                                        (NP
+                                          (NP (DT a) (CD 1:1) (NN chance))
+                                          (SBAR (IN that)
+                                            (S
+                                              (NP (DT the) (JJ only) (NN path))
+                                              (VP (MD would)
+                                                (VP (VB be)
+                                                  (ADJP (JJ free)
+                                                    (SBAR
+                                                      (S
+                                                        (VP (MD will))))))))))))))
+                                (. .)))))))))))))))
+    (. .)))
+
+nsubj(say-3, I-1)
+aux(say-3, 'd-2)
+root(ROOT-0, say-3)
+nsubj(have-6, you-4)
+xsubj(give-8, you-4)
+aux(have-6, 'd-5)
+ccomp(say-3, have-6)
+aux(give-8, to-7)
+xcomp(have-6, give-8)
+iobj(give-8, it-9)
+det(right-11, a-10)
+dobj(give-8, right-11)
+prep_to(right-11, dissent-13)
+advmod(right-11, matter-15)
+prep(matter-15, of-16)
+dep(of-16, fact-17)
+nsubj(give-20, I-18)
+aux(give-20, 'd-19)
+rcmod(fact-17, give-20)
+iobj(give-20, it-21)
+det(chance-24, a-22)
+num(chance-24, 1:1-23)
+dobj(give-20, chance-24)
+dobj(free-31, chance-24)
+complm(free-31, that-25)
+det(path-28, the-26)
+amod(path-28, only-27)
+nsubj(free-31, path-28)
+aux(free-31, would-29)
+cop(free-31, be-30)
+dep(chance-24, free-31)
+dep(free-31, will-32)
+

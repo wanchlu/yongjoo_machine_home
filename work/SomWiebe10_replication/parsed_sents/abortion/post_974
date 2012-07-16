@@ -1,0 +1,94 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (DT the) (NN woman))
+      (VP (VB carry)
+        (PRT (RP out))
+        (NP (DT the) (NN child))
+        (PP
+          (PP (IN for)
+            (NP
+              (NP (DT a) (NN crime))
+              (SBAR
+                (WHPP (IN in)
+                  (WHNP (WDT which)))
+                (S
+                  (NP (PRP she))
+                  (VP (VBD was)
+                    (NP (DT a) (NN victim)))))))
+          (CC and)
+          (PP (IN for)
+            (NP
+              (NP (DT a) (NN child))
+              (SBAR
+                (S
+                  (NP (PRP she))
+                  (VP (VBD did) (RB not)
+                    (VP (VB want)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)))))))))))))
+    (. ?)))
+
+advmod(carry-5, Why-1)
+aux(carry-5, should-2)
+det(woman-4, the-3)
+nsubj(carry-5, woman-4)
+root(ROOT-0, carry-5)
+prt(carry-5, out-6)
+det(child-8, the-7)
+dobj(carry-5, child-8)
+det(crime-11, a-10)
+prep_for(carry-5, crime-11)
+rel(victim-17, which-13)
+nsubj(victim-17, she-14)
+cop(victim-17, was-15)
+det(victim-17, a-16)
+rcmod(crime-11, victim-17)
+det(child-21, a-20)
+prep_for(carry-5, child-21)
+conj_and(crime-11, child-21)
+dobj(want-25, child-21)
+nsubj(want-25, she-22)
+xsubj(have-27, she-22)
+aux(want-25, did-23)
+neg(want-25, not-24)
+rcmod(child-21, want-25)
+aux(have-27, to-26)
+xcomp(want-25, have-27)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD could)
+      (VP (VB go)
+        (NP (DT both) (NNS ways))))
+    (. .)))
+
+nsubj(go-3, It-1)
+aux(go-3, could-2)
+root(ROOT-0, go-3)
+det(ways-5, both-4)
+dobj(go-3, ways-5)
+
+(ROOT
+  (S
+    (VP (VB Leave)
+      (NP (PRP it))
+      (ADVP (RB up)
+        (PP (TO to)
+          (NP (DT the) (NN woman)
+            (S
+              (VP (TO to)
+                (VP (VB decide))))))))
+    (. .)))
+
+root(ROOT-0, Leave-1)
+dobj(Leave-1, it-2)
+advmod(Leave-1, up-3)
+det(woman-6, the-5)
+prep_to(up-3, woman-6)
+aux(decide-8, to-7)
+infmod(woman-6, decide-8)
+

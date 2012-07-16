@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (JJ Gay) (NN marriage))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ legal))))
+    (. !)))
+
+amod(marriage-2, Gay-1)
+nsubj(legal-5, marriage-2)
+aux(legal-5, should-3)
+cop(legal-5, be-4)
+root(ROOT-0, legal-5)
+
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP
+          (NP (NNS couples))
+          (PP (IN out)
+            (NP (RB there)))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (ADVP (RB really))
+              (VP (VBP want)
+                (S
+                  (VP (TO to)
+                    (VP (VB adopt)
+                      (NP
+                        (NP (DT a) (NN child))
+                        (PP (IN in)
+                          (NP (NN need)))))))))))))
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (MD ca) (RB n't)))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, couples-3)
+nsubj(want-8, couples-3)
+prep(couples-3, out-4)
+pobj(out-4, there-5)
+advmod(want-8, really-7)
+rcmod(couples-3, want-8)
+aux(adopt-10, to-9)
+xcomp(want-8, adopt-10)
+det(child-12, a-11)
+dobj(adopt-10, child-12)
+prep_in(child-12, need-14)
+nsubj(ca-17, they-16)
+conj_but(are-2, ca-17)
+neg(ca-17, n't-18)
+

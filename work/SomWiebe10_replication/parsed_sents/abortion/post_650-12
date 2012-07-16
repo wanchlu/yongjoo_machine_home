@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ first) (NNS neurons))
+      (VP (VBP start)
+        (NP (NN firing))
+        (PP (IN at)
+          (NP
+            (QP (RB around) (CD 5))
+            (NNS months)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN brain))
+      (VP (VBZ is)
+        (ADVP (RB fully))
+        (VP (VBN developed)
+          (PP (IN at)
+            (NP (CD 7))))))
+    (. .)))
+
+det(neurons-3, The-1)
+amod(neurons-3, first-2)
+nsubj(start-4, neurons-3)
+root(ROOT-0, start-4)
+dobj(start-4, firing-5)
+quantmod(5-8, around-7)
+num(months-9, 5-8)
+prep_at(start-4, months-9)
+det(brain-13, the-12)
+nsubjpass(developed-16, brain-13)
+auxpass(developed-16, is-14)
+advmod(developed-16, fully-15)
+conj_and(start-4, developed-16)
+prep_at(developed-16, 7-18)
+
+(ROOT
+  (S (IN So)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP (DT a) (JJ valid) (JJ scientific) (NN alternative)))
+    (. .)))
+
+dep('s-3, So-1)
+expl('s-3, there-2)
+root(ROOT-0, 's-3)
+det(alternative-7, a-4)
+amod(alternative-7, valid-5)
+amod(alternative-7, scientific-6)
+nsubj('s-3, alternative-7)
+

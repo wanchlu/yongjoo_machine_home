@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (NP (NNP ID))
+    (VP (VBZ lacks)
+      (NP
+        (NP
+          (NP (DT any) (NN non))
+          (NP (JJ trivial) (JJ scientific) (NN contribution)))
+        (, ,) (`` ``) (RB Even)
+        (NP (DT the) (NN prediction)))
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (NN function))
+          (VP (MD would)
+            (VP (VB exist)
+              (PP (IN for)
+                (NP (DT a) (NN pseudo) (NN gene))))))))
+    (. ?)))
+
+nsubj(lacks-3, ID-2)
+root(ROOT-0, lacks-3)
+det(non-5, any-4)
+dobj(lacks-3, non-5)
+amod(contribution-8, trivial-6)
+amod(contribution-8, scientific-7)
+dep(non-5, contribution-8)
+advmod(non-5, Even-11)
+det(prediction-13, the-12)
+dep(non-5, prediction-13)
+complm(exist-18, that-14)
+det(function-16, a-15)
+nsubj(exist-18, function-16)
+aux(exist-18, would-17)
+ccomp(lacks-3, exist-18)
+det(gene-22, a-20)
+nn(gene-22, pseudo-21)
+prep_for(exist-18, gene-22)
+

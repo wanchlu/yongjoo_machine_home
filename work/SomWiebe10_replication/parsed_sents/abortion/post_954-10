@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (S
+        (SBAR
+          (WHADVP (WRB When))
+          (S
+            (NP (PRP He))
+            (VP (VBD died))))
+        (, ,)
+        (NP (PRP you))
+        (VP (VBD died)))
+      (CC and)
+      (S
+        (NP
+          (NP (DT the) (NNS charges))
+          (PP (IN against)
+            (NP (PRP you))))
+        (VP (VBP are)
+          (VP (VBN paid)
+            (PP (IN in)
+              (ADJP (JJ full)))))))
+    (, ,)
+    (NP (DT the) (NN debt))
+    (VP (VBZ is)
+      (VP (VBN canceled)))
+    (. .)))
+
+advmod(died-3, When-1)
+nsubj(died-3, He-2)
+advcl(died-6, died-3)
+nsubj(died-6, you-5)
+ccomp(canceled-20, died-6)
+det(charges-9, the-8)
+nsubjpass(paid-13, charges-9)
+prep_against(charges-9, you-11)
+auxpass(paid-13, are-12)
+conj_and(died-6, paid-13)
+ccomp(canceled-20, paid-13)
+prep_in(paid-13, full-15)
+det(debt-18, the-17)
+nsubjpass(canceled-20, debt-18)
+auxpass(canceled-20, is-19)
+root(ROOT-0, canceled-20)
+

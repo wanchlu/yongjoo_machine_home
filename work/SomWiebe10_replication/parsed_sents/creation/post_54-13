@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBD said))))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (JJ simple))
+        (CC and)
+        (ADJP (RB quite) (RB well) (VBN known)
+          (PP (IN in)
+            (NP (DT the) (NNP ID) (NN world))))))
+    (. .)))
+
+mark(said-3, As-1)
+nsubj(said-3, I-2)
+advcl(simple-7, said-3)
+nsubjpass(simple-7, this-5)
+nsubjpass(known-11, this-5)
+auxpass(simple-7, is-6)
+cop(simple-7, is-6)
+root(ROOT-0, simple-7)
+advmod(known-11, quite-9)
+advmod(known-11, well-10)
+conj_and(simple-7, known-11)
+det(world-15, the-13)
+nn(world-15, ID-14)
+prep_in(known-11, world-15)
+

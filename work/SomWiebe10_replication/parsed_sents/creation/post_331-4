@@ -1,0 +1,45 @@
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB explain)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP
+            (NP (DT the) (JJ Copernican) (NN principle))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (NNP Earth))
+                (PP (IN around)
+                  (NP (NN sun))))
+              (-RRB- -RRB-)))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB do)
+                  (PP (IN with)
+                    (NP (NN gravity))))))))))
+    (. ?)))
+
+aux(explain-3, Can-1)
+nsubj(explain-3, you-2)
+root(ROOT-0, explain-3)
+dep(has-13, what-4)
+det(principle-7, the-5)
+amod(principle-7, Copernican-6)
+nsubj(has-13, principle-7)
+xsubj(do-15, principle-7)
+dep(principle-7, Earth-9)
+prep_around(Earth-9, sun-11)
+ccomp(explain-3, has-13)
+aux(do-15, to-14)
+xcomp(has-13, do-15)
+prep_with(do-15, gravity-17)
+
+(ROOT
+  (FRAG
+    (NP (CD 2))
+    (. .)))
+
+root(ROOT-0, 2-1)
+

@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Winston) (NNP Churchill))
+      (ADVP (RB once))
+      (VP (VBD said) (: :) (`` ``)
+        (S
+          (NP (DT All) (JJ great) (NNS things))
+          (VP (VBP are)
+            (ADJP (JJ simple))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT many))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN expressed)
+            (PP (IN in)
+              (NP
+                (NP (JJ single) (NNS words))
+                (: :)
+                (NP (NN freedom) (, ,) (NN justice) (, ,) (NN honor) (, ,) (NN duty) (, ,) (NN mercy) (, ,) (NN hope))))))))
+    (. .)))
+
+nn(Churchill-2, Winston-1)
+nsubj(said-4, Churchill-2)
+advmod(said-4, once-3)
+root(ROOT-0, said-4)
+det(things-9, All-7)
+amod(things-9, great-8)
+nsubj(simple-11, things-9)
+cop(simple-11, are-10)
+ccomp(said-4, simple-11)
+nsubjpass(expressed-17, many-14)
+aux(expressed-17, can-15)
+auxpass(expressed-17, be-16)
+conj_and(said-4, expressed-17)
+amod(words-20, single-19)
+prep_in(expressed-17, words-20)
+nn(hope-32, freedom-22)
+dep(hope-32, justice-24)
+dep(hope-32, honor-26)
+dep(hope-32, duty-28)
+dep(hope-32, mercy-30)
+dep(words-20, hope-32)
+

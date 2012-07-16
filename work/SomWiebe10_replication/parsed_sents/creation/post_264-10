@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ works)
+      (PP (IN by)
+        (S
+          (VP
+            (VP (VBG making)
+              (NP (NN trade) (NNS offs)))
+            (, ,)
+            (VP (VBG destroying)
+              (NP (CD one) (NN thing))
+              (S
+                (VP (TO to)
+                  (VP (VB make)
+                    (NP (DT a) (RBR more)
+                      (ADJP (RB immediately) (JJ useful))
+                      (NN thing))))))))))
+    (. .)))
+
+nsubj(works-2, Evolution-1)
+root(ROOT-0, works-2)
+prepc_by(works-2, making-4)
+nn(offs-6, trade-5)
+dobj(making-4, offs-6)
+dep(making-4, destroying-8)
+num(thing-10, one-9)
+dobj(destroying-8, thing-10)
+aux(make-12, to-11)
+xcomp(destroying-8, make-12)
+det(thing-17, a-13)
+advmod(thing-17, more-14)
+advmod(useful-16, immediately-15)
+amod(thing-17, useful-16)
+dobj(make-12, thing-17)
+

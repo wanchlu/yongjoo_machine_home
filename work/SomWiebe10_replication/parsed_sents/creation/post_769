@@ -1,0 +1,91 @@
+(ROOT
+  (FRAG (`` ``)
+    (FRAG
+      (VP (VBN Are)
+        (NP (PRP they))
+        (NP (DT any)
+          (ADJP
+            (ADVP (RBR less))
+            (DT a))
+          ('' '') (NN Scientist))))
+    ('' '')
+    (SBAR (IN because)
+      (S
+        (NP (PRP they))
+        (VP (VBP use)
+          (S
+            (NP
+              (NP (NN science))
+              (CC and)
+              (NP (PRP$ their) (NN education)))
+            (VP (TO to)
+              (VP (VB prove)
+                (NP
+                  (NP (DT that))
+                  ('' '')
+                  (SBAR
+                    (S
+                      (NP (NNP Evolution))
+                      ('' '')
+                      (VP (VBZ is)
+                        (ADJP (JJ false))))))))))))
+    (. ?)))
+
+cop(they-3, Are-2)
+root(ROOT-0, they-3)
+det(Scientist-8, any-4)
+advmod(a-6, less-5)
+amod(Scientist-8, a-6)
+attr(they-3, Scientist-8)
+mark(use-12, because-10)
+nsubj(use-12, they-11)
+dep(they-3, use-12)
+nsubj(prove-18, science-13)
+poss(education-16, their-15)
+conj_and(science-13, education-16)
+nsubj(prove-18, education-16)
+aux(prove-18, to-17)
+xcomp(use-12, prove-18)
+dobj(prove-18, that-19)
+nsubj(false-24, Evolution-21)
+cop(false-24, is-23)
+rcmod(that-19, false-24)
+
+(ROOT
+  (S (`` ``)
+    (NP (PRP They))
+    (VP (VBP are) (RB not)
+      (NP (NNS scientists))
+      (SBAR (IN because)
+        (S
+          (NP (PRP$ their) (`` ``) (NN evidence) ('' ''))
+          (VP (VBZ is)
+            (ADJP (JJ false))))))
+    (. .)))
+
+nsubj(scientists-5, They-2)
+cop(scientists-5, are-3)
+neg(scientists-5, not-4)
+root(ROOT-0, scientists-5)
+mark(false-12, because-6)
+poss(evidence-9, their-7)
+nsubj(false-12, evidence-9)
+cop(false-12, is-11)
+advcl(scientists-5, false-12)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB just))
+    (VP (VBP make)
+      (PRT (RP up))
+      (NP (JJ silly) (NN nonsense)))
+    (. .)))
+
+nsubj(make-3, They-1)
+advmod(make-3, just-2)
+root(ROOT-0, make-3)
+prt(make-3, up-4)
+amod(nonsense-6, silly-5)
+dobj(make-3, nonsense-6)
+

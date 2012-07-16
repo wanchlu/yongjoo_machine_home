@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (INTJ (UH Oh))
+      (NP (EX there))
+      (VP (VBZ 's)
+        (NP (JJ lip) (NN service))))
+    (: ...)
+    (CC but)
+    (S
+      (ADVP (RB then))
+      (, ,)
+      (NP
+        (NP (JJS most) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP claim)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP (NNP Christian)))))))))
+      (VP
+        (VP (VBP do)
+          (ADJP (JJ little)))
+        (CC but)
+        (VP (VBP go)
+          (PP (TO to)
+            (NP (NN church))))))
+    (. .)))
+
+dep('s-3, Oh-1)
+expl('s-3, there-2)
+root(ROOT-0, 's-3)
+amod(service-5, lip-4)
+nsubj('s-3, service-5)
+advmod(little-18, then-8)
+amod(people-11, most-10)
+nsubj(claim-13, people-11)
+nsubj(little-18, people-11)
+nsubj(go-20, people-11)
+rcmod(people-11, claim-13)
+aux(Christian-16, to-14)
+cop(Christian-16, be-15)
+xcomp(claim-13, Christian-16)
+dep(little-18, do-17)
+conj_but('s-3, little-18)
+conj_but('s-3, go-20)
+conj_but(little-18, go-20)
+prep_to(go-20, church-22)
+

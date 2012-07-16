@@ -1,0 +1,124 @@
+(ROOT
+  (S
+    (NP (NNP Lenski))
+    (VP (VBN published)
+      (PP (IN without)
+        (S
+          (VP (VBG having)
+            (VP (VBN identified)
+              (NP (DT the) (JJ exact) (JJ prior) (NN mutation))))))
+      (, ,)
+      (PP
+        (ADVP (RB simply))
+        (IN because) (IN of)
+        (SBAR
+          (WHADJP (WRB how) (JJ exciting))
+          (S
+            (NP (DT this) (NN result))
+            (VP (VBZ is))))))
+    (. .)))
+
+nsubj(published-2, Lenski-1)
+root(ROOT-0, published-2)
+aux(identified-5, having-4)
+prepc_without(published-2, identified-5)
+det(mutation-9, the-6)
+amod(mutation-9, exact-7)
+amod(mutation-9, prior-8)
+dobj(identified-5, mutation-9)
+advmod(published-2, simply-11)
+advmod(exciting-15, how-14)
+dep(is-18, exciting-15)
+det(result-17, this-16)
+nsubj(is-18, result-17)
+prepc_because_of(published-2, is-18)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Let)
+        (S
+          (NP (PRP me))
+          (VP (VB make)
+            (S
+              (NP (DT this))
+              (ADJP (RB perfectly) (JJ clear)))))
+        (, ,)
+        (SBAR (IN in) (NN case)
+          (S
+            (NP (PRP you))
+            (VP (VBP do) (RB n't)
+              (VP (VB want)
+                (S
+                  (VP (TO to)
+                    (VP (VB read)
+                      (NP
+                        (NP (NNP Lenski) (POS 's))
+                        (NN paper))))))))))
+      (: :)
+      (NP
+        (NP (DT The) (NN evolution))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP Cit) (NNP +) (NN e.) (NNS coli))
+            (VP (VBN required)
+              (NP
+                (NP
+                  (QP (CD one)
+                    (CC or)
+                    (JJR more))
+                  (NNS mutations))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD may) (RB not)
+                      (VP (VB have)
+                        (VP (VBN affected)
+                          (NP
+                            (NP (DT the) (NN survivability))
+                            (PP (IN of)
+                              (NP (DT the) (NN e.) (NNS coli) (NN population)))))))))))))))
+    (. .)))
+
+root(ROOT-0, Let-1)
+nsubj(make-3, me-2)
+ccomp(Let-1, make-3)
+nsubj(clear-6, this-4)
+advmod(clear-6, perfectly-5)
+xcomp(make-3, clear-6)
+mark(want-13, in-8)
+dep(want-13, case-9)
+nsubj(want-13, you-10)
+xsubj(read-15, you-10)
+aux(want-13, do-11)
+neg(want-13, n't-12)
+advcl(Let-1, want-13)
+aux(read-15, to-14)
+xcomp(want-13, read-15)
+poss(paper-18, Lenski-16)
+dobj(read-15, paper-18)
+det(evolution-21, The-20)
+dobj(Let-1, evolution-21)
+det(coli-27, the-23)
+nn(coli-27, Cit-24)
+nn(coli-27, +-25)
+nn(coli-27, e.-26)
+prep_of(evolution-21, coli-27)
+partmod(coli-27, required-28)
+num(mutations-32, one-29)
+conj_or(one-29, more-31)
+quantmod(one-29, more-31)
+num(mutations-32, more-31)
+dobj(required-28, mutations-32)
+nsubj(affected-37, mutations-32)
+aux(affected-37, may-34)
+neg(affected-37, not-35)
+aux(affected-37, have-36)
+rcmod(mutations-32, affected-37)
+det(survivability-39, the-38)
+dobj(affected-37, survivability-39)
+det(population-44, the-41)
+nn(population-44, e.-42)
+nn(population-44, coli-43)
+prep_of(survivability-39, population-44)
+

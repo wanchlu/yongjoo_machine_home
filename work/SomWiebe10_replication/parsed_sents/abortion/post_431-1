@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (MD should)
+              (VP (VB be)
+                (NP
+                  (NP (DT a) (JJ legitimate) (NN reason))
+                  (PP (JJ such) (IN as)
+                    (NP
+                      (PRN (, ,)
+                        (NP
+                          (NP (NN family) (NN rape))
+                          (, ,)
+                          (NP (NN rape)))
+                        (, ,))
+                      (JJ medical) (NN vulnerability))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT a) (NN person))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP
+              (VP (VBZ is)
+                (ADJP (JJ willing)))
+              (CC and)
+              (VP (VBP get))))))
+      (VP (VBZ 's)
+        (ADJP (JJ pregnant)
+          (SBAR
+            (S
+              (VP (MD should) (RB not)
+                (VP (VB have)
+                  (NP (DT the) (NN choice))
+                  (SBAR (IN if)
+                    (S
+                      (S
+                        (NP (DT the) (NN baby))
+                        (VP (MD will)
+                          (VP (VB be)
+                            (ADJP (JJ healthy)))))
+                      (CC and)
+                      (S
+                        (NP (DT the) (NN mother))
+                        (VP (MD will)
+                          (VP (VB survive)))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(reason-9, that-3)
+expl(reason-9, there-4)
+aux(reason-9, should-5)
+cop(reason-9, be-6)
+det(reason-9, a-7)
+amod(reason-9, legitimate-8)
+ccomp(think-2, reason-9)
+nn(rape-14, family-13)
+dep(vulnerability-19, rape-14)
+appos(rape-14, rape-16)
+amod(vulnerability-19, medical-18)
+prep_such_as(reason-9, vulnerability-19)
+det(person-23, a-22)
+nsubj(willing-26, person-23)
+nsubj(get-28, person-23)
+nsubj(pregnant-30, person-23)
+cop(willing-26, is-25)
+rcmod(person-23, willing-26)
+rcmod(person-23, get-28)
+conj_and(willing-26, get-28)
+cop(pregnant-30, 's-29)
+conj_but(think-2, pregnant-30)
+aux(have-33, should-31)
+neg(have-33, not-32)
+dep(pregnant-30, have-33)
+det(choice-35, the-34)
+dobj(have-33, choice-35)
+mark(healthy-41, if-36)
+det(baby-38, the-37)
+nsubj(healthy-41, baby-38)
+aux(healthy-41, will-39)
+cop(healthy-41, be-40)
+advcl(have-33, healthy-41)
+det(mother-44, the-43)
+nsubj(survive-46, mother-44)
+aux(survive-46, will-45)
+advcl(have-33, survive-46)
+conj_and(healthy-41, survive-46)
+

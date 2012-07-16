@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (NNP Carl) (NNP Sagan))
+    (VP (VBZ s)
+      (NP
+        (NP (NN book))
+        (SBAR
+          (S
+            (NP
+              (NP (DT The) (NNPS Dragons))
+              (PP (IN of)
+                (NP (NNP Eden))))
+            (VP (VBZ argues)
+              (ADJP (RB very) (JJ convincingly))
+              (SBAR (IN that)
+                (S
+                  (NP (WDT what))
+                  (VP (VBZ separates)
+                    (SBAR
+                      (S
+                        (NP
+                          (NP (JJ human) (NN life))
+                          (CC and)
+                          (NP (JJ other) (NN nonhuman) (NN life)))
+                        (VP (VBZ is)
+                          (NP
+                            (NP (DT the) (NN development)
+                              (CC and)
+                              (VBG functioning))
+                            (PP (IN of)
+                              (NP (DT the) (NN neocortex)))))))))))))))
+    (. .)))
+
+nn(Sagan-2, Carl-1)
+nsubj(book-4, Sagan-2)
+cop(book-4, s-3)
+root(ROOT-0, book-4)
+det(Dragons-6, The-5)
+nsubj(argues-9, Dragons-6)
+prep_of(Dragons-6, Eden-8)
+rcmod(book-4, argues-9)
+advmod(convincingly-11, very-10)
+acomp(argues-9, convincingly-11)
+complm(separates-14, that-12)
+nsubj(separates-14, what-13)
+ccomp(argues-9, separates-14)
+amod(life-16, human-15)
+nsubj(development-23, life-16)
+nsubj(functioning-25, life-16)
+amod(life-20, other-18)
+nn(life-20, nonhuman-19)
+conj_and(life-16, life-20)
+nsubj(development-23, life-20)
+cop(development-23, is-21)
+det(development-23, the-22)
+ccomp(separates-14, development-23)
+ccomp(separates-14, functioning-25)
+conj_and(development-23, functioning-25)
+det(neocortex-28, the-27)
+prep_of(development-23, neocortex-28)
+

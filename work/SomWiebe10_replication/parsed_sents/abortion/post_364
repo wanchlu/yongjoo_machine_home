@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS eggs))
+        (VP (VBD were)
+          (NP
+            (NP (NNS chickens))
+            (SBAR
+              (S
+                (VP (MD would) (RB n't))))))))
+    (NP (PRP they))
+    (VP (VBP sell)
+      (NP (PRP them))
+      (PP (IN by)
+        (NP (DT the) (NN pound))))
+    (. ?)))
+
+mark(chickens-4, If-1)
+nsubj(chickens-4, eggs-2)
+cop(chickens-4, were-3)
+advcl(sell-8, chickens-4)
+rcmod(chickens-4, would-5)
+neg(would-5, n't-6)
+nsubj(sell-8, they-7)
+root(ROOT-0, sell-8)
+dobj(sell-8, them-9)
+det(pound-12, the-11)
+prep_by(sell-8, pound-12)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT an) (NN acorn))
+    (NP (DT an) (NN oak) (NN tree))
+    (. ?)))
+
+cop(tree-6, Is-1)
+det(acorn-3, an-2)
+nsubj(tree-6, acorn-3)
+det(tree-6, an-4)
+nn(tree-6, oak-5)
+root(ROOT-0, tree-6)
+

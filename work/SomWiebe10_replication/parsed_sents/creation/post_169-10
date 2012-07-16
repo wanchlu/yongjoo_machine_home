@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBD offered)
+          (NP (PRP me))
+          (NP
+            (NP (NN anything))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (MD could)
+                  (ADVP (RB actually))
+                  (VP (VB evaluate)
+                    (ADVP (RB experimentally))))))))))
+    (, ,)
+    (S
+      (ADVP (RB just))
+      (VP (VBN hinted)
+        (PP (IN at)
+          (NP
+            (NP (DT some) (JJ new) (JJ interesting) (NN avenue))
+            (PP (IN of)
+              (NP (NN research)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RB immediately) (JJ interested))))
+    (. .)))
+
+mark(offered-3, If-1)
+nsubj(offered-3, ID-2)
+advcl(interested-26, offered-3)
+iobj(offered-3, me-4)
+dobj(offered-3, anything-5)
+dobj(evaluate-9, anything-5)
+nsubj(evaluate-9, I-6)
+aux(evaluate-9, could-7)
+advmod(evaluate-9, actually-8)
+rcmod(anything-5, evaluate-9)
+advmod(evaluate-9, experimentally-10)
+advmod(hinted-13, just-12)
+partmod(interested-26, hinted-13)
+det(avenue-18, some-15)
+amod(avenue-18, new-16)
+amod(avenue-18, interesting-17)
+prep_at(hinted-13, avenue-18)
+prep_of(avenue-18, research-20)
+nsubj(interested-26, I-22)
+aux(interested-26, would-23)
+cop(interested-26, be-24)
+advmod(interested-26, immediately-25)
+root(ROOT-0, interested-26)
+

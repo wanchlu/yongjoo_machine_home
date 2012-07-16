@@ -1,0 +1,127 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ is)
+      (ADJP (JJ correct)))
+    (. .)))
+
+nsubj(correct-3, Evolution-1)
+cop(correct-3, is-2)
+root(ROOT-0, correct-3)
+
+(ROOT
+  (S (CC And)
+    (NP
+      (NP (DT any) (NNP Christian))
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB claim)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is) (RB not)))))))))
+    (, ,)
+    (VP
+      (ADVP (RB invariably))
+      (VBZ bases)
+      (NP (PRP$ their) (NNS arguments))
+      (PP (IN on)
+        (NP
+          (NP (DT a) (JJ single) (NN book))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can) (RB not)
+                (VP (VB be)
+                  (VP (VBN verified)))))))))
+    (. .)))
+
+cc(bases-13, And-1)
+det(Christian-3, any-2)
+xsubj(claim-6, Christian-3)
+nsubj(bases-13, Christian-3)
+partmod(Christian-3, trying-4)
+aux(claim-6, to-5)
+xcomp(trying-4, claim-6)
+complm(is-9, that-7)
+nsubj(is-9, it-8)
+ccomp(claim-6, is-9)
+neg(is-9, not-10)
+advmod(bases-13, invariably-12)
+root(ROOT-0, bases-13)
+poss(arguments-15, their-14)
+dobj(bases-13, arguments-15)
+det(book-19, a-17)
+amod(book-19, single-18)
+prep_on(bases-13, book-19)
+nsubjpass(verified-24, book-19)
+aux(verified-24, can-21)
+neg(verified-24, not-22)
+auxpass(verified-24, be-23)
+rcmod(book-19, verified-24)
+
+(ROOT
+  (S
+    (FRAG
+      (VP
+        (VP (VB \/) (-RRB- -RRB-)
+          (NP (NNS \/))
+          (-RRB- -RRB-))
+        (SBAR (CC And)
+          (S
+            (PP (IN of)
+              (NP
+                (NP (NN course))
+                (`` ``)
+                (NP (DT some))
+                ('' '')))
+            (NP (NNS scientists))
+            (VP (VBP claim)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP Evolution))
+                  (VP (VBZ is)
+                    (ADJP (JJ incorrect))))))))))
+    (, ,)
+    (S (CC but)
+      (ADVP (RB then) (RB again))
+      (NP (DT some) (NNS people))
+      (VP (VBP claim)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB talk)
+                      (PP (TO to)
+                        (NP (DT the) (NN dead))))))))))))
+    (. .)))
+
+dep(claim-23, \/-1)
+dobj(\/-1, \/-3)
+cc(claim-12, And-5)
+prep_of(claim-12, course-7)
+dep(course-7, some-9)
+nsubj(claim-12, scientists-11)
+ccomp(\/-1, claim-12)
+complm(incorrect-16, that-13)
+nsubj(incorrect-16, Evolution-14)
+cop(incorrect-16, is-15)
+ccomp(claim-12, incorrect-16)
+cc(claim-23, but-18)
+advmod(again-20, then-19)
+advmod(claim-23, again-20)
+det(people-22, some-21)
+nsubj(claim-23, people-22)
+xsubj(able-26, people-22)
+root(ROOT-0, claim-23)
+aux(able-26, to-24)
+cop(able-26, be-25)
+xcomp(claim-23, able-26)
+aux(talk-28, to-27)
+xcomp(able-26, talk-28)
+det(dead-31, the-30)
+prep_to(talk-28, dead-31)
+

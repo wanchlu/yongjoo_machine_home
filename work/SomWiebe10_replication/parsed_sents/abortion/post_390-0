@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNP Sylvia))
+    (, ,) (RB So)
+    (VP (VBP are)
+      (S
+        (NP (PRP you))
+        (VP (VBG suggesting)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (NNS cats))
+                (, ,)
+                (NP (NNS rats))
+                (, ,)
+                (NP (NNS birds))
+                (CC and)
+                (NP (NNS dolphins)))
+              (VP (VBP do) (RB not)
+                (VP (VB think))))))))
+    (. ?)))
+
+nsubj(are-4, Sylvia-1)
+advmod(are-4, So-3)
+root(ROOT-0, are-4)
+nsubj(suggesting-6, you-5)
+dep(are-4, suggesting-6)
+complm(think-17, that-7)
+nsubj(think-17, cats-8)
+conj_and(cats-8, rats-10)
+nsubj(think-17, rats-10)
+conj_and(cats-8, birds-12)
+nsubj(think-17, birds-12)
+conj_and(cats-8, dolphins-14)
+nsubj(think-17, dolphins-14)
+aux(think-17, do-15)
+neg(think-17, not-16)
+ccomp(suggesting-6, think-17)
+

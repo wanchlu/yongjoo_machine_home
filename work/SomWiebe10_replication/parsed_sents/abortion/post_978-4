@@ -1,0 +1,46 @@
+(ROOT
+  (SBARQ
+    (S
+      (VP (VB Let)
+        (S
+          (NP (PRP me))
+          (VP (VB ask)
+            (NP (PRP you))))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBD did)
+      (NP (NNP Jesus))
+      (VP (VB believe)
+        (PP (IN about)
+          (NP (NNS abortions)))
+        (, ,)
+        (SBAR (IN since)
+          (S
+            (NP (PRP you))
+            (VP (VBP feel)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP$ my) (NN interpretation))
+                  (VP (VBZ is) (RB not)
+                    (ADJP (JJ right))))))))))
+    (. ?)))
+
+dep(believe-9, Let-1)
+nsubj(ask-3, me-2)
+ccomp(Let-1, ask-3)
+dobj(ask-3, you-4)
+dobj(believe-9, what-6)
+aux(believe-9, did-7)
+nsubj(believe-9, Jesus-8)
+root(ROOT-0, believe-9)
+prep_about(believe-9, abortions-11)
+mark(feel-15, since-13)
+nsubj(feel-15, you-14)
+advcl(believe-9, feel-15)
+complm(right-21, that-16)
+poss(interpretation-18, my-17)
+nsubj(right-21, interpretation-18)
+cop(right-21, is-19)
+neg(right-21, not-20)
+ccomp(feel-15, right-21)
+

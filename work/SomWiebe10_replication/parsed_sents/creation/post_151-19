@@ -1,0 +1,54 @@
+(ROOT
+  (S ('' '')
+    (S
+      (FRAG
+        (WHADVP (WRB How))
+        (PP (IN on)))
+      (NP (NN earth))
+      (VP (VBZ is)
+        (NP (DT the) (NN fact))))
+    (IN that)
+    (S
+      (NP (PRP we))
+      (VP (VBP need) (RB not)
+        (VP (VB know)
+          (NP (DT the) (NN designer)
+            (S
+              (VP (TO to)
+                (VP (VB identify)
+                  (VP (VB design)
+                    (NP
+                      (NP (DT an) (NN argument))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ floats)
+                            (PP (IN without)
+                              (NP (NN reference)))
+                            (PP (TO to)
+                              (NP (NN reality)))))))))))))))
+    (. ?)))
+
+dep(fact-7, How-2)
+dep(How-2, on-3)
+nsubj(fact-7, earth-4)
+cop(fact-7, is-5)
+det(fact-7, the-6)
+root(ROOT-0, fact-7)
+dep(fact-7, that-8)
+nsubj(need-10, we-9)
+ccomp(fact-7, need-10)
+neg(need-10, not-11)
+dep(need-10, know-12)
+det(designer-14, the-13)
+dobj(know-12, designer-14)
+aux(identify-16, to-15)
+infmod(designer-14, identify-16)
+xcomp(identify-16, design-17)
+det(argument-19, an-18)
+dobj(design-17, argument-19)
+nsubj(floats-21, argument-19)
+rcmod(argument-19, floats-21)
+prep_without(floats-21, reference-23)
+prep_to(floats-21, reality-25)
+

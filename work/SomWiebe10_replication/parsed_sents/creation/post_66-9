@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (PRP us))
+      (ADVP (RB either))
+      (SBAR
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NNP ID))
+            (VP (VBZ explains)
+              (NP (NNP UcD)))))
+        (CC or)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NN mutation) (NNS rates))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP (RB too) (JJ high)
+                      (PP (IN for)
+                        (NP (NNP UcD))))))))))))
+    (. .)))
+
+root(ROOT-0, Show-1)
+dobj(Show-1, us-2)
+advmod(Show-1, either-3)
+advmod(explains-6, how-4)
+nsubj(explains-6, ID-5)
+dep(Show-1, explains-6)
+dobj(explains-6, UcD-7)
+advmod(need-12, how-9)
+nn(rates-11, mutation-10)
+nsubj(need-12, rates-11)
+xsubj(high-16, rates-11)
+dep(Show-1, need-12)
+conj_or(explains-6, need-12)
+aux(high-16, to-13)
+cop(high-16, be-14)
+advmod(high-16, too-15)
+xcomp(need-12, high-16)
+prep_for(high-16, UcD-18)
+
+(ROOT
+  (S
+    (VP (VB Surprise)
+      (NP (PRP us))
+      (PP (IN with)
+        (NP (DT some) (JJ real) (NN science))))
+    (. .)))
+
+root(ROOT-0, Surprise-1)
+dobj(Surprise-1, us-2)
+det(science-6, some-4)
+amod(science-6, real-5)
+prep_with(Surprise-1, science-6)
+

@@ -1,0 +1,436 @@
+(ROOT
+  (NP (: --)
+    (NP (NNP Jim))
+    (: --)
+    (NP (CD 3))
+    (. .)))
+
+root(ROOT-0, Jim-2)
+dep(Jim-2, 3-4)
+
+(ROOT
+  (S
+    (NP (NNP Design))
+    (VP (VBZ fails)
+      (S
+        (VP (TO to)
+          (VP (VB place)
+            (NP (NN design))
+            (PP (IN at)
+              (NP (NN risk)))))))
+    (. .)))
+
+nsubj(fails-2, Design-1)
+xsubj(place-4, Design-1)
+root(ROOT-0, fails-2)
+aux(place-4, to-3)
+xcomp(fails-2, place-4)
+dobj(place-4, design-5)
+prep_at(place-4, risk-7)
+
+(ROOT
+  (FRAG
+    (SBAR (IN Unless)
+      (S
+        (NP (PRP we))
+        (VP (VB define) (`` ``)
+          (NP (NN design))
+          ('' '')
+          (PP (IN as) (`` ``)
+            (NP
+              (NP (DT that))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (PRP we))
+                  (VP (VBP do) (RB not)
+                    (ADVP (RB yet))
+                    (VP (VB understand))))))
+            ('' '')))))
+    (. .)))
+
+mark(define-3, Unless-1)
+nsubj(define-3, we-2)
+root(ROOT-0, define-3)
+dobj(define-3, design-5)
+prep_as(define-3, that-9)
+dobj(understand-15, that-9)
+rel(understand-15, which-10)
+nsubj(understand-15, we-11)
+aux(understand-15, do-12)
+neg(understand-15, not-13)
+advmod(understand-15, yet-14)
+rcmod(that-9, understand-15)
+
+(ROOT
+  (SQ (CC But)
+    (FRAG
+      (WHADVP (WRB why))
+      (VP (VB call)
+        (S
+          (NP (PRP it))
+          (VP (VB design)
+            (ADVP (RB then))))))
+    (. ?)))
+
+root(ROOT-0, But-1)
+dep(call-3, why-2)
+dep(But-1, call-3)
+nsubj(design-5, it-4)
+ccomp(call-3, design-5)
+advmod(design-5, then-6)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (RB partially) (JJ true)))
+    (. .)))
+
+nsubj(true-4, This-1)
+cop(true-4, is-2)
+advmod(true-4, partially-3)
+root(ROOT-0, true-4)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (CC and)
+      (WHADVP (WRB when))
+      (S
+        (NP (DT the) (NNS arguments))
+        (VP (VBP are)
+          (VP (VBN answered) (, ,)
+            (PP (JJ such) (IN as)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (NNP DNA))
+                  (VP (VBD evolved)))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN flagellum))
+      (, ,)
+      (X (NN etc.)))
+    (, ,)
+    (ADVP (RB then))
+    (NP (DT the) (NNP ID) (NN argument))
+    (VP (VBZ becomes)
+      (S
+        (ADJP (JJR weaker)
+          (CC and)
+          (JJR weaker)))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (PRP it))
+          (VP (MD should)))))
+    (. .)))
+
+mark(answered-7, If-1)
+advmod(answered-7, when-3)
+conj_and(answered-7, when-3)
+advcl(becomes-24, when-3)
+det(arguments-5, the-4)
+nsubjpass(answered-7, arguments-5)
+auxpass(answered-7, are-6)
+advcl(becomes-24, answered-7)
+advmod(evolved-13, how-11)
+nsubj(evolved-13, DNA-12)
+prepc_such_as(answered-7, evolved-13)
+det(flagellum-16, the-15)
+nsubj(becomes-24, flagellum-16)
+dep(flagellum-16, etc.-18)
+advmod(becomes-24, then-20)
+det(argument-23, the-21)
+nn(argument-23, ID-22)
+nsubj(becomes-24, argument-23)
+root(ROOT-0, becomes-24)
+acomp(becomes-24, weaker-25)
+acomp(becomes-24, weaker-27)
+conj_and(weaker-25, weaker-27)
+mark(should-31, as-29)
+nsubj(should-31, it-30)
+advcl(becomes-24, should-31)
+
+(ROOT
+  (S
+    (NP (DT The) (NN reverse))
+    (VP (MD should)
+      (ADVP (RB also))
+      (VP (VB be)
+        (ADJP (JJ true))))
+    (. .)))
+
+det(reverse-2, The-1)
+nsubj(true-6, reverse-2)
+aux(true-6, should-3)
+advmod(true-6, also-4)
+cop(true-6, be-5)
+root(ROOT-0, true-6)
+
+(ROOT
+  (S
+    (PP (IN Until)
+      (NP (DT that) (NN time)))
+    (NP
+      (NP (JJ many))
+      (PP (IN of)
+        (NP (PRP it))))
+    (VP (VBZ s)
+      (NP
+        (NP (NNS arguments))
+        (SBAR
+          (S
+            (VP (VBP seem)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP
+                      (NP (DT the)
+                        (ADJP (RBS most) (JJ reasonable))
+                        (NN inference))
+                      (VP (VBN based)
+                        (PP (IN on)
+                          (NP (DT the) (NN evidence)))
+                        (SBAR (IN as)
+                          (S
+                            (NP (PRP we))
+                            (VP (VBP understand)
+                              (NP (PRP it))
+                              (NP (NN today)))))))))))))))
+    (. .)))
+
+det(time-3, that-2)
+prep_until(arguments-8, time-3)
+nsubj(arguments-8, many-4)
+prep_of(many-4, it-6)
+cop(arguments-8, s-7)
+root(ROOT-0, arguments-8)
+rcmod(arguments-8, seem-9)
+aux(inference-15, to-10)
+cop(inference-15, be-11)
+det(inference-15, the-12)
+advmod(reasonable-14, most-13)
+amod(inference-15, reasonable-14)
+xcomp(seem-9, inference-15)
+partmod(inference-15, based-16)
+det(evidence-19, the-18)
+prep_on(based-16, evidence-19)
+mark(understand-22, as-20)
+nsubj(understand-22, we-21)
+advcl(based-16, understand-22)
+dobj(understand-22, it-23)
+tmod(understand-22, today-24)
+
+(ROOT
+  (S
+    (S (CC But)
+      (NP (NNP ID))
+      (VP (VBZ does) (RB not)
+        (VP (VB explain)
+          (NP (NN anything)))))
+    (, ,)
+    (NP (PRP it))
+    (ADVP (RB merely))
+    (VP (VBZ states)
+      (VP (`` ``) (VBN designed) ('' '')
+        (PP (IN without)
+          (NP (NN anything) (RB else)))))
+    (. .)))
+
+cc(explain-5, But-1)
+nsubj(explain-5, ID-2)
+aux(explain-5, does-3)
+neg(explain-5, not-4)
+ccomp(states-10, explain-5)
+dobj(explain-5, anything-6)
+nsubj(states-10, it-8)
+advmod(states-10, merely-9)
+root(ROOT-0, states-10)
+dep(states-10, designed-12)
+prep_without(designed-12, anything-15)
+advmod(anything-15, else-16)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (SBAR (IN as)
+      (S
+        (NP (NNP Dembski))
+        (VP (VBZ has)
+          (VP (VBN argued)))))
+    (, ,)
+    (NP (NN design))
+    (VP (VBZ does) (RB not)
+      (ADVP (RB necessarily))
+      (VP (VB necessitate)
+        (NP (DT an) (JJ intelligent) (NN designer))))
+    (. .)))
+
+prep_in(necessitate-13, fact-2)
+mark(argued-7, as-4)
+nsubj(argued-7, Dembski-5)
+aux(argued-7, has-6)
+advcl(necessitate-13, argued-7)
+nsubj(necessitate-13, design-9)
+aux(necessitate-13, does-10)
+neg(necessitate-13, not-11)
+advmod(necessitate-13, necessarily-12)
+root(ROOT-0, necessitate-13)
+det(designer-16, an-14)
+amod(designer-16, intelligent-15)
+dobj(necessitate-13, designer-16)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP
+        (NP (NNP ID) (POS 's))
+        (NN argument))
+      (VP (VB become)
+        (S
+          (NP (DT any))
+          (ADJP (JJR weaker))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (MD can) (RB not)
+                (ADVP (RB even))
+                (VP (VB compete)
+                  (SBAR (IN with) (`` ``)
+                    (S
+                      (NP (PRP we))
+                      (VP (VBP do) (RB n't)
+                        (VP (VB know) ('' '')
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ is)
+                                (NP
+                                  (NP (DT a)
+                                    (ADJP (RB far) (JJR more))
+                                    (JJ scientific) (NN default) (NN position))
+                                  (SBAR
+                                    (WHADVP (WRB when))
+                                    (S
+                                      (NP (PRP$ our) (NN ignorance))
+                                      (VP (VBZ does) (RB not)
+                                        (VP (VB allow)
+                                          (S
+                                            (NP (PRP us))
+                                            (VP (TO to)
+                                              (VP (VB propose)
+                                                (NP (NN anything) (JJ relevant))
+                                                (ADVP (RB yet))))))))))))))))))))))))
+    (. .)))
+
+advmod(become-6, How-1)
+aux(become-6, can-2)
+poss(argument-5, ID-3)
+nsubj(become-6, argument-5)
+root(ROOT-0, become-6)
+nsubj(compete-14, any-7)
+dep(compete-14, weaker-8)
+advmod(compete-14, when-9)
+nsubj(compete-14, it-10)
+aux(compete-14, can-11)
+neg(compete-14, not-12)
+advmod(compete-14, even-13)
+xcomp(become-6, compete-14)
+mark(know-20, with-15)
+nsubj(know-20, we-17)
+aux(know-20, do-18)
+neg(know-20, n't-19)
+advcl(compete-14, know-20)
+nsubj(position-29, which-22)
+cop(position-29, is-23)
+det(position-29, a-24)
+advmod(more-26, far-25)
+amod(position-29, more-26)
+amod(position-29, scientific-27)
+nn(position-29, default-28)
+ccomp(know-20, position-29)
+tmod(allow-35, position-29)
+advmod(allow-35, when-30)
+poss(ignorance-32, our-31)
+nsubj(allow-35, ignorance-32)
+aux(allow-35, does-33)
+neg(allow-35, not-34)
+dep(position-29, allow-35)
+nsubj(propose-38, us-36)
+aux(propose-38, to-37)
+xcomp(allow-35, propose-38)
+dobj(propose-38, anything-39)
+amod(anything-39, relevant-40)
+advmod(propose-38, yet-41)
+
+(ROOT
+  (S
+    (ADVP (RB Furthermore))
+    (, ,)
+    (PP (IN unlike)
+      (NP (NN science)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN way))
+        (SBAR
+          (S
+            (S
+              (NP
+                (NP (NNP ID) (POS 's))
+                (NN position))
+              (VP (MD could)
+                (VP (VB be)
+                  (VP (VBN strengthened)
+                    (PP (IN as)
+                      (NP (NN ignorance)))))))
+            (CC nor)
+            (S
+              (NP
+                (NP (DT the) (NN absence))
+                (PP (IN of)
+                  (NP (DT an) (JJ evolutionary) (NN explanation))))
+              (VP (MD can)
+                (VP (VB be)
+                  (VP (VBN taken)
+                    (PP (IN as)
+                      (NP (NN evidence)))
+                    (PP (IN in)
+                      (NP
+                        (NP (NN favor))
+                        (PP (IN of)
+                          (NP (`` ``) (NN design) ('' '')))))))))))))
+    (. .)))
+
+advmod(is-7, Furthermore-1)
+prep_unlike(is-7, science-4)
+expl(is-7, there-6)
+root(ROOT-0, is-7)
+det(way-9, no-8)
+nsubj(is-7, way-9)
+poss(position-12, ID-10)
+nsubjpass(strengthened-15, position-12)
+aux(strengthened-15, could-13)
+auxpass(strengthened-15, be-14)
+rcmod(way-9, strengthened-15)
+prep_as(strengthened-15, ignorance-17)
+det(absence-20, the-19)
+nsubjpass(taken-27, absence-20)
+det(explanation-24, an-22)
+amod(explanation-24, evolutionary-23)
+prep_of(absence-20, explanation-24)
+aux(taken-27, can-25)
+auxpass(taken-27, be-26)
+rcmod(way-9, taken-27)
+conj_nor(strengthened-15, taken-27)
+prep_as(taken-27, evidence-29)
+prep_in(taken-27, favor-31)
+prep_of(favor-31, design-34)
+

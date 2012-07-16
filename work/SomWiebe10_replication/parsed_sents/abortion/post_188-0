@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (SBAR (IN Once)
+      (S
+        (NP (PRP they))
+        (VP (VBP take)
+          (NP
+            (NP (DT the) (NN booth))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (NP (PRP they))
+                (VP (VB vote)
+                  (PP (IN for)))))))))
+    (VP (VBZ is)
+      (VP (VBN supposed)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ secret)))))))
+    (. .)))
+
+mark(take-3, Once-1)
+nsubj(take-3, they-2)
+csubjpass(supposed-11, take-3)
+det(booth-5, the-4)
+dobj(take-3, booth-5)
+rel(vote-8, who-6)
+nsubj(vote-8, they-7)
+rcmod(booth-5, vote-8)
+prep(vote-8, for-9)
+auxpass(supposed-11, is-10)
+root(ROOT-0, supposed-11)
+aux(secret-14, to-12)
+cop(secret-14, be-13)
+xcomp(supposed-11, secret-14)
+

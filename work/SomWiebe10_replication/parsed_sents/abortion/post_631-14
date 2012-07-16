@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN ability))
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (JJ cardiac) (NNS myocytes))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (DT the) (NNS cells))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP comprise)
+                      (NP (DT the) (NN myocardium))))))
+              (-RRB- -RRB-)))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB beat))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ intrinsic) (NN property))
+        (PP (IN of)
+          (NP (DT these) (NNS cells)))))
+    (. .)))
+
+det(ability-2, The-1)
+nsubj(property-19, ability-2)
+amod(myocytes-5, cardiac-4)
+prep_of(ability-2, myocytes-5)
+det(cells-8, the-7)
+dep(myocytes-5, cells-8)
+nsubj(comprise-10, cells-8)
+rcmod(cells-8, comprise-10)
+det(myocardium-12, the-11)
+dobj(comprise-10, myocardium-12)
+aux(beat-15, to-14)
+infmod(myocytes-5, beat-15)
+cop(property-19, is-16)
+det(property-19, an-17)
+amod(property-19, intrinsic-18)
+root(ROOT-0, property-19)
+det(cells-22, these-21)
+prep_of(property-19, cells-22)
+

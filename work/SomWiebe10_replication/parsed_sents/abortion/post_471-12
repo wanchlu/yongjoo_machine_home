@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP
+        (NP (RB almost) (NN everybody))
+        (PP (IN in)
+          (NP (DT the) (NN world)))))
+    (, ,)
+    (NP (NNP Hitler))
+    (VP (VBD believed)
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (NNP Darwin) (POS 's))
+            (NNS ideas))
+          (PP (IN of)
+            (NP (DT some) (NNS peoples)))))
+      (S
+        (VP (VBG being)
+          (ADJP (JJ inferior)
+            (PP (TO to)
+              (NP (JJ other)))))))
+    (. .)))
+
+advmod(everybody-3, almost-2)
+prep_like(believed-9, everybody-3)
+det(world-6, the-5)
+prep_in(everybody-3, world-6)
+nsubj(believed-9, Hitler-8)
+root(ROOT-0, believed-9)
+poss(ideas-13, Darwin-11)
+prep_in(believed-9, ideas-13)
+det(peoples-16, some-15)
+prep_of(ideas-13, peoples-16)
+cop(inferior-18, being-17)
+xcomp(believed-9, inferior-18)
+prep_to(inferior-18, other-20)
+

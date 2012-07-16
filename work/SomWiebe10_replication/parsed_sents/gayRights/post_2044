@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB marry)
+                (SBAR
+                  (WHNP (WP whoever))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP want)
+                      (PRN (-LRB- -LRB-)
+                        (S
+                          (NP (NN age))
+                          (VP (VBG permitting) (, ,)
+                            (PP (IN of)
+                              (NP (NN course)))))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+nsubjpass(allowed-4, People-1)
+aux(allowed-4, should-2)
+auxpass(allowed-4, be-3)
+root(ROOT-0, allowed-4)
+aux(marry-6, to-5)
+xcomp(allowed-4, marry-6)
+dobj(want-9, whoever-7)
+nsubj(want-9, they-8)
+ccomp(marry-6, want-9)
+nsubj(permitting-12, age-11)
+parataxis(want-9, permitting-12)
+prep_of(permitting-12, course-15)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD should)
+      (ADVP (RB also))
+      (VP (VB be)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB fight)
+                (CC and)
+                (VB die)
+                (PP (IN for)
+                  (NP (PRP$ their) (NN country)))))))))
+    (. .)))
+
+nsubjpass(allowed-5, They-1)
+aux(allowed-5, should-2)
+advmod(allowed-5, also-3)
+auxpass(allowed-5, be-4)
+root(ROOT-0, allowed-5)
+aux(fight-7, to-6)
+xcomp(allowed-5, fight-7)
+xcomp(allowed-5, die-9)
+conj_and(fight-7, die-9)
+poss(country-12, their-11)
+prep_for(fight-7, country-12)
+

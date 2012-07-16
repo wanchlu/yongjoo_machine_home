@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (DT A) (JJ new) (NN person))
+    (VP (MD will)
+      (VP (VB come)
+        (PP (IN into)
+          (NP
+            (NP (DT the) (NN world))
+            (PP (IN in)
+              (NP (CD nine) (NNS months)))))
+        (ADVP
+          (ADVP (RB as) (RB long))
+          (SBAR (IN as)
+            (S
+              (NP (NN nothing))
+              (VP (VBZ happens)
+                (PP (TO to)
+                  (NP (DT the) (JJ unborn) (NN child)))
+                (PP (IN during)
+                  (NP (DT that) (NN period)))))))))
+    (. .)))
+
+det(person-3, A-1)
+amod(person-3, new-2)
+nsubj(come-5, person-3)
+aux(come-5, will-4)
+root(ROOT-0, come-5)
+det(world-8, the-7)
+prep_into(come-5, world-8)
+num(months-11, nine-10)
+prep_in(world-8, months-11)
+advmod(long-13, as-12)
+advmod(come-5, long-13)
+mark(happens-16, as-14)
+nsubj(happens-16, nothing-15)
+ccomp(long-13, happens-16)
+det(child-20, the-18)
+amod(child-20, unborn-19)
+prep_to(happens-16, child-20)
+det(period-23, that-22)
+prep_during(happens-16, period-23)
+

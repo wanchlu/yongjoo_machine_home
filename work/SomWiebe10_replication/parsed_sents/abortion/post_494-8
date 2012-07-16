@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ main) (NN theme))
+        (ADVP (RB here))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (VP (VBG missing)
+                (PP (IN from)
+                  (NP
+                    (NP (PRP$ our) (NN society))
+                    (: ...)
+                    (NP (JJ personal) (NN responsibility))))))))))
+    (. !)))
+
+nsubj(theme-5, That-1)
+cop(theme-5, is-2)
+det(theme-5, the-3)
+amod(theme-5, main-4)
+root(ROOT-0, theme-5)
+advmod(theme-5, here-6)
+nsubj(missing-9, that-7)
+aux(missing-9, is-8)
+rcmod(theme-5, missing-9)
+poss(society-12, our-11)
+prep_from(missing-9, society-12)
+amod(responsibility-15, personal-14)
+dep(society-12, responsibility-15)
+
+(ROOT
+  (S (IN So)
+    (NP (DT a) (NN mother))
+    (VP (MD can)
+      (VP
+        (VP (VB be)
+          (ADJP (JJ irresponsible)))
+        (, ,)
+        (ADVP (RB even)
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NN point))
+              (PP (IN of)
+                (S
+                  (VP (VBG expecting)
+                    (S
+                      (NP (NN everyone))
+                      (ADJP (RB else)))))))))
+        (VP (VB take)
+          (NP
+            (NP (NN care))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN child))
+                (SBAR
+                  (S
+                    (NP (PRP she))
+                    (VP (VBZ does) (RB n't)
+                      (VP (VB want)))))))))))
+    (. ?)))
+
+dep(irresponsible-6, So-1)
+det(mother-3, a-2)
+nsubj(irresponsible-6, mother-3)
+aux(irresponsible-6, can-4)
+cop(irresponsible-6, be-5)
+root(ROOT-0, irresponsible-6)
+advmod(irresponsible-6, even-8)
+det(point-11, the-10)
+prep_to(even-8, point-11)
+prepc_of(point-11, expecting-13)
+nsubj(else-15, everyone-14)
+xcomp(expecting-13, else-15)
+dep(irresponsible-6, take-16)
+dobj(take-16, care-17)
+det(child-20, the-19)
+prep_of(care-17, child-20)
+dobj(want-24, child-20)
+nsubj(want-24, she-21)
+aux(want-24, does-22)
+neg(want-24, n't-23)
+rcmod(child-20, want-24)
+

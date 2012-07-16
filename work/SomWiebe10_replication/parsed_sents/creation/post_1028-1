@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ does) (RB n't)
+      (VP (VB say)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBD did) (RB n't)
+              (VP (VB happen)))))))
+    (. .)))
+
+nsubj(say-4, it-1)
+aux(say-4, does-2)
+neg(say-4, n't-3)
+root(ROOT-0, say-4)
+nsubj(happen-8, it-5)
+aux(happen-8, did-6)
+neg(happen-8, n't-7)
+ccomp(say-4, happen-8)
+
+(ROOT
+  (S (CC and)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ funny))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (DT a) (JJ sudden) (NN you))))
+          (VP (VBP speak)
+            (PP (IN for)
+              (NP (DT every) (NN scientist)))))))
+    (. .)))
+
+cc(funny-4, and-1)
+nsubj(funny-4, it-2)
+cop(funny-4, 's-3)
+root(ROOT-0, funny-4)
+advmod(speak-11, how-5)
+nsubj(speak-11, all-6)
+det(you-10, a-8)
+amod(you-10, sudden-9)
+prep_of(all-6, you-10)
+ccomp(funny-4, speak-11)
+det(scientist-14, every-13)
+prep_for(speak-11, scientist-14)
+

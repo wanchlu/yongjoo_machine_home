@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP (DT The) (NN world))
+    (VP (VBZ is)
+      (VP (VBN overpopulated)
+        (SBAR (IN as)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is))))))
+    (. .)))
+
+det(world-2, The-1)
+nsubjpass(overpopulated-4, world-2)
+auxpass(overpopulated-4, is-3)
+root(ROOT-0, overpopulated-4)
+mark(is-7, as-5)
+nsubj(is-7, it-6)
+advcl(overpopulated-4, is-7)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Humans))
+      (VP (VBP continue)
+        (S
+          (VP (TO to)
+            (VP (VB grow)
+              (PP (IN at)
+                (NP
+                  (NP (DT a) (NN rate))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ is)
+                        (ADJP (JJ unsustainable))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN at)
+        (NP (DT some) (NN point)))
+      (NP (NN nature))
+      (VP (MD will)
+        (VP (VB regulate)
+          (NP (PRP us))
+          (PP (IN through)
+            (NP (DT some) (JJ mass) (NN disaster\/disease))))))
+    (. .)))
+
+nsubj(continue-2, Humans-1)
+xsubj(grow-4, Humans-1)
+root(ROOT-0, continue-2)
+aux(grow-4, to-3)
+xcomp(continue-2, grow-4)
+det(rate-7, a-6)
+prep_at(grow-4, rate-7)
+nsubj(unsustainable-10, rate-7)
+cop(unsustainable-10, is-9)
+rcmod(rate-7, unsustainable-10)
+det(point-15, some-14)
+prep_at(regulate-18, point-15)
+nsubj(regulate-18, nature-16)
+aux(regulate-18, will-17)
+conj_and(continue-2, regulate-18)
+dobj(regulate-18, us-19)
+det(disaster\/disease-23, some-21)
+amod(disaster\/disease-23, mass-22)
+prep_through(regulate-18, disaster\/disease-23)
+

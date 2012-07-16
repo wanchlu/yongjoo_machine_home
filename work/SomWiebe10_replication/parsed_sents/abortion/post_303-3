@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNS Tumors))
+    (VP (VBP are) (RB n't)
+      (NP
+        (NP (NNS organisms))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBP 're)
+              (NP
+                (NP (NN part))
+                (PP (IN of)
+                  (NP
+                    (NP (DT an) (NN organism))
+                    (PRN (: ;)
+                      (CC or)
+                      (ADVP (RB rather))
+                      (NP (DT the) (NN corruption) (RB thereof)))))))))))
+    (. .)))
+
+nsubj(organisms-4, Tumors-1)
+cop(organisms-4, are-2)
+neg(organisms-4, n't-3)
+root(ROOT-0, organisms-4)
+nsubj(part-7, they-5)
+cop(part-7, 're-6)
+rcmod(organisms-4, part-7)
+det(organism-10, an-9)
+prep_of(part-7, organism-10)
+dep(corruption-15, or-12)
+dep(corruption-15, rather-13)
+det(corruption-15, the-14)
+dep(organism-10, corruption-15)
+advmod(corruption-15, thereof-16)
+

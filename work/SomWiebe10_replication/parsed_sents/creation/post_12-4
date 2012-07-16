@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD should) (RB not)
+      (VP (VB allow)
+        (S
+          (NP (NNS schools))
+          (VP (TO to)
+            (VP
+              (VP (VB teach)
+                (NP (PRP$ our) (NNS children))
+                (NP
+                  (NP (NNS things))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP are)
+                        (ADVP (RB just))
+                        (ADJP (RB plain) (JJ wrong)))))))
+              (, ,)
+              (CC and)
+              (VP (JJ known)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ wrong)))))))))))
+    (. .)))
+
+nsubj(allow-4, We-1)
+aux(allow-4, should-2)
+neg(allow-4, not-3)
+root(ROOT-0, allow-4)
+nsubj(teach-7, schools-5)
+nsubj(known-18, schools-5)
+xsubj(wrong-21, schools-5)
+aux(teach-7, to-6)
+xcomp(allow-4, teach-7)
+poss(children-9, our-8)
+dep(teach-7, children-9)
+dobj(teach-7, things-10)
+nsubj(wrong-15, things-10)
+cop(wrong-15, are-12)
+advmod(wrong-15, just-13)
+advmod(wrong-15, plain-14)
+rcmod(things-10, wrong-15)
+xcomp(allow-4, known-18)
+conj_and(teach-7, known-18)
+aux(wrong-21, to-19)
+cop(wrong-21, be-20)
+xcomp(known-18, wrong-21)
+

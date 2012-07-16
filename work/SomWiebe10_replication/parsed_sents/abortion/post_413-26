@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD can) (RB not)
+      (ADVP (RB reasonably))
+      (VP (VB have)
+        (NP (NNS laws))
+        (SBAR (IN that)
+          (S
+            (S
+              (VP (VB allow)
+                (PP (IN for)
+                  (NP (NN double-murder)))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (DT a) (JJ pregnant) (NN woman))
+                    (VP (VBZ is)
+                      (VP (VBN killed)))))))
+            (CC and)
+            (S
+              (PP (IN at)
+                (NP (DT the) (JJ same) (NN time)))
+              (VP (VB declare)
+                (S
+                  (NP (PRP it))
+                  (ADJP (JJ legal)
+                    (PP (IN for)
+                      (NP (DT a) (NN doctor)
+                        (S
+                          (VP (TO to)
+                            (VP
+                              (ADVP (RB lethally))
+                              (VB inject)
+                              (NP (DT a) (NN fetus)))))))))))))))
+    (. .)))
+
+nsubj(have-5, We-1)
+aux(have-5, can-2)
+neg(have-5, not-3)
+advmod(have-5, reasonably-4)
+root(ROOT-0, have-5)
+dobj(have-5, laws-6)
+complm(allow-8, that-7)
+ccomp(have-5, allow-8)
+prep_for(allow-8, double-murder-10)
+advmod(killed-16, when-11)
+det(woman-14, a-12)
+amod(woman-14, pregnant-13)
+nsubjpass(killed-16, woman-14)
+auxpass(killed-16, is-15)
+advcl(allow-8, killed-16)
+det(time-21, the-19)
+amod(time-21, same-20)
+prep_at(declare-22, time-21)
+ccomp(have-5, declare-22)
+conj_and(allow-8, declare-22)
+nsubj(legal-24, it-23)
+xcomp(declare-22, legal-24)
+det(doctor-27, a-26)
+prep_for(legal-24, doctor-27)
+aux(inject-30, to-28)
+advmod(inject-30, lethally-29)
+infmod(doctor-27, inject-30)
+det(fetus-32, a-31)
+dobj(inject-30, fetus-32)
+

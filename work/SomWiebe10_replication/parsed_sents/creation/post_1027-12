@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP you))
+        (VP (VBP need)
+          (S
+            (VP (TO to)
+              (VP (VB understand)))))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT no) (NN scientist))
+            (, ,)
+            (NP (NN atheist))
+            (, ,))
+          (VP
+            (VP (VBZ Christian))
+            (, ,)
+            (CC or)
+            (VP
+              (ADVP (RB otherwise))
+              (VBZ takes)
+              (NP
+                (NP (DT the) (NN idea))
+                (PP (IN of)
+                  (NP (NNP ID))))
+              (ADVP (RB seriously)))))))
+    (. .)))
+
+dep(need-3, What-1)
+nsubj(need-3, you-2)
+xsubj(understand-5, you-2)
+csubj(is-6, need-3)
+aux(understand-5, to-4)
+xcomp(need-3, understand-5)
+root(ROOT-0, is-6)
+complm(Christian-13, that-7)
+det(scientist-9, no-8)
+nsubj(Christian-13, scientist-9)
+nsubj(takes-17, scientist-9)
+appos(scientist-9, atheist-11)
+ccomp(is-6, Christian-13)
+advmod(takes-17, otherwise-16)
+ccomp(is-6, takes-17)
+conj_or(Christian-13, takes-17)
+det(idea-19, the-18)
+dobj(takes-17, idea-19)
+prep_of(idea-19, ID-21)
+advmod(takes-17, seriously-22)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (UCP
+        (NP
+          (NP (DT a) (NN cluster))
+          (PP (IN of)
+            (NP (NNS cells))))
+        (CC and)
+        (SBAR (IN if)
+          (S
+            (NP (PRP she))
+            (VP (VBZ wants)
+              (S
+                (VP (TO to)
+                  (VP (VB abort)
+                    (NP (PRP it))
+                    (SBAR
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ 's)
+                          (NP (PRP$ her) (NN choice))))))))))))
+      (, ,)
+      (ADVP (RB again))
+      (, ,)
+      (FRAG (RB not)
+        (NP (CD yours) (CD .4))))
+    (. .)))
+
+nsubj(cluster-4, It-1)
+cop(cluster-4, 's-2)
+det(cluster-4, a-3)
+root(ROOT-0, cluster-4)
+prep_of(cluster-4, cells-6)
+mark(wants-10, if-8)
+nsubj(wants-10, she-9)
+xsubj(abort-12, she-9)
+conj_and(cluster-4, wants-10)
+aux(abort-12, to-11)
+xcomp(wants-10, abort-12)
+dobj(abort-12, it-13)
+nsubj(choice-17, it-14)
+cop(choice-17, 's-15)
+poss(choice-17, her-16)
+dep(abort-12, choice-17)
+advmod(cluster-4, again-19)
+dep(cluster-4, not-21)
+num(.4-23, yours-22)
+dep(not-21, .4-23)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Abortion))
+      (VP (VBZ deprives)
+        (NP
+          (NP (DT a) (NN fetus))
+          (PP (IN of)
+            (NP (DT an) (JJ entire) (JJ human) (NN future))))))
+    (: :)
+    (S
+      (NP (DT Some))
+      (VP (VBP argue)
+        (SBAR (IN that)
+          (S
+            (NP (NN abortion))
+            (VP (VBZ is)
+              (ADJP (JJ wrong))
+              (SBAR (IN because)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ deprives)
+                    (NP
+                      (NP (DT the) (NN embryo))
+                      (PP (IN of)
+                        (NP (DT a) (JJ valuable) (NN future))))))))))))
+    (. .)))
+
+nsubj(deprives-2, Abortion-1)
+root(ROOT-0, deprives-2)
+det(fetus-4, a-3)
+dobj(deprives-2, fetus-4)
+det(future-9, an-6)
+amod(future-9, entire-7)
+amod(future-9, human-8)
+prep_of(fetus-4, future-9)
+nsubj(argue-12, Some-11)
+parataxis(deprives-2, argue-12)
+complm(wrong-16, that-13)
+nsubj(wrong-16, abortion-14)
+cop(wrong-16, is-15)
+ccomp(argue-12, wrong-16)
+mark(deprives-19, because-17)
+nsubj(deprives-19, it-18)
+advcl(wrong-16, deprives-19)
+det(embryo-21, the-20)
+dobj(deprives-19, embryo-21)
+det(future-25, a-23)
+amod(future-25, valuable-24)
+prep_of(embryo-21, future-25)
+

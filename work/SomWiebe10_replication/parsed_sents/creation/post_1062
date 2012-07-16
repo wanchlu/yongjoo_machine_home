@@ -1,0 +1,246 @@
+(ROOT
+  (NP
+    (NP (NNP Ignorance))
+    (PP (IN of)
+      (NP (NN terminology)))
+    (. .)))
+
+root(ROOT-0, Ignorance-1)
+prep_of(Ignorance-1, terminology-3)
+
+(ROOT
+  (S
+    (NP (DT A) (`` ``) (NN Law) ('' ''))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP
+        (NP (DT a) (NN description))
+        (PP (IN of)
+          (NP (DT a) (NN phenomenon)))))
+    (. .)))
+
+det(Law-3, A-1)
+nsubj(description-8, Law-3)
+cop(description-8, is-5)
+advmod(description-8, just-6)
+det(description-8, a-7)
+root(ROOT-0, description-8)
+det(phenomenon-11, a-10)
+prep_of(description-8, phenomenon-11)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (NN instance))
+        (: :)
+        (PP (IN in)
+          (NP (DT a) (VBN closed) (NN system)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN amount))
+      (PP (IN of)
+        (NP
+          (NP (NN energy))
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT that)))
+            (S
+              (NP (NN system))
+              (VP (VBZ is)
+                (UCP
+                  (VP (VBN finite))
+                  (CC and)
+                  (RB thus)
+                  (NP
+                    (NP (DT the) (NN ability))
+                    (PP (IN for)
+                      (NP
+                        (NP (DT that) (NN system))
+                        (PP (TO to)
+                          (NP (NN work)))))))))))))
+    (VP (VBZ reduces)
+      (PP (IN over)
+        (NP (NN time))))
+    (. .)))
+
+prep_for(reduces-27, instance-2)
+det(system-7, a-5)
+amod(system-7, closed-6)
+prep_in(instance-2, system-7)
+det(amount-10, the-9)
+nsubj(reduces-27, amount-10)
+prep_of(amount-10, energy-12)
+rel(is-16, that-14)
+nsubj(is-16, system-15)
+rcmod(energy-12, is-16)
+dep(is-16, finite-17)
+dep(is-16, thus-19)
+conj_and(finite-17, thus-19)
+det(ability-21, the-20)
+dep(finite-17, ability-21)
+det(system-24, that-23)
+prep_for(ability-21, system-24)
+prep_to(system-24, work-26)
+root(ROOT-0, reduces-27)
+prep_over(reduces-27, time-29)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ second) (NN law))
+        (PP (IN of)
+          (NP (NNS thermodynamics)))))
+    (. .)))
+
+nsubj(law-5, That-1)
+cop(law-5, is-2)
+det(law-5, the-3)
+amod(law-5, second-4)
+root(ROOT-0, law-5)
+prep_of(law-5, thermodynamics-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN example))
+      (PP (IN of)
+        (NP (DT a) (VBN closed) (NN system))))
+    (VP (VBZ is)
+      (NP (DT a) (JJ small) (JJR lighter))
+      (, ,)
+      (SBAR (IN after)
+        (S
+          (NP (RB so) (JJ many))
+          (VP (VBZ uses)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (ADVP (RB just))
+                (VP (MD wo) (RB n't)
+                  (VP (VB work)
+                    (ADVP (RB anymore))))))))))
+    (. .)))
+
+det(example-2, An-1)
+nsubj(lighter-10, example-2)
+det(system-6, a-4)
+amod(system-6, closed-5)
+prep_of(example-2, system-6)
+cop(lighter-10, is-7)
+det(lighter-10, a-8)
+amod(lighter-10, small-9)
+root(ROOT-0, lighter-10)
+mark(uses-15, after-12)
+advmod(many-14, so-13)
+nsubj(uses-15, many-14)
+advcl(lighter-10, uses-15)
+nsubj(work-20, it-16)
+advmod(work-20, just-17)
+aux(work-20, wo-18)
+neg(work-20, n't-19)
+ccomp(uses-15, work-20)
+advmod(work-20, anymore-21)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN theory))
+      (, ,)
+      (PP (IN on)
+        (NP (DT the) (JJ other) (NN hand)))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN model))
+        (PP (IN of)
+          (NP
+            (NP (NNS observations))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP
+                  (VP (VBZ explains)
+                    (NP (DT those) (NNS observations)))
+                  (, ,)
+                  (CC and)
+                  (VP (VBZ has)
+                    (NP (JJ predictive) (NN power))))))))))
+    (. .)))
+
+det(theory-2, A-1)
+nsubj(model-11, theory-2)
+det(hand-7, the-5)
+amod(hand-7, other-6)
+prep_on(theory-2, hand-7)
+cop(model-11, is-9)
+det(model-11, a-10)
+root(ROOT-0, model-11)
+prep_of(model-11, observations-13)
+nsubj(explains-15, observations-13)
+nsubj(has-20, observations-13)
+rcmod(observations-13, explains-15)
+det(observations-17, those-16)
+dobj(explains-15, observations-17)
+rcmod(observations-13, has-20)
+conj_and(explains-15, has-20)
+amod(power-22, predictive-21)
+dobj(has-20, power-22)
+
+(ROOT
+  (S
+    (NP (DT A) (NN theory))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS highest) (NN point))
+        (PP (IN in)
+          (NP (JJ scientific) (NN endeavor))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP
+            (VP (VBZ utilizes)
+              (NP (NNS facts) (, ,) (NNS laws)
+                (CC and)
+                (NNS observations))
+              (PP (IN in)
+                (NP (PRP$ its) (JJ explanatory) (NNS powers))))
+            (, ,)
+            (CC and)
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (JJ direct) (NN result))
+                (PP (IN of)
+                  (NP (JJ verified) (NNS hypotheses)))))))))
+    (. .)))
+
+det(theory-2, A-1)
+nsubj(point-6, theory-2)
+cop(point-6, is-3)
+det(point-6, the-4)
+amod(point-6, highest-5)
+root(ROOT-0, point-6)
+amod(endeavor-9, scientific-8)
+prep_in(point-6, endeavor-9)
+mark(utilizes-13, because-11)
+nsubj(utilizes-13, it-12)
+advcl(point-6, utilizes-13)
+dobj(utilizes-13, facts-14)
+dobj(utilizes-13, laws-16)
+conj_and(facts-14, laws-16)
+dobj(utilizes-13, observations-18)
+conj_and(facts-14, observations-18)
+poss(powers-22, its-20)
+amod(powers-22, explanatory-21)
+prep_in(utilizes-13, powers-22)
+cop(result-28, is-25)
+det(result-28, the-26)
+amod(result-28, direct-27)
+advcl(point-6, result-28)
+conj_and(utilizes-13, result-28)
+amod(hypotheses-31, verified-30)
+prep_of(result-28, hypotheses-31)
+

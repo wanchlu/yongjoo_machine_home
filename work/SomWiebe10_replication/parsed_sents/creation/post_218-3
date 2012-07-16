@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (NNS guardians))
+        (PP (IN of)
+          (NP (NN science)))))
+    (, ,)
+    (NP
+      (NP (NNS scientists))
+      (CC and)
+      (NP (PRP$ their) (NNS organizations)))
+    (VP (VBP have)
+      (NP (DT a) (NN duty)
+        (S
+          (VP (TO to)
+            (VP (VB speak)
+              (PRT (RP out))
+              (PP (IN as)
+                (PP (TO to)
+                  (NP
+                    (NP (DT the) (NN nature))
+                    (PP (IN of)
+                      (NP (NNP ID)))))))))))
+    (. .)))
+
+prep_as(have-10, guardians-2)
+prep_of(guardians-2, science-4)
+nsubj(have-10, scientists-6)
+poss(organizations-9, their-8)
+conj_and(scientists-6, organizations-9)
+nsubj(have-10, organizations-9)
+root(ROOT-0, have-10)
+det(duty-12, a-11)
+dobj(have-10, duty-12)
+aux(speak-14, to-13)
+infmod(duty-12, speak-14)
+prt(speak-14, out-15)
+prepc_as_to(speak-14, to-17)
+det(nature-19, the-18)
+pobj(speak-14, nature-19)
+prep_of(nature-19, ID-21)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP ID))
+      (VP (VBZ has)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB speak)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBZ does) (RB not)
+        (VP (VB mean)
+          (NP (DT a) (NN right)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN heard)))))))))
+    (. .)))
+
+nsubj(has-2, ID-1)
+root(ROOT-0, has-2)
+det(right-4, the-3)
+dobj(has-2, right-4)
+aux(speak-6, to-5)
+infmod(right-4, speak-6)
+nsubj(mean-12, that-9)
+aux(mean-12, does-10)
+neg(mean-12, not-11)
+conj_but(has-2, mean-12)
+det(right-14, a-13)
+dobj(mean-12, right-14)
+aux(heard-17, to-15)
+auxpass(heard-17, be-16)
+infmod(right-14, heard-17)
+

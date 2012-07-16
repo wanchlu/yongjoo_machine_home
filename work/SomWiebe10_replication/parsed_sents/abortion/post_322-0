@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP I))
+        (VP (VBP recommend)
+          (NP
+            (NP (PRP$ your) (NN post))
+            (, ,)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP we))
+                (VP (VBP need)
+                  (S
+                    (VP (TO to)
+                      (VP (VB consider)))))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN notion))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT a) (JJ justifiable) (NN homicide))
+              (PRN (-LRB- -LRB-)
+                (NP (CD i.e.) (NN self) (NN defense))
+                (-RRB- -RRB-)))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (PRN (, ,)
+                  (SBAR (IN while)
+                    (S
+                      (NP (PRP it))
+                      (ADVP (RB rarely))
+                      (VP (VBZ comes)
+                        (PRT (RP up))
+                        (PP (IN with)
+                          (NP (NN regard)))
+                        (PP (TO to)
+                          (NP
+                            (NP (NN abortion))
+                            (PP (IN in)
+                              (NP (DT the) (NNP US))))))))
+                  (, ,))
+                (VP (VBZ is)
+                  (ADVP (RB nevertheless))
+                  (NP (DT a) (NN concern)))))))))
+    (. .)))
+
+mark(recommend-3, While-1)
+nsubj(recommend-3, I-2)
+csubj(notion-14, recommend-3)
+poss(post-5, your-4)
+dobj(recommend-3, post-5)
+rel(need-9, what-7)
+nsubj(need-9, we-8)
+xsubj(consider-11, we-8)
+rcmod(post-5, need-9)
+aux(consider-11, to-10)
+xcomp(need-9, consider-11)
+cop(notion-14, is-12)
+det(notion-14, the-13)
+root(ROOT-0, notion-14)
+det(homicide-18, a-16)
+amod(homicide-18, justifiable-17)
+prep_of(notion-14, homicide-18)
+nsubj(concern-43, homicide-18)
+num(defense-22, i.e.-20)
+nn(defense-22, self-21)
+appos(homicide-18, defense-22)
+mark(comes-30, while-27)
+nsubj(comes-30, it-28)
+advmod(comes-30, rarely-29)
+parataxis(concern-43, comes-30)
+prt(comes-30, up-31)
+prep_with(comes-30, regard-33)
+prep_to(comes-30, abortion-35)
+det(US-38, the-37)
+prep_in(abortion-35, US-38)
+cop(concern-43, is-40)
+advmod(concern-43, nevertheless-41)
+det(concern-43, a-42)
+rcmod(homicide-18, concern-43)
+

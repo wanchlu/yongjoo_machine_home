@@ -1,0 +1,89 @@
+(ROOT
+  (FRAG
+    (ADJP (RB very) (JJ eloquent))
+    (. .)))
+
+advmod(eloquent-2, very-1)
+root(ROOT-0, eloquent-2)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB why))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB hurt)
+        (NP (PRP you))))
+    (. ?)))
+
+advmod(hurt-4, why-1)
+aux(hurt-4, does-2)
+nsubj(hurt-4, it-3)
+root(ROOT-0, hurt-4)
+dobj(hurt-4, you-5)
+
+(ROOT
+  (S
+    (NP (CD 2) (JJ gay) (NNS men))
+    (VP (VBP are)
+      (VP (VBG getting)
+        (NP
+          (NP
+            (NP (DT the) (JJ same) (NNS benefits))
+            (SBAR
+              (S
+                (NP (DT a) (JJ married) (NN couple))
+                (VP (MD would)
+                  (VP (VB get))))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT the) (JJ same) (NNS benefits))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (MD would)
+                  (VP (VB get)
+                    (SBAR (IN if)
+                      (S
+                        (NP
+                          (NP (DT each))
+                          (PP (IN of)
+                            (NP (PRP them))))
+                        (VP (MD would)
+                          (VP (VB be)
+                            (VP (VBN married)
+                              (PP (TO to)
+                                (NP (DT a) (NN woman)))
+                              (ADVP (RB respectively)))))))))))))))))
+
+num(men-3, 2-1)
+amod(men-3, gay-2)
+nsubj(getting-5, men-3)
+aux(getting-5, are-4)
+root(ROOT-0, getting-5)
+det(benefits-8, the-6)
+amod(benefits-8, same-7)
+dobj(getting-5, benefits-8)
+dobj(get-13, benefits-8)
+det(couple-11, a-9)
+amod(couple-11, married-10)
+nsubj(get-13, couple-11)
+aux(get-13, would-12)
+rcmod(benefits-8, get-13)
+det(benefits-18, the-16)
+amod(benefits-18, same-17)
+conj_and(benefits-8, benefits-18)
+dobj(get-21, benefits-18)
+nsubj(get-21, they-19)
+aux(get-21, would-20)
+rcmod(benefits-18, get-21)
+mark(married-28, if-22)
+nsubjpass(married-28, each-23)
+prep_of(each-23, them-25)
+aux(married-28, would-26)
+auxpass(married-28, be-27)
+advcl(get-21, married-28)
+det(woman-31, a-30)
+prep_to(married-28, woman-31)
+advmod(married-28, respectively-32)
+

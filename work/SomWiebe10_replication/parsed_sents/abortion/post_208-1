@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (NNP President) (NNP Obama))
+    (VP
+      (VP (MD will)
+        (VP (VB receive)
+          (NP
+            (NP (DT the) (NN Freedom))
+            (PP (IN of)
+              (NP (NNP Choice) (NNP Act))))
+          (PP (IN from)
+            (NP
+              (NP (DT a) (NNP Congress))
+              (VP (VBN dominated)
+                (PP (IN by)
+                  (NP (NNPS Democrats)))
+                (PP
+                  (ADVP (RB soon))
+                  (IN after)
+                  (S
+                    (VP (VBG taking)
+                      (NP (NN office))))))))))
+      (CC and)
+      (VP (MD will)
+        (ADVP (RB happily))
+        (VP (VB sign)
+          (NP (PRP it)))))
+    (. .)))
+
+nn(Obama-2, President-1)
+nsubj(receive-4, Obama-2)
+nsubj(sign-23, Obama-2)
+aux(receive-4, will-3)
+root(ROOT-0, receive-4)
+det(Freedom-6, the-5)
+dobj(receive-4, Freedom-6)
+nn(Act-9, Choice-8)
+prep_of(Freedom-6, Act-9)
+det(Congress-12, a-11)
+prep_from(receive-4, Congress-12)
+partmod(Congress-12, dominated-13)
+agent(dominated-13, Democrats-15)
+advmod(dominated-13, soon-16)
+prepc_after(dominated-13, taking-18)
+dobj(taking-18, office-19)
+aux(sign-23, will-21)
+advmod(sign-23, happily-22)
+conj_and(receive-4, sign-23)
+dobj(sign-23, it-24)
+

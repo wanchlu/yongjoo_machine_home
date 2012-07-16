@@ -1,0 +1,50 @@
+(ROOT
+  (S (IN So)
+    (SBAR (RB long) (IN as)
+      (S
+        (NP (PRP we))
+        (VP (VBP deny)
+          (SBAR
+            (S
+              (NP (DT the) (JJ unborn) (NN child))
+              (VP (VBD personhood)))))))
+    (, ,)
+    (S
+      (NP (DT the) (JJ unmitigated) (NN slaughter))
+      (VP (MD will)
+        (VP (VB continue))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (PRP we))
+        (PP (IN as)
+          (NP (DT a) (NN nation))))
+      (VP (VBP are)
+        (ADJP (JJ guilty)
+          (PP (IN of)
+            (NP (JJ grave) (NN sin))))))
+    (. .)))
+
+dep(continue-15, So-1)
+advmod(deny-5, long-2)
+dep(deny-5, as-3)
+nsubj(deny-5, we-4)
+dep(continue-15, deny-5)
+det(child-8, the-6)
+amod(child-8, unborn-7)
+nsubj(personhood-9, child-8)
+ccomp(deny-5, personhood-9)
+det(slaughter-13, the-11)
+amod(slaughter-13, unmitigated-12)
+nsubj(continue-15, slaughter-13)
+aux(continue-15, will-14)
+root(ROOT-0, continue-15)
+nsubj(guilty-23, we-18)
+det(nation-21, a-20)
+prep_as(we-18, nation-21)
+cop(guilty-23, are-22)
+conj_and(continue-15, guilty-23)
+amod(sin-26, grave-25)
+prep_of(guilty-23, sin-26)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (NNS Scientists))
+    (VP (VBD had)
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (PP (IN into)
+              (NP (NN account)))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP
+                  (NP (VBG shifting) (NNS landmasses))
+                  (PP (IN on)
+                    (NP
+                      (NP (NN earth))
+                      (PRN (-LRB- -LRB-)
+                        (ADJP (JJ due)
+                          (PP (TO to)
+                            (NP (JJ tectonic) (NN activity))))
+                        (-RRB- -RRB-)))))
+                (VP (VBD had)
+                  (NP
+                    (NP (DT an) (NN effect))
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (NN moon) (POS 's))
+                        (NN movement)))))))))))
+    (. .)))
+
+nsubj(had-2, Scientists-1)
+xsubj(take-4, Scientists-1)
+root(ROOT-0, had-2)
+aux(take-4, to-3)
+xcomp(had-2, take-4)
+prep_into(take-4, account-6)
+advmod(had-18, how-7)
+amod(landmasses-9, shifting-8)
+nsubj(had-18, landmasses-9)
+prep_on(landmasses-9, earth-11)
+amod(activity-16, tectonic-15)
+prep_due_to(earth-11, activity-16)
+ccomp(take-4, had-18)
+det(effect-20, an-19)
+dobj(had-18, effect-20)
+det(moon-23, the-22)
+poss(movement-25, moon-23)
+prep_on(effect-20, movement-25)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (ADVP (RB enough)
+          (PP (IN about)
+            (NP (DT the) (NN physics))))
+        (S
+          (VP (TO to)
+            (VP (VB draw)
+              (NP (DT any) (JJ sound) (NN boarder))
+              (PP (IN on)
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (DT that) (NN consistency))
+                    (VP
+                      (VP (VBZ begins))
+                      (CC or)
+                      (VP (VBZ ends)))))))))))
+    (. .)))
+
+nsubj(know-4, We-1)
+xsubj(draw-10, We-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+advmod(know-4, enough-5)
+det(physics-8, the-7)
+prep_about(enough-5, physics-8)
+aux(draw-10, to-9)
+xcomp(know-4, draw-10)
+det(boarder-13, any-11)
+amod(boarder-13, sound-12)
+dobj(draw-10, boarder-13)
+advmod(begins-18, where-15)
+det(consistency-17, that-16)
+nsubj(begins-18, consistency-17)
+nsubj(ends-20, consistency-17)
+prepc_on(draw-10, begins-18)
+prepc_on(draw-10, ends-20)
+conj_or(begins-18, ends-20)
+

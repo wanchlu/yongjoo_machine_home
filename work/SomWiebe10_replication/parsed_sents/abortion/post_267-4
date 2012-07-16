@@ -1,0 +1,36 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP (PRP they))
+        (VP
+          (VP (VBP 're)
+            (VP (VBN raped)
+              (PP (IN by)
+                (NP (DT a) (NN family) (NN member)))))
+          (, ,)
+          (CC and)
+          (VP (MD ca) (RB n't)
+            (VP (VB get)
+              (PRT (RP away))
+              (PP (IN within)
+                (NP (CD 24) (NN hrs))))))))
+    (. ?)))
+
+dep(raped-5, What-1)
+mark(raped-5, if-2)
+nsubjpass(raped-5, they-3)
+nsubj(get-14, they-3)
+auxpass(raped-5, 're-4)
+root(ROOT-0, raped-5)
+det(member-9, a-7)
+nn(member-9, family-8)
+agent(raped-5, member-9)
+aux(get-14, ca-12)
+neg(get-14, n't-13)
+conj_and(raped-5, get-14)
+prt(get-14, away-15)
+num(hrs-18, 24-17)
+prep_within(get-14, hrs-18)
+

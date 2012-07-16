@@ -1,0 +1,38 @@
+(ROOT
+  (S (IN so)
+    (NP (DT that))
+    (VP
+      (ADVP (RB logically))
+      (VBZ leads)
+      (PP (TO to)
+        (NP (DT the) (NN assumption)))
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBD were)
+            (NP
+              (NP (JJ other) (NNS people))
+              (VP (VBG living)
+                (PP (IN along)
+                  (NP
+                    (NP (NN side))
+                    (NP (DT the) (`` ``) (JJ first) (NN family) ('' ''))))))))))
+    (. .)))
+
+dep(leads-4, so-1)
+nsubj(leads-4, that-2)
+advmod(leads-4, logically-3)
+root(ROOT-0, leads-4)
+det(assumption-7, the-6)
+prep_to(leads-4, assumption-7)
+complm(were-10, that-8)
+expl(were-10, there-9)
+ccomp(leads-4, were-10)
+amod(people-12, other-11)
+nsubj(were-10, people-12)
+partmod(people-12, living-13)
+prep_along(living-13, side-15)
+det(family-19, the-16)
+amod(family-19, first-18)
+dep(side-15, family-19)
+

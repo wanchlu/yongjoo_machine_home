@@ -1,0 +1,30 @@
+(ROOT
+  (FRAG
+    (NP (NN Source))
+    (: :)
+    (FRAG
+      (NP
+        (NP (NNP Jeffrey) (NNP P.) (NNP Schloss) ('' ''))
+        (NP (DT The) (NNP Expelled) (NNP Controversy)))
+      (: :)
+      (NP
+        (NP (NNP Overcoming)
+          (CC or)
+          (NNP Raising) (NNPS Walls))
+        (PP (IN of)
+          (NP (NNP Division)))))
+    (. ?)))
+
+root(ROOT-0, Source-1)
+nn(Schloss-5, Jeffrey-3)
+nn(Schloss-5, P.-4)
+dep(Source-1, Schloss-5)
+det(Controversy-9, The-7)
+nn(Controversy-9, Expelled-8)
+dep(Schloss-5, Controversy-9)
+nn(Walls-14, Overcoming-11)
+conj_or(Overcoming-11, Raising-13)
+nn(Walls-14, Raising-13)
+dep(Schloss-5, Walls-14)
+prep_of(Walls-14, Division-16)
+

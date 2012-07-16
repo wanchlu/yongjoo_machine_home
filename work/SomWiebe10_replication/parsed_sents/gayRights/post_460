@@ -1,0 +1,133 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB see)
+        (S
+          (NP (DT any) (NNS comments))
+          (VP (VBG suggesting)
+            (SBAR (IN that)
+              (S
+                (NP (JJ human) (NNS genes))
+                (VP (MD should)
+                  (VP (VB be)
+                    (VP (VBN modified))))))))))
+    (. .)))
+
+nsubj(see-4, I-1)
+aux(see-4, did-2)
+neg(see-4, n't-3)
+root(ROOT-0, see-4)
+det(comments-6, any-5)
+nsubj(suggesting-7, comments-6)
+dep(see-4, suggesting-7)
+complm(modified-13, that-8)
+amod(genes-10, human-9)
+nsubjpass(modified-13, genes-10)
+aux(modified-13, should-11)
+auxpass(modified-13, be-12)
+ccomp(suggesting-7, modified-13)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (ADJP (JJ referring)
+      (PP (TO to)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP think)
+                (SBAR
+                  (S (`` ``)
+                    (NP (JJ gay))
+                    ('' '')
+                    (VP (MD can)
+                      (VP (VB be)
+                        (VP (`` ``) (VBN fixed) ('' '')
+                          (PP (IN through)
+                            (NP (JJ genetic) (NN manipulation))))))))))))))
+    (. ?)))
+
+cop(referring-3, Are-1)
+nsubj(referring-3, you-2)
+root(ROOT-0, referring-3)
+prep_to(referring-3, people-5)
+nsubj(think-7, people-5)
+rcmod(people-5, think-7)
+nsubjpass(fixed-14, gay-9)
+aux(fixed-14, can-11)
+auxpass(fixed-14, be-12)
+ccomp(think-7, fixed-14)
+amod(manipulation-18, genetic-17)
+prep_through(fixed-14, manipulation-18)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB certainly))
+    (VP
+      (VP (VBD did) (RB not)
+        (VP (VB suggest)
+          (NP (DT that))))
+      (, ,)
+      (CC nor)
+      (VP (VBP do)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP think)
+              (SBAR
+                (S
+                  (NP (PDT such) (DT a) (NN thing))
+                  (VP (MD would)
+                    (VP (VB be)
+                      (ADJP (JJ desirable)))))))))))
+    (. .)))
+
+nsubj(suggest-5, I-1)
+nsubj(do-9, I-1)
+advmod(suggest-5, certainly-2)
+aux(suggest-5, did-3)
+neg(suggest-5, not-4)
+root(ROOT-0, suggest-5)
+dobj(suggest-5, that-6)
+conj_nor(suggest-5, do-9)
+nsubj(think-11, I-10)
+ccomp(do-9, think-11)
+predet(thing-14, such-12)
+det(thing-14, a-13)
+nsubj(desirable-17, thing-14)
+aux(desirable-17, would-15)
+cop(desirable-17, be-16)
+ccomp(think-11, desirable-17)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Maybe))
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADVP (RB just))
+        (VP (RB not) (VBG following))))
+    (, ,) (IN so)
+    (S
+      (ADVP (RB perhaps))
+      (NP (PRP you))
+      (VP (MD can)
+        (VP (VB elaborate))))
+    (. .)))
+
+advmod(following-6, Maybe-1)
+nsubj(following-6, I-2)
+aux(following-6, 'm-3)
+advmod(following-6, just-4)
+neg(following-6, not-5)
+root(ROOT-0, following-6)
+dep(following-6, so-8)
+advmod(elaborate-12, perhaps-9)
+nsubj(elaborate-12, you-10)
+aux(elaborate-12, can-11)
+ccomp(following-6, elaborate-12)
+

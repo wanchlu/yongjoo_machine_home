@@ -1,0 +1,27 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP John) (NNP McCain))
+      (VP (VBZ is) (RB not)
+        (NP (NNP George) (NNP Bush))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Barack) (NNP Obama))
+      (VP (VBZ is) (RB not)
+        (NP (NNP John) (NNP Kerry))))
+    (. .)))
+
+nn(McCain-2, John-1)
+nsubj(Bush-6, McCain-2)
+cop(Bush-6, is-3)
+neg(Bush-6, not-4)
+nn(Bush-6, George-5)
+root(ROOT-0, Bush-6)
+nn(Obama-10, Barack-9)
+nsubj(Kerry-14, Obama-10)
+cop(Kerry-14, is-11)
+neg(Kerry-14, not-12)
+nn(Kerry-14, John-13)
+conj_and(Bush-6, Kerry-14)
+

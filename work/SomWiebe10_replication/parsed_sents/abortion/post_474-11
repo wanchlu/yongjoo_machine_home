@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN government))
+          (VP
+            (VP (MD can) (RB not))
+            (CC and)
+            (VP (MD should) (RB not)
+              (VP (VB mandate)
+                (NP
+                  (NP (NNS abortions))
+                  (, ,)
+                  (S
+                    (S
+                      (VP (VBN forced)
+                        (NP (NNS sterilizations))))
+                    (, ,) (FW etc) (, ,)
+                    (S
+                      (VP (VB like)
+                        (SBAR
+                          (S
+                            (NP (JJ many) (NNS governments))
+                            (VP (VBP have)
+                              (VP (VBN done)
+                                (PRN (-LRB- -LRB-)
+                                  (PP (VBG including)
+                                    (NP (DT the) (NNP US)))
+                                  (-RRB- -RRB-))))))))))))))))
+    (. .)))
+
+advmod(agree-4, Now-1)
+nsubj(agree-4, I-3)
+root(ROOT-0, agree-4)
+complm(can-8, that-5)
+det(government-7, the-6)
+nsubj(can-8, government-7)
+nsubj(mandate-13, government-7)
+ccomp(agree-4, can-8)
+neg(can-8, not-9)
+aux(mandate-13, should-11)
+neg(mandate-13, not-12)
+ccomp(agree-4, mandate-13)
+conj_and(can-8, mandate-13)
+dobj(mandate-13, abortions-14)
+dep(abortions-14, forced-16)
+dobj(forced-16, sterilizations-17)
+dep(forced-16, etc-19)
+dep(forced-16, like-21)
+amod(governments-23, many-22)
+nsubj(done-25, governments-23)
+aux(done-25, have-24)
+ccomp(like-21, done-25)
+dep(done-25, including-27)
+det(US-29, the-28)
+pobj(including-27, US-29)
+

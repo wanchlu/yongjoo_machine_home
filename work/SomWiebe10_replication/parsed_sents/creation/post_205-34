@@ -1,0 +1,37 @@
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (FRAG (CC And)
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (MD would)
+            (VP (VB assume)
+              (SBAR (IN that)
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (NN something))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (ADVP (RB actually))
+                          (VP (VBZ needs)
+                            (S
+                              (VP (VBG explaining))))))))))))))
+      (. .))
+    (-RRB- -RRB-)))
+
+dep(assume-5, And-2)
+nsubj(assume-5, that-3)
+aux(assume-5, would-4)
+root(ROOT-0, assume-5)
+complm(is-8, that-6)
+expl(is-8, there-7)
+ccomp(assume-5, is-8)
+nsubj(is-8, something-9)
+nsubj(needs-12, something-9)
+advmod(needs-12, actually-11)
+rcmod(something-9, needs-12)
+xcomp(needs-12, explaining-13)
+

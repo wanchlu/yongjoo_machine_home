@@ -1,0 +1,63 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (NNP God))
+          (VP (VBD did) (RB n't)
+            (VP (VB create)
+              (NP (PRP us))
+              (PRN (-LRB- -LRB-)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ is)
+                      (ADJP (RB highly) (, ,) (RB highly) (JJ unlikely)))))
+                (-RRB- -RRB-)))))
+        (CC and)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP
+              (NP (DT no) (NN plan))
+              (PP (IN for)
+                (NP
+                  (NP (DT each))
+                  (PP (IN of)
+                    (NP (PRP us))))))
+            (, ,)
+            (ADVP (RB then))))))
+    (WHNP (WP what))
+    (SQ
+      (VP (VBZ 's)
+        (NP
+          (NP (DT the) (NN point))
+          (PP (IN of)
+            (NP (NN living))))))
+    (. ?)))
+
+mark(create-5, If-1)
+nsubj(create-5, God-2)
+aux(create-5, did-3)
+neg(create-5, n't-4)
+dep(point-29, create-5)
+dobj(create-5, us-6)
+nsubj(unlikely-13, which-8)
+cop(unlikely-13, is-9)
+advmod(unlikely-13, highly-10)
+advmod(unlikely-13, highly-12)
+parataxis(create-5, unlikely-13)
+expl(is-17, there-16)
+conj_and(create-5, is-17)
+dep(point-29, is-17)
+det(plan-19, no-18)
+nsubj(is-17, plan-19)
+prep_for(plan-19, each-21)
+prep_of(each-21, us-23)
+advmod(is-17, then-25)
+nsubj(point-29, what-26)
+cop(point-29, 's-27)
+det(point-29, the-28)
+root(ROOT-0, point-29)
+prep_of(point-29, living-31)
+

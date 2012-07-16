@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (DT the) (NN belief)))
+      (NP (DT the) (NN fetus))
+      (VP
+        (VP (VBZ has)
+          (NP (NNS rights)))
+        (CC and)
+        (VP (MD ought))
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (NNS liberties)))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD can) (RB not)
+      (VP (VB ignore)
+        (NP
+          (NP (DT the) (NN fact))
+          (SBAR
+            (S
+              (NP (DT the) (NN mother))
+              (VP (VBZ has)
+                (NP (NNS rights)
+                  (CC and)
+                  (NNS liberties))
+                (ADVP (RB too))))))))
+    (. .)))
+
+det(belief-3, the-2)
+prep_in(has-6, belief-3)
+det(fetus-5, the-4)
+nsubj(has-6, fetus-5)
+xsubj(have-11, fetus-5)
+ccomp(ignore-17, has-6)
+dobj(has-6, rights-7)
+conj_and(has-6, ought-9)
+ccomp(ignore-17, ought-9)
+aux(have-11, to-10)
+xcomp(has-6, have-11)
+dobj(have-11, liberties-12)
+nsubj(ignore-17, you-14)
+aux(ignore-17, can-15)
+neg(ignore-17, not-16)
+root(ROOT-0, ignore-17)
+det(fact-19, the-18)
+dobj(ignore-17, fact-19)
+det(mother-21, the-20)
+nsubj(has-22, mother-21)
+rcmod(fact-19, has-22)
+dobj(has-22, rights-23)
+dobj(has-22, liberties-25)
+conj_and(rights-23, liberties-25)
+advmod(has-22, too-26)
+

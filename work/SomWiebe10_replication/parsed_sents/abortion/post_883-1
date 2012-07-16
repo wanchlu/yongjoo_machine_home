@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (VP (VBG saying)
+        (SBAR
+          (S
+            (NP (DT a) (NN human))
+            (VP (MD should) (RB n't)
+              (VP (VB suffer)
+                (NP (NN death))
+                (SBAR (IN because)
+                  (S
+                    (NP (DT the) (NNS parents))
+                    (VP (VBD conceived)
+                      (NP (DT the) (NN child))
+                      (PP (IN against)
+                        (NP (PRP$ their) (NNS wills))))))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+ccomp(saying-6, mean-2)
+nsubj(saying-6, you-4)
+aux(saying-6, 're-5)
+root(ROOT-0, saying-6)
+det(human-8, a-7)
+nsubj(suffer-11, human-8)
+aux(suffer-11, should-9)
+neg(suffer-11, n't-10)
+ccomp(saying-6, suffer-11)
+dobj(suffer-11, death-12)
+mark(conceived-16, because-13)
+det(parents-15, the-14)
+nsubj(conceived-16, parents-15)
+advcl(suffer-11, conceived-16)
+det(child-18, the-17)
+dobj(conceived-16, child-18)
+poss(wills-21, their-20)
+prep_against(conceived-16, wills-21)
+

@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS stars))
+      (VP (VBP are)
+        (NP
+          (NP (NNS thousands)
+            (CC and)
+            (NNS millions))
+          (PP (IN of)
+            (NP (JJ light) (NNS years))))
+        (ADVP (RB away))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (JJ many))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN Earth) (POS 's))
+            (QP (CD 7) (CD billion))
+            (NNS people))))
+      (VP (VBP are)
+        (ADVP
+          (NP (RB only) (NNS minutes))
+          (RB away))
+        (PP (IN from)
+          (NP (PRP us)))))
+    (. .)))
+
+det(stars-2, The-1)
+nsubj(thousands-4, stars-2)
+cop(thousands-4, are-3)
+root(ROOT-0, thousands-4)
+conj_and(thousands-4, millions-6)
+amod(years-9, light-8)
+prep_of(thousands-4, years-9)
+advmod(thousands-4, away-10)
+nsubj(are-21, many-13)
+det(Earth-16, the-15)
+poss(people-20, Earth-16)
+number(billion-19, 7-18)
+num(people-20, billion-19)
+prep_of(many-13, people-20)
+conj_but(thousands-4, are-21)
+advmod(minutes-23, only-22)
+npadvmod(are-21, minutes-23)
+prep_away_from(are-21, us-26)
+

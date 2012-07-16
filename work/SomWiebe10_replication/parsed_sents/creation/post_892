@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN appeal))
+      (PP (TO to)
+        (NP (CD one) (JJ narrow) (JJ religious) (NN text))))
+    (VP (VBZ is) (RB n't)
+      (ADJP (RB very) (JJ persuasive)))
+    (. .)))
+
+det(appeal-2, An-1)
+nsubj(persuasive-11, appeal-2)
+num(text-7, one-4)
+amod(text-7, narrow-5)
+amod(text-7, religious-6)
+prep_to(appeal-2, text-7)
+cop(persuasive-11, is-8)
+neg(persuasive-11, n't-9)
+advmod(persuasive-11, very-10)
+root(ROOT-0, persuasive-11)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (NNP CCC))
+      (VP (VB be)
+        (ADJP (JJ important)
+          (PP (TO to)
+            (NP (NN anyone))))
+        (PP (RB not)
+          (NP (DT a) (NNP Catholic)))))
+    (. ?)))
+
+advmod(important-5, Why-1)
+aux(important-5, should-2)
+nsubj(important-5, CCC-3)
+cop(important-5, be-4)
+root(ROOT-0, important-5)
+prep_to(important-5, anyone-7)
+prep(important-5, not-8)
+det(Catholic-10, a-9)
+pobj(not-8, Catholic-10)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBG bringing)
+          (NP (NNS arguments))
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (NN anyone))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ lives)
+                      (PP (IN in)
+                        (NP (DT the) (JJ same) (NN reality)))))))
+              (VP (MD can)
+                (VP (VB agree)
+                  (PP (IN with)))))))))
+    (. .)))
+
+nsubj(bringing-4, You-1)
+aux(bringing-4, should-2)
+aux(bringing-4, be-3)
+root(ROOT-0, bringing-4)
+dobj(bringing-4, arguments-5)
+complm(agree-15, that-6)
+nsubj(lives-9, anyone-7)
+nsubj(agree-15, anyone-7)
+rcmod(anyone-7, lives-9)
+det(reality-13, the-11)
+amod(reality-13, same-12)
+prep_in(lives-9, reality-13)
+aux(agree-15, can-14)
+ccomp(bringing-4, agree-15)
+prep(agree-15, with-16)
+

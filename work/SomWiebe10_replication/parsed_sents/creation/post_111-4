@@ -1,0 +1,27 @@
+(ROOT
+  (SBARQ
+    (WHADVP
+      (WHADVP (RB just) (WRB when))
+      (PP (IN in)
+        (NP (NN history))))
+    (SQ (VBD did)
+      (NP (PRP we))
+      (VP (VB learn)
+        (SBAR
+          (S
+            (NP (DT the) (NN Earth))
+            (VP (VBD was)
+              (ADJP (JJ circular)))))))
+    (. ?)))
+
+advmod(when-2, just-1)
+advmod(learn-7, when-2)
+prep_in(when-2, history-4)
+aux(learn-7, did-5)
+nsubj(learn-7, we-6)
+root(ROOT-0, learn-7)
+det(Earth-9, the-8)
+nsubj(circular-11, Earth-9)
+cop(circular-11, was-10)
+ccomp(learn-7, circular-11)
+

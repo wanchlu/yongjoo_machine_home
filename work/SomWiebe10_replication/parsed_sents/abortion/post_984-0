@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (FRAG
+      (INTJ (UH No))
+      (, ,)
+      (PP (IN as)
+        (NP (DT a) (NNP Christian))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN morality))
+            (SBAR (IN that)
+              (S
+                (NP (NNP God))
+                (VP
+                  (VP (VBD gave))
+                  (CC and)
+                  (ADVP (RB still))
+                  (VP (VBZ gives))))))
+          (VP (VBZ applies)
+            (PP (TO to)
+              (NP
+                (NP (NN everyone))
+                (PP (IN of)
+                  (NP (DT every) (NN race)))))
+            (, ,)
+            (ADVP (RB regardless)
+              (PP (IN of)
+                (NP (NN religion))))))))
+    (. .)))
+
+dep(believe-8, No-1)
+dep(No-1, as-3)
+det(Christian-5, a-4)
+pobj(as-3, Christian-5)
+nsubj(believe-8, I-7)
+root(ROOT-0, believe-8)
+det(morality-10, the-9)
+dobj(gave-13, morality-10)
+nsubj(applies-17, morality-10)
+complm(gave-13, that-11)
+nsubj(gave-13, God-12)
+nsubj(gives-16, God-12)
+dep(morality-10, gave-13)
+dep(morality-10, still-15)
+advmod(gave-13, still-15)
+conj_and(gave-13, still-15)
+dep(morality-10, gives-16)
+conj_and(gave-13, gives-16)
+ccomp(believe-8, applies-17)
+prep_to(applies-17, everyone-19)
+det(race-22, every-21)
+prep_of(everyone-19, race-22)
+prep_regardless_of(applies-17, religion-26)
+

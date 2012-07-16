@@ -1,0 +1,86 @@
+(ROOT
+  (S (`` ``)
+    (VP (MD can)
+      (NP (PRP you))
+      (S
+        (VP (VB describe)
+          (S
+            (NP (DT an) (NN experiment))
+            (ADJP (JJ similar)
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (NNP Lenski) (NN experiment))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (MD could)
+                        (VP (VB be)
+                          (VP (VBN used)
+                            (S
+                              (VP (TO to)
+                                (VP (VB test)
+                                  (NP (NNP ID)))))))))))))))))
+    (. ?)))
+
+root(ROOT-0, can-2)
+dobj(can-2, you-3)
+dep(can-2, describe-4)
+det(experiment-6, an-5)
+nsubj(similar-7, experiment-6)
+xcomp(describe-4, similar-7)
+det(experiment-11, the-9)
+nn(experiment-11, Lenski-10)
+prep_to(similar-7, experiment-11)
+nsubjpass(used-15, experiment-11)
+aux(used-15, could-13)
+auxpass(used-15, be-14)
+rcmod(experiment-11, used-15)
+aux(test-17, to-16)
+xcomp(used-15, test-17)
+dobj(test-17, ID-18)
+
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (NNP Signature))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN Cell))
+          (PP (IN by)
+            (NP (NNP Stephen) (NNP Meyer))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJS best) (NN source))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP know)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP you))
+                  (VP (MD could)
+                    (VP (VB turn)
+                      (PP (TO to))
+                      (PP (IN for)
+                        (NP (DT an) (NN answer))))))))))))
+    (. .)))
+
+nsubj(source-12, Signature-2)
+det(Cell-5, the-4)
+prep_in(Signature-2, Cell-5)
+nn(Meyer-8, Stephen-7)
+prep_by(Cell-5, Meyer-8)
+cop(source-12, is-9)
+det(source-12, the-10)
+amod(source-12, best-11)
+root(ROOT-0, source-12)
+nsubj(know-14, I-13)
+rcmod(source-12, know-14)
+complm(turn-18, that-15)
+nsubj(turn-18, you-16)
+aux(turn-18, could-17)
+ccomp(know-14, turn-18)
+prep(turn-18, to-19)
+det(answer-22, an-21)
+prep_for(turn-18, answer-22)
+

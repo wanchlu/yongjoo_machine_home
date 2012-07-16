@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (NP (DT The) (NN sperm))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN father) (POS 's))
+            (NN body)))))
+    (. .)))
+
+det(sperm-2, The-1)
+nsubj(part-5, sperm-2)
+cop(part-5, is-3)
+det(part-5, a-4)
+root(ROOT-0, part-5)
+det(father-8, the-7)
+poss(body-10, father-8)
+prep_of(part-5, body-10)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ unfertilized) (NN egg))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN part))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN mother) (POS 's))
+            (NN body)))))
+    (. .)))
+
+det(egg-3, The-1)
+amod(egg-3, unfertilized-2)
+nsubj(part-6, egg-3)
+cop(part-6, is-4)
+det(part-6, a-5)
+root(ROOT-0, part-6)
+det(mother-9, the-8)
+poss(body-11, mother-9)
+prep_of(part-6, body-11)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (VP (VBN combined)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP create)
+      (NP (DT a) (JJ new) (NN life))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (PRP$ its) (JJ own) (NN DNA) (NN pattern))
+          (CC and)
+          (NP (JJ individual) (NN existence)))))
+    (. .)))
+
+advmod(combined-4, When-1)
+nsubjpass(combined-4, they-2)
+auxpass(combined-4, are-3)
+advcl(create-7, combined-4)
+nsubj(create-7, they-6)
+root(ROOT-0, create-7)
+det(life-10, a-8)
+amod(life-10, new-9)
+dobj(create-7, life-10)
+poss(pattern-16, its-13)
+amod(pattern-16, own-14)
+nn(pattern-16, DNA-15)
+prep_with(create-7, pattern-16)
+amod(existence-19, individual-18)
+prep_with(create-7, existence-19)
+conj_and(pattern-16, existence-19)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ new) (NN life))
+      (VP (VBZ is)
+        (ADJP (JJ reliant)
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NN mother) (POS 's))
+              (NN body))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP (DT a) (JJ separate) (NN life))))
+    (. .)))
+
+det(life-3, The-1)
+amod(life-3, new-2)
+nsubj(reliant-5, life-3)
+cop(reliant-5, is-4)
+root(ROOT-0, reliant-5)
+det(mother-8, the-7)
+poss(body-10, mother-8)
+prep_on(reliant-5, body-10)
+nsubj(life-17, it-13)
+cop(life-17, is-14)
+det(life-17, a-15)
+amod(life-17, separate-16)
+conj_but(reliant-5, life-17)
+

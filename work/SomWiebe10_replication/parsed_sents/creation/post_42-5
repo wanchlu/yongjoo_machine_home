@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (NNP Einstein))
+    (VP (VBD believed)
+      (ADVP (RB as) (RB much))
+      (SBAR (IN as)
+        (S
+          (NP
+            (NP (NNS people))
+            (PP (IN like)
+              (NP
+                (NP (NNP Richard) (NNP Dawkins))
+                (, ,)
+                (NP (NNP Christopher) (NNP Hitchens))
+                (, ,)
+                (CC and)
+                (NP (JJ many) (NNS others)))))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB believe))))))))
+    (. .)))
+
+nsubj(believed-2, Einstein-1)
+root(ROOT-0, believed-2)
+advmod(much-4, as-3)
+advmod(believed-2, much-4)
+mark(want-17, as-5)
+nsubj(want-17, people-6)
+xsubj(believe-19, people-6)
+nn(Dawkins-9, Richard-8)
+prep_like(people-6, Dawkins-9)
+nn(Hitchens-12, Christopher-11)
+prep_like(people-6, Hitchens-12)
+conj_and(Dawkins-9, Hitchens-12)
+amod(others-16, many-15)
+prep_like(people-6, others-16)
+conj_and(Dawkins-9, others-16)
+advcl(believed-2, want-17)
+aux(believe-19, to-18)
+xcomp(want-17, believe-19)
+

@@ -1,0 +1,157 @@
+(ROOT
+  (S (`` ``)
+    (PP (IN with)
+      (NP
+        (NP (RB absolutely) (DT no) (NN life) ('' ''))
+        (SBAR
+          (WHNP (WP What))
+          (S
+            (ADVP (RB exactly))
+            (VP (VBZ does)
+              (NP (PRP$ your) (NN life)))))))
+    (VP (VBP consist)
+      (PP (IN of)))
+    (. ?)))
+
+advmod(life-5, absolutely-3)
+det(life-5, no-4)
+nsubj(does-9, life-5)
+prep_with(consist-12, life-5)
+advmod(does-9, exactly-8)
+rcmod(life-5, does-9)
+poss(life-11, your-10)
+dobj(does-9, life-11)
+root(ROOT-0, consist-12)
+prep(consist-12, of-13)
+
+(ROOT
+  (S
+    (NP (NN Mom))
+    (VP (VBZ wakes)
+      (NP (PRP you))
+      (PRT (RP up)))
+    (. .)))
+
+nsubj(wakes-2, Mom-1)
+root(ROOT-0, wakes-2)
+dobj(wakes-2, you-3)
+prt(wakes-2, up-4)
+
+(ROOT
+  (S
+    (ADVP (RB Makes))
+    (NP (PRP you))
+    (VP (VBZ breakfast))
+    (. .)))
+
+advmod(breakfast-3, Makes-1)
+nsubj(breakfast-3, you-2)
+root(ROOT-0, breakfast-3)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBN driven)
+        (PP (TO to)
+          (NP (NN school)))))
+    (. .)))
+
+nsubjpass(driven-3, You-1)
+auxpass(driven-3, are-2)
+root(ROOT-0, driven-3)
+prep_to(driven-3, school-5)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP eat)
+      (NP
+        (NP (PRP$ your) (NN lunch))
+        (SBAR
+          (S
+            (NP (PRP$ your) (NN mom))
+            (VP (VBD packed)
+              (NP (PRP you)))))))
+    (. .)))
+
+nsubj(eat-2, You-1)
+root(ROOT-0, eat-2)
+poss(lunch-4, your-3)
+dobj(eat-2, lunch-4)
+poss(mom-6, your-5)
+nsubj(packed-7, mom-6)
+rcmod(lunch-4, packed-7)
+dobj(packed-7, you-8)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (VBP come)
+        (NP (NN home)))
+      (CC and)
+      (VP (VBP do)
+        (NP (PRP$ your) (NN homework))))
+    (. .)))
+
+nsubj(come-2, You-1)
+nsubj(do-5, You-1)
+root(ROOT-0, come-2)
+dobj(come-2, home-3)
+conj_and(come-2, do-5)
+poss(homework-7, your-6)
+dobj(do-5, homework-7)
+
+(ROOT
+  (S
+    (NP (NNP Watch) (NNP tv))
+    (, ,)
+    (ADVP (RB maybe)
+      (SBAR
+        (WHNP (WDT whatever))
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (NP (PRP you))))))
+    (VP (VBP do)
+      (PP (IN for)
+        (NP (NN fun))))
+    (. .)))
+
+nn(tv-2, Watch-1)
+nsubj(do-9, tv-2)
+advmod(do-9, maybe-4)
+dobj(you-8, whatever-5)
+nsubj(you-8, it-6)
+cop(you-8, is-7)
+dep(maybe-4, you-8)
+root(ROOT-0, do-9)
+prep_for(do-9, fun-11)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Eat)
+        (NP (PRP$ your) (NN dinner))))
+    (PRN
+      (S
+        (NP (PRP$ your) (NN mom))
+        (VP (VBZ makes)))
+      (, ,))
+    (VP (VBP go)
+      (S
+        (VP (TO to)
+          (VP (VB sleep)))))
+    (. .)))
+
+csubj(go-8, Eat-1)
+poss(dinner-3, your-2)
+dobj(Eat-1, dinner-3)
+poss(mom-5, your-4)
+nsubj(makes-6, mom-5)
+parataxis(go-8, makes-6)
+root(ROOT-0, go-8)
+aux(sleep-10, to-9)
+xcomp(go-8, sleep-10)
+

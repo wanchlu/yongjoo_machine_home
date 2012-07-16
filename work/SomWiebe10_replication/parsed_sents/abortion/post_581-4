@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP$ our) (JJ biomedical) (NNS sciences))
+        (VP (VBP are)
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN era))
+              (PP (IN of)
+                (NP (DT the) (NN gene))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP have)
+      (VP (VBN become)
+        (S
+          (VP (VBN focussed)
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN importance))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS genes))
+                    (PP (IN in)
+                      (NP (DT every) (NN process)))))))))))
+    (. .)))
+
+mark(are-5, Because-1)
+poss(sciences-4, our-2)
+amod(sciences-4, biomedical-3)
+nsubj(are-5, sciences-4)
+advcl(become-15, are-5)
+det(era-8, the-7)
+prep_in(are-5, era-8)
+det(gene-11, the-10)
+prep_of(era-8, gene-11)
+nsubj(become-15, we-13)
+aux(become-15, have-14)
+root(ROOT-0, become-15)
+dep(become-15, focussed-16)
+det(importance-19, the-18)
+prep_on(focussed-16, importance-19)
+prep_of(importance-19, genes-21)
+det(process-24, every-23)
+prep_in(genes-21, process-24)
+

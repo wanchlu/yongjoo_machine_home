@@ -1,0 +1,90 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN report))
+      (VP (VBZ claims)))
+    (: :)
+    (S
+      (S
+        (NP (NNP NMNH) (NNS officials))
+        (VP (VBD conspired)
+          (PP (IN with)
+            (NP (DT a) (JJ special) (NN interest) (NN group)))
+          (PP (IN on)
+            (NP (NN government) (NN time)))))
+      (CC and)
+      (S
+        (S
+          (VP (VBG using)
+            (NP (NN government) (NNS emails))
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RB publicly))
+                  (VB smear)
+                  (NP
+                    (NP (NNP Dr.) (NNP Sternberg))
+                    (: ;)
+                    (S
+                      (NP (DT the) (NN group))
+                      (VP (VBD was)
+                        (ADVP (RB also))))))))))
+        (VP (VBD enlisted)
+          (S
+            (VP (TO to)
+              (VP (VB monitor)
+                (NP
+                  (NP (NNP Sternbergs))
+                  (PP (IN outside)
+                    (NP (NNS activities))))
+                (SBAR (IN in) (NN order)
+                  (S
+                    (VP (TO to)
+                      (VP (VB find)
+                        (NP (DT a) (NN way)
+                          (S
+                            (VP (TO to)
+                              (VP (VB dismiss)
+                                (NP (PRP him))))))))))))))))
+    (. .)))
+
+det(report-2, The-1)
+nsubj(claims-3, report-2)
+root(ROOT-0, claims-3)
+nn(officials-6, NMNH-5)
+nsubj(conspired-7, officials-6)
+parataxis(claims-3, conspired-7)
+det(group-12, a-9)
+amod(group-12, special-10)
+nn(group-12, interest-11)
+prep_with(conspired-7, group-12)
+nn(time-15, government-14)
+prep_on(conspired-7, time-15)
+csubj(enlisted-30, using-17)
+nn(emails-19, government-18)
+dobj(using-17, emails-19)
+aux(smear-22, to-20)
+advmod(smear-22, publicly-21)
+xcomp(using-17, smear-22)
+nn(Sternberg-24, Dr.-23)
+dobj(smear-22, Sternberg-24)
+det(group-27, the-26)
+nsubj(was-28, group-27)
+dep(Sternberg-24, was-28)
+advmod(was-28, also-29)
+parataxis(claims-3, enlisted-30)
+conj_and(conspired-7, enlisted-30)
+aux(monitor-32, to-31)
+xcomp(enlisted-30, monitor-32)
+dobj(monitor-32, Sternbergs-33)
+prep_outside(Sternbergs-33, activities-35)
+mark(find-39, in-36)
+dep(find-39, order-37)
+aux(find-39, to-38)
+purpcl(monitor-32, find-39)
+det(way-41, a-40)
+dobj(find-39, way-41)
+aux(dismiss-43, to-42)
+infmod(way-41, dismiss-43)
+dobj(dismiss-43, him-44)
+

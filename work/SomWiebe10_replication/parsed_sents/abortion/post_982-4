@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (ADVP (RB already))
+      (VBD answered)
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (MD should))))
+      (, ,)
+      (PP (IN with)
+        (S
+          (NP (EX there))
+          (VP (VBG being)
+            (NP
+              (NP (NNS exceptions))
+              (PP (IN for)
+                (NP (JJ special) (NNS circumstances))))))))
+    (. .)))
+
+nsubj(answered-3, I-1)
+advmod(answered-3, already-2)
+root(ROOT-0, answered-3)
+complm(should-6, that-4)
+nsubj(should-6, they-5)
+ccomp(answered-3, should-6)
+expl(being-10, there-9)
+prepc_with(answered-3, being-10)
+nsubj(being-10, exceptions-11)
+amod(circumstances-14, special-13)
+prep_for(exceptions-11, circumstances-14)
+

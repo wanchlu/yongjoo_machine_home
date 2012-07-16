@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (SBAR
+      (PRN (: --)
+        (NP (NNP Jim))
+        (: --))
+      (S
+        (S
+          (ADVP (RB Finally))
+          (, ,)
+          (NP (PRP I))
+          (ADVP (RB just))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB say)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ appears)
+                        (PP (TO to)
+                          (NP (PRP me)))
+                        (SBAR (IN that)
+                          (S
+                            (NP (NNS statements))
+                            (VP (VBD made)
+                              (PP (IN against)
+                                (NP (NNP ID))))))))))))))
+        (CC and)
+        (S
+          (S
+            (NP (PRP$ their) (NNS proponents))
+            (VP (VBD made)
+              (PP (IN by)
+                (NP (NNS others)))))
+          (, ,) (RB not)
+          (S
+            (NP (PRP you))
+            (VP (VBG regarding)
+              (SBAR
+                (S
+                  (NP (NNP ID))
+                  (VP (VBZ has)
+                    (VP (VBN been)
+                      (VP
+                        (ADVP (RB so) (RB emotionally))
+                        (VBN charged)))))))))))
+    (NP (PRP it))
+    (VP (VBZ makes)
+      (SBAR
+        (S
+          (NP (PRP me))
+          (VP (VBP feel)
+            (SBAR
+              (S
+                (NP (PRP$ their) (NN judgment))
+                (VP (VBZ is)
+                  (VP (VBN affected)))))))))
+    (. .)))
+
+dep(want-8, Jim-2)
+advmod(want-8, Finally-4)
+nsubj(want-8, I-6)
+xsubj(say-10, I-6)
+advmod(want-8, just-7)
+dep(makes-38, want-8)
+aux(say-10, to-9)
+xcomp(want-8, say-10)
+complm(appears-13, that-11)
+nsubj(appears-13, it-12)
+ccomp(say-10, appears-13)
+prep_to(appears-13, me-15)
+complm(made-18, that-16)
+nsubj(made-18, statements-17)
+ccomp(appears-13, made-18)
+prep_against(made-18, ID-20)
+poss(proponents-23, their-22)
+nsubj(made-24, proponents-23)
+conj_and(want-8, made-24)
+dep(makes-38, made-24)
+prep_by(made-24, others-26)
+neg(made-24, not-28)
+nsubj(regarding-30, you-29)
+dep(made-24, regarding-30)
+nsubjpass(charged-36, ID-31)
+aux(charged-36, has-32)
+auxpass(charged-36, been-33)
+advmod(emotionally-35, so-34)
+advmod(charged-36, emotionally-35)
+ccomp(regarding-30, charged-36)
+nsubj(makes-38, it-37)
+root(ROOT-0, makes-38)
+nsubj(feel-40, me-39)
+ccomp(makes-38, feel-40)
+poss(judgment-42, their-41)
+nsubjpass(affected-44, judgment-42)
+auxpass(affected-44, is-43)
+ccomp(feel-40, affected-44)
+

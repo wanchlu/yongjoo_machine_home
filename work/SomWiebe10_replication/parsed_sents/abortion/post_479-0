@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (VP (VBN reversed)
+            (NP
+              (NP (NN something))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN voted)))))))))
+      (, ,)
+      (CC and)
+      (VP (VBD reflected)
+        (NP
+          (NP (DT the) (NN will))
+          (PP (IN of)
+            (NP (DT the) (NN majority))))))
+    (. .)))
+
+nsubj(reversed-5, He-1)
+nsubj(reflected-12, He-1)
+aux(reversed-5, should-2)
+neg(reversed-5, not-3)
+aux(reversed-5, have-4)
+root(ROOT-0, reversed-5)
+dobj(reversed-5, something-6)
+nsubjpass(voted-9, something-6)
+auxpass(voted-9, was-8)
+rcmod(something-6, voted-9)
+conj_and(reversed-5, reflected-12)
+det(will-14, the-13)
+dobj(reflected-12, will-14)
+det(majority-17, the-16)
+prep_of(will-14, majority-17)
+

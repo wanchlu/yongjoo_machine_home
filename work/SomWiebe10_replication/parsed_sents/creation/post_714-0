@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP Bible))
+    (VP
+      (VP (VBZ is)
+        (NP
+          (NP (DT the)
+            (ADJP
+              (ADJP (RBS most) (VBN published))
+              (CC and)
+              (ADJP (RBS most) (JJ wide)))
+            (NN spread) (NN book))
+          (PP (IN of)
+            (NP
+              (NP (DT all) (NNS times))
+              (: ...)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ does) (RB not)
+                    (VP (VB mean)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ is)
+                            (ADJP (JJ true)))))))))
+              (: ...)))))
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB also)))
+      (NP
+        (NP (DT an) (JJ important) (NN part))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NN education))
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (PP (IN in)
+                    (NP (DT some) (NNS cases)))
+                  (NP
+                    (NP (DT the) (JJ only) (NN source))
+                    (PP (IN of)
+                      (NP (NN education)))))
+                (-RRB- -RRB-)))
+            (PP (IN for)
+              (NP (NNS centuries)))))))
+    (. .)))
+
+det(Bible-2, The-1)
+nsubj(book-11, Bible-2)
+nsubj(was-26, Bible-2)
+cop(book-11, is-3)
+det(book-11, the-4)
+advmod(published-6, most-5)
+amod(book-11, published-6)
+advmod(wide-9, most-8)
+conj_and(published-6, wide-9)
+amod(book-11, wide-9)
+nn(book-11, spread-10)
+root(ROOT-0, book-11)
+det(times-14, all-13)
+prep_of(book-11, times-14)
+nsubj(mean-19, which-16)
+aux(mean-19, does-17)
+neg(mean-19, not-18)
+rcmod(times-14, mean-19)
+complm(true-23, that-20)
+nsubj(true-23, it-21)
+cop(true-23, is-22)
+ccomp(mean-19, true-23)
+conj_and(book-11, was-26)
+advmod(was-26, also-27)
+det(part-30, an-28)
+amod(part-30, important-29)
+dobj(book-11, part-30)
+prep_of(part-30, education-32)
+det(cases-36, some-35)
+prep_in(source-39, cases-36)
+det(source-39, the-37)
+amod(source-39, only-38)
+dep(education-32, source-39)
+prep_of(source-39, education-41)
+prep_for(education-32, centuries-44)
+

@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hear)
+      (NP (PRP you)))
+    (. .)))
+
+nsubj(hear-2, I-1)
+root(ROOT-0, hear-2)
+dobj(hear-2, you-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (RB just) (JJ glad)
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBP are)
+              (NP
+                (NP
+                  (QP (RB only) (DT a) (JJ few))
+                  (NNS liberals))
+                (PP (IN in)
+                  (NP (PRP$ my) (NN school)))))))))
+    (. .)))
+
+nsubj(glad-4, I-1)
+cop(glad-4, 'm-2)
+advmod(glad-4, just-3)
+root(ROOT-0, glad-4)
+complm(are-7, that-5)
+expl(are-7, there-6)
+ccomp(glad-4, are-7)
+quantmod(few-10, only-8)
+quantmod(few-10, a-9)
+num(liberals-11, few-10)
+nsubj(are-7, liberals-11)
+poss(school-14, my-13)
+prep_in(liberals-11, school-14)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP (DT a) (JJ Catholic) (NN school)))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (NP (DT the) (JJ other) (NNS kids))))
+          (VP (VBP are)
+            (VP (VBN loaded)
+              (S
+                (ADJP (JJ rich))))))))
+    (. .)))
+
+nsubj(go-2, I-1)
+root(ROOT-0, go-2)
+det(school-6, a-4)
+amod(school-6, Catholic-5)
+prep_to(go-2, school-6)
+advmod(loaded-14, where-7)
+nsubjpass(loaded-14, most-8)
+det(kids-12, the-10)
+amod(kids-12, other-11)
+prep_of(most-8, kids-12)
+auxpass(loaded-14, are-13)
+advcl(go-2, loaded-14)
+acomp(loaded-14, rich-15)
+
+(ROOT
+  (S
+    (PP (IN Because)
+      (PP (IN of)
+        (NP (DT this))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP 're)
+      (ADJP (RB mostly) (JJ conservative)))
+    (. .)))
+
+prepc_because_of(conservative-8, of-2)
+pobj(conservative-8, this-3)
+nsubj(conservative-8, they-5)
+cop(conservative-8, 're-6)
+advmod(conservative-8, mostly-7)
+root(ROOT-0, conservative-8)
+
+(ROOT
+  (S (CC But)
+    (NP (DT the) (NNS liberals))
+    (VP (VBP are)
+      (ADJP (JJ liberal)))
+    (. .)))
+
+cc(liberal-5, But-1)
+det(liberals-3, the-2)
+nsubj(liberal-5, liberals-3)
+cop(liberal-5, are-4)
+root(ROOT-0, liberal-5)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (S
+      (VP (VBD \/) (-RRB- -RRB-)
+        (NP
+          (NP (NNS Humans))
+          (CC or)
+          (NP (NN sub)))
+        (NP (JJ human) (NN species))))
+    (VP (VBP have)
+      (VP (VBN been)
+        (ADJP (RB around)
+          (CC and)
+          (VBG evolving))
+        (PP (IN for)
+          (PP (IN over)
+            (NP
+              (QP (DT a) (CD million))
+              (NNS years))))))
+    (. .)))
+
+csubj(around-10, \/-1)
+csubj(evolving-12, \/-1)
+iobj(\/-1, Humans-3)
+iobj(\/-1, sub-5)
+conj_or(Humans-3, sub-5)
+amod(species-7, human-6)
+dobj(\/-1, species-7)
+aux(around-10, have-8)
+cop(around-10, been-9)
+root(ROOT-0, around-10)
+conj_and(around-10, evolving-12)
+prep(around-10, for-13)
+pcomp(for-13, over-14)
+quantmod(million-16, a-15)
+num(years-17, million-16)
+prep_over(for-13, years-17)
+

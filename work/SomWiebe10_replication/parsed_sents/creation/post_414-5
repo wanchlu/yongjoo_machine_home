@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (MD can)
+          (VP (VB achieve)
+            (NP
+              (NP (DT that))
+              (, ,)
+              (NP
+                (NP (NN life))
+                (VP (VBG springing)
+                  (ADVP (RB forth)
+                    (PP (IN from)
+                      (ADJP (JJ non-life)))))))))))
+    (, ,)
+    (NP
+      (NP (NN evolution))
+      (, ,)
+      (RRC
+        (ADVP (IN at) (JJS least))
+        (PP (IN in)
+          (NP (NN theory))))
+      (, ,))
+    (VP
+      (ADVP (RB actually))
+      (VBZ holds)
+      (NP (NN water))
+      (, ,)
+      (SBAR (IN though)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP (JJ other) (NNS problems))))))
+    (. .)))
+
+mark(achieve-4, If-1)
+nsubj(achieve-4, you-2)
+aux(achieve-4, can-3)
+advcl(holds-21, achieve-4)
+dobj(achieve-4, that-5)
+appos(that-5, life-7)
+partmod(life-7, springing-8)
+advmod(springing-8, forth-9)
+prep_from(forth-9, non-life-11)
+nsubj(holds-21, evolution-13)
+rcmod(evolution-13, at-15)
+pobj(at-15, least-16)
+dep(at-15, in-17)
+pobj(in-17, theory-18)
+advmod(holds-21, actually-20)
+root(ROOT-0, holds-21)
+dobj(holds-21, water-22)
+mark(are-26, though-24)
+expl(are-26, there-25)
+advcl(holds-21, are-26)
+amod(problems-28, other-27)
+nsubj(are-26, problems-28)
+

@@ -1,0 +1,43 @@
+(ROOT
+  (S ('' '')
+    (NP (WP What) (NN reason))
+    (VP (VBZ is)
+      (VP (VBN given)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN appearance))
+            (PP (IN of)
+              (NP (NNS birds)))))
+        (PP (IN after)
+          (NP
+            (NP (DT the) (NN appearance))
+            (PP (IN of)
+              (NP
+                (NP (NN bird))
+                (PP (IN like)
+                  (NP (NNS dinosaurs)))
+                (PRN (-LRB- -LRB-)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD were) (RB not)
+                        (ADJP (JJ lizards)))))
+                  (-RRB- -RRB-))))))))
+    (. ?)))
+
+dep(reason-3, What-2)
+nsubjpass(given-5, reason-3)
+auxpass(given-5, is-4)
+root(ROOT-0, given-5)
+det(appearance-8, the-7)
+prep_for(given-5, appearance-8)
+prep_of(appearance-8, birds-10)
+det(appearance-13, the-12)
+prep_after(given-5, appearance-13)
+prep_of(appearance-13, bird-15)
+prep_like(bird-15, dinosaurs-17)
+nsubj(lizards-22, which-19)
+cop(lizards-22, were-20)
+neg(lizards-22, not-21)
+dep(bird-15, lizards-22)
+

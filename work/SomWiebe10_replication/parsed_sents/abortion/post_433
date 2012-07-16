@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (NP (DT A) (NN woman)
+      (S
+        (VP (VBG having)
+          (S
+            (VP (TO to)
+              (VP (VB raise)
+                (NP (DT a) (NN child))
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP she))
+                    (VP (VBZ does) (RB n't)
+                      (VP (VB want)))))))))))
+    (VP (VBZ is)
+      (NP (DT a) (`` ``) (NN death) (NN sentence) (, ,) ('' ''))
+      (ADVP (RB huh)))
+    (. ?)))
+
+det(woman-2, A-1)
+nsubj(sentence-17, woman-2)
+dep(woman-2, having-3)
+aux(raise-5, to-4)
+xcomp(having-3, raise-5)
+det(child-7, a-6)
+dobj(raise-5, child-7)
+complm(want-12, that-8)
+nsubj(want-12, she-9)
+aux(want-12, does-10)
+neg(want-12, n't-11)
+ccomp(raise-5, want-12)
+cop(sentence-17, is-13)
+det(sentence-17, a-14)
+nn(sentence-17, death-16)
+root(ROOT-0, sentence-17)
+advmod(sentence-17, huh-20)
+
+(ROOT
+  (FRAG
+    (ADJP
+      (WHADVP (WRB How))
+      (JJ ironic))
+    (SBAR (IN that)
+      (S
+        (NP (PRP you))
+        (VP (MD would)
+          (VP (VB choose)
+            (NP (JJ such) (NN language))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP are)
+                  (VP (VBG advocating)
+                    (NP
+                      (NP (DT the) (RB quite) (JJ literal) (NN death) (NN sentence))
+                      (PP (IN of)
+                        (NP (DT the) (NN child))))))))))))
+    (. .)))
+
+advmod(ironic-2, How-1)
+root(ROOT-0, ironic-2)
+dep(choose-6, that-3)
+nsubj(choose-6, you-4)
+aux(choose-6, would-5)
+dep(ironic-2, choose-6)
+amod(language-8, such-7)
+dobj(choose-6, language-8)
+advmod(advocating-12, when-9)
+nsubj(advocating-12, you-10)
+aux(advocating-12, are-11)
+advcl(choose-6, advocating-12)
+det(sentence-17, the-13)
+advmod(sentence-17, quite-14)
+amod(sentence-17, literal-15)
+nn(sentence-17, death-16)
+dobj(advocating-12, sentence-17)
+det(child-20, the-19)
+prep_of(sentence-17, child-20)
+

@@ -1,0 +1,48 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (NP (NN biology))
+        (VP (VBZ leads)
+          (PP (TO to)
+            (NP (JJ new) (NN design)))
+          (SBAR
+            (SBAR (IN if)
+              (S
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (VP (VBN viewed)
+                      (PP (IN in)
+                        (NP (DT that) (NN context))))))
+                (, ,) (`` ``)
+                (CC And)
+                (S
+                  (NP (PRP it))
+                  (ADVP (RB never))
+                  (VP (VBZ has)))))
+            (CC and)
+            (FRAG
+              (ADVP (RB never)))))))
+    (VP (MD will))
+    (. .)))
+
+mark(leads-4, If-2)
+nsubj(leads-4, biology-3)
+csubj(will-23, leads-4)
+amod(design-7, new-6)
+prep_to(leads-4, design-7)
+mark(viewed-11, if-8)
+nsubjpass(viewed-11, it-9)
+auxpass(viewed-11, is-10)
+dep(leads-4, viewed-11)
+det(context-14, that-13)
+prep_in(viewed-11, context-14)
+nsubj(has-20, it-18)
+neg(has-20, never-19)
+dep(leads-4, has-20)
+conj_and(viewed-11, has-20)
+dep(leads-4, never-22)
+conj_and(viewed-11, never-22)
+root(ROOT-0, will-23)
+

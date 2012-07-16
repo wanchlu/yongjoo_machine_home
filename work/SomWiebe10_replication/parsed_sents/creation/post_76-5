@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB counter))))
+      (, ,)
+      (NP (NNP ID) (NNS proponents))
+      (VP (VBP argue)
+        (SBAR (IN that)
+          (S
+            (NP (JJ evolutionary) (NNS mechanisms))
+            (VP
+              (VP (VBP lack)
+                (NP (NN purpose)))
+              (CC and)
+              (VP (VBP are)
+                (ADJP (JJ random))))))))
+    (, ,)
+    (NP
+      (NP (DT both))
+      (PP (IN of)
+        (NP (NN course))))
+    (VP (VBP are)
+      (NP
+        (ADJP (JJ misleading)
+          (CC and)
+          (JJ flawed))
+        (NNS arguments)))
+    (. .)))
+
+aux(counter-2, To-1)
+purpcl(argue-6, counter-2)
+nn(proponents-5, ID-4)
+nsubj(argue-6, proponents-5)
+ccomp(arguments-23, argue-6)
+complm(lack-10, that-7)
+amod(mechanisms-9, evolutionary-8)
+nsubj(lack-10, mechanisms-9)
+nsubj(random-14, mechanisms-9)
+ccomp(argue-6, lack-10)
+dobj(lack-10, purpose-11)
+cop(random-14, are-13)
+ccomp(argue-6, random-14)
+conj_and(lack-10, random-14)
+nsubj(arguments-23, both-16)
+prep_of(both-16, course-18)
+cop(arguments-23, are-19)
+amod(arguments-23, misleading-20)
+conj_and(misleading-20, flawed-22)
+amod(arguments-23, flawed-22)
+root(ROOT-0, arguments-23)
+

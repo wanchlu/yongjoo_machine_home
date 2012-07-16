@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ full-sky) (NNS maps))
+      (VP (VBN used)
+        (PP (IN in)
+          (NP (DT these) (NNS analyses)))))
+    (VP (VBP are)
+      (VP (VBN known)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP
+                (NP (JJ residual) (NN foreground) (NN contamination))
+                (CONJP (RB as) (RB well) (IN as))
+                (NP (JJ complicated) (NN noise) (NNS properties))))))))
+    (. .)))
+
+det(maps-3, The-1)
+amod(maps-3, full-sky-2)
+nsubjpass(known-9, maps-3)
+xsubj(have-11, maps-3)
+partmod(maps-3, used-4)
+det(analyses-7, these-6)
+prep_in(used-4, analyses-7)
+auxpass(known-9, are-8)
+root(ROOT-0, known-9)
+aux(have-11, to-10)
+xcomp(known-9, have-11)
+amod(contamination-14, residual-12)
+nn(contamination-14, foreground-13)
+dobj(have-11, contamination-14)
+amod(properties-20, complicated-18)
+nn(properties-20, noise-19)
+dobj(have-11, properties-20)
+conj_and(contamination-14, properties-20)
+

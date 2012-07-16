@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (MD may)
+        (VP (VB allow)
+          (S
+            (NP (NNS children))
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN sent)
+                  (PP (TO to)
+                    (NP (NN faith) (NNS schools))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP do) (RB not)
+        (VP (VB allow)
+          (S
+            (NP (DT those) (NNS schools))
+            (VP (TO to)
+              (VP (VB teach)
+                (NP (PRP them))
+                (SBAR
+                  (WHNP (WDT whatever))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP like))))))))))
+    (. .)))
+
+nsubj(allow-3, We-1)
+aux(allow-3, may-2)
+root(ROOT-0, allow-3)
+nsubjpass(sent-7, children-4)
+aux(sent-7, to-5)
+auxpass(sent-7, be-6)
+xcomp(allow-3, sent-7)
+nn(schools-10, faith-9)
+prep_to(sent-7, schools-10)
+nsubj(allow-16, we-13)
+aux(allow-16, do-14)
+neg(allow-16, not-15)
+conj_but(allow-3, allow-16)
+det(schools-18, those-17)
+nsubj(teach-20, schools-18)
+aux(teach-20, to-19)
+xcomp(allow-16, teach-20)
+dobj(teach-20, them-21)
+dobj(like-24, whatever-22)
+nsubj(like-24, they-23)
+dep(teach-20, like-24)
+

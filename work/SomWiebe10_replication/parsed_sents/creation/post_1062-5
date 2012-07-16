@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN theory))
+      (, ,)
+      (PP (IN on)
+        (NP (DT the) (JJ other) (NN hand)))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN model))
+        (PP (IN of)
+          (NP
+            (NP (NNS observations))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP
+                  (VP (VBZ explains)
+                    (NP (DT those) (NNS observations)))
+                  (, ,)
+                  (CC and)
+                  (VP (VBZ has)
+                    (NP (JJ predictive) (NN power))))))))))
+    (. .)))
+
+det(theory-2, A-1)
+nsubj(model-11, theory-2)
+det(hand-7, the-5)
+amod(hand-7, other-6)
+prep_on(theory-2, hand-7)
+cop(model-11, is-9)
+det(model-11, a-10)
+root(ROOT-0, model-11)
+prep_of(model-11, observations-13)
+nsubj(explains-15, observations-13)
+nsubj(has-20, observations-13)
+rcmod(observations-13, explains-15)
+det(observations-17, those-16)
+dobj(explains-15, observations-17)
+rcmod(observations-13, has-20)
+conj_and(explains-15, has-20)
+amod(power-22, predictive-21)
+dobj(has-20, power-22)
+

@@ -1,0 +1,166 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (PP (IN in)
+          (NP (NN evolution)))))
+    (: ;)
+    (S
+      (NP (NN evolution))
+      (VP (VBZ is)
+        (NP (DT the) (NN mechanism))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT some) (NN species))
+              (PP (IN of)
+                (NP (NNS animals)
+                  (CC and)
+                  (NNS plants))))
+            (VP (VBP use)
+              (S
+                (VP (TO to)
+                  (VP (VB adapt)
+                    (PP (TO to)
+                      (NP
+                        (NP (JJ certain) (NNS circumstances))
+                        (SBAR
+                          (S
+                            (VP (VBP do)
+                              (PP (TO to)
+                                (NP (DT the) (NN change))))))))))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+prep_in(believe-2, evolution-4)
+nsubj(mechanism-9, evolution-6)
+cop(mechanism-9, is-7)
+det(mechanism-9, the-8)
+parataxis(believe-2, mechanism-9)
+complm(use-17, that-10)
+det(species-12, some-11)
+nsubj(use-17, species-12)
+xsubj(adapt-19, species-12)
+prep_of(species-12, animals-14)
+prep_of(species-12, plants-16)
+conj_and(animals-14, plants-16)
+ccomp(mechanism-9, use-17)
+aux(adapt-19, to-18)
+xcomp(use-17, adapt-19)
+amod(circumstances-22, certain-21)
+prep_to(adapt-19, circumstances-22)
+rcmod(circumstances-22, do-23)
+det(change-26, the-25)
+prep_to(do-23, change-26)
+
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP$ our) (NN planet))
+        (VP (VBZ is)
+          (ADVP (RB currently))
+          (VP (VBG changing)))))
+    (PRN (, ,)
+      (S
+        (NP (DT some) (NNS animals))
+        (VP (VBP need)
+          (S
+            (VP (TO to)
+              (VP (VB adapt)
+                (PP (TO to)
+                  (NP (DT that))))))))
+      (, ,))
+    (SBAR (IN if)
+      (S
+        (NP (PRP they))
+        (VP
+          (VP (VBP do) (RB n't))
+          (CC or)
+          (VP (VBP are)
+            (ADJP (JJ incapable))))))
+    (ADVP (RB then))
+    (NP (PRP they))
+    (VP (MD can)
+      (VP (VB become)
+        (ADJP (JJ extinct))))
+    (. .)))
+
+mark(changing-6, Because-1)
+poss(planet-3, our-2)
+nsubj(changing-6, planet-3)
+aux(changing-6, is-4)
+advmod(changing-6, currently-5)
+advcl(extinct-27, changing-6)
+det(animals-9, some-8)
+nsubj(need-10, animals-9)
+xsubj(adapt-12, animals-9)
+parataxis(extinct-27, need-10)
+aux(adapt-12, to-11)
+xcomp(need-10, adapt-12)
+prep_to(adapt-12, that-14)
+mark(do-18, if-16)
+nsubj(do-18, they-17)
+nsubj(incapable-22, they-17)
+dep(extinct-27, do-18)
+neg(do-18, n't-19)
+cop(incapable-22, are-21)
+conj_or(do-18, incapable-22)
+dep(extinct-27, incapable-22)
+advmod(extinct-27, then-23)
+nsubj(extinct-27, they-24)
+aux(extinct-27, can-25)
+cop(extinct-27, become-26)
+root(ROOT-0, extinct-27)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP It))
+    (VP (VBZ does)
+      (SBAR
+        (S
+          (VP (VBP exist)
+            (SBAR
+              (S
+                (NP (EX there))
+                (VP (VBP are)
+                  (NP
+                    (NP (NNS animals))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VB evolve)
+                          (PP (IN from)
+                            (NP
+                              (NP (DT the) (NNS dinosaurs) (NN age))
+                              (, ,)
+                              (NP (JJ like) (NNS aligators))
+                              (, ,)
+                              (NP (NNS tortules))
+                              (CC and)
+                              (NP (JJ many) (NNS others)))))))))))))))
+    (. .)))
+
+cc(does-3, And-1)
+nsubj(does-3, It-2)
+root(ROOT-0, does-3)
+ccomp(does-3, exist-4)
+expl(are-6, there-5)
+ccomp(exist-4, are-6)
+nsubj(are-6, animals-7)
+nsubj(evolve-9, animals-7)
+rcmod(animals-7, evolve-9)
+det(age-13, the-11)
+nn(age-13, dinosaurs-12)
+prep_from(evolve-9, age-13)
+amod(aligators-16, like-15)
+prep_from(evolve-9, aligators-16)
+conj_and(age-13, aligators-16)
+prep_from(evolve-9, tortules-18)
+conj_and(age-13, tortules-18)
+amod(others-21, many-20)
+prep_from(evolve-9, others-21)
+conj_and(age-13, others-21)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP predict)
+      (SBAR (IN that)
+        (S
+          (NP (DT that))
+          (VP (MD will)
+            (VP
+              (VP (VB change)
+                (PP (IN with)
+                  (NP
+                    (NP (DT the) (JJ new) (NN crop))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS scientists))
+                        (, ,)
+                        (SBAR
+                          (WHNP
+                            (NP (DT a) (JJ few))
+                            (WHPP (IN of)
+                              (WHNP (WP whom))))
+                          (S
+                            (VP (MD may)
+                              (VP (VB see)
+                                (NP (PRP$ its) (NN relevance))))))
+                        (, ,))))))
+              (CC and)
+              (VP (VB pursue)
+                (NP (PRP it))))))))
+    (. .)))
+
+nsubj(predict-2, I-1)
+root(ROOT-0, predict-2)
+complm(change-6, that-3)
+nsubj(change-6, that-4)
+nsubj(pursue-24, that-4)
+aux(change-6, will-5)
+ccomp(predict-2, change-6)
+det(crop-10, the-8)
+amod(crop-10, new-9)
+prep_with(change-6, crop-10)
+prep_of(crop-10, scientists-12)
+prep_of(few-15, scientists-12)
+det(few-15, a-14)
+nsubj(see-19, few-15)
+aux(see-19, may-18)
+rcmod(scientists-12, see-19)
+poss(relevance-21, its-20)
+dobj(see-19, relevance-21)
+ccomp(predict-2, pursue-24)
+conj_and(change-6, pursue-24)
+dobj(pursue-24, it-25)
+

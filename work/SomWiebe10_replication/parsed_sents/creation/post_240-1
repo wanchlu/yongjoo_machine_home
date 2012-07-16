@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (DT Both) (NNS books))
+    (VP (VBP attempt)
+      (S
+        (VP (TO to)
+          (VP (VB show)
+            (SBAR (IN that)
+              (S
+                (NP (EX there))
+                (VP (VBZ limits)
+                  (PRN (-LRB- -LRB-) (VB edges) (-RRB- -RRB-))
+                  (PP (TO to)
+                    (NP
+                      (NP (JJ evolutionary) (NN theory))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (MD can) (RB not)
+                            (VP (VB be)
+                              (VP (VBN crossed)))))))))))))))
+    (. .)))
+
+det(books-2, Both-1)
+nsubj(attempt-3, books-2)
+xsubj(show-5, books-2)
+root(ROOT-0, attempt-3)
+aux(show-5, to-4)
+xcomp(attempt-3, show-5)
+complm(limits-8, that-6)
+expl(limits-8, there-7)
+ccomp(show-5, limits-8)
+dep(limits-8, edges-10)
+amod(theory-14, evolutionary-13)
+prep_to(limits-8, theory-14)
+nsubjpass(crossed-19, theory-14)
+aux(crossed-19, can-16)
+neg(crossed-19, not-17)
+auxpass(crossed-19, be-18)
+rcmod(theory-14, crossed-19)
+

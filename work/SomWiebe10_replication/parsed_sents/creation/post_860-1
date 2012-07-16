@@ -1,0 +1,26 @@
+(ROOT
+  (S
+    (NP (NNP Scientist))
+    (VP (VBP have)
+      (VP (VBN shown)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN world))
+            (VP (VBD was) (RB not)
+              (VP (VBN created)
+                (PP (IN in)
+                  (NP (CD six) (NNS days)))))))))
+    (. .)))
+
+nsubj(shown-3, Scientist-1)
+aux(shown-3, have-2)
+root(ROOT-0, shown-3)
+complm(created-9, that-4)
+det(world-6, the-5)
+nsubjpass(created-9, world-6)
+auxpass(created-9, was-7)
+neg(created-9, not-8)
+ccomp(shown-3, created-9)
+num(days-12, six-11)
+prep_in(created-9, days-12)
+

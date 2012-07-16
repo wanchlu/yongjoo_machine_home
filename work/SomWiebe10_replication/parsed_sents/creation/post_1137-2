@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (RB Exactly) (WRB how)
+        (CC and)
+        (WRB why))
+      (S
+        (NP (DT these) (NNS changes))
+        (VP (VBP take)
+          (SBAR
+            (S
+              (NP (NN place))
+              (VP (VBZ is)
+                (ADJP (JJ subject)
+                  (S
+                    (VP
+                      (VP (TO to)
+                        (VP (VB debate)
+                          (SBAR
+                            (S
+                              (NP (PRP I))
+                              (VP (VBP suppose))))))
+                      (, ,)
+                      (CC but)
+                      (VP (TO to)
+                        (VP (VB suggest)
+                          (SBAR
+                            (S
+                              (NP (PRP it))
+                              (VP (VBZ does) (RB not)
+                                (VP (VB exist))))))))))))))))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (VP (VBG denying)
+        (NP
+          (NP (DT the) (NN evidence))
+          (PP (IN of)
+            (NP (JJ genetic) (NN diversity)))
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP see) (, ,)
+                (PP (IN with)
+                  (NP (PRP$ your) (JJ own) (NNS eyes)))
+                (, ,)
+                (ADVP (DT all) (RP around))))))
+        (NP
+          (NP (PRP you))
+          (NP (DT every) (NN day)))))
+    (. .)))
+
+dep(how-2, Exactly-1)
+advmod(take-7, how-2)
+dep(how-2, and-3)
+dep(how-2, why-4)
+det(changes-6, these-5)
+nsubj(take-7, changes-6)
+advcl(denying-25, take-7)
+csubj(denying-25, take-7)
+nsubj(subject-10, place-8)
+cop(subject-10, is-9)
+ccomp(take-7, subject-10)
+aux(debate-12, to-11)
+dep(subject-10, debate-12)
+nsubj(suppose-14, I-13)
+ccomp(debate-12, suppose-14)
+aux(suggest-18, to-17)
+dep(subject-10, suggest-18)
+conj_but(debate-12, suggest-18)
+nsubj(exist-22, it-19)
+aux(exist-22, does-20)
+neg(exist-22, not-21)
+ccomp(suggest-18, exist-22)
+aux(denying-25, is-23)
+advmod(denying-25, just-24)
+root(ROOT-0, denying-25)
+det(evidence-27, the-26)
+iobj(denying-25, evidence-27)
+dobj(see-32, evidence-27)
+amod(diversity-30, genetic-29)
+prep_of(evidence-27, diversity-30)
+nsubj(see-32, you-31)
+rcmod(evidence-27, see-32)
+poss(eyes-37, your-35)
+amod(eyes-37, own-36)
+prep_with(see-32, eyes-37)
+dep(around-40, all-39)
+advmod(see-32, around-40)
+dobj(denying-25, you-41)
+det(day-43, every-42)
+dep(you-41, day-43)
+

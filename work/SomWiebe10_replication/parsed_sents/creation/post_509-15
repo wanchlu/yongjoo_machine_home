@@ -1,0 +1,50 @@
+(ROOT
+  (SINV
+    (S
+      (SBAR (IN As)
+        (S
+          (NP (PRP we))
+          (VP (VBD noted))))
+      (, ,)
+      (ADVP (RB even))
+      (NP (NNP anti) (NNP ID) (JJ legal) (NN scholar) (NNP Jay) (NNP Wexler))
+      (VP (VBZ agrees)
+        (SBAR
+          (S
+            (NP (NNP Judge) (NNP Jones))
+            (VP (VBD was)
+              (VP (VBN mistaken)
+                (S
+                  (VP (TO to)
+                    (VP (VB rule)
+                      (PP (IN on)
+                        (NP (NNP ID))))))))))))
+    (VP (VBZ s)
+      (NP (JJ scientific) (NN status)))
+    (NP (CD .4))
+    (. .)))
+
+mark(noted-3, As-1)
+nsubj(noted-3, we-2)
+advcl(agrees-12, noted-3)
+advmod(agrees-12, even-5)
+nn(Wexler-11, anti-6)
+nn(Wexler-11, ID-7)
+amod(Wexler-11, legal-8)
+nn(Wexler-11, scholar-9)
+nn(Wexler-11, Jay-10)
+nsubj(agrees-12, Wexler-11)
+dep(status-23, agrees-12)
+nn(Jones-14, Judge-13)
+nsubjpass(mistaken-16, Jones-14)
+xsubj(rule-18, Jones-14)
+auxpass(mistaken-16, was-15)
+ccomp(agrees-12, mistaken-16)
+aux(rule-18, to-17)
+xcomp(mistaken-16, rule-18)
+prep_on(rule-18, ID-20)
+cop(status-23, s-21)
+amod(status-23, scientific-22)
+root(ROOT-0, status-23)
+nsubj(status-23, .4-24)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (SBAR (RB Just) (IN in) (NN case)
+      (S
+        (NP (DT any) (NNP ID) (NNS proponents))
+        (VP (VBP are)
+          (VP (VBG reading)))))
+    (, ,)
+    (ADVP (DT no) (NN matter)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP you))
+          (VP (VBP believe)))))
+    (, ,)
+    (VP (VBP say)
+      (PRN (, ,)
+        (CC or)
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBN told))))
+        (, ,))
+      (NP (NN faith)))
+    (. !)))
+
+advmod(reading-8, Just-1)
+dep(reading-8, in-2)
+dep(reading-8, case-3)
+det(proponents-6, any-4)
+nn(proponents-6, ID-5)
+nsubj(reading-8, proponents-6)
+aux(reading-8, are-7)
+advcl(say-16, reading-8)
+dep(matter-11, no-10)
+advmod(say-16, matter-11)
+dobj(believe-14, what-12)
+nsubj(believe-14, you-13)
+dep(matter-11, believe-14)
+root(ROOT-0, say-16)
+dep(told-21, or-18)
+aux(told-21, have-19)
+auxpass(told-21, been-20)
+dep(say-16, told-21)
+dobj(say-16, faith-23)
+
+(ROOT
+  (NP (JJ =) (NN evidence) (. .)))
+
+amod(evidence-2, =-1)
+root(ROOT-0, evidence-2)
+

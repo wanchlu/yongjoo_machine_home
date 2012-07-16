@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ says)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (MD should) (RB not)
+            (VP (VB confuse)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP we))
+                  (VP
+                    (VP (VBP see)
+                      (PP (IN with)
+                        (NP
+                          (NP (NN absence))
+                          (PP (IN of)
+                            (NP (`` ``) (NN design) ('' ''))))))
+                    (CC and)
+                    (VP (VBZ produces)
+                      (NP (DT no) (VBG competing) (NNS hypotheses)))))))))))
+    (. .)))
+
+nsubj(says-2, ID-1)
+root(ROOT-0, says-2)
+complm(confuse-7, that-3)
+nsubj(confuse-7, we-4)
+aux(confuse-7, should-5)
+neg(confuse-7, not-6)
+ccomp(says-2, confuse-7)
+dobj(see-10, what-8)
+nsubj(see-10, we-9)
+nsubj(produces-18, we-9)
+ccomp(confuse-7, see-10)
+prep_with(see-10, absence-12)
+prep_of(absence-12, design-15)
+ccomp(confuse-7, produces-18)
+conj_and(see-10, produces-18)
+det(hypotheses-21, no-19)
+amod(hypotheses-21, competing-20)
+dobj(produces-18, hypotheses-21)
+

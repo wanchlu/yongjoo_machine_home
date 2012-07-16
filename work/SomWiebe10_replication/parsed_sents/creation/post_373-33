@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP ID))
+      (VP (VBZ is) (RB not)
+        (NP (DT a) (NN theory))))
+    (CC and)
+    (S
+      (S
+        (NP (PRP it))
+        (VP (MD can)
+          (ADVP (RB never))
+          (VP (VB be)
+            (NP (NN science)))))
+      (CC and)
+      (S
+        (ADVP (RB therefore))
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADVP (RB properly))
+          (VP (VBN rejected)
+            (PP (IN in)
+              (NP (JJ scientific) (NNS discussions)))))))
+    (. .)))
+
+nsubj(theory-5, ID-1)
+cop(theory-5, is-2)
+neg(theory-5, not-3)
+det(theory-5, a-4)
+root(ROOT-0, theory-5)
+nsubj(science-11, it-7)
+aux(science-11, can-8)
+neg(science-11, never-9)
+cop(science-11, be-10)
+conj_and(theory-5, science-11)
+advmod(rejected-17, therefore-13)
+nsubjpass(rejected-17, it-14)
+auxpass(rejected-17, is-15)
+advmod(rejected-17, properly-16)
+conj_and(theory-5, rejected-17)
+conj_and(science-11, rejected-17)
+amod(discussions-20, scientific-19)
+prep_in(rejected-17, discussions-20)
+

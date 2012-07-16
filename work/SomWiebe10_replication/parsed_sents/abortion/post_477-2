@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (NN abortion))
+        (VP (VBZ is)
+          (ADVP (RB now))
+          (VP (VBN considered)
+            (NP (DT a) (`` ``) (NN right) ('' ''))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (PP (IN beyond)
+        (NP
+          (NP (DT the) (NN court))
+          (PP (IN of)
+            (NP (DT the) (NN land)))))
+      (S
+        (VP (TO to)
+          (VP (VB enforce)
+            (NP (PRP it))))))
+    (. .)))
+
+mark(considered-5, Because-1)
+nsubjpass(considered-5, abortion-2)
+auxpass(considered-5, is-3)
+advmod(considered-5, now-4)
+advcl(is-12, considered-5)
+det(right-8, a-6)
+dobj(considered-5, right-8)
+nsubj(is-12, it-11)
+xsubj(enforce-20, it-11)
+root(ROOT-0, is-12)
+det(court-15, the-14)
+prep_beyond(is-12, court-15)
+det(land-18, the-17)
+prep_of(court-15, land-18)
+aux(enforce-20, to-19)
+xcomp(is-12, enforce-20)
+dobj(enforce-20, it-21)
+

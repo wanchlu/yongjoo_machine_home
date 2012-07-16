@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN abortion))
+        (VP (VBZ is)
+          (ADJP (JJ illegal)))))
+    (, ,)
+    (S
+      (ADVP (RB not) (RB only))
+      (VP (VBZ is)
+        (NP (PRP it)))
+      (NP
+        (NP (NNS women))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do) (RB n't)
+              (VP (VB have)
+                (NP (DT the) (NN right)
+                  (S
+                    (VP (TO to)
+                      (VP (VB govern)
+                        (NP (PRP$ their) (NNS bodies))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ follows)
+        (SBAR (IN that)
+          (S
+            (NP (DT all) (NNS people))
+            (VP (VBP do) (RB not)
+              (VP (VB have)
+                (NP (DT that) (NN right))))))))
+    (. .)))
+
+mark(illegal-4, If-1)
+nsubj(illegal-4, abortion-2)
+cop(illegal-4, is-3)
+advcl(it-9, illegal-4)
+dep(only-7, not-6)
+advmod(it-9, only-7)
+cop(it-9, is-8)
+root(ROOT-0, it-9)
+dep(it-9, women-10)
+nsubj(have-14, women-10)
+aux(have-14, do-12)
+neg(have-14, n't-13)
+rcmod(women-10, have-14)
+det(right-16, the-15)
+dobj(have-14, right-16)
+aux(govern-18, to-17)
+infmod(right-16, govern-18)
+poss(bodies-20, their-19)
+dobj(govern-18, bodies-20)
+nsubj(follows-24, it-23)
+conj_but(it-9, follows-24)
+complm(have-30, that-25)
+det(people-27, all-26)
+nsubj(have-30, people-27)
+aux(have-30, do-28)
+neg(have-30, not-29)
+ccomp(follows-24, have-30)
+det(right-32, that-31)
+dobj(have-30, right-32)
+

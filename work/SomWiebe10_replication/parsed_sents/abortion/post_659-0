@@ -1,0 +1,46 @@
+(ROOT
+  (S (`` ``)
+    (NP (DT A) (NN person))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ complex) (NN creature))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ has)
+              (VP (VBN moved)
+                (PP (IN from)
+                  (NP
+                    (NP (JJ genetic) (NN individuality))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NNP DNA))
+                      (-RRB- -RRB-))))
+                (PP (IN through)
+                  (NP
+                    (ADJP (JJ functional) (, ,) (JJ behavioral) (, ,) (JJ physical)
+                      (CC and)
+                      (JJ social))
+                    (NNS dimensions)))))))))
+    (. .)))
+
+det(person-3, A-2)
+nsubj(creature-7, person-3)
+cop(creature-7, is-4)
+det(creature-7, a-5)
+amod(creature-7, complex-6)
+root(ROOT-0, creature-7)
+nsubj(moved-10, creature-7)
+aux(moved-10, has-9)
+rcmod(creature-7, moved-10)
+amod(individuality-13, genetic-12)
+prep_from(moved-10, individuality-13)
+abbrev(individuality-13, DNA-15)
+amod(dimensions-25, functional-18)
+conj_and(functional-18, behavioral-20)
+amod(dimensions-25, behavioral-20)
+conj_and(functional-18, physical-22)
+amod(dimensions-25, physical-22)
+conj_and(functional-18, social-24)
+amod(dimensions-25, social-24)
+prep_through(moved-10, dimensions-25)
+

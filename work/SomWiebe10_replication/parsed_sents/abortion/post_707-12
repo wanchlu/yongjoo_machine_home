@@ -1,0 +1,26 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Talk))
+      (PP (TO to)
+        (NP
+          (NP (NNS women))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBN mourn)
+                (S
+                  (NP (DT the) (NNS children))
+                  (NP (PRP they)))))))))
+    (VP (VBN aborted))
+    (. .)))
+
+nsubj(aborted-9, Talk-1)
+prep_to(Talk-1, women-3)
+nsubj(mourn-5, women-3)
+rcmod(women-3, mourn-5)
+det(children-7, the-6)
+nsubj(they-8, children-7)
+xcomp(mourn-5, they-8)
+root(ROOT-0, aborted-9)
+

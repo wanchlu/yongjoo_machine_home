@@ -1,0 +1,62 @@
+(ROOT
+  (SQ (CC And)
+    (FRAG
+      (WHNP (WP what))
+      (PP
+        (PP (IN of)
+          (NP (DT those)))
+        (SBAR
+          (SBAR
+            (WHNP (WP who))
+            (PRN (, ,)
+              (S
+                (VP (VBG having)
+                  (VP (VBN studied)
+                    (NP
+                      (NP (DT the) (NNP Bible))
+                      (CC and)
+                      (NP (DT the) (JJ physical) (NN world))))))
+              (, ,))
+            (S
+              (VP (VBP determine)
+                (SBAR (IN that)
+                  (S
+                    (NP (DT the) (NNP Bible))
+                    (VP (VBZ has)
+                      (NP
+                        (NP (DT no) (NN basis))
+                        (PP (IN in)
+                          (NP (NN fact))))))))))
+          (: ...)
+          (S
+            (VP (VBG being)
+              (ADJP (JJ allegorical)
+                (PP (IN at)
+                  (ADJP (JJS best)))))))))
+    (. ?)))
+
+root(ROOT-0, And-1)
+dep(And-1, what-2)
+dep(what-2, of-3)
+pobj(of-3, those-4)
+nsubj(determine-16, who-5)
+aux(studied-8, having-7)
+dep(determine-16, studied-8)
+det(Bible-10, the-9)
+dobj(studied-8, Bible-10)
+det(world-14, the-12)
+amod(world-14, physical-13)
+dobj(studied-8, world-14)
+conj_and(Bible-10, world-14)
+dep(allegorical-27, determine-16)
+complm(has-20, that-17)
+det(Bible-19, the-18)
+nsubj(has-20, Bible-19)
+ccomp(determine-16, has-20)
+det(basis-22, no-21)
+dobj(has-20, basis-22)
+prep_in(basis-22, fact-24)
+cop(allegorical-27, being-26)
+dep(of-3, allegorical-27)
+prep_at(allegorical-27, best-29)
+

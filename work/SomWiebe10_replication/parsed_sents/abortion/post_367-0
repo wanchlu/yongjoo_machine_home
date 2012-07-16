@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP (DT The) (NN title) (JJ pro) (NN choice))
+    (VP (VBZ does) (RB n't)
+      (VP (VB make)
+        (NP (DT any) (NN sense))
+        (PP (TO to)
+          (NP (PRP me)))))
+    (. .)))
+
+det(choice-4, The-1)
+nn(choice-4, title-2)
+amod(choice-4, pro-3)
+nsubj(make-7, choice-4)
+aux(make-7, does-5)
+neg(make-7, n't-6)
+root(ROOT-0, make-7)
+det(sense-9, any-8)
+dobj(make-7, sense-9)
+prep_to(make-7, me-11)
+
+(ROOT
+  (S
+    (NP (DT The) (NN mother))
+    (VP
+      (VP (VBZ chooses))
+      (, ,)
+      (CC but)
+      (VP (VBZ does)
+        (SBAR
+          (S
+            (NP (DT the) (NN baby))
+            (VP (VBP get)
+              (SBAR
+                (S
+                  (NP (DT any))
+                  (VP (VBP say)
+                    (PRT (RP on))
+                    (SBAR (IN whether)
+                      (CC or)
+                      (RB not)
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP live)
+                          (CC or)
+                          (VBP die))))))))))))
+    (. ?)))
+
+det(mother-2, The-1)
+nsubj(chooses-3, mother-2)
+nsubj(does-6, mother-2)
+root(ROOT-0, chooses-3)
+conj_but(chooses-3, does-6)
+det(baby-8, the-7)
+nsubj(get-9, baby-8)
+ccomp(does-6, get-9)
+nsubj(say-11, any-10)
+ccomp(get-9, say-11)
+prt(say-11, on-12)
+complm(live-17, whether-13)
+ccomp(say-11, not-15)
+conj_or(live-17, not-15)
+nsubj(live-17, they-16)
+nsubj(die-19, they-16)
+ccomp(say-11, live-17)
+ccomp(say-11, die-19)
+conj_or(live-17, die-19)
+

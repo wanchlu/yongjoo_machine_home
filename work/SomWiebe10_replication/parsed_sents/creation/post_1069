@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP God))
+      (VP (VBZ does)
+        (VP (VB exist))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD created)
+      (NP (NN evolution)))
+    (: ...)))
+
+nsubj(exist-3, God-1)
+aux(exist-3, does-2)
+ccomp(created-6, exist-3)
+nsubj(created-6, he-5)
+root(ROOT-0, created-6)
+dobj(created-6, evolution-7)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Maybe))
+      (NP (NN evolution))
+      (VP (VBD did)
+        (VP (VB occur)
+          (PRN (-LRB- -LRB-)
+            (S
+              (NP (JJ scientific) (NN proof))
+              (VP (VBZ says)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ does))))))
+            (-RRB- -RRB-)))))
+    (, ,)
+    (ADVP (RB however))
+    (S
+      (NP (NNP God))
+      (VP (VBD created)
+        (NP (PRP it))))
+    (. .)))
+
+advmod(occur-4, Maybe-1)
+nsubj(occur-4, evolution-2)
+aux(occur-4, did-3)
+root(ROOT-0, occur-4)
+amod(proof-7, scientific-6)
+nsubj(says-8, proof-7)
+parataxis(occur-4, says-8)
+nsubj(does-10, it-9)
+ccomp(says-8, does-10)
+advmod(occur-4, however-13)
+nsubj(created-15, God-14)
+ccomp(occur-4, created-15)
+dobj(created-15, it-16)
+
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBZ is)
+        (NP
+          (NP (NN proof))
+          (SBAR
+            (S
+              (NP (NNP God))
+              (VP (VBZ exists)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN proof) (NN creationism))
+      (VP (VBD occurred)))
+    (: ...)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+nsubj(is-2, proof-3)
+dobj(exists-5, proof-3)
+nsubj(exists-5, God-4)
+rcmod(proof-3, exists-5)
+nn(creationism-9, proof-8)
+nsubj(occurred-10, creationism-9)
+conj_and(is-2, occurred-10)
+
+(ROOT
+  (S (CC So)
+    (NP (PRP I))
+    (VP (VBP run)
+      (PP (IN with)
+        (NP (DT both) (NNS sides))))
+    (: ...)))
+
+cc(run-3, So-1)
+nsubj(run-3, I-2)
+root(ROOT-0, run-3)
+det(sides-6, both-5)
+prep_with(run-3, sides-6)
+
+(ROOT
+  (SINV
+    (PP (IN Until)
+      (NP (JJR more) (NN proof)))
+    (VP (VBZ unearths))
+    (NP (PRP itself))
+    (. .)))
+
+amod(proof-3, more-2)
+prep_until(unearths-4, proof-3)
+root(ROOT-0, unearths-4)
+nsubj(unearths-4, itself-5)
+

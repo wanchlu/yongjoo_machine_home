@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNS condoms))
+        (VP (VBP are) (RB not)
+          (ADJP
+            (NP (CD 100) (NN %))
+            (JJ reliable))
+          (, ,)
+          (S
+            (VP (TO to)
+              (VP (VB advertize)
+                (SBAR (IN that)
+                  (S
+                    (NP
+                      (NP (DT the) (NN problem))
+                      (PP (TO to)
+                        (NP (NN HIV)
+                          (CC and)
+                          (JJ unwanted) (NN pregnancy))))
+                    (VP (VBZ is)
+                      (VP (VBN solved)
+                        (S
+                          (VP (VBG using)
+                            (NP (NNS condoms))))))))))))))
+    (VP (MD will) (RB not)
+      (VP (VB be)
+        (ADJP (JJ effective))))
+    (. .)))
+
+mark(reliable-7, As-1)
+nsubj(reliable-7, condoms-2)
+xsubj(advertize-10, condoms-2)
+cop(reliable-7, are-3)
+neg(reliable-7, not-4)
+num(%-6, 100-5)
+npadvmod(reliable-7, %-6)
+csubj(effective-26, reliable-7)
+aux(advertize-10, to-9)
+xcomp(reliable-7, advertize-10)
+complm(solved-20, that-11)
+det(problem-13, the-12)
+nsubjpass(solved-20, problem-13)
+nn(pregnancy-18, HIV-15)
+conj_and(HIV-15, unwanted-17)
+nn(pregnancy-18, unwanted-17)
+prep_to(problem-13, pregnancy-18)
+auxpass(solved-20, is-19)
+ccomp(advertize-10, solved-20)
+xcomp(solved-20, using-21)
+dobj(using-21, condoms-22)
+aux(effective-26, will-23)
+neg(effective-26, not-24)
+cop(effective-26, be-25)
+root(ROOT-0, effective-26)
+

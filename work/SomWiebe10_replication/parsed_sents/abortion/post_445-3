@@ -1,0 +1,25 @@
+(ROOT
+  (S
+    (NP
+      (NP ($ $) (CD 500))
+      (NP (DT a) (NN month)))
+    (VP (MD would)
+      (VP (VB make)
+        (S
+          (NP (JJ many) (NNP NOT))
+          (VP (VB have)
+            (NP (DT an) (NN abortion))))))
+    (. .)))
+
+nsubj(make-6, $-1)
+num($-1, 500-2)
+det(month-4, a-3)
+dep($-1, month-4)
+aux(make-6, would-5)
+root(ROOT-0, make-6)
+amod(NOT-8, many-7)
+nsubj(have-9, NOT-8)
+ccomp(make-6, have-9)
+det(abortion-11, an-10)
+dobj(have-9, abortion-11)
+

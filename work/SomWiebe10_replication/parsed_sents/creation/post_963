@@ -1,0 +1,164 @@
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (NN evolution))
+    (VP (VBZ has) (RB not)
+      (VP (VBN been)
+        (VP
+          (ADVP (RB scientifically))
+          (VBN proven))))
+    (. .)))
+
+advmod(proven-8, Therefore-1)
+nsubjpass(proven-8, evolution-3)
+aux(proven-8, has-4)
+neg(proven-8, not-5)
+auxpass(proven-8, been-6)
+advmod(proven-8, scientifically-7)
+root(ROOT-0, proven-8)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP
+            (ADVP (RB heavily))
+            (VBN supported)
+            (PP (IN by)
+              (NP (NN evidence)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT this) (NN evidence))
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ substantial) (RB enough)
+          (S
+            (VP (TO to)
+              (VP (`` ``) (VB prove) ('' '')
+                (NP (DT this) (NN theory))))))))
+    (. .)))
+
+nsubjpass(supported-5, It-1)
+aux(supported-5, has-2)
+auxpass(supported-5, been-3)
+advmod(supported-5, heavily-4)
+root(ROOT-0, supported-5)
+agent(supported-5, evidence-7)
+det(evidence-11, this-10)
+nsubj(substantial-14, evidence-11)
+cop(substantial-14, is-12)
+neg(substantial-14, not-13)
+conj_but(supported-5, substantial-14)
+advmod(substantial-14, enough-15)
+aux(prove-18, to-16)
+xcomp(substantial-14, prove-18)
+det(theory-21, this-20)
+dobj(prove-18, theory-21)
+
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is)
+      (ADVP (RB specifically))
+      ('' '')
+      (S
+        (VP (VBG Has)
+          (NP
+            (NP (NN evolution))
+            (VP (VBN been)
+              (ADVP (RB scientifically)
+                (S
+                  (VP (VB prove) (-LRB- -LRB-)
+                    (NP (NN n))
+                    (-RRB- -RRB-)))))))))
+    (. ?)))
+
+det(question-2, The-1)
+nsubj(is-3, question-2)
+root(ROOT-0, is-3)
+advmod(is-3, specifically-4)
+xcomp(is-3, Has-6)
+dobj(Has-6, evolution-7)
+partmod(evolution-7, been-8)
+advmod(been-8, scientifically-9)
+dep(scientifically-9, prove-10)
+dobj(prove-10, n-12)
+
+(ROOT
+  (S ('' '')
+    (ADVP
+      (NP
+        (NP (NNP and))
+        (NP (DT the)))
+      (RB response))
+    (, ,)
+    (NP
+      (NP (RB even) (RB here))
+      (, ,)
+      (S
+        (VP (VBZ is)))
+      ('' ''))
+    (VP (VBZ No.))))
+
+npadvmod(response-4, and-2)
+dep(and-2, the-3)
+advmod(No.-11, response-4)
+advmod(here-7, even-6)
+nsubj(No.-11, here-7)
+dep(here-7, is-9)
+root(ROOT-0, No.-11)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (EX There))
+      (VP (VBZ is)
+        (NP (DT no) (JJ mathematical) (NN formula))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (JJ absolute) (NN evidence))
+        (PP (IN in)
+          (NP (PRP$ its) (NN favor)))))
+    (. .)))
+
+expl(is-3, There-2)
+ccomp(is-9, is-3)
+det(formula-6, no-4)
+amod(formula-6, mathematical-5)
+nsubj(is-3, formula-6)
+expl(is-9, there-8)
+root(ROOT-0, is-9)
+det(evidence-12, no-10)
+amod(evidence-12, absolute-11)
+nsubj(is-9, evidence-12)
+poss(favor-15, its-14)
+prep_in(evidence-12, favor-15)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ reasonable) (NN doubt))
+        (, ,)
+        (RRC
+          (ADVP (DT no) (NN matter))
+          (ADJP
+            (WHADVP (WRB how))
+            (JJ little)))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+amod(doubt-4, reasonable-3)
+nsubj(is-2, doubt-4)
+dep(matter-7, no-6)
+rcmod(doubt-4, matter-7)
+advmod(little-9, how-8)
+dep(matter-7, little-9)
+

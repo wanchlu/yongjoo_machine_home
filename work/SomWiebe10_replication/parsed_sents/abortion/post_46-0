@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ does) (RB not)
+      (ADVP (RB negatively))
+      (VP (VB affect)
+        (NP
+          (NP
+            (NP (DT a) (NN woman) (POS 's))
+            (JJ sexual) (NNS functions))
+          (SBAR
+            (S
+              (NP
+                (NP (DT A) (NN study))
+                (VP (VBN conducted)
+                  (PP (IN at)
+                    (NP
+                      (NP (NNP University))
+                      (PP (IN of)
+                        (NP (NNP Copenhagen)))))))
+              (VP (VBZ has)
+                (VP (VBN shown)
+                  (SBAR
+                    (S
+                      (NP (JJ legal) (NN abortion))
+                      (VP (VBZ is)
+                        (VP (VBN associated)
+                          (PP (IN with)
+                            (NP
+                              (NP (JJ few) (JJ adverse) (NNS effects))
+                              (PP (IN on)
+                                (NP (JJ sexual) (NN function)))))
+                          (PP (IN among)
+                            (NP
+                              (NP (NNS women))
+                              (PP (IN in)
+                                (NP (NNP Denmark))))))))))))))))
+    (. .)))
+
+nsubj(affect-5, Abortion-1)
+aux(affect-5, does-2)
+neg(affect-5, not-3)
+advmod(affect-5, negatively-4)
+root(ROOT-0, affect-5)
+det(woman-7, a-6)
+poss(functions-10, woman-7)
+amod(functions-10, sexual-9)
+dobj(affect-5, functions-10)
+dobj(shown-19, functions-10)
+det(study-12, A-11)
+nsubj(shown-19, study-12)
+partmod(study-12, conducted-13)
+prep_at(conducted-13, University-15)
+prep_of(University-15, Copenhagen-17)
+aux(shown-19, has-18)
+rcmod(functions-10, shown-19)
+amod(abortion-21, legal-20)
+nsubjpass(associated-23, abortion-21)
+auxpass(associated-23, is-22)
+ccomp(shown-19, associated-23)
+amod(effects-27, few-25)
+amod(effects-27, adverse-26)
+prep_with(associated-23, effects-27)
+amod(function-30, sexual-29)
+prep_on(effects-27, function-30)
+prep_among(associated-23, women-32)
+prep_in(women-32, Denmark-34)
+

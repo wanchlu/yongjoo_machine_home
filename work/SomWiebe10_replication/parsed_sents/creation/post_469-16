@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (NNP Newton))
+    (VP
+      (VP (VBD did)
+        (NP
+          (ADJP (RB pretty) (JJ good))
+          (NN science)))
+      (, ,)
+      (CC and)
+      (VP (VBD had)
+        (NP
+          (NP (DT some)
+            (ADJP (RB pretty) (JJ nutty))
+            (JJ additional) (NNS ideas))
+          (PP (IN about)
+            (NP
+              (NP (NN reality))
+              (, ,)
+              (ADVP (RB too)))))))
+    (. .)))
+
+nsubj(did-2, Newton-1)
+nsubj(had-8, Newton-1)
+root(ROOT-0, did-2)
+advmod(good-4, pretty-3)
+amod(science-5, good-4)
+dobj(did-2, science-5)
+conj_and(did-2, had-8)
+det(ideas-13, some-9)
+advmod(nutty-11, pretty-10)
+amod(ideas-13, nutty-11)
+amod(ideas-13, additional-12)
+dobj(had-8, ideas-13)
+prep_about(ideas-13, reality-15)
+advmod(reality-15, too-17)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (S (CC And)
+    (NP (NNP Darwin))
+    (VP (VBD proposed)
+      (NP
+        (NP (DT a) (JJ few) (NNS things))
+        (PP (JJ such) (IN as)
+          (SBAR (IN if)
+            (S
+              (NP (DT a) (JJ complex) (NN system))
+              (VP (VBD existed)
+                (SBAR
+                  (S
+                    (PP (IN in)
+                      (NP (DT a) (NN cell)))
+                    (NP (PRP$ his) (NN theory))
+                    (VP (MD would)
+                      (VP (VB collapse)))))))))))
+    (. .)))
+
+cc(proposed-3, And-1)
+nsubj(proposed-3, Darwin-2)
+root(ROOT-0, proposed-3)
+det(things-6, a-4)
+amod(things-6, few-5)
+dobj(proposed-3, things-6)
+mark(existed-13, if-9)
+det(system-12, a-10)
+amod(system-12, complex-11)
+nsubj(existed-13, system-12)
+prepc_such_as(things-6, existed-13)
+det(cell-16, a-15)
+prep_in(collapse-20, cell-16)
+poss(theory-18, his-17)
+nsubj(collapse-20, theory-18)
+aux(collapse-20, would-19)
+ccomp(existed-13, collapse-20)
+

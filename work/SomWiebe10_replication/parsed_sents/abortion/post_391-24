@@ -1,0 +1,47 @@
+(ROOT
+  (S ('' '')
+    (NP (PRP You))
+    (VP (MD would)
+      (VP (VB know)
+        (ADVP (RB instantly))
+        (SBAR (IN that)
+          (S
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP I))
+                (VP (VBD meant)
+                  (X (VBD was)))))
+            (NP (PRP I))
+            (VP (VBP need)
+              (NP
+                (NP (DT another) (NN chair))
+                (, ,)
+                (CC or)
+                (NP
+                  (NP (DT a) (NN bed))
+                  (CC or)
+                  (NP (DT a) (NN side) (NN table)))))))))
+    (. .)))
+
+nsubj(know-4, You-2)
+aux(know-4, would-3)
+root(ROOT-0, know-4)
+advmod(know-4, instantly-5)
+complm(need-12, that-6)
+dobj(meant-9, what-7)
+nsubj(meant-9, I-8)
+dep(need-12, meant-9)
+dep(meant-9, was-10)
+nsubj(need-12, I-11)
+ccomp(know-4, need-12)
+det(chair-14, another-13)
+dobj(need-12, chair-14)
+det(bed-18, a-17)
+dobj(need-12, bed-18)
+conj_or(chair-14, bed-18)
+det(table-22, a-20)
+nn(table-22, side-21)
+conj_or(chair-14, table-22)
+conj_or(bed-18, table-22)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (NP (PRP$ My) (NNS Right) (. .)))
+
+poss(Right-2, My-1)
+root(ROOT-0, Right-2)
+
+(ROOT
+  (S
+    (NP (NNP Woman))
+    (VP (VBP do) (RB n't)
+      (VP (VB take)
+        (PP (IN into)
+          (NP (NN consideration)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ their) (NN decision)
+              (S
+                (VP (TO to)
+                  (VP (VB have)
+                    (NP (DT an) (NN abortion))))))
+            (VP (VBZ affects)
+              (NP
+                (CONJP (RB not) (JJ only))
+                (NP (PRP$ their) (NN body))
+                (, ,)
+                (CC but)
+                (NP (DT the) (JJ unborn) (NNS babies))))))))
+    (. .)))
+
+nsubj(take-4, Woman-1)
+aux(take-4, do-2)
+neg(take-4, n't-3)
+root(ROOT-0, take-4)
+prep_into(take-4, consideration-6)
+complm(affects-14, that-7)
+poss(decision-9, their-8)
+nsubj(affects-14, decision-9)
+aux(have-11, to-10)
+infmod(decision-9, have-11)
+det(abortion-13, an-12)
+dobj(have-11, abortion-13)
+ccomp(take-4, affects-14)
+neg(only-16, not-15)
+preconj(body-18, only-16)
+poss(body-18, their-17)
+dobj(affects-14, body-18)
+det(babies-23, the-21)
+amod(babies-23, unborn-22)
+dobj(affects-14, babies-23)
+conj_but(body-18, babies-23)
+

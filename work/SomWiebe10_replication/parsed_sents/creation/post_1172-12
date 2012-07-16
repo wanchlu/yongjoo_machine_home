@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP he))
+        (VP (VBD had)
+          (NP (NNS gills)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBD gasped)
+          (CC and)
+          (VBD died)
+          (NP
+            (NP (DT the) (NN moment))
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (VBD crawled)
+                  (PP (IN onto)
+                    (NP (JJ dry) (NN land))))))))))
+    (. .)))
+
+mark(had-3, If-1)
+nsubj(had-3, he-2)
+advcl(gasped-9, had-3)
+dobj(had-3, gills-4)
+nsubj(gasped-9, he-6)
+nsubj(died-11, he-6)
+aux(gasped-9, would-7)
+aux(gasped-9, have-8)
+root(ROOT-0, gasped-9)
+conj_and(gasped-9, died-11)
+det(moment-13, the-12)
+dobj(gasped-9, moment-13)
+dobj(crawled-15, moment-13)
+nsubj(crawled-15, he-14)
+rcmod(moment-13, crawled-15)
+amod(land-18, dry-17)
+prep_onto(crawled-15, land-18)
+

@@ -1,0 +1,37 @@
+(ROOT
+  (S (CC So)
+    (SBAR
+      (ADVP (RB basically))
+      (WHADVP (WRB when))
+      (S
+        (NP (DT the) (NN sperm)
+          (CC and)
+          (NN egg))
+        (VP (VB unite))))
+    (NP (PRP they))
+    (ADVP (RB then))
+    (VP (VBP create)
+      (NP
+        (NP (DT a) (JJ unique) (NN DNA))
+        (PP (IN of)
+          (NP (DT a) (NN human) (VBG being)))))
+    (. .)))
+
+cc(create-11, So-1)
+advmod(unite-8, basically-2)
+advmod(unite-8, when-3)
+det(sperm-5, the-4)
+nsubj(unite-8, sperm-5)
+conj_and(sperm-5, egg-7)
+nsubj(unite-8, egg-7)
+dep(create-11, unite-8)
+nsubj(create-11, they-9)
+advmod(create-11, then-10)
+root(ROOT-0, create-11)
+det(DNA-14, a-12)
+amod(DNA-14, unique-13)
+dobj(create-11, DNA-14)
+det(human-17, a-16)
+prep_of(DNA-14, human-17)
+amod(human-17, being-18)
+

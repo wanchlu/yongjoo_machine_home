@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR (RB Just) (IN because)
+      (S
+        (NP
+          (NP (DT an) (JJ ancient) (NN book))
+          (VP (VBN written)
+            (PP (IN by)
+              (NP
+                (NP (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD were) (RB n't)
+                      (VP (VBN exposed)
+                        (PP (TO to)
+                          (NP (JJ modern) (NN science)))))))))))
+        (VP (VBZ says)
+          (SBAR
+            (S
+              (NP
+                (NP (NN nothing))
+                (PP (IN about)
+                  (NP (PRP it))))
+              (VP (VBZ does) (RB n't)
+                (VP (VB mean)
+                  (NP (NN science)))))))))
+    (VP (VBZ is)
+      (NP (DT a) (NN lie)))
+    (. .)))
+
+advmod(says-16, Just-1)
+dep(says-16, because-2)
+det(book-5, an-3)
+amod(book-5, ancient-4)
+nsubj(says-16, book-5)
+partmod(book-5, written-6)
+agent(written-6, people-8)
+nsubjpass(exposed-12, people-8)
+auxpass(exposed-12, were-10)
+neg(exposed-12, n't-11)
+rcmod(people-8, exposed-12)
+amod(science-15, modern-14)
+prep_to(exposed-12, science-15)
+advcl(lie-26, says-16)
+csubj(lie-26, says-16)
+nsubj(mean-22, nothing-17)
+prep_about(nothing-17, it-19)
+aux(mean-22, does-20)
+neg(mean-22, n't-21)
+ccomp(says-16, mean-22)
+dobj(mean-22, science-23)
+cop(lie-26, is-24)
+det(lie-26, a-25)
+root(ROOT-0, lie-26)
+

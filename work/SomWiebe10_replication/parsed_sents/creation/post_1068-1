@@ -1,0 +1,56 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (RB Not) (DT a) (RB very) (JJ good))
+      (VP (VBD choice)
+        (PP (IN of)
+          (NP (NNS words)))
+        (, ,)
+        (PP (IN by)
+          (NP (DT the) (NN way)))))
+    (: ...)
+    (S
+      (NP (NNS atheists))
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (NNP God))
+            (VP (VBZ IS)
+              (NP
+                (NP (NN Nothing))
+                (PRN (-LRB- -LRB-)
+                  (PP (IN in)
+                    (NP (JJ other) (NNS words))
+                    (: ...))
+                  (NP
+                    (NP (NN something))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ is)
+                          (ADJP (JJ non-existent))))))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+neg(good-5, Not-2)
+det(good-5, a-3)
+advmod(good-5, very-4)
+nsubj(choice-6, good-5)
+root(ROOT-0, choice-6)
+prep_of(choice-6, words-8)
+det(way-12, the-11)
+prep_by(choice-6, way-12)
+nsubj(believe-15, atheists-14)
+parataxis(choice-6, believe-15)
+complm(Nothing-19, that-16)
+nsubj(Nothing-19, God-17)
+cop(Nothing-19, IS-18)
+ccomp(believe-15, Nothing-19)
+dep(something-25, in-21)
+amod(words-23, other-22)
+pobj(in-21, words-23)
+dep(Nothing-19, something-25)
+nsubj(non-existent-28, something-25)
+cop(non-existent-28, is-27)
+rcmod(something-25, non-existent-28)
+

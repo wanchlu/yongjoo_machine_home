@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (INTJ (UH Oh))
+      (NP (PRP it))
+      (VP (MD can)))
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBP guess)))
+      (, ,))
+    (CC but)
+    (S
+      (ADVP (RB then))
+      (NP (PRP you))
+      (VP (MD would)
+        (VP (VB be)
+          (VP (VBG choosing)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (JJ right) (NN side))
+                      (CC or)
+                      (NP (DT the) (JJ wrong) (NN side)))))))))))
+    (. .)))
+
+dep(can-3, Oh-1)
+nsubj(can-3, it-2)
+root(ROOT-0, can-3)
+nsubj(guess-5, I-4)
+dep(can-3, guess-5)
+advmod(choosing-12, then-8)
+nsubj(choosing-12, you-9)
+aux(choosing-12, would-10)
+aux(choosing-12, be-11)
+conj_but(can-3, choosing-12)
+aux(be-14, to-13)
+xcomp(choosing-12, be-14)
+det(side-18, the-16)
+amod(side-18, right-17)
+prep_on(be-14, side-18)
+det(side-22, the-20)
+amod(side-22, wrong-21)
+prep_on(be-14, side-22)
+conj_or(side-18, side-22)
+

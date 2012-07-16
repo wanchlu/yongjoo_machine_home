@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (FRAG
+      (NP
+        (NP (NNP IDNET))
+        (: --)
+        (NP
+          (NP (DT The) (NN claim))
+          (NP (DT that)))))
+    ('' '')
+    (NP (NNP ID) (NNS promoters))
+    (VP (VBP insist)
+      (SBAR (IN that)
+        (S
+          (NP (JJ religious) (NN belief))
+          (VP (VBZ compels)
+            (SBAR
+              (S
+                (NP
+                  (NP (DT the) (NN rejection))
+                  (PP (IN of)
+                    (NP
+                      (NP (JJ well-established) (NNS results))
+                      (PP (IN from)
+                        (NP
+                          (NP (JJ well-developed) (JJ scientific) (NNS fields))
+                          (PP (IN like)
+                            (NP (NN evolution))))))))
+                ('' '')
+                (VP (VBZ is)
+                  (ADJP (RB clearly) (JJ false)))))))))
+    (. .)))
+
+dep(insist-9, IDNET-1)
+det(claim-4, The-3)
+dep(IDNET-1, claim-4)
+dep(claim-4, that-5)
+nn(promoters-8, ID-7)
+nsubj(insist-9, promoters-8)
+root(ROOT-0, insist-9)
+complm(compels-13, that-10)
+amod(belief-12, religious-11)
+nsubj(compels-13, belief-12)
+ccomp(insist-9, compels-13)
+det(rejection-15, the-14)
+nsubj(false-28, rejection-15)
+amod(results-18, well-established-17)
+prep_of(rejection-15, results-18)
+amod(fields-22, well-developed-20)
+amod(fields-22, scientific-21)
+prep_from(results-18, fields-22)
+prep_like(fields-22, evolution-24)
+cop(false-28, is-26)
+advmod(false-28, clearly-27)
+ccomp(compels-13, false-28)
+

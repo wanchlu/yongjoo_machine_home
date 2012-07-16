@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP it))
+          (VP (VBD were)
+            (ADVP (RB just))
+            (PP (IN about)
+              (NP (NNS eggs)
+                (CC and)
+                (NN sperm)))))
+        (, ,) (RB then)
+        (S
+          (NP (PRP we))
+          (VP (VBD got)
+            (NP
+              (NP (NNS lots))
+              (PP (IN of)
+                (NP (NN life))))
+            (S
+              (VP (TO to)
+                (VP (VB save))))))))
+    (, ,)
+    (NP (NNS lots))
+    (ADVP (RBR more) (IN than))
+    (VP (VBZ is)
+      (ADJP (JJ possible)))
+    (. .)))
+
+mark(were-3, If-1)
+nsubj(were-3, it-2)
+advcl(possible-23, were-3)
+advmod(were-3, just-4)
+prep_about(were-3, eggs-6)
+prep_about(were-3, sperm-8)
+conj_and(eggs-6, sperm-8)
+advmod(were-3, then-10)
+nsubj(got-12, we-11)
+dep(were-3, got-12)
+dobj(got-12, lots-13)
+prep_of(lots-13, life-15)
+aux(save-17, to-16)
+xcomp(got-12, save-17)
+nsubj(possible-23, lots-19)
+advmod(than-21, more-20)
+advmod(possible-23, than-21)
+cop(possible-23, is-22)
+root(ROOT-0, possible-23)
+

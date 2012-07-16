@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ scientific) (NN investigation))
+      (PP
+        (PP (IN into)
+          (NP
+            (NP (DT the) (NN question))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN age))
+                (PP (IN of)
+                  (NP (DT the) (NN Earth)))))))
+        (, ,)
+        (CC and)
+        (PP (IN of)
+          (NP (DT the) (NN universe)))))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBG going)
+          (PP (IN on) (IN for)
+            (NP
+              (NP (NNS hundreds))
+              (PP (IN of)
+                (NP (NNS years))))))))
+    (. .)))
+
+det(investigation-3, The-1)
+amod(investigation-3, scientific-2)
+conj_and(investigation-3, investigation-3')
+nsubj(going-20, investigation-3)
+nsubj(going-20, investigation-3')
+det(question-6, the-5)
+prep_into(investigation-3, question-6)
+det(age-9, the-8)
+prep_of(question-6, age-9)
+det(Earth-12, the-11)
+prep_of(age-9, Earth-12)
+det(universe-17, the-16)
+prep_of(investigation-3', universe-17)
+aux(going-20, has-18)
+aux(going-20, been-19)
+root(ROOT-0, going-20)
+dep(going-20, on-21)
+prep_for(going-20, hundreds-23)
+prep_of(hundreds-23, years-25)
+

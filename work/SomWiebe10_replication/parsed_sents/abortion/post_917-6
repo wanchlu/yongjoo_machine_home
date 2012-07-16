@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Doctors))
+      (VP (VBP know)
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (MD will)
+              (VP (VB be)
+                (PP (IN in)
+                  (NP (NN pain)))))))))
+    (PRN (, ,)
+      (S
+        (NP (EX there))
+        (VP (MD will) (RB not)
+          (VP (VB be)
+            (NP
+              (NP (DT a) (NN moment))
+              (PP (IN of)
+                (NP (NN joy)))))))
+      (, ,))
+    (CC and)
+    (S
+      (PP (IN in)
+        (NP
+          (NP (PRP$ their) (NN entire))
+          (CC and)
+          (NP (JJ short) (NN existance))))
+      (NP (PRP they))
+      (VP (MD will)
+        (ADVP (RB only))
+        (VP (VB know)
+          (NP
+            (NP (NN pain))
+            (SBAR
+              (S
+                (NP (JJS most))
+                (VP (MD can) (RB not)
+                  (ADVP (RB even))
+                  (VP (VB imagine)))))))))
+    (. .)))
+
+nsubj(know-2, Doctors-1)
+root(ROOT-0, know-2)
+nsubj(be-5, they-3)
+aux(be-5, will-4)
+ccomp(know-2, be-5)
+prep_in(be-5, pain-7)
+expl(moment-14, there-9)
+aux(moment-14, will-10)
+neg(moment-14, not-11)
+cop(moment-14, be-12)
+det(moment-14, a-13)
+dep(know-2, moment-14)
+prep_of(moment-14, joy-16)
+poss(entire-21, their-20)
+prep_in(know-28, entire-21)
+amod(existance-24, short-23)
+conj_and(entire-21, existance-24)
+prep_in(know-28, existance-24)
+nsubj(know-28, they-25)
+aux(know-28, will-26)
+advmod(know-28, only-27)
+conj_and(know-2, know-28)
+dobj(know-28, pain-29)
+dobj(imagine-34, pain-29)
+nsubj(imagine-34, most-30)
+aux(imagine-34, can-31)
+neg(imagine-34, not-32)
+advmod(imagine-34, even-33)
+rcmod(pain-29, imagine-34)
+

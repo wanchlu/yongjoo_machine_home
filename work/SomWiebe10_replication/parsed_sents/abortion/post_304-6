@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP (DT A) (NN scientist))
+    (VP (MD will)
+      (ADVP (RB merely))
+      (VP (VB shrug)
+        (CC and)
+        (VB tell)
+        (NP (PRP you))
+        (SBAR (IN that)
+          (S
+            (NP (WDT what))
+            (VP (VBZ defines)
+              (SBAR
+                (S
+                  (NP (DT a) (NNS species))
+                  (VP (VBZ is)
+                    (NP (JJ reproductive) (NN isolation))
+                    (PP (RB not)
+                      (NP (NNP DNA)))))))))))
+    (. .)))
+
+det(scientist-2, A-1)
+nsubj(shrug-5, scientist-2)
+nsubj(tell-7, scientist-2)
+aux(shrug-5, will-3)
+advmod(shrug-5, merely-4)
+root(ROOT-0, shrug-5)
+conj_and(shrug-5, tell-7)
+dobj(shrug-5, you-8)
+complm(defines-11, that-9)
+nsubj(defines-11, what-10)
+ccomp(shrug-5, defines-11)
+det(species-13, a-12)
+nsubj(isolation-16, species-13)
+cop(isolation-16, is-14)
+amod(isolation-16, reproductive-15)
+ccomp(defines-11, isolation-16)
+prep(isolation-16, not-17)
+pobj(not-17, DNA-18)
+
+(ROOT
+  (SINV
+    (VP
+      (ADVP (RB Merely))
+      (VBG having)
+      (NP (JJ human) (NN DNA)))
+    (VP (VBZ does) (RB not)
+      (VP (VB make)
+        (NP (DT a) (NN fetus))))
+    (NP (DT a) (NN person))
+    (. .)))
+
+advmod(having-2, Merely-1)
+root(ROOT-0, having-2)
+amod(DNA-4, human-3)
+dobj(having-2, DNA-4)
+aux(make-7, does-5)
+neg(make-7, not-6)
+dep(having-2, make-7)
+det(fetus-9, a-8)
+dobj(make-7, fetus-9)
+det(person-11, a-10)
+nsubj(having-2, person-11)
+

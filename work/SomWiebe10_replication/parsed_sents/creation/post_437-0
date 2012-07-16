@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (NNP =) (NNP =) (NNP BowmanID))
+    (VP (VBZ addresses)
+      (NP
+        (NP (NNS evidences))
+        (PP (IN for)
+          (NP
+            (NP (JJ designed) (NNS structures))
+            (, ,)
+            (NP (NNS mechanisms))
+            (CC and)
+            (NP (JJ synergistic) (NNS systems)))))
+      (PP (IN in)
+        (NP (NN biology))))
+    (. .)))
+
+nn(BowmanID-3, =-1)
+nn(BowmanID-3, =-2)
+nsubj(addresses-4, BowmanID-3)
+root(ROOT-0, addresses-4)
+dobj(addresses-4, evidences-5)
+amod(structures-8, designed-7)
+prep_for(evidences-5, structures-8)
+prep_for(evidences-5, mechanisms-10)
+conj_and(structures-8, mechanisms-10)
+amod(systems-13, synergistic-12)
+prep_for(evidences-5, systems-13)
+conj_and(structures-8, systems-13)
+prep_in(addresses-4, biology-15)
+
+(ROOT
+  (S
+    (NP (NNP =))
+    (VP (VBZ =)
+      (SBAR
+        (WHADVP (WRB Where))
+        (S
+          (NP (NN design))
+          (ADVP (RB basically))
+          (VP (VBZ means)
+            (SBAR (IN that)
+              (S
+                (NP (NN science))
+                (VP (VBZ has)
+                  (ADVP (RB yet))
+                  (S
+                    (VP (TO to)
+                      (VP (VB explain)
+                        (NP (DT these) (JJ exciting) (JJ new) (NNS observations))))))))))))
+    (. .)))
+
+nsubj(=-2, =-1)
+root(ROOT-0, =-2)
+advmod(means-6, Where-3)
+nsubj(means-6, design-4)
+advmod(means-6, basically-5)
+advcl(=-2, means-6)
+complm(has-9, that-7)
+nsubj(has-9, science-8)
+xsubj(explain-12, science-8)
+ccomp(means-6, has-9)
+advmod(has-9, yet-10)
+aux(explain-12, to-11)
+xcomp(has-9, explain-12)
+det(observations-16, these-13)
+amod(observations-16, exciting-14)
+amod(observations-16, new-15)
+dobj(explain-12, observations-16)
+

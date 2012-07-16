@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (S
+      (NP (RB Here))
+      (VP (VBZ is)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP he))
+            (VP (VBD said))))))
+    (: :)
+    (S
+      (NP (NNP Augustine))
+      (: :)
+      (S
+        (VP (VB Let)
+          (NP (PRP us))
+          (, ,)
+          (ADVP (RB then))))
+      (, ,)
+      (VP (VBP omit)
+        (NP
+          (NP (DT the) (NNS conjectures))
+          (PP (IN of)
+            (NP
+              (NP (NNS men))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP know)
+                    (SBAR (RB not)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP say))))
+                      (, ,)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP speak)
+                            (PP (IN of)
+                              (NP
+                                (NP (DT the) (NN nature)
+                                  (CC and)
+                                  (NN origin))
+                                (PP (IN of)
+                                  (NP (DT the) (JJ human) (NN race)))))))))))))))))
+    (. .)))
+
+nsubj(is-2, Here-1)
+root(ROOT-0, is-2)
+dobj(said-5, what-3)
+nsubj(said-5, he-4)
+ccomp(is-2, said-5)
+nsubj(omit-14, Augustine-7)
+parataxis(omit-14, Let-9)
+dobj(Let-9, us-10)
+advmod(Let-9, then-12)
+parataxis(is-2, omit-14)
+det(conjectures-16, the-15)
+dobj(omit-14, conjectures-16)
+prep_of(conjectures-16, men-18)
+nsubj(know-20, men-18)
+rcmod(men-18, know-20)
+dep(say-24, not-21)
+dobj(say-24, what-22)
+nsubj(say-24, they-23)
+dep(know-20, say-24)
+advmod(speak-28, when-26)
+nsubj(speak-28, they-27)
+dep(say-24, speak-28)
+det(nature-31, the-30)
+prep_of(speak-28, nature-31)
+prep_of(speak-28, origin-33)
+conj_and(nature-31, origin-33)
+det(race-37, the-35)
+amod(race-37, human-36)
+prep_of(nature-31, race-37)
+

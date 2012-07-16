@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (DT a) (JJ full) (NN understanding))
+    (VP (VBZ is)
+      (ADJP (JJ necessary)))
+    (. .)))
+
+det(understanding-3, a-1)
+amod(understanding-3, full-2)
+nsubj(necessary-5, understanding-3)
+cop(necessary-5, is-4)
+root(ROOT-0, necessary-5)
+
+(ROOT
+  (SBARQ
+    (WHPP (IN At)
+      (WHNP (WP what)
+        (NP (JJ objective) (NN point))))
+    (SQ (VBZ is)
+      (NP (JJ full) (NN understanding))
+      (VP (VBN reached)))
+    (. ?)))
+
+prep_at(reached-8, what-2)
+amod(point-4, objective-3)
+dep(what-2, point-4)
+auxpass(reached-8, is-5)
+amod(understanding-7, full-6)
+nsubjpass(reached-8, understanding-7)
+root(ROOT-0, reached-8)
+

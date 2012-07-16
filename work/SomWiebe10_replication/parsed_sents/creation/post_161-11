@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP I))
+        (VP (MD ca) (RB n't)
+          (VP (VB pin)
+            (PRT (RP down))
+            (SBAR
+              (WHADJP (RB exactly) (WP what))
+              (S
+                (NP (NNP CSI))
+                (VP (VBZ is))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB make)
+        (NP (DT any) (NNS predictions))
+        (PP
+          (PP (IN about)
+            (NP (PRP it)))
+          (, ,)
+          (CC or)
+          (PP (IN with)
+            (NP (PRP it))))))
+    (. .)))
+
+mark(pin-5, Since-1)
+nsubj(pin-5, I-2)
+aux(pin-5, ca-3)
+neg(pin-5, n't-4)
+advcl(make-15, pin-5)
+prt(pin-5, down-6)
+dep(is-10, exactly-7)
+dep(exactly-7, what-8)
+nsubj(is-10, CSI-9)
+ccomp(pin-5, is-10)
+nsubj(make-15, I-12)
+nsubj(make-15', I-12)
+aux(make-15, ca-13)
+neg(make-15, n't-14)
+root(ROOT-0, make-15)
+conj_or(make-15, make-15')
+det(predictions-17, any-16)
+dobj(make-15, predictions-17)
+prep_about(make-15, it-19)
+prep_with(make-15', it-23)
+

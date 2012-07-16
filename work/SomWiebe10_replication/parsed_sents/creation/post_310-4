@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Jay) (POS 's))
+        (NN argument))
+      (VP (VBZ fails)
+        (ADJP
+          (ADJP (RB even) (JJR worse))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (VP (VBG discussing)
+                (S
+                  (NP (NNP Newton)
+                    (CC or)
+                    (NNP Keppler))
+                  (VP (VBG stating)))))))))
+    (: --)
+    (S
+      (NP (NNP Methodological) (NNP naturalism))
+      (, ,)
+      (PP (IN for)
+        (NP (NN instance)))
+      (, ,)
+      (VP (MD would)
+        (VP (VB exclude)
+          (NP
+            (NP (JJS most))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNS founders))
+                (PP (IN of)
+                  (NP (JJ modern) (NN science)))))
+            (, ,)
+            (PP (VBG including)
+              (NP (NNP Copernicus) (, ,) (NNP Kepler) (, ,)
+                (CC and)
+                (NNP Newton)))))))
+    (. .)))
+
+poss(argument-3, Jay-1)
+nsubj(fails-4, argument-3)
+root(ROOT-0, fails-4)
+advmod(worse-6, even-5)
+acomp(fails-4, worse-6)
+advmod(discussing-8, when-7)
+dep(worse-6, discussing-8)
+nsubj(stating-12, Newton-9)
+conj_or(Newton-9, Keppler-11)
+nsubj(stating-12, Keppler-11)
+dep(discussing-8, stating-12)
+nn(naturalism-15, Methodological-14)
+nsubj(exclude-21, naturalism-15)
+prep_for(exclude-21, instance-18)
+aux(exclude-21, would-20)
+parataxis(fails-4, exclude-21)
+dobj(exclude-21, most-22)
+det(founders-25, the-24)
+prep_of(most-22, founders-25)
+amod(science-28, modern-27)
+prep_of(founders-25, science-28)
+prep_including(most-22, Copernicus-31)
+prep_including(most-22, Kepler-33)
+conj_and(Copernicus-31, Kepler-33)
+prep_including(most-22, Newton-36)
+conj_and(Copernicus-31, Newton-36)
+

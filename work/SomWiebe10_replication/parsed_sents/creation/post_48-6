@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ sees)
+      (NP
+        (NP (DT a) (JJ complex) (NN system))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ contains)
+              (SBAR
+                (S
+                  (NP
+                    (NP (JJ inter-dependent) (NNS parts))
+                    (, ,)
+                    (VP (VBN assembled)
+                      (PP (IN in)
+                        (NP (DT a)
+                          (ADJP (RB highly) (JJ specific))
+                          (NN way))))
+                    (, ,))
+                  (VP
+                    (VP (VBZ does)
+                      (NP (DT the) (NN math))
+                      (PP (IN on)
+                        (NP
+                          (NP (NN probability))
+                          (SBAR
+                            (S
+                              (NP (DT this) (NN arrangement))
+                              (VP (MD could)
+                                (VP (VB arise)
+                                  (PP (IN by)
+                                    (NP (NN chance))))))))))
+                    (CC and)
+                    (VP (VBZ concludes)
+                      (SBAR
+                        (S
+                          (NP (DT the) (NN system))
+                          (VP (VBZ is)
+                            (VP (VBN designed))))))))))))))
+    (. .)))
+
+nsubj(sees-2, ID-1)
+root(ROOT-0, sees-2)
+det(system-5, a-3)
+amod(system-5, complex-4)
+dobj(sees-2, system-5)
+nsubj(contains-7, system-5)
+rcmod(system-5, contains-7)
+amod(parts-9, inter-dependent-8)
+nsubj(does-18, parts-9)
+nsubj(concludes-30, parts-9)
+partmod(parts-9, assembled-11)
+det(way-16, a-13)
+advmod(specific-15, highly-14)
+amod(way-16, specific-15)
+prep_in(assembled-11, way-16)
+ccomp(contains-7, does-18)
+det(math-20, the-19)
+dobj(does-18, math-20)
+prep_on(does-18, probability-22)
+dobj(arise-26, probability-22)
+det(arrangement-24, this-23)
+nsubj(arise-26, arrangement-24)
+aux(arise-26, could-25)
+rcmod(probability-22, arise-26)
+prep_by(arise-26, chance-28)
+ccomp(contains-7, concludes-30)
+conj_and(does-18, concludes-30)
+det(system-32, the-31)
+nsubjpass(designed-34, system-32)
+auxpass(designed-34, is-33)
+ccomp(concludes-30, designed-34)
+

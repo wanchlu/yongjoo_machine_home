@@ -1,0 +1,93 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP (DT the) (NN couple))
+        (VP (VBZ breaks)
+          (PRT (RP up))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (MD 'll)
+                (VP (VB get)
+                  (NP (NN custody)))))))))
+    (. ?)))
+
+dep(breaks-5, What-1)
+mark(breaks-5, if-2)
+det(couple-4, the-3)
+nsubj(breaks-5, couple-4)
+root(ROOT-0, breaks-5)
+prt(breaks-5, up-6)
+nsubj(get-9, who-7)
+aux(get-9, 'll-8)
+ccomp(breaks-5, get-9)
+dobj(get-9, custody-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD will)
+      (NP (PRP they))
+      (VP (VB determine)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ is)
+              (NP (DT the) (JJR better) (NN parent)))))))
+    (. ?)))
+
+advmod(determine-4, How-1)
+aux(determine-4, will-2)
+nsubj(determine-4, they-3)
+root(ROOT-0, determine-4)
+nsubj(parent-9, who-5)
+cop(parent-9, is-6)
+det(parent-9, the-7)
+amod(parent-9, better-8)
+ccomp(determine-4, parent-9)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD will)
+      (NP (DT the) (NN adoption) (NN agency))
+      (VP (VB approve)
+        (NP (DT the) (NN couple))))
+    (. ?)))
+
+advmod(approve-6, How-1)
+aux(approve-6, will-2)
+det(agency-5, the-3)
+nn(agency-5, adoption-4)
+nsubj(approve-6, agency-5)
+root(ROOT-0, approve-6)
+det(couple-8, the-7)
+dobj(approve-6, couple-8)
+
+(ROOT
+  (SINV
+    (VP
+      (VP (VBP Do) (RB n't))
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBP say)
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (MD should)
+                  (VP (VB get)))))))))
+    (NP (VBN married) (NNS !!!!!!!!!))))
+
+root(ROOT-0, Do-1)
+neg(Do-1, n't-2)
+nsubj(say-4, they-3)
+ccomp(Do-1, say-4)
+nsubj(get-7, they-5)
+aux(get-7, should-6)
+ccomp(say-4, get-7)
+amod(!!!!!!!!!-9, married-8)
+nsubj(Do-1, !!!!!!!!!-9)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBG holding)
+        (PP (TO to)
+          (NP
+            (NP (DT an) (JJ old) (NN order))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (ADVP (RB only))
+                (VP (VBZ wants)
+                  (S
+                    (VP (TO to)
+                      (VP (VB use)
+                        (NP (NN science))
+                        (S
+                          (VP (TO to)
+                            (VP (VB discover)
+                              (NP
+                                (NP (NNS advances))
+                                (SBAR
+                                  (WHNP (WDT that))
+                                  (S
+                                    (VP (VBP serve)
+                                      (NP (DT the) (NN status) (NN quo)))))))))))))))))))
+    (. .)))
+
+nsubj(holding-3, It-1)
+aux(holding-3, is-2)
+root(ROOT-0, holding-3)
+det(order-7, an-5)
+amod(order-7, old-6)
+prep_to(holding-3, order-7)
+nsubj(wants-10, order-7)
+advmod(wants-10, only-9)
+rcmod(order-7, wants-10)
+aux(use-12, to-11)
+xcomp(wants-10, use-12)
+dobj(use-12, science-13)
+aux(discover-15, to-14)
+xcomp(use-12, discover-15)
+dobj(discover-15, advances-16)
+nsubj(serve-18, advances-16)
+rcmod(advances-16, serve-18)
+det(quo-21, the-19)
+nn(quo-21, status-20)
+dobj(serve-18, quo-21)
+

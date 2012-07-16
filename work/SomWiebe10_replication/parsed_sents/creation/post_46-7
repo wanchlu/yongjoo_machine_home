@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP DNA) (, ,) (NNP RNA) (, ,)
+        (CC and)
+        (NNP proteins))
+      (VP (VBP are)
+        (NP
+          (NP (NNS polymers))
+          (, ,)
+          (NP
+            (NP (NNS molecules))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP are)
+                  (VP (VBN made)
+                    (PP (IN of)
+                      (S
+                        (VP (VBG repeating)
+                          (NP (NNS parts)))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (MD can)
+        (ADVP (RB actually))
+        (VP (VB be)
+          (PP (IN of)
+            (NP (JJ unlimited) (NN length)))
+          (, ,)
+          (SBAR (IN so)
+            (S
+              (NP (PRP$ their) (NN complexity))
+              (VP (VBZ is)
+                (ADVP (RB also))
+                (ADJP (JJ unlimited))))))))
+    (. .)))
+
+nsubj(polymers-8, DNA-1)
+conj_and(DNA-1, RNA-3)
+nsubj(polymers-8, RNA-3)
+conj_and(DNA-1, proteins-6)
+nsubj(polymers-8, proteins-6)
+cop(polymers-8, are-7)
+root(ROOT-0, polymers-8)
+appos(polymers-8, molecules-10)
+nsubjpass(made-13, molecules-10)
+auxpass(made-13, are-12)
+rcmod(molecules-10, made-13)
+prepc_of(made-13, repeating-15)
+dobj(repeating-15, parts-16)
+nsubj(be-22, they-19)
+aux(be-22, can-20)
+advmod(be-22, actually-21)
+conj_and(polymers-8, be-22)
+amod(length-25, unlimited-24)
+prep_of(be-22, length-25)
+mark(unlimited-32, so-27)
+poss(complexity-29, their-28)
+nsubj(unlimited-32, complexity-29)
+cop(unlimited-32, is-30)
+advmod(unlimited-32, also-31)
+advcl(be-22, unlimited-32)
+

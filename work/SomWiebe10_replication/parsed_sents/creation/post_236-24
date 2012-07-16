@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Professor) (NNP Behe))
+    (VP (VBZ s)
+      (SBAR (RB only)
+        (S
+          (NP
+            (NP (NN response))
+            (PP (TO to)
+              (NP
+                (NP (DT these)
+                  (ADJP (RB seemingly) (JJ insurmountable))
+                  (NNS points))
+                (PP (IN of)
+                  (NP (NN disanalogy))))))
+          (VP (VBD was)
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NN inference))
+                (ADVP (RB still))
+                (VP (VBZ works)
+                  (PP (IN in)
+                    (NP (NN science) (NN fiction) (NNS movies))))))))))
+    (. .)))
+
+nn(Behe-2, Professor-1)
+nsubj(s-3, Behe-2)
+root(ROOT-0, s-3)
+advmod(was-13, only-4)
+nsubj(was-13, response-5)
+det(points-10, these-7)
+advmod(insurmountable-9, seemingly-8)
+amod(points-10, insurmountable-9)
+prep_to(response-5, points-10)
+prep_of(points-10, disanalogy-12)
+ccomp(s-3, was-13)
+complm(works-18, that-14)
+det(inference-16, the-15)
+nsubj(works-18, inference-16)
+advmod(works-18, still-17)
+ccomp(was-13, works-18)
+nn(movies-22, science-20)
+nn(movies-22, fiction-21)
+prep_in(works-18, movies-22)
+

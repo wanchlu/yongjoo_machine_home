@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (PP (IN in)
+          (NP (NN evolution)))))
+    (: ;)
+    (S
+      (NP (NN evolution))
+      (VP (VBZ is)
+        (NP (DT the) (NN mechanism))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT some) (NN species))
+              (PP (IN of)
+                (NP (NNS animals)
+                  (CC and)
+                  (NNS plants))))
+            (VP (VBP use)
+              (S
+                (VP (TO to)
+                  (VP (VB adapt)
+                    (PP (TO to)
+                      (NP
+                        (NP (JJ certain) (NNS circumstances))
+                        (SBAR
+                          (S
+                            (VP (VBP do)
+                              (PP (TO to)
+                                (NP (DT the) (NN change))))))))))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+prep_in(believe-2, evolution-4)
+nsubj(mechanism-9, evolution-6)
+cop(mechanism-9, is-7)
+det(mechanism-9, the-8)
+parataxis(believe-2, mechanism-9)
+complm(use-17, that-10)
+det(species-12, some-11)
+nsubj(use-17, species-12)
+xsubj(adapt-19, species-12)
+prep_of(species-12, animals-14)
+prep_of(species-12, plants-16)
+conj_and(animals-14, plants-16)
+ccomp(mechanism-9, use-17)
+aux(adapt-19, to-18)
+xcomp(use-17, adapt-19)
+amod(circumstances-22, certain-21)
+prep_to(adapt-19, circumstances-22)
+rcmod(circumstances-22, do-23)
+det(change-26, the-25)
+prep_to(do-23, change-26)
+

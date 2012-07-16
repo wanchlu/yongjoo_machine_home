@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ is)
+      (ADJP (JJ testable)))
+    (. .)))
+
+nsubj(testable-3, Science-1)
+cop(testable-3, is-2)
+root(ROOT-0, testable-3)
+
+(ROOT
+  (S
+    (VP (VB Suggest)
+      (NP
+        (NP (DT an) (NN experiment))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD would)
+              (VP (VB prove)
+                (NP (NNP Intelligent) (NNP Design))))))))
+    (. .)))
+
+root(ROOT-0, Suggest-1)
+det(experiment-3, an-2)
+dobj(Suggest-1, experiment-3)
+nsubj(prove-6, experiment-3)
+aux(prove-6, would-5)
+rcmod(experiment-3, prove-6)
+nn(Design-8, Intelligent-7)
+dobj(prove-6, Design-8)
+

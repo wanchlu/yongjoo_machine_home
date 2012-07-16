@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (PP (IN in)
+          (NP (DT a) (VBG burning) (NN building)))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (VBP have)
+        (VP (VBN evacuated)
+          (NP
+            (NP (NN everyone))
+            (PP (CC but)
+              (NP
+                (NP (DT an)
+                  (ADJP (CD 80) (NN year) (JJ old))
+                  (JJ feeble) (NN man))
+                (CC and)
+                (NP (DT a) (NN child))))))))
+    (. .)))
+
+nsubj(are-2, You-1)
+root(ROOT-0, are-2)
+det(building-6, a-4)
+amod(building-6, burning-5)
+prep_in(are-2, building-6)
+nsubj(evacuated-10, you-8)
+aux(evacuated-10, have-9)
+conj_and(are-2, evacuated-10)
+dobj(evacuated-10, everyone-11)
+prep(everyone-11, but-12)
+det(man-18, an-13)
+number(old-16, 80-14)
+dep(old-16, year-15)
+amod(man-18, old-16)
+amod(man-18, feeble-17)
+dep(but-12, man-18)
+det(child-21, a-20)
+dep(but-12, child-21)
+conj_and(man-18, child-21)
+

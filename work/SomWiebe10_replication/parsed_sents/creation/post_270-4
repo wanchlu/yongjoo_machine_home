@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB already))
+    (VP (VBP know)
+      (SBAR
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NNP poorly) (NNP ID))
+            (VP (VBZ has)
+              (VP (VBN done)
+                (PP (IN with)
+                  (NP (DT the) (NN flagellum)))))))
+        (, ,)
+        (ADVP (RB now))
+        (SBAR (IN that)
+          (S
+            (NP (NN science))
+            (VP (VBZ keeps)
+              (NP (NN unraveling) (NNS facts))
+              (PP (IN in)
+                (NP
+                  (NP (NN support))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS predictions))
+                      (VP (VBN made)
+                        (PP
+                          (ADVP
+                            (NP (JJ several) (NNS years))
+                            (RBR earlier))
+                          (IN by)
+                          (NP (NNP Nick) (NNP Matzke)))))))))))))
+    (. .)))
+
+nsubj(know-3, We-1)
+advmod(know-3, already-2)
+root(ROOT-0, know-3)
+advmod(done-8, how-4)
+nn(ID-6, poorly-5)
+nsubj(done-8, ID-6)
+aux(done-8, has-7)
+dep(know-3, done-8)
+det(flagellum-11, the-10)
+prep_with(done-8, flagellum-11)
+advmod(done-8, now-13)
+dep(keeps-16, that-14)
+nsubj(keeps-16, science-15)
+dep(done-8, keeps-16)
+nn(facts-18, unraveling-17)
+dobj(keeps-16, facts-18)
+prep_in(keeps-16, support-20)
+prep_of(support-20, predictions-22)
+partmod(predictions-22, made-23)
+amod(years-25, several-24)
+npadvmod(earlier-26, years-25)
+advmod(made-23, earlier-26)
+nn(Matzke-29, Nick-28)
+agent(made-23, Matzke-29)
+

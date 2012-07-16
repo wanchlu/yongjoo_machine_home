@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ appears)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP
+            (VP (MD can) (RB all)
+              (VP (VB agree)
+                (SBAR (IN that)
+                  (S
+                    (NP
+                      (NP (DT a) (NN fetus))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (DT the) (JJ new) (, ,) (JJ growing) (NN organism))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT a) (NN pregnancy))
+                              (VP (VBG beginning)
+                                (PP (IN at)
+                                  (NP (DT the) (JJ 3rd) (NN month)))))))
+                        (-RRB- -RRB-)))
+                    (VP (VBZ is)
+                      (NP (DT a) (NN human)))))))
+            (CC and)
+            (VP
+              (ADVP (RB thus))
+              (VBZ deserves)
+              (NP (JJ legal) (NN protection)))))))
+    (. .)))
+
+nsubj(appears-2, It-1)
+root(ROOT-0, appears-2)
+complm(agree-7, that-3)
+nsubj(agree-7, we-4)
+nsubj(deserves-31, we-4)
+aux(agree-7, can-5)
+advmod(agree-7, all-6)
+ccomp(appears-2, agree-7)
+complm(human-28, that-8)
+det(fetus-10, a-9)
+nsubj(human-28, fetus-10)
+det(organism-16, the-12)
+amod(organism-16, new-13)
+amod(organism-16, growing-15)
+dep(fetus-10, organism-16)
+det(pregnancy-19, a-18)
+prep_of(organism-16, pregnancy-19)
+partmod(pregnancy-19, beginning-20)
+det(month-24, the-22)
+amod(month-24, 3rd-23)
+prep_at(beginning-20, month-24)
+cop(human-28, is-26)
+det(human-28, a-27)
+ccomp(agree-7, human-28)
+advmod(deserves-31, thus-30)
+ccomp(appears-2, deserves-31)
+conj_and(agree-7, deserves-31)
+amod(protection-33, legal-32)
+dobj(deserves-31, protection-33)
+

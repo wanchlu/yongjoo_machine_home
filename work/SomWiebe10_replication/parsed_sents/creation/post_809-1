@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNS Scientists))
+    (ADVP (RB almost) (RB always))
+    (VP (VBP rely)
+      (PP (IN upon)
+        (NP
+          (NP (JJ methodological) (NN naturalism))
+          (, ,)
+          (NP (DT the) (NN assumption))))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NNS explanations))
+            (PP (IN of)
+              (NP (JJ observable) (NNS effects))))
+          (VP (VBP are)
+            (ADJP
+              (ADJP (RBS most) (JJ useful))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP describe)
+                    (NP (JJ specific)
+                      (PRN (-LRB- -LRB-)
+                        (ADJP (JJ natural))
+                        (-RRB- -RRB-))
+                      (NNS mechanisms))))))))))
+    (. .)))
+
+nsubj(rely-4, Scientists-1)
+advmod(always-3, almost-2)
+advmod(rely-4, always-3)
+root(ROOT-0, rely-4)
+amod(naturalism-7, methodological-6)
+prep_upon(rely-4, naturalism-7)
+det(assumption-10, the-9)
+appos(naturalism-7, assumption-10)
+complm(useful-18, that-11)
+nsubj(useful-18, explanations-12)
+amod(effects-15, observable-14)
+prep_of(explanations-12, effects-15)
+cop(useful-18, are-16)
+advmod(useful-18, most-17)
+ccomp(rely-4, useful-18)
+advmod(describe-21, when-19)
+nsubj(describe-21, they-20)
+dep(useful-18, describe-21)
+amod(mechanisms-26, specific-22)
+dep(mechanisms-26, natural-24)
+dobj(describe-21, mechanisms-26)
+

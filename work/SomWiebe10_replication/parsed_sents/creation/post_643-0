@@ -1,0 +1,72 @@
+(ROOT
+  (S (: --)
+    (NP (PRP I))
+    (VP
+      (VP (VBD changed)
+        (NP (PRP$ my) (NN mind)))
+      (CC and)
+      (VP (VBD felt)
+        (ADJP (RB somewhat) (JJ angry)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP I))
+              (VP (VBD realized)
+                (SBAR
+                  (SBAR
+                    (WHADJP (RB just) (WP what))
+                    (S
+                      (NP (DT those) (JJ early) (NNS drafts))
+                      (VP (VBD meant))))
+                  (: :)
+                  (PRN (: --)
+                    (S
+                      (NP (PRP You))
+                      (VP (VBP mean)
+                        (SBAR
+                          (S
+                            (NP (PRP you))
+                            (VP (VBD accepted)
+                              (NP (DT the) (NN attempt)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB reconcile)
+                                      (NP (DT the) (JJ early) (NNS drafts))
+                                      (PP (IN while)
+                                        (S
+                                          (VP (VBG ignoring)
+                                            (NP (DT the) (NNS facts))))))))))))))))))))))
+    (. ?)))
+
+nsubj(changed-3, I-2)
+nsubj(felt-7, I-2)
+root(ROOT-0, changed-3)
+poss(mind-5, my-4)
+dobj(changed-3, mind-5)
+conj_and(changed-3, felt-7)
+advmod(angry-9, somewhat-8)
+acomp(felt-7, angry-9)
+advmod(realized-12, when-10)
+nsubj(realized-12, I-11)
+dep(angry-9, realized-12)
+dep(meant-18, just-13)
+dep(just-13, what-14)
+det(drafts-17, those-15)
+amod(drafts-17, early-16)
+nsubj(meant-18, drafts-17)
+dep(realized-12, meant-18)
+nsubj(mean-22, You-21)
+dep(meant-18, mean-22)
+nsubj(accepted-24, you-23)
+ccomp(mean-22, accepted-24)
+det(attempt-26, the-25)
+dobj(accepted-24, attempt-26)
+aux(reconcile-28, to-27)
+infmod(attempt-26, reconcile-28)
+det(drafts-31, the-29)
+amod(drafts-31, early-30)
+dobj(reconcile-28, drafts-31)
+prepc_while(reconcile-28, ignoring-33)
+det(facts-35, the-34)
+dobj(ignoring-33, facts-35)
+

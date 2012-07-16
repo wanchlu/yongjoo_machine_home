@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ exact) (JJ same))
+    (VP (VBZ is)
+      (ADJP (JJ true))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (JJ modern) (NN science))
+          (VP (VBZ reveals)
+            (NP
+              (NP (DT an) (NNP IC) (NN structure))
+              (PP (JJ such) (IN as)
+                (NP
+                  (NP (DT the) (NN flagellar) (NN motor))
+                  (CC &)
+                  (NP (NN assembly)))))))))
+    (. .)))
+
+det(same-3, The-1)
+amod(same-3, exact-2)
+nsubj(true-5, same-3)
+cop(true-5, is-4)
+root(ROOT-0, true-5)
+advmod(reveals-9, when-6)
+amod(science-8, modern-7)
+nsubj(reveals-9, science-8)
+advcl(true-5, reveals-9)
+det(structure-12, an-10)
+nn(structure-12, IC-11)
+dobj(reveals-9, structure-12)
+det(motor-17, the-15)
+nn(motor-17, flagellar-16)
+prep_such_as(structure-12, motor-17)
+prep_such_as(structure-12, assembly-19)
+conj_and(motor-17, assembly-19)
+

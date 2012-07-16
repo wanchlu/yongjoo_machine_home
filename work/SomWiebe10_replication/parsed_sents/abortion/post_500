@@ -1,0 +1,127 @@
+(ROOT
+  (S
+    (NP (DT A) (NN baby))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT a) (NN accident))
+        (CC or)
+        (NP (DT a) (NN consequence))))
+    (. .)))
+
+det(baby-2, A-1)
+nsubj(accident-6, baby-2)
+cop(accident-6, is-3)
+neg(accident-6, not-4)
+det(accident-6, a-5)
+root(ROOT-0, accident-6)
+det(consequence-9, a-8)
+conj_or(accident-6, consequence-9)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB There))
+      (NP (PRP you))
+      (VP (VBD were)
+        (ADJP (JJ bad))))
+    (CC and)
+    (S
+      (NP (DT the) (NN baby))
+      (VP (VBZ is)
+        (NP (PRP$ your) (NN punishment))))
+    (. ?)))
+
+advmod(bad-4, There-1)
+nsubj(bad-4, you-2)
+cop(bad-4, were-3)
+root(ROOT-0, bad-4)
+det(baby-7, the-6)
+nsubj(punishment-10, baby-7)
+cop(punishment-10, is-8)
+poss(punishment-10, your-9)
+conj_and(bad-4, punishment-10)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT What) (NN kind))
+      (PP (IN of)
+        (NP (JJ pro-life) (NN attitude))))
+    (SQ (VBZ is)
+      (NP (DT that)))
+    (. ?)))
+
+det(kind-2, What-1)
+attr(is-6, kind-2)
+amod(attitude-5, pro-life-4)
+prep_of(kind-2, attitude-5)
+root(ROOT-0, is-6)
+nsubj(is-6, that-7)
+
+(ROOT
+  (S
+    (S
+      (NP (DT A) (NN baby))
+      (VP (MD may)
+        (VP (VB be)
+          (NP (DT a) (NN surprise)))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD should)
+        (ADVP (RB never))
+        (VP (VB be)
+          (VP (VBN thought)
+            (PP (IN of)
+              (PP (IN as)
+                (NP (DT a) (NN mistake))))))))
+    (. .)))
+
+det(baby-2, A-1)
+nsubj(surprise-6, baby-2)
+aux(surprise-6, may-3)
+cop(surprise-6, be-4)
+det(surprise-6, a-5)
+root(ROOT-0, surprise-6)
+nsubjpass(thought-12, it-8)
+aux(thought-12, should-9)
+neg(thought-12, never-10)
+auxpass(thought-12, be-11)
+conj_but(surprise-6, thought-12)
+prepc_as_of(thought-12, as-14)
+det(mistake-16, a-15)
+pobj(thought-12, mistake-16)
+
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (, ,)
+    (VP (VB and)
+      (NP (DT the) (NNP Bush) (NN policy))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Obama))
+          (VP (VBD changed)
+            (SBAR
+              (S
+                (VP (VBD did) (RB n't)
+                  (VP (VB support)
+                    (NP (NN birth) (NN control))
+                    (ADVP (RB either))))))))))
+    (. .)))
+
+dep(and-3, Oh-1)
+root(ROOT-0, and-3)
+det(policy-6, the-4)
+nn(policy-6, Bush-5)
+dobj(and-3, policy-6)
+complm(changed-9, that-7)
+nsubj(changed-9, Obama-8)
+ccomp(and-3, changed-9)
+aux(support-12, did-10)
+neg(support-12, n't-11)
+ccomp(changed-9, support-12)
+nn(control-14, birth-13)
+dobj(support-12, control-14)
+advmod(support-12, either-15)
+

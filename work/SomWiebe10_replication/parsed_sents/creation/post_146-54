@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD 'd)
+        (VP (VB say)
+          (SBAR
+            (SBAR (IN if)
+              (S
+                (NP (EX there))
+                (VP (VBD were)
+                  (NP (DT a) (NNP God)))))
+            (: ...)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (NP (EX there))
+                (VP (VBZ is))))))))
+    (: ...)
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT a) (CD 1:1) (NN chance))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (MD would)
+                (VP (VB be)
+                  (ADVP (RB precisely))
+                  (SBAR (IN as)
+                    (S
+                      (NP (PRP we))
+                      (VP (VBP perceive)
+                        (NP (PRP him))))))))))))
+    (. .)))
+
+nsubj(say-3, I-1)
+aux(say-3, 'd-2)
+root(ROOT-0, say-3)
+mark(were-6, if-4)
+expl(were-6, there-5)
+dep(say-3, were-6)
+det(God-8, a-7)
+nsubj(were-6, God-8)
+dobj(is-12, which-10)
+expl(is-12, there-11)
+dep(were-6, is-12)
+expl('s-15, there-14)
+parataxis(say-3, 's-15)
+det(chance-18, a-16)
+num(chance-18, 1:1-17)
+nsubj('s-15, chance-18)
+dobj(be-21, chance-18)
+nsubj(be-21, he-19)
+aux(be-21, would-20)
+rcmod(chance-18, be-21)
+advmod(be-21, precisely-22)
+mark(perceive-25, as-23)
+nsubj(perceive-25, we-24)
+advcl(be-21, perceive-25)
+dobj(perceive-25, him-26)
+

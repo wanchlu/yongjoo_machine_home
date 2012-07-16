@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD can) (RB not)
+      (VP (VB identify)
+        (CC or)
+        (VB evaluate)
+        (NP
+          (NP (DT the) (NNS things))
+          (SBAR
+            (S
+              (NP (DT the) (NN host))
+              (VP (VBZ sends)
+                (PP (TO to)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+nsubj(identify-4, It-1)
+nsubj(evaluate-6, It-1)
+aux(identify-4, can-2)
+neg(identify-4, not-3)
+root(ROOT-0, identify-4)
+conj_or(identify-4, evaluate-6)
+det(things-8, the-7)
+dobj(identify-4, things-8)
+dobj(sends-11, things-8)
+det(host-10, the-9)
+nsubj(sends-11, host-10)
+rcmod(things-8, sends-11)
+prep_to(sends-11, it-13)
+

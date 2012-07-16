@@ -1,0 +1,93 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do) (RB n't)
+      (NP (PRP we))
+      (VP (VB add)
+        (NP (DT those))
+        (PP (IN in))))
+    (. ?)))
+
+advmod(add-5, Why-1)
+aux(add-5, do-2)
+neg(add-5, n't-3)
+nsubj(add-5, we-4)
+root(ROOT-0, add-5)
+dobj(add-5, those-6)
+prep(add-5, in-7)
+
+(ROOT
+  (S
+    (S (CC And)
+      (VP (VB believe)
+        (NP (PRP me))))
+    (, ,)
+    (NP (DT those) (NNS commandments))
+    (VP (VBD were) (RB n't)
+      (VP (VBN invented)
+        (PP (IN at)
+          (NP (DT that) (NN time)))))
+    (. .)))
+
+cc(believe-2, And-1)
+ccomp(invented-9, believe-2)
+dobj(believe-2, me-3)
+det(commandments-6, those-5)
+nsubjpass(invented-9, commandments-6)
+auxpass(invented-9, were-7)
+neg(invented-9, n't-8)
+root(ROOT-0, invented-9)
+det(time-12, that-11)
+prep_at(invented-9, time-12)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was) (RB n't)
+      (NP
+        (NP (DT a) (NN free-for-all))
+        (PP (IN on)
+          (NP (NN murder)
+            (CC or)
+            (NN theft))))
+      (SBAR (IN before)
+        (S
+          (NP (NNP Moses))
+          (VP (VBD came)
+            (PRT (RP down))
+            (PP (IN from)
+              (NP (DT the) (NN mountain)))))))
+    (. .)))
+
+expl(was-2, There-1)
+root(ROOT-0, was-2)
+neg(was-2, n't-3)
+det(free-for-all-5, a-4)
+nsubj(was-2, free-for-all-5)
+prep_on(free-for-all-5, murder-7)
+prep_on(free-for-all-5, theft-9)
+conj_or(murder-7, theft-9)
+mark(came-12, before-10)
+nsubj(came-12, Moses-11)
+advcl(was-2, came-12)
+prt(came-12, down-13)
+det(mountain-16, the-15)
+prep_from(came-12, mountain-16)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Code))
+      (PP (IN of)
+        (NP (NNP Hammurabi))))
+    (VP (VBD had)
+      (NP (DT those) (NNS prohibitions)))
+    (. .)))
+
+det(Code-2, The-1)
+nsubj(had-5, Code-2)
+prep_of(Code-2, Hammurabi-4)
+root(ROOT-0, had-5)
+det(prohibitions-7, those-6)
+dobj(had-5, prohibitions-7)
+

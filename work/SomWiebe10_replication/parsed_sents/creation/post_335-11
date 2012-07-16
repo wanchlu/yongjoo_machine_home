@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (JJ Other) (NNS possibilities))
+    (VP
+      (VP (VBP are))
+      (PRN (-LRB- -LRB-) (VB i) (-RRB- -RRB-))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (JJ residual)
+              (ADJP (JJ instrumental))
+              (NNS errors))
+            (PP (IN in)
+              (NP (NNP WMAP))))
+          (VP (VBP cause)
+            (NP
+              (NP (DT the) (NN effect))
+              (PRN (-LRB- -LRB-)
+                (NP (NN ii))
+                (-RRB- -RRB-))
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (JJ unexpected) (NN microwave) (NN emission))
+                    (PP (IN from)
+                      (PP (IN within)
+                        (NP (DT the) (JJ solar) (NN system)))))
+                  (VP (VBZ is)
+                    (VP (VBG contaminating)
+                      (NP (DT the) (NNS maps)))))))))))
+    (. .)))
+
+amod(possibilities-2, Other-1)
+nsubj(are-3, possibilities-2)
+root(ROOT-0, are-3)
+dep(are-3, i-5)
+dep(cause-13, that-7)
+amod(errors-10, residual-8)
+amod(errors-10, instrumental-9)
+nsubj(cause-13, errors-10)
+prep_in(errors-10, WMAP-12)
+ccomp(are-3, cause-13)
+det(effect-15, the-14)
+dobj(cause-13, effect-15)
+appos(effect-15, ii-17)
+dep(contaminating-29, that-19)
+amod(emission-22, unexpected-20)
+nn(emission-22, microwave-21)
+nsubj(contaminating-29, emission-22)
+prep(emission-22, from-23)
+pcomp(from-23, within-24)
+det(system-27, the-25)
+amod(system-27, solar-26)
+prep_within(from-23, system-27)
+aux(contaminating-29, is-28)
+dep(effect-15, contaminating-29)
+det(maps-31, the-30)
+dobj(contaminating-29, maps-31)
+
+(ROOT
+  (NP
+    (NP (-LRB- -LRB-)
+      (QP (CD 9))
+      (-RRB- -RRB-))
+    (: --)))
+
+

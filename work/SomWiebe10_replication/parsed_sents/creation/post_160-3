@@ -1,0 +1,56 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (PRN (-LRB- -LRB-)
+          (X
+            (X
+              (X (SYM \*))
+              (NP (NN emphasis) (CD \*)))
+            (NP (JJ added)))
+          (-RRB- -RRB-)))
+      (VP
+        (ADVP (RB So))
+        (VBP ID)
+        (NP (JJ first) (NNS hypothesizes))
+        (SBAR (IN that)
+          (S
+            (NP (NNP CSI))
+            (VP (VBZ implies)
+              (NP (NN design)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (RB then))
+      (VP (VBZ concludes)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NNP CSI))
+              (PP (IN in)
+                (NP (NN biology))))
+            (VP (VBZ implies)
+              (NP (NN design)))))))
+    (. .)))
+
+dep(emphasis-4, \*-3)
+dep(added-6, emphasis-4)
+num(emphasis-4, \*-5)
+nsubj(ID-9, added-6)
+advmod(ID-9, So-8)
+root(ROOT-0, ID-9)
+amod(hypothesizes-11, first-10)
+dobj(ID-9, hypothesizes-11)
+complm(implies-14, that-12)
+nsubj(implies-14, CSI-13)
+ccomp(ID-9, implies-14)
+dobj(implies-14, design-15)
+nsubj(concludes-19, then-18)
+conj_and(ID-9, concludes-19)
+complm(implies-25, that-20)
+det(CSI-22, the-21)
+nsubj(implies-25, CSI-22)
+prep_in(CSI-22, biology-24)
+ccomp(concludes-19, implies-25)
+dobj(implies-25, design-26)
+

@@ -1,0 +1,35 @@
+(ROOT
+  (NP
+    (NP (JJ Many) (NNS animals))
+    (PP (IN for)
+      (NP (NN food)))
+    (, ,)
+    (NP
+      (NP (NNS insects))
+      (PP (IN as)
+        (NP (NNS pests))))
+    (, ,)
+    (NP
+      (NP (NN skin) (NNS cells))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP we))
+          (VP (VBZ scrape)
+            (NP (PRP$ our) (NN knee))))))
+    (. .)))
+
+amod(animals-2, Many-1)
+root(ROOT-0, animals-2)
+prep_for(animals-2, food-4)
+appos(animals-2, insects-6)
+prep_as(insects-6, pests-8)
+nn(cells-11, skin-10)
+appos(animals-2, cells-11)
+tmod(scrape-14, cells-11)
+advmod(scrape-14, when-12)
+nsubj(scrape-14, we-13)
+dep(cells-11, scrape-14)
+poss(knee-16, our-15)
+dobj(scrape-14, knee-16)
+

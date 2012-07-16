@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN cause))
+        (PP (IN of)
+          (NP (DT the) (JJ big) (NN bang))))
+      (VP (VBZ is)
+        (ADVP (RB currently))
+        (ADJP (JJ unknown))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB also))
+        (VP (VBG undergoing)
+          (NP (NN investigation)))))
+    (. .)))
+
+det(cause-2, The-1)
+nsubj(unknown-9, cause-2)
+det(bang-6, the-4)
+amod(bang-6, big-5)
+prep_of(cause-2, bang-6)
+cop(unknown-9, is-7)
+advmod(unknown-9, currently-8)
+root(ROOT-0, unknown-9)
+nsubj(undergoing-15, it-12)
+aux(undergoing-15, is-13)
+advmod(undergoing-15, also-14)
+conj_but(unknown-9, undergoing-15)
+dobj(undergoing-15, investigation-16)
+
+(ROOT
+  (S
+    (ADVP (RB Once))
+    (NP (DT a) (NN theory))
+    (VP (VBZ is)
+      (VP (VBN found)
+        (ADVP (RB then))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (VP (MD will)
+              (ADVP (IN that))
+              (VP (VB leave)
+                (NP (DT the) (NN supernatural))))))))
+    (. ?)))
+
+advmod(found-5, Once-1)
+det(theory-3, a-2)
+nsubjpass(found-5, theory-3)
+auxpass(found-5, is-4)
+root(ROOT-0, found-5)
+advmod(found-5, then-6)
+advmod(leave-10, where-7)
+aux(leave-10, will-8)
+advmod(leave-10, that-9)
+advcl(found-5, leave-10)
+det(supernatural-12, the-11)
+dobj(leave-10, supernatural-12)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (MD will)
+      (NP (PRP it))
+      (VP (VB leave)
+        (NP (DT the) (NN designer))))
+    (. ?)))
+
+advmod(leave-4, Where-1)
+aux(leave-4, will-2)
+nsubj(leave-4, it-3)
+root(ROOT-0, leave-4)
+det(designer-6, the-5)
+dobj(leave-4, designer-6)
+

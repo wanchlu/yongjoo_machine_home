@@ -1,0 +1,259 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (NN abortion))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ legal))))
+    (. .)))
+
+dep(legal-6, Yes-1)
+nsubj(legal-6, abortion-3)
+aux(legal-6, should-4)
+cop(legal-6, be-5)
+root(ROOT-0, legal-6)
+
+(ROOT
+  (S
+    (ADVP (RB First) (RB off))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD 'll)
+      (ADVP (RB never))
+      (VP (VB stop)
+        (NP
+          (NP (NNS abortions))
+          (, ,)
+          (ADJP (JJ legal)
+            (CC or)
+            (RB not)))))
+    (. .)))
+
+advmod(off-2, First-1)
+advmod(stop-7, off-2)
+nsubj(stop-7, you-4)
+aux(stop-7, 'll-5)
+neg(stop-7, never-6)
+root(ROOT-0, stop-7)
+dobj(stop-7, abortions-8)
+amod(abortions-8, legal-10)
+amod(abortions-8, not-12)
+conj_or(legal-10, not-12)
+neg(legal-10, not-12)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS abortions))
+        (VP (VBP are) (RB not)
+          (ADJP (JJ legal)))))
+    (, ,)
+    (NP
+      (NP (NNS women))
+      (CC and)
+      (NP (JJ young) (NNS girls)))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG having)
+          (NP
+            (NP (NNS abortions))
+            (PP (IN in)
+              (NP
+                (NP (NNS places))
+                (PP (JJ such) (IN as)
+                  (NP
+                    (NP (NN motel) (NNS rooms))
+                    (, ,)
+                    (ADVP (RB back))
+                    (NP (NN street) (NNS alleys))
+                    (, ,) (FW etc.) (, ,)))))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBP are)
+                  (ADJP (RB very) (JJ unsanitary)
+                    (CC and)
+                    (JJ dangerous)))))))))
+    (. .)))
+
+mark(legal-5, If-1)
+nsubj(legal-5, abortions-2)
+cop(legal-5, are-3)
+neg(legal-5, not-4)
+advcl(having-13, legal-5)
+nsubj(having-13, women-7)
+amod(girls-10, young-9)
+conj_and(women-7, girls-10)
+nsubj(having-13, girls-10)
+aux(having-13, will-11)
+aux(having-13, be-12)
+root(ROOT-0, having-13)
+dobj(having-13, abortions-14)
+nsubj(unsanitary-31, abortions-14)
+nsubj(dangerous-33, abortions-14)
+prep_in(abortions-14, places-16)
+nn(rooms-20, motel-19)
+prep_such_as(places-16, rooms-20)
+advmod(rooms-20, back-22)
+nn(alleys-24, street-23)
+nn(rooms-20, alleys-24)
+dep(rooms-20, etc.-26)
+cop(unsanitary-31, are-29)
+advmod(unsanitary-31, very-30)
+rcmod(abortions-14, unsanitary-31)
+rcmod(abortions-14, dangerous-33)
+conj_and(unsanitary-31, dangerous-33)
+
+(ROOT
+  (SINV
+    (ADVP (RB Also))
+    (VBZ does)
+    (NP (NN anyone))
+    (VP
+      (ADVP (RB really))
+      (VB think)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ rich))
+          (VP (MD wo) (RB n't)
+            (VP (VB have)
+              (NP (NNS abortions))
+              (SBAR (IN if)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (VP (VBN made)
+                      (S
+                        (ADJP (JJ illegal))))))))))))
+    (. ?)))
+
+advmod(think-5, Also-1)
+aux(think-5, does-2)
+nsubj(think-5, anyone-3)
+advmod(think-5, really-4)
+root(ROOT-0, think-5)
+complm(have-11, that-6)
+det(rich-8, the-7)
+nsubj(have-11, rich-8)
+aux(have-11, wo-9)
+neg(have-11, n't-10)
+ccomp(think-5, have-11)
+dobj(have-11, abortions-12)
+mark(made-16, if-13)
+nsubjpass(made-16, they-14)
+auxpass(made-16, are-15)
+advcl(have-11, made-16)
+acomp(made-16, illegal-17)
+
+(ROOT
+  (S
+    (S
+      (PP (IN Of)
+        (NP (NN course)))
+      (NP (PRP they))
+      (VP (MD will)))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD 'll)
+      (VP (VB pay)
+        (NP (JJ top) (NN dollar))
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT an) (NN abortion)))))))
+    (. .)))
+
+prep_of(will-4, course-2)
+nsubj(will-4, they-3)
+ccomp(pay-8, will-4)
+nsubj(pay-8, they-6)
+aux(pay-8, 'll-7)
+root(ROOT-0, pay-8)
+amod(dollar-10, top-9)
+dobj(pay-8, dollar-10)
+aux(have-12, to-11)
+xcomp(pay-8, have-12)
+det(abortion-14, an-13)
+dobj(have-12, abortion-14)
+
+(ROOT
+  (S
+    (ADVP (RB Lastly))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB really))
+      (NP
+        (NP (NN nobody) (POS 's))
+        (NN business)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (DT the) (NN female))
+            (VP (VBZ decides)
+              (PP (IN except)
+                (NP
+                  (ADJP (PRP$ her)
+                    (CC and)
+                    (PRP$ her))
+                  (NN family))))))))
+    (. .)))
+
+advmod(business-8, Lastly-1)
+nsubj(business-8, it-3)
+cop(business-8, is-4)
+advmod(business-8, really-5)
+poss(business-8, nobody-6)
+root(ROOT-0, business-8)
+dobj(decides-12, what-9)
+rel(decides-12, what-9)
+det(female-11, the-10)
+nsubj(decides-12, female-11)
+rcmod(nobody-6, decides-12)
+ccomp(business-8, decides-12)
+amod(family-17, her-14)
+conj_and(her-14, her-16)
+poss(her-14, her-16)
+amod(family-17, her-16)
+prep_except(decides-12, family-17)
+
+(ROOT
+  (S
+    (VP (VB Pus)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP do) (RB n't)
+            (VP (VB know)
+              (NP (DT the) (NNS circumstances)))))))
+    (. .)))
+
+root(ROOT-0, Pus-1)
+nsubj(know-5, you-2)
+aux(know-5, do-3)
+neg(know-5, n't-4)
+ccomp(Pus-1, know-5)
+det(circumstances-7, the-6)
+dobj(know-5, circumstances-7)
+
+(ROOT
+  (S
+    (NP (NNP Women))
+    (VP (VBP have)
+      (NP (DT the) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB choose) (, ,)
+              (NP (NN period)))))))
+    (. .)))
+
+nsubj(have-2, Women-1)
+root(ROOT-0, have-2)
+det(right-4, the-3)
+dobj(have-2, right-4)
+aux(choose-6, to-5)
+infmod(right-4, choose-6)
+dobj(choose-6, period-8)
+

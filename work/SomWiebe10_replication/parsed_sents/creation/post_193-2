@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP (DT no)
+      (ADJP
+        (NP
+          (QP (JJR more) (IN than) (DT a)))
+        (ADJP (RB very) (JJ tiny)))
+      (NN minority) (NN support))
+    (VP (VBP ID))
+    (. .)))
+
+det(support-8, no-1)
+mwe(than-3, more-2)
+quantmod(a-4, than-3)
+dep(tiny-6, a-4)
+advmod(tiny-6, very-5)
+amod(support-8, tiny-6)
+nn(support-8, minority-7)
+nsubj(ID-9, support-8)
+root(ROOT-0, ID-9)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (ADVP (RB so))
+      (VP
+        (ADVP (RB much)
+          (NP
+            (NP
+              (NP (NN emphasis))
+              (PP (IN on)
+                (NP (DT the) (JJ fossil) (NN record))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (JJ little) (NN reference))
+              (TO to)
+              (NP (WP what) (NN DNA)))))
+        (VBZ tells)
+        (NP (PRP us))))
+    (. ?)))
+
+advmod(tells-16, Why-1)
+advmod(tells-16, so-2)
+advmod(tells-16, much-3)
+pobj(much-3, emphasis-4)
+det(record-8, the-6)
+amod(record-8, fossil-7)
+prep_on(emphasis-4, record-8)
+amod(reference-12, little-11)
+pobj(much-3, reference-12)
+conj_and(emphasis-4, reference-12)
+dep(reference-12, to-13)
+dep(DNA-15, what-14)
+dep(reference-12, DNA-15)
+root(ROOT-0, tells-16)
+dobj(tells-16, us-17)
+

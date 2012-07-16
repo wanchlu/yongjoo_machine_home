@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can) (RB not)
+      (VP (VB get)
+        (VP (VBN fired)
+          (PP (IN for)
+            (S
+              (VP (VBG being)
+                (ADJP (JJ pregnant))))))))
+    (. .)))
+
+nsubjpass(fired-5, You-1)
+aux(fired-5, can-2)
+neg(fired-5, not-3)
+auxpass(fired-5, get-4)
+root(ROOT-0, fired-5)
+cop(pregnant-8, being-7)
+prepc_for(fired-5, pregnant-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NN abortion))
+            (PP (IN in)
+              (NP (DT any) (NN context))))
+          (VP (VBZ is)
+            (ADJP (JJ wrong))
+            (ADVP (RB even))
+            (PP (IN in)
+              (NP (NN rape)))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(wrong-9, that-3)
+nsubj(wrong-9, abortion-4)
+det(context-7, any-6)
+prep_in(abortion-4, context-7)
+cop(wrong-9, is-8)
+ccomp(think-2, wrong-9)
+advmod(wrong-9, even-10)
+prep_in(wrong-9, rape-12)
+
+(ROOT
+  (S
+    (NP (DT The) (NN woman))
+    (VP (MD should) (RB not)
+      (VP (VB punish)
+        (NP
+          (NP (DT the) (NN baby))
+          (SBAR
+            (S
+              (NP (DT the) (NN rapist))
+              (VP (MD should)
+                (VP (VB be)
+                  (VP (VBN held)
+                    (S
+                      (ADJP (RB financially) (JJ responsible)))))))))))
+    (. .)))
+
+det(woman-2, The-1)
+nsubj(punish-5, woman-2)
+aux(punish-5, should-3)
+neg(punish-5, not-4)
+root(ROOT-0, punish-5)
+det(baby-7, the-6)
+dobj(punish-5, baby-7)
+det(rapist-9, the-8)
+nsubjpass(held-12, rapist-9)
+aux(held-12, should-10)
+auxpass(held-12, be-11)
+rcmod(baby-7, held-12)
+advmod(responsible-14, financially-13)
+acomp(held-12, responsible-14)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD should)
+      (VP (VB have)
+        (NP
+          (NP (PRP$ his) (NN money))
+          (VP (VBN allocated)
+            (NP (DT the) (NN mother))))))
+    (. .)))
+
+nsubj(have-3, He-1)
+aux(have-3, should-2)
+root(ROOT-0, have-3)
+poss(money-5, his-4)
+dobj(have-3, money-5)
+partmod(money-5, allocated-6)
+det(mother-8, the-7)
+dobj(allocated-6, mother-8)
+

@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Infant))
+      (, ,)
+      (NP (NN child))
+      (, ,)
+      (NP (JJ adolescent))
+      (, ,)
+      (CC and)
+      (NP (NN adult)))
+    (VP (VBP are)
+      (NP
+        (NP (NNS names))
+        (PP (IN for)
+          (NP
+            (NP (JJ other) (NNS stages))
+            (PP (IN of)
+              (NP (JJ human) (NN development)))))))
+    (. .)))
+
+nsubj(names-10, Infant-1)
+conj_and(Infant-1, child-3)
+nsubj(names-10, child-3)
+conj_and(Infant-1, adolescent-5)
+nsubj(names-10, adolescent-5)
+conj_and(Infant-1, adult-8)
+nsubj(names-10, adult-8)
+cop(names-10, are-9)
+root(ROOT-0, names-10)
+amod(stages-13, other-12)
+prep_for(names-10, stages-13)
+amod(development-16, human-15)
+prep_of(stages-13, development-16)
+

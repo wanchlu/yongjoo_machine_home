@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN someone))
+        (VP (VBZ wants)
+          (S
+            (VP (TO to)
+              (VP (VB disagree)
+                (ADJP (JJ fine))))))))
+    (, ,)
+    (ADVP (CC but))
+    (VP (VB use)
+      (NP (NNS facts)
+        (CC and)
+        (NN logic)))
+    (. .)))
+
+mark(wants-3, If-1)
+nsubj(wants-3, someone-2)
+xsubj(disagree-5, someone-2)
+advcl(use-9, wants-3)
+aux(disagree-5, to-4)
+xcomp(wants-3, disagree-5)
+acomp(disagree-5, fine-6)
+advmod(use-9, but-8)
+root(ROOT-0, use-9)
+dobj(use-9, facts-10)
+dobj(use-9, logic-12)
+conj_and(facts-10, logic-12)
+

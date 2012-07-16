@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (NNPS Catholics))
+    (VP
+      (VP (VBP add)
+        (PP (TO to)
+          (NP (DT this) (DT the) (NN Apocrypha))))
+      (CC and)
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NNP Word))
+                (PP (IN of)
+                  (NP (NNP God)))))))))
+    (. .)))
+
+nsubj(add-2, Catholics-1)
+nsubj(believe-8, Catholics-1)
+root(ROOT-0, add-2)
+predet(Apocrypha-6, this-4)
+det(Apocrypha-6, the-5)
+prep_to(add-2, Apocrypha-6)
+conj_and(add-2, believe-8)
+complm(Word-13, that-9)
+nsubj(Word-13, this-10)
+cop(Word-13, is-11)
+det(Word-13, the-12)
+ccomp(believe-8, Word-13)
+prep_of(Word-13, God-15)
+

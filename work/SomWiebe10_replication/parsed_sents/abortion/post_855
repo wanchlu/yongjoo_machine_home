@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD heard)
+        (SBAR
+          (S
+            (NP (NN someone))
+            (VP (VBP argue)
+              (SBAR (IN that)
+                (S
+                  (NP (DT this))
+                  (ADVP (RB technically))
+                  (VP (VBZ makes)
+                    (NP (DT the) (NN child))
+                    (NP
+                      (NP (DT the) (JJ same) (NN organism))
+                      (PP (IN as)
+                        (NP (DT the) (NN mother))))))))))))
+    (: ;)
+    (S
+      (NP (NN birth))
+      (VP (VBZ is)
+        (ADJP
+          (ADJP (JJR more))
+          (PP (IN like)
+            (NP
+              (NP (NNS mitosis))
+              (PP (IN than)
+                (NP (NN birth))))))))
+    (. .)))
+
+nsubj(heard-2, I-1)
+root(ROOT-0, heard-2)
+nsubj(argue-4, someone-3)
+ccomp(heard-2, argue-4)
+complm(makes-8, that-5)
+nsubj(makes-8, this-6)
+advmod(makes-8, technically-7)
+ccomp(argue-4, makes-8)
+det(child-10, the-9)
+iobj(makes-8, child-10)
+det(organism-13, the-11)
+amod(organism-13, same-12)
+dobj(makes-8, organism-13)
+det(mother-16, the-15)
+prep_as(organism-13, mother-16)
+nsubj(more-20, birth-18)
+cop(more-20, is-19)
+parataxis(heard-2, more-20)
+prep_like(more-20, mitosis-22)
+prep_than(mitosis-22, birth-24)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VB forget)
+      (NP (DT the) (JJ specific) (NN justification)))
+    (. .)))
+
+nsubj(forget-2, I-1)
+root(ROOT-0, forget-2)
+det(justification-5, the-3)
+amod(justification-5, specific-4)
+dobj(forget-2, justification-5)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ nice)
+        (S
+          (VP (TO to)
+            (VP (VB think)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP we))
+                  (VP (VBP 're)
+                    (NP
+                      (NP (DT all) (NN part))
+                      (PP (IN of)
+                        (NP (DT the) (JJ same) (NN organism))))))))))))
+    (. .)))
+
+cc(nice-4, But-1)
+nsubj(nice-4, it-2)
+cop(nice-4, 's-3)
+root(ROOT-0, nice-4)
+aux(think-6, to-5)
+xcomp(nice-4, think-6)
+complm(part-11, that-7)
+nsubj(part-11, we-8)
+cop(part-11, 're-9)
+det(part-11, all-10)
+ccomp(think-6, part-11)
+det(organism-15, the-13)
+amod(organism-15, same-14)
+prep_of(part-11, organism-15)
+

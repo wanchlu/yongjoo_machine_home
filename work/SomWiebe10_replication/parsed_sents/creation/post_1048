@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN proven)
+          (NP (JJ many) (NNS times)))))
+    (. .)))
+
+nsubjpass(proven-4, Evolution-1)
+aux(proven-4, has-2)
+auxpass(proven-4, been-3)
+root(ROOT-0, proven-4)
+amod(times-6, many-5)
+dobj(proven-4, times-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ fossil) (NNS records))
+      (, ,)
+      (NP (NN DNA) (NN analysis))
+      (, ,))
+    (VP (VBP geographical)
+      (NP
+        (NP (NN distribution))
+        (, ,)
+        (NP
+          (NP (JJ real-time) (NNS observations))
+          (NP (DT all) (NN point))))
+      (PP (TO to)
+        (NP (NN evolution))))
+    (. .)))
+
+det(records-3, The-1)
+amod(records-3, fossil-2)
+nsubj(geographical-8, records-3)
+nn(analysis-6, DNA-5)
+appos(records-3, analysis-6)
+root(ROOT-0, geographical-8)
+dobj(geographical-8, distribution-9)
+amod(observations-12, real-time-11)
+appos(distribution-9, observations-12)
+det(point-14, all-13)
+dep(observations-12, point-14)
+prep_to(geographical-8, evolution-16)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (DT all))
+    (VP (VBZ makes)
+      (SBAR
+        (S
+          (NP
+            (NP (JJ perfect) (NN sense))
+            (CC and)
+            (NP (DT no) (NN discovery)))
+          (VP (VBZ has)
+            (VP (VBN contradicted)
+              (S
+                (NP (PRP it))
+                (ADVP (RB yet))))))))
+    (. .)))
+
+nsubj(makes-3, It-1)
+advmod(makes-3, all-2)
+root(ROOT-0, makes-3)
+amod(sense-5, perfect-4)
+nsubj(contradicted-10, sense-5)
+det(discovery-8, no-7)
+conj_and(sense-5, discovery-8)
+nsubj(contradicted-10, discovery-8)
+aux(contradicted-10, has-9)
+ccomp(makes-3, contradicted-10)
+dep(contradicted-10, it-11)
+advmod(it-11, yet-12)
+

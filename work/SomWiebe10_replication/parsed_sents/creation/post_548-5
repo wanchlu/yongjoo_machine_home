@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP A))
+      (VP (VBD wasted)
+        (NP (JJ private-school) (NN education))))
+    (CC and)
+    (S
+      (NP (PRP$ my))
+      (VP (VBG having)
+        (S
+          (VP (TO to)
+            (VP (VB pay)
+              (PP (IN in)
+                (NP (NN college)))
+              (PP (IN for)
+                (S
+                  (VP (RB not) (VBG having)
+                    (NP (DT a) (JJ good) (NN science) (NN education))))))))))
+    (SBAR (IN before)
+      (S
+        (NP (PRP I))
+        (VP (VBD took)
+          (NP (DT a) (JJ real) (NN biology) (NN class)))))
+    (. .)))
+
+nsubj(wasted-2, A-1)
+root(ROOT-0, wasted-2)
+amod(education-4, private-school-3)
+dobj(wasted-2, education-4)
+nsubj(having-7, my-6)
+xsubj(pay-9, my-6)
+conj_and(wasted-2, having-7)
+aux(pay-9, to-8)
+xcomp(having-7, pay-9)
+prep_in(pay-9, college-11)
+neg(having-14, not-13)
+prepc_for(pay-9, having-14)
+det(education-18, a-15)
+amod(education-18, good-16)
+nn(education-18, science-17)
+dobj(having-14, education-18)
+mark(took-21, before-19)
+nsubj(took-21, I-20)
+dep(wasted-2, took-21)
+det(class-25, a-22)
+amod(class-25, real-23)
+nn(class-25, biology-24)
+dobj(took-21, class-25)
+

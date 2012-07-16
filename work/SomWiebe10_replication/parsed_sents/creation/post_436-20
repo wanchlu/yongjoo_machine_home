@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN While)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ true))
+            (SBAR (IN that)
+              (S
+                (NP (DT some))
+                (VP
+                  (VP (VBP advocate))
+                  (, ,)
+                  (CC and)
+                  (VP (VBP seek)
+                    (S
+                      (VP (TO to)
+                        (VP (VB validate)))))))))))
+      (, ,)
+      (NP (DT a) (JJ young) (NN earth))
+      (VP (VBZ hypothesis)))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADVP (RB far)
+        (PP (IN from)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NNP ID))
+              (VP (VBZ hypothesizes)))))))
+    (. .)))
+
+mark(true-4, While-1)
+nsubj(true-4, it-2)
+cop(true-4, 's-3)
+advcl(hypothesis-17, true-4)
+complm(advocate-7, that-5)
+nsubj(advocate-7, some-6)
+nsubj(seek-10, some-6)
+xsubj(validate-12, some-6)
+ccomp(true-4, advocate-7)
+ccomp(true-4, seek-10)
+conj_and(advocate-7, seek-10)
+aux(validate-12, to-11)
+xcomp(seek-10, validate-12)
+det(earth-16, a-14)
+amod(earth-16, young-15)
+nsubj(hypothesis-17, earth-16)
+ccomp(is-20, hypothesis-17)
+nsubj(is-20, that-19)
+root(ROOT-0, is-20)
+dobj(hypothesizes-25, what-23)
+nsubj(hypothesizes-25, ID-24)
+prepc_far_from(is-20, hypothesizes-25)
+

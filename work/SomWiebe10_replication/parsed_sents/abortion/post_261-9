@@ -1,0 +1,58 @@
+(ROOT
+  (FRAG
+    (SBAR
+      (WHPP (TO To)
+        (WHNP (WDT which)))
+      (S
+        (NP
+          (NP (FW i))
+          (VP (VBN answered) (`` ``)
+            (ADVP (NN kind) (IN of))
+            ('' '')
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN sense))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (TO to)
+                      (VP (VB kill)
+                        (S
+                          (VP (VBG doing)
+                            (NP (JJ barbaric) (NNS acts))
+                            (PP (IN on)
+                              (NP (DT a) (NN corpse))))))))))))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP whichever))
+            (-RRB- -RRB-)))
+        (VP (VBZ is)
+          (ADJP
+            (ADJP (JJR worse))
+            (PP (IN than)
+              (NP (RB just) (JJ plain) (NN murder)))))))
+    (. .)))
+
+dep(worse-25, To-1)
+pobj(To-1, which-2)
+nsubj(worse-25, i-3)
+partmod(i-3, answered-4)
+dep(of-7, kind-6)
+advmod(answered-4, of-7)
+det(sense-11, the-10)
+prep_in(answered-4, sense-11)
+nsubj(kill-14, sense-11)
+aux(kill-14, to-13)
+infmod(sense-11, kill-14)
+rcmod(sense-11, kill-14)
+xcomp(kill-14, doing-15)
+amod(acts-17, barbaric-16)
+dobj(doing-15, acts-17)
+det(corpse-20, a-19)
+prep_on(doing-15, corpse-20)
+appos(i-3, whichever-22)
+cop(worse-25, is-24)
+root(ROOT-0, worse-25)
+advmod(murder-29, just-27)
+amod(murder-29, plain-28)
+prep_than(worse-25, murder-29)
+

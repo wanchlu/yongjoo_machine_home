@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (NNP Explain))
+    (SBAR
+      (WHADVP (WRB how))
+      (S
+        (NP (DT any) (NN person))
+        (VP (MD can)
+          (VP (VB believe)
+            (PP (IN in)
+              (NP
+                (NP (NN something))
+                (PP (IN about)
+                  (NP (NN nothing)))))))))
+    (NP (DT that) (NN doesn) (NN t))
+    (VP (VBP exist))
+    (. .)))
+
+nsubj(exist-14, Explain-1)
+advmod(believe-6, how-2)
+det(person-4, any-3)
+nsubj(believe-6, person-4)
+aux(believe-6, can-5)
+dep(exist-14, believe-6)
+prep_in(believe-6, something-8)
+prep_about(something-8, nothing-10)
+det(t-13, that-11)
+nn(t-13, doesn-12)
+nsubj(exist-14, t-13)
+root(ROOT-0, exist-14)
+

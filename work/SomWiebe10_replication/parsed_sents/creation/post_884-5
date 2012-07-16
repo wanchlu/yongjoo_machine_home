@@ -1,0 +1,33 @@
+(ROOT
+  (NP
+    (NP (NNP Revised) (NNP Oxford))
+    (: :)
+    (NP
+      (NP (NNP Oxford) (NNP University) (NNP PressSmith))
+      (, ,)
+      (NP
+        (NP (NNP Mark) (NNP S.))
+        (VP (VBG 2002)
+          (NP
+            (NP (DT The) (JJ Early) (NN History))
+            (PP (IN of)
+              (NP (NNP God))))
+          ('' '')
+          (NP (JJ 2nd) (NN ed)))))
+    (. .)))
+
+nn(Oxford-2, Revised-1)
+root(ROOT-0, Oxford-2)
+nn(PressSmith-6, Oxford-4)
+nn(PressSmith-6, University-5)
+dep(Oxford-2, PressSmith-6)
+nn(S.-9, Mark-8)
+appos(PressSmith-6, S.-9)
+partmod(S.-9, 2002-10)
+det(History-13, The-11)
+amod(History-13, Early-12)
+dobj(2002-10, History-13)
+prep_of(History-13, God-15)
+amod(ed-18, 2nd-17)
+dobj(2002-10, ed-18)
+

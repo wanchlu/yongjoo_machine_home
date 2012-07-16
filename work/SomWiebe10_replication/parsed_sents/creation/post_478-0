@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (VP (SYM =)
+        (NP (NNP =) (NNP TJ10) (NNP =) (NNP =))))
+    (NP (DT The) (NNP Dover) (NN verdict))
+    (VP (VBD was)
+      (NP (DT a) (NN farce)))
+    (. .)))
+
+dep(=-5, =-1)
+nn(=-5, =-2)
+nn(=-5, TJ10-3)
+nn(=-5, =-4)
+dep(farce-11, =-5)
+det(verdict-8, The-6)
+nn(verdict-8, Dover-7)
+nsubj(farce-11, verdict-8)
+cop(farce-11, was-9)
+det(farce-11, a-10)
+root(ROOT-0, farce-11)
+
+(ROOT
+  (S
+    (S
+      (VP (SYM =)
+        (NP (JJ =) (JJ Of) (NN course))))
+    (, ,)
+    (NP (NNP ID))
+    (VP (VBD lost)
+      (PP (RB because) (IN of)
+        (NP
+          (NP (DT a) (NN lack))
+          (PP (IN of)
+            (NP (NN evidence)))))
+      (SBAR (IN that)
+        (S
+          (NP (NNP ID))
+          (VP (VBD had)
+            (NP (JJ scientific) (NN content))))))
+    (. .)))
+
+dep(course-4, =-1)
+amod(course-4, =-2)
+amod(course-4, Of-3)
+ccomp(lost-7, course-4)
+nsubj(lost-7, ID-6)
+root(ROOT-0, lost-7)
+det(lack-11, a-10)
+prep_because_of(lost-7, lack-11)
+prep_of(lack-11, evidence-13)
+complm(had-16, that-14)
+nsubj(had-16, ID-15)
+ccomp(lost-7, had-16)
+amod(content-18, scientific-17)
+dobj(had-16, content-18)
+

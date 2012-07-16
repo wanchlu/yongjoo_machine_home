@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Carter))
+    (VP (VBZ points)
+      (PRT (RP out))
+      (SBAR
+        (NP (DT some) (JJ interesting) (NNS points))
+        (IN that)
+        (S
+          (NP (DT the) (NNP Copernican) (NN position))
+          (VP (MD can)
+            (VP (VB be)
+              (VP (VBN taken)
+                (ADVP
+                  (ADVP (RB too) (RB far))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ leads)
+                        (PP (TO to)
+                          (NP (DT a) (JJ dogmatic) (NN thinking)))))))))))))
+    (. .)))
+
+nsubj(points-2, Carter-1)
+root(ROOT-0, points-2)
+prt(points-2, out-3)
+det(points-6, some-4)
+amod(points-6, interesting-5)
+dep(taken-13, points-6)
+dep(taken-13, that-7)
+det(position-10, the-8)
+nn(position-10, Copernican-9)
+nsubjpass(taken-13, position-10)
+aux(taken-13, can-11)
+auxpass(taken-13, be-12)
+ccomp(points-2, taken-13)
+advmod(far-15, too-14)
+advmod(taken-13, far-15)
+nsubj(leads-18, which-17)
+dep(far-15, leads-18)
+det(thinking-22, a-20)
+amod(thinking-22, dogmatic-21)
+prep_to(leads-18, thinking-22)
+

@@ -1,0 +1,47 @@
+(ROOT
+  (FRAG
+    (SBAR
+      (WHNP (WDT which))
+      (S
+        (VP (VBP do) (RB not)
+          (VP (VB profess)
+            (ADVP (RB divinity))
+            (SBAR (IN for)
+              (S
+                (NP (NN example) (NN buddha))
+                (VP (VBD was)
+                  (NP
+                    (NP (DT a) (NN man))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP
+                          (VP (VBD sat)
+                            (PP (IN beneath)
+                              (NP (DT a) (NN tree))))
+                          (CC and)
+                          (VP (VBD was)
+                            (VP (VBN inspired)))))))))))))
+      (. .))
+    (. .)))
+
+nsubj(profess-4, which-1)
+aux(profess-4, do-2)
+neg(profess-4, not-3)
+root(ROOT-0, profess-4)
+advmod(profess-4, divinity-5)
+mark(man-11, for-6)
+nn(buddha-8, example-7)
+nsubj(man-11, buddha-8)
+cop(man-11, was-9)
+det(man-11, a-10)
+advcl(profess-4, man-11)
+nsubj(sat-13, man-11)
+nsubjpass(inspired-19, man-11)
+rcmod(man-11, sat-13)
+det(tree-16, a-15)
+prep_beneath(sat-13, tree-16)
+auxpass(inspired-19, was-18)
+rcmod(man-11, inspired-19)
+conj_and(sat-13, inspired-19)
+

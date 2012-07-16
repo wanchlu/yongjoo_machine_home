@@ -1,0 +1,434 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (DT this))
+          (VP (VBZ comes)
+            (PRT (RP down))
+            (PP (TO to)
+              (NP (DT an) (JJ irreducible) (NN complexity) (NN argument)))))))
+    (: ...)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(comes-4, this-3)
+ccomp(think-2, comes-4)
+prt(comes-4, down-5)
+det(argument-10, an-7)
+amod(argument-10, irreducible-8)
+nn(argument-10, complexity-9)
+prep_to(comes-4, argument-10)
+
+(ROOT
+  (S
+    (S
+      (ADVP (IN So) (RB far))
+      (NP (NNP Irreducible) (NNP Complexity))
+      (VP (VBZ has)
+        (VP (VBN failed)
+          (ADVP (RB ever))
+          (NP (NN time)))))
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN tested)))
+    (. .)))
+
+advmod(failed-6, So-1)
+advmod(So-1, far-2)
+nn(Complexity-4, Irreducible-3)
+nsubj(failed-6, Complexity-4)
+aux(failed-6, has-5)
+dep(tested-11, failed-6)
+advmod(failed-6, ever-7)
+dobj(failed-6, time-8)
+nsubjpass(tested-11, it-9)
+auxpass(tested-11, was-10)
+root(ROOT-0, tested-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ s)
+      (ADJP (JJ validity))
+      (SBAR (IN as)
+        (S
+          (NP (DT a) (NNP Scientific) (NN theory))
+          (VP (VBZ has)
+            (ADVP (RB never))
+            (VP (VBN been)
+              (VP (VBN demonstrated)))))))
+    (. .)))
+
+nsubj(validity-3, It-1)
+cop(validity-3, s-2)
+root(ROOT-0, validity-3)
+mark(demonstrated-11, as-4)
+det(theory-7, a-5)
+nn(theory-7, Scientific-6)
+nsubjpass(demonstrated-11, theory-7)
+aux(demonstrated-11, has-8)
+neg(demonstrated-11, never-9)
+auxpass(demonstrated-11, been-10)
+advcl(validity-3, demonstrated-11)
+
+(ROOT
+  (FRAG
+    (SBAR
+      (WHADJP (WRB how) (JJ many))
+      (S
+        (NP (NNS mutations))
+        (VP (MD would)
+          (VP (VB be)
+            (ADJP (JJ necessary)
+              (S
+                (VP (TO to)
+                  (VP (VB build)
+                    (NP (DT this) (JJ simple) (NN defense) (NN mechanism)))))))))
+      (. .))
+    (. .)))
+
+advmod(many-2, how-1)
+dep(necessary-6, many-2)
+nsubj(necessary-6, mutations-3)
+aux(necessary-6, would-4)
+cop(necessary-6, be-5)
+root(ROOT-0, necessary-6)
+aux(build-8, to-7)
+xcomp(necessary-6, build-8)
+det(mechanism-12, this-9)
+amod(mechanism-12, simple-10)
+nn(mechanism-12, defense-11)
+dobj(build-8, mechanism-12)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (MD would) (RB all)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB happen)
+              (NP
+                (NP (NNP simultaneously))
+                (PRN (-LRB- -LRB-)
+                  (CC or)
+                  (ADVP (IN as) (DT a))
+                  (NP (NN stretch) (. .)))))))))
+    (. .)))
+
+nsubj(need-4, they-1)
+xsubj(happen-6, they-1)
+aux(need-4, would-2)
+advmod(need-4, all-3)
+root(ROOT-0, need-4)
+aux(happen-6, to-5)
+xcomp(need-4, happen-6)
+dobj(happen-6, simultaneously-7)
+dep(stretch-12, or-9)
+dep(stretch-12, as-10)
+dep(as-10, a-11)
+dep(simultaneously-7, stretch-12)
+
+(ROOT
+  (FRAG
+    (ADJP (RB nearly)
+      (SBAR
+        (S
+          (NP (NNP simultaneously))
+          (-RRB- -RRB-)
+          (VP (TO to)
+            (VP (VB be)
+              (FRAG
+                (ADJP (JJ effective))
+                (. .)))))))
+    (. .)))
+
+root(ROOT-0, nearly-1)
+nsubj(be-5, simultaneously-2)
+aux(be-5, to-4)
+dep(nearly-1, be-5)
+dep(be-5, effective-6)
+
+(ROOT
+  (S
+    (VP (VB and)
+      (ADJP
+        (ADVP (RB thus))
+        (JJ superior)
+        (PP (IN by)
+          (NP (JJ natural) (NN selection)))))
+    (. .)))
+
+root(ROOT-0, and-1)
+advmod(superior-3, thus-2)
+acomp(and-1, superior-3)
+amod(selection-6, natural-5)
+prep_by(superior-3, selection-6)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB reach)
+          (NP (JJ modern) (NNS levels))
+          (ADVP (RB quite)
+            (NP (DT a) (JJ few) (NNS mutations))))))
+    (, ,)
+    (ADVP (RB however))
+    (NP (PRP they))
+    (VP (VBD built)
+      (ADVP (RB slowly))
+      (PP (IN over)
+        (NP (DT the) (JJ past)
+          (QP (JJ few) (CD million))
+          (NNS years))))
+    (. .)))
+
+aux(reach-2, To-1)
+dep(built-12, reach-2)
+amod(levels-4, modern-3)
+dobj(reach-2, levels-4)
+advmod(reach-2, quite-5)
+det(mutations-8, a-6)
+amod(mutations-8, few-7)
+pobj(quite-5, mutations-8)
+advmod(built-12, however-10)
+nsubj(built-12, they-11)
+root(ROOT-0, built-12)
+advmod(built-12, slowly-13)
+det(years-19, the-15)
+amod(years-19, past-16)
+quantmod(million-18, few-17)
+num(years-19, million-18)
+prep_over(built-12, years-19)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ immune) (NN system))
+    (VP (VBD did) (RB not)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB arise)
+              (ADVP (RB simultaneously))
+              (SBAR (IN after)
+                (S
+                  (NP (DT all) (NN evolution))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (DT a) (NN game))
+                      (PP (IN of)
+                        (NP (NN oneupmanship))))))))))))
+    (. .)))
+
+det(system-3, The-1)
+amod(system-3, immune-2)
+nsubj(have-6, system-3)
+xsubj(arise-8, system-3)
+aux(have-6, did-4)
+neg(have-6, not-5)
+root(ROOT-0, have-6)
+aux(arise-8, to-7)
+xcomp(have-6, arise-8)
+advmod(arise-8, simultaneously-9)
+mark(game-15, after-10)
+det(evolution-12, all-11)
+nsubj(game-15, evolution-12)
+cop(game-15, is-13)
+det(game-15, a-14)
+advcl(arise-8, game-15)
+prep_of(game-15, oneupmanship-17)
+
+(ROOT
+  (S
+    (NP (CD One) (NNS species))
+    (VP
+      (VP (VBZ develops)
+        (NP (NNS defenses))
+        (PP (IN against)
+          (NP
+            (NP (DT a) (NN form))
+            (PP (IN of)
+              (NP (NNP attach))))))
+      (CC and)
+      (VP (VBZ goes)
+        (PRT (RP on))
+        (S
+          (VP (TO to)
+            (VP (VB prosper)))))
+      (, ,)
+      (SBAR (IN while)
+        (S
+          (NP (DT another) (NNS species))
+          (VP (VBZ develops)
+            (NP
+              (NP (DT a) (JJ new) (NN mechanism))
+              (PP (IN of)
+                (NP (NN attack)))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ bypasses)
+                    (NP (DT those) (NNS defenses))))))))))
+    (. .)))
+
+num(species-2, One-1)
+nsubj(develops-3, species-2)
+nsubj(goes-11, species-2)
+xsubj(prosper-14, species-2)
+root(ROOT-0, develops-3)
+dobj(develops-3, defenses-4)
+det(form-7, a-6)
+prep_against(develops-3, form-7)
+prep_of(form-7, attach-9)
+conj_and(develops-3, goes-11)
+prt(goes-11, on-12)
+aux(prosper-14, to-13)
+xcomp(goes-11, prosper-14)
+mark(develops-19, while-16)
+det(species-18, another-17)
+nsubj(develops-19, species-18)
+advcl(develops-3, develops-19)
+det(mechanism-22, a-20)
+amod(mechanism-22, new-21)
+dobj(develops-19, mechanism-22)
+nsubj(bypasses-26, mechanism-22)
+prep_of(mechanism-22, attack-24)
+rcmod(mechanism-22, bypasses-26)
+det(defenses-28, those-27)
+dobj(bypasses-26, defenses-28)
+
+(ROOT
+  (S
+    (NP (PDT All) (DT this))
+    (VP (VBZ happens)
+      (PP (IN in)
+        (NP
+          (NP (DT a)
+            (ADJP
+              (ADVP (RB constantly))
+              (VBG changing))
+            (NN environment))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (JJ multiple) (NNS pressures))
+              (VP (VBP exist)))))))
+    (. .)))
+
+predet(this-2, All-1)
+nsubj(happens-3, this-2)
+root(ROOT-0, happens-3)
+det(environment-8, a-5)
+advmod(changing-7, constantly-6)
+amod(environment-8, changing-7)
+prep_in(happens-3, environment-8)
+advmod(exist-12, where-9)
+amod(pressures-11, multiple-10)
+nsubj(exist-12, pressures-11)
+rcmod(environment-8, exist-12)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (SBAR (IN once)
+      (S
+        (NP
+          (NP (DT a) (NN defense))
+          (PP (IN against)
+            (NP
+              (NP (CD one) (NN kind))
+              (PP (IN of)
+                (NP (NN attack))))))
+        (VP (VBZ has)
+          (ADVP (RB bee))
+          (VP (VBN developed)))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (RB much) (JJR easier))
+      (S
+        (VP (TO to)
+          (VP (VB develop)
+            (NP (JJ new) (NNS defenses))
+            (PP (IN against)
+              (NP
+                (NP (DT a) (JJ similar) (NN form))
+                (PP (IN of)
+                  (NP (NN attack)))
+                (PRN (-LRB- -LRB-)
+                  (SBAR (IN once)
+                    (S
+                      (NP (DT a) (NNS species))
+                      (VP (VBZ has)
+                        (VP (VBN developed)
+                          (NP
+                            (NP (DT a) (NN defense))
+                            (PP (IN against)
+                              (NP
+                                (NP (CD one) (NN type))
+                                (PP (IN of)
+                                  (NP (NN virus)))))
+                            (SBAR
+                              (S
+                                (NP (PRP it))
+                                (VP (VBZ is)
+                                  (ADJP (JJR easier))
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB develop)
+                                        (NP (NNS defenses))
+                                        (PP (TO to)
+                                          (NP
+                                            (NP (JJ similar) (NNS types))
+                                            (PP (IN of)
+                                              (NP (NNS viruses))))))))))))))))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+advmod(easier-17, Also-1)
+mark(developed-13, once-3)
+det(defense-5, a-4)
+nsubj(developed-13, defense-5)
+num(kind-8, one-7)
+prep_against(defense-5, kind-8)
+prep_of(kind-8, attack-10)
+aux(developed-13, has-11)
+advmod(developed-13, bee-12)
+dep(easier-17, developed-13)
+nsubj(easier-17, it-14)
+xsubj(develop-19, it-14)
+cop(easier-17, is-15)
+advmod(easier-17, much-16)
+root(ROOT-0, easier-17)
+aux(develop-19, to-18)
+xcomp(easier-17, develop-19)
+amod(defenses-21, new-20)
+dobj(develop-19, defenses-21)
+det(form-25, a-23)
+amod(form-25, similar-24)
+prep_against(develop-19, form-25)
+prep_of(form-25, attack-27)
+mark(developed-33, once-29)
+det(species-31, a-30)
+nsubj(developed-33, species-31)
+aux(developed-33, has-32)
+dep(form-25, developed-33)
+det(defense-35, a-34)
+dobj(developed-33, defense-35)
+num(type-38, one-37)
+prep_against(defense-35, type-38)
+prep_of(type-38, virus-40)
+nsubj(easier-43, it-41)
+xsubj(develop-45, it-41)
+cop(easier-43, is-42)
+rcmod(defense-35, easier-43)
+aux(develop-45, to-44)
+xcomp(easier-43, develop-45)
+dobj(develop-45, defenses-46)
+amod(types-49, similar-48)
+prep_to(develop-45, types-49)
+prep_of(types-49, viruses-51)
+

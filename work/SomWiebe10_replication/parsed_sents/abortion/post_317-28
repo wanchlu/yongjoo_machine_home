@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (WDT which) (NN case)))
+    (S
+      (NP (PRP I)))
+    (NP (PRP you))
+    (VP (VBD had)
+      (ADVP (RBR better))
+      (VP (VB be)
+        (VP (VBN registered)
+          (CC and)
+          (VBN prepared)
+          (S
+            (VP (TO to)
+              (VP (VB donate)
+                (NP
+                  (NP (PRP$ your) (NN bone) (NN marrow))
+                  (, ,)
+                  (CC and)
+                  (NP (PRP$ your) (NN kidney)))))))))
+    (. .)))
+
+dep(case-3, which-2)
+prep_in(registered-9, case-3)
+dep(registered-9, I-4)
+nsubjpass(registered-9, you-5)
+nsubjpass(prepared-11, you-5)
+aux(registered-9, had-6)
+advmod(registered-9, better-7)
+auxpass(registered-9, be-8)
+root(ROOT-0, registered-9)
+conj_and(registered-9, prepared-11)
+aux(donate-13, to-12)
+xcomp(registered-9, donate-13)
+poss(marrow-16, your-14)
+nn(marrow-16, bone-15)
+dobj(donate-13, marrow-16)
+poss(kidney-20, your-19)
+dobj(donate-13, kidney-20)
+conj_and(marrow-16, kidney-20)
+

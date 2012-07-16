@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (NN freedom))
+          (PP (IN of)
+            (NP (NN speech)
+              (CC and)
+              (NN truth))))
+        (VP (VBZ is)
+          (NP (PDT such) (DT an) (NN issue))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP dont)
+                (SBAR
+                  (S
+                    (NP (PRP we))
+                    (VP
+                      (VP (VBD put)
+                        (NP (DT BOTH) (NNS views))
+                        (PP (IN in)
+                          (NP (NN science) (NNS books))))
+                      (CC and)
+                      (VP (VBP have)
+                        (NP (NNS teachers))))))))))))
+    (VP (VBP encourage)
+      (S
+        (NP (NNS students))
+        (VP (TO to)
+          (VP (VB talk)
+            (PP (TO to)
+              (NP (PRP$ their) (NNS parents)))
+            (PP (IN about)
+              (NP (PRP it)))))))
+    (. .)))
+
+mark(issue-10, If-1)
+nsubj(issue-10, freedom-2)
+prep_of(freedom-2, speech-4)
+prep_of(freedom-2, truth-6)
+conj_and(speech-4, truth-6)
+cop(issue-10, is-7)
+predet(issue-10, such-8)
+det(issue-10, an-9)
+csubj(encourage-23, issue-10)
+advmod(dont-12, why-11)
+advcl(issue-10, dont-12)
+nsubj(put-14, we-13)
+nsubj(have-21, we-13)
+ccomp(dont-12, put-14)
+det(views-16, BOTH-15)
+dobj(put-14, views-16)
+nn(books-19, science-18)
+prep_in(put-14, books-19)
+ccomp(dont-12, have-21)
+conj_and(put-14, have-21)
+dobj(have-21, teachers-22)
+root(ROOT-0, encourage-23)
+nsubj(talk-26, students-24)
+aux(talk-26, to-25)
+xcomp(encourage-23, talk-26)
+poss(parents-29, their-28)
+prep_to(talk-26, parents-29)
+prep_about(talk-26, it-31)
+

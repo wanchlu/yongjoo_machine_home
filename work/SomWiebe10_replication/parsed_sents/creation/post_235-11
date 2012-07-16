@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN While)
+        (FRAG
+          (CONJP (RB not) (IN as))
+          (NP (RB much) (DT an) (NN accident))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBD was)
+        (ADVP (RB also))
+        (NP
+          (NP (RB not) (DT a) (NN case))
+          (PP (IN of)
+            (NP (VBN attempted) (NN homicide))))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD could)
+        (VP (VB be)
+          (VP (VBN interpreted)
+            (PP (IN as)
+              (NP (DT an) (VBN attempted) (NN suicide)))))))
+    (. .)))
+
+mark(accident-6, While-1)
+dep(accident-6, not-2)
+dep(not-2, as-3)
+advmod(accident-6, much-4)
+det(accident-6, an-5)
+advcl(case-13, accident-6)
+nsubj(case-13, it-8)
+cop(case-13, was-9)
+advmod(case-13, also-10)
+neg(case-13, not-11)
+det(case-13, a-12)
+root(ROOT-0, case-13)
+amod(homicide-16, attempted-15)
+prep_of(case-13, homicide-16)
+nsubjpass(interpreted-21, it-18)
+aux(interpreted-21, could-19)
+auxpass(interpreted-21, be-20)
+conj_but(case-13, interpreted-21)
+det(suicide-25, an-23)
+amod(suicide-25, attempted-24)
+prep_as(interpreted-21, suicide-25)
+

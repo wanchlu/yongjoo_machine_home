@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN point))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP
+                (NP (DT the) (NNS chromosomes))
+                (PP (IN from)
+                  (NP
+                    (NP (DT the) (NN sperm) (NN cell))
+                    (CC and)
+                    (NP (DT the) (NN egg) (NN cell)))))
+              (VP (VBP combine)))))))
+    (. .)))
+
+nsubj(is-2, It-1)
+root(ROOT-0, is-2)
+det(point-5, the-4)
+prep_at(is-2, point-5)
+advmod(combine-17, where-6)
+det(chromosomes-8, the-7)
+nsubj(combine-17, chromosomes-8)
+det(cell-12, the-10)
+nn(cell-12, sperm-11)
+prep_from(chromosomes-8, cell-12)
+det(cell-16, the-14)
+nn(cell-16, egg-15)
+prep_from(chromosomes-8, cell-16)
+conj_and(cell-12, cell-16)
+rcmod(point-5, combine-17)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ characterizes)
+          (CC or)
+          (VBZ demonstrates)
+          (NP (JJ premeditated) (NN intent))
+          (PP (IN from)
+            (NP
+              (NP (JJ pure) (NN accident))
+              (PP (IN at)
+                (NP (DT the) (JJ only) (NN level))))))))
+    (NP (PRP we))
+    (VP (MD can)
+      (ADVP (RB reliably))
+      (VP (VB distinguish)
+        (NP
+          (NP (PRP it))
+          (, ,)
+          (NP (DT the) (JJ human) (NN level)))))
+    (. .)))
+
+nsubj(characterizes-2, What-1)
+nsubj(demonstrates-4, What-1)
+dep(distinguish-17, characterizes-2)
+conj_or(characterizes-2, demonstrates-4)
+dep(distinguish-17, demonstrates-4)
+amod(intent-6, premeditated-5)
+dobj(characterizes-2, intent-6)
+amod(accident-9, pure-8)
+prep_from(characterizes-2, accident-9)
+det(level-13, the-11)
+amod(level-13, only-12)
+prep_at(accident-9, level-13)
+nsubj(distinguish-17, we-14)
+aux(distinguish-17, can-15)
+advmod(distinguish-17, reliably-16)
+root(ROOT-0, distinguish-17)
+dobj(distinguish-17, it-18)
+det(level-22, the-20)
+amod(level-22, human-21)
+appos(it-18, level-22)
+

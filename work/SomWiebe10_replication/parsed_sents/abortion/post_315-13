@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN fetus))
+      (, ,)
+      (NP
+        (NP (NN zygote))
+        (, ,)
+        (NP (NN baby))
+        (, ,) (FW etc.)))
+    (VP (VBZ depends)
+      (PP (IN upon)
+        (NP
+          (NP (DT another) (NN human))
+          (PP (IN for)
+            (NP (NN life))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(depends-9, fetus-2)
+appos(fetus-2, zygote-4)
+appos(zygote-4, baby-6)
+dep(zygote-4, etc.-8)
+root(ROOT-0, depends-9)
+det(human-12, another-11)
+prep_upon(depends-9, human-12)
+prep_for(human-12, life-14)
+

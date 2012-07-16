@@ -1,0 +1,156 @@
+(ROOT
+  (S
+    (NP (NNP Alcoholism))
+    (VP (VBZ is)
+      (NP (DT a) (NN disease)))
+    (. .)))
+
+nsubj(disease-4, Alcoholism-1)
+cop(disease-4, is-2)
+det(disease-4, a-3)
+root(ROOT-0, disease-4)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP have)
+            (NP (PRP it))))))
+    (VP (VBP have)
+      (VP (VBN cant)
+        (S
+          (VP (VB help)
+            (NP (DT the) (NN fact))
+            (SBAR (IN that)
+              (S
+                (NP (PRP they))
+                (VP (VBP feel)
+                  (NP (DT an) (JJ exaggerated) (NN pleasure) (NN response))
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP consume)
+                        (NP (NN alcohol))))))))))))
+    (. .)))
+
+nsubj(have-3, Those-1)
+nsubj(cant-6, Those-1)
+rcmod(Those-1, have-3)
+dobj(have-3, it-4)
+aux(cant-6, have-5)
+root(ROOT-0, cant-6)
+ccomp(cant-6, help-7)
+det(fact-9, the-8)
+dobj(help-7, fact-9)
+complm(feel-12, that-10)
+nsubj(feel-12, they-11)
+ccomp(help-7, feel-12)
+det(response-16, an-13)
+amod(response-16, exaggerated-14)
+nn(response-16, pleasure-15)
+dobj(feel-12, response-16)
+advmod(consume-19, when-17)
+nsubj(consume-19, they-18)
+advcl(feel-12, consume-19)
+dobj(consume-19, alcohol-20)
+
+(ROOT
+  (S
+    (PP (IN Unlike)
+      (NP (NNS alcoholics)))
+    (, ,)
+    (NP (NNS creationists))
+    (VP (VBP have)
+      (NP (DT the) (NN option)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB learn)
+                (NP (DT the) (NN truth)))
+              (CC and)
+              (VP (VB cure)
+                (NP (PRP$ their) (NN creationism))
+                (ADVP (RB simply))
+                (PP (IN by)
+                  (S
+                    (VP
+                      (VP (VBG reading)
+                        (NP (DT an) (JJ 8th) (NN grade) (NN science) (NN book)))
+                      (, ,)
+                      (CC or)
+                      (VP (VBG attending)
+                        (NP (JJ public) (NN school))))))))))))
+    (. .)))
+
+prep_unlike(have-5, alcoholics-2)
+nsubj(have-5, creationists-4)
+root(ROOT-0, have-5)
+det(option-7, the-6)
+dobj(have-5, option-7)
+aux(learn-9, to-8)
+infmod(option-7, learn-9)
+det(truth-11, the-10)
+dobj(learn-9, truth-11)
+infmod(option-7, cure-13)
+conj_and(learn-9, cure-13)
+poss(creationism-15, their-14)
+dobj(cure-13, creationism-15)
+advmod(cure-13, simply-16)
+prepc_by(cure-13, reading-18)
+det(book-23, an-19)
+amod(book-23, 8th-20)
+nn(book-23, grade-21)
+nn(book-23, science-22)
+dobj(reading-18, book-23)
+prepc_by(cure-13, attending-26)
+conj_or(reading-18, attending-26)
+amod(school-28, public-27)
+dobj(attending-26, school-28)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP they))
+        (VP (VBP refuse)
+          (S
+            (VP (TO to)
+              (VP (VB inform)
+                (NP (PRP themselves))
+                (SBAR (IN before)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP decide)
+                      (PP (IN on)
+                        (NP (PRP$ their) (NNS beliefs))))))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN considered)
+          (S
+            (ADJP (JJ stupid))))))
+    (. .)))
+
+mark(refuse-3, Since-1)
+nsubj(refuse-3, they-2)
+xsubj(inform-5, they-2)
+advcl(considered-17, refuse-3)
+aux(inform-5, to-4)
+xcomp(refuse-3, inform-5)
+dobj(inform-5, themselves-6)
+mark(decide-9, before-7)
+nsubj(decide-9, they-8)
+advcl(inform-5, decide-9)
+poss(beliefs-12, their-11)
+prep_on(decide-9, beliefs-12)
+nsubjpass(considered-17, they-14)
+aux(considered-17, can-15)
+auxpass(considered-17, be-16)
+root(ROOT-0, considered-17)
+acomp(considered-17, stupid-18)
+

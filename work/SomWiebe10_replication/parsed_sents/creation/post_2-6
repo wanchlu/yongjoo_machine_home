@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (NNS bacteria))
+          (VP (VBP have)
+            (ADVP (RB yet))
+            (S
+              (VP (TO to)
+                (VP (VB grow)
+                  (NP (NNS arms))
+                  (, ,)
+                  (PP (IN despite)
+                    (NP
+                      (NP (PRP$ our) (JJ direct) (NN observation))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS billions))
+                          (PP (IN of)
+                            (NP (NNS generations))))))))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+advmod(have-5, why-3)
+nsubj(have-5, bacteria-4)
+xsubj(grow-8, bacteria-4)
+advcl(is-2, have-5)
+advmod(have-5, yet-6)
+aux(grow-8, to-7)
+xcomp(have-5, grow-8)
+dobj(grow-8, arms-9)
+poss(observation-14, our-12)
+amod(observation-14, direct-13)
+prep_despite(grow-8, observation-14)
+prep_of(observation-14, billions-16)
+prep_of(billions-16, generations-18)
+

@@ -1,0 +1,555 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (LST (LS 1) (-RRB- -RRB-))
+      (NP (PRP we))
+      (VP (MD can)
+        (VP (VB observe)
+          (S
+            (NP (PRP it))
+            (VP (VBG occuring)
+              (NP
+                (NP
+                  (LST (LS 2) (-RRB- -RRB-))
+                  (NP (DT the) (JJ fossil) (NN record) (NNS shows) (NNS changes))
+                  (PP (IN in)
+                    (NP (NNS lifeforms))))
+                (ADJP (JJ separated)))
+              (PP (IN by)
+                (NP (NN time) (CD 3)))
+              (-RRB- -RRB-))))))
+    (NP (JJ genetic) (NN analysis))
+    (VP (VBZ shows)
+      (NP (NNS similarities))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN DNA) (NN level))
+          (PP (IN between)
+            (NP (JJ similar) (NNS lifeforms))))))
+    (. .)))
+
+dep(observe-6, 1-2)
+nsubj(observe-6, we-4)
+aux(observe-6, can-5)
+dep(shows-25, observe-6)
+nsubj(occuring-8, it-7)
+dep(observe-6, occuring-8)
+dep(changes-15, 2-9)
+det(changes-15, the-11)
+amod(changes-15, fossil-12)
+nn(changes-15, record-13)
+nn(changes-15, shows-14)
+dobj(occuring-8, changes-15)
+prep_in(changes-15, lifeforms-17)
+amod(changes-15, separated-18)
+prep_by(occuring-8, time-20)
+num(time-20, 3-21)
+amod(analysis-24, genetic-23)
+nsubj(shows-25, analysis-24)
+root(ROOT-0, shows-25)
+dobj(shows-25, similarities-26)
+det(level-30, the-28)
+nn(level-30, DNA-29)
+prep_at(shows-25, level-30)
+amod(lifeforms-33, similar-32)
+prep_between(level-30, lifeforms-33)
+
+(ROOT
+  (SBARQ
+    (WHADVP (RB '') (WRB How))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (VP (VB observe)
+        (NP (NN evolution) (NN occuring))))
+    (. ?)))
+
+advmod(observe-5, How-2)
+aux(observe-5, do-3)
+nsubj(observe-5, we-4)
+root(ROOT-0, observe-5)
+nn(occuring-7, evolution-6)
+dobj(observe-5, occuring-7)
+
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (TO to)
+        (NP (NN evolution))))
+    (NP (PRP it))
+    (ADVP (RB only))
+    (VP (VBZ requires)
+      (NP (JJ random) (NN chemical) (NNS reactions)))
+    (. .)))
+
+prepc_according_to(requires-6, to-2)
+pobj(requires-6, evolution-3)
+nsubj(requires-6, it-4)
+advmod(requires-6, only-5)
+root(ROOT-0, requires-6)
+amod(reactions-9, random-7)
+nn(reactions-9, chemical-8)
+dobj(requires-6, reactions-9)
+
+(ROOT
+  (SINV
+    (PP (IN By)
+      (NP
+        (NP (DT the) (NN way))
+        (, ,)
+        (PP (IN in)
+          (NP
+            (NP (DT no) (NN science) (NN lab))
+            (PP (IN in)
+              (NP (DT the) (JJ entire) (NN world)))))))
+    (VBZ has)
+    (NP (PRP it))
+    (VP (VBN been)
+      (VP (VBN proven)
+        (SBAR (IN that)
+          (S
+            (NP (NN chemical) (NNS reactions))
+            (VP (MD can)
+              (VP (VB create)
+                (NP (NN life))))))))
+    (. .)))
+
+det(way-3, the-2)
+agent(proven-16, way-3)
+det(lab-8, no-6)
+nn(lab-8, science-7)
+prep_in(way-3, lab-8)
+det(world-12, the-10)
+amod(world-12, entire-11)
+prep_in(lab-8, world-12)
+aux(proven-16, has-13)
+nsubjpass(proven-16, it-14)
+auxpass(proven-16, been-15)
+root(ROOT-0, proven-16)
+complm(create-21, that-17)
+nn(reactions-19, chemical-18)
+nsubj(create-21, reactions-19)
+aux(create-21, can-20)
+ccomp(proven-16, create-21)
+dobj(create-21, life-22)
+
+(ROOT
+  (S
+    (ADVP (RB Finally))
+    (, ,)
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (RB toatlly) (JJ out))
+      (UCP
+        (PP (IN of)
+          (NP (NN curiosity)))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBN compelled)
+              (S
+                (NP (PRP you))
+                (VP (TO to)
+                  (VP (VB decide)
+                    (S
+                      (VP (TO to)
+                        (VP (VB believe)
+                          (PP (IN in)
+                            (NP
+                              (NP (DT the) (NN theory))
+                              (PP (IN of)
+                                (NP (NN evolution))))))))))))))))
+    (. ?)))
+
+advmod(out-6, Finally-1)
+nsubj(out-6, This-3)
+cop(out-6, is-4)
+advmod(out-6, toatlly-5)
+root(ROOT-0, out-6)
+dep(out-6, of-7)
+pobj(of-7, curiosity-8)
+nsubj(compelled-12, what-11)
+dep(out-6, compelled-12)
+conj_but(of-7, compelled-12)
+nsubj(decide-15, you-13)
+xsubj(believe-17, you-13)
+aux(decide-15, to-14)
+xcomp(compelled-12, decide-15)
+aux(believe-17, to-16)
+xcomp(decide-15, believe-17)
+det(theory-20, the-19)
+prep_in(believe-17, theory-20)
+prep_of(theory-20, evolution-22)
+
+(ROOT
+  (S
+    (NP (JJ Next) (NN time))
+    (NP (PRP I))
+    (VP (VBP respond)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP do)
+            (NP (NN plan))
+            (PP (IN on)
+              (S
+                (VP (VBG giving)
+                  (NP (JJR more) (NN evidence))
+                  (PP
+                    (PP (IN for)
+                      (NP (NN creation)))
+                    (CC and)
+                    (PP (IN against)
+                      (NP (NN evolution)))))))))))
+    (. .)))
+
+amod(time-2, Next-1)
+nsubj(respond-4, time-2)
+nsubj(respond-4, I-3)
+root(ROOT-0, respond-4)
+nsubj(do-6, I-5)
+ccomp(respond-4, do-6)
+dobj(do-6, plan-7)
+prepc_on(do-6, giving-9)
+prepc_on(do-6, giving-9')
+conj_and(giving-9, giving-9')
+amod(evidence-11, more-10)
+dobj(giving-9, evidence-11)
+prep_for(giving-9, creation-13)
+prep_against(giving-9', evolution-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBD wanted)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (NP (DT a) (JJR better) (NN handle))
+            (PP (IN on)
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP you))
+                  (VP (VBD were)
+                    (VP (VBG coming)
+                      (PP (IN from)
+                        (PP (IN with)
+                          (NP (PRP$ your) (NN argument)))))))))))))
+    (. .)))
+
+nsubj(wanted-3, I-1)
+xsubj(get-5, I-1)
+advmod(wanted-3, just-2)
+root(ROOT-0, wanted-3)
+aux(get-5, to-4)
+xcomp(wanted-3, get-5)
+det(handle-8, a-6)
+amod(handle-8, better-7)
+dobj(get-5, handle-8)
+advmod(coming-13, where-10)
+nsubj(coming-13, you-11)
+aux(coming-13, were-12)
+prepc_on(get-5, coming-13)
+prep(coming-13, from-14)
+pcomp(from-14, with-15)
+poss(argument-17, your-16)
+prep_with(from-14, argument-17)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (VBP appreciate)
+                  (NP (PRP$ your) (NN desire)
+                    (S
+                      (VP (TO to)
+                        (VP (VB find)
+                          (NP (DT the) (NN truth))
+                          (PP (IN in)
+                            (NP
+                              (NP (DT the) (NNS origins))
+                              (PP (IN of)
+                                (NP (DT this) (NN earth))))))))))))))))
+    (. .)))
+
+nsubj(want-3, I-1)
+xsubj(say-5, I-1)
+advmod(want-3, also-2)
+root(ROOT-0, want-3)
+aux(say-5, to-4)
+xcomp(want-3, say-5)
+complm(appreciate-8, that-6)
+nsubj(appreciate-8, I-7)
+ccomp(say-5, appreciate-8)
+poss(desire-10, your-9)
+dobj(appreciate-8, desire-10)
+aux(find-12, to-11)
+infmod(desire-10, find-12)
+det(truth-14, the-13)
+dobj(find-12, truth-14)
+det(origins-17, the-16)
+prep_in(find-12, origins-17)
+det(earth-20, this-19)
+prep_of(origins-17, earth-20)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB see)
+        (NP
+          (NP (CD one) (NN creature))
+          (VP (VBG evolving)
+            (PP (IN into)
+              (NP (DT another) (NN one)))))))
+    (. .)))
+
+nsubj(see-4, I-1)
+aux(see-4, do-2)
+neg(see-4, not-3)
+root(ROOT-0, see-4)
+num(creature-6, one-5)
+dobj(see-4, creature-6)
+partmod(creature-6, evolving-7)
+det(one-10, another-9)
+prep_into(evolving-7, one-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB explain)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (JJ fossil) (NN record))
+            (VP
+              (VP (VBZ lacks)
+                (NP (JJ intermediate) (NNS lifeforms)))
+              (CC and)
+              (VP
+                (ADVP (RB only))
+                (VBZ shows)
+                (NP
+                  (NP (JJ major) (NNS transitions))
+                  (PP (IN of)
+                    (NP (NNS organisms))))))))))
+    (. .)))
+
+advmod(explain-4, How-1)
+aux(explain-4, do-2)
+nsubj(explain-4, you-3)
+root(ROOT-0, explain-4)
+complm(lacks-9, that-5)
+det(record-8, the-6)
+amod(record-8, fossil-7)
+nsubj(lacks-9, record-8)
+nsubj(shows-14, record-8)
+ccomp(explain-4, lacks-9)
+amod(lifeforms-11, intermediate-10)
+dobj(lacks-9, lifeforms-11)
+advmod(shows-14, only-13)
+ccomp(explain-4, shows-14)
+conj_and(lacks-9, shows-14)
+amod(transitions-16, major-15)
+dobj(shows-14, transitions-16)
+prep_of(transitions-16, organisms-18)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the))
+        (NP (`` ``)
+          (NP
+            (QP (CD 500) (CD million))
+            (NNS years))
+          ('' '')
+          (PP (IN of)
+            (NP (NN time) (NN dissapear)))
+          (PP (TO to)
+            (NP (DT that) (NNS evolutionists)))))
+      (VP (VB call)
+        (NP (DT the) (NNP Great) (NNP Uncomformity))))
+    (. ?)))
+
+advmod(call-15, Where-1)
+aux(call-15, did-2)
+nsubj(call-15, the-3)
+number(million-6, 500-5)
+num(years-7, million-6)
+dep(the-3, years-7)
+nn(dissapear-11, time-10)
+prep_of(years-7, dissapear-11)
+det(evolutionists-14, that-13)
+prep_to(years-7, evolutionists-14)
+root(ROOT-0, call-15)
+det(Uncomformity-18, the-16)
+nn(Uncomformity-18, Great-17)
+dobj(call-15, Uncomformity-18)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD specific)
+      (NP
+        (NP (NNS pieces))
+        (PP (IN of)
+          (NP (DT the) (JJ fossil) (NN record))))
+      (VP (VB prove)
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBD were)
+              (NP
+                (NP (NNS changes))
+                (PP (IN in)
+                  (NP
+                    (NP (NNS lifeforms))
+                    (VP (VBN separated)
+                      (PP (IN by)
+                        (NP (NN time))))))))))))
+    (. ?)))
+
+dobj(prove-8, What-1)
+aux(prove-8, specific-2)
+nsubj(prove-8, pieces-3)
+det(record-7, the-5)
+amod(record-7, fossil-6)
+prep_of(pieces-3, record-7)
+root(ROOT-0, prove-8)
+complm(were-11, that-9)
+expl(were-11, there-10)
+ccomp(prove-8, were-11)
+nsubj(were-11, changes-12)
+prep_in(changes-12, lifeforms-14)
+partmod(lifeforms-14, separated-15)
+agent(separated-15, time-17)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP (NNP DNA) (NN similarity))
+      (VP (VB prove)
+        (NP (NN evolution))))
+    (. ?)))
+
+advmod(prove-5, How-1)
+aux(prove-5, does-2)
+nn(similarity-4, DNA-3)
+nsubj(prove-5, similarity-4)
+root(ROOT-0, prove-5)
+dobj(prove-5, evolution-6)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD said)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (JJ creationist) (NN origin))
+              (PP (IN of)
+                (NP (DT the) (NNP Grand) (NNP Canyon))))
+            (VP (VBZ is) (`` ``)
+              (ADJP (JJ flimsy)))))
+        (, ,) ('' '')
+        (CC but)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP
+              (NP (JJ specific) (NNS parts))
+              (PP (TO to)
+                (NP (PRP you))))
+            (VP (VBP beleive)
+              (SBAR
+                (SBAR
+                  (S
+                    (VP (VBP are)
+                      (ADJP (JJ flimsy)))))
+                (CC and)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (NNS assumptions))
+                    (VP (VBP are)
+                      (S
+                        (NP (PRP you))
+                        (VP (VBG referring)
+                          (PP (TO to)))))))))))))
+    (. ?)))
+
+nsubj(said-2, You-1)
+root(ROOT-0, said-2)
+complm(flimsy-13, that-3)
+det(origin-6, the-4)
+amod(origin-6, creationist-5)
+nsubj(flimsy-13, origin-6)
+det(Canyon-10, the-8)
+nn(Canyon-10, Grand-9)
+prep_of(origin-6, Canyon-10)
+cop(flimsy-13, is-11)
+ccomp(said-2, flimsy-13)
+dep(beleive-22, what-17)
+amod(parts-19, specific-18)
+nsubj(beleive-22, parts-19)
+prep_to(parts-19, you-21)
+ccomp(said-2, beleive-22)
+conj_but(flimsy-13, beleive-22)
+cop(flimsy-24, are-23)
+dep(beleive-22, flimsy-24)
+dobj(are-28, what-26)
+nsubj(are-28, assumptions-27)
+dep(beleive-22, are-28)
+conj_and(flimsy-24, are-28)
+nsubj(referring-30, you-29)
+dep(are-28, referring-30)
+prep(referring-30, to-31)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (NN complexity))
+          (VP (VBZ does) (RB not)
+            (VP (VB require)
+              (NP (NN intellignece)))))))
+    (. .)))
+
+nsubj(said-2, You-1)
+root(ROOT-0, said-2)
+nsubj(require-6, complexity-3)
+aux(require-6, does-4)
+neg(require-6, not-5)
+ccomp(said-2, require-6)
+dobj(require-6, intellignece-7)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB require)))
+    (. ?)))
+
+dobj(require-4, What-1)
+aux(require-4, does-2)
+nsubj(require-4, it-3)
+root(ROOT-0, require-4)
+

@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP TheSmithsonian))
+      (VP (VBZ claims)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP
+              (NP (DT this) (NN happened))
+              (CC and)
+              (NP (DT some) (NN didn) (NN t)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (RB much))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBD did)
+                (S
+                  (VP (VB happen)
+                    (ADVP (RB also)))))))))
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP
+            (NP (NNS others))
+            (PP (IN for)
+              (NP
+                (NP (NNS reasons))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ general) (NN policy))
+                    (, ,)
+                    (NP (DT some))))))))
+        (SBAR (RB even) (IN before)
+          (S
+            (NP (DT the) (NN article))
+            (VP (VBD came)
+              (PRT (RP out)))))))
+    (. .)))
+
+nsubj(claims-2, TheSmithsonian-1)
+root(ROOT-0, claims-2)
+dobj(claims-2, some-3)
+det(happened-6, this-5)
+prep_of(some-3, happened-6)
+det(t-10, some-8)
+nn(t-10, didn-9)
+prep_of(some-3, t-10)
+conj_and(happened-6, t-10)
+nsubj(happened-19, much-13)
+nsubj(did-16, what-15)
+prepc_of(much-13, did-16)
+ccomp(did-16, happen-17)
+advmod(happen-17, also-18)
+conj_but(claims-2, happened-19)
+prep_to(happened-19, others-21)
+prep_for(others-21, reasons-23)
+amod(policy-26, general-25)
+prep_of(reasons-23, policy-26)
+appos(policy-26, some-28)
+advmod(came-33, even-29)
+dep(came-33, before-30)
+det(article-32, the-31)
+nsubj(came-33, article-32)
+ccomp(happened-19, came-33)
+prt(came-33, out-34)
+

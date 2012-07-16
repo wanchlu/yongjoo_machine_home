@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP Gallup) (NNP Poll) (NNP Question))
+    (VP (VBP Do)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (NN abortion))
+                (VP (MD should)
+                  (ADVP (RB generally))
+                  (VP (VB be)
+                    (ADJP
+                      (ADJP (JJ legal))
+                      (CC or)
+                      (ADJP (RB generally) (JJ illegal)))
+                    (PP (IN during)
+                      (NP
+                        (NP (DT the) (JJ second) (CD three) (NNS months))
+                        (PP (IN of)
+                          (NP (NN pregnancy)))))))))))))
+    (. ?)))
+
+nn(Question-3, Gallup-1)
+nn(Question-3, Poll-2)
+nsubj(Do-4, Question-3)
+root(ROOT-0, Do-4)
+nsubj(think-6, you-5)
+ccomp(Do-4, think-6)
+nsubj(legal-11, abortion-7)
+nsubj(illegal-14, abortion-7)
+aux(legal-11, should-8)
+advmod(legal-11, generally-9)
+cop(legal-11, be-10)
+ccomp(think-6, legal-11)
+advmod(illegal-14, generally-13)
+ccomp(think-6, illegal-14)
+conj_or(legal-11, illegal-14)
+det(months-19, the-16)
+amod(months-19, second-17)
+num(months-19, three-18)
+prep_during(legal-11, months-19)
+prep_of(months-19, pregnancy-21)
+

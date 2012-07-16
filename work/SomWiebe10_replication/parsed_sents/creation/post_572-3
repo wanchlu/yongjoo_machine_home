@@ -1,0 +1,49 @@
+(ROOT
+  (SBARQ (`` ``)
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (DT this))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (PP (IN with)
+                (NP
+                  (NP (NNP ID))
+                  (PRN (-LRB- -LRB-)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBZ DETECTS)
+                          (NP
+                            (NP (VBG existing) (NN design))
+                            (PP (RB instead) (IN of)
+                              (S
+                                (VP (VBG determining)
+                                  (SBAR
+                                    (WHADVP (WRB how))
+                                    (S
+                                      (NP (PRP it))
+                                      (VP (VBD got)
+                                        (ADVP (RB there))))))))))))
+                    (-RRB- -RRB-)))))))))
+    (. ?)))
+
+dep(have-5, What-2)
+aux(have-5, does-3)
+nsubj(have-5, this-4)
+xsubj(do-7, this-4)
+root(ROOT-0, have-5)
+aux(do-7, to-6)
+xcomp(have-5, do-7)
+prep_with(do-7, ID-9)
+nsubj(DETECTS-12, which-11)
+dep(ID-9, DETECTS-12)
+amod(design-14, existing-13)
+dobj(DETECTS-12, design-14)
+prepc_instead_of(design-14, determining-17)
+advmod(got-20, how-18)
+nsubj(got-20, it-19)
+ccomp(determining-17, got-20)
+advmod(got-20, there-21)
+

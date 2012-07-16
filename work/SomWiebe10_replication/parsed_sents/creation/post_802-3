@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (JJ Protestant) (NNS Christians))
+    (VP
+      (VP (VBP add)
+        (NP
+          (NP (DT the) (CD 27) (NNS books))
+          (PP (IN of)
+            (NP (DT the) (NNP New) (NN Testament))))
+        (PP (TO to)
+          (NP (DT the) (NNP Hebrew) (NNS scriptures))))
+      (CC and)
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NNP Word))
+                (PP (IN of)
+                  (NP (NNP God)))))))))
+    (. .)))
+
+amod(Christians-2, Protestant-1)
+nsubj(add-3, Christians-2)
+nsubj(believe-16, Christians-2)
+root(ROOT-0, add-3)
+det(books-6, the-4)
+num(books-6, 27-5)
+dobj(add-3, books-6)
+det(Testament-10, the-8)
+nn(Testament-10, New-9)
+prep_of(books-6, Testament-10)
+det(scriptures-14, the-12)
+nn(scriptures-14, Hebrew-13)
+prep_to(add-3, scriptures-14)
+conj_and(add-3, believe-16)
+complm(Word-21, that-17)
+nsubj(Word-21, this-18)
+cop(Word-21, is-19)
+det(Word-21, the-20)
+ccomp(believe-16, Word-21)
+prep_of(Word-21, God-23)
+

@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (, ,)
+    (NP (RB not) (NN IDEA) (NNS centers))
+    (VP (MD may)
+      (ADVP (RB finally))
+      (VP (VB help)
+        (NP
+          (NP (NNP ID))
+          (VP (VBN become)
+            (ADJP
+              (ADJP (RB scientifically) (JJ relevant))
+              (, ,) (IN although)
+              (ADJP (RB so) (JJ far) (NN nothing)))
+            (S
+              (VP (TO to)
+                (VP (VB suggest)
+                  (SBAR (IN that)
+                    (S
+                      (NP (DT this))
+                      (VP (MD will)
+                        (VP (VB happen))))))))))))))
+
+prep_of(help-9, course-2)
+neg(centers-6, not-4)
+nn(centers-6, IDEA-5)
+nsubj(help-9, centers-6)
+aux(help-9, may-7)
+advmod(help-9, finally-8)
+root(ROOT-0, help-9)
+dobj(help-9, ID-10)
+xsubj(suggest-20, ID-10)
+cop(relevant-13, become-11)
+advmod(relevant-13, scientifically-12)
+partmod(ID-10, relevant-13)
+dep(relevant-13, although-15)
+advmod(nothing-18, so-16)
+dep(nothing-18, far-17)
+dep(relevant-13, nothing-18)
+aux(suggest-20, to-19)
+xcomp(relevant-13, suggest-20)
+complm(happen-24, that-21)
+nsubj(happen-24, this-22)
+aux(happen-24, will-23)
+ccomp(suggest-20, happen-24)
+

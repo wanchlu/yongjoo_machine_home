@@ -1,0 +1,42 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP A))
+      (VP (VBZ theory)))
+    (CC or)
+    (S
+      (NP
+        (NP (NN discipline))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ purports)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP (JJ scientific)))))))))
+      (VP (VBZ is)
+        (ADJP
+          (ADJP (JJ pseudoscientific) (IN if))
+          (CC and)
+          (ADJP (JJ only)
+            (PP (IN if)
+              (NP (CD :1)))))))
+    (. .)))
+
+nsubj(theory-3, A-2)
+root(ROOT-0, theory-3)
+nsubj(purports-7, discipline-5)
+nsubj(pseudoscientific-12, discipline-5)
+nsubj(only-15, discipline-5)
+rcmod(discipline-5, purports-7)
+aux(scientific-10, to-8)
+cop(scientific-10, be-9)
+xcomp(purports-7, scientific-10)
+cop(pseudoscientific-12, is-11)
+conj_or(theory-3, pseudoscientific-12)
+dep(pseudoscientific-12, if-13)
+conj_or(theory-3, only-15)
+conj_and(pseudoscientific-12, only-15)
+prep_if(only-15, :1-17)
+

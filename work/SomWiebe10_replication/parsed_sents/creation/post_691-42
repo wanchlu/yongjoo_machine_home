@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Fact)
+        (CC and)
+        (NN history))
+      (PP (IN as)
+        (NP (PRP we))))
+    (VP (VBP accept)
+      (SBAR
+        (S
+          (NP (PRP them))
+          (VP (VBD did) (RB n't)
+            (ADVP (RB even))
+            (VP (VB exist)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (DT the) (NNP Bible))
+                  (VP (VBD was)
+                    (VP (VBN written))))))))))
+    (. .)))
+
+nsubj(accept-6, Fact-1)
+conj_and(Fact-1, history-3)
+nsubj(accept-6, history-3)
+prep_as(Fact-1, we-5)
+root(ROOT-0, accept-6)
+nsubj(exist-11, them-7)
+aux(exist-11, did-8)
+neg(exist-11, n't-9)
+advmod(exist-11, even-10)
+ccomp(accept-6, exist-11)
+advmod(written-16, when-12)
+det(Bible-14, the-13)
+nsubjpass(written-16, Bible-14)
+auxpass(written-16, was-15)
+advcl(exist-11, written-16)
+

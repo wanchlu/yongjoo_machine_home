@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ next) (NN time))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP get)
+            (SBAR
+              (S
+                (NP
+                  (NP (DT an) (NN infection))
+                  (CC and)
+                  (NP (DT the) (NN doctor)))
+                (VP (VBZ gives)
+                  (NP (PRP you))
+                  (NP
+                    (NP (CD 10) (NNS days))
+                    (PP (IN of)
+                      (NP (NNS antibiotics)))))))))))
+    (, ,)
+    (VP
+      (VP (VB take)
+        (NP (PRP them))
+        (PP (IN for)
+          (NP (CD 5) (NNS days))))
+      (, ,) (RB then)
+      (VP (VB stop)))
+    (. .)))
+
+det(time-3, The-1)
+amod(time-3, next-2)
+nsubj(take-18, time-3)
+nsubj(get-5, you-4)
+rcmod(time-3, get-5)
+det(infection-7, an-6)
+nsubj(gives-11, infection-7)
+det(doctor-10, the-9)
+conj_and(infection-7, doctor-10)
+nsubj(gives-11, doctor-10)
+ccomp(get-5, gives-11)
+iobj(gives-11, you-12)
+num(days-14, 10-13)
+dobj(gives-11, days-14)
+prep_of(days-14, antibiotics-16)
+root(ROOT-0, take-18)
+dobj(take-18, them-19)
+num(days-22, 5-21)
+prep_for(take-18, days-22)
+advmod(take-18, then-24)
+dep(take-18, stop-25)
+

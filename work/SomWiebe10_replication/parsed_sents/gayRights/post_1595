@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBP doesent)
+      (S
+        (S
+          (VP (VBN hurt)
+            (NP
+              (NP (NN anyone))
+              (, ,)
+              (SBAR (IN if)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP want)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (RB together))))))))
+              (, ,))))
+        (SBARQ
+          (WHNP (WP who))
+          (SQ (VBP are)
+            (NP (PRP we))
+            (VP (VBG stopping)
+              (NP (PRP them))))
+          (. ?))))))
+
+nsubj(doesent-2, It-1)
+root(ROOT-0, doesent-2)
+dep(doesent-2, hurt-3)
+dobj(hurt-3, anyone-4)
+dobj(want-8, anyone-4)
+mark(want-8, if-6)
+nsubj(want-8, they-7)
+xsubj(together-11, they-7)
+dep(anyone-4, want-8)
+aux(together-11, to-9)
+cop(together-11, be-10)
+xcomp(want-8, together-11)
+dep(stopping-16, who-13)
+aux(stopping-16, are-14)
+nsubj(stopping-16, we-15)
+dep(hurt-3, stopping-16)
+dobj(stopping-16, them-17)
+

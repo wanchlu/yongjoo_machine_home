@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ large) (NN amount))
+      (PP (IN of)
+        (NP (NN evidence))))
+    (VP (VBD was)
+      (VP (VBN submitted)
+        (SBAR (IN that)
+          (S
+            (VP (VBD showed)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP
+                    (NP (DT the) (JJ key) (NN feature))
+                    (PP (IN of)
+                      (NP (DT the) (JJ vertebrate) (JJ adaptive) (JJ immune) (NN system))))
+                  (, ,)
+                  (S
+                    (VP (VBG rearranging)
+                      (NP
+                        (NP (JJ immune) (NNS receptors))
+                        (PRN (-LRB- -LRB-)
+                          (NP (NNS antibodies))
+                          (-RRB- -RRB-)))))
+                  (, ,)
+                  (VP (VBD evolved)))))))))
+    (. .)))
+
+det(amount-3, A-1)
+amod(amount-3, large-2)
+nsubjpass(submitted-7, amount-3)
+prep_of(amount-3, evidence-5)
+auxpass(submitted-7, was-6)
+root(ROOT-0, submitted-7)
+complm(showed-9, that-8)
+ccomp(submitted-7, showed-9)
+advmod(evolved-28, how-10)
+det(feature-13, the-11)
+amod(feature-13, key-12)
+nsubj(evolved-28, feature-13)
+det(system-19, the-15)
+amod(system-19, vertebrate-16)
+amod(system-19, adaptive-17)
+amod(system-19, immune-18)
+prep_of(feature-13, system-19)
+partmod(evolved-28, rearranging-21)
+amod(receptors-23, immune-22)
+dobj(rearranging-21, receptors-23)
+appos(receptors-23, antibodies-25)
+ccomp(showed-9, evolved-28)
+

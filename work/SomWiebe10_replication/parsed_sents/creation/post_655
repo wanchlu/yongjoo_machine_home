@@ -1,0 +1,211 @@
+(ROOT
+  (S
+    (VP
+      (VP (VB Try))
+      (CC and)
+      (VP (VB quote)
+        (NP (DT the) (JJ right) (NN text))
+        (NP (JJ next) (NN time))))
+    (. .)))
+
+root(ROOT-0, Try-1)
+conj_and(Try-1, quote-3)
+det(text-6, the-4)
+amod(text-6, right-5)
+iobj(quote-3, text-6)
+amod(time-8, next-7)
+dobj(quote-3, time-8)
+
+(ROOT
+  (NP (NNS Anyways) (: ...)))
+
+root(ROOT-0, Anyways-1)
+
+(ROOT
+  (S ('' '')
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADJP (RB too) (JJ bad)))
+    (. .)))
+
+nsubj(bad-5, That-2)
+cop(bad-5, 's-3)
+advmod(bad-5, too-4)
+root(ROOT-0, bad-5)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBP understand))
+    (. .)))
+
+cc(understand-3, But-1)
+nsubj(understand-3, I-2)
+root(ROOT-0, understand-3)
+
+(ROOT
+  (S ('' '')
+    (NP (PRP We))
+    (VP (VBP CAN)
+      (VP (VB discuss)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NN issue) (NN AFTER))
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (VB settle)
+                    (NP
+                      (NP (DT the) (NN question))
+                      (PP (IN of)
+                        (NP (NNP ID))))))))
+            (VP (SYM =)
+              (NP (NNP Religion) (JJ first)))))))
+    (. .)))
+
+nsubj(discuss-4, We-2)
+aux(discuss-4, CAN-3)
+root(ROOT-0, discuss-4)
+complm(Religion-15, that-5)
+nn(AFTER-7, issue-6)
+nsubj(Religion-15, AFTER-7)
+nsubj(settle-9, we-8)
+rcmod(AFTER-7, settle-9)
+det(question-11, the-10)
+dobj(settle-9, question-11)
+prep_of(question-11, ID-13)
+dep(Religion-15, =-14)
+ccomp(discuss-4, Religion-15)
+amod(Religion-15, first-16)
+
+(ROOT
+  (S ('' '')
+    (ADVP (RB Nope))
+    (, ,)
+    (NP (NNP Pandas))
+    (VP (VBZ is)
+      (ADVP (CC but))
+      (NP
+        (NP (CD one) (NN part))
+        (PP (IN of)
+          (NP (DT the) (NN argument)))))
+    (. .)))
+
+advmod(part-8, Nope-2)
+nsubj(part-8, Pandas-4)
+cop(part-8, is-5)
+advmod(part-8, but-6)
+num(part-8, one-7)
+root(ROOT-0, part-8)
+det(argument-11, the-10)
+prep_of(part-8, argument-11)
+
+(ROOT
+  (SQ
+    (VP (VB Want)
+      (S
+        (VP (TO to)
+          (VP (VB try)
+            (ADVP (RB again))))))
+    (. ?)))
+
+root(ROOT-0, Want-1)
+aux(try-3, to-2)
+xcomp(Want-1, try-3)
+advmod(try-3, again-4)
+
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (ADVP (RB sure))
+    (VP (MD would)
+      (VP (VB like)
+        (S
+          (VP (TO to)
+            (VP (VB know)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT those) (JJ other) (NNS arguments))
+                  (VP (VBP are)))))))))
+    (. .)))
+
+nsubj(like-5, I-2)
+xsubj(know-7, I-2)
+advmod(like-5, sure-3)
+aux(like-5, would-4)
+root(ROOT-0, like-5)
+aux(know-7, to-6)
+xcomp(like-5, know-7)
+dobj(are-12, what-8)
+det(arguments-11, those-9)
+amod(arguments-11, other-10)
+nsubj(are-12, arguments-11)
+ccomp(know-7, are-12)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Pandas))
+        (VP (VBZ fails)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN religious)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT any) (JJ past) (NN present))
+                      (CC or)
+                      (NP (NN future)))))))))))
+    (VP (VBP form) (RB then)
+      (VP (VB enlighten)
+        (NP (PRP me))
+        (PP (TO to)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT the) (JJ other) (NNS facts))
+              (VP (VBP are)
+                (SBAR (IN that)
+                  (S
+                    (VP (VBP make)
+                      (S
+                        (NP
+                          (NP (NNP ID) (POS 's))
+                          (JJ religious) (NN nature))
+                        (`` ``)
+                        (ADJP (RB well) (VBN established))))))))))))
+    (. .)))
+
+mark(fails-3, If-1)
+nsubj(fails-3, Pandas-2)
+xsubj(religious-6, Pandas-2)
+csubj(form-13, fails-3)
+aux(religious-6, to-4)
+auxpass(religious-6, be-5)
+xcomp(fails-3, religious-6)
+det(present-10, any-8)
+amod(present-10, past-9)
+prep_in(religious-6, present-10)
+prep_in(religious-6, future-12)
+conj_or(present-10, future-12)
+root(ROOT-0, form-13)
+advmod(form-13, then-14)
+dep(form-13, enlighten-15)
+dobj(enlighten-15, me-16)
+dep(are-22, what-18)
+nsubj(make-24, what-18)
+det(facts-21, the-19)
+amod(facts-21, other-20)
+nsubj(are-22, facts-21)
+prepc_to(enlighten-15, are-22)
+complm(make-24, that-23)
+ccomp(are-22, make-24)
+poss(nature-28, ID-25)
+amod(nature-28, religious-27)
+dep(established-31, nature-28)
+advmod(established-31, well-30)
+dep(make-24, established-31)
+

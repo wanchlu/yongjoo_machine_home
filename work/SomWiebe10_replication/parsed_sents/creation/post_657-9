@@ -1,0 +1,53 @@
+(ROOT
+  (S (IN So)
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR
+        (S
+          (NP
+            (NP (PRP it) (POS 's))
+            (NN time)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP
+                    (NP (DT a) (`` ``) (NN debate) ('' ''))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN court))
+                        (PP (IN of)
+                          (NP (`` ``) (JJ public) (NN opinion) ('' ''))))))
+                  (SBAR (IN in) (NN order)
+                    (S
+                      (VP (TO to)
+                        (VP (VB try)
+                          (S
+                            (VP (TO to)
+                              (VP (VB get)
+                                (NP (DT the) (NN verdict)))))))))))))
+          (VP (VBD overturned)))))
+    (. ?)))
+
+dep(guess-3, So-1)
+nsubj(guess-3, I-2)
+root(ROOT-0, guess-3)
+poss(time-6, it-4)
+nsubj(overturned-29, time-6)
+aux(have-8, to-7)
+infmod(time-6, have-8)
+det(debate-11, a-9)
+dobj(have-8, debate-11)
+det(court-15, the-14)
+prep_in(debate-11, court-15)
+amod(opinion-19, public-18)
+prep_of(court-15, opinion-19)
+mark(try-24, in-21)
+dep(try-24, order-22)
+aux(try-24, to-23)
+purpcl(have-8, try-24)
+aux(get-26, to-25)
+xcomp(try-24, get-26)
+det(verdict-28, the-27)
+dobj(get-26, verdict-28)
+ccomp(guess-3, overturned-29)
+

@@ -1,0 +1,309 @@
+(ROOT
+  (FRAG
+    (NP (NNP ZINGO))
+    (. !)))
+
+root(ROOT-0, ZINGO-1)
+
+(ROOT
+  (NP (NNP HE) (NNP CAN) (NNP BE) (NNP TAUGHT) (. !)))
+
+nn(TAUGHT-4, HE-1)
+nn(TAUGHT-4, CAN-2)
+nn(TAUGHT-4, BE-3)
+root(ROOT-0, TAUGHT-4)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (ADJP (RB very) (JJ sensitive))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBZ comes)
+            (PP (TO to)
+              (S
+                (VP (VBG debating))))))))
+    (. .)))
+
+nsubj(sensitive-5, I-1)
+cop(sensitive-5, 'm-2)
+neg(sensitive-5, not-3)
+advmod(sensitive-5, very-4)
+root(ROOT-0, sensitive-5)
+advmod(comes-8, when-6)
+nsubj(comes-8, it-7)
+advcl(sensitive-5, comes-8)
+prepc_to(comes-8, debating-10)
+
+(ROOT
+  (PP (IN By)
+    (NP (DT the) (NN way))
+    (: ...)))
+
+root(ROOT-0, By-1)
+det(way-3, the-2)
+pobj(By-1, way-3)
+
+(ROOT
+  (NP (NNP Merry) (NNP Christmas) (. .)))
+
+nn(Christmas-2, Merry-1)
+root(ROOT-0, Christmas-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBZ KNOW)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP
+              (NP (DT no) (NN difference))
+              (PP (IN between)
+                (NP (DT those) (NNS statements))))))))
+    (. .)))
+
+nsubj(KNOW-2, I-1)
+root(ROOT-0, KNOW-2)
+complm(is-5, that-3)
+expl(is-5, there-4)
+ccomp(KNOW-2, is-5)
+det(difference-7, no-6)
+nsubj(is-5, difference-7)
+det(statements-10, those-9)
+prep_between(difference-7, statements-10)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB provide)
+      (NP
+        (NP (DT some) (NN evidence))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ proves)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD said)
+                    (ADVP (RB otherwise))
+                    (: ...)
+                    (SBAR (IN because)
+                      (S
+                        (NP (PRP I))
+                        (VP (VBP have)
+                          (NP
+                            (NP (DT no) (NN idea))
+                            (SBAR
+                              (WHADVP (WRB why))
+                              (S
+                                (NP (PRP you))
+                                (VP (VBP think)
+                                  (SBAR (IN that)
+                                    (S
+                                      (NP (PRP I))
+                                      (VP (VBP think)
+                                        (NP (DT that))))))))))))))))))))
+    (. .)))
+
+dep(provide-2, Please-1)
+root(ROOT-0, provide-2)
+det(evidence-4, some-3)
+dobj(provide-2, evidence-4)
+nsubj(proves-6, evidence-4)
+rcmod(evidence-4, proves-6)
+complm(said-9, that-7)
+nsubj(said-9, I-8)
+ccomp(proves-6, said-9)
+advmod(said-9, otherwise-10)
+mark(have-14, because-12)
+nsubj(have-14, I-13)
+advcl(said-9, have-14)
+parataxis(said-9, have-14)
+det(idea-16, no-15)
+dobj(have-14, idea-16)
+advmod(think-19, why-17)
+nsubj(think-19, you-18)
+rcmod(idea-16, think-19)
+complm(think-22, that-20)
+nsubj(think-22, I-21)
+ccomp(think-19, think-22)
+dobj(think-22, that-23)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBD was)
+      (PP (IN under)
+        (NP (DT the) (NN impression)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP You))
+          (VP (VBP didnt)
+            (S
+              (VP (VB know) (: ...)
+                (ADVP
+                  (ADVP (IN at) (JJS least))
+                  (PP (IN until)
+                    (ADVP (RB now))))))))))
+    (. .)))
+
+cc(was-3, But-1)
+nsubj(was-3, I-2)
+root(ROOT-0, was-3)
+det(impression-6, the-5)
+prep_under(was-3, impression-6)
+complm(didnt-9, that-7)
+nsubj(didnt-9, You-8)
+ccomp(was-3, didnt-9)
+ccomp(didnt-9, know-10)
+advmod(know-10, at-12)
+pobj(at-12, least-13)
+prep(at-12, until-14)
+pcomp(until-14, now-15)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Aithiests))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBZ IS)
+            (NP (DT NO) (NNP GOD))
+            (, ,)
+            (SBAR (RB not) (IN that)
+              (S
+                (NP (NNP God))
+                (VP (VBZ is)
+                  (NP (`` ``) (NN nothing) ('' '') (NNS See)))))))))
+    (. ?)))
+
+nsubj(believe-3, Aithiests-2)
+root(ROOT-0, believe-3)
+complm(IS-6, that-4)
+expl(IS-6, there-5)
+ccomp(believe-3, IS-6)
+det(GOD-8, NO-7)
+nsubj(IS-6, GOD-8)
+dep(See-17, not-10)
+dep(See-17, that-11)
+nsubj(See-17, God-12)
+cop(See-17, is-13)
+nn(See-17, nothing-15)
+dep(IS-6, See-17)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD said)
+      (NP (DT that)))
+    (. .)))
+
+nsubj(said-2, You-1)
+root(ROOT-0, said-2)
+dobj(said-2, that-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG throwing)
+        (PRT (RP out))
+        (NP
+          (NP (NNS definitions))
+          (PP (IN of)
+            (NP (`` ``) (NN nothing) ('' ''))))
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (S
+                (NP (DT the) (JJ other) (NNS statements))
+                (ADJP (JJR clearer)))
+              (: ...)
+              (S (RB not)
+                (VP (TO to)
+                  (VP (VB dispute)
+                    (NP (JJ other) (NNS statements) (NNS meanings))))))))))
+    (. .)))
+
+nsubj(throwing-3, I-1)
+aux(throwing-3, was-2)
+root(ROOT-0, throwing-3)
+prt(throwing-3, out-4)
+dobj(throwing-3, definitions-5)
+prep_of(definitions-5, nothing-8)
+aux(make-11, to-10)
+xcomp(throwing-3, make-11)
+det(statements-14, the-12)
+amod(statements-14, other-13)
+nsubj(clearer-15, statements-14)
+xcomp(make-11, clearer-15)
+neg(dispute-19, not-17)
+aux(dispute-19, to-18)
+parataxis(make-11, dispute-19)
+xcomp(make-11, dispute-19)
+amod(meanings-22, other-20)
+nn(meanings-22, statements-21)
+dobj(dispute-19, meanings-22)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hope)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP realize)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (VP (VBD confused)
+                  (SBAR
+                    (S
+                      (NP (PRP$ your) (NN argument))
+                      (VP (VBZ is)))))))))))
+    (. .)))
+
+nsubj(hope-2, I-1)
+root(ROOT-0, hope-2)
+nsubj(realize-4, you-3)
+ccomp(hope-2, realize-4)
+advmod(confused-6, how-5)
+ccomp(realize-4, confused-6)
+poss(argument-8, your-7)
+nsubj(is-9, argument-8)
+ccomp(confused-6, is-9)
+
+(ROOT
+  (S
+    (VP (VB Listen))
+    (: ...)))
+
+root(ROOT-0, Listen-1)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sorry)
+        (SBAR (IN if)
+          (S
+            (NP (PRP I))
+            (VP (VBD offended)
+              (NP (PRP you)))))))
+    (: ...)))
+
+nsubj(sorry-3, I-1)
+cop(sorry-3, 'm-2)
+root(ROOT-0, sorry-3)
+mark(offended-6, if-4)
+nsubj(offended-6, I-5)
+ccomp(sorry-3, offended-6)
+dobj(offended-6, you-7)
+

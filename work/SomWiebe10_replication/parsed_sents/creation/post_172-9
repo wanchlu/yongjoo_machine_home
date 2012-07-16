@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJS least) (NN fit))
+      (VP (VBD died)))
+    (: ;)
+    (S
+      (NP (DT the) (JJS most) (NN fit))
+      (VP
+        (VP (VBD survived))
+        (CC and)
+        (VP (VBD contributed)
+          (NP (PRP$ their) (NNS genes))
+          (PP (TO to)
+            (NP (DT the) (JJ next) (NN generation))))))
+    (. .)))
+
+det(fit-3, The-1)
+amod(fit-3, least-2)
+nsubj(died-4, fit-3)
+root(ROOT-0, died-4)
+det(fit-8, the-6)
+amod(fit-8, most-7)
+nsubj(survived-9, fit-8)
+nsubj(contributed-11, fit-8)
+parataxis(died-4, survived-9)
+parataxis(died-4, contributed-11)
+conj_and(survived-9, contributed-11)
+poss(genes-13, their-12)
+dobj(contributed-11, genes-13)
+det(generation-17, the-15)
+amod(generation-17, next-16)
+prep_to(contributed-11, generation-17)
+

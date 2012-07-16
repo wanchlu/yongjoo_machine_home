@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (DT A) (NN woman))
+    (VP (VBZ has)
+      (NP
+        (NP (DT the) (`` ``) (NN right) ('' ''))
+        (PP (TO to)
+          (NP
+            (NP (DT a) (JJ partial) (NN birth) (NN abortion))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP it))
+                (VP (VBN proven)
+                  (ADJP (RB as) (JJ necessary))
+                  (PP (IN in)
+                    (S
+                      (VP (VBG preserving)
+                        (NP (DT the) (PRP$ her) (NN health))))))))))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(has-3, woman-2)
+root(ROOT-0, has-3)
+det(right-6, the-4)
+dobj(has-3, right-6)
+det(abortion-12, a-9)
+amod(abortion-12, partial-10)
+nn(abortion-12, birth-11)
+prep_to(right-6, abortion-12)
+tmod(proven-15, abortion-12)
+advmod(proven-15, when-13)
+nsubj(proven-15, it-14)
+dep(abortion-12, proven-15)
+advmod(necessary-17, as-16)
+acomp(proven-15, necessary-17)
+prepc_in(proven-15, preserving-19)
+det(health-22, the-20)
+predet(health-22, the-20)
+poss(health-22, her-21)
+dobj(preserving-19, health-22)
+

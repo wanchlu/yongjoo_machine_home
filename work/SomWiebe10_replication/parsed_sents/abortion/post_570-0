@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (PP (IN Walking)
+      (NP (DT an) (DT a) (NN beach)))
+    (NP (PRP I))
+    (VP (VBD came)
+      (PP (IN across)
+        (NP
+          (NP (DT a) (NN sign))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD read) (: :) (`` ``)
+                (S
+                  (NP (NNP Sea) (NNP Turtle) (NNS eggs))
+                  (VP (VB Stay)
+                    (PRT (RP out))))))))))
+    (. .)))
+
+predet(beach-4, an-2)
+det(beach-4, a-3)
+prep_walking(came-6, beach-4)
+nsubj(came-6, I-5)
+root(ROOT-0, came-6)
+det(sign-9, a-8)
+prep_across(came-6, sign-9)
+nsubj(read-11, sign-9)
+rcmod(sign-9, read-11)
+nn(eggs-16, Sea-14)
+nn(eggs-16, Turtle-15)
+nsubj(Stay-17, eggs-16)
+ccomp(read-11, Stay-17)
+prt(Stay-17, out-18)
+

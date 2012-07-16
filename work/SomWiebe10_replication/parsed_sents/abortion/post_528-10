@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN that)
+      (S
+        (NP (PRP you))
+        (VP (VBP make)
+          (S
+            (NP (DT a) (NN choice))
+            (VP (TO to)
+              (VP (VB be)
+                (PP (IN in)
+                  (NP (DT the) (NN military)))))))))
+    (VP (VBZ does) (RB n't)
+      (VP (VB matter)
+        (PP (IN at)
+          (NP (DT this) (NN point)))))
+    (. .)))
+
+dep(make-3, that-1)
+nsubj(make-3, you-2)
+csubj(matter-13, make-3)
+det(choice-5, a-4)
+nsubj(be-7, choice-5)
+aux(be-7, to-6)
+xcomp(make-3, be-7)
+det(military-10, the-9)
+prep_in(be-7, military-10)
+aux(matter-13, does-11)
+neg(matter-13, n't-12)
+root(ROOT-0, matter-13)
+det(point-16, this-15)
+prep_at(matter-13, point-16)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBD Did)
+      (NP (PRP you))
+      (VP (VB mean)
+        (PP (IN by)
+          (NP (DT that) (NN statement)))))
+    (. ?)))
+
+dobj(mean-4, what-1)
+aux(mean-4, Did-2)
+nsubj(mean-4, you-3)
+root(ROOT-0, mean-4)
+det(statement-7, that-6)
+prep_by(mean-4, statement-7)
+

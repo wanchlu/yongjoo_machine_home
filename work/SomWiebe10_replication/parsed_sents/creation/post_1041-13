@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (CD one) (NN point))
+        (PP (IN during)
+          (NP
+            (NP (NN earth) (POS 's))
+            (NN history)))))
+    (, ,)
+    (S
+      (NP
+        (NP (DT the) (NNS rocks))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (ADVP (RB currently))
+            (VP (VB make)
+              (PRT (RP up))
+              (NP (DT the) (NNPS Himalayas))))))
+      (VP (VBD were)
+        (ADJP (JJ underwater))))
+    (CC and)
+    (S
+      (PP (IN during)
+        (NP (DT this) (NN time)))
+      (NP (DT the) (NNS clams))
+      (VP (MD would)
+        (VP (VB have)
+          (VP (VBN been)
+            (VP (VBN fossilized))))))
+    (. .)))
+
+num(point-3, one-2)
+prep_at(underwater-18, point-3)
+poss(history-7, earth-5)
+prep_during(point-3, history-7)
+det(rocks-10, the-9)
+nsubj(make-13, rocks-10)
+nsubj(underwater-18, rocks-10)
+advmod(make-13, currently-12)
+rcmod(rocks-10, make-13)
+prt(make-13, up-14)
+det(Himalayas-16, the-15)
+dobj(make-13, Himalayas-16)
+cop(underwater-18, were-17)
+root(ROOT-0, underwater-18)
+det(time-22, this-21)
+prep_during(fossilized-28, time-22)
+det(clams-24, the-23)
+nsubjpass(fossilized-28, clams-24)
+aux(fossilized-28, would-25)
+aux(fossilized-28, have-26)
+auxpass(fossilized-28, been-27)
+conj_and(underwater-18, fossilized-28)
+

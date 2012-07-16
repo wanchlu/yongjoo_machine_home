@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (DT That) (NN money))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN stored)
+          (SBAR (IN since)
+            (S
+              (NP (NNP Bush))
+              (VP (VBD did)
+                (NP (DT the) (JJ right) (NN thing))
+                (ADVP
+                  (NP (CD 8) (NNS years))
+                  (RB ago))))))))
+    (. .)))
+
+det(money-2, That-1)
+nsubjpass(stored-5, money-2)
+aux(stored-5, has-3)
+auxpass(stored-5, been-4)
+root(ROOT-0, stored-5)
+mark(did-8, since-6)
+nsubj(did-8, Bush-7)
+advcl(stored-5, did-8)
+det(thing-11, the-9)
+amod(thing-11, right-10)
+dobj(did-8, thing-11)
+num(years-13, 8-12)
+npadvmod(ago-14, years-13)
+advmod(did-8, ago-14)
+

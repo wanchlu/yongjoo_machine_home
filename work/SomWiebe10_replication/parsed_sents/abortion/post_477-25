@@ -1,0 +1,40 @@
+(ROOT
+  (FRAG
+    (NP (CD 169-80))
+    (. .)))
+
+root(ROOT-0, 169-80-1)
+
+(ROOT
+  (S
+    (NP (NNP Professor) (NNP Schwarz))
+    (ADVP (RB regularly))
+    (VP (VBZ teaches)
+      (NP
+        (NP (NNP PHL) (NNP 212))
+        (, ,)
+        (NP (NNP Ethics))
+        (CC and)
+        (NP (NNP PHL) (NNP 342) (, ,) (NNP Knowledge) (, ,) (NNP Belief)
+          (CC and)
+          (NNP Truth))))
+    (. .)))
+
+nn(Schwarz-2, Professor-1)
+nsubj(teaches-4, Schwarz-2)
+advmod(teaches-4, regularly-3)
+root(ROOT-0, teaches-4)
+nn(212-6, PHL-5)
+dobj(teaches-4, 212-6)
+dobj(teaches-4, Ethics-8)
+conj_and(212-6, Ethics-8)
+nn(342-11, PHL-10)
+dobj(teaches-4, 342-11)
+conj_and(212-6, 342-11)
+conj_and(212-6, Knowledge-13)
+conj_and(342-11, Knowledge-13)
+conj_and(212-6, Belief-15)
+conj_and(342-11, Belief-15)
+conj_and(212-6, Truth-17)
+conj_and(342-11, Truth-17)
+

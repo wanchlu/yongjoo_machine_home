@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBD did) (RB n't))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADVP (RB just))
+      (NP
+        (NP (DT another) (JJ mindless) (NN cell))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD might)
+              (VP
+                (VP (VB have)
+                  (VP (VBN developed)
+                    (PP (IN into)
+                      (NP
+                        (NP (DT a) (JJ human) (NN being))
+                        (NP (DT some) (NN day))))))
+                (, ,)
+                (CONJP (IN as))
+                (VP (NN might)
+                  (NP
+                    (NP (DT any) (VBG developing) (NN egg))
+                    (CC or)
+                    (NP (DT any) (NN sperm))))))))))
+    (. .)))
+
+mark(did-3, If-1)
+nsubj(did-3, it-2)
+advcl(cell-11, did-3)
+neg(did-3, n't-4)
+nsubj(cell-11, it-6)
+cop(cell-11, was-7)
+advmod(cell-11, just-8)
+det(cell-11, another-9)
+amod(cell-11, mindless-10)
+root(ROOT-0, cell-11)
+nsubj(developed-15, cell-11)
+aux(developed-15, might-13)
+aux(developed-15, have-14)
+rcmod(cell-11, developed-15)
+det(being-19, a-17)
+amod(being-19, human-18)
+prep_into(developed-15, being-19)
+det(day-21, some-20)
+dep(being-19, day-21)
+rcmod(cell-11, might-24)
+conj_as(developed-15, might-24)
+det(egg-27, any-25)
+amod(egg-27, developing-26)
+dobj(might-24, egg-27)
+det(sperm-30, any-29)
+dobj(might-24, sperm-30)
+conj_or(egg-27, sperm-30)
+

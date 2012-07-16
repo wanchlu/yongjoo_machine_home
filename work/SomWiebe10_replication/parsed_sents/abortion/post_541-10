@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (VBG Criminalizing) (NN abortion))
+    (VP (MD will)
+      (VP (VB mean)
+        (NP
+          (NP (NNS lots))
+          (PP (IN of)
+            (NP
+              (ADJP
+                (ADJP (JJ illegal))
+                (CC and)
+                (ADJP (RB potentially) (JJ unsafe)))
+              (NNS abortions))))
+        (, ,)
+        (S
+          (ADJP (JJ likely))
+          (SBAR
+            (X (SYM \*))
+            (S
+              (NP (VBG increasing))
+              (VP (VBZ \*)
+                (NP
+                  (NP (DT the) (NNS numbers))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS people))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBP die)))))))))))))
+    (. .)))
+
+amod(abortion-2, Criminalizing-1)
+nsubj(mean-4, abortion-2)
+aux(mean-4, will-3)
+root(ROOT-0, mean-4)
+dobj(mean-4, lots-5)
+amod(abortions-11, illegal-7)
+advmod(unsafe-10, potentially-9)
+conj_and(illegal-7, unsafe-10)
+amod(abortions-11, unsafe-10)
+prep_of(lots-5, abortions-11)
+dep(\*-16, likely-13)
+dep(\*-16, \*-14)
+nsubj(\*-16, increasing-15)
+dep(mean-4, \*-16)
+det(numbers-18, the-17)
+dobj(\*-16, numbers-18)
+prep_of(numbers-18, people-20)
+nsubj(die-22, people-20)
+rcmod(people-20, die-22)
+

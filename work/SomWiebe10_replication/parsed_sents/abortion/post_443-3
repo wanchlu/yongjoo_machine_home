@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (VBG living) (NN CHILD))
+        (, ,)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ 's)
+              (VP (VBG going)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN brought)
+                        (PP (IN into)
+                          (NP (DT the) (NN WORLD)))))))))))))
+    (. !)))
+
+nsubj(CHILD-5, it-1)
+cop(CHILD-5, 's-2)
+det(CHILD-5, a-3)
+amod(CHILD-5, living-4)
+root(ROOT-0, CHILD-5)
+nsubj(going-9, CHILD-5)
+aux(going-9, 's-8)
+rcmod(CHILD-5, going-9)
+aux(brought-12, to-10)
+auxpass(brought-12, be-11)
+xcomp(going-9, brought-12)
+det(WORLD-15, the-14)
+prep_into(brought-12, WORLD-15)
+

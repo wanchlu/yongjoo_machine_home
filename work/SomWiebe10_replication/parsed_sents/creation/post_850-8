@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Our) (NN planet))
+      (CC and)
+      (NP (PRP$ our) (NN universe)))
+    (VP (VBP are)
+      (VP (VBN littered)
+        (PP (IN with)
+          (NP
+            (NP (NNS artifacts))
+            (PP (IN of)
+              (NP
+                (NP (JJ specific) (NNS events))
+                (VP (VBG occurring)
+                  (PP (IN before)
+                    (NP (CD six))))
+                (ADVP
+                  (NP (CD thousand) (NNS years))
+                  (RB ago))))))))
+    (. .)))
+
+poss(planet-2, Our-1)
+nsubjpass(littered-7, planet-2)
+poss(universe-5, our-4)
+conj_and(planet-2, universe-5)
+nsubjpass(littered-7, universe-5)
+auxpass(littered-7, are-6)
+root(ROOT-0, littered-7)
+prep_with(littered-7, artifacts-9)
+amod(events-12, specific-11)
+prep_of(artifacts-9, events-12)
+partmod(events-12, occurring-13)
+prep_before(occurring-13, six-15)
+num(years-17, thousand-16)
+npadvmod(ago-18, years-17)
+advmod(events-12, ago-18)
+

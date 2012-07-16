@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ is)
+        (ADJP (RB completely) (JJ true))))
+    (, ,)
+    (NP (NNP Darwin))
+    (VP (VBD hit)
+      (NP (DT the) (NN nail) (NN right))
+      (PP (IN on)
+        (NP (DT the) (NN head)))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP he))
+          (VP (VBD defined)
+            (NP
+              (NP
+                (NP (DT the) (NN theory))
+                (PP (IN of)
+                  (NP (NN evolution))))
+              (CC and)
+              (NP
+                (NP (DT the) (NN survival))
+                (PP (IN of)
+                  (NP (DT the) (JJS fittest) (NN understanding)))))))))
+    (. .)))
+
+nsubj(true-4, Evolution-1)
+cop(true-4, is-2)
+advmod(true-4, completely-3)
+ccomp(hit-7, true-4)
+nsubj(hit-7, Darwin-6)
+root(ROOT-0, hit-7)
+det(right-10, the-8)
+nn(right-10, nail-9)
+dobj(hit-7, right-10)
+det(head-13, the-12)
+prep_on(hit-7, head-13)
+advmod(defined-16, when-14)
+nsubj(defined-16, he-15)
+advcl(hit-7, defined-16)
+det(theory-18, the-17)
+dobj(defined-16, theory-18)
+prep_of(theory-18, evolution-20)
+det(survival-23, the-22)
+dobj(defined-16, survival-23)
+conj_and(theory-18, survival-23)
+det(understanding-27, the-25)
+amod(understanding-27, fittest-26)
+prep_of(survival-23, understanding-27)
+

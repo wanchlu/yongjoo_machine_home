@@ -1,0 +1,213 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ exessive) (NN divorce) (NN rate))
+    (VP (VBZ degrades)
+      (NP
+        (NP (DT the) (NN principal))
+        (PP (IN of)
+          (S
+            (VP (VBG marriage)
+              (NP
+                (NP
+                  (QP (RB much) (JJR more) (IN than) (CD two))
+                  (JJ same-sex) (NNS persons))
+                (VP (VBG making))
+                (PRN (-LRB- -LRB-)
+                  (CC and)
+                  (ADJP (FW keeping) (. !))
+                  (-RRB- -RRB-))))))))))
+
+det(rate-4, The-1)
+amod(rate-4, exessive-2)
+nn(rate-4, divorce-3)
+nsubj(degrades-5, rate-4)
+root(ROOT-0, degrades-5)
+det(principal-7, the-6)
+dobj(degrades-5, principal-7)
+prepc_of(principal-7, marriage-9)
+quantmod(two-13, much-10)
+quantmod(two-13, more-11)
+quantmod(two-13, than-12)
+num(persons-15, two-13)
+amod(persons-15, same-sex-14)
+dobj(marriage-9, persons-15)
+partmod(persons-15, making-16)
+dep(keeping-19, and-18)
+dep(persons-15, keeping-19)
+
+(ROOT
+  (NP
+    (NP (DT a) (NN commitment))
+    (PP (TO to)
+      (NP (DT each) (JJ other)))
+    (. .)))
+
+det(commitment-2, a-1)
+root(ROOT-0, commitment-2)
+det(other-5, each-4)
+prep_to(commitment-2, other-5)
+
+(ROOT
+  (S
+    (NP (DT Every) (NN day))
+    (NP (PRP it))
+    (VP (VBZ seems)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP am)
+            (VP (VBN bombarded)
+              (PP (IN by)
+                (NP
+                  (NP (DT a) (NN co-worker))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ is)
+                        (ADVP (RB now))
+                        (VP (VBG going)
+                          (PP (IN through)
+                            (NP (DT a) (NN divorce))))))))))))))
+    (. .)))
+
+det(day-2, Every-1)
+tmod(seems-4, day-2)
+nsubj(seems-4, it-3)
+root(ROOT-0, seems-4)
+nsubjpass(bombarded-7, I-5)
+auxpass(bombarded-7, am-6)
+ccomp(seems-4, bombarded-7)
+det(co-worker-10, a-9)
+agent(bombarded-7, co-worker-10)
+nsubj(going-14, co-worker-10)
+aux(going-14, is-12)
+advmod(going-14, now-13)
+rcmod(co-worker-10, going-14)
+det(divorce-17, a-16)
+prep_through(going-14, divorce-17)
+
+(ROOT
+  (FRAG (RB Not)
+    (VP (TO to)
+      (VP (VB mention) (, ,)
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP
+              (VP (VBZ is)
+                (NP
+                  (NP (NN none))
+                  (PP (IN of)
+                    (NP (PRP$ our) (NNS buisness)))))
+              (, ,)
+              (CC and)
+              (VP (VBZ does) (RB n't)
+                (VP (VB bother)
+                  (CC or)
+                  (VB hurt)
+                  (NP (PRP$ my) (NN marriage))
+                  (ADVP (IN at) (DT all)))))))))
+    (. .)))
+
+root(ROOT-0, Not-1)
+aux(mention-3, to-2)
+dep(Not-1, mention-3)
+complm(none-8, that-5)
+nsubj(none-8, it-6)
+nsubj(bother-16, it-6)
+cop(none-8, is-7)
+ccomp(mention-3, none-8)
+poss(buisness-11, our-10)
+prep_of(none-8, buisness-11)
+aux(bother-16, does-14)
+neg(bother-16, n't-15)
+ccomp(mention-3, bother-16)
+conj_and(none-8, bother-16)
+conj_and(none-8, hurt-18)
+conj_or(bother-16, hurt-18)
+poss(marriage-20, my-19)
+dobj(bother-16, marriage-20)
+advmod(bother-16, at-21)
+pobj(at-21, all-22)
+
+(ROOT
+  (S
+    (NP (PRP$ My) (NN psyche))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB much) (RBR more) (JJ damaged))
+        (PP (IN by)
+          (NP (DT the) (JJ heterosexual) (NNS couples))))
+      (S
+        (VP (VBG murdering)
+          (NP (DT each) (JJ other) (NN plastered))
+          (PP (DT all) (IN over)
+            (NP (DT the) (NN news)))))
+      (, ,)
+      (PP (IN than)
+        (NP
+          (NP (DT the) (NNS pictures))
+          (PP (IN of)
+            (NP
+              (NP (JJ other) (NNS couples))
+              (VP (VBG getting)
+                (ADJP (JJ married))))))))
+    (. .)))
+
+poss(psyche-2, My-1)
+nsubj(damaged-6, psyche-2)
+cop(damaged-6, is-3)
+advmod(damaged-6, much-4)
+advmod(damaged-6, more-5)
+root(ROOT-0, damaged-6)
+det(couples-10, the-8)
+amod(couples-10, heterosexual-9)
+prep_by(damaged-6, couples-10)
+xcomp(damaged-6, murdering-11)
+det(plastered-14, each-12)
+amod(plastered-14, other-13)
+dobj(murdering-11, plastered-14)
+dep(murdering-11, all-15)
+det(news-18, the-17)
+prep_over(murdering-11, news-18)
+det(pictures-22, the-21)
+prep_than(damaged-6, pictures-22)
+amod(couples-25, other-24)
+prep_of(pictures-22, couples-25)
+dep(married-27, getting-26)
+partmod(couples-25, married-27)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (DT all))
+    (VP (VBP deserve)
+      (NP
+        (NP (DT the) (JJ same) (NN happiness))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NN joy))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP we))
+              (VP (MD can)
+                (VP (VB find)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+nsubj(deserve-3, We-1)
+advmod(deserve-3, all-2)
+root(ROOT-0, deserve-3)
+det(happiness-6, the-4)
+amod(happiness-6, same-5)
+dobj(deserve-3, happiness-6)
+dobj(deserve-3, joy-9)
+conj_and(happiness-6, joy-9)
+advmod(find-13, where-10)
+nsubj(find-13, we-11)
+aux(find-13, can-12)
+rcmod(joy-9, find-13)
+dobj(find-13, it-14)
+

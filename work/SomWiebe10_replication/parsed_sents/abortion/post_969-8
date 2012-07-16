@@ -1,0 +1,35 @@
+(ROOT
+  (PRN
+    (ADVP (RB Well))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (NN life) (NN doesn))
+        (VP (VBP t)
+          (S
+            (S
+              (VP (VB begin)
+                (PP (IN at)
+                  (NP (NN birth)))
+                (, ,)
+                (ADVP (RB then))))
+            (SBARQ
+              (WHADVP (WRB when))
+              (SQ (VBZ does)
+                (NP (PRP it))
+                (VP (VB begin)))
+              (. ?))))))))
+
+dep(t-6, Well-1)
+mark(t-6, if-3)
+nn(doesn-5, life-4)
+nsubj(t-6, doesn-5)
+root(ROOT-0, t-6)
+dep(t-6, begin-7)
+prep_at(begin-7, birth-9)
+advmod(begin-7, then-11)
+advmod(begin-15, when-12)
+aux(begin-15, does-13)
+nsubj(begin-15, it-14)
+dep(begin-7, begin-15)
+

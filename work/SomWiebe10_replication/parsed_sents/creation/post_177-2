@@ -1,0 +1,77 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP ID))
+      (ADVP (RB only))
+      (VP (VBZ says)
+        (SBAR (IN that)
+          (S
+            (NP (DT all) (NN DNA))
+            (VP (VBZ has)
+              (S
+                (VP (TO to)
+                  (VP (VB have)
+                    (NP (DT a) (NN purpose))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ does) (RB not)
+      (VP
+        (VP (VB predict)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT that) (NN purpose))
+              (VP (VBZ is)))))
+        (CC or)
+        (VP (VB describe)
+          (NP
+            (NP (DT a) (NN mechanism))
+            (PP (IN for)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP
+                    (NP (DT that) (NN part))
+                    (PP (IN of)
+                      (NP (DT the) (NNP DNA) (NN strand))))
+                  (VP (VBD came)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be))))))))))))
+    (. .)))
+
+nsubj(says-4, ID-2)
+advmod(says-4, only-3)
+ccomp(predict-17, says-4)
+complm(has-8, that-5)
+det(DNA-7, all-6)
+nsubj(has-8, DNA-7)
+xsubj(have-10, DNA-7)
+ccomp(says-4, has-8)
+aux(have-10, to-9)
+xcomp(has-8, have-10)
+det(purpose-12, a-11)
+dobj(have-10, purpose-12)
+nsubj(predict-17, it-14)
+nsubj(describe-23, it-14)
+aux(predict-17, does-15)
+neg(predict-17, not-16)
+root(ROOT-0, predict-17)
+dobj(is-21, what-18)
+det(purpose-20, that-19)
+nsubj(is-21, purpose-20)
+ccomp(predict-17, is-21)
+conj_or(predict-17, describe-23)
+det(mechanism-25, a-24)
+dobj(describe-23, mechanism-25)
+advmod(came-34, how-27)
+det(part-29, that-28)
+nsubj(came-34, part-29)
+xsubj(be-36, part-29)
+det(strand-33, the-31)
+nn(strand-33, DNA-32)
+prep_of(part-29, strand-33)
+prepc_for(mechanism-25, came-34)
+aux(be-36, to-35)
+xcomp(came-34, be-36)
+

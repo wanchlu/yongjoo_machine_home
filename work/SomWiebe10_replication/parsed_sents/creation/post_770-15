@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP REF))
+      (: :)
+      (NP
+        (NP (DT The) (NN wind) (NNS blows))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP it))
+            (VP (MD may)
+              (ADVP (CC but)))))))
+    (, ,)
+    (ADVP (RB ONLY))
+    (NP (DT the) (NNS effects))
+    (VP (VBP are)
+      (VP
+        (VP (VBN seen))
+        (, ,)
+        (CC or)
+        (VP (VBN made)
+          (S
+            (ADJP (JJ physical)
+              (PP (TO to)
+                (NP (DT the) (NN human))))))))
+    (: ...)))
+
+nsubjpass(seen-15, REF-1)
+nsubjpass(made-18, REF-1)
+det(blows-5, The-3)
+nn(blows-5, wind-4)
+dep(REF-1, blows-5)
+advmod(may-8, where-6)
+nsubj(may-8, it-7)
+rcmod(blows-5, may-8)
+advmod(may-8, but-9)
+advmod(seen-15, ONLY-11)
+det(effects-13, the-12)
+nsubjpass(seen-15, effects-13)
+auxpass(seen-15, are-14)
+root(ROOT-0, seen-15)
+conj_or(seen-15, made-18)
+acomp(made-18, physical-19)
+det(human-22, the-21)
+prep_to(physical-19, human-22)
+

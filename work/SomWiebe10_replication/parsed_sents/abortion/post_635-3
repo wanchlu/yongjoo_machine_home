@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP believe)
+              (SBAR
+                (SBAR
+                  (S
+                    (NP (DT those) (NNS things))
+                    (VP (VBP are)
+                      (ADJP (JJ okay)))))
+                (, ,)
+                (CC so)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP are)
+                      (S
+                        (NP (PRP we))
+                        (VP (TO to)
+                          (VP (VB impose)
+                            (NP (PRP$ our) (NNS beliefs))
+                            (PP (IN upon)
+                              (NP (PRP them)))))))))))))))
+    (. ?)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, people-3)
+nsubj(believe-5, people-3)
+rcmod(people-3, believe-5)
+det(things-7, those-6)
+nsubj(okay-9, things-7)
+cop(okay-9, are-8)
+dep(believe-5, okay-9)
+nsubj(are-13, who-12)
+dep(believe-5, are-13)
+conj_so(okay-9, are-13)
+nsubj(impose-16, we-14)
+aux(impose-16, to-15)
+xcomp(are-13, impose-16)
+poss(beliefs-18, our-17)
+dobj(impose-16, beliefs-18)
+prep_upon(impose-16, them-20)
+

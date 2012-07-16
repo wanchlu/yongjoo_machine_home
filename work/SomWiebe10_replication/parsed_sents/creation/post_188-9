@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (FRAG
+        (ADJP (RB rhetorically) (JJ understandable))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP find)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ hard)
+          (S
+            (VP (TO to)
+              (VP (VB understand)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (NP (JJ such) (NNS arguments))
+                    (VP (VBP are)
+                      (VP (VBN made)
+                        (SBAR (IN since)
+                          (S
+                            (NP (PRP they))
+                            (ADVP (RB not) (RB only))
+                            (VP (VBP are)
+                              (ADVP (RB trivially))
+                              (VP (VBN shown)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB be)
+                                      (ADJP (JJ wrong)
+                                        (CC or)
+                                        (JJ misleading)))))))))))))))))))
+    (. .)))
+
+mark(understandable-3, While-1)
+advmod(understandable-3, rhetorically-2)
+advcl(find-6, understandable-3)
+nsubj(find-6, I-5)
+root(ROOT-0, find-6)
+nsubj(hard-8, it-7)
+xcomp(find-6, hard-8)
+aux(understand-10, to-9)
+xcomp(hard-8, understand-10)
+advmod(made-15, why-11)
+amod(arguments-13, such-12)
+nsubjpass(made-15, arguments-13)
+auxpass(made-15, are-14)
+advcl(understand-10, made-15)
+mark(shown-22, since-16)
+nsubjpass(shown-22, they-17)
+xsubj(wrong-25, they-17)
+dep(only-19, not-18)
+advmod(shown-22, only-19)
+auxpass(shown-22, are-20)
+advmod(shown-22, trivially-21)
+advcl(made-15, shown-22)
+aux(wrong-25, to-23)
+cop(wrong-25, be-24)
+xcomp(shown-22, wrong-25)
+xcomp(shown-22, misleading-27)
+conj_or(wrong-25, misleading-27)
+

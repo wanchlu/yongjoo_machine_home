@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (PP (IN At) (RBS best))
+      (NP (DT the) (NNP WMAP) (NNS data))
+      (VP (VBZ shows)
+        (NP
+          (NP (DT a) (NN correlation))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP we))
+              (VP (VBP do) (RB not)
+                (ADVP (RB yet))
+                (VP (VB understand))))))))
+    (CC and)
+    (S
+      (SBAR (IN although)
+        (S
+          (NP (NNP Island))
+          (VP (VBZ believes)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ supports)
+                  (NP (PRP$ his) (NN case))))))))
+      (, ,)
+      (NP (PRP he))
+      (ADVP (RB really))
+      (VP (VBZ has) (RB not)
+        (VP (VBN done)
+          (NP (PRP$ his) (NN homework))
+          (ADVP (RB here)))))
+    (. .)))
+
+prep(shows-6, At-1)
+dep(At-1, best-2)
+det(data-5, the-3)
+nn(data-5, WMAP-4)
+nsubj(shows-6, data-5)
+root(ROOT-0, shows-6)
+det(correlation-8, a-7)
+dobj(shows-6, correlation-8)
+dobj(understand-14, correlation-8)
+rel(understand-14, which-9)
+nsubj(understand-14, we-10)
+aux(understand-14, do-11)
+neg(understand-14, not-12)
+advmod(understand-14, yet-13)
+rcmod(correlation-8, understand-14)
+mark(believes-18, although-16)
+nsubj(believes-18, Island-17)
+advcl(done-28, believes-18)
+nsubj(supports-20, it-19)
+ccomp(believes-18, supports-20)
+poss(case-22, his-21)
+dobj(supports-20, case-22)
+nsubj(done-28, he-24)
+advmod(done-28, really-25)
+aux(done-28, has-26)
+neg(done-28, not-27)
+conj_and(shows-6, done-28)
+poss(homework-30, his-29)
+dobj(done-28, homework-30)
+advmod(done-28, here-31)
+

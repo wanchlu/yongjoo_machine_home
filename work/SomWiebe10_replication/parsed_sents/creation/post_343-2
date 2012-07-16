@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (EX there))
+      (VP (TO to)
+        (VP (VB pwn)
+          (ADVP (CC but))
+          (S
+            (VP (TO to)
+              (VP (VB point)
+                (PRT (RP out))
+                (SBAR (IN that)
+                  (S
+                    (NP (NNP Island))
+                    (VP (VBZ self-references)
+                      (PP (IN in)
+                        (NP
+                          (NP (DT the) (NN hope))
+                          (PP (IN of)
+                            (S
+                              (VP (VBG furthering)
+                                (NP (DT the) (NN argument))))))))))))))))
+    (. .)))
+
+dep(pwn-5, What-1)
+aux(pwn-5, is-2)
+expl(pwn-5, there-3)
+xsubj(point-8, there-3)
+aux(pwn-5, to-4)
+root(ROOT-0, pwn-5)
+advmod(pwn-5, but-6)
+aux(point-8, to-7)
+xcomp(pwn-5, point-8)
+prt(point-8, out-9)
+complm(self-references-12, that-10)
+nsubj(self-references-12, Island-11)
+ccomp(point-8, self-references-12)
+det(hope-15, the-14)
+prep_in(self-references-12, hope-15)
+prepc_of(hope-15, furthering-17)
+det(argument-19, the-18)
+dobj(furthering-17, argument-19)
+

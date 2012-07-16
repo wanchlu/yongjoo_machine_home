@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (DT The) (NN Big-Bang))
+    (VP (VBZ theory)
+      (PRN (-LRB- -LRB-)
+        (SBAR (IN since)
+          (S
+            (NP (PRP they))
+            (VP (MD can) (RB not)
+              (VP (VB explain)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBD caused)
+                      (NP (DT that) (JJ first) (NN bang))
+                      (PP (IN in)
+                        (NP (DT the) (JJ first) (NN place))))))))))
+        (-RRB- -RRB-))
+      (NP (CD 3)))
+    (. .)))
+
+det(Big-Bang-2, The-1)
+nsubj(theory-3, Big-Bang-2)
+root(ROOT-0, theory-3)
+mark(explain-9, since-5)
+nsubj(explain-9, they-6)
+aux(explain-9, can-7)
+neg(explain-9, not-8)
+parataxis(theory-3, explain-9)
+nsubj(caused-11, what-10)
+ccomp(explain-9, caused-11)
+det(bang-14, that-12)
+amod(bang-14, first-13)
+dobj(caused-11, bang-14)
+det(place-18, the-16)
+amod(place-18, first-17)
+prep_in(caused-11, place-18)
+dobj(theory-3, 3-20)
+

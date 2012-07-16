@@ -1,0 +1,244 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (QP (RB as) (JJ much) (IN as) (CD Behe)))
+      (VP (VBZ 's)
+        (ADJP (RB somewhat) (JJ misleading))))
+    (: --)
+    (S
+      (ADVP (RB Yet))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP Lenski))
+          (VP (VBD tracked)
+            (PRT (RP down))
+            (NP (DT the) (NNS mutations)))))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBD tended)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (JJ degradative) (NNS changes))
+                (, ,)
+                (NP
+                  (NP (NNS ones))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP
+                        (VP (VBD destroyed)
+                          (NP (NNS genes)))
+                        (CC or)
+                        (VP (VBD made)
+                          (S
+                            (NP (PRP them))
+                            (ADJP (RBR less) (JJ efficient))))))))))))))
+    (. .)))
+
+quantmod(Behe-4, as-1)
+quantmod(Behe-4, much-2)
+quantmod(Behe-4, as-3)
+nsubj(misleading-7, Behe-4)
+cop(misleading-7, 's-5)
+advmod(misleading-7, somewhat-6)
+root(ROOT-0, misleading-7)
+advmod(tended-19, Yet-9)
+advmod(tracked-13, when-11)
+nsubj(tracked-13, Lenski-12)
+advcl(tended-19, tracked-13)
+prt(tracked-13, down-14)
+det(mutations-16, the-15)
+dobj(tracked-13, mutations-16)
+nsubj(tended-19, they-18)
+xsubj(changes-23, they-18)
+parataxis(misleading-7, tended-19)
+aux(changes-23, to-20)
+cop(changes-23, be-21)
+amod(changes-23, degradative-22)
+xcomp(tended-19, changes-23)
+appos(changes-23, ones-25)
+nsubj(destroyed-27, ones-25)
+nsubj(made-30, ones-25)
+rcmod(ones-25, destroyed-27)
+dobj(destroyed-27, genes-28)
+rcmod(ones-25, made-30)
+conj_or(destroyed-27, made-30)
+nsubj(efficient-33, them-31)
+advmod(efficient-33, less-32)
+xcomp(made-30, efficient-33)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT the) (NN sort))
+        (PP (IN of)
+          (NP (NN process) (CD one)))
+        (SBAR
+          (S
+            (VP (VBZ needs)
+              (S
+                (VP (TO to)
+                  (VP (VB build)
+                    (NP (JJ complex) (JJ molecular) (NNS systems))))))))))
+    (. .)))
+
+nsubj(sort-5, That-1)
+cop(sort-5, is-2)
+neg(sort-5, not-3)
+det(sort-5, the-4)
+root(ROOT-0, sort-5)
+prep_of(sort-5, process-7)
+num(process-7, one-8)
+rcmod(sort-5, needs-9)
+aux(build-11, to-10)
+xcomp(needs-9, build-11)
+amod(systems-14, complex-12)
+amod(systems-14, molecular-13)
+dobj(build-11, systems-14)
+
+(ROOT
+  (S
+    (NP (PRP$ Your) (NNS comments))
+    (VP (VBD showed)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (ADVP (RB also))
+          (VP (VBP understand)
+            (SBAR (IN that)
+              (S
+                (NP (NN fitness))
+                (VP (VBZ is) (RB not)
+                  (VP (VBN determined)
+                    (PP (IN by)
+                      (NP (DT a) (JJ single) (NN cause\/effect)))))))))))
+    (. .)))
+
+poss(comments-2, Your-1)
+nsubj(showed-3, comments-2)
+root(ROOT-0, showed-3)
+complm(understand-7, that-4)
+nsubj(understand-7, you-5)
+advmod(understand-7, also-6)
+ccomp(showed-3, understand-7)
+complm(determined-12, that-8)
+nsubjpass(determined-12, fitness-9)
+auxpass(determined-12, is-10)
+neg(determined-12, not-11)
+ccomp(understand-7, determined-12)
+det(cause\/effect-16, a-14)
+amod(cause\/effect-16, single-15)
+agent(determined-12, cause\/effect-16)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN instance)))
+    (, ,)
+    (SBAR (IN while)
+      (S
+        (NP (DT some) (NNS mutations))
+        (VP (MD may)
+          (VP (VB cause)
+            (NP (DT a) (NN fitness) (NN decrease))
+            (PP (IN in)
+              (NP
+                (NP
+                  (NP (CD one) (NN aspect))
+                  (PP (IN of)
+                    (NP (DT the) (NN organism))))
+                (CC and)
+                (NP
+                  (NP (DT an) (NN increase))
+                  (PP (IN in)
+                    (NP (DT another))))))))))
+    (, ,)
+    (NP (DT the) (JJ overall) (NN effect))
+    (VP (MD may)
+      (ADVP (RB thus))
+      (VP (VB be)
+        (ADJP (RB very) (RB well) (JJ positive))))
+    (. .)))
+
+prep_for(positive-32, instance-2)
+mark(cause-8, while-4)
+det(mutations-6, some-5)
+nsubj(cause-8, mutations-6)
+aux(cause-8, may-7)
+advcl(positive-32, cause-8)
+det(decrease-11, a-9)
+nn(decrease-11, fitness-10)
+dobj(cause-8, decrease-11)
+num(aspect-14, one-13)
+prep_in(cause-8, aspect-14)
+det(organism-17, the-16)
+prep_of(aspect-14, organism-17)
+det(increase-20, an-19)
+prep_in(cause-8, increase-20)
+conj_and(aspect-14, increase-20)
+prep_in(increase-20, another-22)
+det(effect-26, the-24)
+amod(effect-26, overall-25)
+nsubj(positive-32, effect-26)
+aux(positive-32, may-27)
+advmod(positive-32, thus-28)
+cop(positive-32, be-29)
+advmod(positive-32, very-30)
+advmod(positive-32, well-31)
+root(ROOT-0, positive-32)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB call)
+          (NP (DT the) (NN change) (NN degenerative)))))
+    (VP (VBZ misses)
+      (NP (DT the) (NN point)))
+    (. .)))
+
+aux(call-2, To-1)
+csubj(misses-6, call-2)
+det(degenerative-5, the-3)
+nn(degenerative-5, change-4)
+dobj(call-2, degenerative-5)
+root(ROOT-0, misses-6)
+det(point-8, the-7)
+dobj(misses-6, point-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hope)
+      (S
+        (VP (TO to)
+          (VP (VB report)
+            (NP (JJR more))
+            (PP (IN on)
+              (NP
+                (NP
+                  (NP (NNP Hubert) (NNP Simon) (POS 's))
+                  (NN work))
+                (, ,)
+                (ADJP (RB quite) (JJ interesting))))))))
+    (. .)))
+
+nsubj(hope-2, I-1)
+xsubj(report-4, I-1)
+root(ROOT-0, hope-2)
+aux(report-4, to-3)
+xcomp(hope-2, report-4)
+dobj(report-4, more-5)
+nn(Simon-8, Hubert-7)
+poss(work-10, Simon-8)
+prep_on(report-4, work-10)
+advmod(interesting-13, quite-12)
+amod(work-10, interesting-13)
+

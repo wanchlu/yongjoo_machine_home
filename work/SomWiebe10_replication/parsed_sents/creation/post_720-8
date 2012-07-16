@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (NP (NNP The))
+    (ADVP (RB only))
+    (VP (VBZ planet)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NN life) (NNS exists))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (JJ only) (NN planet))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (DT this) (NN spectacle))
+                  (VP (MD can)
+                    (VP (VB be)
+                      (VP (VBN enjoyed)))))))))))
+    (: ...)))
+
+nsubj(planet-4, The-2)
+advmod(planet-4, only-3)
+root(ROOT-0, planet-4)
+advmod(planet-11, where-5)
+nn(exists-7, life-6)
+nsubj(planet-11, exists-7)
+cop(planet-11, is-8)
+det(planet-11, the-9)
+amod(planet-11, only-10)
+advcl(planet-4, planet-11)
+advmod(enjoyed-17, where-12)
+det(spectacle-14, this-13)
+nsubjpass(enjoyed-17, spectacle-14)
+aux(enjoyed-17, can-15)
+auxpass(enjoyed-17, be-16)
+rcmod(planet-11, enjoyed-17)
+

@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ thinks)
+          (SBAR (IN that)
+            (S
+              (NP (EX there))
+              (ADVP (RB really))
+              (VP (MD could)
+                (VP (VB be)
+                  (NP
+                    (NP (DT a) (JJ natural) (NN cause))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ explains)
+                          (NP (PRP$ their) (VBN supposed) (NN design) (NN effect)))))))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD should)
+      (VP
+        (VP (VB tell)
+          (NP (PRP$ their) (JJ religious) (NNS supporters)))
+        (CC and)
+        (VP (VB stop)
+          (S
+            (VP (VBG taking)
+              (NP (NN money))
+              (PP (IN from)
+                (NP (PRP them))))))))
+    (. .)))
+
+mark(thinks-3, If-1)
+nsubj(thinks-3, ID-2)
+advcl(tell-21, thinks-3)
+complm(cause-11, that-4)
+expl(cause-11, there-5)
+advmod(cause-11, really-6)
+aux(cause-11, could-7)
+cop(cause-11, be-8)
+det(cause-11, a-9)
+amod(cause-11, natural-10)
+ccomp(thinks-3, cause-11)
+nsubj(explains-13, cause-11)
+rcmod(cause-11, explains-13)
+poss(effect-17, their-14)
+amod(effect-17, supposed-15)
+nn(effect-17, design-16)
+dobj(explains-13, effect-17)
+nsubj(tell-21, they-19)
+nsubj(stop-26, they-19)
+aux(tell-21, should-20)
+root(ROOT-0, tell-21)
+poss(supporters-24, their-22)
+amod(supporters-24, religious-23)
+dobj(tell-21, supporters-24)
+conj_and(tell-21, stop-26)
+xcomp(stop-26, taking-27)
+dobj(taking-27, money-28)
+prep_from(taking-27, them-30)
+

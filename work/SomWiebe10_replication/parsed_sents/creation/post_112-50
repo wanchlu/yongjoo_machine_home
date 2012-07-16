@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN creation) (NNS myths))
+      (PP (IN from)
+        (NP
+          (NP (JJ different) (NNS civilizations))
+          (PP (IN throughout)
+            (NP (NN time))))))
+    (VP (MD can) (RB not)
+      (VP (VB make)
+        (SBAR (IN that)
+          (S
+            (VP (VBP claim)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (ADVP (RB often))
+                  (VP (VBP do)
+                    (S
+                      (VP (VB disagree)
+                        (PP (IN with)
+                          (NP (JJ known) (NN science)))
+                        (. .)))))))))))
+    (. .)))
+
+nn(myths-2, creation-1)
+nsubj(make-10, myths-2)
+amod(civilizations-5, different-4)
+prep_from(myths-2, civilizations-5)
+prep_throughout(civilizations-5, time-7)
+aux(make-10, can-8)
+neg(make-10, not-9)
+root(ROOT-0, make-10)
+complm(claim-12, that-11)
+ccomp(make-10, claim-12)
+nsubj(do-15, they-13)
+advmod(do-15, often-14)
+ccomp(claim-12, do-15)
+ccomp(do-15, disagree-16)
+amod(science-19, known-18)
+prep_with(disagree-16, science-19)
+

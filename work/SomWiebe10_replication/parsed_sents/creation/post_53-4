@@ -1,0 +1,44 @@
+(ROOT
+  (SINV
+    (ADVP (RB Probability))
+    (VP (VBZ tells))
+    (NP (PRP us))
+    (SBAR
+      (WHADVP (WRB how) (RB often))
+      (S
+        (VP (TO to)
+          (VP (VB expect)
+            (NP
+              (NP (DT a) (JJ certain) (NN arrangement))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (VBN given) (NN number))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS items))
+                      (PP (IN within)
+                        (NP
+                          (NP (DT the) (JJ whole) (NN set))
+                          (PP (IN of)
+                            (NP (NNS items))))))))))))))
+    (. .)))
+
+advmod(tells-2, Probability-1)
+root(ROOT-0, tells-2)
+nsubj(tells-2, us-3)
+advmod(often-5, how-4)
+advmod(expect-7, often-5)
+aux(expect-7, to-6)
+dep(tells-2, expect-7)
+det(arrangement-10, a-8)
+amod(arrangement-10, certain-9)
+dobj(expect-7, arrangement-10)
+det(number-14, a-12)
+amod(number-14, given-13)
+prep_of(arrangement-10, number-14)
+prep_of(number-14, items-16)
+det(set-20, the-18)
+amod(set-20, whole-19)
+prep_within(items-16, set-20)
+prep_of(set-20, items-22)
+

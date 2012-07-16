@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (NN instance))
+        (: :)
+        (PP (IN in)
+          (NP (DT a) (VBN closed) (NN system)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN amount))
+      (PP (IN of)
+        (NP
+          (NP (NN energy))
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT that)))
+            (S
+              (NP (NN system))
+              (VP (VBZ is)
+                (UCP
+                  (VP (VBN finite))
+                  (CC and)
+                  (RB thus)
+                  (NP
+                    (NP (DT the) (NN ability))
+                    (PP (IN for)
+                      (NP
+                        (NP (DT that) (NN system))
+                        (PP (TO to)
+                          (NP (NN work)))))))))))))
+    (VP (VBZ reduces)
+      (PP (IN over)
+        (NP (NN time))))
+    (. .)))
+
+prep_for(reduces-27, instance-2)
+det(system-7, a-5)
+amod(system-7, closed-6)
+prep_in(instance-2, system-7)
+det(amount-10, the-9)
+nsubj(reduces-27, amount-10)
+prep_of(amount-10, energy-12)
+rel(is-16, that-14)
+nsubj(is-16, system-15)
+rcmod(energy-12, is-16)
+dep(is-16, finite-17)
+dep(is-16, thus-19)
+conj_and(finite-17, thus-19)
+det(ability-21, the-20)
+dep(finite-17, ability-21)
+det(system-24, that-23)
+prep_for(ability-21, system-24)
+prep_to(system-24, work-26)
+root(ROOT-0, reduces-27)
+prep_over(reduces-27, time-29)
+

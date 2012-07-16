@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP 'm)
+        (ADJP (JJ young)))
+      (, ,)
+      (CC and)
+      (VP (VBP have)
+        (NP
+          (NP (NNS dreams)
+            (CC and)
+            (NNS aspirations))
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (MD could)
+                (ADVP (RB never))
+                (VP (VB fulfill)
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP I))
+                      (VP (VBD became)
+                        (ADJP (JJ pregnant))))))))))))
+    (. .)))
+
+nsubj(young-3, I-1)
+nsubj(have-6, I-1)
+cop(young-3, 'm-2)
+root(ROOT-0, young-3)
+conj_and(young-3, have-6)
+dobj(have-6, dreams-7)
+dobj(fulfill-14, dreams-7)
+dobj(have-6, aspirations-9)
+conj_and(dreams-7, aspirations-9)
+dobj(fulfill-14, aspirations-9)
+complm(fulfill-14, that-10)
+nsubj(fulfill-14, I-11)
+aux(fulfill-14, could-12)
+neg(fulfill-14, never-13)
+dep(dreams-7, fulfill-14)
+mark(pregnant-18, if-15)
+nsubj(pregnant-18, I-16)
+cop(pregnant-18, became-17)
+advcl(fulfill-14, pregnant-18)
+

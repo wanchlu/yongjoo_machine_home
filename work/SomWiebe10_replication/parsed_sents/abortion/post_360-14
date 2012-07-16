@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN example))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ valid))
+      (SBAR (IN because)
+        (S
+          (PP (IN in)
+            (NP (DT a) (JJ broken) (NN leg)))
+          (NP (NN situation) (NN surgery))
+          (VP (VBZ has)
+            (NP
+              (NP (DT a) (NN purpose))
+              (PP (IN of)
+                (NP (NN healing)
+                  (CC and)
+                  (NN cure))))))))
+    (. .)))
+
+poss(example-2, Your-1)
+nsubj(valid-5, example-2)
+cop(valid-5, is-3)
+neg(valid-5, not-4)
+root(ROOT-0, valid-5)
+mark(has-13, because-6)
+det(leg-10, a-8)
+amod(leg-10, broken-9)
+prep_in(has-13, leg-10)
+nn(surgery-12, situation-11)
+nsubj(has-13, surgery-12)
+advcl(valid-5, has-13)
+det(purpose-15, a-14)
+dobj(has-13, purpose-15)
+prep_of(purpose-15, healing-17)
+prep_of(purpose-15, cure-19)
+conj_and(healing-17, cure-19)
+

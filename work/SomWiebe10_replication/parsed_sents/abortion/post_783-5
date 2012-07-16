@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (LST (LS 3))
+    (: :)
+    (NP (NNS People))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (VP (VBN punished)
+          (PP (IN for)
+            (NP (NN birth) (NN control)))
+          (S
+            (VP (VBG failing)))
+          (, ,)
+          (PP (IN for)
+            (S
+              (VP (VBG being)
+                (ADJP (JJ uninformed)
+                  (PP
+                    (PP (IN about)
+                      (SBAR
+                        (WHADVP (WRB how))
+                        (S
+                          (NP (NNS babies))
+                          (VP (VBP are)
+                            (VP (VBN made))))))
+                    (CC or)
+                    (PP (IN for)
+                      (NP (JJ general) (NN immaturity)))))))))))
+    (. .)))
+
+dep(punished-7, 3-1)
+nsubjpass(punished-7, People-3)
+aux(punished-7, should-4)
+neg(punished-7, not-5)
+auxpass(punished-7, be-6)
+root(ROOT-0, punished-7)
+nn(control-10, birth-9)
+prep_for(punished-7, control-10)
+xcomp(punished-7, failing-11)
+cop(uninformed-15, being-14)
+prepc_for(punished-7, uninformed-15)
+prepc_for(punished-7, uninformed-15')
+conj_or(uninformed-15, uninformed-15')
+advmod(made-20, how-17)
+nsubjpass(made-20, babies-18)
+auxpass(made-20, are-19)
+prepc_about(uninformed-15, made-20)
+amod(immaturity-24, general-23)
+prep_for(uninformed-15', immaturity-24)
+

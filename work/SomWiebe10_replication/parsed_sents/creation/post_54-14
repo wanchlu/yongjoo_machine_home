@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR (IN that)
+        (S
+          (VP (VBZ means)
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (MD would)
+                  (ADVP (RB indeed))
+                  (VP (VB falsify)
+                    (NP
+                      (NP (DT a) (JJ central) (NN proposition))
+                      (PP (IN of)
+                        (NP (NNP ID))))))))))))
+    (. ?)))
+
+nsubj(guess-2, I-1)
+root(ROOT-0, guess-2)
+complm(means-4, that-3)
+ccomp(guess-2, means-4)
+complm(falsify-9, that-5)
+nsubj(falsify-9, it-6)
+aux(falsify-9, would-7)
+advmod(falsify-9, indeed-8)
+ccomp(means-4, falsify-9)
+det(proposition-12, a-10)
+amod(proposition-12, central-11)
+dobj(falsify-9, proposition-12)
+prep_of(proposition-12, ID-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Nuff) (NNP saidTom) (NNP Schneider))
+      (, ,)
+      (NP
+        (NP (`` ``)
+          (NP (NN evolution))
+          (PP (IN of)
+            (NP (JJ biological) (NN information)))
+          ('' ''))
+        (NP (NNP Nucleic) (NNP Acids) (NNP Res) ('' '')))
+      (, ,))
+    (VP (VBP vol)
+      (NP
+        (NP
+          (NP (CD 28))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 14))
+            (-RRB- -RRB-)))
+        (, ,)
+        (NP
+          (NP (CD 2794-2799))
+          (, ,)
+          (NP (CD 2000)))))
+    (. .)))
+
+nn(Schneider-3, Nuff-1)
+nn(Schneider-3, saidTom-2)
+nsubj(vol-16, Schneider-3)
+appos(Schneider-3, evolution-6)
+amod(information-9, biological-8)
+prep_of(evolution-6, information-9)
+nn(Res-13, Nucleic-11)
+nn(Res-13, Acids-12)
+dep(evolution-6, Res-13)
+root(ROOT-0, vol-16)
+dobj(vol-16, 28-17)
+appos(28-17, 14-19)
+appos(28-17, 2794-2799-22)
+appos(2794-2799-22, 2000-24)
+

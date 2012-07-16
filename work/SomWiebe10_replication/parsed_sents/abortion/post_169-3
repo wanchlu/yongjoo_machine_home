@@ -1,0 +1,45 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (NNPS Catholics))
+      (VP (MD ca) (RB n't)
+        (VP (VB vote)
+          (PP (IN for)
+            (NP
+              (NP (NNP Obama))
+              (ADJP (JJ due)
+                (PP (TO to)
+                  (NP (DT this))))))
+          (SBAR
+            (SBARQ
+              (WHADVP (WRB why))
+              (SQ (MD can)
+                (NP (PRP they))
+                (VP (VB vote)
+                  (PP (IN for)
+                    (NP
+                      (NP (NNP McCain))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBZ is)
+                            (NP (DT an) (NN adulterer)))))))))
+              (. ?))))))))
+
+mark(vote-5, If-1)
+nsubj(vote-5, Catholics-2)
+aux(vote-5, ca-3)
+neg(vote-5, n't-4)
+root(ROOT-0, vote-5)
+prep_for(vote-5, Obama-7)
+prep_due_to(Obama-7, this-10)
+advmod(vote-14, why-11)
+aux(vote-14, can-12)
+nsubj(vote-14, they-13)
+dep(vote-5, vote-14)
+prep_for(vote-14, McCain-16)
+nsubj(adulterer-20, McCain-16)
+cop(adulterer-20, is-18)
+det(adulterer-20, an-19)
+rcmod(McCain-16, adulterer-20)
+

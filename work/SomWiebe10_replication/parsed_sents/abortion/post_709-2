@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBD chose)
+          (S (RB not)
+            (VP (TO to)
+              (VP (VB believe)
+                (NP (DT any) (NN murder))))))))
+    (VP (VBZ is)
+      (ADJP (JJ wrong))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ is)
+            (S
+              (VP (TO to)
+                (VP (VB stop)
+                  (NP (PRP me)))))))))
+    (. ?)))
+
+mark(chose-3, If-1)
+nsubj(chose-3, I-2)
+xsubj(believe-6, I-2)
+csubj(wrong-10, chose-3)
+neg(believe-6, not-4)
+aux(believe-6, to-5)
+xcomp(chose-3, believe-6)
+det(murder-8, any-7)
+dobj(believe-6, murder-8)
+cop(wrong-10, is-9)
+root(ROOT-0, wrong-10)
+nsubj(is-12, what-11)
+ccomp(wrong-10, is-12)
+aux(stop-14, to-13)
+xcomp(is-12, stop-14)
+dobj(stop-14, me-15)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Someone) (RB else))
+    (SQ (VBZ 's)
+      (NP (JJ personal) (NN belief)))
+    (. ?)))
+
+attr('s-3, Someone-1)
+advmod(Someone-1, else-2)
+root(ROOT-0, 's-3)
+amod(belief-5, personal-4)
+nsubj('s-3, belief-5)
+

@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN health))
+      (PP (IN of)
+        (NP (DT the) (NN mother) (NN exception))))
+    (VP (MD might)
+      (VP (VB be)
+        (ADJP (RBR more) (JJ contentious))
+        (PP (RB because) (IN of)
+          (NP
+            (NP (DT the) (NN issue))
+            (PP (IN of)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP you))
+                  (VP (VB define)
+                    (NP (DT a) (NN threat))
+                    (PP (TO to)
+                      (NP (NN health)))))))))))
+    (. .)))
+
+det(health-2, The-1)
+nsubj(contentious-10, health-2)
+det(exception-6, the-4)
+nn(exception-6, mother-5)
+prep_of(health-2, exception-6)
+aux(contentious-10, might-7)
+cop(contentious-10, be-8)
+advmod(contentious-10, more-9)
+root(ROOT-0, contentious-10)
+det(issue-14, the-13)
+prep_because_of(contentious-10, issue-14)
+advmod(define-18, how-16)
+nsubj(define-18, you-17)
+prepc_of(issue-14, define-18)
+det(threat-20, a-19)
+dobj(define-18, threat-20)
+prep_to(define-18, health-22)
+

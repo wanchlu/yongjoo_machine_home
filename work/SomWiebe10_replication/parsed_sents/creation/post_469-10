@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS emails))
+      (SBAR (IN that)
+        (S
+          (NP (NNP Genie) (NNP Scott))
+          (VP (VBD exchanged)))))
+    (VP (VBD were)
+      (NP
+        (NP (JJ full))
+        (PP (IN of)
+          (NP
+            (NP (NNS admonitions))
+            (PP (TO to)
+              (NP (NNP Smithsonian) (NNS personnel))))))
+      (S (RB not)
+        (VP (TO to)
+          (VP (VB do)
+            (NP
+              (NP (DT the) (NNS things))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (ADVP (RB now))
+                    (VP (VBN accused)
+                      (PP (IN of)
+                        (S
+                          (VP (VBG conspiring)
+                            (S
+                              (VP (TO to)
+                                (VP (VB do))))))))))))))))
+    (. .)))
+
+det(emails-2, The-1)
+dobj(exchanged-6, emails-2)
+nsubj(full-8, emails-2)
+complm(exchanged-6, that-3)
+nn(Scott-5, Genie-4)
+nsubj(exchanged-6, Scott-5)
+dep(emails-2, exchanged-6)
+cop(full-8, were-7)
+root(ROOT-0, full-8)
+prep_of(full-8, admonitions-10)
+nn(personnel-13, Smithsonian-12)
+prep_to(admonitions-10, personnel-13)
+neg(do-16, not-14)
+aux(do-16, to-15)
+xcomp(full-8, do-16)
+det(things-18, the-17)
+dobj(do-16, things-18)
+nsubjpass(accused-22, they-19)
+auxpass(accused-22, are-20)
+advmod(accused-22, now-21)
+rcmod(things-18, accused-22)
+prepc_of(accused-22, conspiring-24)
+aux(do-26, to-25)
+xcomp(conspiring-24, do-26)
+

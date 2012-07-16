@@ -1,0 +1,36 @@
+(ROOT
+  (NP
+    (NP (NNP Boston))
+    (: :)
+    (NP
+      (NP (NNP Harvard) (NNP University) (NNP PressDalley) (, ,) (NNP Stephanie2000) (NNPS Myths))
+      (PP (IN from)
+        (NP (NNP Mesopotamia))))
+    (: :)
+    (NP
+      (NP (NN Creation))
+      (, ,)
+      (NP (DT The) (NNP Flood))
+      (, ,)
+      (NP (NNP Gilgamesh))
+      (, ,)
+      (CC and)
+      (NP (NNS Others)))
+    (. .)))
+
+root(ROOT-0, Boston-1)
+nn(Myths-8, Harvard-3)
+nn(Myths-8, University-4)
+nn(Myths-8, PressDalley-5)
+appos(Myths-8, Stephanie2000-7)
+dep(Boston-1, Myths-8)
+prep_from(Myths-8, Mesopotamia-10)
+dep(Boston-1, Creation-12)
+det(Flood-15, The-14)
+dep(Boston-1, Flood-15)
+conj_and(Creation-12, Flood-15)
+dep(Boston-1, Gilgamesh-17)
+conj_and(Creation-12, Gilgamesh-17)
+dep(Boston-1, Others-20)
+conj_and(Creation-12, Others-20)
+

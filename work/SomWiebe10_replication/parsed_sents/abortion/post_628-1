@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (SBAR (IN As) (IN if)
+      (S
+        (NP (DT the) (NN child))
+        (VP (VBZ has)
+          (NP
+            (NP (DT any) (NN sort))
+            (PP (IN of))))))
+    (VP (VBP say)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ crappy) (NN lifestyle) (NNS choices))
+          (PP (IN of)
+            (NP (DT the) (NNS parents))))))
+    (. .)))
+
+mark(has-5, As-1)
+dep(has-5, if-2)
+det(child-4, the-3)
+nsubj(has-5, child-4)
+advcl(say-9, has-5)
+csubj(say-9, has-5)
+det(sort-7, any-6)
+dobj(has-5, sort-7)
+prep(sort-7, of-8)
+root(ROOT-0, say-9)
+det(choices-14, the-11)
+amod(choices-14, crappy-12)
+nn(choices-14, lifestyle-13)
+prep_in(say-9, choices-14)
+det(parents-17, the-16)
+prep_of(choices-14, parents-17)
+

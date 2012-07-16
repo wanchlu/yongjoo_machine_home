@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (NP (NNP Judaism))
+    (VP (VBZ holds)
+      (SBAR (IN that)
+        (S
+          (S
+            (NP (NN life))
+            (VP (VBZ begins)
+              (PP (IN at)
+                (NP (NN birth)))))
+          (CC and)
+          (S
+            (NP (NN abortion))
+            (VP (VBZ is) (RB not)
+              (NP (NN murder)))))))))
+
+nsubj(holds-2, Judaism-1)
+root(ROOT-0, holds-2)
+complm(begins-5, that-3)
+nsubj(begins-5, life-4)
+ccomp(holds-2, begins-5)
+prep_at(begins-5, birth-7)
+nsubj(murder-12, abortion-9)
+cop(murder-12, is-10)
+neg(murder-12, not-11)
+ccomp(holds-2, murder-12)
+conj_and(begins-5, murder-12)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Children))
+      (, ,)
+      (PP (IN for)
+        (NP (NN example)))
+      (, ,))
+    (VP (VBP do)
+      (SBAR (RB not)
+        (S (, ,)
+          (PP (IN under)
+            (NP (JJ normal) (NNS circumstances)))
+          (, ,)
+          (VP (VBP have)
+            (NP (DT the) (NN right)
+              (S
+                (VP (TO to)
+                  (VP (VB decide)
+                    (SBAR
+                      (WHADVP (WRB how))
+                      (S
+                        (NP (PRP they))
+                        (VP (MD will)
+                          (VP (VB be)
+                            (VP (VBN raised))))))))))))))
+    (. .)))
+
+nsubj(do-6, Children-1)
+prep_for(Children-1, example-4)
+root(ROOT-0, do-6)
+dep(have-13, not-7)
+amod(circumstances-11, normal-10)
+prep_under(have-13, circumstances-11)
+ccomp(do-6, have-13)
+det(right-15, the-14)
+dobj(have-13, right-15)
+aux(decide-17, to-16)
+infmod(right-15, decide-17)
+advmod(raised-22, how-18)
+nsubjpass(raised-22, they-19)
+aux(raised-22, will-20)
+auxpass(raised-22, be-21)
+ccomp(decide-17, raised-22)
+

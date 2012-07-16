@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Newton))
+        (VP (VBD arrived)
+          (PP (IN at)
+            (NP
+              (NP (PRP$ his) (NNS laws))
+              (PP (IN of)
+                (NP (NN motion))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN shocked)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBD realized)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (DT the) (NNS orbits))
+                    (PP (IN of)
+                      (NP (NNS planets))))
+                  (VP (MD could) (RB not)
+                    (ADVP (RB possibly))
+                    (VP (VB be)
+                      (ADJP (JJ stable)))))))))))
+    (. .)))
+
+advmod(arrived-3, When-1)
+nsubj(arrived-3, Newton-2)
+advcl(shocked-12, arrived-3)
+poss(laws-6, his-5)
+prep_at(arrived-3, laws-6)
+prep_of(laws-6, motion-8)
+nsubjpass(shocked-12, he-10)
+auxpass(shocked-12, was-11)
+root(ROOT-0, shocked-12)
+advmod(realized-15, when-13)
+nsubj(realized-15, he-14)
+advcl(shocked-12, realized-15)
+complm(stable-25, that-16)
+det(orbits-18, the-17)
+nsubj(stable-25, orbits-18)
+prep_of(orbits-18, planets-20)
+aux(stable-25, could-21)
+neg(stable-25, not-22)
+advmod(stable-25, possibly-23)
+cop(stable-25, be-24)
+ccomp(realized-15, stable-25)
+

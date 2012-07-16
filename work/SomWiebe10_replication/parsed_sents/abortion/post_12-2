@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN Before)
+      (S
+        (NP (PRP we))
+        (VP (MD can)
+          (VP (VB feel)
+            (ADJP (JJ comfortable))
+            (S
+              (VP (VBG treating)
+                (NP
+                  (NP (NNS others))
+                  (NP (DT this) (NN way)))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB expel)
+            (NP (PRP them))
+            (PP (IN from)
+              (NP (DT the) (JJ human) (NN community)))))))
+    (. .)))
+
+mark(feel-4, Before-1)
+nsubj(feel-4, we-2)
+aux(feel-4, can-3)
+advcl(have-12, feel-4)
+acomp(feel-4, comfortable-5)
+xcomp(feel-4, treating-6)
+dobj(treating-6, others-7)
+iobj(treating-6, others-7)
+det(way-9, this-8)
+dobj(treating-6, way-9)
+dep(others-7, way-9)
+nsubj(have-12, we-11)
+xsubj(expel-14, we-11)
+root(ROOT-0, have-12)
+aux(expel-14, to-13)
+xcomp(have-12, expel-14)
+dobj(expel-14, them-15)
+det(community-19, the-17)
+amod(community-19, human-18)
+prep_from(expel-14, community-19)
+

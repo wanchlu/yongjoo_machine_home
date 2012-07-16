@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNS Animals))
+    (VP (VBP convert)
+      (NP (NN oxygen))
+      (PP (TO to)
+        (NP (CD co2))))
+    (. .)))
+
+nsubj(convert-2, Animals-1)
+root(ROOT-0, convert-2)
+dobj(convert-2, oxygen-3)
+prep_to(convert-2, co2-5)
+
+(ROOT
+  (S
+    (VP (VB Plants)
+      (NP (JJ covert) (NNS co2))
+      (PP (TO to)
+        (NP (NN oxygen))))
+    (. .)))
+
+root(ROOT-0, Plants-1)
+amod(co2-3, covert-2)
+dobj(Plants-1, co2-3)
+prep_to(Plants-1, oxygen-5)
+
+(ROOT
+  (NP
+    (NP (JJ Procaryote) (NNS cells))
+    (NP
+      (NP (JJ covert) (NNS co2))
+      (PP (TO to)
+        (NP (NN oxygen))))
+    (. .)))
+
+amod(cells-2, Procaryote-1)
+root(ROOT-0, cells-2)
+amod(co2-4, covert-3)
+dep(cells-2, co2-4)
+prep_to(co2-4, oxygen-6)
+
+(ROOT
+  (FRAG
+    (ADVP (RB There))
+    (NP
+      (NP (NNS plants))
+      (VP (VBN !!)))))
+
+dep(plants-2, There-1)
+root(ROOT-0, plants-2)
+partmod(plants-2, !!-3)
+

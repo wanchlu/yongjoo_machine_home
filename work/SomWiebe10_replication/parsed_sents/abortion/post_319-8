@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP we))
+        (VP (VBP choose)
+          (S
+            (VP (TO to)
+              (VP (VB ignore)
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's)
+                      (NP
+                        (NP (DT an) (NN inconvenience))
+                        (PP (TO to)
+                          (NP (PRP us)))
+                        (S
+                          (VP (TO to)
+                            (VP (VB face)
+                              (NP (DT the) (NN truth)))))))))))))))
+    (VP (VBZ bears)
+      (NP
+        (NP (DT the) (JJ same) (JJ moral) (NN condemnation))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ actual) (NNS actions))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP are)
+                  (VP (VBN considered)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP
+                            (ADJP (`` ``) (JJ evil) ('' ''))
+                            (, ,)
+                            (CC or)
+                            (ADJP (JJ wrong))))))))))))))
+    (. .)))
+
+dep(choose-3, What-1)
+nsubj(choose-3, we-2)
+xsubj(ignore-5, we-2)
+csubj(bears-17, choose-3)
+aux(ignore-5, to-4)
+xcomp(choose-3, ignore-5)
+mark(inconvenience-10, because-6)
+nsubj(inconvenience-10, it-7)
+cop(inconvenience-10, 's-8)
+det(inconvenience-10, an-9)
+advcl(ignore-5, inconvenience-10)
+prep_to(inconvenience-10, us-12)
+aux(face-14, to-13)
+infmod(inconvenience-10, face-14)
+det(truth-16, the-15)
+dobj(face-14, truth-16)
+root(ROOT-0, bears-17)
+det(condemnation-21, the-18)
+amod(condemnation-21, same-19)
+amod(condemnation-21, moral-20)
+dobj(bears-17, condemnation-21)
+det(actions-25, the-23)
+amod(actions-25, actual-24)
+prep_of(condemnation-21, actions-25)
+nsubjpass(considered-28, actions-25)
+auxpass(considered-28, are-27)
+rcmod(actions-25, considered-28)
+aux(evil-32, to-29)
+cop(evil-32, be-30)
+xcomp(considered-28, evil-32)
+xcomp(considered-28, wrong-36)
+conj_or(evil-32, wrong-36)
+

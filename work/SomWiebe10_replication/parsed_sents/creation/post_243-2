@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ happens)
+          (S
+            (ADVP (RB instead))
+            (, ,)
+            (PP (VBG according)
+              (PP (TO to)
+                (NP (DT the) (JJ fossil) (NN record))))
+            (, ,)
+            (VP (VBZ is)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (ADJP
+                      (ADJP (RB many) (JJ spectacular))
+                      (CC but)
+                      (ADJP (RB highly) (JJ specialized)))
+                    (NNS animals))
+                  (VP (VBP arise)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP
+                          (ADVP (RB then))
+                          (VBP suffer)
+                          (PP (IN from)
+                            (NP (JJ mass) (NNS extinctions)))
+                          (, ,)
+                          (PP (VBN followed)
+                            (PP (IN by)
+                              (NP
+                                (NP (JJ new)
+                                  (CC and)
+                                  (JJ different) (NNS animals))
+                                (SBAR
+                                  (WHNP (WDT that))
+                                  (S
+                                    (VP (VBP end)
+                                      (PRT (RP up))
+                                      (S
+                                        (VP (VBG occupying)
+                                          (NP (DT the) (JJ same) (JJ ecological) (NNS niches)))))))))))))))))))))
+    (NP (DT the) (JJ extinct) (NNS ones))
+    (VP (VBD did))
+    (. .)))
+
+nsubj(happens-2, What-1)
+dep(did-44, happens-2)
+advmod(is-11, instead-3)
+prepc_according_to(is-11, to-6)
+det(record-9, the-7)
+amod(record-9, fossil-8)
+pobj(is-11, record-9)
+ccomp(happens-2, is-11)
+complm(arise-19, that-12)
+advmod(spectacular-14, many-13)
+amod(animals-18, spectacular-14)
+advmod(specialized-17, highly-16)
+conj_but(spectacular-14, specialized-17)
+amod(animals-18, specialized-17)
+nsubj(arise-19, animals-18)
+ccomp(is-11, arise-19)
+nsubj(suffer-22, which-20)
+advmod(suffer-22, then-21)
+ccomp(arise-19, suffer-22)
+amod(extinctions-25, mass-24)
+prep_from(suffer-22, extinctions-25)
+prepc_followed_by(suffer-22, by-28)
+amod(animals-32, new-29)
+conj_and(new-29, different-31)
+amod(animals-32, different-31)
+pobj(suffer-22, animals-32)
+nsubj(end-34, animals-32)
+rcmod(animals-32, end-34)
+prt(end-34, up-35)
+xcomp(end-34, occupying-36)
+det(niches-40, the-37)
+amod(niches-40, same-38)
+amod(niches-40, ecological-39)
+dobj(occupying-36, niches-40)
+det(ones-43, the-41)
+amod(ones-43, extinct-42)
+nsubj(did-44, ones-43)
+root(ROOT-0, did-44)
+

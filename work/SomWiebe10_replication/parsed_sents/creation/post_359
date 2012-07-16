@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP do) (RB n't)
+          (VP (VB know)
+            (ADVP (RB then))))))
+    (NP (DT no) (NN one))
+    (VP (MD can)
+      (VP
+        (VP (VB say)
+          (SBAR (IN that)
+            (S
+              (NP (DT a) (NN designer))
+              (VP (VBD was) (RB not)
+                (VP (VBN involved))))))
+        (CC or)
+        (RB not)
+        (VP (JJ required))))
+    (. .)))
+
+mark(know-5, If-1)
+nsubj(know-5, we-2)
+aux(know-5, do-3)
+neg(know-5, n't-4)
+advcl(say-10, know-5)
+advmod(know-5, then-6)
+det(one-8, no-7)
+nsubj(say-10, one-8)
+aux(say-10, can-9)
+root(ROOT-0, say-10)
+complm(involved-16, that-11)
+det(designer-13, a-12)
+nsubjpass(involved-16, designer-13)
+auxpass(involved-16, was-14)
+neg(involved-16, not-15)
+ccomp(say-10, involved-16)
+conj_or(say-10, not-18)
+neg(say-10, not-18)
+dep(say-10, required-19)
+
+(ROOT
+  (S
+    (NP (NNP IOW))
+    (VP (VBP thank)
+      (NP (PRP you))
+      (PP (IN for)
+        (S
+          (VP (VBG demonstrating)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (NNS critics))
+                  (PP (IN of)
+                    (NP (NNP ID))))
+                (VP (VBP base)
+                  (NP (PRP$ their) (NN criticism))
+                  (PP (IN on)
+                    (NP (NN ignorance))))))))))
+    (. .)))
+
+nsubj(thank-2, IOW-1)
+root(ROOT-0, thank-2)
+dobj(thank-2, you-3)
+prepc_for(thank-2, demonstrating-5)
+complm(base-10, that-6)
+nsubj(base-10, critics-7)
+prep_of(critics-7, ID-9)
+ccomp(demonstrating-5, base-10)
+poss(criticism-12, their-11)
+dobj(base-10, criticism-12)
+prep_on(base-10, ignorance-14)
+

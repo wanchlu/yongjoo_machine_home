@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ thinks)
+            (SBAR
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT no) (NN evidence))
+                    (PP (IN for)
+                      (NP (NN evolution)))))))))))
+    (VP (VBZ is)
+      (UCP (RB either)
+        (ADJP (JJ blind))
+        (, ,)
+        (ADJP (JJ stupid))
+        (, ,)
+        (CC or)
+        (NP (CD both))))
+    (. .)))
+
+nsubj(thinks-3, Anyone-1)
+nsubj(is-10, Anyone-1)
+rcmod(Anyone-1, thinks-3)
+expl(is-5, there-4)
+ccomp(thinks-3, is-5)
+det(evidence-7, no-6)
+nsubj(is-5, evidence-7)
+prep_for(evidence-7, evolution-9)
+root(ROOT-0, is-10)
+dep(is-10, either-11)
+dep(either-11, blind-12)
+dep(is-10, stupid-14)
+conj_or(either-11, stupid-14)
+dep(is-10, both-17)
+conj_or(either-11, both-17)
+

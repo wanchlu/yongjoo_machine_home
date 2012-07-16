@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB Only) (NN someone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ does) (RB not)
+            (VP (VB beleive)
+              (PP (IN in)
+                (NP (NNP God))))))))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB ask)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (DT the) (NN world))
+                  (VP (VBD was)
+                    (VP (VBN created)
+                      (PP (IN in)
+                        (NP (CD six) (NNS days))))))))))))
+    (. .)))
+
+advmod(someone-2, Only-1)
+nsubj(beleive-6, someone-2)
+nsubj(have-10, someone-2)
+xsubj(ask-12, someone-2)
+aux(beleive-6, does-4)
+neg(beleive-6, not-5)
+rcmod(someone-2, beleive-6)
+prep_in(beleive-6, God-8)
+aux(have-10, would-9)
+root(ROOT-0, have-10)
+aux(ask-12, to-11)
+xcomp(have-10, ask-12)
+advmod(created-17, how-13)
+det(world-15, the-14)
+nsubjpass(created-17, world-15)
+auxpass(created-17, was-16)
+ccomp(ask-12, created-17)
+num(days-20, six-19)
+prep_in(created-17, days-20)
+

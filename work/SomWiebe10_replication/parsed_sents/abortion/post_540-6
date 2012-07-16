@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (NP (NNP Medicaid))
+    (VP (MD would) (RB not)
+      (VP (VB allow)
+        (S
+          (NP (PRP me))
+          (VP (TO to)
+            (VP (VB deliver)
+              (ADVP
+                (NP (DT the) (NN baby))
+                (RB early))
+              (PP (IN in)
+                (NP (DT the) (NN hospital))))))))
+    (. .)))
+
+nsubj(allow-4, Medicaid-1)
+aux(allow-4, would-2)
+neg(allow-4, not-3)
+root(ROOT-0, allow-4)
+nsubj(deliver-7, me-5)
+aux(deliver-7, to-6)
+xcomp(allow-4, deliver-7)
+det(baby-9, the-8)
+npadvmod(early-10, baby-9)
+advmod(deliver-7, early-10)
+det(hospital-13, the-12)
+prep_in(deliver-7, hospital-13)
+

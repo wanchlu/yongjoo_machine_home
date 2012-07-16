@@ -1,0 +1,75 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD can)
+      (NP (PRP they))
+      (VP (VB vote)
+        (PP (IN for)
+          (NP
+            (NP (NN someone))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ supports)
+                  (NP
+                    (NP (DT the) (NN war))
+                    (PP (IN in)
+                      (NP (NNP Iraq)))
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (DT The) (NNP Pope))
+                        (VP (VBZ has)
+                          (VP (VBN said)
+                            (SBAR (IN that)
+                              (S
+                                (NP (DT the) (NN war))
+                                (VP (VBZ is)
+                                  (NP
+                                    (NP (DT a) (NN defeat))
+                                    (PP (IN for)
+                                      (NP (NN humanity))))))))))))))))))
+      (. !))))
+
+advmod(vote-4, Why-1)
+aux(vote-4, can-2)
+nsubj(vote-4, they-3)
+root(ROOT-0, vote-4)
+prep_for(vote-4, someone-6)
+nsubj(supports-8, someone-6)
+rcmod(someone-6, supports-8)
+det(war-10, the-9)
+dobj(supports-8, war-10)
+tmod(said-17, war-10)
+prep_in(war-10, Iraq-12)
+advmod(said-17, when-13)
+det(Pope-15, The-14)
+nsubj(said-17, Pope-15)
+aux(said-17, has-16)
+dep(war-10, said-17)
+complm(defeat-23, that-18)
+det(war-20, the-19)
+nsubj(defeat-23, war-20)
+cop(defeat-23, is-21)
+det(defeat-23, a-22)
+ccomp(said-17, defeat-23)
+prep_for(defeat-23, humanity-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADVP (RB just))
+      (VP (VBG looking)
+        (PP (IN for)
+          (NP (DT a) (JJ little) (NN consistency)))))
+    (. .)))
+
+nsubj(looking-4, I-1)
+aux(looking-4, 'm-2)
+advmod(looking-4, just-3)
+root(ROOT-0, looking-4)
+det(consistency-8, a-6)
+amod(consistency-8, little-7)
+prep_for(looking-4, consistency-8)
+

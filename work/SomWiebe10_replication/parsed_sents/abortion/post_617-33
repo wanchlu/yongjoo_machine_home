@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Humans))
+      (PRN (-LRB- -LRB-)
+        (SBAR
+          (ADVP (RB as) (RB far))
+          (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBP know))))
+        (-RRB- -RRB-)))
+    (VP (VBP do) (RB n't)
+      (VP (VB become)
+        (ADJP (JJ dormant))))
+    (. .)))
+
+nsubj(dormant-12, Humans-1)
+advmod(far-4, as-3)
+advmod(know-7, far-4)
+dep(know-7, as-5)
+nsubj(know-7, I-6)
+dep(Humans-1, know-7)
+aux(dormant-12, do-9)
+neg(dormant-12, n't-10)
+cop(dormant-12, become-11)
+root(ROOT-0, dormant-12)
+

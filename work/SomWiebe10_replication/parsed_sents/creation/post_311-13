@@ -1,0 +1,41 @@
+(ROOT
+  (S ('' '')
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN studied)
+        (S
+          (NP
+            (NP (DT the) (NN design) (NN inference))
+            (PP (IN for)
+              (NP (RB almost) (DT a) (NN year)))))
+        (SBAR
+          (ADVP (RB now))
+          (IN whether)
+          (FRAG
+            (PP (IN through)
+              (NP
+                (NP (NNP Dembski) (POS 's))
+                (NNS works)
+                (CC or)
+                (JJ other) (NN ID) (NNS paraphernalia)))))))
+    (. .)))
+
+nsubj(studied-4, I-2)
+aux(studied-4, 've-3)
+root(ROOT-0, studied-4)
+det(inference-7, the-5)
+nn(inference-7, design-6)
+xcomp(studied-4, inference-7)
+advmod(year-11, almost-9)
+det(year-11, a-10)
+prep_for(inference-7, year-11)
+advmod(through-14, now-12)
+dep(through-14, whether-13)
+dep(studied-4, through-14)
+poss(works-17, Dembski-15)
+pobj(through-14, works-17)
+amod(paraphernalia-21, other-19)
+nn(paraphernalia-21, ID-20)
+pobj(through-14, paraphernalia-21)
+conj_or(works-17, paraphernalia-21)
+

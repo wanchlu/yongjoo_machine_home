@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Obama))
+      (VP (VBD won)))
+    (: ...)
+    (CC and)
+    (S
+      (NP (DT this))
+      (ADVP (RB probably))
+      (VP (VB upset)
+        (NP (PRP you))
+        (SBAR (IN because)
+          (S
+            (PP (IN of)
+              (NP (DT the) (CD ONE) (NN reason)))
+            (NP (PRP you))
+            (VP (MD could)
+              (VP (VB think)
+                (PP (IN of))))))))
+    (. .)))
+
+nsubj(won-2, Obama-1)
+root(ROOT-0, won-2)
+nsubj(upset-7, this-5)
+advmod(upset-7, probably-6)
+conj_and(won-2, upset-7)
+dobj(upset-7, you-8)
+mark(think-16, because-9)
+det(reason-13, the-11)
+num(reason-13, ONE-12)
+prep_of(think-16, reason-13)
+nsubj(think-16, you-14)
+aux(think-16, could-15)
+advcl(upset-7, think-16)
+prep(think-16, of-17)
+

@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP (DT all) (NNS theories)))
+    (NP (NNP Evolution))
+    (VP (VBZ has)
+      (VP (VBN changed)
+        (PP (IN over)
+          (NP
+            (NP (DT the) (NNS years))
+            (PP (RB because) (IN of)
+              (NP
+                (NP (JJ new) (NN evidence))
+                (SBAR
+                  (S
+                    (VP (VBD was)
+                      (VP (VBN discovered)))))))))))
+    (. .)))
+
+det(theories-3, all-2)
+prep_like(changed-6, theories-3)
+nsubj(changed-6, Evolution-4)
+aux(changed-6, has-5)
+root(ROOT-0, changed-6)
+det(years-9, the-8)
+prep_over(changed-6, years-9)
+amod(evidence-13, new-12)
+prep_because_of(years-9, evidence-13)
+auxpass(discovered-15, was-14)
+rcmod(evidence-13, discovered-15)
+

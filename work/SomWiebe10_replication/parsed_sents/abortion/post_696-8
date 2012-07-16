@@ -1,0 +1,72 @@
+(ROOT
+  (INTJ (UH No) (. ?)))
+
+root(ROOT-0, No-1)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP
+        (SBAR (IN if)
+          (S
+            (NP (PRP I))
+            (VP (VBD took)
+              (NP (NN sperm) (NNS cells))
+              (ADVP (RB perhaps))
+              (PP (IN from)
+                (NP
+                  (NP (CD two) (JJ different) (NNS men))
+                  (VP (VBN extracted)
+                    (NP (DT the) (NNS chromosomes))
+                    (PP (IN from)
+                      (NP
+                        (NP (DT each))
+                        (, ,)
+                        (VP (VBN combined)
+                          (NP (PRP them)))))))))))
+        (, ,)
+        (VP (VBD injected)
+          (NP (DT the) (JJ full) (NN complement))
+          (PP (IN into)
+            (NP (DT a) (JJ denucleated) (NN ovum))))
+        (CC and)
+        (VP (VBD caused)
+          (S
+            (NP (PRP it))
+            (VP (TO to)
+              (VP (VB start)
+                (S
+                  (VP (VBG dividing)))))))))
+    (. ?)))
+
+nsubj(injected-21, What-1)
+nsubj(caused-30, What-1)
+mark(took-4, if-2)
+nsubj(took-4, I-3)
+advcl(injected-21, took-4)
+nn(cells-6, sperm-5)
+dobj(took-4, cells-6)
+advmod(took-4, perhaps-7)
+num(men-11, two-9)
+amod(men-11, different-10)
+prep_from(took-4, men-11)
+partmod(men-11, extracted-12)
+det(chromosomes-14, the-13)
+dobj(extracted-12, chromosomes-14)
+prep_from(extracted-12, each-16)
+partmod(each-16, combined-18)
+dobj(combined-18, them-19)
+root(ROOT-0, injected-21)
+det(complement-24, the-22)
+amod(complement-24, full-23)
+dobj(injected-21, complement-24)
+det(ovum-28, a-26)
+amod(ovum-28, denucleated-27)
+prep_into(injected-21, ovum-28)
+conj_and(injected-21, caused-30)
+nsubj(start-33, it-31)
+aux(start-33, to-32)
+xcomp(caused-30, start-33)
+xcomp(start-33, dividing-34)
+

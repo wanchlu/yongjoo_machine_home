@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNS Things))
+    (VP (VBP get)
+      (ADVP (RBR worse))
+      (ADVP (RB however))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (VP (VBD said)
+            (SBAR
+              (S
+                (NP
+                  (NP (`` ``) (NNS arguments) ('' ''))
+                  (PP (IN against)
+                    (NP (JJ evolutionary) (NN theory))))
+                (VP (VBP are)
+                  (VP (VBN based)
+                    (PP (IN on)
+                      (NP
+                        (ADJP (JJ fallacious) (, ,) (JJ misleading)
+                          (CC or)
+                          (JJ outright))
+                        (JJ false) (NNS claims)))))))))))
+    (. .)))
+
+nsubj(get-2, Things-1)
+root(ROOT-0, get-2)
+advmod(get-2, worse-3)
+advmod(get-2, however-4)
+advmod(said-7, when-6)
+advcl(get-2, said-7)
+nsubjpass(based-15, arguments-9)
+amod(theory-13, evolutionary-12)
+prep_against(arguments-9, theory-13)
+auxpass(based-15, are-14)
+ccomp(said-7, based-15)
+amod(claims-23, fallacious-17)
+conj_or(fallacious-17, misleading-19)
+amod(claims-23, misleading-19)
+conj_or(fallacious-17, outright-21)
+amod(claims-23, outright-21)
+amod(claims-23, false-22)
+prep_on(based-15, claims-23)
+

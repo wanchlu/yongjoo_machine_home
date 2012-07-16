@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (SBAR (IN Though) (, ,)
+      (S
+        (NP (PRP I))
+        (VP
+          (VP (MD will)
+            (VP (VB add)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (VP (VBG getting)
+                      (ADVP (RBR closer)
+                        (CC and)
+                        (RBR closer))
+                      (NP
+                        (NP (DT every) (NN year))
+                        (PP (TO to)
+                          (S
+                            (VP (VBG finding)
+                              (NP (DT that) (VBG missing) (NN link))))))))))))
+          (CC but)
+          (VP
+            (ADVP (RBR closer)
+              (CC and)
+              (RBR closer))
+            (VBZ does)
+            (ADJP (RB not) (JJ equal))))))
+    (VP (VBD found))
+    (. .)))
+
+mark(add-5, Though-1)
+nsubj(add-5, I-3)
+nsubj(equal-25, I-3)
+aux(add-5, will-4)
+csubj(found-26, add-5)
+nsubj(getting-8, they-6)
+aux(getting-8, are-7)
+ccomp(add-5, getting-8)
+advmod(getting-8, closer-9)
+advmod(getting-8, closer-11)
+conj_and(closer-9, closer-11)
+det(year-13, every-12)
+dobj(getting-8, year-13)
+prepc_to(year-13, finding-15)
+det(link-18, that-16)
+amod(link-18, missing-17)
+dobj(finding-15, link-18)
+advmod(equal-25, closer-20)
+conj_and(closer-20, closer-22)
+advmod(equal-25, closer-22)
+dep(equal-25, does-23)
+neg(equal-25, not-24)
+conj_but(add-5, equal-25)
+csubj(found-26, equal-25)
+root(ROOT-0, found-26)
+

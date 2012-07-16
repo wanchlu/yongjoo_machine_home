@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN one))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ wants)
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (ADVP (RB left)))))))))
+      (VP (VBZ says)
+        (SBAR
+          (S
+            (NP (PRP$ his) (NN friend))
+            (VP (MD can)
+              (VP (VB go)
+                (ADVP (RB right))
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP he))
+                    (VP (VBZ likes))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN for)
+        (NP (PRP himself)))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBZ thinks)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (MD should)
+              (VP (VB be)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB choose)))))))))))
+    (. .)))
+
+det(one-2, The-1)
+nsubj(wants-4, one-2)
+nsubj(says-8, one-2)
+rcmod(one-2, wants-4)
+aux(go-6, to-5)
+xcomp(wants-4, go-6)
+advmod(go-6, left-7)
+root(ROOT-0, says-8)
+poss(friend-10, his-9)
+nsubj(go-12, friend-10)
+aux(go-12, can-11)
+ccomp(says-8, go-12)
+advmod(go-12, right-13)
+mark(likes-16, if-14)
+nsubj(likes-16, he-15)
+advcl(go-12, likes-16)
+prep_for(thinks-23, himself-20)
+nsubj(thinks-23, he-22)
+conj_but(says-8, thinks-23)
+nsubj(able-27, he-24)
+aux(able-27, should-25)
+cop(able-27, be-26)
+ccomp(thinks-23, able-27)
+aux(choose-29, to-28)
+xcomp(able-27, choose-29)
+

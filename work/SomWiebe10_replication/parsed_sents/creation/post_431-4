@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (NNS Organisms))
+    (VP (VBP are) (RB not)
+      (ADJP
+        (ADJP (JJR better)
+          (CC or)
+          (JJR worse))
+        (PP (IN than)
+          (SBAR
+            (WHNP
+              (WHNP (CD one))
+              (NP (DT another)))
+            (S
+              (NP (PRP they))
+              (VP (VBP are)
+                (ADVP (RB simply))
+                (ADJP (JJ different))))))))
+    (. .)))
+
+nsubj(better-4, Organisms-1)
+nsubj(worse-6, Organisms-1)
+cop(better-4, are-2)
+neg(better-4, not-3)
+root(ROOT-0, better-4)
+conj_or(better-4, worse-6)
+dobj(different-13, one-8)
+dep(one-8, another-9)
+nsubj(different-13, they-10)
+cop(different-13, are-11)
+advmod(different-13, simply-12)
+prepc_than(better-4, different-13)
+

@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ does) (RB n't)))
+    (, ,)
+    (NP (PRP it))
+    (ADVP (RB merely))
+    (VP (VBZ calls)
+      (S
+        (NP (PRP it))
+        (`` ``)
+        (ADJP (VBN designed))
+        ('' ''))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (NN placeholder))
+              (PP (IN for)
+                (NP
+                  (NP (PRP$ our) (NN ignorance))
+                  (PP (IN as) (TO to)
+                    (SBAR
+                      (WHADVP (WRB how))
+                      (S
+                        (VP (TO to)
+                          (VP (VB explain)
+                            (NP (DT the) (NN flagella))))))))))))))
+    (. .)))
+
+nsubj(does-2, It-1)
+ccomp(calls-7, does-2)
+neg(does-2, n't-3)
+nsubj(calls-7, it-5)
+advmod(calls-7, merely-6)
+root(ROOT-0, calls-7)
+dep(designed-10, it-8)
+dep(calls-7, designed-10)
+nsubj(placeholder-15, which-12)
+cop(placeholder-15, is-13)
+det(placeholder-15, a-14)
+ccomp(calls-7, placeholder-15)
+poss(ignorance-18, our-17)
+prep_for(placeholder-15, ignorance-18)
+advmod(explain-23, how-21)
+aux(explain-23, to-22)
+prepc_as_to(ignorance-18, explain-23)
+det(flagella-25, the-24)
+dobj(explain-23, flagella-25)
+

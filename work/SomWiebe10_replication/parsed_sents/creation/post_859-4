@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Man))
+      (VP (VBD did) (RB not)
+        (VP (VB exist)
+          (PP (IN for)
+            (NP
+              (NP (NNS millions)
+                (CC and)
+                (NNS billions))
+              (PP (IN of)
+                (NP (NNS years))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NNS heavens))
+        (CC and)
+        (NP (DT the) (NN Earth)))
+      (VP (VBD were)
+        (ADVP (IN around) (DT that))
+        (ADJP (JJ long))))
+    (. .)))
+
+nsubj(exist-4, Man-1)
+aux(exist-4, did-2)
+neg(exist-4, not-3)
+root(ROOT-0, exist-4)
+prep_for(exist-4, millions-6)
+prep_for(exist-4, billions-8)
+conj_and(millions-6, billions-8)
+prep_of(millions-6, years-10)
+det(heavens-14, the-13)
+nsubj(long-21, heavens-14)
+det(Earth-17, the-16)
+conj_and(heavens-14, Earth-17)
+nsubj(long-21, Earth-17)
+cop(long-21, were-18)
+advmod(long-21, around-19)
+dep(around-19, that-20)
+conj_but(exist-4, long-21)
+

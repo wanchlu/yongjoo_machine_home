@@ -1,0 +1,53 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (NN everyone))
+      (VP (VBZ lies)
+        (SBAR
+          (SBARQ
+            (WHADVP
+              (ADVP (RB then))
+              (WRB how))
+            (SQ (MD can)
+              (NP (PRP you))
+              (VP (VB say)
+                (SBAR (IN that)
+                  (S
+                    (NP (DT the) (NNP Bible))
+                    (VP (VBZ is)
+                      (NP
+                        (NP (JJ absolute) (NN truth))
+                        (PP (IN after)
+                          (S
+                            (VP (VBG being)
+                              (VP (VBN copied)
+                                (CC and)
+                                (VBN translated)
+                                (PP (IN for)
+                                  (NP
+                                    (NP (NNS thousands))
+                                    (PP (IN of)
+                                      (NP (NNS years)))))))))))))))
+            (. ?)))))))
+
+mark(lies-3, If-1)
+nsubj(lies-3, everyone-2)
+root(ROOT-0, lies-3)
+advmod(how-5, then-4)
+advmod(say-8, how-5)
+aux(say-8, can-6)
+nsubj(say-8, you-7)
+dep(lies-3, say-8)
+complm(truth-14, that-9)
+det(Bible-11, the-10)
+nsubj(truth-14, Bible-11)
+cop(truth-14, is-12)
+amod(truth-14, absolute-13)
+ccomp(say-8, truth-14)
+auxpass(copied-17, being-16)
+prepc_after(truth-14, copied-17)
+prepc_after(truth-14, translated-19)
+conj_and(copied-17, translated-19)
+prep_for(copied-17, thousands-21)
+prep_of(thousands-21, years-23)
+

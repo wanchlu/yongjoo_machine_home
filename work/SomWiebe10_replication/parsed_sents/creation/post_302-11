@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (ADVP (RB Agreed))
+    (, ,)
+    (SBAR (IN though)
+      (S
+        (NP (DT that))
+        (VP (VBZ is)
+          (NP
+            (NP (RB nowhere))
+            (PP (IN near)
+              (NP (DT the) (NN approach)))))))
+    (NP (NNP ID))
+    (VP (VBZ takes)
+      (PP (IN with)
+        (NP (NNP Biology)))
+      (PRN (-LRB- -LRB-)
+        (CC or)
+        (FRAG
+          (ADJP (NN anything))
+          (ADJP (RB else)))
+        (-RRB- -RRB-)))
+    (. .)))
+
+advmod(takes-12, Agreed-2)
+mark(nowhere-7, though-4)
+nsubj(nowhere-7, that-5)
+cop(nowhere-7, is-6)
+dep(takes-12, nowhere-7)
+det(approach-10, the-9)
+prep_near(nowhere-7, approach-10)
+nsubj(takes-12, ID-11)
+root(ROOT-0, takes-12)
+prep_with(takes-12, Biology-14)
+dep(takes-12, or-16)
+dep(or-16, anything-17)
+dep(anything-17, else-18)
+

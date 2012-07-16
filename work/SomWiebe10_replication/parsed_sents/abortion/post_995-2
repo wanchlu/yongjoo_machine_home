@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Perhaps))
+      (NP (DT this) (NN example))
+      (VP (MD will)
+        (VP (VB help)
+          (NP (PRP$ my) (NN point)))))
+    (: :)
+    (S
+      (S
+        (NP (PRP You))
+        (VP (VBP are)
+          (VP (VBG walking)
+            (PP (IN through)
+              (NP (DT a) (NN farm)))
+            (NP (CD one) (NN day)))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP you))
+        (VP (VBP stumble)
+          (PP (IN upon)
+            (NP
+              (NP (DT a) (NN chicken) (NN egg))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ has)
+                    (VP (VBN been)
+                      (VP
+                        (ADVP (RB freshly))
+                        (VBN laid)))))))))))
+    (. .)))
+
+advmod(help-5, Perhaps-1)
+det(example-3, this-2)
+nsubj(help-5, example-3)
+aux(help-5, will-4)
+root(ROOT-0, help-5)
+poss(point-7, my-6)
+dobj(help-5, point-7)
+nsubj(walking-11, You-9)
+aux(walking-11, are-10)
+parataxis(help-5, walking-11)
+det(farm-14, a-13)
+prep_through(walking-11, farm-14)
+num(day-16, one-15)
+tmod(walking-11, day-16)
+nsubj(stumble-20, you-19)
+parataxis(help-5, stumble-20)
+conj_and(walking-11, stumble-20)
+det(egg-24, a-22)
+nn(egg-24, chicken-23)
+prep_upon(stumble-20, egg-24)
+nsubjpass(laid-29, egg-24)
+aux(laid-29, has-26)
+auxpass(laid-29, been-27)
+advmod(laid-29, freshly-28)
+rcmod(egg-24, laid-29)
+

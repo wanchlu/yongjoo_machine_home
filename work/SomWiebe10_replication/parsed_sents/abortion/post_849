@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Well))
+      (VP (VBP think)
+        (PP (IN about)
+          (NP (PRP it)))))
+    (: ...)
+    (S
+      (NP (NNS women))
+      (ADVP (RB already))
+      (VP (VBP have)
+        (NP
+          (NP (NNS abortions))
+          (ADVP (RB whey))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VBP are)
+                (VP (VBN impregnated)
+                  (PP (IN against)
+                    (NP (PRP$ their) (NN will))))))))))
+    (. .)))
+
+nsubj(think-2, Well-1)
+root(ROOT-0, think-2)
+prep_about(think-2, it-4)
+nsubj(have-8, women-6)
+advmod(have-8, already-7)
+parataxis(think-2, have-8)
+dobj(have-8, abortions-9)
+advmod(abortions-9, whey-10)
+nsubjpass(impregnated-13, they-11)
+auxpass(impregnated-13, are-12)
+rcmod(abortions-9, impregnated-13)
+poss(will-16, their-15)
+prep_against(impregnated-13, will-16)
+
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP (DT that))
+    (NP
+      (NP
+        (NP (DT the) (NN point))
+        (: --)
+        (NP (DT that)))
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBD did) (RB n't)
+            (VP (VB intend)
+              (S
+                (VP (TO to)
+                  (VP (VB become)
+                    (ADJP (JJ pregnant))))))))))
+    (. ?)))
+
+cop(point-5, Is-1)
+neg(point-5, n't-2)
+nsubj(point-5, that-3)
+det(point-5, the-4)
+root(ROOT-0, point-5)
+dobj(intend-11, point-5)
+dep(point-5, that-7)
+nsubj(intend-11, they-8)
+xsubj(pregnant-14, they-8)
+aux(intend-11, did-9)
+neg(intend-11, n't-10)
+rcmod(point-5, intend-11)
+aux(pregnant-14, to-12)
+cop(pregnant-14, become-13)
+xcomp(intend-11, pregnant-14)
+

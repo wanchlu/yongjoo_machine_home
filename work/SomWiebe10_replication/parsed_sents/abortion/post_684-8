@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR (IN With)
+      (S
+        (VP (VBZ regards)
+          (PP (TO to)
+            (NP (DT the) (JJ simple) (NNS firsts))))))
+    (, ,)
+    (NP (NNS meiosis))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ first) (NN event))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ gives)
+              (NP (NN rise))
+              (PP (TO to)
+                (NP
+                  (NP (DT a) (JJ unique) (JJ genetic) (NN combination))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (MD will)
+                        (VP (VB become)
+                          (NP
+                            (NP (NN part))
+                            (PP (IN of)
+                              (NP (DT a) (JJ new) (NN person)))))))))))))))
+    (. .)))
+
+mark(regards-2, With-1)
+advcl(event-12, regards-2)
+det(firsts-6, the-4)
+amod(firsts-6, simple-5)
+prep_to(regards-2, firsts-6)
+nsubj(event-12, meiosis-8)
+cop(event-12, is-9)
+det(event-12, the-10)
+amod(event-12, first-11)
+root(ROOT-0, event-12)
+nsubj(gives-14, event-12)
+rcmod(event-12, gives-14)
+dobj(gives-14, rise-15)
+det(combination-20, a-17)
+amod(combination-20, unique-18)
+amod(combination-20, genetic-19)
+prep_to(gives-14, combination-20)
+nsubj(part-24, combination-20)
+aux(part-24, will-22)
+cop(part-24, become-23)
+rcmod(combination-20, part-24)
+det(person-28, a-26)
+amod(person-28, new-27)
+prep_of(part-24, person-28)
+

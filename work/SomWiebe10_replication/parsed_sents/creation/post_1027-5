@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBD were)
+          (S
+            (VP (TO to)
+              (VP (VB roll)
+                (NP
+                  (QP (DT a) (CD billion))
+                  (JJ sided) (NNS dice))))))))
+    (, ,)
+    (S
+      (NP
+        (NP (DT the) (NNS chances))
+        (PP (IN of)
+          (NP
+            (NP (DT any) (CD one) (NN number))
+            (VP (VBG coming)
+              (PRT (RP up))))))
+      (VP (VBP are)
+        (ADJP (RB wildly) (JJ improbable))))
+    (, ,)
+    (ADVP (RB however))
+    (S
+      (NP (CD one) (NN number))
+      (VP (MD will)
+        (VP (VB come)
+          (PRT (RP up)))))
+    (. .)))
+
+mark(were-3, If-1)
+nsubj(were-3, I-2)
+xsubj(roll-5, I-2)
+advcl(improbable-21, were-3)
+aux(roll-5, to-4)
+xcomp(were-3, roll-5)
+quantmod(billion-7, a-6)
+num(dice-9, billion-7)
+amod(dice-9, sided-8)
+dobj(roll-5, dice-9)
+det(chances-12, the-11)
+nsubj(improbable-21, chances-12)
+det(number-16, any-14)
+num(number-16, one-15)
+prep_of(chances-12, number-16)
+partmod(number-16, coming-17)
+prt(coming-17, up-18)
+cop(improbable-21, are-19)
+advmod(improbable-21, wildly-20)
+root(ROOT-0, improbable-21)
+advmod(improbable-21, however-23)
+num(number-25, one-24)
+nsubj(come-27, number-25)
+aux(come-27, will-26)
+ccomp(improbable-21, come-27)
+prt(come-27, up-28)
+

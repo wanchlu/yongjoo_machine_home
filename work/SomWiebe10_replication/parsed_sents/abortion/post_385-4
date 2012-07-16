@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Both) (NN government))
+      (CC and)
+      (NP (JJ religious) (NNS leaders)))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (JJ moral) (NN say))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN matter))
+            (PP (IN of)
+              (NP (NN abortion)))))))
+    (. .)))
+
+det(government-2, Both-1)
+nsubj(have-6, government-2)
+amod(leaders-5, religious-4)
+conj_and(government-2, leaders-5)
+nsubj(have-6, leaders-5)
+root(ROOT-0, have-6)
+det(say-9, no-7)
+amod(say-9, moral-8)
+dobj(have-6, say-9)
+det(matter-12, the-11)
+prep_in(say-9, matter-12)
+prep_of(matter-12, abortion-14)
+
+(ROOT
+  (S
+    (S
+      (NP (DT A) (NN woman))
+      (VP (MD might)
+        (VP (VB want)
+          (S
+            (VP (TO to)
+              (VP (VB consult)
+                (PP (IN with)
+                  (NP
+                    (NP (DT the) (NN father))
+                    (PP (IN of)
+                      (NP (DT the) (NN pregnancy)))))
+                (S
+                  (VP (TO to)
+                    (VP (VB discover)
+                      (NP (PRP$ his) (NNS preferences)))))))))))
+    (CC but)
+    (ADVP (RB ultimately))
+    (S
+      (NP (PRP she))
+      (ADVP (RB alone))
+      (VP (VBZ has)
+        (NP (DT the) (JJ final) (NN choice))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(want-4, woman-2)
+xsubj(consult-6, woman-2)
+aux(want-4, might-3)
+root(ROOT-0, want-4)
+aux(consult-6, to-5)
+xcomp(want-4, consult-6)
+det(father-9, the-8)
+prep_with(consult-6, father-9)
+det(pregnancy-12, the-11)
+prep_of(father-9, pregnancy-12)
+aux(discover-14, to-13)
+xcomp(consult-6, discover-14)
+poss(preferences-16, his-15)
+dobj(discover-14, preferences-16)
+advmod(want-4, ultimately-18)
+conj_but(want-4, ultimately-18)
+nsubj(has-21, she-19)
+advmod(has-21, alone-20)
+ccomp(want-4, has-21)
+conj_but(want-4, has-21)
+det(choice-24, the-22)
+amod(choice-24, final-23)
+dobj(has-21, choice-24)
+

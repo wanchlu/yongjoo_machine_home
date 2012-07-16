@@ -1,0 +1,61 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (NNP Evolution))
+        (CC and)
+        (NP
+          (NP (NNS billions)
+            (CC and)
+            (NNS billions))
+          (PP (IN of)
+            (NP
+              (NP (NNS years))
+              (PP (IN of)
+                (NP (NN hit)
+                  (CC or)
+                  (NN miss)))))))
+      (VP (VBP chance)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP
+                (NP (DT a) (NN finger))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ flexes))))))))))
+    (CC and)
+    (S
+      (NP (NNS contracts))
+      (VP (TO to)
+        (VP (VB pick)
+          (PRT (RP up))
+          (NP (DT a) (NN penny)))))
+    (. .)))
+
+nsubj(chance-13, Evolution-2)
+xsubj(get-15, Evolution-2)
+conj_and(Evolution-2, billions-4)
+nsubj(chance-13, billions-4)
+xsubj(get-15, billions-4)
+conj_and(Evolution-2, billions-6)
+conj_and(billions-4, billions-6)
+prep_of(billions-4, years-8)
+prep_of(years-8, hit-10)
+prep_of(years-8, miss-12)
+conj_or(hit-10, miss-12)
+root(ROOT-0, chance-13)
+aux(get-15, to-14)
+xcomp(chance-13, get-15)
+det(finger-17, a-16)
+dobj(get-15, finger-17)
+nsubj(flexes-19, finger-17)
+rcmod(finger-17, flexes-19)
+nsubj(pick-23, contracts-21)
+aux(pick-23, to-22)
+conj_and(chance-13, pick-23)
+prt(pick-23, up-24)
+det(penny-26, a-25)
+dobj(pick-23, penny-26)
+

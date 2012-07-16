@@ -1,0 +1,29 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (NNS is)
+      (NP (DT the) (NN earth))
+      (NP
+        (NP (DT the) (JJ only) (NN planet))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ sustainable)
+                (PP (IN for)
+                  (NP (NN life) (NNS forms)))))))))
+    (. ?)))
+
+advmod(is-2, Why-1)
+root(ROOT-0, is-2)
+det(earth-4, the-3)
+dep(is-2, earth-4)
+det(planet-7, the-5)
+amod(planet-7, only-6)
+dep(is-2, planet-7)
+nsubj(sustainable-10, planet-7)
+cop(sustainable-10, is-9)
+rcmod(planet-7, sustainable-10)
+nn(forms-13, life-12)
+prep_for(sustainable-10, forms-13)
+

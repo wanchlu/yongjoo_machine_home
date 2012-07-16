@@ -1,0 +1,48 @@
+(ROOT
+  (S ('' '')
+    (PP (IN Genesis)
+      (NP
+        (NP (CD 7:22))
+        (: :) (`` ``)
+        (NP (DT All))
+        (PP (IN in)
+          (SBAR
+            (WHNP (WP$ whose)
+              (NP (JJ nostrils)))
+            (S
+              (VP (VBD was)
+                (NP
+                  (NP (DT the) (NN breath))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN life))
+                      (, ,)
+                      (PP (IN of)
+                        (NP
+                          (NP (DT all))
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VBD was)
+                                (PP (IN in)
+                                  (NP (DT the) (JJ dry) (NN land))))))))
+                      (, ,))))))))))
+    (VP (VBD died))
+    (. .)))
+
+prep_genesis(died-25, 7:22-3)
+dep(7:22-3, All-6)
+poss(nostrils-9, whose-8)
+nsubj(breath-12, nostrils-9)
+cop(breath-12, was-10)
+det(breath-12, the-11)
+prepc_in(7:22-3, breath-12)
+prep_of(breath-12, life-14)
+prep_of(life-14, all-17)
+nsubj(was-19, all-17)
+rcmod(all-17, was-19)
+det(land-23, the-21)
+amod(land-23, dry-22)
+prep_in(was-19, land-23)
+root(ROOT-0, died-25)
+

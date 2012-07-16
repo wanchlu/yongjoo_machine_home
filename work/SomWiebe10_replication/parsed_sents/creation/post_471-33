@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN movie)))
+    (PRN (, ,)
+      (S
+        (NP (NNP ID) (NN proponent) (NNP Jeffrey) (NNP Schwartz))
+        (VP (VBZ concludes)))
+      (, ,))
+    (S
+      (NP
+        (NP (DT The) (NN conflict))
+        (PP (IN over)
+          (NP
+            (NP (DT the) (NNS principles))
+            (PP (IN of)
+              (NP (NN evolution))))))
+      (VP (VBZ has)
+        (VP (VBN become)
+          (NP (DT a) (JJ religious) (NN war)))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB no) (RB longer))
+        (NP
+          (NP (DT a) (NN conflict))
+          (PP (IN over)
+            (NP (NN science))))))
+    (. .)))
+
+det(movie-3, the-2)
+prep_in(war-22, movie-3)
+nn(Schwartz-8, ID-5)
+nn(Schwartz-8, proponent-6)
+nn(Schwartz-8, Jeffrey-7)
+nsubj(concludes-9, Schwartz-8)
+dep(war-22, concludes-9)
+det(conflict-12, The-11)
+nsubj(war-22, conflict-12)
+det(principles-15, the-14)
+prep_over(conflict-12, principles-15)
+prep_of(principles-15, evolution-17)
+aux(war-22, has-18)
+cop(war-22, become-19)
+det(war-22, a-20)
+amod(war-22, religious-21)
+root(ROOT-0, war-22)
+nsubj(conflict-29, it-24)
+cop(conflict-29, is-25)
+advmod(longer-27, no-26)
+advmod(conflict-29, longer-27)
+det(conflict-29, a-28)
+parataxis(war-22, conflict-29)
+prep_over(conflict-29, science-31)
+
+(ROOT
+  (S
+    (SBAR (IN Whether)
+      (S
+        (NP
+          (QP (CC or)
+            (RB not))
+          (DT the) (NN debate))
+        (VP (VBD was)
+          (ADVP (RB ever))
+          (PP
+            (ADVP (RB primarily))
+            (IN over)
+            (NP (NN science))))))
+    (, ,)
+    (NP (DT the) (NN film))
+    (VP (VBZ is)
+      (ADJP (JJ correct)
+        (PP (IN in)
+          (S
+            (VP (VBG identifying)
+              (NP (PRP it))
+              (PP (IN as)
+                (S
+                  (VP (VBG being)
+                    (NP
+                      (NP (DT a) (JJ world-view) (NN conflict))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ is)
+                            (ADJP (RB largely) (JJ religious)
+                              (PP (IN in)
+                                (NP (NN character))))))))))))))))
+    (. .)))
+
+complm(was-6, Whether-1)
+cc(not-3, or-2)
+num(debate-5, not-3)
+det(debate-5, the-4)
+nsubj(was-6, debate-5)
+ccomp(correct-15, was-6)
+advmod(was-6, ever-7)
+advmod(was-6, primarily-8)
+prep_over(was-6, science-10)
+det(film-13, the-12)
+nsubj(correct-15, film-13)
+cop(correct-15, is-14)
+root(ROOT-0, correct-15)
+prepc_in(correct-15, identifying-17)
+dobj(identifying-17, it-18)
+cop(conflict-23, being-20)
+det(conflict-23, a-21)
+amod(conflict-23, world-view-22)
+prepc_as(identifying-17, conflict-23)
+nsubj(religious-27, conflict-23)
+cop(religious-27, is-25)
+advmod(religious-27, largely-26)
+rcmod(conflict-23, religious-27)
+prep_in(religious-27, character-29)
+

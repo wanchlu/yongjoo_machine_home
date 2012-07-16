@@ -1,0 +1,95 @@
+(ROOT
+  (S
+    (SBAR
+      (PRN (-LRB- -LRB-)
+        (PP (IN of)
+          (NP (DT a) (NN fetus)))
+        (-RRB- -RRB-))
+      (S
+        (VP (VBG having)
+          (VP (VBN reached)))
+        (NP
+          (NP (PDT such) (DT a) (NN stage))
+          (PP (IN of)
+            (NP (NN development))))))
+    (PRN
+      (SBAR (IN as)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ capable)
+                (PP (IN of)
+                  (S
+                    (VP (VBG living)))))))))
+      (, ,))
+    (NP (IN outside) (DT the))
+    (VP (VBZ uterus))
+    (. .)))
+
+dep(reached-7, of-2)
+det(fetus-4, a-3)
+pobj(of-2, fetus-4)
+aux(reached-7, having-6)
+dep(uterus-22, reached-7)
+predet(stage-10, such-8)
+det(stage-10, a-9)
+dep(reached-7, stage-10)
+prep_of(stage-10, development-12)
+mark(capable-16, as-13)
+aux(capable-16, to-14)
+cop(capable-16, be-15)
+parataxis(uterus-22, capable-16)
+prepc_of(capable-16, living-18)
+amod(the-21, outside-20)
+nsubj(uterus-22, the-21)
+root(ROOT-0, uterus-22)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNS others))
+        (VP (VBP have)
+          (VP (VBN pointed)
+            (PRT (RP out))))))
+    (, ,)
+    (S
+      (ADVP (RB even))
+      (NP
+        (NP (DT the) (NN sperm))
+        (CC and)
+        (NP (NNS eggs))))
+    (, ,)
+    (VP (VBP are)
+      (ADJP (JJ alive)))
+    (. .)))
+
+mark(pointed-4, As-1)
+nsubj(pointed-4, others-2)
+aux(pointed-4, have-3)
+advcl(alive-14, pointed-4)
+prt(pointed-4, out-5)
+advmod(sperm-9, even-7)
+det(sperm-9, the-8)
+ccomp(alive-14, sperm-9)
+conj_and(sperm-9, eggs-11)
+ccomp(alive-14, eggs-11)
+cop(alive-14, are-13)
+root(ROOT-0, alive-14)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ unused))
+    (VP (VBP die)
+      (PRT (RP off))
+      (PP (IN by)
+        (NP (DT the) (NNS millions))))
+    (. .)))
+
+det(unused-2, The-1)
+nsubj(die-3, unused-2)
+root(ROOT-0, die-3)
+prt(die-3, off-4)
+det(millions-7, the-6)
+prep_by(die-3, millions-7)
+

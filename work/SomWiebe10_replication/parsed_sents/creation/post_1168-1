@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (NN History))
+    (VP (VBZ says)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN bible))
+          (VP (VBD was)
+            (VP (VBN written)
+              (PP (IN by)
+                (NP
+                  (NP (DT a) (JJ few) (NNS profits))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBD claimed)
+                        (S
+                          (VP (TO to)
+                            (VP (VB hear)
+                              (NP
+                                (NP (DT the) (NN voice))
+                                (PP (IN of)
+                                  (NP (NN god)))))))))))))))))
+    (. .)))
+
+nsubj(says-2, History-1)
+root(ROOT-0, says-2)
+complm(written-7, that-3)
+det(bible-5, the-4)
+nsubjpass(written-7, bible-5)
+auxpass(written-7, was-6)
+ccomp(says-2, written-7)
+det(profits-11, a-9)
+amod(profits-11, few-10)
+agent(written-7, profits-11)
+nsubj(claimed-13, profits-11)
+rcmod(profits-11, claimed-13)
+aux(hear-15, to-14)
+xcomp(claimed-13, hear-15)
+det(voice-17, the-16)
+dobj(hear-15, voice-17)
+prep_of(voice-17, god-19)
+

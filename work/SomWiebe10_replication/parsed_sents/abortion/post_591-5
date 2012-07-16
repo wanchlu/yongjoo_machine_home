@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (DT A) (NN fetus))
+    (VP (VBZ has)
+      (NP
+        (NP (DT the) (JJ same) (NN DNA))
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (MD will)
+              (VP (VB have)
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN rest))
+                    (PP (IN of)
+                      (NP (PRP$ its) (NN life)))))))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(has-3, fetus-2)
+root(ROOT-0, has-3)
+det(DNA-6, the-4)
+amod(DNA-6, same-5)
+dobj(has-3, DNA-6)
+dobj(have-9, DNA-6)
+nsubj(have-9, it-7)
+aux(have-9, will-8)
+rcmod(DNA-6, have-9)
+det(rest-12, the-11)
+prep_for(have-9, rest-12)
+poss(life-15, its-14)
+prep_of(rest-12, life-15)
+

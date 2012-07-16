@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Fish))
+      (PP (IN with)
+        (NP
+          (NP (NNS fins)
+            (CC and)
+            (NNS scales))
+          (, ,)
+          (NP
+            (NP (NNS birds))
+            (PP (IN with)
+              (NP
+                (NP (NNS feathers))
+                (, ,)
+                (NP (NNS beaks))
+                (, ,)
+                (CC and)
+                (NP (NNS wings))
+                (, ,) (FW etc))))))
+      ('' ''))
+    (VP (VBP Hold)
+      (PRT (RP on)))
+    (: ...)))
+
+nsubj(Hold-18, Fish-1)
+prep_with(Fish-1, fins-3)
+prep_with(Fish-1, scales-5)
+conj_and(fins-3, scales-5)
+appos(fins-3, birds-7)
+prep_with(birds-7, feathers-9)
+prep_with(birds-7, beaks-11)
+conj_and(feathers-9, beaks-11)
+prep_with(birds-7, wings-14)
+conj_and(feathers-9, wings-14)
+nn(feathers-9, wings-14)
+dep(feathers-9, etc-16)
+root(ROOT-0, Hold-18)
+prt(Hold-18, on-19)
+

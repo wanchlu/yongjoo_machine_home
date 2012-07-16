@@ -1,0 +1,34 @@
+(ROOT
+  (NP (NNP .) (NNP -RRB-)))
+
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP (NNP Placing))
+      (SBAR
+        (S
+          (NP (DT a) (NN cradle) (NN child) (NN seat))
+          (VP (VBZ 's)
+            (PP (IN in)
+              (NP (NN front)))
+            (PP (IN during)
+              (NP (NN inflation)))))))
+    (VP (MD could)
+      (VP (VB cause)
+        (NP (JJ serious) (NN injury))))
+    (: ...)))
+
+nsubj(cause-13, Placing-2)
+det(seat-6, a-3)
+nn(seat-6, cradle-4)
+nn(seat-6, child-5)
+nsubj('s-7, seat-6)
+rcmod(Placing-2, 's-7)
+prep_in('s-7, front-9)
+prep_during('s-7, inflation-11)
+aux(cause-13, could-12)
+root(ROOT-0, cause-13)
+amod(injury-15, serious-14)
+dobj(cause-13, injury-15)
+

@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (JJ flawed) (NN logic)))
+    (. .)))
+
+nsubj(logic-4, This-1)
+cop(logic-4, is-2)
+amod(logic-4, flawed-3)
+root(ROOT-0, logic-4)
+
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (PRP$ your) (NN logic)))
+    (NP (NN nothing))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ illegal))
+        (SBAR (IN because)
+          (S
+            (NP (NNS people))
+            (VP (VBP do)
+              (NP (PRP it))
+              (ADVP (RB anyway)))))))
+    (. .)))
+
+poss(logic-3, your-2)
+prep_by(illegal-7, logic-3)
+nsubj(illegal-7, nothing-4)
+aux(illegal-7, should-5)
+cop(illegal-7, be-6)
+root(ROOT-0, illegal-7)
+mark(do-10, because-8)
+nsubj(do-10, people-9)
+advcl(illegal-7, do-10)
+dobj(do-10, it-11)
+advmod(do-10, anyway-12)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (S
+      (S
+        (VP (VB make)
+          (S
+            (NP (NN cocain))
+            (ADJP (JJ illegal)))))
+      (, ,)
+      (NP (NNS people))
+      (VP (VBP do)
+        (NP (PRP it))
+        (ADVP (RB anyway))))
+    (. ?)))
+
+advmod(do-7, Why-1)
+ccomp(do-7, make-2)
+nsubj(illegal-4, cocain-3)
+xcomp(make-2, illegal-4)
+nsubj(do-7, people-6)
+root(ROOT-0, do-7)
+dobj(do-7, it-8)
+advmod(do-7, anyway-9)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB argue)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NN law))
+              (PRN (-LRB- -LRB-)
+                (NP
+                  (QP (RB double) (CD homicide)))
+                (-RRB- -RRB-)))
+            (VP (VBD came)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (PP (RB because) (IN of)
+                      (NP (DT the) (NN contradiction)))))))))))
+    (. .)))
+
+prep_in(argue-5, fact-2)
+nsubj(argue-5, I-3)
+aux(argue-5, would-4)
+root(ROOT-0, argue-5)
+complm(came-13, that-6)
+det(law-8, the-7)
+nsubj(came-13, law-8)
+xsubj(be-15, law-8)
+quantmod(homicide-11, double-10)
+dep(law-8, homicide-11)
+ccomp(argue-5, came-13)
+aux(be-15, to-14)
+xcomp(came-13, be-15)
+det(contradiction-19, the-18)
+prep_because_of(be-15, contradiction-19)
+

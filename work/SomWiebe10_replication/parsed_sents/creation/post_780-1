@@ -1,0 +1,79 @@
+(ROOT
+  (S ('' '')
+    (NP (WP What))
+    (VP (VBZ is)
+      (NP (PRP it))
+      (PP (IN with)
+        (NP
+          (NP (NNS people))
+          (PP (IN like)
+            (NP (PRP you))))))
+    (. ?)))
+
+nsubj(it-4, What-2)
+cop(it-4, is-3)
+root(ROOT-0, it-4)
+prep_with(it-4, people-6)
+prep_like(people-6, you-8)
+
+(ROOT
+  (SQ (VBD was)
+    (NP
+      (NP (DT the) (JJ bible) (DT the) (JJ first) (NN book))
+      (SBAR
+        (S
+          (S
+            (NP (PRP you))
+            (VP (VBD read)))
+          (CC and)
+          (S
+            (ADVP (RB then))
+            (NP (PRP you))
+            (VP (VBD quit))))))
+    (VP (VBG reading)
+      (S
+        (NP (NN anything))
+        (ADJP (RB else))))
+    (. ?)))
+
+aux(reading-13, was-1)
+det(book-6, the-2)
+amod(book-6, bible-3)
+det(book-6, the-4)
+amod(book-6, first-5)
+nsubj(reading-13, book-6)
+nsubj(read-8, you-7)
+rcmod(book-6, read-8)
+advmod(quit-12, then-10)
+nsubj(quit-12, you-11)
+rcmod(book-6, quit-12)
+conj_and(read-8, quit-12)
+root(ROOT-0, reading-13)
+nsubj(else-15, anything-14)
+xcomp(reading-13, else-15)
+
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB defend)
+      (NP (PRP$ your) (NN position) (NN WITHOUT) (NN reference))
+      (PP (TO to)
+        (NP (DT the) (NN bible))))
+    (. ?)))
+
+aux(defend-3, Can-1)
+nsubj(defend-3, you-2)
+root(ROOT-0, defend-3)
+poss(reference-7, your-4)
+nn(reference-7, position-5)
+nn(reference-7, WITHOUT-6)
+dobj(defend-3, reference-7)
+det(bible-10, the-9)
+prep_to(defend-3, bible-10)
+
+(ROOT
+  (FRAG (`` ``)
+    (INTJ (UH 2))
+    (. .)))
+
+

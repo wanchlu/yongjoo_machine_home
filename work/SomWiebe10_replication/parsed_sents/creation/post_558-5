@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB never))
+        (VP (VBN made)
+          (NP (DT a) (JJ falsifiable) (NN prediction))
+          (PP (IN about)
+            (NP
+              (NP (NN biology))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ has)
+                    (VP (VBN been)
+                      (VP (VBN borne)
+                        (PRT (RP out))
+                        (ADVP (RB experimentally)))))))))))
+      (CC and)
+      (VP (VBZ has)
+        (ADVP (RB never))
+        (VP (VBN shown)
+          (NP (DT any) (JJ scientific) (NN use)))))
+    (. .)))
+
+nsubj(made-4, ID-1)
+nsubj(shown-19, ID-1)
+aux(made-4, has-2)
+neg(made-4, never-3)
+root(ROOT-0, made-4)
+det(prediction-7, a-5)
+amod(prediction-7, falsifiable-6)
+dobj(made-4, prediction-7)
+prep_about(made-4, biology-9)
+nsubjpass(borne-13, biology-9)
+aux(borne-13, has-11)
+auxpass(borne-13, been-12)
+rcmod(biology-9, borne-13)
+prt(borne-13, out-14)
+advmod(borne-13, experimentally-15)
+aux(shown-19, has-17)
+neg(shown-19, never-18)
+conj_and(made-4, shown-19)
+det(use-22, any-20)
+amod(use-22, scientific-21)
+dobj(shown-19, use-22)
+

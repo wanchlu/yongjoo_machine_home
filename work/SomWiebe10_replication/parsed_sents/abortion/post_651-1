@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (INTJ (JJ Good) (NN luck))
+    (VP (VB finding)
+      (NP
+        (NP (DT a) (JJ modern) (NN book))
+        (PP (IN on)
+          (NP (NN embryology)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ states)
+              (SBAR (IN that)
+                (S
+                  (NP (DT a) (JJ human) (NN life))
+                  (VP (VBZ is) (RB not)
+                    (VP (VBN created)
+                      (PP (IN at)
+                        (NP (NN conception))))))))))))
+    (. .)))
+
+dep(finding-3, Good-1)
+dep(Good-1, luck-2)
+root(ROOT-0, finding-3)
+det(book-6, a-4)
+amod(book-6, modern-5)
+dobj(finding-3, book-6)
+nsubj(states-10, book-6)
+prep_on(book-6, embryology-8)
+rcmod(book-6, states-10)
+complm(created-17, that-11)
+det(life-14, a-12)
+amod(life-14, human-13)
+nsubjpass(created-17, life-14)
+auxpass(created-17, is-15)
+neg(created-17, not-16)
+ccomp(states-10, created-17)
+prep_at(created-17, conception-19)
+

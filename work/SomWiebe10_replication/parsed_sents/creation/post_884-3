@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Some)
+        (ADJP (RB fairly) (JJ accessable))
+        (NNS books))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (MD can)
+            (VP (VB recommend))))))
+    (VP (VBP are) (: ;)
+      (NP
+        (NP
+          (NP (NNP Cross))
+          (, ,)
+          (NP (NNP Frank) (NNP Moore1973) (NNP Canaanite) (NNP Myth))
+          (CC and)
+          (NP (NNP Hebrew) (NNP Epic)))
+        (: :)
+        (NP
+          (NP (NNP Essays))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN History))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNP Religion))
+                  (PP (IN of)
+                    (NP (NNP Israel))))))))))
+    (. .)))
+
+det(books-4, Some-1)
+advmod(accessable-3, fairly-2)
+amod(books-4, accessable-3)
+dobj(recommend-7, books-4)
+nsubj(Cross-10, books-4)
+nsubj(recommend-7, I-5)
+aux(recommend-7, can-6)
+rcmod(books-4, recommend-7)
+cop(Cross-10, are-8)
+root(ROOT-0, Cross-10)
+nn(Myth-15, Frank-12)
+nn(Myth-15, Moore1973-13)
+nn(Myth-15, Canaanite-14)
+conj_and(Cross-10, Myth-15)
+nn(Epic-18, Hebrew-17)
+conj_and(Cross-10, Epic-18)
+dep(Cross-10, Essays-20)
+det(History-23, the-22)
+prep_in(Essays-20, History-23)
+det(Religion-26, the-25)
+prep_of(History-23, Religion-26)
+prep_of(Religion-26, Israel-28)
+

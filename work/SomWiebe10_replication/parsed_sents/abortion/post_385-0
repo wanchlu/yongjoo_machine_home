@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (NNS Abortions))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ legal))))
+    (. .)))
+
+nsubj(legal-4, Abortions-1)
+aux(legal-4, should-2)
+cop(legal-4, be-3)
+root(ROOT-0, legal-4)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB make)
+          (S
+            (NP (NN abortion))
+            (ADJP (JJ illegal))))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB deny)
+            (NP
+              (NP (DT a) (NN woman) (POS 's))
+              (JJ individual) (NNS rights))))))
+    (. .)))
+
+aux(make-2, To-1)
+csubj(is-5, make-2)
+nsubj(illegal-4, abortion-3)
+xcomp(make-2, illegal-4)
+root(ROOT-0, is-5)
+aux(deny-7, to-6)
+xcomp(is-5, deny-7)
+det(woman-9, a-8)
+poss(rights-12, woman-9)
+amod(rights-12, individual-11)
+dobj(deny-7, rights-12)
+

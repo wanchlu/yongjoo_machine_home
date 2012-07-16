@@ -1,0 +1,35 @@
+(ROOT
+  (S (CC So)
+    (S
+      (NP (NNP ID))
+      (VP (VBZ is)
+        (PP (IN about)
+          (NP (NN complexity)
+            (CC and)
+            (NN function)))))
+    (CC but)
+    (S
+      (NP (DT that))
+      (ADVP (RB merely))
+      (VP (VBZ describes)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP I))
+            (VP (VBD outlined)
+              (ADVP (RB already)))))))
+    (. .)))
+
+nsubj(is-3, ID-2)
+root(ROOT-0, is-3)
+prep_about(is-3, complexity-5)
+prep_about(is-3, function-7)
+conj_and(complexity-5, function-7)
+nsubj(describes-11, that-9)
+advmod(describes-11, merely-10)
+conj_but(is-3, describes-11)
+dobj(outlined-14, what-12)
+nsubj(outlined-14, I-13)
+ccomp(describes-11, outlined-14)
+advmod(outlined-14, already-15)
+

@@ -1,0 +1,48 @@
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WP What))
+      (PP (IN if)
+        (NP
+          (NP (DT the) (NN woman))
+          (PP (IN in)
+            (NP (NN question))))))
+    (SQ (VBD was)
+      (NP
+        (NP (DT a) (NN victim))
+        (PP (IN of)
+          (NP (NN rape)
+            (CC or)
+            (NN incest)))))
+    (. ?)))
+
+attr(was-7, What-1)
+det(woman-4, the-3)
+prep_if(What-1, woman-4)
+prep_in(woman-4, question-6)
+root(ROOT-0, was-7)
+det(victim-9, a-8)
+nsubj(was-7, victim-9)
+prep_of(victim-9, rape-11)
+prep_of(victim-9, incest-13)
+conj_or(rape-11, incest-13)
+
+(ROOT
+  (SQ (NNP Should)
+    (NP (PRP they))
+    (VP (VB have)
+      (S
+        (VP (TO to)
+          (VP (VB go)
+            (PP (IN through)
+              (NP (DT that)))))))
+    (. ?)))
+
+dep(have-3, Should-1)
+nsubj(have-3, they-2)
+xsubj(go-5, they-2)
+root(ROOT-0, have-3)
+aux(go-5, to-4)
+xcomp(have-3, go-5)
+prep_through(go-5, that-7)
+

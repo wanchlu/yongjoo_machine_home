@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (VBP talk)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN issue))
+            (PP (IN of)
+              (NP (NN abortion))))))
+      (CC and)
+      (VP
+        (ADVP (RB then))
+        (VBP ask)
+        (NP
+          (NP (DT a) (JJ nonsensical) (NN question))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ needs)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN interpreted)
+                        (PP (IN in)
+                          (NP (DT a) (NN context)))
+                        (SBAR (IN before)
+                          (S
+                            (NP (PRP it))
+                            (VP (MD can)
+                              (VP (VB be)
+                                (VP (VBN answered))))))))))))))))
+    (. .)))
+
+nsubj(talk-2, They-1)
+nsubj(ask-10, They-1)
+root(ROOT-0, talk-2)
+det(issue-5, the-4)
+prep_about(talk-2, issue-5)
+prep_of(issue-5, abortion-7)
+advmod(ask-10, then-9)
+conj_and(talk-2, ask-10)
+det(question-13, a-11)
+amod(question-13, nonsensical-12)
+dobj(ask-10, question-13)
+nsubj(needs-16, question-13)
+rcmod(question-13, needs-16)
+aux(interpreted-19, to-17)
+auxpass(interpreted-19, be-18)
+xcomp(needs-16, interpreted-19)
+det(context-22, a-21)
+prep_in(interpreted-19, context-22)
+mark(answered-27, before-23)
+nsubjpass(answered-27, it-24)
+aux(answered-27, can-25)
+auxpass(answered-27, be-26)
+advcl(interpreted-19, answered-27)
+

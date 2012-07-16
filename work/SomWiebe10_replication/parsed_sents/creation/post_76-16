@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NN History))
+    (VP (VBZ has)
+      (VP (VBN shown)
+        (S
+          (NP (PRP us))
+          (NP
+            (NP (RB plenty))
+            (PP (IN of)
+              (NP (NNS examples)))))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (`` ``) (NN design) ('' ''))
+            (VP (VBD was)
+              (VP (VBN falsified) (, ,)
+                (SBAR (RB even)
+                  (S
+                    (NP (NNP Newton))
+                    (VP (VBD flunked)
+                      (ADVP (RB here)))))))))))
+    (. .)))
+
+nsubj(shown-3, History-1)
+aux(shown-3, has-2)
+root(ROOT-0, shown-3)
+nsubj(plenty-5, us-4)
+xcomp(shown-3, plenty-5)
+prep_of(plenty-5, examples-7)
+advmod(falsified-13, where-8)
+nsubjpass(falsified-13, design-10)
+auxpass(falsified-13, was-12)
+advcl(shown-3, falsified-13)
+advmod(flunked-17, even-15)
+nsubj(flunked-17, Newton-16)
+ccomp(falsified-13, flunked-17)
+advmod(flunked-17, here-18)
+

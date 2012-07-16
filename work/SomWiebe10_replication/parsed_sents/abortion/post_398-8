@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBD were))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD would) (RB not)
+      (VP (VB say)
+        (S
+          (NP (NNS things))
+          (VP (VB like) (, ,)
+            (S (`` ``)
+              (NP (PRP$ your) (NN statement))
+              (: ...)
+              (VP (VBZ is) (: ...)
+                (NP
+                  (NP (NNP devoid))
+                  (PP (IN of)
+                    (NP (DT any) (JJ religious) (NNS teachings))))))))))
+    (. .)))
+
+mark(were-3, If-1)
+nsubj(were-3, they-2)
+advcl(say-8, were-3)
+nsubj(say-8, they-5)
+aux(say-8, would-6)
+neg(say-8, not-7)
+root(ROOT-0, say-8)
+nsubj(like-10, things-9)
+ccomp(say-8, like-10)
+poss(statement-14, your-13)
+nsubj(devoid-18, statement-14)
+cop(devoid-18, is-16)
+ccomp(like-10, devoid-18)
+det(teachings-22, any-20)
+amod(teachings-22, religious-21)
+prep_of(devoid-18, teachings-22)
+

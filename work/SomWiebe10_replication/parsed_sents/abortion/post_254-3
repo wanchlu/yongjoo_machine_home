@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP deny)
+          (NP (DT this)))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP you))
+    (VP (MD can) (RB not)
+      (VP (VB claim)
+        (NP (DT a) (NN right)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB eat)
+                  (NP (NN meat)))
+                (CC and)
+                (VP (VB wear)
+                  (NP (NN leather)))))))))
+    (. .)))
+
+mark(deny-3, If-1)
+nsubj(deny-3, you-2)
+advcl(claim-10, deny-3)
+dobj(deny-3, this-4)
+advmod(claim-10, then-6)
+nsubj(claim-10, you-7)
+aux(claim-10, can-8)
+neg(claim-10, not-9)
+root(ROOT-0, claim-10)
+det(right-12, a-11)
+dobj(claim-10, right-12)
+aux(eat-14, to-13)
+infmod(right-12, eat-14)
+dobj(eat-14, meat-15)
+infmod(right-12, wear-17)
+conj_and(eat-14, wear-17)
+dobj(wear-17, leather-18)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (SQ
+    (VP
+      (VP (VB Look)
+        (PP (IN at)
+          (NP (DT the) (NNS emails)))
+        (SBAR
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD were)
+                (VP (VBN provided)))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBN led)
+                (PP (TO to)
+                  (NP (DT the) (NNS conclusions))))))))
+      (CC and)
+      (VP (VB see)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (ADJP (JJ willing)
+                (S
+                  (VP (TO to)
+                    (VP (VB defend)
+                      (NP
+                        (NP (DT any) (NN one))
+                        (PP (IN of)
+                          (NP (PRP them)))))))))))))
+    (. ?)))
+
+root(ROOT-0, Look-1)
+det(emails-4, the-3)
+prep_at(Look-1, emails-4)
+nsubjpass(provided-7, that-5)
+auxpass(provided-7, were-6)
+dep(Look-1, provided-7)
+nsubj(led-10, which-9)
+dep(Look-1, led-10)
+conj_and(provided-7, led-10)
+det(conclusions-13, the-12)
+prep_to(led-10, conclusions-13)
+conj_and(Look-1, see-15)
+mark(willing-19, if-16)
+nsubj(willing-19, you-17)
+cop(willing-19, are-18)
+advcl(see-15, willing-19)
+aux(defend-21, to-20)
+xcomp(willing-19, defend-21)
+det(one-23, any-22)
+dobj(defend-21, one-23)
+prep_of(one-23, them-25)
+

@@ -1,0 +1,27 @@
+(ROOT
+  (S ('' '')
+    (NP (WP What) (NN experiment))
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN performed)
+          (S
+            (VP (TO to)
+              (VP (VB show)
+                (NP
+                  (NP (DT the) (NN action))
+                  (PP (IN of)
+                    (NP (DT a) (NN designer))))))))))
+    (. ?)))
+
+dep(experiment-3, What-2)
+nsubjpass(performed-6, experiment-3)
+aux(performed-6, could-4)
+auxpass(performed-6, be-5)
+root(ROOT-0, performed-6)
+aux(show-8, to-7)
+xcomp(performed-6, show-8)
+det(action-10, the-9)
+dobj(show-8, action-10)
+det(designer-13, a-12)
+prep_of(action-10, designer-13)
+

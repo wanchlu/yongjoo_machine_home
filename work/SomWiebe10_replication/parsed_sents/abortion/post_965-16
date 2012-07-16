@@ -1,0 +1,35 @@
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB why))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NNS doctors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP perform)
+              (SBAR
+                (S
+                  (NP (NNS abortions))
+                  (RB not)
+                  (VP (VBD called)
+                    (NP (NNS criminals)
+                      (CC or)
+                      (NN mass) (NNS murderers))))))))))
+    (. ?)))
+
+cc(are-3, But-1)
+advmod(are-3, why-2)
+root(ROOT-0, are-3)
+det(doctors-5, the-4)
+nsubj(are-3, doctors-5)
+nsubj(perform-7, doctors-5)
+rcmod(doctors-5, perform-7)
+nsubj(called-10, abortions-8)
+neg(called-10, not-9)
+ccomp(perform-7, called-10)
+dobj(called-10, criminals-11)
+nn(murderers-14, mass-13)
+dobj(called-10, murderers-14)
+conj_or(criminals-11, murderers-14)
+

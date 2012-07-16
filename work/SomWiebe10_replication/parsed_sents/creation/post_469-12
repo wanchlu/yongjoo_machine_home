@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Genie))
+    (ADVP (RB repeatedly))
+    (VP (VBZ tells)
+      (S
+        (NP (PRP them))
+        (VP (TO to)
+          (VP
+            (VP (VB focus)
+              (ADVP (RB solely))
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NNS questions))
+                  (PP (IN of)
+                    (NP (NN impropriety))))))
+            (CC and)
+            (VP (VB see)
+              (SBAR (IN whether)
+                (S
+                  (NP (PRP they))
+                  (VP (MD can)
+                    (VP (VB be)
+                      (VP (VBN proven)))))))))))
+    (. .)))
+
+nsubj(tells-3, Genie-1)
+advmod(tells-3, repeatedly-2)
+root(ROOT-0, tells-3)
+nsubj(focus-6, them-4)
+nsubj(see-14, them-4)
+aux(focus-6, to-5)
+xcomp(tells-3, focus-6)
+advmod(focus-6, solely-7)
+det(questions-10, the-9)
+prep_on(focus-6, questions-10)
+prep_of(questions-10, impropriety-12)
+xcomp(tells-3, see-14)
+conj_and(focus-6, see-14)
+complm(proven-19, whether-15)
+nsubjpass(proven-19, they-16)
+aux(proven-19, can-17)
+auxpass(proven-19, be-18)
+ccomp(see-14, proven-19)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (ADJP (JJ sad))
+        (, ,)
+        (INTJ (UH yes))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's) (RB not)
+        (NP (PRP$ our) (NN responsibility)
+          (S
+            (VP (TO to)
+              (VP (VB decide)
+                (NP
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ has)
+                        (S
+                          (VP (TO to)
+                            (VP (VB have)
+                              (NP (NNS children))))))))
+                  (CC and)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ does) (RB n't)))))))))))
+    (. .)))
+
+nsubj(sad-3, It-1)
+cop(sad-3, 's-2)
+root(ROOT-0, sad-3)
+dep(sad-3, yes-5)
+nsubj(responsibility-12, it-8)
+cop(responsibility-12, 's-9)
+neg(responsibility-12, not-10)
+poss(responsibility-12, our-11)
+conj_but(sad-3, responsibility-12)
+aux(decide-14, to-13)
+infmod(responsibility-12, decide-14)
+nsubj(has-16, who-15)
+dobj(decide-14, has-16)
+aux(have-18, to-17)
+xcomp(has-16, have-18)
+dobj(have-18, children-19)
+nsubj(does-22, who-21)
+dobj(decide-14, does-22)
+conj_and(has-16, does-22)
+neg(does-22, n't-23)
+

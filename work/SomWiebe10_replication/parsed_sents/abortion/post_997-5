@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (DT Every) (NN sperm))
+    (VP (VBZ is)
+      (ADJP (JJ great)))
+    (. !)))
+
+det(sperm-2, Every-1)
+nsubj(great-4, sperm-2)
+cop(great-4, is-3)
+root(ROOT-0, great-4)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN sperm))
+        (VP (VBZ is)
+          (VP (VBN wasted)))))
+    (, ,)
+    (NP (NNP God))
+    (VP (VBZ gets)
+      (ADJP (RB quite) (JJ irate)))
+    (. !)))
+
+mark(wasted-5, If-1)
+det(sperm-3, a-2)
+nsubjpass(wasted-5, sperm-3)
+auxpass(wasted-5, is-4)
+advcl(irate-10, wasted-5)
+nsubj(irate-10, God-7)
+dep(irate-10, gets-8)
+advmod(irate-10, quite-9)
+root(ROOT-0, irate-10)
+

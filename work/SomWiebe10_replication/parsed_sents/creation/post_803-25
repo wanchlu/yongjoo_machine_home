@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN story))
+      (PP (IN of)
+        (NP
+          (NP (NN creation))
+          (, ,)
+          (NP (NN man) (NN inparticular)))))
+    (VP (VBZ is)
+      (ADVP (RBS best))
+      (VP (VBN read)
+        (S
+          (ADJP (RB as) (JJ insight)
+            (SBAR
+              (S
+                (NP (DT the) (NNS authors))
+                (VP (VBD found))))))
+        (, ,)
+        (FRAG
+          (NP (NN divine))
+          (CC or)
+          (RB not))))
+    (. .)))
+
+det(story-2, The-1)
+nsubjpass(read-10, story-2)
+prep_of(story-2, creation-4)
+nn(inparticular-7, man-6)
+appos(creation-4, inparticular-7)
+auxpass(read-10, is-8)
+advmod(read-10, best-9)
+root(ROOT-0, read-10)
+advmod(insight-12, as-11)
+acomp(read-10, insight-12)
+det(authors-14, the-13)
+nsubj(found-15, authors-14)
+dep(insight-12, found-15)
+dep(read-10, divine-17)
+dep(divine-17, or-18)
+neg(divine-17, not-19)
+

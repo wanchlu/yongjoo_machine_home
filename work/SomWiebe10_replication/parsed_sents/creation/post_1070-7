@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS people))
+        (VP (VBP trust)
+          (NP (NNP Bible))
+          (ADVP
+            (ADVP (RB blindly) (RB then))
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (VP (VBP do)
+                  (S
+                    (NP (PRP they))
+                    (RB not)
+                    (VP (VB believe)
+                      (NP
+                        (NP (DT each))
+                        (CC and)
+                        (NP (DT every) (NN theory))))))))))))
+    (VP (VBD said)
+      (PP (IN by)
+        (NP (NNP Bible))))
+    (. ?)))
+
+mark(trust-3, If-1)
+nsubj(trust-3, people-2)
+csubj(said-16, trust-3)
+dobj(trust-3, Bible-4)
+advmod(then-6, blindly-5)
+advmod(trust-3, then-6)
+advmod(do-8, why-7)
+dep(then-6, do-8)
+nsubj(believe-11, they-9)
+neg(believe-11, not-10)
+ccomp(do-8, believe-11)
+dobj(believe-11, each-12)
+det(theory-15, every-14)
+dobj(believe-11, theory-15)
+conj_and(each-12, theory-15)
+root(ROOT-0, said-16)
+prep_by(said-16, Bible-18)
+

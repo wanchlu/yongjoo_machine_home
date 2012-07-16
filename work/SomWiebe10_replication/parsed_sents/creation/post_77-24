@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Earth) (POS 's))
+      (NN geology))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN explained)
+          (PP (IN by)
+            (NP
+              (NP (JJ catastrophic) (NNS events))
+              (, ,) (RB primarily)
+              (NP (DT a) (JJ worldwide) (NN flood)))))))
+    (. .)))
+
+poss(geology-3, Earth-1)
+nsubjpass(explained-6, geology-3)
+aux(explained-6, can-4)
+auxpass(explained-6, be-5)
+root(ROOT-0, explained-6)
+amod(events-9, catastrophic-8)
+agent(explained-6, events-9)
+advmod(events-9, primarily-11)
+det(flood-14, a-12)
+amod(flood-14, worldwide-13)
+dep(events-9, flood-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Mutations))
+      (CC and)
+      (NP (JJ natural) (NN selection)))
+    (VP (MD can) (RB not)
+      (VP (VB bring)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN development))
+            (PP (IN of)
+              (NP
+                (NP (DT all) (VBG living) (NNS things))
+                (PP (IN from)
+                  (NP (DT a) (JJ single) (NN organism)))))))))
+    (. .)))
+
+nsubj(bring-7, Mutations-1)
+amod(selection-4, natural-3)
+conj_and(Mutations-1, selection-4)
+nsubj(bring-7, selection-4)
+aux(bring-7, can-5)
+neg(bring-7, not-6)
+root(ROOT-0, bring-7)
+det(development-10, the-9)
+prep_about(bring-7, development-10)
+det(things-14, all-12)
+amod(things-14, living-13)
+prep_of(development-10, things-14)
+det(organism-18, a-16)
+amod(organism-18, single-17)
+prep_from(things-14, organism-18)
+

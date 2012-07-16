@@ -1,0 +1,46 @@
+(ROOT
+  (FRAG (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (PRP they))
+        (VP (VBP do)
+          (S
+            (VP (VB have)
+              (NP
+                (NP (NNS rights))
+                (, ,)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ is)
+                      (NP
+                        (NP (DT the) (NN basis))
+                        (PP (IN for)
+                          (NP (DT those) (NNS rights)))))))
+                (, ,))
+              (SBAR (IN since)
+                (S
+                  (NP (DT the) (NNS aliens))
+                  (VP (VBP are) (RB not)
+                    (ADJP (`` ``) (JJ persons))))))))))
+    (. ?)))
+
+dep(do-4, And-1)
+mark(do-4, if-2)
+nsubj(do-4, they-3)
+root(ROOT-0, do-4)
+ccomp(do-4, have-5)
+dobj(have-5, rights-6)
+nsubj(basis-11, rights-6)
+cop(basis-11, is-9)
+det(basis-11, the-10)
+rcmod(rights-6, basis-11)
+det(rights-14, those-13)
+prep_for(basis-11, rights-14)
+mark(persons-22, since-16)
+det(aliens-18, the-17)
+nsubj(persons-22, aliens-18)
+cop(persons-22, are-19)
+neg(persons-22, not-20)
+advcl(have-5, persons-22)
+

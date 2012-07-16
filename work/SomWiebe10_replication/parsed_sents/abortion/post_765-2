@@ -1,0 +1,74 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR
+        (WHADVP (WRB How))
+        (S
+          (VP (VBP do))))
+      (NP (PRP you))
+      (VP (VBP know)))
+    (PRN
+      (NP (PRP it))
+      (VP (VBZ does)))
+    (S
+      (NP (RB n't))
+      (VP (VB effect)
+        (NP (PRP me))))
+    (. ?)))
+
+advmod(do-3, How-2)
+dep(know-5, do-3)
+nsubj(know-5, you-4)
+root(ROOT-0, know-5)
+nsubj(does-7, it-6)
+dep(know-5, does-7)
+nsubj(effect-9, n't-8)
+ccomp(know-5, effect-9)
+dobj(effect-9, me-10)
+
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP
+      (NP (DT the) (NN thought))
+      (PP (IN of)
+        (NP
+          (NP (DT an) (JJ Innocent) (NN baby))
+          (VP (VBG dying)))))
+    (VP (VBZ affects)
+      (NP (PRP me))
+      (, ,)
+      (ADVP (RB maybe))
+      (SBAR (IN that)
+        (S
+          (NP (NN baby))
+          (VP (MD would)
+            (VP (VB have)
+              (VP (VBN made)
+                (NP
+                  (NP (DT a) (JJ big) (NN difference))
+                  (PP (IN in)
+                    (NP (DT the) (NN world))))))))))
+    (. .)))
+
+advmod(affects-9, Maybe-1)
+det(thought-3, the-2)
+nsubj(affects-9, thought-3)
+det(baby-7, an-5)
+amod(baby-7, Innocent-6)
+prep_of(thought-3, baby-7)
+partmod(baby-7, dying-8)
+root(ROOT-0, affects-9)
+dobj(affects-9, me-10)
+advmod(affects-9, maybe-12)
+complm(made-17, that-13)
+nsubj(made-17, baby-14)
+aux(made-17, would-15)
+aux(made-17, have-16)
+ccomp(affects-9, made-17)
+det(difference-20, a-18)
+amod(difference-20, big-19)
+dobj(made-17, difference-20)
+det(world-23, the-22)
+prep_in(difference-20, world-23)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Fox) (NN news) (NNS polls))
+      (ADVP (RB usually))
+      (VP (VBP come)
+        (PRT (RP out))
+        (S
+          (VP (VBG leaning)
+            (ADJP (JJ conservative))))))
+    (, ,)
+    (NP (NNP MSNBC) (NNS polls))
+    (VP (VBP come)
+      (PP (IN out)
+        (S
+          (VP (VBG leaning)
+            (NP (JJ liberal) (NN surprise)))))
+      (, ,)
+      (S
+        (VP (VB surprise) (: ...)
+          (ADVP (RB not)))))
+    (. !)))
+
+nn(polls-3, Fox-1)
+nn(polls-3, news-2)
+nsubj(come-5, polls-3)
+advmod(come-5, usually-4)
+ccomp(come-12, come-5)
+prt(come-5, out-6)
+xcomp(come-5, leaning-7)
+acomp(leaning-7, conservative-8)
+nn(polls-11, MSNBC-10)
+nsubj(come-12, polls-11)
+root(ROOT-0, come-12)
+prepc_out(come-12, leaning-14)
+amod(surprise-16, liberal-15)
+dobj(leaning-14, surprise-16)
+ccomp(come-12, surprise-18)
+neg(surprise-18, not-20)
+

@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (VBZ 's)
+            (ADVP (RB never))
+            (VP (VBN seen)
+              (S
+                (NP (DT an) (NN ape))
+                (VP (VB evolve)
+                  (PP (IN into)
+                    (NP (DT a) (NN human))))))))))
+    (. .)))
+
+nsubj(said-2, She-1)
+root(ROOT-0, said-2)
+nsubjpass(seen-6, she-3)
+auxpass(seen-6, 's-4)
+neg(seen-6, never-5)
+ccomp(said-2, seen-6)
+det(ape-8, an-7)
+nsubj(evolve-9, ape-8)
+ccomp(seen-6, evolve-9)
+det(human-12, a-11)
+prep_into(evolve-9, human-12)
+
+(ROOT
+  (FRAG
+    (PP (IN As)
+      (NP (DT an) (NN argument)))
+    (. .)))
+
+root(ROOT-0, As-1)
+det(argument-3, an-2)
+pobj(As-1, argument-3)
+
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ 's)
+      (UCP (RB either)
+        (ADJP (JJ excellent)
+          (PP (IN at)
+            (NP (NN deadpan) (NN humor))))
+        (, ,)
+        (CC or)
+        (NP (DT a) (NN troll))))
+    (. .)))
+
+nsubj('s-2, She-1)
+root(ROOT-0, 's-2)
+dep('s-2, either-3)
+dep(either-3, excellent-4)
+nn(humor-7, deadpan-6)
+prep_at(excellent-4, humor-7)
+det(troll-11, a-10)
+dep('s-2, troll-11)
+conj_or(either-3, troll-11)
+
+(ROOT
+  (S
+    (NP (PRP$ My) (NN money))
+    (VP (VBZ 's)
+      (PP (IN on)
+        (NP (NN troll))))
+    (. .)))
+
+poss(money-2, My-1)
+nsubj('s-3, money-2)
+root(ROOT-0, 's-3)
+prep_on('s-3, troll-5)
+

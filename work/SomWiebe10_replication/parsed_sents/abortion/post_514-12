@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP America))
+      (VP (VBZ has)
+        (VP (VBD listened)
+          (PP (TO to)
+            (NP (DT these) (NNS pied-pipers)))
+          (PP (IN for)
+            (ADVP
+              (ADVP (RB far) (RB too))
+              (RB long))))))
+    (: ;)
+    (S
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP they))
+          (VP (VBD led)
+            (NP (PRP$ our) (NN country)))))
+      (VP (VBZ is)
+        (NP (DT the) (JJ wrong) (NN direction))))
+    (. .)))
+
+nsubj(listened-3, America-1)
+aux(listened-3, has-2)
+root(ROOT-0, listened-3)
+det(pied-pipers-6, these-5)
+prep_to(listened-3, pied-pipers-6)
+prep(listened-3, for-7)
+advmod(too-9, far-8)
+pcomp(for-7, too-9)
+advmod(too-9, long-10)
+advmod(led-14, where-12)
+nsubj(led-14, they-13)
+advcl(direction-20, led-14)
+csubj(direction-20, led-14)
+poss(country-16, our-15)
+dobj(led-14, country-16)
+cop(direction-20, is-17)
+det(direction-20, the-18)
+amod(direction-20, wrong-19)
+parataxis(listened-3, direction-20)
+

@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (DT An) (NN embryo)
+      (CC or)
+      (NN fetus))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)))))
+    (. .)))
+
+det(embryo-2, An-1)
+nsubj(is-5, embryo-2)
+conj_or(embryo-2, fetus-4)
+nsubj(is-5, fetus-4)
+root(ROOT-0, is-5)
+dobj(is-8, what-6)
+nsubj(is-8, it-7)
+ccomp(is-5, is-8)
+
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (VBZ denies)
+      (NP (DT the) (NNS facts))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (VP (VBN stated)
+              (PP (IN about)
+                (NP (PRP$ their) (NN nature))))))))
+    (. .)))
+
+det(one-2, No-1)
+nsubj(denies-3, one-2)
+root(ROOT-0, denies-3)
+det(facts-5, the-4)
+dobj(denies-3, facts-5)
+complm(stated-9, that-6)
+nsubj(stated-9, I-7)
+aux(stated-9, have-8)
+ccomp(denies-3, stated-9)
+poss(nature-12, their-11)
+prep_about(stated-9, nature-12)
+

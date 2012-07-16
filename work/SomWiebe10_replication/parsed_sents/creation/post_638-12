@@ -1,0 +1,59 @@
+(ROOT
+  (S ('' '')
+    (S (IN So)
+      (NP (PRP it))
+      (VP (VBZ 's) (RB not)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (JJ early) (NNS drafts))
+            (VP (VBP are)
+              (ADJP (JJ religious)))))))
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN fact))
+        (SBAR (IN that)
+          (S
+            (NP (JJ religious) (NNS groups))
+            (VP (VBP are)
+              (ADJP (JJ open)
+                (PP (TO to)
+                  (NP
+                    (NP (NNP ID))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBD meant)
+                          (SBAR
+                            (S
+                              (NP (PRP it))
+                              (VP (VBD was) (`` ``)
+                                (ADJP (JJ repackaged)))))))))))))))
+      (VP (VBP creationism)))
+    (. ?)))
+
+dep('s-4, So-2)
+nsubj('s-4, it-3)
+root(ROOT-0, 's-4)
+neg('s-4, not-5)
+complm(religious-11, that-6)
+det(drafts-9, the-7)
+amod(drafts-9, early-8)
+nsubj(religious-11, drafts-9)
+cop(religious-11, are-10)
+ccomp('s-4, religious-11)
+det(fact-14, the-13)
+nsubj(creationism-28, fact-14)
+complm(open-19, that-15)
+amod(groups-17, religious-16)
+nsubj(open-19, groups-17)
+cop(open-19, are-18)
+dep(fact-14, open-19)
+prep_to(open-19, ID-21)
+nsubj(meant-23, ID-21)
+rcmod(ID-21, meant-23)
+nsubj(repackaged-27, it-24)
+cop(repackaged-27, was-25)
+ccomp(meant-23, repackaged-27)
+conj_but('s-4, creationism-28)
+

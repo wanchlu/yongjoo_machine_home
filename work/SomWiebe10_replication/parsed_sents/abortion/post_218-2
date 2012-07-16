@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (MD can) (RB not)
+          (VP (VB make)
+            (NP (PRP$ your) (JJ own) (NN choice))
+            (PP (IN on)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (TO to)
+                    (VP (VB vote)
+                      (PP (IN for)
+                        (NP (RB then))))))))))))
+    (NP (EX there))
+    (ADVP (RB no) (RB longer))
+    (VP (VBZ is)
+      (ADJP (JJ free)
+        (SBAR
+          (S
+            (VP (MD will))))))
+    (. .)))
+
+mark(make-5, If-1)
+nsubj(make-5, you-2)
+aux(make-5, can-3)
+neg(make-5, not-4)
+advcl(is-18, make-5)
+poss(choice-8, your-6)
+amod(choice-8, own-7)
+dobj(make-5, choice-8)
+nsubj(vote-12, who-10)
+aux(vote-12, to-11)
+prepc_on(make-5, vote-12)
+prep(vote-12, for-13)
+pobj(for-13, then-14)
+expl(is-18, there-15)
+advmod(longer-17, no-16)
+advmod(is-18, longer-17)
+root(ROOT-0, is-18)
+acomp(is-18, free-19)
+dep(free-19, will-20)
+

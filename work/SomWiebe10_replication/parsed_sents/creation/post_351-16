@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT That))
+      (PP (IN by)
+        (NP (PRP itself))))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ sufficient)
+          (SBAR
+            (S
+              (NP (DT a) (NN warning))
+              (VP (TO to)
+                (VP (RB not) (VB conclude))))))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NNP WMAP) (NN data) (NN _))
+            (VP (VBZ shows)
+              (S
+                (VP (VBG _)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP we))
+                      (VP (VBP are)
+                        (PP (IN at)
+                          (NP
+                            (NP (DT the) (NN center))
+                            (PP (IN of)
+                              (NP (DT the) (NN universe)))))))))))))))
+    (. .)))
+
+nsubj(sufficient-6, That-1)
+prep_by(That-1, itself-3)
+aux(sufficient-6, should-4)
+cop(sufficient-6, be-5)
+root(ROOT-0, sufficient-6)
+det(warning-8, a-7)
+nsubj(conclude-11, warning-8)
+aux(conclude-11, to-9)
+neg(conclude-11, not-10)
+dep(sufficient-6, conclude-11)
+complm(shows-17, that-12)
+det(_-16, the-13)
+nn(_-16, WMAP-14)
+nn(_-16, data-15)
+nsubj(shows-17, _-16)
+ccomp(sufficient-6, shows-17)
+xcomp(shows-17, _-18)
+complm(are-21, that-19)
+nsubj(are-21, we-20)
+ccomp(_-18, are-21)
+det(center-24, the-23)
+prep_at(are-21, center-24)
+det(universe-27, the-26)
+prep_of(center-24, universe-27)
+

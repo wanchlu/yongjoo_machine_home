@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS calculations))
+      (PP (IN on)
+        (NP (NN flagellum))))
+    (VP
+      (VP (VBP are)
+        (ADJP (JJ irrelevant)))
+      (, ,)
+      (CC but)
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN derived)
+            (PP (VBN given)
+              (NP
+                (NP
+                  (ADJP (JJ accurate))
+                  (NN input) (NNS points))
+                (SBAR
+                  (WHNP
+                    (WHNP (WRB how) (JJ many))
+                    (PP (IN of)
+                      (NP (DT each) (JJ different) (NNS proteins))))
+                  (S
+                    (VP (VBP are)
+                      (VP (VBN needed)))))))))))
+    (. ?)))
+
+det(calculations-2, The-1)
+nsubj(irrelevant-6, calculations-2)
+nsubjpass(derived-11, calculations-2)
+prep_on(calculations-2, flagellum-4)
+cop(irrelevant-6, are-5)
+root(ROOT-0, irrelevant-6)
+aux(derived-11, can-9)
+auxpass(derived-11, be-10)
+conj_but(irrelevant-6, derived-11)
+prep(derived-11, given-12)
+amod(points-15, accurate-13)
+nn(points-15, input-14)
+dep(given-12, points-15)
+advmod(many-17, how-16)
+nsubjpass(needed-23, many-17)
+det(proteins-21, each-19)
+amod(proteins-21, different-20)
+prep_of(many-17, proteins-21)
+auxpass(needed-23, are-22)
+rcmod(points-15, needed-23)
+

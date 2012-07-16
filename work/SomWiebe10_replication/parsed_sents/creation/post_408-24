@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are) (RB not)
+      (ADJP (RB genetically) (VBN linked)
+        (PP (TO to)
+          (NP
+            (NP (DT any) (JJ other) (NN species))
+            (PP (IN on)
+              (NP (DT the) (NN planet) (CD .3)))))))
+    (. .) (-RRB- -RRB-)))
+
+nsubjpass(linked-5, We-1)
+auxpass(linked-5, are-2)
+neg(linked-5, not-3)
+advmod(linked-5, genetically-4)
+root(ROOT-0, linked-5)
+det(species-9, any-7)
+amod(species-9, other-8)
+prep_to(linked-5, species-9)
+det(planet-12, the-11)
+prep_on(species-9, planet-12)
+num(planet-12, .3-13)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN Since)
+      (S
+        (NP (JJ spontaneous) (NN generation))
+        (VP (VBZ does) (RB not)
+          (VP (VB work)))))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB account)
+        (PP (IN for)
+          (NP (DT the) (NN fact)))
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP
+                (NP (NN life))
+                (PP (IN on)
+                  (NP (DT this) (NN earth)))))))))
+    (. ?)))
+
+mark(work-6, Since-1)
+amod(generation-3, spontaneous-2)
+nsubj(work-6, generation-3)
+aux(work-6, does-4)
+neg(work-6, not-5)
+advcl(account-11, work-6)
+advmod(account-11, how-8)
+aux(account-11, do-9)
+nsubj(account-11, you-10)
+root(ROOT-0, account-11)
+det(fact-14, the-13)
+prep_for(account-11, fact-14)
+complm(is-17, that-15)
+expl(is-17, there-16)
+ccomp(account-11, is-17)
+nsubj(is-17, life-18)
+det(earth-21, this-20)
+prep_on(life-18, earth-21)
+

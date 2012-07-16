@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ means)
+      (SBAR (IN that)
+        (S
+          (PP (IN in)
+            (NP
+              (NP (NN order))
+              (PP (TO to)
+                (NP (NN infer) (`` ``) (NN design) ('' '')))))
+          (NP (NNP ID))
+          (VP (VBZ needs)
+            (S
+              (VP (TO to)
+                (VP (VB eliminate)
+                  (NP
+                    (NP
+                      (ADJP (DT any)
+                        (CC and)
+                        (DT all))
+                      (ADJP (VBN known)
+                        (CC and)
+                        (JJ unknown))
+                      (NNS processes))
+                    (PP (IN of)
+                      (NP
+                        (NP
+                          (NP (NN chance))
+                          (ADVP (CC or)))
+                        (PRN (-LRB- -LRB-)
+                          (NP (NNP and) (. ?))
+                          (-RRB- -RRB-))))))))))))))
+
+nsubj(means-2, This-1)
+root(ROOT-0, means-2)
+complm(needs-12, that-3)
+prep_in(needs-12, order-5)
+nn(design-9, infer-7)
+prep_to(order-5, design-9)
+nsubj(needs-12, ID-11)
+xsubj(eliminate-14, ID-11)
+ccomp(means-2, needs-12)
+aux(eliminate-14, to-13)
+xcomp(needs-12, eliminate-14)
+amod(processes-21, any-15)
+conj_and(any-15, all-17)
+amod(processes-21, all-17)
+amod(processes-21, known-18)
+conj_and(known-18, unknown-20)
+amod(processes-21, unknown-20)
+dobj(eliminate-14, processes-21)
+prep_of(processes-21, chance-23)
+advmod(chance-23, or-24)
+appos(chance-23, and-26)
+

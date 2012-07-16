@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS things))
+      (PP (IN like)
+        (NP
+          (NP (DT that))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (MD may)
+                (VP (VB sound))))))))
+    (VP (VBP unimpressive)
+      (SBAR (IN until)
+        (S
+          (NP (PRP you))
+          (VP (VBP consider)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP
+                  (NP (NNS people))
+                  (PP (IN of)
+                    (NP (DT the) (NN time))))
+                (ADVP (RB commonly))
+                (VP (VBD knew)
+                  (PP (IN about)
+                    (NP (NN weather))))))))))
+    (. .)))
+
+nsubj(unimpressive-7, things-1)
+prep_like(things-1, that-3)
+nsubj(sound-6, that-3)
+aux(sound-6, may-5)
+rcmod(that-3, sound-6)
+root(ROOT-0, unimpressive-7)
+mark(consider-10, until-8)
+nsubj(consider-10, you-9)
+advcl(unimpressive-7, consider-10)
+dobj(knew-17, what-11)
+nsubj(knew-17, people-12)
+det(time-15, the-14)
+prep_of(people-12, time-15)
+advmod(knew-17, commonly-16)
+ccomp(consider-10, knew-17)
+prep_about(knew-17, weather-19)
+

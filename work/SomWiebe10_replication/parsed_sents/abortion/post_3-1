@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (DT The) (NN fetus))
+    (VP (VBZ causes)
+      (UCP
+        (NP (NN sickness))
+        (, ,)
+        (NP (NN discomfort))
+        (, ,)
+        (CC and)
+        (PRN (CC and)
+          (NP
+            (NP (JJ extreme) (NN pain))
+            (PP (TO to)
+              (NP (DT a) (NN woman)))))
+        (PP (IN during)
+          (NP (PRP$ her) (NN pregnancy)
+            (CC and)
+            (NN labor)))))
+    (. .)))
+
+det(fetus-2, The-1)
+nsubj(causes-3, fetus-2)
+root(ROOT-0, causes-3)
+dobj(causes-3, sickness-4)
+appos(sickness-4, discomfort-6)
+dep(pain-11, and-9)
+amod(pain-11, extreme-10)
+dobj(causes-3, pain-11)
+conj_and(sickness-4, pain-11)
+det(woman-14, a-13)
+prep_to(pain-11, woman-14)
+poss(pregnancy-17, her-16)
+prep_during(pain-11, pregnancy-17)
+prep_during(pain-11, labor-19)
+conj_and(pregnancy-17, labor-19)
+

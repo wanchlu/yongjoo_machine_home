@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (, ,)
+    (PP (IN for)
+      (NP (CD one)))
+    (, ,)
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ terrible))
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (VBD denied)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP are)))))))))))
+    (. .)))
+
+nsubj(think-6, I-1)
+prep_for(think-6, one-4)
+root(ROOT-0, think-6)
+nsubj(terrible-9, it-7)
+cop(terrible-9, 's-8)
+ccomp(think-6, terrible-9)
+complm(denied-12, that-10)
+nsubj(denied-12, you-11)
+ccomp(terrible-9, denied-12)
+dobj(are-15, who-13)
+nsubj(are-15, you-14)
+ccomp(denied-12, are-15)
+
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBD made)
+      (NP (PRP you))
+      (NP
+        (NP (DT the) (NN way))
+        (PRN
+          (S
+            (NP (PRP you))
+            (VP (VBP are))))
+        (: ;)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (S
+                (NP (PRP you))
+                (VP (TO to)
+                  (VP (VB question)
+                    (NP (DT that))))))))))
+    (. ?)))
+
+nsubj(made-2, God-1)
+root(ROOT-0, made-2)
+iobj(made-2, you-3)
+det(way-5, the-4)
+dobj(made-2, way-5)
+nsubj(are-7, you-6)
+dep(way-5, are-7)
+nsubj(are-10, who-9)
+rcmod(way-5, are-10)
+nsubj(question-13, you-11)
+aux(question-13, to-12)
+xcomp(are-10, question-13)
+dobj(question-13, that-14)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD should)
+            (VP (VB have)
+              (VP (VBN gone)
+                (PP (IN with)
+                  (NP (PRP$ your) (NNS feelings)))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(gone-6, you-3)
+aux(gone-6, should-4)
+aux(gone-6, have-5)
+ccomp(think-2, gone-6)
+poss(feelings-9, your-8)
+prep_with(gone-6, feelings-9)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Rape))
+      (VP (VBZ is)
+        (ADJP (JJ wrong))
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBD was)
+              (VP (VBN done)
+                (PP (TO to)
+                  (NP (PRP me)))))))))
+    (CC but)
+    (S
+      (NP (NN murder))
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ wrong))
+        (SBAR (IN because)
+          (S
+            (NP (PRP I))
+            (VP (VBD committed)
+              (NP (PRP it)))))))
+    (. ?)))
+
+nsubj(wrong-3, Rape-1)
+cop(wrong-3, is-2)
+root(ROOT-0, wrong-3)
+mark(done-7, because-4)
+nsubjpass(done-7, it-5)
+auxpass(done-7, was-6)
+advcl(wrong-3, done-7)
+prep_to(done-7, me-9)
+nsubj(wrong-14, murder-11)
+cop(wrong-14, is-12)
+neg(wrong-14, not-13)
+conj_but(wrong-3, wrong-14)
+mark(committed-17, because-15)
+nsubj(committed-17, I-16)
+advcl(wrong-14, committed-17)
+dobj(committed-17, it-18)
+

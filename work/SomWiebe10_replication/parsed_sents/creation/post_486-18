@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP ID))
+      (VP (VBZ has)
+        (ADVP (RB indeed))
+        (VP (VBN been)
+          (ADJP (JJ peer-reviewed)))))
+    (CC and)
+    (, ,)
+    (S
+      (PP (IN in)
+        (NP (NN fact)))
+      (, ,)
+      (NP (JJ many) (JJ pro-ID) (NNS scientists))
+      (VP (VBP have)
+        (VP (VBN served)
+          (PP (IN as)
+            (NP
+              (NP (NNS referees))
+              (PP (IN for)
+                (NP (JJ other) (JJ peer-reviewed) (NNS journals))))))))
+    (. .)))
+
+nsubj(peer-reviewed-5, ID-1)
+aux(peer-reviewed-5, has-2)
+advmod(peer-reviewed-5, indeed-3)
+cop(peer-reviewed-5, been-4)
+root(ROOT-0, peer-reviewed-5)
+prep_in(served-15, fact-9)
+amod(scientists-13, many-11)
+amod(scientists-13, pro-ID-12)
+nsubj(served-15, scientists-13)
+aux(served-15, have-14)
+ccomp(peer-reviewed-5, served-15)
+conj_and(peer-reviewed-5, served-15)
+prep_as(served-15, referees-17)
+amod(journals-21, other-19)
+amod(journals-21, peer-reviewed-20)
+prep_for(referees-17, journals-21)
+

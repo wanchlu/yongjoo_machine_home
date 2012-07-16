@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB depend)
+        (PP (IN upon)
+          (NP (NN someone) (RB else)))
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB breathe)
+                (PP (IN for)
+                  (NP (PRP me))))
+              (, ,)
+              (VP (VB feed)
+                (NP (PRP me)))
+              (, ,)
+              (VP (VB keep)
+                (S
+                  (NP (PRP me))
+                  (ADJP (JJ warm))))
+              (, ,)
+              (VP (VB etc.)))))))
+    (. .)))
+
+nsubj(depend-4, I-1)
+xsubj(breathe-9, I-1)
+aux(depend-4, do-2)
+neg(depend-4, not-3)
+root(ROOT-0, depend-4)
+prep_upon(depend-4, someone-6)
+advmod(someone-6, else-7)
+aux(breathe-9, to-8)
+xcomp(depend-4, breathe-9)
+prep_for(breathe-9, me-11)
+dep(breathe-9, feed-13)
+dobj(feed-13, me-14)
+dep(breathe-9, keep-16)
+nsubj(warm-18, me-17)
+xcomp(keep-16, warm-18)
+dep(breathe-9, etc.-20)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB not)
+      (VP (VB depend)
+        (PP (IN upon)
+          (NP
+            (NP (NN anyone) (RB else))
+            (PP (IN for)
+              (NP (DT the) (JJ same) (NNS things)))))))
+    (. .)))
+
+nsubj(depend-4, You-1)
+aux(depend-4, do-2)
+neg(depend-4, not-3)
+root(ROOT-0, depend-4)
+prep_upon(depend-4, anyone-6)
+advmod(anyone-6, else-7)
+det(things-11, the-9)
+amod(things-11, same-10)
+prep_for(anyone-6, things-11)
+

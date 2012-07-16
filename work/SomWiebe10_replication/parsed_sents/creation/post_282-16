@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Newton) (POS 's))
+      (NN appeal)
+      (S
+        (VP (TO to)
+          (VP (VB design)))))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN on)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NNP ID) (NNS proponents))
+              (VP (VBP have)
+                (VP (VBN come)
+                  (S
+                    (VP (TO to)
+                      (VP (VB define)
+                        (PP (IN as)
+                          (NP (DT the) (`` ``) (NN design) (NN inference) ('' '')))))))))))))
+    (. .)))
+
+poss(appeal-3, Newton-1)
+nsubjpass(based-7, appeal-3)
+aux(design-5, to-4)
+infmod(appeal-3, design-5)
+auxpass(based-7, is-6)
+root(ROOT-0, based-7)
+dobj(come-13, what-9)
+nn(proponents-11, ID-10)
+nsubj(come-13, proponents-11)
+xsubj(define-15, proponents-11)
+aux(come-13, have-12)
+prepc_on(based-7, come-13)
+aux(define-15, to-14)
+xcomp(come-13, define-15)
+det(inference-20, the-17)
+nn(inference-20, design-19)
+prep_as(define-15, inference-20)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD should)
+      (VP (VB teach)
+        (S
+          (NP (PRP us))
+          (UCP
+            (ADVP (RB once))
+            (CC and)
+            (PP (IN for)
+              (NP (DT all)))))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT an) (NN appeal))
+              (PP (TO to)
+                (NP (NN design))))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (VP (VBG lacking)
+                  (NP (NN anything) (JJR more))
+                  (PP (IN than)
+                    (NP (NN ignorance))))))
+            (, ,)
+            (VP (VBZ is) (RB not)
+              (ADJP (RB very) (JJ reliable))
+              (, ,)
+              (S
+                (ADVP (RB historically))
+                (VP (VBG speaking))))))))
+    (. .)))
+
+nsubj(teach-3, This-1)
+aux(teach-3, should-2)
+root(ROOT-0, teach-3)
+dep(once-5, us-4)
+dep(teach-3, once-5)
+dep(teach-3, for-7)
+conj_and(once-5, for-7)
+pobj(for-7, all-8)
+complm(reliable-25, that-9)
+det(appeal-11, an-10)
+nsubj(reliable-25, appeal-11)
+prep_to(appeal-11, design-13)
+advmod(lacking-16, when-15)
+advcl(reliable-25, lacking-16)
+dep(more-18, anything-17)
+dobj(lacking-16, more-18)
+prep_than(lacking-16, ignorance-20)
+cop(reliable-25, is-22)
+neg(reliable-25, not-23)
+advmod(reliable-25, very-24)
+ccomp(teach-3, reliable-25)
+advmod(speaking-28, historically-27)
+xcomp(reliable-25, speaking-28)
+

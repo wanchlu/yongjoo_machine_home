@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP (RB Only) (RB about) (CD 3))
+        (NN %))
+      (PP (IN of)
+        (NP (DT the) (NN world))))
+    (VP (VBZ is)
+      (ADJP (JJ gay)))
+    (. .)))
+
+quantmod(3-3, Only-1)
+quantmod(3-3, about-2)
+num(%-4, 3-3)
+nsubj(gay-9, %-4)
+det(world-7, the-6)
+prep_of(%-4, world-7)
+cop(gay-9, is-8)
+root(ROOT-0, gay-9)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's) (RB not)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (CC or)
+              (VB break)
+              (NP (NN mankind)))))))
+    (. .)))
+
+nsubj(going-4, That-1)
+xsubj(make-6, That-1)
+aux(going-4, 's-2)
+neg(going-4, not-3)
+root(ROOT-0, going-4)
+aux(make-6, to-5)
+xcomp(going-4, make-6)
+xcomp(going-4, break-8)
+conj_or(make-6, break-8)
+dobj(make-6, mankind-9)
+

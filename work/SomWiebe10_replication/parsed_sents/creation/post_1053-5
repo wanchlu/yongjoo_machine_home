@@ -1,0 +1,111 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (RB so) (JJ obvious)))))
+    (, ,)
+    (VP
+      (VP (VB define)
+        (NP (`` ``) (NN information) ('' '')))
+      (CC and)
+      (VP (VB pinpoint)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (VP (VBN located)
+                (PP
+                  (PP (IN in)
+                    (NP
+                      (NP (DT a) (NN genome))
+                      (, ,)
+                      (PP (IN in)
+                        (NP
+                          (NP
+                            (NP
+                              (NP (DT the) (NNS chemicals))
+                              (: :)
+                              (ADJP (JJ adenine) (, ,) (JJ guanine) (, ,) (JJ cytosine)
+                                (CC and)
+                                (JJ thymine)))
+                            (PRN (-LRB- -LRB-)
+                              (SBAR
+                                (WHNP (WDT that))
+                                (S
+                                  (VP (VBP make)
+                                    (PRT (RP up))
+                                    (NP (NN DNA)))))
+                              (-RRB- -RRB-)))
+                          (CC or)
+                          (NP
+                            (NP (DT any) (NN combination))
+                            (PP (IN of)
+                              (NP (DT those) (NNS chemicals))))))
+                      (, ,)))
+                  (CC or)
+                  (PP (IN in)
+                    (NP
+                      (NP
+                        (NP (NNS proteins))
+                        (CC or)
+                        (NP (JJ amino-acid) (NNS chains)))
+                      (PRN (-LRB- -LRB-)
+                        (SBAR
+                          (WHNP (WDT whichever))
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP choose)
+                              (SBAR
+                                (S
+                                  (VP (VBZ is)
+                                    (ADJP (JJ fine))))))))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+mark(obvious-5, If-1)
+nsubj(obvious-5, it-2)
+cop(obvious-5, is-3)
+advmod(obvious-5, so-4)
+advcl(define-7, obvious-5)
+root(ROOT-0, define-7)
+dobj(define-7, information-9)
+conj_and(define-7, pinpoint-12)
+advmod(located-16, where-13)
+nsubjpass(located-16, it-14)
+auxpass(located-16, is-15)
+advcl(pinpoint-12, located-16)
+det(genome-19, a-18)
+prep_in(located-16, genome-19)
+det(chemicals-23, the-22)
+prep_in(genome-19, chemicals-23)
+amod(chemicals-23, adenine-25)
+amod(chemicals-23, guanine-27)
+conj_and(adenine-25, guanine-27)
+amod(chemicals-23, cytosine-29)
+conj_and(adenine-25, cytosine-29)
+amod(chemicals-23, thymine-31)
+conj_and(adenine-25, thymine-31)
+nsubj(make-34, that-33)
+dep(chemicals-23, make-34)
+prt(make-34, up-35)
+dobj(make-34, DNA-36)
+det(combination-40, any-39)
+prep_in(genome-19, combination-40)
+conj_or(chemicals-23, combination-40)
+det(chemicals-43, those-42)
+prep_of(combination-40, chemicals-43)
+prep_in(located-16, proteins-47)
+conj_or(genome-19, proteins-47)
+amod(chains-50, amino-acid-49)
+conj_or(genome-19, chains-50)
+conj_or(proteins-47, chains-50)
+dep(choose-54, whichever-52)
+nsubj(fine-56, whichever-52)
+nsubj(choose-54, you-53)
+dep(proteins-47, choose-54)
+cop(fine-56, is-55)
+ccomp(choose-54, fine-56)
+

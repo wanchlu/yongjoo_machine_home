@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS children))
+        (VP (MD should)
+          (VP (VB be)
+            (PP (IN amongst)
+              (NP
+                (NP (NNS children))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ has)
+                      (NP
+                        (NP
+                          (NP (DT a) (NN father))
+                          (PRN (-LRB- -LRB-)
+                            (ADJP (NN male))
+                            (-RRB- -RRB-)))
+                        (CC and)
+                        (NP
+                          (NP (NN mother))
+                          (PRN (-LRB- -LRB-)
+                            (NP (NNP Female))
+                            (-RRB- -RRB-)))))))))))))
+    (NP (DT the) (NNS children))
+    (VP (VBZ is)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB mock)
+              (PP (IN at)
+                (NP (PRP them))))))))
+    (. .)))
+
+mark(be-4, If-1)
+nsubj(be-4, children-2)
+aux(be-4, should-3)
+advcl(going-22, be-4)
+prep_amongst(be-4, children-6)
+nsubj(has-8, children-6)
+rcmod(children-6, has-8)
+det(father-10, a-9)
+dobj(has-8, father-10)
+dep(father-10, male-12)
+dobj(has-8, mother-15)
+conj_and(father-10, mother-15)
+appos(mother-15, Female-17)
+det(children-20, the-19)
+nsubj(going-22, children-20)
+xsubj(mock-24, children-20)
+aux(going-22, is-21)
+root(ROOT-0, going-22)
+aux(mock-24, to-23)
+xcomp(going-22, mock-24)
+prep_at(mock-24, them-26)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP wont)
+      (VP (VB know)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (VP (TO to)
+              (VP (VB act)
+                (PP (IN amongst)
+                  (NP
+                    (NP (NNS children))
+                    (PP (IN with)
+                      (NP (JJ normal) (NNS parents)))))))))))
+    (. .)))
+
+nsubj(wont-2, They-1)
+root(ROOT-0, wont-2)
+dep(wont-2, know-3)
+advmod(act-6, how-4)
+aux(act-6, to-5)
+ccomp(know-3, act-6)
+xcomp(know-3, act-6)
+prep_amongst(act-6, children-8)
+amod(parents-11, normal-10)
+prep_with(children-8, parents-11)
+

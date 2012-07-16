@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (VP (VBZ is)
+      (ADVP (RB actually))
+      (ADJP (RB quite) (JJ simple)))
+    (. .)))
+
+cop(simple-4, is-1)
+advmod(simple-4, actually-2)
+advmod(simple-4, quite-3)
+root(ROOT-0, simple-4)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ refers)
+      (PP (TO to)
+        (NP
+          (NP (NNP Einstein) (POS 's))
+          (JJ static) (NN universe))))
+    (. .)))
+
+nsubj(refers-2, It-1)
+root(ROOT-0, refers-2)
+poss(universe-7, Einstein-4)
+amod(universe-7, static-6)
+prep_to(refers-2, universe-7)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (JJ stellar) (NN universe))
+    (VP (MD ought)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (DT a) (JJ finite) (NN island))
+              (PP (IN in)
+                (NP
+                  (NP (DT an) (JJ infinite) (NN ocean))
+                  (PP (IN of)
+                    (NP (NN space))))))))))
+    (. .)))
+
+det(universe-4, The-2)
+amod(universe-4, stellar-3)
+nsubj(ought-5, universe-4)
+xsubj(island-10, universe-4)
+root(ROOT-0, ought-5)
+aux(island-10, to-6)
+cop(island-10, be-7)
+det(island-10, a-8)
+amod(island-10, finite-9)
+xcomp(ought-5, island-10)
+det(ocean-14, an-12)
+amod(ocean-14, infinite-13)
+prep_in(island-10, ocean-14)
+prep_of(ocean-14, space-16)
+
+(ROOT
+  (S
+    (NP (-LRB- -LRB-) (NNP Einstein) (, ,) (NNP 1954) (NNP -RRB-) ('' ''))
+    (VP (VBZ http:\/\/www.spaceandmotion.com\/Physics-Albert-Einstein-Cosmology.htm))))
+
+nn(1954-4, Einstein-2)
+nsubj(http:\/\/www.spaceandmotion.com\/Physics-Albert-Einstein-Cosmology.htm-7, 1954-4)
+root(ROOT-0, http:\/\/www.spaceandmotion.com\/Physics-Albert-Einstein-Cosmology.htm-7)
+

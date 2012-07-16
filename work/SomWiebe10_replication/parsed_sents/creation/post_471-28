@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP
+          (NP (NNP Oxford) (NNP evolutionist))
+          (CC and)
+          (NP (NNP antitheist) (NNP Richard) (NNP Dawkins)))
+        (VP (VBD claimed))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADJP (JJ impossible)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (DT an)
+                  (ADJP (RB intellectually) (JJ fulfilled))
+                  (NN atheist))
+                (PP (IN before)
+                  (NP (NNP Darwin)))))))))
+    (. .)))
+
+mark(claimed-8, As-1)
+nn(evolutionist-3, Oxford-2)
+nsubj(claimed-8, evolutionist-3)
+nn(Dawkins-7, antitheist-5)
+nn(Dawkins-7, Richard-6)
+conj_and(evolutionist-3, Dawkins-7)
+nsubj(claimed-8, Dawkins-7)
+advcl(impossible-12, claimed-8)
+nsubj(impossible-12, it-10)
+cop(impossible-12, was-11)
+root(ROOT-0, impossible-12)
+aux(atheist-18, to-13)
+cop(atheist-18, be-14)
+det(atheist-18, an-15)
+advmod(fulfilled-17, intellectually-16)
+amod(atheist-18, fulfilled-17)
+xcomp(impossible-12, atheist-18)
+prep_before(atheist-18, Darwin-20)
+

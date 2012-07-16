@@ -1,0 +1,134 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG speaking)
+        (ADVP (RB specifically))
+        (PP (IN of)
+          (NP (NNP Obama)))))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP (VB make)
+        (NP
+          (NP (NN sense))
+          (FRAG
+            (WHADVP (WRB when))))
+        (PP (VBN compared)
+          (PP (TO to)
+            (NP (DT the) (JJ other) (NN option))))))
+    (. .)))
+
+csubj(make-7, speaking-1)
+advmod(speaking-1, specifically-2)
+prep_of(speaking-1, Obama-4)
+aux(make-7, can-5)
+advmod(make-7, only-6)
+root(ROOT-0, make-7)
+dobj(make-7, sense-8)
+dep(sense-8, when-9)
+prepc_compared_to(make-7, to-11)
+det(option-14, the-12)
+amod(option-14, other-13)
+pobj(make-7, option-14)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP it))
+        (SBAR (IN that)
+          (S
+            (NP (JJ pro-life))
+            (VP (VBZ seems)
+              (S
+                (VP (TO to)
+                  (VP
+                    (ADVP (RB only))
+                    (VB value)
+                    (NP
+                      (NP (DT the) (NN life))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NN unborn))
+                          (CC and)
+                          (NP (RB not) (DT the))))))))))))
+      (VP (VBN born)))
+    (. ?)))
+
+advmod(born-18, Why-1)
+auxpass(born-18, is-2)
+nsubjpass(born-18, it-3)
+complm(seems-6, that-4)
+nsubj(seems-6, pro-life-5)
+xsubj(value-9, pro-life-5)
+dep(it-3, seems-6)
+aux(value-9, to-7)
+advmod(value-9, only-8)
+xcomp(seems-6, value-9)
+det(life-11, the-10)
+dobj(value-9, life-11)
+det(unborn-14, the-13)
+prep_of(life-11, unborn-14)
+neg(the-17, not-16)
+prep_of(life-11, the-17)
+conj_and(unborn-14, the-17)
+root(ROOT-0, born-18)
+
+(ROOT
+  (SQ (MD Can)
+    (NP (DT a) (NN catholic))
+    (VP (VB vote)
+      (PP (IN for)
+        (NP
+          (NP (NN someone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD authorized)
+                (SBAR
+                  (S
+                    (VP (VBP torture)
+                      (SBAR (IN if)
+                        (S
+                          (NP (PRP they))
+                          (`` ``)
+                          (VP (VBP value)
+                            (NP (NN life)))
+                          ('' ''))))))))))))
+    (. ?)))
+
+aux(vote-4, Can-1)
+det(catholic-3, a-2)
+nsubj(vote-4, catholic-3)
+root(ROOT-0, vote-4)
+prep_for(vote-4, someone-6)
+nsubj(authorized-8, someone-6)
+nsubj(torture-9, someone-6)
+rcmod(someone-6, authorized-8)
+ccomp(authorized-8, torture-9)
+mark(value-13, if-10)
+nsubj(value-13, they-11)
+advcl(torture-9, value-13)
+dobj(value-13, life-14)
+
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (PP (IN about)
+      (NP
+        (NP (NN someone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ supports)
+              (NP (JJ unnecessary) (NNS wars))))))
+      (. ?))))
+
+root(ROOT-0, What-1)
+dep(What-1, about-2)
+pobj(about-2, someone-3)
+nsubj(supports-5, someone-3)
+rcmod(someone-3, supports-5)
+amod(wars-7, unnecessary-6)
+dobj(supports-5, wars-7)
+

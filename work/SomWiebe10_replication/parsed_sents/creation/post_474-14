@@ -1,0 +1,52 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (NNP ID) (NNS proponents))
+      (VP (VBP believe)
+        (SBAR
+          (S
+            (NP (NNP MN))
+            (VP (VBZ is)
+              (ADJP (JJ insufficient))
+              (S (RB then)
+                (VP (VB let)
+                  (S
+                    (NP (PRP them))
+                    (VP (VB make)
+                      (NP
+                        (NP (PRP$ their) (NN case))
+                        (: :)
+                        (SBARQ
+                          (WHADVP (WRB how))
+                          (SQ (VBZ does)
+                            (NP (PRP one))
+                            (ADVP (RB reliably))
+                            (VP (VB detect)
+                              (NP
+                                (NP (DT the) (NN design))
+                                (PP (IN of)
+                                  (NP (NNP God))))))
+                          (. ?))))))))))))))
+
+mark(believe-4, If-1)
+nn(proponents-3, ID-2)
+nsubj(believe-4, proponents-3)
+root(ROOT-0, believe-4)
+nsubj(insufficient-7, MN-5)
+cop(insufficient-7, is-6)
+ccomp(believe-4, insufficient-7)
+advmod(let-9, then-8)
+ccomp(insufficient-7, let-9)
+nsubj(make-11, them-10)
+ccomp(let-9, make-11)
+poss(case-13, their-12)
+dobj(make-11, case-13)
+advmod(detect-19, how-15)
+aux(detect-19, does-16)
+nsubj(detect-19, one-17)
+advmod(detect-19, reliably-18)
+dep(case-13, detect-19)
+det(design-21, the-20)
+dobj(detect-19, design-21)
+prep_of(design-21, God-23)
+

@@ -1,0 +1,82 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT All))
+      (PP (IN of)
+        (NP (PRP us))))
+    (VP (VBP know)
+      (SBAR (IN that)
+        (S
+          (S
+            (VP (VBG disciplining)
+              (SBAR
+                (S
+                  (NP (DT a) (NN child))
+                  (VP (VBZ is)
+                    (ADJP (JJ important)))))))
+          (VP (VBP spare)
+            (SBAR
+              (S
+                (NP (DT the) (NN rod) (NN \/))
+                (VP (VBP spoil)
+                  (SBAR
+                    (S
+                      (NP
+                        (NP (DT the) (NN child))
+                        (PRN (-LRB- -LRB-)
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ is)
+                                (NP
+                                  (NP (DT a) (NN paraphrase))
+                                  (PP (IN of)
+                                    (NP (DT the) (JJ actual) (NNS verses)))))))
+                          (-RRB- -RRB-)))
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT an) (NN example))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT that) (NN lesson))
+                              (, ,)
+                              (SBAR
+                                (WHNP (WDT which))
+                                (S
+                                  (VP (VBZ is)
+                                    (ADJP (RB absolutely) (JJ true))))))))))))))))))
+    (. .)))
+
+nsubj(know-5, All-2)
+prep_of(All-2, us-4)
+root(ROOT-0, know-5)
+complm(spare-12, that-6)
+csubj(spare-12, disciplining-7)
+det(child-9, a-8)
+nsubj(important-11, child-9)
+cop(important-11, is-10)
+ccomp(disciplining-7, important-11)
+ccomp(know-5, spare-12)
+det(\/-15, the-13)
+nn(\/-15, rod-14)
+nsubj(spoil-16, \/-15)
+ccomp(spare-12, spoil-16)
+det(child-18, the-17)
+nsubj(example-31, child-18)
+nsubj(paraphrase-23, which-20)
+cop(paraphrase-23, is-21)
+det(paraphrase-23, a-22)
+dep(child-18, paraphrase-23)
+det(verses-27, the-25)
+amod(verses-27, actual-26)
+prep_of(paraphrase-23, verses-27)
+cop(example-31, is-29)
+det(example-31, an-30)
+ccomp(spoil-16, example-31)
+det(lesson-34, that-33)
+prep_of(example-31, lesson-34)
+nsubj(true-39, lesson-34)
+cop(true-39, is-37)
+advmod(true-39, absolutely-38)
+rcmod(lesson-34, true-39)
+

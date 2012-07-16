@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (DT This) (JJ Christian) (NN belief))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN basis))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ English) (JJ common) (NN law))
+            (PP (IN of)
+              (NP (NN inheritance))))))
+      (, ,)
+      (PP (IN for)
+        (NP
+          (NP (NN example))
+          (, ,)
+          (VP (VBN noted)
+            (PP (IN by)
+              (NP
+                (NP (DT the) (NNS SCOTUS))
+                (PP (IN in)
+                  (NP (NNP Roe)
+                    (CC v.)
+                    (NNP Wade)))))))))
+    (. .)))
+
+det(belief-3, This-1)
+amod(belief-3, Christian-2)
+nsubj(basis-6, belief-3)
+cop(basis-6, was-4)
+det(basis-6, the-5)
+root(ROOT-0, basis-6)
+det(law-11, the-8)
+amod(law-11, English-9)
+amod(law-11, common-10)
+prep_for(basis-6, law-11)
+prep_of(law-11, inheritance-13)
+prep_for(basis-6, example-16)
+partmod(example-16, noted-18)
+det(SCOTUS-21, the-20)
+agent(noted-18, SCOTUS-21)
+prep_in(SCOTUS-21, Roe-23)
+prep_in(SCOTUS-21, Wade-25)
+conj_v.(Roe-23, Wade-25)
+

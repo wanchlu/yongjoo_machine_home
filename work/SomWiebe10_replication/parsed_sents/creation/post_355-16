@@ -1,0 +1,104 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP understand)
+          (NP (DT this)))))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB ve))
+    (VP
+      (ADVP (RB already))
+      (VBD understood)
+      (NP
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (CD 95))
+            (NN %))
+          (PP (IN of)
+            (NP (DT the) (JJS smartest) (NNP ID) (NNS critics))))
+        (CC and)
+        (NP
+          (NP
+            (QP (JJR more) (IN than)
+              (NP (RB virtually) (DT every) (NN reporter))))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ has)
+                (ADVP (RB ever))
+                (VP (VBN written)
+                  (PP (IN about)
+                    (NP (NNP ID))))))))))
+    (. .)))
+
+mark(understand-3, If-1)
+nsubj(understand-3, you-2)
+advcl(understood-9, understand-3)
+dobj(understand-3, this-4)
+nsubj(understood-9, you-6)
+advmod(understood-9, ve-7)
+advmod(understood-9, already-8)
+root(ROOT-0, understood-9)
+mwe(than-11, more-10)
+quantmod(95-12, than-11)
+num(%-13, 95-12)
+dobj(understood-9, %-13)
+det(critics-18, the-15)
+amod(critics-18, smartest-16)
+nn(critics-18, ID-17)
+prep_of(%-13, critics-18)
+quantmod(than-21, more-20)
+dobj(understood-9, than-21)
+conj_and(%-13, than-21)
+nsubj(written-28, than-21)
+advmod(reporter-24, virtually-22)
+det(reporter-24, every-23)
+dep(than-21, reporter-24)
+aux(written-28, has-26)
+advmod(written-28, ever-27)
+rcmod(than-21, written-28)
+prep_about(written-28, ID-30)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP wish)
+      (SBAR
+        (S
+          (NP (DT the) (NNS critics))
+          (VP (MD would)
+            (ADVP (RB honestly))
+            (VP (VB deal)
+              (PP (IN with)
+                (NP (NNP ID)))
+              (PP (RB instead) (IN of)
+                (S
+                  (VP
+                    (VP (VBG setting)
+                      (PRT (RP up))
+                      (NP (NN straw) (NNS men)))
+                    (CC and)
+                    (VP (VBG attacking)
+                      (NP (PRP it)))))))))))
+    (. .)))
+
+nsubj(wish-3, I-1)
+advmod(wish-3, just-2)
+root(ROOT-0, wish-3)
+det(critics-5, the-4)
+nsubj(deal-8, critics-5)
+aux(deal-8, would-6)
+advmod(deal-8, honestly-7)
+ccomp(wish-3, deal-8)
+prep_with(deal-8, ID-10)
+prepc_instead_of(deal-8, setting-13)
+prt(setting-13, up-14)
+nn(men-16, straw-15)
+dobj(setting-13, men-16)
+prepc_instead_of(deal-8, attacking-18)
+conj_and(setting-13, attacking-18)
+dobj(attacking-18, it-19)
+

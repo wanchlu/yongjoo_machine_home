@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (ADVP (RB Ricardo))
+    (, ,)
+    (NP (DT The) (NNP Bible))
+    (VP (VBD was)
+      (ADVP (RB definitely))
+      (VP (VBN written)
+        (SBAR (IN as)
+          (S
+            (VP (VBZ is))))))
+    (. .)))
+
+advmod(written-7, Ricardo-1)
+det(Bible-4, The-3)
+nsubjpass(written-7, Bible-4)
+auxpass(written-7, was-5)
+advmod(written-7, definitely-6)
+root(ROOT-0, written-7)
+mark(is-9, as-8)
+advcl(written-7, is-9)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (PDT All) (DT those) (JJ horrible) (NNS things))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD wrote)))))
+      (VP (VBD were)
+        (ADJP (JJ correct))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (ADVP (RB definitely))
+      (VP (VBD happened)))
+    (. .)))
+
+predet(things-4, All-1)
+det(things-4, those-2)
+amod(things-4, horrible-3)
+dobj(wrote-6, things-4)
+nsubj(correct-8, things-4)
+nsubj(wrote-6, you-5)
+rcmod(things-4, wrote-6)
+cop(correct-8, were-7)
+root(ROOT-0, correct-8)
+nsubj(happened-12, they-10)
+advmod(happened-12, definitely-11)
+conj_and(correct-8, happened-12)
+

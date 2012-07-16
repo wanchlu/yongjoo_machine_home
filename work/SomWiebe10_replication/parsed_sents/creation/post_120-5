@@ -1,0 +1,43 @@
+(ROOT
+  (SQ
+    (SQ (VBP Are)
+      (NP (PRP we) (NNS machines))
+      (VP (VBG choosing)
+        (PP (IN between)
+          (NP
+            (ADJP (JJ incorrect)
+              (CC and)
+              (JJ correct))
+            (NNS responses)))))
+    (, ,)
+    (CC or)
+    (SQ (VBP are)
+      (NP (PRP we))
+      (VP (VBN sentient)
+        (S
+          (VP (VBG being)
+            (NP
+              (NP (NN choosing))
+              (PP (IN between)
+                (ADJP (JJ good)
+                  (CC and)
+                  (JJ evil))))))))
+    (. ?)))
+
+aux(choosing-4, Are-1)
+dep(machines-3, we-2)
+nsubj(choosing-4, machines-3)
+root(ROOT-0, choosing-4)
+amod(responses-9, incorrect-6)
+conj_and(incorrect-6, correct-8)
+amod(responses-9, correct-8)
+prep_between(choosing-4, responses-9)
+auxpass(sentient-14, are-12)
+nsubjpass(sentient-14, we-13)
+conj_or(choosing-4, sentient-14)
+cop(choosing-16, being-15)
+xcomp(sentient-14, choosing-16)
+prep_between(choosing-16, good-18)
+prep_between(choosing-16, evil-20)
+conj_and(good-18, evil-20)
+

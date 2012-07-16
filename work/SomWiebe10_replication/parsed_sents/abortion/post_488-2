@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SBAR (IN For)
+      (S
+        (NP (PRP you))
+        (VP (VBP non)
+          (NP (NNS Christians)))))
+    (NP (PRP they))
+    (VP (MD may)
+      (VP (VB be)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP
+                (VP (VBP have)
+                  (NP (JJ hidden) (NNS motives)))
+                (CC and)
+                (VP (VBP are) (RB not))))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (NP (PRP they))
+            (VP (VBP claim)
+              (S
+                (VP (TO to)
+                  (VP (VB be)))))))))
+    (. .)))
+
+mark(non-3, For-1)
+nsubj(non-3, you-2)
+advcl(people-8, non-3)
+dobj(non-3, Christians-4)
+nsubj(people-8, they-5)
+aux(people-8, may-6)
+cop(people-8, be-7)
+root(ROOT-0, people-8)
+nsubj(have-10, people-8)
+nsubj(are-14, people-8)
+rcmod(people-8, have-10)
+amod(motives-12, hidden-11)
+dobj(have-10, motives-12)
+rcmod(people-8, are-14)
+conj_and(have-10, are-14)
+neg(are-14, not-15)
+dep(claim-18, who-16)
+nsubj(claim-18, they-17)
+dep(people-8, claim-18)
+aux(be-20, to-19)
+xcomp(claim-18, be-20)
+

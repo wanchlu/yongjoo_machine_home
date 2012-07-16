@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (PP (IN Among)
+      (NP (DT those) (NNS women)))
+    (, ,)
+    (NP
+      (NP
+        (NP (CD 76) (NN %))
+        (PP (IN of)
+          (NP (NN pill) (NNS users))))
+      (CC and)
+      (NP
+        (NP (CD 49) (NN %))
+        (PP (IN of)
+          (NP (NN condom) (NNS users)))))
+    (VP (VBP report)
+      (S
+        (VP (VBG having)
+          (VP (VBN used)
+            (NP (PRP$ their) (NN method))
+            (ADVP (RB inconsistently))
+            (, ,)
+            (SBAR (IN while)
+              (S
+                (NP
+                  (NP
+                    (NP (CD 13) (NN %))
+                    (PP (IN of)
+                      (NP (NN pill) (NNS users))))
+                  (CC and)
+                  (NP
+                    (NP (CD 14) (NN %))
+                    (PP (IN of)
+                      (NP (NN condom) (NNS users)))))
+                (VP (VBP report)
+                  (NP (JJ correct) (NN use)))))))))
+    (. .)))
+
+det(women-3, those-2)
+prep_among(report-16, women-3)
+num(%-6, 76-5)
+nsubj(report-16, %-6)
+nn(users-9, pill-8)
+prep_of(%-6, users-9)
+num(%-12, 49-11)
+conj_and(%-6, %-12)
+nsubj(report-16, %-12)
+nn(users-15, condom-14)
+prep_of(%-12, users-15)
+root(ROOT-0, report-16)
+aux(used-18, having-17)
+xcomp(report-16, used-18)
+poss(method-20, their-19)
+dobj(used-18, method-20)
+advmod(used-18, inconsistently-21)
+mark(report-35, while-23)
+num(%-25, 13-24)
+nsubj(report-35, %-25)
+nn(users-28, pill-27)
+prep_of(%-25, users-28)
+num(%-31, 14-30)
+conj_and(%-25, %-31)
+nsubj(report-35, %-31)
+nn(users-34, condom-33)
+prep_of(%-31, users-34)
+advcl(used-18, report-35)
+amod(use-37, correct-36)
+dobj(report-35, use-37)
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (PRN (-LRB- -LRB-)
+          (NP (CD 9))
+          (-RRB- -RRB-))
+        (JJ Forty-six) (NN percent))
+      (PP (IN of)
+        (NP
+          (NP (NNS women))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (NP (NNS abortions))))))))
+    (VP (VBD had) (RB not)
+      (VP (VBN used)
+        (NP (DT a) (JJ contraceptive) (NN method))
+        (PP (IN during)
+          (NP
+            (NP (DT the) (NN month))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBD became)
+                  (ADJP (JJ pregnant)))))))))
+    (. .)))
+
+appos(percent-5, 9-2)
+amod(percent-5, Forty-six-4)
+nsubj(used-13, percent-5)
+prep_of(percent-5, women-7)
+nsubj(have-9, women-7)
+rcmod(women-7, have-9)
+dobj(have-9, abortions-10)
+aux(used-13, had-11)
+neg(used-13, not-12)
+root(ROOT-0, used-13)
+det(method-16, a-14)
+amod(method-16, contraceptive-15)
+dobj(used-13, method-16)
+det(month-19, the-18)
+prep_during(used-13, month-19)
+nsubj(pregnant-22, they-20)
+cop(pregnant-22, became-21)
+rcmod(month-19, pregnant-22)
+

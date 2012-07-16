@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (DT the) (NN mother))
+          (VP (VBZ is)
+            (ADJP (VBN endangered)))))
+      (, ,)
+      (NP (JJ late-term) (NN abortion))
+      (VP (MD may)
+        (VP (VB be)
+          (ADJP (JJ acceptable)))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB otherwise))
+      (, ,)
+      (NP (DT that))
+      (VP (VBZ seems)
+        (ADJP (JJ wrong))))
+    (. .)))
+
+mark(endangered-5, If-1)
+det(mother-3, the-2)
+nsubjpass(endangered-5, mother-3)
+auxpass(endangered-5, is-4)
+advcl(acceptable-11, endangered-5)
+amod(abortion-8, late-term-7)
+nsubj(acceptable-11, abortion-8)
+aux(acceptable-11, may-9)
+cop(acceptable-11, be-10)
+root(ROOT-0, acceptable-11)
+advmod(wrong-18, otherwise-14)
+nsubj(wrong-18, that-16)
+cop(wrong-18, seems-17)
+conj_but(acceptable-11, wrong-18)
+

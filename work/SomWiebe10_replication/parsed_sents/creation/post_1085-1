@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Prokaryotes))
+      (VP (VBP are)
+        (PP (IN by)
+          (NP
+            (NP (RB far) (DT the)
+              (ADJP (RBS most) (JJ successful))
+              (NN species))
+            (PP (IN on)
+              (NP (DT the) (NN planet) (NN earth)))))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP do) (RB n't)
+        (ADVP (RB even))
+        (VP (VB have)
+          (NP (NN cell) (NNS nuclei)))))
+    (. .)))
+
+nsubj(are-2, Prokaryotes-1)
+root(ROOT-0, are-2)
+advmod(species-8, far-4)
+det(species-8, the-5)
+advmod(successful-7, most-6)
+amod(species-8, successful-7)
+prep_by(are-2, species-8)
+det(earth-12, the-10)
+nn(earth-12, planet-11)
+prep_on(species-8, earth-12)
+nsubj(have-18, they-14)
+aux(have-18, do-15)
+neg(have-18, n't-16)
+advmod(have-18, even-17)
+conj_and(are-2, have-18)
+nn(nuclei-20, cell-19)
+dobj(have-18, nuclei-20)
+

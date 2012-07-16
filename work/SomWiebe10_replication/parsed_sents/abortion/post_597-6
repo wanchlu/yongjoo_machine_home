@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (MD ca) (RB n't)
+          (VP (VB determine)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (NN personhood))
+                (VP (VBZ occurs))))))))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB always))
+    (VP (VBP run)
+      (NP
+        (NP (DT the) (NN risk))
+        (PP (IN of)
+          (S
+            (VP (VBG killing)
+              (NP (DT a) (NN person))
+              (PP (IN through)
+                (NP (NN abortion))))))))
+    (. .)))
+
+mark(determine-5, If-1)
+nsubj(determine-5, you-2)
+aux(determine-5, ca-3)
+neg(determine-5, n't-4)
+advcl(run-12, determine-5)
+advmod(occurs-8, when-6)
+nsubj(occurs-8, personhood-7)
+advcl(determine-5, occurs-8)
+nsubj(run-12, you-10)
+advmod(run-12, always-11)
+root(ROOT-0, run-12)
+det(risk-14, the-13)
+dobj(run-12, risk-14)
+prepc_of(risk-14, killing-16)
+det(person-18, a-17)
+dobj(killing-16, person-18)
+prep_through(killing-16, abortion-20)
+

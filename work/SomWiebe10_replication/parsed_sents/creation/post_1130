@@ -1,0 +1,113 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should) (RB n't)
+      (ADVP (RB just) (RB blindly))
+      (VP (VB repeat)
+        (NP
+          (NP (NNS things))
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP hear)))))))
+    (. .)))
+
+nsubj(repeat-6, You-1)
+aux(repeat-6, should-2)
+neg(repeat-6, n't-3)
+advmod(blindly-5, just-4)
+advmod(repeat-6, blindly-5)
+root(ROOT-0, repeat-6)
+dobj(repeat-6, things-7)
+dobj(hear-9, things-7)
+nsubj(hear-9, you-8)
+rcmod(things-7, hear-9)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADVP (RB actually))
+      (ADJP
+        (ADVP (RB far) (RBR more))
+        (JJ evidence)
+        (PRN (, ,)
+          (CC and)
+          (PP (IN from)
+            (NP (JJ many) (JJ different) (NNS fields)))))
+      (, ,)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP Theory))
+          (PP (IN of)
+            (NP (NNP Evolution)))))
+      (SBAR (IN than)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NNPS Theories))
+                (PP (IN of)
+                  (NP (NNP Gravity) (, ,) (NNP Relativity) (, ,)
+                    (CC or)
+                    (NN quantum) (NNS mechanics)))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+advmod(is-2, actually-3)
+advmod(more-5, far-4)
+advmod(evidence-6, more-5)
+acomp(is-2, evidence-6)
+dep(from-9, and-8)
+dep(evidence-6, from-9)
+amod(fields-12, many-10)
+amod(fields-12, different-11)
+pobj(from-9, fields-12)
+det(Theory-16, the-15)
+prep_for(is-2, Theory-16)
+prep_of(Theory-16, Evolution-18)
+mark(are-21, than-19)
+expl(are-21, there-20)
+advcl(is-2, are-21)
+det(Theories-24, the-23)
+prep_for(are-21, Theories-24)
+nn(Relativity-28, Gravity-26)
+prep_of(Theories-24, Relativity-28)
+nn(mechanics-32, quantum-31)
+prep_of(Theories-24, mechanics-32)
+conj_or(Relativity-28, mechanics-32)
+
+(ROOT
+  (S (CC Yet)
+    (ADVP (DT all) (IN of))
+    (NP (DT these))
+    (VP (VBP are)
+      (ADVP (RB far) (RBR more))
+      (VP (VBN accepted)
+        (PP (IN than)
+          (NP (NN evolution)))))
+    (: ...)))
+
+cc(accepted-8, Yet-1)
+dep(of-3, all-2)
+advmod(accepted-8, of-3)
+nsubjpass(accepted-8, these-4)
+auxpass(accepted-8, are-5)
+advmod(more-7, far-6)
+advmod(accepted-8, more-7)
+root(ROOT-0, accepted-8)
+prep_than(accepted-8, evolution-10)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP are)
+      (ADJP (JJ strange)))
+    (. .)))
+
+nsubj(strange-3, People-1)
+cop(strange-3, are-2)
+root(ROOT-0, strange-3)
+

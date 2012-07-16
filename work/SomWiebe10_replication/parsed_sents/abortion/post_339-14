@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN something))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ forces)
+            (NP (DT the) (NN decision)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP
+                      (VP
+                        (ADVP (RB carefully))
+                        (VBN reviewed))
+                      (, ,)
+                      (CC but)
+                      (VP
+                        (ADVP (RB still))))))))))))
+    (VP (VBP allow)
+      (PP (IN for)
+        (NP (PRP it))))
+    (-RRB- -RRB-) (. .)))
+
+nsubj(forces-3, something-1)
+nsubj(allow-13, something-1)
+rcmod(something-1, forces-3)
+det(decision-5, the-4)
+dobj(forces-3, decision-5)
+aux(reviewed-9, to-6)
+auxpass(reviewed-9, be-7)
+advmod(reviewed-9, carefully-8)
+infmod(decision-5, reviewed-9)
+infmod(decision-5, still-12)
+conj_but(reviewed-9, still-12)
+root(ROOT-0, allow-13)
+prep_for(allow-13, it-15)
+

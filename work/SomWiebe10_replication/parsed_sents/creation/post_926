@@ -1,0 +1,104 @@
+(ROOT
+  (S
+    (NP (DT The) (NN christian) (NN faith))
+    (VP (VBZ is)
+      (NP (DT a) (NN mockery)
+        (S
+          (VP (TO to)
+            (VP (VB humankind))))))
+    (. .)))
+
+det(faith-3, The-1)
+nn(faith-3, christian-2)
+nsubj(mockery-6, faith-3)
+cop(mockery-6, is-4)
+det(mockery-6, a-5)
+root(ROOT-0, mockery-6)
+aux(humankind-8, to-7)
+infmod(mockery-6, humankind-8)
+
+(ROOT
+  (S
+    (NP (DT All) (NNS religions))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN detriment))
+        (PP (TO to)
+          (NP
+            (NP (NNS humans))
+            (CC and)
+            (NP (DT the) (NN earth))))))
+    (. .)))
+
+det(religions-2, All-1)
+nsubj(detriment-5, religions-2)
+cop(detriment-5, are-3)
+det(detriment-5, a-4)
+root(ROOT-0, detriment-5)
+prep_to(detriment-5, humans-7)
+det(earth-10, the-9)
+prep_to(detriment-5, earth-10)
+conj_and(humans-7, earth-10)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB call)
+            (PRT (RP out))
+            (NP
+              (NP (NNS people))
+              (VP (VBG making)
+                (NP
+                  (NP (DT these)
+                    (ADJP (JJ insane))
+                    (NNS arguments))
+                  (SBAR
+                    (WHADVP (WRB whenever))
+                    (S
+                      (NP (PRP we))
+                      (VP (VBP see)
+                        (NP (PRP them))
+                        (SBAR (IN in) (NN order)
+                          (S
+                            (VP (TO to)
+                              (VP (VB STOP)
+                                (NP (DT the) (JJ religious))
+                                (PP (IN from)
+                                  (S
+                                    (VP (VBG destroying)
+                                      (NP
+                                        (NP (NN earth))
+                                        (CC and)
+                                        (NP (PRP$ its) (NN inhabitants))))))))))))))))))))
+    (. .)))
+
+nsubj(need-2, We-1)
+xsubj(call-4, We-1)
+root(ROOT-0, need-2)
+aux(call-4, to-3)
+xcomp(need-2, call-4)
+prt(call-4, out-5)
+dobj(call-4, people-6)
+partmod(people-6, making-7)
+det(arguments-10, these-8)
+amod(arguments-10, insane-9)
+dobj(making-7, arguments-10)
+advmod(see-13, whenever-11)
+nsubj(see-13, we-12)
+dep(arguments-10, see-13)
+dobj(see-13, them-14)
+mark(STOP-18, in-15)
+dep(STOP-18, order-16)
+aux(STOP-18, to-17)
+purpcl(see-13, STOP-18)
+det(religious-20, the-19)
+dobj(STOP-18, religious-20)
+prepc_from(STOP-18, destroying-22)
+dobj(destroying-22, earth-23)
+poss(inhabitants-26, its-25)
+dobj(destroying-22, inhabitants-26)
+conj_and(earth-23, inhabitants-26)
+

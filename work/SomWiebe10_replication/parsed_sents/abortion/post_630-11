@@ -1,0 +1,40 @@
+(ROOT
+  (FRAG (CC But)
+    (NP
+      (NP (JJR more))
+      (SBAR
+        (S
+          (VP (TO to)
+            (VP (VB expose)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (NNS people))
+                  (ADVP (RB really))
+                  (VP (VBP feel)
+                    (PP (IN about)
+                      (NP (NNS things)))
+                    (PP (IN without)
+                      (S
+                        (VP (VBG having)
+                          (S
+                            (VP (TO to)
+                              (VP (VB dig)
+                                (ADJP (RB very) (JJ much))))))))))))))))
+    (. .)))
+
+dep(more-2, But-1)
+root(ROOT-0, more-2)
+aux(expose-4, to-3)
+infmod(more-2, expose-4)
+advmod(feel-8, how-5)
+nsubj(feel-8, people-6)
+advmod(feel-8, really-7)
+ccomp(expose-4, feel-8)
+prep_about(feel-8, things-10)
+prepc_without(feel-8, having-12)
+aux(dig-14, to-13)
+xcomp(having-12, dig-14)
+advmod(much-16, very-15)
+acomp(dig-14, much-16)
+

@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP
+      (VP (VBZ is)
+        (PP (IN after)
+          (NP (NN truth))))
+      (CC and)
+      (VP (MD should)
+        (VP (VB be)
+          (ADJP (JJ willing)
+            (S
+              (VP (TO to)
+                (VP (VB look)
+                  (PP (IN at)
+                    (NP
+                      (NP (DT the) (NN evidence))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT whatever))
+                        (S
+                          (NP (DT that))
+                          (VP (MD may)
+                            (VP (VB be))))))))))))))
+    (. .)))
+
+nsubj(is-2, Science-1)
+nsubj(willing-8, Science-1)
+root(ROOT-0, is-2)
+prep_after(is-2, truth-4)
+aux(willing-8, should-6)
+cop(willing-8, be-7)
+conj_and(is-2, willing-8)
+aux(look-10, to-9)
+xcomp(willing-8, look-10)
+det(evidence-13, the-12)
+prep_at(look-10, evidence-13)
+dobj(be-18, evidence-13)
+rel(be-18, whatever-15)
+nsubj(be-18, that-16)
+aux(be-18, may-17)
+rcmod(evidence-13, be-18)
+

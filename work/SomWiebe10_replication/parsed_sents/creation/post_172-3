@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (VP (VB Get)
+      (NP (DT a) (CD hundred) (NNS people))
+      (S
+        (VP
+          (VP (TO to) (DT each)
+            (VP (VB throw)
+              (NP
+                (NP
+                  (NP (DT a) (NN handfull))
+                  (PP (IN of)
+                    (NP (NN sand))))
+                (, ,) (RB perhaps)
+                (NP
+                  (NP (DT a) (CD thousand) (NNS grains))
+                  (PP (IN per)
+                    (NP (NN handfull)))))))
+          (PRN (-LRB- -LRB-)
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ 's) (`` ``)
+                  (ADJP (JJ complex))
+                  ('' ''))))
+            (-RRB- -RRB-))))
+      (, ,)
+      (PP (IN at)
+        (NP (DT a) (NN wall))))
+    (. .)))
+
+root(ROOT-0, Get-1)
+det(people-4, a-2)
+num(people-4, hundred-3)
+dobj(Get-1, people-4)
+aux(throw-7, to-5)
+dep(throw-7, each-6)
+dep(Get-1, throw-7)
+det(handfull-9, a-8)
+dobj(throw-7, handfull-9)
+prep_of(handfull-9, sand-11)
+advmod(handfull-9, perhaps-13)
+det(grains-16, a-14)
+num(grains-16, thousand-15)
+dep(handfull-9, grains-16)
+prep_per(grains-16, handfull-18)
+nsubj(complex-23, that-20)
+cop(complex-23, 's-21)
+parataxis(throw-7, complex-23)
+det(wall-29, a-28)
+prep_at(Get-1, wall-29)
+

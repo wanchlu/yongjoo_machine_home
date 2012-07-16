@@ -1,0 +1,168 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ depends)
+            (PP (IN on)
+              (NP (DT the) (NNS circumstances)))))))
+    (. .)))
+
+nsubj(think-2, i-1)
+root(ROOT-0, think-2)
+nsubj(depends-4, it-3)
+ccomp(think-2, depends-4)
+det(circumstances-7, the-6)
+prep_on(depends-4, circumstances-7)
+
+(ROOT
+  (SQ
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBD were)
+            (VP (VBN raped)))
+          (, ,)
+          (CC and)
+          (VP
+            (ADVP (RB then))
+            (VBD got)
+            (ADJP (JJ pregnant))))))
+    (, ,) (MD would)
+    (NP (PRP you))
+    (ADVP (RB still))
+    (VP (VB keep)
+      (NP (DT the) (NN child)))
+    (. .)))
+
+mark(raped-4, if-1)
+nsubjpass(raped-4, you-2)
+nsubj(pregnant-9, you-2)
+auxpass(raped-4, were-3)
+advcl(keep-14, raped-4)
+advmod(pregnant-9, then-7)
+dep(pregnant-9, got-8)
+conj_and(raped-4, pregnant-9)
+advcl(keep-14, pregnant-9)
+aux(keep-14, would-11)
+nsubj(keep-14, you-12)
+advmod(keep-14, still-13)
+root(ROOT-0, keep-14)
+det(child-16, the-15)
+dobj(keep-14, child-16)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Certainly))
+      (NP (PRP it))
+      (VP (MD should) (RB n't)
+        (VP (VB be)
+          (NP
+            (NP (DT a) (NN form))
+            (PP (IN of)
+              (NP (NN birth) (NN control)))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN in)
+        (NP (DT some) (NNS cases)))
+      (NP (PRP it))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN allowed)))))
+    (. .)))
+
+advmod(form-7, Certainly-1)
+nsubj(form-7, it-2)
+aux(form-7, should-3)
+neg(form-7, n't-4)
+cop(form-7, be-5)
+det(form-7, a-6)
+root(ROOT-0, form-7)
+nn(control-10, birth-9)
+prep_of(form-7, control-10)
+det(cases-15, some-14)
+prep_in(allowed-19, cases-15)
+nsubjpass(allowed-19, it-16)
+aux(allowed-19, should-17)
+auxpass(allowed-19, be-18)
+conj_but(form-7, allowed-19)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (JJ besides))
+      (SBAR (IN if)
+        (S
+          (NP (PRP$ your) (NN argument))
+          (VP (VBZ is)
+            (SBAR (IN that)
+              (S
+                (NP (PRP we))
+                (VP (MD would)
+                  (VP (VB be)
+                    (VP (VBG taking)
+                      (NP (DT a) (NN life))
+                      (ADVP (RB then)))))))))))
+    (SQ (MD would) (RB n't)
+      (NP (PRP we))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB stop)
+              (NP
+                (NP (NN anything))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ takes)
+                      (NP
+                        (NP (DT a) (NN life))
+                        (PP (JJ such) (IN as)
+                          (NP
+                            (NP (NN war))
+                            (, ,)
+                            (NP (DT the) (NN death) (NN penalty))
+                            (, ,)
+                            (CC and)
+                            (NP (NN meat) (NN production))))))))))))))
+    (. ?)))
+
+dep(have-17, besides-1)
+mark(is-5, if-2)
+poss(argument-4, your-3)
+nsubj(is-5, argument-4)
+dep(besides-1, is-5)
+complm(taking-10, that-6)
+nsubj(taking-10, we-7)
+aux(taking-10, would-8)
+aux(taking-10, be-9)
+ccomp(is-5, taking-10)
+det(life-12, a-11)
+dobj(taking-10, life-12)
+advmod(taking-10, then-13)
+aux(have-17, would-14)
+neg(have-17, n't-15)
+nsubj(have-17, we-16)
+xsubj(stop-19, we-16)
+root(ROOT-0, have-17)
+aux(stop-19, to-18)
+xcomp(have-17, stop-19)
+dobj(stop-19, anything-20)
+nsubj(takes-22, anything-20)
+rcmod(anything-20, takes-22)
+det(life-24, a-23)
+dobj(takes-22, life-24)
+prep_such_as(life-24, war-27)
+det(penalty-31, the-29)
+nn(penalty-31, death-30)
+prep_such_as(life-24, penalty-31)
+conj_and(war-27, penalty-31)
+nn(production-35, meat-34)
+prep_such_as(life-24, production-35)
+conj_and(war-27, production-35)
+

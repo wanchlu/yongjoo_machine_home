@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN known)
+          (ADVP (RB scientifically)
+            (CC and)
+            (RB popularly))
+          (PP (IN since)
+            (NP
+              (NP (NNP Charles) (NNP Darwin) (POS 's))
+              (NN day)))
+          (SBAR (IN that)
+            (S
+              (NP (NN evolution))
+              (ADVP (RB truly))
+              (VP (VBD happened) (, ,)
+                (ADVP
+                  (ADVP (RB as) (RB surely))
+                  (PP (IN as)
+                    (NP (NN gravity))))))))))
+    (. .)))
+
+nsubjpass(known-4, It-1)
+aux(known-4, has-2)
+auxpass(known-4, been-3)
+root(ROOT-0, known-4)
+advmod(known-4, scientifically-5)
+advmod(known-4, popularly-7)
+conj_and(scientifically-5, popularly-7)
+nn(Darwin-10, Charles-9)
+poss(day-12, Darwin-10)
+prep_since(known-4, day-12)
+complm(happened-16, that-13)
+nsubj(happened-16, evolution-14)
+advmod(happened-16, truly-15)
+ccomp(known-4, happened-16)
+advmod(surely-19, as-18)
+advmod(happened-16, surely-19)
+prep_as(surely-19, gravity-21)
+

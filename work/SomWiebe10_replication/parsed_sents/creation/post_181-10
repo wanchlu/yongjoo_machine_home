@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN Since)
+        (S
+          (NP (PRP it))
+          (VP (VBZ contains)
+            (NP
+              (NP (RB only) (CD two) (NNS letters))
+              (PP (RB instead) (IN of)
+                (NP (CD 4)))))))
+      (NP (PRP it))
+      (VP (MD would)
+        (ADVP (RB actually))
+        (VP (VB be)
+          (ADJP (RBR more) (JJ likely)
+            (S
+              (VP (TO to)
+                (VP (VB occur))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBZ 's) (RB not)
+        (NP (DT the) (NN point))))
+    (. .)))
+
+mark(contains-3, Since-1)
+nsubj(contains-3, it-2)
+advcl(likely-15, contains-3)
+advmod(letters-6, only-4)
+num(letters-6, two-5)
+dobj(contains-3, letters-6)
+prep_instead_of(letters-6, 4-9)
+nsubj(likely-15, it-10)
+aux(likely-15, would-11)
+advmod(likely-15, actually-12)
+cop(likely-15, be-13)
+advmod(likely-15, more-14)
+root(ROOT-0, likely-15)
+aux(occur-17, to-16)
+xcomp(likely-15, occur-17)
+nsubj(point-24, that-20)
+cop(point-24, 's-21)
+neg(point-24, not-22)
+det(point-24, the-23)
+conj_but(likely-15, point-24)
+

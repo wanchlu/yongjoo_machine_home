@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP assume)
+        (PP (IN by)
+          (ADJP (JJ violent)))))
+    (NP (PRP you))
+    (VP (VBP mean)
+      (S
+        (VP (VBG causing)
+          (NP
+            (NP (JJ physical) (NN harm)
+              (CC and)
+              (NN destruction))
+            (PP (IN of)
+              (NP (NN property)))))))
+    (. ?)))
+
+nsubj(assume-2, I-1)
+dep(mean-6, assume-2)
+prep_by(assume-2, violent-4)
+nsubj(mean-6, you-5)
+root(ROOT-0, mean-6)
+xcomp(mean-6, causing-7)
+amod(harm-9, physical-8)
+dobj(causing-7, harm-9)
+dobj(causing-7, destruction-11)
+conj_and(harm-9, destruction-11)
+prep_of(harm-9, property-13)
+

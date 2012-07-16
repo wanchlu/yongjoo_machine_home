@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (NP (DT no) (NN peril)))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN need))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (NN savior))
+            (CC and)
+            (NP (DT no) (NN need)
+              (S
+                (VP (TO to)
+                  (VP (VB warn)
+                    (NP (NNS people))))))))))
+    (. .)))
+
+mark(is-3, If-1)
+expl(is-3, there-2)
+advcl(is-8, is-3)
+det(peril-5, no-4)
+nsubj(is-3, peril-5)
+expl(is-8, there-7)
+root(ROOT-0, is-8)
+det(need-10, no-9)
+nsubj(is-8, need-10)
+det(savior-13, a-12)
+prep_of(need-10, savior-13)
+det(need-16, no-15)
+prep_of(need-10, need-16)
+conj_and(savior-13, need-16)
+aux(warn-18, to-17)
+infmod(need-16, warn-18)
+dobj(warn-18, people-19)
+

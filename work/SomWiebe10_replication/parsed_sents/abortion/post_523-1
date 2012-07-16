@@ -1,0 +1,70 @@
+(ROOT
+  (S (`` ``)
+    (SBAR
+      (WHNP (WDT which))
+      (S
+        (VP (VBZ is)
+          (ADJP (JJ odd)))))
+    (, ,)
+    (S
+      (NP (PRP you))
+      (VP (VBG being)
+        (NP (DT a) (JJ military) (NN man))))
+    (. .)))
+
+nsubj(odd-4, which-2)
+cop(odd-4, is-3)
+dep(man-10, odd-4)
+nsubj(man-10, you-6)
+cop(man-10, being-7)
+det(man-10, a-8)
+amod(man-10, military-9)
+root(ROOT-0, man-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP we))
+      (VP (VBP 've)
+        (VP (VBN argued)
+          (ADVP (DT this) (IN before))
+          (: ...)
+          (FRAG (CC but)
+            (ADVP (RB now))
+            (SBAR (IN that)
+              (S
+                (NP (FW i))
+                (VP (VBP know)
+                  (SBAR
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP 're)
+                        (ADJP (JJ pre-military))))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (NP
+        (NP (PDT all) (DT the) (JJR more))
+        (VP (VBG meaning))))
+    (. .)))
+
+nsubj(argued-3, we-1)
+aux(argued-3, 've-2)
+ccomp(has-17, argued-3)
+dep(before-5, this-4)
+advmod(argued-3, before-5)
+dep(now-8, but-7)
+dep(argued-3, now-8)
+dep(know-11, that-9)
+nsubj(know-11, i-10)
+dep(now-8, know-11)
+nsubj(pre-military-14, you-12)
+cop(pre-military-14, 're-13)
+ccomp(know-11, pre-military-14)
+nsubj(has-17, it-16)
+root(ROOT-0, has-17)
+predet(more-20, all-18)
+det(more-20, the-19)
+dobj(has-17, more-20)
+partmod(more-20, meaning-21)
+

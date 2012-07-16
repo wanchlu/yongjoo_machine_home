@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (SBAR (RB Even) (IN though)
+      (S
+        (NP (NNP Denis) (NNP Lamoureux))
+        (VP (VBD attempted)
+          (S
+            (VP (TO to)
+              (VP (VB educate)
+                (NP (NNP Phil))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ seems)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN damage))
+          (VP (VBD was)
+            (VP (VBN done))))))
+    (. .)))
+
+advmod(attempted-5, Even-1)
+dep(attempted-5, though-2)
+nn(Lamoureux-4, Denis-3)
+nsubj(attempted-5, Lamoureux-4)
+xsubj(educate-7, Lamoureux-4)
+advcl(seems-11, attempted-5)
+aux(educate-7, to-6)
+xcomp(attempted-5, educate-7)
+dobj(educate-7, Phil-8)
+nsubj(seems-11, it-10)
+root(ROOT-0, seems-11)
+complm(done-16, that-12)
+det(damage-14, the-13)
+nsubjpass(done-16, damage-14)
+auxpass(done-16, was-15)
+ccomp(seems-11, done-16)
+

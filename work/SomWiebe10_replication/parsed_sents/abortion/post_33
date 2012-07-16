@@ -1,0 +1,192 @@
+(ROOT
+  (S
+    (S
+      (SBAR (RB Even) (IN if)
+        (S
+          (NP (NNS abortions))
+          (VP (`` ``) (VB kill)
+            (NP (NN life))
+            ('' ''))))
+      (, ,)
+      (NP (PRP it))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN justified)
+            (PP (IN as)
+              (S
+                (VP (VBG upholding)
+                  (NP
+                    (NP (DT a) (NN woman) (POS 's))
+                    (NN life))
+                  (SBAR (RB Even) (IN if)
+                    (S
+                      (NP (DT a) (NN fetus))
+                      (VP (VBZ is)
+                        (VP (VBN considered)
+                          (NP
+                            (NP (DT a) (`` ``) (NN baby) ('' ''))
+                            (CC or)
+                            (NP (JJ human) (NN life))))))))))))))
+    (, ,)
+    (NP (NNS abortions))
+    (VP (MD can)
+      (ADVP (RB still))
+      (VP (VB be)
+        (ADJP (JJ justified))))
+    (. .)))
+
+advmod(kill-5, Even-1)
+dep(kill-5, if-2)
+nsubj(kill-5, abortions-3)
+advcl(justified-12, kill-5)
+dobj(kill-5, life-6)
+nsubjpass(justified-12, it-9)
+aux(justified-12, can-10)
+auxpass(justified-12, be-11)
+ccomp(justified-37, justified-12)
+prepc_as(justified-12, upholding-14)
+det(woman-16, a-15)
+poss(life-18, woman-16)
+dobj(upholding-14, life-18)
+advmod(considered-24, Even-19)
+dep(considered-24, if-20)
+det(fetus-22, a-21)
+nsubjpass(considered-24, fetus-22)
+auxpass(considered-24, is-23)
+dep(upholding-14, considered-24)
+det(baby-27, a-25)
+dobj(considered-24, baby-27)
+amod(life-31, human-30)
+dobj(considered-24, life-31)
+conj_or(baby-27, life-31)
+nsubj(justified-37, abortions-33)
+aux(justified-37, can-34)
+advmod(justified-37, still-35)
+cop(justified-37, be-36)
+root(ROOT-0, justified-37)
+
+(ROOT
+  (S
+    (NP (DT The) (`` ``) (NN baby) ('' ''))
+    (VP (VBZ is)
+      (ADVP (RB still))
+      (RB not)
+      (NP (DT a) (NN citizen))
+      (PP (IN with)
+        (NP
+          (NP (NNS rights))
+          (, ,)
+          (SBAR (IN while)
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (PP (IN in)
+                  (NP (DT the) (NN womb)))))))))
+    (. .)))
+
+det(baby-3, The-1)
+nsubj(citizen-9, baby-3)
+cop(citizen-9, is-5)
+advmod(citizen-9, still-6)
+neg(citizen-9, not-7)
+det(citizen-9, a-8)
+root(ROOT-0, citizen-9)
+prep_with(citizen-9, rights-11)
+mark(is-15, while-13)
+nsubj(is-15, it-14)
+dep(rights-11, is-15)
+det(womb-18, the-17)
+prep_in(is-15, womb-18)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT this) (NN case)))
+    (, ,)
+    (NP (DT the) (NN woman))
+    (VP (VBZ 's)
+      (ADJP (JJ right)
+        (S
+          (VP (TO to)
+            (VP (VB choose)
+              (NP
+                (NP (JJ outweighs) (NNS considerations))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN life))
+                    (PP (IN of)
+                      (NP (DT the) (NN fetus)))))))))))
+    (. .)))
+
+det(case-3, this-2)
+prep_in(right-8, case-3)
+det(woman-6, the-5)
+nsubj(right-8, woman-6)
+cop(right-8, 's-7)
+root(ROOT-0, right-8)
+aux(choose-10, to-9)
+xcomp(right-8, choose-10)
+amod(considerations-12, outweighs-11)
+dobj(choose-10, considerations-12)
+det(life-15, the-14)
+prep_of(considerations-12, life-15)
+det(fetus-18, the-17)
+prep_of(life-15, fetus-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN life))
+      (PP (IN of)
+        (NP (DT the) (NN woman))))
+    (VP (VBZ takes)
+      (NP (NN precedent))
+      (PP (IN over)
+        (NP
+          (NP (DT the) (NN life))
+          (PP (IN of)
+            (NP (DT the) (NN fetus))))))
+    (. .)))
+
+det(life-2, The-1)
+nsubj(takes-6, life-2)
+det(woman-5, the-4)
+prep_of(life-2, woman-5)
+root(ROOT-0, takes-6)
+dobj(takes-6, precedent-7)
+det(life-10, the-9)
+prep_over(takes-6, life-10)
+det(fetus-13, the-12)
+prep_of(life-10, fetus-13)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP
+      (VP (VBZ is)
+        (ADJP
+          (ADJP (JJ pro-life))
+          (PRN (-LRB- -LRB-)
+            (ADJP (JJ pro-the-life-of-the-woman))
+            (-RRB- -RRB-))))
+      (CC and)
+      (VP
+        (ADVP (RB so))
+        (VBZ respects)
+        (NP
+          (NP (DT the) (NN dignity))
+          (PP (IN of)
+            (NP (NN life))))))
+    (. .)))
+
+nsubj(pro-life-3, This-1)
+nsubj(respects-9, This-1)
+cop(pro-life-3, is-2)
+root(ROOT-0, pro-life-3)
+dep(pro-life-3, pro-the-life-of-the-woman-5)
+advmod(respects-9, so-8)
+conj_and(pro-life-3, respects-9)
+det(dignity-11, the-10)
+dobj(respects-9, dignity-11)
+prep_of(dignity-11, life-13)
+

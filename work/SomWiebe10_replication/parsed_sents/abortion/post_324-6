@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT a) (NN problem))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT a) (NN woman))
+              (VP (VBZ is)
+                (VP (VBN forced)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (VP (VBN affected)
+                          (PP (IN by)
+                            (NP
+                              (NP (DT another) (NN person))
+                              (PP (IN in)
+                                (NP (DT a) (NN way))))))))))))))))
+    (NP (PRP she))
+    (VP (VBZ does) (RB not)
+      (VP (VB want)))
+    (. .)))
+
+expl('s-2, there-1)
+dep(want-22, 's-2)
+det(problem-4, a-3)
+nsubj('s-2, problem-4)
+tmod(forced-9, problem-4)
+advmod(forced-9, when-5)
+det(woman-7, a-6)
+nsubjpass(forced-9, woman-7)
+xsubj(affected-12, woman-7)
+auxpass(forced-9, is-8)
+dep(problem-4, forced-9)
+aux(affected-12, to-10)
+auxpass(affected-12, be-11)
+xcomp(forced-9, affected-12)
+det(person-15, another-14)
+agent(affected-12, person-15)
+det(way-18, a-17)
+prep_in(person-15, way-18)
+nsubj(want-22, she-19)
+aux(want-22, does-20)
+neg(want-22, not-21)
+root(ROOT-0, want-22)
+

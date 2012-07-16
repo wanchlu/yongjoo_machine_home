@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN name))
+        (, ,)
+        (NP (DT a) (NN personality))
+        (, ,)
+        (NP (JJ behavioral) (NNS patterns))
+        (, ,)
+        (NP (NNS likes))
+        (CC and)
+        (NP
+          (NP (NN dislikes))
+          (, ,)
+          (NP (NNS skills))
+          (, ,) (FW etc.))))
+    (. .)))
+
+nsubj(has-2, It-1)
+root(ROOT-0, has-2)
+det(name-4, a-3)
+dobj(has-2, name-4)
+det(personality-7, a-6)
+dobj(has-2, personality-7)
+conj_and(name-4, personality-7)
+amod(patterns-10, behavioral-9)
+dobj(has-2, patterns-10)
+conj_and(name-4, patterns-10)
+dobj(has-2, likes-12)
+conj_and(name-4, likes-12)
+dobj(has-2, dislikes-14)
+conj_and(name-4, dislikes-14)
+appos(dislikes-14, skills-16)
+dep(dislikes-14, etc.-18)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ human) (NN person))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (MD can)
+              (VP
+                (VP (VB touch))
+                (CC and)
+                (VP (VB see)
+                  (CC and)
+                  (VB feel))))))))
+    (. .)))
+
+det(person-3, A-1)
+amod(person-3, human-2)
+nsubj(one-5, person-3)
+cop(one-5, is-4)
+root(ROOT-0, one-5)
+dobj(touch-8, one-5)
+nsubj(touch-8, you-6)
+nsubj(see-10, you-6)
+aux(touch-8, can-7)
+rcmod(one-5, touch-8)
+rcmod(one-5, see-10)
+conj_and(touch-8, see-10)
+conj_and(touch-8, feel-12)
+conj_and(see-10, feel-12)
+

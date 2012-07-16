@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (NNP Life))
+    (`` ``)
+    (PP (IN in)
+      (NP
+        (NP (NN toto))
+        ('' '')
+        (SBAR
+          (S
+            (VP (VBZ is) (RB n't)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is)
+                    (VP (VBN meant)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP
+                            (NP (DT the) (NN question) ('' ''))
+                            (SBAR
+                              (WHADVP (WRB When))
+                              (S
+                                (VP (VBZ does)
+                                  (NP (NN life))))))
+                          (VP (VBP begin) ('' '')))))))))))))
+    (, ,)
+    (VP (VBZ is)
+      (VP (VBN asked)))
+    (. .)))
+
+nsubjpass(asked-22, Life-1)
+prep_in(asked-22, toto-4)
+rcmod(toto-4, is-6)
+neg(is-6, n't-7)
+nsubjpass(meant-10, what-8)
+auxpass(meant-10, is-9)
+ccomp(is-6, meant-10)
+advmod(begin-18, when-11)
+det(question-13, the-12)
+nsubj(begin-18, question-13)
+advmod(does-16, When-15)
+dep(question-13, does-16)
+dobj(does-16, life-17)
+advcl(meant-10, begin-18)
+auxpass(asked-22, is-21)
+root(ROOT-0, asked-22)
+

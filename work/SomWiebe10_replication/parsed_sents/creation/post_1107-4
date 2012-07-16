@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP have)
+        (VP (VBN done)
+          (ADVP (RB quite)
+            (NP (DT a) (RB bit)))
+          (PP (IN of)
+            (NP (NN research)))))
+      (CC and)
+      (VP (VBP have)
+        (VP (VBN found)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP are)
+                      (VP (VBG looking)
+                        (PP (IN for)
+                          (NP (NNS answers))))))))
+              (VP (MD will)
+                (VP (VB find)
+                  (S
+                    (NP (NNS things))
+                    (VP (TO to)
+                      (VP (VB support)
+                        (NP (PRP$ their) (NN belief))))))))))))
+    (. .)))
+
+nsubj(done-3, I-1)
+nsubj(found-11, I-1)
+aux(done-3, have-2)
+root(ROOT-0, done-3)
+advmod(done-3, quite-4)
+det(bit-6, a-5)
+pobj(quite-4, bit-6)
+prep_of(done-3, research-8)
+aux(found-11, have-10)
+conj_and(done-3, found-11)
+complm(find-20, that-12)
+nsubj(looking-16, people-13)
+nsubj(find-20, people-13)
+aux(looking-16, are-15)
+rcmod(people-13, looking-16)
+prep_for(looking-16, answers-18)
+aux(find-20, will-19)
+ccomp(found-11, find-20)
+nsubj(support-23, things-21)
+aux(support-23, to-22)
+xcomp(find-20, support-23)
+poss(belief-25, their-24)
+dobj(support-23, belief-25)
+

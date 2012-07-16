@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB Too) (JJ many) (NNS times))
+      (SBAR
+        (S
+          (NP
+            (NP
+              (NP (NN hospital))
+              (NP (NNP ER) (POS 's)))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (ADVP (RB usually))
+                (NNP Catholic))
+              (-RRB- -RRB-)))
+          (VP (VBP refuse)
+            (S
+              (VP (TO to)
+                (VP (VB give)
+                  (NP (NN woman))
+                  (NP
+                    (NP (DT the) (NN information))
+                    (SBAR (IN that)
+                      (S
+                        (NP (PRP they))
+                        (VP (MD can)
+                          (VP (VB take)
+                            (NP (DT the) (`` ``) (NN morning))
+                            (PP (IN after) ('' '')
+                              (NP (NN pill)
+                                (CC or)
+                                (NNS pharmacists)))))))))))))))
+    (VP (VBP refuse)
+      (S
+        (VP (TO to)
+          (VP (VB give)
+            (NP (PRP them))
+            (PRT (RP out)))))
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's) (`` ``)
+            (PP (IN against)
+              (NP (PRP$ their) (NN religion)))
+            ('' '')))))
+    (. .)))
+
+advmod(times-3, Too-1)
+amod(times-3, many-2)
+dobj(refuse-11, times-3)
+nsubj(refuse-29, times-3)
+xsubj(give-31, times-3)
+nsubj(refuse-11, hospital-4)
+xsubj(give-13, hospital-4)
+poss(hospital-4, ER-5)
+advmod(Catholic-9, usually-8)
+appos(hospital-4, Catholic-9)
+rcmod(times-3, refuse-11)
+aux(give-13, to-12)
+xcomp(refuse-11, give-13)
+iobj(give-13, woman-14)
+det(information-16, the-15)
+dobj(give-13, information-16)
+complm(take-20, that-17)
+nsubj(take-20, they-18)
+aux(take-20, can-19)
+dep(information-16, take-20)
+det(morning-23, the-21)
+tmod(take-20, morning-23)
+prep_after(take-20, pill-26)
+prep_after(take-20, pharmacists-28)
+conj_or(pill-26, pharmacists-28)
+root(ROOT-0, refuse-29)
+aux(give-31, to-30)
+xcomp(refuse-29, give-31)
+dobj(give-31, them-32)
+prt(give-31, out-33)
+mark('s-36, because-34)
+nsubj('s-36, it-35)
+advcl(refuse-29, 's-36)
+poss(religion-40, their-39)
+prep_against('s-36, religion-40)
+

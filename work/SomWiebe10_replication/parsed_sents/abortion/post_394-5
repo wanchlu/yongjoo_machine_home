@@ -1,0 +1,29 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (DT the) (NN egg))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN mother) (POS 's))
+                  (NN womb))))
+            (VP (VBZ is)
+              (VP (VBN fertilised)))))))
+    (. ?)))
+
+nsubj(happened-2, What-1)
+root(ROOT-0, happened-2)
+advmod(fertilised-12, when-3)
+det(egg-5, the-4)
+nsubjpass(fertilised-12, egg-5)
+det(mother-8, the-7)
+poss(womb-10, mother-8)
+prep_in(egg-5, womb-10)
+auxpass(fertilised-12, is-11)
+advcl(happened-2, fertilised-12)
+

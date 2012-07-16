@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ human) (NN lung))
+      (VP (VBZ is)
+        (ADJP (RB relatively) (JJ inefficient))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NNS lungs))
+        (PP (IN of)
+          (NP (NNS birds))))
+      (VP (VBP are)
+        (ADJP (RB far) (JJ superior)
+          (PP (IN in)
+            (S
+              (VP (VBG associating)
+                (NP
+                  (NP (NNP Oxygen))
+                  (PP (IN with)
+                    (NP (NN blood) (NNS cells))))))))))
+    (. .)))
+
+det(lung-3, The-1)
+amod(lung-3, human-2)
+nsubj(inefficient-6, lung-3)
+cop(inefficient-6, is-4)
+advmod(inefficient-6, relatively-5)
+root(ROOT-0, inefficient-6)
+det(lungs-9, the-8)
+nsubj(superior-14, lungs-9)
+prep_of(lungs-9, birds-11)
+cop(superior-14, are-12)
+advmod(superior-14, far-13)
+conj_and(inefficient-6, superior-14)
+prepc_in(superior-14, associating-16)
+dobj(associating-16, Oxygen-17)
+nn(cells-20, blood-19)
+prep_with(Oxygen-17, cells-20)
+

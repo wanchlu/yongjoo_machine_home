@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ has)
+      (VP (VBN uncovered)
+        (NP
+          (NP (DT a) (JJ vast) (NN amount))
+          (PP (IN of)
+            (NP
+              (NP (NNS fossils))
+              (CC and)
+              (NP (JJ other) (NN evidence))))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP show)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (NN man))
+                    (VP (VBD evolved)
+                      (VP (VB form)
+                        (NP (DT a) (JJ common) (NN ancestor))))))))))))
+    (. .)))
+
+nsubj(uncovered-3, Science-1)
+aux(uncovered-3, has-2)
+root(ROOT-0, uncovered-3)
+det(amount-6, a-4)
+amod(amount-6, vast-5)
+dobj(uncovered-3, amount-6)
+nsubj(show-13, amount-6)
+prep_of(amount-6, fossils-8)
+amod(evidence-11, other-10)
+prep_of(amount-6, evidence-11)
+conj_and(fossils-8, evidence-11)
+rcmod(amount-6, show-13)
+advmod(evolved-16, how-14)
+nsubj(evolved-16, man-15)
+ccomp(show-13, evolved-16)
+xcomp(evolved-16, form-17)
+det(ancestor-20, a-18)
+amod(ancestor-20, common-19)
+dobj(form-17, ancestor-20)
+

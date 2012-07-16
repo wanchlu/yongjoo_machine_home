@@ -1,0 +1,40 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP$ My) (NN question))
+    (VP (VBZ is)
+      (NP
+        (NP (DT this))
+        (: :)
+        (SQ (VBZ Is)
+          (NP
+            (NP (DT a) (NN Scientist))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ studies)
+                  (S
+                    (NP (NNP Evolution))
+                    (ADJP (RBR more) (JJ credible)
+                      (PP (IN than)
+                        (NP (CD one))))
+                    (S
+                      (VP (VBG studying)
+                        (NP (NN Creation))))))))))))
+    (. ?)))
+
+poss(question-3, My-2)
+nsubj(this-5, question-3)
+cop(this-5, is-4)
+root(ROOT-0, this-5)
+dep(this-5, Is-7)
+det(Scientist-9, a-8)
+nsubj(Is-7, Scientist-9)
+nsubj(studies-11, Scientist-9)
+rcmod(Scientist-9, studies-11)
+nsubj(studying-17, Evolution-12)
+advmod(credible-14, more-13)
+dep(studying-17, credible-14)
+prep_than(credible-14, one-16)
+xcomp(studies-11, studying-17)
+dobj(studying-17, Creation-18)
+

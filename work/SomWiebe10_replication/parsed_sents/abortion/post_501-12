@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT These) (NNS pro-lifers))
+      (PP (IN in)
+        (NP (DT the) (NNP U.S.))))
+    (VP (VBP are)
+      (ADVP (RB so))
+      (VP (VBN disconnected)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (JJ real) (NN world-living))
+            (PP (IN in)
+              (NP
+                (NP (JJ wealthy) (NNS suburbs))
+                (CC and)
+                (S
+                  (S
+                    (VP (VBG driving)
+                      (NP (NNP SUV) (POS 's))))
+                  (: -)
+                  (S
+                    (VP (VB have)
+                      (NP
+                        (NP (DT no) (NN idea))
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP
+                              (NP (PRP$ its) (JJ like) (NN ffor))
+                              (NP (DT these) (JJ poor) (NNS women)))
+                            (VP (VBP live)
+                              (NP (NN day))
+                              (PP (TO to)
+                                (NP
+                                  (NP (NN day))
+                                  (VP (VBG trying)
+                                    (S
+                                      (VP (TO to)
+                                        (VP (VB feed)
+                                          (CC and)
+                                          (VB cloth)
+                                          (NP (PRP$ their) (NNS kids)))))))))))))))))))))
+    (. !)))
+
+det(pro-lifers-2, These-1)
+nsubjpass(disconnected-8, pro-lifers-2)
+det(U.S.-5, the-4)
+prep_in(pro-lifers-2, U.S.-5)
+auxpass(disconnected-8, are-6)
+advmod(disconnected-8, so-7)
+root(ROOT-0, disconnected-8)
+det(world-living-12, the-10)
+amod(world-living-12, real-11)
+prep_to(disconnected-8, world-living-12)
+amod(suburbs-15, wealthy-14)
+prep_in(world-living-12, suburbs-15)
+prep_in(world-living-12, driving-17)
+conj_and(suburbs-15, driving-17)
+dobj(driving-17, SUV-18)
+possessive(SUV-18, 's-19)
+parataxis(driving-17, have-21)
+det(idea-23, no-22)
+dobj(have-21, idea-23)
+dobj(live-31, idea-23)
+rel(live-31, what-24)
+poss(ffor-27, its-25)
+amod(ffor-27, like-26)
+nsubj(live-31, ffor-27)
+det(women-30, these-28)
+amod(women-30, poor-29)
+dep(ffor-27, women-30)
+rcmod(idea-23, live-31)
+tmod(live-31, day-32)
+prep_to(live-31, day-34)
+xsubj(feed-37, day-34)
+partmod(day-34, trying-35)
+aux(feed-37, to-36)
+xcomp(trying-35, feed-37)
+xcomp(trying-35, cloth-39)
+conj_and(feed-37, cloth-39)
+poss(kids-41, their-40)
+dobj(feed-37, kids-41)
+

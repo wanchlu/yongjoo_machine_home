@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NNS people))
+        (VP (VBP live)
+          (PP (IN on)
+            (NP
+              (NP (DT an) (NN island))
+              (PP (IN with)
+                (NP (DT a) (NN volcano))))))))
+    (NP (PRP you))
+    (VP (MD can)
+      (VP (VB be)
+        (ADJP (JJ certain)
+          (SBAR
+            (S
+              (NP (NN fire)
+                (CC and)
+                (NN lava))
+              (VP (MD will)
+                (VP (VB be)
+                  (VP (VBN given)
+                    (PP (IN as)
+                      (NP
+                        (NP (NN evidence))
+                        (PP (IN of)
+                          (NP
+                            (NP (PRP$ their) (NN God) (POS 's))
+                            (NN expression)))))))))))))
+    (. .)))
+
+mark(live-4, If-1)
+det(people-3, a-2)
+nsubj(live-4, people-3)
+advcl(certain-14, live-4)
+det(island-7, an-6)
+prep_on(live-4, island-7)
+det(volcano-10, a-9)
+prep_with(island-7, volcano-10)
+nsubj(certain-14, you-11)
+aux(certain-14, can-12)
+cop(certain-14, be-13)
+root(ROOT-0, certain-14)
+nsubjpass(given-20, fire-15)
+conj_and(fire-15, lava-17)
+nsubjpass(given-20, lava-17)
+aux(given-20, will-18)
+auxpass(given-20, be-19)
+dep(certain-14, given-20)
+prep_as(given-20, evidence-22)
+poss(God-25, their-24)
+poss(expression-27, God-25)
+prep_of(evidence-22, expression-27)
+

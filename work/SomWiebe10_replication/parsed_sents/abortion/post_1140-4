@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (NN Anniversary) (NNS reactions))
+    (VP (VBP are)
+      (NP
+        (NP
+          (NP (DT an) (NN increase))
+          (PP (IN in)
+            (NP
+              (NP (NNS symptoms))
+              (PP (IN around)
+                (NP
+                  (NP (DT the) (NN time))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN anniversary))
+                      (PP (IN of)
+                        (NP (DT the) (NN abortion))))))))))
+        (, ,)
+        (NP
+          (NP (DT the) (JJ due) (NN date))
+          (PP (IN of)
+            (NP (DT the) (JJ aborted) (NN child))))
+        (, ,)
+        (CC or)
+        (NP (DT both))))
+    (. .)))
+
+nn(reactions-2, Anniversary-1)
+nsubj(increase-5, reactions-2)
+cop(increase-5, are-3)
+det(increase-5, an-4)
+root(ROOT-0, increase-5)
+prep_in(increase-5, symptoms-7)
+det(time-10, the-9)
+prep_around(symptoms-7, time-10)
+det(anniversary-13, the-12)
+prep_of(time-10, anniversary-13)
+det(abortion-16, the-15)
+prep_of(anniversary-13, abortion-16)
+det(date-20, the-18)
+amod(date-20, due-19)
+conj_or(increase-5, date-20)
+det(child-24, the-22)
+amod(child-24, aborted-23)
+prep_of(date-20, child-24)
+conj_or(increase-5, both-27)
+

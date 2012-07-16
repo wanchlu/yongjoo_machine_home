@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Viruses))
+      (VP (VBP are)
+        (ADJP (JJ interesting) (RB too))
+        (, ,)
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP do) (RB n't)
+              (VP (VB grow)))))))
+    (PRN (, ,)
+      (S
+        (NP (PRP they))
+        (VP (VBP lack)
+          (NP (DT a) (NN metabolism))))
+      (, ,))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (MD ca) (RB n't)
+        (VP (VB reproduce)
+          (NP (PRP themselves)))))
+    (. .)))
+
+nsubj(interesting-3, Viruses-1)
+cop(interesting-3, are-2)
+root(ROOT-0, interesting-3)
+advmod(interesting-3, too-4)
+mark(grow-10, because-6)
+nsubj(grow-10, they-7)
+aux(grow-10, do-8)
+neg(grow-10, n't-9)
+advcl(interesting-3, grow-10)
+nsubj(lack-13, they-12)
+dep(interesting-3, lack-13)
+det(metabolism-15, a-14)
+dobj(lack-13, metabolism-15)
+nsubj(reproduce-21, they-18)
+aux(reproduce-21, ca-19)
+neg(reproduce-21, n't-20)
+conj_and(interesting-3, reproduce-21)
+dobj(reproduce-21, themselves-22)
+

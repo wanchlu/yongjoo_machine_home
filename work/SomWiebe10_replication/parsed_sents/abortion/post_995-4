@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (VP (VBN commited)
+        (NP (NN murder))))
+    (. !)))
+
+nsubj(commited-3, You-1)
+aux(commited-3, have-2)
+root(ROOT-0, commited-3)
+dobj(commited-3, murder-4)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB instantly))
+      (VP (VBP know)
+        (NP (DT the) (NN reply))
+        (PP (TO to)
+          (NP (DT that) (NN statement)))))
+    (, ,)
+    (S
+      (PP (IN after)
+        (NP (DT all)))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADVP (RB just))
+        (NP (DT an) (NN egg))))
+    (, ,) (IN so)
+    (S
+      (ADVP (RB therefore))
+      (NP (EX there))
+      (VP (VBZ is) (RB n't)
+        (NP
+          (NP (DT any) (JJ developed) (NN life))
+          (VP (VBG growing)
+            (ADVP (RB inside))
+            (: ...)
+            (S
+              (ADVP (RB yet)))))))
+    (. !)))
+
+nsubj(know-3, I-1)
+advmod(know-3, instantly-2)
+root(ROOT-0, know-3)
+det(reply-5, the-4)
+dobj(know-3, reply-5)
+det(statement-8, that-7)
+prep_to(know-3, statement-8)
+prep_after(egg-17, all-11)
+nsubj(egg-17, it-13)
+cop(egg-17, 's-14)
+advmod(egg-17, just-15)
+det(egg-17, an-16)
+ccomp(know-3, egg-17)
+dep(know-3, so-19)
+advmod(is-22, therefore-20)
+expl(is-22, there-21)
+ccomp(know-3, is-22)
+neg(is-22, n't-23)
+det(life-26, any-24)
+amod(life-26, developed-25)
+nsubj(is-22, life-26)
+partmod(life-26, growing-27)
+advmod(growing-27, inside-28)
+parataxis(growing-27, yet-30)
+

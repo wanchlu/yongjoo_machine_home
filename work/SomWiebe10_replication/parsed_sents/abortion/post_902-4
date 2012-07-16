@@ -1,0 +1,58 @@
+(ROOT
+  (SQ (NNP Should)
+    (NP (PRP we))
+    (VP
+      (PRN (-LRB- -LRB-)
+        (NP (DT the)
+          (NX (NNS people)))
+        (-RRB- -RRB-))
+      (VB allow)
+      (NP (DT a) (NN woman))
+      (SBAR
+        (PP (TO to))
+        (S
+          (VP (VBP decide)
+            (SBAR
+              (S
+                (NP (PRP she))
+                (VP (VBZ does) (RB n't)
+                  (VP (VB want)
+                    (NP (PRP$ her) (NN child))
+                    (SBAR (IN as)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ is)
+                          (VP (VBG coming)
+                            (PRT (RP down))
+                            (NP
+                              (NP (DT the) (NN birth) (NN canal))
+                              (PP (IN at)
+                                (NP (CD 9) (NNS months))))))))))))))))
+    (. ?)))
+
+dep(allow-7, Should-1)
+nsubj(allow-7, we-2)
+det(people-5, the-4)
+dep(allow-7, people-5)
+root(ROOT-0, allow-7)
+det(woman-9, a-8)
+dobj(allow-7, woman-9)
+dep(decide-11, to-10)
+dep(allow-7, decide-11)
+nsubj(want-15, she-12)
+aux(want-15, does-13)
+neg(want-15, n't-14)
+ccomp(decide-11, want-15)
+poss(child-17, her-16)
+dobj(want-15, child-17)
+mark(coming-21, as-18)
+nsubj(coming-21, it-19)
+aux(coming-21, is-20)
+advcl(want-15, coming-21)
+prt(coming-21, down-22)
+det(canal-25, the-23)
+nn(canal-25, birth-24)
+dobj(coming-21, canal-25)
+num(months-28, 9-27)
+prep_at(canal-25, months-28)
+

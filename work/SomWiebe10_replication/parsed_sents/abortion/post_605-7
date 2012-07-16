@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is))))
+    (, ,)
+    (NP (NN today))
+    (, ,)
+    (NP
+      (NP (NN something))
+      (PP (IN like)
+        (NP
+          (NP (CD 4))
+          (PP (IN in)
+            (NP (CD 1000) (NNS women))))))
+    (VP (MD will)
+      (VP (VB die) (, ,)
+        (ADVP (RB worldwide))
+        (, ,)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN result))
+            (PP (IN of)
+              (NP (NN pregnancy)))))))
+    (. .)))
+
+mark(is-3, As-1)
+nsubj(is-3, it-2)
+advcl(die-14, is-3)
+tmod(die-14, today-5)
+nsubj(die-14, something-7)
+prep_like(something-7, 4-9)
+num(women-12, 1000-11)
+prep_in(4-9, women-12)
+aux(die-14, will-13)
+root(ROOT-0, die-14)
+advmod(die-14, worldwide-16)
+det(result-20, a-19)
+prep_as(die-14, result-20)
+prep_of(result-20, pregnancy-22)
+

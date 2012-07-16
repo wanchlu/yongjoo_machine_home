@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (MD can) (RB not)
+          (VP (VB survive)
+            (SBAR (IN because)
+              (S
+                (NP (PRP we))
+                (VP (VBP are)
+                  (ADJP (RB too) (JJ stupid)
+                    (S
+                      (VP (TO to)
+                        (VP (VB know)
+                          (SBAR
+                            (WHNP (WP what))
+                            (S
+                              (VP (TO to)
+                                (VP (VB do)
+                                  (NP (DT that)))))))))))))))))
+    (VP (VBZ is)
+      (NP (PRP$ our) (JJ own) (NN fault)))
+    (. .)))
+
+mark(survive-5, If-1)
+nsubj(survive-5, we-2)
+aux(survive-5, can-3)
+neg(survive-5, not-4)
+csubj(fault-20, survive-5)
+mark(stupid-10, because-6)
+nsubj(stupid-10, we-7)
+cop(stupid-10, are-8)
+advmod(stupid-10, too-9)
+advcl(survive-5, stupid-10)
+aux(know-12, to-11)
+xcomp(stupid-10, know-12)
+nsubj(do-15, what-13)
+aux(do-15, to-14)
+ccomp(know-12, do-15)
+xcomp(know-12, do-15)
+dobj(do-15, that-16)
+cop(fault-20, is-17)
+poss(fault-20, our-18)
+amod(fault-20, own-19)
+root(ROOT-0, fault-20)
+

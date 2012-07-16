@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNS scientists))
+    (VP (VBP have)
+      (ADVP (RB already))
+      (VP (VBN claimed)
+        (SBAR (IN that)
+          (S
+            (NP (NNP ID))
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP
+                  (VP (VBN falsified))
+                  (CC and)
+                  (VP
+                    (ADVP (RB adequately))
+                    (VBN refuted) (, ,)
+                    (PP (JJ such)
+                      (PP (IN as)
+                        (NP (NNP Ken) (NNP Miller))))))))))))
+    (. .)))
+
+det(scientists-2, Some-1)
+nsubj(claimed-5, scientists-2)
+aux(claimed-5, have-3)
+advmod(claimed-5, already-4)
+root(ROOT-0, claimed-5)
+complm(falsified-10, that-6)
+nsubjpass(falsified-10, ID-7)
+nsubjpass(refuted-13, ID-7)
+aux(falsified-10, has-8)
+auxpass(falsified-10, been-9)
+ccomp(claimed-5, falsified-10)
+advmod(refuted-13, adequately-12)
+ccomp(claimed-5, refuted-13)
+conj_and(falsified-10, refuted-13)
+nn(Miller-18, Ken-17)
+prep_such_as(refuted-13, Miller-18)
+

@@ -1,0 +1,33 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP We))
+      (VP (VBP do) (RB n't)
+        (VP (VB know))))
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP do)
+        (SBAR
+          (S
+            (VP (VBP know)
+              (SBAR
+                (S
+                  (NP (DT a) (NN designer))
+                  (VP (VBD was) (RB n't)
+                    (VP (VBN involved))))))))))
+    (. .)))
+
+nsubj(know-5, We-2)
+aux(know-5, do-3)
+neg(know-5, n't-4)
+root(ROOT-0, know-5)
+nsubj(do-8, we-7)
+conj_but(know-5, do-8)
+ccomp(do-8, know-9)
+det(designer-11, a-10)
+nsubjpass(involved-14, designer-11)
+auxpass(involved-14, was-12)
+neg(involved-14, n't-13)
+ccomp(know-9, involved-14)
+

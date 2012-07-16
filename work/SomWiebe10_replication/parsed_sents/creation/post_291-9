@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (NN Evidence))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (NNS data))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (VP (VBN used)
+                  (S
+                    (VP (TO to)
+                      (VP (VB support)
+                        (NP
+                          (NP (PRP$ your) (NNS hypothesis))
+                          (, ,)
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ makes)
+                                (NP
+                                  (NP (NNS predictions))
+                                  (PP (IN of)
+                                    (NP (JJ future) (JJ experimental) (NNS results))))))))))))))))
+        (, ,)
+        (CC or)
+        (NP
+          (NP (NNS data))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD will)
+                (VP (VB be)
+                  (VP (VBN discovered)
+                    (PP (IN at)
+                      (NP (DT a) (JJ later) (NN date)))))))))))
+    (. .)))
+
+nsubj(data-3, Evidence-1)
+cop(data-3, is-2)
+root(ROOT-0, data-3)
+nsubjpass(used-6, data-3)
+auxpass(used-6, is-5)
+rcmod(data-3, used-6)
+aux(support-8, to-7)
+xcomp(used-6, support-8)
+poss(hypothesis-10, your-9)
+dobj(support-8, hypothesis-10)
+nsubj(makes-13, hypothesis-10)
+rcmod(hypothesis-10, makes-13)
+dobj(makes-13, predictions-14)
+amod(results-18, future-16)
+amod(results-18, experimental-17)
+prep_of(predictions-14, results-18)
+conj_or(data-3, data-21)
+nsubjpass(used-6, data-21)
+nsubjpass(discovered-25, data-21)
+aux(discovered-25, will-23)
+auxpass(discovered-25, be-24)
+rcmod(data-21, discovered-25)
+det(date-29, a-27)
+amod(date-29, later-28)
+prep_at(discovered-25, date-29)
+

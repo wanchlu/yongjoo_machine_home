@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP do) (RB n't)
+      (VP (VB wait)
+        (SBAR (IN until)
+          (S
+            (NP (DT the) (NN baby))
+            (VP (VBZ is) (`` ``)
+              (ADJP (JJ viable))
+              ('' ''))))))
+    (. .)))
+
+nsubj(wait-4, We-1)
+aux(wait-4, do-2)
+neg(wait-4, n't-3)
+root(ROOT-0, wait-4)
+mark(viable-10, until-5)
+det(baby-7, the-6)
+nsubj(viable-10, baby-7)
+cop(viable-10, is-8)
+advcl(wait-4, viable-10)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP know)
+      (NP
+        (NP (JJ many) (NNS women))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (VP (VBG spending)
+                (NP
+                  (NP (DT the) (NN rest))
+                  (PP (IN of)
+                    (NP
+                      (NP (PRP$ their) (NN life))
+                      (PP (NN mourning)
+                        (NP (DT the) (NN baby)))))
+                  (SBAR
+                    (S
+                      (NP (PRP they))
+                      (VP (VBN aborted)))))))))))
+    (. .)))
+
+advmod(know-4, Also-1)
+nsubj(know-4, I-3)
+root(ROOT-0, know-4)
+amod(women-6, many-5)
+dobj(know-4, women-6)
+nsubj(spending-9, women-6)
+aux(spending-9, are-8)
+rcmod(women-6, spending-9)
+det(rest-11, the-10)
+dobj(spending-9, rest-11)
+dobj(aborted-19, rest-11)
+poss(life-14, their-13)
+prep_of(rest-11, life-14)
+prep(life-14, mourning-15)
+det(baby-17, the-16)
+dep(mourning-15, baby-17)
+nsubj(aborted-19, they-18)
+rcmod(rest-11, aborted-19)
+

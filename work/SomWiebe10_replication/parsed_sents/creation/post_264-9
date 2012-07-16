@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP choose)
+          (S
+            (VP (TO to)
+              (VP (VB regard)
+                (NP
+                  (NP (DT all) (NNS improvements))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBP are) (RB not)
+                        (NP (NN pareto) (NN improvement))
+                        (PP (IN as) (`` ``)
+                          (ADJP (JJ degradative))
+                          ('' ''))))))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP I))
+    (VP (MD would) (RB not)
+      (VP (VB expect)
+        (S
+          (VP (TO to)
+            (VP
+              (ADVP (RB ever))
+              (VB find)
+              (NP
+                (NP (NN evidence))
+                (PP (IN for)
+                  (NP (NN evolution)))))))))
+    (. .)))
+
+mark(choose-3, If-1)
+nsubj(choose-3, I-2)
+xsubj(regard-5, I-2)
+advcl(expect-22, choose-3)
+aux(regard-5, to-4)
+xcomp(choose-3, regard-5)
+det(improvements-7, all-6)
+dobj(regard-5, improvements-7)
+nsubj(improvement-12, improvements-7)
+cop(improvement-12, are-9)
+neg(improvement-12, not-10)
+nn(improvement-12, pareto-11)
+rcmod(improvements-7, improvement-12)
+prep_as(improvement-12, degradative-15)
+advmod(expect-22, then-18)
+nsubj(expect-22, I-19)
+xsubj(find-25, I-19)
+aux(expect-22, would-20)
+neg(expect-22, not-21)
+root(ROOT-0, expect-22)
+aux(find-25, to-23)
+advmod(find-25, ever-24)
+xcomp(expect-22, find-25)
+dobj(find-25, evidence-26)
+prep_for(evidence-26, evolution-28)
+

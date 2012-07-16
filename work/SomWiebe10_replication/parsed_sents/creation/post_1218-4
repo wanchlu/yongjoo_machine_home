@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (NNP \/))
+    (VP (VBD -RRB-)
+      (SBAR
+        (S
+          (S
+            (SBAR (IN If)
+              (S
+                (NP (PRP you))
+                (VP (VBP know)
+                  (NP
+                    (NP (NN anything))
+                    (PP (IN about)
+                      (NP (NNP Quantum) (NNP Physics)))))))
+            (, ,)
+            (NP (PRP you))
+            (VP (VBP know)
+              (SBAR (IN that)
+                (S
+                  (NP (NNS things))
+                  (VP (VBP change))))))
+          (CC and)
+          (S
+            (NP (PRP you))
+            (VP (VBP believe)
+              (CC and)
+              (VBP look)
+              (PP (IN for)
+                (NP (PRP them))))))))
+    (: ...)))
+
+nsubj(know-12, \/-1)
+mark(know-5, If-3)
+nsubj(know-5, you-4)
+advcl(know-12, know-5)
+dobj(know-5, anything-6)
+nn(Physics-9, Quantum-8)
+prep_about(anything-6, Physics-9)
+nsubj(know-12, you-11)
+root(ROOT-0, know-12)
+complm(change-15, that-13)
+nsubj(change-15, things-14)
+ccomp(know-12, change-15)
+nsubj(believe-18, you-17)
+nsubj(look-20, you-17)
+conj_and(know-12, believe-18)
+conj_and(know-12, look-20)
+conj_and(believe-18, look-20)
+prep_for(believe-18, them-22)
+

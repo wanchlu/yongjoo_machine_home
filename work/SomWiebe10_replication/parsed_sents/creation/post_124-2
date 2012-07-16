@@ -1,0 +1,95 @@
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBD considered)))
+    (: ...)
+    (S
+      (NP (PRP it))
+      (VP
+        (VP (VBZ appears)
+          (S
+            (VP (TO to) (RB not)
+              (VP
+                (ADVP (RB actually))
+                (VB prove)
+                (NP (DT the) (NN point))))))
+        (CC and)
+        (ADVP (RB also))
+        (VP (VBZ does) (RB not)
+          (VP (VB answer)
+            (NP
+              (NP (NNP Behe) (POS 's))
+              (JJ original) (NN question))))))
+    (. .)))
+
+nsubj(considered-2, That-1)
+root(ROOT-0, considered-2)
+nsubj(appears-5, it-4)
+xsubj(prove-9, it-4)
+nsubj(answer-16, it-4)
+parataxis(considered-2, appears-5)
+aux(prove-9, to-6)
+neg(prove-9, not-7)
+advmod(prove-9, actually-8)
+xcomp(appears-5, prove-9)
+det(point-11, the-10)
+dobj(prove-9, point-11)
+parataxis(considered-2, also-13)
+advmod(appears-5, also-13)
+conj_and(appears-5, also-13)
+aux(answer-16, does-14)
+neg(answer-16, not-15)
+parataxis(considered-2, answer-16)
+conj_and(appears-5, answer-16)
+poss(question-20, Behe-17)
+amod(question-20, original-19)
+dobj(answer-16, question-20)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB also))
+      (NP (DT the) (NNS comments))
+      (VP (VBP show)
+        (SBAR
+          (S
+            (NP
+              (NP (VBN mixed) (NNS reactions))
+              (CC and)
+              (NP
+                (NP (JJ many))
+                (PP (IN of)
+                  (NP (DT the) (NNS readers)))))
+            (VP (VBD reacted)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD did)))))))))
+    (: ...)
+    (S
+      (NP (DT the) (JJ original) (NN question))
+      (VP (VBD was)
+        (ADJP (JJ disregarded))))
+    (. .)))
+
+advmod(show-4, also-1)
+det(comments-3, the-2)
+nsubj(show-4, comments-3)
+root(ROOT-0, show-4)
+amod(reactions-6, mixed-5)
+nsubj(reacted-12, reactions-6)
+conj_and(reactions-6, many-8)
+nsubj(reacted-12, many-8)
+det(readers-11, the-10)
+prep_of(many-8, readers-11)
+ccomp(show-4, reacted-12)
+mark(did-15, as-13)
+nsubj(did-15, I-14)
+advcl(reacted-12, did-15)
+det(question-19, the-17)
+amod(question-19, original-18)
+nsubj(disregarded-21, question-19)
+cop(disregarded-21, was-20)
+parataxis(show-4, disregarded-21)
+

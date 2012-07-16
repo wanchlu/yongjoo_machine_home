@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN known)
+          (NP
+            (NP (DT a) (NN couple))
+            (PP (IN of)
+              (NP
+                (NP (NNS women))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD had)
+                      (S
+                        (NP
+                          (NP (NNP C-sections) (CD 3))
+                          (CC and)
+                          (NP (CD 4) (NNS months)))
+                        (ADJP (JJ premature))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN baby))
+      (VP (VBD managed)
+        (S
+          (VP (TO to)
+            (VP (VB survive))))))
+    (. .)))
+
+nsubj(known-3, I-1)
+aux(known-3, 've-2)
+root(ROOT-0, known-3)
+det(couple-5, a-4)
+dobj(known-3, couple-5)
+prep_of(couple-5, women-7)
+nsubj(had-9, women-7)
+rcmod(women-7, had-9)
+nsubj(premature-15, C-sections-10)
+num(C-sections-10, 3-11)
+num(months-14, 4-13)
+conj_and(C-sections-10, months-14)
+nsubj(premature-15, months-14)
+xcomp(had-9, premature-15)
+det(baby-19, the-18)
+nsubj(managed-20, baby-19)
+xsubj(survive-22, baby-19)
+conj_and(known-3, managed-20)
+aux(survive-22, to-21)
+xcomp(managed-20, survive-22)
+

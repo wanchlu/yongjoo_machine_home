@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Lizard) (NNS tails))
+      (CC and)
+      (NP (NN sperm)))
+    (VP (VBP are)
+      (ADVP (DT both))
+      (ADVP (RB definitely))
+      (ADJP (JJ alive))
+      (SBAR (IN until)
+        (S
+          (NP (PRP they))
+          (VP
+            (VP (VBN run)
+              (PRT (RP out))
+              (PP (IN of)
+                (NP (NNP ATP))))
+            (CC and)
+            (VP (NN die))))))
+    (. .)))
+
+amod(tails-2, Lizard-1)
+nsubj(alive-8, tails-2)
+conj_and(tails-2, sperm-4)
+nsubj(alive-8, sperm-4)
+cop(alive-8, are-5)
+advmod(alive-8, both-6)
+advmod(alive-8, definitely-7)
+root(ROOT-0, alive-8)
+mark(run-11, until-9)
+nsubj(run-11, they-10)
+advcl(alive-8, run-11)
+prep_out_of(run-11, ATP-14)
+advcl(alive-8, die-16)
+conj_and(run-11, die-16)
+
+(ROOT
+  (S
+    (NP (NNP \*) (NNP Prions))
+    (VP (VBP are)
+      (ADVP (RB always))
+      (ADJP (JJ tough)))
+    (. .)))
+
+nn(Prions-2, \*-1)
+nsubj(tough-5, Prions-2)
+cop(tough-5, are-3)
+advmod(tough-5, always-4)
+root(ROOT-0, tough-5)
+

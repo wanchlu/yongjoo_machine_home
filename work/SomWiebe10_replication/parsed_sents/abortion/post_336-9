@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP (DT A) (NN woman))
+        (VP (VBZ has)
+          (NP (DT the) (NN choice)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP (NN sex))))))))
+      (, ,)
+      (NP (PRP she))
+      (ADVP (RB then))
+      (VP (VBZ has)
+        (NP
+          (NP (DT the) (NN choice))
+          (PP (IN of)
+            (S
+              (VP (VBG using)
+                (NP (DT a) (NN contraceptive))))))))
+    (: ;)
+    (S
+      (ADVP (RB furthermore))
+      (, ,)
+      (NP (PRP she))
+      (VP (VBZ has)
+        (NP
+          (NP (DT a) (NN choice))
+          (PP (IN as) (TO to)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (NP (NN contraceptive))
+                (VP (VBZ is)
+                  (VP (VBN used)))))))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(has-3, woman-2)
+ccomp(has-12, has-3)
+det(choice-5, the-4)
+dobj(has-3, choice-5)
+aux(have-7, to-6)
+infmod(choice-5, have-7)
+dobj(have-7, sex-8)
+nsubj(has-12, she-10)
+advmod(has-12, then-11)
+root(ROOT-0, has-12)
+det(choice-14, the-13)
+dobj(has-12, choice-14)
+prepc_of(choice-14, using-16)
+det(contraceptive-18, a-17)
+dobj(using-16, contraceptive-18)
+advmod(has-23, furthermore-20)
+nsubj(has-23, she-22)
+parataxis(has-12, has-23)
+det(choice-25, a-24)
+dobj(has-23, choice-25)
+dobj(used-31, which-28)
+nsubjpass(used-31, contraceptive-29)
+auxpass(used-31, is-30)
+prepc_as_to(choice-25, used-31)
+

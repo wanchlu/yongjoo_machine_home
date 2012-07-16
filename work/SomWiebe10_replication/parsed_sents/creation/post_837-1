@@ -1,0 +1,54 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP it))
+        (PP (IN at)
+          (NP
+            (NP
+              (NP (DT this) (NN moment))
+              (SBAR (IN that)
+                (S
+                  (NP (NN nothing) (RBR more))
+                  (VP (MD should)
+                    (VP (VB be)
+                      (VP (VBN known)))))))
+            (, ,)
+            (ADVP (RB why)
+              (PP (RB not)
+                (ADVP
+                  (NP (CD 100) (NNS years))
+                  (RB ago))))
+            (, ,)
+            (CC or)
+            (NP
+              (NP (CD 100) (NNS years))
+              (PP (IN from)
+                (NP (RB now))))))))
+    (. ?)))
+
+advmod(is-2, Why-1)
+root(ROOT-0, is-2)
+nsubj(is-2, it-3)
+det(moment-6, this-5)
+prep_at(it-3, moment-6)
+complm(known-12, that-7)
+nsubjpass(known-12, nothing-8)
+advmod(nothing-8, more-9)
+aux(known-12, should-10)
+auxpass(known-12, be-11)
+dep(moment-6, known-12)
+prep_at(it-3, why-14)
+advmod(moment-6, why-14)
+conj_or(moment-6, why-14)
+prep(why-14, not-15)
+num(years-17, 100-16)
+npadvmod(ago-18, years-17)
+dep(not-15, ago-18)
+num(years-22, 100-21)
+prep_at(it-3, years-22)
+conj_or(moment-6, years-22)
+prep(years-22, from-23)
+pobj(from-23, now-24)
+

@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NNS consequences))
+        (PP (IN of)
+          (NP (DT an) (JJ unwanted) (NN pregnancy))))
+      (VP (VBP need) (RB not)
+        (VP (VB be)
+          (ADJP (JJ major)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (MD must)
+        (VP (VB be)
+          (VP (VBN born)
+            (PP (IN by)
+              (NP (DT the) (NN mother)
+                (CC and)
+                (NN father)))))))
+    (. .)))
+
+det(consequences-2, The-1)
+nsubj(need-7, consequences-2)
+det(pregnancy-6, an-4)
+amod(pregnancy-6, unwanted-5)
+prep_of(consequences-2, pregnancy-6)
+root(ROOT-0, need-7)
+neg(need-7, not-8)
+cop(major-10, be-9)
+dep(need-7, major-10)
+nsubjpass(born-16, they-13)
+aux(born-16, must-14)
+auxpass(born-16, be-15)
+conj_but(need-7, born-16)
+det(mother-19, the-18)
+agent(born-16, mother-19)
+agent(born-16, father-21)
+conj_and(mother-19, father-21)
+

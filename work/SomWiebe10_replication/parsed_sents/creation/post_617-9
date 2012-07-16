@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ true)
+              (SBAR
+                (S
+                  (NP (DT a) (NN man))
+                  (VP (VBZ hears)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP he))
+                        (VP
+                          (VP (VBZ wants)
+                            (S
+                              (VP (TO to)
+                                (VP (VB hear)))))
+                          (CC and)
+                          (VP (VBZ disregards)
+                            (NP (DT the) (NN rest))))))))))))))
+    (. .)))
+
+nsubj(guess-2, I-1)
+root(ROOT-0, guess-2)
+nsubj(true-5, it-3)
+cop(true-5, 's-4)
+ccomp(guess-2, true-5)
+det(man-7, a-6)
+nsubj(hears-8, man-7)
+dep(true-5, hears-8)
+dobj(wants-11, what-9)
+nsubj(wants-11, he-10)
+xsubj(hear-13, he-10)
+nsubj(disregards-15, he-10)
+ccomp(hears-8, wants-11)
+aux(hear-13, to-12)
+xcomp(wants-11, hear-13)
+ccomp(hears-8, disregards-15)
+conj_and(wants-11, disregards-15)
+det(rest-17, the-16)
+dobj(disregards-15, rest-17)
+

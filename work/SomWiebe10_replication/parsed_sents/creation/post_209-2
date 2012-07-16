@@ -1,0 +1,54 @@
+(ROOT
+  (S ('' '')
+    (PP (IN If)
+      (NP
+        (NP (NN discussion)
+          (CC and)
+          (NN consideration))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN source)
+              (CC or)
+              (NN identity))
+            (PP (IN of)
+              (NP (DT the) (VBN designing) (NN force)))))))
+    (VP (VBP are)
+      (ADVP (RB NOT))
+      (NP
+        (NP (DT a) (NN part))
+        (PP (IN of)
+          (NP (NNP ID))))
+      (SBAR
+        (WHADVP
+          (ADVP (RB then))
+          (WRB how))
+        (S
+          (VP (MD would)
+            (SBAR (IN that)
+              (S
+                (NP (NN argument))
+                (VP (VBP hold))))))))
+    (. ?)))
+
+prep_if(part-18, discussion-3)
+conj_and(discussion-3, consideration-5)
+prep_if(part-18, consideration-5)
+det(source-8, the-7)
+prep_on(discussion-3, source-8)
+prep_on(discussion-3, identity-10)
+conj_or(source-8, identity-10)
+det(force-14, the-12)
+amod(force-14, designing-13)
+prep_of(source-8, force-14)
+cop(part-18, are-15)
+neg(part-18, NOT-16)
+det(part-18, a-17)
+root(ROOT-0, part-18)
+prep_of(part-18, ID-20)
+advmod(how-22, then-21)
+advmod(would-23, how-22)
+dep(part-18, would-23)
+dep(hold-26, that-24)
+nsubj(hold-26, argument-25)
+ccomp(would-23, hold-26)
+

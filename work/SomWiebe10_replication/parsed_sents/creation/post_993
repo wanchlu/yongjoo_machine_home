@@ -1,0 +1,181 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP prepare)
+          (S
+            (VP (TO to)
+              (VP (VB answer)
+                (NP (DT this) (NN question))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP realize)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (NP
+              (NP (RB essentially) (DT no) (NN knowledge))
+              (PP (IN about)
+                (NP
+                  (NP (DT the) (NN theory))
+                  (PP (IN of)
+                    (NP (NN evolution)))
+                  (, ,)
+                  (PP (IN besides)
+                    (NP
+                      (NP (NNP Darwinism))
+                      (CC and)
+                      (NP (DT the) (NN title)))))))))))
+    (. .)))
+
+mark(prepare-3, As-1)
+nsubj(prepare-3, I-2)
+xsubj(answer-5, I-2)
+advcl(realize-10, prepare-3)
+aux(answer-5, to-4)
+xcomp(prepare-3, answer-5)
+det(question-7, this-6)
+dobj(answer-5, question-7)
+nsubj(realize-10, I-9)
+root(ROOT-0, realize-10)
+nsubj(have-12, I-11)
+ccomp(realize-10, have-12)
+advmod(knowledge-15, essentially-13)
+det(knowledge-15, no-14)
+dobj(have-12, knowledge-15)
+det(theory-18, the-17)
+prep_about(knowledge-15, theory-18)
+prep_of(theory-18, evolution-20)
+prep_besides(theory-18, Darwinism-23)
+det(title-26, the-25)
+prep_besides(theory-18, title-26)
+conj_and(Darwinism-23, title-26)
+
+(ROOT
+  (S
+    (S (CC But)
+      (NP (DT the) (NN title))
+      (ADVP (PRP itself))
+      (VP (VBZ is)
+        (ADJP (JJ enough)
+          (PP (IN for)
+            (NP (PRP me))))
+        (S
+          (VP (TO to)
+            (VP (VB know)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ has) (RB n't)
+                    (VP (VBN been)
+                      (VP
+                        (ADVP (RB scientifically))
+                        (VBN proven)))))))))))
+    (: :)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN THEORY))
+          (PP (IN of)
+            (NP (NN evolution))))))
+    (. .)))
+
+cc(enough-6, But-1)
+det(title-3, the-2)
+nsubj(enough-6, title-3)
+xsubj(know-10, title-3)
+advmod(enough-6, itself-4)
+cop(enough-6, is-5)
+root(ROOT-0, enough-6)
+prep_for(enough-6, me-8)
+aux(know-10, to-9)
+xcomp(enough-6, know-10)
+complm(proven-17, that-11)
+nsubjpass(proven-17, it-12)
+aux(proven-17, has-13)
+neg(proven-17, n't-14)
+auxpass(proven-17, been-15)
+advmod(proven-17, scientifically-16)
+ccomp(know-10, proven-17)
+nsubj(THEORY-22, it-19)
+cop(THEORY-22, is-20)
+det(THEORY-22, the-21)
+parataxis(enough-6, THEORY-22)
+prep_of(THEORY-22, evolution-24)
+
+(ROOT
+  (NP
+    (NP (RB Much))
+    (PP (IN like)
+      (NP (DT the) (NNP Big) (NNP Bang) (NNP THEORY)))
+    (. .)))
+
+root(ROOT-0, Much-1)
+det(THEORY-6, the-3)
+nn(THEORY-6, Big-4)
+nn(THEORY-6, Bang-5)
+prep_like(Much-1, THEORY-6)
+
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (JJ probable))
+          (SBAR (IN that)
+            (S
+              (NP (DT these) (NNS events))
+              (VP (VBD happened)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ certain)))
+    (. .)))
+
+mark(probable-4, While-1)
+nsubj(probable-4, it-2)
+cop(probable-4, is-3)
+advcl(certain-13, probable-4)
+complm(happened-8, that-5)
+det(events-7, these-6)
+nsubj(happened-8, events-7)
+ccomp(probable-4, happened-8)
+nsubj(certain-13, it-10)
+cop(certain-13, is-11)
+neg(certain-13, not-12)
+root(ROOT-0, certain-13)
+
+(ROOT
+  (S (CC And)
+    (SBAR (IN while)
+      (S
+        (NP (PRP I))
+        (VP (VBP believe)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP have)
+                (VP (VBN happened))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ certain)))
+    (. .)))
+
+cc(certain-13, And-1)
+mark(believe-4, while-2)
+nsubj(believe-4, I-3)
+advcl(certain-13, believe-4)
+complm(happened-8, that-5)
+nsubj(happened-8, they-6)
+aux(happened-8, have-7)
+ccomp(believe-4, happened-8)
+nsubj(certain-13, it-10)
+cop(certain-13, is-11)
+neg(certain-13, not-12)
+root(ROOT-0, certain-13)
+

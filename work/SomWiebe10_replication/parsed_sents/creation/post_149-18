@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need) (RB not)
+      (VP (`` ``) (VB know) ('' '')
+        (S
+          (NP (DT the) (NN intelligence))
+          (VP (TO to)
+            (VP (VB draw)
+              (NP (NNS inferences))
+              (PP (IN about)
+                (NP
+                  (NP (PRP it) (POS 's))
+                  (NN existence)))
+              (SBAR (IN because)
+                (S
+                  (NP (DT that))
+                  (VP (VBZ 's) (RB not)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (NNP ID))
+                        (VP (VBZ studies))))))))))))
+    (. .)))
+
+nsubj(need-2, We-1)
+root(ROOT-0, need-2)
+neg(need-2, not-3)
+dep(need-2, know-5)
+det(intelligence-8, the-7)
+nsubj(draw-10, intelligence-8)
+aux(draw-10, to-9)
+xcomp(know-5, draw-10)
+dobj(draw-10, inferences-11)
+poss(existence-15, it-13)
+prep_about(draw-10, existence-15)
+mark('s-18, because-16)
+nsubj('s-18, that-17)
+advcl(draw-10, 's-18)
+neg('s-18, not-19)
+dobj(studies-22, what-20)
+nsubj(studies-22, ID-21)
+ccomp('s-18, studies-22)
+

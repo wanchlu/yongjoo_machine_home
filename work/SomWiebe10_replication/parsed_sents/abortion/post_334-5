@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (DT These) (NNS cells))
+    (ADVP (RB already))
+    (VP (VBP produce)
+      (SBAR
+        (S
+          (NP
+            (NP
+              (NP (NN adenosine-triphosphate))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP ATP))
+                (-RRB- -RRB-)))
+            (, ,)
+            (ADVP (RB thus))
+            (, ,))
+          (VP (VBP are)
+            (ADJP (RB biologically) (JJ alive))))))
+    (. .)))
+
+det(cells-2, These-1)
+nsubj(produce-4, cells-2)
+advmod(produce-4, already-3)
+root(ROOT-0, produce-4)
+nsubj(alive-14, adenosine-triphosphate-5)
+abbrev(adenosine-triphosphate-5, ATP-7)
+advmod(adenosine-triphosphate-5, thus-10)
+cop(alive-14, are-12)
+advmod(alive-14, biologically-13)
+ccomp(produce-4, alive-14)
+

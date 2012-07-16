@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP say))))
+        (VP (VBZ is)
+          (ADJP (JJ true)))))
+    (, ,)
+    (NP (RB then) (NN nothing))
+    (ADVP (IN at) (DT all))
+    (VP (VBZ is)
+      (NP (JJ scientific) (NN fact)))
+    (. .)))
+
+mark(true-6, If-1)
+dobj(say-4, what-2)
+nsubj(say-4, you-3)
+csubj(true-6, say-4)
+cop(true-6, is-5)
+advcl(fact-14, true-6)
+advmod(nothing-9, then-8)
+nsubj(fact-14, nothing-9)
+advmod(fact-14, at-10)
+pobj(at-10, all-11)
+cop(fact-14, is-12)
+amod(fact-14, scientific-13)
+root(ROOT-0, fact-14)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (ADVP (RB even))
+        (NP
+          (NP (CD one) (NN person) (NNS doubts))
+          (, ,)
+          (FRAG
+            (NP (NN unreasonably))
+            (CC or)
+            (RB not)))))
+    (, ,)
+    (NP
+      (NP
+        (ADVP (RB even))
+        (DT the)
+        (ADJP (RBS most) (JJ fundamental))
+        (NNS laws))
+      (PP (IN of)
+        (NP (NN physics))))
+    (VP (VBP are)
+      (NP (JJ only) (NNS theories)))
+    (. .)))
+
+mark(doubts-5, If-1)
+advmod(doubts-5, even-2)
+num(doubts-5, one-3)
+nn(doubts-5, person-4)
+advcl(theories-20, doubts-5)
+dep(doubts-5, unreasonably-7)
+dep(unreasonably-7, or-8)
+neg(unreasonably-7, not-9)
+advmod(laws-15, even-11)
+det(laws-15, the-12)
+advmod(fundamental-14, most-13)
+amod(laws-15, fundamental-14)
+nsubj(theories-20, laws-15)
+prep_of(laws-15, physics-17)
+cop(theories-20, are-18)
+amod(theories-20, only-19)
+root(ROOT-0, theories-20)
+

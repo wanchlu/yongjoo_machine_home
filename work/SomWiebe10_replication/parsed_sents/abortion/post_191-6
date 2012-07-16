@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (DT A) (NN conundrum))
+    (PRN (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VBP know)
+          (SBAR (CC but)
+            (S
+              (NP (PRP it))
+              (VP (VBZ does)))))))
+    (VP (VBP swing)
+      (SBAR
+        (S
+          (NP
+            (NP (DT both) (NNS ways))
+            (CC and)
+            (NP
+              (ADJP (RB so) (JJ logical))
+              (NN consistency)))
+          (VP (MD would)
+            (VP (VB be)
+              (PP (IN in)
+                (NP
+                  (NP (NN favor))
+                  (PP (IN of)
+                    (NP (DT no) (JJ special) (NN case))))))))))
+    (. .)))
+
+det(conundrum-2, A-1)
+nsubj(swing-9, conundrum-2)
+nsubj(know-5, I-4)
+parataxis(swing-9, know-5)
+cc(does-8, but-6)
+nsubj(does-8, it-7)
+ccomp(know-5, does-8)
+root(ROOT-0, swing-9)
+det(ways-11, both-10)
+nsubj(be-17, ways-11)
+advmod(logical-14, so-13)
+amod(consistency-15, logical-14)
+conj_and(ways-11, consistency-15)
+nsubj(be-17, consistency-15)
+aux(be-17, would-16)
+ccomp(swing-9, be-17)
+prep_in(be-17, favor-19)
+det(case-23, no-21)
+amod(case-23, special-22)
+prep_of(favor-19, case-23)
+

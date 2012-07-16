@@ -1,0 +1,56 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ is)
+      (NP (DT the) (NN mother))
+      (VP
+        (ADVP (RB adversely))
+        (VBN affected)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN removal))
+            (PP (IN of)
+              (NP (DT this) (`` ``) (NN part) ('' '')))))))
+    (. ?)))
+
+advmod(affected-6, How-1)
+auxpass(affected-6, is-2)
+det(mother-4, the-3)
+nsubjpass(affected-6, mother-4)
+advmod(affected-6, adversely-5)
+root(ROOT-0, affected-6)
+det(removal-9, the-8)
+agent(affected-6, removal-9)
+det(part-13, this-11)
+prep_of(removal-9, part-13)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN independence))
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (NN criterion))
+            (PP (IN for)
+              (NP (NN personhood)))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (DT no) (NN person))
+    (VP (VBZ fits)
+      (NP (DT the) (NN bill)))
+    (. .)))
+
+mark(criterion-5, If-1)
+nsubj(criterion-5, independence-2)
+cop(criterion-5, is-3)
+det(criterion-5, the-4)
+advcl(fits-12, criterion-5)
+prep_for(criterion-5, personhood-7)
+advmod(fits-12, then-9)
+det(person-11, no-10)
+nsubj(fits-12, person-11)
+root(ROOT-0, fits-12)
+det(bill-14, the-13)
+dobj(fits-12, bill-14)
+

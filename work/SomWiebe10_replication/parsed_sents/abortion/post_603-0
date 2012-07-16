@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Babies))
+      (CC and)
+      (NP (DT the) (-LRB- -LRB-) (JJ disabled) (-RRB- -RRB-) (NNS elderly)))
+    (VP
+      (VP (VBP are)
+        (ADJP
+          (ADVP (RBS most) (RB certainly))
+          (JJ dependent)))
+      (, ,)
+      (CC and)
+      (VP (VBP rely)
+        (PP (IN upon)
+          (NP
+            (NP (DT the) (NN care))
+            (PP (IN of)
+              (NP
+                (NP (DT an) (NN adult))
+                (PP (IN in)
+                  (NP (NN order)))))))
+        (S
+          (VP (TO to)
+            (VP (VB survive))))))
+    (. .)))
+
+nsubj(dependent-11, Babies-1)
+nsubj(rely-14, Babies-1)
+xsubj(survive-24, Babies-1)
+det(elderly-7, the-3)
+amod(elderly-7, disabled-5)
+conj_and(Babies-1, elderly-7)
+nsubj(dependent-11, elderly-7)
+xsubj(survive-24, elderly-7)
+cop(dependent-11, are-8)
+advmod(certainly-10, most-9)
+advmod(dependent-11, certainly-10)
+root(ROOT-0, dependent-11)
+conj_and(dependent-11, rely-14)
+det(care-17, the-16)
+prep_upon(rely-14, care-17)
+det(adult-20, an-19)
+prep_of(care-17, adult-20)
+prep_in(adult-20, order-22)
+aux(survive-24, to-23)
+xcomp(rely-14, survive-24)
+

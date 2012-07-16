@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN reason))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN flu) (NN vaccine))
+          (VP (MD must)
+            (VP (VB be)
+              (VP (VBN updated)
+                (NP (DT every) (NN year))))))))
+    (, ,)
+    (VP (VBZ is)
+      (SBAR (IN because)
+        (S
+          (NP (DT the) (NN flu) (NN virus))
+          (VP (VBZ evolves)
+            (NP (DT each) (NN year))))))
+    (. .)))
+
+det(reason-2, The-1)
+nsubj(is-13, reason-2)
+complm(updated-9, that-3)
+det(vaccine-6, the-4)
+nn(vaccine-6, flu-5)
+nsubjpass(updated-9, vaccine-6)
+aux(updated-9, must-7)
+auxpass(updated-9, be-8)
+dep(reason-2, updated-9)
+det(year-11, every-10)
+tmod(updated-9, year-11)
+root(ROOT-0, is-13)
+mark(evolves-18, because-14)
+det(virus-17, the-15)
+nn(virus-17, flu-16)
+nsubj(evolves-18, virus-17)
+advcl(is-13, evolves-18)
+det(year-20, each-19)
+tmod(evolves-18, year-20)
+

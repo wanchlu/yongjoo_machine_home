@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT some) (NNS ways)))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB even) (RBR more) (JJ complex)
+          (PP (IN with)
+            (NP
+              (NP (NN fruit))
+              (VP (VBZ flies)))))
+        (ADVP (IN than)
+          (PP (IN with)
+            (NP
+              (NP (NNS humans))
+              (, ,)
+              (SBAR (IN since)
+                (S
+                  (NP
+                    (NP (NN nurse) (NNS cells))
+                    (PP (IN with)
+                      (NP (JJ maternal) (NNS genetics))))
+                  (VP (VBP govern)
+                    (S
+                      (NP
+                        (NP (DT the) (NN development))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (JJ early) (NN embryo))
+                            (PP (IN for)
+                              (NP
+                                (NP (RB quite) (DT a) (NN while))
+                                (PP (IN before)
+                                  (NP
+                                    (NP (DT the) (NNS genetics))
+                                    (PP (IN of)
+                                      (NP (DT the) (NN embryo))))))))))
+                      (VP (VB take)
+                        (PRT (RP over))))))))))))
+    (. .)))
+
+det(ways-3, some-2)
+prep_in(complex-8, ways-3)
+nsubj(complex-8, it-4)
+cop(complex-8, is-5)
+advmod(complex-8, even-6)
+advmod(complex-8, more-7)
+root(ROOT-0, complex-8)
+prep_with(complex-8, fruit-10)
+dep(fruit-10, flies-11)
+advmod(complex-8, than-12)
+prep_with(than-12, humans-14)
+dobj(govern-22, humans-14)
+mark(govern-22, since-16)
+nn(cells-18, nurse-17)
+nsubj(govern-22, cells-18)
+amod(genetics-21, maternal-20)
+prep_with(cells-18, genetics-21)
+dep(humans-14, govern-22)
+det(development-24, the-23)
+nsubj(take-39, development-24)
+det(embryo-28, the-26)
+amod(embryo-28, early-27)
+prep_of(development-24, embryo-28)
+advmod(while-32, quite-30)
+det(while-32, a-31)
+prep_for(embryo-28, while-32)
+det(genetics-35, the-34)
+prep_before(while-32, genetics-35)
+det(embryo-38, the-37)
+prep_of(genetics-35, embryo-38)
+ccomp(govern-22, take-39)
+prt(take-39, over-40)
+

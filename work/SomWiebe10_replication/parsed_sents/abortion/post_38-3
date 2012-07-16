@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB pick)
+            (CC and)
+            (VB choose)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (NP (NNS individuals))
+                (VP (VBP have)
+                  (NP (NN value)))))))))
+    (. .)))
+
+nsubj(want-2, They-1)
+xsubj(pick-4, They-1)
+root(ROOT-0, want-2)
+aux(pick-4, to-3)
+xcomp(want-2, pick-4)
+xcomp(want-2, choose-6)
+conj_and(pick-4, choose-6)
+dobj(have-9, which-7)
+nsubj(have-9, individuals-8)
+ccomp(pick-4, have-9)
+dobj(have-9, value-10)
+

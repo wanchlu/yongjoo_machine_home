@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (NP (NN abortion))
+    (ADVP (RB directly))
+    (VP
+      (VP (VBZ kills)
+        (NP (DT the) (NN embryo)))
+      (CC and)
+      (VP (VBZ does) (RB not)
+        (ADVP (RB merely))
+        (VP
+          (VP (`` ``) (VB unplug) ('' ''))
+          (CC and)
+          (VP (VB let)
+            (S
+              (NP (PRP it))
+              (VP (VB die)))))))
+    (. .)))
+
+nsubj(kills-3, abortion-1)
+nsubj(unplug-11, abortion-1)
+advmod(kills-3, directly-2)
+root(ROOT-0, kills-3)
+det(embryo-5, the-4)
+dobj(kills-3, embryo-5)
+aux(unplug-11, does-7)
+neg(unplug-11, not-8)
+advmod(unplug-11, merely-9)
+conj_and(kills-3, unplug-11)
+conj_and(kills-3, let-14)
+conj_and(unplug-11, let-14)
+nsubj(die-16, it-15)
+ccomp(let-14, die-16)
+

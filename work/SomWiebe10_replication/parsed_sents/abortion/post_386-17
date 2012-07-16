@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP
+      (VP (VBZ is)
+        (ADJP
+          (ADJP (RB morally) (JJ wrong))
+          (, ,)
+          (ADJP (RB biologically) (JJ wrong))
+          (, ,)
+          (ADJP (RB ethically) (JJ wrong))))
+      (, ,)
+      (CC and)
+      (VP (VBZ violates)
+        (SBAR
+          (S
+            (NP (DT all) (JJ natural) (NNS rights) (NNS humans))
+            (VP (VBP have)
+              (VP (VBN been)
+                (VP (VBN endowed)
+                  (PP (IN with)))))))))
+    (. .)))
+
+nsubj(wrong-4, Abortion-1)
+nsubj(violates-13, Abortion-1)
+cop(wrong-4, is-2)
+advmod(wrong-4, morally-3)
+root(ROOT-0, wrong-4)
+advmod(wrong-7, biologically-6)
+dep(wrong-4, wrong-7)
+advmod(wrong-10, ethically-9)
+dep(wrong-4, wrong-10)
+conj_and(wrong-4, violates-13)
+det(humans-17, all-14)
+amod(humans-17, natural-15)
+nn(humans-17, rights-16)
+nsubjpass(endowed-20, humans-17)
+aux(endowed-20, have-18)
+auxpass(endowed-20, been-19)
+ccomp(violates-13, endowed-20)
+prep(endowed-20, with-21)
+

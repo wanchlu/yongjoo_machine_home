@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Input))
+        (PP (IN from)
+          (NP (DT the) (JJ central) (JJ nervous) (NN system))))
+      (VP (MD can)
+        (VP (VB modify)
+          (NP
+            (NP (DT the) (NN heart) (NN rate))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (DT the) (NN frequency))
+                (PP (IN of)
+                  (NP (NN heart) (NNS beats))))
+              (-RRB- -RRB-))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB not)
+        (VP (VB initiate)
+          (NP (NNS beats)))))
+    (. .)))
+
+nsubj(modify-8, Input-1)
+det(system-6, the-3)
+amod(system-6, central-4)
+amod(system-6, nervous-5)
+prep_from(Input-1, system-6)
+aux(modify-8, can-7)
+root(ROOT-0, modify-8)
+det(rate-11, the-9)
+nn(rate-11, heart-10)
+dobj(modify-8, rate-11)
+det(frequency-14, the-13)
+dep(rate-11, frequency-14)
+nn(beats-17, heart-16)
+prep_of(frequency-14, beats-17)
+nsubj(initiate-24, it-21)
+aux(initiate-24, does-22)
+neg(initiate-24, not-23)
+conj_but(modify-8, initiate-24)
+dobj(initiate-24, beats-25)
+

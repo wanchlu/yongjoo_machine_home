@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Proponents))
+        (PP (IN of)
+          (NP (JJ neo-Darwinian) (NN evolution))))
+      (VP (VBP are)
+        (VP (VBN forced)
+          (PP (IN into)
+            (NP (NN reasoning)))
+          (SBAR (IN that)
+            (S
+              (NP (NN similarity))
+              (VP (VBZ implies)
+                (NP (JJ common) (NN ancestry))
+                (, ,)
+                (PP (IN except)
+                  (PP (IN for)
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (PRP it))
+                        (VP (VBP doesn)
+                          (NP (NN t.)))))))))))))
+    (CC And)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBP doesn)
+            (NP (NN t)))))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBP appeal)
+        (PP (TO to)
+          (NP
+            (NP (DT all) (NNS sorts))
+            (PP (IN of)
+              (NP
+                (ADJP (FW ad) (FW hoc))
+                (NNS rationalizations)))))
+        (S
+          (VP (TO to)
+            (VP (VB save)
+              (NP (JJ common) (NN ancestry)))))))
+    (. .)))
+
+nsubjpass(forced-6, Proponents-1)
+amod(evolution-4, neo-Darwinian-3)
+prep_of(Proponents-1, evolution-4)
+auxpass(forced-6, are-5)
+root(ROOT-0, forced-6)
+prep_into(forced-6, reasoning-8)
+complm(implies-11, that-9)
+nsubj(implies-11, similarity-10)
+ccomp(forced-6, implies-11)
+amod(ancestry-13, common-12)
+dobj(implies-11, ancestry-13)
+prepc_except_for(implies-11, for-16)
+advmod(doesn-19, when-17)
+nsubj(doesn-19, it-18)
+pcomp(implies-11, doesn-19)
+dobj(doesn-19, t.-20)
+advmod(doesn-24, when-22)
+nsubj(doesn-24, it-23)
+advcl(appeal-28, doesn-24)
+dobj(doesn-24, t-25)
+nsubj(appeal-28, they-27)
+xsubj(save-37, they-27)
+conj_and(forced-6, appeal-28)
+det(sorts-31, all-30)
+prep_to(appeal-28, sorts-31)
+nn(hoc-34, ad-33)
+amod(rationalizations-35, hoc-34)
+prep_of(sorts-31, rationalizations-35)
+aux(save-37, to-36)
+xcomp(appeal-28, save-37)
+amod(ancestry-39, common-38)
+dobj(save-37, ancestry-39)
+

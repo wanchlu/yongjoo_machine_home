@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (RB Even) (DT the) (JJ first))
+        (, ,)
+        (NP (CD one) (NN cell))
+        (, ,))
+      (ADVP (RB already))
+      (VP (VBZ has)
+        (NP
+          (NP (DT the) (JJ entire) (, ,) (JJ human) (NN chromosome) (NN contribution))
+          (PP (IN from)
+            (NP (DT both) (NN dad)
+              (CC and)
+              (NN mom))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (VP (VBG dividing)
+          (S
+            (VP (TO to)
+              (VP (VB reach)
+                (NP
+                  (NP (DT the) (JJ first) (NN goal))
+                  (PP (IN of)
+                    (NP (NN birth))))))))))
+    (. .)))
+
+advmod(first-3, Even-1)
+det(first-3, the-2)
+nsubj(has-9, first-3)
+num(cell-6, one-5)
+appos(first-3, cell-6)
+advmod(has-9, already-8)
+root(ROOT-0, has-9)
+det(contribution-15, the-10)
+amod(contribution-15, entire-11)
+amod(contribution-15, human-13)
+nn(contribution-15, chromosome-14)
+dobj(has-9, contribution-15)
+preconj(dad-18, both-17)
+prep_from(contribution-15, dad-18)
+prep_from(contribution-15, mom-20)
+conj_and(dad-18, mom-20)
+nsubj(dividing-24, it-22)
+xsubj(reach-26, it-22)
+aux(dividing-24, 's-23)
+conj_and(has-9, dividing-24)
+aux(reach-26, to-25)
+xcomp(dividing-24, reach-26)
+det(goal-29, the-27)
+amod(goal-29, first-28)
+dobj(reach-26, goal-29)
+prep_of(goal-29, birth-31)
+

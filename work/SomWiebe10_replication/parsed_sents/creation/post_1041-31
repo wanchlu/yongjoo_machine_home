@@ -1,0 +1,50 @@
+(ROOT
+  (S ('' '')
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (NP
+      (NP (JJ other) (NNS scientists))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBN reviewed)
+            (NP (PRP$ his) (NN work))))))
+    (VP (VBP have)
+      (VP (VBN determined)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NNP Uranium))
+              (PRN (-LRB- -LRB-)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ decays)
+                      (ADVP (RB much) (RBR more) (RB slowly)))))
+                (-RRB- -RRB-)))
+            (VP (VBZ is)
+              (NP (DT the) (JJ real) (NN cause)))))))
+    (. .)))
+
+prep_in(determined-12, fact-3)
+amod(scientists-6, other-5)
+nsubj(reviewed-8, scientists-6)
+nsubj(determined-12, scientists-6)
+rcmod(scientists-6, reviewed-8)
+poss(work-10, his-9)
+dobj(reviewed-8, work-10)
+aux(determined-12, have-11)
+root(ROOT-0, determined-12)
+complm(cause-25, that-13)
+nsubj(cause-25, Uranium-14)
+nsubj(decays-17, which-16)
+dep(Uranium-14, decays-17)
+advmod(slowly-20, much-18)
+advmod(slowly-20, more-19)
+advmod(decays-17, slowly-20)
+cop(cause-25, is-22)
+det(cause-25, the-23)
+amod(cause-25, real-24)
+ccomp(determined-12, cause-25)
+

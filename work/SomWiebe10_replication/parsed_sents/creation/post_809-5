@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD predicted)
+      (SBAR (IN that)
+        (S
+          (NP (NN life))
+          (VP (MD would)
+            (VP (VB have)
+              (NP
+                (NP (`` ``)
+                  (ADJP (RB irreducibly) (JJ complex))
+                  ('' '') (NNS structures))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD could) (RB not)
+                      (VP (VB have)
+                        (VP (VBN evolved)
+                          (PP (IN by)
+                            (NP
+                              (NP (JJ natural) (NN selection))
+                              (VP (VBG acting)
+                                (PP (IN upon)
+                                  (NP
+                                    (NP (DT a) (NN series))
+                                    (PP (IN of)
+                                      (NP (JJ advantageous) (NNS mutations)))))))))))))))))))
+    (. .)))
+
+nsubj(predicted-2, It-1)
+root(ROOT-0, predicted-2)
+complm(have-6, that-3)
+nsubj(have-6, life-4)
+aux(have-6, would-5)
+ccomp(predicted-2, have-6)
+advmod(complex-9, irreducibly-8)
+amod(structures-11, complex-9)
+dobj(have-6, structures-11)
+nsubj(evolved-16, structures-11)
+aux(evolved-16, could-13)
+neg(evolved-16, not-14)
+aux(evolved-16, have-15)
+rcmod(structures-11, evolved-16)
+amod(selection-19, natural-18)
+prep_by(evolved-16, selection-19)
+partmod(selection-19, acting-20)
+det(series-23, a-22)
+prep_upon(acting-20, series-23)
+amod(mutations-26, advantageous-25)
+prep_of(series-23, mutations-26)
+

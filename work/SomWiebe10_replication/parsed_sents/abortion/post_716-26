@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN Because)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (ADVP
+              (NP (PDT such) (DT a) (NN thing))
+              (RB as))
+            (ADJP (JJ right)
+              (CC or)
+              (JJ wrong)))))
+      (NP (PRP we))
+      (VP (VBP enforce)
+        (NP
+          (NP (NNS laws))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP maintain)
+                (ADJP (JJ right)
+                  (CC and)
+                  (JJ wrong))))))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP
+        (NP
+          (NP (NN change) (NNS laws))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP do) (RB n't)))))
+        (PRN (-LRB- -LRB-)
+          (PP (JJ such) (IN as)
+            (NP (NN slavery)
+              (CC or)
+              (NN segregation)))
+          (-RRB- -RRB-))))
+    (. .)))
+
+mark(is-3, Because-1)
+expl(is-3, there-2)
+advcl(enforce-12, is-3)
+predet(thing-6, such-4)
+det(thing-6, a-5)
+npadvmod(as-7, thing-6)
+advmod(is-3, as-7)
+acomp(is-3, right-8)
+acomp(is-3, wrong-10)
+conj_or(right-8, wrong-10)
+nsubj(enforce-12, we-11)
+root(ROOT-0, enforce-12)
+dobj(enforce-12, laws-13)
+nsubj(maintain-15, laws-13)
+rcmod(laws-13, maintain-15)
+acomp(maintain-15, right-16)
+acomp(maintain-15, wrong-18)
+conj_and(right-16, wrong-18)
+nsubj(laws-22, we-20)
+nn(laws-22, change-21)
+conj_and(enforce-12, laws-22)
+nsubj(do-24, laws-22)
+rcmod(laws-22, do-24)
+neg(do-24, n't-25)
+prep_such_as(laws-22, slavery-29)
+prep_such_as(laws-22, segregation-31)
+conj_or(slavery-29, segregation-31)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (DT That))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ determines)
+              (NP (DT the) (JJ fundamental))))))
+      (VP (VBZ features)))
+    (IN of)
+    (S
+      (NP (DT an) (NN organism))
+      (VP (MD will)
+        (VP (VB be)
+          (NP
+            (NP (JJ logical))
+            (CC and)
+            (NP (NNP ordered) (-LRB- -LRB-) (NNP eg))))))
+    (. .)))
+
+nsubj(determines-4, That-2)
+nsubj(features-7, That-2)
+rcmod(That-2, determines-4)
+det(fundamental-6, the-5)
+dobj(determines-4, fundamental-6)
+root(ROOT-0, features-7)
+dep(features-7, of-8)
+det(organism-10, an-9)
+nsubj(logical-13, organism-10)
+aux(logical-13, will-11)
+cop(logical-13, be-12)
+ccomp(features-7, logical-13)
+nn(eg-17, ordered-15)
+ccomp(features-7, eg-17)
+conj_and(logical-13, eg-17)
+

@@ -1,0 +1,119 @@
+(ROOT
+  (S
+    (NP (NNP Palinin))
+    (, ,)
+    (VP (VB Help)
+      (NP (PRP me))
+      (PP (IN with)
+        (NP (NN something)))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (MD can)))))
+    (. .)))
+
+nsubj(Help-3, Palinin-1)
+root(ROOT-0, Help-3)
+dobj(Help-3, me-4)
+prep_with(Help-3, something-6)
+mark(can-9, if-7)
+nsubj(can-9, you-8)
+advcl(Help-3, can-9)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP read)
+          (ADVP (RB back))
+          (PP (IN through)
+            (NP (DT this) (NN debate) (NN something))))))
+    (NP (JJ odd))
+    (VP (VBD jumped)
+      (PRT (RP out))
+      (PP (IN at)
+        (NP (PRP me))))
+    (. .)))
+
+mark(read-3, As-1)
+nsubj(read-3, I-2)
+advcl(jumped-10, read-3)
+advmod(read-3, back-4)
+det(something-8, this-6)
+nn(something-8, debate-7)
+prep_through(read-3, something-8)
+nsubj(jumped-10, odd-9)
+root(ROOT-0, jumped-10)
+prt(jumped-10, out-11)
+prep_at(jumped-10, me-13)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP dismiss)
+      (CC and)
+      (VBP ignore)
+      (NP
+        (NP (DT every) (NN point))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP
+              (VP (VBP raise))
+              (CC and)
+              (VP
+                (ADVP (RB then))
+                (VBP expect)
+                (NP (PRP me)))))))
+      (S
+        (VP (TO to)
+          (VP (VB answer)
+            (NP
+              (NP (DT every) (NN point))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP raise)))))
+            (: ;)
+            (SBARQ
+              (WHADVP (WRB why))
+              (SQ (VBZ is)
+                (NP (DT that)))
+              (. ?))))))))
+
+nsubj(dismiss-2, You-1)
+nsubj(ignore-4, You-1)
+root(ROOT-0, dismiss-2)
+conj_and(dismiss-2, ignore-4)
+det(point-6, every-5)
+dobj(dismiss-2, point-6)
+nsubj(raise-8, I-7)
+nsubj(expect-11, I-7)
+rcmod(point-6, raise-8)
+advmod(expect-11, then-10)
+rcmod(point-6, expect-11)
+conj_and(raise-8, expect-11)
+dobj(expect-11, me-12)
+aux(answer-14, to-13)
+xcomp(dismiss-2, answer-14)
+det(point-16, every-15)
+dobj(answer-14, point-16)
+dobj(raise-18, point-16)
+nsubj(raise-18, you-17)
+rcmod(point-16, raise-18)
+advmod(is-21, why-20)
+parataxis(answer-14, is-21)
+nsubj(is-21, that-22)
+
+(ROOT
+  (S
+    (VP (VBG waiting)
+      (PP (IN for)
+        (NP (DT a) (NN response))))
+    (. .)))
+
+root(ROOT-0, waiting-1)
+det(response-4, a-3)
+prep_for(waiting-1, response-4)
+

@@ -1,0 +1,141 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ pro-choice) (NN position))
+      (PP (IN on)
+        (NP (DT any) (NN issue))))
+    (VP (MD should)
+      (VP (VB maximize)
+        (NP
+          (NP (DT the) (NN number))
+          (PP (IN of)
+            (NP (JJ free) (NNS choices) (, ,) (NN present)
+              (CC and)
+              (NN future))))))
+    (. .)))
+
+det(position-3, A-1)
+amod(position-3, pro-choice-2)
+nsubj(maximize-8, position-3)
+det(issue-6, any-5)
+prep_on(position-3, issue-6)
+aux(maximize-8, should-7)
+root(ROOT-0, maximize-8)
+det(number-10, the-9)
+dobj(maximize-8, number-10)
+amod(choices-13, free-12)
+prep_of(number-10, choices-13)
+prep_of(number-10, present-15)
+conj_and(choices-13, present-15)
+prep_of(number-10, future-17)
+conj_and(choices-13, future-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ pro-choice) (NN position))
+      (PP (IN on)
+        (NP (NN abortion))))
+    (VP (VBZ fails)
+      (S
+        (VP (TO to)
+          (VP (VB maximize)
+            (NP
+              (NP (DT the) (NN number))
+              (PP (IN of)
+                (NP (JJ free) (NNS choices))))
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (ADVP (RB unilaterally))
+                (VP (VBZ eliminates)
+                  (NP
+                    (NP (DT the) (JJ future) (JJ free) (NNS choices))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS individuals))
+                        (VP (VBN aborted))))))))))))
+    (. .)))
+
+det(position-3, The-1)
+amod(position-3, pro-choice-2)
+nsubj(fails-6, position-3)
+xsubj(maximize-8, position-3)
+prep_on(position-3, abortion-5)
+root(ROOT-0, fails-6)
+aux(maximize-8, to-7)
+xcomp(fails-6, maximize-8)
+det(number-10, the-9)
+dobj(maximize-8, number-10)
+amod(choices-13, free-12)
+prep_of(number-10, choices-13)
+mark(eliminates-17, because-14)
+nsubj(eliminates-17, it-15)
+advmod(eliminates-17, unilaterally-16)
+advcl(maximize-8, eliminates-17)
+det(choices-21, the-18)
+amod(choices-21, future-19)
+amod(choices-21, free-20)
+dobj(eliminates-17, choices-21)
+prep_of(choices-21, individuals-23)
+partmod(individuals-23, aborted-24)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ pro-life) (NN position))
+    (VP (VBZ maximizes)
+      (NP
+        (NP (DT the) (NN number))
+        (PP (IN of)
+          (NP (JJ free) (NNS choices))))
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ preserves)
+            (S
+              (NP
+                (NP (DT the) (NN present))
+                (CC and)
+                (NP
+                  (NP (JJ future) (JJ free) (NNS choices))
+                  (PP (IN of)
+                    (NP
+                      (QP (RB as) (JJ many))
+                      (NNS individuals)))))
+              (ADJP (RB as) (JJ possible)
+                (PP (IN without)
+                  (S
+                    (VP (VBG taking)
+                      (PRT (RP away))
+                      (NP (DT any) (NNS choices))
+                      (ADVP (RB arbitrarily)))))))))))
+    (. .)))
+
+det(position-3, The-1)
+amod(position-3, pro-life-2)
+nsubj(maximizes-4, position-3)
+root(ROOT-0, maximizes-4)
+det(number-6, the-5)
+dobj(maximizes-4, number-6)
+amod(choices-9, free-8)
+prep_of(number-6, choices-9)
+mark(preserves-12, because-10)
+nsubj(preserves-12, it-11)
+advcl(maximizes-4, preserves-12)
+det(present-14, the-13)
+nsubj(possible-24, present-14)
+amod(choices-18, future-16)
+amod(choices-18, free-17)
+conj_and(present-14, choices-18)
+nsubj(possible-24, choices-18)
+quantmod(many-21, as-20)
+num(individuals-22, many-21)
+prep_of(choices-18, individuals-22)
+advmod(possible-24, as-23)
+xcomp(preserves-12, possible-24)
+prepc_without(possible-24, taking-26)
+prt(taking-26, away-27)
+det(choices-29, any-28)
+dobj(taking-26, choices-29)
+advmod(taking-26, arbitrarily-30)
+

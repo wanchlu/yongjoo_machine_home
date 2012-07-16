@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ My) (JJ favorite) (NN line))
+      (PP (IN by)
+        (NP (NNP Jon) (NNP OBrien))))
+    (VP (VBZ is)
+      (NP (`` ``) (JJ hard) (NNS cases)
+        (S
+          (VP (VB make)
+            (NP (JJ bad) (NN law))))))
+    (. .) ('' '')))
+
+poss(line-3, My-1)
+amod(line-3, favorite-2)
+nsubj(cases-10, line-3)
+nn(OBrien-6, Jon-5)
+prep_by(line-3, OBrien-6)
+cop(cases-10, is-7)
+amod(cases-10, hard-9)
+root(ROOT-0, cases-10)
+dep(cases-10, make-11)
+amod(law-13, bad-12)
+dobj(make-11, law-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ easy)
+        (PP (IN for)
+          (NP
+            (NP (NNS people))
+            (PP (IN with)
+              (NP (JJ limited) (NN experience))))))
+      (S
+        (VP (TO to)
+          (VP (VB make)
+            (NP (JJ harsh) (NNS judgements))
+            (PP (IN on)
+              (NP (JJ certain) (NNS issues))))))
+      (, ,)
+      (SBAR (RB especially) (IN if)
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (VP (VBN indoctrinated)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (ADJP (JJ young)
+                      (PP (IN by)
+                        (NP (JJ religious) (NNS beliefs))))))))))))
+    (. .)))
+
+nsubj(easy-3, It-1)
+xsubj(make-10, It-1)
+cop(easy-3, is-2)
+root(ROOT-0, easy-3)
+prep_for(easy-3, people-5)
+amod(experience-8, limited-7)
+prep_with(people-5, experience-8)
+aux(make-10, to-9)
+xcomp(easy-3, make-10)
+amod(judgements-12, harsh-11)
+dobj(make-10, judgements-12)
+amod(issues-15, certain-14)
+prep_on(make-10, issues-15)
+advmod(indoctrinated-21, especially-17)
+dep(indoctrinated-21, if-18)
+nsubjpass(indoctrinated-21, they-19)
+auxpass(indoctrinated-21, are-20)
+ccomp(easy-3, indoctrinated-21)
+advmod(young-25, when-22)
+nsubj(young-25, they-23)
+cop(young-25, are-24)
+advcl(indoctrinated-21, young-25)
+amod(beliefs-28, religious-27)
+prep_by(young-25, beliefs-28)
+

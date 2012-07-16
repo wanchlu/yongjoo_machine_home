@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (NP (NN evolution))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB never))
+        (VP (VBN been)
+          (VP (VBN proven))))
+      (CC and)
+      (VP (MD will)
+        (ADVP (RB never))
+        (VP (VB be)
+          (VP (VBN proven)
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (ADVP (RB never))
+                (VP (VBD happened))))))))
+    (. .)))
+
+nsubjpass(proven-5, evolution-1)
+nsubjpass(proven-10, evolution-1)
+aux(proven-5, has-2)
+neg(proven-5, never-3)
+auxpass(proven-5, been-4)
+root(ROOT-0, proven-5)
+aux(proven-10, will-7)
+neg(proven-10, never-8)
+auxpass(proven-10, be-9)
+conj_and(proven-5, proven-10)
+mark(happened-14, because-11)
+nsubj(happened-14, it-12)
+neg(happened-14, never-13)
+advcl(proven-10, happened-14)
+
+(ROOT
+  (SINV
+    (PP (IN on)
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP note)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (ADVP (RB also))
+                (VP (MD ca) (RB n't)
+                  (VP (VB prove)
+                    (NP (NN creationism))))))))))
+    (VP
+      (ADVP (RB ever))
+      (VBD took)
+      (NP (NN place)))
+    (SBAR (IN because)
+      (S
+        (NP (PRP it))
+        (ADVP (RB just))
+        (VP (VBD happened))))
+    (. .)))
+
+dep(took-11, on-1)
+nsubj(note-3, that-2)
+pcomp(on-1, note-3)
+nsubj(prove-8, you-4)
+advmod(prove-8, also-5)
+aux(prove-8, ca-6)
+neg(prove-8, n't-7)
+ccomp(note-3, prove-8)
+dobj(prove-8, creationism-9)
+advmod(took-11, ever-10)
+root(ROOT-0, took-11)
+dobj(took-11, place-12)
+mark(happened-16, because-13)
+nsubj(happened-16, it-14)
+advmod(happened-16, just-15)
+dep(took-11, happened-16)
+
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (NN nothing) (JJ intelligent))
+        (PP (IN about)
+          (NP
+            (NP
+              (NP (DT the) (NN thought))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBD evolved)
+                    (PP (IN from)
+                      (NP (NN hydrogen) (NN gas)))))))
+            (CC or)
+            (NP (DT any) (JJ other) (NN non) (VBG living) (NN thing))))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+dep(intelligent-4, nothing-3)
+acomp(is-2, intelligent-4)
+det(thought-7, the-6)
+prep_about(intelligent-4, thought-7)
+dobj(evolved-9, thought-7)
+nsubj(evolved-9, you-8)
+rcmod(thought-7, evolved-9)
+nn(gas-12, hydrogen-11)
+prep_from(evolved-9, gas-12)
+det(thing-18, any-14)
+amod(thing-18, other-15)
+nn(thing-18, non-16)
+amod(thing-18, living-17)
+prep_about(intelligent-4, thing-18)
+conj_or(thought-7, thing-18)
+dobj(evolved-9, thing-18)
+

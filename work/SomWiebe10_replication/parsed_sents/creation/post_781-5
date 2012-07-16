@@ -1,0 +1,51 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR (IN Since)
+        (S
+          (NP (NNP God))
+          (VP (MD can) (RB not))))
+      (VP (VBP lie) ('' '')))
+    (IN So)
+    (S
+      (NP (NNP God))
+      (VP (VBZ is) (RB not)
+        (ADJP (RB all) (JJ powerful))))
+    (. ?)))
+
+mark(can-4, Since-2)
+nsubj(can-4, God-3)
+csubj(lie-6, can-4)
+neg(can-4, not-5)
+root(ROOT-0, lie-6)
+dep(lie-6, So-8)
+nsubj(powerful-13, God-9)
+cop(powerful-13, is-10)
+neg(powerful-13, not-11)
+advmod(powerful-13, all-12)
+ccomp(lie-6, powerful-13)
+
+(ROOT
+  (S
+    (ADVP (RB Surely))
+    (NP (DT an) (NN omnipotent) (NN deity))
+    (VP (MD can)
+      (VP (VB do)
+        (NP (NN anything))))
+    (. ?)))
+
+advmod(do-6, Surely-1)
+det(deity-4, an-2)
+nn(deity-4, omnipotent-3)
+nsubj(do-6, deity-4)
+aux(do-6, can-5)
+root(ROOT-0, do-6)
+dobj(do-6, anything-7)
+
+(ROOT
+  (FRAG
+    (NP (CD 2))
+    (. .)))
+
+root(ROOT-0, 2-1)
+

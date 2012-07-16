@@ -1,0 +1,58 @@
+(ROOT
+  (SINV
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (DT the) (NNP MCP))
+            (VP (VBD did))))))
+    (, ,)
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (DT the) (NN default) (NN position))
+          (VP (MD should)
+            (VP (VB be))))))
+    (NP
+      (NP (DT the) (JJ pro) (NN life))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ ignores)
+            (NP
+              (NP (DT the) (NN view)
+                (CC and)
+                (NNS rights))
+              (PP (IN of)
+                (NP (DT the) (JJ pro) (NN choice) (NN side))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+ccomp(said-8, is-2)
+dobj(did-6, what-3)
+det(MCP-5, the-4)
+nsubj(did-6, MCP-5)
+ccomp(is-2, did-6)
+root(ROOT-0, said-8)
+det(position-11, the-9)
+nn(position-11, default-10)
+nsubj(be-13, position-11)
+aux(be-13, should-12)
+ccomp(said-8, be-13)
+det(life-16, the-14)
+amod(life-16, pro-15)
+nsubj(said-8, life-16)
+nsubj(ignores-19, life-16)
+rcmod(life-16, ignores-19)
+det(view-21, the-20)
+dobj(ignores-19, view-21)
+dobj(ignores-19, rights-23)
+conj_and(view-21, rights-23)
+det(side-28, the-25)
+amod(side-28, pro-26)
+nn(side-28, choice-27)
+prep_of(view-21, side-28)
+

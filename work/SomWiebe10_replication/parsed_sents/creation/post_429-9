@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (ADVP (RB Just))
+    (VP (VB ask)
+      (NP (DT any) (NN IDer))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (VP (VBZ does)
+            (SBAR
+              (S
+                (S
+                  (NP (NNP ID))
+                  (VP (VBP explain)
+                    (NP (DT the) (JJ bacterial) (NN flagella))))
+                (CC and)
+                (S
+                  (NP (PRP you))
+                  (VP (MD will)
+                    (VP (VB be)
+                      (VP (VBN amazed)
+                        (SBAR (IN that)
+                          (S
+                            (NP (PRP they))
+                            (VP (VBP provide)
+                              (NP (NN nothing)))))))))))))))
+    (. .)))
+
+advmod(ask-2, Just-1)
+root(ROOT-0, ask-2)
+det(IDer-4, any-3)
+dobj(ask-2, IDer-4)
+advmod(does-7, how-6)
+dep(ask-2, does-7)
+nsubj(explain-9, ID-8)
+dep(does-7, explain-9)
+det(flagella-12, the-10)
+amod(flagella-12, bacterial-11)
+dobj(explain-9, flagella-12)
+nsubjpass(amazed-17, you-14)
+aux(amazed-17, will-15)
+auxpass(amazed-17, be-16)
+dep(does-7, amazed-17)
+conj_and(explain-9, amazed-17)
+complm(provide-20, that-18)
+nsubj(provide-20, they-19)
+ccomp(amazed-17, provide-20)
+dobj(provide-20, nothing-21)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (NNS people))
+        (VP (VBD lived)
+          (PP (IN along)
+            (NP (NN side) (NNS mammoths)
+              (CC and)
+              (NNS stegosauri)))
+          (ADVP (RB then))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP are)
+                (NP
+                  (NP (JJ mammoth)
+                    (CC and)
+                    (JJ stegosauri) (NNS fossils))
+                  (ADJP (RB not) (JJ intermingled)))))))))
+    (. ?)))
+
+mark(lived-3, If-1)
+nsubj(lived-3, people-2)
+root(ROOT-0, lived-3)
+nn(mammoths-6, side-5)
+prep_along(lived-3, mammoths-6)
+prep_along(lived-3, stegosauri-8)
+conj_and(mammoths-6, stegosauri-8)
+advmod(lived-3, then-9)
+advmod(fossils-15, why-10)
+cop(fossils-15, are-11)
+amod(fossils-15, mammoth-12)
+conj_and(mammoth-12, stegosauri-14)
+amod(fossils-15, stegosauri-14)
+advcl(lived-3, fossils-15)
+neg(intermingled-17, not-16)
+amod(fossils-15, intermingled-17)
+

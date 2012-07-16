@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP Fact))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR
+          (S
+            (NP (PRP we))
+            (ADVP (RB just))
+            (VP (VB don)
+              (SBAR
+                (S
+                  (NP (NN t))
+                  (VP (VBP know)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (NP (DT the) (NN money))
+                        (VP (VBZ comes)
+                          (PP (IN from)))))))))))
+        (CC or)
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (VP (VBN hidden)
+                (NP (NNS motives))))))))
+    (. .)))
+
+det(Fact-2, The-1)
+nsubj(is-3, Fact-2)
+root(ROOT-0, is-3)
+nsubj(don-6, we-4)
+advmod(don-6, just-5)
+dep(is-3, don-6)
+nsubj(know-8, t-7)
+ccomp(don-6, know-8)
+dep(comes-12, who-9)
+det(money-11, the-10)
+nsubj(comes-12, money-11)
+ccomp(know-8, comes-12)
+prep(comes-12, from-13)
+mark(hidden-18, if-15)
+nsubj(hidden-18, they-16)
+aux(hidden-18, have-17)
+dep(is-3, hidden-18)
+conj_or(don-6, hidden-18)
+dobj(hidden-18, motives-19)
+

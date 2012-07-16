@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (MD can) (RB not)
+          (VP (VB know)
+            (SBAR (IN for)
+              (S
+                (NP (JJ certain))
+                (VP (MD should))))))))
+    (NP (PRP we))
+    (ADVP (RB not) (RB always))
+    (VP (VBP err)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN side))
+          (PP (IN of)
+            (NP
+              (NP (NN life))
+              (, ,) (RB not)
+              (NP (NN death)))))))
+    (. ?)))
+
+mark(know-5, If-1)
+nsubj(know-5, we-2)
+aux(know-5, can-3)
+neg(know-5, not-4)
+advcl(err-12, know-5)
+mark(should-8, for-6)
+nsubj(should-8, certain-7)
+advcl(know-5, should-8)
+nsubj(err-12, we-9)
+dep(always-11, not-10)
+advmod(err-12, always-11)
+root(ROOT-0, err-12)
+det(side-15, the-14)
+prep_on(err-12, side-15)
+prep_of(side-15, life-17)
+neg(life-17, not-19)
+dep(life-17, death-20)
+

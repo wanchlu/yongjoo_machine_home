@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP
+            (NP (VBG differing) (NNS views))
+            (PP (IN on)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP you))
+                  (VP (MD should)
+                    (VP (VB treat)
+                      (NP (NNS others)))))))))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (NNP e.g.))
+        (VP (VBG killing)
+          (NP (DT the) (NN unborn))))
+      (-RRB- -RRB-))
+    (NP (PRP you))
+    (VP (VBP have)
+      (NP (DT a) (JJ common) (NN viewpoint))
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN rest))
+          (PP (IN of)
+            (NP (NN mankind)))))
+      (S
+        (VP (VBG concerning)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP YOU))
+              (VP (VBP want)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN treated)))))))))))
+    (. .)))
+
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl(have-19, have-3)
+amod(views-5, differing-4)
+dobj(have-3, views-5)
+advmod(treat-10, how-7)
+nsubj(treat-10, you-8)
+aux(treat-10, should-9)
+prepc_on(views-5, treat-10)
+dobj(treat-10, others-11)
+nsubj(killing-14, e.g.-13)
+parataxis(have-19, killing-14)
+det(unborn-16, the-15)
+dobj(killing-14, unborn-16)
+nsubj(have-19, you-18)
+root(ROOT-0, have-19)
+det(viewpoint-22, a-20)
+amod(viewpoint-22, common-21)
+dobj(have-19, viewpoint-22)
+det(rest-25, the-24)
+prep_with(have-19, rest-25)
+prep_of(rest-25, mankind-27)
+xcomp(have-19, concerning-28)
+advmod(want-31, how-29)
+nsubj(want-31, YOU-30)
+xsubj(treated-34, YOU-30)
+ccomp(concerning-28, want-31)
+aux(treated-34, to-32)
+auxpass(treated-34, be-33)
+xcomp(want-31, treated-34)
+

@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN person))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ commits)
+            (NP (DT a) (NN murder))))))
+    (VP (VBZ commits)
+      (NP
+        (NP (DT the) (JJ same) (NN sin))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS eyes))
+            (PP (IN of)
+              (NP (NNP God))))))
+      (PP (IN as)
+        (NP
+          (NP (NN someone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ lies)))))))
+    (. .)))
+
+det(person-2, A-1)
+nsubj(commits-4, person-2)
+nsubj(commits-7, person-2)
+rcmod(person-2, commits-4)
+det(murder-6, a-5)
+dobj(commits-4, murder-6)
+root(ROOT-0, commits-7)
+det(sin-10, the-8)
+amod(sin-10, same-9)
+dobj(commits-7, sin-10)
+det(eyes-13, the-12)
+prep_in(sin-10, eyes-13)
+prep_of(eyes-13, God-15)
+prep_as(commits-7, someone-17)
+nsubj(lies-19, someone-17)
+rcmod(someone-17, lies-19)
+

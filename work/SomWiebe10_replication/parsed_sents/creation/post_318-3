@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Texas) (NNP State) (NNP Board))
+      (PP (IN of)
+        (NP (NNP Education))))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP (NNS creationists))
+          ('' '')
+          (SBAR
+            (S
+              (NP (PRP They))
+              (VP (VBP are)
+                (NP
+                  (NP (CD 7))
+                  (PP (RB out) (IN of)
+                    (NP (CD 15) (NN minority))))))))))
+    (. .)))
+
+nn(Board-3, Texas-1)
+nn(Board-3, State-2)
+nsubj(consists-6, Board-3)
+prep_of(Board-3, Education-5)
+root(ROOT-0, consists-6)
+prep_of(consists-6, creationists-8)
+nsubj(7-12, They-10)
+cop(7-12, are-11)
+rcmod(creationists-8, 7-12)
+num(minority-16, 15-15)
+prep_out_of(7-12, minority-16)
+

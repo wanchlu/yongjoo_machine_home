@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (NN life))
+          (VP (VBZ occurrs)
+            (PP (IN at)
+              (NP (NN conception)))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+complm(occurrs-5, that-3)
+nsubj(occurrs-5, life-4)
+ccomp(believe-2, occurrs-5)
+prep_at(occurrs-5, conception-7)
+
+(ROOT
+  (SBARQ
+    (WHADJP (RB Then) (WP what))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB mean)
+        (S
+          (VP (TO to)
+            (VP (VB be) (`` ``)
+              (ADJP (JJ alive))
+              ('' '')
+              (PP (IN at)
+                (NP (DT that) (NN point))))))))
+    (. ?)))
+
+dep(mean-5, Then-1)
+dep(Then-1, what-2)
+aux(mean-5, does-3)
+nsubj(mean-5, it-4)
+xsubj(alive-9, it-4)
+root(ROOT-0, mean-5)
+aux(alive-9, to-6)
+cop(alive-9, be-7)
+xcomp(mean-5, alive-9)
+det(point-13, that-12)
+prep_at(alive-9, point-13)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP I))
+          (VP (VBP believe)))))
+    (. .)))
+
+nsubj(is-2, That-1)
+root(ROOT-0, is-2)
+dobj(believe-5, what-3)
+nsubj(believe-5, I-4)
+ccomp(is-2, believe-5)
+
+(ROOT
+  (FRAG (WRB Why) (. ?)))
+
+root(ROOT-0, Why-1)
+

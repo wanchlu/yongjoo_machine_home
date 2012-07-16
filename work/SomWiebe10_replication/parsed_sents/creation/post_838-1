@@ -1,0 +1,58 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (PRP He))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ entertains)
+              (NP (DT a) (NN scoffer))))))
+      (VP (MD will)
+        (VP (VB do)
+          (ADVP (RB so))
+          (PP (TO to)
+            (NP (PRP$ his) (NN sorrow))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN father))
+        (PP (IN of)
+          (NP (CD one)))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ lacks)
+              (NP (NN wisdom))))))
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (NN joy))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (QP (CD Proverbs) (CD 17:21)))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+nsubj(entertains-4, He-2)
+nsubj(do-8, He-2)
+rcmod(He-2, entertains-4)
+det(scoffer-6, a-5)
+dobj(entertains-4, scoffer-6)
+aux(do-8, will-7)
+root(ROOT-0, do-8)
+advmod(do-8, so-9)
+poss(sorrow-12, his-11)
+prep_to(do-8, sorrow-12)
+det(father-16, the-15)
+nsubj(lacks-20, father-16)
+nsubj(has-22, father-16)
+prep_of(father-16, one-18)
+rcmod(father-16, lacks-20)
+dobj(lacks-20, wisdom-21)
+conj_and(do-8, has-22)
+det(joy-24, no-23)
+dobj(has-22, joy-24)
+number(17:21-27, Proverbs-26)
+dep(joy-24, 17:21-27)
+

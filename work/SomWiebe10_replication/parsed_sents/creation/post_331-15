@@ -1,0 +1,50 @@
+(ROOT
+  (FRAG
+    (ADJP (RBR Better))
+    (S
+      (VP (TO to)
+        (VP (VB know)
+          (NP
+            (NP (RB about) (NNS proteins))
+            (, ,)
+            (NP (NNS enzymes))
+            (, ,)
+            (CC and)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NNS humans))
+                (VP (VBP are)
+                  (ADJP (VBN related)
+                    (PP (TO to)
+                      (NP
+                        (NP (NNS bonobos))
+                        (PRN (-LRB- -LRB-)
+                          (S
+                            (NP (EX there))
+                            (VP (VBZ is)
+                              (NP
+                                (NP (NN evolution))
+                                (PP (IN in)
+                                  (NP (DT that))))))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+root(ROOT-0, Better-1)
+aux(know-3, to-2)
+dep(Better-1, know-3)
+advmod(proteins-5, about-4)
+dobj(know-3, proteins-5)
+dobj(know-3, enzymes-7)
+conj_and(proteins-5, enzymes-7)
+advmod(related-13, how-10)
+nsubjpass(related-13, humans-11)
+auxpass(related-13, are-12)
+dobj(know-3, related-13)
+conj_and(proteins-5, related-13)
+prep_to(related-13, bonobos-15)
+expl(is-18, there-17)
+dep(bonobos-15, is-18)
+nsubj(is-18, evolution-19)
+prep_in(evolution-19, that-21)
+

@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (NNP Pro-choice))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (DT the) (NN woman))
+          (VP (VBZ decides)
+            (PP (RB rather) (IN than)
+              (NP (DT the) (NN government)))))))
+    (. .)))
+
+nsubj(means-2, Pro-choice-1)
+root(ROOT-0, means-2)
+det(woman-4, the-3)
+nsubj(decides-5, woman-4)
+ccomp(means-2, decides-5)
+advmod(decides-5, rather-6)
+det(government-9, the-8)
+prep_than(decides-5, government-9)
+
+(ROOT
+  (S
+    (NP (NNP Pro-choice))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (ADJP (JJ pro-abortion))))
+    (. .)))
+
+nsubj(mean-4, Pro-choice-1)
+aux(mean-4, does-2)
+neg(mean-4, n't-3)
+root(ROOT-0, mean-4)
+acomp(mean-4, pro-abortion-5)
+

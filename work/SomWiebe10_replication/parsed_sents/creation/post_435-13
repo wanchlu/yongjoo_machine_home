@@ -1,0 +1,52 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB so))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (RB not)
+      (VP (VB hypothesize)
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (NNP Man))
+              (VP (VBZ is)
+                (NP
+                  (NP (DT that))
+                  (VP (VBG being))))))
+          (, ,)
+          (CC and)
+          (SBAR (IN that)
+            (S
+              (NP (PRP we))
+              (ADVP (RB just))
+              (VP (VBP do) (RB n't)
+                (ADVP (RB yet))
+                (VP (VB understand)
+                  (ADVP (WRB how))
+                  (NP (PRP$ its) (JJ possible)))))))))
+    (. ?)))
+
+mark(so-2, If-1)
+advcl(hypothesize-6, so-2)
+advmod(hypothesize-6, why-4)
+neg(hypothesize-6, not-5)
+root(ROOT-0, hypothesize-6)
+complm(that-10, that-7)
+nsubj(that-10, Man-8)
+cop(that-10, is-9)
+ccomp(hypothesize-6, that-10)
+partmod(that-10, being-11)
+complm(understand-20, that-14)
+nsubj(understand-20, we-15)
+advmod(understand-20, just-16)
+aux(understand-20, do-17)
+neg(understand-20, n't-18)
+advmod(understand-20, yet-19)
+ccomp(hypothesize-6, understand-20)
+conj_and(that-10, understand-20)
+advmod(understand-20, how-21)
+poss(possible-23, its-22)
+dobj(understand-20, possible-23)
+

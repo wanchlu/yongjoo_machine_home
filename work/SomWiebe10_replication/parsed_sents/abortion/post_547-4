@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (VP (VB vote)
+      (ADVP (RB no)
+        (PP (TO to)
+          (S
+            (VP (VBG banning)
+              (NP (NN abortion)))))))
+    (. .)))
+
+root(ROOT-0, vote-1)
+advmod(vote-1, no-2)
+prepc_to(no-2, banning-4)
+dobj(banning-4, abortion-5)
+
+(ROOT
+  (NP
+    (NP (NN Vote) (RB yes))
+    (PP (TO to)
+      (S
+        (VP (VBG allowing)
+          (NP (NN state) (NN funding))
+          (S
+            (VP (TO to)
+              (VP (VB pay)
+                (PP (IN for)
+                  (NP (NNS abortions)))))))))
+    (. .)))
+
+root(ROOT-0, Vote-1)
+advmod(Vote-1, yes-2)
+prepc_to(Vote-1, allowing-4)
+nn(funding-6, state-5)
+dobj(allowing-4, funding-6)
+aux(pay-8, to-7)
+xcomp(allowing-4, pay-8)
+prep_for(pay-8, abortions-10)
+

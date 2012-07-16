@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ does) (RB not)
+        (VP (VB mean)
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VBP are)
+                (ADJP (JJ perfect))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (SBAR (IN if)
+            (S
+              (NP (PDT such) (DT a) (NN candidate))
+              (VP (VBZ has)
+                (ADVP (RB ever))
+                (VP (VBN existed))))))))
+    (. .)))
+
+nsubj(mean-4, This-1)
+aux(mean-4, does-2)
+neg(mean-4, not-3)
+root(ROOT-0, mean-4)
+nsubj(perfect-7, they-5)
+cop(perfect-7, are-6)
+ccomp(mean-4, perfect-7)
+nsubj(know-13, I-10)
+aux(know-13, do-11)
+neg(know-13, n't-12)
+conj_and(mean-4, know-13)
+mark(existed-20, if-14)
+predet(candidate-17, such-15)
+det(candidate-17, a-16)
+nsubj(existed-20, candidate-17)
+aux(existed-20, has-18)
+advmod(existed-20, ever-19)
+advcl(know-13, existed-20)
+

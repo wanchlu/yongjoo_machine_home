@@ -1,0 +1,72 @@
+(ROOT
+  (FRAG (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP hold)
+          (SBAR (IN that)
+            (S
+              (NP (PRP$ your) (NN life))
+              (VP (VBZ is)
+                (ADJP
+                  (ADJP (NN worth) (JJR less))
+                  (SBAR (IN than)
+                    (S
+                      (NP (NNS others))
+                      (VP (VBZ lives)))))
+                (, ,)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (NP (RB then))
+                    (VP (MD should)
+                      (NP (PRP you))
+                      (S
+                        (VP (VB try)
+                          (CC and)
+                          (VB force)
+                          (NP (PRP$ your) (NN belief))
+                          (PP (IN upon)
+                            (NP (PRP me))))))))))))))
+    (. ?)))
+
+dep(hold-4, And-1)
+mark(hold-4, if-2)
+nsubj(hold-4, you-3)
+root(ROOT-0, hold-4)
+complm(worth-9, that-5)
+poss(life-7, your-6)
+nsubj(worth-9, life-7)
+cop(worth-9, is-8)
+ccomp(hold-4, worth-9)
+dep(worth-9, less-10)
+mark(lives-13, than-11)
+nsubj(lives-13, others-12)
+dep(worth-9, lives-13)
+advmod(should-17, why-15)
+nsubj(should-17, then-16)
+advcl(worth-9, should-17)
+dobj(should-17, you-18)
+dep(should-17, try-19)
+dep(should-17, force-21)
+conj_and(try-19, force-21)
+poss(belief-23, your-22)
+dobj(try-19, belief-23)
+prep_upon(try-19, me-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP owe)
+      (NP (PRP$ my) (NN life))
+      (PP (TO to)
+        (NP (DT no) (NN one))))
+    (. .)))
+
+nsubj(owe-2, I-1)
+root(ROOT-0, owe-2)
+poss(life-4, my-3)
+dobj(owe-2, life-4)
+det(one-7, no-6)
+prep_to(owe-2, one-7)
+

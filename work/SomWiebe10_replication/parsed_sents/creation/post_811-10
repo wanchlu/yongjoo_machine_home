@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (ADVP (RB somehow))
+        (VP (VBD observed)
+          (NP
+            (NP (DT an) (NN area))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN earth))
+                (SBAR
+                  (WHNP
+                    (WHADVP (WRB where))
+                    (NN gravity))
+                  (S
+                    (VP (VBD was)
+                      (VP (VBN reversed)
+                        (ADVP (RB then))))))))))))
+    (NP (DT a) (JJ scientific) (NN investigation))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB demonstrate)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP
+                    (NP (NNS conditions))
+                    (`` ``)
+                    (NP (RB there))
+                    ('' ''))
+                  (VP (VBD caused)
+                    (NP (NN gravity))
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN reversed)))))))))))))
+    (. .)))
+
+mark(observed-4, If-1)
+nsubj(observed-4, we-2)
+advmod(observed-4, somehow-3)
+advcl(have-19, observed-4)
+det(area-6, an-5)
+dobj(observed-4, area-6)
+det(earth-9, the-8)
+prep_of(area-6, earth-9)
+advmod(gravity-11, where-10)
+nsubjpass(reversed-13, gravity-11)
+auxpass(reversed-13, was-12)
+rcmod(earth-9, reversed-13)
+advmod(reversed-13, then-14)
+det(investigation-17, a-15)
+amod(investigation-17, scientific-16)
+nsubj(have-19, investigation-17)
+xsubj(demonstrate-21, investigation-17)
+aux(have-19, would-18)
+root(ROOT-0, have-19)
+aux(demonstrate-21, to-20)
+xcomp(have-19, demonstrate-21)
+dep(caused-27, what-22)
+nsubj(caused-27, conditions-23)
+dep(conditions-23, there-25)
+ccomp(demonstrate-21, caused-27)
+dobj(caused-27, gravity-28)
+aux(reversed-31, to-29)
+auxpass(reversed-31, be-30)
+xcomp(caused-27, reversed-31)
+

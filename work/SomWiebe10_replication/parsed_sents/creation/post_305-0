@@ -1,0 +1,42 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Intelligent) (NN design))
+    (VP (VBZ works)
+      (PRT (RP off))
+      (NP
+        (NP (JJ positive) (NNS predictions))
+        (PP (IN about)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (NN experience))
+              (VP (VBZ tells)
+                (NP (PRP us))
+                (SBAR (IN that)
+                  (S
+                    (NP (JJ intelligent) (NN design))
+                    (VP (VBZ is)
+                      (NP
+                        (NP (DT the) (NN cause))
+                        (PP (IN at)
+                          (NP (NN work)))))))))))))
+    (. .)))
+
+nn(design-3, Intelligent-2)
+nsubj(works-4, design-3)
+root(ROOT-0, works-4)
+prt(works-4, off-5)
+amod(predictions-7, positive-6)
+dobj(works-4, predictions-7)
+advmod(tells-11, where-9)
+nsubj(tells-11, experience-10)
+prepc_about(predictions-7, tells-11)
+dobj(tells-11, us-12)
+complm(cause-18, that-13)
+amod(design-15, intelligent-14)
+nsubj(cause-18, design-15)
+cop(cause-18, is-16)
+det(cause-18, the-17)
+ccomp(tells-11, cause-18)
+prep_at(cause-18, work-20)
+

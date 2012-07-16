@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (NP (DT An) (JJ aborted) (NN fetus))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an)
+          (ADJP (JJ unformed) (, ,) (JJ unviable) (, ,) (RB clinically) (JJ dead))
+          (NN entity))
+        (PP (IN with)
+          (NP (DT a) (JJ destroyed) (NN brain)))))
+    (. .)))
+
+det(fetus-3, An-1)
+amod(fetus-3, aborted-2)
+nsubj(entity-12, fetus-3)
+cop(entity-12, is-4)
+det(entity-12, an-5)
+amod(dead-11, unformed-6)
+amod(dead-11, unviable-8)
+advmod(dead-11, clinically-10)
+amod(entity-12, dead-11)
+root(ROOT-0, entity-12)
+det(brain-16, a-14)
+amod(brain-16, destroyed-15)
+prep_with(entity-12, brain-16)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (JJ rational) (NN sense))
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT which)))
+          (S
+            (NP (PDT such) (DT a) (NN thing))
+            (VP (VBZ is)
+              (NP (DT a) (NN person)))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(sense-5, no-3)
+amod(sense-5, rational-4)
+nsubj(is-2, sense-5)
+rel(person-13, which-7)
+predet(thing-10, such-8)
+det(thing-10, a-9)
+nsubj(person-13, thing-10)
+cop(person-13, is-11)
+det(person-13, a-12)
+rcmod(sense-5, person-13)
+
+(ROOT
+  (S
+    (NP (RB Only) (JJ irrational) (NNS emotions))
+    (VP (MD could)
+      (VP (VB lead)
+        (NP (CD one))
+        (S
+          (VP (TO to)
+            (VP (VB proclaim)
+              (S
+                (NP (PRP it))
+                (NP (DT a) (NN person))))))))
+    (. .)))
+
+advmod(emotions-3, Only-1)
+amod(emotions-3, irrational-2)
+nsubj(lead-5, emotions-3)
+aux(lead-5, could-4)
+root(ROOT-0, lead-5)
+dobj(lead-5, one-6)
+aux(proclaim-8, to-7)
+xcomp(lead-5, proclaim-8)
+nsubj(person-11, it-9)
+det(person-11, a-10)
+xcomp(proclaim-8, person-11)
+

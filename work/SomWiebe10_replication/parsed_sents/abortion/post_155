@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (NP (NNP Partial-birth) (NNS abortions))
+    (VP (VBP are)
+      (VP (VBN performed)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (JJ fetal) (NNS tissues))
+            (VP (VBP are)
+              (ADJP (JJR harder)
+                (S
+                  (VP (TO to)
+                    (VP (VB dismember))))))))))
+    (. .)))
+
+nn(abortions-2, Partial-birth-1)
+nsubjpass(performed-4, abortions-2)
+auxpass(performed-4, are-3)
+root(ROOT-0, performed-4)
+advmod(harder-9, when-5)
+amod(tissues-7, fetal-6)
+nsubj(harder-9, tissues-7)
+cop(harder-9, are-8)
+advcl(performed-4, harder-9)
+aux(dismember-11, to-10)
+xcomp(harder-9, dismember-11)
+
+(ROOT
+  (SINV
+    (FRAG
+      (NP (NNP Warren) (NNP Hern)))
+    (, ,)
+    (VP (VBD excerpted)
+      (PP (IN from)
+        (NP (PRP$ his) (JJ medical) (NN textbook))))
+    (NP
+      (NP (NNP Abortion) (NNP Practice))
+      (, ,)
+      (NP
+        (NP (NNP J.B.) (NNP Lippincott) (NNP Company))
+        (, ,)
+        (NP (CD 1984))))
+    (. .)))
+
+nn(Hern-2, Warren-1)
+dep(excerpted-4, Hern-2)
+root(ROOT-0, excerpted-4)
+poss(textbook-8, his-6)
+amod(textbook-8, medical-7)
+prep_from(excerpted-4, textbook-8)
+nn(Practice-10, Abortion-9)
+nsubj(excerpted-4, Practice-10)
+nn(Company-14, J.B.-12)
+nn(Company-14, Lippincott-13)
+appos(Practice-10, Company-14)
+appos(Company-14, 1984-16)
+
+(ROOT
+  (S (`` ``)
+    (NP (DT The) (NN procedure))
+    (VP (VBZ changes)
+      (ADVP (RB significantly))
+      (PP (IN at)
+        (NP
+          (NP (CD 21) (NNS weeks))
+          (SBAR (IN because)
+            (S
+              (NP (JJ fetal) (NNS tissues))
+              (VP (VBP become)
+                (ADJP
+                  (ADJP (RB much) (RBR more) (JJ cohesive))
+                  (CC and)
+                  (ADJP (JJ difficult)
+                    (S
+                      (VP (TO to)
+                        (VP (VB dismember))))))))))))
+    (. .)))
+
+det(procedure-3, The-2)
+nsubj(changes-4, procedure-3)
+root(ROOT-0, changes-4)
+advmod(changes-4, significantly-5)
+num(weeks-8, 21-7)
+prep_at(changes-4, weeks-8)
+mark(cohesive-15, because-9)
+amod(tissues-11, fetal-10)
+nsubj(cohesive-15, tissues-11)
+nsubj(difficult-17, tissues-11)
+cop(cohesive-15, become-12)
+advmod(cohesive-15, much-13)
+advmod(cohesive-15, more-14)
+dep(weeks-8, cohesive-15)
+dep(weeks-8, difficult-17)
+conj_and(cohesive-15, difficult-17)
+aux(dismember-19, to-18)
+xcomp(difficult-17, dismember-19)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 17))
+      (-RRB- -RRB-))))
+
+appos(''-1, 17-3)
+

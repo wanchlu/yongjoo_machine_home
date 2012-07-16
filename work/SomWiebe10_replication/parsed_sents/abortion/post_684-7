@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (NP (DT a) (NN scientist))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (VP (VBG claiming)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP
+                  (NP (NN authority))
+                  (PP (VBG regarding)
+                    (NP
+                      (NP (DT the) (NN issue))
+                      (, ,)
+                      (PP (IN except)
+                        (SBAR
+                          (WHADVP (WRB where))
+                          (S
+                            (NP (NNS others))
+                            (VP (VBP make)
+                              (NP
+                                (NP (DT a) (JJ false) (NN claim))
+                                (PP (IN of)
+                                  (NP (JJ scientific) (NN conclusion)))))))))))))))))
+    (. .)))
+
+nsubj(scientist-4, I-1)
+cop(scientist-4, am-2)
+det(scientist-4, a-3)
+root(ROOT-0, scientist-4)
+nsubj(claiming-10, I-7)
+xsubj(have-12, I-7)
+aux(claiming-10, am-8)
+neg(claiming-10, not-9)
+conj_but(scientist-4, claiming-10)
+aux(have-12, to-11)
+xcomp(claiming-10, have-12)
+dobj(have-12, authority-13)
+det(issue-16, the-15)
+prep_regarding(authority-13, issue-16)
+advmod(make-21, where-19)
+nsubj(make-21, others-20)
+prepc_except(issue-16, make-21)
+det(claim-24, a-22)
+amod(claim-24, false-23)
+dobj(make-21, claim-24)
+amod(conclusion-27, scientific-26)
+prep_of(claim-24, conclusion-27)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Scientists))
+      (VP (VBP have)
+        (VP (VBN found)
+          (NP
+            (NP (RB literally) (NNS thousands))
+            (PP (IN of)
+              (NP (JJ transitional) (NNS fossils)))))))
+    (, ,)
+    (CC and)
+    (RB not)
+    (S
+      (NP (DT a) (JJ single) (NN fossil))
+      (VP (VBZ has) (RB not)
+        (VP (VBN fit)
+          (PP (IN within)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (NN evolution))
+                (VP (VBZ predicts))))))))
+    (. .)))
+
+nsubj(found-3, Scientists-1)
+aux(found-3, have-2)
+root(ROOT-0, found-3)
+advmod(thousands-5, literally-4)
+dobj(found-3, thousands-5)
+amod(fossils-8, transitional-7)
+prep_of(thousands-5, fossils-8)
+conj_and(found-3, not-11)
+neg(found-3, not-11)
+det(fossil-14, a-12)
+amod(fossil-14, single-13)
+nsubj(fit-17, fossil-14)
+aux(fit-17, has-15)
+neg(fit-17, not-16)
+ccomp(found-3, fit-17)
+dobj(predicts-21, what-19)
+nsubj(predicts-21, evolution-20)
+prepc_within(fit-17, predicts-21)
+

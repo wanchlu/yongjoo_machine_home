@@ -1,0 +1,75 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP
+        (NP (NNP Forrest))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (VP (VBN written)
+                (NP
+                  (NP (DT a) (NN history))
+                  (PP (IN of)
+                    (NP (NNP ID))))))))
+        (, ,))
+      (VP (VBD was)
+        (NP
+          (NP (DT an) (NN expert) (NN witness))
+          (PP (IN in)
+            (NP (DT the) (NNP Dover) (NN case))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ her) (NN piece))
+      (VP (VBZ recounts)
+        (NP
+          (NP (DT the) (JJ various) (JJ personal) (NNS attacks))
+          (CC and)
+          (NP
+            (NP (JJ snide) (NNS comments))
+            (SBAR
+              (S
+                (NP (PRP she))
+                (VP (VBD had)
+                  (S
+                    (VP (TO to)
+                      (VP (VB endure)
+                        (PP (IN during)
+                          (NP (DT the) (NN trial)))))))))))))
+    (. .)))
+
+nsubj(written-6, Forrest-2)
+nsubj(witness-15, Forrest-2)
+aux(written-6, has-5)
+rcmod(Forrest-2, written-6)
+det(history-8, a-7)
+dobj(written-6, history-8)
+prep_of(history-8, ID-10)
+cop(witness-15, was-12)
+det(witness-15, an-13)
+nn(witness-15, expert-14)
+root(ROOT-0, witness-15)
+det(case-19, the-17)
+nn(case-19, Dover-18)
+prep_in(witness-15, case-19)
+poss(piece-23, her-22)
+nsubj(recounts-24, piece-23)
+conj_and(witness-15, recounts-24)
+det(attacks-28, the-25)
+amod(attacks-28, various-26)
+amod(attacks-28, personal-27)
+dobj(recounts-24, attacks-28)
+amod(comments-31, snide-30)
+dobj(recounts-24, comments-31)
+conj_and(attacks-28, comments-31)
+dobj(had-33, comments-31)
+nsubj(had-33, she-32)
+xsubj(endure-35, she-32)
+rcmod(comments-31, had-33)
+aux(endure-35, to-34)
+xcomp(had-33, endure-35)
+det(trial-38, the-37)
+prep_during(endure-35, trial-38)
+

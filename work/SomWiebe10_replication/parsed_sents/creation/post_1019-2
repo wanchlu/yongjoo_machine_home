@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (S
+      (NP (DT those) (NNS cells))
+      (VP (VBD began)
+        (S
+          (VP (TO to)
+            (VP (VB multiply))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (JJ random) (NNS mutations))
+      (VP (VBD occurred) (, ,)
+        (S
+          (VP (VBG changing)
+            (NP (PRP them))
+            (ADVP (RB ever))
+            (ADVP (RB so) (RB slightly))))))
+    (. .)))
+
+det(cells-2, those-1)
+nsubj(began-3, cells-2)
+xsubj(multiply-5, cells-2)
+root(ROOT-0, began-3)
+aux(multiply-5, to-4)
+xcomp(began-3, multiply-5)
+amod(mutations-9, random-8)
+nsubj(occurred-10, mutations-9)
+conj_and(began-3, occurred-10)
+xcomp(occurred-10, changing-12)
+dobj(changing-12, them-13)
+advmod(changing-12, ever-14)
+advmod(slightly-16, so-15)
+advmod(changing-12, slightly-16)
+

@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT NO) (NNP MISCHIEF))
+        (VP (VBZ follows)
+          (NP (DT the) (JJ premature) (NN birth)))))
+    (, ,)
+    (NP (DT the) (NN man))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB pay)
+            (NP
+              (NP (DT a) (NN fine))
+              (SBAR
+                (WHPP (IN of)
+                  (WHNP (WDT whatever)))
+                (S
+                  (NP (DT the) (NN husband))
+                  (VP (VBZ wants)))))))))
+    (. .)))
+
+mark(follows-4, If-1)
+det(MISCHIEF-3, NO-2)
+nsubj(follows-4, MISCHIEF-3)
+advcl(is-11, follows-4)
+det(birth-7, the-5)
+amod(birth-7, premature-6)
+dobj(follows-4, birth-7)
+det(man-10, the-9)
+nsubj(is-11, man-10)
+xsubj(pay-13, man-10)
+root(ROOT-0, is-11)
+aux(pay-13, to-12)
+xcomp(is-11, pay-13)
+det(fine-15, a-14)
+dobj(pay-13, fine-15)
+rel(wants-20, whatever-17)
+det(husband-19, the-18)
+nsubj(wants-20, husband-19)
+rcmod(fine-15, wants-20)
+

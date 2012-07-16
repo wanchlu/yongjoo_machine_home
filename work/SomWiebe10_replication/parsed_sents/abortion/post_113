@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP (NNP Poor) (NNS women))
+    (VP (VBP are)
+      (ADVP (RB disproportionately))
+      (VP (VBN deprived)
+        (NP (NN choice))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NN abortion))
+            (VP (VBZ is)
+              (ADJP (JJ illegal)))))))
+    (. .)))
+
+nn(women-2, Poor-1)
+nsubjpass(deprived-5, women-2)
+auxpass(deprived-5, are-3)
+advmod(deprived-5, disproportionately-4)
+root(ROOT-0, deprived-5)
+dobj(deprived-5, choice-6)
+advmod(illegal-10, when-7)
+nsubj(illegal-10, abortion-8)
+cop(illegal-10, is-9)
+advcl(deprived-5, illegal-10)
+
+(ROOT
+  (S
+    (NP (NNP Poor) (NN woman))
+    (VP (VBP are)
+      (ADJP (RBS most) (JJ susceptible)
+        (PP (TO to)
+          (NP
+            (NP (NNS circumstances))
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP (NN abortion))
+                (VP (VBZ is)
+                  (ADJP (JJ necessary)))))))))
+    (. .)))
+
+nn(woman-2, Poor-1)
+nsubj(susceptible-5, woman-2)
+cop(susceptible-5, are-3)
+advmod(susceptible-5, most-4)
+root(ROOT-0, susceptible-5)
+prep_to(susceptible-5, circumstances-7)
+rel(necessary-12, which-9)
+nsubj(necessary-12, abortion-10)
+cop(necessary-12, is-11)
+rcmod(circumstances-7, necessary-12)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN abortion))
+        (VP (VBZ is)
+          (ADJP (JJ illegal)))))
+    (, ,)
+    (ADVP (RB therefore))
+    (, ,)
+    (NP (DT this) (JJ socio-economic) (NN group))
+    (VP (MD will)
+      (VP (VB be)
+        (VP
+          (ADVP (RB disproportionately))
+          (VBN affected))))
+    (. .)))
+
+mark(illegal-4, If-1)
+nsubj(illegal-4, abortion-2)
+cop(illegal-4, is-3)
+advcl(affected-14, illegal-4)
+advmod(affected-14, therefore-6)
+det(group-10, this-8)
+amod(group-10, socio-economic-9)
+nsubjpass(affected-14, group-10)
+aux(affected-14, will-11)
+auxpass(affected-14, be-12)
+advmod(affected-14, disproportionately-13)
+root(ROOT-0, affected-14)
+

@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (NNP Roe))
+    (VP (VBZ tries)
+      (S
+        (VP (TO to)
+          (VP (VB stop)
+            (NP (DT the) (NNS people))
+            (PP (IN from)
+              (S
+                (VP (VBG voting)
+                  (ADVP (RB up)
+                    (CC or)
+                    (RB down))
+                  (NP (NN abortion)))))))))
+    (. .)))
+
+nsubj(tries-2, Roe-1)
+xsubj(stop-4, Roe-1)
+root(ROOT-0, tries-2)
+aux(stop-4, to-3)
+xcomp(tries-2, stop-4)
+det(people-6, the-5)
+dobj(stop-4, people-6)
+prepc_from(stop-4, voting-8)
+advmod(voting-8, up-9)
+advmod(voting-8, down-11)
+conj_or(up-9, down-11)
+dobj(voting-8, abortion-12)
+
+(ROOT
+  (S
+    (NP (NNP Roe))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (NN abortion))
+          (VP (VBD was)
+            (VP (VBN settled)
+              (NP
+                (NP (NNS hundreds))
+                (PP (IN of)
+                  (NP (NNS years))))
+              (ADVP (IN ago)))))))
+    (. .)))
+
+nsubj(says-2, Roe-1)
+root(ROOT-0, says-2)
+nsubjpass(settled-5, abortion-3)
+auxpass(settled-5, was-4)
+ccomp(says-2, settled-5)
+dobj(settled-5, hundreds-6)
+prep_of(hundreds-6, years-8)
+advmod(settled-5, ago-9)
+

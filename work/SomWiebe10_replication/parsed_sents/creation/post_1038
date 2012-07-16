@@ -1,0 +1,249 @@
+(ROOT
+  (INTJ (UH OK) (. .)))
+
+root(ROOT-0, OK-1)
+
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (NN way))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP think)
+              (PP (IN about)
+                (NP (PRP it))))))))
+    (. .)))
+
+nsubj(way-4, Here-1)
+cop(way-4, 's-2)
+det(way-4, the-3)
+root(ROOT-0, way-4)
+dobj(think-6, way-4)
+nsubj(think-6, I-5)
+rcmod(way-4, think-6)
+prep_about(think-6, it-8)
+
+(ROOT
+  (S
+    (NP (NNP Creationism))
+    (VP (VBZ is)
+      (ADJP
+        (ADVP (RBS most) (RB often))
+        (VBN related)
+        (PP (TO to)
+          (NP
+            (NP
+              (NP (NNP Christianity) (POS 's))
+              (NN form))
+            (PP (IN of)
+              (NP (NN creation)))))))
+    (. .)))
+
+nsubjpass(related-5, Creationism-1)
+auxpass(related-5, is-2)
+advmod(often-4, most-3)
+advmod(related-5, often-4)
+root(ROOT-0, related-5)
+poss(form-9, Christianity-7)
+prep_to(related-5, form-9)
+prep_of(form-9, creation-11)
+
+(ROOT
+  (S (IN So) (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (PRP we))
+        (VP (VBD taught)
+          (SBAR
+            (S
+              (NP
+                (NP (NN creationism))
+                (PP (IN in)
+                  (NP (NN school))))
+              (, ,)
+              (VP (MD should) (RB n't)))))))
+    (NP (PRP we))
+    (ADVP (DT all))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB learn)
+            (PP (IN about)
+              (NP
+                (NP
+                  (NP (DT each) (NN religion) (POS 's))
+                  (NN form))
+                (PP (IN of)
+                  (NP (NN creationism)))))))))
+    (. ?)))
+
+dep(have-14, So-1)
+mark(taught-5, if-3)
+nsubj(taught-5, we-4)
+dep(have-14, taught-5)
+nsubj(should-10, creationism-6)
+prep_in(creationism-6, school-8)
+ccomp(taught-5, should-10)
+neg(should-10, n't-11)
+nsubj(have-14, we-12)
+xsubj(learn-16, we-12)
+advmod(have-14, all-13)
+root(ROOT-0, have-14)
+aux(learn-16, to-15)
+xcomp(have-14, learn-16)
+det(religion-19, each-18)
+poss(form-21, religion-19)
+prep_about(learn-16, form-21)
+prep_of(form-21, creationism-23)
+
+(ROOT
+  (S
+    (NP (DT That) (NN way))
+    (NP (PRP we))
+    (VP (VBP keep)
+      (NP
+        (NP (DT the) (NN divide))
+        (PP (IN between)
+          (NP (NN church)
+            (CC and)
+            (NN state)))))
+    (. .)))
+
+det(way-2, That-1)
+nsubj(keep-4, way-2)
+nsubj(keep-4, we-3)
+root(ROOT-0, keep-4)
+det(divide-6, the-5)
+dobj(keep-4, divide-6)
+prep_between(divide-6, church-8)
+prep_between(divide-6, state-10)
+conj_and(church-8, state-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (MD ca) (RB n't)
+        (VP (VB indoctrinate)
+          (NP (PRP$ our) (NNS students))
+          (NP
+            (NP (CD one) (NN way))
+            (CC or)
+            (NP (DT the) (JJ other))))))
+    (, ,)
+    (CC and)
+    (S
+      (S
+        (VP (VBG being)
+          (ADJP (JJ fair)
+            (PP (IN with)
+              (NP (JJ religious) (NN education))))))
+      (VP (MD would)
+        (VP (VB mean)
+          (SBAR
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP spend)
+                  (NP
+                    (NP (NNS years))
+                    (VP (VBG talking)
+                      (PP (IN about)
+                        (NP
+                          (NP (DT each) (NN religion) (POS 's))
+                          (NNS ideas)))
+                      (PP (IN on)
+                        (NP
+                          (NP (NN evolution))
+                          (, ,)
+                          (NP (NN creationism)))))))))
+            (, ,)
+            (CC or)
+            (SBAR
+              (WHNP (WDT whatever))
+              (S
+                (NP (JJ other) (NNS ideas))
+                (VP (VBP are)
+                  (PP (IN out)
+                    (NP (RB there))))))))))
+    (. .)))
+
+nsubj(indoctrinate-4, We-1)
+aux(indoctrinate-4, ca-2)
+neg(indoctrinate-4, n't-3)
+root(ROOT-0, indoctrinate-4)
+poss(students-6, our-5)
+dep(indoctrinate-4, students-6)
+num(way-8, one-7)
+dobj(indoctrinate-4, way-8)
+det(other-11, the-10)
+dobj(indoctrinate-4, other-11)
+conj_or(way-8, other-11)
+cop(fair-15, being-14)
+csubj(mean-20, fair-15)
+amod(education-18, religious-17)
+prep_with(fair-15, education-18)
+aux(mean-20, would-19)
+conj_and(indoctrinate-4, mean-20)
+nsubj(spend-22, we-21)
+dep(mean-20, spend-22)
+dobj(spend-22, years-23)
+partmod(years-23, talking-24)
+det(religion-27, each-26)
+poss(ideas-29, religion-27)
+prep_about(talking-24, ideas-29)
+prep_on(talking-24, evolution-31)
+appos(evolution-31, creationism-33)
+dobj(are-39, whatever-36)
+amod(ideas-38, other-37)
+nsubj(are-39, ideas-38)
+dep(mean-20, are-39)
+conj_or(spend-22, are-39)
+prep(are-39, out-40)
+pobj(out-40, there-41)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB just))
+    (VP (MD ca) (RB n't)
+      (VP (VB let)
+        (S
+          (NP (EX there))
+          (VP (VB be)
+            (NP
+              (NP (NNP Evolution))
+              (CC and)
+              (ADVP (RB then))
+              (NP (NNP Christian) (NNP Creationism)))))))
+    (. .)))
+
+nsubj(let-5, We-1)
+advmod(let-5, just-2)
+aux(let-5, ca-3)
+neg(let-5, n't-4)
+root(ROOT-0, let-5)
+expl(be-7, there-6)
+ccomp(let-5, be-7)
+nsubj(be-7, Evolution-8)
+nsubj(be-7, then-10)
+advmod(Evolution-8, then-10)
+conj_and(Evolution-8, then-10)
+nn(Creationism-12, Christian-11)
+nsubj(be-7, Creationism-12)
+conj_and(Evolution-8, Creationism-12)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP (NNS others)))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, others-3)
+

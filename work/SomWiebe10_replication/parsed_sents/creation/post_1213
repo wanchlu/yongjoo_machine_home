@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD 'll)
+            (VP (VB find)
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(find-5, you-3)
+aux(find-5, 'll-4)
+ccomp(think-2, find-5)
+expl(is-7, there-6)
+ccomp(find-5, is-7)
+
+(ROOT
+  (FRAG (CC And)
+    (ADVP
+      (ADVP (RB rather)
+        (NP (DT a) (RB lot))
+        (PP (IN of)
+          (NP (PRP it))))
+      (RB too))
+    (. .)))
+
+dep(rather-2, And-1)
+root(ROOT-0, rather-2)
+det(lot-4, a-3)
+pobj(rather-2, lot-4)
+prep_of(rather-2, it-6)
+advmod(rather-2, too-7)
+

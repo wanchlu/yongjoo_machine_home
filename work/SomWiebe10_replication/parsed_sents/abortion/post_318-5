@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN child))
+      (PP (IN in)
+        (NP
+          (NP (NN need))
+          (PP (IN of)
+            (NP (DT a) (NN kidney))))))
+    (VP (MD will)
+      (VP (VB die)
+        (SBAR (IN unless)
+          (S
+            (NP (PRP you))
+            (VP (VBP give)
+              (NP (PRP it))
+              (PP (TO to)
+                (NP (PRP him))))))))
+    (. .)))
+
+det(child-2, A-1)
+nsubj(die-9, child-2)
+prep_in(child-2, need-4)
+det(kidney-7, a-6)
+prep_of(need-4, kidney-7)
+aux(die-9, will-8)
+root(ROOT-0, die-9)
+mark(give-12, unless-10)
+nsubj(give-12, you-11)
+advcl(die-9, give-12)
+dobj(give-12, it-13)
+prep_to(give-12, him-15)
+

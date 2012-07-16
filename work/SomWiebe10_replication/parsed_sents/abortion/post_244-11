@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (JJS Most) (NNS abortions))
+      (VP (VBP come)
+        (PP (IN from)
+          (NP (NNS teenagers)))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB learn)
+              (SBAR (IN that)
+                (S
+                  (NP (NN abstinence))
+                  (VP (VBZ is)
+                    (NP (DT the) (NN way)
+                      (S
+                        (VP (TO to)
+                          (VP (VB go)))))))))))))
+    (. .)))
+
+amod(abortions-2, Most-1)
+nsubj(come-3, abortions-2)
+root(ROOT-0, come-3)
+prep_from(come-3, teenagers-5)
+nsubj(need-8, they-7)
+xsubj(learn-10, they-7)
+conj_and(come-3, need-8)
+aux(learn-10, to-9)
+xcomp(need-8, learn-10)
+complm(way-15, that-11)
+nsubj(way-15, abstinence-12)
+cop(way-15, is-13)
+det(way-15, the-14)
+ccomp(learn-10, way-15)
+aux(go-17, to-16)
+infmod(way-15, go-17)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's) (RB not))
+    (. .)))
+
+dep('s-4, No-1)
+nsubj('s-4, it-3)
+root(ROOT-0, 's-4)
+neg('s-4, not-5)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (FRAG
+      (SBAR
+        (WHADVP (WRB How))
+        (S
+          (VP (VBZ 's)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBP feel)
+                  (S
+                    (VP (TO to)
+                      (VP (VB read)
+                        (NP (DT a) (JJ terrible) (NN argument)))))))))))
+      (. ?))
+    (-RRB- -RRB-)))
+
+advmod('s-3, How-2)
+root(ROOT-0, 's-3)
+nsubj(feel-5, it-4)
+xsubj(read-7, it-4)
+ccomp('s-3, feel-5)
+aux(read-7, to-6)
+xcomp(feel-5, read-7)
+det(argument-10, a-8)
+amod(argument-10, terrible-9)
+dobj(read-7, argument-10)
+

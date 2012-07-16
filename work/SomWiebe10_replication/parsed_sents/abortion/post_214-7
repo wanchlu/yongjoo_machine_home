@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN vote))
+      (PP (IN for)
+        (NP (NNP Obama))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN vote))
+        (PP (IN for)
+          (NP
+            (NP
+              (NP (DT the) (NN appointment))
+              (PP (IN of)
+                (NP (CD two))))
+            (CC or)
+            (NP
+              (NP (CD three) (NNS justices))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (MD will)
+                    (VP (VB be)
+                      (ADJP (JJ hostile)
+                        (PP (TO to)
+                          (NP (DT all) (NNS attempts))))
+                      (S
+                        (VP (TO to)
+                          (VP (VB limit)
+                            (NP (NN abortion))
+                            (PP (IN for)
+                              (NP (NNS decades)))))))))))))))
+    (. .)))
+
+det(vote-2, A-1)
+nsubj(vote-7, vote-2)
+prep_for(vote-2, Obama-4)
+cop(vote-7, is-5)
+det(vote-7, a-6)
+root(ROOT-0, vote-7)
+det(appointment-10, the-9)
+prep_for(vote-7, appointment-10)
+prep_of(appointment-10, two-12)
+num(justices-15, three-14)
+prep_for(vote-7, justices-15)
+conj_or(appointment-10, justices-15)
+nsubj(hostile-19, justices-15)
+aux(hostile-19, will-17)
+cop(hostile-19, be-18)
+rcmod(justices-15, hostile-19)
+det(attempts-22, all-21)
+prep_to(hostile-19, attempts-22)
+aux(limit-24, to-23)
+xcomp(hostile-19, limit-24)
+dobj(limit-24, abortion-25)
+prep_for(limit-24, decades-27)
+

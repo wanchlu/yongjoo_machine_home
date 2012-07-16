@@ -1,0 +1,24 @@
+(ROOT
+  (S
+    (NP (NNP Rape))
+    (VP (VBZ counts)
+      (ADVP (RB only))
+      (PP (IN for)
+        (NP
+          (NP
+            (QP (JJR less) (IN than) (CD 1))
+            (NN %))
+          (PP (IN of)
+            (NP (JJ total) (NNS abortions))))))
+    (. .)))
+
+nsubj(counts-2, Rape-1)
+root(ROOT-0, counts-2)
+advmod(counts-2, only-3)
+mwe(than-6, less-5)
+quantmod(1-7, than-6)
+num(%-8, 1-7)
+prep_for(counts-2, %-8)
+amod(abortions-11, total-10)
+prep_of(%-8, abortions-11)
+

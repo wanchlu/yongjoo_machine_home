@@ -1,0 +1,103 @@
+(ROOT
+  (S
+    (NP (JJ Third) (NN trimester) (NNS abortions))
+    (VP (VBP are)
+      (ADVP (RB only))
+      (VP (VBN allowed)
+        (SBAR
+          (SBAR
+            (SBAR (IN if)
+              (S
+                (NP
+                  (NP (DT the) (NN mother) (POS 's))
+                  (NN life)
+                  (CC or)
+                  (NN health))
+                (VP (VBP are)
+                  (PP (IN in)
+                    (NP (JJ grave) (NN danger))))))
+            (CC or)
+            (SBAR (IN if)
+              (S
+                (NP (DT the) (NN fetus))
+                (VP (VBZ has)
+                  (NP
+                    (NP (JJ such) (JJ tremendous) (NN health) (NNS problems))
+                    (SBAR
+                      (S
+                        (NP (PRP it))
+                        (VP (MD would) (RB n't)
+                          (VP (VB live)
+                            (PP (IN beyond)
+                              (NP (NN birth))))))))))))
+          (CC but)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (JJ few) (NNS abortions))
+              (VP (VBP are)
+                (VP (VBN performed)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (JJ last) (NN trimester))
+                      (SBAR
+                        (S
+                          (VP (VBP are)
+                            (ADVP (RB usually))
+                            (S
+                              (VP (TO to)
+                                (VP (VB save)
+                                  (NP
+                                    (NP (DT the) (NN life))
+                                    (PP (IN of)
+                                      (NP (DT the) (NN woman)))))))))))))))))))
+    (. .)))
+
+amod(abortions-3, Third-1)
+nn(abortions-3, trimester-2)
+nsubjpass(allowed-6, abortions-3)
+auxpass(allowed-6, are-4)
+advmod(allowed-6, only-5)
+root(ROOT-0, allowed-6)
+mark(are-14, if-7)
+det(mother-9, the-8)
+poss(life-11, mother-9)
+nsubj(are-14, life-11)
+conj_or(life-11, health-13)
+nsubj(are-14, health-13)
+dep(allowed-6, are-14)
+amod(danger-17, grave-16)
+prep_in(are-14, danger-17)
+mark(has-22, if-19)
+det(fetus-21, the-20)
+nsubj(has-22, fetus-21)
+dep(allowed-6, has-22)
+conj_or(are-14, has-22)
+amod(problems-26, such-23)
+amod(problems-26, tremendous-24)
+nn(problems-26, health-25)
+dobj(has-22, problems-26)
+dobj(live-30, problems-26)
+nsubj(live-30, it-27)
+aux(live-30, would-28)
+neg(live-30, n't-29)
+rcmod(problems-26, live-30)
+prep_beyond(live-30, birth-32)
+dobj(performed-38, what-34)
+amod(abortions-36, few-35)
+nsubjpass(performed-38, abortions-36)
+auxpass(performed-38, are-37)
+dep(allowed-6, performed-38)
+conj_but(are-14, performed-38)
+det(trimester-42, the-40)
+amod(trimester-42, last-41)
+prep_in(performed-38, trimester-42)
+rcmod(trimester-42, are-43)
+advmod(are-43, usually-44)
+aux(save-46, to-45)
+xcomp(are-43, save-46)
+det(life-48, the-47)
+dobj(save-46, life-48)
+det(woman-51, the-50)
+prep_of(life-48, woman-51)
+

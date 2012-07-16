@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP talk)
+      (PP (IN about)
+        (NP
+          (NP
+            (NP (JJ human) (NN life) (POS 's))
+            (NN development))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP
+                (VP (VBZ starts)
+                  (PP (IN at)
+                    (NP (NN conception))))
+                (CC and)
+                (VP (VBZ ends)
+                  (PP (IN with)
+                    (NP (NN death))))))))))
+    (. .)))
+
+nsubj(talk-2, I-1)
+root(ROOT-0, talk-2)
+amod(life-5, human-4)
+poss(development-7, life-5)
+prep_about(talk-2, development-7)
+nsubj(starts-9, development-7)
+nsubj(ends-13, development-7)
+rcmod(development-7, starts-9)
+prep_at(starts-9, conception-11)
+rcmod(development-7, ends-13)
+conj_and(starts-9, ends-13)
+prep_with(ends-13, death-15)
+

@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB n't)
+      (NP
+        (NP
+          (NP (RB about) (NN religion)
+            (CC or)
+            (NN choice))
+          (, ,)
+          (CC but)
+          (RB about)
+          (NP
+            (NP (NN science))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (DT the) (NN thing))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ becomes)
+                      (NP
+                        (NP (DT a) (NN human))
+                        (, ,)
+                        (PP (VBZ is)
+                          (NP (DT a) (NN human))))))))
+              (-RRB- -RRB-))))
+        (CC and)
+        (NP
+          (NP (JJ basic) (NN right))
+          (CC and)
+          (NP (JJ wrong) (NN vs.) (NN convenience)))))
+    (. .)))
+
+nsubj(religion-5, This-1)
+cop(religion-5, is-2)
+neg(religion-5, n't-3)
+advmod(religion-5, about-4)
+root(ROOT-0, religion-5)
+conj_or(religion-5, choice-7)
+advmod(religion-5, about-10)
+conj_but(religion-5, about-10)
+dep(religion-5, science-11)
+det(thing-14, the-13)
+dep(science-11, thing-14)
+nsubj(human-18, thing-14)
+cop(human-18, becomes-16)
+det(human-18, a-17)
+rcmod(thing-14, human-18)
+prep(human-18, is-20)
+det(human-22, a-21)
+dep(is-20, human-22)
+amod(right-26, basic-25)
+conj_and(religion-5, right-26)
+amod(convenience-30, wrong-28)
+nn(convenience-30, vs.-29)
+conj_and(religion-5, convenience-30)
+conj_and(right-26, convenience-30)
+

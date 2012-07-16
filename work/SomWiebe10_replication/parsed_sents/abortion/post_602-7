@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (VP (VB Do) (RB n't)))
+    (NP (PRP they))
+    (VP
+      (ADVP (RB also))
+      (VBP depend)
+      (PRT (RP on))
+      (NP (PRP$ his) (NN mother))
+      (PP (IN for)
+        (S
+          (VP
+            (VP (VBG sustaining))
+            (-LRB- -LRB-)
+            (SBAR (RB just) (IN as)
+              (S
+                (NP (DT the) (NN fetus))
+                (VP (VBZ depends)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (NN mother))
+                      (PP (IN on)
+                        (NP (DT this) (CD one) (NN thing))))))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+dep(depend-5, Do-1)
+neg(Do-1, n't-2)
+nsubj(depend-5, they-3)
+advmod(depend-5, also-4)
+root(ROOT-0, depend-5)
+prt(depend-5, on-6)
+poss(mother-8, his-7)
+dobj(depend-5, mother-8)
+prepc_for(depend-5, sustaining-10)
+advmod(depends-16, just-12)
+dep(depends-16, as-13)
+det(fetus-15, the-14)
+nsubj(depends-16, fetus-15)
+ccomp(sustaining-10, depends-16)
+det(mother-19, the-18)
+prep_on(depends-16, mother-19)
+det(thing-23, this-21)
+num(thing-23, one-22)
+prep_on(mother-19, thing-23)
+

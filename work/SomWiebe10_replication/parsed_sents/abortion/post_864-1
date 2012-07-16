@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP have)
+      (VP (VBN known)
+        (SBAR
+          (S
+            (NP
+              (NP (NNS people))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD got)
+                    (SBAR
+                      (S
+                        (NP (NNS abortions))
+                        (VP (VBP bc)
+                          (S
+                            (NP (PRP they))
+                            (`` ``)
+                            (ADJP (JJ didnt))))))))))
+            (VP (VBP want)
+              (S
+                (VP (TO to)
+                  (VP (VB get)
+                    (NP
+                      (NP (NN fat))
+                      (`` ``)
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ is) (RB not)
+                            (NP (DT a) (JJ good) (NN reason))))))))))))))
+    (. .)))
+
+nsubj(known-3, i-1)
+aux(known-3, have-2)
+root(ROOT-0, known-3)
+nsubj(got-6, people-4)
+nsubj(want-12, people-4)
+xsubj(get-14, people-4)
+rcmod(people-4, got-6)
+nsubj(bc-8, abortions-7)
+ccomp(got-6, bc-8)
+dep(didnt-11, they-9)
+dep(bc-8, didnt-11)
+ccomp(known-3, want-12)
+aux(get-14, to-13)
+xcomp(want-12, get-14)
+dobj(get-14, fat-15)
+nsubj(reason-22, that-17)
+cop(reason-22, is-18)
+neg(reason-22, not-19)
+det(reason-22, a-20)
+amod(reason-22, good-21)
+rcmod(fat-15, reason-22)
+
+(ROOT
+  (S
+    (S
+      (ADJP (JJ needless)
+        (S
+          (VP (TO to)
+            (VP (VB say))))))
+    (, ,)
+    (NP (JJ i) (NN dont))
+    (VP (VBP talk)
+      (PP (TO to)
+        (NP (DT that) (NN person)))
+      (ADVP (RB now)))
+    (. .)))
+
+ccomp(talk-7, needless-1)
+aux(say-3, to-2)
+xcomp(needless-1, say-3)
+amod(dont-6, i-5)
+nsubj(talk-7, dont-6)
+root(ROOT-0, talk-7)
+det(person-10, that-9)
+prep_to(talk-7, person-10)
+advmod(talk-7, now-11)
+

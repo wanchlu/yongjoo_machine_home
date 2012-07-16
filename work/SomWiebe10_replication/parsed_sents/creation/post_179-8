@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (NP (DT The) (JJ first) (NN time))
+    (ADVP (DT this) (NN prediction))
+    (VP (VBD was)
+      (VP (VBN made)
+        (S
+          (VP (VBG using)
+            (SBAR
+              (S
+                (NP
+                  (NP (DT the) (NN theory))
+                  (PP (IN of)
+                    (NP (NN evolution))))
+                (VP (VBD was)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT the) (NNP Origin))
+                      (PP (IN of)
+                        (NP (NNP Species))))))))))))
+    (. .)))
+
+det(time-4, The-2)
+amod(time-4, first-3)
+nsubjpass(made-8, time-4)
+dep(prediction-6, this-5)
+advmod(made-8, prediction-6)
+auxpass(made-8, was-7)
+root(ROOT-0, made-8)
+xcomp(made-8, using-9)
+det(theory-11, the-10)
+nsubj(was-14, theory-11)
+prep_of(theory-11, evolution-13)
+ccomp(using-9, was-14)
+det(Origin-17, the-16)
+prep_in(was-14, Origin-17)
+prep_of(Origin-17, Species-19)
+

@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (RB then)))
+    (, ,)
+    (NP (DT the) (NNS populations))
+    (VP
+      (VP (VBP have)
+        (VP (VBN been)
+          (ADJP (RB serially) (JJ propagated))))
+      (CC and)
+      (VP (VBP have)
+        (VP (VBN evolved)
+          (PP (IN for)
+            (NP
+              (NP
+                (QP (NNS tens) (IN of) (NNS thousands)))
+              (PP (IN of)
+                (NP
+                  (NP (NNS generations))
+                  (PP (IN in)
+                    (NP (DT the) (JJ same) (NN environment))))))))))
+    (. .)))
+
+prep(propagated-9, Since-1)
+pobj(Since-1, then-2)
+det(populations-5, the-4)
+nsubj(propagated-9, populations-5)
+nsubj(evolved-12, populations-5)
+aux(propagated-9, have-6)
+cop(propagated-9, been-7)
+advmod(propagated-9, serially-8)
+root(ROOT-0, propagated-9)
+aux(evolved-12, have-11)
+conj_and(propagated-9, evolved-12)
+dep(thousands-16, tens-14)
+quantmod(thousands-16, of-15)
+prep_for(evolved-12, thousands-16)
+prep_of(thousands-16, generations-18)
+det(environment-22, the-20)
+amod(environment-22, same-21)
+prep_in(generations-18, environment-22)
+

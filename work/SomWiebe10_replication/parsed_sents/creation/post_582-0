@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ is) (RB not)
+      (NP (NN science))
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (MD can)
+            (ADVP (RB never))
+            (VP (VB make)
+              (NP
+                (NP (DT a) (NN prediction))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is)
+                      (ADJP (JJ meaningful)))))))))))
+    (. .)))
+
+nsubj(science-4, ID-1)
+cop(science-4, is-2)
+neg(science-4, not-3)
+root(ROOT-0, science-4)
+mark(make-9, because-5)
+nsubj(make-9, it-6)
+aux(make-9, can-7)
+neg(make-9, never-8)
+advcl(science-4, make-9)
+det(prediction-11, a-10)
+dobj(make-9, prediction-11)
+nsubj(meaningful-14, prediction-11)
+cop(meaningful-14, is-13)
+rcmod(prediction-11, meaningful-14)
+

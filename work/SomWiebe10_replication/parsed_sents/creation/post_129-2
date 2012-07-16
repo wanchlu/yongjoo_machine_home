@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ s)
+      (ADJP (JJ validity))
+      (SBAR (IN as)
+        (S
+          (NP (DT a) (NNP Scientific) (NN theory))
+          (VP (VBZ has)
+            (ADVP (RB never))
+            (VP (VBN been)
+              (VP (VBN demonstrated)))))))
+    (. .)))
+
+nsubj(validity-3, It-1)
+cop(validity-3, s-2)
+root(ROOT-0, validity-3)
+mark(demonstrated-11, as-4)
+det(theory-7, a-5)
+nn(theory-7, Scientific-6)
+nsubjpass(demonstrated-11, theory-7)
+aux(demonstrated-11, has-8)
+neg(demonstrated-11, never-9)
+auxpass(demonstrated-11, been-10)
+advcl(validity-3, demonstrated-11)
+
+(ROOT
+  (FRAG
+    (SBAR
+      (WHADJP (WRB how) (JJ many))
+      (S
+        (NP (NNS mutations))
+        (VP (MD would)
+          (VP (VB be)
+            (ADJP (JJ necessary)
+              (S
+                (VP (TO to)
+                  (VP (VB build)
+                    (NP (DT this) (JJ simple) (NN defense) (NN mechanism)))))))))
+      (. .))
+    (. .)))
+
+advmod(many-2, how-1)
+dep(necessary-6, many-2)
+nsubj(necessary-6, mutations-3)
+aux(necessary-6, would-4)
+cop(necessary-6, be-5)
+root(ROOT-0, necessary-6)
+aux(build-8, to-7)
+xcomp(necessary-6, build-8)
+det(mechanism-12, this-9)
+amod(mechanism-12, simple-10)
+nn(mechanism-12, defense-11)
+dobj(build-8, mechanism-12)
+

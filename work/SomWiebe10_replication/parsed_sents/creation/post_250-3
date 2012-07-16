@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS bacteria))
+      (PP (IN in)
+        (NP (DT the) (NNS flasks))))
+    (NP (NN today))
+    (VP (VBP breed)
+      (PP
+        (ADVP
+          (NP (CD 75) (NN %))
+          (RBR faster))
+        (IN on)
+        (NP
+          (NP (NN average))
+          (PP (IN than)
+            (NP (PRP$ their) (JJ original) (NN ancestor))))))
+    (. .)))
+
+det(bacteria-2, The-1)
+nsubj(breed-7, bacteria-2)
+det(flasks-5, the-4)
+prep_in(bacteria-2, flasks-5)
+nsubj(breed-7, today-6)
+root(ROOT-0, breed-7)
+num(%-9, 75-8)
+npadvmod(faster-10, %-9)
+advmod(breed-7, faster-10)
+prep_on(breed-7, average-12)
+poss(ancestor-16, their-14)
+amod(ancestor-16, original-15)
+prep_than(average-12, ancestor-16)
+

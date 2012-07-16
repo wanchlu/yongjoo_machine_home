@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (SBAR
+      (X (SYM \*))
+      (S
+        (SBAR (RB even) (IN if)
+          (FRAG
+            (SBAR
+              (X (SYM \*))
+              (S
+                (NP (DT those) (NNS decisions))
+                (VP (MD can)
+                  (VP (`` ``) (VB save) ('' '')))))))
+        (VP (VBZ lives))))
+    (NP (DT that))
+    (VP (MD might)
+      (ADVP (RB otherwise))
+      (VP (VB die)))
+    (. .)))
+
+dep(lives-11, \*-1)
+advmod(save-9, even-2)
+dep(save-9, if-3)
+dep(save-9, \*-4)
+det(decisions-6, those-5)
+nsubj(save-9, decisions-6)
+aux(save-9, can-7)
+advcl(lives-11, save-9)
+csubj(lives-11, save-9)
+dep(die-15, lives-11)
+nsubj(die-15, that-12)
+aux(die-15, might-13)
+advmod(die-15, otherwise-14)
+root(ROOT-0, die-15)
+

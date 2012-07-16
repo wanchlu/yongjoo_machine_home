@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WDT Whatever))
+      (S
+        (NP (DT the) (NN answer))
+        (ADVP (RB really))
+        (VP (VBZ is))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP trust)
+      (NP
+        (NP (DT the) (NN dude))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD studied)
+              (NP (PRP it))
+              (PP (IN for)
+                (NP (DT a) (NN decade)))
+              (PP (IN over)
+                (NP
+                  (NP (NNS people))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBP think)
+                        (S
+                          (NP (PRP they))
+                          (VP
+                            (VP (VB speak)
+                              (PP (IN in)
+                                (NP (NNS tongues))))
+                            (CC and)
+                            (VP (VB give)
+                              (NP (PRP$ their) (JJ live) (NNS savings))
+                              (PP (TO to)
+                                (NP (NNP Jerry) (NNP Falwell))))))))))))))))
+    (. .)))
+
+dobj(is-5, Whatever-1)
+det(answer-3, the-2)
+nsubj(is-5, answer-3)
+advmod(is-5, really-4)
+dep(trust-8, is-5)
+nsubj(trust-8, I-7)
+root(ROOT-0, trust-8)
+det(dude-10, the-9)
+dobj(trust-8, dude-10)
+nsubj(studied-12, dude-10)
+rcmod(dude-10, studied-12)
+dobj(studied-12, it-13)
+det(decade-16, a-15)
+prep_for(studied-12, decade-16)
+prep_over(studied-12, people-18)
+nsubj(think-20, people-18)
+rcmod(people-18, think-20)
+nsubj(speak-22, they-21)
+nsubj(give-26, they-21)
+ccomp(think-20, speak-22)
+prep_in(speak-22, tongues-24)
+ccomp(think-20, give-26)
+conj_and(speak-22, give-26)
+poss(savings-29, their-27)
+amod(savings-29, live-28)
+dobj(give-26, savings-29)
+nn(Falwell-32, Jerry-31)
+prep_to(give-26, Falwell-32)
+

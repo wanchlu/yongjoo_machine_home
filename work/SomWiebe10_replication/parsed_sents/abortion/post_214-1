@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (NNP Obama))
+    (VP (VBZ is)
+      (NP (DT the)
+        (ADJP
+          (ADJP (RBS most) (JJ pro-abortion))
+          (PRN (-LRB- -LRB-)
+            (FRAG
+              (NP
+                (NP (RB yes))
+                (, ,)
+                (ADJP (JJ pro-abortion) (, ,) (RB not) (JJ pro-choice) (, ,)))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (PRP you))
+                  (VP (MD could)
+                    (VP (VB concede)
+                      (PP (TO to)
+                        (NP
+                          (NP (NNP Senator) (NNP Kerry))
+                          (PP (IN for)
+                            (NP
+                              (NP (DT the) (NN sake))
+                              (PP (IN of)
+                                (NP (NN argument))))))))))))
+            (-RRB- -RRB-)))
+        (NN candidate)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (ADVP (RB ever))
+              (VP (VBN run)
+                (PP (IN for)
+                  (NP (NNP President)))))))))
+    (. .)))
+
+nsubj(candidate-27, Obama-1)
+cop(candidate-27, is-2)
+det(candidate-27, the-3)
+advmod(pro-abortion-5, most-4)
+amod(candidate-27, pro-abortion-5)
+dep(pro-abortion-5, yes-7)
+amod(pro-choice-12, pro-abortion-9)
+neg(pro-choice-12, not-11)
+amod(yes-7, pro-choice-12)
+dobj(concede-17, which-14)
+nsubj(concede-17, you-15)
+aux(concede-17, could-16)
+dep(yes-7, concede-17)
+nn(Kerry-20, Senator-19)
+prep_to(concede-17, Kerry-20)
+det(sake-23, the-22)
+prep_for(Kerry-20, sake-23)
+prep_of(sake-23, argument-25)
+root(ROOT-0, candidate-27)
+nsubj(run-31, who-28)
+aux(run-31, has-29)
+advmod(run-31, ever-30)
+ccomp(candidate-27, run-31)
+prep_for(run-31, President-33)
+

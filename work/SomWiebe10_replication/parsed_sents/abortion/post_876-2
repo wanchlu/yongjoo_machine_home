@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (PRP$ your) (NN method))
+          (PP (IN of)
+            (NP (NN reasoning))))
+        (VP (VBZ fails))))
+    (, ,)
+    (NP
+      (NP (DT any) (NN person))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ falls)
+            (PP (IN into)
+              (NP (DT a) (NN coma)))))))
+    (ADVP (RB unexpectedly))
+    (VP (MD would)
+      (VP (VB be)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN mercy))
+            (PP (IN of)
+              (SBAR
+                (WHNP (WP whoever))
+                (S
+                  (VP (VBZ has)
+                    (S
+                      (VP (TO to)
+                        (VP (VB take)
+                          (NP
+                            (NP (NN care))
+                            (PP (IN of)
+                              (NP (PRP them)))))))))))))))
+    (. .)))
+
+mark(fails-6, If-1)
+poss(method-3, your-2)
+nsubj(fails-6, method-3)
+prep_of(method-3, reasoning-5)
+advcl(be-17, fails-6)
+det(person-9, any-8)
+nsubj(falls-11, person-9)
+nsubj(be-17, person-9)
+rcmod(person-9, falls-11)
+det(coma-14, a-13)
+prep_into(falls-11, coma-14)
+advmod(be-17, unexpectedly-15)
+aux(be-17, would-16)
+root(ROOT-0, be-17)
+det(mercy-20, the-19)
+prep_at(be-17, mercy-20)
+nsubj(has-23, whoever-22)
+prepc_of(mercy-20, has-23)
+aux(take-25, to-24)
+xcomp(has-23, take-25)
+dobj(take-25, care-26)
+prep_of(care-26, them-28)
+

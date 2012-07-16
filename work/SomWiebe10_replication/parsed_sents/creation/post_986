@@ -1,0 +1,258 @@
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (ADJP (JJ incorrect)))
+    (. .)))
+
+dep(incorrect-6, No-1)
+nsubj(incorrect-6, that-3)
+cop(incorrect-6, is-4)
+advmod(incorrect-6, also-5)
+root(ROOT-0, incorrect-6)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT a) (JJ genetic) (NN mutation))
+        (VP (VBZ occurs)
+          (PP (IN in)
+            (NP (DT the) (NN brain))))))
+    (NP (PRP it))
+    (VP (VBZ causes)
+      (NP
+        (NP (NN cancer))
+        (: ...)
+        (NP (NNS somtimes))))
+    (. .)))
+
+advmod(occurs-5, When-1)
+det(mutation-4, a-2)
+amod(mutation-4, genetic-3)
+nsubj(occurs-5, mutation-4)
+advcl(causes-10, occurs-5)
+det(brain-8, the-7)
+prep_in(occurs-5, brain-8)
+nsubj(causes-10, it-9)
+root(ROOT-0, causes-10)
+dobj(causes-10, cancer-11)
+dep(cancer-11, somtimes-13)
+
+(ROOT
+  (FRAG
+    (ADVP
+      (ADVP (RB Also))
+      (RB sometimes))
+    (RB not) (. .)))
+
+dep(not-3, Also-1)
+advmod(Also-1, sometimes-2)
+root(ROOT-0, not-3)
+
+(ROOT
+  (S (CC But)
+    (NP (DT that))
+    (VP (VBD said)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ is)
+            (VP (VBG being)
+              (VP (VBN argued)
+                (NP
+                  (NP (NN ergo))
+                  (SBAR
+                    (S
+                      (NP
+                        (NP (DT the) (NN question))
+                        (PP (IN at)
+                          (NP (NN hand)))
+                        (, ,)
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBZ is) (: :)
+                              (SQ (VBZ Has)
+                                (NP (NN evolution))
+                                (VP (VBN been)
+                                  (VP
+                                    (ADVP (RB scientifically))
+                                    (VBN proved)))))))
+                        (, ,))
+                      (VP (VBZ has) (RB not)
+                        (ADVP (RB here))
+                        (VP (VBN been)
+                          (VP
+                            (ADVP (RB fully))
+                            (VBN addressed)))))))))))))
+    (. .)))
+
+cc(said-3, But-1)
+nsubj(said-3, that-2)
+root(ROOT-0, said-3)
+nsubjpass(argued-7, what-4)
+aux(argued-7, is-5)
+auxpass(argued-7, being-6)
+ccomp(said-3, argued-7)
+dobj(argued-7, ergo-8)
+det(question-10, the-9)
+nsubj(is-15, question-10)
+nsubjpass(addressed-28, question-10)
+prep_at(question-10, hand-12)
+rcmod(question-10, is-15)
+aux(proved-21, Has-17)
+nsubjpass(proved-21, evolution-18)
+auxpass(proved-21, been-19)
+advmod(proved-21, scientifically-20)
+parataxis(is-15, proved-21)
+aux(addressed-28, has-23)
+neg(addressed-28, not-24)
+advmod(addressed-28, here-25)
+auxpass(addressed-28, been-26)
+advmod(addressed-28, fully-27)
+rcmod(ergo-8, addressed-28)
+
+(ROOT
+  (S (CC Or)
+    (VP (VBZ has)
+      (NP (PRP it)))
+    (. ?)))
+
+cc(has-2, Or-1)
+root(ROOT-0, has-2)
+dobj(has-2, it-3)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ is)
+          (VP (VBN observed)
+            (PP (IN in)
+              (NP
+                (NP (NNS mayflies))
+                (VP (VBG living)
+                  (PP (IN within)
+                    (NP
+                      (NP (DT the) (NN environment))
+                      (PRN (-LRB- -LRB-)
+                        (CC but)
+                        (ADVP (RB never))
+                        (NP
+                          (NP (RB outside))
+                          (PP (IN of)
+                            (NP (CD one))))
+                        (-RRB- -RRB-)))))))))))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP (VB be)
+        (NP
+          (NP (DT the) (JJ only) (NN basis))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (RB only) (JJ possible) (NN conclusion))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ uncertain))))))))))
+    (. .)))
+
+nsubjpass(observed-3, What-1)
+auxpass(observed-3, is-2)
+csubj(basis-22, observed-3)
+prep_in(observed-3, mayflies-5)
+partmod(mayflies-5, living-6)
+det(environment-9, the-8)
+prep_within(living-6, environment-9)
+dep(environment-9, but-11)
+dep(environment-9, never-12)
+prep_outside_of(environment-9, one-15)
+aux(basis-22, can-17)
+advmod(basis-22, only-18)
+cop(basis-22, be-19)
+det(basis-22, the-20)
+amod(basis-22, only-21)
+root(ROOT-0, basis-22)
+det(conclusion-27, the-24)
+advmod(conclusion-27, only-25)
+amod(conclusion-27, possible-26)
+prep_of(basis-22, conclusion-27)
+nsubj(uncertain-30, conclusion-27)
+cop(uncertain-30, is-29)
+rcmod(conclusion-27, uncertain-30)
+
+(ROOT
+  (S
+    (S (CC But)
+      (NP (DT that))
+      (VP (VBZ is)
+        (VP (VBN known))))
+    (: ;)
+    (S
+      (NP (PRP we))
+      (VP (VBP have) (RB n't)
+        (VP (VBN assumed)
+          (ADVP (RB enough)
+            (PP (IN of)
+              (NP (DT the) (NNS mechanics))))
+          (PP (IN behind)
+            (NP
+              (NP (DT the) (NNS mechanics))
+              (PP (IN behind)
+                (NP (JJ evolutionary) (NN action))))))))
+    (. .)))
+
+cc(known-4, But-1)
+nsubjpass(known-4, that-2)
+auxpass(known-4, is-3)
+root(ROOT-0, known-4)
+nsubj(assumed-9, we-6)
+aux(assumed-9, have-7)
+neg(assumed-9, n't-8)
+parataxis(known-4, assumed-9)
+advmod(assumed-9, enough-10)
+det(mechanics-13, the-12)
+prep_of(enough-10, mechanics-13)
+det(mechanics-16, the-15)
+prep_behind(assumed-9, mechanics-16)
+amod(action-19, evolutionary-18)
+prep_behind(mechanics-16, action-19)
+
+(ROOT
+  (S
+    (SBAR (IN while)
+      (S
+        (NP (NN evolution))
+        (VP (MD may)
+          (VP (VB take)
+            (NP (PRP$ our) (NN life))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD will)
+      (ADVP (RB never))
+      (VP (VB take)
+        (PRN (-LRB- -LRB-) (VB pause) (-RRB- -RRB-))
+        (NP (PRP$ our) (NNP FREDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM) (NN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!))))))
+
+mark(take-4, while-1)
+nsubj(take-4, evolution-2)
+aux(take-4, may-3)
+advcl(take-11, take-4)
+poss(life-6, our-5)
+dobj(take-4, life-6)
+nsubj(take-11, it-8)
+aux(take-11, will-9)
+neg(take-11, never-10)
+root(ROOT-0, take-11)
+dep(take-11, pause-13)
+poss(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-17, our-15)
+nn(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-17, FREDOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM-16)
+dobj(take-11, !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-17)
+

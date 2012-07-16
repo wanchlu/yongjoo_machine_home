@@ -1,0 +1,76 @@
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (PP (IN beyond)
+        (NP
+          (NP (DT the) (NN court))
+          (PP (IN of)
+            (NP (DT the) (NN land)))))
+      (S
+        (VP (TO to)
+          (VP (VB enforce)
+            (NP (PRP them))))))
+    (. .)))
+
+cc('s-3, But-1)
+nsubj('s-3, it-2)
+xsubj(enforce-11, it-2)
+root(ROOT-0, 's-3)
+det(court-6, the-5)
+prep_beyond('s-3, court-6)
+det(land-9, the-8)
+prep_of(court-6, land-9)
+aux(enforce-11, to-10)
+xcomp('s-3, enforce-11)
+dobj(enforce-11, them-12)
+
+(ROOT
+  (SINV
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (DT a) (NN woman))
+          (VP (VBZ chooses)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP
+                    (NP (DT an) (NN abortion))
+                    (VP (VBN performed)))))))))
+      (, ,)
+      (NP (DT that))
+      (VP (VBZ falls)
+        (PP (IN under)
+          (NP
+            (NP (NN liberty))
+            (CC AND)
+            (NP
+              (NP (NN pursuit))
+              (PP (IN of)
+                (NP (NN happiness))))))))
+    (, ,)
+    (VP (MD would) (RB n't))
+    (NP (PRP it))
+    (. ?)))
+
+mark(chooses-4, If-1)
+det(woman-3, a-2)
+nsubj(chooses-4, woman-3)
+xsubj(have-6, woman-3)
+advcl(falls-12, chooses-4)
+aux(have-6, to-5)
+xcomp(chooses-4, have-6)
+det(abortion-8, an-7)
+dobj(have-6, abortion-8)
+partmod(abortion-8, performed-9)
+nsubj(falls-12, that-11)
+ccomp(would-20, falls-12)
+prep_under(falls-12, liberty-14)
+prep_under(falls-12, pursuit-16)
+conj_and(liberty-14, pursuit-16)
+prep_of(pursuit-16, happiness-18)
+root(ROOT-0, would-20)
+neg(would-20, n't-21)
+nsubj(would-20, it-22)
+

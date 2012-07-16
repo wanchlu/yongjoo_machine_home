@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (ADVP (RB As) (RB far)
+      (SBAR (IN as)
+        (S
+          (NP (NNP Roe) (NNP vs) (NNP Wade))
+          (VP (VBZ goes)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD did) (RB n't)
+      (VP (VB force)
+        (NP (NN anything))
+        (PP (IN on)
+          (NP (PRP you)))
+        (, ,)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP think)
+              (SBAR
+                (S
+                  (NP (NN abortion))
+                  (VP (VBZ is)
+                    (ADJP (JJ wrong)
+                      (SBAR
+                        (S
+                          (VP (VBP do) (RB n't)
+                            (VP (VB get)
+                              (NP (CD one)))))))))))))))
+    (. .)))
+
+advmod(far-2, As-1)
+advmod(force-12, far-2)
+mark(goes-7, as-3)
+nn(Wade-6, Roe-4)
+nn(Wade-6, vs-5)
+nsubj(goes-7, Wade-6)
+ccomp(far-2, goes-7)
+nsubj(force-12, they-9)
+aux(force-12, did-10)
+neg(force-12, n't-11)
+root(ROOT-0, force-12)
+dobj(force-12, anything-13)
+prep_on(force-12, you-15)
+mark(think-19, if-17)
+nsubj(think-19, you-18)
+advcl(force-12, think-19)
+nsubj(wrong-22, abortion-20)
+cop(wrong-22, is-21)
+ccomp(think-19, wrong-22)
+aux(get-25, do-23)
+neg(get-25, n't-24)
+dep(wrong-22, get-25)
+dobj(get-25, one-26)
+

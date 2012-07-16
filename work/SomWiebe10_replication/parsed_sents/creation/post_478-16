@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT all) (JJ many)))
+    (NP (DT a) (NNP Christian))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NN problem))
+        (VP (VBG accepting)
+          (NP
+            (NP (DT the) (NN science))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP have)
+                  (VP (VBN come)
+                    (S
+                      (VP (TO to)
+                        (VP (VB know)
+                          (PP (IN as)
+                            (NP (JJ evolutionary) (NN theory)))
+                          (PP (IN with)
+                            (NP
+                              (NP (DT a) (NN foundation))
+                              (VP (VBN laid)
+                                (PP (IN by)
+                                  (NP (NNP Charles) (NNP Darwin)))))))))))))))))
+    (. .)))
+
+det(many-3, all-2)
+prep_after(has-6, many-3)
+det(Christian-5, a-4)
+nsubj(has-6, Christian-5)
+root(ROOT-0, has-6)
+det(problem-8, no-7)
+dobj(has-6, problem-8)
+partmod(problem-8, accepting-9)
+det(science-11, the-10)
+dobj(accepting-9, science-11)
+dobj(come-14, science-11)
+nsubj(come-14, we-12)
+xsubj(know-16, we-12)
+aux(come-14, have-13)
+rcmod(science-11, come-14)
+aux(know-16, to-15)
+xcomp(come-14, know-16)
+amod(theory-19, evolutionary-18)
+prep_as(know-16, theory-19)
+det(foundation-22, a-21)
+prep_with(know-16, foundation-22)
+partmod(foundation-22, laid-23)
+nn(Darwin-26, Charles-25)
+agent(laid-23, Darwin-26)
+
+(ROOT
+  (FRAG
+    (NP (NN tj))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBZ misunderstood)
+              (NP (PRP$ my) (NN point)))))))
+    (. .)))
+
+root(ROOT-0, tj-1)
+nsubj(think-4, I-3)
+dep(tj-1, think-4)
+nsubj(misunderstood-6, you-5)
+ccomp(think-4, misunderstood-6)
+poss(point-8, my-7)
+dobj(misunderstood-6, point-8)
+

@@ -1,0 +1,185 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (NN baby))
+        (PP (IN with)
+          (NP (NN anencephaly)))))
+    (. .)))
+
+nsubj(had-2, I-1)
+root(ROOT-0, had-2)
+det(baby-4, a-3)
+dobj(had-2, baby-4)
+prep_with(baby-4, anencephaly-6)
+
+(ROOT
+  (S
+    (NP (DT No) (NN mother))
+    (VP (MD should)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB carry)
+              (NP (DT a) (NN baby))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP she))
+                  (VP (VBZ knows)
+                    (SBAR
+                      (S
+                        (VP (MD will)
+                          (VP (VB die)))))))))))))
+    (. .)))
+
+det(mother-2, No-1)
+nsubj(have-4, mother-2)
+xsubj(carry-6, mother-2)
+aux(have-4, should-3)
+root(ROOT-0, have-4)
+aux(carry-6, to-5)
+xcomp(have-4, carry-6)
+det(baby-8, a-7)
+dobj(carry-6, baby-8)
+complm(knows-11, that-9)
+nsubj(knows-11, she-10)
+ccomp(carry-6, knows-11)
+aux(die-13, will-12)
+ccomp(knows-11, die-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (RB so) (JJ painful)
+        (CC and)
+        (JJ depressing)))
+    (. .)))
+
+nsubj(painful-4, It-1)
+nsubj(depressing-6, It-1)
+cop(painful-4, is-2)
+advmod(painful-4, so-3)
+root(ROOT-0, painful-4)
+conj_and(painful-4, depressing-6)
+
+(ROOT
+  (NP (NNP PLEASE) (: ...)))
+
+root(ROOT-0, PLEASE-1)
+
+(ROOT
+  (S
+    (VP (VB vote)
+      (ADVP (RB no)
+        (PP (TO to)
+          (S
+            (VP (VBG banning)
+              (NP (NN abortion)))))))
+    (. .)))
+
+root(ROOT-0, vote-1)
+advmod(vote-1, no-2)
+prepc_to(no-2, banning-4)
+dobj(banning-4, abortion-5)
+
+(ROOT
+  (NP
+    (NP (NN Vote) (RB yes))
+    (PP (TO to)
+      (S
+        (VP (VBG allowing)
+          (NP (NN state) (NN funding))
+          (S
+            (VP (TO to)
+              (VP (VB pay)
+                (PP (IN for)
+                  (NP (NNS abortions)))))))))
+    (. .)))
+
+root(ROOT-0, Vote-1)
+advmod(Vote-1, yes-2)
+prepc_to(Vote-1, allowing-4)
+nn(funding-6, state-5)
+dobj(allowing-4, funding-6)
+aux(pay-8, to-7)
+xcomp(allowing-4, pay-8)
+prep_for(pay-8, abortions-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD cost)
+        (NP (PRP me))
+        (NP
+          (ADJP ($ $) (CD 2,000))
+          (NNS dollars))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (DT an) (NN abortion)))))))
+    (CC and)
+    (S
+      (NP (PRP It))
+      (VP (MD would)
+        (VP (VB have)
+          (VP (VBN cost)
+            (NP ($ $) (CD 10,000))
+            (S
+              (VP (TO to)
+                (VP (VB deliver)
+                  (PP (IN in)
+                    (NP (DT the) (NN hospital))))))))))
+    (. .)))
+
+nsubj(cost-2, It-1)
+root(ROOT-0, cost-2)
+iobj(cost-2, me-3)
+amod(dollars-6, $-4)
+number($-4, 2,000-5)
+dobj(cost-2, dollars-6)
+aux(get-8, to-7)
+xcomp(cost-2, get-8)
+det(abortion-10, an-9)
+dobj(get-8, abortion-10)
+nsubj(cost-15, It-12)
+aux(cost-15, would-13)
+aux(cost-15, have-14)
+conj_and(cost-2, cost-15)
+dobj(cost-15, $-16)
+num($-16, 10,000-17)
+aux(deliver-19, to-18)
+xcomp(cost-15, deliver-19)
+det(hospital-22, the-21)
+prep_in(deliver-19, hospital-22)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD deserved)
+        (S
+          (VP (TO to)
+            (VP (VB hold)
+              (NP (PRP$ my) (NN baby))))))
+      (CC and)
+      (VP
+        (ADVP (RB never))
+        (VBD got)
+        (PP (TO to))))
+    (. .)))
+
+nsubj(deserved-2, I-1)
+xsubj(hold-4, I-1)
+nsubj(got-9, I-1)
+root(ROOT-0, deserved-2)
+aux(hold-4, to-3)
+xcomp(deserved-2, hold-4)
+poss(baby-6, my-5)
+dobj(hold-4, baby-6)
+neg(got-9, never-8)
+conj_and(deserved-2, got-9)
+prep(got-9, to-10)
+

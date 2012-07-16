@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NN respect))
+        (PP (TO to)
+          (NP
+            (NP (DT a) (VBN fertilized) (NN egg))
+            (, ,)
+            (NP (NN embryo))
+            (, ,)
+            (CC or)
+            (NP (NN fetus))))))
+    (, ,)
+    (NP (DT the) (NN question))
+    (VP (VBZ is)
+      (SBARQ
+        (WHADVP (WRB When))
+        (SQ (VBZ does)
+          (NP (PRP it))
+          (VP (VB become)
+            (NP (DT a) (NN person))))
+        (. ?)))))
+
+det(egg-6, a-4)
+amod(egg-6, fertilized-5)
+prep_with_respect_to(is-15, egg-6)
+conj_or(egg-6, embryo-8)
+prep_with_respect_to(is-15, embryo-8)
+conj_or(egg-6, fetus-11)
+prep_with_respect_to(is-15, fetus-11)
+det(question-14, the-13)
+nsubj(is-15, question-14)
+root(ROOT-0, is-15)
+advmod(person-21, When-16)
+aux(person-21, does-17)
+nsubj(person-21, it-18)
+cop(person-21, become-19)
+det(person-21, a-20)
+dep(is-15, person-21)
+

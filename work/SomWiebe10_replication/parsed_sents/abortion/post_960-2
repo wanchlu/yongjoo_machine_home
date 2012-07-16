@@ -1,0 +1,68 @@
+(ROOT
+  (S (CC But)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBD had)
+          (VP (VBN given)
+            (NP (PRP them))
+            (NP (DT a) (NN chance)
+              (S
+                (VP (TO to)
+                  (VP (VB live)))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP they))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBN proved)
+          (ADJP (JJ worthwhile)
+            (S
+              (VP (TO to)
+                (VP (VB live))))))))
+    (. !)))
+
+cc(proved-16, But-1)
+mark(given-5, if-2)
+nsubj(given-5, you-3)
+aux(given-5, had-4)
+advcl(proved-16, given-5)
+iobj(given-5, them-6)
+det(chance-8, a-7)
+dobj(given-5, chance-8)
+aux(live-10, to-9)
+infmod(chance-8, live-10)
+advmod(proved-16, then-12)
+nsubj(proved-16, they-13)
+aux(proved-16, would-14)
+aux(proved-16, have-15)
+root(ROOT-0, proved-16)
+acomp(proved-16, worthwhile-17)
+aux(live-19, to-18)
+xcomp(worthwhile-17, live-19)
+
+(ROOT
+  (SINV
+    (ADVP (RB Just))
+    (VP (VBP think))
+    (SBAR
+      (WHADJP (WRB how) (JJ many))
+      (S
+        (NP (NNS masterminds))
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBN killed)
+              (PP (IN before)
+                (NP (NN birth)))))))
+      (. ?))))
+
+advmod(think-2, Just-1)
+root(ROOT-0, think-2)
+advmod(many-4, how-3)
+dep(killed-8, many-4)
+nsubjpass(killed-8, masterminds-5)
+aux(killed-8, have-6)
+auxpass(killed-8, been-7)
+dep(think-2, killed-8)
+prep_before(killed-8, birth-10)
+

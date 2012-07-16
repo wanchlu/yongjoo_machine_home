@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Behe))
+        (VP (MD can) (RB not)
+          (VP (`` ``) (VB prove) ('' '')
+            (S
+              (NP (PRP it))
+              (VP (VBD did) (RB n't)
+                (VP (VB happen)
+                  (ADVP (RB then)))))))))
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP (DT no) (NN reason)
+        (S
+          (VP (TO to)
+            (VP (VB believe)
+              (SBAR
+                (S
+                  (NP (PRP one))
+                  (VP (MD can)
+                    (VP (VB prove)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBD did)))))))))))))
+    (. .)))
+
+mark(prove-6, If-1)
+nsubj(prove-6, Behe-2)
+aux(prove-6, can-3)
+neg(prove-6, not-4)
+advcl('s-14, prove-6)
+nsubj(happen-11, it-8)
+aux(happen-11, did-9)
+neg(happen-11, n't-10)
+ccomp(prove-6, happen-11)
+advmod(happen-11, then-12)
+expl('s-14, there-13)
+root(ROOT-0, 's-14)
+det(reason-16, no-15)
+nsubj('s-14, reason-16)
+aux(believe-18, to-17)
+infmod(reason-16, believe-18)
+nsubj(prove-21, one-19)
+aux(prove-21, can-20)
+ccomp(believe-18, prove-21)
+complm(did-24, that-22)
+nsubj(did-24, it-23)
+ccomp(prove-21, did-24)
+

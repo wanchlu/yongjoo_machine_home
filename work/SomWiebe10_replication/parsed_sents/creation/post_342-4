@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP do) (RB not)
+      (VP (VB observe)
+        (NP
+          (NP (NNS correlations))
+          (PP (IN between)
+            (NP (DT the) (NNP CMB) (JJ fractional) (NN power) (NN distribution))))
+        (SBAR (IN as)
+          (S
+            (S
+              (VP (VBN measured)
+                (PP (IN in)
+                  (NP
+                    (NP (PRP$ its) (NNP AoE) (NN frame))
+                    (CC and)
+                    (NP
+                      (NP (DT that))
+                      (PP (IN of)
+                        (NP (CD 2MASS))))))))
+            (, ,)
+            (S
+              (VP (VBG constraining)
+                (NP
+                  (NP (DT the) (JJ possible) (NNS explanations))
+                  (PP (IN of)
+                    (NP (DT the) (NN low))))))))))
+    (. ?)))
+
+nsubj(observe-4, We-1)
+aux(observe-4, do-2)
+neg(observe-4, not-3)
+root(ROOT-0, observe-4)
+dobj(observe-4, correlations-5)
+det(distribution-11, the-7)
+nn(distribution-11, CMB-8)
+amod(distribution-11, fractional-9)
+nn(distribution-11, power-10)
+prep_between(correlations-5, distribution-11)
+mark(measured-13, as-12)
+advcl(observe-4, measured-13)
+poss(frame-17, its-15)
+nn(frame-17, AoE-16)
+prep_in(measured-13, frame-17)
+prep_in(measured-13, that-19)
+conj_and(frame-17, that-19)
+prep_of(that-19, 2MASS-21)
+dep(measured-13, constraining-23)
+det(explanations-26, the-24)
+amod(explanations-26, possible-25)
+dobj(constraining-23, explanations-26)
+det(low-29, the-28)
+prep_of(explanations-26, low-29)
+
+(ROOT
+  (NP
+    (NP (NNS anomalies))
+    (PP (IN in)
+      (NP (DT the) (NNP CMB)))
+    (. .)))
+
+root(ROOT-0, anomalies-1)
+det(CMB-4, the-3)
+prep_in(anomalies-1, CMB-4)
+

@@ -1,0 +1,32 @@
+(ROOT
+  (NP (NNP Laurie) (NNP Goodstein) (. .)))
+
+nn(Goodstein-2, Laurie-1)
+root(ROOT-0, Goodstein-2)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Teaching))
+    (ADVP (IN of))
+    (PRN
+      (NP (NNP Creationism))
+      (VP (VBZ Is)))
+    (NP (NNP Endorsed))
+    (ADVP (IN in)
+      (NP (NNP New)))
+    (VP (VBD Survey)
+      (VP ('' '')
+        (NP (NNP August) (CD 31) (, ,) (CD 2005))))))
+
+nsubj(Survey-9, Teaching-2)
+advmod(Survey-9, of-3)
+nsubj(Is-5, Creationism-4)
+parataxis(Survey-9, Is-5)
+nsubj(Survey-9, Endorsed-6)
+advmod(Survey-9, in-7)
+pobj(in-7, New-8)
+root(ROOT-0, Survey-9)
+dep(Survey-9, August-11)
+num(August-11, 31-12)
+num(August-11, 2005-14)
+

@@ -1,0 +1,77 @@
+(ROOT
+  (NP
+    (NP (NNP Chicago))
+    (: :)
+    (NP (NNP Loyola) (NNP Press))
+    (, ,)
+    (NP (CD 1990))
+    (, ,)
+    (NP (CD 1992))
+    (. .)))
+
+root(ROOT-0, Chicago-1)
+nn(Press-4, Loyola-3)
+dep(Chicago-1, Press-4)
+appos(Chicago-1, 1990-6)
+appos(Chicago-1, 1992-8)
+
+(ROOT
+  (NP
+    (NP (NN Love))
+    (PP (IN of)
+      (NP
+        (NP (NNP Truth))
+        (PP (IN as)
+          (NP (DT a) (NNP Moral) (NNP Virtue)))))
+    (, ,)
+    (PP (IN in)
+      (NP
+        (NP (NNP Stephen) (NNP Schwarz))
+        (CC and)
+        (NP
+          (NP (NNP Fritz) (NNP Wenisch))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP eds) (. .))
+            (-RRB- -RRB-)))))))
+
+root(ROOT-0, Love-1)
+prep_of(Love-1, Truth-3)
+det(Virtue-7, a-5)
+nn(Virtue-7, Moral-6)
+prep_as(Truth-3, Virtue-7)
+nn(Schwarz-11, Stephen-10)
+prep_in(Love-1, Schwarz-11)
+nn(Wenisch-14, Fritz-13)
+prep_in(Love-1, Wenisch-14)
+conj_and(Schwarz-11, Wenisch-14)
+appos(Wenisch-14, eds-16)
+
+(ROOT
+  (FRAG
+    (FRAG (, ,)
+      (NP (NNP Values) (NNP and) (NNP Human) (NNP Experience)))
+    (: :)
+    (FRAG
+      (NP (NNP Essays))
+      (PP (IN in)
+        (NP
+          (NP (NN Honor))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN Memory))
+              (PP (IN of)
+                (NP (NNP Balduin) (NNP Schwarz))))))))
+    (. .)))
+
+nn(Experience-5, Values-2)
+nn(Experience-5, and-3)
+nn(Experience-5, Human-4)
+root(ROOT-0, Experience-5)
+dep(Experience-5, Essays-7)
+dep(Essays-7, in-8)
+pobj(in-8, Honor-9)
+det(Memory-12, the-11)
+prep_of(Honor-9, Memory-12)
+nn(Schwarz-15, Balduin-14)
+prep_of(Memory-12, Schwarz-15)
+

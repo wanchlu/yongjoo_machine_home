@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP I))
+        (VP (VBP am) (RB not)
+          (NP
+            (NP (DT a) (NN scientist) (NN myself))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (MD can) (RB not)
+                  (ADVP (RB accurately))
+                  (VP (VB peer)
+                    (VP (VB review)
+                      (NP (PRP them)))))))))))
+    (, ,)
+    (ADVP (RB however))
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (MD can)
+              (VP (VB see)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBP appear)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (NP
+                              (NP (NNS flaws))
+                              (PP (IN in)
+                                (NP (PRP$ their) (NNS arguments))))))))))))))))
+    (. .)))
+
+mark(myself-7, Because-1)
+nsubj(myself-7, I-2)
+cop(myself-7, am-3)
+neg(myself-7, not-4)
+det(myself-7, a-5)
+nn(myself-7, scientist-6)
+advcl(say-19, myself-7)
+nsubj(peer-12, I-8)
+aux(peer-12, can-9)
+neg(peer-12, not-10)
+advmod(peer-12, accurately-11)
+rcmod(myself-7, peer-12)
+xcomp(peer-12, review-13)
+dobj(review-13, them-14)
+advmod(say-19, however-16)
+nsubj(say-19, I-17)
+aux(say-19, can-18)
+root(ROOT-0, say-19)
+complm(see-23, that-20)
+nsubj(see-23, I-21)
+aux(see-23, can-22)
+ccomp(say-19, see-23)
+nsubj(appear-25, what-24)
+ccomp(see-23, appear-25)
+aux(flaws-28, to-26)
+cop(flaws-28, be-27)
+xcomp(appear-25, flaws-28)
+poss(arguments-31, their-30)
+prep_in(flaws-28, arguments-31)
+

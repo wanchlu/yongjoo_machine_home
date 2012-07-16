@@ -1,0 +1,41 @@
+(ROOT
+  (S (: --)
+    (NP
+      (NP (NNP Highlander))
+      (: --)
+      (NP (DT The) (JJ exact) (JJ same)))
+    (VP (VBZ is)
+      (ADJP (JJ true))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (JJ modern) (NN science))
+          (VP (VBZ reveals)
+            (NP
+              (NP (DT an) (NNP IC) (NN structure))
+              (PP (JJ such) (IN as)
+                (NP
+                  (NP (DT the) (NN flagellar) (NN motor))
+                  (CC &)
+                  (NP (NN assembly)))))))))
+    (. .)))
+
+nsubj(true-8, Highlander-2)
+det(same-6, The-4)
+amod(same-6, exact-5)
+dep(Highlander-2, same-6)
+cop(true-8, is-7)
+root(ROOT-0, true-8)
+advmod(reveals-12, when-9)
+amod(science-11, modern-10)
+nsubj(reveals-12, science-11)
+advcl(true-8, reveals-12)
+det(structure-15, an-13)
+nn(structure-15, IC-14)
+dobj(reveals-12, structure-15)
+det(motor-20, the-18)
+nn(motor-20, flagellar-19)
+prep_such_as(structure-15, motor-20)
+prep_such_as(structure-15, assembly-22)
+conj_and(motor-20, assembly-22)
+

@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB recently))
+    (VP (VBD read)
+      (SBAR
+        (S
+          (NP
+            (NP (DT this) (NN article))
+            (PRN (-LRB- -LRB-)
+              (S
+                (NP (NN link))
+                (VP (VBZ is)
+                  (PP (IN at)
+                    (NP (DT the) (NN end)))))
+              (-RRB- -RRB-)))
+          (VP (VBP ct)))))
+    (. .)))
+
+nsubj(read-3, I-1)
+advmod(read-3, recently-2)
+root(ROOT-0, read-3)
+det(article-5, this-4)
+nsubj(ct-13, article-5)
+nsubj(is-8, link-7)
+dep(article-5, is-8)
+det(end-11, the-10)
+prep_at(is-8, end-11)
+ccomp(read-3, ct-13)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (CD 15))
+        (, ,)
+        (NP
+          (NP (CD 2008)
+            (NP (DT The) (NNP U.S.) (NNS ranks))
+            (JJ 29th) (NNS worldwide))
+          (PP (IN in)
+            (NP (JJ infant) (NN mortality))))
+        (, ,))
+      (VP
+        (VP (VBG tying)
+          (NP (NNP Slovakia)
+            (CC and)
+            (NNP Poland)))
+        (CC but)
+        (VP (VBG lagging)
+          (PP (IN behind)
+            (NP (NNP Cuba))))))
+    (, ,)
+    (NP (DT the) (NNP CDC))
+    (VP (VBZ reports))
+    (. .)))
+
+nsubj(tying-13, 15-1)
+nsubj(lagging-18, 15-1)
+num(worldwide-8, 2008-3)
+det(ranks-6, The-4)
+nn(ranks-6, U.S.-5)
+nn(worldwide-8, ranks-6)
+amod(worldwide-8, 29th-7)
+appos(15-1, worldwide-8)
+amod(mortality-11, infant-10)
+prep_in(worldwide-8, mortality-11)
+ccomp(reports-24, tying-13)
+dobj(tying-13, Slovakia-14)
+dobj(tying-13, Poland-16)
+conj_and(Slovakia-14, Poland-16)
+conj_but(tying-13, lagging-18)
+ccomp(reports-24, lagging-18)
+prep_behind(lagging-18, Cuba-20)
+det(CDC-23, the-22)
+nsubj(reports-24, CDC-23)
+root(ROOT-0, reports-24)
+

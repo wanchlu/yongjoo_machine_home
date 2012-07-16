@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP ID))
+      (VP (MD may)
+        (VP (VB assert))))
+    (CC but)
+    (S
+      (PP (IN as)
+        (NP (DT a) (NN science)))
+      (NP (PRP$ their) (NNS contributions))
+      (VP (VBP remain)
+        (ADVP (RB largely))
+        (PP (IN with)
+          (NP (NN content)))))
+    (. .)))
+
+nsubj(assert-3, ID-1)
+aux(assert-3, may-2)
+root(ROOT-0, assert-3)
+det(science-7, a-6)
+prep_as(remain-10, science-7)
+poss(contributions-9, their-8)
+nsubj(remain-10, contributions-9)
+conj_but(assert-3, remain-10)
+advmod(remain-10, largely-11)
+prep_with(remain-10, content-13)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBD meant)
+            (PP (TO to)
+              (NP (NN type)))
+            (PP
+              (PP (IN without))
+              (, ,) (RB not)
+              (PP (IN with)))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(meant-4, you-3)
+ccomp(think-2, meant-4)
+prep_to(meant-4, type-6)
+prep(meant-4, without-7)
+neg(without-7, not-9)
+prep(without-7, with-10)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (DT A) (JJ reasonable) (NN infrence))
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (NNP God))
+          (VP (VBD created)
+            (NP (PRP us))
+            (PP (IN in)
+              (PP (IN without)
+                (NP (NN content))))))))
+    (. ?)))
+
+det(infrence-3, A-1)
+amod(infrence-3, reasonable-2)
+root(ROOT-0, infrence-3)
+complm(created-7, that-4)
+det(God-6, a-5)
+nsubj(created-7, God-6)
+dep(infrence-3, created-7)
+dobj(created-7, us-8)
+prep(created-7, in-9)
+pcomp(in-9, without-10)
+prep_without(in-9, content-11)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN wealth))
+        (PP (IN of)
+          (NP
+            (NP (NNS statistics))
+            (VP (VBN employed)
+              (PP (IN in)
+                (NP (DT the) (NN literature)))))))
+      (VP (VBP are) (RB not)
+        (ADJP (JJ independent))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NNS degeneracies)
+        (CC and)
+        (NNS correlations))
+      (VP (VBP are) (RB not)
+        (ADJP (JJ clear))))
+    (. .)))
+
+det(wealth-2, The-1)
+nsubj(independent-11, wealth-2)
+prep_of(wealth-2, statistics-4)
+partmod(statistics-4, employed-5)
+det(literature-8, the-7)
+prep_in(employed-5, literature-8)
+cop(independent-11, are-9)
+neg(independent-11, not-10)
+root(ROOT-0, independent-11)
+det(degeneracies-15, the-14)
+nsubj(clear-20, degeneracies-15)
+conj_and(degeneracies-15, correlations-17)
+nsubj(clear-20, correlations-17)
+cop(clear-20, are-18)
+neg(clear-20, not-19)
+conj_but(independent-11, clear-20)
+

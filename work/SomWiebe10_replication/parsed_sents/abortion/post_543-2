@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB Even) (DT those))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP are)
+            (VP (VBN given)
+              (PRT (RP away)))))))
+    (VP (VBP are)
+      (ADVP (RB frequently))
+      (VP (VBN born)
+        (ADJP (VBN addicted)
+          (PP (TO to)
+            (NP
+              (NP (NNS drugs))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ is)
+                    (NP (DT a) (JJ tough) (NN way)
+                      (S
+                        (VP (TO to)
+                          (VP (VB start)
+                            (NP (NN life))))))))))))))
+    (. .)))
+
+advmod(those-2, Even-1)
+nsubjpass(given-5, those-2)
+nsubjpass(born-9, those-2)
+auxpass(given-5, are-4)
+rcmod(those-2, given-5)
+prt(given-5, away-6)
+auxpass(born-9, are-7)
+advmod(born-9, frequently-8)
+root(ROOT-0, born-9)
+acomp(born-9, addicted-10)
+prep_to(addicted-10, drugs-12)
+nsubj(way-18, drugs-12)
+cop(way-18, is-15)
+det(way-18, a-16)
+amod(way-18, tough-17)
+rcmod(drugs-12, way-18)
+aux(start-20, to-19)
+infmod(way-18, start-20)
+dobj(start-20, life-21)
+

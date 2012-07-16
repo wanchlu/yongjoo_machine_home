@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB say)
+        (SBAR
+          (S
+            (NP (CD 1:1))
+            (: ...)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP create)
+                  (SBAR
+                    (S
+                      (NP (PRP$ your) (NN creation))
+                      (VP (VBZ reflects)
+                        (NP (PRP$ your) (NN character))))))))
+            (: ...)
+            (VP (VBZ does)
+              (NP (PRP it))
+              (ADVP (RB not)))))))
+    (. ?)))
+
+nsubj(say-3, I-1)
+aux(say-3, 'd-2)
+root(ROOT-0, say-3)
+nsubj(does-15, 1:1-4)
+advmod(create-8, when-6)
+nsubj(create-8, you-7)
+advcl(does-15, create-8)
+parataxis(does-15, create-8)
+poss(creation-10, your-9)
+nsubj(reflects-11, creation-10)
+ccomp(create-8, reflects-11)
+poss(character-13, your-12)
+dobj(reflects-11, character-13)
+ccomp(say-3, does-15)
+dobj(does-15, it-16)
+neg(does-15, not-17)
+

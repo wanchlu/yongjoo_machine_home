@@ -1,0 +1,27 @@
+(ROOT
+  (NP
+    (NP (DT The) (NN age))
+    (PP (IN of)
+      (NP
+        (NP
+          (NP (DT the) (NN Earth))
+          (VP (VBG being)
+            (ADJP (JJR less))
+            (ADVP (RB then)
+              (NP (CD 10,000) (NNS years)))))
+        (ADJP (JJ old)
+          (NP (CD .4)))))
+    (. .)))
+
+det(age-2, The-1)
+root(ROOT-0, age-2)
+det(Earth-5, the-4)
+prep_of(age-2, Earth-5)
+cop(less-7, being-6)
+partmod(Earth-5, less-7)
+advmod(less-7, then-8)
+num(years-10, 10,000-9)
+pobj(then-8, years-10)
+amod(Earth-5, old-11)
+dep(old-11, .4-12)
+

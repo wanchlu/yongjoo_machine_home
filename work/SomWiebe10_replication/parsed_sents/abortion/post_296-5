@@ -1,0 +1,32 @@
+(ROOT
+  (NP
+    (NP (NN Child))
+    (: :)
+    (NP (CD 2))
+    (. .)))
+
+root(ROOT-0, Child-1)
+dep(Child-1, 2-3)
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ human) (NN offspring))
+    (PRN (-LRB- -LRB-)
+      (NP
+        (NP (NN son))
+        (CC or)
+        (NP (NN daughter)))
+      (-RRB- -RRB-))
+    (PP (IN of)
+      (NP (DT any) (NN age)))
+    (. .)))
+
+det(offspring-3, a-1)
+amod(offspring-3, human-2)
+root(ROOT-0, offspring-3)
+dep(offspring-3, son-5)
+dep(offspring-3, daughter-7)
+conj_or(son-5, daughter-7)
+det(age-11, any-10)
+prep_of(offspring-3, age-11)
+

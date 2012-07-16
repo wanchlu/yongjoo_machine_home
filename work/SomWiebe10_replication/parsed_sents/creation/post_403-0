@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Discovery) (NNP Institute))
+      (VP (VBZ writes))
+      (, ,) ('' ''))
+    (: ...)
+    (S
+      (PP (IN by)
+        (S
+          (VP (VBG focusing)
+            (PP (IN on)
+              (NP (DT the) (NN designer))))))
+      (, ,)
+      (NP (DT The) (NNP Ayn) (NNP Rand) (NNP Institute))
+      (VP (VBZ misrepresents)
+        (NP (NNP ID))))
+    (: :)
+    (S
+      (NP (NNP ID))
+      (VP (VBZ studies)
+        (S
+          (NP (JJ natural) (NNS objects))
+          (VP (TO to)
+            (VP (VB determine)
+              (SBAR (IN if)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP bear)
+                    (NP
+                      (NP (DT the) (JJ informational) (NNS signatures))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (ADVP (RB reliably))
+                          (VP (VBP indicate)
+                            (NP (NN design))
+                            (PP (IN by)
+                              (NP (DT an) (JJ intelligent) (NN cause)))))))))))))))
+    (. .)))
+
+nn(Institute-2, Discovery-1)
+nsubj(writes-3, Institute-2)
+root(ROOT-0, writes-3)
+prepc_by(misrepresents-17, focusing-8)
+det(designer-11, the-10)
+prep_on(focusing-8, designer-11)
+det(Institute-16, The-13)
+nn(Institute-16, Ayn-14)
+nn(Institute-16, Rand-15)
+nsubj(misrepresents-17, Institute-16)
+parataxis(writes-3, misrepresents-17)
+dobj(misrepresents-17, ID-18)
+nsubj(studies-21, ID-20)
+parataxis(writes-3, studies-21)
+amod(objects-23, natural-22)
+nsubj(determine-25, objects-23)
+aux(determine-25, to-24)
+xcomp(studies-21, determine-25)
+mark(bear-28, if-26)
+nsubj(bear-28, they-27)
+advcl(determine-25, bear-28)
+det(signatures-31, the-29)
+amod(signatures-31, informational-30)
+dobj(bear-28, signatures-31)
+nsubj(indicate-34, signatures-31)
+advmod(indicate-34, reliably-33)
+rcmod(signatures-31, indicate-34)
+dobj(indicate-34, design-35)
+det(cause-39, an-37)
+amod(cause-39, intelligent-38)
+prep_by(indicate-34, cause-39)
+

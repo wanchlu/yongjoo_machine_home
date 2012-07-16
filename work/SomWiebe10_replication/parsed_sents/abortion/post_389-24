@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD wrote) (: :) (`` ``)
+      (S
+        (NP (PRP You))
+        (VP (VBP are)
+          (ADJP (JJ correct)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP say)
+                  (SBAR
+                    (S
+                      (NP (DT a) (JJ human) (NN being))
+                      (VP (VBZ refers)
+                        (PP (TO to)
+                          (NP
+                            (NP (DT a) (JJ specific) (VBG living) (NN organism))
+                            (PP (IN of)
+                              (NP (DT a) (JJ specific) (NN kind)))))))))))))))
+    (. .)))
+
+nsubj(wrote-2, You-1)
+root(ROOT-0, wrote-2)
+nsubj(correct-7, You-5)
+cop(correct-7, are-6)
+ccomp(wrote-2, correct-7)
+advmod(say-10, when-8)
+nsubj(say-10, you-9)
+dep(correct-7, say-10)
+det(being-13, a-11)
+amod(being-13, human-12)
+nsubj(refers-14, being-13)
+ccomp(say-10, refers-14)
+det(organism-19, a-16)
+amod(organism-19, specific-17)
+amod(organism-19, living-18)
+prep_to(refers-14, organism-19)
+det(kind-23, a-21)
+amod(kind-23, specific-22)
+prep_of(organism-19, kind-23)
+

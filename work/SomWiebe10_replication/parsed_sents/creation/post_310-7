@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD took)
+      (NP (PDT half) (DT a) (NN decade))
+      (NP
+        (QP (CC or)
+          (RB so)))
+      (PP (IN for)
+        (NP (NNP LaPlace)))
+      (S
+        (VP (TO to)
+          (VP (VB correct)
+            (NP (DT this) (JJ flawed) (`` ``) (NN design) (NN inference) ('' ''))))))
+    (. .)))
+
+nsubj(took-2, It-1)
+xsubj(correct-11, It-1)
+root(ROOT-0, took-2)
+predet(decade-5, half-3)
+det(decade-5, a-4)
+iobj(took-2, decade-5)
+cc(so-7, or-6)
+dobj(took-2, so-7)
+prep_for(took-2, LaPlace-9)
+aux(correct-11, to-10)
+xcomp(took-2, correct-11)
+det(inference-16, this-12)
+amod(inference-16, flawed-13)
+nn(inference-16, design-15)
+dobj(correct-11, inference-16)
+
+(ROOT
+  (S
+    (NP (NNS Openmindedness))
+    (VP (VBZ does) (RB not)
+      (VP (VB mean)
+        (SBAR (IN that)
+          (S
+            (NP (PRP one))
+            (VP (MD should)
+              (VP (VB accept)
+                (NP
+                  (NP (DT any) (NN argument))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ 's)
+                        (ADVP (RBR more))
+                        (ADJP (JJR closer))
+                        (S
+                          (VP (TO to)
+                            (VP
+                              (ADVP
+                                (NP (DT a) (NN concept))
+                                (JJR better))
+                              (VB know)
+                              (PP (IN as)
+                                (NP (NN gullibility))))))))))))))))
+    (. .)))
+
+nsubj(mean-4, Openmindedness-1)
+aux(mean-4, does-2)
+neg(mean-4, not-3)
+root(ROOT-0, mean-4)
+complm(accept-8, that-5)
+nsubj(accept-8, one-6)
+aux(accept-8, should-7)
+ccomp(mean-4, accept-8)
+det(argument-10, any-9)
+dobj(accept-8, argument-10)
+nsubj(closer-14, argument-10)
+cop(closer-14, 's-12)
+advmod(closer-14, more-13)
+rcmod(argument-10, closer-14)
+aux(know-19, to-15)
+det(concept-17, a-16)
+npadvmod(better-18, concept-17)
+advmod(know-19, better-18)
+xcomp(closer-14, know-19)
+prep_as(know-19, gullibility-21)
+

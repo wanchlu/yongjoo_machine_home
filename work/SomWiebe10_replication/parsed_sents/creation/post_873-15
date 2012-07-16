@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (ADJP (VB No.))
+    (. .)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (S
+    (NP
+      (QP (CD Six) (CD billion))
+      (NNS YEARS))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP
+          (ADJP (JJR closer))
+          (, ,)
+          (CC but)
+          (ADJP (JJ only)
+            (PP (IN about)
+              (NP (NN half)))))))
+    (. .)))
+
+number(billion-2, Six-1)
+num(YEARS-3, billion-2)
+nsubj(closer-6, YEARS-3)
+nsubj(only-9, YEARS-3)
+aux(closer-6, would-4)
+cop(closer-6, be-5)
+root(ROOT-0, closer-6)
+conj_but(closer-6, only-9)
+prep_about(only-9, half-11)
+

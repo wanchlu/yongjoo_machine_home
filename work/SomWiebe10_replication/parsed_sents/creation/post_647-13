@@ -1,0 +1,35 @@
+(ROOT
+  (FRAG
+    (NP (CD 1))
+    (, ,)
+    (NP
+      (NP (NNP Miller) (NNP Test.))
+      (, ,)
+      (NP (CD 141-42)))
+    (, ,)
+    (NP (NNP Sept.) (CD 26))
+    (, ,)
+    (NP
+      (NP (CD 2005))
+      (: ;)
+      (NP
+        (NP (CD 9:10))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Haught))
+          (-RRB- -RRB-)))
+      (: ;)
+      (NP (NNP Trial) (NNP Tr)))
+    (. .)))
+
+root(ROOT-0, 1-1)
+nn(Test.-4, Miller-3)
+dep(1-1, Test.-4)
+appos(Test.-4, 141-42-6)
+dep(1-1, Sept.-8)
+num(Sept.-8, 26-9)
+dep(1-1, 2005-11)
+dep(2005-11, 9:10-13)
+appos(9:10-13, Haught-15)
+nn(Tr-19, Trial-18)
+dep(2005-11, Tr-19)
+

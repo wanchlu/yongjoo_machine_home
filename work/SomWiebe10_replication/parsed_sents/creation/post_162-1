@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ does) (RB not)
+      (VP (VB deal)
+        (PP (IN in)
+          (NP
+            (NP (NN proof))
+            (CONJP (CC but)
+              (RB rather))
+            (NP (DT the) (NN ability))))
+        (S
+          (VP (TO to)
+            (VP (VB withstand)
+              (S
+                (NP (NNS attempts))
+                (VP (TO to)
+                  (VP (VB disprove)))))))))
+    (. .)))
+
+nsubj(deal-4, Science-1)
+xsubj(withstand-12, Science-1)
+aux(deal-4, does-2)
+neg(deal-4, not-3)
+root(ROOT-0, deal-4)
+prep_in(deal-4, proof-6)
+det(ability-10, the-9)
+prep_in(deal-4, ability-10)
+conj_negcc(proof-6, ability-10)
+aux(withstand-12, to-11)
+xcomp(deal-4, withstand-12)
+nsubj(disprove-15, attempts-13)
+aux(disprove-15, to-14)
+xcomp(withstand-12, disprove-15)
+

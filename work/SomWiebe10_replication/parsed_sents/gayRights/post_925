@@ -1,0 +1,130 @@
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (NP (PRP they))
+    (VP (VBP want)
+      (NP (NN government) (NN approval)))
+    (. .)))
+
+prep_of(want-4, course-2)
+nsubj(want-4, they-3)
+root(ROOT-0, want-4)
+nn(approval-6, government-5)
+dobj(want-4, approval-6)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SINV
+      (VP (MD should) (RB n't))
+      (NP (PRP they)))
+    (. ?)))
+
+advmod(should-2, Why-1)
+root(ROOT-0, should-2)
+neg(should-2, n't-3)
+nsubj(should-2, they-4)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB insist)
+        (PP (IN on)
+          (S
+            (VP (VBG making)
+              (NP (JJ homosexuals) (JJ second) (NN class) (NNS citizens)))))))
+    (. ?)))
+
+advmod(insist-4, Why-1)
+aux(insist-4, do-2)
+nsubj(insist-4, you-3)
+root(ROOT-0, insist-4)
+prepc_on(insist-4, making-6)
+amod(citizens-10, homosexuals-7)
+amod(citizens-10, second-8)
+nn(citizens-10, class-9)
+dobj(making-6, citizens-10)
+
+(ROOT
+  (S
+    (VP (VB Take)
+      (NP (DT a) (NN look))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN history))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNPS Quakers))
+              (PP (IN in)
+                (NP (NNP England))))))))
+    (. .)))
+
+root(ROOT-0, Take-1)
+det(look-3, a-2)
+dobj(Take-1, look-3)
+det(history-6, the-5)
+prep_at(Take-1, history-6)
+det(Quakers-9, the-8)
+prep_of(history-6, Quakers-9)
+prep_in(Quakers-9, England-11)
+
+(ROOT
+  (SBARQ
+    (S
+      (VP (VB Tell)
+        (NP (PRP me))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN difference))
+        (PP (IN in)
+          (NP
+            (NP (PRP$ your) (NN view))
+            (PP (IN vs.)
+              (NP
+                (NP (NNP Englands) (NNS views))
+                (PP (IN of)
+                  (NP (DT the) (NNPS Quakers)))))))))
+    (. ?)))
+
+dep(is-5, Tell-1)
+dobj(Tell-1, me-2)
+attr(is-5, what-4)
+root(ROOT-0, is-5)
+det(difference-7, the-6)
+nsubj(is-5, difference-7)
+poss(view-10, your-9)
+prep_in(difference-7, view-10)
+nn(views-13, Englands-12)
+prep_vs.(view-10, views-13)
+det(Quakers-16, the-15)
+prep_of(views-13, Quakers-16)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP$ your) (JJ religious) (NN heart))
+        (ADJP
+          (ADJP (RB so) (JJ dark))
+          (CC and)
+          (ADJP (VBN shut)
+            (PRT (RP off))))))
+    (. ?)))
+
+advmod(is-2, Why-1)
+root(ROOT-0, is-2)
+poss(heart-5, your-3)
+amod(heart-5, religious-4)
+nsubj(is-2, heart-5)
+advmod(dark-7, so-6)
+amod(heart-5, dark-7)
+amod(heart-5, shut-9)
+conj_and(dark-7, shut-9)
+dep(shut-9, off-10)
+

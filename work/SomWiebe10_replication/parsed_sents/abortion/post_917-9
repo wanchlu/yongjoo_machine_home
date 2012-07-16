@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP (DT These) (NNS diseases))
+        (VP (VBP are)
+          (ADJP (JJ common)
+            (PP (IN among)
+              (NP
+                (NP (NNS victims))
+                (PP (IN of)
+                  (NP (NN incest))))))))
+      (, ,) (RB not)
+      (S
+        (ADVP (RB so) (RB much))
+        (NP (DT the) (JJ general) (NN public))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP (PRP they))
+        (VP (VBP do)
+          (VP (VB exist))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP we))
+        (VP (VBP have)
+          (NP
+            (NP (DT the) (JJ moral) (NN obligation))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBP think)
+                  (S
+                    (VP (TO to)
+                      (VP (VB save)
+                        (NP (PRP them))
+                        (PP (IN from)
+                          (NP
+                            (NP (DT this)
+                              (ADJP (JJ miserable))
+                              (NN existance))
+                            (, ,)
+                            (CC and)
+                            (NP
+                              (NP (DT the) (NN mother))
+                              (PP (IN of)
+                                (NP
+                                  (NP (DT the) (NN child))
+                                  (PP (IN from)
+                                    (NP (JJ potential) (NN death))))))))
+                        (PP (IN from)
+                          (NP (NNS complications)))))))))))))
+    (. .)))
+
+det(diseases-2, These-1)
+nsubj(common-4, diseases-2)
+cop(common-4, are-3)
+root(ROOT-0, common-4)
+prep_among(common-4, victims-6)
+prep_of(victims-6, incest-8)
+neg(common-4, not-10)
+advmod(much-12, so-11)
+advmod(public-15, much-12)
+det(public-15, the-13)
+amod(public-15, general-14)
+dep(common-4, public-15)
+nsubj(exist-20, they-18)
+aux(exist-20, do-19)
+conj_but(common-4, exist-20)
+nsubj(have-24, we-23)
+conj_but(common-4, have-24)
+conj_and(exist-20, have-24)
+det(obligation-27, the-25)
+amod(obligation-27, moral-26)
+dobj(have-24, obligation-27)
+dobj(think-29, obligation-27)
+nsubj(think-29, I-28)
+xsubj(save-31, I-28)
+rcmod(obligation-27, think-29)
+aux(save-31, to-30)
+xcomp(think-29, save-31)
+dobj(save-31, them-32)
+det(existance-36, this-34)
+amod(existance-36, miserable-35)
+prep_from(save-31, existance-36)
+det(mother-40, the-39)
+prep_from(save-31, mother-40)
+conj_and(existance-36, mother-40)
+det(child-43, the-42)
+prep_of(mother-40, child-43)
+amod(death-46, potential-45)
+prep_from(child-43, death-46)
+prep_from(save-31, complications-48)
+

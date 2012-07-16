@@ -1,0 +1,73 @@
+(ROOT
+  (NP (FW .) (. .)))
+
+
+(ROOT
+  (S
+    (SBAR (IN like)
+      (S
+        (NP (DT the) (NNP Bible))
+        (VP (VBD said)
+          (PRN
+            (S
+              (S
+                (ADVP
+                  (NP (CD 5000) (NNS years))
+                  (RB ago))
+                (, ,) (`` ``)
+                (VP (VBP believe)))
+              (CC and)
+              (S
+                (ADVP (RB then))
+                (NP (PRP you))
+                (VP (MD will)
+                  (VP (VB see) ('' '')
+                    (NP (NNS \/))))))
+            (-RRB- -RRB-))
+          (NP
+            (NP (DT A) (NN person))
+            (PP (IN with)
+              (NP (DT a)
+                (ADJP (JJ closed)
+                  (CC or)
+                  (JJ filled))
+                (NN mind)))))))
+    (, ,)
+    (VP (VBZ does) (RB n't)
+      (VP (VB have)
+        (NP (NN room))
+        (S
+          (VP (TO to)
+            (VP (VB learn)
+              (NP (NN anything)))))))
+    (: ...)))
+
+mark(said-4, like-1)
+det(Bible-3, the-2)
+nsubj(said-4, Bible-3)
+advcl(have-30, said-4)
+num(years-6, 5000-5)
+npadvmod(ago-7, years-6)
+advmod(believe-10, ago-7)
+parataxis(said-4, believe-10)
+advmod(see-15, then-12)
+nsubj(see-15, you-13)
+aux(see-15, will-14)
+parataxis(said-4, see-15)
+conj_and(believe-10, see-15)
+dobj(see-15, \/-17)
+det(person-20, A-19)
+dobj(said-4, person-20)
+det(mind-26, a-22)
+amod(mind-26, closed-23)
+conj_or(closed-23, filled-25)
+amod(mind-26, filled-25)
+prep_with(person-20, mind-26)
+aux(have-30, does-28)
+neg(have-30, n't-29)
+root(ROOT-0, have-30)
+dobj(have-30, room-31)
+aux(learn-33, to-32)
+xcomp(have-30, learn-33)
+dobj(learn-33, anything-34)
+

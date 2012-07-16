@@ -1,0 +1,35 @@
+(ROOT
+  (S (CC And)
+    (ADVP (RB indeed))
+    (, ,)
+    (S
+      (VP (VBG looking)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (JJ genetic) (NN evidence))
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ shows))))))))
+    (, ,)
+    (VP
+      (ADVP (IN as))
+      (VBD expected)
+      (NP (DT a) (JJ nested) (NN hierarchy)))
+    (. .)))
+
+cc(expected-13, And-1)
+advmod(expected-13, indeed-2)
+dep(expected-13, looking-4)
+det(evidence-8, the-6)
+amod(evidence-8, genetic-7)
+prep_at(looking-4, evidence-8)
+dobj(shows-10, evidence-8)
+nsubj(shows-10, it-9)
+rcmod(evidence-8, shows-10)
+advmod(expected-13, as-12)
+root(ROOT-0, expected-13)
+det(hierarchy-16, a-14)
+amod(hierarchy-16, nested-15)
+dobj(expected-13, hierarchy-16)
+

@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP TJ))
+      (: :)
+      (ADVP (RB Well))
+      (NP (PRP I))
+      (VP (VBP know)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP
+              (VP (VBD believed)
+                (SBAR
+                  (S
+                    (NP (DT the) (NN earth))
+                    (VP (VBD was)
+                      (VP (VBN created)
+                        (S
+                          (ADJP (JJ instantaneously)))
+                        (, ,)
+                        (ADJP (RB not) (RB progressively)))))))
+              (, ,)
+              (CC and)
+              (VP (VBD was))
+              (, ,)
+              (PP (VBG according)
+                (PP (TO to)
+                  (NP (NNP Scripture)))))))))
+    (, ,)
+    (FRAG
+      (ADJP
+        (NP
+          (QP (JJR less) (IN than) (CD 6,000))
+          (NNS years))
+        (JJ old)))
+    (. .)))
+
+nsubj(know-5, TJ-1)
+advmod(know-5, Well-3)
+nsubj(know-5, I-4)
+root(ROOT-0, know-5)
+complm(believed-8, that-6)
+nsubj(believed-8, he-7)
+nsubj(was-19, he-7)
+nsubj(according-21, he-7)
+ccomp(know-5, believed-8)
+det(earth-10, the-9)
+nsubjpass(created-12, earth-10)
+auxpass(created-12, was-11)
+ccomp(believed-8, created-12)
+acomp(created-12, instantaneously-13)
+neg(progressively-16, not-15)
+acomp(created-12, progressively-16)
+ccomp(know-5, was-19)
+conj_and(believed-8, was-19)
+ccomp(know-5, according-21)
+conj_and(believed-8, according-21)
+prepc_according_to(believed-8, to-22)
+pobj(believed-8, Scripture-23)
+mwe(than-26, less-25)
+quantmod(6,000-27, than-26)
+num(years-28, 6,000-27)
+npadvmod(old-29, years-28)
+dep(know-5, old-29)
+

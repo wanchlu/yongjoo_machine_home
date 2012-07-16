@@ -1,0 +1,46 @@
+(ROOT
+  (SBARQ
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (SQ (VBP are)
+      (NP (PRP you))
+      (ADJP (JJ aware))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NN author))
+            (PP (IN of)
+              (NP (DT the) (NN textbook))))
+          (VP
+            (VP (VBD accepted)
+              (NP (NN responsibility))
+              (PP (IN for)
+                (NP (DT the) (JJ flawed) (NN definition))))
+            (CC and)
+            (VP (VBD had)
+              (S
+                (NP (PRP it))
+                (ADJP (VBN removed))))))))
+    (. ?)))
+
+prep_in(aware-6, fact-2)
+cop(aware-6, are-4)
+nsubj(aware-6, you-5)
+root(ROOT-0, aware-6)
+complm(accepted-13, that-7)
+det(author-9, the-8)
+nsubj(accepted-13, author-9)
+nsubj(had-20, author-9)
+det(textbook-12, the-11)
+prep_of(author-9, textbook-12)
+dep(aware-6, accepted-13)
+dobj(accepted-13, responsibility-14)
+det(definition-18, the-16)
+amod(definition-18, flawed-17)
+prep_for(accepted-13, definition-18)
+dep(aware-6, had-20)
+conj_and(accepted-13, had-20)
+nsubj(removed-22, it-21)
+xcomp(had-20, removed-22)
+

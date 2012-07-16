@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (JJ heartbeats)
+          (SBAR (IN before)
+            (S
+              (NP (DT the) (NN mother))
+              (VP (VBZ knows)))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP Latin))
+            (: :)
+            (NP (`` ``) (JJ little) (NN one) ('' '')))
+          (-RRB- -RRB-))
+        (SBAR (IN that)
+          (S
+            (NP (PRP she))
+            (VP (VBZ 's)
+              (ADJP (JJ pregnant)
+                (SBAR
+                  (S
+                    (NP
+                      (NP (CD .65) (NN %))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS Americans))
+                          (, ,)
+                          (NP (RB even) (JJ pro-choice) (NNPS Americans))
+                          (, ,))))
+                    (VP (VBP believe)
+                      (SBAR (IN that)
+                        (S
+                          (NP (DT a) (JJ human) (NN life))
+                          (VP (VBZ is)
+                            (VP (VBN taken)
+                              (PP (IN in)
+                                (NP
+                                  (NP (NN abortion))
+                                  (, ,)
+                                  (NP (NNP Cameron)))))))))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+acomp(are-2, heartbeats-3)
+mark(knows-7, before-4)
+det(mother-6, the-5)
+nsubj(knows-7, mother-6)
+ccomp(heartbeats-3, knows-7)
+dep(heartbeats-3, Latin-9)
+amod(one-13, little-12)
+dep(Latin-9, one-13)
+complm(pregnant-19, that-16)
+nsubj(pregnant-19, she-17)
+cop(pregnant-19, 's-18)
+ccomp(heartbeats-3, pregnant-19)
+num(%-21, .65-20)
+nsubj(believe-29, %-21)
+prep_of(%-21, Americans-23)
+advmod(Americans-27, even-25)
+amod(Americans-27, pro-choice-26)
+appos(Americans-23, Americans-27)
+dep(pregnant-19, believe-29)
+complm(taken-35, that-30)
+det(life-33, a-31)
+amod(life-33, human-32)
+nsubjpass(taken-35, life-33)
+auxpass(taken-35, is-34)
+ccomp(believe-29, taken-35)
+prep_in(taken-35, abortion-37)
+appos(abortion-37, Cameron-39)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP (DT The) (NN Earth))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (NNS billions))
+        (PP (IN of)
+          (NP
+            (NP (NNS years))
+            (ADJP (JJ old)))))
+      (SBAR (IN because)
+        (S
+          (NP
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD would)
+                  (VP (VB mean)
+                    (NP (PRP$ your) (JJ ancient) (JJ holy) (NN book))))))
+            (CC and)
+            (NP
+              (NP (NN everything))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP believe)
+                    (PRT (RP in)))))))
+          (VP (MD would)
+            (VP (VB be)
+              (ADJP (JJ wrong)))))))
+    (. ?)))
+
+det(Earth-2, The-1)
+nsubj(billions-5, Earth-2)
+cop(billions-5, is-3)
+neg(billions-5, not-4)
+root(ROOT-0, billions-5)
+prep_of(billions-5, years-7)
+amod(years-7, old-8)
+mark(wrong-24, because-9)
+nsubj(mean-12, that-10)
+aux(mean-12, would-11)
+nsubj(wrong-24, mean-12)
+poss(book-16, your-13)
+amod(book-16, ancient-14)
+amod(book-16, holy-15)
+dobj(mean-12, book-16)
+conj_and(mean-12, everything-18)
+dobj(believe-20, everything-18)
+nsubj(wrong-24, everything-18)
+nsubj(believe-20, you-19)
+rcmod(everything-18, believe-20)
+prt(believe-20, in-21)
+aux(wrong-24, would-22)
+cop(wrong-24, be-23)
+advcl(billions-5, wrong-24)
+

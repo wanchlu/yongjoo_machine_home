@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (NP (JJ http:\/\/www.ux1.eiu.edu) (NNS \/))
+    (VP (VBZ ~)
+      (NP (JJ cfjps\/1400\/atmos) (JJ _) (NN origin)))
+    (. .)))
+
+amod(\/-2, http:\/\/www.ux1.eiu.edu-1)
+nsubj(~-3, \/-2)
+root(ROOT-0, ~-3)
+amod(origin-6, cfjps\/1400\/atmos-4)
+amod(origin-6, _-5)
+dobj(~-3, origin-6)
+
+(ROOT
+  (S
+    (NP (NN htmlA))
+    (VP (VBD bit)
+      (NP
+        (NP
+          (NP (JJR more) (NN depth))
+          (PP (IN on)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PDT all)
+                  (NP (DT the) (NN hydrogen))
+                  (CC and)
+                  (NP
+                    (NP (NNP helium))
+                    (PP (IN in)
+                      (NP (DT the) (JJ early) (NN atmosphere)))))
+                (VP (VBD went))))))
+        (: ...)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP (DT a) (NN reiteration))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN fact))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP$ our) (NN atmosphere))
+                  (VP (VBZ is)
+                    (ADVP (RB mostly))
+                    (NP (NNP Nitrogen))))))))))
+    (. .)))
+
+nsubj(bit-2, htmlA-1)
+root(ROOT-0, bit-2)
+amod(depth-4, more-3)
+dobj(bit-2, depth-4)
+advmod(went-16, where-6)
+dep(hydrogen-9, all-7)
+det(hydrogen-9, the-8)
+nsubj(went-16, hydrogen-9)
+conj_and(hydrogen-9, helium-11)
+nsubj(went-16, helium-11)
+det(atmosphere-15, the-13)
+amod(atmosphere-15, early-14)
+prep_in(helium-11, atmosphere-15)
+prepc_on(depth-4, went-16)
+det(reiteration-22, a-21)
+dobj(bit-2, reiteration-22)
+conj_and(depth-4, reiteration-22)
+det(fact-25, the-24)
+prep_of(reiteration-22, fact-25)
+complm(Nitrogen-31, that-26)
+poss(atmosphere-28, our-27)
+nsubj(Nitrogen-31, atmosphere-28)
+cop(Nitrogen-31, is-29)
+advmod(Nitrogen-31, mostly-30)
+dep(fact-25, Nitrogen-31)
+

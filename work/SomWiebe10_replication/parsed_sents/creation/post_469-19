@@ -1,0 +1,52 @@
+(ROOT
+  (S (CC And)
+    (PP (IN in)
+      (NP
+        (NP (DT a) (NN follow))
+        (PP (IN up)
+          (NP (NN email)))))
+    (S
+      (NP (PRP she))
+      (VP (VBD wrote)))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP guess)
+        (SBAR
+          (S
+            (NP (DT the) (JJ big) (NN question))
+            (VP (VBZ is)
+              (SBAR (IN whether)
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ is)
+                    (NP (DT a) (JJ good) (JJ enough) (NN scientist)
+                      (S
+                        (VP (TO to)
+                          (VP (VB remain)
+                            (ADVP (RB there))))))))))))))
+    (. .)))
+
+cc(wrote-8, And-1)
+det(follow-4, a-3)
+prep_in(wrote-8, follow-4)
+prep_up(follow-4, email-6)
+nsubj(wrote-8, she-7)
+root(ROOT-0, wrote-8)
+nsubj(guess-11, I-10)
+parataxis(wrote-8, guess-11)
+det(question-14, the-12)
+amod(question-14, big-13)
+nsubj(is-15, question-14)
+ccomp(guess-11, is-15)
+complm(scientist-22, whether-16)
+nsubj(scientist-22, he-17)
+cop(scientist-22, is-18)
+det(scientist-22, a-19)
+amod(scientist-22, good-20)
+amod(scientist-22, enough-21)
+ccomp(is-15, scientist-22)
+aux(remain-24, to-23)
+infmod(scientist-22, remain-24)
+advmod(remain-24, there-25)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN evolution))
+        (VP (VBD were)
+          (ADVP (RB indeed))
+          (NP (DT a) (NN lie)))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ whistle) (NN blower))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (MD could)
+            (VP (VB explain)
+              (SBAR
+                (WHADVP (RB exactly) (WRB how))
+                (S
+                  (NP (DT the) (NN theory))
+                  (VP (VBZ is)
+                    (ADJP (JJ flawed))))))))))
+    (VP (MD would)
+      (VP (VB become)
+        (NP (DT a) (NN household) (NN name))
+        (ADVP (RB overnight))))
+    (. .)))
+
+mark(lie-6, If-1)
+nsubj(lie-6, evolution-2)
+cop(lie-6, were-3)
+advmod(lie-6, indeed-4)
+det(lie-6, a-5)
+advcl(name-24, lie-6)
+det(blower-10, the-8)
+amod(blower-10, whistle-9)
+nsubj(explain-13, blower-10)
+nsubj(name-24, blower-10)
+aux(explain-13, could-12)
+rcmod(blower-10, explain-13)
+advmod(how-15, exactly-14)
+advmod(flawed-19, how-15)
+det(theory-17, the-16)
+nsubj(flawed-19, theory-17)
+cop(flawed-19, is-18)
+ccomp(explain-13, flawed-19)
+aux(name-24, would-20)
+cop(name-24, become-21)
+det(name-24, a-22)
+nn(name-24, household-23)
+root(ROOT-0, name-24)
+advmod(name-24, overnight-25)
+

@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (VP (VB Think)
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ enormous) (NNS benefits))
+          (CC and)
+          (NP (JJ psychological) (NNS improvements))))
+      (PP
+        (PP (TO to)
+          (NP
+            (NP
+              (NP (NNS people))
+              (SBAR
+                (WHNP (WP$ whose) (NNS faces))
+                (S
+                  (VP (VBP have)
+                    (VP (VBN been)
+                      (VP (VBN disfigured)))))))
+            (, ,)
+            (NP
+              (NP (NNS workers))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP have)
+                    (VP (VBN lost)
+                      (NP
+                        (NP (PRP$ their) (NNS fingers))
+                        (, ,)
+                        (NP (NNS feet))
+                        (, ,)
+                        (CC or)
+                        (NP (JJ other) (NNS limbs)))
+                      (PP (IN in)
+                        (NP (JJ serious) (NNS accidents))))))))
+            (, ,)
+            (CC or)
+            (NP
+              (NP (NNS children))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD were)
+                    (VP (VBN born)
+                      (S
+                        (ADJP (JJ blind))))))))))
+        (CC or)
+        (PP (IN with)
+          (NP (DT some) (JJ other) (NN birth) (NN defect)))))
+    (. .)))
+
+root(ROOT-0, Think-1)
+conj_or(Think-1, Think-1')
+det(benefits-5, the-3)
+amod(benefits-5, enormous-4)
+prep_of(Think-1, benefits-5)
+amod(improvements-8, psychological-7)
+prep_of(Think-1, improvements-8)
+conj_and(benefits-5, improvements-8)
+prep_to(Think-1, people-10)
+poss(faces-12, people-10)
+nsubjpass(disfigured-15, faces-12)
+aux(disfigured-15, have-13)
+auxpass(disfigured-15, been-14)
+rcmod(people-10, disfigured-15)
+prep_to(Think-1, workers-17)
+conj_or(people-10, workers-17)
+poss(faces-12, workers-17)
+nsubj(lost-20, workers-17)
+aux(lost-20, have-19)
+rcmod(workers-17, lost-20)
+poss(fingers-22, their-21)
+dobj(lost-20, fingers-22)
+dobj(lost-20, feet-24)
+conj_or(fingers-22, feet-24)
+amod(limbs-28, other-27)
+dobj(lost-20, limbs-28)
+conj_or(fingers-22, limbs-28)
+amod(accidents-31, serious-30)
+prep_in(lost-20, accidents-31)
+prep_to(Think-1, children-34)
+conj_or(people-10, children-34)
+poss(faces-12, children-34)
+nsubjpass(born-37, children-34)
+auxpass(born-37, were-36)
+rcmod(children-34, born-37)
+acomp(born-37, blind-38)
+det(defect-44, some-41)
+amod(defect-44, other-42)
+nn(defect-44, birth-43)
+prep_with(Think-1', defect-44)
+

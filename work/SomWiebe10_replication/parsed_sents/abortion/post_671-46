@@ -1,0 +1,52 @@
+(ROOT
+  (FRAG (CC But)
+    (RB even)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP believe)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (NN god))
+              (CC and)
+              (NP (DT a) (NN soul))))
+          (, ,)
+          (SBAR
+            (SBARQ
+              (WHADVP (WRB how))
+              (SQ (VBP do)
+                (NP (PRP you))
+                (VP (VB know)
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (DT that) (NN god))
+                      (VP (VBZ sticks)
+                        (NP (DT the) (NN soul))
+                        (PP (IN into)
+                          (NP (DT the) (NN body))))))))
+              (. ?))))))))
+
+dep(even-2, But-1)
+root(ROOT-0, even-2)
+mark(believe-5, if-3)
+nsubj(believe-5, you-4)
+dep(even-2, believe-5)
+det(god-8, a-7)
+prep_in(believe-5, god-8)
+det(soul-11, a-10)
+prep_in(believe-5, soul-11)
+conj_and(god-8, soul-11)
+advmod(know-16, how-13)
+aux(know-16, do-14)
+nsubj(know-16, you-15)
+dep(believe-5, know-16)
+advmod(sticks-20, when-17)
+det(god-19, that-18)
+nsubj(sticks-20, god-19)
+advcl(know-16, sticks-20)
+det(soul-22, the-21)
+dobj(sticks-20, soul-22)
+det(body-25, the-24)
+prep_into(sticks-20, body-25)
+

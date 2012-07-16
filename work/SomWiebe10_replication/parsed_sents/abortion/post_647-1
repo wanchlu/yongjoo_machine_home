@@ -1,0 +1,27 @@
+(ROOT
+  (S
+    (NP (PRP He)
+      (CC or)
+      (PRP she))
+    (VP (VBZ has)
+      (NP
+        (NP (NNP DNA) (NNP distinct))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN mother))
+            (CC and)
+            (NP (DT the) (NN father))))))
+    (. .)))
+
+nsubj(has-4, He-1)
+conj_or(He-1, she-3)
+nsubj(has-4, she-3)
+root(ROOT-0, has-4)
+nn(distinct-6, DNA-5)
+dobj(has-4, distinct-6)
+det(mother-9, the-8)
+prep_from(distinct-6, mother-9)
+det(father-12, the-11)
+prep_from(distinct-6, father-12)
+conj_and(mother-9, father-12)
+

@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (ADVP (RB well) (RB then))
+    (, ,)
+    (ADVP (RB just))
+    (VP (VB tell)
+      (NP (PRP me)))
+    (. .)))
+
+advmod(then-2, well-1)
+advmod(tell-5, then-2)
+advmod(tell-5, just-4)
+root(ROOT-0, tell-5)
+dobj(tell-5, me-6)
+
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP do)
+      (ADVP (RB sometimes))
+      (VP (VB read)
+        (S
+          (NP (NNS things))
+          (ADJP (JJ wrong)))))
+    (. .)))
+
+nsubj(read-4, i-1)
+aux(read-4, do-2)
+advmod(read-4, sometimes-3)
+root(ROOT-0, read-4)
+nsubj(wrong-6, things-5)
+xcomp(read-4, wrong-6)
+

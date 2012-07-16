@@ -1,0 +1,33 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is) (RB not)
+          (ADJP (JJ true)))))
+    (, ,)
+    (WHNP (WP what))
+    (S
+      (VP (VB have)
+        (S
+          (NP (PRP we))
+          (VP (TO to)
+            (VP (VB look)
+              (ADVP (RB forward))
+              (PP (TO to)))))))
+    (. ?)))
+
+mark(true-5, If-1)
+nsubj(true-5, it-2)
+cop(true-5, is-3)
+neg(true-5, not-4)
+advcl(have-8, true-5)
+dep(have-8, what-7)
+root(ROOT-0, have-8)
+nsubj(look-11, we-9)
+aux(look-11, to-10)
+ccomp(have-8, look-11)
+xcomp(have-8, look-11)
+advmod(look-11, forward-12)
+prep(look-11, to-13)
+

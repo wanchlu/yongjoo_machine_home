@@ -1,0 +1,46 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (NNP Bush))
+      (VP (MD could) (RB n't)
+        (VP (VB get)
+          (NP
+            (NP (NNS appointees))
+            (VP
+              (ADVP (RB even))
+              (VBN voted)
+              (PP (IN on)))
+            (: ;)
+            (SBARQ
+              (WHADVP (WRB How))
+              (SQ (MD could)
+                (NP (PRP he))
+                (VP
+                  (ADJP (JJ possible))
+                  (VB address)
+                  (PP (JJ such)
+                    (NP (DT a) (JJ controversial) (NN subject)))
+                  (PP (IN as)
+                    (NP (NN abortion)))))
+              (. ?))))))))
+
+mark(get-5, If-1)
+nsubj(get-5, Bush-2)
+aux(get-5, could-3)
+neg(get-5, n't-4)
+root(ROOT-0, get-5)
+dobj(get-5, appointees-6)
+advmod(voted-8, even-7)
+partmod(appointees-6, voted-8)
+prep(voted-8, on-9)
+advmod(address-15, How-11)
+aux(address-15, could-12)
+nsubj(address-15, he-13)
+acomp(address-15, possible-14)
+dep(appointees-6, address-15)
+prep(address-15, such-16)
+det(subject-19, a-17)
+amod(subject-19, controversial-18)
+dep(such-16, subject-19)
+prep_as(address-15, abortion-21)
+

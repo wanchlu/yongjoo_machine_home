@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT a) (NN person))
+              (PP (IN with)
+                (NP
+                  (NP (JJ advanced) (NNP Alzheimer) (POS 's))
+                  (NNP Disease))))
+            (VP (VBZ has)
+              (NP
+                (NP (JJR less) (NN value))
+                (PP (IN than)
+                  (NP (NN someone)))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ does) (RB not)
+                      (VP (VB have)
+                        (NP (DT the) (NN disease)))))))
+              (, ,)
+              (ADVP (RB all) (RB else)
+                (S
+                  (VP (VBG being)
+                    (ADJP (JJ equal))))))))))
+    (. .)))
+
+nsubj(say-3, I-1)
+aux(say-3, would-2)
+root(ROOT-0, say-3)
+complm(has-12, that-4)
+det(person-6, a-5)
+nsubj(has-12, person-6)
+amod(Alzheimer-9, advanced-8)
+poss(Disease-11, Alzheimer-9)
+prep_with(person-6, Disease-11)
+ccomp(say-3, has-12)
+amod(value-14, less-13)
+dobj(has-12, value-14)
+nsubj(have-20, value-14)
+prep_than(value-14, someone-16)
+aux(have-20, does-18)
+neg(have-20, not-19)
+rcmod(value-14, have-20)
+det(disease-22, the-21)
+dobj(have-20, disease-22)
+advmod(else-25, all-24)
+advmod(has-12, else-25)
+cop(equal-27, being-26)
+dep(else-25, equal-27)
+

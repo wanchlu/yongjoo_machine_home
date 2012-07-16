@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD wanted)
+      (S
+        (VP (TO to)
+          (VP (VB make)
+            (S
+              (NP (PRP it))
+              (ADJP (JJ clear))))))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT this) (NN kind))
+            (PP (IN of)
+              (NP (DT an) (NN article))))
+          (VP (VBZ is)
+            (ADVP (RB never))
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN published)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT any) (NN kind))
+                        (PP (IN of)
+                          (NP (JJ reputable) (NN science) (NN magazine)))))))))))))
+    (. .)))
+
+nsubj(wanted-2, They-1)
+xsubj(make-4, They-1)
+root(ROOT-0, wanted-2)
+aux(make-4, to-3)
+xcomp(wanted-2, make-4)
+nsubj(clear-6, it-5)
+xcomp(make-4, clear-6)
+complm(is-13, that-7)
+det(kind-9, this-8)
+nsubj(is-13, kind-9)
+xsubj(published-17, kind-9)
+det(article-12, an-11)
+prep_of(kind-9, article-12)
+ccomp(wanted-2, is-13)
+neg(is-13, never-14)
+aux(published-17, to-15)
+auxpass(published-17, be-16)
+xcomp(is-13, published-17)
+det(kind-20, any-19)
+agent(published-17, kind-20)
+amod(magazine-24, reputable-22)
+nn(magazine-24, science-23)
+prep_of(kind-20, magazine-24)
+

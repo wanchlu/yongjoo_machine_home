@@ -1,0 +1,30 @@
+(ROOT
+  (SBARQ
+    (PP (IN Of)
+      (NP
+        (NP (DT a) (NN caliper))
+        (, ,)
+        (NP (NN meter) (NN stick))
+        (, ,)
+        (CC and)
+        (NP (NN odometer))))
+    (, ,)
+    (WHNP (WDT which) (NN instrument))
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP (VB use)))
+    (. ?)))
+
+det(caliper-3, a-2)
+prep_of(use-15, caliper-3)
+nn(stick-6, meter-5)
+conj_and(caliper-3, stick-6)
+prep_of(use-15, stick-6)
+conj_and(caliper-3, odometer-9)
+prep_of(use-15, odometer-9)
+det(instrument-12, which-11)
+dobj(use-15, instrument-12)
+aux(use-15, would-13)
+nsubj(use-15, you-14)
+root(ROOT-0, use-15)
+

@@ -1,0 +1,67 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN Unless)
+      (S
+        (NP
+          (NP (DT the) (NN government))
+          (SBAR
+            (S
+              (VP (VBZ says)
+                (VP ('' '')
+                  (NP (RB Here)))))))
+        (VP (VBZ 's)
+          (NP
+            (NP
+              (NP (JJ maternity) (NN pay))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN rate))
+                  (SBAR
+                    (S
+                      (NP (PRP you))
+                      (VP (VBD were)
+                        (VP (VBG receiving)
+                          (ADVP (RB prior)
+                            (PP (TO to)
+                              (NP (PRP$ your) (NN pregnancy)))))))))))
+            (CONJP (RB as) (RB well) (IN as))
+            (NP
+              (NP (JJ free) (NN food))
+              (PP (IN for)
+                (NP (DT the) (NN baby))))))))
+    (, ,) ('' '')
+    (WHADVP (WRB why))
+    (SQ (MD should)
+      (NP (PRP she))
+      (VP (VB pay)
+        (PP (IN for)
+          (NP (DT this)))))
+    (. ?)))
+
+mark(pay-9, Unless-1)
+det(government-3, the-2)
+nsubj(pay-9, government-3)
+rcmod(government-3, says-4)
+dep(says-4, Here-6)
+cop(pay-9, 's-7)
+amod(pay-9, maternity-8)
+advcl(pay-33, pay-9)
+det(rate-12, the-11)
+prep_at(pay-9, rate-12)
+dobj(receiving-15, rate-12)
+nsubj(receiving-15, you-13)
+aux(receiving-15, were-14)
+rcmod(rate-12, receiving-15)
+poss(pregnancy-19, your-18)
+prep_prior_to(receiving-15, pregnancy-19)
+amod(food-24, free-23)
+conj_and(pay-9, food-24)
+advcl(pay-33, food-24)
+det(baby-27, the-26)
+prep_for(food-24, baby-27)
+advmod(pay-33, why-30)
+aux(pay-33, should-31)
+nsubj(pay-33, she-32)
+root(ROOT-0, pay-33)
+prep_for(pay-33, this-35)
+

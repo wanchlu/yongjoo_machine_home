@@ -1,0 +1,155 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is) (RB n't)
+          (NP (DT a) (NN human)))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP (PRP it)))
+    (. ?)))
+
+mark(human-6, If-1)
+nsubj(human-6, it-2)
+cop(human-6, is-3)
+neg(human-6, n't-4)
+det(human-6, a-5)
+advcl(is-9, human-6)
+attr(is-9, what-8)
+root(ROOT-0, is-9)
+nsubj(is-9, it-10)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is) (RB n't)
+          (ADJP (JJ alive)))))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP (VB kill)
+        (NP (PRP it))))
+    (. ?)))
+
+mark(alive-5, If-1)
+nsubj(alive-5, it-2)
+cop(alive-5, is-3)
+neg(alive-5, n't-4)
+advcl(kill-10, alive-5)
+advmod(kill-10, how-7)
+aux(kill-10, can-8)
+nsubj(kill-10, you-9)
+root(ROOT-0, kill-10)
+dobj(kill-10, it-11)
+
+(ROOT
+  (FRAG (CC But)
+    (SBAR (IN if)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (NP (DT a) (NN human))
+          (, ,)
+          (SBAR (IN than)
+            (S
+              (NP (PRP it))
+              (VP (VBZ has)
+                (NP (NNS rights))))))))
+    (. .)))
+
+dep(human-6, But-1)
+mark(human-6, if-2)
+nsubj(human-6, it-3)
+cop(human-6, is-4)
+det(human-6, a-5)
+root(ROOT-0, human-6)
+mark(has-10, than-8)
+nsubj(has-10, it-9)
+advcl(human-6, has-10)
+dobj(has-10, rights-11)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (JJ alive))
+          (, ,)
+          (PP (IN than)
+            (S
+              (VP (VBG killing)
+                (NP (PRP it))))))))
+    (VP (VBZ is)
+      (NP (NN murder)))
+    (. .)))
+
+mark(alive-4, If-1)
+nsubj(alive-4, it-2)
+cop(alive-4, is-3)
+csubj(murder-10, alive-4)
+prepc_than(alive-4, killing-7)
+dobj(killing-7, it-8)
+cop(murder-10, is-9)
+root(ROOT-0, murder-10)
+
+(ROOT
+  (S
+    (S
+      (NP (JJ Last) (NN I))
+      (VP (VBD checked)))
+    (, ,)
+    (NP (NN murder))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ illegal)))
+      (PRN (-LRB- -LRB-)
+        (SBAR (IN unless)
+          (S
+            (NP (PRP you))
+            (VP (VBP happen)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP
+                      (NP (DT an) (JJ unborn) (NN baby))
+                      (, ,)
+                      (SBAR
+                        (WHPP (IN in)
+                          (WHNP (WDT which) (NN case)))
+                        (S
+                          (NP (PRP you))
+                          (ADVP (RB just))
+                          (VP (VBP do) (RB n't)
+                            (VP (VB count))))))))))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+amod(I-2, Last-1)
+nsubj(checked-3, I-2)
+ccomp(illegal-7, checked-3)
+nsubj(illegal-7, murder-5)
+cop(illegal-7, is-6)
+root(ROOT-0, illegal-7)
+mark(happen-11, unless-9)
+nsubj(happen-11, you-10)
+xsubj(baby-16, you-10)
+parataxis(illegal-7, happen-11)
+aux(baby-16, to-12)
+cop(baby-16, be-13)
+det(baby-16, an-14)
+amod(baby-16, unborn-15)
+xcomp(happen-11, baby-16)
+det(case-20, baby-16)
+rel(count-25, case-20)
+nsubj(count-25, you-21)
+advmod(count-25, just-22)
+aux(count-25, do-23)
+neg(count-25, n't-24)
+rcmod(baby-16, count-25)
+

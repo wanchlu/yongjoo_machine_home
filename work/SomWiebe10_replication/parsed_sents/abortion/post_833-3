@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (ADJP (JJ Catholic))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (DT all) (JJ human) (NN life))
+            (VP (VBZ is)
+              (ADJP (JJ sacred))
+              (SBAR (IN whether)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (NP
+                      (NP
+                        (ADJP
+                          (NP (CD one) (NN day))
+                          (JJ old))
+                        (NN baby))
+                      (CC or)
+                      (NP (DT an)
+                        (ADJP (CD 80) (NN year) (JJ old))
+                        (NN man)))))))))))
+    (. .)))
+
+nsubj(Catholic-3, I-1)
+cop(Catholic-3, am-2)
+root(ROOT-0, Catholic-3)
+nsubj(believe-6, I-5)
+conj_and(Catholic-3, believe-6)
+complm(sacred-12, that-7)
+det(life-10, all-8)
+amod(life-10, human-9)
+nsubj(sacred-12, life-10)
+cop(sacred-12, is-11)
+ccomp(believe-6, sacred-12)
+complm(baby-19, whether-13)
+nsubj(baby-19, it-14)
+cop(baby-19, is-15)
+num(day-17, one-16)
+npadvmod(old-18, day-17)
+amod(baby-19, old-18)
+ccomp(sacred-12, baby-19)
+det(man-25, an-21)
+number(old-24, 80-22)
+dep(old-24, year-23)
+amod(man-25, old-24)
+ccomp(sacred-12, man-25)
+conj_or(baby-19, man-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB stick)
+              (PP (IN with)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (FW i))
+                    (VP (VBP believe)
+                      (SBAR (IN because)
+                        (S
+                          (NP (PRP I))
+                          (VP (VBP think)
+                            (SBAR
+                              (S
+                                (NP (PRP it))
+                                (VP (VBZ is)
+                                  (ADJP (JJ right)))))))))))))))))
+    (. .)))
+
+nsubj(going-3, I-1)
+xsubj(stick-5, I-1)
+aux(going-3, am-2)
+root(ROOT-0, going-3)
+aux(stick-5, to-4)
+xcomp(going-3, stick-5)
+dep(believe-9, what-7)
+dobj(think-12, what-7)
+nsubj(believe-9, i-8)
+prepc_with(stick-5, believe-9)
+mark(think-12, because-10)
+nsubj(think-12, I-11)
+advcl(believe-9, think-12)
+nsubj(right-15, it-13)
+cop(right-15, is-14)
+ccomp(think-12, right-15)
+

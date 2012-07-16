@@ -1,0 +1,122 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (`` `) (PRP He))
+      (PRN (-LRB- -LRB-)
+        (NP (NN god))
+        (-RRB- -RRB-))
+      (VP (VBZ hangs)
+        (NP (DT the) (NN Earth))
+        (PP (IN on)
+          (NP
+            (NP (NN nothing))
+            (`` `)
+            (NX
+              (S (CC But)
+                (NP (DT the) (NN Earth))
+                (VP (VBZ is) (RB not)
+                  (VP (VBN hung)
+                    (PP (IN on)
+                      (NP (NN nothing)))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ tethered)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNS laws))
+            (PP (IN of)
+              (NP (NN gravity)))))))
+    (. .)))
+
+nsubj(hangs-7, He-3)
+dep(hangs-7, god-5)
+ccomp(tethered-24, hangs-7)
+det(Earth-9, the-8)
+dobj(hangs-7, Earth-9)
+dep(hung-18, nothing-11)
+cc(hung-18, But-13)
+det(Earth-15, the-14)
+nsubjpass(hung-18, Earth-15)
+auxpass(hung-18, is-16)
+neg(hung-18, not-17)
+prep_on(hangs-7, hung-18)
+prep_on(hung-18, nothing-20)
+nsubj(tethered-24, it-22)
+cop(tethered-24, is-23)
+root(ROOT-0, tethered-24)
+det(laws-27, the-26)
+prep_by(tethered-24, laws-27)
+prep_of(laws-27, gravity-29)
+
+(ROOT
+  (FRAG
+    (ADVP (RB first) (RB off) (. .))
+    (. .)))
+
+advmod(off-2, first-1)
+root(ROOT-0, off-2)
+
+(ROOT
+  (S
+    (NP (DT this))
+    (VP (VBZ is)
+      (UCP
+        (PP (IN from)
+          (NP (NNP Job)))
+        (CC and)
+        (SBAR (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBP recall)
+              (SBAR (IN that)
+                (S
+                  (VP (VBD was)
+                    (NP
+                      (NP (JJ old) (NN testament) (NN stuff))
+                      (CONJP (RB as) (RB well))
+                      (NP
+                        (NP (NNP definitely) (NNP B.C.))
+                        (SBAR
+                          (WHNP (WDT which))
+                          (S
+                            (NP (PRP I))
+                            (VP (VBP believe)
+                              (SBAR
+                                (S
+                                  (VP (VBZ is)
+                                    (PP (IN in)
+                                      (NP (DT the) (JJ dead) (NN sea) (NNS scrolls)))
+                                    (ADVP (RB as) (RB well)))))))))))))))
+          (. .))))
+    (. .)))
+
+nsubj(is-2, this-1)
+root(ROOT-0, is-2)
+dep(is-2, from-3)
+pobj(from-3, Job-4)
+mark(recall-8, as-6)
+nsubj(recall-8, I-7)
+dep(is-2, recall-8)
+conj_and(from-3, recall-8)
+complm(stuff-13, that-9)
+cop(stuff-13, was-10)
+amod(stuff-13, old-11)
+nn(stuff-13, testament-12)
+ccomp(recall-8, stuff-13)
+nn(B.C.-17, definitely-16)
+ccomp(recall-8, B.C.-17)
+conj_and(stuff-13, B.C.-17)
+nsubj(is-21, B.C.-17)
+rel(believe-20, which-18)
+nsubj(believe-20, I-19)
+rcmod(B.C.-17, believe-20)
+ccomp(believe-20, is-21)
+det(scrolls-26, the-23)
+amod(scrolls-26, dead-24)
+nn(scrolls-26, sea-25)
+prep_in(is-21, scrolls-26)
+advmod(well-28, as-27)
+mwe(well-28, as-27)
+advmod(is-21, well-28)
+

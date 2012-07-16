@@ -1,0 +1,66 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP You))
+      (VP (VBP 're)
+        (VP (VBG joking))))
+    (, ,)
+    (VP (VBP do)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (NP (PRP me))
+              (VP (TO to)
+                (VP (VB find)
+                  (NP (PRP you)))))))))
+    (NP
+      (NP (NNP ID) (NNS critics))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP say)
+            (SBAR
+              (S
+                (NP (NN design))
+                (VP (VBZ is) (RB not)
+                  (NP
+                    (NP (DT a) (NN part))
+                    (PP (IN of)
+                      (NP
+                        (NP (NN science))
+                        (PRN (-LRB- -LRB-)
+                          (CC or)
+                          (ADVP (RBR more) (RB specifically))
+                          (NP (NN biology) (, ,) (NNS physics) (, ,) (NN etc))
+                          (-RRB- -RRB-))))))))))))
+    (. ?)))
+
+nsubj(joking-4, You-2)
+aux(joking-4, 're-3)
+ccomp(do-6, joking-4)
+root(ROOT-0, do-6)
+nsubj(want-8, you-7)
+ccomp(do-6, want-8)
+nsubj(find-11, me-9)
+aux(find-11, to-10)
+xcomp(want-8, find-11)
+dobj(find-11, you-12)
+nn(critics-14, ID-13)
+dep(do-6, critics-14)
+nsubj(say-16, critics-14)
+rcmod(critics-14, say-16)
+nsubj(part-21, design-17)
+cop(part-21, is-18)
+neg(part-21, not-19)
+det(part-21, a-20)
+ccomp(say-16, part-21)
+prep_of(part-21, science-23)
+dep(etc-32, or-25)
+advmod(specifically-27, more-26)
+dep(etc-32, specifically-27)
+nn(etc-32, biology-28)
+dep(etc-32, physics-30)
+appos(science-23, etc-32)
+

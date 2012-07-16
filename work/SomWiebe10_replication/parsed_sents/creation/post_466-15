@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN hostility))
+      (PP (IN toward)
+        (NP
+          (NP (NNP Dr.) (NNP Sternberg))
+          (PP (IN at)
+            (NP (DT the) (NNP NMNH))))))
+    (VP (VBD was)
+      (ADJP (VBN reinforced)
+        (PP (IN by)
+          (NP (JJ anti) (JJ religious)
+            (CC and)
+            (JJ political) (NNS motivations)))))
+    (. .)))
+
+det(hostility-2, The-1)
+nsubjpass(reinforced-10, hostility-2)
+nn(Sternberg-5, Dr.-4)
+prep_toward(hostility-2, Sternberg-5)
+det(NMNH-8, the-7)
+prep_at(Sternberg-5, NMNH-8)
+auxpass(reinforced-10, was-9)
+root(ROOT-0, reinforced-10)
+amod(religious-13, anti-12)
+agent(reinforced-10, religious-13)
+amod(motivations-16, political-15)
+agent(reinforced-10, motivations-16)
+conj_and(religious-13, motivations-16)
+

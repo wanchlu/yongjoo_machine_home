@@ -1,0 +1,138 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP God))
+      (VP (VBD created)
+        (NP (DT the) (NN universe))
+        (ADVP (RB therefore))))
+    (NP (NNP God))
+    (VP (VBD created)
+      (NP (NN science)))
+    (. .)))
+
+nsubj(created-2, God-1)
+dep(created-7, created-2)
+det(universe-4, the-3)
+dobj(created-2, universe-4)
+advmod(created-2, therefore-5)
+nsubj(created-7, God-6)
+root(ROOT-0, created-7)
+dobj(created-7, science-8)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN science))
+        (VP (VBZ is)
+          (NP (DT a) (NN lie))
+          (ADVP (RB then)))))
+    (NP (NNP God))
+    (VP (VBZ is)
+      (NP (DT a) (NN liar)))
+    (. .)))
+
+mark(lie-5, If-1)
+nsubj(lie-5, science-2)
+cop(lie-5, is-3)
+det(lie-5, a-4)
+advcl(liar-10, lie-5)
+advmod(lie-5, then-6)
+nsubj(liar-10, God-7)
+cop(liar-10, is-8)
+det(liar-10, a-9)
+root(ROOT-0, liar-10)
+
+(ROOT
+  (S
+    (NP (NNP Scientist))
+    (VP (VBP have)
+      (VP (VBN shown)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN world))
+            (VP (VBD was) (RB not)
+              (VP (VBN created)
+                (PP (IN in)
+                  (NP (CD six) (NNS days)))))))))
+    (. .)))
+
+nsubj(shown-3, Scientist-1)
+aux(shown-3, have-2)
+root(ROOT-0, shown-3)
+complm(created-9, that-4)
+det(world-6, the-5)
+nsubjpass(created-9, world-6)
+auxpass(created-9, was-7)
+neg(created-9, not-8)
+ccomp(shown-3, created-9)
+num(days-12, six-11)
+prep_in(created-9, days-12)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP you))
+          (PP (IN except)
+            (NP (DT the) (NN day) (NN age) (NN theory) (NN God)
+              (CC and)
+              (NN science)))
+          (VP (VBP agree)))
+        (CC and)
+        (S
+          (NP (NN science))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB explain)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP
+                        (NP (DT the) (NN writer))
+                        (PP (IN of)
+                          (NP (NNP Genesis))))
+                      (VP (VBD knew)
+                        (SBAR (IN that)
+                          (S
+                            (NP (NNS plants))
+                            (VP (VBD came)
+                              (PP (IN before)
+                                (NP (DT the) (NN sun))))))))))))))))
+    (VP (VBD appeared)
+      (PP (IN in)
+        (NP (DT the) (NN sky))))
+    (. .)))
+
+mark(agree-11, If-1)
+nsubj(agree-11, you-2)
+det(God-8, the-4)
+nn(God-8, day-5)
+nn(God-8, age-6)
+nn(God-8, theory-7)
+prep_except(agree-11, God-8)
+conj_and(God-8, science-10)
+prep_except(agree-11, science-10)
+csubj(appeared-29, agree-11)
+nsubj(has-14, science-13)
+xsubj(explain-16, science-13)
+conj_and(agree-11, has-14)
+csubj(appeared-29, has-14)
+aux(explain-16, to-15)
+xcomp(has-14, explain-16)
+advmod(knew-22, how-17)
+det(writer-19, the-18)
+nsubj(knew-22, writer-19)
+prep_of(writer-19, Genesis-21)
+ccomp(explain-16, knew-22)
+complm(came-25, that-23)
+nsubj(came-25, plants-24)
+ccomp(knew-22, came-25)
+det(sun-28, the-27)
+prep_before(came-25, sun-28)
+root(ROOT-0, appeared-29)
+det(sky-32, the-31)
+prep_in(appeared-29, sky-32)
+

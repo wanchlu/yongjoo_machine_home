@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (ADVP (RB directly))
+      (VP (VBN observed)
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (JJ random) (NNS mutations))
+              (VP (VB invoke)
+                (NP (NN change)))))
+          (CC and)
+          (SBAR (IN that)
+            (S
+              (NP (NN nature))
+              (ADVP (RB sometimes))
+              (VP (VBZ selects)
+                (PP (IN for)
+                  (NP (DT these) (NNS mutations)))))))))
+    (. .)))
+
+nsubj(observed-4, We-1)
+aux(observed-4, have-2)
+advmod(observed-4, directly-3)
+root(ROOT-0, observed-4)
+complm(invoke-8, that-5)
+amod(mutations-7, random-6)
+nsubj(invoke-8, mutations-7)
+ccomp(observed-4, invoke-8)
+dobj(invoke-8, change-9)
+complm(selects-14, that-11)
+nsubj(selects-14, nature-12)
+advmod(selects-14, sometimes-13)
+ccomp(observed-4, selects-14)
+conj_and(invoke-8, selects-14)
+det(mutations-17, these-16)
+prep_for(selects-14, mutations-17)
+

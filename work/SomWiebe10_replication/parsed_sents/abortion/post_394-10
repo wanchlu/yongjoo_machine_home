@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (FW i))
+        (VP (VBD mentioned)
+          (ADVP (RBR earlier))
+          (, ,)
+          (SBAR (IN if)
+            (S
+              (NP (FW i))
+              (VP (VBD poked)
+                (NP (NN someone))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ means)
+      (S
+        (VP (VBG killing)
+          (NP
+            (NP (DT some))
+            (PP (IN of)
+              (NP (PRP$ his) (NNS cells)))))))
+    (. .)))
+
+mark(mentioned-3, As-1)
+nsubj(mentioned-3, i-2)
+advcl(means-12, mentioned-3)
+advmod(mentioned-3, earlier-4)
+mark(poked-8, if-6)
+nsubj(poked-8, i-7)
+advcl(mentioned-3, poked-8)
+dobj(poked-8, someone-9)
+nsubj(means-12, it-11)
+root(ROOT-0, means-12)
+xcomp(means-12, killing-13)
+dobj(killing-13, some-14)
+poss(cells-17, his-16)
+prep_of(some-14, cells-17)
+

@@ -1,0 +1,137 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ has) (RB not)
+      (VP (VBN been)
+        (VP (VBN proven))))
+    (. .)))
+
+nsubjpass(proven-5, Evolution-1)
+aux(proven-5, has-2)
+neg(proven-5, not-3)
+auxpass(proven-5, been-4)
+root(ROOT-0, proven-5)
+
+(ROOT
+  (SQ (VBD Were)
+    (NP (PRP you))
+    (NP (EX there))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (NN evolution))
+        (VP (VBD was)
+          (VP (VBG happening)))))
+    (. ?)))
+
+root(ROOT-0, Were-1)
+nsubj(Were-1, you-2)
+attr(Were-1, there-3)
+expl(Were-1, there-3)
+advmod(happening-7, when-4)
+nsubj(happening-7, evolution-5)
+aux(happening-7, was-6)
+advcl(Were-1, happening-7)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (EX there))
+    (ADJP (RB any) (VBN videos))
+    (. ?)))
+
+aux(videos-4, Are-1)
+expl(videos-4, there-2)
+advmod(videos-4, any-3)
+root(ROOT-0, videos-4)
+
+(ROOT
+  (FRAG
+    (NP (NNP Records))
+    (. ?)))
+
+root(ROOT-0, Records-1)
+
+(ROOT
+  (FRAG
+    (NP (NNP Pictures))
+    (. ?)))
+
+root(ROOT-0, Pictures-1)
+
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are) (RB not))
+    (. .)))
+
+dep(are-4, No-1)
+expl(are-4, there-3)
+root(ROOT-0, are-4)
+neg(are-4, not-5)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (JJ concrete) (NN proof))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (ADVP (RB directly))
+            (VP (VBZ points)
+              (PP (TO to)
+                (NP (NN evolution))))))))
+    (. .)))
+
+advmod(is-4, Therefore-1)
+expl(is-4, there-3)
+root(ROOT-0, is-4)
+det(proof-7, no-5)
+amod(proof-7, concrete-6)
+nsubj(is-4, proof-7)
+nsubj(points-10, proof-7)
+advmod(points-10, directly-9)
+rcmod(proof-7, points-10)
+prep_to(points-10, evolution-12)
+
+(ROOT
+  (SINV
+    (VP (VBG Believing)
+      (PP (IN in)
+        (NP (NN evoluition))))
+    (VP (VBZ requires))
+    (NP
+      (NP (DT an) (NN element))
+      (PP (IN of)
+        (NP (NN faith)))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (EX there))
+          (VP (VBZ is) (RB n't)
+            (NP
+              (NP (DT any) (JJ concrete) (NN proof))
+              (PP (IN for)
+                (NP (PRP it))))))))
+    (. .)))
+
+root(ROOT-0, Believing-1)
+prep_in(Believing-1, evoluition-3)
+dep(Believing-1, requires-4)
+det(element-6, an-5)
+nsubj(Believing-1, element-6)
+prep_of(element-6, faith-8)
+mark(is-12, because-10)
+expl(is-12, there-11)
+dep(element-6, is-12)
+neg(is-12, n't-13)
+det(proof-16, any-14)
+amod(proof-16, concrete-15)
+nsubj(is-12, proof-16)
+prep_for(proof-16, it-18)
+

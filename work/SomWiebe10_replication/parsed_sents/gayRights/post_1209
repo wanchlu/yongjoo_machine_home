@@ -1,0 +1,127 @@
+(ROOT
+  (SBARQ
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP say)
+          (NP
+            (NP (CD 3000) (NNS years))
+            (PP (IN of)
+              (NP (JJ human) (NN wisdom)))))))
+    (, ,)
+    (WHNP (WP who))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG referring)
+        (PP (TO to))))
+    (. ?)))
+
+advmod(say-3, When-1)
+nsubj(say-3, you-2)
+dep(referring-13, say-3)
+num(years-5, 3000-4)
+dobj(say-3, years-5)
+amod(wisdom-8, human-7)
+prep_of(years-5, wisdom-8)
+dobj(referring-13, who-10)
+aux(referring-13, are-11)
+nsubj(referring-13, you-12)
+root(ROOT-0, referring-13)
+prep(referring-13, to-14)
+
+(ROOT
+  (FRAG
+    (NP (DT The) (NNPS Greeks))
+    (. ?)))
+
+det(Greeks-2, The-1)
+root(ROOT-0, Greeks-2)
+
+(ROOT
+  (FRAG
+    (NP (DT The) (NNPS Romans))
+    (. ?)))
+
+det(Romans-2, The-1)
+root(ROOT-0, Romans-2)
+
+(ROOT
+  (FRAG
+    (NP (DT The) (NNPS Jews))
+    (. ?)))
+
+det(Jews-2, The-1)
+root(ROOT-0, Jews-2)
+
+(ROOT
+  (S
+    (NP (`` ``)
+      (NP (NNP Western) (NNP Civilization)
+        (CC and)
+        (CD 3000) (NNS years))
+      (PP (IN of)
+        (NP (NN wisdom)))
+      ('' '')
+      (PP (IN vs.) (`` ``)
+        (NP
+          (NP (CD 3000) (NNS years))
+          (PP (IN of)
+            (NP (JJ human) (NN wisdom))))
+        ('' '')))
+    (VP (VBP Are)
+      (S
+        (NP (PRP you))
+        (VP (VBG saying)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP are) (RB n't)
+                      (NP
+                        (NP (DT a) (NN part))
+                        (PP (IN of)
+                          (NP (JJ western) (NN civilization))))))))
+              (VP
+                (VP (VBP are) (RB n't)
+                  (ADJP (JJ wise)))
+                (, ,)
+                (CC or)
+                (VP (VBP are) (RB n't)
+                  (ADJP (JJ human)))))))))
+    (. ?)))
+
+nn(Civilization-3, Western-2)
+nsubj(Are-18, Civilization-3)
+num(years-6, 3000-5)
+conj_and(Civilization-3, years-6)
+nsubj(Are-18, years-6)
+prep_of(Civilization-3, wisdom-8)
+num(years-13, 3000-12)
+prep_vs.(Civilization-3, years-13)
+amod(wisdom-16, human-15)
+prep_of(years-13, wisdom-16)
+root(ROOT-0, Are-18)
+nsubj(saying-20, you-19)
+dep(Are-18, saying-20)
+complm(wise-33, that-21)
+nsubj(part-27, people-22)
+nsubj(wise-33, people-22)
+nsubj(human-38, people-22)
+cop(part-27, are-24)
+neg(part-27, n't-25)
+det(part-27, a-26)
+rcmod(people-22, part-27)
+amod(civilization-30, western-29)
+prep_of(part-27, civilization-30)
+cop(wise-33, are-31)
+neg(wise-33, n't-32)
+ccomp(saying-20, wise-33)
+cop(human-38, are-36)
+neg(human-38, n't-37)
+ccomp(saying-20, human-38)
+conj_or(wise-33, human-38)
+

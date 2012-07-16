@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT both) (NNS cases)))
+    (, ,)
+    (S
+      (NP (NNS choices))
+      (VP (VBP are)
+        (VP (VBN made))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (JJ future) (NN generation) (POS 's))
+        (JJ genetic) (NN make-up))
+      (VP (VBZ changes)
+        (PP (IN under)
+          (NP
+            (NP (DT the) (NNS processes))
+            (PP (IN of)
+              (NP (JJ heritable) (NN variation)
+                (CC and)
+                (NN selection)))))
+        (PRN (-LRB- -LRB-)
+          (PP (IN whether)
+            (ADJP
+              (ADJP (JJ natural))
+              (CC or)
+              (ADJP (`` ``) (JJ intelligent) ('' ''))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+det(cases-3, both-2)
+prep_in(made-7, cases-3)
+nsubjpass(made-7, choices-5)
+auxpass(made-7, are-6)
+root(ROOT-0, made-7)
+det(generation-11, the-9)
+amod(generation-11, future-10)
+poss(make-up-14, generation-11)
+amod(make-up-14, genetic-13)
+nsubj(changes-15, make-up-14)
+conj_and(made-7, changes-15)
+det(processes-18, the-17)
+prep_under(changes-15, processes-18)
+amod(variation-21, heritable-20)
+prep_of(processes-18, variation-21)
+prep_of(processes-18, selection-23)
+conj_and(variation-21, selection-23)
+dep(changes-15, whether-25)
+pobj(whether-25, natural-26)
+pobj(whether-25, intelligent-29)
+conj_or(natural-26, intelligent-29)
+

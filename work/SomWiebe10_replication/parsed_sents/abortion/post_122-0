@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Christian) (NNS leaders))
+      (PP (IN throughout)
+        (NP (NN history))))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN opposed)
+          (PP (TO to)
+            (NP
+              (NP
+                (NP (NN abortion))
+                (SBAR
+                  (S
+                    (NP (NNP Christianity))
+                    (VP (VBZ holds)
+                      (SBAR (IN that)
+                        (S
+                          (S
+                            (NP (DT a) (JJ human) (NN life))
+                            (VP (VBZ is)
+                              (NP (DT a) (JJ human) (NN life))))
+                          (CC and)
+                          (S
+                            (S
+                              (VP (VBG taking)
+                                (NP
+                                  (NP (DT a) (JJ human) (NN life))
+                                  (SBAR
+                                    (WHNP (WDT that))
+                                    (S
+                                      (VP (VBZ does) (RB not)
+                                        (VP (VB pose)
+                                          (NP (DT an) (JJ imminent) (NN threat))
+                                          (PP (TO to)
+                                            (NP (NNP yours))))))))))
+                            (VP (VBZ is)
+                              (ADJP (JJ wrong))))))))))
+              (, ,)
+              (ADVP (IN outside)
+                (PP (IN of)
+                  (NP (JJ legitimate) (NN war)
+                    (CC and)
+                    (NN capital) (NN punishment)))))))))
+    (. .)))
+
+amod(leaders-2, Christian-1)
+nsubjpass(opposed-7, leaders-2)
+prep_throughout(leaders-2, history-4)
+aux(opposed-7, have-5)
+auxpass(opposed-7, been-6)
+root(ROOT-0, opposed-7)
+prep_to(opposed-7, abortion-9)
+nsubj(holds-11, Christianity-10)
+rcmod(abortion-9, holds-11)
+complm(life-19, that-12)
+det(life-15, a-13)
+amod(life-15, human-14)
+nsubj(life-19, life-15)
+cop(life-19, is-16)
+det(life-19, a-17)
+amod(life-19, human-18)
+ccomp(holds-11, life-19)
+csubj(wrong-35, taking-21)
+det(life-24, a-22)
+amod(life-24, human-23)
+dobj(taking-21, life-24)
+nsubj(pose-28, life-24)
+aux(pose-28, does-26)
+neg(pose-28, not-27)
+rcmod(life-24, pose-28)
+det(threat-31, an-29)
+amod(threat-31, imminent-30)
+dobj(pose-28, threat-31)
+prep_to(pose-28, yours-33)
+cop(wrong-35, is-34)
+ccomp(holds-11, wrong-35)
+conj_and(life-19, wrong-35)
+amod(war-40, legitimate-39)
+prep_outside_of(abortion-9, war-40)
+nn(punishment-43, capital-42)
+prep_outside_of(abortion-9, punishment-43)
+conj_and(war-40, punishment-43)
+

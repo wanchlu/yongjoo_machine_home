@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (FRAG (IN If) (RB not))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN got)
+        (NP (NN nothing))))
+    (. .)))
+
+dep(got-6, If-1)
+neg(If-1, not-2)
+nsubj(got-6, I-4)
+aux(got-6, 've-5)
+root(ROOT-0, got-6)
+dobj(got-6, nothing-7)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (S
+                (VP (TO to)
+                  (VP (VB give)
+                    (NP (PRP me))
+                    (NP (DT a) (NN link))))))))))
+    (. .)))
+
+nsubj(going-3, You-1)
+xsubj(have-5, You-1)
+aux(going-3, 're-2)
+root(ROOT-0, going-3)
+aux(have-5, to-4)
+xcomp(going-3, have-5)
+aux(give-7, to-6)
+xcomp(have-5, give-7)
+iobj(give-7, me-8)
+det(link-10, a-9)
+dobj(give-7, link-10)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (NP (DT a) (JJ poli) (NN sci) (NN student)))
+    (. .)))
+
+cc(student-7, And-1)
+nsubj(student-7, I-2)
+cop(student-7, 'm-3)
+det(student-7, a-4)
+amod(student-7, poli-5)
+nn(student-7, sci-6)
+root(ROOT-0, student-7)
+

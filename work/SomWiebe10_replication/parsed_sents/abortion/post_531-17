@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (NP
+      (NP (VBG Banning) (NN abortion))
+      (PP (IN like)
+        (S
+          (VP (VBG banning)
+            (NP (JJ gay) (NN marriage))))))
+    (VP
+      (VP (VBZ is)
+        (NP (DT a)
+          (ADJP (RB very) (JJ slippery))
+          (NN slope)))
+      (CC and)
+      (VP (VBZ speeds)
+        (PRT (RP up))
+        (NP
+          (NP (DT the) (NN possibility))
+          (PP (IN of)
+            (NP (NNP America)))))
+      (S
+        (VP (VBG regressing)
+          (PP (IN into)
+            (NP
+              (NP (DT that))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (PRP we))
+                  (VP
+                    (VP (VBD fought))
+                    (CC and)
+                    (VP (VBP continue)
+                      (S
+                        (VP (TO to)
+                          (VP (VB fight)
+                            (ADJP (RB so) (JJ hard))
+                            (PP (IN against))))))))))))))
+    (. .)))
+
+amod(abortion-2, Banning-1)
+nsubj(slope-11, abortion-2)
+nsubj(speeds-13, abortion-2)
+prepc_like(abortion-2, banning-4)
+amod(marriage-6, gay-5)
+dobj(banning-4, marriage-6)
+cop(slope-11, is-7)
+det(slope-11, a-8)
+advmod(slippery-10, very-9)
+amod(slope-11, slippery-10)
+root(ROOT-0, slope-11)
+conj_and(slope-11, speeds-13)
+prt(speeds-13, up-14)
+det(possibility-16, the-15)
+dobj(speeds-13, possibility-16)
+prep_of(possibility-16, America-18)
+xcomp(slope-11, regressing-19)
+prep_into(regressing-19, that-21)
+dobj(fought-24, that-21)
+rel(fought-24, which-22)
+nsubj(fought-24, we-23)
+nsubj(continue-26, we-23)
+xsubj(fight-28, we-23)
+rcmod(that-21, fought-24)
+rcmod(that-21, continue-26)
+conj_and(fought-24, continue-26)
+aux(fight-28, to-27)
+xcomp(continue-26, fight-28)
+advmod(hard-30, so-29)
+acomp(fight-28, hard-30)
+prep(fight-28, against-31)
+

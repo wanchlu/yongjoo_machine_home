@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN evolution))
+        (VP (VBD were) (RB not)
+          (ADJP (JJ true))
+          (NP (RB then))
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (VP
+                (VP (MD could))
+                (PRN
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP explain)
+                      (NP (CD :1))))
+                  (-RRB- -RRB-))
+                (SBAR
+                  (WHADVP (WRB How))
+                  (S
+                    (NP (DT every) (JJ dating) (NN technique))
+                    (VP (VBD used)
+                      (S
+                        (VP (TO to)
+                          (VP (VB identify)
+                            (NP
+                              (NP (DT the) (NN age))
+                              (PP (IN of)
+                                (NP (DT the) (NNS fossils))))))))))))))))
+    (, ,)
+    (VP (VBN turned)
+      (PRT (RP up))
+      (NP (DT the) (JJ same) (NN result)))
+    (. ?)))
+
+mark(true-5, If-1)
+nsubj(true-5, evolution-2)
+cop(true-5, were-3)
+neg(true-5, not-4)
+advcl(turned-26, true-5)
+attr(true-5, then-6)
+advmod(could-8, how-7)
+dep(true-5, could-8)
+nsubj(explain-10, you-9)
+parataxis(could-8, explain-10)
+dobj(explain-10, :1-11)
+advmod(used-17, How-13)
+det(technique-16, every-14)
+amod(technique-16, dating-15)
+nsubj(used-17, technique-16)
+xsubj(identify-19, technique-16)
+ccomp(could-8, used-17)
+aux(identify-19, to-18)
+xcomp(used-17, identify-19)
+det(age-21, the-20)
+dobj(identify-19, age-21)
+det(fossils-24, the-23)
+prep_of(age-21, fossils-24)
+root(ROOT-0, turned-26)
+prt(turned-26, up-27)
+det(result-30, the-28)
+amod(result-30, same-29)
+dobj(turned-26, result-30)
+

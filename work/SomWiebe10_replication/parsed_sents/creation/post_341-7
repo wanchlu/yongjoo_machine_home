@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP (PRP we) (NNS observers))
+    (VP (VBP are)
+      (VP (VBN biased)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (PP (IN in)
+                (NP
+                  (NP (NNS locations))
+                  (SBAR
+                    (WHPP (IN in)
+                      (WHNP (WDT which)))
+                    (S
+                      (NP (PRP$ our) (NN existence))
+                      (VP (VBZ is) (RB not)
+                        (ADJP
+                          (ADJP (RB just) (JJ possible))
+                          (CC but)
+                          (ADJP
+                            (ADVP (RB also))
+                            (JJ likely))))))))
+              (PP (VBN given)
+                (NP (DT the) (NN environment))))))))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(biased-8, words-3)
+dep(observers-6, we-5)
+nsubjpass(biased-8, observers-6)
+xsubj(be-10, observers-6)
+auxpass(biased-8, are-7)
+root(ROOT-0, biased-8)
+aux(be-10, to-9)
+xcomp(biased-8, be-10)
+prep_in(be-10, locations-12)
+rel(possible-20, which-14)
+poss(existence-16, our-15)
+nsubj(possible-20, existence-16)
+nsubj(likely-23, existence-16)
+cop(possible-20, is-17)
+neg(possible-20, not-18)
+advmod(possible-20, just-19)
+rcmod(locations-12, possible-20)
+advmod(likely-23, also-22)
+rcmod(locations-12, likely-23)
+conj_but(possible-20, likely-23)
+prep(be-10, given-24)
+det(environment-26, the-25)
+dep(given-24, environment-26)
+

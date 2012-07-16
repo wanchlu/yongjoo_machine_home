@@ -1,0 +1,31 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP Psalm))
+      (VP (VBZ 150:6)))
+    (: :) (`` ``)
+    (S
+      (S
+        (VP (VB Let)
+          (NP
+            (NP (NN everything))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ has)
+                  (NP (NN breath))))))))
+      (VP (VBP praise)
+        (NP (DT the) (NN LORD))))
+    (. .)))
+
+nsubj(150:6-3, Psalm-2)
+root(ROOT-0, 150:6-3)
+csubj(praise-11, Let-6)
+dobj(Let-6, everything-7)
+nsubj(has-9, everything-7)
+rcmod(everything-7, has-9)
+dobj(has-9, breath-10)
+ccomp(150:6-3, praise-11)
+det(LORD-13, the-12)
+dobj(praise-11, LORD-13)
+

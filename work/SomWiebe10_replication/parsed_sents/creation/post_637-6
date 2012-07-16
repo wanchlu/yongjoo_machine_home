@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN content))
+      (PP (IN of)
+        (NP (NNP Pandas)))
+      (, ,)
+      (VP (VBN published)
+        (PP (IN by)
+          (NP (DT a) (JJ religious) (NN organization)))))
+    (VP (VBZ helps)
+      (S
+        (VP (VBG connecting)
+          (NP
+            (NP (DT the) (NN dots))
+            (, ,)
+            (PP (IN via)
+              (NP
+                (NP (DT the) (NNP Edwards) (NN ruling))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP
+                      (VP (VBD caused)
+                        (NP (DT a) (JJ global) (NN search)))
+                      (CC and)
+                      (VP (VB replace)
+                        (PP (IN of)
+                          (NP (JJ religious) (NN terminology)))))))))))))
+    (. .)))
+
+det(content-2, The-1)
+nsubj(helps-11, content-2)
+prep_of(content-2, Pandas-4)
+partmod(content-2, published-6)
+det(organization-10, a-8)
+amod(organization-10, religious-9)
+agent(published-6, organization-10)
+root(ROOT-0, helps-11)
+xcomp(helps-11, connecting-12)
+det(dots-14, the-13)
+dobj(connecting-12, dots-14)
+det(ruling-19, the-17)
+nn(ruling-19, Edwards-18)
+prep_via(dots-14, ruling-19)
+nsubj(caused-21, ruling-19)
+nsubj(replace-26, ruling-19)
+rcmod(ruling-19, caused-21)
+det(search-24, a-22)
+amod(search-24, global-23)
+dobj(caused-21, search-24)
+rcmod(ruling-19, replace-26)
+conj_and(caused-21, replace-26)
+amod(terminology-29, religious-28)
+prep_of(replace-26, terminology-29)
+

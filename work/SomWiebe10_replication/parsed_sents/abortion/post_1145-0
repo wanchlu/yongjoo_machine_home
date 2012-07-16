@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (SBAR (RB Even) (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBD were)
+          (VP (VBN raped)
+            (S
+              (NP (PRP it))
+              (ADVP (RB still)))))))
+    (NP
+      (NP (DT the) (NN killing))
+      (PP (IN of)
+        (NP (DT a) (NN living))))
+    (VP (VBZ human)
+      (NP
+        (NP (NN being))
+        (: ...)
+        (ADJP (RB still) (JJ wrong))))
+    (. .)))
+
+advmod(raped-5, Even-1)
+dep(raped-5, if-2)
+nsubjpass(raped-5, you-3)
+auxpass(raped-5, were-4)
+advcl(human-13, raped-5)
+dep(raped-5, it-6)
+advmod(it-6, still-7)
+det(killing-9, the-8)
+nsubj(human-13, killing-9)
+det(living-12, a-11)
+prep_of(killing-9, living-12)
+root(ROOT-0, human-13)
+dobj(human-13, being-14)
+advmod(wrong-17, still-16)
+amod(being-14, wrong-17)
+

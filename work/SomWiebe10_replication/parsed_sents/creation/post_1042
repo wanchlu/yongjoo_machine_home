@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN flu) (NN virus))
+      (VP (VBZ does) (RB n't)
+        (VP (VB evolve))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ mutates))
+    (. .)))
+
+det(virus-3, The-1)
+nn(virus-3, flu-2)
+nsubj(evolve-6, virus-3)
+aux(evolve-6, does-4)
+neg(evolve-6, n't-5)
+ccomp(mutates-9, evolve-6)
+nsubj(mutates-9, it-8)
+root(ROOT-0, mutates-9)
+
+(ROOT
+  (S
+    (NP (NN Mutation)
+      (CC and)
+      (NN evolution))
+    (VP (VBP are)
+      (NP (CD two) (JJ different) (NNS things)))
+    (. .)))
+
+nsubj(things-7, Mutation-1)
+conj_and(Mutation-1, evolution-3)
+nsubj(things-7, evolution-3)
+cop(things-7, are-4)
+num(things-7, two-5)
+amod(things-7, different-6)
+root(ROOT-0, things-7)
+
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ has)
+      (ADVP (RB never))
+      (VP (VBN been)
+        (VP (VBN witnessed)
+          (S
+            (VP (VBG happening))))))
+    (. .)))
+
+nsubjpass(witnessed-5, Evolution-1)
+aux(witnessed-5, has-2)
+neg(witnessed-5, never-3)
+auxpass(witnessed-5, been-4)
+root(ROOT-0, witnessed-5)
+xcomp(witnessed-5, happening-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Scientists))
+      (PP (IN in)
+        (NP
+          (NP (NN support))
+          (PP (IN of)
+            (NP (NN evolution))))))
+    (ADVP (RB even))
+    (VP (VBP state)
+      (NP (DT that)))
+    (. .)))
+
+nsubj(state-7, Scientists-1)
+prep_in(Scientists-1, support-3)
+prep_of(support-3, evolution-5)
+advmod(state-7, even-6)
+root(ROOT-0, state-7)
+dobj(state-7, that-8)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN theory))
+          (PP (IN with)
+            (NP (DT a) (JJ good) (NN argument))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP (DT a) (NN theory) (NNS none-the-less))))
+    (. .)))
+
+nsubj(theory-4, Evolution-1)
+cop(theory-4, is-2)
+det(theory-4, a-3)
+root(ROOT-0, theory-4)
+det(argument-8, a-6)
+amod(argument-8, good-7)
+prep_with(theory-4, argument-8)
+nsubj(none-the-less-15, it-11)
+cop(none-the-less-15, is-12)
+det(none-the-less-15, a-13)
+nn(none-the-less-15, theory-14)
+conj_but(theory-4, none-the-less-15)
+

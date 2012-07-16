@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB love)
+        (S
+          (VP (TO to)
+            (VP (VB discuss)
+              (PP (IN with)
+                (NP (DT some) (NNP ID) (NNS proponents)))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP consider)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (NP
+                            (NP
+                              (NP (NNP ID) (POS 's))
+                              (ADJP (RBS most) (JJ impressive))
+                              (NN contribution))
+                            (PP (TO to)
+                              (NP (DT the) (NN cause)))))))))))))))
+    (. .)))
+
+nsubj(love-3, I-1)
+xsubj(discuss-5, I-1)
+aux(love-3, 'd-2)
+root(ROOT-0, love-3)
+aux(discuss-5, to-4)
+xcomp(love-3, discuss-5)
+det(proponents-9, some-7)
+nn(proponents-9, ID-8)
+prep_with(discuss-5, proponents-9)
+dep(consider-12, what-10)
+nsubj(consider-12, they-11)
+xsubj(contribution-19, they-11)
+ccomp(discuss-5, consider-12)
+aux(contribution-19, to-13)
+cop(contribution-19, be-14)
+poss(contribution-19, ID-15)
+advmod(impressive-18, most-17)
+amod(contribution-19, impressive-18)
+xcomp(consider-12, contribution-19)
+det(cause-22, the-21)
+prep_to(contribution-19, cause-22)
+

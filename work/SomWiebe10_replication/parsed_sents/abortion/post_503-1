@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP pay)
+          (NP (PRP$ their) (JJ electric) (NN bill)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN money))
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBN budgeted)
+            (PP (IN for)
+              (NP (PRP it)))))))
+    (VP (MD can)
+      (ADVP (RB now))
+      (VP (VB be)
+        (VP (VBN used)
+          (PP (IN for)
+            (NP (NN anything)))
+          (, ,)
+          (PP (VBG including)
+            (NP (NNS abortions))))))
+    (. .)))
+
+mark(pay-3, If-1)
+nsubj(pay-3, we-2)
+advcl(used-17, pay-3)
+poss(bill-6, their-4)
+amod(bill-6, electric-5)
+dobj(pay-3, bill-6)
+det(money-9, the-8)
+dobj(budgeted-11, money-9)
+nsubjpass(used-17, money-9)
+nsubj(budgeted-11, they-10)
+rcmod(money-9, budgeted-11)
+prep_for(budgeted-11, it-13)
+aux(used-17, can-14)
+advmod(used-17, now-15)
+auxpass(used-17, be-16)
+root(ROOT-0, used-17)
+prep_for(used-17, anything-19)
+prep_including(used-17, abortions-22)
+

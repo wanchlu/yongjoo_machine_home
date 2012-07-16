@@ -1,0 +1,66 @@
+(ROOT
+  (INTJ (UH Yeah) (. .)))
+
+root(ROOT-0, Yeah-1)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP they))
+    (VP
+      (VP (VBP catch)
+        (PP (IN like)
+          (NP (PDT all) (DT the) (NNS rapists))))
+      (, ,)
+      (CC and)
+      (ADVP (RB always))
+      (VP (VBP hold)
+        (S
+          (NP (PRP them))
+          (ADJP (JJ responsible)))))
+    (. .)))
+
+nsubj(catch-3, they-2)
+nsubj(hold-11, they-2)
+root(ROOT-0, catch-3)
+predet(rapists-7, all-5)
+det(rapists-7, the-6)
+prep_like(catch-3, rapists-7)
+advmod(catch-3, always-10)
+conj_and(catch-3, always-10)
+conj_and(catch-3, hold-11)
+nsubj(responsible-13, them-12)
+xcomp(hold-11, responsible-13)
+
+(ROOT
+  (S
+    (S
+      (NP (-LRB- -LRB-) (NNP Sarcasm) (-RRB- -RRB-))
+      (SBAR (RB Even) (IN if)
+        (S
+          (NP (PRP they))
+          (VP (VB catch)
+            (NP (DT the) (NNS rapists))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBZ incarcerate)
+      (NP (PRP them)))
+    (. .)))
+
+dep(catch-7, Sarcasm-2)
+advmod(catch-7, Even-4)
+dep(catch-7, if-5)
+nsubj(catch-7, they-6)
+ccomp(incarcerate-12, catch-7)
+det(rapists-9, the-8)
+dobj(catch-7, rapists-9)
+nsubj(incarcerate-12, they-11)
+root(ROOT-0, incarcerate-12)
+dobj(incarcerate-12, them-13)
+
+(ROOT
+  (NP (RB So) (DT no) (NN income) (. .)))
+
+advmod(income-3, So-1)
+det(income-3, no-2)
+root(ROOT-0, income-3)
+

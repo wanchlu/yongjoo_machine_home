@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP One))
+    (VP (MD could) (, ,)
+      (PP (IN by)
+        (NP (DT the) (JJ exact) (JJ same) (NN reasoning)))
+      (, ,)
+      (VP (VB argue)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NN everything))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (MD can)
+                    (VP (VB build)
+                      (NP (JJ complex) (NNS machines)))))))
+            (VP (MD must)
+              (VP (VB have)
+                (NP (JJ large) (, ,) (JJ complex) (, ,) (JJ biological) (NNS brains))))))))
+    (. .)))
+
+nsubj(argue-10, One-1)
+aux(argue-10, could-2)
+det(reasoning-8, the-5)
+amod(reasoning-8, exact-6)
+amod(reasoning-8, same-7)
+prep_by(argue-10, reasoning-8)
+root(ROOT-0, argue-10)
+complm(have-19, that-11)
+nsubj(build-15, everything-12)
+nsubj(have-19, everything-12)
+aux(build-15, can-14)
+rcmod(everything-12, build-15)
+amod(machines-17, complex-16)
+dobj(build-15, machines-17)
+aux(have-19, must-18)
+ccomp(argue-10, have-19)
+amod(brains-25, large-20)
+amod(brains-25, complex-22)
+amod(brains-25, biological-24)
+dobj(have-19, brains-25)
+

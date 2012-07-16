@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB only))
+    (VP (VBP need)
+      (S
+        (NP (CD one) (NN sentence))
+        (VP (TO to)
+          (VP (VB reply)
+            (PP (TO to)
+              (NP
+                (NP (DT this))
+                (: :)
+                (SQ (MD Can)
+                  (NP
+                    (NP (DT the) (NN existence))
+                    (PP (IN of)
+                      (NP (DT a) (NN designer))))
+                  (VP (VB be)
+                    (VP (VBN verified)
+                      (PP (IN by)
+                        (NP (DT the) (JJ scientific) (NN method))))))))))))
+    (. ?)))
+
+nsubj(need-3, I-1)
+advmod(need-3, only-2)
+root(ROOT-0, need-3)
+num(sentence-5, one-4)
+nsubj(reply-7, sentence-5)
+aux(reply-7, to-6)
+xcomp(need-3, reply-7)
+prep_to(reply-7, this-9)
+aux(verified-18, Can-11)
+det(existence-13, the-12)
+nsubjpass(verified-18, existence-13)
+det(designer-16, a-15)
+prep_of(existence-13, designer-16)
+auxpass(verified-18, be-17)
+dep(this-9, verified-18)
+det(method-22, the-20)
+amod(method-22, scientific-21)
+agent(verified-18, method-22)
+
+(ROOT
+  (S
+    (ADVP (RB Oh))
+    (NP (PRP it))
+    (VP (MD ca) (RB n't))
+    (. ?)))
+
+advmod(ca-3, Oh-1)
+nsubj(ca-3, it-2)
+root(ROOT-0, ca-3)
+neg(ca-3, n't-4)
+
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (VP (VB darn))
+    (. .)))
+
+dep(darn-2, Oh-1)
+root(ROOT-0, darn-2)
+

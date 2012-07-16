@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Irons))
+      (VP (VBZ s)
+        (SBAR
+          (S
+            (NP (JJ factual) (NNS errors))
+            (VP (VBP are)
+              (ADJP (RB too) (JJ numerous)
+                (PP (TO to)
+                  (NP (NN catalog))))))
+          (, ,)
+          (CC but)
+          (S
+            (NP (PRP we))
+            (VP (VB highlight)
+              (NP
+                (NP (DT some))
+                (PP (IN of)
+                  (NP (DT the)
+                    (ADJP (RBS most) (JJ egregious))))))))))
+    (: :)
+    (S
+      (NP (NNP Irons))
+      (ADVP (RB incorrectly))
+      (VP (VBZ conflates)
+        (NP (NNP ID) (NNS proponents))
+        (PP (IN with)
+          (NP (JJ biblical) (NNS creationists)))))
+    (. .)))
+
+nsubj(s-2, Irons-1)
+root(ROOT-0, s-2)
+amod(errors-4, factual-3)
+nsubj(numerous-7, errors-4)
+cop(numerous-7, are-5)
+advmod(numerous-7, too-6)
+ccomp(s-2, numerous-7)
+prep_to(numerous-7, catalog-9)
+nsubj(highlight-13, we-12)
+ccomp(s-2, highlight-13)
+conj_but(numerous-7, highlight-13)
+dobj(highlight-13, some-14)
+det(egregious-18, the-16)
+advmod(egregious-18, most-17)
+prep_of(some-14, egregious-18)
+nsubj(conflates-22, Irons-20)
+advmod(conflates-22, incorrectly-21)
+parataxis(s-2, conflates-22)
+nn(proponents-24, ID-23)
+dobj(conflates-22, proponents-24)
+amod(creationists-27, biblical-26)
+prep_with(conflates-22, creationists-27)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (ADVP (RB wrongly))
+    (VP (VBZ implies)
+      (SBAR (IN that)
+        (S
+          (NP (NNP ID))
+          (VP (MD must)
+            (VP (VB reject)
+              (NP (JJ common) (NN ancestry)))))))
+    (. .)))
+
+nsubj(implies-3, He-1)
+advmod(implies-3, wrongly-2)
+root(ROOT-0, implies-3)
+complm(reject-7, that-4)
+nsubj(reject-7, ID-5)
+aux(reject-7, must-6)
+ccomp(implies-3, reject-7)
+amod(ancestry-9, common-8)
+dobj(reject-7, ancestry-9)
+

@@ -1,0 +1,61 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP (PRP I))
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (VP (VBD ???)
+              (SBAR
+                (S
+                  (NP (PRP It))
+                  (VP (VBD was)
+                    (NP
+                      (NP (NNP Livvy))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (ADVP (RB originally))
+                          (VP (VBD said)
+                            (NP (PRP it))))))))))))))
+    (. .)))
+
+advmod(say-4, Where-1)
+aux(say-4, did-2)
+nsubj(say-4, I-3)
+root(ROOT-0, say-4)
+complm(???-6, that-5)
+ccomp(say-4, ???-6)
+nsubj(Livvy-9, It-7)
+cop(Livvy-9, was-8)
+ccomp(???-6, Livvy-9)
+nsubj(said-12, Livvy-9)
+advmod(said-12, originally-11)
+rcmod(Livvy-9, said-12)
+dobj(said-12, it-13)
+
+(ROOT
+  (S (CC Or)
+    (NP (NN convection))
+    (VP
+      (VP (VBZ currents))
+      (, ,)
+      (CC or)
+      (VP
+        (PP (IN towards)
+          (NP
+            (NP (DT the) (NN earth) (POS 's))
+            (NN core)))
+        (, ,)
+        (ADVP (CC or))))
+    (: ...)))
+
+nsubj(currents-3, convection-2)
+root(ROOT-0, currents-3)
+conj_or(currents-3, towards-6)
+det(earth-8, the-7)
+poss(core-10, earth-8)
+pobj(towards-6, core-10)
+advmod(towards-6, or-12)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ means)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NNS scientists))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP hold)
+                  (NP (JJ legitimate) (JJ scientific) (NNS views))))))
+          (VP (VBP deserve)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN heard)
+                    (SBAR (RB even) (IN if)
+                      (S
+                        (NP (PRP$ their) (NNS views))
+                        (VP (VBP differ)
+                          (PP (IN from)
+                            (NP (DT the) (NN consensus))))))))))))))
+    (. .)))
+
+nsubj(means-4, It-2)
+advmod(means-4, also-3)
+root(ROOT-0, means-4)
+complm(deserve-12, that-5)
+nsubj(hold-8, scientists-6)
+nsubj(deserve-12, scientists-6)
+xsubj(heard-15, scientists-6)
+rcmod(scientists-6, hold-8)
+amod(views-11, legitimate-9)
+amod(views-11, scientific-10)
+dobj(hold-8, views-11)
+ccomp(means-4, deserve-12)
+aux(heard-15, to-13)
+auxpass(heard-15, be-14)
+xcomp(deserve-12, heard-15)
+advmod(differ-20, even-16)
+dep(differ-20, if-17)
+poss(views-19, their-18)
+nsubj(differ-20, views-19)
+ccomp(heard-15, differ-20)
+det(consensus-23, the-22)
+prep_from(differ-20, consensus-23)
+

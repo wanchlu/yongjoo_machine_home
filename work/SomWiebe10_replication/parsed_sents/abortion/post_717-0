@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ looks)
+      (SBAR (IN like)
+        (S
+          (NP (PRP we))
+          (VP (VBP agree)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT the) (NN emotion))
+                  (PP (IN of)
+                    (NP (DT the) (NN mother))))
+                (VP (VBZ does) (RB not)
+                  (VP (VB change)
+                    (SBAR (IN whether)
+                      (S
+                        (NP
+                          (NP (DT the) (NN act))
+                          (PP (IN of)
+                            (NP (NN abortion))))
+                        (VP (VBZ is)
+                          (ADJP (JJ right)
+                            (CC or)
+                            (JJ wrong)))))))))))))
+    (. .)))
+
+nsubj(looks-2, It-1)
+root(ROOT-0, looks-2)
+mark(agree-5, like-3)
+nsubj(agree-5, we-4)
+advcl(looks-2, agree-5)
+complm(change-14, that-6)
+det(emotion-8, the-7)
+nsubj(change-14, emotion-8)
+det(mother-11, the-10)
+prep_of(emotion-8, mother-11)
+aux(change-14, does-12)
+neg(change-14, not-13)
+ccomp(agree-5, change-14)
+complm(right-21, whether-15)
+det(act-17, the-16)
+nsubj(right-21, act-17)
+nsubj(wrong-23, act-17)
+prep_of(act-17, abortion-19)
+cop(right-21, is-20)
+ccomp(change-14, right-21)
+ccomp(change-14, wrong-23)
+conj_or(right-21, wrong-23)
+

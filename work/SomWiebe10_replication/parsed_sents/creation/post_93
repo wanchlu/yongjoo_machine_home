@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (ADJP (JJ tired)
+            (PP (IN of)
+              (S
+                (VP (VBG debating)
+                  (NP (NNS Pandas)))))))))
+    (, ,)
+    (VP (VB fine))
+    (. .)))
+
+mark(tired-4, If-1)
+nsubj(tired-4, you-2)
+cop(tired-4, 're-3)
+advcl(fine-9, tired-4)
+prepc_of(tired-4, debating-6)
+dobj(debating-6, Pandas-7)
+root(ROOT-0, fine-9)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ Explain)
+      (PP (TO to)
+        (NP (PRP me))))
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP
+          (NP (NNS rules))
+          (PP (IN of)
+            (NP (NN science) (NN ID))))
+        (VP (VBZ violates))))
+    (. .)))
+
+root(ROOT-0, Explain-1)
+prep_to(Explain-1, me-3)
+dobj(violates-9, what-4)
+nsubj(violates-9, rules-5)
+nn(ID-8, science-7)
+prep_of(rules-5, ID-8)
+dep(Explain-1, violates-9)
+

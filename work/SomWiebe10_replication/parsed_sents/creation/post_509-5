@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (NNP Pro) (NNP ID) (NNS scholars))
+    (VP (VBP have)
+      (VP (VBN published)
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (DT a))
+            (NN decade))
+          (PP (IN of)
+            (NP (NN scholarship))))
+        (PP (IN in)
+          (NP
+            (NP (JJ reputable) (JJ academic) (NNS books)
+              (CC and)
+              (NNS journals))
+            (PP (IN about)
+              (NP
+                (NP (DT the) (JJ empirical) (NN evidence))
+                (VP (VBG supporting)
+                  (NP (NN design)))))))))
+    (. .)))
+
+nn(scholars-3, Pro-1)
+nn(scholars-3, ID-2)
+nsubj(published-5, scholars-3)
+aux(published-5, have-4)
+root(ROOT-0, published-5)
+mwe(than-7, more-6)
+quantmod(a-8, than-7)
+num(decade-9, a-8)
+dobj(published-5, decade-9)
+prep_of(decade-9, scholarship-11)
+amod(books-15, reputable-13)
+amod(books-15, academic-14)
+prep_in(published-5, books-15)
+prep_in(published-5, journals-17)
+conj_and(books-15, journals-17)
+det(evidence-21, the-19)
+amod(evidence-21, empirical-20)
+prep_about(books-15, evidence-21)
+partmod(evidence-21, supporting-22)
+dobj(supporting-22, design-23)
+

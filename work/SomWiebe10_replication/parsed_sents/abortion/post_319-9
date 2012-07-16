@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (DT A) (NN woman))
+    (VP (VBZ gets)
+      (NP
+        (NP (DT an) (NN abortion))
+        (PP (IN for)
+          (NP
+            (NP (JJ many) (NNS reasons))
+            (: ...) (RB mainly)
+            (NP
+              (ADVP (RB though))
+              (, ,)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ 's)
+                    (ADJP (JJ inconvenient)
+                      (PP (IN for)
+                        (NP (PRP her))))
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (JJ pregnant)))))))))))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(gets-3, woman-2)
+root(ROOT-0, gets-3)
+det(abortion-5, an-4)
+dobj(gets-3, abortion-5)
+amod(reasons-8, many-7)
+prep_for(abortion-5, reasons-8)
+advmod(reasons-8, mainly-10)
+dep(reasons-8, though-11)
+mark(inconvenient-16, because-13)
+nsubj(inconvenient-16, it-14)
+xsubj(pregnant-21, it-14)
+cop(inconvenient-16, 's-15)
+dep(though-11, inconvenient-16)
+prep_for(inconvenient-16, her-18)
+aux(pregnant-21, to-19)
+cop(pregnant-21, be-20)
+xcomp(inconvenient-16, pregnant-21)
+

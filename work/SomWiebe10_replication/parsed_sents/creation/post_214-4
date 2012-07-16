@@ -1,0 +1,135 @@
+(ROOT
+  (NP
+    (NP (NNP Paul) (NNP Nelson) (, ,) (NNP Touchstone) (NNP Magazine) (CD 7\/8))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 2004))
+      (-RRB- -RRB-))
+    (: :)
+    (NP
+      (NP (NN pp))
+      (NP
+        (QP (CD 64) (CD 65))))
+    (. .)))
+
+nn(Magazine-5, Paul-1)
+nn(Magazine-5, Nelson-2)
+appos(Magazine-5, Touchstone-4)
+root(ROOT-0, Magazine-5)
+num(Magazine-5, 7\/8-6)
+appos(Magazine-5, 2004-8)
+dep(Magazine-5, pp-11)
+number(65-13, 64-12)
+dep(pp-11, 65-13)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RBR More) (RB recently))
+      (, ,)
+      (NP
+        (NP (NN godfather))
+        (PP (IN of)
+          (NP
+            (NP (NNP ID))
+            (, ,)
+            (NP (NN lawyer) (NNP Phil) (NNP Johnson)))))
+      (VP (VBZ has)
+        (VP (VBN stated))))
+    (: --)
+    (S
+      (NP (PRP I))
+      (ADVP (RB also))
+      (VP (VB don)
+        (SBAR
+          (S
+            (NP (NN t))
+            (VP (VBP think)
+              (SBAR (IN that)
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (ADVP (RB really))
+                    (NP
+                      (NP
+                        (NP (DT a) (NN theory))
+                        (PP (IN of)
+                          (NP
+                            (NP (JJ intelligent) (NN design))
+                            (PP (IN at)
+                              (NP (DT the) (JJ present) (NN time)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB propose)
+                                      (PP (IN as)
+                                        (NP (DT a) (JJ comparable) (NN alternative)))
+                                      (PP (TO to)
+                                        (NP
+                                          (NP (DT the) (JJ Darwinian) (NN theory))
+                                          (, ,)
+                                          (SBAR
+                                            (WHNP (WDT which))
+                                            (S
+                                              (VP (VBZ is)))))))))))))
+                        (, ,)
+                        (SBAR
+                          (WHNP (WDT whatever))
+                          (S
+                            (VP (VBD errors)
+                              (SBAR
+                                (S
+                                  (NP (PRP it))
+                                  (VP (MD might)
+                                    (VP (VB contain)))))))))
+                      (, ,)
+                      (NP (DT a)
+                        (ADJP (RB fully) (VBN worked))
+                        (ADJP (RB out))
+                        (NN scheme)))))))))))
+    (. .)))
+
+advmod(recently-2, More-1)
+advmod(stated-12, recently-2)
+nsubj(stated-12, godfather-4)
+prep_of(godfather-4, ID-6)
+nn(Johnson-10, lawyer-8)
+nn(Johnson-10, Phil-9)
+appos(ID-6, Johnson-10)
+aux(stated-12, has-11)
+root(ROOT-0, stated-12)
+nsubj(don-16, I-14)
+advmod(don-16, also-15)
+parataxis(stated-12, don-16)
+nsubj(think-18, t-17)
+ccomp(don-16, think-18)
+complm(is-21, that-19)
+expl(is-21, there-20)
+ccomp(think-18, is-21)
+advmod(is-21, really-22)
+det(theory-24, a-23)
+nsubj(is-21, theory-24)
+nsubj(errors-47, theory-24)
+amod(design-27, intelligent-26)
+prep_of(theory-24, design-27)
+det(time-31, the-29)
+amod(time-31, present-30)
+prep_at(design-27, time-31)
+aux(propose-33, to-32)
+infmod(time-31, propose-33)
+det(alternative-37, a-35)
+amod(alternative-37, comparable-36)
+prep_as(propose-33, alternative-37)
+det(theory-41, the-39)
+amod(theory-41, Darwinian-40)
+prep_to(propose-33, theory-41)
+nsubj(is-44, theory-41)
+rcmod(theory-41, is-44)
+rcmod(theory-24, errors-47)
+nsubj(contain-50, it-48)
+aux(contain-50, might-49)
+ccomp(errors-47, contain-50)
+det(scheme-56, a-52)
+advmod(worked-54, fully-53)
+amod(scheme-56, worked-54)
+amod(scheme-56, out-55)
+appos(theory-24, scheme-56)
+

@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ is)
+          (ADVP (RB ever))
+          (VP (VBN adopted)
+            (PP (IN by)
+              (NP
+                (NP (DT the) (NN majority))
+                (PP (IN of)
+                  (NP (NNS scientists)))))))))
+    (, ,)
+    (NP (NN history))
+    (VP (MD will)
+      (VP (VB make)
+        (S
+          (NP (NNP anti) (NNP IDists))
+          (VP (VB eat)
+            (NP (PRP$ their) (JJ own) (NNS feet))))))
+    (. .)))
+
+mark(adopted-5, If-1)
+nsubjpass(adopted-5, ID-2)
+auxpass(adopted-5, is-3)
+advmod(adopted-5, ever-4)
+advcl(make-14, adopted-5)
+det(majority-8, the-7)
+agent(adopted-5, majority-8)
+prep_of(majority-8, scientists-10)
+nsubj(make-14, history-12)
+aux(make-14, will-13)
+root(ROOT-0, make-14)
+nn(IDists-16, anti-15)
+nsubj(eat-17, IDists-16)
+ccomp(make-14, eat-17)
+poss(feet-20, their-18)
+amod(feet-20, own-19)
+dobj(eat-17, feet-20)
+

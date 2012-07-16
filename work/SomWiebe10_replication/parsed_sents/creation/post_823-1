@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (DT All) (NN evidence))
+    (VP (VBZ points)
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN accretion))
+          (PP (IN of)
+            (NP (NN material)))))
+      (PP (IN over)
+        (NP
+          (NP (DT the) (NN course))
+          (PP (IN of)
+            (NP
+              (NP (NNS millions))
+              (PP (IN of)
+                (NP
+                  (NP (NNS years) (JJ several))
+                  (VP (VBG starting)
+                    (PRT (RP around))
+                    (ADVP
+                      (NP
+                        (QP (CD 4) (CD billion))
+                        (NNS years))
+                      (RB ago))))))))))
+    (. .)))
+
+det(evidence-2, All-1)
+nsubj(points-3, evidence-2)
+root(ROOT-0, points-3)
+det(accretion-6, a-5)
+prep_to(points-3, accretion-6)
+prep_of(accretion-6, material-8)
+det(course-11, the-10)
+prep_over(points-3, course-11)
+prep_of(course-11, millions-13)
+prep_of(millions-13, years-15)
+amod(years-15, several-16)
+partmod(years-15, starting-17)
+prt(starting-17, around-18)
+number(billion-20, 4-19)
+num(years-21, billion-20)
+npadvmod(ago-22, years-21)
+advmod(starting-17, ago-22)
+

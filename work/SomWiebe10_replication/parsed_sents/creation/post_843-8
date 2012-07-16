@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS scientists))
+        (VP (VBD were)
+          (VP (VBG making)
+            (NP (JJ bad) (NNS assumptions))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD would)
+      (VP (VB expect)
+        (NP (JJ independent) (JJ dating) (NNS methods))
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (PRP us))
+              (NP
+                (NP
+                  (ADJP (RB wildly) (JJ conflicting))
+                  (NNS results))
+                (, ,)
+                (ADJP (RB yet) (JJ independent)))
+              (S
+                (VP (VBG dating)
+                  (NP
+                    (NP (NNS methods))
+                    (SBAR
+                      (S
+                        (NP (DT all))
+                        (VP (VBP agree))))))))))))
+    (. .)))
+
+mark(making-4, If-1)
+nsubj(making-4, scientists-2)
+aux(making-4, were-3)
+advcl(expect-10, making-4)
+amod(assumptions-6, bad-5)
+dobj(making-4, assumptions-6)
+nsubj(expect-10, we-8)
+aux(expect-10, would-9)
+root(ROOT-0, expect-10)
+amod(methods-13, independent-11)
+amod(methods-13, dating-12)
+dobj(expect-10, methods-13)
+aux(give-15, to-14)
+xcomp(expect-10, give-15)
+iobj(give-15, us-16)
+advmod(conflicting-18, wildly-17)
+amod(results-19, conflicting-18)
+dobj(give-15, results-19)
+advmod(independent-22, yet-21)
+amod(results-19, independent-22)
+xcomp(give-15, dating-23)
+dobj(dating-23, methods-24)
+dobj(agree-26, methods-24)
+nsubj(agree-26, all-25)
+rcmod(methods-24, agree-26)
+

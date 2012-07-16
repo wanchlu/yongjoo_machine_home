@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (DT The) (NN case))
+    (VP (VBZ involves)
+      (NP
+        (NP (DT an) (NN example))
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT which)))
+          (S
+            (NP (DT a) (JJ religious) (NN person))
+            (VP (VBD was)
+              (VP (VBN bitten)
+                (PP (IN by)
+                  (NP (DT a) (NN snake)))))))))
+    (. .)))
+
+det(case-2, The-1)
+nsubj(involves-3, case-2)
+root(ROOT-0, involves-3)
+det(example-5, an-4)
+dobj(involves-3, example-5)
+rel(bitten-12, which-7)
+det(person-10, a-8)
+amod(person-10, religious-9)
+nsubjpass(bitten-12, person-10)
+auxpass(bitten-12, was-11)
+rcmod(example-5, bitten-12)
+det(snake-15, a-14)
+agent(bitten-12, snake-15)
+

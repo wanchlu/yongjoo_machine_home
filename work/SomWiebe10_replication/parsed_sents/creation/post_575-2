@@ -1,0 +1,59 @@
+(ROOT
+  (S (`` ``)
+    (UCP
+      (PP (RB instead) (IN of)
+        (NP
+          (NP (DT a) (`` ``) (NN bolt))
+          (PP (IN of)
+            (NP
+              (NP (NN lightning))
+              (VP (VBG hitting)
+                (NP
+                  (NP (DT a) (NN pool))
+                  (PP (IN of)
+                    (NP (NNS chemicals)))))))))
+      (CC and)
+      (S
+        (VP (VBG making)
+          (NP (DT a) (NN cell) (NN pop))
+          (PRT (RP out)))))
+    ('' '')
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP
+        (NP
+          (ADJP (RBS most) (JJ likely))
+          (DT a) (JJ slow) (NN process))
+        (VP (VBG taking)
+          (NP
+            (NP (NN place))
+            (PP (IN along)
+              (NP (DT the) (JJ ancient) (NNS shores)))))))
+    (. .)))
+
+det(bolt-6, a-4)
+prep_instead_of(process-27, bolt-6)
+prep_of(bolt-6, lightning-8)
+partmod(lightning-8, hitting-9)
+det(pool-11, a-10)
+dobj(hitting-9, pool-11)
+prep_of(pool-11, chemicals-13)
+conj_and(process-27, making-15)
+det(pop-18, a-16)
+nn(pop-18, cell-17)
+dobj(making-15, pop-18)
+prt(making-15, out-19)
+nsubj(making-15, it-21)
+nsubj(process-27, it-21)
+cop(process-27, was-22)
+advmod(likely-24, most-23)
+amod(process-27, likely-24)
+det(process-27, a-25)
+amod(process-27, slow-26)
+root(ROOT-0, process-27)
+partmod(process-27, taking-28)
+dobj(taking-28, place-29)
+det(shores-33, the-31)
+amod(shores-33, ancient-32)
+prep_along(place-29, shores-33)
+

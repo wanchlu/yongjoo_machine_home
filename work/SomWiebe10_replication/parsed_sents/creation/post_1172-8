@@ -1,0 +1,36 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NNS males))
+        (VP (VBD came)
+          (PP (IN before)
+            (NP (DT the) (NNS females))))))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (NNS males))
+        (PP (IN of)
+          (NP (DT each) (NN species))))
+      (VP (VB appear)
+        (PP (IN without)
+          (NP (DT the) (NNS females)))))
+    (. ?)))
+
+mark(came-4, If-1)
+det(males-3, the-2)
+nsubj(came-4, males-3)
+advcl(appear-16, came-4)
+det(females-7, the-6)
+prep_before(came-4, females-7)
+advmod(appear-16, how-9)
+aux(appear-16, did-10)
+det(males-12, the-11)
+nsubj(appear-16, males-12)
+det(species-15, each-14)
+prep_of(males-12, species-15)
+root(ROOT-0, appear-16)
+det(females-19, the-18)
+prep_without(appear-16, females-19)
+

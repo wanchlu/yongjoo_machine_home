@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP
+      (ADJP (RB Very) (JJ primitive))
+      (NNS books))
+    (VP (VBN written)
+      (PP (IN by)
+        (NP
+          (NP (NNS humans))
+          (PP (IN for)
+            (NP (NNS humans)))))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN region))
+          (PP (IN of)
+            (NP (DT the) (NN world)))))
+      (SBAR (IN that)
+        (S
+          (PP (IN around)
+            (NP (DT the) (JJ current) (NNP Israel)))
+          (NP
+            (NP (DT that) (NN record))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (DT these) (JJ primitive) (NNS people))
+                (VP (VBD viewed)
+                  (NP (DT the) (NN universe))))))
+          (VP (VBZ is)
+            (ADJP
+              (ADJP (NN nothing) (JJR more))
+              (PP (IN than)
+                (NP (JJ interesting) (NN history))))))))
+    (. .)))
+
+advmod(primitive-2, Very-1)
+amod(books-3, primitive-2)
+nsubj(written-4, books-3)
+root(ROOT-0, written-4)
+prep_by(written-4, humans-6)
+prep_for(humans-6, humans-8)
+det(region-11, the-10)
+prep_in(written-4, region-11)
+det(world-14, the-13)
+prep_of(region-11, world-14)
+complm(nothing-30, that-15)
+det(Israel-19, the-17)
+amod(Israel-19, current-18)
+prep_around(nothing-30, Israel-19)
+det(record-21, that-20)
+nsubj(nothing-30, record-21)
+advmod(viewed-26, how-22)
+det(people-25, these-23)
+amod(people-25, primitive-24)
+nsubj(viewed-26, people-25)
+dep(record-21, viewed-26)
+det(universe-28, the-27)
+dobj(viewed-26, universe-28)
+cop(nothing-30, is-29)
+ccomp(written-4, nothing-30)
+dep(nothing-30, more-31)
+amod(history-34, interesting-33)
+prep_than(nothing-30, history-34)
+

@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (NNP Modern) (NNS faiths))
+    (VP (MD may)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB adapt)
+              (S
+                (NP (PRP themselves))
+                (VP (TO to)
+                  (VP (VB take)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN view))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT the) (NN world))
+                            (VP (VBN defined)
+                              (PP (IN by)
+                                (NP
+                                  (NP (NN science))
+                                  (CC and)
+                                  (NP (RB not) (JJ spiritual) (NN magic)))))))))))))))))
+    (. .)))
+
+nn(faiths-2, Modern-1)
+nsubj(need-4, faiths-2)
+xsubj(adapt-6, faiths-2)
+aux(need-4, may-3)
+root(ROOT-0, need-4)
+aux(adapt-6, to-5)
+xcomp(need-4, adapt-6)
+nsubj(take-9, themselves-7)
+aux(take-9, to-8)
+xcomp(adapt-6, take-9)
+det(view-12, the-11)
+prep_in(take-9, view-12)
+det(world-15, the-14)
+prep_of(view-12, world-15)
+partmod(world-15, defined-16)
+agent(defined-16, science-18)
+neg(magic-22, not-20)
+amod(magic-22, spiritual-21)
+agent(defined-16, magic-22)
+conj_and(science-18, magic-22)
+

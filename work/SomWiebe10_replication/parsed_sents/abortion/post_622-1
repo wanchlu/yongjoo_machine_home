@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADJP (JJ wrong)
+        (PP (IN in)
+          (S
+            (VP (VBG assuming)
+              (SBAR (IN that) (IN because)
+                (S
+                  (NP (PRP I))
+                  (VP (VBP know)
+                    (SBAR (IN that)
+                      (S
+                        (NP (NN abortion))
+                        (VP (VBZ kills)
+                          (NP (DT a) (NN child))
+                          (SBAR (IN that)
+                            (S
+                              (NP (PRP I))
+                              (VP (MD must) (RB not)
+                                (VP (VB care)
+                                  (PP (IN about)
+                                    (NP (DT the) (NN mother))))))))))))))))))
+    (. .)))
+
+nsubj(wrong-3, You-1)
+cop(wrong-3, are-2)
+root(ROOT-0, wrong-3)
+prepc_in(wrong-3, assuming-5)
+complm(know-9, that-6)
+dep(know-9, because-7)
+nsubj(know-9, I-8)
+ccomp(assuming-5, know-9)
+complm(kills-12, that-10)
+nsubj(kills-12, abortion-11)
+ccomp(know-9, kills-12)
+det(child-14, a-13)
+dobj(kills-12, child-14)
+complm(care-19, that-15)
+nsubj(care-19, I-16)
+aux(care-19, must-17)
+neg(care-19, not-18)
+ccomp(kills-12, care-19)
+det(mother-22, the-21)
+prep_about(care-19, mother-22)
+

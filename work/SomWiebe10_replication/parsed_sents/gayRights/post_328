@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hear)
+      (S
+        (NP
+          (NP (DT a) (NN lot))
+          (PP (IN of)
+            (NP (NNS people))))
+        (VP (VB throw)
+          (NP (NNS statistics))
+          (ADVP (RB around))
+          (PP (IN in)
+            (NP (DT this) (NN debate))))))
+    (. .)))
+
+nsubj(hear-2, I-1)
+root(ROOT-0, hear-2)
+det(lot-4, a-3)
+nsubj(throw-7, lot-4)
+prep_of(lot-4, people-6)
+ccomp(hear-2, throw-7)
+dobj(throw-7, statistics-8)
+advmod(throw-7, around-9)
+det(debate-12, this-11)
+prep_in(throw-7, debate-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN fact))
+      (PP (IN of)
+        (NP (DT the) (NN matter))))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP
+                (NP
+                  (ADJP (RB very) (JJ little))
+                  (NN evidence))
+                (PP (IN on)
+                  (NP (DT either) (NN side)))))))
+        (CC and)
+        (SBAR (IN as)
+          (S
+            (NP (PDT such) (DT this))
+            (VP (VBZ is)
+              (ADVP (RB merely))
+              (NP
+                (NP (DT a) (NN debate))
+                (PP (IN of)
+                  (NP (NN opinion) (, ,) (NN anecdote)
+                    (CC and)
+                    (NN conjecture)))))))))
+    (. .)))
+
+det(fact-2, The-1)
+nsubj(is-6, fact-2)
+det(matter-5, the-4)
+prep_of(fact-2, matter-5)
+root(ROOT-0, is-6)
+complm(is-9, that-7)
+expl(is-9, there-8)
+ccomp(is-6, is-9)
+advmod(little-11, very-10)
+amod(evidence-12, little-11)
+nsubj(is-9, evidence-12)
+det(side-15, either-14)
+prep_on(evidence-12, side-15)
+mark(debate-23, as-17)
+predet(this-19, such-18)
+nsubj(debate-23, this-19)
+cop(debate-23, is-20)
+advmod(debate-23, merely-21)
+det(debate-23, a-22)
+ccomp(is-6, debate-23)
+conj_and(is-9, debate-23)
+prep_of(debate-23, opinion-25)
+prep_of(debate-23, anecdote-27)
+conj_and(opinion-25, anecdote-27)
+prep_of(debate-23, conjecture-29)
+conj_and(opinion-25, conjecture-29)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB do) (RB not)
+      (VP (VB cite)
+        (NP
+          (NP (NNS statistics))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP do) (RB not)
+                (VP (VB exist))))))))
+    (. .)))
+
+dep(cite-4, Please-1)
+aux(cite-4, do-2)
+neg(cite-4, not-3)
+root(ROOT-0, cite-4)
+dobj(cite-4, statistics-5)
+nsubj(exist-9, statistics-5)
+aux(exist-9, do-7)
+neg(exist-9, not-8)
+rcmod(statistics-5, exist-9)
+

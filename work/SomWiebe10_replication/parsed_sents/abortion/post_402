@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Very))
+      (ADVP (RB well))
+      (VP (VBD put)))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (ADVP (RB completely))
+      (VP (VBP agree)))
+    (. .)))
+
+nsubj(put-3, Very-1)
+advmod(put-3, well-2)
+root(ROOT-0, put-3)
+nsubj(agree-7, I-5)
+advmod(agree-7, completely-6)
+parataxis(put-3, agree-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (ADVP (RB simply))
+      (VP (VB add)
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ dangerous)
+                (S
+                  (VP (TO to)
+                    (VP (VB cite)
+                      (NP (NNS charateristics))
+                      (PP (IN as)
+                        (NP (NN criterion)))
+                      (, ,)
+                      (PP (IN except)
+                        (NP
+                          (NP (DT those))
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBP are)
+                                (ADVP (RB universally))
+                                (ADJP (JJ specific))
+                                (, ,)
+                                (NP (NNP i.e.) (NNP DNA))))))))))))))))
+    (. .)))
+
+nsubj(add-4, I-1)
+aux(add-4, will-2)
+advmod(add-4, simply-3)
+root(ROOT-0, add-4)
+complm(dangerous-8, that-5)
+nsubj(dangerous-8, it-6)
+cop(dangerous-8, is-7)
+ccomp(add-4, dangerous-8)
+aux(cite-10, to-9)
+xcomp(dangerous-8, cite-10)
+dobj(cite-10, charateristics-11)
+prep_as(cite-10, criterion-13)
+prep_except(cite-10, those-16)
+nsubj(specific-20, those-16)
+cop(specific-20, are-18)
+advmod(specific-20, universally-19)
+rcmod(those-16, specific-20)
+nn(DNA-23, i.e.-22)
+attr(specific-20, DNA-23)
+

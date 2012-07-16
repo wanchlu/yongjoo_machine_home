@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (-LRB- -LRB-) (NNP define.com) (-RRB- -RRB-))
+    (PP (IN Since)
+      (NP (DT the) (NN offspring)))
+    (VP (VBZ comes)
+      (PP (IN into)
+        (NP (NN existence)))
+      (PP (IN at)
+        (NP
+          (NP (NN conception))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (ADJP (RB absolutely) (JJ correct))
+                (S
+                  (VP (TO to)
+                    (VP (VB say) ('' '')))))))
+          (: ...)
+          (NP (JJ unborn) (NN child)))))
+    (. .)))
+
+nsubj(comes-7, define.com-2)
+det(offspring-6, the-5)
+prep_since(comes-7, offspring-6)
+root(ROOT-0, comes-7)
+prep_into(comes-7, existence-9)
+prep_at(comes-7, conception-11)
+nsubj(correct-15, it-12)
+xsubj(say-17, it-12)
+cop(correct-15, is-13)
+advmod(correct-15, absolutely-14)
+rcmod(conception-11, correct-15)
+aux(say-17, to-16)
+xcomp(correct-15, say-17)
+amod(child-21, unborn-20)
+dep(conception-11, child-21)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN woman))
+      (CC and)
+      (NP (DT a) (NN fetus)))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (JJ special) (NN relationship))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ incomparable)
+                (PP (TO to)
+                  (NP
+                    (NP
+                      (NP (DT that))
+                      (PP (IN between)
+                        (NP (DT a) (NN woman))))
+                    (CC and)
+                    (NP
+                      (NP (DT a) (NN stranger))
+                      (CC or)
+                      (NP (RB even) (DT a) (JJ relative)))))))))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(have-6, woman-2)
+det(fetus-5, a-4)
+conj_and(woman-2, fetus-5)
+nsubj(have-6, fetus-5)
+root(ROOT-0, have-6)
+det(relationship-9, a-7)
+amod(relationship-9, special-8)
+dobj(have-6, relationship-9)
+nsubj(incomparable-12, relationship-9)
+cop(incomparable-12, is-11)
+rcmod(relationship-9, incomparable-12)
+prep_to(incomparable-12, that-14)
+det(woman-17, a-16)
+prep_between(that-14, woman-17)
+det(stranger-20, a-19)
+prep_to(incomparable-12, stranger-20)
+conj_and(that-14, stranger-20)
+advmod(relative-24, even-22)
+det(relative-24, a-23)
+conj_and(that-14, relative-24)
+conj_or(stranger-20, relative-24)
+

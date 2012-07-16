@@ -1,0 +1,147 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Today))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NNP July) (CD 22nd))
+          (NP (CD 2009)))
+        (-RRB- -RRB-))
+      (NP (DT the) (`` ``) (JJS best))
+      ('' ''))
+    (VP (VBD solar)
+      (SBAR
+        (S
+          (NP
+            (NP (NN eclipse))
+            (PP (IN of)
+              (NP (DT the) (NN century))))
+          (VP (VBD took)
+            (NP (NN place))
+            (PP (IN from)
+              (NP (NNP India)))
+            (PP (TO to)
+              (NP (NNP Japan)))))))
+    (. .)))
+
+nsubj(solar-11, Today-1)
+dep(Today-1, July-3)
+num(July-3, 22nd-4)
+dep(July-3, 2009-5)
+det(best-9, the-7)
+dep(Today-1, best-9)
+root(ROOT-0, solar-11)
+nsubj(took-16, eclipse-12)
+det(century-15, the-14)
+prep_of(eclipse-12, century-15)
+ccomp(solar-11, took-16)
+dobj(took-16, place-17)
+prep_from(took-16, India-19)
+prep_to(took-16, Japan-21)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Reading)
+        (PP (IN about)
+          (NP (DT this)))))
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB again))
+      (VP (VBN read)
+        (PP (IN over)
+          (NP (DT the) (NNS mechanics)))
+        (SBAR
+          (SBAR
+            (WHPP (IN of)
+              (WHNP (WP what) (RB exactly)))
+            (S
+              (NP (DT a) (JJ solar) (NN eclipse))
+              (VP (VBZ is))))
+          (: ...)
+          (CC and)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBZ causes)
+                (SBAR
+                  (S
+                    (NP (NNS eclipses))
+                    (VP (VBZ is)
+                      (PP (IN in)
+                        (NP (DT no) (NN way)))
+                      (ADJP (JJ indicative)
+                        (PP (IN of)
+                          (NP
+                            (NP (NN intent))
+                            (PP (IN behind)
+                              (NP
+                                (NP (PRP it) (POS 's))
+                                (NN size)
+                                (CC and)
+                                (NN position)))))))))))))))
+    (. .)))
+
+dep(read-7, Reading-1)
+prep_about(Reading-1, this-3)
+nsubj(read-7, I-4)
+aux(read-7, have-5)
+advmod(read-7, again-6)
+root(ROOT-0, read-7)
+det(mechanics-10, the-9)
+prep_over(read-7, mechanics-10)
+dep(is-17, of-11)
+pobj(of-11, what-12)
+advmod(what-12, exactly-13)
+det(eclipse-16, a-14)
+amod(eclipse-16, solar-15)
+nsubj(is-17, eclipse-16)
+ccomp(read-7, is-17)
+complm(causes-22, that-20)
+nsubj(causes-22, it-21)
+ccomp(read-7, causes-22)
+conj_and(is-17, causes-22)
+nsubj(indicative-28, eclipses-23)
+cop(indicative-28, is-24)
+det(way-27, no-26)
+prep_in(indicative-28, way-27)
+ccomp(causes-22, indicative-28)
+prep_of(indicative-28, intent-30)
+poss(size-34, it-32)
+prep_behind(intent-30, size-34)
+prep_behind(intent-30, position-36)
+conj_and(size-34, position-36)
+
+(ROOT
+  (PP (IN During)
+    (NP
+      (NP (DT a) (JJ solar) (NN eclipse))
+      (SBAR
+        (S
+          (NP
+            (NP (RB only) (DT a) (JJ tiny) (NN fraction))
+            (PP (IN of)
+              (NP (DT the) (NN earth))))
+          (VP (VBZ is)
+            (ADVP (RB actually))
+            (ADJP
+              (ADJP (RB fully) (JJ covered))
+              (: ...)
+              (ADJP (JJ http:\/\/scienceblogs.com\/startswithabang\/2009\/07\/the_best_eclipse_of_the_centur.php)))))))))
+
+root(ROOT-0, During-1)
+det(eclipse-4, a-2)
+amod(eclipse-4, solar-3)
+pobj(During-1, eclipse-4)
+advmod(fraction-8, only-5)
+det(fraction-8, a-6)
+amod(fraction-8, tiny-7)
+nsubj(covered-15, fraction-8)
+det(earth-11, the-10)
+prep_of(fraction-8, earth-11)
+cop(covered-15, is-12)
+advmod(covered-15, actually-13)
+advmod(covered-15, fully-14)
+rcmod(eclipse-4, covered-15)
+dep(covered-15, http:\/\/scienceblogs.com\/startswithabang\/2009\/07\/the_best_eclipse_of_the_centur.php-17)
+

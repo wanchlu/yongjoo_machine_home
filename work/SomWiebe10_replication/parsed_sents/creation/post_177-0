@@ -1,0 +1,58 @@
+(ROOT
+  (S ('' '')
+    (S
+      (ADVP (RB Features))
+      (NP (DT that))
+      (VP (VBP appear)
+        (SBAR
+          (S
+            (NP (NN vestigial)
+              (CC and)
+              (NNS functionless))
+            (ADVP (RB actually))
+            (VP (VB serve)
+              (NP
+                (NP (DT a) (NN function))
+                (PRN (-LRB- -LRB-)
+                  (NP (NN eg.) (, ,) (NN appendix) (, ,) (NN coccyx))
+                  (-RRB- -RRB-)))))))
+      ('' ''))
+    (IN So)
+    (S
+      (X (WP what))
+      (, ,)
+      (S
+        (VP (VBG using)
+          (NP (JJ intelligent) (NN design))))
+      (, ,)
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN purpose))
+          (PP (IN of)
+            (NP (DT the) (NN appendix))))))
+    (. ?)))
+
+advmod(appear-4, Features-2)
+nsubj(appear-4, that-3)
+root(ROOT-0, appear-4)
+nsubj(serve-9, vestigial-5)
+conj_and(vestigial-5, functionless-7)
+nsubj(serve-9, functionless-7)
+advmod(serve-9, actually-8)
+ccomp(appear-4, serve-9)
+det(function-11, a-10)
+dobj(serve-9, function-11)
+nn(coccyx-17, eg.-13)
+dep(coccyx-17, appendix-15)
+appos(function-11, coccyx-17)
+dep(appear-4, So-20)
+dep(purpose-29, what-21)
+dep(purpose-29, using-23)
+amod(design-25, intelligent-24)
+dobj(using-23, design-25)
+cop(purpose-29, is-27)
+det(purpose-29, the-28)
+ccomp(appear-4, purpose-29)
+det(appendix-32, the-31)
+prep_of(purpose-29, appendix-32)
+

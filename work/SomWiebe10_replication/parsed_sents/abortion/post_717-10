@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (DT A) (NN fetus))
+    (VP
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (NN conception))
+          (PP (IN of)
+            (NP
+              (NP (DT any))
+              (PP (IN of)
+                (NP (DT this)))))))
+      (, ,)
+      (VP (VBZ does) (RB not)
+        (VP (VB think)))
+      (, ,)
+      (CC and)
+      (VP (MD can) (RB not)
+        (VP (VB make)
+          (NP (DT any) (NNS decisions)))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(has-3, fetus-2)
+nsubj(think-13, fetus-2)
+nsubj(make-18, fetus-2)
+root(ROOT-0, has-3)
+det(conception-5, no-4)
+dobj(has-3, conception-5)
+prep_of(conception-5, any-7)
+prep_of(any-7, this-9)
+aux(think-13, does-11)
+neg(think-13, not-12)
+conj_and(has-3, think-13)
+aux(make-18, can-16)
+neg(make-18, not-17)
+conj_and(has-3, make-18)
+det(decisions-20, any-19)
+dobj(make-18, decisions-20)
+

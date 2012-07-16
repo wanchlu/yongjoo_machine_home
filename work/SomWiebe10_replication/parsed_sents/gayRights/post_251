@@ -1,0 +1,87 @@
+(ROOT
+  (SQ (CC But)
+    (FRAG
+      (WHNP (WP what))
+      (SBAR (IN if)
+        (S
+          (NP
+            (NP (DT the) (JJ married) (NN mum))
+            (CC and)
+            (NP (NN dad)))
+          (VP (VBP do) (RB n't)
+            (VP (VB love)
+              (NP (CD one) (DT another)))))))
+    (. ?)))
+
+root(ROOT-0, But-1)
+dep(love-11, what-2)
+mark(love-11, if-3)
+det(mum-6, the-4)
+amod(mum-6, married-5)
+nsubj(love-11, mum-6)
+conj_and(mum-6, dad-8)
+nsubj(love-11, dad-8)
+aux(love-11, do-9)
+neg(love-11, n't-10)
+dep(But-1, love-11)
+dobj(love-11, one-12)
+dep(one-12, another-13)
+
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP (PRP they))
+        (VP (VBP do) (RB not)
+          (VP (VB love)
+            (NP (PRP$ their) (NNS children))))))
+    (. ?)))
+
+dep(love-6, What-1)
+mark(love-6, if-2)
+nsubj(love-6, they-3)
+aux(love-6, do-4)
+neg(love-6, not-5)
+root(ROOT-0, love-6)
+poss(children-8, their-7)
+dobj(love-6, children-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB have)
+        (ADVP (RB rather))
+        (VP (VBN been)
+          (VP (VBN raised)
+            (PP (IN by)
+              (NP
+                (NP (JJ same-sex) (NNS couples))
+                (CONJP (RB rather) (IN than))
+                (NP
+                  (NP (DT the) (JJ evil) (NNS bastards))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBD were)
+                        (NP (PRP$ my) (NNS parents))))))))))))
+    (. .)))
+
+nsubjpass(raised-6, I-1)
+aux(raised-6, would-2)
+aux(raised-6, have-3)
+advmod(raised-6, rather-4)
+auxpass(raised-6, been-5)
+root(ROOT-0, raised-6)
+amod(couples-9, same-sex-8)
+agent(raised-6, couples-9)
+det(bastards-14, the-12)
+amod(bastards-14, evil-13)
+agent(raised-6, bastards-14)
+conj_negcc(couples-9, bastards-14)
+nsubj(parents-18, bastards-14)
+cop(parents-18, were-16)
+poss(parents-18, my-17)
+rcmod(bastards-14, parents-18)
+

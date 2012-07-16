@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP (DT Any) (NN example))
+    (VP (VBZ is)
+      (NP (DT the) (JJ red-shift) (NN observation))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN universe))
+          (VP (VBZ is)
+            (VP (VBG expanding)
+              (PP (IN at)
+                (NP (DT an) (RB ever) (NN slowing) (NN rate))))))))
+    (. .)))
+
+det(example-2, Any-1)
+nsubj(observation-6, example-2)
+cop(observation-6, is-3)
+det(observation-6, the-4)
+amod(observation-6, red-shift-5)
+root(ROOT-0, observation-6)
+complm(expanding-11, that-7)
+det(universe-9, the-8)
+nsubj(expanding-11, universe-9)
+aux(expanding-11, is-10)
+ccomp(observation-6, expanding-11)
+det(rate-16, an-13)
+advmod(rate-16, ever-14)
+nn(rate-16, slowing-15)
+prep_at(expanding-11, rate-16)
+

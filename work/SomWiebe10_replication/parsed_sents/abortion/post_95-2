@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN pregnancy))
+        (VP (VBZ is)
+          (NP
+            (NP (DT a) (NN result))
+            (PP (IN of)
+              (NP
+                (NP (DT an) (NN accident))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (DT the) (NN failure))
+                    (PP (IN of)
+                      (NP (NN birth) (NN control))))
+                  (-RRB- -RRB-))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD can) (RB not)
+      (VP (VB be)
+        (VP (VBN called)
+          (S
+            (ADJP (JJ voluntary))))))
+    (. .)))
+
+mark(result-6, If-1)
+det(pregnancy-3, a-2)
+nsubj(result-6, pregnancy-3)
+cop(result-6, is-4)
+det(result-6, a-5)
+advcl(called-22, result-6)
+det(accident-9, an-8)
+prep_of(result-6, accident-9)
+det(failure-12, the-11)
+dep(accident-9, failure-12)
+nn(control-15, birth-14)
+prep_of(failure-12, control-15)
+nsubjpass(called-22, it-18)
+aux(called-22, can-19)
+neg(called-22, not-20)
+auxpass(called-22, be-21)
+root(ROOT-0, called-22)
+acomp(called-22, voluntary-23)
+

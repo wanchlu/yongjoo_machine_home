@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (SBAR (IN Because) (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBD were))))
+    (, ,) (RB Then)
+    (NP (PRP you))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB acknowledge)
+            (SBAR (IN that) (IN if)
+              (S
+                (NP (PRP$ your) (NN mother))
+                (VP (MD would)
+                  (VP (VB have)
+                    (VP (VBN had)
+                      (NP
+                        (NP (DT an) (NN abortion))
+                        (SBAR
+                          (S
+                            (NP (PRP it))
+                            (VP (MD would)
+                              (VP (VB have)
+                                (VP (VBN ended)
+                                  (NP
+                                    (NP
+                                      (NP (PRP$ your) (NN life))
+                                      (, ,)
+                                      (NP (RB not) (NN something) (RB else))
+                                      (, ,))
+                                    (PP (CC but)
+                                      (NP (PRP$ your) (NN life)))))))))))))))))))
+    (. .)))
+
+mark(were-4, Because-1)
+dep(were-4, if-2)
+nsubj(were-4, you-3)
+advcl(have-8, were-4)
+advmod(have-8, Then-6)
+nsubj(have-8, you-7)
+xsubj(acknowledge-10, you-7)
+root(ROOT-0, have-8)
+aux(acknowledge-10, to-9)
+xcomp(have-8, acknowledge-10)
+complm(had-17, that-11)
+dep(had-17, if-12)
+poss(mother-14, your-13)
+nsubj(had-17, mother-14)
+aux(had-17, would-15)
+aux(had-17, have-16)
+ccomp(acknowledge-10, had-17)
+det(abortion-19, an-18)
+dobj(had-17, abortion-19)
+nsubj(ended-23, it-20)
+aux(ended-23, would-21)
+aux(ended-23, have-22)
+rcmod(abortion-19, ended-23)
+poss(life-25, your-24)
+dobj(ended-23, life-25)
+neg(something-28, not-27)
+appos(life-25, something-28)
+advmod(something-28, else-29)
+prep(life-25, but-31)
+poss(life-33, your-32)
+dep(but-31, life-33)
+

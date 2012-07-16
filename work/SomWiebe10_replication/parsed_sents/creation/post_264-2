@@ -1,0 +1,99 @@
+(ROOT
+  (S (`` ``)
+    (SBAR
+      (WHNP (WDT which))
+      (S
+        (NP (PRP he))
+        (VP (VBZ uses)
+          (PP (IN as)
+            (NP
+              (NP
+                (NP (DT an) (NN argument))
+                (PP (TO to)
+                  (NP (PRP$ his) (NN conclusion))))
+              (, ,) (RB that)
+              (NP (CD 2))
+              (-RRB- -RRB-)))
+          ('' '')
+          (SBAR
+            (SBAR
+              (S
+                (NP (NNP Darwin))
+                (VP (VBZ s)
+                  (NP
+                    (NP (NN mechanism))
+                    (PP (IN of)
+                      (NP (JJ random) (NN mutation)))))))
+            (CC and)
+            (SBAR
+              (S
+                (NP (JJ natural) (NN selection))
+                (VP (VBZ does) (RB not)
+                  (VP (VB mimic)
+                    (NP (NN design) ('' ''))
+                    (ADVP (RB However))))))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ fundamental) (NN flaw))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (NNP Mr.) (NNP Behe) (POS 's))
+              (NN reasoning))
+            (PP (IN in)
+              (S
+                (VP (VBG regards)
+                  (PP (TO to)
+                    (NP
+                      (NP (DT the) (JJ first) (NN point))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBZ leads)
+                            (PP (TO to)
+                              (NP (PRP$ his) (JJ erroneous) (NN conclusion)))))))))))))))
+    (. .)))
+
+dep(uses-4, which-2)
+nsubj(uses-4, he-3)
+dep(is-33, uses-4)
+det(argument-7, an-6)
+prep_as(uses-4, argument-7)
+poss(conclusion-10, his-9)
+prep_to(argument-7, conclusion-10)
+advmod(argument-7, that-12)
+dep(argument-7, 2-13)
+nsubj(mechanism-18, Darwin-16)
+cop(mechanism-18, s-17)
+dep(uses-4, mechanism-18)
+amod(mutation-21, random-20)
+prep_of(mechanism-18, mutation-21)
+amod(selection-24, natural-23)
+nsubj(mimic-27, selection-24)
+aux(mimic-27, does-25)
+neg(mimic-27, not-26)
+dep(uses-4, mimic-27)
+conj_and(mechanism-18, mimic-27)
+dobj(mimic-27, design-28)
+advmod(mimic-27, However-30)
+expl(is-33, there-32)
+root(ROOT-0, is-33)
+det(flaw-36, a-34)
+amod(flaw-36, fundamental-35)
+nsubj(is-33, flaw-36)
+nn(Behe-39, Mr.-38)
+poss(reasoning-41, Behe-39)
+prep_in(flaw-36, reasoning-41)
+prepc_in(reasoning-41, regards-43)
+det(point-47, the-45)
+amod(point-47, first-46)
+prep_to(regards-43, point-47)
+nsubj(leads-50, point-47)
+rcmod(point-47, leads-50)
+poss(conclusion-54, his-52)
+amod(conclusion-54, erroneous-53)
+prep_to(leads-50, conclusion-54)
+

@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP know)
+          (SBAR (IN that)
+            (S
+              (S
+                (NP (DT a) (NN child))
+                (VP (MD will)
+                  (VP (VB die))))
+              (CC and)
+              (S
+                (NP (PRP you))
+                (VP (VBP do)
+                  (NP (NN nothing))
+                  (S
+                    (VP (TO to)
+                      (VP (VB prevent)
+                        (NP (PRP it))))))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP have)
+      (VP (VBN murdered)
+        (NP (DT that) (NN child))))
+    (. .)))
+
+mark(know-3, If-1)
+nsubj(know-3, you-2)
+advcl(murdered-19, know-3)
+complm(die-8, that-4)
+det(child-6, a-5)
+nsubj(die-8, child-6)
+aux(die-8, will-7)
+ccomp(know-3, die-8)
+nsubj(do-11, you-10)
+ccomp(know-3, do-11)
+conj_and(die-8, do-11)
+dobj(do-11, nothing-12)
+aux(prevent-14, to-13)
+xcomp(do-11, prevent-14)
+dobj(prevent-14, it-15)
+nsubj(murdered-19, you-17)
+aux(murdered-19, have-18)
+root(ROOT-0, murdered-19)
+det(child-21, that-20)
+dobj(murdered-19, child-21)
+

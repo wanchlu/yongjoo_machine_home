@@ -1,0 +1,146 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am) (RB not)
+      (ADJP (JJ aware)
+        (PP (IN of)
+          (NP
+            (NP (DT any) (NN study))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD would)
+                  (VP (VB find)
+                    (NP
+                      (NP (DT a) (JJ gay) (NN gene)
+                        (CC or)
+                        (NN group))
+                      (PP (IN of)
+                        (NP (NNS genes))))))))))))
+    (. .)))
+
+nsubj(aware-4, I-1)
+cop(aware-4, am-2)
+neg(aware-4, not-3)
+root(ROOT-0, aware-4)
+det(study-7, any-6)
+prep_of(aware-4, study-7)
+nsubj(find-10, study-7)
+aux(find-10, would-9)
+rcmod(study-7, find-10)
+det(gene-13, a-11)
+amod(gene-13, gay-12)
+dobj(find-10, gene-13)
+dobj(find-10, group-15)
+conj_or(gene-13, group-15)
+prep_of(gene-13, genes-17)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ only) (NN way)
+        (S
+          (VP (TO to)
+            (VP (VB find)
+              (NP (DT a) (JJ gay) (NN gene))))))
+      (VP (MD would)
+        (VP (VB be)
+          (S
+            (VP (TO to)
+              (VP (VB study)
+                (NP
+                  (NP (CD two) (NNS groups))
+                  (, ,)
+                  (NP
+                    (NP (JJ identical) (NNS twins))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBP are)
+                          (NP
+                            (NP
+                              (ADJP (DT both) (JJ gay)
+                                (CC and)
+                                (JJ identical))
+                              (NNS twins))
+                            (ADVP (RB there)
+                              (NP (CD one) (NNS twin)))
+                            (SBAR
+                              (S
+                                (VP (VBZ is)
+                                  (ADJP (JJ gay)))))))))))))))))
+    (CC but)
+    (S
+      (NP (DT the) (JJ other))
+      (VP (VBZ is) (RB not)))
+    (. .)))
+
+det(way-3, The-1)
+amod(way-3, only-2)
+nsubj(be-10, way-3)
+aux(find-5, to-4)
+infmod(way-3, find-5)
+det(gene-8, a-6)
+amod(gene-8, gay-7)
+dobj(find-5, gene-8)
+aux(be-10, would-9)
+root(ROOT-0, be-10)
+aux(study-12, to-11)
+xcomp(be-10, study-12)
+num(groups-14, two-13)
+dobj(study-12, groups-14)
+amod(twins-17, identical-16)
+appos(groups-14, twins-17)
+nsubj(twins-24, twins-17)
+cop(twins-24, are-19)
+preconj(gay-21, both-20)
+amod(twins-24, gay-21)
+conj_and(gay-21, identical-23)
+amod(twins-24, identical-23)
+rcmod(twins-17, twins-24)
+advmod(twins-24, there-25)
+num(twin-27, one-26)
+pobj(there-25, twin-27)
+cop(gay-29, is-28)
+rcmod(twins-24, gay-29)
+det(other-32, the-31)
+nsubj(is-33, other-32)
+conj_but(be-10, is-33)
+neg(is-33, not-34)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ gay) (NN gene))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP (CD one))))))
+    (VP (MD would)
+      (VP (VB be)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ first) (NN group))
+            (CONJP (CC but)
+              (RB not))
+            (NP (DT the) (NN second))))))
+    (. .)))
+
+det(gene-3, The-1)
+amod(gene-3, gay-2)
+nsubj(be-10, gene-3)
+mark(is-7, if-5)
+expl(is-7, there-6)
+dep(gene-3, is-7)
+nsubj(is-7, one-8)
+aux(be-10, would-9)
+root(ROOT-0, be-10)
+det(group-14, the-12)
+amod(group-14, first-13)
+prep_in(be-10, group-14)
+det(second-18, the-17)
+prep_in(be-10, second-18)
+conj_negcc(group-14, second-18)
+

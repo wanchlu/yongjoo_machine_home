@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (ADVP
+      (NP (DT A) (JJ few) (NNS years))
+      (RB ago))
+    (, ,)
+    (NP (PRP he))
+    (VP
+      (VP (VBD outlined)
+        (PP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (DT an) (JJ extensive) (NN study))
+              (PP (IN of)
+                (NP (DT the) (JJ scientific) (NN literature)))))))
+      (CC and)
+      (VP
+        (ADVP (RB homology))
+        (VBZ studies)
+        (NP (DT a) (JJ plausible) (NN scenario))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN evolution))
+            (PP (IN of)
+              (NP (DT the) (JJ bacterial) (NN flagellum)))))))
+    (. .)))
+
+det(years-3, A-1)
+amod(years-3, few-2)
+npadvmod(ago-4, years-3)
+advmod(outlined-7, ago-4)
+nsubj(outlined-7, he-6)
+nsubj(studies-19, he-6)
+root(ROOT-0, outlined-7)
+prepc_based_on(outlined-7, on-9)
+det(study-12, an-10)
+amod(study-12, extensive-11)
+pobj(outlined-7, study-12)
+det(literature-16, the-14)
+amod(literature-16, scientific-15)
+prep_of(study-12, literature-16)
+advmod(studies-19, homology-18)
+conj_and(outlined-7, studies-19)
+det(scenario-22, a-20)
+amod(scenario-22, plausible-21)
+dobj(studies-19, scenario-22)
+det(evolution-25, the-24)
+prep_for(studies-19, evolution-25)
+det(flagellum-29, the-27)
+amod(flagellum-29, bacterial-28)
+prep_of(evolution-25, flagellum-29)
+

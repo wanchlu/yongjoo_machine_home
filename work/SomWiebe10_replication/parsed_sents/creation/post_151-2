@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ studies)
+      (NP
+        (NP
+          (NP (DT the) (NNS FEATURES))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (RBS best) (VBN traced)
+                  (PP (TO to)
+                    (NP (DT an) (NN intelligence))))))))
+        (: ;)
+        (NP (RB not)
+          (NP (DT the) (NN intelligence))
+          (ADVP (PRP itself)))))
+    (. .)))
+
+nsubj(studies-2, ID-1)
+root(ROOT-0, studies-2)
+det(FEATURES-4, the-3)
+dobj(studies-2, FEATURES-4)
+nsubjpass(traced-8, FEATURES-4)
+auxpass(traced-8, are-6)
+advmod(traced-8, best-7)
+rcmod(FEATURES-4, traced-8)
+det(intelligence-11, an-10)
+prep_to(traced-8, intelligence-11)
+neg(intelligence-15, not-13)
+det(intelligence-15, the-14)
+dep(FEATURES-4, intelligence-15)
+advmod(intelligence-15, itself-16)
+

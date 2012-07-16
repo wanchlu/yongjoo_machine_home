@@ -1,0 +1,31 @@
+(ROOT
+  (S ('' '')
+    (PP (IN Like)
+      (NP
+        (NP (JJ termite) (NNS mounds)
+          (CC or)
+          (NNS crystals))
+        (CC or)
+        (NP
+          (NP (NN tree) (NNS limbs))
+          (VP (VBN shaped)))))
+    (VP (VBP like)
+      (NP
+        (NP (NNS letters))
+        (PP (IN of)
+          (NP (DT the) (NN alphabet)))))
+    (. ?)))
+
+amod(mounds-4, termite-3)
+prep_like(like-11, mounds-4)
+conj_or(mounds-4, crystals-6)
+prep_like(like-11, crystals-6)
+nn(limbs-9, tree-8)
+conj_or(mounds-4, limbs-9)
+prep_like(like-11, limbs-9)
+partmod(limbs-9, shaped-10)
+root(ROOT-0, like-11)
+dobj(like-11, letters-12)
+det(alphabet-15, the-14)
+prep_of(letters-12, alphabet-15)
+

@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (ADVP (RB simply))
+    (VP (VBZ says)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (VP (`` ``)
+              (VP (VBN guided))
+              ('' '')
+              (CC or)
+              (VP (`` ``) (VBN started) ('' '')
+                (PP (IN by)
+                  (NP (NN something)))
+                (PP (IN beyond)
+                  (NP
+                    (NP (NN explanation))
+                    (PRN (-LRB- -LRB-)
+                      (PP (IN at)
+                        (NP (DT this) (NN time)))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+nsubj(says-3, it-1)
+advmod(says-3, simply-2)
+root(ROOT-0, says-3)
+complm(guided-8, that-4)
+nsubjpass(guided-8, it-5)
+nsubjpass(started-12, it-5)
+auxpass(guided-8, was-6)
+ccomp(says-3, guided-8)
+ccomp(says-3, started-12)
+conj_or(guided-8, started-12)
+prep_by(started-12, something-15)
+prep_beyond(started-12, explanation-17)
+dep(explanation-17, at-19)
+det(time-21, this-20)
+pobj(at-19, time-21)
+
+(ROOT
+  (S
+    (SQ
+      (NP (NN creationism))
+      (VP (VBZ says)))
+    ('' '')
+    (NP (NNP God))
+    (VP (VBD created)
+      (NP
+        (NP (NN man))
+        (PP (IN in)
+          (NP
+            (NP (PRP$ his) (NN image))
+            ('' '') (: ...)
+            (NP (NN nothing)))))
+      (PP (IN like)
+        (NP (NNP Intelligent) (NNP Design))))
+    (. .)))
+
+nsubj(says-2, creationism-1)
+dep(created-5, says-2)
+nsubj(created-5, God-4)
+root(ROOT-0, created-5)
+dobj(created-5, man-6)
+poss(image-9, his-8)
+prep_in(man-6, image-9)
+dep(image-9, nothing-12)
+nn(Design-15, Intelligent-14)
+prep_like(created-5, Design-15)
+

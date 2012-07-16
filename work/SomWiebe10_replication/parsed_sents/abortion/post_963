@@ -1,0 +1,186 @@
+(ROOT
+  (S
+    (NP
+      (ADJP (CD 100) (NN %))
+      (NNS i))
+    (VP (VBP think)
+      (NP (PRP$ its) (JJ wrong)))
+    (. !)))
+
+number(%-2, 100-1)
+amod(i-3, %-2)
+nsubj(think-4, i-3)
+root(ROOT-0, think-4)
+poss(wrong-6, its-5)
+dobj(think-4, wrong-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (UCP (RB not)
+        (S
+          (VP (VBG religious)))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (NP (DT the) (NN right)
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (NP (DT a) (NN life)))))))))))
+    (. ?)))
+
+nsubj(am-2, I-1)
+root(ROOT-0, am-2)
+dep(am-2, not-3)
+dep(not-3, religious-4)
+nsubj(has-8, who-7)
+dep(am-2, has-8)
+conj_but(not-3, has-8)
+det(right-10, the-9)
+dobj(has-8, right-10)
+aux(take-12, to-11)
+infmod(right-10, take-12)
+det(life-14, a-13)
+dobj(take-12, life-14)
+
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP (DT that))
+    (NP
+      (NP (DT the) (JJ very) (NN reason))
+      (SBAR
+        (S
+          (NP (NNP Murderer) (POS 's))
+          (VP (VBP are)
+            (VP (VBN punished))))))
+    (. ?)))
+
+cop(reason-6, Is-1)
+neg(reason-6, n't-2)
+nsubj(reason-6, that-3)
+det(reason-6, the-4)
+amod(reason-6, very-5)
+root(ROOT-0, reason-6)
+nsubjpass(punished-10, Murderer-7)
+possessive(Murderer-7, 's-8)
+auxpass(punished-10, are-9)
+rcmod(reason-6, punished-10)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN person))
+        (ADVP (RB really))
+        (VP (MD ca) (RB n't)
+          (VP (VB have)
+            (NP
+              (NP
+                (NP (DT a) (NN child))
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are) (RB n't)
+                      (ADJP (JJ ready))))))
+              (, ,)
+              (CC or)
+              (NP (DT any) (JJ other) (NN reason)))))))
+    (, ,)
+    (ADVP (RB then))
+    (VP (VB surly)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJR fairer))
+            (S
+              (VP (TO to)
+                (VP
+                  (VP
+                    (ADVP (RB still))
+                    (VB give)
+                    (NP (DT that) (NN life))
+                    (NP (DT a) (NN chance)))
+                  (CC and)
+                  (VP (VB put)
+                    (NP (DT the) (NN baby))
+                    (PRT (RP up))
+                    (PP (IN for)
+                      (NP (NN adoption)))
+                    (PP (TO to)
+                      (NP
+                        (NP (DT a) (NN family))
+                        (SBAR
+                          (WHNP (WP who))
+                          (S
+                            (VP
+                              (VP (VBZ is)
+                                (ADJP (JJ desperate)
+                                  (PP (IN for)
+                                    (NP (DT a) (NN baby)))))
+                              (CC and)
+                              (VP (MD ca) (RB n't)
+                                (VP (VB have)
+                                  (NP
+                                    (NP (CD one))
+                                    (PP (IN for)
+                                      (NP (PRP themselves)))))))))))))))))))
+    (. ?)))
+
+mark(have-7, If-1)
+det(person-3, a-2)
+nsubj(have-7, person-3)
+advmod(have-7, really-4)
+aux(have-7, ca-5)
+neg(have-7, n't-6)
+advcl(surly-22, have-7)
+det(child-9, a-8)
+dobj(have-7, child-9)
+mark(ready-14, because-10)
+nsubj(ready-14, they-11)
+cop(ready-14, are-12)
+neg(ready-14, n't-13)
+dep(child-9, ready-14)
+det(reason-19, any-17)
+amod(reason-19, other-18)
+dobj(have-7, reason-19)
+conj_or(child-9, reason-19)
+advmod(surly-22, then-21)
+root(ROOT-0, surly-22)
+nsubj(fairer-25, it-23)
+xsubj(give-28, it-23)
+cop(fairer-25, is-24)
+ccomp(surly-22, fairer-25)
+aux(give-28, to-26)
+advmod(give-28, still-27)
+xcomp(fairer-25, give-28)
+det(life-30, that-29)
+iobj(give-28, life-30)
+det(chance-32, a-31)
+dobj(give-28, chance-32)
+xcomp(fairer-25, put-34)
+conj_and(give-28, put-34)
+det(baby-36, the-35)
+dobj(put-34, baby-36)
+prt(put-34, up-37)
+prep_for(put-34, adoption-39)
+det(family-42, a-41)
+prep_to(put-34, family-42)
+nsubj(desperate-45, family-42)
+nsubj(have-52, family-42)
+cop(desperate-45, is-44)
+rcmod(family-42, desperate-45)
+det(baby-48, a-47)
+prep_for(desperate-45, baby-48)
+aux(have-52, ca-50)
+neg(have-52, n't-51)
+rcmod(family-42, have-52)
+conj_and(desperate-45, have-52)
+dobj(have-52, one-53)
+prep_for(one-53, themselves-55)
+

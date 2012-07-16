@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT any) (NN logician))
+        (VP (VBZ knows))))
+    (, ,)
+    (NP (DT a) (NN consequence))
+    (VP (MD can) (RB not)
+      (VP (VB come)
+        (NP
+          (NP
+            (ADJP (IN about)
+              (PP (IN without)
+                (S
+                  (VP (VBG \*)
+                    (NP (DT all))
+                    (X (SYM \*))))))
+            (JJ necessary) (NNS conditions))
+          (PRN (-LRB- -LRB-)
+            (CC and)
+            (S
+              (NP
+                (NP
+                  (QP (IN at) (JJS least) (CD one)))
+                (PP (IN of)
+                  (NP
+                    (NP (PRP them))
+                    (CC or)
+                    (NP (DT an) (JJ additional) (NN one)))))
+              (VP (VBG being)
+                (ADJP (JJ sufficient))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+mark(knows-4, As-1)
+det(logician-3, any-2)
+nsubj(knows-4, logician-3)
+advcl(come-10, knows-4)
+det(consequence-7, a-6)
+nsubj(come-10, consequence-7)
+aux(come-10, can-8)
+neg(come-10, not-9)
+root(ROOT-0, come-10)
+amod(conditions-17, about-11)
+prepc_without(about-11, \*-13)
+dobj(\*-13, all-14)
+dep(\*-13, \*-15)
+amod(conditions-17, necessary-16)
+dobj(come-10, conditions-17)
+dep(sufficient-30, and-19)
+quantmod(one-22, at-20)
+mwe(at-20, least-21)
+pobj(at-20, least-21)
+nsubj(sufficient-30, one-22)
+prep_of(one-22, them-24)
+det(one-28, an-26)
+amod(one-28, additional-27)
+prep_of(one-22, one-28)
+conj_or(them-24, one-28)
+cop(sufficient-30, being-29)
+dep(conditions-17, sufficient-30)
+

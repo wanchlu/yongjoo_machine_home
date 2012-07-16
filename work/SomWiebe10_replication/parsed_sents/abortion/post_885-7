@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (SBAR
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP know)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBD killed)
+                    (NP (DT a) (NN human))))))))
+        (CC and)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD will)
+              (VP (VB rest)
+                (PP (IN on)
+                  (NP (PRP$ their) (NNS hearts)))
+                (PP (IN for)
+                  (NP (NN life)))))))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+mark(know-5, because-3)
+nsubj(know-5, they-4)
+dep('s-2, know-5)
+nsubj(killed-7, they-6)
+ccomp(know-5, killed-7)
+det(human-9, a-8)
+dobj(killed-7, human-9)
+nsubj(rest-13, that-11)
+aux(rest-13, will-12)
+dep('s-2, rest-13)
+conj_and(know-5, rest-13)
+poss(hearts-16, their-15)
+prep_on(rest-13, hearts-16)
+prep_for(rest-13, life-18)
+

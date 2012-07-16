@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN blanket) (NN ban))
+      (PP (IN on)
+        (NP (JJ partial) (NN birth) (NNS abortions))))
+    (VP (MD may)
+      (VP (VB make)
+        (S
+          (NP (PRP it))
+          (ADJP (JJ impossible)
+            (S
+              (VP (TO to)
+                (VP (VB save)
+                  (NP
+                    (NP
+                      (NP (DT a) (NN woman) (POS 's))
+                      (NN life))
+                    (PP (IN in)
+                      (NP (JJ certain) (JJ medical) (NNS circumstances)))))))))))
+    (. .)))
+
+det(ban-3, A-1)
+nn(ban-3, blanket-2)
+nsubj(make-9, ban-3)
+amod(abortions-7, partial-5)
+nn(abortions-7, birth-6)
+prep_on(ban-3, abortions-7)
+aux(make-9, may-8)
+root(ROOT-0, make-9)
+nsubj(impossible-11, it-10)
+xcomp(make-9, impossible-11)
+aux(save-13, to-12)
+xcomp(impossible-11, save-13)
+det(woman-15, a-14)
+poss(life-17, woman-15)
+dobj(save-13, life-17)
+amod(circumstances-21, certain-19)
+amod(circumstances-21, medical-20)
+prep_in(life-17, circumstances-21)
+
+(ROOT
+  (S
+    (VP (NN Note) (: :)
+      (S
+        (NP (DT some))
+        (NP
+          (NP (NNS bans))
+          (PP (IN on)
+            (NP (JJ partial) (NN birth) (NNS abortions))))
+        (, ,)
+        (S
+          (VP (VB allow)
+            (PP (IN for)
+              (NP (PRP them)))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP it))
+                (VP (MD would)
+                  (VP (VB save)
+                    (NP
+                      (NP (DT the) (NN life))
+                      (PP (IN of)
+                        (NP (DT the) (NN mother))))))))))))
+    (. .)))
+
+root(ROOT-0, Note-1)
+nsubj(allow-10, some-3)
+dep(allow-10, bans-4)
+amod(abortions-8, partial-6)
+nn(abortions-8, birth-7)
+prep_on(bans-4, abortions-8)
+parataxis(Note-1, allow-10)
+xcomp(Note-1, allow-10)
+prep_for(allow-10, them-12)
+advmod(save-16, when-13)
+nsubj(save-16, it-14)
+aux(save-16, would-15)
+advcl(allow-10, save-16)
+det(life-18, the-17)
+dobj(save-16, life-18)
+det(mother-21, the-20)
+prep_of(life-18, mother-21)
+

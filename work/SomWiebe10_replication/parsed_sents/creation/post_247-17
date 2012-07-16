@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (S
+      (NP (DT This) (NN conclusion))
+      (VP (VBD was) (RB not)
+        (VP (VBN based)
+          (PP (IN on)
+            (NP (DT a) (NN straw) (NN man))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (VP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP
+              (NP (VBG existing) (NNS data))
+              (PP (IN from)
+                (NP (NN HIV)))
+              (PRN (-LRB- -LRB-)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ has)
+                      (NP
+                        (NP (DT a) (NN mutation) (NN rate))
+                        (SBAR (IN that)
+                          (S
+                            (NP (DT some))
+                            (VP (MD would)
+                              (VP (VB call)
+                                (NP (DT the) (JJ evolutionary) (NN speed) (NN limit))))))))))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NP
+              (NP (NNP E.) (NNP coli))
+              (, ,)
+              (NP (NNP Malaria))
+              (, ,) (FW etc.))))))
+    (. .)))
+
+det(conclusion-2, This-1)
+nsubjpass(based-5, conclusion-2)
+auxpass(based-5, was-3)
+neg(based-5, not-4)
+ccomp(based-13, based-5)
+det(man-9, a-7)
+nn(man-9, straw-8)
+prep_on(based-5, man-9)
+nsubjpass(based-13, it-11)
+auxpass(based-13, was-12)
+root(ROOT-0, based-13)
+amod(data-16, existing-15)
+prep_on(based-13, data-16)
+prep_from(data-16, HIV-18)
+nsubj(has-21, which-20)
+dep(data-16, has-21)
+det(rate-24, a-22)
+nn(rate-24, mutation-23)
+dobj(has-21, rate-24)
+complm(call-28, that-25)
+nsubj(call-28, some-26)
+aux(call-28, would-27)
+dep(rate-24, call-28)
+det(limit-32, the-29)
+amod(limit-32, evolutionary-30)
+nn(limit-32, speed-31)
+dobj(call-28, limit-32)
+nn(coli-36, E.-35)
+appos(data-16, coli-36)
+appos(coli-36, Malaria-38)
+dep(coli-36, etc.-40)
+
+(ROOT
+  (S
+    (VP (VBZ Does) (RB n't)
+      (VP (VB seem)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT any) (NN straw) (NN man))
+              (ADVP (RB there)))))))
+    (. .)))
+
+aux(seem-3, Does-1)
+neg(seem-3, n't-2)
+root(ROOT-0, seem-3)
+aux(man-8, to-4)
+cop(man-8, be-5)
+det(man-8, any-6)
+nn(man-8, straw-7)
+xcomp(seem-3, man-8)
+advmod(man-8, there-9)
+

@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP one))
+        (VP (VBZ is)
+          (VP (VBG voting)
+            (PP (IN for)
+              (NP (NNP Obama)))
+            (SBAR
+              (ADVP (RB specifically))
+              (IN because)
+              (S
+                (NP (PRP he))
+                (VP (VBZ supports)
+                  (NP (NN abortion)))))))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (JJ formal) (NN cooperation)))
+    (. .)))
+
+mark(voting-4, If-1)
+nsubj(voting-4, one-2)
+aux(voting-4, is-3)
+advcl(cooperation-15, voting-4)
+prep_for(voting-4, Obama-6)
+advmod(supports-10, specifically-7)
+dep(supports-10, because-8)
+nsubj(supports-10, he-9)
+ccomp(voting-4, supports-10)
+dobj(supports-10, abortion-11)
+nsubj(cooperation-15, it-12)
+cop(cooperation-15, is-13)
+amod(cooperation-15, formal-14)
+root(ROOT-0, cooperation-15)
+

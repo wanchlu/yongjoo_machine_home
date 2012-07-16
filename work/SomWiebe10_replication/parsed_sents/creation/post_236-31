@@ -1,0 +1,113 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNS Plaintiffs))
+        (VP (MD aptly)
+          (VP (VB submit)
+            (PP (TO to)
+              (NP (DT the) (NNP Court)))))))
+    (, ,)
+    (S
+      (PP (IN throughout)
+        (NP (DT the) (JJ entire) (NN trial)))
+      (NP
+        (NP (RB only) (CD one) (NN piece))
+        (PP (IN of)
+          (NP (NN evidence))))
+      (VP (VBD generated)
+        (PP (IN by)
+          (NP
+            (NP (NNS Defendants))
+            (VP (VBN addressed)
+              (NP
+                (NP (DT the) (NN strength))
+                (PP (IN of)
+                  (NP (DT the) (NNP ID) (NN inference)))))))))
+    (: :)
+    (S
+      (NP (DT the) (NN argument))
+      (VP
+        (VP (VBZ is)
+          (ADJP (RBR less) (JJ plausible)
+            (PP (TO to)
+              (NP
+                (NP (DT those))
+                (PP (IN for)
+                  (SBAR
+                    (WHNP (WP whom))
+                    (S
+                      (NP (NNP God))
+                      (VP (VBZ s)
+                        (NP
+                          (NP (NN existence))
+                          (SBAR
+                            (S
+                              (VP (VBZ is)
+                                (PP (IN in)
+                                  (NP (NN question)))))))))))))))
+        (, ,)
+        (CC and)
+        (VP (VBZ is)
+          (ADJP
+            (ADJP (RB much) (RBR less) (JJ plausible))
+            (PP (IN for)
+              (NP
+                (NP (DT those))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP deny)
+                      (SBAR
+                        (S
+                          (NP (NNP God))
+                          (VP (VBZ s)
+                            (NP (NN existence))))))))))))))
+    (. .)))
+
+mark(aptly-3, As-1)
+nsubj(aptly-3, Plaintiffs-2)
+advcl(generated-18, aptly-3)
+dep(aptly-3, submit-4)
+det(Court-7, the-6)
+prep_to(submit-4, Court-7)
+det(trial-12, the-10)
+amod(trial-12, entire-11)
+prep_throughout(generated-18, trial-12)
+advmod(piece-15, only-13)
+num(piece-15, one-14)
+nsubj(generated-18, piece-15)
+prep_of(piece-15, evidence-17)
+root(ROOT-0, generated-18)
+prep_by(generated-18, Defendants-20)
+partmod(Defendants-20, addressed-21)
+det(strength-23, the-22)
+dobj(addressed-21, strength-23)
+det(inference-27, the-25)
+nn(inference-27, ID-26)
+prep_of(strength-23, inference-27)
+det(argument-30, the-29)
+nsubj(plausible-33, argument-30)
+nsubj(plausible-49, argument-30)
+cop(plausible-33, is-31)
+advmod(plausible-33, less-32)
+parataxis(generated-18, plausible-33)
+prep_to(plausible-33, those-35)
+dobj(existence-40, whom-37)
+nsubj(existence-40, God-38)
+cop(existence-40, s-39)
+prepc_for(those-35, existence-40)
+rcmod(existence-40, is-41)
+prep_in(is-41, question-43)
+cop(plausible-49, is-46)
+advmod(plausible-49, much-47)
+advmod(plausible-49, less-48)
+parataxis(generated-18, plausible-49)
+conj_and(plausible-33, plausible-49)
+prep_for(plausible-49, those-51)
+nsubj(deny-53, those-51)
+rcmod(those-51, deny-53)
+nsubj(existence-56, God-54)
+cop(existence-56, s-55)
+ccomp(deny-53, existence-56)
+

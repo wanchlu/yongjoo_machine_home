@@ -1,0 +1,50 @@
+(ROOT
+  (S (CC So)
+    (S
+      (NP (VB let) (POS 's))
+      (VP (VBP compare)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (DT the) (NNS accusations))))
+        (PP (IN with)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBD was)
+                (VP (VBN established)
+                  (PP (IN from)
+                    (NP (DT the) (NNS emails))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD will)
+        (VP (VB notice)
+          (NP
+            (NP (DT a)
+              (ADJP (RB very) (JJ different))
+              (NN picture))
+            (VP (VBG arising))))))
+    (. .)))
+
+dep('s-3, let-2)
+nsubj(compare-4, 's-3)
+root(ROOT-0, compare-4)
+dobj(compare-4, any-5)
+det(accusations-8, the-7)
+prep_of(any-5, accusations-8)
+nsubjpass(established-12, what-10)
+auxpass(established-12, was-11)
+prepc_with(compare-4, established-12)
+det(emails-15, the-14)
+prep_from(established-12, emails-15)
+nsubj(notice-20, you-18)
+aux(notice-20, will-19)
+conj_and(compare-4, notice-20)
+det(picture-24, a-21)
+advmod(different-23, very-22)
+amod(picture-24, different-23)
+dobj(notice-20, picture-24)
+partmod(picture-24, arising-25)
+

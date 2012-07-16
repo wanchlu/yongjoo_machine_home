@@ -1,0 +1,39 @@
+(ROOT
+  (FRAG
+    (ADJP
+      (WHADVP (WRB How))
+      (JJ unfortunate))
+    (SBAR (IN that)
+      (S
+        (NP
+          (NP (NNS decisions))
+          (PP (IN in)
+            (NP (NN life))))
+        (VP (VBP are)
+          (VP (VBN made)
+            (PP (RB because) (IN of)
+              (NP
+                (NP (DT the) (JJ geographical) (NN location))
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (PRP one))
+                    (VP (VBZ is)
+                      (VP (VBN born)))))))))))
+    (. .)))
+
+advmod(unfortunate-2, How-1)
+root(ROOT-0, unfortunate-2)
+dep(made-8, that-3)
+nsubjpass(made-8, decisions-4)
+prep_in(decisions-4, life-6)
+auxpass(made-8, are-7)
+dep(unfortunate-2, made-8)
+det(location-13, the-11)
+amod(location-13, geographical-12)
+prep_because_of(made-8, location-13)
+advmod(born-17, where-14)
+nsubjpass(born-17, one-15)
+auxpass(born-17, is-16)
+rcmod(location-13, born-17)
+

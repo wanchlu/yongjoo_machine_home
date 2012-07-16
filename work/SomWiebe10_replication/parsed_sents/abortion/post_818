@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (ADVP (RB Well))
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NN abortion))
+          (VP (VBZ is)
+            (ADJP (JJ disgusting))))))
+    (. .)))
+
+advmod(think-3, Well-1)
+nsubj(think-3, I-2)
+root(ROOT-0, think-3)
+nsubj(disgusting-6, abortion-4)
+cop(disgusting-6, is-5)
+ccomp(think-3, disgusting-6)
+
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (MD can)
+      (VP (VB lead)
+        (PP (TO to)
+          (NP
+            (NP (NNS problems))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP are)
+                  (ADJP
+                    (ADJP (RB far) (JJR worse))
+                    (PP (IN than)
+                      (NP (NN rape))))
+                  (, ,)
+                  (PP (IN like)
+                    (NP
+                      (NP (NNS infections))
+                      (PP (IN of)
+                        (NP (DT the) (NN uterus)
+                          (CC and)
+                          (NN sterilization))))))))))))
+    (. .)))
+
+nsubj(lead-3, Abortion-1)
+aux(lead-3, can-2)
+root(ROOT-0, lead-3)
+prep_to(lead-3, problems-5)
+nsubj(worse-9, problems-5)
+cop(worse-9, are-7)
+advmod(worse-9, far-8)
+rcmod(problems-5, worse-9)
+prep_than(worse-9, rape-11)
+prep_like(worse-9, infections-14)
+det(uterus-17, the-16)
+prep_of(infections-14, uterus-17)
+prep_of(infections-14, sterilization-19)
+conj_and(uterus-17, sterilization-19)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (NP
+        (NP (DT a) (NN risk))
+        (PP (IN of)
+          (NP (NN hemorrhaging)))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+advmod(is-2, also-3)
+det(risk-5, a-4)
+nsubj(is-2, risk-5)
+prep_of(risk-5, hemorrhaging-7)
+

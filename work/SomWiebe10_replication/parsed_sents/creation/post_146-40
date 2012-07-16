@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB instill)
+              (NP
+                (NP (DT a) (NN reason))
+                (PP (IN for)
+                  (NP (DT this) (NN search)))))))))
+    (: ...)
+    (S
+      (NP
+        (NP (DT a) (NN reward))
+        (PP (IN of)
+          (NP
+            (NP (NNS sorts))
+            (PP (IN since)
+              (S
+                (VP
+                  (ADVP (RB simply))
+                  (VBG knowing)
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP exist))))))))))
+      (VP (VBZ is) (RB not)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP
+                (ADVP (RB really))
+                (VB provide)
+                (NP
+                  (NP (NN meaning))
+                  (CC or)
+                  (RB even)
+                  (NP
+                    (NP (NN reason))
+                    (PP (TO to)
+                      (NP (NN search)))))))))))
+    (. ...)))
+
+nsubj(need-2, I-1)
+xsubj(instill-4, I-1)
+root(ROOT-0, need-2)
+aux(instill-4, to-3)
+xcomp(need-2, instill-4)
+det(reason-6, a-5)
+dobj(instill-4, reason-6)
+det(search-9, this-8)
+prep_for(reason-6, search-9)
+det(reward-12, a-11)
+nsubj(going-22, reward-12)
+xsubj(provide-25, reward-12)
+prep_of(reward-12, sorts-14)
+advmod(knowing-17, simply-16)
+prepc_since(sorts-14, knowing-17)
+nsubj(exist-19, I-18)
+ccomp(knowing-17, exist-19)
+aux(going-22, is-20)
+neg(going-22, not-21)
+parataxis(need-2, going-22)
+aux(provide-25, to-23)
+advmod(provide-25, really-24)
+xcomp(going-22, provide-25)
+dobj(provide-25, meaning-26)
+dobj(provide-25, even-28)
+advmod(meaning-26, even-28)
+conj_or(meaning-26, even-28)
+dep(meaning-26, reason-29)
+prep_to(reason-29, search-31)
+

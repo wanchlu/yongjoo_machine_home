@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (S
+      (NP (JJS Most) (NNS abortions))
+      (VP (VBP are)
+        (NP (NNS murders))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NNS mothers))
+      (VP (VBP are)
+        (PP (IN at)
+          (NP (JJS worst) (NNS accomplices)))
+        (NP
+          (NP (JJ the) ('' '') (NNS doctors))
+          ('' '')
+          (SBAR
+            (S
+              (VP (VBP are)
+                (NP (DT the) (NNS murderers))))))))
+    (. .)))
+
+amod(abortions-2, Most-1)
+nsubj(murders-4, abortions-2)
+cop(murders-4, are-3)
+root(ROOT-0, murders-4)
+det(mothers-8, the-7)
+nsubj(doctors-15, mothers-8)
+cop(doctors-15, are-9)
+amod(accomplices-12, worst-11)
+prep_at(doctors-15, accomplices-12)
+amod(doctors-15, the-13)
+conj_and(murders-4, doctors-15)
+cop(murderers-19, are-17)
+det(murderers-19, the-18)
+rcmod(doctors-15, murderers-19)
+

@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ does) (RB n't)
+        (VP (VB mean)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (MD can)
+                (VP (VB spit)
+                  (PP (IN on)
+                    (NP
+                      (NP (NN whomever))
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP want)
+                            (PP (TO to))))))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (DT no) (NN one))
+          (VP (MD can)
+            (VP (VB demand)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP you))
+                  (VP (VBP give)
+                    (NP (PRP them))
+                    (NP (PRP$ your) (NN spit)
+                      (CC or)
+                      (NN face) (NN jail)
+                      (CC and)
+                      (NNS fines))))))))))
+    (. .)))
+
+nsubj(mean-4, It-1)
+aux(mean-4, does-2)
+neg(mean-4, n't-3)
+ccomp(means-15, mean-4)
+nsubj(spit-7, you-5)
+aux(spit-7, can-6)
+ccomp(mean-4, spit-7)
+prep_on(spit-7, whomever-9)
+dobj(want-11, whomever-9)
+prep_to(want-11, whomever-9)
+nsubj(want-11, you-10)
+rcmod(whomever-9, want-11)
+nsubj(means-15, it-14)
+root(ROOT-0, means-15)
+det(one-17, no-16)
+nsubj(demand-19, one-17)
+aux(demand-19, can-18)
+ccomp(means-15, demand-19)
+complm(give-22, that-20)
+nsubj(give-22, you-21)
+ccomp(demand-19, give-22)
+iobj(give-22, them-23)
+poss(spit-25, your-24)
+dobj(give-22, spit-25)
+nn(jail-28, face-27)
+dobj(give-22, jail-28)
+conj_or(spit-25, jail-28)
+dobj(give-22, fines-30)
+conj_and(spit-25, fines-30)
+

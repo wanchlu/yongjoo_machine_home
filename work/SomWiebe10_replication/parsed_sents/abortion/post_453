@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP suffer)
+      (ADJP (JJ physically)
+        (CC and)
+        (RB psychologically))
+      (PP (IN after)
+        (S
+          (VP (VBG giving)
+            (NP (NN birth))))))
+    (. .)))
+
+nsubj(suffer-2, People-1)
+root(ROOT-0, suffer-2)
+acomp(suffer-2, physically-3)
+acomp(suffer-2, psychologically-5)
+advmod(physically-3, psychologically-5)
+conj_and(physically-3, psychologically-5)
+prepc_after(suffer-2, giving-7)
+dobj(giving-7, birth-8)
+
+(ROOT
+  (S
+    (ADVP (RB Heck))
+    (, ,)
+    (NP (NNS people))
+    (VP (VBP suffer)
+      (ADJP (JJ physically)
+        (CC and)
+        (RB psychologically))
+      (PP (IN after)
+        (NP (JJ open-heart) (NN surgery))))
+    (. .)))
+
+advmod(suffer-4, Heck-1)
+nsubj(suffer-4, people-3)
+root(ROOT-0, suffer-4)
+acomp(suffer-4, physically-5)
+acomp(suffer-4, psychologically-7)
+advmod(physically-5, psychologically-7)
+conj_and(physically-5, psychologically-7)
+amod(surgery-10, open-heart-9)
+prep_after(suffer-4, surgery-10)
+
+(ROOT
+  (S
+    (ADVP (RB Thusly))
+    (, ,)
+    (NP
+      (NP (NN birth))
+      (CC and)
+      (NP (JJ other)
+        (ADJP (JJ difficult)
+          (CC and)
+          (JJ dangerous))
+        (NNS operations)))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN made)
+          (S
+            (ADJP (JJ illegal))))))
+    (. .)))
+
+advmod(made-12, Thusly-1)
+nsubjpass(made-12, birth-3)
+amod(operations-9, other-5)
+amod(operations-9, difficult-6)
+conj_and(difficult-6, dangerous-8)
+amod(operations-9, dangerous-8)
+conj_and(birth-3, operations-9)
+nsubjpass(made-12, operations-9)
+aux(made-12, should-10)
+auxpass(made-12, be-11)
+root(ROOT-0, made-12)
+acomp(made-12, illegal-13)
+

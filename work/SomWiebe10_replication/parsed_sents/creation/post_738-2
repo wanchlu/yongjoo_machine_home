@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (ADVP (RB Surely))
+    (NP
+      (QP (DT all) (CD three))
+      (NNS groups))
+    (NP (NN today))
+    (VP (VBP include)
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP understand)
+              (NP (NN geology) (, ,) (NN astronomy)
+                (CC and)
+                (NN biology))
+              (PP (IN on)
+                (NP
+                  (NP (DT a)
+                    (ADJP (RB rather) (RBR more) (JJ comprehensive))
+                    (NN level))
+                  (PP (IN than)
+                    (NP
+                      (NP (DT the) (JJ iron-age) (NNS authors))
+                      (PP (IN of)
+                        (NP (NNP Genesis))))))))))))
+    (. ?)))
+
+advmod(include-6, Surely-1)
+quantmod(three-3, all-2)
+num(groups-4, three-3)
+nsubj(include-6, groups-4)
+nsubj(include-6, today-5)
+root(ROOT-0, include-6)
+dobj(include-6, people-7)
+nsubj(understand-9, people-7)
+rcmod(people-7, understand-9)
+dobj(understand-9, geology-10)
+dobj(understand-9, astronomy-12)
+conj_and(geology-10, astronomy-12)
+dobj(understand-9, biology-14)
+conj_and(geology-10, biology-14)
+det(level-20, a-16)
+advmod(comprehensive-19, rather-17)
+advmod(comprehensive-19, more-18)
+amod(level-20, comprehensive-19)
+prep_on(understand-9, level-20)
+det(authors-24, the-22)
+amod(authors-24, iron-age-23)
+prep_than(level-20, authors-24)
+prep_of(authors-24, Genesis-26)
+

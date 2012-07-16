@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS authors))
+      (PP (IN of)
+        (NP (DT the) (NNP Bible))))
+    (ADVP (RB never))
+    (VP (VBD imagined)
+      (S
+        (NP (PRP themselves))
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBG writing)
+              (NP
+                (NP (NN history))
+                (PP (IN in)
+                  (NP (DT the) (JJ modern) (NN sense)))))))))
+    (. .)))
+
+det(authors-2, The-1)
+nsubj(imagined-7, authors-2)
+det(Bible-5, the-4)
+prep_of(authors-2, Bible-5)
+neg(imagined-7, never-6)
+root(ROOT-0, imagined-7)
+nsubj(writing-11, themselves-8)
+aux(writing-11, to-9)
+aux(writing-11, be-10)
+xcomp(imagined-7, writing-11)
+dobj(writing-11, history-12)
+det(sense-16, the-14)
+amod(sense-16, modern-15)
+prep_in(history-12, sense-16)
+

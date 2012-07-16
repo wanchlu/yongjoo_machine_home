@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN government))
+        (VP (VBZ wants)
+          (NP (PRP it)))))
+    (NP (PRP they))
+    (VP (MD 'll)
+      (VP (VB get)
+        (NP (PRP it))
+        (SBAR (IN because)
+          (S
+            (NP (PRP you))
+            (ADVP (RB no) (RB longer))
+            (VP (VBP retain)
+              (NP
+                (NP (DT the) (NNS rights))
+                (SBAR
+                  (WHPP (TO to)
+                    (WHNP (WDT whatever)))
+                  (S
+                    (NP (PRP$ your) (NN body))
+                    (VP
+                      (VP (VBZ produces))
+                      (, ,)
+                      (CC or)
+                      (VP (VBZ sustains)))))))))))
+    (. .)))
+
+mark(wants-4, If-1)
+det(government-3, the-2)
+nsubj(wants-4, government-3)
+advcl(get-8, wants-4)
+dobj(wants-4, it-5)
+nsubj(get-8, they-6)
+aux(get-8, 'll-7)
+root(ROOT-0, get-8)
+dobj(get-8, it-9)
+mark(retain-14, because-10)
+nsubj(retain-14, you-11)
+advmod(longer-13, no-12)
+advmod(retain-14, longer-13)
+advcl(get-8, retain-14)
+det(rights-16, the-15)
+dobj(retain-14, rights-16)
+rel(produces-21, whatever-18)
+poss(body-20, your-19)
+nsubj(produces-21, body-20)
+nsubj(sustains-24, body-20)
+rcmod(rights-16, produces-21)
+rcmod(rights-16, sustains-24)
+conj_or(produces-21, sustains-24)
+

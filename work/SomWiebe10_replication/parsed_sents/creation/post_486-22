@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP I))
+      (VP (VBP disagree)))
+    (, ,)
+    (CC but)
+    (S
+      (NP (VB let) (POS 's))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (S
+              (NP (PRP they))
+              (VP (VBP 're)
+                (ADJP (JJ right))))
+            (CC and)
+            (S
+              (NP (DT this))
+              (VP (VBZ is)
+                (NP (DT a) (JJ low) (NN blow))))))))
+    (. .)))
+
+nsubj(disagree-3, I-2)
+root(ROOT-0, disagree-3)
+dep('s-7, let-6)
+nsubj(say-8, 's-7)
+conj_but(disagree-3, say-8)
+nsubj(right-11, they-9)
+cop(right-11, 're-10)
+dep(say-8, right-11)
+nsubj(blow-17, this-13)
+cop(blow-17, is-14)
+det(blow-17, a-15)
+amod(blow-17, low-16)
+dep(say-8, blow-17)
+conj_and(right-11, blow-17)
+

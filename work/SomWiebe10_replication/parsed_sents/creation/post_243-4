@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Evolution))
+      (PP (IN by)
+        (NP (JJ natural) (NN selection))))
+    (VP (VBZ is)
+      (NP (DT a) (JJ blind) (NN process))
+      (, ,)
+      (S
+        (VP (VBG taking)
+          (NP (DT no) (JJ possible) (JJ future) (NNS events))
+          (PP (IN into)
+            (NP
+              (NP (NN account))
+              (, ,)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ causes)
+                    (S
+                      (NP
+                        (NP (JJS most) (NNS lines))
+                        (PP (IN of)
+                          (NP (NNS organisms))))
+                      (VP (TO to)
+                        (VP (VB become)
+                          (NP (JJR more) (NNS specialized))
+                          (PP (IN over)
+                            (NP (NN time))))))))))))))
+    (. .)))
+
+nsubj(process-8, Evolution-1)
+amod(selection-4, natural-3)
+prep_by(Evolution-1, selection-4)
+cop(process-8, is-5)
+det(process-8, a-6)
+amod(process-8, blind-7)
+root(ROOT-0, process-8)
+partmod(process-8, taking-10)
+xcomp(process-8, taking-10)
+det(events-14, no-11)
+amod(events-14, possible-12)
+amod(events-14, future-13)
+dobj(taking-10, events-14)
+prep_into(taking-10, account-16)
+nsubj(causes-19, account-16)
+rcmod(account-16, causes-19)
+amod(lines-21, most-20)
+nsubj(specialized-27, lines-21)
+prep_of(lines-21, organisms-23)
+aux(specialized-27, to-24)
+cop(specialized-27, become-25)
+amod(specialized-27, more-26)
+xcomp(causes-19, specialized-27)
+prep_over(specialized-27, time-29)
+

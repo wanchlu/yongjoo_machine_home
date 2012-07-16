@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (CD one) (NN path))
+        (SBAR (IN that)
+          (S
+            (NP (DT all) (NNS species))
+            (VP (MD must)
+              (VP (VB mutate)
+                (PP (IN with))))))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN reason))
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (NP (NNS chimpanzees))
+                    (ADVP (RB still))
+                    (VP (VBP exist)
+                      (PP (TO to)
+                        (NP (DT this) (NN date))))))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(path-5, no-3)
+num(path-5, one-4)
+nsubj(is-2, path-5)
+prep_with(mutate-10, path-5)
+complm(mutate-10, that-6)
+det(species-8, all-7)
+nsubj(mutate-10, species-8)
+aux(mutate-10, must-9)
+dep(path-5, mutate-10)
+nsubj(reason-16, which-13)
+cop(reason-16, is-14)
+det(reason-16, the-15)
+rcmod(path-5, reason-16)
+advmod(exist-20, why-17)
+nsubj(exist-20, chimpanzees-18)
+advmod(exist-20, still-19)
+rcmod(reason-16, exist-20)
+det(date-23, this-22)
+prep_to(exist-20, date-23)
+

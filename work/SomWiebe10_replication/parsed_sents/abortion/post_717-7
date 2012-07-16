@@ -1,0 +1,60 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ wrong)
+              (S
+                (VP (TO to)
+                  (VP (VB kill)
+                    (NP
+                      (NP (NN someone))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBZ is)
+                            (ADJP (RB asleep))))))))))))
+        (, ,)
+        (CC and)
+        (S
+          (NP
+            (NP (PRP$ our) (NN value))
+            (PP (IN of)
+              (NP (DT a) (NN person))))
+          (VP (VBZ is) (RB not)
+            (VP (VBN based)
+              (PP (IN on)
+                (NP (NN potential))))))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (VBZ is)
+      (NP (PRP it))
+      (ADJP (JJ wrong)))
+    (. .)))
+
+mark(wrong-4, If-1)
+nsubj(wrong-4, it-2)
+cop(wrong-4, is-3)
+advcl(wrong-27, wrong-4)
+aux(kill-6, to-5)
+xcomp(wrong-4, kill-6)
+dobj(kill-6, someone-7)
+nsubj(asleep-10, someone-7)
+cop(asleep-10, is-9)
+rcmod(someone-7, asleep-10)
+poss(value-14, our-13)
+nsubjpass(based-20, value-14)
+det(person-17, a-16)
+prep_of(value-14, person-17)
+auxpass(based-20, is-18)
+neg(based-20, not-19)
+conj_and(wrong-4, based-20)
+advcl(wrong-27, based-20)
+prep_on(based-20, potential-22)
+advmod(wrong-27, why-24)
+cop(wrong-27, is-25)
+nsubj(wrong-27, it-26)
+root(ROOT-0, wrong-27)
+

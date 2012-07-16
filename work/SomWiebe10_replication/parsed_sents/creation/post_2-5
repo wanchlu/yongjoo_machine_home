@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ has)
+          (VP (VBN been)
+            (VP (VBN observed))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP (RB very) (JJ low))
+          (NN ceiling))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN number))
+            (PP (IN of)
+              (NP (NNS mutations))))))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NN economy))
+            (PP (IN of)
+              (NP (NN life))))
+          (VP (MD will)
+            (VP (VB allow)
+              (SBAR (IN before)
+                (S
+                  (NP (NN fitness) (NNS costs))
+                  (VP (VBP become)
+                    (ADJP (JJ fatal))))))))))
+    (. .)))
+
+nsubjpass(observed-4, What-1)
+aux(observed-4, has-2)
+auxpass(observed-4, been-3)
+csubj(ceiling-9, observed-4)
+cop(ceiling-9, is-5)
+det(ceiling-9, a-6)
+advmod(low-8, very-7)
+amod(ceiling-9, low-8)
+root(ROOT-0, ceiling-9)
+det(number-12, the-11)
+prep_for(ceiling-9, number-12)
+prep_of(number-12, mutations-14)
+complm(allow-21, that-15)
+det(economy-17, the-16)
+nsubj(allow-21, economy-17)
+prep_of(economy-17, life-19)
+aux(allow-21, will-20)
+ccomp(ceiling-9, allow-21)
+mark(fatal-26, before-22)
+nn(costs-24, fitness-23)
+nsubj(fatal-26, costs-24)
+cop(fatal-26, become-25)
+advcl(allow-21, fatal-26)
+

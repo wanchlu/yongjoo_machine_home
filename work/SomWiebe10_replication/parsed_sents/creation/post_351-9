@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (NP (DT the) (NN author))
+    (VP (VBZ suggests)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNS tools))
+          (VP (TO to)
+            (VP (VB detect)
+              (SBAR
+                (S
+                  (NP (DT these) (NNS anomalies))
+                  (VP (MD may)
+                    (VP (VB be)
+                      (VP (VBG lacking)))))))))))
+    (. .)))
+
+prep_in(suggests-6, fact-2)
+det(author-5, the-4)
+nsubj(suggests-6, author-5)
+root(ROOT-0, suggests-6)
+complm(detect-11, that-7)
+det(tools-9, the-8)
+nsubj(detect-11, tools-9)
+aux(detect-11, to-10)
+ccomp(suggests-6, detect-11)
+xcomp(suggests-6, detect-11)
+det(anomalies-13, these-12)
+nsubj(lacking-16, anomalies-13)
+aux(lacking-16, may-14)
+aux(lacking-16, be-15)
+ccomp(detect-11, lacking-16)
+

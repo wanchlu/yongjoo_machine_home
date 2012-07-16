@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (JJ Back-alley) (NNS abortions))
+    (VP (VBP are)
+      (NP
+        (NP (NNS abortions))
+        (VP (VBN performed)
+          (ADVP (RB illegally))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (`` ``) (NN black-market) ('' ''))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (NN abortion))
+                  (VP (VBZ is)
+                    (ADJP (RB generally) (JJ illegal))))))))))
+    (. .)))
+
+amod(abortions-2, Back-alley-1)
+nsubj(abortions-4, abortions-2)
+cop(abortions-4, are-3)
+root(ROOT-0, abortions-4)
+partmod(abortions-4, performed-5)
+advmod(performed-5, illegally-6)
+det(black-market-10, the-8)
+prep_on(performed-5, black-market-10)
+advmod(illegal-16, when-12)
+nsubj(illegal-16, abortion-13)
+cop(illegal-16, is-14)
+advmod(illegal-16, generally-15)
+dep(black-market-10, illegal-16)
+

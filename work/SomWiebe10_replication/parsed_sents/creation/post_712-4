@@ -1,0 +1,56 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (PRN (, ,)
+      (PP (IN in)
+        (NP (NN fact)))
+      (, ,))
+    (SQ (VBP conceal)
+      (NP (NN everything))
+      (VP (RB not)
+        (ADVP (RB already))
+        (VBN known)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (JJ iron-age) (NNS people))
+            (PP (IN of)
+              (NP (DT the) (NNP Middle) (NNP East)))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD wrote)
+              (NP (DT the) (NN book)))))))
+    (. ?)))
+
+advmod(known-10, Why-1)
+dep(known-10, in-3)
+pobj(in-3, fact-4)
+aux(known-10, conceal-6)
+nsubj(known-10, everything-7)
+neg(known-10, not-8)
+advmod(known-10, already-9)
+root(ROOT-0, known-10)
+det(people-14, the-12)
+amod(people-14, iron-age-13)
+prep_to(known-10, people-14)
+det(East-18, the-16)
+nn(East-18, Middle-17)
+prep_of(people-14, East-18)
+nsubj(wrote-20, who-19)
+ccomp(known-10, wrote-20)
+det(book-22, the-21)
+dobj(wrote-20, book-22)
+
+(ROOT
+  (SBARQ
+    (WHNP (WDT 6) (NN -RRB-))
+    (SQ (VBP Are)
+      (NP (PRP you))
+      (ADJP (JJ serious)))
+    (. ?)))
+
+attr(serious-5, 6-1)
+cop(serious-5, Are-3)
+nsubj(serious-5, you-4)
+root(ROOT-0, serious-5)
+

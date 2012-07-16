@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (DT Every) (NN sperm))
+    (VP (VBZ is)
+      (VP (VBN needed)
+        (PP (IN in)
+          (NP (PRP$ your) (NN neighborhood)))))
+    (. !)))
+
+det(sperm-2, Every-1)
+nsubjpass(needed-4, sperm-2)
+auxpass(needed-4, is-3)
+root(ROOT-0, needed-4)
+poss(neighborhood-7, your-6)
+prep_in(needed-4, neighborhood-7)
+
+(ROOT
+  (S
+    (ADVP (RB Hindus))
+    (, ,)
+    (S
+      (NP
+        (NP (NNP Taoists))
+        (, ,)
+        (VP (VBN Mormons))
+        (, ,))
+      (ADVP (RB just))
+      (VP (VB spill)
+        (NP (PRP theirs))
+        (ADVP (RB anywhere))))
+    (, ,)
+    (CC But)
+    (S
+      (NP (NNP God))
+      (VP (VBZ loves)
+        (NP
+          (NP (DT those))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP treat)
+                (NP (PRP$ their) (NN semen))
+                (PP (IN with)
+                  (NP (JJR more) (NN care)))))))))
+    (. .)))
+
+advmod(spill-8, Hindus-1)
+nsubj(spill-8, Taoists-3)
+partmod(Taoists-3, Mormons-5)
+advmod(spill-8, just-7)
+root(ROOT-0, spill-8)
+dobj(spill-8, theirs-9)
+advmod(spill-8, anywhere-10)
+nsubj(loves-14, God-13)
+conj_but(spill-8, loves-14)
+dobj(loves-14, those-15)
+nsubj(treat-17, those-15)
+rcmod(those-15, treat-17)
+poss(semen-19, their-18)
+dobj(treat-17, semen-19)
+amod(care-22, more-21)
+prep_with(treat-17, care-22)
+

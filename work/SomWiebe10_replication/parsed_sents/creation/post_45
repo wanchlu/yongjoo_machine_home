@@ -1,0 +1,159 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Einstein) (POS 's))
+        (NNS quotes))
+      (VP (VBP are) (RB not)
+        (ADJP (JJ supportive)
+          (PP (IN of)
+            (NP (NNP ID))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBG talking)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN fabric))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN universe))
+                (, ,) (RB not)
+                (NP (DT the) (NN means))))))
+        (PP (IN by)
+          (SBAR
+            (WHNP (WDT which) (NNS species))
+            (S
+              (VP (VB evolve)))))))
+    (. .)))
+
+poss(quotes-3, Einstein-1)
+nsubj(supportive-6, quotes-3)
+cop(supportive-6, are-4)
+neg(supportive-6, not-5)
+ccomp(talking-12, supportive-6)
+prep_of(supportive-6, ID-8)
+nsubj(talking-12, he-10)
+aux(talking-12, was-11)
+root(ROOT-0, talking-12)
+det(fabric-15, the-14)
+prep_about(talking-12, fabric-15)
+det(universe-18, the-17)
+prep_of(fabric-15, universe-18)
+neg(universe-18, not-20)
+det(means-22, the-21)
+dep(universe-18, means-22)
+det(species-25, which-24)
+nsubj(evolve-26, species-25)
+prepc_by(talking-12, evolve-26)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ common) (NN shell) (NN game))
+        (VP (VBN played)
+          (PP (IN by)
+            (NP (NNP ID) (NNS proponents))))))
+    (. .)))
+
+nsubj(game-6, This-1)
+cop(game-6, is-2)
+det(game-6, a-3)
+amod(game-6, common-4)
+nn(game-6, shell-5)
+root(ROOT-0, game-6)
+partmod(game-6, played-7)
+nn(proponents-10, ID-9)
+agent(played-7, proponents-10)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD setup)
+      (SBAR
+        (S
+          (NP
+            (NP (DT some) (NN premise))
+            (PP (VBN based)
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NN creation))
+                  (PP (IN of)
+                    (NP (DT the) (NN universe)))))))
+          (VP
+            (VP
+              (ADVP (RB then))
+              (VBP draw)
+              (NP
+                (NP (DT a) (NN conclusion))
+                (PP (IN about)
+                  (NP (NN evolution)))))
+            (CC and)
+            (VP (VBP hope)
+              (NP (DT that))
+              (ADVP (RB no)
+                (NP (CD one) (NNS notices))))))))
+    (. .)))
+
+nsubj(setup-2, They-1)
+root(ROOT-0, setup-2)
+det(premise-4, some-3)
+nsubj(draw-13, premise-4)
+nsubj(hope-19, premise-4)
+prepc_based_on(premise-4, on-6)
+det(creation-8, the-7)
+pobj(premise-4, creation-8)
+det(universe-11, the-10)
+prep_of(creation-8, universe-11)
+advmod(draw-13, then-12)
+ccomp(setup-2, draw-13)
+det(conclusion-15, a-14)
+dobj(draw-13, conclusion-15)
+prep_about(conclusion-15, evolution-17)
+ccomp(setup-2, hope-19)
+conj_and(draw-13, hope-19)
+dobj(hope-19, that-20)
+advmod(hope-19, no-21)
+num(notices-23, one-22)
+pobj(no-21, notices-23)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Evolution))
+      (CC and)
+      (NP
+        (NP (DT the) (NN creation))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN universe))
+            (PRN (-LRB- -LRB-)
+              (CC or)
+              (NP
+                (NP (DT the) (NN fabric))
+                (PP (IN of)
+                  (NP (DT the) (NN universe))))
+              (-RRB- -RRB-))))))
+    (VP (VBP are) (RB not)
+      (NP (DT the) (JJ same) (NN issue)))
+    (. .)))
+
+nsubj(issue-20, Evolution-1)
+det(creation-4, the-3)
+conj_and(Evolution-1, creation-4)
+nsubj(issue-20, creation-4)
+det(universe-7, the-6)
+prep_of(creation-4, universe-7)
+dep(fabric-11, or-9)
+det(fabric-11, the-10)
+dep(universe-7, fabric-11)
+det(universe-14, the-13)
+prep_of(fabric-11, universe-14)
+cop(issue-20, are-16)
+neg(issue-20, not-17)
+det(issue-20, the-18)
+amod(issue-20, same-19)
+root(ROOT-0, issue-20)
+

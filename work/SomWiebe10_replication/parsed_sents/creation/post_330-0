@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP (NNP F2XL))
+    (VP (VBD wrote) (: :) (`` ``)
+      (SBARQ (RB So)
+        (WHADVP (WRB why))
+        (SQ
+          (VP (VBP are) (RB n't)
+            (ADJP (JJ physicists)
+              (S
+                (VP (VBG saying)
+                  (SBAR
+                    (S
+                      (NP (NN gravity))
+                      (VP (VBZ is)
+                        (ADVP (RB as) (RB well))
+                        (VP (VBN established)
+                          (PP (IN as)
+                            (NP
+                              (NP (DT the) (NN theory))
+                              (PP (IN of)
+                                (NP (NN evolution))))))))))))))
+        (. ?)))))
+
+nsubj(wrote-2, F2XL-1)
+root(ROOT-0, wrote-2)
+advmod(physicists-9, So-5)
+advmod(physicists-9, why-6)
+cop(physicists-9, are-7)
+neg(physicists-9, n't-8)
+dep(wrote-2, physicists-9)
+dep(physicists-9, saying-10)
+nsubjpass(established-15, gravity-11)
+auxpass(established-15, is-12)
+advmod(well-14, as-13)
+mwe(well-14, as-13)
+advmod(established-15, well-14)
+ccomp(saying-10, established-15)
+det(theory-18, the-17)
+prep_as(established-15, theory-18)
+prep_of(theory-18, evolution-20)
+
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (ADJP (JJ obvious))))
+    (, ,)
+    (VP (VBZ is) (RB n't)
+      (NP (PRP it)))
+    (. ?)))
+
+nsubj(obvious-4, It-2)
+cop(obvious-4, is-3)
+ccomp(it-8, obvious-4)
+cop(it-8, is-6)
+neg(it-8, n't-7)
+root(ROOT-0, it-8)
+

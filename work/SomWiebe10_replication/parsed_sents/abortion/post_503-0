@@ -1,0 +1,119 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP we))
+        (VP (VBP grant)
+          (NP (JJ American) (NNS dollars))
+          (PP (TO to)
+            (NP
+              (NP (JJ foreign) (NN family) (NN planning) (NNS clinics))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP use)
+                    (NP (PRP$ their) (JJ private) (, ,) (JJ non-US) (NNS funds))
+                    (PP (IN for)
+                      (NP (NNS abortions)))))))))))
+    (, ,)
+    (NP (PRP we))
+    (ADVP (RB still))
+    (VP
+      (ADVP (RB indirectly))
+      (VBP fund)
+      (NP (NN abortion)))
+    (. .)))
+
+advmod(grant-3, When-1)
+nsubj(grant-3, we-2)
+advcl(fund-24, grant-3)
+amod(dollars-5, American-4)
+dobj(grant-3, dollars-5)
+amod(clinics-10, foreign-7)
+nn(clinics-10, family-8)
+nn(clinics-10, planning-9)
+prep_to(grant-3, clinics-10)
+nsubj(use-12, clinics-10)
+rcmod(clinics-10, use-12)
+poss(funds-17, their-13)
+amod(funds-17, private-14)
+amod(funds-17, non-US-16)
+dobj(use-12, funds-17)
+prep_for(use-12, abortions-19)
+nsubj(fund-24, we-21)
+advmod(fund-24, still-22)
+advmod(fund-24, indirectly-23)
+root(ROOT-0, fund-24)
+dobj(fund-24, abortion-25)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN way))
+        (PP (IN around)
+          (NP
+            (NP (DT this))
+            (, ,)
+            (SBAR (IN as)
+              (S
+                (S
+                  (VP (VBG giving)
+                    (NP (PDT such) (DT an) (NN organization))
+                    (NP
+                      (NP (NNS funds))
+                      (PP (IN for)
+                        (NP
+                          (NP (DT any))
+                          (PP (IN of)
+                            (NP (PRP$ their) (JJ other) (NNS services))))))))
+                (VP (VBZ frees)
+                  (PRT (RP up))
+                  (NP (PRP$ their) (JJ private) (, ,) (JJ non-US) (NNS funds))
+                  (PP (IN for)
+                    (NP
+                      (NP (NNS abortions))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (MD would)
+                            (ADVP (RB otherwise))
+                            (VP (VB be)
+                              (VP (VBN used)
+                                (PP (IN on)
+                                  (NP (DT the) (JJ other) (NNS services)))))))))))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(way-4, no-3)
+nsubj(is-2, way-4)
+prep_around(way-4, this-6)
+mark(frees-20, as-8)
+csubj(frees-20, giving-9)
+predet(organization-12, such-10)
+det(organization-12, an-11)
+iobj(giving-9, organization-12)
+dobj(giving-9, funds-13)
+prep_for(funds-13, any-15)
+poss(services-19, their-17)
+amod(services-19, other-18)
+prep_of(any-15, services-19)
+dep(this-6, frees-20)
+prt(frees-20, up-21)
+poss(funds-26, their-22)
+amod(funds-26, private-23)
+amod(funds-26, non-US-25)
+dobj(frees-20, funds-26)
+prep_for(frees-20, abortions-28)
+nsubjpass(used-33, abortions-28)
+aux(used-33, would-30)
+advmod(used-33, otherwise-31)
+auxpass(used-33, be-32)
+rcmod(abortions-28, used-33)
+det(services-37, the-35)
+amod(services-37, other-36)
+prep_on(used-33, services-37)
+

@@ -1,0 +1,60 @@
+(ROOT
+  (FRAG ('' '')
+    (NP (JJ Can) (JJ Catholics) (NN Vote))
+    (PP (IN For)
+      (NP (NNP Pro-Choice) (NNP Politicians) ('' '')))
+    (. .)))
+
+amod(Vote-4, Can-2)
+amod(Vote-4, Catholics-3)
+root(ROOT-0, Vote-4)
+dep(Vote-4, For-5)
+nn(Politicians-7, Pro-Choice-6)
+pobj(For-5, Politicians-7)
+
+(ROOT
+  (S
+    (PP
+      (NP (NNP Fisrt))
+      (IN Off))
+    (, ,)
+    (NP
+      (NP (DT The) (JJ only) (NN individual))
+      (ADJP (VBN qualified)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB answer))
+              (CC or)
+              (VP (VB have)
+                (NP
+                  (NP (DT an) (NN opinion))
+                  (PP (IN in)
+                    (NP (PDT such) (DT a) (NN matter))))))))))
+    (VP (MD should)
+      (ADVP (RB rightly))
+      (VP (VB be)
+        (NP (DT a) (NNP Catholic))))
+    (. .)))
+
+dep(Off-2, Fisrt-1)
+prep(Catholic-22, Off-2)
+det(individual-6, The-4)
+amod(individual-6, only-5)
+nsubj(Catholic-22, individual-6)
+amod(individual-6, qualified-7)
+aux(answer-9, to-8)
+xcomp(qualified-7, answer-9)
+xcomp(qualified-7, have-11)
+conj_or(answer-9, have-11)
+det(opinion-13, an-12)
+dobj(have-11, opinion-13)
+predet(matter-17, such-15)
+det(matter-17, a-16)
+prep_in(opinion-13, matter-17)
+aux(Catholic-22, should-18)
+advmod(Catholic-22, rightly-19)
+cop(Catholic-22, be-20)
+det(Catholic-22, a-21)
+root(ROOT-0, Catholic-22)
+

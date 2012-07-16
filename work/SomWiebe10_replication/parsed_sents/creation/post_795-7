@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN read)
+          (PP (IN through)
+            (NP
+              (NP (DT the) (NNS theories))
+              (CC and)
+              (NP (DT the) (NN evidence)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP agree)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJ common) (NN consensus))
+            (PP (IN about)
+              (NP
+                (NP (DT the) (NN age)
+                  (CC and)
+                  (NN creation))
+                (PP (IN of)
+                  (NP (DT the) (NN earth)))))))))
+    (. .)))
+
+nsubj(read-3, I-1)
+aux(read-3, 've-2)
+root(ROOT-0, read-3)
+det(theories-6, the-5)
+prep_through(read-3, theories-6)
+det(evidence-9, the-8)
+prep_through(read-3, evidence-9)
+conj_and(theories-6, evidence-9)
+nsubj(agree-13, I-12)
+conj_and(read-3, agree-13)
+det(consensus-17, the-15)
+amod(consensus-17, common-16)
+prep_with(agree-13, consensus-17)
+det(age-20, the-19)
+prep_about(consensus-17, age-20)
+prep_about(consensus-17, creation-22)
+conj_and(age-20, creation-22)
+det(earth-25, the-24)
+prep_of(age-20, earth-25)
+

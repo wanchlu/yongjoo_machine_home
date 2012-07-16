@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (NNP ID) (NNS scientists))
+    (VP (VBP are)
+      (VP (VBG saying) ('' '')
+        (NP
+          (NP (PRP I))
+          (SBAR
+            (S
+              (VP (VBP do) (RB n't)
+                (VP (VB think))))))
+        (SBAR (IN that)
+          (S
+            (VP
+              (VP (MD will)
+                (VP (VB happen)))
+              (CC and)
+              (ADVP (RB here))
+              (VP (VBZ is)
+                (ADJP (JJ why))))))))
+    (. .)))
+
+nn(scientists-2, ID-1)
+nsubj(saying-4, scientists-2)
+aux(saying-4, are-3)
+root(ROOT-0, saying-4)
+dobj(saying-4, I-6)
+aux(think-9, do-7)
+neg(think-9, n't-8)
+rcmod(I-6, think-9)
+complm(happen-12, that-10)
+aux(happen-12, will-11)
+ccomp(saying-4, happen-12)
+ccomp(saying-4, here-14)
+advmod(happen-12, here-14)
+conj_and(happen-12, here-14)
+cop(why-16, is-15)
+ccomp(saying-4, why-16)
+conj_and(happen-12, why-16)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Does))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP mean)
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (MD should) (RB not)
+                  (VP (VB listen)
+                    (PP (TO to)
+                      (NP (NN anything)))))))))))
+    (PRN
+      (S
+        (NP (PRP they))
+        (VP (VBP have)
+          (VP (VBN said)
+            (PP (VBN based)
+              (PP (IN on)
+                (NP (NNS choices))))))))
+    (NP (PRP they))
+    (VP (VBD made)
+      (ADVP (RB prior)))
+    (. .)))
+
+nsubj(mean-3, Does-1)
+nsubj(made-17, Does-1)
+rcmod(Does-1, mean-3)
+nsubj(listen-7, we-4)
+aux(listen-7, should-5)
+neg(listen-7, not-6)
+ccomp(mean-3, listen-7)
+prep_to(listen-7, anything-9)
+nsubj(said-12, they-10)
+aux(said-12, have-11)
+parataxis(made-17, said-12)
+prepc_based_on(said-12, on-14)
+pobj(said-12, choices-15)
+nsubj(made-17, they-16)
+root(ROOT-0, made-17)
+advmod(made-17, prior-18)
+

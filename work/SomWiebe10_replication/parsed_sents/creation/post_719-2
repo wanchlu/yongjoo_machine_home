@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (MD would) (RB not)
+        (VP (VB happen)
+          (PP (IN by)
+            (NP (NN chance))))))
+    (: ...)
+    (S
+      (PP (IN for)
+        (NP
+          (NP (NN example))
+          (SBAR (IN if)
+            (S
+              (NP (PRP it))
+              (VP (VBD were)
+                (ADJP (JJ possible)
+                  (S
+                    (VP (TO to)
+                      (VP (VB stand)
+                        (PP (IN on)
+                          (NP
+                            (NP (DT the) (NN surface))
+                            (PP (IN of)
+                              (NP (NNP Jupiter))))))))))))))
+      (NP (PRP I))
+      (ADVP (RB highly))
+      (VP (VBP doubt)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT any) (CD 1))
+              (PP (IN of)
+                (NP
+                  (NP (PRP it) (POS 's))
+                  (CD 63) (JJ orbiting) (NNS bodies))))
+            (VP (MD would)
+              (VP (VB exhibit)
+                (NP (DT the) (JJ same) (NN effect))))))))
+    (. .)))
+
+nsubj(happen-4, This-1)
+aux(happen-4, would-2)
+neg(happen-4, not-3)
+root(ROOT-0, happen-4)
+prep_by(happen-4, chance-6)
+prep_for(doubt-23, example-9)
+mark(possible-13, if-10)
+nsubj(possible-13, it-11)
+cop(possible-13, were-12)
+dep(example-9, possible-13)
+aux(stand-15, to-14)
+xcomp(possible-13, stand-15)
+det(surface-18, the-17)
+prep_on(stand-15, surface-18)
+prep_of(surface-18, Jupiter-20)
+nsubj(doubt-23, I-21)
+advmod(doubt-23, highly-22)
+parataxis(happen-4, doubt-23)
+complm(exhibit-34, that-24)
+det(1-26, any-25)
+nsubj(exhibit-34, 1-26)
+poss(bodies-32, it-28)
+num(bodies-32, 63-30)
+amod(bodies-32, orbiting-31)
+prep_of(1-26, bodies-32)
+aux(exhibit-34, would-33)
+ccomp(doubt-23, exhibit-34)
+det(effect-37, the-35)
+amod(effect-37, same-36)
+dobj(exhibit-34, effect-37)
+

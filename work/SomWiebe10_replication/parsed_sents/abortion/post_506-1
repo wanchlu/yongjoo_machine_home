@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ fair))))))
+    (, ,)
+    (NP (NNS numbers))
+    (VP (VBD wise)
+      (SBAR
+        (S (, ,)
+          (ADVP (RB usually))
+          (ADVP (RB so))
+          (VP (VBP are)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP think)
+                    (SBAR
+                      (S
+                        (NP (NN abortion))
+                        (VP (MD should)
+                          (VP (VB be)
+                            (ADJP (JJ legal)
+                              (PP (IN in)
+                                (NP (DT all) (NNS circumstances))))))))))))))))
+    (. .)))
+
+mark(fair-4, Although-1)
+aux(fair-4, to-2)
+cop(fair-4, be-3)
+advcl(wise-7, fair-4)
+nsubj(wise-7, numbers-6)
+root(ROOT-0, wise-7)
+advmod(those-12, usually-9)
+advmod(those-12, so-10)
+cop(those-12, are-11)
+ccomp(wise-7, those-12)
+nsubj(think-14, those-12)
+rcmod(those-12, think-14)
+nsubj(legal-18, abortion-15)
+aux(legal-18, should-16)
+cop(legal-18, be-17)
+ccomp(think-14, legal-18)
+det(circumstances-21, all-20)
+prep_in(legal-18, circumstances-21)
+

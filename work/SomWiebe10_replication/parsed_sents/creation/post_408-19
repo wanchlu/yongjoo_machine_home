@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNP Because))
+    (VP (VBZ :1))
+    (. .) (-RRB- -RRB-)))
+
+nsubj(:1-2, Because-1)
+root(ROOT-0, :1-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP
+        (ADJP
+          (NP (CD 100) (NN %))
+          (JJ certain))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (ADVP (RB really))
+              (ADVP (RB here)))))))
+    (. .)))
+
+nsubj(certain-5, I-1)
+cop(certain-5, am-2)
+num(%-4, 100-3)
+npadvmod(certain-5, %-4)
+root(ROOT-0, certain-5)
+complm(am-8, that-6)
+nsubj(am-8, I-7)
+ccomp(certain-5, am-8)
+advmod(am-8, really-9)
+advmod(am-8, here-10)
+

@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (VBD had)
+          (NP
+            (NP (PRP$ my) (JJ first) (NN ultrasound))
+            (PP (IN with)
+              (NP (PRP$ my) (NN son)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD was)
+      (ADJP
+        (NP (CD 5) (NNS weeks))
+        (JJ pregnant))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ means)
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBD had)
+                  (VP (VBN become)
+                    (ADJP (JJ pregnant))
+                    (ADVP
+                      (NP (CD 3) (NNS weeks))
+                      (RB prior))))))))))
+    (. .)))
+
+advmod(had-3, When-1)
+nsubj(had-3, I-2)
+advcl(pregnant-15, had-3)
+poss(ultrasound-6, my-4)
+amod(ultrasound-6, first-5)
+dobj(had-3, ultrasound-6)
+poss(son-9, my-8)
+prep_with(ultrasound-6, son-9)
+nsubj(pregnant-15, I-11)
+cop(pregnant-15, was-12)
+num(weeks-14, 5-13)
+tmod(pregnant-15, weeks-14)
+root(ROOT-0, pregnant-15)
+nsubj(means-18, which-17)
+ccomp(pregnant-15, means-18)
+nsubj(pregnant-22, I-19)
+aux(pregnant-22, had-20)
+cop(pregnant-22, become-21)
+ccomp(means-18, pregnant-22)
+num(weeks-24, 3-23)
+npadvmod(prior-25, weeks-24)
+advmod(pregnant-22, prior-25)
+

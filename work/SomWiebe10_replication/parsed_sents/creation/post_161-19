@@ -1,0 +1,54 @@
+(ROOT
+  (S ('' '')
+    (S
+      (S
+        (ADJP
+          (ADJP (-LRB- -LRB-)
+            (NP
+              (QP (CD 5)))
+            (-RRB- -RRB-))
+          (SBAR
+            (WHADVP (WRB When))
+            (`` ``)
+            (S
+              (NP (DT an) (JJ intelligent) (NN agent))
+              (VP (VBZ acts))))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ chooses)
+        (PP (IN from)
+          (NP
+            (NP (DT a) (NN range))
+            (PP (IN of)
+              (NP (VBG competing) (NNS possibilities)))
+            ('' '')
+            (SBAR
+              (S
+                (VP (TO to)
+                  (VP (VB create)
+                    (NP (DT some) (NN complex))))))))))
+    (CC and)
+    (S
+      (NP (VBN specified))
+      (VP (VBZ event)))
+    (. .)))
+
+ccomp(chooses-13, 5-3)
+advmod(acts-10, When-5)
+det(agent-9, an-7)
+amod(agent-9, intelligent-8)
+nsubj(acts-10, agent-9)
+dep(5-3, acts-10)
+nsubj(chooses-13, it-12)
+root(ROOT-0, chooses-13)
+det(range-16, a-15)
+prep_from(chooses-13, range-16)
+amod(possibilities-19, competing-18)
+prep_of(range-16, possibilities-19)
+aux(create-22, to-21)
+infmod(range-16, create-22)
+det(complex-24, some-23)
+dobj(create-22, complex-24)
+nsubj(event-27, specified-26)
+conj_and(chooses-13, event-27)
+

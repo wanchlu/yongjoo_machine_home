@@ -1,0 +1,45 @@
+(ROOT
+  (FRAG
+    (X (NN etc.))
+    (VP (VBZ etc.))
+    (. .)))
+
+dep(etc.-2, etc.-1)
+root(ROOT-0, etc.-2)
+
+(ROOT
+  (S (IN So)
+    (NP (DT that))
+    (VP (VBZ leads)
+      (NP (PRP us))
+      (PP (TO to)
+        (NP (DT the) (NN conclusion)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (MD ca) (RB n't)
+            (VP (VB rule)
+              (PRT (RP out))
+              (NP
+                (NP (NN symbolism))
+                (PP (IN in)
+                  (NP (DT any) (JJ other) (NN passage)))))))))
+    (. .)))
+
+dep(leads-3, So-1)
+nsubj(leads-3, that-2)
+root(ROOT-0, leads-3)
+dobj(leads-3, us-4)
+det(conclusion-7, the-6)
+prep_to(leads-3, conclusion-7)
+complm(rule-12, that-8)
+nsubj(rule-12, you-9)
+aux(rule-12, ca-10)
+neg(rule-12, n't-11)
+ccomp(leads-3, rule-12)
+prt(rule-12, out-13)
+dobj(rule-12, symbolism-14)
+det(passage-18, any-16)
+amod(passage-18, other-17)
+prep_in(symbolism-14, passage-18)
+

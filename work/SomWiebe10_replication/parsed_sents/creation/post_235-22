@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ has)
+          (NP (JJ good) (NNS reasons)
+            (S
+              (VP (TO to)
+                (VP (VB want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB return)
+                        (PP (TO to)
+                          (NP (DT the) (JJ pre-Paleyian) (NN age)))))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ presents)
+      (S
+        (NP (DT no) (NNS methods))
+        (VP (TO to)
+          (VP (VB differentiate)
+            (PP (IN between)
+              (NP
+                (ADJP (JJ apparent)
+                  (CC and)
+                  (JJ actual))
+                (NN design)))))))
+    (. .)))
+
+mark(has-3, While-1)
+nsubj(has-3, ID-2)
+advcl(presents-16, has-3)
+amod(reasons-5, good-4)
+dobj(has-3, reasons-5)
+aux(want-7, to-6)
+infmod(reasons-5, want-7)
+aux(return-9, to-8)
+xcomp(want-7, return-9)
+det(age-13, the-11)
+amod(age-13, pre-Paleyian-12)
+prep_to(return-9, age-13)
+nsubj(presents-16, it-15)
+root(ROOT-0, presents-16)
+det(methods-18, no-17)
+nsubj(differentiate-20, methods-18)
+aux(differentiate-20, to-19)
+xcomp(presents-16, differentiate-20)
+amod(design-25, apparent-22)
+conj_and(apparent-22, actual-24)
+amod(design-25, actual-24)
+prep_between(differentiate-20, design-25)
+

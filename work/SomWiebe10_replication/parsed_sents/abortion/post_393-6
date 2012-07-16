@@ -1,0 +1,84 @@
+(ROOT
+  (SQ
+    (SBAR (IN As)
+      (S
+        (NP (PRP we))
+        (ADVP (DT all))
+        (VP (VBP are)
+          (VP (VBN entitled)
+            (S
+              (VP (TO to)
+                (VP (VB assume)
+                  (NP
+                    (NP (DT the) (NN responsability))
+                    (PP (IN of)
+                      (NP (PRP$ our) (NNS actions)))))))))))
+    (, ,) (MD should) (RB n't)
+    (NP (PRP we))
+    (VP (VB expect)
+      (NP
+        (NP (DT the) (NN mother))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD chose)
+              (S
+                (VP (TO to)
+                  (VP (VB have)
+                    (NP (NN sex))
+                    (S
+                      (VP (TO to)
+                        (VP
+                          (ADVP (RB now))
+                          (VB take)
+                          (NP
+                            (NP (NN care))
+                            (PP (IN of)
+                              (NP
+                                (NP (DT this) (JJ new) (NN life))
+                                (SBAR
+                                  (WHNP (WDT that))
+                                  (S
+                                    (VP (VBZ bears)
+                                      (NP
+                                        (NP (DT no) (NN responsability))
+                                        (PP (IN in)
+                                          (NP (VBG existing)))))))))))))))))))))
+    (. ?)))
+
+mark(entitled-5, As-1)
+nsubjpass(entitled-5, we-2)
+xsubj(assume-7, we-2)
+advmod(entitled-5, all-3)
+auxpass(entitled-5, are-4)
+advcl(expect-17, entitled-5)
+aux(assume-7, to-6)
+xcomp(entitled-5, assume-7)
+det(responsability-9, the-8)
+dobj(assume-7, responsability-9)
+poss(actions-12, our-11)
+prep_of(responsability-9, actions-12)
+aux(expect-17, should-14)
+neg(expect-17, n't-15)
+nsubj(expect-17, we-16)
+root(ROOT-0, expect-17)
+det(mother-19, the-18)
+dobj(expect-17, mother-19)
+nsubj(chose-21, mother-19)
+rcmod(mother-19, chose-21)
+aux(have-23, to-22)
+xcomp(chose-21, have-23)
+dobj(have-23, sex-24)
+aux(take-27, to-25)
+advmod(take-27, now-26)
+xcomp(have-23, take-27)
+dobj(take-27, care-28)
+det(life-32, this-30)
+amod(life-32, new-31)
+prep_of(care-28, life-32)
+nsubj(bears-34, life-32)
+rcmod(life-32, bears-34)
+det(responsability-36, no-35)
+dobj(bears-34, responsability-36)
+prep_in(responsability-36, existing-38)
+

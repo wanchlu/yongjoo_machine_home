@@ -1,0 +1,27 @@
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (DT the) (NNP Holocaust)))
+    (, ,)
+    (NP
+      (QP (RB approximately) (CD 11) (CD million))
+      (NNS people))
+    (VP (VBD were)
+      (VP (VBN killed)
+        (PP (IN between)
+          (NP (CD 1933)))
+        (PP (IN till)
+          (NP (CD 1945)))))
+    (. .)))
+
+det(Holocaust-3, the-2)
+prep_during(killed-10, Holocaust-3)
+quantmod(million-7, approximately-5)
+number(million-7, 11-6)
+num(people-8, million-7)
+nsubjpass(killed-10, people-8)
+auxpass(killed-10, were-9)
+root(ROOT-0, killed-10)
+prep_between(killed-10, 1933-12)
+prep_till(killed-10, 1945-14)
+

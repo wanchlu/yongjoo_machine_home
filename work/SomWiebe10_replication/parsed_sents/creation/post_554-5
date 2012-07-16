@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (NNP SETI) (NNP faithful))
+    (VP (VBP are)
+      (VP (VBG looking)
+        (PP (IN for)
+          (NP
+            (NP (NNS signs))
+            (PP (IN of)
+              (NP (JJ intelligent) (NN design)))))
+        (PP (IN in)
+          (NP
+            (NP (NN space) (NN noise) (NN stuff))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can) (RB not)
+                  (VP (VB be)
+                    (VP
+                      (VP (VBN attributed)
+                        (PP (TO to)
+                          (NP (DT a) (JJ natural) (NN source))))
+                      (CC or)
+                      (VP (VBN explained)
+                        (PP (IN by)
+                          (NP (JJ natural) (NNS means)))))))))))))
+    (. .)))
+
+nn(faithful-2, SETI-1)
+nsubj(looking-4, faithful-2)
+aux(looking-4, are-3)
+root(ROOT-0, looking-4)
+prep_for(looking-4, signs-6)
+amod(design-9, intelligent-8)
+prep_of(signs-6, design-9)
+nn(stuff-13, space-11)
+nn(stuff-13, noise-12)
+prep_in(looking-4, stuff-13)
+nsubjpass(attributed-18, stuff-13)
+nsubjpass(explained-24, stuff-13)
+aux(attributed-18, can-15)
+neg(attributed-18, not-16)
+auxpass(attributed-18, be-17)
+rcmod(stuff-13, attributed-18)
+det(source-22, a-20)
+amod(source-22, natural-21)
+prep_to(attributed-18, source-22)
+rcmod(stuff-13, explained-24)
+conj_or(attributed-18, explained-24)
+amod(means-27, natural-26)
+prep_by(explained-24, means-27)
+

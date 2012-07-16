@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBG paying)
+              (NP (NN attention))
+              (PP (TO to)
+                (NP (JJ national) (NNS polls))))))))
+    (NP (PRP you))
+    (VP (MD 'd)
+      (VP (VB discover)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT a) (NN majority))
+              (PP (IN of)
+                (NP (NNPS Americans))))
+            (VP (VBP support)
+              (NP
+                (NP (DT a) (NN woman) (POS 's))
+                (NN right))
+              (PP (TO to)
+                (NP (DT a) (JJ legal) (NN abortion))))))))
+    (. .)))
+
+mark(paying-5, If-1)
+nsubj(paying-5, you-2)
+aux(paying-5, have-3)
+aux(paying-5, been-4)
+advcl(discover-12, paying-5)
+dobj(paying-5, attention-6)
+amod(polls-9, national-8)
+prep_to(paying-5, polls-9)
+nsubj(discover-12, you-10)
+aux(discover-12, 'd-11)
+root(ROOT-0, discover-12)
+complm(support-18, that-13)
+det(majority-15, a-14)
+nsubj(support-18, majority-15)
+prep_of(majority-15, Americans-17)
+ccomp(discover-12, support-18)
+det(woman-20, a-19)
+poss(right-22, woman-20)
+dobj(support-18, right-22)
+det(abortion-26, a-24)
+amod(abortion-26, legal-25)
+prep_to(support-18, abortion-26)
+
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ does) (RB not)
+      (VP (VB kill)
+        (NP (`` ``)
+          (NP (NNS children))
+          ('' '')
+          (SBAR
+            (S
+              (NP (PRP it))
+              (ADVP (RB simply))
+              (VP (VBZ stops)
+                (NP
+                  (NP (DT the) (NN growth))
+                  (PP (IN of)
+                    (NP (DT an) (NN embryo))))))))))
+    (. .)))
+
+nsubj(kill-4, Abortion-1)
+aux(kill-4, does-2)
+neg(kill-4, not-3)
+root(ROOT-0, kill-4)
+dobj(kill-4, children-6)
+nsubj(stops-10, it-8)
+advmod(stops-10, simply-9)
+rcmod(children-6, stops-10)
+det(growth-12, the-11)
+dobj(stops-10, growth-12)
+det(embryo-15, an-14)
+prep_of(growth-12, embryo-15)
+

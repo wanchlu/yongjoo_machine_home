@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Risk-taking)
+        (CC and)
+        (NNS disorders) (NN lead))
+      (PP (TO to)
+        (NP
+          (NP (NNS abortions))
+          (: ;)
+          (ADVP (RB not)
+            (NP (DT the) (JJ opposite)))
+          (NP (DT This) (NN argument)))))
+    (VP (VBZ is)
+      (ADVP (RB partly))
+      (NP
+        (NP (DT a) (NN response))
+        (PP (TO to)
+          (NP
+            (NP (NNS studies))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP claim)
+                  (SBAR (IN that)
+                    (S
+                      (NP (EX there))
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT a) (NN correlation))
+                          (PP (IN between)
+                            (NP (NN abortion)
+                              (CC and)
+                              (JJ mental) (NNS disorders))))))))))))))
+    (. .)))
+
+nn(lead-4, Risk-taking-1)
+conj_and(Risk-taking-1, disorders-3)
+nn(lead-4, disorders-3)
+nsubj(response-16, lead-4)
+prep_to(lead-4, abortions-6)
+advmod(abortions-6, not-8)
+det(opposite-10, the-9)
+pobj(not-8, opposite-10)
+det(argument-12, This-11)
+dep(abortions-6, argument-12)
+cop(response-16, is-13)
+advmod(response-16, partly-14)
+det(response-16, a-15)
+root(ROOT-0, response-16)
+prep_to(response-16, studies-18)
+nsubj(claim-20, studies-18)
+rcmod(studies-18, claim-20)
+complm(is-23, that-21)
+expl(is-23, there-22)
+ccomp(claim-20, is-23)
+det(correlation-25, a-24)
+nsubj(is-23, correlation-25)
+nn(disorders-30, abortion-27)
+conj_and(abortion-27, mental-29)
+nn(disorders-30, mental-29)
+prep_between(correlation-25, disorders-30)
+

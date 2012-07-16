@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (DT the) (NN fetus))
+        (VP (VBZ is)
+          (PP (IN inside)
+            (NP (DT the) (NN womb))))))
+    (, ,)
+    (NP (DT the) (NN woman))
+    (VP (MD must)
+      (VP (VB live)
+        (NP (PRP$ her) (NN life))
+        (PP (IN for)
+          (NP (DT that) (NN fetus)))))
+    (. .)))
+
+mark(is-4, Since-1)
+det(fetus-3, the-2)
+nsubj(is-4, fetus-3)
+advcl(live-12, is-4)
+det(womb-7, the-6)
+prep_inside(is-4, womb-7)
+det(woman-10, the-9)
+nsubj(live-12, woman-10)
+aux(live-12, must-11)
+root(ROOT-0, live-12)
+poss(life-14, her-13)
+dobj(live-12, life-14)
+det(fetus-17, that-16)
+prep_for(live-12, fetus-17)
+

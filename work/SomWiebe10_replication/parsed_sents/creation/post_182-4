@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (JJ Evolutionary) (NN theory))
+    (VP (VBZ claims)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJ past)
+              (QP (CD 1.2) (CD million))
+              (NNS years))
+            (PP (IN of)
+              (NP (PRP$ our) (NN history))))
+          (VP (VBZ has)
+            (VP (VBN included)
+              (PP (RB not)
+                (NP
+                  (NP (RB just) (CD one))
+                  (PP (CC but)
+                    (NP
+                      (NP
+                        (QP (IN at) (JJS least) (CD three))
+                        (NNS examples))
+                      (PP (IN of)
+                        (NP
+                          (NP (NN speciation))
+                          (PP (IN via)
+                            (NP
+                              (NP (JJ random) (NN mutation))
+                              (CC and)
+                              (NP (JJ natural) (NN selection)))))))))))))))
+    (. .)))
+
+amod(theory-2, Evolutionary-1)
+nsubj(claims-3, theory-2)
+root(ROOT-0, claims-3)
+complm(included-14, that-4)
+det(years-9, the-5)
+amod(years-9, past-6)
+number(million-8, 1.2-7)
+num(years-9, million-8)
+nsubj(included-14, years-9)
+poss(history-12, our-11)
+prep_of(years-9, history-12)
+aux(included-14, has-13)
+ccomp(claims-3, included-14)
+prep(included-14, not-15)
+advmod(one-17, just-16)
+pobj(not-15, one-17)
+prep(one-17, but-18)
+quantmod(three-21, at-19)
+mwe(at-19, least-20)
+pobj(at-19, least-20)
+num(examples-22, three-21)
+dep(but-18, examples-22)
+prep_of(examples-22, speciation-24)
+amod(mutation-27, random-26)
+prep_via(speciation-24, mutation-27)
+amod(selection-30, natural-29)
+prep_via(speciation-24, selection-30)
+conj_and(mutation-27, selection-30)
+

@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ knows)
+      (S
+        (NP (PRP it))
+        (VP (VB doesnt)
+          (VP (VB have)
+            (NP
+              (NP (PDT all) (DT the) (NNS answers))
+              (ADVP (RB yet)))
+            (PRN (CC but)
+              (NP (DT the) (JJ very) (NN fact)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP you))
+                    (VP (MD can)
+                      (VP (VB make)
+                        (NP (NNS arguments))))))))
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (VBD made)
+                  (SBAR
+                    (S
+                      (VP (VBZ is)
+                        (SBAR (IN because)
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP have)
+                              (NP
+                                (NP (DT a) (JJ basic) (NN understanding))
+                                (PP (IN of)
+                                  (NP (NN science)))))))))))))))))
+    (. .)))
+
+nsubj(knows-2, It-1)
+root(ROOT-0, knows-2)
+nsubj(doesnt-4, it-3)
+ccomp(knows-2, doesnt-4)
+xcomp(doesnt-4, have-5)
+predet(answers-8, all-6)
+det(answers-8, the-7)
+dobj(have-5, answers-8)
+advmod(answers-8, yet-9)
+dep(fact-13, but-10)
+det(fact-13, the-11)
+amod(fact-13, very-12)
+dep(have-5, fact-13)
+complm(make-17, that-14)
+nsubj(make-17, you-15)
+aux(make-17, can-16)
+ccomp(fact-13, make-17)
+dobj(make-17, arguments-18)
+complm(made-21, that-19)
+nsubj(made-21, you-20)
+ccomp(have-5, made-21)
+ccomp(made-21, is-22)
+mark(have-25, because-23)
+nsubj(have-25, you-24)
+advcl(is-22, have-25)
+det(understanding-28, a-26)
+amod(understanding-28, basic-27)
+dobj(have-25, understanding-28)
+prep_of(understanding-28, science-30)
+

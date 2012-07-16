@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBD decided)
+          (SBAR (IN that)
+            (S
+              (NP (PRP you))
+              (VP (VBD wanted)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (NP (PRP$ your) (NN dog))
+                      (ADVP
+                        (NP (DT an) (NN abortion))
+                        (RB that)))))))))))
+    (VP (MD would)
+      (VP (VB end)
+        (S
+          (NP (PRP you))
+          (VP (VBG being)
+            (VP (VBN put)
+              (PP (IN in)
+                (NP (NN Jail))))))))
+    (. .)))
+
+mark(decided-3, If-1)
+nsubj(decided-3, you-2)
+csubj(end-15, decided-3)
+complm(wanted-6, that-4)
+nsubj(wanted-6, you-5)
+xsubj(get-8, you-5)
+ccomp(decided-3, wanted-6)
+aux(get-8, to-7)
+xcomp(wanted-6, get-8)
+poss(dog-10, your-9)
+dobj(get-8, dog-10)
+det(abortion-12, an-11)
+npadvmod(that-13, abortion-12)
+advmod(get-8, that-13)
+aux(end-15, would-14)
+root(ROOT-0, end-15)
+nsubjpass(put-18, you-16)
+auxpass(put-18, being-17)
+dep(end-15, put-18)
+prep_in(put-18, Jail-20)
+

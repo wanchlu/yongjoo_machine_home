@@ -1,0 +1,37 @@
+(ROOT
+  (S (IN So)
+    (NP (NNS doctors)
+      (CC and)
+      (NNS nurses))
+    (VP (VBP have)
+      (NP (DT the) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB terminate)
+              (NP
+                (NP (NNS patients))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP are)
+                      (ADJP (RB physically) (JJ dependend)
+                        (PP (IN upon)
+                          (NP (PRP them)))))))))))))
+    (. ?)))
+
+dep(have-5, So-1)
+nsubj(have-5, doctors-2)
+conj_and(doctors-2, nurses-4)
+nsubj(have-5, nurses-4)
+root(ROOT-0, have-5)
+det(right-7, the-6)
+dobj(have-5, right-7)
+aux(terminate-9, to-8)
+infmod(right-7, terminate-9)
+dobj(terminate-9, patients-10)
+nsubj(dependend-14, patients-10)
+cop(dependend-14, are-12)
+advmod(dependend-14, physically-13)
+rcmod(patients-10, dependend-14)
+prep_upon(dependend-14, them-16)
+

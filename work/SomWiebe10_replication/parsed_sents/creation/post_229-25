@@ -1,0 +1,56 @@
+(ROOT
+  (NP
+    (NP (DT The) (NN edge))
+    (PP (IN of)
+      (NP (NN creationism)))
+    (. .)))
+
+det(edge-2, The-1)
+root(ROOT-0, edge-2)
+prep_of(edge-2, creationism-4)
+
+(ROOT
+  (FRAG
+    (NP (NNS Trends))
+    (PP (IN In)
+      (NP
+        (NP (NNP Ecology)
+          (CC and)
+          (NNP Evolution))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NN review))
+            (PP (IN of)
+              (NP
+                (NP (NNP Behe) (POS 's))
+                (NP
+                  (NP (DT The) (NN Edge))
+                  (PP (IN of)
+                    (NP (NNP Evolution)))))))
+          (-RRB- -RRB-))
+        (: :)
+        (ADJP
+          (ADJP (JJ http:\/\/www.pandasthumb.org\/archives\/2007\/10\/full-text-of-th.html))
+          (PRN (-LRB- -LRB-)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN continued)))))
+            (-RRB- -RRB-)))))))
+
+root(ROOT-0, Trends-1)
+dep(Trends-1, In-2)
+pobj(In-2, Ecology-3)
+pobj(In-2, Evolution-5)
+conj_and(Ecology-3, Evolution-5)
+dep(Ecology-3, review-7)
+prep_of(review-7, Behe-9)
+possessive(Behe-9, 's-10)
+det(Edge-12, The-11)
+dep(Behe-9, Edge-12)
+prep_of(Edge-12, Evolution-14)
+amod(Ecology-3, http:\/\/www.pandasthumb.org\/archives\/2007\/10\/full-text-of-th.html-17)
+aux(continued-21, to-19)
+auxpass(continued-21, be-20)
+dep(http:\/\/www.pandasthumb.org\/archives\/2007\/10\/full-text-of-th.html-17, continued-21)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Let) (POS 's))
+    (VP (VBP take)
+      (NP (DT the) (NN rape))
+      (NP
+        (NP (NNS victims))
+        (PP (RB out) (IN of)
+          (NP
+            (NP (DT the) (NN equation))
+            (PP (IN for)
+              (NP (DT a) (NN moment)))
+            (PRN (-LRB- -LRB-)
+              (S
+                (NP (PRP they))
+                (VP (VBP count)
+                  (PP (IN for)
+                    (NP
+                      (NP
+                        (QP (JJR less) (IN than) (CD 1))
+                        (NN %))
+                      (PP (IN of)
+                        (NP (DT all) (NNS abortions)))))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+nsubj(take-3, Let-1)
+possessive(Let-1, 's-2)
+root(ROOT-0, take-3)
+det(rape-5, the-4)
+iobj(take-3, rape-5)
+dobj(take-3, victims-6)
+det(equation-10, the-9)
+prep_out_of(victims-6, equation-10)
+det(moment-13, a-12)
+prep_for(equation-10, moment-13)
+nsubj(count-16, they-15)
+dep(equation-10, count-16)
+mwe(than-19, less-18)
+quantmod(1-20, than-19)
+num(%-21, 1-20)
+prep_for(count-16, %-21)
+det(abortions-24, all-23)
+prep_of(%-21, abortions-24)
+

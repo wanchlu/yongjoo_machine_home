@@ -1,0 +1,36 @@
+(ROOT
+  (S ('' '')
+    (S
+      (PP (IN Like)
+        (NP (JJS most) (NNS Americans)))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR
+          (S
+            (NP (NN abortion))
+            (VP (MD should)
+              (VP (VB be)
+                (ADJP (JJ legal))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN sooner))
+      (VP (VBN done)
+        (NP (DT the) (JJR better))))
+    (. .)))
+
+amod(Americans-4, most-3)
+prep_like(believe-7, Americans-4)
+nsubj(believe-7, I-6)
+root(ROOT-0, believe-7)
+nsubj(legal-11, abortion-8)
+aux(legal-11, should-9)
+cop(legal-11, be-10)
+ccomp(believe-7, legal-11)
+det(sooner-15, the-14)
+nsubj(done-16, sooner-15)
+conj_and(believe-7, done-16)
+det(better-18, the-17)
+dobj(done-16, better-18)
+

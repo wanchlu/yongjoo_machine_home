@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (LST (-LRB- -LRB-) (LS 1) (-RRB- -RRB-))
+    (S
+      (NP
+        (NP (DT A) (NN desire))
+        (PP (IN for)
+          (NP (PRP it))))
+      (VP (TO to)
+        (VP (VB be)
+          (ADJP (JJ true))
+          (PRN (-LRB- -LRB-)
+            (NP (NN agenda))
+            (-RRB- -RRB-)))))
+    (, ,)
+    (CC or)
+    (S
+      (LST (-LRB- -LRB-) (LS 2) (-RRB- -RRB-))
+      (NP (PRP it))
+      (VP (VBZ fits)
+        (NP
+          (NP (DT the) (NN evidence))
+          (PRN (-LRB- -LRB-)
+            (NP (NN objectivism))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+dep(true-10, 1-2)
+det(desire-5, A-4)
+nsubj(true-10, desire-5)
+prep_for(desire-5, it-7)
+aux(true-10, to-8)
+cop(true-10, be-9)
+root(ROOT-0, true-10)
+dep(true-10, agenda-12)
+dep(fits-20, 2-17)
+nsubj(fits-20, it-19)
+conj_or(true-10, fits-20)
+det(evidence-22, the-21)
+dobj(fits-20, evidence-22)
+appos(evidence-22, objectivism-24)
+

@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP you))
+          (PP (IN except)
+            (NP (DT the) (NN day) (NN age) (NN theory) (NN God)
+              (CC and)
+              (NN science)))
+          (VP (VBP agree)))
+        (CC and)
+        (S
+          (NP (NN science))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB explain)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP
+                        (NP (DT the) (NN writer))
+                        (PP (IN of)
+                          (NP (NNP Genesis))))
+                      (VP (VBD knew)
+                        (SBAR (IN that)
+                          (S
+                            (NP (NNS plants))
+                            (VP (VBD came)
+                              (PP (IN before)
+                                (NP (DT the) (NN sun))))))))))))))))
+    (VP (VBD appeared)
+      (PP (IN in)
+        (NP (DT the) (NN sky))))
+    (. .)))
+
+mark(agree-11, If-1)
+nsubj(agree-11, you-2)
+det(God-8, the-4)
+nn(God-8, day-5)
+nn(God-8, age-6)
+nn(God-8, theory-7)
+prep_except(agree-11, God-8)
+conj_and(God-8, science-10)
+prep_except(agree-11, science-10)
+csubj(appeared-29, agree-11)
+nsubj(has-14, science-13)
+xsubj(explain-16, science-13)
+conj_and(agree-11, has-14)
+csubj(appeared-29, has-14)
+aux(explain-16, to-15)
+xcomp(has-14, explain-16)
+advmod(knew-22, how-17)
+det(writer-19, the-18)
+nsubj(knew-22, writer-19)
+prep_of(writer-19, Genesis-21)
+ccomp(explain-16, knew-22)
+complm(came-25, that-23)
+nsubj(came-25, plants-24)
+ccomp(knew-22, came-25)
+det(sun-28, the-27)
+prep_before(came-25, sun-28)
+root(ROOT-0, appeared-29)
+det(sky-32, the-31)
+prep_in(appeared-29, sky-32)
+

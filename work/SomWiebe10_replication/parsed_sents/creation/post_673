@@ -1,0 +1,235 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNPS Teachers))
+    (VP (VBP have)
+      (NP (DT no) (NN freedom)
+        (S
+          (VP (TO to)
+            (VP (VB misinform)
+              (CC and)
+              (VB miseducate)
+              (NP (NNS students)))))))
+    (. .)))
+
+nsubj(have-3, Teachers-2)
+root(ROOT-0, have-3)
+det(freedom-5, no-4)
+dobj(have-3, freedom-5)
+aux(misinform-7, to-6)
+infmod(freedom-5, misinform-7)
+infmod(freedom-5, miseducate-9)
+conj_and(misinform-7, miseducate-9)
+dobj(misinform-7, students-10)
+
+(ROOT
+  (S ('' '')
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN proof))
+        (PP (IN of)
+          (NP
+            (NP (DT either) (NN side))
+            (PP (IN in)
+              (NP (DT this) (NN issue)))))))
+    (. .)))
+
+expl(is-3, There-2)
+root(ROOT-0, is-3)
+det(proof-5, no-4)
+nsubj(is-3, proof-5)
+det(side-8, either-7)
+prep_of(proof-5, side-8)
+det(issue-11, this-10)
+prep_in(side-8, issue-11)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP (DT the) (JJ missing) (NN link)))
+    (. ?)))
+
+advmod(is-2, Where-1)
+root(ROOT-0, is-2)
+det(link-5, the-3)
+amod(link-5, missing-4)
+nsubj(is-2, link-5)
+
+(ROOT
+  (S
+    (NP (NNPS Teachers))
+    (VP (MD should)
+      (VP (VB be)
+        (VP
+          (VP (VBG teaching)
+            (NP (DT both) (NNS sides)))
+          (CC and)
+          (VP (VBG presenting)
+            (NP
+              (NP (JJ only) (NNS facts))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP are)
+                    (ADJP (JJ able)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP (VBN proven))))))))))))))
+    (. .)))
+
+nsubj(teaching-4, Teachers-1)
+nsubj(presenting-8, Teachers-1)
+aux(teaching-4, should-2)
+aux(teaching-4, be-3)
+root(ROOT-0, teaching-4)
+det(sides-6, both-5)
+dobj(teaching-4, sides-6)
+conj_and(teaching-4, presenting-8)
+amod(facts-10, only-9)
+dobj(presenting-8, facts-10)
+nsubj(able-13, facts-10)
+cop(able-13, are-12)
+rcmod(facts-10, able-13)
+aux(proven-16, to-14)
+auxpass(proven-16, be-15)
+xcomp(able-13, proven-16)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (NN proof))
+        (SBAR (IN that)
+          (S
+            (NP (NN evolution))
+            (ADVP (RB really))
+            (VP (VBD happened)
+              (SBAR (IN as)
+                (S
+                  (NP (PRP we))
+                  (VP (VBP have)
+                    (NP (DT no) (NN proof)))))))))
+      (SBAR (IN that)
+        (S
+          (NP (NNP ID))
+          (ADVP (RB never))
+          (VP (VBD happened)))))
+    (. .)))
+
+nsubj(have-2, We-1)
+root(ROOT-0, have-2)
+det(proof-4, no-3)
+dobj(have-2, proof-4)
+complm(happened-8, that-5)
+nsubj(happened-8, evolution-6)
+advmod(happened-8, really-7)
+dep(proof-4, happened-8)
+mark(have-11, as-9)
+nsubj(have-11, we-10)
+advcl(happened-8, have-11)
+det(proof-13, no-12)
+dobj(have-11, proof-13)
+complm(happened-17, that-14)
+nsubj(happened-17, ID-15)
+neg(happened-17, never-16)
+ccomp(have-2, happened-17)
+
+(ROOT
+  (S
+    (VP (VB Remember)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Darwin))
+          (VP (VBD was)
+            (NP (DT a) (JJ true) (NN racist))))))
+    (. .)))
+
+root(ROOT-0, Remember-1)
+complm(racist-7, that-2)
+nsubj(racist-7, Darwin-3)
+cop(racist-7, was-4)
+det(racist-7, a-5)
+amod(racist-7, true-6)
+ccomp(Remember-1, racist-7)
+
+(ROOT
+  (S
+    (FRAG
+      (NP
+        (NP (NNP Read) ('' '') (NNP Origin))
+        (PP (IN of)
+          (NP (DT the) (NN species)))))
+    ('' '')
+    (NP (PRP He))
+    (VP (VBZ claims)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ Irish))
+          (VP (VBP are)
+            (NP
+              (NP (DT the) (NN bottom))
+              (PP (IN of)
+                (NP (DT the) (JJ evolutionary) (NN food) (NN chain))))))))
+    (. .)))
+
+nn(Origin-3, Read-1)
+dep(claims-9, Origin-3)
+det(species-6, the-5)
+prep_of(Origin-3, species-6)
+nsubj(claims-9, He-8)
+root(ROOT-0, claims-9)
+complm(bottom-15, that-10)
+det(Irish-12, the-11)
+nsubj(bottom-15, Irish-12)
+cop(bottom-15, are-13)
+det(bottom-15, the-14)
+ccomp(claims-9, bottom-15)
+det(chain-20, the-17)
+amod(chain-20, evolutionary-18)
+nn(chain-20, food-19)
+prep_of(bottom-15, chain-20)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR
+        (S
+          (NP (NNS teachers))
+          (VP (VBP have)
+            (NP (DT the) (NN right)
+              (S
+                (VP (TO to)
+                  (VP (VB teach)
+                    (NP
+                      (NP (DT the) (NNS ravings))
+                      (PP (IN of)
+                        (NP (DT a) (NN racist))))))))
+            (SBAR (IN if)
+              (S
+                (NP (PRP it))
+                (VP (VBZ fits)
+                  (NP (PRP$ their) (NNS needs)))))))))
+    (. .)))
+
+nsubj(guess-2, I-1)
+root(ROOT-0, guess-2)
+nsubj(have-4, teachers-3)
+ccomp(guess-2, have-4)
+det(right-6, the-5)
+dobj(have-4, right-6)
+aux(teach-8, to-7)
+infmod(right-6, teach-8)
+det(ravings-10, the-9)
+dobj(teach-8, ravings-10)
+det(racist-13, a-12)
+prep_of(ravings-10, racist-13)
+mark(fits-16, if-14)
+nsubj(fits-16, it-15)
+advcl(have-4, fits-16)
+poss(needs-18, their-17)
+dobj(fits-16, needs-18)
+

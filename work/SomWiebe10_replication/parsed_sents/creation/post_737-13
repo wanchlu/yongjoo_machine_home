@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Heavy) (JJ volcanic) (NN activity))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ early) (NNS days))
+          (PP (IN of)
+            (NP
+              (NP (NNP Earth) (POS 's))
+              (NN forming))))))
+    (VP (VBD spewed)
+      (NP
+        (NP (DT a) (JJ great) (NN deal))
+        (PP (IN of)
+          (NP (NN water) (NN vapor))))
+      (PP (IN from)
+        (NP (DT the) (JJ primordial) (NN ocean)))
+      (, ,)
+      (S
+        (VP (VBG forming)
+          (NP (DT an) (NN atmosphere)))))
+    (. .)))
+
+amod(activity-3, Heavy-1)
+amod(activity-3, volcanic-2)
+nsubj(spewed-12, activity-3)
+det(days-7, the-5)
+amod(days-7, early-6)
+prep_in(activity-3, days-7)
+poss(forming-11, Earth-9)
+prep_of(days-7, forming-11)
+root(ROOT-0, spewed-12)
+det(deal-15, a-13)
+amod(deal-15, great-14)
+dobj(spewed-12, deal-15)
+nn(vapor-18, water-17)
+prep_of(deal-15, vapor-18)
+det(ocean-22, the-20)
+amod(ocean-22, primordial-21)
+prep_from(spewed-12, ocean-22)
+partmod(spewed-12, forming-24)
+xcomp(spewed-12, forming-24)
+det(atmosphere-26, an-25)
+dobj(forming-24, atmosphere-26)
+

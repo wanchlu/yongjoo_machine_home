@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADJP (JJ classy)))
+    (. .)))
+
+nsubj(classy-3, That-1)
+cop(classy-3, 's-2)
+root(ROOT-0, classy-3)
+
+(ROOT
+  (S
+    (ADVP (RB Perhaps))
+    (NP (PRP you))
+    (VP (VBP do) (RB n't)
+      (VP (VB understand)
+        (NP
+          (NP (DT the) (NN concept))
+          (PP (IN of)
+            (NP (DT this) (NN site))))))
+    (. .)))
+
+advmod(understand-5, Perhaps-1)
+nsubj(understand-5, you-2)
+aux(understand-5, do-3)
+neg(understand-5, n't-4)
+root(ROOT-0, understand-5)
+det(concept-7, the-6)
+dobj(understand-5, concept-7)
+det(site-10, this-9)
+prep_of(concept-7, site-10)
+
+(ROOT
+  (S
+    (S
+      (NP (NN Someone))
+      (VP (VBZ makes)
+        (NP (DT an) (NN assertion))))
+    (, ,)
+    (NP (NN someone))
+    (VP (VBZ responds)
+      (PP (TO to)
+        (NP (PRP it))))
+    (. .)))
+
+nsubj(makes-2, Someone-1)
+ccomp(responds-7, makes-2)
+det(assertion-4, an-3)
+dobj(makes-2, assertion-4)
+nsubj(responds-7, someone-6)
+root(ROOT-0, responds-7)
+prep_to(responds-7, it-9)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT a) (NN debate)))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(debate-4, a-3)
+nsubj(is-2, debate-4)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ occurs)
+      (ADVP (RB everywhere))
+      (, ,)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (JJ main) (NNS arguments))
+          (PP (TO to)
+            (NP (DT the) (NNS comments))))))
+    (. .)))
+
+nsubj(occurs-2, This-1)
+root(ROOT-0, occurs-2)
+advmod(occurs-2, everywhere-3)
+det(arguments-8, the-6)
+amod(arguments-8, main-7)
+prep_from(occurs-2, arguments-8)
+det(comments-11, the-10)
+prep_to(arguments-8, comments-11)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Assuming)
+        (NP (DT a)
+          (ADJP (RB purely) (JJ random))
+          (NN system))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (DT each) (NN bit))
+        (VP (VBD selected)
+          (ADVP (RB randomly))))
+      (-RRB- -RRB-))
+    (NP (PRP they))
+    (VP (MD would)
+      (VP (VB have)
+        (NP
+          (NP (DT an) (JJ identical) (NN chance))
+          (PP (IN of)
+            (S
+              (VP (VBG occurring)))))))
+    (. .)))
+
+dep(have-14, Assuming-1)
+det(system-5, a-2)
+advmod(random-4, purely-3)
+amod(system-5, random-4)
+dobj(Assuming-1, system-5)
+det(bit-8, each-7)
+nsubj(selected-9, bit-8)
+parataxis(have-14, selected-9)
+advmod(selected-9, randomly-10)
+nsubj(have-14, they-12)
+aux(have-14, would-13)
+root(ROOT-0, have-14)
+det(chance-17, an-15)
+amod(chance-17, identical-16)
+dobj(have-14, chance-17)
+prepc_of(chance-17, occurring-19)
+

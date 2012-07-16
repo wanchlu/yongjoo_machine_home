@@ -1,0 +1,145 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is) (RB not)
+      (VP (VBG killing)
+        (NP (DT a) (JJ human) (NN child))))
+    (. .)))
+
+nsubj(killing-4, Abortion-1)
+aux(killing-4, is-2)
+neg(killing-4, not-3)
+root(ROOT-0, killing-4)
+det(child-7, a-5)
+amod(child-7, human-6)
+dobj(killing-4, child-7)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (PRP$ your) (NN abortion)))))
+    (, ,)
+    (NP (DT the) (NN fetus))
+    (VP (VBZ has)
+      (ADVP (RB probably))
+      (VP (RB not)
+        (ADVP (RB even))
+        (VBN opened)
+        (S
+          (NP (PRP$ its) (NNS eyes))
+          (ADVP (RB yet)))))
+    (. .)))
+
+advmod(have-3, When-1)
+nsubj(have-3, you-2)
+advcl(opened-13, have-3)
+poss(abortion-5, your-4)
+dobj(have-3, abortion-5)
+det(fetus-8, the-7)
+nsubj(opened-13, fetus-8)
+aux(opened-13, has-9)
+advmod(opened-13, probably-10)
+neg(opened-13, not-11)
+advmod(opened-13, even-12)
+root(ROOT-0, opened-13)
+poss(eyes-15, its-14)
+dep(opened-13, eyes-15)
+advmod(eyes-15, yet-16)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is) (RB n't)
+      (NP (DT a)
+        (ADJP (VBN formed))
+        (NN child)))
+    (. !)))
+
+nsubj(child-6, It-1)
+cop(child-6, is-2)
+neg(child-6, n't-3)
+det(child-6, a-4)
+amod(child-6, formed-5)
+root(ROOT-0, child-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT a) (NNS FETUS)))
+    (. .)))
+
+nsubj(FETUS-4, It-1)
+cop(FETUS-4, is-2)
+det(FETUS-4, a-3)
+root(ROOT-0, FETUS-4)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (NP
+      (NP (DT a) (NN mistake))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN girl))
+          (SBAR (IN if)
+            (S
+              (S
+                (NP (PRP$ her) (NN drink))
+                (VP (VBD was)
+                  (VP (VBN roofied)
+                    (PP (IN at)
+                      (NP (DT a) (NN party))))))
+              (CC and)
+              (S
+                (NP (PRP she))
+                (VP (VBD was)
+                  (VP (VBN raped)
+                    (PP (RB because) (IN of)
+                      (NP (PRP it)))))))))))
+    (. ?)))
+
+cop(mistake-4, Is-1)
+nsubj(mistake-4, it-2)
+det(mistake-4, a-3)
+root(ROOT-0, mistake-4)
+det(girl-7, the-6)
+prep_of(mistake-4, girl-7)
+mark(roofied-12, if-8)
+poss(drink-10, her-9)
+nsubjpass(roofied-12, drink-10)
+auxpass(roofied-12, was-11)
+dep(girl-7, roofied-12)
+det(party-15, a-14)
+prep_at(roofied-12, party-15)
+nsubjpass(raped-19, she-17)
+auxpass(raped-19, was-18)
+dep(girl-7, raped-19)
+conj_and(roofied-12, raped-19)
+prep_because_of(raped-19, it-22)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Only))
+    (SBAR (IN if)
+      (S
+        (NP (PRP she))
+        (VP (VBD dropped)
+          (NP (DT the) (NN pill))
+          (PP (IN into)
+            (NP (DT the) (NN drink))))))
+    (. .)))
+
+root(ROOT-0, Only-1)
+mark(dropped-4, if-2)
+nsubj(dropped-4, she-3)
+dep(Only-1, dropped-4)
+det(pill-6, the-5)
+dobj(dropped-4, pill-6)
+det(drink-9, the-8)
+prep_into(dropped-4, drink-9)
+

@@ -1,0 +1,726 @@
+(ROOT
+  (S
+    (NP (NNP Intelligent) (NNP Design))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN idea))
+        (, ,) (RB not)
+        (NP (DT a) (NN theory))))
+    (. .)))
+
+nn(Design-2, Intelligent-1)
+nsubj(idea-5, Design-2)
+cop(idea-5, is-3)
+det(idea-5, an-4)
+root(ROOT-0, idea-5)
+neg(idea-5, not-7)
+det(theory-9, a-8)
+dep(idea-5, theory-9)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN evidence))
+      (VP (VBN given)
+        (NP (NNS amounts))
+        (PP (TO to)
+          (NP (DT this)))))
+    (: :)
+    (S
+      (LST (LS 1) (-RRB- -RRB-))
+      (NP (NNP Life))
+      (VP (VBZ is)
+        (ADJP (JJ complex))))
+    (. .)))
+
+det(evidence-2, The-1)
+nsubj(given-3, evidence-2)
+root(ROOT-0, given-3)
+dobj(given-3, amounts-4)
+prep_to(given-3, this-6)
+dep(complex-12, 1-8)
+nsubj(complex-12, Life-10)
+cop(complex-12, is-11)
+parataxis(given-3, complex-12)
+
+(ROOT
+  (SQ (CC Or)
+    (VBZ is)
+    (NP (PRP it))
+    (NP
+      (NP (NN something))
+      (SBAR
+        (S
+          (S
+            (NP (DT that))
+            (VP (`` ``) (VBZ seems) ('' '')))
+          (S
+            (ADVP (RB right)
+              (PP (TO to)
+                (NP (DT the) (NN person))))
+            (VP (VBG making)
+              (NP (DT the) (NN statement)))))))
+    (. ?)))
+
+cc(something-4, Or-1)
+cop(something-4, is-2)
+nsubj(something-4, it-3)
+root(ROOT-0, something-4)
+nsubj(seems-7, that-5)
+rcmod(something-4, seems-7)
+advmod(making-13, right-9)
+det(person-12, the-11)
+prep_to(right-9, person-12)
+dep(seems-7, making-13)
+det(statement-15, the-14)
+dobj(making-13, statement-15)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB make)
+          (NP
+            (NP (DT a)
+              (ADJP (JJ judgement)
+                (NP (CD one)))
+              (NN way))
+            (CC or)
+            (NP (DT the) (JJ other))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD must)
+      (VP (VB educate)
+        (NP (PRP yourself))
+        (UCP
+          (PP (IN on)
+            (NP (NNS terms)))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NNS people))
+              (VP (VBP mean)
+                (PP (IN by)
+                  (NP (JJ certain) (NNS words)))))))))
+    (. .)))
+
+aux(make-2, To-1)
+purpcl(educate-13, make-2)
+det(way-6, a-3)
+amod(way-6, judgement-4)
+dep(judgement-4, one-5)
+dobj(make-2, way-6)
+det(other-9, the-8)
+dobj(make-2, other-9)
+conj_or(way-6, other-9)
+nsubj(educate-13, you-11)
+aux(educate-13, must-12)
+root(ROOT-0, educate-13)
+dobj(educate-13, yourself-14)
+dep(educate-13, on-15)
+pobj(on-15, terms-16)
+dobj(mean-21, what-19)
+nsubj(mean-21, people-20)
+dep(educate-13, mean-21)
+conj_and(on-15, mean-21)
+amod(words-24, certain-23)
+prep_by(mean-21, words-24)
+
+(ROOT
+  (SBARQ
+    (S
+      (S (CC Yet)
+        (NP (DT another) (NN contradiction))
+        (VP (VBZ is)
+          (NP (DT this))
+          (: :)
+          (SBAR (IN If)
+            (S
+              (NP (NN nature))
+              (VP (MD could) (RB not)
+                (VP (VB have)
+                  (VP (VBN created)
+                    (NP (PRP us)))))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT some) (NN intelligence))
+        (VP (VBD did))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ
+      (VP (VBD created)
+        (NP (DT that) (NN intelligence))))
+    (. ?)))
+
+det(contradiction-3, another-2)
+nsubj(this-5, contradiction-3)
+cop(this-5, is-4)
+dep(created-21, this-5)
+mark(created-12, If-7)
+nsubj(created-12, nature-8)
+aux(created-12, could-9)
+neg(created-12, not-10)
+aux(created-12, have-11)
+advcl(this-5, created-12)
+parataxis(this-5, created-12)
+dobj(created-12, us-13)
+det(intelligence-17, some-16)
+nsubj(did-18, intelligence-17)
+conj_and(this-5, did-18)
+dep(created-21, did-18)
+dobj(created-21, what-20)
+nsubj(created-21, what-20)
+root(ROOT-0, created-21)
+det(intelligence-23, that-22)
+dobj(created-21, intelligence-23)
+
+(ROOT
+  (NP (DT Some) (JJ other) (NN intelligence) (. ?)))
+
+det(intelligence-3, Some-1)
+amod(intelligence-3, other-2)
+root(ROOT-0, intelligence-3)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD created)
+        (WHNP (WDT that))))
+    (. ?)))
+
+nsubj(created-2, What-1)
+root(ROOT-0, created-2)
+dobj(created-2, that-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Unnatural))
+      (, ,)
+      (NP (JJ natural))
+      (, ,))
+    (VP (VBP hmmm))
+    (. .)))
+
+nsubj(hmmm-5, Unnatural-1)
+appos(Unnatural-1, natural-3)
+root(ROOT-0, hmmm-5)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ whole) (NN thing))
+    (VP (VBZ starts)
+      (S
+        (VP (TO to)
+          (VP (VB smell)
+            (ADJP (RB real) (JJ funny))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VBP look)
+                  (PP (IN at)
+                    (NP (PRP it)))
+                  (PP (IN from)
+                    (NP (DT the) (NN side))))))))))
+    (. .)))
+
+det(thing-3, The-1)
+amod(thing-3, whole-2)
+nsubj(starts-4, thing-3)
+xsubj(smell-6, thing-3)
+root(ROOT-0, starts-4)
+aux(smell-6, to-5)
+xcomp(starts-4, smell-6)
+advmod(funny-8, real-7)
+acomp(smell-6, funny-8)
+advmod(look-11, when-9)
+nsubj(look-11, you-10)
+advcl(smell-6, look-11)
+prep_at(look-11, it-13)
+det(side-16, the-15)
+prep_from(look-11, side-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP understand)
+      (SBAR (IN that)
+        (S
+          (NP (NNP ID))
+          (VP (VBZ claims)
+            (S
+              (VP (TO to) (RB not)
+                (VP (VB focus)
+                  (PP (IN on)
+                    (NP (DT the) (NN designer))))))))))
+    (. .)))
+
+nsubj(understand-2, I-1)
+root(ROOT-0, understand-2)
+complm(claims-5, that-3)
+nsubj(claims-5, ID-4)
+xsubj(focus-8, ID-4)
+ccomp(understand-2, claims-5)
+aux(focus-8, to-6)
+neg(focus-8, not-7)
+xcomp(claims-5, focus-8)
+det(designer-11, the-10)
+prep_on(focus-8, designer-11)
+
+(ROOT
+  (NP
+    (NP (NNP Rather))
+    (NP
+      (NP (DT the) (NN evidence))
+      (PP (IN for)
+        (NP (NN design))))
+    (. .)))
+
+root(ROOT-0, Rather-1)
+det(evidence-3, the-2)
+dep(Rather-1, evidence-3)
+prep_for(evidence-3, design-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN nature))
+      (PP (IN of)
+        (NP (DT the) (NN design))))
+    (VP (VBZ is)
+      (ADJP (RB inextricably) (VBN related)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN nature))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN designer))
+                (ADVP (RB however))))))))
+    (. .)))
+
+det(nature-2, The-1)
+nsubjpass(related-8, nature-2)
+det(design-5, the-4)
+prep_of(nature-2, design-5)
+auxpass(related-8, is-6)
+advmod(related-8, inextricably-7)
+root(ROOT-0, related-8)
+det(nature-11, the-10)
+prep_to(related-8, nature-11)
+det(designer-14, the-13)
+prep_of(nature-11, designer-14)
+advmod(designer-14, however-15)
+
+(ROOT
+  (S
+    (LST (LS 2) (-RRB- -RRB-))
+    (NP (PRP We))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (NP
+          (NP (JJ complete) (NNS models))
+          (PP (IN of)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NN nature))
+                (VP (MD could)
+                  (VP (VB have)
+                    (VP (VBN done)
+                      (NP (PRP it)))))))))))
+    (. .)))
+
+dep(have-6, 2-1)
+nsubj(have-6, We-3)
+aux(have-6, do-4)
+neg(have-6, n't-5)
+root(ROOT-0, have-6)
+amod(models-8, complete-7)
+dobj(have-6, models-8)
+advmod(done-14, how-10)
+nsubj(done-14, nature-11)
+aux(done-14, could-12)
+aux(done-14, have-13)
+prepc_of(models-8, done-14)
+dobj(done-14, it-15)
+
+(ROOT
+  (FRAG (CC But)
+    (SBAR (IN as)
+      (S
+        (VP (VBN related)
+          (PP (TO to)
+            (S
+              (VP (VBG being)
+                (VP (VBN taught)
+                  (PP (IN in)
+                    (NP
+                      (NP (NNS schools))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (VP (VBZ is)
+                            (S
+                              (NP (EX there))
+                              (VP (TO to)
+                                (VP (VB teach))))))))))))))))
+    (. ?)))
+
+dep(related-3, But-1)
+mark(related-3, as-2)
+root(ROOT-0, related-3)
+auxpass(taught-6, being-5)
+prepc_to(related-3, taught-6)
+prep_in(taught-6, schools-8)
+nsubj(is-11, schools-8)
+rcmod(schools-8, is-11)
+expl(teach-14, there-12)
+aux(teach-14, to-13)
+xcomp(is-11, teach-14)
+
+(ROOT
+  (S
+    (PP (IN Besides)
+      (S
+        (NP (DT a) (NN sentence))
+        (VP (VBG saying)
+          (S (`` ``)
+            (NP (NN evolution) (RB currently))
+            (VP (VBZ is) (RB not)
+              (VP
+                (ADVP (RB fully))
+                (VBN understood)))
+            ('' '')))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB think)
+        (PP (IN of)
+          (ADJP (NN anything) (JJ relevant)))
+        (SBAR (IN that)
+          (S
+            (NP (NNP ID))
+            (VP (MD could)
+              (VP (VB provide)))))))
+    (. .)))
+
+det(sentence-3, a-2)
+nsubj(saying-4, sentence-3)
+prepc_besides(think-17, saying-4)
+nsubjpass(understood-11, evolution-6)
+advmod(evolution-6, currently-7)
+auxpass(understood-11, is-8)
+neg(understood-11, not-9)
+advmod(understood-11, fully-10)
+ccomp(saying-4, understood-11)
+nsubj(think-17, I-14)
+aux(think-17, ca-15)
+neg(think-17, n't-16)
+root(ROOT-0, think-17)
+dep(relevant-20, anything-19)
+prep_of(think-17, relevant-20)
+complm(provide-24, that-21)
+nsubj(provide-24, ID-22)
+aux(provide-24, could-23)
+ccomp(think-17, provide-24)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ interesting) (VBG talking) (NN point))
+        (, ,)
+        (PP (IN in)
+          (S
+            (VP (VBG looking)
+              (PP (IN at)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (NN evolution))
+                    (VP (MD can) (RB not)
+                      (ADVP (RB currently))
+                      (VP (VB explain)))))))))))
+    (. .)))
+
+nsubj(point-6, It-1)
+cop(point-6, is-2)
+det(point-6, an-3)
+amod(point-6, interesting-4)
+amod(point-6, talking-5)
+root(ROOT-0, point-6)
+prepc_in(point-6, looking-9)
+dobj(explain-16, what-11)
+nsubj(explain-16, evolution-12)
+aux(explain-16, can-13)
+neg(explain-16, not-14)
+advmod(explain-16, currently-15)
+prepc_at(looking-9, explain-16)
+
+(ROOT
+  (S (CC But)
+    (VP (VBP do) (RB n't)
+      (VP (VB make)
+        (NP (DT the) (NN mistake))
+        (SBAR (IN that)
+          (S
+            (NP (NN science))
+            (VP (MD will)
+              (VP (VB continue)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (NP
+                        (NP (NN ignorant))
+                        (PP (IN of)
+                          (NP (JJ such) (NNS phenomena)))))))))))))
+    (. .)))
+
+cc(make-4, But-1)
+aux(make-4, do-2)
+neg(make-4, n't-3)
+root(ROOT-0, make-4)
+det(mistake-6, the-5)
+dobj(make-4, mistake-6)
+complm(continue-10, that-7)
+nsubj(continue-10, science-8)
+xsubj(ignorant-13, science-8)
+aux(continue-10, will-9)
+ccomp(make-4, continue-10)
+aux(ignorant-13, to-11)
+cop(ignorant-13, be-12)
+xcomp(continue-10, ignorant-13)
+amod(phenomena-16, such-15)
+prep_of(ignorant-13, phenomena-16)
+
+(ROOT
+  (S
+    (PP (IN Despite)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT many))
+          (VP (VBP think)))))
+    (, ,)
+    (NP (NN science))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP
+        (NP (DT a) (JJ passive) (NN tool))
+        (VP (VBN used)
+          (PP (IN for)
+            (S
+              (VP (VBG understanding)
+                (NP (DT the) (NN world))
+                (PP (IN around)
+                  (NP (PRP us)))))))))
+    (. .)))
+
+dep(tool-11, Despite-1)
+dobj(think-4, what-2)
+nsubj(think-4, many-3)
+pcomp(Despite-1, think-4)
+nsubj(tool-11, science-6)
+cop(tool-11, is-7)
+advmod(tool-11, just-8)
+det(tool-11, a-9)
+amod(tool-11, passive-10)
+root(ROOT-0, tool-11)
+partmod(tool-11, used-12)
+prepc_for(used-12, understanding-14)
+det(world-16, the-15)
+dobj(understanding-14, world-16)
+prep_around(understanding-14, us-18)
+
+(ROOT
+  (S
+    (NP (DT The) (NN word))
+    (VP (VBZ comes)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN latin) (NN word))
+          (PP (IN for)
+            (NP (NN knowledge)))))
+      (, ,)
+      (ADVP (IN after) (DT all)))
+    (. .)))
+
+det(word-2, The-1)
+nsubj(comes-3, word-2)
+root(ROOT-0, comes-3)
+det(word-7, the-5)
+nn(word-7, latin-6)
+prep_from(comes-3, word-7)
+prep_for(word-7, knowledge-9)
+advmod(comes-3, after-11)
+dep(after-11, all-12)
+
+(ROOT
+  (FRAG
+    (NP (RB Just) (JJ remember))
+    (: :)
+    (S
+      (NP (PRP We))
+      (VP (VBP Do) (RB n't)
+        (VP (VB Know))))
+    (. .)))
+
+advmod(remember-2, Just-1)
+root(ROOT-0, remember-2)
+nsubj(Know-7, We-4)
+aux(Know-7, Do-5)
+neg(Know-7, n't-6)
+dep(remember-2, Know-7)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Yet))
+    (. .)))
+
+root(ROOT-0, Yet-1)
+
+(ROOT
+  (S (CC But)
+    (NP (RB here))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (DT the) (NN error))
+          (VP (VBZ comes)
+            (PRT (RP in))))))
+    (. .)))
+
+cc(is-3, But-1)
+nsubj(is-3, here-2)
+root(ROOT-0, is-3)
+advmod(comes-7, where-4)
+det(error-6, the-5)
+nsubj(comes-7, error-6)
+advcl(is-3, comes-7)
+prt(comes-7, in-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN ASSUMPTION))
+      (SBAR (IN that)
+        (S
+          (SBAR (RB just) (IN because)
+            (S
+              (NP (PRP we))
+              (VP (VBP do) (RB n't)
+                (VP (VB know)))))
+          (, ,)
+          (NP (NN something))
+          (VP (VBP unnatural)))))
+    (VP (VBD created)
+      (NP (PRP us)))
+    (. .)))
+
+det(ASSUMPTION-2, The-1)
+dobj(unnatural-12, ASSUMPTION-2)
+nsubj(created-13, ASSUMPTION-2)
+complm(unnatural-12, that-3)
+advmod(know-9, just-4)
+dep(know-9, because-5)
+nsubj(know-9, we-6)
+aux(know-9, do-7)
+neg(know-9, n't-8)
+advcl(unnatural-12, know-9)
+nsubj(unnatural-12, something-11)
+dep(ASSUMPTION-2, unnatural-12)
+root(ROOT-0, created-13)
+dobj(created-13, us-14)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD will)
+      (VP (VB hear)
+        (SBAR
+          (S
+            (NP (NNS people))
+            (VP (VBP say)
+              (S (`` ``)
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP
+                    (NP (NN evidence))
+                    (PP (IN of)
+                      (NP (NN design)))))
+                ('' '')))))))
+    (. .)))
+
+nsubj(hear-3, You-1)
+aux(hear-3, will-2)
+root(ROOT-0, hear-3)
+nsubj(say-5, people-4)
+ccomp(hear-3, say-5)
+expl(is-8, there-7)
+ccomp(say-5, is-8)
+nsubj(is-8, evidence-9)
+prep_of(evidence-9, design-11)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT a)
+        (ADJP (RB very) (JJ broad))
+        (NN statement)))
+    (. .)))
+
+nsubj(statement-6, This-1)
+cop(statement-6, is-2)
+det(statement-6, a-3)
+advmod(broad-5, very-4)
+amod(statement-6, broad-5)
+root(ROOT-0, statement-6)
+
+(ROOT
+  (S
+    (VP (VB Ask)
+      (NP (NNS questions)))
+    (. !)))
+
+root(ROOT-0, Ask-1)
+dobj(Ask-1, questions-2)
+
+(ROOT
+  (FRAG
+    (WHNP (WDT What) (NN kind))
+    (PP (IN of)
+      (NP (NN evidence)))
+    (. ?)))
+
+det(kind-2, What-1)
+root(ROOT-0, kind-2)
+dep(kind-2, of-3)
+pobj(of-3, evidence-4)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT this))
+    (NP
+      (NP (DT the) (NN conclusion))
+      (PP (IN of)
+        (NP (DT a) (JJ scientific) (JJ peer-reviewed) (NN study))))
+    (. ?)))
+
+cop(conclusion-4, Is-1)
+nsubj(conclusion-4, this-2)
+det(conclusion-4, the-3)
+root(ROOT-0, conclusion-4)
+det(study-9, a-6)
+amod(study-9, scientific-7)
+amod(study-9, peer-reviewed-8)
+prep_of(conclusion-4, study-9)
+

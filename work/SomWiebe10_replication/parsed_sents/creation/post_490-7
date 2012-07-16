@@ -1,0 +1,49 @@
+(ROOT
+  (X
+    (ADVP (RB McCreary))
+    (, ,)
+    (NP
+      (NP (CD 125))
+      (NP (NNP S.) (NNP Ct)))
+    (. .)))
+
+dep(125-3, McCreary-1)
+root(ROOT-0, 125-3)
+nn(Ct-5, S.-4)
+dep(125-3, Ct-5)
+
+(ROOT
+  (S
+    (PP (IN at)
+      (NP
+        (NP (CD 2735))
+        (: ;)
+        (NP (NN accord))))
+    (, ,)
+    (NP
+      (NP (NNP e.g.))
+      (, ,)
+      (NP (NNP Santa) (NNP Fe))
+      (, ,))
+    (VP (VBZ 530)
+      (NP
+        (NP (NNP U.S.))
+        (PP (IN at)
+          (NP (CD 308)))
+        (SBAR
+          (S (-LRB- -LRB-)
+            (NP (PRP it))
+            (VP (VBZ is))))))
+    (: ...)))
+
+prep_at(530-11, 2735-2)
+dep(2735-2, accord-4)
+nsubj(530-11, e.g.-6)
+nn(Fe-9, Santa-8)
+appos(e.g.-6, Fe-9)
+root(ROOT-0, 530-11)
+dobj(530-11, U.S.-12)
+prep_at(U.S.-12, 308-14)
+nsubj(is-17, it-16)
+rcmod(U.S.-12, is-17)
+

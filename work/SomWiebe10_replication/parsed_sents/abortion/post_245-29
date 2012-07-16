@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP One))
+      (VP (VBZ is) (RB not)
+        (NP
+          (NP (DT a) (JJ bad) (NN choice))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (CD one))
+            (NP (DT an) (JJ evil) (NN choice))))))
+    (: ...)
+    (S
+      (S
+        (NP (PRP we))
+        (VP (VBP say)
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBP have)
+                (NP (JJ individual) (NNS rights)))))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (NN pregnancy))
+        (VP (VBZ blurs)
+          (NP (DT the) (NNS lines))
+          (SBAR (IN because)
+            (S
+              (NP (CD one) (NN individual))
+              (VP (VBZ is)
+                (ADVP (RB actually))
+                (PP (IN inside)
+                  (NP (DT the) (JJ other)))))))))
+    (. .)))
+
+nsubj(choice-6, One-1)
+cop(choice-6, is-2)
+neg(choice-6, not-3)
+det(choice-6, a-4)
+amod(choice-6, bad-5)
+root(ROOT-0, choice-6)
+conj_and(choice-6, one-9)
+det(choice-12, an-10)
+amod(choice-12, evil-11)
+dep(one-9, choice-12)
+nsubj(say-15, we-14)
+parataxis(choice-6, say-15)
+nsubj(have-17, we-16)
+ccomp(say-15, have-17)
+amod(rights-19, individual-18)
+dobj(have-17, rights-19)
+nsubj(blurs-23, pregnancy-22)
+parataxis(choice-6, blurs-23)
+conj_but(say-15, blurs-23)
+det(lines-25, the-24)
+dobj(blurs-23, lines-25)
+mark(is-29, because-26)
+num(individual-28, one-27)
+nsubj(is-29, individual-28)
+advcl(blurs-23, is-29)
+advmod(is-29, actually-30)
+det(other-33, the-32)
+prep_inside(is-29, other-33)
+

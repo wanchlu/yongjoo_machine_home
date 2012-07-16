@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (NP (DT A) (NN study))
+    (VP (VBD was)
+      (VP (VBN done)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (VBG voting) (NN record))
+            (PP (IN of)
+              (NP
+                (NP (NNPS Catholics))
+                (PP (IN in)
+                  (NP (NNP Congress)))))))))
+    (. .)))
+
+det(study-2, A-1)
+nsubjpass(done-4, study-2)
+auxpass(done-4, was-3)
+root(ROOT-0, done-4)
+det(record-8, the-6)
+amod(record-8, voting-7)
+prep_on(done-4, record-8)
+prep_of(record-8, Catholics-10)
+prep_in(Catholics-10, Congress-12)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ pro-life) (NNS congressmen))
+    (VP (VBD voted)
+      (PP (IN with)
+        (NP (DT the) (NN church)))
+      (PP
+        (PP (IN against)
+          (NP (NN abortion)))
+        (CC but)
+        (PP (IN on)
+          (NP (NN nothing) (RB else)))))
+    (. .)))
+
+det(congressmen-3, The-1)
+amod(congressmen-3, pro-life-2)
+nsubj(voted-4, congressmen-3)
+nsubj(voted-4', congressmen-3)
+root(ROOT-0, voted-4)
+conj_but(voted-4, voted-4')
+det(church-7, the-6)
+prep_with(voted-4, church-7)
+prep_against(voted-4, abortion-9)
+prep_on(voted-4', nothing-12)
+advmod(nothing-12, else-13)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ pro-choice) (NNS congressmen))
+    (VP (VBD voted)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN church))
+          (PP (IN on)
+            (NP (NN everything)))))
+      (PP (IN except) (IN on)
+        (NP
+          (NP (NN opposition))
+          (PP (TO to)
+            (NP (NN abortion))))))
+    (. .)))
+
+det(congressmen-3, The-1)
+amod(congressmen-3, pro-choice-2)
+nsubj(voted-4, congressmen-3)
+root(ROOT-0, voted-4)
+det(church-7, the-6)
+prep_with(voted-4, church-7)
+prep_on(church-7, everything-9)
+dep(voted-4, except-10)
+prep_on(voted-4, opposition-12)
+prep_to(opposition-12, abortion-14)
+
+(ROOT
+  (SBARQ
+    (ADVP (RB Now))
+    (WHNP (WP who))
+    (SQ
+      (VP (VBZ is)
+        (NP (DT the) (JJ good) (NNP Catholic))))
+    (. ?)))
+
+advmod(Catholic-6, Now-1)
+nsubj(Catholic-6, who-2)
+cop(Catholic-6, is-3)
+det(Catholic-6, the-4)
+amod(Catholic-6, good-5)
+root(ROOT-0, Catholic-6)
+

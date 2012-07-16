@@ -1,0 +1,55 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (DT The) (NN surf))
+      (VP (VBG stirring)
+        (NP (DT the) (NNS chemicals))
+        (S
+          (VP (VBG providing)
+            (NP
+              (NP (DT the) (NN energy))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD fueled)
+                    (NP (DT the) (JJ early) (NNP RNA) (NNP \/) (NNP DNA) (NNS reactions))))))))))
+    (: ...)
+    (S
+      (PP (IN over)
+        (NP (NN time)))
+      (NP (DT these) (NNS reactions))
+      (VP (VBD became)
+        (ADJP (RBR more) (JJ complex))
+        (, ,)
+        (S
+          (VP (VBG leading)
+            (PP (TO to)
+              (NP (JJ proto-cellular) (NNS structures)))))))
+    (. .)))
+
+det(surf-3, The-2)
+nsubj(stirring-4, surf-3)
+root(ROOT-0, stirring-4)
+det(chemicals-6, the-5)
+dobj(stirring-4, chemicals-6)
+xcomp(stirring-4, providing-7)
+det(energy-9, the-8)
+dobj(providing-7, energy-9)
+nsubj(fueled-11, energy-9)
+rcmod(energy-9, fueled-11)
+det(reactions-17, the-12)
+amod(reactions-17, early-13)
+nn(reactions-17, RNA-14)
+nn(reactions-17, \/-15)
+nn(reactions-17, DNA-16)
+dobj(fueled-11, reactions-17)
+prep_over(complex-25, time-20)
+det(reactions-22, these-21)
+nsubj(complex-25, reactions-22)
+cop(complex-25, became-23)
+advmod(complex-25, more-24)
+parataxis(stirring-4, complex-25)
+xcomp(complex-25, leading-27)
+amod(structures-30, proto-cellular-29)
+prep_to(leading-27, structures-30)
+

@@ -1,0 +1,204 @@
+(ROOT
+  (S (: ...)
+    (NP (DT all) (NN design))
+    (VP (VBZ is)
+      (ADJP (JJ intelligent)))
+    (. .)))
+
+det(design-3, all-2)
+nsubj(intelligent-5, design-3)
+cop(intelligent-5, is-4)
+root(ROOT-0, intelligent-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ takes)
+      (VP (VBN thought)
+        (S
+          (VP (TO to)
+            (VP (VB construct)
+              (NP
+                (NP (DT any) (NN type))
+                (PP (IN of)
+                  (NP (NN design)))))))))
+    (. .)))
+
+nsubj(takes-2, It-1)
+xsubj(construct-5, It-1)
+root(ROOT-0, takes-2)
+dep(takes-2, thought-3)
+aux(construct-5, to-4)
+xcomp(thought-3, construct-5)
+det(type-7, any-6)
+dobj(construct-5, type-7)
+prep_of(type-7, design-9)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP see)
+          (S
+            (NP (NNS things))
+            (VP (VB take)
+              (NP (NN place))
+              (PP (IN in)
+                (NP (NN science))))))))
+    (NP (PRP they))
+    (VP (VBP happen)
+      (PP (RB because) (IN of)
+        (NP (PDT all) (DT the) (NNS laws)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD were)
+                (VP (VBN put)
+                  (PP (IN into)
+                    (NP (NN place)))
+                  (PP (IN by)
+                    (NP (DT an) (JJ intelligent) (NN designer))))))))))
+    (. .)))
+
+advmod(see-3, When-1)
+nsubj(see-3, you-2)
+advcl(happen-10, see-3)
+nsubj(take-5, things-4)
+ccomp(see-3, take-5)
+dobj(take-5, place-6)
+prep_in(take-5, science-8)
+nsubj(happen-10, they-9)
+root(ROOT-0, happen-10)
+predet(laws-15, all-13)
+det(laws-15, the-14)
+prep_because_of(happen-10, laws-15)
+nsubjpass(put-18, that-16)
+auxpass(put-18, were-17)
+ccomp(laws-15, put-18)
+prep_into(put-18, place-20)
+det(designer-24, an-22)
+amod(designer-24, intelligent-23)
+agent(put-18, designer-24)
+
+(ROOT
+  (S
+    (VP (VBG Going)
+      (PRT (RP back))
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN idea))
+          (PP (IN of)
+            (NP
+              (NP (DT a) (NN storm))
+              (CC and)
+              (NP (NNS engines)))))))
+    (. .)))
+
+root(ROOT-0, Going-1)
+prt(Going-1, back-2)
+det(idea-5, the-4)
+prep_to(Going-1, idea-5)
+det(storm-8, a-7)
+prep_of(idea-5, storm-8)
+prep_of(idea-5, engines-10)
+conj_and(storm-8, engines-10)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VB get)
+            (PP (IN in)
+              (NP (DT a) (NN car))))
+          (CC and)
+          (VP (VB turn)
+            (NP (DT the) (NN key))))))
+    (NP (PRP you))
+    (VP (VBP have)
+      (S
+        (NP (DT a) (JJ spontaneous) (JJ violent) (NN storm))
+        (VP (VB erupt)
+          (PP (IN inside)
+            (NP (DT the) (NN engine))))))
+    (. .)))
+
+advmod(get-3, When-1)
+nsubj(get-3, you-2)
+nsubj(turn-8, you-2)
+advcl(have-12, get-3)
+det(car-6, a-5)
+prep_in(get-3, car-6)
+conj_and(get-3, turn-8)
+advcl(have-12, turn-8)
+det(key-10, the-9)
+dobj(turn-8, key-10)
+nsubj(have-12, you-11)
+root(ROOT-0, have-12)
+det(storm-16, a-13)
+amod(storm-16, spontaneous-14)
+amod(storm-16, violent-15)
+nsubj(erupt-17, storm-16)
+ccomp(have-12, erupt-17)
+det(engine-20, the-19)
+prep_inside(erupt-17, engine-20)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (DT all))
+    (VP (VBZ takes)
+      (NP
+        (NP (NN place))
+        (PP (RB because) (IN of)
+          (NP
+            (NP (PDT all) (DT the) (NNS elements))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN design))
+                (VP (VBG working)
+                  (PP (IN in)
+                    (NP (NN concert)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB produce)
+                        (NP (DT the) (NN effect))))))))))))
+    (. .)))
+
+nsubj(takes-3, It-1)
+advmod(takes-3, all-2)
+root(ROOT-0, takes-3)
+dobj(takes-3, place-4)
+predet(elements-9, all-7)
+det(elements-9, the-8)
+prep_because_of(place-4, elements-9)
+det(design-12, the-11)
+prep_of(elements-9, design-12)
+xsubj(produce-17, design-12)
+partmod(design-12, working-13)
+prep_in(working-13, concert-15)
+aux(produce-17, to-16)
+xcomp(working-13, produce-17)
+det(effect-19, the-18)
+dobj(produce-17, effect-19)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT This))
+      (CC and)
+      (NP (DT all) (NN design) (NN requireintelligent)))
+    (VP (VBD thought))
+    (. .)))
+
+nsubj(thought-6, This-1)
+det(requireintelligent-5, all-3)
+nn(requireintelligent-5, design-4)
+conj_and(This-1, requireintelligent-5)
+nsubj(thought-6, requireintelligent-5)
+root(ROOT-0, thought-6)
+

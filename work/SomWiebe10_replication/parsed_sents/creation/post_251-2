@@ -1,0 +1,37 @@
+(ROOT
+  (FRAG
+    (NP (NNP Way))
+    (S
+      (VP (TO to)
+        (VP (VB go))))
+    (. !)))
+
+root(ROOT-0, Way-1)
+aux(go-3, to-2)
+dep(Way-1, go-3)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP
+        (NP (NNP Ralph) (NNP Nader))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (ADVP (RB really))
+            (VP (VBP need)
+              (NP (PRP him)))))))
+    (. ?)))
+
+advmod(is-2, Where-1)
+root(ROOT-0, is-2)
+nn(Nader-4, Ralph-3)
+nsubj(is-2, Nader-4)
+advmod(need-8, when-5)
+nsubj(need-8, you-6)
+advmod(need-8, really-7)
+dep(Nader-4, need-8)
+dobj(need-8, him-9)
+

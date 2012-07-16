@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A)
+        (ADJP (RB very) (JJ long))
+        (NN time))
+      (ADVP (IN ago)))
+    (, ,)
+    (PP (IN after)
+      (NP
+        (NP (DT the) (NN creation))
+        (PP (IN of)
+          (NP (DT the) (NNS oceans)))))
+    (, ,)
+    (NP (JJ simple) (NN chemical) (NNS reactions))
+    (VP (VBD occurred)
+      (SBAR (IN that)
+        (S
+          (VP
+            (VP (VBD became)
+              (ADJP
+                (ADJP (JJR more))
+                (CC and)
+                (ADJP (RBR more) (JJ complex))))
+            (, ,)
+            (CC and)
+            (VP
+              (ADVP (RB eventually))
+              (VBD created)
+              (NP
+                (NP (NNP RNA))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBN developed)
+                      (PP (IN into)
+                        (NP (CD 2) (NNS cells))))))))))))
+    (. .)))
+
+det(time-4, A-1)
+advmod(long-3, very-2)
+amod(time-4, long-3)
+nsubj(occurred-17, time-4)
+advmod(time-4, ago-5)
+det(creation-9, the-8)
+prep_after(occurred-17, creation-9)
+det(oceans-12, the-11)
+prep_of(creation-9, oceans-12)
+amod(reactions-16, simple-14)
+nn(reactions-16, chemical-15)
+nsubj(occurred-17, reactions-16)
+root(ROOT-0, occurred-17)
+complm(more-20, that-18)
+cop(more-20, became-19)
+ccomp(occurred-17, more-20)
+advmod(complex-23, more-22)
+ccomp(occurred-17, complex-23)
+conj_and(more-20, complex-23)
+advmod(created-27, eventually-26)
+ccomp(occurred-17, created-27)
+conj_and(more-20, created-27)
+dobj(created-27, RNA-28)
+nsubj(developed-31, RNA-28)
+rcmod(RNA-28, developed-31)
+num(cells-34, 2-33)
+prep_into(developed-31, cells-34)
+

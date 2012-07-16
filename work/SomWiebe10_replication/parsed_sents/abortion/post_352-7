@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (NNP Democracy))
+    (VP (VBZ is)
+      (UCP
+        (VP (VBN meant)
+          (S
+            (VP (TO to)
+              (VP (VB represent)
+                (ADVP (RB theNations))
+                (NP (JJ collective)
+                  (ADJP (JJ good)
+                    (CC and)
+                    (JJ common))
+                  (NN sense))))))
+        (CC and)
+        (RB not)
+        (NP
+          (NP (DT that))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ few))
+              (PP (IN in)
+                (NP
+                  (NP (DT a) (NN building))
+                  (PP (IN of)
+                    (NP (DT a) (JJ few) (NNS people))))))))))
+    (. .)))
+
+nsubj(is-2, Democracy-1)
+root(ROOT-0, is-2)
+dep(is-2, meant-3)
+aux(represent-5, to-4)
+xcomp(meant-3, represent-5)
+advmod(represent-5, theNations-6)
+amod(sense-11, collective-7)
+amod(sense-11, good-8)
+conj_and(good-8, common-10)
+amod(sense-11, common-10)
+dobj(represent-5, sense-11)
+dep(is-2, not-13)
+conj_and(meant-3, not-13)
+dep(meant-3, that-14)
+det(few-17, the-16)
+prep_of(that-14, few-17)
+det(building-20, a-19)
+prep_in(few-17, building-20)
+det(people-24, a-22)
+amod(people-24, few-23)
+prep_of(building-20, people-24)
+

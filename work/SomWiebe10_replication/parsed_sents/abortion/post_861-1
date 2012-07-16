@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (VP (VBG living)
+          (NP
+            (NP (NN tissue))
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (MD 'll)
+                  (VP (VB give)
+                    (NP (PRP you))
+                    (NP (DT that))))))))))
+    (, ,)
+    (CC but)
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP
+        (VP (VB have)
+          (NP
+            (NP (DT a) (NN C-section))
+            (PP (IN at)
+              (NP (CD 2) (NNS months)))))
+        (CC and)
+        (VP (VB call)
+          (NP (PRP it))
+          (NP (DT a) (NN birth))))
+      (. ?))))
+
+nsubj(living-3, It-1)
+aux(living-3, 's-2)
+root(ROOT-0, living-3)
+dobj(living-3, tissue-4)
+nsubj(give-7, I-5)
+aux(give-7, 'll-6)
+rcmod(tissue-4, give-7)
+iobj(give-7, you-8)
+dobj(give-7, that-9)
+aux(have-14, would-12)
+nsubj(have-14, you-13)
+nsubj(call-21, you-13)
+conj_but(living-3, have-14)
+det(C-section-16, a-15)
+dobj(have-14, C-section-16)
+num(months-19, 2-18)
+prep_at(C-section-16, months-19)
+conj_but(living-3, call-21)
+conj_and(have-14, call-21)
+iobj(call-21, it-22)
+det(birth-24, a-23)
+dobj(call-21, birth-24)
+

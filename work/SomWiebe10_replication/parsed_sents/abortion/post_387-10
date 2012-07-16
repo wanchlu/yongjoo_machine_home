@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (DT The) (NN fetus))
+    (VP (VBZ has)
+      (NP (DT no) (JJ such) (NN right)))
+    (. .)))
+
+det(fetus-2, The-1)
+nsubj(has-3, fetus-2)
+root(ROOT-0, has-3)
+det(right-6, no-4)
+amod(right-6, such-5)
+dobj(has-3, right-6)
+
+(ROOT
+  (S
+    (S
+      (S
+        (NP (NNS ajligs))
+        (VP (VBD wrote)))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP I))
+        (VP (VBP quote))))
+    (: :)
+    (S
+      (NP (DT the) (NN fetus))
+      (ADVP (RB never))
+      (VP (VBD had)
+        (NP (DT a) (NN choice))))
+    (. .)))
+
+nsubj(wrote-2, ajligs-1)
+root(ROOT-0, wrote-2)
+nsubj(quote-6, I-5)
+conj_and(wrote-2, quote-6)
+det(fetus-9, the-8)
+nsubj(had-11, fetus-9)
+neg(had-11, never-10)
+parataxis(wrote-2, had-11)
+det(choice-13, a-12)
+dobj(had-11, choice-13)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ true)))
+    (. .)))
+
+nsubj(true-3, This-1)
+cop(true-3, is-2)
+root(ROOT-0, true-3)
+

@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNPS Catholics))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB see)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (DT the) (NNS Bishops))
+                      (VP (VBP have)
+                        (S
+                          (VP (TO to)
+                            (VP (VB say)
+                              (PP (IN on)
+                                (NP (DT this) (NN issue))))))))))))))))
+    (VP (MD should)
+      (VP (VB go)
+        (S
+          (VP (TO to)
+            (VP (VB usccb.org)
+              (PP (IN for)
+                (NP (DT the) (NN statement))))))))
+    (. .)))
+
+nsubj(want-3, Catholics-1)
+nsubj(go-16, Catholics-1)
+xsubj(usccb.org-18, Catholics-1)
+rcmod(Catholics-1, want-3)
+aux(see-5, to-4)
+xcomp(want-3, see-5)
+dep(have-9, what-6)
+det(Bishops-8, the-7)
+nsubj(have-9, Bishops-8)
+xsubj(say-11, Bishops-8)
+ccomp(see-5, have-9)
+aux(say-11, to-10)
+xcomp(have-9, say-11)
+det(issue-14, this-13)
+prep_on(say-11, issue-14)
+aux(go-16, should-15)
+root(ROOT-0, go-16)
+aux(usccb.org-18, to-17)
+xcomp(go-16, usccb.org-18)
+det(statement-21, the-20)
+prep_for(usccb.org-18, statement-21)
+

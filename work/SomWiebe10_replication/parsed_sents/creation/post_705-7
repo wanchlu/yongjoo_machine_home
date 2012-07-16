@@ -1,0 +1,32 @@
+(ROOT
+  (SBARQ
+    (FRAG
+      (ADJP (JJR More))
+      (ADJP (JJ importantly)))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (MD can)
+        (NP (DT a) (JJ third) (NN party))
+        (VP (VB determine)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (NN view))
+              (VP (VBZ is)
+                (ADJP (JJ correct))))))))
+    (. ?)))
+
+dep(determine-9, More-1)
+dep(More-1, importantly-2)
+advmod(determine-9, how-4)
+aux(determine-9, can-5)
+det(party-8, a-6)
+amod(party-8, third-7)
+nsubj(determine-9, party-8)
+root(ROOT-0, determine-9)
+dobj(correct-13, which-10)
+nsubj(correct-13, view-11)
+cop(correct-13, is-12)
+ccomp(determine-9, correct-13)
+

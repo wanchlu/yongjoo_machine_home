@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNP Police) (NNS forces))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN accused)
+          (PP (IN of)
+            (S
+              (VP (VBG using)
+                (NP (NNS torture)))))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (VP (VBP do)
+                (VP (VB handle)
+                  (NP (PRP them)))))))))
+    (. ?)))
+
+det(forces-3, Some-1)
+nn(forces-3, Police-2)
+nsubjpass(accused-6, forces-3)
+aux(accused-6, have-4)
+auxpass(accused-6, been-5)
+root(ROOT-0, accused-6)
+prepc_of(accused-6, using-8)
+dobj(using-8, torture-9)
+advmod(handle-13, how-11)
+aux(handle-13, do-12)
+ccomp(accused-6, handle-13)
+dobj(handle-13, them-14)
+

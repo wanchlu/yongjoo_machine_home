@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (RB Not)
+      (S
+        (ADVP (RB only))
+        (VP (VBZ is)
+          (ADVP
+            (NP (DT this) (NN claim))
+            (RB not))
+          (VP (VBN supported)
+            (PP (IN by)
+              (NP
+                (NP (DT the) (NNS emails))
+                (PP (IN in)
+                  (NP (DT the) (NN appendix)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB flatly))
+      (VP (VBN contradicted)
+        (PP (IN by)
+          (NP (PRP them)))))
+    (. .)))
+
+dep(supported-7, Not-1)
+advmod(supported-7, only-2)
+auxpass(supported-7, is-3)
+det(claim-5, this-4)
+npadvmod(not-6, claim-5)
+neg(supported-7, not-6)
+dep(contradicted-18, supported-7)
+det(emails-10, the-9)
+agent(supported-7, emails-10)
+det(appendix-13, the-12)
+prep_in(emails-10, appendix-13)
+nsubjpass(contradicted-18, it-15)
+auxpass(contradicted-18, is-16)
+advmod(contradicted-18, flatly-17)
+root(ROOT-0, contradicted-18)
+agent(contradicted-18, them-20)
+

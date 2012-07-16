@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (PP (IN Because)
+      (NP (DT the) (JJ only) (NN reason)))
+    (NP (PRP you))
+    (VP (MD can)
+      (VP (VB come)
+        (ADVP
+          (ADVP (RB up) (RB as))
+          (PP (TO to)
+            (NP
+              (NP (RB not) (NN vote))
+              (PP (IN for)
+                (NP (NNP Obama))))))
+        (PP (IN as)
+          (NP (DT a)
+            (ADJP (VBN opposed)
+              (PP (TO to)
+                (NP
+                  (NP (NNP McCain))
+                  (VP (VBD was)))))
+            (NN abortion)))))
+    (. .)))
+
+det(reason-4, the-2)
+amod(reason-4, only-3)
+prep_because(come-7, reason-4)
+nsubj(come-7, you-5)
+aux(come-7, can-6)
+root(ROOT-0, come-7)
+advmod(come-7, up-8)
+neg(vote-12, not-11)
+prep_as_to(come-7, vote-12)
+prep_for(vote-12, Obama-14)
+det(abortion-21, a-16)
+amod(abortion-21, opposed-17)
+prep_to(opposed-17, McCain-19)
+partmod(McCain-19, was-20)
+prep_as(come-7, abortion-21)
+
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (DT that))
+        (VP (VBZ 's)
+          (NP (DT the) (CD one) (NN issue)))))
+    (NP (DT that))
+    (VP (MD would)
+      (VP (VB help)
+        (NP (JJR more) (NNS people))))
+    (. .)))
+
+mark(issue-6, Because-1)
+nsubj(issue-6, that-2)
+cop(issue-6, 's-3)
+det(issue-6, the-4)
+num(issue-6, one-5)
+advcl(help-9, issue-6)
+nsubj(help-9, that-7)
+aux(help-9, would-8)
+root(ROOT-0, help-9)
+amod(people-11, more-10)
+dobj(help-9, people-11)
+

@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (, ,)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBD came)
+            (PP (IN across)
+              (NP
+                (NP (DT a) (JJ broken) (NN stick))
+                (PP (IN on)
+                  (NP (DT the) (NN ground)))))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNS woods))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD pointed)
+                      (PP (IN toward)
+                        (NP (DT a) (NN campsite)))))))))))
+      (, ,)
+      (NP (PRP it))
+      (VP (MD may)
+        (VP (VB be)
+          (NP
+            (NP (DT a) (NN signal))
+            (PP (TO to)
+              (NP (NNS campers)))))))
+    (, ,)
+    (CC or)
+    (S
+      (NP (PRP it))
+      (VP (MD may)
+        (ADVP (RB just))
+        (VP (VB be)
+          (NP
+            (NP (DT a) (NN stick))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD happened)
+                  (S
+                    (VP (TO to)
+                      (VP (VB fall)
+                        (NP (DT that) (NN way))))))))))))
+    (. .)))
+
+prep_for(signal-27, example-2)
+mark(came-6, if-4)
+nsubj(came-6, you-5)
+advcl(signal-27, came-6)
+det(stick-10, a-8)
+amod(stick-10, broken-9)
+prep_across(came-6, stick-10)
+det(ground-13, the-12)
+prep_on(stick-10, ground-13)
+det(woods-16, the-15)
+prep_in(came-6, woods-16)
+nsubj(pointed-18, woods-16)
+rcmod(woods-16, pointed-18)
+det(campsite-21, a-20)
+prep_toward(pointed-18, campsite-21)
+nsubj(signal-27, it-23)
+aux(signal-27, may-24)
+cop(signal-27, be-25)
+det(signal-27, a-26)
+root(ROOT-0, signal-27)
+prep_to(signal-27, campers-29)
+nsubj(stick-37, it-32)
+aux(stick-37, may-33)
+advmod(stick-37, just-34)
+cop(stick-37, be-35)
+det(stick-37, a-36)
+conj_or(signal-27, stick-37)
+nsubj(happened-39, stick-37)
+rcmod(stick-37, happened-39)
+aux(fall-41, to-40)
+xcomp(happened-39, fall-41)
+det(way-43, that-42)
+dobj(fall-41, way-43)
+

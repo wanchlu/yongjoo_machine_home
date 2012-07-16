@@ -1,0 +1,43 @@
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB intend)
+      (S
+        (VP (TO to)
+          (VP (VB instruct)
+            (S
+              (NP (NN neighborhood) (NNS dogs))
+              (RB not)
+              (VP (TO to)
+                (VP (VB defecate)
+                  (PP (IN on)
+                    (NP
+                      (NP (PRP$ your) (NN lawn))
+                      (CC or)
+                      (S
+                        (NP (PRP you))
+                        (VP (MD will)
+                          (VP (VB file)
+                            (NP (DT a) (NN lawsuit))))))))))))))
+    (. ?)))
+
+aux(intend-3, Do-1)
+nsubj(intend-3, you-2)
+xsubj(instruct-5, you-2)
+root(ROOT-0, intend-3)
+aux(instruct-5, to-4)
+xcomp(intend-3, instruct-5)
+nn(dogs-7, neighborhood-6)
+nsubj(defecate-10, dogs-7)
+neg(defecate-10, not-8)
+aux(defecate-10, to-9)
+xcomp(instruct-5, defecate-10)
+poss(lawn-13, your-12)
+prep_on(defecate-10, lawn-13)
+nsubj(file-17, you-15)
+aux(file-17, will-16)
+prep_on(defecate-10, file-17)
+conj_or(lawn-13, file-17)
+det(lawsuit-19, a-18)
+dobj(file-17, lawsuit-19)
+

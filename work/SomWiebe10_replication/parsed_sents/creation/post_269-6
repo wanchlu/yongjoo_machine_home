@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (ADVP (LS Second))
+    (, ,)
+    (NP (NNP Sickle))
+    (VP (VBZ is)
+      (ADJP (JJ famous)
+        (PP (RB because) (IN of)
+          (NP (DT the) (JJ nasty) (JJ disease\/geographical) (NN distribution))))
+      (SBAR (CC but)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (PP (IN at)
+              (NP
+                (NP (JJ other) (NN goblin) (NNS variants))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP cause)
+                      (NP (JJR fewer) (NNS symptoms)))))))))))
+    (. .)))
+
+advmod(famous-5, Second-1)
+nsubj(famous-5, Sickle-3)
+cop(famous-5, is-4)
+root(ROOT-0, famous-5)
+det(distribution-11, the-8)
+amod(distribution-11, nasty-9)
+amod(distribution-11, disease\/geographical-10)
+prep_because_of(famous-5, distribution-11)
+cc(are-14, but-12)
+expl(are-14, there-13)
+ccomp(famous-5, are-14)
+amod(variants-18, other-16)
+nn(variants-18, goblin-17)
+prep_at(are-14, variants-18)
+nsubj(cause-20, variants-18)
+rcmod(variants-18, cause-20)
+amod(symptoms-22, fewer-21)
+dobj(cause-20, symptoms-22)
+

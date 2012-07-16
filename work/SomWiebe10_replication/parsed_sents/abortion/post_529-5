@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB stop)
+              (NP
+                (NP (NN thinking))
+                (PP (IN of)
+                  (NP
+                    (NP (JJ only) (NNS ourselves))
+                    (CC and)
+                    (NP (PRP$ our) (NNS beliefs))))))
+            (CC and)
+            (VP (VB begin)
+              (S
+                (VP (TO to)
+                  (VP (VB consider)
+                    (NP (DT the) (NN effect))
+                    (SBAR (IN that)
+                      (S
+                        (S
+                          (VP (VBG proposing)
+                            (NP (PDT such) (DT a) (NN ban))))
+                        (VP (MD would)
+                          (VP (VB cause)))))))))))))
+    (. .)))
+
+nsubj(need-2, We-1)
+xsubj(stop-4, We-1)
+root(ROOT-0, need-2)
+aux(stop-4, to-3)
+xcomp(need-2, stop-4)
+dobj(stop-4, thinking-5)
+amod(ourselves-8, only-7)
+prep_of(thinking-5, ourselves-8)
+poss(beliefs-11, our-10)
+prep_of(thinking-5, beliefs-11)
+conj_and(ourselves-8, beliefs-11)
+xcomp(need-2, begin-13)
+conj_and(stop-4, begin-13)
+aux(consider-15, to-14)
+xcomp(begin-13, consider-15)
+det(effect-17, the-16)
+dobj(consider-15, effect-17)
+complm(cause-24, that-18)
+csubj(cause-24, proposing-19)
+predet(ban-22, such-20)
+det(ban-22, a-21)
+dobj(proposing-19, ban-22)
+aux(cause-24, would-23)
+ccomp(consider-15, cause-24)
+

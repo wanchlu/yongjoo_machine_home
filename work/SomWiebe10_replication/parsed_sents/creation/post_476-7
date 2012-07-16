@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP agree)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP
+          (NP (NNS Christians))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP believe)
+                (SBAR (IN that)
+                  (S
+                    (NP (DT the) (NN earth))
+                    (VP (MD must)
+                      (VP (VB be)
+                        (ADJP (JJ young))))))))))
+        (, ,)
+        (NP
+          (NP (NN something))
+          (VP (VBN contradicted)
+            (PP (IN by)
+              (NP (NN fact)))))))
+    (. .)))
+
+nsubj(agree-2, I-1)
+ccomp(are-5, agree-2)
+expl(are-5, there-4)
+root(ROOT-0, are-5)
+nsubj(are-5, Christians-6)
+nsubj(believe-8, Christians-6)
+rcmod(Christians-6, believe-8)
+complm(young-14, that-9)
+det(earth-11, the-10)
+nsubj(young-14, earth-11)
+aux(young-14, must-12)
+cop(young-14, be-13)
+ccomp(believe-8, young-14)
+appos(Christians-6, something-16)
+partmod(something-16, contradicted-17)
+agent(contradicted-17, fact-19)
+

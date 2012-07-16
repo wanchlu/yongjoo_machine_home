@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN objection))
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN abortion))
+          (PP (IN of)
+            (NP (DT a) (JJ mindless) (NN cell))))))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN upon)
+          (NP (DT the) (RB purely) (JJ religious) (NN speculation)))
+        (SBAR (IN that)
+          (S
+            (NP (DT that) (NN cell))
+            (VP (VBZ has)
+              (NP
+                (NP (DT a) (NN soul))
+                (VP (VBN implanted)
+                  (PP (IN by)
+                    (NP (DT a) (NN god))))))))))
+    (. .)))
+
+det(objection-2, The-1)
+nsubjpass(based-11, objection-2)
+det(abortion-5, the-4)
+prep_to(objection-2, abortion-5)
+det(cell-9, a-7)
+amod(cell-9, mindless-8)
+prep_of(abortion-5, cell-9)
+auxpass(based-11, is-10)
+root(ROOT-0, based-11)
+det(speculation-16, the-13)
+advmod(speculation-16, purely-14)
+amod(speculation-16, religious-15)
+prep_upon(based-11, speculation-16)
+complm(has-20, that-17)
+det(cell-19, that-18)
+nsubj(has-20, cell-19)
+ccomp(based-11, has-20)
+det(soul-22, a-21)
+dobj(has-20, soul-22)
+partmod(soul-22, implanted-23)
+det(god-26, a-25)
+agent(implanted-23, god-26)
+

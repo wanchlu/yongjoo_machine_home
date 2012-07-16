@@ -1,0 +1,50 @@
+(ROOT
+  (FRAG
+    (PP (RB Just) (IN like)
+      (NP
+        (NP
+          (NP (NNP Pluto))
+          (VP (VBG orbiting)
+            (NP (DT the) (NN sun))
+            (ADVP (RB completely))))
+        (CC and)
+        (NP (NN gravity))))
+    (. !)))
+
+advmod(like-2, Just-1)
+root(ROOT-0, like-2)
+pobj(like-2, Pluto-3)
+partmod(Pluto-3, orbiting-4)
+det(sun-6, the-5)
+dobj(orbiting-4, sun-6)
+advmod(orbiting-4, completely-7)
+pobj(like-2, gravity-9)
+conj_and(Pluto-3, gravity-9)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (UCP
+        (ADJP (JJ theories))
+        (, ,)
+        (CC but)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ scientific) (NN way))
+            (PP (IN of)
+              (S
+                (VP (VBG using)
+                  (NP (DT the) (NN word)))))))))))
+
+nsubj(theories-3, They-1)
+cop(theories-3, 're-2)
+root(ROOT-0, theories-3)
+conj_but(theories-3, in-6)
+det(way-9, the-7)
+amod(way-9, scientific-8)
+prep_in(theories-3, way-9)
+prepc_of(way-9, using-11)
+det(word-13, the-12)
+dobj(using-11, word-13)
+

@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP
+        (VP (VB know))
+        (CC or)
+        (RB not)
+        (VP (VB know)
+          (PP (IN of)
+            (NP
+              (NP (DT that))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ exists)))))))))
+    (. .)))
+
+nsubj(know-4, People-1)
+aux(know-4, can-2)
+advmod(know-4, only-3)
+root(ROOT-0, know-4)
+conj_or(know-4, not-6)
+neg(know-4, not-6)
+dep(know-4, know-7)
+prep_of(know-7, that-9)
+nsubj(exists-11, that-9)
+rcmod(that-9, exists-11)
+

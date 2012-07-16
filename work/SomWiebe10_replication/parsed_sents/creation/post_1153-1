@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (MD could)
+            (VP (VB be)
+              (ADJP
+                (ADJP (JJR worse)
+                  (SBAR
+                    (S
+                      (NP (NNS people))
+                      (VP (MD could)
+                        (VP (VB tell)
+                          (NP (PRP you)))))))
+                (SBAR (IN that)
+                  (S
+                    (NP (NN man)
+                      (CC and)
+                      (NN woman))
+                    (VP (VBD started)
+                      (ADVP (RB off) (JJ naked)
+                        (PP (IN in)
+                          (NP (DT a) (NN garden))))
+                      (PP (IN with)
+                        (NP
+                          (NP (NN nothing))
+                          (PP (CC but)
+                            (NP
+                              (NP (DT an) (NN apple) (NN tree))
+                              (CC and)
+                              (NP
+                                (NP (DT a) (VBG talking) (NN snake))
+                                (PP (IN for)
+                                  (NP (NN company))))
+                              (, ,))))))))))))))
+    (: ...)))
+
+nsubj(mean-2, I-1)
+root(ROOT-0, mean-2)
+nsubj(worse-6, it-3)
+aux(worse-6, could-4)
+cop(worse-6, be-5)
+ccomp(mean-2, worse-6)
+nsubj(tell-9, people-7)
+aux(tell-9, could-8)
+dep(worse-6, tell-9)
+dobj(tell-9, you-10)
+complm(started-15, that-11)
+nsubj(started-15, man-12)
+conj_and(man-12, woman-14)
+nsubj(started-15, woman-14)
+ccomp(worse-6, started-15)
+advmod(naked-17, off-16)
+advmod(started-15, naked-17)
+det(garden-20, a-19)
+prep_in(naked-17, garden-20)
+prep_with(started-15, nothing-22)
+prep(nothing-22, but-23)
+det(tree-26, an-24)
+nn(tree-26, apple-25)
+dep(but-23, tree-26)
+det(snake-30, a-28)
+amod(snake-30, talking-29)
+dep(but-23, snake-30)
+conj_and(tree-26, snake-30)
+prep_for(snake-30, company-32)
+

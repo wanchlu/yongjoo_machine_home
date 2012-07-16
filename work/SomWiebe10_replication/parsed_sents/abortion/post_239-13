@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD did) (RB n't)))))
+    (VP (VBP are)
+      (NP
+        (NP (NNS women))
+        (PP (IN like)
+          (NP
+            (NP (NNP Margaret) (NNP Sanger))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD was)
+                  (NP
+                    (NP (DT a) (NN proponent))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS eugenics))
+                        (CC and)
+                        (NP (DT a) (NN racist))))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBD supported)
+                          (NP (NNP Hitler)))))))))))))
+    (. .)))
+
+nsubj(did-3, Those-1)
+nsubj(women-6, Those-1)
+rcmod(Those-1, did-3)
+neg(did-3, n't-4)
+cop(women-6, are-5)
+root(ROOT-0, women-6)
+nn(Sanger-9, Margaret-8)
+prep_like(women-6, Sanger-9)
+nsubj(proponent-14, Sanger-9)
+cop(proponent-14, was-12)
+det(proponent-14, a-13)
+rcmod(Sanger-9, proponent-14)
+nsubj(supported-21, proponent-14)
+prep_of(proponent-14, eugenics-16)
+det(racist-19, a-18)
+prep_of(proponent-14, racist-19)
+conj_and(eugenics-16, racist-19)
+rcmod(proponent-14, supported-21)
+dobj(supported-21, Hitler-22)
+

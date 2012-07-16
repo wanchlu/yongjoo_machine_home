@@ -1,0 +1,288 @@
+(ROOT
+  (FRAG
+    (NP (CD 1st))
+    (: :)
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ does) (RB not)
+        (VP (VB require)
+          (NP (JJ dramatic) (NN mutation)))))
+    (. .)))
+
+root(ROOT-0, 1st-1)
+nsubj(require-6, Evolution-3)
+aux(require-6, does-4)
+neg(require-6, not-5)
+dep(1st-1, require-6)
+amod(mutation-8, dramatic-7)
+dobj(require-6, mutation-8)
+
+(ROOT
+  (S
+    (NP (JJS Most) (NN evolution))
+    (VP (VBZ occurs)
+      (PP (IN through)
+        (NP
+          (NP (JJ small) (JJ incremental) (NNS mutations))
+          (PP (IN over)
+            (NP (JJ many) (JJ many) (NNS generations))))))
+    (. .)))
+
+amod(evolution-2, Most-1)
+nsubj(occurs-3, evolution-2)
+root(ROOT-0, occurs-3)
+amod(mutations-7, small-5)
+amod(mutations-7, incremental-6)
+prep_through(occurs-3, mutations-7)
+amod(generations-11, many-9)
+amod(generations-11, many-10)
+prep_over(mutations-7, generations-11)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ helps))))
+    (, ,)
+    (VP (VBP imagine)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS people))
+          (VP (VBP age)))))
+    (. .)))
+
+mark(helps-4, If-2)
+nsubj(helps-4, it-3)
+dep(imagine-6, helps-4)
+root(ROOT-0, imagine-6)
+advmod(age-9, how-7)
+nsubj(age-9, people-8)
+ccomp(imagine-6, age-9)
+
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (NN day))
+        (PP
+          (PP (TO to)
+            (NP
+              (NP (NN day))
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBP are)
+                    (NP (DT no) (JJ obvious) (NNS differences)))))))
+          (, ,)
+          (CC but)
+          (PP (IN over)
+            (NP
+              (NP (JJ long) (NNS periods))
+              (PP (IN of)
+                (NP (NN time))))))))
+    (, ,)
+    (S
+      (NP (NNS people))
+      (VP (MD can)
+        (VP (VB look)
+          (ADJP (RB completely) (JJ different)))))
+    (RB then)
+    (S
+      (NP (PRP they))
+      (VP (VBD did)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP they))
+            (VP (VBD were)
+              (NP (JJR younger)))))))
+    (. .) (-RRB- -RRB-)))
+
+conj_but(day-2, day-2')
+prep_from(look-20, day-2)
+prep_from(look-20, day-2')
+prep_to(day-2, day-4)
+expl(are-6, there-5)
+rcmod(day-4, are-6)
+det(differences-9, no-7)
+amod(differences-9, obvious-8)
+nsubj(are-6, differences-9)
+amod(periods-14, long-13)
+prep_over(day-2', periods-14)
+prep_of(periods-14, time-16)
+nsubj(look-20, people-18)
+aux(look-20, can-19)
+root(ROOT-0, look-20)
+advmod(different-22, completely-21)
+acomp(look-20, different-22)
+advmod(look-20, then-23)
+nsubj(did-25, they-24)
+ccomp(look-20, did-25)
+advmod(younger-29, when-26)
+nsubj(younger-29, they-27)
+cop(younger-29, were-28)
+advcl(did-25, younger-29)
+
+(ROOT
+  (FRAG
+    (NP (CD 2nd))
+    (: :)
+    (S
+      (NP (PRP We))
+      (VP (VBP have)
+        (VP (VBN seen)
+          (SBAR
+            (S
+              (S
+                (NP (JJ significant) (NNS mutations))
+                (VP (VBP occur)
+                  (SBAR (IN that)
+                    (S
+                      (VP (VBP do) (RB not)
+                        (VP (VB affect)
+                          (NP
+                            (NP (DT the) (NN viability))
+                            (PP (IN of)
+                              (NP (DT the) (JJ organisms) (NN offspring) (CD .3) (NN rd))))))))))
+              (: :)
+              (S
+                (NP (PRP We))
+                (VP (VBP have)
+                  (ADVP (RB actually))
+                  (VP (VBN seen)
+                    (SBAR
+                      (S
+                        (NP (NN evolution))
+                        (VP (VBP occur) (, ,)
+                          (ADVP (RB even))
+                          (PP (TO to)
+                            (NP
+                              (NP (DT the) (NN point))
+                              (PP (IN of)
+                                (NP (NN speciation) (CD .4) (NN th)))))))))))
+              (: :)
+              (S
+                (NP (PRP You))
+                (VP (VBP 're)
+                  (ADJP (JJ dumb)
+                    (S
+                      (VP (TO to)
+                        (VP (VB think)
+                          (SBAR (IN that)
+                            (S
+                              (NP (PRP you))
+                              (VP (VBP know)
+                                (NP
+                                  (NP
+                                    (QP (JJR more) (IN than) (DT every))
+                                    (NN biologist))
+                                  (PP (IN on)
+                                    (NP (NN earth))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, 2nd-1)
+nsubj(seen-5, We-3)
+aux(seen-5, have-4)
+dep(2nd-1, seen-5)
+amod(mutations-7, significant-6)
+nsubj(occur-8, mutations-7)
+dep(seen-5, occur-8)
+complm(affect-12, that-9)
+aux(affect-12, do-10)
+neg(affect-12, not-11)
+ccomp(occur-8, affect-12)
+det(viability-14, the-13)
+dobj(affect-12, viability-14)
+det(rd-20, the-16)
+amod(rd-20, organisms-17)
+nn(rd-20, offspring-18)
+num(rd-20, .3-19)
+prep_of(viability-14, rd-20)
+nsubj(seen-25, We-22)
+aux(seen-25, have-23)
+advmod(seen-25, actually-24)
+parataxis(occur-8, seen-25)
+nsubj(occur-27, evolution-26)
+ccomp(seen-25, occur-27)
+advmod(occur-27, even-29)
+det(point-32, the-31)
+prep_to(occur-27, point-32)
+nn(th-36, speciation-34)
+num(th-36, .4-35)
+prep_of(point-32, th-36)
+nsubj(dumb-40, You-38)
+cop(dumb-40, 're-39)
+parataxis(occur-8, dumb-40)
+aux(think-42, to-41)
+xcomp(dumb-40, think-42)
+complm(know-45, that-43)
+nsubj(know-45, you-44)
+ccomp(think-42, know-45)
+mwe(than-47, more-46)
+quantmod(every-48, than-47)
+num(biologist-49, every-48)
+dobj(know-45, biologist-49)
+prep_on(biologist-49, earth-51)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (ADJP (JJ short)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (ADJP (JJ wrong)
+        (SBAR (IN because)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (VP (VBG distinguishing)
+                (PP (IN between)
+                  (NP (JJ micro)
+                    (CC and)
+                    (JJ macro) (NN evolution)))))))))
+    (. .)))
+
+prep_in(wrong-6, short-2)
+nsubj(wrong-6, you-4)
+cop(wrong-6, 're-5)
+root(ROOT-0, wrong-6)
+mark(distinguishing-10, because-7)
+nsubj(distinguishing-10, you-8)
+aux(distinguishing-10, are-9)
+ccomp(wrong-6, distinguishing-10)
+amod(evolution-15, micro-12)
+conj_and(micro-12, macro-14)
+amod(evolution-15, macro-14)
+prep_between(distinguishing-10, evolution-15)
+
+(ROOT
+  (S
+    (NP (NNP Macro) (NN evolution))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ same) (NN thing))
+        (PP
+          (PP (IN as)
+            (NP (JJ micro) (NN evolution)))
+          (, ,) (RB just)
+          (PP (IN on)
+            (NP (DT a) (JJR larger) (NN time) (NN scale))))))
+    (. .)))
+
+nn(evolution-2, Macro-1)
+nsubj(thing-6, evolution-2)
+cop(thing-6, is-3)
+det(thing-6, the-4)
+amod(thing-6, same-5)
+root(ROOT-0, thing-6)
+amod(evolution-9, micro-8)
+prep_as(thing-6, evolution-9)
+advmod(thing-6, just-11)
+det(scale-16, a-13)
+amod(scale-16, larger-14)
+nn(scale-16, time-15)
+prep_on(thing-6, scale-16)
+

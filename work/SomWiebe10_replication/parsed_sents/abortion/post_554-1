@@ -1,0 +1,73 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (NNS People))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ prolife))))))
+      (ADVP (RB just))
+      (VP (MD ca) (RB n't)
+        (VP (VB seem)
+          (S
+            (VP (TO to)
+              (VP (VB grasp)
+                (NP
+                  (NP (DT that))
+                  (CC neither)
+                  (NP (DT the) (NNP Supreme) (NNP Court)))))))))
+    (CC nor)
+    (S
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP choose)
+              (NP (NN abortion))))))
+      (VP (VBP are)
+        (VP (`` ``) (VBG forcing)
+          (NP (PRP$ their) (NN morality))
+          ('' '')
+          (PP (IN on)
+            (NP
+              (NP (NNS people))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP are)
+                    (PP (IN against)
+                      (NP (NN abortion)))))))))))
+    (. .)))
+
+nsubj(prolife-5, People-2)
+nsubj(seem-9, People-2)
+xsubj(grasp-11, People-2)
+cop(prolife-5, are-4)
+rcmod(People-2, prolife-5)
+advmod(seem-9, just-6)
+aux(seem-9, ca-7)
+neg(seem-9, n't-8)
+root(ROOT-0, seem-9)
+aux(grasp-11, to-10)
+xcomp(seem-9, grasp-11)
+dobj(grasp-11, that-12)
+dep(that-12, neither-13)
+det(Court-16, the-14)
+nn(Court-16, Supreme-15)
+conj(that-12, Court-16)
+nsubj(choose-20, those-18)
+nsubj(forcing-24, those-18)
+rcmod(those-18, choose-20)
+dobj(choose-20, abortion-21)
+aux(forcing-24, are-22)
+conj_nor(seem-9, forcing-24)
+poss(morality-26, their-25)
+dobj(forcing-24, morality-26)
+prep_on(forcing-24, people-29)
+nsubj(are-31, people-29)
+rcmod(people-29, are-31)
+prep_against(are-31, abortion-33)
+

@@ -1,0 +1,26 @@
+(ROOT
+  (S
+    (NP (DT A) (NN child))
+    (VP (VBZ is)
+      (VP (VBN aborted)
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADJP (JJ unwanted)
+                (CC and)
+                (JJ inconvenient)))))))
+    (. .)))
+
+det(child-2, A-1)
+nsubjpass(aborted-4, child-2)
+auxpass(aborted-4, is-3)
+root(ROOT-0, aborted-4)
+mark(unwanted-8, because-5)
+nsubj(unwanted-8, they-6)
+nsubj(inconvenient-10, they-6)
+cop(unwanted-8, are-7)
+advcl(aborted-4, unwanted-8)
+advcl(aborted-4, inconvenient-10)
+conj_and(unwanted-8, inconvenient-10)
+

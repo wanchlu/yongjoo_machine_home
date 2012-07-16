@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SBARQ
+      (WHNP (WP What))
+      (SQ
+        (VP (VBZ 's)))
+      (: -))
+    (NP (NN his-face))
+    (VP (VBD asked)
+      (S
+        (NP (PRP me))
+        (VP (TO to)
+          (VP (VB explain)
+            (NP
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is)
+                    (VP (VBN meant)
+                      (PP (IN by)
+                        (NP (VBN specified) (NN complexity)))))))
+              (CC and)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP I))
+                        (VP (VBD did))))))))))))
+    (. .)))
+
+nsubj('s-2, What-1)
+dep(asked-5, 's-2)
+nsubj(asked-5, his-face-4)
+root(ROOT-0, asked-5)
+nsubj(explain-8, me-6)
+aux(explain-8, to-7)
+xcomp(asked-5, explain-8)
+nsubjpass(meant-11, what-9)
+auxpass(meant-11, is-10)
+dobj(explain-8, meant-11)
+amod(complexity-14, specified-13)
+agent(meant-11, complexity-14)
+nsubj(is-17, that-16)
+dobj(explain-8, is-17)
+conj_and(meant-11, is-17)
+dobj(did-20, what-18)
+nsubj(did-20, I-19)
+ccomp(is-17, did-20)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (NNPS Teachers))
+    (VP (MD should)
+      (VP (VB be)
+        (VP
+          (VP (VBG teaching)
+            (NP (DT both) (NNS sides)))
+          (CC and)
+          (VP (VBG presenting)
+            (NP
+              (NP (JJ only) (NNS facts))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP are)
+                    (ADJP (JJ able)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP (VBN proven))))))))))))))
+    (. .)))
+
+nsubj(teaching-4, Teachers-1)
+nsubj(presenting-8, Teachers-1)
+aux(teaching-4, should-2)
+aux(teaching-4, be-3)
+root(ROOT-0, teaching-4)
+det(sides-6, both-5)
+dobj(teaching-4, sides-6)
+conj_and(teaching-4, presenting-8)
+amod(facts-10, only-9)
+dobj(presenting-8, facts-10)
+nsubj(able-13, facts-10)
+cop(able-13, are-12)
+rcmod(facts-10, able-13)
+aux(proven-16, to-14)
+auxpass(proven-16, be-15)
+xcomp(able-13, proven-16)
+

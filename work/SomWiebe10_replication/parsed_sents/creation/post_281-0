@@ -1,0 +1,74 @@
+(ROOT
+  (S (: ...)
+    (NP (PRP we))
+    (ADVP (RB absolutely))
+    (VP (VBP exclude)
+      (NP (JJ natural) (NN selection))
+      (PP (IN as)
+        (NP (DT a) (NN designer))))
+    (. !)))
+
+nsubj(exclude-4, we-2)
+advmod(exclude-4, absolutely-3)
+root(ROOT-0, exclude-4)
+amod(selection-6, natural-5)
+dobj(exclude-4, selection-6)
+det(designer-9, a-8)
+prep_as(exclude-4, designer-9)
+
+(ROOT
+  (S
+    (NP (DT the) (JJ real) (NN trick))
+    (VP (VBZ is)
+      (VP (VBG convincing)
+        (NP (DT the) (NN public))
+        (SBAR (IN that)
+          (S
+            (NP (NN macro-evolution))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (JJ scientific) (NN fact))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ has)
+                      (ADVP (RB never))
+                      (VP (VBN been)
+                        (VP (VBN observed)
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ is)
+                                (NP
+                                  (NP (DT a) (NN requirement))
+                                  (PP (IN for)
+                                    (NP (NN science))))))))))))))))))
+    (. .)))
+
+det(trick-3, the-1)
+amod(trick-3, real-2)
+nsubj(convincing-5, trick-3)
+aux(convincing-5, is-4)
+root(ROOT-0, convincing-5)
+det(public-7, the-6)
+dobj(convincing-5, public-7)
+complm(fact-13, that-8)
+nsubj(fact-13, macro-evolution-9)
+cop(fact-13, is-10)
+det(fact-13, a-11)
+amod(fact-13, scientific-12)
+ccomp(convincing-5, fact-13)
+tmod(observed-19, fact-13)
+advmod(observed-19, when-14)
+nsubjpass(observed-19, it-15)
+aux(observed-19, has-16)
+neg(observed-19, never-17)
+auxpass(observed-19, been-18)
+dep(fact-13, observed-19)
+nsubj(requirement-23, which-20)
+cop(requirement-23, is-21)
+det(requirement-23, a-22)
+ccomp(observed-19, requirement-23)
+prep_for(requirement-23, science-25)
+

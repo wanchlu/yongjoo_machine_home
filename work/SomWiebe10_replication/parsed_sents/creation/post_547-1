@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ hilarious))
+      (SBAR (IN since)
+        (S
+          (NP
+            (NP (NNP Barbara) (NNP Forrest))
+            (CC and)
+            (NP (NNP Paul) (NNP R) (NNP Gross)))
+          (VP (VBP have)
+            (VP
+              (ADVP (RB carefully))
+              (VBN examined)
+              (CC and)
+              (VBN documented)
+              (NP
+                (NP (DT the) (JJ various) (NNS claims))
+                (PP (IN by)
+                  (NP
+                    (NP (NNP Phillip) (NNP Johnson))
+                    (CC and)
+                    (NP (DT the) (JJ Wedge) (NN document))))))))))
+    (. .)))
+
+nsubj(hilarious-3, This-1)
+cop(hilarious-3, is-2)
+root(ROOT-0, hilarious-3)
+mark(examined-13, since-4)
+nn(Forrest-6, Barbara-5)
+nsubj(examined-13, Forrest-6)
+nsubj(documented-15, Forrest-6)
+nn(Gross-10, Paul-8)
+nn(Gross-10, R-9)
+conj_and(Forrest-6, Gross-10)
+nsubj(examined-13, Gross-10)
+aux(examined-13, have-11)
+advmod(examined-13, carefully-12)
+advcl(hilarious-3, examined-13)
+advcl(hilarious-3, documented-15)
+conj_and(examined-13, documented-15)
+det(claims-18, the-16)
+amod(claims-18, various-17)
+dobj(examined-13, claims-18)
+nn(Johnson-21, Phillip-20)
+prep_by(claims-18, Johnson-21)
+det(document-25, the-23)
+amod(document-25, Wedge-24)
+prep_by(claims-18, document-25)
+conj_and(Johnson-21, document-25)
+

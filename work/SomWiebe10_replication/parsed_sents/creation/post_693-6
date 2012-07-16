@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is) (RB not)
+      (SBAR
+        (SBAR (IN whether)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADVP (RB literally))
+              (ADJP (JJ true)))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBD did)
+              (NP
+                (NP (DT those) (JJ early) (NNPS Jews) (NN change))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD enabled)
+                      (S
+                        (NP (PRP them))
+                        (VP (TO to)
+                          (VP (VB find)
+                            (NP
+                              (NP (DT a) (NN faith))
+                              (SBAR
+                                (WHNP (WDT that))
+                                (S
+                                  (VP (VBZ has)
+                                    (VP (VBN lasted)
+                                      (NP
+                                        (NP (CD 1,000) (NNS s))
+                                        (PP (IN of)
+                                          (NP (NNS years)))))))))))))))))))))
+    (. ?)))
+
+det(question-2, The-1)
+nsubj(is-3, question-2)
+root(ROOT-0, is-3)
+neg(is-3, not-4)
+complm(true-9, whether-5)
+nsubj(true-9, it-6)
+cop(true-9, is-7)
+advmod(true-9, literally-8)
+ccomp(is-3, true-9)
+nsubj(did-13, what-12)
+ccomp(is-3, did-13)
+conj_but(true-9, did-13)
+det(change-17, those-14)
+amod(change-17, early-15)
+nn(change-17, Jews-16)
+dobj(did-13, change-17)
+nsubj(enabled-19, change-17)
+rcmod(change-17, enabled-19)
+nsubj(find-22, them-20)
+aux(find-22, to-21)
+xcomp(enabled-19, find-22)
+det(faith-24, a-23)
+dobj(find-22, faith-24)
+nsubj(lasted-27, faith-24)
+aux(lasted-27, has-26)
+rcmod(faith-24, lasted-27)
+num(s-29, 1,000-28)
+dobj(lasted-27, s-29)
+prep_of(s-29, years-31)
+

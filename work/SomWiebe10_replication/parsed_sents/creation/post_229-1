@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (DT this) (NN essay)))
+      (NP (NNP Behe))
+      (VP (VBZ makes)
+        (NP (RB basically) (CD two) (NNS assertions))))
+    (: :)
+    (S
+      (S
+        (LST (-LRB- -LRB-) (LS 1) (-RRB- -RRB-))
+        (NP (JJ observed) (NN evolution))
+        (VP
+          (ADVP (RB mostly))
+          (VBZ produces)
+          (NP (`` ``) (JJ degradative) (NNS changes) ('' ''))))
+      (CC and)
+      (S
+        (LST (-LRB- -LRB-) (LS 2) (-RRB- -RRB-))
+        (NP (NNP mutation)
+          (CC &)
+          (NNP selection))
+        (VP (MD can) (RB not)
+          (VP (VB produce)
+            (NP
+              (ADJP (RB irreducibly) (JJ complex))
+              (NNS systems))))))
+    (. .)))
+
+det(essay-3, this-2)
+prep_in(makes-5, essay-3)
+nsubj(makes-5, Behe-4)
+root(ROOT-0, makes-5)
+advmod(assertions-8, basically-6)
+num(assertions-8, two-7)
+dobj(makes-5, assertions-8)
+dep(produces-16, 1-11)
+amod(evolution-14, observed-13)
+nsubj(produces-16, evolution-14)
+advmod(produces-16, mostly-15)
+parataxis(makes-5, produces-16)
+amod(changes-19, degradative-18)
+dobj(produces-16, changes-19)
+dep(produce-30, 2-23)
+nsubj(produce-30, mutation-25)
+conj_and(mutation-25, selection-27)
+nsubj(produce-30, selection-27)
+aux(produce-30, can-28)
+neg(produce-30, not-29)
+parataxis(makes-5, produce-30)
+conj_and(produces-16, produce-30)
+advmod(complex-32, irreducibly-31)
+amod(systems-33, complex-32)
+dobj(produce-30, systems-33)
+

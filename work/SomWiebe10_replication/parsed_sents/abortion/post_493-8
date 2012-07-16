@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (`` ``) (NN fetus) ('' ''))
+        (VP (VBZ is) (, ,)
+          (PP (IN in)
+            (NP (NN fact)))
+          (, ,)
+          (NP (DT a) (NN person)))))
+    (, ,)
+    (VP (VB let)
+      (S
+        (NP (DT that) (NN fetus))
+        (VP (VB fend)
+          (PP (IN for)
+            (NP (PRP itself))))))
+    (. .)))
+
+mark(person-12, If-1)
+det(fetus-4, a-2)
+nsubj(person-12, fetus-4)
+cop(person-12, is-6)
+prep_in(person-12, fact-9)
+det(person-12, a-11)
+advcl(let-14, person-12)
+root(ROOT-0, let-14)
+det(fetus-16, that-15)
+nsubj(fend-17, fetus-16)
+ccomp(let-14, fend-17)
+prep_for(fend-17, itself-19)
+

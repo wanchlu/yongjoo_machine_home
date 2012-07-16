@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN research))
+      (VP (VBN discussed)
+        (PP (IN in)
+          (NP (DT this) (NN book)))))
+    (VP (VBZ leads)
+      (PP (TO to)
+        (NP (DT the) (NN conclusion)))
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (NNS mutations))
+            (VP (VBP are) (RB not)
+              (NP (DT all) (NNS accidents)))))
+        (CC and)
+        (SBAR (IN that)
+          (S
+            (NP (NNS mutations))
+            (VP (VBP are) (RB not)
+              (ADVP (RB always))
+              (ADJP (JJ random)))))))
+    (. .)))
+
+det(research-2, The-1)
+nsubj(leads-7, research-2)
+partmod(research-2, discussed-3)
+det(book-6, this-5)
+prep_in(discussed-3, book-6)
+root(ROOT-0, leads-7)
+det(conclusion-10, the-9)
+prep_to(leads-7, conclusion-10)
+complm(accidents-16, that-11)
+nsubj(accidents-16, mutations-12)
+cop(accidents-16, are-13)
+neg(accidents-16, not-14)
+det(accidents-16, all-15)
+ccomp(leads-7, accidents-16)
+complm(random-23, that-18)
+nsubj(random-23, mutations-19)
+cop(random-23, are-20)
+neg(random-23, not-21)
+advmod(random-23, always-22)
+ccomp(leads-7, random-23)
+conj_and(accidents-16, random-23)
+

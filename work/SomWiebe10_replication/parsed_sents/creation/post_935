@@ -1,0 +1,107 @@
+(ROOT
+  (NP (NNPS Yes)
+    (CC and)
+    (NNPS no.)))
+
+root(ROOT-0, Yes-1)
+conj_and(Yes-1, no.-3)
+
+(ROOT
+  (FRAG
+    (ADVP (RB However))
+    (SBAR (WP what) (IN about)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP refuse)
+              (S
+                (VP (TO to)
+                  (VP (VB accept)
+                    (NP (PRP it))
+                    (ADVP (RB simply))
+                    (SBAR (IN because)
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP do) (RB n't)
+                          (VP (VB want)
+                            (PP (TO to)))))))))))))
+      (. .))))
+
+root(ROOT-0, However-1)
+dep(about-3, what-2)
+dep(However-1, about-3)
+dep(about-3, those-4)
+nsubj(refuse-6, those-4)
+rcmod(those-4, refuse-6)
+aux(accept-8, to-7)
+xcomp(refuse-6, accept-8)
+dobj(accept-8, it-9)
+advmod(accept-8, simply-10)
+mark(want-15, because-11)
+nsubj(want-15, they-12)
+aux(want-15, do-13)
+neg(want-15, n't-14)
+advcl(accept-8, want-15)
+prep(want-15, to-16)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP do) (RB n't)
+      (ADVP (RB truly))
+      (VP (VB deny)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ exists))
+            (. .)))))
+    (. .)))
+
+nsubj(deny-5, They-1)
+aux(deny-5, do-2)
+neg(deny-5, n't-3)
+advmod(deny-5, truly-4)
+root(ROOT-0, deny-5)
+nsubj(exists-7, it-6)
+ccomp(deny-5, exists-7)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (ADVP (RB just))
+    (VP (VBP refuse)
+      (S
+        (VP (TO to)
+          (VP (VB accept)
+            (NP (PRP it))))))
+    (. .)))
+
+nsubj(refuse-3, they-1)
+xsubj(accept-5, they-1)
+advmod(refuse-3, just-2)
+root(ROOT-0, refuse-3)
+aux(accept-5, to-4)
+xcomp(refuse-3, accept-5)
+dobj(accept-5, it-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (PP (IN like)
+        (S
+          (VP (VBG ignoring)
+            (NP
+              (NP (DT a) (NN baby))
+              (VP (VBG crying)))))))
+    (: ...)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+prepc_like('s-2, ignoring-4)
+det(baby-6, a-5)
+dobj(ignoring-4, baby-6)
+partmod(baby-6, crying-7)
+

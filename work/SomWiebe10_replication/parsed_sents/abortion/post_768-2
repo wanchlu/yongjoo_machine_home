@@ -1,0 +1,51 @@
+(ROOT
+  (SQ (VBZ is)
+    (NP (PRP it))
+    (ADVP (RB not))
+    (NP (PRP$ her) (NN BODY))
+    (. ?)))
+
+cop(BODY-5, is-1)
+nsubj(BODY-5, it-2)
+advmod(BODY-5, not-3)
+poss(BODY-5, her-4)
+root(ROOT-0, BODY-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB repeat)
+        (NP
+          (NP (NN everything))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBD wrote)
+                (SBAR (CC but)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP find)
+                      (SBAR (IN that)
+                        (S
+                          (VP (TO to)
+                            (VP (VB be)
+                              (ADJP (RB somewhat) (JJ pointless)))))))))))))))
+    (. .)))
+
+nsubj(repeat-3, I-1)
+aux(repeat-3, would-2)
+root(ROOT-0, repeat-3)
+dobj(repeat-3, everything-4)
+nsubj(wrote-6, I-5)
+rcmod(everything-4, wrote-6)
+cc(find-9, but-7)
+nsubj(find-9, I-8)
+ccomp(wrote-6, find-9)
+complm(pointless-14, that-10)
+aux(pointless-14, to-11)
+cop(pointless-14, be-12)
+advmod(pointless-14, somewhat-13)
+ccomp(find-9, pointless-14)
+xcomp(find-9, pointless-14)
+

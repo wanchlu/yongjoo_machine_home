@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NNP medical) (NNS terms) (, ,))
+        (, an) ('' '')
+        (NP
+          (NP (NN abortion) ('' ''))
+          (VP (VBZ happens)
+            (NP (DT every) (NN time))))))
+    (NP
+      (NP (DT the) (NNS products))
+      (PP (IN of)
+        (NP
+          (NP (NN conception))
+          (PRN (-LRB- -LRB-)
+            (NP (DT a) (JJ fertilized) (NN egg))
+            (-RRB- -RRB-)))))
+    (VP (VBZ leaves)
+      (NP (DT the) (NN uterus))
+      (PP (IN without)
+        (S
+          (VP (VBG producing)
+            (NP (DT a) (JJ live) (NN birth))))))
+    (. .)))
+
+nn(terms-3, medical-2)
+prep_in(leaves-21, terms-3)
+punct(terms-3, an-5)
+dep(terms-3, abortion-7)
+dep(abortion-7, happens-9)
+det(time-11, every-10)
+dobj(happens-9, time-11)
+det(products-13, the-12)
+nsubj(leaves-21, products-13)
+prep_of(products-13, conception-15)
+det(egg-19, a-17)
+amod(egg-19, fertilized-18)
+appos(conception-15, egg-19)
+root(ROOT-0, leaves-21)
+det(uterus-23, the-22)
+dobj(leaves-21, uterus-23)
+prepc_without(leaves-21, producing-25)
+det(birth-28, a-26)
+amod(birth-28, live-27)
+dobj(producing-25, birth-28)
+

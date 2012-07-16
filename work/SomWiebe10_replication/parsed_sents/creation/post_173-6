@@ -1,0 +1,47 @@
+(ROOT
+  (S (CC But)
+    (, ,)
+    (SBAR (IN as)
+      (S
+        (NP (PRP I))
+        (VP (VBP 've)
+          (VP (VBN shown)))))
+    (, ,)
+    (NP (NN design))
+    (VP (VBZ requires)
+      (S
+        (NP (NN order))
+        (VP (TO to)
+          (VP (VB prexist)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN designer))
+                (CC and)
+                (NP (DT the) (NNS entities)))))))
+      (SBAR
+        (S
+          (NP (DT the) (NN designer))
+          (VP (VBZ designs)
+            (PP (IN with))))))
+    (. .)))
+
+cc(requires-9, But-1)
+mark(shown-6, as-3)
+nsubj(shown-6, I-4)
+aux(shown-6, 've-5)
+advcl(requires-9, shown-6)
+nsubj(requires-9, design-8)
+root(ROOT-0, requires-9)
+nsubj(prexist-12, order-10)
+aux(prexist-12, to-11)
+xcomp(requires-9, prexist-12)
+det(designer-15, the-14)
+prep_in(prexist-12, designer-15)
+det(entities-18, the-17)
+prep_in(prexist-12, entities-18)
+conj_and(designer-15, entities-18)
+det(designer-20, the-19)
+nsubj(designs-21, designer-20)
+ccomp(requires-9, designs-21)
+prep(designs-21, with-22)
+

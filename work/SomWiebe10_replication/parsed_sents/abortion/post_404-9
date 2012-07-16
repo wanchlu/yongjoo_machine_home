@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (ADJP (JJ correct))))
+    (, ,)
+    (S
+      (NP (NN cesarean) (NNS births))
+      (VP (VBP do) (RB not)
+        (VP (VB change)
+          (NP (DT the) (NN debate)))))
+    (, ,)
+    (S
+      (NP (PRP they))
+      (VP (VBP make)
+        (S
+          (NP (PRP it))
+          (NP
+            (NP (DT a) (JJR stronger) (NN case))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP
+                  (VP
+                    (ADVP (RB personhood))
+                    (VBZ has)
+                    (NP (NN nothing)
+                      (S
+                        (VP (TO to)
+                          (VP (VB do)
+                            (PP (IN with)
+                              (NP (DT the) (NN birth))))))))
+                  (CC and)
+                  (VP (MD must)
+                    (VP (VB exist)
+                      (ADVP (RB before)))))))))))
+    (. .)))
+
+nsubj(correct-3, You-1)
+cop(correct-3, are-2)
+root(ROOT-0, correct-3)
+nn(births-6, cesarean-5)
+nsubj(change-9, births-6)
+aux(change-9, do-7)
+neg(change-9, not-8)
+ccomp(correct-3, change-9)
+det(debate-11, the-10)
+dobj(change-9, debate-11)
+nsubj(make-14, they-13)
+ccomp(correct-3, make-14)
+nsubj(case-18, it-15)
+det(case-18, a-16)
+amod(case-18, stronger-17)
+xcomp(make-14, case-18)
+nsubj(has-21, case-18)
+nsubj(exist-30, case-18)
+advmod(has-21, personhood-20)
+rcmod(case-18, has-21)
+dobj(has-21, nothing-22)
+aux(do-24, to-23)
+infmod(nothing-22, do-24)
+det(birth-27, the-26)
+prep_with(do-24, birth-27)
+aux(exist-30, must-29)
+rcmod(case-18, exist-30)
+conj_and(has-21, exist-30)
+advmod(exist-30, before-31)
+

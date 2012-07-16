@@ -1,0 +1,61 @@
+(ROOT
+  (S (-LRB- -LRB-)
+    (SBAR (IN though)
+      (S
+        (NP (PRP I))
+        (VP (VBP assume)
+          (SBAR
+            (S
+              (NP (DT some))
+              (ADVP (RB still))
+              (VP (MD would) (RB n't)
+                (VP
+                  (VP (VB believe))
+                  (: ...)
+                  (NP
+                    (NP
+                      (NP (NN man) (POS 's))
+                      (NN capacity))
+                    (PP (IN for)
+                      (NP (NN disbelief)))))))))))
+    (, ,)
+    (PP (RB especially)
+      (NP (DT these) (NNS days)))
+    (, ,)
+    (VP (VBZ is)
+      (ADJP (JJ amazing)))
+    (-RRB- -RRB-) (. .)))
+
+mark(assume-4, though-2)
+nsubj(assume-4, I-3)
+dep(amazing-22, assume-4)
+nsubj(believe-9, some-5)
+advmod(believe-9, still-6)
+aux(believe-9, would-7)
+neg(believe-9, n't-8)
+ccomp(assume-4, believe-9)
+poss(capacity-13, man-11)
+dobj(believe-9, capacity-13)
+prep_for(capacity-13, disbelief-15)
+prep(amazing-22, especially-17)
+det(days-19, these-18)
+pobj(especially-17, days-19)
+cop(amazing-22, is-21)
+root(ROOT-0, amazing-22)
+
+(ROOT
+  (FRAG
+    (ADVP (RB as) (RB far))
+    (SBAR (IN as)
+      (S
+        (NP (PRP$ your))
+        (VP (VBP question)))
+      (. .))
+    (. .)))
+
+advmod(far-2, as-1)
+root(ROOT-0, far-2)
+mark(question-5, as-3)
+nsubj(question-5, your-4)
+dep(far-2, question-5)
+

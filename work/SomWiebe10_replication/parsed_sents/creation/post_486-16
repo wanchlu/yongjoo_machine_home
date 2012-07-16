@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (NNP THAT))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN argument))
+        (VP (VBN put)
+          (PRT (RP forth))
+          (PP (IN by)
+            (NP (DT the) (NNP DI))))))
+    (. .)))
+
+nsubj(argument-4, THAT-1)
+cop(argument-4, is-2)
+det(argument-4, the-3)
+root(ROOT-0, argument-4)
+partmod(argument-4, put-5)
+prt(put-5, forth-6)
+det(DI-9, the-8)
+agent(put-5, DI-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (NN argument))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNS AUSCS))
+          (VP (VBD got)
+            (ADJP (JJ wrong))))))
+    (VP (VBZ is)
+      (NP (DT the) (NN notion))
+      (SBAR (IN that)
+        (S
+          (NP (JJ intelligent) (NN design))
+          (VP (VBZ has)
+            (ADVP (RB never))
+            (VP (VBN appeared)
+              (PP (IN in)
+                (NP (DT a) (JJ single) (JJ peer-reviewed) (NN journal))))))))
+    (. .)))
+
+det(argument-2, Another-1)
+dobj(wrong-7, argument-2)
+nsubj(notion-10, argument-2)
+complm(wrong-7, that-3)
+det(AUSCS-5, the-4)
+nsubj(wrong-7, AUSCS-5)
+dep(wrong-7, got-6)
+dep(argument-2, wrong-7)
+cop(notion-10, is-8)
+det(notion-10, the-9)
+root(ROOT-0, notion-10)
+complm(appeared-16, that-11)
+amod(design-13, intelligent-12)
+nsubj(appeared-16, design-13)
+aux(appeared-16, has-14)
+neg(appeared-16, never-15)
+ccomp(notion-10, appeared-16)
+det(journal-21, a-18)
+amod(journal-21, single-19)
+amod(journal-21, peer-reviewed-20)
+prep_in(appeared-16, journal-21)
+

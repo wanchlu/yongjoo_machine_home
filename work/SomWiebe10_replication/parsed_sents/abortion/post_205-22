@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP suggest)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ does))))
+      (, ,)
+      (PP (IN because)
+        (S (RB not)
+          (VP (VBG electing)
+            (SBAR
+              (S
+                (NP (PRP him))
+                (VP (MD would)
+                  (VP (VB make)
+                    (S
+                      (NP (DT this) (JJ dramatic) (VBN increased) (NN vulnerability))
+                      (ADJP (JJ impossible)))))))))))
+    (. .)))
+
+nsubj(suggest-2, I-1)
+root(ROOT-0, suggest-2)
+nsubj(does-4, it-3)
+ccomp(suggest-2, does-4)
+neg(electing-8, not-7)
+prepc_because(suggest-2, electing-8)
+nsubj(make-11, him-9)
+aux(make-11, would-10)
+ccomp(electing-8, make-11)
+det(vulnerability-15, this-12)
+amod(vulnerability-15, dramatic-13)
+amod(vulnerability-15, increased-14)
+nsubj(impossible-16, vulnerability-15)
+xcomp(make-11, impossible-16)
+

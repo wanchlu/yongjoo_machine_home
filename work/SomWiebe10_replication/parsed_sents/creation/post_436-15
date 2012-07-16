@@ -1,0 +1,34 @@
+(ROOT
+  (FRAG (CC Or)
+    (RB even)
+    (NP
+      (NP (JJR worse))
+      (, ,)
+      (SBAR
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADJP (RBR more) (JJ complex))))))
+        (SBAR (IN than)
+          (S
+            (NP (DT the) (NN universe))
+            (VP (TO to)
+              (VP (VB create)
+                (NP (PRP it))))))))
+    (. ?)))
+
+dep(even-2, Or-1)
+root(ROOT-0, even-2)
+dep(even-2, worse-3)
+aux(complex-8, to-5)
+cop(complex-8, be-6)
+advmod(complex-8, more-7)
+dep(worse-3, complex-8)
+mark(create-13, than-9)
+det(universe-11, the-10)
+nsubj(create-13, universe-11)
+aux(create-13, to-12)
+dep(complex-8, create-13)
+dobj(create-13, it-14)
+

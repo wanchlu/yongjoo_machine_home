@@ -1,0 +1,159 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ is)
+      (ADVP (RB simply))
+      (NP
+        (NP (DT the) (JJ genetic) (NN change))
+        (PP (IN in)
+          (NP
+            (NP (NNS populations))
+            (PP (IN of)
+              (NP
+                (NP (NNS organisms))
+                (PP (IN over)
+                  (NP (JJ successive) (NNS generations)))))))))
+    (. .)))
+
+nsubj(change-6, Evolution-1)
+cop(change-6, is-2)
+advmod(change-6, simply-3)
+det(change-6, the-4)
+amod(change-6, genetic-5)
+root(ROOT-0, change-6)
+prep_in(change-6, populations-8)
+prep_of(populations-8, organisms-10)
+amod(generations-13, successive-12)
+prep_over(organisms-10, generations-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (RB So))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG saying)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (ADJP (RB genetically) (JJ identical)
+                (PP (TO to)
+                  (NP
+                    (NP (PRP$ your) (NNS parents))
+                    (, ,)
+                    (NP (PRP$ your) (NNS grandparents))
+                    (, ,)
+                    (CC and)
+                    (NP (PRP$ your) (NNS neighbors))))))))))
+    (. ?)))
+
+advmod(saying-4, So-1)
+aux(saying-4, are-2)
+nsubj(saying-4, you-3)
+root(ROOT-0, saying-4)
+complm(identical-9, that-5)
+nsubj(identical-9, you-6)
+cop(identical-9, are-7)
+advmod(identical-9, genetically-8)
+ccomp(saying-4, identical-9)
+poss(parents-12, your-11)
+prep_to(identical-9, parents-12)
+poss(grandparents-15, your-14)
+prep_to(identical-9, grandparents-15)
+conj_and(parents-12, grandparents-15)
+poss(neighbors-19, your-18)
+prep_to(identical-9, neighbors-19)
+conj_and(parents-12, neighbors-19)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (RB Exactly) (WRB how)
+        (CC and)
+        (WRB why))
+      (S
+        (NP (DT these) (NNS changes))
+        (VP (VBP take)
+          (SBAR
+            (S
+              (NP (NN place))
+              (VP (VBZ is)
+                (ADJP (JJ subject)
+                  (S
+                    (VP
+                      (VP (TO to)
+                        (VP (VB debate)
+                          (SBAR
+                            (S
+                              (NP (PRP I))
+                              (VP (VBP suppose))))))
+                      (, ,)
+                      (CC but)
+                      (VP (TO to)
+                        (VP (VB suggest)
+                          (SBAR
+                            (S
+                              (NP (PRP it))
+                              (VP (VBZ does) (RB not)
+                                (VP (VB exist))))))))))))))))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (VP (VBG denying)
+        (NP
+          (NP (DT the) (NN evidence))
+          (PP (IN of)
+            (NP (JJ genetic) (NN diversity)))
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP see) (, ,)
+                (PP (IN with)
+                  (NP (PRP$ your) (JJ own) (NNS eyes)))
+                (, ,)
+                (ADVP (DT all) (RP around))))))
+        (NP
+          (NP (PRP you))
+          (NP (DT every) (NN day)))))
+    (. .)))
+
+dep(how-2, Exactly-1)
+advmod(take-7, how-2)
+dep(how-2, and-3)
+dep(how-2, why-4)
+det(changes-6, these-5)
+nsubj(take-7, changes-6)
+advcl(denying-25, take-7)
+csubj(denying-25, take-7)
+nsubj(subject-10, place-8)
+cop(subject-10, is-9)
+ccomp(take-7, subject-10)
+aux(debate-12, to-11)
+dep(subject-10, debate-12)
+nsubj(suppose-14, I-13)
+ccomp(debate-12, suppose-14)
+aux(suggest-18, to-17)
+dep(subject-10, suggest-18)
+conj_but(debate-12, suggest-18)
+nsubj(exist-22, it-19)
+aux(exist-22, does-20)
+neg(exist-22, not-21)
+ccomp(suggest-18, exist-22)
+aux(denying-25, is-23)
+advmod(denying-25, just-24)
+root(ROOT-0, denying-25)
+det(evidence-27, the-26)
+iobj(denying-25, evidence-27)
+dobj(see-32, evidence-27)
+amod(diversity-30, genetic-29)
+prep_of(evidence-27, diversity-30)
+nsubj(see-32, you-31)
+rcmod(evidence-27, see-32)
+poss(eyes-37, your-35)
+amod(eyes-37, own-36)
+prep_with(see-32, eyes-37)
+dep(around-40, all-39)
+advmod(see-32, around-40)
+dobj(denying-25, you-41)
+det(day-43, every-42)
+dep(you-41, day-43)
+

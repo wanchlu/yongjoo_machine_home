@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (DT Another) (NN point)
+      (S
+        (VP (TO to)
+          (VP (VB remember)))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Judge) (NNP Jones) ('' '') (NN decision))
+          (VP (VBZ pertains)
+            (PP (TO to)
+              (NP (DT the) (NN case) ('' '')))
+            (NP
+              (NP (NNP Kitzmiller)
+                (CC v.)
+                (NNP Dover))
+              ('' '')
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBD was)
+                    (VP (VBN decided)
+                      (PP (IN in)
+                        (NP (CD 2005))))))))))))
+    (. .)))
+
+det(point-2, Another-1)
+nsubj(is-5, point-2)
+aux(remember-4, to-3)
+infmod(point-2, remember-4)
+root(ROOT-0, is-5)
+complm(pertains-11, that-6)
+nn(decision-10, Judge-7)
+nn(decision-10, Jones-8)
+nsubj(pertains-11, decision-10)
+ccomp(is-5, pertains-11)
+det(case-14, the-13)
+prep_to(pertains-11, case-14)
+dobj(pertains-11, Kitzmiller-16)
+dobj(pertains-11, Dover-18)
+conj_v.(Kitzmiller-16, Dover-18)
+nsubjpass(decided-22, which-20)
+auxpass(decided-22, was-21)
+rcmod(Kitzmiller-16, decided-22)
+prep_in(decided-22, 2005-24)
+

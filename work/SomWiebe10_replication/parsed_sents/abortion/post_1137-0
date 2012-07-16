@@ -1,0 +1,47 @@
+(ROOT
+  (SINV
+    (FRAG
+      (VP (VB Help)
+        (NP (PRP me))
+        (PP (IN with)
+          (NP (NN something)))
+        (ADVP (RB here))))
+    (, ,)
+    (VP (VBP are))
+    (NP (PRP you))
+    (S
+      (VP (VBG saying)
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN career)
+              (CC and)
+              (NN education))
+            (VP (VBP are)
+              (ADJP (RBR more) (JJ important)
+                (PP (IN than)
+                  (NP
+                    (NP (DT the) (NN life))
+                    (PP (IN of)
+                      (NP (DT a) (NN child)))))))))))
+    (. ?)))
+
+dep(are-7, Help-1)
+dobj(Help-1, me-2)
+prep_with(Help-1, something-4)
+advmod(Help-1, here-5)
+root(ROOT-0, are-7)
+nsubj(are-7, you-8)
+dep(are-7, saying-9)
+complm(important-17, that-10)
+det(career-12, a-11)
+nsubj(important-17, career-12)
+conj_and(career-12, education-14)
+nsubj(important-17, education-14)
+cop(important-17, are-15)
+advmod(important-17, more-16)
+ccomp(saying-9, important-17)
+det(life-20, the-19)
+prep_than(important-17, life-20)
+det(child-23, a-22)
+prep_of(life-20, child-23)
+

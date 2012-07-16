@@ -1,0 +1,45 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ happens)
+        (SBAR
+          (ADVP (RB then))
+          (IN if)
+          (S
+            (S
+              (NP (PRP you))
+              (VP (VBP live)
+                (PP (IN in)
+                  (NP (DT a) (JJ small) (NN town)))))
+            (CC and)
+            (S
+              (NP (DT the) (JJ only) (NN pharmacy))
+              (ADVP (RB around))
+              (VP (MD wo) (RB n't)
+                (VP (VB give)
+                  (NP (PRP it))
+                  (PP (TO to)
+                    (NP (PRP you))))))))))
+    (. ?)))
+
+nsubj(happens-2, What-1)
+root(ROOT-0, happens-2)
+advmod(live-6, then-3)
+dep(live-6, if-4)
+nsubj(live-6, you-5)
+dep(happens-2, live-6)
+det(town-10, a-8)
+amod(town-10, small-9)
+prep_in(live-6, town-10)
+det(pharmacy-14, the-12)
+amod(pharmacy-14, only-13)
+nsubj(give-18, pharmacy-14)
+advmod(give-18, around-15)
+aux(give-18, wo-16)
+neg(give-18, n't-17)
+dep(happens-2, give-18)
+conj_and(live-6, give-18)
+dobj(give-18, it-19)
+prep_to(give-18, you-21)
+

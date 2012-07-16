@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN universe))
+      (VP (VBZ is)
+        (ADJP
+          (NP
+            (QP (RB around) (CD 13.7) (CD billion))
+            (NNS years))
+          (JJ old))))
+    (, ,)
+    (S
+      (NP (PRP$ our) (NN planet))
+      (VP (VBZ is)
+        (ADJP
+          (NP
+            (QP (RB about) (CD 4.7) (CD billion))
+            (NNS years))
+          (JJ old))))
+    (, ,)
+    (S
+      (NP (PRP$ our) (JJ current) (JJ human) (NNS species))
+      (VP (VBZ is)
+        (ADJP
+          (NP
+            (QP (RB somewhere) (IN around) (CD 150,000))
+            (NNS years))
+          (JJ old))))
+    (. .)))
+
+det(universe-2, The-1)
+nsubj(old-8, universe-2)
+cop(old-8, is-3)
+quantmod(billion-6, around-4)
+number(billion-6, 13.7-5)
+num(years-7, billion-6)
+npadvmod(old-8, years-7)
+root(ROOT-0, old-8)
+poss(planet-11, our-10)
+nsubj(old-17, planet-11)
+cop(old-17, is-12)
+quantmod(billion-15, about-13)
+number(billion-15, 4.7-14)
+num(years-16, billion-15)
+npadvmod(old-17, years-16)
+ccomp(old-8, old-17)
+poss(species-22, our-19)
+amod(species-22, current-20)
+amod(species-22, human-21)
+nsubj(old-28, species-22)
+cop(old-28, is-23)
+advmod(around-25, somewhere-24)
+quantmod(150,000-26, around-25)
+num(years-27, 150,000-26)
+npadvmod(old-28, years-27)
+ccomp(old-8, old-28)
+

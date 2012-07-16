@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (SBAR (IN Before)
+      (S
+        (NP (DT the) (NNS milestones))
+        (VP (VBP are)
+          (ADJP (JJ past)
+            (SBAR
+              (S
+                (NP (DT a) (NN fetus))
+                (VP (VBZ is)
+                  (ADJP (RB only) (RB potentially)))))))))
+    (NP (DT a) (JJ human) (JJ being) (NN potential))
+    (VP (VBZ is) (RB not)
+      (ADJP
+        (NP (DT the) (JJ same))
+        (RB as) (JJ actual)))
+    (. .)))
+
+mark(past-5, Before-1)
+det(milestones-3, the-2)
+nsubj(past-5, milestones-3)
+cop(past-5, are-4)
+advcl(actual-20, past-5)
+det(fetus-7, a-6)
+nsubj(potentially-10, fetus-7)
+cop(potentially-10, is-8)
+advmod(potentially-10, only-9)
+dep(past-5, potentially-10)
+det(potential-14, a-11)
+amod(potential-14, human-12)
+amod(potential-14, being-13)
+nsubj(actual-20, potential-14)
+cop(actual-20, is-15)
+neg(actual-20, not-16)
+det(same-18, the-17)
+dep(actual-20, same-18)
+advmod(actual-20, as-19)
+root(ROOT-0, actual-20)
+

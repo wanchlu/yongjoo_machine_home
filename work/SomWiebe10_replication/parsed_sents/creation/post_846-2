@@ -1,0 +1,35 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (NNP Time))
+      (VP (VBZ does)
+        (VP (VB pass)
+          (PP (IN at)
+            (NP (JJ different) (NNS rates)))
+          (PP (IN at)
+            (NP (JJ different) (NNS locations))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT that) (NN variance))
+      (VP (VBZ follows)
+        (NP
+          (ADJP (RB very) (JJ specific))
+          (JJ mathematical) (NNS equations))))
+    (. .)))
+
+nsubj(pass-4, Time-2)
+aux(pass-4, does-3)
+root(ROOT-0, pass-4)
+amod(rates-7, different-6)
+prep_at(pass-4, rates-7)
+amod(locations-10, different-9)
+prep_at(pass-4, locations-10)
+det(variance-14, that-13)
+nsubj(follows-15, variance-14)
+conj_but(pass-4, follows-15)
+advmod(specific-17, very-16)
+amod(equations-19, specific-17)
+amod(equations-19, mathematical-18)
+dobj(follows-15, equations-19)
+

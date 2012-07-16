@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN Though)
+        (S
+          (NP (NN geology))
+          (VP (VBZ feels))))
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP (DT an)
+          (ADJP (JJ open)
+            (CC and)
+            (VBN shut))
+          (NN case))))
+    (: ...)
+    (S
+      (NP (EX there))
+      (VP (VBP are)
+        (NP
+          (NP (RB plenty))
+          (PP (IN of)
+            (NP
+              (NP (NNS questions))
+              (SBAR (IN if)
+                (S
+                  (NP (DT the) (NNP Grand) (NNP Canyon))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (DT the) (NN result))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS millions))
+                          (PP (IN of)
+                            (NP
+                              (NP (NNS years))
+                              (PP (IN of)
+                                (NP (NN erosion)))))))
+                      (: ...)
+                      (SBARQ
+                        (WHADVP (WRB where))
+                        (SQ (MD would)
+                          (NP
+                            (NP (DT the) (NN land))
+                            (PP (IN from)
+                              (NP (DT that) (NN erosion))))
+                          (VP (VB end)
+                            (PRT (RP up))))
+                        (. ?)))))))))))))
+
+mark(feels-3, Though-1)
+nsubj(feels-3, geology-2)
+advcl(case-10, feels-3)
+nsubj(case-10, it-4)
+cop(case-10, 's-5)
+det(case-10, an-6)
+amod(case-10, open-7)
+conj_and(open-7, shut-9)
+amod(case-10, shut-9)
+root(ROOT-0, case-10)
+expl(are-13, there-12)
+parataxis(case-10, are-13)
+nsubj(are-13, plenty-14)
+prep_of(plenty-14, questions-16)
+mark(result-23, if-17)
+det(Canyon-20, the-18)
+nn(Canyon-20, Grand-19)
+nsubj(result-23, Canyon-20)
+cop(result-23, is-21)
+det(result-23, the-22)
+dep(questions-16, result-23)
+prep_of(result-23, millions-25)
+prep_of(millions-25, years-27)
+prep_of(years-27, erosion-29)
+advmod(end-38, where-31)
+aux(end-38, would-32)
+det(land-34, the-33)
+nsubj(end-38, land-34)
+det(erosion-37, that-36)
+prep_from(land-34, erosion-37)
+dep(result-23, end-38)
+prt(end-38, up-39)
+

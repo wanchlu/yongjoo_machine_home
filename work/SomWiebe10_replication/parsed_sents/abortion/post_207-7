@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP
+      (VP (VBZ does) (RB not)
+        (VP (VB mean)
+          (SBAR
+            (S
+              (NP (DT the) (NNS others))
+              (VP (VBP are)
+                (VP (VBG going)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (VP (VBN ignored)))))))))))
+      (, ,)
+      (CC but)
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (JJ basic) (NN understanding))
+          (SBAR (IN that)
+            (S
+              (NP (RB not) (NN everything))
+              (VP (VBZ is)
+                (ADJP (JJ equal))))))))
+    (. .)))
+
+nsubj(mean-4, This-1)
+aux(mean-4, does-2)
+neg(mean-4, not-3)
+root(ROOT-0, mean-4)
+det(others-6, the-5)
+nsubj(going-8, others-6)
+xsubj(ignored-11, others-6)
+aux(going-8, are-7)
+ccomp(mean-4, going-8)
+aux(ignored-11, to-9)
+auxpass(ignored-11, be-10)
+xcomp(going-8, ignored-11)
+cop(understanding-17, is-14)
+det(understanding-17, a-15)
+amod(understanding-17, basic-16)
+conj_but(mean-4, understanding-17)
+complm(equal-22, that-18)
+neg(everything-20, not-19)
+nsubj(equal-22, everything-20)
+cop(equal-22, is-21)
+dep(understanding-17, equal-22)
+

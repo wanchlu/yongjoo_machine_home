@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP
+      (VP (MD may)
+        (VP (VB be)
+          (ADJP (JJ true))))
+      (, ,)
+      (CC but)
+      (VP
+        (ADVP (RB not)
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NN order))
+              (PP (IN of)
+                (NP (NN magnitude))))))
+        (JJ required)
+        (PP (IN for)
+          (NP
+            (NP (DT a) (JJ single) (NN protein))
+            (, ,)
+            (CONJP (RB not) (TO to) (VB mention))
+            (NP
+              (NP (DT the) (NN information))
+              (ADJP (JJ involved)
+                (PP (IN in)
+                  (NP (NNP DNA)))))))))
+    (. .)))
+
+nsubj(true-4, This-1)
+nsubj(required-13, This-1)
+aux(true-4, may-2)
+cop(true-4, be-3)
+root(ROOT-0, true-4)
+neg(required-13, not-7)
+det(order-10, the-9)
+prep_to(not-7, order-10)
+prep_of(order-10, magnitude-12)
+conj_but(true-4, required-13)
+det(protein-17, a-15)
+amod(protein-17, single-16)
+prep_for(required-13, protein-17)
+det(information-23, the-22)
+prep_for(required-13, information-23)
+conj_and(protein-17, information-23)
+amod(information-23, involved-24)
+prep_in(involved-24, DNA-26)
+

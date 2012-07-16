@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADJP (WRB How) (JJ much))
+      (S
+        (NP (PRP I))
+        (VP (VBP wish)
+          (NP (JJR more) (NNS people)))))
+    (VP (MD could)
+      (VP (VB become)
+        (NP
+          (NP (NNS philosophers))
+          (PRN (-LRB- -LRB-)
+            (S
+              (NP (NNP seriously))
+              (, ,)
+              (NP (PRP we))
+              (VP (VBD had)
+                (NP
+                  (NP (CD three))
+                  (PP (IN of)
+                    (NP (DT the)
+                      (UCP
+                        (ADJP (JJS greatest)
+                          (PP (IN in)
+                            (NP (DT a) (NN row))))
+                        (CC and)
+                        (ADVP (RB now)))
+                      (NN nothing))))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+advmod(much-2, How-1)
+dep(wish-4, much-2)
+nsubj(wish-4, I-3)
+csubj(philosophers-9, wish-4)
+amod(people-6, more-5)
+dobj(wish-4, people-6)
+aux(philosophers-9, could-7)
+cop(philosophers-9, become-8)
+root(ROOT-0, philosophers-9)
+nsubj(had-14, seriously-11)
+nsubj(had-14, we-13)
+dep(philosophers-9, had-14)
+dobj(had-14, three-15)
+det(nothing-24, the-17)
+amod(nothing-24, greatest-18)
+det(row-21, a-20)
+prep_in(greatest-18, row-21)
+advmod(greatest-18, now-23)
+conj_and(greatest-18, now-23)
+amod(nothing-24, now-23)
+prep_of(three-15, nothing-24)
+

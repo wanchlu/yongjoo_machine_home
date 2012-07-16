@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBP doubt)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP think)
+                (NP
+                  (NP (NN life))
+                  (SBAR
+                    (S
+                      (NP (PRP itself))
+                      (VP
+                        (VP (VBZ is)
+                          (ADJP (JJ sacred)))
+                        (CC and)
+                        (VP (MD should)
+                          (ADVP (RB never))
+                          (VP (VB be)
+                            (VP (VBN killed) (, ,)
+                              (PP (IN because))))))))))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT this))
+        (VP (MD may)
+          (VP (VB be)
+            (NP (DT an)
+              (ADJP (JJ unreasonable))
+              (NN assumption))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP 've)
+      (ADVP (RB probably))
+      (VP
+        (VP (VBN washed)
+          (NP (PRP$ your) (NNS hands))
+          (ADVP (RB before)))
+        (CC and)
+        (VP (VBN killed)
+          (NP
+            (NP (NNS thousands))
+            (PP (IN of)
+              (NP (NNS bacteria)))))))
+    (. .)))
+
+nsubj(doubt-2, I-1)
+ccomp(washed-28, doubt-2)
+nsubj(think-4, you-3)
+ccomp(doubt-2, think-4)
+dobj(think-4, life-5)
+prep_because(killed-13, life-5)
+nsubj(sacred-8, itself-6)
+nsubjpass(killed-13, itself-6)
+cop(sacred-8, is-7)
+rcmod(life-5, sacred-8)
+aux(killed-13, should-10)
+neg(killed-13, never-11)
+auxpass(killed-13, be-12)
+rcmod(life-5, killed-13)
+conj_and(sacred-8, killed-13)
+nsubj(assumption-23, this-18)
+aux(assumption-23, may-19)
+cop(assumption-23, be-20)
+det(assumption-23, an-21)
+amod(assumption-23, unreasonable-22)
+conj_and(doubt-2, assumption-23)
+ccomp(washed-28, assumption-23)
+nsubj(washed-28, you-25)
+nsubj(killed-33, you-25)
+aux(washed-28, 've-26)
+advmod(washed-28, probably-27)
+root(ROOT-0, washed-28)
+poss(hands-30, your-29)
+dobj(washed-28, hands-30)
+advmod(washed-28, before-31)
+conj_and(washed-28, killed-33)
+dobj(killed-33, thousands-34)
+prep_of(thousands-34, bacteria-36)
+

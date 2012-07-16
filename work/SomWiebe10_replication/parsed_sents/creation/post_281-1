@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP you))
+              (VP (VBP get)
+                (NP (PRP$ your) (NN information))))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (NP
+            (NP (DT any) (NNP ID) (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP include)
+                  (ADJP (JJ non-ID))
+                  (PP (IN as)
+                    (NP
+                      (NP (NN part))
+                      (PP (IN of)
+                        (NP (PRP$ their) (NN belief) (NN system))))))))))))
+    (. .)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+advmod(get-7, where-5)
+nsubj(get-7, you-6)
+advcl(know-4, get-7)
+poss(information-9, your-8)
+dobj(get-7, information-9)
+nsubj(know-14, I-11)
+aux(know-14, do-12)
+neg(know-14, n't-13)
+conj_but(know-4, know-14)
+det(people-17, any-15)
+nn(people-17, ID-16)
+dobj(know-14, people-17)
+nsubj(include-19, people-17)
+rcmod(people-17, include-19)
+acomp(include-19, non-ID-20)
+prep_as(include-19, part-22)
+poss(system-26, their-24)
+nn(system-26, belief-25)
+prep_of(part-22, system-26)
+

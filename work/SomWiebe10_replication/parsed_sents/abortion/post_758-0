@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB get)
+          (S
+            (NP (PRP me))
+            (ADJP (JJ wrong))))))
+    (NP (PRP you))
+    (VP (MD can)
+      (VP
+        (VP (VB live)
+          (SBAR
+            (WHADVP (RB however))
+            (S
+              (NP (PRP you))
+              (VP (VBP want)))))
+        (, ,)
+        (ADVP (RB just))
+        (VP (VB be)
+          (ADJP (JJ willing)
+            (PP (TO to)))
+          (PP (IN except)
+            (NP (DT the) (NN consequence))))))
+    (. .)))
+
+aux(get-3, Do-1)
+neg(get-3, n't-2)
+dep(live-8, get-3)
+nsubj(wrong-5, me-4)
+xcomp(get-3, wrong-5)
+nsubj(live-8, you-6)
+aux(live-8, can-7)
+root(ROOT-0, live-8)
+advmod(want-11, however-9)
+nsubj(want-11, you-10)
+dep(live-8, want-11)
+advmod(live-8, just-13)
+cop(willing-15, be-14)
+dep(live-8, willing-15)
+prep(willing-15, to-16)
+det(consequence-19, the-18)
+prep_except(willing-15, consequence-19)
+

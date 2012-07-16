@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (PRP we))
+    (VP (MD 'll)
+      (VP (VB say)
+        (SBAR (IN that) (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is))))))
+    (. .)))
+
+nsubj(say-3, we-1)
+aux(say-3, 'll-2)
+root(ROOT-0, say-3)
+complm(is-7, that-4)
+dep(is-7, because-5)
+nsubj(is-7, it-6)
+ccomp(say-3, is-7)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP$ my) (NN baby))
+      (VP (VBD was)
+        (VP (VBN killed)
+          (NP (NNS years))
+          (ADVP (IN ago)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB still))
+      (VP (VBZ hurts)))
+    (. .)))
+
+poss(baby-2, my-1)
+nsubjpass(killed-4, baby-2)
+auxpass(killed-4, was-3)
+root(ROOT-0, killed-4)
+tmod(killed-4, years-5)
+advmod(killed-4, ago-6)
+nsubj(hurts-11, it-9)
+advmod(hurts-11, still-10)
+conj_and(killed-4, hurts-11)
+

@@ -1,0 +1,34 @@
+(ROOT
+  (S ('' '')
+    (ADVP (RB Okay))
+    (, ,)
+    (ADVP (RB then) (RB just)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (VP (MD would)))))
+    (NP (DT this))
+    (VP (VBP make)
+      (VP (VB teach)
+        (NP (DT the) (NN controversy))
+        (NP
+          (NP (DT a) (JJ religious) (NN idea))
+          (PP (IN at)
+            (NP (DT all))))))
+    (. ?)))
+
+advmod(make-9, Okay-2)
+advmod(just-5, then-4)
+advmod(make-9, just-5)
+advmod(would-7, how-6)
+dep(just-5, would-7)
+nsubj(make-9, this-8)
+root(ROOT-0, make-9)
+xcomp(make-9, teach-10)
+det(controversy-12, the-11)
+iobj(teach-10, controversy-12)
+det(idea-15, a-13)
+amod(idea-15, religious-14)
+dobj(teach-10, idea-15)
+prep_at(idea-15, all-17)
+

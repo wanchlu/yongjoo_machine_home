@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (NN abortion)))
+    (PRN (, ,)
+      (S
+        (NP (DT the) (NN issue))
+        (VP (VBZ is)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NN love) (, ,) (RB not) (NN life) (, ,))
+              (VP (VBZ begins)
+                (NP
+                  (NP (NNP Robert) (NNP Casey) (, ,) (JJ former) (NNP Governor))
+                  (PP (IN of)
+                    (NP (NNP Pennsylvania))))))))))
+    (`` ``)
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP we))
+        (VP (VBP look)
+          (PP (TO to)
+            (NP (DT the) (JJ unborn) (NN child))))))
+    (, ,)
+    (NP (DT the) (JJ real) (NN issue))
+    (VP (VBZ is) (RB not)
+      (SBAR
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NN life))
+            (VP (VBZ begins))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NN love))
+            (VP (VBZ begins))))))
+    (. .)))
+
+prep_on(is-33, abortion-2)
+det(issue-5, the-4)
+nsubj(is-6, issue-5)
+parataxis(is-33, is-6)
+advmod(begins-13, when-7)
+nn(life-11, love-8)
+neg(life-11, not-10)
+nsubj(begins-13, life-11)
+advcl(is-6, begins-13)
+nn(Governor-18, Robert-14)
+nn(Governor-18, Casey-15)
+amod(Governor-18, former-17)
+dobj(begins-13, Governor-18)
+prep_of(Governor-18, Pennsylvania-20)
+advmod(look-24, When-22)
+nsubj(look-24, we-23)
+advcl(is-33, look-24)
+det(child-28, the-26)
+amod(child-28, unborn-27)
+prep_to(look-24, child-28)
+det(issue-32, the-30)
+amod(issue-32, real-31)
+nsubj(is-33, issue-32)
+root(ROOT-0, is-33)
+neg(is-33, not-34)
+advmod(begins-37, when-35)
+nsubj(begins-37, life-36)
+dep(is-33, begins-37)
+advmod(begins-42, when-40)
+nsubj(begins-42, love-41)
+dep(is-33, begins-42)
+conj_but(begins-37, begins-42)
+

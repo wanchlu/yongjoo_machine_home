@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN Until)
+      (S
+        (NP (DT the) (NN fetus))
+        (VP (VBZ is)
+          (ADJP (JJ able)
+            (PP (TO to)
+              (NP
+                (NP (NN breath))
+                (PP (IN on)
+                  (NP
+                    (NP (PRP it) (POS 's))
+                    (JJ own)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADVP (RB still))
+      (VP (VBN considered)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN woman) (POS 's))
+              (NN body))))))
+    (. .)))
+
+mark(able-5, Until-1)
+det(fetus-3, the-2)
+nsubj(able-5, fetus-3)
+cop(able-5, is-4)
+advcl(considered-16, able-5)
+prep_to(able-5, breath-7)
+prep_on(breath-7, it-9)
+possessive(it-9, 's-10)
+amod(it-9, own-11)
+nsubjpass(considered-16, it-13)
+auxpass(considered-16, 's-14)
+advmod(considered-16, still-15)
+root(ROOT-0, considered-16)
+dobj(considered-16, part-17)
+det(woman-20, the-19)
+poss(body-22, woman-20)
+prep_of(part-17, body-22)
+

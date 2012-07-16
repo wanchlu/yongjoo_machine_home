@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Jesus))
+        (VP (VBD did) (RB n't)
+          (VP (VB condemn)))))
+    (VP (VBZ Gays)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (VP (MD should))
+          (NP (PRP we)))))
+    (. ?)))
+
+mark(condemn-5, If-1)
+nsubj(condemn-5, Jesus-2)
+aux(condemn-5, did-3)
+neg(condemn-5, n't-4)
+csubj(Gays-6, condemn-5)
+root(ROOT-0, Gays-6)
+advmod(should-8, why-7)
+advcl(Gays-6, should-8)
+dep(should-8, we-9)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Jesus))
+        (VP (VBN healed)
+          (NP
+            (NP (DT the) (NN centurion) (POS 's))
+            (NN servant)))))
+    (NP
+      (NP (DT the) (NN word))
+      (PP (IN for)
+        (NP (NN servant))))
+    (VP (VBD was)
+      (ADJP (JJ pais)))
+    (. .)))
+
+advmod(healed-3, When-1)
+nsubj(healed-3, Jesus-2)
+advcl(pais-13, healed-3)
+det(centurion-5, the-4)
+poss(servant-7, centurion-5)
+dobj(healed-3, servant-7)
+det(word-9, the-8)
+nsubj(pais-13, word-9)
+prep_for(word-9, servant-11)
+cop(pais-13, was-12)
+root(ROOT-0, pais-13)
+
+(ROOT
+  (S
+    (NP (NNS Pais))
+    (VP (VBZ denotes)
+      (NP (DT a) (JJ gay) (NN relationship)))
+    (. .)))
+
+nsubj(denotes-2, Pais-1)
+root(ROOT-0, denotes-2)
+det(relationship-5, a-3)
+amod(relationship-5, gay-4)
+dobj(denotes-2, relationship-5)
+
+(ROOT
+  (S (CC But)
+    (NP (NNP Jesus))
+    (VP (VBD did) (RB n't)
+      (VP (VB condemn)
+        (NP (DT the) (NN relationship))))
+    (. ?)))
+
+cc(condemn-5, But-1)
+nsubj(condemn-5, Jesus-2)
+aux(condemn-5, did-3)
+neg(condemn-5, n't-4)
+root(ROOT-0, condemn-5)
+det(relationship-7, the-6)
+dobj(condemn-5, relationship-7)
+

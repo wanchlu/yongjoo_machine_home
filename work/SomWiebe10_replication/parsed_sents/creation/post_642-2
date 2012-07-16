@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (ADVP
+      (ADVP (RB Not) (JJ sure))
+      (SBAR (IN if)
+        (S
+          (S
+            (NP (NNP ID))
+            (VP (VBZ is)
+              (PP (IN without)
+                (NP (DT a) (NN doubt)))
+              (ADJP (JJ TRUE))))
+          (, ,)
+          (CC but)
+          (S
+            (NP (PRP I))
+            (VP (VBP know)
+              (PP (IN for)
+                (ADJP (JJ sure))))))))
+    (NP (PRP it))
+    (VP (VBZ 's) (RB not)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT the) (NNP NCSE))
+          (VP (VBZ seems)
+            (S
+              (VP (TO to)
+                (VP (VB think)
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ is)))))))))))
+    (. .)))
+
+dep(sure-2, Not-1)
+advmod('s-17, sure-2)
+mark(TRUE-9, if-3)
+nsubj(TRUE-9, ID-4)
+cop(TRUE-9, is-5)
+det(doubt-8, a-7)
+prep_without(TRUE-9, doubt-8)
+dep(sure-2, TRUE-9)
+nsubj(know-13, I-12)
+dep(sure-2, know-13)
+conj_but(TRUE-9, know-13)
+prep_for(know-13, sure-15)
+nsubj('s-17, it-16)
+root(ROOT-0, 's-17)
+neg('s-17, not-18)
+dep(seems-22, what-19)
+det(NCSE-21, the-20)
+nsubj(seems-22, NCSE-21)
+xsubj(think-24, NCSE-21)
+ccomp('s-17, seems-22)
+aux(think-24, to-23)
+xcomp(seems-22, think-24)
+nsubj(is-26, it-25)
+ccomp(think-24, is-26)
+
+(ROOT
+  (S
+    (VP (VB Let)
+      (SBAR
+        (S
+          (NP (PRP 's))
+          (VP (VBP hope)
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBP do) (RB n't)
+                  (VP (VB hate)
+                    (NP (PRP me))
+                    (PP (IN for)
+                      (S
+                        (VP (VBG starting)
+                          (NP (DT an) (NNP IDEA) (NN center)))))))))))))
+    (: ...)))
+
+root(ROOT-0, Let-1)
+nsubj(hope-3, 's-2)
+ccomp(Let-1, hope-3)
+nsubj(hate-7, they-4)
+aux(hate-7, do-5)
+neg(hate-7, n't-6)
+ccomp(hope-3, hate-7)
+dobj(hate-7, me-8)
+prepc_for(hate-7, starting-10)
+det(center-13, an-11)
+nn(center-13, IDEA-12)
+dobj(starting-10, center-13)
+

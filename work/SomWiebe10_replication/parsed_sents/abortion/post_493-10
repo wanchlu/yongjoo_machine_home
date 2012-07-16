@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (PRN (, ,)
+        (ADVP (RB instead))
+        (, ,))
+      (S
+        (NP (PRP you))
+        (VP (VBP change)
+          (SBAR
+            (S
+              (NP (PRP$ your) (NN position)
+                (S
+                  (VP (TO to)
+                    (VP (VB claim)
+                      (NP (DT a) (NN mother))))))
+              (VP (VBZ has)
+                (NP
+                  (NP (JJ legitimate) (NN claim))
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (NN fetus))
+                      (PP (IN within)
+                        (NP (PRP$ her) (NN womb))))))))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ changes)
+      (NP (NN everything)))
+    (. .)))
+
+mark(change-6, If-1)
+dep(change-6, instead-3)
+nsubj(change-6, you-5)
+advcl(changes-24, change-6)
+poss(position-8, your-7)
+nsubj(has-13, position-8)
+aux(claim-10, to-9)
+infmod(position-8, claim-10)
+det(mother-12, a-11)
+dobj(claim-10, mother-12)
+ccomp(change-6, has-13)
+amod(claim-15, legitimate-14)
+dobj(has-13, claim-15)
+det(fetus-18, the-17)
+prep_on(claim-15, fetus-18)
+poss(womb-21, her-20)
+prep_within(fetus-18, womb-21)
+nsubj(changes-24, that-23)
+root(ROOT-0, changes-24)
+dobj(changes-24, everything-25)
+

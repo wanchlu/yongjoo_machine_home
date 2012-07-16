@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Every) (JJ new) (NN generation))
+      (PP (IN of)
+        (NP (DT a) (NN population))))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP (JJ physiological)
+          (CC and)
+          (JJ genetic) (NNS differences)))
+      (PP (IN from)
+        (NP (DT the) (NN parent) (NN lineage)))
+      (, ,)
+      (S
+        (ADVP (RB thereby))
+        (VP (VBG becoming)
+          (NP (JJ intermediate) (NNS exemplars)))))
+    (. .)))
+
+det(generation-3, Every-1)
+amod(generation-3, new-2)
+nsubj(consists-7, generation-3)
+det(population-6, a-5)
+prep_of(generation-3, population-6)
+root(ROOT-0, consists-7)
+amod(differences-12, physiological-9)
+conj_and(physiological-9, genetic-11)
+amod(differences-12, genetic-11)
+prep_of(consists-7, differences-12)
+det(lineage-16, the-14)
+nn(lineage-16, parent-15)
+prep_from(consists-7, lineage-16)
+advmod(becoming-19, thereby-18)
+xcomp(consists-7, becoming-19)
+amod(exemplars-21, intermediate-20)
+attr(becoming-19, exemplars-21)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT that))
+        (VP (VBZ 's)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP you))
+              (VP (VBP think)))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (NN nothing))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (MD can)
+              (VP (VB do)
+                (S
+                  (VP (TO to)
+                    (VP (VB convince)
+                      (NP (PRP you)))))))))))
+    (. .)))
+
+mark('s-3, If-1)
+nsubj('s-3, that-2)
+advcl(is-9, 's-3)
+dobj(think-6, what-4)
+nsubj(think-6, you-5)
+ccomp('s-3, think-6)
+expl(is-9, there-8)
+root(ROOT-0, is-9)
+nsubj(is-9, nothing-10)
+dobj(do-13, nothing-10)
+nsubj(do-13, I-11)
+xsubj(convince-15, I-11)
+aux(do-13, can-12)
+rcmod(nothing-10, do-13)
+aux(convince-15, to-14)
+xcomp(do-13, convince-15)
+dobj(convince-15, you-16)
+

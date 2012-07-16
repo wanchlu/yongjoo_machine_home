@@ -1,0 +1,74 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP God))
+    (VP (`` ``) (VBD stretched) ('' '')
+      (PP (IN out)
+        (NP (DT the) (NNS heavens))))
+    (. .)))
+
+nsubj(stretched-4, God-2)
+root(ROOT-0, stretched-4)
+det(heavens-8, the-7)
+prep_out(stretched-4, heavens-8)
+
+(ROOT
+  (S ('' '')
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (JJ past) (NN tense))
+        (, ,)
+        (NP
+          (NP (DT a) (NN process))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP
+                (VP (VBD happened))
+                (CC but)
+                (VP (VBZ has)
+                  (ADVP (IN since))
+                  (VP (VBN stoped)))))))))
+    (. ...)))
+
+nsubj(tense-6, That-2)
+cop(tense-6, 's-3)
+det(tense-6, the-4)
+amod(tense-6, past-5)
+root(ROOT-0, tense-6)
+det(process-9, a-8)
+appos(tense-6, process-9)
+nsubj(happened-11, process-9)
+nsubj(stoped-15, process-9)
+rcmod(process-9, happened-11)
+aux(stoped-15, has-13)
+advmod(stoped-15, since-14)
+rcmod(process-9, stoped-15)
+conj_but(happened-11, stoped-15)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP God))
+    (VP (VBZ is)
+      (VP (VBG stretching)
+        (PRT (RP out))
+        (NP
+          (NP (DT the) (NNS heavens))
+          ('' '')
+          (SBAR
+            (S
+              (VP (VBZ implies)
+                (NP (DT an) (JJ active) (NN process))))))))
+    (. .)))
+
+nsubj(stretching-4, God-2)
+aux(stretching-4, is-3)
+root(ROOT-0, stretching-4)
+prt(stretching-4, out-5)
+det(heavens-7, the-6)
+dobj(stretching-4, heavens-7)
+rcmod(heavens-7, implies-9)
+det(process-12, an-10)
+amod(process-12, active-11)
+dobj(implies-9, process-12)
+

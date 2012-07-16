@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN evolution))
+        (VP (VBZ is)
+          (ADJP (RB as) (JJ certain))
+          (SBAR (IN as)
+            (S
+              (NP (PRP they))
+              (VP (MD would)
+                (VP (VB have)
+                  (S
+                    (NP (PRP us))
+                    (VP (VB think))))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (DT this) (JJ whole) (NNP ID) (NN issue))
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (JJ great) (NN opportunity))
+              (PP (IN for)
+                (NP (PRP them))))))))
+    (. .)))
+
+mark(certain-5, If-1)
+nsubj(certain-5, evolution-2)
+cop(certain-5, is-3)
+advmod(certain-5, as-4)
+advcl(think-15, certain-5)
+mark(have-9, as-6)
+nsubj(have-9, they-7)
+aux(have-9, would-8)
+advcl(certain-5, have-9)
+nsubj(think-11, us-10)
+ccomp(have-9, think-11)
+advmod(think-15, then-13)
+nsubj(think-15, I-14)
+root(ROOT-0, think-15)
+det(issue-19, this-16)
+amod(issue-19, whole-17)
+nn(issue-19, ID-18)
+nsubj(opportunity-23, issue-19)
+cop(opportunity-23, is-20)
+det(opportunity-23, a-21)
+amod(opportunity-23, great-22)
+ccomp(think-15, opportunity-23)
+prep_for(opportunity-23, them-25)
+

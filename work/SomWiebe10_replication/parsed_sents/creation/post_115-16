@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (ADVP (DT No) (NN matter)
+      (SBAR
+        (WHNP
+          (WHADJP (WRB how) (JJ much))
+          (NN time))
+        (S
+          (VP (VBZ is)
+            (ADJP (JJ involved))
+            (, ,)
+            (SBAR (IN because)
+              (FRAG
+                (WHPP (IN with)
+                  (WHNP (WDT that) (NN idea)))))))))
+    (, ,)
+    (NP (PRP$ your))
+    (ADVP (RB always))
+    (VP (VB putting)
+      (NP (DT the) (NN cart))
+      (PP (IN before)
+        (NP (DT the) (NN horse))))
+    (. .)))
+
+dep(matter-2, No-1)
+advmod(putting-16, matter-2)
+advmod(much-4, how-3)
+amod(time-5, much-4)
+nsubj(involved-7, time-5)
+cop(involved-7, is-6)
+dep(matter-2, involved-7)
+mark(with-10, because-9)
+advcl(involved-7, with-10)
+det(idea-12, that-11)
+pobj(with-10, idea-12)
+nsubj(putting-16, your-14)
+advmod(putting-16, always-15)
+root(ROOT-0, putting-16)
+det(cart-18, the-17)
+dobj(putting-16, cart-18)
+det(horse-21, the-20)
+prep_before(putting-16, horse-21)
+

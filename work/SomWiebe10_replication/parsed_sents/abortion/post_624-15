@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN As)
+        (S
+          (NP (PRP I))
+          (VP (VBD said))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ does) (RB n't)
+        (VP (VB matter)
+          (PP (TO to)
+            (NP (PRP me)))
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP you))
+              (VP (MD might)
+                (VP (VB think)
+                  (PP (IN about)
+                    (NP (PRP me))))))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB stop)
+                (S
+                  (VP (VBG praying)
+                    (PP (IN for)
+                      (NP (PRP you)))))))))))
+    (. .)))
+
+mark(said-3, As-1)
+nsubj(said-3, I-2)
+advcl(matter-8, said-3)
+nsubj(matter-8, it-5)
+aux(matter-8, does-6)
+neg(matter-8, n't-7)
+root(ROOT-0, matter-8)
+prep_to(matter-8, me-10)
+dobj(think-14, what-11)
+nsubj(think-14, you-12)
+aux(think-14, might-13)
+ccomp(matter-8, think-14)
+prep_about(think-14, me-16)
+nsubj(going-21, I-18)
+xsubj(stop-23, I-18)
+aux(going-21, am-19)
+neg(going-21, not-20)
+conj_but(matter-8, going-21)
+aux(stop-23, to-22)
+xcomp(going-21, stop-23)
+xcomp(stop-23, praying-24)
+prep_for(praying-24, you-26)
+

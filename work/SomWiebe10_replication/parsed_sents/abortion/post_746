@@ -1,0 +1,53 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (NP (RB not))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (MD can)
+      (VP (VB give)
+        (NP (DT the) (NN child))
+        (PP (TO to)
+          (NP
+            (NP (NN someone))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ wants)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+nsubj(give-3, She-1)
+aux(give-3, can-2)
+root(ROOT-0, give-3)
+det(child-5, the-4)
+dobj(give-3, child-5)
+prep_to(give-3, someone-7)
+nsubj(wants-9, someone-7)
+rcmod(someone-7, wants-9)
+dobj(wants-9, it-10)
+
+(ROOT
+  (S
+    (NP (JJ Many) (NNS families))
+    (VP (VBP are)
+      (VP (VBG looking)
+        (S
+          (VP (TO to)
+            (VP (VB adopt))))))
+    (. .)))
+
+amod(families-2, Many-1)
+nsubj(looking-4, families-2)
+xsubj(adopt-6, families-2)
+aux(looking-4, are-3)
+root(ROOT-0, looking-4)
+aux(adopt-6, to-5)
+xcomp(looking-4, adopt-6)
+

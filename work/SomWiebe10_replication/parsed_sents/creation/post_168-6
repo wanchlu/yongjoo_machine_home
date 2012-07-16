@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Evolution))
+      (VP
+        (VP (VBZ raises)
+          (NP (NNS questions)))
+        (CC and)
+        (VP (VBZ makes)
+          (NP (JJ many) (NNS predictions)))))
+    (, ,)
+    (S
+      (NP
+        (NP (DT some))
+        (PP (IN of)
+          (NP (PRP them))))
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB test))))
+    (CC and)
+    (S
+      (NP (NNS others))
+      (VP (VBP are)
+        (NP
+          (NP (JJR longer) (NN term))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP I))
+              (VP (VBP hope)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (VP (VBN tested)
+                        (PP (IN during)
+                          (NP (PRP$ my) (NN life)))))))))))))
+    (. .)))
+
+nsubj(raises-2, Evolution-1)
+nsubj(makes-5, Evolution-1)
+root(ROOT-0, raises-2)
+dobj(raises-2, questions-3)
+conj_and(raises-2, makes-5)
+amod(predictions-7, many-6)
+dobj(makes-5, predictions-7)
+nsubj(test-14, some-9)
+prep_of(some-9, them-11)
+nsubj(test-14, I-12)
+aux(test-14, can-13)
+conj_and(raises-2, test-14)
+nsubj(term-19, others-16)
+cop(term-19, are-17)
+amod(term-19, longer-18)
+conj_and(raises-2, term-19)
+rel(hope-23, which-21)
+nsubj(hope-23, I-22)
+xsubj(see-25, I-22)
+rcmod(term-19, hope-23)
+aux(see-25, to-24)
+xcomp(hope-23, see-25)
+dep(see-25, tested-26)
+poss(life-29, my-28)
+prep_during(tested-26, life-29)
+

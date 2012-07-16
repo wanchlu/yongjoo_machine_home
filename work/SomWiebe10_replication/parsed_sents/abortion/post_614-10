@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (JJ Many) (NNS humans))
+    (ADVP (RB never))
+    (VP
+      (VP
+        (VP (VB make)
+          (NP (PRP it)))
+        (, ,)
+        (CC or)
+        (VP
+          (VP (VB get)
+            (ADJP (JJ sick)))
+          (CC and)
+          (VP (VB lose)
+            (NP
+              (NP (DT some))
+              (PP (IN of)
+                (NP (DT these) (NNS rights))))))
+        (, ,)
+        (CC or)
+        (VP (VB make)
+          (NP (NNS mistakes))))
+      (CC and)
+      (VP (VB have)
+        (NP
+          (NP (DT these) (NNS rights))
+          (VP (VBN revoked)))))
+    (. .)))
+
+amod(humans-2, Many-1)
+nsubj(make-4, humans-2)
+nsubj(sick-9, humans-2)
+nsubj(make-18, humans-2)
+nsubj(have-21, humans-2)
+neg(make-4, never-3)
+root(ROOT-0, make-4)
+dobj(make-4, it-5)
+dep(sick-9, get-8)
+conj_or(make-4, sick-9)
+conj_or(make-4, lose-11)
+conj_and(sick-9, lose-11)
+dobj(lose-11, some-12)
+det(rights-15, these-14)
+prep_of(some-12, rights-15)
+conj_or(make-4, make-18)
+dobj(make-18, mistakes-19)
+conj_and(make-4, have-21)
+det(rights-23, these-22)
+dobj(have-21, rights-23)
+partmod(rights-23, revoked-24)
+

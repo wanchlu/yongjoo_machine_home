@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NNS women))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ chooses)
+            (PP (IN with)
+              (NP
+                (NP (NN someone))
+                (SBAR
+                  (S
+                    (NP (PRP she))
+                    (VP (VBZ is)
+                      (VP (VBG planning)
+                        (S
+                          (VP (TO to)
+                            (VP (VB have)
+                              (NP (NN sex))
+                              (PP (IN with)))))))))))))))
+    (VP (VBZ is)
+      (PP (IN at)
+        (NP (NN fault)))
+      (PP (IN for)
+        (S
+          (VP (VBG getting)
+            (ADJP (JJ pregnant))))))
+    (. .)))
+
+det(women-2, a-1)
+nsubj(chooses-4, women-2)
+nsubj(is-14, women-2)
+rcmod(women-2, chooses-4)
+prep_with(chooses-4, someone-6)
+dobj(planning-9, someone-6)
+prep_with(have-11, someone-6)
+nsubj(planning-9, she-7)
+xsubj(have-11, she-7)
+aux(planning-9, is-8)
+rcmod(someone-6, planning-9)
+aux(have-11, to-10)
+xcomp(planning-9, have-11)
+dobj(have-11, sex-12)
+root(ROOT-0, is-14)
+prep_at(is-14, fault-16)
+dep(pregnant-19, getting-18)
+prepc_for(is-14, pregnant-19)
+

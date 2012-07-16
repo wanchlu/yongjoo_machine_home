@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (NNP Gentry))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (NN physicist))
+          (NP
+            (NP (RB not) (DT a) (NN geologist))
+            (ADVP (RB however))))
+        (, ,)
+        (NP
+          (NP (RB so) (PRP$ his) (NN method))
+          (PP (IN of)
+            (NP (NNS observations))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT the) (NNS conclusions))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBZ comes)
+                (S
+                  (VP (TO to)
+                    (VP (VBP are)
+                      (ADJP (JJ flawed)))))))))))
+    (. .)))
+
+nsubj(physicist-4, Gentry-1)
+cop(physicist-4, is-2)
+det(physicist-4, a-3)
+root(ROOT-0, physicist-4)
+neg(geologist-7, not-5)
+det(geologist-7, a-6)
+dep(physicist-4, geologist-7)
+advmod(geologist-7, however-8)
+advmod(method-12, so-10)
+poss(method-12, his-11)
+conj_and(physicist-4, method-12)
+prep_of(method-12, observations-14)
+det(conclusions-18, the-17)
+conj_and(physicist-4, conclusions-18)
+dobj(comes-20, conclusions-18)
+nsubj(comes-20, he-19)
+xsubj(flawed-23, he-19)
+rcmod(conclusions-18, comes-20)
+aux(flawed-23, to-21)
+cop(flawed-23, are-22)
+xcomp(comes-20, flawed-23)
+

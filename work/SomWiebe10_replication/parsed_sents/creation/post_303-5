@@ -1,0 +1,56 @@
+(ROOT
+  (S (`` ``)
+    (NP (DT the) (NN animation))
+    (VP (VBZ illustrates)
+      (S
+        (ADJP (JJ unseen))
+        (NP
+          (NP (JJ molecular) (NNS mechanisms))
+          (CC and)
+          (NP (DT the) (NNS ones)))))
+    (PRN
+      (S
+        (NP (PRP they))
+        (VP (VBP trigger)))
+      (, ,))
+    (SBAR
+      (ADVP (RB specifically))
+      (WHADVP (WRB how))
+      (S
+        (NP (JJ white) (NN blood) (NNS cells))
+        (VP (VBP sense)
+          (CC and)
+          (VBP respond)
+          (PP (TO to)
+            (NP
+              (NP (PRP$ their) (NNS surroundings))
+              (CC and)
+              (NP (JJ external) (NNS stimuli)))))))
+    (. .)))
+
+det(animation-3, the-2)
+nsubj(illustrates-4, animation-3)
+root(ROOT-0, illustrates-4)
+acomp(illustrates-4, unseen-5)
+amod(mechanisms-7, molecular-6)
+dep(unseen-5, mechanisms-7)
+det(ones-10, the-9)
+dep(unseen-5, ones-10)
+conj_and(mechanisms-7, ones-10)
+nsubj(trigger-12, they-11)
+parataxis(illustrates-4, trigger-12)
+advmod(sense-19, specifically-14)
+advmod(sense-19, how-15)
+amod(cells-18, white-16)
+nn(cells-18, blood-17)
+nsubj(sense-19, cells-18)
+nsubj(respond-21, cells-18)
+dep(illustrates-4, sense-19)
+dep(illustrates-4, respond-21)
+conj_and(sense-19, respond-21)
+poss(surroundings-24, their-23)
+prep_to(sense-19, surroundings-24)
+amod(stimuli-27, external-26)
+prep_to(sense-19, stimuli-27)
+conj_and(surroundings-24, stimuli-27)
+

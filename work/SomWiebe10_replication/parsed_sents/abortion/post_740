@@ -1,0 +1,47 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ isnt))
+    (SBAR (IN that)
+      (S
+        (NP
+          (NP (DT a) (JJ good) (NN thing))
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP dont)))))
+        (VP (VBP feel)
+          (NP (NN anything)))))
+    (. ?)))
+
+root(ROOT-0, isnt-1)
+dep(feel-9, that-2)
+det(thing-5, a-3)
+amod(thing-5, good-4)
+dobj(dont-8, thing-5)
+nsubj(feel-9, thing-5)
+complm(dont-8, that-6)
+nsubj(dont-8, they-7)
+dep(thing-5, dont-8)
+dep(isnt-1, feel-9)
+dobj(feel-9, anything-10)
+
+(ROOT
+  (SQ (MD would)
+    (NP (PRP you))
+    (VP (VB want)
+      (NP (DT the) (NN fetus)
+        (S
+          (VP (TO to)
+            (VP (VB feel)
+              (NP (PRP it)))))))
+    (. ?)))
+
+aux(want-3, would-1)
+nsubj(want-3, you-2)
+root(ROOT-0, want-3)
+det(fetus-5, the-4)
+dobj(want-3, fetus-5)
+aux(feel-7, to-6)
+infmod(fetus-5, feel-7)
+dobj(feel-7, it-8)
+

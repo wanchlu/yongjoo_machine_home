@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (PP (IN Despite)
+      (NP
+        (NP (DT the) (NN accuracy))
+        (SBAR
+          (WHPP (IN with)
+            (WHNP (WDT which)))
+          (S
+            (NP (PRP we))
+            (VP (VB calculate)
+              (ADJP (JJ orbits)
+                (CC and)
+                (JJ such)))))))
+    (, ,)
+    (NP (JJ systematic) (NNS variations))
+    (VP (VBP are)
+      (ADJP (JJ observed)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP tell)
+              (NP (PRP us))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP we))
+                  (VP (VBP do) (RB n't)
+                    (VP (VB know)
+                      (NP (NN everything))
+                      (PP (IN about)
+                        (NP (PRP it))))))))))))
+    (. !)))
+
+det(accuracy-3, the-2)
+prep_despite(observed-15, accuracy-3)
+rel(calculate-7, which-5)
+nsubj(calculate-7, we-6)
+rcmod(accuracy-3, calculate-7)
+acomp(calculate-7, orbits-8)
+acomp(calculate-7, such-10)
+conj_and(orbits-8, such-10)
+amod(variations-13, systematic-12)
+nsubj(observed-15, variations-13)
+cop(observed-15, are-14)
+root(ROOT-0, observed-15)
+nsubj(tell-17, that-16)
+dep(observed-15, tell-17)
+dobj(tell-17, us-18)
+complm(know-23, that-19)
+nsubj(know-23, we-20)
+aux(know-23, do-21)
+neg(know-23, n't-22)
+ccomp(tell-17, know-23)
+dobj(know-23, everything-24)
+prep_about(know-23, it-26)
+

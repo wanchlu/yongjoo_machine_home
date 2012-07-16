@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN motif))
+      (PP (IN in)
+        (NP
+          (NP
+            (NP (DT the) (NN story))
+            (PP (IN about)
+              (NP (NNP Joseph))))
+          (CC and)
+          (NP
+            (NP (DT the) (NN wife))
+            (PP (IN of)
+              (NP
+                (NP (NNP Potiphar))
+                (PP (IN for)
+                  (NP (NN instance)))))))))
+    (VP (VBZ is)
+      (VP (VBN copied)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (JJ Egyptian) (NN fairytale))
+            (NP (DT The) (CD two) (NNPS Brothers))))))
+    (. .)))
+
+det(motif-2, The-1)
+nsubjpass(copied-16, motif-2)
+det(story-5, the-4)
+prep_in(motif-2, story-5)
+prep_about(story-5, Joseph-7)
+det(wife-10, the-9)
+prep_in(motif-2, wife-10)
+conj_and(story-5, wife-10)
+prep_of(wife-10, Potiphar-12)
+prep_for(Potiphar-12, instance-14)
+auxpass(copied-16, is-15)
+root(ROOT-0, copied-16)
+det(fairytale-20, the-18)
+amod(fairytale-20, Egyptian-19)
+prep_from(copied-16, fairytale-20)
+det(Brothers-23, The-21)
+num(Brothers-23, two-22)
+dep(fairytale-20, Brothers-23)
+

@@ -1,0 +1,80 @@
+(ROOT
+  (S (`` ``)
+    (NP (DT The) (NN question))
+    (VP (VBZ is) (RB not)
+      (SBAR (IN whether)
+        (S
+          (NP (NN life))
+          (VP (VBZ is)
+            (ADJP (JJ present))))))
+    (. .)))
+
+det(question-3, The-2)
+nsubj(is-4, question-3)
+root(ROOT-0, is-4)
+neg(is-4, not-5)
+complm(present-9, whether-6)
+nsubj(present-9, life-7)
+cop(present-9, is-8)
+ccomp(is-4, present-9)
+
+(ROOT
+  (S ('' '')
+    (S
+      (INTJ (UH Yes))
+      (NP (PRP it))
+      (VP (VBZ is)))
+    (, ,)
+    (VP (VBP look)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN top))
+          (PP (IN of)
+            (NP (DT the) (NN page))))))
+    (. .)))
+
+dep(is-4, Yes-2)
+nsubj(is-4, it-3)
+ccomp(look-6, is-4)
+root(ROOT-0, look-6)
+det(top-9, the-8)
+prep_at(look-6, top-9)
+det(page-12, the-11)
+prep_of(top-9, page-12)
+
+(ROOT
+  (S
+    (NP (DT An) (NN embryo))
+    (VP (VBZ is)
+      (ADJP (JJ alive) (, ,) (RB not) (JJ dead)))
+    (. .)))
+
+det(embryo-2, An-1)
+nsubj(dead-7, embryo-2)
+cop(dead-7, is-3)
+amod(dead-7, alive-4)
+neg(dead-7, not-6)
+root(ROOT-0, dead-7)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Now))
+    (SBAR (WP what) (IN that)
+      (S
+        (NP
+          (NP (NNS means))
+          (PP (TO to)
+            (NP (NN abortion))))
+        (VP (VBZ is)
+          (NP (DT another) (NN question))))
+      (. .))))
+
+root(ROOT-0, Now-1)
+dep(question-9, what-2)
+dep(question-9, that-3)
+nsubj(question-9, means-4)
+prep_to(means-4, abortion-6)
+cop(question-9, is-7)
+det(question-9, another-8)
+dep(Now-1, question-9)
+

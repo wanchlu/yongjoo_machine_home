@@ -1,0 +1,109 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ important)
+              (S
+                (VP (TO to)
+                  (VP (VB point)
+                    (PRT (RP out))
+                    (SBAR (IN that)
+                      (S (, ,)
+                        (PP (IN in)
+                          (NP (DT the) (NNP United) (NNPS States)))
+                        (, ,)
+                        (NP
+                          (NP
+                            (NP (DT a) (JJ human) (`` ``) (NN fetus) ('' ''))
+                            (NP
+                              (QP (RB only) (DT a) (JJ few))
+                              (NNS days)))
+                          (PP (IN from)
+                            (S
+                              (VP (VBG being)
+                                (VP (VBN born))))))
+                        (VP (VBZ has)
+                          (NP
+                            (NP (JJR less) (NNS rights))
+                            (PP (IN than)
+                              (NP (DT a) (NN dog)))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(important-5, it-3)
+cop(important-5, is-4)
+ccomp(think-2, important-5)
+aux(point-7, to-6)
+xcomp(important-5, point-7)
+prt(point-7, out-8)
+complm(has-28, that-9)
+det(States-14, the-12)
+nn(States-14, United-13)
+prep_in(has-28, States-14)
+det(fetus-19, a-16)
+amod(fetus-19, human-17)
+nsubj(has-28, fetus-19)
+quantmod(few-23, only-21)
+quantmod(few-23, a-22)
+num(days-24, few-23)
+dep(fetus-19, days-24)
+auxpass(born-27, being-26)
+prepc_from(fetus-19, born-27)
+ccomp(point-7, has-28)
+amod(rights-30, less-29)
+dobj(has-28, rights-30)
+det(dog-33, a-32)
+prep_than(rights-30, dog-33)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT that))
+    (ADVP (RB right))
+    (. ?)))
+
+root(ROOT-0, Is-1)
+nsubj(Is-1, that-2)
+advmod(Is-1, right-3)
+
+(ROOT
+  (SBARQ (CC And)
+    (SQ (VBP do)
+      (NP (NNS people))
+      (ADVP (RB honestly))
+      (VP (VB think)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT a) (NN baby))
+              (PP (IN inside)
+                (NP (DT the) (NN womb))))
+            (VP (VBZ is) (`` ``)
+              (NP
+                (NP (NN part))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN woman) (POS 's))
+                    (NN body)))))))))
+    (. ?)))
+
+cc(think-5, And-1)
+aux(think-5, do-2)
+nsubj(think-5, people-3)
+advmod(think-5, honestly-4)
+root(ROOT-0, think-5)
+complm(part-14, that-6)
+det(baby-8, a-7)
+nsubj(part-14, baby-8)
+det(womb-11, the-10)
+prep_inside(baby-8, womb-11)
+cop(part-14, is-12)
+ccomp(think-5, part-14)
+det(woman-17, the-16)
+poss(body-19, woman-17)
+prep_of(part-14, body-19)
+

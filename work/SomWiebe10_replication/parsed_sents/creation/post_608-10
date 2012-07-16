@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ is)
+          (ADVP (RB just))
+          (VP (IN about)
+            (S
+              (VP (VBG reminding)
+                (NP (PRP us))
+                (PP (IN of)
+                  (NP
+                    (NP (DT this))
+                    (ADVP (RB then)))
+                  (ADVP (RB surely)))))))))
+    (NP (PRP it))
+    (VP (VBZ has)
+      (NP
+        (NP (RB far) (JJR less))
+        (PP (IN of)
+          (NP (DT a) (NN relevance))))
+      (PP (IN as)
+        (NP (DT a) (JJ scientific) (NN contributor)))
+      (SBAR (IN than)
+        (S
+          (NP (JJS most))
+          (VP (VBP imagine)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ does))))))))
+    (. .)))
+
+mark(about-5, If-1)
+nsubj(about-5, ID-2)
+aux(about-5, is-3)
+advmod(about-5, just-4)
+advcl(has-13, about-5)
+xcomp(about-5, reminding-6)
+dobj(reminding-6, us-7)
+prep_of(reminding-6, this-9)
+advmod(this-9, then-10)
+advmod(reminding-6, surely-11)
+nsubj(has-13, it-12)
+root(ROOT-0, has-13)
+advmod(less-15, far-14)
+dobj(has-13, less-15)
+det(relevance-18, a-17)
+prep_of(less-15, relevance-18)
+det(contributor-22, a-20)
+amod(contributor-22, scientific-21)
+prep_as(has-13, contributor-22)
+mark(imagine-25, than-23)
+nsubj(imagine-25, most-24)
+advcl(has-13, imagine-25)
+nsubj(does-27, it-26)
+ccomp(imagine-25, does-27)
+

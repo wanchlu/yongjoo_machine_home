@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (S (CC And)
+      (ADVP (RB BTW))
+      (, ,)
+      (NP (NNP Albert) (NNP Einstein))
+      (VP
+        (ADVP (RB once))
+        (VBD said) ('' '')
+        (NP (NNP Science))
+        (PP (IN without)
+          (NP
+            (NP (NN religion))
+            (SBAR
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ lame)))))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NN religion))
+        (PP (IN without)
+          (NP (NN science))))
+      (VP (VBZ is)
+        (ADJP (JJ blind))))
+    (. .)))
+
+cc(said-7, And-1)
+advmod(said-7, BTW-2)
+nn(Einstein-5, Albert-4)
+nsubj(said-7, Einstein-5)
+advmod(said-7, once-6)
+root(ROOT-0, said-7)
+dobj(said-7, Science-9)
+prep_without(said-7, religion-11)
+cop(lame-13, is-12)
+rcmod(religion-11, lame-13)
+nsubj(blind-19, religion-15)
+prep_without(religion-15, science-17)
+cop(blind-19, is-18)
+parataxis(said-7, blind-19)
+

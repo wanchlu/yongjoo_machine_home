@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP (DT An) (NN atheist))
+    (VP (VBZ is)
+      (VP (VBN stuck)
+        (PP (IN with)
+          (NP (DT no) (NNP ID)))))
+    (. .)))
+
+det(atheist-2, An-1)
+nsubjpass(stuck-4, atheist-2)
+auxpass(stuck-4, is-3)
+root(ROOT-0, stuck-4)
+det(ID-7, no-6)
+prep_with(stuck-4, ID-7)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN science))
+        (VP (VBZ leans)
+          (PP (IN in)
+            (NP (DT that) (NN direction))))))
+    (, ,)
+    (PRN (-LRB- -LRB-)
+      (SBAR (IN as)
+        (S
+          (NP (NNP ID))
+          (VP (VBZ says)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ does)))))))
+      (-RRB- -RRB-))
+    (NP (DT that))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN interpretation))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (MD must)
+              (VP (VB reject)))))))
+    (. .)))
+
+mark(leans-3, If-1)
+nsubj(leans-3, science-2)
+advcl(interpretation-18, leans-3)
+det(direction-6, that-5)
+prep_in(leans-3, direction-6)
+mark(says-11, as-9)
+nsubj(says-11, ID-10)
+parataxis(interpretation-18, says-11)
+nsubj(does-13, it-12)
+ccomp(says-11, does-13)
+nsubj(interpretation-18, that-15)
+cop(interpretation-18, is-16)
+det(interpretation-18, an-17)
+root(ROOT-0, interpretation-18)
+dobj(reject-21, interpretation-18)
+nsubj(reject-21, they-19)
+aux(reject-21, must-20)
+rcmod(interpretation-18, reject-21)
+

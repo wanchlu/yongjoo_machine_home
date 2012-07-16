@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP D.))
+      (PP (IN from)
+        (NP (DT a) (NN diploma))))
+    (VP
+      (VP (VBZ mill))
+      (CC and)
+      (VP (VBZ has)
+        (NP (DT the) (NN gall)
+          (S
+            (VP (TO to)
+              (VP (VB evade)
+                (NP (PRP$ his) (NNS taxes))))))))
+    (. ?)))
+
+nsubj(mill-5, D.-1)
+nsubj(has-7, D.-1)
+det(diploma-4, a-3)
+prep_from(D.-1, diploma-4)
+root(ROOT-0, mill-5)
+conj_and(mill-5, has-7)
+det(gall-9, the-8)
+dobj(has-7, gall-9)
+aux(evade-11, to-10)
+infmod(gall-9, evade-11)
+poss(taxes-13, his-12)
+dobj(evade-11, taxes-13)
+

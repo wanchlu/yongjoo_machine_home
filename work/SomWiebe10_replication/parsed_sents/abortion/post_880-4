@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN fetus))
+        (VP (VBD were)
+          (NP (DT a) (NN person))
+          (SBAR (IN than)
+            (S
+              (NP (DT every) (NN miscarriage))
+              (VP (MD would)
+                (VP (VB be)
+                  (NP
+                    (NP (DT a) (NN murder))
+                    (CC and)
+                    (NP (NNP Mother) (NNP Nature))))))))))
+    (VP (VBZ causes)
+      (NP
+        (NP (NNS miscarriages))
+        (PP (IN in)
+          (NP
+            (NP (CD 20-45) (NN percent))
+            (PP (IN of)
+              (NP (NNS pregnancies)))))))
+    (. .)))
+
+mark(person-6, If-1)
+det(fetus-3, the-2)
+nsubj(person-6, fetus-3)
+cop(person-6, were-4)
+det(person-6, a-5)
+csubj(causes-17, person-6)
+mark(murder-13, than-7)
+det(miscarriage-9, every-8)
+nsubj(murder-13, miscarriage-9)
+aux(murder-13, would-10)
+cop(murder-13, be-11)
+det(murder-13, a-12)
+advcl(person-6, murder-13)
+nn(Nature-16, Mother-15)
+advcl(person-6, Nature-16)
+conj_and(murder-13, Nature-16)
+root(ROOT-0, causes-17)
+dobj(causes-17, miscarriages-18)
+num(percent-21, 20-45-20)
+prep_in(miscarriages-18, percent-21)
+prep_of(percent-21, pregnancies-23)
+

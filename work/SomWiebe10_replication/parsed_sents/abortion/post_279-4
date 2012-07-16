@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP
+          (VP (VBP have)
+            (VP
+              (VP (VBN had)
+                (NP (NNS children)))
+              (CC and)
+              (VP (VBD wanted)
+                (NP (PRP them)))))
+          (CC and)
+          (VP (VBD loved)
+            (NP (PRP them))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (MD can))))))))
+    (, ,)
+    (ADVP (RB mistakenly))
+    (NP (PRP I))
+    (VP (VBP believe) (, ,) (VBP see)
+      (NP
+        (NP (PRP$ our) (JJ own) (NN child))
+        (VP (VBG being)
+          (VP (VBN killed)))))
+    (. .)))
+
+mark(had-4, If-1)
+nsubj(had-4, we-2)
+nsubj(wanted-7, we-2)
+nsubj(loved-10, we-2)
+aux(had-4, have-3)
+advcl(believe-17, had-4)
+dobj(had-4, children-5)
+conj_and(had-4, wanted-7)
+advcl(believe-17, wanted-7)
+dobj(wanted-7, them-8)
+conj_and(had-4, loved-10)
+advcl(believe-17, loved-10)
+dobj(loved-10, them-11)
+nsubj(can-13, we-12)
+dep(loved-10, can-13)
+advmod(believe-17, mistakenly-15)
+nsubj(believe-17, I-16)
+root(ROOT-0, believe-17)
+dep(believe-17, see-19)
+poss(child-22, our-20)
+amod(child-22, own-21)
+dobj(believe-17, child-22)
+auxpass(killed-24, being-23)
+partmod(child-22, killed-24)
+

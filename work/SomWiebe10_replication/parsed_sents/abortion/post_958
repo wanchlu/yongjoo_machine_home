@@ -1,0 +1,218 @@
+(ROOT
+  (S
+    (NP (NNP OK))
+    (VP (VBD agreed)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB establish)
+                  (NP (NN intent)))))))))
+    (. .)))
+
+nsubj(agreed-2, OK-1)
+root(ROOT-0, agreed-2)
+nsubj(have-4, you-3)
+xsubj(establish-6, you-3)
+ccomp(agreed-2, have-4)
+aux(establish-6, to-5)
+xcomp(have-4, establish-6)
+dobj(establish-6, intent-7)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (DT all) (NNS abortions))
+    (VP (VBP are)
+      (ADJP (JJ premeditated))
+      (, ,)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBP say)
+            (NP (PRP you))))))
+    (. ?)))
+
+advmod(premeditated-6, However-1)
+det(abortions-4, all-3)
+nsubj(premeditated-6, abortions-4)
+cop(premeditated-6, are-5)
+root(ROOT-0, premeditated-6)
+nsubj(say-9, what-8)
+ccomp(premeditated-6, say-9)
+dobj(say-9, you-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Your) (NN assumption))
+      (PP (IN of)
+        (NP (PRP$ my) (NN answer))))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (JJ false)))
+      (, ,)
+      (VP (VB see)
+        (NP (PRP$ my) (JJ other) (NN response))
+        (PP (IN for)
+          (NP (DT the) (NN answer)))))
+    (. .)))
+
+poss(assumption-2, Your-1)
+nsubj(false-8, assumption-2)
+poss(answer-5, my-4)
+prep_of(assumption-2, answer-5)
+aux(false-8, would-6)
+cop(false-8, be-7)
+root(ROOT-0, false-8)
+dep(false-8, see-10)
+poss(response-13, my-11)
+amod(response-13, other-12)
+dobj(see-10, response-13)
+det(answer-16, the-15)
+prep_for(see-10, answer-16)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (PP (TO to)
+      (NP (PRP$ your) (NN point)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBZ plain)
+      (NP
+        (NP (JJ old) (JJ sloppy) (NN thinker))
+        (PRN
+          (S
+            (NP (PRP you))
+            (, ,)
+            (NP (PRP$ My) (NN qualification))
+            (VP (VBD was))))
+        (: :)
+        (PP
+          (PP (IN without)
+            (NP (JJ proper) (NN justification)))
+          (CC and)
+          (PP (IN in)
+            (NP
+              (NP (DT this) (NN case))
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP (MD could)
+                    (VP (VB be)
+                      (VP (VBN argued)
+                        (PP (IN as)
+                          (NP (JJ proper) (NN justification)))))))))))))
+    (. .)))
+
+advmod(plain-7, However-1)
+poss(point-4, your-3)
+prep_to(plain-7, point-4)
+nsubj(plain-7, you-6)
+root(ROOT-0, plain-7)
+amod(thinker-10, old-8)
+amod(thinker-10, sloppy-9)
+dobj(plain-7, thinker-10)
+dobj(plain-7, thinker-10')
+conj_and(thinker-10, thinker-10')
+nsubj(was-15, you-11)
+poss(qualification-14, My-13)
+nsubj(was-15, qualification-14)
+dep(thinker-10, was-15)
+amod(justification-19, proper-18)
+prep_without(thinker-10, justification-19)
+det(case-23, this-22)
+prep_in(thinker-10', case-23)
+nsubjpass(argued-27, it-24)
+aux(argued-27, could-25)
+auxpass(argued-27, be-26)
+rcmod(case-23, argued-27)
+amod(justification-30, proper-29)
+prep_as(argued-27, justification-30)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP
+      (NP (DT the) (NN point))
+      (PP (IN of)
+        (NP (PRP$ my) (NN syllogism))))
+    (VP (VBD was)
+      (S
+        (VP (TO to)
+          (VP (VB highlight)
+            (NP
+              (NP (DT the) (NN importance))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN question))
+                  (: :)
+                  (SBAR
+                    (WHNP (WP what) (NN kind)
+                      (PP (IN of)
+                        (NP (NN life))))
+                    (S
+                      (VP (VBZ is)
+                        (NP (PRP it))))))))
+            (SBAR
+              (S
+                (NP (PRP$ your) (NN objection))
+                (VP (VBZ highlights)
+                  (S
+                    (NP (DT the) (NN point))
+                    (ADJP (RBR more) (JJ becuse)
+                      (SBAR
+                        (S
+                          (NP (EX there))
+                          (VP (MD would)
+                            (VP (VB be)
+                              (NP (DT no) (JJ moral) (NN dilemma)))))))))))
+            (SBAR (IN if)
+              (S
+                (NP (PRP it))
+                (VP (VBD was)
+                  (NP (DT a) (NN chicken)))))))))
+    (. .)))
+
+advmod(was-8, However-1)
+det(point-4, the-3)
+nsubj(was-8, point-4)
+xsubj(highlight-10, point-4)
+poss(syllogism-7, my-6)
+prep_of(point-4, syllogism-7)
+root(ROOT-0, was-8)
+aux(highlight-10, to-9)
+xcomp(was-8, highlight-10)
+det(importance-12, the-11)
+dobj(highlight-10, importance-12)
+det(question-15, the-14)
+prep_of(importance-12, question-15)
+det(kind-18, what-17)
+nsubj(it-22, kind-18)
+prep_of(kind-18, life-20)
+cop(it-22, is-21)
+rcmod(question-15, it-22)
+poss(objection-24, your-23)
+nsubj(highlights-25, objection-24)
+dep(highlight-10, highlights-25)
+det(point-27, the-26)
+nsubj(becuse-29, point-27)
+advmod(becuse-29, more-28)
+xcomp(highlights-25, becuse-29)
+expl(dilemma-35, there-30)
+aux(dilemma-35, would-31)
+cop(dilemma-35, be-32)
+det(dilemma-35, no-33)
+amod(dilemma-35, moral-34)
+dep(becuse-29, dilemma-35)
+mark(chicken-40, if-36)
+nsubj(chicken-40, it-37)
+cop(chicken-40, was-38)
+det(chicken-40, a-39)
+advcl(highlight-10, chicken-40)
+

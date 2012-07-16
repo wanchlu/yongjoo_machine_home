@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP (NN Someone))
+    (VP (VBD asked)
+      (NP (PRP me))
+      (PRN (-LRB- -LRB-)
+        (PP (IN around)
+          (NP
+            (NP (DT the) (NN time))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN election))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NNP Palin))
+                    (VP (VBD caused)
+                      (NP
+                        (NP (NN talk))
+                        (PP (IN of)
+                          (NP (NN abortion))))
+                      (S
+                        (VP (TO to)
+                          (VP (VB spike)))))))))))
+        (-RRB- -RRB-))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP I))
+          (VP (MD could)
+            (VP
+              (VP (VB be)
+                (NP (DT an) (NN atheist)))
+              (CC and)
+              (VP (VB be)
+                (VP (VBN opposed)
+                  (PP (TO to)
+                    (NP (NN contraception))))))))))
+    (. .)))
+
+nsubj(asked-2, Someone-1)
+root(ROOT-0, asked-2)
+dobj(asked-2, me-3)
+dep(asked-2, around-5)
+det(time-7, the-6)
+pobj(around-5, time-7)
+det(election-10, the-9)
+prep_of(time-7, election-10)
+tmod(caused-13, election-10)
+advmod(caused-13, when-11)
+nsubj(caused-13, Palin-12)
+dep(election-10, caused-13)
+dobj(caused-13, talk-14)
+prep_of(talk-14, abortion-16)
+aux(spike-18, to-17)
+xcomp(caused-13, spike-18)
+advmod(atheist-25, how-20)
+nsubj(atheist-25, I-21)
+nsubjpass(opposed-28, I-21)
+aux(atheist-25, could-22)
+cop(atheist-25, be-23)
+det(atheist-25, an-24)
+dep(asked-2, atheist-25)
+auxpass(opposed-28, be-27)
+dep(asked-2, opposed-28)
+conj_and(atheist-25, opposed-28)
+prep_to(opposed-28, contraception-30)
+

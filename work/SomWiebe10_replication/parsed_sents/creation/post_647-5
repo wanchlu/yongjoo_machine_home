@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (DT the) (JJ actual) (NN ruling))
+        (: --)
+        (NP
+          (NP (NNP Judge) (NNP JonesAs) (NNS Plaintiffs))
+          (UCP
+            (ADJP (JJ meticulously))
+            (CC and)
+            (VP
+              (ADVP (RB effectively))
+              (VBN presented)
+              (PP (TO to)
+                (NP (DT the) (NNP Court))))))))
+    (, ,)
+    (NP (NNP Pandas))
+    (VP (VBD went)
+      (PP (IN through)
+        (NP
+          (NP (JJ many) (NNS drafts))
+          (, ,)
+          (SBAR
+            (WHNP
+              (NP (JJ several))
+              (WHPP (IN of)
+                (WHNP (WDT which))))
+            (S
+              (VP (VBD were)
+                (VP (VBN completed)
+                  (ADVP (RB prior)
+                    (PP (TO to)
+                      (NP
+                        (QP (CC and)
+                          (RB some)))))
+                  (PP (IN after)
+                    (NP
+                      (NP
+                        (NP (DT the) (NNP Supreme) (NNP Court) (POS 's))
+                        (NN decision))
+                      (PP (IN in)
+                        (NP (NNP Edwards)))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBD held)
+                            (SBAR (IN that)
+                              (S
+                                (NP (DT the) (NNP Constitution))
+                                (VP (VBZ forbids)
+                                  (S
+                                    (VP (VBG teaching)
+                                      (NP (NN creationism))
+                                      (PP (IN as)
+                                        (NP (NN science))))))))))))))))))))
+    (. .)))
+
+det(ruling-4, the-2)
+amod(ruling-4, actual-3)
+prep_from(went-18, ruling-4)
+nn(Plaintiffs-8, Judge-6)
+nn(Plaintiffs-8, JonesAs-7)
+dep(ruling-4, Plaintiffs-8)
+amod(Plaintiffs-8, meticulously-9)
+advmod(presented-12, effectively-11)
+amod(Plaintiffs-8, presented-12)
+conj_and(meticulously-9, presented-12)
+det(Court-15, the-14)
+prep_to(presented-12, Court-15)
+nsubj(went-18, Pandas-17)
+root(ROOT-0, went-18)
+amod(drafts-21, many-20)
+prep_through(went-18, drafts-21)
+prep_of(several-23, drafts-21)
+nsubjpass(completed-27, several-23)
+auxpass(completed-27, were-26)
+rcmod(drafts-21, completed-27)
+cc(some-31, and-30)
+prep_prior_to(completed-27, some-31)
+det(Court-35, the-33)
+nn(Court-35, Supreme-34)
+poss(decision-37, Court-35)
+prep_after(completed-27, decision-37)
+nsubj(held-42, decision-37)
+prep_in(decision-37, Edwards-39)
+rcmod(decision-37, held-42)
+complm(forbids-46, that-43)
+det(Constitution-45, the-44)
+nsubj(forbids-46, Constitution-45)
+ccomp(held-42, forbids-46)
+xcomp(forbids-46, teaching-47)
+dobj(teaching-47, creationism-48)
+prep_as(teaching-47, science-50)
+

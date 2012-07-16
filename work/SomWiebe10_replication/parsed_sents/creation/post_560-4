@@ -1,0 +1,76 @@
+(ROOT
+  (SQ
+    (SBAR
+      (SBAR
+        (X
+          (NP (NNP PS))
+          (: :)
+          (PP (IN Since)))
+        (S
+          (NP (NNP Newton))
+          (VP (VBD invoked)
+            (NP
+              (NP (DT the) (NN necessity))
+              (PP (IN of)
+                (NP (DT a) (NNP God))))
+            (S
+              (VP (TO to)
+                (VP (VB explain)
+                  (NP
+                    (NP (DT the) (JJ stable) (NNS orbits))
+                    (PP (IN of)
+                      (NP (NNS planets))))))))))
+      (CC and)
+      (SBAR (IN since)
+        (S
+          (NP (NN science))
+          (VP (VBD showed)
+            (S
+              (NP (DT this))
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ unnecessary))
+                  (ADVP (RB later)))))))))
+    (, ,) (VBZ does)
+    (NP (DT this))
+    (VP (VB mean)
+      (SBAR (IN that)
+        (S
+          (NP (NNP God))
+          (VP (VBZ has)
+            (VP (VBN been)
+              (VP (VBN disproven)))))))
+    (. ?)))
+
+dep(invoked-5, PS-1)
+dep(PS-1, Since-3)
+nsubj(invoked-5, Newton-4)
+dep(mean-30, invoked-5)
+det(necessity-7, the-6)
+dobj(invoked-5, necessity-7)
+det(God-10, a-9)
+prep_of(necessity-7, God-10)
+aux(explain-12, to-11)
+xcomp(invoked-5, explain-12)
+det(orbits-15, the-13)
+amod(orbits-15, stable-14)
+dobj(explain-12, orbits-15)
+prep_of(orbits-15, planets-17)
+mark(showed-21, since-19)
+nsubj(showed-21, science-20)
+conj_and(invoked-5, showed-21)
+dep(mean-30, showed-21)
+nsubj(unnecessary-25, this-22)
+aux(unnecessary-25, to-23)
+cop(unnecessary-25, be-24)
+xcomp(showed-21, unnecessary-25)
+advmod(unnecessary-25, later-26)
+aux(mean-30, does-28)
+nsubj(mean-30, this-29)
+root(ROOT-0, mean-30)
+complm(disproven-35, that-31)
+nsubjpass(disproven-35, God-32)
+aux(disproven-35, has-33)
+auxpass(disproven-35, been-34)
+ccomp(mean-30, disproven-35)
+

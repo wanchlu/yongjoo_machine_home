@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dr.) (NNP James) (NNP I.) (NNP Lamb))
+      (, ,)
+      (NP
+        (NP (JJ executive) (NN director))
+        (PP (IN of)
+          (NP
+            (NP (NNP Lutherans))
+            (PP (IN For)
+              (NP (NNP Life))))))
+      (, ,))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (DT Both) (NNP Mary)
+            (CC and)
+            (NNP Elizabeth))
+          (VP (VBD experienced)
+            (NP (DT an) (JJ unplanned) (NN pregnancy))))))
+    (. .)))
+
+nn(Lamb-4, Dr.-1)
+nn(Lamb-4, James-2)
+nn(Lamb-4, I.-3)
+nsubj(said-13, Lamb-4)
+amod(director-7, executive-6)
+appos(Lamb-4, director-7)
+prep_of(director-7, Lutherans-9)
+prep_for(Lutherans-9, Life-11)
+root(ROOT-0, said-13)
+det(Mary-15, Both-14)
+preconj(Mary-15, Both-14)
+nsubj(experienced-18, Mary-15)
+conj_and(Mary-15, Elizabeth-17)
+nsubj(experienced-18, Elizabeth-17)
+ccomp(said-13, experienced-18)
+det(pregnancy-21, an-19)
+amod(pregnancy-21, unplanned-20)
+dobj(experienced-18, pregnancy-21)
+

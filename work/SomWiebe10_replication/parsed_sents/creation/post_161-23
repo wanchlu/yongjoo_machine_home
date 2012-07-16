@@ -1,0 +1,104 @@
+(ROOT
+  (S ('' '')
+    (ADVP (RB Again))
+    (, ,)
+    (VP (VBD define)
+      (ADVP (RB explicitly))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (NNP CSI))
+          (VP (VBZ is)))))
+    (. .) ('' '')))
+
+advmod(define-4, Again-2)
+root(ROOT-0, define-4)
+advmod(define-4, explicitly-5)
+dobj(is-8, what-6)
+nsubj(is-8, CSI-7)
+ccomp(define-4, is-8)
+
+(ROOT
+  (S
+    (NP (JJ Irreducible) (NN complexity))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN form))
+        (PP (IN of)
+          (NP
+            (NP (VBN specified) (NN complexity))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ exists)
+                  (PP (IN in)
+                    (NP
+                      (NP (NNS systems))
+                      (VP (VBN composed)
+                        (PP (IN of) (`` ``)
+                          (NP (JJ several) (NN interacting) (NNS parts)))
+                        (SBAR
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VBP contribute)
+                                (PP (TO to)
+                                  (NP (DT the) (JJ basic) (NN function))))))
+                          (, ,)
+                          (CC and)
+                          (SBAR
+                            (WHADVP (WRB where))
+                            (S
+                              (NP
+                                (NP (DT the) (NN removal))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (DT any) (NN one))
+                                    (PP (IN of)
+                                      (NP (DT the) (NNS parts))))))
+                              (VP (VBZ causes)
+                                (NP (DT the) (NN system)
+                                  (S
+                                    (VP (TO to)
+                                      (VP
+                                        (ADVP (RB effectively))
+                                        (VB cease)
+                                        (NP (NN functioning))))))))))))))))))))
+    (. .)))
+
+amod(complexity-2, Irreducible-1)
+nsubj(form-5, complexity-2)
+cop(form-5, is-3)
+det(form-5, a-4)
+root(ROOT-0, form-5)
+amod(complexity-8, specified-7)
+prep_of(form-5, complexity-8)
+nsubj(exists-11, complexity-8)
+rcmod(complexity-8, exists-11)
+prep_in(exists-11, systems-13)
+partmod(systems-13, composed-14)
+amod(parts-19, several-17)
+nn(parts-19, interacting-18)
+prep_of(composed-14, parts-19)
+nsubj(contribute-21, that-20)
+dep(composed-14, contribute-21)
+det(function-25, the-23)
+amod(function-25, basic-24)
+prep_to(contribute-21, function-25)
+advmod(causes-37, where-28)
+det(removal-30, the-29)
+nsubj(causes-37, removal-30)
+det(one-33, any-32)
+prep_of(removal-30, one-33)
+det(parts-36, the-35)
+prep_of(one-33, parts-36)
+dep(composed-14, causes-37)
+conj_and(contribute-21, causes-37)
+det(system-39, the-38)
+dobj(causes-37, system-39)
+aux(cease-42, to-40)
+advmod(cease-42, effectively-41)
+infmod(system-39, cease-42)
+dobj(cease-42, functioning-43)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNP Schools))
+    (VP (MD should)
+      (VP (VB teach)
+        (NP (JJ competing) (NNS theories))
+        (NP
+          (NP (DT The) (NN idea))
+          (SBAR (IN that)
+            (S
+              (NP (NNS creationists))
+              (VP (VBP reject)
+                (SBAR
+                  (S
+                    (NP
+                      (NP (NN mutation))
+                      (CC or)
+                      (NP (JJ natural) (NN selection)))
+                    (VP (VBZ is)
+                      (ADJP (JJ ridiculous)))))))))))
+    (. .)))
+
+nsubj(teach-3, Schools-1)
+aux(teach-3, should-2)
+root(ROOT-0, teach-3)
+amod(theories-5, competing-4)
+iobj(teach-3, theories-5)
+det(idea-7, The-6)
+dobj(teach-3, idea-7)
+complm(reject-10, that-8)
+nsubj(reject-10, creationists-9)
+dep(idea-7, reject-10)
+nsubj(ridiculous-16, mutation-11)
+amod(selection-14, natural-13)
+conj_or(mutation-11, selection-14)
+nsubj(ridiculous-16, selection-14)
+cop(ridiculous-16, is-15)
+ccomp(reject-10, ridiculous-16)
+

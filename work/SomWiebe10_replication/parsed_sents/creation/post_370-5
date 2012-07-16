@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ is)
+      (PP (IN about)
+        (NP
+          (NP (JJ rarefied) (NN design))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP
+                (VP (VBZ refuses)
+                  (S
+                    (VP (TO to)
+                      (VP (VB contrain)
+                        (NP (DT the) (NN designer))))))
+                (CC and)
+                (VP
+                  (ADVP (RB thus))
+                  (VBP lack)
+                  (NP
+                    (NP (DT a) (JJ reliable) (NN method))
+                    (PP (TO to)
+                      (NP (NN infer) (NN design)))))))))))
+    (. .)))
+
+nsubj(is-2, ID-1)
+root(ROOT-0, is-2)
+amod(design-5, rarefied-4)
+prep_about(is-2, design-5)
+nsubj(refuses-7, design-5)
+nsubj(lack-14, design-5)
+rcmod(design-5, refuses-7)
+aux(contrain-9, to-8)
+xcomp(refuses-7, contrain-9)
+det(designer-11, the-10)
+dobj(contrain-9, designer-11)
+advmod(lack-14, thus-13)
+rcmod(design-5, lack-14)
+conj_and(refuses-7, lack-14)
+det(method-17, a-15)
+amod(method-17, reliable-16)
+dobj(lack-14, method-17)
+nn(design-20, infer-19)
+prep_to(method-17, design-20)
+

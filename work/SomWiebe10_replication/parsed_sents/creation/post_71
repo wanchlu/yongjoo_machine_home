@@ -1,0 +1,196 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBD said)
+          (NP (JJR earlier) (NN experience)))))
+    (VP (VBZ demonstrates)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ matters)
+            (NP (DT a) (JJ great) (NN deal))
+            (PP (TO to)
+              (NP (DT an) (NN investigation)))
+            (SBAR (IN whether)
+              (CC or)
+              (RB not)
+              (S
+                (NP
+                  (NP (DT that))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (VP (VBG being)
+                          (VP (VBN investigated)))))))
+                (VP (VBD occurred)
+                  (PP
+                    (PP (IN via)
+                      (NP (NN agency) (NN involvement)))
+                    (CC or)
+                    (PP (IN by)
+                      (NP (NN nature))))
+                  (, ,)
+                  (S
+                    (VP (VBG operating)
+                      (ADVP (RB freely)))))))))))
+    (. .)))
+
+mark(said-3, As-1)
+nsubj(said-3, I-2)
+csubj(demonstrates-6, said-3)
+amod(experience-5, earlier-4)
+dobj(said-3, experience-5)
+root(ROOT-0, demonstrates-6)
+complm(matters-9, that-7)
+nsubj(matters-9, it-8)
+ccomp(demonstrates-6, matters-9)
+det(deal-12, a-10)
+amod(deal-12, great-11)
+dobj(matters-9, deal-12)
+det(investigation-15, an-14)
+prep_to(matters-9, investigation-15)
+complm(occurred-24, whether-16)
+ccomp(matters-9, not-18)
+conj_or(occurred-24, not-18)
+nsubjpass(investigated-23, that-19)
+nsubj(occurred-24, that-19)
+nsubj(occurred-24', that-19)
+aux(investigated-23, is-21)
+auxpass(investigated-23, being-22)
+rcmod(that-19, investigated-23)
+ccomp(matters-9, occurred-24)
+ccomp(matters-9, occurred-24')
+conj_or(occurred-24, occurred-24')
+nn(involvement-27, agency-26)
+prep_via(occurred-24, involvement-27)
+prep_by(occurred-24', nature-30)
+xcomp(occurred-24, operating-32)
+advmod(operating-32, freely-33)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADVP (RB just) (RB no))
+      (VP (VBG getting)
+        (PP (IN around)
+          (NP (DT that) (NN fact)))))
+    (. .)))
+
+expl(getting-5, There-1)
+aux(getting-5, is-2)
+advmod(no-4, just-3)
+advmod(getting-5, no-4)
+root(ROOT-0, getting-5)
+det(fact-8, that-7)
+prep_around(getting-5, fact-8)
+
+(ROOT
+  (FRAG
+    (PP (RB As) (IN for)
+      (NP
+        (NP (DT the) (`` ``) (NN bait)
+          (CC and)
+          (NN switch) ('' ''))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD would)
+              (VP (VB be)
+                (NP (PRP you))))))))
+    (. .)))
+
+advmod(for-2, As-1)
+root(ROOT-0, for-2)
+det(bait-5, the-3)
+pobj(for-2, bait-5)
+nsubj(you-12, bait-5)
+pobj(for-2, switch-7)
+conj_and(bait-5, switch-7)
+nsubj(you-12, switch-7)
+aux(you-12, would-10)
+cop(you-12, be-11)
+rcmod(bait-5, you-12)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who) (RB else))
+    (SQ
+      (VP (MD would)
+        (VP
+          (VP (VB say)
+            (S (`` ``)
+              (NP (PRP we))
+              (VP (VBP do) (RB n't)
+                (VP (VB know)))
+              ('' '')))
+          (CC and)
+          (VP
+            (ADVP (RB then))
+            (VB allow)
+            (NP
+              (NP (DT the) (NN teaching))
+              (PP (IN of)
+                (NP (DT the) (`` ``)
+                  (S
+                    (NP (DT no) (NN design))
+                    (VP (VBD allowed)))
+                  ('' '') (NN position))))))))
+    (. ?)))
+
+dobj(say-4, Who-1)
+nsubj(say-4, Who-1)
+nsubj(allow-13, Who-1)
+advmod(Who-1, else-2)
+aux(say-4, would-3)
+root(ROOT-0, say-4)
+nsubj(know-9, we-6)
+aux(know-9, do-7)
+neg(know-9, n't-8)
+ccomp(say-4, know-9)
+advmod(allow-13, then-12)
+conj_and(say-4, allow-13)
+det(teaching-15, the-14)
+dobj(allow-13, teaching-15)
+det(position-23, the-17)
+det(design-20, no-19)
+nsubj(allowed-21, design-20)
+dep(position-23, allowed-21)
+prep_of(teaching-15, position-23)
+
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP We))
+      (VP (VBP do) (RB n't)
+        (VP (VB know))))
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP do)
+        (SBAR
+          (S
+            (VP (VBP know)
+              (SBAR
+                (S
+                  (NP (DT a) (NN designer))
+                  (VP (VBD was) (RB n't)
+                    (VP (VBN involved))))))))))
+    (. .)))
+
+nsubj(know-5, We-2)
+aux(know-5, do-3)
+neg(know-5, n't-4)
+root(ROOT-0, know-5)
+nsubj(do-8, we-7)
+conj_but(know-5, do-8)
+ccomp(do-8, know-9)
+det(designer-11, a-10)
+nsubjpass(involved-14, designer-11)
+auxpass(involved-14, was-12)
+neg(involved-14, n't-13)
+ccomp(know-9, involved-14)
+

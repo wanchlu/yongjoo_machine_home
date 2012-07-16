@@ -1,0 +1,211 @@
+(ROOT
+  (NP
+    (NP (NN Person))
+    (: :)
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, Person-1)
+dep(Person-1, 1-3)
+
+(ROOT
+  (NP (DT a) (JJ human) (NN being) (. .)))
+
+det(being-3, a-1)
+amod(being-3, human-2)
+root(ROOT-0, being-3)
+
+(ROOT
+  (S
+    (NP (-LRB- -LRB-) (NNP define.com) (-RRB- -RRB-))
+    (VP (VBZ Is)
+      (NP
+        (NP (DT a) (NN fetus))
+        (NP (DT a) (JJ human) (NN being))))
+    (. ?)))
+
+nsubj(fetus-6, define.com-2)
+cop(fetus-6, Is-4)
+det(fetus-6, a-5)
+root(ROOT-0, fetus-6)
+det(being-9, a-7)
+amod(being-9, human-8)
+dep(fetus-6, being-9)
+
+(ROOT
+  (NP
+    (NP (NNP YES))
+    (: :)
+    (NP
+      (NP (CD one))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJ many) (NNS stages))
+          (PP (IN of)
+            (NP
+              (NP (NN development))
+              (PP (IN of)
+                (NP (DT a) (NN human) (VBG being))))))))
+    (. .)))
+
+root(ROOT-0, YES-1)
+dep(YES-1, one-3)
+det(stages-7, the-5)
+amod(stages-7, many-6)
+prep_of(one-3, stages-7)
+prep_of(stages-7, development-9)
+det(human-12, a-11)
+prep_of(development-9, human-12)
+amod(human-12, being-13)
+
+(ROOT
+  (S
+    (NP (NNS Others))
+    (VP (VBP are) (: :)
+      (NP
+        (NP (NN zygote))
+        (, ,)
+        (NP (NN morula))
+        (, ,)
+        (NP (NN embryo))
+        (, ,)
+        (NP (NN baby))))
+    (. .)))
+
+nsubj(zygote-4, Others-1)
+cop(zygote-4, are-2)
+root(ROOT-0, zygote-4)
+appos(zygote-4, morula-6)
+appos(zygote-4, embryo-8)
+appos(zygote-4, baby-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN toadler))
+      (, ,)
+      (NP
+        (NP (NN teenager))
+        (, ,)
+        (NP (NN adult)))
+      (, ,))
+    (VP (VBZ elder))
+    (. .)))
+
+nsubj(elder-7, toadler-1)
+appos(toadler-1, teenager-3)
+appos(teenager-3, adult-5)
+root(ROOT-0, elder-7)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (NN life))
+        (PP (IN of)
+          (NP (JJ continuous) (NN development)))))
+    (. .)))
+
+nsubj(have-2, We-1)
+root(ROOT-0, have-2)
+det(life-4, a-3)
+dobj(have-2, life-4)
+amod(development-7, continuous-6)
+prep_of(life-4, development-7)
+
+(ROOT
+  (FRAG
+    (PP (IN From)
+      (NP
+        (NP (NN conception))
+        (PP (TO to)
+          (NP (NN death)))))
+    (. .)))
+
+root(ROOT-0, From-1)
+pobj(From-1, conception-2)
+prep_to(conception-2, death-4)
+
+(ROOT
+  (S
+    (NP (DT these))
+    (VP (VBP are)
+      (NP (NNS facts))
+      (PP (RB not)
+        (NP (NNS opinions))))
+    (. .)))
+
+nsubj(facts-3, these-1)
+cop(facts-3, are-2)
+root(ROOT-0, facts-3)
+prep(facts-3, not-4)
+pobj(not-4, opinions-5)
+
+(ROOT
+  (S (IN So)
+    (NP
+      (NP (NNP Fetus) (NNP =) (NNP Human))
+      (VP (VBN Being)
+        (S
+          (VP (SYM =)
+            (NP (NNP PersonOther) (NNP Human) (NNS beings))))))
+    (VP (VBD deprived)
+      (PP (IN of)
+        (NP
+          (NP (PRP$ their) (NN personhood))
+          (: :)
+          (NP
+            (NP (JJ Native) (NNS americans))
+            (CC and)
+            (NP (NNP African) (NNP American) (NNP Slaves)))))
+      (PP (IN in)
+        (NP (DT the) (NNP US) (, ,) (NNPS Jews)))
+      (PP (IN in)
+        (NP
+          (NP (NNP Nazi) (NNP Germany))
+          (, ,)
+          (NP
+            (NP
+              (NP (PDT All) (DT the) (NNS slaves))
+              (PP (IN in)
+                (NP (NN history))))
+            (: :)
+            (NP
+              (NP (DT all) (JJ considered) (NN property))
+              (PP (RB instead) (IN of)
+                (NP (NNS persons))))))))
+    (. .)))
+
+dep(deprived-10, So-1)
+nn(Human-4, Fetus-2)
+nn(Human-4, =-3)
+nsubj(deprived-10, Human-4)
+partmod(Human-4, Being-5)
+dep(beings-9, =-6)
+nn(beings-9, PersonOther-7)
+nn(beings-9, Human-8)
+ccomp(Being-5, beings-9)
+root(ROOT-0, deprived-10)
+poss(personhood-13, their-12)
+prep_of(deprived-10, personhood-13)
+amod(americans-16, Native-15)
+dep(personhood-13, americans-16)
+nn(Slaves-20, African-18)
+nn(Slaves-20, American-19)
+dep(personhood-13, Slaves-20)
+conj_and(americans-16, Slaves-20)
+det(Jews-25, the-22)
+nn(Jews-25, US-23)
+prep_in(deprived-10, Jews-25)
+nn(Germany-28, Nazi-27)
+prep_in(deprived-10, Germany-28)
+predet(slaves-32, All-30)
+det(slaves-32, the-31)
+appos(Germany-28, slaves-32)
+prep_in(slaves-32, history-34)
+det(property-38, all-36)
+amod(property-38, considered-37)
+dep(slaves-32, property-38)
+prep_instead_of(property-38, persons-41)
+

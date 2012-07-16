@@ -1,0 +1,91 @@
+(ROOT
+  (S
+    (SBAR
+      (X (SYM \*\*))
+      (S
+        (NP
+          (NP (JJ Major) (NNS findings))
+          (PP (IN of)
+            (NP (DT this) (NN staff) (NN investigation))))
+        (VP (VBP include))))
+    (: :) (. ?)))
+
+dep(include-8, \*\*-1)
+amod(findings-3, Major-2)
+nsubj(include-8, findings-3)
+det(investigation-7, this-5)
+nn(investigation-7, staff-6)
+prep_of(findings-3, investigation-7)
+root(ROOT-0, include-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Officials))
+      (PP (IN at)
+        (NP (DT the) (NNP Smithsonian))))
+    (VP (VBZ s)
+      (NP
+        (NP (NNP National) (NNP Museum))
+        (PP (IN of)
+          (NP
+            (NP (JJ Natural) (NN History))
+            (VP (VBN created)
+              (NP
+                (NP (DT a) (JJ hostile) (NN work) (NN environment))
+                (VP (VBN intended)
+                  (S
+                    (VP (TO to)
+                      (VP (VB force)
+                        (S
+                          (NP (NNP Dr.) (NNP Sternberg))
+                          (VP (TO to)
+                            (VP (VB resign)
+                              (NP (PRP$ his) (NN position))
+                              (PP (IN as)
+                                (NP
+                                  (NP (DT a) (NNP Research) (NNP Associate))
+                                  (PP (IN in)
+                                    (NP
+                                      (NP (NN violation))
+                                      (PP (IN of)
+                                        (NP
+                                          (NP (PRP$ his) (JJ free) (NN speech))
+                                          (CC and)
+                                          (NP (JJ civil) (NNS rights)))))))))))))))))))))
+    (. .)))
+
+nsubj(Museum-7, Officials-1)
+det(Smithsonian-4, the-3)
+prep_at(Officials-1, Smithsonian-4)
+cop(Museum-7, s-5)
+nn(Museum-7, National-6)
+root(ROOT-0, Museum-7)
+amod(History-10, Natural-9)
+prep_of(Museum-7, History-10)
+partmod(History-10, created-11)
+det(environment-15, a-12)
+amod(environment-15, hostile-13)
+nn(environment-15, work-14)
+dobj(created-11, environment-15)
+xsubj(force-18, environment-15)
+partmod(environment-15, intended-16)
+aux(force-18, to-17)
+xcomp(intended-16, force-18)
+nn(Sternberg-20, Dr.-19)
+nsubj(resign-22, Sternberg-20)
+aux(resign-22, to-21)
+xcomp(force-18, resign-22)
+poss(position-24, his-23)
+dobj(resign-22, position-24)
+det(Associate-28, a-26)
+nn(Associate-28, Research-27)
+prep_as(resign-22, Associate-28)
+prep_in(Associate-28, violation-30)
+poss(speech-34, his-32)
+amod(speech-34, free-33)
+prep_of(violation-30, speech-34)
+amod(rights-37, civil-36)
+prep_of(violation-30, rights-37)
+conj_and(speech-34, rights-37)
+

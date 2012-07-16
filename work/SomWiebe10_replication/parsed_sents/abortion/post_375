@@ -1,0 +1,101 @@
+(ROOT
+  (NP
+    (NP
+      (NP (NN movie))
+      (PP (IN with)
+        (NP (NNP Schwarzenegger))))
+    (VP (VBG carrying)
+      (NP (DT the) (NN baby))
+      (PP (TO to)
+        (NP (JJ full) (NN term))))
+    (. .)))
+
+root(ROOT-0, movie-1)
+prep_with(movie-1, Schwarzenegger-3)
+partmod(movie-1, carrying-4)
+det(baby-6, the-5)
+dobj(carrying-4, baby-6)
+amod(term-9, full-8)
+prep_to(carrying-4, term-9)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT that))
+        (VP (MD can)
+          (VP (VB happen)))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP you))
+    (VP (MD will)
+      (VP (VB be)
+        (PP (IN on)
+          (NP (JJ equal) (NN footing)))
+        (PP (IN with)
+          (NP
+            (NP (NNS women))
+            (PP (IN on)
+              (NP (DT the) (JJ reproductive) (NN issue)))))))
+    (. .)))
+
+advmod(happen-4, When-1)
+nsubj(happen-4, that-2)
+aux(happen-4, can-3)
+advcl(be-9, happen-4)
+advmod(be-9, then-6)
+nsubj(be-9, you-7)
+aux(be-9, will-8)
+root(ROOT-0, be-9)
+amod(footing-12, equal-11)
+prep_on(be-9, footing-12)
+prep_with(be-9, women-14)
+det(issue-18, the-16)
+amod(issue-18, reproductive-17)
+prep_on(women-14, issue-18)
+
+(ROOT
+  (SINV
+    (PP (IN Until)
+      (NP (RB then)))
+    (VP (VBP please)
+      (VP (VB take)
+        (NP (PRP$ your) (NNS complaints))
+        (PP (TO to)
+          (NP (NNP Mother)))))
+    (NP
+      (NP (NN Nature)
+        (CC or)
+        (NN god))
+      (, ,)
+      (SBAR
+        (WHNP (WDT whichever))
+        (S
+          (NP (PRP you))
+          (VP (VBP believe)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (PP (IN at)
+                    (NP (NN fault))))))))))
+    (. .)))
+
+prep(please-3, Until-1)
+pobj(Until-1, then-2)
+root(ROOT-0, please-3)
+xcomp(please-3, take-4)
+poss(complaints-6, your-5)
+dobj(take-4, complaints-6)
+prep_to(take-4, Mother-8)
+nsubj(please-3, Nature-9)
+nsubj(please-3, god-11)
+conj_or(Nature-9, god-11)
+rel(believe-15, whichever-13)
+nsubj(believe-15, you-14)
+xsubj(be-17, you-14)
+rcmod(Nature-9, believe-15)
+aux(be-17, to-16)
+xcomp(believe-15, be-17)
+prep_at(be-17, fault-19)
+

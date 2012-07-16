@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (PP (IN About)
+      (ADJP (JJ right)
+        (CC and)
+        (JJ wrong)))
+    (: ;)
+    (VP (VB notice)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Jesus))
+          (VP (VBD quoted)
+            (NP (DT the) (CD Ten) (NNS Commandments))
+            (ADVP (RB here))))))
+    (. .)))
+
+prep_about(notice-6, right-2)
+conj_and(right-2, wrong-4)
+prep_about(notice-6, wrong-4)
+root(ROOT-0, notice-6)
+complm(quoted-9, that-7)
+nsubj(quoted-9, Jesus-8)
+ccomp(notice-6, quoted-9)
+det(Commandments-12, the-10)
+num(Commandments-12, Ten-11)
+dobj(quoted-9, Commandments-12)
+advmod(quoted-9, here-13)
+

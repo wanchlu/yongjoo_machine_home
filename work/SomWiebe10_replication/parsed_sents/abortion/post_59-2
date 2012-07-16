@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (DT The) (NN reason) (NN abortion))
+    (VP (VBZ is)
+      (ADJP (JJ justified)
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (SBAR (IN that)
+                (S
+                  (NP (DT a) (NN woman))
+                  (VP (MD will)
+                    (ADVP (RB sometimes))
+                    (VP (VB regret)
+                      (S
+                        (VP (VBG having)
+                          (S
+                            (NP (DT a) (NN child))
+                            (ADJP (JJR more)
+                              (SBAR (IN than)
+                                (S
+                                  (NP (PRP she))
+                                  (VP (MD will)
+                                    (VP (VB regret)
+                                      (S
+                                        (VP (VBG having)
+                                          (NP (DT an) (NN abortion)))))))))))))))))))))
+    (. .)))
+
+det(abortion-3, The-1)
+nn(abortion-3, reason-2)
+nsubj(justified-5, abortion-3)
+cop(justified-5, is-4)
+root(ROOT-0, justified-5)
+dep(justified-5, is-6)
+complm(regret-12, that-7)
+det(woman-9, a-8)
+nsubj(regret-12, woman-9)
+aux(regret-12, will-10)
+advmod(regret-12, sometimes-11)
+ccomp(is-6, regret-12)
+xcomp(regret-12, having-13)
+det(child-15, a-14)
+nsubj(more-16, child-15)
+xcomp(having-13, more-16)
+mark(regret-20, than-17)
+nsubj(regret-20, she-18)
+aux(regret-20, will-19)
+dep(more-16, regret-20)
+xcomp(regret-20, having-21)
+det(abortion-23, an-22)
+dobj(having-21, abortion-23)
+

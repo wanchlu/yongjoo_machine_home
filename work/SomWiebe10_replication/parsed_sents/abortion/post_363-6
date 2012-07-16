@@ -1,0 +1,29 @@
+(ROOT
+  (FRAG
+    (PP (IN From)
+      (NP (NNP WordNet)
+        (PRN (-LRB- -LRB-)
+          (NP (NN r))
+          (-RRB- -RRB-))
+        (NNP 2.0)))
+    (NP
+      (NP (-LRB- -LRB-) (NN wn) (-RRB- -RRB-))
+      (: :)
+      (NP
+        (NP (NN person))
+        (: :)
+        (NP (NN noun)))
+      (: :)
+      (NP (DT a) (JJ human) (NN being)))))
+
+dep(wn-8, From-1)
+nn(2.0-6, WordNet-2)
+appos(2.0-6, r-4)
+pobj(From-1, 2.0-6)
+root(ROOT-0, wn-8)
+dep(wn-8, person-11)
+dep(person-11, noun-13)
+det(being-17, a-15)
+amod(being-17, human-16)
+dep(wn-8, being-17)
+

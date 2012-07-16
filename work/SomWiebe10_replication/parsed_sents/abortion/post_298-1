@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN majority))
+        (PP (IN of)
+          (NP (NNS abortions))))
+      (VP (VBP are)
+        (VP (VBN performed)
+          (PP (IN in)
+            (NP (DT the) (JJ first) (NN trimester))))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD 'd)
+        (VP (VB need)
+          (NP (DT a) (NN microscope)
+            (S
+              (VP (TO to)
+                (VP (VB see)
+                  (NP
+                    (NP (DT the) (NNS results))
+                    (PP (IN of)
+                      (NP (DT that)))))))))))
+    (. .)))
+
+det(majority-2, The-1)
+nsubjpass(performed-6, majority-2)
+prep_of(majority-2, abortions-4)
+auxpass(performed-6, are-5)
+root(ROOT-0, performed-6)
+det(trimester-10, the-8)
+amod(trimester-10, first-9)
+prep_in(performed-6, trimester-10)
+nsubj(need-14, you-12)
+aux(need-14, 'd-13)
+conj_and(performed-6, need-14)
+det(microscope-16, a-15)
+dobj(need-14, microscope-16)
+aux(see-18, to-17)
+infmod(microscope-16, see-18)
+det(results-20, the-19)
+dobj(see-18, results-20)
+prep_of(results-20, that-22)
+

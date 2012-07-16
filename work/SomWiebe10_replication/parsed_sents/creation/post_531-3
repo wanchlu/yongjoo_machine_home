@@ -1,0 +1,53 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP
+          (NP
+            (NP (NNP ~) (NNP Albert) (NNP Einstein))
+            (, ,)
+            (NP (CD 1954))
+            (, ,))
+          (PP (IN from)
+            (NP (NNP Albert) (NNP Einstein))))
+        (: :)
+        (NP (DT The) (JJ Human) (NN Side))
+        (: --))
+      (VP (VBZ Seems)))
+    (PRN
+      (NP (NNP Einstein))
+      (VP (VBZ considers)))
+    (S
+      (NP
+        (NP (DT the) (NN structure))
+        (PP (IN of)
+          (NP (DT the) (NN world) (IN as))))
+      (VP (VBD revealed)
+        (PP (IN by)
+          (NP
+            (NP (NN science))
+            (NP (DT the) (`` ``) (NN religion) ('' ''))))))
+    (. .)))
+
+nn(Einstein-4, ~-2)
+nn(Einstein-4, Albert-3)
+nsubj(Seems-16, Einstein-4)
+appos(Einstein-4, 1954-6)
+nn(Einstein-10, Albert-9)
+prep_from(Einstein-4, Einstein-10)
+det(Side-14, The-12)
+amod(Side-14, Human-13)
+dep(Einstein-4, Side-14)
+root(ROOT-0, Seems-16)
+nsubj(considers-18, Einstein-17)
+dep(Seems-16, considers-18)
+det(structure-20, the-19)
+nsubj(revealed-25, structure-20)
+det(world-23, the-22)
+prep_of(structure-20, world-23)
+amod(world-23, as-24)
+ccomp(Seems-16, revealed-25)
+prep_by(revealed-25, science-27)
+det(religion-30, the-28)
+dep(science-27, religion-30)
+

@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (MD should)
+            (VP (VB think)
+              (PRT (RP about)))))))
+    (. .)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+nsubj(think-5, they-3)
+aux(think-5, should-4)
+ccomp(agree-2, think-5)
+prt(think-5, about-6)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB how))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT that) (NN justification))
+        (PP (IN for)
+          (S
+            (VP (VBG making)
+              (S
+                (NP (NN abortion))
+                (ADJP (JJ illegal))))))))
+    (. ?)))
+
+cc(is-3, But-1)
+advmod(is-3, how-2)
+root(ROOT-0, is-3)
+det(justification-5, that-4)
+nsubj(is-3, justification-5)
+prepc_for(justification-5, making-7)
+nsubj(illegal-9, abortion-8)
+xcomp(making-7, illegal-9)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Again))
+      (INTJ (VB please))
+      (VP (VB respond)
+        (PP (TO to)
+          (NP (PRP$ my) (JJ other) (NN post)))))
+    (NP (NNS hereI))
+    (VP (VBP look)
+      (ADVP (RB forward))
+      (PP (TO to)
+        (NP (PRP$ your) (NN response))))
+    (. .)))
+
+nsubj(respond-3, Again-1)
+dep(respond-3, please-2)
+dep(look-9, respond-3)
+poss(post-7, my-5)
+amod(post-7, other-6)
+prep_to(respond-3, post-7)
+nsubj(look-9, hereI-8)
+root(ROOT-0, look-9)
+advmod(look-9, forward-10)
+poss(response-13, your-12)
+prep_to(look-9, response-13)
+

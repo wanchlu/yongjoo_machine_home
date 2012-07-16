@@ -1,0 +1,378 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Intelligent) (NN design))
+      (, ,)
+      (ADJP (IN if) (JJ true))
+      (, ,))
+    (VP (MD would)
+      (ADVP (RB indeed))
+      (VP (VB have)
+        (NP (JJ amazing) (NNS implications))))
+    (. .)))
+
+amod(design-2, Intelligent-1)
+nsubj(have-9, design-2)
+dep(true-5, if-4)
+amod(design-2, true-5)
+aux(have-9, would-7)
+advmod(have-9, indeed-8)
+root(ROOT-0, have-9)
+amod(implications-11, amazing-10)
+dobj(have-9, implications-11)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Again))
+    (: ...)
+    (SBAR (IN if)
+      (S
+        (NP (PRP it))
+        (VP (VBD were)
+          (ADJP (JJ true)))))
+    (. .)))
+
+root(ROOT-0, Again-1)
+mark(true-6, if-3)
+nsubj(true-6, it-4)
+cop(true-6, were-5)
+dep(Again-1, true-6)
+
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (MD will) (RB not)
+      (VP (VB be)
+        (VP (VBN proven)
+          (ADVP (RB right))
+          (: ;)
+          (SBAR (RB not)
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (VP (VBZ has)
+                  (NP (JJ religious) (NNS foundations)))))
+            (, ,)
+            (CC but)
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (VP (VBZ has)
+                  (NP (DT no) (JJ solid) (NN science)))))))))
+    (. .)))
+
+nsubjpass(proven-5, ID-1)
+aux(proven-5, will-2)
+neg(proven-5, not-3)
+auxpass(proven-5, be-4)
+root(ROOT-0, proven-5)
+advmod(proven-5, right-6)
+dep(has-11, not-8)
+mark(has-11, because-9)
+nsubj(has-11, it-10)
+parataxis(proven-5, has-11)
+amod(foundations-13, religious-12)
+dobj(has-11, foundations-13)
+mark(has-18, because-16)
+nsubj(has-18, it-17)
+parataxis(proven-5, has-18)
+conj_but(has-11, has-18)
+det(science-21, no-19)
+amod(science-21, solid-20)
+dobj(has-18, science-21)
+
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ incomplete) (NNS hypothesis))
+        (, ,) (RB not)
+        (NP (DT a) (JJ scientific) (NN theory))))
+    (. .)))
+
+nsubj(hypothesis-5, ID-1)
+cop(hypothesis-5, is-2)
+det(hypothesis-5, an-3)
+amod(hypothesis-5, incomplete-4)
+root(ROOT-0, hypothesis-5)
+neg(hypothesis-5, not-7)
+det(theory-10, a-8)
+amod(theory-10, scientific-9)
+dep(hypothesis-5, theory-10)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB not)
+      (VP (VB show)
+        (NP
+          (NP (DT a) (JJ detailed) (NN analysis))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS data))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ supports)
+                    (NP
+                      (NP (DT the) (NNS assertions))
+                      (SBAR
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ makes)))))))))))))
+    (. .)))
+
+nsubj(show-4, It-1)
+aux(show-4, does-2)
+neg(show-4, not-3)
+root(ROOT-0, show-4)
+det(analysis-7, a-5)
+amod(analysis-7, detailed-6)
+dobj(show-4, analysis-7)
+det(data-10, the-9)
+prep_of(analysis-7, data-10)
+nsubj(supports-12, data-10)
+rcmod(data-10, supports-12)
+det(assertions-14, the-13)
+dobj(supports-12, assertions-14)
+dobj(makes-16, assertions-14)
+nsubj(makes-16, it-15)
+rcmod(assertions-14, makes-16)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB not)
+      (VP (VB offer)
+        (NP
+          (NP (NNS predictions))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD will)
+                (VP (VB validate)
+                  (NP
+                    (NP (PRP it) (POS 's))
+                    (NNS claims)))))))))
+    (. .)))
+
+nsubj(offer-4, It-1)
+aux(offer-4, does-2)
+neg(offer-4, not-3)
+root(ROOT-0, offer-4)
+dobj(offer-4, predictions-5)
+nsubj(validate-8, predictions-5)
+aux(validate-8, will-7)
+rcmod(predictions-5, validate-8)
+poss(claims-11, it-9)
+dobj(validate-8, claims-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has) (RB not)
+      (VP (VBN proposed)
+        (NP
+          (NP (NNS experiments))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can)
+                (VP (VB be)
+                  (VP (VBN done)
+                    (S
+                      (VP (TO to)
+                        (VP (RB either) (VB falsify)
+                          (CC or)
+                          (VB support)
+                          (NP (PRP it)))))))))))))
+    (. .)))
+
+nsubj(proposed-4, It-1)
+aux(proposed-4, has-2)
+neg(proposed-4, not-3)
+root(ROOT-0, proposed-4)
+dobj(proposed-4, experiments-5)
+nsubjpass(done-9, experiments-5)
+aux(done-9, can-7)
+auxpass(done-9, be-8)
+rcmod(experiments-5, done-9)
+aux(falsify-12, to-10)
+advmod(falsify-12, either-11)
+xcomp(done-9, falsify-12)
+xcomp(done-9, support-14)
+conj_or(falsify-12, support-14)
+dobj(falsify-12, it-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP ID) (POS 's))
+      (JJ entire) (NN argument))
+    (VP (VBZ is)
+      (S (: :)
+        (S
+          (PP (IN As)
+            (NP (DT a) (JJ biased) (NN observer)))
+          (, ,)
+          (NP (PRP I))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (NN life))
+                (VP (VBZ is)
+                  (VP (VBN designed)))))))
+        (, ,)
+        (ADVP (RB therefore))
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)))))
+    (. .)))
+
+poss(argument-4, ID-1)
+amod(argument-4, entire-3)
+nsubj(is-5, argument-4)
+root(ROOT-0, is-5)
+det(observer-10, a-8)
+amod(observer-10, biased-9)
+prep_as(think-13, observer-10)
+nsubj(think-13, I-12)
+dep(is-5, think-13)
+nsubjpass(designed-16, life-14)
+auxpass(designed-16, is-15)
+ccomp(think-13, designed-16)
+advmod(think-13, therefore-18)
+nsubj(is-20, it-19)
+dep(think-13, is-20)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB explain)
+                  (NP (PRP it)))
+                (, ,)
+                (CC or)
+                (VP (VB attempt)
+                  (S
+                    (VP (TO to)
+                      (VP (VB prove)
+                        (NP (PRP it))))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ obvious)))
+    (. .)))
+
+nsubj(going-4, I-1)
+xsubj(explain-6, I-1)
+aux(going-4, 'm-2)
+neg(going-4, not-3)
+ccomp(obvious-17, going-4)
+aux(explain-6, to-5)
+xcomp(going-4, explain-6)
+dobj(explain-6, it-7)
+xcomp(going-4, attempt-10)
+conj_or(explain-6, attempt-10)
+aux(prove-12, to-11)
+xcomp(attempt-10, prove-12)
+dobj(prove-12, it-13)
+nsubj(obvious-17, it-15)
+cop(obvious-17, 's-16)
+root(ROOT-0, obvious-17)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB agree)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD must)
+      (VP (VB have)
+        (NP (DT an) (NN agenda))))
+    (. .)))
+
+mark(agree-5, If-1)
+nsubj(agree-5, you-2)
+aux(agree-5, do-3)
+neg(agree-5, n't-4)
+advcl(have-9, agree-5)
+nsubj(have-9, you-7)
+aux(have-9, must-8)
+root(ROOT-0, have-9)
+det(agenda-11, an-10)
+dobj(have-9, agenda-11)
+
+(ROOT
+  (S
+    (S
+      (S
+        (NP (NNP Newton)
+          (CC and)
+          (NNP Kepler))
+        (VP (VBD did)
+          (VP (VB turn)
+            (PRT (RP out))
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ right))))))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT the) (NN author))
+        (VP (VBZ is)
+          (ADJP (JJ right)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was) (RB not)
+      (PP (RB because) (IN of)
+        (NP (PRP$ their) (JJ religious) (NNS beliefs))))
+    (. .)))
+
+nsubj(turn-5, Newton-1)
+xsubj(right-9, Newton-1)
+conj_and(Newton-1, Kepler-3)
+nsubj(turn-5, Kepler-3)
+xsubj(right-9, Kepler-3)
+aux(turn-5, did-4)
+ccomp(was-18, turn-5)
+prt(turn-5, out-6)
+aux(right-9, to-7)
+cop(right-9, be-8)
+xcomp(turn-5, right-9)
+det(author-13, the-12)
+nsubj(right-15, author-13)
+cop(right-15, is-14)
+conj_and(turn-5, right-15)
+ccomp(was-18, right-15)
+nsubj(was-18, it-17)
+root(ROOT-0, was-18)
+neg(was-18, not-19)
+poss(beliefs-24, their-22)
+amod(beliefs-24, religious-23)
+prep_because_of(was-18, beliefs-24)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (PP (RB because) (IN of)
+        (NP (PRP$ their) (JJ solid) (NN science))))
+    (. .)))
+
+nsubj(was-2, It-1)
+root(ROOT-0, was-2)
+poss(science-7, their-5)
+amod(science-7, solid-6)
+prep_because_of(was-2, science-7)
+

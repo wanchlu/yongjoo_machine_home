@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP I))
+        (VP (VBP see))))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NN science))
+          (VP
+            (VP (VBZ is)
+              (VP (VBG exploring)
+                (NP
+                  (NP (DT a) (JJ large) (NN variety))
+                  (PP (IN of)
+                    (NP
+                      (NP (JJ plausible) (NNS explanations))
+                      (PP (IN for)
+                        (NP (DT the) (NNS observations))))))))
+            (CC and)
+            (VP (VBZ is) (RB not)
+              (VP (VBG jumping)
+                (PP (TO to)
+                  (NP (NNS conclusions)))
+                (PP (IN without)
+                  (NP
+                    (NP (DT a) (JJ good) (JJ supporting) (NN base))
+                    (PP (IN of)
+                      (NP (NNS hypotheses)
+                        (CC and)
+                        (NNS data)))))))))))
+    (. .)))
+
+dobj(see-3, What-1)
+nsubj(see-3, I-2)
+csubj(is-4, see-3)
+root(ROOT-0, is-4)
+advmod(exploring-8, how-5)
+nsubj(exploring-8, science-6)
+nsubj(jumping-21, science-6)
+aux(exploring-8, is-7)
+ccomp(is-4, exploring-8)
+det(variety-11, a-9)
+amod(variety-11, large-10)
+dobj(exploring-8, variety-11)
+amod(explanations-14, plausible-13)
+prep_of(variety-11, explanations-14)
+det(observations-17, the-16)
+prep_for(explanations-14, observations-17)
+aux(jumping-21, is-19)
+neg(jumping-21, not-20)
+ccomp(is-4, jumping-21)
+conj_and(exploring-8, jumping-21)
+prep_to(jumping-21, conclusions-23)
+det(base-28, a-25)
+amod(base-28, good-26)
+amod(base-28, supporting-27)
+prep_without(jumping-21, base-28)
+prep_of(base-28, hypotheses-30)
+prep_of(base-28, data-32)
+conj_and(hypotheses-30, data-32)
+

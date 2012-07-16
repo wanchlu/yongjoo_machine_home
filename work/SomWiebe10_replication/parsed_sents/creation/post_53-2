@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (NNP PvM))
+        (ADVP (RB still))
+        (VP (VBZ fails)
+          (S
+            (VP (TO to)
+              (VP (VB understand)))))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (NN probability))
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (NN measure))
+              (PP (IN of)
+                (NP (JJ random) (NNS outcomes))))))))
+    (. .)))
+
+dep(fails-4, What-1)
+nsubj(fails-4, PvM-2)
+xsubj(understand-6, PvM-2)
+advmod(fails-4, still-3)
+csubj(is-7, fails-4)
+aux(understand-6, to-5)
+xcomp(fails-4, understand-6)
+root(ROOT-0, is-7)
+complm(measure-12, that-8)
+nsubj(measure-12, probability-9)
+cop(measure-12, is-10)
+det(measure-12, a-11)
+ccomp(is-7, measure-12)
+amod(outcomes-15, random-14)
+prep_of(measure-12, outcomes-15)
+

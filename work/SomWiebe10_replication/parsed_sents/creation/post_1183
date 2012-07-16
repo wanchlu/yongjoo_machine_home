@@ -1,0 +1,185 @@
+(ROOT
+  (S
+    (NP (NNP Granted) (NNP creationism))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ provable)
+        (PP (IN through)
+          (NP
+            (NP (DT the) (NN use))
+            (PP (IN of)
+              (NP (DT the) (JJ scientific) (NN method)))))))
+    (. .)))
+
+nn(creationism-2, Granted-1)
+nsubj(provable-5, creationism-2)
+cop(provable-5, is-3)
+neg(provable-5, not-4)
+root(ROOT-0, provable-5)
+det(use-8, the-7)
+prep_through(provable-5, use-8)
+det(method-12, the-10)
+amod(method-12, scientific-11)
+prep_of(use-8, method-12)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ does) (RB not)
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ false)))))))
+    (. .)))
+
+nsubj(mean-4, This-1)
+aux(mean-4, does-2)
+neg(mean-4, not-3)
+root(ROOT-0, mean-4)
+nsubj(false-7, it-5)
+cop(false-7, is-6)
+ccomp(mean-4, false-7)
+
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (NN life))
+        (VP (VBG arising)
+          (PP (IN from)
+            (NP (NN nonlife)
+              (CC or)
+              (NNS nothingness)))))
+      (-RRB- -RRB-))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (RB not)
+      (ADJP (JJ provable)
+        (PP (IN through)
+          (NP (DT the) (JJ scientific) (NN method)))))
+    (. .)))
+
+nsubj(provable-13, Evolution-1)
+nsubj(arising-4, life-3)
+parataxis(provable-13, arising-4)
+prep_from(arising-4, nonlife-6)
+prep_from(arising-4, nothingness-8)
+conj_or(nonlife-6, nothingness-8)
+cop(provable-13, is-10)
+advmod(provable-13, also-11)
+neg(provable-13, not-12)
+root(ROOT-0, provable-13)
+det(method-17, the-15)
+amod(method-17, scientific-16)
+prep_through(provable-13, method-17)
+
+(ROOT
+  (S
+    (NP (DT Both))
+    (VP (VBP are)
+      (NP
+        (NP (NN speculation))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN part))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN person))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ believes)
+                      (S
+                        (NP (PRP them))
+                        (VP (TO to)
+                          (VP (VB be)
+                            (ADJP (JJ true))))))))))))))
+    (. .)))
+
+nsubj(speculation-3, Both-1)
+cop(speculation-3, are-2)
+root(ROOT-0, speculation-3)
+det(part-6, the-5)
+prep_on(speculation-3, part-6)
+det(person-9, the-8)
+prep_of(part-6, person-9)
+nsubj(believes-11, person-9)
+rcmod(person-9, believes-11)
+nsubj(true-15, them-12)
+aux(true-15, to-13)
+cop(true-15, be-14)
+xcomp(believes-11, true-15)
+
+(ROOT
+  (SINV
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNS \/))
+      (-RRB- -RRB-))
+    (NP
+      (NP (CC And)
+        (NN haters))
+      (, ,)
+      (SBAR
+        (SBAR
+          (S
+            (VP (VBP do) (RB n't)
+              (VP (VB bother)
+                (S
+                  (VP (VBG commenting)
+                    (PP (IN on)
+                      (SBAR
+                        (WHADVP (WRB how))
+                        (S
+                          (NP (NN science))
+                          (VP (VBZ has)
+                            (VP (VBN proven)
+                              (NP (NN evolution))
+                              (PP (IN through)
+                                (NP
+                                  (NP (DT the) (JJ fossil) (NN record))
+                                  (CC or)
+                                  (NP (DT the) (NN fact)))))))))))))))
+        (SBAR
+          (WHNP (WDT that) (NNS species))
+          (S
+            (VP (VBP change)
+              (PP (IN through)
+                (NP (JJ natural) (NN selection)))
+              (PP (IN because)
+                (NP
+                  (NP (DT neither))
+                  (PP (IN of)
+                    (NP (DT those) (JJ contradict) (NN creationism)))))))
+          (. .))))))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+cc(haters-6, And-5)
+nsubj(\/-1, haters-6)
+aux(bother-10, do-8)
+neg(bother-10, n't-9)
+rcmod(haters-6, bother-10)
+xcomp(bother-10, commenting-11)
+advmod(proven-16, how-13)
+nsubj(proven-16, science-14)
+aux(proven-16, has-15)
+prepc_on(commenting-11, proven-16)
+dobj(proven-16, evolution-17)
+det(record-21, the-19)
+amod(record-21, fossil-20)
+prep_through(proven-16, record-21)
+det(fact-24, the-23)
+prep_through(proven-16, fact-24)
+conj_or(record-21, fact-24)
+det(species-26, that-25)
+nsubj(change-27, species-26)
+dep(bother-10, change-27)
+amod(selection-30, natural-29)
+prep_through(change-27, selection-30)
+prep_because(change-27, neither-32)
+det(creationism-36, those-34)
+amod(creationism-36, contradict-35)
+prep_of(neither-32, creationism-36)
+

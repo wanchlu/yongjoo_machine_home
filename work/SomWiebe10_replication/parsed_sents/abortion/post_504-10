@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Do))
+    (PRN
+      (S
+        (NP (DT any))
+        (VP
+          (ADVP (RB really))
+          (VBP believe)
+          (SBAR (IN that)
+            (S
+              (NP (DT these) (NNS people))
+              (VP (VBP do) (RB n't)
+                (VP (VB do)
+                  (S
+                    (NP (NNS drugs))
+                    (VP (TO to)
+                      (VP (VB forget))))))))))
+      (, ,))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB kill)
+            (NP (PRP themselves))))))
+    (. .)))
+
+nsubj(want-15, Do-1)
+xsubj(kill-17, Do-1)
+nsubj(believe-4, any-2)
+advmod(believe-4, really-3)
+parataxis(want-15, believe-4)
+complm(do-10, that-5)
+det(people-7, these-6)
+nsubj(do-10, people-7)
+aux(do-10, do-8)
+neg(do-10, n't-9)
+ccomp(believe-4, do-10)
+nsubj(forget-13, drugs-11)
+aux(forget-13, to-12)
+xcomp(do-10, forget-13)
+root(ROOT-0, want-15)
+aux(kill-17, to-16)
+xcomp(want-15, kill-17)
+dobj(kill-17, themselves-18)
+

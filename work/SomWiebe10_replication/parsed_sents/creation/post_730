@@ -1,0 +1,211 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (ADVP (RB even))
+      (VP (VB ask)
+        (NP (DT this) (NN question))))
+    (. ?)))
+
+advmod(ask-5, Why-1)
+aux(ask-5, do-2)
+nsubj(ask-5, we-3)
+advmod(ask-5, even-4)
+root(ROOT-0, ask-5)
+det(question-7, this-6)
+dobj(ask-5, question-7)
+
+(ROOT
+  (S
+    (ADVP (RB PEOPLE))
+    (, ,)
+    (NP (NNP Evolution))
+    (VP (VBZ is)
+      (NP (DT a) (NN fact) (, ,) (NN science) (NNS measures) (NNS facts)))
+    (. .)))
+
+advmod(facts-10, PEOPLE-1)
+nsubj(facts-10, Evolution-3)
+cop(facts-10, is-4)
+det(facts-10, a-5)
+nn(facts-10, fact-6)
+dep(facts-10, science-8)
+nn(facts-10, measures-9)
+root(ROOT-0, facts-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NN world))
+    (VP (VBZ is)
+      (NP
+        (NP (NNP neither) (CD 4,000) (, ,) (CD 6,000))
+        (, ,)
+        (CC or)
+        (ADJP
+          (NP (CD 37,000) (NNS years))
+          (JJ old))))
+    (. .)))
+
+det(world-2, The-1)
+nsubj(neither-4, world-2)
+nsubj(old-12, world-2)
+cop(neither-4, is-3)
+root(ROOT-0, neither-4)
+num(neither-4, 4,000-5)
+num(neither-4, 6,000-7)
+num(years-11, 37,000-10)
+npadvmod(old-12, years-11)
+conj_or(neither-4, old-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (CD 4) (JJ Billion) (NNS years))
+      (ADJP (JJ old)))
+    (. .)))
+
+nsubj(old-6, It-1)
+cop(old-6, is-2)
+num(years-5, 4-3)
+amod(years-5, Billion-4)
+attr(old-6, years-5)
+tmod(old-6, years-5)
+root(ROOT-0, old-6)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (MD can)
+        (VP (VB use)
+          (NP (NN math))
+          (S
+            (VP (TO to)
+              (VP (VB estimate)
+                (NP
+                  (NP (DT the) (NN time))
+                  (PP (IN of)
+                    (NP (DT the) (JJ big) (NN bang))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (DT all) (NN FACT)))
+    (. .)))
+
+nsubj(use-3, We-1)
+aux(use-3, can-2)
+ccomp(FACT-17, use-3)
+dobj(use-3, math-4)
+aux(estimate-6, to-5)
+xcomp(use-3, estimate-6)
+det(time-8, the-7)
+dobj(estimate-6, time-8)
+det(bang-12, the-10)
+amod(bang-12, big-11)
+prep_of(time-8, bang-12)
+nsubj(FACT-17, it-14)
+cop(FACT-17, is-15)
+det(FACT-17, all-16)
+root(ROOT-0, FACT-17)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Gravity))
+      (VP (VBZ is)
+        (NP (NN fact))))
+    (, ,)
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ is)
+        (NP (NN fact))))
+    (, ,)
+    (S
+      (NP (NNP Creationism))
+      (VP (VBZ is)
+        (ADJP (RB so) (JJ ludicrous)
+          (CC and)
+          (JJ moronic)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBZ is) (RB not)
+                (ADJP (JJ worth))
+                (ADVP (RB even))
+                (VP (VBG discussing))))))))
+    (. .)))
+
+nsubj(fact-3, Gravity-1)
+cop(fact-3, is-2)
+root(ROOT-0, fact-3)
+nsubj(fact-7, Evolution-5)
+cop(fact-7, is-6)
+ccomp(fact-3, fact-7)
+nsubj(ludicrous-12, Creationism-9)
+nsubj(moronic-14, Creationism-9)
+cop(ludicrous-12, is-10)
+advmod(ludicrous-12, so-11)
+ccomp(fact-3, ludicrous-12)
+ccomp(fact-3, moronic-14)
+conj_and(ludicrous-12, moronic-14)
+complm(discussing-21, that-15)
+nsubj(discussing-21, it-16)
+cop(discussing-21, is-17)
+neg(discussing-21, not-18)
+acomp(discussing-21, worth-19)
+advmod(discussing-21, even-20)
+ccomp(ludicrous-12, discussing-21)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Providing)
+        (NP (DT a) (NN debate))))
+    (VP (VBZ makes)
+      (SBAR
+        (S
+          (NP (DT these) (NNS people))
+          (VP (VBP think)
+            (SBAR (IN that)
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP (DT a) (NN debate)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN had)))))))))))))
+    (. .)))
+
+csubj(makes-4, Providing-1)
+det(debate-3, a-2)
+dobj(Providing-1, debate-3)
+root(ROOT-0, makes-4)
+det(people-6, these-5)
+nsubj(think-7, people-6)
+ccomp(makes-4, think-7)
+complm(is-10, that-8)
+expl(is-10, there-9)
+ccomp(think-7, is-10)
+det(debate-12, a-11)
+nsubj(is-10, debate-12)
+aux(had-15, to-13)
+auxpass(had-15, be-14)
+infmod(debate-12, had-15)
+
+(ROOT
+  (S
+    (NP (PRP YOU))
+    (VP (VBP CAN)
+      (NP (NNP NOT) (NNP DEBATE) (NNP A) (NNP FACT)))
+    (. .)))
+
+nsubj(CAN-2, YOU-1)
+root(ROOT-0, CAN-2)
+nn(FACT-6, NOT-3)
+nn(FACT-6, DEBATE-4)
+nn(FACT-6, A-5)
+dobj(CAN-2, FACT-6)
+

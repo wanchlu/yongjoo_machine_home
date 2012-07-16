@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN statement))
+      (PP (IN by)
+        (NP
+          (NP (NNP Dr.) (NNP James) (NNP Conant))
+          (PP (IN in)
+            (NP (CD 1960) (POS 's))))))
+    (, ,)
+    (NP
+      (NP (DT a) (NN quote))
+      (PP (IN in)
+        (NP
+          (NP (NN reference))
+          (PP (TO to)
+            (NP (DT the) (NNP Education) (NN establishment))))))
+    (PRN (-LRB- -LRB-)
+      (NP (JJ public) (NN school))
+      (-RRB- -RRB-))
+    (NP (PRP he))
+    (VP (VBD called)
+      (SBAR
+        (S
+          (NP (PRP it) (DT a))
+          ('' '')
+          (VP (VBD CLOSED)
+            (SBAR
+              (S
+                (NP
+                  (NP (NNP ALLIANCE))
+                  ('' '')
+                  (CC and)
+                  (NP (RB little)))
+                (VP (VBD did)
+                  (SBAR
+                    (S
+                      (NP (PRP he))
+                      (VP (VBP know)
+                        (SBAR
+                          (WHNP
+                            (WHNP (RB just) (WRB how) (RB much))
+                            (PP (IN of)
+                              (NP (DT a) (JJ corrupt) (NN alliance))))
+                          (S
+                            (NP (PRP it))
+                            (VP (MD would)
+                              (VP (VB become)
+                                (PP (IN in)
+                                  (NP (DT the) (NNS years)))
+                                (ADVP (RB ahead)
+                                  (NP (CD .2)))))))))))))))))
+    (. .)))
+
+det(statement-2, A-1)
+nsubj(called-24, statement-2)
+nn(Conant-6, Dr.-4)
+nn(Conant-6, James-5)
+prep_by(statement-2, Conant-6)
+prep_in(Conant-6, 1960-8)
+possessive(1960-8, 's-9)
+det(quote-12, a-11)
+nsubj(called-24, quote-12)
+prep_in(quote-12, reference-14)
+det(establishment-18, the-16)
+nn(establishment-18, Education-17)
+prep_to(reference-14, establishment-18)
+amod(school-21, public-20)
+dep(called-24, school-21)
+nsubj(called-24, he-23)
+root(ROOT-0, called-24)
+nsubj(CLOSED-28, it-25)
+dep(it-25, a-26)
+ccomp(called-24, CLOSED-28)
+nsubj(did-33, ALLIANCE-29)
+conj_and(ALLIANCE-29, little-32)
+nsubj(did-33, little-32)
+ccomp(CLOSED-28, did-33)
+nsubj(know-35, he-34)
+ccomp(did-33, know-35)
+advmod(much-38, just-36)
+advmod(much-38, how-37)
+dobj(become-45, much-38)
+det(alliance-42, a-40)
+amod(alliance-42, corrupt-41)
+prep_of(much-38, alliance-42)
+nsubj(become-45, it-43)
+aux(become-45, would-44)
+ccomp(know-35, become-45)
+det(years-48, the-47)
+prep_in(become-45, years-48)
+advmod(become-45, ahead-49)
+pobj(ahead-49, .2-50)
+

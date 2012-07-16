@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ current) (JJ scientific) (NN consensus))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (S
+            (NP
+              (NP (DT the) (JJ complex) (NN biochemistry))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ makes)
+                    (PRT (RP up))
+                    (NP (NN life))))))
+            (VP (VBD came)
+              (PP (IN from)
+                (NP (JJR simpler) (NN chemical) (NNS reactions)))))
+          (, ,)
+          (CC but)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ unclear))
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (DT this))
+                  (VP (VBD occurred)))))))))
+    (: ...)))
+
+det(consensus-4, The-1)
+amod(consensus-4, current-2)
+amod(consensus-4, scientific-3)
+nsubj(is-5, consensus-4)
+root(ROOT-0, is-5)
+complm(came-14, that-6)
+det(biochemistry-9, the-7)
+amod(biochemistry-9, complex-8)
+nsubj(makes-11, biochemistry-9)
+nsubj(came-14, biochemistry-9)
+rcmod(biochemistry-9, makes-11)
+prt(makes-11, up-12)
+dobj(makes-11, life-13)
+ccomp(is-5, came-14)
+amod(reactions-18, simpler-16)
+nn(reactions-18, chemical-17)
+prep_from(came-14, reactions-18)
+nsubj(unclear-23, it-21)
+cop(unclear-23, is-22)
+ccomp(is-5, unclear-23)
+conj_but(came-14, unclear-23)
+advmod(occurred-26, how-24)
+nsubj(occurred-26, this-25)
+ccomp(unclear-23, occurred-26)
+

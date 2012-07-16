@@ -1,0 +1,40 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN although)
+      (S
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN case))
+            (PP (IN of)
+              (NP (NNP Newton)))))
+        (NP (PRP he))
+        (VP (VBD did))))
+    (VP (VBP show)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP
+            (NP (DT a) (NN design) (NN inference))
+            (PP (VBN based)
+              (PP (IN on)
+                (NP (NN ignorance)))))
+          (VP (VBZ is)
+            (ADJP (JJ unreliable))))))
+    (. .)))
+
+mark(did-9, although-2)
+det(case-5, the-4)
+prep_in(did-9, case-5)
+prep_of(case-5, Newton-7)
+nsubj(did-9, he-8)
+csubj(show-10, did-9)
+root(ROOT-0, show-10)
+advmod(unreliable-19, why-11)
+det(inference-14, a-12)
+nn(inference-14, design-13)
+nsubj(unreliable-19, inference-14)
+prepc_based_on(inference-14, on-16)
+pobj(inference-14, ignorance-17)
+cop(unreliable-19, is-18)
+advcl(show-10, unreliable-19)
+

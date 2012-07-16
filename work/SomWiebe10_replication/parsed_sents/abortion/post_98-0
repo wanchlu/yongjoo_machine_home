@@ -1,0 +1,49 @@
+(ROOT
+  (SBARQ
+    (WHNP (WDT What)
+      (NP (JJ right)))
+    (SQ (VBZ does)
+      (NP (NN anyone))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB deprive)
+              (NP
+                (NP (DT another))
+                (PP (IN of)
+                  (NP (NN life))))
+              (PP (IN on)
+                (NP (DT the) (NNS grounds))))))
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP deem)
+              (NP
+                (NP (DT that) (NN life))
+                (PP (IN as)
+                  (NP
+                    (ADJP (RB not) (JJ worth))
+                    (NN living)))))))))
+    (. ?)))
+
+det(right-2, What-1)
+dep(have-5, right-2)
+aux(have-5, does-3)
+nsubj(have-5, anyone-4)
+xsubj(deprive-7, anyone-4)
+root(ROOT-0, have-5)
+aux(deprive-7, to-6)
+xcomp(have-5, deprive-7)
+dobj(deprive-7, another-8)
+prep_of(another-8, life-10)
+det(grounds-13, the-12)
+prep_on(deprive-7, grounds-13)
+complm(deem-16, that-14)
+nsubj(deem-16, they-15)
+ccomp(have-5, deem-16)
+det(life-18, that-17)
+dobj(deem-16, life-18)
+neg(worth-21, not-20)
+amod(living-22, worth-21)
+prep_as(life-18, living-22)
+

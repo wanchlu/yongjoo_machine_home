@@ -1,0 +1,45 @@
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ wants)
+          (S
+            (VP (TO to)
+              (VP (VB play)
+                (PRT (RP in))
+                (NP (DT the) (`` ``) (NNS sciences) ('' ''))
+                (ADVP (RB then))
+                (SBAR (MD should)
+                  (S
+                    (NP (PRP it))
+                    (RB not)
+                    (VP (VB be)
+                      (VP (VBN held)
+                        (PP (TO to)
+                          (NP
+                            (NP (DT a) (NN standard))
+                            (PP (IN of)
+                              (NP (JJ scientific) (NN relevance)))))))))))))))
+    (. ?)))
+
+mark(wants-3, If-1)
+nsubj(wants-3, ID-2)
+xsubj(play-5, ID-2)
+root(ROOT-0, wants-3)
+aux(play-5, to-4)
+xcomp(wants-3, play-5)
+prt(play-5, in-6)
+det(sciences-9, the-7)
+dobj(play-5, sciences-9)
+advmod(play-5, then-11)
+dep(held-16, should-12)
+nsubjpass(held-16, it-13)
+neg(held-16, not-14)
+auxpass(held-16, be-15)
+dep(play-5, held-16)
+det(standard-19, a-18)
+prep_to(held-16, standard-19)
+amod(relevance-22, scientific-21)
+prep_of(standard-19, relevance-22)
+

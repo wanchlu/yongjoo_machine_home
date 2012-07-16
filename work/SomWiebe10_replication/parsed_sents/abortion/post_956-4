@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is) (RB not)
+      (NP (NN murder))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP admit)
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (ADVP (RB ever))
+                  (VP (VBN done)
+                    (PP
+                      (PP (IN by)
+                        (NP (JJ medical) (NN necessity)))
+                      (CC and)
+                      (PP (IN without)
+                        (NP (JJ malicious) (NN intent))))))))))))
+    (. .)))
+
+nsubj(murder-4, Abortion-1)
+cop(murder-4, is-2)
+neg(murder-4, not-3)
+root(ROOT-0, murder-4)
+mark(admit-7, if-5)
+nsubj(admit-7, you-6)
+advcl(murder-4, admit-7)
+complm(done-12, that-8)
+nsubjpass(done-12, it-9)
+nsubjpass(done-12', it-9)
+auxpass(done-12, is-10)
+advmod(done-12, ever-11)
+ccomp(admit-7, done-12)
+ccomp(admit-7, done-12')
+conj_and(done-12, done-12')
+amod(necessity-15, medical-14)
+agent(done-12, necessity-15)
+amod(intent-19, malicious-18)
+prep_without(done-12', intent-19)
+
+(ROOT
+  (S
+    (SBAR (IN since)
+      (S
+        (NP (DT this) (NN argument))
+        (VP (VBZ is)
+          (ADJP (JJ flawless)))))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP disagree)))))
+    (VP (VBP are)
+      (ADJP (RB just) (RB plain) (JJ old)
+        (SBAR
+          (S
+            (NP (JJ sloppy) (NNS thinkers))
+            (VP (VBZ ~)
+              (NP (JJ sarcastic) (NN snicker)))))))))
+
+mark(flawless-5, since-1)
+det(argument-3, this-2)
+nsubj(flawless-5, argument-3)
+cop(flawless-5, is-4)
+advcl(old-13, flawless-5)
+nsubj(disagree-9, all-7)
+nsubj(old-13, all-7)
+rcmod(all-7, disagree-9)
+cop(old-13, are-10)
+advmod(old-13, just-11)
+advmod(old-13, plain-12)
+root(ROOT-0, old-13)
+amod(thinkers-15, sloppy-14)
+nsubj(~-16, thinkers-15)
+dep(old-13, ~-16)
+amod(snicker-18, sarcastic-17)
+dobj(~-16, snicker-18)
+

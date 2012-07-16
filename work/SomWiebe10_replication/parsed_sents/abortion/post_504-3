@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Parents))
+      (VP (VBD went)
+        (PP (IN around)
+          (S
+            (VP (VBG saying)
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (MD would)
+                    (ADVP (RB never))
+                    (VP (VB own)
+                      (NP (DT a) (NN slave)))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP (PRP they))
+        (VP (MD can)
+          (VP (VB own)
+            (NP
+              (NP (DT all))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP want))))))))
+      (, ,)
+      (CC or)
+      (S
+        (NP (PRP I))
+        (VP (MD would)
+          (ADVP (RB never))
+          (VP (VB kill)
+            (NP
+              (NP (DT those) (NNS people))
+              (PP (CC but)
+                (NP (PRP they)))
+              (SBAR
+                (S
+                  (NP (NN country))
+                  (VP (MD can)
+                    (VP (VB kill)
+                      (NP
+                        (NP (DT all))
+                        (SBAR
+                          (S
+                            (NP (PRP they))
+                            (VP (VBP want))))))))))))))
+    (. .)))
+
+nsubj(went-2, Parents-1)
+root(ROOT-0, went-2)
+prepc_around(went-2, saying-4)
+nsubj(own-8, I-5)
+aux(own-8, would-6)
+neg(own-8, never-7)
+ccomp(saying-4, own-8)
+det(slave-10, a-9)
+dobj(own-8, slave-10)
+nsubj(own-15, they-13)
+aux(own-15, can-14)
+conj_but(went-2, own-15)
+dobj(own-15, all-16)
+dobj(want-18, all-16)
+nsubj(want-18, they-17)
+rcmod(all-16, want-18)
+nsubj(kill-24, I-21)
+aux(kill-24, would-22)
+neg(kill-24, never-23)
+conj_but(went-2, kill-24)
+conj_or(own-15, kill-24)
+det(people-26, those-25)
+dobj(kill-24, people-26)
+prep(people-26, but-27)
+dep(but-27, they-28)
+nsubj(kill-31, country-29)
+aux(kill-31, can-30)
+rcmod(people-26, kill-31)
+dobj(kill-31, all-32)
+dobj(want-34, all-32)
+nsubj(want-34, they-33)
+rcmod(all-32, want-34)
+

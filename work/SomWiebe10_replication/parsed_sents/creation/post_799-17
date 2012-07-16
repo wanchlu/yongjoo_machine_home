@@ -1,0 +1,54 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (NN time))
+          (VP (VBZ means)
+            (NP (NN nothing))
+            (PP (TO to)
+              (NP (NNP God)))
+            (ADVP (RB then))
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (VP (MD would)))))))
+      (NP (PRP it))
+      (VP (VBP matter)
+        (PP (TO to)
+          (NP (NNP God)))))
+    (IN if)
+    (S
+      (NP (PRP it))
+      (VP (VBD took)
+        (NP
+          (QP (CD 4.5) (CD billion))
+          (NNS years))
+        (S
+          (VP (TO to)
+            (VP (VB create)
+              (NP (DT the) (NN earth)))))))
+    (. ?)))
+
+mark(means-4, If-2)
+nsubj(means-4, time-3)
+advcl(matter-12, means-4)
+dobj(means-4, nothing-5)
+prep_to(means-4, God-7)
+advmod(means-4, then-8)
+advmod(would-10, why-9)
+advcl(means-4, would-10)
+nsubj(matter-12, it-11)
+root(ROOT-0, matter-12)
+prep_to(matter-12, God-14)
+dep(matter-12, if-15)
+nsubj(took-17, it-16)
+ccomp(matter-12, took-17)
+number(billion-19, 4.5-18)
+num(years-20, billion-19)
+tmod(took-17, years-20)
+aux(create-22, to-21)
+xcomp(took-17, create-22)
+det(earth-24, the-23)
+dobj(create-22, earth-24)
+

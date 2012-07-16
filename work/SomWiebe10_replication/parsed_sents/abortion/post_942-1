@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (DT The) (NN left))
+    (VP (VBZ is)
+      (ADVP (RB generally))
+      (NP
+        (NP
+          (NP (NN anti) (NN war))
+          (, ,)
+          (NP (JJ pro) (NN healthcare))
+          (, ,) (FW pro))
+        (VP (VBG helping)
+          (NP
+            (NP (VBG starving) (NNS people))
+            (PP (IN in)
+              (NP (NNP Africa)))
+            (, ,)
+            (NP (FW etc))
+            (, ,)
+            (SBAR
+              (WHNP (DT all)
+                (WHPP (IN of)
+                  (WHNP (WDT which))))
+              (S
+                (VP (VBZ saves)
+                  (NP (NNS lives)))))))))
+    (. .)))
+
+det(left-2, The-1)
+nsubj(war-6, left-2)
+cop(war-6, is-3)
+advmod(war-6, generally-4)
+nn(war-6, anti-5)
+root(ROOT-0, war-6)
+amod(healthcare-9, pro-8)
+appos(war-6, healthcare-9)
+dep(war-6, pro-11)
+partmod(war-6, helping-12)
+amod(people-14, starving-13)
+dobj(helping-12, people-14)
+prep_in(people-14, Africa-16)
+appos(people-14, etc-18)
+pobj(of-21, etc-18)
+dep(of-21, all-20)
+nsubj(saves-23, of-21)
+rcmod(people-14, saves-23)
+rcmod(etc-18, saves-23)
+dobj(saves-23, lives-24)
+

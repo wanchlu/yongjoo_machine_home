@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (DT The) (NN point))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NN moon))
+            (PP (TO to)
+              (NP (NN sun) (NN ratio))))
+          (VP (VBZ causes)
+            (S
+              (NP (PRP them))
+              (VP (TO to)
+                (VP (VB appear)
+                  (NP
+                    (NP (DT the) (JJ exact) (NN size))
+                    (FRAG (: ...)
+                      (VP (VBD got)
+                        (NP (PRP it)))
+                      (. ?)))))))
+          (. .))))
+    (. .)))
+
+det(point-2, The-1)
+nsubj(is-3, point-2)
+root(ROOT-0, is-3)
+complm(causes-10, that-4)
+det(moon-6, the-5)
+nsubj(causes-10, moon-6)
+nn(ratio-9, sun-8)
+prep_to(moon-6, ratio-9)
+ccomp(is-3, causes-10)
+nsubj(size-16, them-11)
+aux(size-16, to-12)
+cop(size-16, appear-13)
+det(size-16, the-14)
+amod(size-16, exact-15)
+xcomp(causes-10, size-16)
+dep(size-16, got-18)
+dobj(got-18, it-19)
+

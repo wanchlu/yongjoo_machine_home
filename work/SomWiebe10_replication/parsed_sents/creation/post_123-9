@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP need)
+      (NP
+        (NP (DT every) (JJ single) (NN mutation))
+        (CC &)
+        (NP (NN selection) (NN pressure)))
+      (SBAR (IN before)
+        (S
+          (NP (PRP I))
+          (VP (VBP admit)
+            (SBAR (IN that)
+              (S
+                (NP (NN evolution))
+                (VP (VBD produced)
+                  (NP
+                    (NP (DT this) (NNP IC) (NN system))
+                    (CONJP (RB rather) (IN than))
+                    (NP (NNP ID))))))))))
+    (. .)))
+
+nsubj(need-2, I-1)
+root(ROOT-0, need-2)
+det(mutation-5, every-3)
+amod(mutation-5, single-4)
+dobj(need-2, mutation-5)
+nn(pressure-8, selection-7)
+dobj(need-2, pressure-8)
+conj_and(mutation-5, pressure-8)
+mark(admit-11, before-9)
+nsubj(admit-11, I-10)
+advcl(need-2, admit-11)
+complm(produced-14, that-12)
+nsubj(produced-14, evolution-13)
+ccomp(admit-11, produced-14)
+det(system-17, this-15)
+nn(system-17, IC-16)
+dobj(produced-14, system-17)
+dobj(produced-14, ID-20)
+conj_negcc(system-17, ID-20)
+
+(ROOT
+  (S
+    (PP (IN At)
+      (NP (DT this) (NN point)))
+    (NP (DT the) (NNP ID) (NN proponent))
+    (VP (VBZ has)
+      (VP
+        (VP (VBN abandoned)
+          (NP (DT the) (JJ original) (NN argument)))
+        (CC and)
+        (VP
+          (ADVP (RB therefore))
+          (VBN lost) (, ,)
+          (SBAR (RB even) (IN though)
+            (S
+              (NP (PRP he))
+              (VP (VBD won)
+                (SBAR
+                  (S
+                    (NP (NN t))
+                    (VP (VBP admit)
+                      (NP (PRP it)))))))))))
+    (. .)))
+
+det(point-3, this-2)
+prep_at(abandoned-8, point-3)
+det(proponent-6, the-4)
+nn(proponent-6, ID-5)
+nsubj(abandoned-8, proponent-6)
+nsubj(lost-14, proponent-6)
+aux(abandoned-8, has-7)
+root(ROOT-0, abandoned-8)
+det(argument-11, the-9)
+amod(argument-11, original-10)
+dobj(abandoned-8, argument-11)
+advmod(lost-14, therefore-13)
+conj_and(abandoned-8, lost-14)
+advmod(won-19, even-16)
+dep(won-19, though-17)
+nsubj(won-19, he-18)
+ccomp(lost-14, won-19)
+nsubj(admit-21, t-20)
+ccomp(won-19, admit-21)
+dobj(admit-21, it-22)
+

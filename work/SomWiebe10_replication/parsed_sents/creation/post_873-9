@@ -1,0 +1,89 @@
+(ROOT
+  (FRAG
+    (NP
+      (NP (CD Six) (NNS days))
+      (SBAR
+        (S
+          (VP (TO to)
+            (VP (VB create)
+              (NP (DT a) (NN universe))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP one))
+                      (VP (VBD were)
+                        (VP (VBG studying)
+                          (NP
+                            (NP (DT the) (NN redshift))
+                            (PP (IN of)
+                              (NP
+                                (NP (DT the) (NN light))
+                                (PP (IN from)
+                                  (NP (JJ distant) (NNS stars))))))))))
+                  (VP (VBZ shows)
+                    (NP
+                      (NP (DT a) (NN sea))
+                      (PP (IN of)
+                        (NP (NN space)))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ is)
+                            (VP (VBG expanding)
+                              (PP (IN at)
+                                (NP
+                                  (NP (DT a) (NN rate))
+                                  (SBAR
+                                    (WHNP (WDT that))
+                                    (S
+                                      (VP (MD could)
+                                        (ADVP (RB only))
+                                        (VP (VB be)
+                                          (VP (VBN proven)
+                                            (PP (IN by)
+                                              (NP
+                                                (NP (NNS billions))
+                                                (PP (IN of)
+                                                  (NP
+                                                    (NP (NNS years))
+                                                    (PP (IN of)
+                                                      (NP (NN expansion)))))))))))))))))))))))))))
+    (. ?)))
+
+num(days-2, Six-1)
+root(ROOT-0, days-2)
+aux(create-4, to-3)
+infmod(days-2, create-4)
+det(universe-6, a-5)
+dobj(create-4, universe-6)
+advmod(shows-20, where-7)
+mark(studying-11, if-8)
+nsubj(studying-11, one-9)
+aux(studying-11, were-10)
+csubj(shows-20, studying-11)
+det(redshift-13, the-12)
+dobj(studying-11, redshift-13)
+det(light-16, the-15)
+prep_of(redshift-13, light-16)
+amod(stars-19, distant-18)
+prep_from(light-16, stars-19)
+advcl(create-4, shows-20)
+det(sea-22, a-21)
+dobj(shows-20, sea-22)
+nsubj(expanding-27, sea-22)
+prep_of(sea-22, space-24)
+aux(expanding-27, is-26)
+rcmod(sea-22, expanding-27)
+det(rate-30, a-29)
+prep_at(expanding-27, rate-30)
+nsubjpass(proven-35, rate-30)
+aux(proven-35, could-32)
+advmod(proven-35, only-33)
+auxpass(proven-35, be-34)
+rcmod(rate-30, proven-35)
+agent(proven-35, billions-37)
+prep_of(billions-37, years-39)
+prep_of(years-39, expansion-41)
+

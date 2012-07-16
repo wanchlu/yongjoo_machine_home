@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (NNS Defendants))
+    (ADVP (RB previously))
+    (VP (VBD referenced)
+      (SBAR
+        (S
+          (NP
+            (NP
+              (ADJP (JJ flagrant)
+                (CC and)
+                (JJ insulting))
+              (NNS falsehoods))
+            (PP (TO to)
+              (NP (DT the) (NNP Court))))
+          (VP (VBP provide)
+            (S
+              (NP
+                (NP
+                  (ADJP (JJ sufficient)
+                    (CC and)
+                    (JJ compelling))
+                  (NN evidence))
+                (PP (IN for)
+                  (NP (PRP us))))
+              (VP (TO to)
+                (VP (VB deduce)
+                  (SBAR (IN that)
+                    (S
+                      (NP
+                        (NP (DT any)
+                          (ADJP (RB allegedly) (JJ secular))
+                          (NNS purposes))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP have)
+                              (VP (VBN been)
+                                (VP (VBN offered)
+                                  (PP (IN in)
+                                    (NP
+                                      (NP (NN support))
+                                      (PP (IN of)
+                                        (NP (DT the) (NNP ID) (NNP Policy)))))))))))
+                      (VP (VBP are)
+                        (ADJP (RB equally) (JJ insincere))))))))))))
+    (. .)))
+
+nsubj(referenced-3, Defendants-1)
+advmod(referenced-3, previously-2)
+root(ROOT-0, referenced-3)
+amod(falsehoods-7, flagrant-4)
+conj_and(flagrant-4, insulting-6)
+amod(falsehoods-7, insulting-6)
+nsubj(provide-11, falsehoods-7)
+det(Court-10, the-9)
+prep_to(falsehoods-7, Court-10)
+ccomp(referenced-3, provide-11)
+amod(evidence-15, sufficient-12)
+conj_and(sufficient-12, compelling-14)
+amod(evidence-15, compelling-14)
+nsubj(deduce-19, evidence-15)
+prep_for(evidence-15, us-17)
+aux(deduce-19, to-18)
+xcomp(provide-11, deduce-19)
+complm(insincere-37, that-20)
+det(purposes-24, any-21)
+advmod(secular-23, allegedly-22)
+amod(purposes-24, secular-23)
+nsubjpass(offered-28, purposes-24)
+nsubj(insincere-37, purposes-24)
+aux(offered-28, have-26)
+auxpass(offered-28, been-27)
+rcmod(purposes-24, offered-28)
+prep_in(offered-28, support-30)
+det(Policy-34, the-32)
+nn(Policy-34, ID-33)
+prep_of(support-30, Policy-34)
+cop(insincere-37, are-35)
+advmod(insincere-37, equally-36)
+ccomp(deduce-19, insincere-37)
+

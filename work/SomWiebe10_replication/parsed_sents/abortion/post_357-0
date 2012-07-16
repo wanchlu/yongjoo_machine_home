@@ -1,0 +1,44 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (RB quite) (JJ clear))
+            (SBAR (IN that)
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT a) (NN moment))
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (DT the) (NN woman))
+                        (VP (VBD did)
+                          (VP (VB sign)
+                            (NP (DT a) (NN contract))))))))))))))
+    (. .)))
+
+nsubj(think-3, I-2)
+root(ROOT-0, think-3)
+nsubj(clear-7, it-4)
+cop(clear-7, 's-5)
+advmod(clear-7, quite-6)
+ccomp(think-3, clear-7)
+complm(is-10, that-8)
+expl(is-10, there-9)
+ccomp(clear-7, is-10)
+det(moment-12, a-11)
+nsubj(is-10, moment-12)
+tmod(sign-17, moment-12)
+advmod(sign-17, when-13)
+det(woman-15, the-14)
+nsubj(sign-17, woman-15)
+aux(sign-17, did-16)
+dep(moment-12, sign-17)
+det(contract-19, a-18)
+dobj(sign-17, contract-19)
+

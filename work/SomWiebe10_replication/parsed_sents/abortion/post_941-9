@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP understand)
+        (ADVP (DT that)
+          (CC but))
+        (VP (VB remember) (`` ``)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP$ your) (NN enemy))
+              (VP (VBZ makes)
+                (S
+                  (NP (PRP you))
+                  (ADJP (JJ angry)))))))))
+    (: ...)
+    (S
+      (NP (PRP they))
+      (VP (VBP win) ('' '')
+        (NP (NN Someone))
+        (ADVP (RB really))
+        (S
+          (ADJP
+            (ADJP (JJ smart))
+            (CC and)
+            (ADJP (JJ famous)
+              (SBAR
+                (S
+                  (VP (VBD said)
+                    (ADVP (DT that)
+                      (CC but))
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NN life))
+                        (PP (IN of)
+                          (NP (PRP me)))
+                        (SBAR
+                          (S
+                            (NP (PRP I))
+                            (ADVP (RB cant))
+                            (VP (VBP recall)
+                              (WHNP (WP who)))))))))))))))
+    (. .)))
+
+nsubj(understand-2, I-1)
+root(ROOT-0, understand-2)
+dep(but-4, that-3)
+advmod(understand-2, but-4)
+dep(understand-2, remember-5)
+advmod(makes-10, when-7)
+poss(enemy-9, your-8)
+nsubj(makes-10, enemy-9)
+advcl(remember-5, makes-10)
+nsubj(angry-12, you-11)
+xcomp(makes-10, angry-12)
+nsubj(win-15, they-14)
+parataxis(understand-2, win-15)
+dobj(win-15, Someone-17)
+advmod(win-15, really-18)
+dep(win-15, smart-19)
+dep(win-15, famous-21)
+conj_and(smart-19, famous-21)
+dep(famous-21, said-22)
+dep(but-24, that-23)
+advmod(said-22, but-24)
+det(life-27, the-26)
+prep_for(said-22, life-27)
+dobj(recall-32, life-27)
+prep_of(life-27, me-29)
+nsubj(recall-32, I-30)
+advmod(recall-32, cant-31)
+rcmod(life-27, recall-32)
+dobj(recall-32, who-33)
+

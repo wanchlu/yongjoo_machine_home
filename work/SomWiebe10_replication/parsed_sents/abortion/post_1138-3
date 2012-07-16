@@ -1,0 +1,46 @@
+(ROOT
+  (SQ
+    (S
+      (VP (VB Let)
+        (S
+          (NP (PRP me))
+          (ADJP (JJ rephrase)))))
+    (, ,) (MD would)
+    (NP (PRP you))
+    (VP (VB justify)
+      (NP
+        (NP (DT a) (NN child))
+        (VP (VBG being)
+          (VP
+            (VP (VBN treated)
+              (ADVP (RB poorly)))
+            (CC and)
+            (VP (VBN judged)
+              (ADVP (RB differently))
+              (SBAR (IN because)
+                (S
+                  (NP (PRP$ their) (NN mother))
+                  (VP (VBD was)
+                    (VP (VBN raped))))))))))
+    (. ?)))
+
+dep(justify-7, Let-1)
+nsubj(rephrase-3, me-2)
+xcomp(Let-1, rephrase-3)
+aux(justify-7, would-5)
+nsubj(justify-7, you-6)
+root(ROOT-0, justify-7)
+det(child-9, a-8)
+dobj(justify-7, child-9)
+auxpass(treated-11, being-10)
+partmod(child-9, treated-11)
+advmod(treated-11, poorly-12)
+partmod(child-9, judged-14)
+conj_and(treated-11, judged-14)
+advmod(judged-14, differently-15)
+mark(raped-20, because-16)
+poss(mother-18, their-17)
+nsubjpass(raped-20, mother-18)
+auxpass(raped-20, was-19)
+advcl(judged-14, raped-20)
+

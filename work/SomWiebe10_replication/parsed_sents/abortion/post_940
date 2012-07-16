@@ -1,0 +1,663 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ great))
+    (. .)))
+
+root(ROOT-0, great-1)
+
+(ROOT
+  (NP (NNS _) (CD .1) (. .)))
+
+root(ROOT-0, _-1)
+num(_-1, .1-2)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ 's)
+      (VP (VBN worried)
+        (PP (IN about)
+          (NP (NNS trees)))))
+    (. ?)))
+
+nsubjpass(worried-3, Who-1)
+auxpass(worried-3, 's-2)
+root(ROOT-0, worried-3)
+prep_about(worried-3, trees-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP I))
+          (VP (VBP do) (RB n't)
+            (VP (VB show)
+              (PRT (RP up))
+              (ADVP (RB as) (RB often)))))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+advmod(show-7, why-3)
+nsubj(show-7, I-4)
+aux(show-7, do-5)
+neg(show-7, n't-6)
+advcl('s-2, show-7)
+prt(show-7, up-8)
+advmod(often-10, as-9)
+advmod(show-7, often-10)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN someone))
+        (VP (VBZ wants)
+          (S
+            (VP (TO to)
+              (VP (VB disagree)
+                (ADJP (JJ fine))))))))
+    (, ,)
+    (ADVP (CC but))
+    (VP (VB use)
+      (NP (NNS facts)
+        (CC and)
+        (NN logic)))
+    (. .)))
+
+mark(wants-3, If-1)
+nsubj(wants-3, someone-2)
+xsubj(disagree-5, someone-2)
+advcl(use-9, wants-3)
+aux(disagree-5, to-4)
+xcomp(wants-3, disagree-5)
+acomp(disagree-5, fine-6)
+advmod(use-9, but-8)
+root(ROOT-0, use-9)
+dobj(use-9, facts-10)
+dobj(use-9, logic-12)
+conj_and(facts-10, logic-12)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ tired)
+        (PP (IN of)
+          (S
+            (VP (VBG having)
+              (S
+                (NP (DT the) (NNP Bible))
+                (VP (VBN quoted)
+                  (PP (IN at)
+                    (NP (PRP me)))
+                  (, ,)
+                  (S
+                    (ADJP (RB responses) (JJ rife)
+                      (PP (IN with)
+                        (NP
+                          (NP (JJ logical) (NNS fallacies))
+                          (, ,)
+                          (NP
+                            (NP
+                              (NP (NNS responses))
+                              (SBAR
+                                (WHNP (WDT that))
+                                (S
+                                  (VP (VBD did) (RB n't)
+                                    (VP (VB bother)
+                                      (S
+                                        (VP (TO to)
+                                          (VP (VB read)
+                                            (SBAR
+                                              (WHNP (WP what))
+                                              (S
+                                                (NP (PRP I))
+                                                (VP (VBD wrote))))))))))))
+                            (, ,)
+                            (CC and)
+                            (NP
+                              (NP (DT those))
+                              (SBAR
+                                (WHNP (WP who))
+                                (S
+                                  (VP (VBP need)
+                                    (S
+                                      (VP (TO to)
+                                        (VP (VB announce)
+                                          (NP (PRP$ their) (NN faith))
+                                          (PP (IN before)
+                                            (S
+                                              (VP (VBG making)
+                                                (NP (DT an) (NN argument))))))))))))))))
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (PRP$ their) (NN faith))
+                        (VP (VBZ has)
+                          (VP (VBN 0)
+                            (S
+                              (VP (TO to)
+                                (VP (VB do)
+                                  (PP (IN with)
+                                    (NP (DT the) (NN argument))))))))))))))))))
+    (. .)))
+
+nsubj(tired-3, I-1)
+cop(tired-3, 'm-2)
+root(ROOT-0, tired-3)
+prepc_of(tired-3, having-5)
+det(Bible-7, the-6)
+nsubj(quoted-8, Bible-7)
+ccomp(having-5, quoted-8)
+prep_at(quoted-8, me-10)
+advmod(rife-13, responses-12)
+dep(0-45, rife-13)
+amod(fallacies-16, logical-15)
+prep_with(rife-13, fallacies-16)
+appos(fallacies-16, responses-18)
+nsubj(bother-22, responses-18)
+aux(bother-22, did-20)
+neg(bother-22, n't-21)
+rcmod(responses-18, bother-22)
+aux(read-24, to-23)
+xcomp(bother-22, read-24)
+dobj(wrote-27, what-25)
+nsubj(wrote-27, I-26)
+ccomp(read-24, wrote-27)
+appos(fallacies-16, those-30)
+conj_and(responses-18, those-30)
+nsubj(need-32, those-30)
+rcmod(those-30, need-32)
+aux(announce-34, to-33)
+xcomp(need-32, announce-34)
+poss(faith-36, their-35)
+dobj(announce-34, faith-36)
+prepc_before(announce-34, making-38)
+det(argument-40, an-39)
+dobj(making-38, argument-40)
+advmod(0-45, when-41)
+poss(faith-43, their-42)
+nsubj(0-45, faith-43)
+xsubj(do-47, faith-43)
+aux(0-45, has-44)
+dep(quoted-8, 0-45)
+aux(do-47, to-46)
+xcomp(0-45, do-47)
+det(argument-50, the-49)
+prep_with(do-47, argument-50)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB never))
+      (VP
+        (VP (VB downvote))
+        (CC or)
+        (VP (VB insult)
+          (NP (NN anyone))
+          (SBAR (RB just) (IN because)
+            (S
+              (NP (PRP I))
+              (VP (VBP disagree)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do)
+      (SBAR (RB so)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP they))
+            (VP (VBP act)
+              (PP (IN like)
+                (NP (DT a) (NN moron))))))
+        (, ,)
+        (SBAR (IN whether)
+          (S
+            (NP (PRP I))
+            (VP (VBP agree)
+              (PP (IN with)
+                (NP (PRP them)))))
+          (CC or)
+          (RB not))))
+    (. .)))
+
+nsubj(downvote-3, I-1)
+nsubj(insult-5, I-1)
+neg(downvote-3, never-2)
+ccomp(do-13, downvote-3)
+conj_or(downvote-3, insult-5)
+ccomp(do-13, insult-5)
+dobj(insult-5, anyone-6)
+advmod(disagree-10, just-7)
+dep(disagree-10, because-8)
+nsubj(disagree-10, I-9)
+dep(insult-5, disagree-10)
+nsubj(do-13, I-12)
+root(ROOT-0, do-13)
+advmod(act-17, so-14)
+advmod(act-17, when-15)
+nsubj(act-17, they-16)
+dep(do-13, act-17)
+det(moron-20, a-19)
+prep_like(act-17, moron-20)
+dep(agree-24, whether-22)
+nsubj(agree-24, I-23)
+dep(act-17, agree-24)
+prep_with(agree-24, them-26)
+dep(act-17, not-28)
+conj_or(agree-24, not-28)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (VBZ does) (RB n't)
+      (VP (VB make)
+        (NP (NN sense))
+        (S
+          (VP (TO to)
+            (VP (VB cut)
+              (NP
+                (NP (DT all))
+                (PP (IN of)
+                  (NP (PRP them))))
+              (ADVP (RB down)
+                (PP (IN without)
+                  (S
+                    (VP (VBG planting)
+                      (SBAR
+                        (S
+                          (NP
+                            (NP (JJ new) (NNS ones))
+                            (, ,)
+                            (SBAR (IN since)
+                              (S
+                                (NP (RB then) (DT all) (NNS humans))
+                                (VP (MD would)
+                                  (VP (VB die)))))
+                            (, ,))
+                          (VP
+                            (VP (VBN born))
+                            (CC or)
+                            (VP (RB not)
+                              (NP (CD .2)))))))))))))))
+    (. .)))
+
+nsubj(make-5, It-1)
+advmod(make-5, just-2)
+aux(make-5, does-3)
+neg(make-5, n't-4)
+root(ROOT-0, make-5)
+dobj(make-5, sense-6)
+aux(cut-8, to-7)
+xcomp(make-5, cut-8)
+dobj(cut-8, all-9)
+prep_of(all-9, them-11)
+advmod(cut-8, down-12)
+prepc_without(down-12, planting-14)
+amod(ones-16, new-15)
+dobj(die-23, ones-16)
+nsubj(born-25, ones-16)
+mark(die-23, since-18)
+advmod(humans-21, then-19)
+det(humans-21, all-20)
+nsubj(die-23, humans-21)
+aux(die-23, would-22)
+dep(ones-16, die-23)
+ccomp(planting-14, born-25)
+neg(.2-28, not-27)
+ccomp(planting-14, .2-28)
+conj_or(born-25, .2-28)
+
+(ROOT
+  (S
+    (ADVP (RB Um))
+    (PRN (, ,)
+      (S
+        (NP (NNS kids))
+        (VP (VBP are)
+          (ADJP (JJ self-aware))))
+      (, ,))
+    (NP (PRP they))
+    (ADVP (RB just))
+    (VP (VBP do) (RB n't)
+      (VP (VB develop)
+        (ADVP (RB empathy))
+        (PP (IN until)
+          (NP (RB sometime)))
+        (PP (IN after)
+          (NP (NN birth)))))
+    (. .)))
+
+advmod(develop-11, Um-1)
+nsubj(self-aware-5, kids-3)
+cop(self-aware-5, are-4)
+parataxis(develop-11, self-aware-5)
+nsubj(develop-11, they-7)
+advmod(develop-11, just-8)
+aux(develop-11, do-9)
+neg(develop-11, n't-10)
+root(ROOT-0, develop-11)
+advmod(develop-11, empathy-12)
+prep(develop-11, until-13)
+pobj(until-13, sometime-14)
+prep_after(develop-11, birth-16)
+
+(ROOT
+  (S (CC But)
+    (NP (DT a) (JJ new) (NN born))
+    (VP (VBZ has)
+      (NP
+        (NP (NNS feelings))
+        (, ,)
+        (VP (VBZ knows)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's)
+                (ADJP (JJ hungry))))))
+        (, ,)
+        (NP (FW etc.))))
+    (. .)))
+
+cc(has-5, But-1)
+det(born-4, a-2)
+amod(born-4, new-3)
+nsubj(has-5, born-4)
+root(ROOT-0, has-5)
+dobj(has-5, feelings-6)
+dep(feelings-6, knows-8)
+advmod(hungry-12, when-9)
+nsubj(hungry-12, it-10)
+cop(hungry-12, 's-11)
+advcl(knows-8, hungry-12)
+appos(feelings-6, etc.-14)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ wrong)
+        (S
+          (VP (TO to)
+            (VP (VB throw)
+              (NP (PRP them))
+              (PP (IN in)
+                (NP (JJ dumpsters) (CD .3))))))))
+    (. .)))
+
+advmod(wrong-4, Therefore-1)
+nsubj(wrong-4, it-2)
+cop(wrong-4, 's-3)
+root(ROOT-0, wrong-4)
+aux(throw-6, to-5)
+xcomp(wrong-4, throw-6)
+dobj(throw-6, them-7)
+amod(.3-10, dumpsters-9)
+prep_in(throw-6, .3-10)
+
+(ROOT
+  (FRAG
+    (NP (NNP True))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP
+          (NP (NN state))
+          (PP (TO to)
+            (NP (NN state))))))
+    (. .)))
+
+root(ROOT-0, True-1)
+dep(True-1, and-3)
+nsubj(state-6, it-4)
+cop(state-6, 's-5)
+dep(True-1, state-6)
+prep_to(state-6, state-8)
+
+(ROOT
+  (S (CC But)
+    (SBAR (RB even)
+      (S
+        (NP
+          (NP (DT the) (NNS states))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP do)))))
+        (VP (VBP allow)
+          (NP (PRP it))
+          (PRT (RP up))
+          (PP (TO to)
+            (NP (NN birth))))))
+    (, ,)
+    (ADVP (RB again))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB only))
+      (PP (IN in)
+        (NP (JJ extreme) (NNS circumstances))))
+    (. .)))
+
+cc(is-15, But-1)
+advmod(allow-7, even-2)
+det(states-4, the-3)
+nsubj(do-6, states-4)
+nsubj(allow-7, states-4)
+rcmod(states-4, do-6)
+dep(is-15, allow-7)
+dobj(allow-7, it-8)
+prt(allow-7, up-9)
+prep_to(allow-7, birth-11)
+advmod(is-15, again-13)
+nsubj(is-15, it-14)
+root(ROOT-0, is-15)
+advmod(is-15, only-16)
+amod(circumstances-19, extreme-18)
+prep_in(is-15, circumstances-19)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (PRP I))
+          (VP (VBP 'm)
+            (NP
+              (NP (DT a) (NN woman))
+              (PP (IN in)
+                (NP (DT any) (NN state))))))
+        (CC and)
+        (S
+          (S
+            (NP (PRP I))
+            (VP (VBP 'm)
+              (ADJP (JJ due)
+                (PP (IN in)
+                  (NP (DT a) (NN week))))))
+          (, ,)
+          (CC and)
+          (S
+            (S
+              (NP (PRP$ my) (NN life))
+              (VP (VBZ is) (RB not)
+                (PP (IN in)
+                  (NP (NN danger)))))
+            (, ,)
+            (CC and)
+            (S
+              (NP (PRP I))
+              (VP (VBP 'm) (RB not)
+                (NP
+                  (NP (DT a) (NN child))
+                  (SBAR
+                    (S
+                      (NP (PRP myself)
+                        (CC and)
+                        (PRP I))
+                      (VP (VBD was) (RB n't)
+                        (VP (VBN raped)
+                          (PP (IN by)
+                            (NP (PRP$ my) (NN dad)
+                              (CC or)
+                              (NN something))))))))))))))
+    (, ,)
+    (NP (RB then) (NN abortion))
+    (VP (VBZ is) (RB not)
+      (NP (DT an) (NN option)))
+    (. .)))
+
+mark(woman-5, If-1)
+nsubj(woman-5, I-2)
+cop(woman-5, 'm-3)
+det(woman-5, a-4)
+advcl(option-48, woman-5)
+det(state-8, any-7)
+prep_in(woman-5, state-8)
+nsubj(due-12, I-10)
+cop(due-12, 'm-11)
+conj_and(woman-5, due-12)
+advcl(option-48, due-12)
+det(week-15, a-14)
+prep_in(due-12, week-15)
+poss(life-19, my-18)
+nsubj(is-20, life-19)
+conj_and(woman-5, is-20)
+conj_and(due-12, is-20)
+neg(is-20, not-21)
+prep_in(is-20, danger-23)
+nsubj(child-30, I-26)
+cop(child-30, 'm-27)
+neg(child-30, not-28)
+det(child-30, a-29)
+conj_and(due-12, child-30)
+conj_and(is-20, child-30)
+nsubjpass(raped-36, myself-31)
+conj_and(myself-31, I-33)
+nsubjpass(raped-36, I-33)
+auxpass(raped-36, was-34)
+neg(raped-36, n't-35)
+rcmod(child-30, raped-36)
+poss(dad-39, my-38)
+agent(raped-36, dad-39)
+agent(raped-36, something-41)
+conj_or(dad-39, something-41)
+advmod(abortion-44, then-43)
+nsubj(option-48, abortion-44)
+cop(option-48, is-45)
+neg(option-48, not-46)
+det(option-48, an-47)
+root(ROOT-0, option-48)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ fine)
+        (PP (IN with)
+          (SBAR (IN that)
+            (S
+              (ADVP (RB actually))
+              (, ,)
+              (NP (PRP I))
+              (VP (VBP think)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's)
+                      (NP (DT the) (JJ right) (NN law) (CD .4)))))))))))
+    (. .)))
+
+cc(fine-4, And-1)
+nsubj(fine-4, I-2)
+cop(fine-4, 'm-3)
+root(ROOT-0, fine-4)
+complm(think-10, that-6)
+advmod(think-10, actually-7)
+nsubj(think-10, I-9)
+prepc_with(fine-4, think-10)
+nsubj(law-15, it-11)
+cop(law-15, 's-12)
+det(law-15, the-13)
+amod(law-15, right-14)
+ccomp(think-10, law-15)
+num(law-15, .4-16)
+
+(ROOT
+  (S
+    (ADVP
+      (NP
+        (QP (RB About) (CD 2)
+          (CC or)
+          (CD 3))
+        (NNS months))
+      (RB ago))
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB say)
+        (NP
+          (NP (CD 5) (JJ right) (NN wing) (NNS nuts))
+          (SBAR
+            (S
+              (VP
+                (VP (VBD showed)
+                  (PRT (RP up))
+                  (ADVP (RB here)))
+                (CC and)
+                (VP (VBD downvoted)
+                  (NP (RB nearly) (DT every) (NN argument))
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP 've)
+                        (ADVP (RB ever))
+                        (VP (VBN made)
+                          (PP (IN in)
+                            (NP (PRP$ my)))
+                          (PP (IN over)
+                            (NP
+                              (NP (DT a) (NN year))
+                              (PP (IN on)
+                                (NP (DT this) (NN site))))))))))))))))
+    (. .)))
+
+quantmod(2-2, About-1)
+num(months-5, 2-2)
+conj_or(2-2, 3-4)
+num(months-5, 3-4)
+npadvmod(ago-6, months-5)
+advmod(say-9, ago-6)
+nsubj(say-9, I-7)
+aux(say-9, 'd-8)
+root(ROOT-0, say-9)
+num(nuts-13, 5-10)
+amod(nuts-13, right-11)
+nn(nuts-13, wing-12)
+dobj(say-9, nuts-13)
+rcmod(nuts-13, showed-14)
+prt(showed-14, up-15)
+advmod(showed-14, here-16)
+rcmod(nuts-13, downvoted-18)
+conj_and(showed-14, downvoted-18)
+advmod(argument-21, nearly-19)
+det(argument-21, every-20)
+dobj(downvoted-18, argument-21)
+nsubj(made-25, I-22)
+aux(made-25, 've-23)
+advmod(made-25, ever-24)
+dep(downvoted-18, made-25)
+prep_in(made-25, my-27)
+det(year-30, a-29)
+prep_over(made-25, year-30)
+det(site-33, this-32)
+prep_on(year-30, site-33)
+

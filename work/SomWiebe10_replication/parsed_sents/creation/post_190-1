@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (S
+      (NP (DT All) (NNS species))
+      (VP (VBP are)
+        (VP (VBN separated)
+          (PP (IN from)
+            (NP (DT each) (JJ other)))
+          (PP (IN by)
+            (NP (JJ bridgeless) (NNS gaps))))))
+    (: ;)
+    (S
+      (NP
+        (NP (NNS intermediates))
+        (PP (IN between)
+          (NP (NNS species))))
+      (VP (VBP are) (RB not)
+        (ADJP (JJ observed))))
+    (. .)))
+
+det(species-2, All-1)
+nsubjpass(separated-4, species-2)
+auxpass(separated-4, are-3)
+root(ROOT-0, separated-4)
+det(other-7, each-6)
+prep_from(separated-4, other-7)
+amod(gaps-10, bridgeless-9)
+agent(separated-4, gaps-10)
+nsubj(observed-17, intermediates-12)
+prep_between(intermediates-12, species-14)
+cop(observed-17, are-15)
+neg(observed-17, not-16)
+parataxis(separated-4, observed-17)
+

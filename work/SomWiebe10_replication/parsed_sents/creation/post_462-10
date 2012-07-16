@@ -1,0 +1,50 @@
+(ROOT
+  (NP
+    (NP (NN Censorship))
+    (PP (IN of)
+      (NP (NNP ID)))
+    (. .)))
+
+root(ROOT-0, Censorship-1)
+prep_of(Censorship-1, ID-3)
+
+(ROOT
+  (SBARQ
+    (S
+      (VP (VB Please)))
+    (, ,)
+    (WHNP (WRB how) (JJ dumb))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (DT the) (NN public))
+            (VP (VBZ is))))))
+    (. ?)))
+
+dep(think-7, Please-1)
+advmod(dumb-4, how-3)
+dep(think-7, dumb-4)
+aux(think-7, do-5)
+nsubj(think-7, you-6)
+root(ROOT-0, think-7)
+det(public-9, the-8)
+nsubj(is-10, public-9)
+ccomp(think-7, is-10)
+
+(ROOT
+  (SINV
+    (VP (VB Give)
+      (NP (PRP us))
+      (NP (DT a) (RB little) (RBR more)))
+    (NP (NN credit) (NNS !!))))
+
+root(ROOT-0, Give-1)
+iobj(Give-1, us-2)
+det(more-5, a-3)
+advmod(more-5, little-4)
+dobj(Give-1, more-5)
+nn(!!-7, credit-6)
+nsubj(Give-1, !!-7)
+

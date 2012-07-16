@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (NP
+              (NP (DT another) (NN person) (POS 's))
+              (NN body))
+            (, ,)
+            (PP (IN by)
+              (NP (DT all))))))
+      (VP (VBZ means)))
+    (: ...)
+    (S
+      (VP (VB dictate)
+        (PP (TO to)
+          (NP (PRP her)))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP she))
+            (VP (MD can)
+              (CC and)
+              (MD can) (RB not)
+              (VP (VB do)
+                (PP (IN with)
+                  (NP (PRP$ her) (NN body)))))))))
+    (. .)))
+
+mark(body-7, If-1)
+nsubj(body-7, it-2)
+cop(body-7, 's-3)
+det(person-5, another-4)
+poss(body-7, person-5)
+csubj(means-11, body-7)
+prep_by(body-7, all-10)
+root(ROOT-0, means-11)
+parataxis(means-11, dictate-13)
+prep_to(dictate-13, her-15)
+dobj(do-22, what-16)
+nsubj(do-22, she-17)
+aux(do-22, can-18)
+ccomp(dictate-13, can-20)
+aux(do-22, can-20)
+conj_and(do-22, can-20)
+neg(do-22, not-21)
+ccomp(dictate-13, do-22)
+poss(body-25, her-24)
+prep_with(do-22, body-25)
+

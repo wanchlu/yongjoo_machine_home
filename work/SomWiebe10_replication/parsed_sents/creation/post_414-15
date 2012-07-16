@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBP think))
+          (CC or)
+          (VP (VBP believe)
+            (SBAR (IN that)
+              (S
+                (NP (NN something))
+                (VP (VBZ is)
+                  (ADJP (JJ true)))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD will)
+      (VP (VB be)
+        (ADJP (JJ willing)
+          (S
+            (VP (TO to)
+              (VP (VB change)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP think\/believe)
+                      (PP (IN in)
+                        (NP
+                          (NP (NN light))
+                          (PP (IN of)
+                            (NP (JJ new) (NN evidence))))))))))))))
+    (. .)))
+
+mark(think-3, If-1)
+nsubj(think-3, you-2)
+nsubj(believe-5, you-2)
+advcl(willing-14, think-3)
+conj_or(think-3, believe-5)
+advcl(willing-14, believe-5)
+complm(true-9, that-6)
+nsubj(true-9, something-7)
+cop(true-9, is-8)
+ccomp(believe-5, true-9)
+nsubj(willing-14, you-11)
+aux(willing-14, will-12)
+cop(willing-14, be-13)
+root(ROOT-0, willing-14)
+aux(change-16, to-15)
+xcomp(willing-14, change-16)
+dobj(think\/believe-19, what-17)
+nsubj(think\/believe-19, you-18)
+ccomp(change-16, think\/believe-19)
+prep_in(think\/believe-19, light-21)
+amod(evidence-24, new-23)
+prep_of(light-21, evidence-24)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP one))
+        (VP (VBZ believes)
+          (SBAR (IN that)
+            (S
+              (NP (NN abortion))
+              (VP (VBZ is)
+                (ADJP (JJ wrong))))))))
+    (, ,)
+    (NP (DT the) (JJ simple) (NN solution))
+    (VP (MD would)
+      (VP (VB be)
+        (S
+          (VP (TO to) (RB not)
+            (VP (VB partake)
+              (PP (IN in)
+                (NP (DT an) (NN abortion))))))))
+    (. .)))
+
+mark(believes-3, If-1)
+nsubj(believes-3, one-2)
+advcl(be-13, believes-3)
+complm(wrong-7, that-4)
+nsubj(wrong-7, abortion-5)
+cop(wrong-7, is-6)
+ccomp(believes-3, wrong-7)
+det(solution-11, the-9)
+amod(solution-11, simple-10)
+nsubj(be-13, solution-11)
+aux(be-13, would-12)
+root(ROOT-0, be-13)
+aux(partake-16, to-14)
+neg(partake-16, not-15)
+xcomp(be-13, partake-16)
+det(abortion-19, an-18)
+prep_in(partake-16, abortion-19)
+

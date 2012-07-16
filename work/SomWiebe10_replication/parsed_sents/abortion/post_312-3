@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (NNS conciousness))
+          (VP (VBZ is)
+            (NP (PRP$ your) (NNS criteria)))))
+      (, ,)
+      (NP (DT a) (NN fetus))
+      (VP (VBZ is)
+        (ADJP (JJ conscious)
+          (PP (IN of)
+            (NP
+              (NP (PRP itself))
+              (CC and)
+              (NP (PRP$ its) (NNS surroundings)))))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (MD can)
+        (VP (VB feel)
+          (NP
+            (NP
+              (NP (NN pain))
+              (, ,)
+              (PP (IN for)
+                (NP (CD one) (NN proof)))
+              (, ,))
+            (PP (IN as)
+              (S
+                (VP (VBN evidenced)
+                  (PP (IN by)
+                    (NP (PRP$ its) (NN neurosystem))))))
+            (SBAR (IN if)
+              (FRAG
+                (NP (NN nothing) (RB else))))))))
+    (. .)))
+
+mark(criteria-5, If-1)
+nsubj(criteria-5, conciousness-2)
+cop(criteria-5, is-3)
+poss(criteria-5, your-4)
+advcl(conscious-10, criteria-5)
+det(fetus-8, a-7)
+nsubj(conscious-10, fetus-8)
+cop(conscious-10, is-9)
+root(ROOT-0, conscious-10)
+prep_of(conscious-10, itself-12)
+poss(surroundings-15, its-14)
+prep_of(conscious-10, surroundings-15)
+conj_and(itself-12, surroundings-15)
+nsubj(feel-19, it-17)
+aux(feel-19, can-18)
+parataxis(conscious-10, feel-19)
+dobj(feel-19, pain-20)
+num(proof-24, one-23)
+prep_for(pain-20, proof-24)
+prepc_as(pain-20, evidenced-27)
+poss(neurosystem-30, its-29)
+prep_by(evidenced-27, neurosystem-30)
+mark(nothing-32, if-31)
+dep(pain-20, nothing-32)
+advmod(nothing-32, else-33)
+

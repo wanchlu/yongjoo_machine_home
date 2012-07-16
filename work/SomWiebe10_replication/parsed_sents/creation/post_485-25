@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBP play)
+          (SBAR
+            (S
+              (NP (PRP$ their))
+              (VP (VBD had)
+                (ADVP (RB properly))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD could)
+      (VP
+        (VP (VB show)
+          (NP (PRP$ their) (NN stuff))
+          (PP (TO to)
+            (NP (DT the) (NN public))))
+        (CC and)
+        (VP (VB settle)
+          (NP (DT the) (NN issue))
+          (UCP
+            (ADVP (RB once))
+            (CC and)
+            (PP (IN for)
+              (NP (DT all)))))))
+    (. .)))
+
+mark(play-3, If-1)
+nsubj(play-3, they-2)
+advcl(show-10, play-3)
+nsubj(had-5, their-4)
+ccomp(play-3, had-5)
+advmod(had-5, properly-6)
+nsubj(show-10, they-8)
+nsubj(settle-17, they-8)
+aux(show-10, could-9)
+root(ROOT-0, show-10)
+poss(stuff-12, their-11)
+dobj(show-10, stuff-12)
+det(public-15, the-14)
+prep_to(show-10, public-15)
+conj_and(show-10, settle-17)
+det(issue-19, the-18)
+dobj(settle-17, issue-19)
+dep(settle-17, once-20)
+dep(settle-17, for-22)
+conj_and(once-20, for-22)
+pobj(for-22, all-23)
+

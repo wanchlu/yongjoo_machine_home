@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (INTJ (RB Sure))
+      (NP (EX there))
+      (VP (VBP are)
+        (NP
+          (NP (DT some) (JJ great) (NNS scientists))
+          (CC and)
+          (NP
+            (NP (DT some)
+              (ADJP (RB very) (JJ smart))
+              (NNS people))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP have)
+                  (VP (VBN made)
+                    (NP (NNS claims))
+                    (PP (VBN based)
+                      (PP (IN on)
+                        (NP (PRP$ their) (NN research))))))))))))
+    (NP (DT that) (NN evolution))
+    (VP (VBZ is)
+      (ADJP (JJ real)))
+    (. .)))
+
+dep(are-3, Sure-1)
+expl(are-3, there-2)
+dep(is-22, are-3)
+det(scientists-6, some-4)
+amod(scientists-6, great-5)
+nsubj(are-3, scientists-6)
+det(people-11, some-8)
+advmod(smart-10, very-9)
+amod(people-11, smart-10)
+nsubj(are-3, people-11)
+conj_and(scientists-6, people-11)
+nsubj(made-14, people-11)
+aux(made-14, have-13)
+rcmod(people-11, made-14)
+dobj(made-14, claims-15)
+prepc_based_on(made-14, on-17)
+poss(research-19, their-18)
+pobj(made-14, research-19)
+det(evolution-21, that-20)
+nsubj(is-22, evolution-21)
+root(ROOT-0, is-22)
+acomp(is-22, real-23)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN mother))
+        (VP (VBD saw)
+          (NP (DT that) (NN comment)))))
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP she))
+            (VP (MD will)
+              (VP (VBN haunted)
+                (PP (IN by)
+                  (NP (PRP it)))
+                (PP (IN for)
+                  (NP
+                    (NP (DT the) (NN rest))
+                    (PP (IN of)
+                      (NP (PRP$ her) (NN life)))))))))))
+    (. .)))
+
+mark(saw-4, If-1)
+det(mother-3, the-2)
+nsubj(saw-4, mother-3)
+advcl(sure-9, saw-4)
+det(comment-6, that-5)
+dobj(saw-4, comment-6)
+nsubj(sure-9, I-7)
+cop(sure-9, am-8)
+root(ROOT-0, sure-9)
+nsubj(haunted-12, she-10)
+aux(haunted-12, will-11)
+dep(sure-9, haunted-12)
+prep_by(haunted-12, it-14)
+det(rest-17, the-16)
+prep_for(haunted-12, rest-17)
+poss(life-20, her-19)
+prep_of(rest-17, life-20)
+

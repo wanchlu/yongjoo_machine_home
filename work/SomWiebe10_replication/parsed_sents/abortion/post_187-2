@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS citizens))
+        (VP (VBP do) (RB not)
+          (VP (VB demand)
+            (S
+              (NP (DT that) (NN choice))
+              (VP (VB be)
+                (VP (VBN made)
+                  (NP (DT that) (NN day)))))))))
+    (, ,)
+    (NP
+      (NP (PRP$ our) (NN experiment))
+      (PP (IN in)
+        (NP (NN democracy))))
+    (VP (VBZ is)
+      (VP (VBN finished)))
+    (. .)))
+
+mark(demand-5, If-1)
+nsubj(demand-5, citizens-2)
+aux(demand-5, do-3)
+neg(demand-5, not-4)
+advcl(finished-18, demand-5)
+det(choice-7, that-6)
+nsubjpass(made-9, choice-7)
+auxpass(made-9, be-8)
+ccomp(demand-5, made-9)
+det(day-11, that-10)
+tmod(made-9, day-11)
+poss(experiment-14, our-13)
+nsubjpass(finished-18, experiment-14)
+prep_in(experiment-14, democracy-16)
+auxpass(finished-18, is-17)
+root(ROOT-0, finished-18)
+

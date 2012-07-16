@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (SBAR
+      (UCP (NN Somehow)
+        (CC or)
+        (JJ other))
+      (S
+        (NP
+          (NP (NNP Fli) (NNP H))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (ADVP (RB usually))
+              (VP (VBZ interacts)
+                (PP (IN with)
+                  (NP (NNP Fli) (NNP I))))))
+          (, ,))
+        (VP (VBN gums)
+          (PRT (RP up))
+          (NP (DT the) (NN export) (NN apparatus))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN absence))
+              (PP (IN of)
+                (NP (NNP Fli) (NNP I.)))))
+          (ADVP (RB So)))))
+    (, ,)
+    (NP (NN bang))
+    (VP (VBZ goes)
+      (NP
+        (NP (DT another) (NN pillar))
+        (PP (IN of)
+          (NP
+            (NP (NN support))
+            (PP (IN for)
+              (NP (DT the) (NNP ID) (NN argument)))))))
+    (. !)))
+
+dep(gums-14, Somehow-1)
+conj_or(Somehow-1, other-3)
+dep(gums-14, other-3)
+nn(H-5, Fli-4)
+nsubj(interacts-9, H-5)
+nsubj(gums-14, H-5)
+advmod(interacts-9, usually-8)
+rcmod(H-5, interacts-9)
+nn(I-12, Fli-11)
+prep_with(interacts-9, I-12)
+dep(goes-28, gums-14)
+prt(gums-14, up-15)
+det(apparatus-18, the-16)
+nn(apparatus-18, export-17)
+dobj(gums-14, apparatus-18)
+det(absence-21, the-20)
+prep_in(gums-14, absence-21)
+nn(I.-24, Fli-23)
+prep_of(absence-21, I.-24)
+advmod(gums-14, So-25)
+nsubj(goes-28, bang-27)
+root(ROOT-0, goes-28)
+det(pillar-30, another-29)
+dobj(goes-28, pillar-30)
+prep_of(pillar-30, support-32)
+det(argument-36, the-34)
+nn(argument-36, ID-35)
+prep_for(support-32, argument-36)
+

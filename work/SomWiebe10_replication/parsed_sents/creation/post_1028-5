@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (FW i))
+        (VP (VBP 've)
+          (VP (VBN explained)
+            (ADVP (RB already))))))
+    (, ,)
+    (NP (PRP$ our) (NN brain))
+    (ADVP (RB automatically))
+    (VP (VBZ attempts)
+      (SBAR
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB rationalize)
+                (NP (NNS things))))))
+        (CC and)
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT that) (NN effect)))
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ irrational)))))))
+    (. .)))
+
+mark(explained-4, As-1)
+nsubj(explained-4, i-2)
+aux(explained-4, 've-3)
+advcl(attempts-10, explained-4)
+advmod(explained-4, already-5)
+poss(brain-8, our-7)
+nsubj(attempts-10, brain-8)
+advmod(attempts-10, automatically-9)
+root(ROOT-0, attempts-10)
+aux(rationalize-12, to-11)
+dep(attempts-10, rationalize-12)
+dobj(rationalize-12, things-13)
+dep(irrational-20, in-15)
+det(effect-17, that-16)
+pobj(in-15, effect-17)
+nsubj(irrational-20, it-18)
+cop(irrational-20, is-19)
+dep(attempts-10, irrational-20)
+conj_and(rationalize-12, irrational-20)
+

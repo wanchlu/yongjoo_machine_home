@@ -1,0 +1,47 @@
+(ROOT
+  (SQ
+    (SBAR (RB Just) (IN because)
+      (S
+        (NP (PRP$ their) (NN worldview))
+        (VP (VBZ does) (RB n't)
+          (ADVP (RB normally))
+          (VP (VB include)
+            (NP (DT the) (NN supernatural))))))
+    (, ,) (VBZ does)
+    (NP (DT that))
+    (VP (VB mean)
+      (SBAR
+        (S
+          (NP (PRP$ their) (NN science))
+          (VP (VBZ is)
+            (ADJP (RBR more) (JJ valid)
+              (PP (IN than)
+                (NP
+                  (NP (NNS others))
+                  (PP (IN with)
+                    (NP (DT a) (JJ supernatural) (NN worldview))))))))))
+    (. ?)))
+
+advmod(include-8, Just-1)
+dep(include-8, because-2)
+poss(worldview-4, their-3)
+nsubj(include-8, worldview-4)
+aux(include-8, does-5)
+neg(include-8, n't-6)
+advmod(include-8, normally-7)
+advcl(mean-14, include-8)
+det(supernatural-10, the-9)
+dobj(include-8, supernatural-10)
+aux(mean-14, does-12)
+nsubj(mean-14, that-13)
+root(ROOT-0, mean-14)
+poss(science-16, their-15)
+nsubj(valid-19, science-16)
+cop(valid-19, is-17)
+advmod(valid-19, more-18)
+ccomp(mean-14, valid-19)
+prep_than(valid-19, others-21)
+det(worldview-25, a-23)
+amod(worldview-25, supernatural-24)
+prep_with(others-21, worldview-25)
+

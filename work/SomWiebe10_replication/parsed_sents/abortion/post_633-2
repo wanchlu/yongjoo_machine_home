@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (DT These))
+    (VP (VBP are)
+      (NP
+        (NP (JJ Philosophic) (NNS concepts))
+        (ADJP (RB not) (VBN religious))))
+    (. .)))
+
+nsubj(concepts-4, These-1)
+cop(concepts-4, are-2)
+amod(concepts-4, Philosophic-3)
+root(ROOT-0, concepts-4)
+neg(religious-6, not-5)
+amod(concepts-4, religious-6)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN analogy))
+        (PP (IN with)
+          (NP (DT the) (NN fetus))))
+      (VP (VBZ is)
+        (ADJP (JJ clear))))
+    (: :)
+    (S
+      (NP (DT the) (NN substance))
+      (VP (VBZ is)
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN fetus))
+            (VP (VBZ is)
+              (NP (DT a) (JJ human) (NN being)))))))
+    (. .)))
+
+det(analogy-2, The-1)
+nsubj(clear-7, analogy-2)
+det(fetus-5, the-4)
+prep_with(analogy-2, fetus-5)
+cop(clear-7, is-6)
+root(ROOT-0, clear-7)
+det(substance-10, the-9)
+nsubj(is-11, substance-10)
+parataxis(clear-7, is-11)
+complm(being-18, that-12)
+det(fetus-14, a-13)
+nsubj(being-18, fetus-14)
+cop(being-18, is-15)
+det(being-18, a-16)
+amod(being-18, human-17)
+ccomp(is-11, being-18)
+

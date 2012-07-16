@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(is-4, it-3)
+ccomp(think-2, is-4)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR (IN because) (, ,)
+        (S
+          (SBAR (IN as)
+            (S
+              (NP (PRP I))
+              (VP (VBP understand)
+                (NP (PRP it)))))
+          (, ,)
+          (NP (NNP ID))
+          (VP (VBZ makes)
+            (NP (DT no) (NNS proposals))
+            (PP (IN as)
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (NN nature))
+                  (PP (IN of)
+                    (NP (DT the) (NNS designers))))))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB when)
+                (CC and)
+                (WRB how))
+              (S
+                (NP (PRP they))
+                (VP (VBD designed)
+                  (NP (NN life))
+                  (, ,)
+                  (SBAR
+                    (SBAR
+                      (WHADVP (WRB why))
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP do) (RB n't)
+                          (VP (VB appear)
+                            (S
+                              (VP (TO to)
+                                (VP (VB be)
+                                  (ADVP (RB around))
+                                  (NP (NN today)))))))))
+                    (, ,)
+                    (CC and)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP$ their) (JJ own) (NN origin))
+                        (VP (VBD was))))))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+mark(makes-11, because-3)
+mark(understand-7, as-5)
+nsubj(understand-7, I-6)
+advcl(makes-11, understand-7)
+dobj(understand-7, it-8)
+nsubj(makes-11, ID-10)
+advcl(is-2, makes-11)
+det(proposals-13, no-12)
+dobj(makes-11, proposals-13)
+prepc_as_to(makes-11, to-15)
+det(nature-17, the-16)
+pobj(makes-11, nature-17)
+det(designers-20, the-19)
+prep_of(nature-17, designers-20)
+advmod(designed-26, when-22)
+dep(when-22, and-23)
+dep(when-22, how-24)
+nsubj(designed-26, they-25)
+advcl(makes-11, designed-26)
+dobj(designed-26, life-27)
+advmod(appear-33, why-29)
+nsubj(appear-33, they-30)
+xsubj(today-37, they-30)
+aux(appear-33, do-31)
+neg(appear-33, n't-32)
+dep(designed-26, appear-33)
+aux(today-37, to-34)
+cop(today-37, be-35)
+advmod(today-37, around-36)
+xcomp(appear-33, today-37)
+dobj(was-44, what-40)
+poss(origin-43, their-41)
+amod(origin-43, own-42)
+nsubj(was-44, origin-43)
+dep(designed-26, was-44)
+conj_and(appear-33, was-44)
+

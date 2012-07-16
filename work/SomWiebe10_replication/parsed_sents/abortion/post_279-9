@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (PRN (, ,)
+        (SBAR (IN after)
+          (S
+            (NP (PRP she))
+            (VP (VBZ decides)
+              (PP (IN on)
+                (NP (DT an) (NN abortion))))))
+        (, ,))
+      (S
+        (NP (PRP she))
+        (VP (VBZ is)
+          (ADJP (JJ remorseful)))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADVP (RB certainly))
+      (ADJP (JJ sad)))
+    (. .)))
+
+mark(remorseful-12, If-1)
+mark(decides-5, after-3)
+nsubj(decides-5, she-4)
+dep(remorseful-12, decides-5)
+det(abortion-8, an-7)
+prep_on(decides-5, abortion-8)
+nsubj(remorseful-12, she-10)
+cop(remorseful-12, is-11)
+advcl(sad-17, remorseful-12)
+nsubj(sad-17, that-14)
+cop(sad-17, is-15)
+advmod(sad-17, certainly-16)
+root(ROOT-0, sad-17)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (VP
+      (VP (VB suggestion) (-RRB- -RRB-)
+        (NP
+          (NP (RB as) (DT the) (NN organism))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ begins)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP it))
+                    (VP (MD can)
+                      (VP (VB be)
+                        (VP (VBN detected)))))))))))
+      (CC and)
+      (VP (VBZ ends)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ dead))
+              (PRN (-LRB- -LRB-)
+                (ADVP (RB thus))
+                (ADJP (JJ fetus)
+                  (PP (IN through)
+                    (ADJP (JJ adulthood))))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+root(ROOT-0, suggestion-1)
+advmod(organism-5, as-3)
+det(organism-5, the-4)
+dobj(suggestion-1, organism-5)
+nsubj(begins-7, organism-5)
+rcmod(organism-5, begins-7)
+advmod(detected-12, when-8)
+nsubjpass(detected-12, it-9)
+aux(detected-12, can-10)
+auxpass(detected-12, be-11)
+advcl(begins-7, detected-12)
+conj_and(suggestion-1, ends-14)
+advmod(dead-18, when-15)
+nsubj(dead-18, it-16)
+cop(dead-18, is-17)
+advcl(ends-14, dead-18)
+dep(fetus-21, thus-20)
+dep(dead-18, fetus-21)
+prep_through(fetus-21, adulthood-23)
+

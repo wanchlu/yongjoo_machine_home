@@ -1,0 +1,79 @@
+(ROOT
+  (NP
+    (NP (NNP Mary) (NNP Calderone))
+    (, ,)
+    (NP
+      (NP (NN founder))
+      (PP (IN of)
+        (NP
+          (NP (NNS SIECUS))
+          (CC and)
+          (NP
+            (NP (JJ medical) (NN director))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Planned) (NNP Parenthood) (NNP Federation))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP America))
+                    (, ,)
+                    (NP (`` ``)
+                      (NP
+                        (NP (JJ Illegal) (NN abortion))
+                        (PP (IN as)
+                          (NP (DT a) (JJ public) (NN health) (NN problem))))
+                      (, ,) ('' '')
+                      (NP
+                        (NP (NNP American) (NNP Journal))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNP Public) (NNP Health))
+                            (, ,)
+                            (NP
+                              (NP (NNP July) (CD 1960))
+                              (SBAR (`` ``)
+                                (S
+                                  (NP
+                                    (NP (CD 90) (NN %))
+                                    (PP (IN of)
+                                      (NP (JJ illegal) (NNS abortions))))
+                                  (VP (VBP are)
+                                    (VP (VBG being)
+                                      (VP (VBN done)
+                                        (PP (IN by)
+                                          (NP (NNS physicians)))))))))))))))))))))
+    (. .)))
+
+nn(Calderone-2, Mary-1)
+root(ROOT-0, Calderone-2)
+appos(Calderone-2, founder-4)
+prep_of(founder-4, SIECUS-6)
+amod(director-9, medical-8)
+prep_of(founder-4, director-9)
+conj_and(SIECUS-6, director-9)
+det(Federation-14, the-11)
+nn(Federation-14, Planned-12)
+nn(Federation-14, Parenthood-13)
+prep_of(director-9, Federation-14)
+prep_of(Federation-14, America-16)
+amod(abortion-20, Illegal-19)
+appos(America-16, abortion-20)
+det(problem-25, a-22)
+amod(problem-25, public-23)
+nn(problem-25, health-24)
+prep_as(abortion-20, problem-25)
+nn(Journal-29, American-28)
+dep(abortion-20, Journal-29)
+nn(Health-32, Public-31)
+prep_of(Journal-29, Health-32)
+appos(Health-32, July-34)
+num(July-34, 1960-35)
+num(%-38, 90-37)
+nsubjpass(done-44, %-38)
+amod(abortions-41, illegal-40)
+prep_of(%-38, abortions-41)
+aux(done-44, are-42)
+auxpass(done-44, being-43)
+dep(July-34, done-44)
+agent(done-44, physicians-46)
+

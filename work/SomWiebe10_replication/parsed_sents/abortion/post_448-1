@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Thousands))
+      (PP (IN of)
+        (NP (NNS women))))
+    (VP (VBP die)
+      (PP (IN around)
+        (NP
+          (NP
+            (NP (DT the) (NN world))
+            (SBAR (IN because)
+              (S
+                (NP (PRP they))
+                (VP (VBP do) (RB n't)
+                  (VP (VB have)
+                    (NP (NN access))
+                    (PP (TO to)
+                      (NP (NN birth) (NN control))))))))
+          (, ,)
+          (CC or)
+          (NP
+            (NP
+              (NP (JJ medical) (NN care))
+              (PP (IN during)
+                (NP (NN pregnancy))))
+            (CC nor)
+            (NP (DT a) (NN place)
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (S
+                      (VP (TO to)
+                        (VP (VB have)
+                          (NP
+                            (NP (NNS babies))
+                            (VP (VBN delivered))))))))))))))
+    (. .)))
+
+nsubj(die-4, Thousands-1)
+prep_of(Thousands-1, women-3)
+root(ROOT-0, die-4)
+det(world-7, the-6)
+prep_around(die-4, world-7)
+mark(have-12, because-8)
+nsubj(have-12, they-9)
+aux(have-12, do-10)
+neg(have-12, n't-11)
+dep(world-7, have-12)
+dobj(have-12, access-13)
+nn(control-16, birth-15)
+prep_to(have-12, control-16)
+amod(care-20, medical-19)
+prep_around(die-4, care-20)
+conj_or(world-7, care-20)
+prep_during(care-20, pregnancy-22)
+det(place-25, a-24)
+conj_or(world-7, place-25)
+conj_nor(care-20, place-25)
+aux(go-27, to-26)
+infmod(place-25, go-27)
+aux(have-29, to-28)
+xcomp(go-27, have-29)
+dobj(have-29, babies-30)
+partmod(babies-30, delivered-31)
+

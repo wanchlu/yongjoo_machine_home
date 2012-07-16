@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ thats) (JJ true) (NNS i))
+      (VP (VBN looked)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NNS pictures))
+            (PP (IN of)
+              (NP (DT the) (NNS fetuses)))))))
+    (VP (VBZ thats)
+      (NP (RB just) (DT a) (JJ crying) (NN shame)))
+    (. .)))
+
+amod(i-3, thats-1)
+amod(i-3, true-2)
+nsubj(thats-11, i-3)
+partmod(i-3, looked-4)
+det(pictures-7, the-6)
+prep_at(looked-4, pictures-7)
+det(fetuses-10, the-9)
+prep_of(pictures-7, fetuses-10)
+root(ROOT-0, thats-11)
+advmod(shame-15, just-12)
+det(shame-15, a-13)
+amod(shame-15, crying-14)
+dobj(thats-11, shame-15)
+
+(ROOT
+  (S (CC and)
+    (NP (DT the) (NNS babies))
+    (VP (VBP look)
+      (NP
+        (ADJP (RB so) (JJ sad)
+          (CC and)
+          (JJ scary))
+        (NN lol)))
+    (. .)))
+
+cc(look-4, and-1)
+det(babies-3, the-2)
+nsubj(look-4, babies-3)
+root(ROOT-0, look-4)
+advmod(sad-6, so-5)
+amod(lol-9, sad-6)
+conj_and(sad-6, scary-8)
+amod(lol-9, scary-8)
+dobj(look-4, lol-9)
+
+(ROOT
+  (S
+    (S
+      (NP (FW i))
+      (VP (VBD chose) (RB not)
+        (VP (VB have)
+          (NP (DT an) (NN abortion)))))
+    (CC but)
+    (S
+      (NP (FW i))
+      (VP (VBD did)
+        (VP (VB have)
+          (NP (PRP$ my) (NN baby))
+          (SBAR (IN so)
+            (S
+              (NP (FW i))
+              (VP (VBP have)
+                (VP (VBN experienced)
+                  (NP (PRP it)))))))))
+    (. .)))
+
+nsubj(chose-2, i-1)
+root(ROOT-0, chose-2)
+neg(chose-2, not-3)
+dep(chose-2, have-4)
+det(abortion-6, an-5)
+dobj(have-4, abortion-6)
+nsubj(have-10, i-8)
+aux(have-10, did-9)
+conj_but(chose-2, have-10)
+poss(baby-12, my-11)
+dobj(have-10, baby-12)
+mark(experienced-16, so-13)
+nsubj(experienced-16, i-14)
+aux(experienced-16, have-15)
+advcl(have-10, experienced-16)
+dobj(experienced-16, it-17)
+

@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP (DT The) (NN law))
+    (VP
+      (VP (VB exempt)
+        (NP (DT the) (NN woman))
+        (PP (IN from)
+          (S
+            (VP (VBG being)
+              (ADJP (JJ guilty)
+                (PP (IN of)
+                  (NP (DT any) (NN crime))))))))
+      (CC and)
+      (VP (VBZ allows)
+        (NP
+          (NP (NN abortion))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (EX there))
+              (VP (VBZ is)
+                (NP
+                  (NP (NN rape))
+                  (, ,)
+                  (SBAR
+                    (SBAR (IN if)
+                      (S
+                        (NP
+                          (NP (DT the) (NN life)
+                            (CC or)
+                            (NN health))
+                          (PP (IN of)
+                            (NP (DT the) (NN mother))))
+                        (VP (VBZ is)
+                          (PP (IN at)
+                            (NP (NN risk))))))
+                    (CC or)
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (DT the) (NN fetus) (NN health))
+                        (VP (VBZ is)
+                          (ADJP (JJ incompatible)
+                            (PP (IN with)
+                              (NP (NN life)))))))))))))))
+    (. .)))
+
+det(law-2, The-1)
+nsubj(exempt-3, law-2)
+nsubj(allows-13, law-2)
+root(ROOT-0, exempt-3)
+det(woman-5, the-4)
+dobj(exempt-3, woman-5)
+cop(guilty-8, being-7)
+prepc_from(exempt-3, guilty-8)
+det(crime-11, any-10)
+prep_of(guilty-8, crime-11)
+conj_and(exempt-3, allows-13)
+dobj(allows-13, abortion-14)
+advmod(is-17, when-15)
+expl(is-17, there-16)
+dep(abortion-14, is-17)
+nsubj(is-17, rape-18)
+mark(is-28, if-20)
+det(life-22, the-21)
+nsubj(is-28, life-22)
+conj_or(life-22, health-24)
+nsubj(is-28, health-24)
+det(mother-27, the-26)
+prep_of(life-22, mother-27)
+dep(rape-18, is-28)
+prep_at(is-28, risk-30)
+advmod(incompatible-37, when-32)
+det(health-35, the-33)
+nn(health-35, fetus-34)
+nsubj(incompatible-37, health-35)
+cop(incompatible-37, is-36)
+dep(rape-18, incompatible-37)
+conj_or(is-28, incompatible-37)
+prep_with(incompatible-37, life-39)
+

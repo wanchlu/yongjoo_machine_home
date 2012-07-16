@@ -1,0 +1,105 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ renders)
+      (S
+        (NP (NNP ID))
+        (ADJP (JJ meaningless))
+        (SBAR (IN as)
+          (S
+            (NP (PRP it))
+            (VP (VBZ proposes)
+              (NP (NN regularity))
+              (PP (RB not)
+                (NP
+                  (NP (DT the) (NN absence) (RB thereof))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (MD would)
+                        (VP (VB trigger)
+                          (NP (DT the) (`` ``) (NN design) (NN inference) ('' '')))))))))))))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(renders-6, words-3)
+nsubj(renders-6, it-5)
+root(ROOT-0, renders-6)
+nsubj(proposes-11, ID-7)
+dep(proposes-11, meaningless-8)
+mark(proposes-11, as-9)
+nsubj(proposes-11, it-10)
+xcomp(renders-6, proposes-11)
+dobj(proposes-11, regularity-12)
+prep(proposes-11, not-13)
+det(absence-15, the-14)
+pobj(not-13, absence-15)
+nsubj(trigger-20, absence-15)
+advmod(absence-15, thereof-16)
+aux(trigger-20, would-19)
+rcmod(absence-15, trigger-20)
+det(inference-24, the-21)
+nn(inference-24, design-23)
+dobj(trigger-20, inference-24)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Contrary)
+        (ADVP (RB thus))
+        (PP (TO to)
+          (NP
+            (NP (NNP Joe) (POS 's))
+            (NNS words)))))
+    (, ,)
+    (NP (PRP he))
+    (VP (MD should)
+      (VP (VB have)
+        (ADVP (RB either))
+        (VP (VBN considered)
+          (NP
+            (NP (NNP Einstein) (POS 's))
+            (JJ religious) (NNS convictions))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP he))
+              (VP (VBD quoted)
+                (SBAR
+                  (S
+                    (NP (PRP him)
+                      (CC or)
+                      (PRP he))
+                    (VP (MD should) (RB not)
+                      (VP (VB have)
+                        (NP (NNP quote) (NNP Einstein))))))))))))
+    (. .)))
+
+partmod(considered-12, Contrary-1)
+advmod(Contrary-1, thus-2)
+poss(words-6, Joe-4)
+prep_to(Contrary-1, words-6)
+nsubj(considered-12, he-8)
+aux(considered-12, should-9)
+aux(considered-12, have-10)
+advmod(considered-12, either-11)
+root(ROOT-0, considered-12)
+poss(convictions-16, Einstein-13)
+amod(convictions-16, religious-15)
+dobj(considered-12, convictions-16)
+advmod(quoted-19, when-17)
+nsubj(quoted-19, he-18)
+advcl(considered-12, quoted-19)
+nsubj(have-25, him-20)
+conj_or(him-20, he-22)
+nsubj(have-25, he-22)
+aux(have-25, should-23)
+neg(have-25, not-24)
+ccomp(quoted-19, have-25)
+nn(Einstein-27, quote-26)
+dobj(have-25, Einstein-27)
+

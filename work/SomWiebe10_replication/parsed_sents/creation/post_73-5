@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (NP (RB only) (NNP ID))
+    (VP (MD will)
+      (VP (VB lead)
+        (S
+          (NP (PRP us))
+          (VP (TO to)
+            (VP (VB understand)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP DNA)
+                    (CC and)
+                    (NNP RNA))
+                  (VP (VBP are)
+                    (ADJP (JJ similar)
+                      (PP (TO to)
+                        (NP
+                          (NP (DT a) (NN computer) (POS 's))
+                          (NN harddrive))))))))))))
+    (. .)))
+
+advmod(lead-5, Also-1)
+advmod(ID-3, only-2)
+nsubj(lead-5, ID-3)
+aux(lead-5, will-4)
+root(ROOT-0, lead-5)
+nsubj(understand-8, us-6)
+aux(understand-8, to-7)
+xcomp(lead-5, understand-8)
+complm(similar-14, that-9)
+nsubj(similar-14, DNA-10)
+conj_and(DNA-10, RNA-12)
+nsubj(similar-14, RNA-12)
+cop(similar-14, are-13)
+ccomp(understand-8, similar-14)
+det(computer-17, a-16)
+poss(harddrive-19, computer-17)
+prep_to(similar-14, harddrive-19)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (JJ non-Gaussian) (NNS features))
+        (VP (VBP are)
+          (VP (VBN expected)
+            (PP (IN in)
+              (NP (DT the) (NNP LSS)))))))
+    (NP (PRP we))
+    (VP (VBP feel)
+      (SBAR
+        (S
+          (NP (DT this) (NN result))
+          (VP (VBZ raises)
+            (NP
+              (NP (NNS issues))
+              (PP (IN about)
+                (NP
+                  (NP (DT the) (NN use))
+                  (PP (IN of)
+                    (NP (DT the) (NNP AoE) (NN statistic))))))
+            (PP (IN as)
+              (NP
+                (NP (DT a) (JJ general) (NN test))
+                (PP (IN for)
+                  (NP (NN statistic) (NN anisotropy)))))))))
+    (. .)))
+
+mark(expected-5, As-1)
+amod(features-3, non-Gaussian-2)
+nsubjpass(expected-5, features-3)
+auxpass(expected-5, are-4)
+advcl(feel-10, expected-5)
+det(LSS-8, the-7)
+prep_in(expected-5, LSS-8)
+nsubj(feel-10, we-9)
+root(ROOT-0, feel-10)
+det(result-12, this-11)
+nsubj(raises-13, result-12)
+ccomp(feel-10, raises-13)
+dobj(raises-13, issues-14)
+det(use-17, the-16)
+prep_about(issues-14, use-17)
+det(statistic-21, the-19)
+nn(statistic-21, AoE-20)
+prep_of(use-17, statistic-21)
+det(test-25, a-23)
+amod(test-25, general-24)
+prep_as(raises-13, test-25)
+nn(anisotropy-28, statistic-27)
+prep_for(test-25, anisotropy-28)
+

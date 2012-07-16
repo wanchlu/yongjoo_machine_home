@@ -1,0 +1,61 @@
+(ROOT
+  (X
+    (NP (CD 5))
+    (: :)
+    (FRAG
+      (SBAR (IN If)
+        (S
+          (NP (NN abortion))
+          (VP (VBD were)
+            (NP
+              (NP
+                (ADJP (JJ illegal)
+                  (CC and)
+                  (JJ considered))
+                (NN murder))
+              (ADVP (RB then))
+              (SBAR
+                (S
+                  (NP
+                    (NP (DT the) (NN mother))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBD had)
+                          (NP (DT the) (NN abortion))))))
+                  (VP (MD would)
+                    (VP (VB have)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP (VBN prosecuted)
+                              (PP (IN for)
+                                (NP (JJ first) (NN degree) (NN murder))))))))))))))))
+    (. .)))
+
+root(ROOT-0, 5-1)
+mark(murder-9, If-3)
+nsubj(murder-9, abortion-4)
+cop(murder-9, were-5)
+amod(murder-9, illegal-6)
+conj_and(illegal-6, considered-8)
+amod(murder-9, considered-8)
+dep(5-1, murder-9)
+dobj(have-18, murder-9)
+advmod(murder-9, then-10)
+det(mother-12, the-11)
+nsubj(had-14, mother-12)
+nsubj(have-18, mother-12)
+xsubj(prosecuted-21, mother-12)
+rcmod(mother-12, had-14)
+det(abortion-16, the-15)
+dobj(had-14, abortion-16)
+aux(have-18, would-17)
+rcmod(murder-9, have-18)
+aux(prosecuted-21, to-19)
+auxpass(prosecuted-21, be-20)
+xcomp(have-18, prosecuted-21)
+amod(murder-25, first-23)
+nn(murder-25, degree-24)
+prep_for(prosecuted-21, murder-25)
+

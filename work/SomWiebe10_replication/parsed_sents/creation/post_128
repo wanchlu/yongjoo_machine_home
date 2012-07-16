@@ -1,0 +1,115 @@
+(ROOT
+  (FRAG
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (VBZ comes)
+              (PRT (RP down))
+              (PP (TO to)
+                (NP (DT an) (JJ irreducible) (NN complexity) (NN argument))))))))
+    (: ...)
+    (FRAG
+      (SBAR
+        (WHADJP (WRB how) (JJ many))
+        (S
+          (NP (NNS mutations))
+          (VP (MD would)
+            (VP (VB be)
+              (ADJP (JJ necessary)
+                (S
+                  (VP (TO to)
+                    (VP (VB build)
+                      (NP (DT this) (JJ simple) (NN defense) (NN mechanism))))))))))
+      (. .))
+    (. .)))
+
+nsubj(think-2, I-1)
+dep(necessary-17, think-2)
+nsubj(comes-4, this-3)
+ccomp(think-2, comes-4)
+prt(comes-4, down-5)
+det(argument-10, an-7)
+amod(argument-10, irreducible-8)
+nn(argument-10, complexity-9)
+prep_to(comes-4, argument-10)
+advmod(many-13, how-12)
+dep(necessary-17, many-13)
+nsubj(necessary-17, mutations-14)
+aux(necessary-17, would-15)
+cop(necessary-17, be-16)
+root(ROOT-0, necessary-17)
+aux(build-19, to-18)
+xcomp(necessary-17, build-19)
+det(mechanism-23, this-20)
+amod(mechanism-23, simple-21)
+nn(mechanism-23, defense-22)
+dobj(build-19, mechanism-23)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (MD would) (RB all)
+      (VP (VB need)
+        (S
+          (VP (TO to)
+            (VP (VB happen)
+              (NP
+                (NP (NNP simultaneously))
+                (PRN (-LRB- -LRB-)
+                  (CC or)
+                  (ADVP (IN as) (DT a))
+                  (NP (NN stretch) (. .)))))))))
+    (. .)))
+
+nsubj(need-4, they-1)
+xsubj(happen-6, they-1)
+aux(need-4, would-2)
+advmod(need-4, all-3)
+root(ROOT-0, need-4)
+aux(happen-6, to-5)
+xcomp(need-4, happen-6)
+dobj(happen-6, simultaneously-7)
+dep(stretch-12, or-9)
+dep(stretch-12, as-10)
+dep(as-10, a-11)
+dep(simultaneously-7, stretch-12)
+
+(ROOT
+  (FRAG
+    (ADJP (RB nearly)
+      (SBAR
+        (S
+          (NP (NNP simultaneously))
+          (-RRB- -RRB-)
+          (VP (TO to)
+            (VP (VB be)
+              (FRAG
+                (ADJP (JJ effective))
+                (. .)))))))
+    (. .)))
+
+root(ROOT-0, nearly-1)
+nsubj(be-5, simultaneously-2)
+aux(be-5, to-4)
+dep(nearly-1, be-5)
+dep(be-5, effective-6)
+
+(ROOT
+  (S
+    (VP (VB and)
+      (ADJP
+        (ADVP (RB thus))
+        (JJ superior)
+        (PP (IN by)
+          (NP (JJ natural) (NN selection)))))
+    (. .)))
+
+root(ROOT-0, and-1)
+advmod(superior-3, thus-2)
+acomp(and-1, superior-3)
+amod(selection-6, natural-5)
+prep_by(superior-3, selection-6)
+

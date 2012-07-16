@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP know)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP are) (RB not)
+                (ADJP
+                  (ADJP (JJ old) (NN enough))
+                  (CC or)
+                  (ADJP (RB financially) (JJ stable)
+                    (S
+                      (VP (TO to)
+                        (VP (VB take)
+                          (NP
+                            (NP (NN care))
+                            (PP (IN of)
+                              (NP (DT a) (NN child)))))))))))))))
+    (ADVP (RB then))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (NP
+          (NP (NN sex))
+          (, ,) (RB just)
+          (NP (NN use) (NN protection)))))
+    (. .)))
+
+mark(know-3, If-1)
+nsubj(know-3, you-2)
+advcl(have-21, know-3)
+csubj(have-21, know-3)
+nsubj(enough-8, you-4)
+nsubj(stable-11, you-4)
+cop(enough-8, are-5)
+neg(enough-8, not-6)
+dep(enough-8, old-7)
+ccomp(know-3, enough-8)
+advmod(stable-11, financially-10)
+ccomp(know-3, stable-11)
+conj_or(enough-8, stable-11)
+aux(take-13, to-12)
+xcomp(stable-11, take-13)
+dobj(take-13, care-14)
+det(child-17, a-16)
+prep_of(care-14, child-17)
+advmod(have-21, then-18)
+aux(have-21, do-19)
+neg(have-21, n't-20)
+root(ROOT-0, have-21)
+dobj(have-21, sex-22)
+advmod(sex-22, just-24)
+nn(protection-26, use-25)
+dep(sex-22, protection-26)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR (RB Even) (IN if)
+      (S
+        (NP (NNP Roe)
+          (CC v.)
+          (NNP Wade))
+        (VP (VBD was)
+          (VP (VBN overturned)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (DT any) (NNS states))
+            (VP (MD would)
+              (VP (VB pass)
+                (NP
+                  (NP (DT a) (NN law))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBN precluded)
+                        (NP
+                          (NP (NN abortion))
+                          (PP (IN in)
+                            (NP
+                              (NP (DT the) (NN case))
+                              (PP (IN of)
+                                (NP (NN rape))))))))))))))))
+    (. .)))
+
+advmod(overturned-7, Even-1)
+dep(overturned-7, if-2)
+nsubjpass(overturned-7, Roe-3)
+conj_v.(Roe-3, Wade-5)
+nsubjpass(overturned-7, Wade-5)
+auxpass(overturned-7, was-6)
+advcl(think-12, overturned-7)
+nsubj(think-12, I-9)
+aux(think-12, do-10)
+neg(think-12, not-11)
+root(ROOT-0, think-12)
+det(states-14, any-13)
+nsubj(pass-16, states-14)
+aux(pass-16, would-15)
+ccomp(think-12, pass-16)
+det(law-18, a-17)
+dobj(pass-16, law-18)
+nsubj(precluded-20, law-18)
+rcmod(law-18, precluded-20)
+dobj(precluded-20, abortion-21)
+det(case-24, the-23)
+prep_in(abortion-21, case-24)
+prep_of(case-24, rape-26)
+

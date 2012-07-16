@@ -1,0 +1,41 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (DT The) (JJ electric) (NN stimulus))
+        (NP (DT that)))
+      (VP (VBZ triggers)
+        (NP
+          (NP (DT the) (JJ muscular) (NN portion))
+          (PP (IN of)
+            (NP (DT the) (NN heart))))))
+    (, ,)
+    (S
+      (S
+        (VP (VBN known)
+          (PP (IN as)
+            (NP (DT the) (NN myocardium)))
+          (, ,)
+          (PP (TO to)
+            (NP (NN contract)))))
+      (VP (VBZ is)
+        (ADJP (JJ myogenic))))
+    (. .)))
+
+det(stimulus-4, The-2)
+amod(stimulus-4, electric-3)
+nsubj(triggers-6, stimulus-4)
+dep(stimulus-4, that-5)
+root(ROOT-0, triggers-6)
+det(portion-9, the-7)
+amod(portion-9, muscular-8)
+dobj(triggers-6, portion-9)
+det(heart-12, the-11)
+prep_of(portion-9, heart-12)
+csubj(myogenic-22, known-14)
+det(myocardium-17, the-16)
+prep_as(known-14, myocardium-17)
+prep_to(known-14, contract-20)
+cop(myogenic-22, is-21)
+ccomp(triggers-6, myogenic-22)
+

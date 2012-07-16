@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB so))))
+    (, ,)
+    (NP (RB then))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN person))
+        (VP (VBG missing)
+          (S
+            (NP (DT a) (NN limb))
+            (ADJP (RBR less) (JJ human)
+              (PP (IN than)
+                (NP (CD one)))))
+          (PP (IN with)
+            (NP (DT all) (CD four) (NNS limbs))))))
+    (. ?)))
+
+mark(so-2, If-1)
+advcl(person-7, so-2)
+nsubj(person-7, then-4)
+cop(person-7, is-5)
+det(person-7, a-6)
+root(ROOT-0, person-7)
+partmod(person-7, missing-8)
+det(limb-10, a-9)
+nsubj(human-12, limb-10)
+advmod(human-12, less-11)
+xcomp(missing-8, human-12)
+prep_than(human-12, one-14)
+det(limbs-18, all-16)
+num(limbs-18, four-17)
+prep_with(missing-8, limbs-18)
+

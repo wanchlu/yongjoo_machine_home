@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP want)
+          (S
+            (VP (TO to)
+              (VP (VB agree)
+                (PP (IN with)
+                  (NP (NNP Mother) (NNP Theresa)))))))))
+    (, ,)
+    (NP
+      (NP
+        (NP (NN fine))
+        (PRN (-LRB- -LRB-)
+          (S
+            (NP (PRP she))
+            (VP
+              (ADVP (RB never))
+              (VBD experianced)
+              (S
+                (VP (VBG being)
+                  (ADJP (JJ pregnant))))))
+          (-RRB- -RRB-)))
+      (SBAR (CC but)
+        (S
+          (VP (TO to)
+            (VP (VB tell)
+              (NP
+                (NP (NNS others))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP do) (RB n't)
+                      (VP (VB share)
+                        (NP (PRP$ your) (JJ religious) (NNS beliefs))
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (PRP they))
+                            (VP (MD can)
+                              (CC or)
+                              (MD ca) (RB n't)
+                              (VP (VB do)))))))))))))))
+    (VP (VBZ is)
+      (ADJP (RB morally) (JJ wrong)))
+    (. .)))
+
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+xsubj(agree-5, you-2)
+advcl(wrong-38, want-3)
+aux(agree-5, to-4)
+xcomp(want-3, agree-5)
+nn(Theresa-8, Mother-7)
+prep_with(agree-5, Theresa-8)
+nsubj(wrong-38, fine-10)
+nsubj(experianced-14, she-12)
+neg(experianced-14, never-13)
+dep(fine-10, experianced-14)
+cop(pregnant-16, being-15)
+xcomp(experianced-14, pregnant-16)
+cc(tell-20, but-18)
+aux(tell-20, to-19)
+infmod(fine-10, tell-20)
+dobj(tell-20, others-21)
+nsubj(share-25, others-21)
+aux(share-25, do-23)
+neg(share-25, n't-24)
+rcmod(others-21, share-25)
+poss(beliefs-28, your-26)
+amod(beliefs-28, religious-27)
+dobj(share-25, beliefs-28)
+dobj(do-35, what-29)
+nsubj(do-35, they-30)
+aux(do-35, can-31)
+dep(share-25, ca-33)
+aux(do-35, ca-33)
+conj_or(do-35, ca-33)
+neg(do-35, n't-34)
+dep(share-25, do-35)
+cop(wrong-38, is-36)
+advmod(wrong-38, morally-37)
+root(ROOT-0, wrong-38)
+

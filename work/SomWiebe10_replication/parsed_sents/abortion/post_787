@@ -1,0 +1,94 @@
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (ADJP (VBG serious))
+    (. ?)))
+
+cop(serious-3, Are-1)
+nsubj(serious-3, you-2)
+root(ROOT-0, serious-3)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ amazing))
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS people))
+          (ADVP (RB only))
+          (VP (VBP discover)
+            (NP (DT these) (JJ amazing) (NNS predictions))
+            (SBAR (RB only) (IN after)
+              (S
+                (NP (NN science))
+                (VP (VBZ discovers)
+                  (NP (PRP them)))))))))
+    (. .)))
+
+nsubj(amazing-3, It-1)
+cop(amazing-3, 's-2)
+root(ROOT-0, amazing-3)
+advmod(discover-7, how-4)
+nsubj(discover-7, people-5)
+advmod(discover-7, only-6)
+ccomp(amazing-3, discover-7)
+det(predictions-10, these-8)
+amod(predictions-10, amazing-9)
+dobj(discover-7, predictions-10)
+advmod(discovers-14, only-11)
+dep(discovers-14, after-12)
+nsubj(discovers-14, science-13)
+dep(discover-7, discovers-14)
+dobj(discovers-14, them-15)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP News))
+      (VP (VBP flash)))
+    (, ,)
+    (NP (DT the) (NNP Bible))
+    (VP (VBZ does) (RB n't)
+      (VP (VB predict)
+        (NP (NN anything))))
+    (. .)))
+
+nsubj(flash-2, News-1)
+ccomp(predict-8, flash-2)
+det(Bible-5, the-4)
+nsubj(predict-8, Bible-5)
+aux(predict-8, does-6)
+neg(predict-8, n't-7)
+root(ROOT-0, predict-8)
+dobj(predict-8, anything-9)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (ADVP (RB just))
+      (VP (VBG seeing)
+        (S
+          (VP (VB want)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB see)))))))))))
+    (. .)))
+
+nsubj(seeing-4, You-1)
+aux(seeing-4, 're-2)
+advmod(seeing-4, just-3)
+root(ROOT-0, seeing-4)
+ccomp(seeing-4, want-5)
+nsubj(want-7, you-6)
+xsubj(see-9, you-6)
+ccomp(want-5, want-7)
+aux(see-9, to-8)
+xcomp(want-7, see-9)
+

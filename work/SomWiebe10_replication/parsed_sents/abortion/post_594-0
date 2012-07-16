@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP
+      (UCP
+        (NP
+          (NP (DT Neither))
+          (NP (DT an) (NN egg)))
+        (, ,)
+        (CC nor)
+        (ADJP (JJ sperm)))
+      (NN cell))
+    (VP (VBZ contains)
+      (NP
+        (NP (DT a) (JJ full) (CD 46) (NNS chromosomes))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB gnetically))
+            (VP (VBP comprise)
+              (NP (DT a) (JJ human) (NN being)))))))
+    (. .)))
+
+nn(cell-7, Neither-1)
+det(egg-3, an-2)
+dep(Neither-1, egg-3)
+conj_nor(Neither-1, sperm-6)
+nn(cell-7, sperm-6)
+nsubj(contains-8, cell-7)
+root(ROOT-0, contains-8)
+det(chromosomes-12, a-9)
+amod(chromosomes-12, full-10)
+num(chromosomes-12, 46-11)
+dobj(contains-8, chromosomes-12)
+nsubj(comprise-15, chromosomes-12)
+advmod(comprise-15, gnetically-14)
+rcmod(chromosomes-12, comprise-15)
+det(being-18, a-16)
+amod(being-18, human-17)
+dobj(comprise-15, being-18)
+

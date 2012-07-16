@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (VP
+      (VP (VB \/) (-RRB- -RRB-)
+        (NP (DT The) (NN book))
+        (PP (IN of)
+          (NP
+            (NP (NNP Genesis))
+            (SBAR
+              (S
+                (VP (VBD was)
+                  (VP (VBN written)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (JJ literary) (NN form))
+                        (PP (IN of)
+                          (NP
+                            (NP (NN allegory) (JJ typical))
+                            (PP (IN of)
+                              (NP (PRP$ its) (NN period))))))))))))))
+      (CC and)
+      (VP (VBD was)
+        (ADVP (RB never))
+        (VP (VBN meant)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP (DT a) (JJ scientific) (NN manual))))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+det(book-4, The-3)
+dobj(\/-1, book-4)
+prep_of(\/-1, Genesis-6)
+auxpass(written-8, was-7)
+rcmod(Genesis-6, written-8)
+det(form-12, the-10)
+amod(form-12, literary-11)
+prep_in(written-8, form-12)
+prep_of(form-12, allegory-14)
+amod(allegory-14, typical-15)
+poss(period-18, its-17)
+prep_of(allegory-14, period-18)
+auxpass(meant-22, was-20)
+neg(meant-22, never-21)
+conj_and(\/-1, meant-22)
+aux(manual-27, to-23)
+cop(manual-27, be-24)
+det(manual-27, a-25)
+amod(manual-27, scientific-26)
+xcomp(meant-22, manual-27)
+

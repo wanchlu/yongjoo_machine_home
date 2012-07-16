@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ non-religious) (NNS scientists))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP believe)
+              (PP (IN in)
+                (NP (NNP IDa) (NN couple)))))))
+      (VP (VBP are)
+        (ADJP
+          (NP (DT a) (RB bit))
+          (JJ extreme))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS guys))
+            (PP (IN on)
+              (NP (RB here))))))
+      (VP (VBP are)
+        (ADJP (RB pretty) (JJ rational)
+          (SBAR
+            (S
+              (S
+                (NP (NNP ID))
+                (VP
+                  (VP (VBZ believers))
+                  (PRN (-LRB- -LRB-)
+                    (CC and)
+                    (VP (VBP are) (RB not)
+                      (ADJP (JJ religious)))
+                    (-RRB- -RRB-))))
+              (, ,)
+              (CC and)
+              (, ,)
+              (S
+                (NP (PRP they))
+                (VP (VBP 're)
+                  (NP (NNS scientists)
+                    (CC and)
+                    (NNS scholars)))))))))
+    (. .)))
+
+amod(scientists-2, non-religious-1)
+nsubj(believe-4, scientists-2)
+nsubj(extreme-11, scientists-2)
+rcmod(scientists-2, believe-4)
+nn(couple-7, IDa-6)
+prep_in(believe-4, couple-7)
+cop(extreme-11, are-8)
+det(bit-10, a-9)
+npadvmod(extreme-11, bit-10)
+root(ROOT-0, extreme-11)
+nsubj(rational-22, most-14)
+det(guys-17, the-16)
+prep_of(most-14, guys-17)
+prep(guys-17, on-18)
+pobj(on-18, here-19)
+cop(rational-22, are-20)
+advmod(rational-22, pretty-21)
+conj_but(extreme-11, rational-22)
+nsubj(believers-24, ID-23)
+dep(rational-22, believers-24)
+dep(religious-29, and-26)
+cop(religious-29, are-27)
+neg(religious-29, not-28)
+dep(believers-24, religious-29)
+nsubj(scientists-36, they-34)
+cop(scientists-36, 're-35)
+dep(rational-22, scientists-36)
+conj_and(believers-24, scientists-36)
+conj_and(believers-24, scholars-38)
+conj_and(scientists-36, scholars-38)
+

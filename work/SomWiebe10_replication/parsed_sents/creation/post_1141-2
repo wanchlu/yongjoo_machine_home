@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT A) (NN theory))
+        (PP (IN in)
+          (NP (NN science))))
+      (, ,)
+      (VP (VBZ is)
+        (NP
+          (NP (DT an) (NN explanation))
+          (PP (IN for)
+            (NP (NNS observations))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD can) (RB not)
+        (VP (VB deny)
+          (SBAR (IN that)
+            (S
+              (NP (NN evolution))
+              (VP (VBZ has)
+                (VP (VBN taken)
+                  (NP (NN place))
+                  (PP (IN over)
+                    (NP
+                      (NP (DT the) (JJ last) (NNS millions))
+                      (PP (IN of)
+                        (NP (NNS years))))))))))))
+    (. .)))
+
+det(theory-2, A-1)
+nsubj(explanation-8, theory-2)
+prep_in(theory-2, science-4)
+cop(explanation-8, is-6)
+det(explanation-8, an-7)
+root(ROOT-0, explanation-8)
+prep_for(explanation-8, observations-10)
+nsubj(deny-16, you-13)
+aux(deny-16, can-14)
+neg(deny-16, not-15)
+conj_and(explanation-8, deny-16)
+complm(taken-20, that-17)
+nsubj(taken-20, evolution-18)
+aux(taken-20, has-19)
+ccomp(deny-16, taken-20)
+dobj(taken-20, place-21)
+det(millions-25, the-23)
+amod(millions-25, last-24)
+prep_over(taken-20, millions-25)
+prep_of(millions-25, years-27)
+

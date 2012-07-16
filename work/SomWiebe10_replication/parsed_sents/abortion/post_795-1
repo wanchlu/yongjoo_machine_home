@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN abortion))
+        (VP (VBD was)
+          (ADJP (JJ illegal)))))
+    (NP (PRP it))
+    (VP (MD would)
+      (ADVP (RB just))
+      (VP (VB have)
+        (S
+          (NP (NNS women))
+          (ADJP (JJ revert)
+            (PP (TO to)
+              (NP (DT the) (JJ old) (NNS ways))))
+          (S
+            (VP (VB IE)
+              (NP (JJ close) (NNS hangers)))))))
+    (. .)))
+
+mark(illegal-4, If-1)
+nsubj(illegal-4, abortion-2)
+cop(illegal-4, was-3)
+advcl(have-8, illegal-4)
+nsubj(have-8, it-5)
+aux(have-8, would-6)
+advmod(have-8, just-7)
+root(ROOT-0, have-8)
+nsubj(IE-15, women-9)
+dep(IE-15, revert-10)
+det(ways-14, the-12)
+amod(ways-14, old-13)
+prep_to(revert-10, ways-14)
+xcomp(have-8, IE-15)
+amod(hangers-17, close-16)
+dobj(IE-15, hangers-17)
+

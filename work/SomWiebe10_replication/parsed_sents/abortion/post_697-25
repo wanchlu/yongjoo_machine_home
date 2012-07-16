@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBD said)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNS cells))
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (VBP make)
+            (NP (PRP them))
+            (PRT (RP out))
+            (PP (IN of))))))
+    (VP (VBP are) (RB not)
+      (NP (JJ potential) (NNS humans))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NNS cells))
+          (VP (VBP are)
+            (VP (VBN considered)
+              (ADVP (RB individually)))))))
+    (. .)))
+
+nsubj(said-2, I-1)
+ccomp(humans-15, said-2)
+det(cells-5, the-4)
+nsubj(humans-15, cells-5)
+complm(make-8, that-6)
+nsubj(make-8, they-7)
+dep(cells-5, make-8)
+dobj(make-8, them-9)
+prt(make-8, out-10)
+prep(make-8, of-11)
+cop(humans-15, are-12)
+neg(humans-15, not-13)
+amod(humans-15, potential-14)
+root(ROOT-0, humans-15)
+advmod(considered-21, when-17)
+det(cells-19, the-18)
+nsubjpass(considered-21, cells-19)
+auxpass(considered-21, are-20)
+advcl(humans-15, considered-21)
+advmod(considered-21, individually-22)
+

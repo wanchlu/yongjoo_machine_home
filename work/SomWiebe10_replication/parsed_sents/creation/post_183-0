@@ -1,0 +1,50 @@
+(ROOT
+  (S (IN So)
+    (NP (WDT what))
+    (, ,)
+    (S
+      (VP (VBG using)
+        (NP (JJ intelligent) (NN design))))
+    (, ,)
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN purpose))
+        (PP (IN of)
+          (NP (DT the) (NN appendix)))))
+    (. ?)))
+
+dep(purpose-10, So-1)
+nsubj(purpose-10, what-2)
+partmod(purpose-10, using-4)
+amod(design-6, intelligent-5)
+dobj(using-4, design-6)
+cop(purpose-10, is-8)
+det(purpose-10, the-9)
+root(ROOT-0, purpose-10)
+det(appendix-13, the-12)
+prep_of(purpose-10, appendix-13)
+
+(ROOT
+  (S
+    (NP (NNP ID))
+    (ADVP (RB simply))
+    (VP (VBD predicted)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN appendix))
+          (VP (MD would)
+            (VP (VB have)
+              (NP (DT a) (NN function)))))))
+    (. .)))
+
+nsubj(predicted-3, ID-1)
+advmod(predicted-3, simply-2)
+root(ROOT-0, predicted-3)
+complm(have-8, that-4)
+det(appendix-6, the-5)
+nsubj(have-8, appendix-6)
+aux(have-8, would-7)
+ccomp(predicted-3, have-8)
+det(function-10, a-9)
+dobj(have-8, function-10)
+

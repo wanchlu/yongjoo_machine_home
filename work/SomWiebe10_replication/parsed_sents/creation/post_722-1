@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Reading)
+        (PP (IN about)
+          (NP (DT this)))))
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB again))
+      (VP (VBN read)
+        (PP (IN over)
+          (NP (DT the) (NNS mechanics)))
+        (SBAR
+          (SBAR
+            (WHPP (IN of)
+              (WHNP (WP what) (RB exactly)))
+            (S
+              (NP (DT a) (JJ solar) (NN eclipse))
+              (VP (VBZ is))))
+          (: ...)
+          (CC and)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBZ causes)
+                (SBAR
+                  (S
+                    (NP (NNS eclipses))
+                    (VP (VBZ is)
+                      (PP (IN in)
+                        (NP (DT no) (NN way)))
+                      (ADJP (JJ indicative)
+                        (PP (IN of)
+                          (NP
+                            (NP (NN intent))
+                            (PP (IN behind)
+                              (NP
+                                (NP (PRP it) (POS 's))
+                                (NN size)
+                                (CC and)
+                                (NN position)))))))))))))))
+    (. .)))
+
+dep(read-7, Reading-1)
+prep_about(Reading-1, this-3)
+nsubj(read-7, I-4)
+aux(read-7, have-5)
+advmod(read-7, again-6)
+root(ROOT-0, read-7)
+det(mechanics-10, the-9)
+prep_over(read-7, mechanics-10)
+dep(is-17, of-11)
+pobj(of-11, what-12)
+advmod(what-12, exactly-13)
+det(eclipse-16, a-14)
+amod(eclipse-16, solar-15)
+nsubj(is-17, eclipse-16)
+ccomp(read-7, is-17)
+complm(causes-22, that-20)
+nsubj(causes-22, it-21)
+ccomp(read-7, causes-22)
+conj_and(is-17, causes-22)
+nsubj(indicative-28, eclipses-23)
+cop(indicative-28, is-24)
+det(way-27, no-26)
+prep_in(indicative-28, way-27)
+ccomp(causes-22, indicative-28)
+prep_of(indicative-28, intent-30)
+poss(size-34, it-32)
+prep_behind(intent-30, size-34)
+prep_behind(intent-30, position-36)
+conj_and(size-34, position-36)
+

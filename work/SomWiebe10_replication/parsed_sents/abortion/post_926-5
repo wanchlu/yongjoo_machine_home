@@ -1,0 +1,68 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ
+      (NP (PRP you))
+      (VP (VB get)
+        (S
+          (NP (DT a) (NN chance))
+          (ADVP (RB also))
+          (VP (VB pick)
+            (ADVP (IN up)
+              (NP (DT the) (NN book))
+              (PP (IN From)
+                (NP (NNP Darwin)))
+              (PP (TO to)
+                (NP (NNP Hitler))))
+            (PP (IN by)
+              (NP
+                (NP (NNP Dr.) (NNP Richard) (NNP WeikartNow))
+                (PP (TO to)
+                  (NP
+                    (NP (PRP$ your) (NN question))
+                    (PP (IN of)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (VP (VBP do)
+                            (SBAR
+                              (S
+                                (NP (PRP you))
+                                (VP (VBP begin)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB class)
+                                        (NP (DT a) (NN fetus))
+                                        (PP (IN as)
+                                          (NP (DT a) (NN human)))))))))))))))))))))
+    (. ?)))
+
+advmod(get-3, When-1)
+nsubj(get-3, you-2)
+root(ROOT-0, get-3)
+det(chance-5, a-4)
+nsubj(pick-7, chance-5)
+advmod(pick-7, also-6)
+ccomp(get-3, pick-7)
+advmod(pick-7, up-8)
+det(book-10, the-9)
+pobj(up-8, book-10)
+prep_from(up-8, Darwin-12)
+prep_to(up-8, Hitler-14)
+nn(WeikartNow-18, Dr.-16)
+nn(WeikartNow-18, Richard-17)
+prep_by(pick-7, WeikartNow-18)
+poss(question-21, your-20)
+prep_to(WeikartNow-18, question-21)
+advmod(do-24, when-23)
+prepc_of(question-21, do-24)
+nsubj(begin-26, you-25)
+xsubj(class-28, you-25)
+ccomp(do-24, begin-26)
+aux(class-28, to-27)
+xcomp(begin-26, class-28)
+det(fetus-30, a-29)
+dobj(class-28, fetus-30)
+det(human-33, a-32)
+prep_as(class-28, human-33)
+

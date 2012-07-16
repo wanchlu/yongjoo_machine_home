@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I)
+          (CC and)
+          (NNS others))
+        (VP (VBP have)
+          (PRN (, ,)
+            (ADVP (RB quite)
+              (S
+                (VP (VB convincingly)
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (MD would)
+                        (VP (VB argue))))))))
+            (, ,))
+          (VP (VBN shown)))))
+    (, ,)
+    (NP (DT the) (NN right)
+      (S
+        (VP (TO to)
+          (VP (VB speak)))))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN heard)))))))
+    (. .)))
+
+mark(shown-13, As-1)
+nsubj(shown-13, I-2)
+conj_and(I-2, others-4)
+nsubj(shown-13, others-4)
+aux(shown-13, have-5)
+dep(shown-13, quite-7)
+dep(quite-7, convincingly-8)
+nsubj(argue-11, I-9)
+aux(argue-11, would-10)
+ccomp(convincingly-8, argue-11)
+advcl(right-22, shown-13)
+det(right-16, the-15)
+nsubj(right-22, right-16)
+aux(speak-18, to-17)
+infmod(right-16, speak-18)
+cop(right-22, is-19)
+neg(right-22, not-20)
+det(right-22, a-21)
+root(ROOT-0, right-22)
+aux(heard-25, to-23)
+auxpass(heard-25, be-24)
+infmod(right-22, heard-25)
+

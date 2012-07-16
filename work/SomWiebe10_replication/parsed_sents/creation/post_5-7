@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (DT the) (NN evidence))
+          (VP (VBZ demonstrates)
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (NNS hypothesis))
+                (VP (VBZ is)
+                  (ADJP (RB likely) (JJ false))))))))
+      (, ,)
+      (ADVP (RB then))
+      (NP (PRP it))
+      (VP (VBZ is)
+        (VP (VBN scrapped))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT a) (JJ new) (NNS hypothesis))
+      (VP (VBZ is)
+        (VP (VBN formed))))
+    (. .)))
+
+mark(demonstrates-4, If-1)
+det(evidence-3, the-2)
+nsubj(demonstrates-4, evidence-3)
+advcl(scrapped-15, demonstrates-4)
+complm(false-10, that-5)
+det(hypothesis-7, a-6)
+nsubj(false-10, hypothesis-7)
+cop(false-10, is-8)
+advmod(false-10, likely-9)
+ccomp(demonstrates-4, false-10)
+advmod(scrapped-15, then-12)
+nsubjpass(scrapped-15, it-13)
+auxpass(scrapped-15, is-14)
+root(ROOT-0, scrapped-15)
+det(hypothesis-20, a-18)
+amod(hypothesis-20, new-19)
+nsubjpass(formed-22, hypothesis-20)
+auxpass(formed-22, is-21)
+conj_and(scrapped-15, formed-22)
+

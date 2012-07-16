@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD proved)
+      (S
+        (NP (PRP you))
+        (ADJP (JJ guilty))))
+    (. .)))
+
+nsubj(proved-2, I-1)
+root(ROOT-0, proved-2)
+nsubj(guilty-4, you-3)
+xcomp(proved-2, guilty-4)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (ADVP (RB just))
+      (VP (VBG turning)
+        (NP (DT a) (JJ blind) (NN eye))
+        (PP (TO to)
+          (NP (PRP it)))))
+    (. !)))
+
+nsubj(turning-4, You-1)
+aux(turning-4, 're-2)
+advmod(turning-4, just-3)
+root(ROOT-0, turning-4)
+det(eye-7, a-5)
+amod(eye-7, blind-6)
+dobj(turning-4, eye-7)
+prep_to(turning-4, it-9)
+
+(ROOT
+  (S
+    (NP (DT Those))
+    (VP (VBD were)
+      (NP
+        (NP (DT the) (NNS lies))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBD paid)
+              (S
+                (VP (TO to)
+                  (VP (VB have)
+                    (VP (VBN spread))))))))))
+    (. .)))
+
+nsubj(lies-4, Those-1)
+cop(lies-4, were-2)
+det(lies-4, the-3)
+root(ROOT-0, lies-4)
+dobj(paid-6, lies-4)
+nsubj(paid-6, they-5)
+xsubj(spread-9, they-5)
+rcmod(lies-4, paid-6)
+aux(spread-9, to-7)
+aux(spread-9, have-8)
+xcomp(paid-6, spread-9)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're) (RB not)
+          (ADJP (JJ willing)
+            (S
+              (VP (TO to)
+                (VP (VB understand)
+                  (NP (DT the) (NN truth)))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB help)
+        (NP (PRP you))))
+    (. .)))
+
+mark(willing-5, If-1)
+nsubj(willing-5, you-2)
+cop(willing-5, 're-3)
+neg(willing-5, not-4)
+advcl(help-15, willing-5)
+aux(understand-7, to-6)
+xcomp(willing-5, understand-7)
+det(truth-9, the-8)
+dobj(understand-7, truth-9)
+advmod(help-15, then-11)
+nsubj(help-15, I-12)
+aux(help-15, ca-13)
+neg(help-15, n't-14)
+root(ROOT-0, help-15)
+dobj(help-15, you-16)
+

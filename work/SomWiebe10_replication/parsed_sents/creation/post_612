@@ -1,0 +1,103 @@
+(ROOT
+  (S (: --)
+    (S
+      (NP (NNP ID))
+      (VP (MD may)
+        (VP (VB assert))))
+    (CC but)
+    (S
+      (PP (IN as)
+        (NP (DT a) (NN science)))
+      (NP (PRP$ their) (NNS contributions))
+      (VP (VBP remain)
+        (ADVP (RB largely))
+        (PP (IN with)
+          (NP (NN content)))))
+    (. .)))
+
+nsubj(assert-4, ID-2)
+aux(assert-4, may-3)
+root(ROOT-0, assert-4)
+det(science-8, a-7)
+prep_as(remain-11, science-8)
+poss(contributions-10, their-9)
+nsubj(remain-11, contributions-10)
+conj_but(assert-4, remain-11)
+advmod(remain-11, largely-12)
+prep_with(remain-11, content-14)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBD meant)
+            (PP (TO to)
+              (NP (NN type)))
+            (PP
+              (PP (IN without))
+              (, ,) (RB not)
+              (PP (IN with)))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(meant-4, you-3)
+ccomp(think-2, meant-4)
+prep_to(meant-4, type-6)
+prep(meant-4, without-7)
+neg(without-7, not-9)
+prep(without-7, with-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ reasonable) (NN infrence))
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (NNP God))
+          (VP (VBD created)
+            (NP (PRP us))
+            (PP (IN in)
+              (PP (IN without)
+                (NP
+                  (NP (NN content))
+                  (PRN (: --)
+                    (FRAG (RB Not)
+                      (ADVP (RB really)))))))))))
+    (, ,)
+    (VP (VBP remember)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBD were)
+            (VP (VBG talking)
+              (PP (IN about)
+                (NP (NNP ID)))
+              (PP (IN as)
+                (NP (DT a) (NN science))))))))
+    (. .)))
+
+det(infrence-3, A-1)
+amod(infrence-3, reasonable-2)
+nsubj(remember-16, infrence-3)
+complm(created-7, that-4)
+det(God-6, a-5)
+nsubj(created-7, God-6)
+dep(infrence-3, created-7)
+dobj(created-7, us-8)
+prep(created-7, in-9)
+pcomp(in-9, without-10)
+prep_without(in-9, content-11)
+dep(content-11, Not-13)
+dep(Not-13, really-14)
+root(ROOT-0, remember-16)
+nsubj(talking-19, we-17)
+aux(talking-19, were-18)
+ccomp(remember-16, talking-19)
+prep_about(talking-19, ID-21)
+det(science-24, a-23)
+prep_as(talking-19, science-24)
+

@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NN abortion))
+      (PP (IN after)
+        (NP (DT that) (NN point))))
+    (VP (MD should)
+      (VP (VB be)
+        (NP
+          (NP (NNP ONLY))
+          (VP (VBN done)
+            (SBAR (IN if)
+              (S
+                (NP (DT the) (NN fetus))
+                (VP (VBZ is)
+                  (ADVP (RB clearly))
+                  (ADJP (RB physically) (JJ non-viable))))))
+          (, ,)
+          (PP (JJ such) (IN as)
+            (NP (DT an) (JJ anencephalic) (NN fetus))))))
+    (. .)))
+
+det(abortion-2, Any-1)
+nsubj(ONLY-8, abortion-2)
+det(point-5, that-4)
+prep_after(abortion-2, point-5)
+aux(ONLY-8, should-6)
+cop(ONLY-8, be-7)
+root(ROOT-0, ONLY-8)
+partmod(ONLY-8, done-9)
+mark(non-viable-16, if-10)
+det(fetus-12, the-11)
+nsubj(non-viable-16, fetus-12)
+cop(non-viable-16, is-13)
+advmod(non-viable-16, clearly-14)
+advmod(non-viable-16, physically-15)
+advcl(done-9, non-viable-16)
+det(fetus-22, an-20)
+amod(fetus-22, anencephalic-21)
+prep_such_as(ONLY-8, fetus-22)
+

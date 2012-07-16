@@ -1,0 +1,49 @@
+(ROOT
+  (S ('' '')
+    (PP
+      (ADVP (RB So))
+      (IN since)
+      (NP
+        (NP (DT that))
+        (SBAR
+          (S
+            (VP (VBZ 's)
+              (VP (VBN been)
+                (VP (VBN taken))))))))
+    (VP (VBP care)
+      (PP (IN of) (IN in)
+        (NP
+          (NP (DT the) (NN form))
+          (PP (IN of)
+            (NP
+              (NP (NNS dozens))
+              (PP (IN of)
+                (NP
+                  (NP (NNS books))
+                  (, ,)
+                  (NP (NNS websites))
+                  (, ,) (FW etc.)))))
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ happens)
+                (ADVP (RB now))))))))
+    (. ?)))
+
+advmod(care-8, So-2)
+prep_since(care-8, that-4)
+auxpass(taken-7, 's-5)
+auxpass(taken-7, been-6)
+rcmod(that-4, taken-7)
+root(ROOT-0, care-8)
+dep(care-8, of-9)
+det(form-12, the-11)
+prep_in(care-8, form-12)
+nsubj(happens-22, form-12)
+prep_of(form-12, dozens-14)
+prep_of(dozens-14, books-16)
+appos(books-16, websites-18)
+dep(books-16, etc.-20)
+rcmod(form-12, happens-22)
+advmod(happens-22, now-23)
+

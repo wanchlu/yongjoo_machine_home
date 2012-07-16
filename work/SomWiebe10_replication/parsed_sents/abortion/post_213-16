@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS ideals))
+      (PP (IN of)
+        (NP
+          (NP (JJ personal) (NN freedom))
+          (, ,)
+          (NP
+            (NP (DT the)
+              (ADJP (JJ right) (TO to) (JJ free))
+              (NN speech))
+            (CC and)
+            (NP
+              (NP (DT the) (NN practice))
+              (PP (IN of)
+                (NP (NN religion))))))))
+    (VP (VBP become)
+      (NP
+        (NP (DT an) (NN farce))
+        (, ,)
+        (SBAR (IN for)
+          (S
+            (NP (EX there))
+            (VP (VBP are)
+              (NP
+                (NP (DT those))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP have) (RB not)
+                      (VP (VBN been)
+                        (VP (VBN allowed)
+                          (S
+                            (VP (TO to)
+                              (VP (VB choose)))))))))))))))
+    (. .)))
+
+det(ideals-2, The-1)
+nsubj(farce-19, ideals-2)
+amod(freedom-5, personal-4)
+prep_of(ideals-2, freedom-5)
+det(speech-11, the-7)
+amod(free-10, right-8)
+dep(free-10, to-9)
+amod(speech-11, free-10)
+appos(freedom-5, speech-11)
+det(practice-14, the-13)
+appos(freedom-5, practice-14)
+conj_and(speech-11, practice-14)
+prep_of(practice-14, religion-16)
+cop(farce-19, become-17)
+det(farce-19, an-18)
+root(ROOT-0, farce-19)
+mark(are-23, for-21)
+expl(are-23, there-22)
+dep(farce-19, are-23)
+nsubj(are-23, those-24)
+nsubjpass(allowed-29, those-24)
+aux(allowed-29, have-26)
+neg(allowed-29, not-27)
+auxpass(allowed-29, been-28)
+rcmod(those-24, allowed-29)
+aux(choose-31, to-30)
+xcomp(allowed-29, choose-31)
+

@@ -1,0 +1,206 @@
+(ROOT
+  (S
+    (NP (DT The) (NN man))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NN responsibility))
+        (SBAR (IN until)
+          (S
+            (NP (DT the) (NN child))
+            (VP (VBZ is)
+              (VP (VBN born)))))))
+    (. .)))
+
+det(man-2, The-1)
+nsubj(has-3, man-2)
+root(ROOT-0, has-3)
+det(responsibility-5, no-4)
+dobj(has-3, responsibility-5)
+mark(born-10, until-6)
+det(child-8, the-7)
+nsubjpass(born-10, child-8)
+auxpass(born-10, is-9)
+dep(responsibility-5, born-10)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD might)
+      (VP (VB die)))
+    (. .)))
+
+nsubj(die-3, He-1)
+aux(die-3, might-2)
+root(ROOT-0, die-3)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD might)
+      (VP (VB skip)
+        (NP (NN town))))
+    (. .)))
+
+nsubj(skip-3, He-1)
+aux(skip-3, might-2)
+root(ROOT-0, skip-3)
+dobj(skip-3, town-4)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD might)
+      (VP (VB get)
+        (VP (VBN thrown)
+          (PP (IN in)
+            (NP (NN prison))))))
+    (. .)))
+
+nsubjpass(thrown-4, He-1)
+aux(thrown-4, might-2)
+auxpass(thrown-4, get-3)
+root(ROOT-0, thrown-4)
+prep_in(thrown-4, prison-6)
+
+(ROOT
+  (S
+    (NP (DT The) (NN woman))
+    (VP (MD might)
+      (VP (VB have)
+        (VP (VBN had)
+          (NP
+            (NP
+              (QP (JJR more) (IN than) (CD one))
+              (JJ sexual) (NN partner))
+            (PP (IN around)
+              (NP
+                (NP (DT the) (NN time))
+                (PP (IN of)
+                  (NP (NN conception)))))))))
+    (. .)))
+
+det(woman-2, The-1)
+nsubj(had-5, woman-2)
+aux(had-5, might-3)
+aux(had-5, have-4)
+root(ROOT-0, had-5)
+mwe(than-7, more-6)
+quantmod(one-8, than-7)
+num(partner-10, one-8)
+amod(partner-10, sexual-9)
+dobj(had-5, partner-10)
+det(time-13, the-12)
+prep_around(partner-10, time-13)
+prep_of(time-13, conception-15)
+
+(ROOT
+  (S
+    (NP (DT The) (NN man))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NNS rights))
+        (PP (IN at)
+          (NP (DT all)))))
+    (. .)))
+
+det(man-2, The-1)
+nsubj(has-3, man-2)
+root(ROOT-0, has-3)
+det(rights-5, no-4)
+dobj(has-3, rights-5)
+prep_at(rights-5, all-7)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADVP (DT all) (RB up))
+      (PP (TO to)
+        (NP (DT the) (NN mother))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+dep(up-4, all-3)
+advmod('s-2, up-4)
+det(mother-7, the-6)
+prep_to('s-2, mother-7)
+
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB carry)
+            (NP (PRP it))
+            (PP (IN for)
+              (NP
+                (NP (CD nine) (NNS months))
+                (PRN (-LRB- -LRB-)
+                  (SQ (MD should)
+                    (NP (PRP she))
+                    (VP (VB choose)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)
+                            (NP (PRP it)))))))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+nsubj(has-2, She-1)
+xsubj(carry-4, She-1)
+root(ROOT-0, has-2)
+aux(carry-4, to-3)
+xcomp(has-2, carry-4)
+dobj(carry-4, it-5)
+num(months-8, nine-7)
+prep_for(carry-4, months-8)
+aux(choose-12, should-10)
+nsubj(choose-12, she-11)
+xsubj(have-14, she-11)
+dep(months-8, choose-12)
+aux(have-14, to-13)
+xcomp(choose-12, have-14)
+dobj(have-14, it-15)
+
+(ROOT
+  (S
+    (NP (DT The) (NN man))
+    (VP (VBZ is)
+      (ADJP (JJ irrelevant)
+        (PP (IN in)
+          (NP (DT this) (NN situation)))))
+    (. .)))
+
+det(man-2, The-1)
+nsubj(irrelevant-4, man-2)
+cop(irrelevant-4, is-3)
+root(ROOT-0, irrelevant-4)
+det(situation-7, this-6)
+prep_in(irrelevant-4, situation-7)
+
+(ROOT
+  (S
+    (NP (DT The) (NN choice))
+    (VP
+      (VP (VBZ is))
+      (CC and)
+      (VP (MD should)
+        (ADVP (RB only))
+        (VP (VB be)
+          (NP
+            (NP (DT the) (NN mother))
+            (VP (VBZ 's))))))
+    (. .)))
+
+det(choice-2, The-1)
+nsubj(is-3, choice-2)
+root(ROOT-0, is-3)
+aux(mother-9, should-5)
+advmod(mother-9, only-6)
+cop(mother-9, be-7)
+det(mother-9, the-8)
+conj_and(is-3, mother-9)
+dep(mother-9, 's-10)
+

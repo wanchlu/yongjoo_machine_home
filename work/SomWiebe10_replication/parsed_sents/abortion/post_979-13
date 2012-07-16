@@ -1,0 +1,47 @@
+(ROOT
+  (S (IN So)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (NP (NNS abortions))
+              (VP (MD should) (RB n't)
+                (VP (VB be)
+                  (VP (VBN banned)))))))))
+    (, ,)
+    (ADVP (RB please))
+    (VP (VBP tell)
+      (NP
+        (NP (PRP me))
+        (SBAR
+          (WHNP (RB exactly) (WP what))
+          (S
+            (VP (VBZ is)
+              (VP (VBG being)
+                (VP (VBN killed)
+                  (PP (IN in)
+                    (NP (DT an) (NN abortion))))))))))
+    (, ,)))
+
+dep(tell-12, So-1)
+mark(think-4, if-2)
+nsubj(think-4, you-3)
+dep(tell-12, think-4)
+nsubjpass(banned-9, abortions-5)
+aux(banned-9, should-6)
+neg(banned-9, n't-7)
+auxpass(banned-9, be-8)
+ccomp(think-4, banned-9)
+advmod(tell-12, please-11)
+root(ROOT-0, tell-12)
+dobj(tell-12, me-13)
+nsubjpass(killed-18, me-13)
+advmod(what-15, exactly-14)
+aux(killed-18, is-16)
+auxpass(killed-18, being-17)
+rcmod(me-13, killed-18)
+det(abortion-21, an-20)
+prep_in(killed-18, abortion-21)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (ADVP (RB totally))
+      (PP (IN with)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBD said)
+              (NP (NNP Cerin)))))))
+    (: ...)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+advmod(agree-2, totally-3)
+dobj(said-7, what-5)
+nsubj(said-7, you-6)
+prepc_with(agree-2, said-7)
+dobj(said-7, Cerin-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (, ,)
+    (ADVP (RB too))
+    (, ,)
+    (VP (VBP find)
+      (S
+        (NP (PRP it))
+        (ADJP
+          (ADJP
+            (NP (DT a) (RB bit))
+            (JJ amusing))
+          (CC and)
+          (ADJP (JJ tiresome)))))
+    (. .)))
+
+nsubj(find-5, I-1)
+advmod(find-5, too-3)
+root(ROOT-0, find-5)
+nsubj(amusing-9, it-6)
+nsubj(tiresome-11, it-6)
+det(bit-8, a-7)
+npadvmod(amusing-9, bit-8)
+xcomp(find-5, amusing-9)
+xcomp(find-5, tiresome-11)
+conj_and(amusing-9, tiresome-11)
+

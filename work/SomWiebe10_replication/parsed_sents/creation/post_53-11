@@ -1,0 +1,64 @@
+(ROOT
+  (S (IN So)
+    (NP (PRP we))
+    (VP (MD could)
+      (VP (VB go)
+        (PP (IN through)
+          (NP
+            (NP (PDT all) (DT the) (NNS permutations))
+            (PP (IN of)
+              (NP
+                (NP (NN flagellar) (NNS components))
+                (, ,)
+                (NP
+                  (NP (DT the) (NN number)
+                    (CC and)
+                    (NN arrangement))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS proteins))
+                      (, ,)
+                      (NP
+                        (NP (DT the) (NNS nucleotides))
+                        (VP
+                          (VP (VBN needed)
+                            (S
+                              (VP (TO to)
+                                (VP (VB code)
+                                  (NP (PRP them))
+                                  (ADVP (CC and)
+                                    (RB so) (IN on))))))
+                          (, ,)
+                          (CC but)
+                          (VP
+                            (FRAG
+                              (WHADVP (WRB why)))))))))))))))
+    (. ?)))
+
+dep(go-4, So-1)
+nsubj(go-4, we-2)
+aux(go-4, could-3)
+root(ROOT-0, go-4)
+predet(permutations-8, all-6)
+det(permutations-8, the-7)
+prep_through(go-4, permutations-8)
+nn(components-11, flagellar-10)
+prep_of(permutations-8, components-11)
+det(number-14, the-13)
+appos(components-11, number-14)
+appos(components-11, arrangement-16)
+conj_and(number-14, arrangement-16)
+prep_of(number-14, proteins-18)
+det(nucleotides-21, the-20)
+appos(proteins-18, nucleotides-21)
+xsubj(code-24, nucleotides-21)
+dep(nucleotides-21, needed-22)
+aux(code-24, to-23)
+xcomp(needed-22, code-24)
+dobj(code-24, them-25)
+cc(on-28, and-26)
+dep(on-28, so-27)
+advmod(code-24, on-28)
+dep(nucleotides-21, why-31)
+conj_but(needed-22, why-31)
+

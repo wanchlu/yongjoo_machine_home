@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN fact))
+      (PP (IN of)
+        (NP (DT the) (NN matter))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT all))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (VP (VBP are)
+                (NP
+                  (NP (NNS criticisms))
+                  (PP (IN of)
+                    (NP (NN evolution))))))))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ does) (RB not)
+              (VP (VB amount)
+                (PP (TO to)
+                  (NP
+                    (NP (NN evidence))
+                    (PP (IN of)
+                      (NP (NN creation)))))))))))
+    (. .)))
+
+det(fact-2, The-1)
+nsubj(all-7, fact-2)
+det(matter-5, the-4)
+prep_of(fact-2, matter-5)
+cop(all-7, is-6)
+root(ROOT-0, all-7)
+nsubj(criticisms-11, they-8)
+aux(criticisms-11, have-9)
+cop(criticisms-11, are-10)
+rcmod(all-7, criticisms-11)
+prep_of(criticisms-11, evolution-13)
+nsubj(amount-17, which-14)
+aux(amount-17, does-15)
+neg(amount-17, not-16)
+rcmod(all-7, amount-17)
+prep_to(amount-17, evidence-19)
+prep_of(evidence-19, creation-21)
+

@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Einstein) (POS 's))
+        (NNS quotes))
+      (VP (VBP are) (RB not)
+        (ADJP (JJ supportive)
+          (PP (IN of)
+            (NP (NNP ID))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBG talking)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN fabric))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN universe))
+                (, ,) (RB not)
+                (NP (DT the) (NN means))))))
+        (PP (IN by)
+          (SBAR
+            (WHNP (WDT which) (NNS species))
+            (S
+              (VP (VB evolve)))))))
+    (. .)))
+
+poss(quotes-3, Einstein-1)
+nsubj(supportive-6, quotes-3)
+cop(supportive-6, are-4)
+neg(supportive-6, not-5)
+ccomp(talking-12, supportive-6)
+prep_of(supportive-6, ID-8)
+nsubj(talking-12, he-10)
+aux(talking-12, was-11)
+root(ROOT-0, talking-12)
+det(fabric-15, the-14)
+prep_about(talking-12, fabric-15)
+det(universe-18, the-17)
+prep_of(fabric-15, universe-18)
+neg(universe-18, not-20)
+det(means-22, the-21)
+dep(universe-18, means-22)
+det(species-25, which-24)
+nsubj(evolve-26, species-25)
+prepc_by(talking-12, evolve-26)
+

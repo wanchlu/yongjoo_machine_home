@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS students))
+      (VP (VBD were)
+        (NP
+          (NP (DT the) (NNS ones))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD complained)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP she))
+      (ADVP (RB later))
+      (VP (VBD lied)
+        (PP (IN about)
+          (S
+            (VP (VBG being)
+              (VP (VBN blacklisted)))))))
+    (. .)))
+
+det(students-2, The-1)
+nsubj(ones-5, students-2)
+cop(ones-5, were-3)
+det(ones-5, the-4)
+root(ROOT-0, ones-5)
+nsubj(complained-7, ones-5)
+rcmod(ones-5, complained-7)
+nsubj(lied-12, she-10)
+advmod(lied-12, later-11)
+conj_and(ones-5, lied-12)
+nsubj(complained-7, lied-12)
+auxpass(blacklisted-15, being-14)
+prepc_about(lied-12, blacklisted-15)
+

@@ -1,0 +1,55 @@
+(ROOT
+  (S (CC But)
+    (NP (DT a) (JJ new) (NN born))
+    (VP (VBZ has)
+      (NP
+        (NP (NNS feelings))
+        (, ,)
+        (VP (VBZ knows)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (VBZ 's)
+                (ADJP (JJ hungry))))))
+        (, ,)
+        (NP (FW etc.))))
+    (. .)))
+
+cc(has-5, But-1)
+det(born-4, a-2)
+amod(born-4, new-3)
+nsubj(has-5, born-4)
+root(ROOT-0, has-5)
+dobj(has-5, feelings-6)
+dep(feelings-6, knows-8)
+advmod(hungry-12, when-9)
+nsubj(hungry-12, it-10)
+cop(hungry-12, 's-11)
+advcl(knows-8, hungry-12)
+appos(feelings-6, etc.-14)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ wrong)
+        (S
+          (VP (TO to)
+            (VP (VB throw)
+              (NP (PRP them))
+              (PP (IN in)
+                (NP (JJ dumpsters) (CD .3))))))))
+    (. .)))
+
+advmod(wrong-4, Therefore-1)
+nsubj(wrong-4, it-2)
+cop(wrong-4, 's-3)
+root(ROOT-0, wrong-4)
+aux(throw-6, to-5)
+xcomp(wrong-4, throw-6)
+dobj(throw-6, them-7)
+amod(.3-10, dumpsters-9)
+prep_in(throw-6, .3-10)
+

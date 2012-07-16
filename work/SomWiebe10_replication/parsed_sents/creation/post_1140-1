@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB play)
+                  (NP (DT this) (NN game))))))))
+      (ADVP (RB then))
+      (VP (VBP eat)
+        (NP (DT this))))
+    (: :)
+    (S
+      (NP (EX There))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT no) (NN proof))
+          (PP (IN for)
+            (NP (NNP God))))
+        (ADVP (RB either))))
+    (. .)))
+
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+xsubj(play-5, you-2)
+advcl(eat-9, want-3)
+csubj(eat-9, want-3)
+aux(play-5, to-4)
+xcomp(want-3, play-5)
+det(game-7, this-6)
+dobj(play-5, game-7)
+advmod(eat-9, then-8)
+root(ROOT-0, eat-9)
+dobj(eat-9, this-10)
+expl('s-13, There-12)
+parataxis(eat-9, 's-13)
+det(proof-15, no-14)
+nsubj('s-13, proof-15)
+prep_for(proof-15, God-17)
+advmod('s-13, either-18)
+

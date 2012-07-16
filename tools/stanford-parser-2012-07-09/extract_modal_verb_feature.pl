@@ -10,12 +10,25 @@ foreach my $domain (@domains) {
 
     my @files = `ls $input_dir`;
     chomp (@files);
+    my %post;
     foreach my $file (@files) {
-        next if ($file =~ m/parsed/);
-        my $input = "$input_dir/$file";
-        my $output = "$output_dir/$file";
-        `./lexparser.sh $input > $output` ;
+        my ($post_id, $sent_id) = split "-", $file;
+        $post{$post_id} = 1;
     }
+    foreach my $post_id (keys %post) {
+        my @post_sents = `ls $input_dir/$post_id-*`;
+        chomp (@post_sents);
+        my $input_string = join " ", @post_sents;
+        my $output = "$output_dir/$post_id";
+        `./lexparser.sh $input_string > $output` ;
+    }
+
+#    foreach my $file (@files) {
+#        next if ($file =~ m/parsed/);
+#        my $input = "$input_dir/$file";
+#        my $output = "$output_dir/$file";
+#        `./lexparser.sh $input > $output` ;
+#    }
 }
 
 sub stem{

@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN union))
+      (PP (IN of)
+        (NP
+          (NP (DT a) (JJ human) (NN sperm) (NN cell))
+          (, ,)
+          (CC and)
+          (NP (JJ human) (NN egg))
+          (, ,))))
+    (VP (VBZ produces)
+      (NP
+        (NP (DT a) (JJ new) (JJ human) (NN being))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB see)
+              (NP (DT the) (JJ above))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+det(union-2, The-1)
+nsubj(produces-13, union-2)
+det(cell-7, a-4)
+amod(cell-7, human-5)
+nn(cell-7, sperm-6)
+prep_of(union-2, cell-7)
+amod(egg-11, human-10)
+prep_of(union-2, egg-11)
+conj_and(cell-7, egg-11)
+root(ROOT-0, produces-13)
+det(being-17, a-14)
+amod(being-17, new-15)
+amod(being-17, human-16)
+dobj(produces-13, being-17)
+dep(being-17, see-19)
+det(above-21, the-20)
+dobj(see-19, above-21)
+

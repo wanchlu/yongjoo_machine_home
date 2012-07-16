@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP
+      (NP (CD 99) (NN %))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN species))
+          (CC and)
+          (NP
+            (NP (CD 50) (NN %))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNS biomass))
+                (PP (IN on)
+                  (NP (DT this) (NN planet)))))))))
+    (VP (VBP are)
+      (ADJP (JJ prokaryotes)))
+    (. .)))
+
+num(%-2, 99-1)
+nsubj(prokaryotes-16, %-2)
+det(species-5, the-4)
+prep_of(%-2, species-5)
+num(%-8, 50-7)
+prep_of(%-2, %-8)
+conj_and(species-5, %-8)
+det(biomass-11, the-10)
+prep_of(%-8, biomass-11)
+det(planet-14, this-13)
+prep_on(biomass-11, planet-14)
+cop(prokaryotes-16, are-15)
+root(ROOT-0, prokaryotes-16)
+

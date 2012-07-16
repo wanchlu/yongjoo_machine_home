@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (ADVP (DT No) (NN matter)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP you))
+          (VP (VBP do)
+            (CC or)
+            (VBP say)))))
+    (, ,)
+    (NP (NNS people))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP
+                (NP (NNS abortions))
+                (PP (IN in)
+                  (NP (DT the) (NN world)))))))))
+    (. .)))
+
+dep(matter-2, No-1)
+advmod(continue-11, matter-2)
+dobj(do-5, what-3)
+nsubj(do-5, you-4)
+nsubj(say-7, you-4)
+dep(matter-2, do-5)
+dep(matter-2, say-7)
+conj_or(do-5, say-7)
+nsubj(continue-11, people-9)
+xsubj(have-13, people-9)
+aux(continue-11, will-10)
+root(ROOT-0, continue-11)
+aux(have-13, to-12)
+xcomp(continue-11, have-13)
+dobj(have-13, abortions-14)
+det(world-17, the-16)
+prep_in(abortions-14, world-17)
+

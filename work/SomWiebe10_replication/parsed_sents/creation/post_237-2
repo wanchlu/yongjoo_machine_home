@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBP are)
+        (ADJP (JJ familiar)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NNS capabilities))
+              (PP (IN of)
+                (NP (NNS humans)))))))
+      (CC and)
+      (VP (VBP know))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP we))
+          (VP (VBP see)
+            (NP
+              (NP (DT the) (NN flower) (NN garden))
+              (CC or)
+              (NP (NNP Mount) (NNP Rushmore)))
+            (, ,)
+            (SBAR (IN that)
+              (S
+                (NP (NNS humans))
+                (VP (VBP are)
+                  (NP
+                    (NP (DT all))
+                    (PP (IN over)
+                      (NP
+                        (NP
+                          (NP (DT the) (NN place))
+                          (PP (IN in)
+                            (NP (DT this) (NN world))))
+                        (CC and)
+                        (ADJP (RB completely) (JJ capable))))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG creating)
+                          (NP (JJ such) (NNS things)))))))))))))
+    (. .)))
+
+nsubj(familiar-3, We-1)
+nsubj(know-10, We-1)
+cop(familiar-3, are-2)
+root(ROOT-0, familiar-3)
+det(capabilities-6, the-5)
+prep_with(familiar-3, capabilities-6)
+prep_of(capabilities-6, humans-8)
+conj_and(familiar-3, know-10)
+advmod(see-14, when-12)
+nsubj(see-14, we-13)
+advcl(familiar-3, see-14)
+det(garden-17, the-15)
+nn(garden-17, flower-16)
+dobj(see-14, garden-17)
+nn(Rushmore-20, Mount-19)
+dobj(see-14, Rushmore-20)
+conj_or(garden-17, Rushmore-20)
+complm(all-25, that-22)
+nsubj(all-25, humans-23)
+cop(all-25, are-24)
+ccomp(see-14, all-25)
+det(place-28, the-27)
+prep_over(all-25, place-28)
+det(world-31, this-30)
+prep_in(place-28, world-31)
+advmod(capable-34, completely-33)
+prep_over(all-25, capable-34)
+conj_and(place-28, capable-34)
+prepc_of(all-25, creating-36)
+amod(things-38, such-37)
+dobj(creating-36, things-38)
+

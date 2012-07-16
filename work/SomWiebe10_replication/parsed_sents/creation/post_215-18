@@ -1,0 +1,56 @@
+(ROOT
+  (NP
+    (NP (NNP Proc) (NNP Natl) (NNP Acad) (NNP Sci) (NNP USA))
+    (QP (CD 101:13273) (CD -13278))
+    (. .)))
+
+nn(USA-5, Proc-1)
+nn(USA-5, Natl-2)
+nn(USA-5, Acad-3)
+nn(USA-5, Sci-4)
+root(ROOT-0, USA-5)
+number(-13278-7, 101:13273-6)
+num(USA-5, -13278-7)
+
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (NP (PRP they))
+    (VP (VBP report)
+      (S
+        (VP (VBG finding)
+          (NP
+            (NP (DT a) (NN molecule))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNS lymphocytes))
+                (PP (IN of)
+                  (NP (NNP Lampreys)))))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ looks)
+                  (ADJP (RB very) (JJ much)
+                    (PP (IN like)
+                      (NP (DT the) (NNP immunogloblulin) (NNP T) (NNP Cell) (NNP Receptor)))))))))))
+    (. .)))
+
+advmod(report-3, Here-1)
+nsubj(report-3, they-2)
+root(ROOT-0, report-3)
+xcomp(report-3, finding-4)
+det(molecule-6, a-5)
+dobj(finding-4, molecule-6)
+nsubj(looks-13, molecule-6)
+det(lymphocytes-9, the-8)
+prep_in(molecule-6, lymphocytes-9)
+prep_of(lymphocytes-9, Lampreys-11)
+rcmod(molecule-6, looks-13)
+advmod(much-15, very-14)
+acomp(looks-13, much-15)
+det(Receptor-21, the-17)
+nn(Receptor-21, immunogloblulin-18)
+nn(Receptor-21, T-19)
+nn(Receptor-21, Cell-20)
+prep_like(much-15, Receptor-21)
+

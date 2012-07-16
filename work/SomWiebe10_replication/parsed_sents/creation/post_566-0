@@ -1,0 +1,53 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (NNP TODAY))
+      (, ,)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ fundamental) (NNS goals))
+            (PP (IN of)
+              (NP
+                (NP (NNS scientists))
+                (VP (VBG studying)
+                  (NP
+                    (NP (DT the) (NN theory))
+                    (PP (IN of)
+                      (NP (NN evolution)))))))))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB figure)
+            (PRT (RP out))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP
+                  (NP (NN life))
+                  (PP (IN on)
+                    (NP (NNP Earth))))
+                (VP (VBD began))))))))
+    (. .)))
+
+nsubj(is-16, TODAY-2)
+xsubj(figure-18, TODAY-2)
+appos(TODAY-2, one-4)
+det(goals-8, the-6)
+amod(goals-8, fundamental-7)
+prep_of(one-4, goals-8)
+prep_of(goals-8, scientists-10)
+partmod(scientists-10, studying-11)
+det(theory-13, the-12)
+dobj(studying-11, theory-13)
+prep_of(theory-13, evolution-15)
+root(ROOT-0, is-16)
+aux(figure-18, to-17)
+xcomp(is-16, figure-18)
+prt(figure-18, out-19)
+advmod(began-24, how-20)
+nsubj(began-24, life-21)
+prep_on(life-21, Earth-23)
+ccomp(figure-18, began-24)
+

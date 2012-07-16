@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ has)
+          (S
+            (VP (TO to)
+              (VP (VB resort)
+                (PP (TO to)
+                  (NP
+                    (NP (DT this) (NN kind))
+                    (PP (IN of)
+                      (NP (NN quote) (NN mining)))))
+                (ADVP (RB then))))))))
+    (NP
+      (NP (DT the) (NN state))
+      (PP (IN of)
+        (NP (NNS affairs))))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RB even) (JJR worse))
+        (SBAR (IN than)
+          (S
+            (NP (PRP I))
+            (VP (VBD thought))))))
+    (. .)))
+
+mark(has-3, If-1)
+nsubj(has-3, ID-2)
+xsubj(resort-5, ID-2)
+advcl(worse-19, has-3)
+aux(resort-5, to-4)
+xcomp(has-3, resort-5)
+det(kind-8, this-7)
+prep_to(resort-5, kind-8)
+nn(mining-11, quote-10)
+prep_of(kind-8, mining-11)
+advmod(resort-5, then-12)
+det(state-14, the-13)
+nsubj(worse-19, state-14)
+prep_of(state-14, affairs-16)
+cop(worse-19, are-17)
+advmod(worse-19, even-18)
+root(ROOT-0, worse-19)
+mark(thought-22, than-20)
+nsubj(thought-22, I-21)
+dep(worse-19, thought-22)
+

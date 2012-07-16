@@ -1,0 +1,58 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP You))
+    (VP (VBP do)
+      (VP (VB realize)
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (JJ solar) (NN eclipse))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN shadow))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN moon))
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (NN earth))
+                        (SBAR
+                          (WHADVP (WRB when))
+                          (S
+                            (NP
+                              (NP (PRP it) (POS 's))
+                              (NN orbit))
+                            (VP (VBZ takes)
+                              (NP (PRP it))
+                              (PP (IN around)
+                                (NP
+                                  (NP (DT the) (JJ front) (NN side))
+                                  (PP (IN during)
+                                    (NP (DT the) (NN day))))))))))))))))))
+    (. .)))
+
+nsubj(realize-4, You-2)
+aux(realize-4, do-3)
+root(ROOT-0, realize-4)
+complm(shadow-11, that-5)
+det(eclipse-8, a-6)
+amod(eclipse-8, solar-7)
+nsubj(shadow-11, eclipse-8)
+cop(shadow-11, is-9)
+det(shadow-11, the-10)
+ccomp(realize-4, shadow-11)
+det(moon-14, the-13)
+prep_of(shadow-11, moon-14)
+det(earth-17, the-16)
+prep_on(moon-14, earth-17)
+tmod(takes-22, earth-17)
+advmod(takes-22, when-18)
+poss(orbit-21, it-19)
+nsubj(takes-22, orbit-21)
+dep(earth-17, takes-22)
+dobj(takes-22, it-23)
+det(side-27, the-25)
+amod(side-27, front-26)
+prep_around(takes-22, side-27)
+det(day-30, the-29)
+prep_during(side-27, day-30)
+

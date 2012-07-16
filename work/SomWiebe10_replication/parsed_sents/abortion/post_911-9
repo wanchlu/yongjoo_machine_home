@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB Often))
+      (WHADVP (WRB when))
+      (S
+        (NP (JJ young) (NNS girls))
+        (VP (VBP are)
+          (VP (VBN raped)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD will) (RB not)
+      (VP (VB tell)
+        (NP
+          (NP
+            (NP (NN anyone))
+            (SBAR (IN because)
+              (S
+                (NP (PRP they))
+                (VP (VBP are)
+                  (ADJP (JJ afraid))))))
+          (CC or)
+          (NP
+            (NP (DT a) (NN multitude))
+            (PP (IN of)
+              (NP (JJ other) (NNS reasons)))))))
+    (. .)))
+
+advmod(raped-6, Often-1)
+advmod(raped-6, when-2)
+amod(girls-4, young-3)
+nsubjpass(raped-6, girls-4)
+auxpass(raped-6, are-5)
+dep(tell-11, raped-6)
+nsubj(tell-11, they-8)
+aux(tell-11, will-9)
+neg(tell-11, not-10)
+root(ROOT-0, tell-11)
+dobj(tell-11, anyone-12)
+mark(afraid-16, because-13)
+nsubj(afraid-16, they-14)
+cop(afraid-16, are-15)
+dep(anyone-12, afraid-16)
+det(multitude-19, a-18)
+dobj(tell-11, multitude-19)
+conj_or(anyone-12, multitude-19)
+amod(reasons-22, other-21)
+prep_of(multitude-19, reasons-22)
+

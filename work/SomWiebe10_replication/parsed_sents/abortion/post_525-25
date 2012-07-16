@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB not)
+        (NP
+          (NP (DT the) (NN woman))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ bears)
+                (NP
+                  (NP (DT the) (NN burden))
+                  (PP (IN of)
+                    (NP (DT this) (JJ extra) (NN cost))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN society))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ says)
+              (NP (NN life))))))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN protected)))))
+    (. .)))
+
+nsubj(woman-5, it-1)
+cop(woman-5, is-2)
+neg(woman-5, not-3)
+det(woman-5, the-4)
+root(ROOT-0, woman-5)
+nsubj(bears-7, woman-5)
+rcmod(woman-5, bears-7)
+det(burden-9, the-8)
+dobj(bears-7, burden-9)
+det(cost-13, this-11)
+amod(cost-13, extra-12)
+prep_of(burden-9, cost-13)
+det(society-17, the-16)
+nsubj(says-19, society-17)
+nsubjpass(protected-23, society-17)
+rcmod(society-17, says-19)
+dobj(says-19, life-20)
+aux(protected-23, should-21)
+auxpass(protected-23, be-22)
+conj_but(woman-5, protected-23)
+nsubj(bears-7, protected-23)
+

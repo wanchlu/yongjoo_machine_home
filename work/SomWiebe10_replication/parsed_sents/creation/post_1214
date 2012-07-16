@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ thinks)
+            (SBAR
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT no) (NN evidence))
+                    (PP (IN for)
+                      (NP (NN evolution)))))))))))
+    (VP (VBZ is)
+      (UCP (RB either)
+        (ADJP (JJ blind))
+        (, ,)
+        (ADJP (JJ stupid))
+        (, ,)
+        (CC or)
+        (NP (CD both))))
+    (. .)))
+
+nsubj(thinks-3, Anyone-1)
+nsubj(is-10, Anyone-1)
+rcmod(Anyone-1, thinks-3)
+expl(is-5, there-4)
+ccomp(thinks-3, is-5)
+det(evidence-7, no-6)
+nsubj(is-5, evidence-7)
+prep_for(evidence-7, evolution-9)
+root(ROOT-0, is-10)
+dep(is-10, either-11)
+dep(either-11, blind-12)
+dep(is-10, stupid-14)
+conj_or(either-11, stupid-14)
+dep(is-10, both-17)
+conj_or(either-11, both-17)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNP Theodosius) (NNP Dobzhansky))
+        (VP (VBD said))))
+    (, ,)
+    (NP
+      (NP (`` ``) (NN Nothing))
+      (PP (IN in)
+        (NP (NN biology))))
+    (VP (VBZ makes)
+      (NP (NN sense))
+      (PP (IN except) (IN in)
+        (NP
+          (NP (NN light))
+          (PP (IN of)
+            (NP (NN evolution))))))
+    (. .)))
+
+mark(said-4, As-1)
+nn(Dobzhansky-3, Theodosius-2)
+nsubj(said-4, Dobzhansky-3)
+advcl(makes-10, said-4)
+nsubj(makes-10, Nothing-7)
+prep_in(Nothing-7, biology-9)
+root(ROOT-0, makes-10)
+dobj(makes-10, sense-11)
+dep(makes-10, except-12)
+prep_in(makes-10, light-14)
+prep_of(light-14, evolution-16)
+

@@ -1,0 +1,195 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Human) (NN life))
+        (CC and)
+        (NP
+          (NP (DT a) (NN right))
+          (PP (TO to)
+            (NP (NN life)))))
+      (VP (VBP begin)
+        (PP (IN at)
+          (NP (NN conception)))))
+    (: ;)
+    (S
+      (NP (NN abortion))
+      (VP (VBZ is)
+        (NP
+          (NP (NN murder))
+          (SBAR
+            (S
+              (NP (NNP Human) (NN life))
+              (VP (VBZ is)
+                (NP
+                  (NP (NN continuum))
+                  (PP (IN of)
+                    (NP (NN growth)))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ starts)
+                        (PP
+                          (PP (IN at)
+                            (NP (NN conception)))
+                          (, ,) (RB not)
+                          (PP (IN at)
+                            (NP (NN birth))))))))))))))
+    (. .)))
+
+amod(life-2, Human-1)
+nsubj(begin-8, life-2)
+det(right-5, a-4)
+conj_and(life-2, right-5)
+nsubj(begin-8, right-5)
+prep_to(right-5, life-7)
+root(ROOT-0, begin-8)
+prep_at(begin-8, conception-10)
+nsubj(murder-14, abortion-12)
+cop(murder-14, is-13)
+parataxis(begin-8, murder-14)
+nn(life-16, Human-15)
+nsubj(continuum-18, life-16)
+cop(continuum-18, is-17)
+rcmod(murder-14, continuum-18)
+nsubj(starts-22, continuum-18)
+prep_of(continuum-18, growth-20)
+rcmod(continuum-18, starts-22)
+prep_at(starts-22, conception-24)
+neg(starts-22, not-26)
+prep_at(starts-22, birth-28)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN DNA))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ makes)
+            (NP
+              (NP (DT a) (NN person))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)))))))))
+    (VP (VBZ is)
+      (ADVP (RB first))
+      (ADJP (JJ mixed)
+        (PP (IN at)
+          (NP
+            (NP (NN conception))
+            (PP (IN upon)
+              (NP (DT the) (JJ male) (NN sperm))))))
+      (S
+        (VP (VBG entering)
+          (NP (DT the) (JJ female) (NN egg)))))
+    (. .)))
+
+det(DNA-2, The-1)
+nsubj(makes-4, DNA-2)
+nsubj(mixed-12, DNA-2)
+rcmod(DNA-2, makes-4)
+det(person-6, a-5)
+dobj(makes-4, person-6)
+dobj(are-9, person-6)
+rel(are-9, who-7)
+nsubj(are-9, they-8)
+rcmod(person-6, are-9)
+cop(mixed-12, is-10)
+advmod(mixed-12, first-11)
+root(ROOT-0, mixed-12)
+prep_at(mixed-12, conception-14)
+det(sperm-18, the-16)
+amod(sperm-18, male-17)
+prep_upon(conception-14, sperm-18)
+xcomp(mixed-12, entering-19)
+det(egg-22, the-20)
+amod(egg-22, female-21)
+dobj(entering-19, egg-22)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (DT the) (JJ genetic) (NN building) (NNS blocks))
+            (PP (IN of)
+              (NP (DT a) (NN person))))
+          (VP (VBP are)
+            (VP (`` ``)
+              (VP (VBN conceived))
+              ('' '')
+              (CC and)
+              (VP (VBN built)
+                (PP (RB upon))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+advmod(conceived-13, when-3)
+det(blocks-7, the-4)
+amod(blocks-7, genetic-5)
+nn(blocks-7, building-6)
+nsubjpass(conceived-13, blocks-7)
+nsubjpass(built-16, blocks-7)
+det(person-10, a-9)
+prep_of(blocks-7, person-10)
+auxpass(conceived-13, are-11)
+advcl(is-2, conceived-13)
+advcl(is-2, built-16)
+conj_and(conceived-13, built-16)
+prep(built-16, upon-17)
+
+(ROOT
+  (S
+    (NP (DT The) (NN person))
+    (, ,)
+    (ADVP (RB therefore))
+    (, ,)
+    (VP (VBZ begins)
+      (PP (IN at)
+        (NP (NN conception))))
+    (. .)))
+
+det(person-2, The-1)
+nsubj(begins-6, person-2)
+advmod(begins-6, therefore-4)
+root(ROOT-0, begins-6)
+prep_at(begins-6, conception-8)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Killing)
+        (NP (DT the) (NN fetus))))
+    (, ,)
+    (ADVP (RB thus))
+    (, ,)
+    (VP
+      (VP (VBZ destroys)
+        (NP (DT a) (VBG growing) (NN person)))
+      (CC and)
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN considered)
+            (NP (NN murder))))))
+    (. .)))
+
+dep(destroys-7, Killing-1)
+det(fetus-3, the-2)
+dobj(Killing-1, fetus-3)
+advmod(destroys-7, thus-5)
+root(ROOT-0, destroys-7)
+det(person-10, a-8)
+amod(person-10, growing-9)
+dobj(destroys-7, person-10)
+aux(considered-14, can-12)
+auxpass(considered-14, be-13)
+conj_and(destroys-7, considered-14)
+dobj(considered-14, murder-15)
+

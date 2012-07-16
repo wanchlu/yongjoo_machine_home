@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (ADVP (RB Interestingly))
+    (, ,)
+    (NP (DT the) (NN heart))
+    (VP (VBZ begins)
+      (S
+        (VP (TO to)
+          (VP (VB beat)
+            (SBAR (RB even) (IN before)
+              (S
+                (NP
+                  (NP
+                    (NP (NNS structures))
+                    (PP (JJ such) (IN as)
+                      (NP (NNS valves)
+                        (CC and)
+                        (NN septa))))
+                  (PRN (-LRB- -LRB-)
+                    (S
+                      (VP
+                        (VP (VB singular))
+                        (: :)
+                        (NP
+                          (NP (NN septum))
+                          (: ;)
+                          (NP
+                            (NP (DT the) (JJ muscular) (NNS walls))
+                            (SBAR
+                              (WHNP (WDT that))
+                              (S
+                                (VP (VBP divide)
+                                  (NP (DT the) (NNS chambers)))))))))
+                    (-RRB- -RRB-)))
+                (VP (VBP have)
+                  (VP (VBN formed)))))))))
+    (. !)))
+
+advmod(begins-5, Interestingly-1)
+det(heart-4, the-3)
+nsubj(begins-5, heart-4)
+xsubj(beat-7, heart-4)
+root(ROOT-0, begins-5)
+aux(beat-7, to-6)
+xcomp(begins-5, beat-7)
+advmod(formed-30, even-8)
+dep(formed-30, before-9)
+nsubj(formed-30, structures-10)
+prep_such_as(structures-10, valves-13)
+prep_such_as(structures-10, septa-15)
+conj_and(valves-13, septa-15)
+dep(structures-10, singular-17)
+dobj(singular-17, septum-19)
+det(walls-23, the-21)
+amod(walls-23, muscular-22)
+dep(septum-19, walls-23)
+nsubj(divide-25, walls-23)
+rcmod(walls-23, divide-25)
+det(chambers-27, the-26)
+dobj(divide-25, chambers-27)
+aux(formed-30, have-29)
+ccomp(beat-7, formed-30)
+

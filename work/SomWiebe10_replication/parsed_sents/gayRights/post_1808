@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (VP (VBN Agreed))
+    (. .)))
+
+root(ROOT-0, Agreed-1)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD will) (RB all)
+      (VP (VB be)
+        (VP
+          (VP (VBN hunted)
+            (PRT (RP down)))
+          (CC and)
+          (VP (VBN slaughtered)))))
+    (. .)))
+
+nsubjpass(hunted-5, They-1)
+nsubjpass(slaughtered-8, They-1)
+aux(hunted-5, will-2)
+advmod(hunted-5, all-3)
+auxpass(hunted-5, be-4)
+root(ROOT-0, hunted-5)
+prt(hunted-5, down-6)
+conj_and(hunted-5, slaughtered-8)
+
+(ROOT
+  (S
+    (NP (DT Those) (NNS things))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (S
+          (ADVP (RB long))
+          (VP (TO to)
+            (VP (VB live))))))
+    (. .)))
+
+det(things-2, Those-1)
+nsubj(have-5, things-2)
+xsubj(live-8, things-2)
+aux(have-5, do-3)
+neg(have-5, n't-4)
+root(ROOT-0, have-5)
+advmod(live-8, long-6)
+aux(live-8, to-7)
+xcomp(have-5, live-8)
+

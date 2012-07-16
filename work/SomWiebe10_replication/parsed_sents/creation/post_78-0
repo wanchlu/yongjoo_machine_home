@@ -1,0 +1,62 @@
+(ROOT
+  (FRAG
+    (NP (NNP Rob) (NNP Crowther) (NNPS Claims))
+    (: :)
+    (S
+      (S
+        (PP (VBG According)
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NN theory))
+              (PP (IN of)
+                (NP (JJ intelligent) (NN design)))))))
+      (, ,)
+      (NP
+        (NP (JJ certain) (NNS features))
+        (PP
+          (PP (IN of)
+            (NP (DT the) (NN universe)))
+          (CC and)
+          (PP (IN of)
+            (NP (VBG living) (NNS things)))))
+      (VP (VBP are)
+        (VP (RBS best) (VBN explained)
+          (PP (IN by)
+            (NP
+              (NP (DT an) (JJ intelligent) (NN cause))
+              (, ,)
+              (NP
+                (NP (RB not) (DT an) (JJ undirected) (NN process))
+                (PP (JJ such) (IN as)
+                  (NP (JJ natural) (NN selection)))))))))
+    (. .)))
+
+nn(Claims-3, Rob-1)
+nn(Claims-3, Crowther-2)
+root(ROOT-0, Claims-3)
+ccomp(explained-24, According-5)
+pcomp(According-5, to-6)
+det(theory-8, the-7)
+prep_to(According-5, theory-8)
+amod(design-11, intelligent-10)
+prep_of(theory-8, design-11)
+amod(features-14, certain-13)
+nsubjpass(explained-24, features-14)
+det(universe-17, the-16)
+prep_of(features-14, universe-17)
+amod(things-21, living-20)
+prep_of(features-14, things-21)
+conj_and(universe-17, things-21)
+auxpass(explained-24, are-22)
+advmod(explained-24, best-23)
+dep(Claims-3, explained-24)
+det(cause-28, an-26)
+amod(cause-28, intelligent-27)
+agent(explained-24, cause-28)
+neg(process-33, not-30)
+det(process-33, an-31)
+amod(process-33, undirected-32)
+appos(cause-28, process-33)
+amod(selection-37, natural-36)
+prep_such_as(process-33, selection-37)
+

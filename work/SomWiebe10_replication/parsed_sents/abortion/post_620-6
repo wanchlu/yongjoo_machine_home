@@ -1,0 +1,52 @@
+(ROOT
+  (FRAG
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NNS words))
+        (PP (IN of)
+          (NP (NNP John) (NNP Donne)))))
+    (: :) (`` ``)
+    (S
+      (NP (DT No) (NN man))
+      (VP (VBZ is)
+        (NP (DT an) (NN island))
+        (: ...)
+        (FRAG
+          (NP
+            (NP (DT any) (JJ mans) (NN death))
+            (SBAR
+              (S
+                (VP (VBZ diminishes)
+                  (NP (PRP me))
+                  (, ,)
+                  (SBAR (IN because)
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP am)
+                        (VP (VBN involved)
+                          (PP (IN in)
+                            (NP (NN mankind))))))))))
+            (. .)))))
+    (. .)))
+
+dep(island-13, In-1)
+det(words-3, the-2)
+pobj(In-1, words-3)
+nn(Donne-6, John-5)
+prep_of(words-3, Donne-6)
+det(man-10, No-9)
+nsubj(island-13, man-10)
+cop(island-13, is-11)
+det(island-13, an-12)
+root(ROOT-0, island-13)
+det(death-17, any-15)
+amod(death-17, mans-16)
+dep(island-13, death-17)
+rcmod(death-17, diminishes-18)
+dobj(diminishes-18, me-19)
+mark(involved-24, because-21)
+nsubjpass(involved-24, I-22)
+auxpass(involved-24, am-23)
+advcl(diminishes-18, involved-24)
+prep_in(involved-24, mankind-26)
+

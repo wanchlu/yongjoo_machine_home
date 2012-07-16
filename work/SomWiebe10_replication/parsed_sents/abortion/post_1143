@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (VP (VBN banned))))
+    (. .)))
+
+nsubjpass(banned-5, Abortion-1)
+aux(banned-5, should-2)
+neg(banned-5, not-3)
+auxpass(banned-5, be-4)
+root(ROOT-0, banned-5)
+
+(ROOT
+  (S
+    (NP (JJ Pregnant) (NNS women))
+    (VP (MD would)
+      (ADVP (RB still))
+      (VP
+        (VP (VB find)
+          (NP (DT a) (NN way))
+          (PP (TO to)
+            (NP (JJ abort) (NNS children))))
+        (, ,)
+        (CC and)
+        (ADVP (RB thereby))
+        (VP (NN risk)
+          (ADVP
+            (NP
+              (NP (JJ dangerous) (NNS methods))
+              (, ,)
+              (CC or)
+              (NP (NN suspect) (`` ``) (NNS doctors) ('' ''))
+              (, ,))
+            (RB as))
+          (S
+            (VP (VBN seen)
+              (PP (IN in)
+                (NP (JJ other) (NNS countries))))))))
+    (. .)))
+
+amod(women-2, Pregnant-1)
+nsubj(find-5, women-2)
+aux(find-5, would-3)
+advmod(find-5, still-4)
+root(ROOT-0, find-5)
+det(way-7, a-6)
+dobj(find-5, way-7)
+amod(children-10, abort-9)
+prep_to(find-5, children-10)
+advmod(find-5, thereby-13)
+conj_and(find-5, thereby-13)
+conj_and(find-5, risk-14)
+amod(methods-16, dangerous-15)
+npadvmod(as-24, methods-16)
+nn(doctors-21, suspect-19)
+conj_or(methods-16, doctors-21)
+npadvmod(as-24, doctors-21)
+advmod(risk-14, as-24)
+dep(risk-14, seen-25)
+amod(countries-28, other-27)
+prep_in(seen-25, countries-28)
+
+(ROOT
+  (S
+    (NP (NNP Freedom))
+    (VP (VBZ entitles)
+      (S
+        (NP (PRP you))
+        (VP (TO to)
+          (VP (VB do)
+            (SBAR
+              (SBAR
+                (WHNP (WDT whatever))
+                (S
+                  (NP (PRP you))
+                  (VP (VBP want)
+                    (PP (IN with)
+                      (NP (PRP$ your) (NN body))))))
+              (, ,)
+              (CC and)
+              (SBAR
+                (WHPP (IN by)
+                  (WHNP (WDT that)))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP mean)
+                    (SBAR (IN until)
+                      (S
+                        (NP (DT a) (JJ new) (NN human))
+                        (VP (VBZ is)
+                          (ADJP (JJ complete)))))))))))))
+    (. .)))
+
+nsubj(entitles-2, Freedom-1)
+root(ROOT-0, entitles-2)
+nsubj(do-5, you-3)
+aux(do-5, to-4)
+xcomp(entitles-2, do-5)
+dobj(want-8, whatever-6)
+nsubj(want-8, you-7)
+dep(do-5, want-8)
+poss(body-11, your-10)
+prep_with(want-8, body-11)
+dep(mean-17, by-14)
+pobj(by-14, that-15)
+nsubj(mean-17, I-16)
+dep(do-5, mean-17)
+conj_and(want-8, mean-17)
+mark(complete-23, until-18)
+det(human-21, a-19)
+amod(human-21, new-20)
+nsubj(complete-23, human-21)
+cop(complete-23, is-22)
+advcl(mean-17, complete-23)
+

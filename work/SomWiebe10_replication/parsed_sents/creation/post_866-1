@@ -1,0 +1,55 @@
+(ROOT
+  (S (CC But)
+    (S
+      (NP (PRP I))
+      (VP (VBP do)
+        (SBAR
+          (SBAR
+            (S
+              (VP (VBP wonder)
+                (PP (IN about)
+                  (NP (NNP Genesis))))))
+          (CC and)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP it))
+              (VP (VBZ refers)
+                (PP (TO to)
+                  (NP (DT no) (NN bush)))))))))
+    (CC or)
+    (S
+      (NP (NNP vegetation))
+      (VP (VBD were)
+        (PP (IN around)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NNP God))
+              (VP (VBD decided)
+                (S
+                  (VP (TO to)
+                    (VP (VB make)
+                      (NP (NNP Adam)))))))))))
+    (. .)))
+
+nsubj(do-3, I-2)
+root(ROOT-0, do-3)
+dep(do-3, wonder-4)
+prep_about(wonder-4, Genesis-6)
+advmod(refers-10, how-8)
+nsubj(refers-10, it-9)
+dep(do-3, refers-10)
+conj_and(wonder-4, refers-10)
+det(bush-13, no-12)
+prep_to(refers-10, bush-13)
+nsubj(were-16, vegetation-15)
+conj_or(do-3, were-16)
+advmod(decided-20, when-18)
+nsubj(decided-20, God-19)
+xsubj(make-22, God-19)
+prepc_around(were-16, decided-20)
+aux(make-22, to-21)
+xcomp(decided-20, make-22)
+dobj(make-22, Adam-23)
+

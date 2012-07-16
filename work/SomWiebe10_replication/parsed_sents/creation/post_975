@@ -1,0 +1,91 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ does) (RB n't)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN proven)
+                  (SBAR (IN as)
+                    (S
+                      (NP (EX there))
+                      (VP (VBZ is)
+                        (NP (DT no) (JJ underlying) (NN math))))))))))))
+    (, ,)
+    (PRN (-LRB- -LRB-)
+      (SBAR (IN in)
+        (S
+          (NP (NNS physics))
+          (ADVP (RB there))
+          (VP (VBZ is))))
+      (-RRB- -RRB-))
+    (. .)))
+
+nsubj(need-4, It-1)
+xsubj(proven-7, It-1)
+aux(need-4, does-2)
+neg(need-4, n't-3)
+root(ROOT-0, need-4)
+aux(proven-7, to-5)
+auxpass(proven-7, be-6)
+xcomp(need-4, proven-7)
+mark(is-10, as-8)
+expl(is-10, there-9)
+advcl(proven-7, is-10)
+det(math-13, no-11)
+amod(math-13, underlying-12)
+nsubj(is-10, math-13)
+mark(is-19, in-16)
+nsubj(is-19, physics-17)
+advmod(is-19, there-18)
+dep(need-4, is-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (ADVP (RB widely))
+        (VP (VBN acknowledged)
+          (PP (IN as) (`` ``)
+            (NP
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBD happened) ('' ''))))
+              (CC and)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (RB proof) (JJ enough))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN taught)
+          (PP (IN in)
+            (NP (NNS schools)))
+          (ADVP (RB therefore)))))
+    (. .)))
+
+nsubjpass(acknowledged-4, It-1)
+auxpass(acknowledged-4, is-2)
+advmod(acknowledged-4, widely-3)
+ccomp(taught-19, acknowledged-4)
+nsubj(happened-8, what-7)
+prep_as(acknowledged-4, happened-8)
+nsubj(enough-14, that-11)
+cop(enough-14, is-12)
+advmod(enough-14, proof-13)
+prep_as(acknowledged-4, enough-14)
+conj_and(happened-8, enough-14)
+nsubjpass(taught-19, it-16)
+aux(taught-19, should-17)
+auxpass(taught-19, be-18)
+root(ROOT-0, taught-19)
+prep_in(taught-19, schools-21)
+advmod(taught-19, therefore-22)
+

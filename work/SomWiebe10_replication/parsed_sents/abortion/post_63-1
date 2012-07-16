@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBZ buys)
+        (NP (DT the) (NN product)))
+      (, ,)
+      (VP (VBZ finds)
+        (S
+          (NP (PRP it))
+          (ADJP (JJ defective))))
+      (CC and)
+      (VP (VBZ wants)
+        (S
+          (VP (TO to)
+            (VP (VB return)
+              (NP (PRP it))
+              (PP (IN for)
+                (NP (DT a) (NN refund))))))))
+    (. .)))
+
+nsubj(buys-2, She-1)
+nsubj(finds-6, She-1)
+nsubj(wants-10, She-1)
+xsubj(return-12, She-1)
+root(ROOT-0, buys-2)
+det(product-4, the-3)
+dobj(buys-2, product-4)
+conj_and(buys-2, finds-6)
+nsubj(defective-8, it-7)
+xcomp(finds-6, defective-8)
+conj_and(buys-2, wants-10)
+aux(return-12, to-11)
+xcomp(wants-10, return-12)
+dobj(return-12, it-13)
+det(refund-16, a-15)
+prep_for(return-12, refund-16)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP (NN science))
+        (VP (VBZ discovers)
+          (NP (DT a) (NN way)
+            (S
+              (VP (TO to)
+                (VP (VB explain)
+                  (NP (PRP it)))))))))
+    (. ?)))
+
+dep(discovers-4, What-1)
+mark(discovers-4, if-2)
+nsubj(discovers-4, science-3)
+root(ROOT-0, discovers-4)
+det(way-6, a-5)
+dobj(discovers-4, way-6)
+aux(explain-8, to-7)
+infmod(way-6, explain-8)
+dobj(explain-8, it-9)
+
+(ROOT
+  (SQ (VBZ Does)
+    (NP (DT this))
+    (ADVP (RB somehow))
+    (VP (VB disprove)
+      (NP (`` ``) (NN design) ('' '')))
+    (. ?)))
+
+aux(disprove-4, Does-1)
+nsubj(disprove-4, this-2)
+advmod(disprove-4, somehow-3)
+root(ROOT-0, disprove-4)
+dobj(disprove-4, design-6)
+

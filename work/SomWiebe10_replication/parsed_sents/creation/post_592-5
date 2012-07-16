@@ -1,0 +1,41 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR
+        (WHADVP (WRB How))
+        (S
+          (VP (VBP do))))
+      (NP (PRP you))
+      (VP (VBP explain)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (JJ fossil) (NN record))
+            (VP (VBZ lacks)
+              (NP (JJ intermediate) (NNS lifeforms)))))))
+    (CC and)
+    (S
+      (NP (JJ only))
+      (VP (VBZ shows)
+        (NP
+          (NP (JJ major) (NNS transitions))
+          (PP (IN of)
+            (NP (NNS organisms))))))
+    (. .)))
+
+advmod(do-3, How-2)
+dep(explain-5, do-3)
+nsubj(explain-5, you-4)
+root(ROOT-0, explain-5)
+complm(lacks-10, that-6)
+det(record-9, the-7)
+amod(record-9, fossil-8)
+nsubj(lacks-10, record-9)
+ccomp(explain-5, lacks-10)
+amod(lifeforms-12, intermediate-11)
+dobj(lacks-10, lifeforms-12)
+nsubj(shows-15, only-14)
+conj_and(explain-5, shows-15)
+amod(transitions-17, major-16)
+dobj(shows-15, transitions-17)
+prep_of(transitions-17, organisms-19)
+

@@ -1,0 +1,35 @@
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (NN life))
+        (VP (VBZ is)
+          (NP (DT a) (JJ continual) (NN process))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP stop)
+                (PP (IN at)
+                  (NP
+                    (NP (DT the) (NN fertilization))
+                    (PP (IN of)
+                      (NP (DT the) (NN egg)))))
+                (PP (IN by)
+                  (NP (DT the) (NN sperm)))))))))
+    (. ?)))
+
+mark(process-6, If-1)
+nsubj(process-6, life-2)
+cop(process-6, is-3)
+det(process-6, a-4)
+amod(process-6, continual-5)
+root(ROOT-0, process-6)
+advmod(stop-8, why-7)
+advcl(process-6, stop-8)
+det(fertilization-11, the-10)
+prep_at(stop-8, fertilization-11)
+det(egg-14, the-13)
+prep_of(fertilization-11, egg-14)
+det(sperm-17, the-16)
+prep_by(stop-8, sperm-17)
+

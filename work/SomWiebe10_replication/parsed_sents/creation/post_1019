@@ -1,0 +1,205 @@
+(ROOT
+  (S
+    (NP (NN Nothing))
+    (VP (`` ``) (VBD appeared) ('' '')
+      (NP (PRP$ its))
+      (ADVP (RB very)
+        (ADJP (JJ simple))))
+    (. .)))
+
+nsubj(its-5, Nothing-1)
+cop(its-5, appeared-3)
+root(ROOT-0, its-5)
+advmod(its-5, very-6)
+pobj(very-6, simple-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A)
+        (ADJP (RB very) (JJ long))
+        (NN time))
+      (ADVP (IN ago)))
+    (, ,)
+    (PP (IN after)
+      (NP
+        (NP (DT the) (NN creation))
+        (PP (IN of)
+          (NP (DT the) (NNS oceans)))))
+    (, ,)
+    (NP (JJ simple) (NN chemical) (NNS reactions))
+    (VP (VBD occurred)
+      (SBAR (IN that)
+        (S
+          (VP
+            (VP (VBD became)
+              (ADJP
+                (ADJP (JJR more))
+                (CC and)
+                (ADJP (RBR more) (JJ complex))))
+            (, ,)
+            (CC and)
+            (VP
+              (ADVP (RB eventually))
+              (VBD created)
+              (NP
+                (NP (NNP RNA))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBN developed)
+                      (PP (IN into)
+                        (NP (CD 2) (NNS cells))))))))))))
+    (. .)))
+
+det(time-4, A-1)
+advmod(long-3, very-2)
+amod(time-4, long-3)
+nsubj(occurred-17, time-4)
+advmod(time-4, ago-5)
+det(creation-9, the-8)
+prep_after(occurred-17, creation-9)
+det(oceans-12, the-11)
+prep_of(creation-9, oceans-12)
+amod(reactions-16, simple-14)
+nn(reactions-16, chemical-15)
+nsubj(occurred-17, reactions-16)
+root(ROOT-0, occurred-17)
+complm(more-20, that-18)
+cop(more-20, became-19)
+ccomp(occurred-17, more-20)
+advmod(complex-23, more-22)
+ccomp(occurred-17, complex-23)
+conj_and(more-20, complex-23)
+advmod(created-27, eventually-26)
+ccomp(occurred-17, created-27)
+conj_and(more-20, created-27)
+dobj(created-27, RNA-28)
+nsubj(developed-31, RNA-28)
+rcmod(RNA-28, developed-31)
+num(cells-34, 2-33)
+prep_into(developed-31, cells-34)
+
+(ROOT
+  (S
+    (S
+      (NP (DT those) (NNS cells))
+      (VP (VBD began)
+        (S
+          (VP (TO to)
+            (VP (VB multiply))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (JJ random) (NNS mutations))
+      (VP (VBD occurred) (, ,)
+        (S
+          (VP (VBG changing)
+            (NP (PRP them))
+            (ADVP (RB ever))
+            (ADVP (RB so) (RB slightly))))))
+    (. .)))
+
+det(cells-2, those-1)
+nsubj(began-3, cells-2)
+xsubj(multiply-5, cells-2)
+root(ROOT-0, began-3)
+aux(multiply-5, to-4)
+xcomp(began-3, multiply-5)
+amod(mutations-9, random-8)
+nsubj(occurred-10, mutations-9)
+conj_and(began-3, occurred-10)
+xcomp(occurred-10, changing-12)
+dobj(changing-12, them-13)
+advmod(changing-12, ever-14)
+advmod(slightly-16, so-15)
+advmod(changing-12, slightly-16)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (ADVP (RB Also))
+    (, ,)
+    (NP (NN cyanobacteria))
+    (VP (VBD developed) (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD developed)
+            (NP
+              (NP (DT that) (JJ thin) (NN air))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBD were)
+                    (VP (VBG talking) (IN about))))))))))
+    (-RRB- -RRB-) (. .)))
+
+advmod(developed-5, Also-2)
+nsubj(developed-5, cyanobacteria-4)
+root(ROOT-0, developed-5)
+nsubj(developed-8, which-7)
+ccomp(developed-5, developed-8)
+det(air-11, that-9)
+amod(air-11, thin-10)
+dobj(developed-8, air-11)
+dobj(talking-14, air-11)
+nsubj(talking-14, you-12)
+aux(talking-14, were-13)
+rcmod(air-11, talking-14)
+dep(talking-14, about-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Millions)
+        (CC and)
+        (NNS millions))
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (NNS years))
+            (PP (IN of)
+              (NP (DT this) (JJ evolutionary) (NN process))))
+          (, ,)
+          (CC and)
+          (RB now)
+          (NP (PRP we)))))
+    (VP (VBP have)
+      (NP
+        (NP (NNS websites))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP we))
+            (VP (MD can)
+              (VP (VB debate)
+                (PP (IN about)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP (PRP we))
+                      (VP (VBD started)))))))))))
+    (. .)))
+
+nsubj(have-14, Millions-1)
+conj_and(Millions-1, millions-3)
+nsubj(have-14, millions-3)
+prep_of(Millions-1, years-5)
+det(process-9, this-7)
+amod(process-9, evolutionary-8)
+prep_of(years-5, process-9)
+prep_of(Millions-1, now-12)
+advmod(years-5, now-12)
+conj_and(years-5, now-12)
+dep(years-5, we-13)
+root(ROOT-0, have-14)
+dobj(have-14, websites-15)
+advmod(debate-19, where-16)
+nsubj(debate-19, we-17)
+aux(debate-19, can-18)
+rcmod(websites-15, debate-19)
+advmod(started-23, how-21)
+nsubj(started-23, we-22)
+prepc_about(debate-19, started-23)
+

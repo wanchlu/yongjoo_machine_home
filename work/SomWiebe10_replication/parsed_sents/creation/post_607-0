@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (S
+      (VP (VB Let)
+        (S
+          (NP (PRP s))
+          (VP (VB talk)
+            (PP (IN about)
+              (NP (NNP Crick)))))))
+    (VP (VBZ s)
+      (NP
+        (NP (NN statement))
+        (SBAR
+          (S
+            (NP (NNP Biologist))
+            (VP (MD must)
+              (ADVP (RB constantly))
+              (VP (VB keep)
+                (PP (IN in)
+                  (NP (NN mind)))
+                (SBAR (IN that)
+                  (S
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP see))))
+                    (VP (VBD was) (RB not)
+                      (VP
+                        (VP (VBN designed))
+                        (, ,)
+                        (CONJP (CC but)
+                          (RB rather))
+                        (VP (VBN evolved))))))))))))
+    (. .)))
+
+csubj(statement-7, Let-1)
+nsubj(talk-3, s-2)
+ccomp(Let-1, talk-3)
+prep_about(talk-3, Crick-5)
+cop(statement-7, s-6)
+root(ROOT-0, statement-7)
+dobj(keep-11, statement-7)
+nsubj(keep-11, Biologist-8)
+aux(keep-11, must-9)
+advmod(keep-11, constantly-10)
+rcmod(statement-7, keep-11)
+prep_in(keep-11, mind-13)
+complm(designed-20, that-14)
+dobj(see-17, what-15)
+nsubj(see-17, they-16)
+csubj(designed-20, see-17)
+csubj(evolved-24, see-17)
+aux(designed-20, was-18)
+neg(designed-20, not-19)
+ccomp(keep-11, designed-20)
+ccomp(keep-11, evolved-24)
+conj_negcc(designed-20, evolved-24)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (RB very) (JJ important)))
+    (. .)))
+
+nsubj(important-4, This-1)
+cop(important-4, is-2)
+advmod(important-4, very-3)
+root(ROOT-0, important-4)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP pull)
+      (NP
+        (NP (DT the) (NN plug))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (NNP EEG))
+            (VP (VBZ is)
+              (ADJP (JJ flat))
+              (: ...)
+              (SBAR (IN so)
+                (FRAG
+                  (WHADVP (WRB why))
+                  (RB not)
+                  (VP (VB use)
+                    (NP (DT the) (JJ same))
+                    (PP (IN for)
+                      (NP (DT a) (NN fetus))))
+                  (. ?))))))))))
+
+nsubj(pull-2, We-1)
+root(ROOT-0, pull-2)
+det(plug-4, the-3)
+dobj(pull-2, plug-4)
+advmod(flat-9, when-5)
+det(EEG-7, the-6)
+nsubj(flat-9, EEG-7)
+cop(flat-9, is-8)
+dep(plug-4, flat-9)
+mark(not-13, so-11)
+dep(not-13, why-12)
+advcl(flat-9, not-13)
+parataxis(flat-9, not-13)
+dep(not-13, use-14)
+det(same-16, the-15)
+dobj(use-14, same-16)
+det(fetus-19, a-18)
+prep_for(use-14, fetus-19)
+

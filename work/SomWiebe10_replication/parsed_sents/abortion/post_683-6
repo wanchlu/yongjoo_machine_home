@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN neurologist))
+        (VP (VBZ assigns)
+          (NP (NN importance))
+          (PP (TO to)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (JJ neural) (NN activity))
+                (VP (VBZ begins))))))))
+    (, ,)
+    (NP (RB then) (WDT that))
+    (VP (VBZ is)
+      (ADJP (JJ appropriate))
+      (PP (VBN given)
+        (NP
+          (NP (PRP$ his) (NN field))
+          (PP (IN for)
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ is)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (VP (VBZ is)
+                        (NP (JJ important) (JJ _) (NN in_his_context) (NNS _))))))))))))
+    (. .)))
+
+mark(assigns-4, If-1)
+det(neurologist-3, a-2)
+nsubj(assigns-4, neurologist-3)
+advcl(appropriate-15, assigns-4)
+dobj(assigns-4, importance-5)
+advmod(begins-10, when-7)
+amod(activity-9, neural-8)
+nsubj(begins-10, activity-9)
+prepc_to(assigns-4, begins-10)
+advmod(that-13, then-12)
+nsubj(appropriate-15, that-13)
+cop(appropriate-15, is-14)
+root(ROOT-0, appropriate-15)
+prep(appropriate-15, given-16)
+poss(field-18, his-17)
+dep(given-16, field-18)
+nsubj(is-21, that-20)
+prepc_for(field-18, is-21)
+nsubj(_-27, what-22)
+cop(_-27, is-23)
+amod(_-27, important-24)
+amod(_-27, _-25)
+nn(_-27, in_his_context-26)
+ccomp(is-21, _-27)
+

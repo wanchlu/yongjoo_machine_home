@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (CD three) (NNS choices))
+        (: :)
+        (NP
+          (NP (NN birth) (NN control))
+          (, ,)
+          (NP (NNS babies))
+          (, ,)
+          (CC or)
+          (NP (NN abortion)))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+num(choices-4, three-3)
+nsubj(are-2, choices-4)
+nn(control-7, birth-6)
+dep(choices-4, control-7)
+dep(choices-4, babies-9)
+conj_or(control-7, babies-9)
+dep(choices-4, abortion-12)
+conj_or(control-7, abortion-12)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT the) (JJ pro-life) (NN side)))
+    (NP (DT the) (JJ first) (NN choice))
+    (VP (VBZ is)
+      (NP (NNS babies)))
+    (. .)))
+
+det(side-4, the-2)
+amod(side-4, pro-life-3)
+prep_for(babies-9, side-4)
+det(choice-7, the-5)
+amod(choice-7, first-6)
+nsubj(babies-9, choice-7)
+cop(babies-9, is-8)
+root(ROOT-0, babies-9)
+

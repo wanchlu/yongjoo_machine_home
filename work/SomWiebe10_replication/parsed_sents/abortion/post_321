@@ -1,0 +1,47 @@
+(ROOT
+  (FRAG
+    (SBAR (IN that)
+      (S
+        (NP (DT a) (JJ serial) (NN killer))
+        (VP (MD should)
+          (VP (VB be)
+            (VP (VBN allowed)
+              (S
+                (VP (TO to)
+                  (VP (VB shoot)
+                    (PP (IN as)
+                      (NP (JJ many) (NNS people)))
+                    (SBAR (IN as)
+                      (S
+                        (NP (PRP he))
+                        (VP (VBZ wants)
+                          (SBAR (IN because)
+                            (S
+                              (NP (PRP he))
+                              (VP (VBZ finds)
+                                (S
+                                  (NP (PRP$ their) (NNS lives))
+                                  (ADJP (JJ inconvenient)))))))))))))))))
+    (. ?)))
+
+dep(allowed-7, that-1)
+det(killer-4, a-2)
+amod(killer-4, serial-3)
+nsubjpass(allowed-7, killer-4)
+aux(allowed-7, should-5)
+auxpass(allowed-7, be-6)
+root(ROOT-0, allowed-7)
+aux(shoot-9, to-8)
+xcomp(allowed-7, shoot-9)
+amod(people-12, many-11)
+prep_as(shoot-9, people-12)
+mark(wants-15, as-13)
+nsubj(wants-15, he-14)
+advcl(shoot-9, wants-15)
+mark(finds-18, because-16)
+nsubj(finds-18, he-17)
+advcl(wants-15, finds-18)
+poss(lives-20, their-19)
+nsubj(inconvenient-21, lives-20)
+xcomp(finds-18, inconvenient-21)
+

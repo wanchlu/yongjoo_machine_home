@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Those))
+      (VP (VBN opposed)
+        (PP (TO to)
+          (NP (NNP ID)))))
+    (VP (MD must)
+      (VP
+        (VP (VB use)
+          (NP (NNP ID)))
+        (CC and)
+        (VP (VB generate)
+          (NP (VBN failed) (NNS predictions))
+          (SBAR (RB even)
+            (WHADVP (WRB when))
+            (S
+              (NP (DT the) (NNS predictions))
+              (ADVP (RB logically))
+              (VP (VBP follow)
+                (PP (IN from)
+                  (NP (DT the) (NN explanation)))))))))
+    (. .)))
+
+nsubj(use-6, Those-1)
+nsubj(generate-9, Those-1)
+partmod(Those-1, opposed-2)
+prep_to(opposed-2, ID-4)
+aux(use-6, must-5)
+root(ROOT-0, use-6)
+dobj(use-6, ID-7)
+conj_and(use-6, generate-9)
+amod(predictions-11, failed-10)
+dobj(generate-9, predictions-11)
+advmod(follow-17, even-12)
+advmod(follow-17, when-13)
+det(predictions-15, the-14)
+nsubj(follow-17, predictions-15)
+advmod(follow-17, logically-16)
+dep(generate-9, follow-17)
+det(explanation-20, the-19)
+prep_from(follow-17, explanation-20)
+

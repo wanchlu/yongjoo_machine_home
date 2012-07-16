@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (SBAR (RB Even) (IN IF)
+      (S
+        (NP (NN evolution))
+        (VP (VBD was)
+          (NP (NN truth)))))
+    (PRN (-LRB- -LRB-)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP (PRP it))
+          (VP (VBZ is) (RB n't))))
+      (-RRB- -RRB-))
+    (NP (PRP it))
+    (VP (VBZ does) (RB n't)
+      (VP (VB proove)
+        (PP (IN against)
+          (NP (JJ intelligent) (NN design)))))
+    (. .)))
+
+advmod(truth-5, Even-1)
+dep(truth-5, IF-2)
+nsubj(truth-5, evolution-3)
+cop(truth-5, was-4)
+advcl(proove-15, truth-5)
+dobj(is-9, which-7)
+nsubj(is-9, it-8)
+parataxis(proove-15, is-9)
+neg(is-9, n't-10)
+nsubj(proove-15, it-12)
+aux(proove-15, does-13)
+neg(proove-15, n't-14)
+root(ROOT-0, proove-15)
+amod(design-18, intelligent-17)
+prep_against(proove-15, design-18)
+

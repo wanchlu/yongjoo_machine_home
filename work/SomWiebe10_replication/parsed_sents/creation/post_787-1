@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB often))
+    (VP
+      (VP (VB cite)
+        (NP (NNP Hebrew) (NNS scholars)))
+      (, ,)
+      (VP (VB have)
+        (VP (VBN documented)
+          (NP
+            (NP (NNS beliefs))
+            (PP (IN about)
+              (NP (NNP Genesis))))
+          (PP (IN during)
+            (NP
+              (NP (JJ various) (NNS times))
+              (PP (IN in)
+                (NP (NN church) (NN history)))))))
+      (, ,)
+      (CC and)
+      (VP (VB address)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP refer)
+              (S
+                (VP (TO to)
+                  (VP
+                    (ADVP (RB as) ('' ''))
+                    (VB Biblical)
+                    (NP (NN scholarship))))))))))
+    (. .)))
+
+nsubj(cite-3, They-1)
+nsubj(documented-8, They-1)
+nsubj(address-20, They-1)
+advmod(cite-3, often-2)
+root(ROOT-0, cite-3)
+nn(scholars-5, Hebrew-4)
+dobj(cite-3, scholars-5)
+aux(documented-8, have-7)
+conj_and(cite-3, documented-8)
+dobj(documented-8, beliefs-9)
+prep_about(beliefs-9, Genesis-11)
+amod(times-14, various-13)
+prep_during(documented-8, times-14)
+nn(history-17, church-16)
+prep_in(times-14, history-17)
+conj_and(cite-3, address-20)
+dep(refer-23, what-21)
+nsubj(refer-23, you-22)
+xsubj(Biblical-27, you-22)
+ccomp(address-20, refer-23)
+aux(Biblical-27, to-24)
+advmod(Biblical-27, as-25)
+xcomp(refer-23, Biblical-27)
+dobj(Biblical-27, scholarship-28)
+

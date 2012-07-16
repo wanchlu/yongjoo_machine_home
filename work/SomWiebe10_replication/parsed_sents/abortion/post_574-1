@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB believe)
+        (NP (PRP me))))
+    (. ?)))
+
+aux(believe-3, Do-1)
+neg(believe-3, n't-2)
+root(ROOT-0, believe-3)
+dobj(believe-3, me-4)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Show)
+        (NP (PRP them))
+        (NP
+          (NP (DT an) (JJ unmagnified) (NN cancer) (NN cell))
+          (CC and)
+          (NP (DT a) (VBN fertilized) (NN egg))))
+      (CC and)
+      (VP (VB ask)
+        (NP (PRP them))
+        (SBAR
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP one))
+              (VP (VBZ is)
+                (NP (DT a) (NN person)))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (PRP one))
+              (VP (VBZ is)
+                (ADJP (JJ desirable)
+                  (S
+                    (VP (TO to)
+                      (VP (VB kill)))))))))))
+    (. .)))
+
+root(ROOT-0, Show-1)
+iobj(Show-1, them-2)
+det(cell-6, an-3)
+amod(cell-6, unmagnified-4)
+nn(cell-6, cancer-5)
+dobj(Show-1, cell-6)
+det(egg-10, a-8)
+amod(egg-10, fertilized-9)
+dobj(Show-1, egg-10)
+conj_and(cell-6, egg-10)
+conj_and(Show-1, ask-12)
+dobj(ask-12, them-13)
+dobj(person-18, which-14)
+nsubj(person-18, one-15)
+cop(person-18, is-16)
+det(person-18, a-17)
+dep(ask-12, person-18)
+dobj(desirable-23, which-20)
+nsubj(desirable-23, one-21)
+cop(desirable-23, is-22)
+dep(ask-12, desirable-23)
+conj_and(person-18, desirable-23)
+aux(kill-25, to-24)
+xcomp(desirable-23, kill-25)
+

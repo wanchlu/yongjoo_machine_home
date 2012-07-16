@@ -1,0 +1,41 @@
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN predictions))
+    (SQ (MD can)
+      (VP (VB be)
+        (VP (VBN made)
+          (S
+            (VP (VBG using)
+              (NP
+                (NP (DT the) (NN theory))
+                (PP (IN of)
+                  (NP (NNP ID)))))))))
+    (. ?)))
+
+det(predictions-2, What-1)
+nsubjpass(made-5, predictions-2)
+aux(made-5, can-3)
+auxpass(made-5, be-4)
+root(ROOT-0, made-5)
+xcomp(made-5, using-6)
+det(theory-8, the-7)
+dobj(using-6, theory-8)
+prep_of(theory-8, ID-10)
+
+(ROOT
+  (SQ (MD Can)
+    (NP
+      (NP (DT the) (NNS designers))
+      (NP (JJ next) (NNS actions)))
+    (VP (VB be)
+      (VP (VBN determined)))
+    (. ?)))
+
+aux(determined-7, Can-1)
+det(designers-3, the-2)
+nsubjpass(determined-7, designers-3)
+amod(actions-5, next-4)
+dep(designers-3, actions-5)
+auxpass(determined-7, be-6)
+root(ROOT-0, determined-7)
+

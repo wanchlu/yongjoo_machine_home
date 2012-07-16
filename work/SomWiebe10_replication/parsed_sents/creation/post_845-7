@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN observer))
+      (PP (IN on)
+        (NP (NNP Betelgeuse))))
+    (VP (MD could)
+      (VP (VB make)
+        (NP
+          (NP (DT a) (JJ crude) (NN estimate))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN earth) (POS 's))
+              (NN age))))
+        (PP (IN by)
+          (S
+            (VP (VBG comparing)
+              (NP (PRP$ our) (NN sun))
+              (PP (IN with)
+                (NP (JJ other) (JJ main) (NN sequence) (NNS stars))))))))
+    (. .)))
+
+det(observer-2, An-1)
+nsubj(make-6, observer-2)
+prep_on(observer-2, Betelgeuse-4)
+aux(make-6, could-5)
+root(ROOT-0, make-6)
+det(estimate-9, a-7)
+amod(estimate-9, crude-8)
+dobj(make-6, estimate-9)
+det(earth-12, the-11)
+poss(age-14, earth-12)
+prep_of(estimate-9, age-14)
+prepc_by(make-6, comparing-16)
+poss(sun-18, our-17)
+dobj(comparing-16, sun-18)
+amod(stars-23, other-20)
+amod(stars-23, main-21)
+nn(stars-23, sequence-22)
+prep_with(comparing-16, stars-23)
+

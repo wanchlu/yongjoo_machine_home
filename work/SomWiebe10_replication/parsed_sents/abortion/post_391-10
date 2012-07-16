@@ -1,0 +1,57 @@
+(ROOT
+  (FRAG (CC Or)
+    (RB maybe)
+    (NP
+      (NP (DT a) (NN chimp))
+      (VP
+        (VP (VBN worked)
+          (PP (IN at)
+            (NP
+              (NP (PRP$ your) (NN computer))
+              (PP (IN for)
+                (NP (DT a) (NN while)))))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP it))
+              (VP (VBN accessed)
+                (NP (DT the) (NN net))))))
+        (CC and)
+        (VP (VBN discussed)
+          (PP (IN with)
+            (NP (DT an) (NNP MIT) (NN professor))))
+        (NP
+          (NP (DT the) (NNS dangers))
+          (PP (IN of)
+            (NP
+              (NP (NN government) (NN interference))
+              (PP (IN in)
+                (NP (DT the) (NN economy))))))))
+    (. ?)))
+
+dep(maybe-2, Or-1)
+root(ROOT-0, maybe-2)
+det(chimp-4, a-3)
+dep(maybe-2, chimp-4)
+dep(chimp-4, worked-5)
+poss(computer-8, your-7)
+prep_at(worked-5, computer-8)
+det(while-11, a-10)
+prep_for(computer-8, while-11)
+advmod(accessed-14, where-12)
+nsubj(accessed-14, it-13)
+advcl(worked-5, accessed-14)
+det(net-16, the-15)
+dobj(accessed-14, net-16)
+dep(chimp-4, discussed-18)
+conj_and(worked-5, discussed-18)
+det(professor-22, an-20)
+nn(professor-22, MIT-21)
+prep_with(discussed-18, professor-22)
+det(dangers-24, the-23)
+dobj(worked-5, dangers-24)
+nn(interference-27, government-26)
+prep_of(dangers-24, interference-27)
+det(economy-30, the-29)
+prep_in(interference-27, economy-30)
+

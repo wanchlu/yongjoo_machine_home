@@ -1,0 +1,90 @@
+(ROOT
+  (S
+    (NP (NNP Illegal) (NNP Abortions))
+    (VP
+      (VP (VBP prevent)
+        (NP (CD 0) (NNS abortions))
+        (PP (IN from)
+          (S
+            (VP (VBG happening)))))
+      (, ,)
+      (CC and)
+      (VP (VBZ kills)
+        (NP
+          (NP (NN woman))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP have)
+                (S
+                  (VP (TO to)
+                    (VP (VB go)
+                      (PP (TO to)
+                        (NP
+                          (NP (NNS basements))
+                          (CC and)
+                          (NP
+                            (NP (DT the) (NNS homes))
+                            (PP (IN of)
+                              (NP (NNS people))))))
+                      (SBAR
+                        (SBAR
+                          (WHNP (WP who))
+                          (S
+                            (VP (MD may)
+                              (CC or)
+                              (MD may) (RB not)
+                              (VP (VB be)
+                                (NP (NNS doctors)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB get)
+                                        (NP (DT the) (NN procedure))))))))))
+                        (, ,)
+                        (CC and)
+                        (SBAR
+                          (WHNP (WP who))
+                          (S
+                            (ADVP (RB often))
+                            (VP (VBP die)
+                              (PP (IN as)
+                                (NP (DT a) (NN result))))))))))))))))
+    (. .)))
+
+nn(Abortions-2, Illegal-1)
+nsubj(prevent-3, Abortions-2)
+nsubj(kills-10, Abortions-2)
+root(ROOT-0, prevent-3)
+num(abortions-5, 0-4)
+dobj(prevent-3, abortions-5)
+prepc_from(prevent-3, happening-7)
+conj_and(prevent-3, kills-10)
+dobj(kills-10, woman-11)
+nsubj(have-13, woman-11)
+rcmod(woman-11, have-13)
+aux(go-15, to-14)
+xcomp(have-13, go-15)
+prep_to(go-15, basements-17)
+det(homes-20, the-19)
+prep_to(go-15, homes-20)
+conj_and(basements-17, homes-20)
+prep_of(homes-20, people-22)
+nsubj(doctors-29, who-23)
+aux(doctors-29, may-24)
+dep(go-15, may-26)
+aux(doctors-29, may-26)
+conj_or(doctors-29, may-26)
+neg(doctors-29, not-27)
+cop(doctors-29, be-28)
+dep(go-15, doctors-29)
+aux(get-31, to-30)
+infmod(doctors-29, get-31)
+det(procedure-33, the-32)
+dobj(get-31, procedure-33)
+nsubj(die-38, who-36)
+advmod(die-38, often-37)
+dep(go-15, die-38)
+conj_and(doctors-29, die-38)
+det(result-41, a-40)
+prep_as(die-38, result-41)
+

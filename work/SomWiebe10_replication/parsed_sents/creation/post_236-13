@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Professor) (NNP Behe))
+      (VP (VBD testified)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NN strength))
+              (PP (IN of)
+                (NP (DT the) (NN analogy))))
+            (VP (VBZ depends)
+              (PP (IN upon)
+                (NP
+                  (NP (DT the) (NN degree))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN similarity))
+                      (VP (VBN entailed)
+                        (PP (IN in)
+                          (NP (DT the) (CD two) (NNS propositions)))))))))))))
+    (: ;)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (DT this))
+          (VP (VBZ is)
+            (NP (DT the) (NN test)))))
+      (, ,)
+      (NP (NNP ID))
+      (ADVP (RB completely))
+      (VP (VBZ fails)))
+    (. .)))
+
+nn(Behe-2, Professor-1)
+nsubj(testified-3, Behe-2)
+root(ROOT-0, testified-3)
+complm(depends-10, that-4)
+det(strength-6, the-5)
+nsubj(depends-10, strength-6)
+det(analogy-9, the-8)
+prep_of(strength-6, analogy-9)
+ccomp(testified-3, depends-10)
+det(degree-13, the-12)
+prep_upon(depends-10, degree-13)
+prep_of(degree-13, similarity-15)
+partmod(similarity-15, entailed-16)
+det(propositions-20, the-18)
+num(propositions-20, two-19)
+prep_in(entailed-16, propositions-20)
+advmod(fails-32, however-22)
+mark(test-28, if-24)
+nsubj(test-28, this-25)
+cop(test-28, is-26)
+det(test-28, the-27)
+advcl(fails-32, test-28)
+nsubj(fails-32, ID-30)
+advmod(fails-32, completely-31)
+parataxis(testified-3, fails-32)
+

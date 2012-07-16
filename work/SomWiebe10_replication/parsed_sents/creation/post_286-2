@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB make)
+            (S
+              (NP (PRP it))
+              (NP (DT an) (NN argument))))))
+      (PRN (, ,)
+        (S
+          (NP (PRP he))
+          (VP (MD would)
+            (VP (VB have)
+              (S
+                (VP (TO to)
+                  (VP (VB say)))))))
+        (, ,))
+      (`` ``)
+      (NP (NNP Cellular) (NN machinery))
+      (VP (VBZ is)
+        (ADJP (JJ complex))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT these) (NNS examples))
+        (PP (IN of)
+          (NP (NN complexity))))
+      (VP (VBP make)
+        (SBAR
+          (S
+            (NP (PRP me))
+            (VP (VBP think)
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (VP (VBN designed))))))))))
+    (. .)))
+
+aux(make-2, To-1)
+dep(complex-17, make-2)
+nsubj(argument-5, it-3)
+det(argument-5, an-4)
+xcomp(make-2, argument-5)
+nsubj(have-9, he-7)
+xsubj(say-11, he-7)
+aux(have-9, would-8)
+parataxis(complex-17, have-9)
+aux(say-11, to-10)
+xcomp(have-9, say-11)
+nn(machinery-15, Cellular-14)
+nsubj(complex-17, machinery-15)
+cop(complex-17, is-16)
+root(ROOT-0, complex-17)
+det(examples-21, these-20)
+nsubj(make-24, examples-21)
+prep_of(examples-21, complexity-23)
+conj_and(complex-17, make-24)
+nsubj(think-26, me-25)
+ccomp(make-24, think-26)
+nsubjpass(designed-29, it-27)
+auxpass(designed-29, is-28)
+ccomp(think-26, designed-29)
+

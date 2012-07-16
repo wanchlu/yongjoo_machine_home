@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (S
+        (NP (PRP you))
+        (VP (VB make)
+          (NP (JJ great) (NN sense)))))
+    (. !)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(make-4, you-3)
+ccomp(think-2, make-4)
+amod(sense-6, great-5)
+dobj(make-4, sense-6)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (VBD found)
+          (PRT (RP out))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBD was)
+                (ADJP (JJ pregnant))))))))
+    (NP (PRP I))
+    (ADVP (RB immediately))
+    (VP (VBD was)
+      (ADJP (JJ excited)))
+    (. .)))
+
+advmod(found-3, When-1)
+nsubj(found-3, I-2)
+advcl(excited-11, found-3)
+prt(found-3, out-4)
+nsubj(pregnant-7, I-5)
+cop(pregnant-7, was-6)
+ccomp(found-3, pregnant-7)
+nsubj(excited-11, I-8)
+advmod(excited-11, immediately-9)
+cop(excited-11, was-10)
+root(ROOT-0, excited-11)
+

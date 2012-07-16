@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (DT A) (NN fetus))
+    (VP (MD can) (RB not)
+      (VP (VB control)
+        (NP
+          (NP (DT the) (NN environment))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ s)
+                (SBAR
+                  (SBAR (IN in)
+                    (SINV (CC nor)
+                      (MD should)
+                      (NP (PRP it))
+                      (VP (VB be)
+                        (VP (VBN judged)
+                          (S
+                            (ADJP (JJ human)))))))
+                  (CC or)
+                  (SBAR (RB not) (IN by)
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ s)
+                        (NP (NN location))))))))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(control-5, fetus-2)
+aux(control-5, can-3)
+neg(control-5, not-4)
+root(ROOT-0, control-5)
+det(environment-7, the-6)
+dobj(control-5, environment-7)
+nsubj(s-9, it-8)
+rcmod(environment-7, s-9)
+dep(judged-15, in-10)
+aux(judged-15, should-12)
+nsubjpass(judged-15, it-13)
+auxpass(judged-15, be-14)
+dep(s-9, judged-15)
+acomp(judged-15, human-16)
+dep(location-22, not-18)
+dep(location-22, by-19)
+nsubj(location-22, it-20)
+cop(location-22, s-21)
+dep(s-9, location-22)
+conj_or(judged-15, location-22)
+

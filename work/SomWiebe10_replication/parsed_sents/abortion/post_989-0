@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB nearly) (JJ everyday))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN week))
+          (, ,)
+          (NP
+            (NP (DT the) (NNP US) (NN government))
+            (-LRB- -LRB-)
+            (NP (PRP$ your) (NN tax) (NNS dollars))
+            (-RRB- -RRB-)))))
+    (VP (VBZ is)
+      (VP (VBG killing)
+        (NP
+          (NP
+            (NP (JJ innocent) (NNS children))
+            (PP (IN in)
+              (NP (NNP Iraq))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ does)
+                (SBAR
+                  (S
+                    (NP (NNP NOT))
+                    (VP (VBP seem)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (NP (PDT such) (DT an) (NN issue))))))))))))))))
+
+advmod(everyday-2, nearly-1)
+nsubj(killing-16, everyday-2)
+det(week-5, the-4)
+prep_of(everyday-2, week-5)
+det(government-9, the-7)
+nn(government-9, US-8)
+appos(week-5, government-9)
+poss(dollars-13, your-11)
+nn(dollars-13, tax-12)
+dep(government-9, dollars-13)
+aux(killing-16, is-15)
+root(ROOT-0, killing-16)
+amod(children-18, innocent-17)
+dobj(killing-16, children-18)
+prep_in(children-18, Iraq-20)
+nsubj(does-23, that-22)
+dobj(killing-16, does-23)
+conj_and(children-18, does-23)
+rcmod(children-18, does-23)
+nsubj(seem-25, NOT-24)
+xsubj(issue-30, NOT-24)
+ccomp(does-23, seem-25)
+aux(issue-30, to-26)
+cop(issue-30, be-27)
+predet(issue-30, such-28)
+det(issue-30, an-29)
+xcomp(seem-25, issue-30)
+

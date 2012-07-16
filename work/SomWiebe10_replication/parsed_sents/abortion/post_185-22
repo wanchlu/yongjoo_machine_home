@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP 've)
+      (VP (VBN seen)
+        (ADVP
+          (NP (DT this) (NN play))
+          (IN out))
+        (PP (IN before)
+          (CC and)
+          (IN within)
+          (NP (DT the) (NNP Catholic) (NNP Church)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (JJ certain) (NNS individuals))
+            (VP (VBD decided)
+              (S
+                (VP (TO to)
+                  (VP (VB place)
+                    (NP (PRP themselves))
+                    (PP (IN above)
+                      (NP (NNP God)))))))))))
+    (. .)))
+
+nsubj(seen-3, We-1)
+nsubj(seen-3', We-1)
+aux(seen-3, 've-2)
+root(ROOT-0, seen-3)
+conj_and(seen-3, seen-3')
+det(play-5, this-4)
+npadvmod(out-6, play-5)
+advmod(seen-3, out-6)
+det(Church-12, the-10)
+nn(Church-12, Catholic-11)
+prep_before(seen-3, Church-12)
+prep_within(seen-3', Church-12)
+advmod(decided-16, when-13)
+amod(individuals-15, certain-14)
+nsubj(decided-16, individuals-15)
+xsubj(place-18, individuals-15)
+advcl(seen-3, decided-16)
+aux(place-18, to-17)
+xcomp(decided-16, place-18)
+dobj(place-18, themselves-19)
+prep_above(place-18, God-21)
+

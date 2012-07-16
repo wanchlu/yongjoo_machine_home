@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (DT The) (NN constitution))
+    (VP
+      (VP (VBZ does) (RB not)
+        (VP (VB provide)
+          (NP (NNS rights))))
+      (CC or)
+      (VP (VBD personhood)
+        (PP (TO to)
+          (NP (DT a) (NN fetus)))))
+    (. .)))
+
+det(constitution-2, The-1)
+nsubj(provide-5, constitution-2)
+nsubj(personhood-8, constitution-2)
+aux(provide-5, does-3)
+neg(provide-5, not-4)
+root(ROOT-0, provide-5)
+dobj(provide-5, rights-6)
+conj_or(provide-5, personhood-8)
+det(fetus-11, a-10)
+prep_to(personhood-8, fetus-11)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can) (RB not)
+      (VP (VB murder)
+        (NP (DT a) (NN non-person))))
+    (. .)))
+
+nsubj(murder-4, You-1)
+aux(murder-4, can-2)
+neg(murder-4, not-3)
+root(ROOT-0, murder-4)
+det(non-person-6, a-5)
+dobj(murder-4, non-person-6)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Also))
+      (NP (NN note)))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD can) (RB not)
+      (VP (VB provide)
+        (ADJP (JJ personhood)
+          (PP (TO to)
+            (NP
+              (NP (DT a) (NN fetus))
+              (CC and)
+              (NP (DT the) (NN mother)))))
+        (, ,)
+        (SBAR (IN since)
+          (S
+            (NP (RB only) (CD one) (NN body))
+            (VP (MD can)
+              (VP (VB be)
+                (NP (DT a) (NN person))))))))
+    (. .)))
+
+advmod(note-2, Also-1)
+ccomp(provide-7, note-2)
+nsubj(provide-7, you-4)
+aux(provide-7, can-5)
+neg(provide-7, not-6)
+root(ROOT-0, provide-7)
+acomp(provide-7, personhood-8)
+det(fetus-11, a-10)
+prep_to(personhood-8, fetus-11)
+det(mother-14, the-13)
+prep_to(personhood-8, mother-14)
+conj_and(fetus-11, mother-14)
+mark(person-23, since-16)
+advmod(body-19, only-17)
+num(body-19, one-18)
+nsubj(person-23, body-19)
+aux(person-23, can-20)
+cop(person-23, be-21)
+det(person-23, a-22)
+advcl(provide-7, person-23)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (SBAR (IN unless)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (VP (VBN conjoined)
+            (NP (NNS twins))))))
+    (-RRB- -RRB-)))
+
+mark(conjoined-5, unless-2)
+nsubjpass(conjoined-5, you-3)
+auxpass(conjoined-5, 're-4)
+root(ROOT-0, conjoined-5)
+dobj(conjoined-5, twins-6)
+

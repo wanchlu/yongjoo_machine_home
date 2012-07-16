@@ -1,0 +1,135 @@
+(ROOT
+  (S (`` ``)
+    (PP
+      (ADVP (RB Unfortunately))
+      (IN for)
+      (NP (PRP them)))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP have)
+      (VP (VBN failed)))
+    (. .)))
+
+advmod(failed-8, Unfortunately-2)
+prep_for(failed-8, them-4)
+nsubj(failed-8, they-6)
+aux(failed-8, have-7)
+root(ROOT-0, failed-8)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (NP (DT no) (JJ such) (`` ``) (JJ scientific) (NN evidence) ('' '')))
+    (. .)))
+
+nsubj(have-2, They-1)
+root(ROOT-0, have-2)
+det(evidence-7, no-3)
+amod(evidence-7, such-4)
+amod(evidence-7, scientific-6)
+dobj(have-2, evidence-7)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP ``))
+    (PP (IN Of)
+      (NP (NN course)))
+    (. .)))
+
+dep(``-2, Of-3)
+pobj(Of-3, course-4)
+
+(ROOT
+  (S (CC And)
+    (NP
+      (NP (DT the) (JJ so-called) ('' '') (NNP intelligent))
+      (NP (NN design) ('' '') (NN side)))
+    (VP (VBZ has)
+      (VP (VBN failed)))
+    (. .)))
+
+cc(failed-10, And-1)
+det(intelligent-5, the-2)
+amod(intelligent-5, so-called-3)
+nsubj(failed-10, intelligent-5)
+nn(side-8, design-6)
+dep(intelligent-5, side-8)
+aux(failed-10, has-9)
+root(ROOT-0, failed-10)
+
+(ROOT
+  (S ('' '')
+    (ADVP (RB Wow))
+    (, ,)
+    (SBAR
+      (WHADVP (RB just) (WRB when))
+      (S
+        (NP (PRP I))
+        (VP (VBD thought))))
+    (NP (NNP PvM))
+    (VP (VBD had)
+      (NP
+        (NP (DT a) (JJ serious) (NN lack))
+        (PP (IN of)
+          (NP (NN substance)))))
+    (. !)))
+
+advmod(had-9, Wow-2)
+advmod(when-5, just-4)
+advmod(thought-7, when-5)
+nsubj(thought-7, I-6)
+advcl(had-9, thought-7)
+nsubj(had-9, PvM-8)
+root(ROOT-0, had-9)
+det(lack-12, a-10)
+amod(lack-12, serious-11)
+dobj(had-9, lack-12)
+prep_of(lack-12, substance-14)
+
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB give)
+      (NP
+        (NP
+          (ADVP (IN at) (JJS least))
+          (DT some) (NN kind))
+        (PP (IN of)
+          (NP (NN reasoning))))
+      (PP (IN behind)
+        (NP (DT the) (NN idea)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP
+            (CONJP (RB not) (JJ only))
+            (VP (VBP have)
+              (NP (DT no) (NN evidence)))
+            (CC but)
+            (VP (VBP have)
+              (VP (VBN failed)))))))
+    (. ?)))
+
+aux(give-3, Can-1)
+nsubj(give-3, you-2)
+root(ROOT-0, give-3)
+advmod(kind-7, at-4)
+pobj(at-4, least-5)
+det(kind-7, some-6)
+dobj(give-3, kind-7)
+prep_of(kind-7, reasoning-9)
+det(idea-12, the-11)
+prep_behind(give-3, idea-12)
+complm(have-17, that-13)
+nsubj(have-17, they-14)
+nsubj(failed-22, they-14)
+neg(only-16, not-15)
+preconj(have-17, only-16)
+ccomp(give-3, have-17)
+det(evidence-19, no-18)
+dobj(have-17, evidence-19)
+aux(failed-22, have-21)
+ccomp(give-3, failed-22)
+conj_but(have-17, failed-22)
+

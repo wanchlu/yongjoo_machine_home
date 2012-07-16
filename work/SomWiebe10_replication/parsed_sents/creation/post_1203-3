@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP (NNP Irreducible) (NNP Complexity))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN proven)
+          (PP (IN with)
+            (NP
+              (NP
+                (NP (DT the) (NN example))
+                (PP (IN of)
+                  (NP (DT the) (NNP Flagella) (NNP Motor))))
+              (, ,)
+              (NP (DT an)
+                (ADJP (RB extremely) (JJ intricate))
+                (NN system))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ requires)
+                    (S
+                      (NP
+                        (NP (DT all) (NNS parts))
+                        (PP (IN of)
+                          (NP (PRP itself))))
+                      (VP (TO to)
+                        (VP (VB exist)
+                          (PRT (RP together))
+                          (SBAR (IN in) (NN order)
+                            (S
+                              (VP (TO to)
+                                (VP (VB function))))))))))))))))
+    (. .)))
+
+nn(Complexity-2, Irreducible-1)
+nsubjpass(proven-5, Complexity-2)
+aux(proven-5, has-3)
+auxpass(proven-5, been-4)
+root(ROOT-0, proven-5)
+det(example-8, the-7)
+prep_with(proven-5, example-8)
+det(Motor-12, the-10)
+nn(Motor-12, Flagella-11)
+prep_of(example-8, Motor-12)
+det(system-17, an-14)
+advmod(intricate-16, extremely-15)
+amod(system-17, intricate-16)
+appos(example-8, system-17)
+nsubj(requires-19, system-17)
+rcmod(example-8, requires-19)
+rcmod(system-17, requires-19)
+det(parts-21, all-20)
+nsubj(exist-25, parts-21)
+prep_of(parts-21, itself-23)
+aux(exist-25, to-24)
+xcomp(requires-19, exist-25)
+prt(exist-25, together-26)
+mark(function-30, in-27)
+dep(function-30, order-28)
+aux(function-30, to-29)
+purpcl(exist-25, function-30)
+

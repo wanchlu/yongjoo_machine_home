@@ -1,0 +1,91 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP last)
+        (NP (NN statement))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG assuming)
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP know)
+                (SBAR
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP (NNP ID))
+                      (VP (VBZ has)
+                        (VP (VBN defined)
+                          (NP
+                            (NP (DT the) (NNS concepts))
+                            (PP (IN of)
+                              (NP (`` ``) (NN design) ('' '')
+                                (CC and)
+                                (`` ``) (NN information) ('' ''))))))))
+                  (CC and)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP are)
+                        (PP (IN at)
+                          (NP
+                            (NP (NNS odds))
+                            (PP (IN with)
+                              (SBAR
+                                (WHADVP (WRB how))
+                                (S
+                                  (NP (NN science))
+                                  (ADVP (RB typically))
+                                  (VP (VBZ defines)
+                                    (NP (JJ such) (NNS terms)))))))))))))))
+          (CC or)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (DT the) (NN layperson))
+              (VP (MD may)
+                (VP (VB interpret)
+                  (NP (JJ such) (NNS terms)))))))))
+    (. ?)))
+
+nsubj(last-2, You-1)
+ccomp(assuming-7, last-2)
+dobj(last-2, statement-3)
+nsubj(assuming-7, I-5)
+aux(assuming-7, am-6)
+root(ROOT-0, assuming-7)
+nsubj(know-9, you-8)
+dep(assuming-7, know-9)
+advmod(defined-13, how-10)
+nsubj(defined-13, ID-11)
+aux(defined-13, has-12)
+ccomp(know-9, defined-13)
+det(concepts-15, the-14)
+dobj(defined-13, concepts-15)
+prep_of(concepts-15, design-18)
+prep_of(concepts-15, information-22)
+conj_and(design-18, information-22)
+complm(are-27, that-25)
+nsubj(are-27, they-26)
+ccomp(know-9, are-27)
+conj_and(defined-13, are-27)
+prep_at(are-27, odds-29)
+advmod(defines-34, how-31)
+nsubj(defines-34, science-32)
+advmod(defines-34, typically-33)
+prepc_with(odds-29, defines-34)
+amod(terms-36, such-35)
+dobj(defines-34, terms-36)
+advmod(interpret-42, how-38)
+det(layperson-40, the-39)
+nsubj(interpret-42, layperson-40)
+aux(interpret-42, may-41)
+dep(assuming-7, interpret-42)
+conj_or(know-9, interpret-42)
+amod(terms-44, such-43)
+dobj(interpret-42, terms-44)
+

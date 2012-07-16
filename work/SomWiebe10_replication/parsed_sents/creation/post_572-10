@@ -1,0 +1,27 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT A) (NN complexity) (NN threshold))
+      (PP (IN of)
+        (NP
+          (NP (CD 500) (NNS bits))
+          (PP (IN of)
+            (NP (NN information))))))
+    (VP (VBZ is)
+      (NP (DT the)
+        (ADJP (RB typically) (VBN used))
+        (NN standard)))
+    (. .)))
+
+det(threshold-4, A-2)
+nn(threshold-4, complexity-3)
+nsubj(standard-14, threshold-4)
+num(bits-7, 500-6)
+prep_of(threshold-4, bits-7)
+prep_of(bits-7, information-9)
+cop(standard-14, is-10)
+det(standard-14, the-11)
+advmod(used-13, typically-12)
+amod(standard-14, used-13)
+root(ROOT-0, standard-14)
+

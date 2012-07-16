@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP beleive)
+      (SBAR
+        (S
+          (NP (NN evolution))
+          (VP
+            (VP (MD could)
+              (VP (VB be)))
+            (, ,)
+            (CC but)
+            (PP (IN as)
+              (NP (DT a) (NN stage)))
+            (PP (IN after)
+              (NP
+                (NP (NN creation))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD would)
+                      (VP (VB progress)
+                        (NP (NN life))))))))))))
+    (. .)))
+
+nsubj(beleive-2, I-1)
+root(ROOT-0, beleive-2)
+nsubj(be-5, evolution-3)
+aux(be-5, could-4)
+ccomp(beleive-2, be-5)
+ccomp(beleive-2, as-8)
+conj_but(be-5, as-8)
+det(stage-10, a-9)
+prep_as(be-5, stage-10)
+prep_after(be-5, creation-12)
+nsubj(progress-16, creation-12)
+aux(progress-16, would-15)
+rcmod(creation-12, progress-16)
+dobj(progress-16, life-17)
+

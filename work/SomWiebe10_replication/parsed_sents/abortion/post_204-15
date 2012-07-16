@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN number))
+      (PP (IN of)
+        (NP
+          (NP (NNS bodies))
+          (VP (VBN found)
+            (PP (IN in)
+              (NP
+                (NP (DT the) (JJ mass) (NNS graves))
+                (PP (IN in)
+                  (NP (NNP Iraq)))))))))
+    (VP (VBZ has)
+      (VP (VBN exceeded)
+        (NP
+          (NP (DT the) (NNS estimates))
+          (SBAR
+            (WHPP (IN of)
+              (WHNP
+                (WHADJP (WRB how) (JJ many))
+                (NNS people)))
+            (S
+              (NP (NNP Saddam) (NNP Hussein))
+              (VP (VBD was)
+                (VP (VBN thought)
+                  (S
+                    (VP (TO to)
+                      (VP (VB have)
+                        (VP (VBN executed))))))))))))
+    (. .)))
+
+det(number-2, The-1)
+nsubj(exceeded-13, number-2)
+prep_of(number-2, bodies-4)
+partmod(bodies-4, found-5)
+det(graves-9, the-7)
+amod(graves-9, mass-8)
+prep_in(found-5, graves-9)
+prep_in(graves-9, Iraq-11)
+aux(exceeded-13, has-12)
+root(ROOT-0, exceeded-13)
+det(estimates-15, the-14)
+dobj(exceeded-13, estimates-15)
+advmod(many-18, how-17)
+amod(people-19, many-18)
+rel(thought-23, people-19)
+nn(Hussein-21, Saddam-20)
+nsubjpass(thought-23, Hussein-21)
+xsubj(executed-26, Hussein-21)
+auxpass(thought-23, was-22)
+rcmod(estimates-15, thought-23)
+aux(executed-26, to-24)
+aux(executed-26, have-25)
+xcomp(thought-23, executed-26)
+

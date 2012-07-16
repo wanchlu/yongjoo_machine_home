@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Life))
+      (PP (IN without)
+        (NP (JJ neural) (NN activity))))
+    (VP (VBZ is)
+      (ADJP (RB not) (RB particularly) (JJ significant))
+      (PRN (-LRB- -LRB-)
+        (PP (IN except)
+          (SBAR (IN as)
+            (S
+              (NP (PRP it))
+              (VP (VBZ affects)
+                (NP
+                  (NP (NN life))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ does)))))))))
+        (-RRB- -RRB-))
+      (PP (IN in)
+        (NP (PRP$ his) (NN field))))
+    (. .)))
+
+nsubj(significant-8, Life-1)
+amod(activity-4, neural-3)
+prep_without(Life-1, activity-4)
+cop(significant-8, is-5)
+neg(significant-8, not-6)
+advmod(significant-8, particularly-7)
+root(ROOT-0, significant-8)
+dep(significant-8, except-10)
+mark(affects-13, as-11)
+nsubj(affects-13, it-12)
+pcomp(except-10, affects-13)
+dobj(affects-13, life-14)
+nsubj(does-16, life-14)
+rcmod(life-14, does-16)
+poss(field-20, his-19)
+prep_in(significant-8, field-20)
+

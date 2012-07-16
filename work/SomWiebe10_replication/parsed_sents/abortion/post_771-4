@@ -1,0 +1,72 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (S
+          (NP (PRP I))
+          (VP (VBP get)
+            (ADJP (JJ married))))
+        (CC and)
+        (S
+          (S
+            (NP (PRP$ my) (NN wife))
+            (VP (VBZ gets)
+              (ADJP (JJ pregnant))))
+          (CC and)
+          (S
+            (NP (PRP she))
+            (VP (VBZ decides)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP she))
+                  (VP (VBZ wants)
+                    (NP
+                      (NP (DT an) (NN abortion))
+                      (PRN (-LRB- -LRB-)
+                        (SBAR (RB Not) (IN that)
+                          (S
+                            (NP (PRP I))
+                            (VP (MD would)
+                              (VP (VB marry)
+                                (NP
+                                  (NP (DT a) (NN woman))
+                                  (SBAR
+                                    (WHNP (WDT that))
+                                    (S
+                                      (VP (VBZ does) (RB n't)
+                                        (VP (VB want)
+                                          (NP (NNS kids)))))))))))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+dep(married-5, What-1)
+mark(married-5, if-2)
+nsubj(married-5, I-3)
+dep(married-5, get-4)
+root(ROOT-0, married-5)
+poss(wife-8, my-7)
+nsubj(pregnant-10, wife-8)
+dep(pregnant-10, gets-9)
+conj_and(married-5, pregnant-10)
+nsubj(decides-13, she-12)
+conj_and(married-5, decides-13)
+conj_and(pregnant-10, decides-13)
+complm(wants-16, that-14)
+nsubj(wants-16, she-15)
+ccomp(decides-13, wants-16)
+det(abortion-18, an-17)
+dobj(wants-16, abortion-18)
+dep(marry-24, Not-20)
+dep(marry-24, that-21)
+nsubj(marry-24, I-22)
+aux(marry-24, would-23)
+dep(abortion-18, marry-24)
+det(woman-26, a-25)
+dobj(marry-24, woman-26)
+nsubj(want-30, woman-26)
+aux(want-30, does-28)
+neg(want-30, n't-29)
+rcmod(woman-26, want-30)
+dobj(want-30, kids-31)
+

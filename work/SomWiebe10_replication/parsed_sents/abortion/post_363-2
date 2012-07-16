@@ -1,0 +1,41 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (-LRB- -LRB-) (NNP The) (NNP zygote) (-RRB- -RRB-))
+        (, ,)
+        (VP (VBN formed)
+          (PP (IN by)
+            (NP (DT the) (NN union)))))
+      (PP (IN of)
+        (NP
+          (NP (DT an) (NN oocyte))
+          (CC and)
+          (NP (DT a) (NN sperm)))))
+    (, ,)
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN beginning))
+        (PP (IN of)
+          (NP (DT a) (JJ new) (JJ human) (NN being)))))
+    (. .)))
+
+nn(zygote-4, The-3)
+ccomp(beginning-20, zygote-4)
+partmod(zygote-4, formed-7)
+det(union-10, the-9)
+agent(formed-7, union-10)
+dep(zygote-4, of-11)
+det(oocyte-13, an-12)
+pobj(of-11, oocyte-13)
+det(sperm-16, a-15)
+pobj(of-11, sperm-16)
+conj_and(oocyte-13, sperm-16)
+cop(beginning-20, is-18)
+det(beginning-20, the-19)
+root(ROOT-0, beginning-20)
+det(being-25, a-22)
+amod(being-25, new-23)
+amod(being-25, human-24)
+prep_of(beginning-20, being-25)
+

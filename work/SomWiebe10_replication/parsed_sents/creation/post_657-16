@@ -1,0 +1,23 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (VP (VBN tried)
+        (CC and)
+        (VBN failed)
+        (PP (IN for)
+          (NP
+            (QP (JJR more) (IN than) (CD 10))
+            (NNS years)))))
+    (. .)))
+
+nsubj(tried-3, They-1)
+nsubj(failed-5, They-1)
+aux(tried-3, have-2)
+root(ROOT-0, tried-3)
+conj_and(tried-3, failed-5)
+mwe(than-8, more-7)
+quantmod(10-9, than-8)
+num(years-10, 10-9)
+prep_for(tried-3, years-10)
+

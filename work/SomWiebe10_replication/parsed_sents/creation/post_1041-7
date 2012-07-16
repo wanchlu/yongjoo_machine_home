@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN surface))
+      (PP (IN of)
+        (NP (DT the) (NN earth))))
+    (VP (VBZ is)
+      (VP (VBN covered)
+        (PP (IN by)
+          (NP
+            (NP (JJ large) (NNS masses))
+            (PP (IN of)
+              (NP
+                (NP (NN land))
+                (VP (VBN known)
+                  (PP (IN as)
+                    (NP (JJ tectonic) (NNS plates))))))))))
+    (. .)))
+
+det(surface-2, The-1)
+nsubjpass(covered-7, surface-2)
+det(earth-5, the-4)
+prep_of(surface-2, earth-5)
+auxpass(covered-7, is-6)
+root(ROOT-0, covered-7)
+amod(masses-10, large-9)
+agent(covered-7, masses-10)
+prep_of(masses-10, land-12)
+partmod(land-12, known-13)
+amod(plates-16, tectonic-15)
+prep_as(known-13, plates-16)
+

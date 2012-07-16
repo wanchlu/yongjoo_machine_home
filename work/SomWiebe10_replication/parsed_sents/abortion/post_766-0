@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD read)
+      (NP
+        (NP (NN everything))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD wrote)
+              (VP (VB jake)
+                (NP (PDT all) (PRP$ your) (NNS responses))))))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (S
+                (NP (PRP you))
+                (VP (TO to)
+                  (VP (VB decide)
+                    (PP (IN for)
+                      (NP (DT a) (NN woman)))))))))))
+    (. ?)))
+
+nsubj(read-2, I-1)
+root(ROOT-0, read-2)
+dobj(read-2, everything-3)
+nsubj(wrote-5, you-4)
+rcmod(everything-3, wrote-5)
+xcomp(wrote-5, jake-6)
+predet(responses-9, all-7)
+poss(responses-9, your-8)
+dobj(jake-6, responses-9)
+nsubj(are-12, who-11)
+rcmod(everything-3, are-12)
+nsubj(decide-15, you-13)
+aux(decide-15, to-14)
+xcomp(are-12, decide-15)
+det(woman-18, a-17)
+prep_for(decide-15, woman-18)
+

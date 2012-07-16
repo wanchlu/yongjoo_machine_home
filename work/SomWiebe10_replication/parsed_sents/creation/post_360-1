@@ -1,0 +1,36 @@
+(ROOT
+  (SINV
+    (ADVP
+      (ADVP (RB Indeed))
+      (, ,)
+      (CC and)
+      (RB yet)
+      (ADVP (RB ID)))
+    (VP (VBZ insists))
+    (SBAR (IN that)
+      (S
+        (NP (PRP we))
+        (VP (MD should)
+          (VP (VB conclude)
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (NN designer))
+                (VP (VBD was)
+                  (VP (VBN involved)))))))))
+    (. .)))
+
+advmod(insists-6, Indeed-1)
+conj_and(Indeed-1, yet-4)
+advmod(insists-6, yet-4)
+dep(Indeed-1, ID-5)
+root(ROOT-0, insists-6)
+dep(conclude-10, that-7)
+nsubj(conclude-10, we-8)
+aux(conclude-10, should-9)
+dep(insists-6, conclude-10)
+complm(involved-15, that-11)
+det(designer-13, a-12)
+nsubjpass(involved-15, designer-13)
+auxpass(involved-15, was-14)
+ccomp(conclude-10, involved-15)
+

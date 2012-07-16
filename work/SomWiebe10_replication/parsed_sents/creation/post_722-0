@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Today))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NNP July) (CD 22nd))
+          (NP (CD 2009)))
+        (-RRB- -RRB-))
+      (NP (DT the) (`` ``) (JJS best))
+      ('' ''))
+    (VP (VBD solar)
+      (SBAR
+        (S
+          (NP
+            (NP (NN eclipse))
+            (PP (IN of)
+              (NP (DT the) (NN century))))
+          (VP (VBD took)
+            (NP (NN place))
+            (PP (IN from)
+              (NP (NNP India)))
+            (PP (TO to)
+              (NP (NNP Japan)))))))
+    (. .)))
+
+nsubj(solar-11, Today-1)
+dep(Today-1, July-3)
+num(July-3, 22nd-4)
+dep(July-3, 2009-5)
+det(best-9, the-7)
+dep(Today-1, best-9)
+root(ROOT-0, solar-11)
+nsubj(took-16, eclipse-12)
+det(century-15, the-14)
+prep_of(eclipse-12, century-15)
+ccomp(solar-11, took-16)
+dobj(took-16, place-17)
+prep_from(took-16, India-19)
+prep_to(took-16, Japan-21)
+

@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Some) (NNS mammals))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (JJ great) (NNS apes))
+          (CC and)
+          (NP (DT some) (NNS cetaceans)))
+        (-RRB- -RRB-)))
+    (VP (VBP have)
+      (NP (NNS rights))
+      (ADVP (RB even))
+      (PP (IN beyond)
+        (NP (DT that))))
+    (. .)))
+
+det(mammals-2, Some-1)
+nsubj(have-10, mammals-2)
+amod(apes-5, great-4)
+dep(mammals-2, apes-5)
+det(cetaceans-8, some-7)
+dep(mammals-2, cetaceans-8)
+conj_and(apes-5, cetaceans-8)
+root(ROOT-0, have-10)
+dobj(have-10, rights-11)
+advmod(have-10, even-12)
+prep_beyond(have-10, that-14)
+

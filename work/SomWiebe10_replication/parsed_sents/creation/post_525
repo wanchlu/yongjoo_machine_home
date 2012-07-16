@@ -1,0 +1,158 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBN told)
+              (ADVP (RB already))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (NNP Phil))
+                  (VP (VBZ says)))))))))
+    (VP (VBZ is)
+      (ADJP (JJ irrelevant)
+        (PP (TO to)
+          (NP (NNP ID)))))
+    (. .)))
+
+mark(told-5, As-1)
+nsubjpass(told-5, you-2)
+aux(told-5, have-3)
+auxpass(told-5, been-4)
+csubj(irrelevant-11, told-5)
+advmod(told-5, already-6)
+dobj(says-9, what-7)
+nsubj(says-9, Phil-8)
+ccomp(told-5, says-9)
+cop(irrelevant-11, is-10)
+root(ROOT-0, irrelevant-11)
+prep_to(irrelevant-11, ID-13)
+
+(ROOT
+  (S (CC Or)
+    (NP (PRP you))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB allow)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (NNP Dawkins))
+                (VP (VBZ says)
+                  (PP (IN about)
+                    (NP
+                      (NP (DT the) (NN theory))
+                      (PP (IN of)
+                        (NP (NN evolution))))))))))))
+    (. .)))
+
+cc(have-3, Or-1)
+nsubj(have-3, you-2)
+xsubj(allow-5, you-2)
+root(ROOT-0, have-3)
+aux(allow-5, to-4)
+xcomp(have-3, allow-5)
+dobj(says-8, what-6)
+nsubj(says-8, Dawkins-7)
+ccomp(allow-5, says-8)
+det(theory-11, the-10)
+prep_about(says-8, theory-11)
+prep_of(theory-11, evolution-13)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT What) (NN part))
+      (PP (IN of)
+        (WHNP (WDT that))))
+    (SQ (VBP do) (RB n't)
+      (NP (PRP you))
+      (VP (VB understand)))
+    (. ?)))
+
+det(part-2, What-1)
+dobj(understand-8, part-2)
+prep_of(part-2, that-4)
+aux(understand-8, do-5)
+neg(understand-8, n't-6)
+nsubj(understand-8, you-7)
+root(ROOT-0, understand-8)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (DT a) (NN fact))
+      (SBAR (IN that)
+        (S
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (MD could)
+                (VP (VB support)
+                  (NP (PRP$ your) (NN position))
+                  (PP (IN with)
+                    (NP (JJ real) (NNS data)))))))
+          (NP (NNP ID))
+          (VP (MD would)
+            (VP (VB go)
+              (PRT (RP away)))))))
+    (. .)))
+
+cc(fact-5, And-1)
+nsubj(fact-5, it-2)
+cop(fact-5, is-3)
+det(fact-5, a-4)
+root(ROOT-0, fact-5)
+complm(go-18, that-6)
+mark(support-10, if-7)
+nsubj(support-10, you-8)
+aux(support-10, could-9)
+advcl(go-18, support-10)
+poss(position-12, your-11)
+dobj(support-10, position-12)
+amod(data-15, real-14)
+prep_with(support-10, data-15)
+nsubj(go-18, ID-16)
+aux(go-18, would-17)
+ccomp(fact-5, go-18)
+prt(go-18, away-19)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can)
+      (VP (VB whine)
+        (NP (DT all))
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP want))))
+          (CC but)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD will) (RB not)
+                (VP (VB change)
+                  (NP (DT that) (NN fact)))))))))
+    (. .)))
+
+nsubj(whine-3, You-1)
+aux(whine-3, can-2)
+root(ROOT-0, whine-3)
+dobj(whine-3, all-4)
+nsubj(want-6, you-5)
+dep(whine-3, want-6)
+nsubj(change-11, that-8)
+aux(change-11, will-9)
+neg(change-11, not-10)
+dep(whine-3, change-11)
+conj_but(want-6, change-11)
+det(fact-13, that-12)
+dobj(change-11, fact-13)
+

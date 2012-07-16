@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ same))
+      (PP (IN with)
+        (NP
+          (NP (JJ tidal) (NNS forces))
+          (CC and)
+          (NP (DT the) (NN axial)))))
+    (VP (VBD tilt) (-LRB- -LRB-)
+      (SBAR
+        (WHPP (IN in)
+          (WHNP (WDT which)))
+        (S
+          (NP
+            (NP (DT the) (NN moon) (POS 's))
+            (NN action))
+          (VP (VBZ keeps)
+            (SBAR
+              (S
+                (NP (DT the) (NNS earths))
+                (VP (VBZ axis)
+                  (ADJP (RB relatively) (JJ stable)))))))))
+    (. .)))
+
+det(same-2, The-1)
+nsubj(tilt-9, same-2)
+amod(forces-5, tidal-4)
+prep_with(same-2, forces-5)
+det(axial-8, the-7)
+prep_with(same-2, axial-8)
+conj_and(forces-5, axial-8)
+root(ROOT-0, tilt-9)
+dep(keeps-17, in-11)
+pobj(in-11, which-12)
+det(moon-14, the-13)
+poss(action-16, moon-14)
+nsubj(keeps-17, action-16)
+ccomp(tilt-9, keeps-17)
+det(earths-19, the-18)
+nsubj(axis-20, earths-19)
+ccomp(keeps-17, axis-20)
+advmod(stable-22, relatively-21)
+acomp(axis-20, stable-22)
+

@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NN abortion))
+        (VP (VBZ has)
+          (NP
+            (NP (PRP it) (POS 's))
+            (NNS risks)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ important))
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (VBP compare)
+            (NP (PRP it))
+            (PP (IN against)
+              (NP
+                (NP (DT the) (NN alternative))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ is)
+                      (VP (VBG going)
+                        (PRT (RP through))
+                        (PP (IN with)
+                          (S
+                            (VP (VBG giving)
+                              (NP (NN birth)))))))))))))))
+    (. .)))
+
+mark(has-3, While-1)
+nsubj(has-3, abortion-2)
+advcl(important-10, has-3)
+poss(risks-6, it-4)
+dobj(has-3, risks-6)
+nsubj(important-10, it-8)
+cop(important-10, 's-9)
+root(ROOT-0, important-10)
+complm(compare-13, that-11)
+nsubj(compare-13, we-12)
+ccomp(important-10, compare-13)
+dobj(compare-13, it-14)
+det(alternative-17, the-16)
+prep_against(compare-13, alternative-17)
+nsubj(going-21, alternative-17)
+aux(going-21, is-20)
+rcmod(alternative-17, going-21)
+prt(going-21, through-22)
+prepc_with(going-21, giving-24)
+dobj(giving-24, birth-25)
+

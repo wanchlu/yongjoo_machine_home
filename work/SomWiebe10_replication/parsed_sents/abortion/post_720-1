@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHNP (WP What))
+        (S
+          (VP (VBZ 's)
+            (ADJP (JJ funny)))))
+      (VP (VBZ is)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NN number))
+              (PP (IN of)
+                (NP
+                  (NP (NNS abortions))
+                  (VP (VBN performed)))))
+            (VP (VBD were)
+              (ADJP
+                (ADJP (JJR higher))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NN abortion))
+                    (VP (VBD was)
+                      (ADJP (JJ illegal)
+                        (PP (IN than)
+                          (SBAR
+                            (WHADVP (WRB when))
+                            (S
+                              (NP (PRP it))
+                              (VP (VBD was)
+                                (ADJP (JJ legal))))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN since)
+        (NP (NNP Roe) (NNP vs) (NNP Wade)))
+      (, ,)
+      (NP (NNS abortions))
+      (VP (VBP have)
+        (ADVP (RB continually))
+        (VP (VBN decreased))
+        (, ,)
+        (ADVP (RB especially))
+        (PP (IN since)
+          (NP (DT the) (NN 80s)))))
+    (. .)))
+
+nsubj(funny-3, What-1)
+cop(funny-3, 's-2)
+csubj(is-4, funny-3)
+root(ROOT-0, is-4)
+complm(higher-12, that-5)
+det(number-7, the-6)
+nsubj(higher-12, number-7)
+prep_of(number-7, abortions-9)
+partmod(abortions-9, performed-10)
+cop(higher-12, were-11)
+ccomp(is-4, higher-12)
+advmod(illegal-16, when-13)
+nsubj(illegal-16, abortion-14)
+cop(illegal-16, was-15)
+dep(higher-12, illegal-16)
+advmod(legal-21, when-18)
+nsubj(legal-21, it-19)
+cop(legal-21, was-20)
+prepc_than(illegal-16, legal-21)
+nn(Wade-27, Roe-25)
+nn(Wade-27, vs-26)
+prep_since(decreased-32, Wade-27)
+nsubj(decreased-32, abortions-29)
+aux(decreased-32, have-30)
+advmod(decreased-32, continually-31)
+conj_and(is-4, decreased-32)
+advmod(decreased-32, especially-34)
+det(80s-37, the-36)
+prep_since(decreased-32, 80s-37)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN In) (NN order)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP (NNS purposefulness)
+              (CC and)
+              (NN intentionality))))))
+    (NP (PRP you))
+    (VP (VBP need)
+      (NP (NN self-awareness)))
+    (. .)))
+
+mark(have-4, In-1)
+dep(have-4, order-2)
+aux(have-4, to-3)
+dep(need-9, have-4)
+dobj(have-4, purposefulness-5)
+dobj(have-4, intentionality-7)
+conj_and(purposefulness-5, intentionality-7)
+nsubj(need-9, you-8)
+root(ROOT-0, need-9)
+dobj(need-9, self-awareness-10)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (ADJP (JJ self-aware)
+        (SBAR (CC but)
+          (WHADVP (WRB where))
+          (S
+            (VP (VBZ does)
+              (SBAR (IN that)
+                (S
+                  (VP (VBN come)
+                    (PP (IN from)))))))
+          (. ?))))))
+
+nsubj(self-aware-3, We-1)
+cop(self-aware-3, are-2)
+root(ROOT-0, self-aware-3)
+cc(does-6, but-4)
+advmod(does-6, where-5)
+dep(self-aware-3, does-6)
+complm(come-8, that-7)
+ccomp(does-6, come-8)
+prep(come-8, from-9)
+

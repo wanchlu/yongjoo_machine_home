@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN baby))
+        (VP (VBZ dies))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (SBAR (RB only) (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBD was) (RB not)
+            (ADJP (JJ able)
+              (S
+                (VP (TO to)
+                  (VP (VB survive)))))))))
+    (. .)))
+
+mark(dies-4, If-1)
+det(baby-3, the-2)
+nsubj(dies-4, baby-3)
+advcl(is-7, dies-4)
+nsubj(is-7, it-6)
+root(ROOT-0, is-7)
+advmod(able-13, only-8)
+dep(able-13, because-9)
+nsubj(able-13, it-10)
+cop(able-13, was-11)
+neg(able-13, not-12)
+ccomp(is-7, able-13)
+aux(survive-15, to-14)
+xcomp(able-13, survive-15)
+

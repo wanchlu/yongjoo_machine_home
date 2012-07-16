@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (NP (NNS judges))
+    (VP (VBP do)
+      (ADVP (RB occasionally))
+      (VP (VB copy)
+        (NP
+          (NP (JJ small) (NNS portions))
+          (PP (IN of)
+            (NP (CC either)
+              (NP (DT the) (NN plaintiff))
+              (CC or)
+              (NP
+                (NP (NN defendant) (POS 's))
+                (JJ legal) (NN brief)))))))
+    (. .)))
+
+prep_in(copy-7, fact-2)
+nsubj(copy-7, judges-4)
+aux(copy-7, do-5)
+advmod(copy-7, occasionally-6)
+root(ROOT-0, copy-7)
+amod(portions-9, small-8)
+dobj(copy-7, portions-9)
+preconj(plaintiff-13, either-11)
+det(plaintiff-13, the-12)
+prep_of(portions-9, plaintiff-13)
+poss(brief-18, defendant-15)
+amod(brief-18, legal-17)
+prep_of(portions-9, brief-18)
+conj_or(plaintiff-13, brief-18)
+

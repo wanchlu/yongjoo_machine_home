@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP give)
+      (NP
+        (ADJP (JJ interesting)
+          (CC and)
+          (JJ complex))
+        (NNS answers)))
+    (. .)))
+
+nsubj(give-2, You-1)
+root(ROOT-0, give-2)
+amod(answers-6, interesting-3)
+conj_and(interesting-3, complex-5)
+amod(answers-6, complex-5)
+dobj(give-2, answers-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB read)
+                (PRT (RP over))
+                (NP (PRP them))
+                (NP (JJ several) (NNS times)))
+              (CC and)
+              (VP (VB think)
+                (PP (IN about)
+                  (NP (PRP them)))))))))
+    (. .)))
+
+nsubj(have-3, I-1)
+xsubj(read-5, I-1)
+aux(have-3, will-2)
+root(ROOT-0, have-3)
+aux(read-5, to-4)
+xcomp(have-3, read-5)
+prt(read-5, over-6)
+iobj(read-5, them-7)
+amod(times-9, several-8)
+dobj(read-5, times-9)
+xcomp(have-3, think-11)
+conj_and(read-5, think-11)
+prep_about(think-11, them-13)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB respond)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP feel)
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (VBP understand)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP are)
+                          (VP (VBG saying)))))))))))))
+    (. .)))
+
+nsubj(respond-3, I-1)
+aux(respond-3, 'll-2)
+root(ROOT-0, respond-3)
+advmod(feel-6, when-4)
+nsubj(feel-6, I-5)
+advcl(respond-3, feel-6)
+nsubj(understand-8, I-7)
+ccomp(feel-6, understand-8)
+dobj(saying-12, what-9)
+nsubj(saying-12, you-10)
+aux(saying-12, are-11)
+ccomp(understand-8, saying-12)
+
+(ROOT
+  (S
+    (ADVP (RB Right) (RB now))
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (NP (DT the) (NN time)
+          (S
+            (VP (TO to)
+              (VP (VB digest)
+                (NP (DT this))))))))
+    (. .)))
+
+advmod(now-2, Right-1)
+advmod(have-7, now-2)
+nsubj(have-7, I-3)
+advmod(have-7, just-4)
+aux(have-7, do-5)
+neg(have-7, n't-6)
+root(ROOT-0, have-7)
+det(time-9, the-8)
+dobj(have-7, time-9)
+aux(digest-11, to-10)
+infmod(time-9, digest-11)
+dobj(digest-11, this-12)
+

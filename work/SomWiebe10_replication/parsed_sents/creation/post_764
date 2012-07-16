@@ -1,0 +1,90 @@
+(ROOT
+  (NP
+    (NP (PRP Me))
+    (: ...)
+    (S
+      (VP (VB listen)
+        (PP (TO to)
+          (NP
+            (NP (DT a) (NN guy))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ has)
+                  (NP (DT a) (JJ fake) (NNP Ph.)))))))))))
+
+root(ROOT-0, Me-1)
+dep(Me-1, listen-3)
+det(guy-6, a-5)
+prep_to(listen-3, guy-6)
+nsubj(has-8, guy-6)
+rcmod(guy-6, has-8)
+det(Ph.-11, a-9)
+amod(Ph.-11, fake-10)
+dobj(has-8, Ph.-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP D.))
+      (PP (IN from)
+        (NP (DT a) (NN diploma))))
+    (VP
+      (VP (VBZ mill))
+      (CC and)
+      (VP (VBZ has)
+        (NP (DT the) (NN gall)
+          (S
+            (VP (TO to)
+              (VP (VB evade)
+                (NP (PRP$ his) (NNS taxes))))))))
+    (. ?)))
+
+nsubj(mill-5, D.-1)
+nsubj(has-7, D.-1)
+det(diploma-4, a-3)
+prep_from(D.-1, diploma-4)
+root(ROOT-0, mill-5)
+conj_and(mill-5, has-7)
+det(gall-9, the-8)
+dobj(has-7, gall-9)
+aux(evade-11, to-10)
+infmod(gall-9, evade-11)
+poss(taxes-13, his-12)
+dobj(evade-11, taxes-13)
+
+(ROOT
+  (NP (NNP Heck) (NNPS no.)))
+
+nn(no.-2, Heck-1)
+root(ROOT-0, no.-2)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBD listened)
+          (PP (TO to)
+            (NP (PRP$ their) (NN evidence))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP
+          (ADVP (RBR less) (IN than))
+          (JJ convincing))))
+    (. .)))
+
+nsubj(listened-3, I-1)
+aux(listened-3, 've-2)
+root(ROOT-0, listened-3)
+poss(evidence-6, their-5)
+prep_to(listened-3, evidence-6)
+nsubj(convincing-13, it-9)
+cop(convincing-13, is-10)
+advmod(than-12, less-11)
+advmod(convincing-13, than-12)
+conj_and(listened-3, convincing-13)
+

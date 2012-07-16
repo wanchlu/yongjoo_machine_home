@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB look)
+                  (PP (IN at)
+                    (NP
+                      (NP (DT the) (NN report))
+                      (PP (IN for)
+                        (NP (PRP yourself)))))))))))
+      (, ,)
+      (NP (RB here))
+      (VP (VBZ is)
+        (NP
+          (NP
+            (NP (DT a) (NN link))
+            (PP (TO to)
+              (NP (PRP it))))
+          (: :)
+          (NP (NN http:\/\/www.richardsternberg.org\/smithsonian.php)))))
+    (CC But)
+    (S
+      (NP (PRP it))
+      (VP (VBZ seems)
+        (SBAR (IN like)
+          (S
+            (NP (PRP you))
+            (VP (VBP have)
+              (ADVP (RB already))
+              (VP (VBN read)
+                (NP (DT this))))))))
+    (. .)))
+
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+xsubj(look-5, you-2)
+advcl(link-15, want-3)
+aux(look-5, to-4)
+xcomp(want-3, look-5)
+det(report-8, the-7)
+prep_at(look-5, report-8)
+prep_for(report-8, yourself-10)
+nsubj(link-15, here-12)
+cop(link-15, is-13)
+det(link-15, a-14)
+root(ROOT-0, link-15)
+prep_to(link-15, it-17)
+dep(link-15, http:\/\/www.richardsternberg.org\/smithsonian.php-19)
+nsubj(seems-22, it-21)
+conj_but(link-15, seems-22)
+mark(read-27, like-23)
+nsubj(read-27, you-24)
+aux(read-27, have-25)
+advmod(read-27, already-26)
+advcl(seems-22, read-27)
+dobj(read-27, this-28)
+

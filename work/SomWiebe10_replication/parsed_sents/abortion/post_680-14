@@ -1,0 +1,38 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (DT that))
+      (VP (VBZ is)
+        (SBARQ
+          (WHADVP
+            (ADVP (RB so) (RB then))
+            (WRB how))
+          (SQ (VBZ is)
+            (NP (PRP it))
+            (VP (VBN justified)
+              (PP (IN as)
+                (S
+                  (VP (VBG being)
+                    (NP (NN something) (JJ other))
+                    (PP (IN than)
+                      (ADJP (JJ normative)
+                        (CC and)
+                        (JJ non-scientific))))))))
+          (. ?))))))
+
+mark(is-3, If-1)
+nsubj(is-3, that-2)
+root(ROOT-0, is-3)
+advmod(then-5, so-4)
+advmod(how-6, then-5)
+advmod(justified-9, how-6)
+auxpass(justified-9, is-7)
+nsubjpass(justified-9, it-8)
+dep(is-3, justified-9)
+cop(something-12, being-11)
+prepc_as(justified-9, something-12)
+amod(something-12, other-13)
+prep_than(something-12, normative-15)
+prep_than(something-12, non-scientific-17)
+conj_and(normative-15, non-scientific-17)
+

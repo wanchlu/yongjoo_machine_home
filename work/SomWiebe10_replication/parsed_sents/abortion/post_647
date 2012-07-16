@@ -1,0 +1,162 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ embryology) (NN textbooks))
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB train)
+              (NP (NNS doctors)))))))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (PRP I))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (NP (DT the)
+                (ADJP (RBS most) (RB widely) (VBN used))
+                (NN one))
+              (VP (VBZ is)
+                (VP (VBN written)
+                  (PP (IN by)
+                    (NP
+                      (NP (DT a) (NN doctor))
+                      (VP (VBN named)
+                        (NP (NNP Dixon)))))))))))
+      (-RRB- -RRB-))
+    (VP (VBP are)
+      (ADJP (JJ clear)
+        (SBAR (IN that)
+          (S
+            (PP (IN at)
+              (NP (NN conception)))
+            (NP
+              (NP (DT a) (JJ new) (NN member))
+              (PP (IN of)
+                (NP (DT the) (NN species))))
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP (VBN created))))))))
+    (. .)))
+
+det(textbooks-3, The-1)
+amod(textbooks-3, embryology-2)
+xsubj(train-6, textbooks-3)
+nsubj(clear-25, textbooks-3)
+partmod(textbooks-3, used-4)
+aux(train-6, to-5)
+xcomp(used-4, train-6)
+dobj(train-6, doctors-7)
+nsubj(think-10, I-9)
+parataxis(clear-25, think-10)
+det(one-15, the-11)
+advmod(used-14, most-12)
+advmod(used-14, widely-13)
+amod(one-15, used-14)
+nsubjpass(written-17, one-15)
+auxpass(written-17, is-16)
+ccomp(think-10, written-17)
+det(doctor-20, a-19)
+agent(written-17, doctor-20)
+partmod(doctor-20, named-21)
+dobj(named-21, Dixon-22)
+cop(clear-25, are-24)
+root(ROOT-0, clear-25)
+complm(created-37, that-26)
+prep_at(created-37, conception-28)
+det(member-31, a-29)
+amod(member-31, new-30)
+nsubjpass(created-37, member-31)
+det(species-34, the-33)
+prep_of(member-31, species-34)
+aux(created-37, has-35)
+auxpass(created-37, been-36)
+ccomp(clear-25, created-37)
+
+(ROOT
+  (S
+    (NP (PRP He)
+      (CC or)
+      (PRP she))
+    (VP (VBZ has)
+      (NP
+        (NP (NNP DNA) (NNP distinct))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN mother))
+            (CC and)
+            (NP (DT the) (NN father))))))
+    (. .)))
+
+nsubj(has-4, He-1)
+conj_or(He-1, she-3)
+nsubj(has-4, she-3)
+root(ROOT-0, has-4)
+nn(distinct-6, DNA-5)
+dobj(has-4, distinct-6)
+det(mother-9, the-8)
+prep_from(distinct-6, mother-9)
+det(father-12, the-11)
+prep_from(distinct-6, father-12)
+conj_and(mother-9, father-12)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ new) (NN life))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN created)
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NN matter))
+              (PP (IN of)
+                (NP (NN science))))))))
+    (. .)))
+
+det(life-3, A-1)
+amod(life-3, new-2)
+nsubjpass(created-6, life-3)
+aux(created-6, has-4)
+auxpass(created-6, been-5)
+root(ROOT-0, created-6)
+det(matter-9, a-8)
+prep_as(created-6, matter-9)
+prep_of(matter-9, science-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN degree))
+      (PP (IN of)
+        (NP
+          (NP (NN protection))
+          (SBAR (IN that)
+            (S
+              (NP (NN life))
+              (VP (VBZ deserves)))))))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (MD can) (RB not)
+            (VP (VB be)
+              (VP (VBN determined)
+                (PP (IN by)
+                  (NP (NN science)))))))))
+    (. .)))
+
+det(degree-2, The-1)
+nsubj(is-8, degree-2)
+prep_of(degree-2, protection-4)
+dobj(deserves-7, protection-4)
+complm(deserves-7, that-5)
+nsubj(deserves-7, life-6)
+dep(protection-4, deserves-7)
+root(ROOT-0, is-8)
+nsubjpass(determined-13, what-9)
+aux(determined-13, can-10)
+neg(determined-13, not-11)
+auxpass(determined-13, be-12)
+ccomp(is-8, determined-13)
+agent(determined-13, science-15)
+

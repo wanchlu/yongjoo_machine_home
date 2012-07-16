@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Now))
+      (NP (PRP I))
+      (VP (VBP appreciate)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBZ admits)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP ID))
+                  (VP (VBZ has) (RB not)
+                    (VP (VBN proof))))))))))
+    (CC but)
+    (S
+      (NP (JJ evolutionary) (NN theory))
+      (VP (VBZ is)
+        (VP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (DT an) (JJ exceptional) (NN depth)
+                (CC and)
+                (NN breadth))
+              (PP (IN of)
+                (NP (NN evidence))))))))
+    (. .)))
+
+advmod(appreciate-3, Now-1)
+nsubj(appreciate-3, I-2)
+root(ROOT-0, appreciate-3)
+complm(admits-6, that-4)
+nsubj(admits-6, he-5)
+ccomp(appreciate-3, admits-6)
+complm(proof-11, that-7)
+nsubj(proof-11, ID-8)
+aux(proof-11, has-9)
+neg(proof-11, not-10)
+ccomp(admits-6, proof-11)
+amod(theory-14, evolutionary-13)
+nsubjpass(based-16, theory-14)
+auxpass(based-16, is-15)
+conj_but(appreciate-3, based-16)
+det(depth-20, an-18)
+amod(depth-20, exceptional-19)
+prep_on(based-16, depth-20)
+prep_on(based-16, breadth-22)
+conj_and(depth-20, breadth-22)
+prep_of(depth-20, evidence-24)
+

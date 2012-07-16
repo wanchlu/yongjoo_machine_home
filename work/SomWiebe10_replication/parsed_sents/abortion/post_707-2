@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (SBAR (IN Before)
+      (S
+        (NP (PRP He))
+        (VP (VBD created)
+          (NP (DT the) (NN world)))))
+    (NP (PRP He))
+    (VP (VBD knew)
+      (NP (PRP me)))
+    (. .)))
+
+mark(created-3, Before-1)
+nsubj(created-3, He-2)
+advcl(knew-7, created-3)
+det(world-5, the-4)
+dobj(created-3, world-5)
+nsubj(knew-7, He-6)
+root(ROOT-0, knew-7)
+dobj(knew-7, me-8)
+
+(ROOT
+  (S
+    (NP (NNP Psalm) (NNP 139:14) (NNP -16) (NNP Life))
+    (VP (VBZ is)
+      (ADJP (RB really) (JJ wonderful)
+        (CC and)
+        (JJ complicated)))
+    (. !)))
+
+nn(Life-4, Psalm-1)
+nn(Life-4, 139:14-2)
+nn(Life-4, -16-3)
+nsubj(wonderful-7, Life-4)
+nsubj(complicated-9, Life-4)
+cop(wonderful-7, is-5)
+advmod(wonderful-7, really-6)
+root(ROOT-0, wonderful-7)
+conj_and(wonderful-7, complicated-9)
+

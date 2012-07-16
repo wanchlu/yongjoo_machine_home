@@ -1,0 +1,65 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (NNS tigers)
+            (CC and)
+            (NNS lions))
+          (VP (VB mate) (, ,)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP
+                  (NP (NN donkey) (POS 's))
+                  (CC and)
+                  (NP (NNS horses)))
+                (VP (VB mate)))))))
+      (, ,)
+      (NP (PRP$ their) (NN offspring))
+      (VP (VBZ has)
+        (ADVP (RB always))
+        (VP (VBN been)
+          (ADJP
+            (NP (CD 100) (NN %))
+            (JJ sterile))
+          (SBAR
+            (S
+              (NP (DT this))
+              (VP (VBZ goes)))))))
+    (IN for)
+    (S
+      (NP (DT all) (JJ other))
+      (VP (VBD attempted)
+        (NP (JJ inter-special) (NN reproduction))))
+    (. .)))
+
+advmod(mate-6, When-2)
+nsubj(mate-6, tigers-3)
+conj_and(tigers-3, lions-5)
+nsubj(mate-6, lions-5)
+advcl(sterile-22, mate-6)
+advmod(mate-13, when-8)
+nsubj(mate-13, donkey-9)
+possessive(donkey-9, 's-10)
+conj_and(donkey-9, horses-12)
+nsubj(mate-13, horses-12)
+advcl(mate-6, mate-13)
+poss(offspring-16, their-15)
+nsubj(sterile-22, offspring-16)
+aux(sterile-22, has-17)
+advmod(sterile-22, always-18)
+cop(sterile-22, been-19)
+num(%-21, 100-20)
+npadvmod(sterile-22, %-21)
+root(ROOT-0, sterile-22)
+nsubj(goes-24, this-23)
+ccomp(sterile-22, goes-24)
+dep(sterile-22, for-25)
+det(other-27, all-26)
+nsubj(attempted-28, other-27)
+ccomp(sterile-22, attempted-28)
+amod(reproduction-30, inter-special-29)
+dobj(attempted-28, reproduction-30)
+

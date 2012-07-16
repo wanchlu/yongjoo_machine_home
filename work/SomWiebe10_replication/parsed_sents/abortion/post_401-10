@@ -1,0 +1,37 @@
+(ROOT
+  (FRAG
+    (PP (VBN Given)
+      (NP
+        (NP (JJ partial-birth) (NN abortion))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NN dilation))
+            (CC and)
+            (NP (NN extraction)))
+          (-RRB- -RRB-))
+        (, ,)
+        (SBAR
+          (WHPP (IN at)
+            (WHNP (WP what)))
+          (S
+            (NP (JJ exact) (NN point))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN fetus))
+                (VP (VBN born))))))))
+    (. ?)))
+
+root(ROOT-0, Given-1)
+amod(abortion-3, partial-birth-2)
+dep(Given-1, abortion-3)
+dep(abortion-3, dilation-5)
+dep(abortion-3, extraction-7)
+conj_and(dilation-5, extraction-7)
+rel(fetus-16, what-11)
+amod(point-13, exact-12)
+nsubj(fetus-16, point-13)
+cop(fetus-16, is-14)
+det(fetus-16, a-15)
+rcmod(abortion-3, fetus-16)
+partmod(fetus-16, born-17)
+

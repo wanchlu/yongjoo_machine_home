@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP God))
+        (VP (VBZ exists))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (DT no) (NN one))
+    (VP (MD should)
+      (VP (VB be)
+        (NP (DT a) (NN disbeliever))
+        (SBAR (IN because)
+          (S
+            (NP (NNP God))
+            (VP (MD would)
+              (VP (VB make)
+                (S
+                  (NP (PRP$ his) (NN existence))
+                  (ADJP (JJ obvious)
+                    (PP (TO to)
+                      (NP (NN everyone) (, ,) (NN etc) (, ,) (FW etc.)))))))))))
+    (. .)))
+
+mark(exists-3, If-1)
+nsubj(exists-3, God-2)
+advcl(disbeliever-11, exists-3)
+advmod(disbeliever-11, then-5)
+det(one-7, no-6)
+nsubj(disbeliever-11, one-7)
+aux(disbeliever-11, should-8)
+cop(disbeliever-11, be-9)
+det(disbeliever-11, a-10)
+root(ROOT-0, disbeliever-11)
+mark(make-15, because-12)
+nsubj(make-15, God-13)
+aux(make-15, would-14)
+advcl(disbeliever-11, make-15)
+poss(existence-17, his-16)
+nsubj(obvious-18, existence-17)
+xcomp(make-15, obvious-18)
+nn(etc-22, everyone-20)
+prep_to(obvious-18, etc-22)
+dep(etc-22, etc.-24)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (DT the) (NNP God) (NNS hypothesis))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (JJ false))
+        (CC or)
+        (ADJP (RB probably) (JJ false))))
+    (. .)))
+
+advmod(false-7, Therefore-1)
+det(hypothesis-5, the-3)
+nn(hypothesis-5, God-4)
+nsubj(false-7, hypothesis-5)
+nsubj(false-10, hypothesis-5)
+cop(false-7, is-6)
+root(ROOT-0, false-7)
+advmod(false-10, probably-9)
+conj_or(false-7, false-10)
+

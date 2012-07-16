@@ -1,0 +1,37 @@
+(ROOT
+  (S ('' '')
+    (S
+      (FRAG (: ...)
+        (ADVP (RB helps))
+        (NP
+          (NP (NNP connecting) (NNP the) (NNP dots) (, ,))
+          (PP (IN via)
+            (NP (DT the) (NNP Edwards) (NN ruling)))))
+      (NP (WDT which))
+      (VP (VBD caused)
+        (NP (DT a) (JJ global) (NN search))))
+    (CC and)
+    (S
+      (S
+        (VP (VB replace)
+          (PP (IN of)
+            (NP (JJ religious)))))
+      (VP (VBP terminology)))
+    (. .)))
+
+dep(dots-6, helps-3)
+nn(dots-6, connecting-4)
+nn(dots-6, the-5)
+dep(caused-13, dots-6)
+det(ruling-11, the-9)
+nn(ruling-11, Edwards-10)
+prep_via(dots-6, ruling-11)
+nsubj(caused-13, which-12)
+root(ROOT-0, caused-13)
+det(search-16, a-14)
+amod(search-16, global-15)
+dobj(caused-13, search-16)
+csubj(terminology-21, replace-18)
+prep_of(replace-18, religious-20)
+conj_and(caused-13, terminology-21)
+

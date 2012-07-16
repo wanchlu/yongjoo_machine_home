@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP AIG))
+    (VP (VBZ does) (RB n't)
+      (VP (VB believe)
+        (NP (DT the) (JJ geological) (NN data))))
+    (. .)))
+
+nsubj(believe-4, AIG-1)
+aux(believe-4, does-2)
+neg(believe-4, n't-3)
+root(ROOT-0, believe-4)
+det(data-7, the-5)
+amod(data-7, geological-6)
+dobj(believe-4, data-7)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP (DT the) (NN world))
+          (VP (VBZ is)
+            (NP (DT a)
+              (ADJP
+                (NP
+                  (QP (JJ little) (IN over) (CD 6,000))
+                  (NNS years))
+                (JJ old))
+              (NN !!))))))))
+
+nsubj(believe-2, They-1)
+root(ROOT-0, believe-2)
+det(world-4, the-3)
+nsubj(!!-12, world-4)
+cop(!!-12, is-5)
+det(!!-12, a-6)
+advmod(over-8, little-7)
+quantmod(6,000-9, over-8)
+num(years-10, 6,000-9)
+npadvmod(old-11, years-10)
+amod(!!-12, old-11)
+ccomp(believe-2, !!-12)
+

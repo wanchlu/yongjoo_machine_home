@@ -1,0 +1,62 @@
+(ROOT
+  (NP
+    (NP
+      (NP (PRP$ Its)
+        (ADJP (RB not) (DT a))
+        (NN child))
+      (, ,)
+      (NP (PRP$ its)
+        (QP (DT a) (CD fetus))))
+    (. .)))
+
+poss(child-4, Its-1)
+neg(a-3, not-2)
+amod(child-4, a-3)
+root(ROOT-0, child-4)
+poss(fetus-8, its-6)
+quantmod(fetus-8, a-7)
+appos(child-4, fetus-8)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NNS feelings))
+        (PP (IN at)
+          (NP (DT all)))))
+    (. !)))
+
+nsubj(has-2, It-1)
+root(ROOT-0, has-2)
+det(feelings-4, no-3)
+dobj(has-2, feelings-4)
+prep_at(feelings-4, all-6)
+
+(ROOT
+  (S
+    (NP (NNS abortions))
+    (VP (VBP are)
+      (VP (VBN made)
+        (PP (TO to)
+          (NP
+            (NP (JJ early))
+            (PP (IN for)
+              (NP (DT the) (NN fetus)))))
+        (S
+          (VP (TO to)
+            (VP (VB feel)
+              (NP (NN anything)))))))
+    (. .)))
+
+nsubjpass(made-3, abortions-1)
+xsubj(feel-10, abortions-1)
+auxpass(made-3, are-2)
+root(ROOT-0, made-3)
+prep_to(made-3, early-5)
+det(fetus-8, the-7)
+prep_for(early-5, fetus-8)
+aux(feel-10, to-9)
+xcomp(made-3, feel-10)
+dobj(feel-10, anything-11)
+

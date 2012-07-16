@@ -1,0 +1,129 @@
+(ROOT
+  (S
+    (NP (NNP Creationism))
+    (VP (VBZ is)
+      (ADJP (RB scientifically) (JJ testable)))
+    (. .)))
+
+nsubj(testable-4, Creationism-1)
+cop(testable-4, is-2)
+advmod(testable-4, scientifically-3)
+root(ROOT-0, testable-4)
+
+(ROOT
+  (S
+    (NP (DT Some) (NNS creationists))
+    (VP (VBP have)
+      (VP (VBN argued)
+        (SBAR (IN that)
+          (S
+            (NP (`` ``) (NN creationism) ('' ''))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN theory))
+                (ADJP (JJ consistent)
+                  (PP (IN with)
+                    (NP (DT the) (JJ scientific) (NN method))))))))))
+    (. .)))
+
+det(creationists-2, Some-1)
+nsubj(argued-4, creationists-2)
+aux(argued-4, have-3)
+root(ROOT-0, argued-4)
+complm(theory-11, that-5)
+nsubj(theory-11, creationism-7)
+cop(theory-11, is-9)
+det(theory-11, a-10)
+ccomp(argued-4, theory-11)
+amod(theory-11, consistent-12)
+det(method-16, the-14)
+amod(method-16, scientific-15)
+prep_with(consistent-12, method-16)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS hypothesis))
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ adopts)))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (NNP God))
+          (VP (VBD created) (`` ``)
+            (NP (DT the) (NN heaven)
+              (CC and)
+              (NN earth))))))
+    (: ...)))
+
+det(hypothesis-2, The-1)
+dobj(adopts-4, hypothesis-2)
+nsubj(is-5, hypothesis-2)
+nsubj(adopts-4, it-3)
+rcmod(hypothesis-2, adopts-4)
+root(ROOT-0, is-5)
+complm(created-8, that-6)
+nsubj(created-8, God-7)
+ccomp(is-5, created-8)
+det(heaven-11, the-10)
+dobj(created-8, heaven-11)
+dobj(created-8, earth-13)
+conj_and(heaven-11, earth-13)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (DT some))
+      (VP (VBD thousands)
+        (PP (IN of)
+          (NP (NNS years)))
+        (ADVP (IN ago))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT that) (NN man))
+      (VP (VBD did) (RB not)
+        (VP (`` ``) (VB evolve) ('' '')
+          (PP (IN into)
+            (NP (PRP$ his) (JJ current) (NN state))))))
+    (. .)))
+
+nsubj(thousands-3, some-2)
+root(ROOT-0, thousands-3)
+prep_of(thousands-3, years-5)
+advmod(thousands-3, ago-6)
+det(man-10, that-9)
+nsubj(evolve-14, man-10)
+aux(evolve-14, did-11)
+neg(evolve-14, not-12)
+conj_and(thousands-3, evolve-14)
+poss(state-19, his-17)
+amod(state-19, current-18)
+prep_into(evolve-14, state-19)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Supporters))
+      (PP (IN of)
+        (NP (NNP Creationism))))
+    (ADVP (RB then))
+    (VP (VBP cite)
+      (S
+        (VP (VBG supporting)
+          (NP (NN evidence))
+          (PP (IN for)
+            (NP (DT this) (NN theory))))))
+    (. .)))
+
+nsubj(cite-5, Supporters-1)
+prep_of(Supporters-1, Creationism-3)
+advmod(cite-5, then-4)
+root(ROOT-0, cite-5)
+xcomp(cite-5, supporting-6)
+dobj(supporting-6, evidence-7)
+det(theory-10, this-9)
+prep_for(supporting-6, theory-10)
+

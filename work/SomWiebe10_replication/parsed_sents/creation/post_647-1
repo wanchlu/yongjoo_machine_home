@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Now))
+      (NP (PRP I))
+      (VP (VBP understand)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP you))
+            (VP (VBP want)
+              (S
+                (VP (TO to)
+                  (VP (VB rely)
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (NNP DI))
+                        (CC and)
+                        (NP
+                          (NP (DT the) (NNP FTE) (POS 's))
+                          (NNS claims))))))))))))
+    (CC but)
+    (S
+      (NP (DT this))
+      (VP (VBZ means)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (VP (VBN shielded)
+                (PP (IN from)
+                  (NP (DT the) (NNS facts)))))))))
+    (. .)))
+
+advmod(understand-3, Now-1)
+nsubj(understand-3, I-2)
+root(ROOT-0, understand-3)
+advmod(want-6, why-4)
+nsubj(want-6, you-5)
+xsubj(rely-8, you-5)
+advcl(understand-3, want-6)
+aux(rely-8, to-7)
+xcomp(want-6, rely-8)
+det(DI-11, the-10)
+prep_on(rely-8, DI-11)
+det(FTE-14, the-13)
+poss(claims-16, FTE-14)
+prep_on(rely-8, claims-16)
+conj_and(DI-11, claims-16)
+nsubj(means-19, this-18)
+conj_but(understand-3, means-19)
+complm(shielded-23, that-20)
+nsubjpass(shielded-23, you-21)
+auxpass(shielded-23, are-22)
+ccomp(means-19, shielded-23)
+det(facts-26, the-25)
+prep_from(shielded-23, facts-26)
+

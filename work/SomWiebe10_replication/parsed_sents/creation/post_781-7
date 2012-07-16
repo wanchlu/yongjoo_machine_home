@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (DT A) (NN man))
+    (VP (MD could)
+      (ADVP (RB quite) (RB easily))
+      (VP
+        (VP (VB write)
+          (NP
+            (NP (DT a) (NN book))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ says)
+                  (SBAR
+                    (S
+                      (NP (DT this))
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT the) (NN word))
+                          (PP (IN of)
+                            (NP (NNP God))))))))))))
+        (CC and)
+        (VP (VB be)
+          (VP (VBG lying)))))
+    (. .)))
+
+det(man-2, A-1)
+nsubj(write-6, man-2)
+nsubj(lying-19, man-2)
+aux(write-6, could-3)
+advmod(easily-5, quite-4)
+advmod(write-6, easily-5)
+root(ROOT-0, write-6)
+det(book-8, a-7)
+dobj(write-6, book-8)
+nsubj(says-10, book-8)
+rcmod(book-8, says-10)
+nsubj(word-14, this-11)
+cop(word-14, is-12)
+det(word-14, the-13)
+ccomp(says-10, word-14)
+prep_of(word-14, God-16)
+aux(lying-19, be-18)
+conj_and(write-6, lying-19)
+

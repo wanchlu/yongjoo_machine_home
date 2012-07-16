@@ -1,0 +1,39 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB mean) (: :)
+        (NP (`` ``) (NN life) ('' ''))))
+    (. ?)))
+
+dep(mean-4, What-1)
+aux(mean-4, do-2)
+nsubj(mean-4, you-3)
+root(ROOT-0, mean-4)
+dobj(mean-4, life-7)
+
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (ADJP (RB purely) (JJ biochemical))
+        (NNS grounds)))
+    (, ,)
+    (NP (NN sperm)
+      (CC and)
+      (NN ovae))
+    (VP (VBP are) (`` ``)
+      (ADJP (JJ alive))
+      ('' ''))
+    (. .)))
+
+advmod(biochemical-3, purely-2)
+amod(grounds-4, biochemical-3)
+prep_on(alive-11, grounds-4)
+nsubj(alive-11, sperm-6)
+conj_and(sperm-6, ovae-8)
+nsubj(alive-11, ovae-8)
+cop(alive-11, are-9)
+root(ROOT-0, alive-11)
+

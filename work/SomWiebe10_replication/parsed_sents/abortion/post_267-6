@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD can)
+      (VP (VB cost)
+        (NP
+          (QP (JJR more) (IN than) ($ $) (CD 300)))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (CD one))
+              (PP (IN from)
+                (NP
+                  (NP (DT a) (NN hospital) (NN ER))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT the) (JJ only) (NN thing))
+                          (ADJP (JJ open)
+                            (PP (IN during)
+                              (NP (NNS off-hours)))))))))))))))
+    (. .)))
+
+nsubj(cost-3, It-1)
+aux(cost-3, can-2)
+root(ROOT-0, cost-3)
+quantmod($-6, more-4)
+quantmod($-6, than-5)
+dobj(cost-3, $-6)
+number($-6, 300-7)
+aux(get-9, to-8)
+xcomp(cost-3, get-9)
+dobj(get-9, one-10)
+det(ER-14, a-12)
+nn(ER-14, hospital-13)
+prep_from(get-9, ER-14)
+nsubj(thing-20, ER-14)
+cop(thing-20, is-17)
+det(thing-20, the-18)
+amod(thing-20, only-19)
+rcmod(ER-14, thing-20)
+amod(thing-20, open-21)
+prep_during(open-21, off-hours-23)
+

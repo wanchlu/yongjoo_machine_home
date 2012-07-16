@@ -1,0 +1,36 @@
+(ROOT
+  (S ('' '')
+    (NP (RB So) (NN something))
+    (VP (MD can) (, ,)
+      (PP (IN through)
+        (NP
+          (NP (DT a) (NN process))
+          (PP (IN of)
+            (NP (JJ random) (NN mutation)))))
+      (, ,)
+      (VP (VBP accumulate)
+        (NP
+          (NP
+            (NP (CD 499) (NNS bits))
+            (PP (IN of)
+              (NP (NN information))))
+          (: ...)
+          (CC but)
+          (NP (RB not) (JJR more)))))
+    (. ?)))
+
+advmod(something-3, So-2)
+nsubj(accumulate-13, something-3)
+aux(accumulate-13, can-4)
+det(process-8, a-7)
+prep_through(accumulate-13, process-8)
+amod(mutation-11, random-10)
+prep_of(process-8, mutation-11)
+root(ROOT-0, accumulate-13)
+num(bits-15, 499-14)
+dobj(accumulate-13, bits-15)
+prep_of(bits-15, information-17)
+neg(more-21, not-20)
+dobj(accumulate-13, more-21)
+conj_but(bits-15, more-21)
+

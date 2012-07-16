@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (S
+      (NP (NN Today))
+      (NP (PRP we))
+      (VP (VBP know)
+        (SBAR
+          (S
+            (NP
+              (NP
+                (QP (RB only) (CD 3)))
+              (PP (IN of)
+                (NP (PRP$ his) (CD 4) (NNS points))))
+            (VP (VBD were)
+              (ADJP (JJ correct)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB n't)
+        (VP (VB matter))))
+    (. .)))
+
+tmod(know-3, Today-1)
+nsubj(know-3, we-2)
+root(ROOT-0, know-3)
+quantmod(3-5, only-4)
+nsubj(correct-11, 3-5)
+poss(points-9, his-7)
+num(points-9, 4-8)
+prep_of(3-5, points-9)
+cop(correct-11, were-10)
+ccomp(know-3, correct-11)
+nsubj(matter-17, it-14)
+aux(matter-17, does-15)
+neg(matter-17, n't-16)
+conj_but(know-3, matter-17)
+

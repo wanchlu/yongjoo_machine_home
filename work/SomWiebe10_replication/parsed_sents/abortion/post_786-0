@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Bible))
+      (VP (VBZ is)
+        (NP (DT the) (JJ only) (NN book)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP
+                  (NP (NNS thousands))
+                  (PP (IN of)
+                    (NP
+                      (NP (PRP it) (POS 's))
+                      (NNS prophecies))))))))))
+    (CC and)
+    (S
+      (NP (NN none))
+      (VP (VBP have)
+        (VP (VBN been)
+          (ADJP (JJ close)
+            (PP (TO to)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ says)
+                    (ADVP
+                      (NP
+                        (QP (CC but)
+                          (CD 100))
+                        (NN %))
+                      (RB right))))))))))
+    (. .)))
+
+det(Bible-2, The-1)
+nsubj(book-6, Bible-2)
+cop(book-6, is-3)
+det(book-6, the-4)
+amod(book-6, only-5)
+root(ROOT-0, book-6)
+aux(have-8, to-7)
+infmod(book-6, have-8)
+dobj(have-8, thousands-9)
+poss(prophecies-13, it-11)
+prep_of(thousands-9, prophecies-13)
+nsubj(close-18, none-15)
+aux(close-18, have-16)
+cop(close-18, been-17)
+conj_and(book-6, close-18)
+dobj(says-22, what-20)
+nsubj(says-22, it-21)
+prepc_to(close-18, says-22)
+cc(100-24, but-23)
+num(%-25, 100-24)
+npadvmod(right-26, %-25)
+advmod(says-22, right-26)
+

@@ -1,0 +1,109 @@
+(ROOT
+  (SQ
+    (S
+      (NP
+        (NP (DT The) (NN fact))
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN child))
+            (VP (VBZ is)
+              (ADJP (JJ likely)
+                (S
+                  (VP (TO to)
+                    (VP (VB have)
+                      (NP (DT a) (JJ short) (NN life))))))))))
+      (VP (VBZ does) (RB not)
+        (VP (VB justify)
+          (ADVP (RBR further))
+          (S
+            (VP (VBG shortening)
+              (NP (PRP it))
+              (: :)
+              (SBAR
+                (WHADVP (WRB When))
+                (S
+                  (NP (PRP you))
+                  (VP (VBP see)
+                    (NP
+                      (NP (NN someone))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBZ has)
+                            (ADJP (RB very) (JJ little))))))))))))))
+    (, ,)
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB take)
+        (PRT (RP away))
+        (NP
+          (NP (DT all))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBZ has)))))))
+    (. ?)))
+
+det(fact-2, The-1)
+nsubj(justify-15, fact-2)
+complm(likely-7, that-3)
+det(child-5, a-4)
+nsubj(likely-7, child-5)
+cop(likely-7, is-6)
+dep(fact-2, likely-7)
+aux(have-9, to-8)
+xcomp(likely-7, have-9)
+det(life-12, a-10)
+amod(life-12, short-11)
+dobj(have-9, life-12)
+aux(justify-15, does-13)
+neg(justify-15, not-14)
+dep(take-31, justify-15)
+advmod(justify-15, further-16)
+xcomp(justify-15, shortening-17)
+dobj(shortening-17, it-18)
+advmod(see-22, When-20)
+nsubj(see-22, you-21)
+advcl(shortening-17, see-22)
+parataxis(shortening-17, see-22)
+dobj(see-22, someone-23)
+nsubj(little-27, someone-23)
+dep(little-27, has-25)
+advmod(little-27, very-26)
+rcmod(someone-23, little-27)
+aux(take-31, do-29)
+nsubj(take-31, you-30)
+root(ROOT-0, take-31)
+prt(take-31, away-32)
+dobj(take-31, all-33)
+dobj(has-35, all-33)
+nsubj(has-35, he-34)
+rcmod(all-33, has-35)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ short) (NN life) (NN expectancy))
+      (PP (IN of)
+        (NP (DT a) (JJ disabled) (NN child))))
+    (VP (VBZ does) (RB not)
+      (VP (VB justify)
+        (NP (PRP$ his)
+          (ADJP (JJ deliberate))
+          (NN killing))))
+    (. !)))
+
+det(expectancy-4, The-1)
+amod(expectancy-4, short-2)
+nn(expectancy-4, life-3)
+nsubj(justify-11, expectancy-4)
+det(child-8, a-6)
+amod(child-8, disabled-7)
+prep_of(expectancy-4, child-8)
+aux(justify-11, does-9)
+neg(justify-11, not-10)
+root(ROOT-0, justify-11)
+poss(killing-14, his-12)
+amod(killing-14, deliberate-13)
+dobj(justify-11, killing-14)
+

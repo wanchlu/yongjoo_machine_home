@@ -1,0 +1,87 @@
+(ROOT
+  (SQ
+    (PP (IN Like)
+      (NP
+        (NP (JJ many) (NNS topics))
+        (, ,)
+        (PP (RB instead) (IN of)
+          (S
+            (VP (VBG trying)
+              (S
+                (VP (TO to)
+                  (VP (VB dissect)
+                    (NP (PRP$ our) (NN world))
+                    (PP (IN into)
+                      (NP
+                        (ADJP (RBR more) (JJ suitable))
+                        (NNS bites)))))))))))
+    (, ,) (MD can)
+    (NP (PRP we))
+    (VP (RB not)
+      (VP
+        (ADVP (RB simply))
+        (VB list)
+        (NP
+          (NP
+            (NP (DT all))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ Good))))))
+          (CC and)
+          (NP
+            (NP (DT all))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ Bad))
+                  (, ,)
+                  (PP (IN like)
+                    (S
+                      (ADVP (RB too))
+                      (VP (VBG opposing)
+                        (NP (NNS teams)))))))))))
+      (CC and)
+      (VP (VB let)
+        (S
+          (NP (DT the) (NNS players))
+          (VP (VB decide)
+            (PP (IN for)
+              (NP (PRP themselves)))))))
+    (. ?)))
+
+amod(topics-3, many-2)
+prep_like(list-21, topics-3)
+prepc_instead_of(topics-3, trying-7)
+aux(dissect-9, to-8)
+xcomp(trying-7, dissect-9)
+poss(world-11, our-10)
+dobj(dissect-9, world-11)
+advmod(suitable-14, more-13)
+amod(bites-15, suitable-14)
+prep_into(dissect-9, bites-15)
+aux(list-21, can-17)
+nsubj(list-21, we-18)
+nsubj(let-37, we-18)
+neg(list-21, not-19)
+advmod(list-21, simply-20)
+root(ROOT-0, list-21)
+dobj(list-21, all-22)
+nsubj(Good-25, all-22)
+cop(Good-25, is-24)
+rcmod(all-22, Good-25)
+conj_and(all-22, all-27)
+nsubj(Bad-30, all-27)
+cop(Bad-30, is-29)
+rcmod(all-27, Bad-30)
+advmod(opposing-34, too-33)
+prepc_like(Bad-30, opposing-34)
+dobj(opposing-34, teams-35)
+conj_and(list-21, let-37)
+det(players-39, the-38)
+nsubj(decide-40, players-39)
+ccomp(let-37, decide-40)
+prep_for(decide-40, themselves-42)
+

@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ requires)
+      (NP
+        (NP (NNS nutrients))
+        (CC and)
+        (NP (JJ other) (NNS conditions)))
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (WHNP (WDT which))
+          (PP (IN at)
+            (NP
+              (NP (DT the) (VBG present) (NN level))
+              (PP (IN of)
+                (NP (NN technology))))))
+        (-RRB- -RRB-))
+      (SBAR (IN that)
+        (S
+          (NP (RB only) (DT a) (NN mother))
+          (VP (MD can)
+            (VP (VB provide))))))
+    (. .)))
+
+nsubj(requires-2, It-1)
+root(ROOT-0, requires-2)
+dobj(requires-2, nutrients-3)
+amod(conditions-6, other-5)
+dobj(requires-2, conditions-6)
+conj_and(nutrients-3, conditions-6)
+dep(requires-2, which-8)
+dep(which-8, at-9)
+det(level-12, the-10)
+amod(level-12, present-11)
+pobj(at-9, level-12)
+prep_of(level-12, technology-14)
+complm(provide-21, that-16)
+advmod(mother-19, only-17)
+det(mother-19, a-18)
+nsubj(provide-21, mother-19)
+aux(provide-21, can-20)
+ccomp(requires-2, provide-21)
+

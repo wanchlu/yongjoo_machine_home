@@ -1,0 +1,56 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (PP (IN about)
+      (NP
+        (NP (DT the) (NNS books))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are) (RB not)
+              (VP (VBN found)
+                (PP (IN in)
+                  (NP
+                    (NP (JJ current) (NNS translations))
+                    (PRN (-LRB- -LRB-)
+                      (NP
+                        (NP
+                          (NP (NNP Book))
+                          (PP (IN of)
+                            (NP (NNP Enoch))))
+                        (, ,)
+                        (NP
+                          (NP (NNP Gospel))
+                          (PP (IN of)
+                            (NP (NNP Thomas))))
+                        (, ,)
+                        (CC or)
+                        (NP
+                          (NP (DT any))
+                          (PP (IN of)
+                            (NP (DT the) (JJ other) (NNP Apocrypha) (NNS texts)))))
+                      (-RRB- -RRB-)))))))))
+      (. .))))
+
+root(ROOT-0, What-1)
+dep(What-1, about-2)
+det(books-4, the-3)
+pobj(about-2, books-4)
+nsubjpass(found-8, books-4)
+auxpass(found-8, are-6)
+neg(found-8, not-7)
+rcmod(books-4, found-8)
+amod(translations-11, current-10)
+prep_in(found-8, translations-11)
+dep(translations-11, Book-13)
+prep_of(Book-13, Enoch-15)
+dep(translations-11, Gospel-17)
+conj_or(Book-13, Gospel-17)
+prep_of(Gospel-17, Thomas-19)
+dep(translations-11, any-22)
+conj_or(Book-13, any-22)
+det(texts-27, the-24)
+amod(texts-27, other-25)
+nn(texts-27, Apocrypha-26)
+prep_of(any-22, texts-27)
+

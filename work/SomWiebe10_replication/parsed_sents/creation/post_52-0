@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (SBAR
+      (PRN (: --)
+        (NP (NNP Highlander))
+        (: --))
+      (S
+        (NP (NNP PvM))
+        (VP (VBZ seems)
+          (ADJP (JJ unaware)))))
+    (NP (NN randomness)
+      (CC and)
+      (NN design))
+    (VP (VBP are)
+      (NP
+        (ADJP (RB mutually) (JJ exclusive))
+        (NNS concepts)))
+    (. .)))
+
+dep(unaware-6, Highlander-2)
+nsubj(unaware-6, PvM-4)
+cop(unaware-6, seems-5)
+dep(concepts-13, unaware-6)
+nsubj(concepts-13, randomness-7)
+conj_and(randomness-7, design-9)
+nsubj(concepts-13, design-9)
+cop(concepts-13, are-10)
+advmod(exclusive-12, mutually-11)
+amod(concepts-13, exclusive-12)
+root(ROOT-0, concepts-13)
+

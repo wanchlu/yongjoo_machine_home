@@ -1,0 +1,31 @@
+(ROOT
+  (NP
+    (NP (DT The) (NN cost))
+    (PP (IN of)
+      (NP
+        (NP (DT the) (NN ink))
+        (CC and)
+        (NP
+          (NP (DT the) (NN paper))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD made)
+                (S
+                  (NP (PRP it))
+                  (NP (DT a) (NN law)))))))))
+    (. ?)))
+
+det(cost-2, The-1)
+root(ROOT-0, cost-2)
+det(ink-5, the-4)
+prep_of(cost-2, ink-5)
+det(paper-8, the-7)
+prep_of(cost-2, paper-8)
+conj_and(ink-5, paper-8)
+nsubj(made-10, paper-8)
+rcmod(paper-8, made-10)
+nsubj(law-13, it-11)
+det(law-13, a-12)
+xcomp(made-10, law-13)
+

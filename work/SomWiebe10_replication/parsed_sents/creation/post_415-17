@@ -1,0 +1,30 @@
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN tests))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP (VB run)
+        (S
+          (VP (TO to)
+            (VP (VB show)
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN earth))
+                  (VP (VBZ is)
+                    (ADJP (JJ flat))))))))))
+    (. ?)))
+
+det(tests-2, What-1)
+dep(run-5, tests-2)
+aux(run-5, can-3)
+nsubj(run-5, you-4)
+xsubj(show-7, you-4)
+root(ROOT-0, run-5)
+aux(show-7, to-6)
+xcomp(run-5, show-7)
+complm(flat-12, that-8)
+det(earth-10, the-9)
+nsubj(flat-12, earth-10)
+cop(flat-12, is-11)
+ccomp(show-7, flat-12)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP (DT An) (NN embryo))
+    (VP (VBZ requires)
+      (NP (DT a) (NN host)
+        (S
+          (VP (TO to)
+            (VP (VB survive))))))
+    (. .)))
+
+det(embryo-2, An-1)
+nsubj(requires-3, embryo-2)
+root(ROOT-0, requires-3)
+det(host-5, a-4)
+dobj(requires-3, host-5)
+aux(survive-7, to-6)
+infmod(host-5, survive-7)
+
+(ROOT
+  (S (IN So)
+    (SBAR (IN if)
+      (S
+        (VP (VBD left)
+          (ADVP (RB ALONE))
+          (, ,)
+          (PP (IN without)
+            (NP (DT a) (NN host))))))
+    (, ,)
+    (NP (DT the) (NN embryo))
+    (VP (MD would)
+      (VP (VB die)
+        (CC and)
+        (VB become)
+        (NP
+          (NP (NN nothing))
+          (, ,) (RB not)
+          (NP (DT a) (NN person)))))
+    (. .)))
+
+dep(nothing-16, So-1)
+mark(left-3, if-2)
+advcl(nothing-16, left-3)
+advmod(left-3, ALONE-4)
+det(host-8, a-7)
+prep_without(left-3, host-8)
+det(embryo-11, the-10)
+nsubj(become-15, embryo-11)
+nsubj(nothing-16, embryo-11)
+aux(nothing-16, would-12)
+dep(nothing-16, die-13)
+conj_and(nothing-16, become-15)
+cop(nothing-16, become-15)
+root(ROOT-0, nothing-16)
+neg(nothing-16, not-18)
+det(person-20, a-19)
+dep(nothing-16, person-20)
+

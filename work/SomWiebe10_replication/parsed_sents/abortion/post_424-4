@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN organism))
+      (SBAR
+        (WHNP
+          (NP (WP$ whose) (NN somatic))
+          (PRN (-LRB- -LRB-)
+            (ADJP (JJ non-reproductive))
+            (-RRB- -RRB-)))
+        (S
+          (NP (NNS cells))
+          (VP (VBP contain)
+            (NP (DT the) (JJ full) (JJ human) (NN genome))))))
+    (VP (VBZ is)
+      (ADVP (RB therefore))
+      (NP (DT a) (JJ human) (NN being)))
+    (. .)))
+
+det(organism-2, An-1)
+poss(somatic-4, organism-2)
+nsubj(being-18, organism-2)
+dobj(contain-9, somatic-4)
+rel(contain-9, somatic-4)
+dep(somatic-4, non-reproductive-6)
+nsubj(contain-9, cells-8)
+rcmod(organism-2, contain-9)
+det(genome-13, the-10)
+amod(genome-13, full-11)
+amod(genome-13, human-12)
+dobj(contain-9, genome-13)
+cop(being-18, is-14)
+advmod(being-18, therefore-15)
+det(being-18, a-16)
+amod(being-18, human-17)
+root(ROOT-0, being-18)
+

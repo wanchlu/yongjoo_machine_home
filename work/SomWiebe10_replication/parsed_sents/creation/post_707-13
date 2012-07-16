@@ -1,0 +1,103 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (NP
+            (NP (DT a) (NN passage))
+            (PP (IN in)
+              (NP
+                (NP (DT a) (NN book))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ says)
+                      (SBAR
+                        (S
+                          (S
+                            (NP (DT A) (NN tree))
+                            (VP (VBZ grows)
+                              (PP (IN on)
+                                (NP (NNP North) (NNP Hill)))))
+                          (CC and)
+                          (S
+                            (NP (PRP I))
+                            (VP (VBP say)
+                              (SBAR (IN that)
+                                (S
+                                  (S
+                                    (NP (EX there))
+                                    (VP (VBZ IS)
+                                      (NP
+                                        (NP (DT a) (NN tree))
+                                        (VP (VBG growing)
+                                          (PP (IN on)
+                                            (NP (NNP North) (NNP Hill)))))))
+                                  (CC and)
+                                  (S
+                                    (NP (PRP you))
+                                    (VP (VBP say)
+                                      (SBAR
+                                        (S
+                                          (NP (PRP it))
+                                          (VP (VBZ is)
+                                            (NP (DT a) (NN metaphor))))))))))))))))))))))
+    (NP (PRP I))
+    (VP (MD can)
+      (VP
+        (VP (VB take)
+          (NP (PRP you))
+          (PP (TO to)
+            (NP (NNP North) (NNP Hill))))
+        (CC and)
+        (VP (VB show)
+          (NP (PRP you)))
+        (NP (DT the) (NN tree))))
+    (. .)))
+
+mark(have-3, If-1)
+nsubj(have-3, I-2)
+advcl(take-38, have-3)
+det(passage-5, a-4)
+dobj(have-3, passage-5)
+det(book-8, a-7)
+prep_in(passage-5, book-8)
+nsubj(says-10, book-8)
+nsubj(grows-13, book-8)
+rcmod(book-8, says-10)
+det(tree-12, A-11)
+nsubj(grows-13, tree-12)
+dep(says-10, grows-13)
+nn(Hill-16, North-15)
+prep_on(grows-13, Hill-16)
+nsubj(say-19, I-18)
+dep(says-10, say-19)
+conj_and(grows-13, say-19)
+complm(IS-22, that-20)
+expl(IS-22, there-21)
+ccomp(say-19, IS-22)
+det(tree-24, a-23)
+nsubj(IS-22, tree-24)
+partmod(tree-24, growing-25)
+nn(Hill-28, North-27)
+prep_on(growing-25, Hill-28)
+nsubj(say-31, you-30)
+ccomp(say-19, say-31)
+conj_and(IS-22, say-31)
+nsubj(metaphor-35, it-32)
+cop(metaphor-35, is-33)
+det(metaphor-35, a-34)
+ccomp(say-31, metaphor-35)
+nsubj(take-38, I-36)
+nsubj(show-44, I-36)
+aux(take-38, can-37)
+root(ROOT-0, take-38)
+dobj(take-38, you-39)
+nn(Hill-42, North-41)
+prep_to(take-38, Hill-42)
+conj_and(take-38, show-44)
+dobj(show-44, you-45)
+det(tree-47, the-46)
+dobj(take-38, tree-47)
+

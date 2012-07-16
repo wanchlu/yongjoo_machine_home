@@ -1,0 +1,34 @@
+(ROOT
+  (NP (NNP Bruce) (NNP Crumley) (. .)))
+
+nn(Crumley-2, Bruce-1)
+root(ROOT-0, Crumley-2)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP France) (NNP Overruled))
+    (PP (IN on)
+      (NP (NNP Gay) (NNP Adoption) ('' '')))
+    (. .)))
+
+nn(Overruled-3, France-2)
+root(ROOT-0, Overruled-3)
+dep(Overruled-3, on-4)
+nn(Adoption-6, Gay-5)
+pobj(on-4, Adoption-6)
+
+(ROOT
+  (NP (NN Time) (. .)))
+
+root(ROOT-0, Time-1)
+
+(ROOT
+  (NP
+    (NP (NNP Jan.) (CD 24))
+    (, ,)
+    (NP (CD 2008))))
+
+root(ROOT-0, Jan.-1)
+num(Jan.-1, 24-2)
+appos(Jan.-1, 2008-4)
+

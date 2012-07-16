@@ -1,0 +1,145 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ hurts)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP they))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB teach)
+                  (NP
+                    (NP (NNS kids))
+                    (PP (IN in)
+                      (NP (NN school))))
+                  (NP (DT that)))))))))
+    (. .)))
+
+nsubj(hurts-2, It-1)
+root(ROOT-0, hurts-2)
+advmod(want-5, when-3)
+nsubj(want-5, they-4)
+xsubj(teach-7, they-4)
+advcl(hurts-2, want-5)
+aux(teach-7, to-6)
+xcomp(want-5, teach-7)
+iobj(teach-7, kids-8)
+prep_in(kids-8, school-10)
+dobj(teach-7, that-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP like)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (VBP have)
+            (NP
+              (NP (DT a) (NN system))
+              (CC and)
+              (NP
+                (NP (DT a) (NN fabric))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ rewards)
+                      (S
+                        (NP
+                          (NP (DT a) (NN man))
+                          (CC and)
+                          (NP (NNS women)))
+                        (VP (TO to)
+                          (VP (VB marry)))))))))))))
+    (. .)))
+
+nsubj(like-2, I-1)
+root(ROOT-0, like-2)
+complm(have-5, that-3)
+nsubj(have-5, we-4)
+ccomp(like-2, have-5)
+det(system-7, a-6)
+dobj(have-5, system-7)
+det(fabric-10, a-9)
+dobj(have-5, fabric-10)
+conj_and(system-7, fabric-10)
+nsubj(rewards-12, fabric-10)
+rcmod(fabric-10, rewards-12)
+det(man-14, a-13)
+nsubj(marry-18, man-14)
+conj_and(man-14, women-16)
+nsubj(marry-18, women-16)
+aux(marry-18, to-17)
+xcomp(rewards-12, marry-18)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP
+      (VP (VBP do) (RB n't)
+        (VP (VB want)
+          (NP (PRP it))))
+      (CC and)
+      (VP (VBZ thats)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (VP (VBN petitioned)
+                (S
+                  (VP (TO to)
+                    (VP (VB remove)
+                      (NP (PRP it))
+                      (PP (IN from)
+                        (NP
+                          (NP (NNS states))
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VBP have)
+                                (VP (VBN made)
+                                  (S
+                                    (NP (PRP it))
+                                    (NP
+                                      (NP (NN law) (RB only))
+                                      (PP (IN on)
+                                        (NP
+                                          (NP (JJ judicial) (NNS reasons))
+                                          (SBAR
+                                            (WHNP (WDT which))
+                                            (S
+                                              (VP (VBZ is)
+                                                (ADJP (JJ unconstitutional))))))))))))))))))))))))
+    (. .)))
+
+nsubj(want-4, People-1)
+nsubj(thats-7, People-1)
+aux(want-4, do-2)
+neg(want-4, n't-3)
+root(ROOT-0, want-4)
+dobj(want-4, it-5)
+conj_and(want-4, thats-7)
+advmod(petitioned-11, why-8)
+nsubj(petitioned-11, they-9)
+xsubj(remove-13, they-9)
+aux(petitioned-11, have-10)
+advcl(thats-7, petitioned-11)
+aux(remove-13, to-12)
+xcomp(petitioned-11, remove-13)
+dobj(remove-13, it-14)
+prep_from(remove-13, states-16)
+nsubj(made-19, states-16)
+aux(made-19, have-18)
+rcmod(states-16, made-19)
+nsubj(law-21, it-20)
+xcomp(made-19, law-21)
+advmod(law-21, only-22)
+amod(reasons-25, judicial-24)
+prep_on(law-21, reasons-25)
+nsubj(unconstitutional-28, reasons-25)
+cop(unconstitutional-28, is-27)
+rcmod(reasons-25, unconstitutional-28)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (PRP$ his))
+    (VP (VB command)
+      (PP (TO to)
+        (NP (CD one) (NN person)))
+      (S
+        (VP (VB apply)
+          (PP (TO to)
+            (NP (DT all) (NNS people))))))
+    (. ?)))
+
+dep(command-3, Does-1)
+nsubj(command-3, his-2)
+root(ROOT-0, command-3)
+num(person-6, one-5)
+prep_to(command-3, person-6)
+ccomp(command-3, apply-7)
+det(people-10, all-9)
+prep_to(apply-7, people-10)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB so))))
+    (, ,)
+    (SQ (MD should)
+      (NP (PRP I))
+      (VP (VB be)
+        (VP (VBN worried)
+          (PP (IN about)
+            (NP
+              (NP (PRP$ my) (NN father))
+              (VP (VBG trying)
+                (S
+                  (VP (TO to)
+                    (VP (VB sacrifice)
+                      (NP (PRP me)))))))))))
+    (. ?)))
+
+mark(so-2, If-1)
+advcl(worried-7, so-2)
+aux(worried-7, should-4)
+nsubjpass(worried-7, I-5)
+auxpass(worried-7, be-6)
+root(ROOT-0, worried-7)
+poss(father-10, my-9)
+prep_about(worried-7, father-10)
+partmod(father-10, trying-11)
+aux(sacrifice-13, to-12)
+xcomp(trying-11, sacrifice-13)
+dobj(sacrifice-13, me-14)
+

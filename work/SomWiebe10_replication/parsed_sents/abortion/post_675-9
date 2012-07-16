@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN argument))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (PP (IN because)
+            (NP (NN something)))
+          (VP (VBZ is) (RB not)
+            (PP (IN in)
+              (NP (DT a) (NN state)))))))
+    (ADVP (RB now))
+    (VP (VBZ entails)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (MD should)
+            (VP (VB treat)
+              (NP (PRP it))
+              (ADVP (RB no) (RB differently))
+              (PP (IN than)
+                (NP
+                  (NP (NN something))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is) (RB not)
+                        (ADJP (RB particularly) (JJ likely)
+                          (S
+                            (VP (TO to)
+                              (VP (VB enter)
+                                (SBAR (IN that)
+                                  (S
+                                    (NP (NN state))
+                                    (VP (VBZ is)
+                                      (ADJP (JJ irrational)))))))))))))))))))
+    (. .)))
+
+det(argument-2, The-1)
+nsubj(is-6, argument-2)
+nsubj(entails-12, argument-2)
+prep_because(is-6, something-5)
+rcmod(argument-2, is-6)
+neg(is-6, not-7)
+det(state-10, a-9)
+prep_in(is-6, state-10)
+advmod(entails-12, now-11)
+root(ROOT-0, entails-12)
+complm(treat-16, that-13)
+nsubj(treat-16, we-14)
+aux(treat-16, should-15)
+ccomp(entails-12, treat-16)
+dobj(treat-16, it-17)
+advmod(differently-19, no-18)
+advmod(treat-16, differently-19)
+prep_than(treat-16, something-21)
+nsubj(likely-26, something-21)
+cop(likely-26, is-23)
+neg(likely-26, not-24)
+advmod(likely-26, particularly-25)
+rcmod(something-21, likely-26)
+aux(enter-28, to-27)
+xcomp(likely-26, enter-28)
+complm(irrational-32, that-29)
+nsubj(irrational-32, state-30)
+cop(irrational-32, is-31)
+ccomp(enter-28, irrational-32)
+

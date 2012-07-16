@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP line)
+        (PRT (RP up))
+        (SBAR (IN because)
+          (S
+            (S
+              (NP (DT the) (NN earth))
+              (VP (VBZ is)
+                (VP (VBG circling)
+                  (NP (DT the) (NN sun)))))
+            (CC and)
+            (S
+              (NP (DT the) (NN moon))
+              (VP (VBZ is)
+                (VP (VBG circling)
+                  (NP (DT the) (NN earth)))))))))
+    (: ...)
+    (S
+      (NP (DT that))
+      (VP (VBZ 's)
+        (NP (DT all))))
+    (. .)))
+
+nsubj(line-2, They-1)
+root(ROOT-0, line-2)
+prt(line-2, up-3)
+mark(circling-8, because-4)
+det(earth-6, the-5)
+nsubj(circling-8, earth-6)
+aux(circling-8, is-7)
+advcl(line-2, circling-8)
+det(sun-10, the-9)
+dobj(circling-8, sun-10)
+det(moon-13, the-12)
+nsubj(circling-15, moon-13)
+aux(circling-15, is-14)
+advcl(line-2, circling-15)
+conj_and(circling-8, circling-15)
+det(earth-17, the-16)
+dobj(circling-15, earth-17)
+nsubj(all-21, that-19)
+cop(all-21, 's-20)
+parataxis(line-2, all-21)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT all)))
+    (NP (PRP you))
+    (VP (VBP know)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD might)
+            (VP (VB have)
+              (VP
+                (ADVP (RB just))
+                (VBN aborted)
+                (NP
+                  (NP (DT the) (NN person))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBD found)
+                        (NP (DT the) (NN cure))
+                        (PP (IN for)
+                          (NP (NN cancer)
+                            (CC or)
+                            (NN diabetes)))))))))))))
+    (. .)))
+
+prep_for(know-4, all-2)
+nsubj(know-4, you-3)
+root(ROOT-0, know-4)
+nsubj(aborted-9, you-5)
+aux(aborted-9, might-6)
+aux(aborted-9, have-7)
+advmod(aborted-9, just-8)
+ccomp(know-4, aborted-9)
+det(person-11, the-10)
+dobj(aborted-9, person-11)
+nsubj(found-13, person-11)
+rcmod(person-11, found-13)
+det(cure-15, the-14)
+dobj(found-13, cure-15)
+prep_for(found-13, cancer-17)
+prep_for(found-13, diabetes-19)
+conj_or(cancer-17, diabetes-19)
+

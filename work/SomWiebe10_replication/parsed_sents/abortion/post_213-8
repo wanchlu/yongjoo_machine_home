@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ takes)
+        (PP (IN in)
+          (NP
+            (NP (NNS nutrients)
+              (CC and)
+              (NNS disposes))
+            (PP (IN of)
+              (NP (JJ biological) (NN waste)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB immediately))
+      (VP (VBZ sets)
+        (PP (IN about)
+          (S
+            (VP (VBG reproducing)
+              (NP (PRP itself))
+              (PP (IN in)
+                (NP (DT an) (NN attempt)
+                  (S
+                    (VP (TO to)
+                      (VP (VB form)
+                        (NP
+                          (NP (DT the) (JJ human) (NN person))
+                          (SBAR
+                            (S
+                              (NP (PRP$ its) (JJ genetic) (NN instruction))
+                              (VP (VBZ tells)
+                                (S
+                                  (NP (PRP it))
+                                  (VP (TO to)
+                                    (VP (VB become))))))))))))))))))
+    (. .)))
+
+nsubj(takes-2, It-1)
+root(ROOT-0, takes-2)
+prep_in(takes-2, nutrients-4)
+prep_in(takes-2, disposes-6)
+conj_and(nutrients-4, disposes-6)
+amod(waste-9, biological-8)
+prep_of(nutrients-4, waste-9)
+nsubj(sets-14, it-12)
+advmod(sets-14, immediately-13)
+conj_and(takes-2, sets-14)
+prepc_about(sets-14, reproducing-16)
+dobj(reproducing-16, itself-17)
+det(attempt-20, an-19)
+prep_in(reproducing-16, attempt-20)
+aux(form-22, to-21)
+infmod(attempt-20, form-22)
+det(person-25, the-23)
+amod(person-25, human-24)
+dobj(form-22, person-25)
+dobj(tells-29, person-25)
+poss(instruction-28, its-26)
+amod(instruction-28, genetic-27)
+nsubj(tells-29, instruction-28)
+rcmod(person-25, tells-29)
+nsubj(become-32, it-30)
+aux(become-32, to-31)
+xcomp(tells-29, become-32)
+

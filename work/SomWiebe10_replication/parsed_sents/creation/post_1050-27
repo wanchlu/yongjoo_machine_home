@@ -1,0 +1,36 @@
+(ROOT
+  (FRAG
+    (PP (IN For)
+      (NP (NN example)))
+    (: :)
+    (NP
+      (NP (NNS snowflakes))
+      (, ,)
+      (NP (NNS tornados))
+      (, ,)
+      (NP (NNS hurricanes))
+      (, ,)
+      (NP (NN sand) (NNS dunes))
+      (, ,)
+      (NP (NNS stalactites))
+      (, ,)
+      (NP (NNS rivers))
+      (, ,)
+      (NP
+        (NP (NN ocean) (NNS waves))
+        (NP (FW etc.) (. .))))
+    (. .)))
+
+dep(snowflakes-4, For-1)
+pobj(For-1, example-2)
+root(ROOT-0, snowflakes-4)
+appos(snowflakes-4, tornados-6)
+appos(snowflakes-4, hurricanes-8)
+nn(dunes-11, sand-10)
+appos(snowflakes-4, dunes-11)
+appos(snowflakes-4, stalactites-13)
+appos(snowflakes-4, rivers-15)
+nn(waves-18, ocean-17)
+appos(snowflakes-4, waves-18)
+dep(waves-18, etc.-19)
+

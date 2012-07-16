@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2005)))
+    (, ,)
+    (S
+      (PP (IN for)
+        (NP (DT every) (CD 1,000) (JJ live) (NNS births)))
+      (, ,)
+      (NP (DT the) (JJ infant) (NN mortality) (NN rate))
+      (VP (VBD was)))
+    (: :)
+    (S
+      (X
+        (X (SYM \*))
+        (NP
+          (NP (NNP 13.63))
+          (PP (IN among)
+            (NP
+              (ADJP (JJ non-Hispanic) (JJ black))
+              (NNPS Americans)))))
+      (X
+        (X (SYM \*))
+        (NP
+          (NP (CD 5.76))
+          (PP (IN among)
+            (NP
+              (ADJP (JJ non-Hispanic) (JJ white))
+              (NNP AmericansPremature)))))
+      (NP (NN birth))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN factor))
+          (PP (IN in)
+            (NP
+              (NP
+                (QP (JJR more) (IN than) (NNS two-thirds)))
+              (PP (IN of)
+                (NP (JJ infant) (NNS deaths))))))))
+    (. .)))
+
+prep_in(was-14, 2005-2)
+det(births-8, every-5)
+num(births-8, 1,000-6)
+amod(births-8, live-7)
+prep_for(was-14, births-8)
+det(rate-13, the-10)
+amod(rate-13, infant-11)
+nn(rate-13, mortality-12)
+nsubj(was-14, rate-13)
+root(ROOT-0, was-14)
+dep(13.63-17, \*-16)
+dep(factor-31, 13.63-17)
+amod(black-20, non-Hispanic-19)
+amod(Americans-21, black-20)
+prep_among(13.63-17, Americans-21)
+dep(5.76-23, \*-22)
+dep(factor-31, 5.76-23)
+amod(white-26, non-Hispanic-25)
+amod(AmericansPremature-27, white-26)
+prep_among(5.76-23, AmericansPremature-27)
+nsubj(factor-31, birth-28)
+cop(factor-31, is-29)
+det(factor-31, a-30)
+parataxis(was-14, factor-31)
+quantmod(two-thirds-35, more-33)
+quantmod(two-thirds-35, than-34)
+prep_in(factor-31, two-thirds-35)
+amod(deaths-38, infant-37)
+prep_of(two-thirds-35, deaths-38)
+

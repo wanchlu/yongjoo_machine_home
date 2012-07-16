@@ -1,0 +1,75 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (S
+          (VP (VBG creating)
+            (NP (NN life))))
+        (VP (VBZ is) (RB not)
+          (ADJP (JJ impressive))
+          (ADVP (RB then)))))
+    (NP
+      (NP (WP what))
+      (PP (IN in)
+        (NP (NNP Science))))
+    (VP (VBZ is))
+    (. ?)))
+
+mark(impressive-7, If-2)
+csubj(impressive-7, creating-3)
+dobj(creating-3, life-4)
+cop(impressive-7, is-5)
+neg(impressive-7, not-6)
+dep(is-12, impressive-7)
+advmod(impressive-7, then-8)
+nsubj(is-12, what-9)
+prep_in(what-9, Science-11)
+root(ROOT-0, is-12)
+
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (NNP Science))
+      (VP (VBZ is)
+        (ADJP (JJ useful))))
+    (: ...)
+    (CC but)
+    (S
+      (NP (PRP$ my) (NN point))
+      (VP (VBZ is)
+        (ADVP (RB simply))
+        (SBAR (IN that)
+          (S
+            (NP (NN science))
+            (VP (VBZ is)
+              (VP (VBN based)
+                (PP (IN around)
+                  (S
+                    (VP (VBG documenting)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP we))
+                          (VP (VB see)
+                            (PP (IN in)
+                              (NP (NN nature)))
+                            (. .)))))))))))))
+    (. .)))
+
+nsubj(useful-4, Science-2)
+cop(useful-4, is-3)
+root(ROOT-0, useful-4)
+poss(point-8, my-7)
+nsubj(is-9, point-8)
+conj_but(useful-4, is-9)
+advmod(is-9, simply-10)
+complm(based-14, that-11)
+nsubjpass(based-14, science-12)
+auxpass(based-14, is-13)
+ccomp(is-9, based-14)
+prepc_around(based-14, documenting-16)
+dobj(see-19, what-17)
+nsubj(see-19, we-18)
+ccomp(documenting-16, see-19)
+prep_in(see-19, nature-21)
+

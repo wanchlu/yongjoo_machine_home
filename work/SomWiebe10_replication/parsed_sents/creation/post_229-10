@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Bird) (NNS wings))
+      (VP (VBP are)
+        (ADJP (RB pretty) (JJ spiffy)
+          (PP (IN at)
+            (NP (NN flight))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBP 're)
+        (ADJP (RB no) (JJ good)
+          (PP (IN at)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP they))
+                (VP (VBD used)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)))))))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (DT the) (JJ grasping) (NNS forelimbs))
+            (PP (IN of)
+              (NP (JJ bipedal) (NNS carnivorous) (NNS dinosaurs))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+amod(wings-2, Bird-1)
+nsubj(spiffy-5, wings-2)
+cop(spiffy-5, are-3)
+advmod(spiffy-5, pretty-4)
+root(ROOT-0, spiffy-5)
+prep_at(spiffy-5, flight-7)
+nsubj(good-13, they-10)
+cop(good-13, 're-11)
+advmod(good-13, no-12)
+conj_but(spiffy-5, good-13)
+dep(used-17, what-15)
+nsubj(used-17, they-16)
+xsubj(be-19, they-16)
+prepc_at(good-13, used-17)
+aux(be-19, to-18)
+xcomp(used-17, be-19)
+det(forelimbs-23, the-21)
+amod(forelimbs-23, grasping-22)
+dep(good-13, forelimbs-23)
+amod(dinosaurs-27, bipedal-25)
+nn(dinosaurs-27, carnivorous-26)
+prep_of(forelimbs-23, dinosaurs-27)
+

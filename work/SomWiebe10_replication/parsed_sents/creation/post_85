@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN While)
+        (S
+          (NP (DT that))
+          (VP (VBZ is)
+            (NP (DT an) (JJ interesting) (NN question)))))
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB hardly))
+        (NP (DT a) (JJ scientific) (NN one))))
+    (: ...)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN theory))
+        (PP (IN of)
+          (NP (NNP ID))))
+      (VP (VBZ is)
+        (VP (VBN billed)
+          (PP (IN as)
+            (NP (NN science)))
+          (PP (RB not)
+            (NP (NN philosophy))))))
+    (. .)))
+
+mark(question-6, While-1)
+nsubj(question-6, that-2)
+cop(question-6, is-3)
+det(question-6, an-4)
+amod(question-6, interesting-5)
+advcl(one-12, question-6)
+nsubj(one-12, it-7)
+cop(one-12, is-8)
+advmod(one-12, hardly-9)
+det(one-12, a-10)
+amod(one-12, scientific-11)
+root(ROOT-0, one-12)
+det(theory-16, the-15)
+nsubjpass(billed-20, theory-16)
+prep_of(theory-16, ID-18)
+auxpass(billed-20, is-19)
+conj_and(one-12, billed-20)
+prep_as(billed-20, science-22)
+prep(billed-20, not-23)
+pobj(not-23, philosophy-24)
+

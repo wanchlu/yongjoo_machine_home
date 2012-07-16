@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are) (RB n't)
+      (ADJP (JJ sure))
+      (SBAR (IN whether)
+        (S
+          (NP (DT a) (NN child))
+          (VP (MD would)
+            (VP (VB be)
+              (ADJP (JJR better) (RP off))
+              (PP
+                (PP (IN in)
+                  (NP (DT an) (NN orphanage)))
+                (CC or)
+                (PP (IN with)
+                  (NP (JJ gay) (NNS parents)))))))))
+    (. ?)))
+
+nsubj(sure-4, You-1)
+cop(sure-4, are-2)
+neg(sure-4, n't-3)
+root(ROOT-0, sure-4)
+complm(better-10, whether-5)
+det(child-7, a-6)
+nsubj(better-10, child-7)
+nsubj(better-10', child-7)
+aux(better-10, would-8)
+cop(better-10, be-9)
+ccomp(sure-4, better-10)
+ccomp(sure-4, better-10')
+conj_or(better-10, better-10')
+dep(better-10, off-11)
+det(orphanage-14, an-13)
+prep_in(better-10, orphanage-14)
+amod(parents-18, gay-17)
+prep_with(better-10', parents-18)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (ADVP (RB honestly))
+    (VP (VB hate)
+      (NP (NNS gays))
+      (ADVP (RB so) (RB much)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBP have)
+              (NP
+                (NP (DT no) (NN problem))
+                (VP (VBG leaving)
+                  (SBAR
+                    (S
+                      (NP (PRP them))
+                      (VP (VBZ parentless)
+                        (PP (RB instead) (IN of)
+                          (S
+                            (VP (VBG having)
+                              (S
+                                (NP (PRP them))
+                                (VP (VBN raised)
+                                  (PP (IN by)
+                                    (NP (NNS gays))))))))))))))))))
+    (. ?)))
+
+aux(hate-4, Do-1)
+nsubj(hate-4, you-2)
+advmod(hate-4, honestly-3)
+root(ROOT-0, hate-4)
+dobj(hate-4, gays-5)
+advmod(much-7, so-6)
+advmod(hate-4, much-7)
+nsubj(have-9, you-8)
+dep(much-7, have-9)
+det(problem-11, no-10)
+dobj(have-9, problem-11)
+partmod(problem-11, leaving-12)
+nsubj(parentless-14, them-13)
+ccomp(leaving-12, parentless-14)
+prepc_instead_of(parentless-14, having-17)
+nsubj(raised-19, them-18)
+ccomp(having-17, raised-19)
+prep_by(raised-19, gays-21)
+

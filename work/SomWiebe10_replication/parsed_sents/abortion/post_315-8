@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP say)
+          (SBAR
+            (S
+              (NP (DT the) (NN government))
+              (VP (VBZ has)
+                (NP (DT a) (NN right)
+                  (S
+                    (VP (TO to)
+                      (VP (VB decide)
+                        (S
+                          (NP (WDT what))
+                          (NP (PRP you)))
+                        (PP (IN with)
+                          (NP (PRP$ your) (NN body) (NNS parts)))))))))))))
+    (NP (PRP you))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBN forced)
+          (S
+            (VP (TO to)
+              (VP (VB endure)
+                (NP
+                  (NP (DT the) (JJ painful) (NN process))
+                  (PP (IN of)
+                    (NP (NN bone) (NN marrow) (NN transplant))))))))))
+    (. .)))
+
+mark(say-3, If-1)
+nsubj(say-3, you-2)
+advcl(forced-20, say-3)
+det(government-5, the-4)
+nsubj(has-6, government-5)
+ccomp(say-3, has-6)
+det(right-8, a-7)
+dobj(has-6, right-8)
+aux(decide-10, to-9)
+infmod(right-8, decide-10)
+nsubj(you-12, what-11)
+xcomp(decide-10, you-12)
+poss(parts-16, your-14)
+nn(parts-16, body-15)
+prep_with(decide-10, parts-16)
+nsubjpass(forced-20, you-17)
+aux(forced-20, would-18)
+auxpass(forced-20, be-19)
+root(ROOT-0, forced-20)
+aux(endure-22, to-21)
+xcomp(forced-20, endure-22)
+det(process-25, the-23)
+amod(process-25, painful-24)
+dobj(endure-22, process-25)
+nn(transplant-29, bone-27)
+nn(transplant-29, marrow-28)
+prep_of(process-25, transplant-29)
+

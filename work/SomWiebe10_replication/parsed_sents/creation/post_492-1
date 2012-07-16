@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (FRAG
+          (X (SYM \*))
+          (NP (JJ increasing) (NN student) (NN interest))))
+      (PP (IN in)
+        (NP
+          (NP (NN science))
+          (PP (IN by)
+            (S
+              (VP (VBG exposing)
+                (NP (PRP them))
+                (PP (TO to)
+                  (NP
+                    (NP (JJ current) (NNS debates))
+                    (PP (IN within)
+                      (NP
+                        (NP (DT the) (JJ scientific) (NN community) (CD ,10))
+                        (CC and)
+                        (NP (DT The) (NN debate))))))
+                (PP (IN within)
+                  (NP
+                    (NP (DT the) (JJ scientific) (NN community))
+                    (PP (IN over)
+                      (NP (NNP ID)))))))))))
+    (VP (VBZ is)
+      (ADJP (RP over)))
+    (. .)))
+
+dep(interest-4, \*-1)
+amod(interest-4, increasing-2)
+nn(interest-4, student-3)
+nsubj(over-28, interest-4)
+prep_in(interest-4, science-6)
+prepc_by(science-6, exposing-8)
+dobj(exposing-8, them-9)
+amod(debates-12, current-11)
+prep_to(exposing-8, debates-12)
+det(community-16, the-14)
+amod(community-16, scientific-15)
+prep_within(debates-12, community-16)
+num(community-16, ,10-17)
+det(debate-20, The-19)
+prep_within(debates-12, debate-20)
+conj_and(community-16, debate-20)
+det(community-24, the-22)
+amod(community-24, scientific-23)
+prep_within(exposing-8, community-24)
+prep_over(community-24, ID-26)
+cop(over-28, is-27)
+root(ROOT-0, over-28)
+

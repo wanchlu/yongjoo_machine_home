@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (UCP (RB not)
+        (S
+          (VP (TO to)
+            (VP (VB say)
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (DT no) (NN value))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT an) (NN entity))
+                          (PP (IN during)
+                            (NP (JJ other) (NNS time-frames))))))))))))
+        (, ,)
+        (CC but)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN value))
+            (VP (VBZ is) (RB not)
+              (NP
+                (NP (DT that))
+                (PP (IN of)
+                  (NP (DT a) (`` ``) (NN person) ('' '')))))))))
+    (. .)))
+
+nsubj(is-2, That-1)
+root(ROOT-0, is-2)
+dep(is-2, not-3)
+aux(say-5, to-4)
+dep(not-3, say-5)
+expl(is-7, there-6)
+ccomp(say-5, is-7)
+det(value-9, no-8)
+nsubj(is-7, value-9)
+det(entity-12, an-11)
+prep_in(value-9, entity-12)
+amod(time-frames-15, other-14)
+prep_during(entity-12, time-frames-15)
+complm(that-23, that-18)
+det(value-20, the-19)
+nsubj(that-23, value-20)
+cop(that-23, is-21)
+neg(that-23, not-22)
+dep(is-2, that-23)
+conj_but(not-3, that-23)
+det(person-27, a-25)
+prep_of(that-23, person-27)
+

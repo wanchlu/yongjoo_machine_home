@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ congressional) (NN report))
+    (VP (VBZ comes)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (JJ similar) (NNS sources))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP have)
+                (VP (VBN denied)
+                  (NP
+                    (NP (DT the) (NN existence)
+                      (CC or)
+                      (NNS problems))
+                    (PP (IN of)
+                      (NP (JJ global) (NN warming))))
+                  (ADVP (RB as) (RB well)))))))))
+    (. .)))
+
+det(report-3, The-1)
+amod(report-3, congressional-2)
+nsubj(comes-4, report-3)
+root(ROOT-0, comes-4)
+det(sources-8, the-6)
+amod(sources-8, similar-7)
+prep_from(comes-4, sources-8)
+nsubj(denied-11, sources-8)
+aux(denied-11, have-10)
+rcmod(sources-8, denied-11)
+det(existence-13, the-12)
+dobj(denied-11, existence-13)
+dobj(denied-11, problems-15)
+conj_or(existence-13, problems-15)
+amod(warming-18, global-17)
+prep_of(existence-13, warming-18)
+advmod(well-20, as-19)
+mwe(well-20, as-19)
+advmod(denied-11, well-20)
+

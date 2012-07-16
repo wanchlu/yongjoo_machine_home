@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ happens)
+        (SBAR
+          (WHADVP (WRB whenever))
+          (S
+            (NP
+              (NP (DT an) (NN egg))
+              (CC or)
+              (NP (DT a) (NN sperm)))
+            (VP (VBZ is)
+              (VP (VBN formed)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ happens)
+        (ADVP (RB again))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT an) (NN egg))
+            (VP (VBZ combines)
+              (PP (IN with)
+                (NP (DT a) (NN sperm))))))))
+    (. .)))
+
+nsubj(happens-2, This-1)
+root(ROOT-0, happens-2)
+advmod(formed-10, whenever-3)
+det(egg-5, an-4)
+nsubjpass(formed-10, egg-5)
+det(sperm-8, a-7)
+conj_or(egg-5, sperm-8)
+nsubjpass(formed-10, sperm-8)
+auxpass(formed-10, is-9)
+advcl(happens-2, formed-10)
+nsubj(happens-14, it-13)
+conj_and(happens-2, happens-14)
+advmod(happens-14, again-15)
+advmod(combines-19, when-16)
+det(egg-18, an-17)
+nsubj(combines-19, egg-18)
+advcl(happens-14, combines-19)
+det(sperm-22, a-21)
+prep_with(combines-19, sperm-22)
+

@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP
+      (ADJP
+        (QP (IN Up) (TO to) (CD 1,000,000))
+        (RB utterly) (JJ innocent))
+      (JJ Iraqi) (NNS civilians))
+    (VP (VBD died)
+      (PP (IN in)
+        (NP
+          (NP (NNP George) (NNP Bush) (POS 's))
+          (NN war))))
+    (. .)))
+
+quantmod(1,000,000-3, Up-1)
+dep(1,000,000-3, to-2)
+dep(innocent-5, 1,000,000-3)
+advmod(innocent-5, utterly-4)
+dep(civilians-7, innocent-5)
+amod(civilians-7, Iraqi-6)
+nsubj(died-8, civilians-7)
+root(ROOT-0, died-8)
+nn(Bush-11, George-10)
+poss(war-13, Bush-11)
+prep_in(died-8, war-13)
+
+(ROOT
+  (S
+    (NP (NNP Go))
+    (VP (VBP tell)
+      (NP (PRP them))
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (ADJP (JJ pro-life))))))
+    (. .)))
+
+nsubj(tell-2, Go-1)
+root(ROOT-0, tell-2)
+dobj(tell-2, them-3)
+complm(pro-life-7, that-4)
+nsubj(pro-life-7, you-5)
+cop(pro-life-7, are-6)
+ccomp(tell-2, pro-life-7)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ cares)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP
+              (NP (DT the) (NNP Family) ('' ''))
+              (NP (NNP Research) ('' '') (NNP Council)))
+            (VP (VBZ says))))))
+    (. ?)))
+
+nsubj(cares-2, Who-1)
+root(ROOT-0, cares-2)
+dobj(says-10, what-3)
+det(Family-5, the-4)
+nsubj(says-10, Family-5)
+nn(Council-9, Research-7)
+dep(Family-5, Council-9)
+ccomp(cares-2, says-10)
+

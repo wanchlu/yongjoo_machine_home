@@ -1,0 +1,73 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (DT The) (NN world) (POS 's))
+        (ADJP (RBS most) (JJ brilliant))
+        (NNS scientists))
+      (VP (MD ca) (RB n't)
+        (ADVP (RB even))
+        (VP (VB figure)
+          (PRT (RP out))
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (VP (TO to)
+                (VP (VB create)
+                  (NP
+                    (NP (DT a) (NN cell))
+                    (PP (IN in)
+                      (NP (DT a) (NN laboratory)))))))))))
+    (, ,) (IN so)
+    (S
+      (NP
+        (NP (DT the) (NNS chances))
+        (PP (IN of)
+          (NP (CD one) (RB just)))
+        (VP
+          (ADVP (RB accidentally))
+          (VBG being)
+          (VP (VBN created)
+            (ADVP
+              (NP
+                (QP (CD 5) (CD billion))
+                (NNS years))
+              (RB ago)))))
+      (VP (VBP are)
+        (ADJP (RB incredibly) (JJ slim))))
+    (. .)))
+
+det(world-3, The-2)
+poss(scientists-7, world-3)
+advmod(brilliant-6, most-5)
+amod(scientists-7, brilliant-6)
+nsubj(figure-11, scientists-7)
+aux(figure-11, ca-8)
+neg(figure-11, n't-9)
+advmod(figure-11, even-10)
+root(ROOT-0, figure-11)
+prt(figure-11, out-12)
+advmod(create-15, how-13)
+aux(create-15, to-14)
+ccomp(figure-11, create-15)
+xcomp(figure-11, create-15)
+det(cell-17, a-16)
+dobj(create-15, cell-17)
+det(laboratory-20, a-19)
+prep_in(cell-17, laboratory-20)
+dep(figure-11, so-22)
+det(chances-24, the-23)
+nsubj(slim-37, chances-24)
+prep_of(chances-24, one-26)
+advmod(one-26, just-27)
+advmod(created-30, accidentally-28)
+auxpass(created-30, being-29)
+partmod(chances-24, created-30)
+number(billion-32, 5-31)
+num(years-33, billion-32)
+npadvmod(ago-34, years-33)
+advmod(created-30, ago-34)
+cop(slim-37, are-35)
+advmod(slim-37, incredibly-36)
+ccomp(figure-11, slim-37)
+

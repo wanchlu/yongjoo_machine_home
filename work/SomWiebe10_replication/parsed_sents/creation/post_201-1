@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NN Neat)
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NNP ID) (NNS proponents))
+                (VP (VBP have)
+                  (VP (VBN come)
+                    (S
+                      (VP (TO to)
+                        (VP (VB move)
+                          (PP (IN towards)
+                            (NP
+                              (NP (DT a)
+                                (ADJP (RBR more) (JJ scientific))
+                                (NN position))
+                              (, ,)
+                              (SBAR (IN although)
+                                (S
+                                  (NP (PRP it))
+                                  (VP (VBZ does)))))))))))))))))
+    (VP (VBP render)
+      (NP (DT the) (NNP ID) (NN position))
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN status))
+          (PP (IN of)
+            (NP
+              (QP (RB fully) (CD religious)))))))
+    (. .)))
+
+nsubj(render-20, Neat-1)
+aux(see-3, to-2)
+infmod(Neat-1, see-3)
+advmod(come-8, how-4)
+nn(proponents-6, ID-5)
+nsubj(come-8, proponents-6)
+xsubj(move-10, proponents-6)
+aux(come-8, have-7)
+ccomp(see-3, come-8)
+aux(move-10, to-9)
+xcomp(come-8, move-10)
+det(position-15, a-12)
+advmod(scientific-14, more-13)
+amod(position-15, scientific-14)
+prep_towards(move-10, position-15)
+dobj(does-19, position-15)
+mark(does-19, although-17)
+nsubj(does-19, it-18)
+dep(position-15, does-19)
+root(ROOT-0, render-20)
+det(position-23, the-21)
+nn(position-23, ID-22)
+dobj(render-20, position-23)
+det(status-26, a-25)
+prep_to(render-20, status-26)
+quantmod(religious-29, fully-28)
+prep_of(status-26, religious-29)
+

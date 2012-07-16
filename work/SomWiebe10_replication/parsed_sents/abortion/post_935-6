@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (NP (VBG Banning) (NN abortion))
+      (VP (VBZ does) (RB n't)
+        (VP (VB stop)
+          (NP (PRP it)))))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP
+        (ADVP (RB just))
+        (VBZ hides)
+        (NP (PRP it)))
+      (CC and)
+      (VP (VBZ demonizes)
+        (NP
+          (NP (NN woman))
+          (, ,)
+          (SBAR
+            (WHNP (WP who) (JJ many) (NNS times))
+            (S
+              (VP (VBP are)
+                (ADVP (RB only))
+                (NP
+                  (NP (NNS children))
+                  (PP (IN at)
+                    (NP (DT the) (NN time)))))))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHNP (WP who) (JJ many) (NNS times))
+            (S
+              (VP (VBD were)
+                (VP (VBN raped))))))))
+    (. .)))
+
+amod(abortion-2, Banning-1)
+nsubj(stop-5, abortion-2)
+aux(stop-5, does-3)
+neg(stop-5, n't-4)
+ccomp(hides-10, stop-5)
+dobj(stop-5, it-6)
+nsubj(hides-10, it-8)
+nsubj(demonizes-13, it-8)
+advmod(hides-10, just-9)
+root(ROOT-0, hides-10)
+dobj(hides-10, it-11)
+conj_and(hides-10, demonizes-13)
+dobj(demonizes-13, woman-14)
+det(times-18, woman-14)
+amod(times-18, many-17)
+nsubj(children-21, times-18)
+cop(children-21, are-19)
+advmod(children-21, only-20)
+rcmod(woman-14, children-21)
+det(time-24, the-23)
+prep_at(children-21, time-24)
+det(times-29, who-27)
+amod(times-29, many-28)
+nsubjpass(raped-31, times-29)
+auxpass(raped-31, were-30)
+dobj(demonizes-13, raped-31)
+conj_and(woman-14, raped-31)
+rcmod(woman-14, raped-31)
+det(times-18, raped-31)
+

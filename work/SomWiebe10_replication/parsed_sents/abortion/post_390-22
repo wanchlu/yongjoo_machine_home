@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB prefer)
+          (ADVP (RB never))
+          (S
+            (VP (VBG having)
+              (S
+                (VP (TO to)
+                  (VP (VB take)
+                    (NP (DT a) (NN life))))))))))
+    (, ,) (IN so)
+    (S
+      (INTJ (UH no))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ s) (RB not)
+        (ADJP (JJ okay)
+          (PP (IN with)
+            (NP (PRP me))))
+        (S
+          (VP (TO to)
+            (VP (VB abort)
+              (NP (NNS fetuses))
+              (NP
+                (QP (JJR less) (IN than) (CD 21))
+                (NNS weeks)))))))
+    (. .)))
+
+nsubj(prefer-3, I-1)
+aux(prefer-3, would-2)
+root(ROOT-0, prefer-3)
+neg(prefer-3, never-4)
+xcomp(prefer-3, having-5)
+aux(take-7, to-6)
+xcomp(having-5, take-7)
+det(life-9, a-8)
+dobj(take-7, life-9)
+dep(prefer-3, so-11)
+dep(okay-17, no-12)
+nsubj(okay-17, it-14)
+xsubj(abort-21, it-14)
+cop(okay-17, s-15)
+neg(okay-17, not-16)
+ccomp(prefer-3, okay-17)
+prep_with(okay-17, me-19)
+aux(abort-21, to-20)
+xcomp(okay-17, abort-21)
+dobj(abort-21, fetuses-22)
+mwe(than-24, less-23)
+quantmod(21-25, than-24)
+num(weeks-26, 21-25)
+tmod(abort-21, weeks-26)
+

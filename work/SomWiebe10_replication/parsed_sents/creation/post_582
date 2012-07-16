@@ -1,0 +1,228 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ is) (RB not)
+      (NP (NN science))
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (MD can)
+            (ADVP (RB never))
+            (VP (VB make)
+              (NP
+                (NP (DT a) (NN prediction))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is)
+                      (ADJP (JJ meaningful)))))))))))
+    (. .)))
+
+nsubj(science-4, ID-1)
+cop(science-4, is-2)
+neg(science-4, not-3)
+root(ROOT-0, science-4)
+mark(make-9, because-5)
+nsubj(make-9, it-6)
+aux(make-9, can-7)
+neg(make-9, never-8)
+advcl(science-4, make-9)
+det(prediction-11, a-10)
+dobj(make-9, prediction-11)
+nsubj(meaningful-14, prediction-11)
+cop(meaningful-14, is-13)
+rcmod(prediction-11, meaningful-14)
+
+(ROOT
+  (S
+    (NP (NNP ID))
+    (ADVP (RB simply))
+    (VP (VBZ tries)
+      (S
+        (VP (TO to)
+          (VP (VB pretend)
+            (S
+              (VP (TO to)
+                (VP (VB match)
+                  (NP
+                    (NP
+                      (ADJP (DT any)
+                        (CC and)
+                        (DT all))
+                      (NNS observations))
+                    (PP (IN of)
+                      (NP (NN reality)))))))))))
+    (. .)))
+
+nsubj(tries-3, ID-1)
+xsubj(pretend-5, ID-1)
+advmod(tries-3, simply-2)
+root(ROOT-0, tries-3)
+aux(pretend-5, to-4)
+xcomp(tries-3, pretend-5)
+aux(match-7, to-6)
+xcomp(pretend-5, match-7)
+amod(observations-11, any-8)
+conj_and(any-8, all-10)
+amod(observations-11, all-10)
+dobj(match-7, observations-11)
+prep_of(observations-11, reality-13)
+
+(ROOT
+  (S (CC But)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP (DT no) (`` ``) (NN why) ('' ''))
+      (ADVP (RB there)))
+    (. .)))
+
+cc('s-3, But-1)
+expl('s-3, there-2)
+root(ROOT-0, 's-3)
+det(why-6, no-4)
+nsubj('s-3, why-6)
+advmod('s-3, there-8)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (NNP ID))
+      (VP (VB match)
+        (NP (NN reality))))
+    (. ?)))
+
+advmod(match-4, Why-1)
+aux(match-4, should-2)
+nsubj(match-4, ID-3)
+root(ROOT-0, match-4)
+dobj(match-4, reality-5)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (VP (VB know)
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN designer))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD would)
+                  (VP (VB lead)
+                    (S
+                      (NP (PRP us))
+                      (VP (TO to)
+                        (VP (VB believe)
+                          (SBAR (IN that)
+                            (S
+                              (NP (PRP$ his) (`` ``) (NN design) ('' ''))
+                              (ADVP (RB actually))
+                              (VP (VBZ matches)
+                                (NP (NN reality))))))))))))))))
+    (. ?)))
+
+dobj(know-4, What-1)
+aux(know-4, do-2)
+nsubj(know-4, we-3)
+root(ROOT-0, know-4)
+det(designer-7, the-6)
+prep_about(know-4, designer-7)
+nsubj(lead-10, designer-7)
+aux(lead-10, would-9)
+rcmod(designer-7, lead-10)
+nsubj(believe-13, us-11)
+aux(believe-13, to-12)
+xcomp(lead-10, believe-13)
+complm(matches-20, that-14)
+poss(design-17, his-15)
+nsubj(matches-20, design-17)
+advmod(matches-20, actually-19)
+ccomp(believe-13, matches-20)
+dobj(matches-20, reality-21)
+
+(ROOT
+  (S
+    (NP (NN Nothing))
+    (ADVP (RB here))
+    (VP
+      (VP (VBZ is)
+        (NP (NN reality)))
+      (CC and)
+      (VP
+        (ADVP (RB here))
+        (VBZ is)
+        (NP
+          (NP (DT a) (JJ silly) (`` ``) (NN claim) ('' ''))
+          (SBAR (IN that)
+            (S
+              (NP (NNP ID))
+              (VP
+                (VP (VBZ supports))
+                (CC or)
+                (VP (VBZ is)
+                  (VP (VBN supported)
+                    (PP (IN by)
+                      (NP (DT that) (NN reality)))))))))))
+    (. .)))
+
+nsubj(reality-4, Nothing-1)
+advmod(reality-4, here-2)
+cop(reality-4, is-3)
+root(ROOT-0, reality-4)
+advmod(claim-11, here-6)
+cop(claim-11, is-7)
+det(claim-11, a-8)
+amod(claim-11, silly-9)
+conj_and(reality-4, claim-11)
+complm(supports-15, that-13)
+nsubj(supports-15, ID-14)
+nsubjpass(supported-18, ID-14)
+dep(claim-11, supports-15)
+auxpass(supported-18, is-17)
+dep(claim-11, supported-18)
+conj_or(supports-15, supported-18)
+det(reality-21, that-20)
+agent(supported-18, reality-21)
+
+(ROOT
+  (S (IN So)
+    (NP (NNP ID))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NN merit))
+        (SBAR (IN because)
+          (S
+            (NP (NNP ID))
+            (VP (VBZ fits)
+              (NP (NN anything)
+                (CC and)
+                (NN everything)))))))
+    (. .)))
+
+dep(has-3, So-1)
+nsubj(has-3, ID-2)
+root(ROOT-0, has-3)
+det(merit-5, no-4)
+dobj(has-3, merit-5)
+mark(fits-8, because-6)
+nsubj(fits-8, ID-7)
+dep(merit-5, fits-8)
+dobj(fits-8, anything-9)
+dobj(fits-8, everything-11)
+conj_and(anything-9, everything-11)
+
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (VP (VBD was)
+      (VP (VBN tiktaalik)))
+    (. .)))
+
+cc(tiktaalik-4, And-1)
+expl(tiktaalik-4, there-2)
+auxpass(tiktaalik-4, was-3)
+root(ROOT-0, tiktaalik-4)
+

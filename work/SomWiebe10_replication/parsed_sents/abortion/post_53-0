@@ -1,0 +1,41 @@
+(ROOT
+  (NP
+    (NP (DT No) (NN woman) (`` ``)
+      (NX
+        (S
+          (VP (VBZ wants))))
+      ('' ''))
+    (NP
+      (NP (DT an) (NN abortion))
+      (: ;)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (SBAR
+            (S
+              (NP (RB only) (DT the)
+                (ADJP (JJS least) (JJ bad))
+                (NN alternative) (NNS Women))
+              (VP (VBP do) (RB not)
+                (VP (`` ``) (VB want) ('' '')
+                  (NP (NNS abortions)))))))))
+    (. .)))
+
+det(wants-4, No-1)
+dep(wants-4, woman-2)
+root(ROOT-0, wants-4)
+det(abortion-7, an-6)
+dep(wants-4, abortion-7)
+nsubj(is-10, it-9)
+dep(abortion-7, is-10)
+advmod(Women-16, only-11)
+det(Women-16, the-12)
+dep(bad-14, least-13)
+amod(Women-16, bad-14)
+nn(Women-16, alternative-15)
+nsubj(want-20, Women-16)
+aux(want-20, do-17)
+neg(want-20, not-18)
+ccomp(is-10, want-20)
+dobj(want-20, abortions-22)
+

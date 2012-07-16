@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS abortions))
+      (VP (VBP have)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ legal)))))))
+    (CC or)
+    (S
+      (NP (DT all) (NN hell))
+      (VP (MD will)
+        (VP (VB break)
+          (ADVP (RB loose)))))
+    (CC and)
+    (S
+      (NP (DT the) (NN death) (NN rate))
+      (VP (MD will)
+        (VP (VB increase)
+          (ADVP (RB substantially)))))))
+
+nsubj(have-2, abortions-1)
+xsubj(legal-5, abortions-1)
+root(ROOT-0, have-2)
+aux(legal-5, to-3)
+cop(legal-5, be-4)
+xcomp(have-2, legal-5)
+det(hell-8, all-7)
+nsubj(break-10, hell-8)
+aux(break-10, will-9)
+conj_or(have-2, break-10)
+advmod(break-10, loose-11)
+det(rate-15, the-13)
+nn(rate-15, death-14)
+nsubj(increase-17, rate-15)
+aux(increase-17, will-16)
+conj_and(have-2, increase-17)
+advmod(increase-17, substantially-18)
+

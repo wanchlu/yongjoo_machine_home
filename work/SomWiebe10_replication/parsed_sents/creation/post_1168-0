@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP believe)
+            (SBAR (IN that)
+              (S
+                (NP (NN god))
+                (VP (VBD created)
+                  (NP (DT the) (NN earth)))))))))
+    (VP (VBP keep)
+      (S
+        (VP (VBG saying)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBD got)
+                (NP (DT this))
+                (PP (IN from)
+                  (NP (DT the) (NN bible)))))))))
+    (. .)))
+
+nsubj(believe-3, People-1)
+nsubj(keep-9, People-1)
+rcmod(People-1, believe-3)
+complm(created-6, that-4)
+nsubj(created-6, god-5)
+ccomp(believe-3, created-6)
+det(earth-8, the-7)
+dobj(created-6, earth-8)
+root(ROOT-0, keep-9)
+xcomp(keep-9, saying-10)
+complm(got-13, that-11)
+nsubj(got-13, they-12)
+ccomp(saying-10, got-13)
+dobj(got-13, this-14)
+det(bible-17, the-16)
+prep_from(got-13, bible-17)
+

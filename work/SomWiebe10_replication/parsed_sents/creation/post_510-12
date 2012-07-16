@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (PRN (, ,)
+      (S
+        (NP (NNP Irons))
+        (VP (VBZ claims)
+          (SBAR
+            (S
+              (NP (NNP William) (NNP Dembski))
+              (VP (VBZ takes)
+                (NP (DT the) (NN position))
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP am)
+                      (NP (DT a) (NNP Christian))))))))))
+      (, ,))
+    (ADVP (RB therefore))
+    (NP (PRP I))
+    (VP
+      (VP (VBP reject)
+        (NP (NN evolution)))
+      (, ,)
+      (CC but)
+      (VP (VBZ ignores)
+        (SBAR
+          (S
+            (NP (NNP Dembski))
+            (VP (VBZ s)
+              (NP (JJ actual) (NN position))
+              (: :)
+              (S
+                (NP (NNP Intelligent))
+                (VP (VB design))))))))
+    (: ...)))
+
+prep_for(reject-19, example-2)
+nsubj(claims-5, Irons-4)
+parataxis(reject-19, claims-5)
+nn(Dembski-7, William-6)
+nsubj(takes-8, Dembski-7)
+ccomp(claims-5, takes-8)
+det(position-10, the-9)
+dobj(takes-8, position-10)
+complm(Christian-15, that-11)
+nsubj(Christian-15, I-12)
+cop(Christian-15, am-13)
+det(Christian-15, a-14)
+ccomp(takes-8, Christian-15)
+advmod(reject-19, therefore-17)
+nsubj(reject-19, I-18)
+nsubj(ignores-23, I-18)
+root(ROOT-0, reject-19)
+dobj(reject-19, evolution-20)
+conj_but(reject-19, ignores-23)
+nsubj(position-27, Dembski-24)
+cop(position-27, s-25)
+amod(position-27, actual-26)
+ccomp(ignores-23, position-27)
+nsubj(design-30, Intelligent-29)
+parataxis(position-27, design-30)
+

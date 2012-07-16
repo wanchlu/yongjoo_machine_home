@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ attempts)
+      (S
+        (VP (TO to)
+          (VP (VB explain)
+            (NP
+              (NP
+                (NP (DT the) (NN origin))
+                (PP (IN of)
+                  (NP (NN life))))
+              (CC and)
+              (NP
+                (NP (DT the) (NN process))
+                (SBAR
+                  (WHPP (IN through)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP (JJ current) (NNS species))
+                    (VP (VBD came)
+                      (S
+                        (VP (TO to)
+                          (VP (VB manifest)
+                            (NP (PRP themselves))))))))))))))
+    (. .)))
+
+nsubj(attempts-2, Evolution-1)
+xsubj(explain-4, Evolution-1)
+root(ROOT-0, attempts-2)
+aux(explain-4, to-3)
+xcomp(attempts-2, explain-4)
+det(origin-6, the-5)
+dobj(explain-4, origin-6)
+prep_of(origin-6, life-8)
+det(process-11, the-10)
+dobj(explain-4, process-11)
+conj_and(origin-6, process-11)
+rel(came-16, which-13)
+amod(species-15, current-14)
+nsubj(came-16, species-15)
+xsubj(manifest-18, species-15)
+rcmod(process-11, came-16)
+aux(manifest-18, to-17)
+xcomp(came-16, manifest-18)
+dobj(manifest-18, themselves-19)
+

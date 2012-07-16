@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (ADVP (RB As) (RB far)
+      (SBAR (IN as)
+        (S
+          (NP (NNP Roe) (NNP vs) (NNP Wade))
+          (VP (VBZ goes)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD did) (RB n't)
+      (VP (VB force)
+        (NP (NN anything))
+        (PP (IN on)
+          (NP (PRP you)))
+        (, ,)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP think)
+              (SBAR
+                (S
+                  (NP (NN abortion))
+                  (VP (VBZ is)
+                    (ADJP (JJ wrong)
+                      (SBAR
+                        (S
+                          (VP (VBP do) (RB n't)
+                            (VP (VB get)
+                              (NP (CD one)))))))))))))))
+    (. .)))
+
+advmod(far-2, As-1)
+advmod(force-12, far-2)
+mark(goes-7, as-3)
+nn(Wade-6, Roe-4)
+nn(Wade-6, vs-5)
+nsubj(goes-7, Wade-6)
+ccomp(far-2, goes-7)
+nsubj(force-12, they-9)
+aux(force-12, did-10)
+neg(force-12, n't-11)
+root(ROOT-0, force-12)
+dobj(force-12, anything-13)
+prep_on(force-12, you-15)
+mark(think-19, if-17)
+nsubj(think-19, you-18)
+advcl(force-12, think-19)
+nsubj(wrong-22, abortion-20)
+cop(wrong-22, is-21)
+ccomp(think-19, wrong-22)
+aux(get-25, do-23)
+neg(get-25, n't-24)
+dep(wrong-22, get-25)
+dobj(get-25, one-26)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Just) (RB as))
+    (: :)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (NP (NN slavery))
+              (VP (VBZ is)
+                (ADJP (JJ wrong)
+                  (SBAR
+                    (S
+                      (VP (VBP do) (RB n't)
+                        (VP (VB get)
+                          (NP (CD one)))))))))))))
+    (. .)))
+
+advmod(as-2, Just-1)
+root(ROOT-0, as-2)
+mark(think-6, if-4)
+nsubj(think-6, you-5)
+dep(as-2, think-6)
+nsubj(wrong-9, slavery-7)
+cop(wrong-9, is-8)
+ccomp(think-6, wrong-9)
+aux(get-12, do-10)
+neg(get-12, n't-11)
+dep(wrong-9, get-12)
+dobj(get-12, one-13)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD should)
+      (ADVP (RB never))
+      (VP (VB take)
+        (NP (DT the) (NN law))
+        (PP (IN as)
+          (NP (DT the) (CD one) (JJ ethical) (NN truth)))))
+    (. .)))
+
+nsubj(take-4, We-1)
+aux(take-4, should-2)
+neg(take-4, never-3)
+root(ROOT-0, take-4)
+det(law-6, the-5)
+dobj(take-4, law-6)
+det(truth-11, the-8)
+num(truth-11, one-9)
+amod(truth-11, ethical-10)
+prep_as(take-4, truth-11)
+

@@ -1,0 +1,36 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP I))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (NN life))
+            (VP (VBD began)
+              (ADVP
+                (NP
+                  (QP (RB about) (DT a) (CD billion))
+                  (NNS years))
+                (RB ago)))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP (DT a) (JJ continuous) (NN process))))
+    (. .)))
+
+nsubj(say-3, I-2)
+root(ROOT-0, say-3)
+nsubj(began-5, life-4)
+ccomp(say-3, began-5)
+quantmod(billion-8, about-6)
+quantmod(billion-8, a-7)
+num(years-9, billion-8)
+npadvmod(ago-10, years-9)
+advmod(began-5, ago-10)
+nsubj(process-16, it-12)
+cop(process-16, 's-13)
+det(process-16, a-14)
+amod(process-16, continuous-15)
+conj_and(say-3, process-16)
+

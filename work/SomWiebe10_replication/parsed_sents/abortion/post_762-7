@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT the) (NN law))
+        (ADVP (RB currently))
+        (VP (VBZ is))))
+    (, ,)
+    (NP (NNS abortions))
+    (VP (VBP are)
+      (ADJP (JJ legal)
+        (ADVP (IN at) (RB up))
+        (PP (TO to)
+          (NP
+            (QP (RB about) (CD 24))
+            (NNS weeks)))))
+    (. .)))
+
+mark(is-5, As-1)
+det(law-3, the-2)
+nsubj(is-5, law-3)
+advmod(is-5, currently-4)
+advcl(legal-9, is-5)
+nsubj(legal-9, abortions-7)
+cop(legal-9, are-8)
+root(ROOT-0, legal-9)
+advmod(legal-9, at-10)
+advmod(at-10, up-11)
+quantmod(24-14, about-13)
+num(weeks-15, 24-14)
+prep_to(legal-9, weeks-15)
+

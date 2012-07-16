@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Abortions))
+      (PP (IN during)
+        (NP (DT the) (JJ second) (NN trimester))))
+    (VP
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN allowed))))
+      (, ,)
+      (CC but)
+      (VP (MD should)
+        (VP
+          (VP (VB be)
+            (VP
+              (ADVP (RB somewhat))
+              (VBN restricted) (-LRB- -LRB-)
+              (NP (NNS i.e.))))
+          (, ,)
+          (VP
+            (ADVP (RB perhaps))
+            (VB require)
+            (NP
+              (NP (DT the) (NN father) (POS 's))
+              (NN permission)))
+          (, ,)
+          (CC or)
+          (VP (VB require)
+            (FRAG
+              (NP (NN counseling))
+              (ADVP (RB first))
+              (. .))))))
+    (. .)))
+
+nsubjpass(allowed-8, Abortions-1)
+nsubjpass(restricted-14, Abortions-1)
+det(trimester-5, the-3)
+amod(trimester-5, second-4)
+prep_during(Abortions-1, trimester-5)
+aux(allowed-8, should-6)
+auxpass(allowed-8, be-7)
+root(ROOT-0, allowed-8)
+aux(restricted-14, should-11)
+auxpass(restricted-14, be-12)
+advmod(restricted-14, somewhat-13)
+conj_but(allowed-8, restricted-14)
+dobj(restricted-14, i.e.-16)
+advmod(require-19, perhaps-18)
+conj_but(allowed-8, require-19)
+conj_or(restricted-14, require-19)
+det(father-21, the-20)
+poss(permission-23, father-21)
+dobj(require-19, permission-23)
+conj_but(allowed-8, require-26)
+conj_or(restricted-14, require-26)
+dep(require-26, counseling-27)
+dep(counseling-27, first-28)
+

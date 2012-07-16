@@ -1,0 +1,76 @@
+(ROOT
+  (NP
+    (NP (DT Any) (NN comment))
+    (PP (IN on)
+      (NP (DT the) (NN stuff)))
+    (PP (IN on)
+      (NP (NNP Research) (NNP ID)))
+    (. ?)))
+
+det(comment-2, Any-1)
+root(ROOT-0, comment-2)
+det(stuff-5, the-4)
+prep_on(comment-2, stuff-5)
+nn(ID-8, Research-7)
+prep_on(comment-2, ID-8)
+
+(ROOT
+  (NP
+    (NP (NN http:\/\/www.researchid.org\/wiki\/Main_Page) ('' ''))
+    (: ...)
+    (NP
+      (NP (JJ other))
+      (PP (IN than)
+        (S
+          (ADVP (RB perhaps))
+          (VP (VBG making)
+            (NP (DT the) (JJ flawed) (NN claim))
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (NN science))
+                    (CC and)
+                    (NP (JJ methodological) (NN naturalism)))
+                  (ADVP (RB somehow))
+                  (VP (VB deny)
+                    (NP (NN purpose)
+                      (CC and)
+                      (NN design)))))
+              (CC or)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP MN))
+                  (VP (MD would)
+                    (VP (VB reject)
+                      (NP (NNP Newton)
+                        (CC and)
+                        (NNP Keppler)))))))))))
+    (. .)))
+
+root(ROOT-0, http:\/\/www.researchid.org\/wiki\/Main_Page-1)
+dep(http:\/\/www.researchid.org\/wiki\/Main_Page-1, other-4)
+advmod(making-7, perhaps-6)
+prepc_than(other-4, making-7)
+det(claim-10, the-8)
+amod(claim-10, flawed-9)
+dobj(making-7, claim-10)
+complm(deny-17, that-11)
+nsubj(deny-17, science-12)
+amod(naturalism-15, methodological-14)
+conj_and(science-12, naturalism-15)
+nsubj(deny-17, naturalism-15)
+advmod(deny-17, somehow-16)
+ccomp(making-7, deny-17)
+dobj(deny-17, purpose-18)
+dobj(deny-17, design-20)
+conj_and(purpose-18, design-20)
+complm(reject-25, that-22)
+nsubj(reject-25, MN-23)
+aux(reject-25, would-24)
+ccomp(making-7, reject-25)
+conj_or(deny-17, reject-25)
+dobj(reject-25, Newton-26)
+dobj(reject-25, Keppler-28)
+conj_and(Newton-26, Keppler-28)
+

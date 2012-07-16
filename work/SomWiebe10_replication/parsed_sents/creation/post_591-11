@@ -1,0 +1,42 @@
+(ROOT
+  (SINV
+    (PP (IN By)
+      (NP
+        (NP (DT the) (NN way))
+        (, ,)
+        (PP (IN in)
+          (NP
+            (NP (DT no) (NN science) (NN lab))
+            (PP (IN in)
+              (NP (DT the) (JJ entire) (NN world)))))))
+    (VBZ has)
+    (NP (PRP it))
+    (VP (VBN been)
+      (VP (VBN proven)
+        (SBAR (IN that)
+          (S
+            (NP (NN chemical) (NNS reactions))
+            (VP (MD can)
+              (VP (VB create)
+                (NP (NN life))))))))
+    (. .)))
+
+det(way-3, the-2)
+agent(proven-16, way-3)
+det(lab-8, no-6)
+nn(lab-8, science-7)
+prep_in(way-3, lab-8)
+det(world-12, the-10)
+amod(world-12, entire-11)
+prep_in(lab-8, world-12)
+aux(proven-16, has-13)
+nsubjpass(proven-16, it-14)
+auxpass(proven-16, been-15)
+root(ROOT-0, proven-16)
+complm(create-21, that-17)
+nn(reactions-19, chemical-18)
+nsubj(create-21, reactions-19)
+aux(create-21, can-20)
+ccomp(proven-16, create-21)
+dobj(create-21, life-22)
+

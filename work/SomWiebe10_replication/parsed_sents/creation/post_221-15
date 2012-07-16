@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (ADJP (JJ amazing))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NNP evolving) (NNP DNA))
+              (PP (IN with)
+                (NP
+                  (QP (RB only) (CD 4))
+                  (NNS components))))
+            (VP (MD can)
+              (VP (VB produce)
+                (NP
+                  (NP (PDT such) (DT a) (NN complexity))
+                  (PP (IN of)
+                    (NP (NN life))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP (PRP it))
+        (ADVP (RB obviously))
+        (VP (VBZ has)))
+      (, ,) (IN so)
+      (S
+        (NP (EX there))
+        (VP (VBZ 's)
+          (NP (DT no) (NN need)
+            (S
+              (VP (TO to)
+                (VP (VB claim)
+                  (SBAR (IN that)
+                    (S
+                      (NP (DT this))
+                      (VP (VBZ is) (`` ``)
+                        (ADJP (JJ stunning))
+                        ('' '')))))))))))
+    (. .)))
+
+nsubj(amazing-3, It-1)
+cop(amazing-3, is-2)
+root(ROOT-0, amazing-3)
+complm(produce-12, that-4)
+nn(DNA-6, evolving-5)
+nsubj(produce-12, DNA-6)
+quantmod(4-9, only-8)
+num(components-10, 4-9)
+prep_with(DNA-6, components-10)
+aux(produce-12, can-11)
+ccomp(amazing-3, produce-12)
+predet(complexity-15, such-13)
+det(complexity-15, a-14)
+dobj(produce-12, complexity-15)
+prep_of(complexity-15, life-17)
+nsubj(has-22, it-20)
+advmod(has-22, obviously-21)
+conj_but(amazing-3, has-22)
+dep(has-22, so-24)
+expl('s-26, there-25)
+dep(has-22, 's-26)
+det(need-28, no-27)
+nsubj('s-26, need-28)
+aux(claim-30, to-29)
+infmod(need-28, claim-30)
+complm(stunning-35, that-31)
+nsubj(stunning-35, this-32)
+cop(stunning-35, is-33)
+ccomp(claim-30, stunning-35)
+

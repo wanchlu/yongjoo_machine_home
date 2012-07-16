@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ studies)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP we))
+            (VP (MD can)
+              (VP (VB observe))))))
+      (CC and)
+      (VP (VBZ draws)
+        (NP (NNS inferences))
+        (PP (IN from)
+          (NP (RB there)))))
+    (. .)))
+
+nsubj(studies-2, It-1)
+nsubj(draws-8, It-1)
+root(ROOT-0, studies-2)
+dobj(observe-6, what-3)
+nsubj(observe-6, we-4)
+aux(observe-6, can-5)
+ccomp(studies-2, observe-6)
+conj_and(studies-2, draws-8)
+dobj(draws-8, inferences-9)
+prep(draws-8, from-10)
+pobj(from-10, there-11)
+

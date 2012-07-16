@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (UCP
+      (ADJP (JJ Fail)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB practice)
+                (NP (PRP it)))
+              (CC and)
+              (VP (VB pay)
+                (NP (DT the) (NN price))
+                (PP (IN with)
+                  (NP (PRP$ your) (NN life))))))))
+      (CC and)
+      (ADVP (RB possibly)))
+    (NP
+      (NP (DT that))
+      (PP (IN of)
+        (NP (PRP$ your) (NN child))))
+    (VP (VBZ 's))
+    (. .)))
+
+dep('s-18, Fail-1)
+aux(practice-3, to-2)
+xcomp(Fail-1, practice-3)
+dobj(practice-3, it-4)
+xcomp(Fail-1, pay-6)
+conj_and(practice-3, pay-6)
+det(price-8, the-7)
+dobj(pay-6, price-8)
+poss(life-11, your-10)
+prep_with(pay-6, life-11)
+advmod(Fail-1, possibly-13)
+conj_and(Fail-1, possibly-13)
+dep('s-18, possibly-13)
+nsubj('s-18, that-14)
+poss(child-17, your-16)
+prep_of(that-14, child-17)
+root(ROOT-0, 's-18)
+

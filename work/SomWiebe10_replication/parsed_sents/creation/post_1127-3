@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNP Darwin))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN genius))
+        (CC and)
+        (NP (DT a) (NN legend) (NN man))))
+    (. !)))
+
+nsubj(genius-4, Darwin-1)
+cop(genius-4, was-2)
+det(genius-4, a-3)
+root(ROOT-0, genius-4)
+det(man-8, a-6)
+nn(man-8, legend-7)
+conj_and(genius-4, man-8)
+
+(ROOT
+  (SQ
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNP Thirdly))
+      (, ,)
+      (S
+        (VP (VB do) (RB n't)
+          (VP (VB take)
+            (NP (DT the) (NN bible))
+            (ADVP (RB literally))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, Thirdly-3)
+aux(take-7, do-5)
+neg(take-7, n't-6)
+dep(\/-1, take-7)
+det(bible-9, the-8)
+dobj(take-7, bible-9)
+advmod(take-7, literally-10)
+

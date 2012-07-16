@@ -1,0 +1,37 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID) (NNP creationism))
+        (VP (VBD were)
+          (ADJP (RB so) (JJ liberating)))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (VBP are)
+      (NP
+        (NP (RB not) (NNP ID) (NNS advoactes))
+        (S
+          (NP (DT the) (NNS ones))
+          (VP (VBG making)
+            (NP (PDT all) (DT the) (JJ grand) (NNS discoveries))))))
+    (. ?)))
+
+mark(liberating-6, If-1)
+nn(creationism-3, ID-2)
+nsubj(liberating-6, creationism-3)
+cop(liberating-6, were-4)
+advmod(liberating-6, so-5)
+advcl(are-9, liberating-6)
+advmod(are-9, why-8)
+root(ROOT-0, are-9)
+neg(advoactes-12, not-10)
+nn(advoactes-12, ID-11)
+nsubj(are-9, advoactes-12)
+det(ones-14, the-13)
+nsubj(making-15, ones-14)
+dep(advoactes-12, making-15)
+predet(discoveries-19, all-16)
+det(discoveries-19, the-17)
+amod(discoveries-19, grand-18)
+dobj(making-15, discoveries-19)
+

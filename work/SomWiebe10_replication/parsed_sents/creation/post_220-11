@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (NP
+        (NP (NNS co-opters))
+        (, ,)
+        (NP (NNS embellishers))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (NNS fabricators))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP prey)
+                (PP (IN on)
+                  (NP
+                    (NP (DT the) (NN gullible))
+                    (CC and)
+                    (NP
+                      (NP (DT the) (NN uninformed))
+                      (CC and)
+                      (NP (DT the) (JJ culturally) (NN conservative)))))))))))
+    (. .)))
+
+nsubj(co-opters-3, They-1)
+cop(co-opters-3, are-2)
+root(ROOT-0, co-opters-3)
+conj_and(co-opters-3, embellishers-5)
+conj_and(co-opters-3, fabricators-8)
+nsubj(prey-10, fabricators-8)
+rcmod(fabricators-8, prey-10)
+det(gullible-13, the-12)
+prep_on(prey-10, gullible-13)
+det(uninformed-16, the-15)
+prep_on(prey-10, uninformed-16)
+conj_and(gullible-13, uninformed-16)
+det(conservative-20, the-18)
+amod(conservative-20, culturally-19)
+conj_and(gullible-13, conservative-20)
+conj_and(uninformed-16, conservative-20)
+

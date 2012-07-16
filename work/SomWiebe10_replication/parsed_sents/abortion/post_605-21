@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN rape) (NN victim))
+      (, ,)
+      (PP (IN for)
+        (NP (NN instance)))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ is)
+            (VP (VBN forced)
+              (S
+                (VP (TO to)
+                  (VP (VB carry)
+                    (NP (DT an) (JJ unwanted) (NN pregnancy))
+                    (PP (TO to)
+                      (NP (NN term)))))))))))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN raped)
+          (ADVP (RB yet) (RB again))
+          (PP (IN by)
+            (NP (NN society))))))
+    (. .)))
+
+det(victim-3, A-1)
+nn(victim-3, rape-2)
+nsubjpass(raped-20, victim-3)
+prep_for(victim-3, instance-6)
+nsubjpass(forced-10, who-8)
+auxpass(forced-10, is-9)
+rcmod(victim-3, forced-10)
+aux(carry-12, to-11)
+xcomp(forced-10, carry-12)
+det(pregnancy-15, an-13)
+amod(pregnancy-15, unwanted-14)
+dobj(carry-12, pregnancy-15)
+prep_to(carry-12, term-17)
+aux(raped-20, is-18)
+auxpass(raped-20, being-19)
+root(ROOT-0, raped-20)
+advmod(again-22, yet-21)
+advmod(raped-20, again-22)
+agent(raped-20, society-24)
+

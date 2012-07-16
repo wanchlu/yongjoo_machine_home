@@ -1,0 +1,40 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (PRP she))
+      (VP (VBZ is)
+        (VP (VBN forced)
+          (S
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN obligated)
+                    (PP (IN by)
+                      (NP (DT this) (JJ select) (NN group)))
+                    (ADVP (RB then))))))
+            (SBARQ
+              (WHADVP (WRB how))
+              (SQ (VBZ is)
+                (NP
+                  (NP (PRP she))
+                  (NP (DT a) (JJ free) (NN person))))
+              (. ?))))))))
+
+mark(forced-4, If-1)
+nsubjpass(forced-4, she-2)
+auxpass(forced-4, is-3)
+root(ROOT-0, forced-4)
+aux(obligated-7, to-5)
+auxpass(obligated-7, be-6)
+dep(forced-4, obligated-7)
+det(group-11, this-9)
+amod(group-11, select-10)
+agent(obligated-7, group-11)
+advmod(obligated-7, then-12)
+advmod(is-14, how-13)
+dep(obligated-7, is-14)
+nsubj(is-14, she-15)
+det(person-18, a-16)
+amod(person-18, free-17)
+dep(she-15, person-18)
+

@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT the) (NN article))
+        (VP (VBZ shows))))
+    (, ,)
+    (NP (PRP she))
+    (VP
+      (VP
+        (ADVP (RB actually))
+        (VBD taught)
+        (NP (NN creationism)))
+      (, ,)
+      (CC and)
+      (VP (VBD made)
+        (NP (JJ flawed) (NNS arguments))
+        (PP (IN against)
+          (NP (NN evolution)))))
+    (. .)))
+
+mark(shows-4, As-1)
+det(article-3, the-2)
+nsubj(shows-4, article-3)
+advcl(taught-8, shows-4)
+nsubj(taught-8, she-6)
+nsubj(made-12, she-6)
+advmod(taught-8, actually-7)
+root(ROOT-0, taught-8)
+dobj(taught-8, creationism-9)
+conj_and(taught-8, made-12)
+amod(arguments-14, flawed-13)
+dobj(made-12, arguments-14)
+prep_against(made-12, evolution-16)
+

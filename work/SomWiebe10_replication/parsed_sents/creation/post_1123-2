@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (S
+      (VP (VBD \/) (-RRB- -RRB-)
+        (NP
+          (NP
+            (ADVP (CC But))
+            (DT that))
+          (VP (NN might)))
+        (ADVP (VB be))))
+    (NP (WDT what))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB happen)
+            (PP (IN in)
+              (NP
+                (NP (NN order))
+                (PP (IN for)
+                  (NP (NN mankind))))))))
+      (S
+        (VP (TO to)
+          (VP (VB achieve)
+            (NP
+              (NP (DT the) (JJ next) (NN level))
+              (PP (IN of)
+                (NP (NN understanding))))))))
+    (. .)))
+
+dep(has-8, \/-1)
+advmod(that-4, But-3)
+dobj(\/-1, that-4)
+dep(that-4, might-5)
+advmod(\/-1, be-6)
+nsubj(has-8, what-7)
+xsubj(happen-10, what-7)
+xsubj(achieve-16, what-7)
+root(ROOT-0, has-8)
+aux(happen-10, to-9)
+xcomp(has-8, happen-10)
+prep_in(happen-10, order-12)
+prep_for(order-12, mankind-14)
+aux(achieve-16, to-15)
+xcomp(has-8, achieve-16)
+det(level-19, the-17)
+amod(level-19, next-18)
+dobj(achieve-16, level-19)
+prep_of(level-19, understanding-21)
+

@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (JJ Genetic) (NNS tests))
+    (VP (VBP have)
+      (VP (VBN proven)
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP are)
+              (ADJP
+                (ADJP (RB very) (RB closely) (VBN related)
+                  (PP (TO to)
+                    (NP
+                      (NP (JJ certain) (NNS apes))
+                      (NP (DT a) (NN branch)))))
+                (PP (IN on)
+                  (NP (DT the) (JJ same) (NN family) (NN tree)))))))))
+    (. .)))
+
+amod(tests-2, Genetic-1)
+nsubj(proven-4, tests-2)
+aux(proven-4, have-3)
+root(ROOT-0, proven-4)
+complm(related-10, that-5)
+nsubj(related-10, we-6)
+cop(related-10, are-7)
+advmod(related-10, very-8)
+advmod(related-10, closely-9)
+ccomp(proven-4, related-10)
+amod(apes-13, certain-12)
+prep_to(related-10, apes-13)
+det(branch-15, a-14)
+dep(apes-13, branch-15)
+det(tree-20, the-17)
+amod(tree-20, same-18)
+nn(tree-20, family-19)
+prep_on(related-10, tree-20)
+
+(ROOT
+  (S
+    (NP (DT A) (VBN proven) (NN fact))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB just))
+        (NP
+          (NP (DT that))
+          (, ,)
+          (NP (DT a) (NN fact))))
+      (, ,)
+      (CC and)
+      (VP (VBZ is) (RB n't)
+        (ADJP (`` ``) (JJ wrong))))
+    (. .)))
+
+det(fact-3, A-1)
+amod(fact-3, proven-2)
+nsubj(that-6, fact-3)
+nsubj(wrong-15, fact-3)
+cop(that-6, is-4)
+advmod(that-6, just-5)
+root(ROOT-0, that-6)
+det(fact-9, a-8)
+appos(that-6, fact-9)
+cop(wrong-15, is-12)
+neg(wrong-15, n't-13)
+conj_and(that-6, wrong-15)
+

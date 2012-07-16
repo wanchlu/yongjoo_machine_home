@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (NNP New) (NNS viruses))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP (VB be)
+        (VP (VBN made)
+          (SBAR (IN if)
+            (S
+              (NP (PRP they))
+              (VP (VB inject)
+                (NP
+                  (NP (PRP$ their) (NN DNA))
+                  (PRN (-LRB- -LRB-)
+                    (CC or)
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP guess)
+                        (NP (NNP RNA))))
+                    (-RRB- -RRB-))
+                  (PP (IN into)
+                    (NP (DT a) (VBG living) (NNS non-virus))))))))))
+    (. .)))
+
+nn(viruses-2, New-1)
+nsubjpass(made-6, viruses-2)
+aux(made-6, can-3)
+advmod(made-6, only-4)
+auxpass(made-6, be-5)
+root(ROOT-0, made-6)
+mark(inject-9, if-7)
+nsubj(inject-9, they-8)
+advcl(made-6, inject-9)
+poss(DNA-11, their-10)
+dobj(inject-9, DNA-11)
+dep(guess-15, or-13)
+nsubj(guess-15, I-14)
+dep(DNA-11, guess-15)
+dobj(guess-15, RNA-16)
+det(non-virus-21, a-19)
+amod(non-virus-21, living-20)
+prep_into(DNA-11, non-virus-21)
+

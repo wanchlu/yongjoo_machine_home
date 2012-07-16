@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (DT The)
+      (UCP (NN design)
+        (CC and)
+        (JJ construct))
+      (NN process))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB largely) (JJ unknown))
+        (, ,)
+        (CC but)
+        (ADJP (JJ researchable))))
+    (. .)))
+
+det(process-5, The-1)
+nn(process-5, design-2)
+conj_and(design-2, construct-4)
+nn(process-5, construct-4)
+nsubj(unknown-8, process-5)
+nsubj(researchable-11, process-5)
+cop(unknown-8, is-6)
+advmod(unknown-8, largely-7)
+root(ROOT-0, unknown-8)
+conj_but(unknown-8, researchable-11)
+
+(ROOT
+  (S
+    (PP
+      (NP (NNP =) (NNP =))
+      (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP (PRP it))
+    (VP
+      (VP (VBZ does) (RB not)
+        (VP (VB explain)))
+      (CC but)
+      (ADVP (RB rather))
+      (VP (VBZ describes)))
+    (. .)))
+
+nn(=-2, =-1)
+dep(explain-10, =-2)
+amod(words-5, other-4)
+prep_in(explain-10, words-5)
+nsubj(explain-10, it-7)
+nsubj(describes-13, it-7)
+aux(explain-10, does-8)
+neg(explain-10, not-9)
+root(ROOT-0, explain-10)
+advmod(explain-10, rather-12)
+conj_but(explain-10, rather-12)
+conj_but(explain-10, describes-13)
+

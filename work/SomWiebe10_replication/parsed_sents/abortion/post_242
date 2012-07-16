@@ -1,0 +1,170 @@
+(ROOT
+  (S (`` ``)
+    (VP (VB Guess)
+      (NP (WP what)))
+    (. ?)))
+
+root(ROOT-0, Guess-2)
+dobj(Guess-2, what-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (NP (DT an) (NN Atheist)))
+    (. !)))
+
+nsubj(Atheist-4, I-1)
+cop(Atheist-4, 'm-2)
+det(Atheist-4, an-3)
+root(ROOT-0, Atheist-4)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (PP (IN against)
+        (NP (NN abortion)))
+      (SBAR (IN because)
+        (S
+          (NP (PRP I))
+          (VP (VBP believe)
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBZ 's)
+                  (ADJP (JJ wrong)
+                    (S
+                      (VP (TO to)
+                        (VP (VB take)
+                          (NP (DT a) (JJ human) (NN life) (NN period)))))))))))))
+    (. .)))
+
+nsubj('m-2, I-1)
+root(ROOT-0, 'm-2)
+prep_against('m-2, abortion-4)
+mark(believe-7, because-5)
+nsubj(believe-7, I-6)
+advcl('m-2, believe-7)
+complm(wrong-11, that-8)
+nsubj(wrong-11, it-9)
+cop(wrong-11, 's-10)
+ccomp(believe-7, wrong-11)
+aux(take-13, to-12)
+xcomp(wrong-11, take-13)
+det(period-17, a-14)
+amod(period-17, human-15)
+nn(period-17, life-16)
+dobj(take-13, period-17)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADVP (RB also))
+      (PP (IN against)
+        (NP (DT the) (NN death) (NN penalty))))
+    (. .)))
+
+nsubj('m-2, I-1)
+root(ROOT-0, 'm-2)
+advmod('m-2, also-3)
+det(penalty-7, the-5)
+nn(penalty-7, death-6)
+prep_against('m-2, penalty-7)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (DT a) (NN person))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN degree))
+            (PP (IN in)
+              (NP (NNP Biology)))))))
+    (NP (PRP I))
+    (VP (VBP realize)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Human) (NN life))
+          (VP (VBZ begins)
+            (PP (IN at)
+              (NP (NN conception)))))))
+    (. .)))
+
+det(person-3, a-2)
+prep_as(realize-10, person-3)
+det(degree-6, a-5)
+prep_with(person-3, degree-6)
+prep_in(degree-6, Biology-8)
+nsubj(realize-10, I-9)
+root(ROOT-0, realize-10)
+complm(begins-14, that-11)
+nn(life-13, Human-12)
+nsubj(begins-14, life-13)
+ccomp(realize-10, begins-14)
+prep_at(begins-14, conception-16)
+
+(ROOT
+  (S ('' '')
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP (CD one) (JJ human) (NN being))
+    (VP (MD can)
+      (VP (VB coerce)
+        (NP (DT another) (JJ human) (NN being))
+        (S
+          (VP (TO to)
+            (VP (VB provide)
+              (NP
+                (NP (NNS services))
+                (PP (IN for)
+                  (NP (PRP them)))))))
+        (, ,)
+        (ADVP (RB regardless)
+          (PP (IN of)
+            (SBAR (IN whether)
+              (S
+                (NP
+                  (NP (DT the) (JJ other) (JJ human) (NN being))
+                  (PRN (-LRB- -LRB-)
+                    (VP (VBG providing)
+                      (NP (DT the) (NNS services)))
+                    (-RRB- -RRB-)))
+                (VP (VBD consented)
+                  (PP (TO to)
+                    (NP
+                      (NP (DT this) (NN contract))
+                      (PP (IN of)
+                        (NP (NNS sorts))))))))))))
+    (. ?)))
+
+amod(words-4, other-3)
+prep_in(coerce-10, words-4)
+num(being-8, one-6)
+amod(being-8, human-7)
+nsubj(coerce-10, being-8)
+aux(coerce-10, can-9)
+root(ROOT-0, coerce-10)
+det(being-13, another-11)
+amod(being-13, human-12)
+dobj(coerce-10, being-13)
+aux(provide-15, to-14)
+xcomp(coerce-10, provide-15)
+dobj(provide-15, services-16)
+prep_for(services-16, them-18)
+complm(consented-32, whether-22)
+det(being-26, the-23)
+amod(being-26, other-24)
+amod(being-26, human-25)
+nsubj(consented-32, being-26)
+dep(being-26, providing-28)
+det(services-30, the-29)
+dobj(providing-28, services-30)
+prepc_regardless_of(coerce-10, consented-32)
+det(contract-35, this-34)
+prep_to(consented-32, contract-35)
+prep_of(contract-35, sorts-37)
+

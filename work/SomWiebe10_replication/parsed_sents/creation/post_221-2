@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB seem)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP claim)
+              (SBAR
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP they))
+                    (VP
+                      (VP (VBP deserve)
+                        (S
+                          (VP (TO to)
+                            (VP (VB be)
+                              (VP (VBN heard))))))
+                      (CC and)
+                      (VP (VBP have) (RB not)
+                        (VP (VBN been)
+                          (VP (VBN heard)))))))
+                (CC but)
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is)
+                      (ADVP (RB also))
+                      (PP (IN under)
+                        (NP (NN dispute))))))))))))
+    (. .)))
+
+nsubj(seem-3, It-1)
+aux(seem-3, would-2)
+root(ROOT-0, seem-3)
+complm(claim-6, that-4)
+nsubj(claim-6, you-5)
+ccomp(seem-3, claim-6)
+complm(deserve-9, that-7)
+nsubj(deserve-9, they-8)
+xsubj(heard-12, they-8)
+nsubjpass(heard-17, they-8)
+ccomp(claim-6, deserve-9)
+aux(heard-12, to-10)
+auxpass(heard-12, be-11)
+xcomp(deserve-9, heard-12)
+aux(heard-17, have-14)
+neg(heard-17, not-15)
+auxpass(heard-17, been-16)
+ccomp(claim-6, heard-17)
+conj_and(deserve-9, heard-17)
+nsubj(is-20, that-19)
+ccomp(claim-6, is-20)
+conj_but(deserve-9, is-20)
+advmod(is-20, also-21)
+prep_under(is-20, dispute-23)
+

@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Answers))
+      (, ,)
+      (NP (NNS answers))
+      (, ,))
+    (VP (VBZ answers))
+    (. !)))
+
+nsubj(answers-5, Answers-1)
+appos(Answers-1, answers-3)
+root(ROOT-0, answers-5)
+
+(ROOT
+  (NP (NNS Thanks) (. .)))
+
+root(ROOT-0, Thanks-1)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBD was)
+      (ADJP (JJ great)))
+    (. .)))
+
+nsubj(great-3, That-1)
+cop(great-3, was-2)
+root(ROOT-0, great-3)
+
+(ROOT
+  (NP
+    (NP (NN Nomination))
+    (PP (IN for)
+      (NP (DT the) (NNP CreateDebate) (NN argument) (NN award)))
+    (. ?)))
+
+root(ROOT-0, Nomination-1)
+det(award-6, the-3)
+nn(award-6, CreateDebate-4)
+nn(award-6, argument-5)
+prep_for(Nomination-1, award-6)
+
+(ROOT
+  (S
+    (ADVP (RB Anyway))
+    (, ,)
+    (NP (DT that))
+    (VP (VBD earned)
+      (NP (DT an) (NN upvote)))
+    (. .)))
+
+advmod(earned-4, Anyway-1)
+nsubj(earned-4, that-3)
+root(ROOT-0, earned-4)
+det(upvote-6, an-5)
+dobj(earned-4, upvote-6)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ Amazing))
+    (. .)))
+
+root(ROOT-0, Amazing-1)
+

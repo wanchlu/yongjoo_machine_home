@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (S
+      (VP (VBN Derived)
+        (PP (IN from)
+          (NP (DT the) (NN universe)))))
+    (VP (VBZ 's)
+      (NP (JJ event-generating) (NNS resources))
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (NP
+            (NP (NN time))
+            (, ,)
+            (NP (NN matter))
+            (, ,)
+            (CC and)
+            (NP (DT the) (NN speed)))
+          (SBAR (IN that)
+            (S
+              (NP (NN matter))
+              (VP (MD can)
+                (VP (VB change))))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+csubj(resources-7, Derived-1)
+det(universe-4, the-3)
+prep_from(Derived-1, universe-4)
+cop(resources-7, 's-5)
+amod(resources-7, event-generating-6)
+root(ROOT-0, resources-7)
+dep(resources-7, time-9)
+dep(resources-7, matter-11)
+conj_and(time-9, matter-11)
+det(speed-15, the-14)
+dep(resources-7, speed-15)
+conj_and(time-9, speed-15)
+complm(change-19, that-16)
+nsubj(change-19, matter-17)
+aux(change-19, can-18)
+dep(time-9, change-19)
+

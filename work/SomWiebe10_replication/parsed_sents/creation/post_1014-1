@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (NNP Scientist))
+    (VP (VBP create)
+      (NP
+        (NP (NNS medicines))
+        (PP (JJ such) (IN as) (, ,)
+          (S
+            (S
+              (NP (NNS anti))
+              (VP (VBZ biotics)))
+            (, ,)
+            (CC and)
+            (S
+              (NP (NNS anti))
+              (VP (VBZ dotes)
+                (S
+                  (VP (TO to)
+                    (VP (VB fight)
+                      (NP (NNS bacteria)
+                        (CC and)
+                        (NNS poisons))
+                      (S
+                        (VP (TO to)
+                          (VP
+                            (VP (VB treat)
+                              (NP (DT the) (NN problem)))
+                            (CC and)
+                            (VP (VB make)
+                              (NP (PRP you))
+                              (ADVP (RB well)))))))))))))))
+    (. .)))
+
+nsubj(create-2, Scientist-1)
+root(ROOT-0, create-2)
+dobj(create-2, medicines-3)
+mwe(as-5, such-4)
+prep(medicines-3, as-5)
+nsubj(biotics-8, anti-7)
+dep(as-5, biotics-8)
+nsubj(dotes-12, anti-11)
+xsubj(fight-14, anti-11)
+dep(as-5, dotes-12)
+conj_and(biotics-8, dotes-12)
+aux(fight-14, to-13)
+xcomp(dotes-12, fight-14)
+dobj(fight-14, bacteria-15)
+dobj(fight-14, poisons-17)
+conj_and(bacteria-15, poisons-17)
+aux(treat-19, to-18)
+xcomp(fight-14, treat-19)
+det(problem-21, the-20)
+dobj(treat-19, problem-21)
+xcomp(fight-14, make-23)
+conj_and(treat-19, make-23)
+dobj(make-23, you-24)
+advmod(make-23, well-25)
+

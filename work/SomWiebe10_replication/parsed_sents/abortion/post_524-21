@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ civilian) (NNS courts)))
+    (PRN (, ,)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (NN diffence))
+            (PP (IN between)
+              (NP (NN murder)
+                (CC and)
+                (NN manslaughter))))
+          (, ,)
+          (PP (IN in)
+            (NP (DT a) (JJ military) (NN court)))))
+      (, ,))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN difference))
+        (PP (IN between)
+          (NP
+            (NP (DT an) (NN accident))
+            (CC and)
+            (NP (DT a) (NN war) (NN crime))))))
+    (. .)))
+
+amod(courts-3, civilian-2)
+prep_in(difference-22, courts-3)
+nsubj(diffence-8, it-5)
+cop(diffence-8, is-6)
+det(diffence-8, the-7)
+parataxis(difference-22, diffence-8)
+prep_between(diffence-8, murder-10)
+prep_between(diffence-8, manslaughter-12)
+conj_and(murder-10, manslaughter-12)
+det(court-17, a-15)
+amod(court-17, military-16)
+prep_in(diffence-8, court-17)
+nsubj(difference-22, it-19)
+cop(difference-22, is-20)
+det(difference-22, the-21)
+root(ROOT-0, difference-22)
+det(accident-25, an-24)
+prep_between(difference-22, accident-25)
+det(crime-29, a-27)
+nn(crime-29, war-28)
+prep_between(difference-22, crime-29)
+conj_and(accident-25, crime-29)
+
+(ROOT
+  (S
+    (NP (JJ Collateral) (NN damage) (NN wil))
+    (VP (VBP happen)
+      (ADVP
+        (ADVP (RB so) (RB long))
+        (SBAR (IN as)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP (NN war)))))))
+    (. .)))
+
+amod(wil-3, Collateral-1)
+nn(wil-3, damage-2)
+nsubj(happen-4, wil-3)
+root(ROOT-0, happen-4)
+advmod(long-6, so-5)
+advmod(happen-4, long-6)
+mark(is-9, as-7)
+expl(is-9, there-8)
+ccomp(long-6, is-9)
+nsubj(is-9, war-10)
+

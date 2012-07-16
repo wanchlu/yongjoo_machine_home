@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (PP (IN like)
+        (S
+          (VP (VBG saying)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP
+                    (NP (DT the) (NN fact))
+                    (PP (IN of)
+                      (NP (NN gravity))))
+                  (CC and)
+                  (NP
+                    (NP (DT the) (NN theory))
+                    (PP (IN by)
+                      (NP (NNP Laplace)))))
+                (VP (VBD caused)
+                  (S
+                    (NP (PRP us))
+                    (VP (TO to)
+                      (VP (VB reject)
+                        (NP
+                          (NP (NNP God) (POS 's))
+                          (NN necessity))
+                        (PP (IN in)
+                          (NP
+                            (NP (DT the) (NNS orbits))
+                            (PP (IN of)
+                              (NP (NNS planets)))))))))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+prepc_like(is-2, saying-4)
+complm(caused-15, that-5)
+det(fact-7, the-6)
+nsubj(caused-15, fact-7)
+prep_of(fact-7, gravity-9)
+det(theory-12, the-11)
+conj_and(fact-7, theory-12)
+nsubj(caused-15, theory-12)
+prep_by(theory-12, Laplace-14)
+ccomp(saying-4, caused-15)
+nsubj(reject-18, us-16)
+aux(reject-18, to-17)
+xcomp(caused-15, reject-18)
+poss(necessity-21, God-19)
+dobj(reject-18, necessity-21)
+det(orbits-24, the-23)
+prep_in(reject-18, orbits-24)
+prep_of(orbits-24, planets-26)
+

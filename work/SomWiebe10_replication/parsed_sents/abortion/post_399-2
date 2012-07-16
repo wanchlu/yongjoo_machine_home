@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (SBAR (IN If) (`` ``)
+      (S
+        (NP (PRP it))
+        (VP (MD can)
+          (VP (VB feel) (`` ``)
+            (NP (NN pain))))))
+    (, ,) ('' '')
+    (VP
+      (VP (VBP have)
+        (NP (DT a) (NN heartbeat)))
+      (, ,)
+      (CC or)
+      (VP (VBP have)
+        (NP
+          (NP (`` ``) (NNS brainwaves) ('' ''))
+          ('' '')
+          (SBAR
+            (S
+              (VP (VBZ does)
+                (SBAR (IN that)
+                  (S
+                    (NP (RB not) (JJ mean))
+                    (VP (VBZ is)
+                      (NP (PRP it)))))))))))
+    (NP
+      (NP (NN something))
+      (ADJP (JJ different)
+        (PP (IN than)
+          (NP
+            (NP (DT a) (NN mass))
+            (PP (IN of)
+              (NP (NN tissue)))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can) (RB not))))))))
+    (. ?)))
+
+mark(feel-5, If-1)
+nsubj(feel-5, it-3)
+aux(feel-5, can-4)
+advcl(have-10, feel-5)
+dobj(feel-5, pain-7)
+root(ROOT-0, have-10)
+det(heartbeat-12, a-11)
+dobj(have-10, heartbeat-12)
+conj_or(have-10, have-15)
+dobj(have-15, brainwaves-17)
+rcmod(brainwaves-17, does-20)
+complm(it-25, that-21)
+neg(mean-23, not-22)
+nsubj(it-25, mean-23)
+cop(it-25, is-24)
+ccomp(does-20, it-25)
+dep(have-10, something-26)
+amod(something-26, different-27)
+det(mass-30, a-29)
+prep_than(different-27, mass-30)
+nsubj(can-34, mass-30)
+prep_of(mass-30, tissue-32)
+rcmod(mass-30, can-34)
+neg(can-34, not-35)
+

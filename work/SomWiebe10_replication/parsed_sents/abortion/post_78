@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (NP (JJ Legal) (NN abortion))
+    (VP (VBZ protects)
+      (NP (NNS women))
+      (PP (IN with)
+        (NP
+          (NP (JJ serious) (NNS illnesses))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (ADJP (JJ vulnerable))))))))
+    (. .)))
+
+amod(abortion-2, Legal-1)
+nsubj(protects-3, abortion-2)
+root(ROOT-0, protects-3)
+dobj(protects-3, women-4)
+amod(illnesses-7, serious-6)
+prep_with(protects-3, illnesses-7)
+nsubj(vulnerable-10, illnesses-7)
+cop(vulnerable-10, are-9)
+rcmod(illnesses-7, vulnerable-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Tens))
+      (PP (IN of)
+        (NP
+          (NP (NNS thousands))
+          (PP (IN of)
+            (NP (NNS women))))))
+    (VP (VBP have)
+      (NP
+        (NP (NN heart) (NN disease))
+        (, ,)
+        (NP
+          (NP (NN kidney) (NN disease))
+          (, ,)
+          (NP (JJ severe) (NN hypertension))
+          (, ,)
+          (NP (JJ sickle-cell) (NN anemia))
+          (CC and)
+          (NP (JJ severe) (NN diabetes)))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (JJ other) (NNS illnesses))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBN made)
+                  (S
+                    (ADJP (RBR worse)))
+                  (PP (IN by)
+                    (NP (NN childbearing))))))))))
+    (. .)))
+
+nsubj(have-6, Tens-1)
+prep_of(Tens-1, thousands-3)
+prep_of(thousands-3, women-5)
+root(ROOT-0, have-6)
+nn(disease-8, heart-7)
+dobj(have-6, disease-8)
+nn(disease-11, kidney-10)
+dobj(have-6, disease-11)
+conj_and(disease-8, disease-11)
+amod(hypertension-14, severe-13)
+conj_and(disease-8, hypertension-14)
+conj_and(disease-11, hypertension-14)
+amod(anemia-17, sickle-cell-16)
+conj_and(disease-8, anemia-17)
+conj_and(disease-11, anemia-17)
+amod(diabetes-20, severe-19)
+conj_and(disease-8, diabetes-20)
+conj_and(disease-11, diabetes-20)
+amod(illnesses-24, other-23)
+dobj(have-6, illnesses-24)
+conj_and(disease-8, illnesses-24)
+nsubjpass(made-27, illnesses-24)
+auxpass(made-27, are-26)
+rcmod(illnesses-24, made-27)
+dep(made-27, worse-28)
+agent(made-27, childbearing-30)
+
+(ROOT
+  (S
+    (NP (JJ Legal) (NN abortion))
+    (VP
+      (VP (VBZ helps)
+        (S
+          (NP (NNS women))
+          (VP (VB avert)
+            (NP (DT these) (JJ unavoidable) (NNS risks))
+            (PP (TO to)
+              (NP (PRP$ their) (NN health))))))
+      (CC and)
+      (VP (VBZ lives)))
+    (. .)))
+
+amod(abortion-2, Legal-1)
+nsubj(helps-3, abortion-2)
+nsubj(lives-13, abortion-2)
+root(ROOT-0, helps-3)
+nsubj(avert-5, women-4)
+ccomp(helps-3, avert-5)
+det(risks-8, these-6)
+amod(risks-8, unavoidable-7)
+dobj(avert-5, risks-8)
+poss(health-11, their-10)
+prep_to(avert-5, health-11)
+conj_and(helps-3, lives-13)
+

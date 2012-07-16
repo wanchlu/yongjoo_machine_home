@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP are)
+        (NP (JJ human) (NNS cells))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADJP (JJ sure)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (MD 'll)
+                (VP (VB agree)
+                  (SBAR (IN that)
+                    (S
+                      (VP (VBZ 's)
+                        (VP (VBG saying)
+                          (NP (DT a) (JJ different) (NN thing)))))))))))))
+    (. .)))
+
+nsubj(cells-4, They-1)
+cop(cells-4, are-2)
+amod(cells-4, human-3)
+root(ROOT-0, cells-4)
+nsubj(sure-9, I-7)
+cop(sure-9, 'm-8)
+conj_but(cells-4, sure-9)
+nsubj(agree-12, you-10)
+aux(agree-12, 'll-11)
+dep(sure-9, agree-12)
+complm(saying-15, that-13)
+aux(saying-15, 's-14)
+ccomp(agree-12, saying-15)
+det(thing-18, a-16)
+amod(thing-18, different-17)
+dobj(saying-15, thing-18)
+

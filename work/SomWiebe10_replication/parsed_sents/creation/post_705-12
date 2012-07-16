@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (VP
+      (ADVP (RB largely))
+      (VBN based)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN reference))
+          (PP (TO to) (`` ``)
+            (NP (NN evening)
+              (CC and)
+              (NN morning))
+            ('' '')))
+        (ADVP (RB repeatedly))))
+    (. .)))
+
+advmod(based-2, largely-1)
+root(ROOT-0, based-2)
+det(reference-5, the-4)
+prep_on(based-2, reference-5)
+prep_to(reference-5, evening-8)
+prep_to(reference-5, morning-10)
+conj_and(evening-8, morning-10)
+advmod(based-2, repeatedly-12)
+
+(ROOT
+  (FRAG (CC And)
+    (PP (IN for)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do) (RB not)
+              (VP (VB find)
+                (S
+                  (NP (DT the) (NNP Bible))
+                  (VP (TO to)
+                    (VP (VB be)
+                      (PP (IN of)
+                        (NP (JJ divine) (NN origin)))))))))))
+      (. ?))))
+
+root(ROOT-0, And-1)
+dep(And-1, for-2)
+pobj(for-2, those-3)
+nsubj(find-7, those-3)
+aux(find-7, do-5)
+neg(find-7, not-6)
+rcmod(those-3, find-7)
+det(Bible-9, the-8)
+nsubj(be-11, Bible-9)
+aux(be-11, to-10)
+xcomp(find-7, be-11)
+amod(origin-14, divine-13)
+prep_of(be-11, origin-14)
+

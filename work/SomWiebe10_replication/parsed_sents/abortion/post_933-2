@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP see)
+        (NP (NN nothing))
+        (ADVP (RB here))))
+    (: ...)
+    (S
+      (S
+        (PP (VBG including)
+          (NP
+            (NP (DT that) (NN bs) (NN war))
+            (PP (IN in)
+              (NP (NNP Iraq)))))
+        (, ,)
+        (NP (DT the) (JJ unconstitutional) ('' '') (NN Patriot))
+        ('' '')
+        (VP (VBZ Act)))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT that)
+          (ADJP
+            (QP (CD 900) (CD billion)))
+          (NN dollar) (NN tax))
+        (VP (VBD cut)
+          (SBAR (IN that)
+            (S
+              (VP (VBD did) (RB n't)
+                (VP (VB do)
+                  (NP (NN jack))
+                  (S
+                    (VP (TO to)
+                      (VP (VB help)
+                        (NP (DT the) (NN economy))))))))))))
+    (. .)))
+
+nsubj(see-2, I-1)
+root(ROOT-0, see-2)
+dobj(see-2, nothing-3)
+advmod(see-2, here-4)
+det(war-9, that-7)
+nn(war-9, bs-8)
+prep_including(Act-18, war-9)
+prep_in(war-9, Iraq-11)
+det(Patriot-16, the-13)
+amod(Patriot-16, unconstitutional-14)
+nsubj(Act-18, Patriot-16)
+parataxis(see-2, Act-18)
+det(tax-25, that-21)
+number(billion-23, 900-22)
+num(tax-25, billion-23)
+nn(tax-25, dollar-24)
+nsubj(cut-26, tax-25)
+parataxis(see-2, cut-26)
+conj_and(Act-18, cut-26)
+complm(do-30, that-27)
+aux(do-30, did-28)
+neg(do-30, n't-29)
+ccomp(cut-26, do-30)
+dobj(do-30, jack-31)
+aux(help-33, to-32)
+xcomp(do-30, help-33)
+det(economy-35, the-34)
+dobj(help-33, economy-35)
+

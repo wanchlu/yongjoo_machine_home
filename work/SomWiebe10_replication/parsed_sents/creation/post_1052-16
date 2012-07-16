@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP I))
+        (VP (VBP mean)
+          (SBAR
+            (S
+              (VP (VBZ is)))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (RB just)
+        (ADJP
+          (ADJP (RB as) (JJ little))
+          (, ,)
+          (CC or)
+          (ADJP (RB as) (JJ much)))
+        (NN evidence)
+        (S
+          (VP (TO to)
+            (VP (VB support)
+              (NP (DT both) (NNS sides)))))))
+    (. .)))
+
+dep(mean-3, What-1)
+nsubj(is-4, What-1)
+nsubj(mean-3, I-2)
+dep(is-7, mean-3)
+ccomp(mean-3, is-4)
+expl(is-7, there-6)
+root(ROOT-0, is-7)
+advmod(evidence-15, just-8)
+advmod(little-10, as-9)
+amod(evidence-15, little-10)
+advmod(much-14, as-13)
+conj_or(little-10, much-14)
+amod(evidence-15, much-14)
+nsubj(is-7, evidence-15)
+aux(support-17, to-16)
+infmod(evidence-15, support-17)
+det(sides-19, both-18)
+dobj(support-17, sides-19)
+

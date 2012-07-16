@@ -1,0 +1,137 @@
+(ROOT
+  (S
+    (NP (VBG Teaching) (NN creationism))
+    (VP (VBZ is)
+      (ADJP (JJ comparable)
+        (PP (TO to)
+          (S
+            (VP (VBG teaching)
+              (NP (JJ flat) (NN earthism)))))))
+    (. .)))
+
+amod(creationism-2, Teaching-1)
+nsubj(comparable-4, creationism-2)
+cop(comparable-4, is-3)
+root(ROOT-0, comparable-4)
+prepc_to(comparable-4, teaching-6)
+amod(earthism-8, flat-7)
+dobj(teaching-6, earthism-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ scientific) (NN consensus))
+      (PP (IN against)
+        (NP (NN creationism))))
+    (VP (VBZ is)
+      (ADJP (RB as) (JJ strong)
+        (PP (IN as)
+          (PP (IN against)
+            (NP (`` ``) (JJ flat) (NN earthism) ('' ''))))))
+    (. .)))
+
+det(consensus-3, The-1)
+amod(consensus-3, scientific-2)
+nsubj(strong-8, consensus-3)
+prep_against(consensus-3, creationism-5)
+cop(strong-8, is-6)
+advmod(strong-8, as-7)
+root(ROOT-0, strong-8)
+prep(strong-8, as-9)
+pcomp(as-9, against-10)
+amod(earthism-13, flat-12)
+prep_against(as-9, earthism-13)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Flat))
+    (VP
+      (ADVP (RB earthism))
+      ('' '') (MD would)
+      (VP
+        (ADVP (RB never))
+        (VB be)
+        (VP (VBN taught)
+          (NP (NN today))
+          (PP (IN as)
+            (NP (DT a) (JJ legitimate) (NN theory))))))
+    (. .)))
+
+nsubjpass(taught-8, Flat-2)
+advmod(taught-8, earthism-3)
+aux(taught-8, would-5)
+neg(taught-8, never-6)
+auxpass(taught-8, be-7)
+root(ROOT-0, taught-8)
+tmod(taught-8, today-9)
+det(theory-13, a-11)
+amod(theory-13, legitimate-12)
+prep_as(taught-8, theory-13)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (DT neither))
+    (VP (MD should)
+      (VP (VB creationism)
+        (VP (VB be)
+          (VP (VBN taught)
+            (PP (IN as)
+              (NP
+                (NP (DT a) (NN theory))
+                (VP (VBG explaining)
+                  (NP
+                    (NP (DT the) (NN origin))
+                    (PP (IN of)
+                      (NP (DT the) (NN earth)))))))))))
+    (. .)))
+
+advmod(creationism-5, Therefore-1)
+nsubj(creationism-5, neither-3)
+aux(creationism-5, should-4)
+root(ROOT-0, creationism-5)
+auxpass(taught-7, be-6)
+dep(creationism-5, taught-7)
+det(theory-10, a-9)
+prep_as(taught-7, theory-10)
+partmod(theory-10, explaining-11)
+det(origin-13, the-12)
+dobj(explaining-11, origin-13)
+det(earth-16, the-15)
+prep_of(origin-13, earth-16)
+
+(ROOT
+  (S
+    (NP (DT This) (NN view))
+    (VP (VBZ is)
+      (VP (VBN put)
+        (PRT (RP forward))
+        (PP (IN by)
+          (NP
+            (NP (NNP Richard) (NNP Dawkins))
+            (, ,)
+            (NP
+              (NP (DT a) (JJ prominent) (NN opponent))
+              (PP (IN of)
+                (S
+                  (VP (VBG teaching)
+                    (NP (NN creationism))
+                    (PP (IN in)
+                      (NP (NNS schools)))))))))))
+    (. .)))
+
+det(view-2, This-1)
+nsubjpass(put-4, view-2)
+auxpass(put-4, is-3)
+root(ROOT-0, put-4)
+prt(put-4, forward-5)
+nn(Dawkins-8, Richard-7)
+agent(put-4, Dawkins-8)
+det(opponent-12, a-10)
+amod(opponent-12, prominent-11)
+appos(Dawkins-8, opponent-12)
+prepc_of(opponent-12, teaching-14)
+dobj(teaching-14, creationism-15)
+prep_in(teaching-14, schools-17)
+

@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Now))
+      (, ,)
+      (NP (PRP we))
+      (ADVP (DT all))
+      (VP (VBP know)
+        (SBAR (IN that)
+          (S
+            (NP (DT some) (NNS articles))
+            (VP (VBP have)
+              (VP (VBN been)
+                (VP (VBN published))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (RB very) (JJ few))
+        (CC and)
+        (NP (DT the) (NNP Sternberg) (NN controversy)))
+      (VP (VBZ shows)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP
+              (NP (DT the) (NNS numbers))
+              (PP (IN of)
+                (NP
+                  (NP (NNS articles))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP have)
+                        (VP (VBN been)
+                          (VP (VBN published)))))))))
+            (VP (VBZ is)
+              (ADJP (RB so) (JJ few)))))))
+    (. .)))
+
+advmod(know-5, Now-1)
+nsubj(know-5, we-3)
+advmod(know-5, all-4)
+root(ROOT-0, know-5)
+complm(published-11, that-6)
+det(articles-8, some-7)
+nsubjpass(published-11, articles-8)
+aux(published-11, have-9)
+auxpass(published-11, been-10)
+ccomp(know-5, published-11)
+advmod(few-15, very-14)
+nsubj(shows-20, few-15)
+det(controversy-19, the-17)
+nn(controversy-19, Sternberg-18)
+conj_and(few-15, controversy-19)
+nsubj(shows-20, controversy-19)
+conj_but(know-5, shows-20)
+advmod(few-32, why-21)
+det(numbers-23, the-22)
+nsubj(few-32, numbers-23)
+prep_of(numbers-23, articles-25)
+nsubjpass(published-29, articles-25)
+aux(published-29, have-27)
+auxpass(published-29, been-28)
+rcmod(articles-25, published-29)
+cop(few-32, is-30)
+advmod(few-32, so-31)
+advcl(shows-20, few-32)
+

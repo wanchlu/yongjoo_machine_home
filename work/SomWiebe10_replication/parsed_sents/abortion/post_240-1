@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Hitler))
+      (VP (VBD was)
+        (NP
+          (NP (DT all))
+          (PP (IN for)
+            (NP (NNS eugenics))))))
+    (CC and)
+    (S
+      (VP (VBG forcing)
+        (NP (NNS abortions))
+        (PP (IN on)
+          (NP (DT those)))
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBD did) (RB n't)
+                (VP (VB consider)
+                  (ADJP (RB racially) (JJ pure))))))
+          (CC but)
+          (SBAR (IN if)
+            (S
+              (NP (DT a) (JJ German) (NN woman))
+              (VP (VBD wanted)
+                (NP (DT an) (NN abortion) (NN whoa) (NN Nelly))))))))
+    (. !)))
+
+nsubj(all-3, Hitler-1)
+nsubj(forcing-7, Hitler-1)
+cop(all-3, was-2)
+root(ROOT-0, all-3)
+prep_for(all-3, eugenics-5)
+conj_and(all-3, forcing-7)
+dobj(forcing-7, abortions-8)
+prep_on(forcing-7, those-10)
+nsubj(consider-14, he-11)
+aux(consider-14, did-12)
+neg(consider-14, n't-13)
+dep(forcing-7, consider-14)
+advmod(pure-16, racially-15)
+acomp(consider-14, pure-16)
+mark(wanted-22, if-18)
+det(woman-21, a-19)
+amod(woman-21, German-20)
+nsubj(wanted-22, woman-21)
+dep(forcing-7, wanted-22)
+conj_but(consider-14, wanted-22)
+det(Nelly-26, an-23)
+nn(Nelly-26, abortion-24)
+nn(Nelly-26, whoa-25)
+dobj(wanted-22, Nelly-26)
+

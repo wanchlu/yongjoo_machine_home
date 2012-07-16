@@ -1,0 +1,26 @@
+(ROOT
+  (S
+    (S
+      (NP (DT All) (NNS animals))
+      (VP (VBP have)
+        (VP (VBZ heartbeats))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP kill)
+        (NP (PRP them))
+        (NP (PDT all) (DT the) (NN time))))
+    (. .)))
+
+det(animals-2, All-1)
+nsubj(heartbeats-4, animals-2)
+aux(heartbeats-4, have-3)
+root(ROOT-0, heartbeats-4)
+nsubj(kill-8, we-7)
+conj_but(heartbeats-4, kill-8)
+iobj(kill-8, them-9)
+predet(time-12, all-10)
+det(time-12, the-11)
+dobj(kill-8, time-12)
+

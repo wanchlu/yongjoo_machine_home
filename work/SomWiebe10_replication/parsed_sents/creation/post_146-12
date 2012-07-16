@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD 'd)
+        (VP (VB say)
+          (NP (CD 1:1)))))
+    (: ...)
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (MD would)
+        (VP (VB mean)
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBD knew)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (DT that))
+                    (VP (VBD meant)
+                      (PP (IN in)
+                        (NP (DT the) (JJ first) (NN place))))))))))))
+    (. ?)))
+
+nsubj(say-3, I-1)
+aux(say-3, 'd-2)
+root(ROOT-0, say-3)
+dobj(say-3, 1:1-4)
+nsubj(mean-9, that-7)
+aux(mean-9, would-8)
+conj_but(say-3, mean-9)
+nsubj(knew-11, I-10)
+ccomp(mean-9, knew-11)
+dobj(meant-14, what-12)
+nsubj(meant-14, that-13)
+ccomp(knew-11, meant-14)
+det(place-18, the-16)
+amod(place-18, first-17)
+prep_in(meant-14, place-18)
+

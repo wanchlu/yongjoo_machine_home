@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (SBAR (IN In) (NN order)
+      (S
+        (VP (TO to)
+          (VP
+            (ADVP (RBR better))
+            (VB understand)
+            (NP (NNP Intelligent) (NNP Design))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ important)
+        (S
+          (VP (TO to)
+            (VP (VB appreciate)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ abuses)
+                    (CC and)
+                    (VBZ conflates)
+                    (NP (NNS terminologies))))))))))
+    (. .)))
+
+mark(understand-5, In-1)
+dep(understand-5, order-2)
+aux(understand-5, to-3)
+advmod(understand-5, better-4)
+dep(important-11, understand-5)
+nn(Design-7, Intelligent-6)
+dobj(understand-5, Design-7)
+nsubj(important-11, it-9)
+cop(important-11, is-10)
+root(ROOT-0, important-11)
+aux(appreciate-13, to-12)
+xcomp(important-11, appreciate-13)
+advmod(abuses-16, how-14)
+nsubj(abuses-16, it-15)
+nsubj(conflates-18, it-15)
+ccomp(appreciate-13, abuses-16)
+ccomp(appreciate-13, conflates-18)
+conj_and(abuses-16, conflates-18)
+dobj(abuses-16, terminologies-19)
+

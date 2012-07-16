@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN physics)))
+    (, ,)
+    (NP (NNP Quantum) (NNS mechanics))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ physical) (NN science))
+        (VP (VBG dealing)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN behavior))
+              (PP (IN of)
+                (NP (NN matter)
+                  (CC and)
+                  (NN energy)))))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NN scale))
+              (PP (IN of)
+                (NP
+                  (NP (NNS atoms))
+                  (CC and)
+                  (NP (JJ subatomic) (NNS particles)))))))))
+    (. .)))
+
+prep_in(science-9, physics-2)
+nn(mechanics-5, Quantum-4)
+nsubj(science-9, mechanics-5)
+cop(science-9, is-6)
+det(science-9, a-7)
+amod(science-9, physical-8)
+root(ROOT-0, science-9)
+partmod(science-9, dealing-10)
+det(behavior-13, the-12)
+prep_with(dealing-10, behavior-13)
+prep_of(behavior-13, matter-15)
+prep_of(behavior-13, energy-17)
+conj_and(matter-15, energy-17)
+det(scale-20, the-19)
+prep_on(dealing-10, scale-20)
+prep_of(scale-20, atoms-22)
+amod(particles-25, subatomic-24)
+prep_of(scale-20, particles-25)
+conj_and(atoms-22, particles-25)
+

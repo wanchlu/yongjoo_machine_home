@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (PP (IN At)
+      (ADJP (JJ present)))
+    (, ,)
+    (NP
+      (NP (DT no) (NN technology))
+      (PP (IN on)
+        (NP (NNP Earth))))
+    (VP (MD can)
+      (VP
+        (VP (VB deliver)
+          (NP
+            (NP (DT a) (NN zygote))
+            (PP (IN of)
+              (NP (DT any) (JJ placental) (JJ mammalian) (NNS species)))))
+        (CC and)
+        (VP (VB keep)
+          (S
+            (NP (PRP it))
+            (ADJP (JJ viable) (RB so)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ develops)
+                    (PP (IN into)
+                      (NP (DT a) (JJ live) (NN being)))))))))))
+    (. .)))
+
+prep_at(deliver-9, present-2)
+det(technology-5, no-4)
+nsubj(deliver-9, technology-5)
+nsubj(keep-18, technology-5)
+prep_on(technology-5, Earth-7)
+aux(deliver-9, can-8)
+root(ROOT-0, deliver-9)
+det(zygote-11, a-10)
+dobj(deliver-9, zygote-11)
+det(species-16, any-13)
+amod(species-16, placental-14)
+amod(species-16, mammalian-15)
+prep_of(zygote-11, species-16)
+conj_and(deliver-9, keep-18)
+nsubj(viable-20, it-19)
+xcomp(keep-18, viable-20)
+advmod(viable-20, so-21)
+complm(develops-24, that-22)
+nsubj(develops-24, it-23)
+ccomp(viable-20, develops-24)
+det(being-28, a-26)
+amod(being-28, live-27)
+prep_into(develops-24, being-28)
+

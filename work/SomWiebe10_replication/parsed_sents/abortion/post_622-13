@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (DT That) (NN baby))
+    (VP
+      (VP (VBD did) (RB n't)
+        (VP (VB commit)
+          (NP
+            (NP (DT a) (NN crime))
+            (PP (IN against)
+              (NP (PRP you))))))
+      (CC but)
+      (VP
+        (ADVP (RB he\/she))
+        (VBD received)
+        (NP (DT the) (NN death) (NN penalty))
+        (PP (IN for)
+          (NP (PRP it)))))
+    (. .)))
+
+det(baby-2, That-1)
+nsubj(commit-5, baby-2)
+nsubj(received-12, baby-2)
+aux(commit-5, did-3)
+neg(commit-5, n't-4)
+root(ROOT-0, commit-5)
+det(crime-7, a-6)
+dobj(commit-5, crime-7)
+prep_against(crime-7, you-9)
+advmod(received-12, he\/she-11)
+conj_but(commit-5, received-12)
+det(penalty-15, the-13)
+nn(penalty-15, death-14)
+dobj(received-12, penalty-15)
+prep_for(received-12, it-17)
+

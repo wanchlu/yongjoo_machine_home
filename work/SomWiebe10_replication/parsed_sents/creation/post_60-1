@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN conception))
+      (PP (IN of)
+        (NP
+          (NP (NN design))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ emerges)
+                (PP (IN from)
+                  (NP (DT the) (NN design) (NN inference)))))))))
+    (VP (VBZ is)
+      (ADVP (RB therefore))
+      (VP
+        (VP (VBG __)
+          (NP (JJ eliminative) (NNS __)))
+        (, ,)
+        (VP (VBG asserting)
+          (PP (IN of)
+            (NP (DT an) (NN event))))
+        (SBAR
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP it))
+              (VP (VBZ is) (RB not))))
+          (, ,) (RB not)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)))))))
+    (. .)))
+
+det(conception-2, The-1)
+nsubj(__-13, conception-2)
+prep_of(conception-2, design-4)
+nsubj(emerges-6, design-4)
+rcmod(design-4, emerges-6)
+det(inference-10, the-8)
+nn(inference-10, design-9)
+prep_from(emerges-6, inference-10)
+aux(__-13, is-11)
+advmod(__-13, therefore-12)
+root(ROOT-0, __-13)
+amod(__-15, eliminative-14)
+dobj(__-13, __-15)
+dep(__-13, asserting-17)
+det(event-20, an-19)
+prep_of(asserting-17, event-20)
+dobj(is-23, what-21)
+nsubj(is-23, it-22)
+dep(__-13, is-23)
+neg(is-23, not-24)
+dep(is-23, not-26)
+dobj(is-29, what-27)
+nsubj(is-29, it-28)
+dep(is-23, is-29)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB attribute)
+          (NP (DT an) (NN event)
+            (S
+              (VP (TO to)
+                (VP (VB design))))))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (NP
+              (NP (DT that) (NN regularity)
+                (CC and)
+                (NN chance) (NN hav))
+              (VP (VBN been)
+                (VP (VBN ruled)
+                  (PRT (RP out)))))))))
+    (. ...)))
+
+aux(attribute-2, To-1)
+csubj(is-7, attribute-2)
+det(event-4, an-3)
+dobj(attribute-2, event-4)
+aux(design-6, to-5)
+infmod(event-4, design-6)
+root(ROOT-0, is-7)
+aux(say-9, to-8)
+xcomp(is-7, say-9)
+det(hav-14, that-10)
+nn(hav-14, regularity-11)
+conj_and(regularity-11, chance-13)
+nn(hav-14, chance-13)
+dobj(say-9, hav-14)
+auxpass(ruled-16, been-15)
+partmod(hav-14, ruled-16)
+prt(ruled-16, out-17)
+

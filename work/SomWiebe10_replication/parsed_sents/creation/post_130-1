@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP
+        (NP (`` ``) (NN creation) (NN science) ('' ''))
+        (PRN (-LRB- -LRB-)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is) (RB not)
+                (NP (NN science))
+                (ADVP (IN at) (DT all)))))
+          (-RRB- -RRB-))
+        (PP (IN in)
+          (NP (NNP disguise)))))
+    (. !)))
+
+nsubj(science-6, ID-1)
+cop(science-6, is-2)
+advmod(science-6, just-3)
+nn(science-6, creation-5)
+root(ROOT-0, science-6)
+nsubj(science-12, which-9)
+cop(science-12, is-10)
+neg(science-12, not-11)
+dep(science-6, science-12)
+advmod(science-12, at-13)
+pobj(at-13, all-14)
+prep_in(science-6, disguise-17)
+
+(ROOT
+  (S
+    (VP (VB Teach)
+      (NP
+        (NP (NN science))
+        (, ,)
+        (UCP (RB not)
+          (ADJP (JJ religion))
+          (, ,)
+          (X
+            (PP (IN in)
+              (NP (DT the) (NN science) (NN classroom))))
+          (, ,)
+          (CC and)
+          (VP (VBN creationism\/ID)
+            (PP (IN in)
+              (NP (NN church)))))))
+    (. .)))
+
+root(ROOT-0, Teach-1)
+dobj(Teach-1, science-2)
+dep(science-2, not-4)
+dep(not-4, religion-5)
+dep(not-4, in-7)
+det(classroom-10, the-8)
+nn(classroom-10, science-9)
+pobj(in-7, classroom-10)
+dep(science-2, creationism\/ID-13)
+conj_and(not-4, creationism\/ID-13)
+prep_in(creationism\/ID-13, church-15)
+

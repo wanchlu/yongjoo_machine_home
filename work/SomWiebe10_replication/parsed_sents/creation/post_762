@@ -1,0 +1,152 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR (RB so) (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ has)
+            (VP (VBN been)
+              (VP (VBN proven)))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+advmod(proven-8, so-3)
+dep(proven-8, because-4)
+nsubjpass(proven-8, it-5)
+aux(proven-8, has-6)
+auxpass(proven-8, been-7)
+ccomp(is-2, proven-8)
+
+(ROOT
+  (NP ('' '')
+    (CC And)
+    (NP
+      (NP (JJ odd) (NN plus))
+      (CC and)
+      (NP
+        (NP (JJ odd))
+        (VP (VBZ equals)
+          (NP (DT an) (RB even)))))
+    (. .)))
+
+amod(plus-4, odd-3)
+root(ROOT-0, plus-4)
+conj_and(plus-4, odd-6)
+dep(odd-6, equals-7)
+det(even-9, an-8)
+dobj(equals-7, even-9)
+
+(ROOT
+  (S ('' '')
+    (S
+      (INTJ (UH Yes))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT a) (JJ mathematical) (NN postulate))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ seems)
+                (ADJP (RB fairly) (JJ self-authenticating))))))))
+    (, ,)
+    (S
+      (ADVP (RB however))
+      (, ,)
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN proof))
+          (PP (IN for)
+            (NP (PRP it))))))
+    (. .)))
+
+dep(postulate-8, Yes-2)
+nsubj(postulate-8, it-4)
+cop(postulate-8, 's-5)
+det(postulate-8, a-6)
+amod(postulate-8, mathematical-7)
+root(ROOT-0, postulate-8)
+nsubj(self-authenticating-12, postulate-8)
+cop(self-authenticating-12, seems-10)
+advmod(self-authenticating-12, fairly-11)
+rcmod(postulate-8, self-authenticating-12)
+advmod(is-17, however-14)
+expl(is-17, there-16)
+ccomp(postulate-8, is-17)
+det(proof-19, a-18)
+nsubj(is-17, proof-19)
+prep_for(proof-19, it-21)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Just))
+    (SBAR (IN like)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (NP
+            (NP (DT a) (NN proof))
+            (PP (IN for)
+              (NP (DT every) (JJ other) (JJ mathematical) (NN postulate)))))))
+    (. .)))
+
+root(ROOT-0, Just-1)
+mark(is-4, like-2)
+expl(is-4, there-3)
+dep(Just-1, is-4)
+det(proof-6, a-5)
+nsubj(is-4, proof-6)
+det(postulate-11, every-8)
+amod(postulate-11, other-9)
+amod(postulate-11, mathematical-10)
+prep_for(proof-6, postulate-11)
+
+(ROOT
+  (S
+    (NP (DT No) (NN postulate))
+    (VP (VBZ is) (`` ``)
+      (ADVP (RB just))
+      (NP (RB there)))
+    (. .)))
+
+det(postulate-2, No-1)
+nsubj(there-6, postulate-2)
+cop(there-6, is-3)
+advmod(there-6, just-5)
+root(ROOT-0, there-6)
+
+(ROOT
+  (S ('' '')
+    (NP (PRP They))
+    (ADVP (RB ALL))
+    (VP (VBP have)
+      (NP (PRP$ their) (JJ associated) (NNS proofs))
+      (, ,)
+      (SBAR
+        (ADVP (DT no) (NN matter))
+        (WHADVP (WRB how)
+          (ADJP (JJ trivial)))
+        (S
+          (NP (PRP they))
+          (VP (MD might)
+            (VP (VB seem))))))
+    (. .)))
+
+nsubj(have-4, They-2)
+advmod(have-4, ALL-3)
+root(ROOT-0, have-4)
+poss(proofs-7, their-5)
+amod(proofs-7, associated-6)
+dobj(have-4, proofs-7)
+dep(matter-10, no-9)
+advmod(seem-15, matter-10)
+advmod(seem-15, how-11)
+dep(how-11, trivial-12)
+nsubj(seem-15, they-13)
+aux(seem-15, might-14)
+dep(have-4, seem-15)
+

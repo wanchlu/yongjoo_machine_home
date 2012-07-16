@@ -1,0 +1,127 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Your))
+      (VP (VBG stating)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP believe))))))
+    (, ,) (RB not)
+    (S
+      (NP (WDT what))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN demonstrated)
+            (S
+              (ADJP (JJ scientifically)))))))
+    (. .)))
+
+nsubj(stating-2, Your-1)
+root(ROOT-0, stating-2)
+dobj(believe-5, what-3)
+nsubj(believe-5, you-4)
+ccomp(stating-2, believe-5)
+neg(stating-2, not-7)
+nsubjpass(demonstrated-11, what-8)
+aux(demonstrated-11, can-9)
+auxpass(demonstrated-11, be-10)
+ccomp(stating-2, demonstrated-11)
+acomp(demonstrated-11, scientifically-12)
+
+(ROOT
+  (SBARQ
+    (ADVP (RB Logically))
+    (WHNP (WP what))
+    (SQ
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (NN difference))
+          (PP (IN between)
+            (NP
+              (NP
+                (NP (PRP$ your) (NN quote))
+                (PP (IN of)
+                  (NP (DT the) (NNP Bible))))
+              (CC and)
+              (NP
+                (NP
+                  (NP (DT a) (NNP Buddhist) (POS 's))
+                  (NN quote))
+                (PP (IN of)
+                  (NP (DT the) (NNP Diamond) (NNP Sutra)))))))))
+    (. ?)))
+
+advmod(difference-5, Logically-1)
+nsubj(difference-5, what-2)
+cop(difference-5, is-3)
+det(difference-5, the-4)
+root(ROOT-0, difference-5)
+poss(quote-8, your-7)
+prep_between(difference-5, quote-8)
+det(Bible-11, the-10)
+prep_of(quote-8, Bible-11)
+det(Buddhist-14, a-13)
+poss(quote-16, Buddhist-14)
+prep_between(difference-5, quote-16)
+conj_and(quote-8, quote-16)
+det(Sutra-20, the-18)
+nn(Sutra-20, Diamond-19)
+prep_of(quote-16, Sutra-20)
+
+(ROOT
+  (S (CC or)
+    (NP (DT a) (NNPS Muslims))
+    (VP (VBP quote)
+      (PP (IN of)
+        (NP (DT the) (NNP Koran))))
+    (. ?)))
+
+cc(quote-4, or-1)
+det(Muslims-3, a-2)
+nsubj(quote-4, Muslims-3)
+root(ROOT-0, quote-4)
+det(Koran-7, the-6)
+prep_of(quote-4, Koran-7)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBP do) (RB not)
+          (VP (VB have)
+            (NP
+              (NP (DT any) (NNS issues))
+              (PP (IN with)
+                (NP (PRP$ your) (NNS beliefs))))))))
+    (: ...)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP do)
+        (VP (VB question)
+          (NP (PRP$ their) (NN use))
+          (PP (IN in)
+            (NP (DT a) (JJ scientific) (NN context))))))
+    (. .)))
+
+nsubj(have-5, I-1)
+aux(have-5, 've-2)
+aux(have-5, do-3)
+neg(have-5, not-4)
+root(ROOT-0, have-5)
+det(issues-7, any-6)
+dobj(have-5, issues-7)
+poss(beliefs-10, your-9)
+prep_with(issues-7, beliefs-10)
+nsubj(question-15, I-13)
+aux(question-15, do-14)
+conj_but(have-5, question-15)
+poss(use-17, their-16)
+dobj(question-15, use-17)
+det(context-21, a-19)
+amod(context-21, scientific-20)
+prep_in(question-15, context-21)
+

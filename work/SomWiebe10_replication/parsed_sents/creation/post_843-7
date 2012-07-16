@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (NP (NNS Scientists))
+    (VP (VBZ has)
+      (VP (VBN proven)
+        (PP (IN beyond)
+          (NP (DT any) (JJ reasonable) (JJ scientific) (NN doubt)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ our) (NN planet))
+            (VP (VBZ is)
+              (NP
+                (NP (NNS billions))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS years))
+                    (ADJP (JJ old))))))))))
+    (. .)))
+
+nsubj(proven-3, Scientists-1)
+aux(proven-3, has-2)
+root(ROOT-0, proven-3)
+det(doubt-8, any-5)
+amod(doubt-8, reasonable-6)
+amod(doubt-8, scientific-7)
+prep_beyond(proven-3, doubt-8)
+complm(billions-13, that-9)
+poss(planet-11, our-10)
+nsubj(billions-13, planet-11)
+cop(billions-13, is-12)
+ccomp(proven-3, billions-13)
+prep_of(billions-13, years-15)
+amod(years-15, old-16)
+

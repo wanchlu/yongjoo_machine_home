@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP say)
+          (SBAR
+            (S
+              (NP (PRP He))
+              (VP (VBD made)
+                (NP
+                  (NP (DT this) (JJ first))
+                  (, ,)
+                  (CC and)
+                  (ADVP (RB then))
+                  (NP (DT the) (NN world)))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP are)
+      (VP (VBN faced)
+        (PP (IN with)
+          (NP (DT an) (JJ endless) (NN regression)))))
+    (: ...)))
+
+mark(say-3, If-1)
+nsubj(say-3, you-2)
+advcl(faced-16, say-3)
+nsubj(made-5, He-4)
+ccomp(say-3, made-5)
+det(first-7, this-6)
+dobj(made-5, first-7)
+dobj(made-5, then-10)
+advmod(first-7, then-10)
+conj_and(first-7, then-10)
+det(world-12, the-11)
+dobj(made-5, world-12)
+conj_and(first-7, world-12)
+nsubjpass(faced-16, you-14)
+auxpass(faced-16, are-15)
+root(ROOT-0, faced-16)
+det(regression-20, an-18)
+amod(regression-20, endless-19)
+prep_with(faced-16, regression-20)
+

@@ -1,0 +1,98 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (NNS is)
+      (NP (PRP it))
+      (NP
+        (NP (DT that))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (VP (VBP try)
+              (S
+                (VP (TO to)
+                  (VP (VB look)
+                    (PP (IN at)
+                      (NP
+                        (NP (DT the) (NN theory))
+                        (PP (IN of)
+                          (NP (NN evolution)))))
+                    (SBAR (IN that)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ comes)
+                          (PRT (RP down))
+                          (PP (TO to)
+                            (NP (DT a) (NN god) (NN thing))))))))))))))
+    (. ?)))
+
+advmod(is-2, Why-1)
+root(ROOT-0, is-2)
+dep(is-2, it-3)
+dep(is-2, that-4)
+tmod(try-7, that-4)
+advmod(try-7, when-5)
+nsubj(try-7, you-6)
+xsubj(look-9, you-6)
+dep(that-4, try-7)
+aux(look-9, to-8)
+xcomp(try-7, look-9)
+det(theory-12, the-11)
+prep_at(look-9, theory-12)
+prep_of(theory-12, evolution-14)
+complm(comes-17, that-15)
+nsubj(comes-17, it-16)
+ccomp(look-9, comes-17)
+prt(comes-17, down-18)
+det(thing-22, a-20)
+nn(thing-22, god-21)
+prep_to(comes-17, thing-22)
+
+(ROOT
+  (S
+    (FRAG
+      (VP (VB \/) (-RRB- -RRB-)
+        (NP (NNS \/))
+        (-RRB- -RRB-)
+        (ADVP (RB As) (RB far))
+        (SBAR (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (ADJP (JJ aware)
+                (SBAR
+                  (S
+                    (NP (NN evolution))
+                    (VP (VBZ has)
+                      (VP (VBN been)
+                        (VP (VBN tested))))))))))))
+    (, ,)
+    (S
+      (S
+        (VP (VBN proven)))
+      (, ,)
+      (CC and)
+      (S
+        (NP (DT those) (NNS conditions))
+        (VP (VBD reproduced))
+        (. .)))
+    (. .)))
+
+dep(proven-16, \/-1)
+dobj(\/-1, \/-3)
+advmod(far-6, As-5)
+advmod(\/-1, far-6)
+mark(aware-10, as-7)
+nsubj(aware-10, I-8)
+cop(aware-10, am-9)
+advcl(\/-1, aware-10)
+nsubjpass(tested-14, evolution-11)
+aux(tested-14, has-12)
+auxpass(tested-14, been-13)
+dep(aware-10, tested-14)
+root(ROOT-0, proven-16)
+det(conditions-20, those-19)
+nsubj(reproduced-21, conditions-20)
+conj_and(proven-16, reproduced-21)
+

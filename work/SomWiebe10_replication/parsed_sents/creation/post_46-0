@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ is)
+      (ADVP (RB ultimately))
+      (VP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (JJ scientific) (NN method))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (VP (VBN used)
+                    (S
+                      (VP (TO to)
+                        (VP (VB support)
+                          (CC and)
+                          (VB confirm)
+                          (NP
+                            (ADJP (NN physical)
+                              (CC and)
+                              (NN chemical))
+                            (NNS laws)))))))))))))
+    (. .)))
+
+nsubjpass(based-4, Science-1)
+auxpass(based-4, is-2)
+advmod(based-4, ultimately-3)
+root(ROOT-0, based-4)
+det(method-8, the-6)
+amod(method-8, scientific-7)
+prep_on(based-4, method-8)
+nsubjpass(used-12, method-8)
+auxpass(used-12, is-11)
+rcmod(method-8, used-12)
+aux(support-14, to-13)
+xcomp(used-12, support-14)
+xcomp(used-12, confirm-16)
+conj_and(support-14, confirm-16)
+amod(laws-20, physical-17)
+conj_and(physical-17, chemical-19)
+amod(laws-20, chemical-19)
+dobj(support-14, laws-20)
+

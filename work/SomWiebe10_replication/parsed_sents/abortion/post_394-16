@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN mother))
+        (VP (VBZ feels)
+          (WHNP (WDT that)))))
+    (NP (DT the) (NN child))
+    (ADVP (RB only))
+    (VP (VBP cause)
+      (NP
+        (NP (NN trouble))
+        (PP (IN for)
+          (NP (PRP her)))))
+    (. .)))
+
+mark(feels-4, If-1)
+det(mother-3, the-2)
+nsubj(feels-4, mother-3)
+advcl(cause-9, feels-4)
+dobj(feels-4, that-5)
+det(child-7, the-6)
+nsubj(cause-9, child-7)
+advmod(cause-9, only-8)
+root(ROOT-0, cause-9)
+dobj(cause-9, trouble-10)
+prep_for(trouble-10, her-12)
+

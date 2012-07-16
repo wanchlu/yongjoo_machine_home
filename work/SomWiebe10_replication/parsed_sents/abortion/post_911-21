@@ -1,0 +1,59 @@
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (ADJP (RB really) (JJ fair))
+    (S
+      (VP (TO to)
+        (VP (VB tell)
+          (NP
+            (NP (DT a) (NN mother))
+            (SBAR
+              (S
+                (NP (PRP she))
+                (VP (MD must)
+                  (VP (VB risk)
+                    (NP (PRP$ her) (NN life)
+                      (S
+                        (VP (TO to)
+                          (VP (VB give)
+                            (NP (NN birth))
+                            (PP (TO to)
+                              (NP
+                                (NP (NN baby))
+                                (SBAR
+                                  (WHNP (WDT that))
+                                  (S
+                                    (VP
+                                      (VP (MD will))
+                                      (CC or)
+                                      (VP
+                                        (ADVP (RB likely))
+                                        (MD will)
+                                        (VP (VB die))))))))))))))))))))
+    (. ?)))
+
+cop(fair-4, Is-1)
+nsubj(fair-4, it-2)
+advmod(fair-4, really-3)
+root(ROOT-0, fair-4)
+aux(tell-6, to-5)
+dep(fair-4, tell-6)
+det(mother-8, a-7)
+dobj(tell-6, mother-8)
+nsubj(risk-11, she-9)
+aux(risk-11, must-10)
+rcmod(mother-8, risk-11)
+poss(life-13, her-12)
+dobj(risk-11, life-13)
+aux(give-15, to-14)
+infmod(life-13, give-15)
+dobj(give-15, birth-16)
+prep_to(give-15, baby-18)
+nsubj(will-20, baby-18)
+nsubj(die-24, baby-18)
+rcmod(baby-18, will-20)
+advmod(die-24, likely-22)
+aux(die-24, will-23)
+rcmod(baby-18, die-24)
+conj_or(will-20, die-24)
+

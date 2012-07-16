@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP$ My) (NN information))
+    (VP (VBD was)
+      (VP (VBN taken)
+        (PP (IN from)
+          (NP
+            (NP (DT this) (NN site))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ publishes)
+                  (NP
+                    (NP (PDT all) (DT the) (JJ major) (NNS polls))
+                    (VP (VBN carried)
+                      (PRT (RP out))
+                      (PP (IN by)
+                        (NP
+                          (NP (DT the) (JJ various) (NN news))
+                          (CC and)
+                          (NP (NN polling) (NNS organizations)))))))))))))
+    (. .)))
+
+poss(information-2, My-1)
+nsubjpass(taken-4, information-2)
+auxpass(taken-4, was-3)
+root(ROOT-0, taken-4)
+det(site-7, this-6)
+prep_from(taken-4, site-7)
+nsubj(publishes-9, site-7)
+rcmod(site-7, publishes-9)
+predet(polls-13, all-10)
+det(polls-13, the-11)
+amod(polls-13, major-12)
+dobj(publishes-9, polls-13)
+partmod(polls-13, carried-14)
+prt(carried-14, out-15)
+det(news-19, the-17)
+amod(news-19, various-18)
+agent(carried-14, news-19)
+nn(organizations-22, polling-21)
+agent(carried-14, organizations-22)
+conj_and(news-19, organizations-22)
+

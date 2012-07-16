@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ is)
+          (VP (VBN known)
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RB quickly))
+                  (VB claim)
+                  (SBAR (IN that)
+                    (S
+                      (NP (NNS papers))
+                      (VP (VBP support)
+                        (NP (PRP$ their) (NN viewpoint))))))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ many) (NNS authors))
+      (PP (IN of)))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP (NNS papers))
+          (VP (VBP have)
+            (VP (VBN come)
+              (PRT (RP forward))
+              (, ,)
+              (S
+                (ADVP (RB strongly))
+                (VP (VBG disagreeing)
+                  (PP (IN with)
+                    (NP (VBN said) (NNS claims))))))))))
+    (. .)))
+
+mark(known-4, While-1)
+nsubjpass(known-4, ID-2)
+xsubj(claim-7, ID-2)
+auxpass(known-4, is-3)
+advcl(said-18, known-4)
+aux(claim-7, to-5)
+advmod(claim-7, quickly-6)
+xcomp(known-4, claim-7)
+complm(support-10, that-8)
+nsubj(support-10, papers-9)
+ccomp(claim-7, support-10)
+poss(viewpoint-12, their-11)
+dobj(support-10, viewpoint-12)
+det(authors-16, the-14)
+amod(authors-16, many-15)
+nsubj(said-18, authors-16)
+prep(authors-16, of-17)
+root(ROOT-0, said-18)
+nsubj(come-21, papers-19)
+aux(come-21, have-20)
+ccomp(said-18, come-21)
+prt(come-21, forward-22)
+advmod(disagreeing-25, strongly-24)
+xcomp(come-21, disagreeing-25)
+amod(claims-28, said-27)
+prep_with(disagreeing-25, claims-28)
+

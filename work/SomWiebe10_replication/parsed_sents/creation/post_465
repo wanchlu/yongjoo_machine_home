@@ -1,0 +1,353 @@
+(ROOT
+  (S (: --)
+    (NP
+      (NP (JJ TJ10The) (NN government) (NN report))
+      (PP (IN on)
+        (NP (DT the) (NN issue))))
+    (VP (VBZ validates)
+      (NP
+        (NP (DT the) (NNS charges))
+        (PP (IN against)
+          (NP (DT the) (NNP Smithsonian) (NNP Institute)))))
+    (. .)))
+
+amod(report-4, TJ10The-2)
+nn(report-4, government-3)
+nsubj(validates-8, report-4)
+det(issue-7, the-6)
+prep_on(report-4, issue-7)
+root(ROOT-0, validates-8)
+det(charges-10, the-9)
+dobj(validates-8, charges-10)
+det(Institute-14, the-12)
+nn(Institute-14, Smithsonian-13)
+prep_against(charges-10, Institute-14)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (NP (DT the) (NN report))
+    (VP (VBZ shows)
+      (SBAR
+        (WHADJP (RB exactly) (WP what))
+        (S
+          (NP (NNP Schloss))
+          (VP (VBD reported)))))
+    (. .)))
+
+prep_in(shows-6, fact-2)
+det(report-5, the-4)
+nsubj(shows-6, report-5)
+root(ROOT-0, shows-6)
+dep(reported-10, exactly-7)
+dep(exactly-7, what-8)
+nsubj(reported-10, Schloss-9)
+ccomp(shows-6, reported-10)
+
+(ROOT
+  (S
+    (VP (VBZ Seems)
+      (SBAR (IN that)
+        (S
+          (NP (JJ few) (NNS people))
+          (VP (VBP have)
+            (ADVP (RB actually))
+            (VP (VBN read)
+              (NP
+                (NP (DT the) (NN report))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ includes)
+                      (NP
+                        (NP (DT the) (JJ actual) (NNS emails))
+                        (SBAR
+                          (WHPP (IN on)
+                            (WHNP (WDT which)))
+                          (S
+                            (NP (DT the) (NN report))
+                            (VP (VBD relied))))))))))))))
+    (. .)))
+
+root(ROOT-0, Seems-1)
+complm(read-7, that-2)
+amod(people-4, few-3)
+nsubj(read-7, people-4)
+aux(read-7, have-5)
+advmod(read-7, actually-6)
+ccomp(Seems-1, read-7)
+det(report-9, the-8)
+dobj(read-7, report-9)
+nsubj(includes-11, report-9)
+rcmod(report-9, includes-11)
+det(emails-14, the-12)
+amod(emails-14, actual-13)
+dobj(includes-11, emails-14)
+rel(relied-19, which-16)
+det(report-18, the-17)
+nsubj(relied-19, report-18)
+rcmod(emails-14, relied-19)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP TJ10))
+        (, ,)
+        (VP (VBG lacking)
+          (PP (IN in)
+            (NP
+              (NP (NN accuracy))
+              (PP (IN in)
+                (NP (PRP$ his) (JJ previous) (NN posting))))))
+        (, ,))
+      (VP (VBZ is) (RB not)
+        (VP (VBG holding)
+          (ADVP (RB back)))))
+    (: --)
+    (S
+      (NP (JJ TJ10The) (NN point))
+      (VP (VBZ is) (, ,)
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP
+              (VP (VBD made)
+                (S
+                  (NP (PRP$ his) (NN life))
+                  (ADJP (JJ miserable))))
+              (, ,)
+              (VP (VBD started)
+                (NP (DT a) (NN smear) (NN campaign)))
+              (, ,)
+              (VP (VBD tried)
+                (S
+                  (VP (TO to)
+                    (VP (VB ruin)
+                      (NP (PRP$ his) (NN reputation))))))
+              (, ,)
+              (CC and)
+              (VP (VBD tried)
+                (S
+                  (VP (TO to)
+                    (VP (VB make)
+                      (NP
+                        (NP (NN life))
+                        (ADJP (RB so) (JJ miserable)))
+                      (PP (IN for)
+                        (NP (PRP him)))
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP he))
+                          (VP (MD would)
+                            (VP (VB resign))))))))))))))
+    (. .)))
+
+nsubj(holding-13, TJ10-1)
+partmod(TJ10-1, lacking-3)
+prep_in(lacking-3, accuracy-5)
+poss(posting-9, his-7)
+amod(posting-9, previous-8)
+prep_in(accuracy-5, posting-9)
+aux(holding-13, is-11)
+neg(holding-13, not-12)
+root(ROOT-0, holding-13)
+advmod(holding-13, back-14)
+amod(point-17, TJ10The-16)
+nsubj(is-18, point-17)
+parataxis(holding-13, is-18)
+nsubj(made-21, they-20)
+nsubj(started-26, they-20)
+nsubj(tried-31, they-20)
+xsubj(ruin-33, they-20)
+nsubj(tried-38, they-20)
+xsubj(make-40, they-20)
+ccomp(is-18, made-21)
+poss(life-23, his-22)
+nsubj(miserable-24, life-23)
+xcomp(made-21, miserable-24)
+ccomp(is-18, started-26)
+conj_and(made-21, started-26)
+det(campaign-29, a-27)
+nn(campaign-29, smear-28)
+dobj(started-26, campaign-29)
+ccomp(is-18, tried-31)
+conj_and(made-21, tried-31)
+aux(ruin-33, to-32)
+xcomp(tried-31, ruin-33)
+poss(reputation-35, his-34)
+dobj(ruin-33, reputation-35)
+ccomp(is-18, tried-38)
+conj_and(made-21, tried-38)
+aux(make-40, to-39)
+xcomp(tried-38, make-40)
+dobj(make-40, life-41)
+advmod(miserable-43, so-42)
+amod(life-41, miserable-43)
+prep_for(make-40, him-45)
+complm(resign-49, that-46)
+nsubj(resign-49, he-47)
+aux(resign-49, would-48)
+ccomp(make-40, resign-49)
+
+(ROOT
+  (S
+    (NP (NNP Again))
+    (VP (RB not) (VBN supported)
+      (PP (IN by)
+        (NP (DT the) (NNS facts))))
+    (. .)))
+
+nsubj(supported-3, Again-1)
+neg(supported-3, not-2)
+root(ROOT-0, supported-3)
+det(facts-6, the-5)
+prep_by(supported-3, facts-6)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP it))
+        (SBAR (IN that)
+          (S
+            (NP (NNP ID) (NNS proponents))
+            (VP (VBP tend)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP (RB so) (JJ sloppy)
+                      (PP (IN with)
+                        (NP (NNS facts))))))))))))
+    (. ?)))
+
+advmod(is-2, Why-1)
+root(ROOT-0, is-2)
+nsubj(is-2, it-3)
+dobj(tend-7, it-3)
+complm(tend-7, that-4)
+nn(proponents-6, ID-5)
+nsubj(tend-7, proponents-6)
+xsubj(sloppy-11, proponents-6)
+dep(it-3, tend-7)
+aux(sloppy-11, to-8)
+cop(sloppy-11, be-9)
+advmod(sloppy-11, so-10)
+xcomp(tend-7, sloppy-11)
+prep_with(sloppy-11, facts-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB understand)
+          (SBAR (IN that)
+            (S
+              (SBAR (IN if)
+                (S
+                  (NP (PRP one))
+                  (VP (VBZ relies)
+                    (PP (IN on)
+                      (NP
+                        (NP (NNP ID) (NNS sources))
+                        (PP (IN for)
+                          (NP
+                            (NP (CD one) (POS 's))
+                            (NN story))))))))
+              (, ,)
+              (NP (PRP one))
+              (VP (MD may)
+                (ADVP (RB indeed))
+                (VP (VB be)
+                  (VP (VBN led)
+                    (S
+                      (VP (TO to)
+                        (VP (VB believe)
+                          (NP (DT these) (`` ``) (NNS facts) ('' ''))
+                          (PP (CC but)
+                            (IN with)
+                            (NP
+                              (NP (PDT all) (DT the) (JJ primary) (NNS sources))
+                              (ADJP (RB so) (RB readily) (JJ available)))))))))))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN excuse))
+        (PP (IN for)
+          (S
+            (VP (VBG relying)
+              (PP (IN on) (`` ``)
+                (ADJP (JJ hearsay))
+                ('' '')))))))
+    (. .)))
+
+nsubj(understand-3, I-1)
+aux(understand-3, can-2)
+ccomp(is-38, understand-3)
+complm(led-20, that-4)
+mark(relies-7, if-5)
+nsubj(relies-7, one-6)
+advcl(led-20, relies-7)
+nn(sources-10, ID-9)
+prep_on(relies-7, sources-10)
+poss(story-14, one-12)
+prep_for(sources-10, story-14)
+nsubjpass(led-20, one-16)
+aux(led-20, may-17)
+advmod(led-20, indeed-18)
+auxpass(led-20, be-19)
+ccomp(understand-3, led-20)
+aux(believe-22, to-21)
+xcomp(led-20, believe-22)
+det(facts-25, these-23)
+dobj(believe-22, facts-25)
+cc(believe-22, but-27)
+predet(sources-32, all-29)
+det(sources-32, the-30)
+amod(sources-32, primary-31)
+prep_with(believe-22, sources-32)
+advmod(available-35, so-33)
+advmod(available-35, readily-34)
+amod(sources-32, available-35)
+expl(is-38, there-37)
+root(ROOT-0, is-38)
+det(excuse-40, no-39)
+nsubj(is-38, excuse-40)
+prepc_for(excuse-40, relying-42)
+prep_on(relying-42, hearsay-45)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Especially))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (DT some) (NNP ID) (NNS proponents))
+        (VP (VBP have)
+          (NP (PDT such) (DT a) (JJ poor) (NN record))
+          (PP (IN in)
+            (S
+              (VP (VBG presenting)
+                (NP (DT the) (JJ full) (NN story))))))))
+    (. .)))
+
+root(ROOT-0, Especially-1)
+advmod(have-6, when-2)
+det(proponents-5, some-3)
+nn(proponents-5, ID-4)
+nsubj(have-6, proponents-5)
+dep(Especially-1, have-6)
+predet(record-10, such-7)
+det(record-10, a-8)
+amod(record-10, poor-9)
+dobj(have-6, record-10)
+prepc_in(have-6, presenting-12)
+det(story-15, the-13)
+amod(story-15, full-14)
+dobj(presenting-12, story-15)
+

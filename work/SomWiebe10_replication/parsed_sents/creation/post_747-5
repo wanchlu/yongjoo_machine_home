@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (INTJ (WRB Why))
+    (VP
+      (VP (VB create)
+        (NP (NNP Adam)))
+      (, ,)
+      (VP (VB wait)
+        (SBAR (IN for)
+          (S
+            (NP (PRP him))
+            (VP (TO to)
+              (VP (VB get)
+                (ADJP (JJ lonely)))))))
+      (, ,)
+      (VP
+        (ADVP (RB then))
+        (VB create)
+        (NP (NNP Eve))))
+    (. ?)))
+
+dep(create-2, Why-1)
+root(ROOT-0, create-2)
+dobj(create-2, Adam-3)
+dep(create-2, wait-5)
+mark(lonely-10, for-6)
+nsubj(lonely-10, him-7)
+aux(lonely-10, to-8)
+dep(lonely-10, get-9)
+advcl(wait-5, lonely-10)
+xcomp(wait-5, lonely-10)
+advmod(create-13, then-12)
+dep(create-2, create-13)
+dobj(create-13, Eve-14)
+

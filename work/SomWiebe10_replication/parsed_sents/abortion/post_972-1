@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN woman))
+        (VP (VBD got)
+          (SBAR
+            (S
+              (NP
+                (NP (NNP raped))
+                (CC or)
+                (NP (DT a) (NN mother)))
+              (VP (MD could)
+                (VP (VB die))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD could)
+      (VP (VB see)
+        (NP (DT some) (NNS instances))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP they))
+            (VP (MD should) (RB not)
+              (VP (VB be)
+                (VP (VBN banned))))))))
+    (. .)))
+
+mark(got-4, If-1)
+det(woman-3, the-2)
+nsubj(got-4, woman-3)
+advcl(see-14, got-4)
+nsubj(die-10, raped-5)
+det(mother-8, a-7)
+conj_or(raped-5, mother-8)
+nsubj(die-10, mother-8)
+aux(die-10, could-9)
+ccomp(got-4, die-10)
+nsubj(see-14, I-12)
+aux(see-14, could-13)
+root(ROOT-0, see-14)
+det(instances-16, some-15)
+dobj(see-14, instances-16)
+advmod(banned-22, where-17)
+nsubjpass(banned-22, they-18)
+aux(banned-22, should-19)
+neg(banned-22, not-20)
+auxpass(banned-22, be-21)
+advcl(see-14, banned-22)
+

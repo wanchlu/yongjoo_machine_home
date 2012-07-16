@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (NN evolution))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a)
+                  (ADJP (RB far) (JJR better))
+                  (NN explanation))
+                (PP (IN than)
+                  (NP (DT the) (NN idea))))
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN world))
+                  (VP (VBZ is)
+                    (ADJP
+                      (NP (CD 5000) (NNS years))
+                      (JJ old))))))))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (NP (DT a) (NN guy-in-the-sky))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(explanation-8, evolution-3)
+cop(explanation-8, is-4)
+det(explanation-8, a-5)
+advmod(better-7, far-6)
+amod(explanation-8, better-7)
+ccomp(think-2, explanation-8)
+det(idea-11, the-10)
+prep_than(explanation-8, idea-11)
+complm(old-18, that-12)
+det(world-14, the-13)
+nsubj(old-18, world-14)
+cop(old-18, is-15)
+num(years-17, 5000-16)
+npadvmod(old-18, years-17)
+ccomp(explanation-8, old-18)
+expl('s-21, there-20)
+conj_and(think-2, 's-21)
+det(guy-in-the-sky-23, a-22)
+nsubj('s-21, guy-in-the-sky-23)
+

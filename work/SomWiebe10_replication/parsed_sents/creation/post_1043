@@ -1,0 +1,210 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Mutation))
+      (CC and)
+      (NP (JJ natural) (NN selection)))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (CD two) (VBG driving) (NNS forces))
+        (PP (IN behind)
+          (NP (NN evolution)))))
+    (. .)))
+
+nsubj(forces-9, Mutation-1)
+amod(selection-4, natural-3)
+conj_and(Mutation-1, selection-4)
+nsubj(forces-9, selection-4)
+cop(forces-9, are-5)
+det(forces-9, the-6)
+num(forces-9, two-7)
+amod(forces-9, driving-8)
+root(ROOT-0, forces-9)
+prep_behind(forces-9, evolution-11)
+
+(ROOT
+  (S
+    (PP (IN By)
+      (S
+        (VP (VBG mutating)
+          (NP (DT the) (NN flu)))))
+    (NP (NN virus))
+    (VP (VBZ is)
+      (ADJP (VBG evolving)))
+    (. .)))
+
+prepc_by(evolving-7, mutating-2)
+det(flu-4, the-3)
+dobj(mutating-2, flu-4)
+nsubj(evolving-7, virus-5)
+cop(evolving-7, is-6)
+root(ROOT-0, evolving-7)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN difference))
+        (PP (IN between)
+          (NP (DT the) (CD two)))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(difference-4, no-3)
+nsubj(is-2, difference-4)
+det(two-7, the-6)
+prep_between(difference-4, two-7)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Also))
+      (, ,)
+      (NP (PRP you))
+      (VP (VBP claim)
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP have)
+              (ADVP (RB never))
+              (VP (VBN observed)
+                (S
+                  (NP (NNS organisms))
+                  (ADJP (VBG evolving)))))))))
+    (: :)
+    (S
+      (NP (DT this))
+      (VP (VBZ is)
+        (ADJP (RB completely) (JJ untrue))))
+    (. .)))
+
+advmod(claim-4, Also-1)
+nsubj(claim-4, you-3)
+root(ROOT-0, claim-4)
+complm(observed-9, that-5)
+nsubj(observed-9, we-6)
+aux(observed-9, have-7)
+neg(observed-9, never-8)
+ccomp(claim-4, observed-9)
+nsubj(evolving-11, organisms-10)
+xcomp(observed-9, evolving-11)
+nsubj(untrue-16, this-13)
+cop(untrue-16, is-14)
+advmod(untrue-16, completely-15)
+parataxis(claim-4, untrue-16)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN lab) (NNS experiments)))
+    (NP (NN evolution))
+    (VP (VBZ is)
+      (VP (VBN witnessed)
+        (NP (PDT all) (DT the) (NN time))))
+    (. .)))
+
+nn(experiments-3, lab-2)
+prep_in(witnessed-6, experiments-3)
+nsubjpass(witnessed-6, evolution-4)
+auxpass(witnessed-6, is-5)
+root(ROOT-0, witnessed-6)
+predet(time-9, all-7)
+det(time-9, the-8)
+dobj(witnessed-6, time-9)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN exampleIn) (NN addition)))
+    (, ,)
+    (NP (NNS scientists))
+    (VP (VBP have)
+      (ADVP (RB also))
+      (VP (VBN witnessed)
+        (NP
+          (NP (DT the) (NN evolution))
+          (PP (IN of)
+            (NP
+              (NP (NNS species))
+              (PP (IN in)
+                (NP (DT the) (JJ wild))))))
+        (PP (IN like)
+          (NP (DT the) (JJ Italian) (NN wall) (NN lizard)))))
+    (. .)))
+
+nn(addition-3, exampleIn-2)
+prep_for(witnessed-8, addition-3)
+nsubj(witnessed-8, scientists-5)
+aux(witnessed-8, have-6)
+advmod(witnessed-8, also-7)
+root(ROOT-0, witnessed-8)
+det(evolution-10, the-9)
+dobj(witnessed-8, evolution-10)
+prep_of(evolution-10, species-12)
+det(wild-15, the-14)
+prep_in(species-12, wild-15)
+det(lizard-20, the-17)
+amod(lizard-20, Italian-18)
+nn(lizard-20, wall-19)
+prep_like(witnessed-8, lizard-20)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ common) (NNS misconceptions))
+            (PP (IN about)
+              (NP (NN evolution)))))))
+    (. .)))
+
+nsubj(one-3, This-1)
+cop(one-3, is-2)
+root(ROOT-0, one-3)
+det(misconceptions-7, the-5)
+amod(misconceptions-7, common-6)
+prep_of(one-3, misconceptions-7)
+prep_about(misconceptions-7, evolution-9)
+
+(ROOT
+  (S
+    (SBAR (IN That)
+      (S
+        (NP (NN species) (NNS evolve))
+        (VP (VBZ is)
+          (ADJP (JJ observed))
+          (ADVP (NN fact))
+          (: ...)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP do)
+                (ADVP (RB so))
+                (PP (IN through)
+                  (NP (JJ natural) (NN selection)))))))))
+    (VP (VBZ is)
+      (NP (DT the) (NN theory)))
+    (. .)))
+
+complm(observed-5, That-1)
+nn(evolve-3, species-2)
+nsubj(observed-5, evolve-3)
+cop(observed-5, is-4)
+csubj(theory-17, observed-5)
+advmod(observed-5, fact-6)
+complm(do-10, that-8)
+nsubj(do-10, they-9)
+ccomp(observed-5, do-10)
+parataxis(observed-5, do-10)
+advmod(do-10, so-11)
+amod(selection-14, natural-13)
+prep_through(do-10, selection-14)
+cop(theory-17, is-15)
+det(theory-17, the-16)
+root(ROOT-0, theory-17)
+

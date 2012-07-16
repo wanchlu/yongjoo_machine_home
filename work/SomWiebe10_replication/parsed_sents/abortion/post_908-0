@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (NP (NN Unborn) (NNS babies))
+      (VP (VBP are)
+        (VP (VBG living)
+          (NP (NNS things)))))
+    (CC and)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP you))
+          (VP (VBP kill)
+            (NP (PRP them)))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ same) (NN thing))
+          (PP (IN as)
+            (S
+              (VP (VBG killing)
+                (NP
+                  (NP (DT an) (NN adult))
+                  (CC or)
+                  (NP (DT a) (NN child)))))))))
+    (. .)))
+
+nn(babies-2, Unborn-1)
+nsubj(living-4, babies-2)
+aux(living-4, are-3)
+root(ROOT-0, living-4)
+dobj(living-4, things-5)
+advmod(kill-9, when-7)
+nsubj(kill-9, you-8)
+advcl(thing-16, kill-9)
+dobj(kill-9, them-10)
+nsubj(thing-16, it-12)
+cop(thing-16, is-13)
+det(thing-16, the-14)
+amod(thing-16, same-15)
+conj_and(living-4, thing-16)
+prepc_as(thing-16, killing-18)
+det(adult-20, an-19)
+dobj(killing-18, adult-20)
+det(child-23, a-22)
+dobj(killing-18, child-23)
+conj_or(adult-20, child-23)
+

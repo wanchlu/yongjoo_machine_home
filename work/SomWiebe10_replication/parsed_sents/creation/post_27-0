@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (NNS students))
+        (VP (VBP are)
+          (ADJP (JJ impressionable))
+          (, ,)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VB teach)
+                (NP (PRP them))
+                (NP
+                  (NP (DT the) (JJ literal) (NN truth))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Genesis))
+                      (PP (IN as)
+                        (NP (NN science))))))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD may)
+      (ADVP (RB well))
+      (VP (VB believe)
+        (NP (PRP you))))
+    (. .)))
+
+mark(impressionable-4, Because-1)
+nsubj(impressionable-4, students-2)
+cop(impressionable-4, are-3)
+advcl(believe-21, impressionable-4)
+mark(teach-8, if-6)
+nsubj(teach-8, you-7)
+advcl(impressionable-4, teach-8)
+iobj(teach-8, them-9)
+det(truth-12, the-10)
+amod(truth-12, literal-11)
+dobj(teach-8, truth-12)
+prep_of(truth-12, Genesis-14)
+prep_as(Genesis-14, science-16)
+nsubj(believe-21, they-18)
+aux(believe-21, may-19)
+advmod(believe-21, well-20)
+root(ROOT-0, believe-21)
+dobj(believe-21, you-22)
+

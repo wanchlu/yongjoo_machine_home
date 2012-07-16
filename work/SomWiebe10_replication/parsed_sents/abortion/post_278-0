@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP regret)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBP do)
+                  (SBAR (RB so) (IN because)
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP know)
+                        (NP (DT the))))))))))))
+    (VP (VBP have)
+      (VP (VBN killed)
+        (NP (PRP$ their) (NN baby))))
+    (. .)))
+
+nsubj(regret-3, those-1)
+nsubj(killed-12, those-1)
+rcmod(those-1, regret-3)
+nsubj(do-5, it-4)
+ccomp(regret-3, do-5)
+advmod(know-9, so-6)
+dep(know-9, because-7)
+nsubj(know-9, they-8)
+ccomp(do-5, know-9)
+dobj(know-9, the-10)
+aux(killed-12, have-11)
+root(ROOT-0, killed-12)
+poss(baby-14, their-13)
+dobj(killed-12, baby-14)
+

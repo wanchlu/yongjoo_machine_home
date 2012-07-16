@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT Those))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP regret)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP 've)
+                    (VP (VBN done)
+                      (SBAR (IN because)
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP feel)
+                            (SBAR
+                              (S
+                                (NP (PRP they))
+                                (VP (VBP have)
+                                  (VP (VBN done)
+                                    (S
+                                      (NP (NN something))
+                                      (ADJP (JJ wrong))))))))))))))))))
+      (VP (VBP are)
+        (ADJP (JJ free)
+          (S
+            (VP (TO to)
+              (VP (VB feel)
+                (NP (DT that) (NN way))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (MD should) (RB not)
+        (VP (VB cause)
+          (S
+            (NP (PRP us))
+            (VP (TO to)
+              (VP (VB restrict)
+                (NP
+                  (NP (DT the) (NN choice))
+                  (PP (IN of)
+                    (NP (NNS others))))))))))
+    (. .)))
+
+nsubj(regret-3, Those-1)
+nsubj(free-17, Those-1)
+rcmod(Those-1, regret-3)
+dobj(done-7, what-4)
+nsubj(done-7, they-5)
+aux(done-7, 've-6)
+ccomp(regret-3, done-7)
+mark(feel-10, because-8)
+nsubj(feel-10, they-9)
+advcl(done-7, feel-10)
+nsubj(done-13, they-11)
+aux(done-13, have-12)
+ccomp(feel-10, done-13)
+nsubj(wrong-15, something-14)
+xcomp(done-13, wrong-15)
+cop(free-17, are-16)
+root(ROOT-0, free-17)
+aux(feel-19, to-18)
+xcomp(free-17, feel-19)
+det(way-21, that-20)
+dobj(feel-19, way-21)
+nsubj(cause-27, that-24)
+aux(cause-27, should-25)
+neg(cause-27, not-26)
+conj_but(free-17, cause-27)
+nsubj(restrict-30, us-28)
+aux(restrict-30, to-29)
+xcomp(cause-27, restrict-30)
+det(choice-32, the-31)
+dobj(restrict-30, choice-32)
+prep_of(choice-32, others-34)
+

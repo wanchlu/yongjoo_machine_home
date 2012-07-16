@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NN merit))
+        (PP (IN in)
+          (NP
+            (NP (DT any) (JJ scientific) (NN field))
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (NP
+                    (ADVP (IN at) (JJS best))
+                    (NP (DT an) (JJ unfinished) (NNS hypothesis))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ makes)
+                          (NP (DT no) (NNS predictions)))))))))))))
+    (. .)))
+
+nsubj(has-2, ID-1)
+root(ROOT-0, has-2)
+det(merit-4, no-3)
+dobj(has-2, merit-4)
+det(field-8, any-6)
+amod(field-8, scientific-7)
+prep_in(merit-4, field-8)
+mark(hypothesis-16, because-9)
+nsubj(hypothesis-16, it-10)
+cop(hypothesis-16, is-11)
+advmod(hypothesis-16, at-12)
+pobj(at-12, best-13)
+det(hypothesis-16, an-14)
+amod(hypothesis-16, unfinished-15)
+dep(field-8, hypothesis-16)
+nsubj(makes-18, hypothesis-16)
+rcmod(hypothesis-16, makes-18)
+det(predictions-20, no-19)
+dobj(makes-18, predictions-20)
+

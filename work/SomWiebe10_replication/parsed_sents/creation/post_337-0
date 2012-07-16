@@ -1,0 +1,47 @@
+(ROOT
+  (NP
+    (NP (NNS http:\/\/www.citebase.org\/abstract?id=oai))
+    (: :)
+    (NP
+      (NP (NN arXiv.org))
+      (: :)
+      (NP
+        (NP (JJ astro-ph\/0507186Which) (NN link))
+        (PP (TO to)
+          (NP
+            (NP (JJ such) (NNS papers))
+            (PP (IN as)
+              (NP
+                (NP (DT the) (NN following))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBP show)
+                      (SBAR (IN that)
+                        (S
+                          (NP (DT the) (NN mystery))
+                          (VP (VBZ has) (RB not)
+                            (VP (VBN been)
+                              (VP (VBN resolved)
+                                (ADVP (RB yet))))))))))))))))
+    (. .)))
+
+root(ROOT-0, http:\/\/www.citebase.org\/abstract?id=oai-1)
+dep(http:\/\/www.citebase.org\/abstract?id=oai-1, arXiv.org-3)
+amod(link-6, astro-ph\/0507186Which-5)
+dep(arXiv.org-3, link-6)
+amod(papers-9, such-8)
+prep_to(link-6, papers-9)
+det(following-12, the-11)
+prep_as(papers-9, following-12)
+nsubj(show-14, following-12)
+rcmod(following-12, show-14)
+complm(resolved-21, that-15)
+det(mystery-17, the-16)
+nsubjpass(resolved-21, mystery-17)
+aux(resolved-21, has-18)
+neg(resolved-21, not-19)
+auxpass(resolved-21, been-20)
+ccomp(show-14, resolved-21)
+advmod(resolved-21, yet-22)
+

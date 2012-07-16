@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN deck))
+      (PP (IN of)
+        (NP (NNS cards))))
+    (VP (VBZ is)
+      (VP (VBN cut)
+        (PP (IN before)
+          (S
+            (VP (VBG dealing)
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN check))
+                  (PP (IN on)
+                    (NP (JJ intentional) (VBG sorting))))))))))
+    (. .)))
+
+det(deck-2, A-1)
+nsubjpass(cut-6, deck-2)
+prep_of(deck-2, cards-4)
+auxpass(cut-6, is-5)
+root(ROOT-0, cut-6)
+prepc_before(cut-6, dealing-8)
+det(check-11, a-10)
+prep_as(dealing-8, check-11)
+prep_on(check-11, intentional-13)
+amod(intentional-13, sorting-14)
+

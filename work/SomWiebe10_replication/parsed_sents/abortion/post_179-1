@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN fetus))
+        (VP (VBZ is)
+          (VP (VBN killed)
+            (PP (IN by)
+              (NP
+                (NP (DT an) (NN attack))
+                (PP (IN on)
+                  (NP (DT a) (JJ pregnant) (NN woman)))))))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP (NN murder))))
+    (. .)))
+
+mark(killed-5, If-1)
+det(fetus-3, a-2)
+nsubjpass(killed-5, fetus-3)
+auxpass(killed-5, is-4)
+advcl(considered-15, killed-5)
+det(attack-8, an-7)
+agent(killed-5, attack-8)
+det(woman-12, a-10)
+amod(woman-12, pregnant-11)
+prep_on(attack-8, woman-12)
+nsubjpass(considered-15, it-13)
+auxpass(considered-15, is-14)
+root(ROOT-0, considered-15)
+dobj(considered-15, murder-16)
+

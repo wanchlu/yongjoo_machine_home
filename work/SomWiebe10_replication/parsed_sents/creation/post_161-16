@@ -1,0 +1,54 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ
+      (ADVP (RB often))
+      (VP (VBZ has)
+        (NP
+          (NP (DT the) (NN design))
+          (SBAR
+            (S
+              (NP
+                (NP (NNS hypothesis))
+                (, ,)
+                (VP (VBN caused)
+                  (PP (IN by)
+                    (NP (DT this) (JJ human) (NN bias)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB detect)
+                        (NP (NNS agents))))))
+                (, ,))
+              (VP (VBD failed)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (VP (VBD used)
+                      (S
+                        (VP (TO to)
+                          (VP (VB explain)
+                            (NP (JJ natural) (NNS phenomena))))))))))))))
+    (. ?)))
+
+advmod(has-3, How-1)
+advmod(has-3, often-2)
+root(ROOT-0, has-3)
+det(design-5, the-4)
+dobj(has-3, design-5)
+xsubj(detect-14, hypothesis-6)
+nsubj(failed-17, hypothesis-6)
+partmod(hypothesis-6, caused-8)
+det(bias-12, this-10)
+amod(bias-12, human-11)
+agent(caused-8, bias-12)
+aux(detect-14, to-13)
+xcomp(caused-8, detect-14)
+dobj(detect-14, agents-15)
+rcmod(design-5, failed-17)
+advmod(used-19, when-18)
+advcl(failed-17, used-19)
+aux(explain-21, to-20)
+xcomp(used-19, explain-21)
+amod(phenomena-23, natural-22)
+dobj(explain-21, phenomena-23)
+

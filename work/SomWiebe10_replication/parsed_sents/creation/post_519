@@ -1,0 +1,86 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP I))
+      (VP (VB waste)
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (CD 30))
+            (NNS seconds))
+          (VP (VBG attempting)
+            (S
+              (VP (TO to)
+                (VP (VB communicate)
+                  (PP (IN with)
+                    (NP (DT an) (NN ignoramus))))))))))
+    (. ?)))
+
+advmod(waste-4, Why-1)
+aux(waste-4, should-2)
+nsubj(waste-4, I-3)
+root(ROOT-0, waste-4)
+mwe(than-6, more-5)
+quantmod(30-7, than-6)
+num(seconds-8, 30-7)
+dobj(waste-4, seconds-8)
+xsubj(communicate-11, seconds-8)
+partmod(seconds-8, attempting-9)
+aux(communicate-11, to-10)
+xcomp(attempting-9, communicate-11)
+det(ignoramus-14, an-13)
+prep_with(communicate-11, ignoramus-14)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT a) (JJ wonderful) (NN world) (JJ wide) (NN web))
+      (PP (IN out)
+        (NP (RB there)))
+      (PP (IN with)
+        (NP
+          (NP (DT a) (NN lot))
+          (PP (IN of)
+            (NP (NN substance))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(web-7, a-3)
+amod(web-7, wonderful-4)
+nn(web-7, world-5)
+amod(web-7, wide-6)
+nsubj(is-2, web-7)
+prep(is-2, out-8)
+pobj(out-8, there-9)
+det(lot-12, a-11)
+prep_with(is-2, lot-12)
+prep_of(lot-12, substance-14)
+
+(ROOT
+  (S (CC But)
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (MD would)
+          (VP (VB be)
+            (VP (VBG asking)
+              (ADVP (RB too) (RB much)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)))
+    (. .)))
+
+cc(sure-11, But-1)
+nsubj(asking-5, that-2)
+aux(asking-5, would-3)
+aux(asking-5, be-4)
+dep(sure-11, asking-5)
+advmod(much-7, too-6)
+advmod(asking-5, much-7)
+nsubj(sure-11, I-9)
+cop(sure-11, 'm-10)
+root(ROOT-0, sure-11)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP choose)
+          (S
+            (VP (TO to)
+              (VP (VB fund)
+                (NP (NN aid) (NNS efforts))))))))
+    (, ,)
+    (NP (RB then) (PRP$ our) (NNS donations))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN allocated)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (NN way))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ consonant)
+                      (PP (IN with)
+                        (NP
+                          (NP (DT the) (NNS values))
+                          (PP (IN of)
+                            (NP (PRP$ our) (NNS people))))))))))))))
+    (. .)))
+
+mark(choose-3, If-1)
+nsubj(choose-3, we-2)
+xsubj(fund-5, we-2)
+advcl(allocated-14, choose-3)
+aux(fund-5, to-4)
+xcomp(choose-3, fund-5)
+nn(efforts-7, aid-6)
+dobj(fund-5, efforts-7)
+advmod(donations-11, then-9)
+poss(donations-11, our-10)
+nsubjpass(allocated-14, donations-11)
+aux(allocated-14, should-12)
+auxpass(allocated-14, be-13)
+root(ROOT-0, allocated-14)
+det(way-17, a-16)
+prep_in(allocated-14, way-17)
+nsubj(consonant-20, way-17)
+cop(consonant-20, is-19)
+rcmod(way-17, consonant-20)
+det(values-23, the-22)
+prep_with(consonant-20, values-23)
+poss(people-26, our-25)
+prep_of(values-23, people-26)
+

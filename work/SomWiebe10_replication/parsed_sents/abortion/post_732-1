@@ -1,0 +1,48 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (NN someone))
+      (VP (VB be)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP (DT an) (NN abortion))
+                (SBAR (RB just) (IN because)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP do) (RB not)
+                      (VP (VB want)
+                        (S
+                          (VP (TO to)
+                            (VP (VB live)
+                              (PP (IN with)
+                                (NP
+                                  (NP (DT the) (NNS consequences))
+                                  (PP (IN of)
+                                    (NP (PRP$ their) (NNS actions))))))))))))))))))
+    (. ?)))
+
+advmod(allowed-5, Why-1)
+aux(allowed-5, should-2)
+nsubjpass(allowed-5, someone-3)
+auxpass(allowed-5, be-4)
+root(ROOT-0, allowed-5)
+aux(get-7, to-6)
+xcomp(allowed-5, get-7)
+det(abortion-9, an-8)
+dobj(get-7, abortion-9)
+advmod(want-15, just-10)
+dep(want-15, because-11)
+nsubj(want-15, they-12)
+aux(want-15, do-13)
+neg(want-15, not-14)
+dep(get-7, want-15)
+aux(live-17, to-16)
+xcomp(want-15, live-17)
+det(consequences-20, the-19)
+prep_with(live-17, consequences-20)
+poss(actions-23, their-22)
+prep_of(consequences-20, actions-23)
+

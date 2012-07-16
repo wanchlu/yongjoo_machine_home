@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (ADVP
+      (NP
+        (QP (RB About) (CD 2)
+          (CC or)
+          (CD 3))
+        (NNS months))
+      (RB ago))
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB say)
+        (NP
+          (NP (CD 5) (JJ right) (NN wing) (NNS nuts))
+          (SBAR
+            (S
+              (VP
+                (VP (VBD showed)
+                  (PRT (RP up))
+                  (ADVP (RB here)))
+                (CC and)
+                (VP (VBD downvoted)
+                  (NP (RB nearly) (DT every) (NN argument))
+                  (SBAR
+                    (S
+                      (NP (PRP I))
+                      (VP (VBP 've)
+                        (ADVP (RB ever))
+                        (VP (VBN made)
+                          (PP (IN in)
+                            (NP (PRP$ my)))
+                          (PP (IN over)
+                            (NP
+                              (NP (DT a) (NN year))
+                              (PP (IN on)
+                                (NP (DT this) (NN site))))))))))))))))
+    (. .)))
+
+quantmod(2-2, About-1)
+num(months-5, 2-2)
+conj_or(2-2, 3-4)
+num(months-5, 3-4)
+npadvmod(ago-6, months-5)
+advmod(say-9, ago-6)
+nsubj(say-9, I-7)
+aux(say-9, 'd-8)
+root(ROOT-0, say-9)
+num(nuts-13, 5-10)
+amod(nuts-13, right-11)
+nn(nuts-13, wing-12)
+dobj(say-9, nuts-13)
+rcmod(nuts-13, showed-14)
+prt(showed-14, up-15)
+advmod(showed-14, here-16)
+rcmod(nuts-13, downvoted-18)
+conj_and(showed-14, downvoted-18)
+advmod(argument-21, nearly-19)
+det(argument-21, every-20)
+dobj(downvoted-18, argument-21)
+nsubj(made-25, I-22)
+aux(made-25, 've-23)
+advmod(made-25, ever-24)
+dep(downvoted-18, made-25)
+prep_in(made-25, my-27)
+det(year-30, a-29)
+prep_over(made-25, year-30)
+det(site-33, this-32)
+prep_on(year-30, site-33)
+

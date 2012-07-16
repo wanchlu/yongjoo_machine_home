@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (NN evolution))
+    (VP
+      (VP (VBZ has)
+        (ADVP (RB never))
+        (VP (VBN been)
+          (VP (VBN proven))))
+      (CC and)
+      (VP (MD will)
+        (ADVP (RB never))
+        (VP (VB be)
+          (VP (VBN proven)
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (ADVP (RB never))
+                (VP (VBD happened))))))))
+    (. .)))
+
+nsubjpass(proven-5, evolution-1)
+nsubjpass(proven-10, evolution-1)
+aux(proven-5, has-2)
+neg(proven-5, never-3)
+auxpass(proven-5, been-4)
+root(ROOT-0, proven-5)
+aux(proven-10, will-7)
+neg(proven-10, never-8)
+auxpass(proven-10, be-9)
+conj_and(proven-5, proven-10)
+mark(happened-14, because-11)
+nsubj(happened-14, it-12)
+neg(happened-14, never-13)
+advcl(proven-10, happened-14)
+

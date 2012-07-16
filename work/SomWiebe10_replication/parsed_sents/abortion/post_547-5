@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD cost)
+        (NP (PRP me))
+        (NP
+          (ADJP ($ $) (CD 2,000))
+          (NNS dollars))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (DT an) (NN abortion)))))))
+    (CC and)
+    (S
+      (NP (PRP It))
+      (VP (MD would)
+        (VP (VB have)
+          (VP (VBN cost)
+            (NP ($ $) (CD 10,000))
+            (S
+              (VP (TO to)
+                (VP (VB deliver)
+                  (PP (IN in)
+                    (NP (DT the) (NN hospital))))))))))
+    (. .)))
+
+nsubj(cost-2, It-1)
+root(ROOT-0, cost-2)
+iobj(cost-2, me-3)
+amod(dollars-6, $-4)
+number($-4, 2,000-5)
+dobj(cost-2, dollars-6)
+aux(get-8, to-7)
+xcomp(cost-2, get-8)
+det(abortion-10, an-9)
+dobj(get-8, abortion-10)
+nsubj(cost-15, It-12)
+aux(cost-15, would-13)
+aux(cost-15, have-14)
+conj_and(cost-2, cost-15)
+dobj(cost-15, $-16)
+num($-16, 10,000-17)
+aux(deliver-19, to-18)
+xcomp(cost-15, deliver-19)
+det(hospital-22, the-21)
+prep_in(deliver-19, hospital-22)
+

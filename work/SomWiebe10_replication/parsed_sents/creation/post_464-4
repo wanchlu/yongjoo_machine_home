@@ -1,0 +1,67 @@
+(ROOT
+  (NP
+    (NP (NNP Paper) (NN victory))
+    (: :)
+    (NP
+      (NP (DT A) (JJ congressional) (NN committee))
+      (VP (VBN found)
+        (NP
+          (NP (NN evidence))
+          (PP (IN for)
+            (NP (NN harassment)
+              (CC and)
+              (NN discrimination))))
+        (PP (IN by)
+          (NP (DT the) (NNP Smithsonian)))
+        (PP (IN against)
+          (NP
+            (NP (NNP Dr.) (NNP Richard) (NNP Sternberg))
+            (, ,)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD had)
+                  (VP (VBN allowed)
+                    (NP
+                      (NP (NN publication))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT a) (JJ pro-ID) (NN paper))
+                          (PP (IN in)
+                            (NP (DT a) (NNP Smithsonian) (NN journal))))))
+                    (PRN (-LRB- -LRB-)
+                      (S
+                        (VP (VB see)
+                          (NP (NNP Evolution) (NNP News))))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+nn(victory-2, Paper-1)
+root(ROOT-0, victory-2)
+det(committee-6, A-4)
+amod(committee-6, congressional-5)
+dep(victory-2, committee-6)
+partmod(committee-6, found-7)
+dobj(found-7, evidence-8)
+prep_for(evidence-8, harassment-10)
+prep_for(evidence-8, discrimination-12)
+conj_and(harassment-10, discrimination-12)
+det(Smithsonian-15, the-14)
+agent(found-7, Smithsonian-15)
+nn(Sternberg-19, Dr.-17)
+nn(Sternberg-19, Richard-18)
+prep_against(found-7, Sternberg-19)
+nsubj(allowed-23, Sternberg-19)
+aux(allowed-23, had-22)
+rcmod(Sternberg-19, allowed-23)
+dobj(allowed-23, publication-24)
+det(paper-28, a-26)
+amod(paper-28, pro-ID-27)
+prep_of(publication-24, paper-28)
+det(journal-32, a-30)
+nn(journal-32, Smithsonian-31)
+prep_in(paper-28, journal-32)
+parataxis(allowed-23, see-34)
+nn(News-36, Evolution-35)
+dobj(see-34, News-36)
+

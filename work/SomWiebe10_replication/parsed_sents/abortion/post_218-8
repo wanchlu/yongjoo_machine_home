@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Voting))
+      (PP (IN for)
+        (NP
+          (NP (NN anyone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ believes)
+                (PP (IN in)
+                  (NP (DT the) (NN death) (NN penalty)))))))))
+    (VP (VBZ is)
+      (ADVP (RB also))
+      (ADJP (JJ wrong))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB put)
+                  (NP (PRP it))
+                  (PP (IN into)
+                    (NP
+                      (NP (NNS cases))
+                      (PP (IN as)
+                        (NP (DT this))))))))))))
+    (. .)))
+
+nsubj(wrong-12, Voting-1)
+prep_for(Voting-1, anyone-3)
+nsubj(believes-5, anyone-3)
+rcmod(anyone-3, believes-5)
+det(penalty-9, the-7)
+nn(penalty-9, death-8)
+prep_in(believes-5, penalty-9)
+cop(wrong-12, is-10)
+advmod(wrong-12, also-11)
+root(ROOT-0, wrong-12)
+mark(want-15, if-13)
+nsubj(want-15, you-14)
+xsubj(put-17, you-14)
+advcl(wrong-12, want-15)
+aux(put-17, to-16)
+xcomp(want-15, put-17)
+dobj(put-17, it-18)
+prep_into(put-17, cases-20)
+prep_as(cases-20, this-22)
+

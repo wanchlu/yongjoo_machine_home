@@ -1,0 +1,122 @@
+(ROOT
+  (S
+    (NP (DT No) (NN abortion))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (VP (VBN banned)
+          (PRN (, ,)
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (NP (DT the) (NNS peoples) (NN choice))
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP wish)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)
+                            (S
+                              (NP (DT a) (NN child))
+                              (RB not)
+                              (VP (VB be)
+                                (VP (VBN forced)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB have)
+                                        (NP (PRP it))))))))))))))))
+            (, ,))
+          (ADVP (RB especially))
+          (SBAR (IN if)
+            (S
+              (NP (PRP they))
+              (VP (VBP are)
+                (ADJP (JJ young))))))))
+    (. .)))
+
+det(abortion-2, No-1)
+nsubjpass(banned-6, abortion-2)
+aux(banned-6, should-3)
+neg(banned-6, not-4)
+auxpass(banned-6, be-5)
+root(ROOT-0, banned-6)
+nsubj(choice-12, it-8)
+cop(choice-12, is-9)
+det(choice-12, the-10)
+nn(choice-12, peoples-11)
+parataxis(banned-6, choice-12)
+mark(wish-15, if-13)
+nsubj(wish-15, they-14)
+advcl(choice-12, wish-15)
+aux(have-17, to-16)
+xcomp(wish-15, have-17)
+det(child-19, a-18)
+nsubjpass(forced-22, child-19)
+neg(forced-22, not-20)
+auxpass(forced-22, be-21)
+ccomp(have-17, forced-22)
+aux(have-24, to-23)
+xcomp(forced-22, have-24)
+dobj(have-24, it-25)
+advmod(banned-6, especially-27)
+mark(young-31, if-28)
+nsubj(young-31, they-29)
+cop(young-31, are-30)
+advcl(banned-6, young-31)
+
+(ROOT
+  (S
+    (VP (VB Shame)
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP say)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (MD should)
+                      (VP (VB be)
+                        (VP (VBN banned))))))))))))
+    (. .)))
+
+root(ROOT-0, Shame-1)
+det(people-4, the-3)
+prep_on(Shame-1, people-4)
+nsubj(say-6, people-4)
+rcmod(people-4, say-6)
+nsubjpass(banned-10, it-7)
+aux(banned-10, should-8)
+auxpass(banned-10, be-9)
+ccomp(say-6, banned-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP (VB like)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN forced)
+                (S
+                  (VP (TO to)
+                    (VP (VB do)
+                      (NP (NN something) (NNS ??)))))))))))))
+
+advmod(like-4, How-1)
+aux(like-4, would-2)
+nsubj(like-4, you-3)
+xsubj(forced-7, you-3)
+root(ROOT-0, like-4)
+aux(forced-7, to-5)
+auxpass(forced-7, be-6)
+xcomp(like-4, forced-7)
+aux(do-9, to-8)
+xcomp(forced-7, do-9)
+nn(??-11, something-10)
+dobj(do-9, ??-11)
+

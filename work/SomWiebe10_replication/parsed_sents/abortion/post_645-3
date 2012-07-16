@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP She))
+      (VP (VBZ asks)
+        (SBAR (IN if)
+          (S
+            (NP (PRP he))
+            (VP (VBZ wants)
+              (S
+                (NP (PRP her))
+                (VP (TO to)
+                  (VP (VB abort)
+                    (NP (DT the) (NN baby))))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (VBZ replies) (, ,) (`` ``)
+        (S
+          (NP (PRP It))
+          (VP (VBZ is) (RB not)
+            (NP
+              (NP (DT the) (NN baby))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP need)
+                    (S
+                      (VP (VBG killing)))))))))))
+    (. .)))
+
+nsubj(asks-2, She-1)
+root(ROOT-0, asks-2)
+mark(wants-5, if-3)
+nsubj(wants-5, he-4)
+advcl(asks-2, wants-5)
+nsubj(abort-8, her-6)
+aux(abort-8, to-7)
+xcomp(wants-5, abort-8)
+det(baby-10, the-9)
+dobj(abort-8, baby-10)
+nsubj(replies-13, he-12)
+conj_and(asks-2, replies-13)
+nsubj(baby-20, It-16)
+cop(baby-20, is-17)
+neg(baby-20, not-18)
+det(baby-20, the-19)
+ccomp(replies-13, baby-20)
+nsubj(need-22, baby-20)
+rcmod(baby-20, need-22)
+xcomp(need-22, killing-23)
+

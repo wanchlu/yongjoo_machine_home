@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP (NNP May))
+    (NP (PRP I))
+    (VP (VBP make)
+      (NP
+        (NP (DT another) (NN point))
+        (PP (IN about)
+          (SBAR
+            (WHNP (WP what))
+            (S (`` ``)
+              (NP (JJ scientific))
+              ('' '')
+              (VP (VBZ is)))))))
+    (. ?)))
+
+tmod(make-3, May-1)
+nsubj(make-3, I-2)
+root(ROOT-0, make-3)
+det(point-5, another-4)
+dobj(make-3, point-5)
+dobj(is-11, what-7)
+nsubj(is-11, scientific-9)
+prepc_about(point-5, is-11)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Crick))
+        (VP (VBD said)
+          (SBAR
+            (S
+              (NP (JJ molecular) (NNS machines))
+              (VP (VBP appear)
+                (S
+                  (VP
+                    (VP (VBN designed))
+                    (CC but)
+                    (VP (VBP are) (RB not))))))))))
+    (, ,)
+    (NP (PRP he))
+    (VP (VBD was)
+      (ADVP (RB never))
+      (VP (VBN castigated)
+        (PP (IN for)
+          (S
+            (VP (VBG being)
+              (ADJP (`` ``) (JJ unscientific)))))))
+    (. .)))
+
+advmod(said-3, When-1)
+nsubj(said-3, Crick-2)
+advcl(castigated-15, said-3)
+amod(machines-5, molecular-4)
+nsubj(appear-6, machines-5)
+ccomp(said-3, appear-6)
+ccomp(appear-6, designed-7)
+ccomp(appear-6, are-9)
+conj_but(designed-7, are-9)
+neg(are-9, not-10)
+nsubjpass(castigated-15, he-12)
+auxpass(castigated-15, was-13)
+neg(castigated-15, never-14)
+root(ROOT-0, castigated-15)
+cop(unscientific-19, being-17)
+prepc_for(castigated-15, unscientific-19)
+

@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (NN case)))
+      (NP (PRP you))
+      (VP (VBP have) (RB n't)
+        (VP (VBN heard))))
+    (, ,)
+    (NP (NNS condoms))
+    (VP (VBP are) (RB n't)
+      (ADJP
+        (NP (CD 100) (NN %))
+        (JJ effective)))
+    (. .)))
+
+prep_in(heard-6, case-2)
+nsubj(heard-6, you-3)
+aux(heard-6, have-4)
+neg(heard-6, n't-5)
+ccomp(effective-13, heard-6)
+nsubj(effective-13, condoms-8)
+cop(effective-13, are-9)
+neg(effective-13, n't-10)
+num(%-12, 100-11)
+npadvmod(effective-13, %-12)
+root(ROOT-0, effective-13)
+
+(ROOT
+  (X
+    (X
+      (ADVP (RB Also))
+      (NP (PRP they)))
+    (S
+      (ADJP (JJ dont))
+      (S
+        (VP (VB prevent)
+          (PP (IN against)
+            (NP
+              (NP (NNP STI) (POS 's))
+              (CC and)
+              (NP (NNP STD) (POS 's)))))))))
+
+dep(they-2, Also-1)
+dep(prevent-4, they-2)
+dep(prevent-4, dont-3)
+root(ROOT-0, prevent-4)
+prep_against(prevent-4, STI-6)
+possessive(STI-6, 's-7)
+prep_against(prevent-4, STD-9)
+conj_and(STI-6, STD-9)
+

@@ -1,0 +1,225 @@
+(ROOT
+  (S
+    (ADVP (RB Guess))
+    (NP (PRP it))
+    (VP (VBZ depends)
+      (PP (IN on)
+        (SBAR
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ 's)
+                (NP
+                  (NP (NN study))
+                  (SBAR
+                    (S
+                      (NP (PRP you))
+                      (VP (VBD read))))))))
+          (CC and)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP they))
+              (VP (VBP ask)
+                (NP (DT the) (NNS questions))))))))
+    (. .)))
+
+advmod(depends-3, Guess-1)
+nsubj(depends-3, it-2)
+root(ROOT-0, depends-3)
+nsubj(study-7, who-5)
+cop(study-7, 's-6)
+prepc_on(depends-3, study-7)
+dobj(read-9, study-7)
+nsubj(read-9, you-8)
+rcmod(study-7, read-9)
+advmod(ask-13, how-11)
+nsubj(ask-13, they-12)
+prepc_on(depends-3, ask-13)
+conj_and(study-7, ask-13)
+dobj(read-9, ask-13)
+det(questions-15, the-14)
+dobj(ask-13, questions-15)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP CDC))
+    (VP (VBZ tells)
+      (NP (DT a) (JJ different) (NN story)))
+    (. .)))
+
+det(CDC-2, The-1)
+nsubj(tells-3, CDC-2)
+root(ROOT-0, tells-3)
+det(story-6, a-4)
+amod(story-6, different-5)
+dobj(tells-3, story-6)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP STD))
+      (VP (VBZ means)
+        (SBAR
+          (SBAR
+            (S
+              (VP
+                (ADVP (RB sexually))
+                (VBN transmitted))))
+          (CC and)
+          (SBAR (IN if)
+            (S
+              (NP (PRP$ your))
+              (VP (RB not)
+                (S
+                  (VP (VBG having)
+                    (NP
+                      (NP (NN sex))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (DT any) (NN kind))
+                          (PP (IN of)
+                            (NP (JJ sexual) (NN contact))))
+                        (-RRB- -RRB-))
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP 're) (RB not)
+                            (VP (VBG transmitting))))))))))))))
+    (: ;)
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (ADJP (RB that) (JJ simple))))
+    (. .)))
+
+nsubj(means-2, STD-1)
+root(ROOT-0, means-2)
+advmod(transmitted-4, sexually-3)
+dep(means-2, transmitted-4)
+mark(not-8, if-6)
+nsubj(not-8, your-7)
+dep(means-2, not-8)
+conj_and(transmitted-4, not-8)
+xcomp(not-8, having-9)
+dobj(having-9, sex-10)
+det(kind-13, any-12)
+dep(sex-10, kind-13)
+amod(contact-16, sexual-15)
+prep_of(kind-13, contact-16)
+nsubj(transmitting-21, you-18)
+aux(transmitting-21, 're-19)
+neg(transmitting-21, not-20)
+rcmod(sex-10, transmitting-21)
+nsubj(simple-26, It-23)
+cop(simple-26, 's-24)
+advmod(simple-26, that-25)
+parataxis(means-2, simple-26)
+
+(ROOT
+  (S
+    (VP (VB Ask)
+      (NP
+        (NP (DT the) (NNP CDC))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP they))
+            (VP (VBP do)
+              (PP (IN in)
+                (NP
+                  (NP (DT an) (NN outbreak))
+                  (, ,)
+                  (NP (NN quarantine)))))))))
+    (. .)))
+
+root(ROOT-0, Ask-1)
+det(CDC-3, the-2)
+dobj(Ask-1, CDC-3)
+dobj(do-6, CDC-3)
+rel(do-6, what-4)
+nsubj(do-6, they-5)
+rcmod(CDC-3, do-6)
+det(outbreak-9, an-8)
+prep_in(do-6, outbreak-9)
+appos(outbreak-9, quarantine-11)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (NNS hospitals))
+      (VP (RB not) (VB allow)
+        (NP (NNS children) (NNS visitors))
+        (PP (IN during)
+          (NP (NN flu) (NN season)))))
+    (. ?)))
+
+advmod(allow-5, Why-1)
+aux(allow-5, do-2)
+nsubj(allow-5, hospitals-3)
+neg(allow-5, not-4)
+root(ROOT-0, allow-5)
+nn(visitors-7, children-6)
+dobj(allow-5, visitors-7)
+nn(season-10, flu-9)
+prep_during(allow-5, season-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBN advised)
+        (S
+          (VP (TO to)
+            (VP (VB stay)
+              (ADVP (IN at) (NN home))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (ADJP (JJ sick)))))))))
+    (. ?)))
+
+advmod(advised-4, Why-1)
+auxpass(advised-4, are-2)
+nsubjpass(advised-4, you-3)
+xsubj(stay-6, you-3)
+root(ROOT-0, advised-4)
+aux(stay-6, to-5)
+xcomp(advised-4, stay-6)
+advmod(stay-6, at-7)
+dep(at-7, home-8)
+advmod(sick-10, when-9)
+advcl(stay-6, sick-10)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB tell)
+      (NP (PRP me))
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (DT this) (NN approach))
+          (VP (VBZ works)
+            (PP (IN for)
+              (NP
+                (NP (DT all) (NNS diseases))
+                (PP (IN except)
+                  (NP (RB sexually) (JJ transmitted) (NNS ones)))))))))
+    (. ?)))
+
+dep(tell-2, Please-1)
+root(ROOT-0, tell-2)
+dobj(tell-2, me-3)
+advmod(works-7, why-4)
+det(approach-6, this-5)
+nsubj(works-7, approach-6)
+advcl(tell-2, works-7)
+det(diseases-10, all-9)
+prep_for(works-7, diseases-10)
+advmod(ones-14, sexually-12)
+amod(ones-14, transmitted-13)
+prep_except(diseases-10, ones-14)
+

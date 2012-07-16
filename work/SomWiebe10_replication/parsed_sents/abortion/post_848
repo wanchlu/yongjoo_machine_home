@@ -1,0 +1,78 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ Okay))
+    (, ,)
+    (SBAR
+      (WHADVP
+        (ADVP (RB so))
+        (WRB how))
+      (S
+        (NP (RB about) (PRP we))
+        (ADVP (RB only))
+        (VP (VBP allow)
+          (NP
+            (NP (NNS women))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBN raped)
+                    (CC or)
+                    (VBN impregnated)
+                    (PP (IN against)
+                      (NP (PRP$ their) (NN will)
+                        (S
+                          (VP (TO to)
+                            (VP (VB have)
+                              (NP (NNS abortions)))))))))))))))
+    (. ?)))
+
+root(ROOT-0, Okay-1)
+advmod(how-4, so-3)
+advmod(allow-8, how-4)
+advmod(we-6, about-5)
+nsubj(allow-8, we-6)
+advmod(allow-8, only-7)
+dep(Okay-1, allow-8)
+dobj(allow-8, women-9)
+nsubjpass(raped-12, women-9)
+nsubjpass(impregnated-14, women-9)
+auxpass(raped-12, are-11)
+rcmod(women-9, raped-12)
+rcmod(women-9, impregnated-14)
+conj_or(raped-12, impregnated-14)
+poss(will-17, their-16)
+prep_against(raped-12, will-17)
+aux(have-19, to-18)
+infmod(will-17, have-19)
+dobj(have-19, abortions-20)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (NP (DT the) (NN group)))))
+    (NP (PRP you))
+    (VP (VBP seem)
+      (S
+        (VP (TO to)
+          (VP (VB care)
+            (NP (RB so) (RB much) (RB about))))))
+    (. .)))
+
+mark(group-5, Since-1)
+nsubj(group-5, they-2)
+cop(group-5, are-3)
+det(group-5, the-4)
+advcl(seem-7, group-5)
+nsubj(seem-7, you-6)
+xsubj(care-9, you-6)
+root(ROOT-0, seem-7)
+aux(care-9, to-8)
+xcomp(seem-7, care-9)
+advmod(about-12, so-10)
+advmod(about-12, much-11)
+dobj(care-9, about-12)
+

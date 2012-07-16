@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (VP (VBG shooting)
+              (NP (PRP themselves))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN foot))
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP do)
+                        (NP (DT this))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(shooting-5, they-3)
+aux(shooting-5, are-4)
+ccomp(think-2, shooting-5)
+dobj(shooting-5, themselves-6)
+det(foot-9, the-8)
+prep_in(shooting-5, foot-9)
+tmod(do-12, foot-9)
+advmod(do-12, when-10)
+nsubj(do-12, they-11)
+dep(foot-9, do-12)
+dobj(do-12, this-13)
+

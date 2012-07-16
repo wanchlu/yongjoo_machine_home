@@ -1,0 +1,347 @@
+(ROOT
+  (S
+    (ADVP (RB Ok))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ is)
+      (ADVP (RB actually))
+      (ADJP (RB kinda) (JJ funny)))
+    (. .) (. .)))
+
+advmod(funny-7, Ok-1)
+nsubj(funny-7, this-3)
+cop(funny-7, is-4)
+advmod(funny-7, actually-5)
+advmod(funny-7, kinda-6)
+root(ROOT-0, funny-7)
+
+(ROOT
+  (S
+    (NP (NNP Technically))
+    (NP (NNS fetuses))
+    (VP
+      (VP (VBP are) (RB not)
+        (NP (NNS people)))
+      (, ,)
+      (CC but)
+      (VP (VBN come)
+        (PP (IN on)
+          (NP (NNP Wendy)))
+        (. .)))
+    (. .)))
+
+nsubj(people-5, Technically-1)
+nsubj(come-8, Technically-1)
+nsubj(people-5, fetuses-2)
+cop(people-5, are-3)
+neg(people-5, not-4)
+root(ROOT-0, people-5)
+conj_but(people-5, come-8)
+prep_on(come-8, Wendy-10)
+
+(ROOT
+  (S
+    (NP (NNS Fetuses))
+    (ADVP (RB eventually))
+    (VP (MD WILL)
+      (VP (VB BE)
+        (NP (NNS people)
+          (CC and)
+          (NNS children))
+        (, ,)
+        (PP (IN without)
+          (NP (NN question)))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBD were) (RB n't)
+              (VP (VBN KILLED)))))))
+    (. .)))
+
+nsubj(people-5, Fetuses-1)
+advmod(people-5, eventually-2)
+aux(people-5, WILL-3)
+cop(people-5, BE-4)
+root(ROOT-0, people-5)
+conj_and(people-5, children-7)
+prep_without(people-5, question-10)
+mark(KILLED-15, if-11)
+nsubjpass(KILLED-15, they-12)
+auxpass(KILLED-15, were-13)
+neg(KILLED-15, n't-14)
+advcl(people-5, KILLED-15)
+
+(ROOT
+  (SBARQ (RB So) (, ,)
+    (WHNP (WRB how))
+    (SQ
+      (VP (VBZ is)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (DT this) (JJ relevant))))))
+    (. ?)))
+
+advmod(any-5, So-1)
+nsubj(any-5, how-3)
+cop(any-5, is-4)
+root(ROOT-0, any-5)
+det(relevant-8, this-7)
+prep_of(any-5, relevant-8)
+
+(ROOT
+  (S (CC And)
+    (ADVP (RB also))
+    (, ,)
+    (NP (DT a) (NN murderer))
+    (VP (VBZ is)
+      (NP
+        (NP (NN someone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ takes)
+              (SBAR
+                (S
+                  (NP (DT another))
+                  (VP (VBZ 's)
+                    (NP (NN life)))
+                  (. .))))))))
+    (. .)))
+
+cc(someone-7, And-1)
+advmod(someone-7, also-2)
+det(murderer-5, a-4)
+nsubj(someone-7, murderer-5)
+cop(someone-7, is-6)
+root(ROOT-0, someone-7)
+nsubj(takes-9, someone-7)
+rcmod(someone-7, takes-9)
+nsubj(life-12, another-10)
+cop(life-12, 's-11)
+ccomp(takes-9, life-12)
+
+(ROOT
+  (S (CC and)
+    (NP (DT that))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR
+          (WHADJP (RB exactly) (WP what))
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (VP (VBG doing)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (VP (VBG KILLING)
+                      (NP (DT A) (NN CHILD)
+                        (CC or)
+                        (NN fetus)))))))))
+        (CC or)
+        (SBAR
+          (WHNP (WDT whatever))
+          (S
+            (NP (PRP you))
+            (VP (MD would)
+              (VP (VB like)
+                (S
+                  (VP (TO to)
+                    (VP (VB justify)
+                      (NP (PRP it))
+                      (SBAR (IN as)
+                        (S
+                          (VP (TO to)
+                            (VP (VB make)
+                              (S
+                                (NP (PRP yourself))
+                                (VP (VB feel)
+                                  (ADVP (RBR better)))))))))))))))))
+    (. .)))
+
+cc(is-3, and-1)
+nsubj(is-3, that-2)
+root(ROOT-0, is-3)
+dep(doing-8, exactly-4)
+dep(exactly-4, what-5)
+nsubj(doing-8, they-6)
+aux(doing-8, are-7)
+dep(is-3, doing-8)
+advmod(KILLING-10, when-9)
+advcl(doing-8, KILLING-10)
+det(CHILD-12, A-11)
+dobj(KILLING-10, CHILD-12)
+dobj(KILLING-10, fetus-14)
+conj_or(CHILD-12, fetus-14)
+dobj(like-19, whatever-16)
+nsubj(like-19, you-17)
+xsubj(justify-21, you-17)
+aux(like-19, would-18)
+dep(is-3, like-19)
+conj_or(doing-8, like-19)
+aux(justify-21, to-20)
+xcomp(like-19, justify-21)
+dobj(justify-21, it-22)
+mark(make-25, as-23)
+aux(make-25, to-24)
+advcl(justify-21, make-25)
+xcomp(justify-21, make-25)
+nsubj(feel-27, yourself-26)
+ccomp(make-25, feel-27)
+advmod(feel-27, better-28)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB understand)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NNS people))
+            (VP (MD would)
+              (VP (VB want)
+                (S
+                  (VP (TO to)
+                    (VP (VB kill)
+                      (NP (PRP$ their) (JJ own) (NN child))
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBD knew)
+                            (ADVP (DT all) (IN along))
+                            (SBAR (IN that)
+                              (S
+                                (NP (NN pregnancy))
+                                (VP (MD could)
+                                  (VP (VB happen)))))))))))))))))
+    (. .)))
+
+nsubj(understand-4, I-1)
+aux(understand-4, do-2)
+neg(understand-4, not-3)
+root(ROOT-0, understand-4)
+advmod(want-8, how-5)
+nsubj(want-8, people-6)
+xsubj(kill-10, people-6)
+aux(want-8, would-7)
+ccomp(understand-4, want-8)
+aux(kill-10, to-9)
+xcomp(want-8, kill-10)
+poss(child-13, their-11)
+amod(child-13, own-12)
+dobj(kill-10, child-13)
+advmod(knew-16, when-14)
+nsubj(knew-16, they-15)
+advcl(kill-10, knew-16)
+dep(along-18, all-17)
+advmod(knew-16, along-18)
+complm(happen-22, that-19)
+nsubj(happen-22, pregnancy-20)
+aux(happen-22, could-21)
+ccomp(knew-16, happen-22)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB see)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (DT the) (NN child))
+            (VP (MD should)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB suffer)
+                      (PP (IN for)
+                        (NP (PRP$ their) (NNS parents)))
+                      (NP (JJ horrible) (NNS decisions)))))))
+            (. .)))))
+    (. .)))
+
+nsubj(see-4, I-1)
+aux(see-4, do-2)
+neg(see-4, not-3)
+root(ROOT-0, see-4)
+advmod(have-9, why-5)
+det(child-7, the-6)
+nsubj(have-9, child-7)
+xsubj(suffer-11, child-7)
+aux(have-9, should-8)
+advcl(see-4, have-9)
+aux(suffer-11, to-10)
+xcomp(have-9, suffer-11)
+poss(parents-14, their-13)
+prep_for(suffer-11, parents-14)
+amod(decisions-16, horrible-15)
+dobj(suffer-11, decisions-16)
+
+(ROOT
+  (S
+    (NP (DT a) (NN baby))
+    (VP (VBZ is)
+      (ADJP (RB so) (JJ innocent)))
+    (. .) (. .)))
+
+det(baby-2, a-1)
+nsubj(innocent-5, baby-2)
+cop(innocent-5, is-3)
+advmod(innocent-5, so-4)
+root(ROOT-0, innocent-5)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP they))
+      (VP (VBP have)
+        (VP (VBN done)
+          (ADJP (NN nothing) (JJ wrong))
+          (PP (TO to)
+            (NP (DT the) (NN world))))))
+    (: ...) (RB so)
+    (S
+      (VP
+        (VP (VB have)
+          (NP (DT the) (NN child)))
+        (CC and)
+        (VP (VB bless)
+          (NP (NN someone) (RB else))
+          (PP (IN with)
+            (NP (DT the) (NN privilege)))
+          (SBAR (IN that)
+            (S
+              (NP (PRP one))
+              (VP (VBZ is)
+                (VP (VBG taking)
+                  (PP (IN for)
+                    (S
+                      (VP (JJ granted)))))))))))
+    (. .)))
+
+nsubj(done-3, they-1)
+aux(done-3, have-2)
+root(ROOT-0, done-3)
+dep(wrong-5, nothing-4)
+acomp(done-3, wrong-5)
+det(world-8, the-7)
+prep_to(done-3, world-8)
+advmod(done-3, so-10)
+ccomp(done-3, have-11)
+det(child-13, the-12)
+dobj(have-11, child-13)
+ccomp(done-3, bless-15)
+conj_and(have-11, bless-15)
+dobj(bless-15, someone-16)
+advmod(someone-16, else-17)
+det(privilege-20, the-19)
+prep_with(bless-15, privilege-20)
+complm(taking-24, that-21)
+nsubj(taking-24, one-22)
+aux(taking-24, is-23)
+ccomp(bless-15, taking-24)
+prepc_for(taking-24, granted-26)
+

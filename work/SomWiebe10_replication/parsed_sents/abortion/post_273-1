@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN someone))
+        (VP
+          (VP (VBZ is)
+            (ADJP (JJ alive)))
+          (, ,)
+          (CC but)
+          (VP (VBZ needs)
+            (NP (JJ mechanical) (NN aid))
+            (PP (TO to)
+              (NP (NN breath)))))))
+    (, ,)
+    (NP
+      (NP (RB then))
+      (VP (VBG taking)
+        (NP (DT that))
+        (PRT (RP away))))
+    (VP (MD would)
+      (VP (VB be)
+        (NP (NN murder))))
+    (. .)))
+
+mark(alive-4, If-1)
+nsubj(alive-4, someone-2)
+nsubj(needs-7, someone-2)
+cop(alive-4, is-3)
+advcl(murder-19, alive-4)
+conj_but(alive-4, needs-7)
+advcl(murder-19, needs-7)
+amod(aid-9, mechanical-8)
+dobj(needs-7, aid-9)
+prep_to(needs-7, breath-11)
+nsubj(murder-19, then-13)
+partmod(then-13, taking-14)
+dobj(taking-14, that-15)
+prt(taking-14, away-16)
+aux(murder-19, would-17)
+cop(murder-19, be-18)
+root(ROOT-0, murder-19)
+

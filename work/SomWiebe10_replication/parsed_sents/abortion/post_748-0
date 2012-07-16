@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP oh)
+      (CC and)
+      (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (NN something))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ lives)
+              (PRT (RP off))
+              (PP (IN of)
+                (NP
+                  (NP (PRP you))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (MD can)
+                        (VP (VB kill)
+                          (NP (PRP you))
+                          (PP (IN like)
+                            (NP
+                              (INTJ (UH oh) (UH say))))))))
+                  (: ...)
+                  (NP (DT a) (NN tumor)))))))))
+    (. ?)))
+
+nsubj(something-5, oh-1)
+conj_and(oh-1, it-3)
+nsubj(something-5, it-3)
+cop(something-5, is-4)
+root(ROOT-0, something-5)
+nsubj(lives-7, something-5)
+rcmod(something-5, lives-7)
+prep_off_of(lives-7, you-10)
+nsubj(kill-13, you-10)
+aux(kill-13, can-12)
+rcmod(you-10, kill-13)
+dobj(kill-13, you-14)
+prep_like(kill-13, oh-16)
+dep(oh-16, say-17)
+det(tumor-20, a-19)
+dep(you-10, tumor-20)
+

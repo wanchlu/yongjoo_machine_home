@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP
+          (NP (DT a) (NN man))
+          (CC and)
+          (NP (DT a) (NN woman)))
+        (VP
+          (VP
+            (ADVP (RB together))
+            (VBP think)
+            (NP (`` ``) (NN child) ('' '')))
+          (, ,)
+          (CC but)
+          (VP (MD can) (RB not)
+            (VP (VB bear)
+              (NP (CD one)))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ true) (NN death))
+        (PP (IN of)
+          (NP (DT the) (NN unborn)))))
+    (. .)))
+
+advmod(think-8, When-1)
+det(man-3, a-2)
+nsubj(think-8, man-3)
+nsubj(bear-16, man-3)
+det(woman-6, a-5)
+conj_and(man-3, woman-6)
+nsubj(think-8, woman-6)
+advmod(think-8, together-7)
+advcl(death-22, think-8)
+dobj(think-8, child-10)
+aux(bear-16, can-14)
+neg(bear-16, not-15)
+conj_but(think-8, bear-16)
+advcl(death-22, bear-16)
+dobj(bear-16, one-17)
+nsubj(death-22, that-19)
+cop(death-22, is-20)
+amod(death-22, true-21)
+root(ROOT-0, death-22)
+det(unborn-25, the-24)
+prep_of(death-22, unborn-25)
+

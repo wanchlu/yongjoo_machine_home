@@ -1,0 +1,52 @@
+(ROOT
+  (FRAG
+    (NP (DT The) (NN evidence))
+    (, ,)
+    (SBAR (IN as)
+      (S
+        (VP (VBD presented)
+          (SBAR
+            (S
+              (PRN (-LRB- -LRB-)
+                (NP (NN astronomical) (, ,) (NN geological) (, ,) (NN archeological))
+                (-RRB- -RRB-))
+              (NP (DT all))
+              (VP (VBZ points)
+                (PRT (RP back))
+                (NP
+                  (NP (JJ past) (JJ 6k) (NNS years))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT the) (NN evidence))
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VBZ contradicts)
+                                (NP (DT this))))))))))))))))
+    (. ?)))
+
+det(evidence-2, The-1)
+root(ROOT-0, evidence-2)
+mark(presented-5, as-4)
+dep(evidence-2, presented-5)
+nn(archeological-11, astronomical-7)
+dep(archeological-11, geological-9)
+dep(points-14, archeological-11)
+nsubj(points-14, all-13)
+ccomp(presented-5, points-14)
+prt(points-14, back-15)
+amod(years-18, past-16)
+amod(years-18, 6k-17)
+dobj(points-14, years-18)
+nsubj(evidence-23, years-18)
+cop(evidence-23, is-21)
+det(evidence-23, the-22)
+rcmod(years-18, evidence-23)
+nsubj(contradicts-25, evidence-23)
+rcmod(evidence-23, contradicts-25)
+dobj(contradicts-25, this-26)
+

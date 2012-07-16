@@ -1,0 +1,123 @@
+(ROOT
+  (S
+    (NP (NN obedience))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN upon)
+          (NP (NN separation)))))
+    (. .)))
+
+nsubjpass(based-3, obedience-1)
+auxpass(based-3, is-2)
+root(ROOT-0, based-3)
+prep_upon(based-3, separation-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN ruler))
+      (CC and)
+      (NP (DT the)))
+    (VP (VBD ruled))
+    (. .)))
+
+det(ruler-2, The-1)
+nsubj(ruled-5, ruler-2)
+conj_and(ruler-2, the-4)
+nsubj(ruled-5, the-4)
+root(ROOT-0, ruled-5)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (MD can)
+      (VP (VB be)
+        (NP
+          (NP (DT no) (NN communion))
+          (PP (IN with)
+            (PRN (, ,)
+              (CC and)
+              (ADVP (RB therefore)))
+            (NP
+              (NP (DT no) (JJ true) (NN understanding))
+              (PP (IN of) ('' '')
+                (NP (NN god)))
+              ('' '')
+              (PP (IN under)
+                (NP (DT this) (JJ archaic) (NN principle))))))))
+    (. .)))
+
+expl(communion-5, There-1)
+aux(communion-5, can-2)
+cop(communion-5, be-3)
+det(communion-5, no-4)
+root(ROOT-0, communion-5)
+dep(therefore-9, and-8)
+dep(communion-5, therefore-9)
+det(understanding-12, no-10)
+amod(understanding-12, true-11)
+prep_with(communion-5, understanding-12)
+prep_of(understanding-12, god-15)
+det(principle-20, this-18)
+amod(principle-20, archaic-19)
+prep_under(understanding-12, principle-20)
+
+(ROOT
+  (S
+    (NP (NN Obedience))
+    (VP (VBZ is)
+      (NP
+        (NP (NN fear))
+        (VP (VBN based))))
+    (. .)))
+
+nsubj(fear-3, Obedience-1)
+cop(fear-3, is-2)
+root(ROOT-0, fear-3)
+partmod(fear-3, based-4)
+
+(ROOT
+  (S
+    (NP (`` ``) (NN disobedience) ('' ''))
+    (VP (VBZ is)
+      (NP
+        (NP (NN love))
+        (VP (VBN based))))
+    (. .)))
+
+nsubj(love-5, disobedience-2)
+cop(love-5, is-4)
+root(ROOT-0, love-5)
+partmod(love-5, based-6)
+
+(ROOT
+  (FRAG
+    (NP (RB Not) (JJ KNOWING))
+    (SBAR
+      (WHNP (WP what))
+      (PRN
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (NP
+              (NP (NN obeying\/disobeying))
+              (SBAR
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ stupidity)))
+                  (: ;))))))
+        (-RRB- -RRB-))
+      (S
+        (VP (VBZ =)))
+      (. ?))))
+
+neg(KNOWING-2, Not-1)
+root(ROOT-0, KNOWING-2)
+nsubj(=-11, what-3)
+nsubj(obeying\/disobeying-6, you-4)
+cop(obeying\/disobeying-6, are-5)
+dep(=-11, obeying\/disobeying-6)
+cop(stupidity-8, is-7)
+rcmod(obeying\/disobeying-6, stupidity-8)
+dep(KNOWING-2, =-11)
+

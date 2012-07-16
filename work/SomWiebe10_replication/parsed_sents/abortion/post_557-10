@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Belief))
+      (ADVP (RB alone))
+      (VP (VBZ does) (RB n't)
+        (VP (VB cut)
+          (NP (PRP it))
+          (PP (IN for)
+            (NP (PRP me))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (S
+            (S
+              (VP (VBN come)
+                (PP (IN on))))
+            (, ,)
+            (NP (DT some) (NNS people))
+            (VP (VBP believe)
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN strangest))
+                  (PP (IN of)
+                    (NP (NNS things)))))))
+          (CC and)
+          (S
+            (ADVP (RB never))
+            (VP (VB have)
+              (S
+                (NP
+                  (NP (DT the) (JJS least) (NN bit))
+                  (PP (IN of)
+                    (NP (NN evidence))))
+                (VP (TO to)
+                  (VP (VB support)
+                    (NP (PRP$ their) (NNS beliefs))))))))))
+    (. .)))
+
+nsubj(cut-5, Belief-1)
+advmod(cut-5, alone-2)
+aux(cut-5, does-3)
+neg(cut-5, n't-4)
+ccomp(mean-11, cut-5)
+dobj(cut-5, it-6)
+prep_for(cut-5, me-8)
+nsubj(mean-11, I-10)
+root(ROOT-0, mean-11)
+partmod(believe-17, come-12)
+prep(come-12, on-13)
+det(people-16, some-15)
+nsubj(believe-17, people-16)
+nsubj(have-25, people-16)
+dep(mean-11, believe-17)
+det(strangest-20, the-19)
+prep_in(believe-17, strangest-20)
+prep_of(strangest-20, things-22)
+neg(have-25, never-24)
+dep(mean-11, have-25)
+conj_and(believe-17, have-25)
+det(bit-28, the-26)
+amod(bit-28, least-27)
+nsubj(support-32, bit-28)
+prep_of(bit-28, evidence-30)
+aux(support-32, to-31)
+ccomp(have-25, support-32)
+xcomp(have-25, support-32)
+poss(beliefs-34, their-33)
+dobj(support-32, beliefs-34)
+

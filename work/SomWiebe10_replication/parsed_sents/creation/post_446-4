@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ supernatural) (NN explanation))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ leads)
+            (PP (TO to)
+              (NP
+                (ADJP (JJ accurate))
+                (NNS predictions)))))))
+    (VP (VBZ is)
+      (ADJP (JJR better)
+        (PP (IN for)
+          (NP (NN science)))
+        (PP (IN than)
+          (NP
+            (NP (DT a) (JJ natural) (NN explanation))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ does) (RB not)
+                  (VP (VB lead)
+                    (PP (TO to)
+                      (NP
+                        (ADJP (JJ accurate))
+                        (NNS predictions)))))))))))
+    (. .)))
+
+det(explanation-3, A-1)
+amod(explanation-3, supernatural-2)
+nsubj(leads-5, explanation-3)
+nsubj(better-10, explanation-3)
+rcmod(explanation-3, leads-5)
+amod(predictions-8, accurate-7)
+prep_to(leads-5, predictions-8)
+cop(better-10, is-9)
+root(ROOT-0, better-10)
+prep_for(better-10, science-12)
+det(explanation-16, a-14)
+amod(explanation-16, natural-15)
+prep_than(better-10, explanation-16)
+nsubj(lead-20, explanation-16)
+aux(lead-20, does-18)
+neg(lead-20, not-19)
+rcmod(explanation-16, lead-20)
+amod(predictions-23, accurate-22)
+prep_to(lead-20, predictions-23)
+

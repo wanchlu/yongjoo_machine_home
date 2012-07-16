@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Then))
+      (NP (DT a) (NN kitten))
+      (VP (VBZ is) (RB n't)
+        (ADJP (JJ complete))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT a) (NN cat))
+        (ADJP (JJ capable)
+          (PP (IN of)
+            (NP (NN reproduction)))))
+      (VP (VBZ is)))
+    (. .)))
+
+advmod(complete-6, Then-1)
+det(kitten-3, a-2)
+nsubj(complete-6, kitten-3)
+cop(complete-6, is-4)
+neg(complete-6, n't-5)
+root(ROOT-0, complete-6)
+det(cat-10, a-9)
+nsubj(is-14, cat-10)
+amod(cat-10, capable-11)
+prep_of(capable-11, reproduction-13)
+conj_but(complete-6, is-14)
+
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (DT any) (JJ objective) (NN standard)))
+    (, ,)
+    (NP (DT a) (NN kitten))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP (DT a)
+          (ADJP
+            (ADJP (JJ complete))
+            (PRN (-LRB- -LRB-)
+              (ADVP (IN albeit) (RB not))
+              (ADJP (RB fully) (JJ mature))
+              (-RRB- -RRB-)))
+          (VBG living) (NN feline))))
+    (. .)))
+
+det(standard-4, any-2)
+amod(standard-4, objective-3)
+agent(considered-9, standard-4)
+det(kitten-7, a-6)
+nsubjpass(considered-9, kitten-7)
+auxpass(considered-9, is-8)
+root(ROOT-0, considered-9)
+det(feline-19, a-10)
+amod(feline-19, complete-11)
+dep(mature-16, albeit-13)
+dep(albeit-13, not-14)
+advmod(mature-16, fully-15)
+dep(complete-11, mature-16)
+amod(feline-19, living-18)
+dobj(considered-9, feline-19)
+

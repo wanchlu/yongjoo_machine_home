@@ -1,0 +1,68 @@
+(ROOT
+  (S (CC And)
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (DT the) (NN point))
+        (VP (VBZ is)
+          (VP (VBN reached)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP
+                  (NP (DT the) (NN fetus))
+                  (, ,)
+                  (SBAR (IN if)
+                    (S
+                      (VP (VBN delivered))))
+                  (, ,))
+                (VP (MD would)
+                  (VP (VB have)
+                    (NP
+                      (NP (RB even) (DT a) (JJ small) (NN chance))
+                      (PP (IN of)
+                        (NP (NN survival))))
+                    (PP (IN outside)
+                      (NP (DT the) (NN uterus)))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP (DT the) (NN line))
+          (VP (VBZ is)
+            (VP (VBN drawn)
+              (CC and)
+              (VBN crossed))))))
+    (. .)))
+
+cc(believe-27, And-1)
+advmod(reached-6, when-2)
+det(point-4, the-3)
+nsubjpass(reached-6, point-4)
+auxpass(reached-6, is-5)
+advcl(believe-27, reached-6)
+advmod(have-15, where-7)
+det(fetus-9, the-8)
+nsubj(have-15, fetus-9)
+mark(delivered-12, if-11)
+dep(fetus-9, delivered-12)
+aux(have-15, would-14)
+advcl(reached-6, have-15)
+advmod(chance-19, even-16)
+det(chance-19, a-17)
+amod(chance-19, small-18)
+dobj(have-15, chance-19)
+prep_of(chance-19, survival-21)
+det(uterus-24, the-23)
+prep_outside(have-15, uterus-24)
+nsubj(believe-27, I-26)
+root(ROOT-0, believe-27)
+det(line-29, the-28)
+nsubjpass(drawn-31, line-29)
+nsubjpass(crossed-33, line-29)
+auxpass(drawn-31, is-30)
+ccomp(believe-27, drawn-31)
+ccomp(believe-27, crossed-33)
+conj_and(drawn-31, crossed-33)
+

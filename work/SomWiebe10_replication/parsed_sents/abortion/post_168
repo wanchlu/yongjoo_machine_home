@@ -1,0 +1,120 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN majority))
+      (PP (IN of)
+        (NP (NNPS Americans))))
+    (VP (VBP oppose)
+      (NP (JJ late) (NN term) (NNS abortions)))
+    (. .)))
+
+det(majority-2, The-1)
+nsubj(oppose-5, majority-2)
+prep_of(majority-2, Americans-4)
+root(ROOT-0, oppose-5)
+amod(abortions-8, late-6)
+nn(abortions-8, term-7)
+dobj(oppose-5, abortions-8)
+
+(ROOT
+  (S
+    (NP (NNP Gallup) (NNP Poll) (NNP Question))
+    (VP (VBP Do)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (NN abortion))
+                (VP (MD should)
+                  (ADVP (RB generally))
+                  (VP (VB be)
+                    (ADJP
+                      (ADJP (JJ legal))
+                      (CC or)
+                      (ADJP (RB generally) (JJ illegal)))
+                    (PP (IN during)
+                      (NP
+                        (NP (DT the) (JJ second) (CD three) (NNS months))
+                        (PP (IN of)
+                          (NP (NN pregnancy)))))))))))))
+    (. ?)))
+
+nn(Question-3, Gallup-1)
+nn(Question-3, Poll-2)
+nsubj(Do-4, Question-3)
+root(ROOT-0, Do-4)
+nsubj(think-6, you-5)
+ccomp(Do-4, think-6)
+nsubj(legal-11, abortion-7)
+nsubj(illegal-14, abortion-7)
+aux(legal-11, should-8)
+advmod(legal-11, generally-9)
+cop(legal-11, be-10)
+ccomp(think-6, legal-11)
+advmod(illegal-14, generally-13)
+ccomp(think-6, illegal-14)
+conj_or(legal-11, illegal-14)
+det(months-19, the-16)
+amod(months-19, second-17)
+num(months-19, three-18)
+prep_during(legal-11, months-19)
+prep_of(months-19, pregnancy-21)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (CD 65) (NN %))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (S
+            (S
+              (ADJP (JJ illegal)
+                (PP (IN in)
+                  (NP
+                    (NP (NNP July))
+                    (PP (IN of)
+                      (NP (CD 1996)))))))
+            (, ,)
+            (NP (CD 69) (NN %))
+            (VP (VBD said)
+              (ADJP (JJ illegal))
+              (PP (IN in)
+                (NP
+                  (NP (NNP March))
+                  (PP (IN of)
+                    (NP (CD 2000)))))))
+          (, ,)
+          (CC and)
+          (S
+            (NP (CD 68) (NN %))
+            (VP (VBD said)
+              (ADJP (JJ illegal))
+              (PP (IN in)
+                (NP
+                  (NP (NNP January))
+                  (PP (IN of)
+                    (NP (CD 2003))))))))))
+    (-RRB- -RRB-) (. .)))
+
+num(%-3, 65-2)
+nsubj(said-4, %-3)
+root(ROOT-0, said-4)
+ccomp(said-13, illegal-5)
+prep_in(illegal-5, July-7)
+prep_of(July-7, 1996-9)
+num(%-12, 69-11)
+nsubj(said-13, %-12)
+dep(said-4, said-13)
+acomp(said-13, illegal-14)
+prep_in(said-13, March-16)
+prep_of(March-16, 2000-18)
+num(%-22, 68-21)
+nsubj(said-23, %-22)
+dep(said-4, said-23)
+conj_and(said-13, said-23)
+acomp(said-23, illegal-24)
+prep_in(said-23, January-26)
+prep_of(January-26, 2003-28)
+

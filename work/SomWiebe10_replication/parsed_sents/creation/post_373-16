@@ -1,0 +1,37 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (: ...)
+          (NP (NNP and))
+          (PP (IN arguments) (`` ``)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBP are) (RB not)
+                  (ADJP (JJ worth)))))))
+        (NP (DT the)))
+      (VP (VBZ electrons)))
+    (PRN
+      (NP (NN being))
+      (VP (VBD used)))
+    (S
+      (NP (TO to))
+      (VP (VBP display)
+        (NP (PRP them))))
+    (. .)))
+
+nsubj(electrons-11, and-3)
+prep(and-3, arguments-4)
+nsubj(worth-9, which-6)
+cop(worth-9, are-7)
+neg(worth-9, not-8)
+dep(arguments-4, worth-9)
+dep(and-3, the-10)
+root(ROOT-0, electrons-11)
+nsubj(used-13, being-12)
+dep(electrons-11, used-13)
+nsubj(display-15, to-14)
+ccomp(electrons-11, display-15)
+dobj(display-15, them-16)
+

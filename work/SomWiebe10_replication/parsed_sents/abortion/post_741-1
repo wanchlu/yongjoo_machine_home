@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN life))
+      (PP (IN that)
+        (NP (JJ many) (NNS families))))
+    (VP (VBP are)
+      (VP (VBG dieing)
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP
+                (NP (NN care))
+                (PP (IN of)
+                  (SBAR (IN because)
+                    (S
+                      (NP (PRP they))
+                      (VP (MD can) (RB not)
+                        (VP (VB have)
+                          (NP
+                            (NP (NNS children))
+                            (PP (IN of)
+                              (NP (PRP$ their) (JJ own)))))))))))))))
+    (. .)))
+
+det(life-2, A-1)
+nsubj(dieing-7, life-2)
+xsubj(take-9, life-2)
+amod(families-5, many-4)
+prep_that(life-2, families-5)
+aux(dieing-7, are-6)
+root(ROOT-0, dieing-7)
+aux(take-9, to-8)
+xcomp(dieing-7, take-9)
+dobj(take-9, care-10)
+mark(have-16, because-12)
+nsubj(have-16, they-13)
+aux(have-16, can-14)
+neg(have-16, not-15)
+prepc_of(care-10, have-16)
+dobj(have-16, children-17)
+poss(own-20, their-19)
+prep_of(children-17, own-20)
+

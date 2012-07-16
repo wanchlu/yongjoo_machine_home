@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR
+      (S
+        (SBAR (IN If)
+          (S
+            (NP (PRP you))
+            (VP (VBP disagree))))
+        (, ,)
+        (VP (VB show)
+          (NP (PRP us))
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (DT these) (NNS tools)
+                (CC and)
+                (NNS methods))
+              (VP (VBD were)
+                (VP (VBN followed)
+                  (S
+                    (VP (TO to)
+                      (VP (VB infer)
+                        (NP
+                          (NP (NN design))
+                          (PP (IN for)
+                            (NP (DT the) (JJ bacterial) (NN flagellaAnd))))
+                        (ADVP (RB then))))))))))))
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (NN silence)))
+    (: ...)))
+
+mark(disagree-3, If-1)
+nsubj(disagree-3, you-2)
+advcl(show-5, disagree-3)
+dep(was-23, show-5)
+dobj(show-5, us-6)
+advmod(followed-13, how-7)
+det(tools-9, these-8)
+nsubjpass(followed-13, tools-9)
+xsubj(infer-15, tools-9)
+conj_and(tools-9, methods-11)
+nsubjpass(followed-13, methods-11)
+xsubj(infer-15, methods-11)
+auxpass(followed-13, were-12)
+dep(show-5, followed-13)
+aux(infer-15, to-14)
+xcomp(followed-13, infer-15)
+dobj(infer-15, design-16)
+det(flagellaAnd-20, the-18)
+amod(flagellaAnd-20, bacterial-19)
+prep_for(design-16, flagellaAnd-20)
+advmod(infer-15, then-21)
+expl(was-23, there-22)
+root(ROOT-0, was-23)
+nsubj(was-23, silence-24)
+

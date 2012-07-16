@@ -1,0 +1,45 @@
+(ROOT
+  (SQ
+    (S
+      (NP (PRP You))
+      (ADVP (RB only))
+      (VP (VBP have)
+        (NP (NN time)
+          (S
+            (VP (TO to)
+              (VP (VB save)
+                (NP
+                  (NP (CD one))
+                  (CC or)
+                  (NP (DT the) (JJ other)))))))))
+    (, ,)
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB save)
+        (NP
+          (NP (DT the) (NN girl))
+          (CC or)
+          (NP (DT the) (CD 10) (VBN fertilized) (NNS eggs)))))
+    (. ?)))
+
+nsubj(have-3, You-1)
+advmod(have-3, only-2)
+dep(save-14, have-3)
+dobj(have-3, time-4)
+aux(save-6, to-5)
+infmod(time-4, save-6)
+dobj(save-6, one-7)
+det(other-10, the-9)
+dobj(save-6, other-10)
+conj_or(one-7, other-10)
+aux(save-14, do-12)
+nsubj(save-14, you-13)
+root(ROOT-0, save-14)
+det(girl-16, the-15)
+dobj(save-14, girl-16)
+det(eggs-21, the-18)
+num(eggs-21, 10-19)
+amod(eggs-21, fertilized-20)
+dobj(save-14, eggs-21)
+conj_or(girl-16, eggs-21)
+

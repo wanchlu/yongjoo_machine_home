@@ -1,0 +1,42 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP (VB say)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJ mere) (NN presence))
+            (PP (IN of)
+              (NP (NN sperm)
+                (CC and)
+                (NN ovum))))
+          (VP (VBZ is)
+            (ADJP (JJ enough)
+              (PP (IN for)
+                (NP (DT the) (NN die))))
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN cast)))))))))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+dep(not-2, say-3)
+complm(enough-13, that-4)
+det(presence-7, the-5)
+amod(presence-7, mere-6)
+nsubj(enough-13, presence-7)
+xsubj(cast-19, presence-7)
+prep_of(presence-7, sperm-9)
+prep_of(presence-7, ovum-11)
+conj_and(sperm-9, ovum-11)
+cop(enough-13, is-12)
+ccomp(say-3, enough-13)
+det(die-16, the-15)
+prep_for(enough-13, die-16)
+aux(cast-19, to-17)
+auxpass(cast-19, be-18)
+xcomp(enough-13, cast-19)
+

@@ -1,0 +1,152 @@
+(ROOT
+  (S
+    (NP (NNP Human) (NN life))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN continuum))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ does) (RB not)
+              (VP (VB start)
+                (CC and)
+                (VB stop)
+                (PP (IN at)
+                  (NP (NN conception)))))))))
+    (. .)))
+
+nn(life-2, Human-1)
+nsubj(continuum-5, life-2)
+cop(continuum-5, is-3)
+det(continuum-5, a-4)
+root(ROOT-0, continuum-5)
+nsubj(start-9, continuum-5)
+nsubj(stop-11, continuum-5)
+aux(start-9, does-7)
+neg(start-9, not-8)
+rcmod(continuum-5, start-9)
+rcmod(continuum-5, stop-11)
+conj_and(start-9, stop-11)
+prep_at(start-9, conception-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP George) (NNP Carlin))
+      (, ,)
+      (NP
+        (NP (NN comedian))
+        (`` ``)
+        (NP (NNS People))))
+    (VP (VBP say)
+      (S (`` ``)
+        (NP (NN life))
+        (VP (VBZ begins)
+          (PP (IN at)
+            (NP (NN conception))))))
+    (. .)))
+
+nn(Carlin-2, George-1)
+nsubj(say-7, Carlin-2)
+appos(Carlin-2, comedian-4)
+dep(comedian-4, People-6)
+root(ROOT-0, say-7)
+nsubj(begins-10, life-9)
+ccomp(say-7, begins-10)
+prep_at(begins-10, conception-12)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP I))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (NN life))
+            (VP (VBD began)
+              (ADVP
+                (NP
+                  (QP (RB about) (DT a) (CD billion))
+                  (NNS years))
+                (RB ago)))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP (DT a) (JJ continuous) (NN process))))
+    (. .)))
+
+nsubj(say-3, I-2)
+root(ROOT-0, say-3)
+nsubj(began-5, life-4)
+ccomp(say-3, began-5)
+quantmod(billion-8, about-6)
+quantmod(billion-8, a-7)
+num(years-9, billion-8)
+npadvmod(ago-10, years-9)
+advmod(began-5, ago-10)
+nsubj(process-16, it-12)
+cop(process-16, 's-13)
+det(process-16, a-14)
+amod(process-16, continuous-15)
+conj_and(say-3, process-16)
+
+(ROOT
+  (S ('' '') (-LRB- -LRB-)
+    (NP (CD 9))
+    (-RRB- -RRB-)
+    (VP
+      (VP (VBD Therefore) (, ,)
+        (S
+          (S
+            (NP (PRP you))
+            (VP (MD ca) (RB n't)
+              (VP (VB call)
+                (NP (DT a) (NN fetus) (NN something) (JJ other))
+                (PP (IN than)
+                  (NP (NN life))))))
+          (: ;)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (NP
+                (NP (NN part))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (JJ long) (NN continuum))
+                    (PP (IN of)
+                      (NP (JJ human) (NN life))))))))))
+      (CC and)
+      (VP (MD must)
+        (VP (VB be)
+          (ADJP (RB fully) (VBN respected)
+            (PP (IN as)
+              (NP (JJ such)))))))
+    (. .)))
+
+nsubj(Therefore-5, 9-3)
+nsubjpass(respected-32, 9-3)
+root(ROOT-0, Therefore-5)
+nsubj(call-10, you-7)
+aux(call-10, ca-8)
+neg(call-10, n't-9)
+dep(Therefore-5, call-10)
+det(something-13, a-11)
+nn(something-13, fetus-12)
+dobj(call-10, something-13)
+amod(something-13, other-14)
+prep_than(call-10, life-16)
+nsubj(part-20, it-18)
+cop(part-20, is-19)
+parataxis(call-10, part-20)
+det(continuum-24, the-22)
+amod(continuum-24, long-23)
+prep_of(part-20, continuum-24)
+amod(life-27, human-26)
+prep_of(continuum-24, life-27)
+aux(respected-32, must-29)
+auxpass(respected-32, be-30)
+advmod(respected-32, fully-31)
+conj_and(Therefore-5, respected-32)
+prep_such_as(respected-32, such-34)
+

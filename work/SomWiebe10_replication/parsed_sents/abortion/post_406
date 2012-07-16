@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (S
+      (PP (IN As)
+        (NP (DT a) (NN rule)))
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB reccommend)
+          (NP (PRP$ my) (JJ own) (NNS posts)))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (EX there))
+          (VP (VBZ 's)
+            (NP
+              (NP (DT a) (JJ single) (NN post))
+              (PP (IN on)
+                (NP
+                  (NP (DT this) (NN thread))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (MD should)
+                        (VP (VB be)
+                          (NP (DT this))))))))))))
+      (VP (VBZ is)
+        (ADVP (RB certainly)
+          (NP (CD one)))
+        (ADJP (JJ such))))
+    (. .)))
+
+det(rule-3, a-2)
+prep_as(reccommend-7, rule-3)
+nsubj(reccommend-7, I-4)
+aux(reccommend-7, do-5)
+neg(reccommend-7, n't-6)
+root(ROOT-0, reccommend-7)
+poss(posts-10, my-8)
+amod(posts-10, own-9)
+dobj(reccommend-7, posts-10)
+mark('s-15, if-13)
+expl('s-15, there-14)
+csubj(is-26, 's-15)
+det(post-18, a-16)
+amod(post-18, single-17)
+nsubj('s-15, post-18)
+det(thread-21, this-20)
+prep_on(post-18, thread-21)
+nsubj(this-25, thread-21)
+aux(this-25, should-23)
+cop(this-25, be-24)
+rcmod(thread-21, this-25)
+conj_and(reccommend-7, is-26)
+advmod(is-26, certainly-27)
+pobj(certainly-27, one-28)
+acomp(is-26, such-29)
+

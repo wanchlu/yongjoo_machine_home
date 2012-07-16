@@ -1,0 +1,45 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB suggest)
+        (PP (IN for)
+          (NP
+            (NP
+              (NP (DT these) (NNS women))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP have)
+                    (VP (VBN taken)
+                      (NP
+                        (NP (NNP Plan) (NNP B))
+                        (PP (IN after)
+                          (NP (NN rape)))))))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (DT the) (NNP Plan) (NNP B))
+              (VP (VBZ fails)))))))
+    (. ?)))
+
+dobj(suggest-4, What-1)
+aux(suggest-4, do-2)
+nsubj(suggest-4, you-3)
+root(ROOT-0, suggest-4)
+det(women-7, these-6)
+prep_for(suggest-4, women-7)
+nsubj(taken-10, women-7)
+aux(taken-10, have-9)
+rcmod(women-7, taken-10)
+nn(B-12, Plan-11)
+dobj(taken-10, B-12)
+prep_after(B-12, rape-14)
+det(B-19, the-17)
+nn(B-19, Plan-18)
+prep_for(suggest-4, B-19)
+conj_and(women-7, B-19)
+nsubj(taken-10, B-19)
+dep(B-19, fails-20)
+

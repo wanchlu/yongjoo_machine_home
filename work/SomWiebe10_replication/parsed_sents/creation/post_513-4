@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP DI) (NNS authors))
+    (VP (VBP fault)
+      (SBAR
+        (S
+          (NP (PRP me))
+          (PP (IN for)
+            (NP
+              (ADJP (RB not) (`` ``) (JJ engaging))
+              (NN th)
+              (PRN (-LRB- -LRB-)
+                (X (SYM e))
+                (-RRB- -RRB-))
+              (NN scholarship)))
+          ('' '')
+          (NP (PRP they))
+          (VP (VBP cite)
+            (PP (IN as)
+              (S
+                (VP (VBG providing) (`` ``)
+                  (NP
+                    (NP (JJ empirical) (NN evidence))
+                    (VP (VBG supporting)
+                      (PRN (-LRB- -LRB-) (VB intelligent) (-RRB- -RRB-))
+                      (S
+                        (VP (VB design))))))))))))
+    (. .)))
+
+det(authors-3, The-1)
+nn(authors-3, DI-2)
+nsubj(fault-4, authors-3)
+root(ROOT-0, fault-4)
+nsubj(cite-17, me-5)
+neg(engaging-9, not-7)
+amod(scholarship-14, engaging-9)
+nn(scholarship-14, th-10)
+dep(scholarship-14, e-12)
+prep_for(cite-17, scholarship-14)
+nsubj(cite-17, they-16)
+ccomp(fault-4, cite-17)
+prepc_as(cite-17, providing-19)
+amod(evidence-22, empirical-21)
+dobj(providing-19, evidence-22)
+partmod(evidence-22, supporting-23)
+dep(supporting-23, intelligent-25)
+ccomp(supporting-23, design-27)
+

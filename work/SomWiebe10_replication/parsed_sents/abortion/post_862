@@ -1,0 +1,176 @@
+(ROOT
+  (S
+    (NP (JJ Early-term) (NNS abortions))
+    (VP (MD should)
+      (ADVP (RB undoubtedly))
+      (VP (VB be)
+        (ADJP (JJ legal))))
+    (. .)))
+
+amod(abortions-2, Early-term-1)
+nsubj(legal-6, abortions-2)
+aux(legal-6, should-3)
+advmod(legal-6, undoubtedly-4)
+cop(legal-6, be-5)
+root(ROOT-0, legal-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (NP (CD one) (NN question))
+        (PP (IN for)
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP
+                (NP
+                  (NP (DT those))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBP claim)
+                        (SBAR (IN that)
+                          (S
+                            (NP (NN abortion))
+                            (VP (MD should)
+                              (VP (VB be)
+                                (ADJP (JJ illegal))
+                                (SBAR (IN because)
+                                  (S
+                                    (NP (PRP it))
+                                    (VP (VBZ is)
+                                      (VP (VBG taking)
+                                        (NP (DT a) (NN life))))))))))))))
+                (: :)
+                (SBARQ
+                  (SBAR (IN If)
+                    (S
+                      (S
+                        (NP (NN abortion))
+                        (VP (VBZ becomes)
+                          (ADJP (JJ illegal))))
+                      (, ,)
+                      (CC and)
+                      (S
+                        (NP (DT a) (NN woman))
+                        (VP (VBZ has)
+                          (NP (DT an) (JJ illegal) (NN abortion))))))
+                  (, ,)
+                  (WHNP (WP what))
+                  (SQ (MD should)
+                    (NP (PRP$ her) (NN punishment))
+                    (VP (VB be)))
+                  (. ?))))))))))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+num(question-4, one-3)
+dobj(have-2, question-4)
+prep_for(question-4, all-6)
+prep_of(all-6, those-8)
+nsubj(claim-10, those-8)
+rcmod(those-8, claim-10)
+complm(illegal-15, that-11)
+nsubj(illegal-15, abortion-12)
+aux(illegal-15, should-13)
+cop(illegal-15, be-14)
+ccomp(claim-10, illegal-15)
+mark(taking-19, because-16)
+nsubj(taking-19, it-17)
+aux(taking-19, is-18)
+advcl(illegal-15, taking-19)
+det(life-21, a-20)
+dobj(taking-19, life-21)
+mark(illegal-26, If-23)
+nsubj(illegal-26, abortion-24)
+cop(illegal-26, becomes-25)
+advcl(be-40, illegal-26)
+det(woman-30, a-29)
+nsubj(has-31, woman-30)
+conj_and(illegal-26, has-31)
+advcl(be-40, has-31)
+det(abortion-34, an-32)
+amod(abortion-34, illegal-33)
+dobj(has-31, abortion-34)
+dobj(be-40, what-36)
+aux(be-40, should-37)
+poss(punishment-39, her-38)
+nsubj(be-40, punishment-39)
+dep(those-8, be-40)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Technically))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP she))
+            (VP (VBZ has)
+              (VP (VBN done))))))
+      (VP (VBZ is)
+        (NP (NN murder))))
+    (: ;)
+    (S
+      (ADVP (RB thus))
+      (, ,)
+      (PP (IN under)
+        (NP (JJ current) (NNS laws)))
+      (, ,)
+      (NP (NN capital) (NN punishment))
+      (VP (MD would)
+        (VP (VB be)
+          (NP (DT a) (JJ common) (NN solution)))))
+    (. .)))
+
+dobj(done-5, Technically-1)
+nsubj(murder-7, Technically-1)
+rel(done-5, what-2)
+nsubj(done-5, she-3)
+aux(done-5, has-4)
+rcmod(Technically-1, done-5)
+cop(murder-7, is-6)
+root(ROOT-0, murder-7)
+advmod(solution-21, thus-9)
+amod(laws-13, current-12)
+prep_under(solution-21, laws-13)
+nn(punishment-16, capital-15)
+nsubj(solution-21, punishment-16)
+aux(solution-21, would-17)
+cop(solution-21, be-18)
+det(solution-21, a-19)
+amod(solution-21, common-20)
+parataxis(murder-7, solution-21)
+
+(ROOT
+  (SBARQ
+    (SBAR (RB So))
+    (, ,)
+    (SQ (VBZ does)
+      (NP
+        (NP (DT a) (NN woman))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (NP (DT an) (NN abortion))))))
+      (VP (VB deserve)
+        (NP (DT the) (NN death) (NN penalty))))
+    (. ?)))
+
+dep(deserve-10, So-1)
+aux(deserve-10, does-3)
+det(woman-5, a-4)
+nsubj(has-7, woman-5)
+nsubj(deserve-10, woman-5)
+rcmod(woman-5, has-7)
+det(abortion-9, an-8)
+dobj(has-7, abortion-9)
+root(ROOT-0, deserve-10)
+det(penalty-13, the-11)
+nn(penalty-13, death-12)
+dobj(deserve-10, penalty-13)
+

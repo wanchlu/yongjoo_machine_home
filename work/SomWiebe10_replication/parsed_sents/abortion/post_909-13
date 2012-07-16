@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (ADJP (JJ pro-life)
+          (PP (RB because) (IN of)
+            (NP (PRP$ my) (JJ religious) (NNS beliefs))))))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (VP (VBP m)
+        (ADJP (JJ pro-life)
+          (SBAR (IN because)
+            (S
+              (NP (PRP it))
+              (VP (VBZ makes)
+                (NP (JJ logical) (NN sense))
+                (SBAR (IN that)
+                  (S
+                    (NP (NN abortion))
+                    (VP (VBZ is)
+                      (VP (VBG killing)
+                        (NP
+                          (NP (DT the) (NN life))
+                          (PP (IN of)
+                            (NP (JJ innocent) (NN child))))))))))))))
+    (. .)))
+
+nsubj(pro-life-4, I-1)
+cop(pro-life-4, am-2)
+neg(pro-life-4, not-3)
+root(ROOT-0, pro-life-4)
+poss(beliefs-9, my-7)
+amod(beliefs-9, religious-8)
+prep_because_of(pro-life-4, beliefs-9)
+nsubj(m-12, I-11)
+parataxis(pro-life-4, m-12)
+acomp(m-12, pro-life-13)
+mark(makes-16, because-14)
+nsubj(makes-16, it-15)
+ccomp(pro-life-13, makes-16)
+amod(sense-18, logical-17)
+dobj(makes-16, sense-18)
+complm(killing-22, that-19)
+nsubj(killing-22, abortion-20)
+aux(killing-22, is-21)
+ccomp(makes-16, killing-22)
+det(life-24, the-23)
+dobj(killing-22, life-24)
+amod(child-27, innocent-26)
+prep_of(life-24, child-27)
+

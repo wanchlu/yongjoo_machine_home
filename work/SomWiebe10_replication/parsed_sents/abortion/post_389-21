@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Human) (NNP DNA))
+      (CC or)
+      (NP (DT a) (NN heartbeat)
+        (CC or)
+        (NN brain) (NN activity)))
+    (VP (VBP are) (RB not)
+      (VP (VBG defining)
+        (NP
+          (NP (NN characteristic))
+          (PP (IN of)
+            (NP (DT a) (NN human) (VBG being))))))
+    (. .)))
+
+nn(DNA-2, Human-1)
+nsubj(defining-11, DNA-2)
+det(activity-8, a-4)
+nn(activity-8, heartbeat-5)
+conj_or(heartbeat-5, brain-7)
+nn(activity-8, brain-7)
+conj_or(DNA-2, activity-8)
+nsubj(defining-11, activity-8)
+aux(defining-11, are-9)
+neg(defining-11, not-10)
+root(ROOT-0, defining-11)
+dobj(defining-11, characteristic-12)
+det(human-15, a-14)
+prep_of(characteristic-12, human-15)
+amod(human-15, being-16)
+

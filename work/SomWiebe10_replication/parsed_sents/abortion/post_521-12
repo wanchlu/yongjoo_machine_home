@@ -1,0 +1,42 @@
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP
+        (QP
+          (ADVP (RB Aside) (: :))
+          (CD 59.3))
+        (NN %))
+      (PP (IN of)
+        (NP (NNS abortions))))
+    (PP (IN in)
+      (NP (DT the) (NNP U.S.)))
+    (VP (VBP are)
+      (VP (VBN performed)
+        (PP (IN at)
+          (NP
+            (NP (CD 8) (NNS weeks))
+            (PP (IN of)
+              (NP
+                (NP (NN gestation))
+                (PP (IN of)
+                  (NP
+                    (NP (JJR less))
+                    (PRN (-LRB- -LRB-)
+                      (NP (NNP Wikipedia))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+dep(59.3-4, Aside-2)
+num(%-5, 59.3-4)
+nsubjpass(performed-12, %-5)
+prep_of(%-5, abortions-7)
+det(U.S.-10, the-9)
+prep_in(performed-12, U.S.-10)
+auxpass(performed-12, are-11)
+root(ROOT-0, performed-12)
+num(weeks-15, 8-14)
+prep_at(performed-12, weeks-15)
+prep_of(weeks-15, gestation-17)
+prep_of(gestation-17, less-19)
+appos(less-19, Wikipedia-21)
+

@@ -1,0 +1,93 @@
+(ROOT
+  (PP (IN In)
+    (NP (DT the) (NN beginning))
+    (: ...)))
+
+root(ROOT-0, In-1)
+det(beginning-3, the-2)
+pobj(In-1, beginning-3)
+
+(ROOT
+  (S
+    (NP (DT Every) (NN atheist)
+      (CC and)
+      (NN evolutionist))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (NN problem))
+        (PP (IN with)
+          (NP (DT those) (CD 3) (NNS words)))))
+    (. .)))
+
+det(atheist-2, Every-1)
+nsubj(has-5, atheist-2)
+conj_and(atheist-2, evolutionist-4)
+nsubj(has-5, evolutionist-4)
+root(ROOT-0, has-5)
+det(problem-7, a-6)
+dobj(has-5, problem-7)
+det(words-11, those-9)
+num(words-11, 3-10)
+prep_with(problem-7, words-11)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP \/) (NNP \/) (-RRB- -RRB-) (NNP Evolution))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN religion))
+          (SBAR
+            (S
+              (VP (VBP AGAINST)
+                (NP (DT a) (NN creator))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ their) (NN God))
+      (VP (VBZ is) (`` ``)
+        (NP (NN time))
+        ('' '')))
+    (. .)))
+
+nn(Evolution-4, \/-1)
+nn(Evolution-4, \/-2)
+nsubj(religion-7, Evolution-4)
+cop(religion-7, is-5)
+det(religion-7, a-6)
+root(ROOT-0, religion-7)
+rcmod(religion-7, AGAINST-8)
+det(creator-10, a-9)
+dobj(AGAINST-8, creator-10)
+poss(God-14, their-13)
+nsubj(time-17, God-14)
+cop(time-17, is-15)
+conj_and(religion-7, time-17)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB \/) (-RRB- -RRB-)
+        (NP (NNS \/))
+        (-RRB- -RRB-))
+      (CC Let)
+      (VP
+        (ADVP (RB there))
+        (VP (VB be)
+          (ADJP (JJ light)
+            (PP (IN over)
+              (NP
+                (NP (DT the) (NNS darkness))
+                (PP (IN of)
+                  (NP (NN ignorance)))))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+advmod(light-8, there-6)
+cop(light-8, be-7)
+conj_let(\/-1, light-8)
+det(darkness-11, the-10)
+prep_over(light-8, darkness-11)
+prep_of(darkness-11, ignorance-13)
+

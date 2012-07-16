@@ -1,0 +1,123 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB how))
+    (SQ (VBZ is)
+      (VP (VBG stabbing)
+        (NP
+          (NP (DT a) (JJ pregnant) (NN dog))
+          (, ,)
+          (NP
+            (NP (DT the) (JJ same))
+            (PP (IN as)
+              (NP (NN abortion)))))))
+    (. .)))
+
+advmod(stabbing-3, how-1)
+aux(stabbing-3, is-2)
+root(ROOT-0, stabbing-3)
+det(dog-6, a-4)
+amod(dog-6, pregnant-5)
+dobj(stabbing-3, dog-6)
+det(same-9, the-8)
+appos(dog-6, same-9)
+prep_as(same-9, abortion-11)
+
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (RB completely) (JJ different)))
+    (. .)))
+
+nsubj(different-4, it-1)
+cop(different-4, is-2)
+advmod(different-4, completely-3)
+root(ROOT-0, different-4)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP we))
+      (VP (VBP 're) (RB not)
+        (VP (VBG saying)
+          (NP
+            (NP (NN u))
+            (SBAR
+              (S
+                (VP (MD can)
+                  (VP (VB stab)
+                    (NP (DT a) (JJ pregnant) (NN person))))))))))
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (VBP 're)
+        (VP (VBG saying)
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (JJ pregnant) (NN person))
+              (VP (MD should)
+                (VP (VB have)
+                  (NP (DT the) (NN option)
+                    (S
+                      (VP (TO to)
+                        (VP (VB abort))))))))))))
+    (. .)))
+
+nsubj(saying-4, we-1)
+aux(saying-4, 're-2)
+neg(saying-4, not-3)
+root(ROOT-0, saying-4)
+dobj(saying-4, u-5)
+aux(stab-7, can-6)
+rcmod(u-5, stab-7)
+det(person-10, a-8)
+amod(person-10, pregnant-9)
+dobj(stab-7, person-10)
+nsubj(saying-14, we-12)
+aux(saying-14, 're-13)
+conj_but(saying-4, saying-14)
+complm(have-20, that-15)
+det(person-18, the-16)
+amod(person-18, pregnant-17)
+nsubj(have-20, person-18)
+aux(have-20, should-19)
+ccomp(saying-14, have-20)
+det(option-22, the-21)
+dobj(have-20, option-22)
+aux(abort-24, to-23)
+infmod(option-22, abort-24)
+
+(ROOT
+  (S
+    (ADVP (RB not)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ ok)
+              (S
+                (VP (TO to)
+                  (VP (VB go)
+                    (CC and)
+                    (VB stab)
+                    (NP (DT any) (NN person))))))))))
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADJP (JJ pregnant)))
+    (. .)))
+
+neg(pregnant-14, not-1)
+dep(ok-5, that-2)
+nsubj(ok-5, it-3)
+cop(ok-5, is-4)
+ccomp(not-1, ok-5)
+aux(go-7, to-6)
+xcomp(ok-5, go-7)
+xcomp(ok-5, stab-9)
+conj_and(go-7, stab-9)
+det(person-11, any-10)
+dobj(go-7, person-11)
+nsubj(pregnant-14, that-12)
+cop(pregnant-14, is-13)
+root(ROOT-0, pregnant-14)
+

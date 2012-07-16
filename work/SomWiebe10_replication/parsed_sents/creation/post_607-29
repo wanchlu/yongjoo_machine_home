@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP you))
+        (VP (VBP say))))
+    (, ,)
+    (NP (NNP ID))
+    (VP (VBZ is)
+      (ADJP (JJ limited))
+      (SBAR
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WP what)))
+          (S
+            (NP (PRP it))
+            (VP (MD can)
+              (VP (VB do)))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP it))
+            (VP (VBZ does)
+              (SBAR
+                (S
+                  (VP (VBZ is)
+                    (PP (IN of)
+                      (NP (JJ enormous) (NN importance)))))))))))
+    (. .)))
+
+mark(say-3, As-1)
+nsubj(say-3, you-2)
+advcl(limited-7, say-3)
+nsubj(limited-7, ID-5)
+cop(limited-7, is-6)
+root(ROOT-0, limited-7)
+dep(do-12, in-8)
+pobj(in-8, what-9)
+nsubj(do-12, it-10)
+aux(do-12, can-11)
+dep(limited-7, do-12)
+dep(does-17, what-15)
+nsubj(is-18, what-15)
+nsubj(does-17, it-16)
+dep(limited-7, does-17)
+conj_but(do-12, does-17)
+ccomp(does-17, is-18)
+amod(importance-21, enormous-20)
+prep_of(is-18, importance-21)
+

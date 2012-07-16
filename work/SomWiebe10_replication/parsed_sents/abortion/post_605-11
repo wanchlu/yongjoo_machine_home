@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (DT Some))
+    (VP (VBP rely)
+      (PP (IN upon)
+        (NP (NNS medications)))
+      (S
+        (VP (TO to)
+          (VP (VB control)
+            (NP
+              (NP (JJ medical) (NNS conditions))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (NNS medications))
+                  (VP (MD may) (RB not)
+                    (VP (VB be)
+                      (ADJP (JJ compatible)
+                        (PP (IN with)
+                          (NP (NN pregnancy)))))))))))))
+    (. .)))
+
+nsubj(rely-2, Some-1)
+xsubj(control-6, Some-1)
+root(ROOT-0, rely-2)
+prep_upon(rely-2, medications-4)
+aux(control-6, to-5)
+xcomp(rely-2, control-6)
+amod(conditions-8, medical-7)
+dobj(control-6, conditions-8)
+dobj(compatible-15, conditions-8)
+rel(compatible-15, which-10)
+nsubj(compatible-15, medications-11)
+aux(compatible-15, may-12)
+neg(compatible-15, not-13)
+cop(compatible-15, be-14)
+rcmod(conditions-8, compatible-15)
+prep_with(compatible-15, pregnancy-17)
+

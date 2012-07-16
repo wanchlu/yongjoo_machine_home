@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (JJ Late-term) (NNS abortions))
+    (VP
+      (VP (MD should) (RB not)
+        (VP (VB be)
+          (ADJP (JJ legal))
+          (SBAR (IN because)
+            (S
+              (NP (DT the) (NN baby))
+              (VP (VBZ is)
+                (NP
+                  (NP (JJ viable) (NN outside))
+                  (PP (IN of)
+                    (NP (DT the) (NN mother)))))))))
+      (CC and)
+      (VP (VBZ is)
+        (ADJP (JJ alive))))
+    (. .)))
+
+amod(abortions-2, Late-term-1)
+nsubj(legal-6, abortions-2)
+nsubj(alive-18, abortions-2)
+aux(legal-6, should-3)
+neg(legal-6, not-4)
+cop(legal-6, be-5)
+root(ROOT-0, legal-6)
+mark(outside-12, because-7)
+det(baby-9, the-8)
+nsubj(outside-12, baby-9)
+cop(outside-12, is-10)
+amod(outside-12, viable-11)
+advcl(legal-6, outside-12)
+det(mother-15, the-14)
+prep_of(outside-12, mother-15)
+cop(alive-18, is-17)
+conj_and(legal-6, alive-18)
+

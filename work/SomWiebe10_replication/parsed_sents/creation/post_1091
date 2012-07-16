@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB believe)
+              (NP (NN anything)))))))
+    (. .)))
+
+nsubj(have-4, You-1)
+xsubj(believe-6, You-1)
+aux(have-4, do-2)
+neg(have-4, n't-3)
+root(ROOT-0, have-4)
+aux(believe-6, to-5)
+xcomp(have-4, believe-6)
+dobj(believe-6, anything-7)
+
+(ROOT
+  (S
+    (NP (JJ Biological) (NN evolution))
+    (VP (VBZ is)
+      (NP (DT a) (NN fact)))
+    (. .)))
+
+amod(evolution-2, Biological-1)
+nsubj(fact-5, evolution-2)
+cop(fact-5, is-3)
+det(fact-5, a-4)
+root(ROOT-0, fact-5)
+
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (MD can)
+      (VP (VB disprove)
+        (NP (PRP it))))
+    (. .)))
+
+det(one-2, No-1)
+nsubj(disprove-4, one-2)
+aux(disprove-4, can-3)
+root(ROOT-0, disprove-4)
+dobj(disprove-4, it-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBZ pity)
+      (NP
+        (NP (DT the) (NN fool))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ thinks)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP
+                    (VP (MD can))
+                    (CC or)
+                    (VP (VBP have))))))))))
+    (. .)))
+
+nsubj(pity-2, I-1)
+root(ROOT-0, pity-2)
+det(fool-4, the-3)
+dobj(pity-2, fool-4)
+nsubj(thinks-6, fool-4)
+rcmod(fool-4, thinks-6)
+nsubj(can-8, they-7)
+nsubj(have-10, they-7)
+ccomp(thinks-6, can-8)
+ccomp(thinks-6, have-10)
+conj_or(can-8, have-10)
+

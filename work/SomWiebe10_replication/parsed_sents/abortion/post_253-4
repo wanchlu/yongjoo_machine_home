@@ -1,0 +1,69 @@
+(ROOT
+  (X
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (ADVP (RB rationally))
+          (VP (VBG making)
+            (NP (DT the) (NN statement))
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (NN fetus))
+                (VP (VBZ becomes)
+                  (NP
+                    (NP (DT a) (NN person))
+                    (PP (IN at)
+                      (NP
+                        (NP (NN birth))
+                        (PRN (-LRB- -LRB-)
+                          (SBAR
+                            (WHADVP (WRB wherever))
+                            (S
+                              (NP (PRP you))
+                              (VP (VBP derive)
+                                (NP (DT that) (NN standard))
+                                (PP (IN from)))))
+                          (-RRB- -RRB-))))))))))))
+    (, ,)
+    (X (WP what))
+    (NP
+      (NP (RB about) (DT that) (NN baby))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ is)
+            (ADVP
+              (NP (CD 3\/4))
+              (IN out))))))
+    (. ?)))
+
+mark(making-5, If-1)
+nsubj(making-5, you-2)
+aux(making-5, are-3)
+advmod(making-5, rationally-4)
+dep(baby-28, making-5)
+det(statement-7, the-6)
+dobj(making-5, statement-7)
+complm(person-13, that-8)
+det(fetus-10, a-9)
+nsubj(person-13, fetus-10)
+cop(person-13, becomes-11)
+det(person-13, a-12)
+ccomp(making-5, person-13)
+prep_at(person-13, birth-15)
+advmod(derive-19, wherever-17)
+nsubj(derive-19, you-18)
+dep(birth-15, derive-19)
+det(standard-21, that-20)
+dobj(derive-19, standard-21)
+prep(derive-19, from-22)
+dep(baby-28, what-25)
+advmod(baby-28, about-26)
+det(baby-28, that-27)
+root(ROOT-0, baby-28)
+nsubj(is-30, baby-28)
+rcmod(baby-28, is-30)
+npadvmod(out-32, 3\/4-31)
+advmod(is-30, out-32)
+

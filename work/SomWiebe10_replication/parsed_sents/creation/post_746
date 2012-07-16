@@ -1,0 +1,717 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have) (RB n't)
+      (VP (VBN made)
+        (NP (DT a) (NN point))
+        (ADVP (IN at) (DT all))))
+    (. .) (. .)))
+
+nsubj(made-4, You-1)
+aux(made-4, have-2)
+neg(made-4, n't-3)
+root(ROOT-0, made-4)
+det(point-6, a-5)
+dobj(made-4, point-6)
+advmod(made-4, at-7)
+pobj(at-7, all-8)
+
+(ROOT
+  (FRAG
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP 've)
+          (ADVP (RB already))
+          (VP (VBN said))))
+      (. .))
+    (. .)))
+
+mark(said-5, As-1)
+nsubj(said-5, I-2)
+aux(said-5, 've-3)
+advmod(said-5, already-4)
+root(ROOT-0, said-5)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBP are)
+      (PP (IN in)
+        (NP
+          (NP (PRP$ my) (NN opinion))
+          (X
+            (ADVP (RB clearly))
+            (NP (JJ inferior) (NNS versions))
+            (. .)))))
+    (. .)))
+
+nsubj(are-2, they-1)
+root(ROOT-0, are-2)
+poss(opinion-5, my-4)
+prep_in(are-2, opinion-5)
+dep(versions-8, clearly-6)
+amod(versions-8, inferior-7)
+dep(opinion-5, versions-8)
+
+(ROOT
+  (FRAG (CC but)
+    (ADVP (RB still))
+    (NP
+      (NP (DT the) (NN point))
+      (SBAR
+        (S
+          (VP (VBZ remains)
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NN message))
+                (VP (VBZ is)
+                  (NP (DT the) (JJ same))))))))
+      (. .))
+    (. .)))
+
+dep(point-4, but-1)
+dep(point-4, still-2)
+det(point-4, the-3)
+root(ROOT-0, point-4)
+rcmod(point-4, remains-5)
+complm(same-11, that-6)
+det(message-8, the-7)
+nsubj(same-11, message-8)
+cop(same-11, is-9)
+det(same-11, the-10)
+ccomp(remains-5, same-11)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (ADJP (JJ familiar)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (NN commandment))
+          (SBAR (`` ``)
+            (S
+              (NP (NNP Thou) (NNP Shalt))
+              (RB not)
+              (VP (VB Kill)))))))
+    (. ?)))
+
+cop(familiar-3, Are-1)
+nsubj(familiar-3, you-2)
+root(ROOT-0, familiar-3)
+det(commandment-6, the-5)
+prep_with(familiar-3, commandment-6)
+nn(Shalt-9, Thou-8)
+nsubj(Kill-11, Shalt-9)
+neg(Kill-11, not-10)
+dep(commandment-6, Kill-11)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP ...))
+    (VP (VBZ is)
+      (ADVP (RB there))
+      (NP
+        (NP (DT some) (NN question))
+        (PP (IN about)
+          (NP
+            (NP (PRP it) (POS 's))
+            (JJ proper) (NN translation)))))
+    (. ?)))
+
+cop(question-6, is-3)
+advmod(question-6, there-4)
+det(question-6, some-5)
+root(ROOT-0, question-6)
+poss(translation-11, it-8)
+amod(translation-11, proper-10)
+prep_about(question-6, translation-11)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB How)
+        (ADJP (IN about)))
+      (S
+        (S
+          (VP (`` ``) (VB turn)
+            (NP (DT the) (JJ other) (NN cheek))
+            ('' '')))
+        (: ...)
+        (CC or)
+        (S
+          (VP (`` ``) (VBP spare)
+            (NP (DT the) (NN rod))))))
+    (, ,)
+    (VP (VBP spoil)
+      (NP (DT the) (NN child) ('' '')))
+    (: ...)))
+
+advmod(turn-4, How-1)
+dep(How-1, about-2)
+dep(spoil-16, turn-4)
+det(cheek-7, the-5)
+amod(cheek-7, other-6)
+dobj(turn-4, cheek-7)
+conj_or(turn-4, spare-12)
+dep(spoil-16, spare-12)
+det(rod-14, the-13)
+dobj(spare-12, rod-14)
+root(ROOT-0, spoil-16)
+det(child-18, the-17)
+dobj(spoil-16, child-18)
+
+(ROOT
+  (S (`` ``)
+    (VP (VB judge)
+      (SBAR
+        (S
+          (S
+            (ADJP (RB not)
+              (SBAR (IN lest)
+                (S
+                  (NP (NN ye))
+                  (VP (VB be)
+                    (VP (VBN judged) ('' ''))))
+                (CC or)
+                (RB even))))
+          (`` ``)
+          (VP (VBP let)
+            (S
+              (NP (EX there))
+              (VP (VB be)
+                (ADJP (JJ light)))))
+          ('' ''))))
+    (. .)))
+
+root(ROOT-0, judge-2)
+csubj(let-12, not-3)
+mark(judged-7, lest-4)
+nsubjpass(judged-7, ye-5)
+auxpass(judged-7, be-6)
+ccomp(not-3, judged-7)
+ccomp(not-3, even-10)
+advmod(judged-7, even-10)
+conj_or(judged-7, even-10)
+ccomp(judge-2, let-12)
+expl(be-14, there-13)
+ccomp(let-12, be-14)
+acomp(be-14, light-15)
+
+(ROOT
+  (SINV
+    (VP (VBZ Is)
+      (ADVP (RB there)))
+    (NP
+      (NP (DT some) (NN controversy))
+      (PP (IN over)
+        (NP (DT the) (NN translation) (NN ??))))))
+
+root(ROOT-0, Is-1)
+advmod(Is-1, there-2)
+det(controversy-4, some-3)
+nsubj(Is-1, controversy-4)
+det(??-8, the-6)
+nn(??-8, translation-7)
+prep_over(controversy-4, ??-8)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH No))
+      (, ,)
+      (NP (EX there))
+      (VP (VBZ is) (RB n't)))
+    (: ...)
+    (S
+      (ADVP (RB instead))
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADVP (RB just))
+        (NP
+          (NP (DT a) (NN straw) (NN man))
+          (PP (IN by)
+            (NP (NNS atheists))))))
+    (. .)))
+
+dep(is-4, No-1)
+expl(is-4, there-3)
+root(ROOT-0, is-4)
+neg(is-4, n't-5)
+advmod(man-13, instead-7)
+nsubj(man-13, it-8)
+cop(man-13, 's-9)
+advmod(man-13, just-10)
+det(man-13, a-11)
+nn(man-13, straw-12)
+parataxis(is-4, man-13)
+prep_by(man-13, atheists-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (RB Even) (DT those) (NNS words))
+      (SBAR
+        (WHNP (WDT which) (NNS people))
+        (S
+          (VP (VBP bicker)
+            (PRT (RP over))))))
+    (PRN (, ,)
+      (S
+        (NP (DT an) (NN example))
+        (VP (VBG being)
+          (NP
+            (NP (DT the) (NN word) (`` ``) (NN day) ('' ''))
+            (PP (IN in)
+              (NP (NN genesis))))))
+      (, ,))
+    (VP (VBP are)
+      (ADVP (RB truly))
+      (RB not)
+      (ADJP (RB very) (JJ relevant)))
+    (. .)))
+
+advmod(words-3, Even-1)
+det(words-3, those-2)
+det(people-5, words-3)
+nsubj(relevant-24, words-3)
+nsubj(bicker-6, people-5)
+rcmod(words-3, bicker-6)
+prt(bicker-6, over-7)
+det(example-10, an-9)
+nsubj(day-15, example-10)
+cop(day-15, being-11)
+det(day-15, the-12)
+nn(day-15, word-13)
+parataxis(relevant-24, day-15)
+prep_in(day-15, genesis-18)
+cop(relevant-24, are-20)
+advmod(relevant-24, truly-21)
+neg(relevant-24, not-22)
+advmod(relevant-24, very-23)
+root(ROOT-0, relevant-24)
+
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP
+          (NP (NNP Hebrew))
+          (PP (IN from)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP I))
+                (VP (VBP understand)))))))
+      (NP (DT the) (NN word))
+      (VP (VBZ translates)
+        (ADVP (RB loosely))
+        (PP (TO to) (`` ``)
+          (NP (DT a) (NN time))
+          ('' ''))))
+    (: ...)
+    (SINV
+      (S
+        (S
+          (ADVP (RB so))
+          (ADJP (JJ sure)))
+        (, ,)
+        (NP (PRP we))
+        (VP (MD could)
+          (VP (VB argue)
+            (NP (PRP he)))))
+      (VP (VBD made))
+      (NP
+        (NP (DT the) (NN earth))
+        (PP (IN in)
+          (NP (DT a) (NN day))))
+      (. .))
+    (. .)))
+
+prep_in(translates-9, Hebrew-2)
+dobj(understand-6, what-4)
+nsubj(understand-6, I-5)
+prepc_from(Hebrew-2, understand-6)
+det(word-8, the-7)
+nsubj(translates-9, word-8)
+root(ROOT-0, translates-9)
+advmod(translates-9, loosely-10)
+det(time-14, a-13)
+prep_to(translates-9, time-14)
+advmod(sure-18, so-17)
+ccomp(argue-22, sure-18)
+nsubj(argue-22, we-20)
+aux(argue-22, could-21)
+dep(made-24, argue-22)
+dobj(argue-22, he-23)
+parataxis(translates-9, made-24)
+det(earth-26, the-25)
+nsubj(made-24, earth-26)
+det(day-29, a-28)
+prep_in(earth-26, day-29)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+
+(ROOT
+  (S (CC or)
+    (NP
+      (QP (DT a) (CD billion))
+      (NNS years))
+    (ADVP (CC but))
+    (VP (VBZ is)
+      (ADJP (RB that) (JJ important)))
+    (. ?)))
+
+cc(important-8, or-1)
+quantmod(billion-3, a-2)
+num(years-4, billion-3)
+nsubj(important-8, years-4)
+advmod(important-8, but-5)
+cop(important-8, is-6)
+advmod(important-8, that-7)
+root(ROOT-0, important-8)
+
+(ROOT
+  (S (IN For)
+    (NP (SYM a))
+    (VP (VBD Christian)
+      (SBAR
+        (FRAG
+          (ADVP (RB definitely))
+          (RB not) (. .))))
+    (. .)))
+
+dep(Christian-3, For-1)
+nsubj(Christian-3, a-2)
+root(ROOT-0, Christian-3)
+dep(not-5, definitely-4)
+dep(Christian-3, not-5)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB also))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (NN problem))
+        (PP (IN with) (`` ``)
+          (S
+            (VP (VB let)
+              (S
+                (NP (EX there))
+                (VP (VB be)
+                  (ADJP (JJ light))))))
+          ('' '')))
+      (S
+        (VP (VBG coming)
+          (PP (IN before)
+            (NP
+              (NP (DT the) (NN creation))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN sun))
+                  (CC and)
+                  (NP (NNS stars)))))))))
+    (. .)))
+
+nsubj(have-3, You-1)
+advmod(have-3, also-2)
+root(ROOT-0, have-3)
+det(problem-5, a-4)
+dobj(have-3, problem-5)
+prep(problem-5, with-6)
+dep(with-6, let-8)
+expl(be-10, there-9)
+ccomp(let-8, be-10)
+acomp(be-10, light-11)
+xcomp(have-3, coming-13)
+det(creation-16, the-15)
+prep_before(coming-13, creation-16)
+det(sun-19, the-18)
+prep_of(creation-16, sun-19)
+prep_of(creation-16, stars-21)
+conj_and(sun-19, stars-21)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP you))
+    (VP (VBP feel)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT a) (NNP God))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (MD can)
+                  (VP (VB create)
+                    (NP (DT the) (NN universe))
+                    (ADVP (RB somehow)))))))
+          (VP (MD ca) (RB n't)
+            (VP (VB create)
+              (NP (NN light))
+              (PP (IN without)
+                (NP (DT the) (NNP Sun))))))))
+    (. ?)))
+
+dep(feel-3, So-1)
+nsubj(feel-3, you-2)
+root(ROOT-0, feel-3)
+complm(create-15, that-4)
+det(God-6, a-5)
+nsubj(create-9, God-6)
+nsubj(create-15, God-6)
+aux(create-9, can-8)
+rcmod(God-6, create-9)
+det(universe-11, the-10)
+dobj(create-9, universe-11)
+advmod(create-9, somehow-12)
+aux(create-15, ca-13)
+neg(create-15, n't-14)
+ccomp(feel-3, create-15)
+dobj(create-15, light-16)
+det(Sun-19, the-18)
+prep_without(create-15, Sun-19)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (RB pretty) (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP YOU))
+            (VP (MD can)
+              (ADVP (RB even))
+              (VP (VB create)
+                (NP (NN light))
+                (PP (IN without)
+                  (NP
+                    (NP (DT the) (NNP Sun))
+                    (PP (IN in)
+                      (NP (JJ many) (NNS ways)))))
+                (ADVP (RB even))))))))
+    (. .)))
+
+nsubj(sure-4, I-1)
+cop(sure-4, 'm-2)
+advmod(sure-4, pretty-3)
+root(ROOT-0, sure-4)
+nsubj(create-8, YOU-5)
+aux(create-8, can-6)
+advmod(create-8, even-7)
+dep(sure-4, create-8)
+dobj(create-8, light-9)
+det(Sun-12, the-11)
+prep_without(create-8, Sun-12)
+amod(ways-15, many-14)
+prep_in(Sun-12, ways-15)
+advmod(create-8, even-16)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS problems) (NNS people))
+    (VP (VBP have)
+      (PP (IN with)
+        (NP (DT the) (NNP Bible)))
+      (VP (VBP are)
+        (NP
+          (NP (NNS problems))
+          (PP (IN with)
+            (NP (PRP$ their) (NN understanding))))))
+    (: ...)))
+
+det(people-3, The-1)
+nn(people-3, problems-2)
+nsubj(problems-9, people-3)
+aux(problems-9, have-4)
+det(Bible-7, the-6)
+prep_with(problems-9, Bible-7)
+cop(problems-9, are-8)
+root(ROOT-0, problems-9)
+poss(understanding-12, their-11)
+prep_with(problems-9, understanding-12)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP understand)
+      (SBAR (IN that)
+        (S
+          (NP (NNP God))
+          (VP (VBZ knows)
+            (NP (DT every) (JJ future) (NN event))
+            (SBAR (IN before)
+              (S
+                (NP (PRP it))
+                (ADVP (RB ever))
+                (VP (VBZ occurs))))))))
+    (. .)))
+
+cc(understand-3, And-1)
+nsubj(understand-3, I-2)
+root(ROOT-0, understand-3)
+complm(knows-6, that-4)
+nsubj(knows-6, God-5)
+ccomp(understand-3, knows-6)
+det(event-9, every-7)
+amod(event-9, future-8)
+dobj(knows-6, event-9)
+mark(occurs-13, before-10)
+nsubj(occurs-13, it-11)
+advmod(occurs-13, ever-12)
+advcl(knows-6, occurs-13)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (NP
+      (NP (DT some) (NN sort))
+      (PP (IN of)
+        (NP
+          (NP (NN limitation))
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NNP Bible))
+              (VP (VBZ has)
+                (VP (VBN been)
+                  (VP (VBN translated)))))))))
+    (. ?)))
+
+cop(sort-4, Is-1)
+nsubj(sort-4, it-2)
+det(sort-4, some-3)
+root(ROOT-0, sort-4)
+prep_of(sort-4, limitation-6)
+complm(translated-12, that-7)
+det(Bible-9, the-8)
+nsubjpass(translated-12, Bible-9)
+aux(translated-12, has-10)
+auxpass(translated-12, been-11)
+dep(limitation-6, translated-12)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP He))
+      (VP (VBZ knows)
+        (NP
+          (NP (DT the) (NN end) (NN product))
+          (PP (IN for)
+            (NP (CD one))))))
+    (: ...)
+    (CC and)
+    (ADVP (RB secondly))
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN compared)
+          (NP (JJ many) (NNS versions))))
+      (. .))
+    (. .)))
+
+nsubj(knows-2, He-1)
+root(ROOT-0, knows-2)
+det(product-5, the-3)
+nn(product-5, end-4)
+dobj(knows-2, product-5)
+prep_for(product-5, one-7)
+advmod(knows-2, secondly-10)
+conj_and(knows-2, secondly-10)
+nsubj(compared-13, I-11)
+aux(compared-13, 've-12)
+ccomp(knows-2, compared-13)
+conj_and(knows-2, compared-13)
+amod(versions-15, many-14)
+dobj(compared-13, versions-15)
+
+(ROOT
+  (S
+    (PP (IN in)
+      (NP (JJS most) (NNS cases)))
+    (NP (DT the) (NN difference))
+    (VP (VBZ is)
+      (ADJP (JJ negligible)))
+    (. .) (. .)))
+
+amod(cases-3, most-2)
+prep_in(negligible-7, cases-3)
+det(difference-5, the-4)
+nsubj(negligible-7, difference-5)
+cop(negligible-7, is-6)
+root(ROOT-0, negligible-7)
+
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADVP (RB usually))
+      (ADJP
+        (ADJP (NN nothing))
+        (CC but)
+        (ADJP (JJ nit-picking)
+          (PP (IN over)
+            (NP
+              (NP (DT a) (NN word))
+              (CC and)
+              (NP (JJ several) (JJ possible) (NNS synonyms)))))))
+    (. .)))
+
+nsubj(nothing-4, it-1)
+nsubj(nit-picking-6, it-1)
+cop(nothing-4, 's-2)
+advmod(nothing-4, usually-3)
+root(ROOT-0, nothing-4)
+conj_but(nothing-4, nit-picking-6)
+det(word-9, a-8)
+prep_over(nit-picking-6, word-9)
+amod(synonyms-13, several-11)
+amod(synonyms-13, possible-12)
+prep_over(nit-picking-6, synonyms-13)
+conj_and(word-9, synonyms-13)
+
+(ROOT
+  (S
+    (NP (DT The) (NN message))
+    (VP (VBZ remains)
+      (NP (DT the) (JJ same)))
+    (. .)))
+
+det(message-2, The-1)
+nsubj(same-5, message-2)
+cop(same-5, remains-3)
+det(same-5, the-4)
+root(ROOT-0, same-5)
+
+(ROOT
+  (NP
+    (NP (DT Some))
+    (PP (IN of)
+      (FRAG
+        (NP
+          (NP (DT the) (NNS translations))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (MD would) (RB n't)
+                (VP (VB recommend)))))
+          (. .))))
+    (. .)))
+
+root(ROOT-0, Some-1)
+prep(Some-1, of-2)
+det(translations-4, the-3)
+dep(of-2, translations-4)
+dobj(recommend-8, translations-4)
+nsubj(recommend-8, I-5)
+aux(recommend-8, would-6)
+neg(recommend-8, n't-7)
+rcmod(translations-4, recommend-8)
+

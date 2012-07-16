@@ -1,0 +1,138 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ is)
+      (NP (DT the) (JJ real) (NN deal)))
+    (. .)))
+
+nsubj(deal-5, Evolution-1)
+cop(deal-5, is-2)
+det(deal-5, the-3)
+amod(deal-5, real-4)
+root(ROOT-0, deal-5)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP (JJ fossil) (NN evidence)
+        (CC and)
+        (NN DNA)
+        (S
+          (VP (TO to)
+            (ADVP (RB strongly))
+            (VP (VB back)
+              (NP (PRP it))
+              (PRT (RP up)))))))
+    (. .)))
+
+nsubj(have-2, We-1)
+root(ROOT-0, have-2)
+amod(evidence-4, fossil-3)
+dobj(have-2, evidence-4)
+dobj(have-2, DNA-6)
+conj_and(evidence-4, DNA-6)
+aux(back-9, to-7)
+advmod(back-9, strongly-8)
+infmod(DNA-6, back-9)
+dobj(back-9, it-10)
+prt(back-9, up-11)
+
+(ROOT
+  (S
+    (PP (IN By)
+      (S
+        (VP (VBG using)
+          (NP (NNS forensics)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD can)
+      (VP (VB determine)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBD happened)
+              (PP (IN in)
+                (NP (DT the) (NN past)))
+              (PP (IN without)
+                (S
+                  (VP (VBG having)
+                    (S
+                      (VP (TO to)
+                        (ADVP (RB physically))
+                        (VP (VB be)
+                          (ADVP (RB there)))))))))))))
+    (. .)))
+
+prepc_by(determine-7, using-2)
+dobj(using-2, forensics-3)
+nsubj(determine-7, we-5)
+aux(determine-7, can-6)
+root(ROOT-0, determine-7)
+nsubj(happened-9, what-8)
+ccomp(determine-7, happened-9)
+det(past-12, the-11)
+prep_in(happened-9, past-12)
+prepc_without(happened-9, having-14)
+aux(be-17, to-15)
+advmod(be-17, physically-16)
+xcomp(having-14, be-17)
+advmod(be-17, there-18)
+
+(ROOT
+  (FRAG
+    (PP (IN Like)
+      (NP (DT a) (NN detective)))
+    (. .)))
+
+root(ROOT-0, Like-1)
+det(detective-3, a-2)
+pobj(Like-1, detective-3)
+
+(ROOT
+  (S (CC But)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (DT no) (NN need)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN threatened)
+                (PP (IN by)
+                  (NP (NNP Evolution)))))))))
+    (. .)))
+
+cc(is-3, But-1)
+expl(is-3, there-2)
+root(ROOT-0, is-3)
+det(need-5, no-4)
+nsubj(is-3, need-5)
+aux(threatened-8, to-6)
+auxpass(threatened-8, be-7)
+infmod(need-5, threatened-8)
+agent(threatened-8, Evolution-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NN theory))
+    (VP (VBZ does) (RB not)
+      (VP (VB eliminate)
+        (NP
+          (NP (NNP God))
+          (CC or)
+          (NP (NNS Gods)))
+        (PP (IN from)
+          (NP (DT the) (NN picture)))))
+    (. .)))
+
+det(theory-2, The-1)
+nsubj(eliminate-5, theory-2)
+aux(eliminate-5, does-3)
+neg(eliminate-5, not-4)
+root(ROOT-0, eliminate-5)
+dobj(eliminate-5, God-6)
+dobj(eliminate-5, Gods-8)
+conj_or(God-6, Gods-8)
+det(picture-11, the-10)
+prep_from(eliminate-5, picture-11)
+

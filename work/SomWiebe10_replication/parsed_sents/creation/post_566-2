@@ -1,0 +1,40 @@
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NNS media))
+    (VP (VBZ touts)
+      (NP
+        (NP (NNP ID))
+        (PP (IN as)
+          (NP (NN creationism))))
+      (, ,)
+      (SBAR (IN while)
+        (S
+          (NP (JJS most) (NNS universities))
+          (VP (VBP do) (RB not)
+            (VP (VB support)
+              (NP
+                (NP (NN curriculum))
+                (VP (VBG questioning)
+                  (NP
+                    (NP (DT the) (NN theory))
+                    (PP (IN of)
+                      (NP (NN evolution)))))))))))
+    (. .)))
+
+det(media-3, The-2)
+nsubj(touts-4, media-3)
+root(ROOT-0, touts-4)
+dobj(touts-4, ID-5)
+prep_as(ID-5, creationism-7)
+mark(support-14, while-9)
+amod(universities-11, most-10)
+nsubj(support-14, universities-11)
+aux(support-14, do-12)
+neg(support-14, not-13)
+advcl(touts-4, support-14)
+dobj(support-14, curriculum-15)
+partmod(curriculum-15, questioning-16)
+det(theory-18, the-17)
+dobj(questioning-16, theory-18)
+prep_of(theory-18, evolution-20)
+

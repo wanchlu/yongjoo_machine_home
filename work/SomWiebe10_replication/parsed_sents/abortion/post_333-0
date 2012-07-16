@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ pro-choice) (NN position))
+      (PP (IN on)
+        (NP (DT any) (NN issue))))
+    (VP (MD should)
+      (VP (VB maximize)
+        (NP
+          (NP (DT the) (NN number))
+          (PP (IN of)
+            (NP (JJ free) (NNS choices) (, ,) (NN present)
+              (CC and)
+              (NN future))))))
+    (. .)))
+
+det(position-3, A-1)
+amod(position-3, pro-choice-2)
+nsubj(maximize-8, position-3)
+det(issue-6, any-5)
+prep_on(position-3, issue-6)
+aux(maximize-8, should-7)
+root(ROOT-0, maximize-8)
+det(number-10, the-9)
+dobj(maximize-8, number-10)
+amod(choices-13, free-12)
+prep_of(number-10, choices-13)
+prep_of(number-10, present-15)
+conj_and(choices-13, present-15)
+prep_of(number-10, future-17)
+conj_and(choices-13, future-17)
+

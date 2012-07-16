@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR
+          (S
+            (NP (NN evolution))
+            (VP (VBD did)
+              (VP (VB occur)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP GOD))
+      (VP (VBD created)
+        (NP (PRP it))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+nsubj(occur-5, evolution-3)
+aux(occur-5, did-4)
+ccomp(believe-2, occur-5)
+nsubj(created-9, GOD-8)
+conj_but(believe-2, created-9)
+dobj(created-9, it-10)
+
+(ROOT
+  (FRAG
+    (X (SYM \/))
+    (: \/)
+    (NP
+      (NP (NNP -RRB-) (`` \/) (NNP -RRB-) (NNP \/) (-RRB- -RRB-))
+      (VP (VBN AFRAID)))
+    (. ?)))
+
+dep(\/-6, \/-1)
+punct(\/-6, \/-2)
+punct(\/-6, \/-4)
+root(ROOT-0, \/-6)
+partmod(\/-6, AFRAID-8)
+
+(ROOT
+  (S
+    (NP (NNP HAHAHAHA))
+    (VP (VBP Have)
+      (S
+        (NP (PRP you))
+        (VP (VB read)
+          (NP
+            (NP (DT any))
+            (PP (IN of)
+              (NP (PRP$ my) (JJ other) (NNS comments)))))))
+    (. ?)))
+
+nsubj(Have-2, HAHAHAHA-1)
+root(ROOT-0, Have-2)
+nsubj(read-4, you-3)
+ccomp(Have-2, read-4)
+dobj(read-4, any-5)
+poss(comments-9, my-7)
+amod(comments-9, other-8)
+prep_of(any-5, comments-9)
+
+(ROOT
+  (S
+    (VP (VB Obv))
+    (. .)))
+
+root(ROOT-0, Obv-1)
+
+(ROOT
+  (S (RB Not)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB care)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (NNS people))
+            (VP (VBP think)
+              (PP (IN of)
+                (NP (PRP me)))
+              (PP (IN on)
+                (NP (DT the) (NN internet))))))))
+    (. !)))
+
+neg(care-5, Not-1)
+nsubj(care-5, I-2)
+aux(care-5, do-3)
+neg(care-5, n't-4)
+root(ROOT-0, care-5)
+dobj(think-8, what-6)
+nsubj(think-8, people-7)
+ccomp(care-5, think-8)
+prep_of(think-8, me-10)
+det(internet-13, the-12)
+prep_on(think-8, internet-13)
+

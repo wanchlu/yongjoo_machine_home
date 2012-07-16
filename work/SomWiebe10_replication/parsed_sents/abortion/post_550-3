@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB personally))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (NN abortion))
+            (VP (VBZ is)
+              (ADJP (JJ horrible)))))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBD was)
+        (ADJP
+          (ADJP (RB even) (RBR more) (JJ horrible))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (ADJP (JJ illegal))))))))
+    (. .)))
+
+nsubj(think-3, I-1)
+advmod(think-3, personally-2)
+root(ROOT-0, think-3)
+nsubj(horrible-6, abortion-4)
+cop(horrible-6, is-5)
+ccomp(think-3, horrible-6)
+nsubj(horrible-12, it-8)
+cop(horrible-12, was-9)
+advmod(horrible-12, even-10)
+advmod(horrible-12, more-11)
+conj_but(think-3, horrible-12)
+advmod(illegal-16, when-13)
+nsubj(illegal-16, it-14)
+cop(illegal-16, was-15)
+dep(horrible-12, illegal-16)
+

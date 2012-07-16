@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB read)
+            (NP (PRP it))
+            (PP (IN in)
+              (NP (PDT such) (DT a) (NN way)))
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (MD can)
+                  (VP (VB make)
+                    (S
+                      (NP (PRP it))
+                      (RB all)
+                      (VP (VB make)
+                        (NP (NN sense))
+                        (PP (TO to)
+                          (NP (PRP me)))))))))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+xsubj(read-4, I-1)
+root(ROOT-0, have-2)
+aux(read-4, to-3)
+xcomp(have-2, read-4)
+dobj(read-4, it-5)
+predet(way-9, such-7)
+det(way-9, a-8)
+prep_in(read-4, way-9)
+complm(make-13, that-10)
+nsubj(make-13, I-11)
+aux(make-13, can-12)
+ccomp(read-4, make-13)
+nsubj(make-16, it-14)
+advmod(make-16, all-15)
+ccomp(make-13, make-16)
+dobj(make-16, sense-17)
+prep_to(make-16, me-19)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP I))
+    (VP (VB pretend)
+      (S
+        (VP (TO to)
+          (VP (VB know)
+            (NP
+              (NP (DT the) (NN age))
+              (PP (IN of)
+                (NP (DT the) (NN earth))))))))
+    (. ?)))
+
+aux(pretend-3, Do-1)
+nsubj(pretend-3, I-2)
+xsubj(know-5, I-2)
+root(ROOT-0, pretend-3)
+aux(know-5, to-4)
+xcomp(pretend-3, know-5)
+det(age-7, the-6)
+dobj(know-5, age-7)
+det(earth-10, the-9)
+prep_of(age-7, earth-10)
+

@@ -1,0 +1,33 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (RB Not) (IN because)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (JJ wrong)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is) (RB not)
+      (ADVP (RB even))
+      (SBAR (IN that) (, ,)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (RB just) (JJ vacuous))))))
+    (. .)))
+
+dep(wrong-6, Not-2)
+dep(wrong-6, because-3)
+nsubj(wrong-6, it-4)
+cop(wrong-6, is-5)
+dep(is-9, wrong-6)
+nsubj(is-9, it-8)
+root(ROOT-0, is-9)
+neg(is-9, not-10)
+advmod(is-9, even-11)
+complm(vacuous-17, that-12)
+nsubj(vacuous-17, it-14)
+cop(vacuous-17, 's-15)
+advmod(vacuous-17, just-16)
+ccomp(is-9, vacuous-17)
+

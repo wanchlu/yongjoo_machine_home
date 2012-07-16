@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN until)
+        (S
+          (NP (PRP we))
+          (VP (MD can)
+            (VP (VB define)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ means)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (JJ alive))))))))))))
+      (NP (DT this))
+      (VP (VBZ is)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP (DT a) (JJ tough) (NN one))))))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN in)
+        (NP (DT the) (NN meantime)))
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP live)
+              (PP (IN by)
+                (NP (DT the) (NN scalpel)))))))
+      (VP (MD will)
+        (VP (VB die)
+          (PP (IN by)
+            (NP (DT the) (NN scalpel))))))
+    (. .)))
+
+mark(define-4, until-1)
+nsubj(define-4, we-2)
+aux(define-4, can-3)
+advcl(going-13, define-4)
+dep(means-7, what-5)
+nsubj(means-7, it-6)
+xsubj(alive-10, it-6)
+ccomp(define-4, means-7)
+aux(alive-10, to-8)
+cop(alive-10, be-9)
+xcomp(means-7, alive-10)
+nsubj(going-13, this-11)
+xsubj(one-18, this-11)
+aux(going-13, is-12)
+root(ROOT-0, going-13)
+aux(one-18, to-14)
+cop(one-18, be-15)
+det(one-18, a-16)
+amod(one-18, tough-17)
+xcomp(going-13, one-18)
+det(meantime-23, the-22)
+prep_in(die-31, meantime-23)
+nsubj(live-26, those-24)
+nsubj(die-31, those-24)
+rcmod(those-24, live-26)
+det(scalpel-29, the-28)
+prep_by(live-26, scalpel-29)
+aux(die-31, will-30)
+conj_but(going-13, die-31)
+det(scalpel-34, the-33)
+prep_by(die-31, scalpel-34)
+

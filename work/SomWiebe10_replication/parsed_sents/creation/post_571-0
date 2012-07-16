@@ -1,0 +1,32 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (LST (LS 1) (-RRB- -RRB-))
+      (NP (WP What) (NN predictions))
+      (VP (VBZ has)
+        (ADVP (RB ID))
+        (VP (VBN made))))
+    (CC and)
+    (S
+      (S
+        (VP (VB have)
+          (NP (PRP they))))
+      (ADVP (RB so) (RB far))
+      (VP (VBN proven)
+        (S
+          (ADJP (JJ true)))))
+    (. ?)))
+
+dep(made-8, 1-2)
+dep(predictions-5, What-4)
+nsubj(made-8, predictions-5)
+aux(made-8, has-6)
+advmod(made-8, ID-7)
+root(ROOT-0, made-8)
+csubj(proven-14, have-10)
+dobj(have-10, they-11)
+advmod(far-13, so-12)
+advmod(proven-14, far-13)
+conj_and(made-8, proven-14)
+acomp(proven-14, true-15)
+

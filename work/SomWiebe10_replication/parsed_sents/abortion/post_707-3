@@ -1,0 +1,56 @@
+(ROOT
+  (FRAG
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (DT a) (JJ great))
+        (VP (VBP work)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBD did)))))))
+    (. !)))
+
+dep(work-4, What-1)
+dobj(did-6, What-1)
+det(great-3, a-2)
+nsubj(work-4, great-3)
+root(ROOT-0, work-4)
+nsubj(did-6, you-5)
+ccomp(work-4, did-6)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD knew)
+      (NP (PRP me))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN beginning))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ my) (NN making))
+              (, ,)
+              (SBAR
+                (WHPP (IN in)
+                  (WHNP (WDT which)))
+                (S
+                  (NP (PRP I))
+                  (VP (VBD was)
+                    (ADVP (RB completely))
+                    (ADVP (RB alone))))))))))
+    (. .)))
+
+nsubj(knew-2, You-1)
+root(ROOT-0, knew-2)
+dobj(knew-2, me-3)
+det(beginning-6, the-5)
+prep_from(knew-2, beginning-6)
+poss(making-9, my-8)
+prep_of(beginning-6, making-9)
+rel(was-14, which-12)
+nsubj(was-14, I-13)
+rcmod(making-9, was-14)
+advmod(was-14, completely-15)
+advmod(was-14, alone-16)
+

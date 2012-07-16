@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (VP (VB Go)
+      (VP (VBN read) ('' '')
+        (PP (IN On)
+          (NP
+            (NP (DT the) (NNP Origin))
+            (PP (IN of)
+              (NP (NNP Species)))))
+        ('' '')))
+    (: ...)))
+
+root(ROOT-0, Go-1)
+dep(Go-1, read-2)
+det(Origin-6, the-5)
+prep_on(read-2, Origin-6)
+prep_of(Origin-6, Species-8)
+
+(ROOT
+  (S
+    (NP (NNP \/) (NNP \/) (-RRB- -RRB-) (NNP I))
+    (VP (VBP need) (RB not)
+      (VP (VB make)
+        (NP
+          (NP (DT a) (NN point))
+          (PP (IN of)
+            (NP (PRP$ my) (JJ own))))))
+    (. !)))
+
+nn(I-4, \/-1)
+nn(I-4, \/-2)
+nsubj(need-5, I-4)
+root(ROOT-0, need-5)
+neg(need-5, not-6)
+dep(need-5, make-7)
+det(point-9, a-8)
+dobj(make-7, point-9)
+poss(own-12, my-11)
+prep_of(point-9, own-12)
+

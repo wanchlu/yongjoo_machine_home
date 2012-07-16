@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Human) (NN life))
+        (CC and)
+        (NP
+          (NP (DT a) (NN right))
+          (PP (TO to)
+            (NP (NN life)))))
+      (VP (VBP begin)
+        (PP (IN at)
+          (NP (NN conception)))))
+    (: ;)
+    (S
+      (NP (NN abortion))
+      (VP (VBZ is)
+        (NP
+          (NP (NN murder))
+          (SBAR
+            (S
+              (NP (NNP Human) (NN life))
+              (VP (VBZ is)
+                (NP
+                  (NP (NN continuum))
+                  (PP (IN of)
+                    (NP (NN growth)))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ starts)
+                        (PP
+                          (PP (IN at)
+                            (NP (NN conception)))
+                          (, ,) (RB not)
+                          (PP (IN at)
+                            (NP (NN birth))))))))))))))
+    (. .)))
+
+amod(life-2, Human-1)
+nsubj(begin-8, life-2)
+det(right-5, a-4)
+conj_and(life-2, right-5)
+nsubj(begin-8, right-5)
+prep_to(right-5, life-7)
+root(ROOT-0, begin-8)
+prep_at(begin-8, conception-10)
+nsubj(murder-14, abortion-12)
+cop(murder-14, is-13)
+parataxis(begin-8, murder-14)
+nn(life-16, Human-15)
+nsubj(continuum-18, life-16)
+cop(continuum-18, is-17)
+rcmod(murder-14, continuum-18)
+nsubj(starts-22, continuum-18)
+prep_of(continuum-18, growth-20)
+rcmod(continuum-18, starts-22)
+prep_at(starts-22, conception-24)
+neg(starts-22, not-26)
+prep_at(starts-22, birth-28)
+

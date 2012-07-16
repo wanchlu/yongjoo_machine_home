@@ -1,0 +1,94 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (NN abortion))
+      (VP (VBZ is)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (RBS most) (JJ common))
+              (CC and)
+              (NP (JJS safest) (JJ medical) (NNS procedures)))))))
+    ('' '')
+    (VP (VBZ Is) (RB n't)
+      (SBAR (IN that) (IN like)
+        (S
+          (S
+            (VP (VBG saying)
+              (NP (DT the) (JJ electric) (NN chair))))
+          (VP (VBZ is)
+            (ADJP (RB completely) (JJ safe)))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (DT the) (NN executioner))
+          (VP (VBZ does) (RB n't)
+            (VP (VB get))))))
+    (VP (VBN hurt))
+    (. ?)))
+
+nsubj(one-4, abortion-2)
+cop(one-4, is-3)
+ccomp(Is-14, one-4)
+csubj(Is-14, one-4)
+det(common-8, the-6)
+advmod(common-8, most-7)
+prep_of(one-4, common-8)
+amod(procedures-12, safest-10)
+amod(procedures-12, medical-11)
+prep_of(one-4, procedures-12)
+conj_and(common-8, procedures-12)
+root(ROOT-0, Is-14)
+neg(Is-14, n't-15)
+complm(safe-24, that-16)
+dep(safe-24, like-17)
+csubj(safe-24, saying-18)
+det(chair-21, the-19)
+amod(chair-21, electric-20)
+dobj(saying-18, chair-21)
+cop(safe-24, is-22)
+advmod(safe-24, completely-23)
+ccomp(Is-14, safe-24)
+mark(get-31, because-26)
+det(executioner-28, the-27)
+nsubj(get-31, executioner-28)
+aux(get-31, does-29)
+neg(get-31, n't-30)
+advcl(Is-14, get-31)
+dep(Is-14, hurt-32)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ whole) (NN purpose))
+      (PP (IN of)
+        (NP (DT the) (NN procedure))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB kill)
+            (NP (NN someone))))))
+    (. .)))
+
+det(purpose-3, The-1)
+amod(purpose-3, whole-2)
+nsubj(is-7, purpose-3)
+xsubj(kill-9, purpose-3)
+det(procedure-6, the-5)
+prep_of(purpose-3, procedure-6)
+root(ROOT-0, is-7)
+aux(kill-9, to-8)
+xcomp(is-7, kill-9)
+dobj(kill-9, someone-10)
+
+(ROOT
+  (S
+    (VP (VB Not)
+      (ADJP (RB very) (`` ``) (JJ safe) ('' '')))
+    (. .)))
+
+root(ROOT-0, Not-1)
+advmod(safe-4, very-2)
+acomp(Not-1, safe-4)
+

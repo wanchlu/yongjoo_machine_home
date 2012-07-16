@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (PP (TO To)
+        (NP (PRP me)))
+      (NP (DT that) (NN doesnt))
+      (VP (VBP make)
+        (NP (DT any) (NN sense))))
+    (: ...)
+    (CC and)
+    (S
+      (NP (DT some) (NNS people))
+      (VP (VBP say)
+        (PRN (CC but)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (SBAR (IN if)
+                (S
+                  (NP (DT the) (NN person))
+                  (VP (VBD got))))
+              (VP (VBD raped)
+                (CC and)
+                (VBD ended)
+                (PRT (RP up))
+                (NP (JJ pregnant))))))))
+    (: ...)))
+
+prep_to(make-5, me-2)
+det(doesnt-4, that-3)
+nsubj(make-5, doesnt-4)
+root(ROOT-0, make-5)
+det(sense-7, any-6)
+dobj(make-5, sense-7)
+det(people-11, some-10)
+nsubj(say-12, people-11)
+conj_and(make-5, say-12)
+dep(raped-19, but-13)
+dep(raped-19, what-14)
+mark(got-18, if-15)
+det(person-17, the-16)
+nsubj(got-18, person-17)
+csubj(raped-19, got-18)
+csubj(ended-21, got-18)
+parataxis(say-12, raped-19)
+parataxis(say-12, ended-21)
+conj_and(raped-19, ended-21)
+prt(raped-19, up-22)
+dobj(raped-19, pregnant-23)
+

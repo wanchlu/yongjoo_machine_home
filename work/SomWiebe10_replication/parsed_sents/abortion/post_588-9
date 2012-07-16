@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Rules))
+        (PP (IN of)
+          (NP (NN war))))
+      (VP (VBP require)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (JJ intentional) (NN killing))
+              (PP (IN of)
+                (NP (NNS innocents))))
+            (VP (VB be)
+              (VP (VBN met)
+                (PP (IN with)
+                  (NP
+                    (NP (NN court) (NNS martials))
+                    (, ,)
+                    (NP (JJ dishonorable) (NNS discharges))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (JJ severe) (NNS sentences))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (JJS least))
+            (CC and)
+            (NP (NN war) (NNS crimes)))))
+      (VP (VBZ charges)
+        (PP (IN at)
+          (NP (DT the) (JJS most)))))
+    (. .)))
+
+nsubj(require-4, Rules-1)
+prep_of(Rules-1, war-3)
+root(ROOT-0, require-4)
+complm(met-11, that-5)
+amod(killing-7, intentional-6)
+nsubjpass(met-11, killing-7)
+prep_of(killing-7, innocents-9)
+auxpass(met-11, be-10)
+ccomp(require-4, met-11)
+nn(martials-14, court-13)
+prep_with(met-11, martials-14)
+amod(discharges-17, dishonorable-16)
+appos(martials-14, discharges-17)
+amod(sentences-21, severe-20)
+nsubj(charges-28, sentences-21)
+det(least-24, the-23)
+prep_at(sentences-21, least-24)
+nn(crimes-27, war-26)
+prep_at(sentences-21, crimes-27)
+conj_and(least-24, crimes-27)
+conj_and(require-4, charges-28)
+det(most-31, the-30)
+prep_at(charges-28, most-31)
+

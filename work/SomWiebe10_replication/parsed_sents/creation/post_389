@@ -1,0 +1,97 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (NNP PS) (NNP INCLUDING) (NNP CREATIONISM) (NNP AS) (NNP A) (NNP N) (NNP OPTION)
+        (CC AND)
+        (NNP STOPPING) (NNP HYPNOSIS))
+      (PP (IN ON)
+        (NP (NNS STUDENTS))))
+    (VP (VBD WOULD)
+      (S
+        (VP (VBG BRING)
+          (PRT (RP UP))
+          (NP
+            (NP (NNP THEIR) (NNP IQ) (POS 'S))
+            (NN IMMEDIATELY)))))
+    (. !)))
+
+nn(OPTION-8, PS-2)
+nn(OPTION-8, INCLUDING-3)
+nn(OPTION-8, CREATIONISM-4)
+nn(OPTION-8, AS-5)
+nn(OPTION-8, A-6)
+nn(OPTION-8, N-7)
+nsubj(WOULD-14, OPTION-8)
+nn(HYPNOSIS-11, STOPPING-10)
+conj_and(OPTION-8, HYPNOSIS-11)
+nsubj(WOULD-14, HYPNOSIS-11)
+prep_on(OPTION-8, STUDENTS-13)
+root(ROOT-0, WOULD-14)
+xcomp(WOULD-14, BRING-15)
+prt(BRING-15, UP-16)
+nn(IQ-18, THEIR-17)
+poss(IMMEDIATELY-20, IQ-18)
+dobj(BRING-15, IMMEDIATELY-20)
+
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP include)
+          (NP (NN creationism)))))
+    (S
+      (NP (PRP we))
+      (VP (MD should)
+        (VP (VB include)
+          (NP (PDT all) (DT the) (JJ creationist) (NNS stories)))))
+    (: ...)
+    (S
+      (NP (DT the) (NN proof))
+      (VP (VBZ is)
+        (ADJP (RB about) (JJ equal)
+          (PP (IN for)
+            (NP
+              (NP (DT all))
+              (PP (IN of)
+                (NP (PRP them))))))))
+    (. .)))
+
+mark(include-4, If-2)
+nsubj(include-4, we-3)
+dep(include-8, include-4)
+dobj(include-4, creationism-5)
+nsubj(include-8, we-6)
+aux(include-8, should-7)
+root(ROOT-0, include-8)
+predet(stories-12, all-9)
+det(stories-12, the-10)
+amod(stories-12, creationist-11)
+dobj(include-8, stories-12)
+det(proof-15, the-14)
+nsubj(equal-18, proof-15)
+cop(equal-18, is-16)
+advmod(equal-18, about-17)
+parataxis(include-8, equal-18)
+prep_for(equal-18, all-20)
+prep_of(all-20, them-22)
+
+(ROOT
+  (FRAG
+    (FRAG (CC And)
+      (NP (RB really)))
+    (: ...)
+    (FRAG
+      (ADVP
+        (NP (DT the) (JJ hypnosis) (NN bit))
+        (RB again))
+      (ADVP (RB ???)))))
+
+dep(really-2, And-1)
+root(ROOT-0, really-2)
+det(bit-6, the-4)
+amod(bit-6, hypnosis-5)
+npadvmod(again-7, bit-6)
+dep(really-2, again-7)
+dep(again-7, ???-8)
+

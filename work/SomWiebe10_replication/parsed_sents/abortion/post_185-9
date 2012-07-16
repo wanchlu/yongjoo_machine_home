@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (NNP Religion))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (PP (IN with)
+          (NP (NN man)))
+        (PP
+          (PP (IN from)
+            (NP
+              (NP (DT the) (NN beginning)
+                (CC and)
+                (NN man))
+              (NP (PRP himself))))
+          (CC and)
+          (PP (IN by)
+            (S
+              (NP (PRP himself))
+              (VP (MD can) (RB not)
+                (VP (VB seem)
+                  (S
+                    (VP (TO to)
+                      (VP (VB agree)
+                        (SBAR
+                          (WHADVP (WRB when))
+                          (S
+                            (NP (DT that))
+                            (VP (VBD happened)
+                              (ADVP (RB either)))))))))))))))
+    (. .)))
+
+nsubj(been-3, Religion-1)
+nsubj(been-3', Religion-1)
+aux(been-3, has-2)
+root(ROOT-0, been-3)
+conj_and(been-3, been-3')
+prep_with(been-3, man-5)
+det(beginning-8, the-7)
+prep_from(been-3, beginning-8)
+prep_from(been-3, man-10)
+conj_and(beginning-8, man-10)
+dep(beginning-8, himself-11)
+nsubj(seem-17, himself-14)
+xsubj(agree-19, himself-14)
+aux(seem-17, can-15)
+neg(seem-17, not-16)
+prepc_by(been-3', seem-17)
+aux(agree-19, to-18)
+xcomp(seem-17, agree-19)
+advmod(happened-22, when-20)
+nsubj(happened-22, that-21)
+advcl(agree-19, happened-22)
+advmod(happened-22, either-23)
+

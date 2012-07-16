@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (S
+      (PP
+        (NP (CD Three) (NNS weeks))
+        (IN after)
+        (NP (NN conception)))
+      (NP (DT a) (NN baby))
+      (VP (VBZ has)
+        (NP (DT a) (NN heartbeat))))
+    (CC and)
+    (S
+      (PP (IN at)
+        (NP
+          (QP (CD four)
+            (CC and)
+            (DT a) (NN half))
+          (NNS months)))
+      (NP (PRP she))
+      (VP (MD can)
+        (VP (VB experience)
+          (NP (NN pain)))))
+    (. .)))
+
+num(weeks-2, Three-1)
+npadvmod(has-7, weeks-2)
+prep_after(has-7, conception-4)
+det(baby-6, a-5)
+nsubj(has-7, baby-6)
+root(ROOT-0, has-7)
+det(heartbeat-9, a-8)
+dobj(has-7, heartbeat-9)
+number(half-15, four-12)
+conj_and(half-15, a-14)
+quantmod(half-15, a-14)
+num(months-16, a-14)
+num(months-16, half-15)
+prep_at(experience-19, months-16)
+nsubj(experience-19, she-17)
+aux(experience-19, can-18)
+conj_and(has-7, experience-19)
+dobj(experience-19, pain-20)
+

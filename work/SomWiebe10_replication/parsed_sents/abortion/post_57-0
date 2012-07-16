@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ worsens)
+      (NP (NN parenting))
+      (PP (IN by)
+        (S
+          (VP (VBG devaluing)
+            (NP
+              (NP (DT the) (JJ parent-child) (NN relationship))
+              (SBAR
+                (S
+                  (SBAR (IN If)
+                    (S
+                      (NP (DT an) (JJ unborn) (NN child))
+                      (VP (VBZ is)
+                        (VP (VBN seen)
+                          (S
+                            (ADJP (RB as) (JJ expendable)))))))
+                  (, ,)
+                  (NP (DT the) (NN parent))
+                  (VP (VBZ comes)
+                    (S
+                      (VP (TO to)
+                        (VP (VB believe)
+                          (SBAR (IN that)
+                            (S
+                              (NP
+                                (NP (PRP$ their) (NN relationship))
+                                (PP (IN with)
+                                  (NP (DT the) (JJ unborn) (NN child))))
+                              (VP (VBZ is)
+                                (ADJP (JJ conditional)
+                                  (CC and)
+                                  (JJ non-binding))))))))))))))))
+    (. .)))
+
+nsubj(worsens-2, Abortion-1)
+root(ROOT-0, worsens-2)
+dobj(worsens-2, parenting-3)
+prepc_by(worsens-2, devaluing-5)
+det(relationship-8, the-6)
+amod(relationship-8, parent-child-7)
+dobj(devaluing-5, relationship-8)
+dobj(comes-20, relationship-8)
+mark(seen-14, If-9)
+det(child-12, an-10)
+amod(child-12, unborn-11)
+nsubjpass(seen-14, child-12)
+auxpass(seen-14, is-13)
+advcl(comes-20, seen-14)
+advmod(expendable-16, as-15)
+acomp(seen-14, expendable-16)
+det(parent-19, the-18)
+nsubj(comes-20, parent-19)
+xsubj(believe-22, parent-19)
+rcmod(relationship-8, comes-20)
+aux(believe-22, to-21)
+xcomp(comes-20, believe-22)
+complm(conditional-31, that-23)
+poss(relationship-25, their-24)
+nsubj(conditional-31, relationship-25)
+nsubj(non-binding-33, relationship-25)
+det(child-29, the-27)
+amod(child-29, unborn-28)
+prep_with(relationship-25, child-29)
+cop(conditional-31, is-30)
+ccomp(believe-22, conditional-31)
+ccomp(believe-22, non-binding-33)
+conj_and(conditional-31, non-binding-33)
+

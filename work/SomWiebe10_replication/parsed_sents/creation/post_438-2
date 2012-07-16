@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP ID))
+      (VP (VBZ is)
+        (ADVP (RB NOT))
+        (NP
+          (NP (DT an) (NN argument))
+          (PP (IN about)
+            (NP (NN complexity))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB certainly))
+      (VP (VBZ does)
+        (NP (NNP NOT) (NN state))
+        (SBAR (IN that)
+          (S
+            (NP (NN complexity))
+            (VP (MD can)
+              (ADVP (RB only))
+              (VP (VB arise)
+                (PP (IN from)
+                  (NP (NN complexity)))))))))
+    (. .)))
+
+nsubj(argument-5, ID-1)
+cop(argument-5, is-2)
+neg(argument-5, NOT-3)
+det(argument-5, an-4)
+root(ROOT-0, argument-5)
+prep_about(argument-5, complexity-7)
+nsubj(does-11, it-9)
+advmod(does-11, certainly-10)
+conj_and(argument-5, does-11)
+nn(state-13, NOT-12)
+dobj(does-11, state-13)
+complm(arise-18, that-14)
+nsubj(arise-18, complexity-15)
+aux(arise-18, can-16)
+advmod(arise-18, only-17)
+ccomp(does-11, arise-18)
+prep_from(arise-18, complexity-20)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (ADVP (RB once) (RB again))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN shown)
+          (S
+            (VP (TO to)
+              (VP (VB remain)
+                (ADJP (JJ unable)
+                  (S
+                    (VP (TO to)
+                      (VP (VB propose)
+                        (NP
+                          (NP (DT any) (VBG competing) (NNS hypothesis))
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ explains)
+                                (PP
+                                  (ADVP
+                                    (NP (DT the) (NN data))
+                                    (RBR better))
+                                  (IN than)
+                                  (NP (NN science)))))))))))))))))
+    (. .)))
+
+nsubjpass(shown-6, ID-1)
+xsubj(unable-9, ID-1)
+advmod(again-3, once-2)
+advmod(shown-6, again-3)
+aux(shown-6, has-4)
+auxpass(shown-6, been-5)
+root(ROOT-0, shown-6)
+aux(unable-9, to-7)
+cop(unable-9, remain-8)
+xcomp(shown-6, unable-9)
+aux(propose-11, to-10)
+xcomp(unable-9, propose-11)
+det(hypothesis-14, any-12)
+amod(hypothesis-14, competing-13)
+dobj(propose-11, hypothesis-14)
+nsubj(explains-16, hypothesis-14)
+rcmod(hypothesis-14, explains-16)
+det(data-18, the-17)
+npadvmod(better-19, data-18)
+advmod(explains-16, better-19)
+prep_than(explains-16, science-21)
+

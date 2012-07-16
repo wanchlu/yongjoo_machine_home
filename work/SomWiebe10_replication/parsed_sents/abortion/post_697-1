@@ -1,0 +1,46 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (DT The) (NN range))
+        (PP (IN of)
+          (NP
+            (NP (NNS capabilities))
+            (PP (IN that)
+              (NP (NN someone)
+                (CC or)
+                (NN something))))))
+      (VP (VBZ has)))
+    (: ;)
+    (S
+      (NP (NNS powers)
+        (CC or)
+        (NNS resources))
+      (ADVP (RB not) (RB yet))
+      (VP
+        (VP (VBD developed))
+        (CC or)
+        (VP (VBD made)
+          (NP (NN use))
+          (PP (IN of)))))
+    (. .)))
+
+det(range-3, The-2)
+nsubj(has-10, range-3)
+prep_of(range-3, capabilities-5)
+prep_that(capabilities-5, someone-7)
+prep_that(capabilities-5, something-9)
+conj_or(someone-7, something-9)
+root(ROOT-0, has-10)
+nsubj(developed-17, powers-12)
+nsubj(made-19, powers-12)
+conj_or(powers-12, resources-14)
+nsubj(developed-17, resources-14)
+dep(yet-16, not-15)
+advmod(developed-17, yet-16)
+parataxis(has-10, developed-17)
+parataxis(has-10, made-19)
+conj_or(developed-17, made-19)
+dobj(made-19, use-20)
+prep(made-19, of-21)
+

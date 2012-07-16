@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN addition)))
+    (, ,)
+    (NP (NNP Professor) (NNP Behe))
+    (VP (VBD agreed)
+      (SBAR (IN that)
+        (S
+          (S
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NN design))
+                (PP (IN of)
+                  (NP (JJ human) (NNS artifacts)))))
+            (, ,)
+            (NP (PRP we))
+            (VP (VBP know)
+              (NP
+                (NP (DT the) (NN designer))
+                (CC and)
+                (NP (PRP$ its) (NNS attributes)))))
+          (CC and)
+          (S
+            (NP (PRP we))
+            (VP (VBP have)
+              (NP
+                (NP (DT a) (NN baseline))
+                (PP (IN for)
+                  (NP (JJ human) (NN design)))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ does) (RB not)
+                      (VP (VB exist)
+                        (PP (IN for)
+                          (NP
+                            (NP (NN design))
+                            (PP (IN of)
+                              (NP (JJ biological) (NNS systems)))))))))))))))
+    (. .)))
+
+prep_in(agreed-6, addition-2)
+nn(Behe-5, Professor-4)
+nsubj(agreed-6, Behe-5)
+root(ROOT-0, agreed-6)
+complm(know-16, that-7)
+det(design-10, the-9)
+prep_for(know-16, design-10)
+amod(artifacts-13, human-12)
+prep_of(design-10, artifacts-13)
+nsubj(know-16, we-15)
+ccomp(agreed-6, know-16)
+det(designer-18, the-17)
+dobj(know-16, designer-18)
+poss(attributes-21, its-20)
+dobj(know-16, attributes-21)
+conj_and(designer-18, attributes-21)
+nsubj(have-24, we-23)
+ccomp(agreed-6, have-24)
+conj_and(know-16, have-24)
+det(baseline-26, a-25)
+dobj(have-24, baseline-26)
+nsubj(exist-33, baseline-26)
+amod(design-29, human-28)
+prep_for(baseline-26, design-29)
+aux(exist-33, does-31)
+neg(exist-33, not-32)
+rcmod(baseline-26, exist-33)
+prep_for(exist-33, design-35)
+amod(systems-38, biological-37)
+prep_of(design-35, systems-38)
+

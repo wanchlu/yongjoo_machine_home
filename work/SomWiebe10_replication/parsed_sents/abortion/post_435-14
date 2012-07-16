@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (, ,)
+    (SBAR
+      (WHADVP (WRB where))
+      (S
+        (NP
+          (NP (DT the) (NN birth))
+          (PP (IN of)
+            (NP (DT a) (NN child))))
+        (ADVP (RB actually))
+        (VP (VBZ threatens)
+          (NP
+            (NP (DT the) (JJ actual) (NN life))
+            (PP (IN of)
+              (NP (DT the) (NN mother)))))))
+    (, ,)
+    (NP (RB almost) (DT no) (NN one))
+    (VP (VBZ believes)
+      (SBAR
+        (S
+          (NP (NN abortion))
+          (VP (MD should) (RB n't)
+            (VP (VB be)
+              (VP (VBN considered)))))))
+    (. .)))
+
+advmod(believes-21, Now-1)
+advmod(threatens-10, where-3)
+det(birth-5, the-4)
+nsubj(threatens-10, birth-5)
+det(child-8, a-7)
+prep_of(birth-5, child-8)
+advmod(threatens-10, actually-9)
+advcl(believes-21, threatens-10)
+det(life-13, the-11)
+amod(life-13, actual-12)
+dobj(threatens-10, life-13)
+det(mother-16, the-15)
+prep_of(life-13, mother-16)
+advmod(one-20, almost-18)
+det(one-20, no-19)
+nsubj(believes-21, one-20)
+root(ROOT-0, believes-21)
+nsubjpass(considered-26, abortion-22)
+aux(considered-26, should-23)
+neg(considered-26, n't-24)
+auxpass(considered-26, be-25)
+ccomp(believes-21, considered-26)
+

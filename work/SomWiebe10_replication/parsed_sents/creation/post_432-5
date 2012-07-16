@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Mr.) (NNP Luskin) (NNP cant))
+      (VP (VBP have)
+        (S
+          (NP (PRP it))
+          (NP (DT both) (NNS ways)))))
+    (, ,)
+    (CC either)
+    (S
+      (S
+        (NP (DT the) (NN designer))
+        (VP
+          (VP (VBZ is)
+            (NP
+              (NP (NN part))
+              (PP (IN of)
+                (NP (DT a) (JJ scientific) (NN explanation)))))
+          (, ,)
+          (CC and)
+          (VP
+            (ADVP (RB therefore))
+            (ADJP (JJ amenable))
+            (PP (TO to)
+              (NP (JJ scientific) (NN investigation))))))
+      (, ,)
+      (CC or)
+      (S
+        (S
+          (NP (DT the) (NN designer))
+          (VP (VBZ is)
+            (NP (JJ scientifically) (NNS off-limits))))
+        (, ,)
+        (CC and)
+        (S
+          (ADVP (RB therefore))
+          (NP (NNP ID))
+          (VP (VBZ is)
+            (ADJP (JJ non-scientific))))))
+    (. .)))
+
+nn(cant-3, Mr.-1)
+nn(cant-3, Luskin-2)
+nsubj(have-4, cant-3)
+root(ROOT-0, have-4)
+nsubj(ways-7, it-5)
+det(ways-7, both-6)
+xcomp(have-4, ways-7)
+dep(have-4, either-9)
+det(designer-11, the-10)
+nsubj(part-13, designer-11)
+nsubj(amenable-21, designer-11)
+cop(part-13, is-12)
+conj(have-4, part-13)
+det(explanation-17, a-15)
+amod(explanation-17, scientific-16)
+prep_of(part-13, explanation-17)
+advmod(amenable-21, therefore-20)
+conj(have-4, amenable-21)
+conj_and(part-13, amenable-21)
+amod(investigation-24, scientific-23)
+prep_to(amenable-21, investigation-24)
+det(designer-28, the-27)
+nsubj(off-limits-31, designer-28)
+cop(off-limits-31, is-29)
+amod(off-limits-31, scientifically-30)
+conj(have-4, off-limits-31)
+conj_or(part-13, off-limits-31)
+advmod(non-scientific-37, therefore-34)
+nsubj(non-scientific-37, ID-35)
+cop(non-scientific-37, is-36)
+conj_or(part-13, non-scientific-37)
+conj_and(off-limits-31, non-scientific-37)
+

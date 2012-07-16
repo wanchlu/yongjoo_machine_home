@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (JJ fossil) (NN record))
+        (VP (VBZ is) (RB n't)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (S
+                (NP (PRP it))
+                (VP (VBZ appears)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be))))))
+              (CC and)
+              (S
+                (NP (NNP AiG))
+                (VP (MD can)
+                  (VP (VB demonstrate)
+                    (NP (PRP it))))))))))
+    (, ,)
+    (NP (DT the) (NNS scientists))
+    (VP (MD will)
+      (VP (VB listen)))
+    (. .)))
+
+mark(is-5, If-1)
+det(record-4, the-2)
+amod(record-4, fossil-3)
+nsubj(is-5, record-4)
+advcl(listen-21, is-5)
+neg(is-5, n't-6)
+dep(appears-9, what-7)
+nsubj(appears-9, it-8)
+xsubj(be-11, it-8)
+dep(is-5, appears-9)
+aux(be-11, to-10)
+xcomp(appears-9, be-11)
+nsubj(demonstrate-15, AiG-13)
+aux(demonstrate-15, can-14)
+dep(is-5, demonstrate-15)
+conj_and(appears-9, demonstrate-15)
+dobj(demonstrate-15, it-16)
+det(scientists-19, the-18)
+nsubj(listen-21, scientists-19)
+aux(listen-21, will-20)
+root(ROOT-0, listen-21)
+

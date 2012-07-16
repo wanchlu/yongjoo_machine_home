@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT this) (NN book))
+        (VP (VBD ended)
+          (PP (IN with) ('' '')
+            (NP (DT This) (NN volume))))))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ true)))
+      (CC and)
+      (VP (VBD was)
+        (VP (VBN written)
+          (ADVP (RB whilst))
+          (PP (IN under)
+            (NP
+              (NP (JJ divine) (NN inspiration))
+              (PP (IN of)
+                (NP (DT the) (CD one) (JJ true) (NN God))))))))
+    (. .)))
+
+mark(ended-4, If-1)
+det(book-3, this-2)
+nsubj(ended-4, book-3)
+csubjpass(true-10, ended-4)
+csubjpass(written-13, ended-4)
+det(volume-8, This-7)
+prep_with(ended-4, volume-8)
+cop(true-10, is-9)
+root(ROOT-0, true-10)
+auxpass(written-13, was-12)
+conj_and(true-10, written-13)
+advmod(written-13, whilst-14)
+amod(inspiration-17, divine-16)
+prep_under(written-13, inspiration-17)
+det(God-22, the-19)
+num(God-22, one-20)
+amod(God-22, true-21)
+prep_of(inspiration-17, God-22)
+

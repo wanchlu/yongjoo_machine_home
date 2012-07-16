@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNS patterns))
+    (VP (VBP are)
+      (ADJP (DT both) (JJ specific)
+        (CC and)
+        (JJ complex))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NN eg.))
+          (, ,)
+          (NP (NN gattaca)))
+        (-RRB- -RRB-)))
+    (. .)))
+
+det(patterns-2, Some-1)
+nsubj(specific-5, patterns-2)
+nsubj(complex-7, patterns-2)
+cop(specific-5, are-3)
+preconj(specific-5, both-4)
+root(ROOT-0, specific-5)
+conj_and(specific-5, complex-7)
+dep(specific-5, eg.-9)
+appos(eg.-9, gattaca-11)
+
+(ROOT
+  (PP (IN Like)
+    (NP (DT the) (NNS bacteria) (NN flagellum))
+    (: ...)))
+
+root(ROOT-0, Like-1)
+det(flagellum-4, the-2)
+nn(flagellum-4, bacteria-3)
+pobj(Like-1, flagellum-4)
+

@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP I))
+        (VP (VBP am)
+          (PP (IN in)
+            (NP (DT NO) (NN way) (NN religious))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP understand)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (DT some) (NNS people))
+            (VP (VBP are)
+              (ADJP (JJ religious)))))
+        (, ,)
+        (CC and)
+        (SBAR (IN that)
+          (S
+            (NP (NN abortion))
+            (VP (VBZ goes)
+              (PP (IN against)
+                (NP (PRP$ their) (NNS beliefs))))))))
+    (. .)))
+
+mark(am-3, While-1)
+nsubj(am-3, I-2)
+advcl(understand-10, am-3)
+det(religious-7, NO-5)
+nn(religious-7, way-6)
+prep_in(am-3, religious-7)
+nsubj(understand-10, I-9)
+root(ROOT-0, understand-10)
+complm(religious-15, that-11)
+det(people-13, some-12)
+nsubj(religious-15, people-13)
+cop(religious-15, are-14)
+ccomp(understand-10, religious-15)
+complm(goes-20, that-18)
+nsubj(goes-20, abortion-19)
+ccomp(understand-10, goes-20)
+conj_and(religious-15, goes-20)
+poss(beliefs-23, their-22)
+prep_against(goes-20, beliefs-23)
+

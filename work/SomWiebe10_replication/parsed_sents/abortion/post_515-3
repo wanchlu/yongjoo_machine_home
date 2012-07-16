@@ -1,0 +1,44 @@
+(ROOT
+  (S (CC But)
+    (PP (RB as) (IN of)
+      (NP (CD 2005)))
+    (, ,)
+    (NP (DT the) (NNS numbers))
+    (VP (VBP have) (RB n't)
+      (VP (VBN changed)
+        (ADVP (RB much))
+        (PP (IN since)
+          (NP (CD 2000)))))
+    (. .)))
+
+cc(changed-10, But-1)
+prep_as_of(changed-10, 2005-4)
+det(numbers-7, the-6)
+nsubj(changed-10, numbers-7)
+aux(changed-10, have-8)
+neg(changed-10, n't-9)
+root(ROOT-0, changed-10)
+advmod(changed-10, much-11)
+prep_since(changed-10, 2000-13)
+
+(ROOT
+  (S
+    (NP
+      (QP (RB Nearly) (CD seven))
+      (NNP U.S.) (NNS babies))
+    (VP (VBP die)
+      (PRT (RP out))
+      (PP (IN of)
+        (NP (DT every) (CD 1,000) (JJ live) (NNS births))))
+    (. .)))
+
+quantmod(seven-2, Nearly-1)
+num(babies-4, seven-2)
+nn(babies-4, U.S.-3)
+nsubj(die-5, babies-4)
+root(ROOT-0, die-5)
+det(births-11, every-8)
+num(births-11, 1,000-9)
+amod(births-11, live-10)
+prep_out_of(die-5, births-11)
+

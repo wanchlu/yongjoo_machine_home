@@ -1,0 +1,209 @@
+(ROOT
+  (S
+    (NP (NNP Nature))
+    (VP (VBZ does) (RB n't)
+      (ADVP (RB just))
+      (VP (VB dispose)
+        (PP (IN of)
+          (NP (JJ unused) (NN sperm)
+            (CC and)
+            (NNS eggs)))))
+    (. .)))
+
+nsubj(dispose-5, Nature-1)
+aux(dispose-5, does-2)
+neg(dispose-5, n't-3)
+advmod(dispose-5, just-4)
+root(ROOT-0, dispose-5)
+amod(sperm-8, unused-7)
+prep_of(dispose-5, sperm-8)
+prep_of(dispose-5, eggs-10)
+conj_and(sperm-8, eggs-10)
+
+(ROOT
+  (S
+    (ADVP (RB Miscarriage))
+    (, ,)
+    (VP (VBZ gets)
+      (ADJP (JJ rid)
+        (PP (IN of)
+          (NP
+            (NP (NN fetus))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP have)
+                  (VP (VBN started)
+                    (S
+                      (VP (TO to)
+                        (VP (VB develop))))))))))))
+    (. .)))
+
+advmod(rid-4, Miscarriage-1)
+dep(rid-4, gets-3)
+root(ROOT-0, rid-4)
+prep_of(rid-4, fetus-6)
+nsubj(started-9, fetus-6)
+aux(started-9, have-8)
+rcmod(fetus-6, started-9)
+aux(develop-11, to-10)
+xcomp(started-9, develop-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many) (NNS species))
+      (PP (IN of)
+        (NP (NNS animals))))
+    (VP (VBP have)
+      (NP
+        (NP (JJ large) (NNS numbers))
+        (PP (IN of)
+          (NP (JJ off) (NN spring)))))
+    (. .)))
+
+amod(species-2, Many-1)
+nsubj(have-5, species-2)
+prep_of(species-2, animals-4)
+root(ROOT-0, have-5)
+amod(numbers-7, large-6)
+dobj(have-5, numbers-7)
+amod(spring-10, off-9)
+prep_of(numbers-7, spring-10)
+
+(ROOT
+  (S
+    (NP (WDT Which))
+    (VP (VBP are) (RB n't)
+      (VP (VBN meant)
+        (S
+          (VP (TO to)
+            (VP (VB reach)
+              (NP (NN maturity)))))))
+    (. .)))
+
+nsubjpass(meant-4, Which-1)
+xsubj(reach-6, Which-1)
+auxpass(meant-4, are-2)
+neg(meant-4, n't-3)
+root(ROOT-0, meant-4)
+aux(reach-6, to-5)
+xcomp(meant-4, reach-6)
+dobj(reach-6, maturity-7)
+
+(ROOT
+  (FRAG
+    (ADVP (RB So))
+    (SBAR (IN until)
+      (S
+        (NP (DT a) (NN fetus))
+        (VP
+          (VP (VBZ has)
+            (ADVP (RB fully))
+            (VP (VBN developed)))
+          (, ,)
+          (CC and)
+          (VP (VBZ is)
+            (ADJP (JJ viable))))))
+    (. .)))
+
+root(ROOT-0, So-1)
+mark(developed-7, until-2)
+det(fetus-4, a-3)
+nsubj(developed-7, fetus-4)
+nsubj(viable-11, fetus-4)
+aux(developed-7, has-5)
+advmod(developed-7, fully-6)
+dep(So-1, developed-7)
+cop(viable-11, is-10)
+dep(So-1, viable-11)
+conj_and(developed-7, viable-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (MD should)
+              (VP (VB call)
+                (NP (PRP it))
+                (NP (NN life))))))))
+    (. .)))
+
+nsubj(think-4, I-1)
+aux(think-4, do-2)
+neg(think-4, n't-3)
+root(ROOT-0, think-4)
+nsubj(call-7, we-5)
+aux(call-7, should-6)
+ccomp(think-4, call-7)
+iobj(call-7, it-8)
+dobj(call-7, life-9)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VBD got)
+        (S
+          (VP (TO to)
+            (VP (VB draw)
+              (NP (DT the) (NN line))))))
+      (NP
+        (NP (DT some))
+        (FRAG
+          (WHADVP (WRB where)))))
+    (. .)))
+
+nsubj(got-2, We-1)
+xsubj(draw-4, We-1)
+root(ROOT-0, got-2)
+aux(draw-4, to-3)
+xcomp(got-2, draw-4)
+det(line-6, the-5)
+dobj(draw-4, line-6)
+dobj(got-2, some-7)
+dep(some-7, where-8)
+
+(ROOT
+  (FRAG
+    (PP (IN For)
+      (NP (JJ legal) (NNS purposes)))
+    (. .)))
+
+root(ROOT-0, For-1)
+amod(purposes-3, legal-2)
+pobj(For-1, purposes-3)
+
+(ROOT
+  (S
+    (NP (NNP Nature))
+    (VP (VBZ does) (RB n't)
+      (VP (VB work)
+        (ADVP (RB that) (RB well))
+        (PP (IN for)
+          (NP (PRP us)))
+        (: ;)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (VP (VBN left)
+              (PP (TO to)
+                (NP (PRP itself))))))))
+    (. .)))
+
+nsubj(work-4, Nature-1)
+aux(work-4, does-2)
+neg(work-4, n't-3)
+root(ROOT-0, work-4)
+advmod(well-6, that-5)
+advmod(work-4, well-6)
+prep_for(work-4, us-8)
+advmod(left-11, when-10)
+advcl(work-4, left-11)
+parataxis(work-4, left-11)
+prep_to(left-11, itself-13)
+

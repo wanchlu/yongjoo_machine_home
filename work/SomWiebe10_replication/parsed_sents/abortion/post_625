@@ -1,0 +1,59 @@
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (ADJP (JJ unethical)
+      (CC and)
+      (JJ immoral))
+    (S
+      (VP (TO to)
+        (VP (VB impose)
+          (NP (DT a) (NN fact))
+          (PP (VBN based)
+            (PP (IN on)
+              (NP (JJ scientific) (NN evidence)))))))
+    (. !)))
+
+cop(unethical-3, Is-1)
+nsubj(unethical-3, it-2)
+nsubj(immoral-5, it-2)
+root(ROOT-0, unethical-3)
+conj_and(unethical-3, immoral-5)
+aux(impose-7, to-6)
+dep(unethical-3, impose-7)
+det(fact-9, a-8)
+dobj(impose-7, fact-9)
+prepc_based_on(impose-7, on-11)
+amod(evidence-13, scientific-12)
+pobj(impose-7, evidence-13)
+
+(ROOT
+  (S
+    (VP (VB Non)
+      (ADJP (RB so) (JJ blind))
+      (PP (IN as)
+        (NP
+          (NP (DT those))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP
+                (VP (VBP have)
+                  (NP (NNS eyes)))
+                (CC but)
+                (VP (MD can) (RB not)
+                  (VP (VB see)))))))))
+    (. .)))
+
+root(ROOT-0, Non-1)
+advmod(blind-3, so-2)
+acomp(Non-1, blind-3)
+prep_as(Non-1, those-5)
+nsubj(have-7, those-5)
+nsubj(see-12, those-5)
+rcmod(those-5, have-7)
+dobj(have-7, eyes-8)
+aux(see-12, can-10)
+neg(see-12, not-11)
+rcmod(those-5, see-12)
+conj_but(have-7, see-12)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (SBAR (`` ``)
+    (S
+      (S
+        (VP
+          (VP
+            (ADVP (RB instead)
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (`` ``) (NN bolt))
+                  (PP (IN of)
+                    (NP (NN lightning))))))
+            (VBG hitting)
+            (NP
+              (NP (DT a) (NN pool))
+              (PP (IN of)
+                (NP (NNS chemicals)))))
+          (CC and)
+          (VP (VBG making)
+            (NP (DT a) (NN cell)))))
+      (VP (VBP pop)
+        (NP (NN out) ('' ''))
+        (`` ``)
+        (SBARQ
+          (WHADVP (WRB Where))
+          (SQ (VBD did)
+            (NP (PRP I))
+            (VP (VB say)
+              (NP (DT that) (NN ???)))))))))
+
+det(bolt-6, a-4)
+prep_instead_of(hitting-9, bolt-6)
+prep_of(bolt-6, lightning-8)
+csubj(pop-18, hitting-9)
+det(pool-11, a-10)
+dobj(hitting-9, pool-11)
+prep_of(pool-11, chemicals-13)
+conj_and(hitting-9, making-15)
+csubj(pop-18, making-15)
+det(cell-17, a-16)
+dobj(making-15, cell-17)
+root(ROOT-0, pop-18)
+dobj(pop-18, out-19)
+advmod(say-25, Where-22)
+aux(say-25, did-23)
+nsubj(say-25, I-24)
+dep(pop-18, say-25)
+det(???-27, that-26)
+dobj(say-25, ???-27)
+

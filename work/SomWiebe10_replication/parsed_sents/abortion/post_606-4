@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (DT the) (NN moment)))
+    (NP (DT an) (NN egg))
+    (VP (VBZ is)
+      (VP (VBN fertilized)
+        (S
+          (NP (DT no) (JJ external) (NN agent))
+          (VP (VB interfere)
+            (PP (IN with)
+              (NP (PRP it)))
+            (S
+              (VP (TO to)
+                (VP (VB change)
+                  (NP
+                    (NP (PRP it) (POS 's))
+                    (NN composition)))))))))
+    (. .)))
+
+det(moment-3, the-2)
+prep_from(fertilized-7, moment-3)
+det(egg-5, an-4)
+nsubjpass(fertilized-7, egg-5)
+auxpass(fertilized-7, is-6)
+root(ROOT-0, fertilized-7)
+det(agent-10, no-8)
+amod(agent-10, external-9)
+nsubj(interfere-11, agent-10)
+xsubj(change-15, agent-10)
+ccomp(fertilized-7, interfere-11)
+prep_with(interfere-11, it-13)
+aux(change-15, to-14)
+xcomp(interfere-11, change-15)
+poss(composition-18, it-16)
+dobj(change-15, composition-18)
+

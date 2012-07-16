@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP
+      (QP (RB Just) (RB as))
+      (NNS babies))
+    (VP (VBP need)
+      (NP
+        (NP
+          (NP (NN food))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NN mother) (POS 's))
+              (NN milk))
+            (-RRB- -RRB-)))
+        (CC and)
+        (NP (DT a) (NN place)
+          (S
+            (VP (TO to)
+              (VP (VB stay))))))
+      (PRN (-LRB- -LRB-)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (NP
+              (NP (NN mother) (POS 's))
+              (NN home))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+quantmod(as-2, Just-1)
+num(babies-3, as-2)
+nsubj(need-4, babies-3)
+root(ROOT-0, need-4)
+dobj(need-4, food-5)
+poss(milk-9, mother-7)
+appos(food-5, milk-9)
+det(place-13, a-12)
+dobj(need-4, place-13)
+conj_and(food-5, place-13)
+aux(stay-15, to-14)
+infmod(place-13, stay-15)
+nsubj(home-21, it-17)
+cop(home-21, 's-18)
+poss(home-21, mother-19)
+parataxis(need-4, home-21)
+

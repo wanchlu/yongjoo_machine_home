@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ compares)
+      (NP (NN abortion))
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN situation))
+          (SBAR
+            (WHPP (IN in)
+              (WHNP (WDT which)))
+            (S
+              (NP
+                (NP (DT a) (JJ healthy) (NN woman))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (DT the) (NN mother))
+                    (PP (IN by)
+                      (NP (NN analogy))))
+                  (-RRB- -RRB-)))
+              (VP (VBZ is)
+                (VP (VBN attached)
+                  (PP (TO to)
+                    (NP
+                      (NP (DT a) (VBG dying) (NN patient))
+                      (PRN (-LRB- -LRB-)
+                        (NP
+                          (NP (DT the) (NN fetus))
+                          (PP (IN by)
+                            (NP (NN analogy))))
+                        (-RRB- -RRB-))))))))))
+      (SBAR (IN in) (NN order)
+        (S
+          (VP (TO to)
+            (VP (VB keep)
+              (S
+                (NP (DT the) (VBG dying) (NN patient))
+                (ADJP (JJ alive))))))))
+    (. .)))
+
+nsubj(compares-2, It-1)
+root(ROOT-0, compares-2)
+dobj(compares-2, abortion-3)
+det(situation-6, a-5)
+prep_to(compares-2, situation-6)
+rel(attached-19, which-8)
+det(woman-11, a-9)
+amod(woman-11, healthy-10)
+nsubjpass(attached-19, woman-11)
+det(mother-14, the-13)
+dep(woman-11, mother-14)
+prep_by(mother-14, analogy-16)
+auxpass(attached-19, is-18)
+rcmod(situation-6, attached-19)
+det(patient-23, a-21)
+amod(patient-23, dying-22)
+prep_to(attached-19, patient-23)
+det(fetus-26, the-25)
+dep(patient-23, fetus-26)
+prep_by(fetus-26, analogy-28)
+mark(keep-33, in-30)
+dep(keep-33, order-31)
+aux(keep-33, to-32)
+purpcl(compares-2, keep-33)
+det(patient-36, the-34)
+amod(patient-36, dying-35)
+nsubj(alive-37, patient-36)
+xcomp(keep-33, alive-37)
+

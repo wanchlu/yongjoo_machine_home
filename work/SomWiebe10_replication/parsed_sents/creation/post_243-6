@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (JJ several) (NNS species))
+        (VP (VB occupy)
+          (NP (DT the) (JJ same) (JJ ecological) (NN niche)))))
+    (, ,)
+    (NP
+      (NP (NN competition))
+      (PP (IN between)
+        (NP (PRP them))))
+    (VP
+      (VP
+        (ADVP (RB eventually))
+        (VBP cause)
+        (NP (JJR more) (NN specialization)))
+      (CC and\/or)
+      (VP (VBZ causes)
+        (NP
+          (NP (JJS most))
+          (PP (IN of)
+            (NP (DT the) (NN species))))
+        (S
+          (VP (TO to)
+            (VP (VB become)
+              (ADJP (JJ extinct)))))))
+    (. .)))
+
+advmod(occupy-4, When-1)
+amod(species-3, several-2)
+nsubj(occupy-4, species-3)
+advcl(cause-14, occupy-4)
+det(niche-8, the-5)
+amod(niche-8, same-6)
+amod(niche-8, ecological-7)
+dobj(occupy-4, niche-8)
+nsubj(cause-14, competition-10)
+nsubj(causes-18, competition-10)
+prep_between(competition-10, them-12)
+advmod(cause-14, eventually-13)
+root(ROOT-0, cause-14)
+amod(specialization-16, more-15)
+dobj(cause-14, specialization-16)
+conj_and\/or(cause-14, causes-18)
+dobj(causes-18, most-19)
+det(species-22, the-21)
+prep_of(most-19, species-22)
+aux(extinct-25, to-23)
+cop(extinct-25, become-24)
+xcomp(causes-18, extinct-25)
+

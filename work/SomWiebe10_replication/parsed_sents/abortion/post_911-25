@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Women))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP want)
+              (NP (JJ late-term) (NNS abortions))))))
+      (VP (MD should)
+        (VP (VB ask)
+          (NP (PRP$ their) (NNS doctors)))))
+    (CC and)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP$ their) (NNS doctors))
+          (VP (VBP agree)
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (JJ late-term) (NN abortion))
+                (VP (VBZ is)
+                  (NP (DT the) (JJS best) (JJ medical) (NN option))))))))
+      (, ,)
+      (NP (PRP they))
+      (VP (MD should)
+        (VP (VB seek)
+          (NP
+            (NP (DT the) (NN approval))
+            (PP (IN of)
+              (NP (JJ other) (NNS doctors)))))))
+    (. .)))
+
+nsubj(want-3, Women-1)
+nsubj(ask-7, Women-1)
+rcmod(Women-1, want-3)
+amod(abortions-5, late-term-4)
+dobj(want-3, abortions-5)
+aux(ask-7, should-6)
+root(ROOT-0, ask-7)
+poss(doctors-9, their-8)
+dobj(ask-7, doctors-9)
+mark(agree-14, if-11)
+poss(doctors-13, their-12)
+nsubj(agree-14, doctors-13)
+advcl(seek-27, agree-14)
+complm(option-23, that-15)
+det(abortion-18, a-16)
+amod(abortion-18, late-term-17)
+nsubj(option-23, abortion-18)
+cop(option-23, is-19)
+det(option-23, the-20)
+amod(option-23, best-21)
+amod(option-23, medical-22)
+ccomp(agree-14, option-23)
+nsubj(seek-27, they-25)
+aux(seek-27, should-26)
+conj_and(ask-7, seek-27)
+det(approval-29, the-28)
+dobj(seek-27, approval-29)
+amod(doctors-32, other-31)
+prep_of(approval-29, doctors-32)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN science))
+        (VP (VBZ excludes)
+          (NP (NNS possibilities))
+          (PP (IN before)
+            (S
+              (VP (VBG considering)
+                (NP (PRP them))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (VP (VBN ceased)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (DT a) (JJ useful) (NN tool))
+                (PP (IN for)
+                  (S
+                    (VP (VBG learning)
+                      (PP (IN about)
+                        (NP (NN reality))))))))))))
+    (. .)))
+
+mark(excludes-3, If-1)
+nsubj(excludes-3, science-2)
+advcl(ceased-11, excludes-3)
+dobj(excludes-3, possibilities-4)
+prepc_before(excludes-3, considering-6)
+dobj(considering-6, them-7)
+nsubj(ceased-11, it-9)
+xsubj(tool-16, it-9)
+aux(ceased-11, has-10)
+root(ROOT-0, ceased-11)
+aux(tool-16, to-12)
+cop(tool-16, be-13)
+det(tool-16, a-14)
+amod(tool-16, useful-15)
+xcomp(ceased-11, tool-16)
+prepc_for(tool-16, learning-18)
+prep_about(learning-18, reality-20)
+

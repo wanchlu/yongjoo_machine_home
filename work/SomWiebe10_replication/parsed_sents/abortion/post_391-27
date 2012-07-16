@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN rest))
+            (PP (IN of)
+              (NP (PRP$ your) (NNS comments)))))
+        (, ,)
+        (NP (PRP I))
+        (VP (VBP regret)
+          (S
+            (VP (TO to)
+              (VP (VB say)
+                (SBAR
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP do) (RB not)
+                      (VP (VB agree)
+                        (PP (IN with)
+                          (NP (NN anything)))))))))))))
+    (NP (PRP you))
+    (VP (VBD wrote))
+    (. .)))
+
+mark(regret-10, As-1)
+det(rest-4, the-3)
+prep_for(regret-10, rest-4)
+poss(comments-7, your-6)
+prep_of(rest-4, comments-7)
+nsubj(regret-10, I-9)
+xsubj(say-12, I-9)
+advcl(wrote-20, regret-10)
+aux(say-12, to-11)
+xcomp(regret-10, say-12)
+nsubj(agree-16, I-13)
+aux(agree-16, do-14)
+neg(agree-16, not-15)
+ccomp(say-12, agree-16)
+prep_with(agree-16, anything-18)
+nsubj(wrote-20, you-19)
+root(ROOT-0, wrote-20)
+

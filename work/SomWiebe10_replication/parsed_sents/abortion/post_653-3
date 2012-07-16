@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (FRAG
+        (ADVP (RB so))))
+    (, ,)
+    (SQ (MD will)
+      (NP (EX there))
+      (VP (VB be)
+        (NP
+          (NP (DT a) (JJ certain) (NN point))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP we))
+              (VP (MD will)
+                (ADVP (RB no) (RB longer))
+                (VP (VB allow)
+                  (S
+                    (NP (PRP it))
+                    (VP (TO to)
+                      (VP (VB be)
+                        (VP (VBN destroyed))))))))))))
+    (. ?)))
+
+mark(so-2, If-1)
+advcl(be-6, so-2)
+aux(be-6, will-4)
+expl(be-6, there-5)
+root(ROOT-0, be-6)
+det(point-9, a-7)
+amod(point-9, certain-8)
+dep(be-6, point-9)
+advmod(allow-15, where-10)
+nsubj(allow-15, we-11)
+aux(allow-15, will-12)
+advmod(longer-14, no-13)
+advmod(allow-15, longer-14)
+rcmod(point-9, allow-15)
+nsubjpass(destroyed-19, it-16)
+aux(destroyed-19, to-17)
+auxpass(destroyed-19, be-18)
+xcomp(allow-15, destroyed-19)
+

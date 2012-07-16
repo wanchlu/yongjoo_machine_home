@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (PP (IN in)
+      (NP (CD 1975)))
+    (, ,)
+    (NP
+      (NP (DT a) (NN strain))
+      (PP (IN of)
+        (NP (NNS bacteria))))
+    (VP (VBD was)
+      (VP (VBN found)
+        (SBAR (IN that)
+          (S
+            (VP (MD could)
+              (VP (VB digest)
+                (NP (NN nylon))))))))
+    (. .)))
+
+prep_in(found-12, fact-2)
+prep_in(found-12, 1975-5)
+det(strain-8, a-7)
+nsubjpass(found-12, strain-8)
+prep_of(strain-8, bacteria-10)
+auxpass(found-12, was-11)
+root(ROOT-0, found-12)
+complm(digest-15, that-13)
+aux(digest-15, could-14)
+ccomp(found-12, digest-15)
+dobj(digest-15, nylon-16)
+

@@ -1,0 +1,75 @@
+(ROOT
+  (S (`` ``)
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (VP (`` ``) (VBZ bout)
+          (NP (DT this)))))
+    (S
+      (NP (PRP I))
+      (VP (MD 'll)
+        (VP
+          (VP (VB go)
+            (ADVP (RB ahead)))
+          (CC and)
+          (VP (NN advocate)
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NN progression))
+                (PP (IN of)
+                  (NP
+                    (NP (NN science))
+                    (PP (IN into)
+                      (NP (DT the) (JJ 21st) (NN century)))))))))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD can)
+        (VP (VB spout)
+          (NP (JJ 14th) (NN century) (NN philosophy))
+          (PP (IN as)
+            (NP
+              (NP (DT an) (NN excuse))
+              (PP (IN for)
+                (S
+                  (VP (RB not) (VBG knowing)
+                    (SBAR
+                      (WHNP (WP what) (DT the) (NN hell))
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP 're)
+                          (VP (VBG talking) (IN about)))))))))))))
+    (. .)))
+
+advmod(bout-4, How-2)
+dep(go-8, bout-4)
+dobj(bout-4, this-5)
+nsubj(go-8, I-6)
+aux(go-8, 'll-7)
+root(ROOT-0, go-8)
+advmod(go-8, ahead-9)
+conj_and(go-8, advocate-11)
+det(progression-14, the-13)
+prep_for(advocate-11, progression-14)
+prep_of(progression-14, science-16)
+det(century-20, the-18)
+amod(century-20, 21st-19)
+prep_into(science-16, century-20)
+nsubj(spout-24, you-22)
+aux(spout-24, can-23)
+conj_and(go-8, spout-24)
+amod(philosophy-27, 14th-25)
+nn(philosophy-27, century-26)
+dobj(spout-24, philosophy-27)
+det(excuse-30, an-29)
+prep_as(spout-24, excuse-30)
+neg(knowing-33, not-32)
+prepc_for(excuse-30, knowing-33)
+det(hell-36, what-34)
+det(hell-36, the-35)
+dobj(talking-39, hell-36)
+nsubj(talking-39, you-37)
+aux(talking-39, 're-38)
+ccomp(knowing-33, talking-39)
+dep(talking-39, about-40)
+

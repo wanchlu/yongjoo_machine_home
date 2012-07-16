@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Anti) (NN abortion) (NNS activists))
+      (VP
+        (VP (VBP love)
+          (NP (NNS babies)))
+        (CC but)
+        (VP (VB deprive)
+          (NP
+            (NP (JJ poor) (NNS children))
+            (SBAR
+              (S
+                (NP (NNP Abortion))
+                (VP (VBZ is)
+                  (ADJP (JJ important)
+                    (PP (TO to)
+                      (S
+                        (VP (VBG reducing)
+                          (NP (NN over-population))
+                          (ADVP (RB globally)))))))))))))
+    (NP (NNP Illegalizing) (NN abortion))
+    (VP (MD will)
+      (VP (VB lead)
+        (PP (TO to)
+          (NP
+            (NP (JJR more) (NNS children))
+            (VP (VBG having)
+              (NP (NNS children)))))))
+    (. .)))
+
+nn(activists-3, Anti-1)
+nn(activists-3, abortion-2)
+nsubj(love-4, activists-3)
+nsubj(deprive-7, activists-3)
+dep(lead-20, love-4)
+dobj(love-4, babies-5)
+conj_but(love-4, deprive-7)
+dep(lead-20, deprive-7)
+amod(children-9, poor-8)
+dobj(deprive-7, children-9)
+nsubj(important-12, Abortion-10)
+cop(important-12, is-11)
+rcmod(children-9, important-12)
+prepc_to(important-12, reducing-14)
+dobj(reducing-14, over-population-15)
+advmod(reducing-14, globally-16)
+nn(abortion-18, Illegalizing-17)
+nsubj(lead-20, abortion-18)
+aux(lead-20, will-19)
+root(ROOT-0, lead-20)
+amod(children-23, more-22)
+prep_to(lead-20, children-23)
+partmod(children-23, having-24)
+dobj(having-24, children-25)
+

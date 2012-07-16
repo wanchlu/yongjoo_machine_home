@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (VP (VBG speaking)
+          (PP (IN with)
+            (NP
+              (NP (NNS people))
+              (PP (IN about)
+                (NP (DT the) (NN issue))))))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ important)
+        (S
+          (VP (TO to)
+            (VP (VB ask)
+              (NP (PRP them))
+              (SBAR
+                (WHNP
+                  (NP (WDT which) (NN definition))
+                  (PP (IN of)
+                    (NP (NN evolution))))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (VP (VBG using))))))))))
+    (. .)))
+
+advmod(speaking-2, When-1)
+advcl(important-10, speaking-2)
+prep_with(speaking-2, people-4)
+det(issue-7, the-6)
+prep_about(people-4, issue-7)
+nsubj(important-10, it-8)
+cop(important-10, is-9)
+root(ROOT-0, important-10)
+aux(ask-12, to-11)
+xcomp(important-10, ask-12)
+dobj(ask-12, them-13)
+dep(definition-15, which-14)
+dobj(using-20, definition-15)
+prep_of(definition-15, evolution-17)
+nsubj(using-20, they-18)
+aux(using-20, are-19)
+dep(ask-12, using-20)
+

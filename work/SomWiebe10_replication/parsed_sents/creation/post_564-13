@@ -1,0 +1,61 @@
+(ROOT
+  (SBARQ
+    (SBARQ
+      (SBAR
+        (WHNP (WP What))
+        (S
+          (NP (NNS predictions))
+          (VP (VBZ does)
+            (SBAR
+              (S
+                (NP
+                  (NP (NN life))
+                  (VP (VBG being)
+                    (VP (VBN created)
+                      (NP
+                        (NP (RB elsewhere) (DT the))
+                        (VP (VBG being)
+                          (VP (VBN brought)
+                            (PP (TO to)
+                              (NP (NNP Terra)))))))))
+                (VP (VBP make)))))))
+      (, ,)
+      (WHADVP (WRB how))
+      (SQ (MD could)
+        (NP (PRP we))
+        (VP (VB test)
+          (NP (DT that) (NN theory)))))
+    (CC and)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (MD could)
+        (NP (PRP it))
+        (VP (VB be)
+          (VP (VBN proven))))
+      (. ?))))
+
+dep(does-3, What-1)
+dobj(make-13, What-1)
+nsubj(does-3, predictions-2)
+dep(test-18, does-3)
+nsubj(make-13, life-4)
+auxpass(created-6, being-5)
+partmod(life-4, created-6)
+advmod(the-8, elsewhere-7)
+dobj(created-6, the-8)
+auxpass(brought-10, being-9)
+partmod(the-8, brought-10)
+prep_to(brought-10, Terra-12)
+ccomp(does-3, make-13)
+advmod(test-18, how-15)
+aux(test-18, could-16)
+nsubj(test-18, we-17)
+root(ROOT-0, test-18)
+det(theory-20, that-19)
+dobj(test-18, theory-20)
+advmod(proven-26, how-22)
+aux(proven-26, could-23)
+nsubjpass(proven-26, it-24)
+auxpass(proven-26, be-25)
+conj_and(test-18, proven-26)
+

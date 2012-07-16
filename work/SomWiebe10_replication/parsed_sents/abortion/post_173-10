@@ -1,0 +1,26 @@
+(ROOT
+  (SQ (MD Can)
+    (NP (DT a) (NNP Catholic))
+    (VP (VB vote)
+      (PP (IN for)
+        (NP
+          (NP (DT a) (NN politician))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ supports)
+                (NP (DT the) (NN death) (NN penalty))))))))
+    (. ?)))
+
+aux(vote-4, Can-1)
+det(Catholic-3, a-2)
+nsubj(vote-4, Catholic-3)
+root(ROOT-0, vote-4)
+det(politician-7, a-6)
+prep_for(vote-4, politician-7)
+nsubj(supports-9, politician-7)
+rcmod(politician-7, supports-9)
+det(penalty-12, the-10)
+nn(penalty-12, death-11)
+dobj(supports-9, penalty-12)
+

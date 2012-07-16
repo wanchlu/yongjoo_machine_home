@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN question))
+      (SBAR
+        (S
+          (NP (PRP we))
+          (ADVP (RB desperately))
+          (VP (VBP need)
+            (S
+              (VP (TO to)
+                (VP (VB address))))))))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR (IN whether)
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN conflict))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD must)
+                      (VP (VB be)
+                        (VP (VBN fought))))))))))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN evidence))
+                (VP (VBN presented)
+                  (PP (IN in)
+                    (NP (DT the) (NN movie)))
+                  (PP (IN for)
+                    (S
+                      (VP (VBG going)
+                        (PP (TO to)
+                          (NP (NN battle)))))))))))))
+    (. ?)))
+
+det(question-2, The-1)
+dobj(need-5, question-2)
+nsubj(is-8, question-2)
+nsubj(need-5, we-3)
+xsubj(address-7, we-3)
+advmod(need-5, desperately-4)
+rcmod(question-2, need-5)
+aux(address-7, to-6)
+xcomp(need-5, address-7)
+root(ROOT-0, is-8)
+complm(conflict-13, whether-9)
+nsubj(conflict-13, this-10)
+cop(conflict-13, is-11)
+det(conflict-13, a-12)
+ccomp(is-8, conflict-13)
+nsubjpass(fought-17, conflict-13)
+aux(fought-17, must-15)
+auxpass(fought-17, be-16)
+rcmod(conflict-13, fought-17)
+nsubj(evidence-23, what-20)
+cop(evidence-23, is-21)
+det(evidence-23, the-22)
+ccomp(is-8, evidence-23)
+conj_and(conflict-13, evidence-23)
+nsubjpass(fought-17, evidence-23)
+partmod(evidence-23, presented-24)
+det(movie-27, the-26)
+prep_in(presented-24, movie-27)
+prepc_for(presented-24, going-29)
+prep_to(going-29, battle-31)
+

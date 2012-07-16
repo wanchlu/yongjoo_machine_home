@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ (RB So)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN difference))
+        (PP (IN between)
+          (NP
+            (NP (DT a) (NN sperm))
+            (CC and)
+            (NP
+              (NP (DT an) (NN egg))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP are)
+                    (UCP
+                      (ADJP (JJ separated))
+                      (, ,)
+                      (CC and)
+                      (NP (DT a)
+                        (ADJP (RB recently) (VBN fertilized))
+                        (NN egg)))))))))))
+    (. ?)))
+
+advmod(is-3, So-1)
+attr(is-3, what-2)
+root(ROOT-0, is-3)
+det(difference-5, the-4)
+nsubj(is-3, difference-5)
+det(sperm-8, a-7)
+prep_between(difference-5, sperm-8)
+det(egg-11, an-10)
+prep_between(difference-5, egg-11)
+conj_and(sperm-8, egg-11)
+nsubj(separated-14, egg-11)
+cop(separated-14, are-13)
+rcmod(egg-11, separated-14)
+det(egg-20, a-17)
+advmod(fertilized-19, recently-18)
+amod(egg-20, fertilized-19)
+rcmod(egg-11, egg-20)
+conj_and(separated-14, egg-20)
+

@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (NP (WDT Which))
+      (VP (VBZ is)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (NN science))
+            (VP (VBZ is)
+              (ADJP (IN about)))))))
+    (: ...)
+    (S
+      (VP (VBG changing)
+        (NP (NNS theories))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (VP (VBD presented)
+              (PP (IN with)
+                (NP (JJ new) (NN information)))
+              (SBAR (IN that)
+                (S
+                  (NP (DT either))
+                  (VP (VBZ reveals)
+                    (NP (NNS observations))
+                    (SBAR (IN that)
+                      (S
+                        (NP (DT the) (NN theory))
+                        (VP
+                          (VP (VBZ does) (RB not)
+                            (VP (VB cover)))
+                          (CC or)
+                          (VP (VBZ is)
+                            (ADJP (NN contradictory)
+                              (PP (TO to)
+                                (NP (DT that) (NN theory))))))))))))))))
+    (. .)))
+
+nsubj(is-2, Which-1)
+root(ROOT-0, is-2)
+dobj(about-6, what-3)
+nsubj(about-6, science-4)
+cop(about-6, is-5)
+ccomp(is-2, about-6)
+parataxis(is-2, changing-8)
+dobj(changing-8, theories-9)
+advmod(presented-11, when-10)
+advcl(changing-8, presented-11)
+amod(information-14, new-13)
+prep_with(presented-11, information-14)
+complm(reveals-17, that-15)
+nsubj(reveals-17, either-16)
+ccomp(presented-11, reveals-17)
+dobj(reveals-17, observations-18)
+complm(cover-24, that-19)
+det(theory-21, the-20)
+nsubj(cover-24, theory-21)
+aux(cover-24, does-22)
+neg(cover-24, not-23)
+ccomp(reveals-17, cover-24)
+cop(contradictory-27, is-26)
+ccomp(reveals-17, contradictory-27)
+conj_or(cover-24, contradictory-27)
+det(theory-30, that-29)
+prep_to(contradictory-27, theory-30)
+

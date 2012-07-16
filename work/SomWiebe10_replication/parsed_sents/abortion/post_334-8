@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (ADJP (JJ possible))))
+    (, ,)
+    (CC yet)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADVP (RB still))
+        (ADJP (JJ legal)
+          (S
+            (VP (TO to)
+              (VP (VB abort)
+                (PP (IN during)
+                  (NP (DT this) (NN time)))))))))
+    (. ?)))
+
+nsubj(possible-3, It-1)
+cop(possible-3, 's-2)
+root(ROOT-0, possible-3)
+nsubj(legal-9, it-6)
+cop(legal-9, 's-7)
+advmod(legal-9, still-8)
+conj_yet(possible-3, legal-9)
+aux(abort-11, to-10)
+xcomp(legal-9, abort-11)
+det(time-14, this-13)
+prep_during(abort-11, time-14)
+

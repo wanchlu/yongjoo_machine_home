@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (SBAR (IN That)
+      (S
+        (NP (NN species) (NNS evolve))
+        (VP (VBZ is)
+          (ADJP (JJ observed))
+          (ADVP (NN fact))
+          (: ...)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP do)
+                (ADVP (RB so))
+                (PP (IN through)
+                  (NP (JJ natural) (NN selection)))))))))
+    (VP (VBZ is)
+      (NP (DT the) (NN theory)))
+    (. .)))
+
+complm(observed-5, That-1)
+nn(evolve-3, species-2)
+nsubj(observed-5, evolve-3)
+cop(observed-5, is-4)
+csubj(theory-17, observed-5)
+advmod(observed-5, fact-6)
+complm(do-10, that-8)
+nsubj(do-10, they-9)
+ccomp(observed-5, do-10)
+parataxis(observed-5, do-10)
+advmod(do-10, so-11)
+amod(selection-14, natural-13)
+prep_through(do-10, selection-14)
+cop(theory-17, is-15)
+det(theory-17, the-16)
+root(ROOT-0, theory-17)
+

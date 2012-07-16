@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (JJ FYIThe) (NN question))
+    (VP (VBZ is) (RB not)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP
+            (VP (VBD did))
+            (CC or)
+            (VP (VBD did) (RB n't)
+              (VP (VB do)
+                (NP
+                  (NP (DT this))
+                  (CC or)
+                  (NP (DT that)))))))))
+    (. .)))
+
+amod(question-2, FYIThe-1)
+nsubj(is-3, question-2)
+root(ROOT-0, is-3)
+neg(is-3, not-4)
+nsubj(did-6, who-5)
+nsubj(do-10, who-5)
+ccomp(is-3, did-6)
+aux(do-10, did-8)
+neg(do-10, n't-9)
+ccomp(is-3, do-10)
+conj_or(did-6, do-10)
+dobj(do-10, this-11)
+dobj(do-10, that-13)
+conj_or(this-11, that-13)
+

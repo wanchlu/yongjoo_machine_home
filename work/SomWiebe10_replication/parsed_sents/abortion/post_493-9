@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP (DT no) (NN claim))
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN body))
+          (PP (IN of)
+            (NP (DT the) (NN mother)))))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP wish)
+            (S
+              (VP (TO to)
+                (VP (VB maintain)
+                  (SBAR
+                    (S
+                      (NP (DT the) (NN mother))
+                      (VP (VBZ has)
+                        (NP
+                          (NP (DT no) (NN claim))
+                          (PP (IN on)
+                            (NP (DT the) (NN fetus))))))))))))))
+    (. .)))
+
+nsubj(has-2, It-1)
+root(ROOT-0, has-2)
+det(claim-4, no-3)
+dobj(has-2, claim-4)
+det(body-7, the-6)
+prep_to(has-2, body-7)
+det(mother-10, the-9)
+prep_of(body-7, mother-10)
+mark(wish-13, if-11)
+nsubj(wish-13, you-12)
+xsubj(maintain-15, you-12)
+advcl(has-2, wish-13)
+aux(maintain-15, to-14)
+xcomp(wish-13, maintain-15)
+det(mother-17, the-16)
+nsubj(has-18, mother-17)
+ccomp(maintain-15, has-18)
+det(claim-20, no-19)
+dobj(has-18, claim-20)
+det(fetus-23, the-22)
+prep_on(claim-20, fetus-23)
+

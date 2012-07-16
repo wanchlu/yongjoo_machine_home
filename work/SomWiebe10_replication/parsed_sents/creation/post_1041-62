@@ -1,0 +1,35 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT that))
+    (VP (VB mean)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (MD can)
+            (VP (VB conclude)
+              (ADVP (RB there)
+                (PP (IN as)
+                  (NP (DT an) (NN ice) (NN age))))
+              (ADVP
+                (NP
+                  (QP (JJR less) (IN than) (DT a))
+                  (NN year))
+                (RB ago)))))))
+    (. ?)))
+
+dep(mean-3, Does-1)
+nsubj(mean-3, that-2)
+root(ROOT-0, mean-3)
+nsubj(conclude-6, I-4)
+aux(conclude-6, can-5)
+ccomp(mean-3, conclude-6)
+advmod(conclude-6, there-7)
+det(age-11, an-9)
+nn(age-11, ice-10)
+prep_as(there-7, age-11)
+mwe(than-13, less-12)
+quantmod(a-14, than-13)
+num(year-15, a-14)
+npadvmod(ago-16, year-15)
+advmod(conclude-6, ago-16)
+

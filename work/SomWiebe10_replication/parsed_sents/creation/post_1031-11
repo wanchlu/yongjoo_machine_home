@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (DT this))
+        (VP (VBZ leads)
+          (S
+            (NP (PRP me))
+            (VP (TO to)
+              (VP (VB believe)))))))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBP are)
+              (NP (JJ other) (NNS flaws)))))
+        (, ,)
+        (CC and)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADVP (RB merely))
+              (VP (VBG giving)
+                (NP (NNS specious))
+                (NP
+                  (NP (NNS reasons))
+                  (PP (IN for)
+                    (NP (NNP ID))))))))))
+    (. .)))
+
+dep(leads-3, What-1)
+nsubj(leads-3, this-2)
+csubj(is-7, leads-3)
+nsubj(believe-6, me-4)
+aux(believe-6, to-5)
+xcomp(leads-3, believe-6)
+root(ROOT-0, is-7)
+complm(are-10, that-8)
+expl(are-10, there-9)
+ccomp(is-7, are-10)
+amod(flaws-12, other-11)
+nsubj(are-10, flaws-12)
+complm(giving-19, that-15)
+nsubj(giving-19, they-16)
+aux(giving-19, are-17)
+advmod(giving-19, merely-18)
+ccomp(is-7, giving-19)
+conj_and(are-10, giving-19)
+iobj(giving-19, specious-20)
+dobj(giving-19, reasons-21)
+prep_for(reasons-21, ID-23)
+

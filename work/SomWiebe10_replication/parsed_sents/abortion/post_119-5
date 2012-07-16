@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NN country))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ accepts)
+            (NP (NN abortion))))))
+    (VP (VBZ is) (RB not)
+      (VP (VBG teaching)
+        (NP (PRP$ its) (NNS people))
+        (S
+          (VP
+            (VP (TO to)
+              (VP (VB love)))
+            (, ,)
+            (CC but)
+            (VP (TO to)
+              (VP (VB use)
+                (NP (DT any) (NN violence)
+                  (S
+                    (VP (TO to)
+                      (VP (VB get)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (PRP they))
+                            (VP (VBP want))))))))))))))
+    (. .)))
+
+det(country-2, Any-1)
+nsubj(accepts-4, country-2)
+nsubj(teaching-8, country-2)
+rcmod(country-2, accepts-4)
+dobj(accepts-4, abortion-5)
+aux(teaching-8, is-6)
+neg(teaching-8, not-7)
+root(ROOT-0, teaching-8)
+poss(people-10, its-9)
+dobj(teaching-8, people-10)
+aux(love-12, to-11)
+dep(teaching-8, love-12)
+aux(use-16, to-15)
+dep(teaching-8, use-16)
+conj_but(love-12, use-16)
+det(violence-18, any-17)
+dobj(use-16, violence-18)
+aux(get-20, to-19)
+infmod(violence-18, get-20)
+dobj(want-23, what-21)
+nsubj(want-23, they-22)
+ccomp(get-20, want-23)
+

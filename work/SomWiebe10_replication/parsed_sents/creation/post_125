@@ -1,0 +1,172 @@
+(ROOT
+  (SBARQ (`` ``)
+    (WHADVP
+      (ADVP (RB First)
+        (CC and)
+        (RB foremost))
+      (WRB how))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT an) (NN animal))
+        (PP (IN without)
+          (NP (DT an) (JJ immune) (NN system))))
+      (VP (VB survive)
+        (S
+          (VP (TO to)
+            (VP (VB acquire)
+              (NP (CD one)))))))
+    (. .)))
+
+advmod(how-5, First-2)
+conj_and(First-2, foremost-4)
+advmod(how-5, foremost-4)
+advmod(survive-13, how-5)
+aux(survive-13, does-6)
+det(animal-8, an-7)
+nsubj(survive-13, animal-8)
+xsubj(acquire-15, animal-8)
+det(system-12, an-10)
+amod(system-12, immune-11)
+prep_without(animal-8, system-12)
+root(ROOT-0, survive-13)
+aux(acquire-15, to-14)
+xcomp(survive-13, acquire-15)
+dobj(acquire-15, one-16)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP It))
+      (VP (VBZ does) (RB not)
+        (VP (VB acquire)
+          (NP (CD one)))))
+    (: ...)
+    (S
+      (NP (PRP it))
+      (ADVP (RB already))
+      (VP (VBZ has)
+        (NP
+          (NP (CD one))
+          (PP (IN from)
+            (NP
+              (NP (PRP it) (POS 's))
+              (NNS ancestors))))))
+    (. .)))
+
+nsubj(acquire-5, It-2)
+aux(acquire-5, does-3)
+neg(acquire-5, not-4)
+root(ROOT-0, acquire-5)
+dobj(acquire-5, one-6)
+nsubj(has-10, it-8)
+advmod(has-10, already-9)
+parataxis(acquire-5, has-10)
+dobj(has-10, one-11)
+poss(ancestors-15, it-13)
+prep_from(one-11, ancestors-15)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ does) (RB not)
+        (VP (`` ``) (VB recreate) ('' '')
+          (NP (NN everything))
+          (PP (IN from)
+            (NP (NN scratch))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ builds)
+      (PP (IN on)
+        (NP
+          (ADJP (RB previously) (VBN evolved))
+          (NNS systems))))
+    (. .)))
+
+nsubj(recreate-5, Evolution-1)
+aux(recreate-5, does-2)
+neg(recreate-5, not-3)
+ccomp(builds-12, recreate-5)
+dobj(recreate-5, everything-7)
+prep_from(recreate-5, scratch-9)
+nsubj(builds-12, it-11)
+root(ROOT-0, builds-12)
+advmod(evolved-15, previously-14)
+amod(systems-16, evolved-15)
+prep_on(builds-12, systems-16)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (JJ such))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT an) (NN animal))
+            (`` ``)
+            (VP (VBD evolved))
+            ('' '')))))
+    (NP
+      (NP (DT the) (JJ immune) (NN system))
+      (PP (IN of)
+        (NP (PRP it))))
+    (VP (VBZ 's)
+      (ADJP (JJ ancestor))
+      (S
+        (VP (VB evolve)
+          (PP (IN with)
+            (NP (PRP it))))))
+    (. .)))
+
+prep_such_as(ancestor-15, such-2)
+advmod(evolved-7, when-3)
+det(animal-5, an-4)
+nsubj(evolved-7, animal-5)
+dep(ancestor-15, evolved-7)
+det(system-11, the-9)
+amod(system-11, immune-10)
+nsubj(ancestor-15, system-11)
+prep_of(system-11, it-13)
+cop(ancestor-15, 's-14)
+root(ROOT-0, ancestor-15)
+ccomp(ancestor-15, evolve-16)
+prep_with(evolve-16, it-18)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ is) (RB not)
+        (NP
+          (NP (DT a) (CD one) (NN mutation))
+          (PP (IN at)
+            (NP (DT a) (NN time) (NN deal))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ involves)
+      (NP
+        (NP (JJ multiple) (NNS mutations))
+        (VP (VBG happening)
+          (PP (IN throughout)
+            (NP (DT the) (NN life) (NN form))))))
+    (. .)))
+
+nsubj(mutation-6, Evolution-1)
+cop(mutation-6, is-2)
+neg(mutation-6, not-3)
+det(mutation-6, a-4)
+num(mutation-6, one-5)
+ccomp(involves-13, mutation-6)
+det(deal-10, a-8)
+nn(deal-10, time-9)
+prep_at(mutation-6, deal-10)
+nsubj(involves-13, it-12)
+root(ROOT-0, involves-13)
+amod(mutations-15, multiple-14)
+dobj(involves-13, mutations-15)
+partmod(mutations-15, happening-16)
+det(form-20, the-18)
+nn(form-20, life-19)
+prep_throughout(happening-16, form-20)
+

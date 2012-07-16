@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (NP (JJ enough) (NN lobbying) (NN power)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB implement)
+                    (NP (PRP$ my) (JJ own) (NNS beliefs))
+                    (PP (IN over)
+                      (NP (NNP yours))))
+                  (CC and)
+                  (VP (VB get)
+                    (NP
+                      (NP (DT a) (`` ``)
+                        (S
+                          (NP (NN might))
+                          (VP (VBZ makes)
+                            (ADJP (JJ right))))
+                        ('' '') (NN policy))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBZ allows)
+                            (NP (PRP me))
+                            (PP (TO to)
+                              (NP (NN murder) (NN anyone)))))))))))))))
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB get)
+        (PRT (RP away))
+        (PP (IN with)
+          (S
+            (VP (VBG murdering)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ makes)
+                    (S
+                      (NP (DT that))
+                      (ADJP (JJ wrong)))))))))))
+    (. ?)))
+
+mark(have-3, If-1)
+nsubj(have-3, I-2)
+advcl(get-31, have-3)
+amod(power-6, enough-4)
+nn(power-6, lobbying-5)
+dobj(have-3, power-6)
+aux(implement-8, to-7)
+infmod(power-6, implement-8)
+poss(beliefs-11, my-9)
+amod(beliefs-11, own-10)
+dobj(implement-8, beliefs-11)
+prep_over(implement-8, yours-13)
+infmod(power-6, get-15)
+conj_and(implement-8, get-15)
+det(policy-22, a-16)
+nsubj(makes-19, might-18)
+dep(policy-22, makes-19)
+acomp(makes-19, right-20)
+dobj(get-15, policy-22)
+nsubj(allows-24, policy-22)
+rcmod(policy-22, allows-24)
+dobj(allows-24, me-25)
+nn(anyone-28, murder-27)
+prep_to(allows-24, anyone-28)
+nsubj(get-31, I-29)
+aux(get-31, can-30)
+root(ROOT-0, get-31)
+prt(get-31, away-32)
+prepc_with(get-31, murdering-34)
+nsubj(makes-36, what-35)
+ccomp(murdering-34, makes-36)
+nsubj(wrong-38, that-37)
+xcomp(makes-36, wrong-38)
+

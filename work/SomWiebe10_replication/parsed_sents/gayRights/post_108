@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP (DT Some) (JJ married) (JJ homosexual) (NNS women))
+    (ADVP (RB actually))
+    (VP (VBP do)
+      (VP
+        (VP (VB have)
+          (NP
+            (NP (NNS babies))
+            (SBAR
+              (S
+                (PP (IN In)
+                  (NP (DT this) (NN procedure)))
+                (, ,)
+                (NP
+                  (NP (CD one) (NN woman) (POS 's))
+                  (NN egg))
+                (VP (VBZ is)
+                  (VP (VBN implanted)
+                    (PP (IN into)
+                      (NP
+                        (NP (DT the) (JJ other) (NN woman) (POS 's))
+                        (NN body)))))))))
+        (CC and)
+        (ADVP (RB then))
+        (VP (VB fertilize)
+          (PP (IN with)
+            (NP
+              (NP (DT an) (JJ unknown) (NN donor) (POS 's))
+              (NN sperm))))))
+    (. .)))
+
+det(women-4, Some-1)
+amod(women-4, married-2)
+amod(women-4, homosexual-3)
+nsubj(have-7, women-4)
+nsubj(fertilize-27, women-4)
+advmod(have-7, actually-5)
+aux(have-7, do-6)
+root(ROOT-0, have-7)
+dobj(have-7, babies-8)
+det(procedure-11, this-10)
+prep_in(implanted-18, procedure-11)
+num(woman-14, one-13)
+poss(egg-16, woman-14)
+nsubjpass(implanted-18, egg-16)
+auxpass(implanted-18, is-17)
+rcmod(babies-8, implanted-18)
+det(woman-22, the-20)
+amod(woman-22, other-21)
+poss(body-24, woman-22)
+prep_into(implanted-18, body-24)
+advmod(have-7, then-26)
+conj_and(have-7, then-26)
+conj_and(have-7, fertilize-27)
+det(donor-31, an-29)
+amod(donor-31, unknown-30)
+poss(sperm-33, donor-31)
+prep_with(fertilize-27, sperm-33)
+
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (DT the) (NN baby))
+        (VP (VBZ is)
+          (VP (VBN born) (, ,)
+            (PP (RB instead) (IN of)
+              (NP
+                (NP
+                  (NP (DT the) (NN father) (POS 's))
+                  (NN name))
+                (VP (VBG being)
+                  (VP (VBN used)))))))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ other) (NN spouse) (POS 's))
+      (NNS names))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN stated))))
+    (. .)))
+
+mark(born-5, After-1)
+det(baby-3, the-2)
+nsubjpass(born-5, baby-3)
+auxpass(born-5, is-4)
+advcl(stated-23, born-5)
+det(father-10, the-9)
+poss(name-12, father-10)
+prep_instead_of(born-5, name-12)
+auxpass(used-14, being-13)
+partmod(name-12, used-14)
+det(spouse-18, the-16)
+amod(spouse-18, other-17)
+poss(names-20, spouse-18)
+nsubjpass(stated-23, names-20)
+aux(stated-23, can-21)
+auxpass(stated-23, be-22)
+root(ROOT-0, stated-23)
+

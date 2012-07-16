@@ -1,0 +1,38 @@
+(ROOT
+  (SQ (VBP Do)
+    (NP (NNS scientists))
+    (VP (VB find)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ hard)
+          (S
+            (VP (TO to)
+              (VP (VB come)
+                (PP (TO to)
+                  (NP
+                    (NP (DT a) (NN consensus))
+                    (PP (IN about)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (NN life))
+                          (VP (VBZ begins)
+                            (PP (IN for)
+                              (NP (NN fruit) (NNS flies)))))))))))))))
+    (. ?)))
+
+aux(find-3, Do-1)
+nsubj(find-3, scientists-2)
+root(ROOT-0, find-3)
+nsubj(hard-5, it-4)
+xcomp(find-3, hard-5)
+aux(come-7, to-6)
+xcomp(hard-5, come-7)
+det(consensus-10, a-9)
+prep_to(come-7, consensus-10)
+advmod(begins-14, when-12)
+nsubj(begins-14, life-13)
+prepc_about(consensus-10, begins-14)
+nn(flies-17, fruit-16)
+prep_for(begins-14, flies-17)
+

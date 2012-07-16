@@ -1,0 +1,39 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP and))
+    (VP (VBZ allows)
+      (PP (IN for)
+        (NP (NNS predictions)))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN made)
+              (S
+                (VP (VBG regarding)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (VP (MD will)
+                        (VP (VB occur)
+                          (PP (TO to)
+                            (NP
+                              (NP (DT a) (NN species))
+                              (PP (IN over)
+                                (NP (NN time))))))))))))))))
+    (. .)))
+
+nsubj(allows-3, and-2)
+xsubj(made-8, and-2)
+root(ROOT-0, allows-3)
+prep_for(allows-3, predictions-5)
+aux(made-8, to-6)
+auxpass(made-8, be-7)
+xcomp(allows-3, made-8)
+xcomp(made-8, regarding-9)
+nsubj(occur-12, what-10)
+aux(occur-12, will-11)
+ccomp(regarding-9, occur-12)
+det(species-15, a-14)
+prep_to(occur-12, species-15)
+prep_over(species-15, time-17)
+

@@ -1,0 +1,29 @@
+(ROOT
+  (SBARQ
+    (FRAG (CC And)
+      (PP (IN if) (RB not)))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (MD can)
+        (NP (PRP you))
+        (VP (VB use)
+          (S
+            (NP (PRP it))
+            (VP (TO to)
+              (VP (VB support)
+                (NP (NNP ID))))))))
+    (. ?)))
+
+dep(use-8, And-1)
+dep(And-1, if-2)
+neg(if-2, not-3)
+advmod(use-8, how-5)
+aux(use-8, can-6)
+nsubj(use-8, you-7)
+root(ROOT-0, use-8)
+nsubj(support-11, it-9)
+aux(support-11, to-10)
+xcomp(use-8, support-11)
+dobj(support-11, ID-12)
+

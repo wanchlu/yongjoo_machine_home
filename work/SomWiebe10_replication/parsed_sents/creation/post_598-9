@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT That))
+      (PP (IN of)
+        (NP (NN course))))
+    (, ,)
+    (VP (VBZ requires)
+      (S
+        (NP (PRP one))
+        (VP (TO to)
+          (VP (VB propose)
+            (NP (NNS motives)
+              (CC and)
+              (NNS means))
+            (PP (IN for)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (PRP we))
+                  (VP (VBP have)
+                    (NP (DT no) (NN evidence))))))))))
+    (. .)))
+
+nsubj(requires-5, That-1)
+prep_of(That-1, course-3)
+root(ROOT-0, requires-5)
+nsubj(propose-8, one-6)
+aux(propose-8, to-7)
+xcomp(requires-5, propose-8)
+dobj(propose-8, motives-9)
+dobj(propose-8, means-11)
+conj_and(motives-9, means-11)
+dobj(have-15, which-13)
+nsubj(have-15, we-14)
+prepc_for(propose-8, have-15)
+det(evidence-17, no-16)
+dobj(have-15, evidence-17)
+

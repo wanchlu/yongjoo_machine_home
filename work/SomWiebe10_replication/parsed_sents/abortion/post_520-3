@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT a) (NN hospital)))
+    (, ,)
+    (NP (DT these))
+    (VP (VBP are)
+      (ADVP (RB often))
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB determine)
+              (NP
+                (NP (DT the) (NN beginning)
+                  (CC and)
+                  (NN end))
+                (PP (IN of)
+                  (NP (NN life)))))))))
+    (. .)))
+
+det(hospital-3, a-2)
+prep_in(used-8, hospital-3)
+nsubjpass(used-8, these-5)
+xsubj(determine-10, these-5)
+auxpass(used-8, are-6)
+advmod(used-8, often-7)
+root(ROOT-0, used-8)
+aux(determine-10, to-9)
+xcomp(used-8, determine-10)
+det(beginning-12, the-11)
+dobj(determine-10, beginning-12)
+dobj(determine-10, end-14)
+conj_and(beginning-12, end-14)
+prep_of(beginning-12, life-16)
+

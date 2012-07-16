@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP know)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT a) (NN person))
+          (VP (VBZ is)))))
+    (. .)))
+
+dep(know-4, Well-1)
+nsubj(know-4, I-3)
+root(ROOT-0, know-4)
+dobj(is-8, what-5)
+det(person-7, a-6)
+nsubj(is-8, person-7)
+ccomp(know-4, is-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can)
+      (VP (VB distinguish)
+        (NP (DT a) (NN person))
+        (PP (IN from)
+          (NP
+            (NP (DT a) (NN dog))
+            (CC or)
+            (NP (DT a) (NN hampster))))))
+    (. .)))
+
+nsubj(distinguish-3, I-1)
+aux(distinguish-3, can-2)
+root(ROOT-0, distinguish-3)
+det(person-5, a-4)
+dobj(distinguish-3, person-5)
+det(dog-8, a-7)
+prep_from(distinguish-3, dog-8)
+det(hampster-11, a-10)
+prep_from(distinguish-3, hampster-11)
+conj_or(dog-8, hampster-11)
+

@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (NP (JJ Pro-life) (JJ militant) (NNS groups))
+    (VP (VBP act)
+      (ADVP (RB violently))
+      (PP (IN in)
+        (NP (NN opposition)))
+      (PP (TO to)
+        (NP (NN abortion))))
+    (. .)))
+
+amod(groups-3, Pro-life-1)
+amod(groups-3, militant-2)
+nsubj(act-4, groups-3)
+root(ROOT-0, act-4)
+advmod(act-4, violently-5)
+prep_in(act-4, opposition-7)
+prep_to(act-4, abortion-9)
+
+(ROOT
+  (S
+    (NP (JJ Many) (JJ pro-life) (NNS activists))
+    (VP (VBP act)
+      (ADVP (RB violently))
+      (PP (IN in)
+        (NP (NN opposition)))
+      (PP (TO to)
+        (NP (NN abortion))))
+    (. .)))
+
+amod(activists-3, Many-1)
+amod(activists-3, pro-life-2)
+nsubj(act-4, activists-3)
+root(ROOT-0, act-4)
+advmod(act-4, violently-5)
+prep_in(act-4, opposition-7)
+prep_to(act-4, abortion-9)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ many) (NNS examples))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (DT the) (NN bombing))
+              (PP (IN of)
+                (NP (NNP Planned) (NNP Parenthood) (NN abortion) (NNS clinics))))
+            (CC and)
+            (NP
+              (NP (DT the) (NN harassment))
+              (PP (IN of)
+                (NP (NN abortion) (NNS workers))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(examples-4, many-3)
+nsubj(are-2, examples-4)
+det(bombing-7, the-6)
+prep_of(examples-4, bombing-7)
+nn(clinics-12, Planned-9)
+nn(clinics-12, Parenthood-10)
+nn(clinics-12, abortion-11)
+prep_of(bombing-7, clinics-12)
+det(harassment-15, the-14)
+prep_of(examples-4, harassment-15)
+conj_and(bombing-7, harassment-15)
+nn(workers-18, abortion-17)
+prep_of(harassment-15, workers-18)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ wrong)))
+      (, ,)
+      (CC and)
+      (VP (VBZ undermines)
+        (NP
+          (NP (DT the) (NN case))
+          (PP (IN against)
+            (NP (NN abortion))))))
+    (. .)))
+
+nsubj(wrong-3, This-1)
+nsubj(undermines-6, This-1)
+cop(wrong-3, is-2)
+root(ROOT-0, wrong-3)
+conj_and(wrong-3, undermines-6)
+det(case-8, the-7)
+dobj(undermines-6, case-8)
+prep_against(case-8, abortion-10)
+

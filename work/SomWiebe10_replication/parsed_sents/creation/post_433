@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (NNP Debater) (NNP Jay) (NNP Richards))
+    (VP (VBZ answers)
+      (NP (DT this) (NN question))
+      (NP
+        (NP
+          (NP (RB quite) (RB clearly))
+          (PP (IN in)
+            (NP
+              (NP (DT a) (JJ short) (NN video))
+              (ADVP (IN at)))))
+        (: :)
+        (NP (NNS www.discovery.org\/v\/19))))
+    (. .)))
+
+nn(Richards-3, Debater-1)
+nn(Richards-3, Jay-2)
+nsubj(answers-4, Richards-3)
+root(ROOT-0, answers-4)
+det(question-6, this-5)
+iobj(answers-4, question-6)
+advmod(clearly-8, quite-7)
+dobj(answers-4, clearly-8)
+det(video-12, a-10)
+amod(video-12, short-11)
+prep_in(clearly-8, video-12)
+advmod(video-12, at-13)
+dep(clearly-8, www.discovery.org\/v\/19-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS folks))
+      (PP (IN at)
+        (NP (NNP ARI))))
+    (VP (MD should)
+      (VP (VB watch)
+        (CC and)
+        (VB listen)))
+    (. .)))
+
+det(folks-2, The-1)
+nsubj(watch-6, folks-2)
+nsubj(listen-8, folks-2)
+prep_at(folks-2, ARI-4)
+aux(watch-6, should-5)
+root(ROOT-0, watch-6)
+conj_and(watch-6, listen-8)
+

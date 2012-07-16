@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NN Alcoholism)
+      (CC and)
+      (NN drug-use))
+    (VP (VBP are)
+      (ADJP (JJ common)
+        (PP (IN after)
+          (NP (NNS abortions)))))
+    (. .)))
+
+nsubj(common-5, Alcoholism-1)
+conj_and(Alcoholism-1, drug-use-3)
+nsubj(common-5, drug-use-3)
+cop(common-5, are-4)
+root(ROOT-0, common-5)
+prep_after(common-5, abortions-7)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ many) (NNS reports))
+        (PP (IN of)
+          (NP
+            (NP (NN woman))
+            (VP (VBG falling)
+              (PP (IN into)
+                (UCP (RB not)
+                  (ADVP (RB only) (RB depression))
+                  (, ,)
+                  (CC but)
+                  (NP
+                    (NP (NNS spates))
+                    (PP (IN of)
+                      (NP (NN alcoholism)
+                        (CC and)
+                        (NN drug-use))))))
+              (PP (IN after)
+                (S
+                  (VP (VBG having)
+                    (NP (NNS abortions))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(reports-4, many-3)
+nsubj(are-2, reports-4)
+prep_of(reports-4, woman-6)
+partmod(woman-6, falling-7)
+prep(falling-7, into-8)
+dep(into-8, not-9)
+advmod(depression-11, only-10)
+dep(not-9, depression-11)
+dep(into-8, spates-14)
+conj_but(not-9, spates-14)
+prep_of(spates-14, alcoholism-16)
+prep_of(spates-14, drug-use-18)
+conj_and(alcoholism-16, drug-use-18)
+prepc_after(falling-7, having-20)
+dobj(having-20, abortions-21)
+

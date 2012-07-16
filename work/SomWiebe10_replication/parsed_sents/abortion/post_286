@@ -1,0 +1,43 @@
+(ROOT
+  (S (CC And)
+    (NP (DT the) (NN logic))
+    (VP (VBZ follows))
+    (. .)))
+
+cc(follows-4, And-1)
+det(logic-3, the-2)
+nsubj(follows-4, logic-3)
+root(ROOT-0, follows-4)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB want)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP (DT an) (NN abortion)))))))))
+    (, ,)
+    (VP (VB do) (RB n't)
+      (VP (VB have)
+        (NP (CD one))))
+    (. .)))
+
+mark(want-5, If-1)
+nsubj(want-5, you-2)
+xsubj(have-7, you-2)
+aux(want-5, do-3)
+neg(want-5, n't-4)
+advcl(have-13, want-5)
+aux(have-7, to-6)
+xcomp(want-5, have-7)
+det(abortion-9, an-8)
+dobj(have-7, abortion-9)
+aux(have-13, do-11)
+neg(have-13, n't-12)
+root(ROOT-0, have-13)
+dobj(have-13, one-14)
+

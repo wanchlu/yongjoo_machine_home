@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP I))
+          (VP (VBD did)
+            (VP (VB hold)
+              (PRT (RP up))
+              (NP (DT a) (NN pencil))))))
+      (, ,)
+      (VP (VB let)
+        (S
+          (NP (PRP it))
+          (VP (VB go)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD did) (RB not)
+        (VP (VB fall)
+          (ADVP (RB then))
+          (SBAR (IN that)
+            (S
+              (VP (MD would) (RB not)
+                (VP (VB change)
+                  (NP (PRP$ my) (NNS beliefs)))))))))
+    (: ...)))
+
+mark(hold-4, If-1)
+nsubj(hold-4, I-2)
+aux(hold-4, did-3)
+advcl(let-9, hold-4)
+prt(hold-4, up-5)
+det(pencil-7, a-6)
+dobj(hold-4, pencil-7)
+root(ROOT-0, let-9)
+nsubj(go-11, it-10)
+ccomp(let-9, go-11)
+nsubj(fall-17, it-14)
+aux(fall-17, did-15)
+neg(fall-17, not-16)
+conj_and(let-9, fall-17)
+advmod(fall-17, then-18)
+complm(change-22, that-19)
+aux(change-22, would-20)
+neg(change-22, not-21)
+ccomp(fall-17, change-22)
+poss(beliefs-24, my-23)
+dobj(change-22, beliefs-24)
+

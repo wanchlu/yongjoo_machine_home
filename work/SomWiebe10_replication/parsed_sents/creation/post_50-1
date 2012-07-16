@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN order))
+        (PP (IN for)
+          (NP (NN something)))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN designed)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (UCP
+              (VP (VBN specified))
+              (CC and)
+              (ADJP (RB sufficiently) (JJ complex)))))))
+    (. .)))
+
+prep_in(needs-10, order-2)
+prep_for(order-2, something-4)
+aux(designed-7, to-5)
+auxpass(designed-7, be-6)
+infmod(order-2, designed-7)
+nsubj(needs-10, it-9)
+xsubj(be-12, it-9)
+root(ROOT-0, needs-10)
+aux(be-12, to-11)
+xcomp(needs-10, be-12)
+dep(be-12, specified-13)
+advmod(complex-16, sufficiently-15)
+dep(be-12, complex-16)
+conj_and(specified-13, complex-16)
+

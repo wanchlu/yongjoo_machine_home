@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP$ His) (NN job))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB fight)
+                  (NP (NNP ID)))))))))
+    (. .)))
+
+poss(job-2, His-1)
+nsubj(means-3, job-2)
+root(ROOT-0, means-3)
+nsubj(has-5, he-4)
+xsubj(fight-7, he-4)
+ccomp(means-3, has-5)
+aux(fight-7, to-6)
+xcomp(has-5, fight-7)
+dobj(fight-7, ID-8)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ does) (RB not)
+      (VP (VB make)
+        (S
+          (NP (PRP him)
+            (CC or)
+            (PRP her))
+          (NP
+            (NP (DT an) (NN expert))
+            (PP (IN on)
+              (NP (JJ religious) (NN belief)))))))
+    (. .)))
+
+nsubj(make-4, This-1)
+aux(make-4, does-2)
+neg(make-4, not-3)
+root(ROOT-0, make-4)
+nsubj(expert-9, him-5)
+conj_or(him-5, her-7)
+nsubj(expert-9, her-7)
+det(expert-9, an-8)
+xcomp(make-4, expert-9)
+amod(belief-12, religious-11)
+prep_on(expert-9, belief-12)
+

@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN majority))
+        (PP (IN of)
+          (NP (NNS abortions))))
+      (VP (VBP happen)
+        (PP (IN in)
+          (NP (DT the) (JJ first) (NN trimester)))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD 'd)
+        (VP (VB be)
+          (ADJP (RB hard) (VBN pressed)
+            (S
+              (VP (TO to)
+                (VP (VB find)
+                  (NP
+                    (NP (NN anything))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ looks)
+                          (ADJP (JJ human)))))))))))))
+    (. .)))
+
+det(majority-2, The-1)
+nsubj(happen-5, majority-2)
+prep_of(majority-2, abortions-4)
+root(ROOT-0, happen-5)
+det(trimester-9, the-7)
+amod(trimester-9, first-8)
+prep_in(happen-5, trimester-9)
+nsubjpass(pressed-15, you-11)
+aux(pressed-15, 'd-12)
+auxpass(pressed-15, be-13)
+advmod(pressed-15, hard-14)
+conj_and(happen-5, pressed-15)
+aux(find-17, to-16)
+xcomp(pressed-15, find-17)
+dobj(find-17, anything-18)
+nsubj(looks-20, anything-18)
+rcmod(anything-18, looks-20)
+acomp(looks-20, human-21)
+

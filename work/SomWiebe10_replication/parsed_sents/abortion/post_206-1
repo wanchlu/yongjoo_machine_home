@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP it))
+        (SBAR (IN that)
+          (S
+            (NP (JJ pro-life))
+            (VP (VBZ seems)
+              (S
+                (VP (TO to)
+                  (VP
+                    (ADVP (RB only))
+                    (VB value)
+                    (NP
+                      (NP (DT the) (NN life))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NN unborn))
+                          (CC and)
+                          (NP (RB not) (DT the))))))))))))
+      (VP (VBN born)))
+    (. ?)))
+
+advmod(born-18, Why-1)
+auxpass(born-18, is-2)
+nsubjpass(born-18, it-3)
+complm(seems-6, that-4)
+nsubj(seems-6, pro-life-5)
+xsubj(value-9, pro-life-5)
+dep(it-3, seems-6)
+aux(value-9, to-7)
+advmod(value-9, only-8)
+xcomp(seems-6, value-9)
+det(life-11, the-10)
+dobj(value-9, life-11)
+det(unborn-14, the-13)
+prep_of(life-11, unborn-14)
+neg(the-17, not-16)
+prep_of(life-11, the-17)
+conj_and(unborn-14, the-17)
+root(ROOT-0, born-18)
+

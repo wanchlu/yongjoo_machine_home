@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (LST (: --))
+      (NP (NNP Casey))
+      (VP (VBZ writes)))
+    (: --)
+    (S
+      (NP (NNP ID))
+      (VP (VBZ does) (RB n't)
+        (VP (VB try)
+          (S
+            (VP (TO to)
+              (VP (VB address)
+                (NP (JJ theological) (NNS questions))
+                (PP (IN about)
+                  (NP
+                    (NP (DT the) (NN identity) (, ,) (NN nature) (, ,)
+                      (CC or)
+                      (NN origin))
+                    (PP (IN of)
+                      (NP (DT the) (NN designer)))))))))))
+    (. .)))
+
+nsubj(writes-3, Casey-2)
+root(ROOT-0, writes-3)
+nsubj(try-8, ID-5)
+xsubj(address-10, ID-5)
+aux(try-8, does-6)
+neg(try-8, n't-7)
+parataxis(writes-3, try-8)
+aux(address-10, to-9)
+xcomp(try-8, address-10)
+amod(questions-12, theological-11)
+dobj(address-10, questions-12)
+det(identity-15, the-14)
+prep_about(address-10, identity-15)
+prep_about(address-10, nature-17)
+conj_or(identity-15, nature-17)
+prep_about(address-10, origin-20)
+conj_or(identity-15, origin-20)
+det(designer-23, the-22)
+prep_of(identity-15, designer-23)
+

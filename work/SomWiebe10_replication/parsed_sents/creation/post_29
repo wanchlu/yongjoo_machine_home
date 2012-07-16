@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (VBG Teaching) (NN creationism))
+    (VP (VBZ is)
+      (ADJP (JJ akin)
+        (S
+          (VP (TO to)
+            (VP (VB child-abuse))))))
+    (. .)))
+
+amod(creationism-2, Teaching-1)
+nsubj(akin-4, creationism-2)
+cop(akin-4, is-3)
+root(ROOT-0, akin-4)
+aux(child-abuse-6, to-5)
+xcomp(akin-4, child-abuse-6)
+
+(ROOT
+  (S
+    (NP (DT This) (NN view))
+    (VP (VBZ is)
+      (VP (VBN put)
+        (PRT (RP forward))
+        (PP (IN by)
+          (NP
+            (NP (NNP Richard) (NNP Dawkins))
+            (, ,)
+            (NP
+              (NP (DT a) (JJ prominent) (NN opponent))
+              (PP (IN of)
+                (S
+                  (VP (VBG teaching)
+                    (NP (NN creationism))
+                    (PP (IN in)
+                      (NP (NNS schools)))))))))))
+    (. .)))
+
+det(view-2, This-1)
+nsubjpass(put-4, view-2)
+auxpass(put-4, is-3)
+root(ROOT-0, put-4)
+prt(put-4, forward-5)
+nn(Dawkins-8, Richard-7)
+agent(put-4, Dawkins-8)
+det(opponent-12, a-10)
+amod(opponent-12, prominent-11)
+appos(Dawkins-8, opponent-12)
+prepc_of(opponent-12, teaching-14)
+dobj(teaching-14, creationism-15)
+prep_in(teaching-14, schools-17)
+

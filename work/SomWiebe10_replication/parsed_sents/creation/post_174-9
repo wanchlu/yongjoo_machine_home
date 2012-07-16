@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT Another) (NN example))
+        (PP (IN of)
+          (NP (DT an) (NN illogical))))
+      (VP (VBD prediction)
+        (SBAR
+          (S
+            (VP (VBZ is))))
+        ('' '')
+        (SBAR (IN If)
+          (S
+            (NP (DT the) (NN world))
+            (VP (VBZ is)
+              (VP (VBN designed)))))))
+    (, ,) (RB then)
+    (S
+      (NP (EX there))
+      (VP (MD should)
+        (VP (VB be)
+          (NP
+            (NP (DT no) (NN pain))
+            (CC and)
+            (NP (NN suffering) ('' ''))))))
+    (. .)))
+
+det(example-2, Another-1)
+nsubj(prediction-6, example-2)
+det(illogical-5, an-4)
+prep_of(example-2, illogical-5)
+root(ROOT-0, prediction-6)
+ccomp(prediction-6, is-7)
+mark(designed-13, If-9)
+det(world-11, the-10)
+nsubjpass(designed-13, world-11)
+auxpass(designed-13, is-12)
+advcl(prediction-6, designed-13)
+advmod(prediction-6, then-15)
+expl(pain-20, there-16)
+aux(pain-20, should-17)
+cop(pain-20, be-18)
+det(pain-20, no-19)
+ccomp(prediction-6, pain-20)
+ccomp(prediction-6, suffering-22)
+conj_and(pain-20, suffering-22)
+

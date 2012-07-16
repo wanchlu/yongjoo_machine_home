@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP (NN Someone) (RB else))
+    (VP (VBZ is)
+      (VP (VBG doing)
+        (NP (DT that))
+        (, ,)
+        (SBAR
+          (ADVP (RB probably))
+          (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBD grasped)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP am)
+                    (VP (VBG saying))))))))
+        (, ,)
+        (SBAR (RB even) (IN though)
+          (S
+            (NP (PRP you))
+            (ADVP (RB ostensibly))
+            (VP (VBP do) (RB not))))))
+    (. .)))
+
+nsubj(doing-4, Someone-1)
+advmod(Someone-1, else-2)
+aux(doing-4, is-3)
+root(ROOT-0, doing-4)
+dobj(doing-4, that-5)
+advmod(grasped-10, probably-7)
+dep(grasped-10, because-8)
+nsubj(grasped-10, they-9)
+dep(doing-4, grasped-10)
+dobj(saying-14, what-11)
+nsubj(saying-14, I-12)
+aux(saying-14, am-13)
+ccomp(grasped-10, saying-14)
+advmod(do-20, even-16)
+dep(do-20, though-17)
+nsubj(do-20, you-18)
+advmod(do-20, ostensibly-19)
+dep(doing-4, do-20)
+neg(do-20, not-21)
+

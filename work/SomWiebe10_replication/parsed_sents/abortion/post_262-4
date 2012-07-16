@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (DT the) (NN mother))
+        (VP (VBG giving)
+          (NP (PRP it))
+          (NP (NN life))
+          (PP (IN by)
+            (S
+              (VP (VBG letting)))))))
+    (NP (PRP it))
+    (VP (VBP live)
+      (PRT (RP off))
+      (PP (IN of)
+        (NP (PRP$ her) (NN food) (, ,) (NN water) (, ,) (NNS blood) (, ,) (FW etc.))))
+    (. .)))
+
+det(mother-3, the-2)
+prep_from(live-10, mother-3)
+partmod(mother-3, giving-4)
+iobj(giving-4, it-5)
+dobj(giving-4, life-6)
+agent(giving-4, letting-8)
+nsubj(live-10, it-9)
+root(ROOT-0, live-10)
+poss(blood-18, her-13)
+nn(blood-18, food-14)
+dep(blood-18, water-16)
+prep_off_of(live-10, blood-18)
+dep(blood-18, etc.-20)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (NN everyone))
+    (VP (VB make)
+      (NP (JJ wrong) (NNS decisions)))
+    (. ?)))
+
+dep(make-3, Does-1)
+nsubj(make-3, everyone-2)
+root(ROOT-0, make-3)
+amod(decisions-5, wrong-4)
+dobj(make-3, decisions-5)
+

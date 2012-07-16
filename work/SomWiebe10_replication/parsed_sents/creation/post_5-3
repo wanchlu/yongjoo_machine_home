@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ creationist) (NN account))
+    (VP (VBZ requires)
+      (SBAR
+        (S
+          (NP
+            (NP (DT a) (NN belief))
+            (VP
+              (VP (VBN founded)
+                (PP (IN on)
+                  (NP (NN faith))))
+              (CC and)
+              (VP (VBZ is) (RB not)
+                (NP (DT a) (`` ``) (JJ working) (NN hypothesis) ('' '')))))
+          (VP (VBP testable)
+            (S
+              (VP (VBG using)
+                (NP (NN observation)
+                  (CC or)
+                  (NN experiment))))))))
+    (. .)))
+
+det(account-3, The-1)
+amod(account-3, creationist-2)
+nsubj(requires-4, account-3)
+root(ROOT-0, requires-4)
+det(belief-6, a-5)
+nsubj(testable-18, belief-6)
+dep(belief-6, founded-7)
+prep_on(founded-7, faith-9)
+cop(hypothesis-16, is-11)
+neg(hypothesis-16, not-12)
+det(hypothesis-16, a-13)
+amod(hypothesis-16, working-15)
+dep(belief-6, hypothesis-16)
+conj_and(founded-7, hypothesis-16)
+ccomp(requires-4, testable-18)
+xcomp(testable-18, using-19)
+dobj(using-19, observation-20)
+dobj(using-19, experiment-22)
+conj_or(observation-20, experiment-22)
+

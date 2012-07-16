@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (NNS adults))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBN considered)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be) (`` ``)
+                          (PP (IN of)
+                            (NP
+                              (NP (DT the) (NN age))
+                              (PP (IN of)
+                                (NP (NN majority) ('' ''))))))))))))))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (PRP they))
+      (PP (TO to)
+        (NP
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (NP (DT the) (NN right)
+                  (S
+                    (VP (TO to)
+                      (VP (VB raise)
+                        (NP (PRP$ their) (NN child)))))))))
+          (CC and)
+          (NP
+            (NP (PRP they))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBN punished)
+                    (PP (IN for)
+                      (NP (DT the) (NN abuse)))))))))))
+    (. .)))
+
+mark(adults-5, Since-1)
+nsubj(adults-5, it-2)
+cop(adults-5, is-3)
+det(adults-5, the-4)
+nsubjpass(considered-8, adults-5)
+advcl(they-20, adults-5)
+auxpass(considered-8, are-7)
+rcmod(adults-5, considered-8)
+aux(be-10, to-9)
+xcomp(considered-8, be-10)
+det(age-14, the-13)
+prep_of(be-10, age-14)
+prep_of(age-14, majority-16)
+nsubj(they-20, it-18)
+cop(they-20, is-19)
+root(ROOT-0, they-20)
+nsubj(have-23, who-22)
+prep_to(they-20, have-23)
+det(right-25, the-24)
+dobj(have-23, right-25)
+aux(raise-27, to-26)
+infmod(right-25, raise-27)
+poss(child-29, their-28)
+dobj(raise-27, child-29)
+prep_to(they-20, they-31)
+conj_and(have-23, they-31)
+nsubjpass(punished-34, they-31)
+auxpass(punished-34, are-33)
+rcmod(they-31, punished-34)
+det(abuse-37, the-36)
+prep_for(punished-34, abuse-37)
+

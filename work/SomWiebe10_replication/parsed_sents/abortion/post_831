@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (ADVP (RB Yes))
+    (NP (PRP I))
+    (VP (VBP do))
+    (. .)))
+
+advmod(do-3, Yes-1)
+nsubj(do-3, I-2)
+root(ROOT-0, do-3)
+
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (ADVP (RB never))
+      (NP (DT the) (NN answer)))
+    (. .)))
+
+nsubj(answer-5, Abortion-1)
+cop(answer-5, is-2)
+neg(answer-5, never-3)
+det(answer-5, the-4)
+root(ROOT-0, answer-5)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (NN life))
+            (VP (VBZ occurs))))))
+    (. ?)))
+
+advmod(think-4, When-1)
+aux(think-4, do-2)
+nsubj(think-4, you-3)
+root(ROOT-0, think-4)
+nsubj(occurs-6, life-5)
+ccomp(think-4, occurs-6)
+

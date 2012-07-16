@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (VP (VB Ha))
+    (. !)))
+
+root(ROOT-0, Ha-1)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (ADVP (RB simply))
+    (VP (VBZ means)
+      (SBAR (IN that)
+        (S
+          (S
+            (LST (-LRB- -LRB-) (LS 1) (-RRB- -RRB-))
+            (NP (EX there))
+            (VP (VBD was)
+              (NP
+                (NP (DT an) (NN intelligence))
+                (PP (IN behind)
+                  (NP (DT both))))))
+          (, ,)
+          (CC and)
+          (S
+            (LST (-LRB- -LRB-) (LS 2) (-RRB- -RRB-))
+            (NP (PRP$ your) (NN program))
+            (VP (VBD sucked)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP it))
+                  (VP (VBD took)
+                    (SBAR
+                      (S
+                        (NP
+                          (QP (JJR more) (IN than) (CD one)))
+                        (VP (VBP try))))))))))))
+    (. .)))
+
+nsubj(means-3, That-1)
+advmod(means-3, simply-2)
+root(ROOT-0, means-3)
+complm(was-9, that-4)
+dep(was-9, 1-6)
+expl(was-9, there-8)
+ccomp(means-3, was-9)
+det(intelligence-11, an-10)
+nsubj(was-9, intelligence-11)
+prep_behind(intelligence-11, both-13)
+dep(sucked-21, 2-17)
+poss(program-20, your-19)
+nsubj(sucked-21, program-20)
+ccomp(means-3, sucked-21)
+conj_and(was-9, sucked-21)
+mark(took-24, because-22)
+nsubj(took-24, it-23)
+advcl(sucked-21, took-24)
+mwe(than-26, more-25)
+quantmod(one-27, than-26)
+nsubj(try-28, one-27)
+ccomp(took-24, try-28)
+

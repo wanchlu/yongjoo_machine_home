@@ -1,0 +1,23 @@
+(ROOT
+  (S
+    (NP (NNS Storms)
+      (NX
+        (NX (NNS tornadoes))
+        (, ,)
+        (NX (NNS hurricanes))
+        (, ,) (FW etc)))
+    (VP (VBP are)
+      (NP
+        (NP (NNS machines))
+        (PP (IN with)
+          (NP (NNS engines)))))
+    (. .)))
+
+dep(hurricanes-4, Storms-1)
+dep(hurricanes-4, tornadoes-2)
+nsubj(machines-8, hurricanes-4)
+dep(hurricanes-4, etc-6)
+cop(machines-8, are-7)
+root(ROOT-0, machines-8)
+prep_with(machines-8, engines-10)
+

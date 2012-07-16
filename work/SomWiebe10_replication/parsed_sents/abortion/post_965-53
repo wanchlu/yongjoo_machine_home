@@ -1,0 +1,58 @@
+(ROOT
+  (FRAG
+    (NP (NNP Luke))
+    (SBAR
+      (S
+        (NP (CD 1:42) (CD -44))
+        (VP (VBZ says)
+          (SBAR
+            (S
+              (PP (IN In)
+                (NP (DT a) (JJ loud) (NN voice)))
+              (NP (NNP Elizabeth))
+              (VP (VBD exclaimed)))))))
+    (: :) (`` ``)
+    (S
+      (S
+        (NP (NNP Blessed))
+        (VP (VBP are)
+          (NP (PRP you))
+          (PP (IN among)
+            (NP (NNS women)))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (NNP blessed))
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (NN child))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (MD will)
+                  (VP (VB bear)))))))))
+    (. !)))
+
+root(ROOT-0, Luke-1)
+num(-44-3, 1:42-2)
+nsubj(says-4, -44-3)
+dep(Luke-1, says-4)
+det(voice-8, a-6)
+amod(voice-8, loud-7)
+prep_in(exclaimed-10, voice-8)
+nsubj(exclaimed-10, Elizabeth-9)
+ccomp(says-4, exclaimed-10)
+nsubj(you-15, Blessed-13)
+cop(you-15, are-14)
+dep(Luke-1, you-15)
+prep_among(you-15, women-17)
+nsubj(child-23, blessed-20)
+cop(child-23, is-21)
+det(child-23, the-22)
+dep(Luke-1, child-23)
+conj_and(you-15, child-23)
+dobj(bear-26, child-23)
+nsubj(bear-26, you-24)
+aux(bear-26, will-25)
+rcmod(child-23, bear-26)
+

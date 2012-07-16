@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP
+      (NP (FW i))
+      (VP (VBN mentioned)
+        (NP
+          (NP (NN nature))
+          (CC and)
+          (NP (JJ medical) (NN science)))
+        (SBAR (IN because)
+          (S
+            (NP (PRP you))
+            (VP (VBD did))))))
+    (VP (VBP say)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADVP (RB merely))
+            (NP
+              (NP (NN nature))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ designs)
+                    (NP (DT a) (NN woman)
+                      (S
+                        (VP (TO to)
+                          (VP (VB carry)
+                            (NP (DT the) (NN child))))))))))))))
+    (. .)))
+
+nsubj(say-10, i-1)
+partmod(i-1, mentioned-2)
+dobj(mentioned-2, nature-3)
+amod(science-6, medical-5)
+dobj(mentioned-2, science-6)
+conj_and(nature-3, science-6)
+mark(did-9, because-7)
+nsubj(did-9, you-8)
+advcl(mentioned-2, did-9)
+root(ROOT-0, say-10)
+nsubj(nature-14, it-11)
+cop(nature-14, 's-12)
+advmod(nature-14, merely-13)
+ccomp(say-10, nature-14)
+nsubj(designs-16, nature-14)
+rcmod(nature-14, designs-16)
+det(woman-18, a-17)
+dobj(designs-16, woman-18)
+aux(carry-20, to-19)
+infmod(woman-18, carry-20)
+det(child-22, the-21)
+dobj(carry-20, child-22)
+

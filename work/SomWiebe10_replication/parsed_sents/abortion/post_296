@@ -1,0 +1,447 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT a) (NN fetus) (NNS looks))
+    (VP (VB like)
+      (S
+        (NP (PRP we))
+        (VP (VB expect)
+          (S
+            (NP (PRP it))
+            (VP (TO to)
+              (VP (VB look)))))))
+    (. ?)))
+
+dep(like-5, Does-1)
+det(looks-4, a-2)
+nn(looks-4, fetus-3)
+nsubj(like-5, looks-4)
+root(ROOT-0, like-5)
+nsubj(expect-7, we-6)
+ccomp(like-5, expect-7)
+nsubj(look-10, it-8)
+aux(look-10, to-9)
+xcomp(expect-7, look-10)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (PRP we))
+    (VP (VB expect)
+      (S
+        (NP (PRP it))
+        (VP (TO to)
+          (VP (VB look)
+            (PP (IN like)
+              (NP (DT a) (NN baby)))))))
+    (. ?)))
+
+dep(expect-3, Does-1)
+nsubj(expect-3, we-2)
+root(ROOT-0, expect-3)
+nsubj(look-6, it-4)
+aux(look-6, to-5)
+xcomp(expect-3, look-6)
+det(baby-9, a-8)
+prep_like(look-6, baby-9)
+
+(ROOT
+  (NP ('' '')
+    (CC Keith)
+    (NP
+      (NP
+        (NP (NNP L.) (NNP Moore))
+        (, ,)
+        (SBAR (IN Before)
+          (S
+            (NP (PRP We))
+            (VP (VBP Are)
+              (VP (VBN Born))))))
+      (: :)
+      (NP
+        (NP (NNP Essentials))
+        (PP (IN of)
+          (NP
+            (NP (NNP Embryology))
+            (, ,)
+            (NP (JJ 7th) (NN edition))))))
+    (. .)))
+
+cc(Moore-4, Keith-2)
+nn(Moore-4, L.-3)
+root(ROOT-0, Moore-4)
+mark(Born-9, Before-6)
+nsubjpass(Born-9, We-7)
+auxpass(Born-9, Are-8)
+dep(Moore-4, Born-9)
+dep(Moore-4, Essentials-11)
+prep_of(Essentials-11, Embryology-13)
+amod(edition-16, 7th-15)
+appos(Embryology-13, edition-16)
+
+(ROOT
+  (NP
+    (NP (NNP Philadelphia) (, ,) (NNP PA))
+    (: :)
+    (NP
+      (NP (NNP Saunders))
+      (, ,)
+      (NP (CD 2008)))
+    (. .)))
+
+nn(PA-3, Philadelphia-1)
+root(ROOT-0, PA-3)
+dep(PA-3, Saunders-5)
+appos(Saunders-5, 2008-7)
+
+(ROOT
+  (NP (NNS p.) (CD 2) (. .)))
+
+root(ROOT-0, p.-1)
+num(p.-1, 2-2)
+
+(ROOT
+  (S
+    (NP (NNS Fetuses))
+    (VP (VBP are)
+      (NP
+        (NP (JJ human) (NNS beings))
+        (PP (IN at)
+          (NP
+            (NP (DT a) (JJ early) (NN stage))
+            (PP (IN of)
+              (NP (NN development)))))))
+    (. .)))
+
+nsubj(beings-4, Fetuses-1)
+cop(beings-4, are-2)
+amod(beings-4, human-3)
+root(ROOT-0, beings-4)
+det(stage-8, a-6)
+amod(stage-8, early-7)
+prep_at(beings-4, stage-8)
+prep_of(stage-8, development-10)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (JJ same) (NN entity))
+        (PP
+          (PP
+            (NP
+              (NP (DT that))
+              (PP (IN through)
+                (NP (NN development) (NNS evolves))))
+            (IN from)
+            (NP
+              (ADJP (JJ zygote)
+                (PP (TO to)
+                  (NP
+                    (NP (NN embryo) (JJ then) (NN fetus))
+                    (CC and)
+                    (NP (RB then)))))
+              (NN baby)))
+          (CC and)
+          (PP (RB so) (IN on)
+            (PP (IN until)
+              (NP (NN death)))))))
+    (. .)))
+
+nsubj(entity-5, They-1)
+cop(entity-5, are-2)
+det(entity-5, the-3)
+amod(entity-5, same-4)
+root(ROOT-0, entity-5)
+conj_and(entity-5, entity-5')
+npadvmod(entity-5, that-6)
+nn(evolves-9, development-8)
+prep_through(that-6, evolves-9)
+amod(baby-18, zygote-11)
+nn(fetus-15, embryo-13)
+amod(fetus-15, then-14)
+prep_to(zygote-11, fetus-15)
+prep_to(zygote-11, then-17)
+conj_and(fetus-15, then-17)
+prep_from(entity-5, baby-18)
+prep_on(entity-5', baby-18)
+advmod(entity-5, so-20)
+prep(entity-5, until-22)
+prep_until(entity-5, death-23)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (ADJP (JJ right)
+          (PP (IN about)
+            (NP (CD one) (NN thing))))))
+    (: :)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB not)
+        (NP (NN Murder))))
+    (: :)
+    (S
+      (NP (NNP UNLAWFUL))
+      (VP (VBD premeditated)
+        (NP
+          (NP (NN killing))
+          (PP (IN of)
+            (NP (DT a) (JJ human) (NN being))))
+        (PP (IN by)
+          (NP
+            (NP (DT a) (JJ human) (NN being))
+            (PRN (-LRB- -LRB-)
+              (NP (NN define.com))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+nsubj(right-3, You-1)
+cop(right-3, are-2)
+root(ROOT-0, right-3)
+num(thing-6, one-5)
+prep_about(right-3, thing-6)
+nsubj(Murder-11, it-8)
+cop(Murder-11, is-9)
+neg(Murder-11, not-10)
+parataxis(right-3, Murder-11)
+nsubj(premeditated-14, UNLAWFUL-13)
+parataxis(right-3, premeditated-14)
+dobj(premeditated-14, killing-15)
+det(being-19, a-17)
+amod(being-19, human-18)
+prep_of(killing-15, being-19)
+det(being-23, a-21)
+amod(being-23, human-22)
+prep_by(premeditated-14, being-23)
+appos(being-23, define.com-25)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ is)
+        (ADJP (JJ homocide))))
+    (: :)
+    (S
+      (NP
+        (NP (DT the) (NN killing))
+        (PP (IN of)
+          (NP (DT a) (JJ human) (NN being))))
+      (PP (IN by)
+        (NP (DT another) (NN human) (VBG being)))
+      (PRN (-LRB- -LRB-)
+        (NP (NN define.com))
+        (-RRB- -RRB-)))))
+
+nsubj(homocide-3, It-1)
+cop(homocide-3, is-2)
+root(ROOT-0, homocide-3)
+det(killing-6, the-5)
+parataxis(homocide-3, killing-6)
+det(being-10, a-8)
+amod(being-10, human-9)
+prep_of(killing-6, being-10)
+dep(killing-6, by-11)
+det(human-13, another-12)
+pobj(by-11, human-13)
+amod(human-13, being-14)
+dep(killing-6, define.com-16)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (PRP we))
+    (VP (VB expect)
+      (NP (DT a) (NN baby)
+        (S
+          (VP (TO to)
+            (VP (VB look)
+              (PP (IN like)
+                (NP (DT an) (NN adult))))))))
+    (. ?)))
+
+dep(expect-3, Does-1)
+nsubj(expect-3, we-2)
+root(ROOT-0, expect-3)
+det(baby-5, a-4)
+dobj(expect-3, baby-5)
+aux(look-7, to-6)
+infmod(baby-5, look-7)
+det(adult-10, an-9)
+prep_like(look-7, adult-10)
+
+(ROOT
+  (NP
+    (NP (NNP No))
+    (PP (IN of)
+      (NP (NN course)))
+    (. .)))
+
+root(ROOT-0, No-1)
+prep_of(No-1, course-3)
+
+(ROOT
+  (S
+    (ADVP (RB Still))
+    (S
+      (NP
+        (NP (DT the) (CD three))
+        (PP (IN of)
+          (NP (PRP them))))
+      (VP (VBP are)
+        (NP (DT all) (NNS humans) (NNS beings))))
+    (CC and)
+    (S
+      (NP (DT all))
+      (VP (VBP are)
+        (PP (IN in)
+          (NP (JJ continuous) (NN development)))))
+    (. .)))
+
+advmod(beings-9, Still-1)
+det(three-3, the-2)
+nsubj(beings-9, three-3)
+prep_of(three-3, them-5)
+cop(beings-9, are-6)
+det(beings-9, all-7)
+nn(beings-9, humans-8)
+root(ROOT-0, beings-9)
+nsubj(are-12, all-11)
+conj_and(beings-9, are-12)
+amod(development-15, continuous-14)
+prep_in(are-12, development-15)
+
+(ROOT
+  (NP
+    (NP (NN Child))
+    (: :)
+    (NP (CD 2))
+    (. .)))
+
+root(ROOT-0, Child-1)
+dep(Child-1, 2-3)
+
+(ROOT
+  (NP
+    (NP (DT a) (JJ human) (NN offspring))
+    (PRN (-LRB- -LRB-)
+      (NP
+        (NP (NN son))
+        (CC or)
+        (NP (NN daughter)))
+      (-RRB- -RRB-))
+    (PP (IN of)
+      (NP (DT any) (NN age)))
+    (. .)))
+
+det(offspring-3, a-1)
+amod(offspring-3, human-2)
+root(ROOT-0, offspring-3)
+dep(offspring-3, son-5)
+dep(offspring-3, daughter-7)
+conj_or(son-5, daughter-7)
+det(age-11, any-10)
+prep_of(offspring-3, age-11)
+
+(ROOT
+  (S
+    (NP (-LRB- -LRB-) (NNP define.com) (-RRB- -RRB-))
+    (PP (IN Since)
+      (NP (DT the) (NN offspring)))
+    (VP (VBZ comes)
+      (PP (IN into)
+        (NP (NN existence)))
+      (PP (IN at)
+        (NP
+          (NP (NN conception))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (ADJP (RB absolutely) (JJ correct))
+                (S
+                  (VP (TO to)
+                    (VP (VB say) ('' '')))))))
+          (: ...)
+          (NP (JJ unborn) (NN child)))))
+    (. .)))
+
+nsubj(comes-7, define.com-2)
+det(offspring-6, the-5)
+prep_since(comes-7, offspring-6)
+root(ROOT-0, comes-7)
+prep_into(comes-7, existence-9)
+prep_at(comes-7, conception-11)
+nsubj(correct-15, it-12)
+xsubj(say-17, it-12)
+cop(correct-15, is-13)
+advmod(correct-15, absolutely-14)
+rcmod(conception-11, correct-15)
+aux(say-17, to-16)
+xcomp(correct-15, say-17)
+amod(child-21, unborn-20)
+dep(conception-11, child-21)
+
+(ROOT
+  (NP
+    (NP (JJ '') (NN Person))
+    (: :)
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, Person-2)
+dep(Person-2, 1-4)
+
+(ROOT
+  (NP (DT a) (JJ human) (NN being) (. .)))
+
+det(being-3, a-1)
+amod(being-3, human-2)
+root(ROOT-0, being-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (-LRB- -LRB-) (NN define.com) (-RRB- -RRB-))
+      ('' '')
+      (PRN (-LRB- -LRB-)
+        (NP (DT The) (NN zygote))
+        (-RRB- -RRB-))
+      (, ,)
+      (VP (VBN formed)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NN union))
+            (PP (IN of)
+              (NP
+                (NP (DT an) (NN oocyte))
+                (CC and)
+                (NP (DT a) (NN sperm)))))))
+      (, ,))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN beginning))
+        (PP (IN of)
+          (NP (DT a) (JJ new) (JJ human) (NN being)))))
+    (. .)))
+
+nsubj(beginning-23, define.com-2)
+det(zygote-7, The-6)
+appos(define.com-2, zygote-7)
+partmod(define.com-2, formed-10)
+det(union-13, the-12)
+agent(formed-10, union-13)
+det(oocyte-16, an-15)
+prep_of(union-13, oocyte-16)
+det(sperm-19, a-18)
+prep_of(union-13, sperm-19)
+conj_and(oocyte-16, sperm-19)
+cop(beginning-23, is-21)
+det(beginning-23, the-22)
+root(ROOT-0, beginning-23)
+det(being-28, a-25)
+amod(being-28, new-26)
+amod(being-28, human-27)
+prep_of(beginning-23, being-28)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (, ,)
+    (NP (DT the) (NN responder))
+    (VP (VBZ declares) (: :) (`` ``)
+      (S
+        (NP (PRP We))
+        (VP (VBP need) (RB not)
+          (VP (`` ``) (VB know) ('' '')
+            (S
+              (NP (DT the) (NN intelligence))
+              (VP (TO to)
+                (VP (VB draw)
+                  (NP (NNS inferences))
+                  (PP (IN about)
+                    (NP
+                      (NP (PRP it) (POS 's))
+                      (NN existence)))
+                  (SBAR (IN because)
+                    (S
+                      (NP (DT that))
+                      (VP (VBZ 's) (RB not)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (NNP ID))
+                            (VP (VBZ studies))))))))))))))
+    (. .)))
+
+prep_for(declares-6, example-2)
+det(responder-5, the-4)
+nsubj(declares-6, responder-5)
+root(ROOT-0, declares-6)
+nsubj(need-10, We-9)
+ccomp(declares-6, need-10)
+neg(need-10, not-11)
+dep(need-10, know-13)
+det(intelligence-16, the-15)
+nsubj(draw-18, intelligence-16)
+aux(draw-18, to-17)
+xcomp(know-13, draw-18)
+dobj(draw-18, inferences-19)
+poss(existence-23, it-21)
+prep_about(draw-18, existence-23)
+mark('s-26, because-24)
+nsubj('s-26, that-25)
+advcl(draw-18, 's-26)
+neg('s-26, not-27)
+dobj(studies-30, what-28)
+nsubj(studies-30, ID-29)
+ccomp('s-26, studies-30)
+

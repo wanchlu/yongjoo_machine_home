@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (VP (VBN pointed)
+            (PP (IN out)
+              (NP (NN design)))))))
+    (VP
+      (VP (VBZ is)
+        (ADVP (RB always))
+        (NP (DT a) (NN possibility)))
+      (CC and)
+      (VP (VBZ is)
+        (VP (VBN rejected)
+          (SBAR
+            (S
+              (NP
+                (NP (DT a) (JJ posteriori) (NNP Joe) (NNP GBTW) (NN everything))
+                (PP (IN in)
+                  (NP (PRP$ your) (NN position))))
+              (VP (VBZ is)
+                (PP (IN beyond)
+                  (NP (NN observation)))))))))
+    (. .)))
+
+mark(pointed-4, As-1)
+nsubj(pointed-4, I-2)
+aux(pointed-4, have-3)
+csubjpass(possibility-10, pointed-4)
+csubjpass(rejected-13, pointed-4)
+prep_out(pointed-4, design-6)
+cop(possibility-10, is-7)
+advmod(possibility-10, always-8)
+det(possibility-10, a-9)
+root(ROOT-0, possibility-10)
+auxpass(rejected-13, is-12)
+conj_and(possibility-10, rejected-13)
+det(everything-18, a-14)
+amod(everything-18, posteriori-15)
+nn(everything-18, Joe-16)
+nn(everything-18, GBTW-17)
+nsubj(is-22, everything-18)
+poss(position-21, your-20)
+prep_in(everything-18, position-21)
+ccomp(rejected-13, is-22)
+prep_beyond(is-22, observation-24)
+

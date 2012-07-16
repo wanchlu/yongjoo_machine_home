@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBD was)
+          (VP (VBN designed)))))
+    (, ,)
+    (NP (DT the) (NN designer))
+    (VP (VBD went)
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN lot))
+          (PP (IN of)
+            (NP (NN trouble)))))
+      (S
+        (VP (TO to)
+          (VP (VB make)
+            (S
+              (NP (PRP it))
+              (VP (VB look)
+                (ADJP (JJ undesigned))))))))
+    (. .)))
+
+mark(designed-4, If-1)
+nsubjpass(designed-4, it-2)
+auxpass(designed-4, was-3)
+advcl(went-8, designed-4)
+det(designer-7, the-6)
+nsubj(went-8, designer-7)
+xsubj(make-15, designer-7)
+root(ROOT-0, went-8)
+det(lot-11, a-10)
+prep_to(went-8, lot-11)
+prep_of(lot-11, trouble-13)
+aux(make-15, to-14)
+xcomp(went-8, make-15)
+nsubj(look-17, it-16)
+ccomp(make-15, look-17)
+acomp(look-17, undesigned-18)
+

@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP (NNP Gastrulation))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN miracle))
+        (, ,)
+        (SBAR (IN so)
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN rearrangement))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NNP MHC) (NN complex))
+                    (PRN (-LRB- -LRB-)
+                      (SBAR
+                        (WHADVP (WRB where))
+                        (S
+                          (NP (DT the) (NN fetus))
+                          (VP (VBZ defines)
+                            (SBAR
+                              (SBAR
+                                (WHNP (WP what))
+                                (S
+                                  (VP (VBZ is)
+                                    (NP (NN self)))))
+                              (CC and)
+                              (SBAR
+                                (WHNP (WP what))
+                                (S
+                                  (VP (VBZ is)
+                                    (ADJP (JJ other)))))))))
+                      (-RRB- -RRB-))))))))))
+    (. .)))
+
+nsubj(miracle-4, Gastrulation-1)
+cop(miracle-4, is-2)
+det(miracle-4, a-3)
+root(ROOT-0, miracle-4)
+mark(rearrangement-9, so-6)
+cop(rearrangement-9, is-7)
+det(rearrangement-9, the-8)
+dep(miracle-4, rearrangement-9)
+det(complex-13, the-11)
+nn(complex-13, MHC-12)
+prep_of(rearrangement-9, complex-13)
+advmod(defines-18, where-15)
+det(fetus-17, the-16)
+nsubj(defines-18, fetus-17)
+dep(complex-13, defines-18)
+nsubj(self-21, what-19)
+cop(self-21, is-20)
+dep(defines-18, self-21)
+nsubj(other-25, what-23)
+cop(other-25, is-24)
+dep(defines-18, other-25)
+conj_and(self-21, other-25)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (NP
+    (NP (JJ http:\/\/www.cjd.org\/paper\/jp2war.html) (NN http:\/\/www.americancatholic.org\/news\/JustWar\/iraq\/papalstatement.asp))
+    (QP (CD http:\/\/www.foxnews.com\/story\/0) (CD ,2933,80875,00))
+    (. .)))
+
+amod(http:\/\/www.americancatholic.org\/news\/JustWar\/iraq\/papalstatement.asp-2, http:\/\/www.cjd.org\/paper\/jp2war.html-1)
+root(ROOT-0, http:\/\/www.americancatholic.org\/news\/JustWar\/iraq\/papalstatement.asp-2)
+number(,2933,80875,00-4, http:\/\/www.foxnews.com\/story\/0-3)
+num(http:\/\/www.americancatholic.org\/news\/JustWar\/iraq\/papalstatement.asp-2, ,2933,80875,00-4)
+
+(ROOT
+  (S
+    (FRAG
+      (ADJP (JJ html)))
+    ('' '')
+    (NP (RB Just) (NNP War))
+    (VP (VBZ theory)
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBD acknowledged)
+            (SBAR (IN that)
+              (S
+                (PP (IN under)
+                  (NP (JJ certain) (NNS circumstances)))
+                (NP (NNS wars))
+                (VP (MD might)
+                  (VP (VB have)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN fought)))))))))))))
+    (. .)))
+
+dep(theory-5, html-1)
+advmod(War-4, Just-3)
+nsubj(theory-5, War-4)
+root(ROOT-0, theory-5)
+mark(acknowledged-8, because-6)
+nsubj(acknowledged-8, it-7)
+advcl(theory-5, acknowledged-8)
+complm(have-15, that-9)
+amod(circumstances-12, certain-11)
+prep_under(have-15, circumstances-12)
+nsubj(have-15, wars-13)
+xsubj(fought-18, wars-13)
+aux(have-15, might-14)
+ccomp(acknowledged-8, have-15)
+aux(fought-18, to-16)
+auxpass(fought-18, be-17)
+xcomp(have-15, fought-18)
+

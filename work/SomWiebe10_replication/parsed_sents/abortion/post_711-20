@@ -1,0 +1,59 @@
+(ROOT
+  (FRAG
+    (SBAR
+      (SBAR
+        (WHPP (IN In)
+          (WHNP (WDT which) (NN case)))
+        (S
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP 're)
+                (NP
+                  (NP (DT the) (JJS strongest))
+                  (CC and)
+                  (NP (JJS richest))))))
+          (NP (PRP you))
+          (VP (VBP get)
+            (NP (PRP$ your) (NN way)))))
+      (CC and)
+      (SBAR (IN if)
+        (S
+          (NP (PRP$ your))
+          (ADJP (JJR weaker)
+            (CC and)
+            (JJR poorer)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP 're)
+                  (PRT (RP out))
+                  (PP (IN of)
+                    (NP (NN luck))))))))))
+    (. .)))
+
+dep(get-12, In-1)
+det(case-3, which-2)
+pobj(In-1, case-3)
+mark(strongest-8, if-4)
+nsubj(strongest-8, you-5)
+nsubj(richest-10, you-5)
+cop(strongest-8, 're-6)
+det(strongest-8, the-7)
+advcl(get-12, strongest-8)
+conj_and(strongest-8, richest-10)
+advcl(get-12, richest-10)
+nsubj(get-12, you-11)
+nsubj(weaker-18, you-11)
+root(ROOT-0, get-12)
+poss(way-14, your-13)
+dobj(get-12, way-14)
+mark(weaker-18, if-16)
+dep(weaker-18, your-17)
+conj_and(get-12, weaker-18)
+conj_and(get-12, poorer-20)
+conj_and(weaker-18, poorer-20)
+nsubj('re-22, you-21)
+dep(weaker-18, 're-22)
+prep_out_of('re-22, luck-25)
+

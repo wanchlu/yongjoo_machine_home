@@ -1,0 +1,60 @@
+(ROOT
+  (NP ('' '')
+    (CC And)
+    (NP
+      (ADVP (RB yet))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (NP (VBN convicted) (NNS felons))))
+          (, ,)
+          (S
+            (NP (PRP you))
+            (VP
+              (VP (VBP throw)
+                (NP (PRP$ your) (NNS airs)))
+              (CC and)
+              (VP (VBZ graces)
+                (PP (IN about)
+                  (NP
+                    (NP (DT the) (NN sanctity))
+                    (PP (IN of)
+                      (NP
+                        (NP (NN life))
+                        (PP (RB out) (IN of)
+                          (NP
+                            (NP (DT the) (NN window))
+                            (PP (IN in)
+                              (NP
+                                (NP (NN exchange))
+                                (PP (IN for)
+                                  (NP (DT a) (JJ swift) (NN execution)))))))))))))))))
+    (. .)))
+
+cc(yet-3, And-2)
+root(ROOT-0, yet-3)
+mark(felons-9, if-5)
+nsubj(felons-9, they-6)
+dep(felons-9, are-7)
+amod(felons-9, convicted-8)
+dep(yet-3, felons-9)
+nsubj(throw-12, you-11)
+nsubj(graces-16, you-11)
+dep(felons-9, throw-12)
+poss(airs-14, your-13)
+dobj(throw-12, airs-14)
+dep(felons-9, graces-16)
+conj_and(throw-12, graces-16)
+det(sanctity-19, the-18)
+prep_about(graces-16, sanctity-19)
+prep_of(sanctity-19, life-21)
+det(window-25, the-24)
+prep_out_of(life-21, window-25)
+prep_in(window-25, exchange-27)
+det(execution-31, a-29)
+amod(execution-31, swift-30)
+prep_for(exchange-27, execution-31)
+

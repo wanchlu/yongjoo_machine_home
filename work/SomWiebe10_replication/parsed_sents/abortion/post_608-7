@@ -1,0 +1,69 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NN someone))
+        (VP (VBZ wants)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB take)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (VP (VBZ is)
+                        (ADVP (RB biologically))
+                        (NP (DT a) (JJ human) (NN organism))))))
+                (CC and)
+                (VP (VB end)
+                  (NP (PRP$ its) (NN existence)))))))))
+    (, ,)
+    (SQ (VBZ is)
+      (NP
+        (NP (PRP it))
+        (ADVP (RB not)
+          (PP (IN on)
+            (NP (PRP them))))
+        (S
+          (VP (TO to)
+            (VP (VB prove)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (NN life) (NNP DOES) (NNP NOT))
+                    (PP (IN for)
+                      (NP (JJ certain))))
+                  (VP (VBP have)
+                    (NP (NN value))))))))))
+    (. ?)))
+
+mark(wants-3, If-1)
+nsubj(wants-3, someone-2)
+xsubj(take-5, someone-2)
+advcl(is-17, wants-3)
+aux(take-5, to-4)
+xcomp(wants-3, take-5)
+nsubj(organism-11, what-6)
+cop(organism-11, is-7)
+advmod(organism-11, biologically-8)
+det(organism-11, a-9)
+amod(organism-11, human-10)
+ccomp(take-5, organism-11)
+xcomp(wants-3, end-13)
+conj_and(take-5, end-13)
+poss(existence-15, its-14)
+dobj(end-13, existence-15)
+root(ROOT-0, is-17)
+nsubj(is-17, it-18)
+advmod(it-18, not-19)
+prep_on(not-19, them-21)
+aux(prove-23, to-22)
+infmod(it-18, prove-23)
+complm(have-30, that-24)
+nn(NOT-27, life-25)
+nn(NOT-27, DOES-26)
+nsubj(have-30, NOT-27)
+prep_for(NOT-27, certain-29)
+ccomp(prove-23, have-30)
+dobj(have-30, value-31)
+

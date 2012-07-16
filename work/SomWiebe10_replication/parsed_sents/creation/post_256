@@ -1,0 +1,60 @@
+(ROOT
+  (S (`` ``)
+    (CC But)
+    (NP
+      (NP (WP what))
+      (PP (IN about)
+        (NP (PRP$ your) (NN opinion))))
+    (ADVP (RB on))
+    (VP (VBP ID))
+    (. ?)))
+
+cc(ID-8, But-2)
+nsubj(ID-8, what-3)
+poss(opinion-6, your-5)
+prep_about(what-3, opinion-6)
+advmod(ID-8, on-7)
+root(ROOT-0, ID-8)
+
+(ROOT
+  (S (`` ``)
+    (NP (NNP ID))
+    (VP (VBZ is)
+      (UCP
+        (ADVP (RB ridiculously))
+        (CC and)
+        (PP
+          (ADVP (RB obviously))
+          (RB not)
+          (NP (NN science)))))
+    (. .)))
+
+nsubj(is-3, ID-2)
+root(ROOT-0, is-3)
+dep(is-3, ridiculously-4)
+dep(is-3, obviously-6)
+conj_and(ridiculously-4, obviously-6)
+neg(obviously-6, not-7)
+pobj(obviously-6, science-8)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (FRAG
+      (NP (NNP Hint))
+      (: :)
+      (S
+        (NP (PRP we))
+        (VP (VBP 've)
+          (VP (VBN been)
+            (ADVP (RB here))
+            (ADVP (RB before)))))
+      (. .))
+    (-RRB- -RRB-)))
+
+root(ROOT-0, Hint-2)
+nsubj(been-6, we-4)
+aux(been-6, 've-5)
+dep(Hint-2, been-6)
+advmod(been-6, here-7)
+advmod(been-6, before-8)
+

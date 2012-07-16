@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP one))
+        (VP (VBZ removes)
+          (NP
+            (NP (DT a) (NN patch))
+            (PP (IN of)
+              (NP
+                (NP (NN skin))
+                (, ,)
+                (NP (DT an) (NN arm))
+                (, ,)
+                (CC or)
+                (NP (DT a) (NN heart))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP know)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (NP
+              (NP (NN part))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN human))
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (VP (VBD came)
+                        (PP (IN from))
+                        (SBAR (RB even) (IN if)
+                          (S
+                            (VP (VBN done)
+                              (PP (IN without)
+                                (S
+                                  (VP (VBG causing)
+                                    (NP (NN pain))))))))))))))))))
+    (. .)))
+
+mark(removes-3, If-1)
+nsubj(removes-3, one-2)
+advcl(know-17, removes-3)
+det(patch-5, a-4)
+dobj(removes-3, patch-5)
+prep_of(patch-5, skin-7)
+det(arm-10, an-9)
+prep_of(patch-5, arm-10)
+conj_or(skin-7, arm-10)
+det(heart-14, a-13)
+prep_of(patch-5, heart-14)
+conj_or(skin-7, heart-14)
+nsubj(know-17, we-16)
+root(ROOT-0, know-17)
+complm(part-21, that-18)
+nsubj(part-21, it-19)
+cop(part-21, is-20)
+ccomp(know-17, part-21)
+det(human-24, the-23)
+prep_of(part-21, human-24)
+nsubj(came-26, it-25)
+rcmod(human-24, came-26)
+prep(came-26, from-27)
+advmod(done-30, even-28)
+dep(done-30, if-29)
+ccomp(came-26, done-30)
+prepc_without(done-30, causing-32)
+dobj(causing-32, pain-33)
+

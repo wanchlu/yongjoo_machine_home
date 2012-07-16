@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNS Scientists))
+    (ADVP (RB then))
+    (VP (VBP perform)
+      (NP (JJ experimental) (NNS tests))
+      (PP (IN upon)
+        (NP (JJ natural) (NNS objects)))
+      (S
+        (VP (TO to)
+          (VP (VB determine)
+            (SBAR (IN if)
+              (S
+                (NP (PRP they))
+                (VP (VBP contain)
+                  (NP
+                    (NP (NN complex))
+                    (CC and)
+                    (NP (VBN specified) (NN information))))))))))
+    (: ...)))
+
+nsubj(perform-3, Scientists-1)
+xsubj(determine-10, Scientists-1)
+advmod(perform-3, then-2)
+root(ROOT-0, perform-3)
+amod(tests-5, experimental-4)
+dobj(perform-3, tests-5)
+amod(objects-8, natural-7)
+prep_upon(perform-3, objects-8)
+aux(determine-10, to-9)
+xcomp(perform-3, determine-10)
+mark(contain-13, if-11)
+nsubj(contain-13, they-12)
+advcl(determine-10, contain-13)
+dobj(contain-13, complex-14)
+amod(information-17, specified-16)
+dobj(contain-13, information-17)
+conj_and(complex-14, information-17)
+

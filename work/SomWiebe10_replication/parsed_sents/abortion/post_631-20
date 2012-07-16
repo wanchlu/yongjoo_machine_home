@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (NN beating))
+        (VP (VBZ is)
+          (NP
+            (NP (DT an) (JJ intrinsic) (NN property))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJ cardiac) (NNS myocytes))
+                (, ,)
+                (SBAR
+                  (WHNP (RB exactly) (WP what))
+                  (S
+                    (VP (VBZ causes)
+                      (NP (DT the) (NN heart)
+                        (S
+                          (VP (TO to)
+                            (VP (VB begin)
+                              (NP (NN contracting)))))))))))))))
+    (VP (VBZ is)
+      (ADVP (RB essentially))
+      (NP (DT a) (NN cell) (JJ biological) (NN question)))
+    (. .)))
+
+mark(property-6, Because-1)
+nsubj(property-6, beating-2)
+cop(property-6, is-3)
+det(property-6, an-4)
+amod(property-6, intrinsic-5)
+csubj(question-25, property-6)
+det(myocytes-10, the-8)
+amod(myocytes-10, cardiac-9)
+prep_of(property-6, myocytes-10)
+nsubj(causes-14, myocytes-10)
+advmod(what-13, exactly-12)
+rcmod(myocytes-10, causes-14)
+det(heart-16, the-15)
+dobj(causes-14, heart-16)
+aux(begin-18, to-17)
+infmod(heart-16, begin-18)
+dobj(begin-18, contracting-19)
+cop(question-25, is-20)
+advmod(question-25, essentially-21)
+det(question-25, a-22)
+nn(question-25, cell-23)
+amod(question-25, biological-24)
+root(ROOT-0, question-25)
+

@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT that))
+        (VP (VBZ is)
+          (SBAR
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (NNP ID))
+                (VP (VBZ is)
+                  (ADJP (JJ scientific)))))
+            (, ,)
+            (CC and)
+            (SBAR (IN if)
+              (S
+                (NP (DT that))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT an) (NN example))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT a) (`` ``) (NN prediction) ('' ''))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBZ has)
+                              (VP (VBN been) (`` ``)
+                                (ADJP (JJ tested))
+                                ('' '')))))))))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ afraid)
+        (SBAR (IN that)
+          (S
+            (NP (NNP ID))
+            (VP (VBZ is)
+              (ADJP (RB utterly) (JJ worthless))
+              (, ,)
+              (SBAR (IN for)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ consists)
+                    (PP (IN of)
+                      (NP (CD :1)))))))))))
+    (. .)))
+
+mark(is-3, If-1)
+nsubj(is-3, that-2)
+advcl(afraid-30, is-3)
+advmod(scientific-7, why-4)
+nsubj(scientific-7, ID-5)
+cop(scientific-7, is-6)
+dep(is-3, scientific-7)
+mark(example-14, if-10)
+nsubj(example-14, that-11)
+cop(example-14, is-12)
+det(example-14, an-13)
+dep(is-3, example-14)
+conj_and(scientific-7, example-14)
+det(prediction-18, a-16)
+prep_of(example-14, prediction-18)
+nsubj(tested-24, prediction-18)
+aux(tested-24, has-21)
+cop(tested-24, been-22)
+rcmod(prediction-18, tested-24)
+advmod(afraid-30, then-27)
+nsubj(afraid-30, I-28)
+cop(afraid-30, am-29)
+root(ROOT-0, afraid-30)
+complm(worthless-35, that-31)
+nsubj(worthless-35, ID-32)
+cop(worthless-35, is-33)
+advmod(worthless-35, utterly-34)
+ccomp(afraid-30, worthless-35)
+mark(consists-39, for-37)
+nsubj(consists-39, it-38)
+advcl(worthless-35, consists-39)
+prep_of(consists-39, :1-41)
+

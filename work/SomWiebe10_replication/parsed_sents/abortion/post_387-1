@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (NNP Life))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN process))
+        (PP (IN of)
+          (NP (JJ self-sustaining)
+            (CC and)
+            (JJ self-generating) (NN action)))))
+    (. .)))
+
+nsubj(process-4, Life-1)
+cop(process-4, is-2)
+det(process-4, a-3)
+root(ROOT-0, process-4)
+amod(action-9, self-sustaining-6)
+conj_and(self-sustaining-6, self-generating-8)
+amod(action-9, self-generating-8)
+prep_of(process-4, action-9)
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Ayn) (NNP Rand))
+          (-RRB- -RRB-))
+        (NNS Simply))
+      (SBAR (IN because)
+        (S
+          (NP (DT a) (NN thing))
+          (VP (VBZ is)
+            (ADJP (JJ alive))))))
+    (VP (VBZ does) (RB not)
+      (VP (VB give)
+        (NP (PRP it))
+        (NP (NNS rights))))
+    (. .)))
+
+nn(Rand-3, Ayn-2)
+appos(Simply-5, Rand-3)
+nsubj(give-13, Simply-5)
+mark(alive-10, because-6)
+det(thing-8, a-7)
+nsubj(alive-10, thing-8)
+cop(alive-10, is-9)
+dep(Simply-5, alive-10)
+aux(give-13, does-11)
+neg(give-13, not-12)
+root(ROOT-0, give-13)
+iobj(give-13, it-14)
+dobj(give-13, rights-15)
+

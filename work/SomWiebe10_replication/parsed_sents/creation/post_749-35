@@ -1,0 +1,38 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (DT the) (NNS jews))
+      (VP (VBP use)
+        (NP (DT the) (NN bible))))
+    ('' '')
+    (NP (PRP They))
+    (VP (VBP use)
+      (NP (DT the)
+        (NP (NNP OT))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP (DT a) (JJ whole) (NN host))
+          (PP (IN of)
+            (NP
+              (NP (NNS commentaries))
+              (PP (JJ such) (IN as)
+                (NP (DT the) (NNP Talmud))))))))
+    (. .)))
+
+det(jews-3, the-2)
+nsubj(use-4, jews-3)
+ccomp(use-9, use-4)
+det(bible-6, the-5)
+dobj(use-4, bible-6)
+nsubj(use-9, They-8)
+root(ROOT-0, use-9)
+det(OT-11, the-10)
+dobj(use-9, OT-11)
+det(host-17, a-15)
+amod(host-17, whole-16)
+dobj(use-9, host-17)
+conj_and(OT-11, host-17)
+prep_of(host-17, commentaries-19)
+det(Talmud-23, the-22)
+prep_such_as(commentaries-19, Talmud-23)
+

@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Science))
+      (VP (VBZ is) (`` ``)
+        (ADJP (JJ materialistic))
+        ('' '')))
+    (CC and)
+    (S
+      (ADVP (RB perhaps))
+      (NP (DT that))
+      (VP (VBZ 's)
+        (SBAR
+          (S
+            (S
+              (NP
+                (NP (DT a) (`` ``) (NN limitation) ('' ''))
+                (CC and)
+                (NP (NN science)))
+              (VP (VBZ admits)
+                (NP (PRP it))))
+            (CC and)
+            (S
+              (NP (PRP you))
+              (VP (VBP wish)
+                (S
+                  (VP (TO to)
+                    (VP (VB change)
+                      (NP
+                        (NP (DT this))
+                        (PP (IN in)
+                          (NP (DT some) (NN way)))))))))))))
+    (. ?)))
+
+nsubj(materialistic-4, Science-1)
+cop(materialistic-4, is-2)
+root(ROOT-0, materialistic-4)
+advmod('s-9, perhaps-7)
+nsubj('s-9, that-8)
+conj_and(materialistic-4, 's-9)
+det(limitation-12, a-10)
+nsubj(admits-16, limitation-12)
+conj_and(limitation-12, science-15)
+nsubj(admits-16, science-15)
+dep('s-9, admits-16)
+dobj(admits-16, it-17)
+nsubj(wish-20, you-19)
+xsubj(change-22, you-19)
+dep('s-9, wish-20)
+conj_and(admits-16, wish-20)
+aux(change-22, to-21)
+xcomp(wish-20, change-22)
+dobj(change-22, this-23)
+det(way-26, some-25)
+prep_in(this-23, way-26)
+

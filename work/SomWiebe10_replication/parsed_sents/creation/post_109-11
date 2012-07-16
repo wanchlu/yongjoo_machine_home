@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN though)
+        (S
+          (NP (PRP I))
+          (VP (VBP think)
+            (NP (DT the) (JJ dead) (NN sea)))))
+      (NP (NNS scrolls))
+      (VP (VBP show)
+        (ADVP (RB otherwise))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR
+          (S
+            (NP
+              (NP (DT the) (NNP Bible) (POS 's))
+              (NNS teachings))
+            (VP (VBD were)
+              (VP
+                (VP (VBN written)
+                  (ADVP (RB even) (RBR earlier))
+                  (PP (IN than)
+                    (NP (DT this))))
+                (CC and)
+                (VP (VBN passed)
+                  (PP (IN in)
+                    (NP (JJ verbal) (NN form)))
+                  (ADVP (RB even) (RBR further) (RB back)))))))))
+    (. .)))
+
+mark(think-3, though-1)
+nsubj(think-3, I-2)
+advcl(show-8, think-3)
+det(sea-6, the-4)
+amod(sea-6, dead-5)
+dobj(think-3, sea-6)
+nsubj(show-8, scrolls-7)
+root(ROOT-0, show-8)
+advmod(show-8, otherwise-9)
+nsubj(believe-12, I-11)
+conj_and(show-8, believe-12)
+det(Bible-14, the-13)
+poss(teachings-16, Bible-14)
+nsubjpass(written-18, teachings-16)
+nsubjpass(passed-24, teachings-16)
+auxpass(written-18, were-17)
+ccomp(believe-12, written-18)
+advmod(earlier-20, even-19)
+advmod(written-18, earlier-20)
+prep_than(written-18, this-22)
+ccomp(believe-12, passed-24)
+conj_and(written-18, passed-24)
+amod(form-27, verbal-26)
+prep_in(passed-24, form-27)
+advmod(back-30, even-28)
+advmod(back-30, further-29)
+advmod(passed-24, back-30)
+

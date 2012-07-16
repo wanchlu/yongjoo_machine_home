@@ -1,0 +1,44 @@
+(ROOT
+  (SQ
+    (VP (VB ID)
+      (PP (IN without)
+        (NP (DT a) (NN designer))))
+    (. ?)))
+
+root(ROOT-0, ID-1)
+det(designer-4, a-3)
+prep_without(ID-1, designer-4)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN cause))
+      (PP (IN of)
+        (NP (DT the) (JJ big) (NN bang))))
+    (VP (VBZ is)
+      (ADJP (JJ unknown)))
+    (. .)))
+
+det(cause-2, The-1)
+nsubj(unknown-8, cause-2)
+det(bang-6, the-4)
+amod(bang-6, big-5)
+prep_of(cause-2, bang-6)
+cop(unknown-8, is-7)
+root(ROOT-0, unknown-8)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT that))
+    (VP (VB make)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ supernatural))))
+    (. ?)))
+
+dep(make-3, Does-1)
+nsubj(make-3, that-2)
+root(ROOT-0, make-3)
+nsubj(supernatural-5, it-4)
+xcomp(make-3, supernatural-5)
+

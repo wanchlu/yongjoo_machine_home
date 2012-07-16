@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD must)
+      (VP (VB admit)
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (MD would) (RB all)
+              (VP (VB go)
+                (NP
+                  (NP
+                    (ADJP
+                      (ADJP
+                        (NP (DT a) (RB lot))
+                        (JJR smoother))
+                      (SBAR (IN if)
+                        (S
+                          (NP (EX there))
+                          (VP (VBD were)
+                            (NP (DT no) (NN word) (NN count))))))
+                    (NNS limits))
+                  (CC or)
+                  (NP
+                    (NP (NNS rules))
+                    (SBAR
+                      (WHPP (IN about)
+                        (WHNP
+                          (WHADJP (WRB how) (JJ many))
+                          (NNS posts)))
+                      (S
+                        (NP (PRP you))
+                        (VP (MD could)
+                          (VP (VB make)
+                            (PP (IN at)
+                              (NP (DT a) (VBN given) (NN time)))))))))))))))
+    (. .)))
+
+nsubj(admit-3, I-1)
+aux(admit-3, must-2)
+root(ROOT-0, admit-3)
+nsubj(go-7, this-4)
+aux(go-7, would-5)
+advmod(go-7, all-6)
+ccomp(admit-3, go-7)
+det(lot-9, a-8)
+npadvmod(smoother-10, lot-9)
+amod(limits-17, smoother-10)
+mark(were-13, if-11)
+expl(were-13, there-12)
+ccomp(smoother-10, were-13)
+det(count-16, no-14)
+nn(count-16, word-15)
+nsubj(were-13, count-16)
+dobj(go-7, limits-17)
+dobj(go-7, rules-19)
+conj_or(limits-17, rules-19)
+advmod(many-22, how-21)
+amod(posts-23, many-22)
+rel(make-26, posts-23)
+nsubj(make-26, you-24)
+aux(make-26, could-25)
+rcmod(rules-19, make-26)
+det(time-30, a-28)
+amod(time-30, given-29)
+prep_at(make-26, time-30)
+

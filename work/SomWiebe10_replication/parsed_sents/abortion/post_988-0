@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (NNP HItler))
+    (VP (VBZ has)
+      (NP (NN everything)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (PP (IN with)
+                (NP (NN abortion))))))))
+    (. !)))
+
+nsubj(has-2, HItler-1)
+root(ROOT-0, has-2)
+dobj(has-2, everything-3)
+aux(do-5, to-4)
+infmod(everything-3, do-5)
+prep_with(do-5, abortion-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ only) (NN difference))
+      (PP (IN between)
+        (NP
+          (NP (DT the) (JJ Jewish) (NN Holocaust))
+          (CC and)
+          (NP (DT the) (NNP Abortion) (NNP Holocaust)))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN abortion) (NN holocaust))
+          (VP (VBZ is)
+            (ADJP
+              (ADJP (JJR longer))
+              (CC and)
+              (RB many)
+              (ADJP (JJR more)
+                (SBAR
+                  (S
+                    (NP (NNS people))
+                    (VP (VBP have)
+                      (VP (VBN died)))))))))))
+    (. !)))
+
+det(difference-3, The-1)
+amod(difference-3, only-2)
+nsubj(is-12, difference-3)
+det(Holocaust-7, the-5)
+amod(Holocaust-7, Jewish-6)
+prep_between(difference-3, Holocaust-7)
+det(Holocaust-11, the-9)
+nn(Holocaust-11, Abortion-10)
+prep_between(difference-3, Holocaust-11)
+conj_and(Holocaust-7, Holocaust-11)
+root(ROOT-0, is-12)
+complm(longer-18, that-13)
+det(holocaust-16, the-14)
+nn(holocaust-16, abortion-15)
+nsubj(longer-18, holocaust-16)
+cop(longer-18, is-17)
+ccomp(is-12, longer-18)
+ccomp(is-12, many-20)
+advmod(longer-18, many-20)
+conj_and(longer-18, many-20)
+dep(longer-18, more-21)
+nsubj(died-24, people-22)
+aux(died-24, have-23)
+dep(more-21, died-24)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (NP (FW .) (. .)))
+
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (JJ average) (NN height))
+      (PP (IN of)
+        (NP
+          (NP (DT a) (JJ grown) (NN man))
+          (PP (IN in)
+            (NP (CD 1800))))))
+    (VP (VBD was)
+      (ADJP
+        (NP (DT a) (RB lot))
+        (JJR shorter)
+        (PP (IN than)
+          (NP
+            (NP (DT that))
+            (PP (IN of)
+              (NP (DT a) (NN man))))))
+      (NP (NN today)))
+    (. .)))
+
+det(height-3, the-1)
+amod(height-3, average-2)
+nsubj(shorter-13, height-3)
+det(man-7, a-5)
+amod(man-7, grown-6)
+prep_of(height-3, man-7)
+prep_in(man-7, 1800-9)
+cop(shorter-13, was-10)
+det(lot-12, a-11)
+npadvmod(shorter-13, lot-12)
+root(ROOT-0, shorter-13)
+prep_than(shorter-13, that-15)
+det(man-18, a-17)
+prep_of(that-15, man-18)
+attr(shorter-13, today-19)
+tmod(shorter-13, today-19)
+

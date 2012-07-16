@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Doses))
+        (PP (IN in)
+          (NP
+            (NP (NN excess))
+            (PP (IN of)
+              (NP
+                (NP (CD 0.1) (NNS Gy))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (QP (CD 10) (CD rad)))
+                  (-RRB- -RRB-))
+                (VP (VBN delivered)
+                  (PP (IN during)
+                    (NP (NN gestation)))))))))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN associated)
+            (PP (IN with)
+              (NP (JJ various) (JJ detrimental) (NNS effects)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (JJ therapeutic) (NN abortion))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN recommended)))))
+    (. .)))
+
+nsubjpass(associated-16, Doses-1)
+prep_in(Doses-1, excess-3)
+num(Gy-6, 0.1-5)
+prep_of(excess-3, Gy-6)
+number(rad-9, 10-8)
+dep(Gy-6, rad-9)
+partmod(Gy-6, delivered-11)
+prep_during(delivered-11, gestation-13)
+aux(associated-16, have-14)
+auxpass(associated-16, been-15)
+root(ROOT-0, associated-16)
+amod(effects-20, various-18)
+amod(effects-20, detrimental-19)
+prep_with(associated-16, effects-20)
+amod(abortion-24, therapeutic-23)
+nsubjpass(recommended-27, abortion-24)
+aux(recommended-27, has-25)
+auxpass(recommended-27, been-26)
+conj_and(associated-16, recommended-27)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN philosophy))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD drove)
+              (SBAR
+                (S
+                  (NP
+                    (NP (DT the) (NN Holocaust))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNP Nazi) (NNP Germany))
+                        (CC and)
+                        (NP (DT the) (NN one)))))
+                  (ADVP (RB currently))
+                  (VP (VB underway)
+                    (ADVP (RB here))
+                    (PP (IN in)
+                      (NP (NNP America)))))))))))
+    (. .)))
+
+nsubj(philosophy-4, This-1)
+cop(philosophy-4, was-2)
+det(philosophy-4, the-3)
+root(ROOT-0, philosophy-4)
+nsubj(drove-6, philosophy-4)
+rcmod(philosophy-4, drove-6)
+det(Holocaust-8, the-7)
+nsubj(underway-16, Holocaust-8)
+nn(Germany-11, Nazi-10)
+prep_of(Holocaust-8, Germany-11)
+det(one-14, the-13)
+prep_of(Holocaust-8, one-14)
+conj_and(Germany-11, one-14)
+advmod(underway-16, currently-15)
+ccomp(drove-6, underway-16)
+advmod(underway-16, here-17)
+prep_in(underway-16, America-19)
+

@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD can) (RB not)
+      (VP (VB activate)
+        (CC and)
+        (VB utilize)
+        (NP (DT the) (JJ perceptual) (NN mechanism))
+        (SBAR (IN until)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (VP (VBN born)
+                (PP (IN into)
+                  (NP
+                    (NP (DT an) (NN environment))
+                    (SBAR
+                      (WHADVP (WRB where))
+                      (S
+                        (NP (EX there))
+                        (VP (VBZ is)
+                          (ADJP (JJ material)
+                            (S
+                              (VP (TO to)
+                                (VP
+                                  (VP (VB perceive))
+                                  (CC and)
+                                  (VP (VB be)
+                                    (ADJP (JJ conscious)
+                                      (PP (IN of)))))))))))))))))))
+    (. .)))
+
+nsubj(activate-4, It-1)
+nsubj(utilize-6, It-1)
+aux(activate-4, can-2)
+neg(activate-4, not-3)
+root(ROOT-0, activate-4)
+conj_and(activate-4, utilize-6)
+det(mechanism-9, the-7)
+amod(mechanism-9, perceptual-8)
+dobj(activate-4, mechanism-9)
+mark(born-13, until-10)
+nsubjpass(born-13, it-11)
+auxpass(born-13, is-12)
+advcl(activate-4, born-13)
+det(environment-16, an-15)
+prep_into(born-13, environment-16)
+advmod(is-19, where-17)
+expl(is-19, there-18)
+rcmod(environment-16, is-19)
+acomp(is-19, material-20)
+aux(perceive-22, to-21)
+xcomp(material-20, perceive-22)
+cop(conscious-25, be-24)
+xcomp(material-20, conscious-25)
+conj_and(perceive-22, conscious-25)
+prep(conscious-25, of-26)
+

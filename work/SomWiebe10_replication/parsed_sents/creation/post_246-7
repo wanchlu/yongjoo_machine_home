@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP find)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ troubling))
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NNP ID) (NNS scientists))
+            (VP
+              (VP (VBP have)
+                (S
+                  (VP (TO to)
+                    (VP (VB ignore)
+                      (NP (JJ scientific) (NNS data)
+                        (CC and)
+                        (NNS findings))
+                      (S
+                        (VP (TO to)
+                          (VP (VB support)
+                            (NP (PRP$ their) (NNS claims)))))))))
+              (CC and)
+              (VP
+                (ADVP (RB instead))
+                (VBP seem)
+                (S
+                  (VP (TO to)
+                    (VP (VB resort)
+                      (PP (TO to)
+                        (NP
+                          (NP (JJ careful) (JJ cherry) (NN picking))
+                          (PP (IN of)
+                            (NP (NNS data)
+                              (CC and)
+                              (NNS facts)))
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VB suit)
+                                (NP (PRP$ their) (NNS purposes))))))))))))))))
+    (. .)))
+
+nsubj(find-2, I-1)
+root(ROOT-0, find-2)
+nsubj(have-8, it-3)
+nsubj(seem-21, it-3)
+dep(have-8, troubling-4)
+advmod(have-8, how-5)
+nn(scientists-7, ID-6)
+nsubj(have-8, scientists-7)
+xsubj(ignore-10, scientists-7)
+xsubj(resort-23, scientists-7)
+xcomp(find-2, have-8)
+aux(ignore-10, to-9)
+xcomp(have-8, ignore-10)
+amod(data-12, scientific-11)
+dobj(ignore-10, data-12)
+dobj(ignore-10, findings-14)
+conj_and(data-12, findings-14)
+aux(support-16, to-15)
+xcomp(ignore-10, support-16)
+poss(claims-18, their-17)
+dobj(support-16, claims-18)
+advmod(seem-21, instead-20)
+xcomp(find-2, seem-21)
+conj_and(have-8, seem-21)
+aux(resort-23, to-22)
+xcomp(seem-21, resort-23)
+amod(picking-27, careful-25)
+amod(picking-27, cherry-26)
+prep_to(resort-23, picking-27)
+nsubj(suit-33, picking-27)
+prep_of(picking-27, data-29)
+prep_of(picking-27, facts-31)
+conj_and(data-29, facts-31)
+rcmod(picking-27, suit-33)
+poss(purposes-35, their-34)
+dobj(suit-33, purposes-35)
+

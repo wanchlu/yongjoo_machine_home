@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN abortion))
+        (VP (VBZ is)
+          (NP
+            (NP (NN murder))
+            (PP (IN in)
+              (NP (DT some) (NNS cases)))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (NN murder))
+        (PP (IN in)
+          (NP (DT every) (NN case)))))
+    (. .)))
+
+mark(murder-4, If-1)
+nsubj(murder-4, abortion-2)
+cop(murder-4, is-3)
+advcl(murder-12, murder-4)
+det(cases-7, some-6)
+prep_in(murder-4, cases-7)
+advmod(murder-12, then-9)
+nsubj(murder-12, it-10)
+cop(murder-12, is-11)
+root(ROOT-0, murder-12)
+det(case-15, every-14)
+prep_in(murder-12, case-15)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN fetus))
+        (VP (VBZ has)
+          (NP (NNS rights)))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (DT no) (JJ moral) (NN basis)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (NP
+                (NP (DT an) (NN exception))
+                (PP (IN for)
+                  (NP (NN rape)))))))))
+    (. .)))
+
+mark(has-4, If-1)
+det(fetus-3, a-2)
+nsubj(has-4, fetus-3)
+advcl(is-9, has-4)
+dobj(has-4, rights-5)
+advmod(is-9, then-7)
+expl(is-9, there-8)
+root(ROOT-0, is-9)
+det(basis-12, no-10)
+amod(basis-12, moral-11)
+nsubj(is-9, basis-12)
+aux(make-14, to-13)
+infmod(basis-12, make-14)
+det(exception-16, an-15)
+dobj(make-14, exception-16)
+prep_for(exception-16, rape-18)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (ADVP (RB just))
+    (VP (VBZ takes)
+      (NP (DT the) (NN rape) (NNS victims) (NNS feelings))
+      (PP (IN into)
+        (NP
+          (NP (NN account))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (MD ca) (RB n't)
+                (VP (VB be)
+                  (VP (VBN put)
+                    (PP (IN above)
+                      (NP
+                        (NP (DT the) (NNS rights))
+                        (PP (IN of)
+                          (NP (DT the) (NN fetus)))))))))))))
+    (. .)))
+
+nsubj(takes-3, That-1)
+advmod(takes-3, just-2)
+root(ROOT-0, takes-3)
+det(feelings-7, the-4)
+nn(feelings-7, rape-5)
+nn(feelings-7, victims-6)
+dobj(takes-3, feelings-7)
+prep_into(takes-3, account-9)
+nsubjpass(put-15, account-9)
+aux(put-15, ca-12)
+neg(put-15, n't-13)
+auxpass(put-15, be-14)
+rcmod(account-9, put-15)
+det(rights-18, the-17)
+prep_above(put-15, rights-18)
+det(fetus-21, the-20)
+prep_of(rights-18, fetus-21)
+

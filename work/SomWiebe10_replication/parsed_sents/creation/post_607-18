@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP say)
+      (SBAR
+        (S
+          (NP (NNP ID))
+          (VP (MD can) (RB not)
+            (VP (VB say)
+              (ADVP (RBR more) (IN than))
+              (SBAR (IN that) (IN if)
+                (S
+                  (NP (DT that))
+                  (VP (VBZ is)
+                    (ADJP (JJ true)
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (ADVP (RB still))
+                          (VP (VBZ is)
+                            (ADJP (JJ huge))))))))))))))
+    (. .)))
+
+nsubj(say-2, You-1)
+root(ROOT-0, say-2)
+nsubj(say-6, ID-3)
+aux(say-6, can-4)
+neg(say-6, not-5)
+ccomp(say-2, say-6)
+advmod(than-8, more-7)
+advmod(say-6, than-8)
+complm(true-13, that-9)
+dep(true-13, if-10)
+nsubj(true-13, that-11)
+cop(true-13, is-12)
+ccomp(say-6, true-13)
+nsubj(huge-17, that-14)
+advmod(huge-17, still-15)
+cop(huge-17, is-16)
+dep(true-13, huge-17)
+

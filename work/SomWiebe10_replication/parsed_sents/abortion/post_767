@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am) (RB not)
+      (VP (VBG deciding)
+        (NP (NN anything))))
+    (. .)))
+
+nsubj(deciding-4, I-1)
+aux(deciding-4, am-2)
+neg(deciding-4, not-3)
+root(ROOT-0, deciding-4)
+dobj(deciding-4, anything-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBG voicing)
+        (NP (PRP$ my) (NN opinion))))
+    (. .)))
+
+nsubj(voicing-3, I-1)
+aux(voicing-3, am-2)
+root(ROOT-0, voicing-3)
+poss(opinion-5, my-4)
+dobj(voicing-3, opinion-5)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP am)
+      (NP (PRP I))
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (NP (DT that))))))
+    (. ?)))
+
+attr(am-2, Who-1)
+root(ROOT-0, am-2)
+nsubj(am-2, I-3)
+aux(do-5, to-4)
+dep(am-2, do-5)
+dobj(do-5, that-6)
+
+(ROOT
+  (NP (DT An) (JJ American) (NN citizen) (. .)))
+
+det(citizen-3, An-1)
+amod(citizen-3, American-2)
+root(ROOT-0, citizen-3)
+

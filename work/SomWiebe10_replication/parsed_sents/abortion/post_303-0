@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (NP (NNP DNA))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ distinguishes)
+            (NP (DT any) (NN organism))
+            (PP (IN from)
+              (NP (DT every) (JJ other)))
+            (, ,)
+            (PP (VBG according)
+              (PP (TO to)
+                (NP
+                  (NP (NN science))
+                  (PRN (-LRB- -LRB-)
+                    (NP (NNP Biology) (NNP specifically))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+nsubj(is-2, DNA-1)
+root(ROOT-0, is-2)
+nsubj(distinguishes-4, what-3)
+ccomp(is-2, distinguishes-4)
+det(organism-6, any-5)
+dobj(distinguishes-4, organism-6)
+det(other-9, every-8)
+prep_from(distinguishes-4, other-9)
+prepc_according_to(distinguishes-4, to-12)
+pobj(distinguishes-4, science-13)
+nn(specifically-16, Biology-15)
+appos(science-13, specifically-16)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN cell))
+      (SBAR
+        (S
+          (VP
+            (VP (VBZ is)
+              (VP (VBN haploid)))
+            (CC and)
+            (PRN (-LRB- -LRB-)
+              (S
+                (NP (PRP I))
+                (VP (VBP believe)))
+              (-RRB- -RRB-))
+            (VP (MD can) (RB not)))))
+      (PRN (-LRB- -LRB-)
+        (PP (IN without)
+          (NP (NN fertilization)))
+        (-RRB- -RRB-)))
+    (VP
+      (VP (VBP grow))
+      (CC or)
+      (VP (VBZ metabolize)))
+    (. .)))
+
+det(cell-2, The-1)
+nsubj(grow-16, cell-2)
+nsubj(metabolize-18, cell-2)
+auxpass(haploid-4, is-3)
+rcmod(cell-2, haploid-4)
+nsubj(believe-8, I-7)
+parataxis(haploid-4, believe-8)
+parataxis(can-10, believe-8)
+rcmod(cell-2, can-10)
+conj_and(haploid-4, can-10)
+neg(can-10, not-11)
+dep(cell-2, without-13)
+pobj(without-13, fertilization-14)
+root(ROOT-0, grow-16)
+conj_or(grow-16, metabolize-18)
+

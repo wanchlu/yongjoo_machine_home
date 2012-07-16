@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR
+      (PRN
+        (NP
+          (NP (NNP \/))
+          (NP (NNP \/)))
+        (-RRB- -RRB-))
+      (S
+        (SBAR (RB Even) (IN if)
+          (S
+            (NP (NN evolution) (NN theory))
+            (VP (VBD were) (RB not)
+              (ADJP (JJ perfect)))))
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (ADVP (RB still))
+          (NP (DT the) (JJS best)))))
+    (NP (PRP we))
+    (VP (VBP 've)
+      (VP (VBN got)))
+    (. .)))
+
+dep(best-15, \/-1)
+dep(\/-1, \/-2)
+advmod(perfect-10, Even-4)
+dep(perfect-10, if-5)
+nn(theory-7, evolution-6)
+nsubj(perfect-10, theory-7)
+cop(perfect-10, were-8)
+neg(perfect-10, not-9)
+advcl(best-15, perfect-10)
+nsubj(best-15, it-11)
+cop(best-15, 's-12)
+advmod(best-15, still-13)
+det(best-15, the-14)
+dep(got-18, best-15)
+nsubj(got-18, we-16)
+aux(got-18, 've-17)
+root(ROOT-0, got-18)
+

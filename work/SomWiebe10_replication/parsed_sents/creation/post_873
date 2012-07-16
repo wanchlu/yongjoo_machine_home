@@ -1,0 +1,732 @@
+(ROOT
+  (FRAG
+    (ADVP (RB First)
+      (CC and)
+      (RB foremost))
+    (: ...)))
+
+root(ROOT-0, First-1)
+conj_and(First-1, foremost-3)
+
+(ROOT
+  (S
+    (NP (NNP Dr.) (NNP Hurd))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ glad)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (S
+                (NP (PRP you))
+                (ADVP (RB still))
+                (VP (VBG being)
+                  (NP (PDT such) (DT a) (NN gadfly))))))))
+      (PRN (-LRB- -LRB-)
+        (NP (NN sic))
+        (-RRB- -RRB-)))
+    (. .)))
+
+nn(Hurd-2, Dr.-1)
+nsubj(glad-6, Hurd-2)
+nsubj(glad-6, I-4)
+cop(glad-6, 'm-5)
+root(ROOT-0, glad-6)
+aux(see-8, to-7)
+xcomp(glad-6, see-8)
+nsubj(gadfly-14, you-9)
+advmod(gadfly-14, still-10)
+cop(gadfly-14, being-11)
+predet(gadfly-14, such-12)
+det(gadfly-14, a-13)
+dep(see-8, gadfly-14)
+dep(glad-6, sic-16)
+
+(ROOT
+  (S (CC But)
+    (, ,)
+    (ADVP (RB not)
+      (PP (IN without)))
+    (VP (VBZ purpose))
+    (. .)))
+
+cc(purpose-5, But-1)
+neg(purpose-5, not-3)
+prep(not-3, without-4)
+root(ROOT-0, purpose-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB think)
+        (ADVP (RB so))))
+    (. .)))
+
+nsubj(think-4, I-1)
+aux(think-4, do-2)
+neg(think-4, n't-3)
+root(ROOT-0, think-4)
+advmod(think-4, so-5)
+
+(ROOT
+  (S (CC And)
+    (, ,)
+    (NP (NNP SPACE))
+    (VP
+      (VP (VBZ is) (RB n't)
+        (ADJP (JJ empty)))
+      (PRN (-LRB- -LRB-)
+        (SBAR (RB just) (IN because)
+          (S
+            (NP (PRP you))
+            (VP (MD ca) (RB n't)
+              (VP (VB SEE)
+                (NP (PRP it))))))
+        (-RRB- -RRB-)))
+    (. .)))
+
+cc(empty-6, And-1)
+nsubj(empty-6, SPACE-3)
+cop(empty-6, is-4)
+neg(empty-6, n't-5)
+root(ROOT-0, empty-6)
+advmod(SEE-13, just-8)
+dep(SEE-13, because-9)
+nsubj(SEE-13, you-10)
+aux(SEE-13, ca-11)
+neg(SEE-13, n't-12)
+parataxis(empty-6, SEE-13)
+dobj(SEE-13, it-14)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ takes)
+      (NP
+        (NP (DT a) (NN lot))
+        (PP (IN of)
+          (NP (NN explanation))))
+      (SBAR (IN that)
+        (S
+          (NP (JJ religious) (NNS texts))
+          (VP
+            (VP (MD ca) (RB n't))
+            (, ,)
+            (CC and)
+            (VP (VBP do) (RB n't))
+            (, ,)
+            (S
+              (VP (VB provide)))))))
+    (. .)))
+
+nsubj(takes-2, That-1)
+root(ROOT-0, takes-2)
+det(lot-4, a-3)
+dobj(takes-2, lot-4)
+prep_of(lot-4, explanation-6)
+complm(ca-10, that-7)
+amod(texts-9, religious-8)
+nsubj(ca-10, texts-9)
+nsubj(do-14, texts-9)
+nsubj(provide-17, texts-9)
+ccomp(takes-2, ca-10)
+neg(ca-10, n't-11)
+ccomp(takes-2, do-14)
+conj_and(ca-10, do-14)
+neg(do-14, n't-15)
+ccomp(takes-2, provide-17)
+ccomp(ca-10, provide-17)
+conj_and(ca-10, provide-17)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP
+      (NP (DT the) (NN amount))
+      (PP (IN of)
+        (NP
+          (NP (NNS times))
+          (SBAR
+            (S
+              (NP (DT all) (JJ religious) (NNS texts))
+              (VP (VBP have)
+                (VP (VBN been)
+                  (VP (VBN rewritten)))))))))
+    (VP (MD should)
+      (VP (VB speak)
+        (PP (TO to)
+          (NP
+            (NP
+              (NP (DT the) (NN obfuscation))
+              (PP (IN of)
+                (NP (PRP$ their) (NNS messages))))
+            (: --) (JJ pars)
+            (NP (JJ pro) (NN toto))))))
+    (. .)))
+
+advmod(speak-14, Also-1)
+det(amount-4, the-3)
+nsubj(speak-14, amount-4)
+prep_of(amount-4, times-6)
+det(texts-9, all-7)
+amod(texts-9, religious-8)
+nsubjpass(rewritten-12, texts-9)
+aux(rewritten-12, have-10)
+auxpass(rewritten-12, been-11)
+rcmod(times-6, rewritten-12)
+aux(speak-14, should-13)
+root(ROOT-0, speak-14)
+det(obfuscation-17, the-16)
+prep_to(speak-14, obfuscation-17)
+poss(messages-20, their-19)
+prep_of(obfuscation-17, messages-20)
+amod(obfuscation-17, pars-22)
+amod(toto-24, pro-23)
+dep(obfuscation-17, toto-24)
+
+(ROOT
+  (NP (CD Six) (NNS DAYS) (. ?)))
+
+num(DAYS-2, Six-1)
+root(ROOT-0, DAYS-2)
+
+(ROOT
+  (S
+    (ADJP (VB No.))
+    (. .)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (S
+    (NP
+      (QP (CD Six) (CD billion))
+      (NNS YEARS))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP
+          (ADJP (JJR closer))
+          (, ,)
+          (CC but)
+          (ADJP (JJ only)
+            (PP (IN about)
+              (NP (NN half)))))))
+    (. .)))
+
+number(billion-2, Six-1)
+num(YEARS-3, billion-2)
+nsubj(closer-6, YEARS-3)
+nsubj(only-9, YEARS-3)
+aux(closer-6, would-4)
+cop(closer-6, be-5)
+root(ROOT-0, closer-6)
+conj_but(closer-6, only-9)
+prep_about(only-9, half-11)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Then))
+    (SBAR
+      (WHADVP (WRB how))
+      (S
+        (VP (TO to)
+          (VP (VB explain)
+            (NP (DT the) (JJS closest) (NN star))
+            (, ,)
+            (PP (IN in)
+              (NP (JJ light) (NNS years)))))))
+    (. .)))
+
+root(ROOT-0, Then-1)
+advmod(explain-4, how-2)
+aux(explain-4, to-3)
+dep(Then-1, explain-4)
+det(star-7, the-5)
+amod(star-7, closest-6)
+dobj(explain-4, star-7)
+amod(years-11, light-10)
+prep_in(explain-4, years-11)
+
+(ROOT
+  (NP
+    (NP (DT No) (NN mention))
+    (PP (IN of)
+      (NP
+        (NP (DT that))
+        (PP (IN in)
+          (NP (DT any) (JJ religious) (NN text)))))
+    (. .)))
+
+det(mention-2, No-1)
+root(ROOT-0, mention-2)
+prep_of(mention-2, that-4)
+det(text-8, any-6)
+amod(text-8, religious-7)
+prep_in(that-4, text-8)
+
+(ROOT
+  (S
+    (S
+      (S
+        (ADVP (RB Also))
+        (, ,)
+        (NP (PRP I))
+        (VP (VBP find)
+          (S
+            (NP (PRP it))
+            (ADJP (JJ difficult)
+              (S
+                (VP (TO to)
+                  (VP (VB believe))))))
+          (, ,)
+          (SBAR (IN as)
+            (S
+              (NP (DT the) (NNP LDS))
+              (VP (VBP do))))))
+      (PRN (-LRB- -LRB-)
+        (S (RB not)
+          (VP (TO to)
+            (VP (VB pick)
+              (NP (DT a) (NN fight))
+              (PP (IN with)
+                (NP (DT a) (JJ single) (NN faith))))))
+        (-RRB- -RRB-)))
+    (, ,)
+    (NP (DT that) (NN heaven))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN planet))
+        (ADVP (JJ next)
+          (PP (TO to)
+            (NP (DT the) (NN sun))))))
+    (. .)))
+
+advmod(find-4, Also-1)
+nsubj(find-4, I-3)
+ccomp(planet-30, find-4)
+nsubj(difficult-6, it-5)
+xcomp(find-4, difficult-6)
+aux(believe-8, to-7)
+xcomp(difficult-6, believe-8)
+mark(do-13, as-10)
+det(LDS-12, the-11)
+nsubj(do-13, LDS-12)
+advcl(find-4, do-13)
+neg(pick-17, not-15)
+aux(pick-17, to-16)
+dep(find-4, pick-17)
+det(fight-19, a-18)
+dobj(pick-17, fight-19)
+det(faith-23, a-21)
+amod(faith-23, single-22)
+prep_with(pick-17, faith-23)
+det(heaven-27, that-26)
+nsubj(planet-30, heaven-27)
+cop(planet-30, is-28)
+det(planet-30, a-29)
+root(ROOT-0, planet-30)
+det(sun-34, the-33)
+prep_next_to(planet-30, sun-34)
+
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Sounds))
+      (PP (IN like)
+        (NP (NN hell))))
+    (: --)
+    (NP
+      (NP (DT no) (NN pun))
+      (VP (VBN intended)))
+    (. .)))
+
+root(ROOT-0, Sounds-1)
+prep_like(Sounds-1, hell-3)
+det(pun-6, no-5)
+dep(Sounds-1, pun-6)
+partmod(pun-6, intended-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP write)
+      (NP (DT this))
+      (SBAR (IN because)
+        (S
+          (NP (NN purpose))
+          (VP (VBZ seems)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (NP
+                    (NP (DT the) (JJ argumentative) (NN qualifier))
+                    (: --)
+                    (NP (NNS quantuvis))))))))))
+    (. .)))
+
+nsubj(write-2, I-1)
+root(ROOT-0, write-2)
+dobj(write-2, this-3)
+mark(seems-6, because-4)
+nsubj(seems-6, purpose-5)
+xsubj(qualifier-11, purpose-5)
+advcl(write-2, seems-6)
+aux(qualifier-11, to-7)
+cop(qualifier-11, be-8)
+det(qualifier-11, the-9)
+amod(qualifier-11, argumentative-10)
+xcomp(seems-6, qualifier-11)
+dep(qualifier-11, quantuvis-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Dr.) (NNP Hurd))
+      (, ,)
+      (NP (NNP Gary))
+      (, ,))
+    (VP (VBP please)
+      (S
+        (VP (VBG email)
+          (NP (PRP me))
+          (ADVP (RB sometime)))))
+    (. .)))
+
+nn(Hurd-2, Dr.-1)
+nsubj(please-6, Hurd-2)
+appos(Hurd-2, Gary-4)
+root(ROOT-0, please-6)
+xcomp(please-6, email-7)
+dobj(email-7, me-8)
+advmod(email-7, sometime-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (ADVP (RB very) (RB much))
+      (VP (VB like)
+        (S
+          (VP (TO to)
+            (VP (VB speak)
+              (PP (IN with)
+                (NP (PRP you))))))))
+    (. .)))
+
+nsubj(like-5, I-1)
+xsubj(speak-7, I-1)
+aux(like-5, would-2)
+advmod(much-4, very-3)
+advmod(like-5, much-4)
+root(ROOT-0, like-5)
+aux(speak-7, to-6)
+xcomp(like-5, speak-7)
+prep_with(speak-7, you-9)
+
+(ROOT
+  (NP (NNP Cordially) (, ,) (NNP Christopher) (NNPS Torri)))
+
+nn(Torri-4, Cordially-1)
+appos(Torri-4, Christopher-3)
+root(ROOT-0, Torri-4)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN proof))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD can)
+              (VP (VB be)
+                (VP (VBN substantiated)
+                  (PP (IN by)
+                    (NP (DT any) (JJ human) (NNS senses)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB show) (, ,)
+                        (INTJ (UH undeniably))
+                        (, ,)
+                        (SBAR (IN that)
+                          (S
+                            (NP (DT a) (NN sentient) (NN being)
+                              (CC or)
+                              (NN force))
+                            (VP (VBD created)
+                              (NP
+                                (NP (DT the) (NN earth))
+                                (, ,)
+                                (NP (NN life))
+                                (CC or)
+                                (NP (DT the) (NN universe))))))))))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(proof-4, no-3)
+nsubj(is-2, proof-4)
+nsubjpass(substantiated-8, proof-4)
+aux(substantiated-8, can-6)
+auxpass(substantiated-8, be-7)
+rcmod(proof-4, substantiated-8)
+det(senses-12, any-10)
+amod(senses-12, human-11)
+agent(substantiated-8, senses-12)
+aux(show-14, to-13)
+xcomp(substantiated-8, show-14)
+dep(show-14, undeniably-16)
+complm(created-24, that-18)
+det(being-21, a-19)
+nn(being-21, sentient-20)
+nsubj(created-24, being-21)
+conj_or(being-21, force-23)
+nsubj(created-24, force-23)
+ccomp(show-14, created-24)
+det(earth-26, the-25)
+dobj(created-24, earth-26)
+dobj(created-24, life-28)
+conj_or(earth-26, life-28)
+det(universe-31, the-30)
+dobj(created-24, universe-31)
+conj_or(earth-26, universe-31)
+
+(ROOT
+  (FRAG (RB Not)
+    (VP (TO to)
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (NP (JJ experiential) (NNS moments))
+            (VP (VBP are)
+              (VP (VBN disqualified)
+                (PP (IN from)
+                  (NP (NN contemplation)))))))))
+    (. .)))
+
+root(ROOT-0, Not-1)
+aux(say-3, to-2)
+dep(Not-1, say-3)
+complm(disqualified-8, that-4)
+amod(moments-6, experiential-5)
+nsubjpass(disqualified-8, moments-6)
+auxpass(disqualified-8, are-7)
+ccomp(say-3, disqualified-8)
+prep_from(disqualified-8, contemplation-10)
+
+(ROOT
+  (NP
+    (NP (NNP Contemplation))
+    (, ,)
+    (CC but)
+    (NP
+      (ADJP (RB not) (JJ hard))
+      (NNS data))
+    (. .)))
+
+root(ROOT-0, Contemplation-1)
+neg(hard-5, not-4)
+amod(data-6, hard-5)
+conj_but(Contemplation-1, data-6)
+
+(ROOT
+  (S
+    (NP (DT The) (NN imagination))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ petulant) (NN child))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD can)
+              (VP (VB force)
+                (NP (DT a) (NN person)
+                  (S
+                    (VP (TO to)
+                      (VP (VB forget)
+                        (ADVP
+                          (ADVP
+                            (ADVP (RB rationality))
+                            (PP (IN by)
+                              (NP
+                                (NP (NNS means))
+                                (PP (IN of)
+                                  (NP (NN frustration))))
+                              (, ,)
+                              (ADVP (RB adversity))))
+                          (CC or)
+                          (ADVP (RB just) (JJ plain)))
+                        (SBAR (`` ``)
+                          (S
+                            (NP (PRP it))
+                            (VP (VBZ is)
+                              (SBAR
+                                (WHNP (WP what))
+                                (S
+                                  (NP (PRP it))
+                                  (VP (VBZ is)))))))))))))))))
+    (. .) ('' '')))
+
+det(imagination-2, The-1)
+nsubj(child-6, imagination-2)
+cop(child-6, is-3)
+det(child-6, a-4)
+amod(child-6, petulant-5)
+root(ROOT-0, child-6)
+nsubj(force-9, child-6)
+aux(force-9, can-8)
+rcmod(child-6, force-9)
+det(person-11, a-10)
+dobj(force-9, person-11)
+aux(forget-13, to-12)
+infmod(person-11, forget-13)
+advmod(forget-13, rationality-14)
+prep_by_means_of(rationality-14, frustration-18)
+advmod(rationality-14, adversity-20)
+advmod(plain-23, just-22)
+advmod(forget-13, plain-23)
+conj_or(rationality-14, plain-23)
+nsubj(is-26, it-25)
+ccomp(forget-13, is-26)
+dobj(is-29, what-27)
+nsubj(is-29, it-28)
+ccomp(is-26, is-29)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (MD could)
+      (VP (VB be) (, ,)
+        (PP (IN at)
+          (NP
+            (NP (DT some) (NN point))
+            (, ,)
+            (NP (DT a) (NN convergence))))
+        (PP (IN of)
+          (NP (NN science)
+            (CC and)
+            (NN faith)))))
+    (. .)))
+
+expl(be-3, There-1)
+aux(be-3, could-2)
+root(ROOT-0, be-3)
+det(point-7, some-6)
+prep_at(be-3, point-7)
+det(convergence-10, a-9)
+appos(point-7, convergence-10)
+prep_of(be-3, science-12)
+prep_of(be-3, faith-14)
+conj_and(science-12, faith-14)
+
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Faith))
+      (, ,)
+      (CC or)
+      (NP (NN belief)))
+    (: ...)))
+
+root(ROOT-0, Faith-1)
+conj_or(Faith-1, belief-4)
+
+(ROOT
+  (NP (JJ odd) (NN conundrum) (. .)))
+
+amod(conundrum-2, odd-1)
+root(ROOT-0, conundrum-2)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (CD Six) (NNS days))
+      (SBAR
+        (S
+          (VP (TO to)
+            (VP (VB create)
+              (NP (DT a) (NN universe))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP one))
+                      (VP (VBD were)
+                        (VP (VBG studying)
+                          (NP
+                            (NP (DT the) (NN redshift))
+                            (PP (IN of)
+                              (NP
+                                (NP (DT the) (NN light))
+                                (PP (IN from)
+                                  (NP (JJ distant) (NNS stars))))))))))
+                  (VP (VBZ shows)
+                    (NP
+                      (NP (DT a) (NN sea))
+                      (PP (IN of)
+                        (NP (NN space)))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ is)
+                            (VP (VBG expanding)
+                              (PP (IN at)
+                                (NP
+                                  (NP (DT a) (NN rate))
+                                  (SBAR
+                                    (WHNP (WDT that))
+                                    (S
+                                      (VP (MD could)
+                                        (ADVP (RB only))
+                                        (VP (VB be)
+                                          (VP (VBN proven)
+                                            (PP (IN by)
+                                              (NP
+                                                (NP (NNS billions))
+                                                (PP (IN of)
+                                                  (NP
+                                                    (NP (NNS years))
+                                                    (PP (IN of)
+                                                      (NP (NN expansion)))))))))))))))))))))))))))
+    (. ?)))
+
+num(days-2, Six-1)
+root(ROOT-0, days-2)
+aux(create-4, to-3)
+infmod(days-2, create-4)
+det(universe-6, a-5)
+dobj(create-4, universe-6)
+advmod(shows-20, where-7)
+mark(studying-11, if-8)
+nsubj(studying-11, one-9)
+aux(studying-11, were-10)
+csubj(shows-20, studying-11)
+det(redshift-13, the-12)
+dobj(studying-11, redshift-13)
+det(light-16, the-15)
+prep_of(redshift-13, light-16)
+amod(stars-19, distant-18)
+prep_from(light-16, stars-19)
+advcl(create-4, shows-20)
+det(sea-22, a-21)
+dobj(shows-20, sea-22)
+nsubj(expanding-27, sea-22)
+prep_of(sea-22, space-24)
+aux(expanding-27, is-26)
+rcmod(sea-22, expanding-27)
+det(rate-30, a-29)
+prep_at(expanding-27, rate-30)
+nsubjpass(proven-35, rate-30)
+aux(proven-35, could-32)
+advmod(proven-35, only-33)
+auxpass(proven-35, be-34)
+rcmod(rate-30, proven-35)
+agent(proven-35, billions-37)
+prep_of(billions-37, years-39)
+prep_of(years-39, expansion-41)
+

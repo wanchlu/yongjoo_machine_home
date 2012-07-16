@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (ADVP (RB immediately))
+      (VP (VBD took)
+        (NP (PRP it))
+        (PRT (RP out))
+        (PP (IN of)
+          (NP (DT the) (NN book)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT that))
+      (VP (VBZ s)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP I))
+            (VP (VBD emphasized)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBD did) (RB not)
+                    (VP (VB appear)
+                      (PP (IN in)
+                        (NP (JJ subsequent) (NNS editions))))))))))))
+    (. .)))
+
+nsubj(took-3, We-1)
+advmod(took-3, immediately-2)
+root(ROOT-0, took-3)
+dobj(took-3, it-4)
+det(book-8, the-7)
+prep_out_of(took-3, book-8)
+nsubj(s-12, that-11)
+conj_and(took-3, s-12)
+advmod(emphasized-15, why-13)
+nsubj(emphasized-15, I-14)
+advcl(s-12, emphasized-15)
+complm(appear-20, that-16)
+nsubj(appear-20, it-17)
+aux(appear-20, did-18)
+neg(appear-20, not-19)
+ccomp(emphasized-15, appear-20)
+amod(editions-23, subsequent-22)
+prep_in(appear-20, editions-23)
+

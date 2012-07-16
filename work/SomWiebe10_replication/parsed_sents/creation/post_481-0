@@ -1,0 +1,49 @@
+(ROOT
+  (PRN (: --)
+    (S
+      (S
+        (NP (NNP TJ10I))
+        (VP (VBP do) (RB n't)
+          (VP (VB believe)
+            (NP
+              (NP (DT the)
+                (ADJP (CD 91) (NN %))
+                (NN similarity))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNP ACLU) (POS 's))
+                  (NN submission)))))))
+      (CC and)
+      (S
+        (NP
+          (NP (DT the) (NNP Judge) (POS 's))
+          (NN analysis))
+        (VP (VBD was)
+          (NP (DT a)
+            (ADJP (JJ lucky)
+              (CC or)
+              (JJ freak))
+            (NN coincidence) (NN ?!!)))))))
+
+nsubj(believe-5, TJ10I-2)
+aux(believe-5, do-3)
+neg(believe-5, n't-4)
+root(ROOT-0, believe-5)
+det(similarity-9, the-6)
+number(%-8, 91-7)
+amod(similarity-9, %-8)
+dobj(believe-5, similarity-9)
+det(ACLU-12, the-11)
+poss(submission-14, ACLU-12)
+prep_in(similarity-9, submission-14)
+det(Judge-17, the-16)
+poss(analysis-19, Judge-17)
+nsubj(?!!-26, analysis-19)
+cop(?!!-26, was-20)
+det(?!!-26, a-21)
+amod(?!!-26, lucky-22)
+conj_or(lucky-22, freak-24)
+amod(?!!-26, freak-24)
+nn(?!!-26, coincidence-25)
+conj_and(believe-5, ?!!-26)
+

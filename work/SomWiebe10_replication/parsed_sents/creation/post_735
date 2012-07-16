@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP
+          (NP (CD two) (NNS possibilities))
+          (PP (IN about)
+            (NP
+              (NP (DT the) (NN origin))
+              (PP (IN of)
+                (NP (DT the) (NN universe))))))))
+    (: :)
+    (S
+      (NP (PRP It))
+      (VP (VBD blinked)
+        (PP (IN into)
+          (NP (NN existence)))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+num(possibilities-4, two-3)
+nsubj(are-2, possibilities-4)
+det(origin-7, the-6)
+prep_about(possibilities-4, origin-7)
+det(universe-10, the-9)
+prep_of(origin-7, universe-10)
+nsubj(blinked-13, It-12)
+parataxis(are-2, blinked-13)
+prep_into(blinked-13, existence-15)
+
+(ROOT
+  (S
+    (NP (NN Evidence))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (DT this))
+          (ADVP (RB still))
+          (VP (VBZ happens)
+            (NP (NN today))))))
+    (. .)))
+
+nsubj(says-2, Evidence-1)
+root(ROOT-0, says-2)
+nsubj(happens-5, this-3)
+advmod(happens-5, still-4)
+ccomp(says-2, happens-5)
+tmod(happens-5, today-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (VP
+        (ADVP (RB never))
+        (VBN created)))
+    (. .)))
+
+nsubjpass(created-4, It-1)
+auxpass(created-4, was-2)
+neg(created-4, never-3)
+root(ROOT-0, created-4)
+
+(ROOT
+  (S
+    (NP (NNP Energy))
+    (VP (MD can) (RB not)
+      (VP (VB be)
+        (VP (VBN created)
+          (CC or)
+          (VBN destroyed))))
+    (. .)))
+
+nsubjpass(created-5, Energy-1)
+nsubjpass(destroyed-7, Energy-1)
+aux(created-5, can-2)
+neg(created-5, not-3)
+auxpass(created-5, be-4)
+root(ROOT-0, created-5)
+conj_or(created-5, destroyed-7)
+

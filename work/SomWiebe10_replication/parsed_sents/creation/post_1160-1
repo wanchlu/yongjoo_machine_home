@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (PP (IN Like)
+        (ADJP (JJS most)))
+      (NP (JJ scientific) (NNS theories))
+      (VP (VBZ is) (RB not)
+        (NP
+          (ADJP (CD 100) (NN %))
+          (JJ defensible))))
+    (, ,)
+    (CC but)
+    (S
+      (PP (IN on)
+        (NP
+          (NP (DT a) (NN balance))
+          (PP (IN of)
+            (NP (NNS probabilities)))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP (DT the)
+          (ADJP (RBS most) (JJ likely))
+          (NN scenario))))
+    (. .)))
+
+prep_like(%-8, most-2)
+amod(theories-4, scientific-3)
+nsubj(%-8, theories-4)
+cop(%-8, is-5)
+neg(%-8, not-6)
+number(%-8, 100-7)
+root(ROOT-0, %-8)
+amod(%-8, defensible-9)
+det(balance-14, a-13)
+prep_on(scenario-23, balance-14)
+prep_of(balance-14, probabilities-16)
+nsubj(scenario-23, it-18)
+cop(scenario-23, is-19)
+det(scenario-23, the-20)
+advmod(likely-22, most-21)
+amod(scenario-23, likely-22)
+conj_but(%-8, scenario-23)
+

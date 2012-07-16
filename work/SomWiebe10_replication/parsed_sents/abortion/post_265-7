@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many) (NNS women))
+      (, ,)
+      (PP (VBG including)
+        (NP (PRP myself)))
+      (, ,))
+    (VP (VBP find)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ unfair)))
+      (SBAR (IN that)
+        (S
+          (NP (NNS men))
+          (VP (VBP enter)
+            (NP (DT the) (NN abortion) (NN debate))
+            (SBAR (IN because)
+              (S
+                (NP (DT a) (NN man))
+                (VP (VBZ is)
+                  (ADJP (RB intrinsically) (JJ different)
+                    (PP (IN than)
+                      (NP (DT a) (NN woman)))))))))))
+    (. .)))
+
+amod(women-2, Many-1)
+nsubj(find-7, women-2)
+prep_including(women-2, myself-5)
+root(ROOT-0, find-7)
+nsubj(unfair-9, it-8)
+xcomp(find-7, unfair-9)
+complm(enter-12, that-10)
+nsubj(enter-12, men-11)
+ccomp(find-7, enter-12)
+det(debate-15, the-13)
+nn(debate-15, abortion-14)
+dobj(enter-12, debate-15)
+mark(different-21, because-16)
+det(man-18, a-17)
+nsubj(different-21, man-18)
+cop(different-21, is-19)
+advmod(different-21, intrinsically-20)
+advcl(enter-12, different-21)
+det(woman-24, a-23)
+prep_than(different-21, woman-24)
+

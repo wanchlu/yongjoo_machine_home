@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB also))
+    (VP
+      (VP (VBD took))
+      (CC and)
+      (VP (VB take)
+        (NP (NN exception))
+        (PP (TO to)
+          (NP (PRP$ your) (NN insistence)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP are)
+              (VP (VBN commanded)
+                (S (RB not)
+                  (VP (TO to)
+                    (VP (VB judge))))))))))
+    (. .)))
+
+nsubj(took-3, I-1)
+nsubj(take-5, I-1)
+advmod(took-3, also-2)
+root(ROOT-0, took-3)
+conj_and(took-3, take-5)
+dobj(take-5, exception-6)
+poss(insistence-9, your-8)
+prep_to(take-5, insistence-9)
+complm(commanded-13, that-10)
+nsubjpass(commanded-13, we-11)
+xsubj(judge-16, we-11)
+auxpass(commanded-13, are-12)
+ccomp(take-5, commanded-13)
+neg(judge-16, not-14)
+aux(judge-16, to-15)
+xcomp(commanded-13, judge-16)
+

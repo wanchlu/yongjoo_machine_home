@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ has)
+      (ADVP (RB actually))
+      (ADVP (RB never))
+      (VP (VBN been)
+        (VP (VBN observed))))
+    (. .)))
+
+nsubjpass(observed-6, Evolution-1)
+aux(observed-6, has-2)
+advmod(observed-6, actually-3)
+neg(observed-6, never-4)
+auxpass(observed-6, been-5)
+root(ROOT-0, observed-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN aftermath))
+      (PP (IN of)
+        (NP (PRP it))))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN observed))))
+    (. .)))
+
+det(aftermath-2, The-1)
+nsubjpass(observed-7, aftermath-2)
+prep_of(aftermath-2, it-4)
+aux(observed-7, has-5)
+auxpass(observed-7, been-6)
+root(ROOT-0, observed-7)
+
+(ROOT
+  (S (CC But)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (DT no) (JJ concrete) (NN evidence)))
+    (. .)))
+
+cc(is-3, But-1)
+expl(is-3, there-2)
+root(ROOT-0, is-3)
+det(evidence-6, no-4)
+amod(evidence-6, concrete-5)
+nsubj(is-3, evidence-6)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Now))
+      (NP (NNS mutations))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN observed)))))
+    (CC but)
+    (S
+      (NP (NN mutation)
+        (CC and)
+        (NN evolution))
+      (VP (VBP are)
+        (NP (CD two) (JJ different) (NNS things))))
+    (. .)))
+
+advmod(observed-5, Now-1)
+nsubjpass(observed-5, mutations-2)
+aux(observed-5, have-3)
+auxpass(observed-5, been-4)
+root(ROOT-0, observed-5)
+nsubj(things-13, mutation-7)
+conj_and(mutation-7, evolution-9)
+nsubj(things-13, evolution-9)
+cop(things-13, are-10)
+num(things-13, two-11)
+amod(things-13, different-12)
+conj_but(observed-5, things-13)
+

@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT any) (NN event)))
+    (, ,)
+    (NP (DT those))
+    (VP (VBP account)
+      (PP (IN for)
+        (NP
+          (NP
+            (QP (RB only) (RB about) (CD 1))
+            (NN %))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS abortions))
+              (NP (DT each) (NN year)))))))
+    (. .)))
+
+det(event-3, any-2)
+prep_in(account-6, event-3)
+nsubj(account-6, those-5)
+root(ROOT-0, account-6)
+quantmod(1-10, only-8)
+quantmod(1-10, about-9)
+num(%-11, 1-10)
+prep_for(account-6, %-11)
+det(abortions-14, the-13)
+prep_of(%-11, abortions-14)
+det(year-16, each-15)
+dep(abortions-14, year-16)
+

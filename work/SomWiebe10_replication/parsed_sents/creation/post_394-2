@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (PRP$ Our) (NNS genomes))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT those))
+          (PP (IN of)
+            (NP (JJ other) (NN life) (NNS forms))))
+        (, ,))
+      (VP (VBP have)
+        (VP (VBN evolved)
+          (NP
+            (NP (NNS mechanisms))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP create)
+                  (NP
+                    (NP (JJ different) (NNS kinds))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS mutations))
+                        (PP (IN in)
+                          (NP (PRP$ their) (NN DNA)))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP reuse)
+        (CC and)
+        (VBP adapt)
+        (NP
+          (NP (JJ useful) (NNS pieces))
+          (PP (IN of)
+            (NP (NNP DNA))))
+        (, ,)
+        (SBAR
+          (ADVP (RB even)
+            (PP (TO to)
+              (NP (DT the) (NN point))))
+          (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBP are)
+              (NP (JJ genomic) (`` ``) (JJS interchangeable) (NNS parts)))))))
+    (. .)))
+
+poss(genomes-2, Our-1)
+nsubj(evolved-12, genomes-2)
+conj_and(genomes-2, those-5)
+nsubj(evolved-12, those-5)
+amod(forms-9, other-7)
+nn(forms-9, life-8)
+prep_of(those-5, forms-9)
+aux(evolved-12, have-11)
+root(ROOT-0, evolved-12)
+dobj(evolved-12, mechanisms-13)
+nsubj(create-15, mechanisms-13)
+rcmod(mechanisms-13, create-15)
+amod(kinds-17, different-16)
+dobj(create-15, kinds-17)
+prep_of(kinds-17, mutations-19)
+poss(DNA-22, their-21)
+prep_in(mutations-19, DNA-22)
+nsubj(reuse-26, they-25)
+nsubj(adapt-28, they-25)
+conj_and(evolved-12, reuse-26)
+conj_and(evolved-12, adapt-28)
+conj_and(reuse-26, adapt-28)
+amod(pieces-30, useful-29)
+dobj(reuse-26, pieces-30)
+prep_of(pieces-30, DNA-32)
+advmod(are-40, even-34)
+det(point-37, the-36)
+prep_to(even-34, point-37)
+dep(are-40, that-38)
+expl(are-40, there-39)
+dep(reuse-26, are-40)
+amod(parts-44, genomic-41)
+amod(parts-44, interchangeable-43)
+nsubj(are-40, parts-44)
+

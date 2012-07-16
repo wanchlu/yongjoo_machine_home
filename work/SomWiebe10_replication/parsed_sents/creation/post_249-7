@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (DT The) (NNS researchers))
+    (VP (VBD found)
+      (SBAR (IN that)
+        (S
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP they))
+              (VP (VBD put)
+                (NP (DT the) (NNS bacteria))
+                (PP (IN in)
+                  (NP (JJ pure) (NN citrate))))))
+          (, ,)
+          (NP (DT the) (NNS microbes))
+          (VP (MD could)
+            (VP (VB thrive)
+              (PP (IN on)
+                (NP (PRP it)))
+              (PP (IN as)
+                (NP
+                  (NP (PRP$ their) (JJ sole) (NN source))
+                  (PP (IN of)
+                    (NP (NN carbon))))))))))
+    (. .)))
+
+det(researchers-2, The-1)
+nsubj(found-3, researchers-2)
+root(ROOT-0, found-3)
+complm(thrive-17, that-4)
+advmod(put-7, when-5)
+nsubj(put-7, they-6)
+advcl(thrive-17, put-7)
+det(bacteria-9, the-8)
+dobj(put-7, bacteria-9)
+amod(citrate-12, pure-11)
+prep_in(put-7, citrate-12)
+det(microbes-15, the-14)
+nsubj(thrive-17, microbes-15)
+aux(thrive-17, could-16)
+ccomp(found-3, thrive-17)
+prep_on(thrive-17, it-19)
+poss(source-23, their-21)
+amod(source-23, sole-22)
+prep_as(thrive-17, source-23)
+prep_of(source-23, carbon-25)
+

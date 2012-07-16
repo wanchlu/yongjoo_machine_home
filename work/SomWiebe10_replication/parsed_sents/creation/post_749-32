@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)
+        (SBAR (IN that)
+          (FRAG
+            (NP (DT all))
+            (NP
+              (NP (DT the) (NNP Hindi))
+              (, ,)
+              (NP (NNP Taoists) (, ,) (NNP Buddhists) (, ,) (NNP Jainists) (, ,) (NNP Pagans) (, ,) (NNP Shamanists))
+              (, ,)
+              (NP (FW etc.) (. .)))))))
+    (. .)))
+
+nsubj(sure-3, I-1)
+cop(sure-3, 'm-2)
+root(ROOT-0, sure-3)
+complm(all-5, that-4)
+dep(sure-3, all-5)
+det(Hindi-7, the-6)
+dep(all-5, Hindi-7)
+nn(Shamanists-17, Taoists-9)
+appos(Shamanists-17, Buddhists-11)
+appos(Shamanists-17, Jainists-13)
+appos(Shamanists-17, Pagans-15)
+appos(Hindi-7, Shamanists-17)
+appos(Hindi-7, etc.-19)
+
+(ROOT
+  (S
+    (VP (MD would)
+      (VP (VB disagree)
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ their) (NN perspective))
+            (VP (VBZ is)
+              (ADVP (RB somehow))
+              (ADJP (JJ exagerated)))))))
+    (. .)))
+
+aux(disagree-2, would-1)
+root(ROOT-0, disagree-2)
+complm(exagerated-8, that-3)
+poss(perspective-5, their-4)
+nsubj(exagerated-8, perspective-5)
+cop(exagerated-8, is-6)
+advmod(exagerated-8, somehow-7)
+ccomp(disagree-2, exagerated-8)
+

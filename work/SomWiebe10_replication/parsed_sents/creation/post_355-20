@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADVP (RB always))
+      (VP (VBN amazed)
+        (PP (IN at)
+          (SBAR
+            (WHADJP (WRB how) (JJ dumb))
+            (S
+              (NP (PRP they))
+              (VP (VBP think)
+                (SBAR
+                  (S
+                    (NP (DT the) (JJ average) (NN joe))
+                    (VP (VBZ is))))))))))
+    (. .)))
+
+nsubjpass(amazed-4, I-1)
+auxpass(amazed-4, 'm-2)
+advmod(amazed-4, always-3)
+root(ROOT-0, amazed-4)
+advmod(dumb-7, how-6)
+dep(think-9, dumb-7)
+nsubj(think-9, they-8)
+prepc_at(amazed-4, think-9)
+det(joe-12, the-10)
+amod(joe-12, average-11)
+nsubj(is-13, joe-12)
+ccomp(think-9, is-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (CD 5))
+      (SBAR
+        (S
+          (NP (NNP -RRB-) (NNP ID))
+          (VP (MD can)
+            (VP
+              (VP (VB be)
+                (VP
+                  (ADVP (RB properly))
+                  (VBN considered)
+                  (PP (IN in)
+                    (NP (JJ public) (JJ scientific) (NNS discussions)))))
+              (CC and)
+              (VP (VB be)
+                (ADJP (JJ distinguished)
+                  (PP (IN from)
+                    (NP
+                      (NP (NNS arguments))
+                      (PP (IN for)
+                        (NP (NNP God))))))))))))
+    (VP (VBZ s)
+      (NP
+        (NP (NN existence))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (ADVP (RB nevertheless))
+            (VP (VBP have)
+              (NP (JJ positive) (JJ theological) (NNS implications)))))))
+    (. .)))
+
+nsubj(existence-20, 5-1)
+nsubjpass(considered-7, ID-3)
+nsubj(distinguished-14, ID-3)
+aux(considered-7, can-4)
+auxpass(considered-7, be-5)
+advmod(considered-7, properly-6)
+rcmod(5-1, considered-7)
+amod(discussions-11, public-9)
+amod(discussions-11, scientific-10)
+prep_in(considered-7, discussions-11)
+cop(distinguished-14, be-13)
+rcmod(5-1, distinguished-14)
+conj_and(considered-7, distinguished-14)
+prep_from(distinguished-14, arguments-16)
+prep_for(arguments-16, God-18)
+cop(existence-20, s-19)
+root(ROOT-0, existence-20)
+mark(have-24, while-22)
+advmod(have-24, nevertheless-23)
+dep(existence-20, have-24)
+amod(implications-27, positive-25)
+amod(implications-27, theological-26)
+dobj(have-24, implications-27)
+

@@ -1,0 +1,46 @@
+(ROOT
+  (S ('' '')
+    (NP (RB So) (JJ intelligent) (NNS agents))
+    (VP (MD can) (RB not)
+      (VP (VB create)
+        (NP (NN life))
+        (PP (IN under)
+          (NP (JJ strict) (NN lab) (NNS conditions)))))
+    (. ?)))
+
+advmod(agents-4, So-2)
+amod(agents-4, intelligent-3)
+nsubj(create-7, agents-4)
+aux(create-7, can-5)
+neg(create-7, not-6)
+root(ROOT-0, create-7)
+dobj(create-7, life-8)
+amod(conditions-12, strict-10)
+nn(conditions-12, lab-11)
+prep_under(create-7, conditions-12)
+
+(ROOT
+  (S
+    (NP (NNP Seems))
+    (ADJP (JJR more))
+    (PP (IN like)
+      (NP
+        (NP (DT an) (NN argument))
+        (PP
+          (PP (IN against)
+            (NP (NNP ID)))
+          (, ,) (RB rather) (RB then)
+          (PP (IN for)
+            (NP (PRP it))))))
+    (: ...)))
+
+dep(more-2, Seems-1)
+root(ROOT-0, more-2)
+dep(more-2, like-3)
+det(argument-5, an-4)
+pobj(like-3, argument-5)
+prep_against(argument-5, ID-7)
+advmod(argument-5, rather-9)
+advmod(argument-5, then-10)
+prep_for(argument-5, it-12)
+

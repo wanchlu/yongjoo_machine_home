@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (CD One))
+        (PP (IN of)
+          (NP (CD two) (NNS things))))
+      (ADVP (RB always))
+      (VP (MD happens) (: :)
+        (VP (VB \/) (-RRB- -RRB-)
+          (NP (NNS \/))
+          (-RRB- -RRB-))))
+    (S
+      (S
+        (LST (LS 1) (-RRB- -RRB-))
+        (NP (DT The) (NN theory))
+        (VP (VBZ makes)
+          (NP (NNS predictions))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (JJ new) (NN evidence))
+        (VP (VBD found)
+          (SBAR
+            (S
+              (VP (VBZ fits)
+                (NP (DT the) (NN theory))))))))
+    (. .)))
+
+nsubj(happens-6, One-1)
+num(things-4, two-3)
+prep_of(One-1, things-4)
+advmod(happens-6, always-5)
+root(ROOT-0, happens-6)
+dep(happens-6, \/-8)
+dobj(\/-8, \/-10)
+dep(makes-16, 1-12)
+det(theory-15, The-14)
+nsubj(makes-16, theory-15)
+ccomp(happens-6, makes-16)
+dobj(makes-16, predictions-17)
+amod(evidence-21, new-20)
+nsubj(found-22, evidence-21)
+ccomp(happens-6, found-22)
+conj_and(makes-16, found-22)
+ccomp(found-22, fits-23)
+det(theory-25, the-24)
+dobj(fits-23, theory-25)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (S
+          (ADVP (RB only))
+          (NP (NNP X) (NNS people))
+          (VP (MD can)
+            (VP (VB survive))))
+        (CC and)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP (NNP X) (NNP +) (NNP N) (NNS people))))))
+    (, ,)
+    (WHADVP
+      (ADVP (RB then))
+      (WRB how))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB decide)
+        (NP
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ lives))))
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ dies)))))))
+    (. ?)))
+
+mark(survive-6, If-1)
+advmod(survive-6, only-2)
+nn(people-4, X-3)
+nsubj(survive-6, people-4)
+aux(survive-6, can-5)
+advcl(decide-19, survive-6)
+expl(are-9, there-8)
+conj_and(survive-6, are-9)
+advcl(decide-19, are-9)
+nn(people-13, X-10)
+nn(people-13, +-11)
+nn(people-13, N-12)
+nsubj(are-9, people-13)
+advmod(how-16, then-15)
+advmod(decide-19, how-16)
+aux(decide-19, do-17)
+nsubj(decide-19, you-18)
+root(ROOT-0, decide-19)
+nsubj(lives-21, who-20)
+dobj(decide-19, lives-21)
+nsubj(dies-24, who-23)
+dobj(decide-19, dies-24)
+conj_and(lives-21, dies-24)
+

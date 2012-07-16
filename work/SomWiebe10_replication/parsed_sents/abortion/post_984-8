@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WDT Whatever) (NN measure))
+      (S
+        (NP (PRP you))
+        (VP (VBP use)
+          (PP (IN in)
+            (S
+              (VP (VBG judging)
+                (NP (NNS others))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN used)
+          (S
+            (VP (TO to)
+              (VP (VB measure)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP are)
+                      (VP (VBN judged)))))))))))
+    (. .)))
+
+det(measure-2, Whatever-1)
+dobj(use-4, measure-2)
+nsubj(use-4, you-3)
+dep(used-12, use-4)
+prepc_in(use-4, judging-6)
+dobj(judging-6, others-7)
+nsubjpass(used-12, it-9)
+aux(used-12, will-10)
+auxpass(used-12, be-11)
+root(ROOT-0, used-12)
+aux(measure-14, to-13)
+xcomp(used-12, measure-14)
+advmod(judged-18, how-15)
+nsubjpass(judged-18, you-16)
+auxpass(judged-18, are-17)
+ccomp(measure-14, judged-18)
+

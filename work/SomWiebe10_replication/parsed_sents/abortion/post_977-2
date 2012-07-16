@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (SBAR (RB only) (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP believe)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ is))))))))
+    (. .)))
+
+nsubj(is-2, It-1)
+root(ROOT-0, is-2)
+advmod(believe-6, only-3)
+dep(believe-6, if-4)
+nsubj(believe-6, you-5)
+ccomp(is-2, believe-6)
+nsubj(is-8, it-7)
+ccomp(believe-6, is-8)
+
+(ROOT
+  (S (CC So)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP (NNP Hitler))
+        (VP (VBD did))))
+    (VP (VBD was)
+      (ADJP (JJ good))
+      (SBAR (IN because)
+        (S
+          (NP (PRP he))
+          (VP (VBD thought)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBD was))))))))
+    (. .)))
+
+cc(good-6, So-1)
+dobj(did-4, what-2)
+nsubj(did-4, Hitler-3)
+csubj(good-6, did-4)
+cop(good-6, was-5)
+root(ROOT-0, good-6)
+mark(thought-9, because-7)
+nsubj(thought-9, he-8)
+advcl(good-6, thought-9)
+nsubj(was-11, it-10)
+ccomp(thought-9, was-11)
+

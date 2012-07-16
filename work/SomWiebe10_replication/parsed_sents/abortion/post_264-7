@@ -1,0 +1,29 @@
+(ROOT
+  (NP (DT a) (NN child)
+    (SBAR (IN that)
+      (S
+        (NP (DT the) (NN man))
+        (VP
+          (VP (VBZ wants))
+          (, ,)
+          (CC and)
+          (VP (MD would)
+            (VP (VB take)
+              (NP (DT all) (NN responsability))
+              (PP (IN for)))))))
+    (. .)))
+
+det(child-2, a-1)
+root(ROOT-0, child-2)
+complm(wants-6, that-3)
+det(man-5, the-4)
+nsubj(wants-6, man-5)
+nsubj(take-10, man-5)
+ccomp(child-2, wants-6)
+aux(take-10, would-9)
+ccomp(child-2, take-10)
+conj_and(wants-6, take-10)
+det(responsability-12, all-11)
+dobj(take-10, responsability-12)
+prep(take-10, for-13)
+

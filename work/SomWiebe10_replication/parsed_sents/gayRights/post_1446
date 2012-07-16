@@ -1,0 +1,190 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Well))
+      (VP (TO to)
+        (VP
+          (ADVP (NN sort) (IN of))
+          (VB counter)
+          (NP (DT the) (NNS downvotes)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP
+              (ADVP (RB just))
+              (VB add)
+              (NP (DT another) (NN argument)))))))
+    (. .)))
+
+advmod(counter-5, Well-1)
+aux(counter-5, to-2)
+dep(of-4, sort-3)
+advmod(counter-5, of-4)
+purpcl(going-11, counter-5)
+det(downvotes-7, the-6)
+dobj(counter-5, downvotes-7)
+nsubj(going-11, I-9)
+xsubj(add-14, I-9)
+aux(going-11, 'm-10)
+root(ROOT-0, going-11)
+aux(add-14, to-12)
+advmod(add-14, just-13)
+xcomp(going-11, add-14)
+det(argument-16, another-15)
+dobj(add-14, argument-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB really))
+    (VP (VBP love)
+      (NP (PRP it))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNS people))
+          (VP (VB downvote)
+            (PP (IN without)
+              (NP (DT a) (NN reason)))
+            (: ...)
+            (ADVP (RB not))))))
+    (. !)))
+
+nsubj(love-3, I-1)
+advmod(love-3, really-2)
+root(ROOT-0, love-3)
+dobj(love-3, it-4)
+advmod(downvote-7, when-5)
+nsubj(downvote-7, people-6)
+advcl(love-3, downvote-7)
+det(reason-10, a-9)
+prep_without(downvote-7, reason-10)
+neg(downvote-7, not-12)
+
+(ROOT
+  (S
+    (ADVP (RB Seriously))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (VP (VBG going)
+            (S
+              (VP (TO to)
+                (VP (VB downvote)
+                  (NP (DT an) (NN argument))
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP disagree)
+                        (PP (IN with))))))))))))
+    (, ,)
+    (VP (VBP say)
+      (ADVP (RB so)))
+    (. !)))
+
+advmod(say-16, Seriously-1)
+mark(going-6, if-3)
+nsubj(going-6, you-4)
+xsubj(downvote-8, you-4)
+aux(going-6, 're-5)
+dep(say-16, going-6)
+aux(downvote-8, to-7)
+xcomp(going-6, downvote-8)
+det(argument-10, an-9)
+dobj(downvote-8, argument-10)
+complm(disagree-13, that-11)
+nsubj(disagree-13, you-12)
+ccomp(downvote-8, disagree-13)
+prep(disagree-13, with-14)
+root(ROOT-0, say-16)
+advmod(say-16, so-17)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (NP (JJ bad) (NN grammar)))))
+    (, ,)
+    (NP (WDT which))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (JJ rare)
+          (PP (IN for)
+            (NP (PRP me))))
+        (, ,)
+        (ADJP
+          (ADJP (RB then) (JJ fine))
+          (PRN (-LRB- -LRB-)
+            (CC and)
+            (FRAG (RB not)
+              (ADVP (RB just)
+                (NP (CD one) (JJ misspelled) (NN word))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+mark(grammar-5, If-1)
+nsubj(grammar-5, it-2)
+cop(grammar-5, 's-3)
+amod(grammar-5, bad-4)
+advcl(rare-9, grammar-5)
+nsubj(rare-9, which-7)
+cop(rare-9, is-8)
+root(ROOT-0, rare-9)
+prep_for(rare-9, me-11)
+advmod(fine-14, then-13)
+dep(rare-9, fine-14)
+dep(fine-14, and-16)
+dep(and-16, not-17)
+dep(not-17, just-18)
+num(word-21, one-19)
+amod(word-21, misspelled-20)
+pobj(just-18, word-21)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (JJ legitimate) (NN argument))
+          (PP (IN with)
+            (NP
+              (NP (DT no) (NNS misspellings))
+              (CC or)
+              (NP (JJ grammatical) (NNS errors)))))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP (DT NO) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB downvote)
+                (NP (PRP it))))))))
+    (. .)))
+
+nsubj(argument-5, This-1)
+cop(argument-5, is-2)
+det(argument-5, a-3)
+amod(argument-5, legitimate-4)
+root(ROOT-0, argument-5)
+det(misspellings-8, no-7)
+prep_with(argument-5, misspellings-8)
+amod(errors-11, grammatical-10)
+prep_with(argument-5, errors-11)
+conj_or(misspellings-8, errors-11)
+expl(is-14, there-13)
+conj_and(argument-5, is-14)
+det(right-16, NO-15)
+nsubj(is-14, right-16)
+aux(downvote-18, to-17)
+infmod(right-16, downvote-18)
+dobj(downvote-18, it-19)
+

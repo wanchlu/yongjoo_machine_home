@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP
+      (VP (VBD became)
+        (ADJP (JJ legal)
+          (PP (IN in)
+            (NP (NNP America))))
+        (PP (IN in)
+          (NP (DT the) (NN 1800s))))
+      (CC and)
+      (VP (VBD was)
+        (ADJP (VBN banned)
+          (SBAR
+            (S
+              (VP (VBD became)
+                (ADJP (JJ illegal))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NNPS Americans))
+                    (VP (VBD got)
+                      (NP (PRP$ their) (NNS consciences))
+                      (ADVP (RB back))
+                      (PP (IN through)
+                        (NP (DT a) (JJ spiritual) (NN revival))))))))))
+        (PP (IN across)
+          (NP (DT the) (NN nation)))))
+    (. .)))
+
+nsubj(legal-3, Abortion-1)
+nsubjpass(banned-11, Abortion-1)
+cop(legal-3, became-2)
+root(ROOT-0, legal-3)
+prep_in(legal-3, America-5)
+det(1800s-8, the-7)
+prep_in(legal-3, 1800s-8)
+auxpass(banned-11, was-10)
+conj_and(legal-3, banned-11)
+cop(illegal-13, became-12)
+dep(banned-11, illegal-13)
+advmod(got-16, when-14)
+nsubj(got-16, Americans-15)
+advcl(illegal-13, got-16)
+poss(consciences-18, their-17)
+dobj(got-16, consciences-18)
+advmod(got-16, back-19)
+det(revival-23, a-21)
+amod(revival-23, spiritual-22)
+prep_through(got-16, revival-23)
+det(nation-26, the-25)
+prep_across(banned-11, nation-26)
+

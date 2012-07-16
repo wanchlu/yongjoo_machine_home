@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN fetus))
+      (VP (VBZ causes)
+        (NP (JJ physical) (NN pain))))
+    (: ;)
+    (S
+      (NP (DT the) (NN woman))
+      (VP (VBZ has)
+        (NP (DT a) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB self-defense)))))))
+    (. .)))
+
+det(fetus-2, The-1)
+nsubj(causes-3, fetus-2)
+root(ROOT-0, causes-3)
+amod(pain-5, physical-4)
+dobj(causes-3, pain-5)
+det(woman-8, the-7)
+nsubj(has-9, woman-8)
+parataxis(causes-3, has-9)
+det(right-11, a-10)
+dobj(has-9, right-11)
+aux(self-defense-13, to-12)
+infmod(right-11, self-defense-13)
+
+(ROOT
+  (S
+    (NP (DT The) (NN fetus))
+    (VP (VBZ causes)
+      (UCP
+        (NP (NN sickness))
+        (, ,)
+        (NP (NN discomfort))
+        (, ,)
+        (CC and)
+        (PRN (CC and)
+          (NP
+            (NP (JJ extreme) (NN pain))
+            (PP (TO to)
+              (NP (DT a) (NN woman)))))
+        (PP (IN during)
+          (NP (PRP$ her) (NN pregnancy)
+            (CC and)
+            (NN labor)))))
+    (. .)))
+
+det(fetus-2, The-1)
+nsubj(causes-3, fetus-2)
+root(ROOT-0, causes-3)
+dobj(causes-3, sickness-4)
+appos(sickness-4, discomfort-6)
+dep(pain-11, and-9)
+amod(pain-11, extreme-10)
+dobj(causes-3, pain-11)
+conj_and(sickness-4, pain-11)
+det(woman-14, a-13)
+prep_to(pain-11, woman-14)
+poss(pregnancy-17, her-16)
+prep_during(pain-11, pregnancy-17)
+prep_during(pain-11, labor-19)
+conj_and(pregnancy-17, labor-19)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is) (, ,)
+      (ADVP (RB therefore))
+      (, ,)
+      (ADJP (JJ justifiable)
+        (PP (IN for)
+          (NP (DT a) (NN woman))))
+      (S
+        (VP (TO to)
+          (VP (VB pursue)
+            (NP
+              (NP (DT an) (NN abortion))
+              (PP (IN in)
+                (NP (NN self-defense))))))))
+    (. .)))
+
+nsubj(justifiable-6, It-1)
+xsubj(pursue-11, It-1)
+cop(justifiable-6, is-2)
+advmod(justifiable-6, therefore-4)
+root(ROOT-0, justifiable-6)
+det(woman-9, a-8)
+prep_for(justifiable-6, woman-9)
+aux(pursue-11, to-10)
+xcomp(justifiable-6, pursue-11)
+det(abortion-13, an-12)
+dobj(pursue-11, abortion-13)
+prep_in(abortion-13, self-defense-15)
+

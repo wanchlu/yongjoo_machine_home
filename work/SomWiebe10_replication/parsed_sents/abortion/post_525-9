@@ -1,0 +1,42 @@
+(ROOT
+  (S (CC Either)
+    (S
+      (NP (PRP you))
+      (VP (VBP are)
+        (ADJP (JJ free))
+        (PRN (-LRB- -LRB-)
+          (ADVP (IN in)
+            (ADVP (RB so) (RB far))
+            (PP (IN as)
+              (NP
+                (NP (DT the) (NN use))
+                (PP (IN of)
+                  (NP
+                    (NP (PRP$ your) (NN body))
+                    (PP (IN by)
+                      (NP (NNS others))))))))
+          (-RRB- -RRB-))))
+    (, ,)
+    (CC or)
+    (S
+      (NP (PRP you))
+      (VP (VBP are)
+        (ADJP (JJ unfree))))
+    (. .)))
+
+preconj(free-4, Either-1)
+nsubj(free-4, you-2)
+cop(free-4, are-3)
+root(ROOT-0, free-4)
+dep(far-8, in-6)
+advmod(far-8, so-7)
+dep(free-4, far-8)
+det(use-11, the-10)
+prep_as(far-8, use-11)
+poss(body-14, your-13)
+prep_of(use-11, body-14)
+prep_by(body-14, others-16)
+nsubj(unfree-22, you-20)
+cop(unfree-22, are-21)
+conj_or(free-4, unfree-22)
+

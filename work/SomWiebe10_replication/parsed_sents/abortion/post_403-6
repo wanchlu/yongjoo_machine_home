@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ actual) (NN childbirth)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNS laws))
+      (PP (IN of)
+        (NP (NN nature))))
+    (VP (VB induce)
+      (NP
+        (NP (DT a) (JJ biological) (NN process))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ expels)
+              (SBAR
+                (S
+                  (NP (DT an) (NN organism))
+                  (ADVP (RB fully))
+                  (VP (VBD developed)
+                    (S
+                      (VP (TO to)
+                        (VP (VB function)
+                          (ADVP (RB autonomously))
+                          (PP (IN in)
+                            (NP (DT a) (JJ metaphysical) (NN sense))))))))))))))
+    (. .)))
+
+amod(childbirth-3, actual-2)
+prep_in(induce-9, childbirth-3)
+det(laws-6, the-5)
+nsubj(induce-9, laws-6)
+prep_of(laws-6, nature-8)
+root(ROOT-0, induce-9)
+det(process-12, a-10)
+amod(process-12, biological-11)
+dobj(induce-9, process-12)
+nsubj(expels-14, process-12)
+rcmod(process-12, expels-14)
+det(organism-16, an-15)
+nsubj(developed-18, organism-16)
+xsubj(function-20, organism-16)
+advmod(developed-18, fully-17)
+ccomp(expels-14, developed-18)
+aux(function-20, to-19)
+xcomp(developed-18, function-20)
+advmod(function-20, autonomously-21)
+det(sense-25, a-23)
+amod(sense-25, metaphysical-24)
+prep_in(function-20, sense-25)
+

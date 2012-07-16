@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (ADVP (RB far)
+          (PP (IN as)
+            (NP
+              (NP (NN evolution))
+              (, ,)
+              (NP (NN god))
+              (, ,)
+              (CC and)
+              (NP
+                (NP (DT the) (NN creation))
+                (PP (IN of)
+                  (NP (NN man)))))))
+        (VP (VBZ is)
+          (ADJP (JJ concerned)))))
+    (, ,)
+    (NP (RB maybe) (NN evolution))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN explanation))
+        (PP (IN of)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (VP (VB and)
+                (FRAG
+                  (WHADVP (RB not) (WRB why)))))))))
+    (. .)))
+
+mark(concerned-14, As-1)
+advmod(concerned-14, far-2)
+prep_as(far-2, evolution-4)
+prep_as(far-2, god-6)
+conj_and(evolution-4, god-6)
+det(creation-10, the-9)
+prep_as(far-2, creation-10)
+conj_and(evolution-4, creation-10)
+prep_of(creation-10, man-12)
+cop(concerned-14, is-13)
+advcl(explanation-20, concerned-14)
+advmod(evolution-17, maybe-16)
+nsubj(explanation-20, evolution-17)
+cop(explanation-20, is-18)
+det(explanation-20, an-19)
+root(ROOT-0, explanation-20)
+advmod(and-23, how-22)
+prepc_of(explanation-20, and-23)
+dep(why-25, not-24)
+dep(and-23, why-25)
+

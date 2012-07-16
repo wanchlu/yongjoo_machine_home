@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Children))
+      (VP (VBN raised)
+        (PP (IN by)
+          (NP (NNS homosexuals)))))
+    (VP (MD may)
+      (VP (VB become)
+        (NP (JJR more) (NN tolerant) (NNS individuals))))
+    (. .)))
+
+nsubj(individuals-9, Children-1)
+partmod(Children-1, raised-2)
+agent(raised-2, homosexuals-4)
+aux(individuals-9, may-5)
+cop(individuals-9, become-6)
+amod(individuals-9, more-7)
+nn(individuals-9, tolerant-8)
+root(ROOT-0, individuals-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP American) (NNP Academy))
+      (PP (IN of)
+        (NP
+          (NP (NNP Pediatrics))
+          (VP (`` ``) (VBG growing)
+            (PRT (RP up))
+            (PP (IN with)
+              (NP
+                (NP (NNS parents))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP are)
+                      (ADJP (JJ lesbian)
+                        (CC or)
+                        (JJ gay)))))))))))
+    (VP (MD may)
+      (VP (VB confer)
+        (NP (DT some) (NNS advantages))
+        (PP (TO to)
+          (NP (NNS children)))))
+    (. .)))
+
+nn(Academy-2, American-1)
+nsubj(confer-16, Academy-2)
+prep_of(Academy-2, Pediatrics-4)
+partmod(Pediatrics-4, growing-6)
+prt(growing-6, up-7)
+prep_with(growing-6, parents-9)
+nsubj(lesbian-12, parents-9)
+nsubj(gay-14, parents-9)
+cop(lesbian-12, are-11)
+rcmod(parents-9, lesbian-12)
+rcmod(parents-9, gay-14)
+conj_or(lesbian-12, gay-14)
+aux(confer-16, may-15)
+root(ROOT-0, confer-16)
+det(advantages-18, some-17)
+dobj(confer-16, advantages-18)
+prep_to(confer-16, children-20)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN described)
+          (PP (RB as)
+            (ADJP
+              (ADJP (RBR more) (JJ tolerant))
+              (PP (IN of)
+                (NP (NN diversity))))
+            (, ,) ('' '')))))))
+
+nsubjpass(described-4, They-1)
+aux(described-4, have-2)
+auxpass(described-4, been-3)
+root(ROOT-0, described-4)
+prep(described-4, as-5)
+advmod(tolerant-7, more-6)
+pobj(as-5, tolerant-7)
+prep_of(tolerant-7, diversity-9)
+

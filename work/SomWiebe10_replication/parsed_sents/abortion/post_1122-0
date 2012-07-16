@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (RB yes) (NN i))
+    (VP (VBP agree)
+      (SBAR (IN that)
+        (S
+          (S
+            (NP (NN abstinence))
+            (VP (VBZ is)
+              (NP
+                (ADJP (CD 100) (NN %))
+                (JJ absolute) (NN protection))))
+          (CC but)
+          (S
+            (NP (FW i))
+            (ADVP (RB still))
+            (VP (VBP await)
+              (NP
+                (NP (PRP$ your) (NN explanation))
+                (PP (IN of)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP (PRP you))
+                      (VP (MD would)
+                        (VP (VB enforce)
+                          (NP (PDT such) (DT a) (NN policy)))))))))))))))
+
+advmod(i-2, yes-1)
+nsubj(agree-3, i-2)
+root(ROOT-0, agree-3)
+complm(protection-10, that-4)
+nsubj(protection-10, abstinence-5)
+cop(protection-10, is-6)
+number(%-8, 100-7)
+amod(protection-10, %-8)
+amod(protection-10, absolute-9)
+ccomp(agree-3, protection-10)
+nsubj(await-14, i-12)
+advmod(await-14, still-13)
+ccomp(agree-3, await-14)
+conj_but(protection-10, await-14)
+poss(explanation-16, your-15)
+dobj(await-14, explanation-16)
+advmod(enforce-21, how-18)
+nsubj(enforce-21, you-19)
+aux(enforce-21, would-20)
+prepc_of(explanation-16, enforce-21)
+predet(policy-24, such-22)
+det(policy-24, a-23)
+dobj(enforce-21, policy-24)
+

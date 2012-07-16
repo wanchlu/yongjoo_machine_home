@@ -1,0 +1,63 @@
+(ROOT
+  (NP
+    (NP
+      (QP (CD Romans) (CD 1:18))
+      (JJ -25) (NNS Romans))
+    (NP
+      (NP (CD 1:25))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP
+            (VP (VBD exchanged)
+              (NP
+                (NP (DT the) (NN truth))
+                (PP (IN of)
+                  (NP (NNP God))))
+              (PP (IN for)
+                (NP (DT the) (NN lie))))
+            (, ,)
+            (CC and)
+            (VP (VBD worshiped)
+              (CC and)
+              (VBD served)
+              (NP (DT the) (NN creature))
+              (PP (RB rather) (IN than)
+                (NP
+                  (NP (DT the) (NNP Creator))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ is)
+                        (VP (VBN blessed)
+                          (ADVP (RB forever)))))))))))))
+    (. .)))
+
+number(1:18-2, Romans-1)
+num(Romans-4, 1:18-2)
+amod(Romans-4, -25-3)
+root(ROOT-0, Romans-4)
+dep(Romans-4, 1:25-5)
+nsubj(exchanged-7, 1:25-5)
+nsubj(worshiped-17, 1:25-5)
+rcmod(1:25-5, exchanged-7)
+det(truth-9, the-8)
+dobj(exchanged-7, truth-9)
+prep_of(truth-9, God-11)
+det(lie-14, the-13)
+prep_for(exchanged-7, lie-14)
+rcmod(1:25-5, worshiped-17)
+conj_and(exchanged-7, worshiped-17)
+conj_and(exchanged-7, served-19)
+conj_and(worshiped-17, served-19)
+det(creature-21, the-20)
+dobj(worshiped-17, creature-21)
+advmod(worshiped-17, rather-22)
+det(Creator-25, the-24)
+prep_than(worshiped-17, Creator-25)
+nsubjpass(blessed-29, Creator-25)
+auxpass(blessed-29, is-28)
+rcmod(Creator-25, blessed-29)
+advmod(blessed-29, forever-30)
+

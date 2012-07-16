@@ -1,0 +1,325 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ defines)
+        (NP (DT a) (NN parent))))
+    (. ?)))
+
+nsubj(defines-2, What-1)
+root(ROOT-0, defines-2)
+det(parent-4, a-3)
+dobj(defines-2, parent-4)
+
+(ROOT
+  (NP (DT The) (NN person)
+    (SBAR
+      (WHNP (WP who))
+      (S
+        (VP (VBD gave)
+          (NP
+            (NP (DT an) (NN egg))
+            (CC and)
+            (NP
+              (NP (DT the) (NN person))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD gave)
+                    (NP (DT the) (NN sperm))))))))))
+    (. ?)))
+
+det(person-2, The-1)
+root(ROOT-0, person-2)
+nsubj(gave-4, who-3)
+ccomp(person-2, gave-4)
+det(egg-6, an-5)
+dobj(gave-4, egg-6)
+det(person-9, the-8)
+dobj(gave-4, person-9)
+conj_and(egg-6, person-9)
+nsubj(gave-11, person-9)
+rcmod(person-9, gave-11)
+det(sperm-13, the-12)
+dobj(gave-11, sperm-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (NP
+          (NP (NNS cousins))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP
+                (VP (VBP are)
+                  (VP (VBN adopted)))
+                (CC and)
+                (VP (VBP are)
+                  (ADJP (RB perfectly) (JJ normal)
+                    (CC and)
+                    (JJ healthy)))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (NP (DT those) (NNS friends))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD spoke)
+              (PP (IN of)
+                (PP (IN before)
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (ADVP (RB just))
+                      (VP (VBD adopted)
+                        (ADVP
+                          (NP
+                            (QP (JJR less) (IN than) (DT a))
+                            (NN month))
+                          (RB ago))))))))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+ccomp(have-15, have-2)
+dobj(have-2, cousins-3)
+nsubjpass(adopted-6, cousins-3)
+nsubj(normal-10, cousins-3)
+auxpass(adopted-6, are-5)
+rcmod(cousins-3, adopted-6)
+cop(normal-10, are-8)
+advmod(normal-10, perfectly-9)
+rcmod(cousins-3, normal-10)
+conj_and(adopted-6, normal-10)
+conj_and(adopted-6, healthy-12)
+conj_and(normal-10, healthy-12)
+nsubj(have-15, I-14)
+root(ROOT-0, have-15)
+det(friends-17, those-16)
+dobj(have-15, friends-17)
+dobj(spoke-19, friends-17)
+nsubj(spoke-19, I-18)
+rcmod(friends-17, spoke-19)
+prep(spoke-19, of-20)
+pcomp(of-20, before-21)
+nsubj(adopted-24, who-22)
+advmod(adopted-24, just-23)
+prepc_before(of-20, adopted-24)
+mwe(than-26, less-25)
+quantmod(a-27, than-26)
+num(month-28, a-27)
+npadvmod(ago-29, month-28)
+advmod(adopted-24, ago-29)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS people))
+    (VP (VBP are)
+      (NP
+        (NP (DT all) (NNS parents))
+        (ADVP (RB regardless)
+          (PP (IN of)
+            (NP (DT the) (NN fact)))))
+      (SBAR (IN that)
+        (S
+          (NP (PRP they))
+          (VP (VBD did) (RB not)
+            (VP (VB give)
+              (NP (NN birth))
+              (PP (TO to)
+                (NP (DT these) (NNS children))))))))
+    (. !)))
+
+det(people-2, These-1)
+nsubj(parents-5, people-2)
+cop(parents-5, are-3)
+det(parents-5, all-4)
+root(ROOT-0, parents-5)
+det(fact-9, the-8)
+prep_regardless_of(parents-5, fact-9)
+complm(give-14, that-10)
+nsubj(give-14, they-11)
+aux(give-14, did-12)
+neg(give-14, not-13)
+ccomp(parents-5, give-14)
+dobj(give-14, birth-15)
+det(children-18, these-17)
+prep_to(give-14, children-18)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RB no) (JJ different))
+        (SBAR (IN if)
+          (S
+            (NP (CD 2) (NNS gays))
+            (VP (VBD adapted))))))
+    (. .)))
+
+nsubj(different-5, This-1)
+aux(different-5, would-2)
+cop(different-5, be-3)
+advmod(different-5, no-4)
+root(ROOT-0, different-5)
+mark(adapted-9, if-6)
+num(gays-8, 2-7)
+nsubj(adapted-9, gays-8)
+advcl(different-5, adapted-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (S
+            (VP (VBG being)
+              (NP (DT a) (NN parent))))
+          (VP (VBZ is)
+            (ADJP
+              (ADJP (JJR more))
+              (PP (IN about)
+                (S
+                  (VP
+                    (VP (VBG loving)
+                      (CC and)
+                      (VBG supporting)
+                      (NP (DT a) (NN child)))
+                    (CONJP (IN than) (RB just))
+                    (VP (VBG knocking)
+                      (NP (DT some) (NN woman))
+                      (PRT (RP up)))))))))))
+    (. !)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(more-8, that-3)
+cop(parent-6, being-4)
+det(parent-6, a-5)
+csubj(more-8, parent-6)
+cop(more-8, is-7)
+ccomp(think-2, more-8)
+prepc_about(more-8, loving-10)
+prepc_about(more-8, supporting-12)
+conj_and(loving-10, supporting-12)
+det(child-14, a-13)
+dobj(loving-10, child-14)
+prepc_about(more-8, knocking-17)
+conj_just(loving-10, knocking-17)
+det(woman-19, some-18)
+dobj(knocking-17, woman-19)
+prt(knocking-17, up-20)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS thousands))
+        (PP (IN of)
+          (NP
+            (NP (NNS men))
+            (PP (IN out)
+              (NP (RB there)))))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP
+              (VP (VBP get)
+                (S
+                  (NP (DT a) (NN woman))
+                  (ADJP (JJ pregnant))))
+              (CC but)
+              (VP (VBP have)
+                (NP (NN nothing)
+                  (S
+                    (VP (TO to)
+                      (VP (VB do)
+                        (PP (IN with)
+                          (NP
+                            (NP (DT the) (NN child) (POS 's))
+                            (NN life)))))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, thousands-3)
+nsubj(get-9, thousands-3)
+nsubj(have-14, thousands-3)
+prep_of(thousands-3, men-5)
+prep(men-5, out-6)
+pobj(out-6, there-7)
+rcmod(thousands-3, get-9)
+det(woman-11, a-10)
+nsubj(pregnant-12, woman-11)
+xcomp(get-9, pregnant-12)
+rcmod(thousands-3, have-14)
+conj_but(get-9, have-14)
+dobj(have-14, nothing-15)
+aux(do-17, to-16)
+infmod(nothing-15, do-17)
+det(child-20, the-19)
+poss(life-22, child-20)
+prep_with(do-17, life-22)
+
+(ROOT
+  (FRAG
+    (NP (DT The) (NN way)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (VP (VBG defining)
+              (S
+                (VP (VBG being)
+                  (NP
+                    (NP (DT a) (NN parent))
+                    (SBAR
+                      (S
+                        (NP (DT this) (NN man))
+                        (VP (MD would)
+                          (VP (VB be)
+                            (NP (DT a) (NN father))))))))))))))
+    (: ...)
+    (VP
+      (ADVP (RB yet))
+      (VBZ has)
+      (NP (RB not)
+        (S
+          (VP (VBG doing)
+            (NP
+              (NP (DT a) (JJ damn) (NN thing))
+              (PP (JJ other) (IN than)
+                (NP (NNP ejaculate))))))))
+    (. !)))
+
+det(way-2, The-1)
+root(ROOT-0, way-2)
+nsubj(defining-5, you-3)
+aux(defining-5, are-4)
+ccomp(way-2, defining-5)
+cop(parent-8, being-6)
+det(parent-8, a-7)
+xcomp(defining-5, parent-8)
+det(man-10, this-9)
+nsubj(father-14, man-10)
+aux(father-14, would-11)
+cop(father-14, be-12)
+det(father-14, a-13)
+rcmod(parent-8, father-14)
+advmod(has-17, yet-16)
+dep(way-2, has-17)
+dobj(has-17, not-18)
+dep(not-18, doing-19)
+det(thing-22, a-20)
+amod(thing-22, damn-21)
+dobj(doing-19, thing-22)
+dep(thing-22, other-23)
+prep_than(thing-22, ejaculate-25)
+

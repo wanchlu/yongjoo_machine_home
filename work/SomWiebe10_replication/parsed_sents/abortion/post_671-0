@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Let) (POS 's))
+      (VP (VBP face)
+        (NP (PRP it))))
+    (: :)
+    (S
+      (NP (NN life))
+      (VP
+        (VP (VBD began)
+          (NP
+            (NP (NNS millions))
+            (PP (IN of)
+              (NP
+                (NP (NNS years))
+                (ADVP (IN ago))))))
+        (, ,)
+        (CC and)
+        (VP (VBZ has)
+          (NP
+            (NP (VBN continued) (NNS more-or-less))
+            (ADJP (JJ uninterrupted)
+              (PP (IN since)
+                (NP (RB then))))))))
+    (. .)))
+
+nsubj(face-3, Let-1)
+possessive(Let-1, 's-2)
+root(ROOT-0, face-3)
+dobj(face-3, it-4)
+nsubj(began-7, life-6)
+nsubj(has-14, life-6)
+parataxis(face-3, began-7)
+dobj(began-7, millions-8)
+prep_of(millions-8, years-10)
+advmod(years-10, ago-11)
+parataxis(face-3, has-14)
+conj_and(began-7, has-14)
+amod(more-or-less-16, continued-15)
+dobj(has-14, more-or-less-16)
+amod(more-or-less-16, uninterrupted-17)
+prep(uninterrupted-17, since-18)
+pobj(since-18, then-19)
+

@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (NNS Odds))
+    (VP (VBP are)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (MD will)
+            (VP (VB be)
+              (VP (VBN filled)
+                (PP (IN with)
+                  (NP
+                    (NP (NN guilt)
+                      (CC and)
+                      (NN anguish))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (MD will)
+                          (VP (VB cause)
+                            (NP
+                              (NP (JJR more))
+                              (PP (IN of)
+                                (NP (DT a) (NN hardship))))
+                            (SBAR (IN than)
+                              (S
+                                (NP (DT the) (NN child))
+                                (ADVP (RB ever))
+                                (VP (MD would)
+                                  (VP (VB have)))))))))))))))))
+    (. .)))
+
+nsubj(are-2, Odds-1)
+root(ROOT-0, are-2)
+nsubjpass(filled-6, they-3)
+aux(filled-6, will-4)
+auxpass(filled-6, be-5)
+ccomp(are-2, filled-6)
+prep_with(filled-6, guilt-8)
+nsubj(cause-13, guilt-8)
+prep_with(filled-6, anguish-10)
+conj_and(guilt-8, anguish-10)
+nsubj(cause-13, anguish-10)
+aux(cause-13, will-12)
+rcmod(guilt-8, cause-13)
+dobj(cause-13, more-14)
+det(hardship-17, a-16)
+prep_of(more-14, hardship-17)
+mark(have-23, than-18)
+det(child-20, the-19)
+nsubj(have-23, child-20)
+advmod(have-23, ever-21)
+aux(have-23, would-22)
+advcl(cause-13, have-23)
+

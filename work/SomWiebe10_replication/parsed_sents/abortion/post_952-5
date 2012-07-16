@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (RB Even) (IN if)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is))))
+    (VP (VBD agreed)
+      (PRN (-LRB- -LRB-)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (PRP I))
+            (VP (VBP do)
+              (VP (VB agree)
+                (PP (IN with)
+                  (NP (PRP you)))))))
+        (-RRB- -RRB-))
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (NP (DT a) (JJ human) (NN life))))))
+    (. .)))
+
+advmod(is-4, Even-1)
+dep(is-4, if-2)
+nsubj(is-4, it-3)
+advcl(agreed-5, is-4)
+csubj(agreed-5, is-4)
+root(ROOT-0, agreed-5)
+dobj(agree-10, which-7)
+nsubj(agree-10, I-8)
+aux(agree-10, do-9)
+parataxis(agreed-5, agree-10)
+prep_with(agree-10, you-12)
+complm(life-19, that-14)
+nsubj(life-19, it-15)
+cop(life-19, is-16)
+det(life-19, a-17)
+amod(life-19, human-18)
+ccomp(agreed-5, life-19)
+

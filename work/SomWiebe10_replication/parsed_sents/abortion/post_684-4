@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNS neurobiologists))
+        (VP (VBP study)
+          (NP (JJ neural) (NN development)))))
+    (NP (PRP they))
+    (VP (VBP wait)
+      (PP (IN until)
+        (NP
+          (NP (DT some) (NN point))
+          (PP (IN in)
+            (NP (NN development)))))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT a) (JJ particular) (NN event))
+          (VP (VBZ happens)))))
+    (. .)))
+
+advmod(study-3, When-1)
+nsubj(study-3, neurobiologists-2)
+advcl(wait-7, study-3)
+amod(development-5, neural-4)
+dobj(study-3, development-5)
+nsubj(wait-7, they-6)
+root(ROOT-0, wait-7)
+det(point-10, some-9)
+prep_until(wait-7, point-10)
+prep_in(point-10, development-12)
+advmod(happens-17, when-13)
+det(event-16, a-14)
+amod(event-16, particular-15)
+nsubj(happens-17, event-16)
+advcl(wait-7, happens-17)
+

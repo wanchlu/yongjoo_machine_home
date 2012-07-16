@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ strange))
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT those))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBP say)
+                        (SBAR
+                          (S
+                            (NP (DT the) (JJ federal) (NN government))
+                            (VP (MD should) (RB n't)
+                              (VP (VB rule)
+                                (PP (IN on)
+                                  (NP (DT this) (NN question)))))))))))
+                (VP (VBP want)
+                  (S
+                    (NP (DT the) (NN state) (NN government))
+                    (VP (TO to)
+                      (VP (VB decide)
+                        (NP (DT the)
+                          (ADJP (RB very) (JJ same))
+                          (NN question))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(strange-5, it-3)
+cop(strange-5, is-4)
+ccomp(think-2, strange-5)
+complm(want-19, that-6)
+nsubj(say-9, those-7)
+nsubj(want-19, those-7)
+rcmod(those-7, say-9)
+det(government-12, the-10)
+amod(government-12, federal-11)
+nsubj(rule-15, government-12)
+aux(rule-15, should-13)
+neg(rule-15, n't-14)
+ccomp(say-9, rule-15)
+det(question-18, this-17)
+prep_on(rule-15, question-18)
+ccomp(strange-5, want-19)
+det(government-22, the-20)
+nn(government-22, state-21)
+nsubj(decide-24, government-22)
+aux(decide-24, to-23)
+xcomp(want-19, decide-24)
+det(question-28, the-25)
+advmod(same-27, very-26)
+amod(question-28, same-27)
+dobj(decide-24, question-28)
+

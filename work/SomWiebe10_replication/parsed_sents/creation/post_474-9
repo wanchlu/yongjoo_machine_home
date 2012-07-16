@@ -1,0 +1,61 @@
+(ROOT
+  (S (CC But)
+    (S
+      (NP (PRP they))
+      (ADVP (RB somehow))
+      (VP (VBD failed)
+        (S
+          (VP (TO to)
+            (VP (VB speak))))))
+    (, ,)
+    (CC or)
+    (ADVP (RB perhaps))
+    (S
+      (NP (PRP they))
+      (VP
+        (ADVP (RB just))
+        (VBN whispered)))
+    (. ?)))
+
+nsubj(failed-4, they-2)
+xsubj(speak-6, they-2)
+advmod(failed-4, somehow-3)
+root(ROOT-0, failed-4)
+aux(speak-6, to-5)
+xcomp(failed-4, speak-6)
+advmod(failed-4, perhaps-9)
+conj_or(failed-4, perhaps-9)
+nsubj(whispered-12, they-10)
+advmod(whispered-12, just-11)
+conj_or(failed-4, whispered-12)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP we))
+      (VP (VB give)
+        (NP (NN credence))
+        (PP (TO to)
+          (NP
+            (NP (RB just) (NN anyone))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ makes)
+                  (NP (JJ ill) (JJ supported) (NNS claims)))))))))
+    (. ?)))
+
+advmod(give-4, Why-1)
+aux(give-4, should-2)
+nsubj(give-4, we-3)
+root(ROOT-0, give-4)
+dobj(give-4, credence-5)
+advmod(anyone-8, just-7)
+prep_to(give-4, anyone-8)
+nsubj(makes-10, anyone-8)
+rcmod(anyone-8, makes-10)
+amod(claims-13, ill-11)
+amod(claims-13, supported-12)
+dobj(makes-10, claims-13)
+

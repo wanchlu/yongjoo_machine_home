@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (PP (IN For)
+        (NP (NN example)))
+      (, ,)
+      (NP (PRP we))
+      (VP (MD can)
+        (VP (VB predict)
+          (SBAR (IN that)
+            (S
+              (NP (NNP Tom) (NNP Cruise))
+              (VP (VBZ s)
+                (NP
+                  (NP (JJ next) (NN movie))
+                  (SBAR
+                    (S
+                      (VP (MD will)
+                        (VP (VB be)
+                          (NP (DT an) (NN action) (NN flick)))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP we))
+      (VP (MD can) (RB not)
+        (VP (VB predict)
+          (NP
+            (NP (DT the) (NN plot))
+            (PP (IN of)
+              (NP (DT the) (NN movie))))
+          (SBAR (IN before)
+            (S
+              (NP (PRP he))
+              (VP (VBZ agrees)
+                (PP (TO to)
+                  (NP (DT a) (NN part)))))))))
+    (. .)))
+
+prep_for(predict-6, example-2)
+nsubj(predict-6, we-4)
+aux(predict-6, can-5)
+root(ROOT-0, predict-6)
+complm(movie-12, that-7)
+nn(Cruise-9, Tom-8)
+nsubj(movie-12, Cruise-9)
+cop(movie-12, s-10)
+amod(movie-12, next-11)
+ccomp(predict-6, movie-12)
+aux(flick-17, will-13)
+cop(flick-17, be-14)
+det(flick-17, an-15)
+nn(flick-17, action-16)
+rcmod(movie-12, flick-17)
+nsubj(predict-23, we-20)
+aux(predict-23, can-21)
+neg(predict-23, not-22)
+conj_but(predict-6, predict-23)
+det(plot-25, the-24)
+dobj(predict-23, plot-25)
+det(movie-28, the-27)
+prep_of(plot-25, movie-28)
+mark(agrees-31, before-29)
+nsubj(agrees-31, he-30)
+advcl(predict-23, agrees-31)
+det(part-34, a-33)
+prep_to(agrees-31, part-34)
+

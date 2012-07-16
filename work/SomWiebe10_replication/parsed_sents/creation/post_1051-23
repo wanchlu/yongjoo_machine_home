@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN evidenced)
+        (PP
+          (PP (IN by)
+            (NP
+              (NP (NN ring) (NNS species))
+              (, ,)
+              (NP (NN gene) (NN frequency) (NN change))
+              (, ,)
+              (NP (NNS observations))
+              (CC and)
+              (NP
+                (NP (NNS descriptions))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS populations))
+                    (PP (IN in)
+                      (NP (JJ controlled) (NNS settings))))))))
+          (CC and)
+          (PP (IN in)
+            (NP (NN nature))))))
+    (. .)))
+
+nsubjpass(evidenced-3, it-1)
+nsubjpass(evidenced-3', it-1)
+auxpass(evidenced-3, is-2)
+root(ROOT-0, evidenced-3)
+conj_and(evidenced-3, evidenced-3')
+nn(species-6, ring-5)
+agent(evidenced-3, species-6)
+nn(change-10, gene-8)
+nn(change-10, frequency-9)
+agent(evidenced-3, change-10)
+conj_and(species-6, change-10)
+agent(evidenced-3, observations-12)
+conj_and(species-6, observations-12)
+agent(evidenced-3, descriptions-14)
+conj_and(species-6, descriptions-14)
+prep_of(descriptions-14, populations-16)
+amod(settings-19, controlled-18)
+prep_in(populations-16, settings-19)
+prep_in(evidenced-3', nature-22)
+

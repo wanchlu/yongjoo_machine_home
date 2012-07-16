@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (DT The) (NN following))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS conditions))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD may)
+                  (VP (VB make)
+                    (S
+                      (NP (DT a) (JJ poor) (NN woman))
+                      (ADJP (JJ unable)
+                        (S
+                          (VP (TO to)
+                            (VP (`` ``) (VB choose) ('' '')
+                              (NP (NN anything)))))))))))))
+        (PP (CC but)
+          (NP (DT a) (JJ late) (, ,) (JJ partial) (NN birth) (NN abortion)))))
+    (. .)))
+
+det(following-2, The-1)
+nsubj(list-5, following-2)
+cop(list-5, is-3)
+det(list-5, a-4)
+root(ROOT-0, list-5)
+det(conditions-8, the-7)
+prep_of(list-5, conditions-8)
+nsubj(make-11, conditions-8)
+aux(make-11, may-10)
+rcmod(conditions-8, make-11)
+det(woman-14, a-12)
+amod(woman-14, poor-13)
+nsubj(unable-15, woman-14)
+xcomp(make-11, unable-15)
+aux(choose-18, to-16)
+xcomp(unable-15, choose-18)
+dobj(choose-18, anything-20)
+prep(list-5, but-21)
+det(abortion-27, a-22)
+amod(abortion-27, late-23)
+amod(abortion-27, partial-25)
+nn(abortion-27, birth-26)
+dep(but-21, abortion-27)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (NNP Intelligent) (NNP Design))
+    (VP (VBZ has)
+      (VP (VBN demonstrated)
+        (S
+          (VP (VBG using)
+            (NP (NNS genetics)
+              (CC and)
+              (NNS statistics))
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT the) (NNS chances))
+                  (PP (IN of)
+                    (NP
+                      (NP (RB even) (DT the) (JJS simplest) (NN life))
+                      (ADJP (RB randomly) (JJ occuring)))))
+                (VP (VBP are)
+                  (ADJP (RB too) (JJ small)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (RB statistically) (JJ valid)))))))))))))
+    (. .)))
+
+nn(Design-2, Intelligent-1)
+nsubj(demonstrated-4, Design-2)
+aux(demonstrated-4, has-3)
+root(ROOT-0, demonstrated-4)
+xcomp(demonstrated-4, using-5)
+dobj(using-5, genetics-6)
+dobj(using-5, statistics-8)
+conj_and(genetics-6, statistics-8)
+complm(small-21, that-9)
+det(chances-11, the-10)
+nsubj(small-21, chances-11)
+advmod(life-16, even-13)
+det(life-16, the-14)
+amod(life-16, simplest-15)
+prep_of(chances-11, life-16)
+advmod(occuring-18, randomly-17)
+amod(life-16, occuring-18)
+cop(small-21, are-19)
+advmod(small-21, too-20)
+ccomp(using-5, small-21)
+aux(valid-25, to-22)
+cop(valid-25, be-23)
+advmod(valid-25, statistically-24)
+xcomp(small-21, valid-25)
+

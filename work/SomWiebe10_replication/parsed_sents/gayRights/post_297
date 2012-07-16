@@ -1,0 +1,221 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VB teach)
+        (NP (PRP$ our) (NNS children))
+        (NP (DT the) (JJ same) (NNS things))))
+    (NP (DT any) (NN parent))
+    (VP (VBZ teaches)
+      (NP
+        (ADJP (PRP$ his)
+          (CC or)
+          (PRP$ her))
+        (NNS children)))
+    (. .)))
+
+nsubj(teach-2, We-1)
+dep(teaches-10, teach-2)
+poss(children-4, our-3)
+dep(teach-2, children-4)
+det(things-7, the-5)
+amod(things-7, same-6)
+dobj(teach-2, things-7)
+det(parent-9, any-8)
+nsubj(teaches-10, parent-9)
+root(ROOT-0, teaches-10)
+amod(children-14, his-11)
+conj_or(his-11, her-13)
+poss(his-11, her-13)
+amod(children-14, her-13)
+dobj(teaches-10, children-14)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ seems)
+      (ADJP (RB rather) (JJ obvious)
+        (PP (TO to)
+          (NP (PRP me)))))
+    (. .)))
+
+nsubj(obvious-4, That-1)
+cop(obvious-4, seems-2)
+advmod(obvious-4, rather-3)
+root(ROOT-0, obvious-4)
+prep_to(obvious-4, me-6)
+
+(ROOT
+  (S
+    (ADVP (RB First))
+    (NP (PRP they))
+    (VP (VBP learn)
+      (PP (IN about)
+        (NP (PRP$ their) (JJ own) (NNS bodies))))
+    (. .)))
+
+advmod(learn-3, First-1)
+nsubj(learn-3, they-2)
+root(ROOT-0, learn-3)
+poss(bodies-7, their-5)
+amod(bodies-7, own-6)
+prep_about(learn-3, bodies-7)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP ask)
+      (SBAR
+        (S
+          (NP
+            (NP (NNS questions))
+            (CC and)
+            (NP (DT a) (NN parent)))
+          (VP
+            (VP (VBZ answers)
+              (NP (DT those) (NNS questions))
+              (ADVP (RB honestly)))
+            (, ,)
+            (CC but)
+            (VP
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN level))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN detail))
+                      (ADJP (JJ appropriate)
+                        (PP (TO to)
+                          (NP
+                            (NP (DT the) (NN age))
+                            (PP (IN of)
+                              (NP (DT the) (NN child)))))))))))))))
+    (. .)))
+
+nsubj(ask-2, They-1)
+root(ROOT-0, ask-2)
+nsubj(answers-7, questions-3)
+det(parent-6, a-5)
+conj_and(questions-3, parent-6)
+nsubj(answers-7, parent-6)
+ccomp(ask-2, answers-7)
+det(questions-9, those-8)
+dobj(answers-7, questions-9)
+advmod(answers-7, honestly-10)
+ccomp(ask-2, at-13)
+conj_but(answers-7, at-13)
+det(level-15, the-14)
+pobj(at-13, level-15)
+prep_of(level-15, detail-17)
+amod(detail-17, appropriate-18)
+det(age-21, the-20)
+prep_to(appropriate-18, age-21)
+det(child-24, the-23)
+prep_of(age-21, child-24)
+
+(ROOT
+  (S (RB Then)
+    (NP (PRP they))
+    (VP (VBP notice)
+      (NP
+        (NP (NNS differences))
+        (PP (IN about)
+          (NP
+            (NP (DT the) (JJ other) (NN gender))
+            (PRN (-LRB- -LRB-)
+              (S
+                (PP (IN in)
+                  (NP (PRP$ our) (NN case)))
+                (, ,)
+                (NP (PRP$ our) (NNS daughters))
+                (VP (VBD observed)
+                  (SBAR (IN that)
+                    (S
+                      (NP (DT the) (NN family) (NNS dogs))
+                      (VP (VBD were)
+                        (VP (VBN built)
+                          (NP (DT a) (JJ little))
+                          (ADVP (RB differently))))))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+advmod(notice-3, Then-1)
+nsubj(notice-3, they-2)
+root(ROOT-0, notice-3)
+dobj(notice-3, differences-4)
+det(gender-8, the-6)
+amod(gender-8, other-7)
+prep_about(differences-4, gender-8)
+poss(case-12, our-11)
+prep_in(observed-16, case-12)
+poss(daughters-15, our-14)
+nsubj(observed-16, daughters-15)
+dep(gender-8, observed-16)
+complm(built-22, that-17)
+det(dogs-20, the-18)
+nn(dogs-20, family-19)
+nsubjpass(built-22, dogs-20)
+auxpass(built-22, were-21)
+ccomp(observed-16, built-22)
+det(little-24, a-23)
+dobj(built-22, little-24)
+advmod(built-22, differently-25)
+
+(ROOT
+  (S
+    (NP (DT The) (NN parent))
+    (ADVP (RB again))
+    (VP (VBZ explains)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT the) (NN child))
+          (VP (VBZ has)
+            (VP (VBN observed) (, ,)
+              (PP (IN at)
+                (NP
+                  (NP (DT a) (NN level))
+                  (ADJP (JJ appropriate)
+                    (PP (TO to)
+                      (NP
+                        (NP (DT the) (NN child) (POS 's))
+                        (NN age)
+                        (CC and)
+                        (NNS questions)))))))))))
+    (. .)))
+
+det(parent-2, The-1)
+nsubj(explains-4, parent-2)
+advmod(explains-4, again-3)
+root(ROOT-0, explains-4)
+dobj(observed-9, what-5)
+det(child-7, the-6)
+nsubj(observed-9, child-7)
+aux(observed-9, has-8)
+ccomp(explains-4, observed-9)
+det(level-13, a-12)
+prep_at(observed-9, level-13)
+amod(level-13, appropriate-14)
+det(child-17, the-16)
+poss(age-19, child-17)
+prep_to(appropriate-14, age-19)
+prep_to(appropriate-14, questions-21)
+conj_and(age-19, questions-21)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADVP (NN nothing))
+      (ADJP (RB particularly) (JJ difficult))
+      (, ,)
+      (ADVP (RB here)))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+advmod(is-2, nothing-3)
+advmod(difficult-5, particularly-4)
+acomp(is-2, difficult-5)
+advmod(is-2, here-7)
+

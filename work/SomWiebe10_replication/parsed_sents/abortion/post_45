@@ -1,0 +1,235 @@
+(ROOT
+  (S
+    (NP (JJ Legal) (NNS abortions))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RB much) (JJR safer))
+        (PP (IN than)
+          (NP (NN black-market) (NNS abortions)))))
+    (. .)))
+
+amod(abortions-2, Legal-1)
+nsubj(safer-5, abortions-2)
+cop(safer-5, are-3)
+advmod(safer-5, much-4)
+root(ROOT-0, safer-5)
+nn(abortions-8, black-market-7)
+prep_than(safer-5, abortions-8)
+
+(ROOT
+  (NP
+    (NP (NNP Mary) (NNP Calderone))
+    (, ,)
+    (NP
+      (NP (NN founder))
+      (PP (IN of)
+        (NP
+          (NP (NNS SIECUS))
+          (CC and)
+          (NP
+            (NP (JJ medical) (NN director))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNP Planned) (NNP Parenthood) (NNP Federation))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP America))
+                    (, ,)
+                    (NP (`` ``)
+                      (NP
+                        (NP (JJ Illegal) (NN abortion))
+                        (PP (IN as)
+                          (NP (DT a) (JJ public) (NN health) (NN problem))))
+                      (, ,) ('' '')
+                      (NP
+                        (NP (NNP American) (NNP Journal))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNP Public) (NNP Health))
+                            (, ,)
+                            (NP
+                              (NP (NNP July) (CD 1960))
+                              (SBAR (`` ``)
+                                (S
+                                  (NP
+                                    (NP (CD 90) (NN %))
+                                    (PP (IN of)
+                                      (NP (JJ illegal) (NNS abortions))))
+                                  (VP (VBP are)
+                                    (VP (VBG being)
+                                      (VP (VBN done)
+                                        (PP (IN by)
+                                          (NP (NNS physicians)))))))))))))))))))))
+    (. .)))
+
+nn(Calderone-2, Mary-1)
+root(ROOT-0, Calderone-2)
+appos(Calderone-2, founder-4)
+prep_of(founder-4, SIECUS-6)
+amod(director-9, medical-8)
+prep_of(founder-4, director-9)
+conj_and(SIECUS-6, director-9)
+det(Federation-14, the-11)
+nn(Federation-14, Planned-12)
+nn(Federation-14, Parenthood-13)
+prep_of(director-9, Federation-14)
+prep_of(Federation-14, America-16)
+amod(abortion-20, Illegal-19)
+appos(America-16, abortion-20)
+det(problem-25, a-22)
+amod(problem-25, public-23)
+nn(problem-25, health-24)
+prep_as(abortion-20, problem-25)
+nn(Journal-29, American-28)
+dep(abortion-20, Journal-29)
+nn(Health-32, Public-31)
+prep_of(Journal-29, Health-32)
+appos(Health-32, July-34)
+num(July-34, 1960-35)
+num(%-38, 90-37)
+nsubjpass(done-44, %-38)
+amod(abortions-41, illegal-40)
+prep_of(%-38, abortions-41)
+aux(done-44, are-42)
+auxpass(done-44, being-43)
+dep(July-34, done-44)
+agent(done-44, physicians-46)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Call)
+        (NP (PRP them))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP
+              (VP (MD will))
+              (, ,)
+              (NP
+                (NP (NNS abortionists))
+                (CC or)
+                (NP (NN anything) (RB else))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADVP (RB still))
+      (NP
+        (NP (NNS physicians))
+        (, ,)
+        (ADJP (JJ trained)
+          (PP (IN as)
+            (NP (JJ such))))
+        (: ;)))
+    (: ...)))
+
+ccomp(physicians-15, Call-1)
+dobj(Call-1, them-2)
+dobj(will-5, what-3)
+nsubj(will-5, you-4)
+dep(Call-1, will-5)
+dobj(will-5, abortionists-7)
+dobj(will-5, anything-9)
+conj_or(abortionists-7, anything-9)
+advmod(anything-9, else-10)
+nsubj(physicians-15, they-12)
+cop(physicians-15, are-13)
+advmod(physicians-15, still-14)
+root(ROOT-0, physicians-15)
+amod(physicians-15, trained-17)
+prep_such_as(trained-17, such-19)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD must)
+      (VP (VB do)
+        (NP (DT a)
+          (ADJP (RB pretty) (JJ good))
+          (NN job))
+        (SBAR (IN if)
+          (S
+            (NP (DT the) (NN death) (NN rate))
+            (VP (VBZ is)
+              (ADJP (RB as) (JJ low))
+              (SBAR (IN as)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)))))))))
+    (: ...)))
+
+nsubj(do-3, They-1)
+aux(do-3, must-2)
+root(ROOT-0, do-3)
+det(job-7, a-4)
+advmod(good-6, pretty-5)
+amod(job-7, good-6)
+dobj(do-3, job-7)
+mark(low-14, if-8)
+det(rate-11, the-9)
+nn(rate-11, death-10)
+nsubj(low-14, rate-11)
+cop(low-14, is-12)
+advmod(low-14, as-13)
+advcl(do-3, low-14)
+mark(is-17, as-15)
+nsubj(is-17, it-16)
+advcl(low-14, is-17)
+
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (PRN (, ,)
+      (SBAR (IN whether)
+        (FRAG
+          (ADJP (JJ therapeutic)
+            (CC or)
+            (JJ illegal))))
+      (, ,))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (DT the) (JJ main)
+          (ADJP
+            (ADVP (RB no) (RBR longer))
+            (JJ dangerous))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (VP (VBG being)
+              (VP (VBN done)
+                (ADVP (RB well))
+                (PP (IN by)
+                  (NP (NNS physicians)))))))))
+    (. .)))
+
+nsubj(is-8, Abortion-1)
+dep(therapeutic-4, whether-3)
+parataxis(is-8, therapeutic-4)
+conj_or(therapeutic-4, illegal-6)
+parataxis(is-8, illegal-6)
+root(ROOT-0, is-8)
+det(dangerous-14, the-10)
+amod(dangerous-14, main-11)
+advmod(longer-13, no-12)
+advmod(dangerous-14, longer-13)
+prep_in(is-8, dangerous-14)
+mark(done-20, because-16)
+nsubjpass(done-20, it-17)
+aux(done-20, is-18)
+auxpass(done-20, being-19)
+advcl(is-8, done-20)
+advmod(done-20, well-21)
+agent(done-20, physicians-23)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 11))
+      (-RRB- -RRB-))))
+
+appos(''-1, 11-3)
+

@@ -1,0 +1,86 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP LivvyScientists))
+      (VP (MD may) (RB not)
+        (ADVP (RB yet))
+        (VP (VB have)
+          (VP (VBN built)
+            (NP
+              (NP (DT a) (JJ perfect) (NN picture))
+              (PP (IN of)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (NN life))
+                    (VP (VBD evolved))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN theory))
+      (ADVP (RB accurately))
+      (VP (VBZ describes)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP we))
+            (VP
+              (VP (VBZ observer))
+              (, ,)
+              (CC and)
+              (VP (VBZ allows)
+                (PP (IN for)
+                  (NP (NNS predictions)))
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN made)
+                        (S
+                          (VP (VBG regarding)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (VP (MD will)
+                                  (VP (VB occur)
+                                    (PP (TO to)
+                                      (NP
+                                        (NP (DT a) (NN species))
+                                        (PP (IN over)
+                                          (NP (NN time)))))))))))))))))))))
+    (. .)))
+
+nsubj(built-7, LivvyScientists-2)
+aux(built-7, may-3)
+neg(built-7, not-4)
+advmod(built-7, yet-5)
+aux(built-7, have-6)
+root(ROOT-0, built-7)
+det(picture-10, a-8)
+amod(picture-10, perfect-9)
+dobj(built-7, picture-10)
+advmod(evolved-14, how-12)
+nsubj(evolved-14, life-13)
+prepc_of(picture-10, evolved-14)
+det(theory-18, the-17)
+nsubj(describes-20, theory-18)
+advmod(describes-20, accurately-19)
+conj_but(built-7, describes-20)
+dobj(observer-23, what-21)
+nsubj(observer-23, we-22)
+nsubj(allows-26, we-22)
+xsubj(made-31, we-22)
+ccomp(describes-20, observer-23)
+ccomp(describes-20, allows-26)
+conj_and(observer-23, allows-26)
+prep_for(allows-26, predictions-28)
+aux(made-31, to-29)
+auxpass(made-31, be-30)
+xcomp(allows-26, made-31)
+xcomp(made-31, regarding-32)
+nsubj(occur-35, what-33)
+aux(occur-35, will-34)
+ccomp(regarding-32, occur-35)
+det(species-38, a-37)
+prep_to(occur-35, species-38)
+prep_over(species-38, time-40)
+

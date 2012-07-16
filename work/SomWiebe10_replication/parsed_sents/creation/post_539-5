@@ -1,0 +1,82 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (`` ``)
+        (NP (DT The) (CD 1978))
+        (NP (NNP Health))
+        (, ,))
+      (VP (VBZ Education)))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP Welfare) (NN survey))
+      (VP (VBD did) (RB not)
+        (VP (VB go)
+          (ADVP (RB far) (RB enough))
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NNS questions))
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP
+                    (VP (VBD posed))
+                    (, ,)
+                    (CC nor)
+                    (VP (VBD did)
+                      (SBAR
+                        (S
+                          (NP (PRP it))
+                          (VP (VBP include)
+                            (NP
+                              (NP (DT the) (NNS opinions))
+                              (PP (IN of)
+                                (NP
+                                  (NP (NNS applicants))
+                                  (, ,)
+                                  (SBAR
+                                    (WHNP (WP who))
+                                    (S
+                                      (VP (MD would)
+                                        (VP (VB be)
+                                          (ADJP (RB better) (VBN placed)
+                                            (S
+                                              (VP (TO to)
+                                                (VP (VB answer)
+                                                  (NP (PRP$ its) (NNS questions)))))))))))))))))))))))))
+    (. .)))
+
+det(1978-4, The-3)
+nsubj(Education-7, 1978-4)
+dep(1978-4, Health-5)
+root(ROOT-0, Education-7)
+nn(survey-11, Welfare-10)
+nsubj(go-14, survey-11)
+aux(go-14, did-12)
+neg(go-14, not-13)
+conj_and(Education-7, go-14)
+advmod(enough-16, far-15)
+advmod(go-14, enough-16)
+det(questions-19, the-18)
+prep_in(go-14, questions-19)
+dobj(posed-21, questions-19)
+nsubj(posed-21, it-20)
+nsubj(did-24, it-20)
+rcmod(questions-19, posed-21)
+rcmod(questions-19, did-24)
+conj_nor(posed-21, did-24)
+nsubj(include-26, it-25)
+ccomp(did-24, include-26)
+det(opinions-28, the-27)
+dobj(include-26, opinions-28)
+prep_of(opinions-28, applicants-30)
+nsubjpass(placed-36, applicants-30)
+aux(placed-36, would-33)
+auxpass(placed-36, be-34)
+advmod(placed-36, better-35)
+rcmod(applicants-30, placed-36)
+aux(answer-38, to-37)
+xcomp(placed-36, answer-38)
+poss(questions-40, its-39)
+dobj(answer-38, questions-40)
+

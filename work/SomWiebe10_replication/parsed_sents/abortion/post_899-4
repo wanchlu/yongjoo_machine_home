@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN health) (NN threat))
+      (PP (TO to)
+        (NP
+          (NP
+            (NP (DT the) (NN mother))
+            (PP (IN after)
+              (S
+                (VP (VBG going)
+                  (PRT (RP through))
+                  (PP (IN with)
+                    (NP (DT the) (NN procedure)))))))
+          (CONJP (RB as) (RB well) (IN as))
+          (NP
+            (NP (DT the) (JJ lifelong) (NN health) (NNS risks))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP remain))))))))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ good) (RB enough)
+          (SBAR
+            (S
+              (NP (NNS reasons) (NN abortion))
+              (VP (MD should)
+                (VP (VB be)
+                  (ADJP (JJ illegal)))))))))
+    (. .)))
+
+det(threat-3, The-1)
+nn(threat-3, health-2)
+nsubj(good-24, threat-3)
+det(mother-6, the-5)
+prep_to(threat-3, mother-6)
+prepc_after(mother-6, going-8)
+prt(going-8, through-9)
+det(procedure-12, the-11)
+prep_with(going-8, procedure-12)
+det(risks-19, the-16)
+amod(risks-19, lifelong-17)
+nn(risks-19, health-18)
+prep_to(threat-3, risks-19)
+conj_and(mother-6, risks-19)
+nsubj(remain-21, risks-19)
+rcmod(risks-19, remain-21)
+aux(good-24, should-22)
+cop(good-24, be-23)
+root(ROOT-0, good-24)
+advmod(good-24, enough-25)
+nn(abortion-27, reasons-26)
+nsubj(illegal-30, abortion-27)
+aux(illegal-30, should-28)
+cop(illegal-30, be-29)
+dep(good-24, illegal-30)
+

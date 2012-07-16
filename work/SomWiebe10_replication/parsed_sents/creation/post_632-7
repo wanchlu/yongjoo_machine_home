@@ -1,0 +1,54 @@
+(ROOT
+  (S ('' '')
+    (PP (IN If)
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ 's)
+            (ADVP (RB truly))
+            (NP
+              (NP (DT the) (NN case))
+              (, ,) (RB then)
+              (NP (DT the) (NN NCSE)))))))
+    (VP
+      (ADVP (RB really))
+      (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB ramp)
+            (NP (NNS things))
+            (PRT (RP up)))))
+      (SBAR (IN if)
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (S
+              (VP (TO to)
+                (VP (VB sway)
+                  (NP (JJ public) (NN opinion)))))))))
+    (. .)))
+
+dep(needs-13, If-2)
+nsubj(case-7, that-3)
+cop(case-7, 's-4)
+advmod(case-7, truly-5)
+det(case-7, the-6)
+pcomp(If-2, case-7)
+advmod(case-7, then-9)
+det(NCSE-11, the-10)
+dep(case-7, NCSE-11)
+advmod(needs-13, really-12)
+root(ROOT-0, needs-13)
+aux(ramp-15, to-14)
+xcomp(needs-13, ramp-15)
+dobj(ramp-15, things-16)
+prt(ramp-15, up-17)
+mark(are-20, if-18)
+nsubj(are-20, they-19)
+xsubj(sway-22, they-19)
+advcl(needs-13, are-20)
+aux(sway-22, to-21)
+xcomp(are-20, sway-22)
+amod(opinion-24, public-23)
+dobj(sway-22, opinion-24)
+

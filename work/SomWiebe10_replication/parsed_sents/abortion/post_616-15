@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (JJ Many) (NNS neuroscientists))
+    (VP (VBD put)
+      (NP
+        (NP (DT the) (NN creation))
+        (PP (IN of)
+          (NP (NN something) (JJ new))))
+      (ADVP
+        (ADVP (RB significantly) (RB later))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (ADJP
+                (ADJP (JJ neural))
+                (CC or)
+                (ADJP (RB even) (JJ cognitive)))
+              (NN activity))
+            (VP (VBZ begins))))))
+    (. .)))
+
+amod(neuroscientists-2, Many-1)
+nsubj(put-3, neuroscientists-2)
+root(ROOT-0, put-3)
+det(creation-5, the-4)
+dobj(put-3, creation-5)
+prep_of(creation-5, something-7)
+amod(something-7, new-8)
+advmod(later-10, significantly-9)
+advmod(put-3, later-10)
+advmod(begins-18, when-12)
+amod(activity-17, neural-13)
+advmod(cognitive-16, even-15)
+conj_or(neural-13, cognitive-16)
+amod(activity-17, cognitive-16)
+nsubj(begins-18, activity-17)
+dep(later-10, begins-18)
+

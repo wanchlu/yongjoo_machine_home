@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (INTJ (DT That) (VBZ is))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBP have) (RB n't)
+        (VP (VBN seen)
+          (NP
+            (NP (NNS people) (POS 's))
+            (NNS attitudes))
+          (PP (IN about)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (PRP they))
+                (VP (VBP think)
+                  (SBAR
+                    (S
+                      (NP (PRP they))
+                      (VP (MD should)
+                        (VP (VB be)
+                          (VP (VBN treated)
+                            (NP (NN change))))))))))))))
+    (. .)))
+
+dep(seen-7, That-1)
+dep(That-1, is-2)
+nsubj(seen-7, I-4)
+aux(seen-7, have-5)
+neg(seen-7, n't-6)
+root(ROOT-0, seen-7)
+poss(attitudes-10, people-8)
+dobj(seen-7, attitudes-10)
+advmod(think-14, how-12)
+nsubj(think-14, they-13)
+prepc_about(seen-7, think-14)
+nsubjpass(treated-18, they-15)
+aux(treated-18, should-16)
+auxpass(treated-18, be-17)
+ccomp(think-14, treated-18)
+dobj(treated-18, change-19)
+

@@ -1,0 +1,134 @@
+(ROOT
+  (INTJ (UH Point) (. !)))
+
+root(ROOT-0, Point-1)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD should)
+        (VP (VB have)
+          (VP (VBD said)
+            (ADVP (RB later))))))
+    (: ;)
+    (S
+      (NP (PRP you))
+      (VP (VBP 're)
+        (ADJP (JJ right))))
+    (. .)))
+
+nsubj(said-4, I-1)
+aux(said-4, should-2)
+aux(said-4, have-3)
+root(ROOT-0, said-4)
+advmod(said-4, later-5)
+nsubj(right-9, you-7)
+cop(right-9, 're-8)
+parataxis(said-4, right-9)
+
+(ROOT
+  (S
+    (NP (JJ Developmental) (NNS scientists))
+    (VP
+      (VP (VBP do) (RB n't))
+      (CC and)
+      (VP (VBP have) (RB n't)
+        (VP (VBN nailed)
+          (NP (PRP themselves))
+          (PRT (RP down)))))
+    (. .)))
+
+amod(scientists-2, Developmental-1)
+nsubj(do-3, scientists-2)
+nsubj(nailed-8, scientists-2)
+root(ROOT-0, do-3)
+neg(do-3, n't-4)
+aux(nailed-8, have-6)
+neg(nailed-8, n't-7)
+conj_and(do-3, nailed-8)
+dobj(nailed-8, themselves-9)
+prt(nailed-8, down-10)
+
+(ROOT
+  (S (: ...)
+    (S (CC but)
+      (NP
+        (NP (DT the) (JJS biggest))
+        (NP (CD two) (JJ proven) (NNS influences)))
+      (VP (VBP are)
+        (NP (NN a.) (NN prenatal) (NNS hormones)
+          (CC and)
+          (NN b.) (NNS genes))))
+    (. .)))
+
+det(biggest-4, the-3)
+nsubj(hormones-11, biggest-4)
+num(influences-7, two-5)
+amod(influences-7, proven-6)
+dep(biggest-4, influences-7)
+cop(hormones-11, are-8)
+nn(hormones-11, a.-9)
+nn(hormones-11, prenatal-10)
+root(ROOT-0, hormones-11)
+nn(genes-14, b.-13)
+conj_and(hormones-11, genes-14)
+
+(ROOT
+  (S
+    (PP (IN By)
+      (NP
+        (NP (DT the) (NN time))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBP 're)
+              (VP (VBN born)))))))
+    (, ,)
+    (ADVP (RB then))
+    (, ,)
+    (NP (DT those) (CD two) (NNS factors))
+    (VP (VBP are)
+      (VP (VBN done)))
+    (. .)))
+
+det(time-3, the-2)
+agent(done-14, time-3)
+nsubjpass(born-6, you-4)
+auxpass(born-6, 're-5)
+rcmod(time-3, born-6)
+advmod(done-14, then-8)
+det(factors-12, those-10)
+num(factors-12, two-11)
+nsubjpass(done-14, factors-12)
+auxpass(done-14, are-13)
+root(ROOT-0, done-14)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (VP (VBN been)
+        (ADJP (NN nothing) (JJ solid))
+        (S
+          (VP (TO to)
+            (VP (VB prove)
+              (CC or)
+              (VB uphold)
+              (NP (JJ early) (NN childhood) (NNS experiences)))))))
+    (. .)))
+
+expl(solid-5, There-1)
+xsubj(prove-7, There-1)
+auxpass(solid-5, 's-2)
+cop(solid-5, been-3)
+dep(solid-5, nothing-4)
+root(ROOT-0, solid-5)
+aux(prove-7, to-6)
+xcomp(solid-5, prove-7)
+xcomp(solid-5, uphold-9)
+conj_or(prove-7, uphold-9)
+amod(experiences-12, early-10)
+nn(experiences-12, childhood-11)
+dobj(prove-7, experiences-12)
+

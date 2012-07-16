@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP Don) (NNP t))
+    (VP (VBP know)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (PRP we))
+          (VP (MD can)
+            (VP (VB test)
+              (NP (NNP Cricks) (NN statement))
+              (SBAR (IN that)
+                (S
+                  (NP (JJ molecular) (NNS machines))
+                  (VP
+                    (VP (VBP appear)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP (VBN designed))))))
+                    (CC but)
+                    (VP (VBP are) (RB not))))))))))
+    (. .)))
+
+nn(t-2, Don-1)
+nsubj(know-3, t-2)
+root(ROOT-0, know-3)
+advmod(test-7, how-4)
+nsubj(test-7, we-5)
+aux(test-7, can-6)
+ccomp(know-3, test-7)
+nn(statement-9, Cricks-8)
+dobj(test-7, statement-9)
+complm(appear-13, that-10)
+amod(machines-12, molecular-11)
+nsubj(appear-13, machines-12)
+xsubj(designed-16, machines-12)
+nsubj(are-18, machines-12)
+ccomp(test-7, appear-13)
+aux(designed-16, to-14)
+auxpass(designed-16, be-15)
+xcomp(appear-13, designed-16)
+ccomp(test-7, are-18)
+conj_but(appear-13, are-18)
+neg(are-18, not-19)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB carry)
+            (NP (PRP it))
+            (PP (IN for)
+              (NP
+                (NP (CD nine) (NNS months))
+                (PRN (-LRB- -LRB-)
+                  (SQ (MD should)
+                    (NP (PRP she))
+                    (VP (VB choose)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)
+                            (NP (PRP it)))))))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+nsubj(has-2, She-1)
+xsubj(carry-4, She-1)
+root(ROOT-0, has-2)
+aux(carry-4, to-3)
+xcomp(has-2, carry-4)
+dobj(carry-4, it-5)
+num(months-8, nine-7)
+prep_for(carry-4, months-8)
+aux(choose-12, should-10)
+nsubj(choose-12, she-11)
+xsubj(have-14, she-11)
+dep(months-8, choose-12)
+aux(have-14, to-13)
+xcomp(choose-12, have-14)
+dobj(have-14, it-15)
+

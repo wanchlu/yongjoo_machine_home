@@ -1,0 +1,40 @@
+(ROOT
+  (X
+    (SBAR
+      (X (DT The) (JJR more))
+      (S
+        (NP (NNS physicists))
+        (VP (VBP understand)
+          (NP
+            (NP (DT the) (NN relativity))
+            (PP (IN of)
+              (NP (NN time)))))))
+    (, ,)
+    (X (DT the)
+      (ADJP (RBR more) (JJ elusive)))
+    (NP
+      (NP (DT the) (`` ``) (NN beginning) ('' '')
+        (CC and)
+        (`` ``) (NN end) ('' ''))
+      (PP (IN of)
+        (NP
+          (NP (NN time))
+          (VP (VBN become)))))
+    (. .)))
+
+det(more-2, The-1)
+dep(understand-4, more-2)
+nsubj(understand-4, physicists-3)
+dep(beginning-15, understand-4)
+det(relativity-6, the-5)
+dobj(understand-4, relativity-6)
+prep_of(relativity-6, time-8)
+det(elusive-12, the-10)
+advmod(elusive-12, more-11)
+dep(beginning-15, elusive-12)
+det(beginning-15, the-13)
+root(ROOT-0, beginning-15)
+conj_and(beginning-15, end-19)
+prep_of(beginning-15, time-22)
+partmod(time-22, become-23)
+

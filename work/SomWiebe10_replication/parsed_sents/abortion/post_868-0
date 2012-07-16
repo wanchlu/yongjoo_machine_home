@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP believe)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ wrong)))))
+        (CC but)
+        (SBAR (IN that)
+          (S
+            (NP (FW i))
+            (ADVP (RB also))
+            (VP (VBP think)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (MD should)
+                    (VP (VB be)
+                      (ADJP (JJ legal))
+                      (SBAR (IN because)
+                        (S
+                          (NP (DT some) (NNS people))
+                          (VP (VBP do) (RB n't)
+                            (VP (VB have)
+                              (NP
+                                (NP (DT any) (NN control))
+                                (PP (IN over)
+                                  (S
+                                    (VP (VBG getting)
+                                      (NP
+                                        (NP (JJ pregnant))
+                                        (PP (RB because) (IN of)
+                                          (NP (NN rape)))))))))))))))))))))
+    (. .)))
+
+nsubj(believe-2, i-1)
+root(ROOT-0, believe-2)
+complm(wrong-6, that-3)
+nsubj(wrong-6, it-4)
+cop(wrong-6, is-5)
+ccomp(believe-2, wrong-6)
+complm(think-11, that-8)
+nsubj(think-11, i-9)
+advmod(think-11, also-10)
+ccomp(believe-2, think-11)
+conj_but(wrong-6, think-11)
+complm(legal-16, that-12)
+nsubj(legal-16, it-13)
+aux(legal-16, should-14)
+cop(legal-16, be-15)
+ccomp(think-11, legal-16)
+mark(have-22, because-17)
+det(people-19, some-18)
+nsubj(have-22, people-19)
+aux(have-22, do-20)
+neg(have-22, n't-21)
+advcl(legal-16, have-22)
+det(control-24, any-23)
+dobj(have-22, control-24)
+prepc_over(control-24, getting-26)
+dobj(getting-26, pregnant-27)
+prep_because_of(pregnant-27, rape-30)
+

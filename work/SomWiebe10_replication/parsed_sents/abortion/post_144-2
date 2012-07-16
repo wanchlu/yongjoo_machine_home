@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN woman))
+        (VP (VBZ does) (RB not)
+          (VP (VB want)
+            (S
+              (VP (TO to)
+                (VP (VB get)
+                  (ADJP (JJ pregnant)))))))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ is)
+      (ADJP (JJ free)
+        (S
+          (VP (TO to)
+            (VP (VB choose)
+              (NP
+                (NP (DT these) (NNS options))
+                (PP (IN of)
+                  (NP
+                    (NP (NN birth) (NN control))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (SBAR (IN if)
+                          (S
+                            (VP (VBD used))))
+                        (ADVP (RB responsibly))
+                        (VP (VBP have)
+                          (NP
+                            (NP (DT a) (JJ high) (NN probability))
+                            (PP (IN of)
+                              (S
+                                (VP (VBG preventing)
+                                  (NP (NN impregnation)))))))
+                        (PRN (-LRB- -LRB-)
+                          (S
+                            (NP (NNP Abstinence))
+                            (VP (VBZ is)
+                              (ADJP
+                                (NP (CD 100) (NN %))
+                                (JJ effective))))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+mark(want-6, If-1)
+det(woman-3, a-2)
+nsubj(want-6, woman-3)
+xsubj(pregnant-9, woman-3)
+aux(want-6, does-4)
+neg(want-6, not-5)
+advcl(free-13, want-6)
+aux(pregnant-9, to-7)
+dep(pregnant-9, get-8)
+xcomp(want-6, pregnant-9)
+nsubj(free-13, she-11)
+cop(free-13, is-12)
+root(ROOT-0, free-13)
+aux(choose-15, to-14)
+xcomp(free-13, choose-15)
+det(options-17, these-16)
+dobj(choose-15, options-17)
+nn(control-20, birth-19)
+prep_of(options-17, control-20)
+dep(have-26, control-20)
+mark(used-24, if-23)
+advcl(have-26, used-24)
+csubj(have-26, used-24)
+advmod(have-26, responsibly-25)
+rcmod(control-20, have-26)
+det(probability-29, a-27)
+amod(probability-29, high-28)
+dobj(have-26, probability-29)
+prepc_of(probability-29, preventing-31)
+dobj(preventing-31, impregnation-32)
+nsubj(effective-38, Abstinence-34)
+cop(effective-38, is-35)
+num(%-37, 100-36)
+npadvmod(effective-38, %-37)
+parataxis(have-26, effective-38)
+

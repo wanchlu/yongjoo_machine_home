@@ -1,0 +1,78 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN because)
+      (S
+        (NP (PRP you))
+        (, ,)
+        (PP (IN like)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP (NNS people)))))
+        (, ,)
+        (VP (VBP are)
+          (VP (VBG saying)))))
+    (WHNP (WDT that)
+      (NP (PRP it)))
+    (SQ
+      (VP (VBZ is)
+        (NP
+          (NP (JJ biological) (NN fact))
+          (SBAR
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NN woman))
+                (VP (VBZ carries)
+                  (NP (DT the) (NN fetus)))))
+            (, ,)
+            (CC and)
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NN fetus))
+                (VP (VBD did) (RB n't)
+                  (VP (`` ``) (VB ask) ('' '') (-LRB- -LRB-)
+                    (SBAR
+                      (SBAR (IN so)
+                        (S
+                          (NP (TO to))
+                          (VP (VBP speak)))
+                        (: ...))
+                      (CC or)
+                      (FRAG
+                        (ADVP (RB rather))))
+                    (: ...)
+                    (PP (RB not))))))))))
+    (. ?) (-RRB- -RRB-)))
+
+mark(saying-11, because-1)
+nsubj(saying-11, you-2)
+det(lot-6, a-5)
+prep_like(saying-11, lot-6)
+prep_of(lot-6, people-8)
+aux(saying-11, are-10)
+dep(fact-16, saying-11)
+det(it-13, that-12)
+nsubj(fact-16, it-13)
+cop(fact-16, is-14)
+amod(fact-16, biological-15)
+root(ROOT-0, fact-16)
+dep(carries-20, that-17)
+det(woman-19, the-18)
+nsubj(carries-20, woman-19)
+dep(fact-16, carries-20)
+det(fetus-22, the-21)
+dobj(carries-20, fetus-22)
+dep(ask-31, that-25)
+det(fetus-27, the-26)
+nsubj(ask-31, fetus-27)
+aux(ask-31, did-28)
+neg(ask-31, n't-29)
+dep(fact-16, ask-31)
+conj_and(carries-20, ask-31)
+mark(speak-36, so-34)
+nsubj(speak-36, to-35)
+dep(ask-31, speak-36)
+dep(ask-31, rather-39)
+conj_or(speak-36, rather-39)
+prep(ask-31, not-41)
+

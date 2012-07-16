@@ -1,0 +1,244 @@
+(ROOT
+  (S
+    (NP (NNP Fact))
+    (VP (VBP shmakt))
+    (. .)))
+
+nsubj(shmakt-2, Fact-1)
+root(ROOT-0, shmakt-2)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP (PRP$ your) (NN opinion)))
+    (. .)))
+
+nsubj(opinion-5, That-1)
+cop(opinion-5, is-2)
+advmod(opinion-5, just-3)
+poss(opinion-5, your-4)
+root(ROOT-0, opinion-5)
+
+(ROOT
+  (S
+    (NP (RB Not) (NN everyone))
+    (VP (VBZ evolves))
+    (. .)))
+
+neg(everyone-2, Not-1)
+nsubj(evolves-3, everyone-2)
+root(ROOT-0, evolves-3)
+
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP (NNS Neanderthals))))
+    (. .)))
+
+root(ROOT-0, Look-1)
+prep_at(Look-1, Neanderthals-3)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (PP (TO to)
+          (NP (PRP them)))))
+    (. ?)))
+
+nsubj(happened-2, What-1)
+root(ROOT-0, happened-2)
+prep_to(happened-2, them-4)
+
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP they))
+    (VP (VB die)
+      (PRT (RP out))
+      (PP (IN on)
+        (NP (PRP$ their) (JJ own))))
+    (. ?)))
+
+aux(die-3, Did-1)
+nsubj(die-3, they-2)
+root(ROOT-0, die-3)
+prt(die-3, out-4)
+poss(own-7, their-6)
+prep_on(die-3, own-7)
+
+(ROOT
+  (SQ (CC Or)
+    (VBD was)
+    (NP (PRP it))
+    (SBAR
+      (WHNP (WP MURDER))
+      (S
+        (VP (VBD ?!!!)
+          (SBAR
+            (S
+              (S (CC And)
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP$ its))
+                    (ADJP (JJ true)
+                      (SBAR (IN that)
+                        (S
+                          (NP (NNS humans))
+                          (VP (VBD killed)
+                            (PRT (RP off))
+                            (NP (DT the) (NNS Neanderthals))))))))
+                (, ,)
+                (PRN
+                  (SINV (MD can)
+                    (NP (PRP we))
+                    (ADVP (RB really))))
+                (VP (VBP say)
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (VP (VBD was)
+                        (NP (JJ natural) (NN selection)))))))
+              (: ;)
+              (CC or)
+              (S
+                (S
+                  (VP (VBZ is)
+                    (NP (PRP it))
+                    (ADVP (RB necessarily)
+                      (NP (JJ artificial) (NN selection)))))
+                (, ,)
+                (S
+                  (VP (VBG having)
+                    (VP (VBN been)
+                      (VP (VBN done)
+                        (PP (IN at)
+                          (NP
+                            (NP (DT the) (NNS hands))
+                            (PP (IN of)
+                              (NP (NN humankind)))))))))))))))
+    (. ?)))
+
+cc(was-2, Or-1)
+root(ROOT-0, was-2)
+nsubj(was-2, it-3)
+nsubj(?!!!-5, MURDER-4)
+nsubj(say-20, MURDER-4)
+dep(was-2, ?!!!-5)
+mark(true-9, if-7)
+dep(true-9, its-8)
+dep(say-20, true-9)
+complm(killed-12, that-10)
+nsubj(killed-12, humans-11)
+ccomp(true-9, killed-12)
+prt(killed-12, off-13)
+det(Neanderthals-15, the-14)
+dobj(killed-12, Neanderthals-15)
+parataxis(say-20, can-17)
+nsubj(can-17, we-18)
+advmod(can-17, really-19)
+dep(?!!!-5, say-20)
+nsubj(selection-24, it-21)
+cop(selection-24, was-22)
+amod(selection-24, natural-23)
+ccomp(say-20, selection-24)
+cop(it-28, is-27)
+dep(?!!!-5, it-28)
+conj_or(say-20, it-28)
+advmod(it-28, necessarily-29)
+amod(selection-31, artificial-30)
+pobj(necessarily-29, selection-31)
+aux(done-35, having-33)
+auxpass(done-35, been-34)
+dep(it-28, done-35)
+det(hands-38, the-37)
+prep_at(done-35, hands-38)
+prep_of(hands-38, humankind-40)
+
+(ROOT
+  (S
+    (FRAG
+      (X
+        (X (SYM \*))
+        (NP
+          (NP
+            (NP (`` ``) (DT This) (NN preservation))
+            (PP (IN of)
+              (NP (JJ favourable) (NNS variations))))
+          (CC and)
+          (NP
+            (NP (DT the) (NN rejection))
+            (PP (IN of)
+              (NP (NNS injurious))))))
+      (NP (NNS variations)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP call)
+      (NP (NNP Natural) (NNP Selection)))
+    (. .)))
+
+dep(preservation-4, \*-1)
+det(preservation-4, This-3)
+dep(variations-13, preservation-4)
+amod(variations-7, favourable-6)
+prep_of(preservation-4, variations-7)
+det(rejection-10, the-9)
+conj_and(preservation-4, rejection-10)
+dep(variations-13, rejection-10)
+prep_of(rejection-10, injurious-12)
+dep(call-16, variations-13)
+nsubj(call-16, I-15)
+root(ROOT-0, call-16)
+nn(Selection-18, Natural-17)
+dobj(call-16, Selection-18)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP Charles) (NNP Darwin))
+    (, ,)
+    (PP (IN On)
+      (NP
+        (NP (DT the) (NNP Origin))
+        (PP (IN of)
+          (NP
+            (NP (NNP Species))
+            (PP (IN by)
+              (NP
+                (NP
+                  (NP (NNP Means))
+                  (PP (IN of)
+                    (NP (NNP Natural) (NNP Selection))))
+                (, ,)
+                (CC or)
+                (NP
+                  (NP (DT the) (NNP Preservation))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNP Favoured) (NNP Races))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT the) (NN Struggle))
+                          (PP (IN for)
+                            (NP (NNP Life))))))))))))))
+    (. .)))
+
+nn(Darwin-3, Charles-2)
+root(ROOT-0, Darwin-3)
+dep(Darwin-3, On-5)
+det(Origin-7, the-6)
+pobj(On-5, Origin-7)
+prep_of(Origin-7, Species-9)
+nn(Selection-14, Natural-13)
+prep_by_means_of(Species-9, Selection-14)
+det(Preservation-18, the-17)
+prep_of(Origin-7, Preservation-18)
+conj_or(Species-9, Preservation-18)
+nn(Races-21, Favoured-20)
+prep_of(Preservation-18, Races-21)
+det(Struggle-24, the-23)
+prep_in(Races-21, Struggle-24)
+prep_for(Struggle-24, Life-26)
+

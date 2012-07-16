@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (ADVP (RB Logically))
+    (, ,)
+    (NP (DT that))
+    (ADVP (RB probably))
+    (VP (VBZ puts)
+      (NP (DT the) (NN event))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN point))
+          (SBAR
+            (WHPP (IN at)
+              (WHNP (WDT which)))
+            (S
+              (NP (DT a) (NN fetus))
+              (VP (MD can)
+                (VP (VB survive)
+                  (NP
+                    (NP (RB outside))
+                    (PP (IN of)
+                      (NP (DT the) (NN mother)))))))))))
+    (. .)))
+
+advmod(puts-5, Logically-1)
+nsubj(puts-5, that-3)
+advmod(puts-5, probably-4)
+root(ROOT-0, puts-5)
+det(event-7, the-6)
+dobj(puts-5, event-7)
+det(point-10, the-9)
+prep_at(puts-5, point-10)
+rel(survive-16, which-12)
+det(fetus-14, a-13)
+nsubj(survive-16, fetus-14)
+aux(survive-16, can-15)
+rcmod(point-10, survive-16)
+dobj(survive-16, outside-17)
+det(mother-20, the-19)
+prep_of(outside-17, mother-20)
+

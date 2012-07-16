@@ -1,0 +1,47 @@
+(ROOT
+  (SQ (NNP Should)
+    (NP (PRP we))
+    (VP (VB make)
+      (NP (NN sex) (JJ mandatory))
+      (PP (IN for)
+        (NP
+          (NP (DT every) (NN girl))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ reaches)
+                (ADVP (RB puberty))
+                (SBAR (RB so) (IN that)
+                  (S
+                    (NP (DT each) (NN egg))
+                    (VP (VBZ has)
+                      (NP (DT the) (NN opportunity)
+                        (S
+                          (VP (TO to)
+                            (VP (VB become)
+                              (NP (DT a) (NN human)))))))))))))))
+    (. ?)))
+
+dep(make-3, Should-1)
+nsubj(make-3, we-2)
+root(ROOT-0, make-3)
+dobj(make-3, sex-4)
+amod(sex-4, mandatory-5)
+det(girl-8, every-7)
+prep_for(make-3, girl-8)
+nsubj(reaches-10, girl-8)
+rcmod(girl-8, reaches-10)
+advmod(reaches-10, puberty-11)
+advmod(has-16, so-12)
+dep(has-16, that-13)
+det(egg-15, each-14)
+nsubj(has-16, egg-15)
+advcl(reaches-10, has-16)
+ccomp(reaches-10, has-16)
+det(opportunity-18, the-17)
+dobj(has-16, opportunity-18)
+aux(human-22, to-19)
+cop(human-22, become-20)
+det(human-22, a-21)
+infmod(opportunity-18, human-22)
+

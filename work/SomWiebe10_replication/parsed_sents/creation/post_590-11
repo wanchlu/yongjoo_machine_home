@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ same))
+      (VP (VBZ goes)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN complexity))
+            (PP (IN of)
+              (NP (DT the) (NN universe)))))))
+    (: ...)
+    (S
+      (NP (NN complexity))
+      (VP (VBZ does) (RB not)
+        (VP (VB require)
+          (NP (NN intelligence)))))
+    (. .)))
+
+det(same-2, The-1)
+nsubj(goes-3, same-2)
+root(ROOT-0, goes-3)
+det(complexity-6, the-5)
+prep_for(goes-3, complexity-6)
+det(universe-9, the-8)
+prep_of(complexity-6, universe-9)
+nsubj(require-14, complexity-11)
+aux(require-14, does-12)
+neg(require-14, not-13)
+parataxis(goes-3, require-14)
+dobj(require-14, intelligence-15)
+

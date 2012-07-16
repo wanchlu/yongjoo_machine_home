@@ -1,0 +1,35 @@
+(ROOT
+  (S ('' '')
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (JJ past) (NN tense))
+        (, ,)
+        (NP
+          (NP (DT a) (NN process))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP
+                (VP (VBD happened))
+                (CC but)
+                (VP (VBZ has)
+                  (ADVP (IN since))
+                  (VP (VBN stoped)))))))))
+    (. ...)))
+
+nsubj(tense-6, That-2)
+cop(tense-6, 's-3)
+det(tense-6, the-4)
+amod(tense-6, past-5)
+root(ROOT-0, tense-6)
+det(process-9, a-8)
+appos(tense-6, process-9)
+nsubj(happened-11, process-9)
+nsubj(stoped-15, process-9)
+rcmod(process-9, happened-11)
+aux(stoped-15, has-13)
+advmod(stoped-15, since-14)
+rcmod(process-9, stoped-15)
+conj_but(happened-11, stoped-15)
+

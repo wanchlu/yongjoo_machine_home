@@ -1,0 +1,49 @@
+(ROOT
+  (S (CC And)
+    (NP (PRP It))
+    (VP (VBZ does)
+      (SBAR
+        (S
+          (VP (VBP exist)
+            (SBAR
+              (S
+                (NP (EX there))
+                (VP (VBP are)
+                  (NP
+                    (NP (NNS animals))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VB evolve)
+                          (PP (IN from)
+                            (NP
+                              (NP (DT the) (NNS dinosaurs) (NN age))
+                              (, ,)
+                              (NP (JJ like) (NNS aligators))
+                              (, ,)
+                              (NP (NNS tortules))
+                              (CC and)
+                              (NP (JJ many) (NNS others)))))))))))))))
+    (. .)))
+
+cc(does-3, And-1)
+nsubj(does-3, It-2)
+root(ROOT-0, does-3)
+ccomp(does-3, exist-4)
+expl(are-6, there-5)
+ccomp(exist-4, are-6)
+nsubj(are-6, animals-7)
+nsubj(evolve-9, animals-7)
+rcmod(animals-7, evolve-9)
+det(age-13, the-11)
+nn(age-13, dinosaurs-12)
+prep_from(evolve-9, age-13)
+amod(aligators-16, like-15)
+prep_from(evolve-9, aligators-16)
+conj_and(age-13, aligators-16)
+prep_from(evolve-9, tortules-18)
+conj_and(age-13, tortules-18)
+amod(others-21, many-20)
+prep_from(evolve-9, others-21)
+conj_and(age-13, others-21)
+

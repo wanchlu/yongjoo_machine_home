@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Barry) (NNP Goldwater))
+      (, ,)
+      (NP (DT a) (JJ strong) (NN conservative))
+      (, ,))
+    (VP (VBD was)
+      (ADJP (RB strongly) (JJ pro-choice))
+      (SBAR (IN because)
+        (S
+          (NP (PRP he))
+          (VP (VBD thought)
+            (SBAR (IN like)
+              (S
+                (NP
+                  (NP (PRP me))
+                  (, ,)
+                  (NP
+                    (NP (DT that))
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (VP (VBZ goes)
+                          (PRT (RP on))
+                          (PP (IN in)
+                            (NP (DT the) (NN bedroom)))))))
+                  (, ,))
+                (VP (VBZ stays)
+                  (PP (IN in)
+                    (NP (DT the) (NN bedroom))))))))))
+    (. !)))
+
+nn(Goldwater-2, Barry-1)
+nsubj(pro-choice-10, Goldwater-2)
+det(conservative-6, a-4)
+amod(conservative-6, strong-5)
+appos(Goldwater-2, conservative-6)
+cop(pro-choice-10, was-8)
+advmod(pro-choice-10, strongly-9)
+root(ROOT-0, pro-choice-10)
+mark(thought-13, because-11)
+nsubj(thought-13, he-12)
+advcl(pro-choice-10, thought-13)
+mark(stays-25, like-14)
+nsubj(stays-25, me-15)
+appos(me-15, that-17)
+nsubj(goes-19, that-17)
+rcmod(that-17, goes-19)
+prt(goes-19, on-20)
+det(bedroom-23, the-22)
+prep_in(goes-19, bedroom-23)
+advcl(thought-13, stays-25)
+det(bedroom-28, the-27)
+prep_in(stays-25, bedroom-28)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBD happened)
+        (SBAR
+          (SBAR
+            (X (TO to))
+            (S
+              (NP (PRP you))
+              (VP (VBD was)
+                (ADJP (JJ horrific)))))
+          (CC but)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (VP (VBD did)
+                (S
+                  (VP (VBG having)
+                    (S
+                      (NP (DT an) (NN abortion))
+                      (VP (VB make)
+                        (S
+                          (NP (PRP it))
+                          (ADJP (JJR better)))))))))))))
+    (. ?)))
+
+nsubj(happened-2, What-1)
+root(ROOT-0, happened-2)
+dep(horrific-6, to-3)
+nsubj(horrific-6, you-4)
+nsubj(did-9, you-4)
+cop(horrific-6, was-5)
+dep(happened-2, horrific-6)
+advmod(did-9, how-8)
+dep(happened-2, did-9)
+conj_but(horrific-6, did-9)
+xcomp(did-9, having-10)
+det(abortion-12, an-11)
+nsubj(make-13, abortion-12)
+ccomp(having-10, make-13)
+nsubj(better-15, it-14)
+xcomp(make-13, better-15)
+

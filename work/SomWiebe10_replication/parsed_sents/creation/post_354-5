@@ -1,0 +1,54 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP we))
+          (VP (VBD were)
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RB just))
+                  (VB pick)
+                  (NP (DT these))))))))
+      (VP (VBZ values)
+        (PP (IN at)
+          (ADJP (JJ random)))))
+    (, ,) (`` ``)
+    (S
+      (NP (PRP I))
+      (VP (VBP am) (RB not)
+        (ADJP (JJ familiar)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (NN process))
+              (PP (IN of) (`` ``)
+                (S
+                  (VP (VBG picking)
+                    (NP (DT these) (NNS values))
+                    (PP (IN at)
+                      (ADJP (JJ random)))))))))))
+    (. .)))
+
+mark(were-4, If-2)
+nsubj(were-4, we-3)
+xsubj(pick-7, we-3)
+csubj(values-9, were-4)
+aux(pick-7, to-5)
+advmod(pick-7, just-6)
+xcomp(were-4, pick-7)
+dobj(pick-7, these-8)
+root(ROOT-0, values-9)
+prep_at(values-9, random-11)
+nsubj(familiar-17, I-14)
+cop(familiar-17, am-15)
+neg(familiar-17, not-16)
+ccomp(values-9, familiar-17)
+det(process-20, the-19)
+prep_with(familiar-17, process-20)
+prep(process-20, of-21)
+dep(of-21, picking-23)
+det(values-25, these-24)
+dobj(picking-23, values-25)
+prep_at(picking-23, random-27)
+

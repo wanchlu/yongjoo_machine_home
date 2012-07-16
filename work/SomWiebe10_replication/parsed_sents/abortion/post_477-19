@@ -1,0 +1,43 @@
+(ROOT
+  (NP
+    (NP (NNP New) (NNP York))
+    (: :)
+    (NP
+      (NP (NNP Peter) (NNP Lang))
+      (, ,)
+      (NP (CD 1999)))
+    (. .)))
+
+nn(York-2, New-1)
+root(ROOT-0, York-2)
+nn(Lang-5, Peter-4)
+dep(York-2, Lang-5)
+appos(Lang-5, 1999-7)
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NNP Right))
+      (CC and)
+      (NP (DT the) (NNP Good)))
+    (: :)
+    (NP
+      (NP (CD Two) (JJ Fundamental) (NNS Dimensions))
+      (PP (IN of)
+        (NP (NNP Morality))))
+    (, ,)
+    (PP (IN in)
+      (NP (NNP Aletheia) (, ,) (NNP vol)))
+    (. .)))
+
+det(Right-2, The-1)
+root(ROOT-0, Right-2)
+det(Good-5, the-4)
+conj_and(Right-2, Good-5)
+num(Dimensions-9, Two-7)
+amod(Dimensions-9, Fundamental-8)
+dep(Right-2, Dimensions-9)
+prep_of(Dimensions-9, Morality-11)
+nn(vol-16, Aletheia-14)
+prep_in(Right-2, vol-16)
+

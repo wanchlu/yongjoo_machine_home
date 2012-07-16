@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP she))
+        (VP (VBD wanted)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADJP (JJ sure)
+                  (S (RB not)
+                    (VP (TO to)
+                      (VP (VB conceive)))))))))))
+    (, ,)
+    (VP (VB use)
+      (NP
+        (NP (CD 2) (NNS forms))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NN contraception))
+              (, ,)
+              (NP (NN abstain)))
+            (: ...)
+            (SBAR
+              (WHNP (WDT whatever))
+              (S
+                (NP (PRP it))
+                (VP (VBZ takes))))))))
+    (. .)))
+
+mark(wanted-3, If-1)
+nsubj(wanted-3, she-2)
+xsubj(sure-6, she-2)
+advcl(use-11, wanted-3)
+aux(sure-6, to-4)
+cop(sure-6, be-5)
+xcomp(wanted-3, sure-6)
+neg(conceive-9, not-7)
+aux(conceive-9, to-8)
+dep(sure-6, conceive-9)
+root(ROOT-0, use-11)
+num(forms-13, 2-12)
+dobj(use-11, forms-13)
+prep_of(forms-13, contraception-15)
+appos(contraception-15, abstain-17)
+dobj(takes-21, whatever-19)
+rel(takes-21, whatever-19)
+nsubj(takes-21, it-20)
+rcmod(contraception-15, takes-21)
+

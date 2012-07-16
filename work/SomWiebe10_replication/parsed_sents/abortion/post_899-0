@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (NP (NN murder))
+      (ADVP (DT no) (NN matter)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT a) (NN person))
+            (VP (VBZ believes)
+              (SBAR
+                (S
+                  (NP (NN life))
+                  (VP (VBZ becomes)
+                    (NP (NN official))))))))))
+    (. .)))
+
+nsubj(murder-3, Abortion-1)
+cop(murder-3, is-2)
+root(ROOT-0, murder-3)
+dep(matter-5, no-4)
+advmod(murder-3, matter-5)
+advmod(believes-9, when-6)
+det(person-8, a-7)
+nsubj(believes-9, person-8)
+dep(matter-5, believes-9)
+nsubj(official-12, life-10)
+cop(official-12, becomes-11)
+ccomp(believes-9, official-12)
+

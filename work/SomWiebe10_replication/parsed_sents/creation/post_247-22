@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP see)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN book))
+          (ADVP (RB right) (RB now))))
+      (PRN (-LRB- -LRB-) (VB hardcover) (-RRB- -RRB-))
+      (SBAR
+        (SBAR
+          (S
+            (VP (VBG citing)
+              (NP
+                (NP (NNS data))
+                (PP (IN for)
+                  (SBAR
+                    (WHADVP (WRB how) (RB often))
+                    (S
+                      (NP (NNP Malaria) (NNS gains))
+                      (VP (VBP chloroquine)
+                        (NP (NN resistance))))))))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (VP (VBD 'd)
+              (S
+                (NP (PRP you))
+                (VP (VB get)
+                  (NP
+                    (NP (DT the) (NN claim))
+                    (PP (IN of)
+                      (NP (DT a) (JJ two-step) (NN change)))))))))))
+    (. ?)))
+
+nsubj(see-2, I-1)
+root(ROOT-0, see-2)
+det(book-5, the-4)
+prep_in(see-2, book-5)
+advmod(now-7, right-6)
+advmod(book-5, now-7)
+dep(see-2, hardcover-9)
+dep(see-2, citing-11)
+dobj(citing-11, data-12)
+advmod(often-15, how-14)
+advmod(chloroquine-18, often-15)
+nn(gains-17, Malaria-16)
+nsubj(chloroquine-18, gains-17)
+prepc_for(data-12, chloroquine-18)
+dobj(chloroquine-18, resistance-19)
+advmod('d-23, where-22)
+dep(see-2, 'd-23)
+conj_but(citing-11, 'd-23)
+nsubj(get-25, you-24)
+ccomp('d-23, get-25)
+det(claim-27, the-26)
+dobj(get-25, claim-27)
+det(change-31, a-29)
+amod(change-31, two-step-30)
+prep_of(claim-27, change-31)
+

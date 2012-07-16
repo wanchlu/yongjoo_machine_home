@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (NNP Childbirth))
+    (VP (VBZ has)
+      (NP
+        (NP (JJ numerous) (NN health) (NNS risks))
+        (PRN (-LRB- -LRB-)
+          (SBAR
+            (WHNP (DT many)
+              (WHPP (IN of)
+                (WHNP (WDT which))))
+            (S
+              (VP (VBP are)
+                (ADJP
+                  (ADJP (JJ similar\/the) (JJ same))
+                  (PP (IN as)
+                    (NP
+                      (NP (DT the) (NNS ones))
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP describe)
+                            (PP (IN for)
+                              (NP (NN abortion))))))))))))
+          (-RRB- -RRB-))
+        (SBAR
+          (S
+            (NP
+              (NP (JJ http:\/\/en.wikipedia.org\/wiki\/Childbirth) (NNS #Complications))
+              (ADJP (RB _) (JJ and_risks_of_birthThere)))
+            (VP (VBP are)
+              (ADVP (RB also))
+              (NP
+                (NP (JJ psychological) (NNS risks))
+                (VP (VBN associated)
+                  (PP (IN with)
+                    (NP (NN childbirth))))))))))
+    (. .)))
+
+nsubj(has-2, Childbirth-1)
+root(ROOT-0, has-2)
+amod(risks-5, numerous-3)
+nn(risks-5, health-4)
+dobj(has-2, risks-5)
+dep(of-8, many-7)
+nsubj(same-12, of-8)
+pobj(of-8, which-9)
+cop(same-12, are-10)
+amod(same-12, similar\/the-11)
+dep(risks-5, same-12)
+det(ones-15, the-14)
+prep_as(same-12, ones-15)
+dobj(describe-17, ones-15)
+nsubj(describe-17, you-16)
+rcmod(ones-15, describe-17)
+prep_for(describe-17, abortion-19)
+amod(#Complications-22, http:\/\/en.wikipedia.org\/wiki\/Childbirth-21)
+nsubj(risks-28, #Complications-22)
+advmod(and_risks_of_birthThere-24, _-23)
+amod(#Complications-22, and_risks_of_birthThere-24)
+cop(risks-28, are-25)
+advmod(risks-28, also-26)
+amod(risks-28, psychological-27)
+rcmod(risks-5, risks-28)
+partmod(risks-28, associated-29)
+prep_with(associated-29, childbirth-31)
+

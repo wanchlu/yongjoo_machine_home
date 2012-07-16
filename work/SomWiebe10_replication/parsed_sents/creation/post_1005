@@ -1,0 +1,69 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NN man))
+        (VP (VBD evolved)
+          (PP (IN from)
+            (NP (NNS apes))))))
+    (, ,)
+    (WHADVP
+      (ADVP (RB then))
+      (WRB why))
+    (SQ (VBZ is)
+      (NP (EX there))
+      (ADVP (RB still))
+      (ADJP (JJ apes)))
+    (. ?)))
+
+mark(evolved-3, If-1)
+nsubj(evolved-3, man-2)
+advcl(apes-12, evolved-3)
+prep_from(evolved-3, apes-5)
+advmod(why-8, then-7)
+advmod(apes-12, why-8)
+cop(apes-12, is-9)
+expl(apes-12, there-10)
+advmod(apes-12, still-11)
+root(ROOT-0, apes-12)
+
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB evolve))))
+      (VP (VBZ is)
+        (S
+          (VP (TO to)
+            (VP (VB change))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN ape))
+      (VP (VBD did) (RB n't)))
+    (. .)))
+
+aux(evolve-2, To-1)
+csubj(is-3, evolve-2)
+root(ROOT-0, is-3)
+aux(change-5, to-4)
+xcomp(is-3, change-5)
+det(ape-8, the-7)
+nsubj(did-9, ape-8)
+conj_and(is-3, did-9)
+neg(did-9, n't-10)
+
+(ROOT
+  (S
+    (VP (VBN Evolution)
+      (NP (RB only)
+        (NP (DT an) (NN atheist) (POS 's))
+        (NN delusion)))
+    (. .)))
+
+root(ROOT-0, Evolution-1)
+advmod(delusion-6, only-2)
+det(atheist-4, an-3)
+poss(delusion-6, atheist-4)
+dobj(Evolution-1, delusion-6)
+

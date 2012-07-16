@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (NP (JJ Intelligent) (NN causation))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NN role))
+        (PP (IN in)
+          (NP (NN science)))))
+    (. .)))
+
+amod(causation-2, Intelligent-1)
+nsubj(has-3, causation-2)
+root(ROOT-0, has-3)
+det(role-5, no-4)
+dobj(has-3, role-5)
+prep_in(role-5, science-7)
+
+(ROOT
+  (S
+    (ADVP (LS Second))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (JJ conflicting) (NN evidence))
+        (VP (VBZ does) (RB not)
+          (VP (VB refute)
+            (NP (JJ evolutionary) (NN theory))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (DT neither))
+    (VP (VBZ does)
+      (S
+        (NP (PRP it))
+        (VP (VB refute)
+          (NP (NNP ID)))))
+    (. .)))
+
+advmod(does-14, Second-1)
+mark(refute-8, if-3)
+amod(evidence-5, conflicting-4)
+nsubj(refute-8, evidence-5)
+aux(refute-8, does-6)
+neg(refute-8, not-7)
+advcl(does-14, refute-8)
+amod(theory-10, evolutionary-9)
+dobj(refute-8, theory-10)
+advmod(does-14, then-12)
+nsubj(does-14, neither-13)
+root(ROOT-0, does-14)
+nsubj(refute-16, it-15)
+ccomp(does-14, refute-16)
+dobj(refute-16, ID-17)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD ca) (RB n't)
+      (NP (NNP ID))
+      (VP
+        (ADVP (RB simply))
+        (VB be)
+        (VP
+          (VP (VBN revised))
+          (CONJP (RB rather) (IN than))
+          (VP (VBN abandoned)
+            (SBAR (IN if)
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (ADJP (RB ever) (JJ conflicting))))))
+          (NP (NN evidence)))))
+    (. ?)))
+
+advmod(revised-7, Why-1)
+aux(revised-7, ca-2)
+neg(revised-7, n't-3)
+nsubj(revised-7, ID-4)
+nsubj(abandoned-10, ID-4)
+advmod(revised-7, simply-5)
+aux(revised-7, be-6)
+root(ROOT-0, revised-7)
+conj_negcc(revised-7, abandoned-10)
+mark(is-13, if-11)
+expl(is-13, there-12)
+advcl(abandoned-10, is-13)
+advmod(conflicting-15, ever-14)
+acomp(is-13, conflicting-15)
+dobj(revised-7, evidence-16)
+

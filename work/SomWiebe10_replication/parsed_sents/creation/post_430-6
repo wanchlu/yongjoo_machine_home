@@ -1,0 +1,39 @@
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP
+        (NP (NNP Transcript))
+        (PP (IN of)
+          (NP
+            (NP (NN Testimony))
+            (PP (IN of)
+              (NP (NNP Kenneth) (NNP Miller))))))
+      (, ,)
+      (NP
+        (NP (NNP Day) (CD 2))
+        (PP (IN of)
+          (NP
+            (NP (NNP Kitzmiller) (NNP Trial))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (NNP Sept.) (CD 27))
+                (, ,)
+                (NP (CD 2005)))
+              (-RRB- -RRB-)))))
+      (, ,))
+    (VP (VBP pgs))
+    (. .)))
+
+nsubj(pgs-21, Transcript-2)
+prep_of(Transcript-2, Testimony-4)
+nn(Miller-7, Kenneth-6)
+prep_of(Testimony-4, Miller-7)
+appos(Transcript-2, Day-9)
+num(Day-9, 2-10)
+nn(Trial-13, Kitzmiller-12)
+prep_of(Day-9, Trial-13)
+dep(Trial-13, Sept.-15)
+num(Sept.-15, 27-16)
+appos(Sept.-15, 2005-18)
+root(ROOT-0, pgs-21)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (NN science))
+        (VP (VBZ does))))
+    (VP (VBZ is) (, ,)
+      (FRAG
+        (VP (VBN given)
+          (NP (DT these) (NNS observations))
+          (, ,)
+          (S
+            (VP (TO to)
+              (VP (VB propose)
+                (S
+                  (NP (DT a) (NNS hypothesis))
+                  (VP (TO to)
+                    (VP (VB explain)
+                      (NP (DT the) (NN coincidence)))))))))))
+    (. .)))
+
+dobj(does-3, What-1)
+nsubj(does-3, science-2)
+csubj(is-4, does-3)
+root(ROOT-0, is-4)
+dep(is-4, given-6)
+det(observations-8, these-7)
+dobj(given-6, observations-8)
+aux(propose-11, to-10)
+xcomp(given-6, propose-11)
+det(hypothesis-13, a-12)
+nsubj(explain-15, hypothesis-13)
+aux(explain-15, to-14)
+xcomp(propose-11, explain-15)
+det(coincidence-17, the-16)
+dobj(explain-15, coincidence-17)
+

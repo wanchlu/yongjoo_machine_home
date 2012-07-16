@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (DT some) (NN yeast) (NNS prions))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP
+              (NP (DT the)
+                (ADJP
+                  (ADJP (JJ normal))
+                  (PRN (-LRB- -LRB-)
+                    (ADJP (JJ non-prion))
+                    (-RRB- -RRB-)))
+                (NN state))
+              (PP (IN of)
+                (NP (DT the) (NN protein))))
+            (VP (VBZ is)
+              (NP
+                (NP (DT an) (NN enzyme))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD would)
+                      (VP (VB qualify)
+                        (ADJP (RB as) (JJ alive))))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+det(prions-5, some-3)
+nn(prions-5, yeast-4)
+nsubj(are-2, prions-5)
+advmod(enzyme-18, where-6)
+det(state-12, the-7)
+amod(state-12, normal-8)
+dep(normal-8, non-prion-10)
+nsubj(enzyme-18, state-12)
+det(protein-15, the-14)
+prep_of(state-12, protein-15)
+cop(enzyme-18, is-16)
+det(enzyme-18, an-17)
+rcmod(prions-5, enzyme-18)
+nsubj(qualify-21, enzyme-18)
+aux(qualify-21, would-20)
+rcmod(enzyme-18, qualify-21)
+advmod(alive-23, as-22)
+acomp(qualify-21, alive-23)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBD dont))
+      (NP (PRP you))
+      (VP (VB tell)
+        (NP (PRP me))))
+    (. ?)))
+
+advmod(dont-2, Why-1)
+root(ROOT-0, dont-2)
+nsubj(dont-2, you-3)
+dep(dont-2, tell-4)
+dobj(tell-4, me-5)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP they))
+    (VP (VBN needed)
+      (S
+        (VP (TO to)))
+      (PP (IN for)
+        (NP
+          (NP (NN health)
+            (CC and)
+            (NN safety))
+          (PP (IN of)
+            (NP (DT the) (NN country))))))
+    (. ?)))
+
+auxpass(needed-3, Are-1)
+nsubjpass(needed-3, they-2)
+xsubj(to-4, they-2)
+root(ROOT-0, needed-3)
+xcomp(needed-3, to-4)
+prep_for(needed-3, health-6)
+prep_for(needed-3, safety-8)
+conj_and(health-6, safety-8)
+det(country-11, the-10)
+prep_of(health-6, country-11)
+

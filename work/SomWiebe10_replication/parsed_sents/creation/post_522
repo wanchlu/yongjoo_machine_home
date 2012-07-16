@@ -1,0 +1,54 @@
+(ROOT
+  (S (`` ``)
+    (PP (IN Of)
+      (NP (NN course)))
+    (NP (DT the) (NN Disco) (`` ``) (NN Tute))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN discovery))
+        (PP (IN of)
+          (NP (NN nonsense)))))
+    (. .)))
+
+prep_of(discovery-10, course-3)
+det(Tute-7, the-4)
+nn(Tute-7, Disco-5)
+nsubj(discovery-10, Tute-7)
+cop(discovery-10, is-8)
+det(discovery-10, the-9)
+root(ROOT-0, discovery-10)
+prep_of(discovery-10, nonsense-12)
+
+(ROOT
+  (S
+    (NP (DT No) (JJ real) (NN scientist))
+    (VP (MD would)
+      (VP (VB waste)
+        (ADVP
+          (NP (RB even) (CD 30) (NNS seconds))
+          (RB there))))
+    (. .)))
+
+det(scientist-3, No-1)
+amod(scientist-3, real-2)
+nsubj(waste-5, scientist-3)
+aux(waste-5, would-4)
+root(ROOT-0, waste-5)
+advmod(seconds-8, even-6)
+num(seconds-8, 30-7)
+npadvmod(there-9, seconds-8)
+advmod(waste-5, there-9)
+
+(ROOT
+  (FRAG
+    (NP (NNP ''))
+    (ADVP (RB Really))
+    (. ?)))
+
+dep(''-1, Really-2)
+
+(ROOT
+  (ADJP (JJ http:\/\/www.discovery.org\/scripts\/viewDB\/filesDB-download.php?command=download&id=660)))
+
+root(ROOT-0, http:\/\/www.discovery.org\/scripts\/viewDB\/filesDB-download.php?command=download&id=660-1)
+

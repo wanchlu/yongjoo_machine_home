@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (RB just) (WRB when))
+        (S
+          (NP (NN birth) (NN control))
+          (VP (VBZ fails)
+            (NP
+              (NP (-LRB- -LRB-) (JJ involuntary) (NN impregnation) (-RRB- -RRB-))
+              (SBAR
+                (S
+                  (SBAR (IN If)
+                    (S
+                      (NP (DT a) (NN woman))
+                      (VP (VBZ does) (RB not)
+                        (ADVP (RB voluntarily))
+                        (VP (VB choose)
+                          (S
+                            (VP (TO to)
+                              (VP (VB seek)
+                                (NP (DT a) (NN pregnancy)))))))))
+                  (, ,)
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (ADJP (JJ impossible)
+                      (PP (IN for)
+                        (NP (DT a) (NN fetus))))
+                    (S
+                      (VP (TO to)
+                        (VP (VB have)
+                          (NP
+                            (NP (DT any) (NN claim))
+                            (PP (IN over)
+                              (NP
+                                (NP (DT the) (NN woman) (POS 's))
+                                (NN body)))))))))))))))
+    (. .)))
+
+nsubj(is-2, Abortion-1)
+root(ROOT-0, is-2)
+advmod(when-4, just-3)
+advmod(fails-7, when-4)
+nn(control-6, birth-5)
+nsubj(fails-7, control-6)
+advcl(is-2, fails-7)
+amod(impregnation-10, involuntary-9)
+dobj(fails-7, impregnation-10)
+mark(choose-18, If-12)
+det(woman-14, a-13)
+nsubj(choose-18, woman-14)
+xsubj(seek-20, woman-14)
+aux(choose-18, does-15)
+neg(choose-18, not-16)
+advmod(choose-18, voluntarily-17)
+advcl(impossible-26, choose-18)
+aux(seek-20, to-19)
+xcomp(choose-18, seek-20)
+det(pregnancy-22, a-21)
+dobj(seek-20, pregnancy-22)
+nsubj(impossible-26, it-24)
+xsubj(have-31, it-24)
+cop(impossible-26, is-25)
+rcmod(impregnation-10, impossible-26)
+det(fetus-29, a-28)
+prep_for(impossible-26, fetus-29)
+aux(have-31, to-30)
+xcomp(impossible-26, have-31)
+det(claim-33, any-32)
+dobj(have-31, claim-33)
+det(woman-36, the-35)
+poss(body-38, woman-36)
+prep_over(claim-33, body-38)
+

@@ -1,0 +1,32 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN Since)
+      (S
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (VP (VBZ does)
+              (ADJP (JJ right)
+                (CC and)
+                (JJ wrong)))))
+        (VP (VBP depend)
+          (PRT (RP on)))))
+    (WHNP (WDT what) (NN one))
+    (SQ
+      (VP (VBZ believes)))
+    (. ?)))
+
+mark(depend-7, Since-1)
+advmod(right-4, when-2)
+dep(right-4, does-3)
+advcl(depend-7, right-4)
+csubj(depend-7, right-4)
+conj_and(right-4, wrong-6)
+advcl(depend-7, wrong-6)
+csubj(depend-7, wrong-6)
+dep(believes-11, depend-7)
+prt(depend-7, on-8)
+det(one-10, what-9)
+nsubj(believes-11, one-10)
+root(ROOT-0, believes-11)
+

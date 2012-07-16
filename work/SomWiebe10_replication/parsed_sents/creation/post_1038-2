@@ -1,0 +1,48 @@
+(ROOT
+  (S (IN So) (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (PRP we))
+        (VP (VBD taught)
+          (SBAR
+            (S
+              (NP
+                (NP (NN creationism))
+                (PP (IN in)
+                  (NP (NN school))))
+              (, ,)
+              (VP (MD should) (RB n't)))))))
+    (NP (PRP we))
+    (ADVP (DT all))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB learn)
+            (PP (IN about)
+              (NP
+                (NP
+                  (NP (DT each) (NN religion) (POS 's))
+                  (NN form))
+                (PP (IN of)
+                  (NP (NN creationism)))))))))
+    (. ?)))
+
+dep(have-14, So-1)
+mark(taught-5, if-3)
+nsubj(taught-5, we-4)
+dep(have-14, taught-5)
+nsubj(should-10, creationism-6)
+prep_in(creationism-6, school-8)
+ccomp(taught-5, should-10)
+neg(should-10, n't-11)
+nsubj(have-14, we-12)
+xsubj(learn-16, we-12)
+advmod(have-14, all-13)
+root(ROOT-0, have-14)
+aux(learn-16, to-15)
+xcomp(have-14, learn-16)
+det(religion-19, each-18)
+poss(form-21, religion-19)
+prep_about(learn-16, form-21)
+prep_of(form-21, creationism-23)
+

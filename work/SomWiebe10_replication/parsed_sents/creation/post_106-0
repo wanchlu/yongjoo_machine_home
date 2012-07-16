@@ -1,0 +1,40 @@
+(ROOT
+  (NP
+    (NP (NNP PSYOP) (NNP asks))
+    (PRN (-LRB- -LRB-)
+      (NP (NN rhetorically) (. ?))
+      (-RRB- -RRB-))))
+
+nn(asks-2, PSYOP-1)
+root(ROOT-0, asks-2)
+appos(asks-2, rhetorically-4)
+
+(ROOT
+  (S (: :) (`` ``)
+    (SBAR (IN if)
+      (S
+        (NP (DT the) (NN universe))
+        (VP (VBZ is)
+          (VP (VBG expanding)))))
+    (, ,)
+    (NP (WDT what))
+    (VP (VBZ happens)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT that) (NN expansion))
+          (VP (VBZ ceases)))))
+    (. ?)))
+
+mark(expanding-7, if-3)
+det(universe-5, the-4)
+nsubj(expanding-7, universe-5)
+aux(expanding-7, is-6)
+advcl(happens-10, expanding-7)
+nsubj(happens-10, what-9)
+root(ROOT-0, happens-10)
+advmod(ceases-14, when-11)
+det(expansion-13, that-12)
+nsubj(ceases-14, expansion-13)
+advcl(happens-10, ceases-14)
+

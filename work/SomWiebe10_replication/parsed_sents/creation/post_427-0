@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP recommend)
+      (NP
+        (NP (DT this) (NN book))
+        (: :)
+        (NP
+          (NP (NNP God))
+          (PP (IN in)
+            (NP (DT the) (NNP Foxhole)))))
+      (PP (IN by)
+        (NP (NNP Charles) (NNP Sasser)))
+      (, ,)
+      (SBAR (RB not) (IN that)
+        (S
+          (NP (NN youll))
+          (VP
+            (VP (VBD read)
+              (NP (PRP it)))
+            (CC but)
+            (VP (VBP hey)
+              (S
+                (NP (PRP$ its) (NN worth))
+                (NP (DT a) (NN try))))))))
+    (. .)))
+
+nsubj(recommend-2, I-1)
+root(ROOT-0, recommend-2)
+det(book-4, this-3)
+dobj(recommend-2, book-4)
+dep(book-4, God-6)
+det(Foxhole-9, the-8)
+prep_in(God-6, Foxhole-9)
+nn(Sasser-12, Charles-11)
+prep_by(recommend-2, Sasser-12)
+dep(read-17, not-14)
+dep(read-17, that-15)
+nsubj(read-17, youll-16)
+nsubj(hey-20, youll-16)
+dep(recommend-2, read-17)
+dobj(read-17, it-18)
+dep(recommend-2, hey-20)
+conj_but(read-17, hey-20)
+poss(worth-22, its-21)
+nsubj(try-24, worth-22)
+det(try-24, a-23)
+xcomp(hey-20, try-24)
+

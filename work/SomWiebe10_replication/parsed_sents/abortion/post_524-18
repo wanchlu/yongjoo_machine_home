@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ first))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN degree))
+          (PP (IN of)
+            (NP (DT the) (NNS freedoms)))))
+      (PP (IN at)
+        (NP
+          (NP (NN stake))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP have)
+                (VP (VBN been)
+                  (VP (VBN mentioned)
+                    (PP (IN above))))))))))
+    (. .)))
+
+det(first-2, The-1)
+nsubj(is-3, first-2)
+root(ROOT-0, is-3)
+det(degree-6, the-5)
+prep_in(is-3, degree-6)
+det(freedoms-9, the-8)
+prep_of(degree-6, freedoms-9)
+prep_at(is-3, stake-11)
+nsubjpass(mentioned-16, stake-11)
+aux(mentioned-16, have-14)
+auxpass(mentioned-16, been-15)
+rcmod(stake-11, mentioned-16)
+prep(mentioned-16, above-17)
+

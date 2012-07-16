@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP
+          (NP (NNP Earth) (POS 's))
+          (NN spin))
+        (VP (VBZ is)
+          (VP (VBG slowing)
+            (PRT (RP down)))))
+      (, ,) (IN so)
+      (S
+        (ADVP
+          (NP
+            (QP (JJR less) (IN than) (DT a) (CD million))
+            (NNS years))
+          (RB ago))
+        (NP (PRP it))
+        (VP (MD would))))
+    (NP (PRP it))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBG going)
+          (ADVP
+            (ADVP (RB much) (RB too) (RB fast))
+            (PP (IN for)
+              (NP (NN anything))))
+          (S
+            (VP (TO to)
+              (VP (VB survive)
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (JJ centrifugal) (NN force))
+                    (, ,)
+                    (NP (CD 5,000) (NN mph) (NNS winds)))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+poss(spin-3, Earth-1)
+nsubj(slowing-5, spin-3)
+aux(slowing-5, is-4)
+dep(going-20, slowing-5)
+prt(slowing-5, down-6)
+dep(slowing-5, so-8)
+mwe(than-10, less-9)
+quantmod(million-12, than-10)
+quantmod(million-12, a-11)
+num(years-13, million-12)
+npadvmod(ago-14, years-13)
+advmod(would-16, ago-14)
+nsubj(would-16, it-15)
+dep(slowing-5, would-16)
+nsubj(going-20, it-17)
+xsubj(survive-27, it-17)
+aux(going-20, have-18)
+aux(going-20, been-19)
+root(ROOT-0, going-20)
+advmod(fast-23, much-21)
+advmod(fast-23, too-22)
+advmod(going-20, fast-23)
+prep_for(fast-23, anything-25)
+aux(survive-27, to-26)
+xcomp(going-20, survive-27)
+amod(force-30, centrifugal-29)
+dep(survive-27, force-30)
+num(winds-34, 5,000-32)
+nn(winds-34, mph-33)
+appos(force-30, winds-34)
+

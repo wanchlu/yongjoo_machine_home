@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Denying)
+        (NP (NNS children) (NN access))
+        (PP (TO to)
+          (NP (NN healthcare) (, ,) (NN housing) (, ,) (NN food)))))
+    (, ,)
+    (NP
+      (NP (NNS parents))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (MD can)
+            (VP (VB make)
+              (NP (DT a) (VBG living) (NN wage)))))))
+    (VP (VBZ is)
+      (ADVP (RB far) (RBR more))
+      (NP
+        (NP (DT a) (NN case))
+        (PP (IN of)
+          (NP
+            (NP (`` ``) (NN murder) ('' ''))
+            (PP (IN than)
+              (S
+                (VP (VBG allowing)
+                  (NP (DT a) (NN woman))
+                  (NP (DT the) (NN right)
+                    (S
+                      (VP (TO to)
+                        (VP (VB make)
+                          (NP (PRP$ her) (JJ own) (JJ medical) (NNS decisions)))))))))))))
+    (. .)))
+
+partmod(case-22, Denying-1)
+nn(access-3, children-2)
+dobj(Denying-1, access-3)
+nn(food-9, healthcare-5)
+dep(food-9, housing-7)
+prep_to(Denying-1, food-9)
+nsubj(make-14, parents-11)
+nsubj(case-22, parents-11)
+aux(make-14, can-13)
+rcmod(parents-11, make-14)
+det(wage-17, a-15)
+amod(wage-17, living-16)
+dobj(make-14, wage-17)
+cop(case-22, is-18)
+advmod(more-20, far-19)
+advmod(case-22, more-20)
+det(case-22, a-21)
+root(ROOT-0, case-22)
+prep_of(case-22, murder-25)
+prepc_than(murder-25, allowing-28)
+det(woman-30, a-29)
+iobj(allowing-28, woman-30)
+det(right-32, the-31)
+dobj(allowing-28, right-32)
+aux(make-34, to-33)
+infmod(right-32, make-34)
+poss(decisions-38, her-35)
+amod(decisions-38, own-36)
+amod(decisions-38, medical-37)
+dobj(make-34, decisions-38)
+

@@ -1,0 +1,29 @@
+(ROOT
+  (S (`` ``)
+    (NP (NN rScience))
+    (VP (VBZ HAS)
+      (NP
+        (NP (NNS processes))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP have)
+              (ADVP (RB continually))
+              (VP (VBN been)
+                (PP (IN in)
+                  (NP (NN evolution)))
+                (PP (IN since)
+                  (NP (PRP$ its) (NN inception)))))))))
+    (. .)))
+
+nsubj(HAS-3, rScience-2)
+root(ROOT-0, HAS-3)
+dobj(HAS-3, processes-4)
+nsubj(been-8, processes-4)
+aux(been-8, have-6)
+advmod(been-8, continually-7)
+rcmod(processes-4, been-8)
+prep_in(been-8, evolution-10)
+poss(inception-13, its-12)
+prep_since(been-8, inception-13)
+

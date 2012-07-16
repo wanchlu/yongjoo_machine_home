@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Richard) (NNP E.) (NNP Lenski))
+      (, ,)
+      (NP
+        (NP (NNP Charles) (NNP Ofria))
+        (, ,)
+        (NP (NNP Robert) (NNP T.) (NNP Pennock)))
+      (, ,))
+    (VP (VBP Christoph)
+      (NP
+        (NP (NNP Adami))
+        (, ,) ('' '')
+        (NP
+          (NP (`` ``)
+            (NP (DT The) (NNP Evolutionary) (NNP Origin))
+            (PP (IN of)
+              (NP (JJ Complex) (NNS Features)))
+            ('' ''))
+          (, ,)
+          (NP (NNP Nature) (-LRB- -LRB-) (NNP Vol)))))
+    (. .)))
+
+nn(Lenski-3, Richard-1)
+nn(Lenski-3, E.-2)
+nsubj(Christoph-12, Lenski-3)
+nn(Ofria-6, Charles-5)
+appos(Lenski-3, Ofria-6)
+nn(Pennock-10, Robert-8)
+nn(Pennock-10, T.-9)
+appos(Ofria-6, Pennock-10)
+root(ROOT-0, Christoph-12)
+dobj(Christoph-12, Adami-13)
+det(Origin-19, The-17)
+nn(Origin-19, Evolutionary-18)
+dep(Adami-13, Origin-19)
+amod(Features-22, Complex-21)
+prep_of(Origin-19, Features-22)
+nn(Vol-27, Nature-25)
+appos(Origin-19, Vol-27)
+

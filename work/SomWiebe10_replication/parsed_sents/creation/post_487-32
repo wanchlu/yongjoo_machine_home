@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (NP (NNP ID-proponents))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (NN evolution))))
+          (VP (MD should)
+            (VP (VB be)
+              (VP (VBN taught)
+                (PRN (: --)
+                  (NP
+                    (NP (DT both) (NNS strengths))
+                    (CC AND)
+                    (NP (NNS weaknesses))))))))))
+    (. .)))
+
+prep_in(believe-5, fact-2)
+nsubj(believe-5, ID-proponents-4)
+root(ROOT-0, believe-5)
+complm(taught-12, that-6)
+nsubjpass(taught-12, all-7)
+prep_of(all-7, evolution-9)
+aux(taught-12, should-10)
+auxpass(taught-12, be-11)
+ccomp(believe-5, taught-12)
+det(strengths-15, both-14)
+dep(taught-12, strengths-15)
+dep(taught-12, weaknesses-17)
+conj_and(strengths-15, weaknesses-17)
+

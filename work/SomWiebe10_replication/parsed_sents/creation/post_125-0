@@ -1,0 +1,35 @@
+(ROOT
+  (SBARQ (`` ``)
+    (WHADVP
+      (ADVP (RB First)
+        (CC and)
+        (RB foremost))
+      (WRB how))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT an) (NN animal))
+        (PP (IN without)
+          (NP (DT an) (JJ immune) (NN system))))
+      (VP (VB survive)
+        (S
+          (VP (TO to)
+            (VP (VB acquire)
+              (NP (CD one)))))))
+    (. .)))
+
+advmod(how-5, First-2)
+conj_and(First-2, foremost-4)
+advmod(how-5, foremost-4)
+advmod(survive-13, how-5)
+aux(survive-13, does-6)
+det(animal-8, an-7)
+nsubj(survive-13, animal-8)
+xsubj(acquire-15, animal-8)
+det(system-12, an-10)
+amod(system-12, immune-11)
+prep_without(animal-8, system-12)
+root(ROOT-0, survive-13)
+aux(acquire-15, to-14)
+xcomp(survive-13, acquire-15)
+dobj(acquire-15, one-16)
+

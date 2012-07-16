@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Human) (NNP DNA))
+      (PP (IN by)
+        (NP (PRP itself))))
+    (VP
+      (VP (VBZ defines)
+        (NP (DT a) (NN cell))
+        (PP (IN as)
+          (NP (NN Homo) (NNS sapiens))))
+      (, ,)
+      (CC but)
+      (VP (VBZ does) (RB not)
+        (VP (VB make)
+          (NP
+            (NP (DT a) (NN cell))
+            (NP (DT a) (NN person))))))
+    (. .)))
+
+nn(DNA-2, Human-1)
+nsubj(defines-5, DNA-2)
+nsubj(make-15, DNA-2)
+prep_by(DNA-2, itself-4)
+root(ROOT-0, defines-5)
+det(cell-7, a-6)
+dobj(defines-5, cell-7)
+nn(sapiens-10, Homo-9)
+prep_as(defines-5, sapiens-10)
+aux(make-15, does-13)
+neg(make-15, not-14)
+conj_but(defines-5, make-15)
+det(cell-17, a-16)
+dobj(make-15, cell-17)
+iobj(make-15, cell-17)
+det(person-19, a-18)
+dobj(make-15, person-19)
+dep(cell-17, person-19)
+

@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (NNP Beneficial) (NNS mutations))
+    (VP
+      (VP (VBP affect)
+        (NP
+          (NP (DT all) (NNS levels))
+          (PP (IN of)
+            (NP
+              (NP (NN gene) (NN regulation))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NNS cells))
+                  (PP (VBG including)
+                    (NP (JJ individual) (NNS genes)))))))))
+      (CC and)
+      (VP (VBZ operons)
+        (NP (PDT all) (DT the) (NN way))
+        (PP (TO to)
+          (NP (JJ global) (JJ regulatory) (NNS networks)))))
+    (. .)))
+
+nn(mutations-2, Beneficial-1)
+nsubj(affect-3, mutations-2)
+nsubj(operons-16, mutations-2)
+root(ROOT-0, affect-3)
+det(levels-5, all-4)
+dobj(affect-3, levels-5)
+nn(regulation-8, gene-7)
+prep_of(levels-5, regulation-8)
+det(cells-11, the-10)
+prep_in(regulation-8, cells-11)
+amod(genes-14, individual-13)
+prep_including(cells-11, genes-14)
+conj_and(affect-3, operons-16)
+predet(way-19, all-17)
+det(way-19, the-18)
+dobj(operons-16, way-19)
+amod(networks-23, global-21)
+amod(networks-23, regulatory-22)
+prep_to(operons-16, networks-23)
+

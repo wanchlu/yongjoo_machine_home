@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (NN evolution))
+        (PP (IN by)
+          (NP (JJ natural) (NN selection)))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (VBN proposed) (NN mechanism))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP (VBN proven)
+                  (S
+                    (VP (TO to)
+                      (VP (VB work)
+                        (PP (IN on)
+                          (NP
+                            (NP (JJ small) (NN scale) (NNS changes))
+                            (PRN (-LRB- -LRB-)
+                              (NP (NN point) (NNS mutations))
+                              (-RRB- -RRB-))))))))))))))
+    (. .)))
+
+prep_for(is-8, evolution-2)
+amod(selection-5, natural-4)
+prep_by(evolution-2, selection-5)
+expl(is-8, there-7)
+root(ROOT-0, is-8)
+det(mechanism-11, a-9)
+amod(mechanism-11, proposed-10)
+nsubj(is-8, mechanism-11)
+nsubjpass(proven-16, mechanism-11)
+aux(proven-16, has-14)
+auxpass(proven-16, been-15)
+rcmod(mechanism-11, proven-16)
+aux(work-18, to-17)
+xcomp(proven-16, work-18)
+amod(changes-22, small-20)
+nn(changes-22, scale-21)
+prep_on(work-18, changes-22)
+nn(mutations-25, point-24)
+appos(changes-22, mutations-25)
+

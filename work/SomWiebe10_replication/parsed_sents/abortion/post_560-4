@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Legs) (, ,) (NNS arms)
+        (CC and)
+        (NNS torso))
+      (PP (IN of)
+        (NP (DT the) (NN fetus))))
+    (VP (VBP are)
+      (VP (VBN delivered)
+        (PRN (-LRB- -LRB-)
+          (VP
+            (ADVP (RB i.e.))
+            (VBN expelled)
+            (PP (IN from)
+              (NP (DT the) (NN mother))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+nsubjpass(delivered-10, Legs-1)
+conj_and(Legs-1, arms-3)
+nsubjpass(delivered-10, arms-3)
+conj_and(Legs-1, torso-5)
+nsubjpass(delivered-10, torso-5)
+det(fetus-8, the-7)
+prep_of(Legs-1, fetus-8)
+auxpass(delivered-10, are-9)
+root(ROOT-0, delivered-10)
+advmod(expelled-13, i.e.-12)
+dep(delivered-10, expelled-13)
+det(mother-16, the-15)
+prep_from(expelled-13, mother-16)
+

@@ -1,0 +1,105 @@
+(ROOT
+  (S
+    (NP (DT The) (NN point))
+    (VP (VBZ is) (, ,)
+      (SBAR
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP
+              (NP (DT no) (NN guarantee))
+              (PP (IN for)
+                (NP
+                  (NP (DT any) (VBN given) (NN outcome))
+                  (, ,)
+                  (NP (JJ only) (NNS possibilities))
+                  (, ,)
+                  (VP (VBN given)
+                    (NP
+                      (NP (DT a) (NN set))
+                      (PP (IN of)
+                        (NP (NNS probabilities)
+                          (CC and)
+                          (NNS conditions))))))))))))
+    (. .)))
+
+det(point-2, The-1)
+nsubj(is-3, point-2)
+root(ROOT-0, is-3)
+expl(is-6, there-5)
+ccomp(is-3, is-6)
+det(guarantee-8, no-7)
+nsubj(is-6, guarantee-8)
+det(outcome-12, any-10)
+amod(outcome-12, given-11)
+prep_for(guarantee-8, outcome-12)
+amod(possibilities-15, only-14)
+appos(outcome-12, possibilities-15)
+partmod(outcome-12, given-17)
+det(set-19, a-18)
+dobj(given-17, set-19)
+prep_of(set-19, probabilities-21)
+prep_of(set-19, conditions-23)
+conj_and(probabilities-21, conditions-23)
+
+(ROOT
+  (S
+    (NP (NNS Zygotes))
+    (VP (VBP are) (RB not)
+      (PP (IN like)
+        (NP
+          (NP (NN plant) (NNS seeds))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (SBAR (IN if)
+                (S
+                  (NP (PRP you))
+                  (VP
+                    (VP (VB put)
+                      (NP (PRP them))
+                      (PP (IN in)
+                        (NP (DT the) (NN ground))))
+                    (CC and)
+                    (VP (VB give)
+                      (NP (PRP them))
+                      (NP
+                        (NP (DT a) (NN minimum))
+                        (PP (IN of)
+                          (NP (NN care))))))))
+              (, ,)
+              (NP (PRP they))
+              (VP (MD 'll)
+                (VP (VB sprout)
+                  (PP (IN into)
+                    (NP
+                      (ADJP (RB fully) (JJ living))
+                      (NNS systems))))))))))
+    (. .)))
+
+nsubj(are-2, Zygotes-1)
+root(ROOT-0, are-2)
+neg(are-2, not-3)
+nn(seeds-6, plant-5)
+prep_like(are-2, seeds-6)
+advmod(sprout-25, where-7)
+mark(put-10, if-8)
+nsubj(put-10, you-9)
+nsubj(give-16, you-9)
+advcl(sprout-25, put-10)
+dobj(put-10, them-11)
+det(ground-14, the-13)
+prep_in(put-10, ground-14)
+conj_and(put-10, give-16)
+advcl(sprout-25, give-16)
+iobj(give-16, them-17)
+det(minimum-19, a-18)
+dobj(give-16, minimum-19)
+prep_of(minimum-19, care-21)
+nsubj(sprout-25, they-23)
+aux(sprout-25, 'll-24)
+rcmod(seeds-6, sprout-25)
+advmod(living-28, fully-27)
+amod(systems-29, living-28)
+prep_into(sprout-25, systems-29)
+

@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ is)
+        (ADJP (JJ unobserved))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (DT an) (NN unproven) (NN theory))
+          (SBAR
+            (S
+              (NP (DT The) (NN term) (NN evolution))
+              (VP (MD can)
+                (VP (VB describe)
+                  (NP
+                    (NP (DT a) (NN number))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS things))
+                        (, ,)
+                        (SBAR
+                          (WHNP
+                            (NP (DT some))
+                            (WHPP (IN of)
+                              (WHNP (WDT which))))
+                          (S
+                            (VP (VBP are)
+                              (ADJP (RB directly) (JJ observable)
+                                (SBAR (IN while)
+                                  (S
+                                    (NP (NNS others))
+                                    (VP (VBP are) (RB not))))))))))))))))))
+    (. .)))
+
+nsubj(unobserved-3, Evolution-1)
+cop(unobserved-3, is-2)
+root(ROOT-0, unobserved-3)
+nsubj(theory-9, it-5)
+cop(theory-9, is-6)
+det(theory-9, an-7)
+nn(theory-9, unproven-8)
+parataxis(unobserved-3, theory-9)
+det(evolution-12, The-10)
+nn(evolution-12, term-11)
+nsubj(describe-14, evolution-12)
+aux(describe-14, can-13)
+rcmod(theory-9, describe-14)
+det(number-16, a-15)
+dobj(describe-14, number-16)
+prep_of(number-16, things-18)
+prep_of(some-20, things-18)
+nsubj(observable-25, some-20)
+cop(observable-25, are-23)
+advmod(observable-25, directly-24)
+rcmod(things-18, observable-25)
+mark(are-28, while-26)
+nsubj(are-28, others-27)
+ccomp(observable-25, are-28)
+neg(are-28, not-29)
+

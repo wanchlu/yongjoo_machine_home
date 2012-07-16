@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (SBAR (IN After)
+      (S
+        (NP (PRP we))
+        (VP (VBP test)
+          (SBAR
+            (S
+              (NP
+                (NP (NNP ID))
+                (, ,)
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP find)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP it))
+                          (VP
+                            (VP (VBZ leads)
+                              (PP (TO to)
+                                (NP (JJ successful) (NNS predictions))))
+                            (CC and)
+                            (VP
+                              (ADVP
+                                (ADVP (RB never))
+                                (PRN (-LRB- -LRB-)
+                                  (CC or)
+                                  (FRAG
+                                    (ADVP (RB hardly))
+                                    (ADVP (RB ever)))
+                                  (-RRB- -RRB-)))
+                              (VBZ leads)
+                              (PP (TO to)
+                                (NP (VBN failed) (NNS predictions))))))))))
+                (, ,))
+              (ADVP
+                (ADVP (RB then))
+                (CC and)
+                (ADVP (RB only) (RB then)))
+              (VP (MD should)))))))
+    (NP (PRP we))
+    (VP (VBP worry)
+      (PP (IN about)
+        (NP
+          (NP (DT the) (NN cause))
+          (PP (IN of)
+            (NP (DT the) (NN designer))))))
+    (. .)))
+
+mark(test-3, After-1)
+nsubj(test-3, we-2)
+advcl(worry-33, test-3)
+nsubj(should-31, ID-4)
+mark(find-8, if-6)
+nsubj(find-8, we-7)
+dep(ID-4, find-8)
+complm(leads-11, that-9)
+nsubj(leads-11, it-10)
+nsubj(leads-22, it-10)
+ccomp(find-8, leads-11)
+amod(predictions-14, successful-13)
+prep_to(leads-11, predictions-14)
+advmod(leads-22, never-16)
+dep(never-16, or-18)
+dep(or-18, hardly-19)
+dep(hardly-19, ever-20)
+ccomp(find-8, leads-22)
+conj_and(leads-11, leads-22)
+amod(predictions-25, failed-24)
+prep_to(leads-22, predictions-25)
+advmod(should-31, then-27)
+advmod(then-30, only-29)
+conj_and(then-27, then-30)
+advmod(should-31, then-30)
+ccomp(test-3, should-31)
+nsubj(worry-33, we-32)
+root(ROOT-0, worry-33)
+det(cause-36, the-35)
+prep_about(worry-33, cause-36)
+det(designer-39, the-38)
+prep_of(cause-36, designer-39)
+

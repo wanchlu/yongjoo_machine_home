@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP (RB nowhere))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBD claimed)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP Moses))
+                  (ADVP (RB personally))
+                  (VP (VBD wrote)
+                    (NP (DT the) (NNP Torah))))))))
+        (CC but)
+        (SBAR (IN as)
+          (S
+            (VP (VBD was)
+              (NP
+                (NP (DT the) (NN custome))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN day))
+                    (SBAR
+                      (S
+                        (NP (PRP he))
+                        (VP (VBD was)
+                          (NP
+                            (NP (DT the) (JJ likely) (NN author))
+                            (PP (IN with)
+                              (NP
+                                (NP (NNS scribes))
+                                (VP (VBG putting)
+                                  (NP (PRP$ his) (NNS words))
+                                  (PP (TO to)
+                                    (NP (DT the) (VBN written) (NN form))))))))))))))))))
+    (. .)))
+
+nsubj(is-2, nowhere-1)
+root(ROOT-0, is-2)
+nsubj(claimed-4, it-3)
+dep(is-2, claimed-4)
+complm(wrote-8, that-5)
+nsubj(wrote-8, Moses-6)
+advmod(wrote-8, personally-7)
+ccomp(claimed-4, wrote-8)
+det(Torah-10, the-9)
+dobj(wrote-8, Torah-10)
+mark(custome-15, as-12)
+cop(custome-15, was-13)
+det(custome-15, the-14)
+dep(is-2, custome-15)
+conj_but(claimed-4, custome-15)
+det(day-18, the-17)
+prep_of(custome-15, day-18)
+nsubj(author-23, he-19)
+cop(author-23, was-20)
+det(author-23, the-21)
+amod(author-23, likely-22)
+rcmod(day-18, author-23)
+prep_with(author-23, scribes-25)
+partmod(scribes-25, putting-26)
+poss(words-28, his-27)
+dobj(putting-26, words-28)
+det(form-32, the-30)
+amod(form-32, written-31)
+prep_to(putting-26, form-32)
+

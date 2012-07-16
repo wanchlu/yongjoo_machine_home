@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (PRP$ His) (NN mind))
+    (VP (VBD was)
+      (VP (VBN made)
+        (PRT (RP up))
+        (SBAR (IN before)
+          (S
+            (NP (PRP he))
+            (ADVP (RB even))
+            (VP (VBD heard)
+              (NP (DT the) (NN case)))))))
+    (. .)))
+
+poss(mind-2, His-1)
+nsubjpass(made-4, mind-2)
+auxpass(made-4, was-3)
+root(ROOT-0, made-4)
+prt(made-4, up-5)
+mark(heard-9, before-6)
+nsubj(heard-9, he-7)
+advmod(heard-9, even-8)
+advcl(made-4, heard-9)
+det(case-11, the-10)
+dobj(heard-9, case-11)
+
+(ROOT
+  (S
+    (S
+      (VP (SYM =)
+        (NP (JJ =) (NNS Nope))))
+    (, ,)
+    (NP (DT the) (NNP ACLU))
+    (VP (VBD submitted)
+      (NP (DT the) (NNS findings))
+      (PP (IN after)
+        (NP (DT the) (NN trial))))
+    (. .)))
+
+dep(Nope-3, =-1)
+amod(Nope-3, =-2)
+ccomp(submitted-7, Nope-3)
+det(ACLU-6, the-5)
+nsubj(submitted-7, ACLU-6)
+root(ROOT-0, submitted-7)
+det(findings-9, the-8)
+dobj(submitted-7, findings-9)
+det(trial-12, the-11)
+prep_after(submitted-7, trial-12)
+

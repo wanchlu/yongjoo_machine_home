@@ -1,0 +1,381 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ widespread) (NN availability))
+      (PP (IN of)
+        (NP (NN birth) (NN control) (NNS options))))
+    (VP (VBP provide)
+      (NP (NNS women))
+      (PP (IN with)
+        (NP
+          (NP (DT a) (JJ sufficient) (`` ``) (NN choice) ('' ''))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB determine)
+                  (NP
+                    (NP (DT the) (NN future))
+                    (PP (IN of)
+                      (NP (PRP$ their) (NNS bodies)))))))))))
+    (. .)))
+
+det(availability-3, The-1)
+amod(availability-3, widespread-2)
+nsubj(provide-8, availability-3)
+nn(options-7, birth-5)
+nn(options-7, control-6)
+prep_of(availability-3, options-7)
+root(ROOT-0, provide-8)
+dobj(provide-8, women-9)
+det(choice-14, a-11)
+amod(choice-14, sufficient-12)
+prep_with(provide-8, choice-14)
+aux(determine-17, to-16)
+infmod(choice-14, determine-17)
+det(future-19, the-18)
+dobj(determine-17, future-19)
+poss(bodies-22, their-21)
+prep_of(future-19, bodies-22)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS options))
+    (VP (VBP include) (, ,)
+      (NP (NN abstinence) (, ,) (NN condom)
+        (CC and)
+        (NNS profalactics))
+      (, ,)
+      (S
+        (NP (JJ birth-control) (NNS pills) (, ,) (NN morning-after)
+          (CC or)
+          (NN plan) (NN B) (NNS pills))))
+    (. .)))
+
+det(options-2, The-1)
+nsubj(include-3, options-2)
+root(ROOT-0, include-3)
+dobj(include-3, abstinence-5)
+dobj(include-3, condom-7)
+conj_and(abstinence-5, condom-7)
+dobj(include-3, profalactics-9)
+conj_and(abstinence-5, profalactics-9)
+amod(pills-18, birth-control-11)
+nn(pills-18, pills-12)
+conj_or(pills-12, morning-after-14)
+nn(pills-18, morning-after-14)
+conj_or(pills-12, plan-16)
+nn(pills-18, plan-16)
+nn(pills-18, B-17)
+dep(include-3, pills-18)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN woman))
+        (VP (VBZ does) (RB not)
+          (VP (VB want)
+            (S
+              (VP (TO to)
+                (VP (VB get)
+                  (ADJP (JJ pregnant)))))))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ is)
+      (ADJP (JJ free)
+        (S
+          (VP (TO to)
+            (VP (VB choose)
+              (NP
+                (NP (DT these) (NNS options))
+                (PP (IN of)
+                  (NP
+                    (NP (NN birth) (NN control))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (SBAR (IN if)
+                          (S
+                            (VP (VBD used))))
+                        (ADVP (RB responsibly))
+                        (VP (VBP have)
+                          (NP
+                            (NP (DT a) (JJ high) (NN probability))
+                            (PP (IN of)
+                              (S
+                                (VP (VBG preventing)
+                                  (NP (NN impregnation)))))))
+                        (PRN (-LRB- -LRB-)
+                          (S
+                            (NP (NNP Abstinence))
+                            (VP (VBZ is)
+                              (ADJP
+                                (NP (CD 100) (NN %))
+                                (JJ effective))))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+mark(want-6, If-1)
+det(woman-3, a-2)
+nsubj(want-6, woman-3)
+xsubj(pregnant-9, woman-3)
+aux(want-6, does-4)
+neg(want-6, not-5)
+advcl(free-13, want-6)
+aux(pregnant-9, to-7)
+dep(pregnant-9, get-8)
+xcomp(want-6, pregnant-9)
+nsubj(free-13, she-11)
+cop(free-13, is-12)
+root(ROOT-0, free-13)
+aux(choose-15, to-14)
+xcomp(free-13, choose-15)
+det(options-17, these-16)
+dobj(choose-15, options-17)
+nn(control-20, birth-19)
+prep_of(options-17, control-20)
+dep(have-26, control-20)
+mark(used-24, if-23)
+advcl(have-26, used-24)
+csubj(have-26, used-24)
+advmod(have-26, responsibly-25)
+rcmod(control-20, have-26)
+det(probability-29, a-27)
+amod(probability-29, high-28)
+dobj(have-26, probability-29)
+prepc_of(probability-29, preventing-31)
+dobj(preventing-31, impregnation-32)
+nsubj(effective-38, Abstinence-34)
+cop(effective-38, is-35)
+num(%-37, 100-36)
+npadvmod(effective-38, %-37)
+parataxis(have-26, effective-38)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (JJ unintentional) (NN impregnation))
+    (VP (VBZ has)
+      (NP
+        (NP (DT a) (JJ high) (NN correlation))
+        (PP (IN with)
+          (NP
+            (NP (DT the)
+              (ADJP
+                (ADJP (JJ irresponsible))
+                (CC or)
+                (ADJP (RB even) (JJ negligent)))
+              (NN use))
+            (CC or)
+            (NP
+              (NP (NN avoidance))
+              (PP (IN of)
+                (NP (NN birth) (NN control) (NNS methods))))))))
+    (. .)))
+
+advmod(has-5, Therefore-1)
+amod(impregnation-4, unintentional-3)
+nsubj(has-5, impregnation-4)
+root(ROOT-0, has-5)
+det(correlation-8, a-6)
+amod(correlation-8, high-7)
+dobj(has-5, correlation-8)
+det(use-15, the-10)
+amod(use-15, irresponsible-11)
+advmod(negligent-14, even-13)
+conj_or(irresponsible-11, negligent-14)
+amod(use-15, negligent-14)
+prep_with(correlation-8, use-15)
+prep_with(correlation-8, avoidance-17)
+conj_or(use-15, avoidance-17)
+nn(methods-21, birth-19)
+nn(methods-21, control-20)
+prep_of(avoidance-17, methods-21)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (JJ such)))
+    (, ,)
+    (NP (NNS women))
+    (VP (VBP are)
+      (VP (VBN provided)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB choose)
+                (S
+                  (VP (TO to)
+                    (VP (VB act)
+                      (ADVP (RB responsibly))
+                      (PP (IN in)
+                        (S
+                          (VP (VBG protecting)
+                            (NP (PRP$ their) (NNS bodies))
+                            (PP (IN from)
+                              (NP
+                                (NP (NN impregnation))
+                                (PP (IN in)
+                                  (NP (DT the) (JJ first) (NN place)))))))))))))))))
+    (. .)))
+
+prep_such_as(provided-6, such-2)
+nsubjpass(provided-6, women-4)
+auxpass(provided-6, are-5)
+root(ROOT-0, provided-6)
+det(right-8, the-7)
+dobj(provided-6, right-8)
+aux(choose-10, to-9)
+infmod(right-8, choose-10)
+aux(act-12, to-11)
+xcomp(choose-10, act-12)
+advmod(act-12, responsibly-13)
+prepc_in(act-12, protecting-15)
+poss(bodies-17, their-16)
+dobj(protecting-15, bodies-17)
+prep_from(protecting-15, impregnation-19)
+det(place-23, the-21)
+amod(place-23, first-22)
+prep_in(impregnation-19, place-23)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP
+      (NP (DT a) (NN ban))
+      (PP (IN on)
+        (NP (JJ partial) (NN birth) (NN abortion))))
+    (VP (MD may) (RB not)
+      (VP (VB deprive)
+        (S
+          (NP
+            (NP (NNS women))
+            (PP (IN of)
+              (NP (DT the) (NN right))))
+          (VP (VB choose)
+            (S
+              (VP (TO to)
+                (VP (VB take)
+                  (NP
+                    (NP (DT the) (JJ initial) (, ,) (JJ responsible) (NNS steps))
+                    (PP (IN in)
+                      (S
+                        (VP (VBG protecting)
+                          (PP (IN against)
+                            (NP (JJ uninented) (NN impregnation))))))))))))))
+    (. .)))
+
+advmod(deprive-11, Therefore-1)
+det(ban-4, a-3)
+nsubj(deprive-11, ban-4)
+amod(abortion-8, partial-6)
+nn(abortion-8, birth-7)
+prep_on(ban-4, abortion-8)
+aux(deprive-11, may-9)
+neg(deprive-11, not-10)
+root(ROOT-0, deprive-11)
+nsubj(choose-16, women-12)
+xsubj(take-18, women-12)
+det(right-15, the-14)
+prep_of(women-12, right-15)
+ccomp(deprive-11, choose-16)
+aux(take-18, to-17)
+xcomp(choose-16, take-18)
+det(steps-23, the-19)
+amod(steps-23, initial-20)
+amod(steps-23, responsible-22)
+dobj(take-18, steps-23)
+prepc_in(steps-23, protecting-25)
+amod(impregnation-28, uninented-27)
+prep_against(protecting-25, impregnation-28)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD may)
+      (VP (VB be)
+        (NP
+          (NP (DT a) (JJ sufficient) (NN provision))
+          (PP (TO to)
+            (NP
+              (NP (NNS women))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (`` ``) (NN right))
+                  (SBAR
+                    (S
+                      (VP (TO to)
+                        (VP (VB choose) ('' '')))))
+                  (S
+                    (VP (TO to)
+                      (VP (VB adopt)
+                        (NP
+                          (NP (NNS measures))
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (MD will)
+                                (VP (VB help)
+                                  (S
+                                    (NP (PRP them))
+                                    (VP (VB control)
+                                      (NP
+                                        (NP (DT the) (NN future))
+                                        (PP (IN of)
+                                          (NP (PRP$ their) (NNS bodies)))))))))))))))))))))
+    (. .)))
+
+nsubj(provision-6, This-1)
+aux(provision-6, may-2)
+cop(provision-6, be-3)
+det(provision-6, a-4)
+amod(provision-6, sufficient-5)
+root(ROOT-0, provision-6)
+prep_to(provision-6, women-8)
+det(right-12, the-10)
+prep_of(women-8, right-12)
+aux(choose-14, to-13)
+infmod(right-12, choose-14)
+aux(adopt-17, to-16)
+infmod(right-12, adopt-17)
+dobj(adopt-17, measures-18)
+nsubj(help-21, measures-18)
+aux(help-21, will-20)
+rcmod(measures-18, help-21)
+nsubj(control-23, them-22)
+ccomp(help-21, control-23)
+det(future-25, the-24)
+dobj(control-23, future-25)
+poss(bodies-28, their-27)
+prep_of(future-25, bodies-28)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (JJ additional) (NNS provisions))
+      (, ,)
+      (PP (JJ such) (IN as)
+        (NP (JJ partial) (NN birth) (NN abortion)))
+      (, ,))
+    (VP (MD may)
+      (VP (VB be)
+        (ADJP (JJ redundant)
+          (CC and)
+          (JJ excessive))))
+    (. .)))
+
+det(provisions-3, Any-1)
+amod(provisions-3, additional-2)
+nsubj(redundant-13, provisions-3)
+nsubj(excessive-15, provisions-3)
+amod(abortion-9, partial-7)
+nn(abortion-9, birth-8)
+prep_such_as(provisions-3, abortion-9)
+aux(redundant-13, may-11)
+cop(redundant-13, be-12)
+root(ROOT-0, redundant-13)
+conj_and(redundant-13, excessive-15)
+

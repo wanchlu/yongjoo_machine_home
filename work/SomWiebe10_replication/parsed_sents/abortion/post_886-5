@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (QP (RB About) (PDT half)))
+        (PP (IN of)
+          (NP
+            (NP (NNS women))
+            (PP (IN in)
+              (NP (DT the) (NNP US)))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP have)
+                  (VP (VBN had)
+                    (NP (DT an) (NN abortion))
+                    (ADVP (RB already)))))))))
+      (VP (VBP have)
+        (NP (NNS children))))
+    (, ,) (IN so)
+    (S
+      (NP (PRP they))
+      (VP
+        (VP (VBP know)
+          (NP (DT the) (NNS joys)))
+        (CC and)
+        (VP (VBZ stresses)
+          (PP (IN of)
+            (NP (NNS children))))))
+    (. .)))
+
+quantmod(half-2, About-1)
+nsubj(have-14, half-2)
+prep_of(half-2, women-4)
+nsubj(had-10, women-4)
+det(US-7, the-6)
+prep_in(women-4, US-7)
+aux(had-10, have-9)
+rcmod(women-4, had-10)
+det(abortion-12, an-11)
+dobj(had-10, abortion-12)
+advmod(had-10, already-13)
+root(ROOT-0, have-14)
+dobj(have-14, children-15)
+dep(have-14, so-17)
+nsubj(know-19, they-18)
+nsubj(stresses-23, they-18)
+ccomp(have-14, know-19)
+det(joys-21, the-20)
+dobj(know-19, joys-21)
+ccomp(have-14, stresses-23)
+conj_and(know-19, stresses-23)
+prep_of(stresses-23, children-25)
+

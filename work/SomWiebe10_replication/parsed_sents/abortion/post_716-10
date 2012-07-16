@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (DT A) (NN woman))
+    (VP (VBZ grieves)
+      (NP
+        (NP (DT the) (NN loss))
+        (PP (IN of)
+          (NP (PRP$ her) (NN baby))))
+      (SBAR (IN because)
+        (S
+          (NP (PRP she))
+          (VP (VBZ knows)
+            (NP
+              (SBAR
+                (WHNP (RB exactly) (WP what))
+                (S
+                  (NP (PRP it))
+                  (VP (VBD was))))
+              (: :)
+              (NP (PRP$ her)
+                (ADJP (RB very) (JJ own))
+                (NN offspring)))))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(grieves-3, woman-2)
+root(ROOT-0, grieves-3)
+det(loss-5, the-4)
+dobj(grieves-3, loss-5)
+poss(baby-8, her-7)
+prep_of(loss-5, baby-8)
+mark(knows-11, because-9)
+nsubj(knows-11, she-10)
+advcl(grieves-3, knows-11)
+advmod(what-13, exactly-12)
+dobj(was-15, what-13)
+rel(was-15, what-13)
+nsubj(was-15, it-14)
+dep(offspring-20, was-15)
+poss(offspring-20, her-17)
+advmod(own-19, very-18)
+amod(offspring-20, own-19)
+dobj(knows-11, offspring-20)
+

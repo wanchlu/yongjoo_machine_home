@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Scientific))
+      (VP (VBD thought)
+        (NP
+          (NP (JJ abandons) (NNS theories)
+            (CC and)
+            (NNS notions))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are) (RB not)
+                (VP (VBN buttressed)
+                  (PP (IN by)
+                    (NP (NNS data)
+                      (CC or)
+                      (NN logic))))))))))
+    (: ;)
+    (S
+      (NP (NNP ID))
+      (VP (VBZ has)
+        (ADVP (RB never))
+        (VP (VBN withstood)
+          (NP (JJ such) (NN scrutiny)))))
+    (. .)))
+
+nsubj(thought-2, Scientific-1)
+root(ROOT-0, thought-2)
+amod(theories-4, abandons-3)
+dobj(thought-2, theories-4)
+nsubjpass(buttressed-10, theories-4)
+dobj(thought-2, notions-6)
+conj_and(theories-4, notions-6)
+nsubjpass(buttressed-10, notions-6)
+auxpass(buttressed-10, are-8)
+neg(buttressed-10, not-9)
+rcmod(theories-4, buttressed-10)
+agent(buttressed-10, data-12)
+agent(buttressed-10, logic-14)
+conj_or(data-12, logic-14)
+nsubj(withstood-19, ID-16)
+aux(withstood-19, has-17)
+neg(withstood-19, never-18)
+parataxis(thought-2, withstood-19)
+amod(scrutiny-21, such-20)
+dobj(withstood-19, scrutiny-21)
+

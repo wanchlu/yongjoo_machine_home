@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN god))
+        (VP (VBZ is)
+          (ADJP (JJ perfect))
+          (ADVP (RB then))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBD did)))))))
+    (NP (PRP he))
+    (VP (VBP let)
+      (S
+        (NP (DT the) (NNP devil))
+        (ADJP (VB loose)
+          (PP (IN on)
+            (NP (NN man))))))
+    (. ?)))
+
+mark(perfect-4, If-1)
+nsubj(perfect-4, god-2)
+cop(perfect-4, is-3)
+advcl(let-9, perfect-4)
+advmod(perfect-4, then-5)
+advmod(did-7, why-6)
+advcl(perfect-4, did-7)
+nsubj(let-9, he-8)
+root(ROOT-0, let-9)
+det(devil-11, the-10)
+nsubj(on-13, devil-11)
+dep(on-13, loose-12)
+xcomp(let-9, on-13)
+pobj(on-13, man-14)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP God))
+        (VP
+          (VP (VBZ has)
+            (NP (DT a) (NN plan)))
+          (CC and)
+          (VP (VBZ knows)
+            (S
+              (VP (VBG evrything)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (VP (VBP do)
+                      (SBAR (IN so)
+                        (S
+                          (NP (JJ many) (NNS people))
+                          (VP (VBP feel)
+                            (SBAR
+                              (S
+                                (NP (PRP they))
+                                (VP (VBP have)
+                                  (NP (DT the) (NN right)
+                                    (S
+                                      (VP (TO to)
+                                        (VP (VB doubt)
+                                          (NP (NNS Gods)))))))))))))))))))))
+    (VP (VBP plan)
+      (PP (IN by)
+        (S
+          (VP (VBG asking)
+            (PP (IN for)
+              (NP (NNS things)))))))
+    (. ?)))
+
+mark(has-3, If-1)
+nsubj(has-3, God-2)
+nsubj(knows-7, God-2)
+csubj(plan-22, has-3)
+det(plan-5, a-4)
+dobj(has-3, plan-5)
+conj_and(has-3, knows-7)
+csubj(plan-22, knows-7)
+xcomp(knows-7, evrything-8)
+advmod(do-10, why-9)
+advcl(evrything-8, do-10)
+mark(feel-14, so-11)
+amod(people-13, many-12)
+nsubj(feel-14, people-13)
+advcl(do-10, feel-14)
+nsubj(have-16, they-15)
+ccomp(feel-14, have-16)
+det(right-18, the-17)
+dobj(have-16, right-18)
+aux(doubt-20, to-19)
+infmod(right-18, doubt-20)
+dobj(doubt-20, Gods-21)
+root(ROOT-0, plan-22)
+prepc_by(plan-22, asking-24)
+prep_for(asking-24, things-26)
+

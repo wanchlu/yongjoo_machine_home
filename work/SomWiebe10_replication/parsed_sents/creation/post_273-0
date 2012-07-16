@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Science))
+      (VP (VBD did) (RB not)
+        (VP (VB design)
+          (NP (DT the) (NN functionality)))))
+    (, ,)
+    (NP (NNS scientists))
+    (VP (VBD observed)
+      (NP
+        (NP (DT the)
+          (ADJP (JJ functionality)
+            (CC and)
+            (JJ developed))
+          (NNS theories))
+        (PP (IN on)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP it))
+              (VP (VBP function)
+                (S
+                  (VP (VBG \/)
+                    (SBAR
+                      (WHADVP (WRB how))
+                      (S
+                        (NP (DT that) (NN function))
+                        (VP (VBD came)
+                          (PRT (RP about)))))))))))))
+    (. .)))
+
+nsubj(design-4, Science-1)
+aux(design-4, did-2)
+neg(design-4, not-3)
+ccomp(observed-9, design-4)
+det(functionality-6, the-5)
+dobj(design-4, functionality-6)
+nsubj(observed-9, scientists-8)
+root(ROOT-0, observed-9)
+det(theories-14, the-10)
+amod(theories-14, functionality-11)
+conj_and(functionality-11, developed-13)
+amod(theories-14, developed-13)
+dobj(observed-9, theories-14)
+advmod(function-18, how-16)
+nsubj(function-18, it-17)
+prepc_on(theories-14, function-18)
+xcomp(function-18, \/-19)
+advmod(came-23, how-20)
+det(function-22, that-21)
+nsubj(came-23, function-22)
+ccomp(\/-19, came-23)
+prt(came-23, about-24)
+

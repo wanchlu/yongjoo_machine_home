@@ -1,0 +1,173 @@
+(ROOT
+  (S
+    (NP (NNP Marriage))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN institution))
+        (PP (IN of)
+          (NP (NN religion)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD should) (RB not)
+              (VP (VB be)
+                (NP
+                  (NP (NN state))
+                  (VP (VBN regulated)))))))))
+    (. .)))
+
+nsubj(institution-4, Marriage-1)
+cop(institution-4, is-2)
+det(institution-4, an-3)
+root(ROOT-0, institution-4)
+nsubj(state-11, institution-4)
+prep_of(institution-4, religion-6)
+aux(state-11, should-8)
+neg(state-11, not-9)
+cop(state-11, be-10)
+rcmod(institution-4, state-11)
+partmod(state-11, regulated-12)
+
+(ROOT
+  (S
+    (NP (DT The) (NN state))
+    (VP (VBZ has)
+      (NP
+        (NP (DT an) (NN institution))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (PRP it) (POS 's))
+              (JJ own))
+            (VP (VBN called)
+              (NP
+                (NP (NNP the) ('' ''))
+                (NNP Civil) (NNP Union) ('' '')))))))
+    (. .)))
+
+det(state-2, The-1)
+nsubj(has-3, state-2)
+root(ROOT-0, has-3)
+det(institution-5, an-4)
+dobj(has-3, institution-5)
+prep_of(institution-5, it-7)
+possessive(it-7, 's-8)
+amod(it-7, own-9)
+partmod(it-7, called-10)
+nn(Union-14, the-11)
+nn(Union-14, Civil-13)
+dobj(called-10, Union-14)
+
+(ROOT
+  (S
+    (NP (DT The) (NN state))
+    (VP (MD should)
+      (VP (VB recognize)
+        (NP
+          (NP (JJ civil) (NNS unions))
+          (PP (IN between)
+            (NP (JJ same) (NN sex) (NNS couples))))
+        (, ,)
+        (SBAR (IN since)
+          (S
+            (NP (PRP they))
+            (VP (MD should)
+              (VP (VB be)
+                (VP (VBN afforded)
+                  (NP (DT the) (JJ same) (NNS rights))
+                  (PP (IN under)
+                    (NP (NN government)))
+                  (PP (IN as)
+                    (NP
+                      (NP (DT any) (JJ other) (NN partnership))
+                      (PRN (-LRB- -LRB-)
+                        (NP (JJ i.e.) (NN marriage))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+det(state-2, The-1)
+nsubj(recognize-4, state-2)
+aux(recognize-4, should-3)
+root(ROOT-0, recognize-4)
+amod(unions-6, civil-5)
+dobj(recognize-4, unions-6)
+amod(couples-10, same-8)
+nn(couples-10, sex-9)
+prep_between(unions-6, couples-10)
+mark(afforded-16, since-12)
+nsubjpass(afforded-16, they-13)
+aux(afforded-16, should-14)
+auxpass(afforded-16, be-15)
+advcl(recognize-4, afforded-16)
+det(rights-19, the-17)
+amod(rights-19, same-18)
+dobj(afforded-16, rights-19)
+prep_under(afforded-16, government-21)
+det(partnership-25, any-23)
+amod(partnership-25, other-24)
+prep_as(afforded-16, partnership-25)
+amod(marriage-28, i.e.-27)
+appos(partnership-25, marriage-28)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN idea))
+        (PP (IN of)
+          (NP (NN marriage))))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN defined)
+            (ADVP (RB only))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN context))
+                (PP (IN of)
+                  (NP (JJ religious) (NNS beliefs)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN state))
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (NP
+            (NP (DT any) (NN power))
+            (PP (IN over)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT the) (NN church))
+                  (VP (VBZ deems)
+                    (ADJP (RB as) (JJ appropriate)
+                      (CC or)
+                      (JJ inappropriate))))))))))
+    (. .)))
+
+det(idea-2, The-1)
+nsubjpass(defined-7, idea-2)
+prep_of(idea-2, marriage-4)
+aux(defined-7, should-5)
+auxpass(defined-7, be-6)
+root(ROOT-0, defined-7)
+advmod(defined-7, only-8)
+det(context-11, the-10)
+prep_in(defined-7, context-11)
+amod(beliefs-14, religious-13)
+prep_of(context-11, beliefs-14)
+det(state-18, the-17)
+nsubj(have-21, state-18)
+aux(have-21, should-19)
+neg(have-21, not-20)
+conj_and(defined-7, have-21)
+det(power-23, any-22)
+dobj(have-21, power-23)
+dobj(deems-28, what-25)
+det(church-27, the-26)
+nsubj(deems-28, church-27)
+prepc_over(power-23, deems-28)
+advmod(appropriate-30, as-29)
+acomp(deems-28, appropriate-30)
+acomp(deems-28, inappropriate-32)
+conj_or(appropriate-30, inappropriate-32)
+

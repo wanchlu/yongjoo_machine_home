@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Pandas))
+        (VP (VBZ fails)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN religious)
+                  (PP (IN in)
+                    (NP
+                      (NP (DT any) (JJ past) (NN present))
+                      (CC or)
+                      (NP (NN future)))))))))))
+    (VP (VBP form) (RB then)
+      (VP (VB enlighten)
+        (NP (PRP me))
+        (PP (TO to)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT the) (JJ other) (NNS facts))
+              (VP (VBP are)
+                (SBAR (IN that)
+                  (S
+                    (VP (VBP make)
+                      (S
+                        (NP
+                          (NP (NNP ID) (POS 's))
+                          (JJ religious) (NN nature))
+                        (`` ``)
+                        (ADJP (RB well) (VBN established))))))))))))
+    (. .)))
+
+mark(fails-3, If-1)
+nsubj(fails-3, Pandas-2)
+xsubj(religious-6, Pandas-2)
+csubj(form-13, fails-3)
+aux(religious-6, to-4)
+auxpass(religious-6, be-5)
+xcomp(fails-3, religious-6)
+det(present-10, any-8)
+amod(present-10, past-9)
+prep_in(religious-6, present-10)
+prep_in(religious-6, future-12)
+conj_or(present-10, future-12)
+root(ROOT-0, form-13)
+advmod(form-13, then-14)
+dep(form-13, enlighten-15)
+dobj(enlighten-15, me-16)
+dep(are-22, what-18)
+nsubj(make-24, what-18)
+det(facts-21, the-19)
+amod(facts-21, other-20)
+nsubj(are-22, facts-21)
+prepc_to(enlighten-15, are-22)
+complm(make-24, that-23)
+ccomp(are-22, make-24)
+poss(nature-28, ID-25)
+amod(nature-28, religious-27)
+dep(established-31, nature-28)
+advmod(established-31, well-30)
+dep(make-24, established-31)
+

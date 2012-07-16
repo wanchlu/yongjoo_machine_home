@@ -1,0 +1,28 @@
+(ROOT
+  (FRAG (CC But)
+    (SBAR (IN if)
+      (S
+        (NP (DT a) (NN doctor))
+        (VP (VBZ kills)
+          (NP
+            (NP
+              (NP
+                (QP (RB only) (CD one)))
+              (PP (IN of)
+                (NP (DT those) (NNS persons))))
+            (: ;)
+            (NP (DT no) (NN charge))))))
+    (. .)))
+
+dep(kills-5, But-1)
+mark(kills-5, if-2)
+det(doctor-4, a-3)
+nsubj(kills-5, doctor-4)
+root(ROOT-0, kills-5)
+quantmod(one-7, only-6)
+dobj(kills-5, one-7)
+det(persons-10, those-9)
+prep_of(one-7, persons-10)
+det(charge-13, no-12)
+dep(one-7, charge-13)
+

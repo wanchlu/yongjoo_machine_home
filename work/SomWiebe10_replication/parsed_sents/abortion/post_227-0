@@ -1,0 +1,25 @@
+(ROOT
+  (S
+    (NP (DT A) (NN study))
+    (VP (VBD was)
+      (VP (VBN done)
+        (PP (IN on)
+          (NP
+            (NP (DT the) (VBG voting) (NN record))
+            (PP (IN of)
+              (NP
+                (NP (NNPS Catholics))
+                (PP (IN in)
+                  (NP (NNP Congress)))))))))
+    (. .)))
+
+det(study-2, A-1)
+nsubjpass(done-4, study-2)
+auxpass(done-4, was-3)
+root(ROOT-0, done-4)
+det(record-8, the-6)
+amod(record-8, voting-7)
+prep_on(done-4, record-8)
+prep_of(record-8, Catholics-10)
+prep_in(Catholics-10, Congress-12)
+

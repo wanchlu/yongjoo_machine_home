@@ -1,0 +1,98 @@
+(ROOT
+  (NP (DT No) (NN reply) (NN !?)))
+
+det(!?-3, No-1)
+nn(!?-3, reply-2)
+root(ROOT-0, !?-3)
+
+(ROOT
+  (S
+    (ADVP (RB Instead))
+    (NP (PRP I))
+    (VP (VBP get)
+      (NP (DT a) (NN downvote)))
+    (. ?)))
+
+advmod(get-3, Instead-1)
+nsubj(get-3, I-2)
+root(ROOT-0, get-3)
+det(downvote-5, a-4)
+dobj(get-3, downvote-5)
+
+(ROOT
+  (FRAG
+    (PP (IN On)
+      (NP
+        (NP (DT a) (JJ full-page) (NN essay))
+        (PP (IN on)
+          (NP (DT the) (NN topic)))))
+    (. ?)))
+
+root(ROOT-0, On-1)
+det(essay-4, a-2)
+amod(essay-4, full-page-3)
+pobj(On-1, essay-4)
+det(topic-7, the-6)
+prep_on(essay-4, topic-7)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (NN kind))
+        (PP (IN of)
+          (PRN (, ,)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (VP (VBP do)
+                  (SBAR
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP say)))))))
+            (, ,))
+          (NP
+            (NP (NNS ah-yes))
+            (, ,)
+            (NP (NN bullshit))))))
+    (. .)))
+
+nsubj(kind-3, That-1)
+cop(kind-3, 's-2)
+root(ROOT-0, kind-3)
+advmod(do-7, how-6)
+dep(kind-3, do-7)
+nsubj(say-9, you-8)
+ccomp(do-7, say-9)
+prep_of(kind-3, ah-yes-11)
+appos(ah-yes-11, bullshit-13)
+
+(ROOT
+  (S (CC But)
+    (ADVP (RB alas))
+    (: ...)
+    (S
+      (NP (JJ such))
+      (VP (VBP are)
+        (NP
+          (NP (DT the) (NNS ways))
+          (PP (IN of)
+            (NP (NNP CreateDebate)))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBP suppose)))))))
+    (. .)))
+
+cc(ways-7, But-1)
+advmod(ways-7, alas-2)
+nsubj(ways-7, such-4)
+cop(ways-7, are-5)
+det(ways-7, the-6)
+root(ROOT-0, ways-7)
+dobj(suppose-11, ways-7)
+prep_of(ways-7, CreateDebate-9)
+nsubj(suppose-11, I-10)
+rcmod(ways-7, suppose-11)
+

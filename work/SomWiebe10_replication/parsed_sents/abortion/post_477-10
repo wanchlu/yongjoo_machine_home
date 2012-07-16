@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (FRAG
+      (X
+        (NP
+          (NP (NNP Stephen) (NNP D.) (NNP Schwarz) (NNP Department))
+          (PP (IN of)
+            (NP (NNP Philosophy) (CD 170) (NNP Chafee) (NNP Social) (NNP Science) (NNP Center))))
+        (NP (CD 10))
+        (NP
+          (NP (NNP Chafee) (NNP Road) (NNP University))
+          (PP (IN of)
+            (NP
+              (NP (NNP Rhode) (NNP Island) (NNP Kingston))
+              (, ,)
+              (NP (NNP RI) (NNP 02881) (NNP Phone))))))
+      (: :)
+      (NP (CD 401-783-8265) (NN E-mail)))
+    (: :)
+    (S
+      (NP (NNP Stephen) (NNP Schwarz) (NNP Stephen) (NNP Schwarz))
+      (VP (VBZ is)
+        (NP
+          (NP (NNP Professor))
+          (PP (IN of)
+            (NP (NNP Philosophy))))))
+    (. .)))
+
+nn(Department-4, Stephen-1)
+nn(Department-4, D.-2)
+nn(Department-4, Schwarz-3)
+dep(University-15, Department-4)
+nn(Center-11, Philosophy-6)
+num(Center-11, 170-7)
+nn(Center-11, Chafee-8)
+nn(Center-11, Social-9)
+nn(Center-11, Science-10)
+prep_of(Department-4, Center-11)
+dep(University-15, 10-12)
+nn(University-15, Chafee-13)
+nn(University-15, Road-14)
+dep(E-mail-26, University-15)
+nn(Kingston-19, Rhode-17)
+nn(Kingston-19, Island-18)
+prep_of(University-15, Kingston-19)
+nn(Phone-23, RI-21)
+nn(Phone-23, 02881-22)
+appos(Kingston-19, Phone-23)
+num(E-mail-26, 401-783-8265-25)
+dep(Professor-33, E-mail-26)
+nn(Schwarz-31, Stephen-28)
+nn(Schwarz-31, Schwarz-29)
+nn(Schwarz-31, Stephen-30)
+nsubj(Professor-33, Schwarz-31)
+cop(Professor-33, is-32)
+root(ROOT-0, Professor-33)
+prep_of(Professor-33, Philosophy-35)
+

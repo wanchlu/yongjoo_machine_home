@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ corresponding) (NN action))
+      (PP (IN in)
+        (NP (DT a) (NN war))))
+    (VP (MD would)
+      (VP (VB be)
+        (NP
+          (NP (DT the) (JJ intentional) (NN killing))
+          (PP (IN of)
+            (NP
+              (NP (DT an)
+                (ADJP (JJ innocent) (JJ civilian)))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ is)
+                    (VP (VBN considered)
+                      (NP (DT a) (NN war) (NN crime)))))))))))
+    (. .)))
+
+det(action-3, The-1)
+amod(action-3, corresponding-2)
+nsubj(killing-11, action-3)
+det(war-6, a-5)
+prep_in(action-3, war-6)
+aux(killing-11, would-7)
+cop(killing-11, be-8)
+det(killing-11, the-9)
+amod(killing-11, intentional-10)
+root(ROOT-0, killing-11)
+det(civilian-15, an-13)
+amod(civilian-15, innocent-14)
+prep_of(killing-11, civilian-15)
+nsubjpass(considered-19, civilian-15)
+auxpass(considered-19, is-18)
+rcmod(civilian-15, considered-19)
+det(crime-22, a-20)
+nn(crime-22, war-21)
+dobj(considered-19, crime-22)
+

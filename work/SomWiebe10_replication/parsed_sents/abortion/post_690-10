@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (ADJP (RB not) (IN if) (JJ identical))
+          (NNS twins))
+        (VP (VBP are)
+          (NP (JJ different) (NNS individuals)))))
+    (, ,)
+    (NP (RB then) (JJ unique) (NNS genetics))
+    (VP (MD must) (RB not)
+      (VP (VB be)
+        (NP
+          (NP (DT the) (NN definition))
+          (PP (IN of)
+            (NP (DT a) (JJ unique) (NN individual))))))
+    (. .)))
+
+mark(individuals-8, If-1)
+neg(identical-4, not-2)
+dep(identical-4, if-3)
+amod(twins-5, identical-4)
+nsubj(individuals-8, twins-5)
+cop(individuals-8, are-6)
+amod(individuals-8, different-7)
+advcl(definition-17, individuals-8)
+advmod(genetics-12, then-10)
+amod(genetics-12, unique-11)
+nsubj(definition-17, genetics-12)
+aux(definition-17, must-13)
+neg(definition-17, not-14)
+cop(definition-17, be-15)
+det(definition-17, the-16)
+root(ROOT-0, definition-17)
+det(individual-21, a-19)
+amod(individual-21, unique-20)
+prep_of(definition-17, individual-21)
+

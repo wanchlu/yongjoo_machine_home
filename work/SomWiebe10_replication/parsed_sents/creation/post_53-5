@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP expect)
+      (S
+        (NP (JJ fellow) (NN poker) (NNS players))
+        (VP (TO to)
+          (VP (VB get)
+            (NP
+              (NP (NNS flushes)
+                (CC and)
+                (NNS straights))
+              (CC and)
+              (RB even)
+              (NP (JJ straight) (NNS flushes)))))))
+    (. .)))
+
+nsubj(expect-2, We-1)
+root(ROOT-0, expect-2)
+amod(players-5, fellow-3)
+nn(players-5, poker-4)
+nsubj(get-7, players-5)
+aux(get-7, to-6)
+xcomp(expect-2, get-7)
+dobj(get-7, flushes-8)
+dobj(get-7, straights-10)
+conj_and(flushes-8, straights-10)
+dobj(get-7, even-12)
+advmod(flushes-8, even-12)
+conj_and(flushes-8, even-12)
+amod(flushes-14, straight-13)
+dep(flushes-8, flushes-14)
+

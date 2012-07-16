@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT a) (NN fetus))
+        (VP (MD can) (RB not)
+          (VP (VB exist)
+            (ADVP (RB independently))
+            (PP (IN from)
+              (NP (PRP$ its) (NN mother)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP
+            (NP (DT the) (NN woman) (POS 's))
+            (ADJP (RB extremely) (JJ personal))
+            (NN decision))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD must)
+                (VP (VB remain)
+                  (PP (IN between)
+                    (NP (PRP herself))))))))
+        (, ,)
+        (CC and)
+        (NP (PRP$ her) (JJR higher) (NN power))))
+    (. .)))
+
+mark(exist-6, As-1)
+det(fetus-3, a-2)
+nsubj(exist-6, fetus-3)
+aux(exist-6, can-4)
+neg(exist-6, not-5)
+advcl(decision-19, exist-6)
+advmod(exist-6, independently-7)
+poss(mother-10, its-9)
+prep_from(exist-6, mother-10)
+nsubj(decision-19, it-12)
+cop(decision-19, is-13)
+det(woman-15, the-14)
+poss(decision-19, woman-15)
+advmod(personal-18, extremely-17)
+amod(decision-19, personal-18)
+root(ROOT-0, decision-19)
+nsubj(remain-22, decision-19)
+aux(remain-22, must-21)
+rcmod(decision-19, remain-22)
+prep_between(remain-22, herself-24)
+poss(power-29, her-27)
+amod(power-29, higher-28)
+conj_and(decision-19, power-29)
+nsubj(remain-22, power-29)
+

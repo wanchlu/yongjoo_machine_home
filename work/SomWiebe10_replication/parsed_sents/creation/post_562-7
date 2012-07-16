@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB simply))
+    (VP (VBP reject)
+      (S
+        (NP
+          (NP (DT the) (NN extrapolation))
+          (PP (IN of)
+            (NP
+              (ADJP (JJ small)
+                (CC or)
+                (JJ trivial))
+              (NNS results))))
+        (VP (TO to)
+          (VP (VB explain)
+            (NP
+              (NP (JJ massive) (NNS problems))
+              (PP (IN in)
+                (NP (DT the) (NN road))))
+            (PP (IN from)
+              (NP (NNS molecules)))
+            (PP (TO to)
+              (NP (NN man)))))))
+    (. .)))
+
+nsubj(reject-3, We-1)
+advmod(reject-3, simply-2)
+root(ROOT-0, reject-3)
+det(extrapolation-5, the-4)
+nsubj(explain-12, extrapolation-5)
+amod(results-10, small-7)
+conj_or(small-7, trivial-9)
+amod(results-10, trivial-9)
+prep_of(extrapolation-5, results-10)
+aux(explain-12, to-11)
+xcomp(reject-3, explain-12)
+amod(problems-14, massive-13)
+dobj(explain-12, problems-14)
+det(road-17, the-16)
+prep_in(problems-14, road-17)
+prep_from(explain-12, molecules-19)
+prep_to(explain-12, man-21)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP I))
+    (VP (VBP presume)
+      (S
+        (NP (DT this))
+        (VP (TO to)
+          (VP (VB mean)
+            (SBAR (IN that)
+              (S
+                (NP (PRP you))
+                (VP (VBP reject)
+                  (NP (NNP ID))
+                  (ADVP (RB then)))))))))
+    (. ?)))
+
+dep(presume-3, So-1)
+nsubj(presume-3, I-2)
+root(ROOT-0, presume-3)
+nsubj(mean-6, this-4)
+aux(mean-6, to-5)
+xcomp(presume-3, mean-6)
+complm(reject-9, that-7)
+nsubj(reject-9, you-8)
+ccomp(mean-6, reject-9)
+dobj(reject-9, ID-10)
+advmod(reject-9, then-11)
+

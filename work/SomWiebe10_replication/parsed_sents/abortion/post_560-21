@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (NN one))
+      (PP (IN of)
+        (NP
+          (NP (NNP Tiller) (POS 's))
+          (NNS patients))))
+    (VP (VBD wrote)
+      (PP (IN on)
+        (NP
+          (NP (NNP Andrew) (NNP Sullivan) (POS 's))
+          (NN blog)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP she))
+          (VP (VBD had)
+            (NP (DT the) (JJ late-term) (NN abortion))
+            (SBAR (IN because)
+              (S
+                (NP (DT a) (NN heart) (NN defect))
+                (VP (VBD had)
+                  (VP (VBN been)
+                    (VP (VBN discovered)
+                      (PP (IN in)
+                        (NP (PRP$ her) (NN son))))))))))))
+    (. .)))
+
+det(one-2, Another-1)
+nsubj(wrote-7, one-2)
+poss(patients-6, Tiller-4)
+prep_of(one-2, patients-6)
+root(ROOT-0, wrote-7)
+nn(Sullivan-10, Andrew-9)
+poss(blog-12, Sullivan-10)
+prep_on(wrote-7, blog-12)
+complm(had-15, that-13)
+nsubj(had-15, she-14)
+ccomp(wrote-7, had-15)
+det(abortion-18, the-16)
+amod(abortion-18, late-term-17)
+dobj(had-15, abortion-18)
+mark(discovered-25, because-19)
+det(defect-22, a-20)
+nn(defect-22, heart-21)
+nsubjpass(discovered-25, defect-22)
+aux(discovered-25, had-23)
+auxpass(discovered-25, been-24)
+advcl(had-15, discovered-25)
+poss(son-28, her-27)
+prep_in(discovered-25, son-28)
+

@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (INTJ (WRB Why))
+    (VP (VB make)
+      (NP (DT this)
+        (NP (DT a) (JJ legal) (NN debate))
+        (, ,)
+        (NP (PRP$ its)
+          (ADJP (DT a) (JJ womans))
+          (NN choice))
+        (, ,)
+        (NP (RB not) (DT a)
+          (ADJP (JJ congresional))
+          (NN descussion))))
+    (. .)))
+
+dep(make-2, Why-1)
+root(ROOT-0, make-2)
+det(debate-6, this-3)
+det(debate-6, a-4)
+amod(debate-6, legal-5)
+dobj(make-2, debate-6)
+poss(choice-11, its-8)
+dep(womans-10, a-9)
+amod(choice-11, womans-10)
+appos(debate-6, choice-11)
+neg(descussion-16, not-13)
+det(descussion-16, a-14)
+amod(descussion-16, congresional-15)
+appos(debate-6, descussion-16)
+
+(ROOT
+  (S
+    (INTJ (WRB Why))
+    (VP (VB make)
+      (S
+        (NP (PRP it))
+        (ADJP (JJ illegal))
+        (S
+          (VP
+            (ADVP (RB then))
+            (VB make)
+            (NP (NNS women))
+            (S
+              (VP (VB be)
+                (VP (VBN forced)
+                  (PP (IN into)
+                    (NP
+                      (NP (JJ back) (NN alley) (NNS abortions))
+                      (CC or)
+                      (NP (JJR worse) (NN bathtub) (NNS abortions)))))))))))
+    (. .)))
+
+dep(make-2, Why-1)
+root(ROOT-0, make-2)
+nsubj(make-6, it-3)
+dep(make-6, illegal-4)
+advmod(make-6, then-5)
+xcomp(make-2, make-6)
+dobj(make-6, women-7)
+auxpass(forced-9, be-8)
+dep(make-6, forced-9)
+amod(abortions-13, back-11)
+nn(abortions-13, alley-12)
+prep_into(forced-9, abortions-13)
+amod(abortions-17, worse-15)
+nn(abortions-17, bathtub-16)
+prep_into(forced-9, abortions-17)
+conj_or(abortions-13, abortions-17)
+

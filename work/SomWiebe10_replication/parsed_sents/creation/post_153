@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (ADVP (RB Just))
+    (VP (VB look)
+      (ADVP (RB around)))
+    (. .)))
+
+advmod(look-2, Just-1)
+root(ROOT-0, look-2)
+advmod(look-2, around-3)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (VP (VB know)
+        (NP
+          (NP (NN bang))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD can)
+                (VP (VB do)
+                  (NP (DT all)))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+xcomp(is-2, know-3)
+nsubj(is-2, bang-4)
+dobj(know-3, bang-4)
+nsubj(do-7, bang-4)
+aux(do-7, can-6)
+rcmod(bang-4, do-7)
+dobj(do-7, all-8)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP
+        (NP (DT a) (RB no))
+        (JJ brainer)))
+    (. !)))
+
+nsubj(brainer-5, This-1)
+cop(brainer-5, is-2)
+det(no-4, a-3)
+npadvmod(brainer-5, no-4)
+root(ROOT-0, brainer-5)
+

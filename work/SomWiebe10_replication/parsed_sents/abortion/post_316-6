@@ -1,0 +1,35 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT that))
+    (VP (VB mean)
+      (S
+        (NP (PRP we))
+        (VP (VB have)
+          (NP (DT the) (NN right)
+            (S
+              (VP (TO to)
+                (VP (VB decide)
+                  (SBAR (IN whether)
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP live)
+                        (CC or)
+                        (VBP die)))))))))))
+    (. ?)))
+
+dep(mean-3, Does-1)
+nsubj(mean-3, that-2)
+root(ROOT-0, mean-3)
+nsubj(have-5, we-4)
+ccomp(mean-3, have-5)
+det(right-7, the-6)
+dobj(have-5, right-7)
+aux(decide-9, to-8)
+infmod(right-7, decide-9)
+complm(live-12, whether-10)
+nsubj(live-12, you-11)
+nsubj(die-14, you-11)
+ccomp(decide-9, live-12)
+ccomp(decide-9, die-14)
+conj_or(live-12, die-14)
+

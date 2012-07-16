@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (CD two) (JJ consenting) (NNS adults))
+        (VP
+          (VP (VBP love)
+            (NP (DT each) (JJ other)))
+          (CC and)
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB make)
+                  (NP
+                    (NP (DT a) (NN life) (JJ long) (NN commitment))
+                    (PP (IN of)
+                      (NP (NN marriage)))))))))))
+    (NP (PRP they))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (ADVP (RB so))))))))
+    (. .)))
+
+mark(love-5, If-1)
+num(adults-4, two-2)
+amod(adults-4, consenting-3)
+nsubj(love-5, adults-4)
+nsubj(want-9, adults-4)
+xsubj(make-11, adults-4)
+advcl(allowed-21, love-5)
+det(other-7, each-6)
+dobj(love-5, other-7)
+conj_and(love-5, want-9)
+advcl(allowed-21, want-9)
+aux(make-11, to-10)
+xcomp(want-9, make-11)
+det(commitment-15, a-12)
+nn(commitment-15, life-13)
+amod(commitment-15, long-14)
+dobj(make-11, commitment-15)
+prep_of(commitment-15, marriage-17)
+nsubjpass(allowed-21, they-18)
+aux(allowed-21, should-19)
+auxpass(allowed-21, be-20)
+root(ROOT-0, allowed-21)
+aux(do-23, to-22)
+xcomp(allowed-21, do-23)
+advmod(do-23, so-24)
+

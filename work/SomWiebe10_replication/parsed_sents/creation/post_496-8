@@ -1,0 +1,31 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP ID))
+        (VP (VBZ has)
+          (NP (NN merit)))))
+    (, ,)
+    (ADVP (RB then))
+    (VP (VB explain)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNP ID))
+          (VP (VBZ explains)
+            (NP (DT the) (JJ bacterial) (NN flagellum))))))
+    (. .)))
+
+mark(has-3, If-1)
+nsubj(has-3, ID-2)
+advcl(explain-7, has-3)
+dobj(has-3, merit-4)
+advmod(explain-7, then-6)
+root(ROOT-0, explain-7)
+advmod(explains-10, how-8)
+nsubj(explains-10, ID-9)
+ccomp(explain-7, explains-10)
+det(flagellum-13, the-11)
+amod(flagellum-13, bacterial-12)
+dobj(explains-10, flagellum-13)
+

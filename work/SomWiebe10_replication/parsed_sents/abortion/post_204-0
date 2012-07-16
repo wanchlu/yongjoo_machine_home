@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP Pro-life))
+    (VP (MD should)
+      (VP (VB mean)
+        (S
+          (VP
+            (CONJP (RB not) (JJ only))
+            (VP (VBG preserving)
+              (NP (DT the) (NN life)))
+            (, ,)
+            (CONJP (CC but)
+              (RB also))
+            (VP (VBG working)
+              (S
+                (VP (TO to)
+                  (VP (VB improve)
+                    (NP
+                      (NP (DT the) (NN condition))
+                      (SBAR
+                        (S
+                          (NP (DT the) (NN life))
+                          (VP (VBZ exists)
+                            (PRT (RP in))))))))))))))
+    (. .)))
+
+nsubj(mean-3, Pro-life-1)
+aux(mean-3, should-2)
+root(ROOT-0, mean-3)
+neg(only-5, not-4)
+preconj(preserving-6, only-5)
+ccomp(mean-3, preserving-6)
+det(life-8, the-7)
+dobj(preserving-6, life-8)
+ccomp(mean-3, working-12)
+conj_and(preserving-6, working-12)
+aux(improve-14, to-13)
+xcomp(working-12, improve-14)
+det(condition-16, the-15)
+dobj(improve-14, condition-16)
+dobj(exists-19, condition-16)
+det(life-18, the-17)
+nsubj(exists-19, life-18)
+rcmod(condition-16, exists-19)
+prt(exists-19, in-20)
+

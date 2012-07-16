@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (DT These) (NNS children))
+    (VP (VBP are)
+      (VP
+        (VP (VBN born))
+        (, ,)
+        (VP (VBN given)
+          (NP (NN life)))
+        (, ,)
+        (CC and)
+        (VP
+          (ADVP (RB hopefully))
+          (VBN cared)
+          (SBAR (IN for) (, ,)
+            (S
+              (NP
+                (NP (DT the) (NNS ones))
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP seem)
+                      (S
+                        (VP (TO to)
+                          (VP (VB think))))))))
+              (VP (VBD were)
+                (VP (VBG being)
+                  (VP (VBN aborted)))))))))
+    (. .)))
+
+det(children-2, These-1)
+nsubjpass(born-4, children-2)
+nsubjpass(given-6, children-2)
+nsubjpass(cared-11, children-2)
+auxpass(born-4, are-3)
+root(ROOT-0, born-4)
+conj_and(born-4, given-6)
+dobj(given-6, life-7)
+advmod(cared-11, hopefully-10)
+conj_and(born-4, cared-11)
+mark(aborted-22, for-12)
+det(ones-15, the-14)
+nsubjpass(aborted-22, ones-15)
+nsubj(seem-17, you-16)
+xsubj(think-19, you-16)
+rcmod(ones-15, seem-17)
+aux(think-19, to-18)
+xcomp(seem-17, think-19)
+aux(aborted-22, were-20)
+auxpass(aborted-22, being-21)
+advcl(cared-11, aborted-22)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP you))
+        (VP (VBP take)
+          (NP
+            (NP (DT a) (NN class))
+            (PP (IN of)
+              (NP
+                (NP (NNS humans))
+                (CC and)
+                (NP (RB then))))))))
+    (VP (VB give)
+      (NP
+        (NP (NNS reasons))
+        (PRN (-LRB- -LRB-)
+          (NP (JJ very) (JJ poor) (NNS ones))
+          (-RRB- -RRB-))
+        (PP (IN of)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (PRP they))
+              (VP (MD should) (RB not)
+                (VP (VB be)
+                  (VP (VBN allowed)
+                    (S
+                      (VP (TO to)
+                        (VP (VB live))))))))))))
+    (. .)))
+
+mark(take-3, Because-1)
+nsubj(take-3, you-2)
+csubj(give-10, take-3)
+det(class-5, a-4)
+dobj(take-3, class-5)
+prep_of(class-5, humans-7)
+prep_of(class-5, then-9)
+conj_and(humans-7, then-9)
+root(ROOT-0, give-10)
+dobj(give-10, reasons-11)
+amod(ones-15, very-13)
+amod(ones-15, poor-14)
+appos(reasons-11, ones-15)
+advmod(allowed-23, why-18)
+nsubjpass(allowed-23, they-19)
+aux(allowed-23, should-20)
+neg(allowed-23, not-21)
+auxpass(allowed-23, be-22)
+prepc_of(reasons-11, allowed-23)
+aux(live-25, to-24)
+xcomp(allowed-23, live-25)
+

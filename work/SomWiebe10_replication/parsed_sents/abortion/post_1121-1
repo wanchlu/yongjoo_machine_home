@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD ca) (RB n't)
+      (VP (VB get)
+        (UCP
+          (ADJP
+            (ADJP (JJ pregnant))
+            (SBAR (IN if)
+              (S
+                (NP (PRP you))
+                (VP (VBP 're) (RB not)
+                  (VP (VBG having)
+                    (NP (NN sex)))))))
+          (CC and)
+          (NP
+            (NP
+              (NP (NNP STDs))
+              (SBAR
+                (S
+                  (VP (VBP are)
+                    (VP (VBN called)
+                      (SBAR (IN that) (IN because)
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP are)
+                            (ADVP (RB sexually))
+                            (VP (VBN transmitted))))))))))
+            (: ;)
+            (NP
+              (NP (DT no) (NN sex))
+              (, ,)
+              (NP (DT no) (NN transmission)))))))
+    (. .)))
+
+nsubj(pregnant-5, You-1)
+aux(pregnant-5, ca-2)
+neg(pregnant-5, n't-3)
+dep(pregnant-5, get-4)
+root(ROOT-0, pregnant-5)
+mark(having-10, if-6)
+nsubj(having-10, you-7)
+aux(having-10, 're-8)
+neg(having-10, not-9)
+ccomp(pregnant-5, having-10)
+dobj(having-10, sex-11)
+conj_and(pregnant-5, STDs-13)
+auxpass(called-15, are-14)
+rcmod(STDs-13, called-15)
+complm(transmitted-21, that-16)
+dep(transmitted-21, because-17)
+nsubjpass(transmitted-21, they-18)
+auxpass(transmitted-21, are-19)
+advmod(transmitted-21, sexually-20)
+ccomp(called-15, transmitted-21)
+det(sex-24, no-23)
+dep(STDs-13, sex-24)
+det(transmission-27, no-26)
+appos(sex-24, transmission-27)
+

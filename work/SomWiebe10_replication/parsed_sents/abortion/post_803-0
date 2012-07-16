@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (SBAR
+          (S
+            (NP (NN abortion))
+            (VP (MD should)
+              (VP (VB be)
+                (ADJP (JJ illegal)
+                  (PP (IN in)
+                    (NP (DT all) (NNS cases))))
+                (PP (IN except) (: :)
+                  (S (-LRB- -LRB-)
+                    (NP (SYM a))
+                    (-RRB- -RRB-)
+                    (VP (VBG rape))))))))
+        (CC or)
+        (SBAR
+          (LST (-LRB- -LRB-) (NN b) (-RRB- -RRB-))
+          (IN when)
+          (S
+            (NP (DT the) (NN baby))
+            (VP (VBZ is)
+              (ADJP (RB physically)
+                (S
+                  (VP (VBG hurting)
+                    (NP (DT the) (NN mother)))))))
+          (. .))))))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(illegal-6, abortion-3)
+aux(illegal-6, should-4)
+cop(illegal-6, be-5)
+dep(think-2, illegal-6)
+det(cases-9, all-8)
+prep_in(illegal-6, cases-9)
+prep(illegal-6, except-10)
+nsubj(rape-15, a-13)
+dep(except-10, rape-15)
+dep(physically-24, b-18)
+dep(physically-24, when-20)
+det(baby-22, the-21)
+nsubj(physically-24, baby-22)
+cop(physically-24, is-23)
+dep(think-2, physically-24)
+conj_or(illegal-6, physically-24)
+dep(physically-24, hurting-25)
+det(mother-27, the-26)
+dobj(hurting-25, mother-27)
+

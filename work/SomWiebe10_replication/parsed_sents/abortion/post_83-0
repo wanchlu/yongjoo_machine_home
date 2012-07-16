@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Abortion))
+      (VP (MD must)
+        (VP (VB be)
+          (VP (VBN justified)
+            (PP (IN in)
+              (NP
+                (NP (NNS cases))
+                (PP (IN of)
+                  (NP (NN impregnation)))))
+            (PP (IN by)
+              (NP (NN rape) (NNP Woman)))))))
+    (, ,)
+    (CC and)
+    (S
+      (PP (IN in)
+        (NP (DT some) (NNS cases)))
+      (NP
+        (NP (NNS girls))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP have)
+              (VP (VBN been)
+                (VP (VBN raped)))))))
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (S
+            (VP (TO to)
+              (VP (VB suffer)
+                (NP
+                  (NP (DT the) (JJ additional) (NN torment))
+                  (PP (IN of)
+                    (S
+                      (VP (VBG being)
+                        (ADJP (JJ pregnant))
+                        (PP (IN with)
+                          (NP
+                            (NP (DT the) (NN product))
+                            (PP (IN of)
+                              (NP (DT that) (NN ordeal)))))))))))))))
+    (. .)))
+
+nsubjpass(justified-4, Abortion-1)
+aux(justified-4, must-2)
+auxpass(justified-4, be-3)
+root(ROOT-0, justified-4)
+prep_in(justified-4, cases-6)
+prep_of(cases-6, impregnation-8)
+nn(Woman-11, rape-10)
+agent(justified-4, Woman-11)
+det(cases-16, some-15)
+prep_in(have-25, cases-16)
+nsubjpass(raped-22, girls-17)
+nsubj(have-25, girls-17)
+xsubj(suffer-27, girls-17)
+aux(raped-22, have-20)
+auxpass(raped-22, been-21)
+rcmod(girls-17, raped-22)
+aux(have-25, should-23)
+neg(have-25, not-24)
+conj_and(justified-4, have-25)
+aux(suffer-27, to-26)
+xcomp(have-25, suffer-27)
+det(torment-30, the-28)
+amod(torment-30, additional-29)
+dobj(suffer-27, torment-30)
+cop(pregnant-33, being-32)
+prepc_of(torment-30, pregnant-33)
+det(product-36, the-35)
+prep_with(pregnant-33, product-36)
+det(ordeal-39, that-38)
+prep_of(product-36, ordeal-39)
+

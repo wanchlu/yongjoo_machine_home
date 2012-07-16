@@ -1,0 +1,67 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP are)
+      (NP (NNP Science) (NNS teachers))
+      (VP (VBG pointing)
+        (PRT (RP out))
+        (SBAR (IN that)
+          (S
+            (NP (NNP Science))
+            (VP (VBZ refutes)
+              (NP (NN religion)))))))
+    (. ?)))
+
+advmod(pointing-5, How-1)
+aux(pointing-5, are-2)
+nn(teachers-4, Science-3)
+nsubj(pointing-5, teachers-4)
+root(ROOT-0, pointing-5)
+prt(pointing-5, out-6)
+complm(refutes-9, that-7)
+nsubj(refutes-9, Science-8)
+ccomp(pointing-5, refutes-9)
+dobj(refutes-9, religion-10)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ true))
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (NNP Science))
+            (VP (VBZ does)
+              (VP (VB refute)
+                (NP (JJ certain) (JJ religious) (NNS teachings))))))
+        (, ,)
+        (CC but)
+        (SBAR (IN that)
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ incidental)
+                (PP (TO to)
+                  (NP (DT the) (NN Science)))))
+            (NP (PRP itself))))))
+    (. .)))
+
+nsubj(true-3, It-1)
+cop(true-3, is-2)
+root(ROOT-0, true-3)
+complm(refute-7, that-4)
+nsubj(refute-7, Science-5)
+nsubj(incidental-15, Science-5)
+aux(refute-7, does-6)
+ccomp(true-3, refute-7)
+amod(teachings-10, certain-8)
+amod(teachings-10, religious-9)
+dobj(refute-7, teachings-10)
+complm(incidental-15, that-13)
+cop(incidental-15, is-14)
+ccomp(true-3, incidental-15)
+conj_but(refute-7, incidental-15)
+det(Science-18, the-17)
+prep_to(incidental-15, Science-18)
+dep(incidental-15, itself-19)
+

@@ -1,0 +1,59 @@
+(ROOT
+  (FRAG
+    (NP (DT Every) (NN time)
+      (SBAR
+        (S
+          (NP (DT a) (JJ new) (NN fossil))
+          (VP (VBZ is)
+            (VP (VBN discovered)
+              (SBAR
+                (S
+                  (NP (DT another) (NN hole))
+                  (VP (VBZ fills)
+                    (PRT (RP in))))))))))
+    (: ...)
+    (VP (VBP do)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (ADVP (RB really))
+          (VP (VBP need)
+            (S
+              (VP (TO to)
+                (VP (VB revise)
+                  (NP (PRP$ our) (JJ entire) (NN world) (NN view))
+                  (PP (IN on)
+                    (NP (NN nothing)))
+                  (ADVP (RBR more)
+                    (NP (RB then) (DT some) (JJ missing) (NNS bones))))))))))
+    (. ?)))
+
+det(time-2, Every-1)
+root(ROOT-0, time-2)
+det(fossil-5, a-3)
+amod(fossil-5, new-4)
+nsubjpass(discovered-7, fossil-5)
+auxpass(discovered-7, is-6)
+ccomp(time-2, discovered-7)
+det(hole-9, another-8)
+nsubj(fills-10, hole-9)
+ccomp(discovered-7, fills-10)
+prt(fills-10, in-11)
+dep(time-2, do-13)
+nsubj(need-16, we-14)
+xsubj(revise-18, we-14)
+advmod(need-16, really-15)
+ccomp(do-13, need-16)
+aux(revise-18, to-17)
+xcomp(need-16, revise-18)
+poss(view-22, our-19)
+amod(view-22, entire-20)
+nn(view-22, world-21)
+dobj(revise-18, view-22)
+prep_on(revise-18, nothing-24)
+advmod(revise-18, more-25)
+advmod(bones-29, then-26)
+det(bones-29, some-27)
+amod(bones-29, missing-28)
+pobj(more-25, bones-29)
+

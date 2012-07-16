@@ -1,0 +1,95 @@
+(ROOT
+  (S
+    (S
+      (VP (VBD \/) (-RRB- -RRB-)
+        (NP
+          (NP (NNP Notice))
+          (PP (IN that)
+            (NP
+              (QP (RB almost) (DT all))
+              (NNS forms))))
+        (PP (IN of)
+          (NP (JJ complex) (NN life)))))
+    (VP (VBP have)
+      (S
+        (UCP
+          (ADJP (DT both) (JJ male)
+            (CC and)
+            (JJ female))
+          (: --)
+          (NP
+            (NP (NNS horses))
+            (, ,)
+            (NP (NNS cats))
+            (, ,)
+            (NP (NNS dogs))
+            (, ,)
+            (NP (NNS humans))
+            (, ,)
+            (NP (NNS moths))
+            (, ,)
+            (NP (NNS monkeys))
+            (, ,)
+            (NP (NN fish))
+            (, ,)
+            (NP (NNS elephants))
+            (, ,)
+            (NP (FW etc.))))))
+    (. .)))
+
+csubj(have-11, \/-1)
+dobj(\/-1, Notice-3)
+quantmod(all-6, almost-5)
+num(forms-7, all-6)
+prep_that(Notice-3, forms-7)
+amod(life-10, complex-9)
+prep_of(\/-1, life-10)
+root(ROOT-0, have-11)
+preconj(male-13, both-12)
+dep(have-11, male-13)
+dep(have-11, female-15)
+conj_and(male-13, female-15)
+dep(male-13, horses-17)
+appos(horses-17, cats-19)
+appos(horses-17, dogs-21)
+appos(horses-17, humans-23)
+appos(horses-17, moths-25)
+appos(horses-17, monkeys-27)
+appos(horses-17, fish-29)
+appos(horses-17, elephants-31)
+appos(horses-17, etc.-33)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN male))
+      (VP (VBZ needs)
+        (NP (DT the) (NN female)
+          (S
+            (VP (TO to)
+              (VP (VB reproduce)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN female))
+      (VP (VBZ needs)
+        (NP (DT the) (NN male)
+          (S
+            (VP (TO to)
+              (VP (VB reproduce)))))))
+    (. .)))
+
+det(male-2, The-1)
+nsubj(needs-3, male-2)
+root(ROOT-0, needs-3)
+det(female-5, the-4)
+dobj(needs-3, female-5)
+aux(reproduce-7, to-6)
+infmod(female-5, reproduce-7)
+nsubj(needs-11, female-10)
+conj_and(needs-3, needs-11)
+det(male-13, the-12)
+dobj(needs-11, male-13)
+aux(reproduce-15, to-14)
+infmod(male-13, reproduce-15)
+

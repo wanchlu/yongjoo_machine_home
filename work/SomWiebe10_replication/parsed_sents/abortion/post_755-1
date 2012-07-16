@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (VBZ deserves)
+      (NP (DT the) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB work)
+              (PP (IN towards)
+                (NP
+                  (NP
+                    (NP (DT the) (NN life))
+                    (SBAR
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP want)))))
+                  (CC and)
+                  (NP
+                    (NP (DT the) (NNS people))
+                    (SBAR
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP want)
+                          (S
+                            (VP (TO to)
+                              (VP (VB be)
+                                (PP (IN with))))))))))))))))
+    (. .)))
+
+nsubj(deserves-2, Everyone-1)
+root(ROOT-0, deserves-2)
+det(right-4, the-3)
+dobj(deserves-2, right-4)
+aux(work-6, to-5)
+infmod(right-4, work-6)
+det(life-9, the-8)
+prep_towards(work-6, life-9)
+dobj(want-11, life-9)
+nsubj(want-11, they-10)
+rcmod(life-9, want-11)
+det(people-14, the-13)
+prep_towards(work-6, people-14)
+conj_and(life-9, people-14)
+dobj(want-16, people-14)
+prep_with(be-18, people-14)
+nsubj(want-16, they-15)
+xsubj(be-18, they-15)
+rcmod(people-14, want-16)
+aux(be-18, to-17)
+xcomp(want-16, be-18)
+

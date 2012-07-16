@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (NP (DT some) (NNS fossils))
+        (VP (VBP have)
+          (VP (VBN come)
+            (PP (IN from)
+              (NP
+                (NP (NNS creatures))
+                (VP (VBG being)
+                  (VP (VBN covered)
+                    (PP (IN in)
+                      (NP (NN mud)))))))))))
+    (NP (DT that))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT the) (NN explanation))
+        (PP (IN for)
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (PRP them)))))))
+    (. .)))
+
+mark(come-5, Though-1)
+det(fossils-3, some-2)
+nsubj(come-5, fossils-3)
+aux(come-5, have-4)
+advcl(explanation-16, come-5)
+prep_from(come-5, creatures-7)
+auxpass(covered-9, being-8)
+partmod(creatures-7, covered-9)
+prep_in(covered-9, mud-11)
+nsubj(explanation-16, that-12)
+cop(explanation-16, is-13)
+neg(explanation-16, not-14)
+det(explanation-16, the-15)
+root(ROOT-0, explanation-16)
+prep_for(explanation-16, all-18)
+prep_of(all-18, them-20)
+

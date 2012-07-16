@@ -1,0 +1,48 @@
+(ROOT
+  (S (: ...)
+    (S
+      (S (RB not)
+        (VP (VBG saying)
+          (NP (PRP it))))
+      (VP (VBZ is)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP (DT a) (NN law))))))))
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBZ is)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP I))
+            (VP (VBD got)
+              (PRT (RP out))
+              (PP (IN of)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBD said))))))))))
+    (. .)))
+
+neg(saying-3, not-2)
+csubj(going-6, saying-3)
+dobj(saying-3, it-4)
+aux(going-6, is-5)
+root(ROOT-0, going-6)
+aux(law-10, to-7)
+cop(law-10, be-8)
+det(law-10, a-9)
+xcomp(going-6, law-10)
+nsubj(is-13, that-12)
+conj_but(going-6, is-13)
+dobj(got-16, what-14)
+nsubj(got-16, I-15)
+ccomp(is-13, got-16)
+dobj(said-21, what-19)
+nsubj(said-21, you-20)
+prepc_out_of(got-16, said-21)
+

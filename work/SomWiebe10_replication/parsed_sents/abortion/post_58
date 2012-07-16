@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Post-abortion) (NN syndrome))
+      (VP (VBZ is) (RB not)
+        (NP (DT a)
+          (ADJP (RB medically) (VBN recognized))
+          (NN syndrome))))
+    (: :)
+    (S
+      (NP
+        (NP (DT The) (NNP American) (NNP Psychological) (NNP Association))
+        (CC and)
+        (NP (DT the) (NNP American) (NNP Psychiatric) (NNP Association)))
+      (VP (VBP do) (RB not)
+        (VP (VB recognize)
+          (NP (NNP PAS)))))
+    (. .)))
+
+amod(syndrome-2, Post-abortion-1)
+nsubj(syndrome-8, syndrome-2)
+cop(syndrome-8, is-3)
+neg(syndrome-8, not-4)
+det(syndrome-8, a-5)
+advmod(recognized-7, medically-6)
+amod(syndrome-8, recognized-7)
+root(ROOT-0, syndrome-8)
+det(Association-13, The-10)
+nn(Association-13, American-11)
+nn(Association-13, Psychological-12)
+nsubj(recognize-21, Association-13)
+det(Association-18, the-15)
+nn(Association-18, American-16)
+nn(Association-18, Psychiatric-17)
+conj_and(Association-13, Association-18)
+nsubj(recognize-21, Association-18)
+aux(recognize-21, do-19)
+neg(recognize-21, not-20)
+parataxis(syndrome-8, recognize-21)
+dobj(recognize-21, PAS-22)
+

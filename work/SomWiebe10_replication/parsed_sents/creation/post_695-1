@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (VP (VB Let)
+      (NP (PRP us))
+      (RB not)
+      (VP
+        (VP (VB forget)
+          (NP
+            (NP (DT the) (NN context))
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP (DT these) (NNS documents))
+                (VP (VBD were)
+                  (VP (VBN written)))))))
+        (CC and)
+        (VP (VB remember)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP represent)
+                (NP
+                  (NP (RB merely) (DT the) (NNS views))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT those))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (VBD wrote)
+                            (NP (PRP them))))))))))))))
+    (. .)))
+
+root(ROOT-0, Let-1)
+dobj(Let-1, us-2)
+neg(Let-1, not-3)
+dep(Let-1, forget-4)
+det(context-6, the-5)
+dobj(forget-4, context-6)
+rel(written-12, which-8)
+det(documents-10, these-9)
+nsubjpass(written-12, documents-10)
+auxpass(written-12, were-11)
+rcmod(context-6, written-12)
+dep(Let-1, remember-14)
+conj_and(forget-4, remember-14)
+complm(represent-17, that-15)
+nsubj(represent-17, they-16)
+ccomp(remember-14, represent-17)
+advmod(views-20, merely-18)
+det(views-20, the-19)
+dobj(represent-17, views-20)
+prep_of(views-20, those-22)
+nsubj(wrote-24, those-22)
+rcmod(those-22, wrote-24)
+dobj(wrote-24, them-25)
+

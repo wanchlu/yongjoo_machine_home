@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (PP (IN For)
+        (NP (NN example)))
+      (, ,)
+      (NP (NNP God))
+      (VP (VBZ commands)
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VB forgive))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT this))
+      (VP (VBZ makes)
+        (NP (DT no) (NN sense))
+        (SBAR (IN if)
+          (S
+            (NP (NNP God))
+            (VP (VBZ is) (RB not)
+              (NP
+                (NP (PRP$ our) (NN Creator))
+                (SBAR
+                  (WHPP (TO to)
+                    (WHNP (WP whom)))
+                  (S
+                    (NP (PRP we))
+                    (VP (MD must)
+                      (VP (VB give)
+                        (NP (DT an) (NN account))))))))))))
+    (. .)))
+
+prep_for(commands-5, example-2)
+nsubj(commands-5, God-4)
+root(ROOT-0, commands-5)
+complm(forgive-8, that-6)
+nsubj(forgive-8, we-7)
+ccomp(commands-5, forgive-8)
+nsubj(makes-12, this-11)
+conj_but(commands-5, makes-12)
+det(sense-14, no-13)
+dobj(makes-12, sense-14)
+mark(Creator-20, if-15)
+nsubj(Creator-20, God-16)
+cop(Creator-20, is-17)
+neg(Creator-20, not-18)
+poss(Creator-20, our-19)
+advcl(makes-12, Creator-20)
+rel(give-25, whom-22)
+nsubj(give-25, we-23)
+aux(give-25, must-24)
+rcmod(Creator-20, give-25)
+det(account-27, an-26)
+dobj(give-25, account-27)
+

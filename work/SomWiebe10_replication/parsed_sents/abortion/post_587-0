@@ -1,0 +1,36 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How) (RB often))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB think)
+        (S
+          (S
+            (NP (DT an) (NN abortion))
+            (VP (MD must)
+              (VP (VB be)
+                (VP (VBN performed)))))
+          (CC or)
+          (S
+            (NP (RB else) (DT the) (NN mother))
+            (VP (MD will)
+              (VP (VB die)))))))
+    (. ?)))
+
+advmod(often-2, How-1)
+advmod(think-5, often-2)
+aux(think-5, do-3)
+nsubj(think-5, you-4)
+root(ROOT-0, think-5)
+det(abortion-7, an-6)
+nsubjpass(performed-10, abortion-7)
+aux(performed-10, must-8)
+auxpass(performed-10, be-9)
+dep(think-5, performed-10)
+advmod(mother-14, else-12)
+det(mother-14, the-13)
+nsubj(die-16, mother-14)
+aux(die-16, will-15)
+dep(think-5, die-16)
+conj_or(performed-10, die-16)
+

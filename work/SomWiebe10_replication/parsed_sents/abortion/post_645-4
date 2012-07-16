@@ -1,0 +1,68 @@
+(ROOT
+  (S ('' '')
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NN absence))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN mother) (POS 's))
+            (NN decision)
+            (S
+              (VP (TO to)
+                (VP (VB accept)
+                  (NP (DT the) (JJ new) (NN life))
+                  (, ,)
+                  (SBAR (RB even)
+                    (FRAG
+                      (ADJP (RBS most) (JJ Catholics))))
+                  (, ,)
+                  (PP (IN like)
+                    (NP (PRP myself)))))))))
+      (, ,))
+    (VP (MD would) (RB not)
+      (VP (VB pursue)
+        (NP
+          (NP (NN passage))
+          (PP (IN of)
+            (NP
+              (NP (DT a) (NN law))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD required)
+                    (NP (DT the) (NN mother)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)
+                            (NP (DT the) (NN baby))))))))))))))
+    (. .)))
+
+det(absence-4, the-3)
+prep_in(pursue-25, absence-4)
+det(mother-7, the-6)
+poss(decision-9, mother-7)
+prep_of(absence-4, decision-9)
+aux(accept-11, to-10)
+infmod(decision-9, accept-11)
+det(life-14, the-12)
+amod(life-14, new-13)
+dobj(accept-11, life-14)
+advmod(Catholics-18, even-16)
+advmod(Catholics-18, most-17)
+dep(accept-11, Catholics-18)
+prep_like(accept-11, myself-21)
+aux(pursue-25, would-23)
+neg(pursue-25, not-24)
+root(ROOT-0, pursue-25)
+dobj(pursue-25, passage-26)
+det(law-29, a-28)
+prep_of(passage-26, law-29)
+nsubj(required-31, law-29)
+rcmod(law-29, required-31)
+det(mother-33, the-32)
+dobj(required-31, mother-33)
+aux(have-35, to-34)
+infmod(mother-33, have-35)
+det(baby-37, the-36)
+dobj(have-35, baby-37)
+

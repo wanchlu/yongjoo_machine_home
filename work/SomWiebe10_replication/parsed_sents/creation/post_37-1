@@ -1,0 +1,34 @@
+(ROOT
+  (NP
+    (NP (NNP Method))
+    (: ;)
+    (NP
+      (NP (NNP Infers) (NNP Design))
+      (PP (IN by)
+        (NP
+          (NP (JJ Testing) (JJ Positive) (NNS Predictions))
+          ('' '')
+          (SBAR
+            (WHADVP (RB However))
+            (S
+              (NP (DT this))
+              (VP (VBZ is)
+                (ADJP (JJ false)
+                  (CC and)
+                  (JJ misleading))))))))
+    (. .)))
+
+root(ROOT-0, Method-1)
+nn(Design-4, Infers-3)
+dep(Method-1, Design-4)
+amod(Predictions-8, Testing-6)
+amod(Predictions-8, Positive-7)
+prep_by(Design-4, Predictions-8)
+advmod(false-13, However-10)
+nsubj(false-13, this-11)
+nsubj(misleading-15, this-11)
+cop(false-13, is-12)
+dep(Predictions-8, false-13)
+dep(Predictions-8, misleading-15)
+conj_and(false-13, misleading-15)
+

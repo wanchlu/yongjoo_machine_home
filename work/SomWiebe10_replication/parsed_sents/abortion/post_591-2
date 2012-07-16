@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP (DT Any) (NN scientist))
+    (VP (MD will)
+      (VP (VB tell)
+        (NP (PRP you))
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN fetus))
+            (VP (VBZ is)
+              (ADJP (DT both) (JJ alive)
+                (CC and)
+                (JJ human)))))))
+    (. .)))
+
+det(scientist-2, Any-1)
+nsubj(tell-4, scientist-2)
+aux(tell-4, will-3)
+root(ROOT-0, tell-4)
+dobj(tell-4, you-5)
+complm(alive-11, that-6)
+det(fetus-8, a-7)
+nsubj(alive-11, fetus-8)
+nsubj(human-13, fetus-8)
+cop(alive-11, is-9)
+preconj(alive-11, both-10)
+ccomp(tell-4, alive-11)
+ccomp(tell-4, human-13)
+conj_and(alive-11, human-13)
+

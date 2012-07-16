@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT These) (NNS fragments))
+        (PP (IN of)
+          (NP (NNP DNA))))
+      (VP (VBP make)
+        (PRT (RP up))
+        (NP
+          (NP
+            (QP (RB about) (CD eight))
+            (NN percent))
+          (PP (IN of)
+            (NP (DT the) (JJ human) (JJ genetic) (NN code))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNS thousands))
+        (PP (IN of)
+          (NP (PRP them))))
+      (VP (VBP are)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ exact) (JJ same) (NNS locations))
+            (PP (IN in)
+              (NP (NNS chimpanzees)))))))
+    (. .)))
+
+det(fragments-2, These-1)
+nsubj(make-5, fragments-2)
+prep_of(fragments-2, DNA-4)
+root(ROOT-0, make-5)
+prt(make-5, up-6)
+quantmod(eight-8, about-7)
+num(percent-9, eight-8)
+dobj(make-5, percent-9)
+det(code-14, the-11)
+amod(code-14, human-12)
+amod(code-14, genetic-13)
+prep_of(percent-9, code-14)
+nsubj(are-20, thousands-17)
+prep_of(thousands-17, them-19)
+conj_and(make-5, are-20)
+det(locations-25, the-22)
+amod(locations-25, exact-23)
+amod(locations-25, same-24)
+prep_in(are-20, locations-25)
+prep_in(locations-25, chimpanzees-27)
+

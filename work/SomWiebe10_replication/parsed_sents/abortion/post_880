@@ -1,0 +1,224 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ does) (RB n't)
+      (VP (VB kill)
+        (NP (DT a) (NN baby))
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's) (RB not)
+              (NP (DT a) (NN baby)))))))
+    (. .)))
+
+nsubj(kill-4, Abortion-1)
+aux(kill-4, does-2)
+neg(kill-4, n't-3)
+root(ROOT-0, kill-4)
+det(baby-6, a-5)
+dobj(kill-4, baby-6)
+mark(baby-12, because-7)
+nsubj(baby-12, it-8)
+cop(baby-12, 's-9)
+neg(baby-12, not-10)
+det(baby-12, a-11)
+advcl(kill-4, baby-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP (DT an) (JJ inviable) (NN parasite)))
+    (. .)))
+
+nsubj(parasite-5, It-1)
+cop(parasite-5, 's-2)
+det(parasite-5, an-3)
+amod(parasite-5, inviable-4)
+root(ROOT-0, parasite-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD can) (RB not)
+      (VP (VB eat)
+        (CC or)
+        (VB breathe)
+        (PP (IN on)
+          (NP (PRP$ its) (JJ own)))
+        (PP (IN without)
+          (NP
+            (NP (DT the) (NN host))
+            (PRN (-LRB- -LRB-)
+              (NP (NN woman))
+              (-RRB- -RRB-))
+            (SBAR (IN so)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is) (RB not)
+                  (NP (PRP$ its) (JJ own) (NN entity)))))))))
+    (. .)))
+
+nsubj(eat-4, It-1)
+nsubj(breathe-6, It-1)
+aux(eat-4, can-2)
+neg(eat-4, not-3)
+root(ROOT-0, eat-4)
+conj_or(eat-4, breathe-6)
+poss(own-9, its-8)
+prep_on(eat-4, own-9)
+det(host-12, the-11)
+prep_without(eat-4, host-12)
+appos(host-12, woman-14)
+mark(entity-22, so-16)
+nsubj(entity-22, it-17)
+cop(entity-22, is-18)
+neg(entity-22, not-19)
+poss(entity-22, its-20)
+amod(entity-22, own-21)
+dep(host-12, entity-22)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (NN abortion))
+    (VP (VBZ removes)
+      (NP (DT an) (JJ unwanted) (NN growth)))
+    (. .)))
+
+advmod(removes-3, Therefore-1)
+nsubj(removes-3, abortion-2)
+root(ROOT-0, removes-3)
+det(growth-6, an-4)
+amod(growth-6, unwanted-5)
+dobj(removes-3, growth-6)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN fetus))
+        (VP (VBD were)
+          (NP (DT a) (NN person))
+          (SBAR (IN than)
+            (S
+              (NP (DT every) (NN miscarriage))
+              (VP (MD would)
+                (VP (VB be)
+                  (NP
+                    (NP (DT a) (NN murder))
+                    (CC and)
+                    (NP (NNP Mother) (NNP Nature))))))))))
+    (VP (VBZ causes)
+      (NP
+        (NP (NNS miscarriages))
+        (PP (IN in)
+          (NP
+            (NP (CD 20-45) (NN percent))
+            (PP (IN of)
+              (NP (NNS pregnancies)))))))
+    (. .)))
+
+mark(person-6, If-1)
+det(fetus-3, the-2)
+nsubj(person-6, fetus-3)
+cop(person-6, were-4)
+det(person-6, a-5)
+csubj(causes-17, person-6)
+mark(murder-13, than-7)
+det(miscarriage-9, every-8)
+nsubj(murder-13, miscarriage-9)
+aux(murder-13, would-10)
+cop(murder-13, be-11)
+det(murder-13, a-12)
+advcl(person-6, murder-13)
+nn(Nature-16, Mother-15)
+advcl(person-6, Nature-16)
+conj_and(murder-13, Nature-16)
+root(ROOT-0, causes-17)
+dobj(causes-17, miscarriages-18)
+num(percent-21, 20-45-20)
+prep_in(miscarriages-18, percent-21)
+prep_of(percent-21, pregnancies-23)
+
+(ROOT
+  (SQ
+    (VP (VB Are)
+      (S
+        (NP (PRP you))
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB accuse)
+                (NP
+                  (NP (NNP Mother) (NNP Nature))
+                  (PP (IN of)
+                    (NP (VBG killing) (NNS babies))))))))))
+    (. ?)))
+
+root(ROOT-0, Are-1)
+nsubj(going-3, you-2)
+xsubj(accuse-5, you-2)
+dep(Are-1, going-3)
+aux(accuse-5, to-4)
+xcomp(going-3, accuse-5)
+nn(Nature-7, Mother-6)
+dobj(accuse-5, Nature-7)
+amod(babies-10, killing-9)
+prep_of(Nature-7, babies-10)
+
+(ROOT
+  (FRAG (CC Or)
+    (NP
+      (NP (DT the))
+      (NP
+        (NP (NN host))
+        (PRN (-LRB- -LRB-)
+          (NP (NN woman))
+          (-RRB- -RRB-))))
+    (. ?)))
+
+dep(the-2, Or-1)
+root(ROOT-0, the-2)
+dep(the-2, host-3)
+appos(host-3, woman-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think) (RB not))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+neg(think-2, not-3)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (NP (DT a) (NN baby)))
+    (. .)))
+
+nsubj(baby-5, It-1)
+cop(baby-5, 's-2)
+neg(baby-5, not-3)
+det(baby-5, a-4)
+root(ROOT-0, baby-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN bunch))
+        (PP (IN of)
+          (NP (NNS cells)))))
+    (. .)))
+
+nsubj(bunch-4, It-1)
+cop(bunch-4, 's-2)
+det(bunch-4, a-3)
+root(ROOT-0, bunch-4)
+prep_of(bunch-4, cells-6)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD were)
+      (NP
+        (NP
+          (NP (DT no) (NNS mammals))
+          (VP (VBN found)
+            (PP (IN during)
+              (NP (DT the) (NNP Precambrian) (NN period)))))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (DT no) (NNS dinosaurs))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBN dated)
+                (ADVP
+                  (NP
+                    (QP (JJR less) (IN than) (CD 50) (CD million))
+                    (NNS years))
+                  (RB ago))))))))
+    (. .)))
+
+expl(were-2, There-1)
+root(ROOT-0, were-2)
+det(mammals-4, no-3)
+nsubj(were-2, mammals-4)
+partmod(mammals-4, found-5)
+det(period-9, the-7)
+nn(period-9, Precambrian-8)
+prep_during(found-5, period-9)
+det(dinosaurs-13, no-12)
+nsubj(were-2, dinosaurs-13)
+conj_and(mammals-4, dinosaurs-13)
+nsubj(dated-15, dinosaurs-13)
+rcmod(dinosaurs-13, dated-15)
+mwe(than-17, less-16)
+quantmod(million-19, than-17)
+number(million-19, 50-18)
+num(years-20, million-19)
+npadvmod(ago-21, years-20)
+advmod(dated-15, ago-21)
+

@@ -1,0 +1,34 @@
+(ROOT
+  (NP (FW .) (. .)))
+
+
+(ROOT
+  (SBAR (IN if)
+    (S
+      (NP (DT that))
+      (VP (VBZ 's)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (PRP you))
+            (VP (MD 'd)
+              (VP (VB like)
+                (S
+                  (VP (TO to)
+                    (VP (VB put)
+                      (NP (PRP it))))))))))
+      (, ,))
+    (: ...)))
+
+mark('s-3, if-1)
+nsubj('s-3, that-2)
+root(ROOT-0, 's-3)
+advmod(like-7, how-4)
+nsubj(like-7, you-5)
+xsubj(put-9, you-5)
+aux(like-7, 'd-6)
+ccomp('s-3, like-7)
+aux(put-9, to-8)
+xcomp(like-7, put-9)
+dobj(put-9, it-10)
+

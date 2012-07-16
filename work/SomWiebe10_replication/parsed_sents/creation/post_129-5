@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (VP (VB and)
+      (ADJP
+        (ADVP (RB thus))
+        (JJ superior)
+        (PP (IN by)
+          (NP (JJ natural) (NN selection)))))
+    (. .)))
+
+root(ROOT-0, and-1)
+advmod(superior-3, thus-2)
+acomp(and-1, superior-3)
+amod(selection-6, natural-5)
+prep_by(superior-3, selection-6)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB reach)
+          (NP (JJ modern) (NNS levels))
+          (ADVP (RB quite)
+            (NP (DT a) (JJ few) (NNS mutations))))))
+    (, ,)
+    (ADVP (RB however))
+    (NP (PRP they))
+    (VP (VBD built)
+      (ADVP (RB slowly))
+      (PP (IN over)
+        (NP (DT the) (JJ past)
+          (QP (JJ few) (CD million))
+          (NNS years))))
+    (. .)))
+
+aux(reach-2, To-1)
+dep(built-12, reach-2)
+amod(levels-4, modern-3)
+dobj(reach-2, levels-4)
+advmod(reach-2, quite-5)
+det(mutations-8, a-6)
+amod(mutations-8, few-7)
+pobj(quite-5, mutations-8)
+advmod(built-12, however-10)
+nsubj(built-12, they-11)
+root(ROOT-0, built-12)
+advmod(built-12, slowly-13)
+det(years-19, the-15)
+amod(years-19, past-16)
+quantmod(million-18, few-17)
+num(years-19, million-18)
+prep_over(built-12, years-19)
+

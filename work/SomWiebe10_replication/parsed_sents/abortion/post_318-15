@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (, ,)
+    (NP (DT this) (NN example))
+    (VP (VBZ does) (RB n't)
+      (VP (VB take)
+        (PP (IN into)
+          (NP (NN account)))
+        (SBAR (IN whether)
+          (S
+            (NP (DT a) (NN fetus))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN person))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ brings)
+                      (NP (PRP us))
+                      (ADVP (RB right) (RB back)
+                        (PP (TO to)
+                          (SBAR
+                            (WHADVP (WRB where))
+                            (S
+                              (NP (PRP we))
+                              (VP (VBD started)))))))))))))))
+    (. .)))
+
+prep_of(take-8, course-2)
+det(example-5, this-4)
+nsubj(take-8, example-5)
+aux(take-8, does-6)
+neg(take-8, n't-7)
+root(ROOT-0, take-8)
+prep_into(take-8, account-10)
+complm(person-16, whether-11)
+det(fetus-13, a-12)
+nsubj(person-16, fetus-13)
+cop(person-16, is-14)
+det(person-16, a-15)
+ccomp(take-8, person-16)
+nsubj(brings-19, person-16)
+rcmod(person-16, brings-19)
+dobj(brings-19, us-20)
+advmod(back-22, right-21)
+advmod(brings-19, back-22)
+advmod(started-26, where-24)
+nsubj(started-26, we-25)
+prepc_to(back-22, started-26)
+

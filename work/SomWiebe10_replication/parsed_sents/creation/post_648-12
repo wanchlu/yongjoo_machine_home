@@ -1,0 +1,77 @@
+(ROOT
+  (FRAG
+    (PP (IN From)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS authors))
+            (PP (IN of)
+              (NP (DT the) (NN book)))))))
+    (: :) (`` ``)
+    (S
+      (NP (PRP I))
+      (VP (VBN wasn)
+        (ADJP (RB t) (JJ comfortable))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJ typical) (NN vocabulary))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (PP (IN for)
+                  (NP (DT the) (JJS most) (NN part) (NNS creationists)))
+                (VP (VBD were)
+                  (VP (VBG using)
+                    (SBAR (IN because)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBP didn)
+                          (SBAR
+                            (S
+                              (NP (NN t))
+                              (VP (VBP express)
+                                (SBAR
+                                  (WHNP (WP what))
+                                  (S
+                                    (NP (PRP I))
+                                    (VP (VBD was)
+                                      (VP (VBG trying)
+                                        (S
+                                          (VP (TO to)
+                                            (VP (VB do))))))))))))))))))))))
+    (. .)))
+
+dep(wasn-12, From-1)
+pobj(From-1, one-2)
+det(authors-5, the-4)
+prep_of(one-2, authors-5)
+det(book-8, the-7)
+prep_of(authors-5, book-8)
+nsubj(wasn-12, I-11)
+root(ROOT-0, wasn-12)
+advmod(comfortable-14, t-13)
+acomp(wasn-12, comfortable-14)
+det(vocabulary-18, the-16)
+amod(vocabulary-18, typical-17)
+prep_with(wasn-12, vocabulary-18)
+nsubj(using-26, vocabulary-18)
+det(creationists-24, the-21)
+amod(creationists-24, most-22)
+nn(creationists-24, part-23)
+prep_for(using-26, creationists-24)
+aux(using-26, were-25)
+rcmod(vocabulary-18, using-26)
+mark(didn-29, because-27)
+nsubj(didn-29, it-28)
+advcl(using-26, didn-29)
+nsubj(express-31, t-30)
+ccomp(didn-29, express-31)
+dobj(trying-35, what-32)
+nsubj(trying-35, I-33)
+xsubj(do-37, I-33)
+aux(trying-35, was-34)
+ccomp(express-31, trying-35)
+aux(do-37, to-36)
+xcomp(trying-35, do-37)
+

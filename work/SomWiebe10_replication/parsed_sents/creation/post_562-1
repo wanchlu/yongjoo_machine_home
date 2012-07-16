@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (PRP$ His) (NN job))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB fight)
+                  (NP (NNP ID)))))))))
+    (. .)))
+
+poss(job-2, His-1)
+nsubj(means-3, job-2)
+root(ROOT-0, means-3)
+nsubj(has-5, he-4)
+xsubj(fight-7, he-4)
+ccomp(means-3, has-5)
+aux(fight-7, to-6)
+xcomp(has-5, fight-7)
+dobj(fight-7, ID-8)
+
+(ROOT
+  (SBAR (RB Just) (IN like)
+    (S
+      (NP (DT the) (NNP Discovery) (NNPS Institutes))
+      (VP (VBZ pays)
+        (NP (PRP it))
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP mean)))))))
+    (. ?)))
+
+advmod(pays-6, Just-1)
+dep(pays-6, like-2)
+det(Institutes-5, the-3)
+nn(Institutes-5, Discovery-4)
+nsubj(pays-6, Institutes-5)
+root(ROOT-0, pays-6)
+iobj(pays-6, it-7)
+dobj(pays-6, people-8)
+dobj(mean-10, people-8)
+nsubj(mean-10, you-9)
+rcmod(people-8, mean-10)
+

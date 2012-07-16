@@ -1,0 +1,91 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (NN point))
+        (VP (VBG arguing)
+          (PP (IN against)
+            (NP (NN evolution)))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP you))
+              (VP (VBP do) (RB n't)
+                (VP (VB understand)
+                  (NP (PRP it))
+                  (PP (IN in)
+                    (NP (DT the) (JJ first) (NN place))))))))))
+    (. .)))
+
+expl('s-2, There-1)
+root(ROOT-0, 's-2)
+det(point-4, no-3)
+nsubj('s-2, point-4)
+partmod(point-4, arguing-5)
+prep_against(arguing-5, evolution-7)
+advmod(understand-12, when-8)
+nsubj(understand-12, you-9)
+aux(understand-12, do-10)
+neg(understand-12, n't-11)
+advcl(arguing-5, understand-12)
+dobj(understand-12, it-13)
+det(place-17, the-15)
+amod(place-17, first-16)
+prep_in(understand-12, place-17)
+
+(ROOT
+  (S
+    (VP (VBN Learn)
+      (S
+        (NP
+          (NP (DT the) (NN theory))
+          (, ,)
+          (NP (DT the) (NN science))
+          (, ,)
+          (NP (DT the) (NNS facts))
+          (CC and)
+          (NP (NN THEN) (NN debate)))
+        (NP (PRP it))))
+    (. .)))
+
+root(ROOT-0, Learn-1)
+det(theory-3, the-2)
+nsubj(it-13, theory-3)
+det(science-6, the-5)
+conj_and(theory-3, science-6)
+nsubj(it-13, science-6)
+det(facts-9, the-8)
+conj_and(theory-3, facts-9)
+nsubj(it-13, facts-9)
+nn(debate-12, THEN-11)
+conj_and(theory-3, debate-12)
+nsubj(it-13, debate-12)
+xcomp(Learn-1, it-13)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n't)
+      (VP (VB seem)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP
+                (NP (RB even) (DT the) (JJ remotest) (NN idea))
+                (PP (IN of)
+                  (NP (NN evolution)))))))))))
+
+nsubj(seem-4, You-1)
+xsubj(have-6, You-1)
+aux(seem-4, do-2)
+neg(seem-4, n't-3)
+root(ROOT-0, seem-4)
+aux(have-6, to-5)
+xcomp(seem-4, have-6)
+advmod(idea-10, even-7)
+det(idea-10, the-8)
+amod(idea-10, remotest-9)
+dobj(have-6, idea-10)
+prep_of(idea-10, evolution-12)
+

@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2005)))
+    (NP (DT the) (NNP MAAF))
+    (VP (VBD held)
+      (NP
+        (NP (DT a) (NN march))
+        (PP (IN in)
+          (NP
+            (NP (NNP Washington) (NNP DC))
+            (: ...)
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP
+                  (NP (CD one) (NN atheist))
+                  (PP (IN from)
+                    (NP (NNP WWII))))
+                (VP (VBD was)
+                  (VP (VBN quoted)
+                    (PP (IN as)
+                      (S
+                        (VP (VBG saying)
+                          (NP (DT No) (NNS atheists))
+                          (PP (IN in)
+                            (NP
+                              (NP (NNS foxholes))
+                              (PRN (-LRB- -LRB-)
+                                (NP (NNP ?))
+                                (-RRB- -RRB-)))))))))))))))))
+
+prep_in(held-5, 2005-2)
+det(MAAF-4, the-3)
+nsubj(held-5, MAAF-4)
+root(ROOT-0, held-5)
+det(march-7, a-6)
+dobj(held-5, march-7)
+nn(DC-10, Washington-9)
+prep_in(march-7, DC-10)
+rel(quoted-19, which-13)
+num(atheist-15, one-14)
+nsubjpass(quoted-19, atheist-15)
+prep_from(atheist-15, WWII-17)
+auxpass(quoted-19, was-18)
+rcmod(DC-10, quoted-19)
+prepc_as(quoted-19, saying-21)
+det(atheists-23, No-22)
+dobj(saying-21, atheists-23)
+prep_in(saying-21, foxholes-25)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (, ,)
+          (NP (PRP I))
+          (JJ wasn) (NNS t))
+        (PP (IN in)
+          (PRN (-LRB- -LRB-)
+            (ADVP (RB just))
+            (-RRB- -RRB-))
+          (NP (CD one)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD was)
+      (PP (IN in)
+        (NP (CD thirty))))
+    (. .)))
+
+nn(t-4, I-2)
+amod(t-4, wasn-3)
+ccomp(was-12, t-4)
+dep(t-4, just-7)
+prep_in(t-4, one-9)
+nsubj(was-12, I-11)
+root(ROOT-0, was-12)
+prep_in(was-12, thirty-14)
+

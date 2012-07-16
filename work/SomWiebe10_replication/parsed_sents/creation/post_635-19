@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (ADVP (RB So)
+          (CC and)
+          (RB so))
+        (NP (DT this) (NN statement))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ 's)
+              (VP (VBN filed)
+                (PP (IN with)
+                  (NP (DT the) (NNP IRS)))
+                (SBAR (RB so) (IN that)
+                  (S
+                    (NP (DT the) (NNP Foundation))
+                    (VP (MD can)
+                      (VP (VB be)
+                        (ADJP (JJ exempt)
+                          (PP (IN from)
+                            (S
+                              (VP (VBG paying)
+                                (NP (NN income) (NN tax)))))))))))))))
+      (VP (VBZ is)
+        (ADJP (JJ false))))
+    (: ;)
+    (SQ (VBZ is)
+      (NP
+        (NP (DT that))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP 're)
+              (VP (VBG saying)))))))
+    (. ?)))
+
+advmod(statement-5, So-1)
+conj_and(So-1, so-3)
+advmod(statement-5, so-3)
+det(statement-5, this-4)
+nsubjpass(filed-8, statement-5)
+nsubj(false-24, statement-5)
+auxpass(filed-8, 's-7)
+rcmod(statement-5, filed-8)
+det(IRS-11, the-10)
+prep_with(filed-8, IRS-11)
+advmod(exempt-18, so-12)
+dep(exempt-18, that-13)
+det(Foundation-15, the-14)
+nsubj(exempt-18, Foundation-15)
+aux(exempt-18, can-16)
+cop(exempt-18, be-17)
+advcl(filed-8, exempt-18)
+ccomp(filed-8, exempt-18)
+prepc_from(exempt-18, paying-20)
+nn(tax-22, income-21)
+dobj(paying-20, tax-22)
+cop(false-24, is-23)
+root(ROOT-0, false-24)
+parataxis(false-24, is-26)
+nsubj(is-26, that-27)
+dobj(saying-31, that-27)
+rel(saying-31, what-28)
+nsubj(saying-31, you-29)
+aux(saying-31, 're-30)
+rcmod(that-27, saying-31)
+

@@ -1,0 +1,86 @@
+(ROOT
+  (S (RB So)
+    (PRN (, ,)
+      (S
+        (NP (DT all))
+        (VP (VBP ye)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP are)
+                (PP (IN against)
+                  (NP (NN abortion))))))))
+      (, ,))
+    (VP
+      (VP (VB sell)
+        (NP (PRP$ your) (NN home)))
+      (, ,)
+      (VP (VB move)
+        (PP (IN into)
+          (NP
+            (NP (DT a) (JJ little) (NN trailer))
+            (PP (IN with)
+              (NP
+                (NP (DT a) (NN couple))
+                (PP (IN of)
+                  (NP (NNS roommates)))))))
+        (S
+          (VP (TO to)
+            (VP (VB save)
+              (NP (NN money)))))))
+    (. .)))
+
+advmod(sell-10, So-1)
+nsubj(ye-4, all-3)
+parataxis(sell-10, ye-4)
+nsubj(are-6, who-5)
+ccomp(ye-4, are-6)
+prep_against(are-6, abortion-8)
+root(ROOT-0, sell-10)
+poss(home-12, your-11)
+dobj(sell-10, home-12)
+dep(sell-10, move-14)
+det(trailer-18, a-16)
+amod(trailer-18, little-17)
+prep_into(move-14, trailer-18)
+det(couple-21, a-20)
+prep_with(trailer-18, couple-21)
+prep_of(couple-21, roommates-23)
+aux(save-25, to-24)
+xcomp(move-14, save-25)
+dobj(save-25, money-26)
+
+(ROOT
+  (S (RB Then)
+    (VP
+      (VP (VB drive)
+        (PRT (RP over))
+        (PP (TO to)
+          (NP (DT an) (NN abortion) (NN provider))))
+      (CC and)
+      (VP (VB offer)
+        (S
+          (VP (TO to)
+            (VP (VB PAY)
+              (S
+                (NP (NNS women))
+                (VP (TO to) (RB not)
+                  (VP (VB have)
+                    (NP (NNS abortions))))))))))
+    (. .)))
+
+advmod(drive-2, Then-1)
+root(ROOT-0, drive-2)
+prt(drive-2, over-3)
+det(provider-7, an-5)
+nn(provider-7, abortion-6)
+prep_to(drive-2, provider-7)
+conj_and(drive-2, offer-9)
+aux(PAY-11, to-10)
+xcomp(offer-9, PAY-11)
+nsubj(have-15, women-12)
+aux(have-15, to-13)
+neg(have-15, not-14)
+xcomp(PAY-11, have-15)
+dobj(have-15, abortions-16)
+

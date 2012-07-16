@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Debates))
+      (PP (IN like)
+        (NP (DT this))))
+    (VP
+      (VP (VBP do)
+        (NP (NN nothing) (JJR more)))
+      (CC but)
+      (VP (VBP cause)
+        (NP (NNS problems))
+        (PP (IN for)
+          (NP
+            (NP (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBG trying)
+                    (S
+                      (VP (TO to)
+                        (VP (VB pursue)
+                          (NP (JJ LEGITIMATE) (NNS alternatives))
+                          (PP (TO to)
+                            (NP (JJ Neo-Darwinian) (NN theory))))))))))))))
+    (. .)))
+
+nsubj(do-4, Debates-1)
+nsubj(cause-8, Debates-1)
+prep_like(Debates-1, this-3)
+root(ROOT-0, do-4)
+dep(more-6, nothing-5)
+dobj(do-4, more-6)
+conj_but(do-4, cause-8)
+dobj(cause-8, problems-9)
+prep_for(cause-8, people-11)
+nsubj(trying-14, people-11)
+aux(trying-14, are-13)
+rcmod(people-11, trying-14)
+aux(pursue-16, to-15)
+xcomp(trying-14, pursue-16)
+amod(alternatives-18, LEGITIMATE-17)
+dobj(pursue-16, alternatives-18)
+amod(theory-21, Neo-Darwinian-20)
+prep_to(pursue-16, theory-21)
+

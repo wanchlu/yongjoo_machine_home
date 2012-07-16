@@ -1,0 +1,47 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Maybe))
+    (NP
+      (NP (DT some) (JJ powerful) (NN force))
+      (PP (IN of)
+        (NP (NN energy)))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ creates)
+            (NP
+              (NP (DT a) (NN guidance))
+              (PRN (-LRB- -LRB-)
+                (S
+                  (NP (DT the) (CD one) (NNS i))
+                  (VP (VBP find)
+                    (ADJP (RBS most) (JJ probable))))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+dep(force-4, Maybe-1)
+det(force-4, some-2)
+amod(force-4, powerful-3)
+root(ROOT-0, force-4)
+nsubj(creates-8, force-4)
+prep_of(force-4, energy-6)
+rcmod(force-4, creates-8)
+det(guidance-10, a-9)
+dobj(creates-8, guidance-10)
+det(i-14, the-12)
+num(i-14, one-13)
+nsubj(find-15, i-14)
+dep(guidance-10, find-15)
+advmod(probable-17, most-16)
+acomp(find-15, probable-17)
+
+(ROOT
+  (S (CC but)
+    (VP (VB go)
+      (ADVP (RB ahead)))
+    (. .)))
+
+cc(go-2, but-1)
+root(ROOT-0, go-2)
+advmod(go-2, ahead-3)
+

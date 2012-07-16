@@ -1,0 +1,41 @@
+(ROOT
+  (S (CC And)
+    (NP (PRP He))
+    (VP (VBD asked)
+      (S
+        (NP (PRP me))
+        (VP (TO to)
+          (VP
+            (VP (VB go)
+              (PP (IN for)
+                (NP (PRP Him))))
+            (CC and)
+            (VP (VB seek)
+              (CC and)
+              (VB save)
+              (NP
+                (NP (DT that))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBZ is)
+                      (VP (VBN lost)))))))))))
+    (. .)))
+
+cc(asked-3, And-1)
+nsubj(asked-3, He-2)
+root(ROOT-0, asked-3)
+nsubj(go-6, me-4)
+nsubj(seek-10, me-4)
+aux(go-6, to-5)
+xcomp(asked-3, go-6)
+prep_for(go-6, Him-8)
+xcomp(asked-3, seek-10)
+conj_and(go-6, seek-10)
+conj_and(go-6, save-12)
+conj_and(seek-10, save-12)
+dobj(seek-10, that-13)
+nsubjpass(lost-16, that-13)
+auxpass(lost-16, is-15)
+rcmod(that-13, lost-16)
+

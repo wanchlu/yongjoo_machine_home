@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN scale))
+      (PP (IN of)
+        (NP (NNS abortions))))
+    (VP (VBZ makes)
+      (S
+        (NP (NN state) (NN intervention))
+        (ADJP (JJ compelling))
+        (SBAR
+          (S
+            (NP (DT Some))
+            (VP (VBP argue)
+              (SBAR (IN that)
+                (S
+                  (NP (NN abortion))
+                  (VP (VBZ is)
+                    (NP (DT an) (JJ individual) (JJ moral) (NN choice))
+                    (SBAR (IN that)
+                      (S
+                        (NP (DT the) (NN state))
+                        (VP (MD should) (RB not)
+                          (VP (VB get)
+                            (VP (VBN involved)
+                              (PP (IN with)))))))))))))))
+    (. .)))
+
+det(scale-2, The-1)
+nsubj(makes-5, scale-2)
+prep_of(scale-2, abortions-4)
+root(ROOT-0, makes-5)
+nn(intervention-7, state-6)
+nsubj(argue-10, intervention-7)
+dep(argue-10, compelling-8)
+nsubj(argue-10, Some-9)
+xcomp(makes-5, argue-10)
+complm(choice-17, that-11)
+nsubj(choice-17, abortion-12)
+cop(choice-17, is-13)
+det(choice-17, an-14)
+amod(choice-17, individual-15)
+amod(choice-17, moral-16)
+ccomp(argue-10, choice-17)
+complm(involved-24, that-18)
+det(state-20, the-19)
+nsubjpass(involved-24, state-20)
+aux(involved-24, should-21)
+neg(involved-24, not-22)
+auxpass(involved-24, get-23)
+ccomp(choice-17, involved-24)
+prep(involved-24, with-25)
+

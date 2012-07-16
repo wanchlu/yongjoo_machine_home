@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (EX there))
+        (VP (VBP are)
+          (ADJP (RB no) (JJ moral)))))
+    (VP (VBZ absolutes)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (VP (VBP do)
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP know)
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (VP (TO to)
+                        (VP
+                          (VP (VB change)
+                            (NP (NNS laws)))
+                          (CC or)
+                          (VP
+                            (ADVP (RB correctly))
+                            (VB interpret)
+                            (NP (PRP them))))))))))))))
+    (. ?)))
+
+mark(are-3, If-1)
+expl(are-3, there-2)
+csubj(absolutes-6, are-3)
+advmod(moral-5, no-4)
+acomp(are-3, moral-5)
+root(ROOT-0, absolutes-6)
+advmod(do-8, how-7)
+ccomp(absolutes-6, do-8)
+nsubj(know-10, we-9)
+ccomp(do-8, know-10)
+advmod(change-13, when-11)
+aux(change-13, to-12)
+xcomp(know-10, change-13)
+dobj(change-13, laws-14)
+advmod(interpret-17, correctly-16)
+xcomp(know-10, interpret-17)
+conj_or(change-13, interpret-17)
+dobj(interpret-17, them-18)
+

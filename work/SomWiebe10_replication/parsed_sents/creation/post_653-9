@@ -1,0 +1,142 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Well))
+    (RB not)
+    (PP (IN in)
+      (UCP
+        (NP
+          (NP (JJ direct) (NNS words))
+          (ADVP (RB perhaps)))
+        (CC but)
+        (ADVP (RB all)
+          (PP (IN in)
+            (NP
+              (NP (NN implication)
+                (CC and)
+                (NN intention))
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ seems)))))))))
+    (. .)))
+
+dep(not-2, Well-1)
+root(ROOT-0, not-2)
+dep(not-2, in-3)
+amod(words-5, direct-4)
+pobj(in-3, words-5)
+advmod(words-5, perhaps-6)
+pobj(in-3, all-8)
+advmod(words-5, all-8)
+conj_but(words-5, all-8)
+prep_in(all-8, implication-10)
+prep_in(all-8, intention-12)
+conj_and(implication-10, intention-12)
+nsubj(seems-14, it-13)
+rcmod(implication-10, seems-14)
+
+(ROOT
+  (FRAG (: -)
+    (VP
+      (PP (IN from)
+        (NP
+          (NP (NNP PvM))
+          (PP (IN on)
+            (NP
+              (NP (NN opposingviewsNow) (FW ain) (FW t) (FW thatta))
+              (ADJP (CD b) (NN %))))))
+      (VBD #)
+      (NP ($ $) (CD &)))
+    (. .)))
+
+prep_from(#-11, PvM-3)
+prep_on(PvM-3, opposingviewsNow-5)
+nn(opposingviewsNow-5, ain-6)
+nn(opposingviewsNow-5, t-7)
+dep(opposingviewsNow-5, thatta-8)
+number(%-10, b-9)
+amod(opposingviewsNow-5, %-10)
+root(ROOT-0, #-11)
+dobj(#-11, $-12)
+num($-12, &-13)
+
+(ROOT
+  (S
+    (S
+      (SBAR
+        (PRN (-LRB- -LRB-)
+          (FRAG
+            (NP (RB yes))
+            (NP
+              (NP (NNP Barbara))
+              (, ,)
+              (NP (NN pun) (NNS intended))
+              (: :)
+              (NP (NNP D))))
+          (-RRB- -RRB-))
+        (S
+          (NP (PRP I))
+          (VP (VB don)
+            (NP (NN t)))))
+      (VP (VBP know)
+        (SBAR (IN if)
+          (S
+            (NP (PRP I))
+            (VP (MD should)
+              (VP (VB continue)
+                (NP (DT the) (NN debate))
+                (PP (IN with)
+                  (NP (PRP him))))))
+          (CC or)
+          (RB not))))
+    (: ;)
+    (S
+      (S
+        (VP (VBZ is)
+          (NP (PRP it))
+          (PP (IN worth)
+            (NP
+              (NP (PRP it))
+              (CC or)
+              (NP (NN can) (NNS readers))))))
+      (VP (VBP notice)
+        (NP
+          (NP (DT the) (NNS flaws))
+          (PP (IN in)
+            (NP (PRP$ his) (NN logic))))
+        (PP (IN from)
+          (NP (DT the) (NN start)))))
+    (. ?)))
+
+dep(don-11, yes-2)
+dep(yes-2, Barbara-3)
+nn(intended-6, pun-5)
+appos(Barbara-3, intended-6)
+dep(Barbara-3, D-8)
+nsubj(don-11, I-10)
+csubj(know-13, don-11)
+dobj(don-11, t-12)
+root(ROOT-0, know-13)
+mark(continue-17, if-14)
+nsubj(continue-17, I-15)
+aux(continue-17, should-16)
+advcl(know-13, continue-17)
+det(debate-19, the-18)
+dobj(continue-17, debate-19)
+prep_with(continue-17, him-21)
+advcl(know-13, not-23)
+conj_or(continue-17, not-23)
+cop(it-26, is-25)
+csubj(notice-32, it-26)
+prep_worth(it-26, it-28)
+nn(readers-31, can-30)
+prep_worth(it-26, readers-31)
+conj_or(it-28, readers-31)
+parataxis(know-13, notice-32)
+det(flaws-34, the-33)
+dobj(notice-32, flaws-34)
+poss(logic-37, his-36)
+prep_in(flaws-34, logic-37)
+det(start-40, the-39)
+prep_from(notice-32, start-40)
+

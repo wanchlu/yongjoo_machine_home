@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Death))
+      (VP (VBZ is)
+        (ADJP (JJ sad))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (DT an) (NN inevitability)
+            (CC and)
+            (NN nobody))
+          (SBAR
+            (S
+              (VP (VBZ is)
+                (VP (VBG going)
+                  (S
+                    (VP (TO to)
+                      (VP (VB save)
+                        (NP (PRP you))
+                        (SBAR (IN after)
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP die))))))))))))))
+    (. .)))
+
+nsubj(sad-3, Death-1)
+cop(sad-3, is-2)
+root(ROOT-0, sad-3)
+nsubj(inevitability-9, it-6)
+cop(inevitability-9, is-7)
+det(inevitability-9, an-8)
+conj_but(sad-3, inevitability-9)
+conj_but(sad-3, nobody-11)
+conj_and(inevitability-9, nobody-11)
+aux(going-13, is-12)
+rcmod(inevitability-9, going-13)
+aux(save-15, to-14)
+xcomp(going-13, save-15)
+dobj(save-15, you-16)
+mark(die-19, after-17)
+nsubj(die-19, you-18)
+advcl(save-15, die-19)
+

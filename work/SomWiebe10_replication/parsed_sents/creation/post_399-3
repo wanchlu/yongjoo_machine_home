@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP want)
+          (NP (NN anyone))
+          (, ,)
+          (PP (VBG including)
+            (NP (PRP yourself)))
+          (, ,)
+          (S
+            (VP (TO to)
+              (VP (VB know)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP are)
+                      (VP (VBG talking) (IN about)))))))))))
+    (, ,)
+    (VP (VB define)
+      (NP (PRP$ your) (JJ key) (NNS terms)))
+    (. .)))
+
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+xsubj(know-10, you-2)
+advcl(define-17, want-3)
+dobj(want-3, anyone-4)
+prep_including(want-3, yourself-7)
+aux(know-10, to-9)
+xcomp(want-3, know-10)
+dobj(talking-14, what-11)
+nsubj(talking-14, you-12)
+aux(talking-14, are-13)
+ccomp(know-10, talking-14)
+dep(talking-14, about-15)
+root(ROOT-0, define-17)
+poss(terms-20, your-18)
+amod(terms-20, key-19)
+dobj(define-17, terms-20)
+

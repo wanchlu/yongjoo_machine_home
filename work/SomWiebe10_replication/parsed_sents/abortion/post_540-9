@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ wants)
+            (S
+              (VP (TO to)
+                (VP (VB ban)
+                  (NP (NNS abortions)))))))))
+    (VP (MD will)
+      (VP (VB ban)
+        (NP (DT all) (NNS abortions))))
+    (. .) (. .)))
+
+nsubj(wants-3, Anyone-1)
+nsubj(ban-8, Anyone-1)
+rcmod(Anyone-1, wants-3)
+aux(ban-5, to-4)
+xcomp(wants-3, ban-5)
+dobj(ban-5, abortions-6)
+aux(ban-8, will-7)
+root(ROOT-0, ban-8)
+det(abortions-10, all-9)
+dobj(ban-8, abortions-10)
+
+(ROOT
+  (FRAG
+    (ADVP (RB even))
+    (NP
+      (NP (DT the) (NNS ones))
+      (SBAR (IN that)
+        (S
+          (NP (NNS women))
+          (VP (VBP need)))))
+    (. !)))
+
+dep(ones-3, even-1)
+det(ones-3, the-2)
+root(ROOT-0, ones-3)
+dobj(need-6, ones-3)
+complm(need-6, that-4)
+nsubj(need-6, women-5)
+dep(ones-3, need-6)
+

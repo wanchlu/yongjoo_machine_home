@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Behe))
+      (, ,)
+      (UCP (DT either)
+        (ADVP (RB here))
+        (CC or)
+        (NP (RB elsewhere)))
+      (, ,))
+    (VP (VBZ has)
+      (VP (VBN provided)
+        (NP
+          (NP (DT no) (JJ objective) (NN definition))
+          (PP (IN of)
+            (NP
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (JJ evolutionary) (NNS changes))
+                  (VP (VBP are) (`` ``)
+                    (ADJP (JJ degradative))
+                    ('' ''))))
+              (CC and)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBP are)
+                    (NP (`` ``) (NNS improvements) ('' ''))))))))))
+    (. .)))
+
+nsubj(provided-9, Behe-1)
+dep(Behe-1, either-3)
+dep(either-3, here-4)
+dep(Behe-1, elsewhere-6)
+conj_or(either-3, elsewhere-6)
+aux(provided-9, has-8)
+root(ROOT-0, provided-9)
+det(definition-12, no-10)
+amod(definition-12, objective-11)
+dobj(provided-9, definition-12)
+dobj(degradative-19, what-14)
+rel(degradative-19, what-14)
+amod(changes-16, evolutionary-15)
+nsubj(degradative-19, changes-16)
+cop(degradative-19, are-17)
+prep_of(definition-12, degradative-19)
+nsubj(improvements-25, what-22)
+cop(improvements-25, are-23)
+prep_of(definition-12, improvements-25)
+conj_and(degradative-19, improvements-25)
+

@@ -1,0 +1,33 @@
+(ROOT
+  (NP
+    (NP (NNP P12))
+    (: ;)
+    (S
+      (S
+        (NP
+          (NP (NNP P28))
+          (: ;)
+          (NP (NNP P168A))
+          (: ;))
+        (NP (NNP P566)))
+      (: ;)
+      (S
+        (NP (NNP P633))
+        (: ;)
+        (NP
+          (NP (NNP 10:90) (CD -92) (, ,) (CD 96-101))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP Forrest))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+root(ROOT-0, P12-1)
+dep(P566-7, P28-3)
+dep(P28-3, P168A-5)
+dep(P12-1, P566-7)
+dep(10:90-11, P633-9)
+parataxis(P566-7, 10:90-11)
+num(10:90-11, -92-12)
+num(10:90-11, 96-101-14)
+appos(10:90-11, Forrest-16)
+

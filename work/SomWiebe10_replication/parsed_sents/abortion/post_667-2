@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP I))
+        (VP (VBP do) (RB indeed)
+          (VP (VB believe)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (CD one))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBZ has)
+                        (NP (JJR greater) (NN cognitive) (NNS powers))))))
+                (VP (VBZ has)
+                  (NP
+                    (NP (JJR greater) (JJ inherent) (NN value))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ does) (RB not)
+                          (VP (VB mean)
+                            (NP (CD one))
+                            (PP (IN with)
+                              (NP (JJR lower) (NN cognitive) (NNS powers)))))))))))))))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN sacrificed)
+          (PP
+            (PP (IN for)
+              (NP
+                (NP (DT the) (JJ former) (POS 's))
+                (NN pleasure)))
+            (, ,) (RB only)
+            (PP (IN for)
+              (NP
+                (NP (DT the) (JJ former) (POS 's))
+                (NN need)))))))
+    (. .)))
+
+mark(believe-5, While-1)
+nsubj(believe-5, I-2)
+aux(believe-5, do-3)
+advmod(believe-5, indeed-4)
+csubjpass(sacrificed-29, believe-5)
+complm(has-13, that-6)
+nsubj(has-9, one-7)
+nsubj(has-13, one-7)
+rcmod(one-7, has-9)
+amod(powers-12, greater-10)
+nn(powers-12, cognitive-11)
+dobj(has-9, powers-12)
+ccomp(believe-5, has-13)
+amod(value-16, greater-14)
+amod(value-16, inherent-15)
+dobj(has-13, value-16)
+nsubj(mean-21, value-16)
+aux(mean-21, does-19)
+neg(mean-21, not-20)
+rcmod(value-16, mean-21)
+dobj(mean-21, one-22)
+amod(powers-26, lower-24)
+nn(powers-26, cognitive-25)
+prep_with(mean-21, powers-26)
+aux(sacrificed-29, should-27)
+auxpass(sacrificed-29, be-28)
+root(ROOT-0, sacrificed-29)
+det(former-32, the-31)
+poss(pleasure-34, former-32)
+prep_for(sacrificed-29, pleasure-34)
+advmod(sacrificed-29, only-36)
+det(former-39, the-38)
+poss(need-41, former-39)
+prep_for(sacrificed-29, need-41)
+

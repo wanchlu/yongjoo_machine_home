@@ -1,0 +1,32 @@
+(ROOT
+  (NP
+    (NP (DT The) (VBG bestselling) (NN book))
+    (PP (IN in)
+      (NP (DT the) (NN history)))
+    (PP (IN of)
+      (NP
+        (NP (DT the) (NN world))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD brought)
+              (NP (NNS changes))
+              (PP (IN into)
+                (NP
+                  (NP (NNS people) (POS 's))
+                  (NNS lives))))))))
+    (. .)))
+
+det(book-3, The-1)
+amod(book-3, bestselling-2)
+root(ROOT-0, book-3)
+det(history-6, the-5)
+prep_in(book-3, history-6)
+det(world-9, the-8)
+prep_of(book-3, world-9)
+nsubj(brought-11, world-9)
+rcmod(world-9, brought-11)
+dobj(brought-11, changes-12)
+poss(lives-16, people-14)
+prep_into(brought-11, lives-16)
+

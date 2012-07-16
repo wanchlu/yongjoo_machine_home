@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP God))
+        (VP (VBD had)
+          (VP (VBN thought)
+            (S
+              (NP (PRP it))
+              (ADJP
+                (ADJP (DT a) (RBR more) (JJ important))
+                (JJ subject)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP He)
+              (PRN (-LRB- -LRB-)
+                (NP (PRP she))
+                (-RRB- -RRB-)))
+            (VP (MD would)
+              (VP (VB have)
+                (VP (VBN told)
+                  (S
+                    (NP (PRP you))
+                    (ADJP (JJR more))))))))))
+    (. .)))
+
+mark(thought-4, If-1)
+nsubj(thought-4, God-2)
+aux(thought-4, had-3)
+advcl(sure-13, thought-4)
+nsubj(subject-9, it-5)
+dep(important-8, a-6)
+advmod(important-8, more-7)
+dep(subject-9, important-8)
+xcomp(thought-4, subject-9)
+nsubj(sure-13, I-11)
+cop(sure-13, 'm-12)
+root(ROOT-0, sure-13)
+nsubj(told-20, He-14)
+dep(He-14, she-16)
+aux(told-20, would-18)
+aux(told-20, have-19)
+dep(sure-13, told-20)
+nsubj(more-22, you-21)
+xcomp(told-20, more-22)
+

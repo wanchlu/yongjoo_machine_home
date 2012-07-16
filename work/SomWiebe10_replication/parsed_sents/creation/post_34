@@ -1,0 +1,77 @@
+(ROOT
+  (NP
+    (NP (`` ``) (DT The) (NNS dangers))
+    (PP (IN of)
+      (NP (NN creationism)))
+    (PP (IN in)
+      (NP (NN education) ('' '')))
+    (. .)))
+
+det(dangers-3, The-2)
+root(ROOT-0, dangers-3)
+prep_of(dangers-3, creationism-5)
+prep_in(dangers-3, education-7)
+
+(ROOT
+  (NP
+    (NP (NNP Council))
+    (PP (IN of)
+      (NP (NNP Europe)))
+    (. .)))
+
+root(ROOT-0, Council-1)
+prep_of(Council-1, Europe-3)
+
+(ROOT
+  (NP
+    (NP
+      (NP (CD 8))
+      (NP (NNP June) (CD 2007)))
+    (NP (`` ``) (NNP Religion)
+      (PP (IN in)
+        (NP (DT the) (NNP Science) (NNP Class))))
+    (. ?)))
+
+root(ROOT-0, 8-1)
+dep(8-1, June-2)
+num(June-2, 2007-3)
+dep(8-1, Religion-5)
+det(Class-9, the-7)
+nn(Class-9, Science-8)
+prep_in(Religion-5, Class-9)
+
+(ROOT
+  (S
+    (ADVP (WRB Why))
+    (NP (NNP Creationism)
+      (CC and)
+      (NNP Intelligent) (NNP Design))
+    (VP (VBP Do) (RB n't)
+      (VP (VB Belong) ('' '')))
+    (. .)))
+
+advmod(Belong-8, Why-1)
+nn(Design-5, Creationism-2)
+conj_and(Creationism-2, Intelligent-4)
+nn(Design-5, Intelligent-4)
+nsubj(Belong-8, Design-5)
+aux(Belong-8, Do-6)
+neg(Belong-8, n't-7)
+root(ROOT-0, Belong-8)
+
+(ROOT
+  (NP (NNP Anti) (NNP Defamation) (NNP League) (. .)))
+
+nn(League-3, Anti-1)
+nn(League-3, Defamation-2)
+root(ROOT-0, League-3)
+
+(ROOT
+  (ADJP (JJ Retrieved)
+    (NP (NNP January) (CD 3) (, ,) (CD 2007))))
+
+root(ROOT-0, Retrieved-1)
+tmod(Retrieved-1, January-2)
+num(January-2, 3-3)
+num(January-2, 2007-5)
+

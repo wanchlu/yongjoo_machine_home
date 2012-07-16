@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (VP (VBN shown)
+            (NP (PRP you))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP avoid)
+      (S
+        (VP (VBG looking)
+          (PP (IN at)
+            (NP (DT the) (NN evidence)))
+          (PP (IN by)
+            (S
+              (ADVP (RB arbitrarily))
+              (VP (VBG setting)
+                (NP (PRP$ your) (NNS requirements))
+                (PP (IN for)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (PRP you))
+                      (VP (MD would)
+                        (VP (VB accept))))))))))))
+    (. .)))
+
+mark(shown-4, As-1)
+nsubj(shown-4, I-2)
+aux(shown-4, have-3)
+advcl(avoid-8, shown-4)
+dobj(shown-4, you-5)
+nsubj(avoid-8, you-7)
+root(ROOT-0, avoid-8)
+xcomp(avoid-8, looking-9)
+det(evidence-12, the-11)
+prep_at(looking-9, evidence-12)
+advmod(setting-15, arbitrarily-14)
+prepc_by(looking-9, setting-15)
+poss(requirements-17, your-16)
+dobj(setting-15, requirements-17)
+dobj(accept-22, what-19)
+nsubj(accept-22, you-20)
+aux(accept-22, would-21)
+prepc_for(setting-15, accept-22)
+

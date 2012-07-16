@@ -1,0 +1,102 @@
+(ROOT
+  (S
+    (ADVP (RB Very))
+    (NP
+      (NP (RB little))
+      (PP (IN of)
+        (NP (DT all) (NNS abortions))))
+    (VP (VBP are)
+      (VP (VBN performed)
+        (PP (RB because) (IN of)
+          (NP
+            (NP (DT the) (NN baby))
+            (VP (VBG threatening)
+              (NP
+                (NP (DT the) (NN mother) (POS 's))
+                (NN life)))))))
+    (. .)))
+
+advmod(performed-7, Very-1)
+nsubjpass(performed-7, little-2)
+det(abortions-5, all-4)
+prep_of(little-2, abortions-5)
+auxpass(performed-7, are-6)
+root(ROOT-0, performed-7)
+det(baby-11, the-10)
+prep_because_of(performed-7, baby-11)
+partmod(baby-11, threatening-12)
+det(mother-14, the-13)
+poss(life-16, mother-14)
+dobj(threatening-12, life-16)
+
+(ROOT
+  (S
+    (NP (RB Even) (JJR less) (NNS abortions))
+    (VP (VBP are)
+      (VP (VBN performed)
+        (SBAR (IN because)
+          (S
+            (NP (DT the) (NN pregnancy))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN result))
+                (PP (IN of)
+                  (NP (NN rape)
+                    (CC or)
+                    (NN incest)))))))))
+    (. .)))
+
+advmod(abortions-3, Even-1)
+amod(abortions-3, less-2)
+nsubjpass(performed-5, abortions-3)
+auxpass(performed-5, are-4)
+root(ROOT-0, performed-5)
+mark(result-11, because-6)
+det(pregnancy-8, the-7)
+nsubj(result-11, pregnancy-8)
+cop(result-11, is-9)
+det(result-11, the-10)
+advcl(performed-5, result-11)
+prep_of(result-11, rape-13)
+prep_of(result-11, incest-15)
+conj_or(rape-13, incest-15)
+
+(ROOT
+  (S
+    (S
+      (NP (JJS Most) (NNS reasons))
+      (VP (VBP are) (RB not)
+        (NP
+          (NP (JJ enough) (NN money))
+          (PP (IN for)
+            (NP (DT a) (NN baby))))))
+    (: ;)
+    (S
+      (NP (NN partner\/family))
+      (VP (VBZ does) (RB not)
+        (VP (VB want)
+          (S
+            (NP (PRP me))
+            (VP (TO to)
+              (VP (VB keep)
+                (NP (DT the) (NN baby))))))))
+    (. .)))
+
+amod(reasons-2, Most-1)
+nsubj(money-6, reasons-2)
+cop(money-6, are-3)
+neg(money-6, not-4)
+amod(money-6, enough-5)
+root(ROOT-0, money-6)
+det(baby-9, a-8)
+prep_for(money-6, baby-9)
+nsubj(want-14, partner\/family-11)
+aux(want-14, does-12)
+neg(want-14, not-13)
+parataxis(money-6, want-14)
+nsubj(keep-17, me-15)
+aux(keep-17, to-16)
+xcomp(want-14, keep-17)
+det(baby-19, the-18)
+dobj(keep-17, baby-19)
+

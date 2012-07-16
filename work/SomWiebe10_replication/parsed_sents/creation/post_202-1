@@ -1,0 +1,61 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (DT A) (NN force))
+      (ADJP (JJ unaffected)
+        (PP (IN by)
+          (NP
+            (NP (NN time)
+              (CC and)
+              (NN physics))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can) (RB not)
+                  (VP (VB be)
+                    (VP (VBN detected)
+                      (CC or)
+                      (VBN measured))))))))))
+    (CC and)
+    (S
+      (S
+        (VP (VBZ does) (RB not)
+          (ADVP
+            (ADVP (RB reliably))
+            (CC or)
+            (ADVP (RB predictably)))
+          (VP (VB act))))
+      (VP (MD can) (RB not)
+        (VP (VB be)
+          (VP
+            (ADVP (RB scientifically))
+            (VBN inferred)))))
+    (. .)))
+
+det(force-3, A-2)
+dep(unaffected-4, force-3)
+root(ROOT-0, unaffected-4)
+prep_by(unaffected-4, time-6)
+nsubjpass(detected-13, time-6)
+nsubjpass(measured-15, time-6)
+prep_by(unaffected-4, physics-8)
+conj_and(time-6, physics-8)
+nsubjpass(detected-13, physics-8)
+aux(detected-13, can-10)
+neg(detected-13, not-11)
+auxpass(detected-13, be-12)
+rcmod(time-6, detected-13)
+rcmod(time-6, measured-15)
+conj_or(detected-13, measured-15)
+aux(act-22, does-17)
+neg(act-22, not-18)
+advmod(act-22, reliably-19)
+conj_or(reliably-19, predictably-21)
+advmod(act-22, predictably-21)
+csubjpass(inferred-27, act-22)
+aux(inferred-27, can-23)
+neg(inferred-27, not-24)
+auxpass(inferred-27, be-25)
+advmod(inferred-27, scientifically-26)
+conj_and(unaffected-4, inferred-27)
+

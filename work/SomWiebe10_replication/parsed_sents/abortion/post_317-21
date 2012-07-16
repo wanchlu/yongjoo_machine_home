@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP do) (RB not)
+            (VP (VB HAVE)
+              (S
+                (VP (TO to)
+                  (VP (VB give)
+                    (NP (PRP$ your) (NNP Aunt) (NNP Judy))
+                    (NP
+                      (NP (DT a) (NN kidney))
+                      (CC nor)
+                      (NP
+                        (NP (NN anyone) (RB else))
+                        (PP (IN for)
+                          (NP (DT that) (NN matter)))))))))))))
+    (. .)))
+
+nsubj(means-2, It-1)
+root(ROOT-0, means-2)
+nsubj(HAVE-6, you-3)
+xsubj(give-8, you-3)
+aux(HAVE-6, do-4)
+neg(HAVE-6, not-5)
+ccomp(means-2, HAVE-6)
+aux(give-8, to-7)
+xcomp(HAVE-6, give-8)
+poss(Judy-11, your-9)
+nn(Judy-11, Aunt-10)
+dep(give-8, Judy-11)
+det(kidney-13, a-12)
+dobj(give-8, kidney-13)
+dobj(give-8, anyone-15)
+conj_nor(kidney-13, anyone-15)
+advmod(anyone-15, else-16)
+det(matter-19, that-18)
+prep_for(anyone-15, matter-19)
+

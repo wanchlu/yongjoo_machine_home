@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN religion))
+      (VP (VBG \/)
+        (NP (JJ ethnic) (NN group))
+        (SBAR (IN that)
+          (S
+            (NP (NNP Jesus))
+            (VP (VBD was)
+              (NP
+                (NP (DT a) (NN part))
+                (PP (IN of))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN splinter))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN religion))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD did) (RB not)
+                  (VP (VB start)
+                    (PRT (RP up))
+                    (SBAR (IN until) (IN after)
+                      (S
+                        (NP (NNP Jesus))
+                        (VP (VBD had)
+                          (VP (VBN died)))))))))))))
+    (. ?)))
+
+det(religion-2, The-1)
+nsubj(splinter-14, religion-2)
+partmod(religion-2, \/-3)
+amod(group-5, ethnic-4)
+dobj(\/-3, group-5)
+complm(part-10, that-6)
+nsubj(part-10, Jesus-7)
+cop(part-10, was-8)
+det(part-10, a-9)
+ccomp(\/-3, part-10)
+prep(part-10, of-11)
+cop(splinter-14, is-12)
+det(splinter-14, a-13)
+root(ROOT-0, splinter-14)
+det(religion-17, the-16)
+prep_of(splinter-14, religion-17)
+nsubj(start-21, religion-17)
+aux(start-21, did-19)
+neg(start-21, not-20)
+rcmod(religion-17, start-21)
+prt(start-21, up-22)
+mark(died-27, until-23)
+dep(died-27, after-24)
+nsubj(died-27, Jesus-25)
+aux(died-27, had-26)
+advcl(start-21, died-27)
+

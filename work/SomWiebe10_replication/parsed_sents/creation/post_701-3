@@ -1,0 +1,34 @@
+(ROOT
+  (S
+    (NP (NNP Scientist))
+    (VP (VBP have)
+      (S
+        (NP (PRP it))
+        (ADJP (RB hard) (JJ only))
+        (S
+          (VP (VBG having)
+            (S
+              (VP (TO to)
+                (VP (VB work)
+                  (PP (IN with)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (VP (VBZ is)
+                          (ADVP (RB already))
+                          (VP (VBN made)))))))))))))
+    (. .)))
+
+nsubj(have-2, Scientist-1)
+root(ROOT-0, have-2)
+nsubj(having-6, it-3)
+advmod(only-5, hard-4)
+dep(having-6, only-5)
+xcomp(have-2, having-6)
+aux(work-8, to-7)
+xcomp(having-6, work-8)
+nsubjpass(made-13, what-10)
+auxpass(made-13, is-11)
+advmod(made-13, already-12)
+prepc_with(work-8, made-13)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (FRAG
+    (ADJP
+      (ADJP (RB Not) (VBN stupid))
+      (, ,)
+      (CC but)
+      (ADJP
+        (ADJP (JJ ignorant))
+        (CC and)
+        (ADJP (RB perhaps) (RB even) (JJ foolish))))
+    (. .)))
+
+neg(stupid-2, Not-1)
+root(ROOT-0, stupid-2)
+conj_but(stupid-2, ignorant-5)
+advmod(foolish-9, perhaps-7)
+advmod(foolish-9, even-8)
+conj_but(stupid-2, foolish-9)
+conj_and(ignorant-5, foolish-9)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB deny)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ is)
+                (VP
+                  (ADVP (DT a) (RB widely))
+                  (VBN accepted)
+                  (CC and)
+                  (VBN evidenced)
+                  (NP (NN theory)))))))))
+    (VP (VBZ is)
+      (NP (JJ simple) (NN ignorance)))
+    (. .)))
+
+aux(deny-2, To-1)
+csubj(ignorance-13, deny-2)
+nsubjpass(accepted-7, what-3)
+nsubjpass(evidenced-9, what-3)
+auxpass(accepted-7, is-4)
+dep(widely-6, a-5)
+advmod(accepted-7, widely-6)
+ccomp(deny-2, accepted-7)
+ccomp(deny-2, evidenced-9)
+conj_and(accepted-7, evidenced-9)
+dobj(accepted-7, theory-10)
+cop(ignorance-13, is-11)
+amod(ignorance-13, simple-12)
+root(ROOT-0, ignorance-13)
+

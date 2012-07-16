@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Mike))
+      (VP (VBD said) ('' '')))
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP 're)
+            (VP (VBG thinking)
+              (PP (IN of)
+                (NP (NN personhood)))))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (ADVP (RB simply))
+            (ADVP
+              (NP (DT no) (NN question))
+              (IN about))
+            (SBAR (IN whether)
+              (CC or)
+              (RB not)
+              (S
+                (NP (PRP you))
+                (VP (VBP are)
+                  (VP (VBG ending)
+                    (NP (DT a) (NN life))))))))))
+    (. .)))
+
+nsubj(said-2, Mike-1)
+dep(think-5, said-2)
+nsubj(think-5, I-4)
+root(ROOT-0, think-5)
+nsubj(thinking-8, you-6)
+aux(thinking-8, 're-7)
+ccomp(think-5, thinking-8)
+prep_of(thinking-8, personhood-10)
+mark(is-14, because-12)
+expl(is-14, there-13)
+advcl(think-5, is-14)
+advmod(is-14, simply-15)
+det(question-17, no-16)
+npadvmod(about-18, question-17)
+advmod(is-14, about-18)
+complm(ending-24, whether-19)
+ccomp(is-14, not-21)
+conj_or(ending-24, not-21)
+nsubj(ending-24, you-22)
+aux(ending-24, are-23)
+ccomp(is-14, ending-24)
+det(life-26, a-25)
+dobj(ending-24, life-26)
+

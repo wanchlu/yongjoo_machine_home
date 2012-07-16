@@ -1,0 +1,407 @@
+(ROOT
+  (NP
+    (LST (LS 1) (-RRB- -RRB-))
+    (NP (NN man) (NN +) (NN man))
+    (, ,)
+    (NP (NN woman) (NN +) (NN woman))
+    (. .)))
+
+dep(man-5, 1-1)
+nn(man-5, man-3)
+nn(man-5, +-4)
+root(ROOT-0, man-5)
+nn(woman-9, woman-7)
+nn(woman-9, +-8)
+appos(man-5, woman-9)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (S
+    (NP
+      (NP (NN marriage))
+      (PP (IN of)))
+    (VP (VBZ equals))
+    (. .)))
+
+nsubj(equals-3, marriage-1)
+prep(marriage-1, of-2)
+root(ROOT-0, equals-3)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (S (CC but)
+    (ADVP (RB again))
+    (NP (DT the) (NN line))
+    (VP (VBZ is)
+      (FRAG
+        (WHADVP (WRB where))))
+    (. ?)))
+
+cc(is-5, but-1)
+advmod(is-5, again-2)
+det(line-4, the-3)
+nsubj(is-5, line-4)
+root(ROOT-0, is-5)
+dep(is-5, where-6)
+
+(ROOT
+  (S
+    (LST (LS 4) (-RRB- -RRB-))
+    (NP (NN marriage))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (NN right)))
+    (. .)))
+
+dep(right-7, 4-1)
+nsubj(right-7, marriage-3)
+cop(right-7, is-4)
+neg(right-7, not-5)
+det(right-7, a-6)
+root(ROOT-0, right-7)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (VP (VBN tied)
+          (PRT (RP up))
+          (PP (IN in)
+            (NP (NNS regulations))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN act))
+      (ADVP (PRP itself))
+      (VP (VBZ is) (RB not)
+        (VP (VBN done)
+          (PP (IN as)
+            (NP (DT a) (NN right)))
+          (, ,)
+          (PP (IN like)
+            (NP (VBG voting))))))
+    (. .)))
+
+nsubjpass(tied-3, it-1)
+auxpass(tied-3, is-2)
+root(ROOT-0, tied-3)
+prt(tied-3, up-4)
+prep_in(tied-3, regulations-6)
+det(act-10, the-9)
+nsubjpass(done-14, act-10)
+advmod(done-14, itself-11)
+auxpass(done-14, is-12)
+neg(done-14, not-13)
+conj_but(tied-3, done-14)
+det(right-17, a-16)
+prep_as(done-14, right-17)
+prep_like(done-14, voting-20)
+
+(ROOT
+  (S
+    (LST (LS 4) (-RRB- -RRB-))
+    (NP (PRP it))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ religious)))
+    (. .)))
+
+dep(religious-6, 4-1)
+nsubj(religious-6, it-3)
+cop(religious-6, is-4)
+neg(religious-6, not-5)
+root(ROOT-0, religious-6)
+
+(ROOT
+  (S
+    (S
+      (NP (NN religion))
+      (VP (VBZ has)
+        (VP (VBN taken)
+          (PP (IN over)
+            (NP (DT the) (NN ceremony))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ christian)
+          (CC or)
+          (JJ jewish)
+          (CC or)
+          (JJ phoenician)))
+      (. .))
+    (. .)))
+
+nsubj(taken-3, religion-1)
+aux(taken-3, has-2)
+root(ROOT-0, taken-3)
+det(ceremony-6, the-5)
+prep_over(taken-3, ceremony-6)
+nsubj(jewish-14, it-9)
+nsubj(phoenician-16, it-9)
+cop(jewish-14, is-10)
+neg(jewish-14, not-11)
+dep(jewish-14, christian-12)
+conj_but(taken-3, jewish-14)
+conj_but(taken-3, phoenician-16)
+conj_or(jewish-14, phoenician-16)
+
+(ROOT
+  (S
+    (NP (NN marriage))
+    (VP (VBZ predates)
+      (NP (JJ recordable) (NN history)))
+    (. .)))
+
+nsubj(predates-2, marriage-1)
+root(ROOT-0, predates-2)
+amod(history-4, recordable-3)
+dobj(predates-2, history-4)
+
+(ROOT
+  (S
+    (S
+      (NP (CD 5) (JJ -RRB-) (NN war))
+      (VP (VBZ is)
+        (NP (NN peace))))
+    (, ,)
+    (S
+      (NP (NN freedom))
+      (VP (VBZ is)
+        (NP (NN slavery))))
+    (, ,)
+    (S
+      (NP (NN ignorance))
+      (VP (VBZ is)
+        (NP
+          (NP (NN strength))
+          (VP (VBG changing)
+            (SBAR
+              (S
+                (NP
+                  (NP (DT the) (NNS meanings))
+                  (PP (IN of)
+                    (NP (JJ important) (NNS words))))
+                (VP (MD can)
+                  (VP (VB hurt)))))))))
+    (. .)))
+
+num(war-3, 5-1)
+nsubj(peace-5, war-3)
+cop(peace-5, is-4)
+root(ROOT-0, peace-5)
+nsubj(slavery-9, freedom-7)
+cop(slavery-9, is-8)
+ccomp(peace-5, slavery-9)
+nsubj(strength-13, ignorance-11)
+cop(strength-13, is-12)
+ccomp(peace-5, strength-13)
+partmod(strength-13, changing-14)
+det(meanings-16, the-15)
+nsubj(hurt-21, meanings-16)
+amod(words-19, important-18)
+prep_of(meanings-16, words-19)
+aux(hurt-21, can-20)
+ccomp(changing-14, hurt-21)
+
+(ROOT
+  (S (CC and)
+    (SBAR (IN if)
+      (S
+        (NP
+          (NP (DT the) (NN dialog))
+          (PP (IN on)
+            (NP (DT this))))
+        (VP (VBZ is)
+          (VP (VBN drowned)
+            (PRT (RP out))
+            (PP (IN by)
+              (NP (JJ extreme) (NN rhetoric)))
+            (PP (IN than)
+              (NP (NN everybody)))))))
+    (VP (VBZ loses))
+    (. .)))
+
+cc(loses-15, and-1)
+mark(drowned-8, if-2)
+det(dialog-4, the-3)
+nsubjpass(drowned-8, dialog-4)
+prep_on(dialog-4, this-6)
+auxpass(drowned-8, is-7)
+csubj(loses-15, drowned-8)
+prt(drowned-8, out-9)
+amod(rhetoric-12, extreme-11)
+agent(drowned-8, rhetoric-12)
+prep_than(drowned-8, everybody-14)
+root(ROOT-0, loses-15)
+
+(ROOT
+  (S
+    (NP (NN man) (NN +) (NN woman))
+    (VP (VBZ is) (RB not))
+    (. .)))
+
+nn(woman-3, man-1)
+nn(woman-3, +-2)
+nsubj(is-4, woman-3)
+root(ROOT-0, is-4)
+neg(is-4, not-5)
+
+(ROOT
+  (S
+    (LST (LS 2) (-RRB- -RRB-))
+    (ADVP (RB why))
+    (VP (VB stop)
+      (PP (IN at)
+        (NP (JJ gay) (NN marriage))))
+    (. .)))
+
+dep(stop-4, 2-1)
+advmod(stop-4, why-3)
+root(ROOT-0, stop-4)
+amod(marriage-7, gay-6)
+prep_at(stop-4, marriage-7)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (IN about)
+        (VP (VBP bi)
+          (NP (NN marriage)))))
+    (. ?)))
+
+nsubj(bi-3, What-1)
+dep(bi-3, about-2)
+root(ROOT-0, bi-3)
+dobj(bi-3, marriage-4)
+
+(ROOT
+  (S
+    (NP (NN man))
+    (VP (VBZ +)
+      (NP (NN woman) (NNS +))
+      (FRAG
+        (NP (NN woman))
+        (. .)))
+    (. .)))
+
+nsubj(+-2, man-1)
+root(ROOT-0, +-2)
+nn(+-4, woman-3)
+dobj(+-2, +-4)
+dep(+-2, woman-5)
+
+(ROOT
+  (S
+    (VP (MD might)
+      (VP (VB get)
+        (NP
+          (NP (DT a) (JJ small) (NN percentage))
+          (PP (IN of)
+            (NP (NNPS Mormons))))
+        (S
+          (VP (TO to)
+            (VP (VB support)
+              (NP (DT this)))))))
+    (. .)))
+
+aux(get-2, might-1)
+root(ROOT-0, get-2)
+det(percentage-5, a-3)
+amod(percentage-5, small-4)
+dobj(get-2, percentage-5)
+prep_of(percentage-5, Mormons-7)
+aux(support-9, to-8)
+xcomp(get-2, support-9)
+dobj(support-9, this-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP
+      (ADVP
+        (NP (CD 3))
+        (RB -RRB-))
+      (WRB Where))
+    (SQ (MD will)
+      (NP (DT the) (NN line))
+      (VP (VB be)
+        (VP (VBN drawn))))
+    (. ?)))
+
+advmod(Where-3, 3-1)
+advmod(drawn-8, Where-3)
+aux(drawn-8, will-4)
+det(line-6, the-5)
+nsubjpass(drawn-8, line-6)
+auxpass(drawn-8, be-7)
+root(ROOT-0, drawn-8)
+
+(ROOT
+  (FRAG
+    (NP (NNP AI))
+    (. ?)))
+
+root(ROOT-0, AI-1)
+
+(ROOT
+  (S
+    (NP
+      (NP (PDT All) (DT the) (NNS arguements))
+      (VP (VBN used)
+        (PP (IN in)
+          (NP
+            (NP (NN favor))
+            (PP (IN of)
+              (NP (JJ gay) (NN marriage)))))))
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN used)
+          (S
+            (VP (TO to)
+              (VP (VB support)
+                (NP
+                  (NP (DT the) (NN idea))
+                  (PP (IN of)
+                    (NP (JJ android) (NN marriage))))))))))
+    (. .)))
+
+predet(arguements-3, All-1)
+det(arguements-3, the-2)
+nsubjpass(used-12, arguements-3)
+partmod(arguements-3, used-4)
+prep_in(used-4, favor-6)
+amod(marriage-9, gay-8)
+prep_of(favor-6, marriage-9)
+aux(used-12, could-10)
+auxpass(used-12, be-11)
+root(ROOT-0, used-12)
+aux(support-14, to-13)
+xcomp(used-12, support-14)
+det(idea-16, the-15)
+dobj(support-14, idea-16)
+amod(marriage-19, android-18)
+prep_of(idea-16, marriage-19)
+
+(ROOT
+  (S
+    (ADVP (RB sure))
+    (NP (PRP we))
+    (VP (VBP are) (RB n't)
+      (ADVP (RB there))
+      (ADVP (RB yet)))
+    (. .)))
+
+advmod(are-3, sure-1)
+nsubj(are-3, we-2)
+root(ROOT-0, are-3)
+neg(are-3, n't-4)
+advmod(are-3, there-5)
+advmod(are-3, yet-6)
+

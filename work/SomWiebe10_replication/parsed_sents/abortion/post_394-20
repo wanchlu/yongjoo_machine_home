@@ -1,0 +1,49 @@
+(ROOT
+  (SQ
+    (SBAR (RB so) (IN if)
+      (S
+        (NP (FW i))
+        (VP (VBD killed)
+          (NP (PRP it)))))
+    (, ,) (VBZ does)
+    (NP (PRP it))
+    (ADVP (RB also))
+    (VP (VB mean)
+      (S
+        (VP (VBG killing)
+          (NP
+            (NP (DT some))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN animal) (POS 's))
+                (NN cell)))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ has)
+                  (NP
+                    (NP (DT no) (NN benefit))
+                    (PP (IN at)
+                      (NP (DT all)))))))))))
+    (. ?)))
+
+advmod(killed-4, so-1)
+dep(killed-4, if-2)
+nsubj(killed-4, i-3)
+advcl(mean-10, killed-4)
+dobj(killed-4, it-5)
+aux(mean-10, does-7)
+nsubj(mean-10, it-8)
+advmod(mean-10, also-9)
+root(ROOT-0, mean-10)
+xcomp(mean-10, killing-11)
+dobj(killing-11, some-12)
+nsubj(has-19, some-12)
+det(animal-15, the-14)
+poss(cell-17, animal-15)
+prep_of(some-12, cell-17)
+rcmod(some-12, has-19)
+det(benefit-21, no-20)
+dobj(has-19, benefit-21)
+prep_at(benefit-21, all-23)
+

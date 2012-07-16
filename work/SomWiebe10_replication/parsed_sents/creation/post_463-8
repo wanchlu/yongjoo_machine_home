@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (NNS Rumors))
+    (VP (VBD circulated)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NNP Sternberg))
+            (, ,)
+            (ADJP (JJ contrary)
+              (PP (TO to)
+                (NP
+                  (NP (JJ standard) (NN policy))
+                  (PP (IN for)
+                    (NP (JJ scientific) (NNS publications))))))
+            (, ,))
+          (VP (VBD did) (RB not)
+            (VP (VB send)
+              (NP (DT the) (NN paper))
+              (PRT (RP out))
+              (PP (IN for)
+                (NP (NN peer) (NN review))))))))
+    (. .)))
+
+nsubj(circulated-2, Rumors-1)
+root(ROOT-0, circulated-2)
+complm(send-16, that-3)
+nsubj(send-16, Sternberg-4)
+amod(policy-9, standard-8)
+prep_contrary_to(Sternberg-4, policy-9)
+amod(publications-12, scientific-11)
+prep_for(policy-9, publications-12)
+aux(send-16, did-14)
+neg(send-16, not-15)
+ccomp(circulated-2, send-16)
+det(paper-18, the-17)
+dobj(send-16, paper-18)
+prt(send-16, out-19)
+nn(review-22, peer-21)
+prep_for(send-16, review-22)
+

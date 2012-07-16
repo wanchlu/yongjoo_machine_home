@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (ADVP (RB recently))
+    (VP (VBD was)
+      (ADJP (JJ pregnant)
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN baby))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBD had)
+                  (NP
+                    (NP (DT a) (JJ fatal) (NN condition))
+                    (VP (VBN called)
+                      (ADVP (RB anencephaly)))))))))))
+    (. .)))
+
+nsubj(pregnant-5, I-1)
+advmod(pregnant-5, just-2)
+advmod(pregnant-5, recently-3)
+cop(pregnant-5, was-4)
+root(ROOT-0, pregnant-5)
+det(baby-8, a-7)
+prep_with(pregnant-5, baby-8)
+nsubj(had-10, baby-8)
+rcmod(baby-8, had-10)
+det(condition-13, a-11)
+amod(condition-13, fatal-12)
+dobj(had-10, condition-13)
+partmod(condition-13, called-14)
+advmod(called-14, anencephaly-15)
+

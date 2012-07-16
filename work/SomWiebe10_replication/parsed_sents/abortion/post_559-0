@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (ADVP (RB always))
+    (VP (VB forget)
+      (PP (IN about)
+        (NP
+          (NP (NNP Doe)
+            (CC v.)
+            (NNP Bolton))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (VP (VBN decided)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (JJ same) (NN day))
+                      (PP (IN as)
+                        (NP (NNP Roe))))))))))))
+    (. .)))
+
+nsubj(forget-3, People-1)
+advmod(forget-3, always-2)
+root(ROOT-0, forget-3)
+prep_about(forget-3, Doe-5)
+nsubjpass(decided-11, Doe-5)
+prep_about(forget-3, Bolton-7)
+conj_v.(Doe-5, Bolton-7)
+nsubjpass(decided-11, Bolton-7)
+auxpass(decided-11, was-10)
+rcmod(Doe-5, decided-11)
+det(day-15, the-13)
+amod(day-15, same-14)
+prep_on(decided-11, day-15)
+prep_as(day-15, Roe-17)
+

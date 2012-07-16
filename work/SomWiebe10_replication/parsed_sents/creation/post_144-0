@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP 're)
+        (ADJP (JJ right))))
+    (PRN (, ,)
+      (S
+        (NP (NN science))
+        (VP (VBZ is) (RB not)
+          (NP (NN atheism))))
+      (, ,))
+    (CC but)
+    (S
+      (NP (RB not) (WDT that))
+      (VP (VBZ 's)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (JJS most) (NNS people))
+            (VP (VBP make)
+              (S
+                (NP (PRP it))
+                (ADVP (RB out))
+                (VP (TO to)
+                  (VP (VB be)))))))))
+    (. .)))
+
+nsubj(right-3, You-1)
+cop(right-3, 're-2)
+root(ROOT-0, right-3)
+nsubj(atheism-8, science-5)
+cop(atheism-8, is-6)
+neg(atheism-8, not-7)
+dep(right-3, atheism-8)
+neg(that-12, not-11)
+nsubj('s-13, that-12)
+conj_but(right-3, 's-13)
+dep(make-17, what-14)
+amod(people-16, most-15)
+nsubj(make-17, people-16)
+ccomp('s-13, make-17)
+nsubj(be-21, it-18)
+advmod(be-21, out-19)
+aux(be-21, to-20)
+xcomp(make-17, be-21)
+

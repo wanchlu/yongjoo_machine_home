@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (RB then)))
+    (, ,)
+    (NP
+      (NP
+        (ADJP
+          (ADJP (JJR newer))
+          (CC and)
+          (ADJP (RBR more) (JJ accurate)))
+        (NNS models))
+      (PP (IN of)
+        (NP (DT the) (JJ earth-moon) (NN system))))
+    (VP (VBD put)
+      (NP (DT the) (NN moon))
+      (NP (DT a) (JJ good) (NN distance))
+      (ADVP (RB away)
+        (PP (IN from)
+          (NP (DT the) (NN earth))
+          (ADVP
+            (NP
+              (QP (CD 4) (CD billion))
+              (NNS years))
+            (RB ago)))))
+    (. .)))
+
+prep(put-13, Since-1)
+pobj(Since-1, then-2)
+amod(models-8, newer-4)
+advmod(accurate-7, more-6)
+conj_and(newer-4, accurate-7)
+amod(models-8, accurate-7)
+nsubj(put-13, models-8)
+det(system-12, the-10)
+amod(system-12, earth-moon-11)
+prep_of(models-8, system-12)
+root(ROOT-0, put-13)
+det(moon-15, the-14)
+iobj(put-13, moon-15)
+det(distance-18, a-16)
+amod(distance-18, good-17)
+dobj(put-13, distance-18)
+det(earth-22, the-21)
+prep_away_from(put-13, earth-22)
+number(billion-24, 4-23)
+num(years-25, billion-24)
+npadvmod(ago-26, years-25)
+advmod(put-13, ago-26)
+

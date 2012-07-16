@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (ADVP (RB Furthermore))
+    (, ,)
+    (NP
+      (NP (NN poll) (NNS data))
+      (VP (VBG dealing)
+        (ADVP (RB specifically))
+        (PP (IN with)
+          (NP (DT the) (NNP MCP)))))
+    (VP (VBZ shows)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (NP (NNP Obama) (POS 's))
+              (NN change))
+            (PP (IN in)
+              (NP (NN policy))))
+          (VP (VBD was)
+            (VP (VBN supported)
+              (PP (IN by)
+                (NP
+                  (NP
+                    (NP
+                      (QP (RB only) (RB about) (DT a) (NN third)))
+                    (PRN (-LRB- -LRB-)
+                      (NP (CD 35) (NN %))
+                      (-RRB- -RRB-)))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN country))
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBZ makes)
+                            (S
+                              (NP (PRP it))
+                              (NP
+                                (NP (PRP$ his)
+                                  (ADJP (JJS least) (JJ popular))
+                                  (NN action))
+                                (PP (TO to)
+                                  (NP (NN date)))))))))))))))))
+    (. .)))
+
+advmod(shows-10, Furthermore-1)
+nn(data-4, poll-3)
+nsubj(shows-10, data-4)
+partmod(data-4, dealing-5)
+advmod(dealing-5, specifically-6)
+det(MCP-9, the-8)
+prep_with(dealing-5, MCP-9)
+root(ROOT-0, shows-10)
+complm(supported-18, that-11)
+poss(change-14, Obama-12)
+nsubjpass(supported-18, change-14)
+prep_in(change-14, policy-16)
+auxpass(supported-18, was-17)
+ccomp(shows-10, supported-18)
+quantmod(third-23, only-20)
+quantmod(third-23, about-21)
+quantmod(third-23, a-22)
+agent(supported-18, third-23)
+num(%-26, 35-25)
+appos(third-23, %-26)
+det(country-30, the-29)
+prep_of(third-23, country-30)
+nsubj(makes-32, country-30)
+rcmod(country-30, makes-32)
+nsubj(action-37, it-33)
+poss(action-37, his-34)
+dep(popular-36, least-35)
+amod(action-37, popular-36)
+xcomp(makes-32, action-37)
+prep_to(action-37, date-39)
+

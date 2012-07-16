@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (SBAR (IN Unless)
+      (S
+        (NP (PRP you))
+        (VP (VBP wish)
+          (S
+            (VP (TO to)
+              (VP (VB confine)
+                (S
+                  (VP (VBG god)
+                    (NP (DT the) (NN observer))
+                    (PP (TO to)
+                      (NP
+                        (NP (DT the) (NN center))
+                        (PP (IN of)
+                          (NP (DT a) (JJ black) (NN hole)))))))))))))
+    (, ,)
+    (NP (DT the) (JJ observable) (NN universe))
+    (VP (VBZ is)
+      (ADJP
+        (NP
+          (QP (RB approximately) (CD 13.7) (CD billion))
+          (NNS years))
+        (JJ old))
+      (SBAR (IN as)
+        (S
+          (VP (VBN measured)
+            (PP (IN from)
+              (NP
+                (NP (JJS most) (NNS frames))
+                (PP (IN of)
+                  (NP (NN reference)))))
+            (ADVP (RB therein))))))
+    (. .)))
+
+mark(wish-3, Unless-1)
+nsubj(wish-3, you-2)
+xsubj(confine-5, you-2)
+advcl(old-25, wish-3)
+aux(confine-5, to-4)
+xcomp(wish-3, confine-5)
+xcomp(confine-5, god-6)
+det(observer-8, the-7)
+dobj(god-6, observer-8)
+det(center-11, the-10)
+prep_to(god-6, center-11)
+det(hole-15, a-13)
+amod(hole-15, black-14)
+prep_of(center-11, hole-15)
+det(universe-19, the-17)
+amod(universe-19, observable-18)
+nsubj(old-25, universe-19)
+cop(old-25, is-20)
+quantmod(billion-23, approximately-21)
+number(billion-23, 13.7-22)
+num(years-24, billion-23)
+npadvmod(old-25, years-24)
+root(ROOT-0, old-25)
+mark(measured-27, as-26)
+advcl(old-25, measured-27)
+amod(frames-30, most-29)
+prep_from(measured-27, frames-30)
+prep_of(frames-30, reference-32)
+advmod(measured-27, therein-33)
+

@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB not)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (NN abortion))
+          (VP (VBZ is)))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+neg(is-2, not-3)
+dobj(is-6, what-4)
+nsubj(is-6, abortion-5)
+ccomp(is-2, is-6)
+
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN escape) (NN route))
+        (PP (IN for)
+          (NP
+            (NP (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP have)
+                  (NP
+                    (NP (DT no) (JJ other) (NN choice))
+                    (CC but)
+                    (S
+                      (VP (TO to) (RB not)
+                        (VP (VB have)
+                          (NP (DT a) (NN baby)))))))))))))
+    (. .)))
+
+nsubj(route-5, Abortion-1)
+cop(route-5, is-2)
+det(route-5, an-3)
+nn(route-5, escape-4)
+root(ROOT-0, route-5)
+prep_for(route-5, people-7)
+nsubj(have-9, people-7)
+rcmod(people-7, have-9)
+det(choice-12, no-10)
+amod(choice-12, other-11)
+dobj(have-9, choice-12)
+aux(have-16, to-14)
+neg(have-16, not-15)
+dobj(have-9, have-16)
+conj_but(choice-12, have-16)
+infmod(choice-12, have-16)
+det(baby-18, a-17)
+dobj(have-16, baby-18)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB really))
+    (VP (VBP do) (RB n't)
+      (VP (VB care)
+        (SBAR
+          (SBAR
+            (WHPP (IN about)
+              (WHNP (WP what)))
+            (S
+              (NP (DT the) (NN baby))
+              (VP (VBZ goes)
+                (PRT (RP through)))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (ADJP (RB completely) (JJ wrong))))))))
+    (. !)))
+
+nsubj(care-5, They-1)
+advmod(care-5, really-2)
+aux(care-5, do-3)
+neg(care-5, n't-4)
+root(ROOT-0, care-5)
+dep(goes-10, about-6)
+pobj(about-6, what-7)
+det(baby-9, the-8)
+nsubj(goes-10, baby-9)
+dep(care-5, goes-10)
+prt(goes-10, through-11)
+nsubj(wrong-16, that-13)
+cop(wrong-16, is-14)
+advmod(wrong-16, completely-15)
+dep(care-5, wrong-16)
+conj_and(goes-10, wrong-16)
+

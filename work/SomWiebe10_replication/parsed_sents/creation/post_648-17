@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN None))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (CD three) (NNS points))
+          (SBAR
+            (S
+              (NP
+                (NP (NNP Judges) (NNP Jones))
+                (CC and)
+                (NP (DT the) (NNP ACLU)))
+              (VP (VBP make)))))))
+    (VP (VBP show)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ early) (NNS drafts))
+          (ADVP (RB specifically))
+          (VP (VB implicate)
+            (NP
+              (NP (NN god))
+              (CC or)
+              (NP
+                (NP (DT the) (NN supernatural))
+                (PP (IN in)
+                  (NP (NNP Pandas)))))))))
+    (. .)))
+
+nsubj(show-12, None-1)
+det(points-5, the-3)
+num(points-5, three-4)
+prep_of(None-1, points-5)
+dobj(make-11, points-5)
+nn(Jones-7, Judges-6)
+nsubj(make-11, Jones-7)
+det(ACLU-10, the-9)
+conj_and(Jones-7, ACLU-10)
+nsubj(make-11, ACLU-10)
+rcmod(points-5, make-11)
+root(ROOT-0, show-12)
+complm(implicate-18, that-13)
+det(drafts-16, the-14)
+amod(drafts-16, early-15)
+nsubj(implicate-18, drafts-16)
+advmod(implicate-18, specifically-17)
+ccomp(show-12, implicate-18)
+dobj(implicate-18, god-19)
+det(supernatural-22, the-21)
+dobj(implicate-18, supernatural-22)
+conj_or(god-19, supernatural-22)
+prep_in(supernatural-22, Pandas-24)
+

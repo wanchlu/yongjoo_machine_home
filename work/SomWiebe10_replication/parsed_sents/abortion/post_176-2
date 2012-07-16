@@ -1,0 +1,33 @@
+(ROOT
+  (NP (NNS http:\/\/www.nlm.nih.gov\/MEDLINEPLUS\/ency\/article\/001488.htm) (. .)))
+
+root(ROOT-0, http:\/\/www.nlm.nih.gov\/MEDLINEPLUS\/ency\/article\/001488.htm-1)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN estimate))
+      (PP (IN of)
+        (NP
+          (NP
+            (QP (IN between) (CD 25) (TO to) (CD 50) (NN %)))
+          (PP (IN of)
+            (NP (VBN fertilized) (NNS eggs))))))
+    (VP (VBP are)
+      (ADVP (RB spontaneously))
+      (VP (VBN aborted)))
+    (. .)))
+
+det(estimate-2, An-1)
+nsubjpass(aborted-14, estimate-2)
+quantmod(%-8, between-4)
+number(%-8, 25-5)
+dep(%-8, to-6)
+number(%-8, 50-7)
+prep_of(estimate-2, %-8)
+amod(eggs-11, fertilized-10)
+prep_of(%-8, eggs-11)
+auxpass(aborted-14, are-12)
+advmod(aborted-14, spontaneously-13)
+root(ROOT-0, aborted-14)
+

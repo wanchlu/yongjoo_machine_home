@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNP ICR))
+    (VP
+      (VP (VBD moved)
+        (PP (TO to)
+          (NP (NNP Texas))))
+      (CC and)
+      (VP
+        (ADVP (RB then))
+        (VBD wanted)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP
+                (NP (DT a) (`` ``) (NN master))
+                (PP (IN of)
+                  (NP (NN science) (NN education) ('' ''))))
+              (NP (NN degree)))))))
+    (. .)))
+
+nsubj(moved-2, ICR-1)
+nsubj(wanted-7, ICR-1)
+xsubj(give-9, ICR-1)
+root(ROOT-0, moved-2)
+prep_to(moved-2, Texas-4)
+advmod(wanted-7, then-6)
+conj_and(moved-2, wanted-7)
+aux(give-9, to-8)
+xcomp(wanted-7, give-9)
+det(master-12, a-10)
+iobj(give-9, master-12)
+nn(education-15, science-14)
+prep_of(master-12, education-15)
+dobj(give-9, degree-17)
+

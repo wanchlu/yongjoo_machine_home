@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (, ,)
+    (NP
+      (NP
+        (ADVP (RB presently))
+        (DT the) (NN word))
+      (ADJP
+        (ADJP (`` ``) (JJ liberal) ('' ''))
+        (PRN (-LRB- -LRB-)
+          (PP (IN in)
+            (NP (DT a) (JJ political) (NN context)))
+          (-RRB- -RRB-))))
+    (VP (VBZ is)
+      (VP (VBN defined)
+        (PP (IN as)
+          (NP
+            (NP (CD one))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ seeks)
+                  (NP
+                    (NP (JJR greater) (NN government) (NN regulation))
+                    (CC and)
+                    (NP
+                      (NP (DT an) (NN expansion))
+                      (PP (IN of)
+                        (NP (NN welfare) (NNS programs))))))))))))
+    (. .)))
+
+prep_for(defined-17, example-2)
+advmod(word-6, presently-4)
+det(word-6, the-5)
+nsubjpass(defined-17, word-6)
+amod(word-6, liberal-8)
+dep(liberal-8, in-11)
+det(context-14, a-12)
+amod(context-14, political-13)
+pobj(in-11, context-14)
+auxpass(defined-17, is-16)
+root(ROOT-0, defined-17)
+prep_as(defined-17, one-19)
+nsubj(seeks-21, one-19)
+rcmod(one-19, seeks-21)
+amod(regulation-24, greater-22)
+nn(regulation-24, government-23)
+dobj(seeks-21, regulation-24)
+det(expansion-27, an-26)
+dobj(seeks-21, expansion-27)
+conj_and(regulation-24, expansion-27)
+nn(programs-30, welfare-29)
+prep_of(expansion-27, programs-30)
+

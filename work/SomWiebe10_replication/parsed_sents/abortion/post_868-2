@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP it))
+      (ADVP (RB also))
+      (VP (VBZ needs)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ legal)
+                (PP (IN because)
+                  (NP (NNS women)))))))))
+    (CC and)
+    (S (CC or)
+      (NP (NNS men))
+      (VP (MD will)
+        (VP
+          (VP (VB take)
+            (NP (PRP it))
+            (PP (IN into)
+              (NP (PRP$ their) (JJ own) (NNS hands))))
+          (CC and)
+          (VP (VB do)
+            (S
+              (NP (PRP it))
+              (NP (PRP themselves))
+              (S
+                (VP
+                  (ADVP (RB therefore))
+                  (VBG inflicting)
+                  (NP
+                    (NP
+                      (NP (NN damage))
+                      (PP (IN upon)
+                        (NP (PRP themselves))))
+                    (CONJP (RB as) (RB well))
+                    (NP (RB possibly) (JJ permanent) (NN damage))))))))))
+    (. .)))
+
+nsubj(needs-3, it-1)
+xsubj(legal-6, it-1)
+advmod(needs-3, also-2)
+root(ROOT-0, needs-3)
+aux(legal-6, to-4)
+cop(legal-6, be-5)
+xcomp(needs-3, legal-6)
+prep_because(legal-6, women-8)
+nsubj(take-13, men-11)
+nsubj(do-20, men-11)
+aux(take-13, will-12)
+conj_and(needs-3, take-13)
+dobj(take-13, it-14)
+poss(hands-18, their-16)
+amod(hands-18, own-17)
+prep_into(take-13, hands-18)
+conj_and(needs-3, do-20)
+conj_and(take-13, do-20)
+nsubj(inflicting-24, it-21)
+dep(inflicting-24, themselves-22)
+advmod(inflicting-24, therefore-23)
+xcomp(do-20, inflicting-24)
+dobj(inflicting-24, damage-25)
+prep_upon(damage-25, themselves-27)
+advmod(damage-32, possibly-30)
+amod(damage-32, permanent-31)
+dobj(inflicting-24, damage-32)
+conj_and(damage-25, damage-32)
+

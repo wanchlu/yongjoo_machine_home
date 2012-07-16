@@ -1,0 +1,55 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP (VB argue)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP
+                (NP (DT a) (NN zygote))
+                (CC or)
+                (NP (DT an) (NN embryo)))
+              (CC or)
+              (NP
+                (NP (DT a) (NN fetus))
+                (PRN (-LRB- -LRB-)
+                  (FRAG
+                    (NP (NN human))
+                    (CC or)
+                    (RB not))
+                  (-RRB- -RRB-))))
+            (VP (VBZ is) (RB not)
+              (NP
+                (NP (DT a) (VBG living) (NN member))
+                (PP (IN of)
+                  (NP
+                    (NP (PRP it) (POS 's))
+                    (NNS species)))))))))
+    (. ?)))
+
+advmod(argue-4, How-1)
+aux(argue-4, can-2)
+nsubj(argue-4, you-3)
+root(ROOT-0, argue-4)
+complm(member-23, that-5)
+det(zygote-7, a-6)
+nsubj(member-23, zygote-7)
+det(embryo-10, an-9)
+conj_or(zygote-7, embryo-10)
+nsubj(member-23, embryo-10)
+det(fetus-13, a-12)
+conj_or(zygote-7, fetus-13)
+nsubj(member-23, fetus-13)
+dep(fetus-13, human-15)
+dep(human-15, or-16)
+neg(human-15, not-17)
+cop(member-23, is-19)
+neg(member-23, not-20)
+det(member-23, a-21)
+amod(member-23, living-22)
+ccomp(argue-4, member-23)
+poss(species-27, it-25)
+prep_of(member-23, species-27)
+

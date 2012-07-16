@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBD reread)
+          (NP (PRP$ my) (JJ own) (NN comment)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD did)
+      (VP (VB realize)
+        (SBAR (IN that)
+          (S
+            (NP (DT that))
+            (VP (VBD seemed)
+              (NP (DT a) (NN bit))
+              (PRT (RP off))
+              (, ,)
+              (SBAR (RB even) (IN before)
+                (S
+                  (NP (PRP I))
+                  (VP (VBD read)
+                    (NP
+                      (NP (NNP yours))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBD pointed)
+                            (NP (PRP it))
+                            (PRT (RP out))))))))))))))
+    (. .)))
+
+mark(reread-3, As-1)
+nsubj(reread-3, I-2)
+advcl(realize-10, reread-3)
+poss(comment-6, my-4)
+amod(comment-6, own-5)
+dobj(reread-3, comment-6)
+nsubj(realize-10, I-8)
+aux(realize-10, did-9)
+root(ROOT-0, realize-10)
+complm(bit-15, that-11)
+nsubj(bit-15, that-12)
+cop(bit-15, seemed-13)
+det(bit-15, a-14)
+ccomp(realize-10, bit-15)
+prt(bit-15, off-16)
+advmod(read-21, even-18)
+dep(read-21, before-19)
+nsubj(read-21, I-20)
+dep(bit-15, read-21)
+dobj(read-21, yours-22)
+nsubj(pointed-25, yours-22)
+rcmod(yours-22, pointed-25)
+dobj(pointed-25, it-26)
+prt(pointed-25, out-27)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (PP (IN On)
+      (NP (DT the) (NN rape) (NN issue)))
+    (: :)
+    (NP (DT The) (NNS statistics))
+    (VP (VBP tell)
+      (NP (PRP us))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (QP (JJR less) (IN than) (CD 1))
+              (NN %))
+            (PP (IN of)
+              (NP (NNS abortions))))
+          (VP (VBZ is)
+            (VP (VBN done)
+              (PP (RB because) (IN of)
+                (NP (DT a) (NN rape))))))))
+    (. .)))
+
+det(issue-4, the-2)
+nn(issue-4, rape-3)
+prep_on(tell-8, issue-4)
+det(statistics-7, The-6)
+nsubj(tell-8, statistics-7)
+root(ROOT-0, tell-8)
+dobj(tell-8, us-9)
+complm(done-18, that-10)
+mwe(than-12, less-11)
+quantmod(1-13, than-12)
+num(%-14, 1-13)
+nsubjpass(done-18, %-14)
+prep_of(%-14, abortions-16)
+auxpass(done-18, is-17)
+ccomp(tell-8, done-18)
+det(rape-22, a-21)
+prep_because_of(done-18, rape-22)
+

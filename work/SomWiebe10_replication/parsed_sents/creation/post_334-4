@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS traits))
+      (PP (IN of)
+        (NP (DT the) (NNS organisms))))
+    (VP (VBD did) (RB not)
+      (VP (MD could) (RB not)
+        (VP (VB select)
+          (NP
+            (NP
+              (NP (DT the) (NNS laws))
+              (PP (IN of)
+                (NP (NN chemistry)
+                  (CC and)
+                  (NN physics))))
+            (CC or)
+            (NP
+              (NP (NNS astrophysics))
+              (CC or)
+              (NP (NN cosmology)))))))
+    (. .)))
+
+det(traits-2, The-1)
+nsubj(select-10, traits-2)
+det(organisms-5, the-4)
+prep_of(traits-2, organisms-5)
+aux(select-10, did-6)
+neg(select-10, not-7)
+aux(select-10, could-8)
+neg(select-10, not-9)
+root(ROOT-0, select-10)
+det(laws-12, the-11)
+dobj(select-10, laws-12)
+prep_of(laws-12, chemistry-14)
+prep_of(laws-12, physics-16)
+conj_and(chemistry-14, physics-16)
+dobj(select-10, astrophysics-18)
+conj_or(laws-12, astrophysics-18)
+conj_or(laws-12, cosmology-20)
+conj_or(astrophysics-18, cosmology-20)
+

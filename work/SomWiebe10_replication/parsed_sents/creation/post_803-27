@@ -1,0 +1,56 @@
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (S
+    (NP (PRP we))
+    (VP (VBP are)
+      (ADVP (RB no) (RB longer))
+      (NP
+        (NP (JJ biological) (NNS robots))
+        (, ,)
+        (NP
+          (NP (NN mating))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NN spring))
+              (VP (VBZ arrives) (, ,)
+                (S
+                  (VP (VBG migrating)
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (DT the) (NN sun))
+                        (VP (VBZ gets)
+                          (NP
+                            (NP (JJR lower)
+                              (CC and)
+                              (JJR lower))
+                            (PP (IN in)
+                              (NP (DT the) (NN sky)))))))))))))))
+    (. .)))
+
+nsubj(robots-6, we-1)
+cop(robots-6, are-2)
+advmod(longer-4, no-3)
+advmod(robots-6, longer-4)
+amod(robots-6, biological-5)
+root(ROOT-0, robots-6)
+appos(robots-6, mating-8)
+tmod(arrives-11, mating-8)
+advmod(arrives-11, when-9)
+nsubj(arrives-11, spring-10)
+dep(mating-8, arrives-11)
+xcomp(arrives-11, migrating-13)
+advmod(gets-17, when-14)
+det(sun-16, the-15)
+nsubj(gets-17, sun-16)
+advcl(migrating-13, gets-17)
+dobj(gets-17, lower-18)
+dobj(gets-17, lower-20)
+conj_and(lower-18, lower-20)
+det(sky-23, the-22)
+prep_in(lower-18, sky-23)
+

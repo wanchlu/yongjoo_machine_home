@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (S
+      (SBAR (RB Just) (IN because)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP
+              (NP (DT some) (`` ``) (NNS scientists) ('' ''))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP believe)
+                    (SBAR
+                      (S
+                        (NP (NN something) (RBR more))
+                        (VP (VBZ is)
+                          (VP (VBN needed))))))))))))
+      (, ,)
+      (NP (DT this))
+      (VP (VBZ is)
+        (UCP
+          (NP (DT neither) (JJ sufficient) (NN justification))
+          (CC and)
+          (ADJP (JJR worse)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP have)
+      (VP (VBN failed)
+        (S
+          (VP (TO to)
+            (VP (VB provide)
+              (NP (NNP ANY) (NN method)
+                (S
+                  (VP (TO to)
+                    (VP (VB extend)
+                      (NP (DT the) (NNP MN) (NN framework)))))))))))
+    (. .)))
+
+advmod(are-4, Just-1)
+dep(are-4, because-2)
+expl(are-4, there-3)
+advcl(is-17, are-4)
+det(scientists-7, some-5)
+nsubj(are-4, scientists-7)
+nsubj(believe-10, scientists-7)
+rcmod(scientists-7, believe-10)
+nsubjpass(needed-14, something-11)
+advmod(something-11, more-12)
+auxpass(needed-14, is-13)
+ccomp(believe-10, needed-14)
+nsubj(is-17, this-16)
+ccomp(failed-26, is-17)
+det(justification-20, neither-18)
+amod(justification-20, sufficient-19)
+attr(is-17, justification-20)
+attr(is-17, worse-22)
+conj_and(justification-20, worse-22)
+nsubj(failed-26, they-24)
+xsubj(provide-28, they-24)
+aux(failed-26, have-25)
+root(ROOT-0, failed-26)
+aux(provide-28, to-27)
+xcomp(failed-26, provide-28)
+nn(method-30, ANY-29)
+dobj(provide-28, method-30)
+aux(extend-32, to-31)
+infmod(method-30, extend-32)
+det(framework-35, the-33)
+nn(framework-35, MN-34)
+dobj(extend-32, framework-35)
+

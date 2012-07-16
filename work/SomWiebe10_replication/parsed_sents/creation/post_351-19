@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (PRP he))
+        (VP (VBZ has)
+          (VP (VBN hinted)
+            (PP (IN at)
+              (NP (DT the) (NNP Einstein) (NN model)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADVP (RB far)
+        (PP (IN from)
+          (ADJP (JJ clear))))
+      (SBAR (IN that)
+        (S
+          (NP (DT this))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (NN one))
+              (SBAR
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ has)
+                    (PP (IN in)
+                      (NP
+                        (NP (NN mind))
+                        (PP (IN as)
+                          (NP (NNS specifics)))))
+                    (VP (VBP seem)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (VP
+                              (ADVP (RB largely))
+                              (VBG lacking))))))))))))))
+    (. .)))
+
+mark(hinted-4, Although-1)
+nsubj(hinted-4, he-2)
+aux(hinted-4, has-3)
+advcl(is-11, hinted-4)
+det(model-8, the-6)
+nn(model-8, Einstein-7)
+prep_at(hinted-4, model-8)
+nsubj(is-11, it-10)
+root(ROOT-0, is-11)
+prep_far_from(is-11, clear-14)
+complm(one-19, that-15)
+nsubj(one-19, this-16)
+cop(one-19, is-17)
+det(one-19, the-18)
+ccomp(is-11, one-19)
+dobj(seem-26, one-19)
+nsubj(seem-26, he-20)
+xsubj(lacking-30, he-20)
+aux(seem-26, has-21)
+prep_in(seem-26, mind-23)
+prep_as(mind-23, specifics-25)
+rcmod(one-19, seem-26)
+aux(lacking-30, to-27)
+aux(lacking-30, be-28)
+advmod(lacking-30, largely-29)
+xcomp(seem-26, lacking-30)
+

@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (NP
+        (NP
+          (NP (PRP it) (POS 's))
+          (JJ own)
+          (ADJP (JJ unique)
+            (CC and)
+            (JJ complete))
+          (NN chromosome))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ makes)
+              (S
+                (NP (PRP it))
+                (ADJP
+                  (ADJP (JJ distinct)
+                    (PP (IN from)
+                      (NP
+                        (NP (PRP it) (POS 's))
+                        (NNS parents))))
+                  (CC and)
+                  (ADJP (RB wholly) (JJ different))))
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (NN egg)
+                    (CC and)
+                    (NN sperm))
+                  (VP (VBN used)
+                    (S
+                      (VP (TO to)
+                        (VP (VB create)
+                          (NP (PRP it)))))))))))))
+    (. .)))
+
+nsubj(has-2, It-1)
+root(ROOT-0, has-2)
+poss(chromosome-9, it-3)
+amod(chromosome-9, own-5)
+amod(chromosome-9, unique-6)
+conj_and(unique-6, complete-8)
+amod(chromosome-9, complete-8)
+dobj(has-2, chromosome-9)
+nsubj(makes-11, chromosome-9)
+rcmod(chromosome-9, makes-11)
+nsubj(distinct-13, it-12)
+nsubj(different-20, it-12)
+xcomp(makes-11, distinct-13)
+poss(parents-17, it-15)
+prep_from(distinct-13, parents-17)
+advmod(different-20, wholly-19)
+xcomp(makes-11, different-20)
+conj_and(distinct-13, different-20)
+det(egg-23, the-22)
+prep_from(makes-11, egg-23)
+xsubj(create-28, egg-23)
+prep_from(makes-11, sperm-25)
+conj_and(egg-23, sperm-25)
+xsubj(create-28, sperm-25)
+partmod(egg-23, used-26)
+aux(create-28, to-27)
+xcomp(used-26, create-28)
+dobj(create-28, it-29)
+

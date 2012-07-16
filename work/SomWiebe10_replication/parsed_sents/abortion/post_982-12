@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (PRP you))
+          (VP (VBP judge)
+            (NP (NN someone)))))
+      (, ,)
+      (NP (PRP it))
+      (ADVP (RB eventually))
+      (VP (VBZ leads)
+        (S
+          (VP (TO to)
+            (VP (VB hate))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP God))
+      (VP (MD will) (RB not)
+        (VP (VB forgive)
+          (NP (PRP you))
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP do) (RB not)
+                (VP (VB forgive)
+                  (S
+                    (NP (PRP you))
+                    (NP
+                      (NP (NN neighbor))
+                      (PP (IN for)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (PRP they))
+                            (VP (VBP have)
+                              (VP (VBN done)))))))))))))))
+    (. .)))
+
+advmod(judge-3, When-1)
+nsubj(judge-3, you-2)
+advcl(leads-8, judge-3)
+dobj(judge-3, someone-4)
+nsubj(leads-8, it-6)
+xsubj(hate-10, it-6)
+advmod(leads-8, eventually-7)
+root(ROOT-0, leads-8)
+aux(hate-10, to-9)
+xcomp(leads-8, hate-10)
+nsubj(forgive-16, God-13)
+aux(forgive-16, will-14)
+neg(forgive-16, not-15)
+conj_and(leads-8, forgive-16)
+dobj(forgive-16, you-17)
+mark(forgive-22, if-18)
+nsubj(forgive-22, you-19)
+aux(forgive-22, do-20)
+neg(forgive-22, not-21)
+advcl(forgive-16, forgive-22)
+nsubj(neighbor-24, you-23)
+xcomp(forgive-22, neighbor-24)
+dobj(done-29, what-26)
+nsubj(done-29, they-27)
+aux(done-29, have-28)
+prepc_for(neighbor-24, done-29)
+

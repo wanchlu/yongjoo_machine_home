@@ -1,0 +1,39 @@
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (VP (VBN ok)
+      (PP (TO to)
+        (NP (NN murder) (NNS people)))
+      (ADVP
+        (ADVP (RB as) (RB long))
+        (SBAR (IN as)
+          (S
+            (NP (PRP they))
+            (VP (VBP 're)
+              (ADJP (RB not) (JJ conscious))
+              (PP (JJ such) (IN as)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP 're)
+                      (ADJP (RB asleep)))))))))))
+    (. ?)))
+
+auxpass(ok-3, Is-1)
+nsubjpass(ok-3, it-2)
+root(ROOT-0, ok-3)
+nn(people-6, murder-5)
+prep_to(ok-3, people-6)
+advmod(long-8, as-7)
+advmod(ok-3, long-8)
+mark(conscious-13, as-9)
+nsubj(conscious-13, they-10)
+cop(conscious-13, 're-11)
+neg(conscious-13, not-12)
+ccomp(long-8, conscious-13)
+advmod(asleep-19, when-16)
+nsubj(asleep-19, they-17)
+cop(asleep-19, 're-18)
+prepc_such_as(conscious-13, asleep-19)
+

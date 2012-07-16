@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Afterall))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (DT a) (JJ drunk) (NN driver))
+          (VP (VBZ gets)
+            (VP (VBN hurt)
+              (PP (IN in)
+                (NP (DT a) (NN car) (NN crash)))))))
+      (, ,))
+    (VP (VBZ does)
+      (SBAR (IN that)
+        (S
+          (VP (VBP mean)
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (MD should)
+                  (VP (VB make)
+                    (S
+                      (NP (JJ drunk) (NN driving))
+                      (ADJP (JJ legal)))))))))))
+    (. ?)))
+
+dobj(hurt-8, Afterall-1)
+nsubj(does-14, Afterall-1)
+mark(hurt-8, if-3)
+det(driver-6, a-4)
+amod(driver-6, drunk-5)
+nsubjpass(hurt-8, driver-6)
+auxpass(hurt-8, gets-7)
+dep(Afterall-1, hurt-8)
+det(crash-12, a-10)
+nn(crash-12, car-11)
+prep_in(hurt-8, crash-12)
+root(ROOT-0, does-14)
+complm(mean-16, that-15)
+ccomp(does-14, mean-16)
+nsubj(make-19, we-17)
+aux(make-19, should-18)
+ccomp(mean-16, make-19)
+amod(driving-21, drunk-20)
+nsubj(legal-22, driving-21)
+xcomp(make-19, legal-22)
+

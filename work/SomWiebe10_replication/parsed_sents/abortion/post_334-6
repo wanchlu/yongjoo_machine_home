@@ -1,0 +1,25 @@
+(ROOT
+  (S
+    (NP (JJ Biological) (NN death))
+    (VP (VBZ occurs)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNS cells))
+          (VP (MD can)
+            (ADVP (RB no) (RB longer))
+            (VP (VB produce)
+              (NP (NNP ATP)))))))
+    (. .)))
+
+amod(death-2, Biological-1)
+nsubj(occurs-3, death-2)
+root(ROOT-0, occurs-3)
+advmod(produce-9, when-4)
+nsubj(produce-9, cells-5)
+aux(produce-9, can-6)
+advmod(longer-8, no-7)
+advmod(produce-9, longer-8)
+advcl(occurs-3, produce-9)
+dobj(produce-9, ATP-10)
+

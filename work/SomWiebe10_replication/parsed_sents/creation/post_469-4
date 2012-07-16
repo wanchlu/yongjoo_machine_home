@@ -1,0 +1,46 @@
+(ROOT
+  (S (IN So)
+    (NP (DT the) (NNP NCSE))
+    (VP (VBD advocated)
+      (NP
+        (NP (DT a) (NN strategy))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBD opposed)
+              (S
+                (VP (VBG dismissing)
+                  (NP (PRP him))))
+              (, ,)
+              (S
+                (ADJP (JJ contrary)
+                  (PP (TO to)
+                    (NP
+                      (NP (DT the) (NNS claims))
+                      (PP (IN in)
+                        (NP (DT the) (NN report))))))
+                (SBAR
+                  (S
+                    (NP (NNP TJ10))
+                    (VP (VBZ quotes)
+                      (PP (IN from)))))))))))
+    (. .)))
+
+dep(advocated-4, So-1)
+det(NCSE-3, the-2)
+nsubj(advocated-4, NCSE-3)
+root(ROOT-0, advocated-4)
+det(strategy-6, a-5)
+dobj(advocated-4, strategy-6)
+nsubj(opposed-8, strategy-6)
+rcmod(strategy-6, opposed-8)
+xcomp(opposed-8, dismissing-9)
+dobj(dismissing-9, him-10)
+det(claims-15, the-14)
+prep_contrary_to(quotes-20, claims-15)
+det(report-18, the-17)
+prep_in(claims-15, report-18)
+nsubj(quotes-20, TJ10-19)
+dep(opposed-8, quotes-20)
+prep(quotes-20, from-21)
+

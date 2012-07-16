@@ -1,0 +1,108 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (NNP ID))
+      (VP (VBZ 's) (`` ``)
+        (NP
+          (NP (NN designer))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NN wink))
+              (, ,)
+              (NP (NN wink)))
+            (-RRB- -RRB-)))))
+    ('' '')
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP (DT an) (JJ evolved) (NN concept))
+      (, ,)
+      (SBAR (RB just) (IN like)
+        (S (`` ``)
+          (NP (NNP creationist))
+          ('' '')
+          (VP (VBD became)))))
+    (NP
+      (NP (`` ``) (NN cdesign) (NN proponentist) ('' ''))
+      (PP (TO to)
+        (NP (`` ``) (NN design) (NN proponent) ('' ''))))
+    (. .)))
+
+nsubj(designer-5, ID-2)
+cop(designer-5, 's-3)
+ccomp(concept-16, designer-5)
+csubj(concept-16, designer-5)
+dep(designer-5, wink-7)
+appos(wink-7, wink-9)
+cop(concept-16, is-12)
+advmod(concept-16, just-13)
+det(concept-16, an-14)
+amod(concept-16, evolved-15)
+root(ROOT-0, concept-16)
+advmod(became-23, just-18)
+dep(became-23, like-19)
+nsubj(became-23, creationist-21)
+dep(concept-16, became-23)
+nn(proponentist-26, cdesign-25)
+dep(concept-16, proponentist-26)
+nn(proponent-31, design-30)
+prep_to(proponentist-26, proponent-31)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (: ...)
+    (SQ (VBP have)
+      (NP (PRP you))
+      (VP (VBN found)
+        (NP (DT the) (NNS paragraphs))
+        (S
+          (VP (TO to)
+            (VP (VB support)
+              (NP (PRP$ your) (NN premise))
+              (ADVP (RB here))
+              (ADVP (RB yet))))))
+      (. ?))))
+
+aux(found-5, have-3)
+nsubj(found-5, you-4)
+dep(''-1, found-5)
+det(paragraphs-7, the-6)
+dobj(found-5, paragraphs-7)
+aux(support-9, to-8)
+xcomp(found-5, support-9)
+poss(premise-11, your-10)
+dobj(support-9, premise-11)
+advmod(support-9, here-12)
+advmod(support-9, yet-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Anything))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBD showed)
+            (NP (NN god))
+            (ADVP (RB specifically))))))
+    (VP (VBD was)
+      (VP (VBN implicated)
+        (PP (IN by)
+          (NP
+            (NP (NN use))
+            (PP (IN of)
+              (NP (DT the) (NN word) (NN creator)))))))
+    (. ?)))
+
+nsubj(showed-3, Anything-1)
+nsubjpass(implicated-7, Anything-1)
+rcmod(Anything-1, showed-3)
+dobj(showed-3, god-4)
+advmod(showed-3, specifically-5)
+auxpass(implicated-7, was-6)
+root(ROOT-0, implicated-7)
+agent(implicated-7, use-9)
+det(creator-13, the-11)
+nn(creator-13, word-12)
+prep_of(use-9, creator-13)
+

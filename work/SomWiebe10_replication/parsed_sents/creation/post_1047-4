@@ -1,0 +1,31 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN Because)
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (NP (DT a) (NN hoax)))))
+    (NP (NNP and))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN proven)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADVP (RB so))))))))
+    (. .)))
+
+mark(hoax-6, Because-2)
+nsubj(hoax-6, they-3)
+cop(hoax-6, are-4)
+det(hoax-6, a-5)
+dep(proven-10, hoax-6)
+nsubjpass(proven-10, and-7)
+xsubj(be-12, and-7)
+aux(proven-10, have-8)
+auxpass(proven-10, been-9)
+root(ROOT-0, proven-10)
+aux(be-12, to-11)
+xcomp(proven-10, be-12)
+advmod(be-12, so-13)
+

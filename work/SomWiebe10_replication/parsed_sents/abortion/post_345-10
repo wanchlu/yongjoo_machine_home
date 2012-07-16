@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN seen)
+        (SBAR
+          (S
+            (NP (DT the) (NN miserable))
+            (VP
+              (VP (VBZ lives)
+                (SBAR
+                  (S
+                    (NP (DT those) (NNS children))
+                    (VP (VBP have)
+                      (VP (VBN gone)
+                        (PP (IN through)))))))
+              (CC and)
+              (VP (VBD was)
+                (ADJP (JJ thankful)
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (PRP they))
+                      (ADVP (RB finally))
+                      (VP (VBD died)
+                        (PP (IN from)
+                          (NP (PDT all) (PRP$ their) (JJ medical) (NN complications)))))))))))))
+    (. .)))
+
+nsubj(seen-3, I-1)
+aux(seen-3, 've-2)
+root(ROOT-0, seen-3)
+det(miserable-5, the-4)
+nsubj(lives-6, miserable-5)
+nsubj(thankful-14, miserable-5)
+ccomp(seen-3, lives-6)
+det(children-8, those-7)
+nsubj(gone-10, children-8)
+aux(gone-10, have-9)
+ccomp(lives-6, gone-10)
+prep(gone-10, through-11)
+cop(thankful-14, was-13)
+ccomp(seen-3, thankful-14)
+conj_and(lives-6, thankful-14)
+advmod(died-18, when-15)
+nsubj(died-18, they-16)
+advmod(died-18, finally-17)
+dep(thankful-14, died-18)
+predet(complications-23, all-20)
+poss(complications-23, their-21)
+amod(complications-23, medical-22)
+prep_from(died-18, complications-23)
+

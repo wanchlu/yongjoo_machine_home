@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP you))
+        (VP (VBP believe)
+          (PP (IN in)
+            (NP (NN design) (NNS inferences))))))
+    (, ,)
+    (NP (WP what) (NN inference))
+    (VP (VBZ is)
+      (UCP
+        (NP (CD one))
+        (CC but)
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (ADVP (RB here)))))))
+    (. .)))
+
+mark(believe-3, Since-1)
+nsubj(believe-3, you-2)
+advcl(one-11, believe-3)
+nn(inferences-6, design-5)
+prep_in(believe-3, inferences-6)
+dep(inference-9, what-8)
+nsubj(one-11, inference-9)
+nsubj(make-14, inference-9)
+cop(one-11, is-10)
+root(ROOT-0, one-11)
+aux(make-14, to-13)
+conj_but(one-11, make-14)
+infmod(one-11, make-14)
+advmod(make-14, here-15)
+

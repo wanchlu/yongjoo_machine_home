@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Weird))
+      (VP (VBP stuff)))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (NN anyone))
+        (ADJP (JJ familiar)
+          (PP (IN with)
+            (NP
+              (NP (DT the) (JJ vast) (NN research))
+              (PP (IN in)
+                (NP (DT this) (NN area)))))))
+      (VP (VBZ has)
+        (S
+          (VP (TO to)
+            (VP (VB reject)
+              (NP
+                (NP (DT these)
+                  (ADJP
+                    (ADJP (JJ simplistic))
+                    (CC and)
+                    (ADJP (RB even) (JJ erroneous)))
+                  (NNS representations))
+                (PP (IN of)
+                  (NP (DT the) (NN Cambrian) (`` ``) (NN explosion) ('' '')))))))))
+    (. .)))
+
+nsubj(stuff-2, Weird-1)
+root(ROOT-0, stuff-2)
+nsubj(has-14, anyone-5)
+xsubj(reject-16, anyone-5)
+amod(anyone-5, familiar-6)
+det(research-10, the-8)
+amod(research-10, vast-9)
+prep_with(familiar-6, research-10)
+det(area-13, this-12)
+prep_in(research-10, area-13)
+conj_but(stuff-2, has-14)
+aux(reject-16, to-15)
+xcomp(has-14, reject-16)
+det(representations-22, these-17)
+amod(representations-22, simplistic-18)
+advmod(erroneous-21, even-20)
+conj_and(simplistic-18, erroneous-21)
+amod(representations-22, erroneous-21)
+dobj(reject-16, representations-22)
+det(explosion-27, the-24)
+nn(explosion-27, Cambrian-25)
+prep_of(representations-22, explosion-27)
+
+(ROOT
+  (SBARQ (RB So)
+    (WHADVP (WRB why))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (ADVP (RB still))
+      (VP (VB hear)
+        (PP (IN about)
+          (NP (PRP them)))))
+    (. ?)))
+
+advmod(hear-6, So-1)
+advmod(hear-6, why-2)
+aux(hear-6, do-3)
+nsubj(hear-6, we-4)
+advmod(hear-6, still-5)
+root(ROOT-0, hear-6)
+prep_about(hear-6, them-8)
+

@@ -1,0 +1,54 @@
+(ROOT
+  (SQ (CC Or)
+    (VBZ are)
+    (NP (PRP you))
+    (ADJP (RB just)
+      (S
+        (VP (VBG building)
+          (NP (DT a) (NN straw) (NN man)))))
+    (. ?)))
+
+cc(just-4, Or-1)
+cop(just-4, are-2)
+nsubj(just-4, you-3)
+root(ROOT-0, just-4)
+dep(just-4, building-5)
+det(man-8, a-6)
+nn(man-8, straw-7)
+dobj(building-5, man-8)
+
+(ROOT
+  (S (`` ``)
+    (NP (NNP Intelligent) (NNP Design))
+    (VP (VBZ has)
+      (NP
+        (NP (DT no) (NN merit))
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBZ rests)
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (JJ very) (NNS concepts))
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ denies)))))))))))
+    (. .)))
+
+nn(Design-3, Intelligent-2)
+nsubj(has-4, Design-3)
+root(ROOT-0, has-4)
+det(merit-6, no-5)
+dobj(has-4, merit-6)
+dobj(rests-9, merit-6)
+mark(rests-9, because-7)
+nsubj(rests-9, it-8)
+dep(merit-6, rests-9)
+det(concepts-13, the-11)
+amod(concepts-13, very-12)
+prep_on(rests-9, concepts-13)
+dobj(denies-15, concepts-13)
+nsubj(denies-15, it-14)
+rcmod(concepts-13, denies-15)
+

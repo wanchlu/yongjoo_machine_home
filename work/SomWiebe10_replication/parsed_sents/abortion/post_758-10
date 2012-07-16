@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP
+          (NP (DT the) (JJS best) (NN way))
+          (PP (IN for)
+            (NP (DT a) (NN kid))))
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN raised))))))
+    (VP (VBZ is)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (NN mother))
+          (CC and)
+          (NP (DT a) (NN father)))))
+    (. .)))
+
+mark(raised-10, Because-1)
+det(way-4, the-2)
+amod(way-4, best-3)
+nsubjpass(raised-10, way-4)
+det(kid-7, a-6)
+prep_for(way-4, kid-7)
+aux(raised-10, to-8)
+auxpass(raised-10, be-9)
+csubj(is-11, raised-10)
+root(ROOT-0, is-11)
+det(mother-14, a-13)
+prep_with(is-11, mother-14)
+det(father-17, a-16)
+prep_with(is-11, father-17)
+conj_and(mother-14, father-17)
+

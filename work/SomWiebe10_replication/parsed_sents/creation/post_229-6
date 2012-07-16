@@ -1,0 +1,41 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Probably))
+    (NP
+      (NP (RBS most) (JJ evolutionary) (NNS changes))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP improve)
+            (S
+              (VP (VBG e.g.)
+                (S
+                  (NP
+                    (NP (DT a) (NN protein))
+                    (PP (IN in)
+                      (NP (CD one) (NN aspect))))
+                  (ADJP (`` ``) (JJ degrade) ('' ''))
+                  (NP (DT a) (NN protein))
+                  (PP (IN in)
+                    (NP (DT some) (JJ other) (NNS aspects))))))))))
+    (. .)))
+
+dep(changes-4, Probably-1)
+advmod(changes-4, most-2)
+amod(changes-4, evolutionary-3)
+root(ROOT-0, changes-4)
+nsubj(improve-6, changes-4)
+rcmod(changes-4, improve-6)
+xcomp(improve-6, e.g.-7)
+det(protein-9, a-8)
+nsubj(degrade-14, protein-9)
+num(aspect-12, one-11)
+prep_in(protein-9, aspect-12)
+xcomp(e.g.-7, degrade-14)
+det(protein-17, a-16)
+dep(degrade-14, protein-17)
+dep(degrade-14, in-18)
+det(aspects-21, some-19)
+amod(aspects-21, other-20)
+pobj(in-18, aspects-21)
+

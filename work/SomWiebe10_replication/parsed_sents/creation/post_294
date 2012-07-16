@@ -1,0 +1,233 @@
+(ROOT
+  (NP (: --)
+    (NP (WP What))
+    (NP
+      (NP (NNS features))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN complexity))
+          (PP (IN of)
+            (NP (DT the) (NN cell) (NNS points))))))
+    (PP (TO to)
+      (NP (JJ intelligent) (NN design)))
+    (. ?)))
+
+root(ROOT-0, What-2)
+dep(What-2, features-3)
+det(complexity-6, the-5)
+prep_of(features-3, complexity-6)
+det(points-10, the-8)
+nn(points-10, cell-9)
+prep_of(complexity-6, points-10)
+amod(design-13, intelligent-12)
+prep_to(What-2, design-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT the) (NN complexity))
+        (PP (IN of)
+          (NP (DT the) (NN cell))))
+      (VP (VB point)
+        (PP (TO to)
+          (NP (JJ intelligent) (NN design)))))
+    (. ?)))
+
+advmod(point-8, How-1)
+aux(point-8, does-2)
+det(complexity-4, the-3)
+nsubj(point-8, complexity-4)
+det(cell-7, the-6)
+prep_of(complexity-4, cell-7)
+root(ROOT-0, point-8)
+amod(design-11, intelligent-10)
+prep_to(point-8, design-11)
+
+(ROOT
+  (S
+    (NP (DT These))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NNS kinds))
+        (PP (IN of)
+          (NP
+            (NP (NNS questions))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (MD should)
+                  (VP (VB be)
+                    (VP (VBG answering)
+                      (PP (IN with)
+                        (NP (DT this) (NN argument))))))))))))
+    (. .)))
+
+nsubj(kinds-4, These-1)
+cop(kinds-4, are-2)
+det(kinds-4, the-3)
+root(ROOT-0, kinds-4)
+prep_of(kinds-4, questions-6)
+dobj(answering-10, questions-6)
+nsubj(answering-10, you-7)
+aux(answering-10, should-8)
+aux(answering-10, be-9)
+rcmod(questions-6, answering-10)
+det(argument-13, this-12)
+prep_with(answering-10, argument-13)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP ID) (NN proponent))
+    (VP (MD would)
+      (VP (VB argue) (: :)
+        (NP
+          (NP (DT the) (NN fact))
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP
+                (VP (VBZ is)
+                  (ADJP (JJ complex)))
+                (PRN (-LRB- -LRB-)
+                  (S
+                    (PP (IN in)
+                      (NP (JJ other) (NNS words)))
+                    (, ,)
+                    (NP (NN science))
+                    (VP (MD can) (RB not)
+                      (VP (VB explain)
+                        (NP (PRP it)))))
+                  (-RRB- -RRB-))
+                (CC and)
+                (`` ``)
+                (VP (VBD specified))
+                ('' '')
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ matches)
+                      (NP (DT some) (JJ independent) (NN pattern)))))))))))
+    (. .)))
+
+det(proponent-3, The-1)
+nn(proponent-3, ID-2)
+nsubj(argue-5, proponent-3)
+aux(argue-5, would-4)
+root(ROOT-0, argue-5)
+det(fact-8, the-7)
+dobj(argue-5, fact-8)
+complm(complex-12, that-9)
+nsubj(complex-12, it-10)
+nsubj(specified-26, it-10)
+cop(complex-12, is-11)
+dep(fact-8, complex-12)
+amod(words-16, other-15)
+prep_in(explain-21, words-16)
+nsubj(explain-21, science-18)
+aux(explain-21, can-19)
+neg(explain-21, not-20)
+parataxis(complex-12, explain-21)
+parataxis(specified-26, explain-21)
+dobj(explain-21, it-22)
+dep(fact-8, specified-26)
+conj_and(complex-12, specified-26)
+advmod(matches-30, where-28)
+nsubj(matches-30, it-29)
+advcl(complex-12, matches-30)
+det(pattern-33, some-31)
+amod(pattern-33, independent-32)
+dobj(matches-30, pattern-33)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN biology)))
+    (, ,)
+    (S
+      (NP (NN function))
+      (VP (VBZ seems)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ sufficient)
+                (PP (IN for)
+                  (NP (NN something))))
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN specified))))))))))
+    (, ,) (IN so)
+    (S
+      (NP
+        (NP (RB mostly) (NN anything))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP
+              (VP (MD would)
+                (VP (VB arise)
+                  (PP (IN via)
+                    (NP
+                      (NP (DT the) (NNS processes))
+                      (PP (IN of)
+                        (NP (NN evolution)))))))
+              (CC and)
+              (VP (MD would) (RB not)
+                (ADVP (RB yet))
+                (VP (VB be)
+                  (VP
+                    (ADVP (RB fully))
+                    (VBN understood))))))))
+      (VP (MD would)
+        (VP (VB be)
+          (VP (VBN called)
+            (NP (NN design))))))
+    (. .)))
+
+prep_in(seems-5, biology-2)
+nsubj(seems-5, function-4)
+xsubj(sufficient-8, function-4)
+root(ROOT-0, seems-5)
+aux(sufficient-8, to-6)
+cop(sufficient-8, be-7)
+xcomp(seems-5, sufficient-8)
+prep_for(sufficient-8, something-10)
+aux(specified-13, to-11)
+auxpass(specified-13, be-12)
+xcomp(sufficient-8, specified-13)
+dep(seems-5, so-15)
+advmod(anything-17, mostly-16)
+nsubj(arise-20, anything-17)
+nsubjpass(understood-32, anything-17)
+nsubjpass(called-35, anything-17)
+aux(arise-20, would-19)
+rcmod(anything-17, arise-20)
+det(processes-23, the-22)
+prep_via(arise-20, processes-23)
+prep_of(processes-23, evolution-25)
+aux(understood-32, would-27)
+neg(understood-32, not-28)
+advmod(understood-32, yet-29)
+auxpass(understood-32, be-30)
+advmod(understood-32, fully-31)
+rcmod(anything-17, understood-32)
+conj_and(arise-20, understood-32)
+aux(called-35, would-33)
+auxpass(called-35, be-34)
+ccomp(seems-5, called-35)
+dobj(called-35, design-36)
+
+(ROOT
+  (S
+    (ADVP (RB Hope))
+    (NP (DT this))
+    (VP (VBZ clarifies))
+    (. .)))
+
+advmod(clarifies-3, Hope-1)
+nsubj(clarifies-3, this-2)
+root(ROOT-0, clarifies-3)
+

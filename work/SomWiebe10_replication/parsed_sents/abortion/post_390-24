@@ -1,0 +1,53 @@
+(ROOT
+  (S (CC But)
+    (SBAR (RB just)
+      (S
+        (VP (VBP remember))))
+    (, ,)
+    (NP
+      (NP (DT every) (JJ great) (NN human))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ has)
+            (ADVP (RB ever))
+            (VP (VBN lived))))))
+    (VP (VBD was) (, ,)
+      (PP (IN at)
+        (NP
+          (NP (DT some) (NN point)
+            (CC and)
+            (NN time))
+          (, ,)
+          (NP
+            (NP (DT a) (NN fetus))
+            (NP
+              (QP (JJR less) (IN than) (CD 21))
+              (NNS weeks)))))
+      (PP (IN into)
+        (NP (NN development))))
+    (. .)))
+
+cc(was-12, But-1)
+advmod(remember-3, just-2)
+dep(was-12, remember-3)
+det(human-7, every-5)
+amod(human-7, great-6)
+nsubj(lived-11, human-7)
+nsubj(was-12, human-7)
+aux(lived-11, has-9)
+advmod(lived-11, ever-10)
+rcmod(human-7, lived-11)
+root(ROOT-0, was-12)
+det(point-16, some-15)
+prep_at(was-12, point-16)
+prep_at(was-12, time-18)
+conj_and(point-16, time-18)
+det(fetus-21, a-20)
+appos(point-16, fetus-21)
+mwe(than-23, less-22)
+quantmod(21-24, than-23)
+num(weeks-25, 21-24)
+dep(fetus-21, weeks-25)
+prep_into(was-12, development-27)
+

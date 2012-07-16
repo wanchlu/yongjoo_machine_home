@@ -1,0 +1,185 @@
+(ROOT
+  (NP
+    (NP (NNS People))
+    (, ,)
+    (NP
+      (NP (NNS people))
+      (, ,)
+      (NP (NNS people)))
+    (. .)))
+
+root(ROOT-0, People-1)
+appos(People-1, people-3)
+appos(people-3, people-5)
+
+(ROOT
+  (S
+    (NP (PRP IT))
+    (VP (VBZ DOES)
+      (NP (NNP NOT) (NNP MATTER)))
+    (. .)))
+
+nsubj(DOES-2, IT-1)
+root(ROOT-0, DOES-2)
+nn(MATTER-4, NOT-3)
+dobj(DOES-2, MATTER-4)
+
+(ROOT
+  (SQ
+    (S
+      (NP (PDT All) (DT these) (NNS debates))
+      (ADVP (RB about))
+      (VP (MD should)
+        (ADVP (RB gays))
+        (VP (VB adopt))))
+    (, ,)
+    (SQ (VBP do)
+      (NP (NNS redheads))
+      (VP (VB have)
+        (NP
+          (NP (JJ bad) (NNS tempers))
+          (, ,)
+          (VP (VBP are)
+            (ADJP
+              (ADVP (RBS most) (RB girls))
+              (JJ shallow)))
+          (, ,)
+          (SBAR
+            (S
+              (NP (DT these))
+              (VP (VBP are) (RB all)
+                (NP
+                  (NP (DT the) (JJ same) (NN kind))
+                  (PP (IN of)
+                    (NP (NNS debates))))))))))
+    (. !)))
+
+predet(debates-3, All-1)
+det(debates-3, these-2)
+nsubj(adopt-7, debates-3)
+advmod(adopt-7, about-4)
+aux(adopt-7, should-5)
+advmod(adopt-7, gays-6)
+dep(have-11, adopt-7)
+aux(have-11, do-9)
+nsubj(have-11, redheads-10)
+root(ROOT-0, have-11)
+amod(tempers-13, bad-12)
+dobj(have-11, tempers-13)
+cop(shallow-18, are-15)
+advmod(girls-17, most-16)
+advmod(shallow-18, girls-17)
+dep(tempers-13, shallow-18)
+nsubj(kind-25, these-20)
+cop(kind-25, are-21)
+advmod(kind-25, all-22)
+det(kind-25, the-23)
+amod(kind-25, same-24)
+rcmod(tempers-13, kind-25)
+prep_of(kind-25, debates-27)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Gays))
+      (VP (MD can)
+        (VP (VB adopt))))
+    (, ,)
+    (S
+      (NP (JJ straight) (NNS people))
+      (VP (MD can)
+        (VP (VB adopt))))
+    (, ,)
+    (S
+      (NP (JJ bisexual) (NNS people))
+      (VP (MD can)
+        (VP (VB adopt))))
+    (, ,)
+    (S
+      (NP (NN anybody))
+      (VP (MD can)
+        (VP (VB adopt))))
+    (. !)))
+
+nsubj(adopt-3, Gays-1)
+aux(adopt-3, can-2)
+root(ROOT-0, adopt-3)
+amod(people-6, straight-5)
+nsubj(adopt-8, people-6)
+aux(adopt-8, can-7)
+ccomp(adopt-3, adopt-8)
+amod(people-11, bisexual-10)
+nsubj(adopt-13, people-11)
+aux(adopt-13, can-12)
+ccomp(adopt-3, adopt-13)
+nsubj(adopt-17, anybody-15)
+aux(adopt-17, can-16)
+ccomp(adopt-3, adopt-17)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB n't)
+      (VP (VB make)
+        (NP (DT a) (NN difference))))
+    (. .)))
+
+nsubj(make-4, It-1)
+aux(make-4, does-2)
+neg(make-4, n't-3)
+root(ROOT-0, make-4)
+det(difference-6, a-5)
+dobj(make-4, difference-6)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (VP (VBG saying)
+          (SBAR
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (MD SHOULD)
+                  (VP (VB adopt)))))
+            (, ,)
+            (CC but)
+            (SBAR (IN that)
+              (S
+                (NP (PRP they))
+                (VP (MD can))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB n't)
+        (VP (VB make)
+          (NP
+            (NP (RB much))
+            (PP (IN of)
+              (NP (DT a) (NN difference)))))))
+    (. .)))
+
+advmod(saying-6, Also-1)
+nsubj(saying-6, I-3)
+aux(saying-6, 'm-4)
+neg(saying-6, not-5)
+root(ROOT-0, saying-6)
+nsubj(adopt-9, they-7)
+aux(adopt-9, SHOULD-8)
+ccomp(saying-6, adopt-9)
+complm(can-14, that-12)
+nsubj(can-14, they-13)
+ccomp(saying-6, can-14)
+conj_but(adopt-9, can-14)
+nsubj(make-20, it-17)
+aux(make-20, does-18)
+neg(make-20, n't-19)
+conj_and(saying-6, make-20)
+dobj(make-20, much-21)
+det(difference-24, a-23)
+prep_of(much-21, difference-24)
+

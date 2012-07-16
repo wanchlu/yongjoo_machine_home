@@ -1,0 +1,57 @@
+(ROOT
+  (S (`` ``)
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNS places))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (JJ complex) (NNS observers))
+          (VP (VBP like)
+            (SBAR
+              (S
+                (NP (PRP us))
+                (VP (MD can)
+                  (VP (VB exist)))))))))
+    (VP (VBP are)
+      (NP
+        (NP (DT the)
+          (ADJP (RB very) (JJ same))
+          (NNS places))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP provide)
+              (NP
+                (NP (DT the) (JJS best) (JJ overall) (NNS conditions))
+                (PP (IN for)
+                  (S
+                    (VP (VBG observing))))))))))
+    (. .)))
+
+amod(words-4, other-3)
+prep_in(places-19, words-4)
+det(places-7, the-6)
+nsubj(places-19, places-7)
+advmod(like-11, where-8)
+amod(observers-10, complex-9)
+nsubj(like-11, observers-10)
+rcmod(places-7, like-11)
+nsubj(exist-14, us-12)
+aux(exist-14, can-13)
+ccomp(like-11, exist-14)
+cop(places-19, are-15)
+det(places-19, the-16)
+advmod(same-18, very-17)
+amod(places-19, same-18)
+root(ROOT-0, places-19)
+nsubj(provide-21, places-19)
+rcmod(places-19, provide-21)
+det(conditions-25, the-22)
+amod(conditions-25, best-23)
+amod(conditions-25, overall-24)
+dobj(provide-21, conditions-25)
+prepc_for(conditions-25, observing-27)
+

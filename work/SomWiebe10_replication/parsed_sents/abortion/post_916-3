@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (DT That) (NN baby))
+    (VP (VBZ is)
+      (UCP
+        (PP
+          (ADVP
+            (NP (DT a) (NN human))
+            (IN by))
+          (RB almost)
+          (NP
+            (NP (DT any) (NN body) (POS 's))
+            (NNS standards)))
+        (CC and)
+        (VP (VBG aborting)
+          (NP (PRP it))
+          (PP (IN at)
+            (SBAR (IN that)
+              (S
+                (NP (NN point))
+                (VP (MD would)
+                  (ADVP (RB surely))
+                  (VP (VB be)
+                    (NP (NN murder))))))))))
+    (. !)))
+
+det(baby-2, That-1)
+nsubj(is-3, baby-2)
+root(ROOT-0, is-3)
+det(human-5, a-4)
+npadvmod(by-6, human-5)
+dep(is-3, by-6)
+advmod(by-6, almost-7)
+det(body-9, any-8)
+poss(standards-11, body-9)
+pobj(by-6, standards-11)
+dep(is-3, aborting-13)
+conj_and(by-6, aborting-13)
+dobj(aborting-13, it-14)
+complm(murder-21, that-16)
+nsubj(murder-21, point-17)
+aux(murder-21, would-18)
+advmod(murder-21, surely-19)
+cop(murder-21, be-20)
+prepc_at(aborting-13, murder-21)
+

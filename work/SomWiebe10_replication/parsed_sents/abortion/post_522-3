@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT the) (JJ same) (NN scenario))
+      (SBAR (RB as) (IN if)
+        (S
+          (NP (DT an) (NN abortion))
+          (VP (VBD occured)
+            (S
+              (VP (TO to)
+                (VP (VB save)
+                  (NP
+                    (NP (DT the) (NN life))
+                    (PP (IN of)
+                      (NP (DT the) (NN mother)))))))))))
+    (. .)))
+
+nsubj(scenario-5, This-1)
+cop(scenario-5, is-2)
+det(scenario-5, the-3)
+amod(scenario-5, same-4)
+root(ROOT-0, scenario-5)
+advmod(occured-10, as-6)
+dep(occured-10, if-7)
+det(abortion-9, an-8)
+nsubj(occured-10, abortion-9)
+xsubj(save-12, abortion-9)
+dep(scenario-5, occured-10)
+aux(save-12, to-11)
+xcomp(occured-10, save-12)
+det(life-14, the-13)
+dobj(save-12, life-14)
+det(mother-17, the-16)
+prep_of(life-14, mother-17)
+

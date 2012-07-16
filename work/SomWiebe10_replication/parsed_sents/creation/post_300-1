@@ -1,0 +1,65 @@
+(ROOT
+  (FRAG
+    (FRAG
+      (NP
+        (NP (DT The) (JJ real) (NN question))
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (SQ (VBZ Is)
+                (NP (EX there)))))))
+      (X
+        (NP (DT any) (JJ direct) (NN evidence))
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (JJ particular) (NN feature))
+            (ADVP (RB actually))
+            (VP (VBD was)
+              (VP (VBN designed)))))))
+    (, ,)
+    (CC or)
+    (FRAG
+      (PP (IN on)
+        (NP
+          (NP (DT the) (JJ other) (NN hand))
+          (, ,)
+          (NP
+            (NP (JJ direct) (NN evidence))
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBD arose)
+                  (PP (IN through)
+                    (NP (JJ natural) (NN selection)))))))))
+      (. ?))))
+
+det(question-3, The-1)
+amod(question-3, real-2)
+root(ROOT-0, question-3)
+rcmod(question-3, is-4)
+dep(is-4, Is-5)
+expl(Is-5, there-6)
+det(evidence-9, any-7)
+amod(evidence-9, direct-8)
+dep(question-3, evidence-9)
+complm(designed-16, that-10)
+det(feature-13, a-11)
+amod(feature-13, particular-12)
+nsubjpass(designed-16, feature-13)
+advmod(designed-16, actually-14)
+auxpass(designed-16, was-15)
+dep(evidence-9, designed-16)
+dep(question-3, or-18)
+dep(question-3, on-19)
+det(hand-22, the-20)
+amod(hand-22, other-21)
+pobj(on-19, hand-22)
+amod(evidence-25, direct-24)
+appos(hand-22, evidence-25)
+dobj(arose-28, evidence-25)
+complm(arose-28, that-26)
+nsubj(arose-28, it-27)
+dep(evidence-25, arose-28)
+amod(selection-31, natural-30)
+prep_through(arose-28, selection-31)
+

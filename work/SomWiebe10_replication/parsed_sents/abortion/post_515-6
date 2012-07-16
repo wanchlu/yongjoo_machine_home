@@ -1,0 +1,42 @@
+(ROOT
+  (S ('' '')
+    (NP (DT The) (JJ relative) (NN position))
+    (ADVP (IN of))
+    (NP
+      (NP (DT the) (NNP United) (NNPS States))
+      (PP (IN in)
+        (NP
+          (NP (NN comparison))
+          (PP (TO to)
+            (NP
+              (NP (NNS countries))
+              (PP (IN with)
+                (NP (DT the) (JJS lowest) (JJ infant) (NN mortality) (NNS rates))))))))
+    (VP (VBZ appears)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP (VBG worsening))))))
+    (. .)))
+
+det(position-4, The-2)
+amod(position-4, relative-3)
+nsubj(appears-19, position-4)
+xsubj(worsening-22, position-4)
+advmod(appears-19, of-5)
+det(States-8, the-6)
+nn(States-8, United-7)
+nsubj(appears-19, States-8)
+xsubj(worsening-22, States-8)
+prep_in(States-8, comparison-10)
+prep_to(comparison-10, countries-12)
+det(rates-18, the-14)
+amod(rates-18, lowest-15)
+amod(rates-18, infant-16)
+nn(rates-18, mortality-17)
+prep_with(countries-12, rates-18)
+root(ROOT-0, appears-19)
+aux(worsening-22, to-20)
+cop(worsening-22, be-21)
+xcomp(appears-19, worsening-22)
+

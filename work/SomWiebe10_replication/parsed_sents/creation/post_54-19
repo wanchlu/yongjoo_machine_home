@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VB investigate)
+        (NP
+          (NP (DT the) (NN evolution))
+          (PP (IN of)
+            (NP (JJ genomic) (NN complexity))))
+        (PP (IN in)
+          (NP
+            (NP (NNS populations))
+            (PP (IN of)
+              (NP (JJ digital) (NNS organisms))))))
+      (CC and)
+      (VP (VB monitor)
+        (PP (IN in)
+          (NP (NN detail)))
+        (NP
+          (NP (DT the) (JJ evolutionary) (NNS transitions))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VB increase)
+                (NP (NN complexity))))))))
+    (. .)))
+
+nsubj(investigate-2, We-1)
+nsubj(monitor-14, We-1)
+root(ROOT-0, investigate-2)
+det(evolution-4, the-3)
+dobj(investigate-2, evolution-4)
+amod(complexity-7, genomic-6)
+prep_of(evolution-4, complexity-7)
+prep_in(investigate-2, populations-9)
+amod(organisms-12, digital-11)
+prep_of(populations-9, organisms-12)
+conj_and(investigate-2, monitor-14)
+prep_in(monitor-14, detail-16)
+det(transitions-19, the-17)
+amod(transitions-19, evolutionary-18)
+dobj(monitor-14, transitions-19)
+nsubj(increase-21, transitions-19)
+rcmod(transitions-19, increase-21)
+dobj(increase-21, complexity-22)
+

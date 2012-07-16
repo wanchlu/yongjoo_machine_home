@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP 're)
+        (NP
+          (NP (NN view))
+          (SBAR
+            (S
+              (VP (VBZ seems)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (RB very) (JJ black)
+                        (CC and)
+                        (JJ white)))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (VBP seem)
+        (S
+          (VP (TO to)
+            (VP (VB dismiss)
+              (NP
+                (NP (DT the) (JJ huge) (JJ gray) (NN area))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ exists))))))))))
+    (. .)))
+
+nsubj(view-3, You-1)
+cop(view-3, 're-2)
+root(ROOT-0, view-3)
+rcmod(view-3, seems-4)
+aux(black-8, to-5)
+cop(black-8, be-6)
+advmod(black-8, very-7)
+xcomp(seems-4, black-8)
+xcomp(seems-4, white-10)
+conj_and(black-8, white-10)
+nsubj(seem-14, you-13)
+xsubj(dismiss-16, you-13)
+conj_and(view-3, seem-14)
+aux(dismiss-16, to-15)
+xcomp(seem-14, dismiss-16)
+det(area-20, the-17)
+amod(area-20, huge-18)
+amod(area-20, gray-19)
+dobj(dismiss-16, area-20)
+nsubj(exists-22, area-20)
+rcmod(area-20, exists-22)
+

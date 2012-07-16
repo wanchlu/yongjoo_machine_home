@@ -1,0 +1,48 @@
+(ROOT
+  (S (IN So)
+    (NP
+      (NP (DT the) (JJ only) (CD two) (NNS things))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN fetus))
+          (VP (VBZ needs)))))
+    (VP (VBZ is) (: :)
+      (NP
+        (NP
+          (NP (NN food))
+          (PRN (-LRB- -LRB-)
+            (PP (IN by)
+              (NP
+                (NP (NN aid))
+                (PP (IN of)
+                  (NP (DT the) (JJ umbilical) (NN cord)))))
+            (-RRB- -RRB-)))
+        (CC and)
+        (NP
+          (NP (NN space))
+          (PRN (-LRB- -LRB-)
+            (NP (DT the) (NN womb))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+dep(food-12, So-1)
+det(things-5, the-2)
+amod(things-5, only-3)
+num(things-5, two-4)
+dobj(needs-9, things-5)
+nsubj(food-12, things-5)
+complm(needs-9, that-6)
+det(fetus-8, the-7)
+nsubj(needs-9, fetus-8)
+dep(things-5, needs-9)
+cop(food-12, is-10)
+root(ROOT-0, food-12)
+dep(food-12, by-14)
+pobj(by-14, aid-15)
+det(cord-19, the-17)
+amod(cord-19, umbilical-18)
+prep_of(aid-15, cord-19)
+conj_and(food-12, space-22)
+det(womb-25, the-24)
+appos(space-22, womb-25)
+

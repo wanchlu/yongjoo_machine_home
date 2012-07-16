@@ -1,0 +1,226 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBG confusing)
+        (NP (PRP me))))
+    (. .)))
+
+nsubj(confusing-3, You-1)
+aux(confusing-3, are-2)
+root(ROOT-0, confusing-3)
+dobj(confusing-3, me-4)
+
+(ROOT
+  (SQ (VBD Are)
+    (NP (PRP you))
+    (NP (NN saying))
+    (SBAR (IN that)
+      (S
+        (NP (NNS men))
+        (VP (VBP do) (RB n't)
+          (VP (VB have)
+            (NP (DT the) (NN right)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (NP (JJ pro) (NN life))))))))))
+    (. ?)))
+
+cop(saying-3, Are-1)
+nsubj(saying-3, you-2)
+root(ROOT-0, saying-3)
+complm(have-8, that-4)
+nsubj(have-8, men-5)
+aux(have-8, do-6)
+neg(have-8, n't-7)
+dep(saying-3, have-8)
+det(right-10, the-9)
+dobj(have-8, right-10)
+aux(life-14, to-11)
+cop(life-14, be-12)
+amod(life-14, pro-13)
+infmod(right-10, life-14)
+
+(ROOT
+  (FRAG (CC Or)
+    (SBAR (IN that)
+      (S
+        (NP (NNS men))
+        (VP (VBP do) (RB n't)
+          (ADVP (RB ever))
+          (VP (VB have)
+            (NP
+              (NP (DT a) (NN say))
+              (PP (IN at)
+                (NP
+                  (NP (DT the) (NN choice))
+                  (PP (IN of)
+                    (NP (NN abortion))))))))))
+    (. ?)))
+
+dep(have-7, Or-1)
+dep(have-7, that-2)
+nsubj(have-7, men-3)
+aux(have-7, do-4)
+neg(have-7, n't-5)
+advmod(have-7, ever-6)
+root(ROOT-0, have-7)
+det(say-9, a-8)
+dobj(have-7, say-9)
+det(choice-12, the-11)
+prep_at(say-9, choice-12)
+prep_of(choice-12, abortion-14)
+
+(ROOT
+  (FRAG (CC Or)
+    (SBAR (IN that)
+      (S
+        (NP (NNS men))
+        (VP (MD should) (RB not)
+          (VP (VB be)
+            (ADJP (JJ able)
+              (S
+                (VP (TO to)
+                  (VP (VB vote)
+                    (PRT (RP on))
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP it))
+                        (VP (MD should)
+                          (VP (VB be)
+                            (NP (DT a) (NN law))))))))))))))
+    (. ?)))
+
+dep(able-7, Or-1)
+dep(able-7, that-2)
+nsubj(able-7, men-3)
+aux(able-7, should-4)
+neg(able-7, not-5)
+cop(able-7, be-6)
+root(ROOT-0, able-7)
+aux(vote-9, to-8)
+xcomp(able-7, vote-9)
+prt(vote-9, on-10)
+mark(law-16, if-11)
+nsubj(law-16, it-12)
+aux(law-16, should-13)
+cop(law-16, be-14)
+det(law-16, a-15)
+advcl(vote-9, law-16)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ is)
+      (NP (PRP it)))
+    (. ?)))
+
+attr(is-2, What-1)
+root(ROOT-0, is-2)
+nsubj(is-2, it-3)
+
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (S
+          (NP (PRP I))
+          (VP (VBP get)
+            (ADJP (JJ married))))
+        (CC and)
+        (S
+          (S
+            (NP (PRP$ my) (NN wife))
+            (VP (VBZ gets)
+              (ADJP (JJ pregnant))))
+          (CC and)
+          (S
+            (NP (PRP she))
+            (VP (VBZ decides)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP she))
+                  (VP (VBZ wants)
+                    (NP
+                      (NP (DT an) (NN abortion))
+                      (PRN (-LRB- -LRB-)
+                        (SBAR (RB Not) (IN that)
+                          (S
+                            (NP (PRP I))
+                            (VP (MD would)
+                              (VP (VB marry)
+                                (NP
+                                  (NP (DT a) (NN woman))
+                                  (SBAR
+                                    (WHNP (WDT that))
+                                    (S
+                                      (VP (VBZ does) (RB n't)
+                                        (VP (VB want)
+                                          (NP (NNS kids)))))))))))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+dep(married-5, What-1)
+mark(married-5, if-2)
+nsubj(married-5, I-3)
+dep(married-5, get-4)
+root(ROOT-0, married-5)
+poss(wife-8, my-7)
+nsubj(pregnant-10, wife-8)
+dep(pregnant-10, gets-9)
+conj_and(married-5, pregnant-10)
+nsubj(decides-13, she-12)
+conj_and(married-5, decides-13)
+conj_and(pregnant-10, decides-13)
+complm(wants-16, that-14)
+nsubj(wants-16, she-15)
+ccomp(decides-13, wants-16)
+det(abortion-18, an-17)
+dobj(wants-16, abortion-18)
+dep(marry-24, Not-20)
+dep(marry-24, that-21)
+nsubj(marry-24, I-22)
+aux(marry-24, would-23)
+dep(abortion-18, marry-24)
+det(woman-26, a-25)
+dobj(marry-24, woman-26)
+nsubj(want-30, woman-26)
+aux(want-30, does-28)
+neg(want-30, n't-29)
+rcmod(woman-26, want-30)
+dobj(want-30, kids-31)
+
+(ROOT
+  (SQ (MD Do) (RB n't)
+    (NP (PRP I))
+    (VP (VB have)
+      (NP (DT a) (NN say)))
+    (. ?)))
+
+aux(have-4, Do-1)
+neg(have-4, n't-2)
+nsubj(have-4, I-3)
+root(ROOT-0, have-4)
+det(say-6, a-5)
+dobj(have-4, say-6)
+
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP
+      (NP (PRP it))
+      (NP
+        (NP (PRP$ my) (NN kid))
+        (SBAR
+          (S
+            (VP (TO to))))))
+    (. ?)))
+
+root(ROOT-0, Is-1)
+neg(Is-1, n't-2)
+nsubj(Is-1, it-3)
+poss(kid-5, my-4)
+dep(it-3, kid-5)
+infmod(kid-5, to-6)
+

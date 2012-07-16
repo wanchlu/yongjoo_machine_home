@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (VP (VBZ Is)
+      (ADJP
+        (ADJP (RB somewhat) (JJ questionable))
+        (: --)
+        (SBAR (IN Whether)
+          (S
+            (NP (PRP we))
+            (VP (MD can)
+              (VP (VB apply)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ 's)
+                      (PP (IN in)
+                        (NP (DT an) (JJ embryology) (NN textbook)))
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (NP (JJ scientific) (NN fact))))))))))))
+        (: --))
+      (ADVP (RB probably) (RB not)))
+    (. .)))
+
+cop(questionable-3, Is-1)
+advmod(questionable-3, somewhat-2)
+root(ROOT-0, questionable-3)
+complm(apply-8, Whether-5)
+nsubj(apply-8, we-6)
+aux(apply-8, can-7)
+ccomp(questionable-3, apply-8)
+nsubj('s-10, what-9)
+ccomp(apply-8, 's-10)
+det(textbook-14, an-12)
+amod(textbook-14, embryology-13)
+prep_in('s-10, textbook-14)
+aux(fact-18, to-15)
+cop(fact-18, be-16)
+amod(fact-18, scientific-17)
+xcomp('s-10, fact-18)
+advmod(not-21, probably-20)
+neg(questionable-3, not-21)
+

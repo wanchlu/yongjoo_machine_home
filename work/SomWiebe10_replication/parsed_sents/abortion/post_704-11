@@ -1,0 +1,40 @@
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How)
+      (ADJP (IN about)))
+    (SQ (VBP implantation)
+      (NP
+        (NP (DT the) (NN point))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (DT the) (NN fetus)
+              (CC and)
+              (NN mother))
+            (VP
+              (VP (VB meet))
+              (CC and)
+              (VP (VB negotiate)
+                (NP
+                  (NP (NNS terms))
+                  (PP (IN of)
+                    (NP (NN gestation))))))))))
+    (. .)))
+
+advmod(about-2, How-1)
+dep(implantation-3, about-2)
+root(ROOT-0, implantation-3)
+det(point-5, the-4)
+nsubj(implantation-3, point-5)
+advmod(meet-11, where-6)
+det(fetus-8, the-7)
+nsubj(meet-11, fetus-8)
+nsubj(negotiate-13, fetus-8)
+conj_and(fetus-8, mother-10)
+nsubj(meet-11, mother-10)
+rcmod(point-5, meet-11)
+rcmod(point-5, negotiate-13)
+conj_and(meet-11, negotiate-13)
+dobj(negotiate-13, terms-14)
+prep_of(terms-14, gestation-16)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Women))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP have)
+            (NP (NNS abortions))
+            (PP (IN after)
+              (NP (DT the) (JJ first) (NN trimester)))))))
+    (VP (VBP are)
+      (ADVP (RB generally))
+      (NP
+        (NP (JJR younger)
+          (CC and)
+          (JJR poorer))
+        (PP (IN than)
+          (NP
+            (NP (DT the) (JJ statistical) (NN average))
+            (PP (IN of)
+              (NP
+                (NP (DT all))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP have)
+                      (NP (NNS abortions)))))))))))
+    (. .)))
+
+nsubj(have-3, Women-1)
+nsubj(younger-11, Women-1)
+nsubj(poorer-13, Women-1)
+rcmod(Women-1, have-3)
+dobj(have-3, abortions-4)
+det(trimester-8, the-6)
+amod(trimester-8, first-7)
+prep_after(have-3, trimester-8)
+cop(younger-11, are-9)
+advmod(younger-11, generally-10)
+root(ROOT-0, younger-11)
+conj_and(younger-11, poorer-13)
+det(average-17, the-15)
+amod(average-17, statistical-16)
+prep_than(younger-11, average-17)
+prep_of(average-17, all-19)
+nsubj(have-21, all-19)
+rcmod(all-19, have-21)
+dobj(have-21, abortions-22)
+

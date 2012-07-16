@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP I))
+        (VP (VBP 'm)
+          (VP (VBG trying)
+            (S
+              (VP (TO to)
+                (VP (VB say))))))))
+    (VP (VBZ is) (, ,)
+      (FRAG
+        (SBAR (IN If)
+          (S
+            (NP (NN man))
+            (VP (VBP have)
+              (NP (DT the) (NN ability)
+                (S
+                  (VP (TO to)
+                    (VP (VB create)
+                      (NP
+                        (NP (NN something))
+                        (PP (IN besides)
+                          (NP (DT the) (NN sun) (, ,) (NN moon)
+                            (CC and)
+                            (NNS stars)))))))))))))
+    (. .)))
+
+dobj(trying-4, What-1)
+nsubj(trying-4, I-2)
+xsubj(say-6, I-2)
+aux(trying-4, 'm-3)
+csubj(is-7, trying-4)
+aux(say-6, to-5)
+xcomp(trying-4, say-6)
+root(ROOT-0, is-7)
+mark(have-11, If-9)
+nsubj(have-11, man-10)
+dep(is-7, have-11)
+det(ability-13, the-12)
+dobj(have-11, ability-13)
+aux(create-15, to-14)
+infmod(ability-13, create-15)
+dobj(create-15, something-16)
+det(sun-19, the-18)
+prep_besides(something-16, sun-19)
+prep_besides(something-16, moon-21)
+conj_and(sun-19, moon-21)
+prep_besides(something-16, stars-23)
+conj_and(sun-19, stars-23)
+

@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Every) (NN reading))
+      (PP (IN of)
+        (NP (DT The) (NNP Bible))))
+    (VP (VBZ is)
+      (VP (VBN colored)
+        (NP
+          (NP
+            (NP (DT the) (NN reader) (POS 's))
+            (NN understanding))
+          (PP (IN of)
+            (NP (DT the) (NN language))))
+        (, ,)
+        (S (RB not)
+          (VP (TO to)
+            (VP (VB mention)
+              (PP (IN by)
+                (NP
+                  (NP
+                    (NP (DT the) (NN translator) (POS 's))
+                    (NNS abilities)
+                    (CC and)
+                    (NNS proclivities))
+                  (PP (IN in)
+                    (S
+                      (VP (VBG preparing)
+                        (NP
+                          (NP (DT the) (JJ particular) (NN edition))
+                          (VP (VBG being)
+                            (VP (VBN read))))))))))))))
+    (. .)))
+
+det(reading-2, Every-1)
+nsubjpass(colored-7, reading-2)
+xsubj(mention-18, reading-2)
+det(Bible-5, The-4)
+prep_of(reading-2, Bible-5)
+auxpass(colored-7, is-6)
+root(ROOT-0, colored-7)
+det(reader-9, the-8)
+poss(understanding-11, reader-9)
+dobj(colored-7, understanding-11)
+det(language-14, the-13)
+prep_of(understanding-11, language-14)
+neg(mention-18, not-16)
+aux(mention-18, to-17)
+xcomp(colored-7, mention-18)
+det(translator-21, the-20)
+poss(abilities-23, translator-21)
+prep_by(mention-18, abilities-23)
+prep_by(mention-18, proclivities-25)
+conj_and(abilities-23, proclivities-25)
+prepc_in(abilities-23, preparing-27)
+det(edition-30, the-28)
+amod(edition-30, particular-29)
+dobj(preparing-27, edition-30)
+auxpass(read-32, being-31)
+partmod(edition-30, read-32)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (DT A) (NN person))
+    (VP (MD can)
+      (ADVP (RB also))
+      (VP (VB die)
+        (PP (IN from)
+          (NP
+            (NP (DT a) (NN heart) (NN attack))
+            (VP (VBN induced)
+              (PP (IN by)
+                (NP (NN someone)))
+              (S
+                (VP (VBG spiking)
+                  (NP (PRP$ their) (NN drink))
+                  (PP (IN with)
+                    (NP
+                      (NP (DT an) (NN overdose))
+                      (PP (IN of)
+                        (NP (NNS amphetamines))))))))))))
+    (. .)))
+
+det(person-2, A-1)
+nsubj(die-5, person-2)
+aux(die-5, can-3)
+advmod(die-5, also-4)
+root(ROOT-0, die-5)
+det(attack-9, a-7)
+nn(attack-9, heart-8)
+prep_from(die-5, attack-9)
+partmod(attack-9, induced-10)
+agent(induced-10, someone-12)
+xcomp(induced-10, spiking-13)
+poss(drink-15, their-14)
+dobj(spiking-13, drink-15)
+det(overdose-18, an-17)
+prep_with(spiking-13, overdose-18)
+prep_of(overdose-18, amphetamines-20)
+

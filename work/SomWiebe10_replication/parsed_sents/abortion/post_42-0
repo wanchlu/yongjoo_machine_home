@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (NP (NN murder))
+      (SBAR (RB just) (IN as)
+        (S
+          (NP (NN infanticide))
+          (VP (VBZ is)
+            (NP
+              (NP (NN murder))
+              (SBAR
+                (S
+                  (NP (PRP It))
+                  (VP (MD can) (RB not)
+                    (VP (VB be)
+                      (VP (VBN said)
+                        (SBAR (IN that)
+                          (S
+                            (NP
+                              (NP (DT the) (NN abortion))
+                              (PP (IN of)
+                                (NP (DT a) (JJ nine-month-old) (NN fetus))))
+                            (VP (VBZ is)
+                              (ADJP (RB much) (JJ different)
+                                (PP (IN than)
+                                  (NP
+                                    (NP (DT the) (NN killing))
+                                    (PP (IN of)
+                                      (NP (DT a)
+                                        (ADJP
+                                          (NP (CD three) (NN day))
+                                          (JJ old))
+                                        (NN baby)))))))))))))))))))
+    (. .)))
+
+nsubj(murder-3, Abortion-1)
+cop(murder-3, is-2)
+root(ROOT-0, murder-3)
+advmod(murder-8, just-4)
+dep(murder-8, as-5)
+nsubj(murder-8, infanticide-6)
+cop(murder-8, is-7)
+dep(murder-3, murder-8)
+nsubjpass(said-13, It-9)
+aux(said-13, can-10)
+neg(said-13, not-11)
+auxpass(said-13, be-12)
+rcmod(murder-8, said-13)
+complm(different-23, that-14)
+det(abortion-16, the-15)
+nsubj(different-23, abortion-16)
+det(fetus-20, a-18)
+amod(fetus-20, nine-month-old-19)
+prep_of(abortion-16, fetus-20)
+cop(different-23, is-21)
+advmod(different-23, much-22)
+ccomp(said-13, different-23)
+det(killing-26, the-25)
+prep_than(different-23, killing-26)
+det(baby-32, a-28)
+num(day-30, three-29)
+npadvmod(old-31, day-30)
+amod(baby-32, old-31)
+prep_of(killing-26, baby-32)
+

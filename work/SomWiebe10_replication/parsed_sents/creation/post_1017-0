@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (ADVP (RB actully))
+    (, ,)
+    (NP (NN uncomplext) (NNS compunds))
+    (VP (VBZ bonded)
+      (S
+        (VP (TO to)
+          (VP (VB geather)
+            (S
+              (VP (TO to)
+                (VP (VB create)
+                  (NP
+                    (NP (NNS chemicals))
+                    (CC and)
+                    (NP
+                      (NP
+                        (ADJP (RB very) (RB very) (JJ uncomplect))
+                        (NN cell) (NNS fragments))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (ADVP (RB then))
+                          (VP
+                            (VP (VBN banded)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB geather)
+                                    (PP (IN with)
+                                      (NP
+                                        (NP (NNS otherthings))
+                                        (PP (IN for)
+                                          (NP (NN survival)))))))))
+                            (CC and)
+                            (VP (VBN formed)
+                              (NP
+                                (NP (DT the) (JJ first)
+                                  (ADJP (RB very) (JJ simple))
+                                  (NNS cells))
+                                (SBAR
+                                  (WHNP (WDT that))
+                                  (S
+                                    (ADVP (RB then))
+                                    (VP (VBD became)
+                                      (ADJP (RBR more) (JJ complext)))))))))))))))))))
+    (. .)))
+
+advmod(bonded-5, actully-1)
+nn(compunds-4, uncomplext-3)
+nsubj(bonded-5, compunds-4)
+xsubj(geather-7, compunds-4)
+root(ROOT-0, bonded-5)
+aux(geather-7, to-6)
+xcomp(bonded-5, geather-7)
+aux(create-9, to-8)
+xcomp(geather-7, create-9)
+dobj(create-9, chemicals-10)
+advmod(uncomplect-14, very-12)
+advmod(uncomplect-14, very-13)
+amod(fragments-16, uncomplect-14)
+nn(fragments-16, cell-15)
+dobj(create-9, fragments-16)
+conj_and(chemicals-10, fragments-16)
+nsubj(banded-19, fragments-16)
+nsubj(formed-27, fragments-16)
+advmod(banded-19, then-18)
+rcmod(fragments-16, banded-19)
+aux(geather-21, to-20)
+xcomp(banded-19, geather-21)
+prep_with(geather-21, otherthings-23)
+prep_for(otherthings-23, survival-25)
+rcmod(fragments-16, formed-27)
+conj_and(banded-19, formed-27)
+det(cells-32, the-28)
+amod(cells-32, first-29)
+advmod(simple-31, very-30)
+amod(cells-32, simple-31)
+dobj(formed-27, cells-32)
+nsubj(complext-37, cells-32)
+advmod(complext-37, then-34)
+cop(complext-37, became-35)
+advmod(complext-37, more-36)
+rcmod(cells-32, complext-37)
+

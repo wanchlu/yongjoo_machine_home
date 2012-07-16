@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Too) (RB much))
+      (VP (TO to)
+        (VP (VB say)
+          (PP (IN about)
+            (NP
+              (NP (DT this))
+              (PP (CC but)
+                (NP (FW i))))))))
+    (VP (MD 'll)
+      (VP (VB end)
+        (NP (PRP it))
+        (ADVP (RB here))))
+    (. .)))
+
+advmod(much-2, Too-1)
+advmod(say-4, much-2)
+aux(say-4, to-3)
+csubj(end-10, say-4)
+prep_about(say-4, this-6)
+prep(this-6, but-7)
+dep(but-7, i-8)
+aux(end-10, 'll-9)
+root(ROOT-0, end-10)
+dobj(end-10, it-11)
+advmod(end-10, here-12)
+

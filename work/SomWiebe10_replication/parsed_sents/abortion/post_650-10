@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Neurologists))
+      (VP (VBP are)
+        (NP
+          (NP (DT the) (NNS people))
+          (PP (IN in)
+            (NP
+              (NP (NN charge))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN study))
+                  (PP (IN of)
+                    (NP (DT the) (JJ nervous) (NN system))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (PP (IN through)
+          (NP (PRP them)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP get)
+              (NP
+                (NP
+                  (NP (DT the) (NN idea))
+                  (PP (IN of)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (VP (VBZ constitutes)
+                          (ADJP (JJ dead)))))))
+                (: --)
+                (NP
+                  (NP (NN ie))
+                  (, ,)
+                  (NP (NNP Brain) (NNP Death)))))))))
+    (. .)))
+
+nsubj(people-4, Neurologists-1)
+cop(people-4, are-2)
+det(people-4, the-3)
+root(ROOT-0, people-4)
+prep_in(people-4, charge-6)
+det(study-9, the-8)
+prep_of(charge-6, study-9)
+det(system-13, the-11)
+amod(system-13, nervous-12)
+prep_of(study-9, system-13)
+nsubj('s-17, it-16)
+conj_and(people-4, 's-17)
+prep_through('s-17, them-19)
+complm(get-22, that-20)
+nsubj(get-22, we-21)
+ccomp('s-17, get-22)
+det(idea-24, the-23)
+dobj(get-22, idea-24)
+nsubj(constitutes-27, what-26)
+prepc_of(idea-24, constitutes-27)
+acomp(constitutes-27, dead-28)
+dep(idea-24, ie-30)
+nn(Death-33, Brain-32)
+appos(ie-30, Death-33)
+

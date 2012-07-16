@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Casey) (NNP Luskin))
+      (VP (VBZ writes)))
+    (: :)
+    (S
+      (NP
+        (NP (NNS Proponents))
+        (PP (IN of)
+          (NP (NN neo-Darwinism))))
+      (VP (VBP contend)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NN information))
+              (PP (IN in)
+                (NP (NN life))))
+            (VP (VBD arose)
+              (PP (IN via)
+                (NP
+                  (NP (NNS purposeless))
+                  (, ,)
+                  (NP (JJ blind))
+                  (, ,)
+                  (CC and)
+                  (NP (JJ unguided) (NNS processes)))))))))
+    (. .)))
+
+nn(Luskin-2, Casey-1)
+nsubj(writes-3, Luskin-2)
+root(ROOT-0, writes-3)
+nsubj(contend-8, Proponents-5)
+prep_of(Proponents-5, neo-Darwinism-7)
+parataxis(writes-3, contend-8)
+complm(arose-14, that-9)
+det(information-11, the-10)
+nsubj(arose-14, information-11)
+prep_in(information-11, life-13)
+ccomp(contend-8, arose-14)
+prep_via(arose-14, purposeless-16)
+prep_via(arose-14, blind-18)
+conj_and(purposeless-16, blind-18)
+amod(processes-22, unguided-21)
+prep_via(arose-14, processes-22)
+conj_and(purposeless-16, processes-22)
+

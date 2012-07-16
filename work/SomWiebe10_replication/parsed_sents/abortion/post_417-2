@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP (NN Child))
+    (VP
+      (VP (VBZ has)
+        (NP (JJ many) (NNS definitions))
+        (, ,)
+        (PP (VBG including)
+          (NP
+            (NP (DT the) (JJ vague)
+              (NX (`` ``)
+                (NP (DT a) (NN person))
+                (PP
+                  (ADVP (RB not) (RB yet))
+                  (IN of)
+                  (NP (NN age)))
+                (, ,) ('' '')))
+            (CC and)
+            (NP
+              (NP (DT the) (NN specific))
+              (`` ``)
+              (NP (DT an) (NN unborn))))))
+      (CC or)
+      (VP
+        (ADVP (RB recently))
+        (VBN born)
+        (S
+          (NP (NNP person) ('' '') (NNP New) (NNP College) (NNP Merriam-Webster) (NNP English) (NNP Dictionary)))))
+    (. .)))
+
+nsubj(has-2, Child-1)
+nsubj(born-26, Child-1)
+root(ROOT-0, has-2)
+amod(definitions-4, many-3)
+dobj(has-2, definitions-4)
+det(person-11, the-7)
+amod(person-11, vague-8)
+det(person-11, a-10)
+prep_including(has-2, person-11)
+dep(yet-13, not-12)
+advmod(person-11, yet-13)
+prep_of(person-11, age-15)
+det(specific-20, the-19)
+prep_including(has-2, specific-20)
+conj_and(person-11, specific-20)
+det(unborn-23, an-22)
+dep(specific-20, unborn-23)
+advmod(born-26, recently-25)
+conj_or(has-2, born-26)
+nn(Dictionary-33, person-27)
+nn(Dictionary-33, New-29)
+nn(Dictionary-33, College-30)
+nn(Dictionary-33, Merriam-Webster-31)
+nn(Dictionary-33, English-32)
+xcomp(born-26, Dictionary-33)
+

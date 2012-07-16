@@ -1,0 +1,27 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Why))
+    ('' '')
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ drives)
+            (NP
+              (NP (NNS scientists))
+              (ADJP (RB as) (JJ much))
+              (SBAR (IN as)
+                (FRAG
+                  (WHADVP (WRB how)))))))))
+    (. .)))
+
+nsubj(is-4, Why-2)
+root(ROOT-0, is-4)
+nsubj(drives-6, what-5)
+ccomp(is-4, drives-6)
+dobj(drives-6, scientists-7)
+advmod(much-9, as-8)
+amod(scientists-7, much-9)
+mark(how-11, as-10)
+dep(scientists-7, how-11)
+

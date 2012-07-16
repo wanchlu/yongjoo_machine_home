@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBD got)
+            (ADJP
+              (ADJP (VBN mixed)
+                (PRT (RP up)))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP I))
+                  (VP
+                    (VP (VBD said)
+                      (WHNP (WDT that)))
+                    (CC and)
+                    (VP (VBN inferred)
+                      (ADVP (RB wrongly)))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(mixed-5, you-3)
+dep(mixed-5, got-4)
+ccomp(think-2, mixed-5)
+dep(mixed-5, up-6)
+advmod(said-9, when-7)
+nsubj(said-9, I-8)
+nsubj(inferred-12, I-8)
+dep(mixed-5, said-9)
+dobj(said-9, that-10)
+dep(mixed-5, inferred-12)
+conj_and(said-9, inferred-12)
+advmod(inferred-12, wrongly-13)
+

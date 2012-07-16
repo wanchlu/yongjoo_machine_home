@@ -1,0 +1,58 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT Some) (NN kind))
+      (PP (IN of)
+        (NP
+          (NP (NN entity) (NNS capable))
+          (PP (IN of)
+            (NP (VBG guiding))))))
+    (VP (VBZ ends)
+      (PP (TO to)
+        (NP (NN means)
+          (CC and)
+          (JJ pre-planning) (NNS events)
+          (CC or)
+          (NNS features)))
+      (SBAR (IN before)
+        (S
+          (NP (PRP they))
+          (VP (VBP happen)
+            (CC or)
+            (VBP come)
+            (PP (IN into)
+              (NP (NN existence)))))))
+    (. .) ('' '')))
+
+det(kind-3, Some-2)
+nsubj(ends-9, kind-3)
+nn(capable-6, entity-5)
+prep_of(kind-3, capable-6)
+prep_of(capable-6, guiding-8)
+root(ROOT-0, ends-9)
+nn(events-14, means-11)
+conj_and(means-11, pre-planning-13)
+nn(events-14, pre-planning-13)
+prep_to(ends-9, events-14)
+prep_to(ends-9, features-16)
+conj_or(events-14, features-16)
+mark(happen-19, before-17)
+nsubj(happen-19, they-18)
+nsubj(come-21, they-18)
+advcl(ends-9, happen-19)
+advcl(ends-9, come-21)
+conj_or(happen-19, come-21)
+prep_into(happen-19, existence-23)
+
+(ROOT
+  (NP
+    (NP (DT A) (NN non))
+    (VP (VBG living)
+      (NP (NN entity)))
+    (. ?)))
+
+det(non-2, A-1)
+root(ROOT-0, non-2)
+partmod(non-2, living-3)
+dobj(living-3, entity-4)
+

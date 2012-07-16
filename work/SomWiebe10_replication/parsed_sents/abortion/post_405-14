@@ -1,0 +1,54 @@
+(ROOT
+  (SBARQ
+    (FRAG
+      (INTJ (RB Now))
+      (, ,)
+      (PP (IN except)
+        (PP (IN in)
+          (NP (JJ exotic) (, ,)
+            (ADJP (JJ borderline) (, ,)
+              (CC and)
+              (JJ abnormal))
+            (NNS cases)))))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB when))
+      (SQ (VBZ is)
+        (NP (DT a) (NN fetus))
+        (VP
+          (ADVP (RB fully))
+          (VBN formed) (, ,)
+          (S
+            (ADJP (JJ capable)
+              (PP (IN of)
+                (S
+                  (VP
+                    (VP (VBG functioning)
+                      (ADVP (RB autonomously)))
+                    (CC and)
+                    (VP (VBG being)
+                      (ADJP (RB metaphysically) (JJ independent)))))))))))
+    (. ?)))
+
+dep(formed-18, Now-1)
+dep(Now-1, except-3)
+pcomp(except-3, in-4)
+amod(cases-11, exotic-5)
+amod(cases-11, borderline-7)
+conj_and(borderline-7, abnormal-10)
+amod(cases-11, abnormal-10)
+prep_in(except-3, cases-11)
+advmod(formed-18, when-13)
+auxpass(formed-18, is-14)
+det(fetus-16, a-15)
+nsubjpass(formed-18, fetus-16)
+advmod(formed-18, fully-17)
+root(ROOT-0, formed-18)
+dep(formed-18, capable-20)
+prepc_of(capable-20, functioning-22)
+advmod(functioning-22, autonomously-23)
+cop(independent-27, being-25)
+advmod(independent-27, metaphysically-26)
+prepc_of(capable-20, independent-27)
+conj_and(functioning-22, independent-27)
+

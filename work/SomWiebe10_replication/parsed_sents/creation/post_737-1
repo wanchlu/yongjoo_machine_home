@@ -1,0 +1,25 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP Bible))
+    (VP (VBD was)
+      (VP (VBN written)
+        (PP (IN in)
+          (NP
+            (NP (JJ ancient) (NNP Hebrew))
+            (PRN (, ,) (RB not)
+              (NP
+                (NP (NNP English))
+                (, ,)
+                (NP (RB yes))))))))
+    (. ?)))
+
+det(Bible-2, The-1)
+nsubjpass(written-4, Bible-2)
+auxpass(written-4, was-3)
+root(ROOT-0, written-4)
+amod(Hebrew-7, ancient-6)
+prep_in(written-4, Hebrew-7)
+dep(English-10, not-9)
+dep(Hebrew-7, English-10)
+appos(English-10, yes-12)
+

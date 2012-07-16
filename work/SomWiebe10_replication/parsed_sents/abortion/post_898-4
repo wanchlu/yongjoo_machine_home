@@ -1,0 +1,44 @@
+(ROOT
+  (FRAG
+    (SBAR (IN Unless)
+      (S
+        (NP (EX there))
+        (VP (VBD was)
+          (NP
+            (NP (DT a) (JJ life-or-death) (NN situation))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (DT the) (NN mother))
+                (VP (MD could)
+                  (VP
+                    (VP (VB die)
+                      (PP (IN with)
+                        (NP (DT a) (NN c-section))))
+                    (CC or)
+                    (VP (VB die)
+                      (S
+                        (VP (VBG having)
+                          (NP (DT a) (NN baby)))))))))))))
+    (. .)))
+
+mark(was-3, Unless-1)
+expl(was-3, there-2)
+root(ROOT-0, was-3)
+det(situation-6, a-4)
+amod(situation-6, life-or-death-5)
+nsubj(was-3, situation-6)
+advmod(die-11, where-7)
+det(mother-9, the-8)
+nsubj(die-11, mother-9)
+nsubj(die-16, mother-9)
+aux(die-11, could-10)
+rcmod(situation-6, die-11)
+det(c-section-14, a-13)
+prep_with(die-11, c-section-14)
+rcmod(situation-6, die-16)
+conj_or(die-11, die-16)
+xcomp(die-16, having-17)
+det(baby-19, a-18)
+dobj(having-17, baby-19)
+

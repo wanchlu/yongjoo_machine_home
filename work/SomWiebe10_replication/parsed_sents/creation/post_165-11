@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Conclude))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP
+            (VP (VBD was)
+              (VP (VBN assumed)
+                (PP (IN in)
+                  (NP (NN step) (CD 1)))))
+            (CC and)
+            (VP (VBP call)
+              (NP (PRP it) (DT a)))))))
+    (VP
+      (VP (VBD tested))
+      (CC and)
+      (VP (VBD confirmed)
+        (SBAR
+          (S
+            (NP (NNP prediction) (NNP ID))
+            (VP (VBD predicted)
+              (SBAR (IN that)
+                (S
+                  (NP (NNP DNA))
+                  (VP (MD would)
+                    (VP (VB be)
+                      (NP
+                        (NP (DT the) (NN product))
+                        (PP (IN of)
+                          (NP (DT an) (JJ intelligent) (NN agent))))
+                      (SBAR (IN because)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ contains)
+                            (NP (JJ coded) (NN informaiton))))))))))))))
+    (. .)))
+
+nsubjpass(assumed-4, Conclude-1)
+nsubj(call-9, Conclude-1)
+nsubj(tested-12, Conclude-1)
+nsubj(confirmed-14, Conclude-1)
+auxpass(assumed-4, was-3)
+rcmod(Conclude-1, assumed-4)
+prep_in(assumed-4, step-6)
+num(step-6, 1-7)
+rcmod(Conclude-1, call-9)
+conj_and(assumed-4, call-9)
+dobj(call-9, it-10)
+dep(it-10, a-11)
+root(ROOT-0, tested-12)
+conj_and(tested-12, confirmed-14)
+nn(ID-16, prediction-15)
+nsubj(predicted-17, ID-16)
+ccomp(confirmed-14, predicted-17)
+complm(product-23, that-18)
+nsubj(product-23, DNA-19)
+aux(product-23, would-20)
+cop(product-23, be-21)
+det(product-23, the-22)
+ccomp(predicted-17, product-23)
+det(agent-27, an-25)
+amod(agent-27, intelligent-26)
+prep_of(product-23, agent-27)
+mark(contains-30, because-28)
+nsubj(contains-30, it-29)
+advcl(product-23, contains-30)
+amod(informaiton-32, coded-31)
+dobj(contains-30, informaiton-32)
+

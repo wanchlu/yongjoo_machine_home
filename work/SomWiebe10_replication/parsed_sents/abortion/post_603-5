@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ incapable)
+        (PP (IN of)
+          (NP
+            (NP (NN survival))
+            (PP (IN outside)
+              (NP (DT the) (NN uterus))))))
+      (, ,)
+      (S
+        (NP (NNP EVEN))
+        (SBAR (IN IF)
+          (S
+            (NP (DT another) (NN adult))
+            (VP (VBZ is)
+              (ADJP (JJ willing)
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (PP (IN on)
+                        (NP (PRP$ its) (NN feeding)
+                          (CC and)
+                          (NN care))))))))))))
+    (. .)))
+
+nsubj(incapable-3, It-1)
+cop(incapable-3, is-2)
+root(ROOT-0, incapable-3)
+prep_of(incapable-3, survival-5)
+det(uterus-8, the-7)
+prep_outside(survival-5, uterus-8)
+dep(willing-15, EVEN-10)
+mark(willing-15, IF-11)
+det(adult-13, another-12)
+nsubj(willing-15, adult-13)
+cop(willing-15, is-14)
+dep(incapable-3, willing-15)
+aux(take-17, to-16)
+xcomp(willing-15, take-17)
+poss(feeding-20, its-19)
+prep_on(take-17, feeding-20)
+prep_on(take-17, care-22)
+conj_and(feeding-20, care-22)
+

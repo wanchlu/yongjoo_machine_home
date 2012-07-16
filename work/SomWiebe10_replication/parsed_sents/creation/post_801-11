@@ -1,0 +1,64 @@
+(ROOT
+  (FRAG
+    (FRAG
+      (WHNP (WDT What))
+      (SBAR (IN if)
+        (S
+          (NP (PRP they))
+          (DT both)
+          (VP (VBP have)
+            (NP
+              (NP (DT the) (JJ same) (NNS Credentials))
+              (, ,)
+              (NP
+                (NP (DT the) (JJ same) (NNS degrees))
+                (, ,)
+                (NP (DT the) (JJ same) (NN experience))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP one))
+      (VP (VBZ is)
+        (VP (VBG studying)
+          (NP
+            (NP (NN creation))
+            (CC and)
+            (NP (CD one) (NN evolution))))))
+    (. ?)))
+
+dep(have-5, What-1)
+mark(have-5, if-2)
+nsubj(have-5, they-3)
+dep(have-5, both-4)
+root(ROOT-0, have-5)
+det(Credentials-8, the-6)
+amod(Credentials-8, same-7)
+dobj(have-5, Credentials-8)
+det(degrees-12, the-10)
+amod(degrees-12, same-11)
+appos(Credentials-8, degrees-12)
+det(experience-16, the-14)
+amod(experience-16, same-15)
+appos(degrees-12, experience-16)
+dep(have-5, but-18)
+nsubj(studying-21, one-19)
+aux(studying-21, is-20)
+dep(have-5, studying-21)
+dobj(studying-21, creation-22)
+num(evolution-25, one-24)
+dobj(studying-21, evolution-25)
+conj_and(creation-22, evolution-25)
+
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN one))
+    (SQ (VBZ is)
+      (ADJP (RBR More) (JJ credible)))
+    (. ?)))
+
+det(one-2, Which-1)
+attr(credible-5, one-2)
+cop(credible-5, is-3)
+advmod(credible-5, More-4)
+root(ROOT-0, credible-5)
+

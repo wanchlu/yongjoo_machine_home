@@ -1,0 +1,42 @@
+(ROOT
+  (S (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBD were)
+          (VP (VBN born)
+            (PP (IN after)
+              (NP (CD 1972)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP challenge)
+      (S
+        (NP (PRP you))
+        (VP (TO to)
+          (VP (VB consider)
+            (S
+              (NP (PRP yourself))
+              (NP
+                (NP (DT a) (NN Survivor))
+                (PP (IN of)
+                  (NP (DT the) (NNP Abortion) (NNP Holocaust)))))))))
+    (. .)))
+
+cc(challenge-10, And-1)
+mark(born-5, if-2)
+nsubjpass(born-5, you-3)
+auxpass(born-5, were-4)
+advcl(challenge-10, born-5)
+prep_after(born-5, 1972-7)
+nsubj(challenge-10, I-9)
+root(ROOT-0, challenge-10)
+nsubj(consider-13, you-11)
+aux(consider-13, to-12)
+xcomp(challenge-10, consider-13)
+nsubj(Survivor-16, yourself-14)
+det(Survivor-16, a-15)
+xcomp(consider-13, Survivor-16)
+det(Holocaust-20, the-18)
+nn(Holocaust-20, Abortion-19)
+prep_of(Survivor-16, Holocaust-20)
+

@@ -1,0 +1,174 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (S
+          (NP
+            (NP (PRP you))
+            (CC and)
+            (NP (PRP$ your) (NN spouse)))
+          (VP (VBP have)
+            (NP (DT no) (NNPS STDs))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (NP (NN sex))
+            (PP (IN with)
+              (NP (RB no) (CD one) (RB else)))))))
+    (WHNP (WRB how))
+    (SQ
+      (VP (MD could)
+        (VP
+          (ADJP
+            (NP (PRP you))
+            (JJ possible))
+          (VB get)
+          (PP
+            (ADVP
+              (NP (DT an) (NN STD))
+              (RB apart))
+            (IN from)
+            (NP (DT a) (NN mishap)))
+          (PP (IN at)
+            (NP (DT the) (NNS doctors))))))
+    (. ?)))
+
+mark(have-6, If-1)
+nsubj(have-6, you-2)
+poss(spouse-5, your-4)
+conj_and(you-2, spouse-5)
+nsubj(have-6, spouse-5)
+dep(possible-20, have-6)
+det(STDs-8, no-7)
+dobj(have-6, STDs-8)
+nsubj(have-11, you-10)
+conj_and(have-6, have-11)
+dep(possible-20, have-11)
+dobj(have-11, sex-12)
+advmod(one-15, no-14)
+prep_with(have-11, one-15)
+advmod(one-15, else-16)
+nsubj(possible-20, how-17)
+aux(possible-20, could-18)
+npadvmod(possible-20, you-19)
+root(ROOT-0, possible-20)
+dep(possible-20, get-21)
+det(STD-23, an-22)
+npadvmod(possible-20, STD-23)
+det(mishap-27, a-26)
+prep_apart_from(possible-20, mishap-27)
+det(doctors-30, the-29)
+prep_at(possible-20, doctors-30)
+
+(ROOT
+  (S
+    (NP (DT The)
+      (ADJP (RB only) (JJ safe))
+      (NN sex))
+    (VP (VBZ is)
+      (NP
+        (NP (DT that))
+        (PP (IN in)
+          (NP (DT a) (JJ monogamous) (NN marriage)))))
+    (. .)))
+
+det(sex-4, The-1)
+advmod(safe-3, only-2)
+amod(sex-4, safe-3)
+nsubj(that-6, sex-4)
+cop(that-6, is-5)
+root(ROOT-0, that-6)
+det(marriage-10, a-8)
+amod(marriage-10, monogamous-9)
+prep_in(that-6, marriage-10)
+
+(ROOT
+  (S
+    (S
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (DT no) (NN question))
+          (PP (TO to)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (NN life))
+                (VP (VBZ begins))))))))
+    (: :)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP (NN life))
+        (PP (IN throughout))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+det(question-4, no-3)
+nsubj(is-2, question-4)
+advmod(begins-8, when-6)
+nsubj(begins-8, life-7)
+prepc_to(question-4, begins-8)
+nsubj(life-12, it-10)
+cop(life-12, 's-11)
+parataxis(is-2, life-12)
+prep(life-12, throughout-13)
+
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is)
+      (NP
+        (NP (WP what) (NN kind))
+        (PP (IN of)
+          (NP (NN life)))))
+    (. ?)))
+
+det(question-2, The-1)
+nsubj(kind-5, question-2)
+cop(kind-5, is-3)
+dep(kind-5, what-4)
+root(ROOT-0, kind-5)
+prep_of(kind-5, life-7)
+
+(ROOT
+  (S (IN So) (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (PRP I))
+        (VP (VBP make)
+          (S
+            (NP (DT the) (NN choice))
+            (VP (TO to)
+              (VP (VB kill)
+                (NP (PRP$ my) (NN neighbor))
+                (S
+                  (VP (VBG using)
+                    (NP (PRP$ my) (JJ own) (JJ moral) (NN judgment))))))))))
+    (: ;)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ ok)))
+    (. ?)))
+
+dep(ok-20, So-1)
+mark(make-5, if-3)
+nsubj(make-5, I-4)
+dep(ok-20, make-5)
+det(choice-7, the-6)
+nsubj(kill-9, choice-7)
+aux(kill-9, to-8)
+xcomp(make-5, kill-9)
+poss(neighbor-11, my-10)
+dobj(kill-9, neighbor-11)
+xcomp(kill-9, using-12)
+poss(judgment-16, my-13)
+amod(judgment-16, own-14)
+amod(judgment-16, moral-15)
+dobj(using-12, judgment-16)
+nsubj(ok-20, it-18)
+cop(ok-20, 's-19)
+root(ROOT-0, ok-20)
+

@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP support)
+      (NP
+        (NP (JJ genetic) (NN engineering))
+        (, ,)
+        (NP (NN cloning))
+        (, ,)
+        (NP (JJ adult) (NN stem) (NN cell) (NN research))
+        (, ,)
+        (NP (NNP Frankenfoods))
+        (, ,)
+        (NP (FW etc.))))
+    (. .)))
+
+nsubj(support-2, I-1)
+root(ROOT-0, support-2)
+amod(engineering-4, genetic-3)
+dobj(support-2, engineering-4)
+appos(engineering-4, cloning-6)
+amod(research-11, adult-8)
+nn(research-11, stem-9)
+nn(research-11, cell-10)
+appos(engineering-4, research-11)
+appos(engineering-4, Frankenfoods-13)
+appos(engineering-4, etc.-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ only) (NN reason))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP am)
+            (VP (VBN opposed)
+              (PP (TO to)
+                (NP (NN infant))))))))
+    (VP (VBP stem)
+      (SBAR
+        (S
+          (NP (NN cell) (NN research))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (NN necessity))
+              (PP (IN of)
+                (S
+                  (VP (VBG killing)
+                    (NP (DT a) (NN fetus)
+                      (S
+                        (VP (TO to)
+                          (VP (VB conduct)
+                            (NP (VBN said) (NN research))))))))))))))
+    (. .)))
+
+det(reason-3, The-1)
+amod(reason-3, only-2)
+nsubj(stem-9, reason-3)
+nsubjpass(opposed-6, I-4)
+auxpass(opposed-6, am-5)
+rcmod(reason-3, opposed-6)
+prep_to(opposed-6, infant-8)
+root(ROOT-0, stem-9)
+nn(research-11, cell-10)
+nsubj(necessity-14, research-11)
+cop(necessity-14, is-12)
+det(necessity-14, the-13)
+ccomp(stem-9, necessity-14)
+prepc_of(necessity-14, killing-16)
+det(fetus-18, a-17)
+dobj(killing-16, fetus-18)
+aux(conduct-20, to-19)
+infmod(fetus-18, conduct-20)
+amod(research-22, said-21)
+dobj(conduct-20, research-22)
+

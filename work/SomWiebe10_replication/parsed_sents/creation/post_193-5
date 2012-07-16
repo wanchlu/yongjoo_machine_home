@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (JJ Fundamental) (JJ religious) (NNS people))
+    (VP
+      (VP
+        (ADVP (RB often) (RB blindly))
+        (VBP call)
+        (PP (IN on)
+          (NP (NN faith)))
+        (S
+          (VP (TO to)
+            (VP (VB explain)
+              (NP
+                (ADJP
+                  (ADJP (JJ difficult))
+                  (CC or)
+                  (ADJP (RB even) (JJ paradoxical)))
+                (NNS concepts))))))
+      (PRN (-LRB- -LRB-)
+        (FRAG
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP do)
+                (SBAR
+                  (S
+                    (NP (NNS children))
+                    (VP (VBP die)))))))
+          (. ?))
+        (-RRB- -RRB-)))
+    (. .)))
+
+amod(people-3, Fundamental-1)
+amod(people-3, religious-2)
+nsubj(call-6, people-3)
+xsubj(explain-10, people-3)
+advmod(blindly-5, often-4)
+advmod(call-6, blindly-5)
+root(ROOT-0, call-6)
+prep_on(call-6, faith-8)
+aux(explain-10, to-9)
+xcomp(call-6, explain-10)
+amod(concepts-15, difficult-11)
+advmod(paradoxical-14, even-13)
+conj_or(difficult-11, paradoxical-14)
+amod(concepts-15, paradoxical-14)
+dobj(explain-10, concepts-15)
+advmod(do-18, why-17)
+dep(call-6, do-18)
+nsubj(die-20, children-19)
+ccomp(do-18, die-20)
+

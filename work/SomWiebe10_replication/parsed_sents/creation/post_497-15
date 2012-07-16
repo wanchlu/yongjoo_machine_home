@@ -1,0 +1,49 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP$ My))
+      (VP (VBP take)))
+    (: :)
+    (S
+      (NP (NNP ID))
+      (VP (VBZ seeks)
+        (NP (JJ empirical)
+          (CC and)
+          (JJ statistical) (NNS verifications))
+        (PP
+          (PP
+            (ADVP (RB \/))
+            (ADJP (JJ falsifications)))
+          (, ,)
+          (CONJP (RB rather) (IN than))
+          (PP (TO to)
+            (NP (NN attempt)
+              (S
+                (VP (TO to)
+                  (VP (VB answer) (`` ``)
+                    (NP
+                      (NP (JJ imponderable) (NNS matters))
+                      (PRN (-LRB- -LRB-)
+                        (NP (NNS questions))
+                        (-RRB- -RRB-)))))))))))
+    (. .)))
+
+nsubj(take-3, My-2)
+root(ROOT-0, take-3)
+nsubj(seeks-6, ID-5)
+parataxis(take-3, seeks-6)
+amod(verifications-10, empirical-7)
+conj_and(empirical-7, statistical-9)
+amod(verifications-10, statistical-9)
+dobj(seeks-6, verifications-10)
+prep(seeks-6, \/-11)
+dep(\/-11, falsifications-12)
+prep(seeks-6, to-16)
+conj_negcc(\/-11, to-16)
+pobj(to-16, attempt-17)
+aux(answer-19, to-18)
+infmod(attempt-17, answer-19)
+amod(matters-22, imponderable-21)
+dobj(answer-19, matters-22)
+appos(matters-22, questions-24)
+

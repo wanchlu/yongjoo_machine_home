@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP are)
+        (ADVP (RB often))
+        (VP (VBN considered)
+          (NP
+            (NP (NNS pollutants))
+            (PP (IN in)
+              (NP (DT the) (NN soil)
+                (CC or)
+                (NN water)))))))
+    (, ,) (IN so)
+    (S
+      (NP
+        (NP (DT a) (JJ fair) (NN bit))
+        (PP (IN of)
+          (NP (NN work))))
+      (VP (VBZ has)
+        (VP (VBN gone)
+          (PP (IN into)
+            (S
+              (VP (VBG discovering)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ happens)
+                      (PP (TO to)
+                        (NP (PRP them))))))))))))
+    (. .)))
+
+nsubjpass(considered-4, They-1)
+auxpass(considered-4, are-2)
+advmod(considered-4, often-3)
+root(ROOT-0, considered-4)
+dobj(considered-4, pollutants-5)
+det(soil-8, the-7)
+prep_in(pollutants-5, soil-8)
+prep_in(pollutants-5, water-10)
+conj_or(soil-8, water-10)
+dep(considered-4, so-12)
+det(bit-15, a-13)
+amod(bit-15, fair-14)
+nsubj(gone-19, bit-15)
+prep_of(bit-15, work-17)
+aux(gone-19, has-18)
+ccomp(considered-4, gone-19)
+prepc_into(gone-19, discovering-21)
+nsubj(happens-23, what-22)
+ccomp(discovering-21, happens-23)
+prep_to(happens-23, them-25)
+

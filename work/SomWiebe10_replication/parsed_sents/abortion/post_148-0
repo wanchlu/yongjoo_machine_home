@@ -1,0 +1,155 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Certain) (JJ medical) (NNS conditions))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN baby)
+            (CC or)
+            (NN mother))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP threaten)
+                (NP
+                  (NP (DT the) (NN mother) (POS 's))
+                  (NN health)
+                  (CC or)
+                  (NN life))))))))
+    (VP (MD may)
+      (VP (VB develop)
+        (ADVP (RB later))
+        (PP (IN in)
+          (NP
+            (NP (DT a) (NN pregnancy))
+            (VP (VBG making)
+              (NP
+                (NP (JJ late-term) (NN abortion))
+                (VP (VBN justified)
+                  (PP (IN as)
+                    (NP (DT a) (NN way)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB protect)
+                        (NP
+                          (NP (DT the) (NN mother) (POS 's))
+                          (NN health))))))))))))
+    (. .)))
+
+amod(conditions-3, Certain-1)
+amod(conditions-3, medical-2)
+nsubj(develop-18, conditions-3)
+det(baby-6, the-5)
+prep_of(conditions-3, baby-6)
+nsubj(threaten-10, baby-6)
+prep_of(conditions-3, mother-8)
+conj_or(baby-6, mother-8)
+nsubj(threaten-10, mother-8)
+rcmod(baby-6, threaten-10)
+det(mother-12, the-11)
+poss(health-14, mother-12)
+dobj(threaten-10, health-14)
+dobj(threaten-10, life-16)
+conj_or(health-14, life-16)
+aux(develop-18, may-17)
+root(ROOT-0, develop-18)
+advmod(develop-18, later-19)
+det(pregnancy-22, a-21)
+prep_in(develop-18, pregnancy-22)
+partmod(pregnancy-22, making-23)
+amod(abortion-25, late-term-24)
+dobj(making-23, abortion-25)
+xsubj(protect-31, abortion-25)
+partmod(abortion-25, justified-26)
+det(way-29, a-28)
+prep_as(justified-26, way-29)
+aux(protect-31, to-30)
+xcomp(justified-26, protect-31)
+det(mother-33, the-32)
+poss(health-35, mother-33)
+dobj(protect-31, health-35)
+
+(ROOT
+  (NP
+    (S
+      (S
+        (LST (-LRB- -LRB-) (LS 2) (-RRB- -RRB-))
+        (NP (DT These))
+        (VP (MD can)
+          (VP (VB include)
+            (S
+              (NP
+                (NP (NNP Heart) (NN failure))
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 3))
+                  (-RRB- -RRB-)))
+              (ADJP (JJ Severe))))))
+      (CC or)
+      (S
+        (NP
+          (NP
+            (NP (JJ uncontrollable) (NN diabetes))
+            (PRN (-LRB- -LRB-)
+              (NP (CD 4))
+              (-RRB- -RRB-))
+            (NP (JJ Serious) (JJ renal) (NN disease)))
+          (PRN (-LRB- -LRB-)
+            (NP (CD 5))
+            (-RRB- -RRB-)))
+        (VP (VBP Uncontrollable)
+          (S
+            (NP
+              (NP
+                (NP (NN hypertension))
+                (PRN (-LRB- -LRB-)
+                  (NP (JJ high) (NN blood) (NN pressure))
+                  (-RRB- -RRB-)))
+              (PRN (-LRB- -LRB-)
+                (NP (CD 6))
+                (-RRB- -RRB-)))
+            (NP
+              (NP
+                (NP (NNP Severe) (NNP depression)
+                  (PRN (-LRB- -LRB-)
+                    (NP (CD 7))
+                    (-RRB- -RRB-))
+                  (NNP Severe))
+                (NP (NNS deformities)))
+              (CC and)
+              (NP
+                (NP (JJ genetic) (NNS disorders))
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 8))
+                  (-RRB- -RRB-))))))))))
+
+dep(include-6, 2-2)
+nsubj(include-6, These-4)
+aux(include-6, can-5)
+root(ROOT-0, include-6)
+nn(failure-8, Heart-7)
+nsubj(Severe-12, failure-8)
+appos(failure-8, 3-10)
+xcomp(include-6, Severe-12)
+amod(diabetes-15, uncontrollable-14)
+nsubj(Uncontrollable-25, diabetes-15)
+appos(diabetes-15, 4-17)
+amod(disease-21, Serious-19)
+amod(disease-21, renal-20)
+dep(diabetes-15, disease-21)
+appos(diabetes-15, 5-23)
+conj_or(include-6, Uncontrollable-25)
+nsubj(Severe-40, hypertension-26)
+amod(pressure-30, high-28)
+nn(pressure-30, blood-29)
+appos(hypertension-26, pressure-30)
+appos(hypertension-26, 6-33)
+nn(Severe-40, Severe-35)
+nn(Severe-40, depression-36)
+appos(Severe-40, 7-38)
+xcomp(Uncontrollable-25, Severe-40)
+dep(Severe-40, deformities-41)
+amod(disorders-44, genetic-43)
+xcomp(Uncontrollable-25, disorders-44)
+conj_and(Severe-40, disorders-44)
+appos(disorders-44, 8-46)
+

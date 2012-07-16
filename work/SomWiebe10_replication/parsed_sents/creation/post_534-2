@@ -1,0 +1,39 @@
+(ROOT
+  (S (CC and)
+    (ADVP (RB yet))
+    (NP (NNP Joe) (NNP G))
+    (ADVP (RB also))
+    (VP (VBD said) (: --) (`` ``)
+      (S
+        (S
+          (NP
+            (NP (NNP Science))
+            (PP (IN without)
+              (NP (NN religion))))
+          (VP (VBZ is)
+            (ADJP (JJ lame))))
+        (: ;)
+        (S
+          (NP
+            (NP (NN religion))
+            (PP (IN without)
+              (NP (NN science))))
+          (VP (VBZ is)
+            (ADJP (JJ blind))))))
+    (. .)))
+
+cc(said-6, and-1)
+advmod(said-6, yet-2)
+nn(G-4, Joe-3)
+nsubj(said-6, G-4)
+advmod(said-6, also-5)
+root(ROOT-0, said-6)
+nsubj(lame-13, Science-9)
+prep_without(Science-9, religion-11)
+cop(lame-13, is-12)
+dep(said-6, lame-13)
+nsubj(blind-19, religion-15)
+prep_without(religion-15, science-17)
+cop(blind-19, is-18)
+parataxis(lame-13, blind-19)
+

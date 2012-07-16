@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (ADVP (RB quite) (RB well))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ sure)))
+    (. .)))
+
+advmod(well-2, quite-1)
+advmod(sure-6, well-2)
+nsubj(sure-6, I-4)
+cop(sure-6, am-5)
+root(ROOT-0, sure-6)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBD referred)
+      (PP (TO to)
+        (NP
+          (NP (DT a) (NN page))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBD was)
+                (VP (VBN authored)
+                  (PP (IN by)
+                    (NP
+                      (NP (PRP yourself))
+                      (, ,)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBZ interprets)
+                            (NP (DT the) (NNS statements))
+                            (PP (IN by)
+                              (NP
+                                (NP (NNP Carter))
+                                (VP (VBN made)
+                                  (PP (IN in)
+                                    (NP (PRP$ his) (NN presentation))))))))))))))))))
+    (. .)))
+
+nsubj(referred-2, You-1)
+root(ROOT-0, referred-2)
+det(page-5, a-4)
+prep_to(referred-2, page-5)
+nsubjpass(authored-8, page-5)
+auxpass(authored-8, was-7)
+rcmod(page-5, authored-8)
+agent(authored-8, yourself-10)
+nsubj(interprets-13, yourself-10)
+rcmod(yourself-10, interprets-13)
+det(statements-15, the-14)
+dobj(interprets-13, statements-15)
+prep_by(interprets-13, Carter-17)
+partmod(Carter-17, made-18)
+poss(presentation-21, his-20)
+prep_in(made-18, presentation-21)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD found)
+      (NP (DT the) (JJ original) (NN source))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (RB far) (RBR more) (JJ useful))))))))
+
+nsubj(found-2, I-1)
+root(ROOT-0, found-2)
+det(source-5, the-3)
+amod(source-5, original-4)
+dobj(found-2, source-5)
+aux(useful-10, to-6)
+cop(useful-10, be-7)
+advmod(useful-10, far-8)
+advmod(useful-10, more-9)
+xcomp(found-2, useful-10)
+

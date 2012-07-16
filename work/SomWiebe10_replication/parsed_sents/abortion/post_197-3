@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADVP (RB definitively))
+      (VP (VBN declared)
+        (PP (IN by)
+          (NP
+            (NP (NNP Pope) (NNP Paul) (NNP VI))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (JJ encyclical) (NNP Humanae) (NNP Vitae))
+                (, ,)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (VP (VBD was)
+                      (VP (VBN written)
+                        (ADVP (RB specifically))
+                        (PP (IN for)
+                          (NP (DT that) (NN purpose)))))))))))))
+    (. .)))
+
+nsubjpass(declared-4, It-1)
+auxpass(declared-4, was-2)
+advmod(declared-4, definitively-3)
+root(ROOT-0, declared-4)
+nn(VI-8, Pope-6)
+nn(VI-8, Paul-7)
+agent(declared-4, VI-8)
+det(Vitae-13, the-10)
+amod(Vitae-13, encyclical-11)
+nn(Vitae-13, Humanae-12)
+prep_in(VI-8, Vitae-13)
+nsubjpass(written-17, Vitae-13)
+auxpass(written-17, was-16)
+rcmod(Vitae-13, written-17)
+advmod(written-17, specifically-18)
+det(purpose-21, that-20)
+prep_for(written-17, purpose-21)
+

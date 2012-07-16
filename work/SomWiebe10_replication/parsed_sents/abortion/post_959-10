@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (PP (TO To)
+      (NP (DT this) (NN day)))
+    (, ,)
+    (NP (NNPS Germans))
+    (VP (VBP have)
+      (NP (JJ collective) (NN shame))
+      (PP (RB because) (IN of)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (DT the) (NNPS Nazis))
+            (VP (VBD did) (, ,)
+              (SBAR (RB even) (IN though)
+                (S
+                  (NP (PRP they))
+                  (VP (VBD did)
+                    (NP (NN nothing))
+                    (S
+                      (VP (TO to)
+                        (VP (VB help))))))))))))
+    (. .)))
+
+det(day-3, this-2)
+prep_to(have-6, day-3)
+nsubj(have-6, Germans-5)
+root(ROOT-0, have-6)
+amod(shame-8, collective-7)
+dobj(have-6, shame-8)
+dep(did-14, what-11)
+dobj(did-19, what-11)
+det(Nazis-13, the-12)
+nsubj(did-14, Nazis-13)
+prepc_because_of(have-6, did-14)
+advmod(did-19, even-16)
+dep(did-19, though-17)
+nsubj(did-19, they-18)
+ccomp(did-14, did-19)
+dobj(did-19, nothing-20)
+aux(help-22, to-21)
+xcomp(did-19, help-22)
+

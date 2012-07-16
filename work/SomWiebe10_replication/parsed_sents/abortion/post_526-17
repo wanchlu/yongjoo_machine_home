@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (DT The) (NN pregnancy))
+    (VP
+      (VP (MD can) (RB not)
+        (ADVP (RB rightfully))
+        (VP (VB be)
+          (VP (VBN terminated))))
+      (, ,)
+      (CC and)
+      (VP (MD can) (RB not)
+        (ADVP (RB rightfully))
+        (VP (VB be)
+          (VP (VBN allowed)
+            (S
+              (VP (TO to)
+                (VP (VB continue))))))))
+    (. .)))
+
+det(pregnancy-2, The-1)
+nsubjpass(terminated-7, pregnancy-2)
+nsubjpass(allowed-14, pregnancy-2)
+aux(terminated-7, can-3)
+neg(terminated-7, not-4)
+advmod(terminated-7, rightfully-5)
+auxpass(terminated-7, be-6)
+root(ROOT-0, terminated-7)
+aux(allowed-14, can-10)
+neg(allowed-14, not-11)
+advmod(allowed-14, rightfully-12)
+auxpass(allowed-14, be-13)
+conj_and(terminated-7, allowed-14)
+aux(continue-16, to-15)
+xcomp(allowed-14, continue-16)
+

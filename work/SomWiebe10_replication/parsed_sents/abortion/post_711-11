@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (VBZ thinks)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (MD should)
+            (VP (VB be)
+              (VP
+                (VP (VBN lied)
+                  (S
+                    (VP (TO to))))
+                (CC or)
+                (VP (VBD cheated)
+                  (PRT (RP on)))
+                (CC or)
+                (VP (VBN stolen)
+                  (PP (IN from)))))))))
+    (. .)))
+
+det(one-2, No-1)
+nsubj(thinks-3, one-2)
+root(ROOT-0, thinks-3)
+nsubjpass(lied-7, they-4)
+nsubjpass(cheated-10, they-4)
+nsubjpass(stolen-13, they-4)
+aux(lied-7, should-5)
+auxpass(lied-7, be-6)
+ccomp(thinks-3, lied-7)
+xcomp(lied-7, to-8)
+ccomp(thinks-3, cheated-10)
+conj_or(lied-7, cheated-10)
+prt(cheated-10, on-11)
+ccomp(thinks-3, stolen-13)
+conj_or(lied-7, stolen-13)
+prep(stolen-13, from-14)
+

@@ -1,0 +1,78 @@
+(ROOT
+  (SBARQ (`` ``)
+    (WHNP (WP Which))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB believe)))
+    (. ?)))
+
+dobj(believe-5, Which-2)
+aux(believe-5, do-3)
+nsubj(believe-5, you-4)
+root(ROOT-0, believe-5)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (PP (IN after)
+        (NP (PDT all) (DT both)))
+      (PP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (NNS books))
+            (VP (VBN written)
+              (PP (IN by)
+                (NP (NNS men))))))))
+    (. .)))
+
+nsubj(are-2, They-1)
+root(ROOT-0, are-2)
+predet(both-5, all-4)
+prep_after(are-2, both-5)
+prepc_based_on(are-2, on-7)
+pobj(are-2, books-8)
+partmod(books-8, written-9)
+agent(written-9, men-11)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP I))
+      (VP (VBP know)
+        (SBAR (IN that)
+          (S
+            (NP (PRP one))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN basis))
+                (PP (IN of)
+                  (NP (DT some) (JJ silly) (NNS religions)))))))))
+    (CC and)
+    (S
+      (NP (DT the) (JJ other))
+      (VP (VBZ is)
+        (ADVP (RB firmly))
+        (VP (VBN backed)
+          (PP (IN by)
+            (NP (JJ actual) (NN science))))))
+    (. .)))
+
+nsubj(know-3, I-2)
+root(ROOT-0, know-3)
+complm(basis-8, that-4)
+nsubj(basis-8, one-5)
+cop(basis-8, is-6)
+det(basis-8, the-7)
+ccomp(know-3, basis-8)
+det(religions-12, some-10)
+amod(religions-12, silly-11)
+prep_of(basis-8, religions-12)
+det(other-15, the-14)
+nsubjpass(backed-18, other-15)
+auxpass(backed-18, is-16)
+advmod(backed-18, firmly-17)
+conj_and(know-3, backed-18)
+amod(science-21, actual-20)
+agent(backed-18, science-21)
+

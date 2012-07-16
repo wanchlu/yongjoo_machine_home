@@ -1,0 +1,27 @@
+(ROOT
+  (S
+    (S
+      (NP (DT A) (NN fetus))
+      (VP (MD may)
+        (VP (VB be)
+          (ADJP (JJ alive)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB not)
+        (NP (DT a) (JJ human) (NN being))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(alive-5, fetus-2)
+aux(alive-5, may-3)
+cop(alive-5, be-4)
+root(ROOT-0, alive-5)
+nsubj(being-13, it-8)
+cop(being-13, is-9)
+neg(being-13, not-10)
+det(being-13, a-11)
+amod(being-13, human-12)
+conj_but(alive-5, being-13)
+

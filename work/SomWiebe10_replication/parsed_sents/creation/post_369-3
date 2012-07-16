@@ -1,0 +1,37 @@
+(ROOT
+  (FRAG (CC And)
+    (ADVP (RB then))
+    (NP
+      (NP
+        (NP (PRP we))
+        (ADJP (JJ certain)))
+      (: ;)
+      (S
+        (NP (NN y))
+        (VP (MD would) (RB n't)
+          (VP (VB need)
+            (NP (NN science))
+            (S
+              (VP (TO to)
+                (VP (VB aid)
+                  (NP (PRP us))
+                  (PP (IN in)
+                    (NP (DT that) (NN design) (NN inference))))))))))
+    (. .)))
+
+dep(we-3, And-1)
+dep(we-3, then-2)
+root(ROOT-0, we-3)
+amod(we-3, certain-4)
+nsubj(need-9, y-6)
+aux(need-9, would-7)
+neg(need-9, n't-8)
+dep(we-3, need-9)
+dobj(need-9, science-10)
+aux(aid-12, to-11)
+xcomp(need-9, aid-12)
+dobj(aid-12, us-13)
+det(inference-17, that-15)
+nn(inference-17, design-16)
+prep_in(aid-12, inference-17)
+

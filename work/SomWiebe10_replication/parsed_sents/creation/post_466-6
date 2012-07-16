@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR
+      (X (SYM \*\*))
+      (S
+        (NP (DT The) (NN staff) (NN investigation))
+        (VP (VBZ has)
+          (VP (VBN uncovered)
+            (NP (JJ compelling) (NN evidence))
+            (SBAR (IN that)
+              (S
+                (NP (NNP Dr.) (NNP Sternberg))
+                (VP (VBZ s)
+                  (NP (JJ civil)
+                    (CC and)
+                    (JJ constitutional) (NNS rights)))))))))
+    (VP (VBD were)
+      (VP (VBN violated)
+        (PP (IN by)
+          (NP (NNP Smithsonian) (NNS officials)))))
+    (. .)))
+
+dep(uncovered-6, \*\*-1)
+det(investigation-4, The-2)
+nn(investigation-4, staff-3)
+nsubj(uncovered-6, investigation-4)
+aux(uncovered-6, has-5)
+csubjpass(violated-18, uncovered-6)
+amod(evidence-8, compelling-7)
+dobj(uncovered-6, evidence-8)
+complm(rights-16, that-9)
+nn(Sternberg-11, Dr.-10)
+nsubj(rights-16, Sternberg-11)
+cop(rights-16, s-12)
+amod(rights-16, civil-13)
+conj_and(civil-13, constitutional-15)
+amod(rights-16, constitutional-15)
+ccomp(uncovered-6, rights-16)
+auxpass(violated-18, were-17)
+root(ROOT-0, violated-18)
+nn(officials-21, Smithsonian-20)
+agent(violated-18, officials-21)
+

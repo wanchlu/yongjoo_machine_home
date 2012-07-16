@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP (DT The) (NNPS Nazis))
+    (VP (VBD targeted)
+      (NP
+        (NP (DT the) (NNS people))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBD did)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP they))
+                  (VP (VBD believed)
+                    (SBAR
+                      (S
+                        (NP (PRP they))
+                        (VP (VBD were)
+                          (ADJP (JJ inferior)
+                            (PP (TO to)
+                              (NP (PRP themselves)))))))))))))))
+    (. .)))
+
+det(Nazis-2, The-1)
+nsubj(targeted-3, Nazis-2)
+root(ROOT-0, targeted-3)
+det(people-5, the-4)
+dobj(targeted-3, people-5)
+nsubj(did-7, they-6)
+rcmod(people-5, did-7)
+mark(believed-10, because-8)
+nsubj(believed-10, they-9)
+advcl(did-7, believed-10)
+nsubj(inferior-13, they-11)
+cop(inferior-13, were-12)
+ccomp(believed-10, inferior-13)
+prep_to(inferior-13, themselves-15)
+

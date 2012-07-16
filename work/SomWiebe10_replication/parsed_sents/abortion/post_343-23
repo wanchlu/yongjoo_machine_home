@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT A) (NN fetus))
+        (PP (IN in)
+          (NP (DT the) (JJ third) (NN trimester))))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (VBG living) (JJ human) (NN being))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ has)
+                (VP (VBN gone)
+                  (PP (IN past)
+                    (NP
+                      (NP (DT the) (NN point))
+                      (PP (IN of)
+                        (S
+                          (VP (VBG being)
+                            (NP
+                              (NP (DT a) (JJ mere) (NN organism))
+                              (PP (TO to)
+                                (NP (DT a) (JJ pre-born) (NN person))))))))))))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (MD should)
+              (VP (VB have)
+                (NP (DT a) (NN right))
+                (PP (TO to)
+                  (NP (NN life)))
+                (ADVP (RB regardless)
+                  (PP (IN of)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBZ is)
+                          (VP (VBG carrying)
+                            (NP (PRP it))))))))))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(being-11, fetus-2)
+det(trimester-6, the-4)
+amod(trimester-6, third-5)
+prep_in(fetus-2, trimester-6)
+cop(being-11, is-7)
+det(being-11, a-8)
+amod(being-11, living-9)
+amod(being-11, human-10)
+root(ROOT-0, being-11)
+nsubj(gone-14, being-11)
+aux(gone-14, has-13)
+rcmod(being-11, gone-14)
+det(point-17, the-16)
+prep_past(gone-14, point-17)
+cop(organism-22, being-19)
+det(organism-22, a-20)
+amod(organism-22, mere-21)
+prepc_of(point-17, organism-22)
+det(person-26, a-24)
+amod(person-26, pre-born-25)
+prep_to(organism-22, person-26)
+nsubj(believe-29, I-28)
+conj_and(being-11, believe-29)
+nsubj(gone-14, believe-29)
+nsubj(have-32, it-30)
+aux(have-32, should-31)
+ccomp(believe-29, have-32)
+det(right-34, a-33)
+dobj(have-32, right-34)
+prep_to(have-32, life-36)
+nsubj(carrying-41, who-39)
+aux(carrying-41, is-40)
+prepc_regardless_of(have-32, carrying-41)
+dobj(carrying-41, it-42)
+

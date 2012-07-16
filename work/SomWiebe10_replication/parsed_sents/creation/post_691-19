@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN start))
+        (PP (IN of)
+          (NP (NNP John)))))
+    (, ,)
+    (NP (DT the) (NNP King) (NNP James))
+    (VP (VBZ speaks)
+      (PP (IN of)
+        (NP (DT the) (NNS darkness) (RB not)))
+      (S
+        (VP (VBG being)
+          (ADJP (JJ able)
+            (S
+              (VP (TO to)
+                (VP (VB comprehend)
+                  (NP (DT the) (NN light))
+                  (SBAR (IN while)
+                    (S
+                      (NP (DT the) (JJ other))
+                      (VP (VBZ says)
+                        (SBAR
+                          (S
+                            (NP (PRP it))
+                            (VP (MD can) (RB not)
+                              (VP (VB overcome)
+                                (NP (DT the) (NN light))))))))))))))))
+    (. .)))
+
+det(start-3, the-2)
+prep_at(speaks-10, start-3)
+prep_of(start-3, John-5)
+det(James-9, the-7)
+nn(James-9, King-8)
+nsubj(speaks-10, James-9)
+root(ROOT-0, speaks-10)
+det(darkness-13, the-12)
+prep_of(speaks-10, darkness-13)
+neg(darkness-13, not-14)
+cop(able-16, being-15)
+xcomp(speaks-10, able-16)
+aux(comprehend-18, to-17)
+xcomp(able-16, comprehend-18)
+det(light-20, the-19)
+dobj(comprehend-18, light-20)
+mark(says-24, while-21)
+det(other-23, the-22)
+nsubj(says-24, other-23)
+advcl(comprehend-18, says-24)
+nsubj(overcome-28, it-25)
+aux(overcome-28, can-26)
+neg(overcome-28, not-27)
+ccomp(says-24, overcome-28)
+det(light-30, the-29)
+dobj(overcome-28, light-30)
+

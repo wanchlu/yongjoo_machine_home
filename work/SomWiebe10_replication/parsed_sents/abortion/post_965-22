@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Women))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP have)
+            (NP (NNS abortions))))))
+    (VP (VBP kill)
+      (NP (PRP$ their) (NNS babies))
+      (SBAR (IN because)
+        (S
+          (NP (PRP they))
+          (VP (VBP believe)
+            (SBAR (IN that)
+              (S
+                (NP (PRP they))
+                (VP (VBP are)
+                  (ADJP (JJ superior)
+                    (PP (TO to)
+                      (NP (DT these) (NNS children)))))))))))
+    (. .)))
+
+nsubj(have-3, Women-1)
+nsubj(kill-5, Women-1)
+rcmod(Women-1, have-3)
+dobj(have-3, abortions-4)
+root(ROOT-0, kill-5)
+poss(babies-7, their-6)
+dobj(kill-5, babies-7)
+mark(believe-10, because-8)
+nsubj(believe-10, they-9)
+advcl(kill-5, believe-10)
+complm(superior-14, that-11)
+nsubj(superior-14, they-12)
+cop(superior-14, are-13)
+ccomp(believe-10, superior-14)
+det(children-17, these-16)
+prep_to(superior-14, children-17)
+

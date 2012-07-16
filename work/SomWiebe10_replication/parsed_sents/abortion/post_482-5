@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB forget)
+          (NP
+            (NP (DT the) (NN couple))
+            (PP (IN of)
+              (NP
+                (NP (NNS states))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBD put)
+                      (NP
+                        (NP (NN legislation))
+                        (, ,)
+                        (VP (VBG trying)
+                          (S
+                            (VP
+                              (VP (TO to) (DT either)
+                                (VP (VB restrict)
+                                  (NP (NN abortion))))
+                              (CC or)
+                              (VP (TO to)
+                                (VP (VB do)
+                                  (PRT (RP away))
+                                  (PP (IN with)
+                                    (NP (PRP it)))
+                                  (ADVP (RB entirely)))))))
+                        (, ,))
+                      (PP (TO to)
+                        (NP
+                          (NP (DT the) (NN vote))
+                          (PP (IN in)
+                            (NP (DT the) (JJ last) (JJ presidential) (NN election))))))))))))))
+    (VP (VBD were)
+      (VP (VBN defeated)))
+    (. .)))
+
+aux(forget-3, Do-1)
+neg(forget-3, n't-2)
+csubjpass(defeated-34, forget-3)
+det(couple-5, the-4)
+dobj(forget-3, couple-5)
+prep_of(couple-5, states-7)
+nsubj(put-9, states-7)
+rcmod(states-7, put-9)
+dobj(put-9, legislation-10)
+partmod(legislation-10, trying-12)
+aux(restrict-15, to-13)
+dep(restrict-15, either-14)
+ccomp(trying-12, restrict-15)
+dobj(restrict-15, abortion-16)
+aux(do-19, to-18)
+ccomp(trying-12, do-19)
+conj_or(restrict-15, do-19)
+prt(do-19, away-20)
+prep_with(do-19, it-22)
+advmod(do-19, entirely-23)
+det(vote-27, the-26)
+prep_to(put-9, vote-27)
+det(election-32, the-29)
+amod(election-32, last-30)
+amod(election-32, presidential-31)
+prep_in(vote-27, election-32)
+auxpass(defeated-34, were-33)
+root(ROOT-0, defeated-34)
+

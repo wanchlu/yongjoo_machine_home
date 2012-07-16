@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S (RB So)
+      (VP (TO to)
+        (VP (VB sum)
+          (NP (PRP it))
+          (ADVP (DT all) (RB up)))))
+    (: ;)
+    (S
+      (NP (PRP You))
+      (VP (MD will)
+        (VP (VB know)
+          (SBAR (IN whether)
+            (S
+              (NP (NN something))
+              (VP (VBZ is)
+                (ADJP (JJ healthy)
+                  (CC or)
+                  (JJ dysfunctional))
+                (PP (IN by)
+                  (NP
+                    (NP (DT the) (NN fruit))
+                    (SBAR
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ produces))))))))))))
+    (. .)))
+
+advmod(sum-3, So-1)
+aux(sum-3, to-2)
+root(ROOT-0, sum-3)
+dobj(sum-3, it-4)
+dep(up-6, all-5)
+advmod(sum-3, up-6)
+nsubj(know-10, You-8)
+aux(know-10, will-9)
+parataxis(sum-3, know-10)
+complm(healthy-14, whether-11)
+nsubj(healthy-14, something-12)
+nsubj(dysfunctional-16, something-12)
+cop(healthy-14, is-13)
+ccomp(know-10, healthy-14)
+ccomp(know-10, dysfunctional-16)
+conj_or(healthy-14, dysfunctional-16)
+det(fruit-19, the-18)
+prep_by(healthy-14, fruit-19)
+dobj(produces-21, fruit-19)
+nsubj(produces-21, it-20)
+rcmod(fruit-19, produces-21)
+

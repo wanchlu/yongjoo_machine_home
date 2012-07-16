@@ -1,0 +1,125 @@
+(ROOT
+  (S
+    (NP (NNS Irons))
+    (VP (VBZ devotes)
+      (NP (NNS pages))
+      (PP (TO to)
+        (S
+          (VP
+            (VP (VBG caricaturing)
+              (NP
+                (NP (DT the) (NNS backgrounds))
+                (, ,)
+                (NP (NNS beliefs))
+                (, ,)
+                (CC and)
+                (NP
+                  (NP (JJ political) (NNS affiliations))
+                  (PP (IN of)
+                    (NP (NNP ID) (NNS proponents))))))
+            (, ,)
+            (ADVP (RB rather) (RB obviously))
+            (VP (VBG trying)
+              (S
+                (VP (TO to)
+                  (VP (VB present)
+                    (NP (NNP ID))
+                    (PP (IN as)
+                      (NP
+                        (NP (NN part))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT a) (JJ nefarious) (NN conspiracy))
+                            (PP (IN of)
+                              (NP (DT the) (NNP Religious) (NNP Right)))))))))))))))
+    (. .)))
+
+nsubj(devotes-2, Irons-1)
+root(ROOT-0, devotes-2)
+dobj(devotes-2, pages-3)
+prepc_to(devotes-2, caricaturing-5)
+det(backgrounds-7, the-6)
+dobj(caricaturing-5, backgrounds-7)
+dobj(caricaturing-5, beliefs-9)
+conj_and(backgrounds-7, beliefs-9)
+amod(affiliations-13, political-12)
+dobj(caricaturing-5, affiliations-13)
+conj_and(backgrounds-7, affiliations-13)
+nn(proponents-16, ID-15)
+prep_of(affiliations-13, proponents-16)
+advmod(obviously-19, rather-18)
+advmod(caricaturing-5, obviously-19)
+dep(caricaturing-5, trying-20)
+aux(present-22, to-21)
+xcomp(trying-20, present-22)
+dobj(present-22, ID-23)
+prep_as(present-22, part-25)
+det(conspiracy-29, a-27)
+amod(conspiracy-29, nefarious-28)
+prep_of(part-25, conspiracy-29)
+det(Right-33, the-31)
+nn(Right-33, Religious-32)
+prep_of(conspiracy-29, Right-33)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN example))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NN historian) (NNP Richard) (NNP Hofstadter))
+              (VP (VBD called)
+                (NP (DT The) (NNP Paranoid) (NNP Style))
+                (PP (IN in)
+                  (NP (JJ American) (NNS Politics)))))))))
+    (. .)))
+
+nsubj(example-4, This-1)
+cop(example-4, is-2)
+det(example-4, an-3)
+root(ROOT-0, example-4)
+dobj(called-10, what-6)
+nn(Hofstadter-9, historian-7)
+nn(Hofstadter-9, Richard-8)
+nsubj(called-10, Hofstadter-9)
+prepc_of(example-4, called-10)
+det(Style-13, The-11)
+nn(Style-13, Paranoid-12)
+dobj(called-10, Style-13)
+amod(Politics-16, American-15)
+prep_in(called-10, Politics-16)
+
+(ROOT
+  (S
+    (NP (CD 7) (NNS Irons))
+    (VP (VBZ tries)
+      (S
+        (VP (TO to)
+          (VP (VB avoid)
+            (S
+              (VP (VBG debating)
+                (NP (DT the) (JJ real) (NNS issues))
+                (PP (IN by)
+                  (S
+                    (VP (VBG poisoning)
+                      (NP (DT the) (NN well)))))))))))
+    (. .)))
+
+num(Irons-2, 7-1)
+nsubj(tries-3, Irons-2)
+xsubj(avoid-5, Irons-2)
+root(ROOT-0, tries-3)
+aux(avoid-5, to-4)
+xcomp(tries-3, avoid-5)
+xcomp(avoid-5, debating-6)
+det(issues-9, the-7)
+amod(issues-9, real-8)
+dobj(debating-6, issues-9)
+prepc_by(debating-6, poisoning-11)
+det(well-13, the-12)
+dobj(poisoning-11, well-13)
+

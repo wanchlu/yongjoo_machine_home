@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS People))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ gluttons)
+                (SBAR
+                  (S
+                    (VP (VBP are) (RB not)
+                      (ADJP (RB necessarily) (JJ fat)))))))))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP e.g.))
+          (, ,)
+          (NP (NNP bulimia))
+          (-RRB- -RRB-)))
+      (CC and)
+      (NP
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP are)
+                (ADJP (JJ fat)
+                  (SBAR
+                    (S
+                      (VP (VBP are) (RB not)
+                        (ADJP (RB necessarily) (JJ gluttons))))))))))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NNP e.g.))
+            (, ,)
+            (NP
+              (NP (NN transplant) (NNS recipients))
+              (, ,)
+              (NP
+                (NP (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP do) (RB n't)
+                      (VP (VB exercise) (, ,)
+                        (NP (FW etc.)))))))))
+          (-RRB- -RRB-))))))
+
+root(ROOT-0, People-1)
+nsubj(gluttons-4, People-1)
+cop(gluttons-4, are-3)
+rcmod(People-1, gluttons-4)
+cop(fat-8, are-5)
+neg(fat-8, not-6)
+advmod(fat-8, necessarily-7)
+dep(gluttons-4, fat-8)
+appos(People-1, e.g.-10)
+dep(e.g.-10, bulimia-12)
+conj_and(People-1, people-15)
+nsubj(fat-18, people-15)
+cop(fat-18, are-17)
+rcmod(people-15, fat-18)
+cop(gluttons-22, are-19)
+neg(gluttons-22, not-20)
+advmod(gluttons-22, necessarily-21)
+dep(fat-18, gluttons-22)
+dep(people-15, e.g.-24)
+nn(recipients-27, transplant-26)
+appos(e.g.-24, recipients-27)
+appos(recipients-27, people-29)
+nsubj(exercise-33, people-29)
+aux(exercise-33, do-31)
+neg(exercise-33, n't-32)
+rcmod(people-29, exercise-33)
+dobj(exercise-33, etc.-35)
+

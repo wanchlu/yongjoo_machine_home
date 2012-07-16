@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN belief))
+      (SBAR (IN that)
+        (S
+          (NP (NNP God))
+          (VP (VBZ creates)
+            (CC and)
+            (VBZ sustains)
+            (NP (DT the) (NN world))))))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT the) (JJ same))
+        (PP (IN as)
+          (NP (DT the) (NN belief))))
+      (SBAR (IN that)
+        (S
+          (NP (NNP God))
+          (VP (VBD created)
+            (NP (DT the) (NN world))
+            (PP (IN in)
+              (NP
+                (NP (CD seven) (NNS days))
+                (ADVP
+                  (NP (DT a) (JJ few) (CD thousand) (NNS years))
+                  (RB ago))))))))
+    (. .)))
+
+det(belief-2, The-1)
+nsubj(same-13, belief-2)
+complm(creates-5, that-3)
+nsubj(creates-5, God-4)
+nsubj(sustains-7, God-4)
+dep(belief-2, creates-5)
+dep(belief-2, sustains-7)
+conj_and(creates-5, sustains-7)
+det(world-9, the-8)
+dobj(creates-5, world-9)
+cop(same-13, is-10)
+neg(same-13, not-11)
+det(same-13, the-12)
+root(ROOT-0, same-13)
+det(belief-16, the-15)
+prep_as(same-13, belief-16)
+complm(created-19, that-17)
+nsubj(created-19, God-18)
+ccomp(same-13, created-19)
+det(world-21, the-20)
+dobj(created-19, world-21)
+num(days-24, seven-23)
+prep_in(created-19, days-24)
+det(years-28, a-25)
+amod(years-28, few-26)
+num(years-28, thousand-27)
+npadvmod(ago-29, years-28)
+advmod(days-24, ago-29)
+

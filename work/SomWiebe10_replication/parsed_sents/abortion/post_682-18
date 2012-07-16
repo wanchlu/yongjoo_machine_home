@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (JJ random) (NN event))
+      (PRN (-LRB- -LRB-)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (NP (NN egg)
+              (CC and)
+              (NN sperm))
+            (VP (VBP join))))
+        (-RRB- -RRB-)))
+    (VP (VBZ leads)
+      (S
+        (VP (TO to)
+          (VP
+            (NP (DT a) (NN zygote))
+            (PP (IN with)
+              (NP (DT a) (JJ unique)))))
+        (VP (VB make)
+          (PRT (RP up)))))
+    (. .)))
+
+det(event-3, Another-1)
+amod(event-3, random-2)
+nsubj(leads-11, event-3)
+xsubj(zygote-14, event-3)
+dobj(join-9, which-5)
+nsubj(join-9, egg-6)
+conj_and(egg-6, sperm-8)
+nsubj(join-9, sperm-8)
+dep(event-3, join-9)
+root(ROOT-0, leads-11)
+aux(zygote-14, to-12)
+det(zygote-14, a-13)
+ccomp(leads-11, zygote-14)
+xcomp(leads-11, zygote-14)
+det(unique-17, a-16)
+prep_with(zygote-14, unique-17)
+dep(zygote-14, make-18)
+prt(make-18, up-19)
+

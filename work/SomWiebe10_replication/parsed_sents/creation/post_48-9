@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VB invite)
+      (S
+        (NP (NNP PvM))
+        (VP (TO to)
+          (VP (VB cite)
+            (NP
+              (NP (DT any) (VBG leading) (NNP ID) (NN theorist))
+              (VP (VBG filling)
+                (NP
+                  (NP (NNS gaps))
+                  (PP (IN in)
+                    (NP (JJ scientific) (NN knowledge))))
+                (PP (IN with)
+                  (NP (NNP ID)))
+                (, ,)
+                (SBAR (IN as)
+                  (S
+                    (VP (VBD claimed)
+                      (ADVP (RB above)))))))))))
+    (. .)))
+
+nsubj(invite-2, I-1)
+root(ROOT-0, invite-2)
+nsubj(cite-5, PvM-3)
+aux(cite-5, to-4)
+xcomp(invite-2, cite-5)
+det(theorist-9, any-6)
+amod(theorist-9, leading-7)
+nn(theorist-9, ID-8)
+dobj(cite-5, theorist-9)
+partmod(theorist-9, filling-10)
+dobj(filling-10, gaps-11)
+amod(knowledge-14, scientific-13)
+prep_in(gaps-11, knowledge-14)
+prep_with(filling-10, ID-16)
+mark(claimed-19, as-18)
+advcl(filling-10, claimed-19)
+advmod(claimed-19, above-20)
+

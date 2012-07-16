@@ -1,0 +1,123 @@
+(ROOT
+  (NP
+    (NP (NNP Murray))
+    (, ,)
+    (NP (NNP John) (NNP Courtney))
+    (. .)))
+
+root(ROOT-0, Murray-1)
+nn(Courtney-4, John-3)
+appos(Murray-1, Courtney-4)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP Contraception))
+    (, ,)
+    (PP (CC and)
+      (NP
+        (NP (DT the) (`` ``) (JJ Liberal) (JJ Catholic) ('' '') (NNP Justification))
+        (PP (IN for)
+          (NP (NNP Abortion) ('' '')))))
+    (. .)))
+
+root(ROOT-0, Contraception-2)
+dep(Contraception-2, and-4)
+det(Justification-10, the-5)
+amod(Justification-10, Liberal-7)
+amod(Justification-10, Catholic-8)
+dep(and-4, Justification-10)
+prep_for(Justification-10, Abortion-12)
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NN Church))
+      (CC and)
+      (NP (DT the) (JJ Liberal) (NN Tradition)))
+    (. .)))
+
+det(Church-2, The-1)
+root(ROOT-0, Church-2)
+det(Tradition-6, the-4)
+amod(Tradition-6, Liberal-5)
+conj_and(Church-2, Tradition-6)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP (DT this) (NN article))
+      (SBAR
+        (S
+          (VP (VBZ needs)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP
+                    (VP (VBN read))
+                    (CC and)
+                    (VP (VBZ quotes)
+                      (VP (VBN drawn)))))))
+            (PP (IN from)
+              (NP (PRP it)))
+            (-RRB- -RRB-)))))
+    (NP (NNP Thomson) (, ,) (NNP Judith))
+    (VP (VBZ Jarvis))
+    (. .) ('' '')))
+
+det(article-3, this-2)
+nsubj(Jarvis-17, article-3)
+rcmod(article-3, needs-4)
+aux(read-7, to-5)
+auxpass(read-7, be-6)
+xcomp(needs-4, read-7)
+xcomp(needs-4, quotes-9)
+conj_and(read-7, quotes-9)
+dep(quotes-9, drawn-10)
+prep_from(needs-4, it-12)
+nn(Judith-16, Thomson-14)
+nsubj(Jarvis-17, Judith-16)
+root(ROOT-0, Jarvis-17)
+
+(ROOT
+  (NP
+    (NP (DT A) (NN Defense))
+    (PP (IN of)
+      (NP (NNP Abortion) ('' '')))
+    (. .)))
+
+det(Defense-2, A-1)
+root(ROOT-0, Defense-2)
+prep_of(Defense-2, Abortion-4)
+
+(ROOT
+  (NP
+    (NP (NNP Philosophy)
+      (CC &)
+      (NNP Public) (NNP Affairs))
+    (, ,)
+    (NP (NNP Vol))
+    (. .)))
+
+nn(Affairs-4, Philosophy-1)
+conj_and(Philosophy-1, Public-3)
+nn(Affairs-4, Public-3)
+root(ROOT-0, Affairs-4)
+appos(Affairs-4, Vol-6)
+
+(ROOT
+  (NP
+    (NP (CD 1))
+    (, ,)
+    (NP
+      (NP (NN no.) (CD 1))
+      (PRN (-LRB- -LRB-)
+        (NP (NN Fall) (CD 1971))
+        (-RRB- -RRB-)))
+    (. .)))
+
+root(ROOT-0, 1-1)
+appos(1-1, no.-3)
+num(no.-3, 1-4)
+appos(no.-3, Fall-6)
+num(Fall-6, 1971-7)
+

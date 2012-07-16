@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (ADVP (RB Certainly))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (NN value))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS documents))
+            (SBAR
+              (WHPP (IN from)
+                (WHNP (WDT which)))
+              (S
+                (NP (JJ human) (NN culture))
+                (VP (VBZ has)
+                  (VP (VBN derived)
+                    (NP
+                      (NP (DT the) (NNP Christian) (NNP Bible))
+                      (: ;)
+                      (NP
+                        (NP (DT the) (NN value))
+                        (PP (IN of)
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ is)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB be)
+                                      (VP (VBN determined)
+                                        (ADVP (RB individually))
+                                        (PP (IN by)
+                                          (NP (DT the) (NN reader)))))))))))))))))))))
+    (. .)))
+
+advmod(is-4, Certainly-1)
+expl(is-4, there-3)
+root(ROOT-0, is-4)
+nsubj(is-4, value-5)
+det(documents-8, the-7)
+prep_in(value-5, documents-8)
+rel(derived-14, which-10)
+amod(culture-12, human-11)
+nsubj(derived-14, culture-12)
+aux(derived-14, has-13)
+rcmod(documents-8, derived-14)
+det(Bible-17, the-15)
+nn(Bible-17, Christian-16)
+dobj(derived-14, Bible-17)
+det(value-20, the-19)
+dep(Bible-17, value-20)
+nsubj(is-23, which-22)
+prepc_of(value-20, is-23)
+aux(determined-26, to-24)
+auxpass(determined-26, be-25)
+xcomp(is-23, determined-26)
+advmod(determined-26, individually-27)
+det(reader-30, the-29)
+agent(determined-26, reader-30)
+

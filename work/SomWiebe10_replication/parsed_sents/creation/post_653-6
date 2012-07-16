@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Just))
+      (VP (TO to)
+        (VP (VB ellaborate)
+          (PP (IN on)
+            (NP (NNP Socrates) (NN logic))))))
+    (: :)
+    (S
+      (S
+        (NP (NNP Socrates))
+        (VP (VBD was)
+          (ADJP (JJ mortal))))
+      (, ,)
+      (S
+        (NP (NN man))
+        (VP (VBZ is)
+          (ADJP (JJ mortal))))
+      (, ,)
+      (S
+        (ADVP (RB therefore))
+        (NP (DT all) (NNS men))
+        (VP (VBP are)
+          (ADJP (JJ Socrates)))))
+    (. .)))
+
+advmod(ellaborate-3, Just-1)
+aux(ellaborate-3, to-2)
+root(ROOT-0, ellaborate-3)
+nn(logic-6, Socrates-5)
+prep_on(ellaborate-3, logic-6)
+nsubj(mortal-10, Socrates-8)
+cop(mortal-10, was-9)
+parataxis(ellaborate-3, mortal-10)
+nsubj(mortal-14, man-12)
+cop(mortal-14, is-13)
+ccomp(mortal-10, mortal-14)
+advmod(Socrates-20, therefore-16)
+det(men-18, all-17)
+nsubj(Socrates-20, men-18)
+cop(Socrates-20, are-19)
+dep(mortal-10, Socrates-20)
+

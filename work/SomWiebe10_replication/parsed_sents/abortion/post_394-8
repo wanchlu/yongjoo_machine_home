@@ -1,0 +1,54 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT that))
+    (VP (VB mean)
+      (NP
+        (NP (FW i) (FW murdered))
+        (CC and)
+        (ADVP (RB therefore))
+        (NP
+          (NP (FW i))
+          (VP (VBN committed)
+            (NP (DT a) (NN crime))))))
+    (. ?)))
+
+dep(mean-3, Does-1)
+nsubj(mean-3, that-2)
+root(ROOT-0, mean-3)
+nn(murdered-5, i-4)
+dobj(mean-3, murdered-5)
+dobj(mean-3, therefore-7)
+advmod(murdered-5, therefore-7)
+conj_and(murdered-5, therefore-7)
+dobj(mean-3, i-8)
+conj_and(murdered-5, i-8)
+partmod(i-8, committed-9)
+det(crime-11, a-10)
+dobj(committed-9, crime-11)
+
+(ROOT
+  (PRN
+    (ADVP (RB well))
+    (, ,)
+    (SBAR (WP what) (IN if)
+      (S
+        (NP (FW i))
+        (VP (VBD killed)
+          (NP
+            (NP (DT the) (NN sperm))
+            (CC and)
+            (NP (DT the) (NN egg) (NN seperately)))))
+      (. ?))))
+
+dep(killed-6, well-1)
+dep(killed-6, what-3)
+dep(killed-6, if-4)
+nsubj(killed-6, i-5)
+root(ROOT-0, killed-6)
+det(sperm-8, the-7)
+dobj(killed-6, sperm-8)
+det(seperately-12, the-10)
+nn(seperately-12, egg-11)
+dobj(killed-6, seperately-12)
+conj_and(sperm-8, seperately-12)
+

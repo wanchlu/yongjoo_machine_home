@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP suspect)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (NP
+              (NP (CD one) (POS 's))
+              (NN ego)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ willing)
+                      (S
+                        (VP (TO to)
+                          (VP (VB value)
+                            (NP
+                              (NP (CD one) (NN life))
+                              (NP
+                                (NP
+                                  (QP (JJR more) (IN than) (DT another)))
+                                (: ...)
+                                (CC or)
+                                (NP
+                                  (NP (CD one) (NN life))
+                                  (NP
+                                    (QP (JJR more) (IN than) (CD 3,613))
+                                    (NNS others)))))))))))))))))
+    (. .)))
+
+nsubj(suspect-2, I-1)
+root(ROOT-0, suspect-2)
+nsubj(ego-7, it-3)
+cop(ego-7, is-4)
+poss(ego-7, one-5)
+ccomp(suspect-2, ego-7)
+nsubj(willing-10, that-8)
+cop(willing-10, is-9)
+rcmod(one-5, willing-10)
+ccomp(ego-7, willing-10)
+aux(value-12, to-11)
+xcomp(willing-10, value-12)
+num(life-14, one-13)
+dobj(value-12, life-14)
+iobj(value-12, life-14)
+mwe(than-16, more-15)
+quantmod(another-17, than-16)
+dobj(value-12, another-17)
+dep(life-14, another-17)
+num(life-21, one-20)
+dobj(value-12, life-21)
+dep(life-14, life-21)
+conj_or(another-17, life-21)
+mwe(than-23, more-22)
+quantmod(3,613-24, than-23)
+num(others-25, 3,613-24)
+dep(life-21, others-25)
+

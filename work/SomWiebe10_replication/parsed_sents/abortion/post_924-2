@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Abortion))
+      (VP (VBZ is)
+        (VP (VBG WRONG))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB know)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (DT some) (NNS people))
+              (VP (MD ca) (RB n't)
+                (VP (VB get)
+                  (NP (PRP it))
+                  (PP (IN through)
+                    (NP (PRP$ their) (JJ thick) (NNS skulls))))))))))
+    (. .)))
+
+nsubj(WRONG-3, Abortion-1)
+aux(WRONG-3, is-2)
+root(ROOT-0, WRONG-3)
+nsubj(know-9, I-6)
+aux(know-9, do-7)
+neg(know-9, n't-8)
+conj_and(WRONG-3, know-9)
+advmod(get-15, why-10)
+det(people-12, some-11)
+nsubj(get-15, people-12)
+aux(get-15, ca-13)
+neg(get-15, n't-14)
+advcl(know-9, get-15)
+dobj(get-15, it-16)
+poss(skulls-20, their-18)
+amod(skulls-20, thick-19)
+prep_through(get-15, skulls-20)
+

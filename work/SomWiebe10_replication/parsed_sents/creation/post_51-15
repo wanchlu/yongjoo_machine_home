@@ -1,0 +1,49 @@
+(ROOT
+  (NP
+    (NP (NNP PvM))
+    (: --)
+    (S
+      (S
+        (NP (NNP |) (NNP Highlander))
+        (VP (VBZ asserts)
+          (SBAR (IN that)
+            (S
+              (NP (NNP ID))
+              (VP (VBZ calculates)
+                (NP (DT the) (NN probability) (NN |))
+                (SBAR (IN that)
+                  (S
+                    (NP (NN something))
+                    (VP (VBD was)
+                      (VP (VBN designed)
+                        (PP (IN by)
+                          (NP (NN chance))))))))))))
+      (CC and)
+      (S
+        (ADVP (RB then))
+        (NP (NNP |))
+        (VP (VBZ concludes)
+          (NP (`` ``) (NN design) ('' '')))))
+    (. .)))
+
+root(ROOT-0, PvM-1)
+nn(Highlander-4, |-3)
+nsubj(asserts-5, Highlander-4)
+dep(PvM-1, asserts-5)
+complm(calculates-8, that-6)
+nsubj(calculates-8, ID-7)
+ccomp(asserts-5, calculates-8)
+det(|-11, the-9)
+nn(|-11, probability-10)
+dobj(calculates-8, |-11)
+complm(designed-15, that-12)
+nsubjpass(designed-15, something-13)
+auxpass(designed-15, was-14)
+ccomp(calculates-8, designed-15)
+agent(designed-15, chance-17)
+advmod(concludes-21, then-19)
+nsubj(concludes-21, |-20)
+dep(PvM-1, concludes-21)
+conj_and(asserts-5, concludes-21)
+dobj(concludes-21, design-23)
+

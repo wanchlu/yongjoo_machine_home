@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP dont)
+      (SBAR
+        (S
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (ADVP (RB really))
+                (VP (VBP read)
+                  (NP (PRP$ my) (NN comment)))))))))
+    (. .)))
+
+nsubj(dont-2, I-1)
+root(ROOT-0, dont-2)
+ccomp(dont-2, think-3)
+nsubj(read-6, you-4)
+advmod(read-6, really-5)
+ccomp(think-3, read-6)
+poss(comment-8, my-7)
+dobj(read-6, comment-8)
+
+(ROOT
+  (S
+    (NP (PRP$ your))
+    (VP (VBG missing)
+      (NP (PRP$ my) (NN point)))
+    (. .)))
+
+nsubj(missing-2, your-1)
+root(ROOT-0, missing-2)
+poss(point-4, my-3)
+dobj(missing-2, point-4)
+
+(ROOT
+  (S
+    (SQ
+      (NP (DT The) (NN topic))
+      (VP (VBZ is)))
+    ('' '')
+    (NP (NNP Abortion))
+    (VP (MD Should)
+      (VP
+        (VP (VB be)
+          (VP (VBN banned)))
+        ('' '')
+        (CC and)
+        (VP (VB sense)
+          (NP
+            (NP (JJ therre) (NN ar) (NN diffrent) (NNS situations))
+            (PP (JJ such)
+              (PP (IN as)))
+            ('' ''))
+          (NP
+            (NP (NNS accidents))
+            ('' '')
+            (CC and)
+            (NP (`` ``) (NN rape) ('' '') (NN abortion) (NN shouldnt))))
+        (S
+          (VP (VB be)
+            (VP (VBN banned))))))
+    (. .)))
+
+det(topic-2, The-1)
+nsubj(is-3, topic-2)
+dep(banned-8, is-3)
+nsubjpass(banned-8, Abortion-5)
+nsubj(sense-11, Abortion-5)
+aux(banned-8, Should-6)
+auxpass(banned-8, be-7)
+root(ROOT-0, banned-8)
+conj_and(banned-8, sense-11)
+amod(situations-15, therre-12)
+nn(situations-15, ar-13)
+nn(situations-15, diffrent-14)
+iobj(sense-11, situations-15)
+prep(situations-15, such-16)
+prep(such-16, as-17)
+dobj(sense-11, accidents-19)
+nn(shouldnt-26, rape-23)
+nn(shouldnt-26, abortion-25)
+dobj(sense-11, shouldnt-26)
+conj_and(accidents-19, shouldnt-26)
+auxpass(banned-28, be-27)
+ccomp(banned-8, banned-28)
+

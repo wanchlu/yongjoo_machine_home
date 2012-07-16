@@ -1,0 +1,105 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (LST (LS 1) (-RRB- -RRB-))
+        (NP (NNP Change))
+        (PP (IN over)
+          (NP
+            (NP (NN time))
+            (PRN (-LRB- -LRB-)
+              (SBAR (RB even)
+                (S
+                  (NP
+                    (NP (NNS billions))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS years))
+                        (, ,)
+                        (NP
+                          (ADJP (RBS most) (JJ leading))
+                          (NN ID) (NNS proponents)))))
+                  (VP (VBP believe)
+                    (SBAR
+                      (S
+                        (NP (DT the) (NN universe))
+                        (VP (VBZ is)
+                          (NP
+                            (NP (NNS billions))
+                            (PP (IN of)
+                              (NP
+                                (NP (NNS years))
+                                (ADJP (JJ old)))))))))))
+              (-RRB- -RRB-))
+            (NP
+              (NP
+                (LST (LS 2) (-RRB- -RRB-))
+                (VBN Common) (NN ancestry))
+              (, ,)
+              (NP (DT all) (NNS forms))))))
+      (PP (IN of)
+        (NP
+          (NP (NN life))
+          (VP (VBN evolved)
+            (PP (IN from)
+              (NP
+                (NP (DT a) (JJ single) (JJ original) (NN life) (NN form3) (-RRB- -RRB-) (JJ Natural) (NN selection))
+                (VP (VBG acting)
+                  (PP (IN on)
+                    (NP (JJ random) (NN mutation))))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ primary) (NN mechanism))
+        (SBAR
+          (WHPP (IN by)
+            (WHNP (WDT which)))
+          (S
+            (NP (NN life) (NNS forms))
+            (VP (VBP have)
+              (VP (VBN evolved)))))))
+    (. .)))
+
+dep(Change-3, 1-1)
+nsubj(mechanism-51, Change-3)
+prep_over(Change-3, time-5)
+advmod(believe-16, even-7)
+nsubj(believe-16, billions-8)
+prep_of(billions-8, years-10)
+advmod(leading-13, most-12)
+amod(proponents-15, leading-13)
+nn(proponents-15, ID-14)
+appos(years-10, proponents-15)
+dep(time-5, believe-16)
+det(universe-18, the-17)
+nsubj(billions-20, universe-18)
+cop(billions-20, is-19)
+ccomp(believe-16, billions-20)
+prep_of(billions-20, years-22)
+amod(years-22, old-23)
+dep(ancestry-28, 2-25)
+amod(ancestry-28, Common-27)
+dep(time-5, ancestry-28)
+det(forms-31, all-30)
+appos(ancestry-28, forms-31)
+prep_of(Change-3, life-33)
+partmod(life-33, evolved-34)
+det(selection-43, a-36)
+amod(selection-43, single-37)
+amod(selection-43, original-38)
+nn(selection-43, life-39)
+nn(selection-43, form3-40)
+amod(selection-43, Natural-42)
+prep_from(evolved-34, selection-43)
+partmod(selection-43, acting-44)
+amod(mutation-47, random-46)
+prep_on(acting-44, mutation-47)
+cop(mechanism-51, is-48)
+det(mechanism-51, the-49)
+amod(mechanism-51, primary-50)
+root(ROOT-0, mechanism-51)
+rel(evolved-57, which-53)
+nn(forms-55, life-54)
+nsubj(evolved-57, forms-55)
+aux(evolved-57, have-56)
+rcmod(mechanism-51, evolved-57)
+

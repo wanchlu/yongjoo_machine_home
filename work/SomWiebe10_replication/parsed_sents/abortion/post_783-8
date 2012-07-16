@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT this) (NN family))
+        (VP (VBD was) (RB not)
+          (ADJP (RB financially) (JJ able)
+            (S
+              (VP (TO to)
+                (VP (VB raise)
+                  (NP (DT a) (NN child)))))))))
+    (, ,)
+    (NP (DT the) (NN public))
+    (VP (VBZ ends)
+      (PRT (RP up))
+      (S
+        (VP (VBG paying)
+          (PP (IN for)
+            (NP (PRP them)))
+          (PP (IN through)
+            (NP
+              (NP (NN welfare) (NNS programs))
+              (, ,)
+              (NP (FW etc.) (. .)))))))
+    (. .)))
+
+mark(able-7, If-1)
+det(family-3, this-2)
+nsubj(able-7, family-3)
+cop(able-7, was-4)
+neg(able-7, not-5)
+advmod(able-7, financially-6)
+advcl(ends-15, able-7)
+aux(raise-9, to-8)
+xcomp(able-7, raise-9)
+det(child-11, a-10)
+dobj(raise-9, child-11)
+det(public-14, the-13)
+nsubj(ends-15, public-14)
+root(ROOT-0, ends-15)
+prt(ends-15, up-16)
+xcomp(ends-15, paying-17)
+prep_for(paying-17, them-19)
+nn(programs-22, welfare-21)
+prep_through(paying-17, programs-22)
+appos(programs-22, etc.-24)
+

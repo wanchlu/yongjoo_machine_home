@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Roe) (NNP vs) (NNP Wade))
+    (VP (VBZ hinges)
+      (PP (IN on)
+        (NP
+          (NP
+            (NP (DT the) (NN argument))
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT a) (NN woman) (POS 's))
+                  (JJ medical) (NNS treatments))
+                (VP (VBP are)
+                  (ADJP (JJ private)
+                    (PP (TO to)
+                      (NP (PRP her))))))))
+          (, ,) (RB not)
+          (NP
+            (NP (DT a) (JJ moral) (NN judgement))
+            (PP (IN about)
+              (NP (DT the) (NN procedure)))))))
+    (. .)))
+
+nn(Wade-3, Roe-1)
+nn(Wade-3, vs-2)
+nsubj(hinges-4, Wade-3)
+root(ROOT-0, hinges-4)
+det(argument-7, the-6)
+prep_on(hinges-4, argument-7)
+complm(private-15, that-8)
+det(woman-10, a-9)
+poss(treatments-13, woman-10)
+amod(treatments-13, medical-12)
+nsubj(private-15, treatments-13)
+cop(private-15, are-14)
+dep(argument-7, private-15)
+prep_to(private-15, her-17)
+neg(argument-7, not-19)
+det(judgement-22, a-20)
+amod(judgement-22, moral-21)
+dep(argument-7, judgement-22)
+det(procedure-25, the-24)
+prep_about(judgement-22, procedure-25)
+

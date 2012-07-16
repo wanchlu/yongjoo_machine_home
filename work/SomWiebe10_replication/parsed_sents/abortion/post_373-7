@@ -1,0 +1,46 @@
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS abortions))
+    (SQ (VBP are)
+      (PP (IN in)
+        (NP
+          (NP (NN fact))
+          (UCP
+            (NP
+              (NP (DT a) (NN result))
+              (PP (IN of)
+                (NP (NN rape))))
+            (CC and)
+            (RRC
+              (ADVP (RB not) (RB just))
+              (NP
+                (NP (DT a) (NN form))
+                (PP (IN of)
+                  (NP
+                    (NP (NN birth) (NN control))
+                    (CC or)
+                    (NP (JJ philosophical) (NN defiance))))))))))
+    (. ?)))
+
+advmod(many-2, How-1)
+amod(abortions-3, many-2)
+attr(are-4, abortions-3)
+root(ROOT-0, are-4)
+prep_in(are-4, fact-6)
+det(result-8, a-7)
+dep(fact-6, result-8)
+prep_of(result-8, rape-10)
+dep(just-13, not-12)
+advmod(form-15, just-13)
+det(form-15, a-14)
+dep(fact-6, form-15)
+conj_and(result-8, form-15)
+rcmod(result-8, form-15)
+nn(control-18, birth-17)
+prep_of(form-15, control-18)
+amod(defiance-21, philosophical-20)
+prep_of(form-15, defiance-21)
+conj_or(control-18, defiance-21)
+

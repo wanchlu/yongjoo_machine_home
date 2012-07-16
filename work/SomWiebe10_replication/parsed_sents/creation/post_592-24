@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP RNA))
+      (VP (VBZ is)
+        (NP
+          (NP (NN self))
+          (VP (VBG assembling)
+            (PP (IN under)
+              (NP (DT the) (JJ right) (NNS conditions)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NNS lipids))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP make)
+              (PRT (RP up))
+              (NP (NN cell) (NNS walls))))))
+      (VP (VBP form)
+        (NP (JJ microscopic) (NNS bubbles))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB empty)
+              (NP (NNS cells))
+              (SBAR (IN if)
+                (S
+                  (NP (PRP you))
+                  (VP (MD would))))))
+          (-RRB- -RRB-))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (VP (VBN placed)
+              (PP (IN in)
+                (NP (NN water))))))))
+    (. .)))
+
+nsubj(self-3, RNA-1)
+cop(self-3, is-2)
+root(ROOT-0, self-3)
+partmod(self-3, assembling-4)
+det(conditions-8, the-6)
+amod(conditions-8, right-7)
+prep_under(assembling-4, conditions-8)
+det(lipids-12, the-11)
+nsubj(make-14, lipids-12)
+nsubj(form-18, lipids-12)
+rcmod(lipids-12, make-14)
+prt(make-14, up-15)
+nn(walls-17, cell-16)
+dobj(make-14, walls-17)
+conj_and(self-3, form-18)
+amod(bubbles-20, microscopic-19)
+dobj(form-18, bubbles-20)
+parataxis(form-18, empty-22)
+dobj(empty-22, cells-23)
+mark(would-26, if-24)
+nsubj(would-26, you-25)
+advcl(empty-22, would-26)
+advmod(placed-29, when-28)
+advcl(form-18, placed-29)
+prep_in(placed-29, water-31)
+

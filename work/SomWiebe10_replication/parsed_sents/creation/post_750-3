@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP (VBP listen))))
+      (, ,)
+      (NP (NNP God))
+      (VP (MD will)
+        (VP (VB tell)
+          (NP (PRP you))
+          (SBAR
+            (WHADVP (WDT which) (NN way))
+            (S
+              (VP (TO to)
+                (VP (VB go))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP you))
+      (ADVP (RB always))
+      (VP (VBP have)
+        (NP (JJ free) (NN will))))
+    (. .)))
+
+mark(listen-3, If-1)
+nsubj(listen-3, you-2)
+advcl(tell-7, listen-3)
+nsubj(tell-7, God-5)
+aux(tell-7, will-6)
+root(ROOT-0, tell-7)
+dobj(tell-7, you-8)
+dep(way-10, which-9)
+advmod(go-12, way-10)
+aux(go-12, to-11)
+xcomp(tell-7, go-12)
+nsubj(have-17, you-15)
+advmod(have-17, always-16)
+conj_but(tell-7, have-17)
+amod(will-19, free-18)
+dobj(have-17, will-19)
+

@@ -1,0 +1,73 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (NNP Darwinism))
+    (VP (VB lead)
+      (S
+        (VP (TO to)
+          (VP (VB atheism)))))
+    (. ?)))
+
+dep(lead-3, Does-1)
+nsubj(lead-3, Darwinism-2)
+xsubj(atheism-5, Darwinism-2)
+root(ROOT-0, lead-3)
+aux(atheism-5, to-4)
+xcomp(lead-3, atheism-5)
+
+(ROOT
+  (NP (: --)
+    (NP
+      (NP (NNP Concluding))
+      (SBAR
+        (FRAG (CC And)
+          (RB even)
+          (SBAR (IN if)
+            (S
+              (NP (NNP Expelled))
+              (VP (VBD wanted)
+                (S
+                  (VP (TO to)
+                    (VP (VB take)
+                      (NP
+                        (NP (DT a)
+                          (ADJP (RB very) (JJ strong))
+                          (NN stand))
+                        (PP (IN on)
+                          (NP (DT an) (JJ extreme) (NN answer))))
+                      (PP (TO to)
+                        (NP
+                          (NP (DT the) (NNS questions))
+                          (, ,)
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (MD would)
+                                (VP (VB have)
+                                  (VP (VBN been)
+                                    (VP (VBG stimulating))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, Concluding-2)
+dep(even-4, And-3)
+dep(Concluding-2, even-4)
+mark(wanted-7, if-5)
+nsubj(wanted-7, Expelled-6)
+xsubj(take-9, Expelled-6)
+dep(even-4, wanted-7)
+aux(take-9, to-8)
+xcomp(wanted-7, take-9)
+det(stand-13, a-10)
+advmod(strong-12, very-11)
+amod(stand-13, strong-12)
+dobj(take-9, stand-13)
+det(answer-17, an-15)
+amod(answer-17, extreme-16)
+prep_on(stand-13, answer-17)
+det(questions-20, the-19)
+prep_to(take-9, questions-20)
+nsubj(stimulating-26, questions-20)
+aux(stimulating-26, would-23)
+aux(stimulating-26, have-24)
+aux(stimulating-26, been-25)
+rcmod(questions-20, stimulating-26)
+

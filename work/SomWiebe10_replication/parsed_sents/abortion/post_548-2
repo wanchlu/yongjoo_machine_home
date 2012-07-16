@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (DT A) (NN fetus))
+    (VP (VBZ is) (RB not)
+      (ADJP (`` ``) (JJ alive) ('' ''))
+      (SBAR (IN until)
+        (S
+          (NP (PRP it))
+          (VP (MD can)
+            (VP (VB live)
+              (NP
+                (NP (JJ independent))
+                (PP (IN of)
+                  (NP (PRP$ its) (NN mother))))))))
+      (, ,)
+      (PP (IN in)
+        (NP (JJ other) (NNS words)))
+      (SBAR (IN once)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (VP (VBN born))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(alive-6, fetus-2)
+cop(alive-6, is-3)
+neg(alive-6, not-4)
+root(ROOT-0, alive-6)
+mark(live-11, until-8)
+nsubj(live-11, it-9)
+aux(live-11, can-10)
+advcl(alive-6, live-11)
+dobj(live-11, independent-12)
+poss(mother-15, its-14)
+prep_of(independent-12, mother-15)
+amod(words-19, other-18)
+prep_in(alive-6, words-19)
+mark(born-23, once-20)
+nsubjpass(born-23, it-21)
+auxpass(born-23, is-22)
+advcl(alive-6, born-23)
+

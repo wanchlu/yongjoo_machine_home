@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP AMA))
+    (VP (VBZ says)
+      (SBAR
+        (S
+          (NP (EX there))
+          (VP (VBZ 's)
+            (NP
+              (NP (DT no) (NN consensus))
+              (PP (IN between)
+                (NP (NNS doctors))))))))
+    (. .)))
+
+det(AMA-2, The-1)
+nsubj(says-3, AMA-2)
+root(ROOT-0, says-3)
+expl('s-5, there-4)
+ccomp(says-3, 's-5)
+det(consensus-7, no-6)
+nsubj('s-5, consensus-7)
+prep_between(consensus-7, doctors-9)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS spectrums))
+        (PP (IN of)
+          (NP
+            (NP (NNS opinions))
+            (VP (VBG ranging)
+              (PP (IN from)
+                (PP (IN At)
+                  (NP (NNP Birth))))
+              (, ,)
+              (PP (TO to)
+                (NP
+                  (QP (IN At) (CD Conception)))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, spectrums-3)
+prep_of(spectrums-3, opinions-5)
+partmod(opinions-5, ranging-6)
+prep(ranging-6, from-7)
+pcomp(from-7, At-8)
+prep_at(from-7, Birth-9)
+quantmod(Conception-13, At-12)
+prep_to(ranging-6, Conception-13)
+

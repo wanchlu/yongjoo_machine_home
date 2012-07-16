@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (JJ other) (NNS words)))
+      (, ,)
+      (NP
+        (NP (DT a) (NN theory))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ revises)
+              (NP
+                (NP (PRP it) (POS 's))
+                (NN prediction))))))
+      (VP (MD must)
+        (ADVP (RB also))
+        (VP (VB revise)
+          (NP
+            (NP (PRP it) (POS 's))
+            (NN explanation)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN explanation))
+        (VP (VBN offered)
+          (PP (IN by)
+            (NP (JJ evolutionary) (NN theory)))))
+      (VP (VBZ has) (RB not)
+        (VP (VBN been)
+          (VP (VBN revised)))))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(revise-14, words-3)
+det(theory-6, a-5)
+nsubj(revises-8, theory-6)
+nsubj(revise-14, theory-6)
+rcmod(theory-6, revises-8)
+poss(prediction-11, it-9)
+dobj(revises-8, prediction-11)
+aux(revise-14, must-12)
+advmod(revise-14, also-13)
+root(ROOT-0, revise-14)
+poss(explanation-17, it-15)
+dobj(revise-14, explanation-17)
+det(explanation-21, the-20)
+nsubjpass(revised-29, explanation-21)
+partmod(explanation-21, offered-22)
+amod(theory-25, evolutionary-24)
+agent(offered-22, theory-25)
+aux(revised-29, has-26)
+neg(revised-29, not-27)
+auxpass(revised-29, been-28)
+conj_but(revise-14, revised-29)
+

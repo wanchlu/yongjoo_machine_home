@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ first) (NN mutation))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (QP (CC or)
+              (CD mutations)))
+          (-RRB- -RRB-)))
+      (VP (VBD allowed)
+        (NP (DT the) (NNS bacteria))
+        (S
+          (VP (TO to)
+            (VP (VB eat)
+              (NP (NN citrate)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBD were)
+        (VP (VBN outcompeted)
+          (PP (IN by)
+            (NP
+              (NP (DT some) (JJ glucose-eating) (NNS mutants))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (ADVP (RB still))
+                  (VP (VBD had)
+                    (NP (DT the) (JJ upper) (NN hand))))))))))
+    (. .)))
+
+det(mutation-3, The-1)
+amod(mutation-3, first-2)
+nsubj(allowed-8, mutation-3)
+cc(mutations-6, or-5)
+dep(mutation-3, mutations-6)
+root(ROOT-0, allowed-8)
+det(bacteria-10, the-9)
+dobj(allowed-8, bacteria-10)
+aux(eat-12, to-11)
+xcomp(allowed-8, eat-12)
+dobj(eat-12, citrate-13)
+nsubjpass(outcompeted-18, they-16)
+auxpass(outcompeted-18, were-17)
+conj_but(allowed-8, outcompeted-18)
+det(mutants-22, some-20)
+amod(mutants-22, glucose-eating-21)
+agent(outcompeted-18, mutants-22)
+nsubj(had-25, mutants-22)
+advmod(had-25, still-24)
+rcmod(mutants-22, had-25)
+det(hand-28, the-26)
+amod(hand-28, upper-27)
+dobj(had-25, hand-28)
+

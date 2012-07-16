@@ -1,0 +1,40 @@
+(ROOT
+  (SINV
+    (ADVP (RB As) (RB Schloss))
+    (VP (VBZ describes)
+      (NP
+        (NP (DT the) (NN portrayal))
+        (PP (IN of)
+          (NP (DT the) (NNP Sternberg)))))
+    (NP (`` ``)
+      (NP
+        (NP (NN affair))
+        (: ;)
+        (PP (IN in)
+          (NP (DT the) (NN movie) ('' '') (NN Expelled))))
+      (: :)
+      (NP
+        (NP (DT No) (NNP Intelligence) (NNP Allowed) ('' ''))
+        (-LRB- -LRB-)
+        (NP
+          (NP (JJ ironic))
+          (NP (NN title)))))
+    (: ...)))
+
+advmod(Schloss-2, As-1)
+advmod(describes-3, Schloss-2)
+root(ROOT-0, describes-3)
+det(portrayal-5, the-4)
+dobj(describes-3, portrayal-5)
+det(Sternberg-8, the-7)
+prep_of(portrayal-5, Sternberg-8)
+nsubj(describes-3, affair-10)
+det(Expelled-16, the-13)
+nn(Expelled-16, movie-14)
+prep_in(affair-10, Expelled-16)
+det(Allowed-20, No-18)
+nn(Allowed-20, Intelligence-19)
+dep(affair-10, Allowed-20)
+dep(Allowed-20, ironic-23)
+dep(ironic-23, title-24)
+

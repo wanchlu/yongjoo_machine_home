@@ -1,0 +1,47 @@
+(ROOT
+  (S ('' '')
+    (PP (IN In)
+      (NP (NN fact)))
+    (, ,)
+    (NP (JJ several) (NNP ID) (NNS proponents))
+    (VP (VBP have)
+      (VP (VBN admitted)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN lack))
+            (PP (IN of)
+              (NP
+                (NP (DT a) (NN foundation))
+                (PP (IN for)
+                  (NP (NNP ID)))))))))
+    (. .) ('' '')))
+
+prep_in(admitted-9, fact-3)
+amod(proponents-7, several-5)
+nn(proponents-7, ID-6)
+nsubj(admitted-9, proponents-7)
+aux(admitted-9, have-8)
+root(ROOT-0, admitted-9)
+det(lack-12, the-11)
+prep_to(admitted-9, lack-12)
+det(foundation-15, a-14)
+prep_of(lack-12, foundation-15)
+prep_for(foundation-15, ID-17)
+
+(ROOT
+  (S
+    (NP (NNP Gonna))
+    (VP (VBP quote-mine)
+      (NP
+        (NP (NNP Paul) (NNP Nelson))
+        (PP (IN on)
+          (NP (DT this) (NN one)))))
+    (. ?)))
+
+nsubj(quote-mine-2, Gonna-1)
+root(ROOT-0, quote-mine-2)
+nn(Nelson-4, Paul-3)
+dobj(quote-mine-2, Nelson-4)
+det(one-7, this-6)
+prep_on(Nelson-4, one-7)
+

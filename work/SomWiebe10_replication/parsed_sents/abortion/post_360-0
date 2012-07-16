@@ -1,0 +1,54 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP
+        (NP (JJ Fifty-four) (NN percent))
+        (PP (IN of)
+          (NP
+            (NP (NNS women))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP have)
+                  (NP (NNS abortions))))))))
+      (VP (VBD had)
+        (VP (VBN used)
+          (NP
+            (NP (DT a) (JJ contraceptive) (NN method))
+            (PRN (-LRB- -LRB-)
+              (ADVP (RB usually))
+              (NP
+                (NP (DT the) (NN condom))
+                (CC or)
+                (NP (DT the) (NN pill)))
+              (-RRB- -RRB-)))
+          (PP (IN during)
+            (NP (DT the) (NN month))))))
+    (NP (PRP they))
+    (VP (VBD became)
+      (ADJP (JJ pregnant)))
+    (. .)))
+
+amod(percent-3, Fifty-four-2)
+nsubj(used-10, percent-3)
+prep_of(percent-3, women-5)
+nsubj(have-7, women-5)
+rcmod(women-5, have-7)
+dobj(have-7, abortions-8)
+aux(used-10, had-9)
+dep(pregnant-27, used-10)
+det(method-13, a-11)
+amod(method-13, contraceptive-12)
+dobj(used-10, method-13)
+dep(condom-17, usually-15)
+det(condom-17, the-16)
+dep(method-13, condom-17)
+det(pill-20, the-19)
+dep(method-13, pill-20)
+conj_or(condom-17, pill-20)
+det(month-24, the-23)
+prep_during(used-10, month-24)
+nsubj(pregnant-27, they-25)
+cop(pregnant-27, became-26)
+root(ROOT-0, pregnant-27)
+

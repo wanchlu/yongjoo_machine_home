@@ -1,0 +1,51 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ videos)))
+    (. ?)))
+
+nsubj(videos-2, What-1)
+root(ROOT-0, videos-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD mentioned)
+      (NP (NNS videos)
+        (CC or)
+        (NNS movies)))
+    (. !)))
+
+nsubj(mentioned-3, I-1)
+neg(mentioned-3, never-2)
+root(ROOT-0, mentioned-3)
+dobj(mentioned-3, videos-4)
+dobj(mentioned-3, movies-6)
+conj_or(videos-4, movies-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG talking)
+        (PP (IN about)
+          (S
+            (VP (VBG watching)
+              (NP (PRP$ my) (CD two) (NN baby) (NNS sisters) (NN play))
+              (PP (IN with)
+                (NP (DT each) (JJ other))))))))))
+
+nsubj(talking-3, I-1)
+aux(talking-3, was-2)
+root(ROOT-0, talking-3)
+prepc_about(talking-3, watching-5)
+poss(play-10, my-6)
+num(play-10, two-7)
+nn(play-10, baby-8)
+nn(play-10, sisters-9)
+dobj(watching-5, play-10)
+det(other-13, each-12)
+prep_with(watching-5, other-13)
+

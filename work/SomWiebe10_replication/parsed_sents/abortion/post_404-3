@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (DT a) (NN physician))
+          (VP (VBG pulling)
+            (NP
+              (NP (DT a) (NN fetus))
+              (PP (RB out) (IN of)
+                (NP (DT the) (NN birth) (NN canal))))))
+        (VP (VBZ does) (RB not)
+          (VP (VB constitute)
+            (NP (DT a) (NN birth))))))
+    (, ,)
+    (NP
+      (NP (RB then) (DT neither))
+      (PP (IN of)
+        (NP (PRP$ my) (NNS children))))
+    (VP (VBD were) (`` ``)
+      (VP (VBN born)))
+    (. .)))
+
+mark(constitute-14, If-1)
+det(physician-3, a-2)
+nsubj(constitute-14, physician-3)
+partmod(physician-3, pulling-4)
+det(fetus-6, a-5)
+dobj(pulling-4, fetus-6)
+det(canal-11, the-9)
+nn(canal-11, birth-10)
+prep_out_of(fetus-6, canal-11)
+aux(constitute-14, does-12)
+neg(constitute-14, not-13)
+advcl(born-25, constitute-14)
+det(birth-16, a-15)
+dobj(constitute-14, birth-16)
+advmod(neither-19, then-18)
+nsubjpass(born-25, neither-19)
+poss(children-22, my-21)
+prep_of(neither-19, children-22)
+auxpass(born-25, were-23)
+root(ROOT-0, born-25)
+

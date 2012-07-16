@@ -1,0 +1,88 @@
+(ROOT
+  (NP
+    (NP
+      (NP (NNS Access))
+      (PP (TO to)
+        (NP
+          (NP (NNS condoms))
+          (CC and)
+          (NP (JJ other) (NN birth) (NN control) (NNS resources)))))
+    (: :)
+    (NP
+      (NP (NNP Access))
+      (PP (TO to)
+        (NP (NN pregnancy) (NN testing) (NNS kits))))
+    (. .)))
+
+root(ROOT-0, Access-1)
+prep_to(Access-1, condoms-3)
+amod(resources-8, other-5)
+nn(resources-8, birth-6)
+nn(resources-8, control-7)
+prep_to(Access-1, resources-8)
+conj_and(condoms-3, resources-8)
+dep(Access-1, Access-10)
+nn(kits-14, pregnancy-12)
+nn(kits-14, testing-13)
+prep_to(Access-10, kits-14)
+
+(ROOT
+  (NP
+    (NP (NNS Access))
+    (PP (TO to)
+      (NP
+        (NP (NN information))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (MD would)
+              (VP (VB make)
+                (S
+                  (NP (PRP it))
+                  (ADJP (JJ clear))
+                  (SBAR
+                    (SBAR (IN that)
+                      (S
+                        (NP (PRP she))
+                        (VP (VBZ is)
+                          (ADJP (JJ eligible)
+                            (S
+                              (VP (TO to)
+                                (VP (VB seek)
+                                  (NP (DT an) (NN abortion)))))))))
+                    (, ,)
+                    (CC and)
+                    (SBAR
+                      (WHADVP (WRB where)
+                        (CC and)
+                        (WRB how))
+                      (S
+                        (VP (TO to)
+                          (VP (VB do)
+                            (ADVP (RB so))))))))))))))
+    (. .)))
+
+root(ROOT-0, Access-1)
+prep_to(Access-1, information-3)
+nsubj(make-6, information-3)
+aux(make-6, would-5)
+rcmod(information-3, make-6)
+nsubj(eligible-12, it-7)
+nsubj(do-23, it-7)
+dep(eligible-12, clear-8)
+dep(eligible-12, that-9)
+nsubj(eligible-12, she-10)
+cop(eligible-12, is-11)
+xcomp(make-6, eligible-12)
+aux(seek-14, to-13)
+xcomp(eligible-12, seek-14)
+det(abortion-16, an-15)
+dobj(seek-14, abortion-16)
+advmod(do-23, where-19)
+dep(where-19, and-20)
+dep(where-19, how-21)
+aux(do-23, to-22)
+xcomp(make-6, do-23)
+conj_and(eligible-12, do-23)
+advmod(do-23, so-24)
+

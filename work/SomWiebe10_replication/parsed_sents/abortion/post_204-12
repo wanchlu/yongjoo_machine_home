@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ takes)
+      (PP (IN over)
+        (NP
+          (QP (DT a) (CD million))
+          (NNS lives)))
+      (NP
+        (NP (DT every) (NN year))
+        (PRN (-LRB- -LRB-)
+          (PP
+            (ADVP (RB just))
+            (IN in)
+            (NP (DT the) (NNP USA)))
+          (-RRB- -RRB-))
+        (: ;)
+        (SBAR
+          (WHNP (WRB how) (JJ many))
+          (S
+            (VP (VBP have)
+              (VP (VBN died)
+                (PP (IN from)
+                  (NP (NNP torture)))))))))
+    (. ?)))
+
+nsubj(takes-2, Abortion-1)
+root(ROOT-0, takes-2)
+quantmod(million-5, a-4)
+num(lives-6, million-5)
+prep_over(takes-2, lives-6)
+det(year-8, every-7)
+dobj(takes-2, year-8)
+advmod(in-11, just-10)
+dep(year-8, in-11)
+det(USA-13, the-12)
+pobj(in-11, USA-13)
+advmod(many-17, how-16)
+advmod(died-19, many-17)
+nsubj(died-19, many-17)
+aux(died-19, have-18)
+rcmod(year-8, died-19)
+prep_from(died-19, torture-21)
+

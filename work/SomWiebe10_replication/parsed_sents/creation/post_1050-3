@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBP are)
+      (NP
+        (NP (CD three) (JJ basic) (NNS reasons))
+        (PP (IN for)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (NN evolution))
+              (VP (VBZ is)
+                (NP (RB only)
+                  (NP (NN theory))
+                  (CC and)
+                  (RB not)
+                  (NP
+                    (NP (DT a) (JJ proven) (NN fact))
+                    (NP (CD :1))))))))))
+    (. .) (-RRB- -RRB-)))
+
+nsubj(reasons-5, Here-1)
+cop(reasons-5, are-2)
+num(reasons-5, three-3)
+amod(reasons-5, basic-4)
+root(ROOT-0, reasons-5)
+advmod(theory-11, why-7)
+nsubj(theory-11, evolution-8)
+cop(theory-11, is-9)
+advmod(theory-11, only-10)
+prepc_for(reasons-5, theory-11)
+prepc_for(reasons-5, not-13)
+conj_and(theory-11, not-13)
+neg(theory-11, not-13)
+det(fact-16, a-14)
+amod(fact-16, proven-15)
+dep(theory-11, fact-16)
+dep(fact-16, :1-17)
+
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ has)
+      (ADVP (RB never))
+      (VP (VBN been)
+        (VP (VBN witnessed))))
+    (. .)))
+
+nsubjpass(witnessed-5, Evolution-1)
+aux(witnessed-5, has-2)
+neg(witnessed-5, never-3)
+auxpass(witnessed-5, been-4)
+root(ROOT-0, witnessed-5)
+

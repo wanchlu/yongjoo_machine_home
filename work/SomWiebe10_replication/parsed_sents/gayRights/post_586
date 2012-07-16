@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Animals))
+      (VP (VBP are)
+        (ADVP (RB indeed))
+        (ADJP (JJ capable)
+          (PP (IN of)
+            (NP (JJ rational) (NN thought))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNS tons))
+        (PP (IN of)
+          (NP (NNS animals))))
+      (VP (VBP have)
+        (NP
+          (NP (NN self) (NN idenity) (NNS complexes))
+          (: ...)
+          (SBARQ
+            (WHADVP (WRB where))
+            (SQ (VBP are)
+              (NP (PRP you))
+              (VP (VBG getting)
+                (NP (PRP$ your) (NN info))))
+            (. ?)))))))
+
+nsubj(capable-4, Animals-1)
+cop(capable-4, are-2)
+advmod(capable-4, indeed-3)
+root(ROOT-0, capable-4)
+amod(thought-7, rational-6)
+prep_of(capable-4, thought-7)
+nsubj(have-13, tons-10)
+prep_of(tons-10, animals-12)
+conj_and(capable-4, have-13)
+nn(complexes-16, self-14)
+nn(complexes-16, idenity-15)
+dobj(have-13, complexes-16)
+advmod(getting-21, where-18)
+aux(getting-21, are-19)
+nsubj(getting-21, you-20)
+dep(complexes-16, getting-21)
+poss(info-23, your-22)
+dobj(getting-21, info-23)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Leviticus))
+      (VP (VBZ is)
+        (NP (NNP Old) (NNP Testement))))
+    (, ,)
+    (NP (NNP ntm) (NNP Lev))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN set))
+        (PP (IN of)
+          (NP
+            (NP (NNS rules))
+            (PP (IN for)
+              (NP (NNP Hebrew) (NNPS Males)))))))
+    (: ...)))
+
+nsubj(Testement-4, Leviticus-1)
+cop(Testement-4, is-2)
+nn(Testement-4, Old-3)
+ccomp(set-10, Testement-4)
+nn(Lev-7, ntm-6)
+nsubj(set-10, Lev-7)
+cop(set-10, is-8)
+det(set-10, a-9)
+root(ROOT-0, set-10)
+prep_of(set-10, rules-12)
+nn(Males-15, Hebrew-14)
+prep_for(rules-12, Males-15)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (VP (VBN Hebrew))
+    (. ?)))
+
+auxpass(Hebrew-3, Are-1)
+nsubjpass(Hebrew-3, you-2)
+root(ROOT-0, Hebrew-3)
+

@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ works)
+        (ADVP (RB well))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ requires)
+        (NP (JJ further) (NNS refinements))
+        (SBAR (IN if)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (S
+                (VP (TO to)
+                  (VP (VB become)
+                    (NP (DT a) (NN tool)
+                      (S
+                        (VP (TO to)
+                          (VP (VB discern)
+                            (NP (`` ``) (NN knowledge) ('' ''))))))))))))))
+    (. .)))
+
+nsubj(works-2, It-1)
+root(ROOT-0, works-2)
+advmod(works-2, well-3)
+nsubj(requires-7, it-6)
+conj_but(works-2, requires-7)
+amod(refinements-9, further-8)
+dobj(requires-7, refinements-9)
+mark(is-12, if-10)
+nsubj(is-12, it-11)
+xsubj(tool-16, it-11)
+advcl(requires-7, is-12)
+aux(tool-16, to-13)
+cop(tool-16, become-14)
+det(tool-16, a-15)
+xcomp(is-12, tool-16)
+aux(discern-18, to-17)
+infmod(tool-16, discern-18)
+dobj(discern-18, knowledge-20)
+

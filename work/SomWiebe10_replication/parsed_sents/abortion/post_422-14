@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (NNP Existence))
+          (VP (VBZ is) (RB not)
+            (ADJP (JJ fundamental))))
+        (, ,)
+        (CC and)
+        (S
+          (NP (NNS existents))
+          (VP (VBP do) (RB n't)
+            (VP (VB possess)
+              (NP (NNP Identity))
+              (, ,)
+              (ADVP (RB then)))))))
+    (WHNP (WP what) (RB exactly))
+    (SQ
+      (VP (VBZ is)
+        (ADJP (JJ true)
+          (CC or)
+          (JJ factual))))
+    (. ?)))
+
+mark(fundamental-5, If-1)
+nsubj(fundamental-5, Existence-2)
+cop(fundamental-5, is-3)
+neg(fundamental-5, not-4)
+dep(true-18, fundamental-5)
+nsubj(possess-11, existents-8)
+aux(possess-11, do-9)
+neg(possess-11, n't-10)
+conj_and(fundamental-5, possess-11)
+dep(true-18, possess-11)
+dobj(possess-11, Identity-12)
+advmod(possess-11, then-14)
+nsubj(true-18, what-15)
+nsubj(factual-20, what-15)
+advmod(what-15, exactly-16)
+cop(true-18, is-17)
+root(ROOT-0, true-18)
+conj_or(true-18, factual-20)
+

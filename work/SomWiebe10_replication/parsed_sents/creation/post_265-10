@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB However))
+      (IN since)
+      (S
+        (NP (NNP A)
+          (CC or)
+          (NNP B))
+        (VP (VBP are)
+          (ADVP (RB already))
+          (NP
+            (NP (NN part))
+            (PP (IN of)
+              (NP
+                (NP (DT a) (NN subset))
+                (PP (IN of)
+                  (NP (DT the) (NN population)))))))))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBP need)))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT another) (NN mutation) (NN event) (NN B))
+        (CC or)
+        (NP (NNP A)))
+      (, ,)
+      (S
+        (VP (TO to)
+          (VP
+            (ADVP (RB suddenly))
+            (VB expose)
+            (NP (DT a)
+              (ADJP (RB strongly) (JJ selective))
+              (NN advantage))))))
+    (. .)))
+
+advmod(part-8, However-1)
+dep(part-8, since-2)
+nsubj(part-8, A-3)
+conj_or(A-3, B-5)
+nsubj(part-8, B-5)
+cop(part-8, are-6)
+advmod(part-8, already-7)
+advcl(B-23, part-8)
+det(subset-11, a-10)
+prep_of(part-8, subset-11)
+det(population-14, the-13)
+prep_of(subset-11, population-14)
+dobj(need-18, all-16)
+nsubj(B-23, all-16)
+xsubj(expose-29, all-16)
+nsubj(need-18, they-17)
+rcmod(all-16, need-18)
+cop(B-23, is-19)
+det(B-23, another-20)
+nn(B-23, mutation-21)
+nn(B-23, event-22)
+root(ROOT-0, B-23)
+conj_or(B-23, A-25)
+aux(expose-29, to-27)
+advmod(expose-29, suddenly-28)
+xcomp(B-23, expose-29)
+det(advantage-33, a-30)
+advmod(selective-32, strongly-31)
+amod(advantage-33, selective-32)
+dobj(expose-29, advantage-33)
+

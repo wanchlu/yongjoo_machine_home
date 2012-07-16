@@ -1,0 +1,29 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP (VB give)
+      (NP (DT an) (VBN updated) (NN version))
+      (PP (TO to)
+        (NP
+          (NP (JJ modern) (NNS Jewish))
+          (CC or)
+          (NP (JJ Christian)
+            (CC or)
+            (JJ Islamic) (NNS scholars)))))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+dep(not-2, give-3)
+det(version-6, an-4)
+amod(version-6, updated-5)
+dobj(give-3, version-6)
+amod(Jewish-9, modern-8)
+prep_to(give-3, Jewish-9)
+amod(scholars-14, Christian-11)
+conj_or(Christian-11, Islamic-13)
+amod(scholars-14, Islamic-13)
+prep_to(give-3, scholars-14)
+conj_or(Jewish-9, scholars-14)
+

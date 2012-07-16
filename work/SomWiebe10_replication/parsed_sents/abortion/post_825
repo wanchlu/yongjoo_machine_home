@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Rape))
+      (VP (VBZ is)
+        (NP (JJ horrible) (NN action))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (NP (NN murder))
+        (VP (VBZ is)
+          (ADJP (JJR worse))))
+      (CC and)
+      (S
+        (NP (NN abortion))
+        (VP (VBZ is)
+          (NP (NN murder)))))
+    (. .)))
+
+nsubj(action-4, Rape-1)
+cop(action-4, is-2)
+amod(action-4, horrible-3)
+root(ROOT-0, action-4)
+nsubj(worse-9, murder-7)
+cop(worse-9, is-8)
+conj_but(action-4, worse-9)
+nsubj(murder-13, abortion-11)
+cop(murder-13, is-12)
+conj_but(action-4, murder-13)
+conj_and(worse-9, murder-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (PRP it))
+      (ADJP (JJ murder)))
+    (. ?)))
+
+advmod(murder-4, Why-1)
+cop(murder-4, is-2)
+nsubj(murder-4, it-3)
+root(ROOT-0, murder-4)
+

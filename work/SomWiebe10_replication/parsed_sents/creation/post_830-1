@@ -1,0 +1,40 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP (DT the) (NNPS Hebrews))
+        (VP
+          (VP (VBD had)
+            (NP (DT a) (CD seven) (NN day) (NN week)))
+          (CC and)
+          (VP (VBD wrote)
+            (NP (DT the) (NN text))
+            (S
+              (VP (TO to)
+                (VP (VB justify)
+                  (CC and)
+                  (VB sanctify)
+                  (NP (VBG existing) (NN practice)))))))))
+    (. ?)))
+
+dep(had-5, What-1)
+mark(had-5, if-2)
+det(Hebrews-4, the-3)
+nsubj(had-5, Hebrews-4)
+nsubj(wrote-11, Hebrews-4)
+root(ROOT-0, had-5)
+det(week-9, a-6)
+num(week-9, seven-7)
+nn(week-9, day-8)
+tmod(had-5, week-9)
+conj_and(had-5, wrote-11)
+det(text-13, the-12)
+dobj(wrote-11, text-13)
+aux(justify-15, to-14)
+xcomp(wrote-11, justify-15)
+xcomp(wrote-11, sanctify-17)
+conj_and(justify-15, sanctify-17)
+amod(practice-19, existing-18)
+dobj(justify-15, practice-19)
+

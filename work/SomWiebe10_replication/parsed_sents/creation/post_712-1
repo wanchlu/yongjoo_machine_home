@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (VP (TO to)
+      (VP
+        (ADVP (RB even))
+        (VB have)
+        (NP (DT a) (`` ``) (NN day) ('' ''))))
+    (. ?)))
+
+aux(have-3, to-1)
+advmod(have-3, even-2)
+root(ROOT-0, have-3)
+det(day-6, a-4)
+tmod(have-3, day-6)
+
+(ROOT
+  (S
+    (LST (LS 2) (-RRB- -RRB-))
+    (NP
+      (NP
+        (WHNP (WRB How) (RB long))
+        (S
+          (VP (VBD did)
+            (S
+              (VP (VBG creating)
+                (NP (DT the) (NN rest)))))))
+      (ADVP (RB of)
+        (NP (DT the) (NN universe))))
+    (VP (VBP take))
+    (. ?)))
+
+dep(take-12, 2-1)
+advmod(long-4, How-3)
+dep(did-5, long-4)
+nsubj(take-12, did-5)
+xcomp(did-5, creating-6)
+det(rest-8, the-7)
+dobj(creating-6, rest-8)
+advmod(did-5, of-9)
+det(universe-11, the-10)
+pobj(of-9, universe-11)
+root(ROOT-0, take-12)
+

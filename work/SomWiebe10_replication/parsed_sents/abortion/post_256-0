@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (RB Just) (IN because)
+      (S
+        (NP (DT a) (NN dog))
+        (VP (VBZ is) (RB not)
+          (NP (DT a) (`` ``) (NN person) ('' '')))))
+    (NP (PRP it))
+    (VP
+      (VP (VBZ does) (RB not)
+        (VP (VB mean)
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ does) (RB not))))))
+      (, ,)
+      (CC or)
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (NP (NNS rights)))))
+    (. .)))
+
+advmod(person-9, Just-1)
+dep(person-9, because-2)
+det(dog-4, a-3)
+nsubj(person-9, dog-4)
+cop(person-9, is-5)
+neg(person-9, not-6)
+det(person-9, a-7)
+advcl(mean-14, person-9)
+nsubj(mean-14, it-11)
+nsubj(have-22, it-11)
+aux(mean-14, does-12)
+neg(mean-14, not-13)
+root(ROOT-0, mean-14)
+nsubj(does-16, it-15)
+ccomp(mean-14, does-16)
+neg(does-16, not-17)
+aux(have-22, should-20)
+neg(have-22, not-21)
+conj_or(mean-14, have-22)
+dobj(have-22, rights-23)
+

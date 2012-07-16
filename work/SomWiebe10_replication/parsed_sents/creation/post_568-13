@@ -1,0 +1,61 @@
+(ROOT
+  (S ('' '')
+    (NP (NNP A))
+    (ADVP (RB much))
+    (NP
+      (ADJP (RBR more) (JJ accurate))
+      (NN description))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT a) (NN series))
+            (PP (IN of)
+              (NP (NN chemical) (NNS reactions))))
+          (VP (VBD took)
+            (NP (NN place))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNS oceans))
+                (PP (IN of)
+                  (NP
+                    (NP (DT the) (NN world))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBN led)
+                          (PP (TO to)
+                            (NP
+                              (NP (DT the) (NN creation))
+                              (PP (IN of)
+                                (NP
+                                  (ADJP (RB increasingly) (JJ complex))
+                                  (NN chemical) (NNS structures))))))))))))))))
+    (. .)))
+
+nsubj(is-7, A-2)
+advmod(is-7, much-3)
+advmod(accurate-5, more-4)
+amod(description-6, accurate-5)
+nsubj(is-7, description-6)
+root(ROOT-0, is-7)
+complm(took-14, that-8)
+det(series-10, a-9)
+nsubj(took-14, series-10)
+nn(reactions-13, chemical-12)
+prep_of(series-10, reactions-13)
+ccomp(is-7, took-14)
+dobj(took-14, place-15)
+det(oceans-18, the-17)
+prep_in(took-14, oceans-18)
+det(world-21, the-20)
+prep_of(oceans-18, world-21)
+nsubj(led-23, world-21)
+rcmod(world-21, led-23)
+det(creation-26, the-25)
+prep_to(led-23, creation-26)
+advmod(complex-29, increasingly-28)
+amod(structures-31, complex-29)
+nn(structures-31, chemical-30)
+prep_of(creation-26, structures-31)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NN Anyone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (ADVP (RB ever))
+              (VP (VBN become)
+                (S
+                  (ADJP (JJ pregnant))))))))
+      (PRN (-LRB- -LRB-)
+        (SBAR (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBP have))))
+        (-RRB- -RRB-)))
+    (VP (VBZ gets)
+      (ADJP (JJ excited)
+        (SBAR
+          (X (DT the)
+            (ADJP (JJ second)))
+          (S
+            (NP (PRP they))
+            (VP (VBP know)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (ADJP (JJ pregnant))))))))))
+    (. .)))
+
+nsubj(become-5, Anyone-1)
+nsubj(excited-13, Anyone-1)
+aux(become-5, has-3)
+advmod(become-5, ever-4)
+rcmod(Anyone-1, become-5)
+acomp(become-5, pregnant-6)
+mark(have-10, as-8)
+nsubj(have-10, I-9)
+dep(Anyone-1, have-10)
+dep(excited-13, gets-12)
+root(ROOT-0, excited-13)
+det(second-15, the-14)
+dep(know-17, second-15)
+nsubj(know-17, they-16)
+dep(excited-13, know-17)
+nsubj(pregnant-20, they-18)
+cop(pregnant-20, are-19)
+ccomp(know-17, pregnant-20)
+

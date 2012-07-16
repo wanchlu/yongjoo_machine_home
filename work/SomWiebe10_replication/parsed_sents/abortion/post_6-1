@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN DNA))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ makes)
+            (NP
+              (NP (DT a) (NN person))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)))))))))
+    (VP (VBZ is)
+      (ADVP (RB first))
+      (ADJP (JJ mixed)
+        (PP (IN at)
+          (NP
+            (NP (NN conception))
+            (PP (IN upon)
+              (NP (DT the) (JJ male) (NN sperm))))))
+      (S
+        (VP (VBG entering)
+          (NP (DT the) (JJ female) (NN egg)))))
+    (. .)))
+
+det(DNA-2, The-1)
+nsubj(makes-4, DNA-2)
+nsubj(mixed-12, DNA-2)
+rcmod(DNA-2, makes-4)
+det(person-6, a-5)
+dobj(makes-4, person-6)
+dobj(are-9, person-6)
+rel(are-9, who-7)
+nsubj(are-9, they-8)
+rcmod(person-6, are-9)
+cop(mixed-12, is-10)
+advmod(mixed-12, first-11)
+root(ROOT-0, mixed-12)
+prep_at(mixed-12, conception-14)
+det(sperm-18, the-16)
+amod(sperm-18, male-17)
+prep_upon(conception-14, sperm-18)
+xcomp(mixed-12, entering-19)
+det(egg-22, the-20)
+amod(egg-22, female-21)
+dobj(entering-19, egg-22)
+

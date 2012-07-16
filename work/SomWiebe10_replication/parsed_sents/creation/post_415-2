@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (NNS Experiments))
+    (VP (VBP indicate)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBD were)
+            (NP
+              (NP
+                (NP (JJ several) (NNS stages))
+                (PP (IN between)
+                  (NP
+                    (NP (DT the) (JJ original) (NN replicator) (NNS molecules))
+                    (CC and)
+                    (NP (DT the) (JJ first) (NN cell)))))
+              (, ,)
+              (NP
+                (NP (JJ proto-cellular) (NN life))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD was)
+                      (ADJP (JJ able)
+                        (S
+                          (VP (TO to)
+                            (VP (VB replicate))))))))))))))
+    (. .)))
+
+nsubj(indicate-2, Experiments-1)
+root(ROOT-0, indicate-2)
+complm(were-5, that-3)
+expl(were-5, there-4)
+ccomp(indicate-2, were-5)
+amod(stages-7, several-6)
+nsubj(were-5, stages-7)
+det(molecules-12, the-9)
+amod(molecules-12, original-10)
+nn(molecules-12, replicator-11)
+prep_between(stages-7, molecules-12)
+det(cell-16, the-14)
+amod(cell-16, first-15)
+prep_between(stages-7, cell-16)
+conj_and(molecules-12, cell-16)
+amod(life-19, proto-cellular-18)
+appos(stages-7, life-19)
+nsubj(able-22, life-19)
+cop(able-22, was-21)
+rcmod(life-19, able-22)
+aux(replicate-24, to-23)
+xcomp(able-22, replicate-24)
+

@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP (DT No) (PRP they))
+    (VP (VBP are) (RB n't))
+    (. .)))
+
+det(they-2, No-1)
+nsubj(are-3, they-2)
+root(ROOT-0, are-3)
+neg(are-3, n't-4)
+
+(ROOT
+  (S
+    (NP (DT A) (NN gamete))
+    (VP (MD will) (RB not)
+      (VP (VB develop)
+        (PP (IN into)
+          (NP
+            (NP (DT a) (VBG living) (JJ human) (NN being))
+            (PP (IN on)
+              (NP (PRP$ its) (JJ own)))))))
+    (. .)))
+
+det(gamete-2, A-1)
+nsubj(develop-5, gamete-2)
+aux(develop-5, will-3)
+neg(develop-5, not-4)
+root(ROOT-0, develop-5)
+det(being-10, a-7)
+amod(being-10, living-8)
+amod(being-10, human-9)
+prep_into(develop-5, being-10)
+poss(own-13, its-12)
+prep_on(being-10, own-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ needs)
+        (S
+          (VP (TO to)
+            (VP (VB meet)
+              (NP (DT another) (NN gamete)))))))
+    (CC and)
+    (S
+      (ADVP (RB only))
+      (NP (RB then))
+      (VP (MD can)
+        (NP (CD two) (NNS gametes))
+        (S
+          (VP (VB create)
+            (NP (NN life))))))
+    (. .)))
+
+nsubj(needs-2, It-1)
+xsubj(meet-4, It-1)
+root(ROOT-0, needs-2)
+aux(meet-4, to-3)
+xcomp(needs-2, meet-4)
+det(gamete-6, another-5)
+dobj(meet-4, gamete-6)
+advmod(can-10, only-8)
+nsubj(can-10, then-9)
+conj_and(needs-2, can-10)
+num(gametes-12, two-11)
+dobj(can-10, gametes-12)
+dep(can-10, create-13)
+dobj(create-13, life-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN sperm) (NN cell))
+      (PP (IN on)
+        (NP (PRP$ its) (JJ own))))
+    (VP (MD will)
+      (VP (VB die)
+        (SBAR (IN unless)
+          (S
+            (VP (VBD preserved)
+              (PP (IN in)
+                (NP (DT some) (NN way)))
+              (, ,)
+              (PP (IN like)
+                (ADJP (JJ frozen))))))))
+    (. .)))
+
+det(cell-3, A-1)
+nn(cell-3, sperm-2)
+nsubj(die-8, cell-3)
+poss(own-6, its-5)
+prep_on(cell-3, own-6)
+aux(die-8, will-7)
+root(ROOT-0, die-8)
+mark(preserved-10, unless-9)
+advcl(die-8, preserved-10)
+det(way-13, some-12)
+prep_in(preserved-10, way-13)
+prep_like(preserved-10, frozen-16)
+

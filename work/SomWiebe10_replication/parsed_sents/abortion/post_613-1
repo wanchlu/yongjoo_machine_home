@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (NNP Human) (NN blood))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN proved)
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB be)
+                  (ADJP (JJ human)))
+                (, ,)
+                (CC and)
+                (VP
+                  (NP (JJ canine) (NN blood))
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (NP (JJ non-human) (NNS scientifically))))))))))))
+    (. .)))
+
+nn(blood-2, Human-1)
+nsubjpass(proved-5, blood-2)
+aux(proved-5, can-3)
+auxpass(proved-5, be-4)
+root(ROOT-0, proved-5)
+aux(human-8, to-6)
+cop(human-8, be-7)
+xcomp(proved-5, human-8)
+amod(blood-12, canine-11)
+xcomp(proved-5, blood-12)
+conj_and(human-8, blood-12)
+aux(scientifically-16, to-13)
+cop(scientifically-16, be-14)
+amod(scientifically-16, non-human-15)
+xcomp(blood-12, scientifically-16)
+

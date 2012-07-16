@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (ADVP (RB currently))
+    (NP (NN science))
+    (VP (VBZ feels)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (VP
+              (VP (VBG accelerating))
+              (: ...)
+              (CC and)
+              (VP (VBG considering)
+                (NP (DT the) (`` ``) (JJ 13.7) (CD billion) (NNS years) ('' ''))
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's)
+                      (VP (VBN been)
+                        (VP (VBG doing)
+                          (ADVP (RB so))))))))))
+          (. .))))
+    (. .)))
+
+advmod(feels-3, currently-1)
+nsubj(feels-3, science-2)
+root(ROOT-0, feels-3)
+nsubj(accelerating-6, it-4)
+nsubj(considering-9, it-4)
+aux(accelerating-6, 's-5)
+ccomp(feels-3, accelerating-6)
+ccomp(feels-3, considering-9)
+conj_and(accelerating-6, considering-9)
+det(years-14, the-10)
+amod(years-14, 13.7-12)
+num(years-14, billion-13)
+tmod(considering-9, years-14)
+nsubjpass(doing-19, it-16)
+auxpass(doing-19, 's-17)
+aux(doing-19, been-18)
+dep(considering-9, doing-19)
+advmod(doing-19, so-20)
+

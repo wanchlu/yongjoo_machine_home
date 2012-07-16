@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (NNP Senator) (NNP Obama))
+    (VP (VBZ has)
+      (VP (VBN promised)
+        (S
+          (VP (TO to)
+            (VP (VB sign)
+              (NP
+                (NP (DT the) (NN Freedom))
+                (PP (IN of)
+                  (NP (NNP Choice) (NNP Act))))
+              (SBAR (IN if)
+                (S
+                  (VP (VBD elected)
+                    (NP (NNP President))))))))))
+    (. .)))
+
+nn(Obama-2, Senator-1)
+nsubj(promised-4, Obama-2)
+xsubj(sign-6, Obama-2)
+aux(promised-4, has-3)
+root(ROOT-0, promised-4)
+aux(sign-6, to-5)
+xcomp(promised-4, sign-6)
+det(Freedom-8, the-7)
+dobj(sign-6, Freedom-8)
+nn(Act-11, Choice-10)
+prep_of(Freedom-8, Act-11)
+mark(elected-13, if-12)
+advcl(sign-6, elected-13)
+dobj(elected-13, President-14)
+

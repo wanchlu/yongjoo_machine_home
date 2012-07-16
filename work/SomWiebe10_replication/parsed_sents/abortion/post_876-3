@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB say)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB live)))))))))))
+    (, ,)
+    (NP (NN anyone))
+    (VP (MD can)
+      (VP (VB kill)
+        (NP (PRP you))))
+    (. ?)))
+
+mark(say-5, If-1)
+nsubj(say-5, you-2)
+aux(say-5, do-3)
+neg(say-5, n't-4)
+advcl(kill-13, say-5)
+nsubj(want-7, you-6)
+xsubj(live-9, you-6)
+ccomp(say-5, want-7)
+aux(live-9, to-8)
+xcomp(want-7, live-9)
+nsubj(kill-13, anyone-11)
+aux(kill-13, can-12)
+root(ROOT-0, kill-13)
+dobj(kill-13, you-14)
+

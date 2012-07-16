@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN someone))
+        (VP (VBZ wants)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP
+                  (NP (NN something))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (MD would)
+                        (VP (VB be)
+                          (VP (VBN disapproved)
+                            (PP (IN by)
+                              (NP (JJ many)))))))))))))))
+    (, ,)
+    (ADVP (RB well))
+    (VP (VBZ thats)
+      (NP (PRP$ their) (NN decision)))
+    (. .)))
+
+mark(wants-3, If-1)
+nsubj(wants-3, someone-2)
+xsubj(do-5, someone-2)
+advcl(thats-15, wants-3)
+aux(do-5, to-4)
+xcomp(wants-3, do-5)
+dobj(do-5, something-6)
+nsubjpass(disapproved-10, something-6)
+aux(disapproved-10, would-8)
+auxpass(disapproved-10, be-9)
+rcmod(something-6, disapproved-10)
+agent(disapproved-10, many-12)
+advmod(thats-15, well-14)
+root(ROOT-0, thats-15)
+poss(decision-17, their-16)
+dobj(thats-15, decision-17)
+

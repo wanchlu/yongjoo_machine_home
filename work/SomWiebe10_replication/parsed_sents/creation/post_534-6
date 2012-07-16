@@ -1,0 +1,38 @@
+(ROOT
+  (FRAG
+    (S
+      (VP (TO To)
+        (VP (VB quote)
+          (NP (NNP Einstein))
+          (SBAR (RB as) (IN if)
+            (S
+              (NP (PRP it))
+              (VP (VBP add)
+                (SBAR
+                  (S
+                    (NP
+                      (NP (NN relevance)
+                        (CC and)
+                        (NN credibility))
+                      (PP (TO to)
+                        (NP (NNP Joes) (NN argument))))
+                    (VP (VBZ is)
+                      (ADVP (RB just))
+                      (NP (`` ``) (NN mining) ('' ')))))))))))))
+
+aux(quote-2, To-1)
+root(ROOT-0, quote-2)
+dobj(quote-2, Einstein-3)
+advmod(add-7, as-4)
+dep(add-7, if-5)
+nsubj(add-7, it-6)
+dep(quote-2, add-7)
+nsubj(mining-17, relevance-8)
+conj_and(relevance-8, credibility-10)
+nsubj(mining-17, credibility-10)
+nn(argument-13, Joes-12)
+prep_to(relevance-8, argument-13)
+cop(mining-17, is-14)
+advmod(mining-17, just-15)
+ccomp(add-7, mining-17)
+

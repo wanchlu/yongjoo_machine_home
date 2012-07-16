@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (NNP John) (NNP Donne))
+        (VP (VBD said))))
+    (, ,)
+    (SBAR (IN if) (RB even)
+      (S
+        (NP (DT a) (NN simpleton))
+        (VP (VBZ is)
+          (VP (VBN killed)))))
+    (NP (PRP I))
+    (VP (VBP am)
+      (NP (DT the) (JJR lesser)))
+    (. .)))
+
+mark(said-4, As-1)
+nn(Donne-3, John-2)
+nsubj(said-4, Donne-3)
+advcl(lesser-15, said-4)
+mark(killed-11, if-6)
+advmod(killed-11, even-7)
+det(simpleton-9, a-8)
+nsubjpass(killed-11, simpleton-9)
+auxpass(killed-11, is-10)
+dep(lesser-15, killed-11)
+nsubj(lesser-15, I-12)
+cop(lesser-15, am-13)
+det(lesser-15, the-14)
+root(ROOT-0, lesser-15)
+

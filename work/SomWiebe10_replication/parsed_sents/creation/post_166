@@ -1,0 +1,215 @@
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (NNP Wikipedia)))
+    (, ,)
+    (NP (DT the) (NNP Scientific))
+    (VP (VBD Method))
+    (. !)))
+
+prep_from(Method-6, Wikipedia-2)
+det(Scientific-5, the-4)
+nsubj(Method-6, Scientific-5)
+root(ROOT-0, Method-6)
+
+(ROOT
+  (FRAG
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, 1-1)
+
+(ROOT
+  (S
+    (VP (VB Define)
+      (NP (DT the) (NN question2)))
+    (. .)))
+
+root(ROOT-0, Define-1)
+det(question2-3, the-2)
+dobj(Define-1, question2-3)
+
+(ROOT
+  (NP
+    (NP (NNP Gather) (NN information)
+      (CC and)
+      (NNS resources))
+    (NP (CD 3))
+    (. .)))
+
+nn(information-2, Gather-1)
+root(ROOT-0, information-2)
+conj_and(information-2, resources-4)
+dep(information-2, 3-5)
+
+(ROOT
+  (S
+    (NP (NN Form))
+    (VP (VBZ hypothesis)
+      (NP (CD 4)))
+    (. .)))
+
+nsubj(hypothesis-2, Form-1)
+root(ROOT-0, hypothesis-2)
+dobj(hypothesis-2, 4-3)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Perform)
+        (NP (NN experiment)))
+      (CC and)
+      (VP (VB collect)
+        (NP (CD data5))))
+    (. .)))
+
+root(ROOT-0, Perform-1)
+dobj(Perform-1, experiment-2)
+conj_and(Perform-1, collect-4)
+dobj(collect-4, data5-5)
+
+(ROOT
+  (S
+    (VP (VB Analyze)
+      (NP (CD data6)))
+    (. .)))
+
+root(ROOT-0, Analyze-1)
+dobj(Analyze-1, data6-2)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Interpret)
+        (NP (NNS data)))
+      (CC and)
+      (VP (VB draw)
+        (NP
+          (NP (NNS conclusions))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP serve)
+                (PP (IN as)
+                  (NP
+                    (NP (DT a) (JJ starting) (NN point))
+                    (PP (IN for)
+                      (NP (JJ new) (NNS hypothesis7)))))))))))
+    (. .)))
+
+root(ROOT-0, Interpret-1)
+dobj(Interpret-1, data-2)
+conj_and(Interpret-1, draw-4)
+dobj(draw-4, conclusions-5)
+nsubj(serve-7, conclusions-5)
+rcmod(conclusions-5, serve-7)
+det(point-11, a-9)
+amod(point-11, starting-10)
+prep_as(serve-7, point-11)
+amod(hypothesis7-14, new-13)
+prep_for(point-11, hypothesis7-14)
+
+(ROOT
+  (S
+    (VP (VB Publish)
+      (NP (CD results8)))
+    (. .)))
+
+root(ROOT-0, Publish-1)
+dobj(Publish-1, results8-2)
+
+(ROOT
+  (S
+    (NP (NNP Retest))
+    (RB So)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (VP (VBG telling)
+        (NP (PRP me))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT a) (NN procedure))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ starts)
+                    (SBAR (IN with)
+                      (S
+                        (NP
+                          (NP (CD 3))
+                          (, ,)
+                          (NP
+                            (NP (NNS moves))
+                            (PP (TO to)
+                              (NP (CD 2))))
+                          (, ,))
+                        (VP (VBZ pretends)
+                          (S
+                            (VP (TO to)
+                              (VP (VB have)
+                                (VP (VBN done)
+                                  (NP
+                                    (NP (CD 4))
+                                    (, ,)
+                                    (NP (NNS combines) (CD 5)
+                                      (CC and)
+                                      (CD 6))
+                                    (, ,)
+                                    (CC and)
+                                    (ADVP (RB never))
+                                    (RB ever)
+                                    (NP
+                                      (NP (NNS touches))
+                                      (PP (IN on)
+                                        (NP
+                                          (QP (CD 6)
+                                            (CC or)
+                                            (CD 8))
+                                          (QP (CC or)
+                                            (CD 1)))))))))))))))))
+            (VP (VBZ is) (`` ``)
+              (ADJP (JJ scientific)))))))
+    (. ?)))
+
+nsubj(telling-5, Retest-1)
+advmod(telling-5, So-2)
+nsubj(telling-5, you-3)
+aux(telling-5, 're-4)
+root(ROOT-0, telling-5)
+dobj(telling-5, me-6)
+complm(scientific-42, that-7)
+det(procedure-9, a-8)
+nsubj(starts-11, procedure-9)
+nsubj(scientific-42, procedure-9)
+rcmod(procedure-9, starts-11)
+mark(pretends-19, with-12)
+nsubj(pretends-19, 3-13)
+xsubj(done-22, 3-13)
+appos(3-13, moves-15)
+prep_to(moves-15, 2-17)
+advcl(starts-11, pretends-19)
+aux(done-22, to-20)
+aux(done-22, have-21)
+xcomp(pretends-19, done-22)
+dobj(done-22, 4-23)
+dobj(done-22, combines-25)
+conj_and(4-23, combines-25)
+num(combines-25, 5-26)
+conj_and(4-23, 6-28)
+conj_and(combines-25, 6-28)
+dobj(done-22, never-31)
+advmod(4-23, never-31)
+conj_and(4-23, never-31)
+dobj(done-22, ever-32)
+advmod(4-23, ever-32)
+conj_and(4-23, ever-32)
+dep(4-23, touches-33)
+num(1-39, 6-35)
+conj_or(6-35, 8-37)
+num(1-39, 8-37)
+cc(1-39, or-38)
+prep_on(touches-33, 1-39)
+cop(scientific-42, is-40)
+ccomp(telling-5, scientific-42)
+

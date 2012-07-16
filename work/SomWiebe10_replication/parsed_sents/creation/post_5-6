@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NN Evidence))
+    (VP (VBZ is)
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB test)
+              (NP (DT a) (NNS hypothesis))
+              (PP (IN with)
+                (NP
+                  (NP (DT the) (NN goal))
+                  (PP (IN of)
+                    (S
+                      (VP (VBG demonstrating)
+                        (SBAR (IN that)
+                          (S
+                            (NP (PRP it))
+                            (VP (VBZ is)
+                              (ADJP
+                                (ADJP (RB likely) (JJ true))
+                                (CC or)
+                                (ADJP (RB unlikely) (JJ true))))))))))))))))
+    (. .)))
+
+nsubjpass(used-3, Evidence-1)
+xsubj(test-5, Evidence-1)
+auxpass(used-3, is-2)
+root(ROOT-0, used-3)
+aux(test-5, to-4)
+xcomp(used-3, test-5)
+det(hypothesis-7, a-6)
+dobj(test-5, hypothesis-7)
+det(goal-10, the-9)
+prep_with(test-5, goal-10)
+prepc_of(goal-10, demonstrating-12)
+complm(true-17, that-13)
+nsubj(true-17, it-14)
+nsubj(true-20, it-14)
+cop(true-17, is-15)
+advmod(true-17, likely-16)
+ccomp(demonstrating-12, true-17)
+advmod(true-20, unlikely-19)
+ccomp(demonstrating-12, true-20)
+conj_or(true-17, true-20)
+

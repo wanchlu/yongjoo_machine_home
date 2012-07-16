@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (VBN deceived)
+        (SBAR (IN because)
+          (S
+            (S
+              (NP (PRP I))
+              (VP (VBP do) (RB n't)
+                (VP (VB believe)
+                  (NP
+                    (NP (DT the)
+                      (ADJP (CD 91) (NN %))
+                      (NN similarity))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NNP ACLU) (POS 's))
+                        (NN submission)))))))
+            (CC and)
+            (S
+              (NP
+                (NP (DT the) (NNP Judge) (POS 's))
+                (NN analysis))
+              (VP (VBD was)
+                (NP (DT a)
+                  (ADJP (JJ lucky)
+                    (CC or)
+                    (JJ freak))
+                  (NN coincidence) (NN ?!!))))))))))
+
+nsubjpass(deceived-3, I-1)
+auxpass(deceived-3, 'm-2)
+root(ROOT-0, deceived-3)
+mark(believe-8, because-4)
+nsubj(believe-8, I-5)
+aux(believe-8, do-6)
+neg(believe-8, n't-7)
+dep(deceived-3, believe-8)
+det(similarity-12, the-9)
+number(%-11, 91-10)
+amod(similarity-12, %-11)
+dobj(believe-8, similarity-12)
+det(ACLU-15, the-14)
+poss(submission-17, ACLU-15)
+prep_in(similarity-12, submission-17)
+det(Judge-20, the-19)
+poss(analysis-22, Judge-20)
+nsubj(?!!-29, analysis-22)
+cop(?!!-29, was-23)
+det(?!!-29, a-24)
+amod(?!!-29, lucky-25)
+conj_or(lucky-25, freak-27)
+amod(?!!-29, freak-27)
+nn(?!!-29, coincidence-28)
+dep(deceived-3, ?!!-29)
+conj_and(believe-8, ?!!-29)
+

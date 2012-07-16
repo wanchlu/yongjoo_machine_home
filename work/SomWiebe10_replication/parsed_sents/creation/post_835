@@ -1,0 +1,64 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP we))
+      (ADVP (RB just))
+      (VP (VB stop)))
+    (. ?)))
+
+advmod(stop-5, Why-1)
+aux(stop-5, should-2)
+nsubj(stop-5, we-3)
+advmod(stop-5, just-4)
+root(ROOT-0, stop-5)
+
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP (VB keep)
+      (S
+        (VP (VBG trying)
+          (S
+            (VP (TO to)
+              (VP (VB understand)
+                (NP (DT the) (NN universe))))))))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+dep(not-2, keep-3)
+xcomp(keep-3, trying-4)
+aux(understand-6, to-5)
+xcomp(trying-4, understand-6)
+det(universe-8, the-7)
+dobj(understand-6, universe-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD could)
+      (ADVP (RB never))
+      (VP (VB imagine)
+        (S
+          (VP (VBG being)
+            (ADJP (VBN satisfied)
+              (PP (IN with)
+                (NP
+                  (NP (DT a) (`` ``) (NNP God))
+                  (VP (VBD did)
+                    (NP (PRP it) ('' ''))))))))))
+    (. .)))
+
+nsubj(imagine-4, I-1)
+aux(imagine-4, could-2)
+neg(imagine-4, never-3)
+root(ROOT-0, imagine-4)
+auxpass(satisfied-6, being-5)
+xcomp(imagine-4, satisfied-6)
+det(God-10, a-8)
+prep_with(satisfied-6, God-10)
+partmod(God-10, did-11)
+dobj(did-11, it-12)
+

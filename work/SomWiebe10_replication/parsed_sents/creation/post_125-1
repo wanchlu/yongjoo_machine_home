@@ -1,0 +1,32 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (PRP It))
+      (VP (VBZ does) (RB not)
+        (VP (VB acquire)
+          (NP (CD one)))))
+    (: ...)
+    (S
+      (NP (PRP it))
+      (ADVP (RB already))
+      (VP (VBZ has)
+        (NP
+          (NP (CD one))
+          (PP (IN from)
+            (NP
+              (NP (PRP it) (POS 's))
+              (NNS ancestors))))))
+    (. .)))
+
+nsubj(acquire-5, It-2)
+aux(acquire-5, does-3)
+neg(acquire-5, not-4)
+root(ROOT-0, acquire-5)
+dobj(acquire-5, one-6)
+nsubj(has-10, it-8)
+advmod(has-10, already-9)
+parataxis(acquire-5, has-10)
+dobj(has-10, one-11)
+poss(ancestors-15, it-13)
+prep_from(one-11, ancestors-15)
+

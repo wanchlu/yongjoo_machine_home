@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Rapes))
+      (VP (VBP account)
+        (PP (IN for)
+          (NP
+            (NP
+              (QP (JJR less) (IN than) (CD 1))
+              (NN %))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NNS abortions))
+                (NP (DT each) (NN year))))))))
+    (, ,) (IN so)
+    (S
+      (PP (IN in)
+        (PP (IN over)
+          (NP
+            (NP (CD 99) (NN %))
+            (PP (IN of)
+              (NP (DT the) (NNS abortions))))))
+      (NP (PRP you))
+      (VP (VBP are) (RB not)
+        (VP (VBG dealing)
+          (PP (IN with)
+            (NP (DT those) (JJ horrendous) (NNS circumstances))))))
+    (. .)))
+
+nsubj(account-2, Rapes-1)
+root(ROOT-0, account-2)
+mwe(than-5, less-4)
+quantmod(1-6, than-5)
+num(%-7, 1-6)
+prep_for(account-2, %-7)
+det(abortions-10, the-9)
+prep_of(%-7, abortions-10)
+det(year-12, each-11)
+dep(abortions-10, year-12)
+dep(account-2, so-14)
+prep(dealing-25, in-15)
+pcomp(in-15, over-16)
+num(%-18, 99-17)
+prep_over(in-15, %-18)
+det(abortions-21, the-20)
+prep_of(%-18, abortions-21)
+nsubj(dealing-25, you-22)
+aux(dealing-25, are-23)
+neg(dealing-25, not-24)
+ccomp(account-2, dealing-25)
+det(circumstances-29, those-27)
+amod(circumstances-29, horrendous-28)
+prep_with(dealing-25, circumstances-29)
+

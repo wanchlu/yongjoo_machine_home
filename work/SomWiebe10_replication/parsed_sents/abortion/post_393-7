@@ -1,0 +1,35 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Now)
+      (PP (IN for)
+        (NP (DT the) (NN rape) (NNS victims))))
+    (: :)
+    (SBAR (IN as)
+      (S
+        (VP (VBD told)
+          (NP (DT these) (NNS abortions) (NN count))
+          (PP (IN for)
+            (NP
+              (NP
+                (QP (JJR less) (IN than) (CD 1))
+                (NN %))
+              (PP (IN of)
+                (NP (DT the) (NN total))))))))
+    (. .)))
+
+root(ROOT-0, Now-1)
+det(victims-5, the-3)
+nn(victims-5, rape-4)
+prep_for(Now-1, victims-5)
+mark(told-8, as-7)
+dep(Now-1, told-8)
+det(count-11, these-9)
+nn(count-11, abortions-10)
+dobj(told-8, count-11)
+mwe(than-14, less-13)
+quantmod(1-15, than-14)
+num(%-16, 1-15)
+prep_for(told-8, %-16)
+det(total-19, the-18)
+prep_of(%-16, total-19)
+

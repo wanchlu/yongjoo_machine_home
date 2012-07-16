@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (PP (IN for)
+      (NP (NN example)))
+    (, ,)
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN person) (POS 's))
+          (NNS cells))))
+    (VP (VBP are)
+      (VP (VBN killed)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT the) (NN person))
+            (VP (VBZ is)
+              (VP (VBG doing)
+                (NP (DT an) (NN X-ray) (NN test))))))))
+    (. .)))
+
+prep_for(killed-11, example-2)
+nsubjpass(killed-11, some-4)
+det(person-7, the-6)
+poss(cells-9, person-7)
+prep_of(some-4, cells-9)
+auxpass(killed-11, are-10)
+root(ROOT-0, killed-11)
+advmod(doing-16, when-12)
+det(person-14, the-13)
+nsubj(doing-16, person-14)
+aux(doing-16, is-15)
+advcl(killed-11, doing-16)
+det(test-19, an-17)
+nn(test-19, X-ray-18)
+dobj(doing-16, test-19)
+

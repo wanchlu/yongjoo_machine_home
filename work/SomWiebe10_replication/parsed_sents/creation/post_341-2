@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB Even) (JJR more))
+      (ADJP (JJ remarkable)))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (DT the) (NN ocean))
+          (VP (MD would)
+            (VP
+              (VP (VB provide)
+                (PP (IN for)
+                  (NP
+                    (NP (JJ important) (NNS sources))
+                    (PP (IN of)
+                      (NP
+                        (NP (NN protein))
+                        (PRN (-LRB- -LRB-)
+                          (NP (NN fish) (NN etc))
+                          (-RRB- -RRB-)))))))
+              (CC and)
+              (VP (VB enable)
+                (NP (NN trade))
+                (PP (IN with)
+                  (NP (JJ other) (NNS tribes)))))))))
+    (. .)))
+
+advmod(more-2, Even-1)
+nsubj(is-4, more-2)
+amod(more-2, remarkable-3)
+root(ROOT-0, is-4)
+advmod(provide-9, how-5)
+det(ocean-7, the-6)
+nsubj(provide-9, ocean-7)
+nsubj(enable-20, ocean-7)
+aux(provide-9, would-8)
+ccomp(is-4, provide-9)
+amod(sources-12, important-11)
+prep_for(provide-9, sources-12)
+prep_of(sources-12, protein-14)
+nn(etc-17, fish-16)
+appos(protein-14, etc-17)
+ccomp(is-4, enable-20)
+conj_and(provide-9, enable-20)
+dobj(enable-20, trade-21)
+amod(tribes-24, other-23)
+prep_with(enable-20, tribes-24)
+

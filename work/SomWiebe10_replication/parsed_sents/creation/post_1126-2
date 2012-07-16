@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ causes)
+        (S
+          (NP (NNS species))
+          (VP (TO to)
+            (VP (VB change))))))
+    (, ,)
+    (CC but)
+    (S
+      (S
+        (UCP
+          (PP (RB not) (RB all) (IN at)
+            (ADVP (RB once)))
+          (, ,)
+          (CC and)
+          (SBAR (IN because)
+            (S
+              (NP (DT the) (NNS others))
+              (VP (VBP are) (RB not)
+                (ADJP (RB completely) (JJ unfit)
+                  (PP (IN for)
+                    (NP (NN survival)))))))))
+      (NP (PRP they))
+      (VP (VBP survive)
+        (ADVP (RB as) (RB well))))
+    (. .)))
+
+nsubj(causes-2, This-1)
+root(ROOT-0, causes-2)
+nsubj(change-5, species-3)
+aux(change-5, to-4)
+xcomp(causes-2, change-5)
+neg(at-10, not-8)
+advmod(at-10, all-9)
+dep(survive-24, at-10)
+pcomp(at-10, once-11)
+mark(unfit-20, because-14)
+det(others-16, the-15)
+nsubj(unfit-20, others-16)
+cop(unfit-20, are-17)
+neg(unfit-20, not-18)
+advmod(unfit-20, completely-19)
+conj_and(at-10, unfit-20)
+dep(survive-24, unfit-20)
+prep_for(unfit-20, survival-22)
+nsubj(survive-24, they-23)
+conj_but(causes-2, survive-24)
+advmod(well-26, as-25)
+mwe(well-26, as-25)
+advmod(survive-24, well-26)
+

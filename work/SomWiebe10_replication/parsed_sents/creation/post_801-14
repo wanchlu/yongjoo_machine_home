@@ -1,0 +1,105 @@
+(ROOT
+  (S ('' '')
+    (ADVP (RB Yes))
+    (, ,)
+    (PP (IN because)
+      (NP
+        (NP
+          (NP (DT the) (NN evidence))
+          (PP (IN for)
+            (NP (NN evolution))))
+        (, ,)
+        (CC and)
+        (NP (DT a)
+          (ADJP
+            (NP
+              (QP (CD 4.5) (CD billion))
+              (NN year))
+            (JJ old))
+          (NN earth))))
+    (, ,)
+    (VP (VBZ is)
+      (ADJP (RB far) (JJR stronger))
+      (ADVP (RB then)
+        (NP (DT the) (NN evidence)))
+      (PP (IN for)
+        (NP (NN creationism))))
+    (. .)))
+
+advmod(stronger-20, Yes-2)
+det(evidence-6, the-5)
+prep_because(stronger-20, evidence-6)
+prep_for(evidence-6, evolution-8)
+det(earth-16, a-11)
+number(billion-13, 4.5-12)
+num(year-14, billion-13)
+npadvmod(old-15, year-14)
+amod(earth-16, old-15)
+conj_and(evidence-6, earth-16)
+prep_because(stronger-20, earth-16)
+cop(stronger-20, is-18)
+advmod(stronger-20, far-19)
+root(ROOT-0, stronger-20)
+advmod(stronger-20, then-21)
+det(evidence-23, the-22)
+pobj(then-21, evidence-23)
+prep_for(stronger-20, creationism-25)
+
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB be)
+          (VP (VBN seen)
+            (S
+              (ADJP (RB as) (JJ credible)))))))
+    (NP (DT a) (NN creationist))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB demonstrate)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP$ their) (NN theory))
+                  (VP (VBD was)
+                    (ADJP
+                      (ADJP (JJR better))
+                      (PP (IN at)
+                        (S
+                          (VP (VBG describing)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (PRP we))
+                                (VP (VBP observe)
+                                  (NP (RB then) (DT the) (JJ current) (NNS theories)))))))))))))))))
+    (. .)))
+
+aux(seen-3, To-1)
+auxpass(seen-3, be-2)
+dep(have-9, seen-3)
+advmod(credible-5, as-4)
+acomp(seen-3, credible-5)
+det(creationist-7, a-6)
+nsubj(have-9, creationist-7)
+xsubj(demonstrate-11, creationist-7)
+aux(have-9, would-8)
+root(ROOT-0, have-9)
+aux(demonstrate-11, to-10)
+xcomp(have-9, demonstrate-11)
+advmod(better-16, how-12)
+poss(theory-14, their-13)
+nsubj(better-16, theory-14)
+cop(better-16, was-15)
+ccomp(demonstrate-11, better-16)
+prepc_at(better-16, describing-18)
+dobj(observe-21, what-19)
+nsubj(observe-21, we-20)
+ccomp(describing-18, observe-21)
+advmod(theories-25, then-22)
+det(theories-25, the-23)
+amod(theories-25, current-24)
+dobj(observe-21, theories-25)
+

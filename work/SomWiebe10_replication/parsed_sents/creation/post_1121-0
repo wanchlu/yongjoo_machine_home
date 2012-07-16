@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (SBAR
+          (S
+            (NP (NNP Evolution))
+            (VP (VBZ is)
+              (ADJP (JJ correct)))))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ 's)
+              (ADVP (RB up)
+                (PP (IN with)
+                  (NP
+                    (NP (DT this) (NN lack))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG understanding)
+                          (SBAR (IN that)
+                            (S
+                              (NP (NN evolution))
+                              (VP (VBZ is)
+                                (NP (DT a) (NN sloooooooow) (NN process))))))))))))))))
+    (. ?)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+nsubj(correct-5, Evolution-3)
+cop(correct-5, is-4)
+dep(believe-2, correct-5)
+nsubj('s-9, what-8)
+dep(believe-2, 's-9)
+conj_and(correct-5, 's-9)
+advmod('s-9, up-10)
+det(lack-13, this-12)
+prep_with(up-10, lack-13)
+prepc_of(lack-13, understanding-15)
+complm(process-21, that-16)
+nsubj(process-21, evolution-17)
+cop(process-21, is-18)
+det(process-21, a-19)
+nn(process-21, sloooooooow-20)
+ccomp(understanding-15, process-21)
+

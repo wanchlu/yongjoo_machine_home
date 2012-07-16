@@ -1,0 +1,83 @@
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJR more))
+      (SBAR (IN than)
+        (S
+          (NP (PRP we))
+          (VP (VBP do) (RB n't)
+            (VP (VB understand) ('' ''))))))
+    (VP
+      (ADVP (RB thus))
+      (VBN designed))
+    (. .)))
+
+cc(more-4, But-1)
+nsubj(more-4, it-2)
+cop(more-4, 's-3)
+root(ROOT-0, more-4)
+mark(understand-9, than-5)
+nsubj(understand-9, we-6)
+aux(understand-9, do-7)
+neg(understand-9, n't-8)
+advcl(more-4, understand-9)
+advmod(designed-12, thus-11)
+dep(more-4, designed-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP (VBN specified) (NN complexity)))
+    (. .)))
+
+nsubj(complexity-4, It-1)
+dep(complexity-4, 's-2)
+amod(complexity-4, specified-3)
+root(ROOT-0, complexity-4)
+
+(ROOT
+  (S
+    (VP (VB Wherever)
+      (S
+        (NP (PRP we))
+        (VP (VB find)
+          (NP
+            (NP (VBN specified) (NN complexity))
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP find)
+                  (NP (DT a) (NN designer)))))))))
+    (. .)))
+
+root(ROOT-0, Wherever-1)
+nsubj(find-3, we-2)
+ccomp(Wherever-1, find-3)
+amod(complexity-5, specified-4)
+dobj(find-3, complexity-5)
+nsubj(find-7, we-6)
+rcmod(complexity-5, find-7)
+det(designer-9, a-8)
+dobj(find-7, designer-9)
+
+(ROOT
+  (S (CC But)
+    (PP (IN for)
+      (NP (DT the) (JJ theological) (NNS implications)))
+    (NP (DT this))
+    (VP (MD would)
+      (VP (VB be)
+        (NP (NN non-controversal))))
+    (. .)))
+
+cc(non-controversal-9, But-1)
+det(implications-5, the-3)
+amod(implications-5, theological-4)
+prep_for(non-controversal-9, implications-5)
+nsubj(non-controversal-9, this-6)
+aux(non-controversal-9, would-7)
+cop(non-controversal-9, be-8)
+root(ROOT-0, non-controversal-9)
+

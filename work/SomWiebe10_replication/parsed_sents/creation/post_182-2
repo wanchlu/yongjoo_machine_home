@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (PP (IN Over)
+      (NP
+        (NP (DT the) (NN span))
+        (PP (IN of)
+          (NP (CD 20) (NNS years)))))
+    (NP (NNP Lenski))
+    (VP (VBD attempted)
+      (S
+        (VP (TO to)
+          (VP (VB evolve)
+            (NP
+              (NP (CD 40,000) (NNS generations))
+              (PP (IN of)
+                (NP
+                  (NP (NN e.) (NNS coli))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT the) (NN equivalent))
+                          (PP (IN of)
+                            (NP
+                              (NP
+                                (QP (CD 1.2) (CD million))
+                                (NNS years))
+                              (PP (IN for)
+                                (NP (NNS humans)))
+                              (PRN (-LRB- -LRB-)
+                                (S
+                                  (NP (NN e.) (NNS coli))
+                                  (VP (MD can)
+                                    (VP (VB create)
+                                      (NP
+                                        (NP (CD 6.64) (NNS generations))
+                                        (PP (IN per)
+                                          (NP
+                                            (NP (NN day))
+                                            (, ,)
+                                            (NP
+                                              (NP (DT the) (NN equivalent))
+                                              (PP (IN of)
+                                                (NP (JJ 166) (NNS years)))))))
+                                      (PP (IN for)
+                                        (NP (NNS humans))))))
+                                (-RRB- -RRB-)))))))))))))))
+    (. .)))
+
+det(span-3, the-2)
+prep_over(attempted-8, span-3)
+num(years-6, 20-5)
+prep_of(span-3, years-6)
+nsubj(attempted-8, Lenski-7)
+xsubj(evolve-10, Lenski-7)
+root(ROOT-0, attempted-8)
+aux(evolve-10, to-9)
+xcomp(attempted-8, evolve-10)
+num(generations-12, 40,000-11)
+dobj(evolve-10, generations-12)
+nn(coli-15, e.-14)
+prep_of(generations-12, coli-15)
+nsubj(equivalent-20, coli-15)
+cop(equivalent-20, is-18)
+det(equivalent-20, the-19)
+rcmod(coli-15, equivalent-20)
+number(million-23, 1.2-22)
+num(years-24, million-23)
+prep_of(equivalent-20, years-24)
+prep_for(years-24, humans-26)
+nn(coli-29, e.-28)
+nsubj(create-31, coli-29)
+aux(create-31, can-30)
+dep(years-24, create-31)
+num(generations-33, 6.64-32)
+dobj(create-31, generations-33)
+prep_per(generations-33, day-35)
+det(equivalent-38, the-37)
+appos(day-35, equivalent-38)
+amod(years-41, 166-40)
+prep_of(equivalent-38, years-41)
+prep_for(create-31, humans-43)
+

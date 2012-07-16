@@ -1,0 +1,103 @@
+(ROOT
+  (FRAG
+    (NP (NN hey))
+    (, ,)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP (DT a) (NN question))
+        (VP (VBZ is)
+          (NP (DT that)))))
+    (. ?)))
+
+root(ROOT-0, hey-1)
+dobj(that-7, what-3)
+det(question-5, a-4)
+nsubj(that-7, question-5)
+cop(that-7, is-6)
+dep(hey-1, that-7)
+
+(ROOT
+  (SBAR (IN if)
+    (S
+      (NP (PRP he))
+      (VP (VBZ wants)
+        (S
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (NP (NN anything)))))
+          (SBARQ
+            (WHADVP (WRB why))
+            (SQ (VBP do)
+              (NP (NN u))
+              (VP (VB care)))
+            (. ?)))))))
+
+mark(wants-3, if-1)
+nsubj(wants-3, he-2)
+root(ROOT-0, wants-3)
+aux(do-5, to-4)
+dep(wants-3, do-5)
+dobj(do-5, anything-6)
+advmod(care-10, why-7)
+aux(care-10, do-8)
+nsubj(care-10, u-9)
+dep(do-5, care-10)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBP have)
+      (NP (DT a) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB decide)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP want)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be))))))))))))
+    (. .)))
+
+nsubj(have-2, they-1)
+root(ROOT-0, have-2)
+det(right-4, a-3)
+dobj(have-2, right-4)
+aux(decide-6, to-5)
+infmod(right-4, decide-6)
+dep(want-9, what-7)
+nsubj(want-9, they-8)
+xsubj(be-11, they-8)
+ccomp(decide-6, want-9)
+aux(be-11, to-10)
+xcomp(want-9, be-11)
+
+(ROOT
+  (S (IN so)
+    (NP (PRP$ its))
+    (DT no)
+    (VP (VBP harm))
+    (. .)))
+
+dep(harm-4, so-1)
+nsubj(harm-4, its-2)
+dep(harm-4, no-3)
+root(ROOT-0, harm-4)
+
+(ROOT
+  (S
+    (VP (VB pay)
+      (NP (DT no) (NN attention))
+      (PP (TO to)
+        (NP (PRP it))))
+    (. !)))
+
+root(ROOT-0, pay-1)
+det(attention-3, no-2)
+dobj(pay-1, attention-3)
+prep_to(pay-1, it-5)
+

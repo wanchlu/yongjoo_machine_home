@@ -1,0 +1,175 @@
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP
+      (VP (VBZ goes)
+        (PP (TO to)
+          (NP (DT the) (NN doctor)))
+        (PP (IN from)
+          (NP
+            (NP (NN pain))
+            (PP (IN in)
+              (NP (PRP$ her) (NN belly))))))
+      (CC and)
+      (VP (VBZ wants)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN assured)
+                (SBAR
+                  (S
+                    (NP (NN everything))
+                    (VP (VBZ is)
+                      (ADJP (JJ OK)))))))))))
+    (. .)))
+
+nsubj(goes-2, She-1)
+nsubj(wants-12, She-1)
+xsubj(assured-15, She-1)
+root(ROOT-0, goes-2)
+det(doctor-5, the-4)
+prep_to(goes-2, doctor-5)
+prep_from(goes-2, pain-7)
+poss(belly-10, her-9)
+prep_in(pain-7, belly-10)
+conj_and(goes-2, wants-12)
+aux(assured-15, to-13)
+auxpass(assured-15, be-14)
+xcomp(wants-12, assured-15)
+nsubj(OK-18, everything-16)
+cop(OK-18, is-17)
+ccomp(assured-15, OK-18)
+
+(ROOT
+  (S
+    (NP (PRP She))
+    (VP (VBZ finds)
+      (PRT (RP out))
+      (SBAR
+        (S
+          (NP (PRP she))
+          (VP (VBZ has)
+            (NP
+              (NP
+                (NP (DT a) (JJ serious) (NN complication))
+                (SBAR
+                  (WHNP
+                    (WHNP (DT that))
+                    (WHPP (IN in)
+                      (WHNP (WDT which))))
+                  (, ,)
+                  (S
+                    (NP (PRP she))
+                    (VP (VBZ has)
+                      (S
+                        (VP (TO to)
+                          (VP (VB make)
+                            (NP (DT a) (NN decision)))))))))
+              (: :)
+              (NP
+                (LST (LS a) (-RRB- -RRB-))
+                (NP (NN wait))
+                (PP (IN at)
+                  (NP
+                    (NP
+                      (NP (JJS least))
+                      (NP (DT another) (NN month))
+                      (VP (VBG hoping)
+                        (SBAR
+                          (S
+                            (NP (PRP she))
+                            (VP (MD can)
+                              (VP (VB last)
+                                (SBAR (IN that)
+                                  (S
+                                    (S
+                                      (ADVP (RB long) (RB so))
+                                      (NP (DT the) (NN baby))
+                                      (VP (MD can)
+                                        (VP (VB be)
+                                          (VP (VBN born)
+                                            (PRN (-LRB- -LRB-)
+                                              (ADJP
+                                                (ADJP
+                                                  (ADJP
+                                                    (ADJP (JJ prematurely))
+                                                    (PRN (, ,)
+                                                      (CC but)
+                                                      (ADVP (RB hopefully))))
+                                                  (ADJP (JJ alive)))
+                                                (RB enough)
+                                                (S
+                                                  (VP (TO to)
+                                                    (VP (VB survive)))))
+                                              (-RRB- -RRB-))))))
+                                    (CC and)
+                                    (S
+                                      (NP (PRP she))
+                                      (VP (VBZ dies)))))))))))
+                    (, ,)
+                    (VP (VBN guaranteed)))))
+              (, ,)
+              (CC or)
+              (NP
+                (LST (LS b) (-RRB- -RRB-))
+                (NP (JJ abort) (DT the) (NN child))
+                (PP (IN for)
+                  (NP (PRP$ her) (NN life)))))))))
+    (. .)))
+
+nsubj(finds-2, She-1)
+root(ROOT-0, finds-2)
+prt(finds-2, out-3)
+nsubj(has-5, she-4)
+ccomp(finds-2, has-5)
+det(complication-8, a-6)
+amod(complication-8, serious-7)
+dobj(has-5, complication-8)
+prep_in(that-9, complication-8)
+rel(has-14, that-9)
+nsubj(has-14, she-13)
+xsubj(make-16, she-13)
+rcmod(complication-8, has-14)
+aux(make-16, to-15)
+xcomp(has-14, make-16)
+det(decision-18, a-17)
+dobj(make-16, decision-18)
+dep(wait-22, a-20)
+dobj(has-5, wait-22)
+conj_or(complication-8, wait-22)
+prep_in(that-9, wait-22)
+prep_at(wait-22, least-24)
+det(month-26, another-25)
+dep(least-24, month-26)
+partmod(least-24, hoping-27)
+nsubj(last-30, she-28)
+aux(last-30, can-29)
+ccomp(hoping-27, last-30)
+complm(born-38, that-31)
+advmod(so-33, long-32)
+advmod(born-38, so-33)
+det(baby-35, the-34)
+nsubjpass(born-38, baby-35)
+aux(born-38, can-36)
+auxpass(born-38, be-37)
+ccomp(last-30, born-38)
+dep(born-38, prematurely-40)
+dep(hopefully-43, but-42)
+dep(prematurely-40, hopefully-43)
+dep(prematurely-40, alive-44)
+advmod(prematurely-40, enough-45)
+aux(survive-47, to-46)
+xcomp(prematurely-40, survive-47)
+nsubj(dies-51, she-50)
+ccomp(last-30, dies-51)
+conj_and(born-38, dies-51)
+partmod(least-24, guaranteed-53)
+dep(child-60, b-56)
+amod(child-60, abort-58)
+det(child-60, the-59)
+dobj(has-5, child-60)
+conj_or(complication-8, child-60)
+prep_in(that-9, child-60)
+poss(life-63, her-62)
+prep_for(child-60, life-63)
+

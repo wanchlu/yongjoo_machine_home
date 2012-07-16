@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ does) (RB not)
+        (VP (VB mean)
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBP am)
+                (PP (IN against)
+                  (NP
+                    (NP (NNS abortions))
+                    (VP (VBG being)
+                      (VP (VBN banned)))))))))))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB like)
+          (PP (IN for)
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (TO to)
+                  (VP (VB happen)))))))))
+    (. .)))
+
+nsubj(mean-4, That-1)
+aux(mean-4, does-2)
+neg(mean-4, not-3)
+root(ROOT-0, mean-4)
+complm(am-7, that-5)
+nsubj(am-7, I-6)
+ccomp(mean-4, am-7)
+prep_against(am-7, abortions-9)
+auxpass(banned-11, being-10)
+partmod(abortions-9, banned-11)
+nsubj(like-15, I-13)
+aux(like-15, would-14)
+parataxis(mean-4, like-15)
+nsubj(happen-19, that-17)
+aux(happen-19, to-18)
+prepc_for(like-15, happen-19)
+

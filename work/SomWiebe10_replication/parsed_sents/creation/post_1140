@@ -1,0 +1,143 @@
+(ROOT
+  (S
+    (VP (VB Mate))
+    (. .)))
+
+root(ROOT-0, Mate-1)
+
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB play)
+                  (NP (DT this) (NN game))))))))
+      (ADVP (RB then))
+      (VP (VBP eat)
+        (NP (DT this))))
+    (: :)
+    (S
+      (NP (EX There))
+      (VP (VBZ 's)
+        (NP
+          (NP (DT no) (NN proof))
+          (PP (IN for)
+            (NP (NNP God))))
+        (ADVP (RB either))))
+    (. .)))
+
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+xsubj(play-5, you-2)
+advcl(eat-9, want-3)
+csubj(eat-9, want-3)
+aux(play-5, to-4)
+xcomp(want-3, play-5)
+det(game-7, this-6)
+dobj(play-5, game-7)
+advmod(eat-9, then-8)
+root(ROOT-0, eat-9)
+dobj(eat-9, this-10)
+expl('s-13, There-12)
+parataxis(eat-9, 's-13)
+det(proof-15, no-14)
+nsubj('s-13, proof-15)
+prep_for(proof-15, God-17)
+advmod('s-13, either-18)
+
+(ROOT
+  (S
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB give)
+          (NP (PRP me))
+          (NP (DT any) (JJ rubbish) ('' '') (NN Can)))))
+    (NP (PRP you))
+    (VP (VBP get)
+      (NP
+        (NP (DT a) (NN car))
+        (PP (IN without)
+          (NP (DT a) (NN car) (NN maker)))
+        ('' '')))
+    (. .)))
+
+aux(give-3, Do-1)
+neg(give-3, n't-2)
+dep(get-10, give-3)
+iobj(give-3, me-4)
+det(Can-8, any-5)
+amod(Can-8, rubbish-6)
+dobj(give-3, Can-8)
+nsubj(get-10, you-9)
+root(ROOT-0, get-10)
+det(car-12, a-11)
+dobj(get-10, car-12)
+det(maker-16, a-14)
+nn(maker-16, car-15)
+prep_without(car-12, maker-16)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (JJR more) (NN proof))
+        (PP (IN FOR)
+          (NP
+            (NP (NN evolution))
+            (PP (IN than)
+              (NP (NNP God)))))))
+    (. .)))
+
+expl('s-2, There-1)
+root(ROOT-0, 's-2)
+amod(proof-4, more-3)
+nsubj('s-2, proof-4)
+prep_for(proof-4, evolution-6)
+prep_than(evolution-6, God-8)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Ever))
+    (SQ
+      (VP (VBD played)
+        (NP (JJ Chinese) (NNS whispers))))
+    (. ?)))
+
+nsubj(played-2, Ever-1)
+root(ROOT-0, played-2)
+amod(whispers-4, Chinese-3)
+dobj(played-2, whispers-4)
+
+(ROOT
+  (UCP
+    (PP (IN In)
+      (NP
+        (NP (PRP$ my) (NN view))
+        (NP (DT the) (NN bible))))
+    (CC and)
+    (SBAR (IN that)
+      (S
+        (NP (NN game))
+        (VP (VBP have)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN in)
+              (NP (JJ common)))))))))
+
+root(ROOT-0, In-1)
+poss(view-3, my-2)
+pobj(In-1, view-3)
+det(bible-5, the-4)
+dep(view-3, bible-5)
+dep(have-9, that-7)
+nsubj(have-9, game-8)
+conj_and(In-1, have-9)
+det(lot-11, a-10)
+dobj(have-9, lot-11)
+prep_in(lot-11, common-13)
+

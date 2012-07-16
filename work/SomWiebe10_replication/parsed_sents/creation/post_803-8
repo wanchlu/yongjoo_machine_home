@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP (NNS Popes))
+    (VP
+      (VP (VB read)
+        (PP (IN into)
+          (NP (DT the) (NNP Bible))))
+      (CC and)
+      (VP (VB extend)
+        (NP
+          (NP (DT the) (NN reality))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN narrative) (POS 's))
+              (NN interpretation))))
+        (PP (IN in)
+          (NP
+            (NP (NNS ways))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP resemble)
+                  (SBAR
+                    (WHADVP (RB exactly) (WRB how))
+                    (S
+                      (NP (NN history))
+                      (VP (VBZ sees)
+                        (NP (PRP them))))))))))))
+    (. .)))
+
+nsubj(read-2, Popes-1)
+nsubj(extend-7, Popes-1)
+root(ROOT-0, read-2)
+det(Bible-5, the-4)
+prep_into(read-2, Bible-5)
+conj_and(read-2, extend-7)
+det(reality-9, the-8)
+dobj(extend-7, reality-9)
+det(narrative-12, the-11)
+poss(interpretation-14, narrative-12)
+prep_of(reality-9, interpretation-14)
+prep_in(extend-7, ways-16)
+nsubj(resemble-18, ways-16)
+rcmod(ways-16, resemble-18)
+advmod(how-20, exactly-19)
+advmod(sees-22, how-20)
+nsubj(sees-22, history-21)
+ccomp(resemble-18, sees-22)
+dobj(sees-22, them-23)
+

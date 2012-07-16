@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (S
+      (NP (PRP she))
+      (VP (VBZ 's)
+        (PP
+          (PP (IN at)
+            (NP
+              (NP (NN risk))
+              (PP (IN of)
+                (NP (JJ imminent) (NN death)))))
+          (CC or)
+          (PP (IN in)
+            (NP (DT some) (NNS cases))))
+        (SBAR (IN if)
+          (S
+            (NP (DT the) (NN fetus))
+            (VP (MD wo) (RB n't)
+              (VP (VB survive)
+                (NP (NN birth))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ puts)
+        (NP
+          (NP (DT the) (NN woman))
+          (PP (IN at)
+            (NP (NN risk))))))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in('s-6, words-3)
+nsubj('s-6, she-5)
+nsubj('s-6', she-5)
+root(ROOT-0, 's-6)
+conj_or('s-6, 's-6')
+prep_at('s-6, risk-8)
+amod(death-11, imminent-10)
+prep_of(risk-8, death-11)
+det(cases-15, some-14)
+prep_in('s-6', cases-15)
+mark(survive-21, if-16)
+det(fetus-18, the-17)
+nsubj(survive-21, fetus-18)
+aux(survive-21, wo-19)
+neg(survive-21, n't-20)
+advcl('s-6, survive-21)
+dobj(survive-21, birth-22)
+nsubj(puts-25, it-24)
+conj_and('s-6, puts-25)
+det(woman-27, the-26)
+dobj(puts-25, woman-27)
+prep_at(woman-27, risk-29)
+

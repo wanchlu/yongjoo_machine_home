@@ -1,0 +1,25 @@
+(ROOT
+  (S
+    (NP (NNP ID) (NNS promoters))
+    (VP (VBP do) (RB not)
+      (VP (VB reject)
+        (NP
+          (NP (NNP ANY) (NNS facts))
+          (CC or)
+          (NP
+            (ADJP (RB well) (VBN established))
+            (NNS results)))))
+    (. .)))
+
+nn(promoters-2, ID-1)
+nsubj(reject-5, promoters-2)
+aux(reject-5, do-3)
+neg(reject-5, not-4)
+root(ROOT-0, reject-5)
+nn(facts-7, ANY-6)
+dobj(reject-5, facts-7)
+advmod(established-10, well-9)
+amod(results-11, established-10)
+dobj(reject-5, results-11)
+conj_or(facts-7, results-11)
+

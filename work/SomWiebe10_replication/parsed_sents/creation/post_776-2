@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN doctrine))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN world))
+          (VP (VBD was)
+            (VP (VBN created))))))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ ill-advised)))
+      (, ,)
+      (CC and)
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN rejected)))))
+    (. .)))
+
+det(doctrine-2, The-1)
+nsubj(ill-advised-9, doctrine-2)
+nsubjpass(rejected-14, doctrine-2)
+complm(created-7, that-3)
+det(world-5, the-4)
+nsubjpass(created-7, world-5)
+auxpass(created-7, was-6)
+dep(doctrine-2, created-7)
+cop(ill-advised-9, is-8)
+root(ROOT-0, ill-advised-9)
+aux(rejected-14, should-12)
+auxpass(rejected-14, be-13)
+conj_and(ill-advised-9, rejected-14)
+

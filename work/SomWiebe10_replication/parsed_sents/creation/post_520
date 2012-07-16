@@ -1,0 +1,130 @@
+(ROOT
+  (SBARQ (`` ``)
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP I))
+      (VP (VB waste)
+        (NP
+          (NP
+            (QP (JJR more) (IN than) (CD 30))
+            (NNS seconds))
+          (VP (VBG attempting)
+            (S
+              (VP (TO to)
+                (VP (VB communicate)
+                  (PP (IN with)
+                    (NP (DT an) (NN ignoramus))))))))))
+    (. ?)))
+
+advmod(waste-5, Why-2)
+aux(waste-5, should-3)
+nsubj(waste-5, I-4)
+root(ROOT-0, waste-5)
+mwe(than-7, more-6)
+quantmod(30-8, than-7)
+num(seconds-9, 30-8)
+dobj(waste-5, seconds-9)
+xsubj(communicate-12, seconds-9)
+partmod(seconds-9, attempting-10)
+aux(communicate-12, to-11)
+xcomp(attempting-10, communicate-12)
+det(ignoramus-15, an-14)
+prep_with(communicate-12, ignoramus-15)
+
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG asking)
+        (NP (PRP myself))
+        (NP (DT the) (JJ same) (NN thing))))
+    (. .)))
+
+nsubj(asking-4, I-2)
+aux(asking-4, 'm-3)
+root(ROOT-0, asking-4)
+iobj(asking-4, myself-5)
+det(thing-8, the-6)
+amod(thing-8, same-7)
+dobj(asking-4, thing-8)
+
+(ROOT
+  (S ('' '')
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT a) (JJ wonderful) (NN world) (JJ wide) (NN web))
+      (PP (IN out)
+        (NP (RB there)))
+      (PP (IN with)
+        (NP
+          (NP (DT a) (NN lot))
+          (PP (IN of)
+            (NP (NN substance))))))
+    (. .)))
+
+expl(is-3, There-2)
+root(ROOT-0, is-3)
+det(web-8, a-4)
+amod(web-8, wonderful-5)
+nn(web-8, world-6)
+amod(web-8, wide-7)
+nsubj(is-3, web-8)
+prep(is-3, out-9)
+pobj(out-9, there-10)
+det(lot-13, a-12)
+prep_with(is-3, lot-13)
+prep_of(lot-13, substance-15)
+
+(ROOT
+  (S (CC But)
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (MD would)
+          (VP (VB be)
+            (VP (VBG asking)
+              (ADVP (RB too) (RB much)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)))
+    (. .)))
+
+cc(sure-11, But-1)
+nsubj(asking-5, that-2)
+aux(asking-5, would-3)
+aux(asking-5, be-4)
+dep(sure-11, asking-5)
+advmod(much-7, too-6)
+advmod(asking-5, much-7)
+nsubj(sure-11, I-9)
+cop(sure-11, 'm-10)
+root(ROOT-0, sure-11)
+
+(ROOT
+  (S ('' '')
+    (NP (PRP I))
+    (VP (VBP agree))
+    (. .)))
+
+nsubj(agree-3, I-2)
+root(ROOT-0, agree-3)
+
+(ROOT
+  (SINV
+    (ADVP (RB Here))
+    (VP (VBZ 's)
+      (NP (PRP$ my) (JJ personal) (NN favorite))
+      (: :)
+      (FRAG
+        (ADJP (JJ http:\/\/www.discovery.org\/csc\/scientificResearch))))
+    (NP (NNP \/))))
+
+advmod(favorite-5, Here-1)
+cop(favorite-5, 's-2)
+poss(favorite-5, my-3)
+amod(favorite-5, personal-4)
+root(ROOT-0, favorite-5)
+dep(favorite-5, http:\/\/www.discovery.org\/csc\/scientificResearch-7)
+nsubj(favorite-5, \/-8)
+

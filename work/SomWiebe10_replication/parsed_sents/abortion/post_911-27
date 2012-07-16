@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Late-term) (NNS abortions))
+      (VP (VBP are) (RB not)
+        (VP (VBN used)
+          (SBAR (IN because)
+            (S
+              (NP (NNS mothers))
+              (VP
+                (VP (VBD changed)
+                  (NP (PRP$ their) (NN mind)))
+                (CC or)
+                (VP (VBD procrastinated))))))))
+    (CC and)
+    (S
+      (NP (DT this))
+      (VP (VBZ is) (RB not)
+        (NP (DT the) (JJ intended) (NN use))))
+    (. .)))
+
+amod(abortions-2, Late-term-1)
+nsubjpass(used-5, abortions-2)
+auxpass(used-5, are-3)
+neg(used-5, not-4)
+root(ROOT-0, used-5)
+mark(changed-8, because-6)
+nsubj(changed-8, mothers-7)
+nsubj(procrastinated-12, mothers-7)
+advcl(used-5, changed-8)
+poss(mind-10, their-9)
+dobj(changed-8, mind-10)
+advcl(used-5, procrastinated-12)
+conj_or(changed-8, procrastinated-12)
+nsubj(use-19, this-14)
+cop(use-19, is-15)
+neg(use-19, not-16)
+det(use-19, the-17)
+amod(use-19, intended-18)
+conj_and(used-5, use-19)
+

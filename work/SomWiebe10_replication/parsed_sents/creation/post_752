@@ -1,0 +1,42 @@
+(ROOT
+  (SQ (VBZ Is)
+    (NP (NNP God))
+    (ADJP (RB all) (JJ powerful))
+    (. ?)))
+
+cop(powerful-4, Is-1)
+nsubj(powerful-4, God-2)
+advmod(powerful-4, all-3)
+root(ROOT-0, powerful-4)
+
+(ROOT
+  (FRAG
+    (NP (NNP No))
+    (, ,)
+    (SBAR (IN because)
+      (S
+        (NP (PRP he))
+        (VP (VBD gave)
+          (ADVP (RB that) (RB up))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP he))
+              (VP (VBD gave)
+                (NP (NN mankind))
+                (NP (JJ free) (NN will))))))))
+    (. .)))
+
+root(ROOT-0, No-1)
+mark(gave-5, because-3)
+nsubj(gave-5, he-4)
+dep(No-1, gave-5)
+advmod(up-7, that-6)
+advmod(gave-5, up-7)
+advmod(gave-10, when-8)
+nsubj(gave-10, he-9)
+advcl(gave-5, gave-10)
+iobj(gave-10, mankind-11)
+amod(will-13, free-12)
+dobj(gave-10, will-13)
+

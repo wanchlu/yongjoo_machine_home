@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Objectivism))
+      (VP (VBZ formalizes)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (DT every) (NN culture))
+            (VP (VBZ knows))))))
+    (: :)
+    (S
+      (NP
+        (NP (DT That) (JJ legal) (NNS prohibitions))
+        (PP (IN against)
+          (NP (NN murder) (, ,) (NN rape) (, ,) (NN theft) (, ,) (FW etc.))))
+      (, ,)
+      (VP (VBP are)
+        (ADJP (JJ necessary)
+          (S
+            (VP (TO to)
+              (VP (VB secure)
+                (NP
+                  (NP (DT the) (NNS lives))
+                  (PP (IN of)
+                    (NP (PRP$ its) (NNS members))))))))))
+    (. .)))
+
+nsubj(formalizes-2, Objectivism-1)
+root(ROOT-0, formalizes-2)
+dobj(knows-6, what-3)
+det(culture-5, every-4)
+nsubj(knows-6, culture-5)
+ccomp(formalizes-2, knows-6)
+det(prohibitions-10, That-8)
+amod(prohibitions-10, legal-9)
+nsubj(necessary-21, prohibitions-10)
+nn(theft-16, murder-12)
+dep(theft-16, rape-14)
+prep_against(prohibitions-10, theft-16)
+dep(theft-16, etc.-18)
+cop(necessary-21, are-20)
+parataxis(formalizes-2, necessary-21)
+aux(secure-23, to-22)
+xcomp(necessary-21, secure-23)
+det(lives-25, the-24)
+dobj(secure-23, lives-25)
+poss(members-28, its-27)
+prep_of(lives-25, members-28)
+

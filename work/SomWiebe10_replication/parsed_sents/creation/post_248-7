@@ -1,0 +1,43 @@
+(ROOT
+  (S ('' '')
+    (PP (IN After)
+      (NP (DT all)))
+    (, ,)
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (RB not) (WDT what))
+          (VP (MD would)
+            (VP (VB happen)
+              (SBAR (IN if)
+                (S
+                  (NP (NN science))
+                  (VP (VBD were)
+                    (S
+                      (VP (TO to)
+                        (VP (VB show)
+                          (SBAR
+                            (WHADVP (WRB how))
+                            (S
+                              (NP (DT a) (NN flagellum))
+                              (VP (VBD evolved)))))))))))))))
+    (. ?)))
+
+prep_after(is-5, all-3)
+root(ROOT-0, is-5)
+complm(happen-10, that-6)
+neg(what-8, not-7)
+nsubj(happen-10, what-8)
+aux(happen-10, would-9)
+ccomp(is-5, happen-10)
+mark(were-13, if-11)
+nsubj(were-13, science-12)
+xsubj(show-15, science-12)
+advcl(happen-10, were-13)
+aux(show-15, to-14)
+xcomp(were-13, show-15)
+advmod(evolved-19, how-16)
+det(flagellum-18, a-17)
+nsubj(evolved-19, flagellum-18)
+ccomp(show-15, evolved-19)
+

@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (DT that))
+    (VP (MD should)
+      (VP (VB have)
+        (VP (VBN read) ('' ''))))
+    (. .) (. .)))
+
+dep(read-6, Yes-1)
+nsubj(read-6, that-3)
+aux(read-6, should-4)
+aux(read-6, have-5)
+root(ROOT-0, read-6)
+
+(ROOT
+  (S
+    (VP (TO to)
+      (VP (VB protect)
+        (NP
+          (NP (DT the) (NN health))
+          (PP (IN of)
+            (NP (DT the) (NN mother) ('' ''))))))
+    (. .)))
+
+aux(protect-2, to-1)
+root(ROOT-0, protect-2)
+det(health-4, the-3)
+dobj(protect-2, health-4)
+det(mother-7, the-6)
+prep_of(health-4, mother-7)
+
+(ROOT
+  (S
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB get)
+          (S
+            (NP (PRP me))
+            (ADJP (JJ wrong))))))
+    (, ,)
+    (NP (NN ussitano))
+    (, ,)
+    (PRN
+      (S
+        (NP (PRP I))
+        (VP (VBP 'm) (RB not)
+          (PP (IN in)
+            (NP
+              (NP (NN favor))
+              (PP (IN of)
+                (NP
+                  (NP (NNS abortions))
+                  (PP (IN at)
+                    (NP
+                      (NP (DT all))
+                      (PP (IN for)
+                        (NP (DT the) (JJ same) (NNS reasons))))))))))))
+    (NP (PRP you))
+    (VP (VBP give))
+    (. .)))
+
+aux(get-3, Do-1)
+neg(get-3, n't-2)
+ccomp(give-23, get-3)
+nsubj(wrong-5, me-4)
+xcomp(get-3, wrong-5)
+nsubj(give-23, ussitano-7)
+nsubj('m-10, I-9)
+parataxis(give-23, 'm-10)
+neg('m-10, not-11)
+prep_in('m-10, favor-13)
+prep_of(favor-13, abortions-15)
+prep_at(abortions-15, all-17)
+det(reasons-21, the-19)
+amod(reasons-21, same-20)
+prep_for(all-17, reasons-21)
+nsubj(give-23, you-22)
+root(ROOT-0, give-23)
+

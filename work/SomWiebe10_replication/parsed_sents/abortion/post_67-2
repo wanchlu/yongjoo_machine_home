@@ -1,0 +1,41 @@
+(ROOT
+  (SINV
+    (CONJP (RB Not) (JJ only))
+    (MD will)
+    (NP (DT the) (NN child))
+    (VP (VB suffer) (, ,)
+      (SBAR (CC but)
+        (S
+          (NP (NN society))
+          (VP (MD will)
+            (VP (VB suffer)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (DT that) (NN child))
+                  (VP (VBZ develops)
+                    (NP (DT a) (JJR higher) (NN attraction))
+                    (PP (TO to)
+                      (NP (NN crime) (, ,) (NN welfare) (, ,) (FW etc.)))))))))))))
+
+neg(only-2, Not-1)
+dep(suffer-6, only-2)
+aux(suffer-6, will-3)
+det(child-5, the-4)
+nsubj(suffer-6, child-5)
+root(ROOT-0, suffer-6)
+cc(suffer-11, but-8)
+nsubj(suffer-11, society-9)
+aux(suffer-11, will-10)
+ccomp(suffer-6, suffer-11)
+advmod(develops-15, when-12)
+det(child-14, that-13)
+nsubj(develops-15, child-14)
+advcl(suffer-11, develops-15)
+det(attraction-18, a-16)
+amod(attraction-18, higher-17)
+dobj(develops-15, attraction-18)
+nn(welfare-22, crime-20)
+prep_to(develops-15, welfare-22)
+dep(welfare-22, etc.-24)
+

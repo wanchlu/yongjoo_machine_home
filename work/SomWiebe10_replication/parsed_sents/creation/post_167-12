@@ -1,0 +1,32 @@
+(ROOT
+  (S ('' '')
+    (ADVP (RB Well))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD would)
+      (SBAR
+        (SBAR (IN if)
+          (S
+            (NP (PRP it))
+            (VP (VBD did))))
+        (, ,)
+        (CC but)
+        (SBAR (IN since)
+          (S
+            (NP (PRP it))
+            (VP (VBZ does) (RB n't))
+            (, ,)))))
+    (: ...)))
+
+advmod(would-5, Well-2)
+nsubj(would-5, it-4)
+root(ROOT-0, would-5)
+mark(did-8, if-6)
+nsubj(did-8, it-7)
+dep(would-5, did-8)
+mark(does-13, since-11)
+nsubj(does-13, it-12)
+dep(would-5, does-13)
+conj_but(did-8, does-13)
+neg(does-13, n't-14)
+

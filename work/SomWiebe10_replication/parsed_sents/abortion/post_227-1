@@ -1,0 +1,26 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ pro-life) (NNS congressmen))
+    (VP (VBD voted)
+      (PP (IN with)
+        (NP (DT the) (NN church)))
+      (PP
+        (PP (IN against)
+          (NP (NN abortion)))
+        (CC but)
+        (PP (IN on)
+          (NP (NN nothing) (RB else)))))
+    (. .)))
+
+det(congressmen-3, The-1)
+amod(congressmen-3, pro-life-2)
+nsubj(voted-4, congressmen-3)
+nsubj(voted-4', congressmen-3)
+root(ROOT-0, voted-4)
+conj_but(voted-4, voted-4')
+det(church-7, the-6)
+prep_with(voted-4, church-7)
+prep_against(voted-4, abortion-9)
+prep_on(voted-4', nothing-12)
+advmod(nothing-12, else-13)
+

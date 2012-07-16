@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB once))
+      (NP (PRP you))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (CD one) (NN human))
+            (VP (VBZ is)
+              (ADJP (RBR more) (JJ important)
+                (PP (IN than)
+                  (NP (DT the) (JJ other))))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ comes)
+                    (PP (TO to)
+                      (NP (NN life)
+                        (CC and)
+                        (NN death))))))))))
+      (, ,))
+    (: ...)
+    (S
+      (NP (EX there))
+      (VP (VBZ is)
+        (ADVP (RB no)
+          (S
+            (VP (VBG stopping)
+              (NP (PRP you)))))))
+    (. .)))
+
+advmod(think-3, once-1)
+nsubj(think-3, you-2)
+root(ROOT-0, think-3)
+num(human-5, one-4)
+nsubj(important-8, human-5)
+cop(important-8, is-6)
+advmod(important-8, more-7)
+ccomp(think-3, important-8)
+det(other-11, the-10)
+prep_than(important-8, other-11)
+advmod(comes-14, when-12)
+nsubj(comes-14, it-13)
+advcl(important-8, comes-14)
+prep_to(comes-14, life-16)
+prep_to(comes-14, death-18)
+conj_and(life-16, death-18)
+expl(is-22, there-21)
+parataxis(think-3, is-22)
+advmod(is-22, no-23)
+dep(no-23, stopping-24)
+dobj(stopping-24, you-25)
+

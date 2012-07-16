@@ -1,0 +1,63 @@
+(ROOT
+  (S (CC So)
+    (S
+      (NP
+        (NP (DT the) (NN woman) (POS 's))
+        (NN decision))
+      (VP (VBZ means)
+        (S
+          (VP (VBG killing)
+            (NP (DT a) (NN child))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT that))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN ok)))))
+    (. ?)))
+
+det(woman-3, the-2)
+poss(decision-5, woman-3)
+nsubj(means-6, decision-5)
+root(ROOT-0, means-6)
+xcomp(means-6, killing-7)
+det(child-9, a-8)
+dobj(killing-7, child-9)
+nsubjpass(ok-15, that-12)
+aux(ok-15, should-13)
+auxpass(ok-15, be-14)
+conj_and(means-6, ok-15)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN fact))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN child))
+            (VP (VBD was)
+              (VP (VBN conceived)
+                (PP (IN through)
+                  (NP
+                    (NP (NN rape))
+                    (, ,)
+                    (NP (DT the) (JJ childs) (NN fault))))))))))
+    (. ?)))
+
+advmod(is-2, How-1)
+root(ROOT-0, is-2)
+det(fact-4, the-3)
+nsubj(is-2, fact-4)
+complm(conceived-9, that-5)
+det(child-7, the-6)
+nsubjpass(conceived-9, child-7)
+auxpass(conceived-9, was-8)
+dep(fact-4, conceived-9)
+prep_through(conceived-9, rape-11)
+det(fault-15, the-13)
+amod(fault-15, childs-14)
+appos(rape-11, fault-15)
+

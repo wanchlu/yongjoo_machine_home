@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (SBAR (IN Once)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBN claimed)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT a) (NN part))
+                  (PP (IN of)
+                    (NP (DT the) (NNP Bible))))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT a) (JJ literal) (NN description))
+                    (PP (IN of)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (VP (VBZ has)
+                            (VP (VBN happened)
+                              (NP
+                                (NP (RB then) (NN anyone))
+                                (SBAR
+                                  (WHNP (WP who))
+                                  (S
+                                    (VP (VBZ tells)
+                                      (NP (PRP you))
+                                      (SBAR (IN that)
+                                        (S
+                                          (NP (DT that) (NN part))
+                                          (VP (VBZ is)
+                                            (ADJP (JJ symbolic))))))))))))))))))))))
+    (VP (VBZ is)
+      (ADJP (RB verifiably) (JJ wrong)))
+    (. .)))
+
+mark(claimed-4, Once-1)
+nsubj(claimed-4, you-2)
+aux(claimed-4, have-3)
+csubj(wrong-31, claimed-4)
+complm(description-14, that-5)
+det(part-7, a-6)
+nsubj(description-14, part-7)
+det(Bible-10, the-9)
+prep_of(part-7, Bible-10)
+cop(description-14, is-11)
+det(description-14, a-12)
+amod(description-14, literal-13)
+ccomp(claimed-4, description-14)
+nsubj(happened-18, what-16)
+aux(happened-18, has-17)
+prepc_of(description-14, happened-18)
+advmod(anyone-20, then-19)
+dobj(happened-18, anyone-20)
+nsubj(tells-22, anyone-20)
+rcmod(anyone-20, tells-22)
+dobj(tells-22, you-23)
+complm(symbolic-28, that-24)
+det(part-26, that-25)
+nsubj(symbolic-28, part-26)
+cop(symbolic-28, is-27)
+ccomp(tells-22, symbolic-28)
+cop(wrong-31, is-29)
+advmod(wrong-31, verifiably-30)
+root(ROOT-0, wrong-31)
+

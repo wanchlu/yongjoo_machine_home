@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (NNP Life))
+    (VP
+      (VP (VBZ is)
+        (NP (JJ precious)))
+      (CC and)
+      (VP (VBZ needs)
+        (S
+          (VP
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN protected)
+                  (PP (IN at)
+                    (NP (DT all) (NNS costs))))))
+            (IN except)
+            (VP
+              (SBAR (IN if)
+                (S
+                  (NP (PRP it))
+                  (VP (MD will)
+                    (VP (VB inconvenience)
+                      (NP (PRP you)))))))))))
+    (. .)))
+
+nsubj(precious-3, Life-1)
+nsubj(needs-5, Life-1)
+cop(precious-3, is-2)
+root(ROOT-0, precious-3)
+conj_and(precious-3, needs-5)
+aux(protected-8, to-6)
+auxpass(protected-8, be-7)
+ccomp(needs-5, protected-8)
+det(costs-11, all-10)
+prep_at(protected-8, costs-11)
+dep(protected-8, except-12)
+mark(inconvenience-16, if-13)
+nsubj(inconvenience-16, it-14)
+aux(inconvenience-16, will-15)
+dep(protected-8, inconvenience-16)
+dobj(inconvenience-16, you-17)
+

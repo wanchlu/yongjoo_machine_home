@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN physician))
+      (VP (VBG pulling)
+        (NP
+          (NP (DT a) (NN fetus))
+          (PP (RB out) (IN of)
+            (NP (DT the) (NN birth) (NN canal))))))
+    (VP (VBZ does) (RB not)
+      (VP (VB constitute)
+        (NP (DT a) (NN birth))))
+    (. .)))
+
+det(physician-2, A-1)
+nsubj(constitute-13, physician-2)
+partmod(physician-2, pulling-3)
+det(fetus-5, a-4)
+dobj(pulling-3, fetus-5)
+det(canal-10, the-8)
+nn(canal-10, birth-9)
+prep_out_of(fetus-5, canal-10)
+aux(constitute-13, does-11)
+neg(constitute-13, not-12)
+root(ROOT-0, constitute-13)
+det(birth-15, a-14)
+dobj(constitute-13, birth-15)
+

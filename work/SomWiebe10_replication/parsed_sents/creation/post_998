@@ -1,0 +1,265 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP It))
+        (VP (VBZ has) (RB not)
+          (VP (VBN been)
+            (VP (VBN proven)))))
+      (CC and)
+      (S
+        (NP (FW i))
+        (VP (VBP do) (RB n't)
+          (VP (VB think)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (MD can)
+                  (VP (VB be)))))))))
+    (: ...)
+    (S
+      (S
+        (VP (VB think)
+          (PP (IN about)
+            (NP
+              (NP (PRP it))
+              (NP (DT this) (NN way))))))
+      (NP (PRP they))
+      (VP (VBP say)
+        (S
+          (NP (NNS humans))
+          (UCP
+            (VP (VBN evolved)
+              (PP (IN from)
+                (NP (NNS apes))))
+            (CC or)
+            (ADJP
+              (WHADVP (WDT whatever))
+              (JJ right))))))
+    (. ?)))
+
+nsubjpass(proven-5, It-1)
+aux(proven-5, has-2)
+neg(proven-5, not-3)
+auxpass(proven-5, been-4)
+root(ROOT-0, proven-5)
+nsubj(think-10, i-7)
+aux(think-10, do-8)
+neg(think-10, n't-9)
+conj_and(proven-5, think-10)
+nsubj(be-13, it-11)
+aux(be-13, can-12)
+ccomp(think-10, be-13)
+dep(say-21, think-15)
+prep_about(think-15, it-17)
+det(way-19, this-18)
+dep(it-17, way-19)
+nsubj(say-21, they-20)
+parataxis(proven-5, say-21)
+dep(evolved-23, humans-22)
+dep(say-21, evolved-23)
+prep_from(evolved-23, apes-25)
+advmod(right-28, whatever-27)
+dep(say-21, right-28)
+conj_or(evolved-23, right-28)
+
+(ROOT
+  (SINV
+    (ADVP (RB yet))
+    (VBP have)
+    (NP (PRP you))
+    (VP
+      (ADVP (RB ever))
+      (VBN seen)
+      (NP (DT an) (NN ape))
+      (S
+        (VP (VB evolve)
+          (PP (IN into)
+            (NP (DT a) (JJ human) (NN yourself))))))
+    (. ?)))
+
+advmod(seen-5, yet-1)
+aux(seen-5, have-2)
+nsubj(seen-5, you-3)
+advmod(seen-5, ever-4)
+root(ROOT-0, seen-5)
+det(ape-7, an-6)
+dobj(seen-5, ape-7)
+dep(seen-5, evolve-8)
+det(yourself-12, a-10)
+amod(yourself-12, human-11)
+prep_into(evolve-8, yourself-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN alot))
+      (PP (IN of)
+        (NP
+          (NP (NNS people) (NN debate))
+          (SBAR (IN that)
+            (S
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (FW i))
+                  (VP (MD can) (RB not)
+                    (VP (VB see)
+                      (NP (FW i))))))
+              (VP (VBP do) (RB not)
+                (VP (VB believe)
+                  (S
+                    (S (CC but)
+                      (NP (FW i))
+                      (VP (VBP 'm)
+                        (ADJP (RB almost) (JJ sure))))
+                    (S
+                      (NP (DT no) (NN one))
+                      (VP (VBZ has)
+                        (VP (VBN seen)
+                          (S
+                            (NP (DT an) (NN ape))
+                            (VP (VB evolve)
+                              (PP (IN into)
+                                (NP (DT a) (NN human) (PRP we))))))))
+                    (S
+                      (NP (PRP$ my))
+                      (VP (VBP have)
+                        (NP (JJ similar) (NNS looks))))
+                    (CC but)
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ does) (RB n't)
+                        (VP (VB mean)
+                          (NP (PRP we)))))))))))))
+    (VP (VBP have)
+      (VP (VBN evolved)
+        (PP (IN from)
+          (NP (NNS apes)))
+        (: ...)
+        (S
+          (INTJ (UH yes) (UH i))
+          (VP (VB believe)
+            (PP (IN in)
+              (NP (NN god)))
+            (. .)))))
+    (. .)))
+
+nsubj(evolved-42, alot-1)
+nn(debate-4, people-3)
+prep_of(alot-1, debate-4)
+complm(believe-14, that-5)
+dobj(see-10, what-6)
+nsubj(see-10, i-7)
+aux(see-10, can-8)
+neg(see-10, not-9)
+csubj(believe-14, see-10)
+dobj(see-10, i-11)
+aux(believe-14, do-12)
+neg(believe-14, not-13)
+dep(debate-4, believe-14)
+nsubj(sure-19, i-16)
+cop(sure-19, 'm-17)
+advmod(sure-19, almost-18)
+dep(believe-14, sure-19)
+det(one-21, no-20)
+nsubj(seen-23, one-21)
+aux(seen-23, has-22)
+dep(sure-19, seen-23)
+det(ape-25, an-24)
+nsubj(evolve-26, ape-25)
+ccomp(seen-23, evolve-26)
+det(human-29, a-28)
+prep_into(evolve-26, human-29)
+dep(human-29, we-30)
+nsubj(have-32, my-31)
+dep(sure-19, have-32)
+amod(looks-34, similar-33)
+dobj(have-32, looks-34)
+nsubj(mean-39, it-36)
+aux(mean-39, does-37)
+neg(mean-39, n't-38)
+dep(believe-14, mean-39)
+conj_but(sure-19, mean-39)
+dobj(mean-39, we-40)
+aux(evolved-42, have-41)
+root(ROOT-0, evolved-42)
+prep_from(evolved-42, apes-44)
+dep(believe-48, yes-46)
+dep(yes-46, i-47)
+ccomp(evolved-42, believe-48)
+parataxis(evolved-42, believe-48)
+prep_in(believe-48, god-50)
+
+(ROOT
+  (S
+    (S
+      (S (CC and)
+        (NP (FW i))
+        (VP (VBP have)
+          (ADVP (RB never))
+          (VP (VBN seen)
+            (NP (PRP him)))))
+      (CC but)
+      (S
+        (NP (NN god))
+        (VP (VBZ makes)
+          (NP (JJR more) (NN sense))
+          (PP (TO to)
+            (NP (PRP me))))))
+    (RB then)
+    (S
+      (NP (NN evolution))
+      (ADVP (RB ever))
+      (VP (MD will)))
+    (. .)))
+
+nsubj(seen-5, i-2)
+aux(seen-5, have-3)
+neg(seen-5, never-4)
+root(ROOT-0, seen-5)
+dobj(seen-5, him-6)
+nsubj(makes-9, god-8)
+conj_but(seen-5, makes-9)
+amod(sense-11, more-10)
+dobj(makes-9, sense-11)
+prep_to(makes-9, me-13)
+advmod(seen-5, then-14)
+nsubj(will-17, evolution-15)
+advmod(will-17, ever-16)
+ccomp(seen-5, will-17)
+
+(ROOT
+  (S
+    (VP (VB show)
+      (NP (PRP me)))
+    (. !)))
+
+root(ROOT-0, show-1)
+dobj(show-1, me-2)
+
+(ROOT
+  (X
+    (NP (DT a) (NN documentary)
+      (CC or)
+      (NN something))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (DT an) (NN ape))
+        (VP (VBZ has)
+          (VP (VBN evolved)
+            (PP (IN into)
+              (NP (DT a) (NN human)))))))))
+
+det(documentary-2, a-1)
+root(ROOT-0, documentary-2)
+conj_or(documentary-2, something-4)
+advmod(evolved-9, when-5)
+det(ape-7, an-6)
+nsubj(evolved-9, ape-7)
+aux(evolved-9, has-8)
+dep(documentary-2, evolved-9)
+det(human-12, a-11)
+prep_into(evolved-9, human-12)
+

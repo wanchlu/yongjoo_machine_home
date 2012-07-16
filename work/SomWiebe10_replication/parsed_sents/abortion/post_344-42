@@ -1,0 +1,38 @@
+(ROOT
+  (S (`` ``)
+    (SBAR
+      (NP (WP What))
+      (IN if)
+      (S
+        (NP (PRP I))
+        (VP (VBP give)
+          (PRT (RP up))
+          (NP
+            (NP (PRP$ my) (NN kidney))
+            (CC and)
+            (RB then)
+            (NP
+              (NP (DT a) (NN member))
+              (PP (IN of)
+                (NP (PRP$ my) (NN family))))))))
+    (VP (VBZ needs)
+      (NP (CD one)))
+    (. ?)))
+
+dep(give-5, What-2)
+dep(give-5, if-3)
+nsubj(give-5, I-4)
+csubj(needs-16, give-5)
+prt(give-5, up-6)
+poss(kidney-8, my-7)
+dobj(give-5, kidney-8)
+dobj(give-5, then-10)
+advmod(kidney-8, then-10)
+conj_and(kidney-8, then-10)
+det(member-12, a-11)
+dep(kidney-8, member-12)
+poss(family-15, my-14)
+prep_of(member-12, family-15)
+root(ROOT-0, needs-16)
+dobj(needs-16, one-17)
+

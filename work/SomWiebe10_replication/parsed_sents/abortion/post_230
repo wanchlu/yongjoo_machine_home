@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (DT A) (NN woman))
+    (VP (VBZ has)
+      (NP (DT the) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB decide)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ happens)
+                    (PP (IN inside)
+                      (NP (PRP$ her) (NN body)))))))))))
+    (. .)))
+
+det(woman-2, A-1)
+nsubj(has-3, woman-2)
+root(ROOT-0, has-3)
+det(right-5, the-4)
+dobj(has-3, right-5)
+aux(decide-7, to-6)
+infmod(right-5, decide-7)
+nsubj(happens-9, what-8)
+ccomp(decide-7, happens-9)
+poss(body-12, her-11)
+prep_inside(happens-9, body-12)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN end)))
+    (S
+      (VP (VBG making)
+        (S
+          (NP (PRP it))
+          (ADJP (JJ illegal)))))
+    (VP (MD will)
+      (ADVP (RB only))
+      (VP (VB punish)
+        (NP (JJ poor) (NN woman))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP (JJ wealthy) (NN woman))
+            (VP (MD will)
+              (ADVP (RB always))
+              (VP (VB have)
+                (NP
+                  (NP (DT the) (NN option))
+                  (PP (IN of)
+                    (S
+                      (VP (VBG having)
+                        (NP (DT an) (NN abortion))))))))))))
+    (. .)))
+
+det(end-3, the-2)
+prep_in(punish-9, end-3)
+csubj(punish-9, making-4)
+nsubj(illegal-6, it-5)
+xcomp(making-4, illegal-6)
+aux(punish-9, will-7)
+advmod(punish-9, only-8)
+root(ROOT-0, punish-9)
+amod(woman-11, poor-10)
+dobj(punish-9, woman-11)
+mark(have-18, as-13)
+amod(woman-15, wealthy-14)
+nsubj(have-18, woman-15)
+aux(have-18, will-16)
+advmod(have-18, always-17)
+advcl(punish-9, have-18)
+det(option-20, the-19)
+dobj(have-18, option-20)
+prepc_of(option-20, having-22)
+det(abortion-24, an-23)
+dobj(having-22, abortion-24)
+

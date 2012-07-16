@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNP Let) (POS 's))
+    (VP (VBP take)
+      (NP
+        (NP (NN care))
+        (PP (IN of)
+          (NP
+            (NP (DT those))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP
+                    (VP (VBN born))
+                    (CC and)
+                    (VP
+                      (ADVP (RB here))
+                      (PP (IN in)
+                        (NP
+                          (NP (NN need))
+                          (PP (IN of)
+                            (NP (PRP$ our) (NN help))))))))))))))
+    (. .)))
+
+nsubj(take-3, Let-1)
+possessive(Let-1, 's-2)
+root(ROOT-0, take-3)
+dobj(take-3, care-4)
+prep_of(care-4, those-6)
+nsubjpass(born-9, those-6)
+auxpass(born-9, are-8)
+rcmod(those-6, born-9)
+rcmod(those-6, here-11)
+conj_and(born-9, here-11)
+prep_in(here-11, need-13)
+poss(help-16, our-15)
+prep_of(need-13, help-16)
+

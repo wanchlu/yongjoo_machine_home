@@ -1,0 +1,95 @@
+(ROOT
+  (S
+    (NP (`` ``) (NNP Back) (NNP alley) ('' '') (NNS abortions))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RBR more) (JJ frequent))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NN abortion))
+            (VP (VBZ is)
+              (ADJP (JJ illegal)))))))
+    (. .)))
+
+nn(abortions-5, Back-2)
+nn(abortions-5, alley-3)
+nsubj(frequent-8, abortions-5)
+cop(frequent-8, are-6)
+advmod(frequent-8, more-7)
+root(ROOT-0, frequent-8)
+advmod(illegal-12, when-9)
+nsubj(illegal-12, abortion-10)
+cop(illegal-12, is-11)
+dep(frequent-8, illegal-12)
+
+(ROOT
+  (S
+    (NP (JJ Back-alley) (NNS abortions))
+    (VP (VBP are)
+      (NP
+        (NP (NNS abortions))
+        (VP (VBN performed)
+          (ADVP (RB illegally))
+          (PP (IN on)
+            (NP
+              (NP (DT the) (`` ``) (NN black-market) ('' ''))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (NN abortion))
+                  (VP (VBZ is)
+                    (ADJP (RB generally) (JJ illegal))))))))))
+    (. .)))
+
+amod(abortions-2, Back-alley-1)
+nsubj(abortions-4, abortions-2)
+cop(abortions-4, are-3)
+root(ROOT-0, abortions-4)
+partmod(abortions-4, performed-5)
+advmod(performed-5, illegally-6)
+det(black-market-10, the-8)
+prep_on(performed-5, black-market-10)
+advmod(illegal-16, when-12)
+nsubj(illegal-16, abortion-13)
+cop(illegal-16, is-14)
+advmod(illegal-16, generally-15)
+dep(black-market-10, illegal-16)
+
+(ROOT
+  (S
+    (NP (JJ Back-alley) (NNS abortions))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RBR less) (JJ regulated))
+        (CC and)
+        (ADJP (RBR more) (JJ likely)
+          (S
+            (VP (TO to)
+              (VP (VB result)
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NN death)
+                      (CC or)
+                      (NN harming))
+                    (PP (IN of)
+                      (NP (DT the) (NN mother)))))))))))
+    (. .)))
+
+amod(abortions-2, Back-alley-1)
+nsubj(regulated-5, abortions-2)
+nsubj(likely-8, abortions-2)
+cop(regulated-5, are-3)
+advmod(regulated-5, less-4)
+root(ROOT-0, regulated-5)
+advmod(likely-8, more-7)
+conj_and(regulated-5, likely-8)
+aux(result-10, to-9)
+xcomp(likely-8, result-10)
+det(death-13, the-12)
+prep_in(result-10, death-13)
+prep_in(result-10, harming-15)
+conj_or(death-13, harming-15)
+det(mother-18, the-17)
+prep_of(death-13, mother-18)
+

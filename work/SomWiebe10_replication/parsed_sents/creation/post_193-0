@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Perhaps))
+      (NP (DT the) (NN author))
+      (VP (MD can)
+        (VP (VB explain)
+          (NP
+            (NP (JJ why)
+              (PRN (, ,)
+                (PP (IN of)
+                  (NP
+                    (NP (DT all))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NNS thousands))
+                        (PP (IN of)
+                          (NP
+                            (NP (NNS researchers))
+                            (PP (IN in)
+                              (NP (NN geology)))))))))
+                (, ,))
+              (NN biology))
+            (PRN (-LRB- -LRB-)
+              (NP (RB particularly) (JJ evolutionary) (NN biologists))
+              (-RRB- -RRB-))))))
+    (, ,)
+    (CC and)
+    (FRAG
+      (ADVP (RB paleontology))
+      (. .))
+    (. .)))
+
+advmod(explain-5, Perhaps-1)
+det(author-3, the-2)
+nsubj(explain-5, author-3)
+aux(explain-5, can-4)
+root(ROOT-0, explain-5)
+amod(biology-18, why-6)
+dep(biology-18, of-8)
+pobj(of-8, all-9)
+det(thousands-12, the-11)
+prep_of(all-9, thousands-12)
+prep_of(thousands-12, researchers-14)
+prep_in(researchers-14, geology-16)
+dobj(explain-5, biology-18)
+advmod(biologists-22, particularly-20)
+amod(biologists-22, evolutionary-21)
+appos(biology-18, biologists-22)
+conj_and(explain-5, paleontology-26)
+

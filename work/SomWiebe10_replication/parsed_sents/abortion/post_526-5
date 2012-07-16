@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (, ,)
+    (S
+      (NP
+        (ADJP (IN if))
+        (NN someone))
+      (VP (VBZ buys)
+        (NP (NN something))))
+    (, ,)
+    (S
+      (NP (PRP it))
+      (NP
+        (NP (PRP$ his) (NN property))
+        (PP (IN by)
+          (NP (NN right)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (RB absolutely) (JJ wrong))
+        (S
+          (VP (TO to)
+            (VP (VB take)
+              (NP (PRP it))
+              (ADVP (RB away)))))))
+    (. .)))
+
+prep_for(buys-6, example-2)
+amod(someone-5, if-4)
+nsubj(buys-6, someone-5)
+root(ROOT-0, buys-6)
+dobj(buys-6, something-7)
+dep(property-11, it-9)
+poss(property-11, his-10)
+ccomp(buys-6, property-11)
+conj_and(buys-6, property-11)
+prep_by(property-11, right-13)
+nsubj(wrong-19, it-16)
+xsubj(take-21, it-16)
+cop(wrong-19, is-17)
+advmod(wrong-19, absolutely-18)
+conj_and(buys-6, wrong-19)
+aux(take-21, to-20)
+xcomp(wrong-19, take-21)
+dobj(take-21, it-22)
+advmod(take-21, away-23)
+

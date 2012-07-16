@@ -1,0 +1,27 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Science))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN on)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (MD can)
+                (VP (VB be)
+                  (VP (VBN observed)
+                    (NP
+                      (NP (NNP \/))
+                      (VP (VBN tested)))))))))))
+    (. .)))
+
+nsubjpass(based-4, Science-2)
+auxpass(based-4, is-3)
+root(ROOT-0, based-4)
+nsubjpass(observed-9, what-6)
+aux(observed-9, can-7)
+auxpass(observed-9, be-8)
+prepc_on(based-4, observed-9)
+dobj(observed-9, \/-10)
+partmod(\/-10, tested-11)
+

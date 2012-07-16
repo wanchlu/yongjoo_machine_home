@@ -1,0 +1,39 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (PRP they))
+      (VP (MD ca) (RB n't)
+        (VP (VB vote)
+          (PP (IN for)
+            (NP (DT a) (JJ pro-choice) (NN candidate)))
+          (SBAR
+            (SBARQ
+              (WHADVP
+                (ADVP (RB then))
+                (WRB why))
+              (SQ (MD can)
+                (NP (PRP they))
+                (VP (VB vote)
+                  (PP (IN for)
+                    (NP (DT a) (JJ pro) (NN death) (NN penalty) (NN candidate)))))
+              (. ?))))))))
+
+mark(vote-5, If-1)
+nsubj(vote-5, they-2)
+aux(vote-5, ca-3)
+neg(vote-5, n't-4)
+root(ROOT-0, vote-5)
+det(candidate-9, a-7)
+amod(candidate-9, pro-choice-8)
+prep_for(vote-5, candidate-9)
+advmod(why-11, then-10)
+advmod(vote-14, why-11)
+aux(vote-14, can-12)
+nsubj(vote-14, they-13)
+dep(vote-5, vote-14)
+det(candidate-20, a-16)
+amod(candidate-20, pro-17)
+nn(candidate-20, death-18)
+nn(candidate-20, penalty-19)
+prep_for(vote-14, candidate-20)
+

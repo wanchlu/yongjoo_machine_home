@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN opinion))
+    (VP (VBZ is)
+      (ADJP (JJ unimportant)
+        (PP (TO to)
+          (SBAR (IN whether)
+            (S
+              (NP (NN creationism))
+              (VP (VBZ belongs)
+                (PP (IN in)
+                  (NP
+                    (NP (NN science) (NNS classes))
+                    (SBAR
+                      (S
+                        (NP (NNP Public) (NN opinion))
+                        (VP (VBZ does) (RB not)
+                          (VP (VB determine)
+                            (SBAR (IN whether)
+                              (S
+                                (NP (NN creationism))
+                                (VP (VBZ qualifies)
+                                  (PP (IN as)
+                                    (NP (NN science))))))))))))))))))
+    (. .)))
+
+nn(opinion-2, Public-1)
+nsubj(unimportant-4, opinion-2)
+cop(unimportant-4, is-3)
+root(ROOT-0, unimportant-4)
+complm(belongs-8, whether-6)
+nsubj(belongs-8, creationism-7)
+prepc_to(unimportant-4, belongs-8)
+nn(classes-11, science-10)
+prep_in(belongs-8, classes-11)
+dobj(determine-16, classes-11)
+nn(opinion-13, Public-12)
+nsubj(determine-16, opinion-13)
+aux(determine-16, does-14)
+neg(determine-16, not-15)
+rcmod(classes-11, determine-16)
+complm(qualifies-19, whether-17)
+nsubj(qualifies-19, creationism-18)
+ccomp(determine-16, qualifies-19)
+prep_as(qualifies-19, science-21)
+

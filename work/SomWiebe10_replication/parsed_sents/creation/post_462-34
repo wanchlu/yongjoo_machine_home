@@ -1,0 +1,43 @@
+(ROOT
+  (S (IN So)
+    (SBAR (IN if)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (JJ wrong)))))
+    (, ,)
+    (NP (EX there))
+    (VP (MD should)
+      (VP (VB be)
+        (NP
+          (NP (NN evidence))
+          (, ,)
+          (NP
+            (NP (JJ scientific) (NN evidence))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ does) (RB not)
+                  (VP (VB fit)
+                    (PP (IN with)
+                      (NP (DT that) (NN worldview)))))))))))
+    (. .)))
+
+dep(evidence-10, So-1)
+mark(wrong-5, if-2)
+nsubj(wrong-5, it-3)
+cop(wrong-5, is-4)
+advcl(evidence-10, wrong-5)
+expl(evidence-10, there-7)
+aux(evidence-10, should-8)
+cop(evidence-10, be-9)
+root(ROOT-0, evidence-10)
+amod(evidence-13, scientific-12)
+appos(evidence-10, evidence-13)
+nsubj(fit-17, evidence-13)
+aux(fit-17, does-15)
+neg(fit-17, not-16)
+rcmod(evidence-13, fit-17)
+det(worldview-20, that-19)
+prep_with(fit-17, worldview-20)
+

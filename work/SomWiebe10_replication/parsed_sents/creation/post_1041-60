@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (ADVP (RB really))
+      (VP (VB know)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (VP (TO to)
+              (VP (VB answer)
+                (S
+                  (NP (PRP you))
+                  (ADJP (JJ other))
+                  (SBAR (IN than)
+                    (S
+                      (VP (TO to)
+                        (VP (VB say)
+                          (SBAR (IN that)
+                            (S
+                              (NP (PRP it))
+                              (VP (VBZ 's) (RB not)
+                                (ADJP (JJ true))))))))))))))))
+    (. .)))
+
+nsubj(know-5, I-1)
+aux(know-5, do-2)
+neg(know-5, n't-3)
+advmod(know-5, really-4)
+root(ROOT-0, know-5)
+advmod(answer-8, how-6)
+aux(answer-8, to-7)
+ccomp(know-5, answer-8)
+xcomp(know-5, answer-8)
+nsubj(say-13, you-9)
+dep(say-13, other-10)
+mark(say-13, than-11)
+aux(say-13, to-12)
+xcomp(answer-8, say-13)
+complm(true-18, that-14)
+nsubj(true-18, it-15)
+cop(true-18, 's-16)
+neg(true-18, not-17)
+ccomp(say-13, true-18)
+

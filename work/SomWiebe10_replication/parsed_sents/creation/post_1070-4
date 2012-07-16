@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Apart))
+      (IN from)
+      (NP (DT this)))
+    (, ,)
+    (NP
+      (NP (DT a) (NN person))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ does) (RB not)
+            (VP (VB know)
+              (NP
+                (NP (NN science)
+                  (CC or)
+                  (NN evolution))
+                (PP (IN of)
+                  (NP (NN life)))))))))
+    (VP (VBZ tends)
+      (S
+        (VP (TO to)
+          (VP (VB believe)
+            (SBAR (IN that)
+              (S
+                (NP (NN creationism))
+                (VP (VBZ is)
+                  (ADJP (JJ true)))))))))
+    (. .)))
+
+prep_apart_from(tends-16, this-3)
+det(person-6, a-5)
+nsubj(know-10, person-6)
+nsubj(tends-16, person-6)
+xsubj(believe-18, person-6)
+aux(know-10, does-8)
+neg(know-10, not-9)
+rcmod(person-6, know-10)
+dobj(know-10, science-11)
+dobj(know-10, evolution-13)
+conj_or(science-11, evolution-13)
+prep_of(science-11, life-15)
+root(ROOT-0, tends-16)
+aux(believe-18, to-17)
+xcomp(tends-16, believe-18)
+complm(true-22, that-19)
+nsubj(true-22, creationism-20)
+cop(true-22, is-21)
+ccomp(believe-18, true-22)
+

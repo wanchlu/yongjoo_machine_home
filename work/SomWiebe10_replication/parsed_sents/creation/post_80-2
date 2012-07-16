@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS authors))
+      (PP (IN of)
+        (NP (JJ sacred) (NNS texts))))
+    (ADVP (RB never))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBD were)
+            (VP (VBG writing)
+              (NP
+                (NP (NNS facts))
+                (SBAR
+                  (S
+                    (NP (PRP they))
+                    (VP (VBD were)
+                      (VP (VBG writing)
+                        (NP (NNS truths))))))))))))
+    (. .)))
+
+det(authors-2, The-1)
+nsubj(thought-7, authors-2)
+amod(texts-5, sacred-4)
+prep_of(authors-2, texts-5)
+neg(thought-7, never-6)
+root(ROOT-0, thought-7)
+nsubj(writing-10, they-8)
+aux(writing-10, were-9)
+ccomp(thought-7, writing-10)
+dobj(writing-10, facts-11)
+nsubj(writing-14, they-12)
+aux(writing-14, were-13)
+rcmod(facts-11, writing-14)
+dobj(writing-14, truths-15)
+

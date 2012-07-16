@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP 'm)
+          (ADVP (RB here))
+          (ADJP (RB just)
+            (S
+              (VP (TO to)
+                (VP (VB live)
+                  (CC and)
+                  (VB die))))))))
+    (, ,)
+    (NP
+      (NP (DT no) (NN wonder))
+      (NP (DT the) (NN suicide) (NN rate)))
+    (VP (VBZ is)
+      (ADJP (RB as) (JJ high))
+      (SBAR (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)))))
+    (. !)))
+
+mark(just-5, If-1)
+nsubj(just-5, I-2)
+cop(just-5, 'm-3)
+advmod(just-5, here-4)
+advcl(high-18, just-5)
+aux(live-7, to-6)
+xcomp(just-5, live-7)
+xcomp(just-5, die-9)
+conj_and(live-7, die-9)
+det(wonder-12, no-11)
+nsubj(high-18, wonder-12)
+det(rate-15, the-13)
+nn(rate-15, suicide-14)
+dep(wonder-12, rate-15)
+cop(high-18, is-16)
+advmod(high-18, as-17)
+root(ROOT-0, high-18)
+mark(is-21, as-19)
+nsubj(is-21, it-20)
+advcl(high-18, is-21)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD 'll)
+        (VP (VB say)
+          (NP (PRP it))
+          (ADVP (RB again)))))
+    (: :)
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (VP (VBN found)
+          (NP (NN purpose)))))
+    (. .)))
+
+nsubj(say-3, I-1)
+aux(say-3, 'll-2)
+root(ROOT-0, say-3)
+dobj(say-3, it-4)
+advmod(say-3, again-5)
+nsubj(found-9, I-7)
+aux(found-9, 've-8)
+parataxis(say-3, found-9)
+dobj(found-9, purpose-10)
+

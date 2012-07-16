@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP =))
+        (SBAR
+          (S
+            (VP (SYM =)
+              (NP (PRP I))))))
+      (VP (VBN asked)
+        (S
+          (VP (SYM =)
+            (NP (NNS =))))))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 1))
+      (-RRB- -RRB-))
+    ('' '')
+    (VP (VBZ Ask)
+      (NP (PRP yourself))
+      (NP
+        (NP (DT this) (JJ simple) (NN question))
+        (: :)
+        (SBARQ
+          (WHADVP (WRB How))
+          (SQ (VBZ does)
+            (NP (NNP ID))
+            (VP (VB explain)
+              (NP (DT the) (JJ bacterial) (NN flagella)))))))
+    (. ?)))
+
+nsubj(Ask-11, =-1)
+dep(I-3, =-2)
+rcmod(=-1, I-3)
+partmod(=-1, asked-4)
+dep(=-6, =-5)
+ccomp(asked-4, =-6)
+dep(Ask-11, 1-8)
+root(ROOT-0, Ask-11)
+iobj(Ask-11, yourself-12)
+det(question-15, this-13)
+amod(question-15, simple-14)
+dobj(Ask-11, question-15)
+advmod(explain-20, How-17)
+aux(explain-20, does-18)
+nsubj(explain-20, ID-19)
+dep(question-15, explain-20)
+det(flagella-23, the-21)
+amod(flagella-23, bacterial-22)
+dobj(explain-20, flagella-23)
+

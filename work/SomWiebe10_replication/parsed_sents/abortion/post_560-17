@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP
+          (NP (NNP Dr.) (NNP Tiller) (POS 's))
+          (NNS patients))))
+    (ADVP (RB recently))
+    (VP (VBD wrote)
+      (PP (IN about)
+        (NP
+          (NP (DT the) (NN abortion))
+          (SBAR
+            (S
+              (NP (PRP she))
+              (VP (VBD had)
+                (PP (IN at)
+                  (ADJP (JJ 22-weeks))))))))
+      (SBAR (IN because)
+        (S
+          (NP (PRP she))
+          (VP (VBD developed)
+            (NP (NN pre-eclempsia))))))
+    (. .)))
+
+nsubj(wrote-8, One-1)
+nn(Tiller-4, Dr.-3)
+poss(patients-6, Tiller-4)
+prep_of(One-1, patients-6)
+advmod(wrote-8, recently-7)
+root(ROOT-0, wrote-8)
+det(abortion-11, the-10)
+prep_about(wrote-8, abortion-11)
+dobj(had-13, abortion-11)
+nsubj(had-13, she-12)
+rcmod(abortion-11, had-13)
+prep_at(had-13, 22-weeks-15)
+mark(developed-18, because-16)
+nsubj(developed-18, she-17)
+advcl(wrote-8, developed-18)
+dobj(developed-18, pre-eclempsia-19)
+

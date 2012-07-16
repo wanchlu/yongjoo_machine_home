@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (LST (-LRB- -LRB-) (LS 3) (-RRB- -RRB-))
+    (NP (NNP A))
+    (VP
+      (VP (VBP desire)
+        (PP (IN for)
+          (NP (JJ total) (NN independence))))
+      (, ,)
+      (CC and\/or)
+      (VP
+        (NP (DT the) (NN belief))
+        (SBAR (IN that)
+          (S
+            (NP (PRP one))
+            (VP (VBZ has)
+              (NP
+                (NP (NN logic))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ eclipses)
+                      (NP (JJ traditional) (NNS beliefs)))))))))))
+    (. .)))
+
+dep(desire-5, 3-2)
+nsubj(desire-5, A-4)
+root(ROOT-0, desire-5)
+amod(independence-8, total-7)
+prep_for(desire-5, independence-8)
+det(belief-12, the-11)
+conj_and\/or(desire-5, belief-12)
+complm(has-15, that-13)
+nsubj(has-15, one-14)
+ccomp(belief-12, has-15)
+dobj(has-15, logic-16)
+nsubj(eclipses-18, logic-16)
+rcmod(logic-16, eclipses-18)
+amod(beliefs-20, traditional-19)
+dobj(eclipses-18, beliefs-20)
+

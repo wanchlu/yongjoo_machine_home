@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (DT A) (NN child))
+    (VP (VBZ needs)
+      (NP
+        (NP (DT a) (NN mother))
+        (CC and)
+        (NP (DT a) (NN father) (NN figure))))
+    (. .)))
+
+det(child-2, A-1)
+nsubj(needs-3, child-2)
+root(ROOT-0, needs-3)
+det(mother-5, a-4)
+dobj(needs-3, mother-5)
+det(figure-9, a-7)
+nn(figure-9, father-8)
+dobj(needs-3, figure-9)
+conj_and(mother-5, figure-9)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (CD two) (NNS men))
+        (VP (VBP adopt))))
+    (NP (DT a) (NN girl))
+    (ADVP (WRB how))
+    (VP (VBP are)
+      (NP
+        (NP (PRP they))
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB explain)
+                (NP (NN girl) (NN stuff))))))))
+    (. .)))
+
+mark(adopt-4, If-1)
+num(men-3, two-2)
+nsubj(adopt-4, men-3)
+advcl(they-9, adopt-4)
+det(girl-6, a-5)
+nsubj(they-9, girl-6)
+advmod(they-9, how-7)
+cop(they-9, are-8)
+root(ROOT-0, they-9)
+xsubj(explain-12, they-9)
+partmod(they-9, going-10)
+aux(explain-12, to-11)
+xcomp(going-10, explain-12)
+nn(stuff-14, girl-13)
+dobj(explain-12, stuff-14)
+

@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (QP (RB as) (JJ much) (IN as) (CD Behe)))
+      (VP (VBZ 's)
+        (ADJP (RB somewhat) (JJ misleading))))
+    (: --)
+    (S
+      (ADVP (RB Yet))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNP Lenski))
+          (VP (VBD tracked)
+            (PRT (RP down))
+            (NP (DT the) (NNS mutations)))))
+      (, ,)
+      (NP (PRP they))
+      (VP (VBD tended)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (JJ degradative) (NNS changes))
+                (, ,)
+                (NP
+                  (NP (NNS ones))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP
+                        (VP (VBD destroyed)
+                          (NP (NNS genes)))
+                        (CC or)
+                        (VP (VBD made)
+                          (S
+                            (NP (PRP them))
+                            (ADJP (RBR less) (JJ efficient))))))))))))))
+    (. .)))
+
+quantmod(Behe-4, as-1)
+quantmod(Behe-4, much-2)
+quantmod(Behe-4, as-3)
+nsubj(misleading-7, Behe-4)
+cop(misleading-7, 's-5)
+advmod(misleading-7, somewhat-6)
+root(ROOT-0, misleading-7)
+advmod(tended-19, Yet-9)
+advmod(tracked-13, when-11)
+nsubj(tracked-13, Lenski-12)
+advcl(tended-19, tracked-13)
+prt(tracked-13, down-14)
+det(mutations-16, the-15)
+dobj(tracked-13, mutations-16)
+nsubj(tended-19, they-18)
+xsubj(changes-23, they-18)
+parataxis(misleading-7, tended-19)
+aux(changes-23, to-20)
+cop(changes-23, be-21)
+amod(changes-23, degradative-22)
+xcomp(tended-19, changes-23)
+appos(changes-23, ones-25)
+nsubj(destroyed-27, ones-25)
+nsubj(made-30, ones-25)
+rcmod(ones-25, destroyed-27)
+dobj(destroyed-27, genes-28)
+rcmod(ones-25, made-30)
+conj_or(destroyed-27, made-30)
+nsubj(efficient-33, them-31)
+advmod(efficient-33, less-32)
+xcomp(made-30, efficient-33)
+

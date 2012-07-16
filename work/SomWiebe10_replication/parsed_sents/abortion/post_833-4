@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (VBG killing) (NNS babies))
+        (VP (VBZ makes)
+          (S
+            (NP (DT a) (NN person))
+            (ADJP (JJ happy))
+            (ADVP (RB then))))))
+    (NP (PRP they))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN put)
+          (PP (IN in)
+            (NP (DT an) (NN asylum))))))
+    (. .)))
+
+mark(makes-4, If-1)
+amod(babies-3, killing-2)
+nsubj(makes-4, babies-3)
+advcl(put-12, makes-4)
+det(person-6, a-5)
+nsubj(happy-7, person-6)
+xcomp(makes-4, happy-7)
+advmod(happy-7, then-8)
+nsubjpass(put-12, they-9)
+aux(put-12, should-10)
+auxpass(put-12, be-11)
+root(ROOT-0, put-12)
+det(asylum-15, an-14)
+prep_in(put-12, asylum-15)
+

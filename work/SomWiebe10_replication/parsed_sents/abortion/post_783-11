@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP find)
+        (S
+          (NP (DT that))
+          (ADJP (RB morally) (JJ wrong)))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (ADVP (RB also))
+      (VP (VBP find)
+        (S
+          (NP (PRP it))
+          (ADJP (RB economically) (JJ wrong))
+          (SBAR (IN as)
+            (S
+              (NP (PRP it))
+              (VP (MD will)
+                (VP
+                  (VP (VB increase)
+                    (NP (DT the) (NN prison) (NN population)))
+                  (CC and)
+                  (VP
+                    (ADVP (RB once) (RB again))
+                    (VB redirect)
+                    (NP (PRP$ my) (NN tax) (NNS dollars))
+                    (PP (IN from)
+                      (NP (NNS causes)))
+                    (SBAR
+                      (S
+                        (NP (PRP I))
+                        (VP (MD 'd) (RB rather)
+                          (VP (VB see)
+                            (S
+                              (NP (PRP them))
+                              (VP (VB go)
+                                (PP (TO to))))))))))))))))
+    (. .)))
+
+nsubj(find-2, I-1)
+root(ROOT-0, find-2)
+nsubj(wrong-5, that-3)
+advmod(wrong-5, morally-4)
+xcomp(find-2, wrong-5)
+nsubj(find-9, I-7)
+advmod(find-9, also-8)
+conj_but(find-2, find-9)
+nsubj(increase-16, it-10)
+nsubj(redirect-23, it-10)
+advmod(wrong-12, economically-11)
+dep(increase-16, wrong-12)
+mark(increase-16, as-13)
+nsubj(increase-16, it-14)
+aux(increase-16, will-15)
+xcomp(find-9, increase-16)
+det(population-19, the-17)
+nn(population-19, prison-18)
+dobj(increase-16, population-19)
+advmod(again-22, once-21)
+advmod(redirect-23, again-22)
+xcomp(find-9, redirect-23)
+conj_and(increase-16, redirect-23)
+poss(dollars-26, my-24)
+nn(dollars-26, tax-25)
+dobj(redirect-23, dollars-26)
+prep_from(redirect-23, causes-28)
+nsubj(see-32, I-29)
+aux(see-32, 'd-30)
+advmod(see-32, rather-31)
+dep(redirect-23, see-32)
+nsubj(go-34, them-33)
+ccomp(see-32, go-34)
+prep(go-34, to-35)
+

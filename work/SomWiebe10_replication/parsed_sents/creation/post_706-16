@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ suffers)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (JJ same) (NNS problems))
+          (SBAR
+            (S
+              (NP
+                (NP (DT any) (NN statement))
+                (VP (VBN made)
+                  (PP (IN in)
+                    (NP (DT a) (JJ verbal) (NN language)))))
+              (VP (VBZ does)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ suffers)
+                      (PP (IN from)
+                        (S (RB not)
+                          (VP (VBG being)
+                            (ADJP (`` ``) (RB completely) (VBN correct) ('' ''))))))))))))))
+    (. .)))
+
+nsubj(suffers-2, it-1)
+root(ROOT-0, suffers-2)
+det(problems-6, the-4)
+amod(problems-6, same-5)
+prep_from(suffers-2, problems-6)
+det(statement-8, any-7)
+nsubj(does-14, statement-8)
+partmod(statement-8, made-9)
+det(language-13, a-11)
+amod(language-13, verbal-12)
+prep_in(made-9, language-13)
+rcmod(problems-6, does-14)
+nsubj(suffers-16, it-15)
+ccomp(does-14, suffers-16)
+neg(correct-22, not-18)
+auxpass(correct-22, being-19)
+advmod(correct-22, completely-21)
+prepc_from(suffers-16, correct-22)
+

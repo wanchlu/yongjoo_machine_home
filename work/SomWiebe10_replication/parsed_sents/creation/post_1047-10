@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Science))
+      (VP (VBZ has)
+        (NP
+          (NP (VBG working) (NNS theories))
+          (PP (IN for)
+            (NP
+              (NP (JJS most))
+              (PP (IN of)
+                (NP (DT this) (NN stuff))))))))
+    (CC and)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP it))
+          (VP (VBZ does) (RB n't))))
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (VP (VBG working)
+          (PP (IN on)
+            (NP (PRP them)))
+          (SBAR (IN because)
+            (S
+              (NP (DT that))
+              (VP (VBZ 's)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (NN science))
+                    (VP (VBZ does))))))))))
+    (. .)))
+
+nsubj(has-2, Science-1)
+root(ROOT-0, has-2)
+amod(theories-4, working-3)
+dobj(has-2, theories-4)
+prep_for(theories-4, most-6)
+det(stuff-9, this-8)
+prep_of(most-6, stuff-9)
+mark(does-13, if-11)
+nsubj(does-13, it-12)
+advcl(working-17, does-13)
+neg(does-13, n't-14)
+nsubj(working-17, it-15)
+aux(working-17, 's-16)
+conj_and(has-2, working-17)
+prep_on(working-17, them-19)
+mark('s-22, because-20)
+nsubj('s-22, that-21)
+advcl(working-17, 's-22)
+dobj(does-25, what-23)
+nsubj(does-25, science-24)
+ccomp('s-22, does-25)
+

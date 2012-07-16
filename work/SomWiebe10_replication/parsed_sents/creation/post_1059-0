@@ -1,0 +1,39 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (NN evolution))
+          (VP (VBZ is)
+            (NP
+              (NP (DT a)
+                (ADJP (RB naturally) (JJ occurring))
+                (NN process))
+              (PRN (, ,) (RB not)
+                (NP
+                  (NP (DT a) (NN consequence))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT a) (JJ controlled) (NN experiment))
+                      (PP (IN in)
+                        (NP (DT a) (NN lab))))))))))))
+    (. .)))
+
+nsubj(thought-3, I-2)
+root(ROOT-0, thought-3)
+nsubj(process-9, evolution-4)
+cop(process-9, is-5)
+det(process-9, a-6)
+advmod(occurring-8, naturally-7)
+amod(process-9, occurring-8)
+ccomp(thought-3, process-9)
+dep(consequence-13, not-11)
+det(consequence-13, a-12)
+dep(process-9, consequence-13)
+det(experiment-17, a-15)
+amod(experiment-17, controlled-16)
+prep_of(consequence-13, experiment-17)
+det(lab-20, a-19)
+prep_in(experiment-17, lab-20)
+

@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP know)))
+    (, ,)
+    (NP
+      (NP (NN quotation) (NNS marks))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP ''))
+        ('' '') (-RRB- -RRB-)))
+    (VP (VBP indicate)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NNS words))
+            (PP (IN between)
+              (NP (PRP them))))
+          (VP (VBP come)
+            (PP (IN from)
+              (NP
+                (NP (RB somewhere) (JJ other))
+                (PP (IN than)
+                  (NP (DT the) (NN writer)))))))))
+    (. .)))
+
+nsubj(know-2, You-1)
+ccomp(indicate-10, know-2)
+nn(marks-5, quotation-4)
+nsubj(indicate-10, marks-5)
+root(ROOT-0, indicate-10)
+complm(come-16, that-11)
+det(words-13, the-12)
+nsubj(come-16, words-13)
+prep_between(words-13, them-15)
+ccomp(indicate-10, come-16)
+advmod(other-19, somewhere-18)
+prep_from(come-16, other-19)
+det(writer-22, the-21)
+prep_than(other-19, writer-22)
+

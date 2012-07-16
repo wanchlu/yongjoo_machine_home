@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN abortion))
+        (VP (MD should)
+          (VP (VB be)
+            (ADJP (JJ illegal))
+            (, ,)
+            (ADVP (RB so))))))
+    (ADVP (RB also))
+    (VP (MD should)
+      (VP (VB non-compliance)
+        (PP (IN with)
+          (NP
+            (NP (JJ other) (JJ medical) (NNS procedures))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can)
+                  (VP (VB save)
+                    (NP (NNS lives))))))))))
+    (. .)))
+
+mark(illegal-5, If-1)
+nsubj(illegal-5, abortion-2)
+aux(illegal-5, should-3)
+cop(illegal-5, be-4)
+advcl(non-compliance-10, illegal-5)
+csubj(non-compliance-10, illegal-5)
+advmod(illegal-5, so-7)
+advmod(non-compliance-10, also-8)
+aux(non-compliance-10, should-9)
+root(ROOT-0, non-compliance-10)
+amod(procedures-14, other-12)
+amod(procedures-14, medical-13)
+prep_with(non-compliance-10, procedures-14)
+nsubj(save-17, procedures-14)
+aux(save-17, can-16)
+rcmod(procedures-14, save-17)
+dobj(save-17, lives-18)
+

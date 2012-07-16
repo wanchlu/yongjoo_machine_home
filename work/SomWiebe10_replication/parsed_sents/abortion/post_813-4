@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBD were)
+            (VP (VBN raped)))
+          (CC and)
+          (VP (VBD got)
+            (S
+              (ADJP (JJ pregnant))
+              (SBAR
+                (SINV (MD would)
+                  (NP (PRP you))
+                  (VP (VB want)
+                    (NP
+                      (NP (DT the) (NN baby))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NN man))
+                          (SBAR
+                            (WHNP (WP who))
+                            (S
+                              (VP (VBZ torments)
+                                (NP (PRP$ your)))))))))))))
+          (NP (DT every) (NN nightmare)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBG growing)
+                    (PP (IN inside)
+                      (NP (PRP you)))
+                    (, ,)
+                    (S
+                      (VP (TO to)
+                        (VP
+                          (ADVP (RBR further))
+                          (VB remind)
+                          (NP
+                            (NP (PRP you))
+                            (PP (IN of)
+                              (NP (DT the) (JJ horrific) (NN thing)))))))))))))))
+    (NP (DT that))
+    (VP (VBD happened)
+      (PP (TO to)
+        (NP (PRP you))))
+    (. .)))
+
+mark(raped-4, If-1)
+nsubjpass(raped-4, you-2)
+nsubjpass(got-6, you-2)
+auxpass(raped-4, were-3)
+advcl(happened-36, raped-4)
+conj_and(raped-4, got-6)
+advcl(happened-36, got-6)
+dep(want-10, pregnant-7)
+aux(want-10, would-8)
+nsubj(want-10, you-9)
+acomp(got-6, want-10)
+det(baby-12, the-11)
+dobj(want-10, baby-12)
+det(man-15, the-14)
+prep_of(baby-12, man-15)
+nsubj(torments-17, man-15)
+rcmod(man-15, torments-17)
+dobj(torments-17, your-18)
+det(nightmare-20, every-19)
+dobj(raped-4, nightmare-20)
+aux(growing-23, to-21)
+aux(growing-23, be-22)
+infmod(nightmare-20, growing-23)
+prep_inside(growing-23, you-25)
+aux(remind-29, to-27)
+advmod(remind-29, further-28)
+xcomp(growing-23, remind-29)
+dobj(remind-29, you-30)
+det(thing-34, the-32)
+amod(thing-34, horrific-33)
+prep_of(you-30, thing-34)
+nsubj(happened-36, that-35)
+root(ROOT-0, happened-36)
+prep_to(happened-36, you-38)
+

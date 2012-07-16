@@ -1,0 +1,55 @@
+(ROOT
+  (S (`` ``)
+    (NP (DT The) (JJ random))
+    (VP (VBZ comes)
+      (PP (IN in)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (NNS particles))
+              (PP (IN of)
+                (NP
+                  (NP (NNP RNA))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBD came)
+                        (PRT (RP out))
+                        (PP (IN of)
+                          (NP (DT the) (JJ primordial) (NN ooze)))))))))
+            (VP (VBN aligned)
+              (PP (IN by)
+                (NP
+                  (NP (NN chance))
+                  (PP (IN in)
+                    (NP (PDT such) (DT a) (NN way)))))
+              (S
+                (VP (TO to)
+                  (VP (VB produce)
+                    (NP (DT a) (JJ single-celled) (NN organism))))))))))
+    (. .)))
+
+det(random-3, The-2)
+nsubj(comes-4, random-3)
+root(ROOT-0, comes-4)
+advmod(aligned-17, when-6)
+nsubj(aligned-17, particles-7)
+xsubj(produce-25, particles-7)
+prep_of(particles-7, RNA-9)
+nsubj(came-11, RNA-9)
+rcmod(RNA-9, came-11)
+det(ooze-16, the-14)
+amod(ooze-16, primordial-15)
+prep_out_of(came-11, ooze-16)
+prepc_in(comes-4, aligned-17)
+prep_by(aligned-17, chance-19)
+predet(way-23, such-21)
+det(way-23, a-22)
+prep_in(chance-19, way-23)
+aux(produce-25, to-24)
+xcomp(aligned-17, produce-25)
+det(organism-28, a-26)
+amod(organism-28, single-celled-27)
+dobj(produce-25, organism-28)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNP Freedom))
+    (VP (VBZ entitles)
+      (S
+        (NP (PRP you))
+        (VP (TO to)
+          (VP (VB do)
+            (SBAR
+              (SBAR
+                (WHNP (WDT whatever))
+                (S
+                  (NP (PRP you))
+                  (VP (VBP want)
+                    (PP (IN with)
+                      (NP (PRP$ your) (NN body))))))
+              (, ,)
+              (CC and)
+              (SBAR
+                (WHPP (IN by)
+                  (WHNP (WDT that)))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP mean)
+                    (SBAR (IN until)
+                      (S
+                        (NP (DT a) (JJ new) (NN human))
+                        (VP (VBZ is)
+                          (ADJP (JJ complete)))))))))))))
+    (. .)))
+
+nsubj(entitles-2, Freedom-1)
+root(ROOT-0, entitles-2)
+nsubj(do-5, you-3)
+aux(do-5, to-4)
+xcomp(entitles-2, do-5)
+dobj(want-8, whatever-6)
+nsubj(want-8, you-7)
+dep(do-5, want-8)
+poss(body-11, your-10)
+prep_with(want-8, body-11)
+dep(mean-17, by-14)
+pobj(by-14, that-15)
+nsubj(mean-17, I-16)
+dep(do-5, mean-17)
+conj_and(want-8, mean-17)
+mark(complete-23, until-18)
+det(human-21, a-19)
+amod(human-21, new-20)
+nsubj(complete-23, human-21)
+cop(complete-23, is-22)
+advcl(mean-17, complete-23)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNP Well))
+    (VP (VBP yeh))
+    (. .) (. .)))
+
+nsubj(yeh-2, Well-1)
+root(ROOT-0, yeh-2)
+
+(ROOT
+  (S (CC but)
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB say)
+        (NP
+          (NP
+            (NP (PRP it) (POS 's))
+            (NN kind))
+          (PP (IN of)
+            (NP (JJ like) (NN denial))))))
+    (. .)))
+
+cc(say-4, but-1)
+nsubj(say-4, I-2)
+aux(say-4, would-3)
+root(ROOT-0, say-4)
+poss(kind-7, it-5)
+dobj(say-4, kind-7)
+amod(denial-10, like-9)
+prep_of(kind-7, denial-10)
+
+(ROOT
+  (S
+    (PP (IN Like)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (NNS alcoholics))
+          (VP (VBP say)))))
+    (NP (PRP they))
+    (VP (VBP 're) (RB not)
+      (NP (NNS alcoholics)))
+    (. ...)))
+
+dep(alcoholics-8, Like-1)
+advmod(say-4, when-2)
+nsubj(say-4, alcoholics-3)
+pcomp(Like-1, say-4)
+nsubj(alcoholics-8, they-5)
+cop(alcoholics-8, 're-6)
+neg(alcoholics-8, not-7)
+root(ROOT-0, alcoholics-8)
+

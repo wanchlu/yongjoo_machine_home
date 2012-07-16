@@ -1,0 +1,52 @@
+(ROOT
+  (SINV
+    (PP (IN In)
+      (NP
+        (NP (JJ other) (NNS words))
+        (, ,)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ is)
+              (ADJP (VBG missing)))))))
+    (VP (VBZ is)
+      (VP (VBG showing)
+        (SBAR (IN that)
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (ADVP (RB exactly))
+              (NP
+                (NP (DT a) (NN prediction)
+                  (CC or)
+                  (NN outcome))
+                (PP (IN of)
+                  (NP (DT the) (NN model)))))))))
+    (SBAR
+      (WHNP (WDT which))
+      (S
+        (NP (NNP Island))
+        (VP (VBZ prefers))))
+    (. .)))
+
+amod(words-3, other-2)
+nsubj(missing-7, words-3)
+prep_in(showing-9, words-3)
+cop(missing-7, is-6)
+rcmod(words-3, missing-7)
+aux(showing-9, is-8)
+root(ROOT-0, showing-9)
+complm(prediction-15, that-10)
+nsubj(prediction-15, this-11)
+cop(prediction-15, is-12)
+advmod(prediction-15, exactly-13)
+det(prediction-15, a-14)
+ccomp(showing-9, prediction-15)
+ccomp(showing-9, outcome-17)
+conj_or(prediction-15, outcome-17)
+det(model-20, the-19)
+prep_of(prediction-15, model-20)
+dobj(prefers-23, which-21)
+nsubj(prefers-23, Island-22)
+dep(showing-9, prefers-23)
+

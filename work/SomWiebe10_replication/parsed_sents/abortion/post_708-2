@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (JJ Many) (NNS people))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (NNP God))
+          (VP (VBD created)
+            (NP
+              (NP (DT the) (NN world))
+              (CC and)
+              (NP
+                (NP (DT the) (NNS people))
+                (PP (IN in)
+                  (NP (PRP it)))))
+            (PP (IN without)
+              (S
+                (VP (VBG believing)
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP He))
+                      (VP (VBZ attends)
+                        (NP (DT every) (NN conception))))))))))))
+    (. .)))
+
+amod(people-2, Many-1)
+nsubj(believe-3, people-2)
+root(ROOT-0, believe-3)
+complm(created-6, that-4)
+nsubj(created-6, God-5)
+ccomp(believe-3, created-6)
+det(world-8, the-7)
+dobj(created-6, world-8)
+det(people-11, the-10)
+dobj(created-6, people-11)
+conj_and(world-8, people-11)
+prep_in(people-11, it-13)
+prepc_without(created-6, believing-15)
+complm(attends-18, that-16)
+nsubj(attends-18, He-17)
+ccomp(believing-15, attends-18)
+det(conception-20, every-19)
+dobj(attends-18, conception-20)
+

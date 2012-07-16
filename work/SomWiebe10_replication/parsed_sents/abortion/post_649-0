@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (ADVP (RB embryology))
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (JJ scientific) (NN study))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN development))
+                (PP (IN of)
+                  (NP (JJ human) (NN life)))
+                (ADVP (RB prior)
+                  (PP (TO to)
+                    (NP (NN birth))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD can) (RB not)
+      (VP (VB think)
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJR better) (JJ scientific) (NN source))
+            (PP (IN for)
+              (S
+                (VP (VBG determining)
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (JJ human) (NN life))
+                      (VP (VBZ begins)))))))))))
+    (. .)))
+
+mark(study-6, Since-1)
+advmod(study-6, embryology-2)
+cop(study-6, is-3)
+det(study-6, the-4)
+amod(study-6, scientific-5)
+advcl(think-20, study-6)
+det(development-9, the-8)
+prep_of(study-6, development-9)
+amod(life-12, human-11)
+prep_of(development-9, life-12)
+prep_prior_to(development-9, birth-15)
+nsubj(think-20, I-17)
+aux(think-20, can-18)
+neg(think-20, not-19)
+root(ROOT-0, think-20)
+det(source-25, a-22)
+amod(source-25, better-23)
+amod(source-25, scientific-24)
+prep_of(think-20, source-25)
+prepc_for(source-25, determining-27)
+advmod(begins-31, when-28)
+amod(life-30, human-29)
+nsubj(begins-31, life-30)
+advcl(determining-27, begins-31)
+

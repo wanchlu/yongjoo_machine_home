@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (SQ
+      (NP (DT The) (NN topic))
+      (VP (VBZ is)))
+    ('' '')
+    (NP (NNP Abortion))
+    (VP (MD Should)
+      (VP
+        (VP (VB be)
+          (VP (VBN banned)))
+        ('' '')
+        (CC and)
+        (VP (VB sense)
+          (NP
+            (NP (JJ therre) (NN ar) (NN diffrent) (NNS situations))
+            (PP (JJ such)
+              (PP (IN as)))
+            ('' ''))
+          (NP
+            (NP (NNS accidents))
+            ('' '')
+            (CC and)
+            (NP (`` ``) (NN rape) ('' '') (NN abortion) (NN shouldnt))))
+        (S
+          (VP (VB be)
+            (VP (VBN banned))))))
+    (. .)))
+
+det(topic-2, The-1)
+nsubj(is-3, topic-2)
+dep(banned-8, is-3)
+nsubjpass(banned-8, Abortion-5)
+nsubj(sense-11, Abortion-5)
+aux(banned-8, Should-6)
+auxpass(banned-8, be-7)
+root(ROOT-0, banned-8)
+conj_and(banned-8, sense-11)
+amod(situations-15, therre-12)
+nn(situations-15, ar-13)
+nn(situations-15, diffrent-14)
+iobj(sense-11, situations-15)
+prep(situations-15, such-16)
+prep(such-16, as-17)
+dobj(sense-11, accidents-19)
+nn(shouldnt-26, rape-23)
+nn(shouldnt-26, abortion-25)
+dobj(sense-11, shouldnt-26)
+conj_and(accidents-19, shouldnt-26)
+auxpass(banned-28, be-27)
+ccomp(banned-8, banned-28)
+

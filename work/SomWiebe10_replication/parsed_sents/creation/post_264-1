@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (LST (LS 1) (-RRB- -RRB-))
+    (NP (DT That) (NNS mutations))
+    (VP (`` ``)
+      (VP (VBD tended)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (NP (JJ degradative) (NNS changes))
+                (, ,)
+                (NP
+                  (NP (NNS ones))
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBD destroyed)
+                        (NP (NNS genes)))))))))))
+      (CC or)
+      (VP (VBD made)
+        (S
+          (NP (PRP them))
+          (ADJP (RBR less) (JJ efficient)))))
+    (. .)))
+
+dep(tended-6, 1-1)
+det(mutations-4, That-3)
+nsubj(tended-6, mutations-4)
+xsubj(changes-10, mutations-4)
+nsubj(made-17, mutations-4)
+root(ROOT-0, tended-6)
+aux(changes-10, to-7)
+cop(changes-10, be-8)
+amod(changes-10, degradative-9)
+xcomp(tended-6, changes-10)
+appos(changes-10, ones-12)
+nsubj(destroyed-14, ones-12)
+rcmod(ones-12, destroyed-14)
+dobj(destroyed-14, genes-15)
+conj_or(tended-6, made-17)
+nsubj(efficient-20, them-18)
+advmod(efficient-20, less-19)
+xcomp(made-17, efficient-20)
+

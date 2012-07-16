@@ -1,0 +1,731 @@
+(ROOT
+  (S
+    (NP (NNP Hitler))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN murderer))
+        (PP (IN for)
+          (S
+            (VP (VBG having)
+              (NP (NNS abortions)))))))
+    (. ?)))
+
+nsubj(murderer-4, Hitler-1)
+cop(murderer-4, was-2)
+det(murderer-4, a-3)
+root(ROOT-0, murderer-4)
+prepc_for(murderer-4, having-6)
+dobj(having-6, abortions-7)
+
+(ROOT
+  (S
+    (PP (IN Like)
+      (S
+        (NP (PRP I))
+        (VP (VBD said))))
+    (, ,)
+    (VP (VB keep)
+      (NP (PRP it))
+      (PP (TO to)
+        (NP (DT the) (NN topic))))
+    (. .)))
+
+nsubj(said-3, I-2)
+prepc_like(keep-5, said-3)
+root(ROOT-0, keep-5)
+dobj(keep-5, it-6)
+det(topic-9, the-8)
+prep_to(keep-5, topic-9)
+
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBZ looks)
+      (PP (IN at)
+        (NP
+          (NP (DT every) (NN sin))
+          (NP (DT the) (JJ same) (NN way))))
+      (, ,)
+      (PP (IN except) (IN for)
+        (NP
+          (NP (NN blasphemy))
+          (PP (IN against)
+            (NP (NNP HS))))))
+    (. .)))
+
+nsubj(looks-2, God-1)
+root(ROOT-0, looks-2)
+det(sin-5, every-4)
+prep_at(looks-2, sin-5)
+det(way-8, the-6)
+amod(way-8, same-7)
+dep(sin-5, way-8)
+prep_except_for(looks-2, blasphemy-12)
+prep_against(blasphemy-12, HS-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN person))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ commits)
+            (NP (DT a) (NN murder))))))
+    (VP (VBZ commits)
+      (NP
+        (NP (DT the) (JJ same) (NN sin))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS eyes))
+            (PP (IN of)
+              (NP (NNP God))))))
+      (PP (IN as)
+        (NP
+          (NP (NN someone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ lies)))))))
+    (. .)))
+
+det(person-2, A-1)
+nsubj(commits-4, person-2)
+nsubj(commits-7, person-2)
+rcmod(person-2, commits-4)
+det(murder-6, a-5)
+dobj(commits-4, murder-6)
+root(ROOT-0, commits-7)
+det(sin-10, the-8)
+amod(sin-10, same-9)
+dobj(commits-7, sin-10)
+det(eyes-13, the-12)
+prep_in(sin-10, eyes-13)
+prep_of(eyes-13, God-15)
+prep_as(commits-7, someone-17)
+nsubj(lies-19, someone-17)
+rcmod(someone-17, lies-19)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB deny)
+              (NP (PRP it)))))))
+    (. ?)))
+
+advmod(trying-4, Why-1)
+aux(trying-4, are-2)
+nsubj(trying-4, you-3)
+xsubj(deny-6, you-3)
+root(ROOT-0, trying-4)
+aux(deny-6, to-5)
+xcomp(trying-4, deny-6)
+dobj(deny-6, it-7)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP have)
+        (ADVP (RB no) (RB right))
+        (S
+          (VP (TO to)
+            (VP (VB tell)
+              (NP (NN someone))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP$ their) (NN sin))
+                  (VP (VBZ is)
+                    (ADJP (JJR worse))
+                    (PP (IN than)
+                      (NP (NNP yours)))
+                    (, ,)
+                    (SBAR (IN because)
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP are) (RB not)
+                          (NP (NNP God)))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNP God))
+      (VP (VBZ does) (RB not)
+        (VP (VB judge)
+          (NP
+            (NP (NNS sins))
+            (NP (DT that) (NN way)))
+          (PP
+            (PP (IN except)
+              (PP (IN for)
+                (NP (CD one))))
+            (, ,)
+            (ADVP (RB blasphemy))
+            (PP (IN against)
+              (NP (NNP HS)))))))
+    (. .)))
+
+nsubj(have-2, You-1)
+xsubj(tell-6, You-1)
+root(ROOT-0, have-2)
+advmod(right-4, no-3)
+advmod(have-2, right-4)
+aux(tell-6, to-5)
+xcomp(have-2, tell-6)
+dobj(tell-6, someone-7)
+complm(worse-12, that-8)
+poss(sin-10, their-9)
+nsubj(worse-12, sin-10)
+cop(worse-12, is-11)
+ccomp(tell-6, worse-12)
+prep_than(worse-12, yours-14)
+mark(God-20, because-16)
+nsubj(God-20, you-17)
+cop(God-20, are-18)
+neg(God-20, not-19)
+advcl(worse-12, God-20)
+nsubj(judge-26, God-23)
+aux(judge-26, does-24)
+neg(judge-26, not-25)
+conj_and(have-2, judge-26)
+dobj(judge-26, sins-27)
+iobj(judge-26, sins-27)
+det(way-29, that-28)
+dobj(judge-26, way-29)
+dep(sins-27, way-29)
+prepc_except_for(judge-26, for-31)
+pobj(judge-26, one-32)
+advmod(judge-26, blasphemy-34)
+prep_against(judge-26, HS-36)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Go))
+    (VP (VBP get)
+      (NP (PRP$ your) (NN Bible))
+      ('' '')
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBP am)
+                  (ADJP (JJ wrong)))))))))
+    (. .)))
+
+nsubj(get-3, Go-2)
+root(ROOT-0, get-3)
+poss(Bible-5, your-4)
+dobj(get-3, Bible-5)
+mark(think-9, if-7)
+nsubj(think-9, you-8)
+advcl(get-3, think-9)
+nsubj(wrong-12, I-10)
+cop(wrong-12, am-11)
+ccomp(think-9, wrong-12)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB keep)
+        (S
+          (VP (VBG arguing)
+            (PP (IN with)
+              (NP (PRP you)))))
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP continue)
+              (S
+                (VP (TO to)
+                  (VP (VB take)
+                    (NP (DT the) (NN debate))
+                    (PP (IN off)
+                      (NP (NN topic)))))))))))
+    (. .)))
+
+nsubj(keep-4, I-1)
+aux(keep-4, ca-2)
+neg(keep-4, n't-3)
+root(ROOT-0, keep-4)
+xcomp(keep-4, arguing-5)
+prep_with(arguing-5, you-7)
+mark(continue-10, if-8)
+nsubj(continue-10, you-9)
+xsubj(take-12, you-9)
+advcl(keep-4, continue-10)
+aux(take-12, to-11)
+xcomp(continue-10, take-12)
+det(debate-14, the-13)
+dobj(take-12, debate-14)
+prep_off(take-12, topic-16)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (VP (VBG talking)
+        (ADVP (RB specifically))
+        (PP (IN about)
+          (SBAR (IN whether)
+            (S
+              (NP (PRP you))
+              (VP (MD should)
+                (VP (VB judge)
+                  (NP (NN someone))
+                  (PP (IN as)
+                    (NP
+                      (NP (DT a) (NN murderer))
+                      (CC and)
+                      (NP (JJ hell-bound))))
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP have)
+                        (NP (DT an) (NN abortion))))))))))))
+    (. .)))
+
+nsubj(talking-3, We-1)
+aux(talking-3, are-2)
+root(ROOT-0, talking-3)
+advmod(talking-3, specifically-4)
+complm(judge-9, whether-6)
+nsubj(judge-9, you-7)
+aux(judge-9, should-8)
+prepc_about(talking-3, judge-9)
+dobj(judge-9, someone-10)
+det(murderer-13, a-12)
+prep_as(judge-9, murderer-13)
+prep_as(judge-9, hell-bound-15)
+conj_and(murderer-13, hell-bound-15)
+mark(have-18, if-16)
+nsubj(have-18, they-17)
+advcl(judge-9, have-18)
+det(abortion-20, an-19)
+dobj(have-18, abortion-20)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBD said)
+          (NP (DT this))
+          (PP (IN throughout)
+            (NP (PRP$ my) (JJ past) (NNS statements))))))
+    (, ,)
+    (CC yet)
+    (S
+      (NP (PRP you))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB keep)
+              (S
+                (VP (VBG diverting)
+                  (NP (DT the) (NN topic))
+                  (PP (TO to)
+                    (NP (NN something)))
+                  (SBAR
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP feel)
+                        (ADJP (JJ comfortable)
+                          (PP (IN with)))))))))))))
+    (. .)))
+
+nsubj(said-3, I-1)
+aux(said-3, have-2)
+root(ROOT-0, said-3)
+dobj(said-3, this-4)
+poss(statements-8, my-6)
+amod(statements-8, past-7)
+prep_throughout(said-3, statements-8)
+nsubj(want-12, you-11)
+xsubj(keep-14, you-11)
+conj_yet(said-3, want-12)
+aux(keep-14, to-13)
+xcomp(want-12, keep-14)
+xcomp(keep-14, diverting-15)
+det(topic-17, the-16)
+dobj(diverting-15, topic-17)
+prep_to(diverting-15, something-19)
+nsubj(feel-21, you-20)
+dep(diverting-15, feel-21)
+acomp(feel-21, comfortable-22)
+prep(comfortable-22, with-23)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD put)
+      (NP (PRP$ my) (JJ first) (NN statement))
+      (PP (IN under)
+        (NP
+          (NP (DT the) (`` ``)
+            (S
+              (NP (NNS abortions))
+              (VP (MD should)
+                (VP (VB be)
+                  (VP (VBN banned)))))
+            ('' '') (NN view))
+          (PP (IN for)
+            (NP (DT a) (NN reason))))))
+    (. .)))
+
+nsubj(put-2, I-1)
+root(ROOT-0, put-2)
+poss(statement-5, my-3)
+amod(statement-5, first-4)
+dobj(put-2, statement-5)
+det(view-14, the-7)
+nsubjpass(banned-12, abortions-9)
+aux(banned-12, should-10)
+auxpass(banned-12, be-11)
+dep(view-14, banned-12)
+prep_under(put-2, view-14)
+det(reason-17, a-16)
+prep_for(view-14, reason-17)
+
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is) (RB not)
+      (PP (IN about)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ is)
+              (VP (VBG being)
+                (VP (VBN killed)
+                  (PP (IN in)
+                    (NP (DT an) (NN abortion))))))))))
+    (. .)))
+
+det(question-2, The-1)
+nsubj(is-3, question-2)
+root(ROOT-0, is-3)
+neg(is-3, not-4)
+nsubjpass(killed-9, what-6)
+aux(killed-9, is-7)
+auxpass(killed-9, being-8)
+prepc_about(is-3, killed-9)
+det(abortion-12, an-11)
+prep_in(killed-9, abortion-12)
+
+(ROOT
+  (S
+    (NP (NNP Hmm))
+    (, ,)
+    (VP (VBZ lets)
+      (VP (VB see)))
+    (: ...)))
+
+nsubj(lets-3, Hmm-1)
+root(ROOT-0, lets-3)
+dep(lets-3, see-4)
+
+(ROOT
+  (S
+    (ADVP (RB Obviously))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (DT a) (JJ human) (JJ being) (NN imo)))
+    (. .)))
+
+advmod(imo-7, Obviously-1)
+nsubj(imo-7, it-2)
+cop(imo-7, is-3)
+det(imo-7, a-4)
+amod(imo-7, human-5)
+amod(imo-7, being-6)
+root(ROOT-0, imo-7)
+
+(ROOT
+  (S
+    (ADVP (RB Again))
+    (, ,)
+    (VP
+      (VP (VB stop)
+        (NP (NN cop-ing))
+        (PRT (RP out)))
+      (CC and)
+      (VP (VB keep)
+        (NP (PRP it))
+        (PP (TO to)
+          (NP (DT the) (NN topic)))))
+    (. .)))
+
+advmod(stop-3, Again-1)
+root(ROOT-0, stop-3)
+dobj(stop-3, cop-ing-4)
+prt(stop-3, out-5)
+conj_and(stop-3, keep-7)
+dobj(keep-7, it-8)
+det(topic-11, the-10)
+prep_to(keep-7, topic-11)
+
+(ROOT
+  (SQ (NNP Should)
+    (NP (PRP you))
+    (VP (VB judge)
+      (NP (NN someone))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN murderer))
+          (CC and)
+          (NP (JJ hell-bound))))
+      (SBAR (IN if)
+        (S
+          (NP (PRP they))
+          (VP (VBP have)
+            (NP (DT an) (NN abortion))))))
+    (. ?)))
+
+dep(judge-3, Should-1)
+nsubj(judge-3, you-2)
+root(ROOT-0, judge-3)
+dobj(judge-3, someone-4)
+det(murderer-7, a-6)
+prep_as(judge-3, murderer-7)
+prep_as(judge-3, hell-bound-9)
+conj_and(murderer-7, hell-bound-9)
+mark(have-12, if-10)
+nsubj(have-12, they-11)
+advcl(judge-3, have-12)
+det(abortion-14, an-13)
+dobj(have-12, abortion-14)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP dispute)
+        (NP (PRP me))))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (VBP ask)
+        (PP (IN for)
+          (NP (NN evidence)))
+        (ADVP (RB as)
+          (PP (TO to)
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (PRP you))
+                (VP (VBP dispute)
+                  (NP (PRP me)))))))))
+    (, ,)
+    (S
+      (NP (PRP you))
+      (VP (VBP come)
+        (PRT (RP up))
+        (PP (IN with) (`` ``)
+          (ADJP (VB go)))
+        (S
+          (VP (VB check)
+            (NP (DT the) (NNP Bible))))))
+    (. .)))
+
+nsubj(dispute-2, You-1)
+root(ROOT-0, dispute-2)
+dobj(dispute-2, me-3)
+nsubj(ask-6, I-5)
+ccomp(dispute-2, ask-6)
+prep_for(ask-6, evidence-8)
+advmod(dispute-13, why-11)
+nsubj(dispute-13, you-12)
+prepc_as_to(ask-6, dispute-13)
+dobj(dispute-13, me-14)
+nsubj(come-17, you-16)
+ccomp(dispute-2, come-17)
+prt(come-17, up-18)
+prep_with(come-17, go-21)
+ccomp(come-17, check-22)
+det(Bible-24, the-23)
+dobj(check-22, Bible-24)
+
+(ROOT
+  (S ('' '')
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADVP (RB still))
+      (VP (VBG waiting)
+        (PP (IN for)
+          (NP (DT the) (NN evidence)))))
+    (. .)))
+
+nsubj(waiting-5, I-2)
+aux(waiting-5, 'm-3)
+advmod(waiting-5, still-4)
+root(ROOT-0, waiting-5)
+det(evidence-8, the-7)
+prep_for(waiting-5, evidence-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP ask)
+      (NP (CD two) (JJ simple) (NNS questions)))
+    (. .)))
+
+nsubj(ask-2, I-1)
+root(ROOT-0, ask-2)
+num(questions-5, two-3)
+amod(questions-5, simple-4)
+dobj(ask-2, questions-5)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBD did)
+      (NP (NNP Jesus))
+      (VP (VB say)
+        (PP (IN about)
+          (NP (NNS abortions)))))
+    (. ?)))
+
+dobj(say-4, What-1)
+aux(say-4, did-2)
+nsubj(say-4, Jesus-3)
+root(ROOT-0, say-4)
+prep_about(say-4, abortions-6)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP
+        (VP (VBZ is)
+          (ADJP (JJ right)
+            (CC and)
+            (JJ wrong)))
+        (PP (VBG according)
+          (PP (TO to)
+            (NP (NNP Jesus))))))
+    (. ?)))
+
+nsubj(right-3, What-1)
+nsubj(wrong-5, What-1)
+cop(right-3, is-2)
+root(ROOT-0, right-3)
+conj_and(right-3, wrong-5)
+prepc_according_to(right-3, to-7)
+pobj(right-3, Jesus-8)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)))
+    (, ,)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB cop)
+                    (PRT (RP out)))
+                  (CC and)
+                  (RB not)
+                  (VP (VB answer)
+                    (NP (PRP them)))))))))
+      (, ,)
+      (NP (PRP you))
+      (VP (MD should) (RB n't)
+        (VP (VB keep)
+          (NP
+            (NP (DT the) (NN debate))
+            (VP (VBG going))))))
+    (, ,)
+    (SBAR (IN since)
+      (S
+        (NP (PRP you))
+        (VP (VBD were)
+          (NP
+            (NP (DT the) (NN one))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD disputed)
+                  (NP (PRP me)))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+root(ROOT-0, mean-2)
+mark(want-6, if-4)
+nsubj(want-6, you-5)
+xsubj(cop-8, you-5)
+advcl(keep-18, want-6)
+aux(cop-8, to-7)
+xcomp(want-6, cop-8)
+prt(cop-8, out-9)
+xcomp(want-6, not-11)
+conj_and(cop-8, not-11)
+neg(cop-8, not-11)
+dep(cop-8, answer-12)
+dobj(answer-12, them-13)
+nsubj(keep-18, you-15)
+aux(keep-18, should-16)
+neg(keep-18, n't-17)
+ccomp(mean-2, keep-18)
+det(debate-20, the-19)
+dobj(keep-18, debate-20)
+partmod(debate-20, going-21)
+mark(one-27, since-23)
+nsubj(one-27, you-24)
+cop(one-27, were-25)
+det(one-27, the-26)
+dep(mean-2, one-27)
+nsubj(disputed-29, one-27)
+rcmod(one-27, disputed-29)
+dobj(disputed-29, me-30)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are) (RB all)
+      (ADJP (JJ lawbreakers)))
+    (. .)))
+
+nsubj(lawbreakers-4, We-1)
+cop(lawbreakers-4, are-2)
+advmod(lawbreakers-4, all-3)
+root(ROOT-0, lawbreakers-4)
+
+(ROOT
+  (SBARQ (RB So)
+    (WHADVP (WRB how))
+    (SQ (MD should)
+      (NP
+        (NP (CD one) (NN type))
+        (PP (IN of)
+          (NP (NN sin))))
+      (VP (VB get)
+        (VP (VBN emphasized)
+          (PP (IN over)
+            (NP (DT the) (JJ other))))))
+    (. ?)))
+
+advmod(emphasized-9, So-1)
+advmod(emphasized-9, how-2)
+aux(emphasized-9, should-3)
+num(type-5, one-4)
+nsubjpass(emphasized-9, type-5)
+prep_of(type-5, sin-7)
+auxpass(emphasized-9, get-8)
+root(ROOT-0, emphasized-9)
+det(other-12, the-11)
+prep_over(emphasized-9, other-12)
+

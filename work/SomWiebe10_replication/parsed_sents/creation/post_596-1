@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (ADVP (RB never))
+      (VP (VBD responded)
+        (PP (TO to)
+          (NP (PRP$ my) (NN comment)))))
+    (: :)
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (NNP Crick))
+          (VP (VBD said)
+            (SBAR
+              (S
+                (NP (JJ molecular) (NNS machines))
+                (VP (VBP appear)
+                  (S
+                    (VP
+                      (VP (VBN designed))
+                      (CC but)
+                      (VP (VBP are) (RB not))))))))))
+      (, ,)
+      (NP (PRP he))
+      (VP (VBD was)
+        (ADVP (RB never))
+        (VP (VBN castigated)
+          (PP (IN for)
+            (S
+              (VP (VBG being)
+                (ADJP (`` ``) (JJ unscientific))))))))
+    (. .)))
+
+nsubj(responded-3, You-1)
+neg(responded-3, never-2)
+root(ROOT-0, responded-3)
+poss(comment-6, my-5)
+prep_to(responded-3, comment-6)
+advmod(said-10, When-8)
+nsubj(said-10, Crick-9)
+advcl(castigated-22, said-10)
+amod(machines-12, molecular-11)
+nsubj(appear-13, machines-12)
+ccomp(said-10, appear-13)
+ccomp(appear-13, designed-14)
+ccomp(appear-13, are-16)
+conj_but(designed-14, are-16)
+neg(are-16, not-17)
+nsubjpass(castigated-22, he-19)
+auxpass(castigated-22, was-20)
+neg(castigated-22, never-21)
+parataxis(responded-3, castigated-22)
+cop(unscientific-26, being-24)
+prepc_for(castigated-22, unscientific-26)
+

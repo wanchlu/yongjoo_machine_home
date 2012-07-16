@@ -1,0 +1,41 @@
+(ROOT
+  (VP (VB Question) (: :)
+    (SBARQ
+      (WHADVP (WRB Why))
+      (SQ (VBZ is)
+        (NP (PRP it))
+        (VP (VBN considered)
+          (NP
+            (NP (DT a) (JJ double) (NN murder))
+            (PP (IN in)
+              (NP (PRP$ our) (NN law))))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP
+                (NP (DT a) (NN woman))
+                (ADJP (JJ pregnant)
+                  (PP (IN with)
+                    (NP (NN child)))))
+              (VP (VBZ is)
+                (VP (VBN killed)))))))
+      (. ?))))
+
+root(ROOT-0, Question-1)
+advmod(considered-6, Why-3)
+auxpass(considered-6, is-4)
+nsubjpass(considered-6, it-5)
+parataxis(Question-1, considered-6)
+det(murder-9, a-7)
+amod(murder-9, double-8)
+dobj(considered-6, murder-9)
+poss(law-12, our-11)
+prep_in(murder-9, law-12)
+advmod(killed-20, when-13)
+det(woman-15, a-14)
+nsubjpass(killed-20, woman-15)
+amod(woman-15, pregnant-16)
+prep_with(pregnant-16, child-18)
+auxpass(killed-20, is-19)
+advcl(considered-6, killed-20)
+

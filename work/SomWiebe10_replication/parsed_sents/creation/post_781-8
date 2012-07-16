@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBD found)
+          (NP
+            (NP (DT a) (NN book))
+            (VP (VBG describing)
+              (NP
+                (NP (DT a) (NN conflict))
+                (PP (IN between)
+                  (NP (DT the) (JJ Dark) (NNP Lord) (NNP Sauron)))))))))
+    (, ,)
+    (PRN (-LRB- -LRB-)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD created)
+            (NP (DT a) (JJ magical) (NN ring)))))
+      (-RRB- -RRB-))
+    (VP (VB and)
+      (NP
+        (NP (DT the) (NN inhabitants))
+        (PP (IN of)
+          (NP (JJ middle) (NN earth)))))
+    (. .)))
+
+mark(found-3, If-1)
+nsubj(found-3, I-2)
+advcl(and-22, found-3)
+det(book-5, a-4)
+dobj(found-3, book-5)
+partmod(book-5, describing-6)
+det(conflict-8, a-7)
+dobj(describing-6, conflict-8)
+det(Sauron-13, the-10)
+amod(Sauron-13, Dark-11)
+nn(Sauron-13, Lord-12)
+prep_between(conflict-8, Sauron-13)
+nsubj(created-17, who-16)
+parataxis(and-22, created-17)
+det(ring-20, a-18)
+amod(ring-20, magical-19)
+dobj(created-17, ring-20)
+root(ROOT-0, and-22)
+det(inhabitants-24, the-23)
+dobj(and-22, inhabitants-24)
+amod(earth-27, middle-26)
+prep_of(inhabitants-24, earth-27)
+

@@ -1,0 +1,38 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (DT the) (NN destruction))
+          (PP (IN of)
+            (NP
+              (NP (DT any) (NN species))
+              (PP (IN with)
+                (NP (DT a) (JJ significant) (NN value))))))
+        (VP (VBZ is)
+          (ADJP (JJ illegal)))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ
+      (VP (VBZ makes)
+        (S
+          (NP (NN abortion))
+          (ADJP (DT any) (JJ different)))))
+    (. ?)))
+
+mark(illegal-12, If-1)
+det(destruction-3, the-2)
+nsubj(illegal-12, destruction-3)
+det(species-6, any-5)
+prep_of(destruction-3, species-6)
+det(value-10, a-8)
+amod(value-10, significant-9)
+prep_with(species-6, value-10)
+cop(illegal-12, is-11)
+advcl(makes-15, illegal-12)
+nsubj(makes-15, what-14)
+root(ROOT-0, makes-15)
+nsubj(different-18, abortion-16)
+dep(different-18, any-17)
+xcomp(makes-15, different-18)
+

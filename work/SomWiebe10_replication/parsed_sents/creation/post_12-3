@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (DT The) (NN latter))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an)
+          (ADJP (RB empirically) (JJ testable))
+          (NN claim))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP
+                  (VP
+                    (ADVP (RB empirically))
+                    (VBN tested))
+                  (CC and)
+                  (VP (VBN found)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (JJ false)))))))))))))
+    (. .)))
+
+det(latter-2, The-1)
+nsubj(claim-7, latter-2)
+cop(claim-7, is-3)
+det(claim-7, an-4)
+advmod(testable-6, empirically-5)
+amod(claim-7, testable-6)
+root(ROOT-0, claim-7)
+nsubjpass(tested-12, claim-7)
+nsubjpass(found-14, claim-7)
+aux(tested-12, has-9)
+auxpass(tested-12, been-10)
+advmod(tested-12, empirically-11)
+rcmod(claim-7, tested-12)
+rcmod(claim-7, found-14)
+conj_and(tested-12, found-14)
+aux(false-17, to-15)
+cop(false-17, be-16)
+xcomp(found-14, false-17)
+

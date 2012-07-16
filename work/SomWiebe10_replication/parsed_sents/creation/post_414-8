@@ -1,0 +1,29 @@
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (FRAG
+      (SBAR
+        (WHNP (WP Who))
+        (S
+          (VP
+            (VP (VBD died))
+            (CC and)
+            (VP (VBD made)
+              (S
+                (NP (PRP you))
+                (NP (DT the) (NN definition) (NN master)))))))
+      (, ,)
+      (ADVP (RB anyway))
+      (. ?))
+    (-RRB- -RRB-)))
+
+nsubj(died-3, Who-2)
+nsubj(made-5, Who-2)
+dep(anyway-11, died-3)
+conj_and(died-3, made-5)
+dep(anyway-11, made-5)
+nsubj(master-9, you-6)
+det(master-9, the-7)
+nn(master-9, definition-8)
+xcomp(made-5, master-9)
+root(ROOT-0, anyway-11)
+

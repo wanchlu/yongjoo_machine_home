@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (FRAG
+      (INTJ (RB Now))
+      (, ,)
+      (PP (TO to)
+        (NP (DT the) (JJ middle) (NN part))))
+    (: ;)
+    (S
+      (NP (DT the) (NN issue))
+      (VP (VBZ is)
+        (PP (IN about)
+          (NP
+            (NP
+              (NP (DT the) (NNS rights))
+              (PP (IN of)
+                (NP (CD two) (JJ human) (NNS beings))))
+            (: :)
+            (NP
+              (NP (DT a) (NN mother))
+              (CC and)
+              (NP (DT a) (NN child)))))))
+    (. .)))
+
+dep(is-10, Now-1)
+dep(Now-1, to-3)
+det(part-6, the-4)
+amod(part-6, middle-5)
+pobj(to-3, part-6)
+det(issue-9, the-8)
+nsubj(is-10, issue-9)
+root(ROOT-0, is-10)
+det(rights-13, the-12)
+prep_about(is-10, rights-13)
+num(beings-17, two-15)
+amod(beings-17, human-16)
+prep_of(rights-13, beings-17)
+det(mother-20, a-19)
+dep(rights-13, mother-20)
+det(child-23, a-22)
+dep(rights-13, child-23)
+conj_and(mother-20, child-23)
+

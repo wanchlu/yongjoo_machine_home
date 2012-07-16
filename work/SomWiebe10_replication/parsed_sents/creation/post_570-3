@@ -1,0 +1,48 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP Marks))
+      (VP (VBD had)
+        (VP (VBN started)
+          (NP (JJ numerous) (JJ other) (NNS labs))
+          (ADVP (RB prior)
+            (PP (TO to)
+              (NP (DT that)))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (ADVP (RB never))
+      (VP (VBD had)
+        (S
+          (VP (TO to)
+            (VP (VB ask)
+              (NP (NN permission)))))
+        (S
+          (VP (TO to)
+            (VP (VB start)
+              (NP
+                (NP (DT any))
+                (PP (IN of)
+                  (NP (PRP them)))))))))
+    (. .)))
+
+nsubj(started-4, Marks-2)
+aux(started-4, had-3)
+root(ROOT-0, started-4)
+amod(labs-7, numerous-5)
+amod(labs-7, other-6)
+dobj(started-4, labs-7)
+prep_prior_to(started-4, that-10)
+nsubj(had-14, he-12)
+xsubj(ask-16, he-12)
+xsubj(start-19, he-12)
+neg(had-14, never-13)
+conj_and(started-4, had-14)
+aux(ask-16, to-15)
+xcomp(had-14, ask-16)
+dobj(ask-16, permission-17)
+aux(start-19, to-18)
+xcomp(had-14, start-19)
+dobj(start-19, any-20)
+prep_of(any-20, them-22)
+

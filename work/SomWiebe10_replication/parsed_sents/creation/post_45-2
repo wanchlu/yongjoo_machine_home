@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD setup)
+      (SBAR
+        (S
+          (NP
+            (NP (DT some) (NN premise))
+            (PP (VBN based)
+              (PP (IN on)
+                (NP
+                  (NP (DT the) (NN creation))
+                  (PP (IN of)
+                    (NP (DT the) (NN universe)))))))
+          (VP
+            (VP
+              (ADVP (RB then))
+              (VBP draw)
+              (NP
+                (NP (DT a) (NN conclusion))
+                (PP (IN about)
+                  (NP (NN evolution)))))
+            (CC and)
+            (VP (VBP hope)
+              (NP (DT that))
+              (ADVP (RB no)
+                (NP (CD one) (NNS notices))))))))
+    (. .)))
+
+nsubj(setup-2, They-1)
+root(ROOT-0, setup-2)
+det(premise-4, some-3)
+nsubj(draw-13, premise-4)
+nsubj(hope-19, premise-4)
+prepc_based_on(premise-4, on-6)
+det(creation-8, the-7)
+pobj(premise-4, creation-8)
+det(universe-11, the-10)
+prep_of(creation-8, universe-11)
+advmod(draw-13, then-12)
+ccomp(setup-2, draw-13)
+det(conclusion-15, a-14)
+dobj(draw-13, conclusion-15)
+prep_about(conclusion-15, evolution-17)
+ccomp(setup-2, hope-19)
+conj_and(draw-13, hope-19)
+dobj(hope-19, that-20)
+advmod(hope-19, no-21)
+num(notices-23, one-22)
+pobj(no-21, notices-23)
+

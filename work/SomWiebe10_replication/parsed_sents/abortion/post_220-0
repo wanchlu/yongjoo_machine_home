@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADVP (NN nothing))
+      (ADJP (`` ``) (JJ unlikely) ('' '')
+        (PP (IN about)
+          (NP
+            (NP (DT the) (NN passage))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN Freedom))
+                (PP (IN of)
+                  (NP (NNP Choice) (NNP Act))))))))
+      (SBAR (IN if)
+        (S
+          (NP (NNP Senator) (NNP Obama))
+          (VP (VBZ is)
+            (VP (VBN elected)
+              (NP (NNP President)))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+advmod(is-2, nothing-3)
+acomp(is-2, unlikely-5)
+det(passage-9, the-8)
+prep_about(unlikely-5, passage-9)
+det(Freedom-12, the-11)
+prep_of(passage-9, Freedom-12)
+nn(Act-15, Choice-14)
+prep_of(Freedom-12, Act-15)
+mark(elected-20, if-16)
+nn(Obama-18, Senator-17)
+nsubjpass(elected-20, Obama-18)
+auxpass(elected-20, is-19)
+advcl(is-2, elected-20)
+dobj(elected-20, President-21)
+

@@ -1,0 +1,261 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBP understand)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (NN life))
+                (VP (VBZ is)
+                  (ADJP (RB really) (JJ important)))))))))
+    (. .)))
+
+nsubj(understand-3, I-2)
+root(ROOT-0, understand-3)
+nsubj(think-5, you-4)
+ccomp(understand-3, think-5)
+nsubj(important-9, life-6)
+cop(important-9, is-7)
+advmod(important-9, really-8)
+ccomp(think-5, important-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree))
+    (. .)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+
+(ROOT
+  (S (CC But)
+    (VP (VB let)
+      (S
+        (NP (POS 's))
+        (VP (VB play)
+          (PRT (RP along))
+          (PP (IN with)
+            (NP (DT this) (JJ hypothetical) (NN situation)))
+          (ADVP (RB just))
+          (PP (IN for)
+            (NP (DT a) (NN moment))))))
+    (. .)))
+
+cc(let-2, But-1)
+root(ROOT-0, let-2)
+nsubj(play-4, 's-3)
+ccomp(let-2, play-4)
+det(situation-9, this-7)
+amod(situation-9, hypothetical-8)
+prep_along_with(play-4, situation-9)
+advmod(play-4, just-10)
+det(moment-13, a-12)
+prep_for(play-4, moment-13)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP (DT a) (NN fire) (NN fighter)))
+    (. .)))
+
+nsubj(fighter-5, You-1)
+cop(fighter-5, are-2)
+det(fighter-5, a-3)
+nn(fighter-5, fire-4)
+root(ROOT-0, fighter-5)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (PP (IN in)
+          (NP (DT a) (VBG burning) (NN building)))))
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (VBP have)
+        (VP (VBN evacuated)
+          (NP
+            (NP (NN everyone))
+            (PP (CC but)
+              (NP
+                (NP (DT an)
+                  (ADJP (CD 80) (NN year) (JJ old))
+                  (JJ feeble) (NN man))
+                (CC and)
+                (NP (DT a) (NN child))))))))
+    (. .)))
+
+nsubj(are-2, You-1)
+root(ROOT-0, are-2)
+det(building-6, a-4)
+amod(building-6, burning-5)
+prep_in(are-2, building-6)
+nsubj(evacuated-10, you-8)
+aux(evacuated-10, have-9)
+conj_and(are-2, evacuated-10)
+dobj(evacuated-10, everyone-11)
+prep(everyone-11, but-12)
+det(man-18, an-13)
+number(old-16, 80-14)
+dep(old-16, year-15)
+amod(man-18, old-16)
+amod(man-18, feeble-17)
+dep(but-12, man-18)
+det(child-21, a-20)
+dep(but-12, child-21)
+conj_and(man-18, child-21)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP are)
+        (NP
+          (NP (DT the) (JJ last) (NN fire) (NN fighter))
+          (PP (IN in)
+            (NP (DT the) (NN building))))))
+    (CC and)
+    (S
+      (NP (DT the) (NN building))
+      (VP (VBZ is)
+        (NP
+          (NP (NNS moments))
+          (PP (IN from)
+            (S
+              (VP (VBG coming)
+                (PRT (RP down))))))))
+    (. .)))
+
+nsubj(fighter-6, You-1)
+cop(fighter-6, are-2)
+det(fighter-6, the-3)
+amod(fighter-6, last-4)
+nn(fighter-6, fire-5)
+root(ROOT-0, fighter-6)
+det(building-9, the-8)
+prep_in(fighter-6, building-9)
+det(building-12, the-11)
+nsubj(moments-14, building-12)
+cop(moments-14, is-13)
+conj_and(fighter-6, moments-14)
+prepc_from(moments-14, coming-16)
+prt(coming-16, down-17)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD can) (RB not)
+            (VP (VB come)
+              (PRT (RP back))
+              (PP (IN for)
+                (NP (DT a) (JJ second) (NN trip))))))))
+    (. .)))
+
+nsubj(know-2, You-1)
+root(ROOT-0, know-2)
+nsubj(come-6, you-3)
+aux(come-6, can-4)
+neg(come-6, not-5)
+ccomp(know-2, come-6)
+prt(come-6, back-7)
+det(trip-11, a-9)
+amod(trip-11, second-10)
+prep_for(come-6, trip-11)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB choose)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB save)
+              (NP (CD one)))
+            (CC and)
+            (VP (VB leave)
+              (NP (DT the) (JJ other))
+              (S
+                (VP (TO to)
+                  (VP (VB die)))))))))
+    (. ?)))
+
+aux(choose-3, Do-1)
+nsubj(choose-3, you-2)
+xsubj(save-5, you-2)
+root(ROOT-0, choose-3)
+aux(save-5, to-4)
+xcomp(choose-3, save-5)
+dobj(save-5, one-6)
+xcomp(choose-3, leave-8)
+conj_and(save-5, leave-8)
+det(other-10, the-9)
+dobj(leave-8, other-10)
+aux(die-12, to-11)
+xcomp(leave-8, die-12)
+
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP It))
+      (VP (MD would)
+        (VP (VB depend))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP Iwould))
+      (VP (VB be)
+        (VP (VBN inclined)
+          (S
+            (VP (TO to)
+              (VP (VB save)
+                (NP (DT the) (NN child))
+                (SBAR (IN because)
+                  (S
+                    (NP (DT that))
+                    (VP (VBZ is)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (DT the)
+                            (ADJP (CD 80) (NN year) (JJ old))
+                            (NN man))
+                          (VP (MD would)
+                            (ADVP (RBS most) (RB likely))
+                            (VP (VB say))))))))))))))
+    (. .)))
+
+nsubj(depend-4, It-2)
+aux(depend-4, would-3)
+root(ROOT-0, depend-4)
+nsubjpass(inclined-9, Iwould-7)
+auxpass(inclined-9, be-8)
+conj_but(depend-4, inclined-9)
+aux(save-11, to-10)
+xcomp(inclined-9, save-11)
+det(child-13, the-12)
+dobj(save-11, child-13)
+mark(is-16, because-14)
+nsubj(is-16, that-15)
+advcl(save-11, is-16)
+dobj(say-26, what-17)
+det(man-22, the-18)
+number(old-21, 80-19)
+dep(old-21, year-20)
+amod(man-22, old-21)
+nsubj(say-26, man-22)
+aux(say-26, would-23)
+advmod(likely-25, most-24)
+advmod(say-26, likely-25)
+ccomp(is-16, say-26)
+

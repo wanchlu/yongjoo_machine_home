@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (ADJP
+                (ADVP (RBR more) (IN than))
+                (JJ likely)
+                (S
+                  (VP (TO to)
+                    (VP (VB happen) (, ,)
+                      (FRAG (CC but)
+                        (RB not)
+                        (PP (IN without)
+                          (NP (DT some) (NN loss)))
+                        (PP (IN in)
+                          (NP
+                            (NP (DT the) (JJ original) (NN functionality))
+                            (PP (IN of)
+                              (NP
+                                (NP (DT the) (NN organism))
+                                (PP (IN in)
+                                  (NP (NN question)))))))))))))))))
+    (. .)))
+
+nsubj(sure-3, I-1)
+cop(sure-3, 'm-2)
+root(ROOT-0, sure-3)
+nsubj(likely-8, it-4)
+cop(likely-8, 's-5)
+advmod(than-7, more-6)
+advmod(likely-8, than-7)
+dep(sure-3, likely-8)
+aux(happen-10, to-9)
+xcomp(likely-8, happen-10)
+dep(not-13, but-12)
+dep(happen-10, not-13)
+dep(not-13, without-14)
+det(loss-16, some-15)
+pobj(without-14, loss-16)
+dep(not-13, in-17)
+det(functionality-20, the-18)
+amod(functionality-20, original-19)
+pobj(in-17, functionality-20)
+det(organism-23, the-22)
+prep_of(functionality-20, organism-23)
+prep_in(organism-23, question-25)
+

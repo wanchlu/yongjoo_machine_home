@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Now))
+      (NP (NNS mutations))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN observed)))))
+    (CC but)
+    (S
+      (NP (NN mutation)
+        (CC and)
+        (NN evolution))
+      (VP (VBP are)
+        (NP (CD two) (JJ different) (NNS things))))
+    (. .)))
+
+advmod(observed-5, Now-1)
+nsubjpass(observed-5, mutations-2)
+aux(observed-5, have-3)
+auxpass(observed-5, been-4)
+root(ROOT-0, observed-5)
+nsubj(things-13, mutation-7)
+conj_and(mutation-7, evolution-9)
+nsubj(things-13, evolution-9)
+cop(things-13, are-10)
+num(things-13, two-11)
+amod(things-13, different-12)
+conj_but(observed-5, things-13)
+

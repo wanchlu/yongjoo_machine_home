@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN mother))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ terminates)
+              (NP (PRP$ her) (NN pregnancy))))))
+      (VP (VBD had)
+        (NP
+          (NP (DT a) (NN host))
+          (PP (IN of)
+            (NP
+              (NP (NNS choices))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (MD would)
+                    (VP (VB have)
+                      (VP (VBN prevented)
+                        (NP (DT the) (NN pregnancy))))))))))))
+    (, ,)
+    (NP (DT the) (NN fetus))
+    (ADVP (RB never))
+    (VP (VBD had)
+      (NP (DT a) (NN choice)))
+    (. .)))
+
+det(mother-2, The-1)
+nsubj(terminates-4, mother-2)
+nsubj(had-7, mother-2)
+rcmod(mother-2, terminates-4)
+poss(pregnancy-6, her-5)
+dobj(terminates-4, pregnancy-6)
+ccomp(had-22, had-7)
+det(host-9, a-8)
+dobj(had-7, host-9)
+prep_of(host-9, choices-11)
+nsubj(prevented-15, choices-11)
+aux(prevented-15, would-13)
+aux(prevented-15, have-14)
+rcmod(choices-11, prevented-15)
+det(pregnancy-17, the-16)
+dobj(prevented-15, pregnancy-17)
+det(fetus-20, the-19)
+nsubj(had-22, fetus-20)
+neg(had-22, never-21)
+root(ROOT-0, had-22)
+det(choice-24, a-23)
+dobj(had-22, choice-24)
+

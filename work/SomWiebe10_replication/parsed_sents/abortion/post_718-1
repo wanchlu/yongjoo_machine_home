@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP Bible))
+      (VP (VBZ says)
+        (SBAR
+          (S
+            (NP (PDT all) (PRP$ our) (NNS days))
+            (VP (VBP are)
+              (VP (VBN numbered)))))))
+    (CC and)
+    (S
+      (NP (NN tomorrow))
+      (VP (VBZ is)
+        (VP (VBN promised)
+          (PP (TO to)
+            (NP (DT no) (NN man))))))
+    (. .)))
+
+det(Bible-2, The-1)
+nsubj(says-3, Bible-2)
+root(ROOT-0, says-3)
+predet(days-6, all-4)
+poss(days-6, our-5)
+nsubjpass(numbered-8, days-6)
+auxpass(numbered-8, are-7)
+ccomp(says-3, numbered-8)
+nsubjpass(promised-12, tomorrow-10)
+auxpass(promised-12, is-11)
+conj_and(says-3, promised-12)
+det(man-15, no-14)
+prep_to(promised-12, man-15)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (JJR more) (NN control))
+        (PP (IN over)
+          (NP (PRP$ your) (NN life))))
+      (SBAR (IN than) (IN if)
+        (S
+          (NP (PRP you))
+          (VP (MD could)
+            (VP (VB change)
+              (NP (DT the) (NN weather)))))))
+    (. .)))
+
+nsubj(have-2, You-1)
+root(ROOT-0, have-2)
+det(control-5, no-3)
+amod(control-5, more-4)
+dobj(have-2, control-5)
+poss(life-8, your-7)
+prep_over(control-5, life-8)
+mark(change-13, than-9)
+dep(change-13, if-10)
+nsubj(change-13, you-11)
+aux(change-13, could-12)
+advcl(have-2, change-13)
+det(weather-15, the-14)
+dobj(change-13, weather-15)
+

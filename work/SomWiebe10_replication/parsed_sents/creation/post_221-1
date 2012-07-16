@@ -1,0 +1,38 @@
+(ROOT
+  (S ('' '')
+    (NP (PRP You))
+    (VP (VBP claim)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (DT these) (`` ``) (NNS scientists) ('' ''))
+            (VP (VBP hold)
+              (NP (JJ legitimate) (JJ scientific) (NNS views)))))
+        (CC but)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (JJ very) (NN topic))
+                (PP (IN under)
+                  (NP (NN contention)))))))))
+    (. .)))
+
+nsubj(claim-3, You-2)
+root(ROOT-0, claim-3)
+complm(hold-9, that-4)
+det(scientists-7, these-5)
+nsubj(hold-9, scientists-7)
+ccomp(claim-3, hold-9)
+amod(views-12, legitimate-10)
+amod(views-12, scientific-11)
+dobj(hold-9, views-12)
+nsubj(topic-18, that-14)
+cop(topic-18, is-15)
+det(topic-18, the-16)
+amod(topic-18, very-17)
+ccomp(claim-3, topic-18)
+conj_but(hold-9, topic-18)
+prep_under(topic-18, contention-20)
+

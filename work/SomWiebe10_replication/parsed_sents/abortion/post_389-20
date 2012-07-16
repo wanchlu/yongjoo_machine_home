@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (S
+      (NP (DT A) (NN fetus))
+      (VP (VBZ does)
+        (VP (VB have)
+          (NP
+            (NP (DT the) (NNS things))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBD mentioned))))))))
+    (CC but)
+    (S
+      (NP
+        (NP (NN none))
+        (PP (IN of)
+          (NP (PRP it))))
+      (VP (VBZ adds)
+        (PRT (RP up))
+        (PP (TO to)
+          (NP (DT the) (NN human)))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubj(have-4, fetus-2)
+aux(have-4, does-3)
+root(ROOT-0, have-4)
+det(things-6, the-5)
+dobj(have-4, things-6)
+dobj(mentioned-8, things-6)
+nsubj(mentioned-8, you-7)
+rcmod(things-6, mentioned-8)
+nsubj(adds-13, none-10)
+prep_of(none-10, it-12)
+conj_but(have-4, adds-13)
+prt(adds-13, up-14)
+det(human-17, the-16)
+prep_to(adds-13, human-17)
+

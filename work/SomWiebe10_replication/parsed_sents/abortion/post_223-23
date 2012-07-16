@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (NP (DT A) (NNP Pope))
+    (VP
+      (VP
+        (ADVP (IN that))
+        (VBZ wears)
+        (NP (JJ gold) (NNS rings)
+          (CC and)
+          (NNS chains)))
+      (CC and)
+      (VP (VBZ carries)
+        (NP (DT a) (NN scepter)
+          (CC and)
+          (NN everything))))
+    (. .)))
+
+det(Pope-2, A-1)
+nsubj(wears-4, Pope-2)
+nsubj(carries-10, Pope-2)
+advmod(wears-4, that-3)
+root(ROOT-0, wears-4)
+amod(rings-6, gold-5)
+dobj(wears-4, rings-6)
+dobj(wears-4, chains-8)
+conj_and(rings-6, chains-8)
+conj_and(wears-4, carries-10)
+det(scepter-12, a-11)
+dobj(carries-10, scepter-12)
+dobj(carries-10, everything-14)
+conj_and(scepter-12, everything-14)
+

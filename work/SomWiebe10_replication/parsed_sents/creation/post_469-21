@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (UCP
+            (NP (RB not))
+            (, ,)
+            (CC and)
+            (SBAR (IN if)
+              (S
+                (NP (NNS others))
+                (VP (VBP are)
+                  (ADVP (VB let)))))))
+        (VP (VBP go)
+          (PP (IN under)
+            (NP (DT the) (JJ same) (NNS circumstances))))))
+    (, ,)
+    (ADVP (RB then))
+    (VP (VB let)
+      (S
+        (NP (DT the) (NNS chips))
+        (VP (VB fall)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (PRP they))
+              (VP (MD may)))))))
+    (. .)))
+
+mark(go-9, If-1)
+csubj(go-9, not-2)
+mark(are-7, if-5)
+nsubj(are-7, others-6)
+conj_and(not-2, are-7)
+csubj(go-9, are-7)
+advmod(are-7, let-8)
+advcl(let-16, go-9)
+det(circumstances-13, the-11)
+amod(circumstances-13, same-12)
+prep_under(go-9, circumstances-13)
+advmod(let-16, then-15)
+root(ROOT-0, let-16)
+det(chips-18, the-17)
+nsubj(fall-19, chips-18)
+ccomp(let-16, fall-19)
+advmod(may-22, where-20)
+nsubj(may-22, they-21)
+advcl(fall-19, may-22)
+
+(ROOT
+  (S (CC But)
+    (NP
+      (NP (NN none))
+      (PP (IN of)
+        (NP (PRP us))))
+    (VP (VBP are)
+      (PP (IN after)
+        (NP
+          (NP (DT this) (NN guy) (POS 's))
+          (NN job))))
+    (. .)))
+
+cc(are-5, But-1)
+nsubj(are-5, none-2)
+prep_of(none-2, us-4)
+root(ROOT-0, are-5)
+det(guy-8, this-7)
+poss(job-10, guy-8)
+prep_after(are-5, job-10)
+

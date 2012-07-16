@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT A) (NN friend))
+        (PP (IN of)
+          (NP (NN mine))))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (DT a) (NNP University) (NNP Professor))
+          (PP (IN of)
+            (NP (NNP Philosophy))))
+        (-RRB- -RRB-)))
+    (VP (VBD wrote)
+      (NP (DT an) (JJ entire) (NN book))
+      (PP (IN on)
+        (NP
+          (NP (DT this))
+          (CC and)
+          (NP
+            (NP (DT a) (NN couple))
+            (PP (IN of)
+              (NP
+                (UCP
+                  (ADJP (JJ other) (JJ important))
+                  (, ,)
+                  (NP
+                    (NP (JJ pro-choice))
+                    (PP (IN of)
+                      (NP (NN abortion))))
+                  (, ,))
+                (JJ philosophical) (NNS arguments)))))))
+    (. .)))
+
+det(friend-2, A-1)
+nsubj(wrote-12, friend-2)
+prep_of(friend-2, mine-4)
+det(Professor-8, a-6)
+nn(Professor-8, University-7)
+dep(friend-2, Professor-8)
+prep_of(Professor-8, Philosophy-10)
+root(ROOT-0, wrote-12)
+det(book-15, an-13)
+amod(book-15, entire-14)
+dobj(wrote-12, book-15)
+prep_on(wrote-12, this-17)
+det(couple-20, a-19)
+prep_on(wrote-12, couple-20)
+conj_and(this-17, couple-20)
+amod(important-23, other-22)
+amod(arguments-30, important-23)
+dep(important-23, pro-choice-25)
+prep_of(pro-choice-25, abortion-27)
+amod(arguments-30, philosophical-29)
+prep_of(couple-20, arguments-30)
+

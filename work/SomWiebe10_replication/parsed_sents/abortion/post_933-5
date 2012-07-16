@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (DT The) (NN world))
+    (VP (VBZ has)
+      (VP
+        (VP (VBN been)
+          (ADVP (IN through) (DT this))
+          (NP
+            (QP (DT a) (NN dozen))
+            (NNS times)))
+        (, ,)
+        (CC and)
+        (VP
+          (PP (IN for)
+            (NP
+              (NP (NNS hundreds))
+              (PP (IN of)
+                (NP (NNS years))))))))
+    (. .)))
+
+det(world-2, The-1)
+nsubj(times-9, world-2)
+aux(times-9, has-3)
+cop(times-9, been-4)
+advmod(times-9, through-5)
+dep(through-5, this-6)
+quantmod(dozen-8, a-7)
+num(times-9, dozen-8)
+root(ROOT-0, times-9)
+conj_and(times-9, for-12)
+pobj(for-12, hundreds-13)
+prep_of(hundreds-13, years-15)
+

@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (NNS women))
+          (PRN (-LRB- -LRB-) (RB not)
+            (NP (NNS men))
+            (-RRB- -RRB-)))
+        (VP (VBP are)
+          (ADVP (RB solely))
+          (VP (VBN burdened)
+            (PP (IN by)
+              (NP (NN pregnancy)))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD must)
+      (VP (VB have)
+        (NP (DT a) (NN choice))))
+    (. .)))
+
+mark(burdened-9, If-1)
+nsubjpass(burdened-9, women-2)
+dep(men-5, not-4)
+appos(women-2, men-5)
+auxpass(burdened-9, are-7)
+advmod(burdened-9, solely-8)
+advcl(have-15, burdened-9)
+agent(burdened-9, pregnancy-11)
+nsubj(have-15, they-13)
+aux(have-15, must-14)
+root(ROOT-0, have-15)
+det(choice-17, a-16)
+dobj(have-15, choice-17)
+

@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ consists)
+      (PP (IN of)
+        (NP
+          (NP (DT an) (NN organism))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBD progressed)
+                (PP (IN into)
+                  (NP
+                    (NP (DT a)
+                      (ADJP (RBR more) (JJ complex))
+                      (NN collection))
+                    (RRC
+                      (PP (IN like)
+                        (NP (NNS animals)))
+                      (, ,)
+                      (PP
+                        (ADVP (RB then))
+                        (PP (IN into)
+                          (NP (NNS homosapiens)))
+                        (, ,)
+                        (ADVP (RB then))
+                        (PP (IN into)
+                          (SBAR
+                            (WHNP (WP what))
+                            (S
+                              (NP (PRP we))
+                              (VP (VBP are)
+                                (NP (NN today))))))))))))))))
+    (. .)))
+
+nsubj(consists-2, Evolution-1)
+root(ROOT-0, consists-2)
+det(organism-5, an-4)
+prep_of(consists-2, organism-5)
+nsubj(progressed-7, organism-5)
+rcmod(organism-5, progressed-7)
+det(collection-12, a-9)
+advmod(complex-11, more-10)
+amod(collection-12, complex-11)
+prep_into(progressed-7, collection-12)
+dep(into-17, like-13)
+pobj(like-13, animals-14)
+advmod(into-17, then-16)
+rcmod(collection-12, into-17)
+pobj(into-17, homosapiens-18)
+advmod(into-17, then-20)
+dobj(today-25, what-22)
+nsubj(today-25, we-23)
+cop(today-25, are-24)
+prepc_into(into-17, today-25)
+

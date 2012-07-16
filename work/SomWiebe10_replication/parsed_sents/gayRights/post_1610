@@ -1,0 +1,356 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (JJ major) (NN point))
+            (SBAR (IN that)
+              (S
+                (NP (NN everyone))
+                (VP (VBZ is)
+                  (ADJP (VBG missing))))))
+          (VP (VBZ is)
+            (SBAR (IN that)
+              (S
+                (NP (JJ few) (NNS people))
+                (VP (MD would)
+                  (VP (VB get)
+                    (ADJP (JJ married))
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBD were) (RB not)
+                          (PP (IN for)
+                            (NP
+                              (NP (DT the) (NNS benefits))
+                              (VP (VBN attached)
+                                (PP (TO to)
+                                  (NP (PDT such) (DT a) (NN union)))))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+det(point-5, the-3)
+amod(point-5, major-4)
+nsubj(is-10, point-5)
+complm(missing-9, that-6)
+nsubj(missing-9, everyone-7)
+cop(missing-9, is-8)
+dep(point-5, missing-9)
+ccomp(think-2, is-10)
+complm(married-16, that-11)
+amod(people-13, few-12)
+nsubj(married-16, people-13)
+aux(married-16, would-14)
+dep(married-16, get-15)
+ccomp(is-10, married-16)
+mark(were-19, if-17)
+nsubj(were-19, it-18)
+advcl(married-16, were-19)
+neg(were-19, not-20)
+det(benefits-23, the-22)
+prep_for(were-19, benefits-23)
+partmod(benefits-23, attached-24)
+predet(union-28, such-26)
+det(union-28, a-27)
+prep_to(attached-24, union-28)
+
+(ROOT
+  (SQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VB remove)
+          (NP (DT the) (NNS benefits)))))
+    (, ,) (MD would)
+    (NP (NN anyone))
+    (VP (VB wish)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (ADJP (JJ married))))))
+    (. ?)))
+
+mark(remove-3, If-1)
+nsubj(remove-3, you-2)
+advcl(wish-9, remove-3)
+det(benefits-5, the-4)
+dobj(remove-3, benefits-5)
+aux(wish-9, would-7)
+nsubj(wish-9, anyone-8)
+xsubj(married-12, anyone-8)
+root(ROOT-0, wish-9)
+aux(married-12, to-10)
+dep(married-12, get-11)
+xcomp(wish-9, married-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Another) (NN point))
+      (PP (IN of)
+        (NP
+          (NP (NN issue))
+          (, ,)
+          (NP (NN marriage)))))
+    (VP (VBZ is)
+      (NP (DT a) (JJ religious) (NN icon)))
+    (. .)))
+
+det(point-2, Another-1)
+nsubj(icon-10, point-2)
+prep_of(point-2, issue-4)
+appos(issue-4, marriage-6)
+cop(icon-10, is-7)
+det(icon-10, a-8)
+amod(icon-10, religious-9)
+root(ROOT-0, icon-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (DT the) (NN government))
+      (VP (VBG issuing)
+        (NP (NNS benefits))
+        (PP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNS edicts))
+              (PP (IN of)
+                (NP (VBN established) (NN religion))))))))
+    (. ?)))
+
+advmod(issuing-5, Why-1)
+aux(issuing-5, is-2)
+det(government-4, the-3)
+nsubj(issuing-5, government-4)
+root(ROOT-0, issuing-5)
+dobj(issuing-5, benefits-6)
+prepc_based_on(issuing-5, on-8)
+det(edicts-10, the-9)
+pobj(issuing-5, edicts-10)
+amod(religion-13, established-12)
+prep_of(edicts-10, religion-13)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NNS people))
+        (VP (VBP wish)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (S
+                  (ADJP (VBN married)
+                    (CC or)
+                    (VBN divorced)))))))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (VBZ does)
+      (NP
+        (NP (NNP Uncle) (NNP Sam))
+        (CC or)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP (DT the) (CD 50) (NNS states)))))
+      (VP
+        (ADVP (RB really))
+        (VB care)))
+    (. ?)))
+
+mark(wish-3, If-1)
+nsubj(wish-3, people-2)
+xsubj(get-5, people-2)
+advcl(care-21, wish-3)
+aux(get-5, to-4)
+xcomp(wish-3, get-5)
+dep(get-5, married-6)
+dep(get-5, divorced-8)
+conj_or(married-6, divorced-8)
+advmod(care-21, why-10)
+aux(care-21, does-11)
+nn(Sam-13, Uncle-12)
+nsubj(care-21, Sam-13)
+conj_or(Sam-13, any-15)
+nsubj(care-21, any-15)
+det(states-19, the-17)
+num(states-19, 50-18)
+prep_of(any-15, states-19)
+advmod(care-21, really-20)
+root(ROOT-0, care-21)
+
+(ROOT
+  (S
+    (S (RB So)
+      (VP (TO to)
+        (VP (VB summarize))))
+    (, ,)
+    (NP (JJ Gay) (NN marriage))
+    (VP (VBZ does)
+      (VP (VB hurt)
+        (NP (PRP us))))
+    (. .)))
+
+advmod(summarize-3, So-1)
+aux(summarize-3, to-2)
+purpcl(hurt-8, summarize-3)
+amod(marriage-6, Gay-5)
+nsubj(hurt-8, marriage-6)
+aux(hurt-8, does-7)
+root(ROOT-0, hurt-8)
+dobj(hurt-8, us-9)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ hurts)
+      (NP (PRP us))
+      (PP (IN by)
+        (S
+          (VP (VBG allowing)
+            (NP (DT the) (NN government)
+              (S
+                (VP (TO to)
+                  (VP
+                    (ADVP (RBR further))
+                    (VB violate)
+                    (NP (DT the) (NN constitution))
+                    (PP (IN by)
+                      (S
+                        (VP (VBG respecting)
+                          (NP
+                            (NP (DT the) (NNS beliefs))
+                            (PP (IN of)
+                              (NP (VBN established) (NN religion)))))))))))))))
+    (. .)))
+
+nsubj(hurts-2, It-1)
+root(ROOT-0, hurts-2)
+dobj(hurts-2, us-3)
+prepc_by(hurts-2, allowing-5)
+det(government-7, the-6)
+dobj(allowing-5, government-7)
+aux(violate-10, to-8)
+advmod(violate-10, further-9)
+infmod(government-7, violate-10)
+det(constitution-12, the-11)
+dobj(violate-10, constitution-12)
+prepc_by(violate-10, respecting-14)
+det(beliefs-16, the-15)
+dobj(respecting-14, beliefs-16)
+amod(religion-19, established-18)
+prep_of(beliefs-16, religion-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP vote)
+        (PP (IN against)
+          (NP (JJ Gay) (NN marriage)))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP vote)
+        (PP (IN against)
+          (NP
+            (NP (NNP ANY) (NN form))
+            (PP (IN of)
+              (NP (NN marriage)))))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (CD two) (NNS people))
+            (VP (MD must)
+              (VP (VB register)
+                (NP (PRP$ their) (NN union))
+                (PP (IN with)
+                  (NP (DT the) (NN government)))))))))
+    (. .)))
+
+nsubj(vote-2, I-1)
+root(ROOT-0, vote-2)
+amod(marriage-5, Gay-4)
+prep_against(vote-2, marriage-5)
+nsubj(vote-8, I-7)
+conj_and(vote-2, vote-8)
+nn(form-11, ANY-10)
+prep_against(vote-8, form-11)
+prep_of(form-11, marriage-13)
+advmod(register-18, where-14)
+num(people-16, two-15)
+nsubj(register-18, people-16)
+aux(register-18, must-17)
+advcl(vote-8, register-18)
+poss(union-20, their-19)
+dobj(register-18, union-20)
+det(government-23, the-22)
+prep_with(register-18, government-23)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Our) (NNS forefathers))
+      (VP (VBD fought)
+        (PP (IN against)
+          (NP (DT the) (NN stamp) (NN tax)))))
+    (, ,)
+    (S
+      (ADVP
+        (NP (RB yet) (CD 240) (NNS years))
+        (RB later))
+      (NP (DT the) (NN constitution))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN raped)))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (JJ very) (NNS laws))
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (VBD fought)
+              (PP (IN against))))))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP
+            (ADVP (RB slowly))
+            (VBN yoked)
+            (PP (IN around)
+              (NP (PRP$ our) (NNS necks)))))))
+    (. .)))
+
+poss(forefathers-2, Our-1)
+nsubj(fought-3, forefathers-2)
+root(ROOT-0, fought-3)
+det(tax-7, the-5)
+nn(tax-7, stamp-6)
+prep_against(fought-3, tax-7)
+advmod(years-11, yet-9)
+num(years-11, 240-10)
+npadvmod(later-12, years-11)
+advmod(raped-17, later-12)
+det(constitution-14, the-13)
+nsubjpass(raped-17, constitution-14)
+aux(raped-17, has-15)
+auxpass(raped-17, been-16)
+conj_and(fought-3, raped-17)
+det(laws-21, the-19)
+amod(laws-21, very-20)
+prep_against(fought-23, laws-21)
+nsubjpass(yoked-28, laws-21)
+nsubj(fought-23, we-22)
+rcmod(laws-21, fought-23)
+aux(yoked-28, have-25)
+auxpass(yoked-28, been-26)
+advmod(yoked-28, slowly-27)
+conj_and(fought-3, yoked-28)
+poss(necks-31, our-30)
+prep_around(yoked-28, necks-31)
+

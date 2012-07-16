@@ -1,0 +1,158 @@
+(ROOT
+  (S
+    (NP (NN Murder))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ legal) (NN concept))
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT which) (NN one)))
+          (S
+            (NP
+              (ADJP (JJ autonomous) (, ,) (JJ self-aware))
+              (NN individual))
+            (ADVP (RB intentionally))
+            (VP (VBZ kills)
+              (NP (DT another)))))))
+    (. .)))
+
+nsubj(concept-5, Murder-1)
+cop(concept-5, is-2)
+det(concept-5, a-3)
+amod(concept-5, legal-4)
+root(ROOT-0, concept-5)
+det(one-8, concept-5)
+rel(kills-14, one-8)
+amod(self-aware-11, autonomous-9)
+amod(individual-12, self-aware-11)
+nsubj(kills-14, individual-12)
+advmod(kills-14, intentionally-13)
+rcmod(concept-5, kills-14)
+dobj(kills-14, another-15)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN As)
+      (S
+        (NP (DT a) (NNS embryo\/fetus))
+        (VP (VBZ has)
+          (NP
+            (NP (DT no) (JJ legal) (NN status))
+            (PP (IN as)
+              (NP (DT a) (NN person)))))))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ (MD can)
+      (NP (PRP it))
+      (VP (VB be)
+        (VP (VBN murdered))))
+    (. ?)))
+
+mark(has-4, As-1)
+det(embryo\/fetus-3, a-2)
+nsubj(has-4, embryo\/fetus-3)
+advcl(murdered-16, has-4)
+det(status-7, no-5)
+amod(status-7, legal-6)
+dobj(has-4, status-7)
+det(person-10, a-9)
+prep_as(status-7, person-10)
+advmod(murdered-16, how-12)
+aux(murdered-16, can-13)
+nsubjpass(murdered-16, it-14)
+auxpass(murdered-16, be-15)
+root(ROOT-0, murdered-16)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN killed)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD can) (RB not)
+        (VP (VB be)
+          (VP (VBN murdered)))))
+    (. .)))
+
+nsubjpass(killed-4, It-1)
+aux(killed-4, can-2)
+auxpass(killed-4, be-3)
+root(ROOT-0, killed-4)
+nsubjpass(murdered-11, it-7)
+aux(murdered-11, can-8)
+neg(murdered-11, not-9)
+auxpass(murdered-11, be-10)
+conj_but(killed-4, murdered-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Your) (NN use))
+      (PP (IN of)
+        (NP (DT the) (NN term) (`` ``) (NN murder) ('' ''))))
+    (VP (VBZ is)
+      (ADVP (RB simply))
+      (NP
+        (NP (DT a) (JJ linguistic) (NN device))
+        (VP (VBN designed)
+          (S
+            (VP (TO to)
+              (VP (VB appeal)
+                (PP (TO to)
+                  (NP
+                    (NP (NN emotion))
+                    (CONJP (RB rather) (IN than))
+                    (NP (NN reason))))))))))
+    (. .)))
+
+poss(use-2, Your-1)
+nsubj(device-13, use-2)
+det(murder-7, the-4)
+nn(murder-7, term-5)
+prep_of(use-2, murder-7)
+cop(device-13, is-9)
+advmod(device-13, simply-10)
+det(device-13, a-11)
+amod(device-13, linguistic-12)
+root(ROOT-0, device-13)
+xsubj(appeal-16, device-13)
+partmod(device-13, designed-14)
+aux(appeal-16, to-15)
+xcomp(designed-14, appeal-16)
+prep_to(appeal-16, emotion-18)
+prep_to(appeal-16, reason-21)
+conj_negcc(emotion-18, reason-21)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB precisely))
+      (NP
+        (NP (DT this) (NN sort))
+        (PP (IN of)
+          (NP (JJ emotive) (NN discourse)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ hinders)
+              (NP (JJ rational) (NN debate)))))))
+    (. .)))
+
+nsubj(sort-5, It-1)
+cop(sort-5, is-2)
+advmod(sort-5, precisely-3)
+det(sort-5, this-4)
+root(ROOT-0, sort-5)
+nsubj(hinders-10, sort-5)
+amod(discourse-8, emotive-7)
+prep_of(sort-5, discourse-8)
+rcmod(sort-5, hinders-10)
+amod(debate-12, rational-11)
+dobj(hinders-10, debate-12)
+

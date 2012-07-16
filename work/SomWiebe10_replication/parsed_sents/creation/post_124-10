@@ -1,0 +1,104 @@
+(ROOT
+  (FRAG (CC or)
+    (RB not)
+    (NP (DT a) (NN progression)
+      (SBAR
+        (S
+          (VP (VBG depending)
+            (PRT (RP on))
+            (SBAR (IN whether)
+              (S
+                (NP (PRP you))
+                (VP (VBP want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB commit)
+                        (PP (TO to)
+                          (NP
+                            (NP (DT a) (NN crime))
+                            (PP (IN of)
+                              (NP (NN assumption)))))))))))))))
+    (. .)))
+
+dep(not-2, or-1)
+root(ROOT-0, not-2)
+det(progression-4, a-3)
+dep(not-2, progression-4)
+ccomp(progression-4, depending-5)
+prt(depending-5, on-6)
+complm(want-9, whether-7)
+nsubj(want-9, you-8)
+xsubj(commit-11, you-8)
+ccomp(depending-5, want-9)
+aux(commit-11, to-10)
+xcomp(want-9, commit-11)
+det(crime-14, a-13)
+prep_to(commit-11, crime-14)
+prep_of(crime-14, assumption-16)
+
+(ROOT
+  (S
+    (FRAG (CC and)
+      (PP (IN besides)))
+    (: ...)
+    (S
+      (S
+        (NP (DT the) (NN article))
+        (VP (VBZ is)
+          (PP (IN about)
+            (NP (DT an) (NNP ID) (NN trial)))))
+      (: ...)
+      (CC and)
+      (S
+        (NP (NNP Behe))
+        (VP (VBD was)
+          (VP (VBN presented)
+            (PP (IN with)
+              (NP
+                (NP (DT this) (NN pile))
+                (PP (IN of)
+                  (NP (NN information)))))
+            (: ...)
+            (FRAG
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (VP (MD could)
+                    (S
+                      (NP
+                        (NP (DT the) (NN judge))
+                        (SBAR
+                          (S (-LRB- -LRB-)
+                            (NP (WP who))
+                            (VP (VBZ is)
+                              (NP
+                                (NP (DT a) (NN judge))
+                                (PP (IN by)
+                                  (NP (NN trade))))))))))))
+              (. .))))))
+    (. .)))
+
+dep(is-6, and-1)
+dep(and-1, besides-2)
+det(article-5, the-4)
+nsubj(is-6, article-5)
+root(ROOT-0, is-6)
+det(trial-10, an-8)
+nn(trial-10, ID-9)
+prep_about(is-6, trial-10)
+nsubjpass(presented-15, Behe-13)
+auxpass(presented-15, was-14)
+conj_and(is-6, presented-15)
+det(pile-18, this-17)
+prep_with(presented-15, pile-18)
+prep_of(pile-18, information-20)
+advmod(could-23, how-22)
+dep(presented-15, could-23)
+det(judge-25, the-24)
+dep(could-23, judge-25)
+nsubj(judge-30, who-27)
+cop(judge-30, is-28)
+det(judge-30, a-29)
+rcmod(judge-25, judge-30)
+prep_by(judge-30, trade-32)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (DT that) (NN program))
+            (VP (VBZ is))))))
+    (. .)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+dobj(is-8, what-5)
+det(program-7, that-6)
+nsubj(is-8, program-7)
+ccomp(know-4, is-8)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP Mexico) (NNP City) (NNP Policy))
+    (VP (VBD applies\/applied)
+      (PP (TO to)
+        (NP (JJ federal) (NN funding)))
+      (PP (TO to)
+        (NP (NNP NGOs))))
+    (. .)))
+
+det(Policy-4, The-1)
+nn(Policy-4, Mexico-2)
+nn(Policy-4, City-3)
+nsubj(applies\/applied-5, Policy-4)
+root(ROOT-0, applies\/applied-5)
+amod(funding-8, federal-7)
+prep_to(applies\/applied-5, funding-8)
+prep_to(applies\/applied-5, NGOs-10)
+

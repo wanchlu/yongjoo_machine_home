@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (NN someone))
+          (VP (VBZ needs)
+            (NP (DT a) (NN kidney))))
+        (CC and)
+        (S
+          (S
+            (NP (PRP I))
+            (VP (VBP do) (RB n't)
+              (VP (VB donate)
+                (NP (PRP it)))))
+          (CC and)
+          (S
+            (NP (DT that) (NN person))
+            (VP (VBZ dies))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD did) (RB not)
+      (VP (VB kill)
+        (NP (DT that) (NN person))))
+    (. .)))
+
+mark(needs-3, If-1)
+nsubj(needs-3, someone-2)
+advcl(kill-20, needs-3)
+det(kidney-5, a-4)
+dobj(needs-3, kidney-5)
+nsubj(donate-10, I-7)
+aux(donate-10, do-8)
+neg(donate-10, n't-9)
+conj_and(needs-3, donate-10)
+advcl(kill-20, donate-10)
+dobj(donate-10, it-11)
+det(person-14, that-13)
+nsubj(dies-15, person-14)
+conj_and(needs-3, dies-15)
+conj_and(donate-10, dies-15)
+nsubj(kill-20, I-17)
+aux(kill-20, did-18)
+neg(kill-20, not-19)
+root(ROOT-0, kill-20)
+det(person-22, that-21)
+dobj(kill-20, person-22)
+

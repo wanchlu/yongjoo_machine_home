@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNS women))
+    (VP (MD will)
+      (VP (VB lose)
+        (NP (PRP$ their) (NNS jobs))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBP become)
+              (ADJP (JJ pregnant))
+              (, ,)
+              (SBAR (RB particularly) (IN if)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP have)
+                    (VP (VBN bedrest))))))))))
+    (. .)))
+
+det(women-2, Some-1)
+nsubj(lose-4, women-2)
+aux(lose-4, will-3)
+root(ROOT-0, lose-4)
+poss(jobs-6, their-5)
+dobj(lose-4, jobs-6)
+mark(pregnant-10, if-7)
+nsubj(pregnant-10, they-8)
+cop(pregnant-10, become-9)
+advcl(lose-4, pregnant-10)
+advmod(bedrest-16, particularly-12)
+dep(bedrest-16, if-13)
+nsubj(bedrest-16, they-14)
+aux(bedrest-16, have-15)
+ccomp(pregnant-10, bedrest-16)
+

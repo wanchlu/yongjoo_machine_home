@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN History))
+      (PRN (-LRB- -LRB-)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ includes)
+              (NP (NNP Genesis) (CD 1-11)))))
+        (-RRB- -RRB-)))
+    (VP (VBZ is)
+      (VP (VBN read)
+        (SBAR (IN as)
+          (S
+            (NP (NN history)
+              (CC and)
+              (NN poetry))
+            (VP (VBZ is)
+              (VP (VBN read)
+                (PP (IN as)
+                  (NP (NN poetry)))))))))
+    (. .)))
+
+nsubjpass(read-9, History-1)
+nsubj(includes-4, which-3)
+dep(History-1, includes-4)
+dobj(includes-4, Genesis-5)
+num(Genesis-5, 1-11-6)
+auxpass(read-9, is-8)
+root(ROOT-0, read-9)
+mark(read-15, as-10)
+nsubjpass(read-15, history-11)
+conj_and(history-11, poetry-13)
+nsubjpass(read-15, poetry-13)
+auxpass(read-15, is-14)
+advcl(read-9, read-15)
+prep_as(read-15, poetry-17)
+

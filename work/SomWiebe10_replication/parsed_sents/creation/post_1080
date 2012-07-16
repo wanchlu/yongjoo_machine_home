@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (SBAR
+      (S
+        (S
+          (NP (PRP You))
+          (VP (VBP see)
+            (NP (DT a) (NN building))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (NP (NNP HAVE) (NNP PROOF)))))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (DT a) (NN builder)))
+    (: ...)))
+
+nsubj(see-2, You-1)
+dep(is-10, see-2)
+det(building-4, a-3)
+dobj(see-2, building-4)
+dep(PROOF-8, you-6)
+nn(PROOF-8, HAVE-7)
+conj_and(see-2, PROOF-8)
+dep(is-10, PROOF-8)
+expl(is-10, there-9)
+root(ROOT-0, is-10)
+det(builder-12, a-11)
+nsubj(is-10, builder-12)
+
+(ROOT
+  (S
+    (SBAR
+      (S
+        (S
+          (ADVP (RB \/))
+          (NP (NNP \/))
+          (-RRB- -RRB-)
+          (VP
+            (ADVP (PRP You))
+            (VBP see)
+            (NP (DT a) (NN car))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (NP (NNP HAVE) (NNP PROOF)))))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (DT a) (NN builder)))
+    (: ...)))
+
+advmod(see-5, \/-1)
+nsubj(see-5, \/-2)
+advmod(see-5, You-4)
+dep(is-13, see-5)
+det(car-7, a-6)
+dobj(see-5, car-7)
+dep(PROOF-11, you-9)
+nn(PROOF-11, HAVE-10)
+conj_and(see-5, PROOF-11)
+dep(is-13, PROOF-11)
+expl(is-13, there-12)
+root(ROOT-0, is-13)
+det(builder-15, a-14)
+nsubj(is-13, builder-15)
+
+(ROOT
+  (S
+    (SBAR
+      (SINV
+        (VP
+          (VP (VB \/) (-RRB- -RRB-)
+            (NP (NNS \/))
+            (-RRB- -RRB-))
+          (SBAR
+            (WHADVP (WRB When))
+            (S
+              (NP (PRP you))
+              (VP (VBP see)))))
+        (NP (NN creation))))
+    (NP (EX there))
+    (VP (MD must)
+      (VP (VB be)
+        (NP (DT a) (NN CREATOR))))
+    (: ...)))
+
+dep(CREATOR-13, \/-1)
+dobj(\/-1, \/-3)
+advmod(see-7, When-5)
+nsubj(see-7, you-6)
+advcl(\/-1, see-7)
+nsubj(\/-1, creation-8)
+expl(CREATOR-13, there-9)
+aux(CREATOR-13, must-10)
+cop(CREATOR-13, be-11)
+det(CREATOR-13, a-12)
+root(ROOT-0, CREATOR-13)
+
+(ROOT
+  (SQ
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNS \/))
+      (-RRB- -RRB-)
+      (ADVP (RB Faith)))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+advmod(\/-1, Faith-5)
+

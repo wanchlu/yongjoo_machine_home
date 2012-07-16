@@ -1,0 +1,202 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Everything))
+    (VP (VBZ happens)
+      (PP (IN for)
+        (NP (DT a) (NN reason))))
+    ('' '') (. ?)))
+
+nsubj(happens-3, Everything-2)
+root(ROOT-0, happens-3)
+det(reason-6, a-5)
+prep_for(happens-3, reason-6)
+
+(ROOT
+  (FRAG
+    (ADVP (RB So))
+    (NP
+      (NP (NN incest) (, ,) (NN pedophilia) (, ,) (NN rape) (, ,)
+        (CC and)
+        (NN abuse))
+      (SBAR
+        (S
+          (VP (VBP are)
+            (NP
+              (NP (NNS results))
+              (PP (IN of)
+                (NP (NN reason) (NNS ?!?))))))))))
+
+dep(incest-2, So-1)
+root(ROOT-0, incest-2)
+conj_and(incest-2, pedophilia-4)
+conj_and(incest-2, rape-6)
+conj_and(incest-2, abuse-9)
+cop(results-11, are-10)
+rcmod(incest-2, results-11)
+nn(?!?-14, reason-13)
+prep_of(results-11, ?!?-14)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (NN nothing) (JJ reasonable))
+        (PP (IN about)
+          (S
+            (VP (VBG raising)
+              (NP
+                (NP (DT a) (JJ constant) (NN reminder))
+                (PP (IN of)
+                  (NP (DT a) (JJ cruel) (NN crime)))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+dep(reasonable-4, nothing-3)
+acomp(is-2, reasonable-4)
+prepc_about(reasonable-4, raising-6)
+det(reminder-9, a-7)
+amod(reminder-9, constant-8)
+dobj(raising-6, reminder-9)
+det(crime-13, a-11)
+amod(crime-13, cruel-12)
+prep_of(reminder-9, crime-13)
+
+(ROOT
+  (S
+    (NP (DT Those)
+      (ADJP (VBN opposed)
+        (PP (TO to)
+          (NP
+            (NP (DT any) (NN type))
+            (PP (IN of)
+              (NP (NNP induced))))))
+      (NN abortion))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (NN idea))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP$ its))
+            (VP (VBP like)
+              (PP (IN for)
+                (NP (DT a) (NN child)
+                  (S
+                    (VP (TO to)
+                      (VP (VB carry)
+                        (NP
+                          (NP (DT the) (NN burden))
+                          (PP (IN of)
+                            (S
+                              (VP (VBG being)
+                                (NP
+                                  (NP (DT the) (NN offspring))
+                                  (PP (IN of)
+                                    (NP (NN abuse))))))))))))))))))
+    (. .)))
+
+det(abortion-8, Those-1)
+amod(abortion-8, opposed-2)
+det(type-5, any-4)
+prep_to(opposed-2, type-5)
+prep_of(type-5, induced-7)
+nsubj(have-9, abortion-8)
+root(ROOT-0, have-9)
+det(idea-11, no-10)
+dobj(have-9, idea-11)
+dobj(like-14, idea-11)
+rel(like-14, what-12)
+nsubj(like-14, its-13)
+rcmod(idea-11, like-14)
+det(child-17, a-16)
+prep_for(like-14, child-17)
+aux(carry-19, to-18)
+infmod(child-17, carry-19)
+det(burden-21, the-20)
+dobj(carry-19, burden-21)
+cop(offspring-25, being-23)
+det(offspring-25, the-24)
+prepc_of(burden-21, offspring-25)
+prep_of(offspring-25, abuse-27)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT a) (NN fact))
+      (SBAR (IN that)
+        (S
+          (NP (JJ unplanned\/unwanted) (NNS children))
+          (VP (VBP are)
+            (ADJP (RBR more) (JJ likely)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN subjected)
+                      (PP (TO to)
+                        (NP (NN abuse)
+                          (CC and)
+                          (NN neglect))))))))
+            (: --)
+            (S
+              (VP (VBG continuing)
+                (NP (DT the) (NN cycle))))))))
+    (. .)))
+
+nsubj(fact-4, It-1)
+cop(fact-4, is-2)
+det(fact-4, a-3)
+root(ROOT-0, fact-4)
+complm(likely-10, that-5)
+amod(children-7, unplanned\/unwanted-6)
+nsubj(likely-10, children-7)
+cop(likely-10, are-8)
+advmod(likely-10, more-9)
+ccomp(fact-4, likely-10)
+aux(subjected-13, to-11)
+auxpass(subjected-13, be-12)
+xcomp(likely-10, subjected-13)
+prep_to(subjected-13, abuse-15)
+prep_to(subjected-13, neglect-17)
+conj_and(abuse-15, neglect-17)
+parataxis(likely-10, continuing-19)
+xcomp(likely-10, continuing-19)
+det(cycle-21, the-20)
+dobj(continuing-19, cycle-21)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Stopping)
+        (NP
+          (NP (DT that) (NN cycle))
+          (PP (IN of)
+            (NP (NN abuse))))))
+    (VP (VBZ is)
+      (ADJP (JJ easy)))
+    (. .)))
+
+csubj(easy-7, Stopping-1)
+det(cycle-3, that-2)
+dobj(Stopping-1, cycle-3)
+prep_of(cycle-3, abuse-5)
+cop(easy-7, is-6)
+root(ROOT-0, easy-7)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (VBZ takes)
+      (NP (CD one) (NN outpatient) (NN appointment)))
+    (. .)))
+
+nsubj(takes-3, It-1)
+advmod(takes-3, just-2)
+root(ROOT-0, takes-3)
+num(appointment-6, one-4)
+nn(appointment-6, outpatient-5)
+dobj(takes-3, appointment-6)
+

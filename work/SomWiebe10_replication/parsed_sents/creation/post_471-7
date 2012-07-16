@@ -1,0 +1,33 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ says)
+        (SBAR (IN that)
+          (S
+            (NP (NNS scientists))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB approach)
+                    (NP (NN science))
+                    (PP (IN from)
+                      (NP
+                        (NP (DT the) (NN perspective))
+                        (PP (IN of)
+                          (NP (NN naturalism)))))))))))))
+    (. ?)))
+
+nsubj(says-2, Who-1)
+root(ROOT-0, says-2)
+complm(need-5, that-3)
+nsubj(need-5, scientists-4)
+xsubj(approach-7, scientists-4)
+ccomp(says-2, need-5)
+aux(approach-7, to-6)
+xcomp(need-5, approach-7)
+dobj(approach-7, science-8)
+det(perspective-11, the-10)
+prep_from(approach-7, perspective-11)
+prep_of(perspective-11, naturalism-13)
+

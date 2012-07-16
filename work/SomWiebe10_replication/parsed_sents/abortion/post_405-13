@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (NN objective))
+      (: :)
+      (S
+        (NP
+          (NP (DT The) (NNS values))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NN mother))
+              (, ,)
+              (NP
+                (NP (NNS needs))
+                (PP (IN of)
+                  (NP (DT the) (NN offspring))))
+              (, ,)
+              (CC and)
+              (NP (JJ medical) (NNS capabilities)))))
+        (VP (VB meet)
+          (PP (IN at)
+            (NP (DT that) (NN point))))))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(objective-7, words-3)
+nsubj(objective-7, it-5)
+cop(objective-7, is-6)
+root(ROOT-0, objective-7)
+det(values-10, The-9)
+nsubj(meet-23, values-10)
+det(mother-13, the-12)
+prep_of(values-10, mother-13)
+prep_of(values-10, needs-15)
+conj_and(mother-13, needs-15)
+det(offspring-18, the-17)
+prep_of(needs-15, offspring-18)
+amod(capabilities-22, medical-21)
+prep_of(values-10, capabilities-22)
+conj_and(mother-13, capabilities-22)
+parataxis(objective-7, meet-23)
+det(point-26, that-25)
+prep_at(meet-23, point-26)
+

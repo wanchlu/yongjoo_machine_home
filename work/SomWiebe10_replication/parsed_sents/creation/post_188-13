@@ -1,0 +1,37 @@
+(ROOT
+  (NP
+    (NP (NNP D.) (-LRB- -LRB-) (NN honors) (-RRB- -RRB-))
+    (PP (IN in)
+      (NP
+        (NP (NN philosophy)
+          (CC and)
+          (NN theology))
+        (PP (IN from)
+          (NP
+            (NP (NNP Princeton) (NNP Theological) (NNP Seminary))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP he))
+                (VP (VBD was)
+                  (ADVP (RB formerly))
+                  (NP (DT a) (NNP Teaching) (NNP Fellow)))))))))
+    (. .)))
+
+nn(honors-3, D.-1)
+root(ROOT-0, honors-3)
+prep_in(honors-3, philosophy-6)
+prep_in(honors-3, theology-8)
+conj_and(philosophy-6, theology-8)
+nn(Seminary-12, Princeton-10)
+nn(Seminary-12, Theological-11)
+prep_from(philosophy-6, Seminary-12)
+advmod(Fellow-20, where-14)
+nsubj(Fellow-20, he-15)
+cop(Fellow-20, was-16)
+advmod(Fellow-20, formerly-17)
+det(Fellow-20, a-18)
+nn(Fellow-20, Teaching-19)
+rcmod(Seminary-12, Fellow-20)
+

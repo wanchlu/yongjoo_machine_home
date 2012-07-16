@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (NN bank))
+        (VP (VBD took)
+          (SBAR
+            (S
+              (NP
+                (QP (JJR more) (IN than) (CD one)))
+              (VP (VBP try)
+                (S
+                  (VP (TO to)
+                    (VP (VB deposit)
+                      (NP (PRP$ your) (NN check)))))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD 'd)
+      (VP (VB be)
+        (ADJP (RB pretty) (JJ steamed))))
+    (. .)))
+
+mark(took-4, If-1)
+det(bank-3, the-2)
+nsubj(took-4, bank-3)
+advcl(steamed-18, took-4)
+mwe(than-6, more-5)
+quantmod(one-7, than-6)
+nsubj(try-8, one-7)
+xsubj(deposit-10, one-7)
+ccomp(took-4, try-8)
+aux(deposit-10, to-9)
+xcomp(try-8, deposit-10)
+poss(check-12, your-11)
+dobj(deposit-10, check-12)
+nsubj(steamed-18, you-14)
+aux(steamed-18, 'd-15)
+cop(steamed-18, be-16)
+advmod(steamed-18, pretty-17)
+root(ROOT-0, steamed-18)
+

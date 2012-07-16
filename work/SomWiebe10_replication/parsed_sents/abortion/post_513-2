@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Humans))
+      (VP (VBP have)
+        (NP
+          (NP (NNS lives))
+          (PP (IN for)
+            (NP
+              (NP (NNS thousands))
+              (PP (IN of)
+                (NP
+                  (NP (NNS years))
+                  (PP (IN in)
+                    (NP
+                      (NP (NNS families)
+                        (CC and)
+                        (NNS communities))
+                      (VP (VBN unaided)))))))))))
+    (CC and)
+    (S
+      (ADVP (RB yet))
+      (NP (PRP we))
+      (VP (VBP see)
+        (NP
+          (NP (DT this) (NN body))
+          (VP (VBG claiming)
+            (S
+              (VP (TO to)
+                (VP (VB know)
+                  (CC and)
+                  (VB represent)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (NN family) (NNS values))
+                      (VP (VBP are)))))))))))
+    (. .)))
+
+nsubj(have-2, Humans-1)
+root(ROOT-0, have-2)
+dobj(have-2, lives-3)
+prep_for(lives-3, thousands-5)
+prep_of(thousands-5, years-7)
+prep_in(years-7, families-9)
+prep_in(years-7, communities-11)
+conj_and(families-9, communities-11)
+partmod(families-9, unaided-12)
+advmod(see-16, yet-14)
+nsubj(see-16, we-15)
+conj_and(have-2, see-16)
+det(body-18, this-17)
+dobj(see-16, body-18)
+xsubj(know-21, body-18)
+partmod(body-18, claiming-19)
+aux(know-21, to-20)
+xcomp(claiming-19, know-21)
+xcomp(claiming-19, represent-23)
+conj_and(know-21, represent-23)
+dobj(are-27, what-24)
+nn(values-26, family-25)
+nsubj(are-27, values-26)
+ccomp(know-21, are-27)
+

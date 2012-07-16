@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (ADJP (JJ unknowable)))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (DT no) (NN one))
+    (VP (MD can)
+      (VP (VB declare)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (NP
+                (NP (JJ intelligent))
+                (: --)
+                (CC or)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ exists))))))))))
+    (. .)))
+
+mark(unknowable-4, If-1)
+nsubj(unknowable-4, it-2)
+cop(unknowable-4, 's-3)
+advcl(declare-10, unknowable-4)
+advmod(declare-10, then-6)
+det(one-8, no-7)
+nsubj(declare-10, one-8)
+aux(declare-10, can-9)
+root(ROOT-0, declare-10)
+nsubj(intelligent-13, it-11)
+cop(intelligent-13, 's-12)
+ccomp(declare-10, intelligent-13)
+complm(exists-18, that-16)
+nsubj(exists-18, it-17)
+ccomp(declare-10, exists-18)
+conj_or(intelligent-13, exists-18)
+

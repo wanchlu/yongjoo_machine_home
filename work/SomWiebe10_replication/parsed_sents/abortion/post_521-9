@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS brains))
+      (PP (IN of)
+        (NP
+          (NP (NNS humans))
+          (PP (IN in)
+            (NP (JJ vegetative) (NNS states))))))
+    (ADVP (RB also))
+    (VP (VBP have)
+      (NP
+        (NP (JJ active) (NNS parts))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (DT the) (NNS parts))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP keep)
+                  (S
+                    (NP (EX there))
+                    (NP
+                      (NP (NNS lungs)
+                        (CC and)
+                        (NN heart))
+                      (VP (VBG pumping) (, ,)
+                        (PP (IN for)
+                          (NP (NN example))))))))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+det(brains-2, The-1)
+nsubj(have-9, brains-2)
+prep_of(brains-2, humans-4)
+amod(states-7, vegetative-6)
+prep_in(humans-4, states-7)
+advmod(have-9, also-8)
+root(ROOT-0, have-9)
+amod(parts-11, active-10)
+dobj(have-9, parts-11)
+det(parts-14, the-13)
+dep(parts-11, parts-14)
+nsubj(keep-16, parts-14)
+rcmod(parts-14, keep-16)
+expl(lungs-18, there-17)
+nsubj(lungs-18, there-17)
+xcomp(keep-16, lungs-18)
+xcomp(keep-16, heart-20)
+conj_and(lungs-18, heart-20)
+partmod(lungs-18, pumping-21)
+prep_for(pumping-21, example-24)
+

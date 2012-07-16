@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (ADVP (DT all))
+      (VP (VBP know)
+        (ADJP (JJ right)
+          (CC and)
+          (JJ wrong))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBP do) (RB n't)
+        (VP (VB need)
+          (S
+            (NP (NN someone) (RB else))
+            (VP (TO to)
+              (VP (VB tell)
+                (NP (PRP us))))))))
+    (. .)))
+
+nsubj(know-3, We-1)
+advmod(know-3, all-2)
+root(ROOT-0, know-3)
+acomp(know-3, right-4)
+acomp(know-3, wrong-6)
+conj_and(right-4, wrong-6)
+nsubj(need-11, we-8)
+aux(need-11, do-9)
+neg(need-11, n't-10)
+conj_and(know-3, need-11)
+nsubj(tell-15, someone-12)
+advmod(someone-12, else-13)
+aux(tell-15, to-14)
+xcomp(need-11, tell-15)
+dobj(tell-15, us-16)
+

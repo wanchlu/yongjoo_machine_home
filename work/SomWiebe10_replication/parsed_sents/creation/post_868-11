@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN salinity))
+          (PP (IN of)
+            (NP (DT the) (NNS oceans))))))
+    (, ,)
+    (NP (NNP AiG))
+    (VP (VBZ fails)
+      (S
+        (VP (TO to)
+          (VP (VB consider)
+            (NP
+              (NP (DT any) (NN process))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ removes)
+                    (NP (NN salt))
+                    (PP (IN from)
+                      (NP
+                        (NP (NN seawater))
+                        (, ,)
+                        (SBAR
+                          (WHPP (IN of)
+                            (WHNP (WDT which)))
+                          (S
+                            (NP (DT many))
+                            (VP (VBP have)
+                              (VP (VBN been)
+                                (VP (VBN examined)
+                                  (CC and)
+                                  (VBN documented))))))))))))))))
+    (. .)))
+
+prepc_as_for(fails-10, for-2)
+det(salinity-4, the-3)
+pobj(fails-10, salinity-4)
+det(oceans-7, the-6)
+prep_of(salinity-4, oceans-7)
+nsubj(fails-10, AiG-9)
+xsubj(consider-12, AiG-9)
+root(ROOT-0, fails-10)
+aux(consider-12, to-11)
+xcomp(fails-10, consider-12)
+det(process-14, any-13)
+dobj(consider-12, process-14)
+nsubj(removes-16, process-14)
+rcmod(process-14, removes-16)
+dobj(removes-16, salt-17)
+prep_from(removes-16, seawater-19)
+rel(examined-26, which-22)
+nsubjpass(examined-26, many-23)
+nsubjpass(documented-28, many-23)
+aux(examined-26, have-24)
+auxpass(examined-26, been-25)
+rcmod(seawater-19, examined-26)
+rcmod(seawater-19, documented-28)
+conj_and(examined-26, documented-28)
+

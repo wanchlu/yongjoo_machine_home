@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (MD may)
+          (VP (VB attempt)
+            (S
+              (VP (TO to)
+                (VP (VB restate)
+                  (NP (DT the) (NN position)))))))))
+    (: :)
+    (NP (DT the) (NN fetus))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (JJ innocent) (JJ human) (NN being))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD should)
+              (VP (VB be)
+                (VP (VBN protected))))))))
+    (. .)))
+
+mark(attempt-4, If-1)
+nsubj(attempt-4, I-2)
+xsubj(restate-6, I-2)
+aux(attempt-4, may-3)
+advcl(being-16, attempt-4)
+aux(restate-6, to-5)
+xcomp(attempt-4, restate-6)
+det(position-8, the-7)
+dobj(restate-6, position-8)
+det(fetus-11, the-10)
+nsubj(being-16, fetus-11)
+cop(being-16, is-12)
+det(being-16, an-13)
+amod(being-16, innocent-14)
+amod(being-16, human-15)
+root(ROOT-0, being-16)
+nsubjpass(protected-20, being-16)
+aux(protected-20, should-18)
+auxpass(protected-20, be-19)
+rcmod(being-16, protected-20)
+

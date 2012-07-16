@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN woman))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ chooses)
+            (S
+              (VP (TO to)
+                (VP (VB remain)
+                  (ADJP (JJ pregnant)))))))))
+    (VP (VBZ is)
+      (ADVP (RB voluntarily))
+      (VP (VBG giving)
+        (ADVP (RB up)
+          (NP
+            (NP (PRP$ her) (NNS rights))
+            (, ,)
+            (CC and)
+            (NP (PRP$ her) (NN life))
+            (, ,)))
+        (PP (IN for)
+          (NP (DT the) (NN fetus)))))
+    (. .)))
+
+det(woman-2, The-1)
+nsubj(chooses-4, woman-2)
+nsubj(giving-10, woman-2)
+rcmod(woman-2, chooses-4)
+aux(pregnant-7, to-5)
+cop(pregnant-7, remain-6)
+xcomp(chooses-4, pregnant-7)
+aux(giving-10, is-8)
+advmod(giving-10, voluntarily-9)
+root(ROOT-0, giving-10)
+advmod(giving-10, up-11)
+poss(rights-13, her-12)
+pobj(up-11, rights-13)
+poss(life-17, her-16)
+pobj(up-11, life-17)
+conj_and(rights-13, life-17)
+det(fetus-21, the-20)
+prep_for(giving-10, fetus-21)
+

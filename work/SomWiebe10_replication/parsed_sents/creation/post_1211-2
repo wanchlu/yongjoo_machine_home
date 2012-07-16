@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR
+      (PRN
+        (NP
+          (NP (NNP \/))
+          (NP (NNP \/)))
+        (-RRB- -RRB-))
+      (S
+        (NP (EX There))
+        (VP (VBZ is)
+          (NP
+            (NP (DT a) (JJ massive) (NN amount))
+            (PP (IN of)
+              (NP (NN evidence)))))))
+    (NP (DT that))
+    (VP (VBZ supports)
+      (NP (NN evolution)))
+    (. .)))
+
+dep(is-5, \/-1)
+dep(\/-1, \/-2)
+expl(is-5, There-4)
+dep(supports-12, is-5)
+det(amount-8, a-6)
+amod(amount-8, massive-7)
+nsubj(is-5, amount-8)
+prep_of(amount-8, evidence-10)
+nsubj(supports-12, that-11)
+root(ROOT-0, supports-12)
+dobj(supports-12, evolution-13)
+

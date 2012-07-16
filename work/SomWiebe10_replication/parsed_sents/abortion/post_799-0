@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (NP (DT A) (NN snail))
+    (VP (VBZ has)
+      (NP (JJR more) (NN consciousness))
+      (PP (IN than)
+        (NP (DT a) (NN fetus)))
+      (, ,)
+      (PP (IN until)
+        (NP (DT the) (JJ third) (NN trimester) (NN +))))
+    (. .)))
+
+det(snail-2, A-1)
+nsubj(has-3, snail-2)
+root(ROOT-0, has-3)
+amod(consciousness-5, more-4)
+dobj(has-3, consciousness-5)
+det(fetus-8, a-7)
+prep_than(has-3, fetus-8)
+det(+-14, the-11)
+amod(+-14, third-12)
+nn(+-14, trimester-13)
+prep_until(has-3, +-14)
+
+(ROOT
+  (S
+    (SINV (RB So)
+      (VP (VBZ does))
+      (NP (DT a) (NN woman)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ contracts)
+              (NP (JJ cervical) (NN cancer))
+              (PP (IN from)
+                (NP (NNP HPV))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNP the) ('' '') (NNP Life))
+      (VP (VBZ is)
+        (NP
+          (NP (JJ sacred))
+          ('' '')
+          (SBAR
+            (S
+              (NP (NN crowd))
+              (VP (VBP seem)
+                (S
+                  (VP (TO to)
+                    (VP (VB value)
+                      (NP (PRP$ her) (NN life))
+                      (ADVP (RB even) (RBR less))
+                      (PP (IN than)
+                        (NP (DT the) (NN snail))))))))))))
+    (. .)))
+
+advmod(does-2, So-1)
+root(ROOT-0, does-2)
+det(woman-4, a-3)
+nsubj(does-2, woman-4)
+nsubj(contracts-6, who-5)
+ccomp(woman-4, contracts-6)
+amod(cancer-8, cervical-7)
+dobj(contracts-6, cancer-8)
+prep_from(contracts-6, HPV-10)
+nn(Life-15, the-13)
+nsubj(sacred-17, Life-15)
+cop(sacred-17, is-16)
+conj_but(does-2, sacred-17)
+nsubj(seem-20, crowd-19)
+xsubj(value-22, crowd-19)
+rcmod(sacred-17, seem-20)
+aux(value-22, to-21)
+xcomp(seem-20, value-22)
+poss(life-24, her-23)
+dobj(value-22, life-24)
+advmod(less-26, even-25)
+advmod(value-22, less-26)
+det(snail-29, the-28)
+prep_than(value-22, snail-29)
+
+(ROOT
+  (S
+    (PP
+      (ADVP (RB +))
+      (IN Of)
+      (NP (NN pregnancy)))
+    (, ,) (RB not)
+    (VP (VBP snaildom))
+    (. .)))
+
+advmod(snaildom-6, +-1)
+prep_of(snaildom-6, pregnancy-3)
+neg(snaildom-6, not-5)
+root(ROOT-0, snaildom-6)
+

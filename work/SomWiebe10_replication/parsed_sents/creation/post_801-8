@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNS theories))
+    (VP (VBP are)
+      (ADVP (RB now))
+      (VP (VBN known)
+        (PP (IN as)
+          (NP
+            (NP (NNS laws))
+            (ADJP (JJ due)
+              (PP
+                (PP (TO to)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (S
+                        (ADVP (RB rigorously))
+                        (NP (PRP they))
+                        (VP (VBP have)
+                          (VP (VBN been)
+                            (VP (VBN tested)))))
+                      (, ,)
+                      (CC but)
+                      (S
+                        (NP (DT that))
+                        (VP (VBZ does) (RB not)
+                          (VP (VB mean)
+                            (SBAR (IN that)
+                              (S
+                                (NP (PRP they))
+                                (VP (VBP are)
+                                  (ADJP (RB absolutely) (JJ perfect)))))))))))
+                (CC or)
+                (PP (IN beyond)
+                  (NP (NN reproach)))))))))
+    (. .)))
+
+det(theories-2, Some-1)
+nsubjpass(known-5, theories-2)
+auxpass(known-5, are-3)
+advmod(known-5, now-4)
+root(ROOT-0, known-5)
+prep_as(known-5, laws-7)
+advmod(tested-15, how-10)
+advmod(tested-15, rigorously-11)
+nsubjpass(tested-15, they-12)
+aux(tested-15, have-13)
+auxpass(tested-15, been-14)
+prepc_due_to(laws-7, tested-15)
+nsubj(mean-21, that-18)
+aux(mean-21, does-19)
+neg(mean-21, not-20)
+prepc_due_to(laws-7, mean-21)
+conj_but(tested-15, mean-21)
+complm(perfect-26, that-22)
+nsubj(perfect-26, they-23)
+cop(perfect-26, are-24)
+advmod(perfect-26, absolutely-25)
+ccomp(mean-21, perfect-26)
+prep_as(known-5, beyond-28)
+conj_or(laws-7, beyond-28)
+pobj(beyond-28, reproach-29)
+

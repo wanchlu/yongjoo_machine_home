@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NN wildlife) (NNS biologists))
+        (VP (VBP count)
+          (NP (NNS gazelles)))))
+    (NP (PRP they))
+    (VP (VBP choose)
+      (NP
+        (NP (DT a) (NN definition))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ works)
+              (PP (IN for)
+                (NP (PRP them))))))))
+    (. .)))
+
+advmod(count-4, When-1)
+nn(biologists-3, wildlife-2)
+nsubj(count-4, biologists-3)
+advcl(choose-7, count-4)
+dobj(count-4, gazelles-5)
+nsubj(choose-7, they-6)
+root(ROOT-0, choose-7)
+det(definition-9, a-8)
+dobj(choose-7, definition-9)
+nsubj(works-11, definition-9)
+rcmod(definition-9, works-11)
+prep_for(works-11, them-13)
+

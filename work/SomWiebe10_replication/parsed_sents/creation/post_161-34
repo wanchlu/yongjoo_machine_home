@@ -1,0 +1,91 @@
+(ROOT
+  (S ('' '')
+    (S (CC And)
+      (NP (PRP it))
+      (VP (VBZ does)
+        (ADVP (RB so))
+        (PP (IN without)
+          (NP
+            (NP (JJ explicit) (NNS definitions))
+            (PP (IN of)
+              (NP
+                (NP (NNS terms))
+                (VP (VBN used)
+                  (PP (IN in)
+                    (NP
+                      (NP
+                        (NP (PRP it) (POS 's))
+                        (NNS arguments))
+                      (, ,)
+                      (NP
+                        (NP (JJ specific) (NNS predictions))
+                        (, ,)
+                        (NP
+                          (NP (NNS experiments))
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VBP have)
+                                (VP (VBN validated)
+                                  (NP
+                                    (NP (PRP it) (POS 's))
+                                    (NNS predictions)))))))))))))))))
+    (, ,)
+    (CC or)
+    (S
+      (NP
+        (NP (DT any) (JJ other) (NN kind))
+        (PP (IN of)
+          (NP
+            (NP (NN evidence))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ useful)
+                    (CC or)
+                    (JJ relevant))
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (VP (VBG evaluating)
+                        (NP (PRP it)))))))))))
+      (VP (VBZ 's)
+        (NP (NN truth) (NNS claims))))
+    (. .)))
+
+nsubj(does-4, it-3)
+root(ROOT-0, does-4)
+advmod(does-4, so-5)
+amod(definitions-8, explicit-7)
+prep_without(does-4, definitions-8)
+prep_of(definitions-8, terms-10)
+partmod(terms-10, used-11)
+poss(arguments-15, it-13)
+prep_in(used-11, arguments-15)
+amod(predictions-18, specific-17)
+appos(arguments-15, predictions-18)
+appos(predictions-18, experiments-20)
+nsubj(validated-23, experiments-20)
+aux(validated-23, have-22)
+rcmod(experiments-20, validated-23)
+poss(predictions-26, it-24)
+dobj(validated-23, predictions-26)
+det(kind-31, any-29)
+amod(kind-31, other-30)
+nsubj(claims-44, kind-31)
+prep_of(kind-31, evidence-33)
+nsubj(useful-36, evidence-33)
+nsubj(relevant-38, evidence-33)
+nsubj(evaluating-40, evidence-33)
+cop(useful-36, is-35)
+rcmod(evidence-33, useful-36)
+rcmod(evidence-33, relevant-38)
+conj_or(useful-36, relevant-38)
+advmod(evaluating-40, when-39)
+advcl(useful-36, evaluating-40)
+dobj(evaluating-40, it-41)
+cop(claims-44, 's-42)
+nn(claims-44, truth-43)
+conj_or(does-4, claims-44)
+

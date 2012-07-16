@@ -1,0 +1,71 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Enjoy) (: --))
+    (. .)))
+
+root(ROOT-0, Enjoy-1)
+
+(ROOT
+  (SINV
+    (S
+      (NP (PRP I))
+      (VP (VBP am)))
+    (, ,)
+    (VP (VBZ says))
+    (NP
+      (NP (NNP Fuller))
+      (, ,)
+      (VP
+        (VP (VBN ignorant))
+        (PRN (-LRB- -LRB-)
+          (FRAG
+            (NP (NN sheerly) (RB so))
+            (: ;)
+            (S
+              (NP (DT this))
+              (VP (VBZ is)
+                (NP
+                  (NP (DT the) (VBG glaring) (NN deficiency))
+                  (PP (IN in)
+                    (NP (PRP$ my) (NN case)))))))
+          (-RRB- -RRB-))
+        (PP (IN of) ('' '')
+          (NP
+            (NP
+              (NP (NNP ID) (POS 's))
+              (NN argument) (NN structure) ('' ''))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP (NN argument))
+                    (PP (TO to)
+                      (NP (DT the) (JJS best) (NN explanation)))))))))))
+    (. !)))
+
+nsubj(am-2, I-1)
+ccomp(says-4, am-2)
+root(ROOT-0, says-4)
+nsubj(says-4, Fuller-5)
+dep(Fuller-5, ignorant-7)
+dep(ignorant-7, sheerly-9)
+advmod(sheerly-9, so-10)
+nsubj(deficiency-16, this-12)
+cop(deficiency-16, is-13)
+det(deficiency-16, the-14)
+amod(deficiency-16, glaring-15)
+dep(sheerly-9, deficiency-16)
+poss(case-19, my-18)
+prep_in(deficiency-16, case-19)
+poss(structure-26, ID-23)
+nn(structure-26, argument-25)
+prep_of(ignorant-7, structure-26)
+nsubj(argument-31, structure-26)
+cop(argument-31, is-30)
+rcmod(structure-26, argument-31)
+det(explanation-35, the-33)
+amod(explanation-35, best-34)
+prep_to(argument-31, explanation-35)
+

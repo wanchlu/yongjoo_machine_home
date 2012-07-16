@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (VP (TO To)
+        (VP (VB abort)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (NN case))
+              (PP (IN of)
+                (NP (DT a) (NN rape))))))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB kill)
+            (NP (DT an) (JJ innocent) (JJ human) (NN being))
+            (PP (IN by)
+              (NP
+                (NP (DT the)
+                  (ADJP (RBR less) (JJ human))
+                  (NN method))
+                (RRC
+                  (ADJP (JJ available))
+                  (SBAR (IN while)
+                    (S
+                      (S
+                        (VP (TO to)
+                          (VP (VB retain)
+                            (NP (DT the) (NN baby)))))
+                      (VP (VBZ is)
+                        (S
+                          (VP (TO to)
+                            (VP (VB give)
+                              (NP (NN birth))
+                              (PP (TO to)
+                                (NP (DT a) (JJ new) (NN life))))))))))))))))
+    (. .)))
+
+aux(abort-2, To-1)
+csubj(is-9, abort-2)
+det(case-5, a-4)
+prep_in(abort-2, case-5)
+det(rape-8, a-7)
+prep_of(case-5, rape-8)
+root(ROOT-0, is-9)
+aux(kill-11, to-10)
+xcomp(is-9, kill-11)
+det(being-15, an-12)
+amod(being-15, innocent-13)
+amod(being-15, human-14)
+dobj(kill-11, being-15)
+det(method-20, the-17)
+advmod(human-19, less-18)
+amod(method-20, human-19)
+prep_by(kill-11, method-20)
+rcmod(method-20, available-21)
+mark(is-27, while-22)
+aux(retain-24, to-23)
+csubj(is-27, retain-24)
+det(baby-26, the-25)
+dobj(retain-24, baby-26)
+dep(available-21, is-27)
+aux(give-29, to-28)
+xcomp(is-27, give-29)
+dobj(give-29, birth-30)
+det(life-34, a-32)
+amod(life-34, new-33)
+prep_to(give-29, life-34)
+

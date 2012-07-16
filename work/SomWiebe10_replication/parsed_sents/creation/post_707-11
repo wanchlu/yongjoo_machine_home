@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (NNS people))
+    (VP (VBP tend)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (JJR better) (NN understanding))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ 's)
+                    (NP
+                      (NP (DT all))
+                      (SBAR
+                        (S
+                          (NP (PRP I))
+                          (VP (VBP mean)))))))))))))
+    (. .)))
+
+nsubj(tend-2, people-1)
+xsubj(have-4, people-1)
+root(ROOT-0, tend-2)
+aux(have-4, to-3)
+xcomp(tend-2, have-4)
+amod(understanding-6, better-5)
+dobj(have-4, understanding-6)
+nsubj(all-9, understanding-6)
+cop(all-9, 's-8)
+rcmod(understanding-6, all-9)
+dobj(mean-11, all-9)
+nsubj(mean-11, I-10)
+rcmod(all-9, mean-11)
+
+(ROOT
+  (SINV
+    (PP (RB Even) (VBG following)
+      (NP (NN study) (NNS people) (NNS cans)))
+    (VP
+      (ADVP (RB still))
+      (VBP reach))
+    (NP
+      (NP (JJ different) (NNS meanings))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ is)
+            (ADJP (JJ reasonable))
+            (SBAR (IN if)
+              (S
+                (VP (VBP are) (RB not)
+                  (VP (VBG taking)
+                    (NP
+                      (NP (NNS parts))
+                      (PP (IN of)
+                        (NP (DT the) (NNP Bible))))
+                    (ADVP (RB literally))))))))))
+    (. .)))
+
+advmod(reach-7, Even-1)
+nn(cans-5, study-3)
+nn(cans-5, people-4)
+prep_following(reach-7, cans-5)
+advmod(reach-7, still-6)
+root(ROOT-0, reach-7)
+amod(meanings-9, different-8)
+nsubj(reach-7, meanings-9)
+nsubj(reasonable-13, meanings-9)
+nsubj(taking-17, meanings-9)
+cop(reasonable-13, is-12)
+rcmod(meanings-9, reasonable-13)
+mark(taking-17, if-14)
+aux(taking-17, are-15)
+neg(taking-17, not-16)
+advcl(reasonable-13, taking-17)
+dobj(taking-17, parts-18)
+det(Bible-21, the-20)
+prep_of(parts-18, Bible-21)
+advmod(taking-17, literally-22)
+

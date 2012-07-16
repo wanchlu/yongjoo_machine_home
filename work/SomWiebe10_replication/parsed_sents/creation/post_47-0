@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Grayling))
+      (VP (VBZ explains) (, ,)
+        (PP (IN in)
+          (NP
+            (NP (PRP$ his) (NN review))
+            (PP (IN of)
+              (NP
+                (NP (NNP Fuller) (POS 's))
+                (JJS latest) (NN book)))))
+        (, ,)
+        (ADVP
+          (ADVP (RB quite) (RB well))
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (NNP ID))
+              (VP (VBZ is)
+                (ADJP (VBN doomed)
+                  (S
+                    (VP (TO to)
+                      (VP (VB remain)
+                        (NP (JJ scientifically) (NNS vacuous))))))))))))
+    (: --)
+    (S
+      (NP (NNP Fuller))
+      (VP (VBZ has)
+        (VP (VBN written)
+          (PP (IN about)
+            (NP (NNP Popper))))))
+    (: ;)
+    (S
+      (NP (PRP he))
+      (VP (VBZ seems)
+        (S
+          (VP (TO to)
+            (VP (VB forget)
+              (SBAR
+                (S
+                  (NP (NNP Popper))
+                  (VP (VBZ s)
+                    (NP (NN killer) (NN point))))))))))
+    (, ,)
+    (S
+      (ADVP (RB namely))
+      (, ,)
+      (NP
+        (NP (DT a) (NN theory))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ explains)
+              (NP (NN everything))))))
+      (VP (VBZ explains)
+        (NP (NN nothing))))
+    (. .)))
+
+nsubj(explains-2, Grayling-1)
+root(ROOT-0, explains-2)
+poss(review-6, his-5)
+prep_in(explains-2, review-6)
+poss(book-11, Fuller-8)
+amod(book-11, latest-10)
+prep_of(review-6, book-11)
+advmod(well-14, quite-13)
+advmod(explains-2, well-14)
+advmod(doomed-18, how-15)
+nsubjpass(doomed-18, ID-16)
+auxpass(doomed-18, is-17)
+dep(well-14, doomed-18)
+aux(vacuous-22, to-19)
+cop(vacuous-22, remain-20)
+amod(vacuous-22, scientifically-21)
+xcomp(doomed-18, vacuous-22)
+nsubj(written-26, Fuller-24)
+aux(written-26, has-25)
+parataxis(explains-2, written-26)
+prep_about(written-26, Popper-28)
+nsubj(seems-31, he-30)
+xsubj(forget-33, he-30)
+parataxis(explains-2, seems-31)
+aux(forget-33, to-32)
+xcomp(seems-31, forget-33)
+nsubj(point-37, Popper-34)
+cop(point-37, s-35)
+nn(point-37, killer-36)
+ccomp(forget-33, point-37)
+advmod(explains-46, namely-39)
+det(theory-42, a-41)
+nsubj(explains-44, theory-42)
+nsubj(explains-46, theory-42)
+rcmod(theory-42, explains-44)
+dobj(explains-44, everything-45)
+ccomp(explains-2, explains-46)
+dobj(explains-46, nothing-47)
+

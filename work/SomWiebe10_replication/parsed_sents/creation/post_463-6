@@ -1,0 +1,32 @@
+(ROOT
+  (S
+    (SBAR (RB -RRB-) (IN After)
+      (S
+        (NP (DT the) (NN article))
+        (VP (VBD was)
+          (VP (VBN published)))))
+    (, ,)
+    (NP (NNS rumors))
+    (VP (VBD circulated)
+      (SBAR (IN that)
+        (S
+          (NP (NNP Sternberg))
+          (VP (VBD was)
+            (NP (DT a) (JJ young) (NN earth) (NN creationist))))))
+    (. .)))
+
+dep(published-6, After-2)
+det(article-4, the-3)
+nsubjpass(published-6, article-4)
+auxpass(published-6, was-5)
+advcl(circulated-9, published-6)
+nsubj(circulated-9, rumors-8)
+root(ROOT-0, circulated-9)
+complm(creationist-16, that-10)
+nsubj(creationist-16, Sternberg-11)
+cop(creationist-16, was-12)
+det(creationist-16, a-13)
+amod(creationist-16, young-14)
+nn(creationist-16, earth-15)
+ccomp(circulated-9, creationist-16)
+

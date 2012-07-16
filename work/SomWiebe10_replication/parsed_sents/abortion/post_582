@@ -1,0 +1,125 @@
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP (DT the) (NN moment))
+        (PP (IN of)
+          (NP (NN conception)))))
+    (NP
+      (NP (DT a) (JJ new) (NN member))
+      (PP (IN of)
+        (NP (DT the) (NN species))))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN created))))
+    (. .)))
+
+det(moment-3, the-2)
+prep_at(created-14, moment-3)
+prep_of(moment-3, conception-5)
+det(member-8, a-6)
+amod(member-8, new-7)
+nsubjpass(created-14, member-8)
+det(species-11, the-10)
+prep_of(member-8, species-11)
+aux(created-14, has-12)
+auxpass(created-14, been-13)
+root(ROOT-0, created-14)
+
+(ROOT
+  (S
+    (NP (NNS Genes))
+    (VP (VBP are)
+      (ADJP (JJ important)
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (NP
+                (NP (DT the) (NN code))
+                (PP (IN for)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (DT that) (NN person))
+                      (VP (MD will)
+                        (VP (VB become))))))))))))
+    (. .)))
+
+nsubj(important-3, Genes-1)
+cop(important-3, are-2)
+root(ROOT-0, important-3)
+mark(code-8, because-4)
+nsubj(code-8, they-5)
+cop(code-8, are-6)
+det(code-8, the-7)
+ccomp(important-3, code-8)
+dobj(become-14, what-10)
+det(person-12, that-11)
+nsubj(become-14, person-12)
+aux(become-14, will-13)
+prepc_for(code-8, become-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN fact))
+      (SBAR (IN that)
+        (S
+          (NP (JJ identical) (NNS twins))
+          (VP (VBP become)
+            (NP
+              (NP (CD two) (NNS lives))
+              (PP (RB instead) (IN of)
+                (NP (CD one))))))))
+    (VP (VBZ does) (RB not)
+      (VP (VB change)
+        (NP (DT that))))
+    (. .)))
+
+det(fact-2, The-1)
+nsubj(change-14, fact-2)
+complm(lives-8, that-3)
+amod(twins-5, identical-4)
+nsubj(lives-8, twins-5)
+cop(lives-8, become-6)
+num(lives-8, two-7)
+dep(fact-2, lives-8)
+prep_instead_of(lives-8, one-11)
+aux(change-14, does-12)
+neg(change-14, not-13)
+root(ROOT-0, change-14)
+dobj(change-14, that-15)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN issue))
+      (ADVP (RB here))
+      (VP (VBZ is)
+        (SBAR (IN whether)
+          (S
+            (NP (NN abortion))
+            (VP (VBZ destroys)
+              (NP (DT a) (NN life)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB clearly))
+      (VP (VBZ does)))
+    (. .)))
+
+det(issue-2, The-1)
+nsubj(is-4, issue-2)
+advmod(is-4, here-3)
+root(ROOT-0, is-4)
+complm(destroys-7, whether-5)
+nsubj(destroys-7, abortion-6)
+ccomp(is-4, destroys-7)
+det(life-9, a-8)
+dobj(destroys-7, life-9)
+nsubj(does-14, it-12)
+advmod(does-14, clearly-13)
+conj_and(is-4, does-14)
+

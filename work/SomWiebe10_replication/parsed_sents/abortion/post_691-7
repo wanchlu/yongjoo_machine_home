@@ -1,0 +1,27 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP Genesis))
+      (VP (VBZ 25:8)))
+    (: :) (`` ``)
+    (S
+      (ADVP (RB Then))
+      (NP (NNP Abraham))
+      (VP
+        (VP (VBD breathed)
+          (NP (PRP$ his) (JJ last)))
+        (CC and)
+        (VP (VBD died))))
+    (. ...)))
+
+nsubj(25:8-3, Genesis-2)
+root(ROOT-0, 25:8-3)
+advmod(breathed-8, Then-6)
+nsubj(breathed-8, Abraham-7)
+nsubj(died-12, Abraham-7)
+ccomp(25:8-3, breathed-8)
+poss(last-10, his-9)
+dobj(breathed-8, last-10)
+ccomp(25:8-3, died-12)
+conj_and(breathed-8, died-12)
+

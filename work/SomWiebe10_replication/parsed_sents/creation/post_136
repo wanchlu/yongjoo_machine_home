@@ -1,0 +1,63 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBP find)
+      (SBAR
+        (S
+          (NP (RB much) (JJR more) (NN animosity))
+          (VP (VBD spouted)
+            (PP (IN by)
+              (NP (DT the) (NN atheist)))))))
+    (: ...)))
+
+nsubj(find-3, I-2)
+root(ROOT-0, find-3)
+advmod(animosity-6, much-4)
+amod(animosity-6, more-5)
+nsubj(spouted-7, animosity-6)
+ccomp(find-3, spouted-7)
+det(atheist-10, the-9)
+prep_by(spouted-7, atheist-10)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (DT The) (NN animosity))
+      (VP (VBZ is)
+        (ADJP
+          (ADJP (RB much) (JJR higher))
+          (PP (IN on)
+            (NP (DT the) (JJ religious) (NN side))))))
+    (: ...)
+    (S
+      (NP
+        (NP (DT the) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP consider)))))
+      (VP (VBZ atheists)
+        (ADJP
+          (ADJP (JJ immoral))
+          (CC and)
+          (ADJP (RB even) (JJ criminal)))))
+    (. .)))
+
+det(animosity-3, The-2)
+nsubj(higher-6, animosity-3)
+cop(higher-6, is-4)
+advmod(higher-6, much-5)
+root(ROOT-0, higher-6)
+det(side-10, the-8)
+amod(side-10, religious-9)
+prep_on(higher-6, side-10)
+det(people-13, the-12)
+nsubj(consider-15, people-13)
+nsubj(atheists-16, people-13)
+rcmod(people-13, consider-15)
+parataxis(higher-6, atheists-16)
+acomp(atheists-16, immoral-17)
+advmod(criminal-20, even-19)
+acomp(atheists-16, criminal-20)
+conj_and(immoral-17, criminal-20)
+

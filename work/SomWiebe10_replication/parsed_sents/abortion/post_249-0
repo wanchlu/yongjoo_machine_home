@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ important)
+              (S
+                (VP (TO to)
+                  (VP (VB point)
+                    (PRT (RP out))
+                    (SBAR (IN that)
+                      (S (, ,)
+                        (PP (IN in)
+                          (NP (DT the) (NNP United) (NNPS States)))
+                        (, ,)
+                        (NP
+                          (NP
+                            (NP (DT a) (JJ human) (`` ``) (NN fetus) ('' ''))
+                            (NP
+                              (QP (RB only) (DT a) (JJ few))
+                              (NNS days)))
+                          (PP (IN from)
+                            (S
+                              (VP (VBG being)
+                                (VP (VBN born))))))
+                        (VP (VBZ has)
+                          (NP
+                            (NP (JJR less) (NNS rights))
+                            (PP (IN than)
+                              (NP (DT a) (NN dog)))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(important-5, it-3)
+cop(important-5, is-4)
+ccomp(think-2, important-5)
+aux(point-7, to-6)
+xcomp(important-5, point-7)
+prt(point-7, out-8)
+complm(has-28, that-9)
+det(States-14, the-12)
+nn(States-14, United-13)
+prep_in(has-28, States-14)
+det(fetus-19, a-16)
+amod(fetus-19, human-17)
+nsubj(has-28, fetus-19)
+quantmod(few-23, only-21)
+quantmod(few-23, a-22)
+num(days-24, few-23)
+dep(fetus-19, days-24)
+auxpass(born-27, being-26)
+prepc_from(fetus-19, born-27)
+ccomp(point-7, has-28)
+amod(rights-30, less-29)
+dobj(has-28, rights-30)
+det(dog-33, a-32)
+prep_than(rights-30, dog-33)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ fails)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB liberate)
+              (NP (NNS women))
+              (SBAR (IN as)
+                (S
+                  (S
+                    (VP (VBN intended)
+                      (PP (RB Instead) (IN of)
+                        (S
+                          (VP (VBG freeing)
+                            (NP (NNS women)))))))
+                  (, ,)
+                  (NP (NN abortion))
+                  (VP (VBZ places)
+                    (NP
+                      (NP (NNS women))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT a) (JJ new) (NN prison))
+                          (PP (IN of)
+                            (NP (NN regret))))))))))
+            (CC and)
+            (VP (VB torment))))))
+    (. .)))
+
+nsubj(fails-2, Abortion-1)
+xsubj(liberate-4, Abortion-1)
+root(ROOT-0, fails-2)
+aux(liberate-4, to-3)
+xcomp(fails-2, liberate-4)
+dobj(liberate-4, women-5)
+mark(places-14, as-6)
+partmod(places-14, intended-7)
+prepc_instead_of(intended-7, freeing-10)
+dobj(freeing-10, women-11)
+nsubj(places-14, abortion-13)
+advcl(liberate-4, places-14)
+dobj(places-14, women-15)
+det(prison-19, a-17)
+amod(prison-19, new-18)
+prep_in(women-15, prison-19)
+prep_of(prison-19, regret-21)
+xcomp(fails-2, torment-23)
+conj_and(liberate-4, torment-23)
+

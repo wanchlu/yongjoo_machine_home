@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP (RB Only) (CD 1))
+        (NN %))
+      (PP (IN of)
+        (NP
+          (NP (DT all) (NNS abortions))
+          (PP (IN in)
+            (NP (DT the) (NNP United) (NNPS States))))))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN result))
+        (PP (IN of)
+          (NP (NN rape)
+            (CC or)
+            (NN incest)))))
+    (. .)))
+
+quantmod(1-2, Only-1)
+num(%-3, 1-2)
+nsubj(result-13, %-3)
+det(abortions-6, all-5)
+prep_of(%-3, abortions-6)
+det(States-10, the-8)
+nn(States-10, United-9)
+prep_in(abortions-6, States-10)
+cop(result-13, are-11)
+det(result-13, a-12)
+root(ROOT-0, result-13)
+prep_of(result-13, rape-15)
+prep_of(result-13, incest-17)
+conj_or(rape-15, incest-17)
+

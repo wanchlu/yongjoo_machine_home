@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP God))
+      (VP (VBD created)
+        (NP (DT the) (NN universe))
+        (ADVP (RB therefore))))
+    (NP (NNP God))
+    (VP (VBD created)
+      (NP (NN science)))
+    (. .)))
+
+nsubj(created-2, God-1)
+dep(created-7, created-2)
+det(universe-4, the-3)
+dobj(created-2, universe-4)
+advmod(created-2, therefore-5)
+nsubj(created-7, God-6)
+root(ROOT-0, created-7)
+dobj(created-7, science-8)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN science))
+        (VP (VBZ is)
+          (NP (DT a) (NN lie))
+          (ADVP (RB then)))))
+    (NP (NNP God))
+    (VP (VBZ is)
+      (NP (DT a) (NN liar)))
+    (. .)))
+
+mark(lie-5, If-1)
+nsubj(lie-5, science-2)
+cop(lie-5, is-3)
+det(lie-5, a-4)
+advcl(liar-10, lie-5)
+advmod(lie-5, then-6)
+nsubj(liar-10, God-7)
+cop(liar-10, is-8)
+det(liar-10, a-9)
+root(ROOT-0, liar-10)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (FRAG (CC Or)
+    (SBAR
+      (WHNP
+        (WHADJP (WRB how) (JJ many))
+        (NNS times))
+      (S
+        (NP (PRP you))
+        (VP (VBP 've)
+          (VP (VBN given)
+            (NP (NN bone) (NN marrow))
+            (SBAR (RB so) (IN that)
+              (S
+                (NP (DT a) (NN child))
+                (VP (MD may)
+                  (VP (VB live)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (MD would)
+                          (ADVP (RB otherwise))
+                          (VP (VB die)))))))))))))
+    (. .)))
+
+dep(given-7, Or-1)
+advmod(many-3, how-2)
+amod(times-4, many-3)
+dobj(given-7, times-4)
+nsubj(given-7, you-5)
+aux(given-7, 've-6)
+root(ROOT-0, given-7)
+nn(marrow-9, bone-8)
+dobj(given-7, marrow-9)
+advmod(live-15, so-10)
+dep(live-15, that-11)
+det(child-13, a-12)
+nsubj(live-15, child-13)
+aux(live-15, may-14)
+advcl(given-7, live-15)
+nsubj(die-19, who-16)
+aux(die-19, would-17)
+advmod(die-19, otherwise-18)
+ccomp(live-15, die-19)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (NNP God) ('' ''))
+        (, ,)
+        (SBAR
+          (WHNP (WDT whatever))
+          (S
+            (NP (PRP you)))))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB say))))))
+    (: ...)
+    (S
+      (NP
+        (NP (DT that))
+        (NP (DT the) (NN fetus)))
+      (VP (VBZ is)
+        (VP (VBN carried)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN woman))
+              (PP (RB instead) (IN of)
+                (S
+                  (VP (VBG being)
+                    (VP (VBN laid)
+                      (PP (IN as)
+                        (NP (DT an) (NN egg))))))))))))
+    (. .)))
+
+dep(you-6, God-2)
+nsubj(want-7, God-2)
+xsubj(say-9, God-2)
+rcmod(God-2, you-6)
+root(ROOT-0, want-7)
+aux(say-9, to-8)
+xcomp(want-7, say-9)
+nsubjpass(carried-15, that-11)
+det(fetus-13, the-12)
+dep(that-11, fetus-13)
+auxpass(carried-15, is-14)
+parataxis(want-7, carried-15)
+det(woman-18, the-17)
+agent(carried-15, woman-18)
+auxpass(laid-22, being-21)
+prepc_instead_of(woman-18, laid-22)
+det(egg-25, an-24)
+prep_as(laid-22, egg-25)
+

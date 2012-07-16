@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (S
+      (S
+        (VP (TO To)
+          (VP (VB provide)
+            (NP (DT the)
+              (ADJP (RBS most) (JJ succinct))
+              (NN summary)))))
+      (NP (PRP I))
+      (VP (MD can)))
+    (: :)
+    (S
+      (NP (NNP ID))
+      (VP (MD can) (RB not)
+        (VP (VB be)
+          (VP (VBN taught)
+            (PP (IN in)
+              (NP (DT a) (NN science) (NN classroom)))
+            (SBAR (IN because)
+              (S
+                (NP
+                  (NP (DT no) (NNS arguments))
+                  (PP (IN in)
+                    (NP
+                      (NP (NN favor))
+                      (PP (IN of)
+                        (NP (PRP it))))))
+                (VP (VBP are)
+                  (ADJP (JJ scientific)))))))))
+    (. .)))
+
+aux(provide-2, To-1)
+dep(can-8, provide-2)
+det(summary-6, the-3)
+advmod(succinct-5, most-4)
+amod(summary-6, succinct-5)
+dobj(provide-2, summary-6)
+nsubj(can-8, I-7)
+root(ROOT-0, can-8)
+nsubjpass(taught-14, ID-10)
+aux(taught-14, can-11)
+neg(taught-14, not-12)
+auxpass(taught-14, be-13)
+parataxis(can-8, taught-14)
+det(classroom-18, a-16)
+nn(classroom-18, science-17)
+prep_in(taught-14, classroom-18)
+mark(scientific-27, because-19)
+det(arguments-21, no-20)
+nsubj(scientific-27, arguments-21)
+prep_in(arguments-21, favor-23)
+prep_of(favor-23, it-25)
+cop(scientific-27, are-26)
+advcl(taught-14, scientific-27)
+

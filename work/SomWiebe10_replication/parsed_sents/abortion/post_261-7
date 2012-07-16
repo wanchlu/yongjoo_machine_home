@@ -1,0 +1,43 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Surely))
+    (RB not)
+    (PP (IN of)
+      (S
+        (NP
+          (NP (DT the) (NN life))
+          (PP (IN of)
+            (NP (DT a) (NN human))))
+        (VP (VBG being)
+          (SBAR (IN because)
+            (S
+              (NP
+                (NP (NN life))
+                (, ,)
+                (SBAR (IN as)
+                  (S
+                    (NP (NN everybody))
+                    (VP (VBZ knows))))
+                (, ,))
+              (VP (VBZ ends)
+                (PP (IN with)
+                  (NP (NN death)))))))))
+    (. .)))
+
+dep(not-2, Surely-1)
+root(ROOT-0, not-2)
+dep(not-2, of-3)
+det(life-5, the-4)
+nsubj(being-9, life-5)
+det(human-8, a-7)
+prep_of(life-5, human-8)
+pcomp(of-3, being-9)
+mark(ends-17, because-10)
+dobj(knows-15, life-11)
+nsubj(ends-17, life-11)
+mark(knows-15, as-13)
+nsubj(knows-15, everybody-14)
+dep(life-11, knows-15)
+advcl(being-9, ends-17)
+prep_with(ends-17, death-19)
+

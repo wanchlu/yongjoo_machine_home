@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's) (RB not)
+          (ADJP (JJ self-aware)))))
+    (NP (PRP it))
+    (VP (VBZ 's) (RB not)
+      (NP (DT a) (NN human))
+      (ADVP (RB yet))
+      (, ,)
+      (SBAR
+        (ADVP (DT no) (NN matter))
+        (WHNP (WP what))
+        (S
+          (NP (PRP it))
+          (VP (VBZ looks)
+            (PP (IN like))
+            ('' '')
+            (SBAR
+              (WHADVP
+                (ADVP (RB Then))
+                (WRB why))
+              (S
+                (VP (VBP are)
+                  (S
+                    (NP (PRP we))
+                    (ADJP (RB so) (VBN worried)
+                      (PP (IN about)
+                        (NP (DT the) (NNS trees))))))))))))
+    (. ?)))
+
+mark(self-aware-5, If-1)
+nsubj(self-aware-5, it-2)
+cop(self-aware-5, 's-3)
+neg(self-aware-5, not-4)
+advcl(human-10, self-aware-5)
+nsubj(human-10, it-6)
+cop(human-10, 's-7)
+neg(human-10, not-8)
+det(human-10, a-9)
+root(ROOT-0, human-10)
+advmod(human-10, yet-11)
+dep(matter-14, no-13)
+advmod(looks-17, matter-14)
+dep(looks-17, what-15)
+nsubj(are-22, what-15)
+nsubj(looks-17, it-16)
+dep(human-10, looks-17)
+prep(looks-17, like-18)
+advmod(why-21, Then-20)
+advmod(are-22, why-21)
+advcl(looks-17, are-22)
+nsubj(worried-25, we-23)
+advmod(worried-25, so-24)
+xcomp(are-22, worried-25)
+det(trees-28, the-27)
+prep_about(worried-25, trees-28)
+

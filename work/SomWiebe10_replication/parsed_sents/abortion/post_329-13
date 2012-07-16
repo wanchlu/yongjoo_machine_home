@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (, ,)
+    (VP (VB let)
+      (S
+        (NP (PRP 's))
+        (RB all)
+        (VP (VB applaud)
+          (NP (DT that) (JJ moral) (NN stance)))))
+    (. !)))
+
+dep(let-3, Yeah-1)
+root(ROOT-0, let-3)
+nsubj(applaud-6, 's-4)
+advmod(applaud-6, all-5)
+ccomp(let-3, applaud-6)
+det(stance-9, that-7)
+amod(stance-9, moral-8)
+dobj(applaud-6, stance-9)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP I))
+        (ADVP (RB also))
+        (VP (VBP find)
+          (ADJP (JJ interesting)
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NNP Bible))
+                (VP (VBZ says)
+                  (NP
+                    (NP (NN nothing))
+                    (PP (VBG regarding)
+                      (NP
+                        (NP (NN abortion))
+                        (SBAR (IN except)
+                          (FRAG
+                            (WHADVP (WRB where)))))))))))
+          (SBAR (IN if)
+            (S
+              (NP (DT a) (NN man))
+              (VP (VBZ causes)
+                (NP (DT a) (NN woman)
+                  (S
+                    (VP (TO to)
+                      (VP (VB abort)))))))))))
+    (NP (PRP he))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP
+            (ADVP (RB financially))
+            (VB compensate)
+            (NP (PRP her))
+            (PP (IN for)
+              (NP
+                (NP (DT the) (NN loss))
+                (PP (IN of)
+                  (NP (DT the) (NN pregnancy)))))))))
+    (. .)))
+
+dep(find-4, What-1)
+dobj(causes-18, What-1)
+nsubj(find-4, I-2)
+advmod(find-4, also-3)
+dep(has-24, find-4)
+acomp(find-4, interesting-5)
+complm(says-9, that-6)
+det(Bible-8, the-7)
+nsubj(says-9, Bible-8)
+ccomp(interesting-5, says-9)
+dobj(says-9, nothing-10)
+prep_regarding(nothing-10, abortion-12)
+mark(where-14, except-13)
+dep(abortion-12, where-14)
+mark(causes-18, if-15)
+det(man-17, a-16)
+nsubj(causes-18, man-17)
+advcl(find-4, causes-18)
+det(woman-20, a-19)
+dobj(causes-18, woman-20)
+aux(abort-22, to-21)
+infmod(woman-20, abort-22)
+nsubj(has-24, he-23)
+xsubj(compensate-27, he-23)
+root(ROOT-0, has-24)
+aux(compensate-27, to-25)
+advmod(compensate-27, financially-26)
+xcomp(has-24, compensate-27)
+dobj(compensate-27, her-28)
+det(loss-31, the-30)
+prep_for(compensate-27, loss-31)
+det(pregnancy-34, the-33)
+prep_of(loss-31, pregnancy-34)
+

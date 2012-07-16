@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN Something))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ has)
+              (NP (DT the) (NN potential)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ human))))))))))
+      (VP (VBZ is) (RB not)
+        (NP
+          (NP (DT the) (JJ same))
+          (PP (IN as)
+            (NP (NN something)))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (ADJP (JJ human))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB certainly))
+        (RB not)
+        (ADJP (JJ worthless))))
+    (. .)))
+
+nsubj(has-3, Something-1)
+nsubj(same-12, Something-1)
+rcmod(Something-1, has-3)
+det(potential-5, the-4)
+dobj(has-3, potential-5)
+aux(human-8, to-6)
+cop(human-8, be-7)
+infmod(potential-5, human-8)
+cop(same-12, is-9)
+neg(same-12, not-10)
+det(same-12, the-11)
+root(ROOT-0, same-12)
+nsubj(human-17, same-12)
+prep_as(same-12, something-14)
+cop(human-17, is-16)
+rcmod(same-12, human-17)
+nsubj(worthless-24, it-20)
+cop(worthless-24, is-21)
+advmod(worthless-24, certainly-22)
+neg(worthless-24, not-23)
+conj_but(same-12, worthless-24)
+nsubj(human-17, worthless-24)
+

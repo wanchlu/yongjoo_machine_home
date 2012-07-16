@@ -1,0 +1,81 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR
+        (WHADVP (WRB How))
+        (S
+          (VP
+            (ADVP (RB about))
+            (VBG explaining)
+            (NP
+              (NP (DT the) (NNS passages))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is))))))))
+      (VP (VBD said)
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (JJ male) (NN slave))
+            (VP (MD may)
+              (VP (VB be)
+                (VP (VBN kept)
+                  (PP (IN for)
+                    (NP (CD 7) (NNS years))))))))))
+    (CC but)
+    (S
+      (NP (RB then))
+      (VP (MD must)
+        (VP
+          (VP (VB be)
+            (VP (VBN freed)))
+          (: ...)
+          (SBAR (IN while)
+            (S
+              (NP (DT a) (JJ female) (NN slave))
+              (VP (MD can)
+                (VP (VB be)
+                  (VP (VBN kept)
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NN span))
+                        (PP (IN of)
+                          (NP (PRP$ her) (NN life)))))))))))))
+    (. ?)))
+
+advmod(explaining-4, How-2)
+advmod(explaining-4, about-3)
+csubj(said-10, explaining-4)
+det(passages-6, the-5)
+dobj(explaining-4, passages-6)
+advmod(is-9, where-7)
+nsubj(is-9, it-8)
+rcmod(passages-6, is-9)
+root(ROOT-0, said-10)
+complm(kept-17, that-11)
+det(slave-14, a-12)
+amod(slave-14, male-13)
+nsubjpass(kept-17, slave-14)
+aux(kept-17, may-15)
+auxpass(kept-17, be-16)
+ccomp(said-10, kept-17)
+num(years-20, 7-19)
+prep_for(kept-17, years-20)
+nsubjpass(freed-25, then-22)
+aux(freed-25, must-23)
+auxpass(freed-25, be-24)
+conj_but(said-10, freed-25)
+mark(kept-33, while-27)
+det(slave-30, a-28)
+amod(slave-30, female-29)
+nsubjpass(kept-33, slave-30)
+aux(kept-33, can-31)
+auxpass(kept-33, be-32)
+advcl(freed-25, kept-33)
+parataxis(freed-25, kept-33)
+det(span-36, the-35)
+prep_for(kept-33, span-36)
+poss(life-39, her-38)
+prep_of(span-36, life-39)
+

@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN told)
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ my) (NN baby))
+            (VP (MD would)
+              (VP (VB die)
+                (SBAR (IN once)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBD was)
+                      (VP (VBN born) (, ,)
+                        (SBAR (IN if)
+                          (S
+                            (NP (PRP it))
+                            (VP (VBD was) (RB not)
+                              (VP (VBN stillborn)))))))))))))))
+    (. .)))
+
+nsubjpass(told-3, I-1)
+auxpass(told-3, was-2)
+root(ROOT-0, told-3)
+complm(die-8, that-4)
+poss(baby-6, my-5)
+nsubj(die-8, baby-6)
+aux(die-8, would-7)
+ccomp(told-3, die-8)
+mark(born-12, once-9)
+nsubjpass(born-12, it-10)
+auxpass(born-12, was-11)
+advcl(die-8, born-12)
+mark(stillborn-18, if-14)
+nsubjpass(stillborn-18, it-15)
+auxpass(stillborn-18, was-16)
+neg(stillborn-18, not-17)
+advcl(born-12, stillborn-18)
+

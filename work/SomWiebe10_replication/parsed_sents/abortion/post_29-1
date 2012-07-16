@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP one))
+          (VP (VBZ does) (RB not)
+            (VP (VB want)
+              (S
+                (VP (TO to)
+                  (VP (VB have)
+                    (NP (DT a) (NN baby)))))))))
+      (, ,)
+      (NP (PRP they))
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (NP (NN sex)))))
+    (, ,)
+    (CC or)
+    (S
+      (NP (PRP they))
+      (VP (MD should)
+        (VP (VB take)
+          (NP (JJ extreme) (NN precaution))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (VP (VBG having)
+                (NP (NN sex))))))))
+    (. .)))
+
+mark(want-5, If-1)
+nsubj(want-5, one-2)
+xsubj(have-7, one-2)
+aux(want-5, does-3)
+neg(want-5, not-4)
+advcl(have-14, want-5)
+aux(have-7, to-6)
+xcomp(want-5, have-7)
+det(baby-9, a-8)
+dobj(have-7, baby-9)
+nsubj(have-14, they-11)
+aux(have-14, should-12)
+neg(have-14, not-13)
+root(ROOT-0, have-14)
+dobj(have-14, sex-15)
+nsubj(take-20, they-18)
+aux(take-20, should-19)
+conj_or(have-14, take-20)
+amod(precaution-22, extreme-21)
+dobj(take-20, precaution-22)
+advmod(having-24, when-23)
+advcl(take-20, having-24)
+dobj(having-24, sex-25)
+

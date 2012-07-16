@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP say)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (ADVP (RB already))
+          (VP (VBZ is)))))
+    (. .)))
+
+nsubj(say-2, I-1)
+root(ROOT-0, say-2)
+nsubj(is-5, it-3)
+advmod(is-5, already-4)
+ccomp(say-2, is-5)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (ADVP (RB already))
+      (VP (VBP have)
+        (NP
+          (NP (NNS laws))
+          (PP (IN against)
+            (NP (NN murder))))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADVP (RB just))
+        (SBAR
+          (SBAR (IN that)
+            (S
+              (NP (NNP Roe) (NNP vs) (NNP Wade))
+              (VP (VBD made)
+                (NP (DT a) (NN loop) (NN hole))
+                (PP (IN in)
+                  (NP (DT the) (NN law))))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD ought)
+                (S
+                  (VP (TO to)
+                    (VP (VB scare)
+                      (NP (DT the) (NN hell))
+                      (PRT (RP out))
+                      (PP (IN of)
+                        (NP (DT any) (JJ sane) (NN individual))))))))))))
+    (. .)))
+
+nsubj(have-3, We-1)
+advmod(have-3, already-2)
+root(ROOT-0, have-3)
+dobj(have-3, laws-4)
+prep_against(laws-4, murder-6)
+nsubj('s-9, it-8)
+parataxis(have-3, 's-9)
+advmod('s-9, just-10)
+complm(made-15, that-11)
+nn(Wade-14, Roe-12)
+nn(Wade-14, vs-13)
+nsubj(made-15, Wade-14)
+ccomp('s-9, made-15)
+det(hole-18, a-16)
+nn(hole-18, loop-17)
+dobj(made-15, hole-18)
+det(law-21, the-20)
+prep_in(made-15, law-21)
+nsubj(ought-24, that-23)
+ccomp('s-9, ought-24)
+conj_and(made-15, ought-24)
+aux(scare-26, to-25)
+xcomp(ought-24, scare-26)
+det(hell-28, the-27)
+dobj(scare-26, hell-28)
+det(individual-33, any-31)
+amod(individual-33, sane-32)
+prep_out_of(scare-26, individual-33)
+

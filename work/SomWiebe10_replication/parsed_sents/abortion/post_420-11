@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP say)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADJP (JJ unreasonable)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP you))
+      (VP (VBP do) (RB not)
+        (VP (VB say)
+          (SBAR
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ ones))))
+            (CC or)
+            (SBAR
+              (WHADVP (WRB why)))))))
+    (. .)))
+
+nsubj(say-2, You-1)
+root(ROOT-0, say-2)
+complm(unreasonable-6, that-3)
+nsubj(unreasonable-6, they-4)
+cop(unreasonable-6, are-5)
+ccomp(say-2, unreasonable-6)
+nsubj(say-12, you-9)
+aux(say-12, do-10)
+neg(say-12, not-11)
+conj_but(say-2, say-12)
+nsubj(ones-14, which-13)
+dep(say-12, ones-14)
+dep(say-12, why-16)
+conj_or(ones-14, why-16)
+

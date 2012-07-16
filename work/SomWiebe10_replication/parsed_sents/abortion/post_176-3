@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS figures))
+      (PP (IN on)
+        (NP (DT that))))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN guess))
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP happen)
+              (SBAR (IN before)
+                (S
+                  (NP (JJS most) (NNS women))
+                  (ADVP (RB even))
+                  (VP (VBP know)
+                    (SBAR
+                      (S
+                        (NP (PRP they))
+                        (VP
+                          (VP (VBP are)
+                            (ADJP (JJ pregnant)))
+                          (CC and)
+                          (VP (VBP do) (RB n't)
+                            (ADVP (RB usually))
+                            (VP (VB get)
+                              (NP
+                                (NP (NN pregnancy) (NNS tests))
+                                (VP (VBN done))))))))))))))))
+    (. .)))
+
+det(figures-2, The-1)
+nsubj(guess-7, figures-2)
+prep_on(figures-2, that-4)
+cop(guess-7, are-5)
+det(guess-7, a-6)
+root(ROOT-0, guess-7)
+mark(happen-10, because-8)
+nsubj(happen-10, they-9)
+dep(guess-7, happen-10)
+mark(know-15, before-11)
+amod(women-13, most-12)
+nsubj(know-15, women-13)
+advmod(know-15, even-14)
+advcl(happen-10, know-15)
+nsubj(pregnant-18, they-16)
+nsubj(get-23, they-16)
+cop(pregnant-18, are-17)
+ccomp(know-15, pregnant-18)
+aux(get-23, do-20)
+neg(get-23, n't-21)
+advmod(get-23, usually-22)
+ccomp(know-15, get-23)
+conj_and(pregnant-18, get-23)
+nn(tests-25, pregnancy-24)
+dobj(get-23, tests-25)
+partmod(tests-25, done-26)
+

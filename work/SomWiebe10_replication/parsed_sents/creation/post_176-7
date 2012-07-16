@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (NP (DT Some) (JJ non-scientist) (NNS evolutionists))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN ability)
+            (S
+              (VP (TO to)
+                (VP (VB produce)
+                  (NP (DT a) (NN mousetrap))
+                  (PP (IN with)
+                    (NP (JJR fewer) (NNS parts)))))))
+          (VP (VBZ falsifies)
+            (NP (JJ intelligent) (NN design))))))
+    (. .)))
+
+det(evolutionists-3, Some-1)
+amod(evolutionists-3, non-scientist-2)
+nsubj(believe-4, evolutionists-3)
+root(ROOT-0, believe-4)
+complm(falsifies-15, that-5)
+det(ability-7, the-6)
+nsubj(falsifies-15, ability-7)
+aux(produce-9, to-8)
+infmod(ability-7, produce-9)
+det(mousetrap-11, a-10)
+dobj(produce-9, mousetrap-11)
+amod(parts-14, fewer-13)
+prep_with(produce-9, parts-14)
+ccomp(believe-4, falsifies-15)
+amod(design-17, intelligent-16)
+dobj(falsifies-15, design-17)
+
+(ROOT
+  (S
+    (ADVP (RB Seemingly))
+    (NP (DT every) (NN evolutionist))
+    (VP (VBZ believes)
+      (SBAR (IN that)
+        (S
+          (NP (NN imperfection))
+          (VP (VBZ falsifies)
+            (NP (JJ intelligent) (NN design))))))
+    (. .)))
+
+advmod(believes-4, Seemingly-1)
+det(evolutionist-3, every-2)
+nsubj(believes-4, evolutionist-3)
+root(ROOT-0, believes-4)
+complm(falsifies-7, that-5)
+nsubj(falsifies-7, imperfection-6)
+ccomp(believes-4, falsifies-7)
+amod(design-9, intelligent-8)
+dobj(falsifies-7, design-9)
+

@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN description))
+      (PP (IN of)
+        (NP
+          (NP (NNS things))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP are)
+                (SBAR (RB not)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP are))))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP do) (RB not)
+                        (ADVP (RB even))
+                        (VP (VB know))))))))))))
+    (VP (VBP exist)
+      (SBAR
+        (S
+          (PP (IN until)
+            (NP (PRP you)))
+          (NP (PRP they))
+          (VP (VBP have)
+            (VP (VBN been)
+              (VP (VBN proven)
+                (S
+                  (ADJP (JJ factual)
+                    (CC and)
+                    (JJ true)))))))))
+    (. ?)))
+
+det(description-2, The-1)
+nsubj(exist-18, description-2)
+prep_of(description-2, things-4)
+nsubj(are-6, things-4)
+rcmod(things-4, are-6)
+dep(are-10, not-7)
+dobj(are-10, what-8)
+nsubj(are-10, they-9)
+dep(are-6, are-10)
+dobj(know-17, which-12)
+nsubj(know-17, you-13)
+aux(know-17, do-14)
+neg(know-17, not-15)
+advmod(know-17, even-16)
+dep(are-10, know-17)
+root(ROOT-0, exist-18)
+prep_until(proven-24, you-20)
+nsubjpass(proven-24, they-21)
+aux(proven-24, have-22)
+auxpass(proven-24, been-23)
+ccomp(exist-18, proven-24)
+acomp(proven-24, factual-25)
+acomp(proven-24, true-27)
+conj_and(factual-25, true-27)
+

@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP
+      (NP (DT a) (JJ pregnant) (NN woman))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP
+            (VP (VBZ survives)
+              (NP (PDT such) (DT an) (NN attack)))
+            (CC but)
+            (VP (VBZ loses)
+              (NP (DT the) (NN fetus)))))))
+    (VP (VBZ loses)
+      (NP (NN something))
+      (PP
+        (PP (IN over))
+        (CC and)
+        (PP (IN above)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT a) (JJ non-pregnant) (NN woman))
+              (VP (VBZ loses) (, ,)
+                (S
+                  (NP (DT all) (NNS things))
+                  (VP (VBG being)
+                    (ADJP (JJ equal))))))))))
+    (. .)))
+
+advmod(loses-15, Therefore-1)
+det(woman-5, a-3)
+amod(woman-5, pregnant-4)
+nsubj(survives-7, woman-5)
+nsubj(loses-12, woman-5)
+nsubj(loses-15, woman-5)
+rcmod(woman-5, survives-7)
+predet(attack-10, such-8)
+det(attack-10, an-9)
+dobj(survives-7, attack-10)
+rcmod(woman-5, loses-12)
+conj_but(survives-7, loses-12)
+det(fetus-14, the-13)
+dobj(loses-12, fetus-14)
+root(ROOT-0, loses-15)
+dobj(loses-15, something-16)
+prep(loses-15, over-17)
+prep(loses-15, above-19)
+conj_and(over-17, above-19)
+dobj(loses-24, what-20)
+det(woman-23, a-21)
+amod(woman-23, non-pregnant-22)
+nsubj(loses-24, woman-23)
+pcomp(above-19, loses-24)
+det(things-27, all-26)
+nsubj(equal-29, things-27)
+cop(equal-29, being-28)
+dep(loses-24, equal-29)
+

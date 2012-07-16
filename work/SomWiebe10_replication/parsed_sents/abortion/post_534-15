@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (LST (LS 2) (-RRB- -RRB-))
+    (S
+      (NP (JJ Many) (VBN fertilized) (NNS eggs))
+      (VP (VBP are)
+        (ADVP (RB naturally))
+        (VP (VBN aborted)
+          (PP (IN against)
+            (NP
+              (NP (NNS people) (POS 's))
+              (NN will))))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBP have)
+        (NP
+          (NP (JJ many) (NNS techniques))
+          (PP (IN for)
+            (S
+              (VP (VBG helping)
+                (NP (PRP them))))))
+        (SBAR (IN although)
+          (S
+            (NP
+              (NP (DT some))
+              (PP (IN of)
+                (NP (PRP them))))
+            (VP (MD will)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB live)
+                      (NP (PRP$ their) (NNS lives))
+                      (PP (IN without)
+                        (S
+                          (VP (VBG being)
+                            (ADJP (JJ able)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB bear)
+                                    (NP (NNS children))))))))))))))))))
+    (. .)))
+
+dep(aborted-8, 2-1)
+amod(eggs-5, Many-3)
+amod(eggs-5, fertilized-4)
+nsubjpass(aborted-8, eggs-5)
+auxpass(aborted-8, are-6)
+advmod(aborted-8, naturally-7)
+root(ROOT-0, aborted-8)
+poss(will-12, people-10)
+prep_against(aborted-8, will-12)
+nsubj(have-15, we-14)
+conj_and(aborted-8, have-15)
+amod(techniques-17, many-16)
+dobj(have-15, techniques-17)
+prepc_for(techniques-17, helping-19)
+dobj(helping-19, them-20)
+mark(have-26, although-21)
+nsubj(have-26, some-22)
+xsubj(live-28, some-22)
+prep_of(some-22, them-24)
+aux(have-26, will-25)
+advcl(have-15, have-26)
+aux(live-28, to-27)
+xcomp(have-26, live-28)
+poss(lives-30, their-29)
+dobj(live-28, lives-30)
+cop(able-33, being-32)
+prepc_without(live-28, able-33)
+aux(bear-35, to-34)
+xcomp(able-33, bear-35)
+dobj(bear-35, children-36)
+

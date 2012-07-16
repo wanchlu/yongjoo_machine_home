@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Self) (NNP induced) (NNS problems))
+      (PP (JJ such) (IN as)
+        (NP
+          (NP (JJ voluntary) (NN termination))
+          (PP (IN of)
+            (NP (NN pregnancy))))))
+    (VP (VBZ leads)
+      (PP (TO to)
+        (NP
+          (NP (NNS complications))
+          (PP (IN for)
+            (NP
+              (NP (JJ future) (NNS pregnancies))
+              (, ,)
+              (NP (JJ reproductive) (NN disease))
+              (, ,)
+              (CC and)
+              (NP (NN depression)))))))
+    (. .)))
+
+nn(problems-3, Self-1)
+nn(problems-3, induced-2)
+nsubj(leads-10, problems-3)
+amod(termination-7, voluntary-6)
+prep_such_as(problems-3, termination-7)
+prep_of(termination-7, pregnancy-9)
+root(ROOT-0, leads-10)
+prep_to(leads-10, complications-12)
+amod(pregnancies-15, future-14)
+prep_for(complications-12, pregnancies-15)
+amod(disease-18, reproductive-17)
+prep_for(complications-12, disease-18)
+conj_and(pregnancies-15, disease-18)
+prep_for(complications-12, depression-21)
+conj_and(pregnancies-15, depression-21)
+

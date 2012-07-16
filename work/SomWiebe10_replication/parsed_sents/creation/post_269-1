@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The)
+        (ADJP (RBS most) (JJ well-known)))
+      (PP (IN of)
+        (NP (DT these))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ sickle) (NN cell) (NN mutation))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (ADVP (RB unfortunately))
+            (VP (MD can)
+              (ADVP (RB also))
+              (VP (VB lead)
+                (PP (TO to)
+                  (NP
+                    (NP (DT the) (JJ lethal) (NN side) (NN effect))
+                    (PP (IN of)
+                      (NP (JJ sickle) (NN cell) (NN disease)))))))))))
+    (. .)))
+
+det(well-known-3, The-1)
+advmod(well-known-3, most-2)
+nsubj(mutation-10, well-known-3)
+prep_of(well-known-3, these-5)
+cop(mutation-10, is-6)
+det(mutation-10, the-7)
+amod(mutation-10, sickle-8)
+nn(mutation-10, cell-9)
+root(ROOT-0, mutation-10)
+nsubj(lead-16, mutation-10)
+advmod(lead-16, unfortunately-13)
+aux(lead-16, can-14)
+advmod(lead-16, also-15)
+rcmod(mutation-10, lead-16)
+det(effect-21, the-18)
+amod(effect-21, lethal-19)
+nn(effect-21, side-20)
+prep_to(lead-16, effect-21)
+amod(disease-25, sickle-23)
+nn(disease-25, cell-24)
+prep_of(effect-21, disease-25)
+

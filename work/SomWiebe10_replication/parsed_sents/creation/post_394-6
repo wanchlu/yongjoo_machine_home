@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (, ,)
+    (SBAR
+      (SBAR (IN that)
+        (S
+          (NP (JJ evolutionary))
+          (VP (VBZ processes)
+            (SBAR
+              (S
+                (NP (PRP themselves))
+                (VP (MD can)
+                  (VP (VB improve)
+                    (NP
+                      (NP (NNS mechanisms))
+                      (PP (IN of)
+                        (NP (NNS variations)))))))))))
+      (, ,)
+      (CC or)
+      (SBAR (IN that)
+        (S
+          (NP (NN variation))
+          (VP (VBZ comes)
+            (PP (IN in)
+              (NP (JJ hot) (NNS spots)))))))
+    (, ,)
+    (VP (VBZ is)
+      (ADJP (NN nothing) (JJ new))
+      (PRN (, ,)
+        (S
+          (VP (VB let)
+            (ADVP (RB alone))
+            (PP (IN at)
+              (NP
+                (NP (NNS odds))
+                (PP (IN with)
+                  (SBAR
+                    (WHADVP (WRB how))
+                    (S
+                      (NP (NN science))
+                      (VP (VBZ uses)
+                        (NP (DT the) (NN term)))))))))))
+      (`` ``)
+      (ADJP (JJ random))
+      ('' '')
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBZ comes)
+            (PP (TO to)
+              (NP (NN evolution)))))))
+    (. .)))
+
+prep_of(new-24, course-2)
+dep(processes-6, that-4)
+nsubj(processes-6, evolutionary-5)
+dep(new-24, processes-6)
+nsubj(improve-9, themselves-7)
+aux(improve-9, can-8)
+ccomp(processes-6, improve-9)
+dobj(improve-9, mechanisms-10)
+prep_of(mechanisms-10, variations-12)
+dep(comes-17, that-15)
+nsubj(comes-17, variation-16)
+conj_or(processes-6, comes-17)
+dep(new-24, comes-17)
+amod(spots-20, hot-19)
+prep_in(comes-17, spots-20)
+cop(new-24, is-22)
+dep(new-24, nothing-23)
+root(ROOT-0, new-24)
+parataxis(new-24, let-26)
+advmod(let-26, alone-27)
+prep_at(let-26, odds-29)
+advmod(uses-33, how-31)
+nsubj(uses-33, science-32)
+prepc_with(odds-29, uses-33)
+det(term-35, the-34)
+dobj(uses-33, term-35)
+acomp(new-24, random-37)
+advmod(comes-41, when-39)
+nsubj(comes-41, it-40)
+advcl(new-24, comes-41)
+prep_to(comes-41, evolution-43)
+

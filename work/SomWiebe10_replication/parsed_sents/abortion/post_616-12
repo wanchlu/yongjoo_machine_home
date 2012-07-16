@@ -1,0 +1,59 @@
+(ROOT
+  (S ('' '')
+    (NP (DT Many))
+    (VP (VBD biologists)
+      (NP (DT that) (NN deal))
+      (PP (IN in)
+        (NP (JJ whole) (NNS organisms)))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP
+            (NP (NNP e.g.))
+            (NP (JJ organismal) (NNS biologists)))
+          (, ,)
+          (NP (NNS ecologists))
+          (, ,) (FW etc.))
+        (-RRB- -RRB-))
+      (VP (VB use)
+        (NP
+          (NP (DT a) (NN definition))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ includes)
+                (ADJP (`` ``) (JJ independent) ('' ''))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (VP (VBG counting)
+                      (NP
+                        (NP (DT the) (NNS members))
+                        (PP (IN of)
+                          (NP (DT a) (NN species)))))))))))))
+    (. .)))
+
+nsubj(biologists-3, Many-2)
+root(ROOT-0, biologists-3)
+det(deal-5, that-4)
+dobj(biologists-3, deal-5)
+amod(organisms-8, whole-7)
+prep_in(biologists-3, organisms-8)
+dep(biologists-3, e.g.-10)
+amod(biologists-12, organismal-11)
+dep(e.g.-10, biologists-12)
+appos(e.g.-10, ecologists-14)
+dep(e.g.-10, etc.-16)
+dep(biologists-3, use-18)
+det(definition-20, a-19)
+dobj(use-18, definition-20)
+nsubj(includes-22, definition-20)
+nsubj(counting-27, definition-20)
+rcmod(definition-20, includes-22)
+acomp(includes-22, independent-24)
+advmod(counting-27, when-26)
+advcl(includes-22, counting-27)
+det(members-29, the-28)
+dobj(counting-27, members-29)
+det(species-32, a-31)
+prep_of(members-29, species-32)
+

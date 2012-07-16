@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBD evolved)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ is))))))))))
+    (, ,)
+    (NP (RB then) (WDT that))
+    (VP (VBZ is)
+      (ADJP (JJ good) (RB enough))
+      (PP (IN for)
+        (NP (PRP me))))
+    (. .)))
+
+mark(evolved-3, If-1)
+nsubj(evolved-3, it-2)
+xsubj(get-5, it-2)
+advcl(good-13, evolved-3)
+aux(get-5, to-4)
+xcomp(evolved-3, get-5)
+advmod(is-8, where-6)
+nsubj(is-8, it-7)
+advcl(get-5, is-8)
+advmod(that-11, then-10)
+nsubj(good-13, that-11)
+cop(good-13, is-12)
+root(ROOT-0, good-13)
+advmod(good-13, enough-14)
+prep_for(good-13, me-16)
+
+(ROOT
+  (S
+    (NP (NNS Viruses))
+    (VP (VBP encode)
+      (NP
+        (NP (NNS proteins))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VB combat)
+              (ADVP (RB entropy)))))))
+    (. .)))
+
+nsubj(encode-2, Viruses-1)
+root(ROOT-0, encode-2)
+dobj(encode-2, proteins-3)
+nsubj(combat-5, proteins-3)
+rcmod(proteins-3, combat-5)
+advmod(combat-5, entropy-6)
+

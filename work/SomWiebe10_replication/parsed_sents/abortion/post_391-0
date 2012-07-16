@@ -1,0 +1,42 @@
+(ROOT
+  (FRAG
+    (NP (NNP Dear) (NNP Pepper))
+    (: :)
+    (S
+      (NP (PRP You))
+      (VP (VBD asked) (: :) (`` ``)
+        (SBARQ
+          (WHADVP (RB So))
+          (SQ (VBP are)
+            (NP (PRP you))
+            (VP (VBG suggesting)
+              (NP
+                (NP (DT that) (NNS cats) (, ,) (NNS rats) (, ,) (NNS birds)
+                  (CC and)
+                  (NNS dolphins))
+                (SBAR
+                  (S
+                    (VP (VBP do) (RB not)
+                      (VP (VB think))))))))
+          (. ?))))))
+
+nn(Pepper-2, Dear-1)
+root(ROOT-0, Pepper-2)
+nsubj(asked-5, You-4)
+dep(Pepper-2, asked-5)
+advmod(suggesting-11, So-8)
+aux(suggesting-11, are-9)
+nsubj(suggesting-11, you-10)
+dep(asked-5, suggesting-11)
+det(cats-13, that-12)
+dobj(suggesting-11, cats-13)
+dobj(suggesting-11, rats-15)
+conj_and(cats-13, rats-15)
+dobj(suggesting-11, birds-17)
+conj_and(cats-13, birds-17)
+dobj(suggesting-11, dolphins-19)
+conj_and(cats-13, dolphins-19)
+aux(think-22, do-20)
+neg(think-22, not-21)
+rcmod(cats-13, think-22)
+

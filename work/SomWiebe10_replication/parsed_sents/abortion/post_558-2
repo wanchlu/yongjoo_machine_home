@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (DT that) (NN time)))
+    (, ,)
+    (NP (NNP Supreme) (NNP Court) (NNS decisions))
+    (VP (VBP have)
+      (VP (VBN allowed)
+        (PP (TO to)
+          (NP (NNS states)))
+        (S
+          (VP (TO to)
+            (VP (VB enact)
+              (NP (NNS limitations))
+              (PP (IN on)
+                (NP
+                  (NP (NN abortion))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (ADVP (RB really))
+                      (VP (VBZ is)
+                        (PP (IN in)
+                          (NP
+                            (NP (NN lockstep))
+                            (PP (IN with)
+                              (NP (JJ public) (NN opinion)))))))))))))))
+    (. .)))
+
+det(time-3, that-2)
+prep_since(allowed-9, time-3)
+nn(decisions-7, Supreme-5)
+nn(decisions-7, Court-6)
+nsubj(allowed-9, decisions-7)
+xsubj(enact-13, decisions-7)
+aux(allowed-9, have-8)
+root(ROOT-0, allowed-9)
+prep_to(allowed-9, states-11)
+aux(enact-13, to-12)
+xcomp(allowed-9, enact-13)
+dobj(enact-13, limitations-14)
+prep_on(enact-13, abortion-16)
+nsubj(is-20, abortion-16)
+advmod(is-20, really-19)
+rcmod(abortion-16, is-20)
+prep_in(is-20, lockstep-22)
+amod(opinion-25, public-24)
+prep_with(lockstep-22, opinion-25)
+

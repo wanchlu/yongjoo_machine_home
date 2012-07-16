@@ -1,0 +1,56 @@
+(ROOT
+  (SBARQ (`` ``)
+    (SBAR (IN Because) (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VBP hate)
+          (S
+            (VP (TO to)
+              (VP (VB break)
+                (NP (PRP it))
+                (PP (TO to)
+                  (NP (PRP you)))))))))
+    (PRN (CC but)
+      (NP
+        (NP (NNS Christians))
+        (SBAR
+          (S
+            (VP (VBP believe)
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN world))
+                  (VP (VBZ is)
+                    (NP (NN round))
+                    (, ,)
+                    (ADVP (RB so))))))))))
+    (SQ (VBZ does)
+      (NP (DT that))
+      (VP (VB mean)
+        (S
+          (NP (PRP you))
+          (VP (VB disagree)))))
+    (. ?)))
+
+mark(hate-5, Because-2)
+nsubj(hate-5, I-4)
+xsubj(break-7, I-4)
+dep(mean-23, hate-5)
+aux(break-7, to-6)
+xcomp(hate-5, break-7)
+dobj(break-7, it-8)
+prep_to(break-7, you-10)
+dep(Christians-12, but-11)
+dep(mean-23, Christians-12)
+rcmod(Christians-12, believe-13)
+complm(round-18, that-14)
+det(world-16, the-15)
+nsubj(round-18, world-16)
+cop(round-18, is-17)
+ccomp(believe-13, round-18)
+advmod(round-18, so-20)
+aux(mean-23, does-21)
+nsubj(mean-23, that-22)
+root(ROOT-0, mean-23)
+nsubj(disagree-25, you-24)
+ccomp(mean-23, disagree-25)
+

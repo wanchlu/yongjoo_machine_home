@@ -1,0 +1,33 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB How))
+    (PP (IN about)
+      (NP
+        (NP
+          (NP (DT a) (NN heart) (NN beat))
+          (CC or)
+          (NP (DT a) (JJ meiotic) (NN division)))
+        (CC or)
+        (NP
+          (NP (DT a) (NN nerve) (NN impulse))
+          (CC or)
+          (NP (DT a) (NN breath))))
+      (. ?))))
+
+root(ROOT-0, How-1)
+dep(How-1, about-2)
+det(beat-5, a-3)
+nn(beat-5, heart-4)
+pobj(about-2, beat-5)
+det(division-9, a-7)
+amod(division-9, meiotic-8)
+pobj(about-2, division-9)
+conj_or(beat-5, division-9)
+det(impulse-13, a-11)
+nn(impulse-13, nerve-12)
+pobj(about-2, impulse-13)
+conj_or(beat-5, impulse-13)
+det(breath-16, a-15)
+conj_or(beat-5, breath-16)
+conj_or(impulse-13, breath-16)
+

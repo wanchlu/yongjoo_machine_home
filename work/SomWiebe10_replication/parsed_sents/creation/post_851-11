@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (DT These) (NNS artists))
+    (VP (VBP create)
+      (SBAR
+        (S
+          (NP
+            (NP (NN rust))
+            (CC and)
+            (NP
+              (NP (JJ various))
+              (ADJP (RB apparently) (VBN aged))))
+          (VP (VBZ surfaces)
+            (PP (IN through)
+              (NP
+                (NP (NN chemical) (NNS processes))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD could)
+                      (VP (VB be)
+                        (VP (VBN expected)
+                          (S
+                            (VP (TO to)
+                              (VP (VB leave)
+                                (NP
+                                  (NP (JJ various) (NNS types))
+                                  (PP (IN of)
+                                    (NP (NN residue))))))))))))))))))
+    (. .)))
+
+det(artists-2, These-1)
+nsubj(create-3, artists-2)
+root(ROOT-0, create-3)
+nsubj(surfaces-9, rust-4)
+conj_and(rust-4, various-6)
+nsubj(surfaces-9, various-6)
+advmod(aged-8, apparently-7)
+amod(various-6, aged-8)
+ccomp(create-3, surfaces-9)
+nn(processes-12, chemical-11)
+prep_through(surfaces-9, processes-12)
+nsubjpass(expected-16, processes-12)
+aux(expected-16, could-14)
+auxpass(expected-16, be-15)
+rcmod(processes-12, expected-16)
+aux(leave-18, to-17)
+xcomp(expected-16, leave-18)
+amod(types-20, various-19)
+dobj(leave-18, types-20)
+prep_of(types-20, residue-22)
+

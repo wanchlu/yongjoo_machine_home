@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB Consequently))
+      (, ,)
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (DT no) (JJ scientific) (NN consensus))
+          (PP (IN on)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NN life))
+                (VP (VBD began))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNS proposals))
+      (VP (VBP include)
+        (NP
+          (NP
+            (NP (JJ self-replicating) (NNS molecules))
+            (PP (JJ such) (IN as)
+              (NP (NNP RNA))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT the) (NN assembly))
+            (PP (IN of)
+              (NP (JJ simple) (NNS cells)))))))
+    (. .)))
+
+advmod(is-4, Consequently-1)
+expl(is-4, there-3)
+root(ROOT-0, is-4)
+det(consensus-7, no-5)
+amod(consensus-7, scientific-6)
+nsubj(is-4, consensus-7)
+advmod(began-11, how-9)
+nsubj(began-11, life-10)
+prepc_on(consensus-7, began-11)
+nsubj(include-15, proposals-14)
+conj_but(is-4, include-15)
+amod(molecules-17, self-replicating-16)
+dobj(include-15, molecules-17)
+prep_such_as(molecules-17, RNA-20)
+det(assembly-24, the-23)
+dobj(include-15, assembly-24)
+conj_and(molecules-17, assembly-24)
+amod(cells-27, simple-26)
+prep_of(assembly-24, cells-27)
+

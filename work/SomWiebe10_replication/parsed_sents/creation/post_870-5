@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (MD would)
+              (VP (VB be)
+                (ADJP
+                  (ADJP (RBR more) (JJ fair))
+                  (SBAR (IN if)
+                    (S
+                      (NP (NNP AiG))
+                      (VP (MD would)
+                        (ADVP (RB just))
+                        (VP (VB say) ('' '')
+                          (SBAR
+                            (SBAR
+                              (S
+                                (NP (PRP We))
+                                (VP (VBP do) (RB not)
+                                  (VP (VB know)))))
+                            (, ,)
+                            (SBAR (IN except)
+                              (S
+                                (NP (PRP we))
+                                (VP (VBP believe)
+                                  (SBAR
+                                    (S
+                                      (NP (DT the) (NNP Bible))
+                                      (VP (VBZ says)
+                                        (SBAR
+                                          (S
+                                            (NP (DT the) (NN Earth))
+                                            (VP (VBZ is)
+                                              (ADJP
+                                                (NP (CD 6000) (NNS years))
+                                                (JJ old)))))))))))))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB here))
+      (NP (PRP we))
+      (VP (VBP stand)))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(fair-7, it-3)
+aux(fair-7, would-4)
+cop(fair-7, be-5)
+advmod(fair-7, more-6)
+ccomp(think-2, fair-7)
+mark(say-12, if-8)
+nsubj(say-12, AiG-9)
+aux(say-12, would-10)
+advmod(say-12, just-11)
+ccomp(fair-7, say-12)
+nsubj(know-17, We-14)
+aux(know-17, do-15)
+neg(know-17, not-16)
+dep(say-12, know-17)
+mark(believe-21, except-19)
+nsubj(believe-21, we-20)
+dep(know-17, believe-21)
+det(Bible-23, the-22)
+nsubj(says-24, Bible-23)
+ccomp(believe-21, says-24)
+det(Earth-26, the-25)
+nsubj(old-30, Earth-26)
+cop(old-30, is-27)
+num(years-29, 6000-28)
+npadvmod(old-30, years-29)
+ccomp(says-24, old-30)
+advmod(stand-35, here-33)
+nsubj(stand-35, we-34)
+conj_and(think-2, stand-35)
+

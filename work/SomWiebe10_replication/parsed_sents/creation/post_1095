@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN one))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ suits)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ 's)
+                  (NP (JJ current) (NN environment)))))))))
+    (VP
+      (VP (VBZ surveys))
+      (CC and)
+      (VP (VBP grow)
+        (PRT (RP up))
+        (S
+          (VP (TO to)
+            (VP (VB breed))))))
+    (. .)))
+
+det(one-2, The-1)
+nsubj(suits-4, one-2)
+nsubj(surveys-9, one-2)
+nsubj(grow-11, one-2)
+xsubj(breed-14, one-2)
+rcmod(one-2, suits-4)
+nsubj(environment-8, it-5)
+cop(environment-8, 's-6)
+amod(environment-8, current-7)
+ccomp(suits-4, environment-8)
+root(ROOT-0, surveys-9)
+conj_and(surveys-9, grow-11)
+prt(grow-11, up-12)
+aux(breed-14, to-13)
+xcomp(grow-11, breed-14)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS parents))
+    (VP (VBP pass)
+      (PP (IN on)
+        (NP
+          (NP (PRP$ their) (NNS traits))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP
+                (NP (NNP Thick))
+                (NP (NN shell)))
+              (, ,)
+              (NP (JJR Bigger) (NNS claws))
+              (, ,) (FW etc))
+            (-RRB- -RRB-))))
+      (PP (TO to)
+        (NP (PRP$ their) (NN offspring))))
+    (. .)))
+
+det(parents-2, The-1)
+nsubj(pass-3, parents-2)
+root(ROOT-0, pass-3)
+poss(traits-6, their-5)
+prep_on(pass-3, traits-6)
+dep(traits-6, Thick-8)
+dep(Thick-8, shell-9)
+amod(claws-12, Bigger-11)
+appos(Thick-8, claws-12)
+dep(Thick-8, etc-14)
+poss(offspring-18, their-17)
+prep_to(pass-3, offspring-18)
+
+(ROOT
+  (S
+    (ADVP (RB Eventually))
+    (NP (DT the) (NNS traits))
+    (VP (VBP change)
+      (S
+        (NP (DT the) (NNS species))
+        (VP (VBG changing)
+          (NP (PRP it))
+          (PP (IN into)
+            (NP (DT another))))))
+    (. .)))
+
+advmod(change-4, Eventually-1)
+det(traits-3, the-2)
+nsubj(change-4, traits-3)
+root(ROOT-0, change-4)
+det(species-6, the-5)
+nsubj(changing-7, species-6)
+dep(change-4, changing-7)
+dobj(changing-7, it-8)
+prep_into(changing-7, another-10)
+
+(ROOT
+  (FRAG
+    (PP (IN Over)
+      (NP
+        (NP (NNS millions))
+        (PP (IN of)
+          (NP
+            (NP (NNS years))
+            (PP (IN of)
+              (NP (NN course)))))))
+    (. .)))
+
+root(ROOT-0, Over-1)
+pobj(Over-1, millions-2)
+prep_of(millions-2, years-4)
+prep_of(years-4, course-6)
+

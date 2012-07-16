@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Man))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ becomes)
+            (ADJP (VBN bored)
+              (PP (IN with)
+                (S
+                  (VP (VBG doing)
+                    (NP (JJ good) (NNS things))))))))))
+    (VP (MD will)
+      (VP (VB tend)
+        (S
+          (VP (TO to)
+            (VP (VB drift)
+              (PP (IN toward)
+                (NP (DT a)
+                  (ADJP (RBR more) (JJ distorted))
+                  (NN belief))))))))
+    (. .)))
+
+nsubjpass(bored-4, Man-1)
+nsubj(tend-10, Man-1)
+xsubj(drift-12, Man-1)
+auxpass(bored-4, becomes-3)
+rcmod(Man-1, bored-4)
+prepc_with(bored-4, doing-6)
+amod(things-8, good-7)
+dobj(doing-6, things-8)
+aux(tend-10, will-9)
+root(ROOT-0, tend-10)
+aux(drift-12, to-11)
+xcomp(tend-10, drift-12)
+det(belief-17, a-14)
+advmod(distorted-16, more-15)
+amod(belief-17, distorted-16)
+prep_toward(drift-12, belief-17)
+

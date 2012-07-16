@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (`` ``) (NN war) ('' ''))
+        (SBAR
+          (S
+            (VP (VBP do))))))
+    (NP (PRP you))
+    (ADVP (RB just))
+    (VP (VBP look)
+      (PP (IN at)
+        (NP
+          (NP
+            (NP (DT the) (NN number))
+            (PP (IN of)
+              (NP (JJ American) (NNS soldiers)))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP have)
+                  (VP (VBN died))))))
+          (, ,)
+          (CC or)
+          (NP
+            (NP (DT the) (JJ total) (NN number))
+            (PP (IN of)
+              (NP
+                (NP (NNS persons))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP have)
+                      (VP (VBN died)))))))))))
+    (. ?)))
+
+det(war-4, the-2)
+prep_in(look-9, war-4)
+rcmod(war-4, do-6)
+nsubj(look-9, you-7)
+advmod(look-9, just-8)
+root(ROOT-0, look-9)
+det(number-12, the-11)
+prep_at(look-9, number-12)
+nsubj(died-18, number-12)
+amod(soldiers-15, American-14)
+prep_of(number-12, soldiers-15)
+aux(died-18, have-17)
+rcmod(number-12, died-18)
+det(number-23, the-21)
+amod(number-23, total-22)
+prep_at(look-9, number-23)
+conj_or(number-12, number-23)
+nsubj(died-18, number-23)
+prep_of(number-23, persons-25)
+nsubj(died-28, persons-25)
+aux(died-28, have-27)
+rcmod(persons-25, died-28)
+

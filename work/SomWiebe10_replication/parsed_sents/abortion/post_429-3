@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP
+          (NP
+            (NP (CD two) (NNS humans))
+            (NP (NN mate)))
+          (CC and)
+          (NP
+            (NP (DT a) (NN female) (POS 's))
+            (NN egg)))
+        (VP (VBZ is)
+          (VP (VBN fertilized)))))
+    (NP (WDT what))
+    (VP (MD will)
+      (VP (VB be)
+        (NP
+          (NP (DT the) (NN result))
+          (PP (IN of)
+            (NP (DT that) (NN fertilization))))))
+    (. .)))
+
+advmod(fertilized-11, When-1)
+num(humans-3, two-2)
+nsubjpass(fertilized-11, humans-3)
+dep(humans-3, mate-4)
+det(female-7, a-6)
+poss(egg-9, female-7)
+conj_and(humans-3, egg-9)
+nsubjpass(fertilized-11, egg-9)
+auxpass(fertilized-11, is-10)
+advcl(result-16, fertilized-11)
+nsubj(result-16, what-12)
+aux(result-16, will-13)
+cop(result-16, be-14)
+det(result-16, the-15)
+root(ROOT-0, result-16)
+det(fertilization-19, that-18)
+prep_of(result-16, fertilization-19)
+

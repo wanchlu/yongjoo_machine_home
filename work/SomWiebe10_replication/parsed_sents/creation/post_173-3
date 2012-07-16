@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ trys)
+      (S
+        (VP (TO to)
+          (VP (VB switch)
+            (NP
+              (NP (DT the) (NN argument))
+              (PP (IN from)
+                (NP (NN design))))
+            (PP (IN with)
+              (NP
+                (NP (NNS existents))
+                (: --)
+                (NP (DT a) (JJ common) (JJ human) (NN activity))))
+            (, ,)
+            (PP (TO to)
+              (NP
+                (NP (DT a) (JJ non-existing) (NN designer))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ designs)
+                      (CC and)
+                      (VBZ constructs)
+                      (NP (NN something))
+                      (PP (IN from)
+                        (NP (NN nothing))))))))))))
+    (. .)))
+
+nsubj(trys-2, ID-1)
+xsubj(switch-4, ID-1)
+root(ROOT-0, trys-2)
+aux(switch-4, to-3)
+xcomp(trys-2, switch-4)
+det(argument-6, the-5)
+dobj(switch-4, argument-6)
+prep_from(argument-6, design-8)
+prep_with(switch-4, existents-10)
+det(activity-15, a-12)
+amod(activity-15, common-13)
+amod(activity-15, human-14)
+dep(existents-10, activity-15)
+det(designer-20, a-18)
+amod(designer-20, non-existing-19)
+prep_to(switch-4, designer-20)
+nsubj(designs-22, designer-20)
+nsubj(constructs-24, designer-20)
+rcmod(designer-20, designs-22)
+rcmod(designer-20, constructs-24)
+conj_and(designs-22, constructs-24)
+dobj(designs-22, something-25)
+prep_from(designs-22, nothing-27)
+

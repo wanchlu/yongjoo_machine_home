@@ -1,0 +1,60 @@
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN one))
+    (SQ (VBZ is)
+      (NP (PRP it)))
+    (. .)))
+
+det(one-2, Which-1)
+attr(is-3, one-2)
+root(ROOT-0, is-3)
+nsubj(is-3, it-4)
+
+(ROOT
+  (S (CC Either)
+    (NP (NNP God))
+    (VP (VBD created)
+      (SBAR
+        (S
+          (NP (DT the) (NNP Earth) (JJ 6k) (NN yrs))
+          (ADVP (IN ago)
+            (CC or)
+            (JJ God))
+          (VP
+            (VP (VBD did) (RB not))
+            (PRN (-LRB- -LRB-)
+              (S
+                (VP (CC either)
+                  (VP (RB not) (VBG creating)
+                    (NP (PRP it)))
+                  (CC or)
+                  (VP (VBG creating)
+                    (NP (PRP it))
+                    (PP (IN at)
+                      (NP (DT some) (JJ other) (NN time))))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+dep(created-3, Either-1)
+nsubj(created-3, God-2)
+root(ROOT-0, created-3)
+det(yrs-7, the-4)
+nn(yrs-7, Earth-5)
+amod(yrs-7, 6k-6)
+nsubj(did-11, yrs-7)
+advmod(did-11, ago-8)
+conj_or(ago-8, God-10)
+advmod(did-11, God-10)
+ccomp(created-3, did-11)
+neg(did-11, not-12)
+preconj(creating-16, either-14)
+neg(creating-16, not-15)
+parataxis(did-11, creating-16)
+dobj(creating-16, it-17)
+parataxis(did-11, creating-19)
+conj_or(creating-16, creating-19)
+dobj(creating-19, it-20)
+det(time-24, some-22)
+amod(time-24, other-23)
+prep_at(creating-19, time-24)
+

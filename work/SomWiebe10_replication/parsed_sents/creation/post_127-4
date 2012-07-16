@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (PDT such) (DT the) (JJ only) (NNS multi)))
+    (NP
+      (NP (JJ cellular) (NN life))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (MD would)
+            (VP (VB endure))))))
+    (VP (MD would)
+      (VP (VB be)
+        (NP
+          (NP (DT those))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBD had)
+                (VP (VBN mutations)
+                  (S
+                    (VP (VBG protecting)
+                      (NP (PRP them))
+                      (PP (IN from)
+                        (NP (JJ other) (NN life) (NNS forms))))))))))))
+    (. .)))
+
+predet(multi-5, such-2)
+det(multi-5, the-3)
+amod(multi-5, only-4)
+prep_as(those-13, multi-5)
+amod(life-7, cellular-6)
+nsubj(endure-10, life-7)
+nsubj(those-13, life-7)
+aux(endure-10, would-9)
+rcmod(life-7, endure-10)
+aux(those-13, would-11)
+cop(those-13, be-12)
+root(ROOT-0, those-13)
+nsubj(mutations-16, those-13)
+aux(mutations-16, had-15)
+rcmod(those-13, mutations-16)
+xcomp(mutations-16, protecting-17)
+dobj(protecting-17, them-18)
+amod(forms-22, other-20)
+nn(forms-22, life-21)
+prep_from(protecting-17, forms-22)
+

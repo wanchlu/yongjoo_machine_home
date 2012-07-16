@@ -1,0 +1,20 @@
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP (RB not) (RB usually))
+      (PRN (, ,)
+        (ADVP (RB not) (RB almost))
+        (ADVP (RB always))
+        (, ,)))
+    (VP (RB not)
+      (VP (VBZ 99.9999999)))
+    (: ...)))
+
+neg(usually-3, not-2)
+nsubj(99.9999999-10, usually-3)
+dep(almost-6, not-5)
+dep(usually-3, almost-6)
+dep(almost-6, always-7)
+neg(99.9999999-10, not-9)
+root(ROOT-0, 99.9999999-10)
+

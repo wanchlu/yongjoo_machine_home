@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (NNS Atheists))
+    (VP (VBP claim)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is) (RB not)
+            (ADJP (JJ appropriate)
+              (S
+                (VP (TO to)
+                  (VP (VB teach)
+                    (NP (NN creationism))
+                    (SBAR (IN as)
+                      (S
+                        (NP
+                          (NP (DT a) (`` ``) (NN truth) ('' ''))
+                          (CC and)
+                          (NP (NN evolution)))
+                        (VP (MD should)
+                          (VP (VB be)
+                            (VP (VBN taught)
+                              (PP (IN as)
+                                (NP (DT a) (NN theory))))))))))))))))
+    (. .)))
+
+nsubj(claim-2, Atheists-1)
+root(ROOT-0, claim-2)
+nsubj(appropriate-6, it-3)
+cop(appropriate-6, is-4)
+neg(appropriate-6, not-5)
+ccomp(claim-2, appropriate-6)
+aux(teach-8, to-7)
+xcomp(appropriate-6, teach-8)
+dobj(teach-8, creationism-9)
+mark(taught-19, as-10)
+det(truth-13, a-11)
+nsubjpass(taught-19, truth-13)
+conj_and(truth-13, evolution-16)
+nsubjpass(taught-19, evolution-16)
+aux(taught-19, should-17)
+auxpass(taught-19, be-18)
+advcl(teach-8, taught-19)
+det(theory-22, a-21)
+prep_as(taught-19, theory-22)
+

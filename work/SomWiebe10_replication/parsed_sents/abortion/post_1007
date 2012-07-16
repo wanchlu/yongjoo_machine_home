@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (ADJP (JJ wrong))
+        (PP (IN in)
+          (NP (DT the) (NN past)))))
+    (. .)))
+
+nsubj(wrong-4, Science-1)
+aux(wrong-4, has-2)
+cop(wrong-4, been-3)
+root(ROOT-0, wrong-4)
+det(past-7, the-6)
+prep_in(wrong-4, past-7)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN science))
+        (VP (VBD were)
+          (VP
+            (ADVP (RB always) (RB blindly))
+            (VBN trusted)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD would)
+      (ADVP (RB never))
+      (VP (VB progress)))
+    (. .)))
+
+mark(trusted-6, If-1)
+nsubjpass(trusted-6, science-2)
+auxpass(trusted-6, were-3)
+advmod(blindly-5, always-4)
+advmod(trusted-6, blindly-5)
+advcl(progress-11, trusted-6)
+nsubj(progress-11, we-8)
+aux(progress-11, would-9)
+neg(progress-11, never-10)
+root(ROOT-0, progress-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBG challenging)
+        (NP
+          (NP (NN science))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ makes)
+                (S
+                  (NP (PRP us))
+                  (VP (VB find)
+                    (NP
+                      (ADJP (JJ new)
+                        (CC and)
+                        (JJR better))
+                      (NNS answers))))))))))
+    (. .)))
+
+nsubj(challenging-3, It-1)
+aux(challenging-3, is-2)
+root(ROOT-0, challenging-3)
+dobj(challenging-3, science-4)
+nsubj(makes-6, science-4)
+rcmod(science-4, makes-6)
+nsubj(find-8, us-7)
+ccomp(makes-6, find-8)
+amod(answers-12, new-9)
+conj_and(new-9, better-11)
+amod(answers-12, better-11)
+dobj(find-8, answers-12)
+

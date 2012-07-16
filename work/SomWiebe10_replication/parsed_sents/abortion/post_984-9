@@ -1,0 +1,39 @@
+(ROOT
+  (SQ (CC And)
+    (FRAG
+      (WHADVP (WRB why))
+      (VP (VB worry)
+        (PP (IN about)
+          (NP
+            (NP (DT a) (NN speck))
+            (PP (IN in)
+              (NP
+                (NP (PRP$ your) (NN friend) (POS 's))
+                (NN eye)))))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (VP (VBP have)
+              (NP
+                (NP (DT a) (NN log))
+                (PP (IN in)
+                  (NP (PRP$ your) (JJ own)))))))))
+    (. ?)))
+
+root(ROOT-0, And-1)
+dep(worry-3, why-2)
+dep(And-1, worry-3)
+det(speck-6, a-5)
+prep_about(worry-3, speck-6)
+poss(friend-9, your-8)
+poss(eye-11, friend-9)
+prep_in(speck-6, eye-11)
+advmod(have-14, when-12)
+nsubj(have-14, you-13)
+advcl(worry-3, have-14)
+det(log-16, a-15)
+dobj(have-14, log-16)
+poss(own-19, your-18)
+prep_in(log-16, own-19)
+

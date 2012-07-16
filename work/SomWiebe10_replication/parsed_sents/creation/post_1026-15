@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP My) (NNP Chemistry) (NNP Professor))
+      (PRN (-LRB- -LRB-)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBN despised)
+              (NP (NNS creationists)))))
+        (-RRB- -RRB-)))
+    (VP (MD would)
+      (ADVP (RB sometimes))
+      (VP (VB answer) ('' '')
+        (S
+          (NP (NNP God))
+          (VP (VBD did)
+            (NP (PRP it) ('' ''))))
+        (SBAR (IN because)
+          (S
+            (NP (PRP he))
+            (VP (VBD knew)
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBD was)
+                    (NP
+                      (NP (DT no) (NN answer))
+                      (PP (IN for)
+                        (NP
+                          (NP (JJ certain) (NNS questions))
+                          (PRN (-LRB- -LRB-)
+                            (S
+                              (VP (VB like)
+                                (FRAG
+                                  (WHADVP (WRB how)
+                                    (CC and)
+                                    (WRB why)))))
+                            (-RRB- -RRB-)))))))))))))
+    (. .)))
+
+nn(Professor-3, My-1)
+nn(Professor-3, Chemistry-2)
+nsubj(answer-11, Professor-3)
+nsubj(despised-6, who-5)
+dep(Professor-3, despised-6)
+dobj(despised-6, creationists-7)
+aux(answer-11, would-9)
+advmod(answer-11, sometimes-10)
+root(ROOT-0, answer-11)
+nsubj(did-14, God-13)
+ccomp(answer-11, did-14)
+dobj(did-14, it-15)
+mark(knew-19, because-17)
+nsubj(knew-19, he-18)
+advcl(answer-11, knew-19)
+expl(was-21, there-20)
+ccomp(knew-19, was-21)
+det(answer-23, no-22)
+nsubj(was-21, answer-23)
+amod(questions-26, certain-25)
+prep_for(answer-23, questions-26)
+dep(questions-26, like-28)
+dep(like-28, how-29)
+dep(how-29, and-30)
+dep(how-29, why-31)
+

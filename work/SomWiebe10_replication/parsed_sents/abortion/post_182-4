@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (NP
+            (NP (DT an) (NN atheist))
+            (PP (IN like)
+              (NP (NNP Camille) (NNP Paglia)))))))
+    (, ,)
+    (NP (PRP you))
+    (VP
+      (VP (VBP conclude)
+        (SBAR (IN that)
+          (S
+            (NP (NN abortion))
+            (VP (VBZ is)
+              (NP
+                (NP (DT the) (NN taking))
+                (PP (IN of)
+                  (NP (DT a) (JJ human) (NN life))))))))
+      (, ,)
+      (CC but)
+      (VP (VBP feel)
+        (SBAR
+          (S
+            (NP (EX there))
+            (VP (VBP are)
+              (NP
+                (NP (VBG countervailing) (NNS interests))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP make)
+                      (S
+                        (NP (PRP it))
+                        (ADJP (JJ necessary)
+                          (S
+                            (VP (TO to)
+                              (VP (VB allow)
+                                (NP (NN abortion))))))))))))))))
+    (. .)))
+
+mark(atheist-5, If-1)
+nsubj(atheist-5, you-2)
+cop(atheist-5, are-3)
+det(atheist-5, an-4)
+advcl(conclude-11, atheist-5)
+nn(Paglia-8, Camille-7)
+prep_like(atheist-5, Paglia-8)
+nsubj(conclude-11, you-10)
+nsubj(feel-23, you-10)
+root(ROOT-0, conclude-11)
+complm(taking-16, that-12)
+nsubj(taking-16, abortion-13)
+cop(taking-16, is-14)
+det(taking-16, the-15)
+ccomp(conclude-11, taking-16)
+det(life-20, a-18)
+amod(life-20, human-19)
+prep_of(taking-16, life-20)
+conj_but(conclude-11, feel-23)
+expl(are-25, there-24)
+ccomp(feel-23, are-25)
+amod(interests-27, countervailing-26)
+nsubj(are-25, interests-27)
+nsubj(make-29, interests-27)
+rcmod(interests-27, make-29)
+nsubj(necessary-31, it-30)
+xcomp(make-29, necessary-31)
+aux(allow-33, to-32)
+xcomp(necessary-31, allow-33)
+dobj(allow-33, abortion-34)
+

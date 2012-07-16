@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (S
+      (VP (SYM =)
+        (NP (JJ =) (JJ Of) (NN course))))
+    (, ,)
+    (NP (NNP ID))
+    (VP (VBD lost)
+      (PP (RB because) (IN of)
+        (NP
+          (NP (DT a) (NN lack))
+          (PP (IN of)
+            (NP (NN evidence)))))
+      (SBAR (IN that)
+        (S
+          (NP (NNP ID))
+          (VP (VBD had)
+            (NP (JJ scientific) (NN content))))))
+    (. .)))
+
+dep(course-4, =-1)
+amod(course-4, =-2)
+amod(course-4, Of-3)
+ccomp(lost-7, course-4)
+nsubj(lost-7, ID-6)
+root(ROOT-0, lost-7)
+det(lack-11, a-10)
+prep_because_of(lost-7, lack-11)
+prep_of(lack-11, evidence-13)
+complm(had-16, that-14)
+nsubj(had-16, ID-15)
+ccomp(lost-7, had-16)
+amod(content-18, scientific-17)
+dobj(had-16, content-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP =) (NNP =) (NNP TJ10))
+      (VP (VBN =)
+        (S
+          (VP (SYM =)
+            (NP (DT The) (NNP Judge))))))
+    (ADVP (RB simply))
+    (VP (VBN copied)
+      (NP
+        (NP (JJ large) (NNS amounts))
+        (PP (IN of)
+          (NP
+            (NP (NN material) (NN word))
+            (PP (IN for)
+              (NP (NN word))))))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN material))
+          (SBAR
+            (S
+              (NP (PRP he))
+              (VP (VBD received)
+                (PP (IN from)
+                  (NP (DT the) (NNP ACLU)))))))))
+    (. .)))
+
+nn(TJ10-3, =-1)
+nn(TJ10-3, =-2)
+nsubj(copied-9, TJ10-3)
+partmod(TJ10-3, =-4)
+dep(Judge-7, =-5)
+det(Judge-7, The-6)
+ccomp(=-4, Judge-7)
+advmod(copied-9, simply-8)
+root(ROOT-0, copied-9)
+amod(amounts-11, large-10)
+dobj(copied-9, amounts-11)
+nn(word-14, material-13)
+prep_of(amounts-11, word-14)
+prep_for(word-14, word-16)
+det(material-19, the-18)
+prep_from(copied-9, material-19)
+dobj(received-21, material-19)
+nsubj(received-21, he-20)
+rcmod(material-19, received-21)
+det(ACLU-24, the-23)
+prep_from(received-21, ACLU-24)
+

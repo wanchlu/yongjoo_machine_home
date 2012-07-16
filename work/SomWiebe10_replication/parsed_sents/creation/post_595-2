@@ -1,0 +1,43 @@
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (DT some) (NN one))
+          (VP
+            (VP (VBZ responds))
+            (CC and)
+            (VP (VBZ says)))))
+      (NP (DT those) (JJ molecular) (NNS machines))
+      (VP (VBP are)
+        (VP (VBN designed))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADVP (RB harshly))
+      (VP (VBN criticized)
+        (PP (IN for)
+          (S
+            (VP (VBG being)
+              (ADJP (`` ``) (JJ unscientific)))))))
+    (. .)))
+
+mark(responds-5, If-2)
+det(one-4, some-3)
+nsubj(responds-5, one-4)
+nsubj(says-7, one-4)
+advcl(designed-12, responds-5)
+conj_and(responds-5, says-7)
+advcl(designed-12, says-7)
+det(machines-10, those-8)
+amod(machines-10, molecular-9)
+nsubjpass(designed-12, machines-10)
+auxpass(designed-12, are-11)
+ccomp(criticized-17, designed-12)
+nsubjpass(criticized-17, they-14)
+auxpass(criticized-17, are-15)
+advmod(criticized-17, harshly-16)
+root(ROOT-0, criticized-17)
+cop(unscientific-21, being-19)
+prepc_for(criticized-17, unscientific-21)
+

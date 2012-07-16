@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (CD ten) (NNS commandments))
+          (SBAR
+            (S
+              (NP
+                (NP (CD 5))
+                (PP (IN of)
+                  (NP (PRP them))))
+              (VP (VBP are)
+                (NP
+                  (NP (NNS laws))
+                  (PP (IN of)
+                    (NP (DT the) (NN land))))))))))
+    (. .)))
+
+root(ROOT-0, Look-1)
+det(commandments-5, the-3)
+num(commandments-5, ten-4)
+prep_at(Look-1, commandments-5)
+nsubj(laws-10, 5-6)
+prep_of(5-6, them-8)
+cop(laws-10, are-9)
+rcmod(commandments-5, laws-10)
+det(land-13, the-12)
+prep_of(laws-10, land-13)
+
+(ROOT
+  (SQ (VBP do)
+    (NP (PRP we))
+    (VP (VB teach)
+      (NP
+        (NP (NNS kids))
+        (PP (IN in)
+          (NP (JJ public) (NNS schools))))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ lawless))))))
+    (. ?)))
+
+aux(teach-3, do-1)
+nsubj(teach-3, we-2)
+root(ROOT-0, teach-3)
+dobj(teach-3, kids-4)
+amod(schools-7, public-6)
+prep_in(kids-4, schools-7)
+aux(lawless-10, to-8)
+cop(lawless-10, be-9)
+xcomp(teach-3, lawless-10)
+

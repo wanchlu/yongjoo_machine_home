@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (NN example))
+      (PP (IN of)
+        (NP (DT a) (VBN closed) (NN system))))
+    (VP (VBZ is)
+      (NP (DT a) (JJ small) (JJR lighter))
+      (, ,)
+      (SBAR (IN after)
+        (S
+          (NP (RB so) (JJ many))
+          (VP (VBZ uses)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (ADVP (RB just))
+                (VP (MD wo) (RB n't)
+                  (VP (VB work)
+                    (ADVP (RB anymore))))))))))
+    (. .)))
+
+det(example-2, An-1)
+nsubj(lighter-10, example-2)
+det(system-6, a-4)
+amod(system-6, closed-5)
+prep_of(example-2, system-6)
+cop(lighter-10, is-7)
+det(lighter-10, a-8)
+amod(lighter-10, small-9)
+root(ROOT-0, lighter-10)
+mark(uses-15, after-12)
+advmod(many-14, so-13)
+nsubj(uses-15, many-14)
+advcl(lighter-10, uses-15)
+nsubj(work-20, it-16)
+advmod(work-20, just-17)
+aux(work-20, wo-18)
+neg(work-20, n't-19)
+ccomp(uses-15, work-20)
+advmod(work-20, anymore-21)
+

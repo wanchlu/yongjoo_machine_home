@@ -1,0 +1,76 @@
+(ROOT
+  (FRAG
+    (ADVP (RB clearly))
+    (RB not) (. .)))
+
+dep(not-2, clearly-1)
+root(ROOT-0, not-2)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP (PRP you))
+      (VP
+        (ADVP (RB objectively))
+        (VB determine)
+        (SBAR
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP (NNS things))
+              (VP (VBP are)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN taken)
+                        (ADVP (RB literally)))))))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBP are) (RB not)))))))
+    (. ?)))
+
+advmod(determine-5, How-1)
+aux(determine-5, can-2)
+nsubj(determine-5, you-3)
+advmod(determine-5, objectively-4)
+root(ROOT-0, determine-5)
+dep(are-8, which-6)
+nsubj(are-8, things-7)
+xsubj(taken-11, things-7)
+dep(determine-5, are-8)
+aux(taken-11, to-9)
+auxpass(taken-11, be-10)
+xcomp(are-8, taken-11)
+advmod(taken-11, literally-12)
+nsubj(are-15, which-14)
+dep(determine-5, are-15)
+conj_and(are-8, are-15)
+neg(are-15, not-16)
+
+(ROOT
+  (S
+    (NP (NNS Revelations))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN example))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (RB clearly) (NN symbolism))
+            (VP (VBZ is)
+              (VP (VBN used)))))))
+    (. .)))
+
+nsubj(example-4, Revelations-1)
+cop(example-4, is-2)
+det(example-4, an-3)
+root(ROOT-0, example-4)
+advmod(used-9, where-5)
+advmod(symbolism-7, clearly-6)
+nsubjpass(used-9, symbolism-7)
+auxpass(used-9, is-8)
+rcmod(example-4, used-9)
+

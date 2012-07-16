@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (PP (IN From)
+      (NP
+        (NP (DT this) (NNP Big) (NNP Flash))
+        (PP (IN of)
+          (NP (NNP Light)))))
+    (, ,)
+    (NP
+      (NP (NNS stars)
+        (CC and)
+        (NNS planets))
+      (CC and)
+      (NP
+        (NP (NN everything))
+        (SBAR
+          (S
+            (NP (DT the) (JJ ancient) (NNS Hebrews))
+            (VP (MD could)
+              (VP (VB see)
+                (PP (IN in)
+                  (NP (DT the) (NNS heavens)))))))))
+    (VP (VBD were)
+      (VP (VBN created)))
+    (. .)))
+
+det(Flash-4, this-2)
+nn(Flash-4, Big-3)
+prep_from(created-22, Flash-4)
+prep_of(Flash-4, Light-6)
+nsubjpass(created-22, stars-8)
+conj_and(stars-8, planets-10)
+nsubjpass(created-22, planets-10)
+conj_and(stars-8, everything-12)
+dobj(see-17, everything-12)
+nsubjpass(created-22, everything-12)
+det(Hebrews-15, the-13)
+amod(Hebrews-15, ancient-14)
+nsubj(see-17, Hebrews-15)
+aux(see-17, could-16)
+rcmod(everything-12, see-17)
+det(heavens-20, the-19)
+prep_in(see-17, heavens-20)
+auxpass(created-22, were-21)
+root(ROOT-0, created-22)
+

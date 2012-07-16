@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ does) (RB n't)
+      (VP (VB matter)
+        (NP
+          (NP (NN intent))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (NN lack))
+                (PP (IN of)
+                  (NP (NN intent)
+                    (CC or)
+                    (NN accident))))
+              (CC or)
+              (NP
+                (NP (NN design))
+                (PP (IN of)
+                  (NP (NN nature)))))))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT a) (NN fetus))
+            (VP (VBZ is)
+              (PP (IN inside)
+                (NP (DT the) (NN womb))))))))
+    (: ...)))
+
+nsubj(matter-4, it-1)
+aux(matter-4, does-2)
+neg(matter-4, n't-3)
+root(ROOT-0, matter-4)
+dobj(matter-4, intent-5)
+prep_of(intent-5, lack-7)
+prep_of(lack-7, intent-9)
+prep_of(lack-7, accident-11)
+conj_or(intent-9, accident-11)
+prep_of(intent-5, design-13)
+conj_or(lack-7, design-13)
+prep_of(design-13, nature-15)
+advmod(is-19, when-16)
+det(fetus-18, a-17)
+nsubj(is-19, fetus-18)
+advcl(matter-4, is-19)
+det(womb-22, the-21)
+prep_inside(is-19, womb-22)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP claim)
+        (SBAR (IN that) (IN if)
+          (S
+            (NP (NNP ID))
+            (VP (VBD was)
+              (VP (VBN presented)
+                (PP (IN in)
+                  (NP (NN class)))))))))
+    (CC and)
+    (S
+      (NP (DT a) (NN student))
+      (VP (VBD asked)
+        (SBAR (`` ``)
+          (WHNP (WP who))
+          (S
+            (VP (VBD was)
+              (NP (DT the) (NN designer)))))))
+    (. ?)))
+
+nsubj(claim-2, They-1)
+root(ROOT-0, claim-2)
+complm(presented-7, that-3)
+dep(presented-7, if-4)
+nsubjpass(presented-7, ID-5)
+auxpass(presented-7, was-6)
+ccomp(claim-2, presented-7)
+prep_in(presented-7, class-9)
+det(student-12, a-11)
+nsubj(asked-13, student-12)
+conj_and(claim-2, asked-13)
+nsubj(designer-18, who-15)
+cop(designer-18, was-16)
+det(designer-18, the-17)
+ccomp(asked-13, designer-18)
+

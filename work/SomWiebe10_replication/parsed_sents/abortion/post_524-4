@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP (DT A) (NN fetus))
+    (, ,)
+    (ADVP (RB however))
+    (, ,)
+    (VP (VBZ is)
+      (VP (VBN created) (, ,)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ vast) (NN majority))
+            (PP (IN of)
+              (NP (NNS cases)))))
+        (, ,)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNS actions))
+            (PP (IN of)
+              (NP (PRP$ its) (NNS parents)))))))
+    (. .)))
+
+det(fetus-2, A-1)
+nsubjpass(created-7, fetus-2)
+advmod(created-7, however-4)
+auxpass(created-7, is-6)
+root(ROOT-0, created-7)
+det(majority-12, the-10)
+amod(majority-12, vast-11)
+prep_in(created-7, majority-12)
+prep_of(majority-12, cases-14)
+det(actions-18, the-17)
+agent(created-7, actions-18)
+poss(parents-21, its-20)
+prep_of(actions-18, parents-21)
+
+(ROOT
+  (S
+    (NP (NNP Nature))
+    (VP (VBZ has)
+      (VP (VBN chosen)
+        (NP (DT the) (NN mother)
+          (S
+            (VP (TO to)
+              (VP (VB bear)
+                (NP
+                  (NP (DT the) (JJ biological) (NN burden))
+                  (PP (IN of)
+                    (NP (NN childbearing))))))))))
+    (. .)))
+
+nsubj(chosen-3, Nature-1)
+aux(chosen-3, has-2)
+root(ROOT-0, chosen-3)
+det(mother-5, the-4)
+dobj(chosen-3, mother-5)
+aux(bear-7, to-6)
+infmod(mother-5, bear-7)
+det(burden-10, the-8)
+amod(burden-10, biological-9)
+dobj(bear-7, burden-10)
+prep_of(burden-10, childbearing-12)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ designed) (NNS circuits))
+      (VP (VBP tend)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (RBR less) (JJ tolerant)
+                (PP (IN of)
+                  (NP
+                    (NP (NNS malfunctions))
+                    (PP (IN than)
+                      (NP (DT the) (JJ evolved) (NNS circuits)))))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADJP (RB much) (JJR harder))
+        (S
+          (VP (TO to)
+            (VP (VB figure)
+              (PRT (RP out))
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (DT the) (JJ undesigned) (NNS circuits))
+                  (VP (VBP work)))))))))
+    (. .)))
+
+det(circuits-3, The-1)
+amod(circuits-3, designed-2)
+nsubj(tend-4, circuits-3)
+xsubj(tolerant-8, circuits-3)
+root(ROOT-0, tend-4)
+aux(tolerant-8, to-5)
+cop(tolerant-8, be-6)
+advmod(tolerant-8, less-7)
+xcomp(tend-4, tolerant-8)
+prep_of(tolerant-8, malfunctions-10)
+det(circuits-14, the-12)
+amod(circuits-14, evolved-13)
+prep_than(malfunctions-10, circuits-14)
+nsubj(harder-19, it-16)
+xsubj(figure-21, it-16)
+cop(harder-19, 's-17)
+advmod(harder-19, much-18)
+conj_and(tend-4, harder-19)
+aux(figure-21, to-20)
+xcomp(harder-19, figure-21)
+prt(figure-21, out-22)
+advmod(work-27, how-23)
+det(circuits-26, the-24)
+amod(circuits-26, undesigned-25)
+nsubj(work-27, circuits-26)
+ccomp(figure-21, work-27)
+

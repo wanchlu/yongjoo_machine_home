@@ -1,0 +1,156 @@
+(ROOT
+  (S
+    (INTJ (VB please))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (ADVP (DT all))
+      (VP (VBP need)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (MD can)
+                (VP (VB provide)
+                  (NP (DT some) (JJ witty) (NNS comments)))))))))
+    (. .)))
+
+dep(need-5, please-1)
+nsubj(need-5, we-3)
+advmod(need-5, all-4)
+root(ROOT-0, need-5)
+dobj(need-5, people-6)
+nsubj(provide-9, people-6)
+aux(provide-9, can-8)
+rcmod(people-6, provide-9)
+det(comments-12, some-10)
+amod(comments-12, witty-11)
+dobj(provide-9, comments-12)
+
+(ROOT
+  (S
+    (S (CC and)
+      (S
+        (INTJ (UH yes))
+        (, ,)
+        (NP (DT that))
+        (VP (VBD was)
+          (ADJP (JJ funny)))))
+    (VP (VBP cause)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (ADVP (NN kind) (IN of))
+          (VP (VBZ is)
+            (ADJP (JJ true))))))
+    (. .)))
+
+cc(funny-6, and-1)
+dep(funny-6, yes-2)
+nsubj(funny-6, that-4)
+cop(funny-6, was-5)
+csubj(cause-7, funny-6)
+root(ROOT-0, cause-7)
+nsubj(true-12, it-8)
+dep(of-10, kind-9)
+advmod(true-12, of-10)
+cop(true-12, is-11)
+ccomp(cause-7, true-12)
+
+(ROOT
+  (S
+    (SBAR (IN if)
+      (S
+        (NP (PRP we))
+        (VP (VBD stayed)
+          (ADJP (JJ serious))
+          (NP (PDT all) (DT the) (NN time)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD would) (RB n't)
+      (VP (VB be)
+        (NP (DT that) (NN fun)
+          (S
+            (VP (TO to)
+              (VP (VB come)
+                (ADVP (RB here))
+                (ADVP (RB as) (RB often))))))))
+    (. .)))
+
+mark(serious-4, if-1)
+nsubj(serious-4, we-2)
+cop(serious-4, stayed-3)
+advcl(fun-14, serious-4)
+predet(time-7, all-5)
+det(time-7, the-6)
+attr(serious-4, time-7)
+nsubj(fun-14, it-9)
+aux(fun-14, would-10)
+neg(fun-14, n't-11)
+cop(fun-14, be-12)
+det(fun-14, that-13)
+root(ROOT-0, fun-14)
+aux(come-16, to-15)
+infmod(fun-14, come-16)
+advmod(come-16, here-17)
+advmod(often-19, as-18)
+advmod(come-16, often-19)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH yes))
+      (, ,)
+      (S
+        (NP (FW i))
+        (VP (MD 'll)
+          (VP (VB admit))))
+      (, ,)
+      (S
+        (NP
+          (NP (CD 80) (NN %))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS topics))
+              (SBAR (IN that)
+                (S
+                  (NP (NNP Joe))
+                  (VP (VBZ brings)
+                    (PRT (RP up))))))))
+        (VP (VBZ is)
+          (NP (NN crap)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP$ his) (NNS replies))
+      (VP (VBP are)
+        (ADJP (RB pretty) (JJ funny)
+          (CC and)
+          (JJ necessary))))
+    (. .)))
+
+dep(admit-5, yes-1)
+nsubj(admit-5, i-3)
+aux(admit-5, 'll-4)
+root(ROOT-0, admit-5)
+num(%-8, 80-7)
+nsubj(crap-17, %-8)
+det(topics-11, the-10)
+prep_of(%-8, topics-11)
+dobj(brings-14, topics-11)
+complm(brings-14, that-12)
+nsubj(brings-14, Joe-13)
+dep(topics-11, brings-14)
+prt(brings-14, up-15)
+cop(crap-17, is-16)
+dep(admit-5, crap-17)
+poss(replies-21, his-20)
+nsubj(funny-24, replies-21)
+nsubj(necessary-26, replies-21)
+cop(funny-24, are-22)
+advmod(funny-24, pretty-23)
+conj_but(admit-5, funny-24)
+conj_but(admit-5, necessary-26)
+conj_and(funny-24, necessary-26)
+

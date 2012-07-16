@@ -1,0 +1,64 @@
+(ROOT
+  (X (JJ 2) (. .) (NNP -RRB-)))
+
+root(ROOT-0, 2-1)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ is)
+      (ADVP (RB constantly))
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB prove)
+              (NP
+                (NP (DT the) (NN theory))
+                (PP (IN of)
+                  (NP (NN evolution))))
+              (PP (IN with)
+                (S
+                  (VP (VBG suggesting)
+                    (NP
+                      (NP (DT that) (NN life))
+                      (SBAR
+                        (S
+                          (NP (PRP itself))
+                          (VP (VBD was)
+                            (VP (VBN generated)
+                              (PP (IN in)
+                                (NP
+                                  (NP (DT a) (NN pool))
+                                  (PP (IN of)
+                                    (NP (JJ amino) (NNS acids)
+                                      (CC and)
+                                      (NNS proteins)))))
+                              (PP (IN by)
+                                (NP (JJ complete) (NN chance))))))))))))))))
+    (. .)))
+
+nsubj(trying-4, Science-1)
+xsubj(prove-6, Science-1)
+aux(trying-4, is-2)
+advmod(trying-4, constantly-3)
+root(ROOT-0, trying-4)
+aux(prove-6, to-5)
+xcomp(trying-4, prove-6)
+det(theory-8, the-7)
+dobj(prove-6, theory-8)
+prep_of(theory-8, evolution-10)
+prepc_with(prove-6, suggesting-12)
+det(life-14, that-13)
+dobj(suggesting-12, life-14)
+nsubjpass(generated-17, itself-15)
+auxpass(generated-17, was-16)
+rcmod(life-14, generated-17)
+det(pool-20, a-19)
+prep_in(generated-17, pool-20)
+amod(acids-23, amino-22)
+prep_of(pool-20, acids-23)
+prep_of(pool-20, proteins-25)
+conj_and(acids-23, proteins-25)
+amod(chance-28, complete-27)
+agent(generated-17, chance-28)
+

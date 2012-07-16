@@ -1,0 +1,136 @@
+(ROOT
+  (S
+    (NP (JJ very))
+    (ADVP (RB well))
+    (VP (VBD said))
+    (. .)))
+
+nsubj(said-3, very-1)
+advmod(said-3, well-2)
+root(ROOT-0, said-3)
+
+(ROOT
+  (S
+    (NP (DT The) (NN arrogance) (NN factor))
+    (VP (VBZ is)
+      (ADVP (RB always))
+      (ADJP (JJ obvious)))
+    (. .)))
+
+det(factor-3, The-1)
+nn(factor-3, arrogance-2)
+nsubj(obvious-6, factor-3)
+cop(obvious-6, is-4)
+advmod(obvious-6, always-5)
+root(ROOT-0, obvious-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ entire) (NN act))
+      (PP (IN of)
+        (S
+          (VP (VBG presuming)
+            (S
+              (NP (PRP you))
+              (VP (VB know)
+                (NP (NN anything))
+                (PP (IN for)
+                  (ADJP (JJ sure)))))))))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ scientific)))
+    (: ...)))
+
+det(act-3, The-1)
+amod(act-3, entire-2)
+nsubj(scientific-13, act-3)
+prepc_of(act-3, presuming-5)
+nsubj(know-7, you-6)
+ccomp(presuming-5, know-7)
+dobj(know-7, anything-8)
+prep_for(know-7, sure-10)
+cop(scientific-13, is-11)
+neg(scientific-13, not-12)
+root(ROOT-0, scientific-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP$ Their) (NN bias))
+      (VP (VBZ reveals)
+        (NP (PRP them))))
+    (CC and)
+    (S
+      (ADVP (RB admittedly))
+      (NP (DT that))
+      (VP (VBZ happens)
+        (PP (IN on)
+          (NP (DT both) (NNS sides)))))
+    (. .)))
+
+poss(bias-2, Their-1)
+nsubj(reveals-3, bias-2)
+root(ROOT-0, reveals-3)
+dobj(reveals-3, them-4)
+advmod(happens-8, admittedly-6)
+nsubj(happens-8, that-7)
+conj_and(reveals-3, happens-8)
+det(sides-11, both-10)
+prep_on(happens-8, sides-11)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB believe)
+          (NP
+            (NP (DT a) (JJ true) (`` ``) (NN scientist) ('' ''))
+            (SBAR
+              (S
+                (VP (VBZ exists))))))))
+    (: ...)
+    (S
+      (PP (IN because)
+        (NP
+          (NP (DT no) (NN matter))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (NP (PRP you))
+              (VP (VBP are))))))
+      (, ,)
+      (NP (PRP you))
+      (VP (VBP are)
+        (ADVP (RB inevitably))
+        (VP (VBG proving)
+          (NP
+            (NP (NN nothing))
+            (PP (CC but)
+              (NP (PRP$ your) (NN world) (NN view)))))))
+    (. .)))
+
+nsubj(believe-4, I-1)
+aux(believe-4, do-2)
+neg(believe-4, n't-3)
+root(ROOT-0, believe-4)
+det(scientist-8, a-5)
+amod(scientist-8, true-6)
+dobj(believe-4, scientist-8)
+rcmod(scientist-8, exists-10)
+det(matter-14, no-13)
+dobj(are-17, matter-14)
+prep_because(proving-22, matter-14)
+rel(are-17, who-15)
+nsubj(are-17, you-16)
+rcmod(matter-14, are-17)
+nsubj(proving-22, you-19)
+aux(proving-22, are-20)
+advmod(proving-22, inevitably-21)
+parataxis(believe-4, proving-22)
+dobj(proving-22, nothing-23)
+prep(nothing-23, but-24)
+poss(view-27, your-25)
+nn(view-27, world-26)
+dep(but-24, view-27)
+

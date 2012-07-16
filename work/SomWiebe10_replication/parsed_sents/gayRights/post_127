@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (JJS Most) (NN health) (NN care) (NNS organizations))
+    (VP (VBP support)
+      (S
+        (NP (JJ gay) (NN parenting))
+        (ADJP (RB as) (RB equally) (JJ capable)
+          (PP (IN as)
+            (NP (JJ heterosexual) (NN parenting))))
+        (SBAR
+          (S
+            (NP (DT These) (NNS organizations))
+            (VP (VBP are)
+              (NP
+                (NP (DT the)
+                  (ADJP (RBS most) (JJ capable)))
+                (PP (IN of)
+                  (S
+                    (VP (VBG determining)
+                      (NP
+                        (NP (DT the) (NNS capabilities))
+                        (PP (IN of)
+                          (NP (NNS homosexuals))))
+                      (S
+                        (VP (TO to)
+                          (VP (VB perform)
+                            (ADVP (RB dutifully))
+                            (PP (IN as)
+                              (NP (NNS parents)))))))))))))))
+    (. .)))
+
+amod(organizations-4, Most-1)
+nn(organizations-4, health-2)
+nn(organizations-4, care-3)
+nsubj(support-5, organizations-4)
+root(ROOT-0, support-5)
+amod(parenting-7, gay-6)
+nsubj(capable-19, parenting-7)
+advmod(capable-10, as-8)
+advmod(capable-10, equally-9)
+dep(capable-19, capable-10)
+amod(parenting-13, heterosexual-12)
+prep_as(capable-10, parenting-13)
+det(organizations-15, These-14)
+nsubj(capable-19, organizations-15)
+cop(capable-19, are-16)
+det(capable-19, the-17)
+advmod(capable-19, most-18)
+xcomp(support-5, capable-19)
+prepc_of(capable-19, determining-21)
+det(capabilities-23, the-22)
+dobj(determining-21, capabilities-23)
+prep_of(capabilities-23, homosexuals-25)
+aux(perform-27, to-26)
+xcomp(determining-21, perform-27)
+advmod(perform-27, dutifully-28)
+prep_as(perform-27, parents-30)
+

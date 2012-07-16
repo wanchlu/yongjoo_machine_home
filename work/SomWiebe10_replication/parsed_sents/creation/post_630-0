@@ -1,0 +1,39 @@
+(ROOT
+  (FRAG
+    (NP (JJ Fundamental) (NNS points))
+    (: :) (`` ``)
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP
+          (NP (JJ well-credentialed) (NNS scientists))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP support)
+                (S
+                  (VP (VBG intelligent)
+                    (NP
+                      (NP (NN design))
+                      (PRN (-LRB- -LRB-)
+                        (NP (NNP ID))
+                        (-RRB- -RRB-)))))
+                ('' '')
+                (PP (RB So)
+                  (NP (WP what)))))))))
+    (. ?)))
+
+amod(points-2, Fundamental-1)
+root(ROOT-0, points-2)
+expl(are-6, There-5)
+dep(points-2, are-6)
+amod(scientists-8, well-credentialed-7)
+nsubj(are-6, scientists-8)
+nsubj(support-10, scientists-8)
+rcmod(scientists-8, support-10)
+xcomp(support-10, intelligent-11)
+dobj(intelligent-11, design-12)
+abbrev(design-12, ID-14)
+prep(support-10, So-17)
+pobj(So-17, what-18)
+

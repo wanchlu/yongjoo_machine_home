@@ -1,0 +1,356 @@
+(ROOT
+  (S
+    (VP (VB Aha))
+    (. !)))
+
+root(ROOT-0, Aha-1)
+
+(ROOT
+  (INTJ (UH Exactly) (. !)))
+
+root(ROOT-0, Exactly-1)
+
+(ROOT
+  (S (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VBP disagree)
+            (CC and)
+            (VBP look)
+            (ADVP (RB up)
+              (PP (IN at)
+                (NP (DT the) (NNS stars)))))
+          (CC and)
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP see)
+                  (NP (DT an) (NN object)))))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP (PRP$ your) (JJ personal) (NN opinion)))
+    (. .)))
+
+cc(opinion-23, And-1)
+mark(disagree-4, if-2)
+nsubj(disagree-4, you-3)
+nsubj(look-6, you-3)
+nsubj(think-12, you-3)
+advcl(opinion-23, disagree-4)
+conj_and(disagree-4, look-6)
+advcl(opinion-23, look-6)
+advmod(disagree-4, up-7)
+det(stars-10, the-9)
+prep_at(up-7, stars-10)
+conj_and(disagree-4, think-12)
+advcl(opinion-23, think-12)
+nsubj(see-14, you-13)
+ccomp(think-12, see-14)
+det(object-16, an-15)
+dobj(see-14, object-16)
+nsubj(opinion-23, that-18)
+cop(opinion-23, is-19)
+advmod(opinion-23, just-20)
+poss(opinion-23, your-21)
+amod(opinion-23, personal-22)
+root(ROOT-0, opinion-23)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP we))
+    (ADVP (RB now))
+    (VP (VBP know)
+      (SBAR (IN that)
+        (S
+          (NP (NN pluto))
+          (VP (VBZ is)
+            (NP (DT a) (NN PLANETOID))))))
+    (. !)))
+
+cc(know-4, And-1)
+nsubj(know-4, we-2)
+advmod(know-4, now-3)
+root(ROOT-0, know-4)
+complm(PLANETOID-9, that-5)
+nsubj(PLANETOID-9, pluto-6)
+cop(PLANETOID-9, is-7)
+det(PLANETOID-9, a-8)
+ccomp(know-4, PLANETOID-9)
+
+(ROOT
+  (NP (RB Not) (DT a) (NN planet) (. .)))
+
+neg(planet-3, Not-1)
+det(planet-3, a-2)
+root(ROOT-0, planet-3)
+
+(ROOT
+  (S
+    (NP (NNP Percival) (NNP Lowell)
+      (CC and)
+      (NNP Clyde) (NNP Tombaugh))
+    (VP (VBD were)
+      (NP (JJ blind) (NNS fools)))
+    (. !)))
+
+nn(Lowell-2, Percival-1)
+nsubj(fools-8, Lowell-2)
+nn(Tombaugh-5, Clyde-4)
+conj_and(Lowell-2, Tombaugh-5)
+nsubj(fools-8, Tombaugh-5)
+cop(fools-8, were-6)
+amod(fools-8, blind-7)
+root(ROOT-0, fools-8)
+
+(ROOT
+  (S
+    (S
+      (VP (TO to)
+        (VP (VB think)
+          (NP (PRP they)))))
+    (VP (VBD discovered)
+      (NP (DT a) (NN planet)))
+    (. !)))
+
+aux(think-2, to-1)
+csubj(discovered-4, think-2)
+dobj(think-2, they-3)
+root(ROOT-0, discovered-4)
+det(planet-6, a-5)
+dobj(discovered-4, planet-6)
+
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (, ,)
+    (NP
+      (NP (NN thankfully))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN perspective))
+          (PP (IN of)
+            (NP
+              (NP (CD 20\/20) (NN hindsight))
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (MD can)
+                    (VP (VB arrogantly))))))))))
+    (VP (VBP scoff)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN error))
+          (PP (IN of)
+            (NP (PRP$ their) (NNS ways)))))
+      (, ,)
+      (SBAR (IN for)
+        (S
+          (NP (PRP we))
+          (ADVP (RB now))
+          (VP (VBP know)
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP (NN pluto))
+                  (VP (VBZ is)
+                    (NP (DT a) (NN PLANETOID)))))
+              (, ,)
+              (CC and)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (NNP Percival) (NNP Lowell))
+                    (CC and)
+                    (NP
+                      (NP (NNP Clyde) (NNP Tombaugh) (POS 's))
+                      (NNS contributions)))
+                  (VP (VBD were)
+                    (ADVP (RB actually))
+                    (ADJP (JJ counterproductive)
+                      (PP (TO to)
+                        (NP
+                          (NP (DT the) (NN advancement))
+                          (PP (IN of)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (PRP we))
+                                (NP (NN today))
+                                (VP (VBP call)
+                                  (NP (NN science)))))))))))))))))
+    (: ...)))
+
+advmod(scoff-13, Now-1)
+nsubj(scoff-13, thankfully-3)
+det(perspective-6, the-5)
+prep_from(thankfully-3, perspective-6)
+num(hindsight-9, 20\/20-8)
+prep_of(perspective-6, hindsight-9)
+dobj(arrogantly-12, hindsight-9)
+nsubj(arrogantly-12, we-10)
+aux(arrogantly-12, can-11)
+rcmod(hindsight-9, arrogantly-12)
+root(ROOT-0, scoff-13)
+det(error-16, the-15)
+prep_at(scoff-13, error-16)
+poss(ways-19, their-18)
+prep_of(error-16, ways-19)
+mark(know-24, for-21)
+nsubj(know-24, we-22)
+advmod(know-24, now-23)
+advcl(scoff-13, know-24)
+complm(PLANETOID-29, that-25)
+nsubj(PLANETOID-29, pluto-26)
+cop(PLANETOID-29, is-27)
+det(PLANETOID-29, a-28)
+ccomp(know-24, PLANETOID-29)
+complm(counterproductive-42, that-32)
+nn(Lowell-34, Percival-33)
+nsubj(counterproductive-42, Lowell-34)
+nn(Tombaugh-37, Clyde-36)
+poss(contributions-39, Tombaugh-37)
+conj_and(Lowell-34, contributions-39)
+nsubj(counterproductive-42, contributions-39)
+cop(counterproductive-42, were-40)
+advmod(counterproductive-42, actually-41)
+ccomp(know-24, counterproductive-42)
+conj_and(PLANETOID-29, counterproductive-42)
+det(advancement-45, the-44)
+prep_to(counterproductive-42, advancement-45)
+dobj(call-50, what-47)
+nsubj(call-50, we-48)
+nsubj(call-50, today-49)
+prepc_of(advancement-45, call-50)
+dobj(call-50, science-51)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Thanks))
+      (PP (TO to)
+        (NP (DT the)
+          (NP
+            (NP (NNP International) (NNP Astronomical) (NNP Union) (POS 's))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP IAU))
+              (-RRB- -RRB-))
+            (NN decision) (NN Pluto)))))
+    (VP (VBZ is)
+      (NP (DT a) (NN dwarf) (NN planet)))
+    (. !)))
+
+nsubj(planet-16, Thanks-1)
+det(Pluto-12, the-3)
+nn(Union-6, International-4)
+nn(Union-6, Astronomical-5)
+poss(Pluto-12, Union-6)
+abbrev(Pluto-12, IAU-9)
+nn(Pluto-12, decision-11)
+prep_to(Thanks-1, Pluto-12)
+cop(planet-16, is-13)
+det(planet-16, a-14)
+nn(planet-16, dwarf-15)
+root(ROOT-0, planet-16)
+
+(ROOT
+  (S
+    (NP (NNP Modern) (NN reality))
+    (VP
+      (VP (VBZ is)
+        (VP (VBN defined)
+          (PP (RB not) (IN by)
+            (NP
+              (NP (DT the)
+                (ADJP (JJ insane) (JJ direct))
+                (NN observation))
+              (PP (IN of)
+                (NP (JJ physical) (NN reality)))))
+          (PP (IN by)
+            (NP
+              (NP (NNS individuals))
+              (VP (VBG peering)
+                (PP (IN into)
+                  (NP (DT a) (NN tube))))))))
+      (, ,)
+      (CC but)
+      (VP (VBD decided)
+        (PRT (RP upon))
+        (PP (IN through)
+          (NP
+            (NP (NNS CONSENSUS))
+            (PP (IN of)
+              (NP (DT the) (NNP GROUP)))))))
+    (. .)))
+
+nn(reality-2, Modern-1)
+nsubjpass(defined-4, reality-2)
+nsubjpass(decided-22, reality-2)
+auxpass(defined-4, is-3)
+root(ROOT-0, defined-4)
+neg(defined-4, not-5)
+det(observation-10, the-7)
+amod(direct-9, insane-8)
+amod(observation-10, direct-9)
+agent(defined-4, observation-10)
+amod(reality-13, physical-12)
+prep_of(observation-10, reality-13)
+agent(defined-4, individuals-15)
+partmod(individuals-15, peering-16)
+det(tube-19, a-18)
+prep_into(peering-16, tube-19)
+conj_but(defined-4, decided-22)
+prt(decided-22, upon-23)
+prep_through(decided-22, CONSENSUS-25)
+det(GROUP-28, the-27)
+prep_of(CONSENSUS-25, GROUP-28)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Certainly))
+      (NP (DT the) (JJ individual) (NN mind))
+      (VP (VBZ has)
+        (NP
+          (NP (DT no) (NN value))
+          (PP (IN in)
+            (NP (JJ todays) (NN society))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (RB only) (DT the) (NNP GROUP) (NNP MIND))
+      (VP (MD can)
+        (VP (VB come)
+          (PP (TO to)
+            (NP
+              (NP (DT any) (JJ real) (NN conclusion))
+              (PP (IN in)
+                (NP (DT the) (JJ modern) (NN sense))))))))
+    (. .)))
+
+advmod(has-5, Certainly-1)
+det(mind-4, the-2)
+amod(mind-4, individual-3)
+nsubj(has-5, mind-4)
+root(ROOT-0, has-5)
+det(value-7, no-6)
+dobj(has-5, value-7)
+amod(society-10, todays-9)
+prep_in(value-7, society-10)
+advmod(MIND-16, only-13)
+det(MIND-16, the-14)
+nn(MIND-16, GROUP-15)
+nsubj(come-18, MIND-16)
+aux(come-18, can-17)
+conj_and(has-5, come-18)
+det(conclusion-22, any-20)
+amod(conclusion-22, real-21)
+prep_to(come-18, conclusion-22)
+det(sense-26, the-24)
+amod(sense-26, modern-25)
+prep_in(conclusion-22, sense-26)
+

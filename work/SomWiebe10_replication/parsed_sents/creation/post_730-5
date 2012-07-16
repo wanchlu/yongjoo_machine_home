@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Gravity))
+      (VP (VBZ is)
+        (NP (NN fact))))
+    (, ,)
+    (S
+      (NP (NNP Evolution))
+      (VP (VBZ is)
+        (NP (NN fact))))
+    (, ,)
+    (S
+      (NP (NNP Creationism))
+      (VP (VBZ is)
+        (ADJP (RB so) (JJ ludicrous)
+          (CC and)
+          (JJ moronic)
+          (SBAR (IN that)
+            (S
+              (NP (PRP it))
+              (VP (VBZ is) (RB not)
+                (ADJP (JJ worth))
+                (ADVP (RB even))
+                (VP (VBG discussing))))))))
+    (. .)))
+
+nsubj(fact-3, Gravity-1)
+cop(fact-3, is-2)
+root(ROOT-0, fact-3)
+nsubj(fact-7, Evolution-5)
+cop(fact-7, is-6)
+ccomp(fact-3, fact-7)
+nsubj(ludicrous-12, Creationism-9)
+nsubj(moronic-14, Creationism-9)
+cop(ludicrous-12, is-10)
+advmod(ludicrous-12, so-11)
+ccomp(fact-3, ludicrous-12)
+ccomp(fact-3, moronic-14)
+conj_and(ludicrous-12, moronic-14)
+complm(discussing-21, that-15)
+nsubj(discussing-21, it-16)
+cop(discussing-21, is-17)
+neg(discussing-21, not-18)
+acomp(discussing-21, worth-19)
+advmod(discussing-21, even-20)
+ccomp(ludicrous-12, discussing-21)
+

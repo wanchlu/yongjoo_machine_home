@@ -1,0 +1,80 @@
+(ROOT
+  (FRAG
+    (FRAG
+      (WHNP (WDT What))
+      (PP (IN about)
+        (NP (PDT all) (DT the) (NNS people)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBN maimed)
+                  (PP (IN by)
+                    (NP
+                      (NP (NN war))
+                      (, ,)
+                      (NP
+                        (NP (DT all))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP have)
+                              (VP (VBN suffered)
+                                (ADJP (RB greatly) (JJ due))
+                                (PP (TO to)
+                                  (NP (DT the) (NN war)))))))))))))))))
+    (, ,)
+    (FRAG
+      (WHNP (WP what))
+      (PP (IN about)
+        (NP (PDT all) (DT the) (NNS children)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP
+                (VP (VBD were)
+                  (VP (VBN burned)
+                    (PP (IN over)
+                      (NP (PRP$ their) (JJ entire) (NNS bodies)))
+                    (PP (IN from)
+                      (NP (NN napalm)))))
+                (CC but)
+                (VP (VBD did) (RB not)
+                  (VP (VB die)))))))
+        (. .)))))
+
+root(ROOT-0, What-1)
+dep(What-1, about-2)
+predet(people-5, all-3)
+det(people-5, the-4)
+pobj(about-2, people-5)
+nsubjpass(maimed-8, that-6)
+auxpass(maimed-8, are-7)
+ccomp(people-5, maimed-8)
+agent(maimed-8, war-10)
+appos(war-10, all-12)
+nsubj(suffered-15, all-12)
+aux(suffered-15, have-14)
+rcmod(all-12, suffered-15)
+advmod(due-17, greatly-16)
+acomp(suffered-15, due-17)
+det(war-20, the-19)
+prep_to(suffered-15, war-20)
+dep(What-1, what-22)
+dep(what-22, about-23)
+predet(children-26, all-24)
+det(children-26, the-25)
+pobj(about-23, children-26)
+nsubjpass(burned-29, that-27)
+nsubj(die-39, that-27)
+auxpass(burned-29, were-28)
+ccomp(children-26, burned-29)
+poss(bodies-33, their-31)
+amod(bodies-33, entire-32)
+prep_over(burned-29, bodies-33)
+prep_from(burned-29, napalm-35)
+aux(die-39, did-37)
+neg(die-39, not-38)
+ccomp(children-26, die-39)
+conj_but(burned-29, die-39)
+

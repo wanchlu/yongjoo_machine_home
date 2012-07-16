@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (NN consistency) (NNS checks)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNS anisotropies))
+      (PP (IN of)
+        (NP
+          (NP (NNP CMB))
+          (PP (CC plus)
+            (NP
+              (NP (JJ simulated) (NN synchrotron) (NN emission) (NN contamination))
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (NN plane))
+                  (PP (IN of)
+                    (NP (DT the) (NN galaxy))))))))))
+    (VP (VBP are)
+      (VP (VBN detected)
+        (PP (IN by)
+          (NP (PRP$ our) (NNS methods)))
+        (PP (IN in)
+          (NP
+            (NP (RB just) (DT the) (JJ spatial) (NNS regions))
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (NP (PRP they))
+                (VP (VBP are)
+                  (ADJP (JJ simulated)))))))))
+    (. .)))
+
+nn(checks-3, consistency-2)
+prep_as(detected-21, checks-3)
+det(anisotropies-6, the-5)
+nsubjpass(detected-21, anisotropies-6)
+prep_of(anisotropies-6, CMB-8)
+prep(CMB-8, plus-9)
+amod(contamination-13, simulated-10)
+nn(contamination-13, synchrotron-11)
+nn(contamination-13, emission-12)
+dep(plus-9, contamination-13)
+det(plane-16, the-15)
+prep_from(contamination-13, plane-16)
+det(galaxy-19, the-18)
+prep_of(plane-16, galaxy-19)
+auxpass(detected-21, are-20)
+root(ROOT-0, detected-21)
+poss(methods-24, our-23)
+agent(detected-21, methods-24)
+advmod(regions-29, just-26)
+det(regions-29, the-27)
+amod(regions-29, spatial-28)
+prep_in(detected-21, regions-29)
+advmod(simulated-33, where-30)
+nsubj(simulated-33, they-31)
+cop(simulated-33, are-32)
+rcmod(regions-29, simulated-33)
+

@@ -1,0 +1,52 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (JJ ok)
+            (S
+              (VP (TO to)
+                (VP (VB abort)))))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP do)
+                (NP (DT those))))))))
+    (WHNP (WP who))
+    (SQ
+      (VP (VBP do)
+        (SBAR (IN so)
+          (S
+            (NP (NN end))
+            (ADVP (RB up) (RB so))
+            (VP (VBD destroyed)
+              (PP (IN for)
+                (NP
+                  (NP (DT the) (NN rest))
+                  (PP (IN of)
+                    (NP (PRP$ their) (NNS lives))))))))))
+    (. ?)))
+
+mark(ok-4, If-1)
+nsubj(ok-4, it-2)
+cop(ok-4, is-3)
+dep(do-12, ok-4)
+aux(abort-6, to-5)
+xcomp(ok-4, abort-6)
+advmod(do-9, why-8)
+advcl(ok-4, do-9)
+dobj(do-9, those-10)
+nsubj(do-12, who-11)
+root(ROOT-0, do-12)
+mark(destroyed-17, so-13)
+nsubj(destroyed-17, end-14)
+advmod(so-16, up-15)
+advmod(destroyed-17, so-16)
+advcl(do-12, destroyed-17)
+det(rest-20, the-19)
+prep_for(destroyed-17, rest-20)
+poss(lives-23, their-22)
+prep_of(rest-20, lives-23)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB think)
+        (SBAR (IN that)
+          (S
+            (VP (VBZ is))))))
+    (. ?)))
+
+advmod(think-4, Why-1)
+aux(think-4, do-2)
+nsubj(think-4, you-3)
+root(ROOT-0, think-4)
+complm(is-6, that-5)
+ccomp(think-4, is-6)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (PRP it))
+    (ADVP
+      (ADVP (RB merely))
+      (PP (IN because)
+        (NP
+          (NP (PRP you))
+          (CC and)
+          (NP
+            (NP (PRP I))
+            (NP (NN share))))))
+    (NP (DT the) (JJ same) (NN language))
+    (. ?)))
+
+cop(language-11, Is-1)
+nsubj(language-11, it-2)
+advmod(language-11, merely-3)
+prep_because(merely-3, you-5)
+prep_because(merely-3, I-7)
+conj_and(you-5, I-7)
+dep(I-7, share-8)
+det(language-11, the-9)
+amod(language-11, same-10)
+root(ROOT-0, language-11)
+

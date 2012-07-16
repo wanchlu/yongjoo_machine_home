@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (ADVP (DT No) (RB no) (RB no))
+    (PRN (, ,)
+      (S
+        (NP (PRP we))
+        (VP (VBP are)
+          (VP (VBG evolving)
+            (ADVP (RB constantly)))))
+      (, ,))
+    (NP (PRP we))
+    (VP (VBP have)
+      (VP (VBN evolve)
+        (ADVP
+          (ADVP (RB so) (RB much))
+          (SBAR (IN that)
+            (S
+              (ADVP (RB now))
+              (NP (PRP we))
+              (VP (VBP have)
+                (NP (DT the) (NN power)
+                  (S
+                    (VP (TO to)
+                      (VP (VB create)))))))))))
+    (. .)))
+
+dep(no-3, No-1)
+advmod(no-3, no-2)
+advmod(evolve-12, no-3)
+nsubj(evolving-7, we-5)
+aux(evolving-7, are-6)
+parataxis(evolve-12, evolving-7)
+advmod(evolving-7, constantly-8)
+nsubj(evolve-12, we-10)
+aux(evolve-12, have-11)
+root(ROOT-0, evolve-12)
+advmod(much-14, so-13)
+advmod(evolve-12, much-14)
+dep(have-18, that-15)
+advmod(have-18, now-16)
+nsubj(have-18, we-17)
+ccomp(much-14, have-18)
+det(power-20, the-19)
+dobj(have-18, power-20)
+aux(create-22, to-21)
+infmod(power-20, create-22)
+

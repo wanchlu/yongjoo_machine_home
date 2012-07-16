@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Groups))
+      (PP (IN like)
+        (NP
+          (NP (NNS Answers))
+          (PP (IN in)
+            (NP (NNP Genesis))))))
+    (VP (VBP claim)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB believe)
+              (NP (DT the) (JJ whole) (NNP Bible)))
+            (CC and)
+            (VP (VB take)
+              (NP (PRP it))
+              (ADVP
+                (ADVP (RB all) (RB literally))
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ persuades)
+                      (NP
+                        (NP (NNS people))
+                        (SBAR
+                          (WHNP (WP who))
+                          (S
+                            (VP (VBP do) (RB not)
+                              (VP (VB examine)
+                                (NP
+                                  (NP (DT the) (NN basis))
+                                  (PP (IN for)
+                                    (NP (PRP$ their) (NN claim))))))))))))))))))
+    (. .)))
+
+nsubj(claim-6, Groups-1)
+xsubj(believe-8, Groups-1)
+prep_like(Groups-1, Answers-3)
+prep_in(Answers-3, Genesis-5)
+root(ROOT-0, claim-6)
+aux(believe-8, to-7)
+xcomp(claim-6, believe-8)
+det(Bible-11, the-9)
+amod(Bible-11, whole-10)
+dobj(believe-8, Bible-11)
+xcomp(claim-6, take-13)
+conj_and(believe-8, take-13)
+dobj(take-13, it-14)
+advmod(literally-16, all-15)
+advmod(take-13, literally-16)
+mark(persuades-19, because-17)
+nsubj(persuades-19, it-18)
+dep(literally-16, persuades-19)
+dobj(persuades-19, people-20)
+nsubj(examine-24, people-20)
+aux(examine-24, do-22)
+neg(examine-24, not-23)
+rcmod(people-20, examine-24)
+det(basis-26, the-25)
+dobj(examine-24, basis-26)
+poss(claim-29, their-28)
+prep_for(basis-26, claim-29)
+

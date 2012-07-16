@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (NN matter)
+          (PP (IN of)
+            (NP (NN principle))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would) (RB not)
+      (VP (VB want)
+        (NP (JJ federal) (NN involvement))
+        (SBAR (IN because)
+          (S
+            (NP (PRP I))
+            (VP (VBP do) (RB not)
+              (VP (VB think)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ is)
+                      (ADJP (JJ constitutional)))))))))))
+    (. .)))
+
+mark(matter-3, As-1)
+nsubj(matter-3, I-2)
+advcl(want-10, matter-3)
+prep_of(matter-3, principle-5)
+nsubj(want-10, I-7)
+aux(want-10, would-8)
+neg(want-10, not-9)
+root(ROOT-0, want-10)
+amod(involvement-12, federal-11)
+dobj(want-10, involvement-12)
+mark(think-17, because-13)
+nsubj(think-17, I-14)
+aux(think-17, do-15)
+neg(think-17, not-16)
+advcl(want-10, think-17)
+nsubj(constitutional-20, it-18)
+cop(constitutional-20, is-19)
+ccomp(think-17, constitutional-20)
+

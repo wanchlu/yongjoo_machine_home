@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBN been)
+            (VP (VBN told)
+              (ADVP (RB already))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (NNP Phil))
+                  (VP (VBZ says)))))))))
+    (VP (VBZ is)
+      (ADJP (JJ irrelevant)
+        (PP (TO to)
+          (NP (NNP ID)))))
+    (. .)))
+
+mark(told-5, As-1)
+nsubjpass(told-5, you-2)
+aux(told-5, have-3)
+auxpass(told-5, been-4)
+csubj(irrelevant-11, told-5)
+advmod(told-5, already-6)
+dobj(says-9, what-7)
+nsubj(says-9, Phil-8)
+ccomp(told-5, says-9)
+cop(irrelevant-11, is-10)
+root(ROOT-0, irrelevant-11)
+prep_to(irrelevant-11, ID-13)
+
+(ROOT
+  (S (CC Or)
+    (NP (PRP you))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB allow)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (NNP Dawkins))
+                (VP (VBZ says)
+                  (PP (IN about)
+                    (NP
+                      (NP (DT the) (NN theory))
+                      (PP (IN of)
+                        (NP (NN evolution))))))))))))
+    (. .)))
+
+cc(have-3, Or-1)
+nsubj(have-3, you-2)
+xsubj(allow-5, you-2)
+root(ROOT-0, have-3)
+aux(allow-5, to-4)
+xcomp(have-3, allow-5)
+dobj(says-8, what-6)
+nsubj(says-8, Dawkins-7)
+ccomp(allow-5, says-8)
+det(theory-11, the-10)
+prep_about(says-8, theory-11)
+prep_of(theory-11, evolution-13)
+

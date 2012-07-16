@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP
+            (NP (DT a)
+              (ADJP (JJ neutral))
+              (NN trait))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP
+                  (QP (CD i.e.) (CD one)))
+                (PP (IN with)
+                  (NP
+                    (NP (DT no) (JJ demonstrable) (NN effect))
+                    (PP (IN upon)
+                      (NP (JJ evolutionary) (NN fitness))))))
+              (-RRB- -RRB-))))))
+    (NP
+      (NP (RB then) (DT the) (NN frequency))
+      (PP (IN of)
+        (NP
+          (NP (NNS alleles))
+          (PP (IN in)
+            (NP (DT a) (NN population))))))
+    (VP (MD will)
+      (VP (VB fluctuate)
+        (PP (IN in)
+          (NP (DT a) (JJ random) (NN manner)))))
+    (. .)))
+
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl(fluctuate-27, have-3)
+det(trait-6, a-4)
+amod(trait-6, neutral-5)
+dobj(have-3, trait-6)
+number(one-9, i.e.-8)
+dep(trait-6, one-9)
+det(effect-13, no-11)
+amod(effect-13, demonstrable-12)
+prep_with(one-9, effect-13)
+amod(fitness-16, evolutionary-15)
+prep_upon(effect-13, fitness-16)
+advmod(frequency-20, then-18)
+det(frequency-20, the-19)
+nsubj(fluctuate-27, frequency-20)
+prep_of(frequency-20, alleles-22)
+det(population-25, a-24)
+prep_in(alleles-22, population-25)
+aux(fluctuate-27, will-26)
+root(ROOT-0, fluctuate-27)
+det(manner-31, a-29)
+amod(manner-31, random-30)
+prep_in(fluctuate-27, manner-31)
+

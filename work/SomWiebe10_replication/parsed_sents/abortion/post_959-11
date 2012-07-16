@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ fifty) (NNS years)))
+    (NP (NN will) (NNS Americans))
+    (VP (VBP have)
+      (NP
+        (NP (JJ collective) (NN shame))
+        (SBAR (IN because)
+          (S
+            (NP (RB so) (JJ many) (NNS abortions))
+            (VP (VBD were)
+              (VP (VBN performed)))))))
+    (. ?)))
+
+amod(years-3, fifty-2)
+prep_in(have-6, years-3)
+nn(Americans-5, will-4)
+nsubj(have-6, Americans-5)
+root(ROOT-0, have-6)
+amod(shame-8, collective-7)
+dobj(have-6, shame-8)
+mark(performed-14, because-9)
+advmod(abortions-12, so-10)
+amod(abortions-12, many-11)
+nsubjpass(performed-14, abortions-12)
+auxpass(performed-14, were-13)
+dep(shame-8, performed-14)
+

@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN argument))
+      (VP (VBZ states)
+        (SBAR (IN that)
+          (S
+            (NP (DT an) (NN embryo))
+            (VP (VBZ is) (RB not)
+              (NP
+                (NP (DT a) (NN human))
+                (PRN (-LRB- -LRB-)
+                  (NP (NN person))
+                  (-RRB- -RRB-))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (ADVP (RB also))
+      (VP (VBZ implies)
+        (SBAR (IN that)
+          (S
+            (NP (DT a) (NN fetus))
+            (VP (VBZ is))))))
+    (. .)))
+
+det(argument-2, The-1)
+nsubj(states-3, argument-2)
+root(ROOT-0, states-3)
+complm(human-10, that-4)
+det(embryo-6, an-5)
+nsubj(human-10, embryo-6)
+cop(human-10, is-7)
+neg(human-10, not-8)
+det(human-10, a-9)
+ccomp(states-3, human-10)
+appos(human-10, person-12)
+nsubj(implies-18, it-16)
+advmod(implies-18, also-17)
+conj_but(states-3, implies-18)
+complm(is-22, that-19)
+det(fetus-21, a-20)
+nsubj(is-22, fetus-21)
+ccomp(implies-18, is-22)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Everyone) (NN being))
+      (PP (IN on)
+        (NP (DT the) (`` ``) (JJ same) (NN page) ('' ''))))
+    (VP (VBZ proves)
+      (NP (NN nothing))
+      (PP (IN beyond)
+        (NP
+          (NP (NN agreement))
+          (PP (IN of)
+            (NP (NN opinion))))))
+    (. .)))
+
+nn(being-2, Everyone-1)
+nsubj(proves-9, being-2)
+det(page-7, the-4)
+amod(page-7, same-6)
+prep_on(being-2, page-7)
+root(ROOT-0, proves-9)
+dobj(proves-9, nothing-10)
+prep_beyond(proves-9, agreement-12)
+prep_of(agreement-12, opinion-14)
+

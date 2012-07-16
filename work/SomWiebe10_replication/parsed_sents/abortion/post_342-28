@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (ADVP (RB Again))
+    (, ,)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP (DT that) (NN woman))
+        (VP (VBZ decides)
+          (S
+            (VP (TO to)
+              (VP (VB do)))))))
+    (VP (VBZ is)
+      (NP (PRP$ her) (NN decision))
+      (: ...)
+      (ADVP (RB regardless)
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN outcome))
+            (: ...)
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (NP (PRP$ her) (NN body)))))))))
+    (. .)))
+
+advmod(decision-11, Again-1)
+dep(decides-6, what-3)
+det(woman-5, that-4)
+nsubj(decides-6, woman-5)
+xsubj(do-8, woman-5)
+csubj(decision-11, decides-6)
+aux(do-8, to-7)
+xcomp(decides-6, do-8)
+cop(decision-11, is-9)
+poss(decision-11, her-10)
+root(ROOT-0, decision-11)
+det(outcome-16, the-15)
+prep_regardless_of(decision-11, outcome-16)
+mark(body-22, because-18)
+nsubj(body-22, it-19)
+cop(body-22, is-20)
+poss(body-22, her-21)
+dep(outcome-16, body-22)
+

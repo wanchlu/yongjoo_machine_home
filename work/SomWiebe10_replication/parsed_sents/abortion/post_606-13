@@ -1,0 +1,43 @@
+(ROOT
+  (NP
+    (NP
+      (PRN (-LRB- -LRB-)
+        (NP (DT The) (NNP Alan) (NNP Guttmacher) (NNP Institute))
+        (-RRB- -RRB-))
+      (NNP Your) (NNP stats))
+    (: :)
+    (NP
+      (NP
+        (ADJP (CD 0.4) (NN %))
+        (NNS CHANCES))
+      (SBAR
+        (S
+          (VP (TO to)
+            (VP (VB die)
+              (PP (IN during)
+                (NP
+                  (NP (NN chilbirth))
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (NP (CD 0.28))
+                      (PP (IN in)
+                        (NP (VBN developed) (NNS nations))))
+                    (-RRB- -RRB-)))))))))
+    (. .)))
+
+det(Institute-5, The-2)
+nn(Institute-5, Alan-3)
+nn(Institute-5, Guttmacher-4)
+appos(stats-8, Institute-5)
+nn(stats-8, Your-7)
+root(ROOT-0, stats-8)
+number(%-11, 0.4-10)
+amod(CHANCES-12, %-11)
+dep(stats-8, CHANCES-12)
+aux(die-14, to-13)
+infmod(CHANCES-12, die-14)
+prep_during(die-14, chilbirth-16)
+dep(chilbirth-16, 0.28-18)
+amod(nations-21, developed-20)
+prep_in(0.28-18, nations-21)
+

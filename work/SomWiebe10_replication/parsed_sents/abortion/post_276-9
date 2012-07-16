@@ -1,0 +1,30 @@
+(ROOT
+  (S
+    (NP (NNP Abortion))
+    (VP (VBZ is)
+      (UCP
+        (ADJP (JJ unethical))
+        (CC and)
+        (NP
+          (NP (DT those))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP perform)
+                (SBAR
+                  (S
+                    (NP (PRP them))
+                    (VP (VBP are)
+                      (NP (NNS murderers)))))))))))
+    (. .)))
+
+nsubj(unethical-3, Abortion-1)
+cop(unethical-3, is-2)
+root(ROOT-0, unethical-3)
+conj_and(unethical-3, those-5)
+nsubj(perform-7, those-5)
+rcmod(those-5, perform-7)
+nsubj(murderers-10, them-8)
+cop(murderers-10, are-9)
+ccomp(perform-7, murderers-10)
+

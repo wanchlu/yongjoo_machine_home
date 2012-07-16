@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN probability))
+      (PP (IN of)
+        (NP (PDT such) (DT an) (NN event))))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN increased)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NNP A)
+                (CC or)
+                (NNP B))
+              (VP (VBZ has)
+                (VP (VBN come)
+                  (PP (TO to)
+                    (NP
+                      (NP (NN fixation) (NN piggy) (NN backing))
+                      (PP (IN on)
+                        (NP (DT another) (JJ selective) (NN event))))))))))))
+    (. .)))
+
+det(probability-2, The-1)
+nsubjpass(increased-9, probability-2)
+predet(event-6, such-4)
+det(event-6, an-5)
+prep_of(probability-2, event-6)
+aux(increased-9, can-7)
+auxpass(increased-9, be-8)
+root(ROOT-0, increased-9)
+advmod(come-15, when-10)
+nsubj(come-15, A-11)
+conj_or(A-11, B-13)
+nsubj(come-15, B-13)
+aux(come-15, has-14)
+advcl(increased-9, come-15)
+nn(backing-19, fixation-17)
+nn(backing-19, piggy-18)
+prep_to(come-15, backing-19)
+det(event-23, another-21)
+amod(event-23, selective-22)
+prep_on(backing-19, event-23)
+

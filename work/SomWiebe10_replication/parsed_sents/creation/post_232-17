@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (JJ Well-known) (NNS examples))
+    (VP (VBP include)
+      (NP
+        (NP
+          (NP (NN nylon))
+          (, ,)
+          (NP (NNP PCP)))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (NN pentachlorophenol))
+            (, ,)
+            (NP
+              (NP (DT a) (NN preservative))
+              (PP (IN of)
+                (NP (VBN e.g.) (NN wood)))))
+          (-RRB- -RRB-))
+        (, ,)
+        (CC and)
+        (NP
+          (NP (CD 2,4-DNT))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (NN dinitrotoluene))
+              (, ,)
+              (NP
+                (NP
+                  (NP (DT a) (NN breakdown) (NN product))
+                  (PP (IN of)
+                    (NP (DT the) (JJ explosive) (NNP TNT))))
+                (, ,)
+                (CC or)
+                (NP
+                  (NP (NN trinitrotoluene))
+                  (, ,)
+                  (SBAR
+                    (WHNP (WDT which))
+                    (S
+                      (VP (VBZ is)
+                        (ADVP (RB often))
+                        (NP
+                          (NP (DT a) (NN soil) (NN pollutant))
+                          (PP (IN on)
+                            (NP (JJ military) (NNS bases))))))))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+amod(examples-2, Well-known-1)
+nsubj(include-3, examples-2)
+root(ROOT-0, include-3)
+dobj(include-3, nylon-4)
+appos(nylon-4, PCP-6)
+dep(nylon-4, pentachlorophenol-8)
+det(preservative-11, a-10)
+appos(pentachlorophenol-8, preservative-11)
+amod(wood-14, e.g.-13)
+prep_of(preservative-11, wood-14)
+dobj(include-3, 2,4-DNT-18)
+conj_and(nylon-4, 2,4-DNT-18)
+dep(2,4-DNT-18, dinitrotoluene-20)
+det(product-24, a-22)
+nn(product-24, breakdown-23)
+appos(dinitrotoluene-20, product-24)
+det(TNT-28, the-26)
+amod(TNT-28, explosive-27)
+prep_of(product-24, TNT-28)
+appos(dinitrotoluene-20, trinitrotoluene-31)
+conj_or(product-24, trinitrotoluene-31)
+nsubj(pollutant-38, trinitrotoluene-31)
+cop(pollutant-38, is-34)
+advmod(pollutant-38, often-35)
+det(pollutant-38, a-36)
+nn(pollutant-38, soil-37)
+rcmod(trinitrotoluene-31, pollutant-38)
+amod(bases-41, military-40)
+prep_on(pollutant-38, bases-41)
+

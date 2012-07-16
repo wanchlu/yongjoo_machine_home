@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (NNP ID))
+    (VP (VBZ works)
+      (PP (IN from)
+        (NP (DT the) (NN presupposition)))
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP
+              (NP (DT an) (NN intelligence))
+              (PP (IN out)
+                (NP (RB there)))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD created)
+                    (NP (PRP$ our) (NN world)
+                      (CC and)
+                      (NN situation))))))))))
+    (. .)))
+
+nsubj(works-2, ID-1)
+root(ROOT-0, works-2)
+det(presupposition-5, the-4)
+prep_from(works-2, presupposition-5)
+complm(is-8, that-6)
+expl(is-8, there-7)
+ccomp(works-2, is-8)
+det(intelligence-10, an-9)
+nsubj(is-8, intelligence-10)
+nsubj(created-14, intelligence-10)
+prep(intelligence-10, out-11)
+pobj(out-11, there-12)
+rcmod(intelligence-10, created-14)
+poss(world-16, our-15)
+dobj(created-14, world-16)
+dobj(created-14, situation-18)
+conj_and(world-16, situation-18)
+

@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN nothing))
+        (VP (VBZ happens)
+          (PP (TO to)
+            (NP
+              (NP (PRP him))
+              (CC or)
+              (NP (PRP her))))
+          (, ,)
+          (PP (IN in)
+            (NP (CD nine) (NNS months))))))
+    (NP (PRP they))
+    (VP (MD will)
+      (VP (VB be)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (NN anyone))
+            (VP (MD would)
+              (VP (VB consider)
+                (NP (DT a) (NN person))))))))
+    (. .)))
+
+mark(happens-3, If-1)
+nsubj(happens-3, nothing-2)
+advcl(be-14, happens-3)
+prep_to(happens-3, him-5)
+prep_to(happens-3, her-7)
+conj_or(him-5, her-7)
+num(months-11, nine-10)
+prep_in(happens-3, months-11)
+nsubj(be-14, they-12)
+aux(be-14, will-13)
+root(ROOT-0, be-14)
+dobj(consider-18, what-15)
+nsubj(consider-18, anyone-16)
+aux(consider-18, would-17)
+ccomp(be-14, consider-18)
+det(person-20, a-19)
+dobj(consider-18, person-20)
+

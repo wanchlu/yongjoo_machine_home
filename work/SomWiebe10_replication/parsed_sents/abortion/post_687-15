@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP accept)
+          (SBAR (IN that)
+            (S
+              (NP (EX there))
+              (VP (VBZ is)
+                (NP
+                  (NP (DT a) (JJ human) (NN life))
+                  (VP (VBN involved)
+                    (ADJP (JJ other))
+                    (PP (IN than)
+                      (NP
+                        (NP (DT that))
+                        (PP (IN of)
+                          (NP (DT the) (NN mother)))))))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP you))
+    (VP (VBP accept)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (VP (VBG dealing)
+              (PP (IN with)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (VP (TO to)
+                      (VP (VB ascribe)
+                        (NP (NNS rights))))))))))))
+    (. .)))
+
+mark(accept-3, If-1)
+nsubj(accept-3, you-2)
+advcl(accept-20, accept-3)
+complm(is-6, that-4)
+expl(is-6, there-5)
+ccomp(accept-3, is-6)
+det(life-9, a-7)
+amod(life-9, human-8)
+nsubj(is-6, life-9)
+partmod(life-9, involved-10)
+acomp(involved-10, other-11)
+prep_than(involved-10, that-13)
+det(mother-16, the-15)
+prep_of(that-13, mother-16)
+advmod(accept-20, then-18)
+nsubj(accept-20, you-19)
+root(ROOT-0, accept-20)
+complm(dealing-24, that-21)
+nsubj(dealing-24, you-22)
+aux(dealing-24, are-23)
+ccomp(accept-20, dealing-24)
+advmod(ascribe-28, how-26)
+aux(ascribe-28, to-27)
+prepc_with(dealing-24, ascribe-28)
+dobj(ascribe-28, rights-29)
+

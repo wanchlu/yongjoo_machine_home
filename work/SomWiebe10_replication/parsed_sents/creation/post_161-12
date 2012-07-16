@@ -1,0 +1,51 @@
+(ROOT
+  (S ('' '')
+    (NP (NNP Scientists) (NNP employing) (NNP ID))
+    (VP (VBP compare)
+      (NP
+        (NP (NNS observations))
+        (PP (IN of)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (JJ intelligent) (NNS agents))
+              (VP (VBP act)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP they))
+                    (VP (VB design)
+                      (NP (NNS things))
+                      (PP (TO to)
+                        (NP
+                          (NP (NNS observations))
+                          (PP (IN of)
+                            (NP
+                              (NP (NNS phenomena))
+                              (SBAR
+                                (WHNP (WP$ whose) (NNS origin))
+                                (S
+                                  (VP (VBZ is)
+                                    (ADJP (JJ unknown))))))))))))))))))
+    (. .)))
+
+nn(ID-4, Scientists-2)
+nn(ID-4, employing-3)
+nsubj(compare-5, ID-4)
+root(ROOT-0, compare-5)
+dobj(compare-5, observations-6)
+advmod(act-11, how-8)
+amod(agents-10, intelligent-9)
+nsubj(act-11, agents-10)
+prepc_of(observations-6, act-11)
+advmod(design-14, when-12)
+nsubj(design-14, they-13)
+advcl(act-11, design-14)
+dobj(design-14, things-15)
+prep_to(design-14, observations-17)
+prep_of(observations-17, phenomena-19)
+poss(origin-21, phenomena-19)
+nsubj(unknown-23, origin-21)
+cop(unknown-23, is-22)
+rcmod(phenomena-19, unknown-23)
+

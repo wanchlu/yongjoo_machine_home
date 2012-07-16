@@ -1,0 +1,24 @@
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (: ...)
+    (NP
+      (NP (DT those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP perform)
+            (SBAR
+              (S
+                (NP (PRP them))
+                (VP (VBP are)
+                  (NP (NNS murderers)))))))))
+    (. .)))
+
+dep(''-1, those-3)
+nsubj(perform-5, those-3)
+rcmod(those-3, perform-5)
+nsubj(murderers-8, them-6)
+cop(murderers-8, are-7)
+ccomp(perform-5, murderers-8)
+

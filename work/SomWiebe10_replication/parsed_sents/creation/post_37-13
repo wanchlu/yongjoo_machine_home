@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words) (, ,) (NN complexity)
+        (CC or)
+        (NN information)))
+    (, ,)
+    (NP
+      (NP (CD two) (NNS terms))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBP are)
+            (VP (VBN used)
+              (ADVP (RB interchangeably))
+              (PP (IN by)
+                (NP (NNP ID))))))))
+    (VP (VBZ disappears)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP one))
+          (VP (MD can)
+            (VP (VB explain)
+              (NP (DT the) (NN system)))))))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(disappears-17, words-3)
+conj_or(words-3, complexity-5)
+prep_in(disappears-17, complexity-5)
+conj_or(words-3, information-7)
+prep_in(disappears-17, information-7)
+num(terms-10, two-9)
+nsubjpass(used-13, terms-10)
+nsubj(disappears-17, terms-10)
+auxpass(used-13, are-12)
+rcmod(terms-10, used-13)
+advmod(used-13, interchangeably-14)
+agent(used-13, ID-16)
+root(ROOT-0, disappears-17)
+advmod(explain-21, when-18)
+nsubj(explain-21, one-19)
+aux(explain-21, can-20)
+advcl(disappears-17, explain-21)
+det(system-23, the-22)
+dobj(explain-21, system-23)
+

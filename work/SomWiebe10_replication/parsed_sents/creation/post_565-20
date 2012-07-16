@@ -1,0 +1,50 @@
+(ROOT
+  (S ('' '')
+    (NP (NNP LivvyExcept))
+    (VP
+      (ADVP (IN that) (DT that))
+      (VBZ puts)
+      (PP (IN for)
+        (NP (DT the) (NN idea)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (NP
+              (NP (DT a) (JJ single) (NN moment))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VB transform)
+                    (NP
+                      (NP (DT a)
+                        (ADJP (JJ lifeless))
+                        (NN puddle))
+                      (PP (IN of)
+                        (NP (NN goop))))
+                    (PP (IN into)
+                      (NP (DT the) (JJ first) (NN life)))))))))))
+    (. .)))
+
+nsubj(puts-5, LivvyExcept-2)
+advmod(puts-5, that-3)
+dep(that-3, that-4)
+root(ROOT-0, puts-5)
+det(idea-8, the-7)
+prep_for(puts-5, idea-8)
+complm(moment-14, that-9)
+nsubj(moment-14, it-10)
+cop(moment-14, was-11)
+det(moment-14, a-12)
+amod(moment-14, single-13)
+ccomp(puts-5, moment-14)
+nsubj(transform-16, moment-14)
+rcmod(moment-14, transform-16)
+det(puddle-19, a-17)
+amod(puddle-19, lifeless-18)
+dobj(transform-16, puddle-19)
+prep_of(puddle-19, goop-21)
+det(life-25, the-23)
+amod(life-25, first-24)
+prep_into(transform-16, life-25)
+

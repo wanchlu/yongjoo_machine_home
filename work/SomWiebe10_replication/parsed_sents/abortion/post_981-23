@@ -1,0 +1,39 @@
+(ROOT
+  (SBARQ
+    (SBAR
+      (X
+        (X (SYM Matthew))
+        (NP (CD 19:17)))
+      (S
+        (ADVP
+          (NP (CD -19) (CD 17))
+          (IN So))
+        (NP (PRP He))
+        (VP (VBD said)
+          (PP (TO to)
+            (NP (PRP him))))))
+    (, ,)
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB call)
+        (S
+          (NP (PRP Me))
+          (ADJP (JJ good)))))
+    (. ?)))
+
+dep(19:17-2, Matthew-1)
+dep(said-7, 19:17-2)
+num(17-4, -19-3)
+npadvmod(So-5, 17-4)
+advmod(said-7, So-5)
+nsubj(said-7, He-6)
+dep(call-14, said-7)
+prep_to(said-7, him-9)
+advmod(call-14, Why-11)
+aux(call-14, do-12)
+nsubj(call-14, you-13)
+root(ROOT-0, call-14)
+nsubj(good-16, Me-15)
+xcomp(call-14, good-16)
+

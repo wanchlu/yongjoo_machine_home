@@ -1,0 +1,60 @@
+(ROOT
+  (UCP
+    (SBAR (IN If)
+      (S
+        (NP (NN someone))
+        (VP (VBD wanted)
+          (S
+            (VP (TO to)
+              (VP (VB attach)
+                (NP (PRP themselves))
+                (PP (TO to)
+                  (NP
+                    (NP (PRP you))
+                    (PP (IN for)
+                      (NP (CD nine) (NNS months)))))
+                (SBAR (IN in) (NN order)
+                  (S
+                    (VP (TO to)
+                      (VP (VB live))))))))
+          (, ,)
+          (S
+            (NP (PRP you))
+            (VP (VB have)
+              (S
+                (NP (DT every) (NN right)
+                  (S
+                    (VP (TO to)
+                      (VP (VB say))))))
+              ('' '')
+              (S
+                (VP (VB Thank)
+                  (NP (PRP you)))))))))
+    (, ,)
+    (CC but)
+    (ADVP (RB no.))))
+
+mark(wanted-3, If-1)
+nsubj(wanted-3, someone-2)
+xsubj(attach-5, someone-2)
+root(ROOT-0, wanted-3)
+aux(attach-5, to-4)
+xcomp(wanted-3, attach-5)
+dobj(attach-5, themselves-6)
+prep_to(attach-5, you-8)
+num(months-11, nine-10)
+prep_for(you-8, months-11)
+mark(live-15, in-12)
+dep(live-15, order-13)
+aux(live-15, to-14)
+purpcl(attach-5, live-15)
+nsubj(have-18, you-17)
+ccomp(wanted-3, have-18)
+det(right-20, every-19)
+dep(have-18, right-20)
+aux(say-22, to-21)
+infmod(right-20, say-22)
+ccomp(have-18, Thank-24)
+dobj(Thank-24, you-25)
+conj_but(wanted-3, no.-28)
+

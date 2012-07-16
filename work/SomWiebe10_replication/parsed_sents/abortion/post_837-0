@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB carry)
+          (NP (DT the) (JJ old) (NN man))
+          (SBAR (IN while)
+            (S
+              (NP (DT the) (JJ old) (NN man))
+              (VP (VBZ carries)
+                (NP (DT the) (NN baby))))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD 'll)
+        (VP (VB die)
+          (S
+            (VP (VBG trying)
+              (S
+                (VP (VBG saving)
+                  (NP (PRP them))
+                  (NP (DT both)))))))))
+    (. .)))
+
+nsubj(carry-3, I-1)
+aux(carry-3, would-2)
+root(ROOT-0, carry-3)
+det(man-6, the-4)
+amod(man-6, old-5)
+dobj(carry-3, man-6)
+mark(carries-11, while-7)
+det(man-10, the-8)
+amod(man-10, old-9)
+nsubj(carries-11, man-10)
+advcl(carry-3, carries-11)
+det(baby-13, the-12)
+dobj(carries-11, baby-13)
+nsubj(die-17, I-15)
+aux(die-17, 'll-16)
+conj_and(carry-3, die-17)
+xcomp(die-17, trying-18)
+xcomp(trying-18, saving-19)
+iobj(saving-19, them-20)
+dobj(saving-19, both-21)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN essence))
+      (PP (IN of)
+        (NP (NN life))))
+    (VP (VBZ is) (RB not)
+      (PP (IN in)
+        (NP
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ gets)
+                (S
+                  (VP (TO to)
+                    (VP (VB live)))))))
+          (CC or)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ gets)
+                (S
+                  (VP (TO to)
+                    (VP (VB die)
+                      (PP (CC but)
+                        (NP
+                          (NP (DT the) (NN worth))
+                          (PP (IN of)
+                            (NP
+                              (NP (DT each) (NN life))
+                              (CC both)
+                              (NP (JJR older)
+                                (CC and)
+                                (JJR younger)))))))))))))))
+    (. .)))
+
+det(essence-2, the-1)
+nsubj(is-5, essence-2)
+prep_of(essence-2, life-4)
+root(ROOT-0, is-5)
+neg(is-5, not-6)
+nsubj(gets-9, who-8)
+prep_in(is-5, gets-9)
+aux(live-11, to-10)
+xcomp(gets-9, live-11)
+nsubj(gets-14, who-13)
+prep_in(is-5, gets-14)
+conj_or(gets-9, gets-14)
+aux(die-16, to-15)
+xcomp(gets-14, die-16)
+prep(die-16, but-17)
+det(worth-19, the-18)
+dep(but-17, worth-19)
+det(life-22, each-21)
+prep_of(worth-19, life-22)
+preconj(life-22, both-23)
+conj(life-22, older-24)
+conj(life-22, younger-26)
+conj_and(older-24, younger-26)
+

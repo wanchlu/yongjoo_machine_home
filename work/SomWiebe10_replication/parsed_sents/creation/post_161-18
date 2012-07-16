@@ -1,0 +1,47 @@
+(ROOT
+  (S ('' '')
+    (NP (`` ``) (NN Mathematician)
+      (CC and)
+      (NNS philosopher) (NNP William) (NNP Dembski))
+    (VP (VBZ observes)
+      (SBAR
+        (SBAR (IN that) (`` ``)
+          (S
+            (NP
+              (NP (DT the) (JJ principal) (NN characteristic))
+              (PP (IN of)
+                (NP (JJ intelligent) (NN agency))))
+            (VP (VBZ is)
+              (VP (VBN directed)
+                (NP (NN contingency))))))
+        (, ,)
+        (CC or)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP we))
+            (VP (VBP call)
+              (NP (NN choice)))))))
+    (. .)))
+
+nsubj(observes-8, Mathematician-3)
+nn(Dembski-7, philosopher-5)
+nn(Dembski-7, William-6)
+conj_and(Mathematician-3, Dembski-7)
+nsubj(observes-8, Dembski-7)
+root(ROOT-0, observes-8)
+complm(directed-18, that-9)
+det(characteristic-13, the-11)
+amod(characteristic-13, principal-12)
+nsubjpass(directed-18, characteristic-13)
+amod(agency-16, intelligent-15)
+prep_of(characteristic-13, agency-16)
+auxpass(directed-18, is-17)
+ccomp(observes-8, directed-18)
+dobj(directed-18, contingency-19)
+dobj(call-24, what-22)
+nsubj(call-24, we-23)
+ccomp(observes-8, call-24)
+conj_or(directed-18, call-24)
+dobj(call-24, choice-25)
+

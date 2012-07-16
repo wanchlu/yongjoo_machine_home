@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Individual) (NNS cells))
+      (PP (IN in)
+        (NP (PRP$ our) (NN body))))
+    (VP (VBP do)
+      (VP (VB develop)
+        (PP (IN into)
+          (NP (NN something) (RB else)))))
+    (. .)))
+
+amod(cells-2, Individual-1)
+nsubj(develop-7, cells-2)
+poss(body-5, our-4)
+prep_in(cells-2, body-5)
+aux(develop-7, do-6)
+root(ROOT-0, develop-7)
+prep_into(develop-7, something-9)
+advmod(something-9, else-10)
+
+(ROOT
+  (S
+    (S
+      (NP (DT Some))
+      (VP (VBP develop)
+        (PP (IN into)
+          (NP (NN cancer)))))
+    (, ,)
+    (NP (DT some))
+    (VP (VBP develop)
+      (PP (IN into)
+        (NP
+          (NP (NN hair))
+          (, ,)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is)
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP know)
+                      (ADJP (`` ``) (JJ dead) ('' '')))))))))))
+    (. .)))
+
+nsubj(develop-2, Some-1)
+ccomp(develop-7, develop-2)
+prep_into(develop-2, cancer-4)
+nsubj(develop-7, some-6)
+root(ROOT-0, develop-7)
+prep_into(develop-7, hair-9)
+nsubj(is-12, hair-9)
+rcmod(hair-9, is-12)
+mark(know-15, as-13)
+nsubj(know-15, we-14)
+advcl(is-12, know-15)
+acomp(know-15, dead-17)
+
+(ROOT
+  (SBARQ
+    (SBARQ
+      (S
+        (S
+          (NP
+            (NP (DT Some))
+            (PP (IN of)
+              (NP (PRP$ our) (NNS cells))))
+          (VP (VBP attack)
+            (NP (JJ foreign) (NNS bodies))))
+        (, ,)
+        (CC so)
+        (S
+          (NP (PRP one))
+          (VP (MD could)
+            (VP (VB wonder)))))
+      (, ,)
+      (WHNP (WP what))
+      (SQ
+        (VP (VBZ is)
+          (NP (NN consciousness)))))
+    (CC and)
+    (SBARQ
+      (WHADVP (WRB where))
+      (SQ (VBZ does)
+        (NP (PRP it))
+        (VP (VB begin)))
+      (. ?))))
+
+nsubj(attack-5, Some-1)
+poss(cells-4, our-3)
+prep_of(Some-1, cells-4)
+dep(consciousness-16, attack-5)
+amod(bodies-7, foreign-6)
+dobj(attack-5, bodies-7)
+nsubj(wonder-12, one-10)
+aux(wonder-12, could-11)
+conj_so(attack-5, wonder-12)
+dep(consciousness-16, wonder-12)
+dobj(consciousness-16, what-14)
+nsubj(consciousness-16, what-14)
+cop(consciousness-16, is-15)
+root(ROOT-0, consciousness-16)
+advmod(begin-21, where-18)
+aux(begin-21, does-19)
+nsubj(begin-21, it-20)
+conj_and(consciousness-16, begin-21)
+

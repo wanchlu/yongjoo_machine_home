@@ -1,0 +1,62 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Personhood))
+    ('' '')
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN quality))
+        (SBAR
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (ADVP (RB supposedly))
+              (VP (VBZ is)
+                (ADJP (JJ present)
+                  (PP (IN in)
+                    (NP (JJS most) (NNS humans))))
+                (PP (IN after)
+                  (NP (NN birth))))))
+          (CC but)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is)
+                (ADVP (RB never))
+                (ADJP (JJ present)
+                  (PP (IN at)
+                    (NP (JJ certain) (NNS points))))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (DT the) (NN life))
+                    (VP (VBZ is)
+                      (ADVP (RB still))
+                      (PP (IN in)
+                        (NP (NN utero))))))))))))
+    (. .)))
+
+nsubj(quality-6, Personhood-2)
+cop(quality-6, is-4)
+det(quality-6, a-5)
+root(ROOT-0, quality-6)
+nsubj(present-10, quality-6)
+nsubj(present-20, quality-6)
+advmod(present-10, supposedly-8)
+cop(present-10, is-9)
+rcmod(quality-6, present-10)
+amod(humans-13, most-12)
+prep_in(present-10, humans-13)
+prep_after(present-10, birth-15)
+cop(present-20, is-18)
+neg(present-20, never-19)
+rcmod(quality-6, present-20)
+conj_but(present-10, present-20)
+amod(points-23, certain-22)
+prep_at(present-20, points-23)
+advmod(is-27, when-24)
+det(life-26, the-25)
+nsubj(is-27, life-26)
+advcl(present-20, is-27)
+advmod(is-27, still-28)
+prep_in(is-27, utero-30)
+

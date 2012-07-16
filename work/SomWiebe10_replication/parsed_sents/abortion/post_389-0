@@ -1,0 +1,35 @@
+(ROOT
+  (FRAG
+    (NP (NNP Dear) (NNP Pepper))
+    (: :)
+    (S
+      (NP (PRP You))
+      (VP (VBD asked) (: :) (`` ``)
+        (SBARQ
+          (WHNP (WDT What) (NN evidence))
+          (SQ (VBP do)
+            (NP (PRP you))
+            (VP (VB have)
+              (SBAR (IN that)
+                (S
+                  (NP (DT a) (NN fetus))
+                  (VP (MD can) (RB not)
+                    (VP (VB think)))))))
+          (. ?))))))
+
+nn(Pepper-2, Dear-1)
+root(ROOT-0, Pepper-2)
+nsubj(asked-5, You-4)
+dep(Pepper-2, asked-5)
+det(evidence-9, What-8)
+dobj(have-12, evidence-9)
+aux(have-12, do-10)
+nsubj(have-12, you-11)
+dep(asked-5, have-12)
+complm(think-18, that-13)
+det(fetus-15, a-14)
+nsubj(think-18, fetus-15)
+aux(think-18, can-16)
+neg(think-18, not-17)
+ccomp(have-12, think-18)
+

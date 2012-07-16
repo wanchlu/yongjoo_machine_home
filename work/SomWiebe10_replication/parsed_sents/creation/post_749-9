@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP say)
+        (SBAR (IN that)
+          (S
+            (NP (NNP God))
+            (VP (VBD knew)
+              (SBAR (IN that)
+                (S
+                  (NP (NN mankind))
+                  (VP (MD would)
+                    (VP (VB fall))))))))))
+    (: ...)
+    (SQ (VBP do)
+      (NP (PRP you))
+      (ADVP (RB also))
+      (VP (VB believe)
+        (SBAR (IN that)
+          (S
+            (NP (NNS people))
+            (VP (VBP suffer)
+              (PP (IN for)
+                (NP
+                  (NP (NN eternity))
+                  (PP (IN in)
+                    (NP (NNP Hell)))))
+              (PP (IN for)
+                (NP (DT that) (NN fall))))))))
+    (. ?)))
+
+nsubj(say-2, You-1)
+root(ROOT-0, say-2)
+complm(knew-5, that-3)
+nsubj(knew-5, God-4)
+ccomp(say-2, knew-5)
+complm(fall-9, that-6)
+nsubj(fall-9, mankind-7)
+aux(fall-9, would-8)
+ccomp(knew-5, fall-9)
+aux(believe-14, do-11)
+nsubj(believe-14, you-12)
+advmod(believe-14, also-13)
+parataxis(say-2, believe-14)
+complm(suffer-17, that-15)
+nsubj(suffer-17, people-16)
+ccomp(believe-14, suffer-17)
+prep_for(suffer-17, eternity-19)
+prep_in(eternity-19, Hell-21)
+det(fall-24, that-23)
+prep_for(suffer-17, fall-24)
+
