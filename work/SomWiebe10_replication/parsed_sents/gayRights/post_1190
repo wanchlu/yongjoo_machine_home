@@ -1,0 +1,136 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP First))
+      (PP (IN of)
+        (NP
+          (NP (DT all))
+          (, ,)
+          (NP (NNPS Muslims))
+          (CC and)
+          (NP
+            (NP (JJ other) (JJ religious) (NNS practitioners))
+            (PP (RB not) (IN of)
+              (NP (DT the) (JJ Judeo-Christian) (NN persuasion)))))))
+    (VP
+      (VP (VBP have))
+      (CC and)
+      (VP (VBP do)
+        (VP (VB allow)
+          (NP (JJ muliple) (NNS marriages)))))
+    (. .)))
+
+nsubj(have-15, First-1)
+nsubj(allow-18, First-1)
+prep_of(First-1, all-3)
+prep_of(First-1, Muslims-5)
+conj_and(all-3, Muslims-5)
+amod(practitioners-9, other-7)
+amod(practitioners-9, religious-8)
+prep_of(First-1, practitioners-9)
+conj_and(all-3, practitioners-9)
+neg(practitioners-9, not-10)
+det(persuasion-14, the-12)
+amod(persuasion-14, Judeo-Christian-13)
+prep_of(practitioners-9, persuasion-14)
+root(ROOT-0, have-15)
+aux(allow-18, do-17)
+conj_and(have-15, allow-18)
+amod(marriages-20, muliple-19)
+dobj(allow-18, marriages-20)
+
+(ROOT
+  (S
+    (ADVP (RB Secondly))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (S
+          (VP (VBG being)
+            (VP (VBN allowed)
+              (S
+                (VP (TO to)
+                  (VP (VB marry)))))))
+        (VP (VBZ is) (RB not)
+          (NP (DT a) (JJ civil) (NN right)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (S
+          (NP (WDT what))
+          (NP (PRP it)))))
+    (. .)))
+
+advmod(know-17, Secondly-1)
+mark(right-12, if-3)
+auxpass(allowed-5, being-4)
+csubj(right-12, allowed-5)
+aux(marry-7, to-6)
+xcomp(allowed-5, marry-7)
+cop(right-12, is-8)
+neg(right-12, not-9)
+det(right-12, a-10)
+amod(right-12, civil-11)
+advcl(know-17, right-12)
+nsubj(know-17, I-14)
+aux(know-17, do-15)
+neg(know-17, n't-16)
+root(ROOT-0, know-17)
+nsubj(it-19, what-18)
+xcomp(know-17, it-19)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN As)
+      (FRAG
+        (PP (IN for)
+          (ADJP (JJ natural)))))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ
+      (VP (VB come)
+        (NP
+          (NP (JJ same) (JJ sexual) (NN mating) (NN behavior))
+          (SBAR
+            (S
+              (VP (VBZ exists)
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (JJ same) (NN proportion))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN mammal) (NN world))
+                        (PP (IN in)
+                          (NP (NN general)))))))
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ does)
+                      (PP (IN amongst)
+                        (NP (NN homo) (NNS sapiens)))))))))))
+      (. ?))))
+
+mark(for-2, As-1)
+advcl(come-6, for-2)
+pobj(for-2, natural-3)
+advmod(come-6, how-5)
+root(ROOT-0, come-6)
+amod(behavior-10, same-7)
+amod(behavior-10, sexual-8)
+nn(behavior-10, mating-9)
+dobj(come-6, behavior-10)
+rcmod(behavior-10, exists-11)
+det(proportion-15, the-13)
+amod(proportion-15, same-14)
+prep_in(exists-11, proportion-15)
+det(world-19, the-17)
+nn(world-19, mammal-18)
+prep_in(proportion-15, world-19)
+prep_in(world-19, general-21)
+mark(does-24, as-22)
+nsubj(does-24, it-23)
+advcl(exists-11, does-24)
+nn(sapiens-27, homo-26)
+prep_amongst(does-24, sapiens-27)
+

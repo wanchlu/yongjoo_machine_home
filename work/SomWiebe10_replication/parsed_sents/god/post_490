@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (NNP Xaeon) (NNP I))
+    (VP (VBD thought)
+      (SBAR
+        (S
+          (NP (NNP Vishnu))
+          (VP (VBD was)
+            (PP (IN of)
+              (NP (NNP Hinduism)))))))
+    (. ?)))
+
+nn(I-2, Xaeon-1)
+nsubj(thought-3, I-2)
+root(ROOT-0, thought-3)
+nsubj(was-5, Vishnu-4)
+ccomp(thought-3, was-5)
+prep_of(was-5, Hinduism-7)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB explain)
+      (PP (TO to)
+        (NP (PRP me)))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (NP (NNP Vishnu))
+          (VP (VBZ is)
+            (ADVP (RB then))))))
+    (. .)))
+
+dep(explain-2, Please-1)
+root(ROOT-0, explain-2)
+prep_to(explain-2, me-4)
+dobj(is-7, who-5)
+nsubj(is-7, Vishnu-6)
+ccomp(explain-2, is-7)
+advmod(is-7, then-8)
+

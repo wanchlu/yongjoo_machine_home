@@ -1,0 +1,39 @@
+(ROOT
+  (FRAG
+    (S
+      (S
+        (NP (DT This))
+        (VP (VBZ is)
+          (ADJP (JJ true))))
+      (, ,)
+      (CC but)
+      (S
+        (PP (IN in)
+          (NP (DT the) (NNP Bible)))
+        (NP (PRP it))
+        (VP (VBD was)
+          (VP (VBN stated)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (NNS hundreds))
+                  (PP (IN of)
+                    (NP (NNS people))))
+                (VP (VBD saw)
+                  (NP (DT this) (NN event)))))))))))
+
+nsubj(true-3, This-1)
+cop(true-3, is-2)
+root(ROOT-0, true-3)
+det(Bible-8, the-7)
+prep_in(stated-11, Bible-8)
+nsubjpass(stated-11, it-9)
+auxpass(stated-11, was-10)
+conj_but(true-3, stated-11)
+complm(saw-16, that-12)
+nsubj(saw-16, hundreds-13)
+prep_of(hundreds-13, people-15)
+ccomp(stated-11, saw-16)
+det(event-18, this-17)
+dobj(saw-16, event-18)
+

@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (PRP$ their))
+          (VP (VBZ 's)
+            (ADJP
+              (ADJP (NN nothing) (JJ wrong))
+              (PP (IN with)
+                (S
+                  (VP (VBG loving)
+                    (NP (DT another) (NN person))))))
+            (, ,)
+            (SBAR (RB even) (IN if)
+              (S
+                (NP (PRP it))
+                (VP (VBZ 's)
+                  (PP (IN with)
+                    (NP (DT the) (JJ same) (NN sex))))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+complm(wrong-7, that-3)
+nsubj(wrong-7, their-4)
+cop(wrong-7, 's-5)
+dep(wrong-7, nothing-6)
+ccomp(believe-2, wrong-7)
+prepc_with(wrong-7, loving-9)
+det(person-11, another-10)
+dobj(loving-9, person-11)
+advmod('s-16, even-13)
+dep('s-16, if-14)
+nsubj('s-16, it-15)
+ccomp(wrong-7, 's-16)
+det(sex-20, the-18)
+amod(sex-20, same-19)
+prep_with('s-16, sex-20)
+
+(ROOT
+  (NP
+    (NP
+      (NP (NNP and))
+      (PP (IN for)
+        (NP
+          (NP (DT those))
+          (PP (IN of)
+            (NP (PRP you)))))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP think)
+            (ADVP (RB otherwise))))))
+    (: ...)
+    (NP
+      (NP (NN shame))
+      (PP (IN on)
+        (NP (PRP you))))
+    (. !)))
+
+root(ROOT-0, and-1)
+nsubj(think-7, and-1)
+prep_for(and-1, those-3)
+prep_of(those-3, you-5)
+rcmod(and-1, think-7)
+advmod(think-7, otherwise-8)
+dep(and-1, shame-10)
+prep_on(shame-10, you-12)
+

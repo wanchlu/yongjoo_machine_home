@@ -1,0 +1,91 @@
+(ROOT
+  (NP (NNS http:\/\/www.thenewsenterprise.com\/cgi) (CD bin\/c2) (. .)))
+
+root(ROOT-0, http:\/\/www.thenewsenterprise.com\/cgi-1)
+num(http:\/\/www.thenewsenterprise.com\/cgi-1, bin\/c2-2)
+
+(ROOT
+  (SQ
+    (VP (VB cgi))
+    (. ?)))
+
+root(ROOT-0, cgi-1)
+
+(ROOT
+  (S
+    (NP (CD 053) (JJ +) (NN article))
+    (VP (VBZ +)
+      (NP (NNP News)))
+    (. .)))
+
+num(article-3, 053-1)
+amod(article-3, +-2)
+nsubj(+-4, article-3)
+root(ROOT-0, +-4)
+dobj(+-4, News-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Local) (CD +20090806160618053053003))
+      (ADVP (PRP You)))
+    (VP (MD might)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB copy)
+              (CC and)
+              (VB paste)
+              (NP
+                (NP (DT the) (NN aricle))
+                (PP (IN in)
+                  (NP (DT the) (NN search) (NN section)))))))))
+    (. .)))
+
+nsubj(have-5, Local-1)
+xsubj(copy-7, Local-1)
+num(Local-1, +20090806160618053053003-2)
+advmod(Local-1, You-3)
+aux(have-5, might-4)
+root(ROOT-0, have-5)
+aux(copy-7, to-6)
+xcomp(have-5, copy-7)
+xcomp(have-5, paste-9)
+conj_and(copy-7, paste-9)
+det(aricle-11, the-10)
+dobj(copy-7, aricle-11)
+det(section-15, the-13)
+nn(section-15, search-14)
+prep_in(aricle-11, section-15)
+
+(ROOT
+  (FRAG (IN If)
+    (SBAR (RB not)
+      (S
+        (NP (PRP$ its) (NNP a))
+        (VP (VBZ bout)
+          (NP
+            (NP (DT a) (NN therapist))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD raped)
+                  (NP (JJ little) (NNS boys))
+                  (PP (IN in)
+                    (NP (NNP Louisville) (, ,) (NNP Kentucky))))))))))
+    (. .)))
+
+root(ROOT-0, If-1)
+dep(bout-5, not-2)
+poss(a-4, its-3)
+nsubj(bout-5, a-4)
+dep(If-1, bout-5)
+det(therapist-7, a-6)
+dobj(bout-5, therapist-7)
+nsubj(raped-9, therapist-7)
+rcmod(therapist-7, raped-9)
+amod(boys-11, little-10)
+dobj(raped-9, boys-11)
+nn(Kentucky-15, Louisville-13)
+prep_in(raped-9, Kentucky-15)
+

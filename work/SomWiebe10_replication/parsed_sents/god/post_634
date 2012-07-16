@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did)
+      (SBAR (IN that)
+        (S
+          (NP (NNP unintentionally))
+          (VP (VBP cause)
+            (SBAR
+              (S
+                (NP (PRP I))
+                (VP (VBD did) (RB n't)
+                  (VP (VB know)
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBD went)
+                          (SBAR
+                            (SBAR
+                              (S
+                                (VP (VBD threw))))
+                            (CC or)
+                            (SBAR
+                              (WHADVP (RB not) (WRB when))
+                              (S
+                                (NP (PRP$ my) (NN computer))
+                                (VP (VBD was)
+                                  (VP (VBG having)
+                                    (NP (NNS problems))))))))))))))))))
+    (. .)))
+
+nsubj(did-2, I-1)
+root(ROOT-0, did-2)
+complm(cause-5, that-3)
+nsubj(cause-5, unintentionally-4)
+ccomp(did-2, cause-5)
+nsubj(know-9, I-6)
+aux(know-9, did-7)
+neg(know-9, n't-8)
+ccomp(cause-5, know-9)
+mark(went-12, if-10)
+nsubj(went-12, it-11)
+advcl(know-9, went-12)
+dep(went-12, threw-13)
+dep(when-16, not-15)
+advmod(having-20, when-16)
+poss(computer-18, my-17)
+nsubj(having-20, computer-18)
+aux(having-20, was-19)
+dep(went-12, having-20)
+conj_or(threw-13, having-20)
+dobj(having-20, problems-21)
+

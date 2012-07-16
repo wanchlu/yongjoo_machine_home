@@ -1,0 +1,111 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBP assume)
+        (SBAR (IN that) (IN because)
+          (S
+            (NP (PRP we))
+            (VP (VBP differ)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP we))
+                  (VP (MD must)
+                    (VP (VB hate)
+                      (NP (NNS homosexuals)))))))))))
+    (. ?)))
+
+advmod(assume-2, Why-1)
+root(ROOT-0, assume-2)
+complm(differ-6, that-3)
+dep(differ-6, because-4)
+nsubj(differ-6, we-5)
+ccomp(assume-2, differ-6)
+complm(hate-10, that-7)
+nsubj(hate-10, we-8)
+aux(hate-10, must-9)
+ccomp(differ-6, hate-10)
+dobj(hate-10, homosexuals-11)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP want)
+          (SBAR
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP (JJS best))
+                    (PP (IN for)
+                      (NP (DT the) (NN child)))))))
+            (, ,)
+            (CC and)
+            (SBAR (IN if)
+              (S
+                (NP (DT a) (NN mommmy)
+                  (CC and)
+                  (NN daddy))
+                (VP (VBP are)
+                  (VP (VBN proven)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (NP
+                            (NP (DT the) (JJS best) (NN environment))
+                            (PP (IN for)
+                              (S
+                                (VP (VBG raising)
+                                  (NP (DT a) (NN child)))))))))))))))))
+    (, ,)
+    (WHADVP
+      (ADVP (RB then))
+      (WRB why))
+    (SQ
+      (VP (VBP say)
+        (NP (PRP we)))
+      (NP (`` ``) (NN hate) (NNS gays) ('' ''))
+      (PP (IN for)
+        (S
+          (VP (VBG stating)
+            (NP (DT this))))))
+    (. ?)))
+
+mark(want-3, If-1)
+nsubj(want-3, we-2)
+advcl(say-31, want-3)
+nsubj(best-6, what-4)
+cop(best-6, is-5)
+dep(want-3, best-6)
+det(child-9, the-8)
+prep_for(best-6, child-9)
+mark(proven-18, if-12)
+det(mommmy-14, a-13)
+nsubjpass(proven-18, mommmy-14)
+xsubj(environment-23, mommmy-14)
+conj_and(mommmy-14, daddy-16)
+nsubjpass(proven-18, daddy-16)
+xsubj(environment-23, daddy-16)
+auxpass(proven-18, are-17)
+dep(want-3, proven-18)
+conj_and(best-6, proven-18)
+aux(environment-23, to-19)
+cop(environment-23, be-20)
+det(environment-23, the-21)
+amod(environment-23, best-22)
+xcomp(proven-18, environment-23)
+prepc_for(environment-23, raising-25)
+det(child-27, a-26)
+dobj(raising-25, child-27)
+advmod(why-30, then-29)
+advmod(say-31, why-30)
+root(ROOT-0, say-31)
+dobj(say-31, we-32)
+nn(gays-35, hate-34)
+dep(say-31, gays-35)
+prepc_for(say-31, stating-38)
+dobj(stating-38, this-39)
+

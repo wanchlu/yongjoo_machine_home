@@ -1,0 +1,213 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do) (RB n't)
+      (ADVP (RB really))
+      (VP (VB address)
+        (NP
+          (NP (DT any))
+          (PP (IN of)
+            (NP
+              (NP (PRP$ my) (NNS questions))
+              (, ,)
+              (NP (NNP Jake)))))))
+    (. .)))
+
+nsubj(address-5, You-1)
+aux(address-5, do-2)
+neg(address-5, n't-3)
+advmod(address-5, really-4)
+root(ROOT-0, address-5)
+dobj(address-5, any-6)
+poss(questions-9, my-8)
+prep_of(any-6, questions-9)
+appos(questions-9, Jake-11)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP counter)
+        (NP (PRP$ your) (NN debate))))
+    (CC and)
+    (RB then)
+    (S
+      (NP (PRP you))
+      (VP
+        (VP (VB ignore)
+          (NP (DT the) (NN point)))
+        (CC and)
+        (VP (VB go)
+          (PRT (RP off))
+          (PP (IN on)
+            (NP (DT a) (NN tangent))))))
+    (. .)))
+
+nsubj(counter-2, I-1)
+root(ROOT-0, counter-2)
+poss(debate-4, your-3)
+dobj(counter-2, debate-4)
+advmod(counter-2, then-6)
+conj_and(counter-2, then-6)
+nsubj(ignore-8, you-7)
+nsubj(go-12, you-7)
+ccomp(counter-2, ignore-8)
+det(point-10, the-9)
+dobj(ignore-8, point-10)
+ccomp(counter-2, go-12)
+conj_and(ignore-8, go-12)
+prt(go-12, off-13)
+det(tangent-16, a-15)
+prep_on(go-12, tangent-16)
+
+(ROOT
+  (S
+    (S (IN So)
+      (NP (PRP you))
+      (VP (VBP say)
+        (SBAR (IN that)
+          (S
+            (NP (NNS parents))
+            (VP (VBP are)
+              (ADJP (RB legally) (VBN married)))))))
+    (: ...)
+    (S
+      (ADVP (RB ok))
+      (, ,)
+      (SBAR (RB so) (IN if)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP (DT a) (NN divorce)))))
+      (NP (DT those) (NNS people))
+      (VP (VBP are)
+        (ADVP (RB no) (RB longer))
+        (NP (NNS parents))))
+    (. ?)))
+
+dep(say-3, So-1)
+nsubj(say-3, you-2)
+root(ROOT-0, say-3)
+complm(married-8, that-4)
+nsubjpass(married-8, parents-5)
+auxpass(married-8, are-6)
+advmod(married-8, legally-7)
+ccomp(say-3, married-8)
+advmod(are-20, ok-10)
+advmod(is-15, so-12)
+dep(is-15, if-13)
+expl(is-15, there-14)
+dep(are-20, is-15)
+det(divorce-17, a-16)
+nsubj(is-15, divorce-17)
+det(people-19, those-18)
+nsubj(are-20, people-19)
+parataxis(say-3, are-20)
+advmod(longer-22, no-21)
+advmod(are-20, longer-22)
+attr(are-20, parents-23)
+
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (NP
+            (NP (DT a) (NN death))
+            (PP (IN of)
+              (NP (DT a) (NN parent)))))))
+    (. ?)))
+
+mark(is-3, If-1)
+expl(is-3, there-2)
+root(ROOT-0, is-3)
+det(death-5, a-4)
+nsubj(is-3, death-5)
+det(parent-8, a-7)
+prep_of(death-5, parent-8)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBG defining)
+        (NP
+          (NP (DT a) (NN family))
+          (PP (IN in)
+            (NP (DT a)
+              (ADJP (RB very) (JJ narrow))
+              (NN sense))))))
+    (. .)))
+
+nsubj(defining-3, You-1)
+aux(defining-3, are-2)
+root(ROOT-0, defining-3)
+det(family-5, a-4)
+dobj(defining-3, family-5)
+det(sense-10, a-7)
+advmod(narrow-9, very-8)
+amod(sense-10, narrow-9)
+prep_in(family-5, sense-10)
+
+(ROOT
+  (S
+    (NP (JJ Gay) (NN sex) (NNS partners))
+    (VP (VBP are) (RB not)
+      (NP
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP we))
+            (VP (VBP are)
+              (VP (VBG talking)
+                (NP (RB about)
+                  (NP (RB here))
+                  (, ,)
+                  (CC but)
+                  (NP
+                    (NP (JJ gay) (`` ``) (NNS people))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (ADVP (RB actually))
+                        (VP (VBP love)
+                          (NP
+                            (NP (DT each) (JJ other))
+                            (CC and)
+                            (NP (PRP$ their) (NNS children))))))))))))
+        (CC and)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP stay)
+              (ADVP (RB together)))))))
+    (. .)))
+
+amod(partners-3, Gay-1)
+nn(partners-3, sex-2)
+nsubj(talking-9, partners-3)
+cop(talking-9, are-4)
+neg(talking-9, not-5)
+dobj(talking-9, what-6)
+rel(talking-9, what-6)
+nsubj(talking-9, we-7)
+aux(talking-9, are-8)
+root(ROOT-0, talking-9)
+advmod(here-11, about-10)
+dobj(talking-9, here-11)
+amod(people-16, gay-14)
+dobj(talking-9, people-16)
+conj_but(here-11, people-16)
+nsubj(love-19, people-16)
+advmod(love-19, actually-18)
+rcmod(people-16, love-19)
+det(other-21, each-20)
+dobj(love-19, other-21)
+poss(children-24, their-23)
+dobj(love-19, children-24)
+conj_and(other-21, children-24)
+nsubj(stay-27, who-26)
+conj_and(talking-9, stay-27)
+advmod(stay-27, together-28)
+

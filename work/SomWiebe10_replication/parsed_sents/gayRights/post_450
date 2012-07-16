@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (NP
+        (NP (DT the) (NN person))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD wrote)
+              (NP (DT the) (NNP OP)))))))
+    (. .)))
+
+nsubj(person-5, I-1)
+cop(person-5, 'm-2)
+neg(person-5, not-3)
+det(person-5, the-4)
+root(ROOT-0, person-5)
+nsubj(wrote-7, person-5)
+rcmod(person-5, wrote-7)
+det(OP-9, the-8)
+dobj(wrote-7, OP-9)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (VP (VBG responding)
+          (PP (TO to)
+            (NP
+              (NP (NNS elements))
+              (PP (IN within)
+                (NP (PRP$ your) (NN post))))))))
+    (, ,) (RB not)
+    (S
+      (S
+        (VP (VBG answering)
+          (NP (PRP$ your) (NNS questions))))
+      (VP (VBD addressed)
+        (PP (TO to)
+          (NP (DT the) (NNP OP)))))
+    (. .)))
+
+nsubj(responding-3, I-1)
+aux(responding-3, 'm-2)
+root(ROOT-0, responding-3)
+prep_to(responding-3, elements-5)
+poss(post-8, your-7)
+prep_within(elements-5, post-8)
+neg(responding-3, not-10)
+csubj(addressed-14, answering-11)
+poss(questions-13, your-12)
+dobj(answering-11, questions-13)
+ccomp(responding-3, addressed-14)
+det(OP-17, the-16)
+prep_to(addressed-14, OP-17)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN format))
+            (PP (IN on)
+              (NP (DT this) (NN board))))
+          (VP (MD can)
+            (VP
+              (VP (VB be)
+                (ADJP (JJ confusing)
+                  (PP (IN at)
+                    (NP (NNS times)))))
+              (, ,)
+              (CC but)
+              (VP (VB check)
+                (NP
+                  (NP
+                    (NP (DT the) (NN poster) (POS 's))
+                    (NN name))
+                  (, ,)
+                  (ADVP (RB just)))
+                (PP (IN beneath)
+                  (NP (PRP$ their) (NN post)))))))))
+    (. .)))
+
+nsubj(know-2, I-1)
+root(ROOT-0, know-2)
+det(format-4, the-3)
+nsubj(confusing-10, format-4)
+nsubj(check-15, format-4)
+det(board-7, this-6)
+prep_on(format-4, board-7)
+aux(confusing-10, can-8)
+cop(confusing-10, be-9)
+ccomp(know-2, confusing-10)
+prep_at(confusing-10, times-12)
+ccomp(know-2, check-15)
+conj_but(confusing-10, check-15)
+det(poster-17, the-16)
+poss(name-19, poster-17)
+dobj(check-15, name-19)
+advmod(name-19, just-21)
+poss(post-24, their-23)
+prep_beneath(check-15, post-24)
+

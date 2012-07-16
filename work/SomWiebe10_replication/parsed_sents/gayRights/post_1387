@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP mean)
+      (NP
+        (NP (NNS people))
+        (PP (IN like)
+          (NP (PRP you)))))
+    (. ?)))
+
+nsubj(mean-2, You-1)
+root(ROOT-0, mean-2)
+dobj(mean-2, people-3)
+prep_like(people-3, you-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ minimum) (NN length))
+      (PP (IN for)
+        (NP (DT an) (NN argument))))
+    (VP (VBZ is)
+      (NP (CD 50) (NNS characters)))
+    (. .)))
+
+det(length-3, The-1)
+amod(length-3, minimum-2)
+nsubj(characters-9, length-3)
+det(argument-6, an-5)
+prep_for(length-3, argument-6)
+cop(characters-9, is-7)
+num(characters-9, 50-8)
+root(ROOT-0, characters-9)
+
+(ROOT
+  (NP
+    (S
+      (S
+        (NP
+          (NP (DT The) (NN purpose))
+          (PP (IN of)
+            (NP (DT this) (NN restriction))))
+        (VP (VBZ is)
+          (S
+            (VP (TO to)
+              (VP (VB cut)
+                (PRT (RP down))
+                (PP (IN on)
+                  (NP
+                    (NP (DT the) (NN amount))
+                    (PP (IN of)
+                      (NP (JJ dumb) (NNS jokes))))))))))
+      (, ,) (IN so)
+      (S
+        (NP (PRP we))
+        (VP (MD can)
+          (VP (VB keep)
+            (NP
+              (NP (DT the) (NN quality))
+              (PP (IN of)
+                (NP (NN debate)
+                  (CC and)
+                  (NN discourse))))
+            (ADVP (RB as) (JJ high)
+              (PP (IN as)
+                (ADJP (JJ possible))))))))))
+
+det(purpose-2, The-1)
+nsubj(is-6, purpose-2)
+xsubj(cut-8, purpose-2)
+det(restriction-5, this-4)
+prep_of(purpose-2, restriction-5)
+root(ROOT-0, is-6)
+aux(cut-8, to-7)
+xcomp(is-6, cut-8)
+prt(cut-8, down-9)
+det(amount-12, the-11)
+prep_on(cut-8, amount-12)
+amod(jokes-15, dumb-14)
+prep_of(amount-12, jokes-15)
+dep(is-6, so-17)
+nsubj(keep-20, we-18)
+aux(keep-20, can-19)
+dep(is-6, keep-20)
+det(quality-22, the-21)
+dobj(keep-20, quality-22)
+prep_of(quality-22, debate-24)
+prep_of(quality-22, discourse-26)
+conj_and(debate-24, discourse-26)
+advmod(high-28, as-27)
+advmod(keep-20, high-28)
+prep_as(high-28, possible-30)
+

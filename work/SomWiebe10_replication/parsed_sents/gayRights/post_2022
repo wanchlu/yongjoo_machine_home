@@ -1,0 +1,129 @@
+(ROOT
+  (NP (NN No.)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (S
+    (NP (NNS Facts))
+    (VP (VBP produce)
+      (NP (NNS statistics)))
+    (. .)))
+
+nsubj(produce-2, Facts-1)
+root(ROOT-0, produce-2)
+dobj(produce-2, statistics-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN statistic))
+      (PP (IN of)
+        (NP
+          (NP
+            (QP (RB approximately) (CD 45))
+            (NN %))
+          (PP (IN of)
+            (NP
+              (NP (DT all) (JJ married) (NNS couples))
+              (VP (VBG divorcing)
+                (ADVP (RB someday))))))))
+    (, ,)
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBN based)
+          (PP (IN on)
+            (NP
+              (NP (RB already) (VBG existing) (NNS facts))
+              (PP (IN about)
+                (NP
+                  (NP (NN divorce) (NNS rates))
+                  (, ,) (RB not)
+                  (NP (NN speculation)))))))))
+    (. .)))
+
+det(statistic-2, A-1)
+nsubjpass(based-16, statistic-2)
+quantmod(45-5, approximately-4)
+num(%-6, 45-5)
+prep_of(statistic-2, %-6)
+det(couples-10, all-8)
+amod(couples-10, married-9)
+prep_of(%-6, couples-10)
+partmod(couples-10, divorcing-11)
+advmod(divorcing-11, someday-12)
+aux(based-16, would-14)
+auxpass(based-16, be-15)
+root(ROOT-0, based-16)
+advmod(facts-20, already-18)
+amod(facts-20, existing-19)
+prep_on(based-16, facts-20)
+nn(rates-23, divorce-22)
+prep_about(facts-20, rates-23)
+neg(rates-23, not-25)
+dep(rates-23, speculation-26)
+
+(ROOT
+  (S
+    (NP (NNS Stereotypes))
+    (VP (VBP are)
+      (VP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (NNS opinions))
+            (, ,)
+            (NP (JJ random) (NNS observations))
+            (, ,)
+            (CC and)
+            (NP (NN speculation))))))
+    (. .)))
+
+nsubjpass(based-3, Stereotypes-1)
+auxpass(based-3, are-2)
+root(ROOT-0, based-3)
+prep_on(based-3, opinions-5)
+amod(observations-8, random-7)
+prep_on(based-3, observations-8)
+conj_and(opinions-5, observations-8)
+prep_on(based-3, speculation-11)
+conj_and(opinions-5, speculation-11)
+
+(ROOT
+  (S
+    (PP (IN With)
+      (NP (NNS statistics)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (NN control)
+          (CC and)
+          (NN reason))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (JJ numerical) (NNS data))))
+    (. .)))
+
+prep_with(is-5, statistics-2)
+expl(is-5, there-4)
+root(ROOT-0, is-5)
+nsubj(is-5, control-6)
+nsubj(is-5, reason-8)
+conj_and(control-6, reason-8)
+amod(data-14, numerical-13)
+nsubj(is-5, data-14)
+conj_and(control-6, data-14)
+
+(ROOT
+  (S
+    (NP (NNS Stereotypes))
+    (VP (VBP are)
+      (ADVP (RB just))
+      (NP (NNS words)))
+    (. .)))
+
+nsubj(words-4, Stereotypes-1)
+cop(words-4, are-2)
+advmod(words-4, just-3)
+root(ROOT-0, words-4)
+

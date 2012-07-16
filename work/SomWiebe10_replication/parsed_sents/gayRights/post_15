@@ -1,0 +1,128 @@
+(ROOT
+  (S
+    (NP (NNP Children))
+    (ADVP (RB always))
+    (VP (VBP benefit)
+      (PP (IN from)
+        (NP
+          (NP (CD two) (NNS parents))
+          (PRN (-LRB- -LRB-)
+            (NP (JJ gay)
+              (CC or)
+              (JJ straight))
+            (-RRB- -RRB-))))
+      (NP
+        (CONJP (RB instead) (IN of))
+        (NP (CD one))
+        ('' '')
+        (NP
+          (NP (JJ Single-parent) (NN mom) ('' ''))
+          (SBAR
+            (S
+              (VP (VBZ is)
+                (NP (DT an)
+                  (ADJP (RB all) (RB too) (JJ frequent))
+                  (NN term))))))))
+    (. .)))
+
+nsubj(benefit-3, Children-1)
+advmod(benefit-3, always-2)
+root(ROOT-0, benefit-3)
+num(parents-6, two-5)
+prep_from(benefit-3, parents-6)
+dep(parents-6, gay-8)
+dep(parents-6, straight-10)
+conj_or(gay-8, straight-10)
+cc(one-14, instead-12)
+dobj(benefit-3, one-14)
+amod(mom-17, Single-parent-16)
+dep(one-14, mom-17)
+cop(term-24, is-19)
+det(term-24, an-20)
+advmod(frequent-23, all-21)
+advmod(frequent-23, too-22)
+amod(term-24, frequent-23)
+rcmod(mom-17, term-24)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ costly))
+      (PP
+        (PP (TO to)
+          (NP (NNS children)))
+        (, ,) (RB primarily)
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN standpoint))
+            (PP (IN of)
+              (S
+                (VP (VBG having)
+                  (NP (PDT half) (DT the) (NN support))))))))
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (NN child))
+          (VP (VBZ deserves)))))
+    (. .)))
+
+nsubj(costly-3, It-1)
+cop(costly-3, is-2)
+root(ROOT-0, costly-3)
+prep_to(costly-3, children-5)
+advmod(costly-3, primarily-7)
+det(standpoint-10, the-9)
+prep_from(costly-3, standpoint-10)
+prepc_of(standpoint-10, having-12)
+predet(support-15, half-13)
+det(support-15, the-14)
+dobj(having-12, support-15)
+complm(deserves-19, that-16)
+det(child-18, a-17)
+nsubj(deserves-19, child-18)
+ccomp(costly-3, deserves-19)
+
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBG Married)
+          (NP (JJ gay) (NNS couples))))
+      (VP (MD can)
+        (VP (VB provide)
+          (NP (RB twice) (DT the) (NN support))
+          (SBAR (IN that)
+            (S
+              (NP (DT a) (JJ single) (NN parent))
+              (VP (MD can)
+                (VP (VB provide))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT this))
+      (VP (VBZ is)
+        (ADVP (RB always))
+        (NP (DT a) (JJ good) (NN thing))))
+    (. .)))
+
+csubj(provide-5, Married-1)
+amod(couples-3, gay-2)
+dobj(Married-1, couples-3)
+aux(provide-5, can-4)
+root(ROOT-0, provide-5)
+advmod(support-8, twice-6)
+det(support-8, the-7)
+dobj(provide-5, support-8)
+complm(provide-14, that-9)
+det(parent-12, a-10)
+amod(parent-12, single-11)
+nsubj(provide-14, parent-12)
+aux(provide-14, can-13)
+ccomp(provide-5, provide-14)
+nsubj(thing-22, this-17)
+cop(thing-22, is-18)
+advmod(thing-22, always-19)
+det(thing-22, a-20)
+amod(thing-22, good-21)
+conj_and(provide-5, thing-22)
+

@@ -1,0 +1,89 @@
+(ROOT
+  (NP
+    (NP (DT A) (JJ gay) (NN guy))
+    (VP (VBG marrying)
+      (NP (DT a) (NN lesbian)))
+    (. ?)))
+
+det(guy-3, A-1)
+amod(guy-3, gay-2)
+root(ROOT-0, guy-3)
+partmod(guy-3, marrying-4)
+det(lesbian-6, a-5)
+dobj(marrying-4, lesbian-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP (DT these))
+          (VP (VBP are)
+            (VP (VBN refered)
+              (PP (TO to)
+                (NP
+                  (NP (RB as) (NNS marriages))
+                  (PP (IN of)
+                    (NP
+                      (NP (`` ``) (NN convenience) ('' ''))
+                      (SBAR
+                        (WHPP (IN In)
+                          (WHNP (WDT which) (NN case)))
+                        (S
+                          (NP (PRP I))
+                          (VP (VB protest)))))))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+nsubjpass(refered-5, these-3)
+auxpass(refered-5, are-4)
+ccomp(believe-2, refered-5)
+advmod(marriages-8, as-7)
+prep_to(refered-5, marriages-8)
+prep_of(marriages-8, convenience-11)
+det(case-15, convenience-11)
+rel(protest-17, case-15)
+nsubj(protest-17, I-16)
+rcmod(convenience-11, protest-17)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP
+        (ADVP (RB never))
+        (VBN heard)
+        (PP (IN of)
+          (NP
+            (NP (NN anyone) (POS 's))
+            (NN marriage)
+            (S
+              (VP (VBG being)
+                (ADJP (JJ convenient))))))
+        (, ,)
+        (SBAR (RB so)
+          (WHADVP (WRB why))
+          (S
+            (VP (MD should)
+              (ADVP (RB homosexuals))
+              (VP (VB get)
+                (NP (CD one))))))))
+    (. ?)))
+
+nsubj(heard-4, I-1)
+aux(heard-4, 've-2)
+neg(heard-4, never-3)
+root(ROOT-0, heard-4)
+poss(marriage-8, anyone-6)
+prep_of(heard-4, marriage-8)
+cop(convenient-10, being-9)
+dep(marriage-8, convenient-10)
+advmod(get-16, so-12)
+advmod(get-16, why-13)
+aux(get-16, should-14)
+advmod(get-16, homosexuals-15)
+ccomp(heard-4, get-16)
+dobj(get-16, one-17)
+

@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB comment)
+            (PP (IN about)
+              (NP (PRP$ your)
+                (ADJP (RB seemingly) (JJ rhetorical))
+                (JJ last) (NN question)))))))
+    (. .)))
+
+nsubj(want-3, I-1)
+xsubj(comment-5, I-1)
+advmod(want-3, just-2)
+root(ROOT-0, want-3)
+aux(comment-5, to-4)
+xcomp(want-3, comment-5)
+poss(question-11, your-7)
+advmod(rhetorical-9, seemingly-8)
+amod(question-11, rhetorical-9)
+amod(question-11, last-10)
+prep_about(comment-5, question-11)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (VP (VBG predetermined)
+            (ADVP (RB then))))))
+    (VP (VBZ does) (RB n't)
+      (VP
+        (SBAR (IN that)
+          (S
+            (VP (VBP imply)
+              (NP
+                (NP (DT some) (NN kind))
+                (PP (IN of)
+                  (NP (NN nonhuman) (NN realm))))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (NN thought)
+                    (CC and)
+                    (NNS morals))
+                  (VP (VBP exist)))))))
+        (, ,)
+        (VP (VB ie)
+          (NP (NNP God)))))
+    (. ?)))
+
+mark(predetermined-4, If-1)
+nsubj(predetermined-4, it-2)
+aux(predetermined-4, is-3)
+csubj(ie-21, predetermined-4)
+advmod(predetermined-4, then-5)
+aux(ie-21, does-6)
+neg(ie-21, n't-7)
+dep(imply-9, that-8)
+ccomp(ie-21, imply-9)
+det(kind-11, some-10)
+dobj(imply-9, kind-11)
+nn(realm-14, nonhuman-13)
+prep_of(kind-11, realm-14)
+advmod(exist-19, where-15)
+nsubj(exist-19, thought-16)
+conj_and(thought-16, morals-18)
+nsubj(exist-19, morals-18)
+advcl(imply-9, exist-19)
+root(ROOT-0, ie-21)
+dobj(ie-21, God-22)
+

@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADVP (RB waaaay))
+      (PP (IN outside)
+        (NP
+          (NP (DT the) (NN scope))
+          (PP (IN of)
+            (NP (DT the) (NN debate))))))
+    (. .)))
+
+nsubj('s-2, That-1)
+root(ROOT-0, 's-2)
+advmod('s-2, waaaay-3)
+det(scope-6, the-5)
+prep_outside('s-2, scope-6)
+det(debate-9, the-8)
+prep_of(scope-6, debate-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP (DT no) (NN clue)))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+det(clue-4, no-3)
+dobj(have-2, clue-4)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (JJ tough) (JJ moral) (NN decision))
+        (, ,)
+        (CC and)
+        (NP (CD one)))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (VBP do) (RB n't)
+            (VP (VB have)
+              (S
+                (VP (TO to)
+                  (VP (VB make)
+                    (PP (IN for)
+                      (NP (DT a) (NN reason)))))))))))
+    (. .)))
+
+nsubj(decision-6, It-1)
+cop(decision-6, 's-2)
+det(decision-6, a-3)
+amod(decision-6, tough-4)
+amod(decision-6, moral-5)
+root(ROOT-0, decision-6)
+conj_and(decision-6, one-9)
+complm(have-14, that-10)
+nsubj(have-14, I-11)
+xsubj(make-16, I-11)
+aux(have-14, do-12)
+neg(have-14, n't-13)
+ccomp(decision-6, have-14)
+aux(make-16, to-15)
+xcomp(have-14, make-16)
+det(reason-19, a-18)
+prep_for(make-16, reason-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD could) (RB n't)))
+    (: ;)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (ADJP (VBN qualified)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (SBAR (RB so) (RB even) (IN if)
+                  (S
+                    (NP (PRP I))
+                    (VP (MD could))))))))))
+    (. .)))
+
+nsubj(could-2, I-1)
+root(ROOT-0, could-2)
+neg(could-2, n't-3)
+nsubjpass(qualified-9, I-6)
+auxpass(qualified-9, 'm-7)
+neg(qualified-9, not-8)
+conj_and(could-2, qualified-9)
+aux(do-11, to-10)
+xcomp(qualified-9, do-11)
+advmod(could-16, so-12)
+advmod(could-16, even-13)
+dep(could-16, if-14)
+nsubj(could-16, I-15)
+ccomp(do-11, could-16)
+

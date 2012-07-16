@@ -1,0 +1,139 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT Those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP turn)
+              (PP (TO to)
+                (NP
+                  (NP (NNP Leviticus))
+                  (CC and)
+                  (NP (JJ other) (NNS passages))))
+              (S
+                (VP (TO to)
+                  (VP (VB confirm)
+                    (NP (JJ preconcieved) (NNS beliefs))
+                    (PP (IN about)
+                      (NP (NN homosexuality))))))))))
+      (VP (VBP are)
+        (NP (RB only) (JJ cherry) (NN picking))))
+    (: --)
+    (S
+      (NP (DT these) (JJ same) (NNS books))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (JJ many) (JJ other) (JJ normal) (NNS things))
+            (VP (VBP are)
+              (NP (NNS sins))
+              (, ,)
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (NNS sorts))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS clothes))
+                      (SBAR
+                        (S
+                          (NP (PRP one))
+                          (VP (VBZ wears)
+                            (PP (TO to)
+                              (SBAR
+                                (WHNP (WP what))
+                                (S
+                                  (NP (PRP you))
+                                  (VP (VBP eat)))))))))))))))))
+    (. .)))
+
+nsubj(turn-3, Those-1)
+nsubj(picking-18, Those-1)
+rcmod(Those-1, turn-3)
+prep_to(turn-3, Leviticus-5)
+amod(passages-8, other-7)
+prep_to(turn-3, passages-8)
+conj_and(Leviticus-5, passages-8)
+aux(confirm-10, to-9)
+xcomp(turn-3, confirm-10)
+amod(beliefs-12, preconcieved-11)
+dobj(confirm-10, beliefs-12)
+prep_about(confirm-10, homosexuality-14)
+cop(picking-18, are-15)
+advmod(picking-18, only-16)
+amod(picking-18, cherry-17)
+root(ROOT-0, picking-18)
+det(books-22, these-20)
+amod(books-22, same-21)
+nsubj(say-23, books-22)
+parataxis(picking-18, say-23)
+amod(things-27, many-24)
+amod(things-27, other-25)
+amod(things-27, normal-26)
+nsubj(sins-29, things-27)
+cop(sins-29, are-28)
+ccomp(say-23, sins-29)
+det(sorts-33, the-32)
+prep_from(sins-29, sorts-33)
+prep_of(sorts-33, clothes-35)
+dobj(wears-37, clothes-35)
+nsubj(wears-37, one-36)
+rcmod(clothes-35, wears-37)
+dobj(eat-41, what-39)
+nsubj(eat-41, you-40)
+prepc_to(wears-37, eat-41)
+
+(ROOT
+  (SQ
+    (VP (VB Do)
+      (S
+        (NP
+          (NP (DT those))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP find)
+                (ADJP (RB homosexuality) (JJ sinful))))))
+        (VP (VB find)
+          (S
+            (NP
+              (NP (DT the) (JJ other) (NNS things))
+              (PP (IN in)
+                (NP (DT these) (NNS passages))))
+            (ADJP (JJ sinful)
+              (PP (IN as)
+                (ADVP (RB well))))))))
+    (. ?)))
+
+root(ROOT-0, Do-1)
+nsubj(find-4, those-2)
+nsubj(find-7, those-2)
+rcmod(those-2, find-4)
+advmod(sinful-6, homosexuality-5)
+acomp(find-4, sinful-6)
+ccomp(Do-1, find-7)
+det(things-10, the-8)
+amod(things-10, other-9)
+nsubj(sinful-14, things-10)
+det(passages-13, these-12)
+prep_in(things-10, passages-13)
+xcomp(find-7, sinful-14)
+prep(sinful-14, as-15)
+pcomp(as-15, well-16)
+
+(ROOT
+  (SQ (CC Or)
+    (VBZ are)
+    (NP (PRP they))
+    (ADJP (JJ cherry)
+      (S
+        (VP (VBG picking))))
+    (. ?)))
+
+cc(cherry-4, Or-1)
+cop(cherry-4, are-2)
+nsubj(cherry-4, they-3)
+root(ROOT-0, cherry-4)
+dep(cherry-4, picking-5)
+

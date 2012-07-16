@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Marriage))
+      (VP (MD should)
+        (VP (VB be)
+          (PP (IN about)
+            (NP (NN love))))))
+    (, ,) (RB not)
+    (S
+      (ADVP (RB simply))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (NNS children))
+              (VP (VBG Having)
+                (NP (NNS children)))))))
+      (VP (VBZ has)
+        (NP (NN nothing)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (PP (IN with)
+                  (S
+                    (VP (VBG getting)
+                      (ADJP (JJ married)))))))))))
+    (. .)))
+
+nsubj(be-3, Marriage-1)
+aux(be-3, should-2)
+root(ROOT-0, be-3)
+prep_about(be-3, love-5)
+neg(be-3, not-7)
+advmod(has-14, simply-8)
+aux(have-10, to-9)
+csubj(has-14, have-10)
+dobj(have-10, children-11)
+partmod(children-11, Having-12)
+dobj(Having-12, children-13)
+ccomp(be-3, has-14)
+dobj(has-14, nothing-15)
+aux(do-17, to-16)
+infmod(nothing-15, do-17)
+dep(married-20, getting-19)
+prepc_with(do-17, married-20)
+
+(ROOT
+  (S
+    (NP (NNP Marriage))
+    (VP (VBZ is)
+      (NP (DT a) (NN commitment)
+        (S
+          (VP (TO to)
+            (VP (VB love)
+              (CC and)
+              (VB care)
+              (PP (IN for)
+                (NP
+                  (NP (PRP$ your) (NN spouse))
+                  (, ,) (RB not)
+                  (NP (DT an) (NN excuse))))
+              (S
+                (VP (TO to)
+                  (VP (VB make)
+                    (NP (NNS babies))))))))))
+    (. .)))
+
+nsubj(commitment-4, Marriage-1)
+cop(commitment-4, is-2)
+det(commitment-4, a-3)
+root(ROOT-0, commitment-4)
+aux(love-6, to-5)
+infmod(commitment-4, love-6)
+infmod(commitment-4, care-8)
+conj_and(love-6, care-8)
+poss(spouse-11, your-10)
+prep_for(love-6, spouse-11)
+neg(spouse-11, not-13)
+det(excuse-15, an-14)
+dep(spouse-11, excuse-15)
+aux(make-17, to-16)
+xcomp(love-6, make-17)
+dobj(make-17, babies-18)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (MD should) (RB not)
+      (VP (VB marry)
+        (ADVP (RB simply))
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (NNS children)))))))
+    (. .)))
+
+nsubj(marry-4, People-1)
+xsubj(have-7, People-1)
+aux(marry-4, should-2)
+neg(marry-4, not-3)
+root(ROOT-0, marry-4)
+advmod(marry-4, simply-5)
+aux(have-7, to-6)
+xcomp(marry-4, have-7)
+dobj(have-7, children-8)
+

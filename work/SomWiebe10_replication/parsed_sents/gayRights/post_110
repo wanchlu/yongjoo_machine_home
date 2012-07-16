@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (NNP Gay) (NNP Marriage))
+    (VP (VBZ takes)
+      (PRT (RP away))
+      (PP (IN from)
+        (NP
+          (NP
+            (NP (DT the) (NN sanctity))
+            (PP (IN of)
+              (NP (NN marriage))))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ knows)
+                (SBAR
+                  (WHNP (WP what) (NN kind)
+                    (PP (IN of)
+                      (NP (NN impact))))
+                  (S
+                    (NP (DT this))
+                    (VP (MD would)
+                      (VP (VB have)
+                        (PP (IN on)
+                          (NP
+                            (NP (DT all) (JJ other) (NNS principles))
+                            (PP (IN of)
+                              (NP (NN marriage)))))))))))))))
+    (. .)))
+
+nn(Marriage-2, Gay-1)
+nsubj(takes-3, Marriage-2)
+root(ROOT-0, takes-3)
+det(sanctity-7, the-6)
+prep_away_from(takes-3, sanctity-7)
+prep_of(sanctity-7, marriage-9)
+nsubj(knows-13, who-12)
+prep_away_from(takes-3, knows-13)
+conj_and(sanctity-7, knows-13)
+rcmod(sanctity-7, knows-13)
+det(kind-15, what-14)
+dobj(have-20, kind-15)
+prep_of(kind-15, impact-17)
+nsubj(have-20, this-18)
+aux(have-20, would-19)
+ccomp(knows-13, have-20)
+det(principles-24, all-22)
+amod(principles-24, other-23)
+prep_on(have-20, principles-24)
+prep_of(principles-24, marriage-26)
+

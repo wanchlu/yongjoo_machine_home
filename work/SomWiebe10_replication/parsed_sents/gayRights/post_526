@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN link))
+        (PP (TO to)
+          (NP (DT a) (NN news) (NN article)))
+        (SBAR
+          (WHPP (IN in)
+            (WHNP (WDT which)))
+          (S
+            (NP (NNS scientists))
+            (VP (VBP have)
+              (VP (VBN found)
+                (NP
+                  (NP (DT the) (JJ gay) (NN gene))
+                  (PP (IN in)
+                    (NP (NN fruit) (NNS flies))))))))))
+    (. .)))
+
+nsubj(link-4, Here-1)
+cop(link-4, 's-2)
+det(link-4, a-3)
+root(ROOT-0, link-4)
+det(article-8, a-6)
+nn(article-8, news-7)
+prep_to(link-4, article-8)
+rel(found-13, which-10)
+nsubj(found-13, scientists-11)
+aux(found-13, have-12)
+rcmod(link-4, found-13)
+det(gene-16, the-14)
+amod(gene-16, gay-15)
+dobj(found-13, gene-16)
+nn(flies-19, fruit-18)
+prep_in(gene-16, flies-19)
+
+(ROOT
+  (ADVP (RB Literally) (. .)))
+
+root(ROOT-0, Literally-1)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Manipulating)
+        (NP
+          (NP (DT this) (NN gene))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NN nothing) (RB else))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NNS genes))
+                (CC or)
+                (NP (NN environment)))))
+          (, ,))))
+    (VP (MD can)
+      (VP (VB cause)
+        (NP (DT a) (NN fruit) (NN fly))
+        (PP (TO to)
+          (NP (NN court)
+            (CC and)
+            (NN mate)))
+        (PP (IN with)
+          (NP (DT the) (JJ same)
+            (CC or)
+            (JJ opposite) (NN sex)))))
+    (. .)))
+
+csubj(cause-15, Manipulating-1)
+det(gene-3, this-2)
+dobj(Manipulating-1, gene-3)
+dobj(Manipulating-1, nothing-6)
+conj_and(gene-3, nothing-6)
+advmod(nothing-6, else-7)
+det(genes-10, the-9)
+prep_in(nothing-6, genes-10)
+prep_in(nothing-6, environment-12)
+conj_or(genes-10, environment-12)
+aux(cause-15, can-14)
+root(ROOT-0, cause-15)
+det(fly-18, a-16)
+nn(fly-18, fruit-17)
+dobj(cause-15, fly-18)
+prep_to(cause-15, court-20)
+prep_to(cause-15, mate-22)
+conj_and(court-20, mate-22)
+det(sex-28, the-24)
+amod(sex-28, same-25)
+conj_or(same-25, opposite-27)
+amod(sex-28, opposite-27)
+prep_with(cause-15, sex-28)
+
+(ROOT
+  (NP (NNS http:\/\/www.foxnews.com\/story\/0) (CD ,2933,316316,00) (. .)))
+
+root(ROOT-0, http:\/\/www.foxnews.com\/story\/0-1)
+num(http:\/\/www.foxnews.com\/story\/0-1, ,2933,316316,00-2)
+
+(ROOT
+  (NP (NN html)))
+
+root(ROOT-0, html-1)
+

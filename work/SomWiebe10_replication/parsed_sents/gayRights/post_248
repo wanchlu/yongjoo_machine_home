@@ -1,0 +1,96 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VB research)))
+    (. ?)))
+
+nsubj(research-2, What-1)
+root(ROOT-0, research-2)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN title))
+      (PP (IN of)
+        (NP (DT this) (NN section))))
+    (VP (VBZ implies)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT some) (NN kind))
+            (PP (IN of)
+              (NP (NN research))))
+          (VP (MD will)
+            (VP (VB be)
+              (VP (VBN cited)))))))
+    (. .)))
+
+det(title-2, The-1)
+nsubj(implies-6, title-2)
+det(section-5, this-4)
+prep_of(title-2, section-5)
+root(ROOT-0, implies-6)
+complm(cited-14, that-7)
+det(kind-9, some-8)
+nsubjpass(cited-14, kind-9)
+prep_of(kind-9, research-11)
+aux(cited-14, will-12)
+auxpass(cited-14, be-13)
+ccomp(implies-6, cited-14)
+
+(ROOT
+  (S
+    (ADVP (RB Instead))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP get)
+            (SBAR
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT a) (NN series))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS statements))
+                        (PP (IN like)
+                          (NP (`` ``)
+                            (NP (JJ reseach) (NNS indicates))
+                            ('' '')
+                            (CC and)
+                            (`` ``)
+                            (NP (NNS researchers))))))))))))))
+    (VP (VBP find))
+    (. .)))
+
+advmod(find-19, Instead-1)
+nsubj(find-19, all-3)
+nsubj(get-5, we-4)
+rcmod(all-3, get-5)
+cop(series-8, is-6)
+det(series-8, a-7)
+ccomp(get-5, series-8)
+prep_of(series-8, statements-10)
+amod(indicates-14, reseach-13)
+prep_like(statements-10, indicates-14)
+prep_like(statements-10, researchers-18)
+conj_and(indicates-14, researchers-18)
+root(ROOT-0, find-19)
+
+(ROOT
+  (S ('' '')
+    (NP (DT This) (JJ whole) (NN argument))
+    (VP (VBZ lacks)
+      (NP (NN substance)))
+    (. .)))
+
+det(argument-4, This-2)
+amod(argument-4, whole-3)
+nsubj(lacks-5, argument-4)
+root(ROOT-0, lacks-5)
+dobj(lacks-5, substance-6)
+

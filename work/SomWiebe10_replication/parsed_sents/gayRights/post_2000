@@ -1,0 +1,33 @@
+(ROOT
+  (S (CC So)
+    (VBP do)
+    (NP (PRP you))
+    (VP (VB think)
+      (SBAR
+        (S
+          (NP (NNS brothers)
+            (CC and)
+            (NNS sisters))
+          (VP (MD should)
+            (VP (VB be)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBN married)))))))))))
+    (. ?)))
+
+cc(think-4, So-1)
+dep(think-4, do-2)
+nsubj(think-4, you-3)
+root(ROOT-0, think-4)
+nsubj(able-10, brothers-5)
+conj_and(brothers-5, sisters-7)
+nsubj(able-10, sisters-7)
+aux(able-10, should-8)
+cop(able-10, be-9)
+ccomp(think-4, able-10)
+aux(married-13, to-11)
+auxpass(married-13, be-12)
+xcomp(able-10, married-13)
+

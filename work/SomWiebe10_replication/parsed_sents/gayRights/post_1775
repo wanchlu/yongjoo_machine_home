@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (INTJ (UH Yeah))
+    (, ,)
+    (NP (RB so) (NN prop8)
+      (CC and)
+      (NN slavery))
+    (VP (VBP are)
+      (ADVP (RB pretty) (RB much))
+      (NP (DT the) (JJ same) (NN thing) (NN huh)))
+    (. ?)))
+
+dep(huh-13, Yeah-1)
+advmod(prop8-4, so-3)
+nsubj(huh-13, prop8-4)
+conj_and(prop8-4, slavery-6)
+nsubj(huh-13, slavery-6)
+cop(huh-13, are-7)
+advmod(much-9, pretty-8)
+advmod(huh-13, much-9)
+det(huh-13, the-10)
+amod(huh-13, same-11)
+nn(huh-13, thing-12)
+root(ROOT-0, huh-13)
+
+(ROOT
+  (S
+    (INTJ (UH no))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are) (RB not))
+    (. !)))
+
+dep(are-4, no-1)
+nsubj(are-4, they-3)
+root(ROOT-0, are-4)
+neg(are-4, not-5)
+
+(ROOT
+  (PRN (, ,)
+    (S
+      (NP (NNP why))
+      (VP (VBP do)
+        (SBAR
+          (S
+            (NP (NNS people))
+            (VP (VBP keep)
+              (S
+                (VP (VBG comparing)
+                  (NP (DT this))
+                  (PP (TO to)
+                    (NP (NN slavery) (NNS !?))))))))))))
+
+nsubj(do-3, why-2)
+root(ROOT-0, do-3)
+nsubj(keep-5, people-4)
+ccomp(do-3, keep-5)
+xcomp(keep-5, comparing-6)
+dobj(comparing-6, this-7)
+nn(!?-10, slavery-9)
+prep_to(comparing-6, !?-10)
+

@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (LST (LS 1) (-RRB- -RRB-))
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (S
+          (NP (JJ reasonable) (NN .2) (-RRB- -RRB-) (NN I))
+          (VP (VBD did) (RB n't)
+            (VP (VB down-vote)
+              (NP (PRP you)))))))
+    (. .)))
+
+dep('s-4, 1-1)
+nsubj('s-4, That-3)
+root(ROOT-0, 's-4)
+amod(I-8, reasonable-5)
+nn(I-8, .2-6)
+nsubj(down-vote-11, I-8)
+aux(down-vote-11, did-9)
+neg(down-vote-11, n't-10)
+ccomp('s-4, down-vote-11)
+dobj(down-vote-11, you-12)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (NNP I) (NNP STILL))
+    (VP (MD ca) (RB n't)
+      (VP (VB think)
+        (PP (IN of)
+          (NP
+            (NP (JJ good) (NN argument))
+            (PP (IN against)
+              (NP (PRP$ your) (JJ gay) (NNS animals) (NN list)))))
+        (NP (CD .3))
+        (-RRB- -RRB-)
+        (ADVP (UH OK))))))
+
+advmod(think-7, However-1)
+nn(STILL-4, I-3)
+nsubj(think-7, STILL-4)
+aux(think-7, ca-5)
+neg(think-7, n't-6)
+root(ROOT-0, think-7)
+amod(argument-10, good-9)
+prep_of(think-7, argument-10)
+poss(list-15, your-12)
+amod(list-15, gay-13)
+nn(list-15, animals-14)
+prep_against(argument-10, list-15)
+dobj(think-7, .3-16)
+advmod(think-7, OK-18)
+

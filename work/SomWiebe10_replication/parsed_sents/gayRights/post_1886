@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (NP (NNP lets))
+    (VP (VBP think)
+      (PP (IN about)
+        (NP (DT this))))
+    (: ...)))
+
+dep(think-4, Well-1)
+nsubj(think-4, lets-3)
+root(ROOT-0, think-4)
+prep_about(think-4, this-6)
+
+(ROOT
+  (S
+    (NP (WDT Which))
+    (VP (VBZ is)
+      (ADVP (RBR easier))
+      (NP (CD :1)))
+    (. .)))
+
+nsubj(:1-4, Which-1)
+cop(:1-4, is-2)
+advmod(:1-4, easier-3)
+root(ROOT-0, :1-4)
+
+(ROOT
+  (S
+    (VP (TO To)
+      (VP (VB force)
+        (NP (DT the) (JJ federal) (NN government))
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (JJ civil) (NNS unions))
+              (NP
+                (NP (DT the) (JJ same) (JJ exact) (NN right))
+                (PP (IN as)
+                  (NP (JJ marriages) (NNS or2)))))))))
+    (. .)))
+
+aux(force-2, To-1)
+root(ROOT-0, force-2)
+det(government-5, the-3)
+amod(government-5, federal-4)
+dobj(force-2, government-5)
+aux(give-7, to-6)
+xcomp(force-2, give-7)
+amod(unions-9, civil-8)
+iobj(give-7, unions-9)
+det(right-13, the-10)
+amod(right-13, same-11)
+amod(right-13, exact-12)
+dobj(give-7, right-13)
+amod(or2-16, marriages-15)
+prep_as(right-13, or2-16)
+
+(ROOT
+  (S
+    (VP (TO To)
+      (VP (VB force)
+        (NP
+          (NP (PRP$ their) (NN version))
+          (PP (IN of)
+            (NP (NN marriage))))
+        (PP (IN down)
+          (NP
+            (NP (DT the) (NN rest))
+            (PP (IN of)
+              (NP (PRP$ our) (NNS throats)))))))
+    (. ?)))
+
+aux(force-2, To-1)
+root(ROOT-0, force-2)
+poss(version-4, their-3)
+dobj(force-2, version-4)
+prep_of(version-4, marriage-6)
+det(rest-9, the-8)
+prep_down(force-2, rest-9)
+poss(throats-12, our-11)
+prep_of(rest-9, throats-12)
+

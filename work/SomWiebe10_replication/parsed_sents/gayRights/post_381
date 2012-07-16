@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (DT NO) (NN I))
+    (VP (VBP do) (RB not)
+      (VP (VB believe)
+        (NP
+          (NP (DT that))
+          (PP (IN for)
+            (NP (DT a) (NN min))))))
+    (: ...)))
+
+det(I-2, NO-1)
+nsubj(believe-5, I-2)
+aux(believe-5, do-3)
+neg(believe-5, not-4)
+root(ROOT-0, believe-5)
+dobj(believe-5, that-6)
+det(min-9, a-8)
+prep_for(that-6, min-9)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN arguement))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBP use)
+              (S
+                (VP (TO to)
+                  (VP (VB defend)
+                    (NP (PRP themselves))
+                    (PP (IN for) (IN in)
+                      (NP (PRP$ my) (NN opinion)
+                        (S
+                          (VP (VBG being)
+                            (ADJP (JJ weird))))))))))))))
+    (. .)))
+
+nsubj(arguement-4, That-1)
+cop(arguement-4, is-2)
+det(arguement-4, the-3)
+root(ROOT-0, arguement-4)
+dobj(use-6, arguement-4)
+nsubj(use-6, they-5)
+xsubj(defend-8, they-5)
+rcmod(arguement-4, use-6)
+aux(defend-8, to-7)
+xcomp(use-6, defend-8)
+dobj(defend-8, themselves-9)
+dep(defend-8, for-10)
+poss(opinion-13, my-12)
+prep_in(defend-8, opinion-13)
+cop(weird-15, being-14)
+dep(opinion-13, weird-15)
+

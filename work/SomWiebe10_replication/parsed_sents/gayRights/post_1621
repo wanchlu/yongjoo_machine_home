@@ -1,0 +1,100 @@
+(ROOT
+  (S (`` ``)
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (JJ major) (NN point))
+            (SBAR (IN that)
+              (S
+                (NP (NN everyone))
+                (VP (VBZ is)
+                  (ADJP (VBG missing))))))
+          (VP (VBZ is)
+            (SBAR (IN that)
+              (S
+                (NP (JJ few) (NNS people))
+                (VP (MD would)
+                  (VP (VB get)
+                    (ADJP (JJ married))
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBD were) (RB not)
+                          (PP (IN for)
+                            (NP
+                              (NP (DT the) (NNS benefits))
+                              (VP (VBN attached)
+                                (PP (TO to)
+                                  (NP (PDT such) (DT a) (NN union)))))))))))))))))
+    (. .)))
+
+nsubj(think-3, I-2)
+root(ROOT-0, think-3)
+det(point-6, the-4)
+amod(point-6, major-5)
+nsubj(is-11, point-6)
+complm(missing-10, that-7)
+nsubj(missing-10, everyone-8)
+cop(missing-10, is-9)
+dep(point-6, missing-10)
+ccomp(think-3, is-11)
+complm(married-17, that-12)
+amod(people-14, few-13)
+nsubj(married-17, people-14)
+aux(married-17, would-15)
+dep(married-17, get-16)
+ccomp(is-11, married-17)
+mark(were-20, if-18)
+nsubj(were-20, it-19)
+advcl(married-17, were-20)
+neg(were-20, not-21)
+det(benefits-24, the-23)
+prep_for(were-20, benefits-24)
+partmod(benefits-24, attached-25)
+predet(union-29, such-27)
+det(union-29, a-28)
+prep_to(attached-25, union-29)
+
+(ROOT
+  (SQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VB remove)
+          (NP (DT the) (NNS benefits)))))
+    (, ,) (MD would)
+    (NP (NN anyone))
+    (VP (VB wish)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (ADJP (JJ married))))))
+    (. ?)))
+
+mark(remove-3, If-1)
+nsubj(remove-3, you-2)
+advcl(wish-9, remove-3)
+det(benefits-5, the-4)
+dobj(remove-3, benefits-5)
+aux(wish-9, would-7)
+nsubj(wish-9, anyone-8)
+xsubj(married-12, anyone-8)
+root(ROOT-0, wish-9)
+aux(married-12, to-10)
+dep(married-12, get-11)
+xcomp(wish-9, married-12)
+
+(ROOT
+  (S (`` ``)
+    (NP (PRP you))
+    (VP (VBP list)
+      (NP (DT no) (NNS benefits)))
+    (. .)))
+
+nsubj(list-3, you-2)
+root(ROOT-0, list-3)
+det(benefits-5, no-4)
+dobj(list-3, benefits-5)
+

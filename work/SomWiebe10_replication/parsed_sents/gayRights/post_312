@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (ADVP (RB Sorry))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB totally))
+    (VP (VBZ misunderstood)
+      (NP (PRP you)))
+    (. .)))
+
+advmod(misunderstood-5, Sorry-1)
+nsubj(misunderstood-5, I-3)
+advmod(misunderstood-5, totally-4)
+root(ROOT-0, misunderstood-5)
+dobj(misunderstood-5, you-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VB apologize)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN bottom))
+          (PP (IN of)
+            (NP (PRP$ my) (JJ hard) (NN drive))))))
+    (. .)))
+
+nsubj(apologize-2, I-1)
+root(ROOT-0, apologize-2)
+det(bottom-5, the-4)
+prep_from(apologize-2, bottom-5)
+poss(drive-9, my-7)
+amod(drive-9, hard-8)
+prep_of(bottom-5, drive-9)
+
+(ROOT
+  (S (: :)
+    (S
+      (INTJ (UH -RRB-) (UH Yes))
+      (, ,)
+      (NP (NN kitty))
+      (VP (VBZ is)
+        (VP
+          (VP (VBG wearing)
+            (SBAR
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT some))
+                  (VP (VBP consider)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (NP (DT a) (JJ lime) (NN helmet))))))))
+              (, ,)
+              (CC but)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP I))
+                  (VP (VBP suspect)
+                    (SBAR
+                      (S
+                        (VP (VBZ is)
+                          (ADJP (RBS most) (JJ likely)))
+                        (NP (DT a) (NNP Pummelo)))))))))
+          (PRN (-LRB- -LRB-)
+            (CC or)
+            (VB Pomelo) (-RRB- -RRB-)))))
+    (. .)))
+
+dep(wearing-7, Yes-3)
+nsubj(wearing-7, kitty-5)
+aux(wearing-7, is-6)
+root(ROOT-0, wearing-7)
+dep(consider-10, what-8)
+nsubj(consider-10, some-9)
+xsubj(helmet-15, some-9)
+dep(wearing-7, consider-10)
+aux(helmet-15, to-11)
+cop(helmet-15, be-12)
+det(helmet-15, a-13)
+amod(helmet-15, lime-14)
+xcomp(consider-10, helmet-15)
+dep(suspect-20, what-18)
+nsubj(likely-23, what-18)
+nsubj(suspect-20, I-19)
+dep(wearing-7, suspect-20)
+conj_but(consider-10, suspect-20)
+cop(likely-23, is-21)
+advmod(likely-23, most-22)
+ccomp(suspect-20, likely-23)
+det(Pummelo-25, a-24)
+dep(likely-23, Pummelo-25)
+dep(wearing-7, or-27)
+dep(or-27, Pomelo-28)
+
+(ROOT
+  (NP
+    (NP (NNS Thanks))
+    (PP (IN for)
+      (NP (DT the) (NN info)))
+    (. .)))
+
+root(ROOT-0, Thanks-1)
+det(info-4, the-3)
+prep_for(Thanks-1, info-4)
+

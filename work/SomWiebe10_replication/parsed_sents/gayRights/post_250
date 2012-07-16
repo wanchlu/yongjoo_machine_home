@@ -1,0 +1,113 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ info)
+      (PP (IN from)
+        (NP (CD 1991))))
+    (, ,)
+    (NP (CD 1996))
+    (, ,)
+    (NP (CD 2003))
+    (, ,)
+    (NP (CD 2004))
+    (: ...)))
+
+dep(1996-5, info-1)
+prep_from(info-1, 1991-3)
+root(ROOT-0, 1996-5)
+dep(1996-5, 2003-7)
+dep(1996-5, 2004-9)
+
+(ROOT
+  (NP
+    (NP (NN nothing))
+    (PP (IN from)
+      (NP (CD 2005-6-7-8)))
+    (: ...)))
+
+root(ROOT-0, nothing-1)
+prep_from(nothing-1, 2005-6-7-8-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP APA))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ has)
+            (VP (VBN info)
+              (PP (IN from)
+                (NP
+                  (NP (CD 5))
+                  (, ,)
+                  (NP (CD 6) (, ,) (CD 7) (, ,)
+                    (CC and)
+                    (CD 8))
+                  (, ,))))))))
+    (VP (VBZ disagrees)
+      (PP (IN with)
+        (NP (DT this) (NN notion)))
+      (SBAR (IN that)
+        (S
+          (NP (NNS children))
+          (VP (VBP are)
+            (VP (VBG disadvantaged)
+              (PP (IN with)
+                (NP (JJ gay) (NNS parents))))))))
+    (: ...)))
+
+nsubj(info-4, APA-1)
+nsubj(disagrees-15, APA-1)
+aux(info-4, has-3)
+rcmod(APA-1, info-4)
+prep_from(info-4, 5-6)
+appos(5-6, 6-8)
+num(6-8, 7-10)
+appos(5-6, 8-13)
+conj_and(6-8, 8-13)
+root(ROOT-0, disagrees-15)
+det(notion-18, this-17)
+prep_with(disagrees-15, notion-18)
+complm(disadvantaged-22, that-19)
+nsubj(disadvantaged-22, children-20)
+aux(disadvantaged-22, are-21)
+ccomp(disagrees-15, disadvantaged-22)
+amod(parents-25, gay-24)
+prep_with(disadvantaged-22, parents-25)
+
+(ROOT
+  (S (IN So)
+    (NP (FW i))
+    (VP (VBP guess)
+      (SBAR
+        (S
+          (NP (JJ recent) (NN research) (NN doesnt))
+          (VP (VBP indicate)
+            (S
+              (NP (NNS children))
+              (VP (VBG doing)
+                (ADVP (RBS best))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (VP (VBN raised)
+                      (PP (IN by)
+                        (NP (JJ married) (JJ mom\/dad) (NNS families))))))))))))
+    (. .)))
+
+dep(guess-3, So-1)
+nsubj(guess-3, i-2)
+root(ROOT-0, guess-3)
+amod(doesnt-6, recent-4)
+nn(doesnt-6, research-5)
+nsubj(indicate-7, doesnt-6)
+ccomp(guess-3, indicate-7)
+nsubj(doing-9, children-8)
+dep(indicate-7, doing-9)
+advmod(doing-9, best-10)
+advmod(raised-12, when-11)
+advcl(doing-9, raised-12)
+amod(families-16, married-14)
+amod(families-16, mom\/dad-15)
+prep_by(raised-12, families-16)
+

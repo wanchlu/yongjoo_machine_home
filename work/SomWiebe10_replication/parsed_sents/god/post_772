@@ -1,0 +1,140 @@
+(ROOT
+  (S
+    (INTJ (NN Listen) (, ,) (NN folks))
+    (, ,)
+    (NP (DT this) (NN debate))
+    (VP (VBD was) (RB not)
+      (ADVP (RB really))
+      (VP (VBN worded)
+        (ADVP (RB very) (RB well))))
+    (. .)))
+
+dep(worded-10, Listen-1)
+dep(Listen-1, folks-3)
+det(debate-6, this-5)
+nsubjpass(worded-10, debate-6)
+auxpass(worded-10, was-7)
+neg(worded-10, not-8)
+advmod(worded-10, really-9)
+root(ROOT-0, worded-10)
+advmod(well-12, very-11)
+advmod(worded-10, well-12)
+
+(ROOT
+  (S
+    (NP (NNP Life))
+    (VP (VBZ is)
+      (PP (IN worth)
+        (NP (PRP it)))
+      (ADVP (DT no) (NN matter)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (NNS people))
+            (VP (VBP believe))))))
+    (. .)))
+
+nsubj(is-2, Life-1)
+root(ROOT-0, is-2)
+prep_worth(is-2, it-4)
+dep(matter-6, no-5)
+advmod(is-2, matter-6)
+dobj(believe-9, what-7)
+nsubj(believe-9, people-8)
+dep(matter-6, believe-9)
+
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBP believe)
+          (PP (IN in)
+            (NP
+              (NP (NNP God))
+              (, ,)
+              (NP (NN fine)))))))
+    (. !)))
+
+mark(believe-3, If-1)
+nsubj(believe-3, they-2)
+root(ROOT-0, believe-3)
+prep_in(believe-3, God-5)
+appos(God-5, fine-7)
+
+(ROOT
+  (S
+    (VP (VB Let)
+      (SBAR
+        (S
+          (NP (PRP them))
+          (VP (VBP believe)))))
+    (. .)))
+
+root(ROOT-0, Let-1)
+nsubj(believe-3, them-2)
+ccomp(Let-1, believe-3)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBP do) (RB n't))))
+    (, ,)
+    (VP (VB fine))
+    (. !)))
+
+mark(do-3, If-1)
+nsubj(do-3, they-2)
+advcl(fine-6, do-3)
+neg(do-3, n't-4)
+root(ROOT-0, fine-6)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB matter)))
+    (. ?)))
+
+dobj(matter-4, What-1)
+aux(matter-4, does-2)
+nsubj(matter-4, it-3)
+root(ROOT-0, matter-4)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (DT this))
+      (VP (VB matter)
+        (PP (TO to)
+          (NP (NN anybody)))))
+    (. ?)))
+
+advmod(matter-4, Why-1)
+aux(matter-4, should-2)
+nsubj(matter-4, this-3)
+root(ROOT-0, matter-4)
+prep_to(matter-4, anybody-6)
+
+(ROOT
+  (S
+    (NP (NNP Life))
+    (VP (VBZ is)
+      (ADJP (JJ worth))
+      (S
+        (VP (VBG living)
+          (ADVP (RB pretty) (RB much) (RB anytime)))))
+    (. .)))
+
+nsubj(worth-3, Life-1)
+cop(worth-3, is-2)
+root(ROOT-0, worth-3)
+xcomp(worth-3, living-4)
+advmod(anytime-7, pretty-5)
+advmod(anytime-7, much-6)
+advmod(living-4, anytime-7)
+

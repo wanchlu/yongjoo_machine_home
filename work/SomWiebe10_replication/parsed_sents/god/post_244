@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (PRP It) (POS 's))
+      (NN mass))
+    (VP
+      (VP (MD can) (RB not)
+        (VP (VB be)
+          (VP (VBN created))))
+      (CC or)
+      (VP (VBD destroyed) (RB not)
+        (VP (VB matter))))
+    (. .)))
+
+poss(mass-3, It-1)
+nsubjpass(created-7, mass-3)
+nsubjpass(destroyed-9, mass-3)
+aux(created-7, can-4)
+neg(created-7, not-5)
+auxpass(created-7, be-6)
+root(ROOT-0, created-7)
+conj_or(created-7, destroyed-9)
+neg(destroyed-9, not-10)
+dep(destroyed-9, matter-11)
+
+(ROOT
+  (S
+    (NP (NNP Energy))
+    (VP (VBZ has)
+      (NP (NN mass)))
+    (. .)))
+
+nsubj(has-2, Energy-1)
+root(ROOT-0, has-2)
+dobj(has-2, mass-3)
+
+(ROOT
+  (S
+    (VP (VB Get)
+      (NP (DT the) (NN science) (NN right)))
+    (. .)))
+
+root(ROOT-0, Get-1)
+det(right-4, the-2)
+nn(right-4, science-3)
+dobj(Get-1, right-4)
+

@@ -1,0 +1,70 @@
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Well))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP you))
+          (VP (VBP get)
+            (ADVP (RB right) (RB down))
+            (PP (TO to)
+              (NP (PRP it)))))))
+    (: ...)))
+
+root(ROOT-0, Well-1)
+tmod(get-4, Well-1)
+advmod(get-4, when-2)
+nsubj(get-4, you-3)
+dep(Well-1, get-4)
+advmod(down-6, right-5)
+advmod(get-4, down-6)
+prep_to(get-4, it-8)
+
+(ROOT
+  (S
+    (ADJP (VB No.))
+    (. .)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (PRP he))
+      (VP (VBD did)
+        (S
+          (S
+            (VP (VB exist)
+              (ADVP (RB then))))
+          (SBARQ
+            (WHADVP (WRB why))
+            (SQ (VBZ does) (RB n't)
+              (NP (PRP he))
+              (VP (VB do)
+                (NP (NN something))
+                (PP (IN about)
+                  (NP
+                    (NP (DT the) (JJ global) (JJ financial) (NN crisis))
+                    (CC and)
+                    (NP (NN terrorism))))))
+            (. ?)))))))
+
+mark(did-3, If-1)
+nsubj(did-3, he-2)
+root(ROOT-0, did-3)
+dep(did-3, exist-4)
+advmod(exist-4, then-5)
+advmod(do-10, why-6)
+aux(do-10, does-7)
+neg(do-10, n't-8)
+nsubj(do-10, he-9)
+dep(exist-4, do-10)
+dobj(do-10, something-11)
+det(crisis-16, the-13)
+amod(crisis-16, global-14)
+amod(crisis-16, financial-15)
+prep_about(do-10, crisis-16)
+prep_about(do-10, terrorism-18)
+conj_and(crisis-16, terrorism-18)
+

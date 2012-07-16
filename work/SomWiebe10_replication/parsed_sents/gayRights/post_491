@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP you))
+          (VP (VBP say)))))
+    (NP (DT that) (NNS people))
+    (VP (VBP are)
+      (ADVP (RB NOT))
+      (VP (VBN born)
+        (NP (JJ gay))
+        (PP (IN despite)
+          (S
+            (VP (VBG admitting)
+              (S
+                (VP (VBG being)
+                  (VP (VBN born)
+                    (S
+                      (VP (VBG gay)
+                        (NP (PRP yourself))))))))))))
+    (. .)))
+
+dep(born-9, In-1)
+advmod(say-4, why-2)
+nsubj(say-4, you-3)
+pcomp(In-1, say-4)
+det(people-6, that-5)
+nsubjpass(born-9, people-6)
+auxpass(born-9, are-7)
+neg(born-9, NOT-8)
+root(ROOT-0, born-9)
+dobj(born-9, gay-10)
+prepc_despite(born-9, admitting-12)
+auxpass(born-14, being-13)
+xcomp(admitting-12, born-14)
+xcomp(born-14, gay-15)
+dobj(gay-15, yourself-16)
+

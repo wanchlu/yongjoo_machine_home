@@ -1,0 +1,139 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Internet)
+      (CC or)
+      (RB not))
+    (: ...)))
+
+root(ROOT-0, Internet-1)
+conj_or(Internet-1, not-3)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ IS)
+      (NP
+        (NP (DT a) (NNP DEBATE) (NNP SITE))
+        (CC and)
+        (RB not)
+        (NP (DT a) (NN garbage) (NN pail))))
+    (. !)))
+
+nsubj(SITE-5, This-1)
+cop(SITE-5, IS-2)
+det(SITE-5, a-3)
+nn(SITE-5, DEBATE-4)
+root(ROOT-0, SITE-5)
+conj_and(SITE-5, not-7)
+neg(SITE-5, not-7)
+det(pail-10, a-8)
+nn(pail-10, garbage-9)
+dep(SITE-5, pail-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (ADVP (RB certainly))
+      (VP (VBZ does) (RB n't)
+        (VP (VB have)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADJP (JJ C-SPAN))))))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJ nice))
+          (SBAR (IN if)
+            (S
+              (NP
+                (NP (DT this) (NN site))
+                (CC and)
+                (NP
+                  (NP (DT the) (NNS people))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VB debate)
+                        (ADVP (RB here)))))))
+              (VP (VBD were)
+                (VP (VBN taken)
+                  (ADJP
+                    (ADVP
+                      (NP (DT a) (RB bit))
+                      (RBR more))
+                    (JJ seriouly))
+                  (PP (IN than)
+                    (NP (DT this))))))))))
+    (. !)))
+
+nsubj(have-5, It-1)
+xsubj(C-SPAN-8, It-1)
+advmod(have-5, certainly-2)
+aux(have-5, does-3)
+neg(have-5, n't-4)
+root(ROOT-0, have-5)
+aux(C-SPAN-8, to-6)
+cop(C-SPAN-8, be-7)
+xcomp(have-5, C-SPAN-8)
+nsubj(nice-13, it-10)
+aux(nice-13, would-11)
+cop(nice-13, be-12)
+conj_but(have-5, nice-13)
+mark(taken-24, if-14)
+det(site-16, this-15)
+nsubjpass(taken-24, site-16)
+det(people-19, the-18)
+conj_and(site-16, people-19)
+nsubj(debate-21, people-19)
+nsubjpass(taken-24, people-19)
+rcmod(people-19, debate-21)
+advmod(debate-21, here-22)
+auxpass(taken-24, were-23)
+advcl(nice-13, taken-24)
+det(bit-26, a-25)
+npadvmod(more-27, bit-26)
+advmod(seriouly-28, more-27)
+acomp(taken-24, seriouly-28)
+prep_than(taken-24, this-30)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is) (RB n't)
+        (ADJP (JJ open)
+          (NP (JJ mike) (NN night))
+          (PP (IN at)
+            (NP (DT The) (NNP Comedy) (NNP Club))))))
+    (: ...)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP it))
+          (VP (VBD were))))
+      (, ,)
+      (NP (PRP he))
+      (VP (MD 'd)
+        (VP (VB lose))))
+    (. .)))
+
+nsubj(open-4, This-1)
+cop(open-4, is-2)
+neg(open-4, n't-3)
+root(ROOT-0, open-4)
+amod(night-6, mike-5)
+tmod(open-4, night-6)
+det(Club-10, The-8)
+nn(Club-10, Comedy-9)
+prep_at(open-4, Club-10)
+mark(were-14, if-12)
+nsubj(were-14, it-13)
+advcl(lose-18, were-14)
+nsubj(lose-18, he-16)
+aux(lose-18, 'd-17)
+parataxis(open-4, lose-18)
+

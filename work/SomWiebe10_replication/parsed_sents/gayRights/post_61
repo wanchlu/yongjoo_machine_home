@@ -1,0 +1,128 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (S
+        (VP (VBP Do) (RB n't)
+          (VP (VB ask))))
+      (VP (VBP do) (RB n't)
+        (VP (VB tell))))
+    ('' '')
+    (VP (VBZ is) (RB not)
+      (VP (VBG harming)))
+    (NP (NN recruiting\/retention))
+    (. .)))
+
+aux(ask-4, Do-2)
+neg(ask-4, n't-3)
+csubj(tell-7, ask-4)
+aux(tell-7, do-5)
+neg(tell-7, n't-6)
+ccomp(harming-11, tell-7)
+csubj(harming-11, tell-7)
+aux(harming-11, is-9)
+neg(harming-11, not-10)
+root(ROOT-0, harming-11)
+dep(harming-11, recruiting\/retention-12)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP Bill) (NNS targets))
+      (`` ``)
+      (VP (VBP do) (RB n't)
+        (VP (VB ask))))
+    (, ,)
+    (VP (VBP do) (RB n't)
+      (VP (VB tell) ('' '')))
+    ('' '') (. .)))
+
+nn(targets-3, Bill-2)
+nsubj(ask-7, targets-3)
+aux(ask-7, do-5)
+neg(ask-7, n't-6)
+ccomp(tell-11, ask-7)
+aux(tell-11, do-9)
+neg(tell-11, n't-10)
+root(ROOT-0, tell-11)
+
+(ROOT
+  (NP (NNP USA) (NNP Today) (. .)))
+
+nn(Today-2, USA-1)
+root(ROOT-0, Today-2)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP March) (CD 12) (, ,) (CD 2007))
+      (`` ``)
+      (NP (NNP Marine) (NNP Maj.) (NNP Stewart) (NNP Upton))
+      (, ,)
+      (NP (DT a) (NNP Pentagon) (NN spokesman))
+      (, ,))
+    (VP (VBZ says)
+      (NP
+        (NP
+          (QP (RB nearly) (CD 11,000)))
+        (PP (IN in)
+          (NP (NN war) (NNS zones)))))
+    (. .)))
+
+nsubj(says-15, March-1)
+num(March-1, 12-2)
+num(March-1, 2007-4)
+nn(Upton-9, Marine-6)
+nn(Upton-9, Maj.-7)
+nn(Upton-9, Stewart-8)
+dep(March-1, Upton-9)
+det(spokesman-13, a-11)
+nn(spokesman-13, Pentagon-12)
+appos(March-1, spokesman-13)
+root(ROOT-0, says-15)
+quantmod(11,000-17, nearly-16)
+dobj(says-15, 11,000-17)
+nn(zones-20, war-19)
+prep_in(11,000-17, zones-20)
+
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (PRP We))
+      (VP (VBP are)
+        (VP (VBG enforcing)
+          (NP (DT the) (NN policy)))))
+    (, ,) ('' '')
+    (NP (PRP he))
+    (VP (VBZ says))
+    (. .)))
+
+nsubj(enforcing-4, We-2)
+aux(enforcing-4, are-3)
+ccomp(says-10, enforcing-4)
+det(policy-6, the-5)
+dobj(enforcing-4, policy-6)
+nsubj(says-10, he-9)
+root(ROOT-0, says-10)
+
+(ROOT
+  (S (`` ``)
+    (NP (PRP We))
+    (VP (VBP are) (RB not)
+      (VP (VBG experiencing)
+        (NP (DT any) (NNS problems))
+        (PP (IN with)
+          (NP (NN recruiting)
+            (CC and)
+            (NN retention)))))
+    (. .)))
+
+nsubj(experiencing-5, We-2)
+aux(experiencing-5, are-3)
+neg(experiencing-5, not-4)
+root(ROOT-0, experiencing-5)
+det(problems-7, any-6)
+dobj(experiencing-5, problems-7)
+prep_with(experiencing-5, recruiting-9)
+prep_with(experiencing-5, retention-11)
+conj_and(recruiting-9, retention-11)
+

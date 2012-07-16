@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ hurts)
+              (NP (NN anyone))
+              (, ,)
+              (ADVP (RB really)))))))
+    (. .)))
+
+nsubj(think-4, I-1)
+aux(think-4, do-2)
+neg(think-4, n't-3)
+root(ROOT-0, think-4)
+nsubj(hurts-6, it-5)
+ccomp(think-4, hurts-6)
+dobj(hurts-6, anyone-7)
+advmod(hurts-6, really-9)
+
+(ROOT
+  (S
+    (PP (IN Except)
+      (PP (IN for)
+        (ADVP (RB maybe))))
+    (NP
+      (NP (NNS people))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP
+            (VP (VBP are)
+              (VP (VBN indecisive)
+                (PP (IN about)
+                  (NP (PRP$ their) (JJ sexual) (NN orientation)))))
+            (CC and)
+            (VP (VBP are)
+              (VP (VBG losing)))))))
+    (VP (VBP sleep)
+      (PRT (RP over))
+      (NP (PRP it)))
+    (. .)))
+
+prepc_except_for(sleep-15, for-2)
+pcomp(sleep-15, maybe-3)
+nsubjpass(indecisive-7, people-4)
+nsubjpass(losing-14, people-4)
+nsubj(sleep-15, people-4)
+auxpass(indecisive-7, are-6)
+rcmod(people-4, indecisive-7)
+poss(orientation-11, their-9)
+amod(orientation-11, sexual-10)
+prep_about(indecisive-7, orientation-11)
+aux(losing-14, are-13)
+rcmod(people-4, losing-14)
+conj_and(indecisive-7, losing-14)
+root(ROOT-0, sleep-15)
+prt(sleep-15, over-16)
+dobj(sleep-15, it-17)
+

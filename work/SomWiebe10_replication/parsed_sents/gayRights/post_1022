@@ -1,0 +1,134 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Being) (NNP gay))
+      (ADVP (RB alone))
+      (VP (VBZ is)
+        (ADJP (JJ wrong))))
+    (, ,) (IN so)
+    (S
+      (S
+        (VP (TO to)
+          (VP (VB become)
+            (VP (VBN united)
+              (PP (IN in)
+                (NP (NN marriage)))
+              (PP (IN with)
+                (NP
+                  (NP (NN someone))
+                  (PP (IN of)
+                    (NP (DT the) (JJ same) (NN sex)))))))))
+      (VP (VBZ is)
+        (ADJP (JJ wrong))))
+    (. .)))
+
+nn(gay-2, Being-1)
+nsubj(wrong-5, gay-2)
+advmod(wrong-5, alone-3)
+cop(wrong-5, is-4)
+root(ROOT-0, wrong-5)
+dep(wrong-5, so-7)
+aux(united-10, to-8)
+auxpass(united-10, become-9)
+csubj(wrong-20, united-10)
+prep_in(united-10, marriage-12)
+prep_with(united-10, someone-14)
+det(sex-18, the-16)
+amod(sex-18, same-17)
+prep_of(someone-14, sex-18)
+cop(wrong-20, is-19)
+ccomp(wrong-5, wrong-20)
+
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (TO to)
+        (NP (PRP$ my) (JJ religious) (NNS beliefs))))
+    (NP (PRP I))
+    (VP (VBP beleive)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBN married))))))
+          (VP (MD should)
+            (VP
+              (VP (VB have)
+                (NP (DT a) (NN family)))
+              (CC and)
+              (VP (VB reproduce)))))))
+    (. .)))
+
+prepc_according_to(beleive-7, to-2)
+poss(beliefs-5, my-3)
+amod(beliefs-5, religious-4)
+pobj(beleive-7, beliefs-5)
+nsubj(beleive-7, I-6)
+root(ROOT-0, beleive-7)
+complm(have-14, that-8)
+nsubjpass(married-12, people-9)
+nsubj(have-14, people-9)
+nsubj(reproduce-18, people-9)
+auxpass(married-12, are-11)
+rcmod(people-9, married-12)
+aux(have-14, should-13)
+ccomp(beleive-7, have-14)
+det(family-16, a-15)
+dobj(have-14, family-16)
+ccomp(beleive-7, reproduce-18)
+conj_and(have-14, reproduce-18)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (ADJP (RB only) (JJ possible))
+        (SBAR (IN if)
+          (S
+            (NP
+              (NP (DT a) (NN man))
+              (CC and)
+              (NP (DT a) (NN woman)))
+            (VP (VBP are)
+              (VP (VBN married)))))))
+    (, ,) (IN so)
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (JJ same) (NN sex) (NN marriage))
+            (VP (MD should) (RB not)
+              (VP (VB be)
+                (VP (VBN allowed))))))))
+    (. .)))
+
+nsubj(possible-4, This-1)
+cop(possible-4, is-2)
+advmod(possible-4, only-3)
+root(ROOT-0, possible-4)
+mark(married-12, if-5)
+det(man-7, a-6)
+nsubjpass(married-12, man-7)
+det(woman-10, a-9)
+conj_and(man-7, woman-10)
+nsubjpass(married-12, woman-10)
+auxpass(married-12, are-11)
+advcl(possible-4, married-12)
+dep(possible-4, so-14)
+nsubj(believe-16, I-15)
+ccomp(possible-4, believe-16)
+complm(allowed-24, that-17)
+amod(marriage-20, same-18)
+nn(marriage-20, sex-19)
+nsubjpass(allowed-24, marriage-20)
+aux(allowed-24, should-21)
+neg(allowed-24, not-22)
+auxpass(allowed-24, be-23)
+ccomp(believe-16, allowed-24)
+

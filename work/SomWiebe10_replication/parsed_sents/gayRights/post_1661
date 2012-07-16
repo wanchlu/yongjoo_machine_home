@@ -1,0 +1,47 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS fathers))
+      (CC and)
+      (NP (DT a) (NNS daughters) (NN cant)))
+    (VP (VBP get)
+      (NP (JJ married) (NN bc))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP you))
+          (VP (VBD inbreed)
+            (S
+              (NP (DT the) (NNS children))
+              (VP
+                (VP (VB come)
+                  (PRT (RP out))
+                  (PP (IN with)
+                    (NP (VBG missing) (NNS chromosomes))))
+                (CC and)
+                (VP (VB cross)
+                  (NP (NNS eyes)))))))))
+    (. .)))
+
+nsubj(get-6, fathers-1)
+det(cant-5, a-3)
+nn(cant-5, daughters-4)
+conj_and(fathers-1, cant-5)
+nsubj(get-6, cant-5)
+root(ROOT-0, get-6)
+amod(bc-8, married-7)
+dobj(get-6, bc-8)
+advmod(inbreed-11, when-9)
+nsubj(inbreed-11, you-10)
+advcl(get-6, inbreed-11)
+det(children-13, the-12)
+nsubj(come-14, children-13)
+nsubj(cross-20, children-13)
+ccomp(inbreed-11, come-14)
+prt(come-14, out-15)
+amod(chromosomes-18, missing-17)
+prep_with(come-14, chromosomes-18)
+ccomp(inbreed-11, cross-20)
+conj_and(come-14, cross-20)
+dobj(cross-20, eyes-21)
+

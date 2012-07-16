@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP (NNP Go))
+    (VP (VBP kill)
+      (NP (PRP yourself)))
+    (. .)))
+
+nsubj(kill-2, Go-1)
+root(ROOT-0, kill-2)
+dobj(kill-2, yourself-3)
+
+(ROOT
+  (S
+    (NP (NNS Gays))
+    (VP (MD will)
+      (ADVP (RB soon))
+      (VP (VB be)
+        (VP
+          (VP (VBN hunted)
+            (PRT (RP down)))
+          (CC and)
+          (VP (VBN slaughtered)
+            (ADVP (RB anyway))))))
+    (. .)))
+
+nsubjpass(hunted-5, Gays-1)
+nsubjpass(slaughtered-8, Gays-1)
+aux(hunted-5, will-2)
+advmod(hunted-5, soon-3)
+auxpass(hunted-5, be-4)
+root(ROOT-0, hunted-5)
+prt(hunted-5, down-6)
+conj_and(hunted-5, slaughtered-8)
+advmod(slaughtered-8, anyway-9)
+

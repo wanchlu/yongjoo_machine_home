@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (JJ Religious) (NNS organizations))
+    (VP (VBP oppose)
+      (SBAR
+        (S
+          (NP (JJ homosexuality) (JJ Many) (JJ religious) (NNS bodies))
+          (VP (VBP oppose)
+            (NP
+              (NP (NN homosexuality))
+              (CC and)
+              (PRN (, ,)
+                (ADVP (RB therefore))
+                (, ,))
+              (NP (JJ gay) (NN marriage)))))))
+    (. .)))
+
+amod(organizations-2, Religious-1)
+nsubj(oppose-3, organizations-2)
+root(ROOT-0, oppose-3)
+amod(bodies-7, homosexuality-4)
+amod(bodies-7, Many-5)
+amod(bodies-7, religious-6)
+nsubj(oppose-8, bodies-7)
+ccomp(oppose-3, oppose-8)
+dobj(oppose-8, homosexuality-9)
+dep(homosexuality-9, therefore-12)
+amod(marriage-15, gay-14)
+dobj(oppose-8, marriage-15)
+conj_and(homosexuality-9, marriage-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJ Many))
+      (PP (IN of)
+        (NP (DT these) (NNS organizations))))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (JJ moral) (NN foundation))
+        (PP (IN of)
+          (NP (JJ national) (NNS constitutions)
+            (CC and)
+            (NNS principles)))))
+    (. .)))
+
+nsubj(foundation-8, Many-1)
+det(organizations-4, these-3)
+prep_of(Many-1, organizations-4)
+cop(foundation-8, are-5)
+det(foundation-8, the-6)
+amod(foundation-8, moral-7)
+root(ROOT-0, foundation-8)
+amod(constitutions-11, national-10)
+prep_of(foundation-8, constitutions-11)
+prep_of(foundation-8, principles-13)
+conj_and(constitutions-11, principles-13)
+
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP
+          (NP (DT a) (NN separation))
+          (PP (IN of)
+            (NP (NN church)
+              (CC and)
+              (NN state))))
+        (VP (MD should)
+          (VP (VB be)
+            (VP (VBN upheld))))))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ moral) (NN guidance))
+      (PP (IN of)
+        (NP (JJ religious) (NNS organizations))))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (VP (VBN denied))))
+    (. .)))
+
+mark(upheld-10, While-1)
+det(separation-3, a-2)
+nsubjpass(upheld-10, separation-3)
+prep_of(separation-3, church-5)
+prep_of(separation-3, state-7)
+conj_and(church-5, state-7)
+aux(upheld-10, should-8)
+auxpass(upheld-10, be-9)
+advcl(denied-21, upheld-10)
+det(guidance-14, the-12)
+amod(guidance-14, moral-13)
+nsubjpass(denied-21, guidance-14)
+amod(organizations-17, religious-16)
+prep_of(guidance-14, organizations-17)
+aux(denied-21, should-18)
+neg(denied-21, not-19)
+auxpass(denied-21, be-20)
+root(ROOT-0, denied-21)
+

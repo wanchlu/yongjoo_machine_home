@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (NNP Being) (NNP gay))
+    (VP (VBZ is)
+      (PP (IN on)
+        (NP (DT the) (JJ same) (NN level)))
+      (PP (IN as)
+        (S
+          (VP (VBG eating)
+            (NP (DT a) (NN shrimp) (NN cocktail))))))
+    (. .)))
+
+nn(gay-2, Being-1)
+nsubj(is-3, gay-2)
+root(ROOT-0, is-3)
+det(level-7, the-5)
+amod(level-7, same-6)
+prep_on(is-3, level-7)
+prepc_as(is-3, eating-9)
+det(cocktail-12, a-10)
+nn(cocktail-12, shrimp-11)
+dobj(eating-9, cocktail-12)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBP are) (RB n't))
+      (NP (EX there))
+      (NP
+        (NP (JJ massive) (NNS anti))
+        (S
+          (NP
+            (NP (NN shrimp) (NNS groups))
+            (, ,)
+            (PP (IN with)
+              (NP (NNS schools) (NN training) (NNS people)))
+            (, ,))
+          (VP (VBG curing)
+            (NP (PRP them))
+            (PP (IN of)
+              (NP
+                (NP (PRP$ their) (JJ unnatural) (NN desire))
+                (PP (IN for)
+                  (NP (NN crab) (NNS cakes)))))))))
+    (. ?)))
+
+advmod(are-2, Why-1)
+root(ROOT-0, are-2)
+neg(are-2, n't-3)
+expl(are-2, there-4)
+amod(anti-6, massive-5)
+nsubj(are-2, anti-6)
+nn(groups-8, shrimp-7)
+nsubj(curing-15, groups-8)
+nn(people-13, schools-11)
+nn(people-13, training-12)
+prep_with(groups-8, people-13)
+dep(anti-6, curing-15)
+dobj(curing-15, them-16)
+poss(desire-20, their-18)
+amod(desire-20, unnatural-19)
+prep_of(curing-15, desire-20)
+nn(cakes-23, crab-22)
+prep_for(desire-20, cakes-23)
+

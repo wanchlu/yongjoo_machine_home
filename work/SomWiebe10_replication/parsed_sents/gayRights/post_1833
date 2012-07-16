@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD forgot)
+      (S
+        (VP (TO to)
+          (VP (VB clarify)
+            (NP
+              (NP (DT the) (NN distinction))
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (VBD was)
+                    (VP (VBG trying)
+                      (S
+                        (VP (TO to)
+                          (VP (VB make)
+                            (PP (IN between)
+                              (NP (NNS morals)
+                                (CC and)
+                                (NNS ethics)))))))))))))))
+    (. .)))
+
+nsubj(forgot-2, I-1)
+xsubj(clarify-4, I-1)
+root(ROOT-0, forgot-2)
+aux(clarify-4, to-3)
+xcomp(forgot-2, clarify-4)
+det(distinction-6, the-5)
+dobj(clarify-4, distinction-6)
+dobj(trying-9, distinction-6)
+nsubj(trying-9, I-7)
+xsubj(make-11, I-7)
+aux(trying-9, was-8)
+rcmod(distinction-6, trying-9)
+aux(make-11, to-10)
+xcomp(trying-9, make-11)
+prep_between(make-11, morals-13)
+prep_between(make-11, ethics-15)
+conj_and(morals-13, ethics-15)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Morals))
+      (VP (VBP deal)
+        (PP (IN with)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ is)))))))
+    (CC and)
+    (S
+      (NP
+        (NP (NNS ethics) (NN deal))
+        (PP (IN with)
+          (NP (DT the) (NN way) (NNS things))))
+      (VP (MD ought)
+        (S
+          (VP (TO to)
+            (VP (VB be))))))
+    (. .)))
+
+nsubj(deal-2, Morals-1)
+root(ROOT-0, deal-2)
+nsubj(is-5, what-4)
+prepc_with(deal-2, is-5)
+nn(deal-8, ethics-7)
+nsubj(ought-13, deal-8)
+xsubj(be-15, deal-8)
+det(things-12, the-10)
+nn(things-12, way-11)
+prep_with(deal-8, things-12)
+conj_and(deal-2, ought-13)
+aux(be-15, to-14)
+xcomp(ought-13, be-15)
+

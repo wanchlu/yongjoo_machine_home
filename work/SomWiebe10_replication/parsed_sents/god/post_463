@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (VP (VBN allowed)
+        (S
+          (VP (TO to)
+            (VP (VB believe)
+              (PP (IN in)
+                (NP
+                  (NP (DT both) (NNP God))
+                  (CC and)
+                  (NP (DT the) (NNP Big) (NNP Bang)))))))))
+    (. .)))
+
+nsubjpass(allowed-3, I-1)
+xsubj(believe-5, I-1)
+auxpass(allowed-3, am-2)
+root(ROOT-0, allowed-3)
+aux(believe-5, to-4)
+xcomp(allowed-3, believe-5)
+det(God-8, both-7)
+prep_in(believe-5, God-8)
+det(Bang-12, the-10)
+nn(Bang-12, Big-11)
+prep_in(believe-5, Bang-12)
+conj_and(God-8, Bang-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just) (RB so))
+    (VP (VBZ happens)
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (VBP believe)
+            (SBAR
+              (S
+                (NP (DT the) (NN creation) (NNS stories))
+                (VP (VBP are)
+                  (VP (VBG mythical)
+                    (PP (IN in)
+                      (NP (PRP$ their) (NN nature)))))))))))
+    (. .)))
+
+nsubj(happens-4, It-1)
+advmod(so-3, just-2)
+advmod(happens-4, so-3)
+root(ROOT-0, happens-4)
+complm(believe-7, that-5)
+nsubj(believe-7, I-6)
+ccomp(happens-4, believe-7)
+det(stories-10, the-8)
+nn(stories-10, creation-9)
+nsubj(mythical-12, stories-10)
+aux(mythical-12, are-11)
+ccomp(believe-7, mythical-12)
+poss(nature-15, their-14)
+prep_in(mythical-12, nature-15)
+
+(ROOT
+  (S
+    (NP (NN Nobody) (JJ important))
+    (ADVP (RB ever))
+    (VP (VBD said)
+      (S (`` ``)
+        (NP (DT the) (NNP Bible))
+        (VP (VBZ is)
+          (NP
+            (ADJP (CD 100) (NN %))
+            (NN fact))
+          (, ,) ('' '')
+          (PP (IN except) (IN for)
+            (NP
+              (NP (RB maybe) (DT a) (JJ few) (NNS Popes))
+              (PP (IN throughout)
+                (NP (DT the) (NNS ages))))))))
+    (. .)))
+
+nsubj(said-4, Nobody-1)
+amod(Nobody-1, important-2)
+advmod(said-4, ever-3)
+root(ROOT-0, said-4)
+det(Bible-7, the-6)
+nsubj(fact-11, Bible-7)
+cop(fact-11, is-8)
+number(%-10, 100-9)
+amod(fact-11, %-10)
+ccomp(said-4, fact-11)
+advmod(Popes-19, maybe-16)
+det(Popes-19, a-17)
+amod(Popes-19, few-18)
+prep_except_for(fact-11, Popes-19)
+det(ages-22, the-21)
+prep_throughout(Popes-19, ages-22)
+

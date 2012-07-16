@@ -1,0 +1,185 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBZ misunderstood)
+            (NP (DT the) (NN list))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(misunderstood-4, you-3)
+ccomp(think-2, misunderstood-4)
+det(list-6, the-5)
+dobj(misunderstood-4, list-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN list))
+        (PP (IN of)
+          (NP
+            (NP (NNS animals))
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP
+                  (NP (NNS portions))
+                  (PP (IN of)
+                    (NP (DT the) (NN population))))
+                (VP (VB exhibit)
+                  (NP (JJ homosexual) (NN behavior)))))))))
+    (. .)))
+
+nsubj(list-4, It-1)
+cop(list-4, is-2)
+det(list-4, a-3)
+root(ROOT-0, list-4)
+prep_of(list-4, animals-6)
+rel(exhibit-13, which-8)
+nsubj(exhibit-13, portions-9)
+det(population-12, the-11)
+prep_of(portions-9, population-12)
+rcmod(animals-6, exhibit-13)
+amod(behavior-15, homosexual-14)
+dobj(exhibit-13, behavior-15)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS percentages))
+      (VP (VBP vary)
+        (ADVP (RB widely))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB usually))
+      (NP (EX there))
+      (VP (VBP are)
+        (NP
+          (NP (NNS sections))
+          (PP (IN of)
+            (NP
+              (NP
+                (NP (DT the) (NN population))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP are)
+                      (ADVP (RB also))
+                      (ADJP (JJ bisexual))))))
+              (, ,)
+              (CONJP (IN in) (NN addition) (TO to))
+              (NP
+                (NP (DT those) (NNS sections))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP appear)
+                      (S
+                        (VP (TO to)
+                          (VP (VB be)
+                            (ADJP
+                              (ADVP (RB exclusively))
+                              (JJ homosexual))))))))))))))
+    (. .)))
+
+det(percentages-2, The-1)
+nsubj(vary-3, percentages-2)
+root(ROOT-0, vary-3)
+advmod(vary-3, widely-4)
+advmod(are-9, usually-7)
+expl(are-9, there-8)
+conj_and(vary-3, are-9)
+nsubj(are-9, sections-10)
+det(population-13, the-12)
+prep_of(sections-10, population-13)
+nsubj(bisexual-17, population-13)
+cop(bisexual-17, are-15)
+advmod(bisexual-17, also-16)
+rcmod(population-13, bisexual-17)
+det(sections-23, those-22)
+prep_of(sections-10, sections-23)
+conj_in(population-13, sections-23)
+nsubj(appear-25, sections-23)
+rcmod(sections-23, appear-25)
+aux(homosexual-29, to-26)
+cop(homosexual-29, be-27)
+advmod(homosexual-29, exclusively-28)
+xcomp(appear-25, homosexual-29)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT all))
+        (PP (IN of)
+          (NP (DT these) (NNS populations)))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (ADVP (RB obviously))
+      (NP
+        (NP (JJ significant) (NNS sections))
+        (PRN (-LRB- -LRB-)
+          (ADVP (RB usually))
+          (NP (DT the) (NN majority))
+          (-RRB- -RRB-))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN population))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBP are)
+                  (ADJP (JJ heterosexual))
+                  (, ,)
+                  (SBAR (IN because) (, ,)
+                    (S
+                      (SBAR (IN as)
+                        (S
+                          (NP (PRP you))
+                          (VP (VBD said))))
+                      (, ,)
+                      (NP (PRP they))
+                      (VP (MD could) (RB n't)
+                        (VP (VB survive)
+                          (PP (IN as)
+                            (NP (DT a) (NN species)))
+                          (ADVP (RB otherwise)))))))))))))
+    (. .)))
+
+prep_in(are-8, all-2)
+det(populations-5, these-4)
+prep_of(all-2, populations-5)
+expl(are-8, there-7)
+root(ROOT-0, are-8)
+advmod(are-8, obviously-9)
+amod(sections-11, significant-10)
+nsubj(are-8, sections-11)
+dep(majority-15, usually-13)
+det(majority-15, the-14)
+appos(sections-11, majority-15)
+det(population-19, the-18)
+prep_of(sections-11, population-19)
+nsubj(heterosexual-22, population-19)
+cop(heterosexual-22, are-21)
+rcmod(population-19, heterosexual-22)
+mark(survive-33, because-24)
+mark(said-28, as-26)
+nsubj(said-28, you-27)
+advcl(survive-33, said-28)
+nsubj(survive-33, they-30)
+aux(survive-33, could-31)
+neg(survive-33, n't-32)
+advcl(heterosexual-22, survive-33)
+det(species-36, a-35)
+prep_as(survive-33, species-36)
+advmod(survive-33, otherwise-37)
+

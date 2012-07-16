@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (NNP G-d))
+    (ADVP (RB only))
+    (VP (VBD wrote)
+      (NP
+        (NP (DT a)
+          (ADJP (RB very) (JJ small))
+          (NN part))
+        (PP (IN of)
+          (NP
+            (NP (PRP it))
+            (: --)
+            (ADVP (RB specifically))
+            (, ,)
+            (NP (DT the) (CD 10) (NNS Commandments))))))
+    (. .)))
+
+nsubj(wrote-3, G-d-1)
+advmod(wrote-3, only-2)
+root(ROOT-0, wrote-3)
+det(part-7, a-4)
+advmod(small-6, very-5)
+amod(part-7, small-6)
+dobj(wrote-3, part-7)
+prep_of(part-7, it-9)
+advmod(it-9, specifically-11)
+det(Commandments-15, the-13)
+num(Commandments-15, 10-14)
+appos(it-9, Commandments-15)
+
+(ROOT
+  (S
+    (NP (DT The) (NN rest))
+    (VP (VBD was)
+      (VP (VBN dictated)))
+    (. .)))
+
+det(rest-2, The-1)
+nsubjpass(dictated-4, rest-2)
+auxpass(dictated-4, was-3)
+root(ROOT-0, dictated-4)
+

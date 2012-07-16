@@ -1,0 +1,38 @@
+(ROOT
+  (NP (NNP HOW) (NNP DO) (NNP YOU) (NNP KNOW) (NNP MY) (NNP NAME) (. ?)))
+
+nn(NAME-6, HOW-1)
+nn(NAME-6, DO-2)
+nn(NAME-6, YOU-3)
+nn(NAME-6, KNOW-4)
+nn(NAME-6, MY-5)
+root(ROOT-0, NAME-6)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP (PRP you)))
+    (. ?)))
+
+attr(are-2, Who-1)
+root(ROOT-0, are-2)
+nsubj(are-2, you-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD guessing)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ andrew))))))
+    (. !)))
+
+nsubj(guessing-2, I-1)
+root(ROOT-0, guessing-2)
+nsubj(andrew-5, it-3)
+cop(andrew-5, is-4)
+ccomp(guessing-2, andrew-5)
+

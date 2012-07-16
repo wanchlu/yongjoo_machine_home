@@ -1,0 +1,118 @@
+(ROOT
+  (S
+    (NP (JJ Many) (NN faith) (NNS groups))
+    (VP (VBP welcome)
+      (NP (JJ gay) (NN marriage)))
+    (. .)))
+
+amod(groups-3, Many-1)
+nn(groups-3, faith-2)
+nsubj(welcome-4, groups-3)
+root(ROOT-0, welcome-4)
+amod(marriage-6, gay-5)
+dobj(welcome-4, marriage-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Pagan) (NN religion) (NN Wicca))
+      (, ,)
+      (PP (IN for)
+        (NP (NN example)))
+      (, ,))
+    (VP (VBZ has) (`` ``)
+      (NP (NN hand-fasting))
+      ('' '')
+      (SBAR
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ equivalent)
+                (PP (TO to)
+                  (NP (DT a) (NN wedding)))))))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ does) (RB not)
+              (VP (VB exclude)
+                (NP (NNS homosexuals))))))))
+    (. .)))
+
+det(Wicca-4, The-1)
+nn(Wicca-4, Pagan-2)
+nn(Wicca-4, religion-3)
+nsubj(has-9, Wicca-4)
+prep_for(Wicca-4, example-7)
+root(ROOT-0, has-9)
+dobj(has-9, hand-fasting-11)
+nsubj(equivalent-15, which-13)
+cop(equivalent-15, is-14)
+dep(has-9, equivalent-15)
+det(wedding-18, a-17)
+prep_to(equivalent-15, wedding-18)
+nsubj(exclude-24, which-21)
+aux(exclude-24, does-22)
+neg(exclude-24, not-23)
+dep(has-9, exclude-24)
+conj_and(equivalent-15, exclude-24)
+dobj(exclude-24, homosexuals-25)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ other) (NNS examples))
+        (PP (IN of)
+          (NP
+            (NP (NNS religions))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP accept)
+                  (NP (JJ homosexual) (NN marriage)))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(examples-4, other-3)
+nsubj(are-2, examples-4)
+prep_of(examples-4, religions-6)
+nsubj(accept-8, religions-6)
+rcmod(religions-6, accept-8)
+amod(marriage-10, homosexual-9)
+dobj(accept-8, marriage-10)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB look)
+              (PP (IN at)
+                (NP (NN everyone))))
+            (CC and)
+            (VP (RB not)
+              (NP (RB just) (CD one) (NN religion)))))))
+    (. .)))
+
+advmod(need-4, Therefore-1)
+nsubj(need-4, we-3)
+xsubj(look-6, we-3)
+root(ROOT-0, need-4)
+aux(look-6, to-5)
+xcomp(need-4, look-6)
+prep_at(look-6, everyone-8)
+neg(religion-13, not-10)
+advmod(religion-13, just-11)
+num(religion-13, one-12)
+xcomp(need-4, religion-13)
+conj_and(look-6, religion-13)
+

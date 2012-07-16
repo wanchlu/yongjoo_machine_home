@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB really))
+    (VP (VBZ does) (RB n't)
+      (VP (VB matter)
+        (SBAR (IN whether)
+          (S
+            (NP (PRP$ your))
+            (VP (VBN born)
+              (ADVP (RB gay)
+                (CC or)
+                (RB not)))))))
+    (. .)))
+
+nsubj(matter-5, It-1)
+advmod(matter-5, really-2)
+aux(matter-5, does-3)
+neg(matter-5, n't-4)
+root(ROOT-0, matter-5)
+complm(born-8, whether-6)
+nsubj(born-8, your-7)
+ccomp(matter-5, born-8)
+advmod(born-8, gay-9)
+advmod(born-8, not-11)
+conj_or(gay-9, not-11)
+
+(ROOT
+  (S
+    (NP (NNPS Americans))
+    (VP (VBP have)
+      (NP
+        (NP (JJ civil) (NNS rights))
+        (VP (VBN guaranteed)
+          (PP (IN by)
+            (NP (DT the) (NN constitution)))))
+      (SBAR (IN because)
+        (S
+          (NP (PRP they))
+          (VP (VBP 're)
+            (ADJP (JJ American))))))
+    (. .)))
+
+nsubj(have-2, Americans-1)
+root(ROOT-0, have-2)
+amod(rights-4, civil-3)
+dobj(have-2, rights-4)
+partmod(rights-4, guaranteed-5)
+det(constitution-8, the-7)
+agent(guaranteed-5, constitution-8)
+mark(American-12, because-9)
+nsubj(American-12, they-10)
+cop(American-12, 're-11)
+advcl(have-2, American-12)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (ADJP (JJ gay))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBD was)
+        (VP (VBN born)
+          (NP
+            (NP (NNP American))
+            (, ,)
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD should)
+                  (VP (VB be)
+                    (ADJP (JJ enough))))))))))
+    (. .)))
+
+nsubj(gay-3, I-1)
+cop(gay-3, am-2)
+root(ROOT-0, gay-3)
+nsubjpass(born-7, I-5)
+auxpass(born-7, was-6)
+conj_but(gay-3, born-7)
+dobj(born-7, American-8)
+nsubj(enough-13, American-8)
+aux(enough-13, should-11)
+cop(enough-13, be-12)
+rcmod(American-8, enough-13)
+

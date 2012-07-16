@@ -1,0 +1,283 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (S
+        (VP (VBP Do) (RB n't)
+          (VP (VB ask))))
+      (VP (VBP do) (RB n't)
+        (VP (VB tell))))
+    ('' '')
+    (VP (VBZ has)
+      (VP (VBN been)
+        (ADJP (RB very) (JJ costly)
+          (PP (IN in)
+            (NP
+              (NP (NNS dollars))
+              ('' '')
+              (SBAR
+                (S
+                  (NP
+                    (NP (NNP Report))
+                    (: :)
+                    (VP (`` ``) (VBP Do) (RB n't)
+                      (VP (VB Ask)))
+                    (, ,))
+                  (VP (VBP Do) (RB n't)
+                    (VP (VB Tell) ('' '')
+                      (NP
+                        (NP (NNS costs))
+                        (NP ($ $) (CD 363M))))))))))))
+    ('' '') (. .)))
+
+aux(ask-4, Do-2)
+neg(ask-4, n't-3)
+csubj(tell-7, ask-4)
+aux(tell-7, do-5)
+neg(tell-7, n't-6)
+ccomp(costly-12, tell-7)
+csubj(costly-12, tell-7)
+aux(costly-12, has-9)
+cop(costly-12, been-10)
+advmod(costly-12, very-11)
+root(ROOT-0, costly-12)
+prep_in(costly-12, dollars-14)
+nsubj(Tell-25, Report-16)
+aux(Ask-21, Do-19)
+neg(Ask-21, n't-20)
+dep(Report-16, Ask-21)
+aux(Tell-25, Do-23)
+neg(Tell-25, n't-24)
+rcmod(dollars-14, Tell-25)
+dobj(Tell-25, costs-27)
+iobj(Tell-25, costs-27)
+dobj(Tell-25, $-28)
+dep(costs-27, $-28)
+num($-28, 363M-29)
+
+(ROOT
+  (NP (NNP USA) (NNP Today) (. .)))
+
+nn(Today-2, USA-1)
+root(ROOT-0, Today-2)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP February) (CD 14))
+      (, ,)
+      (NP
+        (NP (CD 2006) (`` ``) (NN Discharging) (NNS troops))
+        (PP (IN under)
+          (NP
+            (NP
+              (NP (DT the) (NNP Pentagon) (POS 's))
+              (NN policy))
+            (PP (IN on)
+              (NP (NNS gays))))))
+      (VP (VBD cost)
+        (NP
+          (NP
+            (QP ($ $) (CD 363.8) (CD million)))
+          (PP (IN over)
+            (NP (CD 10) (NNS years))))
+        (, ,)
+        (ADVP
+          (ADVP (RB almost) (RB double))
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT the) (NN government))
+              (VP (VBD concluded)
+                (ADVP
+                  (NP (DT a) (NN year))
+                  (RB ago))))))))
+    (, ,)
+    (NP (DT a) (JJ private) (NN report))
+    (VP (VBZ says))
+    (. .)))
+
+tmod(cost-15, February-1)
+num(February-1, 14-2)
+num(troops-7, 2006-4)
+nn(troops-7, Discharging-6)
+nsubj(cost-15, troops-7)
+det(Pentagon-10, the-9)
+poss(policy-12, Pentagon-10)
+prep_under(troops-7, policy-12)
+prep_on(policy-12, gays-14)
+ccomp(says-36, cost-15)
+dobj(cost-15, $-16)
+number($-16, 363.8-17)
+number($-16, million-18)
+num(years-21, 10-20)
+prep_over($-16, years-21)
+advmod(double-24, almost-23)
+advmod(cost-15, double-24)
+dobj(concluded-28, what-25)
+det(government-27, the-26)
+nsubj(concluded-28, government-27)
+dep(double-24, concluded-28)
+det(year-30, a-29)
+npadvmod(ago-31, year-30)
+advmod(concluded-28, ago-31)
+det(report-35, a-33)
+amod(report-35, private-34)
+nsubj(says-36, report-35)
+root(ROOT-0, says-36)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG -RRB-)
+        (NP (DT The) (NN report))))
+    (, ,)
+    (S
+      (VP (TO to)
+        (VP (VB be)
+          (VP (VBN released)
+            (NP (NNP Tuesday))
+            (PP (IN by)
+              (NP
+                (NP (DT a) (NNP University))
+                (PP (IN of)
+                  (NP (NNP California) (NNP Blue) (NNP Ribbon) (NNP Commission)))))))))
+    (, ,)
+    (VP (VBD questioned)
+      (NP
+        (NP (DT the) (NN methodology))
+        (SBAR
+          (S
+            (NP (DT the) (NNP Government) (NNP Accountability) (NNP Office))
+            (VP (VBD used)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP it))
+                  (VP (VBD estimated)
+                    (SBAR (IN that)
+                      (S
+                        (NP
+                          (NP (DT the) (JJ financial) (NN impact))
+                          (PP (IN of)
+                            (NP (DT the) (`` ``)
+                              (S
+                                (VP (VBP Do) (RB n't)
+                                  (VP (VB Ask) (, ,)
+                                    (S
+                                      (VP (VB Do) (RB n't)
+                                        (VP (VB Tell)))))))
+                              ('' '') (NN policy))))
+                        (VP (VBD was)
+                          (NP
+                            (QP (IN at) (JJS least) ($ $) (CD 190.5) (CD million))))))))))))))
+    (. .)))
+
+det(report-3, The-2)
+dep(questioned-18, report-3)
+aux(released-7, to-5)
+auxpass(released-7, be-6)
+dep(questioned-18, released-7)
+tmod(released-7, Tuesday-8)
+det(University-11, a-10)
+agent(released-7, University-11)
+nn(Commission-16, California-13)
+nn(Commission-16, Blue-14)
+nn(Commission-16, Ribbon-15)
+prep_of(University-11, Commission-16)
+root(ROOT-0, questioned-18)
+det(methodology-20, the-19)
+dobj(questioned-18, methodology-20)
+det(Office-24, the-21)
+nn(Office-24, Government-22)
+nn(Office-24, Accountability-23)
+nsubj(used-25, Office-24)
+rcmod(methodology-20, used-25)
+advmod(estimated-28, when-26)
+nsubj(estimated-28, it-27)
+advcl(used-25, estimated-28)
+complm($-48, that-29)
+det(impact-32, the-30)
+amod(impact-32, financial-31)
+nsubj($-48, impact-32)
+det(policy-44, the-34)
+aux(Ask-38, Do-36)
+neg(Ask-38, n't-37)
+dep(policy-44, Ask-38)
+aux(Tell-42, Do-40)
+neg(Tell-42, n't-41)
+ccomp(Ask-38, Tell-42)
+prep_of(impact-32, policy-44)
+cop($-48, was-45)
+quantmod($-48, at-46)
+quantmod($-48, least-47)
+ccomp(estimated-28, $-48)
+number($-48, 190.5-49)
+number($-48, million-50)
+
+(ROOT
+  (SINV
+    (S
+      (NP (NNP -RRB-))
+      (`` ``)
+      (NP (PRP It))
+      (VP (VBZ builds)
+        (PP (IN on)
+          (NP (DT the) (JJ previous) (NNS findings)
+            (CC and)
+            (NNS paints)))
+        (NP
+          (NP (DT a)
+            (ADJP (RBR more) (JJ complete))
+            (NN picture))
+          (PP (IN of)
+            (NP (DT the) (NNS costs)))))
+      (, ,) ('' ''))
+    (VP (VBD said))
+    (NP
+      (NP (NNP Rep.) (NNP Marty) (NNP Meehan))
+      (, ,)
+      (NP
+        (NP (NNP D-Mass.))
+        (, ,)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ has)
+              (NP
+                (NP (VBN proposed) (NN legislation))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD would)
+                      (VP (VB repeal)
+                        (NP (DT the) (NN policy))))))))))))
+    (. .)))
+
+nsubj(builds-4, It-3)
+dep(said-20, builds-4)
+det(findings-8, the-6)
+amod(findings-8, previous-7)
+prep_on(builds-4, findings-8)
+prep_on(builds-4, paints-10)
+conj_and(findings-8, paints-10)
+det(picture-14, a-11)
+advmod(complete-13, more-12)
+amod(picture-14, complete-13)
+dobj(builds-4, picture-14)
+det(costs-17, the-16)
+prep_of(picture-14, costs-17)
+root(ROOT-0, said-20)
+nn(Meehan-23, Rep.-21)
+nn(Meehan-23, Marty-22)
+nsubj(said-20, Meehan-23)
+appos(Meehan-23, D-Mass.-25)
+nsubj(has-28, D-Mass.-25)
+rcmod(D-Mass.-25, has-28)
+amod(legislation-30, proposed-29)
+dobj(has-28, legislation-30)
+nsubj(repeal-33, legislation-30)
+aux(repeal-33, would-32)
+rcmod(legislation-30, repeal-33)
+det(policy-35, the-34)
+dobj(repeal-33, policy-35)
+

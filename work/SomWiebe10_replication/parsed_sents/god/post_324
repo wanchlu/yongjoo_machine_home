@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (JJ many) (NNS people))
+          (VP (VBP have)
+            (VP (VBN decided)
+              (SBAR
+                (S
+                  (NP (NN god))
+                  (VP (VBZ does) (RB not)
+                    (VP (VB exist)
+                      (SBAR
+                        (S
+                          (NP
+                            (NP (JJ becasue) (JJ many) (NNS attributes))
+                            (VP (VBN assigned)
+                              (PP (TO to)
+                                (NP (NN god)))))
+                          (VP (VBP have)
+                            (VP (VBN been)
+                              (VP
+                                (ADVP (RB successfully))
+                                (VBN explained)
+                                (PP (IN by)
+                                  (NP (NN science)))))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+amod(people-4, many-3)
+nsubj(decided-6, people-4)
+aux(decided-6, have-5)
+ccomp(think-2, decided-6)
+nsubj(exist-10, god-7)
+aux(exist-10, does-8)
+neg(exist-10, not-9)
+ccomp(decided-6, exist-10)
+amod(attributes-13, becasue-11)
+amod(attributes-13, many-12)
+nsubjpass(explained-20, attributes-13)
+partmod(attributes-13, assigned-14)
+prep_to(assigned-14, god-16)
+aux(explained-20, have-17)
+auxpass(explained-20, been-18)
+advmod(explained-20, successfully-19)
+ccomp(exist-10, explained-20)
+agent(explained-20, science-22)
+
+(ROOT
+  (S
+    (NP (NN god))
+    (VP (VBZ does) (RB n't)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB exist)
+              (S
+                (VP (TO to)
+                  (VP (VB explain)
+                    (NP
+                      (NP (NNS earthquakes))
+                      (, ,)
+                      (NP
+                        (NP (NNS asteroids))
+                        (, ,)
+                        (NP (NN lightning))
+                        (, ,) (FW etc.)))))))))))))
+
+nsubj(have-4, god-1)
+xsubj(exist-6, god-1)
+aux(have-4, does-2)
+neg(have-4, n't-3)
+root(ROOT-0, have-4)
+aux(exist-6, to-5)
+xcomp(have-4, exist-6)
+aux(explain-8, to-7)
+xcomp(exist-6, explain-8)
+dobj(explain-8, earthquakes-9)
+appos(earthquakes-9, asteroids-11)
+appos(asteroids-11, lightning-13)
+dep(asteroids-11, etc.-15)
+

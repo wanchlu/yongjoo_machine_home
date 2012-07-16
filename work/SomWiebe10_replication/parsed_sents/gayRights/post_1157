@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (SBAR (IN that)
+        (S
+          (NP (NNS gays))
+          (VP (VBP are)
+            (VP (VBG living)
+              (ADVP (RB together)))))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+neg('s-2, not-3)
+complm(living-7, that-4)
+nsubj(living-7, gays-5)
+aux(living-7, are-6)
+ccomp('s-2, living-7)
+advmod(living-7, together-8)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (PP (IN about)
+        (NP (NNS taxes)
+          (CC or)
+          (NN health) (NN insurance))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+neg('s-2, not-3)
+prep_about('s-2, taxes-5)
+nn(insurance-8, health-7)
+prep_about('s-2, insurance-8)
+conj_or(taxes-5, insurance-8)
+
+(ROOT
+  (S
+    (NP (PRP$ Its))
+    (VP (RB not)
+      (NP (RB about) (DT a) (NN license)))
+    (. .)))
+
+nsubj(license-5, Its-1)
+neg(license-5, not-2)
+advmod(license-5, about-3)
+det(license-5, a-4)
+root(ROOT-0, license-5)
+
+(ROOT
+  (S
+    (NP (DT All) (NN anybody))
+    (VP (VBZ wants)
+      (SBAR
+        (S
+          (VP (VBZ is)
+            (SBAR (IN that)
+              (S
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NNS gays))
+                    (VP (VBP get)
+                      (NP (DT a) (NN license)))))
+                (NP (DT the) (NN clerk))
+                (VP
+                  (VP (VBZ marks)
+                    (PRT (RP out))
+                    (NP (NN marriage)))
+                  (CC and)
+                  (VP (VBZ writes)
+                    (NP (JJ civil) (NN union))))))))))
+    (. .)))
+
+det(anybody-2, All-1)
+nsubj(wants-3, anybody-2)
+root(ROOT-0, wants-3)
+ccomp(wants-3, is-4)
+complm(marks-13, that-5)
+advmod(get-8, when-6)
+nsubj(get-8, gays-7)
+advcl(marks-13, get-8)
+det(license-10, a-9)
+dobj(get-8, license-10)
+det(clerk-12, the-11)
+nsubj(marks-13, clerk-12)
+nsubj(writes-17, clerk-12)
+ccomp(is-4, marks-13)
+prt(marks-13, out-14)
+dobj(marks-13, marriage-15)
+ccomp(is-4, writes-17)
+conj_and(marks-13, writes-17)
+amod(union-19, civil-18)
+dobj(writes-17, union-19)
+

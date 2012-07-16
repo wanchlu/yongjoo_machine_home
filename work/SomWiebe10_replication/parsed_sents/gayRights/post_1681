@@ -1,0 +1,84 @@
+(ROOT
+  (SQ (VBD Did)
+    (NP (PRP you))
+    (VP (VB watch)
+      (NP (DT the) (NN video)))
+    (. ?)))
+
+aux(watch-3, Did-1)
+nsubj(watch-3, you-2)
+root(ROOT-0, watch-3)
+det(video-5, the-4)
+dobj(watch-3, video-5)
+
+(ROOT
+  (S
+    (NP (JJ Gay) (NNS animals))
+    (VP (VBP help)
+      (NP
+        (NP (DT the) (NN survival))
+        (PP (IN of)
+          (NP (PRP$ their) (NNS siblings)))))
+    (. .)))
+
+amod(animals-2, Gay-1)
+nsubj(help-3, animals-2)
+root(ROOT-0, help-3)
+det(survival-5, the-4)
+dobj(help-3, survival-5)
+poss(siblings-8, their-7)
+prep_of(survival-5, siblings-8)
+
+(ROOT
+  (S (CC And)
+    (S
+      (VP (TO to)
+        (VP (VB answer)
+          (NP (PRP$ your) (NN question)))))
+    (, ,)
+    (INTJ (UH yes))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP (JJ gay) (JJ mated) (NNS pairs)))
+    (. .)))
+
+cc(are-10, And-1)
+aux(answer-3, to-2)
+dep(are-10, answer-3)
+poss(question-5, your-4)
+dobj(answer-3, question-5)
+dep(are-10, yes-7)
+expl(are-10, there-9)
+root(ROOT-0, are-10)
+amod(pairs-13, gay-11)
+amod(pairs-13, mated-12)
+nsubj(are-10, pairs-13)
+
+(ROOT
+  (S
+    (ADVP (RB So))
+    (, ,)
+    (INTJ (UH yes))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD did)
+      (VP (VB answer)
+        (NP (PDT both)
+          (NP (PRP$ my) (NN opponent))
+          (CC and)
+          (NP (DT the) (NN topic)))))
+    (. .)))
+
+advmod(answer-7, So-1)
+dep(answer-7, yes-3)
+nsubj(answer-7, I-5)
+aux(answer-7, did-6)
+root(ROOT-0, answer-7)
+preconj(opponent-10, both-8)
+poss(opponent-10, my-9)
+dobj(answer-7, opponent-10)
+det(topic-13, the-12)
+dobj(answer-7, topic-13)
+conj_and(opponent-10, topic-13)
+

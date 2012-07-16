@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (VP (VB care)))
+    (. .)))
+
+nsubj(care-3, You-1)
+aux(care-3, should-2)
+root(ROOT-0, care-3)
+
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP (DT the) (NN kid))
+        (VP (VBZ thinks)
+          (SBAR (IN that)
+            (S
+              (NP (NN everyone))
+              (VP (VBZ has)
+                (NP
+                  (NP (CD two) (NNS Daddies))
+                  (CC or)
+                  (NP (CD two) (NNS mommies)))))))))
+    (. .)))
+
+dep(thinks-5, What-1)
+mark(thinks-5, if-2)
+det(kid-4, the-3)
+nsubj(thinks-5, kid-4)
+root(ROOT-0, thinks-5)
+complm(has-8, that-6)
+nsubj(has-8, everyone-7)
+ccomp(thinks-5, has-8)
+num(Daddies-10, two-9)
+dobj(has-8, Daddies-10)
+num(mommies-13, two-12)
+dobj(has-8, mommies-13)
+conj_or(Daddies-10, mommies-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP are)
+      (NP (PRP they))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP
+              (ADVP (RB adequately))
+              (VB explain)
+              (NP
+                (NP (DT the) (`` ``) (NNS birds))
+                (CC and)
+                (NP (DT the) (NNS bees))))))))
+    (. ?)))
+
+advmod(going-4, How-1)
+aux(going-4, are-2)
+nsubj(going-4, they-3)
+xsubj(explain-7, they-3)
+root(ROOT-0, going-4)
+aux(explain-7, to-5)
+advmod(explain-7, adequately-6)
+xcomp(going-4, explain-7)
+det(birds-10, the-8)
+dobj(explain-7, birds-10)
+det(bees-13, the-12)
+dobj(explain-7, bees-13)
+conj_and(birds-10, bees-13)
+

@@ -1,0 +1,154 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR (IN that)
+        (S
+          (NP (JJ same) (NN sex) (NNS couples))
+          (VP (MD should)
+            (VP (VB be)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (ADJP (JJ married)))))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+complm(able-9, that-3)
+amod(couples-6, same-4)
+nn(couples-6, sex-5)
+nsubj(able-9, couples-6)
+aux(able-9, should-7)
+cop(able-9, be-8)
+ccomp(believe-2, able-9)
+aux(married-12, to-10)
+dep(married-12, get-11)
+xcomp(able-9, married-12)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNS people))
+        (VP (VBP are)
+          (PP (IN in)
+            (NP (NN love))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (ADJP (JJ married))))))
+        (, ,)
+        (ADVP (RB regardless)
+          (PP (IN of)
+            (NP (PRP$ their) (JJ sexual) (NN orientation))))))
+    (. .)))
+
+advmod(are-3, When-1)
+nsubj(are-3, people-2)
+advcl(able-10, are-3)
+prep_in(are-3, love-5)
+nsubj(able-10, they-7)
+aux(able-10, should-8)
+cop(able-10, be-9)
+root(ROOT-0, able-10)
+aux(married-13, to-11)
+dep(married-13, get-12)
+xcomp(able-10, married-13)
+poss(orientation-19, their-17)
+amod(orientation-19, sexual-18)
+prep_regardless_of(able-10, orientation-19)
+
+(ROOT
+  (S
+    (NP (JJ Same) (NN sex) (NNS couples))
+    (VP
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN treated)
+            (NP (DT the) (JJ same))
+            (PP (IN as)
+              (NP (JJ straight) (NNS couples))))))
+      (, ,)
+      (CC and)
+      (VP (MD should)
+        (VP (VB have)
+          (NP
+            (NP (DT the) (JJ same) (NNS rights))
+            (PP (IN as)
+              (NP (JJ straight) (NNS people)))))))
+    (. .)))
+
+amod(couples-3, Same-1)
+nn(couples-3, sex-2)
+nsubjpass(treated-6, couples-3)
+nsubj(have-15, couples-3)
+aux(treated-6, should-4)
+auxpass(treated-6, be-5)
+root(ROOT-0, treated-6)
+det(same-8, the-7)
+dobj(treated-6, same-8)
+amod(couples-11, straight-10)
+prep_as(treated-6, couples-11)
+aux(have-15, should-14)
+conj_and(treated-6, have-15)
+det(rights-18, the-16)
+amod(rights-18, same-17)
+dobj(have-15, rights-18)
+amod(people-21, straight-20)
+prep_as(rights-18, people-21)
+
+(ROOT
+  (S
+    (SBAR (RB Just) (IN because)
+      (S
+        (NP (PRP they))
+        (VP (VBP like)
+          (SBAR
+            (S
+              (NP
+                (NP (NN someone))
+                (PP (IN of)
+                  (NP (DT the) (JJ same) (NN sex))))
+              (VP (VBZ does) (RB n't)
+                (VP (VB mean))))))))
+    (NP (PRP they))
+    (VP (VBP 're)
+      (ADJP (RB any) (JJ different)
+        (PP (IN from)
+          (NP
+            (NP (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (ADJP (RB straight)))))))))
+    (. .)))
+
+advmod(like-4, Just-1)
+dep(like-4, because-2)
+nsubj(like-4, they-3)
+advcl(different-16, like-4)
+nsubj(mean-12, someone-5)
+det(sex-9, the-7)
+amod(sex-9, same-8)
+prep_of(someone-5, sex-9)
+aux(mean-12, does-10)
+neg(mean-12, n't-11)
+ccomp(like-4, mean-12)
+nsubj(different-16, they-13)
+cop(different-16, 're-14)
+advmod(different-16, any-15)
+root(ROOT-0, different-16)
+prep_from(different-16, people-18)
+nsubj(straight-21, people-18)
+cop(straight-21, are-20)
+rcmod(people-18, straight-21)
+

@@ -1,0 +1,127 @@
+(ROOT
+  (S
+    (VP (VB Blah))
+    (. .)))
+
+root(ROOT-0, Blah-1)
+
+(ROOT
+  (S
+    (VP (VB Forget)
+      (NP (PRP it)))
+    (. .)))
+
+root(ROOT-0, Forget-1)
+dobj(Forget-1, it-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB beat)
+              (PRT (RP around))
+              (NP (DT the) (NN bush)))))))
+    (. .)))
+
+nsubj(going-4, I-1)
+xsubj(beat-6, I-1)
+aux(going-4, 'm-2)
+neg(going-4, not-3)
+root(ROOT-0, going-4)
+aux(beat-6, to-5)
+xcomp(going-4, beat-6)
+prt(beat-6, around-7)
+det(bush-9, the-8)
+dobj(beat-6, bush-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP
+            (NP (DT a) (NN child))
+            (VP (VBG having)
+              (NP
+                (NP (CD two) (NNS fathers))
+                (CC or)
+                (NP (CD two) (NNS mothers)))))
+          (VP (VBZ is)
+            (ADJP (RB completely) (JJ unnatural))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+det(child-4, a-3)
+nsubj(unnatural-13, child-4)
+partmod(child-4, having-5)
+num(fathers-7, two-6)
+dobj(having-5, fathers-7)
+num(mothers-10, two-9)
+dobj(having-5, mothers-10)
+conj_or(fathers-7, mothers-10)
+cop(unnatural-13, is-11)
+advmod(unnatural-13, completely-12)
+ccomp(think-2, unnatural-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not)
+      (NP
+        (NP (DT the) (NN way) (NN nature))
+        (VP (VBN intended))))
+    (. .)))
+
+nsubj(nature-6, It-1)
+cop(nature-6, 's-2)
+neg(nature-6, not-3)
+det(nature-6, the-4)
+nn(nature-6, way-5)
+root(ROOT-0, nature-6)
+partmod(nature-6, intended-7)
+
+(ROOT
+  (S
+    (NP (NNP Nature))
+    (VP (VBD did)
+      (SBAR
+        (SBAR
+          (S
+            (VP (VBP intend)
+              (PP (IN for)
+                (NP (JJ gay) (NNS people)))
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADVP (RB around))))))))
+        (, ,)
+        (CC but)
+        (SBAR (RB not) (IN for)
+          (S
+            (NP (PRP them))
+            (VP (TO to)
+              (VP (VB have)
+                (NP (NNS children))))))))
+    (. .)))
+
+nsubj(did-2, Nature-1)
+root(ROOT-0, did-2)
+dep(did-2, intend-3)
+amod(people-6, gay-5)
+prep_for(intend-3, people-6)
+aux(be-8, to-7)
+xcomp(intend-3, be-8)
+advmod(be-8, around-9)
+dep(have-16, not-12)
+dep(have-16, for-13)
+nsubj(have-16, them-14)
+aux(have-16, to-15)
+dep(did-2, have-16)
+conj_but(intend-3, have-16)
+dobj(have-16, children-17)
+

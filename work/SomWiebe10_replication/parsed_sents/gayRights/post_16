@@ -1,0 +1,80 @@
+(ROOT
+  (FRAG
+    (S
+      (NP (NNP Non) (NNS homosexuals))
+      (VP (VBP produce)
+        (NP (JJ bad) (NNS children))
+        (ADVP (RB too))))
+    (: ;)
+    (FRAG
+      (WHADVP (WRB why))
+      (VP (VB alienate)
+        (NP (NNS gays))))
+    (. ?)))
+
+nn(homosexuals-2, Non-1)
+nsubj(produce-3, homosexuals-2)
+dep(alienate-9, produce-3)
+amod(children-5, bad-4)
+dobj(produce-3, children-5)
+advmod(produce-3, too-6)
+dep(alienate-9, why-8)
+root(ROOT-0, alienate-9)
+dobj(alienate-9, gays-10)
+
+(ROOT
+  (S
+    (FRAG
+      (NP (NNP Harold) (NNP Birtcher)))
+    ('' '')
+    (NP (PRP$ Our) (NNS prisons))
+    (VP (VBP are)
+      (ADJP (JJ full)
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NNS people))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD were)
+                    (PP (IN in)
+                      (NP (JJ foster) (NN care)))))))
+            (, ,)
+            (CC and)
+            (NP
+              (NP (DT those) (NNS people))
+              (SBAR
+                (S
+                  (VP (VBD were)
+                    (PP (IN in)
+                      (PRN (, ,)
+                        (S
+                          (VP (VB quote)
+                            (ADJP (JJ unquote))))
+                        (, ,))
+                      (NP (JJ straight) (NN family) (NNS homes)))))))
+            (, ,)))))
+    ('' '')))
+
+nn(Birtcher-2, Harold-1)
+dep(full-7, Birtcher-2)
+poss(prisons-5, Our-4)
+nsubj(full-7, prisons-5)
+cop(full-7, are-6)
+root(ROOT-0, full-7)
+prep_of(full-7, people-9)
+nsubj(were-11, people-9)
+rcmod(people-9, were-11)
+amod(care-14, foster-13)
+prep_in(were-11, care-14)
+det(people-18, those-17)
+prep_of(full-7, people-18)
+conj_and(people-9, people-18)
+rcmod(people-18, were-19)
+dep(were-19, quote-22)
+acomp(quote-22, unquote-23)
+amod(homes-27, straight-25)
+nn(homes-27, family-26)
+prep_in(were-19, homes-27)
+

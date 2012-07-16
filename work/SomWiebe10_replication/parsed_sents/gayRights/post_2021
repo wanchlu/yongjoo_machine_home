@@ -1,0 +1,113 @@
+(ROOT
+  (S
+    (NP (NN stereotyping))
+    (VP (VBZ helps)
+      (VP (VB produce)
+        (NP (NNS statistics))))
+    (. .)))
+
+nsubj(helps-2, stereotyping-1)
+root(ROOT-0, helps-2)
+xcomp(helps-2, produce-3)
+dobj(produce-3, statistics-4)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN statistic))
+      (PP (IN of)
+        (NP
+          (NP
+            (QP (CD approx) (CD 45))
+            (NN %))
+          (PP (IN of)
+            (NP
+              (NP (DT all) (JJ married) (NNS couples))
+              (VP (VBG divorcing)
+                (ADVP (RB someday))))))))
+    (, ,)
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN statistic))
+        (PP (VBN based)
+          (PP (IN on)
+            (NP (DT a) (NN stereotype))))))
+    (. .)))
+
+det(statistic-2, A-1)
+nsubj(statistic-16, statistic-2)
+number(45-5, approx-4)
+num(%-6, 45-5)
+prep_of(statistic-2, %-6)
+det(couples-10, all-8)
+amod(couples-10, married-9)
+prep_of(%-6, couples-10)
+partmod(couples-10, divorcing-11)
+advmod(divorcing-11, someday-12)
+cop(statistic-16, is-14)
+det(statistic-16, a-15)
+root(ROOT-0, statistic-16)
+prepc_based_on(statistic-16, on-18)
+det(stereotype-20, a-19)
+pobj(statistic-16, stereotype-20)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 2005)))
+    (, ,)
+    (NP
+      (NP (CD 57) (NN %))
+      (PP (IN of)
+        (NP
+          (NP (JJ illegal) (NNS immigrants))
+          (PP (IN in)
+            (NP (DT the) (NNP US)))))
+      (, ,)
+      (SBAR
+        (S
+          (VP (VBP are)
+            (PP (IN from)
+              (NP (NNP Mexico))))))
+      (, ,))
+    (VP (VBZ is)
+      (ADVP (RB therefore))
+      (NP
+        (NP (DT a) (NN statistic))
+        (CC and)
+        (NP (DT a) (NN stereotype)))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (QP (IN at) (JJS least) (PDT half)))
+            (PP (IN of)
+              (NP (JJ illegal) (NNS immigrants))))
+          (VP (VBP are)
+            (NP (NNPS Mexicans))))))
+    (. .)))
+
+prep_in(statistic-20, 2005-2)
+num(%-5, 57-4)
+nsubj(statistic-20, %-5)
+amod(immigrants-8, illegal-7)
+prep_of(%-5, immigrants-8)
+det(US-11, the-10)
+prep_in(immigrants-8, US-11)
+rcmod(%-5, are-13)
+prep_from(are-13, Mexico-15)
+cop(statistic-20, is-17)
+advmod(statistic-20, therefore-18)
+det(statistic-20, a-19)
+root(ROOT-0, statistic-20)
+det(stereotype-23, a-22)
+conj_and(statistic-20, stereotype-23)
+complm(Mexicans-32, that-24)
+quantmod(half-27, at-25)
+quantmod(half-27, least-26)
+nsubj(Mexicans-32, half-27)
+amod(immigrants-30, illegal-29)
+prep_of(half-27, immigrants-30)
+cop(Mexicans-32, are-31)
+ccomp(statistic-20, Mexicans-32)
+

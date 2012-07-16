@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP (DT A) (NN question))
+    (ADJP (RBR more) (JJ suitable)
+      (PP (IN for)
+        (NP
+          (NP (NNS tents)
+            (CC and)
+            (NNS caves))
+          (PP (IN in)
+            (NP (DT a) (JJR darker) (NN age))))))
+    (. .)))
+
+det(question-2, A-1)
+dep(suitable-4, question-2)
+advmod(suitable-4, more-3)
+root(ROOT-0, suitable-4)
+prep_for(suitable-4, tents-6)
+prep_for(suitable-4, caves-8)
+conj_and(tents-6, caves-8)
+det(age-12, a-10)
+amod(age-12, darker-11)
+prep_in(tents-6, age-12)
+
+(ROOT
+  (S
+    (ADVP (RB Luckily))
+    (NP (PRP we))
+    (ADVP (RB now))
+    (VP (VBP have)
+      (NP
+        (NP
+          (QP (JJR more) (IN than) (CD one))
+          (NN book))
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB give)
+                (S
+                  (NP (PRP us))
+                  (ADJP (NN guidance)))))))))
+    (. .)))
+
+advmod(have-4, Luckily-1)
+nsubj(have-4, we-2)
+advmod(have-4, now-3)
+root(ROOT-0, have-4)
+mwe(than-6, more-5)
+quantmod(one-7, than-6)
+num(book-8, one-7)
+dobj(have-4, book-8)
+aux(give-10, to-9)
+infmod(book-8, give-10)
+nsubj(guidance-12, us-11)
+xcomp(give-10, guidance-12)
+
+(ROOT
+  (S
+    (NP (NNP Time))
+    (VP (TO to)
+      (VP (VB move)
+        (PRT (RP on))))
+    (. .)))
+
+nsubj(move-3, Time-1)
+aux(move-3, to-2)
+root(ROOT-0, move-3)
+prt(move-3, on-4)
+

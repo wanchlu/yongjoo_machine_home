@@ -1,0 +1,123 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN power))
+      (SBAR (IN that)
+        (S
+          (NP (NNS religions))
+          (VP (VBP call)
+            (NP (NNP God))))))
+    (VP (VBD was)
+      (VP (VBN recognized)
+        (PP (IN as)
+          (NP
+            (NP (DT the) (NN power))
+            (PP (IN of)
+              (NP (NN creation)))))))
+    (. .)))
+
+det(power-2, The-1)
+nsubjpass(recognized-8, power-2)
+complm(call-5, that-3)
+nsubj(call-5, religions-4)
+dep(power-2, call-5)
+dobj(call-5, God-6)
+auxpass(recognized-8, was-7)
+root(ROOT-0, recognized-8)
+det(power-11, the-10)
+prep_as(recognized-8, power-11)
+prep_of(power-11, creation-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ is)
+      (NP (NN everything))
+      (VP (VBN created)))
+    (. ?)))
+
+advmod(created-4, How-1)
+auxpass(created-4, is-2)
+nsubjpass(created-4, everything-3)
+root(ROOT-0, created-4)
+
+(ROOT
+  (FRAG
+    (NP (NNP Energy))
+    (. .)))
+
+root(ROOT-0, Energy-1)
+
+(ROOT
+  (NP (DT The) (NN energy)
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP
+          (VP (VBZ surrounds)
+            (NP (PRP us)))
+          (, ,)
+          (CC and)
+          (VP (VBZ binds)
+            (NP (PRP us)))
+          (, ,)
+          (CC and)
+          (VP (VBZ makes)
+            (PRT (RP up))
+            (NP
+              (NP (NN everything))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ exists)))))))))
+    (. .)))
+
+det(energy-2, The-1)
+root(ROOT-0, energy-2)
+nsubj(surrounds-4, that-3)
+nsubj(binds-8, that-3)
+nsubj(makes-12, that-3)
+ccomp(energy-2, surrounds-4)
+dobj(surrounds-4, us-5)
+ccomp(energy-2, binds-8)
+conj_and(surrounds-4, binds-8)
+dobj(binds-8, us-9)
+ccomp(energy-2, makes-12)
+conj_and(surrounds-4, makes-12)
+prt(makes-12, up-13)
+dobj(makes-12, everything-14)
+nsubj(exists-16, everything-14)
+rcmod(everything-14, exists-16)
+
+(ROOT
+  (S
+    (ADVP (IN So)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NN manner))
+          (PP (IN of)
+            (NP (NN speaking))))))
+    (, ,)
+    (NP (NNP EVERYTHING))
+    (VP (VBZ is)
+      (SBAR
+        (S
+          (NP (NNP God)
+            (CC and)
+            (NNP God))
+          (VP (VBZ is)
+            (NP (NN everything))))))
+    (. .)))
+
+advmod(is-9, So-1)
+det(manner-4, a-3)
+prep_in(So-1, manner-4)
+prep_of(manner-4, speaking-6)
+nsubj(is-9, EVERYTHING-8)
+root(ROOT-0, is-9)
+nsubj(everything-14, God-10)
+conj_and(God-10, God-12)
+nsubj(everything-14, God-12)
+cop(everything-14, is-13)
+ccomp(is-9, everything-14)
+

@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Well))
+      (VP (VBZ thanks)
+        (PP (IN for)
+          (NP (DT the) (NN info)))))
+    (: ...)
+    (S
+      (NP (PRP it))
+      (ADVP (RB sure))
+      (VP (VBZ is)
+        (ADJP (JJ interesting))
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (MD would)
+              (VP (VB know)
+                (NP (DT that))))))))
+    (. .)))
+
+nsubj(thanks-2, Well-1)
+root(ROOT-0, thanks-2)
+det(info-5, the-4)
+prep_for(thanks-2, info-5)
+nsubj(interesting-10, it-7)
+advmod(interesting-10, sure-8)
+cop(interesting-10, is-9)
+parataxis(thanks-2, interesting-10)
+complm(know-14, that-11)
+nsubj(know-14, you-12)
+aux(know-14, would-13)
+ccomp(interesting-10, know-14)
+dobj(know-14, that-15)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN voted)
+        (NP (PRP you))
+        (PP (IN down)
+          (NP
+            (NP (DT a) (CD hundred) (NNS times))
+            (CC and)
+            (NP (DT all))))
+        (PP (IN for)
+          (NP (DT the) (JJ same) (NN reason)))))
+    (. .)))
+
+nsubj(voted-3, I-1)
+aux(voted-3, 've-2)
+root(ROOT-0, voted-3)
+dobj(voted-3, you-4)
+det(times-8, a-6)
+num(times-8, hundred-7)
+prep_down(voted-3, times-8)
+prep_down(voted-3, all-10)
+conj_and(times-8, all-10)
+det(reason-14, the-12)
+amod(reason-14, same-13)
+prep_for(voted-3, reason-14)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (NNS times))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB wish)
+        (S
+          (NP (PRP me))
+          (VP (TO to)
+            (VP (VB repeat)
+              (NP (PRP it)))))))
+    (. ?)))
+
+advmod(many-2, How-1)
+amod(times-3, many-2)
+dep(wish-6, times-3)
+aux(wish-6, do-4)
+nsubj(wish-6, you-5)
+root(ROOT-0, wish-6)
+nsubj(repeat-9, me-7)
+aux(repeat-9, to-8)
+xcomp(wish-6, repeat-9)
+dobj(repeat-9, it-10)
+

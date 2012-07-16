@@ -1,0 +1,90 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Less))
+      (PP (IN than)
+        (NP (CD two) (NNS weeks))))
+    (VP
+      (ADVP (RB ago)
+        (NP (DT the) (NN senate)))
+      (VBD stopped)
+      (NP
+        (NP (DT a) (NN bill))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD would)
+              (PP (IN of))
+              (VP (VBN made)
+                (S
+                  (NP (PRP it))
+                  (ADJP (JJ legal))
+                  (SBAR (IN for)
+                    (S
+                      (NP (NNP concealed))
+                      (VP (VBP carry)
+                        (S
+                          (NP (NN permit) (NNS holders))
+                          (VP (TO to)
+                            (VP (VB be)
+                              (VP (VB recognize)
+                                (PP (IN from)
+                                  (NP (NN state)))
+                                (PP (TO to)
+                                  (NP (NN state)))))))))))))))))
+    (. .)))
+
+nsubj(stopped-8, Less-1)
+num(weeks-4, two-3)
+prep_than(Less-1, weeks-4)
+advmod(stopped-8, ago-5)
+det(senate-7, the-6)
+pobj(ago-5, senate-7)
+root(ROOT-0, stopped-8)
+det(bill-10, a-9)
+dobj(stopped-8, bill-10)
+nsubj(made-14, bill-10)
+aux(made-14, would-12)
+prep(made-14, of-13)
+rcmod(bill-10, made-14)
+nsubj(carry-19, it-15)
+dep(carry-19, legal-16)
+mark(carry-19, for-17)
+nsubj(carry-19, concealed-18)
+xcomp(made-14, carry-19)
+nn(holders-21, permit-20)
+nsubj(recognize-24, holders-21)
+aux(recognize-24, to-22)
+aux(recognize-24, be-23)
+xcomp(carry-19, recognize-24)
+prep_from(recognize-24, state-26)
+prep_to(recognize-24, state-28)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP it))
+        (VP (VBZ stands)
+          (NP (NN today)))))
+    (NP (DT no) (NN state))
+    (VP (VBZ haves)
+      (S
+        (VP (TO to)
+          (VP (VB recognize)
+            (NP (DT the) (NNS permits))))))
+    (. .)))
+
+mark(stands-3, As-1)
+nsubj(stands-3, it-2)
+advcl(haves-7, stands-3)
+tmod(stands-3, today-4)
+det(state-6, no-5)
+nsubj(haves-7, state-6)
+xsubj(recognize-9, state-6)
+root(ROOT-0, haves-7)
+aux(recognize-9, to-8)
+xcomp(haves-7, recognize-9)
+det(permits-11, the-10)
+dobj(recognize-9, permits-11)
+

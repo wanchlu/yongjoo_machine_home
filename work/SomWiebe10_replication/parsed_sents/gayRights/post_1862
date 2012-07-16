@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP (NNS Gays)
+      (CC and)
+      (NNS lesbians))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN allowed)
+          (SBAR (IN because)
+            (S
+              (NP (DT this))
+              (VP (VBZ is)
+                (SBAR
+                  (SBAR
+                    (S
+                      (NP (NNP America)
+                        (CC and)
+                        (NNP America))
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT a) (NN land))
+                          (PP (IN of)
+                            (NP (NNP Canada)))))))
+                  (CC and)
+                  (SBAR
+                    (WHADVP (WRB how) (RB well))
+                    (S
+                      (NP (PRP$ their) (NNS Gays)
+                        (CC and)
+                        (NNS Lesbians))
+                      (VP (MD can)
+                        (ADVP (RB freely))
+                        (VP (VB restrict)
+                          (SBAR (IN that)
+                            (S
+                              (S
+                                (VP (VBN given)
+                                  (S
+                                    (ADVP (RB right))
+                                    (VP (TO to)
+                                      (VP (VB stop)
+                                        (NP (DT the) (NN government)))))))
+                              (CC and)
+                              (S
+                                (VP (VBG using)
+                                  (S
+                                    (NP (PRP it))
+                                    (VP (TO to)
+                                      (VP (VB control)
+                                        (NP
+                                          (NP (JJ American) (NN society))
+                                          (SBAR
+                                            (S
+                                              (NP (PRP they))
+                                              (VP (VBP want)))))))))))))))))))))))
+    (. !)))
+
+nsubjpass(allowed-6, Gays-1)
+conj_and(Gays-1, lesbians-3)
+nsubjpass(allowed-6, lesbians-3)
+aux(allowed-6, should-4)
+auxpass(allowed-6, be-5)
+root(ROOT-0, allowed-6)
+mark(is-9, because-7)
+nsubj(is-9, this-8)
+advcl(allowed-6, is-9)
+nsubj(land-15, America-10)
+conj_and(America-10, America-12)
+nsubj(land-15, America-12)
+cop(land-15, is-13)
+det(land-15, a-14)
+dep(is-9, land-15)
+prep_of(land-15, Canada-17)
+advmod(well-20, how-19)
+advmod(restrict-27, well-20)
+poss(Gays-22, their-21)
+nsubj(restrict-27, Gays-22)
+conj_and(Gays-22, Lesbians-24)
+nsubj(restrict-27, Lesbians-24)
+aux(restrict-27, can-25)
+advmod(restrict-27, freely-26)
+dep(is-9, restrict-27)
+conj_and(land-15, restrict-27)
+complm(given-29, that-28)
+ccomp(restrict-27, given-29)
+advmod(stop-32, right-30)
+aux(stop-32, to-31)
+xcomp(given-29, stop-32)
+det(government-34, the-33)
+dobj(stop-32, government-34)
+ccomp(restrict-27, using-36)
+conj_and(given-29, using-36)
+nsubj(control-39, it-37)
+aux(control-39, to-38)
+xcomp(using-36, control-39)
+amod(society-41, American-40)
+dobj(control-39, society-41)
+dobj(want-43, society-41)
+nsubj(want-43, they-42)
+rcmod(society-41, want-43)
+

@@ -1,0 +1,95 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB why))
+    (ADJP (RB not) (JJ ??))))
+
+dep(??-3, why-1)
+neg(??-3, not-2)
+root(ROOT-0, ??-3)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBP are)
+      (NP
+        (NP (NNS humans))
+        (VP (VBN arnt)
+          (NP (PRP they)))))
+    (. ?)))
+
+nsubj(humans-3, they-1)
+cop(humans-3, are-2)
+root(ROOT-0, humans-3)
+partmod(humans-3, arnt-4)
+dobj(arnt-4, they-5)
+
+(ROOT
+  (S
+    (SBAR
+      (S
+        (NP (PRP they))
+        (VP (VBP have)
+          (NP
+            (NP (JJ right) (NNS feelings))
+            (PP (IN for)
+              (NP (NN eachother)))))))
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADJP (JJ loyal)
+        (SBAR (IN so)
+          (S
+            (NP (FW i))
+            (VP (VBP think)
+              (SBAR
+                (S
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP have)
+                      (NP
+                        (NP (JJ equal) (NNS rights))
+                        (PP (IN of)
+                          (NP (NN society))))))
+                  (: ...)
+                  (S
+                    (NP (JJ gay) (NNS marriges))
+                    (VP (VBP are)
+                      (VP (VBN ok)
+                        (SBAR (IN till)
+                          (S
+                            (NP (PRP they))
+                            (VP (VBP are)
+                              (ADJP (JJ ligal)))))))))))))))
+    (: ...)))
+
+nsubj(have-2, they-1)
+dep(loyal-9, have-2)
+amod(feelings-4, right-3)
+dobj(have-2, feelings-4)
+prep_for(feelings-4, eachother-6)
+nsubj(loyal-9, they-7)
+cop(loyal-9, are-8)
+root(ROOT-0, loyal-9)
+mark(think-12, so-10)
+nsubj(think-12, i-11)
+ccomp(loyal-9, think-12)
+nsubj(have-14, they-13)
+dep(think-12, have-14)
+amod(rights-16, equal-15)
+dobj(have-14, rights-16)
+prep_of(rights-16, society-18)
+amod(marriges-21, gay-20)
+nsubjpass(ok-23, marriges-21)
+auxpass(ok-23, are-22)
+parataxis(have-14, ok-23)
+mark(ligal-27, till-24)
+nsubj(ligal-27, they-25)
+cop(ligal-27, are-26)
+advcl(ok-23, ligal-27)
+
+(ROOT
+  (S
+    (VP (VB Himali))
+    (. .)))
+
+root(ROOT-0, Himali-1)
+

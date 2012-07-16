@@ -1,0 +1,91 @@
+(ROOT
+  (SBARQ
+    (S
+      (VP (VB Wait)))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT this))
+        (PP (IN about)
+          (NP
+            (NP (NNS women))
+            (CC and)
+            (NP (NN marriage) (NN domesticating) (NNS men))))))
+    (. ?)))
+
+dep(is-4, Wait-1)
+attr(is-4, what-3)
+root(ROOT-0, is-4)
+nsubj(is-4, this-5)
+prep_about(this-5, women-7)
+nn(men-11, marriage-9)
+nn(men-11, domesticating-10)
+prep_about(this-5, men-11)
+conj_and(women-7, men-11)
+
+(ROOT
+  (S
+    (VP (VB Sexism)
+      (PP (IN at)
+        (NP
+          (NP (PRP it) (POS 's))
+          (JJS finest) (, ,) (NNS ladies)
+          (CC and)
+          (NNS gentlemen))))
+    (. .)))
+
+root(ROOT-0, Sexism-1)
+poss(finest-5, it-3)
+prep_at(Sexism-1, finest-5)
+prep_at(Sexism-1, ladies-7)
+conj_and(finest-5, ladies-7)
+prep_at(Sexism-1, gentlemen-9)
+conj_and(finest-5, gentlemen-9)
+
+(ROOT
+  (S
+    (ADVP (RB Sorry))
+    (, ,)
+    (NP
+      (NP (NNS ladies))
+      (, ,)
+      (ADJP (JJ gentlemen) (, ,)
+        (CC and)
+        (JJ wild) (, ,) (JJ crazy))
+      (, ,))
+    (VP (VBZ chaotic)
+      (NP
+        (NP (NNS men))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP have) (RB not)
+              (ADVP (RB yet))
+              (VP (VBN found)
+                (NP (DT a) (NN woman)
+                  (S
+                    (VP (TO to)
+                      (VP (JJ tame)
+                        (NP (PRP them))))))))))))
+    (. .)))
+
+advmod(chaotic-12, Sorry-1)
+nsubj(chaotic-12, ladies-3)
+dep(crazy-10, gentlemen-5)
+amod(ladies-3, wild-8)
+conj_and(crazy-10, wild-8)
+amod(ladies-3, crazy-10)
+root(ROOT-0, chaotic-12)
+dobj(chaotic-12, men-13)
+nsubj(found-18, men-13)
+aux(found-18, have-15)
+neg(found-18, not-16)
+advmod(found-18, yet-17)
+rcmod(men-13, found-18)
+det(woman-20, a-19)
+dobj(found-18, woman-20)
+aux(tame-22, to-21)
+infmod(woman-20, tame-22)
+dobj(tame-22, them-23)
+

@@ -1,0 +1,138 @@
+(ROOT
+  (S
+    (NP (NNP Marraige))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN union))
+        (PP (IN between)
+          (NP
+            (NP (DT a) (NNP MAN))
+            (CC and)
+            (NP (DT a) (NN WOMAN))))))
+    (. .)))
+
+nsubj(union-4, Marraige-1)
+cop(union-4, is-2)
+det(union-4, the-3)
+root(ROOT-0, union-4)
+det(MAN-7, a-6)
+prep_between(union-4, MAN-7)
+det(WOMAN-10, a-9)
+prep_between(union-4, WOMAN-10)
+conj_and(MAN-7, WOMAN-10)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is) (RB not)
+          (PP (IN between)
+            (NP (CD two) (JJ DIFFERENT) (NNS sexes))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP it))
+    (VP (VBZ is) (RB not)
+      (NP (NNP Marraige)))
+    (. .)))
+
+mark(is-3, If-1)
+nsubj(is-3, it-2)
+advcl(Marraige-14, is-3)
+neg(is-3, not-4)
+num(sexes-8, two-6)
+amod(sexes-8, DIFFERENT-7)
+prep_between(is-3, sexes-8)
+advmod(Marraige-14, then-10)
+nsubj(Marraige-14, it-11)
+cop(Marraige-14, is-12)
+neg(Marraige-14, not-13)
+root(ROOT-0, Marraige-14)
+
+(ROOT
+  (S
+    (NP (NNP Civilly) (NNP Unionized))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN word))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (MD must)
+              (VP (VB use))))))
+      (: ...)
+      (SBAR (IN unless)
+        (S
+          (NP (PRP they))
+          (VP (VBP decide)
+            (S
+              (VP (TO to)
+                (VP (VB take)
+                  (NP (DT the) (NN initive)
+                    (S
+                      (VP (TO to)
+                        (VP (VB create)
+                          (NP (DT a) (JJ new) (NN word)))))))))))))
+    (. .)))
+
+nn(Unionized-2, Civilly-1)
+nsubj(word-5, Unionized-2)
+cop(word-5, is-3)
+det(word-5, the-4)
+root(ROOT-0, word-5)
+dobj(use-8, word-5)
+nsubj(use-8, they-6)
+aux(use-8, must-7)
+rcmod(word-5, use-8)
+mark(decide-12, unless-10)
+nsubj(decide-12, they-11)
+xsubj(take-14, they-11)
+advcl(word-5, decide-12)
+parataxis(word-5, decide-12)
+aux(take-14, to-13)
+xcomp(decide-12, take-14)
+det(initive-16, the-15)
+dobj(take-14, initive-16)
+aux(create-18, to-17)
+infmod(initive-16, create-18)
+det(word-21, a-19)
+amod(word-21, new-20)
+dobj(create-18, word-21)
+
+(ROOT
+  (S
+    (NP (CC Either)
+      (NN way))
+    (, ,)
+    (NP (NNP Marraige))
+    (VP (VBZ is) (RB not)
+      (PP (IN between)
+        (NP
+          (NP
+            (NP (DT a) (NN man))
+            (CC and)
+            (NP (DT a) (NN man)))
+          (CC or)
+          (NP
+            (NP (DT a) (NN woman))
+            (CC and)
+            (NP (DT a) (NN woman))))))
+    (. .)))
+
+dep(way-2, Either-1)
+nsubj(is-5, way-2)
+nsubj(is-5, Marraige-4)
+root(ROOT-0, is-5)
+neg(is-5, not-6)
+det(man-9, a-8)
+prep_between(is-5, man-9)
+det(man-12, a-11)
+prep_between(is-5, man-12)
+conj_and(man-9, man-12)
+det(woman-15, a-14)
+prep_between(is-5, woman-15)
+conj_or(man-9, woman-15)
+det(woman-18, a-17)
+conj_or(man-9, woman-18)
+conj_and(woman-15, woman-18)
+

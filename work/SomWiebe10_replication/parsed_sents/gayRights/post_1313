@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP like)
+      (S
+        (NP (DT the) (NN color))
+        (ADJP (JJ green))))
+    (. .)))
+
+nsubj(like-2, I-1)
+root(ROOT-0, like-2)
+det(color-4, the-3)
+nsubj(green-5, color-4)
+xcomp(like-2, green-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ great))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(great-5, it-3)
+cop(great-5, 's-4)
+ccomp(think-2, great-5)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP like)
+      (NP (DT the) (JJ color) (NN red)))
+    (. .)))
+
+nsubj(like-2, You-1)
+root(ROOT-0, like-2)
+det(red-5, the-3)
+amod(red-5, color-4)
+dobj(like-2, red-5)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (NP (DT a) (JJ bad) (NN person)))
+    (. .)))
+
+nsubj(person-5, You-1)
+cop(person-5, are-2)
+det(person-5, a-3)
+amod(person-5, bad-4)
+root(ROOT-0, person-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB want)
+        (NP (PRP$ my) (NNS children))
+        (S
+          (VP (TO to)
+            (VP (VB hang)
+              (PRT (RP out))
+              (PP (IN with)
+                (NP
+                  (NP (NN someone))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBZ likes)
+                        (NP (DT the) (JJ color) (NN red))))))))))))
+    (. .)))
+
+nsubj(want-4, I-1)
+aux(want-4, do-2)
+neg(want-4, n't-3)
+root(ROOT-0, want-4)
+poss(children-6, my-5)
+dobj(want-4, children-6)
+aux(hang-8, to-7)
+xcomp(want-4, hang-8)
+prt(hang-8, out-9)
+prep_with(hang-8, someone-11)
+nsubj(likes-13, someone-11)
+rcmod(someone-11, likes-13)
+det(red-16, the-14)
+amod(red-16, color-15)
+dobj(likes-13, red-16)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Basically))
+    (, ,)
+    (NP (DT the) (JJ same) (NN concept))
+    (. .)))
+
+dep(concept-5, Basically-1)
+det(concept-5, the-3)
+amod(concept-5, same-4)
+root(ROOT-0, concept-5)
+

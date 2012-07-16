@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB say)
+          (INTJ (UH yes)))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (NP (DT an) (NN attorney))))
+    (. .)))
+
+nsubj(say-3, I-1)
+aux(say-3, would-2)
+root(ROOT-0, say-3)
+dep(say-3, yes-4)
+nsubj(attorney-10, I-6)
+cop(attorney-10, 'm-7)
+neg(attorney-10, not-8)
+det(attorney-10, an-9)
+conj_but(say-3, attorney-10)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ is)
+          (VP (VBN needed)))))
+    (VP (VBZ is)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NNP NRA))
+          (CC or)
+          (NP (DT some) (JJ other) (NN group))))
+      (S
+        (VP (TO to)
+          (VP (VB start)
+            (NP (DT a) (NN test) (NN case))))))
+    (. .)))
+
+nsubjpass(needed-3, What-1)
+auxpass(needed-3, is-2)
+csubj(is-4, needed-3)
+root(ROOT-0, is-4)
+det(NRA-7, the-6)
+prep_for(is-4, NRA-7)
+det(group-11, some-9)
+amod(group-11, other-10)
+prep_for(is-4, group-11)
+conj_or(NRA-7, group-11)
+aux(start-13, to-12)
+xcomp(is-4, start-13)
+det(case-16, a-14)
+nn(case-16, test-15)
+dobj(start-13, case-16)
+

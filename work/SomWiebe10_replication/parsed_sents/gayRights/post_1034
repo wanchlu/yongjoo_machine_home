@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (VP (VB Let)
+      (S
+        (NP (PRP me))
+        (VP (VB start)
+          (PP (IN with)
+            (NP (DT a) (JJ simple) (NN question))))))
+    (. .)))
+
+root(ROOT-0, Let-1)
+nsubj(start-3, me-2)
+ccomp(Let-1, start-3)
+det(question-7, a-5)
+amod(question-7, simple-6)
+prep_with(start-3, question-7)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP
+        (NP (NN marriage))
+        (PP (IN between)
+          (NP
+            (NP (DT a) (NN man))
+            (CC and)
+            (NP (DT a) (NN woman))))))
+    (. ?)))
+
+advmod(is-2, Why-1)
+root(ROOT-0, is-2)
+nsubj(is-2, marriage-3)
+det(man-6, a-5)
+prep_between(marriage-3, man-6)
+det(woman-9, a-8)
+prep_between(marriage-3, woman-9)
+conj_and(man-6, woman-9)
+
+(ROOT
+  (SBARQ
+    (FRAG (CC Or)
+      (, ,)
+      (ADVP (RBR more))
+      (NP (NNP openly)))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB why))
+      (SQ (VBD was)
+        (NP (NN marriage))
+        (VP (VBN defined)
+          (PP (IN as) (IN between)
+            (NP
+              (NP (DT a) (NN man))
+              (CC and)
+              (NP (DT a) (NN woman)))))))
+    (. ?)))
+
+dep(openly-4, Or-1)
+dep(openly-4, more-3)
+dep(defined-9, openly-4)
+advmod(defined-9, why-6)
+auxpass(defined-9, was-7)
+nsubjpass(defined-9, marriage-8)
+root(ROOT-0, defined-9)
+dep(defined-9, as-10)
+det(man-13, a-12)
+prep_between(defined-9, man-13)
+det(woman-16, a-15)
+prep_between(defined-9, woman-16)
+conj_and(man-13, woman-16)
+

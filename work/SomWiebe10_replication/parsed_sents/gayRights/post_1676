@@ -1,0 +1,137 @@
+(ROOT
+  (SBARQ
+    (WHPP (IN from)
+      (WHNP (WP what)))
+    (SQ
+      (NP (FW i))
+      (VP (VB understand)
+        (SBAR
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ happens)
+                (SBAR
+                  (SBAR
+                    (S
+                      (VP (VBZ is)
+                        (PP (IN during)
+                          (NP
+                            (NP (NN pregnancy))
+                            (SBAR
+                              (S
+                                (NP (DT a) (NN boy) (NN baby))
+                                (VP (VBZ is)
+                                  (VP (VBN considered)
+                                    (NP (DT an) (JJ alien) (NN object)))))))))))
+                  (CC and)
+                  (SBAR (IN so)
+                    (S
+                      (NP (DT the) (NN body))
+                      (VP (VBZ fights)
+                        (NP (PRP it))
+                        (, ,)
+                        (S
+                          (VP (VBG making)
+                            (S
+                              (NP (PRP it))
+                              (ADJP (RBR more) (JJ feminen)))))))))
+                (PRN (-LRB- -LRB-)
+                  (S
+                    (NP (FW i))
+                    (VP (VBP dont)
+                      (SBAR
+                        (SBAR
+                          (S
+                            (VP (VBP remember)
+                              (NP (DT the) (NN source)))))
+                        (CC but)
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBD was)
+                              (SBAR
+                                (WHNP (WP what))
+                                (S
+                                  (NP (PRP they))
+                                  (VP (VBD said))))))))))
+                  (-RRB- -RRB-)))))
+          (CC and)
+          (SBAR
+            (SBAR (IN that)
+              (S
+                (PP (IN after)
+                  (NP (JJR more) (NNS kids)))
+                (NP (PRP$ your) (NN body))
+                (VP (VBZ gets)
+                  (ADVP (RBR better))
+                  (PP (IN at)
+                    (NP (PRP it))))))
+            (CC and)
+            (SBAR (IN so)
+              (S
+                (NP (JJR younger) (NNS siblings))
+                (VP (VBP are)
+                  (ADJP (RBR more) (JJ likely)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (JJ gay)))))))))))))
+    (. ?)))
+
+prep_from(understand-4, what-2)
+nsubj(understand-4, i-3)
+root(ROOT-0, understand-4)
+nsubj(happens-6, what-5)
+dep(understand-4, happens-6)
+dep(happens-6, is-7)
+prep_during(is-7, pregnancy-9)
+det(baby-12, a-10)
+nn(baby-12, boy-11)
+nsubjpass(considered-14, baby-12)
+auxpass(considered-14, is-13)
+rcmod(pregnancy-9, considered-14)
+det(object-17, an-15)
+amod(object-17, alien-16)
+dobj(considered-14, object-17)
+mark(fights-22, so-19)
+det(body-21, the-20)
+nsubj(fights-22, body-21)
+dep(happens-6, fights-22)
+conj_and(is-7, fights-22)
+dobj(fights-22, it-23)
+partmod(fights-22, making-25)
+xcomp(fights-22, making-25)
+nsubj(feminen-28, it-26)
+advmod(feminen-28, more-27)
+xcomp(making-25, feminen-28)
+nsubj(dont-31, i-30)
+parataxis(happens-6, dont-31)
+dep(dont-31, remember-32)
+det(source-34, the-33)
+dobj(remember-32, source-34)
+nsubj(was-37, that-36)
+dep(dont-31, was-37)
+conj_but(remember-32, was-37)
+dobj(said-40, what-38)
+nsubj(said-40, they-39)
+ccomp(was-37, said-40)
+dep(gets-49, that-43)
+amod(kids-46, more-45)
+prep_after(gets-49, kids-46)
+poss(body-48, your-47)
+nsubj(gets-49, body-48)
+dep(understand-4, gets-49)
+conj_and(happens-6, gets-49)
+advmod(gets-49, better-50)
+prep_at(gets-49, it-52)
+mark(likely-59, so-54)
+amod(siblings-56, younger-55)
+nsubj(likely-59, siblings-56)
+cop(likely-59, are-57)
+advmod(likely-59, more-58)
+conj_and(happens-6, likely-59)
+conj_and(gets-49, likely-59)
+aux(gay-62, to-60)
+cop(gay-62, be-61)
+xcomp(likely-59, gay-62)
+

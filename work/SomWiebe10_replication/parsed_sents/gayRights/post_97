@@ -1,0 +1,158 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD ca) (RB n't)
+      (VP (VB force)
+        (NP (NN anyone))
+        (S
+          (VP (TO to)
+            (VP (VB love)
+              (NP (NN someone))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP do) (RB n't)
+                    (VP (VB love))))))))))
+    (. .)))
+
+nsubj(force-4, You-1)
+aux(force-4, ca-2)
+neg(force-4, n't-3)
+root(ROOT-0, force-4)
+dobj(force-4, anyone-5)
+aux(love-7, to-6)
+xcomp(force-4, love-7)
+dobj(love-7, someone-8)
+complm(love-13, that-9)
+nsubj(love-13, they-10)
+aux(love-13, do-11)
+neg(love-13, n't-12)
+ccomp(love-7, love-13)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ 's)
+      (NP
+        (NP (DT the) (JJ main) (NN purpose))
+        (PP (IN for)
+          (NP (NN marriage)))))
+    (. ?)))
+
+attr('s-2, What-1)
+root(ROOT-0, 's-2)
+det(purpose-5, the-3)
+amod(purpose-5, main-4)
+nsubj('s-2, purpose-5)
+prep_for(purpose-5, marriage-7)
+
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP you))
+        (VP (VBP love)
+          (NP
+            (NP (DT that) (NN person))
+            (CC and)
+            (NP (PRP you))))))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB spend)
+            (NP (PRP$ your) (NN life))
+            (PP (IN with)
+              (NP (NN him\/her)))
+            (ADVP (RB forever))))))
+    (. .)))
+
+mark(love-3, Because-1)
+nsubj(love-3, you-2)
+csubj(want-8, love-3)
+det(person-5, that-4)
+dobj(love-3, person-5)
+dobj(love-3, you-7)
+conj_and(person-5, you-7)
+root(ROOT-0, want-8)
+aux(spend-10, to-9)
+xcomp(want-8, spend-10)
+poss(life-12, your-11)
+dobj(spend-10, life-12)
+prep_with(spend-10, him\/her-14)
+advmod(spend-10, forever-15)
+
+(ROOT
+  (S
+    (NP (VBG Opposing) (NN homosexuality))
+    (VP (VBZ is)
+      (VP (VBG opposing)
+        (NP
+          (NP
+            (NP (NN someone) (POS 's))
+            (NN love))
+          (PP (IN for)
+            (NP (DT another) (NN individual))))))
+    (. .)))
+
+amod(homosexuality-2, Opposing-1)
+nsubj(opposing-4, homosexuality-2)
+aux(opposing-4, is-3)
+root(ROOT-0, opposing-4)
+poss(love-7, someone-5)
+dobj(opposing-4, love-7)
+det(individual-10, another-9)
+prep_for(love-7, individual-10)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN man))
+        (VP
+          (VP (VBZ loves)
+            (NP (DT a) (NN man)))
+          (CC but)
+          (VP (MD ca) (RB n't)
+            (VP (VB marry)
+              (NP (PRP him))
+              (SBAR (IN because)
+                (S
+                  (NP (JJ other) (NNS people))
+                  (ADVP (RB basically))
+                  (VP (`` ``) (VBP deny)
+                    (NP (PRP$ their) (NN love))))))))))
+    (, ,) ('' '')
+    (WHNP (WP what))
+    (SQ
+      (VP (MD could)
+        (VP (VB be)
+          (ADJP (JJR worse))
+          (PP (IN than)
+            (NP (DT that))))))
+    (. ?)))
+
+mark(loves-4, If-1)
+det(man-3, a-2)
+nsubj(loves-4, man-3)
+nsubj(marry-10, man-3)
+advcl(worse-25, loves-4)
+det(man-6, a-5)
+dobj(loves-4, man-6)
+aux(marry-10, ca-8)
+neg(marry-10, n't-9)
+conj_but(loves-4, marry-10)
+advcl(worse-25, marry-10)
+dobj(marry-10, him-11)
+mark(deny-17, because-12)
+amod(people-14, other-13)
+nsubj(deny-17, people-14)
+advmod(deny-17, basically-15)
+advcl(marry-10, deny-17)
+poss(love-19, their-18)
+dobj(deny-17, love-19)
+nsubj(worse-25, what-22)
+aux(worse-25, could-23)
+cop(worse-25, be-24)
+root(ROOT-0, worse-25)
+prep_than(worse-25, that-27)
+

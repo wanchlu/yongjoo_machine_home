@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ serious)))
+    (. .)))
+
+nsubj(serious-3, I-1)
+cop(serious-3, 'm-2)
+root(ROOT-0, serious-3)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 've)
+        (ADVP (RB never))
+        (VP (VBN equated)
+          (NP (DT the) (CD two)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (VP (VBG asking)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP you))
+              (VP (VBD came)
+                (PP (TO to)
+                  (NP (DT that) (NN conclusion)))))))))
+    (. .)))
+
+nsubj(equated-4, I-1)
+aux(equated-4, 've-2)
+neg(equated-4, never-3)
+root(ROOT-0, equated-4)
+det(two-6, the-5)
+dobj(equated-4, two-6)
+nsubj(asking-11, I-9)
+aux(asking-11, 'm-10)
+conj_and(equated-4, asking-11)
+advmod(came-14, how-12)
+nsubj(came-14, you-13)
+ccomp(asking-11, came-14)
+det(conclusion-17, that-16)
+prep_to(came-14, conclusion-17)
+
+(ROOT
+  (S
+    (S
+      (S
+        (NP (PRP I))
+        (VP (VBP find)
+          (S
+            (NP
+              (NP (DT a) (NN lot))
+              (PP (IN of)
+                (NP (NNS things))))
+            (ADJP (JJ disgusting)))))
+      (, ,)
+      (CC and)
+      (S
+        (NP (PRP I))
+        (VP (VBP find)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP
+                (NP (NNS things))
+                (ADJP (RB morally) (JJ wrong))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (ADVP (RB usually))
+      (VP (VBP do) (RB not)
+        (VP (VB overlap))))
+    (. .)))
+
+nsubj(find-2, I-1)
+root(ROOT-0, find-2)
+det(lot-4, a-3)
+nsubj(disgusting-7, lot-4)
+prep_of(lot-4, things-6)
+xcomp(find-2, disgusting-7)
+nsubj(find-11, I-10)
+conj_and(find-2, find-11)
+det(lot-13, a-12)
+dobj(find-11, lot-13)
+prep_of(lot-13, things-15)
+advmod(wrong-17, morally-16)
+amod(things-15, wrong-17)
+nsubj(overlap-24, they-20)
+advmod(overlap-24, usually-21)
+aux(overlap-24, do-22)
+neg(overlap-24, not-23)
+conj_but(find-2, overlap-24)
+

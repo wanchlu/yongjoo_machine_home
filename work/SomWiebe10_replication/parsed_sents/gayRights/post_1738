@@ -1,0 +1,77 @@
+(ROOT
+  (FRAG (`` ``)
+    (FRAG
+      (S
+        (NP (PRP It))
+        (VP (VBZ hurts)
+          (SBAR
+            (S
+              (NP (NNS families))
+              (, ,)
+              (X
+                (X (DT the) (JJR more))
+                (NP
+                  (NP (JJ gay) (NN marriage))
+                  (NP (DT the) (JJR less) (NNS families))))
+              (NP (EX there))
+              (VP (MD will)
+                (VP (VB be))))))))
+    ('' '')
+    (SBAR
+      (WHNP
+        (ADVP (RB Well))
+        (WP what))
+      (S
+        (VP (VBD did)
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBP mean)
+                (PP (IN by)
+                  (NP (DT this) (NN statement)))))))))
+    (. ?)))
+
+nsubj(hurts-3, It-2)
+root(ROOT-0, hurts-3)
+nsubj(be-15, families-4)
+det(more-7, the-6)
+dep(marriage-9, more-7)
+amod(marriage-9, gay-8)
+dep(be-15, marriage-9)
+det(families-12, the-10)
+amod(families-12, less-11)
+dep(marriage-9, families-12)
+expl(be-15, there-13)
+aux(be-15, will-14)
+ccomp(hurts-3, be-15)
+advmod(what-18, Well-17)
+nsubj(did-19, what-18)
+dep(hurts-3, did-19)
+nsubj(mean-21, you-20)
+ccomp(did-19, mean-21)
+det(statement-24, this-23)
+prep_by(mean-21, statement-24)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP
+        (NP (JJ gay) (NN marriage))
+        (S
+          (VP (VBG being)
+            (ADJP (JJ legal)))))
+      (VP (VB mean)
+        (NP (JJR less) (NNS families))))
+    (. ?)))
+
+advmod(mean-7, How-1)
+aux(mean-7, does-2)
+amod(marriage-4, gay-3)
+nsubj(mean-7, marriage-4)
+cop(legal-6, being-5)
+dep(marriage-4, legal-6)
+root(ROOT-0, mean-7)
+amod(families-9, less-8)
+dobj(mean-7, families-9)
+

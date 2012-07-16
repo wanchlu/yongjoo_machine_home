@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADJP (VBN implied)))
+    (. .)))
+
+nsubjpass(implied-3, That-1)
+auxpass(implied-3, is-2)
+root(ROOT-0, implied-3)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB learn)
+      (NP (PRP yourself))
+      (PP (IN on)
+        (NP
+          (NP (DT a) (NN subject))
+          (PP (IN before)
+            (S
+              (VP
+                (VP (VBG making)
+                  (ADJP (JJ stupid)))
+                (CC and)
+                (VP (VBG disrupting)
+                  (NP (NNS comments)))))))))
+    (. .)))
+
+dep(learn-2, Please-1)
+root(ROOT-0, learn-2)
+dobj(learn-2, yourself-3)
+det(subject-6, a-5)
+prep_on(learn-2, subject-6)
+prepc_before(subject-6, making-8)
+acomp(making-8, stupid-9)
+prepc_before(subject-6, disrupting-11)
+conj_and(making-8, disrupting-11)
+dobj(disrupting-11, comments-12)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're) (RB not)
+      (NP (NNP Joe)))
+    (. .)))
+
+nsubj(Joe-4, You-1)
+cop(Joe-4, 're-2)
+neg(Joe-4, not-3)
+root(ROOT-0, Joe-4)
+

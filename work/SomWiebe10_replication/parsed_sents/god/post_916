@@ -1,0 +1,188 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ depends)
+      (PP (IN on)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ believes)
+              (SBAR
+                (S
+                  (PP (IN in)
+                    (NP (NN god)))
+                  (, ,)
+                  (NP (DT all) (FW i))
+                  (VP (VBP 'm)
+                    (VP (VBG saying)
+                      (S
+                        (S
+                          (VP (VBZ is)
+                            (SBAR (IN that)
+                              (S
+                                (NP
+                                  (NP (DT a) (NN statement))
+                                  (PP (IN like)
+                                    (NP (DT this) (NN one))))
+                                (VP (MD would)
+                                  (ADVP (RB technically))
+                                  (VP (VB require)
+                                    (NP (NN proof))
+                                    (SBAR (IN if)
+                                      (S
+                                        (NP (EX there))
+                                        (VP (VBZ is)
+                                          (NP (DT a) (NN god)))))))))))
+                        (SBARQ
+                          (WHADVP (WRB how))
+                          (SQ (MD would)
+                            (NP (PRP you))
+                            (VP (VB know)))
+                          (. ?))))))))))))))
+
+nsubj(depends-2, This-1)
+root(ROOT-0, depends-2)
+nsubj(believes-5, who-4)
+prepc_on(depends-2, believes-5)
+prep_in(saying-12, god-7)
+det(i-10, all-9)
+nsubj(saying-12, i-10)
+aux(saying-12, 'm-11)
+ccomp(believes-5, saying-12)
+dep(saying-12, is-13)
+complm(require-22, that-14)
+det(statement-16, a-15)
+nsubj(require-22, statement-16)
+det(one-19, this-18)
+prep_like(statement-16, one-19)
+aux(require-22, would-20)
+advmod(require-22, technically-21)
+ccomp(is-13, require-22)
+dobj(require-22, proof-23)
+mark(is-26, if-24)
+expl(is-26, there-25)
+advcl(require-22, is-26)
+det(god-28, a-27)
+nsubj(is-26, god-28)
+advmod(know-32, how-29)
+aux(know-32, would-30)
+nsubj(know-32, you-31)
+dep(is-13, know-32)
+
+(ROOT
+  (SQ (CC And)
+    (SBAR
+      (WHNP
+        (NP (NN say))
+        (PP (IN for)
+          (NP (NN example))))
+      (S
+        (NP (PRP you))
+        (VP (VBD had)
+          (NP
+            (NP (DT an) (NN encounter))
+            (PP (IN with)
+              (NP (PRP him)))))))
+    (, ,) (MD would)
+    (NP (NN anybody))
+    (ADVP (RB else))
+    (VP (VB know))
+    (. ?)))
+
+cc(know-15, And-1)
+dobj(had-6, say-2)
+prep_for(say-2, example-4)
+nsubj(had-6, you-5)
+dep(know-15, had-6)
+det(encounter-8, an-7)
+dobj(had-6, encounter-8)
+prep_with(encounter-8, him-10)
+aux(know-15, would-12)
+nsubj(know-15, anybody-13)
+advmod(know-15, else-14)
+root(ROOT-0, know-15)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (NP (DT a) (NN christian))))
+    (CC but)
+    (S
+      (NP (FW i))
+      (VP (VBP do) (RB n't)
+        (VP (VB like)
+          (S
+            (NP
+              (NP (DT the) (NN way))
+              (SBAR
+                (S
+                  (NP (DT this) (NN statement))
+                  (VP (VBZ has)
+                    (VP (VBN been)
+                      (VP (VBN shown)
+                        (SBAR
+                          (S
+                            (NP (FW i))
+                            (VP (MD could) (RB n't)
+                              (VP (VB be)
+                                (ADJP (RBR more) (JJ proud)
+                                  (PP (IN of)
+                                    (NP
+                                      (NP (PRP$ my) (NN belief))
+                                      (PP (IN in)
+                                        (NP (NN god))))))
+                                (SBAR
+                                  (WHADVP (RB however))
+                                  (S
+                                    (NP (DT the) (JJ same) (NNS comments))
+                                    (VP (VBP are)
+                                      (ADJP (JJ gonna)))))))))))))))
+            (VP (VB be)
+              (VP (VBN used)
+                (SBAR (IN because)
+                  (S
+                    (NP (EX there))
+                    (VP (VBZ 's)
+                      (ADJP (RB no) (JJ PROOF)))))))))))
+    (. .)))
+
+nsubj(christian-4, I-1)
+cop(christian-4, am-2)
+det(christian-4, a-3)
+root(ROOT-0, christian-4)
+nsubj(like-9, i-6)
+aux(like-9, do-7)
+neg(like-9, n't-8)
+conj_but(christian-4, like-9)
+det(way-11, the-10)
+nsubjpass(used-35, way-11)
+det(statement-13, this-12)
+nsubjpass(shown-16, statement-13)
+aux(shown-16, has-14)
+auxpass(shown-16, been-15)
+rcmod(way-11, shown-16)
+nsubj(proud-22, i-17)
+aux(proud-22, could-18)
+neg(proud-22, n't-19)
+cop(proud-22, be-20)
+advmod(proud-22, more-21)
+ccomp(shown-16, proud-22)
+poss(belief-25, my-24)
+prep_of(proud-22, belief-25)
+prep_in(belief-25, god-27)
+advmod(gonna-33, however-28)
+det(comments-31, the-29)
+amod(comments-31, same-30)
+nsubj(gonna-33, comments-31)
+cop(gonna-33, are-32)
+dep(proud-22, gonna-33)
+auxpass(used-35, be-34)
+ccomp(like-9, used-35)
+mark('s-38, because-36)
+expl('s-38, there-37)
+advcl(used-35, 's-38)
+advmod(PROOF-40, no-39)
+acomp('s-38, PROOF-40)
+

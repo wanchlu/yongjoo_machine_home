@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (ADVP (RB Well))
+    (NP (NN marriage))
+    (VP (VBZ is)
+      (NP (DT a) (JJ religious) (NN ceremony)))
+    (. .)))
+
+advmod(ceremony-6, Well-1)
+nsubj(ceremony-6, marriage-2)
+cop(ceremony-6, is-3)
+det(ceremony-6, a-4)
+amod(ceremony-6, religious-5)
+root(ROOT-0, ceremony-6)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (CD two) (NNS atheists))
+        (VP (VBP get))))
+    (VP (VBD married)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADVP (RB still))
+            (NP (PRP$ their) (NN belief))))))
+    (. .)))
+
+mark(get-4, If-1)
+num(atheists-3, two-2)
+nsubj(get-4, atheists-3)
+csubj(married-5, get-4)
+root(ROOT-0, married-5)
+nsubj(belief-10, it-6)
+cop(belief-10, is-7)
+advmod(belief-10, still-8)
+poss(belief-10, their-9)
+ccomp(married-5, belief-10)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD cant)
+      (VP (VB have)
+        (NP (DT a) (JJ non-religious) (NN marriage))))))
+
+nsubj(cant-2, You-1)
+root(ROOT-0, cant-2)
+dep(cant-2, have-3)
+det(marriage-6, a-4)
+amod(marriage-6, non-religious-5)
+dobj(have-3, marriage-6)
+

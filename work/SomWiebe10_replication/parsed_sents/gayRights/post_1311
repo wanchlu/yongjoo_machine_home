@@ -1,0 +1,160 @@
+(ROOT
+  (NP (NN Jake) (. .)))
+
+root(ROOT-0, Jake-1)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Really))
+    (. ?)))
+
+root(ROOT-0, Really-1)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB have)
+            (NP
+              (ADJP
+                (ADVP (RB anymore))
+                (JJ valid))
+              (NNS points))
+            (ADVP (RB then))))))
+    (VP (VBD shut)
+      (PRT (RP up)))
+    (. !)))
+
+mark(have-5, If-1)
+nsubj(have-5, you-2)
+aux(have-5, do-3)
+neg(have-5, n't-4)
+csubj(shut-10, have-5)
+advmod(valid-7, anymore-6)
+amod(points-8, valid-7)
+dobj(have-5, points-8)
+advmod(have-5, then-9)
+root(ROOT-0, shut-10)
+prt(shut-10, up-11)
+
+(ROOT
+  (S (`` ``)
+    (NP (PRP we))
+    (VP (VBP live)
+      (PP (IN in)
+        (NP
+          (NP (DT a) (NN country))
+          (PP (IN of)
+            (NP (JJ religious) (NN freedom)))))
+      (: ...)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NN religion))
+          (VP (VBZ has)
+            (NP
+              (NP (DT the) (NN freedom))
+              (PP (TO to)
+                (NP (NNS oppress))))))))
+    (. .)))
+
+nsubj(live-3, we-2)
+root(ROOT-0, live-3)
+det(country-6, a-5)
+prep_in(live-3, country-6)
+amod(freedom-9, religious-8)
+prep_of(country-6, freedom-9)
+advmod(has-13, where-11)
+nsubj(has-13, religion-12)
+advcl(live-3, has-13)
+parataxis(live-3, has-13)
+det(freedom-15, the-14)
+dobj(has-13, freedom-15)
+prep_to(freedom-15, oppress-17)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP NOT))
+    (VP (VBP FALSE))
+    (. ...)))
+
+nsubj(FALSE-3, NOT-2)
+root(ROOT-0, FALSE-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (RB very) (JJ oppressed)
+        (PP (IN by)
+          (NP (PRP$ your) (NN religion)))))
+    (. .)))
+
+nsubj(oppressed-4, I-1)
+cop(oppressed-4, am-2)
+advmod(oppressed-4, very-3)
+root(ROOT-0, oppressed-4)
+poss(religion-7, your-6)
+prep_by(oppressed-4, religion-7)
+
+(ROOT
+  (S
+    (PP (IN Because)
+      (PP (IN of)
+        (NP (PRP$ your) (NN religion))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB marry)
+        (NP (DT a) (NN woman))))
+    (. .)))
+
+prepc_because_of(marry-9, of-2)
+poss(religion-4, your-3)
+pobj(marry-9, religion-4)
+nsubj(marry-9, I-6)
+aux(marry-9, ca-7)
+neg(marry-9, n't-8)
+root(ROOT-0, marry-9)
+det(woman-11, a-10)
+dobj(marry-9, woman-11)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB make)
+            (NP (DT a) (JJ valid) (NN point))
+            (ADVP (RB soon))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB look)
+              (ADJP (RB very) (JJ stupid)))))))
+    (. .)))
+
+mark(make-5, If-1)
+nsubj(make-5, you-2)
+aux(make-5, do-3)
+neg(make-5, n't-4)
+advcl(going-13, make-5)
+det(point-8, a-6)
+amod(point-8, valid-7)
+dobj(make-5, point-8)
+advmod(make-5, soon-9)
+nsubj(going-13, you-11)
+xsubj(look-15, you-11)
+aux(going-13, 're-12)
+root(ROOT-0, going-13)
+aux(look-15, to-14)
+xcomp(going-13, look-15)
+advmod(stupid-17, very-16)
+acomp(look-15, stupid-17)
+

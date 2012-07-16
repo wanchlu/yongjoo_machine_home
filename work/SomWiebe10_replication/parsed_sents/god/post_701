@@ -1,0 +1,78 @@
+(ROOT
+  (S (RB Then)
+    (VP (VB tell)
+      (NP (PRP me))
+      (SBAR
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP we))
+            (VP (VBP have) (RB n't)
+              (PP (IN after)
+                (NP
+                  (NP (NNS thousands))
+                  (PP (IN of)
+                    (NP (NNS years))))))))
+        (CC and)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ makes)
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP think)
+                    (S
+                      (NP (PRP we))
+                      (NP (DT every) (NN will)))))))))))
+    (. ?)))
+
+advmod(tell-2, Then-1)
+root(ROOT-0, tell-2)
+dobj(tell-2, me-3)
+advmod(have-6, why-4)
+nsubj(have-6, we-5)
+dep(tell-2, have-6)
+neg(have-6, n't-7)
+prep_after(have-6, thousands-9)
+prep_of(thousands-9, years-11)
+nsubj(makes-14, what-13)
+dep(tell-2, makes-14)
+conj_and(have-6, makes-14)
+nsubj(think-16, you-15)
+ccomp(makes-14, think-16)
+nsubj(will-19, we-17)
+det(will-19, every-18)
+xcomp(think-16, will-19)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know)
+      (PP (IN of)
+        (NP (RB only) (CD one) (NN thing)))
+      (SBAR
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ has))))
+        (, ,)
+        (CC and)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP deny))))))
+    (. .)))
+
+nsubj(know-2, I-1)
+root(ROOT-0, know-2)
+advmod(thing-6, only-4)
+num(thing-6, one-5)
+prep_of(know-2, thing-6)
+nsubj(has-8, that-7)
+ccomp(know-2, has-8)
+complm(deny-13, that-11)
+nsubj(deny-13, you-12)
+ccomp(know-2, deny-13)
+conj_and(has-8, deny-13)
+

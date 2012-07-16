@@ -1,0 +1,113 @@
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ 's)
+        (ADJP (JJ good))))
+    (: ...)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP find)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP do) (RB n't)
+              (VP (VB have)
+                (S
+                  (NP (DT the) (NN time)
+                    (CC or)
+                    (NN inclination))
+                  (VP (TO to)
+                    (VP (VB look)
+                      (NP (PRP it))
+                      (ADVP (DT all) (RB up))
+                      (PP (IN for)
+                        (NP (PRP you))))))
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBD said)
+                      (SBAR
+                        (S
+                          (NP (PRP I))
+                          (VP (MD would)))))))))))))
+    (. .)))
+
+nsubj(good-3, That-1)
+cop(good-3, 's-2)
+root(ROOT-0, good-3)
+nsubj(find-7, I-6)
+conj_but(good-3, find-7)
+nsubj(have-11, I-8)
+aux(have-11, do-9)
+neg(have-11, n't-10)
+ccomp(find-7, have-11)
+det(time-13, the-12)
+nsubj(look-17, time-13)
+conj_or(time-13, inclination-15)
+nsubj(look-17, inclination-15)
+aux(look-17, to-16)
+ccomp(have-11, look-17)
+xcomp(have-11, look-17)
+dobj(look-17, it-18)
+dep(up-20, all-19)
+advmod(look-17, up-20)
+prep_for(look-17, you-22)
+mark(said-25, as-23)
+nsubj(said-25, I-24)
+advcl(have-11, said-25)
+nsubj(would-27, I-26)
+ccomp(said-25, would-27)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB believe)
+            (NP (PRP it))
+            (ADVP (RB then))))))
+    (VP
+      (VP (VB look)
+        (NP (PRP it))
+        (PRT (RP up)))
+      (CC and)
+      (VP (VB refute)
+        (NP
+          (NP (DT those))
+          (PP (IN of)
+            (NP (PRP us)))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP know)
+                (S
+                  (NP (PRP it))
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ true)))))))))))
+    (. .)))
+
+mark(believe-5, If-1)
+nsubj(believe-5, you-2)
+aux(believe-5, do-3)
+neg(believe-5, n't-4)
+csubj(look-8, believe-5)
+csubj(refute-12, believe-5)
+dobj(believe-5, it-6)
+advmod(believe-5, then-7)
+root(ROOT-0, look-8)
+dobj(look-8, it-9)
+prt(look-8, up-10)
+conj_and(look-8, refute-12)
+dobj(refute-12, those-13)
+nsubj(know-17, those-13)
+prep_of(those-13, us-15)
+rcmod(those-13, know-17)
+nsubj(true-21, it-18)
+aux(true-21, to-19)
+cop(true-21, be-20)
+xcomp(know-17, true-21)
+

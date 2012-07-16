@@ -1,0 +1,162 @@
+(ROOT
+  (S
+    (NP (NN anyone))
+    (VP (MD should)
+      (VP (VB have)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB marry)
+                (NP
+                  (NP (DT no) (NN matter))
+                  (SBAR
+                    (WHNP (WP what))))))))))
+    (. .)))
+
+nsubj(have-3, anyone-1)
+aux(have-3, should-2)
+root(ROOT-0, have-3)
+det(right-5, the-4)
+dobj(have-3, right-5)
+aux(marry-7, to-6)
+infmod(right-5, marry-7)
+det(matter-9, no-8)
+dobj(marry-7, matter-9)
+rcmod(matter-9, what-10)
+
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (NN nothing))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN constitution))
+            (VP (VBG stating)
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (ADJP (JJ wrong)
+                      (SBAR
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ is)
+                            (NP
+                              (NP (JJR more))
+                              (PP (IN of)
+                                (NP (DT a) (JJ religious) (NN belief))))))))))))))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+nsubj(is-2, nothing-3)
+det(constitution-6, the-5)
+prep_in(nothing-3, constitution-6)
+partmod(constitution-6, stating-7)
+nsubj(wrong-10, it-8)
+cop(wrong-10, is-9)
+ccomp(stating-7, wrong-10)
+nsubj(more-13, it-11)
+cop(more-13, is-12)
+dep(wrong-10, more-13)
+det(belief-17, a-15)
+amod(belief-17, religious-16)
+prep_of(more-13, belief-17)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP believe)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP shouldnt)))))))
+    (NP (PRP you))
+    (VP (MD should)
+      (VP (VB keep)
+        (NP (PRP it))
+        (PP (TO to)
+          (NP (PRP yourself)))))
+    (. .)))
+
+mark(believe-3, If-1)
+nsubj(believe-3, you-2)
+advcl(keep-9, believe-3)
+complm(shouldnt-6, that-4)
+nsubj(shouldnt-6, they-5)
+ccomp(believe-3, shouldnt-6)
+nsubj(keep-9, you-7)
+aux(keep-9, should-8)
+root(ROOT-0, keep-9)
+dobj(keep-9, it-10)
+prep_to(keep-9, yourself-12)
+
+(ROOT
+  (S
+    (NP (NN everyone))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ equal)))
+      (CC and)
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN treated)
+            (NP (DT the) (JJ same))))))
+    (. .)))
+
+nsubj(equal-3, everyone-1)
+nsubjpass(treated-7, everyone-1)
+cop(equal-3, is-2)
+root(ROOT-0, equal-3)
+aux(treated-7, should-5)
+auxpass(treated-7, be-6)
+conj_and(equal-3, treated-7)
+det(same-9, the-8)
+dobj(treated-7, same-9)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB how))
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP (VB like)
+        (NP (PRP it))
+        (SBAR (IN if)
+          (S
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (NP (DT the) (JJ other) (NN way))
+                (ADVP (RB around))))
+            (CC and)
+            (S
+              (NP (JJ straight) (NNS people))
+              (VP (VBP couldnt)
+                (VP (VB marry)
+                  (NP (JJ other) (JJ straight) (NNS people)))))))))))
+
+advmod(like-4, how-1)
+aux(like-4, would-2)
+nsubj(like-4, you-3)
+root(ROOT-0, like-4)
+dobj(like-4, it-5)
+mark(way-11, if-6)
+nsubj(way-11, it-7)
+cop(way-11, was-8)
+det(way-11, the-9)
+amod(way-11, other-10)
+advcl(like-4, way-11)
+advmod(way-11, around-12)
+amod(people-15, straight-14)
+nsubj(couldnt-16, people-15)
+advcl(like-4, couldnt-16)
+conj_and(way-11, couldnt-16)
+xcomp(couldnt-16, marry-17)
+amod(people-20, other-18)
+amod(people-20, straight-19)
+dobj(marry-17, people-20)
+

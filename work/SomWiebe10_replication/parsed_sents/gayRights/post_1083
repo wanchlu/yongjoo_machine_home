@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ 14th) (NN Amendment))
+    (VP (VBD gave)
+      (NP (JJ equal) (NNS rights))
+      (PP (TO to)
+        (NP (NNP ALL) (NNP US) (NNS citizens))))
+    (. .)))
+
+det(Amendment-3, The-1)
+amod(Amendment-3, 14th-2)
+nsubj(gave-4, Amendment-3)
+root(ROOT-0, gave-4)
+amod(rights-6, equal-5)
+dobj(gave-4, rights-6)
+nn(citizens-10, ALL-8)
+nn(citizens-10, US-9)
+prep_to(gave-4, citizens-10)
+
+(ROOT
+  (S
+    (NP (NNP Women))
+    (VP (VBD were)
+      (NP (NNP US) (NNS citizens)))
+    (. .)))
+
+nsubj(citizens-4, Women-1)
+cop(citizens-4, were-2)
+nn(citizens-4, US-3)
+root(ROOT-0, citizens-4)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Equal) (NNPS Rights) (NNP Amendment))
+      (VP (VBN proposed)
+        (PP (IN in)
+          (NP (CD 1923)))))
+    (VP
+      (VP (VBD was)
+        (ADJP (JJ redundant)))
+      (CC and)
+      (VP (MD would) (RB n't)
+        (VP (VB have)
+          (VP (VBN given)
+            (NP (PRP them))
+            (NP
+              (NP (DT any) (NNS rights))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP they))
+                  (VP (VBD did) (RB n't)
+                    (ADVP (RB already))
+                    (VP (VB have)
+                      (PP (IN under)
+                        (NP (DT the) (JJ 14th) (NN Amendment))))))))))))
+    (. .)))
+
+det(Amendment-4, The-1)
+nn(Amendment-4, Equal-2)
+nn(Amendment-4, Rights-3)
+nsubj(redundant-9, Amendment-4)
+nsubj(given-14, Amendment-4)
+partmod(Amendment-4, proposed-5)
+prep_in(proposed-5, 1923-7)
+cop(redundant-9, was-8)
+root(ROOT-0, redundant-9)
+aux(given-14, would-11)
+neg(given-14, n't-12)
+aux(given-14, have-13)
+conj_and(redundant-9, given-14)
+iobj(given-14, them-15)
+det(rights-17, any-16)
+dobj(given-14, rights-17)
+dobj(have-23, rights-17)
+complm(have-23, that-18)
+nsubj(have-23, they-19)
+aux(have-23, did-20)
+neg(have-23, n't-21)
+advmod(have-23, already-22)
+dep(rights-17, have-23)
+det(Amendment-27, the-25)
+amod(Amendment-27, 14th-26)
+prep_under(have-23, Amendment-27)
+

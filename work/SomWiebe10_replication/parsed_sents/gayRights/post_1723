@@ -1,0 +1,143 @@
+(ROOT
+  (SBARQ
+    (WHADVP
+      (ADVP (RB Jake) (RB So))
+      (WRB how))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB hurt)
+        (NP (PRP you))
+        (ADVP (RB personally))))
+    (. ?)))
+
+advmod(So-2, Jake-1)
+advmod(how-3, So-2)
+advmod(hurt-6, how-3)
+aux(hurt-6, does-4)
+nsubj(hurt-6, it-5)
+root(ROOT-0, hurt-6)
+dobj(hurt-6, you-7)
+advmod(hurt-6, personally-8)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (VP (VBD said)))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ moral) (NN thing))
+        (: ...)
+        (NP
+          (NP (RB not) (DT an) (JJ actual))
+          (VP (VBN hurt)))))
+    (. .)))
+
+dobj(said-4, What-1)
+nsubj(said-4, you-2)
+aux(said-4, have-3)
+csubj(thing-8, said-4)
+cop(thing-8, is-5)
+det(thing-8, a-6)
+amod(thing-8, moral-7)
+root(ROOT-0, thing-8)
+neg(actual-12, not-10)
+det(actual-12, an-11)
+dep(thing-8, actual-12)
+partmod(actual-12, hurt-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP know)
+        (NP
+          (NP (RB plenty))
+          (PP (IN of)
+            (NP
+              (NP (NNS people))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP have)
+                    (S
+                      (VP (VB grow)
+                        (PRT (RP up))
+                        (PP (IN with)
+                          (PP (IN out)
+                            (NP (DT a) (NN parent))))))))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBD did) (RB n't)
+        (VP (VB hurt)
+          (NP
+            (NP (PRP them))
+            (NP (DT a) (NN bit))))))
+    (. .)))
+
+nsubj(know-2, I-1)
+root(ROOT-0, know-2)
+dobj(know-2, plenty-3)
+prep_of(plenty-3, people-5)
+nsubj(have-7, people-5)
+rcmod(people-5, have-7)
+ccomp(have-7, grow-8)
+prt(grow-8, up-9)
+prep(grow-8, with-10)
+pcomp(with-10, out-11)
+det(parent-13, a-12)
+prep_out(with-10, parent-13)
+nsubj(hurt-18, it-15)
+aux(hurt-18, did-16)
+neg(hurt-18, n't-17)
+conj_and(know-2, hurt-18)
+dobj(hurt-18, them-19)
+iobj(hurt-18, them-19)
+det(bit-21, a-20)
+dobj(hurt-18, bit-21)
+dep(them-19, bit-21)
+
+(ROOT
+  (S
+    (NP (DT Some))
+    (ADVP (RB on))
+    (: ...)
+    (VP
+      (VP (VBP try)
+        (ADVP (RB again)))
+      (CC but)
+      (VP (VBZ lets)
+        (S
+          (VP (VB hear)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (PRP it))
+                (VP (VBZ hurts)
+                  (PP (IN on)
+                    (NP (DT a) (JJ personal) (NN level)))
+                  (PP (IN without)
+                    (NP (DT the) (JJ moral) (NN issue))))))))))
+    (. .)))
+
+nsubj(try-4, Some-1)
+nsubj(lets-7, Some-1)
+advmod(try-4, on-2)
+root(ROOT-0, try-4)
+advmod(try-4, again-5)
+conj_but(try-4, lets-7)
+ccomp(lets-7, hear-8)
+advmod(hurts-11, how-9)
+nsubj(hurts-11, it-10)
+ccomp(hear-8, hurts-11)
+det(level-15, a-13)
+amod(level-15, personal-14)
+prep_on(hurts-11, level-15)
+det(issue-19, the-17)
+amod(issue-19, moral-18)
+prep_without(hurts-11, issue-19)
+

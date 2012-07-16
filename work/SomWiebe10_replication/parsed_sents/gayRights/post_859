@@ -1,0 +1,288 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS People))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB love)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP want)
+                    (S
+                      (VP (TO to)
+                        (VP (VB love))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB butt)
+              (PRT (RP out)))))))
+    (. .)))
+
+nsubj(want-2, People-1)
+xsubj(love-4, People-1)
+root(ROOT-0, want-2)
+aux(love-4, to-3)
+xcomp(want-2, love-4)
+dep(want-7, who-5)
+nsubj(want-7, they-6)
+xsubj(love-9, they-6)
+ccomp(love-4, want-7)
+aux(love-9, to-8)
+xcomp(want-7, love-9)
+nsubj(need-13, we-12)
+xsubj(butt-15, we-12)
+conj_and(want-2, need-13)
+aux(butt-15, to-14)
+xcomp(need-13, butt-15)
+prt(butt-15, out-16)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VBP are) (RB n't)
+          (VP (VBG hurting)
+            (NP (NN anyone))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB give)
+        (NP
+          (NP (DT a) (NN rat) (POS 's))
+          (NN behind))
+        (NP
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ loves)
+                (WHNP (WP who)))))
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ wants)
+                (S
+                  (VP (TO to)
+                    (VP (VB marry)
+                      (WHNP (WP who)))))))))))
+    (. .)))
+
+mark(hurting-5, If-1)
+nsubj(hurting-5, they-2)
+aux(hurting-5, are-3)
+neg(hurting-5, n't-4)
+advcl(give-11, hurting-5)
+dobj(hurting-5, anyone-6)
+nsubj(give-11, I-8)
+aux(give-11, do-9)
+neg(give-11, n't-10)
+root(ROOT-0, give-11)
+det(rat-13, a-12)
+poss(behind-15, rat-13)
+iobj(give-11, behind-15)
+nsubj(loves-17, who-16)
+dobj(give-11, loves-17)
+dobj(loves-17, who-18)
+nsubj(wants-21, who-20)
+dobj(give-11, wants-21)
+conj_and(loves-17, wants-21)
+aux(marry-23, to-22)
+xcomp(wants-21, marry-23)
+dobj(marry-23, who-24)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT all)))
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (VBN concerned)
+        (SBAR
+          (S
+            (NP (NNS people))
+            (VP (MD can)
+              (VP (VB marry)
+                (NP (PRP$ their) (NN cat))
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP want)
+                      (PP (TO to)))))))))))
+    (. .)))
+
+prep_for(concerned-5, all-2)
+nsubjpass(concerned-5, I-3)
+auxpass(concerned-5, 'm-4)
+root(ROOT-0, concerned-5)
+nsubj(marry-8, people-6)
+aux(marry-8, can-7)
+dep(concerned-5, marry-8)
+poss(cat-10, their-9)
+dobj(marry-8, cat-10)
+mark(want-13, if-11)
+nsubj(want-13, they-12)
+advcl(marry-8, want-13)
+prep(want-13, to-14)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ does) (RB n't)
+          (VP (VB hurt)
+            (NP (NN anyone))))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB matter)))
+    (. ?)))
+
+mark(hurt-5, If-1)
+nsubj(hurt-5, it-2)
+aux(hurt-5, does-3)
+neg(hurt-5, n't-4)
+advcl(matter-11, hurt-5)
+dobj(hurt-5, anyone-6)
+dobj(matter-11, what-8)
+aux(matter-11, does-9)
+nsubj(matter-11, it-10)
+root(ROOT-0, matter-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB n't)
+      (VP (VB hurt)
+        (NP (PRP me))
+        (SBAR (IN if)
+          (S
+            (NP (JJ same-sex) (NNS couples))
+            (VP (VBP get)
+              (ADJP (JJ married)))))))
+    (. .)))
+
+nsubj(hurt-4, It-1)
+aux(hurt-4, does-2)
+neg(hurt-4, n't-3)
+root(ROOT-0, hurt-4)
+dobj(hurt-4, me-5)
+mark(married-10, if-6)
+amod(couples-8, same-sex-7)
+nsubj(married-10, couples-8)
+dep(married-10, get-9)
+advcl(hurt-4, married-10)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NN end)))
+    (: ...)
+    (VP (VBP do) (RB n't)
+      (VP (VB like)
+        (NP (JJ same-sex) (NN marriage))))
+    (. ?)))
+
+det(end-3, the-2)
+prep_in(like-7, end-3)
+aux(like-7, do-5)
+neg(like-7, n't-6)
+root(ROOT-0, like-7)
+amod(marriage-9, same-sex-8)
+dobj(like-7, marriage-9)
+
+(ROOT
+  (S (RB Then)
+    (VP
+      (VP (VB shut)
+        (PRT (RP up)))
+      (CC and)
+      (VP (VBP do) (RB n't)
+        (VP (VB get)
+          (NP (CD one)))))
+    (. .)))
+
+advmod(shut-2, Then-1)
+root(ROOT-0, shut-2)
+prt(shut-2, up-3)
+aux(get-7, do-5)
+neg(get-7, n't-6)
+conj_and(shut-2, get-7)
+dobj(get-7, one-8)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (ADJP (JJ easy))
+    (. .)))
+
+dep(easy-2, That-1)
+root(ROOT-0, easy-2)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (PP (IN like)
+        (NP (NNP Westboro) (NNP Baptist) (NNP Church))))
+    (VP (MD can)
+      (ADVP (RB just))
+      (VP (VB keep)
+        (NP (PRP$ their) (NNS rallies))
+        (ADVP (RB indoors))))
+    (. .)))
+
+nsubj(keep-8, People-1)
+nn(Church-5, Westboro-3)
+nn(Church-5, Baptist-4)
+prep_like(People-1, Church-5)
+aux(keep-8, can-6)
+advmod(keep-8, just-7)
+root(ROOT-0, keep-8)
+poss(rallies-10, their-9)
+dobj(keep-8, rallies-10)
+advmod(keep-8, indoors-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBD heard)
+              (SBAR (CC but)
+                (S
+                  (NP (PRP they))
+                  (VP (VBD got)
+                    (UCP
+                      (VP (VBN sued))
+                      (CC and)
+                      (ADJP (RB rightfully) (RB so)))))))))))
+    (. .)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+mark(heard-7, if-5)
+nsubj(heard-7, you-6)
+advcl(know-4, heard-7)
+cc(got-10, but-8)
+nsubj(got-10, they-9)
+ccomp(heard-7, got-10)
+dep(got-10, sued-11)
+advmod(so-14, rightfully-13)
+dep(got-10, so-14)
+conj_and(sued-11, so-14)
+

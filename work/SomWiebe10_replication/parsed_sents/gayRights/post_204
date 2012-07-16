@@ -1,0 +1,181 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (JJ basic) (NN tenet))
+      (PP (IN of)
+        (NP (NN education))))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB teach)
+            (NP (DT both))
+            (NP
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is))))
+              (CC and)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is) (RB not)))))))))
+    (. .)))
+
+det(tenet-3, a-1)
+amod(tenet-3, basic-2)
+nsubj(is-6, tenet-3)
+xsubj(teach-8, tenet-3)
+prep_of(tenet-3, education-5)
+root(ROOT-0, is-6)
+aux(teach-8, to-7)
+xcomp(is-6, teach-8)
+iobj(teach-8, both-9)
+nsubj(is-11, what-10)
+dobj(teach-8, is-11)
+nsubj(is-14, what-13)
+dobj(teach-8, is-14)
+conj_and(is-11, is-14)
+neg(is-14, not-15)
+
+(ROOT
+  (S
+    (ADVP (RB therefore))
+    (, ,)
+    (SBAR (IN in) (NN order)
+      (S
+        (VP (TO to)
+          (VP (VB grow)
+            (PRT (RP up))
+            (ADVP (RB normally))
+            (PP (IN as)
+              (NP (DT an) (JJ adult) (NN male)))))))
+    (, ,)
+    (NP (DT a) (NN boy))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB learn)
+            (PP (IN via)
+              (S
+                (VP (VBG observing)
+                  (SBAR
+                    (S
+                      (NP (PRP$ his) (NNS parents))
+                      (VP (VBP know)
+                        (SBAR
+                          (SBAR
+                            (WHADVP (WRB how))
+                            (S
+                              (VP (TO to)
+                                (VP (VB be)
+                                  (NP (DT a) (NN man))))))
+                          (, ,)
+                          (CC and)
+                          (SBAR
+                            (WHADVP (WRB how) (RB not))
+                            (S
+                              (VP (TO to)
+                                (VP (VB be)
+                                  (NP (DT a) (NN woman)))))))))))))))))
+    (. .)))
+
+advmod(needs-16, therefore-1)
+mark(grow-6, in-3)
+dep(grow-6, order-4)
+aux(grow-6, to-5)
+dep(needs-16, grow-6)
+prt(grow-6, up-7)
+advmod(grow-6, normally-8)
+det(male-12, an-10)
+amod(male-12, adult-11)
+prep_as(grow-6, male-12)
+det(boy-15, a-14)
+nsubj(needs-16, boy-15)
+xsubj(learn-18, boy-15)
+root(ROOT-0, needs-16)
+aux(learn-18, to-17)
+xcomp(needs-16, learn-18)
+prepc_via(learn-18, observing-20)
+poss(parents-22, his-21)
+nsubj(know-23, parents-22)
+ccomp(observing-20, know-23)
+advmod(man-28, how-24)
+aux(man-28, to-25)
+cop(man-28, be-26)
+det(man-28, a-27)
+dep(know-23, man-28)
+advmod(not-32, how-31)
+advmod(woman-36, not-32)
+aux(woman-36, to-33)
+cop(woman-36, be-34)
+det(woman-36, a-35)
+dep(know-23, woman-36)
+conj_and(man-28, woman-36)
+
+(ROOT
+  (S
+    (ADVP (RB conversely))
+    (, ,)
+    (NP
+      (NP (DT a) (NN girl))
+      (PP (IN in)
+        (NP
+          (NP (NN order))
+          (PP (IN for)
+            (NP (PRP her)))
+          (S
+            (VP (TO to)
+              (VP (VB grow)
+                (PRT (RP up))
+                (ADVP (RB normally))))))))
+    (VP (VBZ needs)
+      (PP (TO to)
+        (S
+          (VP (VBG seeing)
+            (SBAR
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (S
+                      (VP (TO to)
+                        (VP (VB become)
+                          (NP (DT a) (NN woman))))))))
+              (, ,)
+              (CC and)
+              (SBAR
+                (WHADVP (WRB how) (RB not))
+                (S
+                  (VP (TO to)
+                    (VP (VB become)
+                      (NP (DT a) (NN man)))))))))))
+    (. .)))
+
+advmod(needs-13, conversely-1)
+det(girl-4, a-3)
+nsubj(needs-13, girl-4)
+prep_in(girl-4, order-6)
+prep_for(order-6, her-8)
+aux(grow-10, to-9)
+infmod(order-6, grow-10)
+prt(grow-10, up-11)
+advmod(grow-10, normally-12)
+root(ROOT-0, needs-13)
+prepc_to(needs-13, seeing-15)
+advmod(is-18, how-16)
+nsubj(is-18, it-17)
+xsubj(woman-22, it-17)
+dep(seeing-15, is-18)
+aux(woman-22, to-19)
+cop(woman-22, become-20)
+det(woman-22, a-21)
+xcomp(is-18, woman-22)
+advmod(not-26, how-25)
+advmod(man-30, not-26)
+aux(man-30, to-27)
+cop(man-30, become-28)
+det(man-30, a-29)
+dep(seeing-15, man-30)
+conj_and(is-18, man-30)
+

@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP First) (NNP Amendment))
+      (PP (TO to)
+        (NP (DT the) (NNP Constitution))))
+    (VP
+      (VP (VBZ restricts)
+        (NP (RB only) (NNP Congress)))
+      (, ,)
+      (CC but)
+      (VP (VBZ does) (RB not)
+        (VP (VB separate)
+          (NP (NN religion))
+          (PP (IN from)
+            (NP (DT the) (NNP United) (NNPS States)))
+          (PP (IN in)
+            (NP (NN general))))))
+    (. .)))
+
+det(Amendment-3, The-1)
+nn(Amendment-3, First-2)
+nsubj(restricts-7, Amendment-3)
+nsubj(separate-14, Amendment-3)
+det(Constitution-6, the-5)
+prep_to(Amendment-3, Constitution-6)
+root(ROOT-0, restricts-7)
+advmod(Congress-9, only-8)
+dobj(restricts-7, Congress-9)
+aux(separate-14, does-12)
+neg(separate-14, not-13)
+conj_but(restricts-7, separate-14)
+dobj(separate-14, religion-15)
+det(States-19, the-17)
+nn(States-19, United-18)
+prep_from(separate-14, States-19)
+prep_in(separate-14, general-21)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP U.S.A.))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB follow)
+              (NP (DT the) (JJ religious) (NN message))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN Declaration))
+                  (PP (IN of)
+                    (NP (NN Independence))))))))))
+    (. .)))
+
+det(U.S.A.-2, The-1)
+nsubj(continue-4, U.S.A.-2)
+xsubj(follow-6, U.S.A.-2)
+aux(continue-4, will-3)
+root(ROOT-0, continue-4)
+aux(follow-6, to-5)
+xcomp(continue-4, follow-6)
+det(message-9, the-7)
+amod(message-9, religious-8)
+dobj(follow-6, message-9)
+det(Declaration-12, the-11)
+prep_in(follow-6, Declaration-12)
+prep_of(Declaration-12, Independence-14)
+

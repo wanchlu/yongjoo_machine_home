@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Homosexuality))
+      (VP (VBZ is)
+        (ADVP (RB NOT))
+        (NP (DT a) (NN sin))))
+    (: ;)
+    (S
+      (NP (NN ignorance))
+      (VP (VBZ is)))
+    (. .)))
+
+nsubj(sin-5, Homosexuality-1)
+cop(sin-5, is-2)
+neg(sin-5, NOT-3)
+det(sin-5, a-4)
+root(ROOT-0, sin-5)
+nsubj(is-8, ignorance-7)
+parataxis(sin-5, is-8)
+
+(ROOT
+  (S
+    (NP (DT The) (NN bible))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (PP (IN on)
+          (NP
+            (NP (NNS OPINIONS))
+            (PP (IN of)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP
+                    (VP (VBZ is)
+                      (VP ('' '')
+                        (NP (NNP Wrong))))
+                    ('' '')
+                    (CC or)
+                    (VP ('' '')
+                      (NP (NNP Right)))))))
+            ('' '')))))
+    (. .)))
+
+det(bible-2, The-1)
+nsubjpass(based-4, bible-2)
+auxpass(based-4, is-3)
+root(ROOT-0, based-4)
+prep_on(based-4, OPINIONS-6)
+nsubj(Wrong-11, what-8)
+aux(Wrong-11, is-9)
+prepc_of(OPINIONS-6, Wrong-11)
+prepc_of(OPINIONS-6, Right-15)
+conj_or(Wrong-11, Right-15)
+
+(ROOT
+  (S
+    (NP (DT The) (NN bible))
+    (VP (VBZ is)
+      (NP (NN fiction) (NN book))
+      (, ,)
+      (PP (IN in)
+        (NP (PRP$ my) (NN opinion))))
+    (. .)))
+
+det(bible-2, The-1)
+nsubj(book-5, bible-2)
+cop(book-5, is-3)
+nn(book-5, fiction-4)
+root(ROOT-0, book-5)
+poss(opinion-9, my-8)
+prep_in(book-5, opinion-9)
+

@@ -1,0 +1,82 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Really))
+    (. ?)))
+
+root(ROOT-0, Really-1)
+
+(ROOT
+  (FRAG
+    (WHADVP (WRB When) (. ?))))
+
+root(ROOT-0, When-1)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (PRP it))
+      (VP (RB not) (VB work)
+        (PRT (RP out))))
+    (. ?)))
+
+advmod(work-5, Why-1)
+aux(work-5, did-2)
+nsubj(work-5, it-3)
+neg(work-5, not-4)
+root(ROOT-0, work-5)
+prt(work-5, out-6)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG thinking)
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP 've)
+              (VP (VBN heard)
+                (NP (DT this) (NN argument))
+                (SBAR (IN before)
+                  (S
+                    (S
+                      (VP (VBN used)
+                        (PP (IN as)
+                          (NP
+                            (NP (DT a) (NN mantra))
+                            (CC and)
+                            (NP (DT no) (NN one))))))
+                    (VP (VBZ has)
+                      (VP (VBN explained)
+                        (NP (PRP it))
+                        (ADVP (DT any) (RBR further))))))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+ccomp(thinking-6, mean-2)
+nsubj(thinking-6, I-4)
+aux(thinking-6, 'm-5)
+root(ROOT-0, thinking-6)
+nsubj(heard-9, I-7)
+aux(heard-9, 've-8)
+ccomp(thinking-6, heard-9)
+det(argument-11, this-10)
+dobj(heard-9, argument-11)
+mark(explained-21, before-12)
+csubj(explained-21, used-13)
+det(mantra-16, a-15)
+prep_as(used-13, mantra-16)
+det(one-19, no-18)
+prep_as(used-13, one-19)
+conj_and(mantra-16, one-19)
+aux(explained-21, has-20)
+advcl(heard-9, explained-21)
+dobj(explained-21, it-22)
+dep(further-24, any-23)
+advmod(explained-21, further-24)
+

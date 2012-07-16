@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBD read)
+        (NP (DT the) (JJ entire) (NN thing)))
+      (CC and)
+      (VP
+        (ADVP (RB then))
+        (VBD selected)
+        (NP
+          (NP (DT the) (NNS parts))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBD wanted)
+                (PP (TO to)
+                  (NP (NN question)))))))))
+    (. .)))
+
+nsubj(read-2, I-1)
+nsubj(selected-8, I-1)
+root(ROOT-0, read-2)
+det(thing-5, the-3)
+amod(thing-5, entire-4)
+dobj(read-2, thing-5)
+advmod(selected-8, then-7)
+conj_and(read-2, selected-8)
+det(parts-10, the-9)
+dobj(selected-8, parts-10)
+dobj(wanted-12, parts-10)
+nsubj(wanted-12, I-11)
+rcmod(parts-10, wanted-12)
+prep_to(wanted-12, question-14)
+
+(ROOT
+  (S ('' '')
+    (S (CC But)
+      (NP (NNP why))
+      (VP (MD should)
+        (ADVP (RB gays))
+        (VP (VB get)
+          (NP (DT the) (NNS rights)))))
+    (IN that)
+    (S
+      (NP (NNS others))
+      (VP (VBP do) (RB n't)))
+    (. .)))
+
+cc(get-6, But-2)
+nsubj(get-6, why-3)
+aux(get-6, should-4)
+advmod(get-6, gays-5)
+root(ROOT-0, get-6)
+det(rights-8, the-7)
+dobj(get-6, rights-8)
+dep(get-6, that-9)
+nsubj(do-11, others-10)
+ccomp(get-6, do-11)
+neg(do-11, n't-12)
+
+(ROOT
+  (S ('' '')
+    (NP (WP What))
+    (VP (VBP are)
+      (NP
+        (NP (PRP you))
+        (VP (VBG talking) (IN about))))
+    (. ?)))
+
+nsubj(you-4, What-2)
+cop(you-4, are-3)
+root(ROOT-0, you-4)
+partmod(you-4, talking-5)
+dep(talking-5, about-6)
+

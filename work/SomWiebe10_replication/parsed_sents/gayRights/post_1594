@@ -1,0 +1,140 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SINV
+      (VP (MD would))
+      (NP (PRP it)))
+    (. ?)))
+
+advmod(would-2, Why-1)
+root(ROOT-0, would-2)
+nsubj(would-2, it-3)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP dont)
+          (PP (IN like)
+            (NP (PRP it))))))
+    (, ,)
+    (ADVP (RB then))
+    (VP (VB guess)
+      (NP (WP what)))
+    (. ?)))
+
+mark(dont-3, If-1)
+nsubj(dont-3, you-2)
+advcl(guess-8, dont-3)
+prep_like(dont-3, it-5)
+advmod(guess-8, then-7)
+root(ROOT-0, guess-8)
+dobj(guess-8, what-9)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (ADVP (NN nothing))
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (PP (IN about)
+              (NP (PRP it)))))))
+    (. !)))
+
+nsubj(have-2, You-1)
+xsubj(do-5, You-1)
+root(ROOT-0, have-2)
+advmod(have-2, nothing-3)
+aux(do-5, to-4)
+xcomp(have-2, do-5)
+prep_about(do-5, it-7)
+
+(ROOT
+  (S
+    (NP (JJ Gay) (NNS people))
+    (VP (VBP exist))
+    (. !)))
+
+amod(people-2, Gay-1)
+nsubj(exist-3, people-2)
+root(ROOT-0, exist-3)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (PRP$ our) (NN world)))))
+    (. !)))
+
+nsubj(part-3, They-1)
+cop(part-3, are-2)
+root(ROOT-0, part-3)
+poss(world-6, our-5)
+prep_of(part-3, world-6)
+
+(ROOT
+  (SQ
+    (S
+      (NP (DT The) (NN shouldnt))
+      (VP
+        (VP (VBP be)
+          (VP (VBN humiliated)))
+        (CC and)
+        (, ,)
+        (VP (VBD why)
+          (PP (IN on)
+            (NP (NN earth))))))
+    (, ,)
+    (SQ (MD would)
+      (NP (PRP they))
+      (VP (VB be)))
+    (. ?)))
+
+det(shouldnt-2, The-1)
+nsubjpass(humiliated-4, shouldnt-2)
+nsubjpass(why-7, shouldnt-2)
+auxpass(humiliated-4, be-3)
+dep(be-13, humiliated-4)
+conj_and(humiliated-4, why-7)
+dep(be-13, why-7)
+prep_on(why-7, earth-9)
+aux(be-13, would-11)
+nsubj(be-13, they-12)
+root(ROOT-0, be-13)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (NN right))
+        (SBAR
+          (S
+            (PP
+              (ADVP (RB just))
+              (IN like)
+              (NP (NN everyone) (RB else)))
+            (, ,)
+            (NP (PRP they))
+            (VP (VBP are) (RB not)
+              (ADJP (RB aliens) (JJ !!)))))))))
+
+nsubj(have-2, They-1)
+root(ROOT-0, have-2)
+det(right-4, a-3)
+dobj(have-2, right-4)
+advmod(!!-14, just-5)
+prep_like(!!-14, everyone-7)
+advmod(everyone-7, else-8)
+nsubj(!!-14, they-10)
+cop(!!-14, are-11)
+neg(!!-14, not-12)
+advmod(!!-14, aliens-13)
+rcmod(right-4, !!-14)
+

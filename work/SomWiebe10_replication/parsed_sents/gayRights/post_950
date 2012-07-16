@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (SBAR (IN Whether)
+      (S
+        (NP (PRP it))
+        (VP (VB be)
+          (PP (IN for)
+            (NP
+              (NP
+                (NP (DT the) (NN color))
+                (PP (IN of)
+                  (NP (JJ someones) (NN skin))))
+              (, ,)
+              (CC or)
+              (NP
+                (NP (PRP$ their) (NN choose))
+                (PP (IN of)
+                  (NP (WP whom))))))
+          (S
+            (VP (TO to)
+              (VP (VB love)))))))
+    (, ,)
+    (NP (NN hate))
+    (VP (VBZ is)
+      (NP (NN hate)))
+    (. .)))
+
+complm(be-3, Whether-1)
+nsubj(be-3, it-2)
+ccomp(hate-21, be-3)
+det(color-6, the-5)
+prep_for(be-3, color-6)
+amod(skin-9, someones-8)
+prep_of(color-6, skin-9)
+poss(choose-13, their-12)
+prep_for(be-3, choose-13)
+conj_or(color-6, choose-13)
+prep_of(choose-13, whom-15)
+aux(love-17, to-16)
+xcomp(be-3, love-17)
+nsubj(hate-21, hate-19)
+cop(hate-21, is-20)
+root(ROOT-0, hate-21)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP hate)
+      (SBAR
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP they))
+            (VP (VBP do) (RB not)
+              (VP (VB understand)))))
+        (, ,)
+        (CC or)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP they))
+            (VP (VBP see)
+              (PP (IN in)
+                (NP (PRP themselves))))))))
+    (. .)))
+
+nsubj(hate-2, People-1)
+root(ROOT-0, hate-2)
+dobj(understand-7, what-3)
+nsubj(understand-7, they-4)
+aux(understand-7, do-5)
+neg(understand-7, not-6)
+dep(hate-2, understand-7)
+dobj(see-12, what-10)
+nsubj(see-12, they-11)
+dep(hate-2, see-12)
+conj_or(understand-7, see-12)
+prep_in(see-12, themselves-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT That))
+      (VP
+        (VP (VBG being)
+          (VP (VBD said)))
+        (, ,)
+        (VP (VBG discriminating)
+          (PP (IN against)
+            (NP
+              (NP (DT the) (NN life) (NNS choices))
+              (PP (IN of)
+                (NP (NN someone) (RB else))))))))
+    (VP (VBZ is)
+      (ADJP (RB just) (JJ wrong)))
+    (. .)))
+
+nsubj(wrong-15, That-1)
+auxpass(said-3, being-2)
+dep(That-1, said-3)
+dep(said-3, discriminating-5)
+det(choices-9, the-7)
+nn(choices-9, life-8)
+prep_against(discriminating-5, choices-9)
+prep_of(choices-9, someone-11)
+advmod(someone-11, else-12)
+cop(wrong-15, is-13)
+advmod(wrong-15, just-14)
+root(ROOT-0, wrong-15)
+

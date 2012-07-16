@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB not)
+      (VP (VB marry)
+        (PP (IN for)
+          (NP (NNS benefits)))))
+    (. .)))
+
+nsubj(marry-4, I-1)
+aux(marry-4, did-2)
+neg(marry-4, not-3)
+root(ROOT-0, marry-4)
+prep_for(marry-4, benefits-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD married)
+      (S
+        (VP (TO to)
+          (VP
+            (VP (VB share)
+              (NP (PRP$ my) (NN life))
+              (PP (IN with)
+                (NP (PRP$ my) (NN husband))))
+            (CC and)
+            (VP (VB make)
+              (NP (DT a) (NN family)))))))
+    (. .)))
+
+nsubj(married-2, I-1)
+xsubj(share-4, I-1)
+root(ROOT-0, married-2)
+aux(share-4, to-3)
+xcomp(married-2, share-4)
+poss(life-6, my-5)
+dobj(share-4, life-6)
+poss(husband-9, my-8)
+prep_with(share-4, husband-9)
+xcomp(married-2, make-11)
+conj_and(share-4, make-11)
+det(family-13, a-12)
+dobj(make-11, family-13)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ good) (NN marriage))
+    (VP (VBZ has)
+      (NP
+        (NP (RB quite) (DT a) (NN lot))
+        (PP (IN of)
+          (NP (NN sacrifice))))
+      (PP (IN from)
+        (NP
+          (NP (PDT both) (DT the) (NN husband))
+          (CC and)
+          (NP (DT the) (NN wife)))))
+    (. .)))
+
+det(marriage-3, A-1)
+amod(marriage-3, good-2)
+nsubj(has-4, marriage-3)
+root(ROOT-0, has-4)
+advmod(lot-7, quite-5)
+det(lot-7, a-6)
+dobj(has-4, lot-7)
+prep_of(lot-7, sacrifice-9)
+predet(husband-13, both-11)
+det(husband-13, the-12)
+prep_from(has-4, husband-13)
+det(wife-16, the-15)
+prep_from(has-4, wife-16)
+conj_and(husband-13, wife-16)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Pretty)
+        (ADJP (RB much) (JJS most))
+        (NNS benefits))
+      (PRN (-LRB- -LRB-)
+        (PP (IN like)
+          (S
+            (VP (VBG being)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB raise)
+                      (NP (PRP$ your) (JJ own) (NNS kids)))))))))
+        (-RRB- -RRB-)))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN screwed)
+          (PP (IN by)
+            (NP (DT this) (NN economy))))))
+    (. .)))
+
+nn(benefits-4, Pretty-1)
+advmod(most-3, much-2)
+amod(benefits-4, most-3)
+nsubjpass(screwed-17, benefits-4)
+dep(benefits-4, like-6)
+cop(able-8, being-7)
+pcomp(like-6, able-8)
+aux(raise-10, to-9)
+xcomp(able-8, raise-10)
+poss(kids-13, your-11)
+amod(kids-13, own-12)
+dobj(raise-10, kids-13)
+aux(screwed-17, have-15)
+auxpass(screwed-17, been-16)
+root(ROOT-0, screwed-17)
+det(economy-20, this-19)
+agent(screwed-17, economy-20)
+

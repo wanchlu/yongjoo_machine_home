@@ -1,0 +1,167 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP 've)
+      (VP (VBD had)
+        (NP (DT this) (NN argument))
+        (PRT (RP over)
+          (CC and)
+          (RP over))
+        (PP
+          (ADVP (RB again))
+          (IN with)
+          (NP (DT the) (JJ same) (NNS weigh-ins)))
+        (PP (IN as)
+          (NP (PDT all) (DT the) (NN rest)))))
+    (. .)))
+
+nsubj(had-3, We-1)
+aux(had-3, 've-2)
+root(ROOT-0, had-3)
+det(argument-5, this-4)
+dobj(had-3, argument-5)
+prt(had-3, over-6)
+dep(over-6, and-7)
+dep(over-6, over-8)
+advmod(had-3, again-9)
+det(weigh-ins-13, the-11)
+amod(weigh-ins-13, same-12)
+prep_with(had-3, weigh-ins-13)
+predet(rest-17, all-15)
+det(rest-17, the-16)
+prep_as(had-3, rest-17)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP say)
+      (S
+        (INTJ (UH yes))
+        (, ,)
+        (NP (PRP they))
+        (VP (MD should)
+          (VP (VB have)
+            (NP (DT the) (NN right)
+              (S
+                (VP (TO to)
+                  (VP (VB marry)
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP they))
+                        (ADVP (RB so))
+                        (VP (VBP choose))))))))))))
+    (. .)))
+
+nsubj(say-2, I-1)
+root(ROOT-0, say-2)
+dep(have-7, yes-3)
+nsubj(have-7, they-5)
+aux(have-7, should-6)
+ccomp(say-2, have-7)
+det(right-9, the-8)
+dobj(have-7, right-9)
+aux(marry-11, to-10)
+infmod(right-9, marry-11)
+mark(choose-15, if-12)
+nsubj(choose-15, they-13)
+advmod(choose-15, so-14)
+advcl(marry-11, choose-15)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP
+        (VP (VBZ hurts)
+          (NP (DT no) (NN one)))
+        (CC and)
+        (VP (VBZ helps)
+          (ADJP (JJ many)))))
+    (: ...)
+    (S
+      (NP (NNS children))
+      (VP (VBD included)))
+    (. .)))
+
+nsubj(hurts-2, It-1)
+nsubj(helps-6, It-1)
+root(ROOT-0, hurts-2)
+det(one-4, no-3)
+dobj(hurts-2, one-4)
+conj_and(hurts-2, helps-6)
+acomp(helps-6, many-7)
+nsubj(included-10, children-9)
+parataxis(hurts-2, included-10)
+
+(ROOT
+  (S
+    (NP (NNP Children))
+    (VP (VBP do) (RB n't)
+      (VP (VB end)
+        (PRT (RP up))
+        (NP (JJ gay))
+        (SBAR (IN because)
+          (S
+            (NP (PRP$ their) (NNS parents))
+            (VP (VBP are)
+              (ADJP
+                (ADJP (RB no) (JJR more))
+                (SBAR (IN than)
+                  (S
+                    (NP (NNS children))
+                    (VP (VBP grow)
+                      (PRT (RP up))
+                      (SBAR
+                        (ADVP (RB straight))
+                        (IN because)
+                        (S
+                          (NP (PRP$ their) (NNS parents))
+                          (VP (VBP are)
+                            (ADJP (RB straight))))))))))))))
+    (. .)))
+
+nsubj(end-4, Children-1)
+aux(end-4, do-2)
+neg(end-4, n't-3)
+root(ROOT-0, end-4)
+prt(end-4, up-5)
+dobj(end-4, gay-6)
+mark(more-12, because-7)
+poss(parents-9, their-8)
+nsubj(more-12, parents-9)
+cop(more-12, are-10)
+advmod(more-12, no-11)
+advcl(end-4, more-12)
+mark(grow-15, than-13)
+nsubj(grow-15, children-14)
+dep(more-12, grow-15)
+prt(grow-15, up-16)
+advmod(straight-22, straight-17)
+dep(straight-22, because-18)
+poss(parents-20, their-19)
+nsubj(straight-22, parents-20)
+cop(straight-22, are-21)
+ccomp(grow-15, straight-22)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Let)
+        (S
+          (NP (PRP it))
+          (VP (VB go)
+            (CC and)
+            (VB go)))))
+    (VP (VBP get)
+      (ADJP (JJ married)))
+    (. !)))
+
+csubj(married-7, Let-1)
+nsubj(go-3, it-2)
+nsubj(go-5, it-2)
+ccomp(Let-1, go-3)
+ccomp(Let-1, go-5)
+conj_and(go-3, go-5)
+dep(married-7, get-6)
+root(ROOT-0, married-7)
+

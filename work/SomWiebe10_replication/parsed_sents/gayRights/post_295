@@ -1,0 +1,44 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB assume)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (`` ``) (NN expert) ('' '') (NN MD))
+            (VP (VBZ is)
+              (ADJP (JJ gay)))))))
+    (. ?)))
+
+nsubj(assume-3, I-1)
+aux(assume-3, would-2)
+root(ROOT-0, assume-3)
+complm(gay-11, that-4)
+det(MD-9, the-5)
+nn(MD-9, expert-7)
+nsubj(gay-11, MD-9)
+cop(gay-11, is-10)
+ccomp(assume-3, gay-11)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP (PRP$ their) (NN orientation))
+      (VP (VB alter)
+        (NP
+          (NP (DT the) (NN truth))
+          (PP (IN of)
+            (NP (PRP$ their) (NN statement))))))
+    (. ?)))
+
+advmod(alter-5, How-1)
+aux(alter-5, does-2)
+poss(orientation-4, their-3)
+nsubj(alter-5, orientation-4)
+root(ROOT-0, alter-5)
+det(truth-7, the-6)
+dobj(alter-5, truth-7)
+poss(statement-10, their-9)
+prep_of(truth-7, statement-10)
+

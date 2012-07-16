@@ -1,0 +1,178 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Nuclear) (NNS families))
+      (VP (VBP are)
+        (VP (VBG failing))))
+    (: ;)
+    (S
+      (VP (MD can)
+        (ADVP (RB hardly))
+        (VP (VB be)
+          (VP (VBN held)
+            (PRT (RP up))
+            (PP (IN against)
+              (NP (JJ gay) (NN adoption)))))))
+    (. .)))
+
+nn(families-2, Nuclear-1)
+nsubj(failing-4, families-2)
+aux(failing-4, are-3)
+root(ROOT-0, failing-4)
+aux(held-9, can-6)
+advmod(held-9, hardly-7)
+auxpass(held-9, be-8)
+parataxis(failing-4, held-9)
+prt(held-9, up-10)
+amod(adoption-13, gay-12)
+prep_against(held-9, adoption-13)
+
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP
+        (NP (DT all) (NNS families))
+        (PP (IN in)
+          (NP (NNP Australia)))))
+    (, ,)
+    (NP
+      (NP (CD 22) (NN %))
+      (PP (IN of)
+        (NP (PRP them))))
+    (VP (VBP are)
+      (NP (JJ single) (NN parent) (NNS families)))
+    (. .)))
+
+det(families-3, all-2)
+prep_of(families-14, families-3)
+prep_in(families-3, Australia-5)
+num(%-8, 22-7)
+nsubj(families-14, %-8)
+prep_of(%-8, them-10)
+cop(families-14, are-11)
+amod(families-14, single-12)
+nn(families-14, parent-13)
+root(ROOT-0, families-14)
+
+(ROOT
+  (S
+    (NP (JJ Few))
+    (VP (MD will)
+      (ADVP (RB fully))
+      (VP (VB establish)
+        (NP
+          (NP (DT a) (NN child) (POS 's))
+          (NN potential))))
+    (. .)))
+
+nsubj(establish-4, Few-1)
+aux(establish-4, will-2)
+advmod(establish-4, fully-3)
+root(ROOT-0, establish-4)
+det(child-6, a-5)
+poss(potential-8, child-6)
+dobj(establish-4, potential-8)
+
+(ROOT
+  (S
+    (PP (IN Over)
+      (NP
+        (NP (CD 45,000) (JJ Australian) (NNS marriages))
+        (SBAR
+          (S
+            (VP (MD will)
+              (VP (VB end)
+                (PP (IN in)
+                  (NP (NN divorce)))))))))
+    (, ,)
+    (NP
+      (NP (JJ few))
+      (PP (IN of)
+        (NP (DT these))))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (NNS families))))
+    (. .)))
+
+num(marriages-4, 45,000-2)
+amod(marriages-4, Australian-3)
+prep_over(families-15, marriages-4)
+aux(end-6, will-5)
+rcmod(marriages-4, end-6)
+prep_in(end-6, divorce-8)
+nsubj(families-15, few-10)
+prep_of(few-10, these-12)
+aux(families-15, will-13)
+cop(families-15, be-14)
+root(ROOT-0, families-15)
+
+(ROOT
+  (S
+    (ADVP (RB So))
+    (, ,)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (JJ wrong)
+          (S
+            (VP (TO to)
+              (VP (VB promote)
+                (NP (DT the) (JJ nuclear) (NN family))
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ is)
+                      (VP (VBG failing)
+                        (ADVP (RB so) (RB badly))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (JJ wrong)
+          (S
+            (VP (TO to)
+              (VP (VB hold-out)
+                (PP (IN on)
+                  (NP (JJ gay) (NN adoption)))
+                (PP (IN in)
+                  (NP
+                    (NP (NN favor))
+                    (PP (IN of)
+                      (NP (DT the) (JJ nuclear) (NN family)))))
+                (, ,)
+                (PP (IN for)
+                  (NP (DT the) (JJ same) (NN reason)))))))))
+    (. .)))
+
+advmod(wrong-5, So-1)
+nsubj(wrong-5, it-3)
+cop(wrong-5, is-4)
+root(ROOT-0, wrong-5)
+aux(promote-7, to-6)
+xcomp(wrong-5, promote-7)
+det(family-10, the-8)
+amod(family-10, nuclear-9)
+dobj(promote-7, family-10)
+advmod(failing-14, when-11)
+nsubj(failing-14, it-12)
+aux(failing-14, is-13)
+advcl(promote-7, failing-14)
+advmod(badly-16, so-15)
+advmod(failing-14, badly-16)
+nsubj(wrong-21, it-19)
+cop(wrong-21, is-20)
+conj_and(wrong-5, wrong-21)
+aux(hold-out-23, to-22)
+xcomp(wrong-21, hold-out-23)
+amod(adoption-26, gay-25)
+prep_on(hold-out-23, adoption-26)
+prep_in(hold-out-23, favor-28)
+det(family-32, the-30)
+amod(family-32, nuclear-31)
+prep_of(favor-28, family-32)
+det(reason-37, the-35)
+amod(reason-37, same-36)
+prep_for(hold-out-23, reason-37)
+

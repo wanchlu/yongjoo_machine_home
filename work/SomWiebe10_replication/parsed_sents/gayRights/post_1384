@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is) (RB n't)
+          (ADJP (JJ wrong))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBP do) (RB n't)))))))
+    (NP (PRP you))
+    (VP (VBP like)
+      (NP (PRP it)))
+    (. .)))
+
+mark(wrong-5, If-1)
+nsubj(wrong-5, it-2)
+cop(wrong-5, is-3)
+neg(wrong-5, n't-4)
+advcl(like-10, wrong-5)
+advmod(do-7, why-6)
+advcl(wrong-5, do-7)
+neg(do-7, n't-8)
+nsubj(like-10, you-9)
+root(ROOT-0, like-10)
+dobj(like-10, it-11)
+
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB prove)
+      (SBAR
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (ADJP (NN nothing) (JJ wrong)
+              (PP (IN with)
+                (NP (PRP it))))))))
+    (. ?)))
+
+aux(prove-3, Can-1)
+nsubj(prove-3, you-2)
+root(ROOT-0, prove-3)
+expl(is-5, there-4)
+ccomp(prove-3, is-5)
+dep(wrong-7, nothing-6)
+acomp(is-5, wrong-7)
+prep_with(wrong-7, it-9)
+
+(ROOT
+  (S
+    (VP (VB Prove)
+      (NP (PRP it)))
+    (. !)))
+
+root(ROOT-0, Prove-1)
+dobj(Prove-1, it-2)
+

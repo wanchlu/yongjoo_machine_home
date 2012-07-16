@@ -1,0 +1,81 @@
+(ROOT
+  (NP
+    (NP (NNS Humans))
+    (NP (NN progress))
+    (. .)))
+
+root(ROOT-0, Humans-1)
+dep(Humans-1, progress-2)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP expand))
+    (. .)))
+
+nsubj(expand-2, We-1)
+root(ROOT-0, expand-2)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VB evolve))
+    (. .)))
+
+nsubj(evolve-2, We-1)
+root(ROOT-0, evolve-2)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP become)
+      (ADVP (RBR better)))
+    (. .)))
+
+nsubj(become-2, We-1)
+root(ROOT-0, become-2)
+advmod(become-2, better-3)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT a) (CD thousand) (NNS years)))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD 'll)
+      (VP (VB have)
+        (NP
+          (NP (NNS ideas))
+          (CC and)
+          (NP
+            (NP (NNS systems)
+              (CC and)
+              (NNS beliefs))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP are)
+                  (ADVP (RBR better) (RB then))
+                  (NP (PRP$ our) (JJ current) (NNS ones)))))))))
+    (. .)))
+
+det(years-4, a-2)
+num(years-4, thousand-3)
+prep_in(have-8, years-4)
+nsubj(have-8, they-6)
+aux(have-8, 'll-7)
+root(ROOT-0, have-8)
+dobj(have-8, ideas-9)
+dobj(have-8, systems-11)
+conj_and(ideas-9, systems-11)
+nsubj(ones-20, systems-11)
+conj_and(ideas-9, beliefs-13)
+conj_and(systems-11, beliefs-13)
+nsubj(ones-20, beliefs-13)
+cop(ones-20, are-15)
+advmod(then-17, better-16)
+advmod(ones-20, then-17)
+poss(ones-20, our-18)
+amod(ones-20, current-19)
+rcmod(systems-11, ones-20)
+

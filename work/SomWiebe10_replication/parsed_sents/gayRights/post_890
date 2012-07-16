@@ -1,0 +1,189 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Supreme) (NNP Court))
+      (PP (IN of)
+        (NP (NNP California))))
+    (VP (VBD did)
+      (SBAR
+        (WHADJP (RB exactly) (WP what))
+        (S
+          (NP (PRP they))
+          (VP (VBP 're)
+            (VP (VBN appointed)
+              (S
+                (VP (TO to)
+                  (VP (VB do)))))))))
+    (. .)))
+
+det(Court-3, The-1)
+nn(Court-3, Supreme-2)
+nsubj(did-6, Court-3)
+prep_of(Court-3, California-5)
+root(ROOT-0, did-6)
+dep(appointed-11, exactly-7)
+dep(exactly-7, what-8)
+nsubjpass(appointed-11, they-9)
+xsubj(do-13, they-9)
+auxpass(appointed-11, 're-10)
+ccomp(did-6, appointed-11)
+aux(do-13, to-12)
+xcomp(appointed-11, do-13)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD determined)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ prior) (NN voter))
+          (VP (VBD supported)
+            (SBAR
+              (S
+                (NP (NN action))
+                (VP (VBD was)
+                  (ADJP (JJ unconstitutional)))))))))
+    (. .)))
+
+nsubj(determined-2, They-1)
+root(ROOT-0, determined-2)
+complm(supported-7, that-3)
+det(voter-6, the-4)
+amod(voter-6, prior-5)
+nsubj(supported-7, voter-6)
+ccomp(determined-2, supported-7)
+nsubj(unconstitutional-10, action-8)
+cop(unconstitutional-10, was-9)
+ccomp(supported-7, unconstitutional-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD violated)
+        (NP
+          (NP (DT the) (NN wording))
+          (PP (IN of)
+            (NP (DT the) (NNP California) (NNP State) (NNP Constitution))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ violates)
+        (NP
+          (NP (DT the) (NN wording)
+            (CC and)
+            (NN spirit))
+          (PP (IN of)
+            (NP (DT the) (NNP American) (NNP Constitution))))))
+    (. .)))
+
+nsubj(violated-2, It-1)
+root(ROOT-0, violated-2)
+det(wording-4, the-3)
+dobj(violated-2, wording-4)
+det(Constitution-9, the-6)
+nn(Constitution-9, California-7)
+nn(Constitution-9, State-8)
+prep_of(wording-4, Constitution-9)
+nsubj(violates-13, it-12)
+conj_and(violated-2, violates-13)
+det(wording-15, the-14)
+dobj(violates-13, wording-15)
+dobj(violates-13, spirit-17)
+conj_and(wording-15, spirit-17)
+det(Constitution-21, the-19)
+nn(Constitution-21, American-20)
+prep_of(wording-15, Constitution-21)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (UH yes) (NN vote))
+      (PP (IN on)
+        (NP (NNP Prop) (CD 8))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN vote))
+        (PP (IN against)
+          (NP
+            (NP
+              (NP (NN equality))
+              (PP (IN for)
+                (NP (DT all) (NNPS Americans))))
+            (CC and)
+            (NP
+              (NP (DT a) (NN vote))
+              (PP (IN for)
+                (NP
+                  (NP (NN law))
+                  (VP (VBN based)
+                    (PP (IN upon)
+                      (NP
+                        (NP (CD one) (JJ particular) (JJ religious) (NN belief))
+                        (SBAR (IN that)
+                          (FRAG
+                            (PP (IN with)
+                              (NP (DT a) (JJ Judeo-Christian) (NN base)))))))))))))))
+    (. .)))
+
+det(vote-3, A-1)
+dep(vote-3, yes-2)
+nsubj(vote-9, vote-3)
+prep_on(vote-3, Prop-5)
+num(Prop-5, 8-6)
+cop(vote-9, is-7)
+det(vote-9, a-8)
+root(ROOT-0, vote-9)
+prep_against(vote-9, equality-11)
+det(Americans-14, all-13)
+prep_for(equality-11, Americans-14)
+det(vote-17, a-16)
+prep_against(vote-9, vote-17)
+conj_and(equality-11, vote-17)
+prep_for(vote-17, law-19)
+partmod(law-19, based-20)
+num(belief-25, one-22)
+amod(belief-25, particular-23)
+amod(belief-25, religious-24)
+prep_upon(based-20, belief-25)
+complm(with-27, that-26)
+dep(belief-25, with-27)
+det(base-30, a-28)
+amod(base-30, Judeo-Christian-29)
+pobj(with-27, base-30)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (, ,)
+    (PP (IN in)
+      (NP (NN effect)))
+    (, ,)
+    (VP (VBZ establishes)
+      (NP
+        (NP (DT a) (NN state) (NN religion))
+        (, ,)
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (VP (VBN forbidden)
+                (PP (IN by)
+                  (NP (DT the) (NNP United) (NNPS States) (NNP Constitution)))))))))
+    (. .)))
+
+nsubj(establishes-6, That-1)
+prep_in(establishes-6, effect-4)
+root(ROOT-0, establishes-6)
+det(religion-9, a-7)
+nn(religion-9, state-8)
+dobj(establishes-6, religion-9)
+nsubjpass(forbidden-13, religion-9)
+auxpass(forbidden-13, is-12)
+rcmod(religion-9, forbidden-13)
+det(Constitution-18, the-15)
+nn(Constitution-18, United-16)
+nn(Constitution-18, States-17)
+agent(forbidden-13, Constitution-18)
+

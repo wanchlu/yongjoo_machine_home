@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (PRP He))
+    (VP (VBZ does))
+    (. .)))
+
+dep(does-4, Yes-1)
+nsubj(does-4, He-3)
+root(ROOT-0, does-4)
+
+(ROOT
+  (S
+    (PP (IN From)
+      (NP (DT the) (JJ athiest) (NN viewpoint)))
+    (, ,)
+    (NP (DT the) (NN universe))
+    (VP (VBZ exists)
+      (ADVP (RB basically))
+      (PP (IN by)
+        (NP (NN accident))))
+    (. .)))
+
+det(viewpoint-4, the-2)
+amod(viewpoint-4, athiest-3)
+prep_from(exists-8, viewpoint-4)
+det(universe-7, the-6)
+nsubj(exists-8, universe-7)
+root(ROOT-0, exists-8)
+advmod(exists-8, basically-9)
+prep_by(exists-8, accident-11)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN point))
+        (PP (IN of)
+          (NP (NN view)))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (MD will)
+              (ADVP (RB never))
+              (VP (VB understand)))))))
+    (. .)))
+
+nsubj(point-4, This-1)
+cop(point-4, is-2)
+det(point-4, a-3)
+root(ROOT-0, point-4)
+dobj(understand-10, point-4)
+prep_of(point-4, view-6)
+nsubj(understand-10, I-7)
+aux(understand-10, will-8)
+neg(understand-10, never-9)
+rcmod(point-4, understand-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NN world))
+    (VP
+      (VP (VBZ 's)
+        (ADJP (RB too) (JJ complicated)))
+      (CC and)
+      (VP (VBZ works)
+        (ADVP (RB too) (RB well)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (VP (VBN sprung)
+                  (PRT (RP out))
+                  (PP (IN of)
+                    (NP
+                      (NP (RB nowhere))
+                      (PP (RB because) (IN of)
+                        (NP (DT a) (NN chemical) (NN reaction))))))))))))
+    (. .)))
+
+det(world-2, The-1)
+nsubj(complicated-5, world-2)
+nsubj(works-7, world-2)
+cop(complicated-5, 's-3)
+advmod(complicated-5, too-4)
+root(ROOT-0, complicated-5)
+conj_and(complicated-5, works-7)
+advmod(well-9, too-8)
+advmod(works-7, well-9)
+aux(sprung-12, to-10)
+aux(sprung-12, have-11)
+dep(well-9, sprung-12)
+prep_out_of(sprung-12, nowhere-15)
+det(reaction-20, a-18)
+nn(reaction-20, chemical-19)
+prep_because_of(nowhere-15, reaction-20)
+

@@ -1,0 +1,173 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP I))
+        (VP (VBP am)
+          (ADJP (JJ glad)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP do) (RB not)
+                  (VP (VB support)
+                    (S
+                      (VP (VBG restricting)
+                        (NP (NNS rights))
+                        (PP (VBN based)
+                          (PP (IN upon)
+                            (NP
+                              (NP (PRP$ your) (JJ own) (NN perception))
+                              (PP (IN of)
+                                (NP (NN morality))))))))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP encourage)
+      (S
+        (NP (PRP you))
+        (VP (TO to)
+          (VP (VB do)
+            (NP (NN research))
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN nature))
+                (PP (IN of)
+                  (NP (NN homosexuality)))))))))
+    (. .)))
+
+mark(glad-4, While-1)
+nsubj(glad-4, I-2)
+cop(glad-4, am-3)
+advcl(encourage-20, glad-4)
+nsubj(support-8, you-5)
+aux(support-8, do-6)
+neg(support-8, not-7)
+dep(glad-4, support-8)
+xcomp(support-8, restricting-9)
+dobj(restricting-9, rights-10)
+prep(restricting-9, based-11)
+pcomp(based-11, upon-12)
+poss(perception-15, your-13)
+amod(perception-15, own-14)
+prep_upon(based-11, perception-15)
+prep_of(perception-15, morality-17)
+nsubj(encourage-20, I-19)
+root(ROOT-0, encourage-20)
+nsubj(do-23, you-21)
+aux(do-23, to-22)
+xcomp(encourage-20, do-23)
+dobj(do-23, research-24)
+det(nature-27, the-26)
+prep_on(do-23, nature-27)
+prep_of(nature-27, homosexuality-29)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP American) (NNP Psychiatric) (NNP Association))
+    (VP (VBZ defines)
+      (ADVP (RB homosexuality))
+      (PP (IN as)
+        (NP
+          (NP (DT a) (JJ normal) (NN variant))
+          (PP (IN of)
+            (NP (NN sexuality))))))
+    (. .)))
+
+det(Association-4, The-1)
+nn(Association-4, American-2)
+nn(Association-4, Psychiatric-3)
+nsubj(defines-5, Association-4)
+root(ROOT-0, defines-5)
+advmod(defines-5, homosexuality-6)
+det(variant-10, a-8)
+amod(variant-10, normal-9)
+prep_as(defines-5, variant-10)
+prep_of(variant-10, sexuality-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would) (RB n't)
+      (VP
+        (ADVP (RB really))
+        (VBD described)
+        (PP (IN as)
+          (NP (DT an) (NN anomaly)))))
+    (. .)))
+
+nsubj(described-5, It-1)
+aux(described-5, would-2)
+neg(described-5, n't-3)
+advmod(described-5, really-4)
+root(ROOT-0, described-5)
+det(anomaly-8, an-7)
+prep_as(described-5, anomaly-8)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP
+          (QP (RB Approximately) (CD 10))
+          (NN %))
+        (PP (IN of)
+          (NP (DT the) (JJ human) (NN population))))
+      (VP (VBZ is)
+        (ADJP (JJ homosexual))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN homosexuality))
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN linked)
+            (PP (TO to)
+              (NP (JJ genetic) (NNS factors)))))))
+    (. .)))
+
+quantmod(10-2, Approximately-1)
+num(%-3, 10-2)
+nsubj(homosexual-9, %-3)
+det(population-7, the-5)
+amod(population-7, human-6)
+prep_of(%-3, population-7)
+cop(homosexual-9, is-8)
+root(ROOT-0, homosexual-9)
+nsubjpass(linked-15, homosexuality-12)
+aux(linked-15, has-13)
+auxpass(linked-15, been-14)
+conj_and(homosexual-9, linked-15)
+amod(factors-18, genetic-17)
+prep_to(linked-15, factors-18)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ natural) (NN thing))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP (VBN observed)
+                  (PP (IN in)
+                    (NP
+                      (QP (RB approximately) (CD 1500))
+                      (JJ other) (NNS species))))))))))
+    (. .)))
+
+nsubj(thing-5, It-1)
+cop(thing-5, is-2)
+det(thing-5, a-3)
+amod(thing-5, natural-4)
+root(ROOT-0, thing-5)
+nsubjpass(observed-9, thing-5)
+aux(observed-9, has-7)
+auxpass(observed-9, been-8)
+rcmod(thing-5, observed-9)
+quantmod(1500-12, approximately-11)
+num(species-14, 1500-12)
+amod(species-14, other-13)
+prep_in(observed-9, species-14)
+

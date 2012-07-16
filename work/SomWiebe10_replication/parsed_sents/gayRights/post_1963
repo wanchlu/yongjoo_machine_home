@@ -1,0 +1,204 @@
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ is) (RB all)
+        (ADJP (RB very) (JJ nice))))
+    (: ;)
+    (S
+      (VP (VB thank)
+        (NP (PRP you))
+        (PP (IN for)
+          (S
+            (VP (VBG supporting)
+              (NP (PRP$ your) (NNP Deism) (NN argument)))))))
+    (. .)))
+
+nsubj(nice-5, That-1)
+cop(nice-5, is-2)
+advmod(nice-5, all-3)
+advmod(nice-5, very-4)
+root(ROOT-0, nice-5)
+parataxis(nice-5, thank-7)
+dobj(thank-7, you-8)
+prepc_for(thank-7, supporting-10)
+poss(argument-13, your-11)
+nn(argument-13, Deism-12)
+dobj(supporting-10, argument-13)
+
+(ROOT
+  (S (CC But)
+    (NP
+      (NP (NNP Jefferson) (POS 's))
+      (JJ exact) (JJ religious) (NNS beliefs))
+    (VP (VBP are) (RB not)
+      (ADJP (JJ relevant))
+      (ADVP (RB here)))
+    (. .)))
+
+cc(relevant-9, But-1)
+poss(beliefs-6, Jefferson-2)
+amod(beliefs-6, exact-4)
+amod(beliefs-6, religious-5)
+nsubj(relevant-9, beliefs-6)
+cop(relevant-9, are-7)
+neg(relevant-9, not-8)
+root(ROOT-0, relevant-9)
+advmod(relevant-9, here-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP First) (NNP Constitutional) (NNP Amendment))
+    (VP (VBD did) (RB not)
+      (VP (VB retract)
+        (NP (NN religion))
+        (PP (IN from)
+          (NP
+            (NP (DT the) (NN Declaration))
+            (PP (IN of)
+              (NP (NN Independence)))))))
+    (. .)))
+
+det(Amendment-4, The-1)
+nn(Amendment-4, First-2)
+nn(Amendment-4, Constitutional-3)
+nsubj(retract-7, Amendment-4)
+aux(retract-7, did-5)
+neg(retract-7, not-6)
+root(ROOT-0, retract-7)
+dobj(retract-7, religion-8)
+det(Declaration-11, the-10)
+prep_from(retract-7, Declaration-11)
+prep_of(Declaration-11, Independence-13)
+
+(ROOT
+  (S
+    (NP (DT Neither))
+    (VP (VBZ is)
+      (S
+        (NP (PRP it))
+        (VP (VBG separating)
+          (NP (DT the) (NNP United) (NNPS States))
+          (PP (IN from)
+            (NP (NN religion))))))
+    (. .)))
+
+nsubj(is-2, Neither-1)
+root(ROOT-0, is-2)
+nsubj(separating-4, it-3)
+dep(is-2, separating-4)
+det(States-7, the-5)
+nn(States-7, United-6)
+dobj(separating-4, States-7)
+prep_from(separating-4, religion-9)
+
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ is)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP it))
+            (VP (VBZ says))))))
+    (: :)
+    (S
+      (NP (NNP Congress))
+      (VP (MD shall)
+        (VP (VB make)
+          (NP
+            (NP
+              (NP (DT no) (NN law))
+              (UCP
+                (VP
+                  (VP (VBG respecting)
+                    (NP
+                      (NP (DT an) (NN establishment))
+                      (PP (IN of)
+                        (NP (NN religion)))))
+                  (, ,)
+                  (CC or)
+                  (VP
+                    (VP (VBG prohibiting)
+                      (NP (DT the) (JJ free) (NN exercise))
+                      (ADVP (RB thereof)))
+                    (: ;)
+                    (CC or)
+                    (VP (VBG abridging)
+                      (NP
+                        (NP (DT the) (NN freedom))
+                        (PP (IN of)
+                          (NP (NN speech)))))))
+                (, ,)
+                (CC or)
+                (PP (IN of)
+                  (NP (DT the) (NN press)))))
+            (: ;)
+            (CC or)
+            (NP
+              (NP (DT the) (NN right))
+              (PP (IN of)
+                (NP (DT the) (NNS people) (NN peaceably)))))
+          (S
+            (VP
+              (VP (TO to)
+                (VP (VB assemble)))
+              (, ,)
+              (CC and)
+              (VP (TO to)
+                (VP (VB petition)
+                  (NP (DT the) (NN Government))
+                  (PP (IN for)
+                    (NP
+                      (NP (DT a) (NNS redress))
+                      (PP (IN of)
+                        (NP (NNS grievances))))))))))))
+    (. .)))
+
+nsubj(is-2, That-1)
+root(ROOT-0, is-2)
+advmod(says-5, why-3)
+nsubj(says-5, it-4)
+advcl(is-2, says-5)
+nsubj(make-9, Congress-7)
+aux(make-9, shall-8)
+parataxis(is-2, make-9)
+det(law-11, no-10)
+dobj(make-9, law-11)
+dep(law-11, respecting-12)
+det(establishment-14, an-13)
+dobj(respecting-12, establishment-14)
+prep_of(establishment-14, religion-16)
+dep(law-11, prohibiting-19)
+conj_or(respecting-12, prohibiting-19)
+det(exercise-22, the-20)
+amod(exercise-22, free-21)
+dobj(prohibiting-19, exercise-22)
+advmod(prohibiting-19, thereof-23)
+conj_or(respecting-12, abridging-26)
+conj_or(prohibiting-19, abridging-26)
+det(freedom-28, the-27)
+dobj(abridging-26, freedom-28)
+prep_of(freedom-28, speech-30)
+dep(law-11, of-33)
+conj_or(respecting-12, of-33)
+det(press-35, the-34)
+pobj(of-33, press-35)
+det(right-39, the-38)
+dobj(make-9, right-39)
+conj_or(law-11, right-39)
+det(peaceably-43, the-41)
+nn(peaceably-43, people-42)
+prep_of(right-39, peaceably-43)
+aux(assemble-45, to-44)
+dep(make-9, assemble-45)
+aux(petition-49, to-48)
+dep(make-9, petition-49)
+conj_and(assemble-45, petition-49)
+det(Government-51, the-50)
+dobj(petition-49, Government-51)
+det(redress-54, a-53)
+prep_for(petition-49, redress-54)
+prep_of(redress-54, grievances-56)
+

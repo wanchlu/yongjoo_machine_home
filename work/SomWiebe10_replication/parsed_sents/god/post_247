@@ -1,0 +1,71 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT the) (NN ball))
+    (VP (VB gain)
+      (NP (NN mass)))
+    (. ?)))
+
+dep(gain-4, Does-1)
+det(ball-3, the-2)
+nsubj(gain-4, ball-3)
+root(ROOT-0, gain-4)
+dobj(gain-4, mass-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBG gaining)
+        (NP
+          (NP
+            (NP (NN energy))
+            (PRN (-LRB- -LRB-)
+              (NP (NN potential))
+              (-RRB- -RRB-))
+            (SBAR
+              (S
+                (NP (NNP Photons))
+                (VP (VBP have)))))
+          (PRN (-LRB- -LRB-)
+            (NP (VBP are))
+            (-RRB- -RRB-))
+          (NP (NN energy)))
+        (, ,)
+        (SBAR (IN if)
+          (S
+            (NP (NN energy))
+            (VP (VBZ has)
+              (VP (VBN mass)
+                (ADVP (RB then))
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (VP (VBP do) (RB n't)
+                      (ADVP (RB photons))
+                      (VP (VB have)
+                        (NP (NN mass))))))))))))
+    (. ?)))
+
+nsubj(gaining-3, It-1)
+aux(gaining-3, is-2)
+root(ROOT-0, gaining-3)
+dobj(gaining-3, energy-4)
+iobj(gaining-3, energy-4)
+dobj(have-9, energy-4)
+appos(energy-4, potential-6)
+nsubj(have-9, Photons-8)
+rcmod(energy-4, have-9)
+dep(energy-4, are-11)
+dep(energy-4, energy-13)
+mark(mass-18, if-15)
+nsubj(mass-18, energy-16)
+aux(mass-18, has-17)
+advcl(gaining-3, mass-18)
+advmod(mass-18, then-19)
+advmod(have-24, why-20)
+aux(have-24, do-21)
+neg(have-24, n't-22)
+advmod(have-24, photons-23)
+advcl(mass-18, have-24)
+dobj(have-24, mass-25)
+

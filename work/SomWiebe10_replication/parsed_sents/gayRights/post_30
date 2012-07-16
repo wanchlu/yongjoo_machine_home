@@ -1,0 +1,44 @@
+(ROOT
+  (NP (NNP Mike) (NNP S.) (NNP Adams) (. .)))
+
+nn(Adams-3, Mike-1)
+nn(Adams-3, S.-2)
+root(ROOT-0, Adams-3)
+
+(ROOT
+  (S ('' '')
+    (NP (JJ Why) (NNS homosexuals))
+    (VP (MD should) (RB not)
+      (VP (VB adopt)
+        (CC or)
+        (VB teach)
+        (NP (NNS children) ('' ''))))
+    (. .)))
+
+amod(homosexuals-3, Why-2)
+nsubj(adopt-6, homosexuals-3)
+nsubj(teach-8, homosexuals-3)
+aux(adopt-6, should-4)
+neg(adopt-6, not-5)
+root(ROOT-0, adopt-6)
+conj_or(adopt-6, teach-8)
+dobj(adopt-6, children-9)
+
+(ROOT
+  (S
+    (VP (VB Townhall))
+    (. .)))
+
+root(ROOT-0, Townhall-1)
+
+(ROOT
+  (NP
+    (NP (NNP August) (NNP 25th))
+    (, ,)
+    (NP (CD 2006))
+    (. .)))
+
+nn(25th-2, August-1)
+root(ROOT-0, 25th-2)
+appos(25th-2, 2006-4)
+

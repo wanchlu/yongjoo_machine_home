@@ -1,0 +1,318 @@
+(ROOT
+  (SBARQ
+    (WHPP (IN For)
+      (WHNP (WP what)))
+    (SQ
+      (VP (VB reason)))
+    (. ?)))
+
+prep_for(reason-3, what-2)
+root(ROOT-0, reason-3)
+
+(ROOT
+  (S
+    (PP (IN From)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP I))
+          (VP (VBP understand)))))
+    (, ,)
+    (NP (`` ``) (NN marriage) ('' ''))
+    (VP (VBZ is)
+      (NP (DT a) (JJ social) (NN construct)))
+    (. .)))
+
+dep(construct-12, From-1)
+dobj(understand-4, what-2)
+nsubj(understand-4, I-3)
+pcomp(From-1, understand-4)
+nsubj(construct-12, marriage-7)
+cop(construct-12, is-9)
+det(construct-12, a-10)
+amod(construct-12, social-11)
+root(ROOT-0, construct-12)
+
+(ROOT
+  (S (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (DT the) (NN society))
+        (VP (VBZ sees)
+          (S
+            (NP (PRP it))
+            (ADJP (JJ fit))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD can)
+      (VP (VB change)
+        (NP (DT the) (NNS rules))))
+    (. .)))
+
+cc(change-11, And-1)
+mark(sees-5, if-2)
+det(society-4, the-3)
+nsubj(sees-5, society-4)
+advcl(change-11, sees-5)
+nsubj(fit-7, it-6)
+xcomp(sees-5, fit-7)
+nsubj(change-11, it-9)
+aux(change-11, can-10)
+root(ROOT-0, change-11)
+det(rules-13, the-12)
+dobj(change-11, rules-13)
+
+(ROOT
+  (S
+    (S (`` ``)
+      (NP (NNP Marriage))
+      ('' '')
+      (VP (VBZ has) (RB not)
+        (VP (VBN held)
+          (NP (DT the) (JJ same) (NN definition))
+          (PP (IN since)
+            (NP (PRP$ its) (NN creation))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB also))
+        (ADJP (JJ different)
+          (PP (IN across)
+            (NP (NNS cultures))))))
+    (. .)))
+
+nsubj(held-6, Marriage-2)
+aux(held-6, has-4)
+neg(held-6, not-5)
+root(ROOT-0, held-6)
+det(definition-9, the-7)
+amod(definition-9, same-8)
+dobj(held-6, definition-9)
+poss(creation-12, its-11)
+prep_since(held-6, creation-12)
+nsubj(different-18, it-15)
+cop(different-18, is-16)
+advmod(different-18, also-17)
+conj_and(held-6, different-18)
+prep_across(different-18, cultures-20)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT some) (NNS cultures)))
+    (, ,)
+    (NP (NNS men))
+    (VP (MD can)
+      (VP (VB have)
+        (NP (CD four) (NNS wives))))
+    (. .)))
+
+det(cultures-3, some-2)
+prep_in(have-7, cultures-3)
+nsubj(have-7, men-5)
+aux(have-7, can-6)
+root(ROOT-0, have-7)
+num(wives-9, four-8)
+dobj(have-7, wives-9)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS cultures)))
+    (, ,)
+    (NP (NNS men))
+    (VP (MD can)
+      (VP (VB have)
+        (NP
+          (NP (DT a) (NN wife))
+          (CC and)
+          (NP (DT a) (NN girlfriend)))))
+    (. .)))
+
+amod(cultures-3, other-2)
+prep_in(have-7, cultures-3)
+nsubj(have-7, men-5)
+aux(have-7, can-6)
+root(ROOT-0, have-7)
+det(wife-9, a-8)
+dobj(have-7, wife-9)
+det(girlfriend-12, a-11)
+dobj(have-7, girlfriend-12)
+conj_and(wife-9, girlfriend-12)
+
+(ROOT
+  (S
+    (S (CC And)
+      (VP (VB look)
+        (PP (IN at)
+          (NP (DT this) (NN country)))
+        (: :)
+        (PP (IN until)
+          (NP
+            (NP
+              (NP (RB only) (RB just))
+              (ADVP (RB recently)))
+            (PRN (-LRB- -LRB-)
+              (NP
+                (NP (DT the) (NN past))
+                (NP
+                  (NP (CD 50) (NNS years))
+                  (NP
+                    (QP (CC or)
+                      (RB so)))))
+              (-RRB- -RRB-))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADJP (RB completely) (JJ acceptable)
+        (PP (IN for)
+          (NP (NNS husbands))))
+      (S
+        (VP (TO to)
+          (VP (VB beat)
+            (NP (PRP$ their) (NNS wives))))))
+    (. .)))
+
+cc(look-2, And-1)
+ccomp(acceptable-23, look-2)
+det(country-5, this-4)
+prep_at(look-2, country-5)
+prep(look-2, until-7)
+advmod(just-9, only-8)
+pobj(until-7, just-9)
+advmod(just-9, recently-10)
+det(past-13, the-12)
+dep(just-9, past-13)
+num(years-15, 50-14)
+dep(past-13, years-15)
+cc(so-17, or-16)
+dep(years-15, so-17)
+nsubj(acceptable-23, it-20)
+xsubj(beat-27, it-20)
+cop(acceptable-23, was-21)
+advmod(acceptable-23, completely-22)
+root(ROOT-0, acceptable-23)
+prep_for(acceptable-23, husbands-25)
+aux(beat-27, to-26)
+xcomp(acceptable-23, beat-27)
+poss(wives-29, their-28)
+dobj(beat-27, wives-29)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (`` ``) (JJ personal) ('' '') (NN issue))
+        (, ,) (RB not)
+        (NP (JJ domestic) (NN violence))))
+    (. .)))
+
+nsubj(issue-7, It-1)
+cop(issue-7, was-2)
+det(issue-7, a-3)
+amod(issue-7, personal-5)
+root(ROOT-0, issue-7)
+neg(issue-7, not-9)
+amod(violence-11, domestic-10)
+dep(issue-7, violence-11)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP suggest)
+        (S
+          (VP (VBG reading)
+            (NP
+              (NP (DT this) (NN article))
+              (PP (IN on)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (JJ traditional) (NN marriage))
+                    (VP (VBZ has)
+                      (VP (VBN changed)
+                        (PP (IN over)
+                          (NP (NN time)))))))))))))
+    (: :)
+    (S
+      (NP
+        (NP (NNS http:\/\/seattlepi.nwsource.com\/opinion\/260456_marriage.html))
+        (SBAR
+          (WHNP (WP What))
+          (S
+            (NP (PRP I))
+            (VP (VBP 'm)
+              (VP (VBG trying)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (PP (IN at))))))))))
+      (VP (VBZ is)))
+    (: :)
+    (S
+      (PP (IN of)
+        (NP (NN course)))
+      (NP (JJ homosexual) (NNS marriages))
+      (VP (VBP are)
+        (ADJP (JJ unnatural))))
+    (. .)))
+
+nsubj(suggest-2, I-1)
+root(ROOT-0, suggest-2)
+xcomp(suggest-2, reading-3)
+det(article-5, this-4)
+dobj(reading-3, article-5)
+advmod(changed-11, how-7)
+amod(marriage-9, traditional-8)
+nsubj(changed-11, marriage-9)
+aux(changed-11, has-10)
+prepc_on(article-5, changed-11)
+prep_over(changed-11, time-13)
+dobj(trying-19, http:\/\/seattlepi.nwsource.com\/opinion\/260456_marriage.html-15)
+nsubj(is-23, http:\/\/seattlepi.nwsource.com\/opinion\/260456_marriage.html-15)
+rel(trying-19, What-16)
+nsubj(trying-19, I-17)
+xsubj(get-21, I-17)
+aux(trying-19, 'm-18)
+rcmod(http:\/\/seattlepi.nwsource.com\/opinion\/260456_marriage.html-15, trying-19)
+aux(get-21, to-20)
+xcomp(trying-19, get-21)
+prep(get-21, at-22)
+parataxis(suggest-2, is-23)
+prep_of(unnatural-30, course-26)
+amod(marriages-28, homosexual-27)
+nsubj(unnatural-30, marriages-28)
+cop(unnatural-30, are-29)
+parataxis(suggest-2, unnatural-30)
+
+(ROOT
+  (S
+    (NP (NNP ALL) (NNS marriages))
+    (VP (VBP are)
+      (ADJP (JJ unnatural)))
+    (. .)))
+
+nn(marriages-2, ALL-1)
+nsubj(unnatural-4, marriages-2)
+cop(unnatural-4, are-3)
+root(ROOT-0, unnatural-4)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (NP
+        (NP (NNS constructs))
+        (PP (IN of)
+          (NP (NN society)))))
+    (. .)))
+
+nsubj(constructs-3, They-1)
+cop(constructs-3, are-2)
+root(ROOT-0, constructs-3)
+prep_of(constructs-3, society-5)
+

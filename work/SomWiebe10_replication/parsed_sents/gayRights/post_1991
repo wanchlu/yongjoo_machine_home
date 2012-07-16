@@ -1,0 +1,202 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Man))
+      (NP (DT this) (NN debate)))
+    (VP (VBZ is)
+      (ADJP (JJ active))
+      (ADVP (RB again)))
+    (. ?)))
+
+nsubj(active-5, Man-1)
+det(debate-3, this-2)
+dep(Man-1, debate-3)
+cop(active-5, is-4)
+root(ROOT-0, active-5)
+advmod(active-5, again-6)
+
+(ROOT
+  (S
+    (NP (NNP Jeez))
+    (VP (VBP come)
+      (PP (IN on)
+        (NP (NNS guys))))
+    (. .)))
+
+nsubj(come-2, Jeez-1)
+root(ROOT-0, come-2)
+prep_on(come-2, guys-4)
+
+(ROOT
+  (S
+    (NP (NNS Gays))
+    (VP (MD should)
+      (VP (VB have)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (PP (IN as)
+                  (NP (DT any) (NN hetero) (NN couple)))))))))
+    (. .)))
+
+nsubj(have-3, Gays-1)
+aux(have-3, should-2)
+root(ROOT-0, have-3)
+det(right-5, the-4)
+dobj(have-3, right-5)
+aux(do-7, to-6)
+infmod(right-5, do-7)
+det(couple-11, any-9)
+nn(couple-11, hetero-10)
+prep_as(do-7, couple-11)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (VP (VBN been)
+            (VP (VBN proven)
+              (SBAR (IN that)
+                (S
+                  (NP (NNS people) (NN dont))
+                  (VP (VBP have)
+                    (NP
+                      (NP (DT a) (NN choice))
+                      (PP (IN at)
+                        (NP (NN birth))))))))))))
+    (VP (VBP are)
+      (S
+        (NP (PRP we))
+        (ADJP (JJ gonna))
+        (S
+          (VP (VB go)
+            (PRT (RP back))
+            (PP (TO to)
+              (NP
+                (NP (DT the) (NN mindset))
+                (PP (IN of)
+                  (NP (DT the) (NN 40s)))))))))
+    (. ?)))
+
+mark(proven-5, If-1)
+nsubjpass(proven-5, it-2)
+auxpass(proven-5, 's-3)
+auxpass(proven-5, been-4)
+csubj(are-14, proven-5)
+complm(have-9, that-6)
+nn(dont-8, people-7)
+nsubj(have-9, dont-8)
+ccomp(proven-5, have-9)
+det(choice-11, a-10)
+dobj(have-9, choice-11)
+prep_at(choice-11, birth-13)
+root(ROOT-0, are-14)
+nsubj(go-17, we-15)
+dep(go-17, gonna-16)
+xcomp(are-14, go-17)
+prt(go-17, back-18)
+det(mindset-21, the-20)
+prep_to(go-17, mindset-21)
+det(40s-24, the-23)
+prep_of(mindset-21, 40s-24)
+
+(ROOT
+  (S
+    (NP (NNP Black) (NNS people) (NN cant))
+    (VP (VBP help)
+      (S
+        (VP (VBG being)
+          (NP (JJ black) (JJ gay) (NNS people) (NN cant) (NN help))))
+      (S
+        (VP (VBG being)
+          (ADJP (JJ gay)))))
+    (. .)))
+
+nn(cant-3, Black-1)
+nn(cant-3, people-2)
+nsubj(help-4, cant-3)
+root(ROOT-0, help-4)
+cop(help-10, being-5)
+amod(help-10, black-6)
+amod(help-10, gay-7)
+nn(help-10, people-8)
+nn(help-10, cant-9)
+xcomp(help-4, help-10)
+cop(gay-12, being-11)
+xcomp(help-4, gay-12)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP (CD 17))))
+    (CC and)
+    (S
+      (NP
+        (NP (JJS most))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS people))
+            (VP (VBG debating)
+              (PP (IN on)
+                (NP (DT this) (NN debate)))))))
+      (VP
+        (VP (VBP have)
+          (NP
+            (NP
+              (ADJP (RB far) (JJR more))
+              (NNS years))
+            (PP (IN of)
+              (NP
+                (NP (NN experiance))
+                (PP (IN in)
+                  (NP (DT the) (NN world)))))))
+        (CC but)
+        (VP (MD can) (RB not)
+          (VP (VB seem)
+            (S
+              (VP (TO to)
+                (VP (VB see)
+                  (PP (IN past)
+                    (NP (DT this))))))))))
+    (. ?)))
+
+nsubj(17-3, I-1)
+cop(17-3, 'm-2)
+root(ROOT-0, 17-3)
+nsubj(have-13, most-5)
+nsubj(seem-25, most-5)
+xsubj(see-27, most-5)
+det(people-8, the-7)
+prep_of(most-5, people-8)
+partmod(people-8, debating-9)
+det(debate-12, this-11)
+prep_on(debating-9, debate-12)
+conj_and(17-3, have-13)
+advmod(more-15, far-14)
+amod(years-16, more-15)
+dobj(have-13, years-16)
+prep_of(years-16, experiance-18)
+det(world-21, the-20)
+prep_in(experiance-18, world-21)
+aux(seem-25, can-23)
+neg(seem-25, not-24)
+conj_and(17-3, seem-25)
+conj_but(have-13, seem-25)
+aux(see-27, to-26)
+xcomp(seem-25, see-27)
+prep_past(see-27, this-29)
+
+(ROOT
+  (S
+    (VP (VB Grow)
+      (PRT (RP up)))
+    (. .)))
+
+root(ROOT-0, Grow-1)
+prt(Grow-1, up-2)
+

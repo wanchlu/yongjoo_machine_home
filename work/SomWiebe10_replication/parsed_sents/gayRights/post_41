@@ -1,0 +1,166 @@
+(ROOT
+  (S
+    (NP (NNS Gay))
+    (VP (VBZ activism)
+      (PP (IN in)
+        (NP (DT the) (JJ military) (NNS undermines) (NN professionalism))))
+    (. .)))
+
+nsubj(activism-2, Gay-1)
+root(ROOT-0, activism-2)
+det(professionalism-7, the-4)
+amod(professionalism-7, military-5)
+nn(professionalism-7, undermines-6)
+prep_in(activism-2, professionalism-7)
+
+(ROOT
+  (NP (NNP John) (NNP Luddy) (. .)))
+
+nn(Luddy-2, John-1)
+root(ROOT-0, Luddy-2)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NNP Military))
+    (VP (VBZ Gay)
+      (NP
+        (NP (NNP Ban))
+        (: :)
+        (S
+          (SBAR
+            (WHADVP (WRB Why))
+            (S
+              (VP (VBP Do) (RB n't)
+                (VP (VB Ask)))))
+          (, ,)
+          (VP (VB Do) (RB n't)
+            (VP (VB Tell)
+              (S
+                (VP (VB Do) (RB n't)
+                  (VP (VB Work) ('' '')))))))))
+    (. .)))
+
+det(Military-3, The-2)
+nsubj(Gay-4, Military-3)
+root(ROOT-0, Gay-4)
+dobj(Gay-4, Ban-5)
+advmod(Ask-10, Why-7)
+aux(Ask-10, Do-8)
+neg(Ask-10, n't-9)
+advcl(Tell-14, Ask-10)
+aux(Tell-14, Do-12)
+neg(Tell-14, n't-13)
+dep(Ban-5, Tell-14)
+aux(Work-17, Do-15)
+neg(Work-17, n't-16)
+ccomp(Tell-14, Work-17)
+
+(ROOT
+  (NP
+    (NP (NNP Heritage) (NNP Foundation))
+    (, ,)
+    (NP
+      (NP (NNP Executive) (NNP Memorandum))
+      (NP (# #) (CD 359)))
+    (. .)))
+
+nn(Foundation-2, Heritage-1)
+root(ROOT-0, Foundation-2)
+nn(Memorandum-5, Executive-4)
+appos(Foundation-2, Memorandum-5)
+dep(359-7, #-6)
+dep(Memorandum-5, 359-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP July) (CD 1) (, ,) (CD 1993))
+      (VP (`` ``) (VBG Political)
+        (NP (NN activism))
+        (ADVP (RB elsewhere))
+        (PP (IN in)
+          (NP (NN society)))))
+    (VP (VBZ suggests)
+      (SBAR (IN that)
+        (S
+          (S
+            (VP (VBG weakening)
+              (NP (DT the) (NN ban))))
+          (VP (MD would)
+            (VP (VB be)
+              (VP (VBN followed)
+                (PP (IN by)
+                  (NP (NNS quotas)
+                    (CC and)
+                    (NNS lawsuits)))
+                (SBAR (IN if)
+                  (S
+                    (NP (NNS homosexuals))
+                    (VP (VBD were) (RB not)
+                      (VP (VBN promoted)
+                        (PP (IN in)
+                          (NP (JJ representative) (NNS numbers)))))))))))))
+    (. .)))
+
+nsubj(suggests-11, July-1)
+num(July-1, 1-2)
+num(July-1, 1993-4)
+partmod(July-1, Political-6)
+dobj(Political-6, activism-7)
+advmod(Political-6, elsewhere-8)
+prep_in(Political-6, society-10)
+root(ROOT-0, suggests-11)
+complm(followed-18, that-12)
+csubjpass(followed-18, weakening-13)
+det(ban-15, the-14)
+dobj(weakening-13, ban-15)
+aux(followed-18, would-16)
+auxpass(followed-18, be-17)
+ccomp(suggests-11, followed-18)
+agent(followed-18, quotas-20)
+agent(followed-18, lawsuits-22)
+conj_and(quotas-20, lawsuits-22)
+mark(promoted-27, if-23)
+nsubjpass(promoted-27, homosexuals-24)
+auxpass(promoted-27, were-25)
+neg(promoted-27, not-26)
+advcl(followed-18, promoted-27)
+amod(numbers-30, representative-29)
+prep_in(promoted-27, numbers-30)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD would)
+      (VP
+        (VP (VB destroy)
+          (NP
+            (NP (DT the) (NN cohesion))
+            (PP (IN of)
+              (NP (DT a) (JJ military) (NN unit)))))
+        (, ,)
+        (CC and)
+        (VP (VB erode)
+          (NP
+            (NP (DT the) (NN military) (POS 's))
+            (ADJP (JJ successful) (JJ merit-based))
+            (NN promotion) (NN system)))))
+    (. .)))
+
+nsubj(destroy-3, This-1)
+nsubj(erode-12, This-1)
+aux(destroy-3, would-2)
+root(ROOT-0, destroy-3)
+det(cohesion-5, the-4)
+dobj(destroy-3, cohesion-5)
+det(unit-9, a-7)
+amod(unit-9, military-8)
+prep_of(cohesion-5, unit-9)
+conj_and(destroy-3, erode-12)
+det(military-14, the-13)
+poss(system-19, military-14)
+amod(merit-based-17, successful-16)
+amod(system-19, merit-based-17)
+nn(system-19, promotion-18)
+dobj(erode-12, system-19)
+

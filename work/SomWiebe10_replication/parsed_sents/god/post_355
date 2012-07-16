@@ -1,0 +1,70 @@
+(ROOT
+  (SBARQ
+    (SBAR (RB Even) (IN if)
+      (S
+        (NP (PRP we))
+        (VP (VBP accept)
+          (NP (DT that)))))
+    (, ,)
+    (WHADVP (WRB how))
+    (SQ (MD could)
+      (NP (PRP we))
+      (VP
+        (ADVP (RB possibly))
+        (VB know)
+        (NP
+          (NP (NN anything))
+          (PP (IN about)
+            (NP
+              (NP (DT the) (JJ initial) (NN force))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBD created)
+                    (NP (DT the) (NN universe))))))))))
+    (. ?)))
+
+advmod(accept-4, Even-1)
+dep(accept-4, if-2)
+nsubj(accept-4, we-3)
+dep(know-11, accept-4)
+dobj(accept-4, that-5)
+advmod(know-11, how-7)
+aux(know-11, could-8)
+nsubj(know-11, we-9)
+advmod(know-11, possibly-10)
+root(ROOT-0, know-11)
+dobj(know-11, anything-12)
+det(force-16, the-14)
+amod(force-16, initial-15)
+prep_about(anything-12, force-16)
+nsubj(created-18, force-16)
+rcmod(force-16, created-18)
+det(universe-20, the-19)
+dobj(created-18, universe-20)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB know)
+        (SBAR
+          (S
+            (NP (DT the) (NN universe))
+            (VP (VBD was) (RB n't)
+              (VP (VBN created)
+                (ADVP (RB accidentally))))))))
+    (. ?)))
+
+advmod(know-4, How-1)
+aux(know-4, do-2)
+nsubj(know-4, you-3)
+root(ROOT-0, know-4)
+det(universe-6, the-5)
+nsubjpass(created-9, universe-6)
+auxpass(created-9, was-7)
+neg(created-9, n't-8)
+ccomp(know-4, created-9)
+advmod(created-9, accidentally-10)
+

@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (S
+      (NP (NN Someone))
+      (VP (MD would)
+        (S
+          (VP (TO to)
+            (VP (VB start)
+              (NP (DT a) (NN test) (NN case))
+              (S
+                (VP (TO to)
+                  (VP (VB prove)
+                    (NP (PRP it))))))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (DT the) (NNP Senate))
+            (VP (VBD was)
+              (ADJP (JJ wrong)))))))
+    (. .)))
+
+nsubj(would-2, Someone-1)
+xsubj(start-4, Someone-1)
+root(ROOT-0, would-2)
+aux(start-4, to-3)
+xcomp(would-2, start-4)
+det(case-7, a-5)
+nn(case-7, test-6)
+dobj(start-4, case-7)
+aux(prove-9, to-8)
+xcomp(start-4, prove-9)
+dobj(prove-9, it-10)
+nsubj(think-13, I-12)
+conj_but(would-2, think-13)
+det(Senate-15, the-14)
+nsubj(wrong-17, Senate-15)
+cop(wrong-17, was-16)
+ccomp(think-13, wrong-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNPS States))
+      (VP (RB not) (VBG recognizing)
+        (NP (DT the) (NN concealed))))
+    (VP (VBP carry)
+      (SBAR
+        (S
+          (NP
+            (NP (NN permit))
+            (PP (IN of)
+              (NP (JJ other) (NNS states))))
+          (VP (MD should)
+            (VP (VB be)
+              (ADJP (JJ unconstitutional)))))))
+    (. .)))
+
+nsubj(carry-6, States-1)
+neg(recognizing-3, not-2)
+partmod(States-1, recognizing-3)
+det(concealed-5, the-4)
+dobj(recognizing-3, concealed-5)
+root(ROOT-0, carry-6)
+nsubj(unconstitutional-13, permit-7)
+amod(states-10, other-9)
+prep_of(permit-7, states-10)
+aux(unconstitutional-13, should-11)
+cop(unconstitutional-13, be-12)
+ccomp(carry-6, unconstitutional-13)
+

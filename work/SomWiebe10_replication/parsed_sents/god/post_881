@@ -1,0 +1,122 @@
+(ROOT
+  (NP (NNP GOD) (NNP DOES) (NNP EXIST) (NNP !!)))
+
+nn(!!-4, GOD-1)
+nn(!!-4, DOES-2)
+nn(!!-4, EXIST-3)
+root(ROOT-0, !!-4)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Maybe))
+    (NP
+      (NP (PRP$ your) (NN thinking))
+      (SBAR (IN that)
+        (FRAG
+          (ADVP (RB then))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (NNP God))
+              (VP (VBZ does) (RB not)
+                (VP (VB protect)
+                  (NP (PRP us)))))))))
+    (. .)))
+
+dep(thinking-3, Maybe-1)
+poss(thinking-3, your-2)
+root(ROOT-0, thinking-3)
+complm(then-5, that-4)
+dep(thinking-3, then-5)
+advmod(protect-10, why-6)
+nsubj(protect-10, God-7)
+aux(protect-10, does-8)
+neg(protect-10, not-9)
+dep(then-5, protect-10)
+dobj(protect-10, us-11)
+
+(ROOT
+  (S
+    (NP (DT That) (NN reason))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT all) (NNS Gods))
+        (SBAR
+          (S
+            (VP (VBP are)
+              (ADJP (JJ good)))))))
+    (. .)))
+
+det(reason-2, That-1)
+nsubj(Gods-6, reason-2)
+cop(Gods-6, is-3)
+neg(Gods-6, not-4)
+det(Gods-6, all-5)
+root(ROOT-0, Gods-6)
+cop(good-8, are-7)
+rcmod(Gods-6, good-8)
+
+(ROOT
+  (S
+    (NP (DT Some))
+    (VP (VBP are)
+      (NP (NNP EVIL)))
+    (. .)))
+
+nsubj(EVIL-3, Some-1)
+cop(EVIL-3, are-2)
+root(ROOT-0, EVIL-3)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Also))
+    (SBAR
+      (WHADVP (WRB when))
+      (S
+        (NP (PRP I))
+        (VP (VBP ask)
+          (NP
+            (NP (NNP God))
+            (PP (IN for)
+              (NP (NN help))))
+          (PP (IN like)
+            (S
+              (VP (VBG getting)
+                (NP
+                  (NP (DT a) (JJ good) (NN grade))
+                  (, ,)
+                  (NP
+                    (NP (DT the) (JJ next) (JJ several) (NNS days))
+                    (SBAR
+                      (S
+                        (NP (PRP I))
+                        (VP (VBP get)
+                          (S
+                            (NP (DT a) (JJ good) (NN grade))
+                            (VP (SYM !!)
+                              (NP (PRP$ -LRB-) (-LRB- -LRB-) (NN B) (: :) (NN text)))))))))))))))))
+
+root(ROOT-0, Also-1)
+advmod(ask-4, when-2)
+nsubj(ask-4, I-3)
+dep(Also-1, ask-4)
+dobj(ask-4, God-5)
+prep_for(God-5, help-7)
+prepc_like(ask-4, getting-9)
+det(grade-12, a-10)
+amod(grade-12, good-11)
+dobj(getting-9, grade-12)
+det(days-17, the-14)
+amod(days-17, next-15)
+amod(days-17, several-16)
+appos(grade-12, days-17)
+dobj(get-19, days-17)
+nsubj(get-19, I-18)
+rcmod(days-17, get-19)
+det(grade-22, a-20)
+amod(grade-22, good-21)
+nsubj(text-28, grade-22)
+dep(text-28, !!-23)
+nn(text-28, B-26)
+ccomp(get-19, text-28)
+

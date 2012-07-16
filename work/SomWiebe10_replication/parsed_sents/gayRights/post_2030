@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD should)
+      (VP (VB have)
+        (S
+          (NP (DT the) (NNS rights))
+          (VP (TO to)
+            (VP (VB marry))))))
+    (: ...)))
+
+dep(have-5, Yes-1)
+nsubj(have-5, they-3)
+aux(have-5, should-4)
+root(ROOT-0, have-5)
+det(rights-7, the-6)
+nsubj(marry-9, rights-7)
+aux(marry-9, to-8)
+ccomp(have-5, marry-9)
+xcomp(have-5, marry-9)
+
+(ROOT
+  (NP (FW .) (. .)))
+
+
+(ROOT
+  (S
+    (VP (VB afterall)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (PP (TO to)
+              (NP (NNS humans)))
+            (NP (RB not) (NNS animals)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN denied)
+                      (NP (DT any) (NNS rights)))))))))))
+    (: ...)))
+
+root(ROOT-0, afterall-1)
+nsubj(animals-7, they-2)
+cop(animals-7, are-3)
+prep_to(animals-7, humans-5)
+neg(animals-7, not-6)
+ccomp(afterall-1, animals-7)
+aux(denied-10, to-8)
+auxpass(denied-10, be-9)
+infmod(animals-7, denied-10)
+det(rights-12, any-11)
+dobj(denied-10, rights-12)
+

@@ -1,0 +1,70 @@
+(ROOT
+  (NP (NNP KILL) (NNP THEM) (NNP ALL) (. !)))
+
+nn(ALL-3, KILL-1)
+nn(ALL-3, THEM-2)
+root(ROOT-0, ALL-3)
+
+(ROOT
+  (S
+    (NP (DT All) (NNS homos))
+    (VP (MD must)
+      (VP (VB die)))
+    (. .)))
+
+det(homos-2, All-1)
+nsubj(die-4, homos-2)
+aux(die-4, must-3)
+root(ROOT-0, die-4)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB gays))
+    (VP (MD should)
+      (ADVP (RB just))
+      (VP (VB kill)
+        (NP (NNS yourselves))
+        (ADVP (RB right) (RB now)
+          (S
+            (VP (TO to)
+              (VP (VB save)
+                (NP (NNS yourselves))
+                (NP
+                  (NP (DT the) (NN pain))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT the) (NN holocaust))
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP are)
+                            (VP (IN about)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB endure)))))))))))))))))
+    (. .)))
+
+nsubj(kill-5, You-1)
+advmod(kill-5, gays-2)
+aux(kill-5, should-3)
+advmod(kill-5, just-4)
+root(ROOT-0, kill-5)
+dobj(kill-5, yourselves-6)
+advmod(now-8, right-7)
+advmod(kill-5, now-8)
+aux(save-10, to-9)
+dep(now-8, save-10)
+iobj(save-10, yourselves-11)
+det(pain-13, the-12)
+dobj(save-10, pain-13)
+det(holocaust-16, the-15)
+prep_of(pain-13, holocaust-16)
+dobj(about-19, holocaust-16)
+nsubj(about-19, you-17)
+xsubj(endure-21, you-17)
+aux(about-19, are-18)
+rcmod(holocaust-16, about-19)
+aux(endure-21, to-20)
+xcomp(about-19, endure-21)
+

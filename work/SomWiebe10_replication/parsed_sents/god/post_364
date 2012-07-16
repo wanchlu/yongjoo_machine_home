@@ -1,0 +1,132 @@
+(ROOT
+  (S
+    (VP (VB Read) (`` ``)
+      (NP
+        (NP (DT a) (NNP New) (NN kind))
+        (PP (IN of)
+          (NP (NN science))))
+      ('' '')
+      (PP (IN by)
+        (NP (NNP Stephen) (NNP Wolfram))))
+    (. .)))
+
+root(ROOT-0, Read-1)
+det(kind-5, a-3)
+nn(kind-5, New-4)
+dobj(Read-1, kind-5)
+prep_of(kind-5, science-7)
+nn(Wolfram-11, Stephen-10)
+prep_by(Read-1, Wolfram-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN book))
+        (PP (IN about)
+          (NP (NN complexity) (NN theory)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ goes)
+              (S
+                (VP (TO to)
+                  (VP (VB show)
+                    (PRN (-LRB- -LRB-)
+                      (PP (IN with)
+                        (NP (JJ mathematical) (NN computer) (NNS simulations)))
+                      (-RRB- -RRB-)))))))))
+      (SBAR (IN that)
+        (S
+          (NP (JJ complex) (NNS forms)
+            (CC and)
+            (NNS structures))
+          (VP (VBP are)
+            (ADJP
+              (ADJP (RBR more) (JJ likely)
+                (S
+                  (VP (TO to)
+                    (VP (VB have)
+                      (NP
+                        (NP (DT a) (JJ simple) (NN set))
+                        (PP (IN of)
+                          (NP (JJ initial) (NNS conditions))))))))
+              (PP (IN than)
+                (ADJP (JJ complex))))))))
+    (. .)))
+
+nsubj(book-4, It-1)
+cop(book-4, is-2)
+det(book-4, a-3)
+root(ROOT-0, book-4)
+nsubj(goes-9, book-4)
+nn(theory-7, complexity-6)
+prep_about(book-4, theory-7)
+rcmod(book-4, goes-9)
+aux(show-11, to-10)
+xcomp(goes-9, show-11)
+dep(show-11, with-13)
+amod(simulations-16, mathematical-14)
+nn(simulations-16, computer-15)
+pobj(with-13, simulations-16)
+complm(likely-25, that-18)
+amod(forms-20, complex-19)
+nsubj(likely-25, forms-20)
+conj_and(forms-20, structures-22)
+nsubj(likely-25, structures-22)
+cop(likely-25, are-23)
+advmod(likely-25, more-24)
+ccomp(book-4, likely-25)
+aux(have-27, to-26)
+xcomp(likely-25, have-27)
+det(set-30, a-28)
+amod(set-30, simple-29)
+dobj(have-27, set-30)
+amod(conditions-33, initial-32)
+prep_of(set-30, conditions-33)
+prep_than(likely-25, complex-35)
+
+(ROOT
+  (PP (IN In)
+    (NP
+      (NP (NN fact))
+      (SBAR (IN if)
+        (S
+          (NP (DT the) (JJ intial) (NNS conditions))
+          (VP (VBP are)
+            (ADJP (JJ complex) (RB almost)
+              (SBAR
+                (WHNP
+                  (NP (DT all))
+                  (PP (IN of)
+                    (NP (DT the) (NN time))))
+                (S
+                  (NP
+                    (NP (DT the) (NNS forms\/structures))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBP follow)))))
+                  (VP (VBP are)
+                    (ADJP (JJ simple))))))))))))
+
+root(ROOT-0, In-1)
+pobj(In-1, fact-2)
+mark(complex-8, if-3)
+det(conditions-6, the-4)
+amod(conditions-6, intial-5)
+nsubj(complex-8, conditions-6)
+cop(complex-8, are-7)
+dep(fact-2, complex-8)
+advmod(complex-8, almost-9)
+dobj(simple-19, all-10)
+det(time-13, the-12)
+prep_of(all-10, time-13)
+det(forms\/structures-15, the-14)
+nsubj(follow-17, forms\/structures-15)
+nsubj(simple-19, forms\/structures-15)
+rcmod(forms\/structures-15, follow-17)
+cop(simple-19, are-18)
+dep(complex-8, simple-19)
+

@@ -1,0 +1,80 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Very))
+    (NP (JJ good) (NNS points))
+    (. .)))
+
+dep(points-3, Very-1)
+amod(points-3, good-2)
+root(ROOT-0, points-3)
+
+(ROOT
+  (S
+    (PP (IN About)
+      (NP
+        (NP (DT the) (NN matter))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJ different) (JJ direct) (NNS lines))
+            (PP (TO to)
+              (NP (NNP God)))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP (DT this) (JJ little) (JJ funny) (NN movie))
+      (ADVP (RB here))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (MD might)
+            (VP (VB help)
+              (S
+                (NP (JJ religious) (NNS people))
+                (VP (VB see)
+                  (SBAR
+                    (WHADVP (WRB how)
+                      (ADJP (JJ subjective)))
+                    (S
+                      (NP
+                        (NP (PRP$ their) (JJ own) (NN point))
+                        (PP (IN of)
+                          (NP (NN view))))
+                      (VP (VBZ is)))))))))))
+    (: ...)))
+
+det(matter-3, the-2)
+prep_about('s-13, matter-3)
+det(lines-8, the-5)
+amod(lines-8, different-6)
+amod(lines-8, direct-7)
+prep_of(matter-3, lines-8)
+prep_to(lines-8, God-10)
+expl('s-13, there-12)
+root(ROOT-0, 's-13)
+det(movie-17, this-14)
+amod(movie-17, little-15)
+amod(movie-17, funny-16)
+nsubj('s-13, movie-17)
+advmod('s-13, here-18)
+nsubj(help-22, which-20)
+aux(help-22, might-21)
+dep('s-13, help-22)
+amod(people-24, religious-23)
+nsubj(see-25, people-24)
+ccomp(help-22, see-25)
+advmod(is-33, how-26)
+dep(how-26, subjective-27)
+poss(point-30, their-28)
+amod(point-30, own-29)
+nsubj(is-33, point-30)
+prep_of(point-30, view-32)
+ccomp(see-25, is-33)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Enjoy))
+    (. !)))
+
+root(ROOT-0, Enjoy-1)
+

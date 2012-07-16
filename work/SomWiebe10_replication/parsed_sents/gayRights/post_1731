@@ -1,0 +1,97 @@
+(ROOT
+  (S ('' '')
+    (S
+      (FRAG (: ...)
+        (ADVP (RB bases))
+        (NP
+          (NP (PRP it))
+          (NP
+            (NP (PRP 's))
+            (NNS laws))))
+      (NP (JJ off))
+      (VP
+        (ADVP (IN of))
+        (VBP rationality)))
+    (CC and)
+    (S
+      (NP (RB not))
+      (VP (VBZ religion)))
+    (. .)))
+
+dep(it-4, bases-3)
+dep(rationality-9, it-4)
+nn(laws-6, 's-5)
+dep(it-4, laws-6)
+nsubj(rationality-9, off-7)
+advmod(rationality-9, of-8)
+root(ROOT-0, rationality-9)
+nsubj(religion-12, not-11)
+conj_and(rationality-9, religion-12)
+
+(ROOT
+  (S ('' '')
+    (S
+      (ADVP (IN At) (JJS least))
+      (NP (PRP we))
+      (VP
+        (VP (VBP hope)
+          (ADVP (RB so)))
+        (: ...)
+        (CC and)
+        (VP (VBP want)
+          (NP (PRP it))
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADVP (RB so))))))))
+    (: ...)
+    (S
+      (NP (CC but))
+      (VP (VBZ is)
+        (NP (PRP it))
+        (ADVP (RB really))))
+    (. ?)))
+
+advmod(hope-5, At-2)
+pobj(At-2, least-3)
+nsubj(hope-5, we-4)
+nsubj(want-9, we-4)
+root(ROOT-0, hope-5)
+advmod(hope-5, so-6)
+conj_and(hope-5, want-9)
+dobj(want-9, it-10)
+aux(be-12, to-11)
+xcomp(want-9, be-12)
+advmod(be-12, so-13)
+nsubj(it-17, but-15)
+cop(it-17, is-16)
+parataxis(hope-5, it-17)
+advmod(it-17, really-18)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB think)
+        (SBAR (IN that)
+          (S
+            (NP (DT some) (NNS people))
+            (VP (VBP do)
+              (VP (VB want)
+                (NP (DT this))
+                (ADVP (IN at) (DT all))))))))
+    (. !)))
+
+nsubj(think-4, I-1)
+aux(think-4, do-2)
+neg(think-4, n't-3)
+root(ROOT-0, think-4)
+complm(want-9, that-5)
+det(people-7, some-6)
+nsubj(want-9, people-7)
+aux(want-9, do-8)
+ccomp(think-4, want-9)
+dobj(want-9, this-10)
+advmod(want-9, at-11)
+pobj(at-11, all-12)
+

@@ -1,0 +1,211 @@
+(ROOT
+  (NP
+    (NP (DT The) (NN beginning))
+    (PP (IN of)
+      (NP (NN time)))
+    (. .)))
+
+det(beginning-2, The-1)
+root(ROOT-0, beginning-2)
+prep_of(beginning-2, time-4)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP (PRP it))
+      (VP (RB all) (VB start)))
+    (. ?)))
+
+advmod(start-5, How-1)
+aux(start-5, did-2)
+nsubj(start-5, it-3)
+advmod(start-5, all-4)
+root(ROOT-0, start-5)
+
+(ROOT
+  (S
+    (VP (VB Duh))
+    (. .)))
+
+root(ROOT-0, Duh-1)
+
+(ROOT
+  (NP
+    (NP (DT The) (NNP Big) (NNP Bang))
+    (, ,)
+    (NP (NN right))
+    (. ?)))
+
+det(Bang-3, The-1)
+nn(Bang-3, Big-2)
+root(ROOT-0, Bang-3)
+appos(Bang-3, right-5)
+
+(ROOT
+  (NP (NNP Okay) (: ...)))
+
+root(ROOT-0, Okay-1)
+
+(ROOT
+  (S
+    (NP (NNP Explain))
+    (SBAR
+      (WHADVP (WRB how))
+      (S
+        (NP (DT the) (NNP Big) (NNP Bang))
+        (VP (VBD came)
+          (S
+            (VP (TO to)
+              (VP (VB be)))))))
+    (. .)))
+
+dep(came-6, Explain-1)
+advmod(came-6, how-2)
+det(Bang-5, the-3)
+nn(Bang-5, Big-4)
+nsubj(came-6, Bang-5)
+xsubj(be-8, Bang-5)
+root(ROOT-0, came-6)
+aux(be-8, to-7)
+xcomp(came-6, be-8)
+
+(ROOT
+  (S
+    (ADVP (RB Oh) (RB right))
+    (, ,)
+    (NP
+      (NP (DT a) (RB very) (JJ dense) (NN piece))
+      (PP (IN of)
+        (NP (NN matter))))
+    (VP
+      (VP (VBD exploded))
+      (CC and)
+      (VP (VBD created)
+        (NP (DT the) (NN universe))))
+    (. .)))
+
+advmod(right-2, Oh-1)
+advmod(exploded-10, right-2)
+det(piece-7, a-4)
+advmod(piece-7, very-5)
+amod(piece-7, dense-6)
+nsubj(exploded-10, piece-7)
+nsubj(created-12, piece-7)
+prep_of(piece-7, matter-9)
+root(ROOT-0, exploded-10)
+conj_and(exploded-10, created-12)
+det(universe-14, the-13)
+dobj(created-12, universe-14)
+
+(ROOT
+  (SBARQ
+    (FRAG (CC But)
+      (NP (NN wait)))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (VBD did)
+        (NP
+          (NP (DT that) (NN piece))
+          (PP (IN of)
+            (NP (NN matter))))
+        (VP (VB come)
+          (S
+            (VP (TO to)
+              (VP (VB be)))))))
+    (. ?)))
+
+dep(wait-2, But-1)
+dep(come-10, wait-2)
+advmod(come-10, how-4)
+aux(come-10, did-5)
+det(piece-7, that-6)
+nsubj(come-10, piece-7)
+xsubj(be-12, piece-7)
+prep_of(piece-7, matter-9)
+root(ROOT-0, come-10)
+aux(be-12, to-11)
+xcomp(come-10, be-12)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (NP
+        (NP (NN nothing))
+        (PP (IN before)
+          (NP (PRP it)))))
+    (. .)))
+
+expl(was-2, There-1)
+root(ROOT-0, was-2)
+nsubj(was-2, nothing-3)
+prep_before(nothing-3, it-5)
+
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (ADJP (JJ right)))
+    (. .)))
+
+dep(right-5, Oh-1)
+nsubj(right-5, that-3)
+cop(right-5, 's-4)
+root(ROOT-0, right-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP God))
+      (, ,)
+      (NP
+        (NP (DT the) (NN being))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB always))
+            (VP (VBD was)))))
+      (, ,))
+    (VP (VBD created)
+      (NP (PRP it))
+      (, ,)
+      (S
+        (ADVP (RB fully))
+        (VP (VBG intending)
+          (SBAR (IN for)
+            (S
+              (NP (PRP it))
+              (VP (TO to)
+                (VP (VB explode)
+                  (CC and)
+                  (VB make)
+                  (NP (DT the) (NN universe)))))))))
+    (. .)))
+
+nsubj(created-9, God-1)
+det(being-4, the-3)
+appos(God-1, being-4)
+nsubj(was-7, being-4)
+advmod(was-7, always-6)
+rcmod(being-4, was-7)
+root(ROOT-0, created-9)
+dobj(created-9, it-10)
+advmod(intending-13, fully-12)
+partmod(created-9, intending-13)
+xcomp(created-9, intending-13)
+mark(explode-17, for-14)
+nsubj(explode-17, it-15)
+nsubj(make-19, it-15)
+aux(explode-17, to-16)
+advcl(intending-13, explode-17)
+xcomp(intending-13, explode-17)
+advcl(intending-13, make-19)
+xcomp(intending-13, make-19)
+conj_and(explode-17, make-19)
+det(universe-21, the-20)
+dobj(explode-17, universe-21)
+

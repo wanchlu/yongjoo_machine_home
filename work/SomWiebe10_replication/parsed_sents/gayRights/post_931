@@ -1,0 +1,231 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Discrimination))
+      (VP (VBZ is)
+        (NP (NN discrimination))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ s)
+        (ADVP (RB always))
+        (ADJP (JJ wrong))))
+    (. .)))
+
+nsubj(discrimination-3, Discrimination-1)
+cop(discrimination-3, is-2)
+root(ROOT-0, discrimination-3)
+nsubj(wrong-8, it-5)
+cop(wrong-8, s-6)
+advmod(wrong-8, always-7)
+conj_and(discrimination-3, wrong-8)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (VP (MD would))))
+    (NP (DT the) (JJ civil) (NNS rights) (NN movement))
+    (VP (VBD progressed)
+      (SBAR (IN if)
+        (S
+          (NP (PRP we))
+          (VP (VBD had)
+            (VP (VBN asked)
+              (NP
+                (NP (DT the) (NNS people))
+                (PP (IN of)
+                  (NP (NNP Alabama))))
+              (S
+                (VP (TO to)
+                  (VP (VB decide)
+                    (PP (IN for)
+                      (NP (PRP themselves)))
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP they))
+                        (VP (VBD wanted)
+                          (S
+                            (VP (TO to)
+                              (VP (VB integrate))))))
+                      (CC or)
+                      (RB not))))))))))
+    (. .)))
+
+advmod(would-2, How-1)
+dep(progressed-7, would-2)
+det(movement-6, the-3)
+amod(movement-6, civil-4)
+nn(movement-6, rights-5)
+nsubj(progressed-7, movement-6)
+root(ROOT-0, progressed-7)
+mark(asked-11, if-8)
+nsubj(asked-11, we-9)
+aux(asked-11, had-10)
+advcl(progressed-7, asked-11)
+det(people-13, the-12)
+dobj(asked-11, people-13)
+prep_of(people-13, Alabama-15)
+aux(decide-17, to-16)
+xcomp(asked-11, decide-17)
+prep_for(decide-17, themselves-19)
+mark(wanted-22, if-20)
+nsubj(wanted-22, they-21)
+xsubj(integrate-24, they-21)
+advcl(decide-17, wanted-22)
+aux(integrate-24, to-23)
+xcomp(wanted-22, integrate-24)
+advcl(decide-17, not-26)
+conj_or(wanted-22, not-26)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ only) (NN difference))
+    (ADVP (RB here))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN discrimination))
+        (SBAR
+          (S
+            (VP (VBZ is) (RB not)
+              (VP
+                (ADVP (RB as) (RB closely))
+                (VBN tied)
+                (PP (TO to)
+                  (NP (NN location)))))))))
+    (. .)))
+
+det(difference-3, The-1)
+amod(difference-3, only-2)
+nsubj(discrimination-7, difference-3)
+advmod(discrimination-7, here-4)
+cop(discrimination-7, is-5)
+det(discrimination-7, the-6)
+root(ROOT-0, discrimination-7)
+auxpass(tied-12, is-8)
+neg(tied-12, not-9)
+advmod(closely-11, as-10)
+advmod(tied-12, closely-11)
+rcmod(discrimination-7, tied-12)
+prep_to(tied-12, location-14)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (MD will)
+      (NP (PRP we))
+      (ADVP (RB ever))
+      (VP
+        (VP (VB learn))
+        (, ,)
+        (NP
+          (NP (JJ civil) (NNS rights))
+          (CC and)
+          (NP (JJ social) (JJ transparency) (NNS benefits) (NN everyone)))))
+    (. .)))
+
+advmod(learn-5, When-1)
+aux(learn-5, will-2)
+nsubj(learn-5, we-3)
+advmod(learn-5, ever-4)
+root(ROOT-0, learn-5)
+amod(rights-8, civil-7)
+dobj(learn-5, rights-8)
+amod(everyone-13, social-10)
+amod(everyone-13, transparency-11)
+nn(everyone-13, benefits-12)
+dobj(learn-5, everyone-13)
+conj_and(rights-8, everyone-13)
+
+(ROOT
+  (S
+    (NP (NNP Discrimination))
+    (VP (VBZ hurts)
+      (NP
+        (NP
+          (NP (NN everyone))
+          (, ,)
+          (CONJP (RB not) (RB just))
+          (NP (DT the) (NN discriminated)))
+        (, ,)
+        (CONJP (CC but)
+          (RB also))
+        (NP
+          (NP (DT the) (NN discriminators)
+            (CC and)
+            (NN society))
+          (PP (IN in)
+            (NP (NN general))))))
+    (. .)))
+
+nsubj(hurts-2, Discrimination-1)
+root(ROOT-0, hurts-2)
+dobj(hurts-2, everyone-3)
+neg(just-6, not-5)
+dep(everyone-3, just-6)
+det(discriminated-8, the-7)
+dobj(hurts-2, discriminated-8)
+conj_and(everyone-3, discriminated-8)
+det(discriminators-13, the-12)
+dobj(hurts-2, discriminators-13)
+conj_and(everyone-3, discriminators-13)
+conj_and(everyone-3, society-15)
+conj_and(discriminators-13, society-15)
+prep_in(discriminators-13, general-17)
+
+(ROOT
+  (S
+    (NP (NNS Gays))
+    (ADVP (RB disproportionately))
+    (VP (VBP contribute)
+      (PP (TO to)
+        (NP (NN society))))
+    (. .)))
+
+nsubj(contribute-3, Gays-1)
+advmod(contribute-3, disproportionately-2)
+root(ROOT-0, contribute-3)
+prep_to(contribute-3, society-5)
+
+(ROOT
+  (S
+    (SBAR
+      (X (DT The) (RB sooner))
+      (S
+        (NP (PRP they))
+        (VP (VBP are)
+          (VP (VBN allowed)
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RB fully))
+                  (VB express)
+                  (NP (PRP themselves)))))))))
+    (, ,)
+    (X (DT the) (RB sooner))
+    (NP (PRP we))
+    (VP (MD will) (RB all)
+      (VP (VB be)
+        (ADJP (JJR better) (RP off))))
+    (. .)))
+
+det(sooner-2, The-1)
+dep(allowed-5, sooner-2)
+nsubjpass(allowed-5, they-3)
+xsubj(express-8, they-3)
+auxpass(allowed-5, are-4)
+dep(better-17, allowed-5)
+aux(express-8, to-6)
+advmod(express-8, fully-7)
+xcomp(allowed-5, express-8)
+dobj(express-8, themselves-9)
+det(sooner-12, the-11)
+dep(better-17, sooner-12)
+nsubj(better-17, we-13)
+aux(better-17, will-14)
+advmod(better-17, all-15)
+cop(better-17, be-16)
+root(ROOT-0, better-17)
+dep(better-17, off-18)
+

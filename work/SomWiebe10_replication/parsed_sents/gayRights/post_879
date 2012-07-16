@@ -1,0 +1,92 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ Explain)
+      (PP (TO to)
+        (NP (PRP me))))
+    (SBAR
+      (WHNP (WP who))
+      (S
+        (VP (MD will)
+          (VP (VB suffer)
+            (SBAR (IN if)
+              (S
+                (NP (JJ same) (NN sex) (NNS couples))
+                (VP (VBP are)
+                  (VP (VBN allowed)
+                    (S
+                      (VP (TO to)
+                        (VP (VB marry))))))))))))
+    (. ?)))
+
+root(ROOT-0, Explain-1)
+prep_to(Explain-1, me-3)
+nsubj(suffer-6, who-4)
+aux(suffer-6, will-5)
+dep(Explain-1, suffer-6)
+mark(allowed-12, if-7)
+amod(couples-10, same-8)
+nn(couples-10, sex-9)
+nsubjpass(allowed-12, couples-10)
+xsubj(marry-14, couples-10)
+auxpass(allowed-12, are-11)
+advcl(suffer-6, allowed-12)
+aux(marry-14, to-13)
+xcomp(allowed-12, marry-14)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (VP (VB explain)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NN someone))
+          (VP (MD will)
+            (VP (VB suffer))))))
+    (. ?)))
+
+advmod(explain-3, Also-1)
+root(ROOT-0, explain-3)
+advmod(suffer-7, how-4)
+nsubj(suffer-7, someone-5)
+aux(suffer-7, will-6)
+ccomp(explain-3, suffer-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP want)
+        (NP (JJ concrete) (NNS examples)))
+      (, ,) (RB not)
+      (VP (VBP fear)
+        (ADJP (JJ mongering))))
+    (. .)))
+
+nsubj(want-2, I-1)
+root(ROOT-0, want-2)
+amod(examples-4, concrete-3)
+dobj(want-2, examples-4)
+neg(want-2, not-6)
+dep(want-2, fear-7)
+acomp(fear-7, mongering-8)
+
+(ROOT
+  (S
+    (VP (VB Try)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ clear)
+              (PP (IN with)
+                (NP (PRP$ your) (NN comment))))))))
+    (. .)))
+
+root(ROOT-0, Try-1)
+aux(clear-4, to-2)
+cop(clear-4, be-3)
+xcomp(Try-1, clear-4)
+poss(comment-7, your-6)
+prep_with(clear-4, comment-7)
+

@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (VP
+      (VP (VB please)
+        (ADJP (RB just) (RB truly) (JJ pray)))
+      (CC and)
+      (VP (VB believe)
+        (S
+          (S
+            (NP (PRP you))
+            (VP (MD will)
+              (VP (VB understand))))
+          (, ,)
+          (S
+            (NP (PRP we))
+            (VP (MD would) (RB not)
+              (VP (VB have)
+                (VP (VBN talked)
+                  (PP (IN about)
+                    (NP (PRP him)))
+                  (PP (IN for)
+                    (NP (CD 2009) (NNS years)))
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP he))
+                      (VP (VBD were) (RB n't)
+                        (ADJP (JJ real))))))))))))
+    (. !)))
+
+dep(please-2, Yes-1)
+root(ROOT-0, please-2)
+advmod(pray-5, just-3)
+advmod(pray-5, truly-4)
+acomp(please-2, pray-5)
+conj_and(please-2, believe-7)
+nsubj(understand-10, you-8)
+aux(understand-10, will-9)
+dep(believe-7, understand-10)
+nsubj(talked-16, we-12)
+aux(talked-16, would-13)
+neg(talked-16, not-14)
+aux(talked-16, have-15)
+dep(understand-10, talked-16)
+prep_about(talked-16, him-18)
+num(years-21, 2009-20)
+prep_for(talked-16, years-21)
+mark(real-26, if-22)
+nsubj(real-26, he-23)
+cop(real-26, were-24)
+neg(real-26, n't-25)
+advcl(talked-16, real-26)
+

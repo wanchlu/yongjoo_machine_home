@@ -1,0 +1,59 @@
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (VP (VBN asserting)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP are)
+            (ADJP (JJ psychic))))))
+    (. ?)))
+
+auxpass(asserting-3, Are-1)
+nsubjpass(asserting-3, you-2)
+root(ROOT-0, asserting-3)
+complm(psychic-7, that-4)
+nsubj(psychic-7, you-5)
+cop(psychic-7, are-6)
+ccomp(asserting-3, psychic-7)
+
+(ROOT
+  (FRAG (CC or)
+    (ADVP
+      (ADVP (IN at) (JJS least))
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP know)
+            (SBAR
+              (SBARQ
+                (WHNP (WP what))
+                (SQ (VBZ is)
+                  (PP (IN in)
+                    (NP (PRP$ their) (NNS dreams))))
+                (. ?)))))))))
+
+dep(at-2, or-1)
+root(ROOT-0, at-2)
+pobj(at-2, least-3)
+dep(know-6, that-4)
+nsubj(know-6, you-5)
+ccomp(at-2, know-6)
+attr(is-8, what-7)
+dep(know-6, is-8)
+poss(dreams-11, their-10)
+prep_in(is-8, dreams-11)
+
+(ROOT
+  (SQ (CC Or)
+    (VBZ is)
+    (NP (DT this))
+    (ADJP (RB just) (VBN rhetoric))
+    (. ?)))
+
+cc(rhetoric-5, Or-1)
+aux(rhetoric-5, is-2)
+nsubj(rhetoric-5, this-3)
+advmod(rhetoric-5, just-4)
+root(ROOT-0, rhetoric-5)
+

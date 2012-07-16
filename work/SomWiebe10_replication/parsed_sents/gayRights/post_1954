@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (NP (FW i))
+      (VP (VBP agree) (, ,)
+        (S
+          (NP (FW i))
+          (ADJP (JJ belive)
+            (PP (IN in)
+              (NP (NNP God)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN bible))
+      (VP (VBD was)
+        (VP (VBN made)
+          (PP (IN by)
+            (NP (NNS people))))))
+    (. .)))
+
+nsubj(agree-2, i-1)
+root(ROOT-0, agree-2)
+nsubj(belive-5, i-4)
+xcomp(agree-2, belive-5)
+prep_in(belive-5, God-7)
+det(bible-11, the-10)
+nsubjpass(made-13, bible-11)
+auxpass(made-13, was-12)
+conj_but(agree-2, made-13)
+agent(made-13, people-15)
+
+(ROOT
+  (S (CC And)
+    (PP (IN over)
+      (NP (NN time)))
+    (NP (JJ other) (NNS people))
+    (VP (VBP have)
+      (VP (VBN used)
+        (S
+          (NP (PRP it))
+          (VP (TO to)
+            (VP
+              (VP (VB controll)
+                (NP (JJ other) (NNS people)))
+              (CC and)
+              (VP (VB do)
+                (NP (JJ horible) (NN stuff))))))))
+    (. .)))
+
+cc(used-7, And-1)
+prep_over(used-7, time-3)
+amod(people-5, other-4)
+nsubj(used-7, people-5)
+aux(used-7, have-6)
+root(ROOT-0, used-7)
+nsubj(controll-10, it-8)
+nsubj(do-14, it-8)
+aux(controll-10, to-9)
+xcomp(used-7, controll-10)
+amod(people-12, other-11)
+dobj(controll-10, people-12)
+xcomp(used-7, do-14)
+conj_and(controll-10, do-14)
+amod(stuff-16, horible-15)
+dobj(do-14, stuff-16)
+

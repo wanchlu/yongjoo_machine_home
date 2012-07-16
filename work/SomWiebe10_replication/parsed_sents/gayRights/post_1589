@@ -1,0 +1,118 @@
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (VP (VBN quoted))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP have)
+      (NP (DT every) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB believe)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP want)
+                    (S
+                      (VP (TO to)
+                        (VP (VB believe)
+                          (CC and)
+                          (VB behave)
+                          (NP
+                            (NP (DT the) (NN way))
+                            (SBAR
+                              (S
+                                (NP (PRP they))
+                                (VP (VBP do))))))))))))))))
+    (. .)))
+
+mark(quoted-2, As-1)
+advcl(have-5, quoted-2)
+nsubj(have-5, they-4)
+root(ROOT-0, have-5)
+det(right-7, every-6)
+dobj(have-5, right-7)
+aux(believe-9, to-8)
+infmod(right-7, believe-9)
+dep(want-12, what-10)
+nsubj(want-12, they-11)
+xsubj(believe-14, they-11)
+ccomp(believe-9, want-12)
+aux(believe-14, to-13)
+xcomp(want-12, believe-14)
+xcomp(want-12, behave-16)
+conj_and(believe-14, behave-16)
+det(way-18, the-17)
+dobj(believe-14, way-18)
+dobj(do-20, way-18)
+nsubj(do-20, they-19)
+rcmod(way-18, do-20)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT every) (JJ single) (NN one))
+              (PP (IN of)
+                (NP (PRP us))))
+            (VP (MD should)
+              (VP (VB have)
+                (NP (DT the) (NN right)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (PP (IN with)
+                          (NP
+                            (NP (DT the) (NN person))
+                            (SBAR
+                              (S
+                                (NP (PRP they))
+                                (VP (VBP want)
+                                  (S
+                                    (VP (TO to)
+                                      (VP (VB be)
+                                        (PP (IN with))))))))))))))))))))
+    (: ;)
+    (SINV (VB be)
+      (NP (PRP it))
+      (NP
+        (NP (DT a) (NN man))
+        (CC or)
+        (NP (DT a) (NN woman))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(have-10, that-3)
+det(one-6, every-4)
+amod(one-6, single-5)
+nsubj(have-10, one-6)
+prep_of(one-6, us-8)
+aux(have-10, should-9)
+ccomp(think-2, have-10)
+det(right-12, the-11)
+dobj(have-10, right-12)
+aux(be-14, to-13)
+infmod(right-12, be-14)
+det(person-17, the-16)
+prep_with(be-14, person-17)
+dobj(want-19, person-17)
+prep_with(be-21, person-17)
+nsubj(want-19, they-18)
+rcmod(person-17, want-19)
+aux(be-21, to-20)
+xcomp(want-19, be-21)
+cop(it-25, be-24)
+parataxis(think-2, it-25)
+det(man-27, a-26)
+dep(it-25, man-27)
+det(woman-30, a-29)
+dep(it-25, woman-30)
+conj_or(man-27, woman-30)
+

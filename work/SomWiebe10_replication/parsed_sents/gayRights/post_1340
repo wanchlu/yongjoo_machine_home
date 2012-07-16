@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN called)
+        (NP (JJ human) (NNS rights) (NNS people))))
+    (. !)))
+
+nsubjpass(called-3, It-1)
+auxpass(called-3, is-2)
+root(ROOT-0, called-3)
+amod(people-6, human-4)
+nn(people-6, rights-5)
+dobj(called-3, people-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (ADVP (RB already))
+      (VP (VBN been)
+        (VP (VBN proven)
+          (PP (IN through)
+            (NP (JJ tedious) (NNS studies)))
+          (SBAR (IN that)
+            (S
+              (NP (NNS children))
+              (VP (VBD adopted)
+                (PP (IN into)
+                  (NP (JJ same) (NN sex) (NNS families)))
+                (S
+                  (VP (VB turn)
+                    (PRT (RP out))
+                    (NP
+                      (NP (RB just) (DT the) (JJ same))
+                      (PP (IN as)
+                        (NP (DT any) (JJ other) (NN kid))))))))))))
+    (. .)))
+
+nsubjpass(proven-5, It-1)
+aux(proven-5, has-2)
+advmod(proven-5, already-3)
+auxpass(proven-5, been-4)
+root(ROOT-0, proven-5)
+amod(studies-8, tedious-7)
+prep_through(proven-5, studies-8)
+complm(adopted-11, that-9)
+nsubj(adopted-11, children-10)
+ccomp(proven-5, adopted-11)
+amod(families-15, same-13)
+nn(families-15, sex-14)
+prep_into(adopted-11, families-15)
+ccomp(adopted-11, turn-16)
+prt(turn-16, out-17)
+advmod(same-20, just-18)
+det(same-20, the-19)
+dobj(turn-16, same-20)
+det(kid-24, any-22)
+amod(kid-24, other-23)
+prep_as(same-20, kid-24)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP I))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (INTJ (UH yes))
+            (PP (RB because) (TO to)
+              (NP
+                (NP (PRP me))
+                (SBAR
+                  (S
+                    (NP (DT the) (NN answer))
+                    (VP (VBZ is)
+                      (ADJP (JJ obvious)))))))))))
+    (. .)))
+
+dep(have-3, So-1)
+nsubj(have-3, I-2)
+xsubj(say-5, I-2)
+root(ROOT-0, have-3)
+aux(say-5, to-4)
+xcomp(have-3, say-5)
+dep(say-5, yes-6)
+advmod(say-5, because-7)
+prep_to(say-5, me-9)
+det(answer-11, the-10)
+nsubj(obvious-13, answer-11)
+cop(obvious-13, is-12)
+rcmod(me-9, obvious-13)
+

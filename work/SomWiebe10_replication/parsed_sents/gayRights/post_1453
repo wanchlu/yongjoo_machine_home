@@ -1,0 +1,121 @@
+(ROOT
+  (S (IN so)
+    (NP
+      (NP (PRP$ your)
+        (NP (DT some)
+          (ADJP (JJ lonely)
+            (NP (CD 60)))
+          (NN year))
+        (JJ old) (NN guy))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP say)
+            (NP (NN stuff))))))
+    (VP (VBP like) ('' '')
+      (NP (NNP OMG))
+      ('' ''))
+    (. ?)))
+
+dep(like-12, so-1)
+poss(guy-8, your-2)
+det(year-6, some-3)
+amod(year-6, lonely-4)
+dep(lonely-4, 60-5)
+nn(guy-8, year-6)
+amod(guy-8, old-7)
+nsubj(say-10, guy-8)
+nsubj(like-12, guy-8)
+rcmod(guy-8, say-10)
+dobj(say-10, stuff-11)
+root(ROOT-0, like-12)
+dobj(like-12, OMG-14)
+
+(ROOT
+  (S
+    (VP (VB wow)
+      (NP (PRP$ my) (NN life))
+      (SBAR
+        (S
+          (NP (PRP$ my) (NN life))
+          (VP (VBZ is)
+            (ADVP (RB already))
+            (VP (VBG turning)
+              (PRT (RP out))
+              (ADVP (RBR better))
+              (FRAG (RB then) (JJ yours)))))))
+    (: ...)))
+
+root(ROOT-0, wow-1)
+poss(life-3, my-2)
+dobj(wow-1, life-3)
+poss(life-5, my-4)
+nsubj(turning-8, life-5)
+aux(turning-8, is-6)
+advmod(turning-8, already-7)
+dep(wow-1, turning-8)
+prt(turning-8, out-9)
+advmod(turning-8, better-10)
+dep(turning-8, then-11)
+dep(then-11, yours-12)
+
+(ROOT
+  (SQ
+    (VP (VB and)
+      (PRN
+        (S
+          (NP (PRP I))
+          (VP (VBP 'm)
+            (S
+              (NP
+                (NP (JJ only))
+                (NP
+                  (QP (CD 15)))
+                (: :)))))
+        (-RRB- -RRB-))
+      (CC and)
+      (NP
+        (NP (PRP I))
+        (SBAR
+          (S
+            (VP (VBP 'm)
+              (ADJP (JJ glad)
+                (SBAR
+                  (S
+                    (NP (FW i))
+                    (VP (VBP do) (RB n't)
+                      (VP (VB know)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP (DT a) (NN blanket) (NN statement))
+                            (VP (VBZ is) (: ...)
+                              (S (RB so)
+                                (VP (VB suck)
+                                  (PP (IN on)
+                                    (NP (DT that))))))))))))))))))
+    (. !)))
+
+root(ROOT-0, and-1)
+nsubj('m-3, I-2)
+parataxis(and-1, 'm-3)
+dep('m-3, only-4)
+dep(only-4, 15-5)
+conj_and(and-1, I-9)
+dobj(and-1, I-9)
+cop(glad-11, 'm-10)
+rcmod(I-9, glad-11)
+nsubj(know-15, i-12)
+aux(know-15, do-13)
+neg(know-15, n't-14)
+dep(glad-11, know-15)
+dobj(is-20, what-16)
+det(statement-19, a-17)
+nn(statement-19, blanket-18)
+nsubj(is-20, statement-19)
+ccomp(know-15, is-20)
+advmod(suck-23, so-22)
+ccomp(is-20, suck-23)
+parataxis(is-20, suck-23)
+prep_on(suck-23, that-25)
+

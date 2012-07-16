@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Thinking)
+        (NP (PRP it))))
+    (VP (VBZ is)
+      (NP (CD one) (NN sin))
+      (, ,)
+      (S
+        (VP (VBG doing)
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (NP (DT a) (JJ second) (NN sin))))))))
+    (. .)))
+
+csubj(sin-5, Thinking-1)
+dobj(Thinking-1, it-2)
+cop(sin-5, is-3)
+num(sin-5, one-4)
+root(ROOT-0, sin-5)
+partmod(sin-5, doing-7)
+xcomp(sin-5, doing-7)
+nsubj(sin-12, it-8)
+cop(sin-12, is-9)
+det(sin-12, a-10)
+amod(sin-12, second-11)
+ccomp(doing-7, sin-12)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP
+      (NP (NN thinking))
+      (PP (IN about)
+        (NP (JJ murdering) (NN someone))))
+    (ADJP
+      (ADJP (RB just) (RB as) (JJ bad))
+      (PP (IN as)
+        (ADVP (RB actually))))
+    (S
+      (VP (VBG murdering)
+        (NP (PRP him))))
+    (. ?)))
+
+cop(bad-8, Is-1)
+nsubj(bad-8, thinking-2)
+amod(someone-5, murdering-4)
+prep_about(thinking-2, someone-5)
+advmod(bad-8, just-6)
+advmod(bad-8, as-7)
+root(ROOT-0, bad-8)
+prep(bad-8, as-9)
+pcomp(as-9, actually-10)
+dep(bad-8, murdering-11)
+dobj(murdering-11, him-12)
+

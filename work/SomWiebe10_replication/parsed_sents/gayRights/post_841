@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (VP
+      (PP (IN between)
+        (NP
+          (NP (DT the) (NN sin))
+          (CC and)
+          (NP (DT the) (NN sinner)))))
+    (. .)))
+
+root(ROOT-0, between-1)
+det(sin-3, the-2)
+pobj(between-1, sin-3)
+det(sinner-6, the-5)
+pobj(between-1, sinner-6)
+conj_and(sin-3, sinner-6)
+
+(ROOT
+  (SINV
+    (S
+      (NP (PRP One))
+      (VP (VBZ is)
+        (VP (VBN condemned)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN action))
+              (SBAR
+                (S
+                  (NP (DT the) (JJ other))
+                  (VP (VBZ is)
+                    (ADVP (RB just))
+                    (NP (DT a) (JJ learned) (NN behavior))))))))))
+    (VP (VBD taught)
+      (PP (IN by)
+        (NP (NN satan))))
+    (NP (PRP himself))
+    (. .)))
+
+nsubjpass(condemned-3, One-1)
+auxpass(condemned-3, is-2)
+dep(taught-14, condemned-3)
+det(action-6, the-5)
+agent(condemned-3, action-6)
+det(other-8, the-7)
+nsubj(behavior-13, other-8)
+cop(behavior-13, is-9)
+advmod(behavior-13, just-10)
+det(behavior-13, a-11)
+amod(behavior-13, learned-12)
+rcmod(action-6, behavior-13)
+root(ROOT-0, taught-14)
+prep_by(taught-14, satan-16)
+nsubj(taught-14, himself-17)
+

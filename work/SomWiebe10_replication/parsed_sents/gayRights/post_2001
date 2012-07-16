@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (NP (PRP they))
+    (VP (MD should))
+    (. .)))
+
+prep_of(should-4, course-2)
+nsubj(should-4, they-3)
+root(ROOT-0, should-4)
+
+(ROOT
+  (SBARQ
+    (WHNP (WDT What) (NN justification))
+    (SQ (VBZ is)
+      (NP
+        (NP (RB there))
+        (PP (IN for)
+          (S
+            (VP (VBG recognizing)
+              (NP
+                (NP
+                  (NP (CD one) (NN couple) (POS 's))
+                  (NN commitment))
+                (PP (TO to)
+                  (NP
+                    (NP (DT each) (JJ other))
+                    (CONJP (CC and)
+                      (RB not))
+                    (NP (DT another) (NN couple) (POS 's))))
+                (, ,)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (VP (VBN committed)
+                        (PP (TO to)
+                          (NP (DT the) (JJ same) (NNS values)))))))))))))
+    (. ?)))
+
+det(justification-2, What-1)
+attr(is-3, justification-2)
+root(ROOT-0, is-3)
+nsubj(is-3, there-4)
+prepc_for(there-4, recognizing-6)
+num(couple-8, one-7)
+poss(commitment-10, couple-8)
+dobj(recognizing-6, commitment-10)
+tmod(committed-23, commitment-10)
+det(other-13, each-12)
+prep_to(commitment-10, other-13)
+det(couple-17, another-16)
+prep_to(commitment-10, couple-17)
+conj_negcc(other-13, couple-17)
+advmod(committed-23, when-20)
+nsubjpass(committed-23, they-21)
+auxpass(committed-23, are-22)
+dep(commitment-10, committed-23)
+det(values-27, the-25)
+amod(values-27, same-26)
+prep_to(committed-23, values-27)
+
+(ROOT
+  (SINV
+    (VP (VBZ Does) (RB n't)
+      (VP (VB denying)
+        (NP (PRP them))))
+    (NP
+      (NP (DT the) (JJ same) (NNS benefits))
+      (ADJP (RB as) (VBN mixed)))
+    (S
+      (NP (NN sex) (NNS couples))
+      (VP (VBP constitute)
+        (NP
+          (NP (DT a) (NN form))
+          (PP (IN of)
+            (NP (JJ sexual) (NN descrimination))))))
+    (. ?)))
+
+aux(denying-3, Does-1)
+neg(denying-3, n't-2)
+root(ROOT-0, denying-3)
+dobj(denying-3, them-4)
+det(benefits-7, the-5)
+amod(benefits-7, same-6)
+nsubj(denying-3, benefits-7)
+advmod(mixed-9, as-8)
+amod(benefits-7, mixed-9)
+nn(couples-11, sex-10)
+nsubj(constitute-12, couples-11)
+ccomp(denying-3, constitute-12)
+det(form-14, a-13)
+dobj(constitute-12, form-14)
+amod(descrimination-17, sexual-16)
+prep_of(form-14, descrimination-17)
+

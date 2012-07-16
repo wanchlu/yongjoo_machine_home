@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (NNS Genes))
+    (VP
+      (VP (VBP Have) (RB n't)
+        (VP (VBN been) (`` ``)
+          (ADJP (JJ proven))
+          ('' '')))
+      (CC and)
+      (VP (MD wo) (RB n't)
+        (VP (VB be)
+          (SBAR (IN until)
+            (S
+              (NP (DT the) (JJ exact) (NN gene))
+              (VP (VBZ is)
+                (VP (VBN found))))))))
+    (. .)))
+
+nsubj(proven-6, Genes-1)
+nsubj(be-11, Genes-1)
+aux(proven-6, Have-2)
+neg(proven-6, n't-3)
+cop(proven-6, been-4)
+root(ROOT-0, proven-6)
+aux(be-11, wo-9)
+neg(be-11, n't-10)
+conj_and(proven-6, be-11)
+mark(found-17, until-12)
+det(gene-15, the-13)
+amod(gene-15, exact-14)
+nsubjpass(found-17, gene-15)
+auxpass(found-17, is-16)
+advcl(be-11, found-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN None))
+      (PP (IN of)
+        (NP (DT this))))
+    (VP (VBZ matters)
+      (SBAR (IN though) (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (VP (VBG involuntary)
+              (ADVP (DT no) (NN matter)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP slice)
+                      (NP (PRP it)))))))))))
+    (. .)))
+
+nsubj(matters-4, None-1)
+prep_of(None-1, this-3)
+root(ROOT-0, matters-4)
+mark(involuntary-9, though-5)
+dep(involuntary-9, as-6)
+nsubj(involuntary-9, it-7)
+aux(involuntary-9, 's-8)
+advcl(matters-4, involuntary-9)
+dep(matter-11, no-10)
+advmod(involuntary-9, matter-11)
+advmod(slice-14, how-12)
+nsubj(slice-14, you-13)
+dep(matter-11, slice-14)
+dobj(slice-14, it-15)
+

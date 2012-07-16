@@ -1,0 +1,122 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNP Iowa))
+        (VP (VBD legalized)
+          (NP (JJ gay) (NN marriage)))))
+    (NP (DT the) (NN argument))
+    (VP (VBD was)
+      (ADJP (RP over)))
+    (. !)))
+
+advmod(legalized-3, When-1)
+nsubj(legalized-3, Iowa-2)
+advcl(over-9, legalized-3)
+amod(marriage-5, gay-4)
+dobj(legalized-3, marriage-5)
+det(argument-7, the-6)
+nsubj(over-9, argument-7)
+cop(over-9, was-8)
+root(ROOT-0, over-9)
+
+(ROOT
+  (S
+    (NP (NNP Article) (NNP IV))
+    (, ,)
+    (NP
+      (NP (NN Section))
+      (ADJP (JJ 1of)
+        (NP
+          (NP (DT the) (NNP US) (NNP Constitution))
+          (, ,)
+          (NP (DT the) (NNP Full) (NNP Faith))
+          (CC and)
+          (NP (NNP Credit) (NNP Clause)))))
+    (VP (VBZ says)
+      (NP
+        (NP (JJ public) (NNS acts))
+        (PRN (-LRB- -LRB-)
+          (NP (NN marriage))
+          (, ,)
+          (NP (CD drivers) (NNS licenses))
+          (, ,)
+          (NP (NNP ect) (. .))
+          (-RRB- -RRB-))))))
+
+nn(IV-2, Article-1)
+nsubj(says-16, IV-2)
+nsubj(says-16, Section-4)
+amod(Section-4, 1of-5)
+det(Constitution-8, the-6)
+nn(Constitution-8, US-7)
+dep(1of-5, Constitution-8)
+det(Faith-12, the-10)
+nn(Faith-12, Full-11)
+dep(1of-5, Faith-12)
+conj_and(Constitution-8, Faith-12)
+nn(Clause-15, Credit-14)
+dep(1of-5, Clause-15)
+conj_and(Constitution-8, Clause-15)
+root(ROOT-0, says-16)
+amod(acts-18, public-17)
+dobj(says-16, acts-18)
+appos(acts-18, marriage-20)
+num(licenses-23, drivers-22)
+dep(marriage-20, licenses-23)
+dep(marriage-20, ect-25)
+
+(ROOT
+  (S
+    (NP
+      (PRN (, ,)
+        (PP (IN of)
+          (NP (CD one) (NN state)))))
+    (VP (MD must)
+      (VP (VB be)
+        (VP (VBN recognized)
+          (PP (IN by)
+            (NP (DT another))))))
+    (. .)))
+
+nsubjpass(recognized-7, of-2)
+num(state-4, one-3)
+pobj(of-2, state-4)
+aux(recognized-7, must-5)
+auxpass(recognized-7, be-6)
+root(ROOT-0, recognized-7)
+agent(recognized-7, another-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJ Gay) (NNS marriages))
+      (VP (VBN done)
+        (PP (IN in)
+          (NP (NNP Iowa)))))
+    (VP (MD will)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN recognized)
+                (PP (IN in)
+                  (NP (PDT all) (DT the) (JJ other) (NNS states)))))))))
+    (. .)))
+
+amod(marriages-2, Gay-1)
+nsubj(have-7, marriages-2)
+xsubj(recognized-10, marriages-2)
+partmod(marriages-2, done-3)
+prep_in(done-3, Iowa-5)
+aux(have-7, will-6)
+root(ROOT-0, have-7)
+aux(recognized-10, to-8)
+auxpass(recognized-10, be-9)
+xcomp(have-7, recognized-10)
+predet(states-15, all-12)
+det(states-15, the-13)
+amod(states-15, other-14)
+prep_in(recognized-10, states-15)
+

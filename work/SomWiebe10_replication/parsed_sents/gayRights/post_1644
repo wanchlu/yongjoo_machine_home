@@ -1,0 +1,196 @@
+(ROOT
+  (S
+    (VP (VB Give)
+      (NP (PRP them))
+      (NP
+        (NP (JJ civil) (NN union))
+        (ADJP (JJ OK))))
+    (. .)))
+
+root(ROOT-0, Give-1)
+iobj(Give-1, them-2)
+amod(union-4, civil-3)
+dobj(Give-1, union-4)
+amod(union-4, OK-5)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (PRP$ My) (NN marriage))
+        (PP (TO to)
+          (NP (PRP$ my) (NN wife))))
+      (VP (VBZ is)
+        (NP (NN something) (JJ special))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP like)
+      (S
+        (VP (TO to)
+          (VP (VB know)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT the) (NN definition))
+                  (PP (IN of)
+                    (NP (NN marriage))))
+                (VP (VBZ means)
+                  (NP
+                    (NP (NN husband)
+                      (CC and)
+                      (NN wife))
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (MD can) (RB not)
+                          (VP (VB be)
+                            (VP (VBN taken)
+                              (PRT (RP away)))))))))))))))
+    (. .)))
+
+poss(marriage-2, My-1)
+nsubj(something-7, marriage-2)
+poss(wife-5, my-4)
+prep_to(marriage-2, wife-5)
+cop(something-7, is-6)
+ccomp(like-11, something-7)
+amod(something-7, special-8)
+nsubj(like-11, I-10)
+xsubj(know-13, I-10)
+root(ROOT-0, like-11)
+aux(know-13, to-12)
+xcomp(like-11, know-13)
+complm(means-19, that-14)
+det(definition-16, the-15)
+nsubj(means-19, definition-16)
+prep_of(definition-16, marriage-18)
+ccomp(know-13, means-19)
+dobj(means-19, husband-20)
+nsubjpass(taken-27, husband-20)
+dobj(means-19, wife-22)
+conj_and(husband-20, wife-22)
+nsubjpass(taken-27, wife-22)
+aux(taken-27, can-24)
+neg(taken-27, not-25)
+auxpass(taken-27, be-26)
+rcmod(husband-20, taken-27)
+prt(taken-27, away-28)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP
+        (ADVP (RB then))
+        (VBZ does)
+        (NP
+          (NP (NN marriage))
+          (SBAR
+            (S
+              (VP (VBP mean)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP say)
+                      (SBAR
+                        (S
+                          (NP (PRP I))
+                          (VP (VBP 'm)
+                            (VP (VBN married)
+                              (SBAR (IN if)
+                                (S
+                                  (NP (PRP it))
+                                  (VP (VBZ 's) (RB not)
+                                    (NP
+                                      (NP (DT a) (NN man))
+                                      (CC and)
+                                      (NP (NNS women)))))))))))))))))))
+    (. ?)))
+
+nsubj(does-3, What-1)
+advmod(does-3, then-2)
+root(ROOT-0, does-3)
+dobj(does-3, marriage-4)
+rcmod(marriage-4, mean-5)
+advmod(say-8, when-6)
+nsubj(say-8, I-7)
+advcl(mean-5, say-8)
+nsubjpass(married-11, I-9)
+auxpass(married-11, 'm-10)
+ccomp(say-8, married-11)
+mark(man-17, if-12)
+nsubj(man-17, it-13)
+cop(man-17, 's-14)
+neg(man-17, not-15)
+det(man-17, a-16)
+advcl(married-11, man-17)
+advcl(married-11, women-19)
+conj_and(man-17, women-19)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does)
+      (VP
+        (VP (VB hurt)
+          (NP
+            (NP (NN someone))
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (VBZ hurts)
+                  (NP
+                    (NP (DT the) (NNS people))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBP are)
+                          (VP (VBN married)))))))))))
+        (CC and)
+        (VP (VB believe)
+          (SBAR (IN that)
+            (S
+              (NP (NN marriage))
+              (VP
+                (VP (VBZ is))
+                (CC and)
+                (VP
+                  (ADVP (RB always))
+                  (MD will)
+                  (VP (VB be)
+                    (VP (VBN defined)
+                      (PP (IN as)
+                        (NP
+                          (NP (DT a) (NN man))
+                          (CC and)
+                          (NP (NNS women)))))))))))))
+    (. .)))
+
+nsubj(hurt-3, It-1)
+nsubj(believe-13, It-1)
+aux(hurt-3, does-2)
+root(ROOT-0, hurt-3)
+dobj(hurt-3, someone-4)
+nsubj(hurts-6, it-5)
+rcmod(someone-4, hurts-6)
+det(people-8, the-7)
+dobj(hurts-6, people-8)
+nsubjpass(married-11, people-8)
+auxpass(married-11, are-10)
+rcmod(people-8, married-11)
+conj_and(hurt-3, believe-13)
+complm(is-16, that-14)
+nsubj(is-16, marriage-15)
+nsubjpass(defined-21, marriage-15)
+ccomp(believe-13, is-16)
+advmod(defined-21, always-18)
+aux(defined-21, will-19)
+auxpass(defined-21, be-20)
+ccomp(believe-13, defined-21)
+conj_and(is-16, defined-21)
+det(man-24, a-23)
+prep_as(defined-21, man-24)
+prep_as(defined-21, women-26)
+conj_and(man-24, women-26)
+

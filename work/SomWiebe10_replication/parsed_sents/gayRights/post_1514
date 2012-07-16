@@ -1,0 +1,104 @@
+(ROOT
+  (FRAG
+    (INTJ (UH Well))
+    (, ,)
+    (ADVP (JJ great))
+    (. .)))
+
+dep(great-3, Well-1)
+root(ROOT-0, great-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD had)
+      (ADVP (RB never))
+      (VP (VBN heard)
+        (NP
+          (NP (NNP Mark) (NNP Twain) (POS 's))
+          (NN quote))))
+    (. .)))
+
+nsubj(heard-4, I-1)
+aux(heard-4, had-2)
+neg(heard-4, never-3)
+root(ROOT-0, heard-4)
+nn(Twain-6, Mark-5)
+poss(quote-8, Twain-6)
+dobj(heard-4, quote-8)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Put)
+        (ADVP (RB simply))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ is)
+      (SBAR
+        (WHADJP (RB exactly) (WP what))
+        (S
+          (NP (NNP America))
+          (VP (MD should)
+            (VP (VB aim)
+              (PP (IN for)))))))
+    (. .)))
+
+ccomp(is-5, Put-1)
+advmod(Put-1, simply-2)
+nsubj(is-5, that-4)
+root(ROOT-0, is-5)
+dep(aim-10, exactly-6)
+dep(exactly-6, what-7)
+nsubj(aim-10, America-8)
+aux(aim-10, should-9)
+ccomp(is-5, aim-10)
+prep(aim-10, for-11)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP call)
+        (S
+          (NP (PRP ourselves))
+          (NP
+            (NP (DT the) (NN country))
+            (PP (IN of)
+              (NP (JJ equal) (NN opportunity)))))))
+    (, ,)
+    (CC and)
+    (S
+      (ADVP (RB slowly))
+      (NP (PRP we))
+      (VP (VBP are)
+        (VP (VBG becoming)
+          (NP (RB just) (DT that)))))
+    (. .)))
+
+nsubj(call-2, We-1)
+root(ROOT-0, call-2)
+nsubj(country-5, ourselves-3)
+det(country-5, the-4)
+xcomp(call-2, country-5)
+amod(opportunity-8, equal-7)
+prep_of(country-5, opportunity-8)
+advmod(becoming-14, slowly-11)
+nsubj(becoming-14, we-12)
+aux(becoming-14, are-13)
+conj_and(call-2, becoming-14)
+advmod(that-16, just-15)
+attr(becoming-14, that-16)
+
+(ROOT
+  (S
+    (PP (TO To)
+      (NP (DT each)))
+    (NP (PRP$ his))
+    (VP (VBP own))
+    (. .)))
+
+prep_to(own-4, each-2)
+nsubj(own-4, his-3)
+root(ROOT-0, own-4)
+

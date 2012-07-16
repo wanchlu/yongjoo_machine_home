@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (INTJ (UH Ah) (, ,) (UH OK))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP get)
+      (NP (PRP it)))
+    (: ...)))
+
+dep(get-6, Ah-1)
+dep(Ah-1, OK-3)
+nsubj(get-6, I-5)
+root(ROOT-0, get-6)
+dobj(get-6, it-7)
+
+(ROOT
+  (PRN
+    (S
+      (NP (PRP you))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT the) (JJ last) (NNS word) (: ;)))))))
+    (-RRB- -RRB-)))
+
+nsubj(want-2, you-1)
+xsubj(have-4, you-1)
+root(ROOT-0, want-2)
+aux(have-4, to-3)
+xcomp(want-2, have-4)
+det(word-7, the-5)
+amod(word-7, last-6)
+dobj(have-4, word-7)
+

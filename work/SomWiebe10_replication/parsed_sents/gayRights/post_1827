@@ -1,0 +1,102 @@
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB believe)
+      (SBAR (IN that)
+        (S
+          (NP (NN morality))
+          (VP (VBZ is)
+            (ADJP (JJ open)
+              (PP (TO to)
+                (NP (NN interpretation))))))))
+    (. ?)))
+
+aux(believe-3, Do-1)
+nsubj(believe-3, you-2)
+root(ROOT-0, believe-3)
+complm(open-7, that-4)
+nsubj(open-7, morality-5)
+cop(open-7, is-6)
+ccomp(believe-3, open-7)
+prep_to(open-7, interpretation-9)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WDT whatever))
+        (S
+          (NP (DT a) (NN person))
+          (VP (VBZ deems)
+            (S
+              (NP (PRP it))
+              (VP (TO to)
+                (VP (VB be))))))))
+    (. ?)))
+
+nsubj(is-3, That-1)
+nsubj(is-3, it-2)
+root(ROOT-0, is-3)
+dep(deems-7, whatever-4)
+det(person-6, a-5)
+nsubj(deems-7, person-6)
+ccomp(is-3, deems-7)
+nsubj(be-10, it-8)
+aux(be-10, to-9)
+xcomp(deems-7, be-10)
+
+(ROOT
+  (S (CC Or)
+    (, ,)
+    (ADVP (RB rather))
+    (, ,)
+    (VP (VBZ is)
+      (S
+        (NP (PRP it))
+        (NP
+          (NP (DT a) (NN set))
+          (PP (IN of)
+            (NP
+              (NP (NNS laws))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ is)
+                    (NP
+                      (NP (VBN predetermined))
+                      (, ,)
+                      (ADVP (RB regardless)
+                        (PP (IN of)
+                          (FRAG
+                            (SBARQ
+                              (WHNP
+                                (WHADJP (WRB how) (JJ many))
+                                (NNS people))
+                              (ADVP (RB actually))))))
+                      (NP
+                        (NP (NNP adhere))
+                        (PP (TO to)
+                          (NP (PRP it)))))))))))))
+    (. ?)))
+
+cc(is-5, Or-1)
+advmod(is-5, rather-3)
+root(ROOT-0, is-5)
+nsubj(set-8, it-6)
+det(set-8, a-7)
+xcomp(is-5, set-8)
+prep_of(set-8, laws-10)
+nsubj(predetermined-13, laws-10)
+cop(predetermined-13, is-12)
+rcmod(laws-10, predetermined-13)
+advmod(predetermined-13, regardless-15)
+prep(regardless-15, of-16)
+advmod(many-18, how-17)
+amod(people-19, many-18)
+dep(of-16, people-19)
+advmod(people-19, actually-20)
+dep(predetermined-13, adhere-21)
+prep_to(adhere-21, it-23)
+

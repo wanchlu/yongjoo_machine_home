@@ -1,0 +1,94 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP
+        (PRN (, ,)
+          (ADVP (RB exactly))
+          (, ,))
+        (VBZ goes)
+        (SBAR
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB heaven)))))
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S (, ,)
+              (ADVP (RB exactly))
+              (, ,)
+              (VP (VBZ goes)
+                (PP (TO to)
+                  (NP (NN hell)))))))))
+    (. ?)))
+
+nsubj(goes-5, Who-1)
+dep(goes-5, exactly-3)
+root(ROOT-0, goes-5)
+aux(heaven-7, to-6)
+dep(goes-5, heaven-7)
+nsubj(goes-13, who-9)
+advmod(goes-13, exactly-11)
+dep(goes-5, goes-13)
+conj_and(heaven-7, goes-13)
+prep_to(goes-13, hell-15)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN bunch))
+        (PP (IN of)
+          (NP (NNS lists)))))
+    (. .)))
+
+expl('s-2, There-1)
+root(ROOT-0, 's-2)
+det(bunch-4, a-3)
+nsubj('s-2, bunch-4)
+prep_of(bunch-4, lists-6)
+
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBZ Does)
+          (S
+            (VP (VBG being)
+              (NP (DT a) (JJ Christian) (NN trump))))))
+      (NP (DT those))
+      (VP (VBZ lists)))
+    (, ,)
+    (CC and)
+    (SBARQ
+      (SBAR (IN if)
+        (SBAR (RB so)))
+      (, ,)
+      (WHADVP (WRB why))
+      (SQ (MD would)
+        (NP (NN anyone))
+        (ADVP (RB even))
+        (VP (VB talk)
+          (PP (IN about)
+            (NP (DT the) (NNS lists))))))
+    (. ?)))
+
+dep(lists-7, Does-1)
+cop(trump-5, being-2)
+det(trump-5, a-3)
+amod(trump-5, Christian-4)
+xcomp(Does-1, trump-5)
+nsubj(lists-7, those-6)
+root(ROOT-0, lists-7)
+dep(so-11, if-10)
+advcl(talk-17, so-11)
+advmod(talk-17, why-13)
+aux(talk-17, would-14)
+nsubj(talk-17, anyone-15)
+advmod(talk-17, even-16)
+conj_and(lists-7, talk-17)
+det(lists-20, the-19)
+prep_about(talk-17, lists-20)
+

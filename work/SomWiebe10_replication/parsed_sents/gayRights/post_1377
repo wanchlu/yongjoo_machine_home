@@ -1,0 +1,86 @@
+(ROOT
+  (SQ (VBZ Does)
+    (NP (NN anyone))
+    (ADVP (RB really))
+    (VP (VB think)
+      (SBAR
+        (S
+          (NP (PRP$ their) (NN family))
+          (VP (VBZ is)
+            (ADJP (RB absolutely) (JJ normal))))))
+    (. ?)))
+
+aux(think-4, Does-1)
+nsubj(think-4, anyone-2)
+advmod(think-4, really-3)
+root(ROOT-0, think-4)
+poss(family-6, their-5)
+nsubj(normal-9, family-6)
+cop(normal-9, is-7)
+advmod(normal-9, absolutely-8)
+ccomp(think-4, normal-9)
+
+(ROOT
+  (SQ (CC And)
+    (FRAG
+      (WHNP (WP what))
+      (PP (IN about)
+        (NP
+          (NP (PDT all) (DT the) (NNS children))
+          (VP (VBG being)
+            (VP (VBN raised)
+              (PP (IN by)
+                (NP
+                  (NP (JJ single) (NNS moms)
+                    (CC and)
+                    (NNS dads))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (VP (VBP 've)
+                        (VP
+                          (VP (VBN divorced))
+                          (, ,)
+                          (CC or)
+                          (VP
+                            (ADVP (RB never))
+                            (JJ married)))))))))))))
+    (. ?)))
+
+root(ROOT-0, And-1)
+dep(And-1, what-2)
+dep(what-2, about-3)
+predet(children-6, all-4)
+det(children-6, the-5)
+pobj(about-3, children-6)
+auxpass(raised-8, being-7)
+partmod(children-6, raised-8)
+amod(moms-11, single-10)
+agent(raised-8, moms-11)
+nsubj(divorced-16, moms-11)
+nsubj(married-20, moms-11)
+agent(raised-8, dads-13)
+conj_and(moms-11, dads-13)
+nsubj(divorced-16, dads-13)
+aux(divorced-16, 've-15)
+rcmod(moms-11, divorced-16)
+neg(married-20, never-19)
+rcmod(moms-11, married-20)
+conj_or(divorced-16, married-20)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP 're)
+      (VP (VBN teased)
+        (PP (IN in)
+          (NP (NN school)))
+        (ADVP (RB too))))
+    (. .)))
+
+nsubjpass(teased-3, They-1)
+auxpass(teased-3, 're-2)
+root(ROOT-0, teased-3)
+prep_in(teased-3, school-5)
+advmod(teased-3, too-6)
+

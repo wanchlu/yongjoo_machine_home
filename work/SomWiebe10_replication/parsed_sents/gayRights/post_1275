@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (NNS children))
+          (VP (VBP are)
+            (PP (IN among)
+              (NP (NNS children))))))
+      (NP (PRP they))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN mocked)))))
+    (: ...)
+    (S
+      (NP (PRP you))
+      (VP (VBP have)
+        (NP
+          (NP
+            (NP
+              (NP (DT a) (JJ single) (NN parent))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP mocked))
+                (-RRB- -RRB-))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP 're)
+                    (ADJP (RB too) (JJ tall)
+                      (PRN (-LRB- -LRB-)
+                        (VP (VBN mocked))
+                        (-RRB- -RRB-))
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP 're)
+                            (ADJP (RB too) (JJ short))))))))))
+            (PRN (-LRB- -LRB-)
+              (VP (VBN mocked))
+              (-RRB- -RRB-)))
+          (CC and)
+          (SBAR
+            (S
+              (VP
+                (ADVP (RP on)
+                  (CC and)
+                  (RP on))))))))
+    (. .)))
+
+mark(are-3, if-1)
+nsubj(are-3, children-2)
+advcl(mocked-9, are-3)
+prep_among(are-3, children-5)
+nsubjpass(mocked-9, they-6)
+aux(mocked-9, will-7)
+auxpass(mocked-9, be-8)
+root(ROOT-0, mocked-9)
+nsubj(have-12, you-11)
+parataxis(mocked-9, have-12)
+det(parent-15, a-13)
+amod(parent-15, single-14)
+dobj(have-12, parent-15)
+appos(parent-15, mocked-17)
+nsubj(tall-22, you-19)
+cop(tall-22, 're-20)
+advmod(tall-22, too-21)
+rcmod(parent-15, tall-22)
+dep(tall-22, mocked-24)
+nsubj(short-29, you-26)
+cop(short-29, 're-27)
+advmod(short-29, too-28)
+dep(tall-22, short-29)
+dep(parent-15, mocked-31)
+dobj(have-12, on-34)
+conj_and(parent-15, on-34)
+rcmod(parent-15, on-34)
+conj_and(parent-15, on-36)
+rcmod(parent-15, on-36)
+conj_and(on-34, on-36)
+

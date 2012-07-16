@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (ADVP (DT both))
+      (VP (VBG ducking)
+        (NP (DT the) (NN question))))
+    (. .)))
+
+nsubj(ducking-4, You-1)
+aux(ducking-4, are-2)
+advmod(ducking-4, both-3)
+root(ROOT-0, ducking-4)
+det(question-6, the-5)
+dobj(ducking-4, question-6)
+
+(ROOT
+  (NP
+    (NP (NN Ok))
+    (, ,)
+    (NP (CD one) (JJ true) (NN God))
+    (, ,)
+    (NP (NNP Yahweh))
+    (, ,)
+    (CC and)
+    (NP
+      (NP (DT a) (NN lot))
+      (PP (IN of)
+        (NP (JJ mythical) (NNS wantabes))))
+    (. .)))
+
+root(ROOT-0, Ok-1)
+num(God-5, one-3)
+amod(God-5, true-4)
+conj_and(Ok-1, God-5)
+conj_and(Ok-1, Yahweh-7)
+det(lot-11, a-10)
+conj_and(Ok-1, lot-11)
+amod(wantabes-14, mythical-13)
+prep_of(lot-11, wantabes-14)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP (NNP God)))
+    (. ?)))
+
+cc(is-3, But-1)
+attr(is-3, what-2)
+root(ROOT-0, is-3)
+nsubj(is-3, God-4)
+
+(ROOT
+  (SBARQ
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP we))
+        (VP (VBP say)
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBP believe)
+                (PP (IN in)
+                  (NP (NNP God)))))))))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP (PRP he)))
+    (. .)))
+
+advmod(say-3, When-1)
+nsubj(say-3, we-2)
+dep(is-10, say-3)
+nsubj(believe-5, we-4)
+ccomp(say-3, believe-5)
+prep_in(believe-5, God-7)
+attr(is-10, what-9)
+root(ROOT-0, is-10)
+nsubj(is-10, he-11)
+

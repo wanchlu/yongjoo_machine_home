@@ -1,0 +1,55 @@
+(ROOT
+  (NP
+    (NP (JJ Hey) (NNS thanks))
+    (PP (IN for)
+      (S
+        (VP (VBG looking)
+          (PP (IN through)
+            (NP (PRP it))))))
+    (. .)))
+
+amod(thanks-2, Hey-1)
+root(ROOT-0, thanks-2)
+prepc_for(thanks-2, looking-4)
+prep_through(looking-4, it-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ good)
+              (S
+                (VP (TO to)
+                  (VP (VB find)
+                    (NP (NN something))
+                    (S
+                      (VP (TO to)
+                        (VP (VB laugh)
+                          (PP (IN at)
+                            (NP (DT every)
+                              (NP (RB once))
+                              (CC and)
+                              (NP (DT a) (NN while)))))))))))))))
+    (. .)))
+
+nsubj(guess-2, I-1)
+root(ROOT-0, guess-2)
+nsubj(good-5, it-3)
+cop(good-5, 's-4)
+ccomp(guess-2, good-5)
+aux(find-7, to-6)
+xcomp(good-5, find-7)
+dobj(find-7, something-8)
+aux(laugh-10, to-9)
+xcomp(find-7, laugh-10)
+prep(laugh-10, at-11)
+dep(once-13, every-12)
+pobj(at-11, once-13)
+det(while-16, a-15)
+pobj(at-11, while-16)
+conj_and(once-13, while-16)
+

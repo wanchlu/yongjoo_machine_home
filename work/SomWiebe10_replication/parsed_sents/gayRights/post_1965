@@ -1,0 +1,95 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ Wrong))
+    (. .)))
+
+root(ROOT-0, Wrong-1)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (VP (VBG changing)
+        (NP (PRP$ your) (NN tune))))
+    (. .)))
+
+nsubj(changing-3, You-1)
+aux(changing-3, are-2)
+root(ROOT-0, changing-3)
+poss(tune-5, your-4)
+dobj(changing-3, tune-5)
+
+(ROOT
+  (FRAG
+    (NP (CD Choose) (CD one))
+    (: :)
+    (S
+      (NP
+        (NP
+          (NP (NNP Jefferson) (POS 's))
+          (NN rejection))
+        (PP (IN of)
+          (NP
+            (NP (NNP Trinity))
+            (CC or)
+            (NP (DT all) (NNS religions)))))
+      (VP (VBP are)
+        (ADJP (JJ cool))))
+    (. .)))
+
+num(one-2, Choose-1)
+root(ROOT-0, one-2)
+poss(rejection-6, Jefferson-4)
+nsubj(cool-13, rejection-6)
+prep_of(rejection-6, Trinity-8)
+det(religions-11, all-10)
+prep_of(rejection-6, religions-11)
+conj_or(Trinity-8, religions-11)
+cop(cool-13, are-12)
+dep(one-2, cool-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN Declaration))
+      (PP (IN of)
+        (NP (NN Independence))))
+    (VP (MD ca) (RB n't)
+      (VP (VB go)
+        (NP (DT both) (NNS ways))))
+    (. .)))
+
+det(Declaration-2, The-1)
+nsubj(go-7, Declaration-2)
+prep_of(Declaration-2, Independence-4)
+aux(go-7, ca-5)
+neg(go-7, n't-6)
+root(ROOT-0, go-7)
+det(ways-9, both-8)
+dobj(go-7, ways-9)
+
+(ROOT
+  (S
+    (FRAG
+      (INTJ (UH No)))
+    (: ;)
+    (S
+      (NP (DT the) (NNP First) (NNP Amendment))
+      (VP (VBZ refers)
+        (PP (TO to)
+          (NP
+            (NP (NNP Congress))
+            (, ,) (RB not)
+            (NP (DT the) (NN state))))))
+    (. .)))
+
+dep(refers-6, No-1)
+det(Amendment-5, the-3)
+nn(Amendment-5, First-4)
+nsubj(refers-6, Amendment-5)
+root(ROOT-0, refers-6)
+prep_to(refers-6, Congress-8)
+neg(Congress-8, not-10)
+det(state-12, the-11)
+dep(Congress-8, state-12)
+

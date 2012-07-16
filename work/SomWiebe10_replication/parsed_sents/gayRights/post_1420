@@ -1,0 +1,90 @@
+(ROOT
+  (NP (NNP Hi) (NNP LM) (. !)))
+
+nn(LM-2, Hi-1)
+root(ROOT-0, LM-2)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ allows)
+        (S
+          (NP (PRP you))
+          (VP (TO to)
+            (VP (VB assume)
+              (SBAR (IN that)
+                (S
+                  (NP (JJ gay) (NNS people))
+                  (VP (VBP do) (RB n't)
+                    (VP (VB have)
+                      (NP
+                        (NP (DT a) (JJ parental) (NN bone))
+                        (PP (IN in)
+                          (NP (PRP$ their) (NN body)))))))))))))
+    (. ?)))
+
+nsubj(allows-2, What-1)
+root(ROOT-0, allows-2)
+nsubj(assume-5, you-3)
+aux(assume-5, to-4)
+xcomp(allows-2, assume-5)
+complm(have-11, that-6)
+amod(people-8, gay-7)
+nsubj(have-11, people-8)
+aux(have-11, do-9)
+neg(have-11, n't-10)
+ccomp(assume-5, have-11)
+det(bone-14, a-12)
+amod(bone-14, parental-13)
+dobj(have-11, bone-14)
+poss(body-17, their-16)
+prep_in(bone-14, body-17)
+
+(ROOT
+  (S
+    (NP (JJ Many) (JJ gay) (NNS people))
+    (VP (VBP want)
+      (NP (NNS children)))
+    (. .)))
+
+amod(people-3, Many-1)
+amod(people-3, gay-2)
+nsubj(want-4, people-3)
+root(ROOT-0, want-4)
+dobj(want-4, children-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT That) (NN gene)
+        (CC or)
+        (NN set))
+      (PP (IN of)
+        (NP (NN brain) (NNS cells))))
+    (VP (VBD were)
+      (ADVP (RB surely) (RB there))
+      (PP (IN at)
+        (NP (NN birth)))
+      (SBAR (RB even) (IN though)
+        (S
+          (NP (NNS others))
+          (VP (VBD were) (RB not)))))
+    (. !)))
+
+det(gene-2, That-1)
+nsubj(were-8, gene-2)
+conj_or(gene-2, set-4)
+nsubj(were-8, set-4)
+nn(cells-7, brain-6)
+prep_of(gene-2, cells-7)
+root(ROOT-0, were-8)
+advmod(there-10, surely-9)
+advmod(were-8, there-10)
+prep_at(were-8, birth-12)
+advmod(were-16, even-13)
+dep(were-16, though-14)
+nsubj(were-16, others-15)
+ccomp(were-8, were-16)
+neg(were-16, not-17)
+

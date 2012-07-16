@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP (NNS Stereotypes))
+    (VP (VBP are)
+      (NP (NNS statistics)))
+    (. .)))
+
+nsubj(statistics-3, Stereotypes-1)
+cop(statistics-3, are-2)
+root(ROOT-0, statistics-3)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBZ wanna)
+      (VP
+        (VP (VB ignore)
+          (NP (NNS stereotypes)))
+        (, ,)
+        (VP
+          (ADVP (RB then))
+          (VB go)
+          (ADVP (RB ahead)))
+        (CC and)
+        (VP (VB ignore)
+          (NP (NNS statistics))
+          (ADVP (RB too)))))
+    (. .)))
+
+nsubj(wanna-2, You-1)
+root(ROOT-0, wanna-2)
+dep(wanna-2, ignore-3)
+dobj(ignore-3, stereotypes-4)
+advmod(go-7, then-6)
+dep(wanna-2, go-7)
+conj_and(ignore-3, go-7)
+advmod(go-7, ahead-8)
+dep(wanna-2, ignore-10)
+conj_and(ignore-3, ignore-10)
+dobj(ignore-10, statistics-11)
+advmod(ignore-10, too-12)
+

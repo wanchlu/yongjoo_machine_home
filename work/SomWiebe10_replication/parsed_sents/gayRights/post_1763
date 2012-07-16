@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (NP (DT Every) (NN child))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN raised)
+          (PP (IN by)
+            (NP (JJ heterosexual) (NNS parents))))))
+    (. .)))
+
+det(child-2, Every-1)
+nsubjpass(raised-5, child-2)
+aux(raised-5, should-3)
+auxpass(raised-5, be-4)
+root(ROOT-0, raised-5)
+amod(parents-8, heterosexual-7)
+agent(raised-5, parents-8)
+
+(ROOT
+  (S
+    (S
+      (NP (JJ Gay) (NNS couples))
+      (VP (MD should) (RB n't)
+        (VP (VB adopt))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are) (RB not)
+      (NP (NNS parents)))
+    (. .)))
+
+amod(couples-2, Gay-1)
+nsubj(adopt-5, couples-2)
+aux(adopt-5, should-3)
+neg(adopt-5, n't-4)
+ccomp(parents-10, adopt-5)
+nsubj(parents-10, they-7)
+cop(parents-10, are-8)
+neg(parents-10, not-9)
+root(ROOT-0, parents-10)
+

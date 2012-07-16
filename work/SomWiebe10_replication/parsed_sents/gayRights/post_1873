@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADJP (JJ fine)))
+    (. .)))
+
+nsubj(fine-3, That-1)
+cop(fine-3, 's-2)
+root(ROOT-0, fine-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP support)
+      (NP (DT that)))
+    (. .)))
+
+nsubj(support-2, I-1)
+root(ROOT-0, support-2)
+dobj(support-2, that-3)
+
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Here))
+      (IN in)
+      (NP (NNP California)))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (JJ prospective) (NN bill))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD would)
+              (VP (VB do)
+                (NP (RB just) (DT that))))))))
+    (. .)))
+
+advmod(have-6, Here-1)
+prep_in(have-6, California-3)
+nsubj(have-6, we-5)
+root(ROOT-0, have-6)
+det(bill-9, a-7)
+amod(bill-9, prospective-8)
+dobj(have-6, bill-9)
+nsubj(do-12, bill-9)
+aux(do-12, would-11)
+rcmod(bill-9, do-12)
+advmod(that-14, just-13)
+dobj(do-12, that-14)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (ADVP (RB honestly))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (NN marriage))
+            (VP (VBZ is)
+              (NP (DT a) (JJ religious) (NN thing)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NN religion))
+      (VP (VBZ is)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN eye))
+            (PP (IN of)
+              (NP (DT the) (NN beholder)))))))
+    (. .)))
+
+nsubj(think-3, I-1)
+advmod(think-3, honestly-2)
+root(ROOT-0, think-3)
+nsubj(thing-8, marriage-4)
+cop(thing-8, is-5)
+det(thing-8, a-6)
+amod(thing-8, religious-7)
+ccomp(think-3, thing-8)
+nsubj(is-12, religion-11)
+conj_but(think-3, is-12)
+det(eye-15, the-14)
+prep_in(is-12, eye-15)
+det(beholder-18, the-17)
+prep_of(eye-15, beholder-18)
+

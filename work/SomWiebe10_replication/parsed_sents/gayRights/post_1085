@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (NP (DT The) (NN movement)
+      (S
+        (VP (TO to)
+          (VP (VB pass)
+            (NP (DT the) (NNP ERA))))))
+    (VP (VBD was)
+      (NP (DT a) (NN fraud)))
+    (. .)))
+
+det(movement-2, The-1)
+nsubj(fraud-9, movement-2)
+aux(pass-4, to-3)
+infmod(movement-2, pass-4)
+det(ERA-6, the-5)
+dobj(pass-4, ERA-6)
+cop(fraud-9, was-7)
+det(fraud-9, a-8)
+root(ROOT-0, fraud-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBD did)))))
+    (VP (VBD was)
+      (VP
+        (VP (VBN collect)
+          (NP (NN money))
+          (PP (IN for)
+            (NP
+              (NP (NNS decades))
+              (VP (VBG trying)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (NP
+                        (NP (NNS women) (NNS rights))
+                        (SBAR
+                          (S
+                            (NP (PRP they))
+                            (ADVP (RB already))
+                            (VP (VBD had))))))))))))
+        (CC and)
+        (VP (VBN accomplished)
+          (NP (NN nothing)))))
+    (. .)))
+
+dobj(did-3, All-1)
+nsubjpass(collect-5, All-1)
+nsubjpass(accomplished-18, All-1)
+nsubj(did-3, it-2)
+rcmod(All-1, did-3)
+auxpass(collect-5, was-4)
+root(ROOT-0, collect-5)
+dobj(collect-5, money-6)
+prep_for(collect-5, decades-8)
+xsubj(get-11, decades-8)
+partmod(decades-8, trying-9)
+aux(get-11, to-10)
+xcomp(trying-9, get-11)
+nn(rights-13, women-12)
+dobj(get-11, rights-13)
+dobj(had-16, rights-13)
+nsubj(had-16, they-14)
+advmod(had-16, already-15)
+rcmod(rights-13, had-16)
+conj_and(collect-5, accomplished-18)
+dobj(accomplished-18, nothing-19)
+

@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (S
+      (NP (NN Ok) (NNS people))
+      (VP (VBP think)
+        (PP (IN about)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP you))
+              (ADVP (RB individually))
+              (VP (VBP do)
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ is)
+                      (NP
+                        (NP (DT an) (JJ automatic) (NN action))
+                        (CC and)
+                        (NP (DT the) (NNS actions))))))))))))
+    (NP (PRP you))
+    (VP (VBD chose)
+      (S
+        (VP (TO to)
+          (VP (VB take)))))
+    (. .)))
+
+nn(people-2, Ok-1)
+nsubj(think-3, people-2)
+dep(chose-19, think-3)
+dep(do-8, what-5)
+dobj(action-14, what-5)
+nsubj(do-8, you-6)
+advmod(do-8, individually-7)
+prepc_about(think-3, do-8)
+mark(action-14, because-9)
+nsubj(action-14, it-10)
+cop(action-14, is-11)
+det(action-14, an-12)
+amod(action-14, automatic-13)
+advcl(do-8, action-14)
+det(actions-17, the-16)
+advcl(do-8, actions-17)
+conj_and(action-14, actions-17)
+nsubj(chose-19, you-18)
+xsubj(take-21, you-18)
+root(ROOT-0, chose-19)
+aux(take-21, to-20)
+xcomp(chose-19, take-21)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (RB as) (JJ simple)
+        (PP (IN as)
+          (NP (DT that)))))
+    (. .)))
+
+nsubj(simple-4, It-1)
+cop(simple-4, is-2)
+advmod(simple-4, as-3)
+root(ROOT-0, simple-4)
+prep_as(simple-4, that-6)
+

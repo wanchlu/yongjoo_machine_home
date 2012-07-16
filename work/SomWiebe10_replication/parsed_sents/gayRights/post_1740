@@ -1,0 +1,97 @@
+(ROOT
+  (SQ
+    (VP (VB OH)
+      (NP (JJ good) (NNS grief))
+      (SBAR
+        (WHADVP (WRB How) (JJ close))
+        (S
+          (VP (VBD minded)
+            (SBAR
+              (SINV (MD can)
+                (NP (CD one) (NN nutter))
+                (VP (VB be))))))))
+    (. ?)))
+
+root(ROOT-0, OH-1)
+amod(grief-3, good-2)
+dobj(OH-1, grief-3)
+advmod(close-5, How-4)
+advmod(minded-6, close-5)
+dep(OH-1, minded-6)
+aux(be-10, can-7)
+num(nutter-9, one-8)
+nsubj(be-10, nutter-9)
+advcl(minded-6, be-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Someone))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ chooses)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ gay)))))))))
+    (VP (VBZ does)
+      (NP (PRP it))
+      (PP (IN on)
+        (NP
+          (NP (PRP$ their) (JJ own) (NN one) (NN way))
+          (CC or)
+          (NP (DT the) (JJ other)))))
+    (. .)))
+
+nsubj(chooses-3, Someone-1)
+nsubj(does-7, Someone-1)
+rcmod(Someone-1, chooses-3)
+aux(gay-6, to-4)
+cop(gay-6, be-5)
+xcomp(chooses-3, gay-6)
+root(ROOT-0, does-7)
+dobj(does-7, it-8)
+poss(way-13, their-10)
+amod(way-13, own-11)
+nn(way-13, one-12)
+prep_on(does-7, way-13)
+det(other-16, the-15)
+prep_on(does-7, other-16)
+conj_or(way-13, other-16)
+
+(ROOT
+  (S
+    (NP (PRP$ Its))
+    (VP (RB not)
+      (S
+        (NP
+          (NP (PRP$ your) (NN business))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (NP (NN someone))
+              (VP
+                (VP (VBZ finds)
+                  (ADJP (JJ attractive)))
+                (CC or)
+                (VP (VBZ falls)
+                  (PP (IN in)
+                    (NP (NN love)))
+                  (PP (IN with)))))))))
+    (. .)))
+
+nsubj(not-2, Its-1)
+root(ROOT-0, not-2)
+poss(business-4, your-3)
+dep(not-2, business-4)
+rel(finds-7, who-5)
+nsubj(finds-7, someone-6)
+nsubj(falls-10, someone-6)
+rcmod(business-4, finds-7)
+acomp(finds-7, attractive-8)
+rcmod(business-4, falls-10)
+conj_or(finds-7, falls-10)
+prep_in(falls-10, love-12)
+prep(falls-10, with-13)
+

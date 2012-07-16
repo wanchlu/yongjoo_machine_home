@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (NP (DT an) (NN atheist))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ my) (NN husband))
+      (ADJP (JJ agnostic)))
+    (. .)))
+
+nsubj(atheist-4, I-1)
+nsubj(agnostic-9, I-1)
+cop(atheist-4, 'm-2)
+det(atheist-4, an-3)
+root(ROOT-0, atheist-4)
+poss(husband-8, my-7)
+dep(agnostic-9, husband-8)
+conj_and(atheist-4, agnostic-9)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBD did) (RB not)
+        (VP (VB get)
+          (VP (VBN married)
+            (PP
+              (PP (IN for)
+                (NP (JJ religious) (NNS reasons)))
+              (CC or)
+              (PP (IN in)
+                (NP (DT a) (NN church))))))))
+    (, ,)
+    (CC yet)
+    (S
+      (NP (PRP$ our) (NN union))
+      (VP (VBZ is)
+        (ADVP (RB still))
+        (VP (VBN recognized)
+          (PP (IN by)
+            (NP (DT the) (NN state))))))
+    (. .)))
+
+nsubjpass(married-5, We-1)
+nsubjpass(married-5', We-1)
+aux(married-5, did-2)
+neg(married-5, not-3)
+auxpass(married-5, get-4)
+root(ROOT-0, married-5)
+conj_or(married-5, married-5')
+amod(reasons-8, religious-7)
+prep_for(married-5, reasons-8)
+det(church-12, a-11)
+prep_in(married-5', church-12)
+poss(union-16, our-15)
+nsubjpass(recognized-19, union-16)
+auxpass(recognized-19, is-17)
+advmod(recognized-19, still-18)
+conj_yet(married-5, recognized-19)
+det(state-22, the-21)
+agent(recognized-19, state-22)
+
+(ROOT
+  (NP
+    (NP (NN End))
+    (PP (IN of)
+      (NP (NN story)))
+    (. .)))
+
+root(ROOT-0, End-1)
+prep_of(End-1, story-3)
+

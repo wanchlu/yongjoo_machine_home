@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (NP (JJ Gays) (JJ military) (NN service))
+    (VP (VBZ is) (RB not)
+      (VP
+        (ADVP (RB widely))
+        (VBN accepted)
+        (PP (IN in)
+          (NP (NNP US) (NN society)))))
+    (. .)))
+
+amod(service-3, Gays-1)
+amod(service-3, military-2)
+nsubjpass(accepted-7, service-3)
+auxpass(accepted-7, is-4)
+neg(accepted-7, not-5)
+advmod(accepted-7, widely-6)
+root(ROOT-0, accepted-7)
+nn(society-10, US-9)
+prep_in(accepted-7, society-10)
+
+(ROOT
+  (S
+    (NP (DT A) (NN statement))
+    (VP (VBD issued)
+      (PP (IN by)
+        (NP
+          (NP (DT the) (JJ retired) (NNS officers))
+          (PP (IN in)
+            (NP
+              (NP (NNP March))
+              (, ,)
+              (NP (CD 2009))))))
+      (: :) (`` ``)
+      (S
+        (NP (PRP We))
+        (VP (VB see)
+          (SBAR
+            (S
+              (NP
+                (NP (DT a) (JJ great) (JJ many) (NNS downsides))
+                (PP (TO to)
+                  (S
+                    (VP (VBG attempting)
+                      (S
+                        (VP (TO to)
+                          (VP (VB enforce)
+                            (PP (IN on)
+                              (NP
+                                (NP (DT the) (JJ military) (NN something))
+                                (SBAR
+                                  (S
+                                    (NP (PRP I))
+                                    (VP (VBP do) (RB n't)
+                                      (VP (VB know))))))))))))))
+              (VP (VBZ is)
+                (ADVP (RB widely))
+                (VP (VBN accepted)
+                  (PP (IN in)
+                    (NP (JJ American) (NN society))))))))))
+    (. .)))
+
+det(statement-2, A-1)
+nsubj(issued-3, statement-2)
+root(ROOT-0, issued-3)
+det(officers-7, the-5)
+amod(officers-7, retired-6)
+prep_by(issued-3, officers-7)
+prep_in(officers-7, March-9)
+appos(March-9, 2009-11)
+nsubj(see-15, We-14)
+ccomp(issued-3, see-15)
+det(downsides-19, a-16)
+amod(downsides-19, great-17)
+amod(downsides-19, many-18)
+nsubjpass(accepted-34, downsides-19)
+prepc_to(downsides-19, attempting-21)
+aux(enforce-23, to-22)
+xcomp(attempting-21, enforce-23)
+det(something-27, the-25)
+amod(something-27, military-26)
+prep_on(enforce-23, something-27)
+dobj(know-31, something-27)
+nsubj(know-31, I-28)
+aux(know-31, do-29)
+neg(know-31, n't-30)
+rcmod(something-27, know-31)
+auxpass(accepted-34, is-32)
+advmod(accepted-34, widely-33)
+ccomp(see-15, accepted-34)
+amod(society-37, American-36)
+prep_in(accepted-34, society-37)
+

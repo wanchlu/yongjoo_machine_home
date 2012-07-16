@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ slippery) (NN slope) (NN argument))
+      (VP (VBZ comes)
+        (PRT (RP in))
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP use)
+              (NP (DT a) (JJ 14th) (NNP Amendment) (NN argument)))))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is) (RB n't)))
+    (. .)))
+
+det(argument-4, The-1)
+amod(argument-4, slippery-2)
+nn(argument-4, slope-3)
+nsubj(comes-5, argument-4)
+root(ROOT-0, comes-5)
+prt(comes-5, in-6)
+mark(use-9, if-7)
+nsubj(use-9, you-8)
+advcl(comes-5, use-9)
+det(argument-13, a-10)
+amod(argument-13, 14th-11)
+nn(argument-13, Amendment-12)
+dobj(use-9, argument-13)
+nsubj(is-16, it-15)
+conj_but(comes-5, is-16)
+neg(is-16, n't-17)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NNP Full) (NNP Faith))
+        (CC and)
+        (NP (NNP Credit) (NN argument))))
+    (. .)))
+
+nsubj(Faith-5, It-1)
+cop(Faith-5, 's-2)
+det(Faith-5, a-3)
+nn(Faith-5, Full-4)
+root(ROOT-0, Faith-5)
+nn(argument-8, Credit-7)
+conj_and(Faith-5, argument-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN marriage))
+      (PP (IN from)
+        (NP (CD one) (NN state))))
+    (VP (VBZ HAS)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN recognized)
+              (PP (IN in)
+                (NP (PDT all) (DT the) (NNS states))))))))
+    (. .)))
+
+det(marriage-2, A-1)
+nsubj(HAS-6, marriage-2)
+xsubj(recognized-9, marriage-2)
+num(state-5, one-4)
+prep_from(marriage-2, state-5)
+root(ROOT-0, HAS-6)
+aux(recognized-9, to-7)
+auxpass(recognized-9, be-8)
+xcomp(HAS-6, recognized-9)
+predet(states-13, all-11)
+det(states-13, the-12)
+prep_in(recognized-9, states-13)
+
+(ROOT
+  (S
+    (SBAR (IN Once)
+      (S
+        (NP (NNP Iowa))
+        (VP (VBD legalized)
+          (NP (JJ gay) (NN marriage)))))
+    (NP
+      (NP (DT the) (NN argument))
+      (PP (IN against)
+        (NP (JJ gay) (NN marriage))))
+    (VP (VBD became)
+      (NP (NN moot)))
+    (. !)))
+
+mark(legalized-3, Once-1)
+nsubj(legalized-3, Iowa-2)
+advcl(moot-12, legalized-3)
+amod(marriage-5, gay-4)
+dobj(legalized-3, marriage-5)
+det(argument-7, the-6)
+nsubj(moot-12, argument-7)
+amod(marriage-10, gay-9)
+prep_against(argument-7, marriage-10)
+cop(moot-12, became-11)
+root(ROOT-0, moot-12)
+

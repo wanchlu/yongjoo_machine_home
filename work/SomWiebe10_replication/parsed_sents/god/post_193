@@ -1,0 +1,211 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ does)
+      (NP (PRP it))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (RB so) (JJ simple)))))))
+    (. ?)))
+
+advmod(have-4, Why-1)
+aux(have-4, does-2)
+nsubj(have-4, it-3)
+xsubj(simple-8, it-3)
+root(ROOT-0, have-4)
+aux(simple-8, to-5)
+cop(simple-8, be-6)
+advmod(simple-8, so-7)
+xcomp(have-4, simple-8)
+
+(ROOT
+  (SBAR (IN Because)
+    (S
+      (NP (PRP you))
+      (VP (VBP want)
+        (S
+          (NP (PRP it))
+          (VP (TO to)
+            (VP (VB be))))))
+    (: ...)))
+
+mark(want-3, Because-1)
+nsubj(want-3, you-2)
+root(ROOT-0, want-3)
+nsubj(be-6, it-4)
+aux(be-6, to-5)
+xcomp(want-3, be-6)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP
+              (NP (NNS lots))
+              (PP (IN of)
+                (NP (JJ religious) (NNS people))))
+            (VP (VBP are)
+              (PP (IN like)
+                (NP (DT that))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP want)
+      (NP (DT a) (JJ quick) (, ,) (JJ succinct) (, ,) (JJ all-encompassing) (NN answer))
+      (PP (TO to)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP we))
+            (VP (VBD came)
+              (PP (IN from))
+              (, ,)
+              (SBAR
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBP are)
+                      (NP
+                        (NP (PRP we))
+                        (VP (VBG doing)
+                          (ADVP (RB here)))))))
+                (, ,)
+                (CC and)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ happens)
+                      (PP (TO to)
+                        (NP (PRP us)))
+                      (SBAR (IN after)
+                        (S
+                          (NP (PRP we))
+                          (VP (VBP die)))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+ccomp(want-12, think-2)
+nsubj(are-7, lots-3)
+amod(people-6, religious-5)
+prep_of(lots-3, people-6)
+ccomp(think-2, are-7)
+prep_like(are-7, that-9)
+nsubj(want-12, they-11)
+root(ROOT-0, want-12)
+det(answer-19, a-13)
+amod(answer-19, quick-14)
+amod(answer-19, succinct-16)
+amod(answer-19, all-encompassing-18)
+dobj(want-12, answer-19)
+advmod(came-23, where-21)
+nsubj(came-23, we-22)
+prepc_to(want-12, came-23)
+prep(came-23, from-24)
+nsubj(we-28, what-26)
+cop(we-28, are-27)
+dep(came-23, we-28)
+partmod(we-28, doing-29)
+advmod(doing-29, here-30)
+nsubj(happens-34, what-33)
+dep(came-23, happens-34)
+conj_and(we-28, happens-34)
+prep_to(happens-34, us-36)
+mark(die-39, after-37)
+nsubj(die-39, we-38)
+advcl(happens-34, die-39)
+
+(ROOT
+  (S
+    (NP (JJ Sorry) (NNS things))
+    (VP (MD ca) (RB n't)
+      (VP (VB be)
+        (VP (VBN explained)
+          (ADVP (RB so) (RB easily))
+          (PP (IN for)
+            (NP (PRP you))))))
+    (. .)))
+
+amod(things-2, Sorry-1)
+nsubjpass(explained-6, things-2)
+aux(explained-6, ca-3)
+neg(explained-6, n't-4)
+auxpass(explained-6, be-5)
+root(ROOT-0, explained-6)
+advmod(easily-8, so-7)
+advmod(explained-6, easily-8)
+prep_for(explained-6, you-10)
+
+(ROOT
+  (S
+    (VP (VB Try)
+      (S
+        (VP
+          (VP (VBG opening)
+            (NP (DT a) (NN science) (NN book)))
+          (CC and)
+          (ADVP (RB actually))
+          (VP (VBG learning)
+            (PP (IN about)
+              (SBAR
+                (WHNP (WP what) (JJ few) (NNS things))
+                (S
+                  (NP (PRP we))
+                  (VP (VBP have)
+                    (VP (VBN managed)
+                      (S
+                        (VP (TO to)
+                          (VP (VB understand)
+                            (PP (IN about)
+                              (NP (DT the) (NN universe)))))))))))))))
+    (. .)))
+
+root(ROOT-0, Try-1)
+ccomp(Try-1, opening-2)
+det(book-5, a-3)
+nn(book-5, science-4)
+dobj(opening-2, book-5)
+ccomp(Try-1, actually-7)
+advmod(opening-2, actually-7)
+conj_and(opening-2, actually-7)
+ccomp(Try-1, learning-8)
+conj_and(opening-2, learning-8)
+det(things-12, what-10)
+amod(things-12, few-11)
+dobj(managed-15, things-12)
+nsubj(managed-15, we-13)
+xsubj(understand-17, we-13)
+aux(managed-15, have-14)
+prepc_about(learning-8, managed-15)
+aux(understand-17, to-16)
+xcomp(managed-15, understand-17)
+det(universe-20, the-19)
+prep_about(understand-17, universe-20)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (ADVP (RB just))
+              (VP (VBG scratching)
+                (NP (DT the) (NN surface))))))))
+    (. .)))
+
+nsubj(sure-3, I-1)
+cop(sure-3, 'm-2)
+root(ROOT-0, sure-3)
+nsubj(scratching-7, it-4)
+aux(scratching-7, 's-5)
+advmod(scratching-7, just-6)
+dep(sure-3, scratching-7)
+det(surface-9, the-8)
+dobj(scratching-7, surface-9)
+

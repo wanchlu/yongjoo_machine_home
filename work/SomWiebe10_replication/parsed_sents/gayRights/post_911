@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN church))
+      (VP (VBZ is) (RB not)
+        (NP (DT a) (JJ wealthy) (NNP Hollywood) (NN entity))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (VP (VBZ supports)
+        (VP (VB prop)
+          (NP (CD 8)))))
+    (. .)))
+
+det(church-2, The-1)
+nsubj(entity-8, church-2)
+cop(entity-8, is-3)
+neg(entity-8, not-4)
+det(entity-8, a-5)
+amod(entity-8, wealthy-6)
+nn(entity-8, Hollywood-7)
+root(ROOT-0, entity-8)
+nsubj(supports-11, it-10)
+parataxis(entity-8, supports-11)
+xcomp(supports-11, prop-12)
+dobj(prop-12, 8-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (VP (VBN supported)
+        (NP
+          (NP (NN marriage))
+          (PP (IN between)
+            (NP
+              (NP (CD one) (NN man))
+              (CC and)
+              (NP (CD one) (NN woman)))))
+        (PP (IN for)
+          (NP (DT an) (JJ astonishing)
+            (QP (JJ long) (CD 112))
+            (NNS YEARS)))))
+    (. !)))
+
+nsubj(supported-3, It-1)
+aux(supported-3, has-2)
+root(ROOT-0, supported-3)
+dobj(supported-3, marriage-4)
+num(man-7, one-6)
+prep_between(marriage-4, man-7)
+num(woman-10, one-9)
+prep_between(marriage-4, woman-10)
+conj_and(man-7, woman-10)
+det(YEARS-16, an-12)
+amod(YEARS-16, astonishing-13)
+quantmod(112-15, long-14)
+num(YEARS-16, 112-15)
+prep_for(supported-3, YEARS-16)
+
+(ROOT
+  (S
+    (PP (IN Before)
+      (NP (DT that) (NN church)))
+    (NP (NN doctrine))
+    (VP (VBD supported)
+      (ADJP (JJ POLYGAMY)))
+    (. .)))
+
+det(church-3, that-2)
+prep_before(supported-5, church-3)
+nsubj(supported-5, doctrine-4)
+root(ROOT-0, supported-5)
+acomp(supported-5, POLYGAMY-6)
+
+(ROOT
+  (S
+    (SBAR (IN That)
+      (S
+        (NP (DT the) (NN church))
+        (VP (MD should)
+          (VP (VB try)
+            (S
+              (VP (TO to)
+                (VP (VB force)
+                  (NP (PRP$ its) (JJ new) (NN philosophy))
+                  (PP (IN on)
+                    (NP (NNS others))))))))))
+    (VP (VBZ is)
+      (NP (DT a) (NN puzzlement)))
+    (. .)))
+
+complm(try-5, That-1)
+det(church-3, the-2)
+nsubj(try-5, church-3)
+xsubj(force-7, church-3)
+aux(try-5, should-4)
+csubj(puzzlement-15, try-5)
+aux(force-7, to-6)
+xcomp(try-5, force-7)
+poss(philosophy-10, its-8)
+amod(philosophy-10, new-9)
+dobj(force-7, philosophy-10)
+prep_on(force-7, others-12)
+cop(puzzlement-15, is-13)
+det(puzzlement-15, a-14)
+root(ROOT-0, puzzlement-15)
+

@@ -1,0 +1,152 @@
+(ROOT
+  (FRAG
+    (ADVP (RB exactly))
+    (. .)))
+
+root(ROOT-0, exactly-1)
+
+(ROOT
+  (S
+    (NP (NNS Molecules))
+    (VP (VBP do) (RB not)
+      (ADVP (RB randomly))
+      (VP (VB fit)
+        (S
+          (ADVP (RB together))
+          (NP (PRP they))
+          (VP (VBP have)
+            (NP
+              (NP
+                (NP (DT a) (JJ certain) (NN shape))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ predisposes)
+                      (S
+                        (NP (PRP them))
+                        (VP (TO to)
+                          (VP (VB fitting)
+                            (PP (TO to)
+                              (NP
+                                (NP (DT some))
+                                (CONJP (CC but)
+                                  (RB not))
+                                (NP (NNS others))))
+                            (ADVP (RB then)))))
+                      (SBAR
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP build)
+                            (PRT (RP up))
+                            (NP (JJR bigger) (NNS forms))
+                            (SBAR (IN that)
+                              (S
+                                (NP (NN un-randomly))
+                                (VP (VBP fit)
+                                  (PP (TO to)
+                                    (NP (JJ other) (NN molecule) (NNS clusters)))))))))))))
+              (CC and)
+              (ADVP (RB so) (RB on)))))))
+    (. .)))
+
+nsubj(fit-5, Molecules-1)
+aux(fit-5, do-2)
+neg(fit-5, not-3)
+advmod(fit-5, randomly-4)
+root(ROOT-0, fit-5)
+advmod(have-8, together-6)
+nsubj(have-8, they-7)
+ccomp(fit-5, have-8)
+det(shape-11, a-9)
+amod(shape-11, certain-10)
+dobj(have-8, shape-11)
+nsubj(predisposes-13, shape-11)
+rcmod(shape-11, predisposes-13)
+nsubj(fitting-16, them-14)
+aux(fitting-16, to-15)
+xcomp(predisposes-13, fitting-16)
+prep_to(fitting-16, some-18)
+prep_to(fitting-16, others-21)
+conj_negcc(some-18, others-21)
+advmod(fitting-16, then-22)
+nsubj(build-24, they-23)
+ccomp(predisposes-13, build-24)
+prt(build-24, up-25)
+amod(forms-27, bigger-26)
+dobj(build-24, forms-27)
+complm(fit-30, that-28)
+nsubj(fit-30, un-randomly-29)
+ccomp(build-24, fit-30)
+amod(clusters-34, other-32)
+nn(clusters-34, molecule-33)
+prep_to(fit-30, clusters-34)
+advmod(on-37, so-36)
+dobj(have-8, on-37)
+advmod(shape-11, on-37)
+conj_and(shape-11, on-37)
+nsubj(predisposes-13, on-37)
+
+(ROOT
+  (S
+    (NP (DT The) (NN randomness))
+    (VP (VBZ is)
+      (ADJP (JJ only)
+        (SBAR
+          (UCP (IN if)
+            (CC and)
+            (WHADVP (WRB when)))
+          (S
+            (NP (PRP they))
+            (VP (MD will)
+              (VP (VB coma)
+                (PP (IN against)
+                  (NP
+                    (NP (NNS forms))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBP fit))))))))))))
+    (. .)))
+
+det(randomness-2, The-1)
+nsubj(only-4, randomness-2)
+cop(only-4, is-3)
+root(ROOT-0, only-4)
+dep(coma-10, if-5)
+conj_and(if-5, when-7)
+dep(coma-10, when-7)
+nsubj(coma-10, they-8)
+aux(coma-10, will-9)
+dep(only-4, coma-10)
+prep_against(coma-10, forms-12)
+nsubj(fit-14, forms-12)
+rcmod(forms-12, fit-14)
+
+(ROOT
+  (NP
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP (DT the) (NN time))))
+    (SBAR
+      (S
+        (NP (PRP they))
+        (VP (VB bump)
+          (PP (IN into)
+            (NP (NNS molecules)))
+          (SBAR (IN that)
+            (S
+              (NP (NN dont))
+              (VP (VBP fit)))))))
+    (. .)))
+
+root(ROOT-0, Most-1)
+det(time-4, the-3)
+prep_of(Most-1, time-4)
+nsubj(bump-6, they-5)
+rcmod(Most-1, bump-6)
+prep_into(bump-6, molecules-8)
+complm(fit-11, that-9)
+nsubj(fit-11, dont-10)
+ccomp(bump-6, fit-11)
+

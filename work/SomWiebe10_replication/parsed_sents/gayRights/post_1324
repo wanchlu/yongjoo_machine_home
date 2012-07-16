@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (NP (DT a) (NN chore))))
+    (, ,)
+    (CC nor)
+    (SQ (VBD was)
+      (NP (PRP I))
+      (VP (VBG acting)
+        (PP (IN like)
+          (NP (CD one)))))
+    (. .)))
+
+nsubj(chore-5, I-1)
+cop(chore-5, 'm-2)
+neg(chore-5, not-3)
+det(chore-5, a-4)
+root(ROOT-0, chore-5)
+aux(acting-10, was-8)
+nsubj(acting-10, I-9)
+conj_nor(chore-5, acting-10)
+prep_like(acting-10, one-12)
+
+(ROOT
+  (S
+    (S
+      (VP (VB See)))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB never))
+    (VP (VBD said)
+      (SBAR
+        (WHADVP (WRB why)
+          (CC or)
+          (WRB how))
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (NP (DT a) (NN chore))))))
+    (. .)))
+
+ccomp(said-5, See-1)
+nsubj(said-5, you-3)
+neg(said-5, never-4)
+root(ROOT-0, said-5)
+advmod(chore-12, why-6)
+dep(why-6, or-7)
+dep(why-6, how-8)
+nsubj(chore-12, I-9)
+cop(chore-12, was-10)
+det(chore-12, a-11)
+advcl(said-5, chore-12)
+ccomp(said-5, chore-12)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ makes)
+      (PP (IN for)
+        (NP (DT a) (JJ weak) (NN argument))))
+    (. .)))
+
+nsubj(makes-2, That-1)
+root(ROOT-0, makes-2)
+det(argument-6, a-4)
+amod(argument-6, weak-5)
+prep_for(makes-2, argument-6)
+

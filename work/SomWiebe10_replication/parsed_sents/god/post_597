@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP say)
+      (NP
+        (NP (DT the) (NN priest))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD taught)
+              (SBAR
+                (S
+                  (NP (PRP$ my) (JJ sophomore) (JJ Christian) (NN History)
+                    (CC and)
+                    (NNP Theology) (NN class))
+                  (VP (VBZ says)
+                    (SBAR
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP 're)
+                          (ADJP (JJ wrong)))))))))))))
+    (. .)))
+
+nsubj(say-2, I-1)
+root(ROOT-0, say-2)
+det(priest-4, the-3)
+dobj(say-2, priest-4)
+nsubj(taught-6, priest-4)
+rcmod(priest-4, taught-6)
+poss(History-10, my-7)
+amod(History-10, sophomore-8)
+amod(History-10, Christian-9)
+nsubj(says-14, History-10)
+nn(class-13, Theology-12)
+conj_and(History-10, class-13)
+nsubj(says-14, class-13)
+ccomp(taught-6, says-14)
+nsubj(wrong-17, you-15)
+cop(wrong-17, 're-16)
+ccomp(says-14, wrong-17)
+

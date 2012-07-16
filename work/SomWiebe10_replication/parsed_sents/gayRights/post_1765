@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (NNS Parents))
+    (VP (VBP are)
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (ADJP (RB legally) (JJ married))
+              (SBAR
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (ADVP (RB actually))
+                    (VP (VBP love)
+                      (NP
+                        (NP (DT each) (JJ other))
+                        (CC and)
+                        (NP (PRP$ their) (NNS children))))))
+                (CC and)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP stay)
+                      (ADVP (RB together)))))))))))
+    (. .)))
+
+nsubj(people-3, Parents-1)
+cop(people-3, are-2)
+root(ROOT-0, people-3)
+nsubj(married-7, people-3)
+cop(married-7, are-5)
+advmod(married-7, legally-6)
+rcmod(people-3, married-7)
+nsubj(love-10, who-8)
+advmod(love-10, actually-9)
+dep(married-7, love-10)
+det(other-12, each-11)
+dobj(love-10, other-12)
+poss(children-15, their-14)
+dobj(love-10, children-15)
+conj_and(other-12, children-15)
+nsubj(stay-18, who-17)
+dep(married-7, stay-18)
+conj_and(love-10, stay-18)
+advmod(stay-18, together-19)
+
+(ROOT
+  (NP
+    (NP (RB Not) (RB just))
+    (NP (JJ gay) (NN sex) (NNS partners))
+    (. .)))
+
+neg(just-2, Not-1)
+root(ROOT-0, just-2)
+amod(partners-5, gay-3)
+nn(partners-5, sex-4)
+dep(just-2, partners-5)
+

@@ -1,0 +1,142 @@
+(ROOT
+  (S
+    (VP (VBN Agreed))
+    (. .)))
+
+root(ROOT-0, Agreed-1)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB personally))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NN state) (NNS governments))
+          (VP
+            (VP (MD should) (RB not)
+              (VP (VB be)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB grant)
+                        (NP (NNS marriages))))))))
+            (CC and)
+            (VP (MD should)
+              (ADVP (RB only))
+              (VP (VB be)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB grant)
+                        (NP (JJ civil) (NNS unions))
+                        (PP (TO to)
+                          (NP (NN everyone)))))))))))))
+    (. .)))
+
+nsubj(think-3, I-1)
+advmod(think-3, personally-2)
+root(ROOT-0, think-3)
+nn(governments-5, state-4)
+nsubj(able-9, governments-5)
+nsubj(able-17, governments-5)
+aux(able-9, should-6)
+neg(able-9, not-7)
+cop(able-9, be-8)
+ccomp(think-3, able-9)
+aux(grant-11, to-10)
+xcomp(able-9, grant-11)
+dobj(grant-11, marriages-12)
+aux(able-17, should-14)
+advmod(able-17, only-15)
+cop(able-17, be-16)
+ccomp(think-3, able-17)
+conj_and(able-9, able-17)
+aux(grant-19, to-18)
+xcomp(able-17, grant-19)
+amod(unions-21, civil-20)
+dobj(grant-19, unions-21)
+prep_to(grant-19, everyone-23)
+
+(ROOT
+  (S
+    (NP (NNS Marriages))
+    (VP (VBP are)
+      (ADJP (RB too) (JJ religious)))
+    (. .)))
+
+nsubj(religious-4, Marriages-1)
+cop(religious-4, are-2)
+advmod(religious-4, too-3)
+root(ROOT-0, religious-4)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ next) (JJS best) (NN alternative))
+    (VP (VBZ is)
+      (S
+        (VP (TO to)
+          (VP (VB allow)
+            (NP (JJ gay) (NN marriage))))))
+    (. .)))
+
+det(alternative-4, The-1)
+amod(alternative-4, next-2)
+amod(alternative-4, best-3)
+nsubj(is-5, alternative-4)
+xsubj(allow-7, alternative-4)
+root(ROOT-0, is-5)
+aux(allow-7, to-6)
+xcomp(is-5, allow-7)
+amod(marriage-9, gay-8)
+dobj(allow-7, marriage-9)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR (IN that)
+        (S
+          (NP (NN marriage))
+          (VP (VBZ does)
+            (VP (VB violate)
+              (NP (DT the) (NN constitution))
+              (ADVP (RB especially))
+              (SBAR (IN if)
+                (S
+                  (NP (JJ religious) (NNS reasons))
+                  (VP (VBP are)
+                    (VP (VBN used)
+                      (S
+                        (VP (TO to)
+                          (VP (VB bar)
+                            (NP (JJ certain) (NNS people))
+                            (PP (IN from)
+                              (S
+                                (VP (VBG entering)
+                                  (NP (NNS marriages)))))))))))))))))
+    (. .)))
+
+cc(agree-3, But-1)
+nsubj(agree-3, I-2)
+root(ROOT-0, agree-3)
+complm(violate-7, that-4)
+nsubj(violate-7, marriage-5)
+aux(violate-7, does-6)
+ccomp(agree-3, violate-7)
+det(constitution-9, the-8)
+dobj(violate-7, constitution-9)
+advmod(violate-7, especially-10)
+mark(used-15, if-11)
+amod(reasons-13, religious-12)
+nsubjpass(used-15, reasons-13)
+xsubj(bar-17, reasons-13)
+auxpass(used-15, are-14)
+advcl(violate-7, used-15)
+aux(bar-17, to-16)
+xcomp(used-15, bar-17)
+amod(people-19, certain-18)
+dobj(bar-17, people-19)
+prepc_from(bar-17, entering-21)
+dobj(entering-21, marriages-22)
+

@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (NP (NNP Homosexuality))
+    (VP (VBZ happens)
+      (PP (IN in)
+        (NP
+          (NP (JJ many) (NNS species))
+          (PP (IN of)
+            (NP (NNS animals))))))
+    (. .)))
+
+nsubj(happens-2, Homosexuality-1)
+root(ROOT-0, happens-2)
+amod(species-5, many-4)
+prep_in(happens-2, species-5)
+prep_of(species-5, animals-7)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ natural)))
+    (. .)))
+
+advmod(natural-4, Therefore-1)
+nsubj(natural-4, it-2)
+cop(natural-4, is-3)
+root(ROOT-0, natural-4)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (PRP it))
+      (ADJP (JJ natural)))
+    (. ?)))
+
+advmod(natural-4, Why-1)
+cop(natural-4, is-2)
+nsubj(natural-4, it-3)
+root(ROOT-0, natural-4)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (ADJP (JJ sure))))
+    (: ;)
+    (S (CC but)
+      (ADVP (RB clearly))
+      (NP (PRP it))
+      (VP (VBZ is)))
+    (. .)))
+
+nsubj(sure-4, I-1)
+cop(sure-4, 'm-2)
+neg(sure-4, not-3)
+root(ROOT-0, sure-4)
+cc(is-9, but-6)
+advmod(is-9, clearly-7)
+nsubj(is-9, it-8)
+parataxis(sure-4, is-9)
+
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (NN homosexuality))
+        (ADVP (RB only))
+        (VP (VBZ occurs)
+          (PP (IN in)
+            (NP
+              (NP (DT a) (JJ small) (NN percentage))
+              (PP (IN of)
+                (NP (NNS organisms))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (NP
+        (NP (JJ little) (NN impact))
+        (PP (IN on)
+          (NP
+            (NP (DT the) (NN reproduction) (NNS rates))
+            (PP (IN of)
+              (NP (DT the) (JJ entire) (NN population)))))))
+    (. .)))
+
+mark(occurs-4, Because-1)
+nsubj(occurs-4, homosexuality-2)
+advmod(occurs-4, only-3)
+advcl(has-13, occurs-4)
+det(percentage-8, a-6)
+amod(percentage-8, small-7)
+prep_in(occurs-4, percentage-8)
+prep_of(percentage-8, organisms-10)
+nsubj(has-13, it-12)
+root(ROOT-0, has-13)
+amod(impact-15, little-14)
+dobj(has-13, impact-15)
+det(rates-19, the-17)
+nn(rates-19, reproduction-18)
+prep_on(impact-15, rates-19)
+det(population-23, the-21)
+amod(population-23, entire-22)
+prep_of(rates-19, population-23)
+

@@ -1,0 +1,150 @@
+(ROOT
+  (NP
+    (NP (NN freedom))
+    (PP (IN of)
+      (NP (NN religion)))
+    (. .)))
+
+root(ROOT-0, freedom-1)
+prep_of(freedom-1, religion-3)
+
+(ROOT
+  (SBARQ
+    (WHNP (WDT Which) (NN country))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the)
+          (ADJP (RBS most) (JJ diverse))
+          (NN religion))))
+    (. ?)))
+
+det(country-2, Which-1)
+nsubj(has-3, country-2)
+root(ROOT-0, has-3)
+det(religion-7, the-4)
+advmod(diverse-6, most-5)
+amod(religion-7, diverse-6)
+dobj(has-3, religion-7)
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (DT The) (NN majority))
+        (PRN (-LRB- -LRB-)
+          (NP (CD 90) (NN %))
+          (-RRB- -RRB-)))
+      (PP (IN of)
+        (NP (DT the) (NNP US) (NN founding) (NNS fathers))))
+    (VP (VBD were)
+      (ADJP (JJ christians)))
+    (. .)))
+
+det(majority-2, The-1)
+nsubj(christians-13, majority-2)
+num(%-5, 90-4)
+appos(majority-2, %-5)
+det(fathers-11, the-8)
+nn(fathers-11, US-9)
+nn(fathers-11, founding-10)
+prep_of(majority-2, fathers-11)
+cop(christians-13, were-12)
+root(ROOT-0, christians-13)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (ADVP (IN at) (JJS least))
+          (VP (VBZ has)
+            (NP (DT some) (NN weight))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(has-6, that-3)
+advmod(has-6, at-4)
+pobj(at-4, least-5)
+ccomp(think-2, has-6)
+det(weight-8, some-7)
+dobj(has-6, weight-8)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBZ does)
+      (NP (NNP Shinto))
+      (VP (VB say)
+        (PP (IN about)
+          (NP (NN marriage) (, ,) (NN sex) (, ,) (NN gender) (, ,) (NN homo) (, ,) (NN hetero) (NN etc.)))))
+    (. .)))
+
+dobj(say-4, What-1)
+aux(say-4, does-2)
+nsubj(say-4, Shinto-3)
+root(ROOT-0, say-4)
+nn(etc.-15, marriage-6)
+dep(etc.-15, sex-8)
+dep(etc.-15, gender-10)
+dep(etc.-15, homo-12)
+dep(etc.-15, hetero-14)
+prep_about(say-4, etc.-15)
+
+(ROOT
+  (NP
+    (NP
+      (NP (RB Not) (PRP$ your) (NN opinion))
+      (CC or)
+      (NP (JJ shinto\/japanese) (JJ cultural) (NN attitude)))
+    (: ...)))
+
+neg(opinion-3, Not-1)
+poss(opinion-3, your-2)
+root(ROOT-0, opinion-3)
+amod(attitude-7, shinto\/japanese-5)
+amod(attitude-7, cultural-6)
+conj_or(opinion-3, attitude-7)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBZ does)
+      (NP (NNP Shinto))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB say))))))
+    (. .)))
+
+dep(have-4, what-1)
+aux(have-4, does-2)
+nsubj(have-4, Shinto-3)
+xsubj(say-6, Shinto-3)
+root(ROOT-0, have-4)
+aux(say-6, to-5)
+xcomp(have-4, say-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ curious)))
+    (. .)))
+
+nsubj(curious-3, I-1)
+cop(curious-3, am-2)
+root(ROOT-0, curious-3)
+
+(ROOT
+  (FRAG
+    (PP (IN Thanks))
+    (, ,)))
+
+root(ROOT-0, Thanks-1)
+

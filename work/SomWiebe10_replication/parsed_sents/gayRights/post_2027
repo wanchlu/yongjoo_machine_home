@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB want)
+            (NP (DT a) (JJ gay) (NN marriage))))))
+    (, ,)
+    (VP (VB do) (RB n't)
+      (VP (VB get)
+        (NP (CD one))))
+    (. .)))
+
+mark(want-5, If-1)
+nsubj(want-5, you-2)
+aux(want-5, do-3)
+neg(want-5, n't-4)
+advcl(get-12, want-5)
+det(marriage-8, a-6)
+amod(marriage-8, gay-7)
+dobj(want-5, marriage-8)
+aux(get-12, do-10)
+neg(get-12, n't-11)
+root(ROOT-0, get-12)
+dobj(get-12, one-13)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (VP (VBZ goes)
+          (PRT (RP on))
+          (PP (IN behind)
+            (NP (VBN closed) (NNS doors))))))
+    (VP (VBZ goes)
+      (PRT (RP on))
+      (PP (IN behind)
+        (NP (VBN closed) (NNS doors))))
+    (. .)))
+
+nsubj(goes-2, what-1)
+csubj(goes-7, goes-2)
+prt(goes-2, on-3)
+amod(doors-6, closed-5)
+prep_behind(goes-2, doors-6)
+root(ROOT-0, goes-7)
+prt(goes-7, on-8)
+amod(doors-11, closed-10)
+prep_behind(goes-7, doors-11)
+
+(ROOT
+  (S
+    (ADVP (RB As) (RB long)
+      (SBAR (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ consensual))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ okay)))
+    (. .)))
+
+advmod(long-2, As-1)
+advmod(okay-10, long-2)
+mark(consensual-6, as-3)
+nsubj(consensual-6, it-4)
+cop(consensual-6, 's-5)
+ccomp(long-2, consensual-6)
+nsubj(okay-10, it-8)
+cop(okay-10, 's-9)
+root(ROOT-0, okay-10)
+
+(ROOT
+  (NP
+    (NP (NN End))
+    (PP (IN of)
+      (NP (NN story)))
+    (. .)))
+
+root(ROOT-0, End-1)
+prep_of(End-1, story-3)
+

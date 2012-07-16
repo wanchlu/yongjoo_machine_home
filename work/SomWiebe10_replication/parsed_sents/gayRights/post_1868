@@ -1,0 +1,118 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (NP (`` ``)
+          (NP (NNS rights))
+          ('' '')
+          (PP (IN as)
+            (NP
+              (NP
+                (NP (NNS members))
+                (PP (IN of)
+                  (NP (DT a) (NN group))))
+              (, ,)
+              (CONJP (CC but)
+                (RB as))
+              (NP
+                (NP (NNS individuals))
+                (PP (IN in)
+                  (NP (NN society)))))))))
+    (. .)))
+
+nsubj(have-4, People-1)
+aux(have-4, do-2)
+neg(have-4, n't-3)
+root(ROOT-0, have-4)
+dobj(have-4, rights-6)
+prep_as(rights-6, members-9)
+det(group-12, a-11)
+prep_of(members-9, group-12)
+prep_as(rights-6, individuals-16)
+conj_as(members-9, individuals-16)
+prep_in(individuals-16, society-18)
+
+(ROOT
+  (S
+    (NP (NNP Marriage))
+    (VP (VBZ is) (RB not)
+      (VP (VBN defined)
+        (ADVP (RB anywhere))
+        (PP (IN in)
+          (NP (DT the) (NN constitution)))
+        (, ,)
+        (SBAR (IN so)
+          (S
+            (NP (DT the) (NN government))
+            (VP (MD should) (RB not)
+              (VP (VB prevent)
+                (NP
+                  (NP (DT any) (NN kind))
+                  (PP (IN of)
+                    (NP (`` ``) (NN marriage) ('' ''))))
+                (PP (IN from)
+                  (S
+                    (VP (VBG occuring))))))))))
+    (: ...)))
+
+nsubjpass(defined-4, Marriage-1)
+auxpass(defined-4, is-2)
+neg(defined-4, not-3)
+root(ROOT-0, defined-4)
+advmod(defined-4, anywhere-5)
+det(constitution-8, the-7)
+prep_in(defined-4, constitution-8)
+mark(prevent-15, so-10)
+det(government-12, the-11)
+nsubj(prevent-15, government-12)
+aux(prevent-15, should-13)
+neg(prevent-15, not-14)
+advcl(defined-4, prevent-15)
+det(kind-17, any-16)
+dobj(prevent-15, kind-17)
+prep_of(kind-17, marriage-20)
+prepc_from(prevent-15, occuring-23)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD wrote)
+      (SBAR
+        (S
+          (NP
+            (NP (DT some))
+            (RRC
+              (ADJP (JJR more)
+                (PP (IN at)
+                  (NP (DT the) (NN link))))
+              (ADVP (RB below)))
+            (, ,))
+          (VP (MD would)
+            (VP (VB be)
+              (ADJP (JJ happy)
+                (S
+                  (VP (TO to)
+                    (VP (VB respond)
+                      (NP
+                        (NP (RB there))
+                        (CONJP (RB as) (RB well) (IN as))
+                        (NP (RB here))))))))))))
+    (. .)))
+
+nsubj(wrote-2, I-1)
+root(ROOT-0, wrote-2)
+nsubj(happy-12, some-3)
+dep(below-8, more-4)
+det(link-7, the-6)
+prep_at(more-4, link-7)
+rcmod(some-3, below-8)
+aux(happy-12, would-10)
+cop(happy-12, be-11)
+ccomp(wrote-2, happy-12)
+aux(respond-14, to-13)
+xcomp(happy-12, respond-14)
+dobj(respond-14, there-15)
+dobj(respond-14, here-19)
+conj_and(there-15, here-19)
+

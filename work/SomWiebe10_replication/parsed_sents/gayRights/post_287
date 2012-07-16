@@ -1,0 +1,41 @@
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT the) (NNP author)
+      (CC or)
+      (NNP anyone) (NN else))
+    (VP (VB know)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (NP
+            (NP (JJ peer-reviewed) (NNS studies))
+            (PP (IN in)
+              (NP (NN particular))))
+          (VP (VBP are)
+            (VP (VBG being)
+              (VP (VBN referenced)
+                (PP (IN as)
+                  (NP
+                    (NP (NN proof))
+                    (PP (IN of)
+                      (NP (PRP$ his) (NN assertion)))))))))))
+    (. ?)))
+
+dep(know-7, Does-1)
+det(else-6, the-2)
+nn(else-6, author-3)
+conj_or(author-3, anyone-5)
+nn(else-6, anyone-5)
+nsubj(know-7, else-6)
+root(ROOT-0, know-7)
+dobj(referenced-15, which-8)
+amod(studies-10, peer-reviewed-9)
+nsubjpass(referenced-15, studies-10)
+prep_in(studies-10, particular-12)
+aux(referenced-15, are-13)
+auxpass(referenced-15, being-14)
+ccomp(know-7, referenced-15)
+prep_as(referenced-15, proof-17)
+poss(assertion-20, his-19)
+prep_of(proof-17, assertion-20)
+

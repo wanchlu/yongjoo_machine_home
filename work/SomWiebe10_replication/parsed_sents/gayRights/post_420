@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB once))
+    (VP (VBN interrupted)
+      (NP
+        (NP (DT a) (NN street) (NN preacher))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD was)
+              (VP (VBG going)
+                (PRT (RP on))
+                (PP (IN about)
+                  (NP (NNS gays)))
+                (, ,)
+                (S
+                  (S
+                    (VP (TO to)
+                      (VP (VB ask)
+                        (NP (PRP him)))))
+                  (SBARQ
+                    (WHADVP (WRB when))
+                    (SQ (VBD was)
+                      (NP (PRP he))
+                      (VP (VBN born)
+                        (ADVP (RB again))))))))))))
+    (. .)))
+
+nsubj(interrupted-3, I-1)
+advmod(interrupted-3, once-2)
+root(ROOT-0, interrupted-3)
+det(preacher-6, a-4)
+nn(preacher-6, street-5)
+dobj(interrupted-3, preacher-6)
+nsubj(going-9, preacher-6)
+aux(going-9, was-8)
+rcmod(preacher-6, going-9)
+prt(going-9, on-10)
+prep_about(going-9, gays-12)
+aux(ask-15, to-14)
+dep(going-9, ask-15)
+dobj(ask-15, him-16)
+advmod(born-20, when-17)
+auxpass(born-20, was-18)
+nsubjpass(born-20, he-19)
+dep(ask-15, born-20)
+advmod(born-20, again-21)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (MD could)
+      (VP (VB give)
+        (NP (PRP me))
+        (NP (DT the) (JJ exact) (NN time)
+          (CC and)
+          (NN place))))
+    (. .)))
+
+nsubj(give-3, He-1)
+aux(give-3, could-2)
+root(ROOT-0, give-3)
+iobj(give-3, me-4)
+det(time-7, the-5)
+amod(time-7, exact-6)
+dobj(give-3, time-7)
+dobj(give-3, place-9)
+conj_and(time-7, place-9)
+
+(ROOT
+  (S (RB Then)
+    (NP (PRP I))
+    (VP (VBP ask)
+      (NP (PRP him))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP he))
+          (VP (VBD decided)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (RB straight)))))))))
+    (. .)))
+
+advmod(ask-3, Then-1)
+nsubj(ask-3, I-2)
+root(ROOT-0, ask-3)
+dobj(ask-3, him-4)
+advmod(decided-7, when-5)
+nsubj(decided-7, he-6)
+xsubj(straight-10, he-6)
+advcl(ask-3, decided-7)
+aux(straight-10, to-8)
+cop(straight-10, be-9)
+xcomp(decided-7, straight-10)
+

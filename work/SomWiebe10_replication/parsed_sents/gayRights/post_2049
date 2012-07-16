@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (FRAG
+      (ADVP (RB Maybe)))
+    (: ...)
+    (S (CC but)
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBZ likes)
+              (S
+                (VP (TO to)
+                  (VP (VB offend))))
+              (, ,)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ does) (RB n't)
+                    (VP (VB have)
+                      (NP (NN anything))
+                      (ADVP (RBR better))
+                      (S
+                        (VP (TO to)
+                          (VP (VB add)
+                            (PP (TO to)
+                              (NP (DT a) (NN debate)))))))))))))))
+    (. .)))
+
+dep(think-5, Maybe-1)
+cc(think-5, but-3)
+nsubj(think-5, I-4)
+root(ROOT-0, think-5)
+nsubj(likes-7, he-6)
+xsubj(offend-9, he-6)
+ccomp(think-5, likes-7)
+aux(offend-9, to-8)
+xcomp(likes-7, offend-9)
+mark(have-15, because-11)
+nsubj(have-15, he-12)
+xsubj(add-19, he-12)
+aux(have-15, does-13)
+neg(have-15, n't-14)
+advcl(likes-7, have-15)
+dobj(have-15, anything-16)
+advmod(have-15, better-17)
+aux(add-19, to-18)
+xcomp(have-15, add-19)
+det(debate-22, a-21)
+prep_to(add-19, debate-22)
+

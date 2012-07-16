@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP want)
+        (S
+          (VP (TO to)
+            (VP (VB marry)
+              (S
+                (NP (PRP$ my) (NN girlfriend))
+                (ADJP (RB so) (JJ bad))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ saddens)
+        (NP (PRP me))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (MD ca) (RB n't)
+              (PP (IN because)
+                (NP
+                  (NP (DT the) (NN rest))
+                  (PP (IN of)
+                    (NP (DT the) (NN world)))))
+              (VP (VBZ thinks)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ 's)
+                      (ADJP (JJ wrong)))))))))))
+    (. .)))
+
+nsubj(want-2, I-1)
+xsubj(marry-4, I-1)
+root(ROOT-0, want-2)
+aux(marry-4, to-3)
+xcomp(want-2, marry-4)
+poss(girlfriend-6, my-5)
+nsubj(bad-8, girlfriend-6)
+advmod(bad-8, so-7)
+xcomp(marry-4, bad-8)
+nsubj(saddens-12, it-11)
+conj_and(want-2, saddens-12)
+dobj(saddens-12, me-13)
+complm(thinks-24, that-14)
+nsubj(thinks-24, I-15)
+aux(thinks-24, ca-16)
+neg(thinks-24, n't-17)
+det(rest-20, the-19)
+prep_because(thinks-24, rest-20)
+det(world-23, the-22)
+prep_of(rest-20, world-23)
+ccomp(saddens-12, thinks-24)
+nsubj(wrong-27, it-25)
+cop(wrong-27, 's-26)
+ccomp(thinks-24, wrong-27)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP hope)
+      (SBAR (IN that)
+        (S
+          (S
+            (VP (VB prop)
+              (NP (CD 8))))
+          (VP (MD will)
+            (VP (VB pass)
+              (PP (IN in)
+                (NP (NNP November))))))))
+    (. !)))
+
+nsubj(hope-3, I-1)
+advmod(hope-3, just-2)
+root(ROOT-0, hope-3)
+complm(pass-8, that-4)
+csubj(pass-8, prop-5)
+dobj(prop-5, 8-6)
+aux(pass-8, will-7)
+ccomp(hope-3, pass-8)
+prep_in(pass-8, November-10)
+

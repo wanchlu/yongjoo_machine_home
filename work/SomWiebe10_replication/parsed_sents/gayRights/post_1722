@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ hurts)
+        (NP (NNS families))))
+    (, ,)
+    (S
+      (X
+        (X (DT the) (JJR more))
+        (NP (JJ gay) (NN marriage)))
+      (X
+        (X (DT the) (JJR less))
+        (NP (NNS families)))
+      (NP (EX there))
+      (VP (MD will)
+        (VP (VB be))))
+    (, ,)
+    (S
+      (NP (NNS children))
+      (VP (VBP need)
+        (S
+          (NP
+            (NP (DT a) (NN mother))
+            (CC and)
+            (NP (DT a) (NN father)))
+          (VP (TO to)
+            (VP (VB look)
+              (PRT (RP up))
+              (PP (TO to)))))))
+    (. .)))
+
+nsubj(hurts-2, It-1)
+root(ROOT-0, hurts-2)
+dobj(hurts-2, families-3)
+det(more-6, the-5)
+dep(marriage-8, more-6)
+amod(marriage-8, gay-7)
+dep(be-14, marriage-8)
+det(less-10, the-9)
+dep(families-11, less-10)
+dep(be-14, families-11)
+expl(be-14, there-12)
+aux(be-14, will-13)
+ccomp(hurts-2, be-14)
+nsubj(need-17, children-16)
+ccomp(hurts-2, need-17)
+det(mother-19, a-18)
+nsubj(look-24, mother-19)
+det(father-22, a-21)
+conj_and(mother-19, father-22)
+nsubj(look-24, father-22)
+aux(look-24, to-23)
+xcomp(need-17, look-24)
+prt(look-24, up-25)
+prep(look-24, to-26)
+

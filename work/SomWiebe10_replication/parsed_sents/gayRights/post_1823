@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP take)
+        (NP (DT the) (NNP Buddhist) (NN stance))
+        (PP (IN on)
+          (NP (NN sin)))))
+    (: :)
+    (S
+      (NP (DT the) (JJ only) (NN sin))
+      (VP (VBZ lies)
+        (PP (IN in)
+          (S
+            (VP (VBG harming)
+              (NP (NNS others))
+              (ADVP (RB unnecessarily)))))))
+    (. .)))
+
+nsubj(take-2, I-1)
+root(ROOT-0, take-2)
+det(stance-5, the-3)
+nn(stance-5, Buddhist-4)
+dobj(take-2, stance-5)
+prep_on(take-2, sin-7)
+det(sin-11, the-9)
+amod(sin-11, only-10)
+nsubj(lies-12, sin-11)
+parataxis(take-2, lies-12)
+prepc_in(lies-12, harming-14)
+dobj(harming-14, others-15)
+advmod(harming-14, unnecessarily-16)
+
+(ROOT
+  (S
+    (NP (DT All) (JJ other) (NNS sins))
+    (VP (VBP are)
+      (VP (VBN invented)
+        (NP (NN nonsense))))
+    (. .)))
+
+det(sins-3, All-1)
+amod(sins-3, other-2)
+nsubjpass(invented-5, sins-3)
+auxpass(invented-5, are-4)
+root(ROOT-0, invented-5)
+dobj(invented-5, nonsense-6)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ does)
+      (NP
+        (NP (CD one) (NN man))
+        (VP (VBG loving)
+          (NP (DT another) (NN man))
+          (ADVP (RB unnecessarily))))
+      (VP (VB harm)
+        (NP (NN anyone))))
+    (. ?)))
+
+advmod(harm-9, How-1)
+aux(harm-9, does-2)
+num(man-4, one-3)
+nsubj(harm-9, man-4)
+partmod(man-4, loving-5)
+det(man-7, another-6)
+dobj(loving-5, man-7)
+advmod(loving-5, unnecessarily-8)
+root(ROOT-0, harm-9)
+dobj(harm-9, anyone-10)
+

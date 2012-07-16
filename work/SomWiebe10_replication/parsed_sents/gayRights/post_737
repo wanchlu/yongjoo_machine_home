@@ -1,0 +1,105 @@
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (PRP you))
+          (ADVP (RB really))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB know)))))))
+      (, ,)
+      (NP (PRP you))
+      (VP (MD can)
+        (VP (VB ask)
+          (S
+            (NP (NNP God))
+            (NP (PRP yourself))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (MD will)
+        (VP (VB answer)
+          (SBAR (IN because)
+            (S
+              (NP (PRP he))
+              (VP (VBZ loves)
+                (NP (PRP you))))))))
+    (. .)))
+
+mark(want-4, If-1)
+nsubj(want-4, you-2)
+xsubj(know-6, you-2)
+advmod(want-4, really-3)
+advcl(ask-10, want-4)
+aux(know-6, to-5)
+xcomp(want-4, know-6)
+nsubj(ask-10, you-8)
+aux(ask-10, can-9)
+root(ROOT-0, ask-10)
+nsubj(yourself-12, God-11)
+xcomp(ask-10, yourself-12)
+nsubj(answer-17, he-15)
+aux(answer-17, will-16)
+conj_and(ask-10, answer-17)
+mark(loves-20, because-18)
+nsubj(loves-20, he-19)
+advcl(answer-17, loves-20)
+dobj(loves-20, you-21)
+
+(ROOT
+  (S
+    (NP (NNP Seek)
+      (CC and)
+      (NNP ye))
+    (VP (MD shall)
+      (VP (VB find)))
+    (. .)))
+
+nsubj(find-5, Seek-1)
+conj_and(Seek-1, ye-3)
+nsubj(find-5, ye-3)
+aux(find-5, shall-4)
+root(ROOT-0, find-5)
+
+(ROOT
+  (S
+    (NP (NNP Ask)
+      (CC and)
+      (PRP it))
+    (VP (MD shall)
+      (VP (VB be)
+        (VP (VBN answered))))
+    (. .)))
+
+nsubjpass(answered-6, Ask-1)
+conj_and(Ask-1, it-3)
+nsubjpass(answered-6, it-3)
+aux(answered-6, shall-4)
+auxpass(answered-6, be-5)
+root(ROOT-0, answered-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Knock))
+      (CC and)
+      (NP (DT the) (NN door)))
+    (VP (MD shall)
+      (VP (VB be)
+        (VP (VBN opened)
+          (PP (TO to)
+            (NP (PRP you))))))
+    (. .)))
+
+nsubjpass(opened-7, Knock-1)
+det(door-4, the-3)
+conj_and(Knock-1, door-4)
+nsubjpass(opened-7, door-4)
+aux(opened-7, shall-5)
+auxpass(opened-7, be-6)
+root(ROOT-0, opened-7)
+prep_to(opened-7, you-9)
+

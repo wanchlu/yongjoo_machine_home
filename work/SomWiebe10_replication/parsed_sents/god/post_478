@@ -1,0 +1,102 @@
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP (DT no) (NN evidence)))
+    (. .)))
+
+dep('s-4, No-1)
+expl('s-4, there-3)
+root(ROOT-0, 's-4)
+det(evidence-6, no-5)
+nsubj('s-4, evidence-6)
+
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP (VB believe)
+      (PP (IN in)
+        (NP (JJ pink) (NNS unicorns)))
+      (ADVP (RB as) (RB well)))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+dep(not-2, believe-3)
+amod(unicorns-6, pink-5)
+prep_in(believe-3, unicorns-6)
+advmod(well-8, as-7)
+mwe(well-8, as-7)
+advmod(believe-3, well-8)
+
+(ROOT
+  (FRAG (CC And)
+    (ADVP (RB teapots))
+    (. ?)))
+
+dep(teapots-2, And-1)
+root(ROOT-0, teapots-2)
+
+(ROOT
+  (FRAG (CC And)
+    (ADVP (RB Santa))
+    (. ?)))
+
+dep(Santa-2, And-1)
+root(ROOT-0, Santa-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR
+        (SBAR
+          (S
+            (NP (DT these))
+            (VP (VBP are)
+              (ADVP (DT all) (RB pretty))
+              (NP (NN cliche) (NNS arguments)))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (VP (VB be)
+              (ADJP (JJ content)
+                (PP (IN with)
+                  (S (RB not)
+                    (VP (VBG understanding)
+                      (NP
+                        (NP (DT the) (NN world))
+                        (SBAR
+                          (WHADVP (WRB when))
+                          (S
+                            (NP (PRP you))
+                            (VP (MD can))))))))))))))
+    (. ?)))
+
+nsubj(guess-2, I-1)
+root(ROOT-0, guess-2)
+nsubj(arguments-8, these-3)
+nsubj(content-13, these-3)
+cop(arguments-8, are-4)
+dep(pretty-6, all-5)
+advmod(arguments-8, pretty-6)
+nn(arguments-8, cliche-7)
+dep(guess-2, arguments-8)
+advmod(content-13, why-11)
+cop(content-13, be-12)
+dep(guess-2, content-13)
+conj_but(arguments-8, content-13)
+neg(understanding-16, not-15)
+prepc_with(content-13, understanding-16)
+det(world-18, the-17)
+dobj(understanding-16, world-18)
+tmod(can-21, world-18)
+advmod(can-21, when-19)
+nsubj(can-21, you-20)
+dep(world-18, can-21)
+

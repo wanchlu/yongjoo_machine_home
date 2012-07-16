@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (VP
+      (PP
+        (NP (DT A) (-RRB- -RRB-) (NNP Separation))
+        (IN of)
+        (NP (NN church)
+          (CC and)
+          (NN state))))
+    (. .)))
+
+det(Separation-3, A-1)
+dep(of-4, Separation-3)
+root(ROOT-0, of-4)
+pobj(of-4, church-5)
+pobj(of-4, state-7)
+conj_and(church-5, state-7)
+
+(ROOT
+  (S
+    (LST (JJ B))
+    (-RRB- -RRB-)
+    (VP (VBZ Condoms)
+      (VP (VB have)
+        (VP (VBN made)
+          (NP (DT the) (NNP AIDS) (NN argument) (NN moot)))))
+    (. .)))
+
+dep(Condoms-3, B-1)
+root(ROOT-0, Condoms-3)
+aux(made-5, have-4)
+dep(Condoms-3, made-5)
+det(moot-9, the-6)
+nn(moot-9, AIDS-7)
+nn(moot-9, argument-8)
+dobj(made-5, moot-9)
+

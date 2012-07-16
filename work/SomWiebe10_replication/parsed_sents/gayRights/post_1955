@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (FRAG
+      (NP
+        (NP (NNP United) (NNPS States) (NNP Constitution))
+        (: :)
+        (NP (NNP First) (NNP Amendment))))
+    ('' '')
+    (NP (NNP Congress))
+    (VP (MD shall)
+      (VP (VB make)
+        (NP
+          (NP (DT no) (NN law))
+          (VP (VBG respecting)
+            (NP
+              (NP (DT an) (NN establishment))
+              (PP (IN of)
+                (NP (NN religion))))))))
+    ('' '')))
+
+nn(Constitution-3, United-1)
+nn(Constitution-3, States-2)
+dep(make-10, Constitution-3)
+nn(Amendment-6, First-5)
+dep(Constitution-3, Amendment-6)
+nsubj(make-10, Congress-8)
+aux(make-10, shall-9)
+root(ROOT-0, make-10)
+det(law-12, no-11)
+dobj(make-10, law-12)
+partmod(law-12, respecting-13)
+det(establishment-15, an-14)
+dobj(respecting-13, establishment-15)
+prep_of(establishment-15, religion-17)
+

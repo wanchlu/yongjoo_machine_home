@@ -1,0 +1,65 @@
+(ROOT
+  (INTJ (UH yes) (. !)))
+
+root(ROOT-0, yes-1)
+
+(ROOT
+  (S
+    (NP (PRP you))
+    (VP (VB rock)
+      (NP (JJ gay) (NNS people)))
+    (. .)))
+
+nsubj(rock-2, you-1)
+root(ROOT-0, rock-2)
+amod(people-4, gay-3)
+dobj(rock-2, people-4)
+
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADJP (RB no) (JJ different)
+        (SBAR (IN than)
+          (S
+            (NP (PRP we))
+            (VP (VBP are))))))
+    (. .)))
+
+nsubj(different-4, they-1)
+cop(different-4, are-2)
+advmod(different-4, no-3)
+root(ROOT-0, different-4)
+mark(are-7, than-5)
+nsubj(are-7, we-6)
+dep(different-4, are-7)
+
+(ROOT
+  (SBAR (IN if)
+    (S
+      (SBAR
+        (X (TO to))
+        (S
+          (NP (NNS men))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB marry)
+                  (NP (DT each) (JJ other))))))))
+      (, ,)
+      (VP (VB go)
+        (PP (IN for)
+          (NP (PRP it)))))))
+
+mark(go-10, if-1)
+dep(want-4, to-2)
+nsubj(want-4, men-3)
+xsubj(marry-6, men-3)
+dep(go-10, want-4)
+aux(marry-6, to-5)
+xcomp(want-4, marry-6)
+det(other-8, each-7)
+dobj(marry-6, other-8)
+root(ROOT-0, go-10)
+prep_for(go-10, it-12)
+

@@ -1,0 +1,122 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (NP
+        (NP (DT a) (NN scientist)
+          (CC and)
+          (NN someone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ believes)
+              (PP (IN in)
+                (NP (NNP God))))))))
+    (. .)))
+
+nsubj(scientist-4, I-1)
+cop(scientist-4, am-2)
+det(scientist-4, a-3)
+root(ROOT-0, scientist-4)
+nsubj(believes-8, scientist-4)
+conj_and(scientist-4, someone-6)
+nsubj(believes-8, someone-6)
+rcmod(scientist-4, believes-8)
+prep_in(believes-8, God-10)
+
+(ROOT
+  (S
+    (S
+      (FRAG (RB Maybe)
+        (NP (RB not) (DT the) (NN way)))
+      (NP (DT the) (NNP Bible))
+      (VP (VBZ describes)
+        (NP (PRP him))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP (PRP it))
+            (VP (VBD was)
+              (VP
+                (VP (VBN written)
+                  (PP (IN by)
+                    (NP (NN man))))
+                (CC and)
+                (VP
+                  (ADVP (RB therefore))
+                  (VBN flawed))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (ADVP (RB still))
+      (VP (VBP believe)
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP (DT a) (JJR higher) (NN being)))))))
+    (. .)))
+
+dep(describes-7, Maybe-1)
+neg(way-4, not-2)
+det(way-4, the-3)
+dep(Maybe-1, way-4)
+det(Bible-6, the-5)
+nsubj(describes-7, Bible-6)
+root(ROOT-0, describes-7)
+dobj(describes-7, him-8)
+mark(written-13, as-10)
+nsubjpass(written-13, it-11)
+nsubjpass(flawed-18, it-11)
+auxpass(written-13, was-12)
+advcl(describes-7, written-13)
+agent(written-13, man-15)
+advmod(flawed-18, therefore-17)
+advcl(describes-7, flawed-18)
+conj_and(written-13, flawed-18)
+nsubj(believe-23, I-21)
+advmod(believe-23, still-22)
+conj_but(describes-7, believe-23)
+complm(is-26, that-24)
+expl(is-26, there-25)
+ccomp(believe-23, is-26)
+det(being-29, a-27)
+amod(being-29, higher-28)
+nsubj(is-26, being-29)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (S
+          (NP (DT the) (JJ scientific) (NNS methods))
+          (VP (TO to)
+            (VP (VB test)
+              (PP (IN for)
+                (NP
+                  (NP (PRP him))
+                  (PRN (-LRB- -LRB-)
+                    (CC or)
+                    (S
+                      (NP (PRP her))
+                      (VP (VBZ =)))
+                    (-RRB- -RRB-)))))))))
+    (. !)))
+
+nsubj(have-4, We-1)
+aux(have-4, do-2)
+neg(have-4, n't-3)
+root(ROOT-0, have-4)
+det(methods-7, the-5)
+amod(methods-7, scientific-6)
+nsubj(test-9, methods-7)
+aux(test-9, to-8)
+ccomp(have-4, test-9)
+xcomp(have-4, test-9)
+prep_for(test-9, him-11)
+dep(=-15, or-13)
+nsubj(=-15, her-14)
+dep(him-11, =-15)
+

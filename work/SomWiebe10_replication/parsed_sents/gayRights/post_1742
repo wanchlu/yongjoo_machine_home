@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP (NNP The))
+    (VP (`` ``) (VBZ mediaflow) ('' ''))
+    (. ?)))
+
+nsubj(mediaflow-3, The-1)
+root(ROOT-0, mediaflow-3)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (RB all)
+          (VP (VB feel)
+            (NP (DT this) (NN way))
+            (SBAR (IN because)
+              (S
+                (NP (DT the) (NNS media))
+                (VP (VBD told)
+                  (NP (PRP us))
+                  (PP (TO to)))))))))
+    (. ?)))
+
+nsubj(think-2, You-1)
+root(ROOT-0, think-2)
+complm(feel-6, that-3)
+nsubj(feel-6, we-4)
+advmod(feel-6, all-5)
+ccomp(think-2, feel-6)
+det(way-8, this-7)
+dobj(feel-6, way-8)
+mark(told-12, because-9)
+det(media-11, the-10)
+nsubj(told-12, media-11)
+advcl(feel-6, told-12)
+dobj(told-12, us-13)
+prep(told-12, to-14)
+
+(ROOT
+  (S
+    (FRAG
+      (INTJ (UH Wow)))
+    (: ...)
+    (S
+      (NP (DT that))
+      (VP (VBZ is)
+        (NP (PDT quite) (DT an) (NN insult))))
+    (. !)))
+
+dep(insult-7, Wow-1)
+nsubj(insult-7, that-3)
+cop(insult-7, is-4)
+predet(insult-7, quite-5)
+det(insult-7, an-6)
+root(ROOT-0, insult-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP know)
+      (S
+        (VP (TO to)
+          (VP (VB treat)
+            (NP (NN everyone))
+            (ADVP (RB fairly))))))
+    (. .)))
+
+nsubj(know-3, I-1)
+xsubj(treat-5, I-1)
+advmod(know-3, just-2)
+root(ROOT-0, know-3)
+aux(treat-5, to-4)
+xcomp(know-3, treat-5)
+dobj(treat-5, everyone-6)
+advmod(treat-5, fairly-7)
+

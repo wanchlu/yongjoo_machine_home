@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ glad)
+        (SBAR (IN that)
+          (S
+            (NP (NN sentiment))
+            (VP (VBZ is)
+              (ADJP
+                (ADJP (JJ alive))
+                (CC and)
+                (ADJP
+                  (ADVP (RB well)
+                    (PP (IN within)
+                      (NP (PRP you))))
+                  (VBN Joe))))))))
+    (. .)))
+
+nsubj(glad-3, I-1)
+cop(glad-3, 'm-2)
+root(ROOT-0, glad-3)
+complm(alive-7, that-4)
+nsubjpass(alive-7, sentiment-5)
+nsubjpass(Joe-12, sentiment-5)
+auxpass(alive-7, is-6)
+cop(alive-7, is-6)
+ccomp(glad-3, alive-7)
+advmod(Joe-12, well-9)
+prep_within(well-9, you-11)
+ccomp(glad-3, Joe-12)
+conj_and(alive-7, Joe-12)
+
+(ROOT
+  (S (CC And)
+    (S
+      (INTJ (UH yes))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP care)))
+    (, ,)
+    (ADVP (RBR more) (IN than))
+    (S
+      (NP (PRP you))
+      (VP (VBP know)))
+    (. .)))
+
+cc(care-5, And-1)
+dep(care-5, yes-2)
+nsubj(care-5, I-4)
+root(ROOT-0, care-5)
+advmod(than-8, more-7)
+advmod(care-5, than-8)
+nsubj(know-10, you-9)
+ccomp(care-5, know-10)
+
+(ROOT
+  (S
+    (VP (VB Thank-you)
+      (PP (IN for)
+        (S
+          (VP (VBG sharing)
+            (NP (DT that))
+            (PP (IN with)
+              (NP (PRP us)))))))
+    (. .)))
+
+root(ROOT-0, Thank-you-1)
+prepc_for(Thank-you-1, sharing-3)
+dobj(sharing-3, that-4)
+prep_with(sharing-3, us-6)
+

@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (VP (VB Cool))
+    (. .)))
+
+root(ROOT-0, Cool-1)
+
+(ROOT
+  (S
+    (VP (VB Believe)
+      (SBAR
+        (WHNP (WDT whatever))
+        (S
+          (S
+            (NP (PRP you))
+            (VP (VBP want)
+              (S
+                (VP (TO to)
+                  (VP (VB believe))))))
+          (, ,)
+          (CC but)
+          (S
+            (NP (DT the) (NNP First) (NNP Amendment))
+            (VP (VBZ does) (RB not)
+              (VP (VB give)
+                (NP (DT any) (JJ religious) (NN institution))
+                (NP (DT the) (NN right)
+                  (S
+                    (VP (TO to)
+                      (VP (VB enforce)
+                        (NP (PRP$ its) (NNS ideas)
+                          (CC and)
+                          (NNS actions))
+                        (PP (IN upon)
+                          (NP (DT any) (JJ other) (NNS individuals)))))))))))))
+    (. .)))
+
+root(ROOT-0, Believe-1)
+dep(want-4, whatever-2)
+nsubj(want-4, you-3)
+xsubj(believe-6, you-3)
+dep(Believe-1, want-4)
+aux(believe-6, to-5)
+xcomp(want-4, believe-6)
+det(Amendment-11, the-9)
+nn(Amendment-11, First-10)
+nsubj(give-14, Amendment-11)
+aux(give-14, does-12)
+neg(give-14, not-13)
+dep(Believe-1, give-14)
+conj_but(want-4, give-14)
+det(institution-17, any-15)
+amod(institution-17, religious-16)
+iobj(give-14, institution-17)
+det(right-19, the-18)
+dobj(give-14, right-19)
+aux(enforce-21, to-20)
+infmod(right-19, enforce-21)
+poss(ideas-23, its-22)
+dobj(enforce-21, ideas-23)
+dobj(enforce-21, actions-25)
+conj_and(ideas-23, actions-25)
+det(individuals-29, any-27)
+amod(individuals-29, other-28)
+prep_upon(enforce-21, individuals-29)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP
+      (NP (DT all) (NNS arguments))
+      (PP (VBG regarding)
+        (NP
+          (NP (NNP God))
+          (, ,)
+          (NP (NNP Christianity))
+          (, ,) (FW etc.))))
+    (VP (VBP are)
+      (ADJP (JJ moot)))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(moot-14, words-3)
+det(arguments-6, all-5)
+nsubj(moot-14, arguments-6)
+prep_regarding(arguments-6, God-8)
+appos(God-8, Christianity-10)
+dep(God-8, etc.-12)
+cop(moot-14, are-13)
+root(ROOT-0, moot-14)
+

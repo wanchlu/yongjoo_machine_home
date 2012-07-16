@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (JJS Most) (NNPS Americans))
+    (VP (VBP accept)
+      (NP
+        (NP (NNS gays))
+        (PP (IN for)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (NP (PRP they))
+              (VP (VBP are)))))))
+    (. .)))
+
+amod(Americans-2, Most-1)
+nsubj(accept-3, Americans-2)
+root(ROOT-0, accept-3)
+dobj(accept-3, gays-4)
+dobj(are-8, who-6)
+nsubj(are-8, they-7)
+prepc_for(gays-4, are-8)
+
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (ADVP (RB ever))
+      (VP (VB feel)
+        (PP (IN like)
+          (NP
+            (NP (DT a) (JJ second) (NN class) (NN citizen))
+            (PP (RB because) (IN of)
+              (NP (DT a) (JJ vocal) (JJ few)))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP choose)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (NP
+                          (NP (NN intolerant))
+                          (PP (IN of)
+                            (NP (NNS others))))))))))))))
+    (. .)))
+
+aux(feel-4, Do-1)
+neg(feel-4, n't-2)
+advmod(feel-4, ever-3)
+root(ROOT-0, feel-4)
+det(citizen-9, a-6)
+amod(citizen-9, second-7)
+nn(citizen-9, class-8)
+prep_like(feel-4, citizen-9)
+nsubj(choose-16, citizen-9)
+det(few-14, a-12)
+amod(few-14, vocal-13)
+prep_because_of(citizen-9, few-14)
+rcmod(citizen-9, choose-16)
+aux(intolerant-19, to-17)
+cop(intolerant-19, be-18)
+xcomp(choose-16, intolerant-19)
+prep_of(intolerant-19, others-21)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN for)
+        (NP (JJ gay) (NN marriage))))
+    (NP (DT the) (NNP Constitution))
+    (VP (VBZ is)
+      (PP (IN on)
+        (NP (PRP$ your) (NN side))))
+    (. .)))
+
+prepc_as_for(is-7, for-2)
+amod(marriage-4, gay-3)
+pobj(is-7, marriage-4)
+det(Constitution-6, the-5)
+nsubj(is-7, Constitution-6)
+root(ROOT-0, is-7)
+poss(side-10, your-9)
+prep_on(is-7, side-10)
+

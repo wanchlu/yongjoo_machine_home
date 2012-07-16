@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (NP (JJ Civil) (NNS unions))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ same))
+        (PP (IN as)
+          (S
+            (VP (VBG being)
+              (VP (VBN married)))))))
+    (. .)))
+
+amod(unions-2, Civil-1)
+nsubj(same-5, unions-2)
+cop(same-5, is-3)
+det(same-5, the-4)
+root(ROOT-0, same-5)
+auxpass(married-8, being-7)
+prepc_as(same-5, married-8)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (VBZ has)
+      (NP (DT a) (JJ different) (NN name)))
+    (. .)))
+
+nsubj(has-3, It-1)
+advmod(has-3, just-2)
+root(ROOT-0, has-3)
+det(name-6, a-4)
+amod(name-6, different-5)
+dobj(has-3, name-6)
+
+(ROOT
+  (NP
+    (NP (RB So))
+    (: ...)
+    (NP
+      (ADJP (JJ separate)
+        (CC but)
+        (JJ equal)))
+    (. ?)))
+
+root(ROOT-0, So-1)
+dep(So-1, separate-3)
+dep(So-1, equal-5)
+conj_but(separate-3, equal-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG thinking)
+        (S
+          (S
+            (NP (PRP we))
+            (VP (VBD tried)
+              (NP (DT that))
+              (ADVP (RB once) (RB before))))
+          (CC and)
+          (S
+            (NP (PRP it))
+            (VP (VBD did) (RB n't)
+              (VP (VB work)
+                (PRT (RP out))))))))
+    (. .)))
+
+nsubj(thinking-3, I-1)
+aux(thinking-3, 'm-2)
+root(ROOT-0, thinking-3)
+nsubj(tried-5, we-4)
+dep(thinking-3, tried-5)
+dobj(tried-5, that-6)
+advmod(before-8, once-7)
+advmod(tried-5, before-8)
+nsubj(work-13, it-10)
+aux(work-13, did-11)
+neg(work-13, n't-12)
+dep(thinking-3, work-13)
+conj_and(tried-5, work-13)
+prt(work-13, out-14)
+

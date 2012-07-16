@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ reads)
+      (PP (TO to)
+        (NP (PRP me)))
+      (PP (IN like)
+        (NP
+          (NP (NN anyone))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ 's)
+                (NP
+                  (NP (DT an) (JJ alcoholic))
+                  (SBAR
+                    (S
+                      (VP (VBZ does) (RB n't)
+                        (VP (VB go)
+                          (PP (TO to)
+                            (NP (NN heaven))))))))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+ccomp(reads-5, mean-2)
+nsubj(reads-5, this-4)
+root(ROOT-0, reads-5)
+prep_to(reads-5, me-7)
+prep_like(reads-5, anyone-9)
+nsubj(alcoholic-13, anyone-9)
+cop(alcoholic-13, 's-11)
+det(alcoholic-13, an-12)
+rcmod(anyone-9, alcoholic-13)
+aux(go-16, does-14)
+neg(go-16, n't-15)
+rcmod(alcoholic-13, go-16)
+prep_to(go-16, heaven-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT No) (NN one))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ 's)
+            (ADJP (JJ covetous))))))
+    (VP (VBZ goes)
+      (PP (TO to)
+        (NP (NN heaven))))
+    (. .)))
+
+det(one-2, No-1)
+nsubj(covetous-5, one-2)
+nsubj(goes-6, one-2)
+cop(covetous-5, 's-4)
+rcmod(one-2, covetous-5)
+root(ROOT-0, goes-6)
+prep_to(goes-6, heaven-8)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT that))
+    (NP
+      (NP (DT the) (NN line))
+      (PP (IN from)
+        (NP (PRP you) (NNS guys))))
+    (. ?)))
+
+cop(line-4, Is-1)
+nsubj(line-4, that-2)
+det(line-4, the-3)
+root(ROOT-0, line-4)
+dep(guys-7, you-6)
+prep_from(line-4, guys-7)
+

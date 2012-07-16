@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (S
+      (NP (NN Love))
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ sufficient)
+          (PP (IN for)
+            (NP (NN marriage))))))
+    (, ,)
+    (CC or)
+    (S
+      (NP (NNS brothers\/sisters))
+      (VP (MD could)
+        (VP (VB marry))))
+    (. .)))
+
+nsubj(sufficient-4, Love-1)
+cop(sufficient-4, is-2)
+neg(sufficient-4, not-3)
+root(ROOT-0, sufficient-4)
+prep_for(sufficient-4, marriage-6)
+nsubj(marry-11, brothers\/sisters-9)
+aux(marry-11, could-10)
+conj_or(sufficient-4, marry-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN idea))
+      (SBAR (IN that)
+        (S
+          (NP (NN marriage))
+          (VP (MD should)
+            (ADVP (RB simply))
+            (VP (VB be)
+              (VP (VBN based)
+                (PP (IN on)
+                  (NP
+                    (NP (CD two) (NNS people))
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBP love)
+                          (NP (DT each) (JJ other)))))))))))))
+    (VP (VBZ is)
+      (ADVP (RB easily))
+      (VP (VBN dismissed)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (VP (VBP consider)
+              (NP
+                (NP (DT a) (NN brother)
+                  (CC and)
+                  (NN sister))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (MD would)
+                      (VP (VB wish)
+                        (NP (DT this) (NN arrangement))))))))))))
+    (. .)))
+
+det(idea-2, The-1)
+nsubjpass(dismissed-18, idea-2)
+complm(idea-2, that-3)
+nsubjpass(idea-2, marriage-4)
+aux(idea-2, should-5)
+advmod(idea-2, simply-6)
+auxpass(idea-2, be-7)
+num(people-11, two-10)
+prep_based_on(idea-2, people-11)
+nsubj(love-13, people-11)
+rcmod(people-11, love-13)
+det(other-15, each-14)
+dobj(love-13, other-15)
+auxpass(dismissed-18, is-16)
+advmod(dismissed-18, easily-17)
+root(ROOT-0, dismissed-18)
+advmod(consider-21, when-19)
+nsubj(consider-21, you-20)
+advcl(dismissed-18, consider-21)
+det(brother-23, a-22)
+dobj(consider-21, brother-23)
+nsubj(wish-28, brother-23)
+dobj(consider-21, sister-25)
+conj_and(brother-23, sister-25)
+nsubj(wish-28, sister-25)
+aux(wish-28, would-27)
+rcmod(brother-23, wish-28)
+det(arrangement-30, this-29)
+dobj(wish-28, arrangement-30)
+

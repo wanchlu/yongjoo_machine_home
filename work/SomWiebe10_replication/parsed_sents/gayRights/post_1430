@@ -1,0 +1,41 @@
+(ROOT
+  (SBAR (IN if)
+    (S
+      (NP
+        (NP (DT a) (NN man))
+        (CC and)
+        (NP (NNS women)))
+      (VP (VBP are) (RB not)
+        (ADJP (JJ able)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP (NNS kids))
+                (ADVP (RB naturally))))))
+        (SBAR (MD should)
+          (S
+            (NP (PRP they))
+            (VP (VB be)
+              (VP (VBN prevented)
+                (PP (IN from)
+                  (S
+                    (VP (VBG adopting))))))))))))
+
+mark(able-8, if-1)
+det(man-3, a-2)
+nsubj(able-8, man-3)
+conj_and(man-3, women-5)
+nsubj(able-8, women-5)
+cop(able-8, are-6)
+neg(able-8, not-7)
+root(ROOT-0, able-8)
+aux(have-10, to-9)
+xcomp(able-8, have-10)
+dobj(have-10, kids-11)
+advmod(have-10, naturally-12)
+dep(prevented-16, should-13)
+nsubjpass(prevented-16, they-14)
+auxpass(prevented-16, be-15)
+ccomp(able-8, prevented-16)
+prepc_from(prevented-16, adopting-18)
+

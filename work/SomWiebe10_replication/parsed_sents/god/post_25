@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Scientists))
+      (VP (VBP are)
+        (PP (IN in)
+          (NP (JJ near) (JJ unanimous) (NN agreement)))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN universe))
+            (VP (VBD came)
+              (PP (IN into)
+                (S
+                  (VP (VBG being)
+                    (ADVP
+                      (NP
+                        (QP (RB roughly) (CD 14) (CD billion))
+                        (NNS years))
+                      (RB ago))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT all) (JJ current) (NN evidence))
+      (VP (VBZ supports)
+        (NP (DT this) (NN theory))))
+    (. .)))
+
+nsubj(are-2, Scientists-1)
+root(ROOT-0, are-2)
+amod(agreement-6, near-4)
+amod(agreement-6, unanimous-5)
+prep_in(are-2, agreement-6)
+complm(came-10, that-7)
+det(universe-9, the-8)
+nsubj(came-10, universe-9)
+ccomp(are-2, came-10)
+prepc_into(came-10, being-12)
+quantmod(billion-15, roughly-13)
+number(billion-15, 14-14)
+num(years-16, billion-15)
+npadvmod(ago-17, years-16)
+advmod(being-12, ago-17)
+det(evidence-22, all-20)
+amod(evidence-22, current-21)
+nsubj(supports-23, evidence-22)
+conj_and(are-2, supports-23)
+det(theory-25, this-24)
+dobj(supports-23, theory-25)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN discovery))
+      (PP (IN of)
+        (NP (JJ cosmic) (NN microwave) (NN background) (NN radiation))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ primary) (NN piece))
+        (PP (IN of)
+          (NP
+            (NP (NN evidence))
+            (PP (IN for)
+              (NP (DT the) (`` ``) (JJ big) (NN bang) (NN theory)))))))
+    (. .)))
+
+det(discovery-2, The-1)
+nsubj(piece-11, discovery-2)
+amod(radiation-7, cosmic-4)
+nn(radiation-7, microwave-5)
+nn(radiation-7, background-6)
+prep_of(discovery-2, radiation-7)
+cop(piece-11, is-8)
+det(piece-11, the-9)
+amod(piece-11, primary-10)
+root(ROOT-0, piece-11)
+prep_of(piece-11, evidence-13)
+det(theory-19, the-15)
+amod(theory-19, big-17)
+nn(theory-19, bang-18)
+prep_for(evidence-13, theory-19)
+

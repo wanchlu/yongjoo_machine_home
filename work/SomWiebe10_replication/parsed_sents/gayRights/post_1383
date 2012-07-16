@@ -1,0 +1,147 @@
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (NP
+      (NP (RB much))
+      (PP (IN of)
+        (NP (DT that) (NN argument))))
+    (VP (VBZ is)
+      (PP (IN outside)
+        (NP
+          (NP (DT the) (NN scope))
+          (PP (IN of)
+            (NP (DT the) (NN debate))))))
+    (. .)))
+
+dep(is-7, Well-1)
+nsubj(is-7, much-3)
+det(argument-6, that-5)
+prep_of(much-3, argument-6)
+root(ROOT-0, is-7)
+det(scope-10, the-9)
+prep_outside(is-7, scope-10)
+det(debate-13, the-12)
+prep_of(scope-10, debate-13)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (MD would)
+      (NP (PRP I))
+      (VP (VB do)))
+    (. ?)))
+
+dobj(do-4, What-1)
+aux(do-4, would-2)
+nsubj(do-4, I-3)
+root(ROOT-0, do-4)
+
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (, ,)
+    (NP (PRP I))
+    (, ,)
+    (ADVP (RB personally))
+    (, ,)
+    (VP (MD would) (RB n't)
+      (VP (VB like)
+        (NP (PRP it))))
+    (. .)))
+
+dep(like-9, Well-1)
+nsubj(like-9, I-3)
+advmod(like-9, personally-5)
+aux(like-9, would-7)
+neg(like-9, n't-8)
+root(ROOT-0, like-9)
+dobj(like-9, it-10)
+
+(ROOT
+  (S (CC But)
+    (NP (DT that))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (ADJP (JJ wrong)))))))
+    (. .)))
+
+cc(mean-5, But-1)
+nsubj(mean-5, that-2)
+aux(mean-5, does-3)
+neg(mean-5, n't-4)
+root(ROOT-0, mean-5)
+nsubj(wrong-8, it-6)
+cop(wrong-8, 's-7)
+ccomp(mean-5, wrong-8)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP I))
+          (VP (VBP think)
+            (SBAR
+              (S
+                (NP (JJ many) (NNS people))
+                (VP (VBP are)
+                  (VP (VBG missing)
+                    (NP (DT the) (NN point))))))))))
+    (. .)))
+
+nsubj('s-2, That-1)
+root(ROOT-0, 's-2)
+advmod(think-5, where-3)
+nsubj(think-5, I-4)
+advcl('s-2, think-5)
+amod(people-7, many-6)
+nsubj(missing-9, people-7)
+aux(missing-9, are-8)
+ccomp(think-5, missing-9)
+det(point-11, the-10)
+dobj(missing-9, point-11)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are) (RB n't)
+      (VP (VBG drawing)
+        (NP
+          (NP (DT the) (NN line))
+          (PP (IN between)
+            (NP
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (PRP they))
+                  (VP (VBP like))))
+              (CC and)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ right))))))))))
+    (. .)))
+
+nsubj(drawing-4, They-1)
+aux(drawing-4, are-2)
+neg(drawing-4, n't-3)
+root(ROOT-0, drawing-4)
+det(line-6, the-5)
+dobj(drawing-4, line-6)
+dobj(like-10, what-8)
+rel(like-10, what-8)
+nsubj(like-10, they-9)
+prep_between(line-6, like-10)
+nsubj(right-14, what-12)
+cop(right-14, is-13)
+prep_between(line-6, right-14)
+conj_and(like-10, right-14)
+

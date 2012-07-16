@@ -1,0 +1,158 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (PP (IN from)
+      (NP (DT a) (JJ different) (NN angle))
+      (. ?))))
+
+root(ROOT-0, Why-1)
+dep(Why-1, from-2)
+det(angle-5, a-3)
+amod(angle-5, different-4)
+pobj(from-2, angle-5)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBD cant)
+      (NP (PRP you))
+      (VP (VB answer)
+        (NP (PRP$ my) (NN question))
+        (NP
+          (NP (DT the) (NN way))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)))))))
+    (. ?)))
+
+advmod(answer-4, Why-1)
+aux(answer-4, cant-2)
+nsubj(answer-4, you-3)
+root(ROOT-0, answer-4)
+poss(question-6, my-5)
+dep(answer-4, question-6)
+det(way-8, the-7)
+dobj(answer-4, way-8)
+nsubj(is-10, it-9)
+rcmod(way-8, is-10)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (PRP$ My) (NN answer))
+        (PP (TO to)
+          (NP (PRP you))))
+      (VP (VBZ is)
+        (S
+          (INTJ (UH no))
+          (, ,)
+          (NP (PRP I))
+          (VP (MD ca) (RB n't)
+            (VP (VB prove)
+              (PP (TO to)
+                (NP (PRP you)))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP$ my) (NN religion))
+                  (VP (VBZ is)
+                    (ADJP (JJ true))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB tell)
+          (NP (PRP you))
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBP know)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ is))))))))))
+    (. .)))
+
+poss(answer-2, My-1)
+nsubj(is-5, answer-2)
+prep_to(answer-2, you-4)
+root(ROOT-0, is-5)
+dep(prove-11, no-6)
+nsubj(prove-11, I-8)
+aux(prove-11, ca-9)
+neg(prove-11, n't-10)
+ccomp(is-5, prove-11)
+prep_to(prove-11, you-13)
+complm(true-18, that-14)
+poss(religion-16, my-15)
+nsubj(true-18, religion-16)
+cop(true-18, is-17)
+ccomp(prove-11, true-18)
+nsubj(tell-23, I-21)
+aux(tell-23, can-22)
+conj_but(is-5, tell-23)
+dobj(tell-23, you-24)
+complm(know-27, that-25)
+nsubj(know-27, I-26)
+ccomp(tell-23, know-27)
+complm(is-30, that-28)
+nsubj(is-30, it-29)
+ccomp(know-27, is-30)
+
+(ROOT
+  (FRAG
+    (FRAG
+      (ADVP (RB Its))
+      (RB not)
+      (ADVP (RB so) (RB much))
+      (PP (IN about)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ 's)
+              (ADJP (JJ true)
+                (CC or)
+                (RB not)))))))
+    (, ,)
+    (CC but)
+    (SBAR (IN about)
+      (S
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (PRP you))
+            (VP (VBP live)
+              (NP
+                (NP (PRP$ your) (NN life))
+                (CC and)
+                (NP (DT the) (NNS choices))))))
+        (NP (PRP you))
+        (VP (VBP make))))
+    (. .)))
+
+dep(not-2, Its-1)
+root(ROOT-0, not-2)
+advmod(much-4, so-3)
+dep(not-2, much-4)
+dep(not-2, about-5)
+nsubj(true-8, what-6)
+cop(true-8, 's-7)
+pcomp(about-5, true-8)
+pcomp(about-5, not-10)
+conj_or(true-8, not-10)
+neg(true-8, not-10)
+dep(not-2, but-12)
+mark(make-23, about-13)
+advmod(live-16, how-14)
+nsubj(live-16, you-15)
+dep(make-23, live-16)
+poss(life-18, your-17)
+dobj(live-16, life-18)
+det(choices-21, the-20)
+dobj(live-16, choices-21)
+conj_and(life-18, choices-21)
+nsubj(make-23, you-22)
+dep(not-2, make-23)
+

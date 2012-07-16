@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NNP Categorical) (NNP Imperative))
+        (S (RB not)
+          (VP (TO to)
+            (VP (VB enact)
+              (NP (JJ same-sex) (NN marriage)))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(Imperative-5, a-3)
+nn(Imperative-5, Categorical-4)
+nsubj(is-2, Imperative-5)
+neg(enact-8, not-6)
+aux(enact-8, to-7)
+infmod(Imperative-5, enact-8)
+amod(marriage-10, same-sex-9)
+dobj(enact-8, marriage-10)
+
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHADVP (WRB When))
+        (S
+          (NP (PRP you))
+          (VP (VBP universalize)
+            (NP (JJ same-sex) (NN marriage)))))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ yields)
+        (NP (DT a) (NN contradiction))))
+    (, ,) (IN so)
+    (S
+      (NP (DT a)
+        (ADJP (RB perfectly) (JJ rational))
+        (NN person))
+      (VP (MD would) (RB not)
+        (VP (VB enact)
+          (NP (JJ same-sex) (NN marriage)))))
+    (. .)))
+
+advmod(universalize-3, When-1)
+nsubj(universalize-3, you-2)
+advcl(yields-8, universalize-3)
+amod(marriage-5, same-sex-4)
+dobj(universalize-3, marriage-5)
+nsubj(yields-8, it-7)
+root(ROOT-0, yields-8)
+det(contradiction-10, a-9)
+dobj(yields-8, contradiction-10)
+dep(yields-8, so-12)
+det(person-16, a-13)
+advmod(rational-15, perfectly-14)
+amod(person-16, rational-15)
+nsubj(enact-19, person-16)
+aux(enact-19, would-17)
+neg(enact-19, not-18)
+ccomp(yields-8, enact-19)
+amod(marriage-21, same-sex-20)
+dobj(enact-19, marriage-21)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (JJ other) (NNS words)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (ADJP (JJ wrong)))
+    (. .)))
+
+amod(words-3, other-2)
+prep_in(wrong-7, words-3)
+nsubj(wrong-7, it-5)
+cop(wrong-7, 's-6)
+root(ROOT-0, wrong-7)
+

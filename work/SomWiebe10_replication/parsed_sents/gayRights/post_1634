@@ -1,0 +1,85 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (ADVP (RB homosexuality))
+        (VP (VBZ increases)
+          (PP (TO to)
+            (NP (DT the) (NN point))))))
+    (ADVP (DT that) (RBR more))
+    (NP (NNS people))
+    (VP (VBP are)
+      (ADJP (JJ homosexual)
+        (PP (IN than) (RB not))))
+    (: ...)))
+
+mark(increases-4, If-2)
+advmod(increases-4, homosexuality-3)
+dep(homosexual-12, increases-4)
+det(point-7, the-6)
+prep_to(increases-4, point-7)
+dep(more-9, that-8)
+advmod(homosexual-12, more-9)
+nsubj(homosexual-12, people-10)
+cop(homosexual-12, are-11)
+root(ROOT-0, homosexual-12)
+prep(homosexual-12, than-13)
+neg(than-13, not-14)
+
+(ROOT
+  (S ('' '')
+    (NP (DT This))
+    (VP (VBZ is) (RB not)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB happen))))))
+    (. .)))
+
+nsubj(going-5, This-2)
+xsubj(happen-7, This-2)
+aux(going-5, is-3)
+neg(going-5, not-4)
+root(ROOT-0, going-5)
+aux(happen-7, to-6)
+xcomp(going-5, happen-7)
+
+(ROOT
+  (S
+    (NP (NNP Homosexuality))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (NN choice)))
+    (. .)))
+
+nsubj(choice-5, Homosexuality-1)
+cop(choice-5, is-2)
+neg(choice-5, not-3)
+det(choice-5, a-4)
+root(ROOT-0, choice-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT a) (NN trait))
+      (SBAR (IN that)
+        (S
+          (NP (RB only) (DT a) (JJ small) (NN minority))
+          (VP (VBZ is)
+            (VP (VBN born)
+              (PP (IN with)))))))
+    (. .)))
+
+nsubj(trait-4, It-1)
+cop(trait-4, is-2)
+det(trait-4, a-3)
+root(ROOT-0, trait-4)
+complm(born-11, that-5)
+advmod(minority-9, only-6)
+det(minority-9, a-7)
+amod(minority-9, small-8)
+nsubjpass(born-11, minority-9)
+auxpass(born-11, is-10)
+ccomp(trait-4, born-11)
+prep(born-11, with-12)
+

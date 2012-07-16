@@ -1,0 +1,66 @@
+(ROOT
+  (NP (FW Rude) (. .)))
+
+root(ROOT-0, Rude-1)
+
+(ROOT
+  (FRAG
+    (NP (RB Some))
+    (, ,) (RB not)
+    (NP (DT all))
+    (. .)))
+
+dep(not-3, Some-1)
+root(ROOT-0, not-3)
+dep(not-3, all-4)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB repeat)
+            (NP (PRP myself))
+            (SBAR (IN because)
+              (S
+                (NP (DT those))
+                (VP (VBP are)
+                  (NP (DT the) (NNS facts)))))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+xsubj(repeat-4, I-1)
+root(ROOT-0, have-2)
+aux(repeat-4, to-3)
+xcomp(have-2, repeat-4)
+dobj(repeat-4, myself-5)
+mark(facts-10, because-6)
+nsubj(facts-10, those-7)
+cop(facts-10, are-8)
+det(facts-10, the-9)
+advcl(repeat-4, facts-10)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (ADVP (RB just)
+        (PP (IN in)
+          (NP (NN denial))))
+      (ADVP (RB now))
+      (, ,)
+      (NP
+        (NP (NN deal))
+        (PP (IN with)
+          (NP (PRP it)))))
+    (. .)))
+
+nsubj(deal-8, You-1)
+cop(deal-8, 're-2)
+advmod(deal-8, just-3)
+prep_in(just-3, denial-5)
+advmod(deal-8, now-6)
+root(ROOT-0, deal-8)
+prep_with(deal-8, it-10)
+

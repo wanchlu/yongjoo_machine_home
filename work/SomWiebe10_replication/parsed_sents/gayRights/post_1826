@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (ADJP (JJ gay)))))
+    (NP (PRP you))
+    (VP (MD can)
+      (VP (VB go)
+        (VP (VB kill)
+          (NP (PRP yourself)))))
+    (. .)))
+
+mark(gay-4, If-1)
+nsubj(gay-4, you-2)
+cop(gay-4, 're-3)
+advcl(go-7, gay-4)
+nsubj(go-7, you-5)
+aux(go-7, can-6)
+root(ROOT-0, go-7)
+xcomp(go-7, kill-8)
+dobj(kill-8, yourself-9)
+
+(ROOT
+  (SINV
+    (S
+      (NP (PRP I))
+      (VP (MD 'll)
+        (ADVP (RB even))
+        (VP (VB make)
+          (NP (PRP it) (JJ multiple) (NN choice)))))
+    (: :)
+    (NP (NNP A.) (NNP HangingB))
+    (. .)))
+
+nsubj(make-4, I-1)
+aux(make-4, 'll-2)
+advmod(make-4, even-3)
+root(ROOT-0, make-4)
+dep(choice-7, it-5)
+amod(choice-7, multiple-6)
+dobj(make-4, choice-7)
+nn(HangingB-10, A.-9)
+dep(make-4, HangingB-10)
+
+(ROOT
+  (S
+    (NP (NNP Cremation) (NNP C.A) (NNP Gun))
+    (VP (VBP Have)
+      (NP (NN fun)))
+    (. .)))
+
+nn(Gun-3, Cremation-1)
+nn(Gun-3, C.A-2)
+nsubj(Have-4, Gun-3)
+root(ROOT-0, Have-4)
+dobj(Have-4, fun-5)
+

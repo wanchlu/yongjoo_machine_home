@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (LST (LS 1) (-RRB- -RRB-))
+    (ADVP (WRB Why))
+    (VP (VB do)
+      (S
+        (NP (PRP you))
+        (VP (VB have)
+          (NP (NN faith)))))
+    (. ?)))
+
+dep(do-4, 1-1)
+advmod(do-4, Why-3)
+root(ROOT-0, do-4)
+nsubj(have-6, you-5)
+ccomp(do-4, have-6)
+dobj(have-6, faith-7)
+
+(ROOT
+  (S
+    (LST (LS 2) (-RRB- -RRB-))
+    (NP (WP What))
+    (VP (VBZ does)
+      (SBAR
+        (S
+          (NP (`` ``) (JJ universal) (NN entity) ('' ''))
+          (VP (VBP mean)))))
+    (. ?)))
+
+dep(does-4, 2-1)
+nsubj(does-4, What-3)
+root(ROOT-0, does-4)
+amod(entity-7, universal-6)
+nsubj(mean-9, entity-7)
+ccomp(does-4, mean-9)
+
+(ROOT
+  (S
+    (LST (LS 3) (-RRB- -RRB-))
+    (NP (WP What))
+    (VP (VBZ makes)
+      (S
+        (NP (PRP you))
+        (VP (VB propose)
+          (SBAR (IN that)
+            (S
+              (NP (NN god))
+              (VP (VBZ is)
+                (NP
+                  (NP (DT an) (NN entity))
+                  (SBAR
+                    (S
+                      (NP
+                        (NP (DT that))
+                        (PP (IN in)
+                          (CC and)
+                          (IN of)
+                          (NP (PRP itself))))
+                      (VP (VBZ compels)
+                        (NP (NN goodness))))))))))))
+    (. ?)))
+
+dep(makes-4, 3-1)
+nsubj(makes-4, What-3)
+root(ROOT-0, makes-4)
+nsubj(propose-6, you-5)
+ccomp(makes-4, propose-6)
+complm(entity-11, that-7)
+nsubj(entity-11, god-8)
+cop(entity-11, is-9)
+det(entity-11, an-10)
+ccomp(propose-6, entity-11)
+conj_and(that-12, that-12')
+nsubj(compels-17, that-12)
+nsubj(compels-17, that-12')
+prep_in(that-12, itself-16)
+prep_of(that-12', itself-16)
+rcmod(entity-11, compels-17)
+dobj(compels-17, goodness-18)
+

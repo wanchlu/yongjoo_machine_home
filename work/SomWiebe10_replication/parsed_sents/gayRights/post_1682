@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NNP WE) (NNP DONT))
+    (VP (VBP HAVE)
+      (NP
+        (NP (DT THE) (NNP SAME) (NNP GENES) (IN AS) (NNP FISH))
+        (, ,)
+        (NP (NNP WERE) (NNP NOT) (NNP FISH)
+          (CC AND)
+          (NNP WE) (NNP DONT) (NNP RESEMBLE) (NNP FISH))))
+    (. .)))
+
+nn(DONT-2, WE-1)
+nsubj(HAVE-3, DONT-2)
+root(ROOT-0, HAVE-3)
+det(FISH-8, THE-4)
+nn(FISH-8, SAME-5)
+nn(FISH-8, GENES-6)
+amod(FISH-8, AS-7)
+dobj(HAVE-3, FISH-8)
+nn(FISH-12, WERE-10)
+nn(FISH-12, NOT-11)
+appos(FISH-8, FISH-12)
+nn(FISH-17, WE-14)
+nn(FISH-17, DONT-15)
+nn(FISH-17, RESEMBLE-16)
+appos(FISH-8, FISH-17)
+conj_and(FISH-12, FISH-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP SO))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (SBAR (IN if)
+            (S
+              (NP (DT a) (NN fish))
+              (VP (VBZ grows)
+                (ADJP (IN up) (JJ homosexual)))))
+          (, ,)
+          (VP (VBZ does) (RB n't)
+            (VP (VB mean)
+              (NP (DT a) (NN child)))))))
+    (VP (MD will))
+    (. .)))
+
+dep(mean-12, SO-1)
+nsubj(will-15, SO-1)
+mark(grows-6, if-3)
+det(fish-5, a-4)
+nsubj(grows-6, fish-5)
+advcl(mean-12, grows-6)
+dep(homosexual-8, up-7)
+acomp(grows-6, homosexual-8)
+aux(mean-12, does-10)
+neg(mean-12, n't-11)
+rcmod(SO-1, mean-12)
+det(child-14, a-13)
+dobj(mean-12, child-14)
+root(ROOT-0, will-15)
+

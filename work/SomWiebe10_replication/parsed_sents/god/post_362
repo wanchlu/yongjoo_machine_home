@@ -1,0 +1,133 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Once) (RB again))
+    (. .)))
+
+advmod(again-2, Once-1)
+root(ROOT-0, again-2)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN response))
+        (PP (TO to)
+          (NP (DT the) (NN video)))))
+    (, ,)
+    (NP (WDT which))
+    (VP (VBD stated)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP
+              (NP (CD two) (NNS ultimatums))
+              (, ,)
+              (NP (CD 1)))))))
+    (. .)))
+
+prep_in(stated-8, response-2)
+det(video-5, the-4)
+prep_to(response-2, video-5)
+nsubj(stated-8, which-7)
+root(ROOT-0, stated-8)
+complm(are-11, that-9)
+expl(are-11, there-10)
+ccomp(stated-8, are-11)
+num(ultimatums-13, two-12)
+nsubj(are-11, ultimatums-13)
+appos(ultimatums-13, 1-15)
+
+(ROOT
+  (S
+    (NP (DT Either) (NN everything))
+    (VP (VBD came)
+      (PP (IN from)
+        (NP
+          (NP (NN nothing))
+          (, ,)
+          (CC or)
+          (NP (CD 2)))))
+    (. .)))
+
+det(everything-2, Either-1)
+nsubj(came-3, everything-2)
+root(ROOT-0, came-3)
+prep_from(came-3, nothing-5)
+prep_from(came-3, 2-8)
+conj_or(nothing-5, 2-8)
+
+(ROOT
+  (S
+    (NP (NN Something))
+    (ADVP (RB always))
+    (VP (VBD existed))
+    (. .)))
+
+nsubj(existed-3, Something-1)
+advmod(existed-3, always-2)
+root(ROOT-0, existed-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBD did)
+            (X (VBD was))))))
+    (VP (VBP assume)
+      (SBAR
+        (S
+          (NP (NN everything))
+          (VP
+            (VP (VBD came)
+              (PP (IN from)
+                (NP (RB somewhere))))
+            (, ,)
+            (VP (VBD placed)
+              (NP (NNP God))
+              (PP (IN before)
+                (NP
+                  (NP (DT all))
+                  (PP (IN of)
+                    (NP (DT this))))))
+            (, ,)
+            (CC and)
+            (VP (VBD closed)
+              (PRT (RP off))
+              (NP
+                (NP (DT the) (JJ causality) (NN chain))
+                (PP (IN with)
+                  (NP (DT the) (JJ exact) (JJ opposite) (NN argument)))))))))
+    (. .)))
+
+dobj(did-3, All-1)
+nsubj(assume-5, All-1)
+nsubj(did-3, you-2)
+rcmod(All-1, did-3)
+dep(did-3, was-4)
+root(ROOT-0, assume-5)
+nsubj(came-7, everything-6)
+nsubj(placed-11, everything-6)
+nsubj(closed-19, everything-6)
+ccomp(assume-5, came-7)
+prep(came-7, from-8)
+pobj(from-8, somewhere-9)
+ccomp(assume-5, placed-11)
+conj_and(came-7, placed-11)
+dobj(placed-11, God-12)
+prep_before(placed-11, all-14)
+prep_of(all-14, this-16)
+ccomp(assume-5, closed-19)
+conj_and(came-7, closed-19)
+prt(closed-19, off-20)
+det(chain-23, the-21)
+amod(chain-23, causality-22)
+dobj(closed-19, chain-23)
+det(argument-28, the-25)
+amod(argument-28, exact-26)
+amod(argument-28, opposite-27)
+prep_with(chain-23, argument-28)
+

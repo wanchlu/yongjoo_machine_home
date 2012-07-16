@@ -1,0 +1,53 @@
+(ROOT
+  (PP (IN of)
+    (NP (NN course))
+    (: ...)))
+
+root(ROOT-0, of-1)
+pobj(of-1, course-2)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (S
+    (NP (NN god))
+    (VP (VBP exist))
+    (: ...)))
+
+nsubj(exist-2, god-1)
+root(ROOT-0, exist-2)
+
+(ROOT
+  (S
+    (VP (VB Nd)
+      (NP
+        (NP (DT the) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (ADVP (RB dnt))
+            (VP (VBP believe)
+              (SBAR (IN that)
+                (S
+                  (NP (NN god))
+                  (VP (VBP exist)
+                    (NP (JJ dont) (NN belive))
+                    (PP (IN on)
+                      (NP (PRP themselves)))))))))))
+    (: ...)))
+
+root(ROOT-0, Nd-1)
+det(people-3, the-2)
+dobj(Nd-1, people-3)
+nsubj(believe-6, people-3)
+advmod(believe-6, dnt-5)
+rcmod(people-3, believe-6)
+complm(exist-9, that-7)
+nsubj(exist-9, god-8)
+ccomp(believe-6, exist-9)
+amod(belive-11, dont-10)
+dobj(exist-9, belive-11)
+prep_on(exist-9, themselves-13)
+

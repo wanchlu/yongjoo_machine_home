@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADJP (RB as) (RB far)
+        (PP (IN from)
+          (NP (DT the) (NN truth))))
+      (SBAR (IN as)
+        (S
+          (NP (PRP one))
+          (VP (MD can)
+            (VP (VB get))))))
+    (. !)))
+
+nsubj(far-4, That-1)
+cop(far-4, is-2)
+advmod(far-4, as-3)
+root(ROOT-0, far-4)
+det(truth-7, the-6)
+prep_from(far-4, truth-7)
+mark(get-11, as-8)
+nsubj(get-11, one-9)
+aux(get-11, can-10)
+advcl(far-4, get-11)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (DT no) (NNS statistics))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP show)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (PRP$ your) (NN take))
+                    (PP (IN on)
+                      (NP (DT this))))
+                  (VP (VBZ is)
+                    (ADJP (JJ true))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+det(statistics-4, no-3)
+nsubj(are-2, statistics-4)
+nsubj(show-6, statistics-4)
+rcmod(statistics-4, show-6)
+complm(true-13, that-7)
+poss(take-9, your-8)
+nsubj(true-13, take-9)
+prep_on(take-9, this-11)
+cop(true-13, is-12)
+ccomp(show-6, true-13)
+

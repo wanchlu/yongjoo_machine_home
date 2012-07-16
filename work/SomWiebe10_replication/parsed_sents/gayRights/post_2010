@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not))
+    (. .)))
+
+dep('s-4, No-1)
+nsubj('s-4, It-3)
+root(ROOT-0, 's-4)
+neg('s-4, not-5)
+
+(ROOT
+  (S
+    (NP (NNS Gays))
+    (VP
+      (VP (MD can)
+        (VP (VB be)
+          (NP (NNP Christian))))
+      (, ,)
+      (CC and)
+      (VP (MD can)
+        (VP (VB be)
+          (ADJP (JJ welcome)
+            (PP (IN in)
+              (NP (JJ certain) (NNS churches)))))))
+    (. .)))
+
+nsubj(Christian-4, Gays-1)
+nsubj(welcome-9, Gays-1)
+aux(Christian-4, can-2)
+cop(Christian-4, be-3)
+root(ROOT-0, Christian-4)
+aux(welcome-9, can-7)
+cop(welcome-9, be-8)
+conj_and(Christian-4, welcome-9)
+amod(churches-12, certain-11)
+prep_in(welcome-9, churches-12)
+

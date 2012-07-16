@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBZ exists))
+    (. .)))
+
+nsubj(exists-2, God-1)
+root(ROOT-0, exists-2)
+
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (DT All))
+        ('' '')
+        (SBAR
+          (S
+            (NP (PRP He))
+            ('' '')
+            (VP (VBZ is) (, ,)
+              (SQ (VBZ is)
+                (NP (NN energy))))))))
+    (. .)))
+
+root(ROOT-0, All-1)
+nsubj(is-5, He-3)
+rcmod(All-1, is-5)
+dep(is-5, is-7)
+nsubj(is-7, energy-8)
+
+(ROOT
+  (NP (DT The) (NN energy)
+    (SBAR
+      (WHNP (WDT that))
+      (S
+        (VP (VBZ makes)
+          (PRT (RP up))
+          (NP
+            (NP (NN everything))
+            (PP (IN in)
+              (NP (NN existance)))))))
+    (. .)))
+
+det(energy-2, The-1)
+root(ROOT-0, energy-2)
+nsubj(makes-4, that-3)
+ccomp(energy-2, makes-4)
+prt(makes-4, up-5)
+dobj(makes-4, everything-6)
+prep_in(everything-6, existance-8)
+
+(ROOT
+  (S
+    (VP (VB Take)
+      (NP (JJ THAT) (NNS athiests)))
+    (. .)))
+
+root(ROOT-0, Take-1)
+amod(athiests-3, THAT-2)
+dobj(Take-1, athiests-3)
+

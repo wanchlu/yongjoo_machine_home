@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (ADVP (RB only))
+    (VP (VBP believe)
+      (PP (IN in)
+        (NP (NN god)))
+      (SBAR (IN because)
+        (S
+          (NP (PRP they))
+          (VP (VBP need)
+            (S
+              (VP (TO to)
+                (VP (VB justify)
+                  (NP (NN life)))))))))
+    (. .)))
+
+nsubj(believe-3, People-1)
+advmod(believe-3, only-2)
+root(ROOT-0, believe-3)
+prep_in(believe-3, god-5)
+mark(need-8, because-6)
+nsubj(need-8, they-7)
+xsubj(justify-10, they-7)
+advcl(believe-3, need-8)
+aux(justify-10, to-9)
+xcomp(need-8, justify-10)
+dobj(justify-10, life-11)
+
+(ROOT
+  (FRAG (CC And)
+    (ADVP (JJ other)
+      (NP (NNS things)))
+    (. .)))
+
+dep(other-2, And-1)
+root(ROOT-0, other-2)
+dep(other-2, things-3)
+

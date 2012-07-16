@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (S
+        (NP (DT this))
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ true))
+            (SBAR (IN because)
+              (S
+                (NP (EX there))
+                (VP (VBP are)
+                  (NP (JJR more) (NNS obstacles)
+                    (S
+                      (VP (TO to)
+                        (VP (VB overcome)
+                          (S
+                            (VP (TO to)
+                              (VP (VB get)
+                                (ADJP (JJ married))))))))))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+nsubj(true-6, this-3)
+aux(true-6, to-4)
+cop(true-6, be-5)
+xcomp(believe-2, true-6)
+mark(are-9, because-7)
+expl(are-9, there-8)
+advcl(true-6, are-9)
+amod(obstacles-11, more-10)
+nsubj(are-9, obstacles-11)
+aux(overcome-13, to-12)
+infmod(obstacles-11, overcome-13)
+aux(married-16, to-14)
+dep(married-16, get-15)
+xcomp(overcome-13, married-16)
+
+(ROOT
+  (S
+    (NP (NNS Heteros))
+    (VP (VBP are)
+      (UCP
+        (SBAR
+          (X (SYM \*))
+          (S
+            (S
+              (VP (VBD expected)
+                (X (SYM \*))
+                (S
+                  (VP (TO to)
+                    (VP (VB get))))))
+            (VP (VBD married))))
+        (, ,)
+        (CC and)
+        (S
+          (VP (MD will) (, ,)
+            (PP (IN at)
+              (NP (NNS times)))
+            (, ,)
+            (SBAR (RB even)
+              (WHADVP (WRB when) (RB not))
+              (S
+                (VP (VBN prepared))))))))
+    (. .)))
+
+nsubj(are-2, Heteros-1)
+root(ROOT-0, are-2)
+dep(married-8, \*-3)
+csubj(married-8, expected-4)
+dep(expected-4, \*-5)
+aux(get-7, to-6)
+xcomp(expected-4, get-7)
+dep(are-2, married-8)
+dep(are-2, will-11)
+conj_and(married-8, will-11)
+prep_at(will-11, times-14)
+advmod(prepared-19, even-16)
+advmod(not-18, when-17)
+advmod(prepared-19, not-18)
+ccomp(will-11, prepared-19)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP
+          (NP (NNS barriers))
+          (PP (TO to)
+            (NP (NN marriage))))
+        (VP (VBP are)
+          (VP (VBN removed)
+            (PP (IN for)
+              (NP (JJ same-sex) (NNS couples)))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP it))
+    (VP (MD will)
+      (ADVP (RB even) (RB out)))
+    (. .)))
+
+advmod(removed-6, When-1)
+nsubjpass(removed-6, barriers-2)
+prep_to(barriers-2, marriage-4)
+auxpass(removed-6, are-5)
+advcl(will-13, removed-6)
+amod(couples-9, same-sex-8)
+prep_for(removed-6, couples-9)
+advmod(will-13, then-11)
+nsubj(will-13, it-12)
+root(ROOT-0, will-13)
+advmod(out-15, even-14)
+advmod(will-13, out-15)
+

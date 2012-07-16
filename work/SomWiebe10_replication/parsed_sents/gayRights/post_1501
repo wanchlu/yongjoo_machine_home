@@ -1,0 +1,74 @@
+(ROOT
+  (NP
+    (NP (DT No) (NNS thanks))
+    (: ...)))
+
+det(thanks-2, No-1)
+root(ROOT-0, thanks-2)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD would)
+      (VP (VB be)
+        (PP (IN like)
+          (S
+            (VP (VBG biting)
+              (NP (DT a) (JJ sesame) (NN seed)))))))
+    (. .)))
+
+nsubj(be-3, That-1)
+aux(be-3, would-2)
+root(ROOT-0, be-3)
+prepc_like(be-3, biting-5)
+det(seed-8, a-6)
+amod(seed-8, sesame-7)
+dobj(biting-5, seed-8)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP like)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB see)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP I))
+                          (VP (VB bite)))))))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB also))
+      (VP (VBZ has)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ clean)))))))
+    (. .)))
+
+nsubj(like-2, I-1)
+xsubj(able-5, I-1)
+root(ROOT-0, like-2)
+aux(able-5, to-3)
+cop(able-5, be-4)
+xcomp(like-2, able-5)
+aux(see-7, to-6)
+xcomp(able-5, see-7)
+dobj(bite-10, what-8)
+nsubj(bite-10, I-9)
+ccomp(see-7, bite-10)
+nsubj(has-14, it-12)
+xsubj(clean-17, it-12)
+advmod(has-14, also-13)
+conj_and(like-2, has-14)
+aux(clean-17, to-15)
+cop(clean-17, be-16)
+xcomp(has-14, clean-17)
+

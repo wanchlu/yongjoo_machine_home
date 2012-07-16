@@ -1,0 +1,64 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (S
+        (VP (TO to)
+          (VP (VB speak)
+            (PP (IN for)
+              (NP (NN nature)))))))
+    (. ?)))
+
+attr(are-2, Who-1)
+root(ROOT-0, are-2)
+nsubj(are-2, you-3)
+aux(speak-5, to-4)
+dep(are-2, speak-5)
+prep_for(speak-5, nature-7)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (NN idea))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (NN nature))
+            (VP (VBD intended))))))
+    (. .)))
+
+nsubj(have-2, You-1)
+root(ROOT-0, have-2)
+det(idea-4, no-3)
+dobj(have-2, idea-4)
+dobj(intended-7, idea-4)
+rel(intended-7, what-5)
+nsubj(intended-7, nature-6)
+rcmod(idea-4, intended-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Everything))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP say)))))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (NP (DT a) (JJ blind) (NN assumption)))
+    (. .)))
+
+dobj(say-3, Everything-1)
+nsubj(assumption-8, Everything-1)
+nsubj(say-3, you-2)
+rcmod(Everything-1, say-3)
+cop(assumption-8, is-4)
+advmod(assumption-8, just-5)
+det(assumption-8, a-6)
+amod(assumption-8, blind-7)
+root(ROOT-0, assumption-8)
+

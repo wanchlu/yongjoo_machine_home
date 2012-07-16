@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD bet)
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (VBZ says)
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (MD would)
+                  (VP (VB have)))))))))
+    (. .)))
+
+nsubj(bet-2, I-1)
+root(ROOT-0, bet-2)
+nsubj(says-4, he-3)
+ccomp(bet-2, says-4)
+nsubj(have-7, he-5)
+aux(have-7, would-6)
+ccomp(says-4, have-7)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ needs)
+      (NP (DT the) (NN attention))
+      (ADVP (RB just) (DT that) (JJ much)))
+    (. .)))
+
+nsubj(needs-2, He-1)
+root(ROOT-0, needs-2)
+det(attention-4, the-3)
+dobj(needs-2, attention-4)
+advmod(much-7, just-5)
+dep(much-7, that-6)
+advmod(needs-2, much-7)
+

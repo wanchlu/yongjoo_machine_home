@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Going)
+        (PP (IN by)
+          (NP (PRP$ your) (NN logic)))))
+    (, ,)
+    (NP (NN slavery))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ legal))))
+    (. .)))
+
+partmod(legal-9, Going-1)
+poss(logic-4, your-3)
+agent(Going-1, logic-4)
+nsubj(legal-9, slavery-6)
+aux(legal-9, should-7)
+cop(legal-9, be-8)
+root(ROOT-0, legal-9)
+
+(ROOT
+  (S
+    (PP (IN After)
+      (NP (DT all)))
+    (, ,)
+    (NP (DT the) (JJ founding) (NNS fathers))
+    (ADVP (RB demonstrably))
+    (VP
+      (VP (VBD had))
+      (CC or)
+      (VP (VBD condoned)
+        (S
+          (VP (VBG having)
+            (NP
+              (NP (NNS slaves))
+              (PRN (-LRB- -LRB-)
+                (ADJP (RB as) (JJ evident)
+                  (PP (IN in)
+                    (NP (DT the) (NNP Dred) (NNP Scott)
+                      (CC v.)
+                      (NNP Sandford) (NN reasoning))))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+prep_after(had-8, all-2)
+det(fathers-6, the-4)
+amod(fathers-6, founding-5)
+nsubj(had-8, fathers-6)
+nsubj(condoned-10, fathers-6)
+advmod(had-8, demonstrably-7)
+root(ROOT-0, had-8)
+conj_or(had-8, condoned-10)
+xcomp(condoned-10, having-11)
+dobj(having-11, slaves-12)
+advmod(evident-15, as-14)
+dep(slaves-12, evident-15)
+det(Scott-19, the-17)
+nn(Scott-19, Dred-18)
+prep_in(evident-15, Scott-19)
+nn(reasoning-22, Sandford-21)
+prep_in(evident-15, reasoning-22)
+conj_v.(Scott-19, reasoning-22)
+
+(ROOT
+  (SQ
+    (VP (VB Shall)
+      (S
+        (NP (PRP we))
+        (VP (VB bring)
+          (PP (IN on)
+            (NP (DT the) (NNS slaves)))
+          (, ,)
+          (ADVP (RB then)))))
+    (. ?)))
+
+root(ROOT-0, Shall-1)
+nsubj(bring-3, we-2)
+ccomp(Shall-1, bring-3)
+det(slaves-6, the-5)
+prep_on(bring-3, slaves-6)
+advmod(bring-3, then-8)
+

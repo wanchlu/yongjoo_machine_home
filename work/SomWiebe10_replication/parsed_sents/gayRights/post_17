@@ -1,0 +1,29 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS gays))
+        (VP (VBP are)
+          (ADVP (RB already))
+          (VP (VBG adopting)))))
+    (, ,)
+    (NP
+      (NP (PRP they))
+      (CC and)
+      (NP (PRP$ their) (NNS children)))
+    (VP (VBP deserve)
+      (NP (JJ equal) (NNS rights)))))
+
+mark(adopting-5, If-1)
+nsubj(adopting-5, gays-2)
+aux(adopting-5, are-3)
+advmod(adopting-5, already-4)
+advcl(deserve-11, adopting-5)
+nsubj(deserve-11, they-7)
+poss(children-10, their-9)
+conj_and(they-7, children-10)
+nsubj(deserve-11, children-10)
+root(ROOT-0, deserve-11)
+amod(rights-13, equal-12)
+dobj(deserve-11, rights-13)
+

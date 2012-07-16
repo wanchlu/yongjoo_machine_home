@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (ADJP (JJ gay)))
+    (. .)))
+
+dep(gay-6, No-1)
+nsubj(gay-6, I-3)
+cop(gay-6, 'm-4)
+neg(gay-6, not-5)
+root(ROOT-0, gay-6)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (DT The) (JJ only) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (MD could)
+              (VP (VB POSSIBLY)
+                (NP (NN mind) (NNS gays)))))))
+      (VP (VBP are)
+        (NP
+          (NP (JJ gay) (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP do) (RB n't)
+                (VP (VB want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (NP
+                          (NP (JJ gay))
+                          ('' '')
+                          (SBAR
+                            (WHNP (WDT that))
+                            (S
+                              (VP (VBZ is)
+                                (ADJP (JJ false))))))))))))))))
+    (, ,)
+    (S
+      (X
+        (X (WP what))
+        (PP (IN about)
+          (NP (DT the) (JJ other) (CD 20) (NN %))))
+      (NP (PRP you))
+      (VP (VBD mentioned)))
+    (. ?)))
+
+det(people-4, The-2)
+amod(people-4, only-3)
+nsubj(POSSIBLY-7, people-4)
+nsubj(people-12, people-4)
+aux(POSSIBLY-7, could-6)
+rcmod(people-4, POSSIBLY-7)
+nn(gays-9, mind-8)
+dobj(POSSIBLY-7, gays-9)
+cop(people-12, are-10)
+amod(people-12, gay-11)
+root(ROOT-0, people-12)
+nsubj(want-16, people-12)
+aux(want-16, do-14)
+neg(want-16, n't-15)
+rcmod(people-12, want-16)
+aux(gay-19, to-17)
+cop(gay-19, be-18)
+xcomp(want-16, gay-19)
+nsubj(false-23, that-21)
+cop(false-23, is-22)
+rcmod(gay-19, false-23)
+dep(about-26, what-25)
+dep(mentioned-32, about-26)
+det(%-30, the-27)
+amod(%-30, other-28)
+num(%-30, 20-29)
+pobj(about-26, %-30)
+nsubj(mentioned-32, you-31)
+ccomp(people-12, mentioned-32)
+

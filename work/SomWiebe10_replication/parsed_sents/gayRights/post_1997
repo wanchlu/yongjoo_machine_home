@@ -1,0 +1,77 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ is) (RB n't)
+              (NP (DT a) (JJ natural) (NN thing)))))))
+    (. ?)))
+
+dobj(mean-4, What-1)
+aux(mean-4, do-2)
+nsubj(mean-4, you-3)
+root(ROOT-0, mean-4)
+nsubj(thing-10, it-5)
+cop(thing-10, is-6)
+neg(thing-10, n't-7)
+det(thing-10, a-8)
+amod(thing-10, natural-9)
+ccomp(mean-4, thing-10)
+
+(ROOT
+  (SQ (VBD Are)
+    (NP (PRP you))
+    (NP (NN saying))
+    (SBAR (IN that)
+      (S
+        (NP (NNS homosexuals))
+        (VP (VBP choose)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (ADJP (JJ gay))))))))
+    (. ?)))
+
+cop(saying-3, Are-1)
+nsubj(saying-3, you-2)
+root(ROOT-0, saying-3)
+complm(choose-6, that-4)
+nsubj(choose-6, homosexuals-5)
+xsubj(gay-9, homosexuals-5)
+dep(saying-3, choose-6)
+aux(gay-9, to-7)
+cop(gay-9, be-8)
+xcomp(choose-6, gay-9)
+
+(ROOT
+  (FRAG (CC And)
+    (SBAR
+      (WHADVP (WRB why))
+      (S
+        (NP (RB then))
+        (VP (VBP are)
+          (ADVP (RB there))
+          (NP
+            (NP (JJ many) (NNS species))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VB exhibit)
+                  (ADVP (RB homosexuality)))))))))
+    (. ?)))
+
+dep(species-7, And-1)
+advmod(species-7, why-2)
+nsubj(species-7, then-3)
+cop(species-7, are-4)
+advmod(species-7, there-5)
+amod(species-7, many-6)
+root(ROOT-0, species-7)
+nsubj(exhibit-9, species-7)
+rcmod(species-7, exhibit-9)
+advmod(exhibit-9, homosexuality-10)
+

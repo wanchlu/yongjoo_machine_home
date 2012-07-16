@@ -1,0 +1,119 @@
+(ROOT
+  (FRAG
+    (NP (CD 1))
+    (. .)))
+
+root(ROOT-0, 1-1)
+
+(ROOT
+  (S
+    (NP (JJ Civil) (NNS unions))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ same))
+        (PP (IN as)
+          (S
+            (VP (VBG being)
+              (VP (VBN married)))))))
+    (. .)))
+
+amod(unions-2, Civil-1)
+nsubj(same-5, unions-2)
+cop(same-5, is-3)
+det(same-5, the-4)
+root(ROOT-0, same-5)
+auxpass(married-8, being-7)
+prepc_as(same-5, married-8)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (VBZ has)
+      (NP (DT a) (JJ different) (NN name) (CD .2)))
+    (. .)))
+
+nsubj(has-3, It-1)
+advmod(has-3, just-2)
+root(ROOT-0, has-3)
+det(name-6, a-4)
+amod(name-6, different-5)
+dobj(has-3, name-6)
+num(name-6, .2-7)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ gay) (NN couple))
+    (VP (MD can)
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP 're)
+              (VP (VBN married)
+                (PP (IN without)
+                  (NP (DT any) (NN problem) (CD .3)))))))))
+    (. .)))
+
+det(couple-3, A-1)
+amod(couple-3, gay-2)
+nsubj(say-5, couple-3)
+aux(say-5, can-4)
+root(ROOT-0, say-5)
+complm(married-9, that-6)
+nsubjpass(married-9, they-7)
+auxpass(married-9, 're-8)
+ccomp(say-5, married-9)
+det(problem-12, any-11)
+prep_without(married-9, problem-12)
+num(problem-12, .3-13)
+
+(ROOT
+  (S
+    (S
+      (SBAR
+        (WHNP (WP What))
+        (S
+          (NP (PRP you))
+          (VP (VBP 're)
+            (ADVP (RB really))
+            (VP (VBG asking)))))
+      (VP (VBZ is)))
+    ('' '')
+    (VP (MD Should)
+      (ADVP (RB gays))
+      (VP (VB have)
+        (NP (DT the) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB force)
+                (S
+                  (NP (NN everyone) (RB else))
+                  (VP (VB call)
+                    (NP (PRP$ their) (JJ civil) (NN union))
+                    (NP (DT a) (NN marriage))))))))))
+    (. ?)))
+
+dobj(asking-5, What-1)
+nsubj(asking-5, you-2)
+aux(asking-5, 're-3)
+advmod(asking-5, really-4)
+csubj(is-6, asking-5)
+ccomp(have-10, is-6)
+csubj(have-10, is-6)
+aux(have-10, Should-8)
+advmod(have-10, gays-9)
+root(ROOT-0, have-10)
+det(right-12, the-11)
+dobj(have-10, right-12)
+aux(force-14, to-13)
+infmod(right-12, force-14)
+nsubj(call-17, everyone-15)
+advmod(everyone-15, else-16)
+ccomp(force-14, call-17)
+poss(union-20, their-18)
+amod(union-20, civil-19)
+dep(call-17, union-20)
+det(marriage-22, a-21)
+dobj(call-17, marriage-22)
+

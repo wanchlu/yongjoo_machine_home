@@ -1,0 +1,39 @@
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBZ does)
+      (VP (VB exist)))
+    (. .) (. .)))
+
+nsubj(exist-3, God-1)
+aux(exist-3, does-2)
+root(ROOT-0, exist-3)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB maybe))
+      (NP (NNS people) (NN dont))
+      (VP (VBP believe)
+        (PP (IN in)
+          (NP
+            (NP (NN god))
+            (PP (RB because) (IN of)
+              (NP (NN thier) (NN religion)))))))
+    (CC but)
+    (FRAG (: god)
+      (VP (VBZ exists))
+      (. .))
+    (. .)))
+
+advmod(believe-4, maybe-1)
+nn(dont-3, people-2)
+nsubj(believe-4, dont-3)
+nsubj(exists-13, dont-3)
+root(ROOT-0, believe-4)
+prep_in(believe-4, god-6)
+nn(religion-10, thier-9)
+prep_because_of(god-6, religion-10)
+punct(exists-13, god-12)
+conj_but(believe-4, exists-13)
+

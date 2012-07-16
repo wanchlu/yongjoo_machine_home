@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (NP (NN comedy))
+    (VP (VBZ is)
+      (NP
+        (NP (JJS best))
+        (PP (IN in)
+          (NP (JJ bad) (NN taste)))))
+    (. .)))
+
+nsubj(best-3, comedy-1)
+cop(best-3, is-2)
+root(ROOT-0, best-3)
+amod(taste-6, bad-5)
+prep_in(best-3, taste-6)
+
+(ROOT
+  (S
+    (NP (DT the) (JJR more) (NNS people))
+    (NP (PRP it))
+    (VP
+      (VP (VBZ offends))
+      (, ,)
+      (NP
+        (NP (DT the) (JJR better))
+        (PRN (-LRB- -LRB-)
+          (SBAR (IN unless)
+            (S
+              (NP (PRP it))
+              (VP (VBZ offends)
+                (NP
+                  (NP (NN everyone))
+                  (PP (CC but)
+                    (NP (PRP you)))))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+det(people-3, the-1)
+amod(people-3, more-2)
+nsubj(offends-5, people-3)
+nsubj(offends-5, it-4)
+root(ROOT-0, offends-5)
+det(better-8, the-7)
+dobj(offends-5, better-8)
+mark(offends-12, unless-10)
+nsubj(offends-12, it-11)
+dep(better-8, offends-12)
+dobj(offends-12, everyone-13)
+prep(everyone-13, but-14)
+dep(but-14, you-15)
+
+(ROOT
+  (S
+    (S
+      (VP (VB lighten)
+        (PRT (RP up))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (NN internetz))
+        (, ,) (RB not)
+        (NP (NNP C-SPAN))))
+    (. .)))
+
+ccomp(internetz-7, lighten-1)
+prt(lighten-1, up-2)
+nsubj(internetz-7, it-4)
+cop(internetz-7, 's-5)
+det(internetz-7, the-6)
+root(ROOT-0, internetz-7)
+neg(internetz-7, not-9)
+dep(internetz-7, C-SPAN-10)
+

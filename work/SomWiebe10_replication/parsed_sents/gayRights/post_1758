@@ -1,0 +1,143 @@
+(ROOT
+  (S (CC So)
+    (NP (PRP you))
+    (VP (VB define)
+      (NP (DT a) (NN family))
+      (PP
+        (PP (IN as)
+          (NP
+            (NP (`` ``) (DT a) (NN mother)
+              (CC and)
+              (NN father))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP love)
+                  (NP (DT each) (JJ other)))))
+            (PRN (-LRB- -LRB-)
+              (CONJP (RB not) (RB just))
+              (NP
+                (NP (NN care))
+                (PP (IN for)
+                  (NP (DT each) (JJ other))))
+              (-RRB- -RRB-))))
+        (CC and)
+        (PP (IN for)
+          (NP (PRP$ their) (NNS children)))))
+    (. .)))
+
+cc(define-3, So-1)
+nsubj(define-3, you-2)
+nsubj(define-3', you-2)
+root(ROOT-0, define-3)
+conj_and(define-3, define-3')
+det(family-5, a-4)
+dobj(define-3, family-5)
+det(mother-9, a-8)
+prep_as(define-3, mother-9)
+nsubj(love-13, mother-9)
+prep_as(define-3, father-11)
+conj_and(mother-9, father-11)
+nsubj(love-13, father-11)
+rcmod(mother-9, love-13)
+det(other-15, each-14)
+dobj(love-13, other-15)
+neg(just-18, not-17)
+dep(care-19, just-18)
+dep(mother-9, care-19)
+det(other-22, each-21)
+prep_for(care-19, other-22)
+poss(children-27, their-26)
+prep_for(define-3', children-27)
+
+(ROOT
+  (S ('' '')
+    (NP (WP What))
+    (VP (VBZ happens)
+      (SBAR (IN if)
+        (S
+          (NP (DT the) (NN father))
+          (VP (VBZ dies)
+            (PP (IN in)
+              (NP (NNP Iraq)))))))
+    (. ?)))
+
+nsubj(happens-3, What-2)
+root(ROOT-0, happens-3)
+mark(dies-7, if-4)
+det(father-6, the-5)
+nsubj(dies-7, father-6)
+advcl(happens-3, dies-7)
+prep_in(dies-7, Iraq-9)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP
+      (NP (PRP they))
+      (ADJP
+        (ADVP (RB no) (RBR longer))
+        (DT a)))
+    (ADJP (NN family))
+    (. ?)))
+
+cop(family-6, Are-1)
+nsubj(family-6, they-2)
+advmod(longer-4, no-3)
+advmod(a-5, longer-4)
+amod(they-2, a-5)
+root(ROOT-0, family-6)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS thousands))
+        (PP (IN of)
+          (NP
+            (NP (NNS families))
+            (PP
+              (ADVP (DT all))
+              (IN over)
+              (NP
+                (NP (DT the) (NN world))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP do) (RB not)
+                      (VP
+                        (VP (VB fit)
+                          (NP (DT this) (NN definition)))
+                        (CC and)
+                        (VP
+                          (ADVP (RB still))
+                          (VB raise)
+                          (NP
+                            (ADJP (JJ healthy)
+                              (CC and)
+                              (JJ happy))
+                            (NNS children)))))))))))))
+    (. !)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, thousands-3)
+prep_of(thousands-3, families-5)
+advmod(families-5, all-6)
+det(world-9, the-8)
+prep_over(families-5, world-9)
+nsubj(fit-13, world-9)
+nsubj(raise-18, world-9)
+aux(fit-13, do-11)
+neg(fit-13, not-12)
+rcmod(world-9, fit-13)
+det(definition-15, this-14)
+dobj(fit-13, definition-15)
+advmod(raise-18, still-17)
+rcmod(world-9, raise-18)
+conj_and(fit-13, raise-18)
+amod(children-22, healthy-19)
+conj_and(healthy-19, happy-21)
+amod(children-22, happy-21)
+dobj(raise-18, children-22)
+

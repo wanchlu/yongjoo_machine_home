@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (# #) (CD 2)))
+    (NP (PRP you))
+    (VP (VBP are)
+      (VP
+        (VP (VBG confusing)
+          (ADVP (RB monogamy))
+          (PP (IN with)
+            (NP (NN polygamy))))
+        (PRN (-LRB- -LRB-)
+          (S
+            (NP (PRP you))
+            (VP (VBP call)
+              (S
+                (NP (PRP it))
+                (`` ``)
+                (ADJP (JJ bi) (NN marriage))
+                ('' ''))))
+          (-RRB- -RRB-))))))
+
+dep(2-3, #-2)
+prep_in(confusing-6, 2-3)
+nsubj(confusing-6, you-4)
+aux(confusing-6, are-5)
+root(ROOT-0, confusing-6)
+advmod(confusing-6, monogamy-7)
+prep_with(confusing-6, polygamy-9)
+nsubj(call-12, you-11)
+parataxis(confusing-6, call-12)
+dep(marriage-16, it-13)
+dep(marriage-16, bi-15)
+dep(call-12, marriage-16)
+

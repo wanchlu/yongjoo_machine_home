@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (NNS researchers))
+    (ADVP (RB somewhere) (RB scientifically))
+    (VP (VBD proved)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP 're)
+            (NP (DT a) (NN putz))))))
+    (. .)))
+
+nsubj(proved-4, researchers-1)
+advmod(scientifically-3, somewhere-2)
+advmod(proved-4, scientifically-3)
+root(ROOT-0, proved-4)
+complm(putz-9, that-5)
+nsubj(putz-9, you-6)
+cop(putz-9, 're-7)
+det(putz-9, a-8)
+ccomp(proved-4, putz-9)
+
+(ROOT
+  (SINV
+    (ADVP (RB here))
+    (VP (VBZ 's)
+      (VP (VBG hoping)
+        (S
+          (NP (PRP you))
+          (VP (VB get)
+            (ADVP (RB too) (RB much))))))
+    (NP (NN love))
+    (: ...)))
+
+advmod(hoping-3, here-1)
+aux(hoping-3, 's-2)
+root(ROOT-0, hoping-3)
+nsubj(get-5, you-4)
+ccomp(hoping-3, get-5)
+advmod(much-7, too-6)
+advmod(get-5, much-7)
+nsubj(hoping-3, love-8)
+

@@ -1,0 +1,123 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (PP (IN of)
+        (NP (DT the) (JJ same) (NN sex))))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB marry)))))))
+    (. .)))
+
+nsubjpass(allowed-8, People-1)
+det(sex-5, the-3)
+amod(sex-5, same-4)
+prep_of(People-1, sex-5)
+aux(allowed-8, should-6)
+auxpass(allowed-8, be-7)
+root(ROOT-0, allowed-8)
+aux(marry-10, to-9)
+xcomp(allowed-8, marry-10)
+
+(ROOT
+  (S
+    (NP (NNP Amendment) (CD 14))
+    (VP (VBZ states)
+      (SBAR (IN that)
+        (S
+          (NP (NN allpeople))
+          (VP (MD should)
+            (VP (VB be)
+              (VP (VBN treated)
+                (ADVP (RB equally))))))))
+    (. .)))
+
+nsubj(states-3, Amendment-1)
+num(Amendment-1, 14-2)
+root(ROOT-0, states-3)
+complm(treated-8, that-4)
+nsubjpass(treated-8, allpeople-5)
+aux(treated-8, should-6)
+auxpass(treated-8, be-7)
+ccomp(states-3, treated-8)
+advmod(treated-8, equally-9)
+
+(ROOT
+  (S (RB Not)
+    (VP (VB letting)
+      (NP
+        (NP (CD two) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP love)
+              (NP (CD one) (DT another))
+              (ADVP (DT no) (NN matter)
+                (SBAR (IN if)
+                  (S
+                    (NP (DT the) (JJ same) (NN sex))
+                    (VP (VBZ is) (RB not)
+                      (VP (VBG being)
+                        (VP (VBN treated)
+                          (ADVP (RB equally)))))))))))))
+    (. .)))
+
+neg(letting-2, Not-1)
+root(ROOT-0, letting-2)
+num(people-4, two-3)
+dobj(letting-2, people-4)
+nsubj(love-6, people-4)
+rcmod(people-4, love-6)
+dobj(love-6, one-7)
+dep(one-7, another-8)
+dep(matter-10, no-9)
+advmod(love-6, matter-10)
+mark(treated-18, if-11)
+det(sex-14, the-12)
+amod(sex-14, same-13)
+nsubjpass(treated-18, sex-14)
+aux(treated-18, is-15)
+neg(treated-18, not-16)
+auxpass(treated-18, being-17)
+dep(matter-10, treated-18)
+advmod(treated-18, equally-19)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can) (RB not)
+      (VP (VB help)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (NP (PRP you))
+            (VP (VBP love))))))
+    (. .)))
+
+nsubj(help-4, You-1)
+aux(help-4, can-2)
+neg(help-4, not-3)
+root(ROOT-0, help-4)
+dobj(love-7, who-5)
+nsubj(love-7, you-6)
+ccomp(help-4, love-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP vote)
+      (NP
+        (NP (NNP YES))
+        (PP (IN for)
+          (NP (JJ gay) (NN marriage)))))
+    (. .)))
+
+nsubj(vote-2, I-1)
+root(ROOT-0, vote-2)
+dobj(vote-2, YES-3)
+amod(marriage-6, gay-5)
+prep_for(YES-3, marriage-6)
+

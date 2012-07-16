@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBN supposed)
+        (S
+          (VP (TO to)
+            (VP (VB kill)
+              (NP (NNS witches)))))))
+    (. .)))
+
+nsubjpass(supposed-3, I-1)
+xsubj(kill-5, I-1)
+auxpass(supposed-3, 'm-2)
+root(ROOT-0, supposed-3)
+aux(kill-5, to-4)
+xcomp(supposed-3, kill-5)
+dobj(kill-5, witches-6)
+
+(ROOT
+  (SQ (NNP Should)
+    (NP (DT the) (NN law))
+    (VP (VB respect)
+      (NP (DT that) (JJ particular) (NN verse)))
+    (. ?)))
+
+dep(respect-4, Should-1)
+det(law-3, the-2)
+nsubj(respect-4, law-3)
+root(ROOT-0, respect-4)
+det(verse-7, that-5)
+amod(verse-7, particular-6)
+dobj(respect-4, verse-7)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT a) (NN law))
+    (VP (VB preventing)
+      (NP (PRP me))
+      (PP (IN from)
+        (S
+          (VP (VBG killing)
+            (S
+              (NP (NNS witches))
+              (VP (VB infringe)
+                (PP (IN on)
+                  (NP (PRP$ my) (NN right)
+                    (S
+                      (VP (TO to)
+                        (VP (VB practice)
+                          (NP (NN religion)))))))))))))
+    (. ?)))
+
+dep(preventing-4, Does-1)
+det(law-3, a-2)
+nsubj(preventing-4, law-3)
+root(ROOT-0, preventing-4)
+dobj(preventing-4, me-5)
+prepc_from(preventing-4, killing-7)
+nsubj(infringe-9, witches-8)
+ccomp(killing-7, infringe-9)
+poss(right-12, my-11)
+prep_on(infringe-9, right-12)
+aux(practice-14, to-13)
+infmod(right-12, practice-14)
+dobj(practice-14, religion-15)
+

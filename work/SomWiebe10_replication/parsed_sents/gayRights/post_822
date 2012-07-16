@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (NP (RB Here))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN Link))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBD forgot)
+              (S
+                (VP (TO to)
+                  (VP (VB include)
+                    (PP (IN in)
+                      (NP (PRP$ my) (JJ previous) (NN post)))))))))))
+    (. .)))
+
+nsubj(Link-4, Here-1)
+cop(Link-4, is-2)
+det(Link-4, the-3)
+root(ROOT-0, Link-4)
+dobj(forgot-6, Link-4)
+nsubj(forgot-6, I-5)
+xsubj(include-8, I-5)
+rcmod(Link-4, forgot-6)
+aux(include-8, to-7)
+xcomp(forgot-6, include-8)
+poss(post-12, my-10)
+amod(post-12, previous-11)
+prep_in(include-8, post-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ quotes)
+      (S
+        (NP (DT the) (NNP Babylonian) (NNP Talmud))
+        (VP (TO to)
+          (VP (VB prove)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (JJ ancient) (NNPS Jews))
+                (VP (VBD believed)
+                  (PP (IN about)
+                    (NP
+                      (NP (DT the) (NN sin))
+                      (PP (IN of)
+                        (NP (NNP Sodom))))))))
+            (: ...)
+            (FRAG
+              (ADJP (JJ http:\/\/www.gaychristian101.com\/Babylonian-Talmud-On-Sodom.html)))))))))
+
+nsubj(quotes-2, It-1)
+root(ROOT-0, quotes-2)
+det(Talmud-5, the-3)
+nn(Talmud-5, Babylonian-4)
+nsubj(prove-7, Talmud-5)
+aux(prove-7, to-6)
+xcomp(quotes-2, prove-7)
+dobj(believed-11, what-8)
+amod(Jews-10, ancient-9)
+nsubj(believed-11, Jews-10)
+ccomp(prove-7, believed-11)
+det(sin-14, the-13)
+prep_about(believed-11, sin-14)
+prep_of(sin-14, Sodom-16)
+dep(prove-7, http:\/\/www.gaychristian101.com\/Babylonian-Talmud-On-Sodom.html-18)
+

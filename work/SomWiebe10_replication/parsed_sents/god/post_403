@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (VP (VBG attempting)
+        (S
+          (VP (TO to)
+            (VP (VB answer)
+              (NP (DT a)
+                (NP
+                  (NP (DT the) (NN question))
+                  (PP (IN of)
+                    (NP (DT the) (NN chicken))))
+                (CC or)
+                (NP
+                  (NP (DT the) (NN egg))
+                  (PP (IN in)
+                    (NP (NNP disguise))))))))))
+    (. .)))
+
+nsubj(attempting-3, That-1)
+xsubj(answer-5, That-1)
+aux(attempting-3, is-2)
+root(ROOT-0, attempting-3)
+aux(answer-5, to-4)
+xcomp(attempting-3, answer-5)
+dep(question-8, a-6)
+det(question-8, the-7)
+dobj(answer-5, question-8)
+det(chicken-11, the-10)
+prep_of(question-8, chicken-11)
+det(egg-14, the-13)
+dobj(answer-5, egg-14)
+conj_or(question-8, egg-14)
+prep_in(egg-14, disguise-16)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP have)
+        (NP (DT a) (JJ good) (NN point))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB not)
+        (VP (VB prove)
+          (SBAR
+            (S
+              (NP (DT a) (NN god))
+              (VP (VBZ exists)))))))
+    (. .)))
+
+nsubj(have-2, You-1)
+root(ROOT-0, have-2)
+det(point-5, a-3)
+amod(point-5, good-4)
+dobj(have-2, point-5)
+nsubj(prove-11, it-8)
+aux(prove-11, does-9)
+neg(prove-11, not-10)
+conj_but(have-2, prove-11)
+det(god-13, a-12)
+nsubj(exists-14, god-13)
+ccomp(prove-11, exists-14)
+

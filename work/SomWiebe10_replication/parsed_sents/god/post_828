@@ -1,0 +1,53 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (PRP it))
+      (ADJP (RB better)
+        (S
+          (VP
+            (VP (TO to)
+              (VP (VB believe) (`` ``)
+                (PP (IN in)
+                  (NP (NN something) ('' '')))))
+            (PRN (-LRB- -LRB-)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ does)
+                    (SBAR (IN that) (RB even)
+                      (S
+                        (VP (VBP mean))))))
+                (. ?))
+              (-RRB- -RRB-))))))))
+
+advmod(better-4, Why-1)
+cop(better-4, is-2)
+nsubj(better-4, it-3)
+root(ROOT-0, better-4)
+aux(believe-6, to-5)
+dep(better-4, believe-6)
+prep_in(believe-6, something-9)
+nsubj(does-13, what-12)
+nsubj(mean-16, what-12)
+parataxis(believe-6, does-13)
+complm(mean-16, that-14)
+advmod(mean-16, even-15)
+ccomp(does-13, mean-16)
+
+(ROOT
+  (FRAG
+    (CONJP (IN than) (RB not))
+    (S
+      (VP (VB believe)
+        (FRAG
+          (PP (`` ``) (IN in)
+            (NP (NN something) ('' ''))
+            (. ?)))))))
+
+dep(not-2, than-1)
+dep(believe-3, not-2)
+root(ROOT-0, believe-3)
+dep(believe-3, in-5)
+pobj(in-5, something-6)
+

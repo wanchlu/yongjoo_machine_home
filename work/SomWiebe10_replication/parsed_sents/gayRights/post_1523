@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (NP (PRP I))
+        (VP (VBP love))))
+    (VP (VBZ is)
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP have)
+            (NP
+              (NP (CD 4) (NNS people))
+              (VP (VBG saying)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP
+                      (VP (VBZ hurts)
+                        (NP (PRP them)))
+                      (CC but)
+                      (VP
+                        (ADVP (RB all)
+                          (NP (CD 4)))
+                        (VBP do) (RB n't)
+                        (VP (VB have)
+                          (S
+                            (NP (DT the) (NNS guts))
+                            (VP (TO to)
+                              (VP (VB say)
+                                (NP (WRB how))))))))))))))))
+    (. .)))
+
+dobj(love-3, What-1)
+nsubj(love-3, I-2)
+csubj(is-4, love-3)
+root(ROOT-0, is-4)
+nsubj(have-6, we-5)
+ccomp(is-4, have-6)
+num(people-8, 4-7)
+dobj(have-6, people-8)
+partmod(people-8, saying-9)
+nsubj(hurts-11, it-10)
+nsubj(have-18, it-10)
+ccomp(saying-9, hurts-11)
+dobj(hurts-11, them-12)
+advmod(have-18, all-14)
+pobj(all-14, 4-15)
+aux(have-18, do-16)
+neg(have-18, n't-17)
+ccomp(saying-9, have-18)
+conj_but(hurts-11, have-18)
+det(guts-20, the-19)
+nsubj(say-22, guts-20)
+aux(say-22, to-21)
+ccomp(have-18, say-22)
+xcomp(have-18, say-22)
+dobj(say-22, how-23)
+
+(ROOT
+  (S
+    (VP (VB Come)
+      (PRT (RP on)))
+    (. .)))
+
+root(ROOT-0, Come-1)
+prt(Come-1, on-2)
+
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ hurts)
+          (NP (PRP you))
+          (FRAG
+            (ADVP (RB personally))
+            (. .)))))
+    (. .)))
+
+mark(hurts-3, If-1)
+nsubj(hurts-3, it-2)
+root(ROOT-0, hurts-3)
+dobj(hurts-3, you-4)
+dep(hurts-3, personally-5)
+
+(ROOT
+  (FRAG
+    (NP (NNP HOW))
+    (. ?)))
+
+root(ROOT-0, HOW-1)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Have)
+        (NP (DT some) (NN testicular) (NN fortitude)))
+      (CC and)
+      (VP (VB explain)
+        (NP (PRP$ your) (NN pain))))
+    (. .)))
+
+root(ROOT-0, Have-1)
+det(fortitude-4, some-2)
+nn(fortitude-4, testicular-3)
+dobj(Have-1, fortitude-4)
+conj_and(Have-1, explain-6)
+poss(pain-8, your-7)
+dobj(explain-6, pain-8)
+

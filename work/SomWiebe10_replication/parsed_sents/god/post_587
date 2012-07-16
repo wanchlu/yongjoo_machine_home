@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Everything))
+      (VP (VBZ works)
+        (NP
+          (NP (DT the) (NN way))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (MD would)
+                (SBAR (IN if)
+                  (S
+                    (NP (EX there))
+                    (VP (VBD was)
+                      (NP (DT no) (NN god))
+                      (, ,)
+                      (ADVP (RB therefore)))))))))))
+    (NP (EX there))
+    (VP (VBZ 's)
+      (NP (DT no) (NN reason)
+        (S
+          (VP (TO to)
+            (VP (VB believe)
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (NP (DT a) (NN god))))))))))
+    (. .)))
+
+nsubj(works-2, Everything-1)
+dep('s-15, works-2)
+det(way-4, the-3)
+dobj(works-2, way-4)
+nsubj(would-6, it-5)
+rcmod(way-4, would-6)
+mark(was-9, if-7)
+expl(was-9, there-8)
+advcl(would-6, was-9)
+det(god-11, no-10)
+nsubj(was-9, god-11)
+advmod(was-9, therefore-13)
+expl('s-15, there-14)
+root(ROOT-0, 's-15)
+det(reason-17, no-16)
+nsubj('s-15, reason-17)
+aux(believe-19, to-18)
+infmod(reason-17, believe-19)
+expl(is-21, there-20)
+ccomp(believe-19, is-21)
+det(god-23, a-22)
+nsubj(is-21, god-23)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Just))
+    (SBAR (IN like)
+      (S
+        (NP (EX there))
+        (VP (VBZ 's)
+          (NP (DT no) (NN reason)
+            (S
+              (VP (TO to)
+                (VP (VB believe)
+                  (PP (IN in)
+                    (NP (NNP Zeus)
+                      (CC or)
+                      (NNP apollo)))))))))
+      (: ...))))
+
+root(ROOT-0, Just-1)
+mark('s-4, like-2)
+expl('s-4, there-3)
+dep(Just-1, 's-4)
+det(reason-6, no-5)
+nsubj('s-4, reason-6)
+aux(believe-8, to-7)
+infmod(reason-6, believe-8)
+prep_in(believe-8, Zeus-10)
+prep_in(believe-8, apollo-12)
+conj_or(Zeus-10, apollo-12)
+
+(ROOT
+  (NP (NNP Etc)))
+
+root(ROOT-0, Etc-1)
+

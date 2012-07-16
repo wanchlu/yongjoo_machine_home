@@ -1,0 +1,107 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ 's)
+      (ADJP (JJ likely)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT a) (JJR better) (NN parent))
+              (, ,)
+              (ADVP (RB statistically)))))))
+    (. ?)))
+
+attr(likely-3, Who-1)
+cop(likely-3, 's-2)
+root(ROOT-0, likely-3)
+aux(parent-8, to-4)
+cop(parent-8, be-5)
+det(parent-8, a-6)
+amod(parent-8, better-7)
+xcomp(likely-3, parent-8)
+advmod(parent-8, statistically-10)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (DT Those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP HAVE)
+            (S
+              (VP (TO to)
+                (VP (VB adopt))))))))
+    (. ?)))
+
+root(ROOT-0, Those-1)
+nsubj(HAVE-3, Those-1)
+rcmod(Those-1, HAVE-3)
+aux(adopt-5, to-4)
+xcomp(HAVE-3, adopt-5)
+
+(ROOT
+  (FRAG (CC Or)
+    (NP
+      (NP (DT those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (MD can)
+            (VP
+              (VP (VB become)
+                (ADJP (JJ pregnant))
+                (PP (IN by)
+                  (NP (NN accident))))
+              (, ,)
+              (CC and)
+              (VP (VB be)
+                (VP (VBN forced)
+                  (S
+                    (VP (TO to)
+                      (VP (VB marry)
+                        (CC and)
+                        (VB raise)
+                        (NP
+                          (NP (DT a) (NN child))
+                          (SBAR
+                            (S
+                              (NP (PRP they))
+                              (VP (VBP resent)
+                                (PP (IN with)
+                                  (NP
+                                    (NP (DT a) (NN person))
+                                    (SBAR
+                                      (S
+                                        (NP (PRP they))
+                                        (ADVP (RB barely))
+                                        (VP (VBP know))))))))))))))))))))
+    (. ?)))
+
+dep(those-2, Or-1)
+root(ROOT-0, those-2)
+nsubj(pregnant-6, those-2)
+nsubjpass(forced-12, those-2)
+aux(pregnant-6, can-4)
+cop(pregnant-6, become-5)
+rcmod(those-2, pregnant-6)
+prep_by(pregnant-6, accident-8)
+auxpass(forced-12, be-11)
+rcmod(those-2, forced-12)
+conj_and(pregnant-6, forced-12)
+aux(marry-14, to-13)
+xcomp(forced-12, marry-14)
+xcomp(forced-12, raise-16)
+conj_and(marry-14, raise-16)
+det(child-18, a-17)
+dobj(marry-14, child-18)
+dobj(resent-20, child-18)
+nsubj(resent-20, they-19)
+rcmod(child-18, resent-20)
+det(person-23, a-22)
+prep_with(resent-20, person-23)
+dobj(know-26, person-23)
+nsubj(know-26, they-24)
+advmod(know-26, barely-25)
+rcmod(person-23, know-26)
+

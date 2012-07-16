@@ -1,0 +1,90 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (ADVP (RB simply))
+      (NP
+        (NP (DT no) (JJ good) (JJ empirical) (NN proof))
+        (SBAR (IN for)
+          (S
+            (VP (VBZ is)
+              (NP (NN existence)))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+advmod(is-2, simply-3)
+det(proof-7, no-4)
+amod(proof-7, good-5)
+amod(proof-7, empirical-6)
+nsubj(is-2, proof-7)
+mark(existence-10, for-8)
+cop(existence-10, is-9)
+dep(proof-7, existence-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Miracles))
+      (, ,)
+      (NP (NNS prophets))
+      (, ,)
+      (CC and)
+      (NP (JJ religious) (NNS texts)))
+    (VP (VBP are) (RB not)
+      (ADJP (JJ empirical)))
+    (. .)))
+
+nsubj(empirical-10, Miracles-1)
+conj_and(Miracles-1, prophets-3)
+nsubj(empirical-10, prophets-3)
+amod(texts-7, religious-6)
+conj_and(Miracles-1, texts-7)
+nsubj(empirical-10, texts-7)
+cop(empirical-10, are-8)
+neg(empirical-10, not-9)
+root(ROOT-0, empirical-10)
+
+(ROOT
+  (S
+    (NP (DT Neither))
+    (VP (VBZ is)
+      (NP (`` ``) (NN proof) ('' ''))
+      (SBAR (IN that)
+        (S
+          (NP (DT a)
+            (ADJP (RB largely) (JJ historical))
+            (NN text))
+          (VP (VBZ is)
+            (ADJP
+              (NP (CD 100) (NN %))
+              (JJ correct))
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (VP (VBZ gets)
+                  (S
+                    (NP (DT some) (JJ historical) (NNS details))
+                    (ADJP (JJ correct))))))))))
+    (. .)))
+
+nsubj(proof-4, Neither-1)
+cop(proof-4, is-2)
+root(ROOT-0, proof-4)
+complm(correct-14, that-6)
+det(text-10, a-7)
+advmod(historical-9, largely-8)
+amod(text-10, historical-9)
+nsubj(correct-14, text-10)
+cop(correct-14, is-11)
+num(%-13, 100-12)
+npadvmod(correct-14, %-13)
+ccomp(proof-4, correct-14)
+mark(gets-17, because-15)
+nsubj(gets-17, it-16)
+advcl(correct-14, gets-17)
+det(details-20, some-18)
+amod(details-20, historical-19)
+nsubj(correct-21, details-20)
+xcomp(gets-17, correct-21)
+

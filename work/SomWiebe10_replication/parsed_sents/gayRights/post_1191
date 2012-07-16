@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (ADVP (RB Sorry))
+    (, ,)
+    (VP (VB feel)
+      (SBAR (IN like)
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB say)
+                  (NP (PRP it))
+                  (ADVP (RB again)))))))))
+    (. .)))
+
+advmod(feel-3, Sorry-1)
+root(ROOT-0, feel-3)
+mark(have-6, like-4)
+nsubj(have-6, I-5)
+xsubj(say-8, I-5)
+advcl(feel-3, have-6)
+aux(say-8, to-7)
+xcomp(have-6, say-8)
+dobj(say-8, it-9)
+advmod(say-8, again-10)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP (DT a)
+        (ADJP (VBN made)
+          (PRT (RP up)))
+        (NN word)))
+    (. .)))
+
+nsubj(word-6, That-1)
+cop(word-6, 's-2)
+det(word-6, a-3)
+amod(word-6, made-4)
+dep(made-4, up-5)
+root(ROOT-0, word-6)
+
+(ROOT
+  (S
+    (NP (NNPS Jews))
+    (VP (VBD were) (RB not)
+      (VP (VBN involved)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN creation))
+            (PP (IN of)
+              (NP (DT this) (NN word)))))))
+    (. .)))
+
+nsubjpass(involved-4, Jews-1)
+auxpass(involved-4, were-2)
+neg(involved-4, not-3)
+root(ROOT-0, involved-4)
+det(creation-7, the-6)
+prep_in(involved-4, creation-7)
+det(word-10, this-9)
+prep_of(creation-7, word-10)
+

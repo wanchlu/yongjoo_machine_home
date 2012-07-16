@@ -1,0 +1,66 @@
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (PRP you))
+      (VP (VBP live)
+        (SBAR
+          (S
+            (PP (IN in)
+              (NP (NNP Israel)))
+            (NP (PRP you))
+            (VP (MD might)
+              (VP (VB find)
+                (SBAR
+                  (S
+                    (NP (DT these) (NNS things))
+                    (VP (VBP are)
+                      (ADJP (JJ taboo))
+                      (, ,)
+                      (S
+                        (VP (VBG seeing)
+                          (SBAR (IN as)
+                            (S
+                              (NP
+                                (NP (JJS most))
+                                (PP (IN of)
+                                  (NP
+                                    (NP (DT the) (NNS things))
+                                    (SBAR
+                                      (S
+                                        (NP (PRP you))
+                                        (VP (VBP have)
+                                          (VP (VBN mentioned))))))))
+                              (VP (VBD were)
+                                (VP (VBN aimed)
+                                  (PP (IN at)
+                                    (NP
+                                      (NP (DT the) (NNS children))
+                                      (PP (IN of)
+                                        (NP (NN israel))))))))))))))))))))))
+
+mark(live-3, If-1)
+nsubj(live-3, you-2)
+root(ROOT-0, live-3)
+prep_in(find-8, Israel-5)
+nsubj(find-8, you-6)
+aux(find-8, might-7)
+ccomp(live-3, find-8)
+det(things-10, these-9)
+nsubj(taboo-12, things-10)
+cop(taboo-12, are-11)
+ccomp(find-8, taboo-12)
+xcomp(taboo-12, seeing-14)
+mark(aimed-24, as-15)
+nsubjpass(aimed-24, most-16)
+det(things-19, the-18)
+prep_of(most-16, things-19)
+dobj(mentioned-22, things-19)
+nsubj(mentioned-22, you-20)
+aux(mentioned-22, have-21)
+rcmod(things-19, mentioned-22)
+auxpass(aimed-24, were-23)
+advcl(seeing-14, aimed-24)
+det(children-27, the-26)
+prep_at(aimed-24, children-27)
+prep_of(children-27, israel-29)
+

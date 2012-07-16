@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (ADVP (RB Actually))
+    (, ,)
+    (NP
+      (NP (DT the) (NN person))
+      (PP (IN on)
+        (NP (DT the) (NN receiving) (NN end))))
+    (ADVP (RB sometimes))
+    (VP (VBZ gets)
+      (NP
+        (NP (NN butt))
+        (VP (VBN hurt))))
+    (. .)))
+
+advmod(gets-10, Actually-1)
+det(person-4, the-3)
+nsubj(gets-10, person-4)
+det(end-8, the-6)
+nn(end-8, receiving-7)
+prep_on(person-4, end-8)
+advmod(gets-10, sometimes-9)
+root(ROOT-0, gets-10)
+dobj(gets-10, butt-11)
+partmod(butt-11, hurt-12)
+
+(ROOT
+  (FRAG
+    (S (CC Or)
+      (ADVP (RB so))
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (VP (VBN told) (: ;)
+          (ADVP (RB -RRB-)))))))
+
+cc(told-5, Or-1)
+advmod(told-5, so-2)
+nsubjpass(told-5, I-3)
+auxpass(told-5, 'm-4)
+root(ROOT-0, told-5)
+

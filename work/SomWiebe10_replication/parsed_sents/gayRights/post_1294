@@ -1,0 +1,148 @@
+(ROOT
+  (S
+    (NP
+      (NP (PRP Me))
+      (VP (VBG saying)
+        (SBAR (IN that)
+          (S
+            (NP (PRP you))
+            (VP (VBP 're)
+              (NP (DT a) (NN chore)))))))
+    (VP (VBD was)
+      (ADVP (RB never))
+      (NP (DT an) (NN argument)))
+    (. .)))
+
+nsubj(argument-11, Me-1)
+partmod(Me-1, saying-2)
+complm(chore-7, that-3)
+nsubj(chore-7, you-4)
+cop(chore-7, 're-5)
+det(chore-7, a-6)
+ccomp(saying-2, chore-7)
+cop(argument-11, was-8)
+neg(argument-11, never-9)
+det(argument-11, an-10)
+root(ROOT-0, argument-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN statement))
+        (PP (IN about)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP I))
+              (VP (VBP feel)))))))
+    (. .)))
+
+nsubj(statement-4, It-1)
+cop(statement-4, was-2)
+det(statement-4, a-3)
+root(ROOT-0, statement-4)
+advmod(feel-8, how-6)
+nsubj(feel-8, I-7)
+prepc_about(statement-4, feel-8)
+
+(ROOT
+  (S (CC And)
+    (NP (RB yes))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ is)
+      (PP (IN about)
+        (NP (NNP God))))
+    (. .)))
+
+cc(is-5, And-1)
+nsubj(is-5, yes-2)
+nsubj(is-5, this-4)
+root(ROOT-0, is-5)
+prep_about(is-5, God-7)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (PP (IN about)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NNS people))
+            (VP (VBZ oppress)
+              (NP
+                (NP (NNS others))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NN name))
+                    (PP (IN of)
+                      (NP (PRP$ their) (NN God)))))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+advmod(oppress-6, how-4)
+nsubj(oppress-6, people-5)
+prepc_about(is-2, oppress-6)
+dobj(oppress-6, others-7)
+det(name-10, the-9)
+prep_in(others-7, name-10)
+poss(God-13, their-12)
+prep_of(name-10, God-13)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ is)
+          (ADJP (JJ relevant)))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN fact))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (VP (VBP live)
+              (PP (IN in)
+                (NP
+                  (NP (DT a) (NN country))
+                  (PP (IN of)
+                    (NP (JJ religious) (NN freedom)))))))))
+      (: ...)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NN religion))
+          (VP (VBZ has)
+            (NP
+              (NP (DT the) (NN freedom))
+              (PP (TO to)
+                (NP (NNS oppress))))))))
+    (. .)))
+
+nsubj(relevant-3, What-1)
+cop(relevant-3, is-2)
+csubj(fact-6, relevant-3)
+cop(fact-6, is-4)
+det(fact-6, the-5)
+root(ROOT-0, fact-6)
+dobj(live-9, fact-6)
+complm(live-9, that-7)
+nsubj(live-9, we-8)
+dep(fact-6, live-9)
+det(country-12, a-11)
+prep_in(live-9, country-12)
+amod(freedom-15, religious-14)
+prep_of(country-12, freedom-15)
+advmod(has-19, where-17)
+nsubj(has-19, religion-18)
+advcl(fact-6, has-19)
+parataxis(fact-6, has-19)
+det(freedom-21, the-20)
+dobj(has-19, freedom-21)
+prep_to(freedom-21, oppress-23)
+

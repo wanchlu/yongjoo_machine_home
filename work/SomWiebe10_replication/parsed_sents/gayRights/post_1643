@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP Man))
+        (VP (VB marry)
+          (NP (NN Man))
+          (ADVP (RB then)))))
+    (NP (WDT what))
+    (VP (MD will)
+      (VP (VB happen)
+        (PP (TO to)
+          (NP
+            (NP (DT those) (NNPS Girls))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (ADVP (RB already))
+                  (PP (IN in)
+                    (NP (JJ large) (NNS numbers))))))))))
+    (. .)))
+
+mark(marry-3, If-1)
+nsubj(marry-3, Man-2)
+advcl(happen-8, marry-3)
+dobj(marry-3, Man-4)
+advmod(marry-3, then-5)
+nsubj(happen-8, what-6)
+aux(happen-8, will-7)
+root(ROOT-0, happen-8)
+det(Girls-11, those-10)
+prep_to(happen-8, Girls-11)
+nsubj(are-13, Girls-11)
+rcmod(Girls-11, are-13)
+advmod(are-13, already-14)
+amod(numbers-17, large-16)
+prep_in(are-13, numbers-17)
+
+(ROOT
+  (S (CC And)
+    (NP (NN child) (NN birth))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VB disturb)
+          (SBAR (IN that)
+            (S
+              (VP (VBZ means)
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP are)
+                      (VP (VBG hurting)
+                        (NP (PRP$ your) (NN countary))
+                        (NP (PRP$ your) (NN economy))))))))))))
+    (: ...)))
+
+cc(disturb-6, And-1)
+nn(birth-3, child-2)
+nsubj(disturb-6, birth-3)
+aux(disturb-6, will-4)
+aux(disturb-6, be-5)
+root(ROOT-0, disturb-6)
+complm(means-8, that-7)
+ccomp(disturb-6, means-8)
+nsubj(hurting-11, you-9)
+aux(hurting-11, are-10)
+ccomp(means-8, hurting-11)
+poss(countary-13, your-12)
+dep(hurting-11, countary-13)
+poss(economy-15, your-14)
+dobj(hurting-11, economy-15)
+

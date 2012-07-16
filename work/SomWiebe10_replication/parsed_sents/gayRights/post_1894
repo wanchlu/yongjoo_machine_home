@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP say)
+      (NP (CD :1)))
+    (. .)))
+
+nsubj(say-2, I-1)
+root(ROOT-0, say-2)
+dobj(say-2, :1-3)
+
+(ROOT
+  (S
+    (NP (DT all) (NNS religions))
+    (VP (MD should)
+      (VP (VB lose)
+        (NP (PRP$ their) (NN tax) (JJ exempt) (NN status) (CD .2))))
+    (. .)))
+
+det(religions-2, all-1)
+nsubj(lose-4, religions-2)
+aux(lose-4, should-3)
+root(ROOT-0, lose-4)
+poss(status-8, their-5)
+nn(status-8, tax-6)
+amod(status-8, exempt-7)
+dobj(lose-4, status-8)
+num(status-8, .2-9)
+
+(ROOT
+  (NP
+    (NP (RB only) (JJ civil) (NNS unions))
+    (PP (IN for)
+      (NP
+        (QP (DT all) (CD .3))))
+    (. .)))
+
+advmod(unions-3, only-1)
+amod(unions-3, civil-2)
+root(ROOT-0, unions-3)
+quantmod(.3-6, all-5)
+prep_for(unions-3, .3-6)
+
+(ROOT
+  (S
+    (NP (NNS churches))
+    (VP (VBP decide)
+      (S
+        (VP (TO to)
+          (VP (VB marry)
+            (NP
+              (NP (NNS gays))
+              (CC or)
+              (RB not))))))
+    (. .)))
+
+nsubj(decide-2, churches-1)
+xsubj(marry-4, churches-1)
+root(ROOT-0, decide-2)
+aux(marry-4, to-3)
+xcomp(decide-2, marry-4)
+dobj(marry-4, gays-5)
+dobj(marry-4, not-7)
+conj_or(gays-5, not-7)
+neg(gays-5, not-7)
+

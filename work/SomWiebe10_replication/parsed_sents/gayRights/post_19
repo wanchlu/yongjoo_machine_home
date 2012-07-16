@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (JJ Gay) (NN marriage))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN compared)
+          (PP (IN against)
+            (NP
+              (NP (JJ average) (NNS marriages))
+              (: ;)
+              (NP
+                (ADJP (RB not) (JJS worst))
+                (NN case) (NNS ones)))))))
+    (. .)))
+
+amod(marriage-2, Gay-1)
+nsubjpass(compared-5, marriage-2)
+aux(compared-5, should-3)
+auxpass(compared-5, be-4)
+root(ROOT-0, compared-5)
+amod(marriages-8, average-7)
+prep_against(compared-5, marriages-8)
+neg(worst-11, not-10)
+amod(ones-13, worst-11)
+nn(ones-13, case-12)
+dep(marriages-8, ones-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNS arguments))
+          (VP (VBG negating)
+            (NP (DT this) (NN question))))))
+    (VP (VBP are)
+      (PP (VBN compared)
+        (PP (IN against)
+          (NP
+            (NP (DT the) (NNS dysfunctions))
+            (VP (VBG occurring)
+              (PP (IN in)
+                (NP (JJS worst) (NN case) (NNS heterosexual) (NNS marriages))))))))
+    (. .)))
+
+nsubj(are-8, All-1)
+det(arguments-4, the-3)
+prep_of(All-1, arguments-4)
+partmod(arguments-4, negating-5)
+det(question-7, this-6)
+dobj(negating-5, question-7)
+root(ROOT-0, are-8)
+prep(are-8, compared-9)
+pcomp(compared-9, against-10)
+det(dysfunctions-12, the-11)
+prep_against(compared-9, dysfunctions-12)
+partmod(dysfunctions-12, occurring-13)
+amod(marriages-18, worst-15)
+nn(marriages-18, case-16)
+nn(marriages-18, heterosexual-17)
+prep_in(occurring-13, marriages-18)
+

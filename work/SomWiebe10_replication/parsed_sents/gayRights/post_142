@@ -1,0 +1,103 @@
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP United) (NNPS States))
+      (VP (VBD was)
+        (VP (VBN founded)
+          (PP (IN on)
+            (NP (JJ religious) (NN freedom))))))
+    (NP (JJ Many) (NNS people))
+    (VP (VBP say)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP U.S.))
+          (VP (VBD was)
+            (VP (VBN founded)
+              (PP (IN on)
+                (NP (NN religion))))))))
+    (. .)))
+
+det(States-3, The-1)
+nn(States-3, United-2)
+nsubjpass(founded-5, States-3)
+auxpass(founded-5, was-4)
+dep(say-11, founded-5)
+amod(freedom-8, religious-7)
+prep_on(founded-5, freedom-8)
+amod(people-10, Many-9)
+nsubj(say-11, people-10)
+root(ROOT-0, say-11)
+complm(founded-16, that-12)
+det(U.S.-14, the-13)
+nsubjpass(founded-16, U.S.-14)
+auxpass(founded-16, was-15)
+ccomp(say-11, founded-16)
+prep_on(founded-16, religion-18)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADVP (RB only))
+      (ADJP (RB partially) (JJ true)))
+    (. .)))
+
+nsubj(true-5, This-1)
+cop(true-5, is-2)
+advmod(true-5, only-3)
+advmod(true-5, partially-4)
+root(ROOT-0, true-5)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNP United) (NNPS States))
+      (VP (VBD was)
+        (ADVP (RB actually))
+        (VP (VBN founded)
+          (PP (IN on)
+            (NP
+              (NP (NN freedom))
+              (PP (IN of)
+                (NP (NN religion)))))
+          (PRN (-LRB- -LRB-)
+            (CC or)
+            (FRAG
+              (X (DT the))
+              (NP (NN lack) (RB thereof)))
+            (-RRB- -RRB-)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NN religion))
+      (VP (MD should) (RB not)
+        (VP (VB play)
+          (NP (DT a) (NN role))
+          (PP (IN in)
+            (NP
+              (NP (DT any) (NNS laws))
+              (VP (VBN made)))))))
+    (. .)))
+
+det(States-3, The-1)
+nn(States-3, United-2)
+nsubjpass(founded-6, States-3)
+auxpass(founded-6, was-4)
+advmod(founded-6, actually-5)
+root(ROOT-0, founded-6)
+prep_on(founded-6, freedom-8)
+prep_of(freedom-8, religion-10)
+dep(founded-6, or-12)
+dep(lack-14, the-13)
+dep(or-12, lack-14)
+advmod(lack-14, thereof-15)
+nsubj(play-22, religion-19)
+aux(play-22, should-20)
+neg(play-22, not-21)
+conj_and(founded-6, play-22)
+det(role-24, a-23)
+dobj(play-22, role-24)
+det(laws-27, any-26)
+prep_in(play-22, laws-27)
+partmod(laws-27, made-28)
+

@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (DT A) (NN website))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (NN church))
+      (SBAR (IN like)
+        (S
+          (NP (PRP I))
+          (VP (VBD said)
+            (NP
+              (NP (NN church))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP
+                    (VP (VBZ gets)
+                      (NP (JJ deduced) (NNS taxes)))
+                    (CC and)
+                    (VP (VBZ is)
+                      (ADJP (JJ christian)))))))))))
+    (: ...)))
+
+det(website-2, A-1)
+nsubj(church-6, website-2)
+cop(church-6, is-3)
+neg(church-6, not-4)
+det(church-6, a-5)
+root(ROOT-0, church-6)
+mark(said-9, like-7)
+nsubj(said-9, I-8)
+advcl(church-6, said-9)
+dobj(said-9, church-10)
+nsubj(gets-12, church-10)
+nsubj(christian-17, church-10)
+rcmod(church-10, gets-12)
+amod(taxes-14, deduced-13)
+dobj(gets-12, taxes-14)
+cop(christian-17, is-16)
+rcmod(church-10, christian-17)
+conj_and(gets-12, christian-17)
+

@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN majority))
+      (PP (IN of)
+        (NP (DT the)
+          (ADJP (JJ happy)
+            (CC and)
+            (JJ healthy))
+          (NNS people))))
+    (VP (VBP are)
+      (VP (VBN raised)
+        (PP (IN by)
+          (NP
+            (NP (DT a) (NN mother))
+            (CC and)
+            (NP (DT a) (NN father))))))
+    (. .)))
+
+det(majority-2, The-1)
+nsubjpass(raised-10, majority-2)
+det(people-8, the-4)
+amod(people-8, happy-5)
+conj_and(happy-5, healthy-7)
+amod(people-8, healthy-7)
+prep_of(majority-2, people-8)
+auxpass(raised-10, are-9)
+root(ROOT-0, raised-10)
+det(mother-13, a-12)
+agent(raised-10, mother-13)
+det(father-16, a-15)
+agent(raised-10, father-16)
+conj_and(mother-13, father-16)
+
+(ROOT
+  (S (CC And)
+    (SBAR (IN if)
+      (S
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP (PRP them))))
+        (VP (VBZ dies))))
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADVP (RB still))
+      (NP (DT a) (NN family)))
+    (. .)))
+
+cc(family-11, And-1)
+mark(dies-6, if-2)
+nsubj(dies-6, one-3)
+prep_of(one-3, them-5)
+dep(family-11, dies-6)
+nsubj(family-11, they-7)
+cop(family-11, are-8)
+advmod(family-11, still-9)
+det(family-11, a-10)
+root(ROOT-0, family-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (NNS families))
+            (VP (MD can)
+              (VP (VB be)
+                (ADVP (RB together))
+                (ADVP (RB forever))))))
+        (CC and)
+        (SBAR (IN that)
+          (S
+            (NP (NN death))
+            (VP (VBZ is) (RB not)
+              (NP (DT the) (NN end)))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+complm(be-6, that-3)
+nsubj(be-6, families-4)
+aux(be-6, can-5)
+ccomp(believe-2, be-6)
+advmod(be-6, together-7)
+advmod(be-6, forever-8)
+complm(end-15, that-10)
+nsubj(end-15, death-11)
+cop(end-15, is-12)
+neg(end-15, not-13)
+det(end-15, the-14)
+ccomp(believe-2, end-15)
+conj_and(be-6, end-15)
+
