@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (PRP$ My) (NN argument))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN seen)
+          (PP (IN in)
+            (NP (DT the) (NN description))))))
+    (. .)))
+
+poss(argument-2, My-1)
+nsubjpass(seen-5, argument-2)
+aux(seen-5, can-3)
+auxpass(seen-5, be-4)
+root(ROOT-0, seen-5)
+det(description-8, the-7)
+prep_in(seen-5, description-8)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN anyone))
+        (VP (VBZ has)
+          (NP (DT any) (NNS discrepancies)))))
+    (, ,)
+    (VP (VB feel)
+      (ADJP (JJ free)
+        (S
+          (VP (TO to)
+            (VP (VB voice)
+              (NP (PRP them)))))))
+    (. .)))
+
+mark(has-3, If-1)
+nsubj(has-3, anyone-2)
+advcl(feel-7, has-3)
+det(discrepancies-5, any-4)
+dobj(has-3, discrepancies-5)
+root(ROOT-0, feel-7)
+acomp(feel-7, free-8)
+aux(voice-10, to-9)
+xcomp(free-8, voice-10)
+dobj(voice-10, them-11)
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNS Thats))
+        (NP (WP what) (NN democracy)))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP NOT) (NNP SOCIALISM))
+        (-RRB- -RRB-)))
+    (VP (VBZ is) (RB all)
+      (ADJP (IN about)))
+    (. .)))
+
+nsubj(about-10, Thats-1)
+dep(democracy-3, what-2)
+dep(Thats-1, democracy-3)
+nn(SOCIALISM-6, NOT-5)
+abbrev(Thats-1, SOCIALISM-6)
+cop(about-10, is-8)
+advmod(about-10, all-9)
+root(ROOT-0, about-10)
+

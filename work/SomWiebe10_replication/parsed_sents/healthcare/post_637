@@ -1,0 +1,195 @@
+(ROOT
+  (S (RB Not)
+    (NP (DT all) (NN healthcare))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ free))))
+    (. .)))
+
+neg(free-6, Not-1)
+det(healthcare-3, all-2)
+nsubj(free-6, healthcare-3)
+aux(free-6, should-4)
+cop(free-6, be-5)
+root(ROOT-0, free-6)
+
+(ROOT
+  (NP
+    (NP (NNP First))
+    (PP (IN of)
+      (NP
+        (NP (DT all))
+        (, ,)
+        (NP (PRP$ its)
+          (ADJP (RB not) (DT a))
+          (JJ practical) (NN idea))))
+    (. .)))
+
+root(ROOT-0, First-1)
+prep_of(First-1, all-3)
+poss(idea-9, its-5)
+neg(a-7, not-6)
+amod(idea-9, a-7)
+amod(idea-9, practical-8)
+appos(all-3, idea-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS costs))
+      (PP (IN of)
+        (NP
+          (NP
+            (NP (NN doctor) (POS 's))
+            (NN consultation))
+          (, ,)
+          (NP
+            (NP (JJ medical) (NNS tests))
+            (, ,)
+            (NP (NNS operations))
+            (, ,)
+            (NP (NNS equipments))
+            (, ,)
+            (NP (NNS hospitals))
+            (, ,)
+            (NP (NNS utilities))))))
+    (VP (MD will)
+      (VP (VB be)
+        (PP (IN in)
+          (NP
+            (NP (NNS billions))
+            (PP (IN of)
+              (NP (NNS dollars)))))))
+    (. .)))
+
+det(costs-2, The-1)
+nsubj(be-19, costs-2)
+poss(consultation-6, doctor-4)
+prep_of(costs-2, consultation-6)
+amod(tests-9, medical-8)
+appos(consultation-6, tests-9)
+appos(tests-9, operations-11)
+appos(tests-9, equipments-13)
+appos(tests-9, hospitals-15)
+appos(tests-9, utilities-17)
+aux(be-19, will-18)
+root(ROOT-0, be-19)
+prep_in(be-19, billions-21)
+prep_of(billions-21, dollars-23)
+
+(ROOT
+  (S
+    (NP (NNP Government))
+    (VP (MD could)
+      (VP (VB go)
+        (ADJP (JJ bankrupt))))
+    (. .)))
+
+nsubj(go-3, Government-1)
+aux(go-3, could-2)
+root(ROOT-0, go-3)
+acomp(go-3, bankrupt-4)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB personally))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (MD should)
+            (VP (VB be)
+              (ADJP (JJ cheap)
+                (PP (RB rather) (IN than)
+                  (ADJP (RB freely) (JJ available)))))))))
+    (. .)))
+
+nsubj(think-3, I-1)
+advmod(think-3, personally-2)
+root(ROOT-0, think-3)
+complm(cheap-8, that-4)
+nsubj(cheap-8, it-5)
+aux(cheap-8, should-6)
+cop(cheap-8, be-7)
+ccomp(think-3, cheap-8)
+advmod(cheap-8, rather-9)
+advmod(available-12, freely-11)
+prep_than(cheap-8, available-12)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (PRP$ your) (NN case)))
+    (, ,)
+    (NP (NNS people))
+    (VP (MD will)
+      (VP (VB be)
+        (S
+          (VP
+            (VP (VBG putting)
+              (NP
+                (NP (NNS responsibilities))
+                (PP (IN of)
+                  (NP
+                    (NP (PRP$ their) (NN health))
+                    (PP (IN on)
+                      (NP (NNS doctors)
+                        (CC and)
+                        (NNS medicines)))))))
+            (, ,)
+            (CONJP (RB rather) (IN than))
+            (VP (VBG taking)
+              (NP (NN care))
+              (ADVP (RB personally))
+              (PP (IN by)
+                (S
+                  (VP (VBG refraining)
+                    (PP (IN from)
+                      (NP
+                        (NP (NN alcohol))
+                        (, ,)
+                        (NP (NN smoking))
+                        (, ,)
+                        (CC and)
+                        (NP (JJ other) (JJ harmful) (NNS substances))))))))))))
+    (. .)))
+
+poss(case-3, your-2)
+prep_in(be-7, case-3)
+nsubj(be-7, people-5)
+aux(be-7, will-6)
+root(ROOT-0, be-7)
+ccomp(be-7, putting-8)
+dobj(putting-8, responsibilities-9)
+poss(health-12, their-11)
+prep_of(responsibilities-9, health-12)
+prep_on(health-12, doctors-14)
+prep_on(health-12, medicines-16)
+conj_and(doctors-14, medicines-16)
+ccomp(be-7, taking-20)
+conj_negcc(putting-8, taking-20)
+dobj(taking-20, care-21)
+advmod(taking-20, personally-22)
+prepc_by(taking-20, refraining-24)
+prep_from(refraining-24, alcohol-26)
+prep_from(refraining-24, smoking-28)
+conj_and(alcohol-26, smoking-28)
+amod(substances-33, other-31)
+amod(substances-33, harmful-32)
+prep_from(refraining-24, substances-33)
+conj_and(alcohol-26, substances-33)
+
+(ROOT
+  (S
+    (NP (NN Nothing))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ free))))
+    (. !)))
+
+nsubj(free-4, Nothing-1)
+aux(free-4, should-2)
+cop(free-4, be-3)
+root(ROOT-0, free-4)
+

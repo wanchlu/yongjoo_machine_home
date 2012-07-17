@@ -1,0 +1,154 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS implications))
+      (PP (IN of)
+        (NP (DT the) (NNP DC) (NN handgun) (NN ban))))
+    (VP (VBP are) (RB not)
+      (VP (VBN supported)
+        (ADVP (RB nationwide))))
+    (. .)))
+
+det(implications-2, The-1)
+nsubjpass(supported-10, implications-2)
+det(ban-7, the-4)
+nn(ban-7, DC-5)
+nn(ban-7, handgun-6)
+prep_of(implications-2, ban-7)
+auxpass(supported-10, are-8)
+neg(supported-10, not-9)
+root(ROOT-0, supported-10)
+advmod(supported-10, nationwide-11)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP DC) (NN handgun) (NN ban) (NN case))
+    (VP (VBZ does) (RB not)
+      (VP (VB have)
+        (NP
+          (NP (DT an) (VBN isolated) (NN impact))
+          (PP (IN in)
+            (NP (NNP DC))))))
+    (. .)))
+
+det(case-5, The-1)
+nn(case-5, DC-2)
+nn(case-5, handgun-3)
+nn(case-5, ban-4)
+nsubj(have-8, case-5)
+aux(have-8, does-6)
+neg(have-8, not-7)
+root(ROOT-0, have-8)
+det(impact-11, an-9)
+amod(impact-11, isolated-10)
+dobj(have-8, impact-11)
+prep_in(impact-11, DC-13)
+
+(ROOT
+  (S
+    (ADVP (RB Rather))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ has)
+      (NP
+        (NP (JJ wide-ranging) (NNS implications))
+        (PP (IN for)
+          (NP
+            (NP (NN gun) (NNS laws))
+            (PP (IN across)
+              (NP (DT the) (NN country)))))))
+    (. .)))
+
+advmod(has-4, Rather-1)
+nsubj(has-4, it-3)
+root(ROOT-0, has-4)
+amod(implications-6, wide-ranging-5)
+dobj(has-4, implications-6)
+nn(laws-9, gun-8)
+prep_for(implications-6, laws-9)
+det(country-12, the-11)
+prep_across(laws-9, country-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN handgun) (NN ban))
+      (PP (IN in)
+        (NP (NNP DC))))
+    (VP (VBZ violates)
+      (S
+        (NP
+          (NP (DT the) (NN principle))
+          (PP (IN of)
+            (NP (DT an) (JJ individual) (NN right))))
+        (VP (TO to)
+          (VP (VB bear)
+            (NP (NNS arms))))))
+    (. .)))
+
+det(ban-3, A-1)
+nn(ban-3, handgun-2)
+nsubj(violates-6, ban-3)
+prep_in(ban-3, DC-5)
+root(ROOT-0, violates-6)
+det(principle-8, the-7)
+nsubj(bear-14, principle-8)
+det(right-12, an-10)
+amod(right-12, individual-11)
+prep_of(principle-8, right-12)
+aux(bear-14, to-13)
+xcomp(violates-6, bear-14)
+dobj(bear-14, arms-15)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (NP
+        (NP (JJ such))
+        (, ,)
+        (PP (IN for)
+          (NP
+            (NP (DT those))
+            (PP (IN in)
+              (NP
+                (NP (NN favor))
+                (PP (IN of)
+                  (NP
+                    (NP (NN gun) (NNS rights))
+                    (, ,)
+                    (SBAR
+                      (WHNP (WDT which))
+                      (S
+                        (VP (VBZ is)
+                          (NP
+                            (NP (DT a) (JJ large) (NN portion))
+                            (PP (IN of)
+                              (NP (DT the) (NN country)))))))))))))))
+    (, ,)
+    (NP
+      (NP (NN opposition))
+      (PP (TO to)
+        (NP (DT the) (NNP DC) (NN handgun))))
+    (VP (VBZ is)
+      (ADJP (JJ imperative)))
+    (. .)))
+
+prep_such_as(imperative-27, such-2)
+prep_for(imperative-27, those-5)
+prep_in(those-5, favor-7)
+nn(rights-10, gun-9)
+prep_of(favor-7, rights-10)
+nsubj(portion-16, rights-10)
+cop(portion-16, is-13)
+det(portion-16, a-14)
+amod(portion-16, large-15)
+rcmod(rights-10, portion-16)
+det(country-19, the-18)
+prep_of(portion-16, country-19)
+nsubj(imperative-27, opposition-21)
+det(handgun-25, the-23)
+nn(handgun-25, DC-24)
+prep_to(opposition-21, handgun-25)
+cop(imperative-27, is-26)
+root(ROOT-0, imperative-27)
+

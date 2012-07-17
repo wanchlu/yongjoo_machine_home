@@ -1,0 +1,204 @@
+(ROOT
+  (S
+    (S
+      (ADJP (JJ Free)))
+    (, ,)
+    (NP (JJ universal) (NN health) (NN care))
+    (VP (VBZ helps)
+      (NP (DT the) (JJ unhealthy))
+      (PP (IN in)
+        (NP
+          (NP (NNS times))
+          (PP (IN of)
+            (NP (NN need))))))
+    (. .)))
+
+ccomp(helps-6, Free-1)
+amod(care-5, universal-3)
+nn(care-5, health-4)
+nsubj(helps-6, care-5)
+root(ROOT-0, helps-6)
+det(unhealthy-8, the-7)
+dobj(helps-6, unhealthy-8)
+prep_in(helps-6, times-10)
+prep_of(times-10, need-12)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT an) (NN individual))
+        (VP (VBZ is)
+          (ADJP (JJ sick)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD should) (RB n't)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB think)
+              (PP (IN about)
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (VP (TO to)
+                      (VP (VB pay)
+                        (PP (IN for)
+                          (NP (PRP$ their) (NN treatment)))))))))))))
+    (. .)))
+
+advmod(sick-5, When-1)
+det(individual-3, an-2)
+nsubj(sick-5, individual-3)
+cop(sick-5, is-4)
+advcl(have-10, sick-5)
+nsubj(have-10, they-7)
+xsubj(think-12, they-7)
+aux(have-10, should-8)
+neg(have-10, n't-9)
+root(ROOT-0, have-10)
+aux(think-12, to-11)
+xcomp(have-10, think-12)
+advmod(pay-16, how-14)
+aux(pay-16, to-15)
+prepc_about(think-12, pay-16)
+poss(treatment-19, their-18)
+prep_for(pay-16, treatment-19)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (JJ free) (, ,) (JJ universal) (NN health) (NN care) (NNS systems))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP one))
+            (VP (VBZ is)
+              (ADJP (JJ sick)))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADVP (RB simply))
+      (VP (VBN told)
+        (S
+          (VP (TO to)
+            (VP (VB rest)
+              (CC and)
+              (VB get)
+              (NP (JJR better)))))))
+    (. .)))
+
+amod(systems-7, free-2)
+amod(systems-7, universal-4)
+nn(systems-7, health-5)
+nn(systems-7, care-6)
+prep_in(told-17, systems-7)
+advmod(sick-12, when-9)
+nsubj(sick-12, one-10)
+cop(sick-12, is-11)
+dep(systems-7, sick-12)
+nsubjpass(told-17, they-14)
+xsubj(rest-19, they-14)
+auxpass(told-17, are-15)
+advmod(told-17, simply-16)
+root(ROOT-0, told-17)
+aux(rest-19, to-18)
+xcomp(told-17, rest-19)
+xcomp(told-17, get-21)
+conj_and(rest-19, get-21)
+dobj(rest-19, better-22)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ essential)
+        (PP (IN for)
+          (NP (JJ proper) (NN healing)))))
+    (. .)))
+
+nsubj(essential-3, This-1)
+cop(essential-3, is-2)
+root(ROOT-0, essential-3)
+amod(healing-6, proper-5)
+prep_for(essential-3, healing-6)
+
+(ROOT
+  (S
+    (ADVP (RB Conversely))
+    (, ,)
+    (PP (IN in)
+      (NP (DT a) (JJ non-free-universal-health-care) (NN system)))
+    (, ,)
+    (NP (DT a) (JJ sick) (NN person))
+    (VP (VBZ is)
+      (VP (VBN required)
+        (S
+          (VP (TO to)
+            (VP (VB figure)
+              (PRT (RP out))
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (VP (TO to)
+                    (VP (VB pay)
+                      (PP (IN for)
+                        (NP (PRP$ their) (NN health) (NN care))))))))))
+        (, ,)
+        (PP (RB rather) (IN than)
+          (S
+            (ADVP (RB simply))
+            (VP (VBG focusing)
+              (PP (IN on)
+                (S
+                  (VP (VBG getting)
+                    (ADVP (RBR better))))))))))
+    (. .)))
+
+advmod(required-12, Conversely-1)
+det(system-6, a-4)
+amod(system-6, non-free-universal-health-care-5)
+prep_in(required-12, system-6)
+det(person-10, a-8)
+amod(person-10, sick-9)
+nsubjpass(required-12, person-10)
+xsubj(figure-14, person-10)
+auxpass(required-12, is-11)
+root(ROOT-0, required-12)
+aux(figure-14, to-13)
+xcomp(required-12, figure-14)
+prt(figure-14, out-15)
+advmod(pay-18, how-16)
+aux(pay-18, to-17)
+ccomp(figure-14, pay-18)
+xcomp(figure-14, pay-18)
+poss(care-22, their-20)
+nn(care-22, health-21)
+prep_for(pay-18, care-22)
+advmod(required-12, rather-24)
+advmod(focusing-27, simply-26)
+prepc_than(required-12, focusing-27)
+prepc_on(focusing-27, getting-29)
+advmod(getting-29, better-30)
+
+(ROOT
+  (S
+    (NP (NNP The))
+    (VP (VBZ stresses)
+      (SBAR
+        (S
+          (NP (DT this) (NNS causes))
+          (VP (VBZ hampers)
+            (NP (NN healing))))))
+    (. .)))
+
+nsubj(stresses-2, The-1)
+root(ROOT-0, stresses-2)
+det(causes-4, this-3)
+nsubj(hampers-5, causes-4)
+ccomp(stresses-2, hampers-5)
+dobj(hampers-5, healing-6)
+

@@ -1,0 +1,354 @@
+(ROOT
+  (S
+    (NP (PRP we))
+    (VP (MD would)
+      (VP (VB gain)
+        (NP (NN nothing))
+        (PP (IN from)
+          (S
+            (VP (VBG banning)
+              (NP (NNS guns))
+              (PP (IN in)
+                (NP (NN america))))))))
+    (. .)))
+
+nsubj(gain-3, we-1)
+aux(gain-3, would-2)
+root(ROOT-0, gain-3)
+dobj(gain-3, nothing-4)
+prepc_from(gain-3, banning-6)
+dobj(banning-6, guns-7)
+prep_in(banning-6, america-9)
+
+(ROOT
+  (S
+    (NP (NNS guns))
+    (VP (VBP are)
+      (ADJP (JJ dangerous)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNS people))
+            (ADVP (RB illegally))
+            (VP (VB use)
+              (NP (PRP them))
+              (SBAR
+                (SBARQ
+                  (WHADVP (WRB why))
+                  (SQ (MD would)
+                    (NP (PRP we))
+                    (VP (VB ban)
+                      (NP (NNS guns))
+                      (PP (IN in)
+                        (NP (NN america)))))
+                  (. ?))))))))))
+
+nsubj(dangerous-3, guns-1)
+cop(dangerous-3, are-2)
+root(ROOT-0, dangerous-3)
+advmod(use-7, when-4)
+nsubj(use-7, people-5)
+advmod(use-7, illegally-6)
+dep(dangerous-3, use-7)
+dobj(use-7, them-8)
+advmod(ban-12, why-9)
+aux(ban-12, would-10)
+nsubj(ban-12, we-11)
+dep(use-7, ban-12)
+dobj(ban-12, guns-13)
+prep_in(ban-12, america-15)
+
+(ROOT
+  (S
+    (S
+      (VP (TO to)
+        (VP (VB stop)
+          (NP
+            (NP (DT the) (NN violence))
+            (CC and)
+            (NP
+              (NP (PDT all) (DT the) (NNS killings))
+              (VP (VBN linked)
+                (PP (TO to)
+                  (NP (PRP them)))))))))
+    (VP (VBP correct))
+    (. ?)))
+
+aux(stop-2, to-1)
+csubj(correct-12, stop-2)
+det(violence-4, the-3)
+dobj(stop-2, violence-4)
+predet(killings-8, all-6)
+det(killings-8, the-7)
+dobj(stop-2, killings-8)
+conj_and(violence-4, killings-8)
+partmod(killings-8, linked-9)
+prep_to(linked-9, them-11)
+root(ROOT-0, correct-12)
+
+(ROOT
+  (S (CC and)
+    (SBAR (IN if)
+      (S
+        (NP (VBG killing) (NNS people))
+        (VP (VBZ is)
+          (ADVP (RB already))
+          (ADJP (JJ illegal)
+            (SBAR
+              (WHNP (WP what))
+              (FRAG
+                (ADJP (JJ good))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (PRP it))
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB do)
+                (S
+                  (VP (TO to)
+                    (VP (VB make)
+                      (S
+                        (NP (NNS guns))
+                        (ADJP (JJ illegal))))))))))))
+    (. .)))
+
+cc(it-11, and-1)
+mark(illegal-7, if-2)
+amod(people-4, killing-3)
+nsubj(illegal-7, people-4)
+cop(illegal-7, is-5)
+advmod(illegal-7, already-6)
+csubj(it-11, illegal-7)
+dep(good-9, what-8)
+dep(illegal-7, good-9)
+cop(it-11, is-10)
+root(ROOT-0, it-11)
+xsubj(do-14, it-11)
+partmod(it-11, going-12)
+aux(do-14, to-13)
+xcomp(going-12, do-14)
+aux(make-16, to-15)
+xcomp(do-14, make-16)
+nsubj(illegal-18, guns-17)
+xcomp(make-16, illegal-18)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (ADJP (JJ willing)
+            (S
+              (VP (TO to)
+                (VP (VB kill)
+                  (NP
+                    (NP (DT some) (NN one))
+                    (SBAR
+                      (S
+                        (NP (PRP you))
+                        (ADVP (RB probably))
+                        (VP (VBP do) (RB n't)
+                          (VP (VB care)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (PRP you))
+                                (VP (VBP are)
+                                  (VP (VBG killing)
+                                    (ADVP (RB then))
+                                    (PP (IN with))))))))))))))))))
+    (VP (VBZ is)
+      (ADJP (JJ legal)
+        (CC or)
+        (RB not)))
+    (. .)))
+
+mark(willing-4, If-1)
+nsubj(willing-4, you-2)
+cop(willing-4, are-3)
+csubj(legal-21, willing-4)
+aux(kill-6, to-5)
+xcomp(willing-4, kill-6)
+det(one-8, some-7)
+dobj(kill-6, one-8)
+dobj(care-13, one-8)
+nsubj(care-13, you-9)
+advmod(care-13, probably-10)
+aux(care-13, do-11)
+neg(care-13, n't-12)
+rcmod(one-8, care-13)
+dep(killing-17, what-14)
+nsubj(killing-17, you-15)
+aux(killing-17, are-16)
+ccomp(care-13, killing-17)
+advmod(killing-17, then-18)
+prep(killing-17, with-19)
+cop(legal-21, is-20)
+root(ROOT-0, legal-21)
+conj_or(legal-21, not-23)
+neg(legal-21, not-23)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ only) (NNS people))
+        (VP (VBG banning)
+          (SBAR
+            (S
+              (NP
+                (NP (NNS guns))
+                (PP (IN in)
+                  (NP (NN america))))
+              (VP (MD would)
+                (VP (VB hurt)))))))
+      (VP (VBP are)
+        (NP
+          (NP (DT the) (NNS people))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBG defending)
+                  (ADVP (RB there))
+                  (NP (NNS homes)))))))))
+    (, ,)
+    (NP (NN business))
+    (VP (VBZ 's) (, ,)
+      (NP (NNS families)))
+    (. .)))
+
+det(people-3, The-1)
+amod(people-3, only-2)
+nsubj(people-12, people-3)
+partmod(people-3, banning-4)
+nsubj(hurt-9, guns-5)
+prep_in(guns-5, america-7)
+aux(hurt-9, would-8)
+ccomp(banning-4, hurt-9)
+cop(people-12, are-10)
+det(people-12, the-11)
+nsubj(defending-15, people-12)
+ccomp(families-22, people-12)
+aux(defending-15, are-14)
+rcmod(people-12, defending-15)
+advmod(defending-15, there-16)
+dobj(defending-15, homes-17)
+nsubj(families-22, business-19)
+cop(families-22, 's-20)
+root(ROOT-0, families-22)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (NNS guns))
+        (VP (VBP are)
+          (ADVP (RB already))
+          (NP
+            (NP (DT a) (JJ lucrative) (JJ black) (NN market))
+            (VP (VBG making)
+              (S
+                (NP (PRP them))
+                (ADJP (JJ illegal))))))))
+    (VP (MD would)
+      (VP (VB make)
+        (S
+          (NP (PRP it))
+          (ADJP (JJS worst)))))
+    (. .)))
+
+mark(market-8, Since-1)
+nsubj(market-8, guns-2)
+cop(market-8, are-3)
+advmod(market-8, already-4)
+det(market-8, a-5)
+amod(market-8, lucrative-6)
+amod(market-8, black-7)
+csubj(make-13, market-8)
+partmod(market-8, making-9)
+nsubj(illegal-11, them-10)
+xcomp(making-9, illegal-11)
+aux(make-13, would-12)
+root(ROOT-0, make-13)
+nsubj(worst-15, it-14)
+xcomp(make-13, worst-15)
+
+(ROOT
+  (S
+    (ADVP (RB just))
+    (PP (IN like)
+      (S
+        (VP (VBG banning)
+          (NP (NN alcohol)))))
+    (VP (VBD did)
+      (PP (TO to)
+        (NP (DT this) (NN nation))))
+    (. .)))
+
+advmod(did-5, just-1)
+prepc_like(did-5, banning-3)
+dobj(banning-3, alcohol-4)
+root(ROOT-0, did-5)
+det(nation-8, this-7)
+prep_to(did-5, nation-8)
+
+(ROOT
+  (S
+    (VP (VB look)
+      (SBAR
+        (WHNP
+          (WHADJP (WRB how) (JJ much))
+          (NN money))
+        (S
+          (NP (DT that))
+          (VP (VBD made)
+            (NP
+              (NP (DT the) (NN mob))
+              (SBAR
+                (S
+                  (NP (PRP it))
+                  (VP (VBD brought)
+                    (NP (PRP them))
+                    (PP (IN into)
+                      (NP (NN power)))))))))))
+    (. .)))
+
+root(ROOT-0, look-1)
+advmod(much-3, how-2)
+amod(money-4, much-3)
+dobj(made-6, money-4)
+nsubj(made-6, that-5)
+ccomp(look-1, made-6)
+det(mob-8, the-7)
+dobj(made-6, mob-8)
+nsubj(brought-10, it-9)
+rcmod(mob-8, brought-10)
+dobj(brought-10, them-11)
+prep_into(brought-10, power-13)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBP do)
+      (NP (PRP you) (NNS guys))
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (DT a) (JJ black) (NN market) (NN surplus))
+            (VP (VBP do))))))
+    (. ?)))
+
+dobj(think-5, what-1)
+aux(think-5, do-2)
+dep(guys-4, you-3)
+nsubj(think-5, guys-4)
+root(ROOT-0, think-5)
+det(surplus-9, a-6)
+amod(surplus-9, black-7)
+nn(surplus-9, market-8)
+nsubj(do-10, surplus-9)
+ccomp(think-5, do-10)
+

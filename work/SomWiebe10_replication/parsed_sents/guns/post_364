@@ -1,0 +1,145 @@
+(ROOT
+  (S
+    (NP (DT The) (NNS Police))
+    (VP (MD can) (RB not)
+      (VP (VB be)
+        (ADVP (RB everywhere))
+        (PP (IN at)
+          (NP (RB once)))))
+    (. .)))
+
+det(Police-2, The-1)
+nsubj(be-5, Police-2)
+aux(be-5, can-3)
+neg(be-5, not-4)
+root(ROOT-0, be-5)
+advmod(be-5, everywhere-6)
+prep(be-5, at-7)
+pobj(at-7, once-8)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (ADVP (RB often))
+      (VP (VBN outnumbered)
+        (PP (IN by)
+          (NP (CD 500)))
+        (PP (TO to)
+          (NP
+            (QP (CD 1)
+              (CC or)
+              (JJR more))))))
+    (. .)))
+
+nsubjpass(outnumbered-4, They-1)
+auxpass(outnumbered-4, are-2)
+advmod(outnumbered-4, often-3)
+root(ROOT-0, outnumbered-4)
+agent(outnumbered-4, 500-6)
+prep_to(outnumbered-4, 1-8)
+prep_to(outnumbered-4, more-10)
+conj_or(1-8, more-10)
+quantmod(1-8, more-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP do)
+        (NP
+          (NP (DT the) (JJS best))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (MD can)))))))
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBP are) (RB not)
+        (NP (PRP$ your) (JJ personal) (NN body) (NN guard))))
+    (. .)))
+
+nsubj(do-2, They-1)
+root(ROOT-0, do-2)
+det(best-4, the-3)
+dobj(do-2, best-4)
+dobj(can-6, best-4)
+nsubj(can-6, they-5)
+rcmod(best-4, can-6)
+nsubj(guard-14, they-8)
+cop(guard-14, are-9)
+neg(guard-14, not-10)
+poss(guard-14, your-11)
+amod(guard-14, personal-12)
+nn(guard-14, body-13)
+conj_but(do-2, guard-14)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (NNS seconds))
+        (VP (VBP count))))
+    (, ,)
+    (NP (DT the) (NNS Police))
+    (VP (VBP are)
+      (ADVP (RB Minutes) (RB Away)))
+    (. .)))
+
+advmod(count-3, When-1)
+nsubj(count-3, seconds-2)
+advcl(are-7, count-3)
+det(Police-6, the-5)
+nsubj(are-7, Police-6)
+root(ROOT-0, are-7)
+advmod(Away-9, Minutes-8)
+advmod(are-7, Away-9)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (DT this) (NN reason)))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP (PRP$ your) (JJ personal) (NN responsibility)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (CC &)
+                (NN train))
+              (PP (IN with)
+                (NP
+                  (NP (DT the) (NNS tools))
+                  (ADJP (JJ necessary)
+                    (S
+                      (VP (TO to)
+                        (VP (VB secure)
+                          (NP
+                            (NP (PRP yourself))
+                            (CC &)
+                            (NP (PRP$ your) (NN household))))))))))))))
+    (. .)))
+
+det(reason-3, this-2)
+prep_for(responsibility-8, reason-3)
+nsubj(responsibility-8, it-4)
+cop(responsibility-8, is-5)
+poss(responsibility-8, your-6)
+amod(responsibility-8, personal-7)
+root(ROOT-0, responsibility-8)
+aux(have-10, to-9)
+infmod(responsibility-8, have-10)
+cc(train-12, &-11)
+dobj(have-10, train-12)
+det(tools-15, the-14)
+prep_with(have-10, tools-15)
+amod(tools-15, necessary-16)
+aux(secure-18, to-17)
+xcomp(necessary-16, secure-18)
+dobj(secure-18, yourself-19)
+poss(household-22, your-21)
+dobj(secure-18, household-22)
+conj_and(yourself-19, household-22)
+

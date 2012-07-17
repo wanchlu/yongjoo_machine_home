@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (ADJP
+          (NP (CD Profit) (NNS interests))
+          (JJ corrupt))
+        (NNS investments))
+      (PP (IN in)
+        (NP
+          (NP (JJ medical) (NN innovation) (NN Drug))
+          (CC and)
+          (NP (JJ medical) (NNS companies)))))
+    (VP (VBP are)
+      (VP (VBN driven) (, ,)
+        (PP (IN in)
+          (NP (JJ large) (NN part)))
+        (, ,)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (JJ bottom-line))
+            (PP (IN of)
+              (NP (NNS profits)))))))
+    (. .)))
+
+num(interests-2, Profit-1)
+npadvmod(corrupt-3, interests-2)
+amod(investments-4, corrupt-3)
+nsubjpass(driven-13, investments-4)
+amod(Drug-8, medical-6)
+nn(Drug-8, innovation-7)
+prep_in(investments-4, Drug-8)
+amod(companies-11, medical-10)
+prep_in(investments-4, companies-11)
+conj_and(Drug-8, companies-11)
+auxpass(driven-13, are-12)
+root(ROOT-0, driven-13)
+amod(part-17, large-16)
+prep_in(driven-13, part-17)
+det(bottom-line-21, the-20)
+agent(driven-13, bottom-line-21)
+prep_of(bottom-line-21, profits-23)
+
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Their) (NNS investments))
+      (PP (IN in)
+        (NP
+          (NP (JJ new) (NNS drugs))
+          (CC and)
+          (NP (JJ medical) (NNS innovations)))))
+    (VP (VBP are)
+      (VP (VBN driven)
+        (PP (IN by)
+          (NP (DT these) (NNS interests)))))
+    (. .)))
+
+poss(investments-2, Their-1)
+nsubjpass(driven-10, investments-2)
+amod(drugs-5, new-4)
+prep_in(investments-2, drugs-5)
+amod(innovations-8, medical-7)
+prep_in(investments-2, innovations-8)
+conj_and(drugs-5, innovations-8)
+auxpass(driven-10, are-9)
+root(ROOT-0, driven-10)
+det(interests-13, these-12)
+agent(driven-10, interests-13)
+
+(ROOT
+  (S (CC But)
+    (, ,)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (VP (VBZ is)
+          (ADJP (JJ likely)
+            (S
+              (VP (TO to)
+                (VP (VB make))))))))
+    (NP (DT the) (JJS most) (NN money))
+    (VP (VBZ is)
+      (ADVP (RB often))
+      (PP (IN at)
+        (NP
+          (NP (NNS odds))
+          (PP (IN with)
+            (NP (JJ public)
+              (CC and)
+              (JJ patient) (NNS interests))))))
+    (. .)))
+
+cc(is-11, But-1)
+nsubj(likely-5, what-3)
+cop(likely-5, is-4)
+dep(is-11, likely-5)
+aux(make-7, to-6)
+xcomp(likely-5, make-7)
+det(money-10, the-8)
+amod(money-10, most-9)
+nsubj(is-11, money-10)
+root(ROOT-0, is-11)
+advmod(is-11, often-12)
+prep_at(is-11, odds-14)
+amod(interests-19, public-16)
+conj_and(public-16, patient-18)
+amod(interests-19, patient-18)
+prep_with(odds-14, interests-19)
+

@@ -1,0 +1,180 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS guns))
+        (VP
+          (VP (VBP are)
+            (ADJP (RB freely) (JJ available))
+            (PP (RB then)
+              (NP (NN gun) (NN crime))))
+          (, ,)
+          (CC and)
+          (VP (VBZ death\/serious)
+            (NP (NN injury))
+            (PP (IN from)
+              (NP (NNS guns)))))))
+    (VP (MD will)
+      (VP (VB be)
+        (ADJP (RB much) (JJR higher))))
+    (. .)))
+
+mark(available-5, If-1)
+nsubj(available-5, guns-2)
+nsubj(death\/serious-11, guns-2)
+cop(available-5, are-3)
+advmod(available-5, freely-4)
+csubj(higher-18, available-5)
+prep(available-5, then-6)
+nn(crime-8, gun-7)
+pobj(then-6, crime-8)
+conj_and(available-5, death\/serious-11)
+csubj(higher-18, death\/serious-11)
+dobj(death\/serious-11, injury-12)
+prep_from(death\/serious-11, guns-14)
+aux(higher-18, will-15)
+cop(higher-18, be-16)
+advmod(higher-18, much-17)
+root(ROOT-0, higher-18)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (RB as) (JJ simple)
+        (PP (IN as)
+          (NP (DT that)))))
+    (. .)))
+
+nsubj(simple-4, It-1)
+cop(simple-4, is-2)
+advmod(simple-4, as-3)
+root(ROOT-0, simple-4)
+prep_as(simple-4, that-6)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NNS guns))
+      (VP (VBP do) (RB n't)
+        (VP (VB kill)
+          (NP (NNS people)))))
+    (, ,)
+    (NP (NNS people))
+    (VP (VBP kill)
+      (SBAR
+        (S
+          (NP
+            (NP (NNS people) (NN statement))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ is)
+                  (VP (VBN trotted)
+                    (PRT (RP out)))))))
+          (VP (VBZ is)
+            (NP (JJ such) (NN waffle))))))
+    (. .)))
+
+det(guns-2, The-1)
+nsubj(kill-5, guns-2)
+aux(kill-5, do-3)
+neg(kill-5, n't-4)
+ccomp(kill-9, kill-5)
+dobj(kill-5, people-6)
+nsubj(kill-9, people-8)
+root(ROOT-0, kill-9)
+nn(statement-11, people-10)
+nsubjpass(trotted-14, statement-11)
+nsubj(waffle-18, statement-11)
+auxpass(trotted-14, is-13)
+rcmod(statement-11, trotted-14)
+prt(trotted-14, out-15)
+cop(waffle-18, is-16)
+amod(waffle-18, such-17)
+ccomp(kill-9, waffle-18)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (MD can) (RB not)
+      (VP (VB shoot)
+        (NP (NN someone))
+        (PP (IN without)
+          (NP (DT a) (NN gun)))
+        (SBAR (RB just) (IN as)
+          (S
+            (NP (DT a) (NN gun))
+            (VP (MD can) (RB not)
+              (VP (VB shoot)
+                (PP (IN without)
+                  (NP (DT a) (NN person)
+                    (S
+                      (VP (TO to)
+                        (VP (VB pull)
+                          (NP (DT the) (NN trigger)))))))))))))
+    (. .)))
+
+nsubj(shoot-4, People-1)
+aux(shoot-4, can-2)
+neg(shoot-4, not-3)
+root(ROOT-0, shoot-4)
+dobj(shoot-4, someone-5)
+det(gun-8, a-7)
+prep_without(shoot-4, gun-8)
+advmod(shoot-15, just-9)
+dep(shoot-15, as-10)
+det(gun-12, a-11)
+nsubj(shoot-15, gun-12)
+aux(shoot-15, can-13)
+neg(shoot-15, not-14)
+dep(shoot-4, shoot-15)
+det(person-18, a-17)
+prep_without(shoot-15, person-18)
+aux(pull-20, to-19)
+infmod(person-18, pull-20)
+det(trigger-22, the-21)
+dobj(pull-20, trigger-22)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN combination))
+        (PP (IN of)
+          (NP (DT the) (CD two)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ kills))))))
+    (. .)))
+
+nsubj(combination-4, It-1)
+cop(combination-4, is-2)
+det(combination-4, the-3)
+root(ROOT-0, combination-4)
+nsubj(kills-9, combination-4)
+det(two-7, the-6)
+prep_of(combination-4, two-7)
+rcmod(combination-4, kills-9)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT no) (NN need)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (NNS guns)))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(need-4, no-3)
+nsubj(is-2, need-4)
+aux(have-6, to-5)
+infmod(need-4, have-6)
+dobj(have-6, guns-7)
+

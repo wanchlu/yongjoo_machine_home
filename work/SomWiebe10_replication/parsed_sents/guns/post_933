@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT All))
+      (SBAR
+        (S
+          (NP (PRP we))
+          (VP (VBP need)))))
+    (VP (VBZ is)
+      (NP (JJ good) (NN gun) (NN control)))
+    (. .)))
+
+dobj(need-3, All-1)
+nsubj(control-7, All-1)
+nsubj(need-3, we-2)
+rcmod(All-1, need-3)
+cop(control-7, is-4)
+amod(control-7, good-5)
+nn(control-7, gun-6)
+root(ROOT-0, control-7)
+
+(ROOT
+  (FRAG (CC And)
+    (PP (IN by)
+      (NP (`` ``)
+        (NP (JJ good) (NN gun) (NN control))
+        ('' '')
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP mean)
+              (WHNP
+                (WHNP (CD two))
+                (PRN
+                  (NP
+                    (NP (NNS hands))
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (NN gun))
+                        (: ;))))
+                  (-RRB- -RRB-))))))))))
+
+root(ROOT-0, And-1)
+dep(And-1, by-2)
+amod(control-6, good-4)
+nn(control-6, gun-5)
+pobj(by-2, control-6)
+dobj(mean-9, control-6)
+nsubj(mean-9, I-8)
+rcmod(control-6, mean-9)
+dobj(mean-9, two-10)
+dep(two-10, hands-11)
+det(gun-14, the-13)
+prep_on(hands-11, gun-14)
+

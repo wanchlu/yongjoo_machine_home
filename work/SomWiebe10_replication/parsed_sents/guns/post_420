@@ -1,0 +1,160 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Anthropologist) (NNP David) (NNP Kennedy))
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NNP John) (NNP Jay) (NNP College))
+          (PP (IN of)
+            (NP
+              (NP (NNP Criminal) (NNP Justice))
+              (, ,)
+              (NP
+                (NP (NNP City) (NNP University))
+                (PP (IN of)
+                  (NP (NNP New) (NNP York)))))))
+        (-RRB- -RRB-)))
+    (VP (VBZ has)
+      (VP (VBN determined)
+        (PP (IN in)
+          (NP (NN city)))
+        (PP (IN after)
+          (NP (NN city)))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP
+                (QP (JJR less) (IN than) (CD 0.5))
+                (NN %))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN population))
+                  (PP (IN on)
+                    (NP (NN average))))))
+            (VP (VBZ is)
+              (ADJP (JJ responsible)
+                (PP (IN for)
+                  (PP (IN over)
+                    (NP
+                      (NP (CD 75) (NN %))
+                      (PP (IN of)
+                        (NP (DT the) (NNS homicides))))))))))))
+    (. .)))
+
+nn(Kennedy-3, Anthropologist-1)
+nn(Kennedy-3, David-2)
+nsubj(determined-19, Kennedy-3)
+nn(College-7, John-5)
+nn(College-7, Jay-6)
+dep(Kennedy-3, College-7)
+nn(Justice-10, Criminal-9)
+prep_of(College-7, Justice-10)
+nn(University-13, City-12)
+appos(Justice-10, University-13)
+nn(York-16, New-15)
+prep_of(University-13, York-16)
+aux(determined-19, has-18)
+root(ROOT-0, determined-19)
+prep_in(determined-19, city-21)
+prep_after(determined-19, city-23)
+complm(responsible-35, that-24)
+mwe(than-26, less-25)
+quantmod(0.5-27, than-26)
+num(%-28, 0.5-27)
+nsubj(responsible-35, %-28)
+det(population-31, the-30)
+prep_of(%-28, population-31)
+prep_on(population-31, average-33)
+cop(responsible-35, is-34)
+ccomp(determined-19, responsible-35)
+prep(responsible-35, for-36)
+pcomp(for-36, over-37)
+num(%-39, 75-38)
+prep_over(for-36, %-39)
+det(homicides-42, the-41)
+prep_of(%-39, homicides-42)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT those) (NNS individuals))
+        (VP (VBP are)
+          (VP (VBN addressed)))))
+    (, ,)
+    (NP
+      (NP (NN violence))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ first) (NN year))
+          (PP (IN of)
+            (NP (DT the) (NN interdiction) (NN program))))))
+    (ADVP (RB typically))
+    (VP (VBZ drops)
+      (PP (IN by)
+        (NP (NN half))))
+    (. .)))
+
+advmod(addressed-5, When-1)
+det(individuals-3, those-2)
+nsubjpass(addressed-5, individuals-3)
+auxpass(addressed-5, are-4)
+advcl(drops-17, addressed-5)
+nsubj(drops-17, violence-7)
+det(year-11, the-9)
+amod(year-11, first-10)
+prep_in(violence-7, year-11)
+det(program-15, the-13)
+nn(program-15, interdiction-14)
+prep_of(year-11, program-15)
+advmod(drops-17, typically-16)
+root(ROOT-0, drops-17)
+prep_by(drops-17, half-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP do) (RB n't)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB control)
+                (S
+                  (NP (NNS guns))
+                  (VP (TO to)
+                    (VP (VB address)
+                      (NP (NN violence)))))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB control)
+            (NP (NNS criminals))))))
+    (. .)))
+
+nsubj(need-4, We-1)
+xsubj(control-6, We-1)
+aux(need-4, do-2)
+neg(need-4, n't-3)
+ccomp(need-13, need-4)
+aux(control-6, to-5)
+xcomp(need-4, control-6)
+nsubj(address-9, guns-7)
+aux(address-9, to-8)
+xcomp(control-6, address-9)
+dobj(address-9, violence-10)
+nsubj(need-13, we-12)
+xsubj(control-15, we-12)
+root(ROOT-0, need-13)
+aux(control-15, to-14)
+xcomp(need-13, control-15)
+dobj(control-15, criminals-16)
+
+(ROOT
+  (NP (NNS http:\/\/www.thestar.com\/News\/World\/article\/418838)))
+
+root(ROOT-0, http:\/\/www.thestar.com\/News\/World\/article\/418838-1)
+

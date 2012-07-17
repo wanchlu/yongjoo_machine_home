@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (NP (JJ Many) (NNS uninsured))
+    (VP (MD can)
+      (ADVP (RB easily))
+      (VP (VB afford)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (ADVP (RB so))
+            (VP (MD should) (RB not)
+              (VP (VB receive)
+                (NP
+                  (NP (NN sympathy))
+                  (SBAR
+                    (S
+                      (NP
+                        (NP (DT A) (JJ significant) (NN proportion))
+                        (PP (IN of)
+                          (NP (DT the) (JJ uninsured))))
+                      (VP (MD can)
+                        (ADVP (RB easily))
+                        (VP (VB afford)
+                          (NP (NN insurance)))))))))))))
+    (. .)))
+
+amod(uninsured-2, Many-1)
+nsubj(afford-5, uninsured-2)
+aux(afford-5, can-3)
+advmod(afford-5, easily-4)
+root(ROOT-0, afford-5)
+nsubj(receive-10, it-6)
+advmod(receive-10, so-7)
+aux(receive-10, should-8)
+neg(receive-10, not-9)
+ccomp(afford-5, receive-10)
+dobj(receive-10, sympathy-11)
+det(proportion-14, A-12)
+amod(proportion-14, significant-13)
+nsubj(afford-20, proportion-14)
+det(uninsured-17, the-16)
+prep_of(proportion-14, uninsured-17)
+aux(afford-20, can-18)
+advmod(afford-20, easily-19)
+rcmod(sympathy-11, afford-20)
+dobj(afford-20, insurance-21)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP choose)
+      (S (RB not)
+        (VP (TO to)
+          (VP (VB get)
+            (NP (PRP it))
+            (PP (IN for)
+              (NP
+                (NP
+                  (NP (NNS reasons))
+                  (ADJP (JJ other)
+                    (PP (IN than)
+                      (NP (PRP$ their) (NNS means)))))
+                (PRN (-LRB- -LRB-)
+                  (NP (NNP i.e.))
+                  (, ,)
+                  (NP (PRP$ their) (NNS laziness))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+nsubj(choose-2, They-1)
+xsubj(get-5, They-1)
+root(ROOT-0, choose-2)
+neg(get-5, not-3)
+aux(get-5, to-4)
+xcomp(choose-2, get-5)
+dobj(get-5, it-6)
+prep_for(get-5, reasons-8)
+amod(reasons-8, other-9)
+poss(means-12, their-11)
+prep_than(other-9, means-12)
+appos(reasons-8, i.e.-14)
+poss(laziness-17, their-16)
+dep(i.e.-14, laziness-17)
+

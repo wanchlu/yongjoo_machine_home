@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Proper) (NN regulation))
+      (PP (IN of)
+        (NP (NN handgun) (NN use))))
+    (VP (VBZ increases)
+      (SBAR
+        (S
+          (NP (NN safety) (JJ Legal) (NN scholar))
+          (VP (VBP acknowledge)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT the) (JJ individual) (NN right))
+                  (PP (IN of)
+                    (NP (VBG keeping) (NNS arms))))
+                (VP (MD can)
+                  (VP (VB be)
+                    (VP (VBN limited)
+                      (PP (IN for)
+                        (NP
+                          (NP (DT the) (NN safety))
+                          (PP (IN of)
+                            (NP (DT the) (NN community))))))))))))))
+    (. .)))
+
+amod(regulation-2, Proper-1)
+nsubj(increases-6, regulation-2)
+nn(use-5, handgun-4)
+prep_of(regulation-2, use-5)
+root(ROOT-0, increases-6)
+nn(scholar-9, safety-7)
+amod(scholar-9, Legal-8)
+nsubj(acknowledge-10, scholar-9)
+ccomp(increases-6, acknowledge-10)
+complm(limited-20, that-11)
+det(right-14, the-12)
+amod(right-14, individual-13)
+nsubjpass(limited-20, right-14)
+amod(arms-17, keeping-16)
+prep_of(right-14, arms-17)
+aux(limited-20, can-18)
+auxpass(limited-20, be-19)
+ccomp(acknowledge-10, limited-20)
+det(safety-23, the-22)
+prep_for(limited-20, safety-23)
+det(community-26, the-25)
+prep_of(safety-23, community-26)
+
+(ROOT
+  (S
+    (NP (DT This) (NN limitation))
+    (VP (VBZ occurs)
+      (PP (IN through)
+        (S
+          (VP (VBG regulating)
+            (NP
+              (NP (DT the) (NN possession) (, ,) (NN use)
+                (CC and)
+                (NN tracing))
+              (PP (IN of)
+                (NP
+                  (NP (NNS guns))
+                  (PP (IN within)
+                    (NP (NN society))))))))))
+    (. .)))
+
+det(limitation-2, This-1)
+nsubj(occurs-3, limitation-2)
+root(ROOT-0, occurs-3)
+prepc_through(occurs-3, regulating-5)
+det(possession-7, the-6)
+dobj(regulating-5, possession-7)
+dobj(regulating-5, use-9)
+conj_and(possession-7, use-9)
+dobj(regulating-5, tracing-11)
+conj_and(possession-7, tracing-11)
+prep_of(possession-7, guns-13)
+prep_within(guns-13, society-15)
+

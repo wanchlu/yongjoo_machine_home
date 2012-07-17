@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (VBP claim)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT an) (NN objection))
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (NN statement))
+                  (`` ``)
+                  (S
+                    (NP (NN matter))
+                    (VP (MD can) (RB not)
+                      (VP (VB be)
+                        (VP (VBN created)
+                          (CC or)
+                          (VBN destroyed)))))
+                  ('' '')))))))
+      (CC yet)
+      (VP (VBP show)
+        (NP (DT no) (NN evidence))
+        (PP (TO to)
+          (NP (DT the) (NN contrary)))))
+    (. .)))
+
+nsubj(claim-2, You-1)
+xsubj(have-4, You-1)
+nsubj(show-20, You-1)
+root(ROOT-0, claim-2)
+aux(have-4, to-3)
+xcomp(claim-2, have-4)
+det(objection-6, an-5)
+dobj(have-4, objection-6)
+det(statement-9, the-8)
+prep_to(have-4, statement-9)
+nsubjpass(created-15, matter-11)
+nsubjpass(destroyed-17, matter-11)
+aux(created-15, can-12)
+neg(created-15, not-13)
+auxpass(created-15, be-14)
+dep(statement-9, created-15)
+dep(statement-9, destroyed-17)
+conj_or(created-15, destroyed-17)
+conj_yet(claim-2, show-20)
+det(evidence-22, no-21)
+dobj(show-20, evidence-22)
+det(contrary-25, the-24)
+prep_to(show-20, contrary-25)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN icing))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN cake))
+          (PP (IN of)
+            (NP (PRP$ your) (`` ``) (NN argument) ('' ''))))))
+    (VP (VBZ seems)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADVP (RB blindly)
+              (S
+                (VP (VBG asserting)
+                  (S
+                    (NP (DT that) (NN god) (NN isnt))
+                    (ADJP (JJ improbable)))
+                  (: ;)
+                  (PP
+                    (ADVP (RB again))
+                    (IN without)
+                    (NP
+                      (NP (DT any) (NN proof))
+                      (CC or)
+                      (NP (NN explanation)))))))))))
+    (. .)))
+
+det(icing-2, The-1)
+nsubj(seems-11, icing-2)
+xsubj(be-13, icing-2)
+det(cake-5, the-4)
+prep_on(icing-2, cake-5)
+poss(argument-9, your-7)
+prep_of(cake-5, argument-9)
+root(ROOT-0, seems-11)
+aux(be-13, to-12)
+xcomp(seems-11, be-13)
+advmod(be-13, blindly-14)
+dep(blindly-14, asserting-15)
+det(isnt-18, that-16)
+nn(isnt-18, god-17)
+nsubj(improbable-19, isnt-18)
+xcomp(asserting-15, improbable-19)
+advmod(asserting-15, again-21)
+det(proof-24, any-23)
+prep_without(asserting-15, proof-24)
+prep_without(asserting-15, explanation-26)
+conj_or(proof-24, explanation-26)
+
+(ROOT
+  (FRAG
+    (NP (NNP Care))
+    (S
+      (VP (TO to)
+        (VP (VB provide)
+          (NP (DT some)))))
+    (. ?)))
+
+root(ROOT-0, Care-1)
+aux(provide-3, to-2)
+dep(Care-1, provide-3)
+dobj(provide-3, some-4)
+

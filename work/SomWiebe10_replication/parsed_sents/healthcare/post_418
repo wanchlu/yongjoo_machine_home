@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Watch) (NNP SICKO))
+      (PP (IN by)
+        (NP (NNP Roger) (NNP Moore))))
+    (VP (VBP do) (RB n't)
+      (VP (VB buy)
+        (NP (DT the) (NNS lies))))
+    (. .)))
+
+nn(SICKO-2, Watch-1)
+nsubj(buy-8, SICKO-2)
+nn(Moore-5, Roger-4)
+prep_by(SICKO-2, Moore-5)
+aux(buy-8, do-6)
+neg(buy-8, n't-7)
+root(ROOT-0, buy-8)
+det(lies-10, the-9)
+dobj(buy-8, lies-10)
+
+(ROOT
+  (S
+    (NP (JJ Big) (NN medicine))
+    (VP (VBZ does) (RB not)
+      (VP (VB want)
+        (NP
+          (NP (JJ universal) (NN health) (NN care))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (MD would)
+                (VP (VB lose)
+                  (NP
+                    (ADJP (RB too) (JJ much))
+                    (NN money)))))))))
+    (. .)))
+
+amod(medicine-2, Big-1)
+nsubj(want-5, medicine-2)
+aux(want-5, does-3)
+neg(want-5, not-4)
+root(ROOT-0, want-5)
+amod(care-8, universal-6)
+nn(care-8, health-7)
+dobj(want-5, care-8)
+nsubj(lose-11, they-9)
+aux(lose-11, would-10)
+rcmod(care-8, lose-11)
+advmod(much-13, too-12)
+amod(money-14, much-13)
+dobj(lose-11, money-14)
+

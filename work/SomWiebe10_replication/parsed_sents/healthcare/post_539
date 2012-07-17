@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (NP (DT The) (NN Government))
+    (VP (MD ca) (RB n't)
+      (VP (VB afford)
+        (NP (DT the) (NNS services))
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ pays)
+                (PP (IN for)
+                  (NP (RB now)))
+                (, ,)
+                (S
+                  (VP (VB cause)
+                    (SBAR
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ has)
+                          (NP
+                            (NP (DT no) (NN control))
+                            (PP (IN over)
+                              (NP
+                                (NP (DT the) (NNS costs))
+                                (PP (IN of)
+                                  (NP (NNS drugs))))))))))))))
+          (CC and)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NNS Hospitals)
+                (CC and)
+                (NNS Doctors))
+              (VP (VBP charge)))))))
+    (. .)))
+
+det(Government-2, The-1)
+nsubj(afford-5, Government-2)
+aux(afford-5, ca-3)
+neg(afford-5, n't-4)
+root(ROOT-0, afford-5)
+det(services-7, the-6)
+dobj(afford-5, services-7)
+nsubj(pays-9, it-8)
+dep(afford-5, pays-9)
+prep(pays-9, for-10)
+pobj(for-10, now-11)
+ccomp(pays-9, cause-13)
+nsubj(has-15, it-14)
+ccomp(cause-13, has-15)
+det(control-17, no-16)
+dobj(has-15, control-17)
+det(costs-20, the-19)
+prep_over(control-17, costs-20)
+prep_of(costs-20, drugs-22)
+dobj(charge-28, what-24)
+nsubj(charge-28, Hospitals-25)
+conj_and(Hospitals-25, Doctors-27)
+nsubj(charge-28, Doctors-27)
+dep(afford-5, charge-28)
+conj_and(pays-9, charge-28)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP I))
+        (VP (VBD said)
+          (PP (IN under)
+            (NP (PRP$ my) (NN plan))))))
+    (NP (PRP we))
+    (VP
+      (VP (VBP control)
+        (NP (NNS costs)))
+      (CC and)
+      (VP (VB improve)
+        (NP (NN care))))
+    (. .)))
+
+mark(said-3, As-1)
+nsubj(said-3, I-2)
+advcl(control-8, said-3)
+poss(plan-6, my-5)
+prep_under(said-3, plan-6)
+nsubj(control-8, we-7)
+nsubj(improve-11, we-7)
+root(ROOT-0, control-8)
+dobj(control-8, costs-9)
+conj_and(control-8, improve-11)
+dobj(improve-11, care-12)
+

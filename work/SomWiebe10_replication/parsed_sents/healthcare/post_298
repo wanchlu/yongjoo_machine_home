@@ -1,0 +1,29 @@
+(ROOT
+  (NP (DT A) (JJ smart) (NN person) (. !)))
+
+det(person-3, A-1)
+amod(person-3, smart-2)
+root(ROOT-0, person-3)
+
+(ROOT
+  (S
+    (NP (NNP OMFG) (NNP !!!))
+    (SBAR (IN If)
+      (S
+        (NP (RB only) (NNP Michael) (NNP Glass))
+        (VP (MD would)
+          (VP (VB learn)
+            (PP (IN from)
+              (NP (PRP you)))))))
+    (. .)))
+
+nn(!!!-2, OMFG-1)
+dep(learn-8, !!!-2)
+mark(learn-8, If-3)
+advmod(Glass-6, only-4)
+nn(Glass-6, Michael-5)
+nsubj(learn-8, Glass-6)
+aux(learn-8, would-7)
+root(ROOT-0, learn-8)
+prep_from(learn-8, you-10)
+

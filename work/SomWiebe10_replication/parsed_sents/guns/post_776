@@ -1,0 +1,88 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (RB Just) (IN because)
+      (S
+        (S
+          (VP (VBG allowing)
+            (NP (NNS students))
+            (S
+              (VP (TO to)
+                (VP (VB carry)
+                  (NP (JJ concealed) (NNS weapons)))))))
+        (VP (VBZ works)
+          (PP (IN in)
+            (NP (NNP Utah))))))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (VP (VBG going)
+                (S
+                  (VP (TO to)
+                    (VP (VB work)
+                      (PP (IN in)
+                        (NP (DT every) (JJ other) (NN state))))))))))))
+    (. .)))
+
+advmod(works-10, Just-2)
+dep(works-10, because-3)
+csubj(works-10, allowing-4)
+dobj(allowing-4, students-5)
+aux(carry-7, to-6)
+xcomp(allowing-4, carry-7)
+amod(weapons-9, concealed-8)
+dobj(carry-7, weapons-9)
+csubj(mean-15, works-10)
+prep_in(works-10, Utah-12)
+aux(mean-15, does-13)
+neg(mean-15, n't-14)
+root(ROOT-0, mean-15)
+nsubj(going-18, it-16)
+xsubj(work-20, it-16)
+aux(going-18, 's-17)
+ccomp(mean-15, going-18)
+aux(work-20, to-19)
+xcomp(going-18, work-20)
+det(state-24, every-22)
+amod(state-24, other-23)
+prep_in(work-20, state-24)
+
+(ROOT
+  (S ('' '')
+    (PP (IN Just)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ is)
+            (ADJP (JJ different)
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (NNS people) (NN outside))
+                  (PP (IN of)
+                    (NP (NNP Utah))))))))))
+    (PRN
+      (NP (DT that) (NN will))
+      (VP (VBP cause)))
+    (NP (DT this))
+    (ADVP (IN to))
+    (VP (VBP fail)
+      (NP (NNS ????)))))
+
+dep(fail-17, Just-2)
+nsubj(different-5, what-3)
+cop(different-5, is-4)
+pcomp(Just-2, different-5)
+det(outside-9, the-7)
+nn(outside-9, people-8)
+prep_from(different-5, outside-9)
+prep_of(outside-9, Utah-11)
+det(will-13, that-12)
+nsubj(cause-14, will-13)
+parataxis(fail-17, cause-14)
+nsubj(fail-17, this-15)
+advmod(fail-17, to-16)
+root(ROOT-0, fail-17)
+dobj(fail-17, ????-18)
+

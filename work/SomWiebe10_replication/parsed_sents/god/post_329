@@ -1,0 +1,48 @@
+(ROOT
+  (SBAR (IN if)
+    (S
+      (NP (PRP you))
+      (VP (VBP believe)
+        (SBAR
+          (S
+            (NP (DT the) (NN bible))
+            (VP (VBZ is)
+              (ADJP (JJ wrong))
+              (SBAR
+                (SBARQ
+                  (WHNP (WP what))
+                  (SQ (VBP are)
+                    (NP (PRP you))
+                    (VP (VBG going)
+                      (PRT (RP on))
+                      (SBAR (IN that)
+                        (S
+                          (NP
+                            (NP (NN god))
+                            (-LRB- -LRB-)
+                            (CC or)
+                            (NP (DT a) (JJR higher) (NN being))
+                            (-RRB- -RRB-))
+                          (VP (VBZ exists))))))
+                  (. ?))))))))))
+
+mark(believe-3, if-1)
+nsubj(believe-3, you-2)
+root(ROOT-0, believe-3)
+det(bible-5, the-4)
+nsubj(wrong-7, bible-5)
+cop(wrong-7, is-6)
+ccomp(believe-3, wrong-7)
+dobj(going-11, what-8)
+aux(going-11, are-9)
+nsubj(going-11, you-10)
+dep(wrong-7, going-11)
+prt(going-11, on-12)
+complm(exists-21, that-13)
+nsubj(exists-21, god-14)
+det(being-19, a-17)
+amod(being-19, higher-18)
+conj_or(god-14, being-19)
+nsubj(exists-21, being-19)
+ccomp(going-11, exists-21)
+

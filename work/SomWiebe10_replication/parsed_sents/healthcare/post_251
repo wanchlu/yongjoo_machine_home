@@ -1,0 +1,46 @@
+(ROOT
+  (NP
+    (NP (NN Obamacare)
+      (S
+        (VP (TO to)
+          (VP (VB Come)))))
+    (: :)
+    (NP
+      (NP (NNP Seven) (NNP Bad) (NNP Ideas))
+      (PP (IN for)
+        (NP (NNP Health) (NNP Care) (NNP Reform) (NNP Fannie) (NNP Med))))
+    (. ?)))
+
+root(ROOT-0, Obamacare-1)
+aux(Come-3, to-2)
+infmod(Obamacare-1, Come-3)
+nn(Ideas-7, Seven-5)
+nn(Ideas-7, Bad-6)
+dep(Obamacare-1, Ideas-7)
+nn(Med-13, Health-9)
+nn(Med-13, Care-10)
+nn(Med-13, Reform-11)
+nn(Med-13, Fannie-12)
+prep_for(Ideas-7, Med-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why)
+      (NP
+        (NP (NNP a) ('' '') (NNP Public))
+        (NP (NN Option) ('' ''))))
+    (SQ (VBZ Is)
+      (NP
+        (NP (NNP Hazardous))
+        (PP (TO to)
+          (NP (PRP$ Your) (NNP Health)))))))
+
+advmod(Is-7, Why-1)
+nn(Public-4, a-2)
+dep(Why-1, Public-4)
+dep(Public-4, Option-5)
+root(ROOT-0, Is-7)
+nsubj(Is-7, Hazardous-8)
+poss(Health-11, Your-10)
+prep_to(Hazardous-8, Health-11)
+

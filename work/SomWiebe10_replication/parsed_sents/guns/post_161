@@ -1,0 +1,178 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN Bill))
+      (PP (IN of)
+        (NP
+          (NP (NNP Rights))
+          (CC and)
+          (NP (DT the) (NNP Second) (NNP Amendment)))))
+    (VP (VBP confer)
+      (NP
+        (NP (RB only) (JJ individual) (NNS rights))
+        (, ,) (RB not)
+        (NP (JJ collective) (NNS rights))))
+    (. .)))
+
+det(Bill-2, The-1)
+nsubj(confer-9, Bill-2)
+prep_of(Bill-2, Rights-4)
+det(Amendment-8, the-6)
+nn(Amendment-8, Second-7)
+prep_of(Bill-2, Amendment-8)
+conj_and(Rights-4, Amendment-8)
+root(ROOT-0, confer-9)
+advmod(rights-12, only-10)
+amod(rights-12, individual-11)
+dobj(confer-9, rights-12)
+neg(rights-12, not-14)
+amod(rights-16, collective-15)
+dep(rights-12, rights-16)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (JJ such) (NN thing))
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (NP (DT a) (JJ collective) (NN right)
+                (S
+                  (VP (TO to)
+                    (VP (VB bear)
+                      (NP (NNS arms)))))))))))
+    (. ?)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(thing-5, no-3)
+amod(thing-5, such-4)
+nsubj(is-2, thing-5)
+cop(right-9, is-6)
+det(right-9, a-7)
+amod(right-9, collective-8)
+rcmod(thing-5, right-9)
+aux(bear-11, to-10)
+infmod(right-9, bear-11)
+dobj(bear-11, arms-12)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD would)
+      (NP (PRP it))
+      (VP (VB be)
+        (VP (VBN excercised)
+          (CC and)
+          (VBN upheld))))
+    (. ?)))
+
+advmod(excercised-5, How-1)
+aux(excercised-5, would-2)
+nsubjpass(excercised-5, it-3)
+nsubjpass(upheld-7, it-3)
+auxpass(excercised-5, be-4)
+root(ROOT-0, excercised-5)
+conj_and(excercised-5, upheld-7)
+
+(ROOT
+  (S
+    (ADVP (RB Moreover))
+    (, ,)
+    (NP
+      (NP (DT this) (NN notion))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP Second) (NNP Amendment))
+          (VP (VBZ confers)
+            (NP
+              (NP (RB only) (DT a) (JJ collective))
+              (, ,) (RB not)
+              (NP (DT an) (JJ individual) (NN right))
+              (, ,))))))
+    (VP (VBZ is)
+      (ADJP (RB entirely) (JJ contrary)
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NN purpose))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN Bill))
+                (PP (IN of)
+                  (NP (NNP Rights)))))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ confers)
+                  (NP (RB only) (JJ individual) (NNS rights)))))))))
+    (. .)))
+
+advmod(contrary-21, Moreover-1)
+det(notion-4, this-3)
+nsubj(contrary-21, notion-4)
+complm(confers-9, that-5)
+det(Amendment-8, the-6)
+nn(Amendment-8, Second-7)
+nsubj(confers-9, Amendment-8)
+dep(notion-4, confers-9)
+advmod(collective-12, only-10)
+det(collective-12, a-11)
+dobj(confers-9, collective-12)
+neg(collective-12, not-14)
+det(right-17, an-15)
+amod(right-17, individual-16)
+dep(collective-12, right-17)
+cop(contrary-21, is-19)
+advmod(contrary-21, entirely-20)
+root(ROOT-0, contrary-21)
+det(purpose-24, the-23)
+prep_to(contrary-21, purpose-24)
+nsubj(confers-32, purpose-24)
+det(Bill-27, the-26)
+prep_of(purpose-24, Bill-27)
+prep_of(Bill-27, Rights-29)
+rcmod(purpose-24, confers-32)
+advmod(rights-35, only-33)
+amod(rights-35, individual-34)
+dobj(confers-32, rights-35)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Certainly))
+      (, ,)
+      (NP (DT these) (JJ individual) (NNS rights))
+      (VP (MD may)
+        (VP (VB be)
+          (VP (VBN shared)
+            (ADVP (RB universally))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (MD can) (RB not)
+        (VP (VB be)
+          (VP (VBN divided)
+            (PP (IN from)
+              (NP (DT the) (NN individual)))))))
+    (. .)))
+
+advmod(shared-8, Certainly-1)
+det(rights-5, these-3)
+amod(rights-5, individual-4)
+nsubjpass(shared-8, rights-5)
+aux(shared-8, may-6)
+auxpass(shared-8, be-7)
+root(ROOT-0, shared-8)
+advmod(shared-8, universally-9)
+nsubjpass(divided-16, they-12)
+aux(divided-16, can-13)
+neg(divided-16, not-14)
+auxpass(divided-16, be-15)
+conj_but(shared-8, divided-16)
+det(individual-19, the-18)
+prep_from(divided-16, individual-19)
+

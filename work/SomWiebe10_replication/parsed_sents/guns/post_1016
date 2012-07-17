@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB Where))
+      (S
+        (NP (PRP I))
+        (VP (VBP live)
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (ADJP (JJ illegal)
+                  (S
+                    (VP (TO to)
+                      (VP (VB carry)
+                        (NP (DT a) (NN gun))
+                        (SBAR (IN unless)
+                          (S
+                            (NP (PRP you))
+                            (VP (VBP are)
+                              (VP (VBN licensed)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB and)
+                                      (NP (PRP$ our) (NN crime) (NN rate)))))))))))))))))))
+    (VP (VBZ seems)
+      (ADJP
+        (ADJP (RB much) (JJR lower))
+        (PP (IN than)
+          (NP
+            (NP (DT that))
+            (PP (IN of)
+              (NP (DT the) (NNP US)))))))
+    (. .)))
+
+advmod(live-3, Where-1)
+nsubj(live-3, I-2)
+advcl(lower-22, live-3)
+csubj(lower-22, live-3)
+nsubj(illegal-6, it-4)
+cop(illegal-6, is-5)
+ccomp(live-3, illegal-6)
+aux(carry-8, to-7)
+xcomp(illegal-6, carry-8)
+det(gun-10, a-9)
+dobj(carry-8, gun-10)
+mark(licensed-14, unless-11)
+nsubjpass(licensed-14, you-12)
+xsubj(and-16, you-12)
+auxpass(licensed-14, are-13)
+advcl(carry-8, licensed-14)
+aux(and-16, to-15)
+xcomp(licensed-14, and-16)
+poss(rate-19, our-17)
+nn(rate-19, crime-18)
+dobj(and-16, rate-19)
+cop(lower-22, seems-20)
+advmod(lower-22, much-21)
+root(ROOT-0, lower-22)
+prep_than(lower-22, that-24)
+det(US-27, the-26)
+prep_of(that-24, US-27)
+
+(ROOT
+  (SBARQ
+    (SBAR (RB Not) (IN as)
+      (S
+        (NP
+          (NP (JJ many) (NNS gangs)
+            (CC or)
+            (NNS killings))
+          (PP (IN in)
+            (NP
+              (NP
+                (NP (NN ratio))
+                (PP (TO to)
+                  (NP (PRP$ our) (JJ total) (NN population))))
+              (, ,)
+              (ADVP (RB so)))))
+        (VP (MD would) (RB n't))))
+    (WHNP (WDT that) (NN show) (NNS people))
+    (SQ
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP
+            (ADJP (JJR safer))
+            (SBAR (IN if)
+              (S
+                (NP (NNS guns))
+                (VP (VBD were)
+                  (ADJP (JJ illegal)))))))))
+    (. ?)))
+
+dep(would-15, Not-1)
+dep(would-15, as-2)
+amod(gangs-4, many-3)
+nsubj(would-15, gangs-4)
+conj_or(gangs-4, killings-6)
+nsubj(would-15, killings-6)
+prep_in(gangs-4, ratio-8)
+poss(population-12, our-10)
+amod(population-12, total-11)
+prep_to(ratio-8, population-12)
+advmod(ratio-8, so-14)
+dep(safer-22, would-15)
+neg(would-15, n't-16)
+det(people-19, that-17)
+nn(people-19, show-18)
+nsubj(safer-22, people-19)
+aux(safer-22, would-20)
+cop(safer-22, be-21)
+root(ROOT-0, safer-22)
+mark(illegal-26, if-23)
+nsubj(illegal-26, guns-24)
+cop(illegal-26, were-25)
+ccomp(safer-22, illegal-26)
+

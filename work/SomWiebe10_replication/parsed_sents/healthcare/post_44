@@ -1,0 +1,332 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Private) (NN insurance))
+      (VP (VBZ puts)
+        (NP (NN profit))
+        (ADVP (RB first))))
+    (: ;)
+    (S
+      (NP (JJ public) (NN insurance))
+      (VP (VBZ puts)
+        (NP (NN health))
+        (ADVP (RB first))
+        (NP
+          (NP (NNP Richard) (NNP Kirsch))
+          (, ,)
+          (NP
+            (NP (NNP National) (NNP Campaign) (NNP Manager))
+            (PP (IN for)
+              (NP
+                (NP (NNP Health) (NNP Care))
+                (PP (IN for)
+                  (NP (NNP America)))
+                (ADVP (RB Now))))))))
+    (. !)))
+
+amod(insurance-2, Private-1)
+nsubj(puts-3, insurance-2)
+root(ROOT-0, puts-3)
+dobj(puts-3, profit-4)
+advmod(puts-3, first-5)
+amod(insurance-8, public-7)
+nsubj(puts-9, insurance-8)
+parataxis(puts-3, puts-9)
+dobj(puts-9, health-10)
+advmod(puts-9, first-11)
+nn(Kirsch-13, Richard-12)
+dobj(puts-9, Kirsch-13)
+nn(Manager-17, National-15)
+nn(Manager-17, Campaign-16)
+appos(Kirsch-13, Manager-17)
+nn(Care-20, Health-19)
+prep_for(Manager-17, Care-20)
+prep_for(Care-20, America-22)
+advmod(Care-20, Now-23)
+
+(ROOT
+  (S (`` ``)
+    (NP (NNP Three))
+    (VP (VBZ Reasons)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN Choice))
+          (PP (IN of)
+            (NP (DT a) (NNP Public) (NNP Health) (NNP Insurance) (NNP Plan))))))
+    ('' '') (. .)))
+
+nsubj(Reasons-3, Three-2)
+root(ROOT-0, Reasons-3)
+det(Choice-6, the-5)
+prep_for(Reasons-3, Choice-6)
+det(Plan-12, a-8)
+nn(Plan-12, Public-9)
+nn(Plan-12, Health-10)
+nn(Plan-12, Insurance-11)
+prep_of(Choice-6, Plan-12)
+
+(ROOT
+  (NP
+    (NP (NNP May) (CD 15) (, ,) (CD 2009))
+    (: :)
+    (NP (`` ``) (NNP Putting) (NN you) (JJ first))
+    (. .)))
+
+root(ROOT-0, May-1)
+num(May-1, 15-2)
+num(May-1, 2009-4)
+nn(you-8, Putting-7)
+dep(May-1, you-8)
+amod(you-8, first-9)
+
+(ROOT
+  (S
+    (ADVP (RB -RRB-))
+    (NP
+      (NP (DT The) (NN mission))
+      (PP (IN of)
+        (NP (NN health) (NN insurance) (NNS companies))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ healthy) (JJ bottom) (NN line))
+        (, ,) (RB not)
+        (NP (PRP$ your) (NN health))))
+    (. .)))
+
+det(mission-3, The-2)
+nsubj(line-12, mission-3)
+nn(companies-7, health-5)
+nn(companies-7, insurance-6)
+prep_of(mission-3, companies-7)
+cop(line-12, is-8)
+det(line-12, a-9)
+amod(line-12, healthy-10)
+amod(line-12, bottom-11)
+root(ROOT-0, line-12)
+neg(line-12, not-14)
+poss(health-16, your-15)
+dep(line-12, health-16)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ s)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (NN health) (NNS insurers))
+          (VP
+            (VP (VB deny)
+              (NP (NN care))
+              (PP (TO to)
+                (NP
+                  (NP (NNS people))
+                  (PP (IN with)
+                    (NP (JJ pre-existing) (NNS conditions))))))
+            (, ,)
+            (VP (VB charge)
+              (ADVP
+                (ADVP (RBR more))
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP have)
+                      (NP
+                        (NP (DT any) (NN history))
+                        (PP (IN of)
+                          (NP
+                            (ADJP (RB even) (JJ minor))
+                            (NN health) (NNS problems)))))))))
+            (CC and)
+            (VP (VB deny)
+              (CC and)
+              (VB delay)
+              (NP (JJ approving) (NN care)))))))
+    (. .)))
+
+nsubj(s-2, That-1)
+root(ROOT-0, s-2)
+advmod(deny-6, why-3)
+nn(insurers-5, health-4)
+nsubj(deny-6, insurers-5)
+nsubj(charge-14, insurers-5)
+nsubj(deny-27, insurers-5)
+advcl(s-2, deny-6)
+dobj(deny-6, care-7)
+prep_to(deny-6, people-9)
+amod(conditions-12, pre-existing-11)
+prep_with(people-9, conditions-12)
+advcl(s-2, charge-14)
+conj_and(deny-6, charge-14)
+advmod(charge-14, more-15)
+mark(have-18, if-16)
+nsubj(have-18, you-17)
+dep(more-15, have-18)
+det(history-20, any-19)
+dobj(have-18, history-20)
+advmod(minor-23, even-22)
+amod(problems-25, minor-23)
+nn(problems-25, health-24)
+prep_of(history-20, problems-25)
+advcl(s-2, deny-27)
+conj_and(deny-6, deny-27)
+conj_and(deny-6, delay-29)
+conj_and(deny-27, delay-29)
+amod(care-31, approving-30)
+dobj(deny-27, care-31)
+
+(ROOT
+  (S
+    (ADVP (RB -RRB-))
+    (NP
+      (NP (DT The) (NN mission))
+      (PP (IN of)
+        (NP (DT a) (JJ public) (NN health) (NN insurance) (NN company))))
+    (VP (MD will)
+      (VP (VB be)
+        (NP
+          (NP (PRP$ your) (NN health))
+          (, ,) (RB not)
+          (NP
+            (NP (DT the) (JJ financial) (NN health))
+            (PP (IN of)
+              (NP (NNS stockholders)))))))
+    (. .)))
+
+det(mission-3, The-2)
+nsubj(health-13, mission-3)
+det(company-9, a-5)
+amod(company-9, public-6)
+nn(company-9, health-7)
+nn(company-9, insurance-8)
+prep_of(mission-3, company-9)
+aux(health-13, will-10)
+cop(health-13, be-11)
+poss(health-13, your-12)
+root(ROOT-0, health-13)
+neg(health-13, not-15)
+det(health-18, the-16)
+amod(health-18, financial-17)
+dep(health-13, health-18)
+prep_of(health-18, stockholders-20)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ public) (NN health) (NN insurance) (NN company))
+    (VP (VBD won)
+      (SBAR
+        (S
+          (NP (NN t))
+          (VP (VBP have)
+            (NP
+              (QP (CD multi) (CD million))
+              (NN dollar) (NNS executives))
+            (PP (IN with)
+              (NP (JJ corporate) (NNS jets)))))))
+    (. .)))
+
+det(company-5, A-1)
+amod(company-5, public-2)
+nn(company-5, health-3)
+nn(company-5, insurance-4)
+nsubj(won-6, company-5)
+root(ROOT-0, won-6)
+nsubj(have-8, t-7)
+ccomp(won-6, have-8)
+number(million-10, multi-9)
+num(executives-12, million-10)
+nn(executives-12, dollar-11)
+dobj(have-8, executives-12)
+amod(jets-15, corporate-14)
+prep_with(have-8, jets-15)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD won)
+      (SBAR
+        (S
+          (NP (NN t))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB please)
+                  (NP (NNP Wall) (NNP Street) (JJ financial) (NNS analysts)))))))))
+    (. .)))
+
+nsubj(won-2, It-1)
+root(ROOT-0, won-2)
+nsubj(have-4, t-3)
+xsubj(please-6, t-3)
+ccomp(won-2, have-4)
+aux(please-6, to-5)
+xcomp(have-4, please-6)
+nn(analysts-10, Wall-7)
+nn(analysts-10, Street-8)
+amod(analysts-10, financial-9)
+dobj(please-6, analysts-10)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD will)
+      (VP (VB have)
+        (S
+          (NP (DT a) (NN mandate))
+          (VP (TO to)
+            (VP (VB provide)
+              (NP (NN health) (NN care))
+              (, ,)
+              (PP (IN from)
+                (NP (JJ preventive) (NN care))))))
+        (PP (IN through)
+          (NP
+            (NP (NN care))
+            (PP (IN for)
+              (NP (JJ serious)
+                (CC and)
+                (JJ chronic) (NNS illnesses)))))))
+    (. .)))
+
+nsubj(have-3, It-1)
+aux(have-3, will-2)
+root(ROOT-0, have-3)
+det(mandate-5, a-4)
+nsubj(provide-7, mandate-5)
+aux(provide-7, to-6)
+ccomp(have-3, provide-7)
+xcomp(have-3, provide-7)
+nn(care-9, health-8)
+dobj(provide-7, care-9)
+amod(care-13, preventive-12)
+prep_from(provide-7, care-13)
+prep_through(have-3, care-15)
+amod(illnesses-20, serious-17)
+conj_and(serious-17, chronic-19)
+amod(illnesses-20, chronic-19)
+prep_for(care-15, illnesses-20)
+
+(ROOT
+  (S (CC And)
+    (NP (DT a) (JJ public) (NN insurance) (NN plan))
+    (VP (MD will)
+      (VP (VB invest)
+        (PP (IN in)
+          (NP
+            (NP (NN health) (NN care))
+            (PP (IN in)
+              (NP (PRP$ our) (NNS communities)))))))
+    (. .)))
+
+cc(invest-7, And-1)
+det(plan-5, a-2)
+amod(plan-5, public-3)
+nn(plan-5, insurance-4)
+nsubj(invest-7, plan-5)
+aux(invest-7, will-6)
+root(ROOT-0, invest-7)
+nn(care-10, health-9)
+prep_in(invest-7, care-10)
+poss(communities-13, our-12)
+prep_in(care-10, communities-13)
+

@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP wish)
+      (SBAR
+        (S
+          (NP (JJR more) (NNS people))
+          (VP (MD would)
+            (VP (VB see)
+              (S
+                (NP (PRP it))
+                (NP (DT that) (NN way))))))))
+    (. .)))
+
+nsubj(wish-2, I-1)
+root(ROOT-0, wish-2)
+amod(people-4, more-3)
+nsubj(see-6, people-4)
+aux(see-6, would-5)
+ccomp(wish-2, see-6)
+nsubj(way-9, it-7)
+det(way-9, that-8)
+xcomp(see-6, way-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB well))
+    (ADVP (RB never))
+    (VP (VBP back)
+      (PRT (RP down))
+      (PP (IN from)
+        (NP (DT the) (NN grovernment))))
+    (. .)))
+
+nsubj(back-4, I-1)
+advmod(back-4, well-2)
+neg(back-4, never-3)
+root(ROOT-0, back-4)
+prt(back-4, down-5)
+det(grovernment-8, the-7)
+prep_from(back-4, grovernment-8)
+
+(ROOT
+  (S
+    (NP (NNP Freedom))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBD made)
+            (S
+              (NP (DT the) (NNP USA))
+              (ADJP (JJ great)))))))
+    (. .)))
+
+nsubj(is-2, Freedom-1)
+root(ROOT-0, is-2)
+nsubj(made-4, what-3)
+ccomp(is-2, made-4)
+det(USA-6, the-5)
+nsubj(great-7, USA-6)
+xcomp(made-4, great-7)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (MD will) (RB not)
+      (VP (VB give)
+        (PRT (RP up))
+        (NP (PRP$ my) (NNS freedoms))
+        (ADVP (RB lightly))))
+    (. .)))
+
+cc(give-5, And-1)
+nsubj(give-5, I-2)
+aux(give-5, will-3)
+neg(give-5, not-4)
+root(ROOT-0, give-5)
+prt(give-5, up-6)
+poss(freedoms-8, my-7)
+dobj(give-5, freedoms-8)
+advmod(give-5, lightly-9)
+

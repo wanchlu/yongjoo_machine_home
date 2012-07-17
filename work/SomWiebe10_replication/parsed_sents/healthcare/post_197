@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Single-payer) (NN health) (NN care))
+      (VP (VBZ gets)
+        (ADJP (JJ rid)
+          (PP (IN of)
+            (NP (JJ wasteful) (NNS middlemen))))
+        (PP (VBG According)
+          (PP (TO to)
+            (NP
+              (NP (DT an) (NN estimate))
+              (PP (IN by)
+                (NP
+                  (NP (NNP Dr.) (NNP Marcia) (NNP Angell))
+                  (SBAR
+                    (S
+                      (NP
+                        (NP
+                          (QP (RB roughly) (CD 50))
+                          (NN %))
+                        (PP (IN of)
+                          (NP (NN healthcare) (NNS dollars))))
+                      (VP (VBP are)
+                        (VP (VBN spent)
+                          (PP (IN on)
+                            (NP (NN healthcare))))))))))))))
+    (, ,)
+    (NP (DT the) (NN rest))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP (JJ various) (NNS middlemen)
+          (CC and)
+          (NNS intermediates)))
+      (PP (TO to)
+        (S
+          (VP (VBG providing)
+            (NP (NN healthcare))))))
+    (. .)))
+
+amod(care-3, Single-payer-1)
+nn(care-3, health-2)
+nsubj(rid-5, care-3)
+dep(rid-5, gets-4)
+ccomp(go-30, rid-5)
+amod(middlemen-8, wasteful-7)
+prep_of(rid-5, middlemen-8)
+prepc_according_to(rid-5, to-10)
+det(estimate-12, an-11)
+pobj(rid-5, estimate-12)
+nn(Angell-16, Dr.-14)
+nn(Angell-16, Marcia-15)
+prep_by(estimate-12, Angell-16)
+quantmod(50-18, roughly-17)
+num(%-19, 50-18)
+nsubjpass(spent-24, %-19)
+nn(dollars-22, healthcare-21)
+prep_of(%-19, dollars-22)
+auxpass(spent-24, are-23)
+rcmod(Angell-16, spent-24)
+prep_on(spent-24, healthcare-26)
+det(rest-29, the-28)
+nsubj(go-30, rest-29)
+root(ROOT-0, go-30)
+amod(middlemen-33, various-32)
+prep_to(go-30, middlemen-33)
+prep_to(go-30, intermediates-35)
+conj_and(middlemen-33, intermediates-35)
+prepc_to(go-30, providing-37)
+dobj(providing-37, healthcare-38)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ streamlined) (, ,) (JJ non-profit) (, ,) (JJ universal) (NN system))
+      (SBAR
+        (S
+          (VP (MD would)
+            (VP (VB increase)
+              (NP
+                (NP (DT the) (NN efficiency))
+                (SBAR
+                  (WHPP (IN with)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP (NN money))
+                    (VP (VBD spent)
+                      (PP (IN on)
+                        (NP (NN healthcare))))))))))))
+    (VP (VBZ goes)
+      (PP (TO to)
+        (NP (NN healthcare))))
+    (. .)))
+
+det(system-7, A-1)
+amod(system-7, streamlined-2)
+amod(system-7, non-profit-4)
+amod(system-7, universal-6)
+nsubj(goes-18, system-7)
+aux(increase-9, would-8)
+rcmod(system-7, increase-9)
+det(efficiency-11, the-10)
+dobj(increase-9, efficiency-11)
+rel(spent-15, which-13)
+nsubj(spent-15, money-14)
+rcmod(efficiency-11, spent-15)
+prep_on(spent-15, healthcare-17)
+root(ROOT-0, goes-18)
+prep_to(goes-18, healthcare-20)
+

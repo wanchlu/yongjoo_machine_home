@@ -1,0 +1,181 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ says)
+        (SBAR
+          (S
+            (NP (NN altarion) (NN wont))
+            (VP (VBP have)
+              (NP (NN insurance) (NNS !?)))))))))
+
+nsubj(says-2, Who-1)
+root(ROOT-0, says-2)
+nn(wont-4, altarion-3)
+nsubj(have-5, wont-4)
+ccomp(says-2, have-5)
+nn(!?-7, insurance-6)
+dobj(have-5, !?-7)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ says)
+        (S
+          (NP (PRP I))
+          (ADJP (JJ wont))
+          (S
+            (VP (VB have)
+              (NP (NN insurance)))))))
+    (. ?)))
+
+nsubj(says-2, Who-1)
+root(ROOT-0, says-2)
+nsubj(have-5, I-3)
+dep(have-5, wont-4)
+xcomp(says-2, have-5)
+dobj(have-5, insurance-6)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ says)
+        (SBAR
+          (S
+            (NP (NN anyone))
+            (VP (MD ca) (RB n't)
+              (VP (VB have)
+                (NP (NN insurance) (NNS !?!?!?))))))))))
+
+nsubj(says-2, Who-1)
+root(ROOT-0, says-2)
+nsubj(have-6, anyone-3)
+aux(have-6, ca-4)
+neg(have-6, n't-5)
+ccomp(says-2, have-6)
+nn(!?!?!?-8, insurance-7)
+dobj(have-6, !?!?!?-8)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (NNP America)))
+    (. .)))
+
+nsubj(America-3, This-1)
+cop(America-3, is-2)
+root(ROOT-0, America-3)
+
+(ROOT
+  (S (`` ``)
+    (VP (VB oh)
+      (NP (PRP$ its)
+        (ADJP (JJ hard)
+          (S
+            (VP (TO to)
+              (VP (VB make)
+                (NP (DT a) (NN living))
+                (PP (IN in)
+                  (NP
+                    (NP (NNP America))
+                    ('' '')
+                    (SBAR
+                      (S
+                        (NP (DT That))
+                        (VP (VBZ is)
+                          (NP
+                            (NP (DT a)
+                              (ADJP (RB very) (JJ discouraging)))
+                            (PRN (-LRB- -LRB-)
+                              (CC and)
+                              (ADJP (JJ old))
+                              (-RRB- -RRB-))))))))))))
+        (NN argument)))
+    (. .)))
+
+root(ROOT-0, oh-2)
+poss(argument-21, its-3)
+amod(argument-21, hard-4)
+aux(make-6, to-5)
+xcomp(hard-4, make-6)
+det(living-8, a-7)
+dobj(make-6, living-8)
+prep_in(make-6, America-10)
+nsubj(discouraging-16, That-12)
+cop(discouraging-16, is-13)
+det(discouraging-16, a-14)
+advmod(discouraging-16, very-15)
+rcmod(America-10, discouraging-16)
+dep(old-19, and-18)
+dep(discouraging-16, old-19)
+dobj(oh-2, argument-21)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB do)
+            (NP (JJR more))
+            (S
+              (VP (TO to)
+                (VP (VB make)
+                  (ADJP (JJ sure)
+                    (SBAR
+                      (S
+                        (NP (NN everyone))
+                        (VP (VBZ has)
+                          (NP (DT the) (NN opportunity)
+                            (S
+                              (VP (TO to)
+                                (VP (VB make)
+                                  (NP
+                                    (NP (NN allot))
+                                    (PP (IN of)
+                                      (NP (NN money))))))))))))
+                  (SBAR (IN before)
+                    (S
+                      (NP (PRP we))
+                      (VP (VBP move)
+                        (PP (TO to)
+                          (NP
+                            (NP (JJ universal) (NN health) (NN care))
+                            (PP (IN as)
+                              (NP (PRP$ our)
+                                (ADJP (RB very) (RB very))
+                                (JJ last) (NN resort)))))))))))))))
+    (. .)))
+
+nsubj(need-2, We-1)
+xsubj(do-4, We-1)
+root(ROOT-0, need-2)
+aux(do-4, to-3)
+xcomp(need-2, do-4)
+dobj(do-4, more-5)
+aux(make-7, to-6)
+xcomp(do-4, make-7)
+acomp(make-7, sure-8)
+nsubj(has-10, everyone-9)
+dep(sure-8, has-10)
+det(opportunity-12, the-11)
+dobj(has-10, opportunity-12)
+aux(make-14, to-13)
+infmod(opportunity-12, make-14)
+dobj(make-14, allot-15)
+prep_of(allot-15, money-17)
+mark(move-20, before-18)
+nsubj(move-20, we-19)
+advcl(make-7, move-20)
+amod(care-24, universal-22)
+nn(care-24, health-23)
+prep_to(move-20, care-24)
+poss(resort-30, our-26)
+advmod(very-28, very-27)
+amod(resort-30, very-28)
+amod(resort-30, last-29)
+prep_as(care-24, resort-30)
+

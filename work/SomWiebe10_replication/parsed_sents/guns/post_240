@@ -1,0 +1,141 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNS people))
+    (VP (MD can) (RB not)
+      (VP (VB afford)
+        (NP (DT a) (NN dog))))
+    (. .)))
+
+det(people-2, Some-1)
+nsubj(afford-5, people-2)
+aux(afford-5, can-3)
+neg(afford-5, not-4)
+root(ROOT-0, afford-5)
+det(dog-7, a-6)
+dobj(afford-5, dog-7)
+
+(ROOT
+  (S
+    (NP (DT A) (NN gun))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (CD one) (NN time) (NN investment))
+        (, ,)
+        (PP (RB not)
+          (NP (VBG counting) (NN ammunition)))))
+    (. .)))
+
+det(gun-2, A-1)
+nsubj(investment-7, gun-2)
+cop(investment-7, is-3)
+det(investment-7, a-4)
+num(investment-7, one-5)
+nn(investment-7, time-6)
+root(ROOT-0, investment-7)
+prep(investment-7, not-9)
+amod(ammunition-11, counting-10)
+pobj(not-9, ammunition-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN dog))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RB continuously))
+                  (VB feed))))))))
+    (, ,)
+    (VP (VB bathe) (, ,)
+      (S
+        (S
+          (VP (VB take)
+            (PP (TO to)
+              (NP (DT the) (NN vet)))))
+        (, ,)
+        (CC and)
+        (S
+          (VP (VBG keeping)
+            (S
+              (NP (PRP it))
+              (ADJP (JJ alive)))))))
+    (. .)))
+
+det(dog-2, A-1)
+dobj(have-4, dog-2)
+nsubj(bathe-9, dog-2)
+nsubj(have-4, you-3)
+xsubj(feed-7, you-3)
+rcmod(dog-2, have-4)
+aux(feed-7, to-5)
+advmod(feed-7, continuously-6)
+xcomp(have-4, feed-7)
+root(ROOT-0, bathe-9)
+dep(bathe-9, take-11)
+det(vet-14, the-13)
+prep_to(take-11, vet-14)
+dep(bathe-9, keeping-17)
+conj_and(take-11, keeping-17)
+nsubj(alive-19, it-18)
+xcomp(keeping-17, alive-19)
+
+(ROOT
+  (SBARQ
+    (PP (IN Besides))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (MD will)
+      (VP (VB stop)
+        (NP (DT a) (NN robber))
+        (PP (IN from)
+          (S
+            (VP
+              (VP (VBG shooting)
+                (NP (PRP$ your) (NN dog)))
+              (, ,)
+              (VP (VBG taking)
+                (PRT (RP away))
+                (NP (PRP$ your) (NN protection)))
+              (CC and)
+              (VP
+                (VP (VBG causing)
+                  (NP (JJ emotional) (NN pain)))
+                (PRN (-LRB- -LRB-)
+                  (S
+                    (VP (VBG assuming)
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBD loved)
+                            (NP (PRP$ your) (NN dog)))))))
+                  (-RRB- -RRB-))))))))
+    (. ?)))
+
+prep(stop-5, Besides-1)
+nsubj(stop-5, what-3)
+aux(stop-5, will-4)
+root(ROOT-0, stop-5)
+det(robber-7, a-6)
+dobj(stop-5, robber-7)
+prepc_from(stop-5, shooting-9)
+poss(dog-11, your-10)
+dobj(shooting-9, dog-11)
+prepc_from(stop-5, taking-13)
+conj_and(shooting-9, taking-13)
+prt(taking-13, away-14)
+poss(protection-16, your-15)
+dobj(taking-13, protection-16)
+prepc_from(stop-5, causing-18)
+conj_and(shooting-9, causing-18)
+amod(pain-20, emotional-19)
+dobj(causing-18, pain-20)
+parataxis(causing-18, assuming-22)
+nsubj(loved-24, you-23)
+ccomp(assuming-22, loved-24)
+poss(dog-26, your-25)
+dobj(loved-24, dog-26)
+

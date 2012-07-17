@@ -1,0 +1,195 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN option))
+    (VP (VBZ is)
+      (ADVP (IN next) (JJS best))
+      (NP
+        (NP (NN option))
+        (PP (TO to)
+          (NP (JJ single-payer) (NN health) (NN care) (NNP Paul) (NNP Waldman)))))
+    (. .)))
+
+nn(option-2, Public-1)
+nsubj(option-6, option-2)
+cop(option-6, is-3)
+advmod(option-6, next-4)
+dep(next-4, best-5)
+root(ROOT-0, option-6)
+amod(Waldman-12, single-payer-8)
+nn(Waldman-12, health-9)
+nn(Waldman-12, care-10)
+nn(Waldman-12, Paul-11)
+prep_to(option-6, Waldman-12)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NNP Public) (NN Option))
+    (PP (CC and)
+      (NP
+        (NP (DT the) (NNP Hope))
+        (PP (IN of)
+          (NP (NNP Health) (NNP Care) (NNP Reform) ('' '')))))
+    (. .)))
+
+det(Option-4, The-2)
+nn(Option-4, Public-3)
+root(ROOT-0, Option-4)
+dep(Option-4, and-5)
+det(Hope-7, the-6)
+dep(and-5, Hope-7)
+nn(Reform-11, Health-9)
+nn(Reform-11, Care-10)
+prep_of(Hope-7, Reform-11)
+
+(ROOT
+  (NP (NNP American) (NNP Prospect) (. .)))
+
+nn(Prospect-2, American-1)
+root(ROOT-0, Prospect-2)
+
+(ROOT
+  (NP
+    (NP (NNP December) (CD 23) (, ,) (CD 2008))
+    (: :) (`` ``)
+    (S
+      (SBAR (IN Although)
+        (S
+          (NP (DT the) (JJ public) (NN option))
+          (VP (VBD was) (RB n't)
+            (NP
+              (NP (DT the) (NN topic))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (JJ great) (NN deal))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN discussion))
+                      (PP (IN during)
+                        (NP (DT the) (NN campaign)))))))))))
+      (, ,)
+      (X (IN for)
+        (NP (JJ many) (NNS progressives)))
+      (NP (PRP it))
+      (VP (VBZ amounts)
+        (PP (TO to)
+          (NP
+            (NP (DT a) (JJ beautiful) (NN jewel))
+            (VP (VBN hidden)
+              (S
+                (VP (VB amidst)
+                  (NP
+                    (NP (DT a) (NN pile))
+                    (PP (IN of)
+                      (NP (NN compromise)
+                        (CC and)
+                        (NN disappointment)))))))))))
+    (. .)))
+
+root(ROOT-0, December-1)
+num(December-1, 23-2)
+num(December-1, 2008-4)
+mark(topic-14, Although-7)
+det(option-10, the-8)
+amod(option-10, public-9)
+nsubj(topic-14, option-10)
+cop(topic-14, was-11)
+neg(topic-14, n't-12)
+det(topic-14, the-13)
+advcl(amounts-29, topic-14)
+det(deal-18, a-16)
+amod(deal-18, great-17)
+prep_of(topic-14, deal-18)
+prep_of(deal-18, discussion-20)
+det(campaign-23, the-22)
+prep_during(discussion-20, campaign-23)
+dep(progressives-27, for-25)
+amod(progressives-27, many-26)
+dep(amounts-29, progressives-27)
+nsubj(amounts-29, it-28)
+dep(December-1, amounts-29)
+det(jewel-33, a-31)
+amod(jewel-33, beautiful-32)
+prep_to(amounts-29, jewel-33)
+partmod(jewel-33, hidden-34)
+ccomp(hidden-34, amidst-35)
+det(pile-37, a-36)
+dobj(amidst-35, pile-37)
+prep_of(pile-37, compromise-39)
+prep_of(pile-37, disappointment-41)
+conj_and(compromise-39, disappointment-41)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ Ask) (JJ average) (NNS progressives))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP they))
+            (VP (VBP think)))))
+      (VP (MD ought)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN done)
+                (PP (IN about)
+                  (NP (NN health) (NN care)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT many))
+      (VP (MD will)
+        (VP (VB reply) (, ,) (`` ``)
+          (S
+            (INTJ (UH Well))
+            (, ,)
+            (NP (DT a) (JJ single-payer) (NN system))
+            (VP (MD would)
+              (ADVP (RB obviously))
+              (VP (VB be)
+                (NP (DT the) (JJS best) (NN thing))))))))
+    (. .)))
+
+amod(progressives-3, Ask-1)
+amod(progressives-3, average-2)
+dobj(think-6, progressives-3)
+nsubj(ought-7, progressives-3)
+xsubj(done-10, progressives-3)
+rel(think-6, what-4)
+nsubj(think-6, they-5)
+rcmod(progressives-3, think-6)
+root(ROOT-0, ought-7)
+aux(done-10, to-8)
+auxpass(done-10, be-9)
+xcomp(ought-7, done-10)
+nn(care-13, health-12)
+prep_about(done-10, care-13)
+nsubj(reply-18, many-16)
+aux(reply-18, will-17)
+conj_and(ought-7, reply-18)
+dep(thing-31, Well-21)
+det(system-25, a-23)
+amod(system-25, single-payer-24)
+nsubj(thing-31, system-25)
+aux(thing-31, would-26)
+advmod(thing-31, obviously-27)
+cop(thing-31, be-28)
+det(thing-31, the-29)
+amod(thing-31, best-30)
+ccomp(reply-18, thing-31)
+
+(ROOT
+  (S (CC But)
+    (PP (IN since)
+      (NP (DT that)))
+    (VP (VBZ 's)
+      (ADJP (RB politically) (JJ impossible)))
+    ('' '') (. .)))
+
+cc(impossible-6, But-1)
+prep_since(impossible-6, that-3)
+cop(impossible-6, 's-4)
+advmod(impossible-6, politically-5)
+root(ROOT-0, impossible-6)
+

@@ -1,0 +1,51 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Absolutely))
+    (. .)))
+
+root(ROOT-0, Absolutely-1)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD 'll)
+      (VP (VB fight)
+        (PP (TO to)
+          (NP (DT the) (NN end)))))
+    (. .)))
+
+nsubj(fight-3, We-1)
+aux(fight-3, 'll-2)
+root(ROOT-0, fight-3)
+det(end-6, the-5)
+prep_to(fight-3, end-6)
+
+(ROOT
+  (FRAG
+    (PP (IN In)
+      (NP
+        (NP (PRP$ our) (NNS homes))
+        (, ,)
+        (PP (IN in)
+          (NP (PRP$ our) (NNS offices)))
+        (, ,)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS trenches))
+            (SBAR (IN if)
+              (S
+                (VP (MD need)
+                  (VP (VB be)))))))))
+    (. !)))
+
+root(ROOT-0, In-1)
+poss(homes-3, our-2)
+pobj(In-1, homes-3)
+poss(offices-7, our-6)
+prep_in(homes-3, offices-7)
+det(trenches-11, the-10)
+prep_in(homes-3, trenches-11)
+mark(need-13, if-12)
+dep(trenches-11, need-13)
+dep(need-13, be-14)
+

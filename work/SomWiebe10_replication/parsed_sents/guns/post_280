@@ -1,0 +1,124 @@
+(ROOT
+  (S
+    (NP (NNP Mexico))
+    (VP
+      (VP (VBZ has)
+        (NP (RB much) (JJR stricter) (NN gun) (NNS laws))
+        (PP (IN than)
+          (NP (DT the) (NNP U.S.))))
+      (CC and)
+      (VP (VBZ has)
+        (NP (DT a) (JJR higher) (NN murder) (NN rate))
+        (PP (IN by)
+          (NP (NNS guns)))))
+    (. .)))
+
+nsubj(has-2, Mexico-1)
+nsubj(has-11, Mexico-1)
+root(ROOT-0, has-2)
+advmod(laws-6, much-3)
+amod(laws-6, stricter-4)
+nn(laws-6, gun-5)
+dobj(has-2, laws-6)
+det(U.S.-9, the-8)
+prep_than(has-2, U.S.-9)
+conj_and(has-2, has-11)
+det(rate-15, a-12)
+amod(rate-15, higher-13)
+nn(rate-15, murder-14)
+dobj(has-11, rate-15)
+prep_by(has-11, guns-17)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ is)
+      (NP (DT this))
+      (ADJP (JJ possible)))
+    (. ?)))
+
+advmod(possible-4, How-1)
+cop(possible-4, is-2)
+nsubj(possible-4, this-3)
+root(ROOT-0, possible-4)
+
+(ROOT
+  (SQ (MD Could)
+    (NP (PRP it))
+    (VP (VB be)
+      (SBAR (IN that)
+        (S
+          (NP (DT this))
+          (VP (VBZ is)
+            (ADVP (RB simply))
+            (NP
+              (NP (CD one) (NN statistic))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (MD could)
+                    (VP (VB be)
+                      (VP (VBN used)
+                        (S
+                          (VP (TO to)
+                            (VP (VB formulate)
+                              (NP (DT an) (JJ overall) (NN opinion))
+                              (PP (IN about)
+                                (NP (NN gun) (NN control))))))))))))))))
+    (. ?)))
+
+aux(be-3, Could-1)
+nsubj(be-3, it-2)
+root(ROOT-0, be-3)
+complm(statistic-9, that-4)
+nsubj(statistic-9, this-5)
+cop(statistic-9, is-6)
+advmod(statistic-9, simply-7)
+num(statistic-9, one-8)
+ccomp(be-3, statistic-9)
+nsubjpass(used-13, statistic-9)
+aux(used-13, could-11)
+auxpass(used-13, be-12)
+rcmod(statistic-9, used-13)
+aux(formulate-15, to-14)
+xcomp(used-13, formulate-15)
+det(opinion-18, an-16)
+amod(opinion-18, overall-17)
+dobj(formulate-15, opinion-18)
+nn(control-21, gun-20)
+prep_about(formulate-15, control-21)
+
+(ROOT
+  (SQ (MD Could)
+    (NP (PRP it))
+    (VP (VB be)
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP
+              (NP (JJ other) (NNS factors))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP need)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN considered)))))))))))))
+    (. ?)))
+
+aux(be-3, Could-1)
+nsubj(be-3, it-2)
+root(ROOT-0, be-3)
+complm(are-6, that-4)
+expl(are-6, there-5)
+ccomp(be-3, are-6)
+amod(factors-8, other-7)
+nsubj(are-6, factors-8)
+nsubj(need-10, factors-8)
+rcmod(factors-8, need-10)
+aux(considered-13, to-11)
+auxpass(considered-13, be-12)
+xcomp(need-10, considered-13)
+

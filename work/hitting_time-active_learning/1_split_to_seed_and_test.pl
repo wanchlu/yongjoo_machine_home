@@ -4,13 +4,16 @@ use strict;
 my $input = shift;
 my $seed_size = shift;
 my $test_size = shift;
+my $out_seed = shift;
+my $out_test = shift;
 
 `shuffle.pl < $input | grep "^0" > ./data/temp0`;
 `shuffle.pl < $input | grep "^1" > ./data/temp1`;
 my $half_seed_size = $seed_size/2;
-`head -n$half_seed_size ./data/temp0 > data/A_seeds.txt`;
-`head -n$half_seed_size ./data/temp1 >> data/A_seeds.txt`;
+`head -n$half_seed_size ./data/temp0 > $out_seed`; 
+`head -n$half_seed_size ./data/temp1 >> $out_seed`;
 `head -n -$half_seed_size ./data/temp0 >data/temp`;
 `head -n -$half_seed_size ./data/temp1 >>data/temp`;
 
-`shuffle.pl < ./data/temp | shuffle.pl | head -n$test_size  > data/A_test.txt`;
+`shuffle.pl < ./data/temp | shuffle.pl | head -n$test_size  > $out_test`;
+

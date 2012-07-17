@@ -1,0 +1,174 @@
+(ROOT
+  (S
+    (ADVP (RB Absolutely))
+    (NP (PRP they))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN banned))))
+    (. .)))
+
+advmod(banned-5, Absolutely-1)
+nsubjpass(banned-5, they-2)
+aux(banned-5, should-3)
+auxpass(banned-5, be-4)
+root(ROOT-0, banned-5)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (ADVP (RB almost) (RB no))
+      (NP
+        (NP (NNS cases))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (DT an) (JJ innocent) (NN person))
+            (VP (VBZ has)
+              (VP (VBN defended)
+                (NP (PRP themselves))
+                (PP (IN with)
+                  (NP (DT a) (NN gun)))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+advmod(no-4, almost-3)
+advmod(are-2, no-4)
+nsubj(are-2, cases-5)
+advmod(defended-11, where-6)
+det(person-9, an-7)
+amod(person-9, innocent-8)
+nsubj(defended-11, person-9)
+aux(defended-11, has-10)
+rcmod(cases-5, defended-11)
+dobj(defended-11, themselves-12)
+det(gun-15, a-14)
+prep_with(defended-11, gun-15)
+
+(ROOT
+  (S (CC And)
+    (S
+      (NP (JJ sure) (NNS guns))
+      (VP (VBP do) (RB n't)
+        (VP (VB kill)
+          (NP (NNS people)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN death) (NN rate))
+      (VP (MD would)
+        (ADVP (RB definately))
+        (VP (VB go)
+          (PRT (RP down))
+          (SBAR (IN if)
+            (S
+              (NP (NNS people))
+              (VP (VBD did) (RB not)
+                (VP (VB have)
+                  (NP (JJ easy) (NN access))
+                  (PP (TO to)
+                    (NP (NNS weapons))))))))))
+    (. .)))
+
+amod(guns-3, sure-2)
+nsubj(kill-6, guns-3)
+aux(kill-6, do-4)
+neg(kill-6, n't-5)
+root(ROOT-0, kill-6)
+dobj(kill-6, people-7)
+det(rate-12, the-10)
+nn(rate-12, death-11)
+nsubj(go-15, rate-12)
+aux(go-15, would-13)
+advmod(go-15, definately-14)
+conj_but(kill-6, go-15)
+prt(go-15, down-16)
+mark(have-21, if-17)
+nsubj(have-21, people-18)
+aux(have-21, did-19)
+neg(have-21, not-20)
+advcl(go-15, have-21)
+amod(access-23, easy-22)
+dobj(have-21, access-23)
+prep_to(have-21, weapons-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (VP (VB look)
+        (PP (IN at)
+          (NP (DT the) (NNP VT) (NN incident)))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+root(ROOT-0, mean-2)
+dep(mean-2, look-3)
+det(incident-7, the-5)
+nn(incident-7, VT-6)
+prep_at(look-3, incident-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN college) (NN kid))
+      (, ,)
+      (PP (IN with)
+        (NP (DT a)
+          (ADJP (RB clearly) (JJ bad))
+          (NN background) (NN record)))
+      (, ,))
+    (VP (VBD managed)
+      (S
+        (VP (TO to)
+          (VP (VB buy)
+            (NP (NNS guns)
+              (CC and)
+              (NN ammo))))))
+    (. .)))
+
+det(kid-3, A-1)
+nn(kid-3, college-2)
+nsubj(managed-12, kid-3)
+xsubj(buy-14, kid-3)
+det(record-10, a-6)
+advmod(bad-8, clearly-7)
+amod(record-10, bad-8)
+nn(record-10, background-9)
+prep_with(kid-3, record-10)
+root(ROOT-0, managed-12)
+aux(buy-14, to-13)
+xcomp(managed-12, buy-14)
+dobj(buy-14, guns-15)
+dobj(buy-14, ammo-17)
+conj_and(guns-15, ammo-17)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD outlaw)
+      (SBAR
+        (S
+          (NP
+            (NP (NN gun) (POS 's))
+            (CC and)
+            (NP (NN stuff)))
+          (VP (VBP like)
+            (SBAR (IN that)
+              (S
+                (VP (VBZ does) (RB not)
+                  (VP (VB happen)))))))))))
+
+nsubj(outlaw-2, We-1)
+root(ROOT-0, outlaw-2)
+nsubj(like-7, gun-3)
+possessive(gun-3, 's-4)
+conj_and(gun-3, stuff-6)
+nsubj(like-7, stuff-6)
+ccomp(outlaw-2, like-7)
+complm(happen-11, that-8)
+aux(happen-11, does-9)
+neg(happen-11, not-10)
+ccomp(like-7, happen-11)
+

@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (NP
+      (NP (CD 200,000,000) (JJ dead) (NNS people))
+      (, ,)
+      (VP (VBN killed)
+        (PP (IN by)
+          (NP (PRP$ their) (JJ own) (NNS governments)))
+        (PP (IN in)
+          (NP (RB just) (DT the) (JJ last) (CD 100) (NNS years))))
+      (, ,))
+    (VP (VBP disagree)
+      (PP (IN with)
+        (NP (PRP you))))
+    (. .)))
+
+num(people-3, 200,000,000-1)
+amod(people-3, dead-2)
+nsubj(disagree-17, people-3)
+partmod(people-3, killed-5)
+poss(governments-9, their-7)
+amod(governments-9, own-8)
+agent(killed-5, governments-9)
+advmod(years-15, just-11)
+det(years-15, the-12)
+amod(years-15, last-13)
+num(years-15, 100-14)
+prep_in(killed-5, years-15)
+root(ROOT-0, disagree-17)
+prep_with(disagree-17, you-19)
+
+(ROOT
+  (S
+    (VP (VB Jsut)
+      (ADJP (JJ fine))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ helpless)))))))))
+    (. .)))
+
+root(ROOT-0, Jsut-1)
+acomp(Jsut-1, fine-2)
+mark(want-5, if-3)
+nsubj(want-5, you-4)
+xsubj(helpless-8, you-4)
+advcl(Jsut-1, want-5)
+aux(helpless-8, to-6)
+cop(helpless-8, be-7)
+xcomp(want-5, helpless-8)
+
+(ROOT
+  (FRAG
+    (NP (PRP$ Your) (NN choice))
+    (. .)))
+
+poss(choice-2, Your-1)
+root(ROOT-0, choice-2)
+
+(ROOT
+  (S (CC But)
+    (S
+      (VP (TO to)
+        (VP (VB force)
+          (NP (DT that) (NN handicap))
+          (PP (IN upon)
+            (NP (NNS others))))))
+    (VP (VBZ is)
+      (ADJP (JJ sick)))
+    (. .)))
+
+cc(sick-9, But-1)
+aux(force-3, to-2)
+csubj(sick-9, force-3)
+det(handicap-5, that-4)
+dobj(force-3, handicap-5)
+prep_upon(force-3, others-7)
+cop(sick-9, is-8)
+root(ROOT-0, sick-9)
+

@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Every) (NN criminal))
+      (PP (IN on)
+        (NP (DT the) (NN street))))
+    (VP (VBZ has)
+      (NP (DT a) (NN gun)))
+    (. .)))
+
+det(criminal-2, Every-1)
+nsubj(has-6, criminal-2)
+det(street-5, the-4)
+prep_on(criminal-2, street-5)
+root(ROOT-0, has-6)
+det(gun-8, a-7)
+dobj(has-6, gun-8)
+
+(ROOT
+  (S
+    (SBAR (IN Whether)
+      (S
+        (NP (PRP$ its))
+        (VP (VBD pointed)
+          (PP (IN at)
+            (NP
+              (NP (PRP you))
+              (CC or)
+              (NP
+                (NP (CD one))
+                (PP (IN of)
+                  (NP (PRP$ your) (NNS neighbors)
+                    (CC or)
+                    (NNS friends)))))))))
+    (NP (PRP it))
+    (VP (VBZ makes)
+      (S
+        (NP
+          (NP (NN sense))
+          (PP (IN for)
+            (NP (PRP you))))
+        (VP (TO to)
+          (VP (VB have)
+            (NP (DT the) (NN right)
+              (S
+                (VP (TO to)
+                  (VP (VB protect)
+                    (NP (PRP yourself))
+                    (PP (IN from)
+                      (NP
+                        (NP (DT these) (NNS dregs))
+                        (PP (IN of)
+                          (NP (NN society)))))))))))))
+    (. .)))
+
+complm(pointed-3, Whether-1)
+nsubj(pointed-3, its-2)
+ccomp(makes-14, pointed-3)
+prep_at(pointed-3, you-5)
+prep_at(pointed-3, one-7)
+conj_or(you-5, one-7)
+poss(neighbors-10, your-9)
+prep_of(one-7, neighbors-10)
+prep_of(one-7, friends-12)
+conj_or(neighbors-10, friends-12)
+nsubj(makes-14, it-13)
+root(ROOT-0, makes-14)
+nsubj(have-19, sense-15)
+prep_for(sense-15, you-17)
+aux(have-19, to-18)
+xcomp(makes-14, have-19)
+det(right-21, the-20)
+dobj(have-19, right-21)
+aux(protect-23, to-22)
+infmod(right-21, protect-23)
+dobj(protect-23, yourself-24)
+det(dregs-27, these-26)
+prep_from(protect-23, dregs-27)
+prep_of(dregs-27, society-29)
+

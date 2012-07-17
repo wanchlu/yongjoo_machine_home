@@ -1,0 +1,293 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (VBZ delivers)
+      (NP (JJ same) (NN quality) (NN insurance))
+      (PP (IN at)
+        (NP
+          (NP (DT a) (JJR lower) (NN price))
+          (NP (NNP Jacob) (NNP Hacker)))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(delivers-3, insurance-2)
+root(ROOT-0, delivers-3)
+amod(insurance-6, same-4)
+nn(insurance-6, quality-5)
+dobj(delivers-3, insurance-6)
+det(price-10, a-8)
+amod(price-10, lower-9)
+prep_at(delivers-3, price-10)
+nn(Hacker-12, Jacob-11)
+dep(price-10, Hacker-12)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NN case))
+    (PP (IN for)
+      (NP (NN public) (NN plan) ('' '')))
+    (. .)))
+
+det(case-3, The-2)
+root(ROOT-0, case-3)
+dep(case-3, for-4)
+nn(plan-6, public-5)
+pobj(for-4, plan-6)
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NNP Institute))
+      (PP (IN for)
+        (NP
+          (NP (NNP America) (POS 's))
+          (NNP Future))))
+    (: :)
+    (NP
+      (NP (`` ``) (NNPS COST-CONTROL) (NNP ADVANTAGES))
+      (PP (IN OF)
+        (NP (NNP PUBLIC) (NNP INSURANCE))))
+    (. .)))
+
+det(Institute-2, The-1)
+root(ROOT-0, Institute-2)
+poss(Future-6, America-4)
+prep_for(Institute-2, Future-6)
+nn(ADVANTAGES-10, COST-CONTROL-9)
+dep(Institute-2, ADVANTAGES-10)
+nn(INSURANCE-13, PUBLIC-12)
+prep_of(ADVANTAGES-10, INSURANCE-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB often))
+      (VP (VBN assumed)
+        (SBAR (IN that)
+          (S
+            (NP (JJ private) (NN health) (NNS plans))
+            (VP (VBP are)
+              (ADJP
+                (ADJP (RB much) (RBR more) (JJ efficient))
+                (PP (IN than)
+                  (NP (JJ public) (NN health) (NN insurance)))))))))
+    (. .)))
+
+nsubjpass(assumed-4, It-1)
+auxpass(assumed-4, is-2)
+advmod(assumed-4, often-3)
+root(ROOT-0, assumed-4)
+complm(efficient-12, that-5)
+amod(plans-8, private-6)
+nn(plans-8, health-7)
+nsubj(efficient-12, plans-8)
+cop(efficient-12, are-9)
+advmod(efficient-12, much-10)
+advmod(efficient-12, more-11)
+ccomp(assumed-4, efficient-12)
+amod(insurance-16, public-14)
+nn(insurance-16, health-15)
+prep_than(efficient-12, insurance-16)
+
+(ROOT
+  (S (CC Yet)
+    (NP
+      (NP (DT a) (NN range))
+      (PP (IN of)
+        (NP (NNS studies))))
+    (VP (VBP demonstrate)
+      (SBAR (IN that)
+        (S
+          (NP (JJ public) (NN insurance))
+          (VP (VBZ is)
+            (ADJP (JJ able)
+              (S
+                (VP (TO to)
+                  (VP (VB provide)
+                    (NP
+                      (NP (DT a) (VBN given) (NN level))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS benefits))
+                          (PP (IN for)
+                            (NP
+                              (NP (JJR less))
+                              (SBAR (IN than)
+                                (S
+                                  (NP (PRP they))
+                                  (VP (MD would)
+                                    (VP (VB cost)
+                                      (PP (IN through)
+                                        (NP (JJ private) (NN insurance))))))))))))))))))))
+    (. .)))
+
+cc(demonstrate-6, Yet-1)
+det(range-3, a-2)
+nsubj(demonstrate-6, range-3)
+prep_of(range-3, studies-5)
+root(ROOT-0, demonstrate-6)
+complm(able-11, that-7)
+amod(insurance-9, public-8)
+nsubj(able-11, insurance-9)
+cop(able-11, is-10)
+ccomp(demonstrate-6, able-11)
+aux(provide-13, to-12)
+xcomp(able-11, provide-13)
+det(level-16, a-14)
+amod(level-16, given-15)
+dobj(provide-13, level-16)
+prep_of(level-16, benefits-18)
+prep_for(benefits-18, less-20)
+dobj(cost-24, less-20)
+mark(cost-24, than-21)
+nsubj(cost-24, they-22)
+aux(cost-24, would-23)
+dep(less-20, cost-24)
+amod(insurance-27, private-26)
+prep_through(cost-24, insurance-27)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJR Lower) (JJ administrative) (NNS costs))
+      (CC and)
+      (NP (DT the) (NN ability)
+        (S
+          (VP (TO to)
+            (VP (VB bargain)
+              (PP (IN for)
+                (NP (JJR lower) (NN service)
+                  (CC and)
+                  (NN drug) (NNS prices))))))))
+    (ADVP (RB chiefly))
+    (VP (VBP explain)
+      (NP
+        (NP (DT this) (NN advantage))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (VP (VBZ does)
+              (NP
+                (NP (DT the) (JJ obvious) (NN lack))
+                (PP (IN of)
+                  (NP
+                    (NP (DT a) (NN profit) (NN margin))
+                    (PP (IN in)
+                      (NP (JJ public) (NNS programs)))))))))))
+    (. .)))
+
+amod(costs-3, Lower-1)
+amod(costs-3, administrative-2)
+nsubj(explain-16, costs-3)
+det(ability-6, the-5)
+conj_and(costs-3, ability-6)
+nsubj(explain-16, ability-6)
+aux(bargain-8, to-7)
+infmod(ability-6, bargain-8)
+amod(service-11, lower-10)
+prep_for(bargain-8, service-11)
+nn(prices-14, drug-13)
+prep_for(bargain-8, prices-14)
+conj_and(service-11, prices-14)
+advmod(explain-16, chiefly-15)
+root(ROOT-0, explain-16)
+det(advantage-18, this-17)
+dobj(explain-16, advantage-18)
+mark(does-21, as-20)
+dep(advantage-18, does-21)
+det(lack-24, the-22)
+amod(lack-24, obvious-23)
+dobj(does-21, lack-24)
+det(margin-28, a-26)
+nn(margin-28, profit-27)
+prep_of(lack-24, margin-28)
+amod(programs-31, public-30)
+prep_in(margin-28, programs-31)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT These) (NNS features))
+      (PP (IN of)
+        (NP (JJ public) (NN insurance))))
+    (RB not)
+    (VP
+      (ADVP (RB only))
+      (VB allow)
+      (NP (PRP it))
+      (S
+        (VP (TO to)
+          (VP (VB offer)
+            (NP (DT the) (JJ same) (NN coverage))
+            (PP (IN for)
+              (NP
+                (QP (JJR less) (IN than)
+                  (NP (JJ private) (NNS plans)))))))))
+    (. .)))
+
+det(features-2, These-1)
+nsubj(allow-8, features-2)
+amod(insurance-5, public-4)
+prep_of(features-2, insurance-5)
+neg(allow-8, not-6)
+advmod(allow-8, only-7)
+root(ROOT-0, allow-8)
+dobj(allow-8, it-9)
+aux(offer-11, to-10)
+xcomp(allow-8, offer-11)
+det(coverage-14, the-12)
+amod(coverage-14, same-13)
+dobj(offer-11, coverage-14)
+prep(offer-11, for-15)
+quantmod(than-17, less-16)
+pobj(for-15, than-17)
+amod(plans-19, private-18)
+dep(than-17, plans-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (ADVP (RB also)))
+    (, ,)
+    (NP (DT the) (NN evidence))
+    (VP (VBZ suggests) (, ,)
+      (S
+        (VP (VB allow)
+          (S
+            (NP (PRP it))
+            (VP (TO to)
+              (VP
+                (ADVP (RBR better))
+                (VB restrain)
+                (NP (DT the) (NN increase))
+                (PP (IN in)
+                  (NP
+                    (NP (NNS costs))
+                    (PP (IN over)
+                      (NP (NN time)))))
+                (PP (IN while)
+                  (S
+                    (VP (VBG preserving)
+                      (NP (JJ inclusive) (NN coverage)))))))))))
+    (. .)))
+
+ccomp(suggests-6, They-1)
+advmod(They-1, also-2)
+det(evidence-5, the-4)
+nsubj(suggests-6, evidence-5)
+root(ROOT-0, suggests-6)
+ccomp(suggests-6, allow-8)
+nsubj(restrain-12, it-9)
+aux(restrain-12, to-10)
+advmod(restrain-12, better-11)
+xcomp(allow-8, restrain-12)
+det(increase-14, the-13)
+dobj(restrain-12, increase-14)
+prep_in(restrain-12, costs-16)
+prep_over(costs-16, time-18)
+prepc_while(restrain-12, preserving-20)
+amod(coverage-22, inclusive-21)
+dobj(preserving-20, coverage-22)
+

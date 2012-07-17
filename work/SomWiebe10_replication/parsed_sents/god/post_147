@@ -1,0 +1,117 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT The) (NN absence))
+      (PP (IN of)
+        (NP (NN proof))))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (NN proof))
+        (PP (IN of)
+          (NP (NN absence)))))
+    (. .)))
+
+det(absence-3, The-2)
+nsubj(proof-8, absence-3)
+prep_of(absence-3, proof-5)
+cop(proof-8, is-6)
+neg(proof-8, not-7)
+root(ROOT-0, proof-8)
+prep_of(proof-8, absence-10)
+
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR (IN While)
+        (S
+          (NP (NN fun))
+          (VP (VB and))))
+      (VP (VBP flowery)))
+    (, ,)
+    (NP (JJ rhetorical) (NNS devices))
+    (VP (VBP are)
+      (NP
+        (NP (DT no) (NN substitute))
+        (PP (IN for)
+          (NP (NN logic)))))
+    (. .)))
+
+mark(and-4, While-2)
+nsubj(and-4, fun-3)
+csubj(flowery-5, and-4)
+ccomp(substitute-11, flowery-5)
+amod(devices-8, rhetorical-7)
+nsubj(substitute-11, devices-8)
+cop(substitute-11, are-9)
+det(substitute-11, no-10)
+root(ROOT-0, substitute-11)
+prep_for(substitute-11, logic-13)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (DT the) (NN burden))
+          (PP (IN of)
+            (NP (NN proof))))
+        (VP (VBZ is)
+          (PP (IN on)
+            (S
+              (VP (VBG proving)
+                (SBAR (IN that)
+                  (S
+                    (NP (NN something))
+                    (VP (VBZ does) (RB not)
+                      (VP (VB exist)))))))))))
+    (NP (PRP we))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBN forced)
+          (S
+            (VP (TO to)
+              (VP (VB admit)
+                (NP (DT the) (NN possibility))
+                (SBAR (IN that)
+                  (S
+                    (NP
+                      (NP (PRP$ our))
+                      (NP (DT every) (NN action)))
+                    (VP (VBZ is)
+                      (ADVP (RB indeed))
+                      (VP (VBN guided)
+                        (PP (IN by)
+                          (NP (DT a) (NNP Flying) (NNP Spaghetti) (NN Monster)))))))))))))
+    (. .)))
+
+mark(is-6, If-1)
+det(burden-3, the-2)
+nsubj(is-6, burden-3)
+prep_of(burden-3, proof-5)
+advcl(forced-17, is-6)
+prepc_on(is-6, proving-8)
+complm(exist-13, that-9)
+nsubj(exist-13, something-10)
+aux(exist-13, does-11)
+neg(exist-13, not-12)
+ccomp(proving-8, exist-13)
+nsubjpass(forced-17, we-14)
+aux(forced-17, would-15)
+auxpass(forced-17, be-16)
+root(ROOT-0, forced-17)
+aux(admit-19, to-18)
+xcomp(forced-17, admit-19)
+det(possibility-21, the-20)
+dobj(admit-19, possibility-21)
+complm(guided-28, that-22)
+nsubjpass(guided-28, our-23)
+det(action-25, every-24)
+dep(our-23, action-25)
+auxpass(guided-28, is-26)
+advmod(guided-28, indeed-27)
+ccomp(admit-19, guided-28)
+det(Monster-33, a-30)
+nn(Monster-33, Flying-31)
+nn(Monster-33, Spaghetti-32)
+agent(guided-28, Monster-33)
+

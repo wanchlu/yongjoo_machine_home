@@ -1,0 +1,88 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB account)
+        (PP (IN for)
+          (NP
+            (NP (VBN educated) (NNS people))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP are)
+                  (VP (VBN raised)
+                    (PP (IN in)
+                      (NP
+                        (NP (JJ good) (NNS environments))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP commit)
+                              (ADJP (JJ evil)))))))))))))))
+    (. ?)))
+
+advmod(account-4, How-1)
+aux(account-4, do-2)
+nsubj(account-4, you-3)
+root(ROOT-0, account-4)
+amod(people-7, educated-6)
+prep_for(account-4, people-7)
+nsubjpass(raised-10, people-7)
+auxpass(raised-10, are-9)
+rcmod(people-7, raised-10)
+amod(environments-13, good-12)
+prep_in(raised-10, environments-13)
+nsubj(commit-15, environments-13)
+rcmod(environments-13, commit-15)
+acomp(commit-15, evil-16)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB like)
+        (S
+          (VP (TO to)
+            (VP (VB know)
+              (SBAR
+                (WHADVP (WRB why))
+                (S
+                  (NP (NNS people))
+                  (VP (VBP love)
+                    (S
+                      (VP (TO to)
+                        (VP (VB do)
+                          (SBAR
+                            (WHNP (WP what))
+                            (S
+                              (NP (PRP they))
+                              (VP (VBP know)
+                                (SBAR
+                                  (S
+                                    (VP (VBZ is)
+                                      (ADJP (JJ wrong)))))))))))))))))))
+    (. .)))
+
+advmod(like-5, Also-1)
+nsubj(like-5, I-3)
+xsubj(know-7, I-3)
+aux(like-5, 'd-4)
+root(ROOT-0, like-5)
+aux(know-7, to-6)
+xcomp(like-5, know-7)
+advmod(love-10, why-8)
+nsubj(love-10, people-9)
+xsubj(do-12, people-9)
+advcl(know-7, love-10)
+aux(do-12, to-11)
+xcomp(love-10, do-12)
+dep(know-15, what-13)
+nsubj(wrong-17, what-13)
+nsubj(know-15, they-14)
+ccomp(do-12, know-15)
+cop(wrong-17, is-16)
+ccomp(know-15, wrong-17)
+

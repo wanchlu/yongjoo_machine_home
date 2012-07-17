@@ -1,0 +1,60 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (PP (IN about)
+      (NP
+        (NP (DT the) (NN cost))
+        (PP (IN of)
+          (S
+            (VP (VBG living)
+              (ADVP (RB there))))))
+      (. ?))))
+
+root(ROOT-0, What-1)
+dep(What-1, about-2)
+det(cost-4, the-3)
+pobj(about-2, cost-4)
+prepc_of(cost-4, living-6)
+advmod(living-6, there-7)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (DT the) (NN hire) (NNS prices))
+    (VP
+      (ADVP (RB off))
+      (VBN set)
+      (PP (IN by)
+        (NP (NN hire) (NN pay))))
+    (. ?)))
+
+auxpass(set-6, Are-1)
+det(prices-4, the-2)
+nn(prices-4, hire-3)
+nsubjpass(set-6, prices-4)
+advmod(set-6, off-5)
+root(ROOT-0, set-6)
+nn(pay-9, hire-8)
+agent(set-6, pay-9)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (NN child)))
+    (NP (PRP I))
+    (VP (VBD spent)
+      (NP
+        (NP (NNS lots))
+        (PP (IN of)
+          (NP (NNS summers))))
+      (PP (IN in)
+        (NP (NNP Canada))))
+    (. .)))
+
+det(child-3, a-2)
+prep_as(spent-5, child-3)
+nsubj(spent-5, I-4)
+root(ROOT-0, spent-5)
+dobj(spent-5, lots-6)
+prep_of(lots-6, summers-8)
+prep_in(spent-5, Canada-10)
+

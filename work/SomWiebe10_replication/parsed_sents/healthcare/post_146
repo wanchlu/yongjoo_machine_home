@@ -1,0 +1,133 @@
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBG Rationing)
+          (ADVP (RB already))))
+      (VP (VBP exist)
+        (PP (IN in)
+          (NP (DT the) (NNP US)))))
+    (: ;)
+    (S
+      (NP (JJ universal) (NN health) (NN care))
+      (VP (MD wo) (RB n't)
+        (VP (VB change)
+          (NP
+            (NP (DT this))
+            ('' '')
+            (SBAR
+              (S
+                (NP (NNP Single) (NNP Payer))
+                (VP (VBP FAQ) ('' ''))))))))
+    (. .)))
+
+csubj(exist-3, Rationing-1)
+advmod(Rationing-1, already-2)
+root(ROOT-0, exist-3)
+det(US-6, the-5)
+prep_in(exist-3, US-6)
+amod(care-10, universal-8)
+nn(care-10, health-9)
+nsubj(change-13, care-10)
+aux(change-13, wo-11)
+neg(change-13, n't-12)
+parataxis(exist-3, change-13)
+dobj(change-13, this-14)
+dobj(FAQ-18, this-14)
+nn(Payer-17, Single-16)
+nsubj(FAQ-18, Payer-17)
+rcmod(this-14, FAQ-18)
+
+(ROOT
+  (NP
+    (NP (NNP Physicians))
+    (PP (IN for)
+      (NP (DT a) (NNP National) (NNP Health) (NN Program)))
+    (. .)))
+
+root(ROOT-0, Physicians-1)
+det(Program-6, a-3)
+nn(Program-6, National-4)
+nn(Program-6, Health-5)
+prep_for(Physicians-1, Program-6)
+
+(ROOT
+  (S
+    (NP
+      (ADJP (JJ Retrieved)
+        (NP (NNP May) (CD 30th) (, ,) (CD 2008)))
+      (NP (`` ``) (DT The) (NNP U.S.)))
+    (ADVP (RB already))
+    (VP (VBZ rations)
+      (NP (NN care)))
+    (. .)))
+
+amod(U.S.-8, Retrieved-1)
+tmod(Retrieved-1, May-2)
+num(May-2, 30th-3)
+num(May-2, 2008-5)
+det(U.S.-8, The-7)
+nsubj(rations-10, U.S.-8)
+advmod(rations-10, already-9)
+root(ROOT-0, rations-10)
+dobj(rations-10, care-11)
+
+(ROOT
+  (S
+    (S
+      (S
+        (VP (VBG Rationing)
+          (PP (IN in)
+            (NP (NNP U.S.) (NN health) (NN care)))))
+      (VP (VBZ is)
+        (VP (VBN based)
+          (PP (IN on)
+            (NP (NN income))))))
+    (: :)
+    (S
+      (S
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (MD can)
+              (VP (VB afford)
+                (NP (NN care))))))
+        (, ,)
+        (NP (PRP you))
+        (VP (VBP get)
+          (NP (PRP it))))
+      (: ;)
+      (S
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (MD can)
+              (VP (VB t)))))
+        (, ,)
+        (NP (PRP you))
+        (VP (VB don)
+          (NP (NN t.) ('' '')))))))
+
+csubjpass(based-7, Rationing-1)
+nn(care-5, U.S.-3)
+nn(care-5, health-4)
+prep_in(Rationing-1, care-5)
+auxpass(based-7, is-6)
+root(ROOT-0, based-7)
+prep_on(based-7, income-9)
+mark(afford-14, if-11)
+nsubj(afford-14, you-12)
+aux(afford-14, can-13)
+advcl(get-18, afford-14)
+dobj(afford-14, care-15)
+nsubj(get-18, you-17)
+parataxis(based-7, get-18)
+dobj(get-18, it-19)
+mark(t-24, if-21)
+nsubj(t-24, you-22)
+aux(t-24, can-23)
+advcl(don-27, t-24)
+nsubj(don-27, you-26)
+parataxis(get-18, don-27)
+dobj(don-27, t.-28)
+

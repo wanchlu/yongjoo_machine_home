@@ -1,0 +1,123 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB Not) (NN everyone))
+      (VP (VBN treated)
+        (PP (IN at)
+          (NP (DT the) (NN emergency) (NN room)))))
+    (VP (VBZ has)
+      (NP (DT an) (JJ actual) (NN emergency)))
+    (. .)))
+
+neg(everyone-2, Not-1)
+nsubj(has-8, everyone-2)
+partmod(everyone-2, treated-3)
+det(room-7, the-5)
+nn(room-7, emergency-6)
+prep_at(treated-3, room-7)
+root(ROOT-0, has-8)
+det(emergency-11, an-9)
+amod(emergency-11, actual-10)
+dobj(has-8, emergency-11)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (NN part))
+        (PP (IN of)
+          (NP (DT the) (NN problem)))))
+    (. .)))
+
+nsubj(part-3, That-1)
+cop(part-3, 's-2)
+root(ROOT-0, part-3)
+det(problem-6, the-5)
+prep_of(part-3, problem-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does) (RB not)
+      (VP (VB follow)
+        (NP (DT that)
+          (ADJP (RB just)
+            (PP (IN because)
+              (NP (NN something) (NNS benefits))))
+          (NN society))
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP (MD must)
+              (VP (VB be)
+                (ADJP (RB coercively) (VBN mandated)
+                  (PP (IN by)
+                    (NP (DT the) (NN government))))))))))
+    (. .)))
+
+nsubj(follow-4, It-1)
+aux(follow-4, does-2)
+neg(follow-4, not-3)
+root(ROOT-0, follow-4)
+det(society-10, that-5)
+amod(society-10, just-6)
+nn(benefits-9, something-8)
+prep_because(just-6, benefits-9)
+dobj(follow-4, society-10)
+complm(mandated-16, that-11)
+nsubjpass(mandated-16, it-12)
+aux(mandated-16, must-13)
+auxpass(mandated-16, be-14)
+advmod(mandated-16, coercively-15)
+ccomp(follow-4, mandated-16)
+det(government-19, the-18)
+agent(mandated-16, government-19)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT that) (NN argument))
+        (VP (VBZ holds)
+          (NP
+            (NP (NN water))
+            (PP (IN for)
+              (NP (PRP you))))
+          (ADVP (RB then)))))
+    (NP (PRP I))
+    (VP (MD 'd)
+      (VP (VB suggest)
+        (S
+          (VP (VBG reading)
+            (PRT (RP up))
+            (NP
+              (NP (DT the) (JJ utilitarian) (NNS arguments))
+              (PP (IN for)
+                (NP
+                  (NP (NN capitalism))
+                  (CC and)
+                  (NP (DT the) (JJ free) (NN market)))))))))
+    (. .)))
+
+mark(holds-4, If-1)
+det(argument-3, that-2)
+nsubj(holds-4, argument-3)
+advcl(suggest-11, holds-4)
+dobj(holds-4, water-5)
+prep_for(water-5, you-7)
+advmod(holds-4, then-8)
+nsubj(suggest-11, I-9)
+aux(suggest-11, 'd-10)
+root(ROOT-0, suggest-11)
+xcomp(suggest-11, reading-12)
+prt(reading-12, up-13)
+det(arguments-16, the-14)
+amod(arguments-16, utilitarian-15)
+dobj(reading-12, arguments-16)
+prep_for(arguments-16, capitalism-18)
+det(market-22, the-20)
+amod(market-22, free-21)
+prep_for(arguments-16, market-22)
+conj_and(capitalism-18, market-22)
+

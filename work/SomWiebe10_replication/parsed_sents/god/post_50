@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP understand)
+      (NP
+        (NP (DT the) (NN difference))
+        (PP (IN between)
+          (NP
+            (NP (DT a) (JJ scientific) (NN theory))
+            (CC and)
+            (NP (DT a) (JJ scientific) (NN fact))))))
+    (. .)))
+
+dep(understand-4, Yes-1)
+nsubj(understand-4, I-3)
+root(ROOT-0, understand-4)
+det(difference-6, the-5)
+dobj(understand-4, difference-6)
+det(theory-10, a-8)
+amod(theory-10, scientific-9)
+prep_between(difference-6, theory-10)
+det(fact-14, a-12)
+amod(fact-14, scientific-13)
+prep_between(difference-6, fact-14)
+conj_and(theory-10, fact-14)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (JJ scientific) (NN bachelor) (POS 's))
+          (NN degree))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP know)
+        (SBAR (IN that)
+          (S
+            (NP (NNS scientists))
+            (VP (VBP do)
+              (VP (`` ``) (VB make)
+                (NP (NN stuff))
+                (PRT (RP up))
+                ('' '')
+                (PP (IN =) (`` ``)
+                  (ADJP (JJ postulate))
+                  ('' ''))))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+det(bachelor-5, a-3)
+amod(bachelor-5, scientific-4)
+poss(degree-7, bachelor-5)
+dobj(have-2, degree-7)
+nsubj(know-10, I-9)
+conj_and(have-2, know-10)
+complm(make-15, that-11)
+nsubj(make-15, scientists-12)
+aux(make-15, do-13)
+ccomp(know-10, make-15)
+dobj(make-15, stuff-16)
+prt(make-15, up-17)
+prep_=(make-15, postulate-21)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (JJ first) (NN step))
+        (PP (IN in)
+          (NP (DT the) (NN process)))))
+    (. .)))
+
+nsubj(step-5, It-1)
+cop(step-5, 's-2)
+det(step-5, the-3)
+amod(step-5, first-4)
+root(ROOT-0, step-5)
+det(process-8, the-7)
+prep_in(step-5, process-8)
+

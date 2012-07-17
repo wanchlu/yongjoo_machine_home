@@ -1,0 +1,72 @@
+(ROOT
+  (FRAG
+    (ADJP (JJ Wrong))
+    (. !)))
+
+root(ROOT-0, Wrong-1)
+
+(ROOT
+  (S
+    (NP (JJ Last) (NN year))
+    (NP
+      (QP (CD 2.5) (CD million))
+      (NNS people))
+    (VP (VBD were)
+      (VP (VBN saved)
+        (PP (IN by)
+          (S
+            (VP (VBG using)
+              (NP
+                (NP (DT a) (NN gun))
+                (PP (IN for)
+                  (NP (NN self) (NN defense)))))))))
+    (. .)))
+
+amod(year-2, Last-1)
+nsubjpass(saved-7, year-2)
+tmod(saved-7, year-2)
+number(million-4, 2.5-3)
+num(people-5, million-4)
+nsubjpass(saved-7, people-5)
+auxpass(saved-7, were-6)
+root(ROOT-0, saved-7)
+agent(saved-7, using-9)
+det(gun-11, a-10)
+dobj(using-9, gun-11)
+nn(defense-14, self-13)
+prep_for(gun-11, defense-14)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB consider)
+        (S
+          (NP (DT that))
+          (`` ``)
+          (NP (RB almost) (DT no) (NNS cases)))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (DT an) (JJ innocent) (NN person))
+            (VP (VBZ has)
+              (VP (VBN defended)
+                (NP (PRP themselves))))))))
+    (. .)))
+
+nsubj(consider-4, I-1)
+aux(consider-4, do-2)
+neg(consider-4, n't-3)
+root(ROOT-0, consider-4)
+dep(cases-9, that-5)
+advmod(cases-9, almost-7)
+det(cases-9, no-8)
+dep(consider-4, cases-9)
+advmod(defended-15, where-10)
+det(person-13, an-11)
+amod(person-13, innocent-12)
+nsubj(defended-15, person-13)
+aux(defended-15, has-14)
+advcl(consider-4, defended-15)
+dobj(defended-15, themselves-16)
+

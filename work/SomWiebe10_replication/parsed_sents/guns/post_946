@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (VP (VB ok)
+      (SBAR (IN so)
+        (S
+          (NP (FW i))
+          (VP (VBP think)
+            (NP
+              (NP (NNS thtas))
+              (SBAR
+                (S
+                  (NP (DT the) (NNS guns) (NN dont))
+                  (VP (VBP kill)
+                    (SBAR
+                      (S
+                        (NP (NNS people))
+                        (VP (VBP kill)
+                          (NP (DT the) (NNS guns))
+                          (ADVP (RB well))
+                          (SBAR
+                            (S
+                              (NP (PRP they))
+                              (ADVP (RB just))
+                              (VP (VBP happen)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB be)
+                                      (PP (IN in)
+                                        (PP (IN between)
+                                          (NP (DT the) (NNS people)))))))))))))))))))))))
+
+root(ROOT-0, ok-1)
+mark(think-4, so-2)
+nsubj(think-4, i-3)
+advcl(ok-1, think-4)
+dobj(think-4, thtas-5)
+det(dont-8, the-6)
+nn(dont-8, guns-7)
+nsubj(kill-9, dont-8)
+rcmod(thtas-5, kill-9)
+nsubj(kill-11, people-10)
+ccomp(kill-9, kill-11)
+det(guns-13, the-12)
+dobj(kill-11, guns-13)
+advmod(kill-11, well-14)
+nsubj(happen-17, they-15)
+xsubj(be-19, they-15)
+advmod(happen-17, just-16)
+dep(kill-11, happen-17)
+aux(be-19, to-18)
+xcomp(happen-17, be-19)
+prep(be-19, in-20)
+pcomp(in-20, between-21)
+det(people-23, the-22)
+prep_between(in-20, people-23)
+

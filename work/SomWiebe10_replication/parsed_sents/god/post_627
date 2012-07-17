@@ -1,0 +1,112 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (NP (NNP Intelligent) (NNP Design))
+        (VP (VBZ is)
+          (ADJP (JJ correct)
+            (SBAR
+              (S
+                (NP (PRP it))
+                (VP (MD would)
+                  (VP (VB be)
+                    (ADJP (JJ wise)
+                      (S
+                        (VP (TO to)
+                          (VP (VB find)
+                            (PRT (RP out))
+                            (SBAR
+                              (WHPP (IN for)
+                                (WHNP (WDT what) (NN purpose)))
+                              (S
+                                (NP (PRP we))
+                                (VP (VBD were)
+                                  (VP (VBN created) ('' '')
+                                    (SBAR
+                                      (WHADVP (WRB how))
+                                      (S
+                                        (VP (MD would))))))))))))))))))))
+    (NP (PRP you))
+    (VP (VBP go)
+      (PP (IN about)
+        (S
+          (VP (VBG doing)
+            (NP (DT that))))))
+    (. ?)))
+
+mark(correct-6, If-2)
+nn(Design-4, Intelligent-3)
+nsubj(correct-6, Design-4)
+cop(correct-6, is-5)
+dep(go-24, correct-6)
+nsubj(wise-10, it-7)
+aux(wise-10, would-8)
+cop(wise-10, be-9)
+dep(correct-6, wise-10)
+aux(find-12, to-11)
+xcomp(wise-10, find-12)
+prt(find-12, out-13)
+dep(created-19, for-14)
+det(purpose-16, what-15)
+pobj(for-14, purpose-16)
+nsubjpass(created-19, we-17)
+auxpass(created-19, were-18)
+ccomp(find-12, created-19)
+advmod(would-22, how-21)
+ccomp(created-19, would-22)
+nsubj(go-24, you-23)
+root(ROOT-0, go-24)
+prepc_about(go-24, doing-26)
+dobj(doing-26, that-27)
+
+(ROOT
+  (SBARQ
+    (PP
+      (ADVP (RB even))
+      (IN with)
+      (NP (DT a) (NN god)))
+    (, ,)
+    (WHNP (WP what))
+    (SQ (VBZ is)
+      (NP
+        (NP
+          (NP (PRP$ your) (JJR higher) (NN purpose))
+          (, ,)
+          (NP (JJ live) (DT a) (NN life)))
+        (PP (IN of)
+          (S
+            (VP (VBG suffering)
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN god))
+                  (VP (VBD had)
+                    (VP (VBN provided)
+                      (NP (PRP you))
+                      (PP (IN while)
+                        (S
+                          (VP (VBG loving)
+                            (NP (DT that) (NN god))))))))))))))
+    (. ?)))
+
+advmod(is-7, even-1)
+det(god-4, a-3)
+prep_with(is-7, god-4)
+attr(is-7, what-6)
+root(ROOT-0, is-7)
+poss(purpose-10, your-8)
+amod(purpose-10, higher-9)
+nsubj(is-7, purpose-10)
+amod(life-14, live-12)
+det(life-14, a-13)
+appos(purpose-10, life-14)
+prepc_of(purpose-10, suffering-16)
+complm(provided-21, that-17)
+det(god-19, the-18)
+nsubj(provided-21, god-19)
+aux(provided-21, had-20)
+ccomp(suffering-16, provided-21)
+dobj(provided-21, you-22)
+prepc_while(provided-21, loving-24)
+det(god-26, that-25)
+dobj(loving-24, god-26)
+

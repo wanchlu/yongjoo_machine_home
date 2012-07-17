@@ -1,0 +1,205 @@
+(ROOT
+  (S
+    (NP (NNP Go))
+    (VP (VBP take)
+      (NP
+        (NP (DT a) (NN course))
+        (PP (IN on)
+          (NP (NN handgun) (NN safety))))
+      (PP (IN before)
+        (S
+          (VP (VBG coming)
+            (PRT (RP up))
+            (PP (IN with)
+              (NP (PDT all) (DT these)))
+            (SBAR (`` ``)
+              (S
+                (NP (RB maybe) (DT this))
+                (VP (MD will)
+                  (VP (VB happen) ('' '')
+                    (NP (NNS arguments))))))))))
+    (. .)))
+
+nsubj(take-2, Go-1)
+root(ROOT-0, take-2)
+det(course-4, a-3)
+dobj(take-2, course-4)
+nn(safety-7, handgun-6)
+prep_on(course-4, safety-7)
+prepc_before(take-2, coming-9)
+prt(coming-9, up-10)
+predet(these-13, all-12)
+prep_with(coming-9, these-13)
+advmod(this-16, maybe-15)
+nsubj(happen-18, this-16)
+aux(happen-18, will-17)
+ccomp(coming-9, happen-18)
+dobj(happen-18, arguments-20)
+
+(ROOT
+  (S
+    (VP (VBG Drinking)
+      (SBAR (IN while)
+        (S
+          (NP (NN carrying))
+          (VP (VBZ is)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP (DT the) (JJS fastest) (NNS ways)))
+              (S
+                (VP (TO to)
+                  (VP (VB lose)
+                    (NP (PRP$ your) (NN right)
+                      (S
+                        (VP (TO to)
+                          (VP (VB carry)))))))))))))
+    (. .)))
+
+root(ROOT-0, Drinking-1)
+mark(one-5, while-2)
+nsubj(one-5, carrying-3)
+cop(one-5, is-4)
+advcl(Drinking-1, one-5)
+det(ways-9, the-7)
+amod(ways-9, fastest-8)
+prep_of(one-5, ways-9)
+aux(lose-11, to-10)
+infmod(one-5, lose-11)
+poss(right-13, your-12)
+dobj(lose-11, right-13)
+aux(carry-15, to-14)
+infmod(right-13, carry-15)
+
+(ROOT
+  (FRAG
+    (NP (NN Fact))
+    (: :)
+    (S
+      (NP (JJ Many) (NNS Criminals)
+        (CC and)
+        (NNS Crazies))
+      (ADVP (RB already))
+      (VP
+        (VP (VBP have)
+          (NP (NNS guns)))
+        (CC and)
+        (VP (VBP do) (RB n't)
+          (VP (VB subscribe)
+            (PP (TO to)
+              (NP (DT this) (NN debate)))))))
+    (. .)))
+
+root(ROOT-0, Fact-1)
+amod(Criminals-4, Many-3)
+nsubj(have-8, Criminals-4)
+nsubj(subscribe-13, Criminals-4)
+conj_and(Criminals-4, Crazies-6)
+nsubj(have-8, Crazies-6)
+advmod(have-8, already-7)
+dep(Fact-1, have-8)
+dobj(have-8, guns-9)
+aux(subscribe-13, do-11)
+neg(subscribe-13, n't-12)
+dep(Fact-1, subscribe-13)
+conj_and(have-8, subscribe-13)
+det(debate-16, this-15)
+prep_to(subscribe-13, debate-16)
+
+(ROOT
+  (FRAG
+    (NP (NN Fact))
+    (: :)
+    (S
+      (NP (NNP Solid) (NN law) (NN abiding) (NNS citizens))
+      (VP (MD wo) (RB n't)
+        (VP (VB have)
+          (NP (NNS guns))
+          (SBAR (IN if)
+            (S
+              (NP (DT the) (NN law))
+              (VP (VBZ does) (RB n't)
+                (VP (VB allow)
+                  (S
+                    (NP (PRP them))
+                    (VP (TO to)
+                      (VP (VB have)
+                        (NP (PRP them))))))))))))
+    (. .)))
+
+root(ROOT-0, Fact-1)
+nn(citizens-6, Solid-3)
+nn(citizens-6, law-4)
+nn(citizens-6, abiding-5)
+nsubj(have-9, citizens-6)
+aux(have-9, wo-7)
+neg(have-9, n't-8)
+dep(Fact-1, have-9)
+dobj(have-9, guns-10)
+mark(allow-16, if-11)
+det(law-13, the-12)
+nsubj(allow-16, law-13)
+aux(allow-16, does-14)
+neg(allow-16, n't-15)
+advcl(have-9, allow-16)
+nsubj(have-19, them-17)
+aux(have-19, to-18)
+xcomp(allow-16, have-19)
+dobj(have-19, them-20)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Fact))
+      (: :)
+      (NP
+        (NP (NNS People))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do) (RB n't)
+              (VP (VB believe)
+                (PP (IN in)
+                  (NP (NNS guns)))))))))
+    (VP (VBP are) (RB not)
+      (VP (VBN required)
+        (S
+          (VP (TO to)
+            (VP (VB carry)
+              (NP (PRP them)))))))
+    (. .)))
+
+nsubjpass(required-12, Fact-1)
+xsubj(carry-14, Fact-1)
+dep(Fact-1, People-3)
+nsubj(believe-7, People-3)
+aux(believe-7, do-5)
+neg(believe-7, n't-6)
+rcmod(People-3, believe-7)
+prep_in(believe-7, guns-9)
+auxpass(required-12, are-10)
+neg(required-12, not-11)
+root(ROOT-0, required-12)
+aux(carry-14, to-13)
+xcomp(required-12, carry-14)
+dobj(carry-14, them-15)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP are)
+      (NP
+        (NP (RB so) (JJ many) (NNS people))
+        (PP (IN against)
+          (NP (NN law) (NN abiding) (NNS citizens)))))
+    (. ?)))
+
+advmod(are-2, Why-1)
+root(ROOT-0, are-2)
+advmod(people-5, so-3)
+amod(people-5, many-4)
+nsubj(are-2, people-5)
+nn(citizens-9, law-7)
+nn(citizens-9, abiding-8)
+prep_against(people-5, citizens-9)
+

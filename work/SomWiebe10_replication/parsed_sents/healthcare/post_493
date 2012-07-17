@@ -1,0 +1,242 @@
+(ROOT
+  (NP (NNP #originalTopic) (NNP =) (NNP So_you_still_want_Nationalized_Health_Care)))
+
+nn(So_you_still_want_Nationalized_Health_Care-3, #originalTopic-1)
+nn(So_you_still_want_Nationalized_Health_Care-3, =-2)
+root(ROOT-0, So_you_still_want_Nationalized_Health_Care-3)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP make)
+        (NP (DT a)
+          (ADJP (RB very) (JJ good))
+          (NN point))))
+    (CC but)
+    (S
+      (NP (DT that))
+      (VP (VBZ is)
+        (NP
+          (NP (NN ot))
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP I))
+              (VP (VBD meant)))))))
+    (. .)))
+
+nsubj(make-2, You-1)
+root(ROOT-0, make-2)
+det(point-6, a-3)
+advmod(good-5, very-4)
+amod(point-6, good-5)
+dobj(make-2, point-6)
+nsubj(ot-10, that-8)
+cop(ot-10, is-9)
+conj_but(make-2, ot-10)
+dobj(meant-13, ot-10)
+rel(meant-13, what-11)
+nsubj(meant-13, I-12)
+rcmod(ot-10, meant-13)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NN scenario))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBP envision))))))
+    (NP (DT that))
+    (VP (MD would)
+      (VP (VB change)
+        (ADVP (RB too))))
+    (. .)))
+
+det(scenario-3, the-2)
+dobj(envision-6, scenario-3)
+prep_in(change-9, scenario-3)
+complm(envision-6, that-4)
+nsubj(envision-6, I-5)
+dep(scenario-3, envision-6)
+nsubj(change-9, that-7)
+aux(change-9, would-8)
+root(ROOT-0, change-9)
+advmod(change-9, too-10)
+
+(ROOT
+  (S
+    (ADVP (RB Right) (RB now))
+    (NP (DT the) (NN employer))
+    (VP (VBZ pays)
+      (NP
+        (NP (DT the) (NN employment) (NN tax))
+        (PRN (-LRB- -LRB-) (RB not)
+          (NP (DT the) (NN employee))
+          (-RRB- -RRB-))))
+    (. .)))
+
+advmod(now-2, Right-1)
+advmod(pays-5, now-2)
+det(employer-4, the-3)
+nsubj(pays-5, employer-4)
+root(ROOT-0, pays-5)
+det(tax-8, the-6)
+nn(tax-8, employment-7)
+dobj(pays-5, tax-8)
+dep(employee-12, not-10)
+det(employee-12, the-11)
+appos(tax-8, employee-12)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP they))
+        (VP (VB fire)
+          (NP (NN someone)))))
+    (, ,)
+    (NP (DT the) (NN money))
+    (VP (VBZ is)
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB pay)
+              (PP (IN for)
+                (NP (DT that) (NN person)))
+              (SBAR (IN until)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP get)
+                    (NP (DT another) (NN job))))))))))
+    (. .)))
+
+mark(fire-3, If-1)
+nsubj(fire-3, they-2)
+advcl(used-9, fire-3)
+dobj(fire-3, someone-4)
+det(money-7, the-6)
+nsubjpass(used-9, money-7)
+xsubj(pay-11, money-7)
+auxpass(used-9, is-8)
+root(ROOT-0, used-9)
+aux(pay-11, to-10)
+xcomp(used-9, pay-11)
+det(person-14, that-13)
+prep_for(pay-11, person-14)
+mark(get-17, until-15)
+nsubj(get-17, they-16)
+advcl(pay-11, get-17)
+det(job-19, another-18)
+dobj(get-17, job-19)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN employer) (POS 's))
+      (NN tax))
+    (VP (VBZ goes)
+      (PRT (RP up))
+      (PP (IN for)
+        (NP
+          (NP (DT some) (NN period))
+          (PP (IN of)
+            (NP (NN time)))))
+      (PP (IN with)
+        (NP
+          (NP (DT each) (NN person))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VB fire)))))))
+    (. .)))
+
+det(employer-2, The-1)
+poss(tax-4, employer-2)
+nsubj(goes-5, tax-4)
+root(ROOT-0, goes-5)
+prt(goes-5, up-6)
+det(period-9, some-8)
+prep_for(goes-5, period-9)
+prep_of(period-9, time-11)
+det(person-14, each-13)
+prep_with(goes-5, person-14)
+dobj(fire-16, person-14)
+nsubj(fire-16, they-15)
+rcmod(person-14, fire-16)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NN money))
+      (SBAR
+        (S
+          (NP (DT the) (VBN laid) (JJ off) (NN employee))
+          (VP (VBZ gets)))))
+    (VP (VBZ is)
+      (NP (JJ free) (NN money)))
+    (. .)))
+
+det(money-2, Any-1)
+dobj(gets-7, money-2)
+nsubj(money-10, money-2)
+det(employee-6, the-3)
+amod(employee-6, laid-4)
+amod(employee-6, off-5)
+nsubj(gets-7, employee-6)
+rcmod(money-2, gets-7)
+cop(money-10, is-8)
+amod(money-10, free-9)
+root(ROOT-0, money-10)
+
+(ROOT
+  (S
+    (PP (IN Under)
+      (NP
+        (NP (DT the) (NN system))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP envision))))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN amount))
+      (PP (IN of)
+        (NP
+          (NP (NN tax))
+          (VP (VBN paid)
+            (PP (IN by)
+              (NP (DT the) (NN employer)))))))
+    (VP (VBZ is)
+      (VP (VBN decreased)
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBZ gets)
+              (ADJP (VBN replenished)
+                (PP (IN by)
+                  (NP (DT the) (NN employee)))))))))
+    (. .)))
+
+det(system-3, the-2)
+dobj(envision-5, system-3)
+prep_under(decreased-16, system-3)
+nsubj(envision-5, I-4)
+rcmod(system-3, envision-5)
+det(amount-8, the-7)
+nsubjpass(decreased-16, amount-8)
+prep_of(amount-8, tax-10)
+partmod(tax-10, paid-11)
+det(employer-14, the-13)
+agent(paid-11, employer-14)
+auxpass(decreased-16, is-15)
+root(ROOT-0, decreased-16)
+mark(replenished-20, because-17)
+nsubjpass(replenished-20, it-18)
+auxpass(replenished-20, gets-19)
+advcl(decreased-16, replenished-20)
+det(employee-23, the-22)
+agent(replenished-20, employee-23)
+

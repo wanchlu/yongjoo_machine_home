@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP
+      (VP (VB ensure)
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ your) (NNS neighbors))
+            (VP (MD will) (RB not)
+              (VP (VB rape)
+                (NP (NN mug)))))))
+      (CC or)
+      (VP (VB kill)
+        (NP (PRP you))))
+    (. .)))
+
+nsubj(ensure-2, Guns-1)
+nsubj(kill-11, Guns-1)
+root(ROOT-0, ensure-2)
+complm(rape-8, that-3)
+poss(neighbors-5, your-4)
+nsubj(rape-8, neighbors-5)
+aux(rape-8, will-6)
+neg(rape-8, not-7)
+ccomp(ensure-2, rape-8)
+dobj(rape-8, mug-9)
+conj_or(ensure-2, kill-11)
+dobj(kill-11, you-12)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP \/) (NNP Cops))
+      (VP
+        (VP (VBP are)
+          (ADJP (JJ few)
+            (CC and)
+            (RB far))
+          (PP (IN between)))
+        (CC and)
+        (VP (VBP do) (RB not)
+          (VP (VB prevent)
+            (NP (NNS crimes))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ armed) (NN force))
+        (PP (IN of)
+          (NP (JJ average) (NNS citizens)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBP do)
+              (NP (DT that)))))))
+    (. .)))
+
+nn(Cops-2, \/-1)
+nsubj(few-4, Cops-2)
+nsubj(prevent-11, Cops-2)
+cop(few-4, are-3)
+ccomp(force-18, few-4)
+advmod(few-4, far-6)
+conj_and(few-4, far-6)
+ccomp(force-18, far-6)
+prep(few-4, between-7)
+aux(prevent-11, do-9)
+neg(prevent-11, not-10)
+conj_and(few-4, prevent-11)
+ccomp(force-18, prevent-11)
+dobj(prevent-11, crimes-12)
+nsubj(force-18, it-14)
+cop(force-18, is-15)
+det(force-18, the-16)
+amod(force-18, armed-17)
+root(ROOT-0, force-18)
+nsubj(do-23, force-18)
+amod(citizens-21, average-20)
+prep_of(force-18, citizens-21)
+rcmod(force-18, do-23)
+dobj(do-23, that-24)
+

@@ -1,0 +1,267 @@
+(ROOT
+  (S
+    (NP (JJ Expensive) (JJ public) (NN insurance) (NN option))
+    (VP (MD would)
+      (VP (VB worsen)
+        (NP (JJ national) (NN debt) (NNP Karl) (NNP Rove))))
+    (. .)))
+
+amod(option-4, Expensive-1)
+amod(option-4, public-2)
+nn(option-4, insurance-3)
+nsubj(worsen-6, option-4)
+aux(worsen-6, would-5)
+root(ROOT-0, worsen-6)
+amod(Rove-10, national-7)
+nn(Rove-10, debt-8)
+nn(Rove-10, Karl-9)
+dobj(worsen-6, Rove-10)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP How))
+    (PP (TO to)
+      (NP
+        (NP (NNP Stop) (NNP Socialized) (NNP Health) (NNP Care) ('' ''))
+        (NP (NNP Wall) (NNP Street) (NNP Journal))))
+    (. .)))
+
+root(ROOT-0, How-2)
+dep(How-2, to-3)
+nn(Care-7, Stop-4)
+nn(Care-7, Socialized-5)
+nn(Care-7, Health-6)
+pobj(to-3, Care-7)
+nn(Journal-11, Wall-9)
+nn(Journal-11, Street-10)
+dep(Care-7, Journal-11)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 11) (, ,) (CD 2009))
+    (: :)
+    (S (`` ``)
+      (NP (DT the) (JJ public) (NN option))
+      (VP (VBZ is)
+        (ADJP (RB far) (RB too) (JJ expensive))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 11-2)
+num(June-1, 2009-4)
+det(option-9, the-7)
+amod(option-9, public-8)
+nsubj(expensive-13, option-9)
+cop(expensive-13, is-10)
+advmod(expensive-13, far-11)
+advmod(expensive-13, too-12)
+dep(June-1, expensive-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN cost))
+      (PP (IN of)
+        (NP (NNP Medicare)
+          (NP
+            (NP (DT the) (JJ purest) (NN form))
+            (PP (IN of)
+              (NP
+                (NP (DT a) (JJ government-run) (`` ``) (JJ public) (NN choice) ('' ''))
+                (PP (IN for)
+                  (NP (NNS seniors)))))))))
+    (VP (MD will)
+      (VP (VB start)
+        (S
+          (VP (VBG exceeding)
+            (NP
+              (NP (PRP$ its) (NN payroll-tax) (`` ``) (NN trust) (NN fund) ('' ''))
+              (PP (IN in)
+                (NP (CD 2017))))))))
+    (. .)))
+
+det(cost-2, The-1)
+nsubj(start-18, cost-2)
+prep_of(cost-2, Medicare-4)
+det(form-7, the-5)
+amod(form-7, purest-6)
+dep(Medicare-4, form-7)
+det(choice-13, a-9)
+amod(choice-13, government-run-10)
+amod(choice-13, public-12)
+prep_of(form-7, choice-13)
+prep_for(choice-13, seniors-16)
+aux(start-18, will-17)
+root(ROOT-0, start-18)
+xcomp(start-18, exceeding-19)
+poss(fund-24, its-20)
+nn(fund-24, payroll-tax-21)
+nn(fund-24, trust-23)
+dobj(exceeding-19, fund-24)
+prep_in(fund-24, 2017-27)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP Obama) (NN administration))
+    (VP (VBZ estimates)
+      (SBAR
+        (S
+          (NP (PRP$ its) (NN health) (NNS reforms))
+          (VP (MD will)
+            (VP (VB cost)
+              (NP
+                (NP
+                  (QP (RB as) (JJ much) (IN as) ($ $) (CD 1.5) (CD trillion)))
+                (PP (IN over)
+                  (NP (DT the) (JJ next) (CD 10) (NNS years)))))))))
+    (. .)))
+
+det(administration-3, The-1)
+nn(administration-3, Obama-2)
+nsubj(estimates-4, administration-3)
+root(ROOT-0, estimates-4)
+poss(reforms-7, its-5)
+nn(reforms-7, health-6)
+nsubj(cost-9, reforms-7)
+aux(cost-9, will-8)
+ccomp(estimates-4, cost-9)
+quantmod($-13, as-10)
+quantmod($-13, much-11)
+quantmod($-13, as-12)
+dobj(cost-9, $-13)
+number($-13, 1.5-14)
+number($-13, trillion-15)
+det(years-20, the-17)
+amod(years-20, next-18)
+num(years-20, 10-19)
+prep_over($-13, years-20)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN coincidence))
+        (SBAR
+          (S
+            (NP (DT the) (NNP Obama) (NN budget))
+            (ADVP (RB nearly))
+            (VP (VBZ triples)
+              (NP
+                (NP (DT the) (JJ national) (NN debt))
+                (PP (IN over)
+                  (NP (DT that) (JJ same) (NN period)))))))))
+    (. .)))
+
+nsubj(coincidence-4, It-1)
+cop(coincidence-4, is-2)
+det(coincidence-4, no-3)
+root(ROOT-0, coincidence-4)
+det(budget-7, the-5)
+nn(budget-7, Obama-6)
+nsubj(triples-9, budget-7)
+advmod(triples-9, nearly-8)
+rcmod(coincidence-4, triples-9)
+det(debt-12, the-10)
+amod(debt-12, national-11)
+dobj(triples-9, debt-12)
+det(period-16, that-14)
+amod(period-16, same-15)
+prep_over(debt-12, period-16)
+
+(ROOT
+  (S
+    (NP (NNPS -RRB-) (NNP Medicare)
+      (CC and)
+      (NNP Medicaid))
+    (VP (VBD cost)
+      (ADVP
+        (ADVP (RB much) (RBR more))
+        (SBAR (IN than)
+          (S
+            (VP (VBD estimated)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP they))
+                  (VP (VBD were)
+                    (VP (VBN adopted))))))))))
+    (. .)))
+
+nsubj(cost-5, Medicare-2)
+conj_and(Medicare-2, Medicaid-4)
+nsubj(cost-5, Medicaid-4)
+root(ROOT-0, cost-5)
+advmod(more-7, much-6)
+advmod(cost-5, more-7)
+mark(estimated-9, than-8)
+dep(more-7, estimated-9)
+advmod(adopted-13, when-10)
+nsubjpass(adopted-13, they-11)
+auxpass(adopted-13, were-12)
+advcl(estimated-9, adopted-13)
+
+(ROOT
+  (S
+    (NP (CD One) (NN reason))
+    (VP (VBZ is)
+      (SBAR
+        (S
+          (NP (EX there))
+          (VP (VBZ 's)
+            (NP
+              (NP (DT no) (NN competition))
+              (PP (IN for)
+                (NP (DT these) (JJ government-run) (NN insurance) (NNS programs))))))))
+    (. .)))
+
+num(reason-2, One-1)
+nsubj(is-3, reason-2)
+root(ROOT-0, is-3)
+expl('s-5, there-4)
+ccomp(is-3, 's-5)
+det(competition-7, no-6)
+nsubj('s-5, competition-7)
+det(programs-12, these-9)
+amod(programs-12, government-run-10)
+nn(programs-12, insurance-11)
+prep_for(competition-7, programs-12)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ same) (NN way)))
+    (, ,)
+    (NP (NNPS Americans))
+    (VP (MD can)
+      (VP (VB expect)
+        (NP (DT a) (JJ public) (NN option))
+        (S
+          (VP (TO to)
+            (VP (VB cost)
+              (ADVP (RB far) (RBR more))
+              (PP (IN than)
+                (NP
+                  (NP (DT the) (NNP Obama) (NN administration) (POS 's))
+                  (JJ rosy) (NNS estimates))))))))
+    (. .)))
+
+det(way-4, the-2)
+amod(way-4, same-3)
+prep_in(expect-8, way-4)
+nsubj(expect-8, Americans-6)
+aux(expect-8, can-7)
+root(ROOT-0, expect-8)
+det(option-11, a-9)
+amod(option-11, public-10)
+dobj(expect-8, option-11)
+aux(cost-13, to-12)
+xcomp(expect-8, cost-13)
+advmod(more-15, far-14)
+advmod(cost-13, more-15)
+det(administration-19, the-17)
+nn(administration-19, Obama-18)
+poss(estimates-22, administration-19)
+amod(estimates-22, rosy-21)
+prep_than(cost-13, estimates-22)
+

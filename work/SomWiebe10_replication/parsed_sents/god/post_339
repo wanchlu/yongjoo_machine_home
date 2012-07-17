@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN seen)
+        (NP
+          (ADJP
+            (NP (DT a) (RB lot))
+            (JJR more))
+          (JJ negative) (NNS reactions))
+        (PP (IN than)
+          (ADJP (JJ positive)))))
+    (. .)))
+
+nsubj(seen-3, I-1)
+aux(seen-3, have-2)
+root(ROOT-0, seen-3)
+det(lot-5, a-4)
+npadvmod(more-6, lot-5)
+amod(reactions-8, more-6)
+amod(reactions-8, negative-7)
+dobj(seen-3, reactions-8)
+prep_than(seen-3, positive-10)
+
+(ROOT
+  (S
+    (VP (VB Take)
+      (PP (IN for)
+        (NP (NN example) (NN stem) (NN cell) (NN research))))
+    (. .)))
+
+root(ROOT-0, Take-1)
+nn(research-6, example-3)
+nn(research-6, stem-4)
+nn(research-6, cell-5)
+prep_for(Take-1, research-6)
+

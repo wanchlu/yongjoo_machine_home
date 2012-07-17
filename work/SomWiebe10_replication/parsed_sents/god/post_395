@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP do) (RB n't)
+            (VP (VB believe)
+              (PP (IN in)
+                (NP (NNP GOD))))))))
+    (VP (VBP have)
+      (NP
+        (NP (DT no) (NN structure))
+        (PP (IN in)
+          (NP (PRP$ their) (NNS lives)))))
+    (. .)))
+
+nsubj(believe-5, People-1)
+nsubj(have-8, People-1)
+aux(believe-5, do-3)
+neg(believe-5, n't-4)
+rcmod(People-1, believe-5)
+prep_in(believe-5, GOD-7)
+root(ROOT-0, have-8)
+det(structure-10, no-9)
+dobj(have-8, structure-10)
+poss(lives-13, their-12)
+prep_in(structure-10, lives-13)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NNS people))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ is)
+              (ADVP (RB always))
+              (VP
+                (VP (VBG complianing))
+                (CC and)
+                (VP (VBG being)
+                  (ADJP (JJ miserable)))))))))
+    (. .)))
+
+nsubj(people-4, That-1)
+cop(people-4, is-2)
+det(people-4, the-3)
+root(ROOT-0, people-4)
+nsubj(complianing-8, people-4)
+nsubj(miserable-11, people-4)
+aux(complianing-8, is-6)
+advmod(complianing-8, always-7)
+rcmod(people-4, complianing-8)
+cop(miserable-11, being-10)
+rcmod(people-4, miserable-11)
+conj_and(complianing-8, miserable-11)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (ADVP (NN nothing))
+      (S
+        (VP (TO to)
+          (VP (VB live)
+            (PP (IN for))))))
+    (. .)))
+
+nsubj(have-2, They-1)
+xsubj(live-5, They-1)
+root(ROOT-0, have-2)
+advmod(have-2, nothing-3)
+aux(live-5, to-4)
+xcomp(have-2, live-5)
+prep(live-5, for-6)
+
+(ROOT
+  (S
+    (ADVP (RB Just))
+    (VP (VB remember)
+      (SBAR
+        (S
+          (NP (DT the) (NN world))
+          (VP (VBZ is)
+            (ADJP (JJ temporily))))))
+    (. .)))
+
+advmod(remember-2, Just-1)
+root(ROOT-0, remember-2)
+det(world-4, the-3)
+nsubj(temporily-6, world-4)
+cop(temporily-6, is-5)
+ccomp(remember-2, temporily-6)
+

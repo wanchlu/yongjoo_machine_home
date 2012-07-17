@@ -1,0 +1,50 @@
+(ROOT
+  (S (`` ``)
+    (ADVP (RB never))
+    (VP (VB put)
+      (NP
+        (NP (NN anyone))
+        (PP (TO to)
+          (NP (NN death))))
+      (PP (IN for)
+        (S (RB not)
+          (VP (VBG believing)
+            (PRT (RP in))
+            (NP (PRP him) ('' ''))
+            (ADVP (RB HA))))))
+    (. !)))
+
+neg(put-3, never-2)
+root(ROOT-0, put-3)
+dobj(put-3, anyone-4)
+prep_to(anyone-4, death-6)
+neg(believing-9, not-8)
+prepc_for(put-3, believing-9)
+prt(believing-9, in-10)
+dobj(believing-9, him-11)
+advmod(believing-9, HA-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN anyone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ does) (RB n't)
+            (VP (VB believe)
+              (PP (IN in)
+                (NP (PRP him))))))))
+    (VP (VBZ gets)
+      (NP (JJ eternal) (NN damnation)))))
+
+nsubj(believe-5, anyone-1)
+nsubj(gets-8, anyone-1)
+aux(believe-5, does-3)
+neg(believe-5, n't-4)
+rcmod(anyone-1, believe-5)
+prep_in(believe-5, him-7)
+root(ROOT-0, gets-8)
+amod(damnation-10, eternal-9)
+dobj(gets-8, damnation-10)
+

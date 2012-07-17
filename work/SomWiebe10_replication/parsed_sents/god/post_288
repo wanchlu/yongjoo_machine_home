@@ -1,0 +1,149 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP have)
+        (VP (VBN made)
+          (NP (DT an) (JJ elementary) (NN statement))
+          (PP (IN in)))))
+    (, ,) ('' '')
+    (NP (NNP Science))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN proven))))
+    (. .)))
+
+nsubj(made-3, You-1)
+aux(made-3, have-2)
+ccomp(proven-13, made-3)
+det(statement-6, an-4)
+amod(statement-6, elementary-5)
+dobj(made-3, statement-6)
+prep(made-3, in-7)
+nsubjpass(proven-13, Science-10)
+aux(proven-13, has-11)
+auxpass(proven-13, been-12)
+root(ROOT-0, proven-13)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (DT That) (NN statement))
+      (VP (VBZ is)
+        (ADJP (JJ similar)
+          (PP (TO to)
+            (NP (DT the) (NN following))))))
+    (, ,) ('' '')
+    (NP (DT The) (NNP Sun))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN proven))))
+    (. .)))
+
+det(statement-3, That-2)
+nsubj(similar-5, statement-3)
+cop(similar-5, is-4)
+ccomp(proven-15, similar-5)
+det(following-8, the-7)
+prep_to(similar-5, following-8)
+det(Sun-12, The-11)
+nsubjpass(proven-15, Sun-12)
+aux(proven-15, has-13)
+auxpass(proven-15, been-14)
+root(ROOT-0, proven-15)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NN question))
+    (VP (VBZ is) (, ,)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (RB about) (DT the) (NN sun))
+          (VP (VBZ is)
+            (VP (VBN proven))))))
+    (. ?)))
+
+det(question-3, The-2)
+nsubj(is-4, question-3)
+root(ROOT-0, is-4)
+dobj(proven-11, what-6)
+advmod(sun-9, about-7)
+det(sun-9, the-8)
+nsubjpass(proven-11, sun-9)
+auxpass(proven-11, is-10)
+ccomp(is-4, proven-11)
+
+(ROOT
+  (FRAG
+    (PP (IN upon)
+      (NP (PRP$ your) (NN statement)))
+    (: i)
+    (S
+      (VP (VB ask)
+        (NP (DT the) (JJ following) (NN :1) (-RRB- -RRB-) (NN Which) (NN science))))
+    (. ?)))
+
+dep(ask-5, upon-1)
+poss(statement-3, your-2)
+pobj(upon-1, statement-3)
+punct(ask-5, i-4)
+root(ROOT-0, ask-5)
+det(science-11, the-6)
+amod(science-11, following-7)
+nn(science-11, :1-8)
+nn(science-11, Which-10)
+dobj(ask-5, science-11)
+
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBP are)
+      (ADJP (JJ many))
+      (PRN
+        (NP
+          (NP (NNS types))
+          (PP (IN of)
+            (NP (NN study) (CD .2))))
+        (-RRB- -RRB-))
+      (SBAR
+        (WHNP (WDT Which))
+        (S
+          (VP (VBZ has)
+            (VP (VBN been)
+              (VP (VBN proven)))))))
+    (. ?)))
+
+expl(are-2, there-1)
+root(ROOT-0, are-2)
+acomp(are-2, many-3)
+dep(are-2, types-4)
+prep_of(types-4, study-6)
+num(study-6, .2-7)
+nsubjpass(proven-12, Which-9)
+aux(proven-12, has-10)
+auxpass(proven-12, been-11)
+ccomp(are-2, proven-12)
+
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (JJ many) (VBG differing) (NNS ideas))
+        (PP (IN on)
+          (NP
+            (NP (DT a) (NN range))
+            (PP (IN of)
+              (NP (NNS topics)))))))
+    (. .)))
+
+expl(are-2, there-1)
+root(ROOT-0, are-2)
+amod(ideas-5, many-3)
+amod(ideas-5, differing-4)
+nsubj(are-2, ideas-5)
+det(range-8, a-7)
+prep_on(ideas-5, range-8)
+prep_of(range-8, topics-10)
+

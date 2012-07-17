@@ -1,0 +1,156 @@
+(ROOT
+  (S
+    (NP (RB yes) (PRP it))
+    (VP (VBZ is))
+    (. .)))
+
+advmod(it-2, yes-1)
+nsubj(is-3, it-2)
+root(ROOT-0, is-3)
+
+(ROOT
+  (SBARQ
+    (SBAR (RB even) (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBD came)
+                (PP (IN from)
+                  (NP (JJ different) (NNS origins)))))))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (MD should)
+      (NP (PRP we))
+      (VP (VBP tempt)
+        (NP (PRP it))))
+    (. ?)))
+
+advmod(think-4, even-1)
+dep(think-4, if-2)
+nsubj(think-4, you-3)
+dep(tempt-14, think-4)
+nsubj(came-6, we-5)
+ccomp(think-4, came-6)
+amod(origins-9, different-8)
+prep_from(came-6, origins-9)
+advmod(tempt-14, why-11)
+aux(tempt-14, should-12)
+nsubj(tempt-14, we-13)
+root(ROOT-0, tempt-14)
+dobj(tempt-14, it-15)
+
+(ROOT
+  (S
+    (FRAG (CC and)
+      (PP (IN besides)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP get)
+      (S
+        (VP (TO to)
+          (VP (VB go)
+            (PP (TO to)
+              (NP (NN heaven)))
+            (SBAR (IN if)
+              (S
+                (NP (NN god))
+                (VP (VBZ is)
+                  (ADJP (JJ real)))))))))
+    (. .)))
+
+dep(get-5, and-1)
+dep(and-1, besides-2)
+nsubj(get-5, you-4)
+xsubj(go-7, you-4)
+root(ROOT-0, get-5)
+aux(go-7, to-6)
+xcomp(get-5, go-7)
+prep_to(go-7, heaven-9)
+mark(real-13, if-10)
+nsubj(real-13, god-11)
+cop(real-13, is-12)
+advcl(go-7, real-13)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (NNP provided))
+    (NP (PRP you))
+    (VP (VBD were)
+      (VP (VB faithful) (-RRB- -RRB-)
+        (NP
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBP do)
+                (S
+                  (NP (PRP you))
+                  (VP (VB get)
+                    (PP (IN with)
+                      (NP (NN atheism))))))))
+          (CC or)
+          (NP (NN evolution)))))
+    (. ?)))
+
+nsubj(faithful-5, provided-2)
+nsubj(faithful-5, you-3)
+aux(faithful-5, were-4)
+root(ROOT-0, faithful-5)
+nsubj(do-8, what-7)
+dobj(faithful-5, do-8)
+nsubj(get-10, you-9)
+ccomp(do-8, get-10)
+prep_with(get-10, atheism-12)
+dobj(faithful-5, evolution-14)
+conj_or(do-8, evolution-14)
+
+(ROOT
+  (S
+    (NP (PRP you))
+    (VP (VBZ rot)
+      (PP (IN in)
+        (NP (DT the) (NN ground))))
+    (. .)))
+
+nsubj(rot-2, you-1)
+root(ROOT-0, rot-2)
+det(ground-5, the-4)
+prep_in(rot-2, ground-5)
+
+(ROOT
+  (NP (NN fun) (. .)))
+
+root(ROOT-0, fun-1)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNS whats))
+      (NP (DT the) (NN point)))
+    (PP (IN in)
+      (S
+        (VP (VBG living)
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBP wont)
+                (VP (VB get)
+                  (NP (DT any) (NNS perks))
+                  (PP (IN after))))))))
+      (. ?))))
+
+root(ROOT-0, whats-1)
+det(point-3, the-2)
+dep(whats-1, point-3)
+dep(whats-1, in-4)
+pcomp(in-4, living-5)
+mark(wont-8, if-6)
+nsubj(wont-8, you-7)
+advcl(living-5, wont-8)
+xcomp(wont-8, get-9)
+det(perks-11, any-10)
+dobj(get-9, perks-11)
+prep(get-9, after-12)
+

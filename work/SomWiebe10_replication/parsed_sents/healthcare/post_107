@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ protects)
+      (NP (JJ healthy) (NNS citizens))
+      (PP (IN from)
+        (NP (JJ many) (NN health) (NNS risks))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(protects-4, care-3)
+root(ROOT-0, protects-4)
+amod(citizens-6, healthy-5)
+dobj(protects-4, citizens-6)
+amod(risks-10, many-8)
+nn(risks-10, health-9)
+prep_from(protects-4, risks-10)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS citizens))
+        (VP (VBP have)
+          (NP (DT a) (NN right)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ healthy)))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADJP (JJ due)
+        (NP
+          (NP (DT some) (NNS protections))
+          (PP (IN from)
+            (NP (DT the) (NN sickly))))))
+    (. .)))
+
+mark(have-3, If-1)
+nsubj(have-3, citizens-2)
+advcl(due-12, have-3)
+det(right-5, a-4)
+dobj(have-3, right-5)
+aux(healthy-8, to-6)
+cop(healthy-8, be-7)
+infmod(right-5, healthy-8)
+nsubj(due-12, they-10)
+cop(due-12, are-11)
+root(ROOT-0, due-12)
+det(protections-14, some-13)
+dep(due-12, protections-14)
+det(sickly-17, the-16)
+prep_from(protections-14, sickly-17)
+
+(ROOT
+  (S
+    (PP (IN By)
+      (S
+        (VP (VBG providing)
+          (PP (IN for)
+            (NP (DT the) (NN sickly))))))
+    (, ,)
+    (NP (NN government))
+    (VP (VBZ is)
+      (VP (VBG helping)
+        (S
+          (VP (VB protect)
+            (NP
+              (NP (DT the) (NNS rights))
+              (PP (IN of)
+                (NP (DT the) (JJ healthy))))))))
+    (. .)))
+
+prepc_by(helping-9, providing-2)
+det(sickly-5, the-4)
+prep_for(providing-2, sickly-5)
+nsubj(helping-9, government-7)
+aux(helping-9, is-8)
+root(ROOT-0, helping-9)
+ccomp(helping-9, protect-10)
+det(rights-12, the-11)
+dobj(protect-10, rights-12)
+det(healthy-15, the-14)
+prep_of(rights-12, healthy-15)
+

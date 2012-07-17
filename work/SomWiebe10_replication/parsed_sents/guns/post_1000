@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (SBAR (IN Though)
+      (S
+        (NP (PRP I))
+        (VP (VBP agree)
+          (PP (IN with)
+            (NP
+              (NP (PRP$ your) (JJ basic) (NN premise))
+              (SBAR
+                (S
+                  (NP (DT any) (NN yahoo))
+                  (VP (MD can) (RB not)
+                    (VP (VB posses)
+                      (NP (DT a) (NN gun))
+                      (ADVP (RB legally)))))))))))
+    (NP (EX there))
+    (VP (VBP are)
+      (NP (NNS laws)))
+    (. .)))
+
+mark(agree-3, Though-1)
+nsubj(agree-3, I-2)
+advcl(are-17, agree-3)
+poss(premise-7, your-5)
+amod(premise-7, basic-6)
+prep_with(agree-3, premise-7)
+det(yahoo-9, any-8)
+nsubj(posses-12, yahoo-9)
+aux(posses-12, can-10)
+neg(posses-12, not-11)
+rcmod(premise-7, posses-12)
+det(gun-14, a-13)
+dobj(posses-12, gun-14)
+advmod(posses-12, legally-15)
+expl(are-17, there-16)
+root(ROOT-0, are-17)
+nsubj(are-17, laws-18)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NN reply))
+        (PP (TO to)
+          (NP (NNP Mr.) (NNP Flagg)))))
+    (NP
+      (NP (DT the) (NN majority))
+      (PP (IN of)
+        (NP (NN gun) (NNS deaths))))
+    (VP (VBP are)
+      (VP (VBN caused)
+        (PP (IN by)
+          (NP
+            (NP (NNS guns))
+            (VP (VBN obtained)
+              (ADVP (RB illegally)))))))
+    (. .)))
+
+prep_in(caused-12, reply-2)
+nn(Flagg-5, Mr.-4)
+prep_to(reply-2, Flagg-5)
+det(majority-7, the-6)
+nsubjpass(caused-12, majority-7)
+nn(deaths-10, gun-9)
+prep_of(majority-7, deaths-10)
+auxpass(caused-12, are-11)
+root(ROOT-0, caused-12)
+agent(caused-12, guns-14)
+partmod(guns-14, obtained-15)
+advmod(obtained-15, illegally-16)
+

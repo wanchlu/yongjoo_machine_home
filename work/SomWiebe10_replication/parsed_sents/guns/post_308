@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ possible))
+      (PP (VBG depending)
+        (NP
+          (NP (NN o))
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP you))
+              (VP (VBP use)
+                (NP
+                  (NP (DT the) (NN gun))
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (VP (MD may)
+                        (VP (VB get)
+                          (S
+                            (S
+                              (NP (PRP you))
+                              (VP (VBD killed)
+                                (SBAR (IN because)
+                                  (S
+                                    (NP (PRP it))
+                                    (VP (MD might)
+                                      (VP (VB make)
+                                        (SBAR
+                                          (S
+                                            (NP (PRP you))
+                                            (VP (VBP look)
+                                              (S
+                                                (VP (VBG threatning)
+                                                  (PP (TO to)
+                                                    (NP (NN someone) (RB else))))))))))))))
+                            (CC and)
+                            (S
+                              (ADVP (RB then))
+                              (NP (PRP they))
+                              (VP (MD could)
+                                (VP (VB shoot)
+                                  (NP (PRP you))
+                                  (SBAR (IN whereas)
+                                    (S
+                                      (NP (PRP it))
+                                      (VP (MD might)
+                                        (VP (VB be)
+                                          (NP (DT a) (JJ good) (NN way)
+                                            (S
+                                              (VP (TO to)
+                                                (VP (VB protect)
+                                                  (NP (PRP ourselves)))))))))))))))))))))))))))
+
+nsubj(possible-3, it-1)
+cop(possible-3, is-2)
+root(ROOT-0, possible-3)
+prep_depending(possible-3, o-5)
+advmod(use-8, how-6)
+nsubj(use-8, you-7)
+dep(o-5, use-8)
+det(gun-10, the-9)
+dobj(use-8, gun-10)
+dobj(get-13, gun-10)
+nsubj(get-13, it-11)
+aux(get-13, may-12)
+rcmod(gun-10, get-13)
+nsubj(killed-15, you-14)
+dep(get-13, killed-15)
+mark(make-19, because-16)
+nsubj(make-19, it-17)
+aux(make-19, might-18)
+advcl(killed-15, make-19)
+nsubj(look-21, you-20)
+ccomp(make-19, look-21)
+xcomp(look-21, threatning-22)
+prep_to(threatning-22, someone-24)
+advmod(someone-24, else-25)
+advmod(shoot-30, then-27)
+nsubj(shoot-30, they-28)
+aux(shoot-30, could-29)
+dep(get-13, shoot-30)
+conj_and(killed-15, shoot-30)
+dobj(shoot-30, you-31)
+mark(way-38, whereas-32)
+nsubj(way-38, it-33)
+aux(way-38, might-34)
+cop(way-38, be-35)
+det(way-38, a-36)
+amod(way-38, good-37)
+advcl(shoot-30, way-38)
+aux(protect-40, to-39)
+infmod(way-38, protect-40)
+dobj(protect-40, ourselves-41)
+

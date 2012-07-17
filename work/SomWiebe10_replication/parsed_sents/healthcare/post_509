@@ -1,0 +1,76 @@
+(ROOT
+  (NP (NNP #originalTopic) (NNP =) (NNP So_you_still_want_Nationalized_Health_Care)))
+
+nn(So_you_still_want_Nationalized_Health_Care-3, #originalTopic-1)
+nn(So_you_still_want_Nationalized_Health_Care-3, =-2)
+root(ROOT-0, So_you_still_want_Nationalized_Health_Care-3)
+
+(ROOT
+  (S
+    (NP (DT The) (NN problem))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (CD 72) (NN %))
+            (PP (IN of)
+              (NP (DT the) (NN country))))
+          (ADVP (RB actually))
+          (VP (VBZ WANTS)
+            (NP (DT a) (JJ nationalised) (NN healthcare) (NN system))))))
+    (. .)))
+
+det(problem-2, The-1)
+nsubj(is-3, problem-2)
+root(ROOT-0, is-3)
+complm(WANTS-11, that-4)
+num(%-6, 72-5)
+nsubj(WANTS-11, %-6)
+det(country-9, the-8)
+prep_of(%-6, country-9)
+advmod(WANTS-11, actually-10)
+ccomp(is-3, WANTS-11)
+det(system-15, a-12)
+amod(system-15, nationalised-13)
+nn(system-15, healthcare-14)
+dobj(WANTS-11, system-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (-LRB- -LRB-) (NN source) (-RRB- -RRB-))
+      (SBAR
+        (WHNP (WP What))
+        (S
+          (NP (DT the) (NN government))
+          (VP (VBZ is)
+            (ADVP (RB actually))
+            (VP (VBG hearing))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ vast) (NN majority))
+        (PP (IN of)
+          (NP (DT the) (NN country)
+            (S
+              (VP (VBG saying) ('' '')
+                (NP (NNP Hell) (NNP Yeah))))))))
+    (. .)))
+
+dobj(hearing-9, source-2)
+nsubj(majority-13, source-2)
+rel(hearing-9, What-4)
+det(government-6, the-5)
+nsubj(hearing-9, government-6)
+aux(hearing-9, is-7)
+advmod(hearing-9, actually-8)
+rcmod(source-2, hearing-9)
+cop(majority-13, is-10)
+det(majority-13, the-11)
+amod(majority-13, vast-12)
+root(ROOT-0, majority-13)
+det(country-16, the-15)
+prep_of(majority-13, country-16)
+dep(country-16, saying-17)
+nn(Yeah-20, Hell-19)
+dobj(saying-17, Yeah-20)
+

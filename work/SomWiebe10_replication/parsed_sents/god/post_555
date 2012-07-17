@@ -1,0 +1,28 @@
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ dose)
+      (SBAR (RB not) (IN because) (IN if)
+        (S
+          (NP (PRP he))
+          (VP (VBD did)
+            (SBAR
+              (S
+                (NP (NN everything))
+                (VP (MD would)
+                  (VP (VB be)
+                    (ADJP (JJ awsome))))))))))
+    (. .)))
+
+nsubj(dose-2, He-1)
+root(ROOT-0, dose-2)
+dep(did-7, not-3)
+dep(did-7, because-4)
+dep(did-7, if-5)
+nsubj(did-7, he-6)
+ccomp(dose-2, did-7)
+nsubj(awsome-11, everything-8)
+aux(awsome-11, would-9)
+cop(awsome-11, be-10)
+ccomp(did-7, awsome-11)
+

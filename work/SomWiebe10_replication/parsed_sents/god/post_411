@@ -1,0 +1,74 @@
+(ROOT
+  (NP
+    (NP (RB yes))
+    (PP (IN of)
+      (NP (NN course)))
+    (. .)))
+
+root(ROOT-0, yes-1)
+prep_of(yes-1, course-3)
+
+(ROOT
+  (S
+    (NP (NNS people))
+    (VP (VBD used)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (NP (PDT all) (DT this) (NN stuff))
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (NN wasnt))
+                  (ADJP (JJ true)
+                    (CC and)
+                    (JJ i)))
+                (VP (MD would)
+                  (ADVP (RB just))
+                  (VP (VB prove)
+                    (S
+                      (NP (PRP them))
+                      (ADJP (JJ wrong)))))))))))
+    (. .)))
+
+nsubj(used-2, people-1)
+xsubj(say-4, people-1)
+root(ROOT-0, used-2)
+aux(say-4, to-3)
+xcomp(used-2, say-4)
+predet(stuff-7, all-5)
+det(stuff-7, this-6)
+dobj(say-4, stuff-7)
+complm(prove-15, that-8)
+nsubj(prove-15, wasnt-9)
+amod(wasnt-9, true-10)
+amod(wasnt-9, i-12)
+conj_and(true-10, i-12)
+aux(prove-15, would-13)
+advmod(prove-15, just-14)
+ccomp(say-4, prove-15)
+nsubj(wrong-17, them-16)
+xcomp(prove-15, wrong-17)
+
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP
+      (VP (VBZ is)
+        (ADJP (JJ hard)
+          (S
+            (VP (TO to)
+              (VP (VB believe))))))
+      (CC but)
+      (VP (VBZ thats)
+        (NP (NN life))))))
+
+nsubj(hard-3, it-1)
+nsubj(thats-7, it-1)
+cop(hard-3, is-2)
+root(ROOT-0, hard-3)
+aux(believe-5, to-4)
+xcomp(hard-3, believe-5)
+conj_but(hard-3, thats-7)
+dobj(thats-7, life-8)
+

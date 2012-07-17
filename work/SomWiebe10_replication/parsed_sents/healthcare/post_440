@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (DT The) (NN question) (NN FIRM))
+    (VP (VBP ask)
+      (SBAR
+        (S
+          (VP (VBZ is)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (MD should)
+                  (VP (VB pay)
+                    (PP (IN for)
+                      (NP
+                        (NP (DT the) (NN health) (NN care))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT those))
+                            (SBAR
+                              (WHNP (WDT that))
+                              (S
+                                (VP (MD ca) (RB n't)
+                                  (VP (VB afford)
+                                    (NP (PRP it))))))))))))))))))
+    (. ?)))
+
+det(FIRM-3, The-1)
+nn(FIRM-3, question-2)
+nsubj(ask-4, FIRM-3)
+root(ROOT-0, ask-4)
+ccomp(ask-4, is-5)
+nsubj(pay-8, who-6)
+aux(pay-8, should-7)
+ccomp(is-5, pay-8)
+det(care-12, the-10)
+nn(care-12, health-11)
+prep_for(pay-8, care-12)
+prep_of(care-12, those-14)
+nsubj(afford-18, those-14)
+aux(afford-18, ca-16)
+neg(afford-18, n't-17)
+rcmod(those-14, afford-18)
+dobj(afford-18, it-19)
+
+(ROOT
+  (S (CC But)
+    (NP (DT the) (NN question))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ is)
+            (VP (VBG paying)
+              (NP (DT those) (NN cost))
+              (ADVP (RB now)))))))
+    (. ?)))
+
+cc(is-4, But-1)
+det(question-3, the-2)
+nsubj(is-4, question-3)
+root(ROOT-0, is-4)
+nsubj(paying-7, who-5)
+aux(paying-7, is-6)
+ccomp(is-4, paying-7)
+det(cost-9, those-8)
+dobj(paying-7, cost-9)
+advmod(paying-7, now-10)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are))
+    (. .)))
+
+nsubj(are-2, We-1)
+root(ROOT-0, are-2)
+
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (MD will)
+      (ADVP (RB just))
+      (VP (VB put)
+        (NP
+          (NP (DT some) (NN control))
+          (PP (IN over)
+            (NP (JJ thouse) (NN cost))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(put-6, care-3)
+aux(put-6, will-4)
+advmod(put-6, just-5)
+root(ROOT-0, put-6)
+det(control-8, some-7)
+dobj(put-6, control-8)
+amod(cost-11, thouse-10)
+prep_over(control-8, cost-11)
+

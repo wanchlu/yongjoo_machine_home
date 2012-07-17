@@ -1,0 +1,263 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Continuing) (NN status) (NN quo))
+      (PP (IN under)
+        (NP (NN insurance) (NN company) (NN control))))
+    (VP (VBZ is)
+      (ADJP (JJ unacceptable)))
+    (. .)))
+
+nn(quo-3, Continuing-1)
+nn(quo-3, status-2)
+nsubj(unacceptable-9, quo-3)
+nn(control-7, insurance-5)
+nn(control-7, company-6)
+prep_under(quo-3, control-7)
+cop(unacceptable-9, is-8)
+root(ROOT-0, unacceptable-9)
+
+(ROOT
+  (NP (NNP Barack) (NNP Obama) (. .)))
+
+nn(Obama-2, Barack-1)
+root(ROOT-0, Obama-2)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Why) (PRP We))
+    (VP (VBD Need)
+      (NP (NNP Health) (NNP Care) (NNP Reform) ('' '')))
+    (. .)))
+
+nsubj(Need-4, Why-2)
+dep(Why-2, We-3)
+root(ROOT-0, Need-4)
+nn(Reform-7, Health-5)
+nn(Reform-7, Care-6)
+dobj(Need-4, Reform-7)
+
+(ROOT
+  (NP (NNP New) (NNP York) (NNP Times) (. .)))
+
+nn(Times-3, New-1)
+nn(Times-3, York-2)
+root(ROOT-0, Times-3)
+
+(ROOT
+  (NP
+    (NP (NNP August) (CD 15) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (S
+        (PP (IN In)
+          (NP
+            (NP (DT the) (VBG coming) (NNS weeks))
+            (, ,)
+            (NP (DT the) (NNS cynics)))))
+      (CC and)
+      (S
+        (NP (DT the) (NNS naysayers))
+        (VP (MD will)
+          (VP (VB continue)
+            (S
+              (VP (TO to)
+                (VP (VB exploit)
+                  (NP (NN fear)
+                    (CC and)
+                    (NNS concerns))
+                  (PP (IN for)
+                    (NP (JJ political) (NN gain))))))))))
+    (. .)))
+
+root(ROOT-0, August-1)
+num(August-1, 15-2)
+num(August-1, 2009-4)
+dep(August-1, In-7)
+det(weeks-10, the-8)
+amod(weeks-10, coming-9)
+pobj(In-7, weeks-10)
+det(cynics-13, the-12)
+appos(weeks-10, cynics-13)
+det(naysayers-16, the-15)
+nsubj(continue-18, naysayers-16)
+xsubj(exploit-20, naysayers-16)
+aux(continue-18, will-17)
+dep(August-1, continue-18)
+conj_and(In-7, continue-18)
+aux(exploit-20, to-19)
+xcomp(continue-18, exploit-20)
+dobj(exploit-20, fear-21)
+dobj(exploit-20, concerns-23)
+conj_and(fear-21, concerns-23)
+amod(gain-26, political-25)
+prep_for(exploit-20, gain-26)
+
+(ROOT
+  (S (CC But)
+    (PP (IN for)
+      (NP
+        (NP (PDT all) (DT the) (NN scare) (NNS tactics))
+        (PP (IN out)
+          (NP
+            (NP (RB there))
+            (, ,)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (VBZ s)
+                  (ADJP (RB truly) (JJ scary)))))))
+        (ADJP (RB truly) (JJ risky))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN prospect))
+        (PP (IN of)
+          (S
+            (VP (VBG doing)
+              (NP (NN nothing)))))))
+    (. .)))
+
+cc(prospect-18, But-1)
+predet(tactics-6, all-3)
+det(tactics-6, the-4)
+nn(tactics-6, scare-5)
+prep_for(prospect-18, tactics-6)
+prep(tactics-6, out-7)
+pobj(out-7, there-8)
+nsubj(scary-13, there-8)
+cop(scary-13, s-11)
+advmod(scary-13, truly-12)
+rcmod(there-8, scary-13)
+advmod(risky-15, truly-14)
+amod(tactics-6, risky-15)
+cop(prospect-18, is-16)
+det(prospect-18, the-17)
+root(ROOT-0, prospect-18)
+prepc_of(prospect-18, doing-20)
+dobj(doing-20, nothing-21)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VBP maintain)
+          (NP
+            (NP (DT the) (FW status) (FW quo))
+            (PRN (-LRB- -LRB-)
+              (PP (IN of)
+                (NP
+                  (NP (NN health) (NN care))
+                  (VP (VBN dominated)
+                    (PP (IN by)
+                      (NP (NN health) (NN insurance) (NNS companies)))
+                    (PP (IN under)
+                      (NP (NN government) (NNS regulations))))))
+              (-RRB- -RRB-))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (S
+                (NP (CD 14,000) (NNPS Americans))
+                (VP (VB lose)
+                  (NP
+                    (NP (PRP$ their) (NN health) (NN insurance))
+                    (NP (DT every) (NN day))))))))))
+    (. .)))
+
+mark(maintain-3, If-1)
+nsubj(maintain-3, we-2)
+advcl(continue-23, maintain-3)
+det(quo-6, the-4)
+nn(quo-6, status-5)
+dobj(maintain-3, quo-6)
+dep(quo-6, of-8)
+nn(care-10, health-9)
+pobj(of-8, care-10)
+partmod(care-10, dominated-11)
+nn(companies-15, health-13)
+nn(companies-15, insurance-14)
+agent(dominated-11, companies-15)
+nn(regulations-18, government-17)
+prep_under(dominated-11, regulations-18)
+nsubj(continue-23, we-21)
+xsubj(see-25, we-21)
+aux(continue-23, will-22)
+root(ROOT-0, continue-23)
+aux(see-25, to-24)
+xcomp(continue-23, see-25)
+num(Americans-27, 14,000-26)
+nsubj(lose-28, Americans-27)
+ccomp(see-25, lose-28)
+poss(insurance-31, their-29)
+nn(insurance-31, health-30)
+dobj(lose-28, insurance-31)
+det(day-33, every-32)
+dep(insurance-31, day-33)
+
+(ROOT
+  (S
+    (NP (NNS Premiums))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB skyrocket))))))
+    (. .)))
+
+nsubj(continue-3, Premiums-1)
+xsubj(skyrocket-5, Premiums-1)
+aux(continue-3, will-2)
+root(ROOT-0, continue-3)
+aux(skyrocket-5, to-4)
+xcomp(continue-3, skyrocket-5)
+
+(ROOT
+  (S
+    (NP (PRP$ Our) (NN deficit))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB grow))))))
+    (. .)))
+
+poss(deficit-2, Our-1)
+nsubj(continue-4, deficit-2)
+xsubj(grow-6, deficit-2)
+aux(continue-4, will-3)
+root(ROOT-0, continue-4)
+aux(grow-6, to-5)
+xcomp(continue-4, grow-6)
+
+(ROOT
+  (S (CC And)
+    (NP (NN insurance) (NNS companies))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB profit)
+              (PP (IN by)
+                (S
+                  (VP (VBG discriminating)
+                    (PP (IN against)
+                      (NP (JJ sick) (NNS people)))))))))))
+    (. .)))
+
+cc(continue-5, And-1)
+nn(companies-3, insurance-2)
+nsubj(continue-5, companies-3)
+xsubj(profit-7, companies-3)
+aux(continue-5, will-4)
+root(ROOT-0, continue-5)
+aux(profit-7, to-6)
+xcomp(continue-5, profit-7)
+prepc_by(profit-7, discriminating-9)
+amod(people-12, sick-11)
+prep_against(discriminating-9, people-12)
+

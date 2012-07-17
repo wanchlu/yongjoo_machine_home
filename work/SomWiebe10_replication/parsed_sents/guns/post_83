@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Citizen) (NN gun) (NN ownership))
+      (VP (VBZ acts)
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN deterrent))
+            (PP (IN against)
+              (NP (NNS criminals)))))
+        (SBAR
+          (WHADVP (WRB When))
+          (S
+            (NP (NNS citizens))
+            (VP (VBP have)
+              (NP (NNS guns)))))))
+    (, ,)
+    (NP (NNS criminals))
+    (VP (VBP fear)
+      (S
+        (VP (VBG committing)
+          (S
+            (NP (NNS crimes))
+            (ADJP (JJ due)
+              (PP (TO to)
+                (NP (DT the) (NN risk)))))
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (MD will)
+                (VP (VB be)
+                  (VP (VBN shot)))))))))
+    (. .)))
+
+nn(ownership-3, Citizen-1)
+nn(ownership-3, gun-2)
+nsubj(acts-4, ownership-3)
+ccomp(fear-16, acts-4)
+det(deterrent-7, a-6)
+prep_as(acts-4, deterrent-7)
+prep_against(deterrent-7, criminals-9)
+advmod(have-12, When-10)
+nsubj(have-12, citizens-11)
+advcl(acts-4, have-12)
+dobj(have-12, guns-13)
+nsubj(fear-16, criminals-15)
+root(ROOT-0, fear-16)
+xcomp(fear-16, committing-17)
+nsubj(due-19, crimes-18)
+xcomp(committing-17, due-19)
+det(risk-22, the-21)
+prep_to(due-19, risk-22)
+complm(shot-27, that-23)
+nsubjpass(shot-27, they-24)
+aux(shot-27, will-25)
+auxpass(shot-27, be-26)
+ccomp(committing-17, shot-27)
+
+(ROOT
+  (S
+    (NP (JJ Many) (NNS studies))
+    (VP (VBP indicate)
+      (SBAR (IN that)
+        (S
+          (NP (DT this) (NN deterrent) (NN effect))
+          (VP (VBZ decreases)
+            (NP (JJ violent) (NN crime) (NNS rates))))))
+    (. .)))
+
+amod(studies-2, Many-1)
+nsubj(indicate-3, studies-2)
+root(ROOT-0, indicate-3)
+complm(decreases-8, that-4)
+det(effect-7, this-5)
+nn(effect-7, deterrent-6)
+nsubj(decreases-8, effect-7)
+ccomp(indicate-3, decreases-8)
+amod(rates-11, violent-9)
+nn(rates-11, crime-10)
+dobj(decreases-8, rates-11)
+
+(ROOT
+  (S
+    (NP (DT The) (NN correlation))
+    (VP (VBZ is) (RB not)
+      (ADJP (JJ surprising)))
+    (. .)))
+
+det(correlation-2, The-1)
+nsubj(surprising-5, correlation-2)
+cop(surprising-5, is-3)
+neg(surprising-5, not-4)
+root(ROOT-0, surprising-5)
+

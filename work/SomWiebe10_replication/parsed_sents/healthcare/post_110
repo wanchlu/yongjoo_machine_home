@@ -1,0 +1,176 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ legitimate) (`` ``) (NN burden) ('' ''))
+        (PP (IN on)
+          (NP (DT the) (NN tax) (NN payer)))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(burden-8, care-3)
+cop(burden-8, is-4)
+det(burden-8, a-5)
+amod(burden-8, legitimate-6)
+root(ROOT-0, burden-8)
+det(payer-13, the-11)
+nn(payer-13, tax-12)
+prep_on(burden-8, payer-13)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP pay)
+      (PP (IN for)
+        (NP
+          (NP (JJ public) (NNS utilities))
+          (PP (JJ such) (IN as)
+            (NP
+              (NP (NN road)
+                (CC and)
+                (NNS people) (NN pay))
+              (PP (IN for)
+                (NP (NN education)))))))
+      (ADVP (RB as) (RB well)))
+    (. .)))
+
+nsubj(pay-2, People-1)
+root(ROOT-0, pay-2)
+amod(utilities-5, public-4)
+prep_for(pay-2, utilities-5)
+nn(pay-11, road-8)
+conj_and(road-8, people-10)
+nn(pay-11, people-10)
+prep_such_as(utilities-5, pay-11)
+prep_for(pay-11, education-13)
+advmod(well-15, as-14)
+mwe(well-15, as-14)
+advmod(pay-2, well-15)
+
+(ROOT
+  (FRAG (CC But)
+    (VP (VB do)
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do) (RB n't)
+              (VP (VB drive)
+                (S
+                  (VP
+                    (ADVP (RB recklessly))
+                    (VB ask)
+                    (PP (IN for)
+                      (NP (NN money)))
+                    (SBAR
+                      (ADVP (RB back))
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (NNS roads))
+                        (VP (VBP are)
+                          (VP (VBN damaged)))))))))))))
+    (. ?)))
+
+dep(do-2, But-1)
+root(ROOT-0, do-2)
+dobj(do-2, people-3)
+nsubj(drive-7, people-3)
+aux(drive-7, do-5)
+neg(drive-7, n't-6)
+rcmod(people-3, drive-7)
+advmod(ask-9, recklessly-8)
+ccomp(drive-7, ask-9)
+prep_for(ask-9, money-11)
+advmod(damaged-16, back-12)
+advmod(damaged-16, when-13)
+nsubjpass(damaged-16, roads-14)
+auxpass(damaged-16, are-15)
+ccomp(ask-9, damaged-16)
+
+(ROOT
+  (SQ
+    (VP (VB Do)
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP send)
+              (SBAR
+                (S
+                  (NP
+                    (NP (PRP$ their) (NNS children))
+                    (PP (TO to)
+                      (NP (JJ private) (NN school))))
+                  (VP (VBP ask)
+                    (PP (IN for)
+                      (NP (PDT all) (PRP$ their) (NN money)))
+                    (ADVP (RB back))))))))))
+    (. ?)))
+
+root(ROOT-0, Do-1)
+dobj(Do-1, people-2)
+nsubj(send-4, people-2)
+rcmod(people-2, send-4)
+poss(children-6, their-5)
+nsubj(ask-10, children-6)
+amod(school-9, private-8)
+prep_to(children-6, school-9)
+ccomp(send-4, ask-10)
+predet(money-14, all-12)
+poss(money-14, their-13)
+prep_for(ask-10, money-14)
+advmod(ask-10, back-15)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP place)
+      (NP (DT this) (NN burden))
+      (PP (IN on)
+        (NP
+          (NP (DT the) (NN state))
+          (PP (RB because) (IN of)
+            (NP
+              (NP (NN equality))
+              (PP (IN of)
+                (NP (NN opportunity))))))))
+    (. .)))
+
+nsubj(place-2, We-1)
+root(ROOT-0, place-2)
+det(burden-4, this-3)
+dobj(place-2, burden-4)
+det(state-7, the-6)
+prep_on(place-2, state-7)
+prep_because_of(state-7, equality-10)
+prep_of(equality-10, opportunity-12)
+
+(ROOT
+  (S
+    (NP (DT No) (NN man))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN denied)
+          (NP (DT the) (NN right)
+            (S
+              (VP (TO to)
+                (VP (VB live)
+                  (NP (PRP$ his) (NN life)))))))))
+    (. .)))
+
+det(man-2, No-1)
+nsubjpass(denied-5, man-2)
+aux(denied-5, should-3)
+auxpass(denied-5, be-4)
+root(ROOT-0, denied-5)
+det(right-7, the-6)
+dobj(denied-5, right-7)
+aux(live-9, to-8)
+infmod(right-7, live-9)
+poss(life-11, his-10)
+dobj(live-9, life-11)
+

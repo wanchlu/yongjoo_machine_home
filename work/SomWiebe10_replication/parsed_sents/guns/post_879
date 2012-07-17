@@ -1,0 +1,114 @@
+(ROOT
+  (S
+    (SBAR (IN In) (NN case)
+      (S
+        (NP (PRP you))
+        (ADJP (JJ different))
+        (S
+          (VP (VB do)
+            (NP (JJ other) (NN research))))))
+    (, ,)
+    (NP (NNP Chicago))
+    (VP (VBZ has)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (JJS highest) (NN crime) (NNS rates))
+            (PP (IN in)
+              (NP (DT the) (JJ entire) (NN country)))))))
+    (. .)))
+
+mark(do-5, In-1)
+dep(do-5, case-2)
+dep(do-5, you-3)
+dep(do-5, different-4)
+advcl(has-10, do-5)
+amod(research-7, other-6)
+dobj(do-5, research-7)
+nsubj(has-10, Chicago-9)
+root(ROOT-0, has-10)
+dobj(has-10, one-11)
+det(rates-16, the-13)
+amod(rates-16, highest-14)
+nn(rates-16, crime-15)
+prep_of(one-11, rates-16)
+det(country-20, the-18)
+amod(country-20, entire-19)
+prep_in(rates-16, country-20)
+
+(ROOT
+  (S
+    (NP (NN Crime) (NNS rates))
+    (VP (VBZ equals)
+      (SBAR
+        (S
+          (NP
+            (NP (NNS criminals))
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ means)
+                  (SBAR
+                    (S
+                      (SBAR (IN if)
+                        (S
+                          (NP (NNS guns))
+                          (VP (VBP are)
+                            (ADJP (JJ illegal)))))
+                      (, ,)
+                      (NP (PRP they))
+                      (VP (MD must)
+                        (VP (VB be)
+                          (VP (VBG getting)
+                            (NP (PRP them))
+                            (PP (IN from)
+                              (NP
+                                (NP (RB somewhere))
+                                (, ,)
+                                (NP (NN hmmm))
+                                (, ,) (FW i))))))))))))
+          (VP (VBP wonder)
+            (SBAR
+              (WHADVP (WRB where))
+              (, ,)
+              (S
+                (NP
+                  (NP (JJ black) (NN market))
+                  (CC or)
+                  (NP (JJ illegal) (NN selling)))
+                (ADVP (RB across))
+                (VP (VBZ borders)
+                  (NP (NN anyone)))))))))
+    (. ?)))
+
+nn(rates-2, Crime-1)
+nsubj(equals-3, rates-2)
+root(ROOT-0, equals-3)
+nsubj(means-6, criminals-4)
+nsubj(wonder-23, criminals-4)
+rcmod(criminals-4, means-6)
+mark(illegal-10, if-7)
+nsubj(illegal-10, guns-8)
+cop(illegal-10, are-9)
+advcl(getting-15, illegal-10)
+nsubj(getting-15, they-12)
+aux(getting-15, must-13)
+aux(getting-15, be-14)
+ccomp(means-6, getting-15)
+dobj(getting-15, them-16)
+prep(getting-15, from-17)
+pobj(from-17, somewhere-18)
+appos(somewhere-18, hmmm-20)
+dep(somewhere-18, i-22)
+ccomp(equals-3, wonder-23)
+advmod(borders-32, where-24)
+amod(market-27, black-26)
+nsubj(borders-32, market-27)
+amod(selling-30, illegal-29)
+conj_or(market-27, selling-30)
+nsubj(borders-32, selling-30)
+advmod(borders-32, across-31)
+advcl(wonder-23, borders-32)
+dobj(borders-32, anyone-33)
+

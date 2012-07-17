@@ -1,0 +1,142 @@
+(ROOT
+  (S
+    (NP (VBG Arming) (NNS pilots))
+    (VP (VBZ is)
+      (NP (DT the) (JJ only) (JJ certain) (NN way)
+        (S
+          (VP (TO to)
+            (VP (VB defend)
+              (NP (DT a) (NN cockpit)))))))
+    (. .)))
+
+amod(pilots-2, Arming-1)
+nsubj(way-7, pilots-2)
+cop(way-7, is-3)
+det(way-7, the-4)
+amod(way-7, only-5)
+amod(way-7, certain-6)
+root(ROOT-0, way-7)
+aux(defend-9, to-8)
+infmod(way-7, defend-9)
+det(cockpit-11, a-10)
+dobj(defend-9, cockpit-11)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Armed) (NNS pilots))
+    (VP (VBP equal)
+      (NP (JJ safer) (NNS airplanes) ('' '')))
+    (. .)))
+
+nn(pilots-3, Armed-2)
+nsubj(equal-4, pilots-3)
+root(ROOT-0, equal-4)
+amod(airplanes-6, safer-5)
+dobj(equal-4, airplanes-6)
+
+(ROOT
+  (NP (NNP USA) (NNP Today) (. .)))
+
+nn(Today-2, USA-1)
+root(ROOT-0, Today-2)
+
+(ROOT
+  (S
+    (NP (NNP February) (CD 14th) (, ,) (CD 2007))
+    (`` ``)
+    (ADVP (RB Currently))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (JJ surefire) (NN method))
+        (PP (IN of)
+          (S
+            (VP (VBG defending)
+              (NP (DT the) (NN cockpit))
+              (PP (IN from)
+                (NP
+                  (NP (DT a) (NN team))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS terrorists))
+                      (PP (IN on)
+                        (NP
+                          (NP (DT a) (NN plane))
+                          (PP (IN over)
+                            (NP
+                              (NP (DT the) (NNP North) (NNP Atlantic))
+                              (, ,)
+                              (NP
+                                (NP (CD three) (NNS hours))
+                                (PP (IN from)
+                                  (NP (DT any) (NN airport)))))))))))))))))
+    (. .)))
+
+tmod(is-8, February-1)
+num(February-1, 14th-2)
+num(February-1, 2007-4)
+advmod(is-8, Currently-6)
+expl(is-8, there-7)
+root(ROOT-0, is-8)
+det(method-11, no-9)
+amod(method-11, surefire-10)
+nsubj(is-8, method-11)
+prepc_of(method-11, defending-13)
+det(cockpit-15, the-14)
+dobj(defending-13, cockpit-15)
+det(team-18, a-17)
+prep_from(defending-13, team-18)
+prep_of(team-18, terrorists-20)
+det(plane-23, a-22)
+prep_on(terrorists-20, plane-23)
+det(Atlantic-27, the-25)
+nn(Atlantic-27, North-26)
+prep_over(plane-23, Atlantic-27)
+num(hours-30, three-29)
+appos(Atlantic-27, hours-30)
+det(airport-33, any-32)
+prep_from(hours-30, airport-33)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (JJ imperative))
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NNP U.S.) (NN government))
+                (VP (VBP expand)
+                  (NP (NNS agreements))
+                  (PP (IN with)
+                    (NP (JJ foreign) (NNS governments)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB allow)
+                        (NP (JJ armed) (NNS pilots))))))))))))
+    (. .)))
+
+nsubj(is-2, That-1)
+root(ROOT-0, is-2)
+advmod(imperative-6, why-3)
+nsubj(imperative-6, it-4)
+cop(imperative-6, is-5)
+advcl(is-2, imperative-6)
+complm(expand-11, that-7)
+det(government-10, the-8)
+nn(government-10, U.S.-9)
+nsubj(expand-11, government-10)
+xsubj(allow-17, government-10)
+ccomp(imperative-6, expand-11)
+dobj(expand-11, agreements-12)
+amod(governments-15, foreign-14)
+prep_with(expand-11, governments-15)
+aux(allow-17, to-16)
+xcomp(expand-11, allow-17)
+amod(pilots-19, armed-18)
+dobj(allow-17, pilots-19)
+

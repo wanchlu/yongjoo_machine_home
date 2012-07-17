@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (NP (NNS Handguns))
+    (VP (VBP are)
+      (ADVP (RB particularly))
+      (VP (VBN needed)
+        (PP (IN for)
+          (NP
+            (NP (NN self-defense))
+            (PP (IN in)
+              (NP (DT a) (JJ crime-ridden) (NN DC)))))))
+    (. .)))
+
+nsubjpass(needed-4, Handguns-1)
+auxpass(needed-4, are-2)
+advmod(needed-4, particularly-3)
+root(ROOT-0, needed-4)
+prep_for(needed-4, self-defense-6)
+det(DC-10, a-8)
+amod(DC-10, crime-ridden-9)
+prep_in(self-defense-6, DC-10)
+
+(ROOT
+  (S
+    (NP (NNS Handguns))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RBS most) (VBN needed))
+        (PP (IN for)
+          (NP (NN self-defense)))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS hands))
+            (PP (IN of)
+              (NP (NNS citizens)))))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP are)
+              (PP (IN under)
+                (NP
+                  (NP (DT the) (JJS most) (NN threat))
+                  (, ,)
+                  (PP (JJ such) (IN as)
+                    (PP (IN in)
+                      (NP
+                        (NP (NNP DC) (POS 's))
+                        (JJ crime-ridden) (NNS streets)))))))))))
+    (. .)))
+
+nsubj(needed-4, Handguns-1)
+cop(needed-4, are-2)
+advmod(needed-4, most-3)
+root(ROOT-0, needed-4)
+prep_for(needed-4, self-defense-6)
+det(hands-9, the-8)
+prep_in(needed-4, hands-9)
+prep_of(hands-9, citizens-11)
+nsubj(are-13, that-12)
+dep(needed-4, are-13)
+det(threat-17, the-15)
+amod(threat-17, most-16)
+prep_under(are-13, threat-17)
+prepc_such_as(threat-17, in-21)
+poss(streets-25, DC-22)
+amod(streets-25, crime-ridden-24)
+prep_in(threat-17, streets-25)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN ban))
+      (PP (IN on)
+        (NP
+          (NP (NNS handguns))
+          (PP (IN in)
+            (NP (NNP DC))))))
+    (VP (VBZ is)
+      (ADJP (JJ contrary)
+        (PP (TO to)
+          (NP (DT this) (NN logic)))))
+    (. .)))
+
+det(ban-2, A-1)
+nsubj(contrary-8, ban-2)
+prep_on(ban-2, handguns-4)
+prep_in(handguns-4, DC-6)
+cop(contrary-8, is-7)
+root(ROOT-0, contrary-8)
+det(logic-11, this-10)
+prep_to(contrary-8, logic-11)
+

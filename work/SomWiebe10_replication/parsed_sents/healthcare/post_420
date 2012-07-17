@@ -1,0 +1,141 @@
+(ROOT
+  (S
+    (NP (WDT Whatever))
+    (NP (DT the) (NN system) (NN health))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN rationed))))
+    (. .)))
+
+nsubjpass(rationed-7, Whatever-1)
+det(health-4, the-2)
+nn(health-4, system-3)
+nsubjpass(rationed-7, health-4)
+aux(rationed-7, will-5)
+auxpass(rationed-7, be-6)
+root(ROOT-0, rationed-7)
+
+(ROOT
+  (S
+    (S
+      (PP (IN With)
+        (NP (JJ free) (NN enterprise) (NN medicine)))
+      (NP (PRP it))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN rationed)
+            (PP (IN by)
+              (NP (DT the) (NN market)))))))
+    (: ;)
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP you))
+          (VP (VBP have)
+            (NP (DT a) (JJ national) (NN health) (NN system)))))
+      (NP (PRP you))
+      (VP (MD will)
+        (VP (VB have)
+          (NP
+            (NP (NN rationing))
+            (PP (IN of)
+              (NP (DT a)
+                (ADJP (RB somewhat) (JJ different))
+                (NN kind)))))))
+    (. .)))
+
+amod(medicine-4, free-2)
+nn(medicine-4, enterprise-3)
+prep_with(rationed-8, medicine-4)
+nsubjpass(rationed-8, it-5)
+aux(rationed-8, will-6)
+auxpass(rationed-8, be-7)
+root(ROOT-0, rationed-8)
+det(market-11, the-10)
+agent(rationed-8, market-11)
+advmod(have-15, when-13)
+nsubj(have-15, you-14)
+advcl(have-22, have-15)
+det(system-19, a-16)
+amod(system-19, national-17)
+nn(system-19, health-18)
+dobj(have-15, system-19)
+nsubj(have-22, you-20)
+aux(have-22, will-21)
+parataxis(rationed-8, have-22)
+dobj(have-22, rationing-23)
+det(kind-28, a-25)
+advmod(different-27, somewhat-26)
+amod(kind-28, different-27)
+prep_of(rationing-23, kind-28)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Rationing))
+      (VP (VBZ is)
+        (ADJP (JJ inevitable))))
+    (: ;)
+    (S
+      (NP (DT the) (JJ only) (NN question)
+        (S
+          (VP (TO to)
+            (VP (VB decide)))))
+      (VP (VBZ is)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (DT the) (NN rationing))
+            (VP (VBZ is)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN done))))))))))
+    (. .)))
+
+nsubj(inevitable-3, Rationing-1)
+cop(inevitable-3, is-2)
+root(ROOT-0, inevitable-3)
+det(question-7, the-5)
+amod(question-7, only-6)
+nsubj(is-10, question-7)
+aux(decide-9, to-8)
+infmod(question-7, decide-9)
+parataxis(inevitable-3, is-10)
+advmod(is-14, how-11)
+det(rationing-13, the-12)
+nsubj(is-14, rationing-13)
+xsubj(done-17, rationing-13)
+ccomp(is-10, is-14)
+aux(done-17, to-15)
+auxpass(done-17, be-16)
+xcomp(is-14, done-17)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP America))
+      (VP (VBZ has)
+        (VP (VBN chosen)
+          (NP (CD one) (NN path)))))
+    (: ;)
+    (S
+      (NP (JJ other) (JJ advanced) (NNS countries))
+      (VP (VBP have)
+        (VP (VBN chosen)
+          (NP (DT another)))))
+    (. .)))
+
+nsubj(chosen-3, America-1)
+aux(chosen-3, has-2)
+root(ROOT-0, chosen-3)
+num(path-5, one-4)
+dobj(chosen-3, path-5)
+amod(countries-9, other-7)
+amod(countries-9, advanced-8)
+nsubj(chosen-11, countries-9)
+aux(chosen-11, have-10)
+parataxis(chosen-3, chosen-11)
+dobj(chosen-11, another-12)
+

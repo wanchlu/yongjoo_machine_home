@@ -1,0 +1,204 @@
+(ROOT
+  (S
+    (FRAG
+      (PP (IN By)))
+    ('' '')
+    (NP (NNP Darwin))
+    (VP (VBZ 's)
+      (NP
+        (NP (NN stuff))
+        ('' '')
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP 'm)
+              (VP (VBG assuming)
+                (S
+                  (NP (PRP you))
+                  (VP (VB mean)
+                    (NP (NN evolution))))))))))
+    (. .)))
+
+dep(stuff-5, By-1)
+nsubj(stuff-5, Darwin-3)
+cop(stuff-5, 's-4)
+root(ROOT-0, stuff-5)
+dobj(assuming-9, stuff-5)
+nsubj(assuming-9, I-7)
+aux(assuming-9, 'm-8)
+rcmod(stuff-5, assuming-9)
+nsubj(mean-11, you-10)
+ccomp(assuming-9, mean-11)
+dobj(mean-11, evolution-12)
+
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ is) (RB n't)
+        (NP (`` ``)
+          (NP (RB just) (DT a) (NN theory))
+          (, ,) ('' ''))))
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (NP (DT a) (JJ scientific) (NN theory)))
+    (. .)))
+
+nsubj(theory-7, That-1)
+cop(theory-7, is-2)
+neg(theory-7, n't-3)
+advmod(theory-7, just-5)
+det(theory-7, a-6)
+dep(theory-14, theory-7)
+nsubj(theory-14, it-10)
+cop(theory-14, 's-11)
+det(theory-14, a-12)
+amod(theory-14, scientific-13)
+root(ROOT-0, theory-14)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB tell)
+      (NP (PRP me))
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP know)
+            (NP (DT the) (NN difference))))))
+    (. .)))
+
+dep(tell-2, Please-1)
+root(ROOT-0, tell-2)
+dobj(tell-2, me-3)
+nsubj(know-5, you-4)
+dep(tell-2, know-5)
+det(difference-7, the-6)
+dobj(know-5, difference-7)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ does) (RB n't)
+      (VP (VB make)
+        (NP (NNS things))
+        (ADVP (RB up))
+        (SBAR (IN as)
+          (S
+            (NP (PRP it))
+            (VP (VBZ goes)
+              (PRT (RP along))
+              (, ,)
+              (SBAR (IN as)
+                (S
+                  (NP (NNS religions))
+                  (VP (VBP do)))))))))
+    (. .)))
+
+nsubj(make-4, Science-1)
+aux(make-4, does-2)
+neg(make-4, n't-3)
+root(ROOT-0, make-4)
+dobj(make-4, things-5)
+advmod(make-4, up-6)
+mark(goes-9, as-7)
+nsubj(goes-9, it-8)
+advcl(make-4, goes-9)
+prt(goes-9, along-10)
+mark(do-14, as-12)
+nsubj(do-14, religions-13)
+advcl(goes-9, do-14)
+
+(ROOT
+  (S (CC And)
+    (PP (IN about)
+      (NP (DT the) (JJ other) (JJ holy) (NNS texts)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP are)
+      (ADJP (JJ incorrect)))
+    (. .)))
+
+cc(incorrect-10, And-1)
+det(texts-6, the-3)
+amod(texts-6, other-4)
+amod(texts-6, holy-5)
+prep_about(incorrect-10, texts-6)
+nsubj(incorrect-10, you-8)
+cop(incorrect-10, are-9)
+root(ROOT-0, incorrect-10)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP hope)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP choose)
+            (S
+              (VP (TO to)
+                (VP (VB expand)
+                  (PP (IN on)
+                    (SBAR
+                      (WHNP (WP what))
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP know))))))))))
+        (, ,)
+        (CC but)
+        (S
+          (FRAG (IN if) (RB not))
+          (, ,)
+          (NP (DT that))
+          (VP (VBZ 's)
+            (ADJP (JJ yours)
+              (S
+                (VP (TO to)
+                  (VP (VB deal)
+                    (PP (IN with))))))))))
+    (. .)))
+
+nsubj(hope-2, I-1)
+root(ROOT-0, hope-2)
+nsubj(choose-4, you-3)
+xsubj(expand-6, you-3)
+ccomp(hope-2, choose-4)
+aux(expand-6, to-5)
+xcomp(choose-4, expand-6)
+dobj(know-10, what-8)
+nsubj(know-10, you-9)
+prepc_on(expand-6, know-10)
+dep(yours-18, if-13)
+neg(if-13, not-14)
+nsubj(yours-18, that-16)
+cop(yours-18, 's-17)
+ccomp(hope-2, yours-18)
+conj_but(choose-4, yours-18)
+aux(deal-20, to-19)
+xcomp(yours-18, deal-20)
+prep(deal-20, with-21)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB argue)
+              (NP (DT this))
+              (ADVP (DT any) (RBR longer)))))))
+    (. .)))
+
+nsubj(going-4, I-1)
+xsubj(argue-6, I-1)
+aux(going-4, 'm-2)
+neg(going-4, not-3)
+root(ROOT-0, going-4)
+aux(argue-6, to-5)
+xcomp(going-4, argue-6)
+dobj(argue-6, this-7)
+dep(longer-9, any-8)
+advmod(argue-6, longer-9)
+

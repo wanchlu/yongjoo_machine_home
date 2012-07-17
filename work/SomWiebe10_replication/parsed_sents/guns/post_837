@@ -1,0 +1,202 @@
+(ROOT
+  (S
+    (NP (NNS Guns) (NNS rights))
+    (VP (VBZ is)
+      (PP (IN in)
+        (NP (DT a)
+          (ADJP (RB pretty) (JJ good))
+          (NN position) (NN right)))
+      (ADVP (RB now)))
+    (. .)))
+
+nn(rights-2, Guns-1)
+nsubj(is-3, rights-2)
+root(ROOT-0, is-3)
+det(right-9, a-5)
+advmod(good-7, pretty-6)
+amod(right-9, good-7)
+nn(right-9, position-8)
+prep_in(is-3, right-9)
+advmod(is-3, now-10)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can)
+      (VP (VB own)
+        (NP
+          (NP (DT a) (NN gun))
+          (, ,)
+          (SBAR (IN if)
+            (S
+              (VP (VBN proven)
+                (ADVP (RB trustworthy))))))))
+    (. .)))
+
+nsubj(own-3, You-1)
+aux(own-3, can-2)
+root(ROOT-0, own-3)
+det(gun-5, a-4)
+dobj(own-3, gun-5)
+mark(proven-8, if-7)
+dep(gun-5, proven-8)
+advmod(proven-8, trustworthy-9)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is) (RB not)
+        (NP
+          (NP (DT the) (NN case))
+          (PP (IN in)
+            (NP (DT all) (NNS states))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (PP (IN in)
+          (ADJP (JJS most)))))
+    (. .)))
+
+nsubj(case-5, This-1)
+cop(case-5, is-2)
+neg(case-5, not-3)
+det(case-5, the-4)
+root(ROOT-0, case-5)
+det(states-8, all-7)
+prep_in(case-5, states-8)
+nsubj(is-12, it-11)
+conj_but(case-5, is-12)
+prep_in(is-12, most-14)
+
+(ROOT
+  (S
+    (NP (DT Some))
+    (VP (VBP argue)
+      (SBAR
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (ADJP (JJ dangerous)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (VP (VBG giving)
+                        (PRT (RP out))
+                        (NP (NNS guns))))))))))
+        (, ,)
+        (CC but)
+        (SBAR (IN with)
+          (S
+            (NP
+              (NP (NNS guns-rights))
+              (CC or)
+              (NP (DT no) (JJ gun-rights) (NNS criminals)))
+            (VP (MD will)
+              (ADVP (RB still))
+              (VP (VB have)
+                (NP (NNS guns))))))))
+    (. .)))
+
+nsubj(argue-2, Some-1)
+root(ROOT-0, argue-2)
+complm(dangerous-6, that-3)
+nsubj(dangerous-6, it-4)
+cop(dangerous-6, is-5)
+ccomp(argue-2, dangerous-6)
+aux(giving-9, to-7)
+aux(giving-9, be-8)
+xcomp(dangerous-6, giving-9)
+prt(giving-9, out-10)
+dobj(giving-9, guns-11)
+mark(have-22, with-14)
+nsubj(have-22, guns-rights-15)
+det(criminals-19, no-17)
+amod(criminals-19, gun-rights-18)
+conj_or(guns-rights-15, criminals-19)
+nsubj(have-22, criminals-19)
+aux(have-22, will-20)
+advmod(have-22, still-21)
+ccomp(argue-2, have-22)
+conj_but(dangerous-6, have-22)
+dobj(have-22, guns-23)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ average) (NN person))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ wants)
+            (S
+              (VP (TO to)
+                (VP (VB own)
+                  (NP
+                    (NP (DT a) (NN gun))
+                    (PP (IN for)
+                      (NP (NN self-defense)))))))))))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN prohibited)
+          (S
+            (VP (TO to)))
+          (PP (IN without)
+            (NP (NNS guns-rights))))))
+    (. .)))
+
+advmod(prohibited-16, However-1)
+det(person-5, the-3)
+amod(person-5, average-4)
+nsubj(wants-7, person-5)
+nsubjpass(prohibited-16, person-5)
+rcmod(person-5, wants-7)
+aux(own-9, to-8)
+xcomp(wants-7, own-9)
+det(gun-11, a-10)
+dobj(own-9, gun-11)
+prep_for(gun-11, self-defense-13)
+aux(prohibited-16, will-14)
+auxpass(prohibited-16, be-15)
+root(ROOT-0, prohibited-16)
+xcomp(prohibited-16, to-17)
+prep_without(prohibited-16, guns-rights-19)
+
+(ROOT
+  (S
+    (ADVP (RB Meanwhile))
+    (, ,)
+    (PP (IN with)
+      (NP (NNS gun-rights)))
+    (NP (DT the) (JJ average) (NN person))
+    (VP (MD can)
+      (VP (VB own)
+        (NP
+          (NP (DT a) (NN gun))
+          (CC AND)
+          (S
+            (VP (VB protect)
+              (NP (PRP himself))
+              (PP (IN against)
+                (NP (NNS criminals))))))))
+    (. .)))
+
+advmod(own-9, Meanwhile-1)
+prep_with(own-9, gun-rights-4)
+det(person-7, the-5)
+amod(person-7, average-6)
+nsubj(own-9, person-7)
+aux(own-9, can-8)
+root(ROOT-0, own-9)
+det(gun-11, a-10)
+dobj(own-9, gun-11)
+dobj(own-9, protect-13)
+conj_and(gun-11, protect-13)
+dobj(protect-13, himself-14)
+prep_against(protect-13, criminals-16)
+

@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (S
+      (VP (VBD Did)
+        (ADVP (RB so))
+        (ADVP
+          (NP (DT a) (NN while))
+          (RB ago))))
+    (: --)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBD was)
+              (NP
+                (NP (DT the) (NN guy))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBD recommended)
+                      (NP (DT the) (JJ whole) (NN series)))))))))))
+    (. .)))
+
+root(ROOT-0, Did-1)
+advmod(Did-1, so-2)
+det(while-4, a-3)
+npadvmod(ago-5, while-4)
+advmod(Did-1, ago-5)
+nsubj(think-8, I-7)
+parataxis(Did-1, think-8)
+nsubj(guy-12, it-9)
+cop(guy-12, was-10)
+det(guy-12, the-11)
+ccomp(think-8, guy-12)
+nsubj(recommended-14, guy-12)
+rcmod(guy-12, recommended-14)
+det(series-17, the-15)
+amod(series-17, whole-16)
+dobj(recommended-14, series-17)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (VBD did)
+      (NP (PRP you))
+      (VP (VB see)
+        (S
+          (NP (PRP me))
+          (VP (VB recommend)
+            (NP (DT this))))))
+    (. ?)))
+
+advmod(see-4, When-1)
+aux(see-4, did-2)
+nsubj(see-4, you-3)
+root(ROOT-0, see-4)
+nsubj(recommend-6, me-5)
+ccomp(see-4, recommend-6)
+dobj(recommend-6, this-7)
+

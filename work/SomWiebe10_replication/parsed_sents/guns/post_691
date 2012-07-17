@@ -1,0 +1,324 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (NP (DT a) (NN physician)))
+    (. .)))
+
+nsubj(physician-4, I-1)
+cop(physician-4, 'm-2)
+det(physician-4, a-3)
+root(ROOT-0, physician-4)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know)
+      (NP
+        (NP (DT a) (NN phobia))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP see)
+              (NP (CD one)))))))
+    (: ...)))
+
+nsubj(know-2, I-1)
+root(ROOT-0, know-2)
+det(phobia-4, a-3)
+dobj(know-2, phobia-4)
+tmod(see-7, phobia-4)
+advmod(see-7, when-5)
+nsubj(see-7, I-6)
+dep(phobia-4, see-7)
+dobj(see-7, one-8)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Merck) (NNP Manual))
+      (VP (VBZ on-line)))
+    (: :) ('' '')
+    (S
+      (NP (JJ Phobic) (NNS disorders))
+      (VP (VBP consist)
+        (PP (IN of)
+          (NP
+            (NP
+              (ADJP (JJ persistent) (, ,) (JJ unreasonable) (, ,) (JJ intense))
+              (NNS fears))
+            (PRN (-LRB- -LRB-)
+              (NP (NNP phobias))
+              (-RRB- -RRB-))
+            (PP (IN of)
+              (NP (NNS situations) (, ,) (NNS circumstances) (, ,)
+                (CC or)
+                (NNS objects)))))))
+    (. .)))
+
+nn(Manual-2, Merck-1)
+nsubj(on-line-3, Manual-2)
+root(ROOT-0, on-line-3)
+amod(disorders-7, Phobic-6)
+nsubj(consist-8, disorders-7)
+ccomp(on-line-3, consist-8)
+amod(intense-14, persistent-10)
+amod(intense-14, unreasonable-12)
+amod(fears-15, intense-14)
+prep_of(consist-8, fears-15)
+appos(fears-15, phobias-17)
+prep_of(fears-15, situations-20)
+prep_of(fears-15, circumstances-22)
+conj_or(situations-20, circumstances-22)
+prep_of(fears-15, objects-25)
+conj_or(situations-20, objects-25)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS fears))
+    (VP (VB provoke)
+      (NP (NN anxiety)
+        (CC and)
+        (NN avoidance)))
+    (. .)))
+
+det(fears-2, The-1)
+nsubj(provoke-3, fears-2)
+root(ROOT-0, provoke-3)
+dobj(provoke-3, anxiety-4)
+dobj(provoke-3, avoidance-6)
+conj_and(anxiety-4, avoidance-6)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP '') (NNP Specific))
+    (ADVP (RB phobias))
+    (VP (VBP are)
+      (NP (DT the) (RBS most) (JJ common) (NN anxiety) (NNS disorders)))
+    (: ...)))
+
+nsubj(disorders-10, Specific-3)
+advmod(disorders-10, phobias-4)
+cop(disorders-10, are-5)
+det(disorders-10, the-6)
+advmod(disorders-10, most-7)
+amod(disorders-10, common-8)
+nn(disorders-10, anxiety-9)
+root(ROOT-0, disorders-10)
+
+(ROOT
+  (S
+    (NP (JJ Specific) (NNS phobias))
+    (VP (VBP affect)
+      (NP
+        (NP
+          (NP
+            (QP (RB about) (CD 13))
+            (NN %))
+          (PP (IN of)
+            (NP (NNS women))))
+        (CC and)
+        (NP
+          (NP (CD 4) (NN %))
+          (PP (IN of)
+            (NP (NNS men)))))
+      (PP (IN during)
+        (NP (DT any) (JJ 12-mo) (NN period))))
+    (: ...)))
+
+amod(phobias-2, Specific-1)
+nsubj(affect-3, phobias-2)
+root(ROOT-0, affect-3)
+quantmod(13-5, about-4)
+num(%-6, 13-5)
+dobj(affect-3, %-6)
+prep_of(%-6, women-8)
+num(%-11, 4-10)
+dobj(affect-3, %-11)
+conj_and(%-6, %-11)
+prep_of(%-11, men-13)
+det(period-17, any-15)
+amod(period-17, 12-mo-16)
+prep_during(affect-3, period-17)
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (NP (NNP Phobia))
+        (PP (IN of)
+          (NP
+            (NP
+              (NP (NN blood))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP hemophobia))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NP
+              (NP (NNS injections))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP trypanophobia))
+                (-RRB- -RRB-)))
+            (, ,)
+            (NP (NNS needles))
+            (CC or)
+            (NP
+              (NP (JJ other) (JJ sharp) (NNS objects))
+              (PRN (-LRB- -LRB-)
+                (NP (NNP belonephobia))
+                (-RRB- -RRB-))))))
+      (, ,)
+      (CC or)
+      (NP
+        (NP (NN injury))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP traumatophobia))
+          (-RRB- -RRB-))))
+    (VP (VBZ occurs)
+      (PP (TO to)
+        (NP
+          (NP (DT some) (NN degree))
+          (PP (IN in)
+            (NP
+              (NP
+                (QP (IN at) (JJS least) (CD 5))
+                (NN %))
+              (PP (IN of)
+                (NP (DT the) (NN population))))))))
+    (. .)))
+
+nsubj(occurs-27, Phobia-1)
+prep_of(Phobia-1, blood-3)
+appos(blood-3, hemophobia-5)
+prep_of(Phobia-1, injections-8)
+conj_or(blood-3, injections-8)
+appos(injections-8, trypanophobia-10)
+prep_of(Phobia-1, needles-13)
+conj_or(blood-3, needles-13)
+amod(objects-17, other-15)
+amod(objects-17, sharp-16)
+prep_of(Phobia-1, objects-17)
+conj_or(blood-3, objects-17)
+appos(objects-17, belonephobia-19)
+conj_or(Phobia-1, injury-23)
+nsubj(occurs-27, injury-23)
+appos(injury-23, traumatophobia-25)
+root(ROOT-0, occurs-27)
+det(degree-30, some-29)
+prep_to(occurs-27, degree-30)
+quantmod(5-34, at-32)
+mwe(at-32, least-33)
+pobj(at-32, least-33)
+num(%-35, 5-34)
+prep_in(degree-30, %-35)
+det(population-38, the-37)
+prep_of(%-35, population-38)
+
+(ROOT
+  (S ('' '')
+    (S
+      (FRAG
+        (ADVP (RB NB))
+        (: :))
+      (NP (PRP I))
+      (VP (VBP suspect)
+        (ADJP (JJ many))))
+    (RB rabid)
+    (S
+      (NP (NNS antigunners))
+      (VP (VBP have)
+        (NP
+          (NP (DT some) (NN variation))
+          (PP (IN of)
+            (NP (NN traumatophobia))))))
+    (. .)))
+
+dep(suspect-5, NB-2)
+nsubj(suspect-5, I-4)
+root(ROOT-0, suspect-5)
+acomp(suspect-5, many-6)
+advmod(suspect-5, rabid-7)
+nsubj(have-9, antigunners-8)
+ccomp(suspect-5, have-9)
+det(variation-11, some-10)
+dobj(have-9, variation-11)
+prep_of(variation-11, traumatophobia-13)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NN prognosis))
+    (VP
+      (VP
+        (PP (IN for)
+          (NP (JJ specific) (NNS phobias)))
+        (VBZ is)
+        (ADJP
+          (ADJP (RBR more) (JJ variable))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (VP (VBZ untreated)
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP it))
+                    (VP (MD may)
+                      (VP (VB be)
+                        (ADJP (JJ easy)
+                          (S
+                            (VP (TO to)
+                              (VP (VB avoid)
+                                (NP (DT the) (NN situation)))))))))))))))
+      (CC or)
+      (VP (VBP object)
+        (SBAR (IN that)
+          (S
+            (VP (VBZ causes)
+              (NP (NN fear)
+                (CC and)
+                (NN anxiety)))))))
+    (. .)))
+
+det(prognosis-3, The-2)
+nsubj(variable-9, prognosis-3)
+nsubj(object-22, prognosis-3)
+amod(phobias-6, specific-5)
+prep_for(variable-9, phobias-6)
+cop(variable-9, is-7)
+advmod(variable-9, more-8)
+root(ROOT-0, variable-9)
+advmod(untreated-11, when-10)
+dep(variable-9, untreated-11)
+mark(easy-16, because-12)
+nsubj(easy-16, it-13)
+aux(easy-16, may-14)
+cop(easy-16, be-15)
+advcl(untreated-11, easy-16)
+aux(avoid-18, to-17)
+xcomp(easy-16, avoid-18)
+det(situation-20, the-19)
+dobj(avoid-18, situation-20)
+conj_or(variable-9, object-22)
+complm(causes-24, that-23)
+ccomp(object-22, causes-24)
+dobj(causes-24, fear-25)
+dobj(causes-24, anxiety-27)
+conj_and(fear-25, anxiety-27)
+
+(ROOT
+  (S (CC Or)
+    (ADVP (RB alternately))
+    (VP (VBP pass)
+      (NP
+        (NP (DT a) (NN law))
+        (PP (IN against)
+          (NP (PRP it)))))
+    (: ...)))
+
+cc(pass-3, Or-1)
+advmod(pass-3, alternately-2)
+root(ROOT-0, pass-3)
+det(law-5, a-4)
+dobj(pass-3, law-5)
+prep_against(law-5, it-7)
+

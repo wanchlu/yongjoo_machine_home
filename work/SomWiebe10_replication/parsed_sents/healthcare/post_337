@@ -1,0 +1,43 @@
+(ROOT
+  (FRAG
+    (ADJP (RB Not) (JJ sure))
+    (SBAR
+      (WHADVP (WRB how))
+      (S
+        (NP (DT this))
+        (VP (VBD flew)
+          (PP (IN under)
+            (NP (PRP$ my) (NN radar) (NN Quantum))))))
+    (. .)))
+
+neg(sure-2, Not-1)
+root(ROOT-0, sure-2)
+advmod(flew-5, how-3)
+nsubj(flew-5, this-4)
+dep(sure-2, flew-5)
+poss(Quantum-9, my-7)
+nn(Quantum-9, radar-8)
+prep_under(flew-5, Quantum-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (PRP It) (POS 's))
+      (NN quantity))
+    (VP (VBZ is)
+      (ADVP (RB only))
+      (VP (VBN outdone)
+        (PP (IN by)
+          (NP
+            (NP (PRP it) (POS 's))
+            (NN quality)))))
+    (. .)))
+
+poss(quantity-3, It-1)
+nsubjpass(outdone-6, quantity-3)
+auxpass(outdone-6, is-4)
+advmod(outdone-6, only-5)
+root(ROOT-0, outdone-6)
+poss(quality-10, it-8)
+agent(outdone-6, quality-10)
+

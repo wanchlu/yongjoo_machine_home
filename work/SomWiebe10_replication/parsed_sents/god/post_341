@@ -1,0 +1,218 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (NN religion))
+        (VP (VBZ attacks)
+          (NP (NN science)))))
+    (, ,)
+    (NP (NN science))
+    (VP (MD must)
+      (VP (VB defend)
+        (NP (PRP itself))))
+    (. .)))
+
+mark(attacks-3, While-1)
+nsubj(attacks-3, religion-2)
+advcl(defend-8, attacks-3)
+dobj(attacks-3, science-4)
+nsubj(defend-8, science-6)
+aux(defend-8, must-7)
+root(ROOT-0, defend-8)
+dobj(defend-8, itself-9)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD saw)
+      (NP (NN life))
+      (PP (IN without)
+        (S
+          (VP (VBG learning)
+            (PP (IN in)
+              (NP (DT the) (JJ middle) (NNS ages)))))))
+    (. .)))
+
+nsubj(saw-2, We-1)
+root(ROOT-0, saw-2)
+dobj(saw-2, life-3)
+prepc_without(saw-2, learning-5)
+det(ages-9, the-7)
+amod(ages-9, middle-8)
+prep_in(learning-5, ages-9)
+
+(ROOT
+  (S
+    (NP (NNP Bad) (, ,))
+    (VP (VBD were) (RB n't)
+      (NP (PRP they)))
+    (. ?)))
+
+nsubj(they-5, Bad-1)
+cop(they-5, were-3)
+neg(they-5, n't-4)
+root(ROOT-0, they-5)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (S
+      (VP (VBG trying)
+        (S
+          (VP (TO to)
+            (VP (VB hide)
+              (NP (NN fact))
+              (PP (IN because)
+                (NP
+                  (NP (DT a) (NN book))
+                  (, ,)
+                  (VP
+                    (ADVP (RB supposedly))
+                    (VBN written)
+                    (PP (IN by)
+                      (NP
+                        (NP (DT a) (NN god))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBZ has) (RB not)
+                              (VP (VBN been)
+                                (VP (VBN proven))))))))))))))))
+    (, ,)
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN attack))
+        (PP (IN on)
+          (NP (NN learning)
+            (CC and)
+            (NN science)))))
+    (. .)))
+
+advmod(attack-24, Therefore-1)
+dep(attack-24, trying-3)
+aux(hide-5, to-4)
+xcomp(trying-3, hide-5)
+dobj(hide-5, fact-6)
+det(book-9, a-8)
+prep_because(hide-5, book-9)
+advmod(written-12, supposedly-11)
+partmod(book-9, written-12)
+det(god-15, a-14)
+agent(written-12, god-15)
+nsubjpass(proven-20, god-15)
+aux(proven-20, has-17)
+neg(proven-20, not-18)
+auxpass(proven-20, been-19)
+rcmod(god-15, proven-20)
+cop(attack-24, is-22)
+det(attack-24, an-23)
+root(ROOT-0, attack-24)
+prep_on(attack-24, learning-26)
+prep_on(attack-24, science-28)
+conj_and(learning-26, science-28)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP we))
+      (VP (VB go)
+        (ADVP (RB simply))
+        (PP (IN with)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT the) (NN bible))
+              (VP (VBZ says)))))))
+    (. ?)))
+
+advmod(go-4, Why-1)
+aux(go-4, should-2)
+nsubj(go-4, we-3)
+root(ROOT-0, go-4)
+advmod(go-4, simply-5)
+dobj(says-10, what-7)
+det(bible-9, the-8)
+nsubj(says-10, bible-9)
+prepc_with(go-4, says-10)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (NNS people))
+          (VP (VBP bring)
+            (NP (NN science)
+              (CC and)
+              (NN religion))
+            (PP (IN into)
+              (NP (NN comparison)))
+            (, ,)
+            (SBAR (IN because)
+              (S
+                (SBAR (IN as)
+                  (S
+                    (NP (PRP one))
+                    (VP (VBZ disproves)
+                      (NP
+                        (NP (NNS parts))
+                        (PP (IN of)
+                          (NP (DT the) (JJ other)))))))
+                (, ,)
+                (NP (DT the) (JJ other))
+                (VP
+                  (VP (VBZ sticks)
+                    (PP (TO to)
+                      (NP (PRP$ its) (NN dogma))))
+                  (CC and)
+                  (VP (VBZ tries)
+                    (S
+                      (VP (TO to)
+                        (VP (VB ban)
+                          (NP (NN science)))))))))))))
+    (. .)))
+
+nsubj(is-2, That-1)
+root(ROOT-0, is-2)
+advmod(bring-5, why-3)
+nsubj(bring-5, people-4)
+advcl(is-2, bring-5)
+dobj(bring-5, science-6)
+dobj(bring-5, religion-8)
+conj_and(science-6, religion-8)
+prep_into(bring-5, comparison-10)
+mark(sticks-23, because-12)
+mark(disproves-15, as-13)
+nsubj(disproves-15, one-14)
+advcl(sticks-23, disproves-15)
+dobj(disproves-15, parts-16)
+det(other-19, the-18)
+prep_of(parts-16, other-19)
+det(other-22, the-21)
+nsubj(sticks-23, other-22)
+nsubj(tries-28, other-22)
+xsubj(ban-30, other-22)
+advcl(bring-5, sticks-23)
+poss(dogma-26, its-25)
+prep_to(sticks-23, dogma-26)
+advcl(bring-5, tries-28)
+conj_and(sticks-23, tries-28)
+aux(ban-30, to-29)
+xcomp(tries-28, ban-30)
+dobj(ban-30, science-31)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADJP (JJ wrong)))
+    (. .)))
+
+nsubj(wrong-3, That-1)
+cop(wrong-3, is-2)
+root(ROOT-0, wrong-3)
+

@@ -1,0 +1,150 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB already))
+    (VP (VBP have)
+      (NP
+        (NP (JJ universal) (NN health) (NN care))
+        (SBAR
+          (S
+            (NP (PRP It))
+            (ADVP (RB just))
+            (VP (VBZ does) (RB n't)
+              (VP (VB work)
+                (ADVP (RB very) (RB well))))))))
+    (. .)))
+
+nsubj(have-3, We-1)
+advmod(have-3, already-2)
+root(ROOT-0, have-3)
+amod(care-6, universal-4)
+nn(care-6, health-5)
+dobj(have-3, care-6)
+dobj(work-11, care-6)
+nsubj(work-11, It-7)
+advmod(work-11, just-8)
+aux(work-11, does-9)
+neg(work-11, n't-10)
+rcmod(care-6, work-11)
+advmod(well-13, very-12)
+advmod(work-11, well-13)
+
+(ROOT
+  (FRAG
+    (FRAG
+      (X (DT The)
+        (ADJP (JJ poor)))
+      (VP (VBP get)
+        (NP (NN health) (NN care))))
+    (, ,)
+    (CC but)
+    (SBAR
+      (WHNP (WP who))
+      (S
+        (VP (VBZ pays)
+          (PP (IN for)
+            (NP (PRP it))))))
+    (. ?)))
+
+det(poor-2, The-1)
+dep(get-3, poor-2)
+root(ROOT-0, get-3)
+nn(care-5, health-4)
+dobj(get-3, care-5)
+dep(get-3, but-7)
+nsubj(pays-9, who-8)
+dep(get-3, pays-9)
+prep_for(pays-9, it-11)
+
+(ROOT
+  (SBARQ
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT a) (NN hospital))
+        (VP (VBZ writes)
+          (PRT (RP off))
+          (NP (DT a) (NN bill)))))
+    (WHNP (WP who))
+    (SQ
+      (VP (VBZ pays)))
+    (. ?)))
+
+advmod(writes-4, When-1)
+det(hospital-3, a-2)
+nsubj(writes-4, hospital-3)
+dep(pays-9, writes-4)
+prt(writes-4, off-5)
+det(bill-7, a-6)
+dobj(writes-4, bill-7)
+nsubj(pays-9, who-8)
+root(ROOT-0, pays-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP go)
+                (ADJP (JJ bankrupt))
+                (PP (RB because) (IN of)
+                  (NP (NN hospital) (NNS bills)))))))))
+    (VP (VBD had)
+      (NP (NN health) (NN insurance)))
+    (. .)))
+
+nsubj(had-12, Most-1)
+det(people-4, the-3)
+prep_of(Most-1, people-4)
+nsubj(go-6, people-4)
+rcmod(people-4, go-6)
+acomp(go-6, bankrupt-7)
+nn(bills-11, hospital-10)
+prep_because_of(go-6, bills-11)
+root(ROOT-0, had-12)
+nn(insurance-14, health-13)
+dobj(had-12, insurance-14)
+
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is) (RB n't)
+      (VP (VB do)
+        (S
+          (NP (PRP we))
+          (VP (VB need)
+            (NP (NN health) (NN reform))))))
+    (. .)))
+
+det(question-2, The-1)
+nsubj(do-5, question-2)
+aux(do-5, is-3)
+neg(do-5, n't-4)
+root(ROOT-0, do-5)
+nsubj(need-7, we-6)
+ccomp(do-5, need-7)
+nn(reform-9, health-8)
+dobj(need-7, reform-9)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB how))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (VP (VB fix)
+        (NP (DT the) (NNS problems))))
+    (. ?)))
+
+cc(fix-5, But-1)
+advmod(fix-5, how-2)
+aux(fix-5, do-3)
+nsubj(fix-5, we-4)
+root(ROOT-0, fix-5)
+det(problems-7, the-6)
+dobj(fix-5, problems-7)
+

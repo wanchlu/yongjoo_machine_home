@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (NP (NNS Cooperatives))
+    (VP (VBP are)
+      (NP
+        (NP (DT an) (JJ insufficient) (NN alternative))
+        (PP (TO to)
+          (NP (DT a) (JJ public) (NN option) (NNP Senator) (NNP John) (NNP Rockefeller)))))
+    (. .)))
+
+nsubj(alternative-5, Cooperatives-1)
+cop(alternative-5, are-2)
+det(alternative-5, an-3)
+amod(alternative-5, insufficient-4)
+root(ROOT-0, alternative-5)
+det(Rockefeller-12, a-7)
+amod(Rockefeller-12, public-8)
+nn(Rockefeller-12, option-9)
+nn(Rockefeller-12, Senator-10)
+nn(Rockefeller-12, John-11)
+prep_to(alternative-5, Rockefeller-12)
+
+(ROOT
+  (NP
+    (NP
+      (NP (NNP Democrat))
+      (PP (IN from)
+        (NP (NNP West) (NNP Virginia))))
+    (: :)
+    (NP (`` ``)
+      (NP (NNP Are) (NNS cooperatives))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ effective)
+                (PP (IN in)
+                  (S
+                    (VP (VBG taking)
+                      (PP (IN on)
+                        (NP (DT these) (JJ gigantic) (NN insurance) (NNS companies))))))))))))
+    (. ?)))
+
+root(ROOT-0, Democrat-1)
+nn(Virginia-4, West-3)
+prep_from(Democrat-1, Virginia-4)
+nn(cooperatives-8, Are-7)
+dep(Democrat-1, cooperatives-8)
+xsubj(effective-12, cooperatives-8)
+partmod(cooperatives-8, going-9)
+aux(effective-12, to-10)
+cop(effective-12, be-11)
+xcomp(going-9, effective-12)
+prepc_in(effective-12, taking-14)
+det(companies-19, these-16)
+amod(companies-19, gigantic-17)
+nn(companies-19, insurance-18)
+prep_on(taking-14, companies-19)
+
+(ROOT
+  (S
+    (NP (DT The) (NN answer))
+    (VP (VBZ is)
+      (NP (DT a) (JJ flat) (NN no.)))))
+
+det(answer-2, The-1)
+nsubj(no.-6, answer-2)
+cop(no.-6, is-3)
+det(no.-6, a-4)
+amod(no.-6, flat-5)
+root(ROOT-0, no.-6)
+

@@ -1,0 +1,144 @@
+(ROOT
+  (S
+    (LST (LS 1) (-RRB- -RRB-))
+    (NP (NNS grenades)
+      (CC and)
+      (NNS bombs))
+    (VP (VBP are)
+      (ADJP (RB federally) (JJ regulated)))
+    (. .)))
+
+dep(regulated-8, 1-1)
+nsubj(regulated-8, grenades-3)
+conj_and(grenades-3, bombs-5)
+nsubj(regulated-8, bombs-5)
+cop(regulated-8, are-6)
+advmod(regulated-8, federally-7)
+root(ROOT-0, regulated-8)
+
+(ROOT
+  (S
+    (ADVP (RB besides))
+    (, ,)
+    (NP
+      (NP (NN none))
+      (PP (IN of)
+        (NP (DT the) (NN college) (NNS shootings))))
+    (VP (VBD featured)
+      (SBAR
+        (S
+          (SBAR
+            (PRN
+              (NP
+                (NP (JJ explosive) (NNS devices))
+                (NP (CD .2)))
+              (-RRB- -RRB-))
+            (S
+              (NP (JJ certain) (NNS youths))
+              (ADVP (RB already))
+              (VP (VBP possess)
+                (NP (NNS firearms))
+                (PRN
+                  (S
+                    (NP
+                      (NP (JJ legal) (NN age))
+                      (PP (TO to)
+                        (NP (NN purchase) (NNS rifles)
+                          (CC and)
+                          (NNS shotguns)))
+                      (PP (IN in)
+                        (NP (JJS most) (NNS states))))
+                    (VP (VBZ is)
+                      (NP (CD 18.3))))
+                  (-RRB- -RRB-))
+                (S
+                  (VP (TO to)
+                    (VP (VB obtain)
+                      (S
+                        (NP (DT a) (JJ concealed) (NNS weapons))
+                        (VP (VB permit)
+                          (PP (IN in)
+                            (NP (JJS most) (NNS states)))))))))))
+          (, ,)
+          (NP (PRP one))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (NP (CD 21)))))))))
+    (. .)))
+
+advmod(featured-8, besides-1)
+nsubj(featured-8, none-3)
+det(shootings-7, the-5)
+nn(shootings-7, college-6)
+prep_of(none-3, shootings-7)
+root(ROOT-0, featured-8)
+amod(devices-10, explosive-9)
+dep(possess-16, devices-10)
+dep(devices-10, .2-11)
+amod(youths-14, certain-13)
+nsubj(possess-16, youths-14)
+xsubj(obtain-32, youths-14)
+advmod(possess-16, already-15)
+dep(has-42, possess-16)
+dobj(possess-16, firearms-17)
+amod(age-19, legal-18)
+nsubj(18.3-29, age-19)
+nn(rifles-22, purchase-21)
+prep_to(age-19, rifles-22)
+prep_to(age-19, shotguns-24)
+conj_and(rifles-22, shotguns-24)
+amod(states-27, most-26)
+prep_in(age-19, states-27)
+cop(18.3-29, is-28)
+parataxis(possess-16, 18.3-29)
+aux(obtain-32, to-31)
+xcomp(possess-16, obtain-32)
+det(weapons-35, a-33)
+amod(weapons-35, concealed-34)
+nsubj(permit-36, weapons-35)
+ccomp(obtain-32, permit-36)
+amod(states-39, most-38)
+prep_in(permit-36, states-39)
+nsubj(has-42, one-41)
+xsubj(21-45, one-41)
+ccomp(featured-8, has-42)
+aux(21-45, to-43)
+cop(21-45, be-44)
+xcomp(has-42, 21-45)
+
+(ROOT
+  (S
+    (SBAR (IN if)
+      (S
+        (NP (FW i))
+        (VP (VBP 'm) (RB not)
+          (VP (VBN mistaken)
+            (NP
+              (NP (DT the) (JJ legal) (NN definition))
+              (PP (IN of)
+                (NP (DT an) (NN adult))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (CD 18) (JJ +) (NNS years))
+        (PP (IN of)
+          (NP (NN age)))))
+    (. .)))
+
+mark(mistaken-5, if-1)
+nsubjpass(mistaken-5, i-2)
+auxpass(mistaken-5, 'm-3)
+neg(mistaken-5, not-4)
+csubj(years-15, mistaken-5)
+det(definition-8, the-6)
+amod(definition-8, legal-7)
+dobj(mistaken-5, definition-8)
+det(adult-11, an-10)
+prep_of(definition-8, adult-11)
+cop(years-15, is-12)
+num(years-15, 18-13)
+amod(years-15, +-14)
+root(ROOT-0, years-15)
+prep_of(years-15, age-17)
+

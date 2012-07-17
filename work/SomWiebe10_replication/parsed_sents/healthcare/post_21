@@ -1,0 +1,282 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN option) (NN monopoly))
+    (VP (VBZ squeezes)
+      (NP
+        (NP (NN health) (NN care) (NNS suppliers))
+        (, ,)
+        (NP
+          (NP (NNS doctors))
+          (NP (NNP Gregory) (NNP Mankiw)))))
+    (. .)))
+
+nn(monopoly-3, Public-1)
+nn(monopoly-3, option-2)
+nsubj(squeezes-4, monopoly-3)
+root(ROOT-0, squeezes-4)
+nn(suppliers-7, health-5)
+nn(suppliers-7, care-6)
+dobj(squeezes-4, suppliers-7)
+appos(suppliers-7, doctors-9)
+nn(Mankiw-11, Gregory-10)
+dep(doctors-9, Mankiw-11)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NNS pitfalls))
+    (PP (IN of)
+      (NP (DT the) (JJ public) (NN option) ('' '')))
+    (. .)))
+
+det(pitfalls-3, The-2)
+root(ROOT-0, pitfalls-3)
+dep(pitfalls-3, of-4)
+det(option-7, the-5)
+amod(option-7, public-6)
+pobj(of-4, option-7)
+
+(ROOT
+  (NP (NNP New) (NNP York) (NNP Times) (. .)))
+
+nn(Times-3, New-1)
+nn(Times-3, York-2)
+root(ROOT-0, Times-3)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 27) (, ,) (CD 2009))
+    (: :)
+    (S (`` ``)
+      (NP (WDT Which))
+      (VP (VBZ raises)
+        (NP
+          (NP (DT the) (NN question))
+          (: :)
+          (SQ (MD Would)
+            (NP
+              (NP (DT the) (NN existence))
+              (PP (IN of)
+                (NP
+                  (NP (DT a) (JJ dominant) (NN government) (NN provider))
+                  (PP (IN of)
+                    (NP (NN health) (NN insurance))))))
+            (VP (VB be)
+              (ADJP (JJ good)
+                (CC or)
+                (JJ bad)))))))
+    (. ?)))
+
+root(ROOT-0, June-1)
+num(June-1, 27-2)
+num(June-1, 2009-4)
+nsubj(raises-8, Which-7)
+dep(June-1, raises-8)
+det(question-10, the-9)
+dobj(raises-8, question-10)
+aux(good-24, Would-12)
+det(existence-14, the-13)
+nsubj(good-24, existence-14)
+nsubj(bad-26, existence-14)
+det(provider-19, a-16)
+amod(provider-19, dominant-17)
+nn(provider-19, government-18)
+prep_of(existence-14, provider-19)
+nn(insurance-22, health-21)
+prep_of(provider-19, insurance-22)
+cop(good-24, be-23)
+dep(question-10, good-24)
+dep(question-10, bad-26)
+conj_or(good-24, bad-26)
+
+(ROOT
+  (S
+    (VP (VBG -RRB-)
+      (NP (DT A) (JJ dominant) (NN government) (NN insurer) (NN -LRB-)))
+    (: ...)))
+
+det(insurer-5, A-2)
+amod(insurer-5, dominant-3)
+nn(insurer-5, government-4)
+root(ROOT-0, insurer-5)
+
+(ROOT
+  (S
+    (NP (NNP -RRB-))
+    (VP (MD could)
+      (ADVP (RB potentially))
+      (VP (VB keep)
+        (NP (NNS costs))
+        (PRT (RP down))
+        (PP (IN by)
+          (S
+            (VP (VBG squeezing)
+              (NP
+                (NP (DT the) (NNS suppliers))
+                (PP (IN of)
+                  (NP (NN health) (NN care)))))))))
+    (. .)))
+
+aux(keep-4, could-2)
+advmod(keep-4, potentially-3)
+root(ROOT-0, keep-4)
+dobj(keep-4, costs-5)
+prt(keep-4, down-6)
+prepc_by(keep-4, squeezing-8)
+det(suppliers-10, the-9)
+dobj(squeezing-8, suppliers-10)
+nn(care-13, health-12)
+prep_of(suppliers-10, care-13)
+
+(ROOT
+  (S
+    (NP (DT This) (NN cost) (NN control))
+    (VP (VBZ works)
+      (PP (RB not)
+        (PP (IN by)
+          (NP (JJ fostering) (JJ honest) (NN competition)))
+        (CC but)
+        (PP (IN by)
+          (S
+            (VP (VBG thwarting)
+              (NP (PRP it)))))))
+    (. .)))
+
+det(control-3, This-1)
+nn(control-3, cost-2)
+nsubj(works-4, control-3)
+root(ROOT-0, works-4)
+neg(works-4, not-5)
+amod(competition-9, fostering-7)
+amod(competition-9, honest-8)
+prep_by(works-4, competition-9)
+prep_by(works-4, thwarting-12)
+conj_but(competition-9, thwarting-12)
+dobj(thwarting-12, it-13)
+
+(ROOT
+  (S
+    (SBAR (RB -RRB-) (IN If)
+      (S
+        (NP (DT the) (NN government))
+        (VP (VBZ has)
+          (NP
+            (NP (DT a) (JJ dominant) (NN role))
+            (PP (IN in)
+              (S
+                (VP (VBG buying)
+                  (NP
+                    (NP (DT the) (NNS services))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS doctors))
+                        (CC and)
+                        (NP (JJ other) (NN health) (NN care) (NNS providers))))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD can)
+      (VP (VB force)
+        (NP (NNS prices))
+        (PRT (RP down))))
+    (. .)))
+
+dep(has-5, If-2)
+det(government-4, the-3)
+nsubj(has-5, government-4)
+advcl(force-23, has-5)
+det(role-8, a-6)
+amod(role-8, dominant-7)
+dobj(has-5, role-8)
+prepc_in(role-8, buying-10)
+det(services-12, the-11)
+dobj(buying-10, services-12)
+prep_of(services-12, doctors-14)
+amod(providers-19, other-16)
+nn(providers-19, health-17)
+nn(providers-19, care-18)
+prep_of(services-12, providers-19)
+conj_and(doctors-14, providers-19)
+nsubj(force-23, it-21)
+aux(force-23, can-22)
+root(ROOT-0, force-23)
+dobj(force-23, prices-24)
+prt(force-23, down-25)
+
+(ROOT
+  (S
+    (SBAR (IN Once)
+      (S
+        (NP (DT the) (NN government))
+        (VP (VBZ is)
+          (NP
+            (NP (RB virtually) (DT the) (JJ only) (NN game))
+            (PP (IN in)
+              (NP (NN town)))))))
+    (, ,)
+    (NP (NN health) (NN care) (NNS providers))
+    (VP (MD will)
+      (VP (VB have)
+        (UCP
+          (NP (JJ little) (NN choice))
+          (CC but)
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (SBAR
+                  (WHNP (WDT whatever))
+                  (S
+                    (NP (PRP they))
+                    (VP (MD can)
+                      (VP (VB get)))))))))))
+    (. .)))
+
+mark(game-8, Once-1)
+det(government-3, the-2)
+nsubj(game-8, government-3)
+cop(game-8, is-4)
+advmod(game-8, virtually-5)
+det(game-8, the-6)
+amod(game-8, only-7)
+advcl(have-16, game-8)
+prep_in(game-8, town-10)
+nn(providers-14, health-12)
+nn(providers-14, care-13)
+nsubj(have-16, providers-14)
+aux(have-16, will-15)
+root(ROOT-0, have-16)
+amod(choice-18, little-17)
+dobj(have-16, choice-18)
+aux(take-21, to-20)
+dobj(have-16, take-21)
+conj_but(choice-18, take-21)
+infmod(choice-18, take-21)
+dobj(get-25, whatever-22)
+nsubj(get-25, they-23)
+aux(get-25, can-24)
+ccomp(take-21, get-25)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT no) (NN wonder))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP American) (NNP Medical) (NNP Association))
+          (VP (VBZ opposes)
+            (NP (DT the) (JJ public) (NN option))))))
+    (. .)))
+
+nsubj(wonder-4, It-1)
+cop(wonder-4, is-2)
+det(wonder-4, no-3)
+root(ROOT-0, wonder-4)
+complm(opposes-10, that-5)
+det(Association-9, the-6)
+nn(Association-9, American-7)
+nn(Association-9, Medical-8)
+nsubj(opposes-10, Association-9)
+ccomp(wonder-4, opposes-10)
+det(option-13, the-11)
+amod(option-13, public-12)
+dobj(opposes-10, option-13)
+

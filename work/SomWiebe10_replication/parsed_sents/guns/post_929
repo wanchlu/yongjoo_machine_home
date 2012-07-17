@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP do) (RB n't)
+      (VP (VB kill)
+        (NP (NNS people))))
+    (. .)))
+
+nsubj(kill-4, Guns-1)
+aux(kill-4, do-2)
+neg(kill-4, n't-3)
+root(ROOT-0, kill-4)
+dobj(kill-4, people-5)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP kill)
+      (NP (NNS people)))
+    (. .)))
+
+nsubj(kill-2, People-1)
+root(ROOT-0, kill-2)
+dobj(kill-2, people-3)
+
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VB assist)
+      (NP (NNS people)))
+    (. .)))
+
+nsubj(assist-2, Guns-1)
+root(ROOT-0, assist-2)
+dobj(assist-2, people-3)
+

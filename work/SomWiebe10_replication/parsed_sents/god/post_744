@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP
+        (VP (VBP hear)
+          (NP (PRP you)))
+        (CC and)
+        (VP (VBP understand)
+          (NP
+            (NP (DT all))
+            (PP (IN of)
+              (NP (DT those) (NNS things)))))))
+    (NP (PRP you))
+    (VP (VBD mentioned))
+    (. .)))
+
+nsubj(hear-2, I-1)
+nsubj(understand-5, I-1)
+dep(mentioned-11, hear-2)
+dobj(hear-2, you-3)
+conj_and(hear-2, understand-5)
+dep(mentioned-11, understand-5)
+dobj(understand-5, all-6)
+det(things-9, those-8)
+prep_of(all-6, things-9)
+nsubj(mentioned-11, you-10)
+root(ROOT-0, mentioned-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (JJ theological) (NN discussion))
+        (PP (IN on)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (EX there))
+              (VP (VBP are)
+                (ADVP (RB so))
+                (NP
+                  (NP (JJ many) (JJ bad) (NNS things))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP happen)
+                        (PP (IN in)
+                          (NP (DT the) (NN world)))))))))))))
+    (. .)))
+
+nsubj(discussion-5, It-1)
+cop(discussion-5, 's-2)
+det(discussion-5, a-3)
+amod(discussion-5, theological-4)
+root(ROOT-0, discussion-5)
+advmod(are-9, why-7)
+expl(are-9, there-8)
+prepc_on(discussion-5, are-9)
+advmod(are-9, so-10)
+amod(things-13, many-11)
+amod(things-13, bad-12)
+nsubj(are-9, things-13)
+nsubj(happen-15, things-13)
+rcmod(things-13, happen-15)
+det(world-18, the-17)
+prep_in(happen-15, world-18)
+

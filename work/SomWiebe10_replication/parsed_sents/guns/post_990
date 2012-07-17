@@ -1,0 +1,139 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP do) (RB n't)
+      (VP (VB kill)
+        (S
+          (NP (NNS people) (NNS people))
+          (VP (VB kill)
+            (NP (NNS people))))
+        (, ,)
+        (SBAR
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBP 'm)
+                (ADJP (JJ sorry)))))
+          (CC but)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ 's)
+                (ADVP (RB just))
+                (NP
+                  (NP (DT a) (JJ poor) (NN excuse))
+                  (VP (VBN pandered)
+                    (PRT (RP around))
+                    (PP (IN by)
+                      (NP (DT the) (NN gun) (NN lobby)))))))))))
+    (. .)))
+
+nsubj(kill-4, Guns-1)
+aux(kill-4, do-2)
+neg(kill-4, n't-3)
+root(ROOT-0, kill-4)
+nn(people-6, people-5)
+nsubj(kill-7, people-6)
+ccomp(kill-4, kill-7)
+dobj(kill-7, people-8)
+nsubj(sorry-12, I-10)
+cop(sorry-12, 'm-11)
+dep(kill-4, sorry-12)
+nsubj(excuse-19, that-14)
+cop(excuse-19, 's-15)
+advmod(excuse-19, just-16)
+det(excuse-19, a-17)
+amod(excuse-19, poor-18)
+dep(kill-4, excuse-19)
+conj_but(sorry-12, excuse-19)
+partmod(excuse-19, pandered-20)
+prt(pandered-20, around-21)
+det(lobby-25, the-23)
+nn(lobby-25, gun-24)
+agent(pandered-20, lobby-25)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Sorry))
+      (NP (NNS guys)
+        (CC but)
+        (NNS guns))
+      (VP (VBP kill)
+        (NP (NNS people))))
+    (PRN (, ,)
+      (S
+        (NP (DT a) (NN gun))
+        (VP (VBZ is)
+          (NP (DT a) (NN tool)
+            (S
+              (VP (TO to)
+                (VP (VB kill)))))))
+      (, ,))
+    (RB not)
+    (S
+      (VP (VB protect)
+        (NP (PRP$ your) (NN family))
+        (, ,) (VB kill)))
+    (. .)))
+
+advmod(kill-5, Sorry-1)
+nsubj(kill-5, guys-2)
+conj_but(guys-2, guns-4)
+nsubj(kill-5, guns-4)
+root(ROOT-0, kill-5)
+dobj(kill-5, people-6)
+det(gun-9, a-8)
+nsubj(tool-12, gun-9)
+cop(tool-12, is-10)
+det(tool-12, a-11)
+dep(kill-5, tool-12)
+aux(kill-14, to-13)
+infmod(tool-12, kill-14)
+neg(kill-5, not-16)
+ccomp(kill-5, protect-17)
+poss(family-19, your-18)
+dobj(protect-17, family-19)
+dep(protect-17, kill-21)
+
+(ROOT
+  (S
+    (NP (VB Stop))
+    (ADJP
+      (ADJP (JJ living)
+        (PP (IN in)
+          (NP
+            (NP (DT this) (NN sugar))
+            (SBAR
+              (WHNP
+                (NP (JJ coated) (NN fantasy)
+                  (CC and)
+                  (NN wake))
+                (PP (IN up)
+                  (NP (DT all) (NN gun) (NN ownership))))
+              (S
+                (VP (MD should)
+                  (VP (VB be)
+                    (VP (VBN controlled)))))))))
+      (, ,)
+      (CC and)
+      (ADJP (RB even) (VBN banned)))
+    (. .)))
+
+dep(living-2, Stop-1)
+root(ROOT-0, living-2)
+det(sugar-5, this-4)
+prep_in(living-2, sugar-5)
+amod(fantasy-7, coated-6)
+nsubjpass(controlled-16, fantasy-7)
+conj_and(fantasy-7, wake-9)
+nsubjpass(controlled-16, wake-9)
+det(ownership-13, all-11)
+nn(ownership-13, gun-12)
+prep_up(fantasy-7, ownership-13)
+aux(controlled-16, should-14)
+auxpass(controlled-16, be-15)
+rcmod(sugar-5, controlled-16)
+advmod(banned-20, even-19)
+conj_and(living-2, banned-20)
+

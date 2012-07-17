@@ -1,0 +1,203 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP DC) (NN handgun) (NN ban))
+    (VP (VBD did)
+      (NP (NN decrease) (NN crime))
+      (ADVP (RB immediately))
+      (PP (IN after)
+        (S
+          (VP (VBG passing)))))
+    (. .)))
+
+det(ban-4, The-1)
+nn(ban-4, DC-2)
+nn(ban-4, handgun-3)
+nsubj(did-5, ban-4)
+root(ROOT-0, did-5)
+nn(crime-7, decrease-6)
+dobj(did-5, crime-7)
+advmod(did-5, immediately-8)
+prepc_after(did-5, passing-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP DC) (NN handgun) (NN ban))
+    (VP (VBD did)
+      (NP (NN decrease) (NN crime)
+        (CC and)
+        (NN murder) (NNS rates))
+      (ADVP (RB directly))
+      (SBAR (IN after)
+        (S
+          (NP (DT the) (NN ban))
+          (VP (VBD was)
+            (VP (VBN passed))))))
+    (. .)))
+
+det(ban-4, The-1)
+nn(ban-4, DC-2)
+nn(ban-4, handgun-3)
+nsubj(did-5, ban-4)
+root(ROOT-0, did-5)
+nn(crime-7, decrease-6)
+dobj(did-5, crime-7)
+nn(rates-10, murder-9)
+dobj(did-5, rates-10)
+conj_and(crime-7, rates-10)
+advmod(did-5, directly-11)
+mark(passed-16, after-12)
+det(ban-14, the-13)
+nsubjpass(passed-16, ban-14)
+auxpass(passed-16, was-15)
+advcl(did-5, passed-16)
+
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (TO to)
+        (NP (NNP CBS) (NN news))))
+    (, ,) (`` ``)
+    (NP
+      (NP (NNP Homicides))
+      (PP (IN in)
+        (NP (DT the) (NN district))))
+    (VP (VBD did)
+      (NP (NN ebb))
+      (PP (IN over)
+        (NP (DT the) (JJ next) (JJ few) (NNS years))))
+    (, ,)
+    (PP
+      (ADVP (RB largely))
+      (VBG following)
+      (NP (DT a) (JJ national) (NN trend)))
+    (. .)))
+
+prepc_according_to(did-11, to-2)
+nn(news-4, CBS-3)
+pobj(did-11, news-4)
+nsubj(did-11, Homicides-7)
+det(district-10, the-9)
+prep_in(Homicides-7, district-10)
+root(ROOT-0, did-11)
+dobj(did-11, ebb-12)
+det(years-17, the-14)
+amod(years-17, next-15)
+amod(years-17, few-16)
+prep_over(did-11, years-17)
+advmod(did-11, largely-19)
+det(trend-23, a-21)
+amod(trend-23, national-22)
+prep_following(did-11, trend-23)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1977)))
+    (, ,)
+    (NP
+      (NP (DT the) (NNP U.S.) (NNP Conference))
+      (PP (IN of)
+        (NP (NNP Mayors))))
+    (VP
+      (VP (VBD reported)
+        (NP (NNS robberies) (, ,) (NNS assaults)
+          (CC and)
+          (NNS homicides))
+        (S
+          (VP (VBG using)
+            (SBAR
+              (S
+                (NP (NNS handguns))
+                (VP (VBD had)
+                  (VP (VBN fallen)
+                    (ADVP (RB sharply))
+                    (PP (IN in)
+                      (NP (NNP D.C.))))))))))
+      (CC and)
+      (VP (VBD concluded)
+        (SBAR
+          (S
+            (NP (DT the) (NN ban))
+            (VP (VBD was)
+              (VP (VBG working)))))))
+    (. .)))
+
+prep_in(reported-9, 1977-2)
+det(Conference-6, the-4)
+nn(Conference-6, U.S.-5)
+nsubj(reported-9, Conference-6)
+nsubj(concluded-23, Conference-6)
+prep_of(Conference-6, Mayors-8)
+root(ROOT-0, reported-9)
+dobj(reported-9, robberies-10)
+dobj(reported-9, assaults-12)
+conj_and(robberies-10, assaults-12)
+dobj(reported-9, homicides-14)
+conj_and(robberies-10, homicides-14)
+xcomp(reported-9, using-15)
+nsubj(fallen-18, handguns-16)
+aux(fallen-18, had-17)
+ccomp(using-15, fallen-18)
+advmod(fallen-18, sharply-19)
+prep_in(fallen-18, D.C.-21)
+conj_and(reported-9, concluded-23)
+det(ban-25, the-24)
+nsubj(working-27, ban-25)
+aux(working-27, was-26)
+ccomp(concluded-23, working-27)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (DT the) (NNS results))
+    (VP (VBD were)
+      (VP (VBN challenged)
+        (ADVP (RB even))
+        (PP (IN by)
+          (NP
+            (NP
+              (NP (DT the) (NN city) (POS 's))
+              (NN police) (NN department))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBD said)
+                  (SBAR
+                    (S
+                      (NP (NN police) (NNS tactics))
+                      (VP (VBD had)
+                        (VP (VBN contributed)
+                          (PP (TO to)
+                            (NP (DT the) (NN drop))))))))))))))
+    (. .)))
+
+advmod(challenged-6, However-1)
+det(results-4, the-3)
+nsubjpass(challenged-6, results-4)
+auxpass(challenged-6, were-5)
+root(ROOT-0, challenged-6)
+advmod(challenged-6, even-7)
+det(city-10, the-9)
+poss(department-13, city-10)
+nn(department-13, police-12)
+agent(challenged-6, department-13)
+nsubj(said-16, department-13)
+rcmod(department-13, said-16)
+nn(tactics-18, police-17)
+nsubj(contributed-20, tactics-18)
+aux(contributed-20, had-19)
+ccomp(said-16, contributed-20)
+det(drop-23, the-22)
+prep_to(contributed-20, drop-23)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 5))
+      (-RRB- -RRB-))))
+
+appos(''-1, 5-3)
+

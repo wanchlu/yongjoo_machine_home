@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBN made)
+        (PP (IN by)
+          (NP (NNP SCIENCE)))))
+    (: ...)))
+
+nsubjpass(made-3, I-1)
+auxpass(made-3, was-2)
+root(ROOT-0, made-3)
+agent(made-3, SCIENCE-5)
+
+(ROOT
+  (S
+    (NP (NNP SCIENCE))
+    (VP (VBD existed)
+      (ADVP (RB even))
+      (PP (IN before)
+        (NP
+          (NP (DT the) (NN creation))
+          (PP (IN of)
+            (NP (DT this) (NNP UNIVERSE))))))
+    (: ...)))
+
+nsubj(existed-2, SCIENCE-1)
+root(ROOT-0, existed-2)
+advmod(existed-2, even-3)
+det(creation-6, the-5)
+prep_before(existed-2, creation-6)
+det(UNIVERSE-9, this-8)
+prep_of(creation-6, UNIVERSE-9)
+
+(ROOT
+  (S
+    (NP (PRP We) (NNS Humans))
+    (VP
+      (ADVP (RB just))
+      (VBD gave)
+      (NP (PRP it))
+      (NP (DT a) (NN name)))
+    (: ...)))
+
+dep(Humans-2, We-1)
+nsubj(gave-4, Humans-2)
+advmod(gave-4, just-3)
+root(ROOT-0, gave-4)
+iobj(gave-4, it-5)
+det(name-7, a-6)
+dobj(gave-4, name-7)
+

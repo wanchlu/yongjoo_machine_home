@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Homeland) (NNP Security) (NNP Secretary) (NNP Tom) (NNP Ridge))
+      (SBAR (`` ``)
+        (S
+          (NP (PRP I))
+          (VP (VBP do) (RB n't)
+            (VP (VB think)
+              (NP (PRP we)))))))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB equip)
+            (NP (PRP$ our) (NNS pilots))
+            (PP (IN with)
+              (NP (NNS firearms)))))))
+    (. .)))
+
+nn(Ridge-5, Homeland-1)
+nn(Ridge-5, Security-2)
+nn(Ridge-5, Secretary-3)
+nn(Ridge-5, Tom-4)
+nsubj(want-12, Ridge-5)
+xsubj(equip-14, Ridge-5)
+nsubj(think-10, I-7)
+aux(think-10, do-8)
+neg(think-10, n't-9)
+dep(Ridge-5, think-10)
+dobj(think-10, we-11)
+root(ROOT-0, want-12)
+aux(equip-14, to-13)
+xcomp(want-12, equip-14)
+poss(pilots-16, our-15)
+dobj(equip-14, pilots-16)
+prep_with(equip-14, firearms-18)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (MD would)
+      (NP (PRP it))
+      (VP (VB end)))
+    (. ?)))
+
+advmod(end-4, Where-1)
+aux(end-4, would-2)
+nsubj(end-4, it-3)
+root(ROOT-0, end-4)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 1))
+      (-RRB- -RRB-))))
+
+appos(''-1, 1-3)
+

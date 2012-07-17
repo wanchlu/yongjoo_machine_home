@@ -1,0 +1,234 @@
+(ROOT
+  (S
+    (PP (IN Through)
+      (NP (DT the) (NNP VA) (NN system)))
+    (NP
+      (NP
+        (NP (DT the) (NN president))
+        (PP (IN of)
+          (NP (DT the) (NNP US))))
+      (CC and)
+      (NP
+        (NP (DT the) (NNP Congress))
+        (CC and)
+        (NP (NN thier) (NNS families))))
+    (VP (VBP recieve)
+      (NP
+        (NP (DT the) (JJS finest) (NN health) (NN care))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN world))
+            (PP (IN at)
+              (NP
+                (NP (NNP Walter) (NNP Reed) (NNP medical))
+                (PP (IN in)
+                  (NP (NNP DC)))))))))
+    (. .)))
+
+det(system-4, the-2)
+nn(system-4, VA-3)
+prep_through(recieve-16, system-4)
+det(president-6, the-5)
+nsubj(recieve-16, president-6)
+det(US-9, the-8)
+prep_of(president-6, US-9)
+det(Congress-12, the-11)
+conj_and(president-6, Congress-12)
+nsubj(recieve-16, Congress-12)
+nn(families-15, thier-14)
+conj_and(president-6, families-15)
+conj_and(Congress-12, families-15)
+root(ROOT-0, recieve-16)
+det(care-20, the-17)
+amod(care-20, finest-18)
+nn(care-20, health-19)
+dobj(recieve-16, care-20)
+det(world-23, the-22)
+prep_in(care-20, world-23)
+nn(medical-27, Walter-25)
+nn(medical-27, Reed-26)
+prep_at(world-23, medical-27)
+prep_in(medical-27, DC-29)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ same) (NN campus))
+    (VP (VBD was)
+      (VP (VBN found)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP
+                (NP (NN mold))
+                (VP (VBG growing)
+                  (PP (IN on)
+                    (NP
+                      (NP (DT the) (NNS walls))
+                      (PP (IN in)
+                        (NP (DT the) (NNS rooms)))))
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP$ our) (VBG returning) (NNS soldiers))
+                      (VP (VBD were)
+                        (VP (VBG being)
+                          (VP (VBN assigned)
+                            (PP (TO to)
+                              (SBAR (IN while)
+                                (S
+                                  (NP (PRP they))
+                                  (VP (VB recoup)
+                                    (PP (IN from)
+                                      (NP (NN battle) (NNS injuries)))))))))))))))))))
+    (. .)))
+
+det(campus-3, The-1)
+amod(campus-3, same-2)
+nsubjpass(found-5, campus-3)
+xsubj(have-7, campus-3)
+auxpass(found-5, was-4)
+root(ROOT-0, found-5)
+aux(have-7, to-6)
+xcomp(found-5, have-7)
+dobj(have-7, mold-8)
+partmod(mold-8, growing-9)
+det(walls-12, the-11)
+prep_on(growing-9, walls-12)
+det(rooms-15, the-14)
+prep_in(walls-12, rooms-15)
+complm(assigned-22, that-16)
+poss(soldiers-19, our-17)
+amod(soldiers-19, returning-18)
+nsubjpass(assigned-22, soldiers-19)
+aux(assigned-22, were-20)
+auxpass(assigned-22, being-21)
+ccomp(growing-9, assigned-22)
+mark(recoup-26, while-24)
+nsubj(recoup-26, they-25)
+prepc_to(assigned-22, recoup-26)
+nn(injuries-29, battle-28)
+prep_from(recoup-26, injuries-29)
+
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (MD can) (RB not)
+      (VP (VB be)
+        (VP (VBN trusted)
+          (PP (IN with)
+            (NP
+              (NP (NN something))
+              (ADJP (DT this) (JJ important)))))))
+    (. .)))
+
+det(government-2, The-1)
+nsubjpass(trusted-6, government-2)
+aux(trusted-6, can-3)
+neg(trusted-6, not-4)
+auxpass(trusted-6, be-5)
+root(ROOT-0, trusted-6)
+prep_with(trusted-6, something-8)
+dep(important-10, this-9)
+amod(something-8, important-10)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (ADJP (RB totally) (JJ ineffecient)))
+    (. .)))
+
+nsubj(ineffecient-4, They-1)
+cop(ineffecient-4, are-2)
+advmod(ineffecient-4, totally-3)
+root(ROOT-0, ineffecient-4)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ red) (NN tape))
+    (VP (VBZ ties)
+      (NP
+        (NP (DT the) (NNS hands))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNS employees))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP
+                  (VP (VBP do)
+                    (NP (NN care)))
+                  (CC and)
+                  (VP (VBZ gives))
+                  (VP (VB cover)
+                    (PP (TO to)
+                      (NP
+                        (NP (DT the) (NNS ones))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP do) (RB n't))))))))))))))
+    (. .)))
+
+det(tape-3, The-1)
+amod(tape-3, red-2)
+nsubj(ties-4, tape-3)
+root(ROOT-0, ties-4)
+det(hands-6, the-5)
+dobj(ties-4, hands-6)
+det(employees-9, the-8)
+prep_of(hands-6, employees-9)
+nsubj(do-11, employees-9)
+nsubj(gives-14, employees-9)
+rcmod(employees-9, do-11)
+dobj(do-11, care-12)
+rcmod(employees-9, gives-14)
+conj_and(do-11, gives-14)
+dep(do-11, cover-15)
+det(ones-18, the-17)
+prep_to(cover-15, ones-18)
+nsubj(do-20, ones-18)
+rcmod(ones-18, do-20)
+neg(do-20, n't-21)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Name)
+        (NP (CD one) (NN program))))
+    (S
+      (NP (DT the) (NN government))
+      (VP (VBZ runs)
+        (PP (IN without)
+          (NP (JJ massive) (NN waste)
+            (CC and)
+            (NN corruption)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD will)
+        (VP (VB consider)
+          (NP (PRP$ your) (NN argument))
+          (PP (IN for)
+            (NP (NN government) (NN run) (NN healthcare))))))
+    (. .)))
+
+root(ROOT-0, Name-1)
+num(program-3, one-2)
+dobj(Name-1, program-3)
+det(government-5, the-4)
+nsubj(runs-6, government-5)
+ccomp(Name-1, runs-6)
+amod(waste-9, massive-8)
+prep_without(runs-6, waste-9)
+prep_without(runs-6, corruption-11)
+conj_and(waste-9, corruption-11)
+nsubj(consider-16, I-14)
+aux(consider-16, will-15)
+conj_and(Name-1, consider-16)
+poss(argument-18, your-17)
+dobj(consider-16, argument-18)
+nn(healthcare-22, government-20)
+nn(healthcare-22, run-21)
+prep_for(consider-16, healthcare-22)
+

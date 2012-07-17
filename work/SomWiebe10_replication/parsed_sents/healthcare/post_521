@@ -1,0 +1,203 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ actual) (NNS polls))
+      (SBAR
+        (S
+          (NP (RB just) (JJ last) (NN week))
+          (NP (NNP Rasmussen) (NNS polls))
+          (VP (VBP show)
+            (NP
+              (NP
+                (QP (RB only) (CD 45))
+                (NN %))
+              (PP (IN versus)
+                (NP (CD 52) (NN %))))))))
+    (VP (VBP appose))
+    (. .)))
+
+det(polls-3, The-1)
+amod(polls-3, actual-2)
+nsubj(appose-16, polls-3)
+advmod(week-6, just-4)
+amod(week-6, last-5)
+tmod(show-9, week-6)
+nn(polls-8, Rasmussen-7)
+nsubj(show-9, polls-8)
+rcmod(polls-3, show-9)
+quantmod(45-11, only-10)
+num(%-12, 45-11)
+dobj(show-9, %-12)
+num(%-15, 52-14)
+prep_versus(%-12, %-15)
+root(ROOT-0, appose-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBD got)
+      (NP
+        (NP (DT that))
+        (PP (IN of)
+          (NP (DT the) (NNP Rasmussen)))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP (VBZ is)
+              (VP (VBN considered)
+                (PP (IN by)
+                  (NP
+                    (NP (RB most) (DT the))
+                    (ADJP (RBS most) (JJ accurate))))))))))
+    (. .)))
+
+nsubj(got-3, I-1)
+advmod(got-3, just-2)
+root(ROOT-0, got-3)
+dobj(got-3, that-4)
+nsubjpass(considered-10, that-4)
+det(Rasmussen-7, the-6)
+prep_of(that-4, Rasmussen-7)
+auxpass(considered-10, is-9)
+rcmod(that-4, considered-10)
+advmod(the-13, most-12)
+agent(considered-10, the-13)
+advmod(accurate-15, most-14)
+amod(the-13, accurate-15)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (NP
+          (NP (WP what) (NN poll))
+          (SBAR
+            (S
+              (NP (PRP you))
+              (VP (VBD got)
+                (NP (CD 72) (NN %))
+                (PP (IN from))))))))
+    (. ?)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+dep(poll-6, what-5)
+dobj(know-4, poll-6)
+nsubj(got-8, you-7)
+rcmod(poll-6, got-8)
+num(%-10, 72-9)
+dobj(got-8, %-10)
+prep(got-8, from-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN one))
+          (VP (MD may)
+            (VP (VB be)
+              (ADJP (JJ skewed)))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(skewed-8, that-3)
+det(one-5, the-4)
+nsubj(skewed-8, one-5)
+aux(skewed-8, may-6)
+cop(skewed-8, be-7)
+ccomp(think-2, skewed-8)
+
+(ROOT
+  (S
+    (NP (NN Someone))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP
+            (VP
+              (ADVP (RB actually))
+              (VB go)
+              (NP (DT the)
+                (NP (DT the) (NNP CBO))
+                (CC or)
+                (NP (NNP CBC))))
+            (CC and)
+            (VP (VB pull)
+              (SBAR
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBD said))))
+                (CC and)
+                (SBAR
+                  (X
+                    (X (WP what))
+                    (NP (NNS numbers)))
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (VP (VBG giving)
+                        (ADVP (RB back))))))))))))
+    (. .)))
+
+nsubj(needs-2, Someone-1)
+xsubj(go-5, Someone-1)
+root(ROOT-0, needs-2)
+aux(go-5, to-3)
+advmod(go-5, actually-4)
+xcomp(needs-2, go-5)
+dep(CBO-8, the-6)
+det(CBO-8, the-7)
+dobj(go-5, CBO-8)
+dobj(go-5, CBC-10)
+conj_or(CBO-8, CBC-10)
+xcomp(needs-2, pull-12)
+conj_and(go-5, pull-12)
+dobj(said-15, what-13)
+nsubj(said-15, they-14)
+dep(pull-12, said-15)
+dep(numbers-18, what-17)
+dep(giving-21, numbers-18)
+nsubj(giving-21, they-19)
+aux(giving-21, are-20)
+dep(pull-12, giving-21)
+conj_and(said-15, giving-21)
+advmod(giving-21, back-22)
+
+(ROOT
+  (S
+    (NP (DT that))
+    (VP (MD will)
+      (VP (VB add)
+        (NP (DT some) (NN smoke))
+        (PP (TO to)
+          (NP (DT the) (NN gun)))
+        (SBAR (IN if)
+          (S
+            (NP (WDT what))
+            (ADVP (RB above))
+            (VP (VBZ is)
+              (ADJP (JJ true)))))))
+    (. .)))
+
+nsubj(add-3, that-1)
+aux(add-3, will-2)
+root(ROOT-0, add-3)
+det(smoke-5, some-4)
+dobj(add-3, smoke-5)
+det(gun-8, the-7)
+prep_to(add-3, gun-8)
+mark(true-13, if-9)
+nsubj(true-13, what-10)
+advmod(true-13, above-11)
+cop(true-13, is-12)
+advcl(add-3, true-13)
+

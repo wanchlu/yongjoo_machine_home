@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (CD 1994) (NN assault) (NNS weapons))
+      (NP (NN ban)))
+    (VP (VBD did) (RB not)
+      (VP (VB decrease)
+        (NP
+          (NP (NN crime))
+          (SBAR
+            (S
+              (NP
+                (NP (DT The) (JJ obvious) (NN intent))
+                (PP (IN of)
+                  (NP (DT the) (CD 1994) (NN assault) (NNS weapons) (NN ban))))
+              (VP (VBD was)
+                (S
+                  (VP (TO to)
+                    (VP (VB decrease)
+                      (NP
+                        (NP (JJ criminal) (NNS acts))
+                        (SBAR
+                          (WHPP (IN in)
+                            (WHNP (WDT which)))
+                          (S
+                            (NP (NN assault) (NNS weapons))
+                            (VP (VBD were)
+                              (VP (VBN used)))))))))))))))
+    (. .)))
+
+det(weapons-4, The-1)
+num(weapons-4, 1994-2)
+nn(weapons-4, assault-3)
+nsubj(decrease-8, weapons-4)
+dep(weapons-4, ban-5)
+aux(decrease-8, did-6)
+neg(decrease-8, not-7)
+root(ROOT-0, decrease-8)
+dobj(decrease-8, crime-9)
+det(intent-12, The-10)
+amod(intent-12, obvious-11)
+nsubj(was-19, intent-12)
+xsubj(decrease-21, intent-12)
+det(ban-18, the-14)
+num(ban-18, 1994-15)
+nn(ban-18, assault-16)
+nn(ban-18, weapons-17)
+prep_of(intent-12, ban-18)
+rcmod(crime-9, was-19)
+aux(decrease-21, to-20)
+xcomp(was-19, decrease-21)
+amod(acts-23, criminal-22)
+dobj(decrease-21, acts-23)
+rel(used-29, which-25)
+nn(weapons-27, assault-26)
+nsubjpass(used-29, weapons-27)
+auxpass(used-29, were-28)
+rcmod(acts-23, used-29)
+
+(ROOT
+  (S (CC But)
+    (, ,)
+    (NP (DT the) (NN assault) (NNS weapons) (NN ban))
+    (VP (VBZ has) (RB not)
+      (VP (VBN done)
+        (NP (DT this))))
+    (. .)))
+
+cc(done-9, But-1)
+det(ban-6, the-3)
+nn(ban-6, assault-4)
+nn(ban-6, weapons-5)
+nsubj(done-9, ban-6)
+aux(done-9, has-7)
+neg(done-9, not-8)
+root(ROOT-0, done-9)
+dobj(done-9, this-10)
+

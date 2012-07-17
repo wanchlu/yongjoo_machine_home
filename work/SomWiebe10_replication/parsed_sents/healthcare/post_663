@@ -1,0 +1,80 @@
+(ROOT
+  (NP (NNP Affordable) (: ...)))
+
+root(ROOT-0, Affordable-1)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT these) (NN insurance) (NNS companies))
+        (VP (VBP are)
+          (VP (VBG forcing)
+            (NP (DT the) (NNS rates))
+            (S
+              (VP (TO to)
+                (VP (VB hit)
+                  (NP (DT the) (NN roof)))))))))
+    (: ...)
+    (NP (NNS caps))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN set)
+              (ADVP (RB forth)))))))
+    (. ...)))
+
+mark(forcing-6, If-1)
+det(companies-4, these-2)
+nn(companies-4, insurance-3)
+nsubj(forcing-6, companies-4)
+aux(forcing-6, are-5)
+advcl(need-15, forcing-6)
+det(rates-8, the-7)
+dobj(forcing-6, rates-8)
+aux(hit-10, to-9)
+xcomp(forcing-6, hit-10)
+det(roof-12, the-11)
+dobj(hit-10, roof-12)
+nsubj(need-15, caps-14)
+xsubj(set-18, caps-14)
+root(ROOT-0, need-15)
+aux(set-18, to-16)
+auxpass(set-18, be-17)
+xcomp(need-15, set-18)
+advmod(set-18, forth-19)
+
+(ROOT
+  (S
+    (NP (JJ Ridiculous) (NNS lawsuits))
+    (VP (VBP need)
+      (NP (DT some) (NNS restrictions)))
+    (: ...)))
+
+amod(lawsuits-2, Ridiculous-1)
+nsubj(need-3, lawsuits-2)
+root(ROOT-0, need-3)
+det(restrictions-5, some-4)
+dobj(need-3, restrictions-5)
+
+(ROOT
+  (S
+    (NP (NNP Insurance))
+    (VP (VBZ is)
+      (VP (VBG driving)
+        (NP
+          (NP (DT the) (NNS costs))
+          (PP (IN of)
+            (NP (NN everything))))
+        (ADVP (RB up))))
+    (: ...)))
+
+nsubj(driving-3, Insurance-1)
+aux(driving-3, is-2)
+root(ROOT-0, driving-3)
+det(costs-5, the-4)
+dobj(driving-3, costs-5)
+prep_of(costs-5, everything-7)
+advmod(driving-3, up-8)
+

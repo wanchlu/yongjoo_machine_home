@@ -1,0 +1,130 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS people))
+        (VP (VBP are)
+          (ADJP (JJ uninsured)))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (NP
+        (NP (PRP$ their) (NN choice))
+        ('' '')
+        (PP (IN Against)
+          (NP (NNP Universal) (NNP Coverage) ('' '')))))
+    (. .)))
+
+mark(uninsured-4, If-1)
+nsubj(uninsured-4, people-2)
+cop(uninsured-4, are-3)
+advcl(choice-9, uninsured-4)
+nsubj(choice-9, that-6)
+cop(choice-9, 's-7)
+poss(choice-9, their-8)
+root(ROOT-0, choice-9)
+nn(Coverage-13, Universal-12)
+prep_against(choice-9, Coverage-13)
+
+(ROOT
+  (NP (NNP National) (NNP Review) (NNP Online) (. .)))
+
+nn(Online-3, National-1)
+nn(Online-3, Review-2)
+root(ROOT-0, Online-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP June) (CD 21) (, ,) (CD 2007))
+      (`` ``)
+      (NP (DT Some) (NNS people))
+      (, ,)
+      (NP (RB especially) (JJ young)
+        (CC and)
+        (JJ healthy) (NNS people))
+      (, ,))
+    (VP (MD may)
+      (VP (VB choose)
+        (S (RB not)
+          (VP (TO to)
+            (VP (VB buy)
+              (NP (NN health) (NN insurance))
+              (ADVP (RB even))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (NP (JJR cheaper) (NNS -LRB-))))))))))
+    (: ...)))
+
+nsubj(choose-16, June-1)
+xsubj(buy-19, June-1)
+num(June-1, 21-2)
+num(June-1, 2007-4)
+det(people-7, Some-6)
+dep(June-1, people-7)
+advmod(young-10, especially-9)
+appos(June-1, young-10)
+amod(people-13, healthy-12)
+appos(June-1, people-13)
+conj_and(young-10, people-13)
+aux(choose-16, may-15)
+root(ROOT-0, choose-16)
+neg(buy-19, not-17)
+aux(buy-19, to-18)
+xcomp(choose-16, buy-19)
+nn(insurance-21, health-20)
+dobj(buy-19, insurance-21)
+advmod(buy-19, even-22)
+advmod(cheaper-26, when-23)
+nsubj(cheaper-26, it-24)
+cop(cheaper-26, is-25)
+advcl(buy-19, cheaper-26)
+
+(ROOT
+  (SBARQ
+    (WHADJP (RB -RRB-)
+      (WHADJP (RB So) (WP what)))
+    (SQ (MD should)
+      (NP (DT the) (NN government))
+      (VP (VB do)
+        (PP (IN about)
+          (NP (DT the) (NNS holdouts)))))
+    (. ?)))
+
+dep(do-7, So-2)
+dep(So-2, what-3)
+aux(do-7, should-4)
+det(government-6, the-5)
+nsubj(do-7, government-6)
+root(ROOT-0, do-7)
+det(holdouts-10, the-9)
+prep_about(do-7, holdouts-10)
+
+(ROOT
+  (S
+    (VP (VB Leave)
+      (S
+        (NP (PRP them))
+        (ADJP (RB alone))))
+    (. .)))
+
+root(ROOT-0, Leave-1)
+nsubj(alone-3, them-2)
+xcomp(Leave-1, alone-3)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ s)
+      (NP (DT a) (JJ free) (NN country)))
+    (. .)))
+
+nsubj(country-5, It-1)
+cop(country-5, s-2)
+det(country-5, a-3)
+amod(country-5, free-4)
+root(ROOT-0, country-5)
+

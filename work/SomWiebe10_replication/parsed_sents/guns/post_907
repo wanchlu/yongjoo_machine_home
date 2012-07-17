@@ -1,0 +1,231 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Yes))
+      (PP (IN of)
+        (NP (NN course) (NN !!) (NNS Guns))))
+    (VP (MD might)
+      (VP
+        (VP (VB hurt)
+          (NP (NNS people)))
+        (CC or)
+        (VP
+          (ADVP (RB even))
+          (VB kill)
+          (NP (NNS people)))))
+    (. !)))
+
+nsubj(hurt-7, Yes-1)
+nsubj(kill-11, Yes-1)
+nn(Guns-5, course-3)
+nn(Guns-5, !!-4)
+prep_of(Yes-1, Guns-5)
+aux(hurt-7, might-6)
+root(ROOT-0, hurt-7)
+dobj(hurt-7, people-8)
+advmod(kill-11, even-10)
+conj_or(hurt-7, kill-11)
+dobj(kill-11, people-12)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN point))
+      (VP (VBZ is)))
+    (: :)
+    (S
+      (NP (NN u))
+      (VP (MD can) (RB not)
+        (VP (VB control)
+          (SBAR
+            (S
+              (NP (DT the) (NNS ones))
+              (ADVP (RB actually))
+              (VP (VBP have)
+                (NP (NNS guns))))))))
+    (. !)))
+
+det(point-2, The-1)
+nsubj(is-3, point-2)
+root(ROOT-0, is-3)
+nsubj(control-8, u-5)
+aux(control-8, can-6)
+neg(control-8, not-7)
+parataxis(is-3, control-8)
+det(ones-10, the-9)
+nsubj(have-12, ones-10)
+advmod(have-12, actually-11)
+ccomp(control-8, have-12)
+dobj(have-12, guns-13)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD will)
+      (VP (VB hurt)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP they))
+              (VP (VBP want)
+                (S
+                  (VP (VBG !!)
+                    (SBAR
+                      (S
+                        (NP (PRP They))
+                        (VP (MD will)
+                          (VP (VB use)
+                            (S
+                              (NP (PRP$ their) (NNS guns))
+                              (ADJP (JJ !!))
+                              (SBAR (IN If)
+                                (S
+                                  (NP (NN u))
+                                  (VP (VBP do) (RB n't)
+                                    (VP (VB ban)
+                                      (NP (PRP it))))))))))))))))
+          (, ,)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (VBZ is)
+                (NP
+                  (NP (DT the) (NN use))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS police))
+                      (VP (VBG ??)
+                        (S
+                          (NP (PRP They))
+                          (ADJP (JJ trained)
+                            (S
+                              (VP (TO to)
+                                (VP
+                                  (VP (VB be)
+                                    (ADJP (JJ strong)))
+                                  (CC and)
+                                  (VP (VB catch)
+                                    (NP (DT the) (NNS thieves))))))))))))))))))
+    (: ...)))
+
+nsubj(hurt-3, They-1)
+aux(hurt-3, will-2)
+root(ROOT-0, hurt-3)
+dobj(hurt-3, people-4)
+tmod(want-7, people-4)
+advmod(want-7, when-5)
+nsubj(want-7, they-6)
+dep(people-4, want-7)
+xcomp(want-7, !!-8)
+nsubj(use-11, They-9)
+aux(use-11, will-10)
+ccomp(!!-8, use-11)
+poss(guns-13, their-12)
+nsubj(ban-19, guns-13)
+dep(ban-19, !!-14)
+mark(ban-19, If-15)
+nsubj(ban-19, u-16)
+aux(ban-19, do-17)
+neg(ban-19, n't-18)
+xcomp(use-11, ban-19)
+dobj(ban-19, it-20)
+nsubj(use-25, what-22)
+cop(use-25, is-23)
+det(use-25, the-24)
+rcmod(people-4, use-25)
+prep_of(use-25, police-27)
+partmod(police-27, ??-28)
+nsubj(trained-30, They-29)
+xcomp(??-28, trained-30)
+aux(strong-33, to-31)
+cop(strong-33, be-32)
+xcomp(trained-30, strong-33)
+xcomp(trained-30, catch-35)
+conj_and(strong-33, catch-35)
+det(thieves-37, the-36)
+dobj(catch-35, thieves-37)
+
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (, ,)
+    (NP (DT all) (NNPS Americans))
+    (VP (VBD got)
+      (NP (NNS guns)))
+    (. .) (. .)))
+
+advmod(got-5, Now-1)
+det(Americans-4, all-3)
+nsubj(got-5, Americans-4)
+root(ROOT-0, got-5)
+dobj(got-5, guns-6)
+
+(ROOT
+  (S
+    (NP (RB Even) (NN police))
+    (VP (MD can) (RB not)
+      (VP (VB stop)
+        (NP (PRP them))
+        (PP (IN from)
+          (S
+            (VP (VBG stealing))))))
+    (. .) (. .)))
+
+advmod(police-2, Even-1)
+nsubj(stop-5, police-2)
+aux(stop-5, can-3)
+neg(stop-5, not-4)
+root(ROOT-0, stop-5)
+dobj(stop-5, them-6)
+prepc_from(stop-5, stealing-8)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (RB because) (PRP they))
+    (VP (VBD got)
+      (NP (NNS guns))
+      (ADVP (RB either)))
+    (-RRB- -RRB-) (. ...)))
+
+advmod(they-3, because-2)
+nsubj(got-4, they-3)
+root(ROOT-0, got-4)
+dobj(got-4, guns-5)
+advmod(got-4, either-6)
+
+(ROOT
+  (SBARQ (RB So)
+    (WHADVP (WRB how))
+    (SQ (MD can)
+      (NP (PRP we))
+      (VP (VB let)
+        (S
+          (NP (DT the) (NNPS Americans))
+          (VP (VB hurt)
+            (NP (NNS people))
+            (PP (IN by)
+              (S
+                (VP (VBG using)
+                  (NP (NNS guns))
+                  (ADVP (RB again)
+                    (CC and)
+                    (RB again)))))))))
+    (. ?)))
+
+advmod(let-5, So-1)
+advmod(let-5, how-2)
+aux(let-5, can-3)
+nsubj(let-5, we-4)
+root(ROOT-0, let-5)
+det(Americans-7, the-6)
+nsubj(hurt-8, Americans-7)
+ccomp(let-5, hurt-8)
+dobj(hurt-8, people-9)
+prepc_by(hurt-8, using-11)
+dobj(using-11, guns-12)
+advmod(using-11, again-13)
+advmod(using-11, again-15)
+conj_and(again-13, again-15)
+

@@ -1,0 +1,168 @@
+(ROOT
+  (S
+    (NP (JJ Single-payer) (NN health) (NN care))
+    (VP (VBZ hinders)
+      (NP
+        (NP (JJ medical) (NN investment)
+          (CC and)
+          (NN innovation))
+        (SBAR
+          (S
+            (NP
+              (NP (DT The) (JJ primary) (NN cause))
+              (PP (IN of)
+                (NP (DT this))))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN reduction))
+                (PP (IN in)
+                  (NP
+                    (NP (JJ economic) (NNS incentives))
+                    (PP (IN for)
+                      (NP (NN innovation)))))))))))
+    (. .)))
+
+amod(care-3, Single-payer-1)
+nn(care-3, health-2)
+nsubj(hinders-4, care-3)
+root(ROOT-0, hinders-4)
+amod(investment-6, medical-5)
+dobj(hinders-4, investment-6)
+dobj(hinders-4, innovation-8)
+conj_and(investment-6, innovation-8)
+det(cause-11, The-9)
+amod(cause-11, primary-10)
+nsubj(reduction-16, cause-11)
+prep_of(cause-11, this-13)
+cop(reduction-16, is-14)
+det(reduction-16, a-15)
+rcmod(investment-6, reduction-16)
+amod(incentives-19, economic-18)
+prep_in(reduction-16, incentives-19)
+prep_for(incentives-19, innovation-21)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN general)))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ only) (NN way))
+      (SBAR (IN that)
+        (S
+          (NP (NNS people))
+          (VP (MD will)
+            (VP (VB take)
+              (NP
+                (NP (DT the) (NN time))
+                (, ,)
+                (NP (NN energy))
+                (, ,)
+                (CC and)
+                (NP
+                  (NP (NNS risks))
+                  (VP (VBN involved)
+                    (PP (IN with)
+                      (NP (NN innovation)))))))))))
+    (VP (VBZ is)
+      (SBAR (IN if)
+        (S
+          (NP (EX there))
+          (VP (VBP are)
+            (NP
+              (NP (JJ substantial) (NNS returns))
+              (PP (IN for)
+                (NP (PRP$ their) (NN investment))))))))
+    (. .)))
+
+prep_in(is-21, general-2)
+det(way-6, the-4)
+amod(way-6, only-5)
+nsubj(is-21, way-6)
+complm(take-10, that-7)
+nsubj(take-10, people-8)
+aux(take-10, will-9)
+dep(way-6, take-10)
+det(time-12, the-11)
+dobj(take-10, time-12)
+dobj(take-10, energy-14)
+conj_and(time-12, energy-14)
+dobj(take-10, risks-17)
+conj_and(time-12, risks-17)
+partmod(risks-17, involved-18)
+prep_with(involved-18, innovation-20)
+root(ROOT-0, is-21)
+mark(are-24, if-22)
+expl(are-24, there-23)
+advcl(is-21, are-24)
+amod(returns-26, substantial-25)
+nsubj(are-24, returns-26)
+poss(investment-29, their-28)
+prep_for(returns-26, investment-29)
+
+(ROOT
+  (S
+    (NP (DT This) (NN notion))
+    (VP
+      (VP (VBZ underpins)
+        (NP
+          (NP (DT the) (NNS markets))
+          (CC and)
+          (NP (NN capitalism)))
+        (ADVP (RB generally)))
+      (, ,)
+      (CC but)
+      (VP (VBZ is)
+        (VP (VBN undermined)
+          (PP (IN by)
+            (NP (JJ universal) (NN health) (NN care))))))
+    (. .)))
+
+det(notion-2, This-1)
+nsubj(underpins-3, notion-2)
+nsubjpass(undermined-12, notion-2)
+root(ROOT-0, underpins-3)
+det(markets-5, the-4)
+dobj(underpins-3, markets-5)
+dobj(underpins-3, capitalism-7)
+conj_and(markets-5, capitalism-7)
+advmod(underpins-3, generally-8)
+auxpass(undermined-12, is-11)
+conj_but(underpins-3, undermined-12)
+amod(care-16, universal-14)
+nn(care-16, health-15)
+agent(undermined-12, care-16)
+
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (, ,)
+    (ADVP (RB therefore))
+    (, ,)
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN expected)
+          (S
+            (VP (TO to)
+              (VP (VB see)
+                (NP
+                  (NP (JJR fewer) (NNS innovations))
+                  (CC and)
+                  (NP (JJ medical) (NNS advancements)))))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubjpass(expected-9, care-3)
+advmod(expected-9, therefore-5)
+aux(expected-9, could-7)
+auxpass(expected-9, be-8)
+root(ROOT-0, expected-9)
+aux(see-11, to-10)
+xcomp(expected-9, see-11)
+amod(innovations-13, fewer-12)
+dobj(see-11, innovations-13)
+amod(advancements-16, medical-15)
+dobj(see-11, advancements-16)
+conj_and(innovations-13, advancements-16)
+

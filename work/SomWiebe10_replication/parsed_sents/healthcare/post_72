@@ -1,0 +1,170 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Costs))
+      (PP (IN of)
+        (NP (NNP Medicare\/Medicaid))))
+    (VP (VBP show)
+      (NP
+        (NP (NNS wastefulness))
+        (PP (IN of)
+          (NP (JJ public) (NN insurance)))))
+    (. .)))
+
+nsubj(show-4, Costs-1)
+prep_of(Costs-1, Medicare\/Medicaid-3)
+root(ROOT-0, show-4)
+dobj(show-4, wastefulness-5)
+amod(insurance-8, public-7)
+prep_of(wastefulness-5, insurance-8)
+
+(ROOT
+  (NP (NNP Gregory) (NNP Mankiw) (. .)))
+
+nn(Mankiw-2, Gregory-1)
+root(ROOT-0, Mankiw-2)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NNS pitfalls))
+    (PP (IN of)
+      (NP
+        (NP (DT the) (JJ public) (NN option) ('' '') (NNP New))
+        (NP (NNP York) (NNP Times))))
+    (. .)))
+
+det(pitfalls-3, The-2)
+root(ROOT-0, pitfalls-3)
+dep(pitfalls-3, of-4)
+det(New-9, the-5)
+amod(New-9, public-6)
+nn(New-9, option-7)
+pobj(of-4, New-9)
+nn(Times-11, York-10)
+dep(New-9, Times-11)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 27) (, ,) (CD 2009))
+    (: :)
+    (NP
+      (NP (`` ``) (DT The) (JJS largest) (JJ existing) (JJ public) (NN health))
+      (SBAR
+        (S
+          (NP (NNS programs) (NNP Medicare)
+            (CC and)
+            (NNP Medicaid))
+          (VP (VBP are)
+            (NP
+              (NP (DT the) (JJ main) (NN reason))
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN government))
+                  (VP (VBZ s)
+                    (NP
+                      (NP (JJ long-term) (NNS finances))
+                      (SBAR
+                        (S
+                          (VP (VBP are)
+                            (PP (IN in)
+                              (NP (NN shambles)))))))))))))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 27-2)
+num(June-1, 2009-4)
+det(health-11, The-7)
+amod(health-11, largest-8)
+amod(health-11, existing-9)
+amod(health-11, public-10)
+dep(June-1, health-11)
+nn(Medicare-13, programs-12)
+nsubj(reason-19, Medicare-13)
+conj_and(Medicare-13, Medicaid-15)
+nsubj(reason-19, Medicaid-15)
+cop(reason-19, are-16)
+det(reason-19, the-17)
+amod(reason-19, main-18)
+rcmod(health-11, reason-19)
+complm(finances-25, that-20)
+det(government-22, the-21)
+nsubj(finances-25, government-22)
+cop(finances-25, s-23)
+amod(finances-25, long-term-24)
+dep(reason-19, finances-25)
+rcmod(finances-25, are-26)
+prep_in(are-26, shambles-28)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH True))
+      (, ,)
+      (NP (NNP Medicare))
+      (VP (VBZ s)
+        (NP
+          (NP (JJ administrative) (NNS costs))
+          (SBAR
+            (S
+              (VP (VBP are)
+                (ADJP (JJ low))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (JJ easy)
+          (S
+            (VP (TO to)
+              (VP (VB keep)
+                (SBAR
+                  (S
+                    (NP (DT those) (NNS costs))
+                    (VP (VBD contained)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (DT a) (NN system))
+                          (ADVP (RB merely))
+                          (VP (VBZ writes)
+                            (NP (NNS checks))
+                            (PP (IN without)
+                              (S
+                                (VP (VBG expending)
+                                  (S
+                                    (NP (DT the) (NNS resources))
+                                    (VP (TO to)
+                                      (VP (VB control)
+                                        (NP (JJ wasteful) (JJ medical) (NN spending))))))))))))))))))))
+    (. .)))
+
+dep(costs-6, True-1)
+nsubj(costs-6, Medicare-3)
+cop(costs-6, s-4)
+amod(costs-6, administrative-5)
+root(ROOT-0, costs-6)
+cop(low-8, are-7)
+rcmod(costs-6, low-8)
+nsubj(easy-13, it-11)
+cop(easy-13, is-12)
+conj_but(costs-6, easy-13)
+aux(keep-15, to-14)
+xcomp(easy-13, keep-15)
+det(costs-17, those-16)
+nsubj(contained-18, costs-17)
+ccomp(keep-15, contained-18)
+advmod(writes-23, when-19)
+det(system-21, a-20)
+nsubj(writes-23, system-21)
+advmod(writes-23, merely-22)
+advcl(contained-18, writes-23)
+dobj(writes-23, checks-24)
+prepc_without(writes-23, expending-26)
+det(resources-28, the-27)
+nsubj(control-30, resources-28)
+aux(control-30, to-29)
+xcomp(expending-26, control-30)
+amod(spending-33, wasteful-31)
+amod(spending-33, medical-32)
+dobj(control-30, spending-33)
+

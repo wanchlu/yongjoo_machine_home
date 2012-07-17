@@ -1,0 +1,178 @@
+(ROOT
+  (S
+    (NP (NN science))
+    (VP (VBZ has)
+      (VP (VBN proven)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NNS people))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP have)
+                    (NP
+                      (NP (DT some) (NN belief))
+                      (PP (IN in)
+                        (NP
+                          (NP (DT a) (NN diety))
+                          (CC or)
+                          (NP
+                            (NP (JJR higher))
+                            (VP (VBG being)
+                              (VP (VBP live)
+                                (ADJP
+                                  (ADJP (JJR longer))
+                                  (, ,)
+                                  (ADJP (RBR healthier)))))))))))))
+            (VP
+              (VP (VBZ lives))
+              (, ,)
+              (CC and)
+              (VP (VBP are)
+                (ADJP (RBR more) (JJ likely)
+                  (S
+                    (VP (TO to)
+                      (VP (VB survive)
+                        (NP (DT a) (NN tradgedy))
+                        (PRN (-LRB- -LRB-)
+                          (PP (JJ such) (IN as)
+                            (NP
+                              (NP (DT an) (JJ unexpected) (NN death))
+                              (, ,)
+                              (CC or)
+                              (NP (JJ fatal) (NN disease))))
+                          (-RRB- -RRB-))))))))))))
+    (. .)))
+
+nsubj(proven-3, science-1)
+aux(proven-3, has-2)
+root(ROOT-0, proven-3)
+complm(lives-20, that-4)
+nsubj(have-7, people-5)
+nsubj(lives-20, people-5)
+nsubj(likely-25, people-5)
+rcmod(people-5, have-7)
+det(belief-9, some-8)
+dobj(have-7, belief-9)
+det(diety-12, a-11)
+prep_in(belief-9, diety-12)
+prep_in(belief-9, higher-14)
+conj_or(diety-12, higher-14)
+aux(live-16, being-15)
+partmod(higher-14, live-16)
+acomp(live-16, longer-17)
+dep(longer-17, healthier-19)
+ccomp(proven-3, lives-20)
+cop(likely-25, are-23)
+advmod(likely-25, more-24)
+ccomp(proven-3, likely-25)
+conj_and(lives-20, likely-25)
+aux(survive-27, to-26)
+xcomp(likely-25, survive-27)
+det(tradgedy-29, a-28)
+dobj(survive-27, tradgedy-29)
+det(death-35, an-33)
+amod(death-35, unexpected-34)
+prep_such_as(survive-27, death-35)
+amod(disease-39, fatal-38)
+prep_such_as(survive-27, disease-39)
+conj_or(death-35, disease-39)
+
+(ROOT
+  (S
+    (NP (DT The) (NN study) (NN cant))
+    (VP (VBP tell)
+      (SBAR (IN if)
+        (S
+          (PP (IN in)
+            (NP
+              (NP (DT the) (NN end))
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (NP (DT the) (NN person))
+                  (VP (VBZ believes)
+                    (SBAR
+                      (SBAR
+                        (S
+                          (VP (VBZ is)
+                            (ADVP (RB actually))
+                            (ADJP (JJ true)))))
+                      (, ,)
+                      (CC but)
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ does) (RB n't)
+                            (VP (VB apply)
+                              (PP (IN in)
+                                (NP (DT this) (NN case))))))
+                        (: ;))))))))
+          (NP
+            (NP (RB just) (DT the) (JJ simple) (NN belief))
+            (SBAR (IN that)
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (ADJP
+                    (ADJP (JJR more))
+                    (PP (TO to)
+                      (NP
+                        (NP (NN life))
+                        (PP (IN than)
+                          (NP (VBG living)
+                            (CC and)
+                            (VBG dying))))))))))
+          (VP (VBZ is)
+            (ADJP (JJ enough)
+              (S
+                (VP (TO to)
+                  (VP (VB make)
+                    (S
+                      (NP (DT a) (NN life))
+                      (ADJP (RBR more) (JJ enjoyable)))))))))))
+    (. .)))
+
+det(cant-3, The-1)
+nn(cant-3, study-2)
+nsubj(tell-4, cant-3)
+root(ROOT-0, tell-4)
+mark(is-40, if-5)
+det(end-8, the-7)
+prep_in(is-40, end-8)
+rel(believes-12, what-9)
+det(person-11, the-10)
+nsubj(believes-12, person-11)
+rcmod(end-8, believes-12)
+cop(true-15, is-13)
+advmod(true-15, actually-14)
+dep(believes-12, true-15)
+nsubj(apply-21, that-18)
+aux(apply-21, does-19)
+neg(apply-21, n't-20)
+dep(believes-12, apply-21)
+conj_but(true-15, apply-21)
+det(case-24, this-23)
+prep_in(apply-21, case-24)
+advmod(belief-29, just-26)
+det(belief-29, the-27)
+amod(belief-29, simple-28)
+nsubj(is-40, belief-29)
+complm(is-32, that-30)
+expl(is-32, there-31)
+dep(belief-29, is-32)
+acomp(is-32, more-33)
+prep_to(more-33, life-35)
+prep_than(life-35, living-37)
+prep_than(life-35, dying-39)
+conj_and(living-37, dying-39)
+advcl(tell-4, is-40)
+acomp(is-40, enough-41)
+aux(make-43, to-42)
+xcomp(enough-41, make-43)
+det(life-45, a-44)
+nsubj(enjoyable-47, life-45)
+advmod(enjoyable-47, more-46)
+xcomp(make-43, enjoyable-47)
+

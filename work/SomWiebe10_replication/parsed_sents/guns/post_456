@@ -1,0 +1,132 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Access))
+        (PP (TO to)
+          (NP (NNS guns))))
+      (VP (MD may)
+        (VP (VB increase)
+          (NP (DT the) (NN likelihood))
+          (SBAR (IN that)
+            (S
+              (NP (DT a) (JJ committed) (JJ suicidal) (NN person))
+              (VP (MD will)
+                (VP (VB choose)
+                  (NP
+                    (NP (DT that) (NN method))
+                    (PP (IN over)
+                      (NP (DT another)))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ does) (RB not)
+        (VP (VB affect)
+          (NP (DT the) (NN suicide) (NN rate))
+          (PP (IN over)
+            (NP (DT all))))))
+    (. .)))
+
+nsubj(increase-5, Access-1)
+prep_to(Access-1, guns-3)
+aux(increase-5, may-4)
+root(ROOT-0, increase-5)
+det(likelihood-7, the-6)
+dobj(increase-5, likelihood-7)
+complm(choose-14, that-8)
+det(person-12, a-9)
+amod(person-12, committed-10)
+amod(person-12, suicidal-11)
+nsubj(choose-14, person-12)
+aux(choose-14, will-13)
+ccomp(increase-5, choose-14)
+det(method-16, that-15)
+dobj(choose-14, method-16)
+prep_over(method-16, another-18)
+nsubj(affect-24, it-21)
+aux(affect-24, does-22)
+neg(affect-24, not-23)
+conj_but(increase-5, affect-24)
+det(rate-27, the-25)
+nn(rate-27, suicide-26)
+dobj(affect-24, rate-27)
+prep_over(affect-24, all-29)
+
+(ROOT
+  (S
+    (S
+      (NP (DT An) (NN example))
+      (VP (VBZ is)
+        (NP
+          (NP (NNP Japan))
+          (, ,)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP
+                (NP (DT the) (NN rate))
+                (PP (IN of)
+                  (NP (NN gun) (NN ownership))))
+              (VP (VBZ is)
+                (NP
+                  (QP (JJR less) (IN than) (CD 1))
+                  (NN %))))))))
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (NN suicide) (NN rate))
+        (PP (IN per)
+          (NP
+            (NP (CD 100,000) (NN population))
+            (PP (IN in)
+              (NP (CD 2005))))))
+      (VP (VBD was)
+        (NP
+          (NP
+            (QP (RBR more) (IN than) (JJ double))
+            (DT that))
+          (PP (IN of)
+            (NP (DT the) (NNP US))))))
+    (. .)))
+
+det(example-2, An-1)
+nsubj(Japan-4, example-2)
+cop(Japan-4, is-3)
+root(ROOT-0, Japan-4)
+advmod(%-16, where-6)
+det(rate-8, the-7)
+nsubj(%-16, rate-8)
+nn(ownership-11, gun-10)
+prep_of(rate-8, ownership-11)
+cop(%-16, is-12)
+mwe(than-14, less-13)
+quantmod(1-15, than-14)
+num(%-16, 1-15)
+rcmod(Japan-4, %-16)
+det(rate-20, the-18)
+nn(rate-20, suicide-19)
+nsubj(that-30, rate-20)
+num(population-23, 100,000-22)
+prep_per(rate-20, population-23)
+prep_in(population-23, 2005-25)
+cop(that-30, was-26)
+quantmod(double-29, more-27)
+quantmod(double-29, than-28)
+num(that-30, double-29)
+conj_but(Japan-4, that-30)
+det(US-33, the-32)
+prep_of(that-30, US-33)
+
+(ROOT
+  (NP
+    (NP (NN Source))
+    (: :)
+    (NP (NNP World) (NNP Health) (NNP Organization) (NNP http:\/\/www.who.int\/mental_health\/prevention\/suicide\/country_reports\/en\/index.html))))
+
+root(ROOT-0, Source-1)
+nn(http:\/\/www.who.int\/mental_health\/prevention\/suicide\/country_reports\/en\/index.html-6, World-3)
+nn(http:\/\/www.who.int\/mental_health\/prevention\/suicide\/country_reports\/en\/index.html-6, Health-4)
+nn(http:\/\/www.who.int\/mental_health\/prevention\/suicide\/country_reports\/en\/index.html-6, Organization-5)
+dep(Source-1, http:\/\/www.who.int\/mental_health\/prevention\/suicide\/country_reports\/en\/index.html-6)
+

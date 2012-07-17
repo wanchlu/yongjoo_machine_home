@@ -1,0 +1,49 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP (VB give)
+      (NP
+        (NP (DT the) (NN judgment))
+        (PP (IN of)
+          (NP
+            (NP (NN charity))
+            (CC and)
+            (NP (RB not) (NN condemnation))))))
+    (. .)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+dep(not-2, give-3)
+det(judgment-5, the-4)
+dobj(give-3, judgment-5)
+prep_of(judgment-5, charity-7)
+neg(condemnation-10, not-9)
+prep_of(judgment-5, condemnation-10)
+conj_and(charity-7, condemnation-10)
+
+(ROOT
+  (SQ (MD Would) (RB n't)
+    (NP (PRP you))
+    (VP (VB expect)
+      (SBAR (IN that) (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBD were)
+            (VP (VBG visiting)
+              (NP (DT a) (JJ foreign) (NN country)))))))
+    (. ?)))
+
+aux(expect-4, Would-1)
+neg(expect-4, n't-2)
+nsubj(expect-4, you-3)
+root(ROOT-0, expect-4)
+complm(visiting-9, that-5)
+dep(visiting-9, if-6)
+nsubj(visiting-9, you-7)
+aux(visiting-9, were-8)
+ccomp(expect-4, visiting-9)
+det(country-12, a-10)
+amod(country-12, foreign-11)
+dobj(visiting-9, country-12)
+

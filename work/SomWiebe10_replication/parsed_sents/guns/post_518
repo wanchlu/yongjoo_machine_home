@@ -1,0 +1,238 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP Brady) (NNS people))
+    (VP (VBP are)
+      (ADJP (JJ typical)
+        (PP (IN of)
+          (NP (JJ many) (NNS others)))))
+    (. .)))
+
+det(people-3, The-1)
+nn(people-3, Brady-2)
+nsubj(typical-5, people-3)
+cop(typical-5, are-4)
+root(ROOT-0, typical-5)
+amod(others-8, many-7)
+prep_of(typical-5, others-8)
+
+(ROOT
+  (FRAG
+    (NP (NN Ignorant))
+    (, ,)
+    (PP (CC but)
+      (NP (JJ passionate)))
+    (. .)))
+
+root(ROOT-0, Ignorant-1)
+dep(Ignorant-1, but-3)
+dep(but-3, passionate-4)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (NP
+        (NP (DT a) (NN right))
+        (PP (IN under)
+          (NP (PRP$ our) (NN constitution))))
+      (PP (TO to)
+        (NP
+          (NP (NN campaign))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN repeal))
+              (PP (IN of)
+                (NP (DT the) (JJ 2nd) (NN amendment))))))))
+    (. .)))
+
+nsubj(have-2, They-1)
+root(ROOT-0, have-2)
+det(right-4, a-3)
+dobj(have-2, right-4)
+poss(constitution-7, our-6)
+prep_under(right-4, constitution-7)
+prep_to(have-2, campaign-9)
+det(repeal-12, the-11)
+prep_for(campaign-9, repeal-12)
+det(amendment-16, the-14)
+amod(amendment-16, 2nd-15)
+prep_of(repeal-12, amendment-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP
+        (ADVP (RB far) (RBR more))
+        (JJ concerned)
+        (PP (IN with)
+          (NP
+            (NP (NNS judges))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP allow)
+                  (S
+                    (NP (PRP them))
+                    (VP (TO to)
+                      (VP (VB influence)
+                        (NP (PRP$ their) (NNS decisions))
+                        (PRN (-LRB- -LRB-)
+                          (S
+                            (VP (VB read)
+                              (ADVP (RB empathy))))
+                          (-RRB- -RRB-))
+                        (SBAR (RB so) (IN that)
+                          (S
+                            (NP (DT the) (JJ 2nd) (NN amendment))
+                            (VP (VBZ is) (RB not)
+                              (VP (VBN upheld)))))))))))))))
+    (. .)))
+
+nsubj(concerned-5, I-1)
+cop(concerned-5, am-2)
+advmod(more-4, far-3)
+advmod(concerned-5, more-4)
+root(ROOT-0, concerned-5)
+prep_with(concerned-5, judges-7)
+nsubj(allow-9, judges-7)
+rcmod(judges-7, allow-9)
+nsubj(influence-12, them-10)
+aux(influence-12, to-11)
+xcomp(allow-9, influence-12)
+poss(decisions-14, their-13)
+dobj(influence-12, decisions-14)
+parataxis(influence-12, read-16)
+advmod(read-16, empathy-17)
+advmod(upheld-26, so-19)
+dep(upheld-26, that-20)
+det(amendment-23, the-21)
+amod(amendment-23, 2nd-22)
+nsubjpass(upheld-26, amendment-23)
+auxpass(upheld-26, is-24)
+neg(upheld-26, not-25)
+advcl(influence-12, upheld-26)
+
+(ROOT
+  (S
+    (NP (PRP$ Our) (JJ empathetic) (NNS judges))
+    (VP
+      (VP (MD can)
+        (VP (VB see)
+          (NP
+            (NP (NNS words))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP do) (RB n't)
+                  (VP (VB appear)
+                    (PP (IN on)
+                      (NP (NN paper)))
+                    (SBAR
+                      (WHADVP (WRB when))
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ comes)
+                          (PP (TO to)
+                            (NP
+                              (NP (NN privacy) (NNS issues))
+                              (SBAR
+                                (WHNP (WDT that))
+                                (S
+                                  (VP (VBP do) (RB n't)
+                                    (VP (VB exist)
+                                      (PP (IN in)
+                                        (NP
+                                          (NP (DT the) (NNS words))
+                                          (PP (IN of)
+                                            (NP (DT the) (NN constitution)))))))))))))))))))))
+      (, ,)
+      (CC but)
+      (VP (MD can)
+        (VP (VB ignore)
+          (NP
+            (NP (DT the) (JJ plain) (NN language))
+            (PP (IN of)
+              (NP (DT the) (JJ 2nd) (NN amendment)))))))
+    (. .)))
+
+poss(judges-3, Our-1)
+amod(judges-3, empathetic-2)
+nsubj(see-5, judges-3)
+nsubj(ignore-32, judges-3)
+aux(see-5, can-4)
+root(ROOT-0, see-5)
+dobj(see-5, words-6)
+nsubj(appear-10, words-6)
+aux(appear-10, do-8)
+neg(appear-10, n't-9)
+rcmod(words-6, appear-10)
+prep_on(appear-10, paper-12)
+advmod(comes-15, when-13)
+nsubj(comes-15, it-14)
+advcl(appear-10, comes-15)
+nn(issues-18, privacy-17)
+prep_to(comes-15, issues-18)
+nsubj(exist-22, issues-18)
+aux(exist-22, do-20)
+neg(exist-22, n't-21)
+rcmod(issues-18, exist-22)
+det(words-25, the-24)
+prep_in(exist-22, words-25)
+det(constitution-28, the-27)
+prep_of(words-25, constitution-28)
+aux(ignore-32, can-31)
+conj_but(see-5, ignore-32)
+det(language-35, the-33)
+amod(language-35, plain-34)
+dobj(ignore-32, language-35)
+det(amendment-39, the-37)
+amod(amendment-39, 2nd-38)
+prep_of(language-35, amendment-39)
+
+(ROOT
+  (S
+    (S
+      (VP (VBP Do) (RB n't)
+        (VP (VB worry)
+          (PP (IN about)
+            (NP (DT the) (NNPS Bradyites))))))
+    (, ,)
+    (NP (NN work)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (NP (NNS politicians))))))
+    (VP (VBD elected)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (MD will)
+            (VP (VB appoint)
+              (NP
+                (NP (NNS judges))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (MD can)
+                      (VP (VB read)))))))))))
+    (. .)))
+
+aux(worry-3, Do-1)
+neg(worry-3, n't-2)
+ccomp(elected-12, worry-3)
+det(Bradyites-6, the-5)
+prep_about(worry-3, Bradyites-6)
+nsubj(elected-12, work-8)
+aux(get-10, to-9)
+infmod(work-8, get-10)
+dobj(get-10, politicians-11)
+root(ROOT-0, elected-12)
+nsubj(appoint-15, who-13)
+aux(appoint-15, will-14)
+ccomp(elected-12, appoint-15)
+dobj(appoint-15, judges-16)
+nsubj(read-19, judges-16)
+aux(read-19, can-18)
+rcmod(judges-16, read-19)
+

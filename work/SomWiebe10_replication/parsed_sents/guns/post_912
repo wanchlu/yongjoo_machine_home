@@ -1,0 +1,54 @@
+(ROOT
+  (SQ
+    (VP (VB Uhhh))
+    (. ?)))
+
+root(ROOT-0, Uhhh-1)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB ever))
+    (VP (VBD heard)
+      (PP (IN of)
+        (NP
+          (NP (DT a) (JJ black) (NN market))
+          (, ,)
+          (NP (DT the) (JJ illegal) (NN selling))
+          (, ,)
+          (NP (NN buying))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (NN distribution))
+            (PP (IN of)
+              (NP
+                (NP (NN contraband))
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (NNS weapons))
+                    (, ,)
+                    (NP (NNS drugs)))
+                  (-RRB- -RRB-)))))))
+      (ADVP (RB illegally)))
+    (. ?)))
+
+nsubj(heard-3, You-1)
+advmod(heard-3, ever-2)
+root(ROOT-0, heard-3)
+det(market-7, a-5)
+amod(market-7, black-6)
+prep_of(heard-3, market-7)
+det(selling-11, the-9)
+amod(selling-11, illegal-10)
+prep_of(heard-3, selling-11)
+conj_and(market-7, selling-11)
+prep_of(heard-3, buying-13)
+conj_and(market-7, buying-13)
+prep_of(heard-3, distribution-16)
+conj_and(market-7, distribution-16)
+prep_of(distribution-16, contraband-18)
+dep(contraband-18, weapons-20)
+appos(weapons-20, drugs-22)
+advmod(heard-3, illegally-24)
+

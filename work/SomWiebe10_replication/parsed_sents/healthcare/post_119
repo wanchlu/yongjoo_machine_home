@@ -1,0 +1,157 @@
+(ROOT
+  (S
+    (NP (JJ Government-funded) (JJ universal) (NN health) (NN care))
+    (VP (MD would)
+      (VP (VB violate)
+        (NP (JJ patient) (NN privacy) (NNP Sue) (NNP Blevins))))
+    (. .)))
+
+amod(care-4, Government-funded-1)
+amod(care-4, universal-2)
+nn(care-4, health-3)
+nsubj(violate-6, care-4)
+aux(violate-6, would-5)
+root(ROOT-0, violate-6)
+amod(Blevins-10, patient-7)
+nn(Blevins-10, privacy-8)
+nn(Blevins-10, Sue-9)
+dobj(violate-6, Blevins-10)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Universal) (NNP Health) (NNP Care))
+    (VP (MD Wo) (RB n't)
+      (VP (VB Work)
+        (VP (VB Witness)
+          (NP (NNP Medicare) ('' '')))))
+    (. .)))
+
+nn(Care-4, Universal-2)
+nn(Care-4, Health-3)
+nsubj(Work-7, Care-4)
+aux(Work-7, Wo-5)
+neg(Work-7, n't-6)
+root(ROOT-0, Work-7)
+xcomp(Work-7, Witness-8)
+dobj(Witness-8, Medicare-9)
+
+(ROOT
+  (NP (NNP Cato) (NNP Institute) (. .)))
+
+nn(Institute-2, Cato-1)
+root(ROOT-0, Institute-2)
+
+(ROOT
+  (FRAG
+    (NP (CD 2001))
+    (. .)))
+
+root(ROOT-0, 2001-1)
+
+(ROOT
+  (S (`` ``)
+    (ADVP (RB Currently))
+    (, ,)
+    (NP (JJ many) (NNPS Americans))
+    (VP (VBP choose)
+      (S
+        (VP (TO to)
+          (VP (VB pay)
+            (ADVP (RB privately))
+            (PP (IN for)
+              (NP (NN health) (NNS services)))
+            (S
+              (VP (TO to)
+                (VP (VB maintain)
+                  (NP (PRP$ their) (JJ medical) (NN privacy)))))))))
+    (. .)))
+
+advmod(choose-6, Currently-2)
+amod(Americans-5, many-4)
+nsubj(choose-6, Americans-5)
+xsubj(pay-8, Americans-5)
+root(ROOT-0, choose-6)
+aux(pay-8, to-7)
+xcomp(choose-6, pay-8)
+advmod(pay-8, privately-9)
+nn(services-12, health-11)
+prep_for(pay-8, services-12)
+aux(maintain-14, to-13)
+xcomp(pay-8, maintain-14)
+poss(privacy-17, their-15)
+amod(privacy-17, medical-16)
+dobj(maintain-14, privacy-17)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (DT a) (JJ single-payer) (NN health) (NN plan))
+    (VP (MD would)
+      (VP (VB eliminate)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (NN option))
+              (CC and)
+              (NP (DT all) (NNS citizens)))
+            (VP (MD would)
+              (VP (VB be)
+                (VP (VBN forced)
+                  (S
+                    (VP (TO to)
+                      (VP (VB give)
+                        (PRT (RP up))
+                        (NP (PRP$ their) (NN ability)
+                          (S
+                            (VP (TO to)
+                              (VP (VB maintain)
+                                (NP (DT a) (JJ confidential) (JJ doctor-patient) (NN relationship))))))))))))))))
+    (. .)))
+
+advmod(eliminate-8, However-1)
+det(plan-6, a-3)
+amod(plan-6, single-payer-4)
+nn(plan-6, health-5)
+nsubj(eliminate-8, plan-6)
+aux(eliminate-8, would-7)
+root(ROOT-0, eliminate-8)
+complm(forced-16, that-9)
+nsubjpass(forced-16, option-10)
+det(citizens-13, all-12)
+conj_and(option-10, citizens-13)
+nsubjpass(forced-16, citizens-13)
+aux(forced-16, would-14)
+auxpass(forced-16, be-15)
+ccomp(eliminate-8, forced-16)
+aux(give-18, to-17)
+xcomp(forced-16, give-18)
+prt(give-18, up-19)
+poss(ability-21, their-20)
+dobj(give-18, ability-21)
+aux(maintain-23, to-22)
+infmod(ability-21, maintain-23)
+det(relationship-27, a-24)
+amod(relationship-27, confidential-25)
+amod(relationship-27, doctor-patient-26)
+dobj(maintain-23, relationship-27)
+
+(ROOT
+  (S
+    (NP
+      (NP (RB Just) (NN look))
+      (WHPP (IN at)
+        (WHNP (WP what))))
+    (VP (VBZ has)
+      (VP (VBN happened)
+        (PP (IN with)
+          (NP (NNP Medicare)))))
+    (. .)))
+
+advmod(look-2, Just-1)
+nsubj(happened-6, look-2)
+prep_at(look-2, what-4)
+aux(happened-6, has-5)
+root(ROOT-0, happened-6)
+prep_with(happened-6, Medicare-8)
+

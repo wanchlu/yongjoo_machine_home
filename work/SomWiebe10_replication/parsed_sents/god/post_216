@@ -1,0 +1,169 @@
+(ROOT
+  (S
+    (NP (JJ Athiest) (NN man))
+    (VP (VBZ is) (RB not)
+      (NP (JJ profound) (NN wisdom)))
+    (. .)))
+
+amod(man-2, Athiest-1)
+nsubj(wisdom-6, man-2)
+cop(wisdom-6, is-3)
+neg(wisdom-6, not-4)
+amod(wisdom-6, profound-5)
+root(ROOT-0, wisdom-6)
+
+(ROOT
+  (S
+    (VP (TO To)
+      (VP (VB say)
+        (PP (TO to)
+          (NP (DT a) (NN person)))
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (UCP (DT the)
+                (ADVP (RB here))
+                (CC and)
+                (NP (RB now)))))
+          (. .))))
+    (. .)))
+
+aux(say-2, To-1)
+root(ROOT-0, say-2)
+det(person-5, a-4)
+prep_to(say-2, person-5)
+complm(is-8, that-6)
+expl(is-8, there-7)
+ccomp(say-2, is-8)
+dep(is-8, the-9)
+dep(the-9, here-10)
+dep(is-8, now-12)
+conj_and(the-9, now-12)
+
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ needs) (RB not)
+      (VP (VB be)
+        (VP (VBN said))))
+    (. .)))
+
+nsubj(needs-2, it-1)
+root(ROOT-0, needs-2)
+neg(needs-2, not-3)
+auxpass(said-5, be-4)
+dep(needs-2, said-5)
+
+(ROOT
+  (S
+    (VP (TO To)
+      (VP (VB see)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (ADJP
+                (ADJP (JJ humble)
+                  (CC and)
+                  (JJ honest))
+                (, ,)
+                (CC and)
+                (ADJP (JJ wise))))))))
+    (. .)))
+
+aux(see-2, To-1)
+root(ROOT-0, see-2)
+mark(humble-6, if-3)
+nsubj(humble-6, you-4)
+nsubj(honest-8, you-4)
+nsubj(wise-11, you-4)
+cop(humble-6, are-5)
+advcl(see-2, humble-6)
+advcl(see-2, honest-8)
+conj_and(humble-6, honest-8)
+advcl(see-2, wise-11)
+conj_and(humble-6, wise-11)
+
+(ROOT
+  (S
+    (NP (DT those))
+    (VP (VBP are)
+      (ADJP (JJ substantial)))
+    (. .)))
+
+nsubj(substantial-3, those-1)
+cop(substantial-3, are-2)
+root(ROOT-0, substantial-3)
+
+(ROOT
+  (S
+    (NP (DT Those) (NNS elements))
+    (VP (VBP are)
+      (ADJP (JJ profound)))
+    (. .)))
+
+det(elements-2, Those-1)
+nsubj(profound-4, elements-2)
+cop(profound-4, are-3)
+root(ROOT-0, profound-4)
+
+(ROOT
+  (FRAG
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (NP (PRP they))
+        (VP (MD would) (RB not)
+          (VP (VB exist)
+            (PP (IN without)
+              (NP (DT the) (JJR greater) (NN essence)))))))
+    (. .)))
+
+advmod(exist-5, How-1)
+nsubj(exist-5, they-2)
+aux(exist-5, would-3)
+neg(exist-5, not-4)
+root(ROOT-0, exist-5)
+det(essence-9, the-7)
+amod(essence-9, greater-8)
+prep_without(exist-5, essence-9)
+
+(ROOT
+  (S
+    (NP (DT that))
+    (VP (VBZ is)
+      (ADJP (JJ profound)))
+    (. .)))
+
+nsubj(profound-3, that-1)
+cop(profound-3, is-2)
+root(ROOT-0, profound-3)
+
+(ROOT
+  (S
+    (NP (NNP blessed))
+    (VP (VBP are)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP
+              (VP (VBD believed))
+              (CC and)
+              (VP (VBD did) (RB not)
+                (VP (VB see))))))))
+    (. .)))
+
+nsubj(those-3, blessed-1)
+cop(those-3, are-2)
+root(ROOT-0, those-3)
+nsubj(believed-5, those-3)
+nsubj(see-9, those-3)
+rcmod(those-3, believed-5)
+aux(see-9, did-7)
+neg(see-9, not-8)
+rcmod(those-3, see-9)
+conj_and(believed-5, see-9)
+

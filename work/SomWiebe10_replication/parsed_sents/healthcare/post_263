@@ -1,0 +1,127 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if) (, ,)
+      (S
+        (S
+          (VP (VBG Keeping)
+            (NP (NN cost))
+            (PRT (RP down))))
+        (VP (VBZ means)
+          (SBAR (IN that)
+            (S
+              (NP (PRP we))
+              (VP (VBP suffer)
+                (NP
+                  (NP (DT the) (JJS least) (NN trauma))
+                  (PP (IN for)
+                    (NP
+                      (NP (DT those))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (MD can)
+                            (VP (VB afford)
+                              (NP (NN treatment))
+                              (SBAR (IN while)
+                                (S
+                                  (NP (PRP we))
+                                  (VP (VB sacrifice)
+                                    (NP
+                                      (NP (CD 30) (JJ +) (NN percent))
+                                      (PP (IN of)
+                                        (NP (DT the) (NN population))))
+                                    (PP (TO to)
+                                      (NP
+                                        (NP (JJR more) (NN trauma))
+                                        (CC and)
+                                        (NP (NN illness))))))))))))))))))))
+    (. ?)))
+
+dep(means-7, What-1)
+mark(means-7, if-2)
+csubj(means-7, Keeping-4)
+dobj(Keeping-4, cost-5)
+prt(Keeping-4, down-6)
+root(ROOT-0, means-7)
+complm(suffer-10, that-8)
+nsubj(suffer-10, we-9)
+ccomp(means-7, suffer-10)
+det(trauma-13, the-11)
+amod(trauma-13, least-12)
+dobj(suffer-10, trauma-13)
+prep_for(trauma-13, those-15)
+nsubj(afford-18, those-15)
+aux(afford-18, can-17)
+rcmod(those-15, afford-18)
+dobj(afford-18, treatment-19)
+mark(sacrifice-22, while-20)
+nsubj(sacrifice-22, we-21)
+advcl(afford-18, sacrifice-22)
+num(percent-25, 30-23)
+amod(percent-25, +-24)
+dobj(sacrifice-22, percent-25)
+det(population-28, the-27)
+prep_of(percent-25, population-28)
+amod(trauma-31, more-30)
+prep_to(sacrifice-22, trauma-31)
+prep_to(sacrifice-22, illness-33)
+conj_and(trauma-31, illness-33)
+
+(ROOT
+  (S
+    (S
+      (VP (VBZ Is)
+        (NP (DT the) (NN option)
+          (S
+            (VP (TO to)
+              (VP (VB allow)
+                (NP
+                  (NP (DT a) (NN combination))
+                  (PP (IN of)
+                    (NP (DT both) (NNS systems))))
+                (S
+                  (VP (TO to)
+                    (VP (VB prosper)
+                      (S
+                        (VP (VBG taxing)
+                          (NP (DT all)))))))))))))
+    (, ,)
+    (NP (JJ rebating) (JJ non-access) (NN system) (NNS users))
+    (VP (VBD taxed)
+      (NP (DT a)
+        (ADJP (CD '') (NN %))
+        ('' '') (NN back))
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN end))
+          (PP (IN of)
+            (NP (CD 5) (NNS years))))))
+    (. ?)))
+
+cop(option-3, Is-1)
+det(option-3, the-2)
+ccomp(taxed-20, option-3)
+aux(allow-5, to-4)
+infmod(option-3, allow-5)
+det(combination-7, a-6)
+dobj(allow-5, combination-7)
+det(systems-10, both-9)
+prep_of(combination-7, systems-10)
+aux(prosper-12, to-11)
+xcomp(allow-5, prosper-12)
+xcomp(prosper-12, taxing-13)
+dobj(taxing-13, all-14)
+amod(users-19, rebating-16)
+amod(users-19, non-access-17)
+nn(users-19, system-18)
+nsubj(taxed-20, users-19)
+root(ROOT-0, taxed-20)
+det(back-25, a-21)
+amod(back-25, %-23)
+dobj(taxed-20, back-25)
+det(end-28, the-27)
+prep_at(taxed-20, end-28)
+num(years-31, 5-30)
+prep_of(end-28, years-31)
+

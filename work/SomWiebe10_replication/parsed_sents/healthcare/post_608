@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (VP
+      (VP (VB yeah))
+      (, ,)
+      (NP
+        (ADVP
+          (NP (CD one))
+          (RBR more))
+        (NN point)))
+    (. .)))
+
+dep(yeah-2, Oh-1)
+root(ROOT-0, yeah-2)
+npadvmod(more-5, one-4)
+advmod(point-6, more-5)
+dobj(yeah-2, point-6)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP fail)
+      (S
+        (VP (TO to)
+          (VP (VB forget)
+            (NP
+              (NP (DT the) (NN government) (NNS systems))
+              (PP (IN in)
+                (NP
+                  (NP (NN place))
+                  (ADVP (RB currently))))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VB assist)
+                    (PP (IN with)
+                      (NP (NN food) (, ,) (NN housing) (, ,)
+                        (CC and)
+                        (NN health) (NN care)))))))))))
+    (. .)))
+
+nsubj(fail-2, You-1)
+xsubj(forget-4, You-1)
+root(ROOT-0, fail-2)
+aux(forget-4, to-3)
+xcomp(fail-2, forget-4)
+det(systems-7, the-5)
+nn(systems-7, government-6)
+dobj(forget-4, systems-7)
+nsubj(assist-12, systems-7)
+prep_in(systems-7, place-9)
+advmod(place-9, currently-10)
+rcmod(systems-7, assist-12)
+nn(housing-16, food-14)
+prep_with(assist-12, housing-16)
+nn(care-20, health-19)
+prep_with(assist-12, care-20)
+conj_and(housing-16, care-20)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB suggest)
+        (S
+          (NP (PRP you))
+          (VP (VB do)
+            (NP (DT some) (JJ further) (NN digging) (NNP Leon))))))
+    (. .)))
+
+nsubj(suggest-3, I-1)
+aux(suggest-3, would-2)
+root(ROOT-0, suggest-3)
+nsubj(do-5, you-4)
+ccomp(suggest-3, do-5)
+det(Leon-9, some-6)
+amod(Leon-9, further-7)
+nn(Leon-9, digging-8)
+dobj(do-5, Leon-9)
+

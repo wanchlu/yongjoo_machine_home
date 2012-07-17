@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP
+      (VP (VBD spoke)
+        (PP (TO to)
+          (NP (PRP me)))
+        (PP (IN after)
+          (NP (DT that))))
+      (CC and)
+      (VP (VBD said)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (VBD was)
+              (VP (VBG lying)
+                (PP (TO to)
+                  (NP (PRP you)))
+                (ADVP
+                  (ADVP (RB then))
+                  (SBAR
+                    (S
+                      (NP (PRP we))
+                      (VP (VBD had)
+                        (NP
+                          (NP (DT a) (JJ good) (NN laugh))
+                          (PRN (-LRB- -LRB-)
+                            (FRAG (CC and)
+                              (NP (DT a)
+                                (ADJP (JJ good))
+                                (NN scotch)))
+                            (-RRB- -RRB-)))))))))))))))
+
+nsubj(spoke-2, he-1)
+nsubj(said-8, he-1)
+root(ROOT-0, spoke-2)
+prep_to(spoke-2, me-4)
+prep_after(spoke-2, that-6)
+conj_and(spoke-2, said-8)
+nsubj(lying-11, he-9)
+aux(lying-11, was-10)
+ccomp(said-8, lying-11)
+prep_to(lying-11, you-13)
+advmod(lying-11, then-14)
+nsubj(had-16, we-15)
+dep(then-14, had-16)
+det(laugh-19, a-17)
+amod(laugh-19, good-18)
+dobj(had-16, laugh-19)
+dep(scotch-24, and-21)
+det(scotch-24, a-22)
+amod(scotch-24, good-23)
+dep(laugh-19, scotch-24)
+

@@ -1,0 +1,297 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (NP
+        (NP (DT a) (JJ military) (NN man))
+        (PRN (-LRB- -LRB-)
+          (VP (VBN retired))
+          (-RRB- -RRB-))
+        (SBAR
+          (S
+            (NP (NNS guns))
+            (VP (VBP have)
+              (ADVP (RB never))
+              (VP (VBN killed)
+                (SBAR (IN unless)
+                  (S
+                    (VP (VBN used)
+                      (PP (IN by)
+                        (NP (DT a) (NN person))))))))))))
+    (. .)))
+
+nsubj(man-5, I-1)
+cop(man-5, am-2)
+det(man-5, a-3)
+amod(man-5, military-4)
+root(ROOT-0, man-5)
+dobj(killed-12, man-5)
+dep(man-5, retired-7)
+nsubj(killed-12, guns-9)
+aux(killed-12, have-10)
+neg(killed-12, never-11)
+rcmod(man-5, killed-12)
+mark(used-14, unless-13)
+advcl(killed-12, used-14)
+det(person-17, a-16)
+prep_by(used-14, person-17)
+
+(ROOT
+  (S
+    (PP (IN Outside)
+      (NP
+        (NP (DT the) (NN line))
+        (PP (IN of)
+          (NP (NN duty)))))
+    (NP (PRP I))
+    (VP (VBP have)
+      (VP (VBN used)
+        (NP (DT a) (NN weapon))
+        (NP (CD two) (NNS times))))
+    (. .)))
+
+det(line-3, the-2)
+prep_outside(used-8, line-3)
+prep_of(line-3, duty-5)
+nsubj(used-8, I-6)
+aux(used-8, have-7)
+root(ROOT-0, used-8)
+det(weapon-10, a-9)
+iobj(used-8, weapon-10)
+num(times-12, two-11)
+dobj(used-8, times-12)
+
+(ROOT
+  (S
+    (NP (NNP NEVER))
+    (VP (VBD fired)
+      (NP (PRP it))
+      (, ,)
+      (S
+        (ADVP (RB just))
+        (VP (VBG seeing)
+          (SBAR (IN that)
+            (S
+              (NP (DT the) (NN opposition))
+              (VP (VBD was)
+                (ADJP (JJ armed)
+                  (SBAR
+                    (S
+                      (VP (VBD stopped)
+                        (NP (DT both) (VBN attempted) (NNS assaults))))))))))))
+    (. .)))
+
+nsubj(fired-2, NEVER-1)
+root(ROOT-0, fired-2)
+dobj(fired-2, it-3)
+advmod(seeing-6, just-5)
+partmod(fired-2, seeing-6)
+xcomp(fired-2, seeing-6)
+complm(armed-11, that-7)
+det(opposition-9, the-8)
+nsubj(armed-11, opposition-9)
+cop(armed-11, was-10)
+ccomp(seeing-6, armed-11)
+dep(armed-11, stopped-12)
+det(assaults-15, both-13)
+amod(assaults-15, attempted-14)
+dobj(stopped-12, assaults-15)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (JJ half) (NN century))
+          (PP (IN in)
+            (NP
+              (NP (NN military)
+                (CC and)
+                (NN \/))
+              (CC or)
+              (NP (NN law) (NN enforcement))))))
+      (CC and)
+      (ADVP (RB strongly))
+      (VP (VBP favor)
+        (NP (NNPS Americans))
+        (S
+          (VP (VBG having)
+            (S
+              (NP (NNP and))
+              (VP (VBG being)
+                (VP (VBN trained)
+                  (S
+                    (VP (TO to)
+                      (VP (VB use)
+                        (NP
+                          (NP (NNS firearms))
+                          (PP (IN for)
+                            (NP (NN self) (NN protection))))))))))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+nsubj(favor-15, I-1)
+root(ROOT-0, have-2)
+det(century-5, a-3)
+amod(century-5, half-4)
+dobj(have-2, century-5)
+prep_in(century-5, military-7)
+prep_in(century-5, \/-9)
+conj_and(military-7, \/-9)
+nn(enforcement-12, law-11)
+prep_in(century-5, enforcement-12)
+conj_or(military-7, enforcement-12)
+advmod(have-2, strongly-14)
+conj_and(have-2, strongly-14)
+conj_and(have-2, favor-15)
+dobj(favor-15, Americans-16)
+xcomp(favor-15, having-17)
+nsubjpass(trained-20, and-18)
+xsubj(use-22, and-18)
+auxpass(trained-20, being-19)
+ccomp(having-17, trained-20)
+aux(use-22, to-21)
+xcomp(trained-20, use-22)
+dobj(use-22, firearms-23)
+nn(protection-26, self-25)
+prep_for(firearms-23, protection-26)
+
+(ROOT
+  (S
+    (S
+      (INTJ (VB Please))
+      (VP (VB think)
+        (ADVP (RB logically))))
+    (, ,)
+    (NP (JJS most) (NNP LEO) (NNS 's))
+    (ADVP (RB never))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB fire)
+            (NP (PRP$ their) (NNS weapons))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN line))
+                (PP (IN of)
+                  (NP (NN duty)))))))))
+    (. .)))
+
+dep(think-2, Please-1)
+ccomp(have-9, think-2)
+advmod(think-2, logically-3)
+amod('s-7, most-5)
+nn('s-7, LEO-6)
+nsubj(have-9, 's-7)
+xsubj(fire-11, 's-7)
+neg(have-9, never-8)
+root(ROOT-0, have-9)
+aux(fire-11, to-10)
+xcomp(have-9, fire-11)
+poss(weapons-13, their-12)
+dobj(fire-11, weapons-13)
+det(line-16, the-15)
+prep_in(fire-11, line-16)
+prep_of(line-16, duty-18)
+
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (NN reason))
+          (PP (IN for)
+            (NP (DT this))))))
+    (, ,)
+    (S
+      (NP (DT the) (NN criminal))
+      (VP (VBZ knows)
+        (SBAR
+          (S
+            (NP (PRP he))
+            (VP (MD WILL)
+              (VP (VB use)
+                (NP (DT the) (NN weapon))))))))
+    (CC and)
+    (S
+      (NP (PRP he))
+      (VP (MD will)
+        (VP (VB use)
+          (NP (PRP it))
+          (ADVP (RB fairly) (RB well)))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(reason-4, a-3)
+nsubj(is-2, reason-4)
+prep_for(reason-4, this-6)
+det(criminal-9, the-8)
+nsubj(knows-10, criminal-9)
+conj_and(is-2, knows-10)
+nsubj(use-13, he-11)
+aux(use-13, WILL-12)
+ccomp(knows-10, use-13)
+det(weapon-15, the-14)
+dobj(use-13, weapon-15)
+nsubj(use-19, he-17)
+aux(use-19, will-18)
+conj_and(is-2, use-19)
+dobj(use-19, it-20)
+advmod(well-22, fairly-21)
+advmod(use-19, well-22)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ average) (NN criminal))
+    (VP (MD will)
+      (VP (VB prefer)
+        (S
+          (VP (TO to)
+            (VP (VB surrender)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ realizes)
+                    (SBAR
+                      (S
+                        (NP (PRP he))
+                        (VP (VBZ is)
+                          (VP (VBG facing)
+                            (NP
+                              (NP (NN someone))
+                              (ADJP (JJ trained)
+                                (CC and)
+                                (JJ willing)))
+                            (S
+                              (VP (TO to)
+                                (VP (VB use)
+                                  (NP (JJ lethal) (NN force)))))))))))))))))
+    (. .)))
+
+det(criminal-3, The-1)
+amod(criminal-3, average-2)
+nsubj(prefer-5, criminal-3)
+xsubj(surrender-7, criminal-3)
+aux(prefer-5, will-4)
+root(ROOT-0, prefer-5)
+aux(surrender-7, to-6)
+xcomp(prefer-5, surrender-7)
+advmod(realizes-10, when-8)
+nsubj(realizes-10, he-9)
+advcl(surrender-7, realizes-10)
+nsubj(facing-13, he-11)
+aux(facing-13, is-12)
+ccomp(realizes-10, facing-13)
+dobj(facing-13, someone-14)
+amod(someone-14, trained-15)
+amod(someone-14, willing-17)
+conj_and(trained-15, willing-17)
+aux(use-19, to-18)
+xcomp(facing-13, use-19)
+amod(force-21, lethal-20)
+dobj(use-19, force-21)
+

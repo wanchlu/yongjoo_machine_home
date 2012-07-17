@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Free) (NN health) (NN care))
+      (VP (VBZ leads)
+        (PP (TO to)
+          (NP
+            (NP (NN overuse))
+            (PP (IN of)
+              (NP
+                (NP (JJ medical) (NNS services))
+                (CC and)
+                (NP (JJR higher) (NNS costs))))))
+        (SBAR
+          (WHADVP (WRB Whenever))
+          (S
+            (NP
+              (NP (NN something))
+              (PP (IN of)
+                (NP (NN value))))
+            (VP (VBZ is)
+              (VP (VBN provided)
+                (ADVP (JJ free)
+                  (PP (IN of)
+                    (NP (NN charge))))
+                (PP (IN in)
+                  (NP (NN society)))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN used)
+        (ADVP (RBR more))))
+    (. .)))
+
+amod(care-3, Free-1)
+nn(care-3, health-2)
+nsubj(leads-4, care-3)
+ccomp(used-27, leads-4)
+prep_to(leads-4, overuse-6)
+amod(services-9, medical-8)
+prep_of(overuse-6, services-9)
+amod(costs-12, higher-11)
+prep_of(overuse-6, costs-12)
+conj_and(services-9, costs-12)
+advmod(provided-18, Whenever-13)
+nsubjpass(provided-18, something-14)
+prep_of(something-14, value-16)
+auxpass(provided-18, is-17)
+advcl(leads-4, provided-18)
+advmod(provided-18, free-19)
+prep_of(free-19, charge-21)
+prep_in(provided-18, society-23)
+nsubjpass(used-27, it-25)
+auxpass(used-27, is-26)
+root(ROOT-0, used-27)
+advmod(used-27, more-28)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ means)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJ overall) (NNS costs))
+            (PP (IN of)
+              (NP (NN health) (NN care))))
+          (VP (MD will)
+            (VP (VB rise))))))
+    (. .)))
+
+nsubj(means-2, This-1)
+root(ROOT-0, means-2)
+complm(rise-11, that-3)
+det(costs-6, the-4)
+amod(costs-6, overall-5)
+nsubj(rise-11, costs-6)
+nn(care-9, health-8)
+prep_of(costs-6, care-9)
+aux(rise-11, will-10)
+ccomp(means-2, rise-11)
+

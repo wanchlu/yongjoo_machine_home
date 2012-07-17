@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (ADVP (RB Yes))
+    (NP (PRP it))
+    (ADVP (RB really))
+    (VP (MD should))
+    (. .)))
+
+advmod(should-4, Yes-1)
+nsubj(should-4, it-2)
+advmod(should-4, really-3)
+root(ROOT-0, should-4)
+
+(ROOT
+  (FRAG
+    (NP (DT That) (NN way)
+      (SBAR
+        (S
+          (NP (DT the) (NNP Health) (NN rate))
+          (VP (MD would)
+            (VP (VB go)
+              (ADVP (RB down)
+                (CC or)
+                (RB up))
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP (RB ever) (NN way))
+                  (VP (VBZ is)
+                    (ADJP
+                      (ADJP (JJ good))
+                      (: ...)
+                      (ADJP (JJ haha)))))))))))))
+
+det(way-2, That-1)
+root(ROOT-0, way-2)
+det(rate-5, the-3)
+nn(rate-5, Health-4)
+nsubj(go-7, rate-5)
+aux(go-7, would-6)
+ccomp(way-2, go-7)
+advmod(go-7, down-8)
+advmod(go-7, up-10)
+conj_or(down-8, up-10)
+dobj(good-15, which-11)
+advmod(way-13, ever-12)
+nsubj(good-15, way-13)
+cop(good-15, is-14)
+ccomp(go-7, good-15)
+dep(good-15, haha-17)
+

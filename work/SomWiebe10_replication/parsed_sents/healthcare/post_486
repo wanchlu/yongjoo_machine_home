@@ -1,0 +1,49 @@
+(ROOT
+  (FRAG
+    (INTJ (UH Yeah))
+    (, ,)
+    (ADVP (RB maybe))
+    (. .)))
+
+dep(maybe-3, Yeah-1)
+root(ROOT-0, maybe-3)
+
+(ROOT
+  (PRN
+    (S
+      (S (CC But)
+        (SBAR (IN if)
+          (S
+            (NP (PRP it))
+            (VP (VBZ gets)
+              (NP (RB just) (CD one) (NN person)))))
+        (VP (VBD fired)
+          (PRT (RP up))))
+      (, ,)
+      (ADVP (RB then))
+      (S
+        (NP
+          (NP (PRP$ my) (NN job) (RB here))
+          (SBAR
+            (S
+              (VP (VBZ is)
+                (VP (VBN done)))
+              (: ;))))))
+    (-RRB- -RRB-)))
+
+cc(fired-8, But-1)
+mark(gets-4, if-2)
+nsubj(gets-4, it-3)
+csubj(fired-8, gets-4)
+advmod(person-7, just-5)
+num(person-7, one-6)
+dobj(gets-4, person-7)
+root(ROOT-0, fired-8)
+prt(fired-8, up-9)
+advmod(fired-8, then-11)
+poss(job-13, my-12)
+dep(fired-8, job-13)
+advmod(job-13, here-14)
+auxpass(done-16, is-15)
+rcmod(job-13, done-16)
+

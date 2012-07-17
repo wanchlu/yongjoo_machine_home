@@ -1,0 +1,188 @@
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ many))
+    (SQ
+      (NP (NN handgun) (NNS owners))
+      (VP (VB have)
+        (VP (VBN murdered)
+          (NP (PRP$ their) (JJ own) (NNS relatives))
+          (PP
+            (PP (IN in)
+              (NP (DT a) (NN fit)))
+            (CC or)
+            (RB because)
+            (PP (IN of)
+              (NP
+                (NP (DT a) (JJ paranoid) (NN mis-identification))
+                (PP (IN of)
+                  (NP (DT a) (JJ possible) (`` ``) (FW intruder) ('' '')))))))))
+    (. ?)))
+
+advmod(many-2, How-1)
+dep(murdered-6, many-2)
+nn(owners-4, handgun-3)
+nsubj(murdered-6, owners-4)
+aux(murdered-6, have-5)
+root(ROOT-0, murdered-6)
+poss(relatives-9, their-7)
+amod(relatives-9, own-8)
+dobj(murdered-6, relatives-9)
+prep(murdered-6, in-10)
+det(fit-12, a-11)
+pobj(in-10, fit-12)
+prep(murdered-6, because-14)
+advmod(in-10, because-14)
+conj_or(in-10, because-14)
+dep(in-10, of-15)
+det(mis-identification-18, a-16)
+amod(mis-identification-18, paranoid-17)
+pobj(of-15, mis-identification-18)
+det(intruder-23, a-20)
+amod(intruder-23, possible-21)
+prep_of(mis-identification-18, intruder-23)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS people))
+    (VP (VBD were)
+      (ADVP (RB obviously))
+      (ADJP (RB pretty) (JJ unstable)
+        (S
+          (VP (TO to)
+            (VP (VB begin)
+              (PP (IN with)
+                (SBAR (CC but)
+                  (S
+                    (NP (PRP they))
+                    (VP
+                      (VP
+                        (ADVP (RB just))
+                        (VBD passed)
+                        (PP (IN through)
+                          (NP (DT the) (NN filter))))
+                      (CC and)
+                      (VP (VBD got)
+                        (NP (DT a) (NN gun))))))))))))
+    (. .)))
+
+det(people-2, These-1)
+nsubj(unstable-6, people-2)
+cop(unstable-6, were-3)
+advmod(unstable-6, obviously-4)
+advmod(unstable-6, pretty-5)
+root(ROOT-0, unstable-6)
+aux(begin-8, to-7)
+xcomp(unstable-6, begin-8)
+nsubj(passed-13, they-11)
+nsubj(got-18, they-11)
+advmod(passed-13, just-12)
+prepc_with(begin-8, passed-13)
+det(filter-16, the-15)
+prep_through(passed-13, filter-16)
+prepc_with(begin-8, got-18)
+conj_and(passed-13, got-18)
+det(gun-20, a-19)
+dobj(got-18, gun-20)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN number))
+      (PP (IN of)
+        (NP
+          (NP (DT these) (NNS cases))
+          (PP (VBN compared)
+            (PP (IN with)
+              (NP
+                (NP (DT the) (JJ actual) (NN use))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS handguns))
+                    (PP (IN for)
+                      (NP (JJ legitimate) (NN self) (NN defense)))))))))))
+    (VP (VBZ looks)
+      (ADJP (RB pretty) (JJ bad)
+        (PP (TO to)
+          (NP
+            (NP (PRP me))
+            (, ,)
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (VP (VBZ is)
+                  (SBAR
+                    (WHADVP (WRB why))
+                    (S
+                      (NP (JJS most) (NN police) (NNS chiefs))
+                      (VP (VBP seem)
+                        (S
+                          (VP (TO to)
+                            (VP (VB take)
+                              (NP
+                                (NP (DT a) (NN dim) (NN view))
+                                (PP (IN of)
+                                  (NP (JJ gun-toting) (NNS citizens)))))))))))))))))
+    (. .)))
+
+det(number-2, The-1)
+nsubj(looks-17, number-2)
+det(cases-5, these-4)
+prep_of(number-2, cases-5)
+prepc_compared_with(cases-5, with-7)
+det(use-10, the-8)
+amod(use-10, actual-9)
+pobj(cases-5, use-10)
+prep_of(use-10, handguns-12)
+amod(defense-16, legitimate-14)
+nn(defense-16, self-15)
+prep_for(handguns-12, defense-16)
+root(ROOT-0, looks-17)
+advmod(bad-19, pretty-18)
+acomp(looks-17, bad-19)
+prep_to(bad-19, me-21)
+nsubj(is-24, me-21)
+rcmod(me-21, is-24)
+advmod(seem-29, why-25)
+amod(chiefs-28, most-26)
+nn(chiefs-28, police-27)
+nsubj(seem-29, chiefs-28)
+xsubj(take-31, chiefs-28)
+advcl(is-24, seem-29)
+aux(take-31, to-30)
+xcomp(seem-29, take-31)
+det(view-34, a-32)
+nn(view-34, dim-33)
+dobj(take-31, view-34)
+amod(citizens-37, gun-toting-36)
+prep_of(view-34, citizens-37)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB agree)
+            (PP (IN with)
+              (NP (DT that) (NN view))))))
+      (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VB regret)
+          (S
+            (VP (TO to)
+              (VP (VB say)))))))))
+
+nsubj(have-2, I-1)
+xsubj(agree-4, I-1)
+root(ROOT-0, have-2)
+aux(agree-4, to-3)
+xcomp(have-2, agree-4)
+det(view-7, that-6)
+prep_with(agree-4, view-7)
+nsubj(regret-10, I-9)
+xsubj(say-12, I-9)
+ccomp(have-2, regret-10)
+aux(say-12, to-11)
+xcomp(regret-10, say-12)
+

@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP blame)
+      (NP
+        (NP (DT a) (JJ single) (NN object))
+        (PP (IN on)
+          (NP (DT a) (JJ single) (NN factor)))))
+    (. .)))
+
+nsubj(blame-2, You-1)
+root(ROOT-0, blame-2)
+det(object-5, a-3)
+amod(object-5, single-4)
+dobj(blame-2, object-5)
+det(factor-9, a-7)
+amod(factor-9, single-8)
+prep_on(object-5, factor-9)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB completely))
+    (VP (VBP ignore)
+      (NP (DT the) (JJ individual) (JJ human) (NN factor)))
+    (. .)))
+
+nsubj(ignore-3, You-1)
+advmod(ignore-3, completely-2)
+root(ROOT-0, ignore-3)
+det(factor-7, the-4)
+amod(factor-7, individual-5)
+amod(factor-7, human-6)
+dobj(ignore-3, factor-7)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP do) (RB n't)
+        (VP (VB need)
+          (S
+            (VP (TO to)
+              (VP (VB make)
+                (S
+                  (NP (NNS guns))
+                  (ADJP (JJ illegal)))))))))
+    (, ,)
+    (S
+      (NP (PRP they))
+      (VP (VBP are) (RB n't)
+        (ADJP (JJ illegal)
+          (PP (IN in)
+            (NP
+              (NP (DT those) (NNS countries))
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBD stated)))))))))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB improve)
+              (NP
+                (NP (PRP$ our) (NNS children) (POS 's))
+                (NN education)))))))
+    (. .)))
+
+nsubj(need-4, We-1)
+xsubj(make-6, We-1)
+aux(need-4, do-2)
+neg(need-4, n't-3)
+root(ROOT-0, need-4)
+aux(make-6, to-5)
+xcomp(need-4, make-6)
+nsubj(illegal-8, guns-7)
+xcomp(make-6, illegal-8)
+nsubj(illegal-13, they-10)
+cop(illegal-13, are-11)
+neg(illegal-13, n't-12)
+ccomp(need-4, illegal-13)
+det(countries-16, those-15)
+prep_in(illegal-13, countries-16)
+dobj(stated-18, countries-16)
+nsubj(stated-18, you-17)
+rcmod(countries-16, stated-18)
+nsubj(need-21, we-20)
+xsubj(improve-23, we-20)
+ccomp(need-4, need-21)
+aux(improve-23, to-22)
+xcomp(need-21, improve-23)
+poss(children-25, our-24)
+poss(education-27, children-25)
+dobj(improve-23, education-27)
+

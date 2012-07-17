@@ -1,0 +1,116 @@
+(ROOT
+  (NP (NNP American) (NNP Medical) (NNP Association) (. .)))
+
+nn(Association-3, American-1)
+nn(Association-3, Medical-2)
+root(ROOT-0, Association-3)
+
+(ROOT
+  (S
+    (S
+      (NP (JJ British) (, ,) (JJ Canadian) (NN Experience))
+      (VP (VBZ Shows)
+        (NP
+          (NP (NNP Folly))
+          (PP (IN of)
+            (NP (NNP Socialized) (NNP Medicine))))))
+    (, ,)
+    (NP (NNP Analyst))
+    (VP (VBZ Says))
+    (. .)))
+
+amod(Experience-4, British-1)
+amod(Experience-4, Canadian-3)
+nsubj(Shows-5, Experience-4)
+ccomp(Says-12, Shows-5)
+dobj(Shows-5, Folly-6)
+nn(Medicine-9, Socialized-8)
+prep_of(Folly-6, Medicine-9)
+nsubj(Says-12, Analyst-11)
+root(ROOT-0, Says-12)
+
+(ROOT
+  (NP
+    (NP (NNP Press) (NN release))
+    (, ,)
+    (NP (NNP Heritage) (NNP Foundation))
+    (. .)))
+
+nn(release-2, Press-1)
+root(ROOT-0, release-2)
+nn(Foundation-5, Heritage-4)
+appos(release-2, Foundation-5)
+
+(ROOT
+  (FRAG
+    (NP (NNP Sept.) (CD 29))
+    (, ,)
+    (NP (CD 2000))
+    (. .)))
+
+root(ROOT-0, Sept.-1)
+num(Sept.-1, 29-2)
+dep(Sept.-1, 2000-4)
+
+(ROOT
+  (S
+    (NP (NNP Capitalism) (NNP Magazine) (NNP Dead) (NNP Meat))
+    (PP (IN On)
+      (NP
+        (NP
+          (NP (DT The) (NNP Fence) (POS 's))
+          (JJ short) (NN film))
+        (PP (IN about)
+          (NP
+            (NP (NNP Canada) (POS 's))
+            (JJ socialized) (NN healthcare) (NN system)))))
+    (. .)))
+
+nn(Meat-4, Capitalism-1)
+nn(Meat-4, Magazine-2)
+nn(Meat-4, Dead-3)
+root(ROOT-0, Meat-4)
+dep(Meat-4, On-5)
+det(Fence-7, The-6)
+poss(film-10, Fence-7)
+amod(film-10, short-9)
+pobj(On-5, film-10)
+poss(system-16, Canada-12)
+amod(system-16, socialized-14)
+nn(system-16, healthcare-15)
+prep_about(film-10, system-16)
+
+(ROOT
+  (NP
+    (NP (DT The) (NNP Heartland) (NNP Institutes) ('' '') (NNP Health))
+    (NP
+      (NP (NNP Care) (NNP Issue) (NNP Suite) (NNP The) (NNP Problems))
+      (PP (IN with)
+        (NP
+          (NP (NNP Socialized) (NNP Health) (NNP Care))
+          (PP (IN from)
+            (NP
+              (NP (NNP Mark) (NNP Valenti) (POS 's))
+              (NNP Liberty) (NNP Page) (NNP Laissez) (NNP Faire) (NNP Health) (NNP Care.com))))))))
+
+det(Health-5, The-1)
+nn(Health-5, Heartland-2)
+nn(Health-5, Institutes-3)
+root(ROOT-0, Health-5)
+nn(Problems-10, Care-6)
+nn(Problems-10, Issue-7)
+nn(Problems-10, Suite-8)
+nn(Problems-10, The-9)
+dep(Health-5, Problems-10)
+nn(Care-14, Socialized-12)
+nn(Care-14, Health-13)
+prep_with(Problems-10, Care-14)
+nn(Valenti-17, Mark-16)
+poss(Care.com-24, Valenti-17)
+nn(Care.com-24, Liberty-19)
+nn(Care.com-24, Page-20)
+nn(Care.com-24, Laissez-21)
+nn(Care.com-24, Faire-22)
+nn(Care.com-24, Health-23)
+prep_from(Care-14, Care.com-24)
+

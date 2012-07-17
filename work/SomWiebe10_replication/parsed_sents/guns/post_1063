@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Guns))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN licensed)
+            (PP (RB not)
+              (ADJP (VBN banned)))))))
+    (, ,)
+    (NP
+      (NP (NN anyone))
+      (VP (VBN caught)
+        (PP (IN with)
+          (NP (DT an) (JJ unlicensed) (NN gun)))))
+    (VP (VBZ is)
+      (VP (VBG heading)
+        (PP (IN for)
+          (NP (DT the) (NN slammer)))))
+    (. .)))
+
+nsubjpass(licensed-4, Guns-1)
+aux(licensed-4, should-2)
+auxpass(licensed-4, be-3)
+ccomp(heading-15, licensed-4)
+prep(licensed-4, not-5)
+pobj(not-5, banned-6)
+nsubj(heading-15, anyone-8)
+partmod(anyone-8, caught-9)
+det(gun-13, an-11)
+amod(gun-13, unlicensed-12)
+prep_with(caught-9, gun-13)
+aux(heading-15, is-14)
+root(ROOT-0, heading-15)
+det(slammer-18, the-17)
+prep_for(heading-15, slammer-18)
+
+(ROOT
+  (S
+    (NP (NN Anyone))
+    (VP (VBD caught)
+      (PP (IN with)
+        (NP (DT a) (NN switch) (NN blade)))
+      (ADVP (RB too)))
+    (. .)))
+
+nsubj(caught-2, Anyone-1)
+root(ROOT-0, caught-2)
+det(blade-6, a-4)
+nn(blade-6, switch-5)
+prep_with(caught-2, blade-6)
+advmod(caught-2, too-7)
+

@@ -1,0 +1,33 @@
+(ROOT
+  (S
+    (NP (DT The) (NN bible))
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (NN proof))
+        (PP (IN for)
+          (NP (NN god)))))
+    (. .)))
+
+det(bible-2, The-1)
+nsubj(proof-5, bible-2)
+cop(proof-5, is-3)
+neg(proof-5, not-4)
+root(ROOT-0, proof-5)
+prep_for(proof-5, god-7)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBN considered)
+          (NP (JJ circular) (NN reasoning)))))
+    (. .)))
+
+nsubjpass(considered-4, That-1)
+aux(considered-4, would-2)
+auxpass(considered-4, be-3)
+root(ROOT-0, considered-4)
+amod(reasoning-6, circular-5)
+dobj(considered-4, reasoning-6)
+

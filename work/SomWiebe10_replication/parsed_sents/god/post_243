@@ -1,0 +1,72 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Matter))
+      (VP (VBZ is) (RB not)
+        (VP (VBN destroyed)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP it))
+              (VP (VBZ enters)
+                (NP (DT a) (JJ black) (NN hole))))))))
+    (: ...)
+    (S
+      (NP (PRP it))
+      (VP (VBZ adds)
+        (PP (TO to)
+          (NP (DT the) (NN mass)))))
+    (. .)))
+
+nsubjpass(destroyed-4, Matter-1)
+auxpass(destroyed-4, is-2)
+neg(destroyed-4, not-3)
+root(ROOT-0, destroyed-4)
+advmod(enters-7, when-5)
+nsubj(enters-7, it-6)
+advcl(destroyed-4, enters-7)
+det(hole-10, a-8)
+amod(hole-10, black-9)
+dobj(enters-7, hole-10)
+nsubj(adds-13, it-12)
+parataxis(destroyed-4, adds-13)
+det(mass-16, the-15)
+prep_to(adds-13, mass-16)
+
+(ROOT
+  (S
+    (S
+      (NP (EX There))
+      (VP (VBP are)
+        (NP
+          (NP (NNS questions))
+          (PP (IN about)
+            (NP
+              (NP (NN entropy))
+              (PP (IN in)
+                (NP (NN relation))))))
+        (PP (TO to)
+          (NP (JJ black) (NNS holes)))))
+    (: ...)
+    (S
+      (ADVP (RB specifically))
+      (VP (VB do)
+        (NP (JJ black) (NNS holes))
+        (VP (`` ``) (VB destroy) ('' '')
+          (NP (NN information)))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, questions-3)
+prep_about(questions-3, entropy-5)
+prep_in(entropy-5, relation-7)
+amod(holes-10, black-9)
+prep_to(are-2, holes-10)
+advmod(destroy-17, specifically-12)
+aux(destroy-17, do-13)
+amod(holes-15, black-14)
+dobj(destroy-17, holes-15)
+parataxis(are-2, destroy-17)
+dobj(destroy-17, information-19)
+

@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (VBZ offers)
+      (NP
+        (NP (DT a) (JJ valuable) (NN check))
+        (PP (IN on)
+          (NP (JJ private) (NN insurance) (NNP Jacob) (NNP Hacker)))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(offers-3, insurance-2)
+root(ROOT-0, offers-3)
+det(check-6, a-4)
+amod(check-6, valuable-5)
+dobj(offers-3, check-6)
+amod(Hacker-11, private-8)
+nn(Hacker-11, insurance-9)
+nn(Hacker-11, Jacob-10)
+prep_on(check-6, Hacker-11)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NN case))
+    (PP (IN for)
+      (NP (NN public) (NN plan) ('' '')))
+    (. .)))
+
+det(case-3, The-2)
+root(ROOT-0, case-3)
+dep(case-3, for-4)
+nn(plan-6, public-5)
+pobj(for-4, plan-6)
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (NNP Institute))
+      (PP (IN for)
+        (NP
+          (NP (NNP America) (POS 's))
+          (NNP Future))))
+    (: :)
+    (S (`` ``)
+      (NP (NNP Public) (NN plan) (NN choice))
+      (VP (VBZ creates)
+        (NP
+          (NP (DT an) (JJ institutional) (NN check))
+          (CC and)
+          (NP (NN balance)))))
+    (, ,)
+    (VP (VBG encouraging)
+      (NP (JJ private) (NNS plans))
+      (S
+        (VP (TO to)
+          (VP (VB uphold)
+            (NP (JJ high) (NNS standards))))))
+    (PP (IN of)
+      (NP
+        (NP (NN quality))
+        (, ,)
+        (NP (NN affordability))
+        (, ,)
+        (CC and)
+        (NP (NN access))))
+    (. .)))
+
+det(Institute-2, The-1)
+root(ROOT-0, Institute-2)
+poss(Future-6, America-4)
+prep_for(Institute-2, Future-6)
+nn(choice-11, Public-9)
+nn(choice-11, plan-10)
+nsubj(creates-12, choice-11)
+dep(Institute-2, creates-12)
+det(check-15, an-13)
+amod(check-15, institutional-14)
+dobj(creates-12, check-15)
+dobj(creates-12, balance-17)
+conj_and(check-15, balance-17)
+partmod(Institute-2, encouraging-19)
+amod(plans-21, private-20)
+dobj(encouraging-19, plans-21)
+aux(uphold-23, to-22)
+xcomp(encouraging-19, uphold-23)
+amod(standards-25, high-24)
+dobj(uphold-23, standards-25)
+prep_of(Institute-2, quality-27)
+prep_of(Institute-2, affordability-29)
+conj_and(quality-27, affordability-29)
+prep_of(Institute-2, access-32)
+conj_and(quality-27, access-32)
+

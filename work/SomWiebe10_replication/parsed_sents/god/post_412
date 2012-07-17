@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (VP (VB hmmm)
+      (SBAR
+        (SBARQ
+          (WHNP (WDT what) (NN argument))
+          (SQ (MD would)
+            (NP (PRP you))
+            (VP (VB use)
+              (S
+                (VP (TO to)
+                  (VP (VB prove)
+                    (S
+                      (NP (PRP them))
+                      (ADJP (JJ wrong))
+                      (ADVP (RB exactly))))))))
+          (. ?))))))
+
+root(ROOT-0, hmmm-1)
+det(argument-3, what-2)
+dep(use-6, argument-3)
+aux(use-6, would-4)
+nsubj(use-6, you-5)
+xsubj(prove-8, you-5)
+dep(hmmm-1, use-6)
+aux(prove-8, to-7)
+xcomp(use-6, prove-8)
+nsubj(wrong-10, them-9)
+xcomp(prove-8, wrong-10)
+advmod(wrong-10, exactly-11)
+
+(ROOT
+  (SINV
+    (ADVP (IN since) (DT that))
+    (VP (VBZ is))
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP (PRP we))
+        (VP (VBP are)
+          (ADJP (JJ interested)
+            (PP (IN in)
+              (ADVP (RB here)))))))
+    (: ...)))
+
+advmod(is-3, since-1)
+dep(since-1, that-2)
+root(ROOT-0, is-3)
+dobj(interested-7, what-4)
+nsubj(interested-7, we-5)
+cop(interested-7, are-6)
+dep(is-3, interested-7)
+prep(interested-7, in-8)
+pcomp(in-8, here-9)
+pobj(in-8, here-9)
+

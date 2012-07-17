@@ -1,0 +1,137 @@
+(ROOT
+  (S
+    (NP (VBG Banning) (NNS guns))
+    (VP (MD will) (RB not)
+      (VP (VB make)
+        (S
+          (NP (JJ gun-related) (NNS deaths))
+          (VP (VB decline)
+            (ADVP (RB substantially))))))
+    (. .)))
+
+amod(guns-2, Banning-1)
+nsubj(make-5, guns-2)
+aux(make-5, will-3)
+neg(make-5, not-4)
+root(ROOT-0, make-5)
+amod(deaths-7, gun-related-6)
+nsubj(decline-8, deaths-7)
+ccomp(make-5, decline-8)
+advmod(decline-8, substantially-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN majority))
+      (PP (IN of)
+        (NP (NN gun) (NNS buyers))))
+    (VP (VBP are)
+      (NP
+        (NP (JJ law-abiding) (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP keep)
+              (NP
+                (NP (DT the) (NNS guns))
+                (PP (IN for)
+                  (NP (NN self) (NN defense)))))))))
+    (. .)))
+
+det(majority-2, The-1)
+nsubj(people-8, majority-2)
+nn(buyers-5, gun-4)
+prep_of(majority-2, buyers-5)
+cop(people-8, are-6)
+amod(people-8, law-abiding-7)
+root(ROOT-0, people-8)
+nsubj(keep-10, people-8)
+rcmod(people-8, keep-10)
+det(guns-12, the-11)
+dobj(keep-10, guns-12)
+nn(defense-15, self-14)
+prep_for(guns-12, defense-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Guns))
+      (VP (VBN used)
+        (PP (IN in)
+          (NP (NN street) (NNS crimes)))))
+    (PRN (, ,)
+      (ADVP (RB especially))
+      (PP (IN from)
+        (NP (NNS gangs)))
+      (, ,))
+    (VP (VBP are)
+      (ADVP (RB typically))
+      (ADJP (JJ illegal)))
+    (. .)))
+
+nsubj(illegal-13, Guns-1)
+partmod(Guns-1, used-2)
+nn(crimes-5, street-4)
+prep_in(used-2, crimes-5)
+dep(from-8, especially-7)
+dep(illegal-13, from-8)
+pobj(from-8, gangs-9)
+cop(illegal-13, are-11)
+advmod(illegal-13, typically-12)
+root(ROOT-0, illegal-13)
+
+(ROOT
+  (S
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (NNS guns))
+          (VP (VBP are)
+            (VP (VBN banned)))))
+      (, ,)
+      (NP (DT the) (JJ illegal) (NN street) (NNS guns))
+      (VP (MD will)
+        (ADVP (RB still))
+        (VP (VB be)
+          (VP (VBN circulated)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (JJ innocent) (NNS people))
+      (VP (MD will) (RB not)
+        (VP (VB be)
+          (ADJP (JJ able)
+            (S
+              (VP (TO to)
+                (VP (VB obtain)
+                  (NP
+                    (NP (DT a) (NN gun))
+                    (PP (IN for)
+                      (NP (NN self-defense)))))))))))
+    (. .)))
+
+mark(banned-4, If-1)
+nsubjpass(banned-4, guns-2)
+auxpass(banned-4, are-3)
+advcl(circulated-13, banned-4)
+det(guns-9, the-6)
+amod(guns-9, illegal-7)
+nn(guns-9, street-8)
+nsubjpass(circulated-13, guns-9)
+aux(circulated-13, will-10)
+advmod(circulated-13, still-11)
+auxpass(circulated-13, be-12)
+root(ROOT-0, circulated-13)
+det(people-18, the-16)
+amod(people-18, innocent-17)
+nsubj(able-22, people-18)
+aux(able-22, will-19)
+neg(able-22, not-20)
+cop(able-22, be-21)
+conj_but(circulated-13, able-22)
+aux(obtain-24, to-23)
+xcomp(able-22, obtain-24)
+det(gun-26, a-25)
+dobj(obtain-24, gun-26)
+prep_for(gun-26, self-defense-28)
+

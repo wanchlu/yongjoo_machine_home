@@ -1,0 +1,200 @@
+(ROOT
+  (S
+    (S
+      (INTJ (UH True))
+      (NP (NN school) (NNS shootings))
+      (VP (VBP are)
+        (ADJP (RB incredibly) (JJ rare))))
+    (CC but)
+    (FRAG
+      (WHNP (WP what))
+      (PP (IN about)
+        (NP
+          (NP (PDT all) (DT the) (JJ other) (NNS crimes))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP occur)
+                (PP (IN on)
+                  (NP (NN college) (NNS campuses)))
+                (NP (NN everyday))))))))
+    (. .)))
+
+dep(rare-6, True-1)
+nn(shootings-3, school-2)
+nsubj(rare-6, shootings-3)
+cop(rare-6, are-4)
+advmod(rare-6, incredibly-5)
+root(ROOT-0, rare-6)
+conj_but(rare-6, what-8)
+dep(what-8, about-9)
+predet(crimes-13, all-10)
+det(crimes-13, the-11)
+amod(crimes-13, other-12)
+pobj(about-9, crimes-13)
+nsubj(occur-15, crimes-13)
+rcmod(crimes-13, occur-15)
+nn(campuses-18, college-17)
+prep_on(occur-15, campuses-18)
+dobj(occur-15, everyday-19)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ Ranging)
+      (PP (IN from)
+        (NP (NN assault)))
+      (PP (TO to)
+        (NP (NN rape))))
+    (SBAR
+      (WHADVP (WRB why))
+      (S
+        (VP (VBP are)
+          (NP
+            (NP (PDT all) (DT those) (NNS crimes))
+            (CONJP (RB not) (IN as))
+            (NP (JJ important))))))
+    (. ?)))
+
+root(ROOT-0, Ranging-1)
+prep_from(Ranging-1, assault-3)
+prep_to(Ranging-1, rape-5)
+advmod(crimes-10, why-6)
+cop(crimes-10, are-7)
+predet(crimes-10, all-8)
+det(crimes-10, those-9)
+dep(Ranging-1, crimes-10)
+dep(Ranging-1, important-13)
+conj_negcc(crimes-10, important-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ does)
+      (NP
+        (NP (JJ crossing) (DT an) (JJ imaginary) (NN line))
+        (PP (IN on)
+          (PP (TO to)
+            (NP (DT a) (NN college) (NN campus) (RB not)))))
+      (VP (VB allow)
+        (NP (PRP you))
+        (NP
+          (NP (DT the) (NN right))
+          (PP (TO to)
+            (NP (NN self) (NN defense))))))
+    (. ?)))
+
+advmod(allow-13, Why-1)
+aux(allow-13, does-2)
+amod(line-6, crossing-3)
+det(line-6, an-4)
+amod(line-6, imaginary-5)
+nsubj(allow-13, line-6)
+prep(line-6, on-7)
+pcomp(on-7, to-8)
+det(campus-11, a-9)
+nn(campus-11, college-10)
+prep_to(on-7, campus-11)
+neg(campus-11, not-12)
+root(ROOT-0, allow-13)
+iobj(allow-13, you-14)
+det(right-16, the-15)
+dobj(allow-13, right-16)
+nn(defense-19, self-18)
+prep_to(right-16, defense-19)
+
+(ROOT
+  (S
+    (ADVP (RB Also))
+    (NP
+      (NP (DT the) (NN place))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (PRP you))
+          (VP (VBD got)
+            (NP (PDT all) (PRP$ your) (NN information))
+            (PP (IN from))))))
+    (VP (VBZ is)
+      (VP (VBG talking)
+        (PP (IN about)
+          (NP (NNP High) (NNP Schools)))
+        (PP (RB not)
+          (NP (NN college) (NNS campuses)))))
+    (. .)))
+
+advmod(talking-12, Also-1)
+det(place-3, the-2)
+nsubj(talking-12, place-3)
+advmod(got-6, where-4)
+nsubj(got-6, you-5)
+rcmod(place-3, got-6)
+predet(information-9, all-7)
+poss(information-9, your-8)
+dobj(got-6, information-9)
+prep(got-6, from-10)
+aux(talking-12, is-11)
+root(ROOT-0, talking-12)
+nn(Schools-15, High-14)
+prep_about(talking-12, Schools-15)
+prep(talking-12, not-16)
+nn(campuses-18, college-17)
+pobj(not-16, campuses-18)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (NP
+          (NP (JJ current))
+          (SBAR
+            (S
+              (VP (VBP have)
+                (NP (DT the) (NN time)
+                  (S
+                    (VP (TO to)
+                      (VP (VB look)
+                        (PRT (RP up))
+                        (NP (NN college) (NNS statistics))))))))))))
+    (CC but)
+    (S
+      (PP (IN in)
+        (NP (DT the) (JJ next) (JJ few) (NNS days)))
+      (NP (PRP I))
+      (VP (MD will)
+        (VP (VB attempt)
+          (S
+            (VP (TO to)
+              (VP (VB find)
+                (NP (DT the) (NNS stats))
+                (PP (IN for)
+                  (NP (NN college) (NNS campuses)))))))))
+    (. .)))
+
+nsubj(do-2, I-1)
+root(ROOT-0, do-2)
+neg(do-2, n't-3)
+dobj(do-2, current-4)
+rcmod(current-4, have-5)
+det(time-7, the-6)
+dobj(have-5, time-7)
+aux(look-9, to-8)
+infmod(time-7, look-9)
+prt(look-9, up-10)
+nn(statistics-12, college-11)
+dobj(look-9, statistics-12)
+det(days-18, the-15)
+amod(days-18, next-16)
+amod(days-18, few-17)
+prep_in(attempt-21, days-18)
+nsubj(attempt-21, I-19)
+xsubj(find-23, I-19)
+aux(attempt-21, will-20)
+conj_but(do-2, attempt-21)
+aux(find-23, to-22)
+xcomp(attempt-21, find-23)
+det(stats-25, the-24)
+dobj(find-23, stats-25)
+nn(campuses-28, college-27)
+prep_for(find-23, campuses-28)
+

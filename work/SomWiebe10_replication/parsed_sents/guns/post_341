@@ -1,0 +1,114 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP know)
+      (ADVP (RB personally))
+      (PP (IN of)
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (VP (VBN obtained)
+                  (NP (JJ unregistered) (NNS guns))
+                  (, ,)
+                  (SBAR (IN because)
+                    (S
+                      (NP
+                        (NP (NN anyone))
+                        (VP (VBG planning)
+                          (PP (IN on)
+                            (S
+                              (VP (VBG using)
+                                (NP
+                                  (NP (DT a) (NN gun))
+                                  (PP (IN for)
+                                    (NP (NN crime)))))))))
+                      (VP (VBZ does) (RB not)
+                        (VP (VB want)
+                          (S
+                            (NP (PRP it))
+                            (VP (VBN tracked)
+                              (ADVP (RB back)))))))))))))))
+    (. .)))
+
+nsubj(know-2, i-1)
+root(ROOT-0, know-2)
+advmod(know-2, personally-3)
+prep_of(know-2, people-5)
+nsubj(obtained-8, people-5)
+aux(obtained-8, have-7)
+rcmod(people-5, obtained-8)
+amod(guns-10, unregistered-9)
+dobj(obtained-8, guns-10)
+mark(want-23, because-12)
+nsubj(want-23, anyone-13)
+partmod(anyone-13, planning-14)
+prepc_on(planning-14, using-16)
+det(gun-18, a-17)
+dobj(using-16, gun-18)
+prep_for(gun-18, crime-20)
+aux(want-23, does-21)
+neg(want-23, not-22)
+advcl(obtained-8, want-23)
+nsubj(tracked-25, it-24)
+dep(want-23, tracked-25)
+advmod(tracked-25, back-26)
+
+(ROOT
+  (S
+    (S
+      (NP (FW i))
+      (VP (VBP have)
+        (ADVP (RB also))
+        (VP (VBN seen)
+          (NP (NNS neighborhoods))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (NN everyone))
+              (VP (VBZ has)
+                (NP (DT a) (NN gun))))))))
+    (CC but)
+    (S
+      (NP (NNS no1))
+      (VP (VBZ says)
+        (CC or)
+        (VBZ uses)
+        (NP (PRP them))
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP know)
+              (SBAR
+                (S
+                  (NP (NN everyone) (RB else))
+                  (VP (VBZ has)
+                    (NP (CD one))))))))))
+    (. .)))
+
+nsubj(seen-4, i-1)
+aux(seen-4, have-2)
+advmod(seen-4, also-3)
+root(ROOT-0, seen-4)
+dobj(seen-4, neighborhoods-5)
+advmod(has-8, where-6)
+nsubj(has-8, everyone-7)
+advcl(seen-4, has-8)
+det(gun-10, a-9)
+dobj(has-8, gun-10)
+nsubj(says-13, no1-12)
+nsubj(uses-15, no1-12)
+conj_but(seen-4, says-13)
+conj_but(seen-4, uses-15)
+conj_or(says-13, uses-15)
+dobj(says-13, them-16)
+mark(know-19, because-17)
+nsubj(know-19, they-18)
+advcl(says-13, know-19)
+nsubj(has-22, everyone-20)
+advmod(everyone-20, else-21)
+ccomp(know-19, has-22)
+dobj(has-22, one-23)
+

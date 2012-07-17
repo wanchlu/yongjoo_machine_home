@@ -1,0 +1,262 @@
+(ROOT
+  (S
+    (NP (NNP Massachusetts) (NN health) (NN reform))
+    (VP (VBZ is)
+      (NP (DT a) (NN sham)))
+    (. .)))
+
+nn(reform-3, Massachusetts-1)
+nn(reform-3, health-2)
+nsubj(sham-6, reform-3)
+cop(sham-6, is-4)
+det(sham-6, a-5)
+root(ROOT-0, sham-6)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ middle) (NN income))
+      (VP (MD can) (RB not)
+        (VP (VB afford)
+          (NP (DT the) (NN insurance)))))
+    (CC and)
+    (S
+      (NP (DT the) (NN state))
+      (VP (VBZ is)
+        (VP (VBG fining)
+          (NP (PRP them)))))
+    (. .)))
+
+det(income-3, The-1)
+amod(income-3, middle-2)
+nsubj(afford-6, income-3)
+aux(afford-6, can-4)
+neg(afford-6, not-5)
+root(ROOT-0, afford-6)
+det(insurance-8, the-7)
+dobj(afford-6, insurance-8)
+det(state-11, the-10)
+nsubj(fining-13, state-11)
+aux(fining-13, is-12)
+conj_and(afford-6, fining-13)
+dobj(fining-13, them-14)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (NP (DT a)
+          (ADJP (CD 58) (NN year) (JJ old))
+          (NN homemaker))))
+    (CC and)
+    (SINV
+      (VP (MD can) (RB not)
+        (VP (VB afford)
+          (NP (DT the) (NN insurance))))
+      (NP
+        (NP ($ $) (CD 600.00))
+        (NP (DT a) (NN month))
+        (PP (IN with)
+          (NP (DT a) ($ $) (CD 2000.00) (NN dedutable)))))
+    (. .)))
+
+nsubj(homemaker-7, I-1)
+cop(homemaker-7, am-2)
+det(homemaker-7, a-3)
+number(old-6, 58-4)
+dep(old-6, year-5)
+amod(homemaker-7, old-6)
+root(ROOT-0, homemaker-7)
+aux(afford-11, can-9)
+neg(afford-11, not-10)
+conj_and(homemaker-7, afford-11)
+det(insurance-13, the-12)
+dobj(afford-11, insurance-13)
+nsubj(afford-11, $-14)
+num($-14, 600.00-15)
+det(month-17, a-16)
+dep($-14, month-17)
+det(dedutable-22, a-19)
+dep(dedutable-22, $-20)
+num(dedutable-22, 2000.00-21)
+prep_with($-14, dedutable-22)
+
+(ROOT
+  (S
+    (NP (NNPS Americans))
+    (VP (VBP are)
+      (VP (VBN brainwashed)
+        (PP (IN by)
+          (NP (DT the) (NN insurance) (NN industry)))))
+    (. .)))
+
+nsubjpass(brainwashed-3, Americans-1)
+auxpass(brainwashed-3, are-2)
+root(ROOT-0, brainwashed-3)
+det(industry-7, the-5)
+nn(industry-7, insurance-6)
+agent(brainwashed-3, industry-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Beware))
+      (PP (IN of) (`` ``)
+        (NP
+          (NP (NNS nonprofits))
+          (`` ``)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ 's)
+                (NP (JJ bottom) (NN line))))))))
+    (VP (VBP are) (`` ``)
+      (NP (NNS profits)))
+    (. .)))
+
+nsubj(profits-12, Beware-1)
+prep_of(Beware-1, nonprofits-4)
+nsubj(line-9, who-6)
+cop(line-9, 's-7)
+amod(line-9, bottom-8)
+rcmod(nonprofits-4, line-9)
+cop(profits-12, are-10)
+root(ROOT-0, profits-12)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP
+        (NP (DT The) (NNS media))
+        (PP (IN in)
+          (NP (NNP Massachusetts))))
+      (VP (MD will) (RB not)
+        (VP (VB report)
+          (NP (DT the) (NN truth))
+          (PP (IN on)
+            (NP (DT this) (NN law)))
+          (SBAR (IN because)
+            (S
+              (NP (PRP they))
+              (VP (VBP do) (RB not)
+                (VP (VB want)
+                  (S
+                    (VP (TO to)
+                      (VP (VB lose)
+                        (NP (NN advertising) (NNS dollars))))))))))))
+    (, ,)
+    (NP (DT The) (NNS lawmakers))
+    (VP (VBP are)
+      (VP (VBN bought)
+        (PP (IN by)
+          (NP (DT the) (NN insurance) (NN lobbyist)))))
+    (. .)))
+
+det(media-3, The-2)
+nsubj(report-8, media-3)
+prep_in(media-3, Massachusetts-5)
+aux(report-8, will-6)
+neg(report-8, not-7)
+ccomp(bought-27, report-8)
+det(truth-10, the-9)
+dobj(report-8, truth-10)
+det(law-13, this-12)
+prep_on(report-8, law-13)
+mark(want-18, because-14)
+nsubj(want-18, they-15)
+xsubj(lose-20, they-15)
+aux(want-18, do-16)
+neg(want-18, not-17)
+advcl(report-8, want-18)
+aux(lose-20, to-19)
+xcomp(want-18, lose-20)
+nn(dollars-22, advertising-21)
+dobj(lose-20, dollars-22)
+det(lawmakers-25, The-24)
+nsubjpass(bought-27, lawmakers-25)
+auxpass(bought-27, are-26)
+root(ROOT-0, bought-27)
+det(lobbyist-31, the-29)
+nn(lobbyist-31, insurance-30)
+agent(bought-27, lobbyist-31)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN state))
+      (PP (IN of)
+        (NP (NNP Massachusetts))))
+    (VP (VBZ has)
+      (VP (VBN made)
+        (S
+          (VP (VBG being)
+            (NP (JJ uninsured) (DT a) (NN crime))))))
+    (. .)))
+
+det(state-2, The-1)
+nsubj(made-6, state-2)
+prep_of(state-2, Massachusetts-4)
+aux(made-6, has-5)
+root(ROOT-0, made-6)
+cop(crime-10, being-7)
+amod(crime-10, uninsured-8)
+det(crime-10, a-9)
+xcomp(made-6, crime-10)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN resident))
+        (VP (VBZ does) (RB not)
+          (VP (VB pay)
+            (NP (DT the) (NNS fines))))))
+    (NP (DT that))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP
+          (NP (DT an) (`` ``) (JJ unpaid) (NN tax) ('' ''))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is)
+                (NP (DT a) (JJ jailable) (NN offense))))))))
+    (. .)))
+
+mark(pay-6, If-1)
+det(resident-3, a-2)
+nsubj(pay-6, resident-3)
+aux(pay-6, does-4)
+neg(pay-6, not-5)
+advcl(considered-11, pay-6)
+det(fines-8, the-7)
+dobj(pay-6, fines-8)
+nsubjpass(considered-11, that-9)
+auxpass(considered-11, is-10)
+root(ROOT-0, considered-11)
+det(tax-15, an-12)
+amod(tax-15, unpaid-14)
+dobj(considered-11, tax-15)
+nsubj(offense-21, tax-15)
+cop(offense-21, is-18)
+det(offense-21, a-19)
+amod(offense-21, jailable-20)
+rcmod(tax-15, offense-21)
+
+(ROOT
+  (FRAG
+    (ADJP (IN So))
+    (S (MD will)
+      (NP (PRP they))
+      (VP (VB jail)
+        (NP (DT the) (JJ uninsured))))
+    (. ?)))
+
+root(ROOT-0, So-1)
+dep(jail-4, will-2)
+nsubj(jail-4, they-3)
+dep(So-1, jail-4)
+det(uninsured-6, the-5)
+dobj(jail-4, uninsured-6)
+

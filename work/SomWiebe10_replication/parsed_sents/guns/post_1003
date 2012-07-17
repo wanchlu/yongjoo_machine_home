@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB insist)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VB be)
+                    (VP
+                      (PP (IN like)
+                        (NP
+                          (NP (DT a) (NN driver) (POS 's))
+                          (NN license)))
+                      (SBAR
+                        (WHADVP (WRB where))
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP are)
+                            (VP (VBN required)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB demonstrate)
+                                    (NP
+                                      (NP (DT a) (JJ certain) (NN level))
+                                      (PP (IN of)
+                                        (NP (NN proficiency)
+                                          (CC and)
+                                          (NN knowledge)))
+                                      (PP (IN of)
+                                        (NP (NN safety) (NN protocol))))))))))))))))))))
+    (. .)))
+
+nsubj(have-3, I-1)
+xsubj(insist-5, I-1)
+aux(have-3, would-2)
+root(ROOT-0, have-3)
+aux(insist-5, to-4)
+xcomp(have-3, insist-5)
+complm(like-9, that-6)
+nsubj(like-9, it-7)
+aux(like-9, be-8)
+ccomp(insist-5, like-9)
+det(driver-11, a-10)
+poss(license-13, driver-11)
+pobj(like-9, license-13)
+advmod(required-17, where-14)
+nsubjpass(required-17, you-15)
+auxpass(required-17, are-16)
+advcl(like-9, required-17)
+aux(demonstrate-19, to-18)
+xcomp(required-17, demonstrate-19)
+det(level-22, a-20)
+amod(level-22, certain-21)
+dobj(demonstrate-19, level-22)
+prep_of(level-22, proficiency-24)
+prep_of(level-22, knowledge-26)
+conj_and(proficiency-24, knowledge-26)
+nn(protocol-29, safety-28)
+prep_of(level-22, protocol-29)
+
+(ROOT
+  (S (CC And)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (VP (VBN proven)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN unequal)
+                    (PP (TO to)
+                      (NP (DT the) (NN responsibility)))))))))))
+    (NP (PRP you))
+    (VP (VBD loose)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP license)))))
+    (. .)))
+
+cc(loose-13, And-1)
+mark(proven-5, if-2)
+nsubjpass(proven-5, you-3)
+xsubj(unequal-8, you-3)
+auxpass(proven-5, are-4)
+dep(loose-13, proven-5)
+aux(unequal-8, to-6)
+auxpass(unequal-8, be-7)
+xcomp(proven-5, unequal-8)
+det(responsibility-11, the-10)
+prep_to(unequal-8, responsibility-11)
+nsubj(loose-13, you-12)
+root(ROOT-0, loose-13)
+nsubj(license-15, you-14)
+ccomp(loose-13, license-15)
+

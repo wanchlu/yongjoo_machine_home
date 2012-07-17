@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP (JJ Great) (NN story))
+    (, ,)
+    (ADVP (RB unfortunately))
+    (PP (IN in)
+      (NP (DT this) (NN setting)))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ meaningless)
+        (PP (IN without)
+          (NP (NN evidence)))))
+    (. .)))
+
+amod(story-2, Great-1)
+nsubj(meaningless-10, story-2)
+advmod(meaningless-10, unfortunately-4)
+det(setting-7, this-6)
+prep_in(meaningless-10, setting-7)
+nsubj(meaningless-10, it-8)
+cop(meaningless-10, is-9)
+root(ROOT-0, meaningless-10)
+prep_without(meaningless-10, evidence-12)
+
+(ROOT
+  (S
+    (NP (NNS Christians))
+    (ADVP (RB often))
+    (VP (VBP use)
+      (NP
+        (NP
+          (ADJP (RB emotionally) (VBN charged))
+          (NNS stories))
+        (PP (IN of)
+          (NP (JJ miraculous) (NNS recoveries))))
+      (SBAR (IN because)
+        (S
+          (NP (NNS people))
+          (VP (VBP are)
+            (ADJP (RB too) (JJ afraid)
+              (S
+                (VP (TO to)
+                  (VP (VB ask)
+                    (PP (IN for)
+                      (NP (DT the) (NN evidence)))))))))))
+    (. .)))
+
+nsubj(use-3, Christians-1)
+advmod(use-3, often-2)
+root(ROOT-0, use-3)
+advmod(charged-5, emotionally-4)
+amod(stories-6, charged-5)
+dobj(use-3, stories-6)
+amod(recoveries-9, miraculous-8)
+prep_of(stories-6, recoveries-9)
+mark(afraid-14, because-10)
+nsubj(afraid-14, people-11)
+cop(afraid-14, are-12)
+advmod(afraid-14, too-13)
+advcl(use-3, afraid-14)
+aux(ask-16, to-15)
+xcomp(afraid-14, ask-16)
+det(evidence-19, the-18)
+prep_for(ask-16, evidence-19)
+

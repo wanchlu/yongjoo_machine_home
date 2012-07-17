@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NNP Advanced) (NN care))
+    (VP (VBZ improves)
+      (NP
+        (NP (NNS Americans))
+        ('' '')
+        (NP
+          (NP (NNS chances))
+          (PP (IN of)
+            (NP (VBG surviving) (NN cancer)
+              (SBAR
+                (S
+                  (NP (DT The) (NNP American) (NNP Cancer) (NNP Society))
+                  (VP (VBZ notes)))))))
+        (, ,) (`` ``)
+        (S
+          (NP (NNP U.S.) (NNS patients))
+          (VP (VBP have)
+            (NP (JJR better) (NN survival) (NNS rates))
+            (PP (IN than)
+              (NP
+                (NP (JJ European) (NNS patients))
+                (PP (IN for)
+                  (NP
+                    (NP (JJS most) (NNS types))
+                    (PP (IN of)
+                      (NP (NN cancer)))))))))))
+    (. .)))
+
+nn(care-2, Advanced-1)
+nsubj(improves-3, care-2)
+root(ROOT-0, improves-3)
+dobj(improves-3, Americans-4)
+dep(Americans-4, chances-6)
+amod(cancer-9, surviving-8)
+prep_of(chances-6, cancer-9)
+det(Society-13, The-10)
+nn(Society-13, American-11)
+nn(Society-13, Cancer-12)
+nsubj(notes-14, Society-13)
+ccomp(cancer-9, notes-14)
+nn(patients-18, U.S.-17)
+nsubj(have-19, patients-18)
+dep(Americans-4, have-19)
+amod(rates-22, better-20)
+nn(rates-22, survival-21)
+dobj(have-19, rates-22)
+amod(patients-25, European-24)
+prep_than(have-19, patients-25)
+amod(types-28, most-27)
+prep_for(patients-25, types-28)
+prep_of(types-28, cancer-30)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 3))
+      (-RRB- -RRB-))))
+
+appos(''-1, 3-3)
+

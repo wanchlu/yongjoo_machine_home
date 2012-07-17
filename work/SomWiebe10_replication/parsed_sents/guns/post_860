@@ -1,0 +1,72 @@
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (NNS guns))
+      (VP (VBP kill)
+        (NP (NNS people))))
+    ('' '')
+    (NP (DT that))
+    (VP (VBZ is)
+      (NP
+        (NP (NN wat))
+        (SBAR
+          (S
+            (NP (PRP we))
+            (VP (VBP have)
+              (S
+                (VP (TO to)
+                  (VP (VB remember)))))))))
+    (. .)))
+
+nsubj(kill-3, guns-2)
+ccomp(wat-8, kill-3)
+dobj(kill-3, people-4)
+nsubj(wat-8, that-6)
+cop(wat-8, is-7)
+root(ROOT-0, wat-8)
+dobj(have-10, wat-8)
+nsubj(have-10, we-9)
+xsubj(remember-12, we-9)
+rcmod(wat-8, have-10)
+aux(remember-12, to-11)
+xcomp(have-10, remember-12)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (SBAR
+        (S
+          (NP (NNP NOONE))
+          (VP (MD should)
+            (VP (VB have)
+              (NP (DT a) (NN gun)))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+root(ROOT-0, mean-2)
+nsubj(have-5, NOONE-3)
+aux(have-5, should-4)
+ccomp(mean-2, have-5)
+det(gun-7, a-6)
+dobj(have-5, gun-7)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ enforces)
+      (SBAR (IN that)
+        (S
+          (NP (NNS people))
+          (VP (VBP kill)
+            (NP (CD one) (NN anouther))))))
+    (. .)))
+
+nsubj(enforces-2, That-1)
+root(ROOT-0, enforces-2)
+complm(kill-5, that-3)
+nsubj(kill-5, people-4)
+ccomp(enforces-2, kill-5)
+num(anouther-7, one-6)
+dobj(kill-5, anouther-7)
+

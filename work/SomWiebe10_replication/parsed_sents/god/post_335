@@ -1,0 +1,52 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (PP (IN about)
+      (NP
+        (NP (DT the) (NN creation) (NN story))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN world))
+            (VP (VBG being)
+              (VP (VBN created)
+                (PP (IN in)
+                  (NP (CD 7) (NNS days))))))))
+      (. .))))
+
+root(ROOT-0, What-1)
+dep(What-1, about-2)
+det(story-5, the-3)
+nn(story-5, creation-4)
+pobj(about-2, story-5)
+det(world-8, the-7)
+prep_with(story-5, world-8)
+auxpass(created-10, being-9)
+partmod(world-8, created-10)
+num(days-13, 7-12)
+prep_in(created-10, days-13)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (VP (VB think)
+        (SBAR
+          (S
+            (NP (NN science))
+            (VP (MD can)
+              (ADVP (RB ever))
+              (VP (VB support)
+                (NP (DT that) (NN story))))))))
+    (. .)))
+
+nsubj(think-4, I-1)
+aux(think-4, do-2)
+neg(think-4, not-3)
+root(ROOT-0, think-4)
+nsubj(support-8, science-5)
+aux(support-8, can-6)
+advmod(support-8, ever-7)
+ccomp(think-4, support-8)
+det(story-10, that-9)
+dobj(support-8, story-10)
+

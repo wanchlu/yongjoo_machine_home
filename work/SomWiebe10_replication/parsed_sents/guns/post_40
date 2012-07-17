@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (JJ Assault) (NNS weapons))
+    (VP (VBP are)
+      (VP (VBN used)
+        (PP (IN by)
+          (NP
+            (NP (NN drug) (NNS cartels))
+            (, ,)
+            (NP (NN kill) (NNS thousands))))))
+    (. .)))
+
+amod(weapons-2, Assault-1)
+nsubjpass(used-4, weapons-2)
+auxpass(used-4, are-3)
+root(ROOT-0, used-4)
+nn(cartels-7, drug-6)
+agent(used-4, cartels-7)
+nn(thousands-10, kill-9)
+appos(cartels-7, thousands-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ Israeli) (NNP Uzi) (NN pistol))
+      (CC and)
+      (NP
+        (NP (NNS variants))
+        (PP (IN on)
+          (NP (DT the) (NNP Soviet) (NNP AK-47)))))
+    (VP (VBP are)
+      (ADJP (JJ attractive)
+        (PP (TO to)
+          (NP
+            (NP (NNS criminals))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP need)
+                  (S
+                    (VP (TO to)
+                      (VP (VB protect)
+                        (NP (PRP$ their) (NNS investments))))))))))))
+    (. .)))
+
+det(pistol-4, The-1)
+amod(pistol-4, Israeli-2)
+nn(pistol-4, Uzi-3)
+nsubj(attractive-12, pistol-4)
+conj_and(pistol-4, variants-6)
+nsubj(attractive-12, variants-6)
+det(AK-47-10, the-8)
+nn(AK-47-10, Soviet-9)
+prep_on(variants-6, AK-47-10)
+cop(attractive-12, are-11)
+root(ROOT-0, attractive-12)
+prep_to(attractive-12, criminals-14)
+nsubj(need-16, criminals-14)
+rcmod(criminals-14, need-16)
+aux(protect-18, to-17)
+xcomp(need-16, protect-18)
+poss(investments-20, their-19)
+dobj(protect-18, investments-20)
+

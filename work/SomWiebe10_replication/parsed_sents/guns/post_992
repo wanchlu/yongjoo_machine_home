@@ -1,0 +1,131 @@
+(ROOT
+  (S
+    (VP (VB YES))
+    (. .)))
+
+root(ROOT-0, YES-1)
+
+(ROOT
+  (S (CC But)
+    (S
+      (VP (VBN controlled)))
+    (VP (VBZ does) (RB n't)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB mean)
+              (SBAR
+                (S
+                  (NP (EX there))
+                  (VP (VBP are)
+                    (NP (DT no) (NNS guns))
+                    (ADVP (IN out) (RB there))))))))))
+    (. .)))
+
+cc(have-5, But-1)
+csubj(have-5, controlled-2)
+aux(have-5, does-3)
+neg(have-5, n't-4)
+root(ROOT-0, have-5)
+aux(mean-7, to-6)
+xcomp(have-5, mean-7)
+expl(are-9, there-8)
+ccomp(mean-7, are-9)
+det(guns-11, no-10)
+nsubj(are-9, guns-11)
+advmod(are-9, out-12)
+advmod(out-12, there-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (MD could)
+        (VP (VB mean)
+          (NP
+            (NP
+              (LST (LS a) (-RRB- -RRB-))
+              (NP (RB really) (JJ good))
+              (PP (VBG background)
+                (PRN
+                  (NP
+                    (NP (NNS checks))
+                    (, ,)
+                    (NP (SYM b)))
+                  (-RRB- -RRB-))
+                (NP
+                  (NP (DT a) (NN waiting) (NN period))
+                  (, ,)
+                  (NP
+                    (LST (LS c) (-RRB- -RRB-))
+                    (NP (JJ mandatory) (NN training))
+                    (PP (IN in)
+                      (NP (NN safety)))))))
+            (CC and)
+            (ADVP (RB even)
+              (PP (IN in)
+                (NP (NN target) (NN practice))))))))
+    (, ,)
+    (CC and)
+    (S
+      (LST (LS d) (-RRB- -RRB-))
+      (NP (JJ mandatory) (NN gun))
+      (VP (VBP lock)
+        (NP (NNS rules))
+        (SBAR (IN so)
+          (S
+            (NP (NNS kids)
+              (CC and)
+              (NNS criminals))
+            (VP (VBP are)
+              (ADJP (RBR less) (JJ likely)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (S
+                        (NP (EX there))
+                        (NP
+                          (NP (NNS hands))
+                          (PP (IN on)
+                            (NP (PRP it))))))))))))))
+    (. .)))
+
+nsubj(mean-3, It-1)
+aux(mean-3, could-2)
+root(ROOT-0, mean-3)
+dep(good-7, a-4)
+advmod(good-7, really-6)
+dobj(mean-3, good-7)
+dep(good-7, checks-9)
+appos(checks-9, b-11)
+det(period-15, a-13)
+nn(period-15, waiting-14)
+prep_background(good-7, period-15)
+dep(training-20, c-17)
+amod(training-20, mandatory-19)
+appos(period-15, training-20)
+prep_in(training-20, safety-22)
+dobj(mean-3, even-24)
+advmod(good-7, even-24)
+conj_and(good-7, even-24)
+nn(practice-27, target-26)
+prep_in(even-24, practice-27)
+dep(lock-34, d-30)
+amod(gun-33, mandatory-32)
+nsubj(lock-34, gun-33)
+conj_and(mean-3, lock-34)
+dobj(lock-34, rules-35)
+mark(likely-42, so-36)
+nsubj(likely-42, kids-37)
+conj_and(kids-37, criminals-39)
+nsubj(likely-42, criminals-39)
+cop(likely-42, are-40)
+advmod(likely-42, less-41)
+advcl(lock-34, likely-42)
+aux(get-44, to-43)
+xcomp(likely-42, get-44)
+expl(hands-46, there-45)
+nsubj(hands-46, there-45)
+xcomp(get-44, hands-46)
+prep_on(hands-46, it-48)
+

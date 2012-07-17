@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (DT A) (NN ban))
+    (VP (MD would)
+      (VP (VB create)
+        (NP (NNS blackmarkets))
+        (PP (IN in)
+          (NP (NN arm) (NN trade)))))
+    (. .)))
+
+det(ban-2, A-1)
+nsubj(create-4, ban-2)
+aux(create-4, would-3)
+root(ROOT-0, create-4)
+dobj(create-4, blackmarkets-5)
+nn(trade-8, arm-7)
+prep_in(create-4, trade-8)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS blackmarkets))
+    (VP
+      (VP (MD could)
+        (VP (VB be)
+          (VP
+            (ADVP (RB directly))
+            (VBN linked)
+            (PP (IN with)
+              (NP
+                (NP (JJ other) (JJ illicit) (NN trading))
+                (, ,)
+                (PP (JJ such) (IN as)
+                  (NP (NNS narcotics)))
+                (, ,))))))
+      (CC and)
+      (VP (MD could)
+        (VP (VB become)
+          (NP
+            (NP (DT a) (NN source))
+            (PP (IN of)
+              (NP
+                (NP (VBN added) (NN revenue))
+                (PP (IN for)
+                  (NP (JJ organized) (NN crime)
+                    (CC and)
+                    (NN drug) (NN trafficking)))))))))
+    (. .)))
+
+det(blackmarkets-2, These-1)
+nsubjpass(linked-6, blackmarkets-2)
+aux(linked-6, could-3)
+auxpass(linked-6, be-4)
+advmod(linked-6, directly-5)
+root(ROOT-0, linked-6)
+amod(trading-10, other-8)
+amod(trading-10, illicit-9)
+prep_with(linked-6, trading-10)
+prep_such_as(trading-10, narcotics-14)
+aux(source-20, could-17)
+cop(source-20, become-18)
+det(source-20, a-19)
+conj_and(linked-6, source-20)
+amod(revenue-23, added-22)
+prep_of(source-20, revenue-23)
+amod(crime-26, organized-25)
+prep_for(revenue-23, crime-26)
+nn(trafficking-29, drug-28)
+prep_for(revenue-23, trafficking-29)
+conj_and(crime-26, trafficking-29)
+

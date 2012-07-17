@@ -1,0 +1,49 @@
+(ROOT
+  (SBARQ
+    (FRAG
+      (ADVP (PRP You) (RB wasted))
+      (NP (NN life)))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB why))
+      (SQ (MD would) (RB n't)
+        (NP (PRP you))
+        (VP (VB waste)
+          (NP (DT the) (NN afterlife)))))
+    (. ?)))
+
+dep(wasted-2, You-1)
+dep(life-3, wasted-2)
+dep(waste-9, life-3)
+advmod(waste-9, why-5)
+aux(waste-9, would-6)
+neg(waste-9, n't-7)
+nsubj(waste-9, you-8)
+root(ROOT-0, waste-9)
+det(afterlife-11, the-10)
+dobj(waste-9, afterlife-11)
+
+(ROOT
+  (S
+    (NP (NNP Modest) (NNP MouseThat))
+    (ADVP (RB pretty) (RB much))
+    (VP (VBZ sums)
+      (PRT (RP up))
+      (NP
+        (NP (PRP$ my) (NN opinion))
+        (PP (IN of)
+          (NP (DT the) (JJ whole) (NN thing)))))
+    (. .)))
+
+nn(MouseThat-2, Modest-1)
+nsubj(sums-5, MouseThat-2)
+advmod(much-4, pretty-3)
+advmod(sums-5, much-4)
+root(ROOT-0, sums-5)
+prt(sums-5, up-6)
+poss(opinion-8, my-7)
+dobj(sums-5, opinion-8)
+det(thing-12, the-10)
+amod(thing-12, whole-11)
+prep_of(opinion-8, thing-12)
+

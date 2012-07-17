@@ -1,0 +1,189 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NNP healthcare))
+    (VP (MD would)
+      (VP (VB eliminate)
+        (NP
+          (NP (DT the) (NNS problems))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBN posed)
+                  (PP (IN by)
+                    (NP (VBN privatized) (NN healthcare))))))))))
+    (. .)))
+
+nn(healthcare-2, Universal-1)
+nsubj(eliminate-4, healthcare-2)
+aux(eliminate-4, would-3)
+root(ROOT-0, eliminate-4)
+det(problems-6, the-5)
+dobj(eliminate-4, problems-6)
+nsubjpass(posed-9, problems-6)
+auxpass(posed-9, are-8)
+rcmod(problems-6, posed-9)
+amod(healthcare-12, privatized-11)
+agent(posed-9, healthcare-12)
+
+(ROOT
+  (S
+    (PP (IN With)
+      (S
+        (NP (PRP it))
+        (VP (VBG being)
+          (NP (JJ universal)))))
+    (, ,)
+    (NP (NN everyone))
+    (VP (VBZ gets)
+      (NP (NN treatment))
+      (PP (IN at)
+        (NP (DT an) (JJ equal) (NN rate))))
+    (. .)))
+
+nsubj(universal-4, it-2)
+cop(universal-4, being-3)
+prepc_with(gets-7, universal-4)
+nsubj(gets-7, everyone-6)
+root(ROOT-0, gets-7)
+dobj(gets-7, treatment-8)
+det(rate-12, an-10)
+amod(rate-12, equal-11)
+prep_at(gets-7, rate-12)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Taxes))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJR higher)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NNS benefits))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJR better)))))
+    (. .)))
+
+nsubj(higher-4, Taxes-1)
+aux(higher-4, would-2)
+cop(higher-4, be-3)
+root(ROOT-0, higher-4)
+det(benefits-8, the-7)
+nsubj(better-11, benefits-8)
+aux(better-11, would-9)
+cop(better-11, be-10)
+conj_but(higher-4, better-11)
+
+(ROOT
+  (S
+    (VP (VB Take)
+      (NP
+        (NP (NNP Sweden))
+        (PP (IN for)
+          (NP
+            (NP (NN example))
+            (, ,)
+            (SBAR
+              (WHADVP (WRB where))
+              (S
+                (S
+                  (NP (DT a) (NN person))
+                  (VP (MD can)
+                    (VP
+                      (VP (VB walk)
+                        (PP (IN into)
+                          (NP
+                            (NP (DT a) (NN hospital))
+                            (PP (IN at)
+                              (NP (DT any) (NN moment))))))
+                      (CC and)
+                      (VP (VB get)
+                        (VP (VBN treated)
+                          (PP (IN without)
+                            (NP
+                              (NP (DT the) (JJ gratuitous) (NN amount))
+                              (PP (IN of)
+                                (NP (NN paperwork))))))))))
+                (, ,)
+                (CC or)
+                (S
+                  (NP (NNS questions))
+                  (VP (VBP like) (, ,) (`` ``)
+                    (SBARQ
+                      (WHNP (WP Who))
+                      (SQ (VBZ 's)
+                        (NP (PRP$ your) (NN insurance) (NN carrier)))
+                      (. ?))))))))))))
+
+root(ROOT-0, Take-1)
+dobj(Take-1, Sweden-2)
+prep_for(Sweden-2, example-4)
+advmod(walk-10, where-6)
+det(person-8, a-7)
+nsubj(walk-10, person-8)
+nsubjpass(treated-19, person-8)
+aux(walk-10, can-9)
+rcmod(example-4, walk-10)
+det(hospital-13, a-12)
+prep_into(walk-10, hospital-13)
+det(moment-16, any-15)
+prep_at(hospital-13, moment-16)
+auxpass(treated-19, get-18)
+rcmod(example-4, treated-19)
+conj_and(walk-10, treated-19)
+det(amount-23, the-21)
+amod(amount-23, gratuitous-22)
+prep_without(treated-19, amount-23)
+prep_of(amount-23, paperwork-25)
+nsubj(like-29, questions-28)
+rcmod(example-4, like-29)
+conj_or(walk-10, like-29)
+attr('s-33, Who-32)
+dep(like-29, 's-33)
+poss(carrier-36, your-34)
+nn(carrier-36, insurance-35)
+nsubj('s-33, carrier-36)
+
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ much))
+    (SQ (VBZ does)
+      (NP (PRP$ your) (NN plan))
+      (VP (VB cover)))
+    (. ?)))
+
+advmod(much-2, How-1)
+dep(cover-6, much-2)
+aux(cover-6, does-3)
+poss(plan-5, your-4)
+nsubj(cover-6, plan-5)
+root(ROOT-0, cover-6)
+
+(ROOT
+  (S
+    (VP (VB '')
+      (NP (FW etc.)))
+    (. .)))
+
+
+(ROOT
+  (S
+    (ADVP (IN Besides))
+    (, ,)
+    (NP (JJS most) (NNS countries))
+    (ADVP (RB already))
+    (VP (VBP have)
+      (NP (JJ universal) (NN healthcare)))
+    (. .)))
+
+advmod(have-6, Besides-1)
+amod(countries-4, most-3)
+nsubj(have-6, countries-4)
+advmod(have-6, already-5)
+root(ROOT-0, have-6)
+amod(healthcare-8, universal-7)
+dobj(have-6, healthcare-8)
+

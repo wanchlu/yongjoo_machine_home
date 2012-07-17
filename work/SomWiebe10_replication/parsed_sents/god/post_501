@@ -1,0 +1,37 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP mean)
+      (PP (IN like)
+        (NP (DT the) (NNP Flying) (NNP Spaghetti) (NN Monster))))
+    (. ?)))
+
+nsubj(mean-2, You-1)
+root(ROOT-0, mean-2)
+det(Monster-7, the-4)
+nn(Monster-7, Flying-5)
+nn(Monster-7, Spaghetti-6)
+prep_like(mean-2, Monster-7)
+
+(ROOT
+  (S
+    (ADJP (VB No.))
+    (. .)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (FRAG (RB Not)
+    (PP (IN without)
+      (NP
+        (NP (DT some) (NN kind))
+        (PP (IN of)
+          (NP (NN evidence)))))
+    (. .)))
+
+root(ROOT-0, Not-1)
+dep(Not-1, without-2)
+det(kind-4, some-3)
+pobj(without-2, kind-4)
+prep_of(kind-4, evidence-6)
+

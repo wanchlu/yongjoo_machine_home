@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (VP (VB Dude))
+    (. .)))
+
+root(ROOT-0, Dude-1)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (PP
+      (ADVP (NN home))
+      (RB all)
+      (NP (DT the) (NN time)))
+    (. ?)))
+
+root(ROOT-0, Are-1)
+nsubj(Are-1, you-2)
+prep(Are-1, home-3)
+advmod(home-3, all-4)
+det(time-6, the-5)
+pobj(home-3, time-6)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT this))
+    (VP (VBN secured))
+    (. ?)))
+
+auxpass(secured-3, Is-1)
+nsubjpass(secured-3, this-2)
+root(ROOT-0, secured-3)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB have)
+      (NP
+        (NP (DT a) (NN lot))
+        (PP (IN of)
+          (NP (NN fire) (NNS extinguishers)))))
+    (. ?)))
+
+aux(have-3, Do-1)
+nsubj(have-3, you-2)
+root(ROOT-0, have-3)
+det(lot-5, a-4)
+dobj(have-3, lot-5)
+nn(extinguishers-8, fire-7)
+prep_of(lot-5, extinguishers-8)
+

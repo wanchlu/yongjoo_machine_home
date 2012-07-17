@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (PP (VBN Given)
+      (NP
+        (NP (DT the) (NN history))
+        (PP (IN of)
+          (NP
+            (NP (NNS tyrants))
+            (PP (IN in)
+              (NP (DT the) (JJ past) (NN century)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB hesitate)
+        (S
+          (VP (TO to)
+            (VP (VB restrict)
+              (NP
+                (NP (DT any) (NN citizen) (POS 's))
+                (NN ability)
+                (S
+                  (VP (TO to)
+                    (VP (VB buy)
+                      (NP
+                        (NP (DT any) (NN weapon))
+                        (SBAR
+                          (S
+                            (NP (PRP they))
+                            (VP (MD can)
+                              (VP (VB afford)))))))))))))))
+    (. .)))
+
+prep(hesitate-13, Given-1)
+det(history-3, the-2)
+dep(Given-1, history-3)
+prep_of(history-3, tyrants-5)
+det(century-9, the-7)
+amod(century-9, past-8)
+prep_in(tyrants-5, century-9)
+nsubj(hesitate-13, I-11)
+xsubj(restrict-15, I-11)
+aux(hesitate-13, would-12)
+root(ROOT-0, hesitate-13)
+aux(restrict-15, to-14)
+xcomp(hesitate-13, restrict-15)
+det(citizen-17, any-16)
+poss(ability-19, citizen-17)
+dobj(restrict-15, ability-19)
+aux(buy-21, to-20)
+infmod(ability-19, buy-21)
+det(weapon-23, any-22)
+dobj(buy-21, weapon-23)
+dobj(afford-26, weapon-23)
+nsubj(afford-26, they-24)
+aux(afford-26, can-25)
+rcmod(weapon-23, afford-26)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Perhaps))
+      (NP (JJ anti) (NN armor) (NNS rockets))
+      (VP (MD should)
+        (VP (VB have)
+          (NP (DT a) (JJ unique) (NN identifier)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (JJ bad) (NNS things))
+      (VP (VBP happen)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (JJ armed) (NN revolt))
+            (VP (VBZ is)
+              (ADJP (JJ impossible)))))))
+    (. .)))
+
+advmod(have-6, Perhaps-1)
+amod(rockets-4, anti-2)
+nn(rockets-4, armor-3)
+nsubj(have-6, rockets-4)
+aux(have-6, should-5)
+root(ROOT-0, have-6)
+det(identifier-9, a-7)
+amod(identifier-9, unique-8)
+dobj(have-6, identifier-9)
+amod(things-13, bad-12)
+nsubj(happen-14, things-13)
+conj_but(have-6, happen-14)
+advmod(impossible-19, when-15)
+amod(revolt-17, armed-16)
+nsubj(impossible-19, revolt-17)
+cop(impossible-19, is-18)
+advcl(happen-14, impossible-19)
+

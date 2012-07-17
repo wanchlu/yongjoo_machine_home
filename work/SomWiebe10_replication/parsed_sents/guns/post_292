@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP own)
+      (NP (NNS guns)))
+    (: ...)))
+
+nsubj(own-2, I-1)
+root(ROOT-0, own-2)
+dobj(own-2, guns-3)
+
+(ROOT
+  (S (CC but)
+    (NP (PRP I))
+    (VP (VBP happen)
+      (S
+        (VP (TO to)
+          (VP (VB know)
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBP do) (RB not)
+                  (VP (VB make)
+                    (S
+                      (NP (PRP me))
+                      (`` ``)
+                      (ADJP (JJR safer))
+                      ('' ''))))))))))
+    (. .)))
+
+cc(happen-3, but-1)
+nsubj(happen-3, I-2)
+xsubj(know-5, I-2)
+root(ROOT-0, happen-3)
+aux(know-5, to-4)
+xcomp(happen-3, know-5)
+nsubj(make-9, they-6)
+aux(make-9, do-7)
+neg(make-9, not-8)
+ccomp(know-5, make-9)
+dep(safer-12, me-10)
+dep(make-9, safer-12)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP own)
+      (NP (NNS guns))
+      (SBAR (IN because)
+        (S
+          (NP (PRP I))
+          (VP (VBZ hunt)))))
+    (. .)))
+
+nsubj(own-2, I-1)
+root(ROOT-0, own-2)
+dobj(own-2, guns-3)
+mark(hunt-6, because-4)
+nsubj(hunt-6, I-5)
+advcl(own-2, hunt-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ says)
+            (S
+              (NP (NNS guns))
+              (VP (VB make)
+                (S
+                  (NP (PRP you))
+                  (ADJP (JJR safer)))))))))
+    (VP (VBZ is)
+      (ADJP (JJ naive)))
+    (. .)))
+
+nsubj(says-3, Anyone-1)
+nsubj(naive-9, Anyone-1)
+rcmod(Anyone-1, says-3)
+nsubj(make-5, guns-4)
+ccomp(says-3, make-5)
+nsubj(safer-7, you-6)
+xcomp(make-5, safer-7)
+cop(naive-9, is-8)
+root(ROOT-0, naive-9)
+
+(ROOT
+  (NP (NN Peace) (. .)))
+
+root(ROOT-0, Peace-1)
+

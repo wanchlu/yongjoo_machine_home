@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (NP (VBG Growing))
+    (ADVP (RB up) (RB around))
+    (VP (VBZ firearms)
+      (SBAR
+        (S
+          (NP (PRP they))
+          (VP (VBP know)
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP (PRP they))
+                  (VP (MD would)
+                    (VP (VB be)
+                      (VP (VBG walking)
+                        (PP (IN into)
+                          (NP (DT an) (NN ambush))))))))
+              (CC and)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP they))
+                  (VP (VBD had)
+                    (ADVP (RBR better))
+                    (VP (VB identify)
+                      (S
+                        (NP (PRP themselves))
+                        (ADJP (RB as) (JJ friendly))))))))))))
+    (. .)))
+
+nsubj(firearms-4, Growing-1)
+advmod(around-3, up-2)
+advmod(firearms-4, around-3)
+root(ROOT-0, firearms-4)
+nsubj(know-6, they-5)
+ccomp(firearms-4, know-6)
+complm(walking-11, that-7)
+nsubj(walking-11, they-8)
+aux(walking-11, would-9)
+aux(walking-11, be-10)
+ccomp(know-6, walking-11)
+det(ambush-14, an-13)
+prep_into(walking-11, ambush-14)
+complm(identify-20, that-16)
+nsubj(identify-20, they-17)
+aux(identify-20, had-18)
+advmod(identify-20, better-19)
+ccomp(know-6, identify-20)
+conj_and(walking-11, identify-20)
+nsubj(friendly-23, themselves-21)
+advmod(friendly-23, as-22)
+xcomp(identify-20, friendly-23)
+
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ My) (NN wife))
+      (VP (VBG being)
+        (VP (VBN trained)
+          (PP (IN in)
+            (NP (NN firearm) (NN safety))))))
+    (VP (VBZ knows)
+      (S (RB not)
+        (VP (TO to)
+          (VP (VB shoot)
+            (NP
+              (NP (NN anything))
+              (SBAR
+                (S
+                  (NP (PRP she))
+                  (ADVP (RB cant))
+                  (VP (VBP see)))))))))
+    (. .)))
+
+poss(wife-2, My-1)
+nsubj(knows-8, wife-2)
+xsubj(shoot-11, wife-2)
+auxpass(trained-4, being-3)
+partmod(wife-2, trained-4)
+nn(safety-7, firearm-6)
+prep_in(trained-4, safety-7)
+root(ROOT-0, knows-8)
+neg(shoot-11, not-9)
+aux(shoot-11, to-10)
+xcomp(knows-8, shoot-11)
+dobj(shoot-11, anything-12)
+dobj(see-15, anything-12)
+nsubj(see-15, she-13)
+advmod(see-15, cant-14)
+rcmod(anything-12, see-15)
+
+(ROOT
+  (S
+    (NP (NNP BTW) (NNP I))
+    (ADVP (RB also))
+    (VP (VBP have)
+      (NP
+        (NP (DT an) (NN alarm))
+        (CC and)
+        (NP (DT a) (NN dog))))
+    (. .)))
+
+nn(I-2, BTW-1)
+nsubj(have-4, I-2)
+advmod(have-4, also-3)
+root(ROOT-0, have-4)
+det(alarm-6, an-5)
+dobj(have-4, alarm-6)
+det(dog-9, a-8)
+dobj(have-4, dog-9)
+conj_and(alarm-6, dog-9)
+

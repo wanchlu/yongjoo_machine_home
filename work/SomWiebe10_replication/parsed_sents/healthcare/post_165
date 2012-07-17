@@ -1,0 +1,204 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ allows)
+      (NP
+        (NP (NNS investments))
+        (PP (IN in)
+          (NP (JJ longer-term) (NN patient) (NNS relationships)))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(allows-4, care-3)
+root(ROOT-0, allows-4)
+dobj(allows-4, investments-5)
+amod(relationships-9, longer-term-7)
+nn(relationships-9, patient-8)
+prep_in(investments-5, relationships-9)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ happens)
+        (SBAR (IN because)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (JJ long) (NN term) (NN relationship))
+                (PP (IN with)
+                  (NP (DT the) (NN patient)))))))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN preservation))
+        (PP (IN of)
+          (NP (NNS records))))
+      (VP (VBZ has)
+        (NP (JJ long) (NN term) (NNS benefits))))
+    (. .)))
+
+nsubj(happens-2, This-1)
+root(ROOT-0, happens-2)
+mark(is-5, because-3)
+expl(is-5, there-4)
+advcl(happens-2, is-5)
+det(relationship-9, a-6)
+amod(relationship-9, long-7)
+nn(relationship-9, term-8)
+nsubj(is-5, relationship-9)
+det(patient-12, the-11)
+prep_with(relationship-9, patient-12)
+det(preservation-15, the-14)
+nsubj(has-18, preservation-15)
+prep_of(preservation-15, records-17)
+conj_and(happens-2, has-18)
+amod(benefits-21, long-19)
+nn(benefits-21, term-20)
+dobj(has-18, benefits-21)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Investment))
+      (PP (IN in)
+        (NP (PRP IT))))
+    (VP (VBZ is)
+      (SBAR
+        (SBAR
+          (S
+            (NP (PRP one))
+            (VP
+              (ADVP (RB often))
+              (VBD cited)
+              (NP (NN example))
+              (SBAR
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP
+                      (NP (NN health) (NN care) (NNS providers))
+                      (PP (IN in)
+                        (NP (JJ socialized) (NNS systems))))
+                    (VP (VBP have)
+                      (NP (NN access))
+                      (PP (TO to)
+                        (NP
+                          (NP (JJ electronic) (NNS records))
+                          (PP (IN of)
+                            (NP (NNS patients) (NNS tests)))))
+                      (PP (NN online)))))
+                (CC and)
+                (SBAR
+                  (WHADVP (WRB where))
+                  (S
+                    (NP (NN computer) (NNS systems))
+                    (VP (MD can)
+                      (VP (VB check)
+                        (PP (IN for)
+                          (NP (NN example) (JJ incompatible) (NN drug) (NNS combinations)))))))))))
+        (CC and)
+        (SBAR (IN that)
+          (S
+            (NP (NNS drugs))
+            (VP (VBP are)
+              (VP (VBN administered)
+                (PP (TO to)
+                  (NP (DT the) (JJ right) (NN patient)))))))))
+    (. .)))
+
+nsubj(is-4, Investment-1)
+prep_in(Investment-1, IT-3)
+root(ROOT-0, is-4)
+nsubj(cited-7, one-5)
+advmod(cited-7, often-6)
+ccomp(is-4, cited-7)
+dobj(cited-7, example-8)
+advmod(have-16, where-9)
+nn(providers-12, health-10)
+nn(providers-12, care-11)
+nsubj(have-16, providers-12)
+amod(systems-15, socialized-14)
+prep_in(providers-12, systems-15)
+dep(cited-7, have-16)
+dobj(have-16, access-17)
+amod(records-20, electronic-19)
+prep_to(have-16, records-20)
+nn(tests-23, patients-22)
+prep_of(records-20, tests-23)
+prep(have-16, online-24)
+advmod(check-30, where-26)
+nn(systems-28, computer-27)
+nsubj(check-30, systems-28)
+aux(check-30, can-29)
+dep(cited-7, check-30)
+conj_and(have-16, check-30)
+nn(combinations-35, example-32)
+amod(combinations-35, incompatible-33)
+nn(combinations-35, drug-34)
+prep_for(check-30, combinations-35)
+complm(administered-40, that-37)
+nsubjpass(administered-40, drugs-38)
+auxpass(administered-40, are-39)
+ccomp(is-4, administered-40)
+conj_and(cited-7, administered-40)
+det(patient-44, the-42)
+amod(patient-44, right-43)
+prep_to(administered-40, patient-44)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Some))
+      (PP (IN for)
+        (NP (NN profit) (NNS systems))))
+    (VP (VBP find)
+      (S
+        (NP (DT this) (NN investment))
+        (ADJP (JJ hard)
+          (S
+            (VP (TO to)
+              (VP (VB justify)
+                (SBAR (IN because)
+                  (S
+                    (NP (DT the) (JJ provider-patient) (NN relationship))
+                    (VP (VBZ is) (RB not)
+                      (VP (VBN guaranteed)
+                        (S
+                          (VP (TO to)
+                            (VP (VB last)
+                              (ADVP (RB long) (RB enough))
+                              (S
+                                (VP (TO to)
+                                  (VP (VB justify)
+                                    (NP (DT the) (NN investment))))))))))))))))))
+    (. .)))
+
+nsubj(find-5, Some-1)
+nn(systems-4, profit-3)
+prep_for(Some-1, systems-4)
+root(ROOT-0, find-5)
+det(investment-7, this-6)
+nsubj(hard-8, investment-7)
+xcomp(find-5, hard-8)
+aux(justify-10, to-9)
+xcomp(hard-8, justify-10)
+mark(guaranteed-17, because-11)
+det(relationship-14, the-12)
+amod(relationship-14, provider-patient-13)
+nsubjpass(guaranteed-17, relationship-14)
+xsubj(last-19, relationship-14)
+auxpass(guaranteed-17, is-15)
+neg(guaranteed-17, not-16)
+advcl(justify-10, guaranteed-17)
+aux(last-19, to-18)
+xcomp(guaranteed-17, last-19)
+advmod(enough-21, long-20)
+advmod(last-19, enough-21)
+aux(justify-23, to-22)
+xcomp(last-19, justify-23)
+det(investment-25, the-24)
+dobj(justify-23, investment-25)
+

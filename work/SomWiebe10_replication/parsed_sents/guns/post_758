@@ -1,0 +1,375 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP know)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB load)
+                (NP (DT a) (NN gun)))
+              (, ,)
+              (VP (VB hold)
+                (NP (DT a) (NN gun)))
+              (, ,)
+              (CC and)
+              (VP (VB fire)
+                (NP (DT a) (NN gun))))))))
+    (. .)))
+
+nsubj(know-2, I-1)
+root(ROOT-0, know-2)
+advmod(load-5, how-3)
+aux(load-5, to-4)
+ccomp(know-2, load-5)
+xcomp(know-2, load-5)
+det(gun-7, a-6)
+dobj(load-5, gun-7)
+ccomp(know-2, hold-9)
+xcomp(know-2, hold-9)
+conj_and(load-5, hold-9)
+det(gun-11, a-10)
+dobj(hold-9, gun-11)
+ccomp(know-2, fire-14)
+xcomp(know-2, fire-14)
+conj_and(load-5, fire-14)
+det(gun-16, a-15)
+dobj(fire-14, gun-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD was) (RB n't)
+      (NP
+        (NP (DT a) (JJ bad) (NN shot))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBD was)
+              (VP (VBG practicing)))))))
+    (. .)))
+
+nsubj(shot-6, I-1)
+cop(shot-6, was-2)
+neg(shot-6, n't-3)
+det(shot-6, a-4)
+amod(shot-6, bad-5)
+root(ROOT-0, shot-6)
+tmod(practicing-10, shot-6)
+advmod(practicing-10, when-7)
+nsubj(practicing-10, I-8)
+aux(practicing-10, was-9)
+dep(shot-6, practicing-10)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ does) (RB indeed)
+      (VP (VB make)
+        (S
+          (NP (PRP me))
+          (ADJP (JJ unlikely)
+            (S
+              (VP (TO to)
+                (ADVP (RB just))
+                (VP
+                  (ADVP (RB accidentally))
+                  (VB shoot)
+                  (NP (NN someone)))))))))
+    (. .)))
+
+nsubj(make-4, That-1)
+aux(make-4, does-2)
+advmod(make-4, indeed-3)
+root(ROOT-0, make-4)
+nsubj(unlikely-6, me-5)
+xcomp(make-4, unlikely-6)
+aux(shoot-10, to-7)
+advmod(shoot-10, just-8)
+advmod(shoot-10, accidentally-9)
+xcomp(unlikely-6, shoot-10)
+dobj(shoot-10, someone-11)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WP What))
+      (PP (IN about)
+        (NP (DT the) (NNS situations))))
+    (SQ
+      (NP (PRP you))
+      (VP (VB want)
+        (S
+          (NP (NNS people))
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBG carrying)
+                (NP (DT a) (NN gun))
+                (PP (IN for))))))))
+    (. ?)))
+
+dep(want-6, What-1)
+det(situations-4, the-3)
+prep_about(What-1, situations-4)
+nsubj(want-6, you-5)
+root(ROOT-0, want-6)
+nsubj(carrying-10, people-7)
+aux(carrying-10, to-8)
+aux(carrying-10, be-9)
+xcomp(want-6, carrying-10)
+det(gun-12, a-11)
+dobj(carrying-10, gun-12)
+prep(carrying-10, for-13)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Put)
+        (NP (PRP me))
+        (PP (IN in)
+          (NP
+            (NP
+              (NP (DT a) (NN school) (NN hallway))
+              (PP (IN with)
+                (NP
+                  (NP (NNS gunshots))
+                  (VP (VBG coming)
+                    (ADVP (RBR closer))))))
+            (CC and)
+            (NP
+              (NP (DT a) (NN gun))
+              (PP (IN in)
+                (NP (PRP$ my) (NN hand))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (ADVP (RB probably))
+      (VP (MD would)
+        (VP (VB end)
+          (ADVP (RB badly)))))
+    (: ;)
+    (S
+      (NP (PRP I))
+      (VP (MD 'd)
+        (VP (VB worry)
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (MD would)
+                (VP (VB shoot)
+                  (NP (DT the) (JJ wrong) (NN person))
+                  (PP (IN for)
+                    (S
+                      (VP
+                        (VP (VBG running)
+                          (PP (IN through)
+                            (NP (DT a) (NN door))))
+                        (CC and)
+                        (VP (VBG startling)
+                          (NP (PRP me)))))))))))))
+    (. .)))
+
+root(ROOT-0, Put-1)
+dobj(Put-1, me-2)
+det(hallway-6, a-4)
+nn(hallway-6, school-5)
+prep_in(Put-1, hallway-6)
+prep_with(hallway-6, gunshots-8)
+partmod(gunshots-8, coming-9)
+advmod(coming-9, closer-10)
+det(gun-13, a-12)
+prep_in(Put-1, gun-13)
+conj_and(hallway-6, gun-13)
+poss(hand-16, my-15)
+prep_in(gun-13, hand-16)
+nsubj(end-22, it-19)
+advmod(end-22, probably-20)
+aux(end-22, would-21)
+conj_and(Put-1, end-22)
+advmod(end-22, badly-23)
+nsubj(worry-27, I-25)
+aux(worry-27, 'd-26)
+conj_and(Put-1, worry-27)
+parataxis(Put-1, worry-27)
+nsubj(shoot-30, I-28)
+aux(shoot-30, would-29)
+ccomp(worry-27, shoot-30)
+det(person-33, the-31)
+amod(person-33, wrong-32)
+dobj(shoot-30, person-33)
+prepc_for(shoot-30, running-35)
+det(door-38, a-37)
+prep_through(running-35, door-38)
+prepc_for(shoot-30, startling-40)
+conj_and(running-35, startling-40)
+dobj(startling-40, me-41)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP
+        (ADJP (RB even) (JJR less))
+        (NN confidence))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN nerve)
+            (CC and)
+            (NN judgement))
+          (PP (IN of)
+            (NP (DT the) (NN student) (NN body))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+advmod(less-4, even-3)
+amod(confidence-5, less-4)
+dobj(have-2, confidence-5)
+det(nerve-8, the-7)
+prep_in(have-2, nerve-8)
+prep_in(have-2, judgement-10)
+conj_and(nerve-8, judgement-10)
+det(body-14, the-12)
+nn(body-14, student-13)
+prep_of(nerve-8, body-14)
+
+(ROOT
+  (S
+    (NP (NNP Flight))
+    (VP (VBZ beats)
+      (VP (VB fight)
+        (SBAR (IN unless)
+          (S
+            (NP (PRP you))
+            (VP (VBP 've)
+              (VP (VBN trained)
+                (PP (IN for)
+                  (NP (NN combat)))))))))
+    (. .)))
+
+nsubj(beats-2, Flight-1)
+root(ROOT-0, beats-2)
+dep(beats-2, fight-3)
+mark(trained-7, unless-4)
+nsubj(trained-7, you-5)
+aux(trained-7, 've-6)
+advcl(fight-3, trained-7)
+prep_for(trained-7, combat-9)
+
+(ROOT
+  (S
+    (NP (NNS Colleges))
+    (VP (VBP are) (RB n't)
+      (NP (DT a) (JJ threatening) (NN atmosphere)))
+    (. .)))
+
+nsubj(atmosphere-6, Colleges-1)
+cop(atmosphere-6, are-2)
+neg(atmosphere-6, n't-3)
+det(atmosphere-6, a-4)
+amod(atmosphere-6, threatening-5)
+root(ROOT-0, atmosphere-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBZ gets)
+            (PRT (RP up))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN middle))
+                (PP (IN of)
+                  (NP (JJ junior) (NN year)))))
+            (, ,)
+            (PP (IN after)
+              (NP
+                (NP (DT an) (JJ entire) (NN year))
+                (CC and)
+                (NP
+                  (NP (DT a) (NN half))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT no) (NNS incidents))
+                      (CC and)
+                      (S
+                        (S
+                          (VP (VBG seeing)
+                            (NP (DT no) (NNS weapons))))
+                        (, ,)
+                        (CC and)
+                        (ADVP (RB still))
+                        (S
+                          (VP (VBZ straps)
+                            (PP (IN on)
+                              (NP (PRP$ their) (JJ concealed-carry) (NN holster)))))))))))))))
+    (VP (MD might)
+      (ADVP (RB just))
+      (VP (VB have)
+        (NP
+          (NP (DT an) (NN issue))
+          (PP (IN with)
+            (NP (PRP$ his)
+              (CC or)
+              (PRP$ her) (JJ threat-assessment) (NN meter))))))
+    (. .)))
+
+nsubj(gets-3, Anyone-1)
+nsubj(have-36, Anyone-1)
+rcmod(Anyone-1, gets-3)
+prt(gets-3, up-4)
+det(middle-7, the-6)
+prep_in(gets-3, middle-7)
+amod(year-10, junior-9)
+prep_of(middle-7, year-10)
+det(year-15, an-13)
+amod(year-15, entire-14)
+prep_after(gets-3, year-15)
+det(half-18, a-17)
+prep_after(gets-3, half-18)
+conj_and(year-15, half-18)
+det(incidents-21, no-20)
+prep_of(half-18, incidents-21)
+prep_of(half-18, seeing-23)
+conj_and(incidents-21, seeing-23)
+det(weapons-25, no-24)
+dobj(seeing-23, weapons-25)
+conj_and(incidents-21, still-28)
+advmod(seeing-23, still-28)
+conj_and(seeing-23, still-28)
+conj_and(incidents-21, straps-29)
+conj_and(seeing-23, straps-29)
+poss(holster-33, their-31)
+amod(holster-33, concealed-carry-32)
+prep_on(straps-29, holster-33)
+aux(have-36, might-34)
+advmod(have-36, just-35)
+root(ROOT-0, have-36)
+det(issue-38, an-37)
+dobj(have-36, issue-38)
+nn(meter-44, his-40)
+conj_or(his-40, her-42)
+poss(his-40, her-42)
+nn(meter-44, her-42)
+amod(meter-44, threat-assessment-43)
+prep_with(issue-38, meter-44)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's) (: ...)
+      (S
+        (VP (VBG uninspiring))))
+    (. .)))
+
+nsubj('s-2, That-1)
+root(ROOT-0, 's-2)
+parataxis('s-2, uninspiring-4)
+xcomp('s-2, uninspiring-4)
+

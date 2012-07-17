@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (NNP Healthcare))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (NN right)))
+    (. .)))
+
+nsubj(right-5, Healthcare-1)
+cop(right-5, is-2)
+neg(right-5, not-3)
+det(right-5, a-4)
+root(ROOT-0, right-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN person) (POS 's))
+        (NN responsibility)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ necessary)
+                      (S
+                        (VP (TO to)
+                          (VP (VB care)
+                            (PP (IN for)
+                              (NP (PRP themselves)))))))))))))))
+    (. .)))
+
+nsubj(responsibility-6, It-1)
+cop(responsibility-6, is-2)
+det(person-4, a-3)
+poss(responsibility-6, person-4)
+root(ROOT-0, responsibility-6)
+aux(do-8, to-7)
+infmod(responsibility-6, do-8)
+nsubj(necessary-11, what-9)
+cop(necessary-11, is-10)
+ccomp(do-8, necessary-11)
+aux(care-13, to-12)
+xcomp(necessary-11, care-13)
+prep_for(care-13, themselves-15)
+

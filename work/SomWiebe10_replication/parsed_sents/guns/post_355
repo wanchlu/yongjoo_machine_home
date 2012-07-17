@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (NP (JJ Reasons) (NN gun) (NN control))
+    (VP (VBZ does) (RB n't)
+      (VP (VB work)
+        (NP (CD :1))))
+    (. .)))
+
+amod(control-3, Reasons-1)
+nn(control-3, gun-2)
+nsubj(work-6, control-3)
+aux(work-6, does-4)
+neg(work-6, n't-5)
+root(ROOT-0, work-6)
+dobj(work-6, :1-7)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Criminals))
+      (PP (IN by)
+        (NP (NN definition))))
+    (VP (VBP break)
+      (NP (DT the) (NN law)))
+    (. .)))
+
+nsubj(break-4, Criminals-1)
+prep_by(Criminals-1, definition-3)
+root(ROOT-0, break-4)
+det(law-6, the-5)
+dobj(break-4, law-6)
+
+(ROOT
+  (FRAG
+    (NP (CD 2))
+    (. .)))
+
+root(ROOT-0, 2-1)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Criminals))
+      (VP (VBP get)
+        (NP (NNS guns))
+        (PP (IN from)
+          (NP (NN family)
+            (CC or)
+            (NNS friends)))))
+    (, ,) (RB not)
+    (S
+      (NP (NN gun) (NNS shows)
+        (CC or)
+        (NN gun))
+      (VP (VBZ stores)
+        (NP (CD .3))))
+    (. .)))
+
+nsubj(get-2, Criminals-1)
+root(ROOT-0, get-2)
+dobj(get-2, guns-3)
+prep_from(get-2, family-5)
+prep_from(get-2, friends-7)
+conj_or(family-5, friends-7)
+neg(get-2, not-9)
+nn(shows-11, gun-10)
+nsubj(stores-14, shows-11)
+conj_or(shows-11, gun-13)
+nsubj(stores-14, gun-13)
+ccomp(get-2, stores-14)
+dobj(stores-14, .3-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (VBG Preventing) (NN law) (VBG abiding) (NNS citizens))
+      (PP (IN from)
+        (NP (VBG attaining) (NNS guns))))
+    (VP (MD will)
+      (ADVP (RB only))
+      (VP (VB help)
+        (NP (NNS criminals))
+        (PP (IN by)
+          (S
+            (VP (VBG keeping)
+              (NP (NNS guns))
+              (PRT (RP away))
+              (PP (IN from)
+                (NP (JJ law-abiding) (NNS citizens))))))))
+    (. .)))
+
+amod(citizens-4, Preventing-1)
+nn(citizens-4, law-2)
+amod(citizens-4, abiding-3)
+nsubj(help-10, citizens-4)
+amod(guns-7, attaining-6)
+prep_from(citizens-4, guns-7)
+aux(help-10, will-8)
+advmod(help-10, only-9)
+root(ROOT-0, help-10)
+dobj(help-10, criminals-11)
+prepc_by(help-10, keeping-13)
+dobj(keeping-13, guns-14)
+amod(citizens-18, law-abiding-17)
+prep_away_from(keeping-13, citizens-18)
+

@@ -1,0 +1,173 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance) (NNS offers))
+    (VP (VBD needed)
+      (ADJP
+        (ADJP (JJ alternative) (TO to) (JJ uninsured))
+        (CC and)
+        (ADJP (VBG struggling))))
+    (. .)))
+
+nn(offers-3, Public-1)
+nn(offers-3, insurance-2)
+nsubj(needed-4, offers-3)
+root(ROOT-0, needed-4)
+amod(uninsured-7, alternative-5)
+dep(uninsured-7, to-6)
+acomp(needed-4, uninsured-7)
+acomp(needed-4, struggling-9)
+conj_and(uninsured-7, struggling-9)
+
+(ROOT
+  (NP
+    (NP (NNP Richard) (NNP Kirsch))
+    (, ,)
+    (NP
+      (NP (NNP National) (NNP Campaign) (NNP Manager))
+      (PP (IN for)
+        (NP
+          (NP (NNP Health) (NNP Care))
+          (PP (IN for)
+            (NP (NNP America)))
+          (ADVP (RB Now)))))
+    (. !)))
+
+nn(Kirsch-2, Richard-1)
+root(ROOT-0, Kirsch-2)
+nn(Manager-6, National-4)
+nn(Manager-6, Campaign-5)
+appos(Kirsch-2, Manager-6)
+nn(Care-9, Health-8)
+prep_for(Manager-6, Care-9)
+prep_for(Care-9, America-11)
+advmod(Care-9, Now-12)
+
+(ROOT
+  (S (`` ``)
+    (NP (NNP Three))
+    (VP (VBZ Reasons)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (NN Choice))
+          (PP (IN of)
+            (NP (DT a) (NNP Public) (NNP Health) (NNP Insurance) (NNP Plan))))))
+    ('' '') (. .)))
+
+nsubj(Reasons-3, Three-2)
+root(ROOT-0, Reasons-3)
+det(Choice-6, the-5)
+prep_for(Reasons-3, Choice-6)
+det(Plan-12, a-8)
+nn(Plan-12, Public-9)
+nn(Plan-12, Health-10)
+nn(Plan-12, Insurance-11)
+prep_of(Choice-6, Plan-12)
+
+(ROOT
+  (NP
+    (NP (NNP May) (CD 15) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (NP (NNP Sure))
+      (, ,)
+      (NP (DT some) (NNS people))
+      (VP (VBP are)
+        (ADJP (VBN satisfied)
+          (PP (IN with)
+            (NP (PRP$ their) (JJ current) (NN health) (NN insurance))))))
+    (. .)))
+
+root(ROOT-0, May-1)
+num(May-1, 15-2)
+num(May-1, 2009-4)
+nsubjpass(satisfied-12, Sure-7)
+det(people-10, some-9)
+nsubjpass(satisfied-12, people-10)
+auxpass(satisfied-12, are-11)
+dep(May-1, satisfied-12)
+poss(insurance-17, their-14)
+amod(insurance-17, current-15)
+nn(insurance-17, health-16)
+prep_with(satisfied-12, insurance-17)
+
+(ROOT
+  (S (CC But)
+    (NP
+      (NP (DT the) (NNS millions))
+      (PP (IN of)
+        (NP
+          (NP (NNS Americans))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP are)
+                (ADJP (JJ tired)
+                  (PP (IN of)
+                    (NP
+                      (NP (VBG increasing) (NNS costs))
+                      (CC and)
+                      (NP (VBG decreasing) (NNS benefits)))))))))))
+    (VP (MD should)
+      (VP (VB have)
+        (NP (DT the) (NN chance)
+          (S
+            (VP (TO to)
+              (VP (VB opt)
+                (PP (IN into)
+                  (NP
+                    (NP (DT a) (NN program))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (MD will)
+                          (VP (VB offer)
+                            (SBAR
+                              (S
+                                (NP
+                                  (NP (JJ affordable))
+                                  (, ,)
+                                  (NP (NN quality) (NN care))
+                                  (, ,))
+                                (VP (VBZ says)
+                                  (NP
+                                    (NP (NNP Health) (NNP Care))
+                                    (PP (IN for)
+                                      (NP
+                                        (NP (NNP America) (NNP Now) (POS 's))
+                                        (NNP Richard) (NNP Kirsch)))))))))))))))))))
+    (. .)))
+
+cc(have-16, But-1)
+det(millions-3, the-2)
+nsubj(have-16, millions-3)
+prep_of(millions-3, Americans-5)
+nsubj(tired-8, Americans-5)
+cop(tired-8, are-7)
+rcmod(Americans-5, tired-8)
+amod(costs-11, increasing-10)
+prep_of(tired-8, costs-11)
+amod(benefits-14, decreasing-13)
+prep_of(tired-8, benefits-14)
+conj_and(costs-11, benefits-14)
+aux(have-16, should-15)
+root(ROOT-0, have-16)
+det(chance-18, the-17)
+dobj(have-16, chance-18)
+aux(opt-20, to-19)
+infmod(chance-18, opt-20)
+det(program-23, a-22)
+prep_into(opt-20, program-23)
+nsubj(offer-26, program-23)
+aux(offer-26, will-25)
+rcmod(program-23, offer-26)
+nsubj(says-32, affordable-27)
+nn(care-30, quality-29)
+appos(affordable-27, care-30)
+ccomp(offer-26, says-32)
+nn(Care-34, Health-33)
+dobj(says-32, Care-34)
+nn(Now-37, America-36)
+poss(Kirsch-40, Now-37)
+nn(Kirsch-40, Richard-39)
+prep_for(Care-34, Kirsch-40)
+

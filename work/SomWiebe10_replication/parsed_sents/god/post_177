@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (PP (IN Since)
+      (NP (NNP Unified)))
+    (NP (NNP Force) (NNP Theory))
+    (VP (VBZ fits)
+      (NP
+        (NP (DT the) (JJ basic) (NN definition))
+        (PP (IN of)
+          (NP (NNP God)))))
+    (. .)))
+
+prep_since(fits-5, Unified-2)
+nn(Theory-4, Force-3)
+nsubj(fits-5, Theory-4)
+root(ROOT-0, fits-5)
+det(definition-8, the-6)
+amod(definition-8, basic-7)
+dobj(fits-5, definition-8)
+prep_of(definition-8, God-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NN question))
+    (VP (VBZ is) (, ,)
+      (SBARQ
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNS people))
+            (VP (VBP say)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP believe)
+                    (PP (IN in)
+                      (NP (NNP God)))))))))
+        (, ,)
+        (WHNP (WP what))
+        (SQ (VBP do)
+          (NP (PRP they))
+          (VP (VB mean)
+            (PP (IN by)
+              (NP (NNP God)))))
+        (. ?)))))
+
+det(question-2, The-1)
+nsubj(is-3, question-2)
+root(ROOT-0, is-3)
+advmod(say-7, when-5)
+nsubj(say-7, people-6)
+dep(mean-16, say-7)
+nsubj(believe-9, they-8)
+ccomp(say-7, believe-9)
+prep_in(believe-9, God-11)
+dobj(mean-16, what-13)
+aux(mean-16, do-14)
+nsubj(mean-16, they-15)
+dep(is-3, mean-16)
+prep_by(mean-16, God-18)
+

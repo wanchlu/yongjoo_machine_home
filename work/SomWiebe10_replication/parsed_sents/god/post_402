@@ -1,0 +1,162 @@
+(ROOT
+  (FRAG
+    (ADVP (RB exactly))
+    (. .)))
+
+root(ROOT-0, exactly-1)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN nature)))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (NN something))
+        (VP (VBN called)
+          (NP (NN synergy)))))
+    (. .)))
+
+prep_in(is-4, nature-2)
+expl(is-4, there-3)
+root(ROOT-0, is-4)
+nsubj(is-4, something-5)
+partmod(something-5, called-6)
+dobj(called-6, synergy-7)
+
+(ROOT
+  (S
+    (NP (DT that))
+    (VP (VBZ is) (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP
+            (NP (CD two) (NNS materials))
+            (VP (VBN fused)
+              (ADVP (RB together))))
+          (VP (VBP make)
+            (PP (IN for)
+              (NP
+                (NP (DT a)
+                  (ADJP
+                    (ADJP (JJR stronger))
+                    (PRN (-LRB- -LRB-)
+                      (PP (IN for)
+                        (NP (NN example)))
+                      (-RRB- -RRB-)))
+                  (NN material))
+                (PP (IN than)
+                  (NP
+                    (NP (DT the) (NN sum))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (NN strength))
+                        (PP (IN of)
+                          (NP (DT the) (NNS materials)))))))))
+            (ADVP (RB separately))))))
+    (. .)))
+
+nsubj(is-2, that-1)
+root(ROOT-0, is-2)
+advmod(make-9, when-4)
+num(materials-6, two-5)
+nsubj(make-9, materials-6)
+partmod(materials-6, fused-7)
+advmod(fused-7, together-8)
+advcl(is-2, make-9)
+det(material-17, a-11)
+amod(material-17, stronger-12)
+dep(stronger-12, for-14)
+pobj(for-14, example-15)
+prep_for(make-9, material-17)
+det(sum-20, the-19)
+prep_than(material-17, sum-20)
+det(strength-23, the-22)
+prep_of(sum-20, strength-23)
+det(materials-26, the-25)
+prep_of(strength-23, materials-26)
+advmod(make-9, separately-27)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ happens)
+      (PP (RB because) (IN of)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (PRP they))
+            (VP (VBP interrelate)
+              (SBAR (IN for)
+                (S
+                  (NP (JJ certain) (JJ mathematical) (NNS forms))
+                  (VP (VBP are)
+                    (ADJP
+                      (ADJP (JJR stronger))
+                      (PP (IN than)
+                        (NP (NNS others))))))))))))
+    (. .)))
+
+nsubj(happens-2, This-1)
+root(ROOT-0, happens-2)
+advmod(interrelate-7, how-5)
+nsubj(interrelate-7, they-6)
+prepc_because_of(happens-2, interrelate-7)
+mark(stronger-13, for-8)
+amod(forms-11, certain-9)
+amod(forms-11, mathematical-10)
+nsubj(stronger-13, forms-11)
+cop(stronger-13, are-12)
+advcl(interrelate-7, stronger-13)
+prep_than(stronger-13, others-15)
+
+(ROOT
+  (S
+    (S
+      (NP (DT A) (NN tetrahedron))
+      (VP (VBZ is)
+        (NP (DT a) (JJR stronger) (NN form))
+        (ADVP (RB then))
+        (NP
+          (NP (DT a) (NN box))
+          (PP (IN for)
+            (NP (NN examplehttp))))))
+    (: :)
+    (S
+      (NP
+        (NP (NNP \/) (NNP \/))
+        (VP (VBG en.wikipedia.org\/wiki\/File:Tetrahedron.svg)
+          (NP
+            (NP (JJ different) (NNS forms))
+            (VP (VBG coming)
+              (PRT (RP together))
+              (ADVP (RB randomly))))))
+      (VP (MD can)
+        (VP (VB cause)
+          (NP (JJ huge) (JJ exponential) (NNS changes)))))))
+
+det(tetrahedron-2, A-1)
+nsubj(form-6, tetrahedron-2)
+cop(form-6, is-3)
+det(form-6, a-4)
+amod(form-6, stronger-5)
+root(ROOT-0, form-6)
+advmod(form-6, then-7)
+det(box-9, a-8)
+attr(form-6, box-9)
+prep_for(box-9, examplehttp-11)
+nn(\/-14, \/-13)
+nsubj(cause-22, \/-14)
+partmod(\/-14, en.wikipedia.org\/wiki\/File:Tetrahedron.svg-15)
+amod(forms-17, different-16)
+dobj(en.wikipedia.org\/wiki\/File:Tetrahedron.svg-15, forms-17)
+partmod(forms-17, coming-18)
+prt(coming-18, together-19)
+advmod(coming-18, randomly-20)
+aux(cause-22, can-21)
+parataxis(form-6, cause-22)
+amod(changes-25, huge-23)
+amod(changes-25, exponential-24)
+dobj(cause-22, changes-25)
+

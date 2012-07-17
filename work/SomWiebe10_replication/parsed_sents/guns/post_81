@@ -1,0 +1,151 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ social) (NN harm))
+      (VP (VBN related)
+        (PP (TO to)
+          (NP (NNS firearms)))))
+    (VP (VBZ outweighs)
+      (NP (DT any) (JJ social) (NNS benefits))
+      (PP (IN from)
+        (S
+          (VP (VBG possessing)
+            (NP
+              (NP (NNS firearms))
+              (SBAR
+                (S
+                  (NP (PRP It))
+                  (VP (VBZ is)
+                    (ADVP (RB empirically))
+                    (VP (VBN proven)
+                      (SBAR (IN that)
+                        (S
+                          (NP
+                            (NP (DT the) (NNS numbers))
+                            (PP (IN of)
+                              (NP
+                                (NP (NNS victims))
+                                (PP (IN from)
+                                  (NP (NN gun))))))
+                          (VP (VBD related)
+                            (SBAR
+                              (S
+                                (NP (NNS attacks)
+                                  (CC or)
+                                  (NNS incidents))
+                                (ADVP (RB far))
+                                (VP (VBP outweigh)
+                                  (NP
+                                    (NP (DT the) (NN number))
+                                    (PP (IN of)
+                                      (NP
+                                        (NP (NNS instances))
+                                        (SBAR
+                                          (WHADVP (WRB when))
+                                          (S
+                                            (NP (NNS arms))
+                                            (VP (VBD were)
+                                              (VP (VBN used)
+                                                (PP (IN for)
+                                                  (NP (NN self) (NN protection)))))))))))))))))))))))))
+    (. .)))
+
+det(harm-3, The-1)
+amod(harm-3, social-2)
+nsubj(outweighs-7, harm-3)
+partmod(harm-3, related-4)
+prep_to(related-4, firearms-6)
+root(ROOT-0, outweighs-7)
+det(benefits-10, any-8)
+amod(benefits-10, social-9)
+dobj(outweighs-7, benefits-10)
+prepc_from(outweighs-7, possessing-12)
+dobj(possessing-12, firearms-13)
+nsubjpass(proven-17, It-14)
+auxpass(proven-17, is-15)
+advmod(proven-17, empirically-16)
+rcmod(firearms-13, proven-17)
+complm(related-25, that-18)
+det(numbers-20, the-19)
+nsubj(related-25, numbers-20)
+prep_of(numbers-20, victims-22)
+prep_from(victims-22, gun-24)
+ccomp(proven-17, related-25)
+nsubj(outweigh-30, attacks-26)
+conj_or(attacks-26, incidents-28)
+nsubj(outweigh-30, incidents-28)
+advmod(outweigh-30, far-29)
+ccomp(related-25, outweigh-30)
+det(number-32, the-31)
+dobj(outweigh-30, number-32)
+prep_of(number-32, instances-34)
+tmod(used-38, instances-34)
+advmod(used-38, when-35)
+nsubjpass(used-38, arms-36)
+auxpass(used-38, were-37)
+dep(instances-34, used-38)
+nn(protection-41, self-40)
+prep_for(used-38, protection-41)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (DT This) (NNS warrants))
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN argument))
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NNS costs))
+                (VP (VBD incurred)
+                  (PP (IN on)
+                    (NP (NN society)))
+                  (PP (IN through)
+                    (NP
+                      (NP (DT the) (NN usage))
+                      (PP (IN of)
+                        (NP (NNS arms)))))))))
+          (VP (VBP are)
+            (ADJP (JJR higher))))))
+    (X
+      (X (DT the))
+      (NP
+        (NP (DT the) (NNS benefits))
+        (SBAR
+          (S
+            (NP
+              (NP (DT the) (NN possession))
+              (PP (IN of)
+                (NP
+                  (NP (NNS arms))
+                  (PP (IN for)
+                    (NP (NN self) (NN defense))))))
+            (VP (VBZ brings))))))))
+
+det(warrants-2, This-1)
+root(ROOT-0, warrants-2)
+det(argument-4, the-3)
+dobj(incurred-8, argument-4)
+nsubj(higher-17, argument-4)
+complm(incurred-8, that-5)
+det(costs-7, the-6)
+nsubj(incurred-8, costs-7)
+dep(argument-4, incurred-8)
+prep_on(incurred-8, society-10)
+det(usage-13, the-12)
+prep_through(incurred-8, usage-13)
+prep_of(usage-13, arms-15)
+cop(higher-17, are-16)
+rcmod(warrants-2, higher-17)
+dep(benefits-20, the-18)
+det(benefits-20, the-19)
+dep(warrants-2, benefits-20)
+dobj(brings-28, benefits-20)
+det(possession-22, the-21)
+nsubj(brings-28, possession-22)
+prep_of(possession-22, arms-24)
+nn(defense-27, self-26)
+prep_for(arms-24, defense-27)
+rcmod(benefits-20, brings-28)
+

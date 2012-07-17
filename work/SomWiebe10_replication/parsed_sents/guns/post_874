@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP are)
+      (ADJP (JJ illegal)
+        (PP (IN in)
+          (NP (NNP Chicago)))))
+    (. .)))
+
+nsubj(illegal-3, Guns-1)
+cop(illegal-3, are-2)
+root(ROOT-0, illegal-3)
+prep_in(illegal-3, Chicago-5)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB explain)
+        (NP
+          (NP (NNP Chicago))
+          (VP (VBG having)
+            (NP (DT the) (JJS highest) (NN homicide) (NN rate))))))
+    (. ?)))
+
+advmod(explain-4, How-1)
+aux(explain-4, do-2)
+nsubj(explain-4, you-3)
+root(ROOT-0, explain-4)
+dobj(explain-4, Chicago-5)
+partmod(Chicago-5, having-6)
+det(rate-10, the-7)
+amod(rate-10, highest-8)
+nn(rate-10, homicide-9)
+dobj(having-6, rate-10)
+
+(ROOT
+  (S
+    (VP (VB Do) (RB n't)
+      (VP (VB worry)))
+    (: ...)))
+
+aux(worry-3, Do-1)
+neg(worry-3, n't-2)
+root(ROOT-0, worry-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB wait)))
+    (. .)))
+
+nsubj(wait-3, I-1)
+aux(wait-3, 'll-2)
+root(ROOT-0, wait-3)
+

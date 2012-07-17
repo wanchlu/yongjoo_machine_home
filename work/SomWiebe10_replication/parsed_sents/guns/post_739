@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NN Stun) (NNS guns))
+        (, ,)
+        (NP (NNP Tasers))
+        (CC and)
+        (NP (NN pepper) (NN spray)))
+      (VP
+        (VP (MD can))
+        (CC and)
+        (VP (VBP have)
+          (VP (VBN killed)
+            (NP (NNS people))))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ little) (NN problem))
+          (PP (IN of)
+            (S
+              (VP (VBG getting)
+                (ADVP (RB close) (RB enough))
+                (S
+                  (VP (TO to)
+                    (VP
+                      (ADVP (RB effectively))
+                      (VB use)
+                      (NP
+                        (QP (JJR less) (IN than) (CD leathal))
+                        (NNS options)))))
+                (, ,)
+                (SBAR (IN while)
+                  (S
+                    (NP (PRP$ your) (JJ intended) (NN target))
+                    (VP (VBZ is)
+                      (VP (VBG shooting)
+                        (PP (IN at)
+                          (NP (PRP you)))))))))))))
+    (. .)))
+
+nn(guns-2, Stun-1)
+nsubj(can-8, guns-2)
+nsubj(killed-11, guns-2)
+conj_and(guns-2, Tasers-4)
+nsubj(can-8, Tasers-4)
+nn(spray-7, pepper-6)
+conj_and(guns-2, spray-7)
+nsubj(can-8, spray-7)
+root(ROOT-0, can-8)
+aux(killed-11, have-10)
+conj_and(can-8, killed-11)
+dobj(killed-11, people-12)
+expl(is-15, there-14)
+conj_and(can-8, is-15)
+det(problem-18, the-16)
+amod(problem-18, little-17)
+nsubj(is-15, problem-18)
+prepc_of(problem-18, getting-20)
+advmod(enough-22, close-21)
+advmod(getting-20, enough-22)
+aux(use-25, to-23)
+advmod(use-25, effectively-24)
+xcomp(getting-20, use-25)
+mwe(than-27, less-26)
+quantmod(leathal-28, than-27)
+num(options-29, leathal-28)
+dobj(use-25, options-29)
+mark(shooting-36, while-31)
+poss(target-34, your-32)
+amod(target-34, intended-33)
+nsubj(shooting-36, target-34)
+aux(shooting-36, is-35)
+advcl(getting-20, shooting-36)
+prep_at(shooting-36, you-38)
+

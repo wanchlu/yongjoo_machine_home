@@ -1,0 +1,90 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP$ its))
+        (VP (VBN concealed))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (PP (IN on)
+        (NP (PRP you))))
+    (. .)))
+
+mark(concealed-3, If-1)
+nsubj(concealed-3, its-2)
+advcl(is-5, concealed-3)
+nsubj(is-5, it-4)
+root(ROOT-0, is-5)
+prep_on(is-5, you-7)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ much))
+      (NNS safer))
+    (SQ (MD can)
+      (NP (DT a) (NN gun))
+      (VP (VB be)))
+    (. ?)))
+
+advmod(much-2, How-1)
+amod(safer-3, much-2)
+dobj(be-7, safer-3)
+aux(be-7, can-4)
+det(gun-6, a-5)
+nsubj(be-7, gun-6)
+root(ROOT-0, be-7)
+
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (MD can)
+      (VP (VB find)
+        (NP (PRP it))
+        (ADVP (RB there))))
+    (. .)))
+
+det(one-2, No-1)
+nsubj(find-4, one-2)
+aux(find-4, can-3)
+root(ROOT-0, find-4)
+dobj(find-4, it-5)
+advmod(find-4, there-6)
+
+(ROOT
+  (S
+    (S
+      (NP (DT A) (NN camper)
+        (CC or)
+        (NN motorhome))
+      (VP (VBZ is)
+        (ADJP (JJ easy)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (PP (IN into))))))))
+    (CC and)
+    (S
+      (ADVP (RB now))
+      (NP (DT a) (JJ bad) (NN guy))
+      (VP (VBZ has)
+        (NP (PRP$ your) (NN gun))))
+    (. .)))
+
+det(camper-2, A-1)
+nsubj(easy-6, camper-2)
+conj_or(camper-2, motorhome-4)
+nsubj(easy-6, motorhome-4)
+cop(easy-6, is-5)
+root(ROOT-0, easy-6)
+aux(get-8, to-7)
+xcomp(easy-6, get-8)
+prep(get-8, into-9)
+advmod(has-15, now-11)
+det(guy-14, a-12)
+amod(guy-14, bad-13)
+nsubj(has-15, guy-14)
+conj_and(easy-6, has-15)
+poss(gun-17, your-16)
+dobj(has-15, gun-17)
+

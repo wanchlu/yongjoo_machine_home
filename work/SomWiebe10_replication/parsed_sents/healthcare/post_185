@@ -1,0 +1,126 @@
+(ROOT
+  (S
+    (NP (JJ Single-payer) (NN health) (NN care))
+    (VP (VBZ reduces)
+      (NP
+        (NP (NNS complexities))
+        (VP (VBN faced)
+          (PP (IN by)
+            (NP
+              (NP (NNS patients))
+              (SBAR
+                (S
+                  (NP (NNP Insurance) (NNS companies))
+                  (ADVP (RB often))
+                  (VP (VBP make)
+                    (S
+                      (NP (NN life))
+                      (ADJP (RB as) (JJ difficult))
+                      (S
+                        (ADJP (RB as) (JJ possible)
+                          (PP (IN for)
+                            (NP
+                              (NP (NNS patients))
+                              (PP (IN through)
+                                (NP (VBN complicated) (NNS rules)
+                                  (CC and)
+                                  (NNS qualifications))))))))))))))))
+    (. .)))
+
+amod(care-3, Single-payer-1)
+nn(care-3, health-2)
+nsubj(reduces-4, care-3)
+root(ROOT-0, reduces-4)
+dobj(reduces-4, complexities-5)
+partmod(complexities-5, faced-6)
+agent(faced-6, patients-8)
+dobj(make-12, patients-8)
+nn(companies-10, Insurance-9)
+nsubj(make-12, companies-10)
+advmod(make-12, often-11)
+rcmod(patients-8, make-12)
+nsubj(possible-17, life-13)
+advmod(difficult-15, as-14)
+dep(possible-17, difficult-15)
+advmod(possible-17, as-16)
+xcomp(make-12, possible-17)
+prep_for(possible-17, patients-19)
+amod(rules-22, complicated-21)
+prep_through(patients-19, rules-22)
+prep_through(patients-19, qualifications-24)
+conj_and(rules-22, qualifications-24)
+
+(ROOT
+  (S
+    (ADVP (RB Again))
+    (, ,)
+    (NP (NNS profit-interests))
+    (VP (VBP motivate)
+      (NP (DT this))
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ makes)
+            (S
+              (NP (PRP it))
+              (ADJP (RBR less) (JJ likely)))
+            (SBAR (IN that)
+              (S
+                (NP (NNS patients))
+                (VP (MD will)
+                  (VP (VB seek)
+                    (NP (DT a) (NN claim))))))))))
+    (. .)))
+
+advmod(motivate-4, Again-1)
+nsubj(motivate-4, profit-interests-3)
+root(ROOT-0, motivate-4)
+dobj(motivate-4, this-5)
+mark(makes-8, because-6)
+nsubj(makes-8, it-7)
+advcl(motivate-4, makes-8)
+nsubj(likely-11, it-9)
+advmod(likely-11, less-10)
+xcomp(makes-8, likely-11)
+complm(seek-15, that-12)
+nsubj(seek-15, patients-13)
+aux(seek-15, will-14)
+ccomp(makes-8, seek-15)
+det(claim-17, a-16)
+dobj(seek-15, claim-17)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB all)
+      (ADJP (RB very) (JJ stressful)
+        (CC and)
+        (JJ time-consuming))
+      (PP (IN for)
+        (NP (NNS patients))))
+    (. .)))
+
+nsubj(stressful-5, This-1)
+nsubj(time-consuming-7, This-1)
+cop(stressful-5, is-2)
+advmod(stressful-5, all-3)
+advmod(stressful-5, very-4)
+root(ROOT-0, stressful-5)
+conj_and(stressful-5, time-consuming-7)
+prep_for(stressful-5, patients-9)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ single-payer) (NN system))
+    (VP (MD would)
+      (VP (VB simplify)
+        (NP (NNS things))))
+    (. .)))
+
+det(system-3, A-1)
+amod(system-3, single-payer-2)
+nsubj(simplify-5, system-3)
+aux(simplify-5, would-4)
+root(ROOT-0, simplify-5)
+dobj(simplify-5, things-6)
+

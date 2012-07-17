@@ -1,0 +1,89 @@
+(ROOT
+  (NP (NNP HOW) (NNP DO) (NNP YOU) (NNP KNOW) (. ?)))
+
+nn(KNOW-4, HOW-1)
+nn(KNOW-4, DO-2)
+nn(KNOW-4, YOU-3)
+root(ROOT-0, KNOW-4)
+
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (VP (VBN done)
+      (SBAR
+        (S
+          (S
+            (NP (DT some))
+            (VP (VBG searching)
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NNS heavens))
+                  (CC and)
+                  (NP (NN earth))))))
+          (CC and)
+          (S
+            (ADVP (RB now))
+            (ADVP (RB somehow))
+            (NP (PRP you))
+            (VP (VBP know)
+              (ADVP (RBR more) (RB then))
+              (NP
+                (NP (DT the) (NN rest))
+                (PP (IN of)
+                  (NP (PRP us)))
+                (, ,)
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP you))
+                    (VP (VBN seen)
+                      (S
+                        (NP (PRP it))
+                        (NP (DT all))))))))))))
+    (. .)))
+
+aux(done-3, Have-1)
+nsubj(done-3, you-2)
+root(ROOT-0, done-3)
+nsubj(searching-5, some-4)
+dep(done-3, searching-5)
+det(heavens-8, the-7)
+prep_of(searching-5, heavens-8)
+prep_of(searching-5, earth-10)
+conj_and(heavens-8, earth-10)
+advmod(know-15, now-12)
+advmod(know-15, somehow-13)
+nsubj(know-15, you-14)
+dep(done-3, know-15)
+conj_and(searching-5, know-15)
+advmod(then-17, more-16)
+advmod(know-15, then-17)
+det(rest-19, the-18)
+dobj(know-15, rest-19)
+dobj(seen-25, rest-19)
+prep_of(rest-19, us-21)
+mark(seen-25, because-23)
+nsubj(seen-25, you-24)
+dep(rest-19, seen-25)
+nsubj(all-27, it-26)
+xcomp(seen-25, all-27)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADVP (RB simply))
+      (ADJP (JJ impossible)))
+    (: ...)))
+
+nsubj(impossible-4, That-1)
+cop(impossible-4, is-2)
+advmod(impossible-4, simply-3)
+root(ROOT-0, impossible-4)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Sorry))
+    (. .)))
+
+root(ROOT-0, Sorry-1)
+

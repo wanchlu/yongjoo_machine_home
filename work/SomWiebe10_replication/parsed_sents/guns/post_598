@@ -1,0 +1,38 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NNP Penn)
+          (CC and)
+          (NNP Teller))
+        (VP (VBP get)
+          (NP (PRP it)))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG having)
+        (NP
+          (NP (NNS problems))
+          (PP (IN with)
+            (NP (PRP it))))))
+    (. ?)))
+
+mark(get-5, If-1)
+nsubj(get-5, Penn-2)
+conj_and(Penn-2, Teller-4)
+nsubj(get-5, Teller-4)
+advcl(having-11, get-5)
+dobj(get-5, it-6)
+advmod(having-11, why-8)
+aux(having-11, are-9)
+nsubj(having-11, you-10)
+root(ROOT-0, having-11)
+dobj(having-11, problems-12)
+prep_with(problems-12, it-14)
+
+(ROOT
+  (NP (NNS http:\/\/www.youtube.com\/watch?v=1GNu7ldL1LM)))
+
+root(ROOT-0, http:\/\/www.youtube.com\/watch?v=1GNu7ldL1LM-1)
+

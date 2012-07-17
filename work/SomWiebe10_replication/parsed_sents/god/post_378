@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (NP (DT all) (NNS humans))
+    (VP (VBD existed)
+      (NP
+        (NP (NN becoz))
+        (PP (IN of)
+          (NP (DT the) (VBN improved) (NN science)
+            (CC and)
+            (NN moder) (NNS techniques)))))
+    (: ...)))
+
+det(humans-2, all-1)
+nsubj(existed-3, humans-2)
+root(ROOT-0, existed-3)
+dobj(existed-3, becoz-4)
+det(science-8, the-6)
+amod(science-8, improved-7)
+prep_of(becoz-4, science-8)
+nn(techniques-11, moder-10)
+prep_of(becoz-4, techniques-11)
+conj_and(science-8, techniques-11)
+
+(ROOT
+  (NP (FW .) (. .)))
+
+
+(ROOT
+  (S
+    (NP (PRP$ its))
+    (ADJP (JJ true)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (ADJP (RB very) (JJ impossible)
+              (SBAR
+                (S
+                  (S
+                    (PP (IN without)
+                      (NP (DT any) (NN creator)))
+                    (, ,)
+                    (NP (NNS people))
+                    (VP (MD would)
+                      (VP (VB exist)
+                        (PP (IN in)
+                          (NP (DT this) (NN world))))))
+                  (CC but)
+                  (S
+                    (NP (PRP I))
+                    (VP (VBP say)
+                      (SBAR (IN that)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ is)
+                            (ADVP (RB SCIENCE))
+                            (NP (DT the) (NN creator))))))))))))))))
+
+dep(true-2, its-1)
+root(ROOT-0, true-2)
+complm(impossible-7, that-3)
+nsubj(impossible-7, it-4)
+cop(impossible-7, is-5)
+advmod(impossible-7, very-6)
+ccomp(true-2, impossible-7)
+det(creator-10, any-9)
+prep_without(exist-14, creator-10)
+nsubj(exist-14, people-12)
+aux(exist-14, would-13)
+dep(impossible-7, exist-14)
+det(world-17, this-16)
+prep_in(exist-14, world-17)
+nsubj(say-20, I-19)
+dep(impossible-7, say-20)
+conj_but(exist-14, say-20)
+complm(creator-26, that-21)
+nsubj(creator-26, it-22)
+cop(creator-26, is-23)
+advmod(creator-26, SCIENCE-24)
+det(creator-26, the-25)
+ccomp(say-20, creator-26)
+

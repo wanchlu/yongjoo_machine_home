@@ -1,0 +1,99 @@
+(ROOT
+  (FRAG
+    (NP (NN Key) (NN word))
+    (: :)
+    (PP (`` ``) (IN in)
+      (NP (DT the) (JJ wrong) (NNS hands))
+      (. .))))
+
+nn(word-2, Key-1)
+root(ROOT-0, word-2)
+dep(word-2, in-5)
+det(hands-8, the-6)
+amod(hands-8, wrong-7)
+pobj(in-5, hands-8)
+
+(ROOT
+  (NP ('' '')
+    (CC Yeah)
+    (NP
+      (NP (PRP$ its) (JJ possible))
+      (PP (IN for)
+        (NP (DT a) (NN maniac)
+          (S
+            (VP (TO to)
+              (VP (VB get)
+                (NP
+                  (NP
+                    (NP (NN ahold))
+                    (PP (IN of)
+                      (NP (DT a) (NN gun))))
+                  (, ,)
+                  (CC but)
+                  (NP
+                    (NP (PRP$ its)
+                      (ADJP (RB also) (JJ possible)
+                        (PP (IN for)
+                          (NP (DT a) (NN maniac)
+                            (S
+                              (VP (TO to)
+                                (VP (VB get)
+                                  (PP (IN in)
+                                    (NP (DT the) (NNS drivers)))))))))
+                      (NN seat))
+                    (PP (IN of)
+                      (NP (DT a) (NN car)))))))))))
+    (. .)))
+
+cc(possible-4, Yeah-2)
+poss(possible-4, its-3)
+root(ROOT-0, possible-4)
+det(maniac-7, a-6)
+prep_for(possible-4, maniac-7)
+aux(get-9, to-8)
+infmod(maniac-7, get-9)
+dobj(get-9, ahold-10)
+det(gun-13, a-12)
+prep_of(ahold-10, gun-13)
+poss(seat-27, its-16)
+advmod(possible-18, also-17)
+amod(seat-27, possible-18)
+det(maniac-21, a-20)
+prep_for(possible-18, maniac-21)
+aux(get-23, to-22)
+infmod(maniac-21, get-23)
+det(drivers-26, the-25)
+prep_in(get-23, drivers-26)
+dobj(get-9, seat-27)
+conj_but(ahold-10, seat-27)
+det(car-30, a-29)
+prep_of(seat-27, car-30)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP
+      (NP (VB see))
+      (SBAR
+        (S
+          (NP (PRP$ my) (NN post) (-RRB- -RRB-) (NNS Perhaps))
+          (VP
+            (S
+              (NP (VBP we)))))))
+    (VP (MD should)
+      (VP (VB ban)
+        (NP (NNS cars))
+        (PP (IN in)
+          (NP (NNP America)))))
+    (. ?)))
+
+dobj(we-7, see-2)
+nsubj(ban-9, see-2)
+poss(Perhaps-6, my-3)
+nn(Perhaps-6, post-4)
+nsubj(we-7, Perhaps-6)
+rcmod(see-2, we-7)
+aux(ban-9, should-8)
+root(ROOT-0, ban-9)
+dobj(ban-9, cars-10)
+prep_in(ban-9, America-12)
+

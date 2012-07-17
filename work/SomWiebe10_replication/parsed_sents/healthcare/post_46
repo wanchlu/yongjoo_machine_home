@@ -1,0 +1,122 @@
+(ROOT
+  (S
+    (NP (NNP Public))
+    (VP (VBP plan)
+      (S
+        (NP (JJ counters) (NN insurance) (NN company) (NNS efforts))
+        (VP (TO to)
+          (VP (VB deny)
+            (NP (NNS claims))
+            (NP (NNP Ezra) (NNP Klein))))))
+    (. .)))
+
+nsubj(plan-2, Public-1)
+root(ROOT-0, plan-2)
+amod(efforts-6, counters-3)
+nn(efforts-6, insurance-4)
+nn(efforts-6, company-5)
+nsubj(deny-8, efforts-6)
+aux(deny-8, to-7)
+xcomp(plan-2, deny-8)
+iobj(deny-8, claims-9)
+nn(Klein-11, Ezra-10)
+dobj(deny-8, Klein-11)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP Health) (NNP Care) (NNP Reform))
+    (PP (IN for)
+      (NP
+        (NX
+          (NP (NNP Beginners))
+          (: :)
+          (NP
+            (NP (DT The) (JJ Many) (NNS Flavors))
+            (PP (IN of)
+              (NP (DT the) (NNP Public) (NNP Plan) ('' '')))))
+        (NNP Washington) (NNP Post)))
+    (. .)))
+
+nn(Reform-4, Health-2)
+nn(Reform-4, Care-3)
+root(ROOT-0, Reform-4)
+dep(Reform-4, for-5)
+dep(Flavors-10, Beginners-6)
+det(Flavors-10, The-8)
+amod(Flavors-10, Many-9)
+dep(Post-17, Flavors-10)
+det(Plan-14, the-12)
+nn(Plan-14, Public-13)
+prep_of(Flavors-10, Plan-14)
+nn(Post-17, Washington-16)
+pobj(for-5, Post-17)
+
+(ROOT
+  (S
+    (NP (NNP June))
+    (NP
+      (NP (CD 8))
+      (, ,)
+      (FRAG
+        (ADJP (JJ 2009))
+        (: :)))
+    ('' '')
+    (VP
+      (VP
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Insurance) (NN industry))
+          (-RRB- -RRB-))
+        (VBZ employs)
+        (NP
+          (NP (NNS platoons))
+          (PP (IN of)
+            (NP
+              (NP (NNS adjusters))
+              (SBAR
+                (WHNP (WP$ whose) (JJ sole) (NN job))
+                (S
+                  (VP (VBZ is)
+                    (S
+                      (VP (TO to)
+                        (VP (VB get)
+                          (PRT (RP out))
+                          (PP (IN of)
+                            (S
+                              (VP (VBG paying)
+                                (PP (IN for)
+                                  (NP (JJ needed) (NN health) (NN care) (NNS services))))))))))))))))
+      (SBAR (IN that)
+        (S
+          (NP (NNS members))
+          (VP (VBD thought)
+            (SBAR
+              (S
+                (VP (VBD were)
+                  (VP (VBN covered)))))))))
+    (. .)))
+
+tmod(employs-11, June-1)
+nsubj(employs-11, 8-2)
+dep(8-2, 2009-4)
+nn(industry-9, Insurance-8)
+dep(employs-11, industry-9)
+root(ROOT-0, employs-11)
+dobj(employs-11, platoons-12)
+prep_of(platoons-12, adjusters-14)
+poss(job-17, adjusters-14)
+amod(job-17, sole-16)
+nsubj(is-18, job-17)
+rcmod(adjusters-14, is-18)
+aux(get-20, to-19)
+xcomp(is-18, get-20)
+prepc_out_of(get-20, paying-23)
+amod(services-28, needed-25)
+nn(services-28, health-26)
+nn(services-28, care-27)
+prep_for(paying-23, services-28)
+dep(thought-31, that-29)
+nsubj(thought-31, members-30)
+ccomp(employs-11, thought-31)
+auxpass(covered-33, were-32)
+ccomp(thought-31, covered-33)
+

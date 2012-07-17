@@ -1,0 +1,273 @@
+(ROOT
+  (S
+    (NP (NNP Insurance) (NN industry))
+    (VP (VBZ has)
+      (NP (JJ sufficient) (NN competition)
+        (NP (JJ w\/o) (JJ public) (NN option) (NNP Karl) (NNP Rove))))
+    (. .)))
+
+nn(industry-2, Insurance-1)
+nsubj(has-3, industry-2)
+root(ROOT-0, has-3)
+amod(competition-5, sufficient-4)
+dobj(has-3, competition-5)
+amod(Rove-10, w\/o-6)
+amod(Rove-10, public-7)
+nn(Rove-10, option-8)
+nn(Rove-10, Karl-9)
+dep(competition-5, Rove-10)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP How))
+    (PP (TO to)
+      (NP
+        (NP (NNP Stop) (NNP Socialized) (NNP Health) (NNP Care) ('' ''))
+        (NP (NNP Wall) (NNP Street) (NNP Journal))))
+    (. .)))
+
+root(ROOT-0, How-2)
+dep(How-2, to-3)
+nn(Care-7, Stop-4)
+nn(Care-7, Socialized-5)
+nn(Care-7, Health-6)
+pobj(to-3, Care-7)
+nn(Journal-11, Wall-9)
+nn(Journal-11, Street-10)
+dep(Care-7, Journal-11)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 11) (, ,) (CD 2009))
+    (: :)
+    (S (`` ``)
+      (NP (NNS Advocates))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (DT a) (JJ government-run) (NN insurance) (NN program))
+            (VP (VBZ is)
+              (VP (VBN needed)
+                (S
+                  (VP (TO to)
+                    (VP (VB provide)
+                      (NP (NN competition))
+                      (PP (IN for)
+                        (NP (JJ private) (NN health) (NN insurance))))))))))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 11-2)
+num(June-1, 2009-4)
+nsubj(say-8, Advocates-7)
+dep(June-1, say-8)
+det(program-12, a-9)
+amod(program-12, government-run-10)
+nn(program-12, insurance-11)
+nsubjpass(needed-14, program-12)
+xsubj(provide-16, program-12)
+auxpass(needed-14, is-13)
+ccomp(say-8, needed-14)
+aux(provide-16, to-15)
+xcomp(needed-14, provide-16)
+dobj(provide-16, competition-17)
+amod(insurance-21, private-19)
+nn(insurance-21, health-20)
+prep_for(provide-16, insurance-21)
+
+(ROOT
+  (S (CC But)
+    (NP (CD 1,300) (NNS companies))
+    (VP (VBP sell)
+      (NP (NN health) (NN insurance) (NNS plans)))
+    (. .)))
+
+cc(sell-4, But-1)
+num(companies-3, 1,300-2)
+nsubj(sell-4, companies-3)
+root(ROOT-0, sell-4)
+nn(plans-7, health-5)
+nn(plans-7, insurance-6)
+dobj(sell-4, plans-7)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP (NN competition) (NN enough)))
+    (. .)))
+
+nsubj(enough-4, That-1)
+cop(enough-4, 's-2)
+nn(enough-4, competition-3)
+root(ROOT-0, enough-4)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS results))
+      (PP (IN of)
+        (NP (JJ robust) (JJ private) (NN competition)))
+      (S
+        (VP (TO to)
+          (VP (VB provide)
+            (NP (DT the) (NNP Medicare) (NN drug) (NN benefit))))))
+    (VP (VBP underscore)
+      (NP (DT this)))
+    (. .)))
+
+det(results-2, The-1)
+nsubj(underscore-13, results-2)
+amod(competition-6, robust-4)
+amod(competition-6, private-5)
+prep_of(results-2, competition-6)
+aux(provide-8, to-7)
+infmod(results-2, provide-8)
+det(benefit-12, the-9)
+nn(benefit-12, Medicare-10)
+nn(benefit-12, drug-11)
+dobj(provide-8, benefit-12)
+root(ROOT-0, underscore-13)
+dobj(underscore-13, this-14)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP it))
+        (VP (VBD was)
+          (VP (VBN approved)))))
+    (, ,)
+    (NP (DT the) (NNP Congressional) (NNP Budget) (NNP Office))
+    (VP (VBD estimated)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (MD would)
+            (VP (VB cost)
+              (NP
+                (NP
+                  (QP ($ $) (CD 74) (CD billion)))
+                (NP (DT a) (NN year)))
+              (PP (IN by)
+                (NP (CD 2008))))))))
+    (. .)))
+
+advmod(approved-4, When-1)
+nsubjpass(approved-4, it-2)
+auxpass(approved-4, was-3)
+advcl(estimated-10, approved-4)
+det(Office-9, the-6)
+nn(Office-9, Congressional-7)
+nn(Office-9, Budget-8)
+nsubj(estimated-10, Office-9)
+root(ROOT-0, estimated-10)
+nsubj(cost-13, it-11)
+aux(cost-13, would-12)
+ccomp(estimated-10, cost-13)
+dobj(cost-13, $-14)
+number($-14, 74-15)
+number($-14, billion-16)
+det(year-18, a-17)
+dep($-14, year-18)
+prep_by(cost-13, 2008-20)
+
+(ROOT
+  (S
+    (NP
+      (QP (RB Nearly) (CD 100))
+      (NNS providers))
+    (VP (VBP deliver)
+      (NP (DT the) (NN drug) (NN benefit))
+      (, ,)
+      (S
+        (VP (VBG competing)
+          (PP (IN on)
+            (NP
+              (NP (JJR better) (NNS benefits))
+              (, ,)
+              (NP (JJR more) (NNS choices))
+              (, ,)
+              (CC and)
+              (NP (JJR lower) (NNS prices)))))))
+    (. .)))
+
+quantmod(100-2, Nearly-1)
+num(providers-3, 100-2)
+nsubj(deliver-4, providers-3)
+root(ROOT-0, deliver-4)
+det(benefit-7, the-5)
+nn(benefit-7, drug-6)
+dobj(deliver-4, benefit-7)
+partmod(deliver-4, competing-9)
+xcomp(deliver-4, competing-9)
+amod(benefits-12, better-11)
+prep_on(competing-9, benefits-12)
+amod(choices-15, more-14)
+prep_on(competing-9, choices-15)
+conj_and(benefits-12, choices-15)
+amod(prices-19, lower-18)
+prep_on(competing-9, prices-19)
+conj_and(benefits-12, prices-19)
+
+(ROOT
+  (S (IN So)
+    (NP (DT the) (JJ actual) (NN cost))
+    (VP (VBD was)
+      (NP
+        (NP
+          (QP ($ $) (CD 44) (CD billion)))
+        (PP (IN in)
+          (NP (CD 2008))))
+      (ADVP
+        (ADVP
+          (NP
+            (QP (RB nearly) (CD 41))
+            (NN %))
+          (JJR less))
+        (SBAR (IN than)
+          (S
+            (VP (VBD predicted))))))
+    (. .)))
+
+dep($-6, So-1)
+det(cost-4, the-2)
+amod(cost-4, actual-3)
+nsubj($-6, cost-4)
+cop($-6, was-5)
+root(ROOT-0, $-6)
+number($-6, 44-7)
+number($-6, billion-8)
+prep_in($-6, 2008-10)
+quantmod(41-12, nearly-11)
+num(%-13, 41-12)
+npadvmod(less-14, %-13)
+advmod($-6, less-14)
+mark(predicted-16, than-15)
+dep(less-14, predicted-16)
+
+(ROOT
+  (S
+    (NP (DT No) (NN government) (NN plan))
+    (VP (VBD was)
+      (VP (VBN needed)
+        (S
+          (VP (TO to)
+            (VP (VB guarantee)
+              (NP
+                (NP (NN competition) (POS 's))
+                (NNS benefits)))))))
+    (. .)))
+
+det(plan-3, No-1)
+nn(plan-3, government-2)
+nsubjpass(needed-5, plan-3)
+xsubj(guarantee-7, plan-3)
+auxpass(needed-5, was-4)
+root(ROOT-0, needed-5)
+aux(guarantee-7, to-6)
+xcomp(needed-5, guarantee-7)
+poss(benefits-10, competition-8)
+dobj(guarantee-7, benefits-10)
+

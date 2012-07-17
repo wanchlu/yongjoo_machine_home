@@ -1,0 +1,209 @@
+(ROOT
+  (S
+    (NP (NNP Socialism))
+    (VP (VBZ is)
+      (ADVP (RB never))
+      (NP (DT the) (NN solution)))
+    (. .)))
+
+nsubj(solution-5, Socialism-1)
+cop(solution-5, is-2)
+neg(solution-5, never-3)
+det(solution-5, the-4)
+root(ROOT-0, solution-5)
+
+(ROOT
+  (S
+    (VP (VBG Stealing)
+      (NP
+        (NP (NN money))
+        (PP (IN from)
+          (NP (DT some) (NNS people)))
+        (PRN (-LRB- -LRB-)
+          (SBAR (IN while)
+            (S
+              (VP (VBG calling)
+                (S
+                  (NP (PRP it))
+                  (`` ``)
+                  (NP (NN taxation))
+                  ('' '')))))
+          (-RRB- -RRB-)))
+      (S
+        (VP (TO to)
+          (VP (VB pay)
+            (PP (IN for)
+              (NP
+                (NP (DT the) (JJ medical) (NNS expenses))
+                (PP (IN of)
+                  (NP (NNS others)))))
+            (PP (IN in)
+              (ADJP (RB still) (JJ wrong)))))))
+    (. .)))
+
+root(ROOT-0, Stealing-1)
+dobj(Stealing-1, money-2)
+det(people-5, some-4)
+prep_from(money-2, people-5)
+mark(calling-8, while-7)
+dep(money-2, calling-8)
+dep(taxation-11, it-9)
+dep(calling-8, taxation-11)
+aux(pay-15, to-14)
+xcomp(Stealing-1, pay-15)
+det(expenses-19, the-17)
+amod(expenses-19, medical-18)
+prep_for(pay-15, expenses-19)
+prep_of(expenses-19, others-21)
+advmod(wrong-24, still-23)
+prep_in(pay-15, wrong-24)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (PRP it))
+    (VP (VB matter)
+      (SBAR (IN if)
+        (S
+          (NP (DT a) (NN mugger))
+          (VP (VBZ promises)
+            (SBAR
+              (S
+                (NP (PRP he))
+                (VP (MD will)
+                  (ADVP (RB only))
+                  (VP (VB use)
+                    (NP
+                      (NP (DT the) (NN money))
+                      (SBAR
+                        (S
+                          (NP (PRP he))
+                          (VP (VBZ is)
+                            (VP (VBG taking)
+                              (PP (IN from)
+                                (NP
+                                  (NP (PRP you))
+                                  (PP (IN at)
+                                    (NP (NN gun-point)))))
+                              (S
+                                (VP (TO to)
+                                  (VP (VB pay)
+                                    (PP (IN for)
+                                      (NP
+                                        (NP (DT a) (NN doctor) (NN visit))
+                                        (PP (IN for)
+                                          (NP (PRP$ his) (NNS kids)))))))))))))))))))))
+    (. ?)))
+
+dep(matter-3, Does-1)
+nsubj(matter-3, it-2)
+root(ROOT-0, matter-3)
+mark(promises-7, if-4)
+det(mugger-6, a-5)
+nsubj(promises-7, mugger-6)
+advcl(matter-3, promises-7)
+nsubj(use-11, he-8)
+aux(use-11, will-9)
+advmod(use-11, only-10)
+ccomp(promises-7, use-11)
+det(money-13, the-12)
+dobj(use-11, money-13)
+dobj(taking-16, money-13)
+nsubj(taking-16, he-14)
+xsubj(pay-22, he-14)
+aux(taking-16, is-15)
+rcmod(money-13, taking-16)
+prep_from(taking-16, you-18)
+prep_at(you-18, gun-point-20)
+aux(pay-22, to-21)
+xcomp(taking-16, pay-22)
+det(visit-26, a-24)
+nn(visit-26, doctor-25)
+prep_for(pay-22, visit-26)
+poss(kids-29, his-28)
+prep_for(visit-26, kids-29)
+
+(ROOT
+  (S
+    (NP (DT A) (`` ``) (NN right) ('' ''))
+    (VP (MD can)
+      (ADVP (RB never))
+      (VP (VB include)
+        (S
+          (VP (VBG violating)
+            (NP
+              (NP (NN someone) (RB else) (POS 's))
+              (NNS rights))))))
+    (. .)))
+
+det(right-3, A-1)
+nsubj(include-7, right-3)
+aux(include-7, can-5)
+neg(include-7, never-6)
+root(ROOT-0, include-7)
+xcomp(include-7, violating-8)
+poss(rights-12, someone-9)
+advmod(someone-9, else-10)
+dobj(violating-8, rights-12)
+
+(ROOT
+  (S
+    (NP (JJ Socialized) (NN medicine))
+    (VP (VBZ violates)
+      (NP
+        (NP (DT the) (NNS rights))
+        (PP (IN of)
+          (NP
+            (NP (DT every) (NN person))
+            (PP (IN at)
+              (NP (DT some) (NN point))))))
+      (, ,)
+      (PP (IN from)
+        (NP
+          (NP (DT the) (NN doctor))
+          (PP (TO to)
+            (NP
+              (NP (DT the) (JJ healthy) (NN person))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ is)
+                    (ADJP (JJ careful)
+                      (PP (IN about)
+                        (S
+                          (VP (VBG maintaining)
+                            (NP (JJ his\/her) (JJ own) (NN health))))))))))))))
+    (. .)))
+
+amod(medicine-2, Socialized-1)
+nsubj(violates-3, medicine-2)
+root(ROOT-0, violates-3)
+det(rights-5, the-4)
+dobj(violates-3, rights-5)
+det(person-8, every-7)
+prep_of(rights-5, person-8)
+det(point-11, some-10)
+prep_at(person-8, point-11)
+det(doctor-15, the-14)
+prep_from(violates-3, doctor-15)
+det(person-19, the-17)
+amod(person-19, healthy-18)
+prep_to(doctor-15, person-19)
+nsubj(careful-22, person-19)
+cop(careful-22, is-21)
+rcmod(person-19, careful-22)
+prepc_about(careful-22, maintaining-24)
+amod(health-27, his\/her-25)
+amod(health-27, own-26)
+dobj(maintaining-24, health-27)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ wrong)))
+    (. .)))
+
+nsubj(wrong-3, It-1)
+cop(wrong-3, is-2)
+root(ROOT-0, wrong-3)
+

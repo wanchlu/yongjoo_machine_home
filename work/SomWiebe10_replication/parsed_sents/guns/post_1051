@@ -1,0 +1,131 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS guns))
+        (VP (VBP are)
+          (VP (VBN outlawed)
+            (ADVP (RB only))))))
+    (NP (DT the) (NNS outlaws))
+    (VP (MD will)
+      (VP (VB have)
+        (NP (NNS guns))))
+    (. .)))
+
+mark(outlawed-4, If-1)
+nsubjpass(outlawed-4, guns-2)
+auxpass(outlawed-4, are-3)
+advcl(have-9, outlawed-4)
+advmod(outlawed-4, only-5)
+det(outlaws-7, the-6)
+nsubj(have-9, outlaws-7)
+aux(have-9, will-8)
+root(ROOT-0, have-9)
+dobj(have-9, guns-10)
+
+(ROOT
+  (S
+    (NP (JJ \/) (NNS Guns))
+    (VP (VBP are)
+      (PP (IN for)
+        (NP
+          (NP (DT those) (NN law) (NNS breakers)
+            (CC and)
+            (NNS rapists))
+          (CC or)
+          (S
+            (ADVP (RB just))
+            (VP (TO to)
+              (VP (VB stop)
+                (NP (DT a) (NN mugger))
+                (PP (IN from)
+                  (S
+                    (VP (VBG getting)
+                      (NP (PRP$ your) (NNS kids)))))))))))
+    (. .)))
+
+amod(Guns-2, \/-1)
+nsubj(are-3, Guns-2)
+root(ROOT-0, are-3)
+det(breakers-7, those-5)
+nn(breakers-7, law-6)
+prep_for(are-3, breakers-7)
+prep_for(are-3, rapists-9)
+conj_and(breakers-7, rapists-9)
+advmod(stop-13, just-11)
+aux(stop-13, to-12)
+prep_for(are-3, stop-13)
+conj_or(breakers-7, stop-13)
+infmod(breakers-7, stop-13)
+det(mugger-15, a-14)
+dobj(stop-13, mugger-15)
+prepc_from(stop-13, getting-17)
+poss(kids-19, your-18)
+dobj(getting-17, kids-19)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (ADVP
+        (NP
+          (ADVP (IN at) (JJS least))
+          (DT the) (NN divine) (NN animal))
+        (RB right))
+      (S
+        (VP (TO to)
+          (VP (VB protect)
+            (NP
+              (NP (DT the) (NN life))
+              (PP (IN of)
+                (NP
+                  (NP (PRP yourself))
+                  (CC and)
+                  (NP (PRP$ your) (NN offspring)))))))))
+    (. .)))
+
+nsubj(have-2, You-1)
+xsubj(protect-10, You-1)
+root(ROOT-0, have-2)
+advmod(animal-7, at-3)
+pobj(at-3, least-4)
+det(animal-7, the-5)
+nn(animal-7, divine-6)
+npadvmod(right-8, animal-7)
+advmod(have-2, right-8)
+aux(protect-10, to-9)
+xcomp(have-2, protect-10)
+det(life-12, the-11)
+dobj(protect-10, life-12)
+prep_of(life-12, yourself-14)
+poss(offspring-17, your-16)
+prep_of(life-12, offspring-17)
+conj_and(yourself-14, offspring-17)
+
+(ROOT
+  (SINV
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNS \/))
+      (-RRB- -RRB-))
+    (NP
+      (NP (NNPS Teachers))
+      (SBAR
+        (S
+          (VP (VBP are)
+            (NP
+              (NP (NNS folks))
+              (PP (IN with)
+                (FRAG
+                  (NP (NNS families))
+                  (ADVP (RB too))
+                  (. .))))))))))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+nsubj(\/-1, Teachers-5)
+cop(folks-7, are-6)
+rcmod(Teachers-5, folks-7)
+prep(folks-7, with-8)
+dep(with-8, families-9)
+dep(families-9, too-10)
+

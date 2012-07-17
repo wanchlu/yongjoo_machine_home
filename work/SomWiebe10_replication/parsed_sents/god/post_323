@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (ADVP (RB never))
+      (VP (VBN understood)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (NNS people))
+            (VP (MD can) (RB not)
+              (VP (VB accept)
+                (SBAR (IN that)
+                  (S
+                    (NP
+                      (NP (NN religion))
+                      (CC and)
+                      (NP (NNP God)))
+                    (VP (VBP exist)
+                      (ADVP (RB simultaneously))
+                      (PP (IN with)
+                        (NP (NN science))))))))))))
+    (. .)))
+
+nsubj(understood-4, I-1)
+aux(understood-4, have-2)
+neg(understood-4, never-3)
+root(ROOT-0, understood-4)
+advmod(accept-9, why-5)
+nsubj(accept-9, people-6)
+aux(accept-9, can-7)
+neg(accept-9, not-8)
+advcl(understood-4, accept-9)
+complm(exist-14, that-10)
+nsubj(exist-14, religion-11)
+conj_and(religion-11, God-13)
+nsubj(exist-14, God-13)
+ccomp(accept-9, exist-14)
+advmod(exist-14, simultaneously-15)
+prep_with(exist-14, science-17)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Science))
+      (VP (VBZ explains)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (NNS things))
+            (VP (VBP happen))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NN religion))
+      (VP (VBZ seeks)
+        (NP
+          (NP (DT the) (NN explanation))
+          (PP (IN of)
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (DT these) (NNS things))
+                (VP (VBP happen)
+                  (SBAR
+                    (S
+                      (NP (NN something) (NN science))
+                      (VP (MD will)
+                        (ADVP (RB never))
+                        (VP (VB be)
+                          (ADJP (JJ able)
+                            (S
+                              (VP (TO to)
+                                (VP (VB do))))))))))))))))
+    (. .)))
+
+nsubj(explains-2, Science-1)
+root(ROOT-0, explains-2)
+advmod(happen-5, how-3)
+nsubj(happen-5, things-4)
+ccomp(explains-2, happen-5)
+nsubj(seeks-9, religion-8)
+conj_but(explains-2, seeks-9)
+det(explanation-11, the-10)
+dobj(seeks-9, explanation-11)
+advmod(happen-16, why-13)
+det(things-15, these-14)
+nsubj(happen-16, things-15)
+prepc_of(explanation-11, happen-16)
+nn(science-18, something-17)
+nsubj(able-22, science-18)
+aux(able-22, will-19)
+neg(able-22, never-20)
+cop(able-22, be-21)
+ccomp(happen-16, able-22)
+aux(do-24, to-23)
+xcomp(able-22, do-24)
+

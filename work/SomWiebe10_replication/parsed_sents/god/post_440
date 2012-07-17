@@ -1,0 +1,119 @@
+(ROOT
+  (FRAG
+    (NP (DT A) (JJ moral) (NNS compass))
+    (. ?)))
+
+det(compass-3, A-1)
+amod(compass-3, moral-2)
+root(ROOT-0, compass-3)
+
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (VP (VBN READ)
+      (NP (DT the) (NNP Bible)))
+    (. ?)))
+
+aux(READ-3, Have-1)
+nsubj(READ-3, you-2)
+root(ROOT-0, READ-3)
+det(Bible-5, the-4)
+dobj(READ-3, Bible-5)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Try)
+        (S
+          (VP (VBG reading)
+            (PP (IN through)
+              (NP (NNP Genesis)
+                (CC and)
+                (NNP Exodus))))))
+      (CC and)
+      (VP (VB see)
+        (ADVP (RB exactly))
+        (NP
+          (NP (NNP HOW) (NNP moral))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (PRN (-LRB- -LRB-)
+                  (NP
+                    (NP (NNS Examples))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNP Biblical) (NNP Immorality))
+                        (: :)
+                        (NP
+                          (NP (NNP Innkeeper))
+                          (VP (VBG letting)
+                            (S
+                              (NP (PRP$ his) (NNS daughters))
+                              (VP (VB get)
+                                (VP (VBN raped)
+                                  (PP (RB instead) (IN of)
+                                    (S
+                                      (VP (VBG sending)
+                                        (PRT (RP out))
+                                        (NP
+                                          (NP (DT the) (NNPS Angels))
+                                          (, ,)
+                                          (NP
+                                            (NP (NN genocide))
+                                            (SBAR
+                                              (WHNP (WDT that))
+                                              (S
+                                                (VP (VBZ 's)
+                                                  (VP (VBN ordered)
+                                                    (PP (IN by)
+                                                      (NP
+                                                        (NP (NNP God))
+                                                        (, ,)
+                                                        (NP
+                                                          (NP (NN infanticide))
+                                                          (SBAR
+                                                            (WHNP (WDT that))
+                                                            (S
+                                                              (VP (VBZ 's)
+                                                                (VP (VBN committed)
+                                                                  (PP (IN by)
+                                                                    (NP (NNP God)))))))))))))))))))))))))))
+                  (-RRB- -RRB-))))))))))
+
+root(ROOT-0, Try-1)
+xcomp(Try-1, reading-2)
+prep_through(reading-2, Genesis-4)
+prep_through(reading-2, Exodus-6)
+conj_and(Genesis-4, Exodus-6)
+conj_and(Try-1, see-8)
+advmod(see-8, exactly-9)
+nn(moral-11, HOW-10)
+dobj(see-8, moral-11)
+nsubj(is-13, it-12)
+rcmod(moral-11, is-13)
+dep(is-13, Examples-15)
+nn(Immorality-18, Biblical-17)
+prep_of(Examples-15, Immorality-18)
+dep(Immorality-18, Innkeeper-20)
+partmod(Innkeeper-20, letting-21)
+poss(daughters-23, his-22)
+nsubjpass(raped-25, daughters-23)
+auxpass(raped-25, get-24)
+ccomp(letting-21, raped-25)
+prepc_instead_of(raped-25, sending-28)
+prt(sending-28, out-29)
+det(Angels-31, the-30)
+dobj(sending-28, Angels-31)
+appos(Angels-31, genocide-33)
+nsubjpass(ordered-36, genocide-33)
+auxpass(ordered-36, 's-35)
+rcmod(genocide-33, ordered-36)
+agent(ordered-36, God-38)
+appos(God-38, infanticide-40)
+nsubjpass(committed-43, infanticide-40)
+auxpass(committed-43, 's-42)
+rcmod(infanticide-40, committed-43)
+agent(committed-43, God-45)
+

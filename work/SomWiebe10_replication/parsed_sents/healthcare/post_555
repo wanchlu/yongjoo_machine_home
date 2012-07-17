@@ -1,0 +1,62 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NNP healthcare))
+    (VP (VBZ presents)
+      (NP
+        (NP (DT an) (NN opportunity))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN health))
+            (PP (IN of)
+              (NP (PDT all)
+                (NP (PRP it) (POS 's))
+                (NNS citizens)))))))
+    (. .)))
+
+nn(healthcare-2, Universal-1)
+nsubj(presents-3, healthcare-2)
+root(ROOT-0, presents-3)
+det(opportunity-5, an-4)
+dobj(presents-3, opportunity-5)
+det(health-8, the-7)
+prep_for(opportunity-5, health-8)
+dep(citizens-13, all-10)
+poss(citizens-13, it-11)
+prep_of(health-8, citizens-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT This))
+      (, ,)
+      (PP (IN in)
+        (NP (PRP$ my) (JJ personal) (NN view))))
+    (VP (VBZ is)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT a) (JJ good) (NN government))
+          (VP (MD should)
+            (ADVP (RB really))
+            (VP (VB aim)
+              (S
+                (VP (TO to)
+                  (VP (VB do)))))))))
+    (. .)))
+
+nsubj(is-7, This-1)
+poss(view-6, my-4)
+amod(view-6, personal-5)
+prep_in(This-1, view-6)
+root(ROOT-0, is-7)
+dobj(aim-14, what-8)
+det(government-11, a-9)
+amod(government-11, good-10)
+nsubj(aim-14, government-11)
+xsubj(do-16, government-11)
+aux(aim-14, should-12)
+advmod(aim-14, really-13)
+ccomp(is-7, aim-14)
+aux(do-16, to-15)
+xcomp(aim-14, do-16)
+

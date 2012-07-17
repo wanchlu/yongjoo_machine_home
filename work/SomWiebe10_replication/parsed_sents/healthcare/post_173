@@ -1,0 +1,151 @@
+(ROOT
+  (S
+    (NP (NNP Government))
+    (VP (VBZ has)
+      (NP (DT a) (NN cost) (NN incentive)
+        (S
+          (VP (TO to)
+            (VP (VB invest)
+              (PP (IN in)
+                (NP
+                  (NP (NN preventive) (NN care) (NNP Paul) (NNP Krugman))
+                  (, ,)
+                  (NP (NNP Robin) (NNP Wells)))))))))
+    (. .)))
+
+nsubj(has-2, Government-1)
+root(ROOT-0, has-2)
+det(incentive-5, a-3)
+nn(incentive-5, cost-4)
+dobj(has-2, incentive-5)
+aux(invest-7, to-6)
+infmod(incentive-5, invest-7)
+nn(Krugman-12, preventive-9)
+nn(Krugman-12, care-10)
+nn(Krugman-12, Paul-11)
+prep_in(invest-7, Krugman-12)
+nn(Wells-15, Robin-14)
+appos(Krugman-12, Wells-15)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NNP Health) (NNP Care))
+    (VP
+      (VP (VBZ Crisis))
+      (CC and)
+      (VP
+        (SBAR
+          (WHNP (WP What))
+          (S
+            (VP (TO to)
+              (VP (VB Do)
+                (PP (IN About)
+                  (NP (PRP It) ('' '')))))))))
+    (. .)))
+
+det(Care-4, The-2)
+nn(Care-4, Health-3)
+nsubj(Crisis-5, Care-4)
+root(ROOT-0, Crisis-5)
+nsubj(Do-9, What-7)
+aux(Do-9, to-8)
+conj_and(Crisis-5, Do-9)
+prep_about(Do-9, It-11)
+
+(ROOT
+  (NP
+    (NP (NNP New) (NNP York) (NNP Times) (NNP Review))
+    (PP (IN of)
+      (NP (NNS Books)))
+    (. .)))
+
+nn(Review-4, New-1)
+nn(Review-4, York-2)
+nn(Review-4, Times-3)
+root(ROOT-0, Review-4)
+prep_of(Review-4, Books-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Volume) (CD 53))
+      (, ,)
+      (NP
+        (NP (NNP Number) (CD 5))
+        (NP (NNP March) (CD 23)))
+      (, ,))
+    (VP (VBP 2006)
+      (S (`` ``)
+        (NP (DT The) (NNP VA))
+        (VP
+          (VP
+            (ADVP (RB also))
+            (VBZ invests)
+            (ADVP (RB heavily)))
+          (CC and)
+          (VP
+            (ADVP (RB systematically))
+            (PP (IN in)
+              (NP (JJ preventive) (NN care))))))
+      (, ,)
+      (SBAR (IN because)
+        (S
+          (PP (IN unlike)
+            (NP (JJ private) (NN health) (NN care) (NNS providers)))
+          (NP (PRP it))
+          (VP (MD can)
+            (VP (VB expect)
+              (S
+                (VP (TO to)
+                  (VP (VB realize)
+                    (NP (JJ financial) (NNS benefits))
+                    (PP (IN from)
+                      (NP
+                        (NP (NNS measures))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBP keep)
+                              (NP (PRP$ its) (NNS clients))
+                              (PRT (RP out))
+                              (PP (IN of)
+                                (NP (DT the) (NN hospital))))))))))))))))
+    (. .)))
+
+nsubj(2006-9, Volume-1)
+num(Volume-1, 53-2)
+appos(Volume-1, Number-4)
+num(Number-4, 5-5)
+dep(Number-4, March-6)
+num(March-6, 23-7)
+root(ROOT-0, 2006-9)
+det(VA-12, The-11)
+nsubj(invests-14, VA-12)
+advmod(invests-14, also-13)
+ccomp(2006-9, invests-14)
+advmod(invests-14, heavily-15)
+ccomp(2006-9, systematically-17)
+conj_and(invests-14, systematically-17)
+amod(care-20, preventive-19)
+prep_in(systematically-17, care-20)
+mark(expect-30, because-22)
+amod(providers-27, private-24)
+nn(providers-27, health-25)
+nn(providers-27, care-26)
+prep_unlike(expect-30, providers-27)
+nsubj(expect-30, it-28)
+xsubj(realize-32, it-28)
+aux(expect-30, can-29)
+advcl(2006-9, expect-30)
+aux(realize-32, to-31)
+xcomp(expect-30, realize-32)
+amod(benefits-34, financial-33)
+dobj(realize-32, benefits-34)
+prep_from(realize-32, measures-36)
+nsubj(keep-38, measures-36)
+rcmod(measures-36, keep-38)
+poss(clients-40, its-39)
+dobj(keep-38, clients-40)
+det(hospital-44, the-43)
+prep_out_of(keep-38, hospital-44)
+

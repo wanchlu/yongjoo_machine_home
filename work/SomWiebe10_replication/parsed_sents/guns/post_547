@@ -1,0 +1,431 @@
+(ROOT
+  (NP
+    (NP (CD Two) (NNS words))
+    (: :)
+    (NP (NNP Kennesaw) (, ,) (NNP Georgia))
+    (. .)))
+
+num(words-2, Two-1)
+root(ROOT-0, words-2)
+nn(Georgia-6, Kennesaw-4)
+dep(words-2, Georgia-6)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (CD 1982)))
+    (NP (PRP they))
+    (VP (VBD enacted)
+      (NP
+        (NP (DT a) (NN law))
+        (VP (VBG requiring)
+          (NP
+            (NP (DT every) (NN head))
+            (PP (IN of)
+              (NP (NN household))))
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP (DT a) (NN gun))))))))
+    (. .)))
+
+prep_in(enacted-4, 1982-2)
+nsubj(enacted-4, they-3)
+root(ROOT-0, enacted-4)
+det(law-6, a-5)
+dobj(enacted-4, law-6)
+partmod(law-6, requiring-7)
+det(head-9, every-8)
+dobj(requiring-7, head-9)
+prep_of(head-9, household-11)
+aux(have-13, to-12)
+xcomp(requiring-7, have-13)
+det(gun-15, a-14)
+dobj(have-13, gun-15)
+
+(ROOT
+  (S ('' '')
+    (NP (RB So) (NNS handguns))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN eliminated) (, ,)
+          (PP (IN except)
+            (PP (IN for)
+              (NP (NN self) (NN defense) (NN use)))))))
+    (. ?)))
+
+advmod(handguns-3, So-2)
+nsubjpass(eliminated-6, handguns-3)
+aux(eliminated-6, should-4)
+auxpass(eliminated-6, be-5)
+root(ROOT-0, eliminated-6)
+prepc_except_for(eliminated-6, for-9)
+nn(use-12, self-10)
+nn(use-12, defense-11)
+pobj(eliminated-6, use-12)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (VBN confused)))
+    (. .)))
+
+nsubjpass(confused-3, I-1)
+auxpass(confused-3, 'm-2)
+root(ROOT-0, confused-3)
+
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP (DT that))
+    (NP
+      (NP (DT the) (JJ major) (NN reason) (NN gun))
+      (SBAR
+        (S
+          (NP (NNS rights) (NNS advocates))
+          (VP (VBP are)
+            (PP (IN for)
+              (NP (NNS handguns)))))))
+    (. ?)))
+
+cop(gun-7, Is-1)
+neg(gun-7, n't-2)
+nsubj(gun-7, that-3)
+det(gun-7, the-4)
+amod(gun-7, major-5)
+nn(gun-7, reason-6)
+root(ROOT-0, gun-7)
+nn(advocates-9, rights-8)
+nsubj(are-10, advocates-9)
+rcmod(gun-7, are-10)
+prep_for(are-10, handguns-12)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADVP (RB sure))
+      (NP
+        (NP (DT the) (NN reason))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP carry)
+              (NP (CD one)))))))
+    (. .)))
+
+nsubj(reason-5, It-1)
+cop(reason-5, 's-2)
+advmod(reason-5, sure-3)
+det(reason-5, the-4)
+root(ROOT-0, reason-5)
+nsubj(carry-7, I-6)
+rcmod(reason-5, carry-7)
+dobj(carry-7, one-8)
+
+(ROOT
+  (S (CC And)
+    (S
+      (NP (PRP I))
+      (VP (VBP like)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (PRP you))
+            (VP (VBP assert)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ 's)
+                    (ADJP (JJ bad)
+                      (S
+                        (VP (TO to)
+                          (VP (VB have)
+                            (NP (NNS handguns))))))))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT an) (NNP Uzi))
+      (VP (VBZ is)
+        (ADJP (JJ OK))))
+    (. .)))
+
+nsubj(like-3, I-2)
+root(ROOT-0, like-3)
+advmod(assert-6, how-4)
+nsubj(assert-6, you-5)
+ccomp(like-3, assert-6)
+complm(bad-10, that-7)
+nsubj(bad-10, it-8)
+cop(bad-10, 's-9)
+ccomp(assert-6, bad-10)
+aux(have-12, to-11)
+xcomp(bad-10, have-12)
+dobj(have-12, handguns-13)
+det(Uzi-17, an-16)
+nsubj(OK-19, Uzi-17)
+cop(OK-19, is-18)
+conj_but(like-3, OK-19)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (ADJP (JJ rational)))
+    (. .)))
+
+nsubj(rational-3, That-1)
+cop(rational-3, 's-2)
+root(ROOT-0, rational-3)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have) (RB n't)
+      (VP (VBN had)
+        (NP
+          (NP (DT a) (NN homicide))
+          (PP (IN in)
+            (NP (CD twenty) (NNS years))))))
+    (. .)))
+
+nsubj(had-4, They-1)
+aux(had-4, have-2)
+neg(had-4, n't-3)
+root(ROOT-0, had-4)
+det(homicide-6, a-5)
+dobj(had-4, homicide-6)
+num(years-9, twenty-8)
+prep_in(homicide-6, years-9)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Show)
+        (S
+          (NP (PRP me))
+          (NP
+            (NP (DT another) (NN town))
+            (PP (IN of)
+              (NP
+                (NP (JJ similar) (NN size))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NNP U.S.))
+                    (, ,)
+                    (NP (RB especially) (CD one))))))))
+        (SBAR (IN that)
+          (S
+            (NP (NNS bans))
+            (VP (VBZ handguns)
+              (ADVP (RB altogether)))))))
+    (, ,)
+    (NP (DT that))
+    (VP (MD can)
+      (VP (VB make)
+        (NP (DT that) (NN claim))))
+    (. .)))
+
+ccomp(make-21, Show-1)
+nsubj(town-4, me-2)
+det(town-4, another-3)
+xcomp(Show-1, town-4)
+amod(size-7, similar-6)
+prep_of(town-4, size-7)
+det(U.S.-10, the-9)
+prep_in(size-7, U.S.-10)
+advmod(one-13, especially-12)
+appos(U.S.-10, one-13)
+complm(handguns-16, that-14)
+nsubj(handguns-16, bans-15)
+ccomp(Show-1, handguns-16)
+advmod(handguns-16, altogether-17)
+nsubj(make-21, that-19)
+aux(make-21, can-20)
+root(ROOT-0, make-21)
+det(claim-23, that-22)
+dobj(make-21, claim-23)
+
+(ROOT
+  (S ('' '')
+    (ADVP (RB Still))
+    (, ,)
+    (NP
+      (ADJP (RB far) (JJR fewer))
+      (NNS people))
+    (VP (MD would)
+      (VP (VB die)
+        (PP (VBN given)
+          (SBAR
+            (S
+              (NP
+                (NP (DT the) (NN majority))
+                (PP (IN of)
+                  (NP (NNS deaths))))
+              (VP (VBP are)
+                (VP (VBN passion-related)
+                  (S
+                    (VP
+                      (VP (VBN killed)
+                        (PP (IN by)
+                          (NP
+                            (NP (NN someone))
+                            (SBAR
+                              (S
+                                (NP (PRP you))
+                                (VP (VBP know)))))))
+                      (CC and\/or)
+                      (VP (VBP love)))))))))))
+    (. .)))
+
+advmod(die-8, Still-2)
+advmod(fewer-5, far-4)
+amod(people-6, fewer-5)
+nsubj(die-8, people-6)
+aux(die-8, would-7)
+root(ROOT-0, die-8)
+prep(die-8, given-9)
+det(majority-11, the-10)
+nsubjpass(passion-related-15, majority-11)
+prep_of(majority-11, deaths-13)
+auxpass(passion-related-15, are-14)
+pcomp(given-9, passion-related-15)
+ccomp(passion-related-15, killed-16)
+prep_by(killed-16, someone-18)
+dobj(know-20, someone-18)
+nsubj(know-20, you-19)
+rcmod(someone-18, know-20)
+ccomp(passion-related-15, love-22)
+conj_and\/or(killed-16, love-22)
+
+(ROOT
+  (S
+    (VP (VB '')
+      (ADJP (JJ Wrong)))
+    (. .)))
+
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN majority))
+      (PP (IN of)
+        (NP (NN handgun) (NNS deaths))))
+    (VP (VBP are)
+      (ADJP (RB gang) (VBN related)))
+    (. .)))
+
+det(majority-2, The-1)
+nsubjpass(related-8, majority-2)
+nn(deaths-5, handgun-4)
+prep_of(majority-2, deaths-5)
+auxpass(related-8, are-6)
+advmod(related-8, gang-7)
+root(ROOT-0, related-8)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD could)
+      (VP (VB argue)
+        (NP (DT that) (JJ rival) (NNS gangs) ('' ''))
+        (SBAR
+          (SBAR
+            (S
+              (NP
+                (NP (NN hatred))
+                (PP (IN of)
+                  (NP (DT each) (JJ other))))
+              (VP (VBZ is) (`` ``)
+                (NP (NN passion))
+                ('' ''))))
+          (CC but)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ 's) (RB not)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (DT the) (NN statement))
+                    (VP (VBZ implies))))))))))
+    (. .)))
+
+nsubj(argue-3, You-1)
+aux(argue-3, could-2)
+root(ROOT-0, argue-3)
+det(gangs-6, that-4)
+amod(gangs-6, rival-5)
+dobj(argue-3, gangs-6)
+nsubj(passion-14, hatred-8)
+det(other-11, each-10)
+prep_of(hatred-8, other-11)
+cop(passion-14, is-12)
+dep(argue-3, passion-14)
+nsubj('s-18, that-17)
+dep(argue-3, 's-18)
+conj_but(passion-14, 's-18)
+neg('s-18, not-19)
+dobj(implies-23, what-20)
+det(statement-22, the-21)
+nsubj(implies-23, statement-22)
+ccomp('s-18, implies-23)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Get)
+        (ADJP (JJ rid)
+          (PP (IN of)
+            (NP (NNS gangs))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (VBP go)
+        (NP (DT a) (JJ long) (NN way))
+        (PP (IN toward)
+          (S
+            (VP (VBG eliminating)
+              (NP (NN handgun) (NN violence)))))))
+    (. .)))
+
+dep(rid-2, Get-1)
+root(ROOT-0, rid-2)
+prep_of(rid-2, gangs-4)
+nsubj(go-8, you-7)
+conj_and(rid-2, go-8)
+det(way-11, a-9)
+amod(way-11, long-10)
+dobj(go-8, way-11)
+prepc_toward(go-8, eliminating-13)
+nn(violence-15, handgun-14)
+dobj(eliminating-13, violence-15)
+
+(ROOT
+  (S (`` ``)
+    (VP (VB except)
+      (PP
+        (PP (IN for)
+          (NP (NN law) (NN enforcement)))
+        (CC or)
+        (PP (IN for)
+          (NP (JJ personal) (NN use))))
+      (S
+        (VP (TO to)
+          (VP (VB defend)
+            (PP (IN against)
+              (NP (JJ other) (NNS handguns)))))))
+    (. .)))
+
+root(ROOT-0, except-2)
+nn(enforcement-5, law-4)
+prep_for(except-2, enforcement-5)
+amod(use-9, personal-8)
+prep_for(except-2, use-9)
+conj_or(enforcement-5, use-9)
+aux(defend-11, to-10)
+xcomp(except-2, defend-11)
+amod(handguns-14, other-13)
+prep_against(defend-11, handguns-14)
+

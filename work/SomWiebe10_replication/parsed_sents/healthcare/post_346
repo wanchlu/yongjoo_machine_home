@@ -1,0 +1,217 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (MD should)
+            (VP (VB have)
+              (NP (JJ universal) (NN health) (NN care)))))))
+    (. .)))
+
+nsubj(think-2, i-1)
+root(ROOT-0, think-2)
+complm(have-6, that-3)
+nsubj(have-6, we-4)
+aux(have-6, should-5)
+ccomp(think-2, have-6)
+amod(care-9, universal-7)
+nn(care-9, health-8)
+dobj(have-6, care-9)
+
+(ROOT
+  (S
+    (S
+      (VP (VB look)
+        (PP (IN at)
+          (NP
+            (NP (PRP it))
+            (NP (DT this) (NN way))))))
+    (, ,)
+    (NP
+      (NP (NN alot))
+      (PP (IN of)
+        (NP (NNS people))))
+    (VP (VBP are)
+      (VP (VBG dying)
+        (SBAR
+          (SBAR (IN because)
+            (S
+              (NP (PRP they))
+              (VP (MD cant)
+                (VP (VB afford)
+                  (NP (JJ medical) (NN insurance))))))
+          (CC or)
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP have)
+                (NP
+                  (NP (DT another) (JJ helth) (NN issue))
+                  (VP (VBG going)
+                    (PRT (RP on))))))))))
+    (. .)))
+
+ccomp(dying-11, look-1)
+prep_at(look-1, it-3)
+det(way-5, this-4)
+dep(it-3, way-5)
+nsubj(dying-11, alot-7)
+prep_of(alot-7, people-9)
+aux(dying-11, are-10)
+root(ROOT-0, dying-11)
+mark(cant-14, because-12)
+nsubj(cant-14, they-13)
+ccomp(dying-11, cant-14)
+dep(cant-14, afford-15)
+amod(insurance-17, medical-16)
+dobj(afford-15, insurance-17)
+complm(have-21, that-19)
+nsubj(have-21, they-20)
+ccomp(dying-11, have-21)
+conj_or(cant-14, have-21)
+det(issue-24, another-22)
+amod(issue-24, helth-23)
+dobj(have-21, issue-24)
+partmod(issue-24, going-25)
+prt(going-25, on-26)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS thoes))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (NP (NN dont))
+          (VP (VBP agree)))))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB try)
+            (S
+              (VP (TO to)
+                (VP (VB see)
+                  (NP (NNS things))
+                  (PP (IN from)
+                    (NP
+                      (NP (NNS thoes))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (NP (NN dont))
+                          (VP (VBP have)
+                            (NP
+                              (NP (NN point))
+                              (PP (IN of)
+                                (NP (NN view))))))))))))))))
+    (. .)))
+
+dobj(agree-4, thoes-1)
+nsubj(need-5, thoes-1)
+xsubj(try-7, thoes-1)
+rel(agree-4, who-2)
+nsubj(agree-4, dont-3)
+rcmod(thoes-1, agree-4)
+root(ROOT-0, need-5)
+aux(try-7, to-6)
+xcomp(need-5, try-7)
+aux(see-9, to-8)
+xcomp(try-7, see-9)
+dobj(see-9, things-10)
+prep_from(see-9, thoes-12)
+dobj(have-15, thoes-12)
+rel(have-15, who-13)
+nsubj(have-15, dont-14)
+rcmod(thoes-12, have-15)
+dobj(have-15, point-16)
+prep_of(point-16, view-18)
+
+(ROOT
+  (FRAG
+    (WHNP (WP what))
+    (SBAR (IN if)
+      (S
+        (S
+          (NP (DT that))
+          (VP (VBD was)
+            (NP
+              (NP (PRP you))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (MD might)
+                    (VP (VB need)
+                      (NP (DT an) (NN liver)
+                        (CC or)
+                        (NN heart) (NN transplant)))))))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (VP (VBD were)
+            (VP (VBN told)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP you))
+                  (VP (VBP couldnt)
+                    (VP (VB get)
+                      (S
+                        (NP (PRP it))
+                        (VP (VBN done)
+                          (SBAR (IN because)
+                            (S
+                              (NP (PRP you))
+                              (VP
+                                (VP (VBP didnt)
+                                  (VP (VB have)
+                                    (NP (JJ enough)
+                                      (CC or)
+                                      (NN ANY) (NNS funds))
+                                    (ADVP (IN at) (DT all))))
+                                (CC and)
+                                (VP (VBD was)
+                                  (VP (VBN left)
+                                    (PP (IN for)
+                                      (ADJP (JJ dead)))))))))))))))))))
+    (. .)))
+
+dep(you-5, what-1)
+mark(you-5, if-2)
+nsubj(you-5, that-3)
+cop(you-5, was-4)
+root(ROOT-0, you-5)
+nsubj(need-8, you-5)
+aux(need-8, might-7)
+rcmod(you-5, need-8)
+det(transplant-13, an-9)
+nn(transplant-13, liver-10)
+conj_or(liver-10, heart-12)
+nn(transplant-13, heart-12)
+dobj(need-8, transplant-13)
+nsubjpass(told-17, you-15)
+auxpass(told-17, were-16)
+conj_and(you-5, told-17)
+nsubj(need-8, told-17)
+complm(couldnt-20, that-18)
+nsubj(couldnt-20, you-19)
+ccomp(told-17, couldnt-20)
+dep(couldnt-20, get-21)
+nsubj(done-23, it-22)
+dep(get-21, done-23)
+mark(didnt-26, because-24)
+nsubj(didnt-26, you-25)
+nsubjpass(left-36, you-25)
+advcl(done-23, didnt-26)
+xcomp(didnt-26, have-27)
+amod(funds-31, enough-28)
+conj_or(enough-28, ANY-30)
+amod(funds-31, ANY-30)
+dobj(have-27, funds-31)
+advmod(have-27, at-32)
+pobj(at-32, all-33)
+auxpass(left-36, was-35)
+advcl(done-23, left-36)
+conj_and(didnt-26, left-36)
+prep_for(left-36, dead-38)
+

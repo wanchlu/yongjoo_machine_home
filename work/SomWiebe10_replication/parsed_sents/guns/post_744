@@ -1,0 +1,135 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)
+        (VP (VB come)
+          (PRT (RP on)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP hear)
+      (PP (IN about)
+        (NP
+          (NP (NNS students))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP
+                (VP (VB carry)
+                  (NP (DT a) (NN gun))
+                  (PP (TO to)
+                    (NP (NN school)))
+                  (ADVP (RB illegally)))
+                (CC and)
+                (VP (VB shut)
+                  (NP (JJ other) (NNS students)))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+ccomp(hear-7, mean-2)
+dep(mean-2, come-3)
+prt(come-3, on-4)
+nsubj(hear-7, you-6)
+root(ROOT-0, hear-7)
+prep_about(hear-7, students-9)
+nsubj(carry-11, students-9)
+nsubj(shut-18, students-9)
+rcmod(students-9, carry-11)
+det(gun-13, a-12)
+dobj(carry-11, gun-13)
+prep_to(carry-11, school-15)
+advmod(carry-11, illegally-16)
+rcmod(students-9, shut-18)
+conj_and(carry-11, shut-18)
+amod(students-20, other-19)
+dobj(shut-18, students-20)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB also))
+    (VP (VBP hear)
+      (PP (IN about)
+        (NP
+          (NP (NNS students))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP
+                (VP (VBP have)
+                  (NP (`` ``) (NN hit) (NNS lists) ('' '')))
+                (CC but)
+                (VP (VBP have)
+                  (ADVP (RB never))
+                  (VP (VBN done)
+                    (NP (NN anything))
+                    (PP (IN about)
+                      (NP (PRP it)))))))))))
+    (. .)))
+
+nsubj(hear-3, You-1)
+advmod(hear-3, also-2)
+root(ROOT-0, hear-3)
+prep_about(hear-3, students-5)
+nsubj(have-7, students-5)
+nsubj(done-15, students-5)
+rcmod(students-5, have-7)
+nn(lists-10, hit-9)
+dobj(have-7, lists-10)
+aux(done-15, have-13)
+neg(done-15, never-14)
+rcmod(students-5, done-15)
+conj_but(have-7, done-15)
+dobj(done-15, anything-16)
+prep_about(done-15, it-18)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Letting)
+        (NP (PRP them))))
+    (VP (VBP carry)
+      (SBAR
+        (S
+          (NP (DT a) (NN gun))
+          (VP (MD would)
+            (ADVP (RB just))
+            (VP (VB make)
+              (NP (PRP it))
+              (SBAR (IN that)
+                (FRAG
+                  (ADJP
+                    (ADJP (RB much) (JJR easier))
+                    (PP (IN for)
+                      (NP (NN someone))))))
+              (S
+                (VP (TO to)
+                  (VP (VB shoot)
+                    (NP (NNS people))
+                    (PP (IN on)
+                      (NP (PRP$ their) (`` ``)
+                        (ADJP (NN hit))
+                        (NN list) ('' '')))))))))))
+    (. .)))
+
+csubj(carry-3, Letting-1)
+dobj(Letting-1, them-2)
+root(ROOT-0, carry-3)
+det(gun-5, a-4)
+nsubj(make-8, gun-5)
+xsubj(shoot-16, gun-5)
+aux(make-8, would-6)
+advmod(make-8, just-7)
+ccomp(carry-3, make-8)
+dobj(make-8, it-9)
+complm(easier-12, that-10)
+advmod(easier-12, much-11)
+dep(make-8, easier-12)
+prep_for(easier-12, someone-14)
+aux(shoot-16, to-15)
+xcomp(make-8, shoot-16)
+dobj(shoot-16, people-17)
+poss(list-22, their-19)
+amod(list-22, hit-21)
+prep_on(shoot-16, list-22)
+

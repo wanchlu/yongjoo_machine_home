@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (S
+      (VP
+        (ADVP (RB never))
+        (VBN been)))
+    (VP (VBD proved)
+      (PP (TO to)
+        (NP (PRP me)))
+      (, ,)
+      (ADVP (RB ever)))
+    (. .)))
+
+neg(been-2, never-1)
+csubj(proved-3, been-2)
+root(ROOT-0, proved-3)
+prep_to(proved-3, me-5)
+advmod(proved-3, ever-7)
+
+(ROOT
+  (S
+    (NP (NN he\/she\/it))
+    (ADVP (RB only))
+    (VP (VBZ exists)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNS minds))
+          (PP (IN of)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP feel)
+                    (SBAR
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP need)
+                          (S
+                            (VP (TO to)
+                              (VP (VB be)
+                                (VP (VBN told)
+                                  (SBAR
+                                    (SBAR
+                                      (WHNP (WP what))
+                                      (S
+                                        (VP (TO to)
+                                          (VP (VB do)))))
+                                    (CC or)
+                                    (SBAR
+                                      (WHNP (WP what))
+                                      (S
+                                        (VP (TO to)
+                                          (VP (VB believe)))))))))))))))))))))
+    (. .)))
+
+nsubj(exists-3, he\/she\/it-1)
+advmod(exists-3, only-2)
+root(ROOT-0, exists-3)
+det(minds-6, the-5)
+prep_in(exists-3, minds-6)
+prep_of(minds-6, those-8)
+nsubj(feel-10, those-8)
+rcmod(those-8, feel-10)
+nsubj(need-12, they-11)
+xsubj(told-15, they-11)
+ccomp(feel-10, need-12)
+aux(told-15, to-13)
+auxpass(told-15, be-14)
+xcomp(need-12, told-15)
+nsubj(do-18, what-16)
+aux(do-18, to-17)
+dep(told-15, do-18)
+nsubj(believe-22, what-20)
+aux(believe-22, to-21)
+dep(told-15, believe-22)
+conj_or(do-18, believe-22)
+

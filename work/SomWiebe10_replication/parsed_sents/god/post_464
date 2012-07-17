@@ -1,0 +1,52 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP what))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB use)
+        (S
+          (VP (TO to)
+            (VP (VB tell)
+              (SBAR
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP
+                      (NP (NNS parts))
+                      (PP (IN of)
+                        (NP (DT the) (NN bible))))
+                    (VP (VBP are)
+                      (ADJP (RB completely) (JJ true)))))
+                (CC and)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (NNS parts))
+                    (VP (VBP are)
+                      (ADVP (RB completely))
+                      (VP (VBN made)
+                        (PRT (RP up))))))))))))
+    (. ?)))
+
+dep(use-4, what-1)
+aux(use-4, do-2)
+nsubj(use-4, you-3)
+xsubj(tell-6, you-3)
+root(ROOT-0, use-4)
+aux(tell-6, to-5)
+xcomp(use-4, tell-6)
+dobj(true-14, what-7)
+nsubj(true-14, parts-8)
+det(bible-11, the-10)
+prep_of(parts-8, bible-11)
+cop(true-14, are-12)
+advmod(true-14, completely-13)
+dep(tell-6, true-14)
+dobj(made-20, what-16)
+nsubjpass(made-20, parts-17)
+auxpass(made-20, are-18)
+advmod(made-20, completely-19)
+dep(tell-6, made-20)
+conj_and(true-14, made-20)
+prt(made-20, up-21)
+

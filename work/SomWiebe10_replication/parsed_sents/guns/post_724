@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP need)
+          (NP
+            (NP (CD one))
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (VBP need)
+                  (NP (CD one)))))))))
+    (, ,)
+    (NP
+      (NP (DT those))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP are)
+            (VP (VBN licensed)
+              (NP
+                (NP (SYM &))
+                (PP (IN of)
+                  (NP (NN age)))))))))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (VP (VBN barred)
+          (PP (IN from)
+            (S
+              (VP (VBG carrying)
+                (PP (IN on)
+                  (NP (NN campus)))))))))))
+
+advmod(need-3, When-1)
+nsubj(need-3, you-2)
+advcl(barred-19, need-3)
+dobj(need-3, one-4)
+nsubj(need-6, you-5)
+rcmod(one-4, need-6)
+dobj(need-6, one-7)
+nsubjpass(licensed-12, those-9)
+nsubjpass(barred-19, those-9)
+auxpass(licensed-12, are-11)
+rcmod(those-9, licensed-12)
+dobj(licensed-12, &-13)
+prep_of(&-13, age-15)
+aux(barred-19, should-16)
+neg(barred-19, not-17)
+auxpass(barred-19, be-18)
+root(ROOT-0, barred-19)
+prepc_from(barred-19, carrying-21)
+prep_on(carrying-21, campus-23)
+

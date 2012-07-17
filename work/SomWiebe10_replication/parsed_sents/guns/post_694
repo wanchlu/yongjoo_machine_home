@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Talk))
+      (PP (IN about)
+        (NP
+          (NP (DT the) (NNS intentions))
+          (PP (IN of)
+            (NP (DT the) (JJ founding) (NNS fathers))))))
+    (VP (VBZ is) (RB all)
+      (ADJP (RB very) (JJ well)))
+    (. .)))
+
+nsubj(well-12, Talk-1)
+det(intentions-4, the-3)
+prep_about(Talk-1, intentions-4)
+det(fathers-8, the-6)
+amod(fathers-8, founding-7)
+prep_of(intentions-4, fathers-8)
+cop(well-12, is-9)
+advmod(well-12, all-10)
+advmod(well-12, very-11)
+root(ROOT-0, well-12)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP
+      (NP (DT the) (NN collateral) (NN damage))
+      (PP (IN of)
+        (NP (JJ American) (NN gun) (NN culture))))
+    (VP (VBZ is)
+      (ADJP (JJ such))
+      (SBAR (IN that)
+        (S
+          (NP (JJ reasonable) (NNS people))
+          (VP (VBP want)
+            (S
+              (VP (TO to)
+                (VP (VB do)
+                  (NP (NN something))
+                  (S
+                    (VP (TO to)
+                      (VP (VB reduce)
+                        (NP (DT the) (NN damage))))))))))))
+    (. .)))
+
+advmod(such-11, However-1)
+det(damage-5, the-3)
+nn(damage-5, collateral-4)
+nsubj(such-11, damage-5)
+amod(culture-9, American-7)
+nn(culture-9, gun-8)
+prep_of(damage-5, culture-9)
+cop(such-11, is-10)
+root(ROOT-0, such-11)
+complm(want-15, that-12)
+amod(people-14, reasonable-13)
+nsubj(want-15, people-14)
+xsubj(do-17, people-14)
+ccomp(such-11, want-15)
+aux(do-17, to-16)
+xcomp(want-15, do-17)
+dobj(do-17, something-18)
+aux(reduce-20, to-19)
+xcomp(do-17, reduce-20)
+det(damage-22, the-21)
+dobj(reduce-20, damage-22)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (VBN surprised)
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (DT the) (NN idea))
+              (PP (IN of)
+                (S
+                  (VP (VBG restricting)
+                    (NP (NNS firearms))))))
+            (VP (VBZ causes)
+              (NP (JJ such) (NN anger)))))))
+    (. .)))
+
+nsubjpass(surprised-3, I-1)
+auxpass(surprised-3, am-2)
+root(ROOT-0, surprised-3)
+complm(causes-10, that-4)
+det(idea-6, the-5)
+nsubj(causes-10, idea-6)
+prepc_of(idea-6, restricting-8)
+dobj(restricting-8, firearms-9)
+ccomp(surprised-3, causes-10)
+amod(anger-12, such-11)
+dobj(causes-10, anger-12)
+

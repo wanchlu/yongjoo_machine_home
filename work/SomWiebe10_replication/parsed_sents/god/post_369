@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ is)
+      (VP (VBN left)
+        (PRT (RP over))
+        (PP (IN from)
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (PRP we))
+              (VP (VBD had)
+                (NP
+                  (NP (DT no) (NNS answers))
+                  (PP (TO to)
+                    (NP (DT these) (NNS questions))))
+                (SBAR (IN so)
+                  (S
+                    (NP (PRP we))
+                    (VP (VBD made)
+                      (NP (NNS answers))
+                      (PRT (RP up)))))))))))
+    (. .)))
+
+nsubjpass(left-3, it-1)
+auxpass(left-3, is-2)
+root(ROOT-0, left-3)
+prt(left-3, over-4)
+advmod(had-8, when-6)
+nsubj(had-8, we-7)
+prepc_from(left-3, had-8)
+det(answers-10, no-9)
+dobj(had-8, answers-10)
+det(questions-13, these-12)
+prep_to(answers-10, questions-13)
+mark(made-16, so-14)
+nsubj(made-16, we-15)
+advcl(had-8, made-16)
+dobj(made-16, answers-17)
+prt(made-16, up-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN idea))
+      (PP (IN of)
+        (NP (DT a) (NN god))))
+    (VP (VBD was)
+      (ADVP
+        (ADVP (RB around) (RB long))
+        (SBAR (IN before)
+          (S
+            (NP (DT the) (NN bible))
+            (VP (VBD were)
+              (ADVP
+                (NP (DT those) (NN gods))
+                (RB all))
+              (VP (VBN made)
+                (PRT (RP up))
+                (ADVP (RB ??))))))))))
+
+det(idea-2, the-1)
+nsubj(was-6, idea-2)
+det(god-5, a-4)
+prep_of(idea-2, god-5)
+root(ROOT-0, was-6)
+advmod(long-8, around-7)
+advmod(was-6, long-8)
+mark(made-16, before-9)
+det(bible-11, the-10)
+nsubjpass(made-16, bible-11)
+auxpass(made-16, were-12)
+det(gods-14, those-13)
+npadvmod(all-15, gods-14)
+advmod(made-16, all-15)
+dep(long-8, made-16)
+prt(made-16, up-17)
+advmod(made-16, ??-18)
+
+(ROOT
+  (FRAG (RB then)
+    (ADVP (RB why)
+      (PP (RB not)
+        (ADVP
+          (NP (CD one))
+          (RBR more))))))
+
+root(ROOT-0, then-1)
+dep(then-1, why-2)
+prep(why-2, not-3)
+npadvmod(more-5, one-4)
+dep(not-3, more-5)
+

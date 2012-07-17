@@ -1,0 +1,190 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (ADVP (RB REALLY))
+        (VP (VBP want)
+          (S
+            (VP (TO to)
+              (VP (VB evaluate)
+                (NP (NNS statistics))))))))
+    (, ,)
+    (VP (VB read)
+      (NP
+        (NP (NNP John) (NNP Lott))
+        (CC or)
+        (NP (NNP Ralph) (NNP Cramer))))
+    (. .)))
+
+mark(want-4, If-1)
+nsubj(want-4, you-2)
+xsubj(evaluate-6, you-2)
+advmod(want-4, REALLY-3)
+advcl(read-9, want-4)
+aux(evaluate-6, to-5)
+xcomp(want-4, evaluate-6)
+dobj(evaluate-6, statistics-7)
+root(ROOT-0, read-9)
+nn(Lott-11, John-10)
+dobj(read-9, Lott-11)
+nn(Cramer-14, Ralph-13)
+dobj(read-9, Cramer-14)
+conj_or(Lott-11, Cramer-14)
+
+(ROOT
+  (S
+    (NP (NNP THEY))
+    (VP (VBP have)
+      (NP (JJ correct) (NNS statistics)))
+    (. .)))
+
+nsubj(have-2, THEY-1)
+root(ROOT-0, have-2)
+amod(statistics-4, correct-3)
+dobj(have-2, statistics-4)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (CD One))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is) (: ;)
+                (NP
+                  (NP (DT The) (JJ actual) (NN number))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS weapons))
+                      (PP (IN in)
+                        (NP (NNP America)))))))))))
+      (VP (VBZ has)
+        (VP (VBN INCREASED)
+          (PP (IN over)
+            (NP (DT the) (JJ past) (CD ten) (NNS years))))))
+    (CC and)
+    (S
+      (NP
+        (NP (DT the) (NN number))
+        (PP (IN of)
+          (NP
+            (NP (JJ violent) (NNS acts))
+            (PP (IN with)
+              (NP (DT a) (NN weapon))))))
+      (VP (VBZ has)
+        (VP (VBN DECREASED))))
+    (. .)))
+
+nsubj(INCREASED-14, One-1)
+nsubj(number-8, which-3)
+cop(number-8, is-4)
+det(number-8, The-6)
+amod(number-8, actual-7)
+prepc_of(One-1, number-8)
+prep_of(number-8, weapons-10)
+prep_in(weapons-10, America-12)
+aux(INCREASED-14, has-13)
+root(ROOT-0, INCREASED-14)
+det(years-19, the-16)
+amod(years-19, past-17)
+num(years-19, ten-18)
+prep_over(INCREASED-14, years-19)
+det(number-22, the-21)
+nsubj(DECREASED-30, number-22)
+amod(acts-25, violent-24)
+prep_of(number-22, acts-25)
+det(weapon-28, a-27)
+prep_with(acts-25, weapon-28)
+aux(DECREASED-30, has-29)
+conj_and(INCREASED-14, DECREASED-30)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (ADVP (RB alone))
+    (VP (VBZ belies)
+      (NP (DT the) (JJ whole) (NN premise)))
+    (. .)))
+
+nsubj(belies-3, That-1)
+advmod(belies-3, alone-2)
+root(ROOT-0, belies-3)
+det(premise-6, the-4)
+amod(premise-6, whole-5)
+dobj(belies-3, premise-6)
+
+(ROOT
+  (SINV
+    (S
+      (NP
+        (NP (DT The) (JJ actual) (NN number))
+        (PP (IN of)
+          (NP
+            (NP (NNS times))
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (NN weapon))
+                (VP (VBZ is)
+                  (VP (VBN used)
+                    (S
+                      (VP (TO to)
+                        (VP (VB prevent)
+                          (NP (DT a) (NN crime))))))))))))
+      (VP (VBZ is)
+        (VP (VBN estimated)
+          (NP
+            (NP
+              (NP
+                (QP (IN between) (CD one) (CD million)
+                  (CC and)
+                  (CD two) (CD million) (NNS times)))
+              (NP (DT a) (NN year)))
+            (CC AND)
+            (NP
+              (NP (JJS most))
+              (PP (IN of)
+                (NP (PRP them))))))))
+    (VP (VBD did) (RB not)
+      (VP (VB require)
+        (NP (NN firing))))
+    (NP (DT the) (NN weapon))
+    (. .)))
+
+det(number-3, The-1)
+amod(number-3, actual-2)
+nsubjpass(estimated-16, number-3)
+prep_of(number-3, times-5)
+complm(used-10, that-6)
+det(weapon-8, a-7)
+nsubjpass(used-10, weapon-8)
+xsubj(prevent-12, weapon-8)
+auxpass(used-10, is-9)
+dep(times-5, used-10)
+aux(prevent-12, to-11)
+xcomp(used-10, prevent-12)
+det(crime-14, a-13)
+dobj(prevent-12, crime-14)
+auxpass(estimated-16, is-15)
+dep(require-32, estimated-16)
+quantmod(times-23, between-17)
+number(times-23, one-18)
+number(times-23, million-19)
+dobj(estimated-16, two-21)
+conj_and(times-23, two-21)
+number(times-23, million-22)
+dobj(estimated-16, times-23)
+det(year-25, a-24)
+dep(times-23, year-25)
+dobj(estimated-16, most-27)
+conj_and(times-23, most-27)
+prep_of(most-27, them-29)
+aux(require-32, did-30)
+neg(require-32, not-31)
+root(ROOT-0, require-32)
+dobj(require-32, firing-33)
+det(weapon-35, the-34)
+nsubj(require-32, weapon-35)
+

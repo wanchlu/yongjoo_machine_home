@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (S
+      (VP (VBG Banning)
+        (NP (JJ semi) (JJ automatic) (NNS weapons))))
+    (VP (MD would)
+      (VP (VB harm)
+        (NP (JJ small) (NNS businesses))))
+    (. .)))
+
+csubj(harm-6, Banning-1)
+amod(weapons-4, semi-2)
+amod(weapons-4, automatic-3)
+dobj(Banning-1, weapons-4)
+aux(harm-6, would-5)
+root(ROOT-0, harm-6)
+amod(businesses-8, small-7)
+dobj(harm-6, businesses-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN ban))
+      (PP (IN on)
+        (NP (JJ semi) (JJ automatic) (NNS weapons))))
+    (VP (MD would)
+      (VP (VB damage)
+        (NP
+          (NP (DT the) (NN revenue))
+          (PP (IN of)
+            (NP (JJ small) (NN business))))))
+    (. .)))
+
+det(ban-2, A-1)
+nsubj(damage-8, ban-2)
+amod(weapons-6, semi-4)
+amod(weapons-6, automatic-5)
+prep_on(ban-2, weapons-6)
+aux(damage-8, would-7)
+root(ROOT-0, damage-8)
+det(revenue-10, the-9)
+dobj(damage-8, revenue-10)
+amod(business-13, small-12)
+prep_of(revenue-10, business-13)
+

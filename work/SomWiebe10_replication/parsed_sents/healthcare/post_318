@@ -1,0 +1,366 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Yes))
+      (PP (IN for)
+        (NP
+          (NP (NNP UHC))
+          (PP (IN for)
+            (NP (PRP it))))))
+    (VP (VBZ benefits)
+      (NP
+        (NP (NN majority))
+        (PP (IN of)
+          (NP (NNS people)))))
+    (. .)))
+
+nsubj(benefits-6, Yes-1)
+prep_for(Yes-1, UHC-3)
+prep_for(UHC-3, it-5)
+root(ROOT-0, benefits-6)
+dobj(benefits-6, majority-7)
+prep_of(majority-7, people-9)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT this) (NN case)))
+    (, ,)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ single) (NN buyer))
+        (PRN (-LRB- -LRB-)
+          (NP (DT the) (NN government))
+          (-RRB- -RRB-))
+        (: ;)
+        (NP
+          (NP (RB hence) (JJ stiff) (NN competition))
+          (PP (IN from)
+            (NP (DT the) (NN seller))))))
+    (. .)))
+
+det(case-3, this-2)
+prep_in(is-6, case-3)
+expl(is-6, there-5)
+root(ROOT-0, is-6)
+det(buyer-9, a-7)
+amod(buyer-9, single-8)
+nsubj(is-6, buyer-9)
+det(government-12, the-11)
+appos(buyer-9, government-12)
+advmod(competition-17, hence-15)
+amod(competition-17, stiff-16)
+dep(buyer-9, competition-17)
+det(seller-20, the-19)
+prep_from(competition-17, seller-20)
+
+(ROOT
+  (S
+    (NP (DT All) (NNS sellers))
+    (VP (MD will)
+      (VP (VB do)
+        (NP (PRP$ their) (JJS best))
+        (S
+          (VP (TO to)
+            (VP (VB improve)
+              (NP (PRP$ their) (NN product))
+              (SBAR (IN in) (NN order)
+                (S
+                  (VP (TO to)
+                    (VP (VB sell))))))))))
+    (. .)))
+
+det(sellers-2, All-1)
+nsubj(do-4, sellers-2)
+aux(do-4, will-3)
+root(ROOT-0, do-4)
+poss(best-6, their-5)
+dobj(do-4, best-6)
+aux(improve-8, to-7)
+xcomp(do-4, improve-8)
+poss(product-10, their-9)
+dobj(improve-8, product-10)
+mark(sell-14, in-11)
+dep(sell-14, order-12)
+aux(sell-14, to-13)
+purpcl(improve-8, sell-14)
+
+(ROOT
+  (S
+    (NP (NNP Pharmaceuticals) (NNS companies))
+    (VP (MD will)
+      (VP (VB develop)
+        (NP
+          (NP (NNS drugs))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP benefit)
+                (NP
+                  (NP (DT the) (JJS most) (NNS people) (, ,))
+                  (PP (IN with)
+                    (NP (JJR less) (NN side) (NNS effects))))))))))
+    (. .)))
+
+nn(companies-2, Pharmaceuticals-1)
+nsubj(develop-4, companies-2)
+aux(develop-4, will-3)
+root(ROOT-0, develop-4)
+dobj(develop-4, drugs-5)
+nsubj(benefit-7, drugs-5)
+rcmod(drugs-5, benefit-7)
+det(people-10, the-8)
+amod(people-10, most-9)
+dobj(benefit-7, people-10)
+amod(effects-15, less-13)
+nn(effects-15, side-14)
+prep_with(people-10, effects-15)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (ADJP (RBR More) (JJ qualified))
+        (NN healthcare) (NNS workers))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN selected)
+            (S
+              (VP (TO to)
+                (VP (VB provide)
+                  (NP (DT the) (NNS services)))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (MD will)
+        (VP (VB cut)
+          (PRT (RP down))
+          (PP (IN on)
+            (NP
+              (NP (NN paperwork))
+              (, ,)
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VB justify)
+                    (NP (DT the) (NNS expenses))
+                    (PP (TO to)
+                      (NP (NN insurance) (NNS companies)))))))))))
+    (. .)))
+
+advmod(qualified-2, More-1)
+amod(workers-4, qualified-2)
+nn(workers-4, healthcare-3)
+nsubjpass(selected-7, workers-4)
+aux(selected-7, will-5)
+auxpass(selected-7, be-6)
+root(ROOT-0, selected-7)
+aux(provide-9, to-8)
+xcomp(selected-7, provide-9)
+det(services-11, the-10)
+dobj(provide-9, services-11)
+nsubj(cut-15, it-13)
+aux(cut-15, will-14)
+conj_and(selected-7, cut-15)
+prt(cut-15, down-16)
+prep_on(cut-15, paperwork-18)
+nsubj(justify-21, paperwork-18)
+rcmod(paperwork-18, justify-21)
+det(expenses-23, the-22)
+dobj(justify-21, expenses-23)
+nn(companies-26, insurance-25)
+prep_to(justify-21, companies-26)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RBR more) (JJ likely)
+          (S
+            (VP (TO to)
+              (VP (VB see)
+                (NP
+                  (NP (DT a) (NN doctor))
+                  (PP (IN for)
+                    (NP (JJ preventive) (NN care))))
+                (PP (IN than)
+                  (S
+                    (VP (VBG seeing)
+                      (PP
+                        (ADVP
+                          (NP (DT a) (NN doctor))
+                          (RBR later))
+                        (IN with)
+                        (NP
+                          (NP (JJ serious) (NN health) (NNS problems))
+                          (, ,)
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBP are)
+                                (NP (DT the)
+                                  (ADJP (RBS most) (JJ expensive)))))))))))))))))
+    (. .)))
+
+nsubj(likely-5, People-1)
+aux(likely-5, would-2)
+cop(likely-5, be-3)
+advmod(likely-5, more-4)
+root(ROOT-0, likely-5)
+aux(see-7, to-6)
+xcomp(likely-5, see-7)
+det(doctor-9, a-8)
+dobj(see-7, doctor-9)
+amod(care-12, preventive-11)
+prep_for(doctor-9, care-12)
+prepc_than(see-7, seeing-14)
+det(doctor-16, a-15)
+npadvmod(later-17, doctor-16)
+advmod(seeing-14, later-17)
+amod(problems-21, serious-19)
+nn(problems-21, health-20)
+prep_with(seeing-14, problems-21)
+nsubj(expensive-27, problems-21)
+cop(expensive-27, are-24)
+det(expensive-27, the-25)
+advmod(expensive-27, most-26)
+rcmod(problems-21, expensive-27)
+
+(ROOT
+  (S
+    (NP (NNP Government))
+    (VP (MD can)
+      (VP (VB save)
+        (NP (JJR more) (NN money))
+        (PP (IN by)
+          (S
+            (VP (VBG paying)
+              (NP
+                (NP
+                  (NP (NN healthcare) (NN provider))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP encourage)
+                        (NP
+                          (ADJP (JJ wellness)
+                            (CC and)
+                            (JJ preventive))
+                          (NN care))
+                        (, ,)
+                        (PP (IN than)
+                          (S
+                            (VP (VBG paying)
+                              (NP (PRP them))
+                              (PP (IN for)
+                                (NP (JJ diagnostic) (NN test))))))))))
+                (CC and)
+                (NP
+                  (NP (NNS procedures))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP are)
+                        (ADJP (JJ useless) (, ,) (JJ painful)
+                          (CC and)
+                          (JJ expensive))))))))))))
+    (. .)))
+
+nsubj(save-3, Government-1)
+aux(save-3, can-2)
+root(ROOT-0, save-3)
+amod(money-5, more-4)
+dobj(save-3, money-5)
+prepc_by(save-3, paying-7)
+nn(provider-9, healthcare-8)
+dobj(paying-7, provider-9)
+nsubj(encourage-11, provider-9)
+rcmod(provider-9, encourage-11)
+amod(care-15, wellness-12)
+conj_and(wellness-12, preventive-14)
+amod(care-15, preventive-14)
+dobj(encourage-11, care-15)
+prepc_than(encourage-11, paying-18)
+dobj(paying-18, them-19)
+amod(test-22, diagnostic-21)
+prep_for(paying-18, test-22)
+conj_and(provider-9, procedures-24)
+nsubj(useless-27, procedures-24)
+nsubj(painful-29, procedures-24)
+nsubj(expensive-31, procedures-24)
+cop(useless-27, are-26)
+rcmod(procedures-24, useless-27)
+rcmod(procedures-24, painful-29)
+conj_and(useless-27, painful-29)
+rcmod(procedures-24, expensive-31)
+conj_and(useless-27, expensive-31)
+
+(ROOT
+  (S
+    (NP (JJ Small) (NNS businesses))
+    (VP (MD can)
+      (VP (VB survive)
+        (S
+          (SBAR (IN for)
+            (S
+              (NP (PRP they))
+              (VP (VBP do) (RB not)
+                (VP (VB need)
+                  (S
+                    (VP (TO to)
+                      (VP (VB pay)
+                        (NP (JJ expensive) (JJ medical) (NN insurance)))))))))
+          (, ,)
+          (NP (CC &))
+          (VP (MD can)
+            (VP (VB hire)
+              (S
+                (NP
+                  (NP (JJR more) (NNS people))
+                  (, ,)
+                  (NP (JJR more) (NN income) (NNS taxes))
+                  (, ,)
+                  (NP
+                    (NP (JJR more) (NN buyer))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS goods))
+                        (, ,)
+                        (ADVP (RB thus)))))
+                  (, ,))
+                (VP (VBG envigorating)
+                  (NP (DT the) (NN economy)))))))))))
+
+amod(businesses-2, Small-1)
+nsubj(survive-4, businesses-2)
+aux(survive-4, can-3)
+root(ROOT-0, survive-4)
+mark(need-9, for-5)
+nsubj(need-9, they-6)
+xsubj(pay-11, they-6)
+aux(need-9, do-7)
+neg(need-9, not-8)
+advcl(hire-18, need-9)
+aux(pay-11, to-10)
+xcomp(need-9, pay-11)
+amod(insurance-14, expensive-12)
+amod(insurance-14, medical-13)
+dobj(pay-11, insurance-14)
+nsubj(hire-18, &-16)
+aux(hire-18, can-17)
+ccomp(survive-4, hire-18)
+amod(people-20, more-19)
+nsubj(envigorating-33, people-20)
+amod(taxes-24, more-22)
+nn(taxes-24, income-23)
+appos(people-20, taxes-24)
+amod(buyer-27, more-26)
+appos(people-20, buyer-27)
+prep_of(buyer-27, goods-29)
+advmod(goods-29, thus-31)
+dep(hire-18, envigorating-33)
+det(economy-35, the-34)
+dobj(envigorating-33, economy-35)
+

@@ -1,0 +1,48 @@
+(ROOT
+  (S
+    (NP (DT Some) (NNS people))
+    (VP (VBP crochet))
+    (: ...)))
+
+det(people-2, Some-1)
+nsubj(crochet-3, people-2)
+root(ROOT-0, crochet-3)
+
+(ROOT
+  (S
+    (NP (DT Some) (NNS people))
+    (VP (VBP build)
+      (NP (NN muscle) (NNS cars)))
+    (: ...)))
+
+det(people-2, Some-1)
+nsubj(build-3, people-2)
+root(ROOT-0, build-3)
+nn(cars-5, muscle-4)
+dobj(build-3, cars-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP need) (RB not)
+      (VP (VB defend)
+        (NP (PRP$ my) (NN hobby))
+        (PP (IN from)
+          (NP
+            (ADJP (JJ arrogant)
+              (CC and)
+              (JJ presumptuous))
+            (NNS sorts)))))
+    (. .)))
+
+nsubj(need-2, I-1)
+root(ROOT-0, need-2)
+neg(need-2, not-3)
+dep(need-2, defend-4)
+poss(hobby-6, my-5)
+dobj(defend-4, hobby-6)
+amod(sorts-11, arrogant-8)
+conj_and(arrogant-8, presumptuous-10)
+amod(sorts-11, presumptuous-10)
+prep_from(defend-4, sorts-11)
+

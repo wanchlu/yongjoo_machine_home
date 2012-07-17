@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (S
+      (NP (DT No) (JJ universal) (NN health) (NN care))
+      (VP (VBZ leads)
+        (PP (TO to)
+          (NP
+            (NP (JJ excessive) (, ,) (JJ expensive) (NN use))
+            (PP (IN of)
+              (NP (DT the) (NNP ER)))))))
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ true))
+      (SBAR (IN that)
+        (S
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (NNS people))
+              (VP (VBP do) (RB not)
+                (VP (VB have)
+                  (NP (NN health) (NN car))))))
+          (, ,)
+          (NP (PRP they))
+          (ADVP (RBR more) (RB frequently))
+          (VP (VBZ utilize)
+            (NP
+              (NP (DT the) (NNP ER))
+              (PP (IN for)
+                (NP (NN care))))))))
+    (. .)))
+
+det(care-4, No-1)
+amod(care-4, universal-2)
+nn(care-4, health-3)
+nsubj(leads-5, care-4)
+dep(true-16, leads-5)
+amod(use-10, excessive-7)
+amod(use-10, expensive-9)
+prep_to(leads-5, use-10)
+det(ER-13, the-12)
+prep_of(use-10, ER-13)
+nsubj(true-16, It-14)
+cop(true-16, is-15)
+root(ROOT-0, true-16)
+complm(utilize-29, that-17)
+advmod(have-22, when-18)
+nsubj(have-22, people-19)
+aux(have-22, do-20)
+neg(have-22, not-21)
+advcl(utilize-29, have-22)
+nn(car-24, health-23)
+dobj(have-22, car-24)
+nsubj(utilize-29, they-26)
+advmod(frequently-28, more-27)
+advmod(utilize-29, frequently-28)
+ccomp(true-16, utilize-29)
+det(ER-31, the-30)
+dobj(utilize-29, ER-31)
+prep_for(ER-31, care-33)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP ER))
+    (VP (VBZ is)
+      (NP (DT a) (JJ costly) (NN alternative)))
+    (. .)))
+
+det(ER-2, The-1)
+nsubj(alternative-6, ER-2)
+cop(alternative-6, is-3)
+det(alternative-6, a-4)
+amod(alternative-6, costly-5)
+root(ROOT-0, alternative-6)
+

@@ -1,0 +1,105 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Temporarily))
+    (VP (VBZ insane))
+    ('' '') (. ?)))
+
+nsubj(insane-3, Temporarily-2)
+root(ROOT-0, insane-3)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (, ,)
+    (SQ (MD might)
+      (NP (PRP I))
+      (VP (VB ask) (, ,)
+        (SBAR
+          (S
+            (VP (VBP are)
+              (S
+                (NP (PRP you))
+                (VP (TO to)
+                  (VP (VB make)
+                    (NP (PDT such) (DT a) (JJ generalized) (NN judgment))
+                    (PP (IN about)
+                      (NP (DT the) (NN college) (NN population)))))))))))
+    (. ?)))
+
+dobj(ask-5, Who-1)
+aux(ask-5, might-3)
+nsubj(ask-5, I-4)
+root(ROOT-0, ask-5)
+ccomp(ask-5, are-7)
+nsubj(make-10, you-8)
+aux(make-10, to-9)
+xcomp(are-7, make-10)
+predet(judgment-14, such-11)
+det(judgment-14, a-12)
+amod(judgment-14, generalized-13)
+dobj(make-10, judgment-14)
+det(population-18, the-16)
+nn(population-18, college-17)
+prep_about(make-10, population-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Individuals))
+      (PP (IN with)
+        (NP (NNP concealed))))
+    (VP (VBP carry)
+      (SBAR
+        (S
+          (NP (NNS permits))
+          (VP (VBP carry)
+            (NP (JJ other) (NNS places))
+            (PP (IN on)
+              (NP
+                (NP (DT a) (JJ daily) (NN basis))
+                (, ,)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ is)
+                      (NP (PRP it))
+                      (PP (IN about)
+                        (S
+                          (VP (VBG stepping)
+                            (PP (IN onto)
+                              (NP
+                                (NP (DT a) (NN college) (NN campus))
+                                (SBAR
+                                  (WHNP (WDT that))
+                                  (S
+                                    (VP (VBZ makes)
+                                      (S
+                                        (NP (DT the))
+                                        (`` ``)
+                                        (ADJP (RB temporarily) (JJ insane))
+                                        ('' '')))))))))))))))))))
+    (. ?)))
+
+nsubj(carry-4, Individuals-1)
+prep_with(Individuals-1, concealed-3)
+root(ROOT-0, carry-4)
+nsubj(carry-6, permits-5)
+ccomp(carry-4, carry-6)
+amod(places-8, other-7)
+dobj(carry-6, places-8)
+det(basis-12, a-10)
+amod(basis-12, daily-11)
+prep_on(carry-6, basis-12)
+nsubj(it-16, basis-12)
+cop(it-16, is-15)
+rcmod(basis-12, it-16)
+prepc_about(it-16, stepping-18)
+det(campus-22, a-20)
+nn(campus-22, college-21)
+prep_onto(stepping-18, campus-22)
+nsubj(makes-24, campus-22)
+rcmod(campus-22, makes-24)
+dep(insane-28, the-25)
+advmod(insane-28, temporarily-27)
+dep(makes-24, insane-28)
+

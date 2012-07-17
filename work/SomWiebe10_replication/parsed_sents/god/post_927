@@ -1,0 +1,125 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (NP (NNP God))
+        (VP (VBD did) (RB not)
+          (VP (VB exist)
+            (NP (PRP we))))))
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB invent)
+              (NP (PRP him) ('' '')))))))
+    (. .)))
+
+mark(exist-6, If-2)
+nsubj(exist-6, God-3)
+aux(exist-6, did-4)
+neg(exist-6, not-5)
+csubj(have-9, exist-6)
+dobj(exist-6, we-7)
+aux(have-9, would-8)
+root(ROOT-0, have-9)
+aux(invent-11, to-10)
+xcomp(have-9, invent-11)
+dobj(invent-11, him-12)
+
+(ROOT
+  (S
+    (SBAR (IN Until)
+      (S
+        (NP (NN mankind))
+        (VP (MD can)
+          (VP (VB duplicate)
+            (NP (PRP$ His) (NNS works))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD will) (RB not)
+      (VP (VB sway)
+        (NP (PRP me))
+        (PP (IN from)
+          (NP (PRP$ my) (NN convistion)))
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (JJ powerful) (NN force))
+                (PP (IN out)
+                  (NP (RB there)))))))))
+    (. .)))
+
+mark(duplicate-4, Until-1)
+nsubj(duplicate-4, mankind-2)
+aux(duplicate-4, can-3)
+advcl(sway-11, duplicate-4)
+poss(works-6, His-5)
+dobj(duplicate-4, works-6)
+nsubj(sway-11, you-8)
+aux(sway-11, will-9)
+neg(sway-11, not-10)
+root(ROOT-0, sway-11)
+dobj(sway-11, me-12)
+poss(convistion-15, my-14)
+prep_from(sway-11, convistion-15)
+complm(is-18, that-16)
+expl(is-18, there-17)
+ccomp(sway-11, is-18)
+det(force-21, a-19)
+amod(force-21, powerful-20)
+nsubj(is-18, force-21)
+prep(force-21, out-22)
+pobj(out-22, there-23)
+
+(ROOT
+  (SQ
+    (VP (VB Consider)
+      (NP
+        (NP (DT this))
+        (, ,)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ happens)
+              (PP (TO to)
+                (NP (PRP you)))
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP (PRP you))
+                  (VP (VBP die)))))))))
+    (. ?)))
+
+root(ROOT-0, Consider-1)
+dobj(Consider-1, this-2)
+nsubj(happens-5, this-2)
+rcmod(this-2, happens-5)
+prep_to(happens-5, you-7)
+advmod(die-10, when-8)
+nsubj(die-10, you-9)
+advcl(happens-5, die-10)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ happens)
+        (PP (TO to)
+          (SBAR
+            (WHNP (WDT whatever))
+            (S
+              (VP (VBZ makes)
+                (S
+                  (NP (PRP you))
+                  (ADJP (JJ unique)))))))))
+    (. ?)))
+
+nsubj(happens-2, What-1)
+root(ROOT-0, happens-2)
+nsubj(makes-5, whatever-4)
+prepc_to(happens-2, makes-5)
+nsubj(unique-7, you-6)
+xcomp(makes-5, unique-7)
+

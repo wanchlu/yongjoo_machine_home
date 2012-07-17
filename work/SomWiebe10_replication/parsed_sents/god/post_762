@@ -1,0 +1,122 @@
+(ROOT
+  (S
+    (S
+      (INTJ (UH Well))
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR (IN while)
+          (S
+            (NP (PRP we))
+            (VP (VBP are)
+              (PP (IN on)
+                (NP (NNP Earth))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD should)
+      (VP (VB enjoy)
+        (NP (PRP$ our) (NN time))
+        (ADVP (RB here))))
+    (. .)))
+
+dep(think-3, Well-1)
+nsubj(think-3, I-2)
+ccomp(enjoy-12, think-3)
+mark(are-6, while-4)
+nsubj(are-6, we-5)
+advcl(think-3, are-6)
+prep_on(are-6, Earth-8)
+nsubj(enjoy-12, we-10)
+aux(enjoy-12, should-11)
+root(ROOT-0, enjoy-12)
+poss(time-14, our-13)
+dobj(enjoy-12, time-14)
+advmod(enjoy-12, here-15)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ does) (RB not)
+      (VP
+        (VP (VB mean)
+          (S
+            (VP (VB go)
+              (ADJP (JJ crazy)))))
+        (CC and)
+        (VP (VB forget)
+          (PP (IN about)
+            (NP (DT the) (NN end))))))
+    (. .)))
+
+advmod(mean-6, However-1)
+nsubj(mean-6, this-3)
+nsubj(forget-10, this-3)
+aux(mean-6, does-4)
+neg(mean-6, not-5)
+root(ROOT-0, mean-6)
+ccomp(mean-6, go-7)
+acomp(go-7, crazy-8)
+conj_and(mean-6, forget-10)
+det(end-13, the-12)
+prep_about(forget-10, end-13)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (DT a) (JJ nice) (NN balance))
+              (PP (IN between)
+                (NP (DT the) (CD two))))))))
+    (. .)))
+
+expl(has-2, There-1)
+xsubj(balance-7, There-1)
+root(ROOT-0, has-2)
+aux(balance-7, to-3)
+cop(balance-7, be-4)
+det(balance-7, a-5)
+amod(balance-7, nice-6)
+xcomp(has-2, balance-7)
+det(two-10, the-9)
+prep_between(balance-7, two-10)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Watch)
+        (NP (DT the) (NN game)))
+      (CC and)
+      (VP
+        (VP (VB enjoy)
+          (NP (PRP it)))
+        (, ,)
+        (CC but)
+        (VP (VBD glance)
+          (PRT (RP over))
+          (PP (IN at)
+            (NP (DT the) (JJ scoreboard) (DT every)))
+          (ADVP (RB once)
+            (PP (IN in)
+              (NP (DT a) (NN while)))))))
+    (. .)))
+
+root(ROOT-0, Watch-1)
+det(game-3, the-2)
+dobj(Watch-1, game-3)
+conj_and(Watch-1, enjoy-5)
+dobj(enjoy-5, it-6)
+conj_and(Watch-1, glance-9)
+conj_but(enjoy-5, glance-9)
+prt(glance-9, over-10)
+det(every-14, the-12)
+amod(every-14, scoreboard-13)
+prep_at(glance-9, every-14)
+advmod(glance-9, once-15)
+det(while-18, a-17)
+prep_in(once-15, while-18)
+

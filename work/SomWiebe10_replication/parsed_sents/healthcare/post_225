@@ -1,0 +1,296 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (ADVP (RB internationally))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (JJR better))
+        (PP (IN than)
+          (NP
+            (NP (NNP US) (NN system) (NNP Paul) (NNP Krugman))
+            (, ,)
+            (NP (NNP Robin) (NNP Wells))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(better-6, care-3)
+advmod(better-6, internationally-4)
+cop(better-6, is-5)
+root(ROOT-0, better-6)
+nn(Krugman-11, US-8)
+nn(Krugman-11, system-9)
+nn(Krugman-11, Paul-10)
+prep_than(better-6, Krugman-11)
+nn(Wells-14, Robin-13)
+appos(Krugman-11, Wells-14)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NNP Health) (NNP Care))
+    (VP
+      (VP (VBZ Crisis))
+      (CC and)
+      (VP
+        (SBAR
+          (WHNP (WP What))
+          (S
+            (VP (TO to)
+              (VP (VB Do)
+                (PP (IN About)
+                  (NP (PRP It) ('' '')))))))))
+    (. .)))
+
+det(Care-4, The-2)
+nn(Care-4, Health-3)
+nsubj(Crisis-5, Care-4)
+root(ROOT-0, Crisis-5)
+nsubj(Do-9, What-7)
+aux(Do-9, to-8)
+conj_and(Crisis-5, Do-9)
+prep_about(Do-9, It-11)
+
+(ROOT
+  (NP
+    (NP (NNP New) (NNP York) (NNP Times) (NNP Review))
+    (PP (IN of)
+      (NP (NNS Books)))
+    (. .)))
+
+nn(Review-4, New-1)
+nn(Review-4, York-2)
+nn(Review-4, Times-3)
+root(ROOT-0, Review-4)
+prep_of(Review-4, Books-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Volume) (CD 53))
+      (, ,)
+      (NP
+        (NP (NNP Number) (CD 5))
+        (NP (NNP March) (CD 23) (, ,) (CD 2006))))
+    (VP (`` ``)
+      (VP (VBZ Single-payer))
+      (CC and)
+      (VP (VBZ beyond)))
+    (. .)))
+
+nsubj(Single-payer-11, Volume-1)
+nsubj(beyond-13, Volume-1)
+num(Volume-1, 53-2)
+appos(Volume-1, Number-4)
+num(Number-4, 5-5)
+dep(Number-4, March-6)
+num(March-6, 23-7)
+num(March-6, 2006-9)
+root(ROOT-0, Single-payer-11)
+conj_and(Single-payer-11, beyond-13)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBP do)
+      (NP (PRP we))
+      (VP (VB know)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NNP US) (NN health) (NN care) (NN system))
+            (VP (VBZ is)
+              (ADJP (RB highly) (JJ inefficient)))))))
+    (. ?)))
+
+advmod(know-4, How-1)
+aux(know-4, do-2)
+nsubj(know-4, we-3)
+root(ROOT-0, know-4)
+complm(inefficient-13, that-5)
+det(system-10, the-6)
+nn(system-10, US-7)
+nn(system-10, health-8)
+nn(system-10, care-9)
+nsubj(inefficient-13, system-10)
+cop(inefficient-13, is-11)
+advmod(inefficient-13, highly-12)
+ccomp(know-4, inefficient-13)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT An) (JJ important) (NN part))
+      (PP (IN of)
+        (NP (DT the) (NN evidence))))
+    (VP (VBZ takes)
+      (NP
+        (NP (DT the) (NN form))
+        (PP (IN of)
+          (NP (JJ international) (NNS comparisons)))))
+    (. .)))
+
+det(part-3, An-1)
+amod(part-3, important-2)
+nsubj(takes-7, part-3)
+det(evidence-6, the-5)
+prep_of(part-3, evidence-6)
+root(ROOT-0, takes-7)
+det(form-9, the-8)
+dobj(takes-7, form-9)
+amod(comparisons-12, international-11)
+prep_of(form-9, comparisons-12)
+
+(ROOT
+  (S
+    (NP (NNP Table) (CD 1))
+    (VP (VBZ compares)
+      (NP
+        (NP (NNP US) (NN health) (NN care))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NNS systems))
+            (PP (IN of)
+              (NP (CD three) (JJ other) (JJ advanced) (NNS countries)))))))
+    (. .)))
+
+nsubj(compares-3, Table-1)
+num(Table-1, 1-2)
+root(ROOT-0, compares-3)
+nn(care-6, US-4)
+nn(care-6, health-5)
+dobj(compares-3, care-6)
+det(systems-9, the-8)
+prep_with(care-6, systems-9)
+num(countries-14, three-11)
+amod(countries-14, other-12)
+amod(countries-14, advanced-13)
+prep_of(systems-9, countries-14)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ clear)
+        (PP (IN from)
+          (NP (DT the) (NN table))))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP United) (NNPS States))
+          (VP (VBZ has)
+            (VP (VBN achieved)
+              (S
+                (NP (NN something))
+                (ADJP (JJ remarkable))))))))
+    (. .)))
+
+nsubj(clear-3, It-1)
+cop(clear-3, 's-2)
+root(ROOT-0, clear-3)
+det(table-6, the-5)
+prep_from(clear-3, table-6)
+complm(achieved-12, that-7)
+det(States-10, the-8)
+nn(States-10, United-9)
+nsubj(achieved-12, States-10)
+aux(achieved-12, has-11)
+ccomp(clear-3, achieved-12)
+nsubj(remarkable-14, something-13)
+xcomp(achieved-12, remarkable-14)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP spend)
+      (ADVP
+        (ADVP (RB far) (RBR more))
+        (PP (IN on)
+          (NP
+            (NP (NN health) (NN care))
+            (PP (IN than)
+              (NP
+                (NP (JJ other) (JJ advanced) (NNS countries))
+                (NP
+                  (NP
+                    (QP (RB almost) (RB twice) (IN as) (JJ much)))
+                  (ADJP (IN per) (NN capita))
+                  (PP (IN as)
+                    (NP (NNP France)))))))
+          (, ,)
+          (ADVP (RB almost))))
+      (NP
+        (NP
+          (QP (CD two)
+            (CC and)
+            (DT a) (NN half))
+          (NNS times))
+        (ADVP (RB as) (RB much)
+          (PP (IN as)
+            (NP (NNP Britain))))))
+    (. .)))
+
+nsubj(spend-2, We-1)
+root(ROOT-0, spend-2)
+advmod(more-4, far-3)
+advmod(spend-2, more-4)
+nn(care-7, health-6)
+prep_on(more-4, care-7)
+amod(countries-11, other-9)
+amod(countries-11, advanced-10)
+prep_than(care-7, countries-11)
+quantmod(much-15, almost-12)
+quantmod(much-15, twice-13)
+quantmod(much-15, as-14)
+dep(countries-11, much-15)
+dep(capita-17, per-16)
+amod(much-15, capita-17)
+prep_as(much-15, France-19)
+advmod(more-4, almost-21)
+number(half-25, two-22)
+conj_and(half-25, a-24)
+quantmod(half-25, a-24)
+num(times-26, a-24)
+num(times-26, half-25)
+dobj(spend-2, times-26)
+advmod(much-28, as-27)
+advmod(times-26, much-28)
+prep_as(much-28, Britain-30)
+
+(ROOT
+  (S (CC Yet)
+    (NP (PRP we))
+    (VP (VBP do)
+      (ADJP
+        (ADJP (RB considerably) (JJR worse))
+        (PP (RB even) (IN than)
+          (NP (DT the)
+            (NAC (NNP British)
+              (PP (IN on)
+                (NP
+                  (NP (JJ basic) (NNS measures))
+                  (PP (IN of)
+                    (NP (NN health) (NN performance)))
+                  (, ,)
+                  (PP (JJ such) (IN as)
+                    (NP (NN life))))))
+            (NN expectancy)
+            (CC and)
+            (NN infant) (NN mortality)))))
+    (. .)))
+
+cc(worse-5, Yet-1)
+nsubj(worse-5, we-2)
+dep(worse-5, do-3)
+advmod(worse-5, considerably-4)
+root(ROOT-0, worse-5)
+advmod(worse-5, even-6)
+det(expectancy-20, the-8)
+dep(expectancy-20, British-9)
+amod(measures-12, basic-11)
+prep_on(British-9, measures-12)
+nn(performance-15, health-14)
+prep_of(measures-12, performance-15)
+prep_such_as(measures-12, life-19)
+prep_than(worse-5, expectancy-20)
+nn(mortality-23, infant-22)
+prep_than(worse-5, mortality-23)
+conj_and(expectancy-20, mortality-23)
+

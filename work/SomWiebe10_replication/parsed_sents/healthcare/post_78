@@ -1,0 +1,170 @@
+(ROOT
+  (SINV
+    (S
+      (NP (NNP Public) (NN option))
+      (VP (VBZ is)
+        (VP (VBN needed)
+          (PP (IN because)
+            (S
+              (VP (VBG regulating)
+                (NP (NNS insurers))))))))
+    (VP (VBZ is)
+      (ADJP (JJ insufficient)))
+    (NP (NNP Paul) (NNP Krugman))
+    (. .)))
+
+nn(option-2, Public-1)
+nsubjpass(needed-4, option-2)
+auxpass(needed-4, is-3)
+dep(insufficient-9, needed-4)
+prepc_because(needed-4, regulating-6)
+dobj(regulating-6, insurers-7)
+cop(insufficient-9, is-8)
+root(ROOT-0, insufficient-9)
+nn(Krugman-11, Paul-10)
+nsubj(insufficient-9, Krugman-11)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (JJ public) (NN option))
+    (PP (IN as)
+      (NP (DT a) (NN signal) ('' '')))
+    (. .)))
+
+det(option-4, The-2)
+amod(option-4, public-3)
+root(ROOT-0, option-4)
+dep(option-4, as-5)
+det(signal-7, a-6)
+pobj(as-5, signal-7)
+
+(ROOT
+  (NP (NNP New) (NNP York) (NNP Times) (. .)))
+
+nn(Times-3, New-1)
+nn(Times-3, York-2)
+root(ROOT-0, Times-3)
+
+(ROOT
+  (NP
+    (NP (NNP August) (CD 17) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP (DT a) (JJ workable) (NN system))
+            (PP (IN without)
+              (NP (DT the) (JJ public) (NN option))))))
+      (, ,)
+      (NP (PRP you))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP
+                (NP (JJ effective) (NN regulation))
+                (PP (IN of)
+                  (NP (DT the) (NNS insurers)))))))))
+    (. .)))
+
+root(ROOT-0, August-1)
+num(August-1, 17-2)
+num(August-1, 2009-4)
+aux(have-8, to-7)
+purpcl(need-18, have-8)
+det(system-11, a-9)
+amod(system-11, workable-10)
+dobj(have-8, system-11)
+det(option-15, the-13)
+amod(option-15, public-14)
+prep_without(have-8, option-15)
+nsubj(need-18, you-17)
+xsubj(have-20, you-17)
+dep(August-1, need-18)
+aux(have-20, to-19)
+xcomp(need-18, have-20)
+amod(regulation-22, effective-21)
+dobj(have-20, regulation-22)
+det(insurers-25, the-24)
+prep_of(regulation-22, insurers-25)
+
+(ROOT
+  (S
+    (PP (VBN Given)
+      (NP
+        (NP (DT the) (NNS realities))
+        (PP (IN of)
+          (NP (PRP$ our) (JJ money-dominated) (NNS politics)))))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB really))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB worry)
+            (SBAR (IN whether)
+              (S
+                (NP (DT that))
+                (VP (MD can)
+                  (VP (VB be)
+                    (VP (VBN done)
+                      (SBAR
+                        (WHNP (WDT which))
+                        (S
+                          (VP (VBZ is)
+                            (NP (DT a) (NN reason)
+                              (S
+                                (VP (TO to)
+                                  (VP (VB have)
+                                    (NP
+                                      (NP (DT a)
+                                        (ADJP
+                                          (ADJP (JJR more))
+                                          (CC or)
+                                          (ADJP (RBR less) (JJ automatic)))
+                                        (NN mechanism))
+                                      (PRN (-LRB- -LRB-)
+                                        (NP (JJ public) (NN insurance))
+                                        (-RRB- -RRB-))
+                                      (PP (IN for)
+                                        (S
+                                          (VP (VBG disciplining)
+                                            (NP (DT the) (NN industry))))))))))))))))))))))
+    (. .)))
+
+prep(have-11, Given-1)
+det(realities-3, the-2)
+dep(Given-1, realities-3)
+poss(politics-7, our-5)
+amod(politics-7, money-dominated-6)
+prep_of(realities-3, politics-7)
+nsubj(have-11, you-9)
+xsubj(worry-13, you-9)
+advmod(have-11, really-10)
+root(ROOT-0, have-11)
+aux(worry-13, to-12)
+xcomp(have-11, worry-13)
+complm(done-18, whether-14)
+nsubjpass(done-18, that-15)
+aux(done-18, can-16)
+auxpass(done-18, be-17)
+ccomp(worry-13, done-18)
+nsubj(reason-22, which-19)
+cop(reason-22, is-20)
+det(reason-22, a-21)
+ccomp(done-18, reason-22)
+aux(have-24, to-23)
+infmod(reason-22, have-24)
+det(mechanism-30, a-25)
+amod(mechanism-30, more-26)
+advmod(automatic-29, less-28)
+conj_or(more-26, automatic-29)
+amod(mechanism-30, automatic-29)
+dobj(have-24, mechanism-30)
+amod(insurance-33, public-32)
+appos(mechanism-30, insurance-33)
+prepc_for(mechanism-30, disciplining-36)
+det(industry-38, the-37)
+dobj(disciplining-36, industry-38)
+

@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP I))
+        (VP (VBP preach))))
+    (NP (PRP I))
+    (VP (VBP do)
+      (NP
+        (NP (NN step))
+        (PP (IN on)
+          (NP (NNS toes)))))
+    (. .)))
+
+advmod(preach-3, When-1)
+nsubj(preach-3, I-2)
+advcl(do-5, preach-3)
+nsubj(do-5, I-4)
+root(ROOT-0, do-5)
+dobj(do-5, step-6)
+prep_on(step-6, toes-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (S
+        (NP
+          (NP (DT the) (NNS druggies))
+          (CC and)
+          (NP (DT some)
+            (UCP
+              (ADJP (JJ crazies))
+              (CC and)
+              (RB not)
+              (ADJP (RB very) (RB many) (JJ responsible)))
+            (NNS people)))
+        (VP (VBG setting)
+          (PP (IN in)
+            (NP (NN church))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+det(druggies-4, the-3)
+nsubj(setting-14, druggies-4)
+det(people-13, some-6)
+amod(people-13, crazies-7)
+conj_and(crazies-7, not-9)
+neg(crazies-7, not-9)
+amod(people-13, not-9)
+advmod(responsible-12, very-10)
+advmod(responsible-12, many-11)
+dep(crazies-7, responsible-12)
+conj_and(druggies-4, people-13)
+nsubj(setting-14, people-13)
+ccomp(have-2, setting-14)
+prep_in(setting-14, church-16)
+
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (NN god))
+        (PP (IN on)
+          (NP (PRP$ my) (NN side)))))
+    (NP (PRP I))
+    (VP (MD will)
+      (VP (VB keep)
+        (NP (NN preaching))))
+    (. .)))
+
+prep_with(keep-8, god-2)
+poss(side-5, my-4)
+prep_on(god-2, side-5)
+nsubj(keep-8, I-6)
+aux(keep-8, will-7)
+root(ROOT-0, keep-8)
+dobj(keep-8, preaching-9)
+

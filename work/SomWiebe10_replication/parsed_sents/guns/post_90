@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP DC) (NN handgun) (NN ban))
+    (VP (VBZ is)
+      (VP (VBN made)
+        (ADVP (RB ineffectual))
+        (PP (IN by)
+          (NP
+            (NP (JJ legal) (NNS purchases))
+            (PP (IN in)
+              (NP (NNP Maryland)
+                (CC and)
+                (NNP Virginia)))))))
+    (. .)))
+
+det(ban-4, The-1)
+nn(ban-4, DC-2)
+nn(ban-4, handgun-3)
+nsubjpass(made-6, ban-4)
+auxpass(made-6, is-5)
+root(ROOT-0, made-6)
+advmod(made-6, ineffectual-7)
+amod(purchases-10, legal-9)
+agent(made-6, purchases-10)
+prep_in(purchases-10, Maryland-12)
+prep_in(purchases-10, Virginia-14)
+conj_and(Maryland-12, Virginia-14)
+
+(ROOT
+  (S
+    (NP (NNP DC))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB very) (JJ small))
+        (CC and)
+        (ADJP (RB very) (JJ close)))
+      (PP (TO to)
+        (NP (NNP Maryland)
+          (CC and)
+          (NNP Virginia)))
+      (, ,)
+      (S
+        (VP (VBG making)
+          (S
+            (NP (PRP it))
+            (ADJP (RB very) (JJ easy)
+              (PP (IN for)
+                (NP (NNS people)
+                  (S
+                    (VP (TO to)
+                      (VP
+                        (VP
+                          (ADVP (RB legally))
+                          (VB purchase)
+                          (NP
+                            (NP (NNS guns))
+                            (ADVP (IN outside))
+                            (PP (IN of)
+                              (NP (NNP DC)))))
+                        (CC and)
+                        (VP (VB bring)
+                          (NP (PRP them))
+                          (PP (IN in)))))))))))))
+    (. .)))
+
+nsubj(small-4, DC-1)
+nsubj(close-7, DC-1)
+cop(small-4, is-2)
+advmod(small-4, very-3)
+root(ROOT-0, small-4)
+advmod(close-7, very-6)
+conj_and(small-4, close-7)
+prep_to(small-4, Maryland-9)
+prep_to(small-4, Virginia-11)
+conj_and(Maryland-9, Virginia-11)
+xcomp(small-4, making-13)
+nsubj(easy-16, it-14)
+advmod(easy-16, very-15)
+xcomp(making-13, easy-16)
+prep_for(easy-16, people-18)
+aux(purchase-21, to-19)
+advmod(purchase-21, legally-20)
+infmod(people-18, purchase-21)
+dobj(purchase-21, guns-22)
+prep_outside_of(guns-22, DC-25)
+infmod(people-18, bring-27)
+conj_and(purchase-21, bring-27)
+dobj(bring-27, them-28)
+prep(bring-27, in-29)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB also))
+    (VP (VBZ makes)
+      (S
+        (NP (PRP it))
+        (ADJP (RB very) (JJ easy)
+          (PP (IN for)
+            (NP (JJ blackmarket) (NNS sales))))
+        (S
+          (VP (TO to)
+            (VP (VB occur))))))
+    (. .)))
+
+nsubj(makes-3, It-1)
+advmod(makes-3, also-2)
+root(ROOT-0, makes-3)
+nsubj(occur-11, it-4)
+advmod(easy-6, very-5)
+dep(occur-11, easy-6)
+amod(sales-9, blackmarket-8)
+prep_for(easy-6, sales-9)
+aux(occur-11, to-10)
+xcomp(makes-3, occur-11)
+

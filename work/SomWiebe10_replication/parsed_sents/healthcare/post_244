@@ -1,0 +1,144 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ makes)
+      (S
+        (NP (DT a) (JJ centralized) (JJ national) (NN database))
+        (ADJP (JJ possible))
+        ('' '')
+        (SBAR (IN Should)
+          (S
+            (NP (DT the) (NN Government))
+            (VP (VB Provide)
+              (NP
+                (NP (NNP Free) (NNP Universal) (NNP Health) (NNP Care))
+                (PP (IN for)
+                  (NP (DT All) (NNPS Americans)))))))))
+    (. ?)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(makes-4, care-3)
+root(ROOT-0, makes-4)
+det(database-8, a-5)
+amod(database-8, centralized-6)
+amod(database-8, national-7)
+nsubj(Provide-14, database-8)
+dep(Provide-14, possible-9)
+mark(Provide-14, Should-11)
+det(Government-13, the-12)
+nsubj(Provide-14, Government-13)
+xcomp(makes-4, Provide-14)
+nn(Care-18, Free-15)
+nn(Care-18, Universal-16)
+nn(Care-18, Health-17)
+dobj(Provide-14, Care-18)
+det(Americans-21, All-20)
+prep_for(Care-18, Americans-21)
+
+(ROOT
+  (S
+    (S
+      (VP (VBN Balanced)
+        (S
+          (NP (NNP Politics.org))
+          (`` ``)
+          (NP (PRP We)))))
+    (VP (MD can)
+      (VP (VB develop)
+        (NP
+          (NP (DT a) (JJ centralized) (JJ national) (NN database))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ makes)
+                (S
+                  (NP (NN diagnosis)
+                    (CC and)
+                    (NN treatment))
+                  (ADJP (RBR easier)))))))
+        (PP (IN for)
+          (NP (NNS doctors)))))
+    (. .)))
+
+csubj(develop-6, Balanced-1)
+dep(We-4, Politics.org-2)
+dep(Balanced-1, We-4)
+aux(develop-6, can-5)
+root(ROOT-0, develop-6)
+det(database-10, a-7)
+amod(database-10, centralized-8)
+amod(database-10, national-9)
+dobj(develop-6, database-10)
+nsubj(makes-12, database-10)
+rcmod(database-10, makes-12)
+nsubj(easier-16, diagnosis-13)
+conj_and(diagnosis-13, treatment-15)
+nsubj(easier-16, treatment-15)
+xcomp(makes-12, easier-16)
+prep_for(develop-6, doctors-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most) (NNS doctor) (POS 's))
+      (NNS offices))
+    (VP (VBP maintain)
+      (NP (DT a) (JJ separate) (NN record-keeping) (NN system)))
+    (. .)))
+
+amod(doctor-2, Most-1)
+poss(offices-4, doctor-2)
+nsubj(maintain-5, offices-4)
+root(ROOT-0, maintain-5)
+det(system-9, a-6)
+amod(system-9, separate-7)
+nn(system-9, record-keeping-8)
+dobj(maintain-5, system-9)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP you))
+          (ADVP (RB always))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB fill)
+                  (PRT (RP out))
+                  (NP
+                    (NP (DT a) (JJ lengthy) (NN health) (NN history))
+                    (SBAR
+                      (WHADVP (WRB whenever))
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP go)
+                          (PP (TO to)
+                            (NP (DT a) (JJ new) (NN physician))))))))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+advmod(have-6, why-3)
+nsubj(have-6, you-4)
+xsubj(fill-8, you-4)
+advmod(have-6, always-5)
+advcl(is-2, have-6)
+aux(fill-8, to-7)
+xcomp(have-6, fill-8)
+prt(fill-8, out-9)
+det(history-13, a-10)
+amod(history-13, lengthy-11)
+nn(history-13, health-12)
+dobj(fill-8, history-13)
+advmod(go-16, whenever-14)
+nsubj(go-16, you-15)
+dep(history-13, go-16)
+det(physician-20, a-18)
+amod(physician-20, new-19)
+prep_to(go-16, physician-20)
+

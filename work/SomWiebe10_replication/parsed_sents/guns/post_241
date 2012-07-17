@@ -1,0 +1,35 @@
+(ROOT
+  (S (IN So)
+    (S
+      (NP (DT the) (NN robber))
+      (VP (VBZ breaks)
+        (SBAR (IN in)
+          (PRN (, ,)
+            (SINV
+              (VP (VBZ shoots))
+              (NP (PRP$ your) (NN dog)))
+            (, ,))
+          (S
+            (NP (PRP you))
+            (VP (VBP 're)
+              (VP (VBN unarmed)))))))
+    (: ;)
+    (S
+      (NP (RB now))
+      (NP (WDT what)))
+    (. ?)))
+
+dep(breaks-4, So-1)
+det(robber-3, the-2)
+nsubj(breaks-4, robber-3)
+root(ROOT-0, breaks-4)
+mark(unarmed-13, in-5)
+dep(unarmed-13, shoots-7)
+poss(dog-9, your-8)
+nsubj(shoots-7, dog-9)
+nsubjpass(unarmed-13, you-11)
+auxpass(unarmed-13, 're-12)
+advcl(breaks-4, unarmed-13)
+dep(what-16, now-15)
+parataxis(breaks-4, what-16)
+

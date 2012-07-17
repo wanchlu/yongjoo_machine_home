@@ -1,0 +1,41 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT this))
+        (NP (DT a) (NN debate))))
+    (. ?)))
+
+advmod(is-2, How-1)
+root(ROOT-0, is-2)
+nsubj(is-2, this-3)
+det(debate-5, a-4)
+dep(this-3, debate-5)
+
+(ROOT
+  (S
+    (NP (NNP Am) (NNP i))
+    (VP (VBD meant)
+      (S
+        (VP (TO to)
+          (VP (VB argue)
+            (PP (IN with)
+              (NP (PRP myself)))))))
+    (. ?)))
+
+nn(i-2, Am-1)
+nsubj(meant-3, i-2)
+xsubj(argue-5, i-2)
+root(ROOT-0, meant-3)
+aux(argue-5, to-4)
+xcomp(meant-3, argue-5)
+prep_with(argue-5, myself-7)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Anyway))
+    (: ...)))
+
+root(ROOT-0, Anyway-1)
+

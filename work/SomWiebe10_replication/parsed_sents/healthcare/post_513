@@ -1,0 +1,83 @@
+(ROOT
+  (NP (NNP #originalTopic) (NNP =) (NNP So_you_still_want_Nationalized_Health_Care)))
+
+nn(So_you_still_want_Nationalized_Health_Care-3, #originalTopic-1)
+nn(So_you_still_want_Nationalized_Health_Care-3, =-2)
+root(ROOT-0, So_you_still_want_Nationalized_Health_Care-3)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP it))
+        (VP (VBZ 's)
+          (PP (IN about)
+            (NP (NN entertainment) (NN value))))))
+    (, ,)
+    (WHADVP (WRB when))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB start)
+              (S
+                (VP (VBG being)
+                  (ADJP (JJ entertaining)))))))))
+    (. ?)))
+
+mark('s-3, If-1)
+nsubj('s-3, it-2)
+advcl(going-11, 's-3)
+nn(value-6, entertainment-5)
+prep_about('s-3, value-6)
+advmod(going-11, when-8)
+aux(going-11, are-9)
+nsubj(going-11, you-10)
+xsubj(start-13, you-10)
+root(ROOT-0, going-11)
+aux(start-13, to-12)
+xcomp(going-11, start-13)
+cop(entertaining-15, being-14)
+xcomp(start-13, entertaining-15)
+
+(ROOT
+  (NP (NNP -LRB-) (NNP Haha) (. .)))
+
+
+(ROOT
+  (SQ
+    (VP (VB See)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP I))
+          (VP (VBD did)
+            (ADVP (RB there))))))
+    (. ?)))
+
+root(ROOT-0, See-1)
+dobj(did-4, what-2)
+nsubj(did-4, I-3)
+ccomp(See-1, did-4)
+advmod(did-4, there-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD implied)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP (VBP 're) (RB not)
+            (ADJP (JJ funny))))))
+    (. .) (-RRB- -RRB-)))
+
+nsubj(implied-2, I-1)
+root(ROOT-0, implied-2)
+complm(funny-7, that-3)
+nsubj(funny-7, you-4)
+cop(funny-7, 're-5)
+neg(funny-7, not-6)
+ccomp(implied-2, funny-7)
+

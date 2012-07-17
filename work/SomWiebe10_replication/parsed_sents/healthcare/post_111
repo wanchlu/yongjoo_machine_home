@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NNP healthcare))
+    (VP (VBZ helps)
+      (VP (VB foster)
+        (NP (JJR greater) (NN equality))
+        (PP (IN across)
+          (NP (NNS classes)))))
+    (. .)))
+
+nn(healthcare-2, Universal-1)
+nsubj(helps-3, healthcare-2)
+root(ROOT-0, helps-3)
+xcomp(helps-3, foster-4)
+amod(equality-6, greater-5)
+dobj(foster-4, equality-6)
+prep_across(foster-4, classes-8)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP United) (NNPS States)))
+    (, ,)
+    (NP (DT the) (JJ poor))
+    (ADVP (RB commonly))
+    (VP (MD can) (RB not)
+      (VP (VB afford)
+        (NP (NN health) (NN care))))
+    (. .)))
+
+det(States-4, the-2)
+nn(States-4, United-3)
+prep_in(afford-11, States-4)
+det(poor-7, the-6)
+nsubj(afford-11, poor-7)
+advmod(afford-11, commonly-8)
+aux(afford-11, can-9)
+neg(afford-11, not-10)
+root(ROOT-0, afford-11)
+nn(care-13, health-12)
+dobj(afford-11, care-13)
+
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ helps)
+      (S
+        (NP (PRP them))
+        (VP (VB get)
+          (NP (DT the) (NN care))
+          (SBAR (IN that)
+            (S
+              (NP (PRP they))
+              (VP (VBP need)))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(helps-4, care-3)
+root(ROOT-0, helps-4)
+nsubj(get-6, them-5)
+ccomp(helps-4, get-6)
+det(care-8, the-7)
+dobj(get-6, care-8)
+complm(need-11, that-9)
+nsubj(need-11, they-10)
+ccomp(get-6, need-11)
+
+(ROOT
+  (S
+    (PP (IN Without)
+      (NP (NN health) (NN care)))
+    (, ,)
+    (NP (DT the) (JJ poor))
+    (VP
+      (VP (VBP are)
+        (ADJP (RBR more) (JJ vulnerable)))
+      (CC and)
+      (VP (VBP have)
+        (NP
+          (NP (DT a) (JJR harder) (NN time))
+          (VP (VBG achieving)
+            (NP (PRP$ their) (NNS goals))))))
+    (. .)))
+
+nn(care-3, health-2)
+prep_without(vulnerable-9, care-3)
+det(poor-6, the-5)
+nsubj(vulnerable-9, poor-6)
+nsubj(have-11, poor-6)
+cop(vulnerable-9, are-7)
+advmod(vulnerable-9, more-8)
+root(ROOT-0, vulnerable-9)
+conj_and(vulnerable-9, have-11)
+det(time-14, a-12)
+amod(time-14, harder-13)
+dobj(have-11, time-14)
+partmod(time-14, achieving-15)
+poss(goals-17, their-16)
+dobj(achieving-15, goals-17)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ violates)
+      (NP (PRP$ their) (NN right))
+      (PP (TO to)
+        (NP (JJ equal) (NN opportunity))))
+    (. .)))
+
+nsubj(violates-2, This-1)
+root(ROOT-0, violates-2)
+poss(right-4, their-3)
+dobj(violates-2, right-4)
+amod(opportunity-7, equal-6)
+prep_to(violates-2, opportunity-7)
+

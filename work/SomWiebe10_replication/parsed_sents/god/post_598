@@ -1,0 +1,47 @@
+(ROOT
+  (S (: ...)
+    (NP
+      (NP (CD one) (NN moment))
+      (PP (IN before)
+        (NP (PRP he))))
+    (VP (VBZ calls)
+      (S
+        (NP (PRP you))
+        (NP (DT a) (NN heretic))))
+    (. .)))
+
+num(moment-3, one-2)
+nsubj(calls-6, moment-3)
+prep_before(moment-3, he-5)
+root(ROOT-0, calls-6)
+nsubj(heretic-9, you-7)
+det(heretic-9, a-8)
+xcomp(calls-6, heretic-9)
+
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (INTJ (UH well))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would) (RB rather)
+      (VP (VB be)
+        (ADJP
+          (ADVP (NN cursed) (IN than))
+          (VBN blessed)
+          (PP (IN by)
+            (NP (DT a) (NN priest))))))
+    (. .)))
+
+dep(blessed-10, Oh-1)
+dep(blessed-10, well-2)
+nsubjpass(blessed-10, I-4)
+aux(blessed-10, would-5)
+advmod(blessed-10, rather-6)
+auxpass(blessed-10, be-7)
+dep(than-9, cursed-8)
+advmod(blessed-10, than-9)
+root(ROOT-0, blessed-10)
+det(priest-13, a-12)
+agent(blessed-10, priest-13)
+

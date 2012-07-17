@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Universal) (NN health) (NN care))
+      (PP (IN in)
+        (NP (DT the) (NNP US))))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (`` ``) (NN necessity) ('' '')))
+    (. .)))
+
+amod(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(necessity-11, care-3)
+det(US-6, the-5)
+prep_in(care-3, US-6)
+cop(necessity-11, is-7)
+neg(necessity-11, not-8)
+det(necessity-11, a-9)
+root(ROOT-0, necessity-11)
+
+(ROOT
+  (S
+    (NP (NNP Health) (NN care))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (NN right)))
+    (. .)))
+
+nn(care-2, Health-1)
+nsubj(right-6, care-2)
+cop(right-6, is-3)
+neg(right-6, not-4)
+det(right-6, a-5)
+root(ROOT-0, right-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is) (, ,)
+      (ADVP (RB therefore))
+      (, ,)
+      (ADJP (RB not) (`` ``) (JJ necessary) ('' ''))
+      (SBAR (IN for)
+        (S
+          (NP (DT the) (NN government))
+          (VP (TO to)
+            (VP (VB provide)
+              (NP (JJ universal) (NN health) (NN care)))))))
+    (. .)))
+
+nsubj(necessary-8, It-1)
+cop(necessary-8, is-2)
+advmod(necessary-8, therefore-4)
+neg(necessary-8, not-6)
+root(ROOT-0, necessary-8)
+mark(provide-14, for-10)
+det(government-12, the-11)
+nsubj(provide-14, government-12)
+aux(provide-14, to-13)
+advcl(necessary-8, provide-14)
+xcomp(necessary-8, provide-14)
+amod(care-17, universal-15)
+nn(care-17, health-16)
+dobj(provide-14, care-17)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ public) (NN plan))
+    (, ,)
+    (ADVP (RB subsequently))
+    (, ,)
+    (VP (VBZ is) (RB not)
+      (NP
+        (NP (DT a) (`` ``) (NN necessity) ('' ''))
+        (, ,)
+        (NP
+          (NP (NN in-so-far))
+          (SBAR (IN as)
+            (S
+              (NP (PRP it))
+              (VP (MD may)
+                (VP (VB offer)
+                  (NP (JJ universal) (NN coverage)))))))))
+    (. .)))
+
+det(plan-3, A-1)
+amod(plan-3, public-2)
+nsubj(necessity-11, plan-3)
+advmod(necessity-11, subsequently-5)
+cop(necessity-11, is-7)
+neg(necessity-11, not-8)
+det(necessity-11, a-9)
+root(ROOT-0, necessity-11)
+appos(necessity-11, in-so-far-14)
+mark(offer-18, as-15)
+nsubj(offer-18, it-16)
+aux(offer-18, may-17)
+dep(in-so-far-14, offer-18)
+amod(coverage-20, universal-19)
+dobj(offer-18, coverage-20)
+

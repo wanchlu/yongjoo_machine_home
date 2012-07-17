@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (JJ drunk) (NN kid))
+      (PP (IN with)
+        (NP (DT a) (NN permit))))
+    (VP (MD will)
+      (VP
+        (VP (VB get)
+          (PP (IN in)
+            (NP
+              (NP (DT an) (NN argument))
+              (PP (IN with)
+                (NP
+                  (NP (DT another) (NN kid))
+                  (PP (IN at)
+                    (NP (DT a) (NN party))))))))
+        (CC and)
+        (VP (VB shoot)
+          (NP (PRP them)))))
+    (. .)))
+
+det(kid-3, a-1)
+amod(kid-3, drunk-2)
+nsubj(get-8, kid-3)
+nsubj(shoot-19, kid-3)
+det(permit-6, a-5)
+prep_with(kid-3, permit-6)
+aux(get-8, will-7)
+root(ROOT-0, get-8)
+det(argument-11, an-10)
+prep_in(get-8, argument-11)
+det(kid-14, another-13)
+prep_with(argument-11, kid-14)
+det(party-17, a-16)
+prep_at(kid-14, party-17)
+conj_and(get-8, shoot-19)
+dobj(shoot-19, them-20)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN idea))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (RB only) (DT the) (JJS most))
+            (ADJP (JJ trustworthy)
+              (CC and)
+              (JJ responsible)))
+          (VP (MD will)
+            (VP (VB get)
+              (NP (NNS permits)))))))
+    (VP (VBZ is)
+      (NP (JJ wishful) (NN thinking)))
+    (. .)))
+
+det(idea-2, The-1)
+nsubj(thinking-15, idea-2)
+complm(get-11, that-3)
+advmod(most-6, only-4)
+det(most-6, the-5)
+nsubj(get-11, most-6)
+amod(most-6, trustworthy-7)
+amod(most-6, responsible-9)
+conj_and(trustworthy-7, responsible-9)
+aux(get-11, will-10)
+dep(idea-2, get-11)
+dobj(get-11, permits-12)
+cop(thinking-15, is-13)
+amod(thinking-15, wishful-14)
+root(ROOT-0, thinking-15)
+

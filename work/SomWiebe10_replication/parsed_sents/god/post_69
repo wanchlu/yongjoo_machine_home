@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (S
+      (VP (VB Remember)
+        (NP (DT the) (JJ old) (NN testament))
+        (PP (IN in)
+          (NP (DT the) (NNP Bible)))))
+    (VP (VBZ uses)
+      (NP
+        (NP (DT the) (NN word) (NN Elohim))
+        (PP (IN in)
+          (NP (JJ ancient) (NN hebrew)))))
+    (. .)))
+
+csubj(uses-8, Remember-1)
+det(testament-4, the-2)
+amod(testament-4, old-3)
+dobj(Remember-1, testament-4)
+det(Bible-7, the-6)
+prep_in(Remember-1, Bible-7)
+root(ROOT-0, uses-8)
+det(Elohim-11, the-9)
+nn(Elohim-11, word-10)
+dobj(uses-8, Elohim-11)
+amod(hebrew-14, ancient-13)
+prep_in(Elohim-11, hebrew-14)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (NP (NNP Psalms) (CD 82:1,6))
+    (VP (VBP talk)
+      (PP (IN about) (`` ``)
+        (NP (NNS gods))))
+    (. .)))
+
+prep_in(talk-5, fact-2)
+nsubj(talk-5, Psalms-3)
+num(Psalms-3, 82:1,6-4)
+root(ROOT-0, talk-5)
+prep_about(talk-5, gods-8)
+
+(ROOT
+  (S ('' '')
+    (S (CC But)
+      (SBAR (IN if)
+        (S
+          (NP (PRP we))
+          (VP (VBP talk)
+            (NP (RB about) (DT the)))))
+      (VP (VBP Cause)
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN Creation))
+            (PP (IN of)
+              (NP (DT the) (NNP Universe)))))))
+    (, ,)
+    (S
+      (INTJ (UH yes))
+      (NP (NNP God) (DT the) (NNP Father))
+      (VP (VBZ is)
+        (NP (PRP He))))
+    (. .)))
+
+cc(Cause-8, But-2)
+mark(talk-5, if-3)
+nsubj(talk-5, we-4)
+csubj(Cause-8, talk-5)
+advmod(the-7, about-6)
+dobj(talk-5, the-7)
+root(ROOT-0, Cause-8)
+det(Creation-11, the-10)
+prep_of(Cause-8, Creation-11)
+det(Universe-14, the-13)
+prep_of(Creation-11, Universe-14)
+dep(He-21, yes-16)
+nn(Father-19, God-17)
+det(Father-19, the-18)
+nsubj(He-21, Father-19)
+cop(He-21, is-20)
+ccomp(Cause-8, He-21)
+

@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Germany) (, ,) (NNP France) (, ,) (NNP UK) (, ,))
+      (CC and)
+      (NP (NNP Japan)))
+    (RB all)
+    (VP (VBP are)
+      (NP
+        (NP (PDT half) (DT the) (NN size))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NNP US))
+            (CC or)
+            (NP (JJR smaller))))))
+    (. .)))
+
+nn(UK-5, Germany-1)
+appos(UK-5, France-3)
+nsubj(size-13, UK-5)
+conj_and(UK-5, Japan-8)
+nsubj(size-13, Japan-8)
+advmod(size-13, all-9)
+cop(size-13, are-10)
+predet(size-13, half-11)
+det(size-13, the-12)
+root(ROOT-0, size-13)
+det(US-16, the-15)
+prep_of(size-13, US-16)
+prep_of(size-13, smaller-18)
+conj_or(US-16, smaller-18)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (MD ca) (RB n't)
+            (VP (VB compare)
+              (NP (PRP them))
+              (SBAR (IN because)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP are)
+                    (ADJP (JJR smaller)
+                      (SBAR
+                        (S
+                          (NP (RB thus) (NN healthcare))
+                          (VP (VBZ is)
+                            (NP
+                              (NP (JJ universal) (NN healthcare))
+                              (SBAR
+                                (S
+                                  (VP (VBZ is)
+                                    (ADJP (JJR cheaper))))))))))))))))))
+    (. .)))
+
+nsubj(means-2, That-1)
+root(ROOT-0, means-2)
+nsubj(compare-6, you-3)
+aux(compare-6, ca-4)
+neg(compare-6, n't-5)
+ccomp(means-2, compare-6)
+dobj(compare-6, them-7)
+mark(smaller-11, because-8)
+nsubj(smaller-11, they-9)
+cop(smaller-11, are-10)
+advcl(compare-6, smaller-11)
+advmod(healthcare-13, thus-12)
+nsubj(healthcare-16, healthcare-13)
+cop(healthcare-16, is-14)
+amod(healthcare-16, universal-15)
+dep(smaller-11, healthcare-16)
+cop(cheaper-18, is-17)
+rcmod(healthcare-16, cheaper-18)
+

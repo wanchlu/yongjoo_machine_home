@@ -1,0 +1,114 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health))
+    (VP (VBP care)
+      (NP (NNS grounds) (NNS doctors))
+      (PP (IN in)
+        (NP
+          (NP (NN professionalism))
+          (, ,) (RB not)
+          (NP (NN commercialism)))))
+    (. .)))
+
+nn(health-2, Universal-1)
+nsubj(care-3, health-2)
+root(ROOT-0, care-3)
+nn(doctors-5, grounds-4)
+dobj(care-3, doctors-5)
+prep_in(care-3, professionalism-7)
+neg(professionalism-7, not-9)
+dep(professionalism-7, commercialism-10)
+
+(ROOT
+  (S
+    (NP (NNS Doctors))
+    (VP (VBP are)
+      (ADVP (RB currently))
+      (NP
+        (NP (NNS businessmen))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP sell)
+              (NP (NN health) (NNS services)))))))
+    (. .)))
+
+nsubj(businessmen-4, Doctors-1)
+cop(businessmen-4, are-2)
+advmod(businessmen-4, currently-3)
+root(ROOT-0, businessmen-4)
+nsubj(sell-6, businessmen-4)
+rcmod(businessmen-4, sell-6)
+nn(services-8, health-7)
+dobj(sell-6, services-8)
+
+(ROOT
+  (S (CC But)
+    (, ,)
+    (S
+      (VP (VBG realizing)
+        (SBAR (IN that)
+          (S
+            (NP (DT this))
+            (VP (VBZ is) (RB not)
+              (NP
+                (NP (DT a) (JJ good) (NN model))
+                (PP (IN for)
+                  (S
+                    (VP (VBG dealing)
+                      (NP
+                        (NP
+                          (NP (NNS people) (POS 's))
+                          (NNS lives))
+                        (CC and)
+                        (NP (NN health))))))))))))
+    (, ,)
+    (NP (JJ many) (NNS doctors))
+    (VP (VBP see)
+      (NP (JJ universal) (NN health) (NN care))
+      (PP (IN as)
+        (NP (DT a) (NN way)
+          (S
+            (VP (TO to)
+              (VP
+                (ADVP (RBR better))
+                (VB root)
+                (NP (PRP$ their) (NN profession))
+                (PP (IN in)
+                  (NP
+                    (NP (NN professionalism))
+                    (PP (RB instead) (IN of)
+                      (NP (DT this) (NN commercialism)))))))))))
+    (. .)))
+
+cc(see-21, But-1)
+partmod(see-21, realizing-3)
+complm(model-10, that-4)
+nsubj(model-10, this-5)
+cop(model-10, is-6)
+neg(model-10, not-7)
+det(model-10, a-8)
+amod(model-10, good-9)
+ccomp(realizing-3, model-10)
+prepc_for(model-10, dealing-12)
+poss(lives-15, people-13)
+dobj(dealing-12, lives-15)
+dobj(dealing-12, health-17)
+conj_and(lives-15, health-17)
+amod(doctors-20, many-19)
+nsubj(see-21, doctors-20)
+root(ROOT-0, see-21)
+amod(care-24, universal-22)
+nn(care-24, health-23)
+dobj(see-21, care-24)
+det(way-27, a-26)
+prep_as(see-21, way-27)
+aux(root-30, to-28)
+advmod(root-30, better-29)
+infmod(way-27, root-30)
+poss(profession-32, their-31)
+dobj(root-30, profession-32)
+prep_in(root-30, professionalism-34)
+det(commercialism-38, this-37)
+prep_instead_of(professionalism-34, commercialism-38)
+

@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (NP (JJ Free) (JJ universal) (NN health))
+    (VP (VBP care)
+      (S
+        (NP (NNS motivates) (NNS people))
+        (VP (TO to)
+          (VP (VB seek)
+            (NP (JJ preventive) (NN care) (NN Preventing) (NNS illnesses))
+            (SBAR (IN before)
+              (S
+                (NP (PRP they))
+                (VP (VBP arise)
+                  (SBAR
+                    (S
+                      (VP (VBZ is)
+                        (NP
+                          (NP (DT a)
+                            (ADJP (RB very) (JJ important))
+                            (NN strategy))
+                          (PP (IN in)
+                            (NP (JJ public) (NN health))))))))))))))
+    (. .)))
+
+amod(health-3, Free-1)
+amod(health-3, universal-2)
+nsubj(care-4, health-3)
+root(ROOT-0, care-4)
+nn(people-6, motivates-5)
+nsubj(seek-8, people-6)
+aux(seek-8, to-7)
+xcomp(care-4, seek-8)
+amod(illnesses-12, preventive-9)
+nn(illnesses-12, care-10)
+nn(illnesses-12, Preventing-11)
+dobj(seek-8, illnesses-12)
+mark(arise-15, before-13)
+nsubj(arise-15, they-14)
+advcl(seek-8, arise-15)
+cop(strategy-20, is-16)
+det(strategy-20, a-17)
+advmod(important-19, very-18)
+amod(strategy-20, important-19)
+ccomp(arise-15, strategy-20)
+amod(health-23, public-22)
+prep_in(strategy-20, health-23)
+
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ encourages)
+      (S
+        (NP (NNS people))
+        (VP (TO to)
+          (VP (VB seek)
+            (NP (JJ preventive) (NNS treatments))
+            (SBAR (IN because)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (ADJP (JJ free)))))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(encourages-4, care-3)
+root(ROOT-0, encourages-4)
+nsubj(seek-7, people-5)
+aux(seek-7, to-6)
+xcomp(encourages-4, seek-7)
+amod(treatments-9, preventive-8)
+dobj(seek-7, treatments-9)
+mark(free-13, because-10)
+nsubj(free-13, it-11)
+cop(free-13, is-12)
+advcl(seek-7, free-13)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ cuts)
+      (NP (NN health) (NN care) (NNS costs))
+      (ADVP (RB substantially))
+      (PP (IN down)
+        (NP (DT the) (NN line))))
+    (. .)))
+
+nsubj(cuts-2, This-1)
+root(ROOT-0, cuts-2)
+nn(costs-5, health-3)
+nn(costs-5, care-4)
+dobj(cuts-2, costs-5)
+advmod(cuts-2, substantially-6)
+det(line-9, the-8)
+prep_down(cuts-2, line-9)
+

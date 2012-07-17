@@ -1,0 +1,78 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB How))
+    (PP (IN about)
+      (NP
+        (NP (DT the) (NN murder))
+        (PP (IN per)
+          (NP (NN capita) (NNS ??)))))))
+
+root(ROOT-0, How-1)
+dep(How-1, about-2)
+det(murder-4, the-3)
+pobj(about-2, murder-4)
+nn(??-7, capita-6)
+prep_per(murder-4, ??-7)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP
+        (NP (RB about) (DT the) (JJ same))
+        (PP (IN as)
+          (NP
+            (NP (DT The) (NN rest))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN country))
+                (, ,)
+                (NP (DT no) (NN ??))))))))))
+
+nsubj(same-5, It-1)
+cop(same-5, is-2)
+advmod(same-5, about-3)
+det(same-5, the-4)
+root(ROOT-0, same-5)
+det(rest-8, The-7)
+prep_as(same-5, rest-8)
+det(country-11, the-10)
+prep_of(rest-8, country-11)
+det(??-14, no-13)
+appos(country-11, ??-14)
+
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (DT a) (JJ little) (NN less-they))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB walk)
+            (NP (DT a) (NN mile)
+              (S
+                (VP (TO to)
+                  (VP (VB find)
+                    (NP (DT a) (NN neighbor)
+                      (S
+                        (VP (TO to)
+                          (VP (VB shoot)))))))))))))
+    (. .)))
+
+advmod(have-5, Maybe-1)
+det(less-they-4, a-2)
+amod(less-they-4, little-3)
+nsubj(have-5, less-they-4)
+xsubj(walk-7, less-they-4)
+root(ROOT-0, have-5)
+aux(walk-7, to-6)
+xcomp(have-5, walk-7)
+det(mile-9, a-8)
+dobj(walk-7, mile-9)
+aux(find-11, to-10)
+infmod(mile-9, find-11)
+det(neighbor-13, a-12)
+dobj(find-11, neighbor-13)
+aux(shoot-15, to-14)
+infmod(neighbor-13, shoot-15)
+

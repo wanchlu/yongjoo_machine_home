@@ -1,0 +1,53 @@
+(ROOT
+  (S
+    (NP (JJ Frequent) (NNS cancellations))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (NN feature))
+        (PP (IN of)
+          (NP (JJ universal) (NN health) (NN care) (NNS systems)))))
+    (. .)))
+
+amod(cancellations-2, Frequent-1)
+nsubj(feature-5, cancellations-2)
+cop(feature-5, are-3)
+det(feature-5, a-4)
+root(ROOT-0, feature-5)
+amod(systems-10, universal-7)
+nn(systems-10, health-8)
+nn(systems-10, care-9)
+prep_of(feature-5, systems-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN function))
+      (PP (IN of)
+        (NP
+          (NP (`` ``) (NN rationing) ('' ''))
+          (, ,)
+          (NP (NNS doctors)))))
+    (ADVP (RB sometimes))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB cancel)
+            (NP (NNS visits))
+            (PP (IN in)
+              (NP (DT a) (JJ single-payer) (NN system)))))))
+    (. .)))
+
+det(function-2, A-1)
+nsubj(have-10, function-2)
+xsubj(cancel-12, function-2)
+prep_of(function-2, rationing-5)
+appos(rationing-5, doctors-8)
+advmod(have-10, sometimes-9)
+root(ROOT-0, have-10)
+aux(cancel-12, to-11)
+xcomp(have-10, cancel-12)
+dobj(cancel-12, visits-13)
+det(system-17, a-15)
+amod(system-17, single-payer-16)
+prep_in(cancel-12, system-17)
+

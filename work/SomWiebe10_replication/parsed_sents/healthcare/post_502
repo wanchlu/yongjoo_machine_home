@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB n't)
+      (VP (VB want)
+        (NP (PRP it))
+        (PP (IN at)
+          (NP (JJ first)))))
+    (. .)))
+
+nsubj(want-4, I-1)
+aux(want-4, did-2)
+neg(want-4, n't-3)
+root(ROOT-0, want-4)
+dobj(want-4, it-5)
+prep_at(want-4, first-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB still))
+    (VP (VBP do) (RB n't)
+      (VP (VB want)
+        (NP (PRP it))))
+    (. .)))
+
+nsubj(want-5, I-1)
+advmod(want-5, still-2)
+aux(want-5, do-3)
+neg(want-5, n't-4)
+root(ROOT-0, want-5)
+dobj(want-5, it-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD wo) (RB n't)
+      (VP (VB want)
+        (NP (PRP it))
+        (PP (IN in)
+          (NP (DT the) (NN future)))))
+    (. .)))
+
+nsubj(want-4, I-1)
+aux(want-4, wo-2)
+neg(want-4, n't-3)
+root(ROOT-0, want-4)
+dobj(want-4, it-5)
+det(future-8, the-7)
+prep_in(want-4, future-8)
+
+(ROOT
+  (SBARQ
+    (WHNP (WDT What)
+      (NP (NN part)
+        (PP (IN of) ('' '')
+          (NP (NNP Hell)))))
+    (SQ
+      (VP
+        (ADVP (RB no) ('' ''))
+        (VP (VBZ does)
+          (S
+            (NP (DT the) (NN government))
+            (RB not)
+            (VP (VB get))))))
+    (. ?)))
+
+det(part-2, What-1)
+dobj(does-8, part-2)
+nsubj(does-8, part-2)
+prep_of(part-2, Hell-5)
+advmod(does-8, no-6)
+root(ROOT-0, does-8)
+det(government-10, the-9)
+nsubj(get-12, government-10)
+neg(get-12, not-11)
+ccomp(does-8, get-12)
+

@@ -1,0 +1,115 @@
+(ROOT
+  (S (CC But)
+    (NP
+      (NP (DT the) (NN question))
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (VP (VBG trying)
+              (S
+                (VP (TO to)
+                  (VP (VB get)
+                    (PP (IN at))))))))))
+    (VP
+      (VP (VBD was))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NNP ER))
+          (VP (VBZ writes)
+            (PRT (RP off))
+            (NP
+              (NP (DT a) (NN bill))
+              (, ,)
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBZ pays)
+                    (NP (DT that) (NN bill))))))))))
+    (. ?)))
+
+cc(was-10, But-1)
+det(question-3, the-2)
+dobj(trying-6, question-3)
+prep_at(get-8, question-3)
+nsubj(was-10, question-3)
+nsubj(trying-6, I-4)
+xsubj(get-8, I-4)
+aux(trying-6, was-5)
+rcmod(question-3, trying-6)
+aux(get-8, to-7)
+xcomp(trying-6, get-8)
+root(ROOT-0, was-10)
+advmod(writes-15, when-12)
+det(ER-14, the-13)
+nsubj(writes-15, ER-14)
+advcl(was-10, writes-15)
+prt(writes-15, off-16)
+det(bill-18, a-17)
+dobj(writes-15, bill-18)
+nsubj(pays-21, bill-18)
+rcmod(bill-18, pays-21)
+det(bill-23, that-22)
+dobj(pays-21, bill-23)
+
+(ROOT
+  (S
+    (NP
+      (NP (CD One) (NN way))
+      (CC or)
+      (NP (DT another) (PRP we)))
+    (RB all)
+    (VP (VBP do))
+    (. .)))
+
+num(way-2, One-1)
+nsubj(do-7, way-2)
+det(we-5, another-4)
+conj_or(way-2, we-5)
+nsubj(do-7, we-5)
+advmod(do-7, all-6)
+root(ROOT-0, do-7)
+
+(ROOT
+  (S (IN So)
+    (NP (DT all) (NN healthcare) (NN reform))
+    (VP (MD will)
+      (VP (VB do)
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (ADVP (RB re-allocate))
+              (NP
+                (NP (DT the) (NN money))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is)
+                      (ADVP (RB already))
+                      (VP (VBG being)
+                        (VP (VBN spent)))))))
+              (, ,)
+              (ADVP (RB just) (RBR more) (RB efficiently)))))))
+    (. .)))
+
+dep(do-6, So-1)
+det(reform-4, all-2)
+nn(reform-4, healthcare-3)
+nsubj(do-6, reform-4)
+aux(do-6, will-5)
+root(ROOT-0, do-6)
+cop(money-10, is-7)
+advmod(money-10, re-allocate-8)
+det(money-10, the-9)
+ccomp(do-6, money-10)
+nsubjpass(spent-15, money-10)
+aux(spent-15, is-12)
+advmod(spent-15, already-13)
+auxpass(spent-15, being-14)
+rcmod(money-10, spent-15)
+advmod(efficiently-19, just-17)
+advmod(efficiently-19, more-18)
+advmod(money-10, efficiently-19)
+

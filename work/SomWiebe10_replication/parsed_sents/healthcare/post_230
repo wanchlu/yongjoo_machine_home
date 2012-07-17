@@ -1,0 +1,21 @@
+(ROOT
+  (S
+    (NP (NNP US) (NN health) (NN care) (NNS costs))
+    (ADJP (JJR more)
+      (SBAR (IN because)
+        (S
+          (NP (NNPS Americans))
+          (VP (VBP are)
+            (ADJP (RBR less) (JJ healthy))))))))
+
+nn(costs-4, US-1)
+nn(costs-4, health-2)
+nn(costs-4, care-3)
+dep(more-5, costs-4)
+root(ROOT-0, more-5)
+mark(healthy-10, because-6)
+nsubj(healthy-10, Americans-7)
+cop(healthy-10, are-8)
+advmod(healthy-10, less-9)
+ccomp(more-5, healthy-10)
+

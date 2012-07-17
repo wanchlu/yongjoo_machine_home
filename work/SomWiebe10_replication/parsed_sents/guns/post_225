@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (NNP Exactly))
+    (VP (MD Could) (RB n't)
+      (VP (VB have)
+        (VP (VBD said)
+          (NP (PRP it))
+          (ADVP (DT any) (RBR better)))))
+    (. .)))
+
+nsubj(said-5, Exactly-1)
+aux(said-5, Could-2)
+neg(said-5, n't-3)
+aux(said-5, have-4)
+root(ROOT-0, said-5)
+dobj(said-5, it-6)
+dep(better-8, any-7)
+advmod(said-5, better-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBP do)
+              (S
+                (VP (VB make)
+                  (S
+                    (NP (PRP me))
+                    (ADJP (JJR safer))))))))
+        (CC but)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ 's) (RB not)
+              (NP (DT the) (NN point)))))))
+    (: ...)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(do-4, they-3)
+dep(think-2, do-4)
+ccomp(do-4, make-5)
+nsubj(safer-7, me-6)
+xcomp(make-5, safer-7)
+nsubj(point-13, that-9)
+cop(point-13, 's-10)
+neg(point-13, not-11)
+det(point-13, the-12)
+dep(think-2, point-13)
+conj_but(do-4, point-13)
+

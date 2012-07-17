@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (NP (DT The) (CD 1994) (NNP US) (NN assault) (NNS weapons))
+    (VP (VBP ban)
+      (NP (RB significantly) (VBN decreased) (NN use)))
+    (. .)))
+
+det(weapons-5, The-1)
+num(weapons-5, 1994-2)
+nn(weapons-5, US-3)
+nn(weapons-5, assault-4)
+nsubj(ban-6, weapons-5)
+root(ROOT-0, ban-6)
+advmod(use-9, significantly-7)
+amod(use-9, decreased-8)
+dobj(ban-6, use-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN use))
+      (PP (IN of)
+        (NP (NN assault) (NNS weapons))))
+    (VP (VBD was)
+      (ADVP (RB down)
+        (NP (CD 17) (NN %)))
+      (PP (IN from)
+        (NP
+          (NP (CD 1994) (NNS levels))
+          (PP (IN in)
+            (NP (CD 2004)))))
+      (, ,)
+      (PP (VBG according)
+        (PP (TO to)
+          (NP (CD one) (NN report)))))
+    (. .)))
+
+det(use-2, The-1)
+nsubj(was-6, use-2)
+nn(weapons-5, assault-4)
+prep_of(use-2, weapons-5)
+root(ROOT-0, was-6)
+advmod(was-6, down-7)
+num(%-9, 17-8)
+pobj(down-7, %-9)
+num(levels-12, 1994-11)
+prep_from(was-6, levels-12)
+prep_in(levels-12, 2004-14)
+prepc_according_to(was-6, to-17)
+num(report-19, one-18)
+pobj(was-6, report-19)
+

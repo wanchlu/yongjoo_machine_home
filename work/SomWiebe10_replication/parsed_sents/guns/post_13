@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP Supreme) (NNP Court))
+    (VP (VBZ has)
+      (VP (VBN affirmed)
+        (NP (DT the) (JJ individual) (NN right))
+        (S
+          (VP (TO to)
+            (VP (VB bear)
+              (NP (NNS arms)))))))
+    (. .)))
+
+det(Court-3, The-1)
+nn(Court-3, Supreme-2)
+nsubj(affirmed-5, Court-3)
+aux(affirmed-5, has-4)
+root(ROOT-0, affirmed-5)
+det(right-8, the-6)
+amod(right-8, individual-7)
+dobj(affirmed-5, right-8)
+aux(bear-10, to-9)
+xcomp(affirmed-5, bear-10)
+dobj(bear-10, arms-11)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP Supreme) (NNP Court))
+    (VP (VBZ has)
+      (VP (VBN affirmed)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (JJ 2nd) (NN Amendment))
+            (VP (VBZ confers)
+              (NP (DT an) (JJ individual) (NN right)
+                (S
+                  (VP (TO to)
+                    (VP (VB bear)
+                      (NP (NNS arms)))))))))))
+    (. .)))
+
+det(Court-3, The-1)
+nn(Court-3, Supreme-2)
+nsubj(affirmed-5, Court-3)
+aux(affirmed-5, has-4)
+root(ROOT-0, affirmed-5)
+complm(confers-10, that-6)
+det(Amendment-9, the-7)
+amod(Amendment-9, 2nd-8)
+nsubj(confers-10, Amendment-9)
+ccomp(affirmed-5, confers-10)
+det(right-13, an-11)
+amod(right-13, individual-12)
+dobj(confers-10, right-13)
+aux(bear-15, to-14)
+infmod(right-13, bear-15)
+dobj(bear-15, arms-16)
+
+(ROOT
+  (S
+    (NP
+      (PRN (-LRB- -LRB-)
+        (NP
+          (NP (NNP Heller)
+            (CC vs.)
+            (NNP District))
+          (PP (IN of)
+            (NP (NNP Columbia))))
+        (-RRB- -RRB-)))
+    (VP (VBD Delivered)
+      (PP (IN in)
+        (NP (CD 2008))))
+    (. .)))
+
+nsubj(Delivered-8, Heller-2)
+conj_vs.(Heller-2, District-4)
+nsubj(Delivered-8, District-4)
+prep_of(Heller-2, Columbia-6)
+root(ROOT-0, Delivered-8)
+prep_in(Delivered-8, 2008-10)
+

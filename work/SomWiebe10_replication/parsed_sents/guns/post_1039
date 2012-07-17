@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP (PRP$ My) (NN teacher))
+    (VP (VBD said)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP threaten)
+            (NP (NN someone))
+            (PP (IN with)
+              (NP
+                (NP (DT a) (NN gun-unarmed))
+                (SBAR
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (ADJP (RBR less) (JJ likely)
+                        (S
+                          (VP (TO to)
+                            (VP (VB shoot)
+                              (NP (PRP you)))))))))))))))
+    (. .)))
+
+poss(teacher-2, My-1)
+nsubj(said-3, teacher-2)
+root(ROOT-0, said-3)
+mark(threaten-6, if-4)
+nsubj(threaten-6, you-5)
+advcl(said-3, threaten-6)
+dobj(threaten-6, someone-7)
+det(gun-unarmed-10, a-9)
+prep_with(threaten-6, gun-unarmed-10)
+nsubj(likely-14, they-11)
+cop(likely-14, are-12)
+advmod(likely-14, less-13)
+rcmod(gun-unarmed-10, likely-14)
+aux(shoot-16, to-15)
+xcomp(likely-14, shoot-16)
+dobj(shoot-16, you-17)
+
+(ROOT
+  (S
+    (NP (NNP HOWEVER))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT a) (NN gun)))))
+    (, ,)
+    (NP (PRP they))
+    (VP (MD 'll)
+      (VP (VB shoot)
+        (NP (PRP you))
+        (ADVP (RB first))
+        (PP (IN for)
+          (NP (NN fear) (NN YOU) (NNP 'LL) (NNP shoot) (NNP THEM)))))))
+
+nsubj(shoot-11, HOWEVER-1)
+mark(have-5, if-3)
+nsubj(have-5, you-4)
+advcl(shoot-11, have-5)
+det(gun-7, a-6)
+dobj(have-5, gun-7)
+nsubj(shoot-11, they-9)
+aux(shoot-11, 'll-10)
+root(ROOT-0, shoot-11)
+dobj(shoot-11, you-12)
+advmod(shoot-11, first-13)
+nn(THEM-19, fear-15)
+nn(THEM-19, YOU-16)
+nn(THEM-19, 'LL-17)
+nn(THEM-19, shoot-18)
+prep_for(shoot-11, THEM-19)
+

@@ -1,0 +1,410 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT Some))
+      (PP (IN of)
+        (NP (PRP$ your) (NNS examples))))
+    (VP (VBP make)
+      (NP (JJ perfect) (NN sense)))
+    (. .)))
+
+nsubj(make-5, Some-1)
+poss(examples-4, your-3)
+prep_of(Some-1, examples-4)
+root(ROOT-0, make-5)
+amod(sense-7, perfect-6)
+dobj(make-5, sense-7)
+
+(ROOT
+  (S
+    (NP (VBG Banning) (NN barrel) (NNS shrouds))
+    (VP (VBZ seems)
+      (ADJP (JJ excessive)))
+    (. .)))
+
+amod(shrouds-3, Banning-1)
+nn(shrouds-3, barrel-2)
+nsubj(excessive-5, shrouds-3)
+cop(excessive-5, seems-4)
+root(ROOT-0, excessive-5)
+
+(ROOT
+  (S
+    (ADVP (RB Perhaps))
+    (NP (PRP you))
+    (VP (VBP are) (RB not)
+      (NP (DT a) (NN gun) (NN extremist))
+      (, ,)
+      (PP (IN after)
+        (NP
+          (NP (DT all))
+          (, ,) (RB just)
+          (NP (DT a) (JJ reasonable) (NN gun) (NN enthusiast)))))
+    (. .)))
+
+advmod(extremist-7, Perhaps-1)
+nsubj(extremist-7, you-2)
+cop(extremist-7, are-3)
+neg(extremist-7, not-4)
+det(extremist-7, a-5)
+nn(extremist-7, gun-6)
+root(ROOT-0, extremist-7)
+prep_after(extremist-7, all-10)
+advmod(all-10, just-12)
+det(enthusiast-16, a-13)
+amod(enthusiast-16, reasonable-14)
+nn(enthusiast-16, gun-15)
+dep(all-10, enthusiast-16)
+
+(ROOT
+  (X (CC But)
+    (NP (WP what))
+    (NP
+      (NP
+        (QP (RB about) (CD one)))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (JJR more) (JJ key) (NNS provisions))
+          (PP (IN of)
+            (NP (DT the) (JJ lapsed) (CD 1994) (JJ federal) (NN assault) (NNS weapons) (NN ban))))))
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (VP (VBZ 's)
+          (ADJP (RB so) (JJ wrong)
+            (PP (IN about)
+              (S
+                (VP (VBG banning)
+                  (NP
+                    (NP (JJ private) (NN use))
+                    (PP (IN of)
+                      (NP
+                        (NP (NNS clips))
+                        (PP (IN with)
+                          (NP
+                            (QP (JJR more) (IN than) (CD 10))
+                            (NNS rounds)))))))))))))
+    (. ?)))
+
+dep(one-4, But-1)
+dep(one-4, what-2)
+quantmod(one-4, about-3)
+root(ROOT-0, one-4)
+det(provisions-9, the-6)
+amod(provisions-9, more-7)
+amod(provisions-9, key-8)
+prep_of(one-4, provisions-9)
+det(ban-17, the-11)
+amod(ban-17, lapsed-12)
+num(ban-17, 1994-13)
+amod(ban-17, federal-14)
+nn(ban-17, assault-15)
+nn(ban-17, weapons-16)
+prep_of(provisions-9, ban-17)
+nsubj(wrong-21, what-18)
+cop(wrong-21, 's-19)
+advmod(wrong-21, so-20)
+dep(one-4, wrong-21)
+prepc_about(wrong-21, banning-23)
+amod(use-25, private-24)
+dobj(banning-23, use-25)
+prep_of(use-25, clips-27)
+mwe(than-30, more-29)
+quantmod(10-31, than-30)
+num(rounds-32, 10-31)
+prep_with(clips-27, rounds-32)
+
+(ROOT
+  (S (CC And)
+    (PP (IN with)
+      (NP
+        (NP (NN respect))
+        (PP (TO to)
+          (NP (NN gun) (NNS shows)))))
+    (, ,)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADJP (JJ true))
+        (SBAR (IN that)
+          (S
+            (NP
+              (NP (JJ licensed) (NNS dealers))
+              (PP (IN at)
+                (NP (NN gun) (NNS shows))))
+            (VP (MD must)
+              (VP (VB conduct)
+                (NP (NN background) (NNS checks))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (NNS individuals))
+        (VP (RB not)
+          (ADVP (RB routinely))
+          (VBN involved)
+          (PP (IN in)
+            (NP (DT the) (NN gun) (NN trade)))))
+      (VP (VBP ARE)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB sell)
+                (NP (PRP$ their) (NNS guns))
+                (PP (IN without)
+                  (S
+                    (VP (VBG conducting)
+                      (NP (NN background) (NNS checks)))))))))))
+    (. .)))
+
+nn(shows-6, gun-5)
+prep_with_respect_to(true-10, shows-6)
+nsubj(true-10, it-8)
+cop(true-10, 's-9)
+root(ROOT-0, true-10)
+complm(conduct-18, that-11)
+amod(dealers-13, licensed-12)
+nsubj(conduct-18, dealers-13)
+nn(shows-16, gun-15)
+prep_at(dealers-13, shows-16)
+aux(conduct-18, must-17)
+ccomp(true-10, conduct-18)
+nn(checks-20, background-19)
+dobj(conduct-18, checks-20)
+nsubjpass(allowed-32, individuals-23)
+xsubj(sell-34, individuals-23)
+neg(involved-26, not-24)
+advmod(involved-26, routinely-25)
+partmod(individuals-23, involved-26)
+det(trade-30, the-28)
+nn(trade-30, gun-29)
+prep_in(involved-26, trade-30)
+auxpass(allowed-32, ARE-31)
+conj_but(true-10, allowed-32)
+aux(sell-34, to-33)
+xcomp(allowed-32, sell-34)
+poss(guns-36, their-35)
+dobj(sell-34, guns-36)
+prepc_without(sell-34, conducting-38)
+nn(checks-40, background-39)
+dobj(conducting-38, checks-40)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB certainly))
+      (ADJP (JJ possible)
+        (S
+          (VP
+            (VP (TO to)
+              (VP (VB place)
+                (NP (JJ additional) (NNS restrictions))
+                (PP (IN on)
+                  (NP
+                    (NP (JJ private) (NNS sellers))
+                    (PP (IN at)
+                      (NP (NN gun) (NNS shows)))))))
+            (, ,)
+            (CC and)
+            (ADVP (RB thereby))
+            (VP (TO to)
+              (VP (VB reduce)
+                (NP
+                  (NP
+                    (NP
+                      (NP (DT the) (NN availability))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS guns))
+                          (PP (TO to)
+                            (NP (NNS criminals))))))
+                    (, ,) (FW etc.) (, ,))
+                  (PP (IN without)
+                    (S
+                      (VP (VBG invading)
+                        (NP (JJ private) (NNS homes))))))))))))
+    (. .)))
+
+nsubj(possible-4, It-1)
+cop(possible-4, is-2)
+advmod(possible-4, certainly-3)
+root(ROOT-0, possible-4)
+aux(place-6, to-5)
+dep(possible-4, place-6)
+amod(restrictions-8, additional-7)
+dobj(place-6, restrictions-8)
+amod(sellers-11, private-10)
+prep_on(place-6, sellers-11)
+nn(shows-14, gun-13)
+prep_at(sellers-11, shows-14)
+dep(possible-4, thereby-17)
+advmod(place-6, thereby-17)
+conj_and(place-6, thereby-17)
+aux(reduce-19, to-18)
+dep(possible-4, reduce-19)
+conj_and(place-6, reduce-19)
+det(availability-21, the-20)
+dobj(reduce-19, availability-21)
+prep_of(availability-21, guns-23)
+prep_to(guns-23, criminals-25)
+dep(availability-21, etc.-27)
+prepc_without(availability-21, invading-30)
+amod(homes-32, private-31)
+dobj(invading-30, homes-32)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH Yes))
+      (, ,)
+      (NP (JJ illegal) (NN gun) (NNS sales))
+      (VP (MD would)
+        (ADVP (RB still))
+        (VP (VB occur))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJR harder)))))
+    (. .)))
+
+dep(occur-8, Yes-1)
+amod(sales-5, illegal-3)
+nn(sales-5, gun-4)
+nsubj(occur-8, sales-5)
+aux(occur-8, would-6)
+advmod(occur-8, still-7)
+root(ROOT-0, occur-8)
+nsubj(harder-14, it-11)
+aux(harder-14, would-12)
+cop(harder-14, be-13)
+conj_but(occur-8, harder-14)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (ADVP (RB only))
+            (VP (VBP oppose)
+              (NP (JJ stupid) (NN stuff)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP applaud)
+        (NP (PRP you))
+        (PP (IN for)
+          (NP (DT that)))))
+    (. .)))
+
+nsubj(say-2, You-1)
+root(ROOT-0, say-2)
+nsubj(oppose-5, you-3)
+advmod(oppose-5, only-4)
+ccomp(say-2, oppose-5)
+amod(stuff-7, stupid-6)
+dobj(oppose-5, stuff-7)
+nsubj(applaud-11, I-10)
+conj_and(say-2, applaud-11)
+dobj(applaud-11, you-12)
+prep_for(applaud-11, that-14)
+
+(ROOT
+  (S (CC But)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (RB plenty))
+        (PP (IN of)
+          (NP
+            (NP (NNS advocates))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP oppose)
+                  (NP (DT all) (NNS restrictions))
+                  (PP
+                    (PP (IN on)
+                      (NP (NN gun) (NN ownership)))
+                    (, ,) (RB just)
+                    (PP (IN in)
+                      (NP (NN principle)))))))))))
+    (. .)))
+
+cc(are-3, But-1)
+expl(are-3, there-2)
+root(ROOT-0, are-3)
+nsubj(are-3, plenty-4)
+prep_of(plenty-4, advocates-6)
+nsubj(oppose-8, advocates-6)
+rcmod(advocates-6, oppose-8)
+det(restrictions-10, all-9)
+dobj(oppose-8, restrictions-10)
+nn(ownership-13, gun-12)
+prep_on(oppose-8, ownership-13)
+advmod(oppose-8, just-15)
+prep_in(oppose-8, principle-17)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ stifles)
+      (NP
+        (NP (JJ healthy) (NN debate))
+        (, ,)
+        (NP
+          (NP
+            (QP (RB just) (RB as) (JJ much)))
+          (PP (IN as)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP support)
+                    (NP
+                      (NP (DT every) (NN restriction))
+                      (SBAR
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP see)
+                            (PP (IN without)
+                              (S
+                                (VP (VBG thinking)
+                                  (PRT (RP about))
+                                  (SBAR (IN whether)
+                                    (S
+                                      (NP (PRP it))
+                                      (VP (VBZ 's)
+                                        (ADJP (JJ stupid))))))))))))))))))))
+    (. .)))
+
+nsubj(stifles-2, That-1)
+root(ROOT-0, stifles-2)
+amod(debate-4, healthy-3)
+dobj(stifles-2, debate-4)
+quantmod(much-8, just-6)
+quantmod(much-8, as-7)
+appos(debate-4, much-8)
+prep_as(much-8, those-10)
+nsubj(support-12, those-10)
+rcmod(those-10, support-12)
+det(restriction-14, every-13)
+dobj(support-12, restriction-14)
+dobj(see-16, restriction-14)
+nsubj(see-16, they-15)
+rcmod(restriction-14, see-16)
+prepc_without(see-16, thinking-18)
+prt(thinking-18, about-19)
+complm(stupid-23, whether-20)
+nsubj(stupid-23, it-21)
+cop(stupid-23, 's-22)
+ccomp(thinking-18, stupid-23)
+

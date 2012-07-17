@@ -1,0 +1,122 @@
+(ROOT
+  (SQ (VBP Are)
+    (NP (PRP you))
+    (PP (IN on)
+      (NP (JJ freaking) (NNS drugs)))
+    (. ?)))
+
+root(ROOT-0, Are-1)
+nsubj(Are-1, you-2)
+amod(drugs-5, freaking-4)
+prep_on(Are-1, drugs-5)
+
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (VBZ is) (RB not)
+      (ADVP (RB here))
+      (S
+        (VP (TO to)
+          (VP (VB take)
+            (NP
+              (NP (NN care))
+              (PP (IN of)
+                (NP (NNS adults))))))))
+    (. !)))
+
+det(government-2, The-1)
+nsubj(is-3, government-2)
+xsubj(take-7, government-2)
+root(ROOT-0, is-3)
+neg(is-3, not-4)
+advmod(is-3, here-5)
+aux(take-7, to-6)
+xcomp(is-3, take-7)
+dobj(take-7, care-8)
+prep_of(care-8, adults-10)
+
+(ROOT
+  (S
+    (NP (NNS Adults))
+    (VP (MD can)
+      (PRN (-LRB- -LRB-)
+        (CC and)
+        (VP (MD should))
+        (-RRB- -RRB-))
+      (VP (VB take)
+        (NP
+          (NP (NN care))
+          (PP (IN of)
+            (NP (PRP themselves))))))
+    (. !)))
+
+nsubj(take-7, Adults-1)
+aux(take-7, can-2)
+dep(should-5, and-4)
+dep(take-7, should-5)
+root(ROOT-0, take-7)
+dobj(take-7, care-8)
+prep_of(care-8, themselves-10)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB need)
+        (NP (DT the) (NN government)
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (NP
+                  (NP (NN care))
+                  (PP (IN of)
+                    (NP (PRP me))))))))))
+    (. .)))
+
+nsubj(need-4, I-1)
+aux(need-4, do-2)
+neg(need-4, n't-3)
+root(ROOT-0, need-4)
+det(government-6, the-5)
+dobj(need-4, government-6)
+aux(take-8, to-7)
+infmod(government-6, take-8)
+dobj(take-8, care-9)
+prep_of(care-9, me-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (NP
+        (NP (DT some) (JJ small) (NN child))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ dependent)
+                (PP (IN on)
+                  (NP (PRP$ his) (NNS parents)))))))))
+    (. !)))
+
+nsubj(child-6, I-1)
+cop(child-6, 'm-2)
+neg(child-6, not-3)
+det(child-6, some-4)
+amod(child-6, small-5)
+root(ROOT-0, child-6)
+nsubj(dependent-9, child-6)
+cop(dependent-9, is-8)
+rcmod(child-6, dependent-9)
+poss(parents-12, his-11)
+prep_on(dependent-9, parents-12)
+
+(ROOT
+  (SQ
+    (VP (VB Are)
+      (NP (PRP you)))
+    (. ?)))
+
+cop(you-2, Are-1)
+root(ROOT-0, you-2)
+

@@ -1,0 +1,209 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ ridiculous)))
+    (. .)))
+
+nsubj(ridiculous-3, This-1)
+cop(ridiculous-3, is-2)
+root(ROOT-0, ridiculous-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT No) (NN matter))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (DT the) (`` ``) (JJ bad) (NN guys) ('' ''))
+          (VP (VBP are)
+            (VP (VBG going)
+              (S
+                (VP (TO to)
+                  (VP (VB get)))))))))
+    (VP (VBZ firearms))
+    (. .)))
+
+det(matter-2, No-1)
+dobj(going-10, matter-2)
+nsubj(firearms-13, matter-2)
+rel(going-10, what-3)
+det(guys-7, the-4)
+amod(guys-7, bad-6)
+nsubj(going-10, guys-7)
+xsubj(get-12, guys-7)
+aux(going-10, are-9)
+rcmod(matter-2, going-10)
+aux(get-12, to-11)
+xcomp(going-10, get-12)
+root(ROOT-0, firearms-13)
+
+(ROOT
+  (S
+    (NP (DT All) (NN gun) (NN control))
+    (VP (VBZ does)
+      (SBAR
+        (S
+          (VP (VBZ is)
+            (VP (VB make)
+              (NP (PRP it))
+              (ADVP
+                (ADVP (RBR harder))
+                (PP (IN for)
+                  (NP (DT the) (NN law) (VBG abiding) (NN citizen))))
+              (S
+                (VP (TO to)
+                  (VP (VB get)
+                    (NP (DT a) (NN gun))))))))))
+    (. .)))
+
+det(control-3, All-1)
+nn(control-3, gun-2)
+nsubj(does-4, control-3)
+root(ROOT-0, does-4)
+aux(make-6, is-5)
+ccomp(does-4, make-6)
+dobj(make-6, it-7)
+advmod(make-6, harder-8)
+det(citizen-13, the-10)
+nn(citizen-13, law-11)
+amod(citizen-13, abiding-12)
+prep_for(harder-8, citizen-13)
+aux(get-15, to-14)
+xcomp(make-6, get-15)
+det(gun-17, a-16)
+dobj(get-15, gun-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Less))
+      (PP (IN than)
+        (NP
+          (NP (CD 5) (NN %))
+          (PP (IN of)
+            (NP
+              (NP (JJ violent) (NNS crimes))
+              (VP (VBN committed)
+                (PP (IN with)
+                  (NP (DT a) (NN firearm)))))))))
+    (VP (VBP are)
+      (PP (IN with)
+        (NP (DT a)
+          (ADJP (RB legally) (VBN purchased))
+          (NN firearm))))
+    (. .)))
+
+nsubj(are-12, Less-1)
+num(%-4, 5-3)
+prep_than(Less-1, %-4)
+amod(crimes-7, violent-6)
+prep_of(%-4, crimes-7)
+partmod(crimes-7, committed-8)
+det(firearm-11, a-10)
+prep_with(committed-8, firearm-11)
+root(ROOT-0, are-12)
+det(firearm-17, a-14)
+advmod(purchased-16, legally-15)
+amod(firearm-17, purchased-16)
+prep_with(are-12, firearm-17)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're) (RB not)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (NP (DT any) (JJ good)))))))
+    (. .)))
+
+nsubj(going-4, You-1)
+xsubj(do-6, You-1)
+aux(going-4, 're-2)
+neg(going-4, not-3)
+root(ROOT-0, going-4)
+aux(do-6, to-5)
+xcomp(going-4, do-6)
+det(good-8, any-7)
+dobj(do-6, good-8)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP want)
+      (S
+        (VP (TO to)
+          (VP (VB see)
+            (S
+              (NP (JJ violent) (NNS crimes))
+              (VP (VB go)
+                (PRT (RP down))))))))
+    (. ?)))
+
+nsubj(want-2, You-1)
+xsubj(see-4, You-1)
+root(ROOT-0, want-2)
+aux(see-4, to-3)
+xcomp(want-2, see-4)
+amod(crimes-6, violent-5)
+nsubj(go-7, crimes-6)
+ccomp(see-4, go-7)
+prt(go-7, down-8)
+
+(ROOT
+  (S
+    (VP (VB Make)
+      (S
+        (NP (PRP it))
+        (ADJP
+          (ADJP (JJR easier))
+          (PP (IN for)
+            (NP (NN law))))
+        (S
+          (VP (VBG abiding)
+            (NP (NNS citizens))
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB buy)
+                    (NP (NNS firearms)))
+                  (CC and)
+                  (VP (VB train)
+                    (S
+                      (NP (PRP them))
+                      (VP (TO to)
+                        (VP (VB use)
+                          (S
+                            (NP (PRP it))
+                            (VP (TO to)
+                              (VP (VB defend)
+                                (NP
+                                  (NP (PRP themselves))
+                                  (CC and)
+                                  (NP (NNS others)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, Make-1)
+nsubj(abiding-6, it-2)
+dep(abiding-6, easier-3)
+prep_for(easier-3, law-5)
+xcomp(Make-1, abiding-6)
+dobj(abiding-6, citizens-7)
+aux(buy-9, to-8)
+xcomp(abiding-6, buy-9)
+dobj(buy-9, firearms-10)
+xcomp(abiding-6, train-12)
+conj_and(buy-9, train-12)
+nsubj(use-15, them-13)
+aux(use-15, to-14)
+xcomp(train-12, use-15)
+nsubj(defend-18, it-16)
+aux(defend-18, to-17)
+xcomp(use-15, defend-18)
+dobj(defend-18, themselves-19)
+dobj(defend-18, others-21)
+conj_and(themselves-19, others-21)
+

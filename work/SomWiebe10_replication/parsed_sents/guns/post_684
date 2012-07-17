@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD can) (RB not)
+      (VP (VB imagine)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP$ their) (NNS motives))
+            (VP (MD might)
+              (VP (VB be)))))))
+    (. .)))
+
+nsubj(imagine-4, I-1)
+aux(imagine-4, can-2)
+neg(imagine-4, not-3)
+root(ROOT-0, imagine-4)
+dobj(be-9, what-5)
+poss(motives-7, their-6)
+nsubj(be-9, motives-7)
+aux(be-9, might-8)
+ccomp(imagine-4, be-9)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Perhaps))
+      (NP (DT some))
+      (VP (VBP are)
+        (ADVP (RB honestly))
+        (ADJP (JJ fearful))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (JJ sordid) (NN history))
+        (PP (IN of)
+          (NP (NNS weapons) (NN control))))
+      (VP (VBZ indicates)
+        (SBAR (IN that)
+          (S
+            (S
+              (VP (VBG restricting)
+                (NP (NNS weapons))
+                (PP
+                  (PP (TO to)
+                    (NP (DT some) (JJ favored) (NNS groups)))
+                  (CC or)
+                  (PP (TO to)
+                    (NP (DT the) (NN state))))))
+            (VP (VBZ causes)
+              (ADJP
+                (ADJP (RBR more) (JJ bloodshed))
+                (SBAR (IN than)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ prevents))))))))))
+    (. .)))
+
+advmod(fearful-5, Perhaps-1)
+nsubj(fearful-5, some-2)
+cop(fearful-5, are-3)
+advmod(fearful-5, honestly-4)
+root(ROOT-0, fearful-5)
+det(history-10, the-8)
+amod(history-10, sordid-9)
+nsubj(indicates-14, history-10)
+nn(control-13, weapons-12)
+prep_of(history-10, control-13)
+conj_but(fearful-5, indicates-14)
+complm(causes-26, that-15)
+csubj(causes-26, restricting-16)
+dobj(restricting-16, weapons-17)
+det(groups-21, some-19)
+amod(groups-21, favored-20)
+prep_to(restricting-16, groups-21)
+det(state-25, the-24)
+prep_to(restricting-16, state-25)
+conj_or(groups-21, state-25)
+ccomp(indicates-14, causes-26)
+advmod(bloodshed-28, more-27)
+acomp(causes-26, bloodshed-28)
+mark(prevents-31, than-29)
+nsubj(prevents-31, it-30)
+dep(bloodshed-28, prevents-31)
+

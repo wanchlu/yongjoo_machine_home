@@ -1,0 +1,33 @@
+(ROOT
+  (S ('' '') (-LRB- -LRB-)
+    (NP (NN college) (NNS students))
+    (-RRB- -RRB-)
+    (VP (VBP are) (RB not)
+      (ADJP (JJ subject)
+        (S
+          (VP (TO to)
+            (VP (VB impulsive)
+              (NP (NNS reactions)))))))
+    (. .)))
+
+nn(students-4, college-3)
+nsubj(subject-8, students-4)
+cop(subject-8, are-6)
+neg(subject-8, not-7)
+root(ROOT-0, subject-8)
+aux(impulsive-10, to-9)
+xcomp(subject-8, impulsive-10)
+dobj(impulsive-10, reactions-11)
+
+(ROOT
+  (S (`` ``)
+    (NP (DT this))
+    (VP (VBZ is)
+      (ADJP (RB demonstrably) (JJ false)))
+    (. .)))
+
+nsubj(false-5, this-2)
+cop(false-5, is-3)
+advmod(false-5, demonstrably-4)
+root(ROOT-0, false-5)
+

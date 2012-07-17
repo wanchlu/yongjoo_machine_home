@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (MD would)
+      (VP (VB amount)
+        (PP (TO to)
+          (NP
+            (NP (NN welfare))
+            (PP (IN for)
+              (NP (DT the) (JJ uninsured)))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(amount-5, care-3)
+aux(amount-5, would-4)
+root(ROOT-0, amount-5)
+prep_to(amount-5, welfare-7)
+det(uninsured-10, the-9)
+prep_for(welfare-7, uninsured-10)
+
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (MD should) (RB not)
+      (VP (VB create)
+        (NP
+          (NP (DT a) (NN health) (NN care) (NN system))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (VP (VBN aimed)
+                  (ADVP (RB primarily))
+                  (PP (IN at)
+                    (S
+                      (VP (VBG helping)
+                        (NP (DT the)
+                          (ADJP (JJ poor)
+                            (CC and)
+                            (JJ uninsured)))))))))))))
+    (. .)))
+
+det(government-2, The-1)
+nsubj(create-5, government-2)
+aux(create-5, should-3)
+neg(create-5, not-4)
+root(ROOT-0, create-5)
+det(system-9, a-6)
+nn(system-9, health-7)
+nn(system-9, care-8)
+dobj(create-5, system-9)
+nsubjpass(aimed-12, system-9)
+auxpass(aimed-12, is-11)
+rcmod(system-9, aimed-12)
+advmod(aimed-12, primarily-13)
+prepc_at(aimed-12, helping-15)
+det(poor-17, the-16)
+dobj(helping-15, poor-17)
+dobj(helping-15, uninsured-19)
+conj_and(poor-17, uninsured-19)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (JJ such)))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ becomes)
+      (NP (RB merely) (DT another) (JJ wealth-transfer) (NN program)))
+    (. .)))
+
+prep_such_as(program-9, such-2)
+nsubj(program-9, it-4)
+cop(program-9, becomes-5)
+advmod(program-9, merely-6)
+det(program-9, another-7)
+amod(program-9, wealth-transfer-8)
+root(ROOT-0, program-9)
+

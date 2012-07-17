@@ -1,0 +1,249 @@
+(ROOT
+  (S
+    (INTJ (UH Well))
+    (VP (VB look)
+      (PP (IN at)
+        (NP
+          (NP (NN prohibtion))
+          (PP (IN in)
+            (NP (CD 1919)
+              (CC and)
+              (IN on)))
+          (, ,)
+          (VP
+            (ADVP (RB also))
+            (VBN known)
+            (PP (IN as)
+              (NP (DT the) (NNP Volstead) (NN act)))))))
+    (. .)))
+
+dep(look-2, Well-1)
+root(ROOT-0, look-2)
+prep_at(look-2, prohibtion-4)
+prep_in(prohibtion-4, 1919-6)
+prep_in(prohibtion-4, on-8)
+conj_and(1919-6, on-8)
+advmod(known-11, also-10)
+partmod(prohibtion-4, known-11)
+det(act-15, the-13)
+nn(act-15, Volstead-14)
+prep_as(known-11, act-15)
+
+(ROOT
+  (S
+    (NP (NNP Alcohol))
+    (VP (VBD was)
+      (ADJP (RB completely) (VBN banned)
+        (PRT (RP yet))
+        (SBAR
+          (S
+            (NP (NN everybody))
+            (ADVP (RB still))
+            (VP (VBD drank))))))
+    (. .)))
+
+nsubjpass(banned-4, Alcohol-1)
+auxpass(banned-4, was-2)
+advmod(banned-4, completely-3)
+root(ROOT-0, banned-4)
+dep(banned-4, yet-5)
+nsubj(drank-8, everybody-6)
+advmod(drank-8, still-7)
+dep(banned-4, drank-8)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD found)
+      (NP (NNS ways))
+      (S
+        (VP (TO to)
+          (VP (VB drink)))))
+    (. .)))
+
+nsubj(found-2, They-1)
+root(ROOT-0, found-2)
+dobj(found-2, ways-3)
+aux(drink-5, to-4)
+xcomp(found-2, drink-5)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS People))
+      (VP (VBD had)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB brew)
+                (ADVP (RB underground)))
+              (, ,)
+              (CC and)
+              (VP (VB drink)
+                (PP (IN in)
+                  (NP (JJ underground) (NNS bars)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBD happened)))
+    (. .)))
+
+nsubj(had-2, People-1)
+xsubj(brew-4, People-1)
+root(ROOT-0, had-2)
+aux(brew-4, to-3)
+xcomp(had-2, brew-4)
+advmod(brew-4, underground-5)
+xcomp(had-2, drink-8)
+conj_and(brew-4, drink-8)
+amod(bars-11, underground-10)
+prep_in(drink-8, bars-11)
+nsubj(happened-15, it-14)
+conj_but(had-2, happened-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (RB Even) (JJ major) (NNS Authorities))
+      (PP (VBG including)
+        (NP (NNS police)
+          (CC and)
+          (NNS judges))))
+    (VP (VBD were)
+      (VP (VBN found)
+        (ADVP (RB down) (RB there))))
+    (. .)))
+
+advmod(Authorities-3, Even-1)
+amod(Authorities-3, major-2)
+nsubjpass(found-9, Authorities-3)
+prep_including(Authorities-3, police-5)
+prep_including(Authorities-3, judges-7)
+conj_and(police-5, judges-7)
+auxpass(found-9, were-8)
+root(ROOT-0, found-9)
+advmod(there-11, down-10)
+advmod(found-9, there-11)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ same) (NNS things))
+    (VP (MD would)
+      (VP (VB happen)
+        (UCP
+          (PP (IN with)
+            (NP (NNS guns)))
+          (, ,)
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (MD would)
+                (VP (VB be)
+                  (NP (DT the) (NNS people)
+                    (S
+                      (VP (TO to)
+                        (VP
+                          (ADVP (RB illegally))
+                          (VB own)
+                          (NP (NNS guns)))))))))))))
+    (. ?)))
+
+det(things-3, The-1)
+amod(things-3, same-2)
+nsubj(happen-5, things-3)
+aux(happen-5, would-4)
+root(ROOT-0, happen-5)
+dep(happen-5, with-6)
+pobj(with-6, guns-7)
+nsubj(people-14, who-10)
+aux(people-14, would-11)
+cop(people-14, be-12)
+det(people-14, the-13)
+dep(happen-5, people-14)
+conj_and(with-6, people-14)
+aux(own-17, to-15)
+advmod(own-17, illegally-16)
+infmod(people-14, own-17)
+dobj(own-17, guns-18)
+
+(ROOT
+  (S (RB Not)
+    (VP (VB harmless)
+      (NP
+        (NP (NNS hunters))
+        (, ,)
+        (CC but)
+        (NP (NNS gangsters))
+        (CC and)
+        (NP
+          (NP (JJ other) (NNS criminals))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP are)
+                (ADJP (JJ dangerous)
+                  (PP (IN with)
+                    (NP (JJ such) (NNS weapons))))))))))
+    (. .)))
+
+neg(harmless-2, Not-1)
+root(ROOT-0, harmless-2)
+dobj(harmless-2, hunters-3)
+dobj(harmless-2, gangsters-6)
+conj_but(hunters-3, gangsters-6)
+amod(criminals-9, other-8)
+dobj(harmless-2, criminals-9)
+conj_and(hunters-3, criminals-9)
+nsubj(dangerous-12, criminals-9)
+cop(dangerous-12, are-11)
+rcmod(criminals-9, dangerous-12)
+amod(weapons-15, such-14)
+prep_with(dangerous-12, weapons-15)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB still))
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB happen))))))
+    (. .)))
+
+nsubj(going-4, It-1)
+xsubj(happen-6, It-1)
+aux(going-4, is-2)
+advmod(going-4, still-3)
+root(ROOT-0, going-4)
+aux(happen-6, to-5)
+xcomp(going-4, happen-6)
+
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (PRP we))
+    (VP
+      (ADVP (RB just))
+      (VBP need)
+      (NP (JJR tighter) (NN gun) (NNS laws))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (VP (VBG purchasing)
+            (NP (PRP them))))))
+    (. .)))
+
+advmod(need-4, Maybe-1)
+nsubj(need-4, we-2)
+advmod(need-4, just-3)
+root(ROOT-0, need-4)
+amod(laws-7, tighter-5)
+nn(laws-7, gun-6)
+dobj(need-4, laws-7)
+advmod(purchasing-9, when-8)
+advcl(need-4, purchasing-9)
+dobj(purchasing-9, them-10)
+

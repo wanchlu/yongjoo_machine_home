@@ -1,0 +1,66 @@
+(ROOT
+  (S (`` ``)
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP carry)
+          (NP (DT a) (NN ball))
+          (PRT (RP up))
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NN top))
+              (PP (IN of)
+                (NP (DT a) (NN hill))))))))
+    (VP (VBZ does)
+      (S
+        (NP (PRP it))
+        (VP (VB gain)
+          (NP (NN mass)))))
+    (. ?)))
+
+mark(carry-4, If-2)
+nsubj(carry-4, I-3)
+csubj(does-14, carry-4)
+det(ball-6, a-5)
+dobj(carry-4, ball-6)
+prt(carry-4, up-7)
+det(top-10, the-9)
+prep_to(carry-4, top-10)
+det(hill-13, a-12)
+prep_of(top-10, hill-13)
+root(ROOT-0, does-14)
+nsubj(gain-16, it-15)
+ccomp(does-14, gain-16)
+dobj(gain-16, mass-17)
+
+(ROOT
+  (NP
+    (NP (`` ``)
+      (NP (DT The) (NN ball))
+      (CC or)
+      (NP (DT the) (NN hill)))
+    (. ?)))
+
+det(ball-3, The-2)
+root(ROOT-0, ball-3)
+det(hill-6, the-5)
+conj_or(ball-3, hill-6)
+
+(ROOT
+  (S (`` ``)
+    (ADVP (RB Does))
+    (NP (DT a) (NN photon))
+    (VP (VBP have)
+      (NP (NN mass)))
+    (. ?)))
+
+advmod(have-5, Does-2)
+det(photon-4, a-3)
+nsubj(have-5, photon-4)
+root(ROOT-0, have-5)
+dobj(have-5, mass-6)
+
+(ROOT
+  (INTJ (`` ``) (UH No.)))
+
+

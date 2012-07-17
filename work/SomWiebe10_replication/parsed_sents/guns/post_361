@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (ADVP (RB Actually))
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP
+          (NP
+            (QP (RB about) (CD 2.5) (CD million))
+            (JJ defensive) (NN gun) (NNS uses))
+          (ADVP (RB annually)))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (NP
+                (QP (JJR more) (IN than) (CD 80))
+                (NN %))
+              (VP (VBP are)
+                (VP (VBG brandishing)
+                  (SBAR (IN so)
+                    (S
+                      (INTJ (UH yes))
+                      (, ,)
+                      (NP (JJ responsible) (NN gun) (NN use))
+                      (VP (VBZ does)
+                        (VP (VB make)
+                          (S
+                            (NP (PRP you))
+                            (ADJP (JJR safer))))))))))))))
+    (. .)))
+
+advmod(are-3, Actually-1)
+expl(are-3, there-2)
+root(ROOT-0, are-3)
+quantmod(million-6, about-4)
+number(million-6, 2.5-5)
+num(uses-9, million-6)
+amod(uses-9, defensive-7)
+nn(uses-9, gun-8)
+nsubj(are-3, uses-9)
+advmod(uses-9, annually-10)
+dobj(brandishing-18, which-12)
+mwe(than-14, more-13)
+quantmod(80-15, than-14)
+num(%-16, 80-15)
+nsubj(brandishing-18, %-16)
+aux(brandishing-18, are-17)
+prepc_of(uses-9, brandishing-18)
+mark(make-26, so-19)
+dep(make-26, yes-20)
+amod(use-24, responsible-22)
+nn(use-24, gun-23)
+nsubj(make-26, use-24)
+aux(make-26, does-25)
+advcl(brandishing-18, make-26)
+nsubj(safer-28, you-27)
+xcomp(make-26, safer-28)
+

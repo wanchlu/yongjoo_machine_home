@@ -1,0 +1,75 @@
+(ROOT
+  (S
+    (NP (NNP Problem))
+    (ADVP (RB there))
+    (VP (VBZ is) (, ,)
+      (S
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VB defend)
+              (NP (PRP yourself))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (MD will)
+                    (VP (VB throw)
+                      (NP (PRP YOU))
+                      (PP (IN in)
+                        (NP (NN jail))))))))))
+        (NP (NNP !!!) (NNP Gun))
+        (VP (VBZ does) (RB n't)
+          (VP (VB do)
+            (S
+              (NP (PRP you))
+              (ADJP (RB much) (JJ good))
+              (ADVP (RB there)))))))
+    (. .)))
+
+nsubj(is-3, Problem-1)
+advmod(is-3, there-2)
+root(ROOT-0, is-3)
+mark(defend-7, if-5)
+nsubj(defend-7, you-6)
+advcl(do-19, defend-7)
+dobj(defend-7, yourself-8)
+nsubj(throw-11, they-9)
+aux(throw-11, will-10)
+dep(defend-7, throw-11)
+dobj(throw-11, YOU-12)
+prep_in(throw-11, jail-14)
+nn(Gun-16, !!!-15)
+nsubj(do-19, Gun-16)
+aux(do-19, does-17)
+neg(do-19, n't-18)
+ccomp(is-3, do-19)
+nsubj(good-22, you-20)
+advmod(good-22, much-21)
+xcomp(do-19, good-22)
+advmod(good-22, there-23)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (MD would)
+      (VP (VB get)
+        (S
+          (NP (PRP you))
+          (NP
+            (NP (DT a) (NN murder) (NN sentence))
+            (PP (IN for)
+              (S
+                (VP (VBG defending)
+                  (NP (PRP yourself)))))))))
+    (. .)))
+
+nsubj(get-3, That-1)
+aux(get-3, would-2)
+root(ROOT-0, get-3)
+nsubj(sentence-7, you-4)
+det(sentence-7, a-5)
+nn(sentence-7, murder-6)
+xcomp(get-3, sentence-7)
+prepc_for(sentence-7, defending-9)
+dobj(defending-9, yourself-10)
+

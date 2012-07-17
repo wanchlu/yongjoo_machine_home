@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (NP (JJ Private) (NN healthcare) (NNS providers))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (RBR more) (JJ expensive)
+          (PP (IN than)
+            (NP
+              (NP (JJ public) (NNS providers))
+              (SBAR
+                (S
+                  (NP (PRP They))
+                  (VP (VBP take)
+                    (NP
+                      (NP
+                        (NP (JJR more) (NN money))
+                        (PP (IN for)
+                          (NP (RB overhead))))
+                      (CONJP (RB as) (RB well) (IN as))
+                      (NP (NN profit)))))))))
+        (SBAR (IN than)
+          (S
+            (NP (DT a) (JJ public) (NN system))
+            (VP (MD would))))))
+    (. .)))
+
+amod(providers-3, Private-1)
+nn(providers-3, healthcare-2)
+nsubj(expensive-6, providers-3)
+cop(expensive-6, are-4)
+advmod(expensive-6, more-5)
+root(ROOT-0, expensive-6)
+amod(providers-9, public-8)
+prep_than(expensive-6, providers-9)
+nsubj(take-11, They-10)
+rcmod(providers-9, take-11)
+amod(money-13, more-12)
+dobj(take-11, money-13)
+prep(money-13, for-14)
+pobj(for-14, overhead-15)
+dobj(take-11, profit-19)
+conj_and(money-13, profit-19)
+mark(would-24, than-20)
+det(system-23, a-21)
+amod(system-23, public-22)
+nsubj(would-24, system-23)
+dep(expensive-6, would-24)
+
+(ROOT
+  (S
+    (NP (DT Some))
+    (VP (VBP claim)
+      (SBAR (IN that)
+        (S
+          (NP (JJ private) (NNS providers))
+          (VP (VBP take)
+            (NP
+              (NP
+                (NP
+                  (QP (RB as) (JJ much) (IN as) (CD 30))
+                  (NN %))
+                (PP (IN of)
+                  (NP (DT every) (JJ healhcare) (NN dollar))))
+              (, ,)
+              (CC versus)
+              (NP
+                (NP (NNS estimates))
+                (PP (IN of)
+                  (NP
+                    (NP (RB below) (CD 10) (NN %))
+                    (PP (IN for)
+                      (NP (JJ public) (NNS providers)))))))))))
+    (. .)))
+
+nsubj(claim-2, Some-1)
+root(ROOT-0, claim-2)
+complm(take-6, that-3)
+amod(providers-5, private-4)
+nsubj(take-6, providers-5)
+ccomp(claim-2, take-6)
+quantmod(30-10, as-7)
+quantmod(30-10, much-8)
+quantmod(30-10, as-9)
+num(%-11, 30-10)
+dobj(take-6, %-11)
+det(dollar-15, every-13)
+amod(dollar-15, healhcare-14)
+prep_of(%-11, dollar-15)
+dobj(take-6, estimates-18)
+conj_versus(%-11, estimates-18)
+advmod(%-22, below-20)
+num(%-22, 10-21)
+prep_of(estimates-18, %-22)
+amod(providers-25, public-24)
+prep_for(%-22, providers-25)
+

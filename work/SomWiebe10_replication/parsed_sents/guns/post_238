@@ -1,0 +1,55 @@
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (DT an) (NN intruder))
+        (VP
+          (VP (VBZ gets)
+            (PP (IN past)
+              (NP (PRP$ my) (NN alarm))))
+          (CC and)
+          (VP (VBZ shoots)
+            (NP (PRP$ my) (NN dog))))))
+    (. .)))
+
+mark(gets-4, If-1)
+det(intruder-3, an-2)
+nsubj(gets-4, intruder-3)
+nsubj(shoots-9, intruder-3)
+root(ROOT-0, gets-4)
+poss(alarm-7, my-6)
+prep_past(gets-4, alarm-7)
+conj_and(gets-4, shoots-9)
+poss(dog-11, my-10)
+dobj(shoots-9, dog-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (VP (VBG calling)
+        (NP (CD 911))))
+    (. .)))
+
+nsubj(calling-4, I-1)
+aux(calling-4, 'm-2)
+neg(calling-4, not-3)
+root(ROOT-0, calling-4)
+dobj(calling-4, 911-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG chambering)
+        (NP (DT a) (JJ personal) (NN defense) (NN round))))
+    (. .)))
+
+nsubj(chambering-3, I-1)
+aux(chambering-3, 'm-2)
+root(ROOT-0, chambering-3)
+det(round-7, a-4)
+amod(round-7, personal-5)
+nn(round-7, defense-6)
+dobj(chambering-3, round-7)
+

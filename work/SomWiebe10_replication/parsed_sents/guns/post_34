@@ -1,0 +1,167 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ adequate) (NNS alternatives))
+        (PP (TO to)
+          (NP
+            (NP (NN assault) (NNS weapons))
+            (PP (IN for)
+              (NP (NN self-defense)))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(alternatives-4, adequate-3)
+nsubj(are-2, alternatives-4)
+nn(weapons-7, assault-6)
+prep_to(alternatives-4, weapons-7)
+prep_for(weapons-7, self-defense-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN shotgun))
+      (, ,)
+      (NP (NN pistol))
+      (, ,)
+      (CC or)
+      (NP (NN rifle)))
+    (VP (VBP are)
+      (NP
+        (NP (DT all) (JJ adequate) (NN means))
+        (PP (IN of)
+          (NP (NN self-defense)))))
+    (. .)))
+
+det(shotgun-2, A-1)
+nsubj(means-11, shotgun-2)
+conj_or(shotgun-2, pistol-4)
+nsubj(means-11, pistol-4)
+conj_or(shotgun-2, rifle-7)
+nsubj(means-11, rifle-7)
+cop(means-11, are-8)
+det(means-11, all-9)
+amod(means-11, adequate-10)
+root(ROOT-0, means-11)
+prep_of(means-11, self-defense-13)
+
+(ROOT
+  (S
+    (NP (DT These))
+    (VP (VBP are)
+      (NP
+        (NP (JJ powerful) (NNS weapons))
+        (PP (IN with)
+          (NP (JJ heavy) (JJ destructive) (NN force)))))
+    (. .)))
+
+nsubj(weapons-4, These-1)
+cop(weapons-4, are-2)
+amod(weapons-4, powerful-3)
+root(ROOT-0, weapons-4)
+amod(force-8, heavy-6)
+amod(force-8, destructive-7)
+prep_with(weapons-4, force-8)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD can)
+      (ADVP (RB easily))
+      (VP (VB kill)
+        (NP (JJ multiple) (NNS assailants))
+        (PP (IN in)
+          (NP (JJ rapid) (NN succession)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (VP (VBN used)
+              (ADVP (RB properly)))))))
+    (. .)))
+
+nsubj(kill-4, They-1)
+aux(kill-4, can-2)
+advmod(kill-4, easily-3)
+root(ROOT-0, kill-4)
+amod(assailants-6, multiple-5)
+dobj(kill-4, assailants-6)
+amod(succession-9, rapid-8)
+prep_in(kill-4, succession-9)
+advmod(used-11, when-10)
+advcl(kill-4, used-11)
+advmod(used-11, properly-12)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (EX there))
+        (VP (VBZ is)
+          (NP
+            (NP (DT any) (NN concern))
+            (PP (IN about)
+              (NP
+                (NP (DT the) (NN ability))
+                (PP (IN of)
+                  (NP (DT a) (NN gun) (NN owner)))))
+            (S
+              (VP (TO to)
+                (VP (VB wield)
+                  (NP (DT a) (NN shotgun)
+                    (CC or)
+                    (NN pistol))
+                  (ADVP (RB properly))
+                  (PP (JJ such)
+                    (NP (DT that))))))))))
+    (NP (PRP they))
+    (VP (MD can)
+      (VP (VB kill)
+        (NP (JJ multiple) (NNS assailants))
+        (, ,)
+        (SBAR (IN than)
+          (S
+            (NP (PRP they))
+            (VP (MD should)
+              (VP (VB seek)
+                (NP
+                  (NP (JJ enhanced) (NN training))
+                  (PP (RB instead) (IN of)
+                    (NP (DT an) (NN assault) (NN weapon))))))))))
+    (. .)))
+
+mark(is-3, If-1)
+expl(is-3, there-2)
+advcl(kill-24, is-3)
+det(concern-5, any-4)
+nsubj(is-3, concern-5)
+det(ability-8, the-7)
+prep_about(concern-5, ability-8)
+det(owner-12, a-10)
+nn(owner-12, gun-11)
+prep_of(ability-8, owner-12)
+aux(wield-14, to-13)
+infmod(concern-5, wield-14)
+det(shotgun-16, a-15)
+dobj(wield-14, shotgun-16)
+dobj(wield-14, pistol-18)
+conj_or(shotgun-16, pistol-18)
+advmod(wield-14, properly-19)
+prep(wield-14, such-20)
+dep(such-20, that-21)
+nsubj(kill-24, they-22)
+aux(kill-24, can-23)
+root(ROOT-0, kill-24)
+amod(assailants-26, multiple-25)
+dobj(kill-24, assailants-26)
+mark(seek-31, than-28)
+nsubj(seek-31, they-29)
+aux(seek-31, should-30)
+advcl(kill-24, seek-31)
+amod(training-33, enhanced-32)
+dobj(seek-31, training-33)
+det(weapon-38, an-36)
+nn(weapon-38, assault-37)
+prep_instead_of(training-33, weapon-38)
+

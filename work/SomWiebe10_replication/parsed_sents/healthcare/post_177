@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most) (NN investment))
+      (PP (IN in)
+        (NP (JJ medical) (NN innovation))))
+    (VP (VBZ does) (RB not)
+      (VP (VB come)
+        (PP (IN from)
+          (NP
+            (NP (NNS companies))
+            (SBAR
+              (S
+                (NP (JJ Private) (NNS companies))
+                (VP (VBP make)
+                  (PRT (RP up))
+                  (NP
+                    (NP (DT a) (JJR smaller) (NN portion))
+                    (PP (IN of)
+                      (NP
+                        (NP (DT the) (JJ total) (NN investment))
+                        (PP (IN in)
+                          (NP (JJ medical) (NN innovation)))))))))))))
+    (. .)))
+
+amod(investment-2, Most-1)
+nsubj(come-8, investment-2)
+amod(innovation-5, medical-4)
+prep_in(investment-2, innovation-5)
+aux(come-8, does-6)
+neg(come-8, not-7)
+root(ROOT-0, come-8)
+prep_from(come-8, companies-10)
+amod(companies-12, Private-11)
+nsubj(make-13, companies-12)
+rcmod(companies-10, make-13)
+prt(make-13, up-14)
+det(portion-17, a-15)
+amod(portion-17, smaller-16)
+dobj(make-13, portion-17)
+det(investment-21, the-19)
+amod(investment-21, total-20)
+prep_of(portion-17, investment-21)
+amod(innovation-24, medical-23)
+prep_in(investment-21, innovation-24)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ means)
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (JJ single-payer) (NN health) (NN care) (NN system))
+          (VP (MD would) (RB not)
+            (VP (VB see)
+              (NP (DT a) (JJ major) (NN reduction))
+              (PP (IN in)
+                (S
+                  (VP (VBG funding)
+                    (PP (IN for)
+                      (NP (JJ medical) (NN innovation)))))))))))
+    (. .)))
+
+nsubj(means-2, This-1)
+root(ROOT-0, means-2)
+complm(see-11, that-3)
+det(system-8, a-4)
+amod(system-8, single-payer-5)
+nn(system-8, health-6)
+nn(system-8, care-7)
+nsubj(see-11, system-8)
+aux(see-11, would-9)
+neg(see-11, not-10)
+ccomp(means-2, see-11)
+det(reduction-14, a-12)
+amod(reduction-14, major-13)
+dobj(see-11, reduction-14)
+prepc_in(see-11, funding-16)
+amod(innovation-19, medical-18)
+prep_for(funding-16, innovation-19)
+
+(ROOT
+  (S
+    (PP (VBG Depending)
+      (PP (IN on)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (DT the) (NN system))
+            (VP (VBZ is)
+              (VP (VBN designed)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD could)
+      (ADVP (RB even))
+      (VP (VB see)
+        (NP
+          (NP (DT an) (NN increase))
+          (PP (IN in)
+            (NP (JJ such) (NN investment))))))
+    (. .)))
+
+prepc_depending_on(see-12, on-2)
+advmod(designed-7, how-3)
+det(system-5, the-4)
+nsubjpass(designed-7, system-5)
+auxpass(designed-7, is-6)
+pcomp(see-12, designed-7)
+nsubj(see-12, it-9)
+aux(see-12, could-10)
+advmod(see-12, even-11)
+root(ROOT-0, see-12)
+det(increase-14, an-13)
+dobj(see-12, increase-14)
+amod(investment-17, such-16)
+prep_in(increase-14, investment-17)
+

@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (S
+      (ADVP (RB As) (RB much)
+        (SBAR (IN as)
+          (S
+            (NP (PRP I))
+            (VP (VBP hate)
+              (NP (PRP it))))))
+      (, ,)
+      (NP (PRP I))
+      (VP
+        (ADVP (RB just))
+        (VBP imagine)
+        (SBAR (IN if)
+          (S
+            (NP
+              (NP (DT the) (NNS teachers))
+              (PP (IN at)
+                (NP (NNP Columbine))))
+            (VP (VBD had)
+              (NP (NNS guns)))))))
+    (: ...)
+    (S
+      (NP (JJ many) (NNS lives))
+      (VP (MD would)
+        (VP (VB have)
+          (VP (VBN been)
+            (VP (VBN spared))))))
+    (. .)))
+
+advmod(much-2, As-1)
+advmod(imagine-10, much-2)
+mark(hate-5, as-3)
+nsubj(hate-5, I-4)
+ccomp(much-2, hate-5)
+dobj(hate-5, it-6)
+nsubj(imagine-10, I-8)
+advmod(imagine-10, just-9)
+root(ROOT-0, imagine-10)
+mark(had-16, if-11)
+det(teachers-13, the-12)
+nsubj(had-16, teachers-13)
+prep_at(teachers-13, Columbine-15)
+advcl(imagine-10, had-16)
+dobj(had-16, guns-17)
+amod(lives-20, many-19)
+nsubjpass(spared-24, lives-20)
+aux(spared-24, would-21)
+aux(spared-24, have-22)
+auxpass(spared-24, been-23)
+parataxis(imagine-10, spared-24)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBP suck)
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (ADVP (RB even))
+          (VP (VBP have)
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP (DT this) (NN conversation)))))))))
+    (. .)))
+
+nsubj(suck-2, It-1)
+root(ROOT-0, suck-2)
+complm(have-6, that-3)
+nsubj(have-6, we-4)
+xsubj(have-8, we-4)
+advmod(have-6, even-5)
+ccomp(suck-2, have-6)
+aux(have-8, to-7)
+xcomp(have-6, have-8)
+det(conversation-10, this-9)
+dobj(have-8, conversation-10)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (MD would)
+        (VP (VB need)
+          (NP (JJ strict) (NNS regulations)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (ADVP (RB just))
+      (VP (MD may)
+        (VP (VB be)
+          (VP (VBN needed) (: ...)
+            (ADVP (RB everywhere))))))
+    (. .)))
+
+nsubj(need-3, It-1)
+aux(need-3, would-2)
+root(ROOT-0, need-3)
+amod(regulations-5, strict-4)
+dobj(need-3, regulations-5)
+nsubjpass(needed-12, it-8)
+advmod(needed-12, just-9)
+aux(needed-12, may-10)
+auxpass(needed-12, be-11)
+conj_but(need-3, needed-12)
+advmod(needed-12, everywhere-14)
+

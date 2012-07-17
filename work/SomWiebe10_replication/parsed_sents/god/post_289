@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ teaches)
+      (SBAR (IN that)
+        (S
+          (PP (IN in)
+            (NP (DT the) (NN beginning)))
+          (NP
+            (NP (DT the) (NNP Unified) (NNP Force))
+            (, ,)
+            (NP (DT an)
+              (ADJP (JJ infinite) (, ,) (JJ unknowable))
+              (NN force))
+            (, ,))
+          (VP (VBD split)
+            (PP (IN into)
+              (NP
+                (NP (DT the) (JJ strong) (NN force))
+                (, ,)
+                (NP (DT the) (JJ weak) (NN force))
+                (, ,)
+                (CC and)
+                (NP (NN electromagnetism))))
+            (, ,)
+            (S
+              (VP (VBG creating)
+                (NP (DT the) (NN universe))))))))
+    (. .)))
+
+nsubj(teaches-2, Science-1)
+root(ROOT-0, teaches-2)
+complm(split-17, that-3)
+det(beginning-6, the-5)
+prep_in(split-17, beginning-6)
+det(Force-9, the-7)
+nn(Force-9, Unified-8)
+nsubj(split-17, Force-9)
+det(force-15, an-11)
+amod(unknowable-14, infinite-12)
+amod(force-15, unknowable-14)
+appos(Force-9, force-15)
+ccomp(teaches-2, split-17)
+det(force-21, the-19)
+amod(force-21, strong-20)
+prep_into(split-17, force-21)
+det(force-25, the-23)
+amod(force-25, weak-24)
+prep_into(split-17, force-25)
+conj_and(force-21, force-25)
+prep_into(split-17, electromagnetism-28)
+conj_and(force-21, electromagnetism-28)
+xcomp(split-17, creating-30)
+det(universe-32, the-31)
+dobj(creating-30, universe-32)
+
+(ROOT
+  (S
+    (NP (DT An) (JJ infinite) (, ,) (JJ unknowable) (NN force))
+    (VP (VBZ creates)
+      (NP (DT the) (NN universe)))
+    (. .)))
+
+det(force-5, An-1)
+amod(force-5, infinite-2)
+amod(force-5, unknowable-4)
+nsubj(creates-6, force-5)
+root(ROOT-0, creates-6)
+det(universe-8, the-7)
+dobj(creates-6, universe-8)
+
+(ROOT
+  (FRAG
+    (ADJP (RB Sound) (JJ familiar))
+    (. ?)))
+
+advmod(familiar-2, Sound-1)
+root(ROOT-0, familiar-2)
+

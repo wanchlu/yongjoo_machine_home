@@ -1,0 +1,112 @@
+(ROOT
+  (NP (NNP Darn) (NNP Skippy) (. !)))
+
+nn(Skippy-2, Darn-1)
+root(ROOT-0, Skippy-2)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT no) (JJ such) (NN thing))
+      (PP (IN as)
+        (NP
+          (NP (SYM a))
+          ('' '')
+          (VP (VBN Gun)
+            (NP (NNP Free) (NNP Zone)))))
+      ('' '')
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (JJ armed) (NNS criminals))
+          (VP (VBP are)
+            (ADJP (JJ concerned))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(thing-5, no-3)
+amod(thing-5, such-4)
+nsubj(is-2, thing-5)
+prep_as(is-2, a-7)
+partmod(a-7, Gun-9)
+nn(Zone-11, Free-10)
+dobj(Gun-9, Zone-11)
+advmod(concerned-17, where-13)
+amod(criminals-15, armed-14)
+nsubj(concerned-17, criminals-15)
+cop(concerned-17, are-16)
+advcl(is-2, concerned-17)
+
+(ROOT
+  (S
+    (PP (TO To)
+      (NP (PRP them)))
+    (, ,) (`` ``)
+    (NP (NNP Gun) (NNP Free))
+    ('' '')
+    (VP (VBZ Translates)
+      (PP (IN as) ('' '')
+        (NP (NNP Ample) (NNPS Pickings))))
+    ('' '') (. .)))
+
+prep_to(Translates-8, them-2)
+nn(Free-6, Gun-5)
+nsubj(Translates-8, Free-6)
+root(ROOT-0, Translates-8)
+nn(Pickings-12, Ample-11)
+prep_as(Translates-8, Pickings-12)
+
+(ROOT
+  (S
+    (NP (JJ Law-Abiding) (NNS citizens))
+    (VP (VBP need)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (S
+              (NP
+                (NP (DT the) (NN option))
+                (PP (IN of)
+                  (NP (NNP LTC))))
+              (VP (TO to)
+                (VP (VB protect)
+                  (NP (PRP themselves))
+                  (PP (IN against)
+                    (NP
+                      (NP (DT the) (JJ ever-growing) (NN population))
+                      (PP (IN of)
+                        (NP (JJ armed-and-violent) (NNS criminals)))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBP are)
+                            (VP (VBG running)
+                              (NP (PRP$ our) (NNS streets)))))))))))))))
+    (. .)))
+
+amod(citizens-2, Law-Abiding-1)
+nsubj(need-3, citizens-2)
+xsubj(have-5, citizens-2)
+root(ROOT-0, need-3)
+aux(have-5, to-4)
+xcomp(need-3, have-5)
+det(option-7, the-6)
+nsubj(protect-11, option-7)
+prep_of(option-7, LTC-9)
+aux(protect-11, to-10)
+ccomp(have-5, protect-11)
+xcomp(have-5, protect-11)
+dobj(protect-11, themselves-12)
+det(population-16, the-14)
+amod(population-16, ever-growing-15)
+prep_against(protect-11, population-16)
+nsubj(running-22, population-16)
+amod(criminals-19, armed-and-violent-18)
+prep_of(population-16, criminals-19)
+aux(running-22, are-21)
+rcmod(population-16, running-22)
+poss(streets-24, our-23)
+dobj(running-22, streets-24)
+

@@ -1,0 +1,55 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Definitely))
+    (, ,)
+    (NP (RB yes))
+    (. .)))
+
+dep(yes-3, Definitely-1)
+root(ROOT-0, yes-3)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB \/))
+      (PP (IN In)
+        (NP (DT the) (NNP UK)))
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (JJ strict))
+          (, ,)
+          (VP (VBN andin)
+            (NP
+              (NP (JJS most))
+              (PP (IN of)
+                (NP (NNP Europe))))
+            (ADVP (RB as) (RB well)))
+          (, ,)
+          (SBAR (IN so)
+            (S
+              (NP (FW i))
+              (VP (VBP agree)))))))
+    (, ,)
+    (FRAG
+      (INTJ (UH yes)))
+    (. .)))
+
+advmod(strict-7, \/-1)
+det(UK-4, the-3)
+prep_in(strict-7, UK-4)
+nsubj(strict-7, it-5)
+cop(strict-7, is-6)
+root(ROOT-0, strict-7)
+dobj(agree-18, strict-7)
+partmod(strict-7, andin-9)
+dobj(andin-9, most-10)
+prep_of(most-10, Europe-12)
+advmod(well-14, as-13)
+mwe(well-14, as-13)
+advmod(andin-9, well-14)
+mark(agree-18, so-16)
+nsubj(agree-18, i-17)
+dep(strict-7, agree-18)
+dep(strict-7, yes-20)
+

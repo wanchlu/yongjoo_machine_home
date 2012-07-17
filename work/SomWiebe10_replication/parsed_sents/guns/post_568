@@ -1,0 +1,341 @@
+(ROOT
+  (S
+    (PP (IN Until)
+      (NP
+        (NP (VBP the) (POS '))
+        (NX (NNP 70) (POS 's))))
+    (, ,)
+    (NP (NN congress))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN entity))
+        (SBAR
+          (WHNP (WDT which))
+          (S
+            (VP
+              (VP (VBN constructed))
+              (CC and)
+              (VP (VBN passed)
+                (NP
+                  (NP (NNS ordinances))
+                  (PP (IN for)
+                    (NP (NNP DC))))))))))
+    (. .)))
+
+poss('s-5, the-2)
+dep('s-5, 70-4)
+prep_until(entity-10, 's-5)
+nsubj(entity-10, congress-7)
+cop(entity-10, was-8)
+det(entity-10, the-9)
+root(ROOT-0, entity-10)
+nsubj(constructed-12, entity-10)
+nsubj(passed-14, entity-10)
+rcmod(entity-10, constructed-12)
+rcmod(entity-10, passed-14)
+conj_and(constructed-12, passed-14)
+dobj(passed-14, ordinances-15)
+prep_for(ordinances-15, DC-17)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (NN congress))
+        (VP
+          (VP (VBZ has))
+          (PRN (-LRB- -LRB-)
+            (VP (VBN had))
+            (-RRB- -RRB-))
+          (NP (JJR bigger) (NN fish)
+            (S
+              (VP (TO to)
+                (VP (VB fry))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD allowed)
+      (S
+        (NP (NNP DC))
+        (VP (TO to)
+          (VP (VB craft)
+            (CC and)
+            (VB pass)
+            (NP
+              (NP (NNS ordinances))
+              (PP (IN on)
+                (NP (PRP$ their) (JJ own))))))))
+    (. .)))
+
+mark(has-3, Since-1)
+nsubj(has-3, congress-2)
+advcl(allowed-13, has-3)
+dep(has-3, had-5)
+amod(fish-8, bigger-7)
+dobj(has-3, fish-8)
+aux(fry-10, to-9)
+infmod(fish-8, fry-10)
+nsubj(allowed-13, they-12)
+root(ROOT-0, allowed-13)
+nsubj(craft-16, DC-14)
+nsubj(pass-18, DC-14)
+aux(craft-16, to-15)
+xcomp(allowed-13, craft-16)
+xcomp(allowed-13, pass-18)
+conj_and(craft-16, pass-18)
+dobj(craft-16, ordinances-19)
+poss(own-22, their-21)
+prep_on(ordinances-19, own-22)
+
+(ROOT
+  (S
+    (S
+      (UCP
+        (PP (IN In)
+          (NP (CD 1975)))
+        (CC or)
+        (ADVP (RB so))))
+    (, ,)
+    (NP (DT the) (NNP DC) (NN council))
+    (VP (VBD passed)
+      (NP
+        (NP
+          (NP (DT an) (NN ordinance))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP
+                (VP
+                  (VP (VBN outlawed)
+                    (X
+                      (X (SYM \*))
+                      (S (RB all)
+                        (VP (VBG \*)
+                          (NP (JJ private) (JJ individual) (JJ new) (NN pistol) (NNS purchases))))))
+                  (, ,)
+                  (CC and)
+                  (VP (VBN required)
+                    (X
+                      (X (SYM \*))
+                      (S (RB all)
+                        (VP (VBG \*)
+                          (NP (NNS firearms))
+                          (S
+                            (VP (TO to)
+                              (VP (VB be)
+                                (VP
+                                  (ADVP (RB either))
+                                  (VBN locked)
+                                  (ADVP (RB separately))
+                                  (PP (IN from)
+                                    (NP (NN ammunition)))
+                                  (PP (IN in)
+                                    (NP (PRP$ your) (NN home))))))))))))
+                (CC or)
+                (VP (VBN disassembled)
+                  (CC and)
+                  (VBN stored))))))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB read)
+              (VP (VBN locked)
+                (PRT (RP up)))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+ccomp(passed-9, In-1)
+pobj(In-1, 1975-2)
+conj_or(In-1, so-4)
+ccomp(passed-9, so-4)
+det(council-8, the-6)
+nn(council-8, DC-7)
+nsubj(passed-9, council-8)
+root(ROOT-0, passed-9)
+det(ordinance-11, an-10)
+dobj(passed-9, ordinance-11)
+nsubj(outlawed-13, ordinance-11)
+nsubj(required-24, ordinance-11)
+nsubj(disassembled-40, ordinance-11)
+rcmod(ordinance-11, outlawed-13)
+dep(\*-16, \*-14)
+advmod(\*-16, all-15)
+dep(outlawed-13, \*-16)
+amod(purchases-21, private-17)
+amod(purchases-21, individual-18)
+amod(purchases-21, new-19)
+nn(purchases-21, pistol-20)
+dobj(\*-16, purchases-21)
+rcmod(ordinance-11, required-24)
+conj_and(outlawed-13, required-24)
+dep(\*-27, \*-25)
+advmod(\*-27, all-26)
+dep(required-24, \*-27)
+dobj(\*-27, firearms-28)
+aux(locked-32, to-29)
+auxpass(locked-32, be-30)
+advmod(locked-32, either-31)
+xcomp(\*-27, locked-32)
+advmod(locked-32, separately-33)
+prep_from(locked-32, ammunition-35)
+poss(home-38, your-37)
+prep_in(locked-32, home-38)
+rcmod(ordinance-11, disassembled-40)
+conj_or(outlawed-13, disassembled-40)
+conj_or(outlawed-13, stored-42)
+conj_and(disassembled-40, stored-42)
+dep(ordinance-11, read-44)
+dep(read-44, locked-45)
+prt(locked-45, up-46)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Pistols))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBD were)
+            (ADVP (RB previously))
+            (VP (VBN owned)
+              (PP (IN before)
+                (NP (DT the) (JJ new) (NN ordinance))))))))
+    (VP (VBD were)
+      (VP (VBN required)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN registered)))))))
+    (. .)))
+
+nsubjpass(owned-5, Pistols-1)
+nsubjpass(required-11, Pistols-1)
+xsubj(registered-14, Pistols-1)
+auxpass(owned-5, were-3)
+advmod(owned-5, previously-4)
+rcmod(Pistols-1, owned-5)
+det(ordinance-9, the-7)
+amod(ordinance-9, new-8)
+prep_before(owned-5, ordinance-9)
+auxpass(required-11, were-10)
+root(ROOT-0, required-11)
+aux(registered-14, to-12)
+auxpass(registered-14, be-13)
+xcomp(required-11, registered-14)
+
+(ROOT
+  (S ('' '')
+    (S
+      (FRAG (: ...)
+        (ADVP (IN if))
+        (NP
+          (NP (PRP you))
+          (NP
+            (ADJP (RB really) (JJ feel))
+            (DT that))))
+      (NP (PRP you))
+      (VP (MD can) (RB not)
+        (VP (VB protect)
+          (NP (PRP yourself))
+          (PP (IN without)
+            (NP (DT a) (NN handgun))))))
+    (, ,)
+    (NP (NN practice) (JJ civil) (NN disobedience))
+    (VP (VBZ responsibly))
+    (: ...)))
+
+dep(you-4, if-3)
+dep(protect-11, you-4)
+advmod(feel-6, really-5)
+dep(you-4, feel-6)
+dep(feel-6, that-7)
+nsubj(protect-11, you-8)
+aux(protect-11, can-9)
+neg(protect-11, not-10)
+ccomp(responsibly-20, protect-11)
+dobj(protect-11, yourself-12)
+det(handgun-15, a-14)
+prep_without(protect-11, handgun-15)
+nn(disobedience-19, practice-17)
+amod(disobedience-19, civil-18)
+nsubj(responsibly-20, disobedience-19)
+root(ROOT-0, responsibly-20)
+
+(ROOT
+  (S ('' '')
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (NN something))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (MD would)
+              (VP (VB like)
+                (S
+                  (NP (PRP you)
+                    (PRN (-LRB- -LRB-)
+                      (CC and)
+                      (NP
+                        (NP (NN everyone) (JJ else) (NN reading))
+                        (NP (DT this)))
+                      (-RRB- -RRB-)))
+                  (VP (TO to)
+                    (VP (VB read)))))))))
+      (: :) (`` ``)
+      (ADJP (JJ Letter)
+        (PP (IN from)
+          (NP (DT a) (NNP Birmingham) (NN Jail))))
+      ('' '')
+      (PP (IN by)
+        (NP (NNP Martin) (NNP Luther) (NNP King))))
+    (. .)))
+
+expl(is-3, There-2)
+root(ROOT-0, is-3)
+nsubj(is-3, something-4)
+dobj(like-8, something-4)
+complm(like-8, that-5)
+nsubj(like-8, I-6)
+aux(like-8, would-7)
+dep(something-4, like-8)
+nsubj(read-18, you-9)
+dep(reading-14, and-11)
+nn(reading-14, everyone-12)
+amod(reading-14, else-13)
+dep(you-9, reading-14)
+dep(reading-14, this-15)
+aux(read-18, to-17)
+xcomp(like-8, read-18)
+dep(is-3, Letter-21)
+det(Jail-25, a-23)
+nn(Jail-25, Birmingham-24)
+prep_from(Letter-21, Jail-25)
+nn(King-30, Martin-28)
+nn(King-30, Luther-29)
+prep_by(is-3, King-30)
+
+(ROOT
+  (S
+    (VP (VB Let)
+      (SBAR
+        (S
+          (NP (PRP us))
+          (VP (VBP know)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP you))
+                (VP (VBP think))))))))
+    (. .)))
+
+root(ROOT-0, Let-1)
+nsubj(know-3, us-2)
+ccomp(Let-1, know-3)
+dobj(think-6, what-4)
+nsubj(think-6, you-5)
+ccomp(know-3, think-6)
+
+(ROOT
+  (NP (NN http:\/\/www.africa.upenn.edu\/Articles_Gen\/Letter_Birmingham.html)))
+
+root(ROOT-0, http:\/\/www.africa.upenn.edu\/Articles_Gen\/Letter_Birmingham.html-1)
+

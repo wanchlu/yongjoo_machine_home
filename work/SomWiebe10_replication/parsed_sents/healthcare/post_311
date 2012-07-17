@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD would)
+        (VP (VB LOVE)
+          (S
+            (VP (TO to)
+              (VP (VB have)
+                (NP (JJ universal) (NN heatlthcare))))))))
+    (, ,)
+    (CC but)
+    (S
+      (ADVP (RB out))
+      (NP (NN debt) (RB just))
+      (VP (VBZ happens)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP
+                (QP ($ $) (CD 53) (CD TRILLION)))
+              (, ,)
+              (SBAR (IN so)
+                (S
+                  (NP (PRP I))
+                  (VP (VBP guess)
+                    (SBAR
+                      (S
+                        (NP (PRP we))
+                        (VP (MD can) (RB not)
+                          (VP (VB afford)
+                            (NP (PRP it))))))))))))))
+    (. .)))
+
+nsubj(LOVE-3, I-1)
+xsubj(have-5, I-1)
+aux(LOVE-3, would-2)
+root(ROOT-0, LOVE-3)
+aux(have-5, to-4)
+xcomp(LOVE-3, have-5)
+amod(heatlthcare-7, universal-6)
+dobj(have-5, heatlthcare-7)
+advmod(happens-13, out-10)
+nsubj(happens-13, debt-11)
+xsubj($-16, debt-11)
+advmod(debt-11, just-12)
+conj_but(LOVE-3, happens-13)
+aux($-16, to-14)
+cop($-16, be-15)
+xcomp(happens-13, $-16)
+number($-16, 53-17)
+number($-16, TRILLION-18)
+mark(guess-22, so-20)
+nsubj(guess-22, I-21)
+advcl($-16, guess-22)
+nsubj(afford-26, we-23)
+aux(afford-26, can-24)
+neg(afford-26, not-25)
+ccomp(guess-22, afford-26)
+dobj(afford-26, it-27)
+

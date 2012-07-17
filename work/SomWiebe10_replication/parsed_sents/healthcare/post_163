@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care) (NNS systems))
+    (VP (VBP incentivize)
+      (S
+        (VP (VBG improving)
+          (NP (JJ patient) (NN health)))))
+    (. .)))
+
+nn(systems-4, Universal-1)
+nn(systems-4, health-2)
+nn(systems-4, care-3)
+nsubj(incentivize-5, systems-4)
+root(ROOT-0, incentivize-5)
+xcomp(incentivize-5, improving-6)
+amod(health-8, patient-7)
+dobj(improving-6, health-8)
+
+(ROOT
+  (S
+    (NP (JJ Many) (JJ free) (JJ universal) (NN health) (NN care) (NNS systems))
+    (VP (VBP provide)
+      (NP (NNS incentives))
+      (PP (TO to)
+        (NP (NNS doctors)))
+      (S
+        (VP (TO to)
+          (VP (VB improve)
+            (NP
+              (NP (DT the) (NN health))
+              (PP (IN of)
+                (NP (PRP$ their) (NNS patients))))))))
+    (. .)))
+
+amod(systems-6, Many-1)
+amod(systems-6, free-2)
+amod(systems-6, universal-3)
+nn(systems-6, health-4)
+nn(systems-6, care-5)
+nsubj(provide-7, systems-6)
+xsubj(improve-12, systems-6)
+root(ROOT-0, provide-7)
+dobj(provide-7, incentives-8)
+prep_to(provide-7, doctors-10)
+aux(improve-12, to-11)
+xcomp(provide-7, improve-12)
+det(health-14, the-13)
+dobj(improve-12, health-14)
+poss(patients-17, their-16)
+prep_of(health-14, patients-17)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ contrasts)
+      (PP (IN with)
+        (NP
+          (NP (JJ for-profit) (NN health) (NN care) (NNS systems))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP do) (RB not)
+                (VP (VB provide)
+                  (NP (JJ financial) (NNS incentives))
+                  (PP (TO to)
+                    (NP (NNS doctors)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB improve)
+                        (NP
+                          (NP (DT the) (NN health))
+                          (PP (IN of)
+                            (NP (PRP$ their) (NNS patients))))
+                        (, ,)
+                        (SBAR (RB largely) (IN because)
+                          (S
+                            (NP (JJR healthier) (NNS patients))
+                            (VP (MD would)
+                              (VP (VB mean)
+                                (NP (JJR lower) (NNS profits))))))))))))))))
+    (. .)))
+
+nsubj(contrasts-2, This-1)
+root(ROOT-0, contrasts-2)
+amod(systems-7, for-profit-4)
+nn(systems-7, health-5)
+nn(systems-7, care-6)
+prep_with(contrasts-2, systems-7)
+nsubj(provide-11, systems-7)
+aux(provide-11, do-9)
+neg(provide-11, not-10)
+rcmod(systems-7, provide-11)
+amod(incentives-13, financial-12)
+dobj(provide-11, incentives-13)
+prep_to(provide-11, doctors-15)
+aux(improve-17, to-16)
+xcomp(provide-11, improve-17)
+det(health-19, the-18)
+dobj(improve-17, health-19)
+poss(patients-22, their-21)
+prep_of(health-19, patients-22)
+advmod(mean-29, largely-24)
+dep(mean-29, because-25)
+amod(patients-27, healthier-26)
+nsubj(mean-29, patients-27)
+aux(mean-29, would-28)
+dep(improve-17, mean-29)
+amod(profits-31, lower-30)
+dobj(mean-29, profits-31)
+

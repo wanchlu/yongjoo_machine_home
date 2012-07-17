@@ -1,0 +1,165 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP
+            (NP (NN healthcare))
+            (PP (IN for)
+              (NP (DT all))))
+          (VP (VBZ is)
+            (NP (DT a) (JJ worthwhile) (NN goal))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(goal-9, healthcare-3)
+prep_for(healthcare-3, all-5)
+cop(goal-9, is-6)
+det(goal-9, a-7)
+amod(goal-9, worthwhile-8)
+ccomp(think-2, goal-9)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (PRP we))
+        (VP (VBD worked)
+          (ADJP (JJ hard)
+            (S
+              (VP (TO to)
+                (VP (VB put)
+                  (NP (DT the) (JJ first) (NN man))
+                  (PP (IN on)
+                    (NP (DT the) (NN moon))))))))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD could)
+      (VP (VB work)
+        (ADJP (JJ hard)
+          (S
+            (VP (TO to)
+              (VP (VB help)
+                (NP
+                  (NP (DT those))
+                  (PP (IN in)
+                    (NP
+                      (NP (NN need))
+                      (PP (IN of)
+                        (NP (NN medicine) (, ,) (NN surgery) (, ,) (FW etc.))))))))))))
+    (. .)))
+
+mark(worked-3, As-1)
+nsubj(worked-3, we-2)
+advcl(work-16, worked-3)
+acomp(worked-3, hard-4)
+aux(put-6, to-5)
+xcomp(hard-4, put-6)
+det(man-9, the-7)
+amod(man-9, first-8)
+dobj(put-6, man-9)
+det(moon-12, the-11)
+prep_on(put-6, moon-12)
+nsubj(work-16, we-14)
+aux(work-16, could-15)
+root(ROOT-0, work-16)
+acomp(work-16, hard-17)
+aux(help-19, to-18)
+xcomp(hard-17, help-19)
+dobj(help-19, those-20)
+prep_in(those-20, need-22)
+nn(surgery-26, medicine-24)
+prep_of(need-22, surgery-26)
+dep(surgery-26, etc.-28)
+
+(ROOT
+  (S
+    (ADVP (RB Unfortunately))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD can) (RB not)
+      (VP (VB think)
+        (PP (IN of)
+          (NP (JJ many) (NNS programs)))
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN government))
+            (VP (VBZ runs)
+              (ADVP (RB well)))))))
+    (. .)))
+
+advmod(think-6, Unfortunately-1)
+nsubj(think-6, I-3)
+aux(think-6, can-4)
+neg(think-6, not-5)
+root(ROOT-0, think-6)
+amod(programs-9, many-8)
+prep_of(think-6, programs-9)
+complm(runs-13, that-10)
+det(government-12, the-11)
+nsubj(runs-13, government-12)
+ccomp(think-6, runs-13)
+advmod(runs-13, well-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN healthcare) (NN system))
+      (VP (VBN run)
+        (PP (IN by)
+          (NP (DT the) (NN government)))))
+    (VP (MD may)
+      (VP (VB end)
+        (PRT (RP up))
+        (PP (IN as)
+          (NP (DT a) (NN disaster)))))
+    (. .)))
+
+det(system-3, A-1)
+nn(system-3, healthcare-2)
+nsubj(end-9, system-3)
+partmod(system-3, run-4)
+det(government-7, the-6)
+agent(run-4, government-7)
+aux(end-9, may-8)
+root(ROOT-0, end-9)
+prt(end-9, up-10)
+det(disaster-13, a-12)
+prep_as(end-9, disaster-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP want)
+        (NP (JJ Universal) (NN healthcare))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ needs)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP (JJ private))))))))))
+    (. .)))
+
+nsubj(want-2, I-1)
+root(ROOT-0, want-2)
+amod(healthcare-4, Universal-3)
+dobj(want-2, healthcare-4)
+nsubj(think-8, I-7)
+conj_but(want-2, think-8)
+nsubj(needs-10, it-9)
+xsubj(private-13, it-9)
+ccomp(think-8, needs-10)
+aux(private-13, to-11)
+cop(private-13, be-12)
+xcomp(needs-10, private-13)
+

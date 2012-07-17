@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT an) (NN atom))
+      (PP (IN in)
+        (NP (DT this) (NN universe))))
+    (VP (MD must)
+      (VP (VB have)
+        (VP (VBN been)
+          (VP (VBN created)
+            (PP (IN by)
+              (NP (NN someone)))))))
+    (. .)))
+
+det(atom-2, an-1)
+nsubjpass(created-9, atom-2)
+det(universe-5, this-4)
+prep_in(atom-2, universe-5)
+aux(created-9, must-6)
+aux(created-9, have-7)
+auxpass(created-9, been-8)
+root(ROOT-0, created-9)
+agent(created-9, someone-11)
+
+(ROOT
+  (SBARQ (RB So)
+    (WHNP (WP who))
+    (SQ
+      (VP (VBD created)
+        (NP (PRP it))))
+    (. ?)))
+
+advmod(created-3, So-1)
+nsubj(created-3, who-2)
+root(ROOT-0, created-3)
+dobj(created-3, it-4)
+
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBP couldnt)
+      (ADVP (RB just))
+      (VP (VB have)
+        (VP (VBN popped)
+          (PRT (RP out))
+          (PP (IN from)
+            (NP (RB somewhere))))))
+    (. .)))
+
+nsubj(couldnt-2, it-1)
+root(ROOT-0, couldnt-2)
+advmod(couldnt-2, just-3)
+aux(popped-5, have-4)
+dep(couldnt-2, popped-5)
+prt(popped-5, out-6)
+prep(popped-5, from-7)
+pobj(from-7, somewhere-8)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB visit)
+      (NP
+        (NP (DT this))
+        (VP (VBN linked))))
+    (. .)))
+
+dep(visit-2, Please-1)
+root(ROOT-0, visit-2)
+dobj(visit-2, this-3)
+partmod(this-3, linked-4)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ explains)
+      (NP
+        (NP (DT the) (NN science))
+        (PP (IN of)
+          (NP (DT the) (NN quraan) (NN http:\/\/www.islam-guide.com\/)))))))
+
+nsubj(explains-2, It-1)
+root(ROOT-0, explains-2)
+det(science-4, the-3)
+dobj(explains-2, science-4)
+det(http:\/\/www.islam-guide.com\/-8, the-6)
+nn(http:\/\/www.islam-guide.com\/-8, quraan-7)
+prep_of(science-4, http:\/\/www.islam-guide.com\/-8)
+

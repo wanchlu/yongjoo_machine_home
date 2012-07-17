@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD ca) (RB n't)
+      (VP (VB tell)
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBP 're)
+              (VP (VBG being)
+                (ADJP (JJ serious))))))))
+    (: ...)))
+
+nsubj(tell-4, I-1)
+aux(tell-4, ca-2)
+neg(tell-4, n't-3)
+root(ROOT-0, tell-4)
+mark(serious-9, if-5)
+nsubj(serious-9, you-6)
+aux(serious-9, 're-7)
+cop(serious-9, being-8)
+advcl(tell-4, serious-9)
+
+(ROOT
+  (S
+    (ADVP (RB Basically))
+    (, ,)
+    (NP (NNS socialists))
+    (VP (VBP want)
+      (NP
+        (NP (NN government) (NN management))
+        (PP (IN of)
+          (NP (DT the) (NN economy))))
+      (, ,)
+      (SBAR (IN while)
+        (S
+          (NP (NNS capitalists))
+          (VP (VBP want)
+            (NP (DT an) (JJ unregulated) (JJ free) (NN market))))))
+    (. .)))
+
+advmod(want-4, Basically-1)
+nsubj(want-4, socialists-3)
+root(ROOT-0, want-4)
+nn(management-6, government-5)
+dobj(want-4, management-6)
+det(economy-9, the-8)
+prep_of(management-6, economy-9)
+mark(want-13, while-11)
+nsubj(want-13, capitalists-12)
+advcl(want-4, want-13)
+det(market-17, an-14)
+amod(market-17, unregulated-15)
+amod(market-17, free-16)
+dobj(want-13, market-17)
+
+(ROOT
+  (S
+    (S
+      (VP (VBN Hit)
+        (PRT (RP up))))
+    (VP (VBP google)
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (NP (JJR more) (NN info))))))
+    (. .)))
+
+csubj(google-3, Hit-1)
+prt(Hit-1, up-2)
+root(ROOT-0, google-3)
+mark(want-6, if-4)
+nsubj(want-6, you-5)
+advcl(google-3, want-6)
+amod(info-8, more-7)
+dobj(want-6, info-8)
+

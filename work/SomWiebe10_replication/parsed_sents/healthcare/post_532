@@ -1,0 +1,134 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP agree)))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADVP (RB also))
+        (VP (VBG wondering)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NNS people))
+              (VP (VBP think)
+                (S
+                  (NP (NNS needs))
+                  (VP (TO to)
+                    (VP (VB improve))))))))))
+    (. ?)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+nsubj(wondering-8, I-5)
+aux(wondering-8, 'm-6)
+advmod(wondering-8, also-7)
+conj_but(agree-2, wondering-8)
+dep(think-11, what-9)
+nsubj(think-11, people-10)
+ccomp(wondering-8, think-11)
+nsubj(improve-14, needs-12)
+aux(improve-14, to-13)
+xcomp(think-11, improve-14)
+
+(ROOT
+  (SBARQ
+    (SBARQ
+      (WHNP (WP What))
+      (SQ (VBP are)
+        (NP
+          (NP (DT some))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (NNS flaws))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP are)
+                    (ADJP (JJ apparent)
+                      (PP (IN in)
+                        (NP (DT the) (JJ current) (NN system))))))))))))
+    (CC and)
+    (SBARQ
+      (WHADVP (WRB how))
+      (SQ (MD will)
+        (NP (NNP Universal) (NNP Healthcare))
+        (VP (VB fix)
+          (NP (DT these) (NNS flaws))))
+      (. ?))))
+
+attr(are-2, What-1)
+root(ROOT-0, are-2)
+nsubj(are-2, some-3)
+det(flaws-6, the-5)
+prep_of(some-3, flaws-6)
+nsubj(apparent-9, flaws-6)
+cop(apparent-9, are-8)
+rcmod(flaws-6, apparent-9)
+det(system-13, the-11)
+amod(system-13, current-12)
+prep_in(apparent-9, system-13)
+advmod(fix-19, how-15)
+aux(fix-19, will-16)
+nn(Healthcare-18, Universal-17)
+nsubj(fix-19, Healthcare-18)
+conj_and(are-2, fix-19)
+det(flaws-21, these-20)
+dobj(fix-19, flaws-21)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP oppose)
+          (NP (NNP Universal) (NNP Healthcare)))))
+    (, ,)
+    (WHNP
+      (WHNP (WP what))
+      (PP (IN about)
+        (NP (DT the) (JJ current) (NN system))))
+    (SQ (VBP do)
+      (NP (PRP you))
+      (VP (VB think)
+        (NP (NNS works))
+        (ADVP (RB well))))
+    (. ?)))
+
+mark(oppose-3, If-1)
+nsubj(oppose-3, you-2)
+advcl(think-14, oppose-3)
+nn(Healthcare-5, Universal-4)
+dobj(oppose-3, Healthcare-5)
+dep(think-14, what-7)
+det(system-11, the-9)
+amod(system-11, current-10)
+prep_about(what-7, system-11)
+aux(think-14, do-12)
+nsubj(think-14, you-13)
+root(ROOT-0, think-14)
+dobj(think-14, works-15)
+advmod(think-14, well-16)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBZ is)
+      (NP (DT the) (JJ current) (NN system))
+      (ADJP (JJR better)
+        (PP (IN than)
+          (NP (NNP Universal) (NNP Healthcare)))))
+    (. ?)))
+
+advmod(better-6, How-1)
+cop(better-6, is-2)
+det(system-5, the-3)
+amod(system-5, current-4)
+nsubj(better-6, system-5)
+root(ROOT-0, better-6)
+nn(Healthcare-9, Universal-8)
+prep_than(better-6, Healthcare-9)
+

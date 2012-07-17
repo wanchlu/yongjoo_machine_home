@@ -1,0 +1,164 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBD missed)
+            (NP (DT the) (NN point))
+            (ADVP (RB completely))))))
+    (. .)))
+
+nsubj(think-2, i-1)
+root(ROOT-0, think-2)
+nsubj(missed-4, you-3)
+ccomp(think-2, missed-4)
+det(point-6, the-5)
+dobj(missed-4, point-6)
+advmod(missed-4, completely-7)
+
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBG referring)
+        (PP (TO to)
+          (NP
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (MD can)
+                  (VP (VB be)
+                    (VP (VBN considered)
+                      (NP (DT a) (NN right)))))))
+            (CC and)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (VBZ is) (RB n't))))))))
+    (. .)))
+
+nsubj(referring-3, he-1)
+aux(referring-3, was-2)
+root(ROOT-0, referring-3)
+nsubjpass(considered-8, what-5)
+aux(considered-8, can-6)
+auxpass(considered-8, be-7)
+prep_to(referring-3, considered-8)
+det(right-10, a-9)
+dobj(considered-8, right-10)
+nsubj(is-13, what-12)
+prep_to(referring-3, is-13)
+conj_and(considered-8, is-13)
+neg(is-13, n't-14)
+
+(ROOT
+  (S
+    (ADVP (RB obviously))
+    (NP (PRP we))
+    (VP (VBP need)
+      (SBAR
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (NP
+                  (NP (NN care))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS people))
+                      (PP (IN with)
+                        (NP
+                          (NP (JJ critical) (NNS conditions))
+                          (PRN (-LRB- -LRB-)
+                            (PP (JJ such) (IN as)
+                              (NP (NN car) (NNS accidents)))
+                            (-RRB- -RRB-)))))))))))
+        (, ,)
+        (CC but)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (DT the) (NN fuck))
+            (VP (VBZ is)
+              (ADVP
+                (NP (DT a) (NN check))
+                (RB up))
+              (VP (VBN considered)
+                (NP (DT a) (`` ``) (NN right) ('' ''))))))))
+    (. ?)))
+
+advmod(need-3, obviously-1)
+nsubj(need-3, we-2)
+root(ROOT-0, need-3)
+aux(take-5, to-4)
+dep(need-3, take-5)
+dobj(take-5, care-6)
+prep_of(care-6, people-8)
+amod(conditions-11, critical-10)
+prep_with(people-8, conditions-11)
+nn(accidents-16, car-15)
+prep_such_as(conditions-11, accidents-16)
+advmod(considered-27, why-20)
+det(fuck-22, the-21)
+nsubjpass(considered-27, fuck-22)
+auxpass(considered-27, is-23)
+det(check-25, a-24)
+npadvmod(up-26, check-25)
+advmod(considered-27, up-26)
+dep(need-3, considered-27)
+conj_but(take-5, considered-27)
+det(right-30, a-28)
+dobj(considered-27, right-30)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP America) (POS 's))
+      (NNP Constitution))
+    (VP (VBZ considers)
+      (NP (PRP$ our) (NNS rights))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (PRP$ our) (NN God))
+              (VP (VBN given)
+                (NP (NNS rights))
+                (`` ``)
+                (PP (IN by)
+                  (NP (PRP$ our) (NN creator)))
+                ('' '')))))))
+    (. .)))
+
+poss(Constitution-3, America-1)
+nsubj(considers-4, Constitution-3)
+root(ROOT-0, considers-4)
+poss(rights-6, our-5)
+dobj(considers-4, rights-6)
+aux(God-10, to-7)
+cop(God-10, be-8)
+poss(God-10, our-9)
+xcomp(considers-4, God-10)
+partmod(God-10, given-11)
+dobj(given-11, rights-12)
+poss(creator-16, our-15)
+agent(given-11, creator-16)
+
+(ROOT
+  (SINV (RB Not)
+    (VP (VBD created))
+    (NP
+      (NP (NNS rights))
+      (, ,)
+      (PP (JJ such) (IN as)
+        (NP (NN health) (NN care))))
+    (. .)))
+
+dep(created-2, Not-1)
+root(ROOT-0, created-2)
+nsubj(created-2, rights-3)
+nn(care-8, health-7)
+prep_such_as(rights-3, care-8)
+

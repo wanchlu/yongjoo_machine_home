@@ -1,0 +1,458 @@
+(ROOT
+  (S (IN So)
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN been)
+        (ADVP (RB here)
+          (PP (IN for)
+            (NP (DT a) (NN while))))
+        (ADVP (RB now))))
+    (. .)))
+
+dep(been-4, So-1)
+nsubj(been-4, I-2)
+aux(been-4, 've-3)
+root(ROOT-0, been-4)
+advmod(been-4, here-5)
+det(while-8, a-7)
+prep_for(here-5, while-8)
+advmod(been-4, now-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD 'll)
+      (ADVP (RB happily))
+      (VP (VB tell)
+        (NP (PRP you))
+        (PP (IN about)
+          (SBAR
+            (WHADJP (RB exactly) (WP what))
+            (S
+              (NP (JJ socialized) (NN medicine))
+              (VP (VBZ is)
+                (ADJP (JJ like))))))))
+    (. .)))
+
+nsubj(tell-4, I-1)
+aux(tell-4, 'll-2)
+advmod(tell-4, happily-3)
+root(ROOT-0, tell-4)
+dobj(tell-4, you-5)
+dep(like-12, exactly-7)
+dep(exactly-7, what-8)
+amod(medicine-10, socialized-9)
+nsubj(like-12, medicine-10)
+cop(like-12, is-11)
+prepc_about(tell-4, like-12)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ free) (NNS clinics))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJ large) (NNS towns))
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (VBP spend)
+                  (NP (NN time))
+                  (PP (IN in)))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(clinics-4, free-3)
+nsubj(are-2, clinics-4)
+det(towns-8, the-6)
+amod(towns-8, large-7)
+prep_in(clinics-4, towns-8)
+complm(spend-11, that-9)
+nsubj(spend-11, I-10)
+dep(towns-8, spend-11)
+dobj(spend-11, time-12)
+prep(spend-11, in-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP go)
+        (PRT (RP in))
+        (PP (IN with)
+          (NP (DT any) (NN problem)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB get)
+          (PRT (RP in))
+          (S
+            (VP (TO to)
+              (VP (VB see)
+                (NP (DT a) (NN doctor))
+                (PP (IN within)
+                  (NP (DT an) (NN hour)))))))))
+    (. .)))
+
+nsubj(go-2, I-1)
+root(ROOT-0, go-2)
+prt(go-2, in-3)
+det(problem-6, any-5)
+prep_with(go-2, problem-6)
+nsubj(get-11, I-9)
+xsubj(see-14, I-9)
+aux(get-11, can-10)
+conj_and(go-2, get-11)
+prt(get-11, in-12)
+aux(see-14, to-13)
+xcomp(get-11, see-14)
+det(doctor-16, a-15)
+dobj(see-14, doctor-16)
+det(hour-19, an-18)
+prep_within(see-14, hour-19)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP want)
+          (S
+            (VP (TO to)
+              (VP (VB go)
+                (VP (VB see)
+                  (NP (PRP$ my) (NN doctor)))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VB schedule)
+      (NP (DT an) (NN appointment))
+      (PP (RB just) (IN like)
+        (ADJP (JJ normal))))
+    (. .)))
+
+mark(want-3, If-1)
+nsubj(want-3, I-2)
+xsubj(go-5, I-2)
+advcl(schedule-11, want-3)
+aux(go-5, to-4)
+xcomp(want-3, go-5)
+xcomp(go-5, see-6)
+poss(doctor-8, my-7)
+dobj(see-6, doctor-8)
+nsubj(schedule-11, I-10)
+root(ROOT-0, schedule-11)
+det(appointment-13, an-12)
+dobj(schedule-11, appointment-13)
+advmod(schedule-11, just-14)
+prep_like(schedule-11, normal-16)
+
+(ROOT
+  (S
+    (ADVP (RB Now))
+    (NP (PRP it))
+    (VP (VBZ comes)
+      (PP (TO to)
+        (NP (DT the) (NNS costs))))
+    (. .)))
+
+advmod(comes-3, Now-1)
+nsubj(comes-3, it-2)
+root(ROOT-0, comes-3)
+det(costs-6, the-5)
+prep_to(comes-3, costs-6)
+
+(ROOT
+  (NP
+    (NP
+      (NP (CD 57) (JJ Canadian) (NNS dollars))
+      (NP (DT a) (NN month)))
+    (, ,)
+    (NP
+      (NP
+        (QP (CC or)
+          (RB roughly)))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (PRP$ my) (NN bus) (NN pass))
+          (VP (VBZ costs)
+            (NP (PRP me))))))
+    (. .)))
+
+num(dollars-3, 57-1)
+amod(dollars-3, Canadian-2)
+root(ROOT-0, dollars-3)
+det(month-5, a-4)
+dep(dollars-3, month-5)
+cc(roughly-8, or-7)
+appos(dollars-3, roughly-8)
+dobj(costs-13, roughly-8)
+rel(costs-13, what-9)
+poss(pass-12, my-10)
+nn(pass-12, bus-11)
+nsubj(costs-13, pass-12)
+rcmod(roughly-8, costs-13)
+dobj(costs-13, me-14)
+
+(ROOT
+  (S
+    (NP (NNP Feel))
+    (VP (VBP free)
+      (S
+        (VP (TO to)
+          (VP (VB move)))))
+    (. .)))
+
+nsubj(free-2, Feel-1)
+xsubj(move-4, Feel-1)
+root(ROOT-0, free-2)
+aux(move-4, to-3)
+xcomp(free-2, move-4)
+
+(ROOT
+  (S
+    (NP (DT The) (NN citizenship) (NN test))
+    (VP (VBZ is)
+      (ADJP (RB pretty) (JJ easy)))
+    (. .)))
+
+det(test-3, The-1)
+nn(test-3, citizenship-2)
+nsubj(easy-6, test-3)
+cop(easy-6, is-4)
+advmod(easy-6, pretty-5)
+root(ROOT-0, easy-6)
+
+(ROOT
+  (S
+    (LST (JJ First))
+    (PP (IN of)
+      (NP (DT all)))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP get)
+      (NP (DT a) (NN card)))
+    (. .)))
+
+dep(get-6, First-1)
+prep_of(get-6, all-3)
+nsubj(get-6, you-5)
+root(ROOT-0, get-6)
+det(card-8, a-7)
+dobj(get-6, card-8)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (VP (VBN got)
+          (NP
+            (NP (DT a) (NN number))
+            (PP (IN on)
+              (NP (PRP it)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (VBP have)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (DT that) (NN number))
+              (PP (TO to)
+                (NP (PRP them)))
+              (PP (IN for)
+                (NP (NN everything))))))))
+    (. .)))
+
+nsubjpass(got-3, It-1)
+auxpass(got-3, 's-2)
+root(ROOT-0, got-3)
+det(number-5, a-4)
+dobj(got-3, number-5)
+prep_on(number-5, it-7)
+nsubj(have-11, you-10)
+xsubj(give-13, you-10)
+conj_and(got-3, have-11)
+aux(give-13, to-12)
+xcomp(have-11, give-13)
+det(number-15, that-14)
+dobj(give-13, number-15)
+prep_to(give-13, them-17)
+prep_for(give-13, everything-19)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP I))
+    (VP (VBP 've)
+      (VP (VBN had)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PP (TO to)
+                (NP (DT the) (NNP ER)))
+              (NP
+                (NP (DT a) (NN couple))
+                (PP (IN of)
+                  (NP (NNS times)))))))))
+    (. .)))
+
+dep(had-4, So-1)
+nsubj(had-4, I-2)
+xsubj(go-6, I-2)
+aux(had-4, 've-3)
+root(ROOT-0, had-4)
+aux(go-6, to-5)
+xcomp(had-4, go-6)
+det(ER-9, the-8)
+prep_to(go-6, ER-9)
+det(couple-11, a-10)
+dobj(go-6, couple-11)
+prep_of(couple-11, times-13)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBD was)
+      (ADVP (RB indeed))
+      (NP (DT a) (NN wait)))
+    (. .)))
+
+expl(was-2, There-1)
+root(ROOT-0, was-2)
+advmod(was-2, indeed-3)
+det(wait-5, a-4)
+nsubj(was-2, wait-5)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBD was)
+      (ADJP (RB very) (JJ long))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP it))
+          (VP (VBD was)
+            (ADVP
+              (ADVP (RB very) (JJ late)
+                (PP (IN at)
+                  (NP
+                    (NP (NN night))
+                    (PRN (-LRB- -LRB-)
+                      (NP
+                        (QP (RB about) (DT an) (NN hour)))
+                      (-RRB- -RRB-)))))
+              (CC and)
+              (ADVP (RB quite) (RB quickly)))
+            (PP (IN during)
+              (NP
+                (NP (DT the) (NN day))
+                (PRN (-LRB- -LRB-)
+                  (NP (CD 10) (NNS minutes))
+                  (-RRB- -RRB-))))))))
+    (. .)))
+
+nsubj(long-4, It-1)
+cop(long-4, was-2)
+advmod(long-4, very-3)
+root(ROOT-0, long-4)
+advmod(was-7, when-5)
+nsubj(was-7, it-6)
+advcl(long-4, was-7)
+advmod(late-9, very-8)
+advmod(was-7, late-9)
+prep_at(late-9, night-11)
+quantmod(hour-15, about-13)
+quantmod(hour-15, an-14)
+dep(night-11, hour-15)
+advmod(quickly-19, quite-18)
+advmod(was-7, quickly-19)
+conj_and(late-9, quickly-19)
+det(day-22, the-21)
+prep_during(was-7, day-22)
+num(minutes-25, 10-24)
+appos(day-22, minutes-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD had)
+      (S
+        (NP (DT a) (NNP CAT))
+        (VP (VB scan)
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBD had)
+                (S
+                  (VP (TO to)
+                    (VP (VB schedule)
+                      (NP
+                        (NP (DT a) (JJ few) (NNS weeks))
+                        (PP (IN in)
+                          (NP (NN advance)))))))))))))
+    (. .)))
+
+nsubj(had-2, I-1)
+root(ROOT-0, had-2)
+det(CAT-4, a-3)
+nsubj(scan-5, CAT-4)
+ccomp(had-2, scan-5)
+complm(had-8, that-6)
+nsubj(had-8, I-7)
+xsubj(schedule-10, I-7)
+ccomp(scan-5, had-8)
+aux(schedule-10, to-9)
+xcomp(had-8, schedule-10)
+det(weeks-13, a-11)
+amod(weeks-13, few-12)
+dobj(schedule-10, weeks-13)
+prep_in(weeks-13, advance-15)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD had)
+      (NP (DT an) (NNP MRI))
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (MD could)
+            (VP (VB get)
+              (VP (VBN done)
+                (PP (IN within)
+                  (NP (CD 3) (NNS days)))))))))
+    (. .)))
+
+nsubj(had-2, I-1)
+root(ROOT-0, had-2)
+det(MRI-4, an-3)
+dobj(had-2, MRI-4)
+complm(done-9, that-5)
+nsubjpass(done-9, I-6)
+aux(done-9, could-7)
+auxpass(done-9, get-8)
+ccomp(had-2, done-9)
+num(days-12, 3-11)
+prep_within(done-9, days-12)
+
+(ROOT
+  (S
+    (NP (NNP Medicine))
+    (VP (VBZ is)
+      (ADJP (RB very) (, ,) (RB very) (JJ cheap)))
+    (. .)))
+
+nsubj(cheap-6, Medicine-1)
+cop(cheap-6, is-2)
+advmod(cheap-6, very-3)
+advmod(cheap-6, very-5)
+root(ROOT-0, cheap-6)
+

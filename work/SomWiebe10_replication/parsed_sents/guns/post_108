@@ -1,0 +1,50 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (JJ strong) (NN majority))
+      (PP (IN of)
+        (NP (NNP DC) (NN residence))))
+    (VP (VBP support)
+      (NP (DT the) (NNP DC) (NN handgun) (NN ban)))
+    (. .)))
+
+det(majority-3, A-1)
+amod(majority-3, strong-2)
+nsubj(support-7, majority-3)
+nn(residence-6, DC-5)
+prep_of(majority-3, residence-6)
+root(ROOT-0, support-7)
+det(ban-11, the-8)
+nn(ban-11, DC-9)
+nn(ban-11, handgun-10)
+dobj(support-7, ban-11)
+
+(ROOT
+  (S
+    (NP (DT A) (NNP Georgetown) (NNP University) (NN poll))
+    (VP (VBD found)
+      (SBAR
+        (S
+          (NP
+            (NP (CD three))
+            (PP (RB out) (IN of)
+              (NP (CD four) (NN city) (NNS residents))))
+          (VP (VBD supported)
+            (NP (DT the) (NNP DC) (NN handgun) (NN ban))))))
+    (. .)))
+
+det(poll-4, A-1)
+nn(poll-4, Georgetown-2)
+nn(poll-4, University-3)
+nsubj(found-5, poll-4)
+root(ROOT-0, found-5)
+nsubj(supported-12, three-6)
+num(residents-11, four-9)
+nn(residents-11, city-10)
+prep_out_of(three-6, residents-11)
+ccomp(found-5, supported-12)
+det(ban-16, the-13)
+nn(ban-16, DC-14)
+nn(ban-16, handgun-15)
+dobj(supported-12, ban-16)
+

@@ -1,0 +1,150 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (ADVP (RB wrongly))
+    (VP (VBZ mandates)
+      (NP (NN physician) (NN participation)))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(mandates-4, insurance-2)
+advmod(mandates-4, wrongly-3)
+root(ROOT-0, mandates-4)
+nn(participation-6, physician-5)
+dobj(mandates-4, participation-6)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP American) (NNP Medical) (NNP Association))
+    (VP
+      (VP (VBD wrote)
+        (PP (IN in)
+          (NP (DT a) (NNP June) (CD 2009) (NN letter)))
+        (PP (TO to)
+          (NP
+            (NP (DT the) (NNP Senate) (NNP Finance) (NNP Committee))
+            (PP (IN that)
+              (NP (DT the) (NN association))))))
+      (, ,) (`` ``)
+      (VP (MD can) (RB not)
+        (VP (VB support)
+          (NP
+            (NP (DT any) (NN plan) (NN design))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBZ mandates)
+                  (NP (NN physician) (NN participation)))))))))
+    (: ...)))
+
+det(Association-4, The-1)
+nn(Association-4, American-2)
+nn(Association-4, Medical-3)
+nsubj(wrote-5, Association-4)
+root(ROOT-0, wrote-5)
+det(letter-10, a-7)
+nn(letter-10, June-8)
+num(letter-10, 2009-9)
+prep_in(wrote-5, letter-10)
+det(Committee-15, the-12)
+nn(Committee-15, Senate-13)
+nn(Committee-15, Finance-14)
+prep_to(wrote-5, Committee-15)
+det(association-18, the-17)
+prep_that(Committee-15, association-18)
+aux(support-23, can-21)
+neg(support-23, not-22)
+dep(wrote-5, support-23)
+det(design-26, any-24)
+nn(design-26, plan-25)
+dobj(support-23, design-26)
+nsubj(mandates-28, design-26)
+rcmod(design-26, mandates-28)
+nn(participation-30, physician-29)
+dobj(mandates-28, participation-30)
+
+(ROOT
+  (S
+    (NP (NNP Federal) (NNS programs))
+    (ADVP (RB traditionally))
+    (VP (VBP have)
+      (ADVP (RB never))
+      (VP (VBN required)
+        (NP
+          (NP (NN physician)
+            (CC or)
+            (JJ other) (NN provider) (NN participation))
+          (, ,)
+          (CONJP (CC but)
+            (RB rather))
+          (NP
+            (NP (JJ such) (NN participation))
+            (SBAR
+              (S
+                (VP (VBZ has)
+                  (VP (VBN been)
+                    (PP (IN on)
+                      (NP (DT a) (JJ voluntary) (NN basis) (NN -LRB-)))))))))))
+    (: ...)))
+
+nn(programs-2, Federal-1)
+nsubj(required-6, programs-2)
+advmod(required-6, traditionally-3)
+aux(required-6, have-4)
+neg(required-6, never-5)
+root(ROOT-0, required-6)
+nn(participation-11, physician-7)
+conj_or(physician-7, other-9)
+nn(participation-11, other-9)
+nn(participation-11, provider-10)
+dobj(required-6, participation-11)
+amod(participation-16, such-15)
+dobj(required-6, participation-16)
+conj_negcc(participation-11, participation-16)
+aux(been-18, has-17)
+rcmod(participation-16, been-18)
+det(basis-22, a-20)
+amod(basis-22, voluntary-21)
+prep_on(been-18, basis-22)
+
+(ROOT
+  (S
+    (ADVP (RB -RRB-))
+    (NP (PRP we))
+    (VP
+      (ADVP (RB absolutely))
+      (VBP oppose)
+      (NP
+        (NP
+          (NP (NN government) (NN control))
+          (PP (IN of)
+            (NP (NN health) (NN care) (NNS decisions))))
+        (CC or)
+        (NP
+          (NP (JJ mandatory) (NN physician) (NN participation))
+          (PP (IN in)
+            (NP (DT any) (NN insurance) (NN plan))))))
+    (. .)))
+
+nsubj(oppose-4, we-2)
+advmod(oppose-4, absolutely-3)
+root(ROOT-0, oppose-4)
+nn(control-6, government-5)
+dobj(oppose-4, control-6)
+nn(decisions-10, health-8)
+nn(decisions-10, care-9)
+prep_of(control-6, decisions-10)
+amod(participation-14, mandatory-12)
+nn(participation-14, physician-13)
+dobj(oppose-4, participation-14)
+conj_or(control-6, participation-14)
+det(plan-18, any-16)
+nn(plan-18, insurance-17)
+prep_in(participation-14, plan-18)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (NP (CD 15))
+    (-RRB- -RRB-)))
+
+

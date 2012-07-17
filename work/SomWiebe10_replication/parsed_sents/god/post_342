@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (NP (NNP Totally))
+    (VP (VBP agree))
+    (. .)))
+
+nsubj(agree-2, Totally-1)
+root(ROOT-0, agree-2)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ happens)
+        (S
+          (NP (NNP WAY))
+          (ADJP (RB too) (JJ much)))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR (IN that)
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP
+                (NP (DT a) (NN way))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (ADVP (RB someday))
+                    (VP (MD will)
+                      (VP (VB allow)
+                        (S
+                          (NP (DT the) (CD two))
+                          (VP (TO to)
+                            (VP (VB go)
+                              (NP (NN hand))
+                              (PP (IN in)
+                                (NP (NN hand))))))))))))))))
+    (. .)))
+
+nsubj(happens-2, This-1)
+root(ROOT-0, happens-2)
+nsubj(much-5, WAY-3)
+advmod(much-5, too-4)
+xcomp(happens-2, much-5)
+nsubj(think-8, I-7)
+conj_and(happens-2, think-8)
+complm(is-11, that-9)
+expl(is-11, there-10)
+ccomp(think-8, is-11)
+det(way-13, a-12)
+nsubj(is-11, way-13)
+nsubj(allow-17, way-13)
+advmod(allow-17, someday-15)
+aux(allow-17, will-16)
+rcmod(way-13, allow-17)
+det(two-19, the-18)
+nsubj(go-21, two-19)
+aux(go-21, to-20)
+xcomp(allow-17, go-21)
+dobj(go-21, hand-22)
+prep_in(go-21, hand-24)
+
+(ROOT
+  (S (CC Plus)
+    (, ,)
+    (PP (IN as)
+      (NP (DT a) (NNP Catholic)))
+    (, ,)
+    (NP (PRP I))
+    (VP
+      (ADVP (RB DO))
+      (VBP believe)
+      (PP (IN in)
+        (NP (NNP God))))))
+
+cc(believe-9, Plus-1)
+det(Catholic-5, a-4)
+prep_as(believe-9, Catholic-5)
+nsubj(believe-9, I-7)
+advmod(believe-9, DO-8)
+root(ROOT-0, believe-9)
+prep_in(believe-9, God-11)
+

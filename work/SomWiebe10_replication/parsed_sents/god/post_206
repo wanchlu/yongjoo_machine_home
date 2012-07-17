@@ -1,0 +1,143 @@
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBP know)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBD wrote)
+            (NP (PRP it))))))
+    (. .)))
+
+cc(know-3, And-1)
+nsubj(know-3, I-2)
+root(ROOT-0, know-3)
+nsubj(wrote-5, who-4)
+ccomp(know-3, wrote-5)
+dobj(wrote-5, it-6)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm)
+        (ADVP (RB just))
+        (VP (VBG saying))))
+    (, ,)
+    (S
+      (NP (PRP you))
+      (VP (VBP assert)
+        (NP
+          (NP (NN something))
+          (PP (IN about)
+            (NP (DT the) (NN book))))))
+    (, ,)
+    (S
+      (NP (PRP you))
+      (VP (MD should)
+        (ADVP (RB probably))
+        (VP (VB explain)
+          (NP (PRP it)))))
+    (. .)))
+
+nsubj(saying-4, I-1)
+aux(saying-4, 'm-2)
+advmod(saying-4, just-3)
+root(ROOT-0, saying-4)
+nsubj(assert-7, you-6)
+ccomp(saying-4, assert-7)
+dobj(assert-7, something-8)
+det(book-11, the-10)
+prep_about(something-8, book-11)
+nsubj(explain-16, you-13)
+aux(explain-16, should-14)
+advmod(explain-16, probably-15)
+ccomp(saying-4, explain-16)
+dobj(explain-16, it-17)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBD said)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (DT the) (NN secret))
+                (PP (IN of)
+                  (NP (NN life))))
+              (VP (VBD was)
+                (VP (VBN found)
+                  (PP (IN in)
+                    (NP
+                      (NP (JJ old) (NNS tapes))
+                      (PP (IN of)
+                        (NP (NNP Captain) (NNP Kangaroo))))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP
+          (PRN (, ,)
+            (PP (IN at)
+              (NP (DT the) (JJS least)))
+            (, ,))
+          (JJ rude))
+        (S
+          (VP (TO to)
+            (VP (RB not) (VB tell)
+              (NP (PRP you)))))
+        (SBAR
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP
+                (NP (DT the) (NN secret))
+                (PP (IN of)
+                  (NP (NN life))))
+              (VP (VBZ is))))
+          (CC and)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (PRP I))
+              (VP (VBD found)
+                (NP (PRP it))))))))
+    (. .)))
+
+mark(said-3, If-1)
+nsubj(said-3, I-2)
+advcl(rude-26, said-3)
+complm(found-10, that-4)
+det(secret-6, the-5)
+nsubjpass(found-10, secret-6)
+prep_of(secret-6, life-8)
+auxpass(found-10, was-9)
+ccomp(said-3, found-10)
+amod(tapes-13, old-12)
+prep_in(found-10, tapes-13)
+nn(Kangaroo-16, Captain-15)
+prep_of(tapes-13, Kangaroo-16)
+nsubj(rude-26, I-18)
+aux(rude-26, would-19)
+cop(rude-26, be-20)
+dep(rude-26, at-22)
+det(least-24, the-23)
+pobj(at-22, least-24)
+root(ROOT-0, rude-26)
+aux(tell-29, to-27)
+neg(tell-29, not-28)
+xcomp(rude-26, tell-29)
+dobj(tell-29, you-30)
+dobj(is-36, what-31)
+det(secret-33, the-32)
+nsubj(is-36, secret-33)
+prep_of(secret-33, life-35)
+dep(rude-26, is-36)
+advmod(found-40, how-38)
+nsubj(found-40, I-39)
+dep(rude-26, found-40)
+conj_and(is-36, found-40)
+dobj(found-40, it-41)
+

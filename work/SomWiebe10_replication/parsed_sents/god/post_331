@@ -1,0 +1,425 @@
+(ROOT
+  (S
+    (NP (NNP Religion))
+    (VP (VBZ seeks)
+      (NP
+        (NP (DT an) (NN explanation))
+        (PP (IN for)
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (NNS things))
+              (VP (VBP happen)))))))
+    (. .)))
+
+nsubj(seeks-2, Religion-1)
+root(ROOT-0, seeks-2)
+det(explanation-4, an-3)
+dobj(seeks-2, explanation-4)
+advmod(happen-8, why-6)
+nsubj(happen-8, things-7)
+prepc_for(explanation-4, happen-8)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (ADVP (RB only))
+    (VP (VBZ answers)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS things))
+          (VP (VBP happen)))))
+    (. .)))
+
+nsubj(answers-3, Science-1)
+advmod(answers-3, only-2)
+root(ROOT-0, answers-3)
+advmod(happen-6, how-4)
+nsubj(happen-6, things-5)
+ccomp(answers-3, happen-6)
+
+(ROOT
+  (SBARQ
+    (WHADVP (RB i.e.) (WRB How))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Earth))
+      (VP (VB form)))
+    (. ?)))
+
+advmod(How-2, i.e.-1)
+advmod(form-6, How-2)
+aux(form-6, did-3)
+det(Earth-5, the-4)
+nsubj(form-6, Earth-5)
+root(ROOT-0, form-6)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP (NN everything))
+      (VP (VB come)
+        (PP (IN from)
+          (NP (NN nothing)))))
+    (. ?)))
+
+advmod(come-4, How-1)
+aux(come-4, can-2)
+nsubj(come-4, everything-3)
+root(ROOT-0, come-4)
+prep_from(come-4, nothing-6)
+
+(ROOT
+  (NP (NNP Unless) (: ...)))
+
+root(ROOT-0, Unless-1)
+
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBD made)
+      (NP (PRP it)))
+    (. !)))
+
+nsubj(made-2, God-1)
+root(ROOT-0, made-2)
+dobj(made-2, it-3)
+
+(ROOT
+  (NP
+    (NP
+      (NP (DT The) (JJ spiritual) (NN being))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (ADVP (RB always))
+          (VP
+            (VP (VBD was))
+            (CC and)
+            (VP
+              (ADVP (RB always))
+              (MD will)
+              (VP (VB be)
+                (VP (VBN created))))))))
+    (NP
+      (NP (NN everything))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (ADVP (RB never))
+          (VP
+            (VP (VBD was))
+            (CC and)
+            (VP (MD will)
+              (VP (VB cease)
+                (S
+                  (VP (TO to)
+                    (VP (VB be))))))))))
+    (. !)))
+
+det(being-3, The-1)
+amod(being-3, spiritual-2)
+root(ROOT-0, being-3)
+nsubj(was-6, being-3)
+nsubjpass(created-11, being-3)
+advmod(was-6, always-5)
+rcmod(being-3, was-6)
+advmod(created-11, always-8)
+aux(created-11, will-9)
+auxpass(created-11, be-10)
+rcmod(being-3, created-11)
+conj_and(was-6, created-11)
+dep(being-3, everything-12)
+nsubj(was-15, everything-12)
+nsubj(cease-18, everything-12)
+neg(was-15, never-14)
+rcmod(everything-12, was-15)
+aux(cease-18, will-17)
+rcmod(everything-12, cease-18)
+conj_and(was-15, cease-18)
+aux(be-20, to-19)
+xcomp(cease-18, be-20)
+
+(ROOT
+  (S
+    (ADVP (RB Well))
+    (, ,)
+    (PP (IN after)
+      (NP
+        (NP (NNS billions))
+        (PP (IN of)
+          (NP (NNS years)))))
+    (NP
+      (NP (DT the) (NN dust))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ composes)
+            (NP (NN earth))
+            (ADVP (RB eventually))))))
+    (VP
+      (VP (VBD clumped)
+        (ADVP (RB together)))
+      (CC and)
+      (VP (VBZ condensed)
+        (S
+          (VP (TO to)
+            (VP (VB form)
+              (NP (DT a) (NN planet)))))))
+    (. .)))
+
+advmod(clumped-13, Well-1)
+prep_after(clumped-13, billions-4)
+prep_of(billions-4, years-6)
+det(dust-8, the-7)
+nsubj(composes-10, dust-8)
+nsubj(clumped-13, dust-8)
+nsubj(condensed-16, dust-8)
+xsubj(form-18, dust-8)
+rcmod(dust-8, composes-10)
+dobj(composes-10, earth-11)
+advmod(composes-10, eventually-12)
+root(ROOT-0, clumped-13)
+advmod(clumped-13, together-14)
+conj_and(clumped-13, condensed-16)
+aux(form-18, to-17)
+xcomp(condensed-16, form-18)
+det(planet-20, a-19)
+dobj(form-18, planet-20)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Some))
+      (PP (IN of)
+        (NP (DT this) (NN dust))))
+    (ADVP (RB also))
+    (VP (VBD made)
+      (NP (DT the) (NN sun)))
+    (. .)))
+
+nsubj(made-6, Some-1)
+det(dust-4, this-3)
+prep_of(Some-1, dust-4)
+advmod(made-6, also-5)
+root(ROOT-0, made-6)
+det(sun-8, the-7)
+dobj(made-6, sun-8)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (VBD did)
+      (NP
+        (NP (DT all))
+        (PP (IN of)
+          (NP (DT this) (NN matter))))
+      (VP (VB come)
+        (S
+          (VP (TO to)
+            (VP (VB be))))))
+    (. ?)))
+
+advmod(come-7, How-1)
+aux(come-7, did-2)
+nsubj(come-7, all-3)
+xsubj(be-9, all-3)
+det(matter-6, this-5)
+prep_of(all-3, matter-6)
+root(ROOT-0, come-7)
+aux(be-9, to-8)
+xcomp(come-7, be-9)
+
+(ROOT
+  (S
+    (ADVP
+      (NP
+        (NP (NNS Billions)
+          (CC and)
+          (NNS billions))
+        (PP (IN of)
+          (NP (NNS years))))
+      (IN ago))
+    (, ,)
+    (PP (IN at)
+      (NP
+        (NP (DT the) (NN beginning))
+        (PP (IN of)
+          (NP (NN time)))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NNP Big) (NNP Bang))
+        (, ,)
+        (SBAR
+          (WHADVP (WRB where)
+            (NP
+              (NP (DT an) (RB extremely) (JJ dense) (NN piece))
+              (PP (IN of)
+                (NP (NN matter)))))
+          (S
+            (NP (DT that))
+            (VP (VBD held)
+              (NP
+                (NP (DT every) (NN atom))
+                (PP (IN in)
+                  (NP (DT the) (JJ known) (NN universe))))
+              (NP
+                (NP (DT the) (NN size))
+                (PP (IN of)
+                  (NP
+                    (NP (DT a) (NN pinhead))
+                    (ADVP (RB maybe))))))))))
+    (. .)))
+
+npadvmod(ago-6, Billions-1)
+conj_and(Billions-1, billions-3)
+npadvmod(ago-6, billions-3)
+prep_of(Billions-1, years-5)
+advmod(was-15, ago-6)
+det(beginning-10, the-9)
+prep_at(was-15, beginning-10)
+prep_of(beginning-10, time-12)
+expl(was-15, there-14)
+root(ROOT-0, was-15)
+det(Bang-18, the-16)
+nn(Bang-18, Big-17)
+nsubj(was-15, Bang-18)
+advmod(held-28, where-20)
+det(piece-24, an-21)
+advmod(piece-24, extremely-22)
+amod(piece-24, dense-23)
+dep(where-20, piece-24)
+prep_of(piece-24, matter-26)
+nsubj(held-28, that-27)
+rcmod(Bang-18, held-28)
+det(atom-30, every-29)
+iobj(held-28, atom-30)
+det(universe-34, the-32)
+amod(universe-34, known-33)
+prep_in(atom-30, universe-34)
+det(size-36, the-35)
+dobj(held-28, size-36)
+det(pinhead-39, a-38)
+prep_of(size-36, pinhead-39)
+advmod(pinhead-39, maybe-40)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT All))
+        (PP (IN of)
+          (NP (DT the) (NN energy))))
+      (ADVP (RB there))
+      (VP (VBD caused)
+        (S
+          (NP (PRP it))
+          (VP (TO to)
+            (VP (VB explode))))))
+    (CC and)
+    (S
+      (PP (IN from)
+        (NP (RB there)))
+      (, ,)
+      (NP
+        (NP (NNS galaxies))
+        (CC and)
+        (NP (JJ solar) (NNS systems)))
+      (VP (VBD were)
+        (VP (VBN born))))
+    (. .)))
+
+nsubj(caused-6, All-1)
+det(energy-4, the-3)
+prep_of(All-1, energy-4)
+advmod(caused-6, there-5)
+root(ROOT-0, caused-6)
+nsubj(explode-9, it-7)
+aux(explode-9, to-8)
+xcomp(caused-6, explode-9)
+prep(born-19, from-11)
+pobj(from-11, there-12)
+nsubjpass(born-19, galaxies-14)
+amod(systems-17, solar-16)
+conj_and(galaxies-14, systems-17)
+nsubjpass(born-19, systems-17)
+auxpass(born-19, were-18)
+conj_and(caused-6, born-19)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBD did)
+      (NP
+        (NP (DT the) (JJ small) (NN piece))
+        (PP (IN of)
+          (NP (NN matter))))
+      (VP (VB come)
+        (PP (IN from))))
+    (. ?)))
+
+advmod(come-8, Where-1)
+aux(come-8, did-2)
+det(piece-5, the-3)
+amod(piece-5, small-4)
+nsubj(come-8, piece-5)
+prep_of(piece-5, matter-7)
+root(ROOT-0, come-8)
+prep(come-8, from-9)
+
+(ROOT
+  (SBARQ (CC or)
+    (WHADVP (WRB Why))
+    (SQ (VBD did)
+      (NP (DT the) (NNP Big) (NNP Bang))
+      (VP (VB happen)))
+    (. ?)))
+
+cc(happen-7, or-1)
+advmod(happen-7, Why-2)
+aux(happen-7, did-3)
+det(Bang-6, the-4)
+nn(Bang-6, Big-5)
+nsubj(happen-7, Bang-6)
+root(ROOT-0, happen-7)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (MD can)
+          (ADVP (RB logically))
+          (VP (VB come)
+            (PRT (RP up))
+            (PP (IN with)
+              (NP
+                (NP (DT a) (JJ scientific) (NN answer))
+                (PP (TO to)
+                  (NP (DT this)))))))))
+    (, ,)
+    (ADVP (RB then))
+    (NP (PRP you))
+    (VP (VBP are)
+      (ADJP (RB absolutely) (JJ amazing)))
+    (. .)))
+
+mark(come-5, If-1)
+nsubj(come-5, you-2)
+aux(come-5, can-3)
+advmod(come-5, logically-4)
+advcl(amazing-18, come-5)
+prt(come-5, up-6)
+det(answer-10, a-8)
+amod(answer-10, scientific-9)
+prep_with(come-5, answer-10)
+prep_to(answer-10, this-12)
+advmod(amazing-18, then-14)
+nsubj(amazing-18, you-15)
+cop(amazing-18, are-16)
+advmod(amazing-18, absolutely-17)
+root(ROOT-0, amazing-18)
+

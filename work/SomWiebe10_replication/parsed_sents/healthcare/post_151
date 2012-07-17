@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Universal) (NN health) (NN care))
+      (VP (VBZ creates)
+        (NP (NNS dependencies))
+        (PP (IN on)
+          (NP (NN government)))
+        (SBAR
+          (WHADVP (WRB Whenever))
+          (S
+            (NP (DT the) (NN government))
+            (VP (VBZ provides)
+              (NP (JJ free) (NNS services))
+              (PP (TO to)
+                (NP (NNS individuals))))))))
+    (, ,)
+    (NP (DT a) (NN dependency))
+    (VP (VBZ is)
+      (VP (VBN created)))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(creates-4, care-3)
+ccomp(created-20, creates-4)
+dobj(creates-4, dependencies-5)
+prep_on(creates-4, government-7)
+advmod(provides-11, Whenever-8)
+det(government-10, the-9)
+nsubj(provides-11, government-10)
+advcl(creates-4, provides-11)
+amod(services-13, free-12)
+dobj(provides-11, services-13)
+prep_to(provides-11, individuals-15)
+det(dependency-18, a-17)
+nsubjpass(created-20, dependency-18)
+auxpass(created-20, is-19)
+root(ROOT-0, created-20)
+
+(ROOT
+  (S
+    (NP (NNP Dependency))
+    (VP
+      (VP (VBZ is)
+        (NP (DT an) (JJ unhealthy) (NN mind-set)))
+      (, ,)
+      (CC and)
+      (VP (MD can)
+        (VP (VB cause)
+          (NP (NNS problems))
+          (ADVP (RB down)
+            (NP (DT the) (NN line))))))
+    (. .)))
+
+nsubj(mind-set-5, Dependency-1)
+nsubj(cause-9, Dependency-1)
+cop(mind-set-5, is-2)
+det(mind-set-5, an-3)
+amod(mind-set-5, unhealthy-4)
+root(ROOT-0, mind-set-5)
+aux(cause-9, can-8)
+conj_and(mind-set-5, cause-9)
+dobj(cause-9, problems-10)
+advmod(cause-9, down-11)
+det(line-13, the-12)
+pobj(down-11, line-13)
+

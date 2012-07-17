@@ -1,0 +1,153 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP support)
+      (S
+        (VP (VBG STOPHANDGUNVIOLENCE.ORG)
+          (SBAR
+            (S
+              (NP (PRP They))
+              (VP (VBP have)
+                (VP (VBN helped)
+                  (S
+                    (NP (NNP Massachusetts))
+                    (VP (VB take)
+                      (NP
+                        (NP (DT the) (NN lead))
+                        (PP (IN in)
+                          (NP (JJ sensible) (NN gun) (NNS laws)))))))))))))
+    (. .)))
+
+nsubj(support-2, I-1)
+root(ROOT-0, support-2)
+xcomp(support-2, STOPHANDGUNVIOLENCE.ORG-3)
+nsubj(helped-6, They-4)
+aux(helped-6, have-5)
+ccomp(STOPHANDGUNVIOLENCE.ORG-3, helped-6)
+nsubj(take-8, Massachusetts-7)
+ccomp(helped-6, take-8)
+det(lead-10, the-9)
+dobj(take-8, lead-10)
+amod(laws-14, sensible-12)
+nn(laws-14, gun-13)
+prep_in(lead-10, laws-14)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP See))
+      (PP (IN for)
+        (NP (NN example))))
+    (, ,)
+    (S
+      (ADJP (JJ http:\/\/www.mass.gov\/legis\/laws\/mgl\/131-70.htm)))
+    (NP (PRP It))
+    (VP (VBZ is)
+      (PP (IN against)
+        (NP
+          (NP (DT the) (NN law))
+          (PP (IN in)
+            (NP
+              (NP (NNP Massachusetts))
+              (PP (IN for)
+                (NP (NNS people)))))))
+      (S
+        (VP (TO to)
+          (VP (VB let)
+            (S
+              (NP (NNS dogs))
+              (VP (NN walk)
+                (PP (IN in)
+                  (NP (NNS fields)
+                    (CC or)
+                    (NNS woods)))
+                (PP (IN during)
+                  (NP (NN hunting) (NN season)))))))))
+    (. .)))
+
+nsubj(is-7, See-1)
+xsubj(let-16, See-1)
+prep_for(See-1, example-3)
+dep(is-7, http:\/\/www.mass.gov\/legis\/laws\/mgl\/131-70.htm-5)
+nsubj(is-7, It-6)
+xsubj(let-16, It-6)
+root(ROOT-0, is-7)
+det(law-10, the-9)
+prep_against(is-7, law-10)
+prep_in(law-10, Massachusetts-12)
+prep_for(Massachusetts-12, people-14)
+aux(let-16, to-15)
+xcomp(is-7, let-16)
+nsubj(walk-18, dogs-17)
+ccomp(let-16, walk-18)
+prep_in(walk-18, fields-20)
+prep_in(walk-18, woods-22)
+conj_or(fields-20, woods-22)
+nn(season-25, hunting-24)
+prep_during(walk-18, season-25)
+
+(ROOT
+  (S
+    (VP (VB Keep)
+      (S
+        (NP (PRP$ your) (NNS kids))
+        (ADJP (JJ safe))))
+    (. !)))
+
+root(ROOT-0, Keep-1)
+poss(kids-3, your-2)
+nsubj(safe-4, kids-3)
+xcomp(Keep-1, safe-4)
+
+(ROOT
+  (S
+    (VP (VB Keep)
+      (NP (DT the) (NNS dogs))
+      (PP (IN inside)
+        (NP
+          (NP (DT the) (NN house))
+          (PP (IN for)
+            (NP (DT the) (JJ first) (CD two) (NNS weeks)))
+          (PP (IN of)
+            (NP (NNP December))))))
+    (. !)))
+
+root(ROOT-0, Keep-1)
+det(dogs-3, the-2)
+dobj(Keep-1, dogs-3)
+det(house-6, the-5)
+prep_inside(Keep-1, house-6)
+det(weeks-11, the-8)
+amod(weeks-11, first-9)
+num(weeks-11, two-10)
+prep_for(house-6, weeks-11)
+prep_of(house-6, December-13)
+
+(ROOT
+  (FRAG
+    (NP (NNP Remember))
+    (: :)
+    (S
+      (SBAR (IN If)
+        (S
+          (NP (NNS dogs))
+          (VP (VBP are)
+            (VP (VBN allowed)
+              (PP (IN in)
+                (NP (NNS fields)))))))
+      (, ,)
+      (NP (NNS kids))
+      (VP (MD could)
+        (VP (VB die))))
+    (. !)))
+
+root(ROOT-0, Remember-1)
+mark(allowed-6, If-3)
+nsubjpass(allowed-6, dogs-4)
+auxpass(allowed-6, are-5)
+advcl(die-12, allowed-6)
+prep_in(allowed-6, fields-8)
+nsubj(die-12, kids-10)
+aux(die-12, could-11)
+dep(Remember-1, die-12)
+

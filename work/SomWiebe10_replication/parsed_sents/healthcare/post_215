@@ -1,0 +1,168 @@
+(ROOT
+  (S
+    (NP (JJ Single-payer) (NN health) (NN care))
+    (VP (VBZ allows)
+      (NP
+        (NP (NN bargaining))
+        (PP (IN for)
+          (NP (JJR lower) (NN drug) (NNS prices)))
+        ('' '')
+        (VP (VBG Single-Payer)
+          (NP (NNP FAQ) ('' '')))))
+    (. .)))
+
+amod(care-3, Single-payer-1)
+nn(care-3, health-2)
+nsubj(allows-4, care-3)
+root(ROOT-0, allows-4)
+dobj(allows-4, bargaining-5)
+amod(prices-9, lower-7)
+nn(prices-9, drug-8)
+prep_for(bargaining-5, prices-9)
+partmod(bargaining-5, Single-Payer-11)
+dobj(Single-Payer-11, FAQ-12)
+
+(ROOT
+  (NP
+    (NP (NNP Physicians))
+    (PP (IN for)
+      (NP (DT a) (NNP National) (NNP Health) (NN Program)))
+    (. .)))
+
+root(ROOT-0, Physicians-1)
+det(Program-6, a-3)
+nn(Program-6, National-4)
+nn(Program-6, Health-5)
+prep_for(Physicians-1, Program-6)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ Retrieved)
+      (NP (NNP May) (CD 30th) (, ,) (CD 2008)))
+    (SBAR (`` ``)
+      (S
+        (SBAR
+          (WHADVP (WRB When))
+          (S
+            (NP (DT all) (NNS patients))
+            (VP (VBP are)
+              (PP (IN under)
+                (NP (CD one) (NN system))))))
+        (, ,)
+        (NP (DT the) (NN payer))
+        (VP (VBZ wields)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP (NN clout)))))))
+    (. .)))
+
+root(ROOT-0, Retrieved-1)
+tmod(Retrieved-1, May-2)
+num(May-2, 30th-3)
+num(May-2, 2008-5)
+advmod(are-10, When-7)
+det(patients-9, all-8)
+nsubj(are-10, patients-9)
+advcl(wields-17, are-10)
+num(system-13, one-12)
+prep_under(are-10, system-13)
+det(payer-16, the-15)
+nsubj(wields-17, payer-16)
+dep(Retrieved-1, wields-17)
+det(lot-19, a-18)
+dobj(wields-17, lot-19)
+prep_of(lot-19, clout-21)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP VA))
+    (VP (VBZ gets)
+      (NP
+        (NP (DT a)
+          (ADJP (CD 40) (NN %))
+          (NN discount))
+        (PP (IN on)
+          (NP
+            (NP (NNS drugs))
+            (PP (RB because) (IN of)
+              (NP (PRP$ its) (NN buying) (NN power)))))))
+    (. .)))
+
+det(VA-2, The-1)
+nsubj(gets-3, VA-2)
+root(ROOT-0, gets-3)
+det(discount-7, a-4)
+number(%-6, 40-5)
+amod(discount-7, %-6)
+dobj(gets-3, discount-7)
+prep_on(discount-7, drugs-9)
+poss(power-14, its-12)
+nn(power-14, buying-13)
+prep_because_of(drugs-9, power-14)
+
+(ROOT
+  (S
+    (NP (DT This) (JJ monopsony) (NN buying) (NN power))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ main) (NN reason))
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (JJ other) (NNS countries) (NN drug) (NNS prices))
+            (VP (VBP are)
+              (ADJP
+                (ADJP (JJR lower))
+                (PP (IN than)
+                  (NP (PRP ours)))))))))
+    (. .)))
+
+det(power-4, This-1)
+amod(power-4, monopsony-2)
+nn(power-4, buying-3)
+nsubj(reason-8, power-4)
+cop(reason-8, is-5)
+det(reason-8, the-6)
+amod(reason-8, main-7)
+root(ROOT-0, reason-8)
+advmod(lower-15, why-9)
+amod(prices-13, other-10)
+nn(prices-13, countries-11)
+nn(prices-13, drug-12)
+nsubj(lower-15, prices-13)
+cop(lower-15, are-14)
+rcmod(reason-8, lower-15)
+prep_than(lower-15, ours-17)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (ADVP (RB also))
+    (VP (VBZ explains)
+      (SBAR
+        (S
+          (NP (DT the) (NN drug) (NN industry))
+          (VP (VBZ s)
+            (NP (JJ staunch) (NN opposition)
+              (S
+                (VP (TO to)
+                  (VP (VB single-payer)
+                    (NP (JJ national) (NN health) (NN insurance))))))))))
+    (. .)))
+
+nsubj(explains-3, This-1)
+advmod(explains-3, also-2)
+root(ROOT-0, explains-3)
+det(industry-6, the-4)
+nn(industry-6, drug-5)
+nsubj(opposition-9, industry-6)
+cop(opposition-9, s-7)
+amod(opposition-9, staunch-8)
+ccomp(explains-3, opposition-9)
+aux(single-payer-11, to-10)
+infmod(opposition-9, single-payer-11)
+amod(insurance-14, national-12)
+nn(insurance-14, health-13)
+dobj(single-payer-11, insurance-14)
+

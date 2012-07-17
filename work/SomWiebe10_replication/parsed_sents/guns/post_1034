@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP rule))
+    (. .)))
+
+nsubj(rule-2, Guns-1)
+root(ROOT-0, rule-2)
+
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (MD should)
+      (VP
+        (VP (VB have)
+          (NP
+            (NP (JJ several))
+            (PP (IN of)
+              (NP (PRP them)))))
+        (CC and)
+        (VP (VB carry)
+          (NP
+            (QP (IN at) (JJS least) (CD one)))
+          (ADVP (RB around))
+          (PP (IN at)
+            (NP (DT all) (NNS times))))))
+    (. .)))
+
+nsubj(have-3, Everyone-1)
+nsubj(carry-8, Everyone-1)
+aux(have-3, should-2)
+root(ROOT-0, have-3)
+dobj(have-3, several-4)
+prep_of(several-4, them-6)
+conj_and(have-3, carry-8)
+quantmod(one-11, at-9)
+mwe(at-9, least-10)
+pobj(at-9, least-10)
+dobj(carry-8, one-11)
+advmod(carry-8, around-12)
+det(times-15, all-14)
+prep_at(carry-8, times-15)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB make)
+        (S
+          (NP (DT the) (NN world))
+          (ADJP (RBR more) (JJ civilized)))))
+    (. .)))
+
+nsubj(make-3, It-1)
+aux(make-3, would-2)
+root(ROOT-0, make-3)
+det(world-5, the-4)
+nsubj(civilized-7, world-5)
+advmod(civilized-7, more-6)
+xcomp(make-3, civilized-7)
+

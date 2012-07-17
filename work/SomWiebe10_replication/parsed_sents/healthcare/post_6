@@ -1,0 +1,97 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (VBZ reduces)
+      (NP (NNS choices))
+      (PP (IN by)
+        (S
+          (VP (VBG destroying)
+            (S
+              (NP (JJ private) (NNS insurers))
+              (NP
+                (NP (DT The) (NNP American) (NNP Medical) (NNP Association))
+                (CC and)
+                (NP (NNP Senate) (NNP Finance) (NNP Committee))))
+            (: :) (`` ``)
+            (S
+              (NP
+                (NP (DT The) (NN introduction))
+                (PP (IN of)
+                  (NP (DT a) (JJ new) (JJ public) (NN plan))))
+              (VP (VBZ threatens)
+                (S
+                  (VP (TO to)
+                    (VP (VB restrict)
+                      (NP (JJ patient) (NN choice))
+                      (PP (IN by)
+                        (S
+                          (VP (VBG driving)
+                            (PRT (RP out))
+                            (NP
+                              (NP (JJ private) (NNS insurers))
+                              (, ,)
+                              (SBAR
+                                (WHNP (WDT which))
+                                (S
+                                  (ADVP (RB currently))
+                                  (VP (VBP provide)
+                                    (NP
+                                      (NP (NN coverage))
+                                      (PP (IN for)
+                                        (NP
+                                          (NP
+                                            (QP (RB nearly) (CD 70))
+                                            (NN percent))
+                                          (PP (IN of)
+                                            (NP (NNPS Americans))))))))))))))))))))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(reduces-3, insurance-2)
+root(ROOT-0, reduces-3)
+dobj(reduces-3, choices-4)
+prepc_by(reduces-3, destroying-6)
+amod(insurers-8, private-7)
+nsubj(Association-12, insurers-8)
+det(Association-12, The-9)
+nn(Association-12, American-10)
+nn(Association-12, Medical-11)
+xcomp(destroying-6, Association-12)
+nn(Committee-16, Senate-14)
+nn(Committee-16, Finance-15)
+xcomp(destroying-6, Committee-16)
+conj_and(Association-12, Committee-16)
+det(introduction-20, The-19)
+nsubj(threatens-26, introduction-20)
+xsubj(restrict-28, introduction-20)
+det(plan-25, a-22)
+amod(plan-25, new-23)
+amod(plan-25, public-24)
+prep_of(introduction-20, plan-25)
+ccomp(destroying-6, threatens-26)
+aux(restrict-28, to-27)
+xcomp(threatens-26, restrict-28)
+amod(choice-30, patient-29)
+dobj(restrict-28, choice-30)
+prepc_by(restrict-28, driving-32)
+prt(driving-32, out-33)
+amod(insurers-35, private-34)
+dobj(driving-32, insurers-35)
+nsubj(provide-39, insurers-35)
+advmod(provide-39, currently-38)
+rcmod(insurers-35, provide-39)
+dobj(provide-39, coverage-40)
+quantmod(70-43, nearly-42)
+num(percent-44, 70-43)
+prep_for(coverage-40, percent-44)
+prep_of(percent-44, Americans-46)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 1))
+      (-RRB- -RRB-))))
+
+appos(''-1, 1-3)
+

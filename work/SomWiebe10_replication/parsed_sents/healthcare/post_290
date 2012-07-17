@@ -1,0 +1,77 @@
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB know)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (PRP they))
+          (VP (VBP have)
+            (NP (DT a) (JJR higher) (NN life) (NN expectancy))))))
+    (. ?)))
+
+aux(know-3, Do-1)
+nsubj(know-3, you-2)
+root(ROOT-0, know-3)
+advmod(have-6, why-4)
+nsubj(have-6, they-5)
+advcl(know-3, have-6)
+det(expectancy-10, a-7)
+amod(expectancy-10, higher-8)
+nn(expectancy-10, life-9)
+dobj(have-6, expectancy-10)
+
+(ROOT
+  (S
+    (PP (IN Because)
+      (PP (IN through)
+        (NP (PRP$ our) (JJ superior) (JJ medical) (NN care))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP have)
+      (NP (JJR more) (JJ live) (NNS births)))
+    (. .)))
+
+prep(have-9, Because-1)
+pcomp(Because-1, through-2)
+poss(care-6, our-3)
+amod(care-6, superior-4)
+amod(care-6, medical-5)
+prep_through(Because-1, care-6)
+nsubj(have-9, we-8)
+root(ROOT-0, have-9)
+amod(births-12, more-10)
+amod(births-12, live-11)
+dobj(have-9, births-12)
+
+(ROOT
+  (S
+    (ADVP (RB Unfortunately))
+    (, ,)
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP (DT those)
+          (ADJP (RB marginally) (JJ healthy))
+          (NNS babies))))
+    (VP (VBP die) (, ,)
+      (S
+        (VP (VBG bringing)
+          (PRT (RP down))
+          (NP (DT the) (JJ overall) (NN life) (NN expectancy)))))
+    (. .)))
+
+advmod(die-9, Unfortunately-1)
+nsubj(die-9, some-3)
+det(babies-8, those-5)
+advmod(healthy-7, marginally-6)
+amod(babies-8, healthy-7)
+prep_of(some-3, babies-8)
+root(ROOT-0, die-9)
+xcomp(die-9, bringing-11)
+prt(bringing-11, down-12)
+det(expectancy-16, the-13)
+amod(expectancy-16, overall-14)
+nn(expectancy-16, life-15)
+dobj(bringing-11, expectancy-16)
+

@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (S
+      (NP (FW i))
+      (VP (VBP believe)
+        (PP (IN in)
+          (NP (NN god)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (FW i))
+      (VP (VBP do) (RB not)
+        (VP (VB believe)
+          (PP (IN in)
+            (NP (NN man))))))
+    (. .)))
+
+nsubj(believe-2, i-1)
+root(ROOT-0, believe-2)
+prep_in(believe-2, god-4)
+nsubj(believe-10, i-7)
+aux(believe-10, do-8)
+neg(believe-10, not-9)
+conj_but(believe-2, believe-10)
+prep_in(believe-10, man-12)
+
+(ROOT
+  (S
+    (NP (NN man))
+    (VP (VBZ has)
+      (VP (VBN twisted)
+        (NP
+          (NP (DT the) (NN idea))
+          (PP (IN of)
+            (NP (NN god))))
+        (PP (TO to)
+          (NP (DT a) (NN point)))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP
+              (NP (NNS people))
+              (PP (IN with)
+                (NP
+                  (NP (NN authority))
+                  (PP (IN in)
+                    (NP (NNS churches))))))
+            (VP (VBP have)
+              (NP
+                (NP (VBN mixed) (NNS ideas))
+                (PP (IN about)
+                  (NP (NN god)))))))))
+    (. .)))
+
+nsubj(twisted-3, man-1)
+aux(twisted-3, has-2)
+root(ROOT-0, twisted-3)
+det(idea-5, the-4)
+dobj(twisted-3, idea-5)
+prep_of(idea-5, god-7)
+det(point-10, a-9)
+prep_to(twisted-3, point-10)
+advmod(have-17, where-11)
+nsubj(have-17, people-12)
+prep_with(people-12, authority-14)
+prep_in(authority-14, churches-16)
+advcl(twisted-3, have-17)
+amod(ideas-19, mixed-18)
+dobj(have-17, ideas-19)
+prep_about(ideas-19, god-21)
+

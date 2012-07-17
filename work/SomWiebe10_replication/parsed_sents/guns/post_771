@@ -1,0 +1,48 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBD said)
+        (NP (NN anything))
+        (PP (IN about)
+          (NP (JJ high) (NN school) (NNS students)))))
+    (. ?)))
+
+nsubj(said-2, Who-1)
+root(ROOT-0, said-2)
+dobj(said-2, anything-3)
+amod(students-7, high-5)
+nn(students-7, school-6)
+prep_about(said-2, students-7)
+
+(ROOT
+  (S
+    (NP (JJ Concealed) (NN handgun) (NNS permits))
+    (VP (VBP require)
+      (S
+        (NP (DT the) (NNS bearers))
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP
+                (QP (IN at) (JJS least) (CD 21))
+                (NNS years))
+              (PP (IN of)
+                (NP (NN age))))))))
+    (. .)))
+
+amod(permits-3, Concealed-1)
+nn(permits-3, handgun-2)
+nsubj(require-4, permits-3)
+root(ROOT-0, require-4)
+det(bearers-6, the-5)
+nsubj(years-12, bearers-6)
+aux(years-12, to-7)
+cop(years-12, be-8)
+quantmod(21-11, at-9)
+mwe(at-9, least-10)
+pobj(at-9, least-10)
+num(years-12, 21-11)
+xcomp(require-4, years-12)
+prep_of(years-12, age-14)
+

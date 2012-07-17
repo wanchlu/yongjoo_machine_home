@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (NP (NNS Pilots))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN armed)
+          (PP (IN with)
+            (NP
+              (NP (NNS stun-guns))
+              (, ,) (RB not)
+              (NP (JJ real) (NNS guns)))))))
+    (. .)))
+
+nsubjpass(armed-4, Pilots-1)
+aux(armed-4, should-2)
+auxpass(armed-4, be-3)
+root(ROOT-0, armed-4)
+prep_with(armed-4, stun-guns-6)
+neg(stun-guns-6, not-8)
+amod(guns-10, real-9)
+dep(stun-guns-6, guns-10)
+
+(ROOT
+  (S
+    (NP (NNP Pepper))
+    (VP (VBZ sprays))
+    (. .)))
+
+nsubj(sprays-2, Pepper-1)
+root(ROOT-0, sprays-2)
+
+(ROOT
+  (S ('' '')
+    (S
+      (NP (NNP Pepper) (NNS sprays))
+      (VP (VBP are)
+        (NP
+          (NP (DT a) (JJR safer) (NN option))
+          (SBAR (IN as)
+            (S
+              (NP (PRP$ their) (NNS effects))
+              (VP (VBP are) (RB not)
+                (ADJP (JJ long-lasting))))))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP do) (RB not)
+        (VP (VB kill))))
+    (. .)))
+
+nn(sprays-3, Pepper-2)
+nsubj(option-7, sprays-3)
+cop(option-7, are-4)
+det(option-7, a-5)
+amod(option-7, safer-6)
+root(ROOT-0, option-7)
+mark(long-lasting-13, as-8)
+poss(effects-10, their-9)
+nsubj(long-lasting-13, effects-10)
+cop(long-lasting-13, are-11)
+neg(long-lasting-13, not-12)
+dep(option-7, long-lasting-13)
+nsubj(kill-18, they-15)
+aux(kill-18, do-16)
+neg(kill-18, not-17)
+conj_and(option-7, kill-18)
+

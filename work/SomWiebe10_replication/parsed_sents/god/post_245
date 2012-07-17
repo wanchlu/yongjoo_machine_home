@@ -1,0 +1,78 @@
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB elaborate)
+      (PP (IN on)
+        (NP (DT that) (NN statement))))
+    (. ?)))
+
+aux(elaborate-3, Can-1)
+nsubj(elaborate-3, you-2)
+root(ROOT-0, elaborate-3)
+det(statement-6, that-5)
+prep_on(elaborate-3, statement-6)
+
+(ROOT
+  (S
+    (NP (NNP Energy))
+    (VP (VBZ is)
+      (NP (PDT such) (DT a) (JJ broad) (NN term))
+      (PP (IN after)
+        (NP (DT all))))
+    (. .)))
+
+nsubj(term-6, Energy-1)
+cop(term-6, is-2)
+predet(term-6, such-3)
+det(term-6, a-4)
+amod(term-6, broad-5)
+root(ROOT-0, term-6)
+prep_after(term-6, all-8)
+
+(ROOT
+  (SINV
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (VBP carry)
+          (NP (DT a) (NN ball))
+          (PRT (RP up))
+          (PP (TO to)
+            (NP
+              (NP (DT the) (NN top))
+              (PP (IN of)
+                (NP (DT a) (NN hill))))))))
+    (VBZ does)
+    (NP (PRP it))
+    (VP (VB gain)
+      (NP (NN mass)))
+    (. ?)))
+
+mark(carry-3, If-1)
+nsubj(carry-3, I-2)
+advcl(gain-15, carry-3)
+det(ball-5, a-4)
+dobj(carry-3, ball-5)
+prt(carry-3, up-6)
+det(top-9, the-8)
+prep_to(carry-3, top-9)
+det(hill-12, a-11)
+prep_of(top-9, hill-12)
+aux(gain-15, does-13)
+nsubj(gain-15, it-14)
+root(ROOT-0, gain-15)
+dobj(gain-15, mass-16)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT a) (NN photon))
+    (VP (VB have)
+      (NP (NN mass)))
+    (. ?)))
+
+dep(have-4, Does-1)
+det(photon-3, a-2)
+nsubj(have-4, photon-3)
+root(ROOT-0, have-4)
+dobj(have-4, mass-5)
+

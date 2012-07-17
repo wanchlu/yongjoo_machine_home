@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (NP (JJ For-profit) (NN insurance) (NNS companies))
+    (ADVP (RB often))
+    (VP (VBD put)
+      (NP (NNS patients))
+      (PP (IN at)
+        (NP (NN risk)))
+      (S
+        (VP (TO to)
+          (VP (VB cut)
+            (NP
+              (NP (NNS costs))
+              (SBAR
+                (S
+                  (NP (NNP Health) (NN insurance) (NNS claims))
+                  (VP (VBP are)
+                    (VP (VBN considered)
+                      (NP
+                        (NP (DT a) (`` ``) (NN loss) ('' ''))
+                        (PP (IN for)
+                          (NP (NN profit) (NN insurance) (NNS companies)))))))))))))
+    (. .)))
+
+amod(companies-3, For-profit-1)
+nn(companies-3, insurance-2)
+nsubj(put-5, companies-3)
+xsubj(cut-10, companies-3)
+advmod(put-5, often-4)
+root(ROOT-0, put-5)
+dobj(put-5, patients-6)
+prep_at(put-5, risk-8)
+aux(cut-10, to-9)
+xcomp(put-5, cut-10)
+dobj(cut-10, costs-11)
+nn(claims-14, Health-12)
+nn(claims-14, insurance-13)
+nsubjpass(considered-16, claims-14)
+auxpass(considered-16, are-15)
+rcmod(costs-11, considered-16)
+det(loss-19, a-17)
+dobj(considered-16, loss-19)
+nn(companies-24, profit-22)
+nn(companies-24, insurance-23)
+prep_for(loss-19, companies-24)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS companies))
+    (VP (VBP are)
+      (VP (VBN designed)
+        (S
+          (VP (TO to)
+            (VP (VB maximize)
+              (NP (NNS profits))
+              (PP (IN by)
+                (S
+                  (VP (VBG cutting)
+                    (NP (NNS costs))))))))))
+    (. .)))
+
+det(companies-2, These-1)
+nsubjpass(designed-4, companies-2)
+xsubj(maximize-6, companies-2)
+auxpass(designed-4, are-3)
+root(ROOT-0, designed-4)
+aux(maximize-6, to-5)
+xcomp(designed-4, maximize-6)
+dobj(maximize-6, profits-7)
+prepc_by(maximize-6, cutting-9)
+dobj(cutting-9, costs-10)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP (DT these) (NNS companies))
+      (VP (VB act)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (JJS best) (NNS interests))
+            (PP (IN of)
+              (NP (PRP$ their) (NNS patients)))))
+        (SBAR (IN if)
+          (S
+            (NP (PRP$ their) (NN incentive) (NN structure))
+            (VP (VBZ is)
+              (VP (VBN designed)
+                (S
+                  (VP (TO to)
+                    (VP (VB minimize)
+                      (NP (NN health) (NN coverage)))))))))))
+    (. ?)))
+
+advmod(act-5, How-1)
+aux(act-5, can-2)
+det(companies-4, these-3)
+nsubj(act-5, companies-4)
+root(ROOT-0, act-5)
+det(interests-9, the-7)
+amod(interests-9, best-8)
+prep_in(act-5, interests-9)
+poss(patients-12, their-11)
+prep_of(interests-9, patients-12)
+mark(designed-18, if-13)
+poss(structure-16, their-14)
+nn(structure-16, incentive-15)
+nsubjpass(designed-18, structure-16)
+xsubj(minimize-20, structure-16)
+auxpass(designed-18, is-17)
+advcl(act-5, designed-18)
+aux(minimize-20, to-19)
+xcomp(designed-18, minimize-20)
+nn(coverage-22, health-21)
+dobj(minimize-20, coverage-22)
+

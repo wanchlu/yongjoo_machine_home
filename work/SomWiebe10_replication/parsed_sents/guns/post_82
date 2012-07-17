@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Worldwide))
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN ownership))
+            (PP (IN of)
+              (NP (NNS handguns))))
+          (VP (VBZ has)
+            (VP (VBN been)
+              (VP (VBN correlated)
+                (PP (IN with)
+                  (NP (JJR higher) (NN homicide) (NN ratesIt)))))))))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP
+          (ADVP (RB empirically))
+          (VBN proven)
+          (SBAR (IN that)
+            (S
+              (PP (IN among)
+                (NP
+                  (NP (NNS countries))
+                  (PP (IN of)
+                    (NP (DT the) (NN world)))))
+              (NP
+                (NP (DT the) (NNS ones))
+                (PP (IN with)
+                  (NP
+                    (NP (DT the) (JJS lowest) (JJ private) (NN ownership))
+                    (PP (IN of)
+                      (NP (NNS handguns))))))
+              (VP (VBP have)
+                (NP (DT a)
+                  (ADJP (RB significantly) (JJR lower))
+                  (NN homicide) (NN rate))))))))))
+
+nsubjpass(proven-16, Worldwide-1)
+det(ownership-3, the-2)
+nsubjpass(correlated-8, ownership-3)
+prep_of(ownership-3, handguns-5)
+aux(correlated-8, has-6)
+auxpass(correlated-8, been-7)
+rcmod(Worldwide-1, correlated-8)
+amod(ratesIt-12, higher-10)
+nn(ratesIt-12, homicide-11)
+prep_with(correlated-8, ratesIt-12)
+aux(proven-16, has-13)
+auxpass(proven-16, been-14)
+advmod(proven-16, empirically-15)
+root(ROOT-0, proven-16)
+complm(have-32, that-17)
+prep_among(have-32, countries-19)
+det(world-22, the-21)
+prep_of(countries-19, world-22)
+det(ones-24, the-23)
+nsubj(have-32, ones-24)
+det(ownership-29, the-26)
+amod(ownership-29, lowest-27)
+amod(ownership-29, private-28)
+prep_with(ones-24, ownership-29)
+prep_of(ownership-29, handguns-31)
+ccomp(proven-16, have-32)
+det(rate-37, a-33)
+advmod(lower-35, significantly-34)
+amod(rate-37, lower-35)
+nn(rate-37, homicide-36)
+dobj(have-32, rate-37)
+

@@ -1,0 +1,115 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP America))
+      (VP (VBZ is)
+        (NP (PRP$ my))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (NP (DT the) (NNS peoples) (NN country)))
+    (. .)))
+
+nsubj(my-3, America-1)
+cop(my-3, is-2)
+root(ROOT-0, my-3)
+dep(country-8, we-5)
+det(country-8, the-6)
+nn(country-8, peoples-7)
+conj_and(my-3, country-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ disagrees)
+            (PP (IN with)
+              (NP
+                (NP (NNS laws))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP are)
+                      (ADVP (RB founders)
+                        (NP (CD \/) (NNS fathers)))
+                      (VP (VBN created)))))))))))
+    (VP (MD should)
+      (VP (VB get)
+        (PRT (RP out))))
+    (. .)))
+
+nsubj(disagrees-3, Anyone-1)
+nsubj(get-13, Anyone-1)
+rcmod(Anyone-1, disagrees-3)
+prep_with(disagrees-3, laws-5)
+nsubjpass(created-11, laws-5)
+auxpass(created-11, are-7)
+advmod(created-11, founders-8)
+num(fathers-10, \/-9)
+pobj(founders-8, fathers-10)
+rcmod(laws-5, created-11)
+aux(get-13, should-12)
+root(ROOT-0, get-13)
+prt(get-13, out-14)
+
+(ROOT
+  (S
+    (NP (DT No) (NN one))
+    (VP (VBZ is)
+      (VP (VBG begging)
+        (S
+          (NP (PRP you))
+          (VP (TO to)
+            (VP (VB stay)
+              (ADVP (RB here)))))))
+    (. .)))
+
+det(one-2, No-1)
+nsubj(begging-4, one-2)
+aux(begging-4, is-3)
+root(ROOT-0, begging-4)
+nsubj(stay-7, you-5)
+aux(stay-7, to-6)
+xcomp(begging-4, stay-7)
+advmod(stay-7, here-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (PP (IN in)
+            (NP (NNP Germany)))
+          (NP (PRP they))
+          (VP (VBP have)
+            (NP (NN gun) (NN control))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+prep_in(have-6, Germany-4)
+nsubj(have-6, they-5)
+ccomp(believe-2, have-6)
+nn(control-8, gun-7)
+dobj(have-6, control-8)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD will)
+      (VP (VB welcome)
+        (NP (PRP you))
+        (PP (IN with)
+          (NP (JJ open) (NNS arms)))))))
+
+nsubj(welcome-3, They-1)
+aux(welcome-3, will-2)
+root(ROOT-0, welcome-3)
+dobj(welcome-3, you-4)
+amod(arms-7, open-6)
+prep_with(welcome-3, arms-7)
+

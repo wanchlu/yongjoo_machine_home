@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN everyone))
+        (VP (VBD carried)
+          (NP (NNS guns)))))
+    (, ,)
+    (NP (NNS people))
+    (VP (MD would)
+      (VP (VB get)
+        (NP (NN shot))
+        (PP (IN for)
+          (NP (RB almost) (DT any) (NN reason)))))
+    (. .)))
+
+mark(carried-3, If-1)
+nsubj(carried-3, everyone-2)
+advcl(get-8, carried-3)
+dobj(carried-3, guns-4)
+nsubj(get-8, people-6)
+aux(get-8, would-7)
+root(ROOT-0, get-8)
+dobj(get-8, shot-9)
+advmod(reason-13, almost-11)
+det(reason-13, any-12)
+prep_for(get-8, reason-13)
+
+(ROOT
+  (S (CC And)
+    (NP
+      (NP (NNS lots))
+      (PP (IN of)
+        (NP (JJ innocent) (NNS bystanders))))
+    (VP (MD would)
+      (VP (VB get)
+        (VP (VBN hurt)
+          (PP (IN in)
+            (NP
+              (NP (NNS gunfights))
+              (PRN (-LRB- -LRB-)
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (NP (EX there))
+                    (VP (MD would)
+                      (VP (VB be)
+                        (ADJP
+                          (NP (DT a) (RB lot))
+                          (JJR more)
+                          (PP (IN of)))))))
+                (-RRB- -RRB-)))))))
+    (. .)))
+
+cc(hurt-8, And-1)
+nsubjpass(hurt-8, lots-2)
+amod(bystanders-5, innocent-4)
+prep_of(lots-2, bystanders-5)
+aux(hurt-8, would-6)
+auxpass(hurt-8, get-7)
+root(ROOT-0, hurt-8)
+prep_in(hurt-8, gunfights-10)
+dobj(more-18, which-12)
+expl(more-18, there-13)
+aux(more-18, would-14)
+cop(more-18, be-15)
+det(lot-17, a-16)
+npadvmod(more-18, lot-17)
+dep(gunfights-10, more-18)
+prep(more-18, of-19)
+

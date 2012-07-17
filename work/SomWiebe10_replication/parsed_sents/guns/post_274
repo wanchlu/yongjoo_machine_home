@@ -1,0 +1,247 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ does)
+      (NP
+        (NP (DT every) (JJ political) (NN figure))
+        (PP (IN in)
+          (NP (DT the) (NN world))))
+      (VP (VB surround)
+        (NP (PRP themselves))
+        (PP
+          (PP (IN with)
+            (NP (NNS firearms)))
+          (, ,)
+          (CC and)
+          (PP (IN with)
+            (NP (JJ armed) (NNS guards))))))
+    (. ?)))
+
+advmod(surround-9, Why-1)
+aux(surround-9, does-2)
+det(figure-5, every-3)
+amod(figure-5, political-4)
+nsubj(surround-9, figure-5)
+det(world-8, the-7)
+prep_in(figure-5, world-8)
+root(ROOT-0, surround-9)
+dobj(surround-9, themselves-10)
+prep_with(surround-9, firearms-12)
+amod(guards-17, armed-16)
+prep_with(surround-9, guards-17)
+conj_and(firearms-12, guards-17)
+
+(ROOT
+  (S
+    (VP (VB Answer)
+      (SBAR (IN because)
+        (S
+          (NP (NNS guns))
+          (VP (VBP make)
+            (S
+              (NP (PRP them))
+              (ADJP (JJR safer)))))))
+    (. .)))
+
+root(ROOT-0, Answer-1)
+mark(make-4, because-2)
+nsubj(make-4, guns-3)
+advcl(Answer-1, make-4)
+nsubj(safer-6, them-5)
+xcomp(make-4, safer-6)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP do) (RB n't)
+        (ADVP (RB just))
+        (VP (VB make)
+          (S
+            (NP (PRP them))
+            (VP (VB feel)
+              (ADJP (JJR safer)))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP make)
+      (S
+        (NP (PRP them))
+        (ADJP (JJR safer)))
+      (PP (IN in)
+        (NP (DT an) (JJ undeniable) (, ,) (JJ concrete) (NN way))))
+    (. .)))
+
+nsubj(make-5, They-1)
+aux(make-5, do-2)
+neg(make-5, n't-3)
+advmod(make-5, just-4)
+ccomp(make-11, make-5)
+nsubj(feel-7, them-6)
+ccomp(make-5, feel-7)
+acomp(feel-7, safer-8)
+nsubj(make-11, they-10)
+root(ROOT-0, make-11)
+nsubj(safer-13, them-12)
+xcomp(make-11, safer-13)
+det(way-19, an-15)
+amod(way-19, undeniable-16)
+amod(way-19, concrete-18)
+prep_in(make-11, way-19)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD can)
+      (ADVP (RB even))
+      (VP (VB ask)
+        (S
+          (NP (NNP Barack) (NNP Obama))
+          (NP (DT this) (NN question)))))
+    (. .)))
+
+nsubj(ask-4, You-1)
+aux(ask-4, can-2)
+advmod(ask-4, even-3)
+root(ROOT-0, ask-4)
+nn(Obama-6, Barack-5)
+nsubj(question-8, Obama-6)
+det(question-8, this-7)
+xcomp(ask-4, question-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (RB only) (JJ HONEST) (NN answer))
+      (SBAR
+        (S
+          (NP (PRP he))
+          (VP (MD could)
+            (VP (VB give)
+              (S
+                (VP (TO to)
+                  (VP (VB explain)
+                    (NP (PRP$ his) (NN belief))
+                    (SBAR (IN that)
+                      (S
+                        (S
+                          (NP (PRP he))
+                          (VP (MD should)
+                            (VP (VB have)
+                              (NP (NNS guns)))))
+                        (CC but)
+                        (S
+                          (NP (NN everyone) (RB else))
+                          (VP (MD should) (RB not)))))))))))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (PRP$ his) (NN life))
+          (VP (VBZ is)
+            (ADJP
+              (ADJP (RBR more) (JJ important))
+              (SBAR (IN than)
+                (S
+                  (VP (VBP are)
+                    (NP
+                      (NP (DT the) (NNS lives))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NN rest))
+                          (PP (IN of)
+                            (NP (PRP us))))))))))))))
+    (. .)))
+
+det(answer-4, The-1)
+advmod(answer-4, only-2)
+amod(answer-4, HONEST-3)
+dobj(give-7, answer-4)
+nsubj(is-22, answer-4)
+nsubj(give-7, he-5)
+xsubj(explain-9, he-5)
+aux(give-7, could-6)
+rcmod(answer-4, give-7)
+aux(explain-9, to-8)
+xcomp(give-7, explain-9)
+poss(belief-11, his-10)
+dobj(explain-9, belief-11)
+complm(have-15, that-12)
+nsubj(have-15, he-13)
+aux(have-15, should-14)
+ccomp(explain-9, have-15)
+dobj(have-15, guns-16)
+nsubj(should-20, everyone-18)
+advmod(everyone-18, else-19)
+ccomp(explain-9, should-20)
+conj_but(have-15, should-20)
+neg(should-20, not-21)
+root(ROOT-0, is-22)
+complm(important-28, that-23)
+poss(life-25, his-24)
+nsubj(important-28, life-25)
+cop(important-28, is-26)
+advmod(important-28, more-27)
+ccomp(is-22, important-28)
+mark(lives-32, than-29)
+cop(lives-32, are-30)
+det(lives-32, the-31)
+dep(important-28, lives-32)
+det(rest-35, the-34)
+prep_of(lives-32, rest-35)
+prep_of(rest-35, us-37)
+
+(ROOT
+  (S
+    (NP
+      (NP (RB About) (DT the) (JJ only) (NNS people))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP feel)
+            (ADJP (RBR less) (JJ safe))
+            (PP (IN around)
+              (NP (NNS guns)))))))
+    (VP (VBP are)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (ADJP (JJ afraid)
+                (PP (IN of)
+                  (NP (NNS guns)))))))))
+    (. .)))
+
+advmod(people-4, About-1)
+det(people-4, the-2)
+amod(people-4, only-3)
+nsubj(feel-6, people-4)
+nsubj(those-12, people-4)
+rcmod(people-4, feel-6)
+advmod(safe-8, less-7)
+acomp(feel-6, safe-8)
+prep_around(feel-6, guns-10)
+cop(those-12, are-11)
+root(ROOT-0, those-12)
+nsubj(afraid-15, those-12)
+cop(afraid-15, are-14)
+rcmod(those-12, afraid-15)
+prep_of(afraid-15, guns-17)
+
+(ROOT
+  (S
+    (NP (NN Fear) (NN hyperbole))
+    (VP (VBZ rules)
+      (NP (PRP$ their) (NNS views))
+      (PP (IN on)
+        (NP (DT this) (NN issue))))
+    (. .)))
+
+nn(hyperbole-2, Fear-1)
+nsubj(rules-3, hyperbole-2)
+root(ROOT-0, rules-3)
+poss(views-5, their-4)
+dobj(rules-3, views-5)
+det(issue-8, this-7)
+prep_on(rules-3, issue-8)
+

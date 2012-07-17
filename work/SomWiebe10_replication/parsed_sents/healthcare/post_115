@@ -1,0 +1,104 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (VP (VBG leading)
+        (NP (JJ healthy) (NNS lives))))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN burdened)
+          (PP (IN by)
+            (NP
+              (NP (DT the) (NN unhealthy))
+              (SBAR
+                (S
+                  (NP (PRP It))
+                  (VP (VBZ is) (RB not)
+                    (ADJP (JJ fair)
+                      (PP (IN for)
+                        (NP (DT those))))
+                    (SBAR (IN that)
+                      (S
+                        (NP (JJ lead) (JJ healthy) (NNS lives))
+                        (VP (TO to)
+                          (VP (VB have)
+                            (S
+                              (VP (TO to)
+                                (VP (VB pay)
+                                  (PP (IN for)
+                                    (NP
+                                      (NP (DT those))
+                                      (SBAR
+                                        (WHNP (WDT that))
+                                        (S
+                                          (VP (VBP lead)
+                                            (NP (JJ unhealthy) (NNS ones))))))))))))))))))))))
+    (. .)))
+
+nsubjpass(burdened-7, People-1)
+partmod(People-1, leading-2)
+amod(lives-4, healthy-3)
+dobj(leading-2, lives-4)
+aux(burdened-7, will-5)
+auxpass(burdened-7, be-6)
+root(ROOT-0, burdened-7)
+det(unhealthy-10, the-9)
+agent(burdened-7, unhealthy-10)
+nsubj(fair-14, It-11)
+cop(fair-14, is-12)
+neg(fair-14, not-13)
+rcmod(unhealthy-10, fair-14)
+prep_for(fair-14, those-16)
+complm(have-22, that-17)
+amod(lives-20, lead-18)
+amod(lives-20, healthy-19)
+nsubj(have-22, lives-20)
+aux(have-22, to-21)
+ccomp(fair-14, have-22)
+xcomp(fair-14, have-22)
+aux(pay-24, to-23)
+xcomp(have-22, pay-24)
+prep_for(pay-24, those-26)
+nsubj(lead-28, those-26)
+rcmod(those-26, lead-28)
+amod(ones-30, unhealthy-29)
+dobj(lead-28, ones-30)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Those))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP make)
+            (S
+              (NP (NNS decisions))
+              (VP (TO to)
+                (VP
+                  (VP (VB smoke)
+                    (NP (NNS cigarettes)))
+                  (CC and)
+                  (VP (VB eat)
+                    (NP (NNS excessively))))))))))
+    (VP (MD should)
+      (VP (VB pay)
+        (NP (DT the) (NNS consequences))))
+    (. .)))
+
+nsubj(make-3, Those-1)
+nsubj(pay-12, Those-1)
+rcmod(Those-1, make-3)
+nsubj(smoke-6, decisions-4)
+nsubj(eat-9, decisions-4)
+aux(smoke-6, to-5)
+xcomp(make-3, smoke-6)
+dobj(smoke-6, cigarettes-7)
+xcomp(make-3, eat-9)
+conj_and(smoke-6, eat-9)
+dobj(eat-9, excessively-10)
+aux(pay-12, should-11)
+root(ROOT-0, pay-12)
+det(consequences-14, the-13)
+dobj(pay-12, consequences-14)
+

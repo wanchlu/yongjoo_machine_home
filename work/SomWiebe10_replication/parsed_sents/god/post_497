@@ -1,0 +1,158 @@
+(ROOT
+  (S
+    (SBAR (RB Just) (IN because)
+      (S
+        (NP (NN something) (NNS sucks))
+        (VP (VBZ does) (RB n't)
+          (VP (VB mean)))))
+    (NP (PRP it))
+    (VP (VBZ 's) (RB not)
+      (ADJP (JJ true)))
+    (. .)))
+
+advmod(mean-7, Just-1)
+dep(mean-7, because-2)
+nn(sucks-4, something-3)
+nsubj(mean-7, sucks-4)
+aux(mean-7, does-5)
+neg(mean-7, n't-6)
+advcl(true-11, mean-7)
+nsubj(true-11, it-8)
+cop(true-11, 's-9)
+neg(true-11, not-10)
+root(ROOT-0, true-11)
+
+(ROOT
+  (SQ (MD Do) (RB n't)
+    (NP (PRP you))
+    (VP (VB see)
+      (NP (DT the) (NNS foolishness))
+      (PP (IN in)
+        (S
+          (VP (VBG believing)
+            (PP (IN in)
+              (NP (NN something))))))
+      (SBAR
+        (ADVP (RB simply))
+        (IN because)
+        (S
+          (NP (PRP you))
+          (VP (VBP want)
+            (S
+              (NP (PRP it))
+              (VP (TO to)
+                (VP (VB be)
+                  (ADJP (JJ true)))))))))
+    (. ?)))
+
+aux(see-4, Do-1)
+neg(see-4, n't-2)
+nsubj(see-4, you-3)
+root(ROOT-0, see-4)
+det(foolishness-6, the-5)
+dobj(see-4, foolishness-6)
+prepc_in(see-4, believing-8)
+prep_in(believing-8, something-10)
+advmod(want-14, simply-11)
+dep(want-14, because-12)
+nsubj(want-14, you-13)
+dep(see-4, want-14)
+nsubj(true-18, it-15)
+aux(true-18, to-16)
+cop(true-18, be-17)
+xcomp(want-14, true-18)
+
+(ROOT
+  (S (CC And)
+    (NP (DT the) (JJ blind) (NN man) (NN analogy))
+    (VP (VBZ does) (RB n't)
+      (VP (VB work)
+        (SBAR (IN because)
+          (S
+            (NP (DT the) (JJ blind) (NN man))
+            (VP (MD could)
+              (VP (VB verify)
+                (NP
+                  (NP (DT the) (NN existence))
+                  (PP (IN of)
+                    (NP (DT the) (NN color) (NN blue))))
+                (PP (IN through)
+                  (NP (JJ rational) (NN thought)))))))))
+    (. .)))
+
+cc(work-8, And-1)
+det(analogy-5, the-2)
+amod(analogy-5, blind-3)
+nn(analogy-5, man-4)
+nsubj(work-8, analogy-5)
+aux(work-8, does-6)
+neg(work-8, n't-7)
+root(ROOT-0, work-8)
+mark(verify-14, because-9)
+det(man-12, the-10)
+amod(man-12, blind-11)
+nsubj(verify-14, man-12)
+aux(verify-14, could-13)
+advcl(work-8, verify-14)
+det(existence-16, the-15)
+dobj(verify-14, existence-16)
+det(blue-20, the-18)
+nn(blue-20, color-19)
+prep_of(existence-16, blue-20)
+amod(thought-23, rational-22)
+prep_through(verify-14, thought-23)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ tells)
+      (NP (PRP us))
+      (PP (IN in)
+        (NP
+          (NP (NN detail))
+          (PP (IN about)
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP
+                  (NP (DT the) (NN eye))
+                  (CC and)
+                  (NP (DT the) (NN brain)))
+                (VP (VBP work)
+                  (ADVP (RB together))
+                  (PP (TO to)
+                    (NP (JJ perceive) (NNS colors))))))))))
+    (. .)))
+
+nsubj(tells-2, Science-1)
+root(ROOT-0, tells-2)
+dobj(tells-2, us-3)
+prep_in(tells-2, detail-5)
+advmod(work-13, how-7)
+det(eye-9, the-8)
+nsubj(work-13, eye-9)
+det(brain-12, the-11)
+conj_and(eye-9, brain-12)
+nsubj(work-13, brain-12)
+prepc_about(detail-5, work-13)
+advmod(work-13, together-14)
+amod(colors-17, perceive-16)
+prep_to(work-13, colors-17)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ tells)
+      (NP (PRP us))
+      (NP
+        (NP (NN nothing))
+        (PP (IN about)
+          (NP (NNP God)))))
+    (. .)))
+
+nsubj(tells-2, It-1)
+root(ROOT-0, tells-2)
+iobj(tells-2, us-3)
+dobj(tells-2, nothing-4)
+prep_about(nothing-4, God-6)
+

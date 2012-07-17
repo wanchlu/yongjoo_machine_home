@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Statistics))
+      (VP (VBN gathered)
+        (PP (IN during)
+          (NP (DT the) (JJ last) (JJ federal) (NNS weapons) (NN ban)))))
+    (VP (VBP do) (RB not)
+      (VP (VB include)
+        (NP (`` ``) (JJ copy-cat) ('' '') (NNS weapons))))
+    (. .)))
+
+nsubj(include-11, Statistics-1)
+partmod(Statistics-1, gathered-2)
+det(ban-8, the-4)
+amod(ban-8, last-5)
+amod(ban-8, federal-6)
+nn(ban-8, weapons-7)
+prep_during(gathered-2, ban-8)
+aux(include-11, do-9)
+neg(include-11, not-10)
+root(ROOT-0, include-11)
+amod(weapons-15, copy-cat-13)
+dobj(include-11, weapons-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT These) (NNS types))
+      (PP (IN of)
+        (NP (NN assault) (NNS weapons))))
+    (VP (VBP are) (RB not)
+      (VP (VBN counted)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN number))
+            (PP (IN of)
+              (NP
+                (NP (NNS deaths))
+                (ADJP (JJ due)
+                  (PP (TO to)
+                    (NP (NN assault) (NNS weapons))))))))))
+    (. .)))
+
+det(types-2, These-1)
+nsubjpass(counted-8, types-2)
+nn(weapons-5, assault-4)
+prep_of(types-2, weapons-5)
+auxpass(counted-8, are-6)
+neg(counted-8, not-7)
+root(ROOT-0, counted-8)
+det(number-11, the-10)
+prep_in(counted-8, number-11)
+prep_of(number-11, deaths-13)
+nn(weapons-17, assault-16)
+prep_due_to(deaths-13, weapons-17)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (PP (IN for)
+      (NP
+        (NP
+          (QP (IN at) (JJS least) (DT the))
+          (NNS weapons))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD were)
+              (VP (VBN banned)))))))
+    (, ,)
+    (NP
+      (NP (DT a) (NN drop))
+      (PP (IN in)
+        (NP (NN violence))))
+    (VP (MD can)
+      (VP (VB be)
+        (VP
+          (ADVP (RB appropriately))
+          (VBN attributed))))
+    (. .)))
+
+advmod(attributed-19, Therefore-1)
+quantmod(the-6, at-4)
+mwe(at-4, least-5)
+pobj(at-4, least-5)
+num(weapons-7, the-6)
+nsubjpass(banned-10, weapons-7)
+prep_for(attributed-19, weapons-7)
+auxpass(banned-10, were-9)
+rcmod(weapons-7, banned-10)
+det(drop-13, a-12)
+nsubjpass(attributed-19, drop-13)
+prep_in(drop-13, violence-15)
+aux(attributed-19, can-16)
+auxpass(attributed-19, be-17)
+advmod(attributed-19, appropriately-18)
+root(ROOT-0, attributed-19)
+

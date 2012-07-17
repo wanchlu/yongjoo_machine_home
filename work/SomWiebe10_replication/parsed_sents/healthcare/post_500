@@ -1,0 +1,104 @@
+(ROOT
+  (NP (NNP #originalTopic) (NNP =) (NNP So_you_still_want_Nationalized_Health_Care)))
+
+nn(So_you_still_want_Nationalized_Health_Care-3, #originalTopic-1)
+nn(So_you_still_want_Nationalized_Health_Care-3, =-2)
+root(ROOT-0, So_you_still_want_Nationalized_Health_Care-3)
+
+(ROOT
+  (S
+    (ADVP (RB OMG))
+    (NP (PRP you))
+    (VP (VBP are)
+      (ADJP (RB just) (JJ ignorant)))
+    (. !)))
+
+advmod(ignorant-5, OMG-1)
+nsubj(ignorant-5, you-2)
+cop(ignorant-5, are-3)
+advmod(ignorant-5, just-4)
+root(ROOT-0, ignorant-5)
+
+(ROOT
+  (INTJ (UH Its)
+    (PP (RB not) (IN about)
+      (S
+        (VP (VBG being)
+          (NP (DT a) (NN child)))))
+    (. !)))
+
+root(ROOT-0, Its-1)
+neg(about-3, not-2)
+dep(Its-1, about-3)
+cop(child-6, being-4)
+det(child-6, a-5)
+pcomp(about-3, child-6)
+
+(ROOT
+  (INTJ (UH Its)
+    (PP (IN about)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD hit)
+              (NP (JJ hard) (NNS times)))))))
+    (. !)))
+
+root(ROOT-0, Its-1)
+dep(Its-1, about-2)
+pobj(about-2, those-3)
+nsubj(hit-5, those-3)
+rcmod(those-3, hit-5)
+amod(times-7, hard-6)
+dobj(hit-5, times-7)
+
+(ROOT
+  (S
+    (VP (VB Show)
+      (NP (DT some) (NN compassion)))
+    (. !)))
+
+root(ROOT-0, Show-1)
+det(compassion-3, some-2)
+dobj(Show-1, compassion-3)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP make)
+        (S
+          (NP (NN everything) (NN sound))
+          (ADJP (RB so) (JJ black)
+            (CC and)
+            (JJ white)))))
+    (, ,)
+    (NP (NN news))
+    (VP (VBP flash))
+    (: ...)))
+
+nsubj(make-2, You-1)
+ccomp(flash-11, make-2)
+nn(sound-4, everything-3)
+nsubj(black-6, sound-4)
+nsubj(white-8, sound-4)
+advmod(black-6, so-5)
+xcomp(make-2, black-6)
+xcomp(make-2, white-8)
+conj_and(black-6, white-8)
+nsubj(flash-11, news-10)
+root(ROOT-0, flash-11)
+
+(ROOT
+  (FRAG
+    (PP (IN ...)
+      (NP (PRP$ its)))
+    (NP (RB not))
+    (: !!)))
+
+dep(not-3, its-2)
+root(ROOT-0, not-3)
+punct(not-3, !!-4)
+

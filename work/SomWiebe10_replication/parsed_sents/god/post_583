@@ -1,0 +1,87 @@
+(ROOT
+  (S
+    (NP (DT The) (NNP Bible))
+    (VP (VBD was)
+      (VP (VBN written)
+        (S
+          (NP (NNS decades)
+            (CC &)
+            (NNS decades)))
+        (SBAR (IN after)
+          (S
+            (NP (NNP Jesus))
+            (ADVP (RB supposedly))
+            (VP (VBD walked)
+              (NP
+                (NP (DT the) (NN Earth))
+                (, ,)
+                (NP (NN period))))))))
+    (. .)))
+
+det(Bible-2, The-1)
+nsubjpass(written-4, Bible-2)
+auxpass(written-4, was-3)
+root(ROOT-0, written-4)
+xcomp(written-4, decades-5)
+xcomp(written-4, decades-7)
+conj_and(decades-5, decades-7)
+mark(walked-11, after-8)
+nsubj(walked-11, Jesus-9)
+advmod(walked-11, supposedly-10)
+advcl(written-4, walked-11)
+det(Earth-13, the-12)
+dobj(walked-11, Earth-13)
+appos(Earth-13, period-15)
+
+(ROOT
+  (S
+    (NP (`` ``)
+      (NP (JJR more))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (CD 95) (NN %))
+            (PP (IN of)
+              (NP (NNS sales))))
+          (VP (VBD made)
+            (PP (IN from)
+              (NP (DT the) (NN bible)))))))
+    (VP (VBP are)
+      (NP
+        (NP (NNS donations))
+        ('' '')
+        (SBAR
+          (WHNP (WP What))
+          (S
+            (VP (VBZ does)
+              (S
+                (NP (DT this))
+                (VP (VB prove)
+                  (NP (NNS ??)))))))))))
+
+dobj(made-8, more-2)
+nsubj(donations-13, more-2)
+complm(made-8, that-3)
+num(%-5, 95-4)
+nsubj(made-8, %-5)
+prep_of(%-5, sales-7)
+dep(more-2, made-8)
+det(bible-11, the-10)
+prep_from(made-8, bible-11)
+cop(donations-13, are-12)
+root(ROOT-0, donations-13)
+nsubj(does-16, What-15)
+rcmod(donations-13, does-16)
+nsubj(prove-18, this-17)
+ccomp(does-16, prove-18)
+dobj(prove-18, ??-19)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Absolutely))
+    (NP (NN nothing))
+    (. !)))
+
+dep(nothing-2, Absolutely-1)
+root(ROOT-0, nothing-2)
+

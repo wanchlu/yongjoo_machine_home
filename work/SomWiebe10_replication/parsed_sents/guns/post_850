@@ -1,0 +1,118 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBZ abuse)
+      (S
+        (NP (NN gun) (NNS rights))
+        (VP (TO to)
+          (VP
+            (VP (VB rob)
+              (NP (NNS places)))
+            (CC and)
+            (VP (VB take)
+              (NP (NNS hostages)))))))
+    (. .)))
+
+nsubj(abuse-2, People-1)
+root(ROOT-0, abuse-2)
+nn(rights-4, gun-3)
+nsubj(rob-6, rights-4)
+nsubj(take-9, rights-4)
+aux(rob-6, to-5)
+xcomp(abuse-2, rob-6)
+dobj(rob-6, places-7)
+xcomp(abuse-2, take-9)
+conj_and(rob-6, take-9)
+dobj(take-9, hostages-10)
+
+(ROOT
+  (S
+    (NP (NNS people))
+    (VP (VBP say)
+      (SBAR (IN that)
+        (S
+          (NP (PRP you))
+          (VP
+            (VP (VBP need)
+              (NP (NNS guns))
+              (S
+                (VP (TO to)
+                  (VP (VB protect)
+                    (NP (PRP yourself))))))
+            (CC but)
+            (VP (VBP do)
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (ADVP (RB really))
+                  (VP (VBP have)
+                    (NP (NN time)
+                      (S
+                        (VP (TO to)
+                          (VP (VB find)
+                            (NP (PRP$ your) (NN gun))
+                            (SBAR (IN if)
+                              (S
+                                (NP (PRP you))
+                                (VP (VBP are)
+                                  (VP (VBN taken)
+                                    (NP (NN hostage))))))))))))))))))
+    (. .)))
+
+nsubj(say-2, people-1)
+root(ROOT-0, say-2)
+complm(need-5, that-3)
+nsubj(need-5, you-4)
+nsubj(do-11, you-4)
+ccomp(say-2, need-5)
+dobj(need-5, guns-6)
+aux(protect-8, to-7)
+xcomp(need-5, protect-8)
+dobj(protect-8, yourself-9)
+ccomp(say-2, do-11)
+conj_but(need-5, do-11)
+nsubj(have-14, you-12)
+advmod(have-14, really-13)
+ccomp(do-11, have-14)
+dobj(have-14, time-15)
+aux(find-17, to-16)
+infmod(time-15, find-17)
+poss(gun-19, your-18)
+dobj(find-17, gun-19)
+mark(taken-23, if-20)
+nsubjpass(taken-23, you-21)
+auxpass(taken-23, are-22)
+advcl(find-17, taken-23)
+dobj(taken-23, hostage-24)
+
+(ROOT
+  (S
+    (VP (VB usualy)
+      (S
+        (NP (DT the) (NNS people))
+        (VP (VBG commiting)
+          (SBAR
+            (S
+              (NP (DT the) (NN crime))
+              (VP (VBP are)
+                (ADJP
+                  (ADJP (RBR more) (VBN prepared)
+                    (CC and)
+                    (JJ ready))
+                  (PP (TO to)
+                    (NP (NN strike))))))))))))
+
+root(ROOT-0, usualy-1)
+det(people-3, the-2)
+nsubj(commiting-4, people-3)
+dep(usualy-1, commiting-4)
+det(crime-6, the-5)
+nsubj(prepared-9, crime-6)
+nsubj(ready-11, crime-6)
+cop(prepared-9, are-7)
+advmod(prepared-9, more-8)
+ccomp(commiting-4, prepared-9)
+ccomp(commiting-4, ready-11)
+conj_and(prepared-9, ready-11)
+prep_to(prepared-9, strike-13)
+

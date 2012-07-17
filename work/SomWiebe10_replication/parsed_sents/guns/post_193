@@ -1,0 +1,52 @@
+(ROOT
+  (S (CC And)
+    (NP (PRP it))
+    (VP (VBD was)
+      (ADJP (JJ good)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP
+                (NP (NN someone) (NN thought))
+                (PP (IN of)
+                  (NP (DT this))))
+              (ADVP (RB too)))))))
+    (. .)))
+
+cc(good-4, And-1)
+nsubj(good-4, it-2)
+cop(good-4, was-3)
+root(ROOT-0, good-4)
+aux(see-6, to-5)
+xcomp(good-4, see-6)
+nn(thought-8, someone-7)
+dobj(see-6, thought-8)
+prep_of(thought-8, this-10)
+advmod(see-6, too-11)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB tell)
+      (NP
+        (NP (NNP Hugh)
+          (CC and)
+          (NNP Liz) (NNP McCutcheon))
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (JJ safe) (NNP China))
+            (VP (VBZ is))))))
+    (. .)))
+
+dep(tell-2, Please-1)
+root(ROOT-0, tell-2)
+nn(McCutcheon-6, Hugh-3)
+conj_and(Hugh-3, Liz-5)
+nn(McCutcheon-6, Liz-5)
+dobj(tell-2, McCutcheon-6)
+advmod(is-10, how-7)
+amod(China-9, safe-8)
+nsubj(is-10, China-9)
+dep(McCutcheon-6, is-10)
+

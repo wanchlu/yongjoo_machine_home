@@ -1,0 +1,155 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Government-control))
+      (PP (IN of)
+        (NP (NNS databases))))
+    (ADVP (RB better))
+    (VP (VB protect)
+      (NP (NN privacy))
+      (PP (IN than)
+        (NP (NNS companies))))
+    (. .)))
+
+nsubj(protect-5, Government-control-1)
+prep_of(Government-control-1, databases-3)
+advmod(protect-5, better-4)
+root(ROOT-0, protect-5)
+dobj(protect-5, privacy-6)
+prep_than(protect-5, companies-8)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ important)
+        (S
+          (VP (TO to)
+            (VP (VB recognize)
+              (SBAR (IN that)
+                (S
+                  (NP (DT this))
+                  (VP (VBZ is) (RB not)
+                    (NP
+                      (NP (DT a) (NN choice))
+                      (PP (IN between)
+                        (NP
+                          (NP (DT a) (JJ government-controlled) (NN database))
+                          (CC and)
+                          (NP (DT no) (NN database)))))))))))))
+    (. .)))
+
+nsubj(important-3, It-1)
+cop(important-3, is-2)
+root(ROOT-0, important-3)
+aux(recognize-5, to-4)
+xcomp(important-3, recognize-5)
+complm(choice-11, that-6)
+nsubj(choice-11, this-7)
+cop(choice-11, is-8)
+neg(choice-11, not-9)
+det(choice-11, a-10)
+ccomp(recognize-5, choice-11)
+det(database-15, a-13)
+amod(database-15, government-controlled-14)
+prep_between(choice-11, database-15)
+det(database-18, no-17)
+prep_between(choice-11, database-18)
+conj_and(database-15, database-18)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN alternative))
+      (PP (TO to)
+        (NP (DT a) (JJ government-controlled) (NN health) (NN care) (NN database))))
+    (VP (VBZ is)
+      (ADVP (RB only))
+      (NP (DT a)
+        (ADJP (RB privately) (VBN owned))
+        (NN health) (NN care) (NN databases)))
+    (. .)))
+
+det(alternative-2, The-1)
+nsubj(databases-16, alternative-2)
+det(database-8, a-4)
+amod(database-8, government-controlled-5)
+nn(database-8, health-6)
+nn(database-8, care-7)
+prep_to(alternative-2, database-8)
+cop(databases-16, is-9)
+advmod(databases-16, only-10)
+det(databases-16, a-11)
+advmod(owned-13, privately-12)
+amod(databases-16, owned-13)
+nn(databases-16, health-14)
+nn(databases-16, care-15)
+root(ROOT-0, databases-16)
+
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (DT these) (NNS choices))
+        (PP (IN in)
+          (NP (NN mind)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJR better))
+      (SBAR (IN that)
+        (S
+          (NP (NN health) (NN care) (NN information))
+          (VP (VB be)
+            (VP (VBN held)
+              (PP (IN by)
+                (NP (DT the) (NN government)))
+              (PP (IN than)
+                (PP (IN by)
+                  (NP (JJ less-regulated) (NNS companies)))))))))
+    (. .)))
+
+det(choices-3, these-2)
+prep_with(better-9, choices-3)
+prep_in(choices-3, mind-5)
+nsubj(better-9, it-7)
+cop(better-9, is-8)
+root(ROOT-0, better-9)
+complm(held-15, that-10)
+nn(information-13, health-11)
+nn(information-13, care-12)
+nsubjpass(held-15, information-13)
+auxpass(held-15, be-14)
+ccomp(better-9, held-15)
+det(government-18, the-17)
+agent(held-15, government-18)
+prep(held-15, than-19)
+pcomp(than-19, by-20)
+amod(companies-22, less-regulated-21)
+prep_by(than-19, companies-22)
+
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (VBZ is)
+      (ADJP (RBR better) (JJ able)
+        (S
+          (VP (TO to)
+            (VP (VB protect)
+              (NP
+                (NP (DT the) (NN privacy))
+                (PP (IN of)
+                  (NP (NNS individuals)))))))))
+    (. .)))
+
+det(government-2, The-1)
+nsubj(able-5, government-2)
+cop(able-5, is-3)
+advmod(able-5, better-4)
+root(ROOT-0, able-5)
+aux(protect-7, to-6)
+xcomp(able-5, protect-7)
+det(privacy-9, the-8)
+dobj(protect-7, privacy-9)
+prep_of(privacy-9, individuals-11)
+

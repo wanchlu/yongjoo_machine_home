@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP know)
+          (NP
+            (NP (DT this))
+            (PP (IN for)
+              (ADJP (JJ sure)))))))
+    (ADVP (RB then))
+    (VP (VBP show)
+      (S
+        (NP (PRP me))
+        (NP
+          (NP (JJ tangible) (NN proof))
+          (PP (IN of)
+            (NP (PRP$ your) (NN OPINION))))))
+    (. !)))
+
+mark(know-3, If-1)
+nsubj(know-3, you-2)
+advcl(show-8, know-3)
+csubj(show-8, know-3)
+dobj(know-3, this-4)
+prep_for(this-4, sure-6)
+advmod(show-8, then-7)
+root(ROOT-0, show-8)
+nsubj(proof-11, me-9)
+amod(proof-11, tangible-10)
+xcomp(show-8, proof-11)
+poss(OPINION-14, your-13)
+prep_of(proof-11, OPINION-14)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP you))
+        (VP (VB KNOW)
+          (NP (PRP$ your) (NN right)))))
+    (NP (DT this))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (NP (DT a) (JJ huge) (NN problem))
+        (, ,)
+        (S
+          (VP (VBG SHOULD)
+            (NP (PRP IT))))))
+    (. ?)))
+
+mark(KNOW-3, Since-1)
+nsubj(KNOW-3, you-2)
+advcl(problem-12, KNOW-3)
+poss(right-5, your-4)
+dobj(KNOW-3, right-5)
+nsubj(problem-12, this-6)
+aux(problem-12, should-7)
+neg(problem-12, not-8)
+cop(problem-12, be-9)
+det(problem-12, a-10)
+amod(problem-12, huge-11)
+root(ROOT-0, problem-12)
+partmod(problem-12, SHOULD-14)
+xcomp(problem-12, SHOULD-14)
+dobj(SHOULD-14, IT-15)
+
+(ROOT
+  (NP
+    (NP (NNS RELIGIOUS))
+    (NP (NNP FANATICS) (NNP ARE) (NNP SO) (NNP STUPID) (. !))
+    (. !)))
+
+root(ROOT-0, RELIGIOUS-1)
+nn(STUPID-5, FANATICS-2)
+nn(STUPID-5, ARE-3)
+nn(STUPID-5, SO-4)
+dep(RELIGIOUS-1, STUPID-5)
+

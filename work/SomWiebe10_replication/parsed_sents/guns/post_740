@@ -1,0 +1,232 @@
+(ROOT
+  (S (IN So)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP
+        (VP (VBG sitting)
+          (ADVP (RB here))
+          (PP (IN in)
+            (NP (NN class))))
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VBD was)
+              (NP (DT a) (NN student))
+              (, ,)
+              (ADVP (RB now)
+                (NP (DT a) (NN teacher)))))
+          (-RRB- -RRB-))
+        (, ,)
+        (NP
+          (NP (DT some) (NN kid))
+          (SBAR
+            (S
+              (VP (VBZ pulls)
+                (NP
+                  (NP (DT a) (NN gun))
+                  (PP (IN on)
+                    (NP (PRP me))))))))))
+    (. .)))
+
+dep(sitting-4, So-1)
+nsubj(sitting-4, I-2)
+aux(sitting-4, 'm-3)
+root(ROOT-0, sitting-4)
+advmod(sitting-4, here-5)
+prep_in(sitting-4, class-7)
+cop(student-11, was-9)
+det(student-11, a-10)
+parataxis(sitting-4, student-11)
+advmod(student-11, now-13)
+det(teacher-15, a-14)
+pobj(now-13, teacher-15)
+det(kid-19, some-18)
+dobj(sitting-4, kid-19)
+rcmod(kid-19, pulls-20)
+det(gun-22, a-21)
+dobj(pulls-20, gun-22)
+prep_on(gun-22, me-24)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (NP (DT a) (JJ law-abiding) (, ,) (JJ qualified) (NN citizen)))
+    (. .)))
+
+nsubj(citizen-7, I-1)
+cop(citizen-7, 'm-2)
+det(citizen-7, a-3)
+amod(citizen-7, law-abiding-4)
+amod(citizen-7, qualified-6)
+root(ROOT-0, citizen-7)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP am)
+      (NP (PRP I))
+      (S
+        (VP (TO to)
+          (VP (VB do)))))
+    (. ?)))
+
+attr(am-2, What-1)
+root(ROOT-0, am-2)
+nsubj(am-2, I-3)
+aux(do-5, to-4)
+dep(am-2, do-5)
+
+(ROOT
+  (S
+    (SBAR
+      (PRN
+        (NP
+          (NP (NN Option))
+          (NP (NNP A)))
+        (-RRB- -RRB-))
+      (S (, ,)
+        (ADVP (PRP I))
+        (VP (VBP do) (RB n't)
+          (VP (VB have)
+            (NP (DT the) (NN ability)
+              (S
+                (VP (TO to)
+                  (VP
+                    (VP (VB carry)
+                      (NP (DT a) (NN handgun)))
+                    (CC and)
+                    (VP (VB get)
+                      (NP
+                        (NP (PRP$ my) (NN butt))
+                        (VP (VBN blown)
+                          (PRT (RP off))
+                          (NP
+                            (NP (DT the) (NN face))
+                            (PP (IN of)
+                              (NP (DT the) (NN earth)))))))))))))
+        (PP (IN because)
+          (NP (PRP I)))))
+    (VP (VBP 'm)
+      (ADJP (JJ defenseless)))
+    (. .)))
+
+dep(have-8, Option-1)
+dep(Option-1, A-2)
+advmod(have-8, I-5)
+aux(have-8, do-6)
+neg(have-8, n't-7)
+csubj(defenseless-29, have-8)
+det(ability-10, the-9)
+dobj(have-8, ability-10)
+aux(carry-12, to-11)
+infmod(ability-10, carry-12)
+det(handgun-14, a-13)
+dobj(carry-12, handgun-14)
+infmod(ability-10, get-16)
+conj_and(carry-12, get-16)
+poss(butt-18, my-17)
+dobj(get-16, butt-18)
+partmod(butt-18, blown-19)
+prt(blown-19, off-20)
+det(face-22, the-21)
+dobj(blown-19, face-22)
+det(earth-25, the-24)
+prep_of(face-22, earth-25)
+prep_because(have-8, I-27)
+cop(defenseless-29, 'm-28)
+root(ROOT-0, defenseless-29)
+
+(ROOT
+  (S
+    (SBAR
+      (PRN
+        (NP
+          (NP (NN Option))
+          (NP (NNP B)))
+        (-RRB- -RRB-))
+      (S
+        (PRN (, ,)
+          (S
+            (NP (PRP I))
+            (VP (VBP have)
+              (S
+                (NP (DT a) (NN weapon))
+                (NP (DT that))))))
+        (NP (PRP I))
+        (ADVP (RB only))
+        (VP
+          (VP (VBP intend)
+            (S
+              (VP (TO to)
+                (VP (VB use)
+                  (PP (IN in)
+                    (NP (JJ dire) (NNS emergencies)))))))
+          (CC and)
+          (VP (MD can)
+            (VP (VB defend)
+              (NP (PRP myself))
+              (FRAG
+                (WHADVP (WRB when))))))))
+    (NP (PRP I))
+    (VP (VBP need)
+      (PP (TO to)))
+    (. .)))
+
+dep(intend-12, Option-1)
+dep(Option-1, B-2)
+nsubj(have-6, I-5)
+parataxis(intend-12, have-6)
+det(weapon-8, a-7)
+nsubj(that-9, weapon-8)
+xcomp(have-6, that-9)
+nsubj(intend-12, I-10)
+xsubj(use-14, I-10)
+nsubj(defend-20, I-10)
+advmod(intend-12, only-11)
+dep(need-24, intend-12)
+aux(use-14, to-13)
+xcomp(intend-12, use-14)
+amod(emergencies-17, dire-16)
+prep_in(use-14, emergencies-17)
+aux(defend-20, can-19)
+conj_and(intend-12, defend-20)
+dep(need-24, defend-20)
+dobj(defend-20, myself-21)
+dep(defend-20, when-22)
+nsubj(need-24, I-23)
+root(ROOT-0, need-24)
+prep(need-24, to-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP (DT a) (JJR better) (NN chance))
+      (PP (IN at)
+        (NP (NN survival))))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+det(chance-5, a-3)
+amod(chance-5, better-4)
+dobj(have-2, chance-5)
+prep_at(have-2, survival-7)
+
+(ROOT
+  (S
+    (NP (NNP Hmmm))
+    (: ...)
+    (VP (VBZ seems)
+      (PP (IN like)
+        (NP (DT a) (NN no-brainer)))
+      (PP (TO to)
+        (NP (PRP me))))
+    (. .)))
+
+nsubj(seems-3, Hmmm-1)
+root(ROOT-0, seems-3)
+det(no-brainer-6, a-5)
+prep_like(seems-3, no-brainer-6)
+prep_to(seems-3, me-8)
+

@@ -1,0 +1,179 @@
+(ROOT
+  (S
+    (PP (IN Under)
+      (NP
+        (NP (DT the) (NN system))
+        (SBAR
+          (S
+            (NP (PRP I))
+            (VP (VBP envision))))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN amount))
+      (PP (IN of)
+        (NP
+          (NP (NN tax))
+          (VP (VBN paid)
+            (PP (IN by)
+              (NP (DT the) (NN employer)))))))
+    (VP (VBZ is)
+      (VP (VBN decreased)
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBZ gets)
+              (ADJP (VBN replenished)
+                (PP (IN by)
+                  (NP (DT the) (NN employee)))))))))
+    (. .)))
+
+det(system-3, the-2)
+dobj(envision-5, system-3)
+prep_under(decreased-16, system-3)
+nsubj(envision-5, I-4)
+rcmod(system-3, envision-5)
+det(amount-8, the-7)
+nsubjpass(decreased-16, amount-8)
+prep_of(amount-8, tax-10)
+partmod(tax-10, paid-11)
+det(employer-14, the-13)
+agent(paid-11, employer-14)
+auxpass(decreased-16, is-15)
+root(ROOT-0, decreased-16)
+mark(replenished-20, because-17)
+nsubjpass(replenished-20, it-18)
+auxpass(replenished-20, gets-19)
+advcl(decreased-16, replenished-20)
+det(employee-23, the-22)
+agent(replenished-20, employee-23)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP see)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP mean))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB not)
+        (VP (VB agree)
+          (PP (IN with)
+            (NP
+              (NP
+                (NP (DT the) (NN employer) (POS 's))
+                (NNS taxes))
+              (VP (VBG being)
+                (VP (VBN decreased))))))))
+    (. .)))
+
+nsubj(see-2, I-1)
+root(ROOT-0, see-2)
+dobj(mean-5, what-3)
+nsubj(mean-5, you-4)
+ccomp(see-2, mean-5)
+nsubj(agree-11, I-8)
+aux(agree-11, do-9)
+neg(agree-11, not-10)
+conj_but(see-2, agree-11)
+det(employer-14, the-13)
+poss(taxes-16, employer-14)
+prep_with(agree-11, taxes-16)
+auxpass(decreased-18, being-17)
+partmod(taxes-16, decreased-18)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ seems)
+      (SBAR (IN that)
+        (S
+          (NP (PDT all) (PRP$ your) (NNS proposals))
+          (ADVP (RB simply))
+          (VP (VB help)
+            (S
+              (NP (DT the) (JJ rich))
+              (VP (VB get)
+                (S
+                  (NP
+                    (NP (JJR richer))
+                    (CC and)
+                    (NP (DT the) (JJ poor)))
+                  (VP (VB get)
+                    (ADJP (JJR poorer))))))))))
+    (. .)))
+
+nsubj(seems-2, It-1)
+root(ROOT-0, seems-2)
+complm(help-8, that-3)
+predet(proposals-6, all-4)
+poss(proposals-6, your-5)
+nsubj(help-8, proposals-6)
+advmod(help-8, simply-7)
+ccomp(seems-2, help-8)
+det(rich-10, the-9)
+nsubj(get-11, rich-10)
+ccomp(help-8, get-11)
+nsubj(poorer-17, richer-12)
+det(poor-15, the-14)
+conj_and(richer-12, poor-15)
+nsubj(poorer-17, poor-15)
+dep(poorer-17, get-16)
+ccomp(get-11, poorer-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Any) (NN money))
+      (SBAR
+        (S
+          (NP (DT the) (VBN laid) (JJ off) (NN employee))
+          (VP (VBZ gets)))))
+    (VP (VBZ is)
+      (NP (JJ free) (NN money)))
+    (. .)))
+
+det(money-2, Any-1)
+dobj(gets-7, money-2)
+nsubj(money-10, money-2)
+det(employee-6, the-3)
+amod(employee-6, laid-4)
+amod(employee-6, off-5)
+nsubj(gets-7, employee-6)
+rcmod(money-2, gets-7)
+cop(money-10, is-8)
+amod(money-10, free-9)
+root(ROOT-0, money-10)
+
+(ROOT
+  (S
+    (ADVP (RB Once) (RB again))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is) (RB not)
+      (NP (JJ free) (NN money))
+      (SBAR (IN as)
+        (S
+          (NP (PRP they))
+          (VP (VBP pay)
+            (NP (NN income) (NNS taxes))))))
+    (. .)))
+
+advmod(again-2, Once-1)
+advmod(money-8, again-2)
+nsubj(money-8, it-4)
+cop(money-8, is-5)
+neg(money-8, not-6)
+amod(money-8, free-7)
+root(ROOT-0, money-8)
+mark(pay-11, as-9)
+nsubj(pay-11, they-10)
+advcl(money-8, pay-11)
+nn(taxes-13, income-12)
+dobj(pay-11, taxes-13)
+

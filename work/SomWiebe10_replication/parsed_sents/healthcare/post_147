@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (S
+      (NP (DT A) (JJ single-payer) (NN system))
+      (VP (MD will) (RB not)
+        (VP (VB cause)
+          (NP (NN government))
+          (S
+            (VP (TO to)
+              (VP (VB intrude)
+                (PP (IN in)
+                  (NP (JJ medical) (NNS decisions)))))))))
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (NN nothing))
+        (PP (IN in)
+          (NP
+            (NP (JJ universal) (NN health) (NN care))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD would)
+                  (VP (VB indicate)
+                    (SBAR (IN that)
+                      (S
+                        (NP (DT the) (NN government))
+                        (VP (MD would)
+                          (VP (VB intrude)
+                            (PP (IN on)
+                              (NP
+                                (NP (DT the) (JJ medical) (NNS decisions))
+                                (PP (IN of)
+                                  (NP (NNS citizens)))))))))))))))))
+    (. .)))
+
+det(system-3, A-1)
+amod(system-3, single-payer-2)
+nsubj(cause-6, system-3)
+aux(cause-6, will-4)
+neg(cause-6, not-5)
+dep(is-14, cause-6)
+dobj(cause-6, government-7)
+aux(intrude-9, to-8)
+xcomp(cause-6, intrude-9)
+amod(decisions-12, medical-11)
+prep_in(intrude-9, decisions-12)
+expl(is-14, There-13)
+root(ROOT-0, is-14)
+nsubj(is-14, nothing-15)
+amod(care-19, universal-17)
+nn(care-19, health-18)
+prep_in(nothing-15, care-19)
+nsubj(indicate-22, care-19)
+aux(indicate-22, would-21)
+rcmod(care-19, indicate-22)
+complm(intrude-27, that-23)
+det(government-25, the-24)
+nsubj(intrude-27, government-25)
+aux(intrude-27, would-26)
+ccomp(indicate-22, intrude-27)
+det(decisions-31, the-29)
+amod(decisions-31, medical-30)
+prep_on(intrude-27, decisions-31)
+prep_of(decisions-31, citizens-33)
+

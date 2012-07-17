@@ -1,0 +1,169 @@
+(ROOT
+  (S
+    (ADVP (RB Ok))
+    (, ,)
+    (NP
+      (NP
+        (NP (RB so) (NN today) (POS 's))
+        (NN limitation))
+      (PP (IN on)
+        (NP (NN health) (NN care))))
+    (VP (VBZ is)
+      (NP (NN affordability)))
+    (. .)))
+
+advmod(affordability-11, Ok-1)
+advmod(today-4, so-3)
+poss(limitation-6, today-4)
+nsubj(affordability-11, limitation-6)
+nn(care-9, health-8)
+prep_on(limitation-6, care-9)
+cop(affordability-11, is-10)
+root(ROOT-0, affordability-11)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (ADVP (RB really))
+    (VP (VB want)
+      (NP
+        (NP
+          (NP (NN tomorrow) (POS 's))
+          (NN limitation))
+        (: ...)
+        (NP (NN bureaucracy))))
+    (. ?)))
+
+aux(want-4, Do-1)
+nsubj(want-4, you-2)
+advmod(want-4, really-3)
+root(ROOT-0, want-4)
+poss(limitation-7, tomorrow-5)
+dobj(want-4, limitation-7)
+dep(limitation-7, bureaucracy-9)
+
+(ROOT
+  (S
+    (VP (VB Look)
+      (PP (IN at)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ is)
+              (VP (VBG happening)
+                (PP (IN in)
+                  (NP (NNP GB)))))))))
+    (. .)))
+
+root(ROOT-0, Look-1)
+nsubj(happening-5, what-3)
+aux(happening-5, is-4)
+prepc_at(Look-1, happening-5)
+prep_in(happening-5, GB-7)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (VP (VBG refusing)
+        (NP (NN care))
+        (PP (IN for)
+          (NP (NN breast) (NN cancer)))
+        (PP (TO to)
+          (NP
+            (NP (NNS women))
+            (PP (IN over)
+              (NP (DT a) (JJ certain) (NN age)))))
+        (SBAR (IN because)
+          (S
+            (NP (PRP it))
+            (VP (VBZ is) (RB n't)
+              (ADJP (NN cost) (JJ effective)))))))
+    (. .)))
+
+nsubj(refusing-3, They-1)
+aux(refusing-3, are-2)
+root(ROOT-0, refusing-3)
+dobj(refusing-3, care-4)
+nn(cancer-7, breast-6)
+prep_for(refusing-3, cancer-7)
+prep_to(refusing-3, women-9)
+det(age-13, a-11)
+amod(age-13, certain-12)
+prep_over(women-9, age-13)
+mark(effective-19, because-14)
+nsubj(effective-19, it-15)
+cop(effective-19, is-16)
+neg(effective-19, n't-17)
+dep(effective-19, cost-18)
+advcl(refusing-3, effective-19)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP (VB like)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (DT that) (NN news)))))))
+    (. ?)))
+
+advmod(like-4, How-1)
+aux(like-4, would-2)
+nsubj(like-4, you-3)
+xsubj(get-6, you-3)
+root(ROOT-0, like-4)
+aux(get-6, to-5)
+xcomp(like-4, get-6)
+det(news-8, that-7)
+dobj(get-6, news-8)
+
+(ROOT
+  (S (`` ``)
+    (S
+      (NP (NNP Well) (NNP Mr.) (NNP Birdman))
+      (, ,)
+      (NP (PRP you))
+      (VP (VBP have)
+        (NP (NN cancer))))
+    (CC and)
+    (S
+      (S
+        (NP (PRP it))
+        (VP (VBZ is)
+          (ADJP (JJ curable))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (PRP you))
+        (VP (VBP are) (RB n't)
+          (ADJP (JJ worth) (RB enough)
+            (PP (TO to)
+              (NP (DT the) (NN government)
+                (S
+                  (VP (TO to)
+                    (VP (VB cure))))))))))
+    (. .)))
+
+nn(Birdman-4, Well-2)
+nn(Birdman-4, Mr.-3)
+nsubj(have-7, Birdman-4)
+nsubj(have-7, you-6)
+root(ROOT-0, have-7)
+dobj(have-7, cancer-8)
+nsubj(curable-12, it-10)
+cop(curable-12, is-11)
+conj_and(have-7, curable-12)
+nsubj(worth-18, you-15)
+cop(worth-18, are-16)
+neg(worth-18, n't-17)
+conj_and(have-7, worth-18)
+conj_but(curable-12, worth-18)
+advmod(worth-18, enough-19)
+det(government-22, the-21)
+prep_to(worth-18, government-22)
+aux(cure-24, to-23)
+infmod(government-22, cure-24)
+

@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (FRAG
+      (INTJ (UH No))
+      (, ,)
+      (PP (IN for)
+        (NP (JJ real))))
+    (, ,)
+    (NP (PRP we))
+    (VP (VBP 've)
+      (VP (VBN got)
+        (NP (DT a)
+          (ADJP (RB pretty) (JJ decent))
+          (NN handle))
+        (PP (IN on)
+          (NP (DT the) (NN brain)))))
+    (. .)))
+
+dep(got-8, No-1)
+dep(No-1, for-3)
+pobj(for-3, real-4)
+nsubj(got-8, we-6)
+aux(got-8, 've-7)
+root(ROOT-0, got-8)
+det(handle-12, a-9)
+advmod(decent-11, pretty-10)
+amod(handle-12, decent-11)
+dobj(got-8, handle-12)
+det(brain-15, the-14)
+prep_on(got-8, brain-15)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Check)
+        (NP (PRP it)))
+      (: :)
+      (NP
+        (NP (NN http:\/\/www.youramazingbrain.org\/insidebrain\/brainevolution.htm))
+        (PRN (-LRB- -LRB-)
+          (VP (VBN explained)
+            (S
+              (VP (VBG using)
+                (NP (JJ small) (NNS words)))))
+          (-RRB- -RRB-))
+        (ADJP
+          (ADJP (JJ http:\/\/faculty.ed.uiuc.edu\/g-cziko\/wm\/05.html))
+          (PRN (-LRB- -LRB-)
+            (VP (VBN explained)
+              (S
+                (VP (VBG using)
+                  (NP (JJ big) (NNS words)))))
+            (-RRB- -RRB-)))))))
+
+root(ROOT-0, Check-1)
+dobj(Check-1, it-2)
+dobj(Check-1, http:\/\/www.youramazingbrain.org\/insidebrain\/brainevolution.htm-4)
+dep(http:\/\/www.youramazingbrain.org\/insidebrain\/brainevolution.htm-4, explained-6)
+xcomp(explained-6, using-7)
+amod(words-9, small-8)
+dobj(using-7, words-9)
+amod(http:\/\/www.youramazingbrain.org\/insidebrain\/brainevolution.htm-4, http:\/\/faculty.ed.uiuc.edu\/g-cziko\/wm\/05.html-11)
+dep(http:\/\/faculty.ed.uiuc.edu\/g-cziko\/wm\/05.html-11, explained-13)
+xcomp(explained-13, using-14)
+amod(words-16, big-15)
+dobj(using-14, words-16)
+

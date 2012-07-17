@@ -1,0 +1,188 @@
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (NP (RB too) (JJ many) (NN gun) (NNS laws))
+      (SBAR
+        (ADVP (RB now))
+        (IN as)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)))))
+    (. .)))
+
+nsubj(have-2, We-1)
+root(ROOT-0, have-2)
+advmod(laws-6, too-3)
+amod(laws-6, many-4)
+nn(laws-6, gun-5)
+dobj(have-2, laws-6)
+advmod(is-10, now-7)
+dep(is-10, as-8)
+nsubj(is-10, it-9)
+dep(have-2, is-10)
+
+(ROOT
+  (S
+    (NP (NNS Criminals))
+    (VP (VBP do) (RB not)
+      (VP (VB walk)
+        (PP (IN into)
+          (NP (NN gun) (NNS shops)
+            (CC and)
+            (NN purchase) (NNS guns)))))
+    (. .)))
+
+nsubj(walk-4, Criminals-1)
+aux(walk-4, do-2)
+neg(walk-4, not-3)
+root(ROOT-0, walk-4)
+nn(shops-7, gun-6)
+prep_into(walk-4, shops-7)
+nn(guns-10, purchase-9)
+prep_into(walk-4, guns-10)
+conj_and(shops-7, guns-10)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (JJR stricter) (NNS laws))
+    (VP (VB stop)
+      (NP (NN dope))
+      (PP (IN from)
+        (S
+          (VP (VBG being)
+            (VP (VBN used)
+              (CC and)
+              (VBN sold))))))
+    (. ?)))
+
+aux(stop-4, Do-1)
+amod(laws-3, stricter-2)
+nsubj(stop-4, laws-3)
+root(ROOT-0, stop-4)
+dobj(stop-4, dope-5)
+auxpass(used-8, being-7)
+prepc_from(stop-4, used-8)
+prepc_from(stop-4, sold-10)
+conj_and(used-8, sold-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN solution))
+      (PP (TO to)
+        (NP (DT the) (NN gun) (NN problem))))
+    (VP (VBZ is)
+      (NP
+        (NP (NN harher) (NNS penalties))
+        (PP (IN for)
+          (NP (JJ illegal) (NN gun) (NN use)))))
+    (. .)))
+
+det(solution-2, The-1)
+nsubj(penalties-9, solution-2)
+det(problem-6, the-4)
+nn(problem-6, gun-5)
+prep_to(solution-2, problem-6)
+cop(penalties-9, is-7)
+nn(penalties-9, harher-8)
+root(ROOT-0, penalties-9)
+amod(use-13, illegal-11)
+nn(use-13, gun-12)
+prep_for(penalties-9, use-13)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT a) (NN person))
+        (VP (VBZ commits)
+          (NP
+            (NP (DT a) (NN crime))
+            (PP (IN with)
+              (NP (DT a) (NN gun)))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP go)
+      (PP (TO to)
+        (NP
+          (NP (NN jail))
+          (PP (IN for)
+            (NP (NN life)))))
+      (PP (IN without)
+        (NP
+          (NP (DT the) (NN possibility))
+          (PP (IN of)
+            (NP (NN parole))))))
+    (. .)))
+
+mark(commits-4, If-1)
+det(person-3, a-2)
+nsubj(commits-4, person-3)
+advcl(go-12, commits-4)
+det(crime-6, a-5)
+dobj(commits-4, crime-6)
+det(gun-9, a-8)
+prep_with(crime-6, gun-9)
+nsubj(go-12, they-11)
+root(ROOT-0, go-12)
+prep_to(go-12, jail-14)
+prep_for(jail-14, life-16)
+det(possibility-19, the-18)
+prep_without(go-12, possibility-19)
+prep_of(possibility-19, parole-21)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJR more) (NNS people))
+      (VP (VBG carrying)
+        (NP (JJ legal) (NNS firearms))))
+    (, ,)
+    (ADVP (RB actually))
+    (VP (VBZ lowers)
+      (NP (NN crime) (NNS rates)))
+    (. .)))
+
+det(people-3, The-1)
+amod(people-3, more-2)
+nsubj(lowers-9, people-3)
+partmod(people-3, carrying-4)
+amod(firearms-6, legal-5)
+dobj(carrying-4, firearms-6)
+advmod(lowers-9, actually-8)
+root(ROOT-0, lowers-9)
+nn(rates-11, crime-10)
+dobj(lowers-9, rates-11)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS criminals))
+    (VP (VBP do) (RB not)
+      (VP (VB know)
+        (NP
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ is)
+                (ADJP (JJ armed)))))
+          (CC and)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ is) (RB not)))))))
+    (. .)))
+
+det(criminals-2, The-1)
+nsubj(know-5, criminals-2)
+aux(know-5, do-3)
+neg(know-5, not-4)
+root(ROOT-0, know-5)
+nsubj(armed-8, who-6)
+cop(armed-8, is-7)
+dobj(know-5, armed-8)
+nsubj(is-11, who-10)
+dobj(know-5, is-11)
+conj_and(armed-8, is-11)
+neg(is-11, not-12)
+

@@ -1,0 +1,136 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (MD ca) (RB n't)
+            (VP (VB afford)
+              (NP (NN health) (NN care)))))))
+    (VP (VBP deserve)
+      (NP (PRP it))
+      (SBAR (RB just) (RB as) (RB much) (IN as)
+        (S
+          (NP
+            (NP (DT the) (NNS people))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP do)))))
+          (VP (VBP have)
+            (NP (PRP it))))))
+    (. .)))
+
+nsubj(afford-5, People-1)
+nsubj(deserve-8, People-1)
+aux(afford-5, ca-3)
+neg(afford-5, n't-4)
+rcmod(People-1, afford-5)
+nn(care-7, health-6)
+dobj(afford-5, care-7)
+root(ROOT-0, deserve-8)
+dobj(deserve-8, it-9)
+advmod(have-18, just-10)
+advmod(have-18, as-11)
+advmod(have-18, much-12)
+dep(have-18, as-13)
+det(people-15, the-14)
+nsubj(do-17, people-15)
+nsubj(have-18, people-15)
+rcmod(people-15, do-17)
+dep(deserve-8, have-18)
+dobj(have-18, it-19)
+
+(ROOT
+  (S
+    (S
+      (SBAR
+        (SINV (MD Should)
+          (NP
+            (NP (NN someone))
+            (PP (IN with)
+              (NP
+                (NP (NN out))
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBP get)))))))
+          (VP (VBN hurt)
+            (CC or)
+            (VBN injured))))
+      (, ,)
+      (NP (PRP they))
+      (VP (MD wo) (RB n't)
+        (VP (VB be)
+          (ADJP (JJ able)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB afford))
+                  (CC and)
+                  (VP (VB be)
+                    (PP (IN in)
+                      (NP
+                        (NP (NN debt))
+                        (PP (IN for)
+                          (NP (DT a) (JJ long) (JJ long) (NN time)))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT that))
+      (VP (VBZ is)
+        (NP
+          (NP (NN part))
+          (PP (IN of)
+            (NP (PRP$ our) (JJ economic) (NN problem))))))
+    (. .)))
+
+aux(hurt-7, Should-1)
+nsubj(hurt-7, someone-2)
+nsubj(injured-9, someone-2)
+prep_with(someone-2, out-4)
+dobj(get-6, out-4)
+nsubj(get-6, it-5)
+rcmod(out-4, get-6)
+dep(able-15, hurt-7)
+conj_or(hurt-7, injured-9)
+dep(able-15, injured-9)
+nsubj(able-15, they-11)
+aux(able-15, wo-12)
+neg(able-15, n't-13)
+cop(able-15, be-14)
+root(ROOT-0, able-15)
+aux(afford-17, to-16)
+xcomp(able-15, afford-17)
+xcomp(able-15, be-19)
+conj_and(afford-17, be-19)
+prep_in(be-19, debt-21)
+det(time-26, a-23)
+amod(time-26, long-24)
+amod(time-26, long-25)
+prep_for(debt-21, time-26)
+nsubj(part-31, that-29)
+cop(part-31, is-30)
+conj_and(able-15, part-31)
+poss(problem-35, our-33)
+amod(problem-35, economic-34)
+prep_of(part-31, problem-35)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (PP (TO to)
+        (NP
+          (NP (JJ many) (NNS people))
+          (PP (IN in)
+            (NP (NN debt))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(people-5, many-4)
+prep_to(are-2, people-5)
+prep_in(people-5, debt-7)
+

@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB even) (DT those))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP say)
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBP believe)
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (ADVP (RB god))
+                      (VP (VBP do) (RB not)
+                        (VP (VB believe)
+                          (NP (PRP they)))))))))))))
+    (VP (VBP are)
+      (ADVP (RB just))
+      (ADJP (VBN frightened)
+        (PP (TO to)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (VP (MD will)
+                (VP (VB happen)
+                  (PP (TO to)
+                    (NP (PRP them)))))))))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP they))
+          (VP (VBP die)))))
+    (. .)))
+
+advmod(those-2, even-1)
+nsubj(say-4, those-2)
+nsubjpass(frightened-15, those-2)
+rcmod(those-2, say-4)
+nsubj(believe-6, they-5)
+ccomp(say-4, believe-6)
+nsubj(believe-11, it-7)
+advmod(believe-11, god-8)
+aux(believe-11, do-9)
+neg(believe-11, not-10)
+ccomp(believe-6, believe-11)
+dobj(believe-11, they-12)
+auxpass(frightened-15, are-13)
+advmod(frightened-15, just-14)
+root(ROOT-0, frightened-15)
+nsubj(happen-19, what-17)
+aux(happen-19, will-18)
+prepc_to(frightened-15, happen-19)
+prep_to(happen-19, them-21)
+advmod(die-24, when-22)
+nsubj(die-24, they-23)
+advcl(frightened-15, die-24)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB not)
+      (NP
+        (NP (NN thing))
+        (SBAR
+          (S
+            (NP (DT a) (NN poll))
+            (VP (VBZ is)
+              (ADJP (JJ correct)))))))
+    (. .)))
+
+nsubj(do-2, I-1)
+root(ROOT-0, do-2)
+neg(do-2, not-3)
+dobj(do-2, thing-4)
+det(poll-6, a-5)
+nsubj(correct-8, poll-6)
+cop(correct-8, is-7)
+rcmod(thing-4, correct-8)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have) (RB not)
+      (VP (VBN asked)
+        (NP (NN everyone))))
+    (. .)))
+
+nsubj(asked-4, They-1)
+aux(asked-4, have-2)
+neg(asked-4, not-3)
+root(ROOT-0, asked-4)
+dobj(asked-4, everyone-5)
+

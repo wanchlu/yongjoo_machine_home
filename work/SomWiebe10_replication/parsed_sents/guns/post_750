@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR
+        (SBARQ
+          (WHADVP (WRB why))
+          (SQ (MD should) (RB n't)
+            (NP (PRP we))
+            (VP (RB all) (VB be)
+              (VP (VBN allowed)
+                (S
+                  (VP (TO to)
+                    (VP (VB carry)
+                      (NP (DT a) (JJ concealed) (NN weapon))
+                      (PP (IN on)
+                        (NP (NN campus))))))))))))
+    (. .)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+advmod(allowed-9, why-3)
+aux(allowed-9, should-4)
+neg(allowed-9, n't-5)
+nsubjpass(allowed-9, we-6)
+advmod(allowed-9, all-7)
+auxpass(allowed-9, be-8)
+dep(agree-2, allowed-9)
+aux(carry-11, to-10)
+xcomp(allowed-9, carry-11)
+det(weapon-14, a-12)
+amod(weapon-14, concealed-13)
+dobj(carry-11, weapon-14)
+prep_on(carry-11, campus-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP (NN everyone))
+          (VP (MD should)
+            (VP (VB have)
+              (NP (DT that) (NN right)))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+nsubj(have-5, everyone-3)
+aux(have-5, should-4)
+ccomp(believe-2, have-5)
+det(right-7, that-6)
+dobj(have-5, right-7)
+
+(ROOT
+  (S (CC But)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (NP (PRP I))
+        (VP (VBD meant)
+          (SBAR
+            (S
+              (VP (VBD was)
+                (ADVP (RBR more) (IN along))
+                (NP
+                  (NP (DT the) (NNS lines))
+                  (PP (IN of)
+                    (S
+                      (VP (VBG lowering)
+                        (NP (DT the) (NN age) (NN requirement))
+                        (PP (IN for)
+                          (NP (NN college) (NN student)))))))))))))
+    (VP (VBZ 's)
+      (SBAR (RB just) (IN so)
+        (S
+          (NP (NN everyone))
+          (VP (MD can)
+            (VP (VB have)
+              (NP (DT that) (NN security))
+              (SBAR (IN if)
+                (S
+                  (NP (PRP they))
+                  (ADVP (RB so))
+                  (VP (VBP choose)))))))))
+    (. .)))
+
+cc('s-18, But-1)
+dep(meant-4, what-2)
+nsubj(lines-9, what-2)
+nsubj(meant-4, I-3)
+csubj('s-18, meant-4)
+cop(lines-9, was-5)
+advmod(along-7, more-6)
+advmod(lines-9, along-7)
+det(lines-9, the-8)
+ccomp(meant-4, lines-9)
+prepc_of(lines-9, lowering-11)
+det(requirement-14, the-12)
+nn(requirement-14, age-13)
+dobj(lowering-11, requirement-14)
+nn(student-17, college-16)
+prep_for(lowering-11, student-17)
+root(ROOT-0, 's-18)
+advmod(have-23, just-19)
+dep(have-23, so-20)
+nsubj(have-23, everyone-21)
+aux(have-23, can-22)
+ccomp('s-18, have-23)
+det(security-25, that-24)
+dobj(have-23, security-25)
+mark(choose-29, if-26)
+nsubj(choose-29, they-27)
+advmod(choose-29, so-28)
+advcl(have-23, choose-29)
+

@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Public) (NN health) (NN care))
+      (VP (VBZ is)
+        (ADJP (JJ good))))
+    (: ;)
+    (S
+      (NP (PRP it))
+      (ADVP (RB just))
+      (VP (VBZ receives)
+        (NP
+          (NP (JJR more) (NN scrutiny\/criticism))
+          (SBAR
+            (S
+              (NP (NNP Public) (NN health) (NN care) (NNS systems))
+              (VP (VBP receive)
+                (NP (JJR more) (NN scrutiny))
+                (PP (IN by)
+                  (NP (DT the) (NN public)))
+                (SBAR (IN because)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (ADJP (RB publicly) (JJ accountable)))))))))))
+    (. .)))
+
+nn(care-3, Public-1)
+nn(care-3, health-2)
+nsubj(good-5, care-3)
+cop(good-5, is-4)
+root(ROOT-0, good-5)
+nsubj(receives-9, it-7)
+advmod(receives-9, just-8)
+parataxis(good-5, receives-9)
+amod(scrutiny\/criticism-11, more-10)
+dobj(receives-9, scrutiny\/criticism-11)
+nn(systems-15, Public-12)
+nn(systems-15, health-13)
+nn(systems-15, care-14)
+nsubj(receive-16, systems-15)
+rcmod(scrutiny\/criticism-11, receive-16)
+amod(scrutiny-18, more-17)
+dobj(receive-16, scrutiny-18)
+det(public-21, the-20)
+prep_by(receive-16, public-21)
+mark(accountable-26, because-22)
+nsubj(accountable-26, they-23)
+cop(accountable-26, are-24)
+advmod(accountable-26, publicly-25)
+advcl(receive-16, accountable-26)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (ADVP (RB often))
+    (VP (VBZ gives)
+      (NP (DT the) (NN impression))
+      (SBAR (IN that)
+        (S
+          (NP (DT these) (NNS systems))
+          (VP (VBP are)
+            (ADJP (JJR worse))))))
+    (. .)))
+
+nsubj(gives-3, This-1)
+advmod(gives-3, often-2)
+root(ROOT-0, gives-3)
+det(impression-5, the-4)
+dobj(gives-3, impression-5)
+complm(worse-10, that-6)
+det(systems-8, these-7)
+nsubj(worse-10, systems-8)
+cop(worse-10, are-9)
+ccomp(gives-3, worse-10)
+
+(ROOT
+  (S (CC But)
+    (PRN (, ,)
+      (S
+        (NP (DT this) (NN impression))
+        (VP (VBZ is)
+          (ADVP (RB simply))
+          (NP
+            (NP (DT a) (NN bi) (NN product))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (JJR higher) (NN level))
+                (PP (IN of)
+                  (NP (NN scrutiny)))))))))
+    (NP (DT these) (NNS systems))
+    (VP (VBP receive))
+    (. .)))
+
+cc(receive-18, But-1)
+det(impression-4, this-3)
+nsubj(product-9, impression-4)
+cop(product-9, is-5)
+advmod(product-9, simply-6)
+det(product-9, a-7)
+nn(product-9, bi-8)
+parataxis(receive-18, product-9)
+det(level-13, the-11)
+amod(level-13, higher-12)
+prep_of(product-9, level-13)
+prep_of(level-13, scrutiny-15)
+det(systems-17, these-16)
+nsubj(receive-18, systems-17)
+root(ROOT-0, receive-18)
+

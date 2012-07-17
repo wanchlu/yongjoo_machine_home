@@ -1,0 +1,159 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN option))
+    (VP (VBZ puts)
+      (NP
+        (NP (NNS bureaucrats))
+        (PP (IN between)
+          (NP (NNS patients)
+            (CC and)
+            (NNS doctors)))))
+    (. .)))
+
+nn(option-2, Public-1)
+nsubj(puts-3, option-2)
+root(ROOT-0, puts-3)
+dobj(puts-3, bureaucrats-4)
+prep_between(bureaucrats-4, patients-6)
+prep_between(bureaucrats-4, doctors-8)
+conj_and(patients-6, doctors-8)
+
+(ROOT
+  (NP (NNP Karl) (NNP Rove) (. .)))
+
+nn(Rove-2, Karl-1)
+root(ROOT-0, Rove-2)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP How))
+    (PP (TO to)
+      (NP
+        (NP (NNP Stop) (NNP Socialized) (NNP Health) (NNP Care) ('' ''))
+        (NP (NNP Wall) (NNP Street) (NNP Journal))))
+    (. .)))
+
+root(ROOT-0, How-2)
+dep(How-2, to-3)
+nn(Care-7, Stop-4)
+nn(Care-7, Socialized-5)
+nn(Care-7, Health-6)
+pobj(to-3, Care-7)
+nn(Journal-11, Wall-9)
+nn(Journal-11, Street-10)
+dep(Care-7, Journal-11)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 11) (, ,) (CD 2009))
+    (: :)
+    (S (`` ``)
+      (NP (DT the) (JJ public) (NN option))
+      (VP (VBZ puts)
+        (NP (NN government))
+        (PP
+          (ADVP (RB firmly))
+          (IN in)
+          (NP
+            (NP (DT the) (NN middle))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN relationship))
+                (PP (IN between)
+                  (NP
+                    (NP (NNS patients))
+                    (CC and)
+                    (NP (PRP$ their) (NNS doctors))))))))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 11-2)
+num(June-1, 2009-4)
+det(option-9, the-7)
+amod(option-9, public-8)
+nsubj(puts-10, option-9)
+dep(June-1, puts-10)
+dobj(puts-10, government-11)
+advmod(puts-10, firmly-12)
+det(middle-15, the-14)
+prep_in(puts-10, middle-15)
+det(relationship-18, the-17)
+prep_of(middle-15, relationship-18)
+prep_between(relationship-18, patients-20)
+poss(doctors-23, their-22)
+prep_between(relationship-18, doctors-23)
+conj_and(patients-20, doctors-23)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP think)
+          (SBAR
+            (S
+              (NP (NN insurance) (NNS companies))
+              (VP (VBP are)
+                (ADJP (JJ bad))))))))
+    (, ,)
+    (VP (VB imagine)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ happens)
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (NN government))
+                (VP (VBZ is)
+                  (NP (DT the) (NN insurance) (NN carrier))
+                  (, ,)
+                  (PP (IN with)
+                    (NP
+                      (NP
+                        (NP (RB little))
+                        (CC or)
+                        (NP (DT no) (NN competition)))
+                      (CC and)
+                      (NP
+                        (NP (DT no) (NN concern))
+                        (SBAR
+                          (S
+                            (NP (PRP you))
+                            (VP (MD 'll)
+                              (VP (VB change)
+                                (PP (TO to)
+                                  (NP (DT another) (NN company)))))))))))))))))
+    (. .)))
+
+mark(think-3, If-1)
+nsubj(think-3, you-2)
+advcl(imagine-9, think-3)
+nn(companies-5, insurance-4)
+nsubj(bad-7, companies-5)
+cop(bad-7, are-6)
+ccomp(think-3, bad-7)
+root(ROOT-0, imagine-9)
+nsubj(happens-11, what-10)
+ccomp(imagine-9, happens-11)
+advmod(carrier-17, when-12)
+nsubj(carrier-17, government-13)
+cop(carrier-17, is-14)
+det(carrier-17, the-15)
+nn(carrier-17, insurance-16)
+advcl(happens-11, carrier-17)
+prep(carrier-17, with-19)
+pobj(with-19, little-20)
+det(competition-23, no-22)
+pobj(with-19, competition-23)
+conj_or(little-20, competition-23)
+det(concern-26, no-25)
+pobj(with-19, concern-26)
+conj_and(little-20, concern-26)
+dobj(change-29, concern-26)
+nsubj(change-29, you-27)
+aux(change-29, 'll-28)
+rcmod(concern-26, change-29)
+det(company-32, another-31)
+prep_to(change-29, company-32)
+

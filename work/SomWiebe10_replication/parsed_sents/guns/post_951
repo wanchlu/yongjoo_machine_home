@@ -1,0 +1,160 @@
+(ROOT
+  (S
+    (S
+      (NP (FW i))
+      (VP (VBP do) (RB not)
+        (VP (VB think)
+          (SBAR
+            (S
+              (NP (DT all) (NNS guns))
+              (VP (MD should)
+                (VP (VB be)
+                  (VP (VBN banned)))))))))
+    (, ,)
+    (CC but)
+    (FRAG
+      (ADVP (RB certainly))
+      (NP (DT some)))
+    (. .)))
+
+nsubj(think-4, i-1)
+aux(think-4, do-2)
+neg(think-4, not-3)
+root(ROOT-0, think-4)
+det(guns-6, all-5)
+nsubjpass(banned-9, guns-6)
+aux(banned-9, should-7)
+auxpass(banned-9, be-8)
+ccomp(think-4, banned-9)
+dep(some-13, certainly-12)
+conj_but(think-4, some-13)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS guns))
+        (VP (VBN used)
+          (PP (IN for)
+            (NP (NN hunting)))))
+      (VP (VBP are)
+        (ADJP (JJ fine))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP they))
+      (VP (VBP do) (RB not)
+        (VP (VB serve)
+          (NP
+            (NP (DT any) (NN purpose))
+            (PP (JJ other) (RB then)
+              (NP (DT that)))))))
+    (. .)))
+
+nsubj(fine-6, guns-1)
+partmod(guns-1, used-2)
+prep_for(used-2, hunting-4)
+cop(fine-6, are-5)
+root(ROOT-0, fine-6)
+nsubj(serve-12, they-9)
+aux(serve-12, do-10)
+neg(serve-12, not-11)
+conj_but(fine-6, serve-12)
+det(purpose-14, any-13)
+dobj(serve-12, purpose-14)
+prep(purpose-14, other-15)
+advmod(other-15, then-16)
+pobj(other-15, that-17)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS guns))
+      (PP (JJ such) (IN as)
+        (NP (NNP AK-47) (POS 's))))
+    (VP (MD should)
+      (VP (VB be)
+        (NP (NN band))
+        (SBAR (IN because)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADJP (JJ overkill)))))))
+    (. .)))
+
+nsubj(band-8, guns-1)
+prep_such_as(guns-1, AK-47-4)
+possessive(AK-47-4, 's-5)
+aux(band-8, should-6)
+cop(band-8, be-7)
+root(ROOT-0, band-8)
+mark(overkill-12, because-9)
+nsubj(overkill-12, they-10)
+cop(overkill-12, are-11)
+advcl(band-8, overkill-12)
+
+(ROOT
+  (S
+    (VP (VB do)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (ADVP (RB really))
+          (VP (VBP need)
+            (S
+              (NP (DT a) (NN machine) (NN gun))
+              (VP (TO to)
+                (VP (VB kill)
+                  (NP (DT a) (JJ little) (NNS deer)))))))))
+    (. .)))
+
+root(ROOT-0, do-1)
+nsubj(need-4, you-2)
+advmod(need-4, really-3)
+ccomp(do-1, need-4)
+det(gun-7, a-5)
+nn(gun-7, machine-6)
+nsubj(kill-9, gun-7)
+aux(kill-9, to-8)
+xcomp(need-4, kill-9)
+det(deer-12, a-10)
+amod(deer-12, little-11)
+dobj(kill-9, deer-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN kind))
+      (PP (IN of)))
+    (VP (VBP like)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP
+            (NP (DT some) (NNS knives))
+            (PP (JJ such) (IN as)
+              (NP (NNS switchblades))))
+          (VP (VBP are)
+            (VP (VBN banned)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP serve)
+                    (NP (JJ little) (NN purpose))))))))))
+    (. .)))
+
+nsubj(like-3, kind-1)
+prep(kind-1, of-2)
+root(ROOT-0, like-3)
+advmod(banned-11, how-4)
+det(knives-6, some-5)
+nsubjpass(banned-11, knives-6)
+prep_such_as(knives-6, switchblades-9)
+auxpass(banned-11, are-10)
+ccomp(like-3, banned-11)
+mark(serve-14, because-12)
+nsubj(serve-14, they-13)
+advcl(banned-11, serve-14)
+amod(purpose-16, little-15)
+dobj(serve-14, purpose-16)
+

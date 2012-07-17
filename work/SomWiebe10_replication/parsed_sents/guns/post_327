@@ -1,0 +1,102 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB really))
+    (VP (MD ca) (RB n't)
+      (VP (VB understand)
+        (SBAR
+          (WHADVP (WRB how))
+          (S
+            (NP (RB so) (JJ many))
+            (VP (MD can)
+              (VP (VB be)
+                (ADJP (RB so) (JJ mislead))))))))
+    (. .)))
+
+nsubj(understand-5, I-1)
+advmod(understand-5, really-2)
+aux(understand-5, ca-3)
+neg(understand-5, n't-4)
+root(ROOT-0, understand-5)
+advmod(mislead-12, how-6)
+advmod(many-8, so-7)
+nsubj(mislead-12, many-8)
+aux(mislead-12, can-9)
+cop(mislead-12, be-10)
+advmod(mislead-12, so-11)
+ccomp(understand-5, mislead-12)
+
+(ROOT
+  (S
+    (NP (NN Simple) (NN fact))
+    (VP (VBZ tells)
+      (NP (PRP us))
+      (NP (DT that))
+      (SBAR
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP you))
+            (VP (VBP remoive)
+              (NP (NNS guns))
+              (PP (IN from)
+                (NP (NN society) (JJ violent) (NN crime) (NNS increases))))))
+        (CC and)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NNS guns))
+            (VP (VBP are)
+              (VP (VBN allowed)
+                (NP (JJ violent) (NN crime) (NNS decreases))))))))
+    (. .)))
+
+nn(fact-2, Simple-1)
+nsubj(tells-3, fact-2)
+root(ROOT-0, tells-3)
+iobj(tells-3, us-4)
+dobj(tells-3, that-5)
+advmod(remoive-8, when-6)
+nsubj(remoive-8, you-7)
+dep(tells-3, remoive-8)
+dobj(remoive-8, guns-9)
+nn(increases-14, society-11)
+amod(increases-14, violent-12)
+nn(increases-14, crime-13)
+prep_from(remoive-8, increases-14)
+advmod(allowed-19, when-16)
+nsubjpass(allowed-19, guns-17)
+auxpass(allowed-19, are-18)
+dep(tells-3, allowed-19)
+conj_and(remoive-8, allowed-19)
+amod(decreases-22, violent-20)
+nn(decreases-22, crime-21)
+dobj(allowed-19, decreases-22)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP need)
+          (NP (JJR more) (NN information))
+          (PP (IN than)
+            (NP (DT that))))))
+    (NP (PRP I))
+    (VP (VBP feel)
+      (ADJP (JJ sorry))
+      (PP (IN for)
+        (NP (PRP you))))
+    (. .)))
+
+mark(need-3, If-1)
+nsubj(need-3, you-2)
+advcl(feel-9, need-3)
+amod(information-5, more-4)
+dobj(need-3, information-5)
+prep_than(need-3, that-7)
+nsubj(feel-9, I-8)
+root(ROOT-0, feel-9)
+acomp(feel-9, sorry-10)
+prep_for(feel-9, you-12)
+

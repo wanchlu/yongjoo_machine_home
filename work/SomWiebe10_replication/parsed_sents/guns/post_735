@@ -1,0 +1,184 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP recall)
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN child))
+          (PRN (-LRB- -LRB-)
+            (PP
+              (ADVP (RB way) (RB back))
+              (IN in)
+              (NP (DT the) (NNS seventies)))
+            (-RRB- -RRB-))))
+      (NP
+        (NP (PRP$ my) (NNS parents))
+        (VP (VBG driving)
+          (NP
+            (NP (DT a) (NN neighbor))
+            (CC and)
+            (NP (PRP$ his) (NN wife)))
+          (PP (TO to)
+            (NP (DT the) (NN airport))))))
+    (. .)))
+
+nsubj(recall-2, I-1)
+root(ROOT-0, recall-2)
+det(child-5, a-4)
+prep_as(recall-2, child-5)
+advmod(back-8, way-7)
+advmod(in-9, back-8)
+dep(child-5, in-9)
+det(seventies-11, the-10)
+pobj(in-9, seventies-11)
+poss(parents-14, my-13)
+dobj(recall-2, parents-14)
+partmod(parents-14, driving-15)
+det(neighbor-17, a-16)
+dobj(driving-15, neighbor-17)
+poss(wife-20, his-19)
+dobj(driving-15, wife-20)
+conj_and(neighbor-17, wife-20)
+det(airport-23, the-22)
+prep_to(driving-15, airport-23)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBD were)
+      (VP (VBG going)
+        (PP (IN on)
+          (NP (NN vacation)))))
+    (. .)))
+
+nsubj(going-3, They-1)
+aux(going-3, were-2)
+root(ROOT-0, going-3)
+prep_on(going-3, vacation-5)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP$ his) (NN turn))
+        (VP (VBD came)
+          (S
+            (VP (TO to)
+              (VP (VB board)
+                (NP (DT the) (NN plane))))))))
+    (NP (PRP he))
+    (VP (VBD was)
+      (VP (VBN asked)
+        (S
+          (VP (TO to)
+            (VP (VB open)
+              (NP (PRP$ his) (NN briefcase)))))))
+    (. .)))
+
+advmod(came-4, When-1)
+poss(turn-3, his-2)
+nsubj(came-4, turn-3)
+xsubj(board-6, turn-3)
+advcl(asked-11, came-4)
+aux(board-6, to-5)
+xcomp(came-4, board-6)
+det(plane-8, the-7)
+dobj(board-6, plane-8)
+nsubjpass(asked-11, he-9)
+xsubj(open-13, he-9)
+auxpass(asked-11, was-10)
+root(ROOT-0, asked-11)
+aux(open-13, to-12)
+xcomp(asked-11, open-13)
+poss(briefcase-15, his-14)
+dobj(open-13, briefcase-15)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP he))
+        (VP (VBD did))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP remember)
+      (NP
+        (NP (DT the) (NN sense))
+        (PP (IN of)
+          (NP (NN awe))))
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (PRP I))
+          (VP (VBD saw)
+            (NP
+              (NP (DT a)
+                (ADJP (JJ holstered)
+                  (NP (CD .38)))
+                (NN special))
+              (CC and)
+              (NP (PRP$ his) (JJ policemans) (NN badge)))))))
+    (. .)))
+
+advmod(did-3, When-1)
+nsubj(did-3, he-2)
+advcl(remember-6, did-3)
+nsubj(remember-6, I-5)
+root(ROOT-0, remember-6)
+det(sense-8, the-7)
+dobj(remember-6, sense-8)
+prep_of(sense-8, awe-10)
+advmod(saw-13, when-11)
+nsubj(saw-13, I-12)
+advcl(remember-6, saw-13)
+det(special-17, a-14)
+amod(special-17, holstered-15)
+dep(holstered-15, .38-16)
+dobj(saw-13, special-17)
+poss(badge-21, his-19)
+amod(badge-21, policemans-20)
+dobj(saw-13, badge-21)
+conj_and(special-17, badge-21)
+
+(ROOT
+  (S
+    (ADVP (RB Perhaps))
+    (PRN
+      (SINV (VBD had)
+        (NP
+          (NP (NN someone))
+          (PP (IN like)
+            (NP (PRP him))))
+        (VP (VBN been)
+          (PP (IN on)
+            (NP (DT those) (NNS planes)))
+          (PP (IN on)
+            (NP (CD 9-11)))))
+      (, ,))
+    (NP
+      (NP (NNS thousands))
+      (PP (IN of)
+        (NP (NNS lives))))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBN been)
+          (VP (VBN saved)))))
+    (. .)))
+
+advmod(saved-19, Perhaps-1)
+aux(been-6, had-2)
+nsubj(been-6, someone-3)
+prep_like(someone-3, him-5)
+parataxis(saved-19, been-6)
+det(planes-9, those-8)
+prep_on(been-6, planes-9)
+prep_on(been-6, 9-11-11)
+nsubjpass(saved-19, thousands-13)
+prep_of(thousands-13, lives-15)
+aux(saved-19, would-16)
+aux(saved-19, have-17)
+auxpass(saved-19, been-18)
+root(ROOT-0, saved-19)
+

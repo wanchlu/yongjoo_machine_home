@@ -1,0 +1,268 @@
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (NNP Department))
+        (PP (IN of)
+          (NP (NNP Justice)))
+        ('' '')
+        (NP
+          (NP (DT An) (NNP Updated) (NNP Assessment))
+          (PP (IN of)
+            (NP (DT the) (NNP Federal) (NNP Assault) (NNP Weapons) (NNP Ban))))
+        (: :)
+        (NP
+          (NP (NNP Impacts))
+          (PP (IN on)
+            (NP
+              (NP (NNP Gun) (NNPS Markets)
+                (CC and)
+                (NNP Gun) (NNP Violence))
+              (, ,)
+              (NP (CD 1994-2003)))))
+        ('' '')
+        (NP
+          (NP (NNP Retrieved) (CD 1.23.08))
+          (NP (NNP Brady) (NNP Campaign)))))
+    (. .)))
+
+root(ROOT-0, Department-1)
+prep_of(Department-1, Justice-3)
+det(Assessment-7, An-5)
+nn(Assessment-7, Updated-6)
+dep(Department-1, Assessment-7)
+det(Ban-13, the-9)
+nn(Ban-13, Federal-10)
+nn(Ban-13, Assault-11)
+nn(Ban-13, Weapons-12)
+prep_of(Assessment-7, Ban-13)
+dep(Department-1, Impacts-15)
+nn(Markets-18, Gun-17)
+prep_on(Impacts-15, Markets-18)
+nn(Violence-21, Gun-20)
+prep_on(Impacts-15, Violence-21)
+conj_and(Markets-18, Violence-21)
+appos(Markets-18, 1994-2003-23)
+dep(Department-1, Retrieved-25)
+num(Retrieved-25, 1.23.08-26)
+nn(Campaign-28, Brady-27)
+dep(Retrieved-25, Campaign-28)
+
+(ROOT
+  (S ('' '')
+    (NP (DT The) (NNP Assault) (NNP Weapon))
+    (ADVP (RB Ban))
+    (: :)
+    (ADVP (RB Frequently))
+    (VP (VBD Asked)
+      (NP (NNS Questions)))
+    (. .)))
+
+det(Weapon-4, The-2)
+nn(Weapon-4, Assault-3)
+nsubj(Asked-8, Weapon-4)
+advmod(Asked-8, Ban-5)
+advmod(Asked-8, Frequently-7)
+root(ROOT-0, Asked-8)
+dobj(Asked-8, Questions-9)
+
+(ROOT
+  (NP
+    (NP (NNP Brady) (NNP Campaign))
+    (PP (TO To)
+      (NP (NNP Prevent) (NNP Gun) (NNP Violence)))
+    (. .)))
+
+nn(Campaign-2, Brady-1)
+root(ROOT-0, Campaign-2)
+nn(Violence-6, Prevent-4)
+nn(Violence-6, Gun-5)
+prep_to(Campaign-2, Violence-6)
+
+(ROOT
+  (S
+    (VP (VB Retrieved)
+      (S
+        (NP (CD 2.04.08))
+        (`` ``)
+        (NP
+          (NP (DT The) (JJ Top) (CD 10) (NNP NRA) (NNS myths))
+          (PP (IN about)
+            (NP (NN assault) (NNS weapons))))
+        ('' '')))
+    (. .)))
+
+root(ROOT-0, Retrieved-1)
+dep(myths-8, 2.04.08-2)
+det(myths-8, The-4)
+amod(myths-8, Top-5)
+num(myths-8, 10-6)
+nn(myths-8, NRA-7)
+dep(Retrieved-1, myths-8)
+nn(weapons-11, assault-10)
+prep_about(myths-8, weapons-11)
+
+(ROOT
+  (NP
+    (NP (DT The) (NNP Brady) (NNP Campaign))
+    (PP (TO to)
+      (NP (NNP Prevent) (NNP Gun) (NNP Violence)))
+    (. .)))
+
+det(Campaign-3, The-1)
+nn(Campaign-3, Brady-2)
+root(ROOT-0, Campaign-3)
+nn(Violence-7, Prevent-5)
+nn(Violence-7, Gun-6)
+prep_to(Campaign-3, Violence-7)
+
+(ROOT
+  (NP (NN Retrieved) (CD 2.04.08)))
+
+root(ROOT-0, Retrieved-1)
+num(Retrieved-1, 2.04.08-2)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Retrieved) (CD 1.14.08) (NNP Brady))
+    (VP (VBZ Campaign))
+    (. .)))
+
+nn(Brady-4, Retrieved-2)
+num(Brady-4, 1.14.08-3)
+nsubj(Campaign-5, Brady-4)
+root(ROOT-0, Campaign-5)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP Assault) (NNP Weapons))
+    (PP (IN in)
+      (NP
+        (NP (NNP America))
+        (: :)
+        (NP
+          (NP (JJ Military) (NNS Guns))
+          (PP (IN in)
+            (NP (NNP Civilian) (NNPS Hands))))))
+    (. .)))
+
+nn(Weapons-3, Assault-2)
+root(ROOT-0, Weapons-3)
+dep(Weapons-3, in-4)
+pobj(in-4, America-5)
+amod(Guns-8, Military-7)
+dep(America-5, Guns-8)
+nn(Hands-11, Civilian-10)
+prep_in(Guns-8, Hands-11)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Retrieved) (CD 1.14.08) (NNP Ralph))
+    (VP (VBZ Fascitelli))
+    (. .)))
+
+nn(Ralph-4, Retrieved-2)
+num(Ralph-4, 1.14.08-3)
+nsubj(Fascitelli-5, Ralph-4)
+root(ROOT-0, Fascitelli-5)
+
+(ROOT
+  (S ('' '')
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP (NN time)
+        (S
+          (VP (TO to)
+            (VP (VB outlaw)
+              (NP (JJ military) (NN assault) (NNS weapons) ('' '')))))))
+    (. .)))
+
+nsubj(time-4, It-2)
+cop(time-4, 's-3)
+root(ROOT-0, time-4)
+aux(outlaw-6, to-5)
+infmod(time-4, outlaw-6)
+amod(weapons-9, military-7)
+nn(weapons-9, assault-8)
+dobj(outlaw-6, weapons-9)
+
+(ROOT
+  (NP (NNP Seattle) (NNP PI) (. .)))
+
+nn(PI-2, Seattle-1)
+root(ROOT-0, PI-2)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP December) (CD 19) (, ,) (CD 2007))
+      (NP (`` ``) (NNS Consumers)))
+    (VP (VBZ Support)
+      (S
+        (VP (VBG Renewing)
+          (CC and)
+          (VBG Strengthening)
+          (NP (DT the) (NNP Federal) (NNP Assault) (NNP Weapons) (NNP Ban))
+          ('' ''))))
+    (. .)))
+
+nsubj(Support-7, December-1)
+num(December-1, 19-2)
+num(December-1, 2007-4)
+dep(December-1, Consumers-6)
+root(ROOT-0, Support-7)
+xcomp(Support-7, Renewing-8)
+xcomp(Support-7, Strengthening-10)
+conj_and(Renewing-8, Strengthening-10)
+det(Ban-15, the-11)
+nn(Ban-15, Federal-12)
+nn(Ban-15, Assault-13)
+nn(Ban-15, Weapons-14)
+dobj(Renewing-8, Ban-15)
+
+(ROOT
+  (NP
+    (NP (NNP Consumer) (NNP Federation))
+    (PP (IN of)
+      (NP
+        (NP (NNP America))
+        (PRN (-LRB- -LRB-)
+          (NP (NNP CFA))
+          (-RRB- -RRB-))))
+    (. .)))
+
+nn(Federation-2, Consumer-1)
+root(ROOT-0, Federation-2)
+prep_of(Federation-2, America-4)
+abbrev(America-4, CFA-6)
+
+(ROOT
+  (NP
+    (NP
+      (NP (CD 1998) (NNP Violence) (NNP Policy) (NNP Center))
+      (NP
+        (LST (-LRB- -LRB-) (LS 3) (-RRB- -RRB-))
+        (NP (NN http:\/\/www.vpc.org\/graphics\/AWAnalysisFinal.pdf) (`` ``) (NNP Assault) (NNP Weapons))
+        (PP (IN in)
+          (NP (NNP America)))))
+    (: :)
+    (NP
+      (NP (JJ Military) (NNS Guns))
+      (PP (IN in)
+        (NP (NNP Civilian) (NNP Hands) ('' ''))))
+    (. .)))
+
+num(Center-4, 1998-1)
+nn(Center-4, Violence-2)
+nn(Center-4, Policy-3)
+root(ROOT-0, Center-4)
+dep(Weapons-11, 3-6)
+nn(Weapons-11, http:\/\/www.vpc.org\/graphics\/AWAnalysisFinal.pdf-8)
+nn(Weapons-11, Assault-10)
+dep(Center-4, Weapons-11)
+prep_in(Weapons-11, America-13)
+amod(Guns-16, Military-15)
+dep(Center-4, Guns-16)
+nn(Hands-19, Civilian-18)
+prep_in(Guns-16, Hands-19)
+

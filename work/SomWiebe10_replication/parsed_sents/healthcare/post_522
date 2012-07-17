@@ -1,0 +1,118 @@
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB know)
+      (PP (IN at)
+        (SBAR
+          (WHNP (WP what) (NN time)
+            (PP (IN of)
+              (NP (NN day))))
+          (S
+            (NP (DT the) (NNS polls))
+            (VP (VBD were)
+              (VP (VBN executed)))))))
+    (. ?)))
+
+aux(know-3, Do-1)
+nsubj(know-3, you-2)
+root(ROOT-0, know-3)
+det(time-6, what-5)
+dobj(executed-12, time-6)
+prep_of(time-6, day-8)
+det(polls-10, the-9)
+nsubjpass(executed-12, polls-10)
+auxpass(executed-12, were-11)
+prepc_at(know-3, executed-12)
+
+(ROOT
+  (S
+    (NP (DT The) (NN source))
+    (VP (VBZ fails)
+      (S
+        (VP (TO to)
+          (VP (VB provide)
+            (NP (DT that) (NNS data))))))
+    (. .)))
+
+det(source-2, The-1)
+nsubj(fails-3, source-2)
+xsubj(provide-5, source-2)
+root(ROOT-0, fails-3)
+aux(provide-5, to-4)
+xcomp(fails-3, provide-5)
+det(data-7, that-6)
+dobj(provide-5, data-7)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP mean)
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBD were)
+              (VP (VBG contacting)
+                (NP
+                  (NP (NN welfare) (NNS recipients))
+                  (CC and)
+                  (NP (DT the) (NN un-employed)))
+                (PP (IN during)
+                  (NP (JJ daytime) (VBG working) (NNS hours)))))))))
+    (NP (PRP I))
+    (VP (MD could)
+      (VP (VB argue)
+        (SBAR
+          (S
+            (NP (DT the) (NN poll))
+            (VP (VBZ is)
+              (VP (VBN biased)))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+dep(argue-18, mean-2)
+mark(contacting-6, if-3)
+nsubj(contacting-6, they-4)
+aux(contacting-6, were-5)
+advcl(mean-2, contacting-6)
+nn(recipients-8, welfare-7)
+dobj(contacting-6, recipients-8)
+det(un-employed-11, the-10)
+dobj(contacting-6, un-employed-11)
+conj_and(recipients-8, un-employed-11)
+amod(hours-15, daytime-13)
+amod(hours-15, working-14)
+prep_during(contacting-6, hours-15)
+nsubj(argue-18, I-16)
+aux(argue-18, could-17)
+root(ROOT-0, argue-18)
+det(poll-20, the-19)
+nsubjpass(biased-22, poll-20)
+auxpass(biased-22, is-21)
+ccomp(argue-18, biased-22)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Polls))
+      (VP (VBP have)
+        (NP
+          (ADJP (RB very) (JJ little))
+          (NN importance))
+        (PP (TO to)
+          (NP (PRP me)))))
+    (, ,)
+    (FRAG
+      (WHADVP (WRB when))
+      (ADJP (DT any)))
+    (. .)))
+
+nsubj(have-2, Polls-1)
+root(ROOT-0, have-2)
+advmod(little-4, very-3)
+amod(importance-5, little-4)
+dobj(have-2, importance-5)
+prep_to(have-2, me-7)
+dep(any-10, when-9)
+dep(have-2, any-10)
+

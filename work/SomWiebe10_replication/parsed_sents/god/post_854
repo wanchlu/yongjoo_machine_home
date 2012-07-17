@@ -1,0 +1,52 @@
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (FW i))
+    (VP (VBP find)
+      (S
+        (NP (PRP it))
+        (ADJP (RB really) (JJ hard))
+        (S
+          (VP (TO to)
+            (VP (VB buy)
+              (PP (IN into)
+                (NP (DT the) (JJ whole) (NN religion) (NN bullcrap))))))))
+    (. .)))
+
+dep(find-4, Yes-1)
+nsubj(find-4, i-3)
+root(ROOT-0, find-4)
+nsubj(buy-9, it-5)
+advmod(hard-7, really-6)
+dep(buy-9, hard-7)
+aux(buy-9, to-8)
+xcomp(find-4, buy-9)
+det(bullcrap-14, the-11)
+amod(bullcrap-14, whole-12)
+nn(bullcrap-14, religion-13)
+prep_into(buy-9, bullcrap-14)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NNP God))
+        (VP (VBZ does)
+          (VP (VB exist) (, ,)
+            (ADVP (IN than))))))
+    (WHNP (WP who))
+    (SQ
+      (VP (VBD created)
+        (NP (PRP him))))
+    (. ?)))
+
+mark(exist-4, If-1)
+nsubj(exist-4, God-2)
+aux(exist-4, does-3)
+dep(created-8, exist-4)
+advmod(exist-4, than-6)
+nsubj(created-8, who-7)
+root(ROOT-0, created-8)
+dobj(created-8, him-9)
+

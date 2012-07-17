@@ -1,0 +1,35 @@
+(ROOT
+  (NP (NNS Thanks) (. .)))
+
+root(ROOT-0, Thanks-1)
+
+(ROOT
+  (S
+    (ADVP (RB Here))
+    (PP (IN on)
+      (NP (NNP CD)))
+    (NP (PRP I))
+    (VP (VBP aim)
+      (S
+        (VP (TO to)
+          (VP (VB please)
+            (PRN (-LRB- -LRB-)
+              (ADVP (RB just))
+              (ADJP (JJ like)
+                (PP (IN in)
+                  (NP (DT the) (NN bathroom))))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+advmod(aim-5, Here-1)
+prep_on(aim-5, CD-3)
+nsubj(aim-5, I-4)
+xsubj(please-7, I-4)
+root(ROOT-0, aim-5)
+aux(please-7, to-6)
+xcomp(aim-5, please-7)
+dep(like-10, just-9)
+dep(please-7, like-10)
+det(bathroom-13, the-12)
+prep_in(like-10, bathroom-13)
+

@@ -1,0 +1,261 @@
+(ROOT
+  (S
+    (NP (NNP MilitiaJim))
+    (VP (VBZ makes)
+      (NP
+        (NP (DT an) (JJ interesting) (NN point))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP he))
+            (VP (VBZ points)
+              (PRT (RP out))
+              (SBAR (IN that)
+                (S
+                  (NP (NNS soldiers))
+                  (VP (VBP are)
+                    (VP (VBN sworn)
+                      (S
+                        (VP (TO to)
+                          (VP (VB protect)
+                            (NP
+                              (NP (DT the) (NNP Constitution))
+                              (, ,) (RB not)
+                              (NP
+                                (NP (DT the) (NNS members))
+                                (PP (IN of)
+                                  (NP (PRP$ our) (NN government)))))))))))))))))
+    (. .)))
+
+nsubj(makes-2, MilitiaJim-1)
+root(ROOT-0, makes-2)
+det(point-5, an-3)
+amod(point-5, interesting-4)
+dobj(makes-2, point-5)
+tmod(points-8, point-5)
+advmod(points-8, when-6)
+nsubj(points-8, he-7)
+dep(point-5, points-8)
+prt(points-8, out-9)
+complm(sworn-13, that-10)
+nsubjpass(sworn-13, soldiers-11)
+xsubj(protect-15, soldiers-11)
+auxpass(sworn-13, are-12)
+ccomp(points-8, sworn-13)
+aux(protect-15, to-14)
+xcomp(sworn-13, protect-15)
+det(Constitution-17, the-16)
+dobj(protect-15, Constitution-17)
+neg(Constitution-17, not-19)
+det(members-21, the-20)
+dep(Constitution-17, members-21)
+poss(government-24, our-23)
+prep_of(members-21, government-24)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP President))
+    (ADVP (RB also))
+    (VP (VBZ swears)
+      (NP (DT an) (NN oath)
+        (S
+          (VP (TO to) (`` ``)
+            (VP (VB preserve) (, ,) (VB protect)
+              (CC and)
+              (VB defend)
+              (NP (DT the) (NNP Constitution)))
+            ('' '')))))
+    (. .)))
+
+det(President-2, The-1)
+nsubj(swears-4, President-2)
+advmod(swears-4, also-3)
+root(ROOT-0, swears-4)
+det(oath-6, an-5)
+dobj(swears-4, oath-6)
+aux(preserve-9, to-7)
+infmod(oath-6, preserve-9)
+infmod(oath-6, protect-11)
+conj_and(preserve-9, protect-11)
+infmod(oath-6, defend-13)
+conj_and(preserve-9, defend-13)
+det(Constitution-15, the-14)
+dobj(preserve-9, Constitution-15)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHNP (WP what))
+    (SQ
+      (VP (VBZ happens)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (DT the) (NN government))
+              (PRN (, ,)
+                (CC or)
+                (NP
+                  (NP (DT the) (NN Commander-in-Chief))
+                  (PP (IN of)
+                    (NP (DT the) (JJ armed) (NNS forces))))
+                (ADVP (RB specifically))
+                (, ,)))
+            (VP (VBP begin)
+              (S
+                (VP (TO to)
+                  (VP (VB violate)
+                    (NP (DT the) (NNP Constitution))))))))))
+    (. ?)))
+
+cc(happens-3, But-1)
+nsubj(happens-3, what-2)
+root(ROOT-0, happens-3)
+advmod(begin-17, when-4)
+det(government-6, the-5)
+nsubj(begin-17, government-6)
+xsubj(violate-19, government-6)
+dep(Commander-in-Chief-10, or-8)
+det(Commander-in-Chief-10, the-9)
+dep(government-6, Commander-in-Chief-10)
+det(forces-14, the-12)
+amod(forces-14, armed-13)
+prep_of(Commander-in-Chief-10, forces-14)
+dep(Commander-in-Chief-10, specifically-15)
+advcl(happens-3, begin-17)
+aux(violate-19, to-18)
+xcomp(begin-17, violate-19)
+det(Constitution-21, the-20)
+dobj(violate-19, Constitution-21)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP do)
+      (NP (DT the) (JJ armed) (NNS forces))
+      (VP (VB do)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP they))
+            (VP (VBP have)
+              (S
+                (VP (TO to)
+                  (VP (VB choose)
+                    (PP (IN between)
+                      (S
+                        (VP
+                          (VP (VBG protecting)
+                            (NP (DT the) (NNP Constitution)))
+                          (CC and)
+                          (VP (VBG obeying)
+                            (NP
+                              (NP (DT the) (NN Commander-in-Chief))
+                              (, ,)
+                              (SBAR
+                                (WHNP (WP who))
+                                (S
+                                  (VP (VBZ is)
+                                    (ADVP (RB presumably))
+                                    (VP (VBN sworn)
+                                      (S
+                                        (VP (TO to)
+                                          (VP (VB protect)
+                                            (NP (PRP it))))))))))))))))))))))
+    (. ?)))
+
+dobj(do-6, What-1)
+aux(do-6, do-2)
+det(forces-5, the-3)
+amod(forces-5, armed-4)
+nsubj(do-6, forces-5)
+root(ROOT-0, do-6)
+advmod(have-9, when-7)
+nsubj(have-9, they-8)
+xsubj(choose-11, they-8)
+advcl(do-6, have-9)
+aux(choose-11, to-10)
+xcomp(have-9, choose-11)
+prepc_between(choose-11, protecting-13)
+det(Constitution-15, the-14)
+dobj(protecting-13, Constitution-15)
+prepc_between(choose-11, obeying-17)
+conj_and(protecting-13, obeying-17)
+det(Commander-in-Chief-19, the-18)
+dobj(obeying-17, Commander-in-Chief-19)
+nsubjpass(sworn-24, Commander-in-Chief-19)
+auxpass(sworn-24, is-22)
+advmod(sworn-24, presumably-23)
+rcmod(Commander-in-Chief-19, sworn-24)
+aux(protect-26, to-25)
+xcomp(sworn-24, protect-26)
+dobj(protect-26, it-27)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB fault)
+        (NP (PRP$ our) (NNS soldiers))
+        (PP (IN in)
+          (NP (DT either) (NN case)))))
+    (. .)))
+
+nsubj(fault-4, I-1)
+aux(fault-4, do-2)
+neg(fault-4, n't-3)
+root(ROOT-0, fault-4)
+poss(soldiers-6, our-5)
+dobj(fault-4, soldiers-6)
+det(case-9, either-8)
+prep_in(fault-4, case-9)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB be)
+        (NP (DT a) (JJ difficult) (NN choice))))
+    (. .)))
+
+nsubj(choice-6, It-1)
+aux(choice-6, would-2)
+cop(choice-6, be-3)
+det(choice-6, a-4)
+amod(choice-6, difficult-5)
+root(ROOT-0, choice-6)
+
+(ROOT
+  (S (CC But)
+    (PP (IN in)
+      (NP (DT the) (NN meantime)))
+    (, ,)
+    (NP (NNS citizens))
+    (VP (MD could)
+      (VP (VB find)
+        (NP (PRP themselves))
+        (PP (IN at)
+          (NP
+            (NP (DT the) (JJ wrong) (NN end))
+            (NP (DT the) (NNP U.S) (JJ armed) (NNS forces))))))
+    (. .)))
+
+cc(find-8, But-1)
+det(meantime-4, the-3)
+prep_in(find-8, meantime-4)
+nsubj(find-8, citizens-6)
+aux(find-8, could-7)
+root(ROOT-0, find-8)
+dobj(find-8, themselves-9)
+det(end-13, the-11)
+amod(end-13, wrong-12)
+prep_at(find-8, end-13)
+det(forces-17, the-14)
+nn(forces-17, U.S-15)
+amod(forces-17, armed-16)
+dep(end-13, forces-17)
+
+(ROOT
+  (NP (NNP Sid)))
+
+root(ROOT-0, Sid-1)
+

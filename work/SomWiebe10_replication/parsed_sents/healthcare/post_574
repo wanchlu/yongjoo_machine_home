@@ -1,0 +1,115 @@
+(ROOT
+  (NP (CD three) (NNS weeks) (. .)))
+
+num(weeks-2, three-1)
+root(ROOT-0, weeks-2)
+
+(ROOT
+  (S (CC but)
+    (NP (PRP$ my) (NN x-wife))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN one))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD told)
+              (S
+                (NP (PRP me))
+                (NP (DT the) (NNS stories))))))))
+    (. .)))
+
+cc(one-6, but-1)
+poss(x-wife-3, my-2)
+nsubj(one-6, x-wife-3)
+cop(one-6, is-4)
+det(one-6, the-5)
+root(ROOT-0, one-6)
+nsubj(told-8, one-6)
+rcmod(one-6, told-8)
+nsubj(stories-11, me-9)
+det(stories-11, the-10)
+xcomp(told-8, stories-11)
+
+(ROOT
+  (PRN (CC but)
+    (SBAR (IN if)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (S
+            (VP (TO to)
+              (VP (VB elaborate)
+                (ADJP
+                  (ADVP (RBR more) (IN than))
+                  (SBAR (IN that)
+                    (FRAG
+                      (ADVP (RB then))
+                      (: ...))))))))))))
+
+dep(have-4, but-1)
+mark(have-4, if-2)
+nsubj(have-4, I-3)
+xsubj(elaborate-6, I-3)
+root(ROOT-0, have-4)
+aux(elaborate-6, to-5)
+xcomp(have-4, elaborate-6)
+advmod(than-8, more-7)
+acomp(elaborate-6, than-8)
+complm(then-10, that-9)
+dep(than-8, then-10)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD made)
+      (NP (PRP it))
+      (ADVP (DT all) (RB up)))
+    (. .)))
+
+nsubj(made-2, I-1)
+root(ROOT-0, made-2)
+dobj(made-2, it-3)
+dep(up-5, all-4)
+advmod(made-2, up-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (RB really) (JJ tired))
+      (NP (NN today)))
+    (. .)))
+
+nsubj(tired-4, I-1)
+cop(tired-4, 'm-2)
+advmod(tired-4, really-3)
+root(ROOT-0, tired-4)
+attr(tired-4, today-5)
+tmod(tired-4, today-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (NP (DT the) (NN energy))))
+    (. .)))
+
+nsubj(have-5, I-1)
+advmod(have-5, just-2)
+aux(have-5, do-3)
+neg(have-5, n't-4)
+root(ROOT-0, have-5)
+det(energy-7, the-6)
+dobj(have-5, energy-7)
+
+(ROOT
+  (FRAG (RB Maybe)
+    (NP (NN tomorrow))
+    (. .)))
+
+root(ROOT-0, Maybe-1)
+dep(Maybe-1, tomorrow-2)
+

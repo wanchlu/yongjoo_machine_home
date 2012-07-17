@@ -1,0 +1,333 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT a) (JJ drunk) (NN kid))
+      (PP (IN with)
+        (NP (DT a) (NN permit))))
+    (VP (MD will)
+      (VP
+        (VP (VB get)
+          (PP (IN in)
+            (NP
+              (NP (DT an) (NN argument))
+              (PP (IN with)
+                (NP
+                  (NP (DT another) (NN kid))
+                  (PP (IN at)
+                    (NP (DT a) (NN party))))))))
+        (CC and)
+        (VP (VB shoot)
+          (NP (PRP them)))))
+    (. .)))
+
+det(kid-4, a-2)
+amod(kid-4, drunk-3)
+nsubj(get-9, kid-4)
+nsubj(shoot-20, kid-4)
+det(permit-7, a-6)
+prep_with(kid-4, permit-7)
+aux(get-9, will-8)
+root(ROOT-0, get-9)
+det(argument-12, an-11)
+prep_in(get-9, argument-12)
+det(kid-15, another-14)
+prep_with(argument-12, kid-15)
+det(party-18, a-17)
+prep_at(kid-15, party-18)
+conj_and(get-9, shoot-20)
+dobj(shoot-20, them-21)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN idea))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (RB only) (DT the) (JJS most))
+            (ADJP (JJ trustworthy)
+              (CC and)
+              (JJ responsible)))
+          (VP (MD will)
+            (VP (VB get)
+              (NP (NNS permits)))))))
+    (VP (VBZ is)
+      (NP (JJ wishful) (NN thinking)))
+    (. .)))
+
+det(idea-2, The-1)
+nsubj(thinking-15, idea-2)
+complm(get-11, that-3)
+advmod(most-6, only-4)
+det(most-6, the-5)
+nsubj(get-11, most-6)
+amod(most-6, trustworthy-7)
+amod(most-6, responsible-9)
+conj_and(trustworthy-7, responsible-9)
+aux(get-11, will-10)
+dep(idea-2, get-11)
+dobj(get-11, permits-12)
+cop(thinking-15, is-13)
+amod(thinking-15, wishful-14)
+root(ROOT-0, thinking-15)
+
+(ROOT
+  (S ('' '')
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ exact) (NN kind))
+        (PP (IN of)
+          (NP (NN argument)))
+        (SBAR
+          (S
+            (NP (DT the) (NNP Brady) (NN Bunch))
+            (VP (VBZ uses)
+              (NP
+                (NP (DT every) (NN time))
+                (SBAR
+                  (S
+                    (NP (EX there))
+                    (VP (VBZ 's)
+                      (ADVP
+                        (NP (DT a) (NN bill))
+                        (RB up))
+                      (PP (IN in)
+                        (NP
+                          (NP
+                            (NP (DT a) (NN state) (POS 's))
+                            (NN house))
+                          (CC or)
+                          (NP (DT a) (JJ local) (NN municipality)))))))))))))
+    (. .)))
+
+nsubj(kind-6, This-2)
+cop(kind-6, is-3)
+det(kind-6, the-4)
+amod(kind-6, exact-5)
+root(ROOT-0, kind-6)
+prep_of(kind-6, argument-8)
+det(Bunch-11, the-9)
+nn(Bunch-11, Brady-10)
+nsubj(uses-12, Bunch-11)
+rcmod(kind-6, uses-12)
+det(time-14, every-13)
+dobj(uses-12, time-14)
+expl('s-16, there-15)
+rcmod(time-14, 's-16)
+det(bill-18, a-17)
+npadvmod(up-19, bill-18)
+advmod('s-16, up-19)
+det(state-22, a-21)
+poss(house-24, state-22)
+prep_in('s-16, house-24)
+det(municipality-28, a-26)
+amod(municipality-28, local-27)
+prep_in('s-16, municipality-28)
+conj_or(house-24, municipality-28)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP say)
+      (S (`` ``)
+        (S
+          (VP (VBG allowing)
+            (NP (NNS people))
+            (S
+              (VP (TO to)
+                (VP (VB carry)
+                  (PP (IN in)
+                    (NP (NNS restaurants))))))))
+        (VP (MD will)
+          (ADVP (RB only))
+          (VP (VB lead)
+            (PP
+              (PP (TO to)
+                (NP
+                  (NP (NNS shootouts))
+                  (PP (IN in)
+                    (NP (DT the) (NNS restaurants)))))
+              (CC and)
+              (PP (IN in)
+                (NP (DT the) (NN parking) (NNS lots))))
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (NN someone))
+                (VP (VBZ takes)
+                  (NP (DT a) (NN parking) (NN spot)))))))))
+    (: ...)))
+
+nsubj(say-2, They-1)
+root(ROOT-0, say-2)
+csubj(lead-12, allowing-4)
+csubj(lead-12', allowing-4)
+dobj(allowing-4, people-5)
+aux(carry-7, to-6)
+xcomp(allowing-4, carry-7)
+prep_in(carry-7, restaurants-9)
+aux(lead-12, will-10)
+advmod(lead-12, only-11)
+ccomp(say-2, lead-12)
+ccomp(say-2, lead-12')
+conj_and(lead-12, lead-12')
+prep_to(lead-12, shootouts-14)
+det(restaurants-17, the-16)
+prep_in(shootouts-14, restaurants-17)
+det(lots-22, the-20)
+nn(lots-22, parking-21)
+prep_in(lead-12', lots-22)
+advmod(takes-25, when-23)
+nsubj(takes-25, someone-24)
+advcl(lead-12, takes-25)
+det(spot-28, a-26)
+nn(spot-28, parking-27)
+dobj(takes-25, spot-28)
+
+(ROOT
+  (NP ('' '')
+    (CC And)
+    (NP
+      (NP (RB yet))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (CD 37) (NNS states))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (ADVP (RB now))
+              (VP (VBP allow)
+                (VP (VB carry)
+                  (PP (IN in)
+                    (NP
+                      (NP (NNS restaurants))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ has) (RB not)
+                            (VP (VBN been)
+                              (NP (DT the) (NN case)))))))))))))))
+    (. .)))
+
+cc(yet-3, And-2)
+root(ROOT-0, yet-3)
+det(states-8, the-6)
+num(states-8, 37-7)
+prep_in(yet-3, states-8)
+nsubj(allow-11, states-8)
+advmod(allow-11, now-10)
+rcmod(states-8, allow-11)
+dep(allow-11, carry-12)
+prep_in(carry-12, restaurants-14)
+nsubj(case-20, restaurants-14)
+aux(case-20, has-16)
+neg(case-20, not-17)
+cop(case-20, been-18)
+det(case-20, the-19)
+rcmod(restaurants-14, case-20)
+
+(ROOT
+  (S
+    (NP (PRP$ Their) (NN argument))
+    (VP (VBZ is)
+      (VP (VBN based)
+        (S
+          (ADJP (RB purely)
+            (PP (IN on)
+              (NP (NN fear)
+                (CC and)
+                (NN ignorance)))))
+        (SBAR (IN while)
+          (S
+            (NP (DT the) (NNP REALITY))
+            (VP (VBZ is)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is) (RB not)
+                    (NP (DT the) (NN case))))))))))
+    (. .)))
+
+poss(argument-2, Their-1)
+nsubjpass(based-4, argument-2)
+auxpass(based-4, is-3)
+root(ROOT-0, based-4)
+dep(based-4, purely-5)
+prep_on(purely-5, fear-7)
+prep_on(purely-5, ignorance-9)
+conj_and(fear-7, ignorance-9)
+mark(is-13, while-10)
+det(REALITY-12, the-11)
+nsubj(is-13, REALITY-12)
+advcl(based-4, is-13)
+complm(case-19, that-14)
+nsubj(case-19, it-15)
+cop(case-19, is-16)
+neg(case-19, not-17)
+det(case-19, the-18)
+ccomp(is-13, case-19)
+
+(ROOT
+  (S
+    (NP (NNP FBI) (NNS statistics))
+    (VP (VBP show)
+      (SBAR (IN that)
+        (S
+          (NP (NNP concealed) (NNP carry))
+          (VP (VBZ contributes)
+            (PP (TO to)
+              (NP
+                (NP (DT an) (JJ overall) (NN reduction))
+                (PP (IN in)
+                  (NP (NN crime)))))))))
+    (. .)))
+
+nn(statistics-2, FBI-1)
+nsubj(show-3, statistics-2)
+root(ROOT-0, show-3)
+complm(contributes-7, that-4)
+nn(carry-6, concealed-5)
+nsubj(contributes-7, carry-6)
+ccomp(show-3, contributes-7)
+det(reduction-11, an-9)
+amod(reduction-11, overall-10)
+prep_to(contributes-7, reduction-11)
+prep_in(reduction-11, crime-13)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP One))
+      (VP (VBZ is)
+        (NP (NNS statistics))))
+    (, ,)
+    (NP (DT the) (JJ other))
+    (VP (VBZ is)
+      (NP (NN propaganda)))
+    (. .)))
+
+nsubj(statistics-3, One-1)
+cop(statistics-3, is-2)
+ccomp(propaganda-8, statistics-3)
+det(other-6, the-5)
+nsubj(propaganda-8, other-6)
+cop(propaganda-8, is-7)
+root(ROOT-0, propaganda-8)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB do) (RB n't)
+      (VP (VB confuse)
+        (NP (DT the) (CD two))))
+    (. .)))
+
+dep(confuse-4, Please-1)
+aux(confuse-4, do-2)
+neg(confuse-4, n't-3)
+root(ROOT-0, confuse-4)
+det(two-6, the-5)
+dobj(confuse-4, two-6)
+

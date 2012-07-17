@@ -1,0 +1,161 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP DC) (POS 's))
+      (NN handgun) (NN ban))
+    (VP (VBZ threatens)
+      (NP
+        (NP (NNS citizens))
+        ('' '')
+        (SBAR
+          (S
+            (NP (NN ability))
+            (VP (TO to)
+              (VP (VB defend)
+                (NP (PRP themselves))))))
+        (PP
+          (PP (IN on)
+            (NP
+              (NP (DT the) (NNS streets))
+              (SBAR
+                (S
+                  (NP
+                    (NP (DT The) (NN majority))
+                    (PP (IN of)
+                      (NP (JJ violent) (NNS encounters))))
+                  (VP (VBP occur)
+                    (PP (IN on)
+                      (NP (DT the) (NN street))))))))
+          (, ,)
+          (CC versus)
+          (PP (IN in)
+            (NP (DT the) (NN home))))))
+    (. .)))
+
+poss(ban-4, DC-1)
+nn(ban-4, handgun-3)
+nsubj(threatens-5, ban-4)
+root(ROOT-0, threatens-5)
+dobj(threatens-5, citizens-6)
+dobj(threatens-5, citizens-6')
+conj_versus(citizens-6, citizens-6')
+nsubj(defend-10, ability-8)
+aux(defend-10, to-9)
+infmod(citizens-6, defend-10)
+rcmod(citizens-6, defend-10)
+dobj(defend-10, themselves-11)
+det(streets-14, the-13)
+prep_on(citizens-6, streets-14)
+dobj(occur-20, streets-14)
+det(majority-16, The-15)
+nsubj(occur-20, majority-16)
+amod(encounters-19, violent-18)
+prep_of(majority-16, encounters-19)
+rcmod(streets-14, occur-20)
+det(street-23, the-22)
+prep_on(occur-20, street-23)
+det(home-28, the-27)
+prep_in(citizens-6', home-28)
+
+(ROOT
+  (S
+    (NP (JJ Hand) (NNS guns))
+    (VP (VBP are)
+      (NP
+        (NP (DT a)
+          (ADJP (RB particularly) (JJ important))
+          (NN means))
+        (PP (TO to)
+          (S
+            (VP (VBG protecting)
+              (NP
+                (NP (CD one) (NN self))
+                (PP (IN on)
+                  (NP (DT the) (NN street)))))))))
+    (. .)))
+
+amod(guns-2, Hand-1)
+nsubj(means-7, guns-2)
+cop(means-7, are-3)
+det(means-7, a-4)
+advmod(important-6, particularly-5)
+amod(means-7, important-6)
+root(ROOT-0, means-7)
+prepc_to(means-7, protecting-9)
+num(self-11, one-10)
+dobj(protecting-9, self-11)
+det(street-14, the-13)
+prep_on(self-11, street-14)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADVP (RB primarily))
+      (NP (DT the) (NN case))
+      (SBAR (IN because)
+        (S
+          (NP (NNS handguns))
+          (VP (MD can)
+            (VP (VB be)
+              (VP
+                (VP
+                  (ADVP (RB easily))
+                  (VBN carried)
+                  (PP (IN by)
+                    (NP (JJ law-abiding) (NNS civilians))))
+                (, ,)
+                (CC and)
+                (VP (VBN concealed)
+                  (ADVP (RB so) (RB as))
+                  (S
+                    (VP (TO to)
+                      (VP (VB avoid)
+                        (S
+                          (VP (VBG scaring)
+                            (NP (JJ other) (NNS citizens))))))))))))))
+    (. .)))
+
+nsubj(case-5, This-1)
+cop(case-5, is-2)
+advmod(case-5, primarily-3)
+det(case-5, the-4)
+root(ROOT-0, case-5)
+mark(carried-11, because-6)
+nsubjpass(carried-11, handguns-7)
+nsubjpass(concealed-17, handguns-7)
+aux(carried-11, can-8)
+auxpass(carried-11, be-9)
+advmod(carried-11, easily-10)
+advcl(case-5, carried-11)
+amod(civilians-14, law-abiding-13)
+agent(carried-11, civilians-14)
+advcl(case-5, concealed-17)
+conj_and(carried-11, concealed-17)
+advmod(as-19, so-18)
+advmod(concealed-17, as-19)
+aux(avoid-21, to-20)
+xcomp(concealed-17, avoid-21)
+xcomp(avoid-21, scaring-22)
+amod(citizens-24, other-23)
+dobj(scaring-22, citizens-24)
+
+(ROOT
+  (S
+    (NP (NNS Shotguns)
+      (CC and)
+      (NNS rifles))
+    (VP (VBP do) (RB not)
+      (VP (VB share)
+        (NP (DT these) (NNS characteristics))))
+    (. .)))
+
+nsubj(share-6, Shotguns-1)
+conj_and(Shotguns-1, rifles-3)
+nsubj(share-6, rifles-3)
+aux(share-6, do-4)
+neg(share-6, not-5)
+root(ROOT-0, share-6)
+det(characteristics-8, these-7)
+dobj(share-6, characteristics-8)
+

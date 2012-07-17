@@ -1,0 +1,258 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NNP healthcare))
+    (VP (VBZ makes)
+      (NP (NN business) (NN sense)))
+    (. .)))
+
+nn(healthcare-2, Universal-1)
+nsubj(makes-3, healthcare-2)
+root(ROOT-0, makes-3)
+nn(sense-5, business-4)
+dobj(makes-3, sense-5)
+
+(ROOT
+  (S
+    (LST (LS 1) (-RRB- -RRB-))
+    (VP (VB Ensuring)
+      (SBAR
+        (S
+          (NP
+            (NP (DT the) (NN health))
+            (PP (IN of)
+              (NP (DT all) (NNS citizens))))
+          (VP (VBZ benefits)
+            (NP (DT a) (NN nation))
+            (ADVP (RB economically))))))
+    (. .)))
+
+dep(Ensuring-3, 1-1)
+root(ROOT-0, Ensuring-3)
+det(health-5, the-4)
+nsubj(benefits-9, health-5)
+det(citizens-8, all-7)
+prep_of(health-5, citizens-8)
+ccomp(Ensuring-3, benefits-9)
+det(nation-11, a-10)
+dobj(benefits-9, nation-11)
+advmod(benefits-9, economically-12)
+
+(ROOT
+  (S
+    (S
+      (VP
+        (VP (VB Sick))
+        (CC and)
+        (VP (VBN injured)
+          (PRN
+            (S
+              (NP (NNS people))
+              (VP (VBP are)
+                (ADVP (RBR less))
+                (ADJP (JJ productive)
+                  (NP (CD .2)))))
+            (-RRB- -RRB-))
+          (SBAR
+            (WHADVP (WRB When))
+            (S
+              (NP (PRP you))
+              (VP (VBP have)
+                (NP (JJ multiple) (JJ competing) (NN insurance) (NNS companies))))))))
+    (, ,)
+    (NP (DT each) (NN company))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB repeat)
+            (NP (DT the) (JJ same) (NN work))))))
+    (. .)))
+
+ccomp(has-20, Sick-1)
+conj_and(Sick-1, injured-3)
+ccomp(has-20, injured-3)
+nsubj(productive-7, people-4)
+cop(productive-7, are-5)
+advmod(productive-7, less-6)
+parataxis(injured-3, productive-7)
+dep(productive-7, .2-8)
+advmod(have-12, When-10)
+nsubj(have-12, you-11)
+advcl(injured-3, have-12)
+amod(companies-16, multiple-13)
+amod(companies-16, competing-14)
+nn(companies-16, insurance-15)
+dobj(have-12, companies-16)
+det(company-19, each-18)
+nsubj(has-20, company-19)
+xsubj(repeat-22, company-19)
+root(ROOT-0, has-20)
+aux(repeat-22, to-21)
+xcomp(has-20, repeat-22)
+det(work-25, the-23)
+amod(work-25, same-24)
+dobj(repeat-22, work-25)
+
+(ROOT
+  (S
+    (NP (DT Each) (NN company))
+    (VP (VBZ needs)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (NP
+              (NP (JJ own) (NNS secretaries))
+              (, ,)
+              (NP
+                (NP (NN computer) (NNS people))
+                (, ,)
+                (NP (NNS lawyers))
+                (, ,) (FW etc.)))))))
+    (. .)))
+
+det(company-2, Each-1)
+nsubj(needs-3, company-2)
+root(ROOT-0, needs-3)
+nsubj(secretaries-7, it-4)
+cop(secretaries-7, 's-5)
+amod(secretaries-7, own-6)
+ccomp(needs-3, secretaries-7)
+nn(people-10, computer-9)
+appos(secretaries-7, people-10)
+appos(people-10, lawyers-12)
+dep(people-10, etc.-14)
+
+(ROOT
+  (S
+    (S
+      (NP (DT These) (JJ duplicated) (NNS costs))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN eliminated)
+            (PP (IN with)
+              (NP (DT a) (JJ single) (NN payer) (NN system)))
+            (PP
+              (NP
+                (NP (CD .3))
+                (-RRB- -RRB-)
+                (SBAR
+                  (S
+                    (PP (IN In)
+                      (NP
+                        (NP (NNS countries))
+                        (PP (IN with)
+                          (NP (JJ universal) (NN health) (NN care)))))
+                    (, ,)
+                    (NP (DT the) (NN government))
+                    (VP (VBZ spends)
+                      (S
+                        (NP
+                          (NP (JJR less) (NN tax) (NN money))
+                          (PP (IN per)
+                            (NP (NN person))))
+                        (PP (IN on)
+                          (NP
+                            (NP (NN health) (NN care))
+                            (PP (IN than)
+                              (NP (DT the) (NNP U.S.)))))
+                        (PP (IN For)
+                          (NP (NN example)))))))
+                (, ,))
+              (IN in)
+              (NP (NNP France)))))))
+    (, ,)
+    (NP (DT the) (NN government))
+    (VP (VBZ spends)
+      (PP
+        (ADVP
+          (NP ($ $) (CD 569))
+          (RBR less))
+        (IN per)
+        (NP
+          (NP (NN person))
+          (PP (IN on)
+            (NP (NN health) (NN care)))))
+      (PP (IN than)
+        (PP (IN in)
+          (NP (DT the) (NNP United) (NNPS States)))))
+    (. .)))
+
+det(costs-3, These-1)
+amod(costs-3, duplicated-2)
+nsubjpass(eliminated-6, costs-3)
+aux(eliminated-6, can-4)
+auxpass(eliminated-6, be-5)
+ccomp(spends-43, eliminated-6)
+det(system-11, a-8)
+amod(system-11, single-9)
+nn(system-11, payer-10)
+prep_with(eliminated-6, system-11)
+npadvmod(eliminated-6, .3-12)
+dobj(spends-23, .3-12)
+prep_in(spends-23, countries-15)
+amod(care-19, universal-17)
+nn(care-19, health-18)
+prep_with(countries-15, care-19)
+det(government-22, the-21)
+nsubj(spends-23, government-22)
+rcmod(.3-12, spends-23)
+amod(money-26, less-24)
+nn(money-26, tax-25)
+dep(spends-23, money-26)
+prep_per(money-26, person-28)
+dep(money-26, on-29)
+nn(care-31, health-30)
+pobj(on-29, care-31)
+det(U.S.-34, the-33)
+prep_than(care-31, U.S.-34)
+dep(money-26, For-35)
+pobj(For-35, example-36)
+prep_in(eliminated-6, France-39)
+det(government-42, the-41)
+nsubj(spends-43, government-42)
+root(ROOT-0, spends-43)
+npadvmod(less-46, $-44)
+num($-44, 569-45)
+advmod(spends-43, less-46)
+prep_per(spends-43, person-48)
+nn(care-51, health-50)
+prep_on(person-48, care-51)
+prep(spends-43, than-52)
+pcomp(than-52, in-53)
+det(States-56, the-54)
+nn(States-56, United-55)
+prep_in(than-52, States-56)
+
+(ROOT
+  (S
+    (ADVP (RB Thus))
+    (NP (JJ universal) (NN health) (NN care))
+    (VP (MD would)
+      (ADVP (RB actually))
+      (VP (VB mean)
+        (NP
+          (NP (JJR less) (NN government) (NN spending))
+          (CC and)
+          (NP (JJR lower) (NNS taxes)))))
+    (. .)))
+
+advmod(mean-7, Thus-1)
+amod(care-4, universal-2)
+nn(care-4, health-3)
+nsubj(mean-7, care-4)
+aux(mean-7, would-5)
+advmod(mean-7, actually-6)
+root(ROOT-0, mean-7)
+amod(spending-10, less-8)
+nn(spending-10, government-9)
+dobj(mean-7, spending-10)
+amod(taxes-13, lower-12)
+dobj(mean-7, taxes-13)
+conj_and(spending-10, taxes-13)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (NP (NN source))
+    (-RRB- -RRB-)))
+
+

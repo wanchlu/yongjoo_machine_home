@@ -1,0 +1,120 @@
+(ROOT
+  (S
+    (VP (VBN Reason))
+    (. .)))
+
+root(ROOT-0, Reason-1)
+
+(ROOT
+  (S
+    (NP (NNP Common))
+    (VP (VBP sense))
+    (. .)))
+
+nsubj(sense-2, Common-1)
+root(ROOT-0, sense-2)
+
+(ROOT
+  (S
+    (NP (NNP Scientific))
+    (VP (VBP insight))
+    (. .)))
+
+nsubj(insight-2, Scientific-1)
+root(ROOT-0, insight-2)
+
+(ROOT
+  (S
+    (NP (NNS Things))
+    (VP (VBP like)
+      (S
+        (NP (DT this))
+        (VP (VB enable)
+          (S
+            (NP (PRP me))
+            (VP (TO to)
+              (VP (VB pick)
+                (PRT (RP out))
+                (NP (DT the) (JJ pure) (NNS myths))))))))
+    (. .)))
+
+nsubj(like-2, Things-1)
+root(ROOT-0, like-2)
+nsubj(enable-4, this-3)
+ccomp(like-2, enable-4)
+nsubj(pick-7, me-5)
+aux(pick-7, to-6)
+xcomp(enable-4, pick-7)
+prt(pick-7, out-8)
+det(myths-11, the-9)
+amod(myths-11, pure-10)
+dobj(pick-7, myths-11)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Then))
+      (NP (EX there))
+      (VP (VBP are)
+        (NP
+          (NP (NNS stories))
+          (SBAR (IN that)
+            (S
+              (NP (PRP I))
+              (VP (VBP do) (RB n't)
+                (VP (VB know)
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP they))
+                      (VP (VBP are)
+                        (ADJP (JJ real))))
+                    (CC or)
+                    (RB not)))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT these))
+      (VP (VBP are)
+        (ADVP (RB typically))
+        (NP (RB just) (JJ historical) (NNS contexts))
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (MD ca) (RB n't)
+              (VP (VB prove)
+                (ADJP (JJ wrong)
+                  (CC or)
+                  (JJ right))))))))
+    (. .)))
+
+advmod(are-3, Then-1)
+expl(are-3, there-2)
+root(ROOT-0, are-3)
+nsubj(are-3, stories-4)
+dobj(know-9, stories-4)
+complm(know-9, that-5)
+nsubj(know-9, I-6)
+aux(know-9, do-7)
+neg(know-9, n't-8)
+dep(stories-4, know-9)
+mark(real-13, if-10)
+nsubj(real-13, they-11)
+cop(real-13, are-12)
+advcl(know-9, real-13)
+advcl(know-9, not-15)
+conj_or(real-13, not-15)
+nsubj(contexts-23, these-18)
+cop(contexts-23, are-19)
+advmod(contexts-23, typically-20)
+advmod(contexts-23, just-21)
+amod(contexts-23, historical-22)
+conj_but(are-3, contexts-23)
+complm(prove-28, that-24)
+nsubj(prove-28, I-25)
+aux(prove-28, ca-26)
+neg(prove-28, n't-27)
+ccomp(contexts-23, prove-28)
+acomp(prove-28, wrong-29)
+acomp(prove-28, right-31)
+conj_or(wrong-29, right-31)
+

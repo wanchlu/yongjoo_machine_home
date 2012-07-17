@@ -1,0 +1,127 @@
+(ROOT
+  (S
+    (NP (NNS Handguns))
+    (VP (MD should)
+      (VP (VB be)
+        (VP (VBN banned)
+          (ADJP (JJ due))
+          (PP (TO to)
+            (NP (PRP$ their)
+              (ADJP (RB uniquely) (JJ dangerous))
+              (NN concealability))))))
+    (. .)))
+
+nsubjpass(banned-4, Handguns-1)
+aux(banned-4, should-2)
+auxpass(banned-4, be-3)
+root(ROOT-0, banned-4)
+acomp(banned-4, due-5)
+poss(concealability-10, their-7)
+advmod(dangerous-9, uniquely-8)
+amod(concealability-10, dangerous-9)
+prep_to(banned-4, concealability-10)
+
+(ROOT
+  (S
+    (NP (JJ Hand) (NNS guns))
+    (VP (VBP are)
+      (NP
+        (NP (NN concealable))
+        (CONJP (RB as) (RB well) (IN as))
+        (NP (JJ portable))))
+    (. .)))
+
+amod(guns-2, Hand-1)
+nsubj(concealable-4, guns-2)
+nsubj(portable-8, guns-2)
+cop(concealable-4, are-3)
+root(ROOT-0, concealable-4)
+conj_and(concealable-4, portable-8)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ makes)
+      (S
+        (NP (PRP them))
+        (ADJP (JJ ideal)
+          (PP (IN for)
+            (NP
+              (NP (NNS criminals)
+                (CC and)
+                (NNS murders))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP seek)
+                    (S
+                      (VP (TO to)
+                        (VP
+                          (VP (VB be)
+                            (ADJP (JJ mobile)
+                              (PP (IN with)
+                                (NP (DT these) (NNS weapons)))))
+                          (CC and)
+                          (VP (VB surprise)
+                            (NP (PRP$ their) (NNS victims))
+                            (PP (IN without)
+                              (NP (NN detection)))))))))))))))
+    (. .)))
+
+nsubj(makes-2, This-1)
+root(ROOT-0, makes-2)
+nsubj(ideal-4, them-3)
+xcomp(makes-2, ideal-4)
+prep_for(ideal-4, criminals-6)
+nsubj(seek-10, criminals-6)
+prep_for(ideal-4, murders-8)
+conj_and(criminals-6, murders-8)
+nsubj(seek-10, murders-8)
+rcmod(criminals-6, seek-10)
+aux(mobile-13, to-11)
+cop(mobile-13, be-12)
+xcomp(seek-10, mobile-13)
+det(weapons-16, these-15)
+prep_with(mobile-13, weapons-16)
+xcomp(seek-10, surprise-18)
+conj_and(mobile-13, surprise-18)
+poss(victims-20, their-19)
+dobj(surprise-18, victims-20)
+prep_without(surprise-18, detection-22)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Rifle) (POS 's))
+      (CC and)
+      (NP (NNS shotguns)))
+    (VP
+      (VP (VBP do) (RB not)
+        (VP (VB share)
+          (NP
+            (NP (DT this) (NN characteristic))
+            (PP (IN of)
+              (NP (NN portability))))))
+      (CC and)
+      (VP
+        (ADVP (RB so))
+        (VBP are)
+        (ADJP (RBR less) (JJ dangerous))))
+    (. .)))
+
+nsubj(share-7, Rifle-1)
+nsubj(dangerous-16, Rifle-1)
+possessive(Rifle-1, 's-2)
+conj_and(Rifle-1, shotguns-4)
+nsubj(share-7, shotguns-4)
+aux(share-7, do-5)
+neg(share-7, not-6)
+root(ROOT-0, share-7)
+det(characteristic-9, this-8)
+dobj(share-7, characteristic-9)
+prep_of(characteristic-9, portability-11)
+advmod(dangerous-16, so-13)
+cop(dangerous-16, are-14)
+advmod(dangerous-16, less-15)
+conj_and(share-7, dangerous-16)
+

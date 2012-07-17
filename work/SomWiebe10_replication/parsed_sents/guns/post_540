@@ -1,0 +1,57 @@
+(ROOT
+  (S (`` ``)
+    (NP (NNP Democracy))
+    (VP (VBZ is)
+      (NP
+        (NP (CD two) (NNS wolves))
+        (CC and)
+        (NP
+          (NP (DT a) (JJ lamb) (NN voting))
+          (PP (IN on)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (VBZ 's)
+                  (PP (IN for)
+                    (NP (NN dinner))))))))))
+    (. .)))
+
+nsubj(wolves-5, Democracy-2)
+cop(wolves-5, is-3)
+num(wolves-5, two-4)
+root(ROOT-0, wolves-5)
+det(voting-9, a-7)
+amod(voting-9, lamb-8)
+conj_and(wolves-5, voting-9)
+nsubj('s-12, what-11)
+prepc_on(voting-9, 's-12)
+prep_for('s-12, dinner-14)
+
+(ROOT
+  (S
+    (NP (NNP Liberty))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a)
+          (ADJP (RB well) (JJ armed))
+          (NN lamb))
+        (VP (VBG contesting)
+          (NP (DT the) (NN vote)))))
+    (. .)))
+
+nsubj(lamb-6, Liberty-1)
+cop(lamb-6, is-2)
+det(lamb-6, a-3)
+advmod(armed-5, well-4)
+amod(lamb-6, armed-5)
+root(ROOT-0, lamb-6)
+partmod(lamb-6, contesting-7)
+det(vote-9, the-8)
+dobj(contesting-7, vote-9)
+
+(ROOT
+  (NP (NNP '') (NNP Benjamin) (NNP Franklin)))
+
+nn(Franklin-3, Benjamin-2)
+root(ROOT-0, Franklin-3)
+

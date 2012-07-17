@@ -1,0 +1,59 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN ban))
+      (PP (IN on)
+        (NP (NN assault) (NNS weapons))))
+    (VP (VBZ is) (RB not)
+      (NP (DT a) (JJ slippery) (NN slope))
+      (PP (TO to)
+        (NP (DT an) (RB all) (NN gun) (NN ban))))
+    (. .)))
+
+det(ban-2, A-1)
+nsubj(slope-10, ban-2)
+nn(weapons-5, assault-4)
+prep_on(ban-2, weapons-5)
+cop(slope-10, is-6)
+neg(slope-10, not-7)
+det(slope-10, a-8)
+amod(slope-10, slippery-9)
+root(ROOT-0, slope-10)
+det(ban-15, an-12)
+advmod(ban-15, all-13)
+nn(ban-15, gun-14)
+prep_to(slope-10, ban-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most) (NNS individuals))
+      (VP (VBG seeking)
+        (NP
+          (NP (DT a) (NN ban))
+          (PP (IN on)
+            (NP (NN assault) (NNS weapons))))))
+    (ADVP (RB just))
+    (VP (VBP want)
+      (S
+        (NP (NN assault) (NNS weapons))
+        (VP (TO to)
+          (VP (VB be)
+            (VP (VBN banned))))))
+    (. .)))
+
+amod(individuals-2, Most-1)
+nsubj(want-10, individuals-2)
+partmod(individuals-2, seeking-3)
+det(ban-5, a-4)
+dobj(seeking-3, ban-5)
+nn(weapons-8, assault-7)
+prep_on(ban-5, weapons-8)
+advmod(want-10, just-9)
+root(ROOT-0, want-10)
+nn(weapons-12, assault-11)
+nsubjpass(banned-15, weapons-12)
+aux(banned-15, to-13)
+auxpass(banned-15, be-14)
+xcomp(want-10, banned-15)
+

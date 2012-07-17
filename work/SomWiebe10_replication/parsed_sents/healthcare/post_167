@@ -1,0 +1,77 @@
+(ROOT
+  (S
+    (NP (DT The) (NNS markets))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (JJR better))
+        (PP (IN at)
+          (S
+            (VP (VBG providing)
+              (NP
+                (NP (NN quality))
+                (: ;)
+                (NP
+                  (NP (JJ same))
+                  (PP (IN with)
+                    (NP (NN health) (NN care))))))))))
+    (. .)))
+
+det(markets-2, The-1)
+nsubj(better-4, markets-2)
+cop(better-4, are-3)
+root(ROOT-0, better-4)
+prepc_at(better-4, providing-6)
+dobj(providing-6, quality-7)
+dep(quality-7, same-9)
+nn(care-12, health-11)
+prep_with(same-9, care-12)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS markets)
+      (CC and)
+      (NN competition))
+    (ADVP (RB generally))
+    (VP (VBP help)
+      (VP (VB produce)
+        (NP
+          (NP (JJR higher) (NN quality) (NNS goods))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (JJS least) (NN money))
+              (-LRB- -LRB-)
+              (NP (DT the) (JJS highest) (NN value))
+              (-RRB- -RRB-))))))
+    (. .)))
+
+det(markets-2, The-1)
+nsubj(help-6, markets-2)
+conj_and(markets-2, competition-4)
+nsubj(help-6, competition-4)
+advmod(help-6, generally-5)
+root(ROOT-0, help-6)
+xcomp(help-6, produce-7)
+amod(goods-10, higher-8)
+nn(goods-10, quality-9)
+dobj(produce-7, goods-10)
+det(money-14, the-12)
+amod(money-14, least-13)
+prep_for(goods-10, money-14)
+det(value-18, the-16)
+amod(value-18, highest-17)
+dep(money-14, value-18)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ same))
+    (VP (VBZ applies)
+      (PP (TO to)
+        (NP (NN health) (NN care))))
+    (. .)))
+
+det(same-2, The-1)
+nsubj(applies-3, same-2)
+root(ROOT-0, applies-3)
+nn(care-6, health-5)
+prep_to(applies-3, care-6)
+

@@ -1,0 +1,185 @@
+(ROOT
+  (S
+    (NP (NNP Let) (POS 's))
+    (VP (VBP think)
+      (PP (IN about)
+        (NP (DT this) (NN one))))
+    (. .)))
+
+nsubj(think-3, Let-1)
+possessive(Let-1, 's-2)
+root(ROOT-0, think-3)
+det(one-6, this-5)
+prep_about(think-3, one-6)
+
+(ROOT
+  (S
+    (PP (IN Under)
+      (NP
+        (NP (DT the) (NN system))
+        (SBAR (IN that)
+          (S
+            (NP (PRP we))
+            (ADVP (RB currently))
+            (VP (VBP have))))))
+    (, ,)
+    (NP (DT the) (NNS people))
+    (VP (VBP decide)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBZ is)
+            (ADJP (JJS best))))))
+    (. .)))
+
+det(system-3, the-2)
+dobj(have-7, system-3)
+prep_under(decide-11, system-3)
+complm(have-7, that-4)
+nsubj(have-7, we-5)
+advmod(have-7, currently-6)
+dep(system-3, have-7)
+det(people-10, the-9)
+nsubj(decide-11, people-10)
+root(ROOT-0, decide-11)
+nsubj(best-14, what-12)
+cop(best-14, is-13)
+ccomp(decide-11, best-14)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Collectively))
+    (. .)))
+
+root(ROOT-0, Collectively-1)
+
+(ROOT
+  (S
+    (ADVP (RB Apparently))
+    (, ,)
+    (NP
+      (NP (CD 56) (NN %))
+      (PP (IN of)
+        (NP (NNS voters))))
+    (ADVP (RB here))
+    (VP (VBP desire)
+      (NP (JJ universal) (NN health) (NN care)))
+    (. .)))
+
+advmod(desire-8, Apparently-1)
+num(%-4, 56-3)
+nsubj(desire-8, %-4)
+prep_of(%-4, voters-6)
+advmod(desire-8, here-7)
+root(ROOT-0, desire-8)
+amod(care-11, universal-9)
+nn(care-11, health-10)
+dobj(desire-8, care-11)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP (DT a) (JJ huge) (NN issue))
+      (ADVP (RB nationwide)))
+    (. .)))
+
+nsubj(issue-5, This-1)
+cop(issue-5, is-2)
+det(issue-5, a-3)
+amod(issue-5, huge-4)
+root(ROOT-0, issue-5)
+advmod(issue-5, nationwide-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN state))
+      (SBAR (IN that)
+        (S
+          (NP (PRP we))
+          (VP (VBP elect)))))
+    (VP (VBZ exists)
+      (S
+        (VP (TO to)
+          (VP (VB serve)
+            (NP
+              (NP
+                (NP (DT the) (NNS needs)
+                  (CC and)
+                  (NNS desires))
+                (PP (IN of)
+                  (NP (DT the) (NNS people))))
+              (: ...)
+              (S (RB not)
+                (VP (TO to)
+                  (VP (VB promote)
+                    (NP (NN capitalism))))))))))
+    (. .)))
+
+det(state-2, The-1)
+dobj(elect-5, state-2)
+nsubj(exists-6, state-2)
+xsubj(serve-8, state-2)
+complm(elect-5, that-3)
+nsubj(elect-5, we-4)
+dep(state-2, elect-5)
+root(ROOT-0, exists-6)
+aux(serve-8, to-7)
+xcomp(exists-6, serve-8)
+det(needs-10, the-9)
+dobj(serve-8, needs-10)
+dobj(serve-8, desires-12)
+conj_and(needs-10, desires-12)
+det(people-15, the-14)
+prep_of(needs-10, people-15)
+neg(promote-19, not-17)
+aux(promote-19, to-18)
+infmod(needs-10, promote-19)
+dobj(promote-19, capitalism-20)
+
+(ROOT
+  (S (CC And)
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (NN capitalism))
+        (VP (VBD did) (RB n't)
+          (VP (VB interfere)
+            (PP (IN with)
+              (NP (NN government)))
+            (ADVP
+              (ADVP (RB as) (RB much))
+              (SBAR (IN as)
+                (S
+                  (NP (NN government))
+                  (VP (VBZ does)
+                    (NP (NN capitalism))))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD would)
+      (VP (VB have)
+        (VP (VBN happened)
+          (ADVP (RB long) (RB ago)))))
+    (. .)))
+
+cc(happened-20, And-1)
+mark(interfere-7, if-3)
+nsubj(interfere-7, capitalism-4)
+aux(interfere-7, did-5)
+neg(interfere-7, n't-6)
+advcl(happened-20, interfere-7)
+prep_with(interfere-7, government-9)
+advmod(much-11, as-10)
+advmod(interfere-7, much-11)
+mark(does-14, as-12)
+nsubj(does-14, government-13)
+ccomp(much-11, does-14)
+dobj(does-14, capitalism-15)
+nsubj(happened-20, it-17)
+aux(happened-20, would-18)
+aux(happened-20, have-19)
+root(ROOT-0, happened-20)
+advmod(ago-22, long-21)
+advmod(happened-20, ago-22)
+

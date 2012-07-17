@@ -1,0 +1,166 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (MD 'd)
+      (NP (PRP you))
+      (VP (VB read)
+        (NP (DT that))))
+    (. ?)))
+
+advmod(read-4, Where-1)
+aux(read-4, 'd-2)
+nsubj(read-4, you-3)
+root(ROOT-0, read-4)
+dobj(read-4, that-5)
+
+(ROOT
+  (NP (NNP The) (NNP NRA) (NNP Newsletter) (. ?)))
+
+nn(Newsletter-3, The-1)
+nn(Newsletter-3, NRA-2)
+root(ROOT-0, Newsletter-3)
+
+(ROOT
+  (NP
+    (NP
+      (NP (JJ Highest) (NN gun) (JJ related) (NN death))
+      (ADJP (IN per) (NN capita)))
+    (: :)
+    (NP
+      (NP (NNP DC))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NNS guns))
+          (VP (VBP are)
+            (NP
+              (NP (JJ legal) (NN linkLowest) (NN gun))
+              (SBAR
+                (S
+                  (NP
+                    (NP
+                      (NP (VBN related) (NN death))
+                      (PP (IN per)
+                        (NP (NN capita))))
+                    (: :)
+                    (NP (NNP Hawaii))
+                    (, ,)
+                    (SBAR
+                      (WHADVP (WRB where))
+                      (S
+                        (NP (NNS guns))
+                        (VP (VBP are)
+                          (ADJP (JJ illegal))))))
+                  (VP (VBD linkAnd)
+                    (VP (VB see)
+                      (NP
+                        (NP (NNP Xaeon) (POS 's))
+                        (NN arguement))
+                      (ADVP (RB below)))))))))))
+    (. .)))
+
+amod(death-4, Highest-1)
+nn(death-4, gun-2)
+amod(death-4, related-3)
+root(ROOT-0, death-4)
+dep(capita-6, per-5)
+amod(death-4, capita-6)
+dep(death-4, DC-8)
+advmod(gun-15, where-10)
+nsubj(gun-15, guns-11)
+cop(gun-15, are-12)
+amod(gun-15, legal-13)
+nn(gun-15, linkLowest-14)
+rcmod(DC-8, gun-15)
+amod(death-17, related-16)
+nsubj(linkAnd-27, death-17)
+prep_per(death-17, capita-19)
+dep(death-17, Hawaii-21)
+advmod(illegal-26, where-23)
+nsubj(illegal-26, guns-24)
+cop(illegal-26, are-25)
+rcmod(death-17, illegal-26)
+rcmod(Hawaii-21, illegal-26)
+rcmod(gun-15, linkAnd-27)
+xcomp(linkAnd-27, see-28)
+poss(arguement-31, Xaeon-29)
+dobj(see-28, arguement-31)
+advmod(see-28, below-32)
+
+(ROOT
+  (S
+    (NP (NNP Chicago))
+    (VP (VBZ is)
+      (PP (IN like)
+        (NP (CD 15)))
+      (PP (IN on)
+        (NP (DT the) (NN list))))
+    (. .)))
+
+nsubj(is-2, Chicago-1)
+root(ROOT-0, is-2)
+prep_like(is-2, 15-4)
+det(list-7, the-6)
+prep_on(is-2, list-7)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (NN link))
+      (SBAR
+        (FRAG
+          (FRAG (CC And)
+            (S
+              (VP (VBG considering)
+                (NP (DT the) (NN poverty) (NN rate)))))
+          (, ,)
+          (CC and)
+          (FRAG
+            (SBAR (IN that)
+              (S
+                (NP (PRP it))
+                (VP (VBZ 's)
+                  (NP
+                    (NP (DT the) (JJ 3rd) (JJS largest) (NN city))
+                    (PRN (-LRB- -LRB-)
+                      (CC and)
+                      (NP
+                        (NP (RB probably) (DT the) (JJ second))
+                        (ADJP (RBS most) (VBN dense)))
+                      (-RRB- -RRB-))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ 's)
+                          (ADVP (RB actually))
+                          (RB not)
+                          (ADJP (JJ bad)))))))))
+            (. .)))))))
+
+root(ROOT-0, link-1)
+dep(considering-3, And-2)
+dep(link-1, considering-3)
+det(rate-6, the-4)
+nn(rate-6, poverty-5)
+dobj(considering-3, rate-6)
+dep(considering-3, and-8)
+dep(city-15, that-9)
+nsubj(city-15, it-10)
+cop(city-15, 's-11)
+det(city-15, the-12)
+amod(city-15, 3rd-13)
+amod(city-15, largest-14)
+dep(considering-3, city-15)
+nsubj(bad-28, city-15)
+dep(second-20, and-17)
+advmod(second-20, probably-18)
+det(second-20, the-19)
+dep(city-15, second-20)
+advmod(dense-22, most-21)
+amod(second-20, dense-22)
+cop(bad-28, 's-25)
+advmod(bad-28, actually-26)
+neg(bad-28, not-27)
+rcmod(city-15, bad-28)
+

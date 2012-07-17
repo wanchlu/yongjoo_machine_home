@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (NP (NNP Health) (NN care))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ free)
+          (PP (TO to)
+            (NP
+              (NP (DT all))
+              (PP (IN upon)
+                (NP (NN entry))))))
+        (PP (IN like)
+          (NP (DT the) (NNP NHSin) (NNP UK)))))
+    (. .)))
+
+nn(care-2, Health-1)
+nsubj(free-5, care-2)
+aux(free-5, should-3)
+cop(free-5, be-4)
+root(ROOT-0, free-5)
+prep_to(free-5, all-7)
+prep_upon(all-7, entry-9)
+det(UK-13, the-11)
+nn(UK-13, NHSin-12)
+prep_like(free-5, UK-13)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ only) (NN problem))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ private) (NN sector))
+          (VP (VBP take)
+            (S
+              (NP (RB away) (DT the) (NNS resources)
+                (CC and)
+                (NN drug) (NNS companies))
+              (VP (VB rip)
+                (PRT (RP off))
+                (NP (DT the) (NN government))))))))
+    (. .)))
+
+det(problem-3, The-1)
+amod(problem-3, only-2)
+nsubj(is-4, problem-3)
+root(ROOT-0, is-4)
+complm(take-9, that-5)
+det(sector-8, the-6)
+amod(sector-8, private-7)
+nsubj(take-9, sector-8)
+ccomp(is-4, take-9)
+advmod(resources-12, away-10)
+det(resources-12, the-11)
+nsubj(rip-16, resources-12)
+nn(companies-15, drug-14)
+conj_and(resources-12, companies-15)
+nsubj(rip-16, companies-15)
+ccomp(take-9, rip-16)
+prt(rip-16, off-17)
+det(government-19, the-18)
+dobj(rip-16, government-19)
+

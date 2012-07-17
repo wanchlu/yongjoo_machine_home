@@ -1,0 +1,150 @@
+(ROOT
+  (S
+    (NP (NN Single-payer) (NNS systems))
+    (VP
+      (VP (VBP insure)
+        (NP (NNS individuals)))
+      (, ,)
+      (CC but)
+      (VP (VBP do) (RB n't)
+        (VP (VB restrict)
+          (NP
+            (NP (NNS doctors))
+            (SBAR
+              (S
+                (NP (DT A) (JJ universal) (NN health) (NN care) (NN system))
+                (VP (VBZ does) (RB not)
+                  (VP (VB mean)
+                    (SBAR (IN that)
+                      (S
+                        (NP (DT the) (JJ private) (NN market))
+                        (VP (MD should)
+                          (VP (VB be)
+                            (VP (VBN abolished))))))))))))))
+    (. .)))
+
+nn(systems-2, Single-payer-1)
+nsubj(insure-3, systems-2)
+nsubj(restrict-9, systems-2)
+root(ROOT-0, insure-3)
+dobj(insure-3, individuals-4)
+aux(restrict-9, do-7)
+neg(restrict-9, n't-8)
+conj_but(insure-3, restrict-9)
+dobj(restrict-9, doctors-10)
+dobj(mean-18, doctors-10)
+det(system-15, A-11)
+amod(system-15, universal-12)
+nn(system-15, health-13)
+nn(system-15, care-14)
+nsubj(mean-18, system-15)
+aux(mean-18, does-16)
+neg(mean-18, not-17)
+rcmod(doctors-10, mean-18)
+complm(abolished-25, that-19)
+det(market-22, the-20)
+amod(market-22, private-21)
+nsubjpass(abolished-25, market-22)
+aux(abolished-25, should-23)
+auxpass(abolished-25, be-24)
+ccomp(mean-18, abolished-25)
+
+(ROOT
+  (S
+    (NP (NNS Doctors))
+    (VP (MD can)
+      (VP (VBZ chooses)
+        (S
+          (VP (TO to)
+            (VP (VB operate)
+              (NP (JJ private) (NNS practices))
+              (PP (IN in)
+                (NP (DT a) (JJ two-tier) (NN system))))))))
+    (. .)))
+
+nsubj(chooses-3, Doctors-1)
+xsubj(operate-5, Doctors-1)
+aux(chooses-3, can-2)
+root(ROOT-0, chooses-3)
+aux(operate-5, to-4)
+xcomp(chooses-3, operate-5)
+amod(practices-7, private-6)
+dobj(operate-5, practices-7)
+det(system-11, a-9)
+amod(system-11, two-tier-10)
+prep_in(operate-5, system-11)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (MD will)
+      (VP (VB attract)
+        (NP
+          (NP
+            (NP (NNS consumers))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP require)
+                  (NP (DT either)
+                    (ADJP (RBR more) (JJ personal))
+                    (NN service))))))
+          (, ,)
+          (NP
+            (NP (DT those))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP know)
+                  (CC or)
+                  (VBP want)
+                  (NP (DT a) (JJ personal) (NN doctor))))))
+          (, ,)
+          (CC and)
+          (NP
+            (NP (DT those))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP want)
+                  (NP
+                    (NP (JJR better) (NN quality))
+                    (PP (IN of)
+                      (NP (NN care))))
+                  (SBAR (IN than)
+                    (S
+                      (NP (DT the) (JJ public) (NN system))
+                      (VP (VBZ provides)))))))))))
+    (. .)))
+
+nsubj(attract-3, This-1)
+aux(attract-3, will-2)
+root(ROOT-0, attract-3)
+dobj(attract-3, consumers-4)
+nsubj(require-6, consumers-4)
+rcmod(consumers-4, require-6)
+det(service-10, either-7)
+advmod(personal-9, more-8)
+amod(service-10, personal-9)
+dobj(require-6, service-10)
+conj_and(consumers-4, those-12)
+nsubj(know-14, those-12)
+nsubj(want-16, those-12)
+rcmod(those-12, know-14)
+rcmod(those-12, want-16)
+conj_or(know-14, want-16)
+det(doctor-19, a-17)
+amod(doctor-19, personal-18)
+dobj(know-14, doctor-19)
+conj_and(consumers-4, those-22)
+nsubj(want-24, those-22)
+rcmod(those-22, want-24)
+amod(quality-26, better-25)
+dobj(want-24, quality-26)
+prep_of(quality-26, care-28)
+mark(provides-33, than-29)
+det(system-32, the-30)
+amod(system-32, public-31)
+nsubj(provides-33, system-32)
+advcl(want-24, provides-33)
+

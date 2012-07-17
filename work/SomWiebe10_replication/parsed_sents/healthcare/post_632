@@ -1,0 +1,509 @@
+(ROOT
+  (S
+    (NP (JJ Free) (NN health) (NN care))
+    (VP (VBZ is) (RB n't)
+      (ADJP (`` ``) (JJ free) ('' '')))
+    (. .)))
+
+amod(care-3, Free-1)
+nn(care-3, health-2)
+nsubj(free-7, care-3)
+cop(free-7, is-4)
+neg(free-7, n't-5)
+root(ROOT-0, free-7)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH No))
+      (NP (PRP you))
+      (VP (VBP do) (RB n't)
+        (VP (VB have)
+          (S
+            (VP (TO to)
+              (VP (VB pay)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP you))
+                    (VP (VBP go)
+                      (PP (TO to)
+                        (NP
+                          (NP (DT the) (NN doctor) (POS 's))
+                          (NN office))))))))))))
+    (CC but)
+    (S
+      (NP (NN somebody))
+      (VP (VBZ does)))
+    (. .)))
+
+dep(have-5, No-1)
+nsubj(have-5, you-2)
+xsubj(pay-7, you-2)
+aux(have-5, do-3)
+neg(have-5, n't-4)
+root(ROOT-0, have-5)
+aux(pay-7, to-6)
+xcomp(have-5, pay-7)
+advmod(go-10, when-8)
+nsubj(go-10, you-9)
+advcl(pay-7, go-10)
+det(doctor-13, the-12)
+poss(office-15, doctor-13)
+prep_to(go-10, office-15)
+nsubj(does-18, somebody-17)
+conj_but(have-5, does-18)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBG working)
+          (PP (IN at)
+            (NP (DT a) (NN loss)))
+          (S
+            (VP (TO to)
+              (VP (VB help)
+                (NP (PRP you))
+                (PP (IN but)
+                  (SBARQ
+                    (WHNP (WP what))
+                    (SQ (MD would)
+                      (NP (PRP you))
+                      (VP (VB be)
+                        (VP (VBG doing)
+                          (S
+                            (VP (TO to)
+                              (VP (VB help)
+                                (NP (PRP them))))))))
+                    (. ?)))))))))))
+
+nsubj(working-4, They-1)
+aux(working-4, would-2)
+aux(working-4, be-3)
+root(ROOT-0, working-4)
+det(loss-7, a-6)
+prep_at(working-4, loss-7)
+aux(help-9, to-8)
+xcomp(working-4, help-9)
+dobj(help-9, you-10)
+prep(help-9, but-11)
+dobj(doing-16, what-12)
+aux(doing-16, would-13)
+nsubj(doing-16, you-14)
+aux(doing-16, be-15)
+dep(but-11, doing-16)
+aux(help-18, to-17)
+xcomp(doing-16, help-18)
+dobj(help-18, them-19)
+
+(ROOT
+  (SQ
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNP Rather))
+      (PP (IN than)
+        (S
+          (VP (VBG having)
+            (NP
+              (NP (`` ``) (JJ free) ('' '') (NN healthcare))
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (VBP believe)
+                    (SBAR
+                      (S
+                        (NP (NNS doctors))
+                        (VP (MD should)
+                          (VP (VB be)
+                            (VP (VBN restricted)
+                              (PP (IN on)
+                                (NP (PRP$ their) (NNS fees))))))))))))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, Rather-3)
+prepc_than(\/-1, having-5)
+amod(healthcare-9, free-7)
+dobj(having-5, healthcare-9)
+nsubj(believe-11, I-10)
+rcmod(healthcare-9, believe-11)
+nsubjpass(restricted-15, doctors-12)
+aux(restricted-15, should-13)
+auxpass(restricted-15, be-14)
+ccomp(believe-11, restricted-15)
+poss(fees-18, their-17)
+prep_on(restricted-15, fees-18)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (MD should) (RB n't)
+      (VP (VB be)
+        (VP (VBN allowed)
+          (S
+            (VP (TO to)
+              (VP (VB charge)
+                (NP ($ $) (CD 200))
+                (PRN (-LRB- -LRB-)
+                  (S
+                    (VP (VB give)
+                      (CC or)
+                      (VB take)))
+                  (-RRB- -RRB-))
+                (SBAR (IN for)
+                  (S
+                    (NP (PRP them))
+                    (VP (TO to)
+                      (VP
+                        (VP (VB come)
+                          (PRT (RP in)))
+                        (CC and)
+                        (VP (VB say) ('' '')
+                          (S
+                            (NP (PRP I))
+                            (VP (VBP do) (RB n't)
+                              (VP (VB know))))
+                          (SBAR
+                            (WHNP (WP what))
+                            (S
+                              (VP (VBZ 's)
+                                (ADJP (JJ wrong))))))))))))))))
+    (. .)))
+
+nsubjpass(allowed-5, They-1)
+aux(allowed-5, should-2)
+neg(allowed-5, n't-3)
+auxpass(allowed-5, be-4)
+root(ROOT-0, allowed-5)
+aux(charge-7, to-6)
+xcomp(allowed-5, charge-7)
+dobj(charge-7, $-8)
+num($-8, 200-9)
+parataxis(charge-7, give-11)
+parataxis(charge-7, take-13)
+conj_or(give-11, take-13)
+mark(come-18, for-15)
+nsubj(come-18, them-16)
+nsubj(say-21, them-16)
+aux(come-18, to-17)
+advcl(charge-7, come-18)
+xcomp(charge-7, come-18)
+prt(come-18, in-19)
+advcl(charge-7, say-21)
+xcomp(charge-7, say-21)
+conj_and(come-18, say-21)
+nsubj(know-26, I-23)
+aux(know-26, do-24)
+neg(know-26, n't-25)
+ccomp(say-21, know-26)
+nsubj(wrong-29, what-27)
+cop(wrong-29, 's-28)
+ccomp(say-21, wrong-29)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NN doctor))
+        (VP (VBZ 's)
+          (VP (VBN worked)
+            (PP (IN for)
+              (ADJP (JJ free)))
+            (ADVP (RB eventually))))))
+    (NP (EX there))
+    (VP (MD would)
+      (VP (VB be)
+        (NP (DT no) (NNS doctors))
+        (, ,)
+        (ADVP (RB especially))
+        (PP (IN with)
+          (NP (DT the) (JJ drastic) (NN inflation)))))
+    (. .)))
+
+mark(worked-4, If-1)
+nsubjpass(worked-4, doctor-2)
+auxpass(worked-4, 's-3)
+advcl(doctors-12, worked-4)
+prep_for(worked-4, free-6)
+advmod(worked-4, eventually-7)
+expl(doctors-12, there-8)
+aux(doctors-12, would-9)
+cop(doctors-12, be-10)
+det(doctors-12, no-11)
+root(ROOT-0, doctors-12)
+advmod(doctors-12, especially-14)
+det(inflation-18, the-16)
+amod(inflation-18, drastic-17)
+prep_with(doctors-12, inflation-18)
+
+(ROOT
+  (S (IN So)
+    (ADVP (RB technically))
+    (NP (DT the) (NN government))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBG paying)
+          (PP (IN for)
+            (NP
+              (NP (PRP it))
+              (CC and)
+              (NP
+                (NP (DT the) (NN money))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ pays)
+                      (SBAR (IN for)
+                        (S
+                          (NP (PRP it))
+                          (VP (VBZ is)
+                            (VP (VBN taken)
+                              (PRT (RP out))
+                              (PP (IN of)
+                                (NP (NNS taxes))))))))))))))))
+    (. .)))
+
+dep(paying-7, So-1)
+advmod(paying-7, technically-2)
+det(government-4, the-3)
+nsubj(paying-7, government-4)
+aux(paying-7, would-5)
+aux(paying-7, be-6)
+root(ROOT-0, paying-7)
+prep_for(paying-7, it-9)
+det(money-12, the-11)
+prep_for(paying-7, money-12)
+conj_and(it-9, money-12)
+nsubj(pays-14, money-12)
+rcmod(money-12, pays-14)
+mark(taken-18, for-15)
+nsubjpass(taken-18, it-16)
+auxpass(taken-18, is-17)
+advcl(pays-14, taken-18)
+prep_out_of(taken-18, taxes-21)
+
+(ROOT
+  (S
+    (ADVP (RB Basically))
+    (NP (NN everyone))
+    (VP (VBZ is)
+      (VP (VBG paying)
+        (PP (IN for)
+          (NP (NN everyone) (RB else)))))
+    (. .)))
+
+advmod(paying-4, Basically-1)
+nsubj(paying-4, everyone-2)
+aux(paying-4, is-3)
+root(ROOT-0, paying-4)
+prep_for(paying-4, everyone-6)
+advmod(everyone-6, else-7)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD would)
+      (NP (PRP you))
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP
+                (NP (PRP$ your) (NN money))
+                (VP (VBN taken)
+                  (PRT (RP out))
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP you))
+                      (ADVP (RB very)
+                        (ADVP (RB rarely)))
+                      (VP (VBP need)
+                        (S
+                          (VP (TO to)
+                            (VP
+                              (VP (VB go)
+                                (PP (TO to)
+                                  (NP (DT the) (NN doctor))))
+                              (CC and)
+                              (VP (VB have)
+                                (S
+                                  (NP (PRP it))
+                                  (VP (VB pay)
+                                    (PP (IN for)
+                                      (NP (NN someone)))))))))))))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ goes)
+                      (PP (TO to)
+                        (NP (DT the) (NN doctor)))
+                      (NP
+                        (NP (DT every) (NN time))
+                        (SBAR
+                          (S
+                            (NP (PRP they))
+                            (VP (VBP sneeze))))))))))))))
+    (. ?)))
+
+advmod(want-4, Why-1)
+aux(want-4, would-2)
+nsubj(want-4, you-3)
+xsubj(have-6, you-3)
+root(ROOT-0, want-4)
+aux(have-6, to-5)
+xcomp(want-4, have-6)
+poss(money-8, your-7)
+dobj(have-6, money-8)
+partmod(money-8, taken-9)
+prt(taken-9, out-10)
+mark(need-15, if-11)
+nsubj(need-15, you-12)
+xsubj(go-17, you-12)
+advmod(rarely-14, very-13)
+advmod(need-15, rarely-14)
+advcl(taken-9, need-15)
+aux(go-17, to-16)
+xcomp(need-15, go-17)
+det(doctor-20, the-19)
+prep_to(go-17, doctor-20)
+xcomp(need-15, have-22)
+conj_and(go-17, have-22)
+nsubj(pay-24, it-23)
+ccomp(have-22, pay-24)
+prep_for(pay-24, someone-26)
+nsubj(goes-28, who-27)
+rcmod(money-8, goes-28)
+det(doctor-31, the-30)
+prep_to(goes-28, doctor-31)
+det(time-33, every-32)
+dobj(goes-28, time-33)
+dobj(sneeze-35, time-33)
+nsubj(sneeze-35, they-34)
+rcmod(time-33, sneeze-35)
+
+(ROOT
+  (S
+    (S
+      (VP
+        (VP (VB \/) (-RRB- -RRB-)
+          (NP (NNP Free))
+          (PP (VBN healthcare)
+            (SBAR
+              (S
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT the) (NN beginning))
+                    (PP (IN of)
+                      (NP (NN communism)))))))))
+        (CC and)
+        (VP (VB communism))))
+    (VP (VBZ does) (RB n't)
+      (VP (VB work)))
+    (. .)))
+
+csubj(work-14, \/-1)
+dobj(\/-1, Free-3)
+prep(\/-1, healthcare-4)
+cop(beginning-7, is-5)
+det(beginning-7, the-6)
+pcomp(healthcare-4, beginning-7)
+prep_of(beginning-7, communism-9)
+conj_and(\/-1, communism-11)
+csubj(work-14, communism-11)
+aux(work-14, does-12)
+neg(work-14, n't-13)
+root(ROOT-0, work-14)
+
+(ROOT
+  (S
+    (NP
+      (ADVP (PRP You))
+      (NP (NNS people))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP believe)
+            (SBAR
+              (S
+                (NP (NN healthcare))
+                (VP (MD should)
+                  (VP (VB be)
+                    (ADJP (JJ free))))))))))
+    (VP (VBP are)
+      (VP (VBG fooling)
+        (NP (NNS yourselves))))
+    (. .)))
+
+advmod(people-2, You-1)
+nsubj(believe-4, people-2)
+nsubj(fooling-10, people-2)
+rcmod(people-2, believe-4)
+nsubj(free-8, healthcare-5)
+aux(free-8, should-6)
+cop(free-8, be-7)
+ccomp(believe-4, free-8)
+aux(fooling-10, are-9)
+root(ROOT-0, fooling-10)
+dobj(fooling-10, yourselves-11)
+
+(ROOT
+  (S
+    (NP (NN Nothing))
+    (VP (VBZ is)
+      (ADJP (JJ free)
+        (PP (IN except)
+          (NP (DT the) (NN air) (NN you) (NN breath)))))
+    (. .)))
+
+nsubj(free-3, Nothing-1)
+cop(free-3, is-2)
+root(ROOT-0, free-3)
+det(breath-8, the-5)
+nn(breath-8, air-6)
+nn(breath-8, you-7)
+prep_except(free-3, breath-8)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN money)
+        (S
+          (VP (TO to)
+            (VP (VB pay)
+              (NP (DT the) (NNS doctors))
+              (PP (IN for)
+                (NP (PRP$ their) (NNS services)))))))
+      (VP (MD must)
+        (VP (VB come)
+          (PP (IN from)
+            (NP (RB somewhere))))))
+    (, ,)
+    (ADVP (RB otherwise))
+    (S
+      (NP (DT the) (NNS doctors))
+      (VP (MD could) (RB n't)
+        (VP (VB support)
+          (NP (PRP themselves)))))
+    (. .)))
+
+det(money-2, The-1)
+nsubj(come-11, money-2)
+aux(pay-4, to-3)
+infmod(money-2, pay-4)
+det(doctors-6, the-5)
+dobj(pay-4, doctors-6)
+poss(services-9, their-8)
+prep_for(pay-4, services-9)
+aux(come-11, must-10)
+root(ROOT-0, come-11)
+prep(come-11, from-12)
+pobj(from-12, somewhere-13)
+advmod(come-11, otherwise-15)
+det(doctors-17, the-16)
+nsubj(support-20, doctors-17)
+aux(support-20, could-18)
+neg(support-20, n't-19)
+ccomp(come-11, support-20)
+dobj(support-20, themselves-21)
+

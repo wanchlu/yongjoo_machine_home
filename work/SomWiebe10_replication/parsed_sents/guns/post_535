@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (SBAR (IN Although)
+      (S
+        (NP (DT the) (NN information))
+        (VP
+          (VP (VBD presented)
+            (SBAR
+              (S
+                (VP (VBZ is)
+                  (ADJP (JJ limited))))))
+          (CC and)
+          (VP (MD can)
+            (VP (VB be)
+              (VP (VBN challenged)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP wonder)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP
+            (NP (DT the) (NNS nations))
+            (PP (IN in)
+              (NP (NNP Africa))))
+          (VP (VBP are)
+            (VP (VBN omitted)
+              (S
+                (ADJP (JJ ???))))))))))
+
+mark(presented-4, Although-1)
+det(information-3, the-2)
+nsubj(presented-4, information-3)
+nsubjpass(challenged-10, information-3)
+advcl(wonder-13, presented-4)
+cop(limited-6, is-5)
+ccomp(presented-4, limited-6)
+aux(challenged-10, can-8)
+auxpass(challenged-10, be-9)
+conj_and(presented-4, challenged-10)
+advcl(wonder-13, challenged-10)
+nsubj(wonder-13, I-12)
+root(ROOT-0, wonder-13)
+advmod(omitted-20, why-14)
+det(nations-16, the-15)
+nsubjpass(omitted-20, nations-16)
+prep_in(nations-16, Africa-18)
+auxpass(omitted-20, are-19)
+advcl(wonder-13, omitted-20)
+acomp(omitted-20, ???-21)
+
+(ROOT
+  (S
+    (PP (RB Just)
+      (PP (IN about)
+        (NP
+          (NP (DT every) (NN nation))
+          (SBAR
+            (S
+              (NP (EX there))
+              (VP (VBZ prohibits)
+                (NP (JJ personal) (NNS firearms))))))))
+    (, ,)
+    (ADVP (RB yet))
+    (, ,)
+    (NP (DT the) (NN murder) (NN rate))
+    (VP (VBZ borders)
+      (PP (IN on)
+        (NP
+          (NP (NN genocide))
+          (PP (IN in)
+            (NP (JJ many) (NNS areas))))))
+    (. .)))
+
+advmod(borders-15, Just-1)
+advcl(borders-15, about-2)
+det(nation-4, every-3)
+prep_about(borders-15, nation-4)
+expl(prohibits-6, there-5)
+rcmod(nation-4, prohibits-6)
+amod(firearms-8, personal-7)
+dobj(prohibits-6, firearms-8)
+nsubj(prohibits-6, firearms-8)
+advmod(borders-15, yet-10)
+det(rate-14, the-12)
+nn(rate-14, murder-13)
+nsubj(borders-15, rate-14)
+root(ROOT-0, borders-15)
+prep_on(borders-15, genocide-17)
+amod(areas-20, many-19)
+prep_in(genocide-17, areas-20)
+

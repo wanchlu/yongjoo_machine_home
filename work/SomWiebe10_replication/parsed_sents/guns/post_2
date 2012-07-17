@@ -1,0 +1,125 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJR better))
+      (S
+        (VP (TO to)
+          (VP (VB arm)
+            (NP (NNS pilots)
+              (CC and)
+              (NN risk) (NN abuse))
+            (PP (IN than)
+              (NP (NN risk)
+                (QP (DT another) (CD 9\/11))))))))
+    (. .)))
+
+nsubj(better-3, It-1)
+xsubj(arm-5, It-1)
+cop(better-3, 's-2)
+root(ROOT-0, better-3)
+aux(arm-5, to-4)
+xcomp(better-3, arm-5)
+dobj(arm-5, pilots-6)
+nn(abuse-9, risk-8)
+dobj(arm-5, abuse-9)
+conj_and(pilots-6, abuse-9)
+prep_than(arm-5, risk-11)
+quantmod(9\/11-13, another-12)
+num(risk-11, 9\/11-13)
+
+(ROOT
+  (S
+    (NP (NNP Dave) (NNP Kopel)
+      (CC &)
+      (NNP David))
+    (VP (VBZ Petteys))
+    (. .)))
+
+nn(Kopel-2, Dave-1)
+nsubj(Petteys-5, Kopel-2)
+conj_and(Kopel-2, David-4)
+nsubj(Petteys-5, David-4)
+root(ROOT-0, Petteys-5)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Air))
+    (VP (VBP Neglect) ('' ''))
+    (. .)))
+
+nsubj(Neglect-3, Air-2)
+root(ROOT-0, Neglect-3)
+
+(ROOT
+  (NP (NNP National) (NNP Review) (NNP Online) (. .)))
+
+nn(Online-3, National-1)
+nn(Online-3, Review-2)
+root(ROOT-0, Online-3)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP July) (CD 2) (, ,) (CD 2003))
+        (NP (`` ``) (DT the) (NN airline) (NNS executives)))
+      (VP (MD would) (RB rather)
+        (VP
+          (VP (VB risk)
+            (NP
+              (QP (DT another) (CD 9\/11))))
+          (IN than)
+          (VP (VB take)
+            (NP (DT the)
+              (PRN (-LRB- -LRB-)
+                (ADJP (JJ tiny))
+                (-RRB- -RRB-))
+              (NN chance)))
+          (SBAR (IN that)
+            (S
+              (NP (DT an) (JJ armed) (NN pilot))
+              (VP (MD might)
+                (VP (VB use)
+                  (NP (PRP$ his) (NN gun))
+                  (ADVP (RB illegally)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (DT the) (NN airline))
+      (VP (MD might)
+        (VP (VB be)
+          (VP (VBN sued)))))
+    (. .)))
+
+nsubj(risk-11, July-1)
+num(July-1, 2-2)
+num(July-1, 2003-4)
+det(executives-8, the-6)
+nn(executives-8, airline-7)
+dep(July-1, executives-8)
+aux(risk-11, would-9)
+advmod(risk-11, rather-10)
+root(ROOT-0, risk-11)
+quantmod(9\/11-13, another-12)
+dobj(risk-11, 9\/11-13)
+dep(risk-11, than-14)
+dep(risk-11, take-15)
+det(chance-20, the-16)
+dep(chance-20, tiny-18)
+dobj(take-15, chance-20)
+dep(use-26, that-21)
+det(pilot-24, an-22)
+amod(pilot-24, armed-23)
+nsubj(use-26, pilot-24)
+aux(use-26, might-25)
+ccomp(risk-11, use-26)
+poss(gun-28, his-27)
+dobj(use-26, gun-28)
+advmod(use-26, illegally-29)
+det(airline-33, the-32)
+nsubjpass(sued-36, airline-33)
+aux(sued-36, might-34)
+auxpass(sued-36, be-35)
+conj_and(risk-11, sued-36)
+

@@ -1,0 +1,125 @@
+(ROOT
+  (NP
+    (NP
+      (ADVP (RB Right)
+        (PP (TO to)
+          (NP (NN bear) (NNS arms))))
+      (NP (JJ second) (NN amendment))
+      (PP (IN of)
+        (NP (DT the) (NN constitution))))
+    (. .)))
+
+advmod(amendment-6, Right-1)
+nn(arms-4, bear-3)
+prep_to(Right-1, arms-4)
+amod(amendment-6, second-5)
+root(ROOT-0, amendment-6)
+det(constitution-9, the-8)
+prep_of(amendment-6, constitution-9)
+
+(ROOT
+  (S
+    (NP (NNS weapons))
+    (VP (VBP are)
+      (VP (VBN used)
+        (PP (IN for)
+          (NP (JJ many) (NNS reasons)))
+        (NP (DT these) (NNS days))))
+    (. .)))
+
+nsubjpass(used-3, weapons-1)
+auxpass(used-3, are-2)
+root(ROOT-0, used-3)
+amod(reasons-6, many-5)
+prep_for(used-3, reasons-6)
+det(days-8, these-7)
+tmod(used-3, days-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT some) (NN use) (NNS weapons))
+      (PP (IN for)
+        (NP
+          (NP (NN sport))
+          (SBAR
+            (S
+              (NP (DT some))
+              (VP (VBP use)
+                (NP (PRP them))
+                (PP (IN for))))))))
+    (VP (VBZ looks)
+      (S
+        (NP (DT some))
+        (VP (VB use)
+          (NP (PRP them))
+          (PP (IN for)
+            (NP (NN fun))))))
+    (. .)))
+
+det(weapons-3, some-1)
+nn(weapons-3, use-2)
+nsubj(looks-10, weapons-3)
+prep_for(weapons-3, sport-5)
+nsubj(use-7, some-6)
+rcmod(sport-5, use-7)
+dobj(use-7, them-8)
+prep(use-7, for-9)
+root(ROOT-0, looks-10)
+nsubj(use-12, some-11)
+ccomp(looks-10, use-12)
+dobj(use-12, them-13)
+prep_for(use-12, fun-15)
+
+(ROOT
+  (SBAR (IN although)
+    (S
+      (NP (DT some) (NNS people))
+      (VP (VBP have)
+        (VP (VBN killed)
+          (NP (NNS people))
+          (PP (IN with)
+            (NP
+              (NP (NNS guns))
+              (ADVP (RB also))
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (VBP shouldnt)
+                    (S
+                      (VP (VB take)
+                        (NP (PRP$ our) (JJ constitutional) (NNS rights))
+                        (ADVP (RB away))
+                        (VP (VB do)
+                          (PP (TO to)
+                            (NP (DT a) (JJ few)
+                              (ADJP (RB mentally) (JJ psychotic)
+                                (CC or)
+                                (JJ duranged))
+                              (NNS people))))))))))))))))
+
+mark(killed-5, although-1)
+det(people-3, some-2)
+nsubj(killed-5, people-3)
+aux(killed-5, have-4)
+root(ROOT-0, killed-5)
+dobj(killed-5, people-6)
+prep_with(killed-5, guns-8)
+dobj(shouldnt-11, guns-8)
+advmod(guns-8, also-9)
+nsubj(shouldnt-11, we-10)
+rcmod(guns-8, shouldnt-11)
+ccomp(shouldnt-11, take-12)
+poss(rights-15, our-13)
+amod(rights-15, constitutional-14)
+dobj(take-12, rights-15)
+advmod(take-12, away-16)
+dep(take-12, do-17)
+det(people-25, a-19)
+amod(people-25, few-20)
+advmod(psychotic-22, mentally-21)
+amod(people-25, psychotic-22)
+conj_or(psychotic-22, duranged-24)
+amod(people-25, duranged-24)
+prep_to(do-17, people-25)
+

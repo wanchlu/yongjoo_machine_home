@@ -1,0 +1,736 @@
+(ROOT
+  (S
+    (NP (DT The) (NN insurance) (NNS companies))
+    (VP (VBP have)
+      (ADVP (RB already))
+      (VP (VBN usurped)
+        (NP (DT the) (NNS doctors))
+        (PP (IN by)
+          (S
+            (VP (VBG mandating)
+              (NP (NNS treatments)))))
+        (, ,)
+        (PP (IN while)
+          (S
+            (VP (VBG leaving)
+              (S
+                (NP (DT the) (NNS docs))
+                (ADJP (JJ liable)
+                  (PP (IN for)
+                    (NP
+                      (NP (DT the) (JJ legal) (NNS ramifications))
+                      (PP (IN of)
+                        (NP (PRP$ their) (NN practice))))))))))))
+    (. .)))
+
+det(companies-3, The-1)
+nn(companies-3, insurance-2)
+nsubj(usurped-6, companies-3)
+aux(usurped-6, have-4)
+advmod(usurped-6, already-5)
+root(ROOT-0, usurped-6)
+det(doctors-8, the-7)
+dobj(usurped-6, doctors-8)
+prepc_by(usurped-6, mandating-10)
+dobj(mandating-10, treatments-11)
+prepc_while(usurped-6, leaving-14)
+det(docs-16, the-15)
+nsubj(liable-17, docs-16)
+xcomp(leaving-14, liable-17)
+det(ramifications-21, the-19)
+amod(ramifications-21, legal-20)
+prep_for(liable-17, ramifications-21)
+poss(practice-24, their-23)
+prep_of(ramifications-21, practice-24)
+
+(ROOT
+  (SBARQ
+    (WHADVP (RB Just) (WRB why))
+    (SQ (VBP are)
+      (NP
+        (NP (DT the) (NN insurance) (NNS companies))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NN way))
+            (PP (IN for)
+              (NP (NN health) (NN care)))))))
+    (. ?)))
+
+advmod(why-2, Just-1)
+advmod(are-3, why-2)
+root(ROOT-0, are-3)
+det(companies-6, the-4)
+nn(companies-6, insurance-5)
+nsubj(are-3, companies-6)
+det(way-9, the-8)
+prep_in(companies-6, way-9)
+nn(care-12, health-11)
+prep_for(way-9, care-12)
+
+(ROOT
+  (S
+    (VP (VB Imagine)
+      (SBAR
+        (SBAR (IN if)
+          (S
+            (NP (DT the) (NN healthcare) (NN industry))
+            (VP (VBD did) (RB n't)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB make)
+                      (S
+                        (NP (DT the) (NNS doctors))
+                        (VP (VB pay)
+                          (PP (IN for)
+                            (NP (PRP$ their) (NN insurance) (NN coverage))))))))))))
+        (, ,)
+        (CC and)
+        (SBAR (IN if)
+          (S
+            (NP (DT the) (NN public))
+            (VP (VBD did) (RB n't)
+              (VP (VB have)
+                (S
+                  (VP (TO to)
+                    (VP (VB pay)
+                      (PP (IN for)
+                        (NP
+                          (NP (DT the) (VBN mandated) (NN administration) (NNS costs))
+                          (CC and)
+                          (NP
+                            (NP (NNS directives))
+                            (PP (IN for)
+                              (NP
+                                (NP (NN treatment))
+                                (PP (IN of)
+                                  (NP (NNS patients)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, Imagine-1)
+mark(have-8, if-2)
+det(industry-5, the-3)
+nn(industry-5, healthcare-4)
+nsubj(have-8, industry-5)
+xsubj(make-10, industry-5)
+aux(have-8, did-6)
+neg(have-8, n't-7)
+dep(Imagine-1, have-8)
+aux(make-10, to-9)
+xcomp(have-8, make-10)
+det(doctors-12, the-11)
+nsubj(pay-13, doctors-12)
+ccomp(make-10, pay-13)
+poss(coverage-17, their-15)
+nn(coverage-17, insurance-16)
+prep_for(pay-13, coverage-17)
+mark(have-25, if-20)
+det(public-22, the-21)
+nsubj(have-25, public-22)
+xsubj(pay-27, public-22)
+aux(have-25, did-23)
+neg(have-25, n't-24)
+dep(Imagine-1, have-25)
+conj_and(have-8, have-25)
+aux(pay-27, to-26)
+xcomp(have-25, pay-27)
+det(costs-32, the-29)
+amod(costs-32, mandated-30)
+nn(costs-32, administration-31)
+prep_for(pay-27, costs-32)
+prep_for(pay-27, directives-34)
+conj_and(costs-32, directives-34)
+prep_for(directives-34, treatment-36)
+prep_of(treatment-36, patients-38)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Imagine)
+        (NP (DT a) (NN place))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (NN everyone))
+            (VP (VBD did) (RB n't)
+              (VP (VB work)
+                (PP (IN for)))))))
+      (CC and)
+      (VP (VB pay)
+        (NP (DT the) (NN insurance) (NNS companies))))
+    (. .)))
+
+root(ROOT-0, Imagine-1)
+det(place-3, a-2)
+dobj(Imagine-1, place-3)
+advmod(work-8, where-4)
+nsubj(work-8, everyone-5)
+aux(work-8, did-6)
+neg(work-8, n't-7)
+advcl(Imagine-1, work-8)
+prep(work-8, for-9)
+conj_and(Imagine-1, pay-11)
+det(companies-14, the-12)
+nn(companies-14, insurance-13)
+dobj(pay-11, companies-14)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ sweet) (NN pot))
+        (SBAR
+          (S
+            (NP (DT the) (NN insurance) (NNS companies))
+            (VP (MD would)
+              (VP (VB have)
+                (S
+                  (NP (PRP us))
+                  (VP (VB do)))))))))
+    (. .)))
+
+nsubj(pot-5, That-1)
+cop(pot-5, is-2)
+det(pot-5, the-3)
+amod(pot-5, sweet-4)
+root(ROOT-0, pot-5)
+dobj(have-10, pot-5)
+det(companies-8, the-6)
+nn(companies-8, insurance-7)
+nsubj(have-10, companies-8)
+aux(have-10, would-9)
+rcmod(pot-5, have-10)
+nsubj(do-12, us-11)
+ccomp(have-10, do-12)
+
+(ROOT
+  (SQ
+    (VP (VB Get)
+      (NP
+        (NP (JJ sick))
+        (, ,)
+        (CC and)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do)
+              (SBAR
+                (S
+                  (NP (PRP you))
+                  (VP (VBP call)))))))))
+    (. ?)))
+
+root(ROOT-0, Get-1)
+dobj(Get-1, sick-2)
+nsubj(do-6, who-5)
+dobj(Get-1, do-6)
+conj_and(sick-2, do-6)
+rcmod(sick-2, do-6)
+nsubj(call-8, you-7)
+ccomp(do-6, call-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT Some))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN insurance) (NNS companies))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are) (`` ``)
+                (VP (VBN supposed) ('' '')
+                  (S
+                    (VP (TO to)
+                      (VP (VB provide)
+                        (SBAR
+                          (S
+                            (NP (DT the) (NN health) (NN care) (NN everyone))
+                            (VP (VBZ pays)
+                              (PP (IN for)))))))))))))))
+    (, ,)
+    (VP (MD would)
+      (VP (VB have)
+        (S
+          (NP (PRP you))
+          (VP (VB get)
+            (ADJP (`` ``) (JJ preapproval) ('' '')
+              (S
+                (VP (TO to)
+                  (VP (VB call)
+                    (NP (DT an) (NN ambulance))))))))))
+    (. .)))
+
+nsubj(have-21, Some-1)
+det(companies-5, the-3)
+nn(companies-5, insurance-4)
+prep_of(Some-1, companies-5)
+nsubjpass(supposed-9, companies-5)
+auxpass(supposed-9, are-7)
+rcmod(companies-5, supposed-9)
+aux(provide-12, to-11)
+xcomp(supposed-9, provide-12)
+det(everyone-16, the-13)
+nn(everyone-16, health-14)
+nn(everyone-16, care-15)
+nsubj(pays-17, everyone-16)
+ccomp(provide-12, pays-17)
+prep(pays-17, for-18)
+aux(have-21, would-20)
+root(ROOT-0, have-21)
+nsubj(preapproval-25, you-22)
+dep(preapproval-25, get-23)
+ccomp(have-21, preapproval-25)
+aux(call-28, to-27)
+xcomp(preapproval-25, call-28)
+det(ambulance-30, an-29)
+dobj(call-28, ambulance-30)
+
+(ROOT
+  (S
+    (ADVP (RB Too) (RB bad))
+    (NP (DT the) (NN insurance) (NN company))
+    (VP (VBD did) (RB n't)
+      (VP (VB contract)
+        (NP (DT an) (NN ambulance) (NN company))
+        (PP (IN in)
+          (NP (PRP$ your) (NN region)))))
+    (. .)))
+
+advmod(bad-2, Too-1)
+advmod(contract-8, bad-2)
+det(company-5, the-3)
+nn(company-5, insurance-4)
+nsubj(contract-8, company-5)
+aux(contract-8, did-6)
+neg(contract-8, n't-7)
+root(ROOT-0, contract-8)
+det(company-11, an-9)
+nn(company-11, ambulance-10)
+dobj(contract-8, company-11)
+poss(region-14, your-13)
+prep_in(contract-8, region-14)
+
+(ROOT
+  (S
+    (ADVP (RB Too) (RB bad))
+    (NP (PRP you))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB wait)
+            (PP (IN for)
+              (NP (DT the) (JJ particular) (NN ambulance))))))
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ available))
+            (SBAR (IN while)
+              (S
+                (NP (PRP you))
+                (VP (VBP have)
+                  (NP (PRP$ your) (NN heart) (NN attack)))))))))
+    (. .)))
+
+advmod(bad-2, Too-1)
+advmod(have-4, bad-2)
+nsubj(have-4, you-3)
+xsubj(wait-6, you-3)
+xsubj(available-13, you-3)
+root(ROOT-0, have-4)
+aux(wait-6, to-5)
+xcomp(have-4, wait-6)
+det(ambulance-10, the-8)
+amod(ambulance-10, particular-9)
+prep_for(wait-6, ambulance-10)
+aux(available-13, to-11)
+cop(available-13, be-12)
+xcomp(have-4, available-13)
+mark(have-16, while-14)
+nsubj(have-16, you-15)
+advcl(available-13, have-16)
+poss(attack-19, your-17)
+nn(attack-19, heart-18)
+dobj(have-16, attack-19)
+
+(ROOT
+  (S
+    (ADVP (RB Too) (RB bad))
+    (NP (PRP they))
+    (VP (VBD rushed)
+      (NP (PRP you))
+      (PP (TO to)
+        (NP
+          (NP (DT the) (JJS closest) (NN hospital))
+          (CC and)
+          (NP (RB not) (DT the) (NN one))))
+      (PP (IN on)
+        (NP (PRP$ your) (NN policy))))
+    (. .)))
+
+advmod(bad-2, Too-1)
+advmod(rushed-4, bad-2)
+nsubj(rushed-4, they-3)
+root(ROOT-0, rushed-4)
+dobj(rushed-4, you-5)
+det(hospital-9, the-7)
+amod(hospital-9, closest-8)
+prep_to(rushed-4, hospital-9)
+neg(one-13, not-11)
+det(one-13, the-12)
+prep_to(rushed-4, one-13)
+conj_and(hospital-9, one-13)
+poss(policy-16, your-15)
+prep_on(rushed-4, policy-16)
+
+(ROOT
+  (S
+    (NP
+      (ADJP (RB Too) (JJ bad))
+      (NN everyone))
+    (VP (VBZ is)
+      (VP (VBN screwed)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (NN medicine))
+            (VP (VBZ is)
+              (VP (VBN run)
+                (PP (IN by)
+                  (NP (NN insurance) (NNS companies)))))))))
+    (. .)))
+
+advmod(bad-2, Too-1)
+amod(everyone-3, bad-2)
+nsubjpass(screwed-5, everyone-3)
+auxpass(screwed-5, is-4)
+root(ROOT-0, screwed-5)
+advmod(run-9, when-6)
+nsubjpass(run-9, medicine-7)
+auxpass(run-9, is-8)
+advcl(screwed-5, run-9)
+nn(companies-12, insurance-11)
+agent(run-9, companies-12)
+
+(ROOT
+  (NP
+    (NP (NNS Doctors))
+    (, ,)
+    (NP
+      (NP (NNS patients))
+      (, ,)
+      (NP (NN everyone)))
+    (. .)))
+
+root(ROOT-0, Doctors-1)
+appos(Doctors-1, patients-3)
+appos(patients-3, everyone-5)
+
+(ROOT
+  (NP (NN Money) (. .)))
+
+root(ROOT-0, Money-1)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Get)
+        (ADJP (JJ rid))
+        (PP (IN of)
+          (NP (DT the) (JJ unnecessary) (NN overhead))))
+      (, ,)
+      (VP (VB get)
+        (NP (NN insurance) (NNS companies))
+        (PRT (RP out))
+        (PP (IN of)
+          (NP (NN medicine)))))
+    (. .)))
+
+dep(rid-2, Get-1)
+root(ROOT-0, rid-2)
+det(overhead-6, the-4)
+amod(overhead-6, unnecessary-5)
+prep_of(rid-2, overhead-6)
+dep(rid-2, get-8)
+nn(companies-10, insurance-9)
+dobj(get-8, companies-10)
+prep_out_of(get-8, medicine-13)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ non-productive) (NN health) (NN care) (NN cost))
+        (PP (TO to)
+          (NP (DT the) (NNS citizens)))))
+    (. .)))
+
+nsubj(cost-7, This-1)
+cop(cost-7, is-2)
+det(cost-7, a-3)
+amod(cost-7, non-productive-4)
+nn(cost-7, health-5)
+nn(cost-7, care-6)
+root(ROOT-0, cost-7)
+det(citizens-10, the-9)
+prep_to(cost-7, citizens-10)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN fact)))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (NN barrier))
+        (PP (IN for)
+          (NP (JJ many)))
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP
+                (NP (DT the) (NN care))
+                (SBAR
+                  (S
+                    (NP (PRP they))
+                    (VP (MD may)
+                      (VP (VB need)))))))))))
+    (. .)))
+
+prep_in(barrier-6, fact-2)
+nsubj(barrier-6, it-3)
+cop(barrier-6, is-4)
+det(barrier-6, a-5)
+root(ROOT-0, barrier-6)
+prep_for(barrier-6, many-8)
+aux(get-10, to-9)
+infmod(barrier-6, get-10)
+det(care-12, the-11)
+dobj(get-10, care-12)
+dobj(need-15, care-12)
+nsubj(need-15, they-13)
+aux(need-15, may-14)
+rcmod(care-12, need-15)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (ADJP (JJ usual)))
+    (NP
+      (NP (DT the) (NNS proponents))
+      (PP (IN for)
+        (NP
+          (NP (DT the) (FW status) (FW quo) (FW neglect))
+          (VP (VBG talking)
+            (PP (IN about)
+              (NP
+                (NP (DT the) (NN amount))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS savings))
+                    (PP (TO to)
+                      (NP (DT the) (NN public)))))))
+            (SBAR (IN if)
+              (S
+                (NP (NN insurance) (NNS companies))
+                (VP (VBD were)
+                  (ADVP (RB no) (RB longer))
+                  (VP (VBG doling)
+                    (PRT (RP out))
+                    (NP (DT the) (NN health))))))))))
+    (VP (VBP care)
+      (PP (IN in)
+        (NP
+          (NP (DT the)
+            (ADJP (RBS most) (JJ minimal))
+            (NN way))
+          (ADJP (JJ possible)))))
+    (. .)))
+
+prep_as(care-29, usual-2)
+det(proponents-4, the-3)
+nsubj(care-29, proponents-4)
+det(neglect-9, the-6)
+nn(neglect-9, status-7)
+nn(neglect-9, quo-8)
+prep_for(proponents-4, neglect-9)
+partmod(neglect-9, talking-10)
+det(amount-13, the-12)
+prep_about(talking-10, amount-13)
+prep_of(amount-13, savings-15)
+det(public-18, the-17)
+prep_to(savings-15, public-18)
+mark(doling-25, if-19)
+nn(companies-21, insurance-20)
+nsubj(doling-25, companies-21)
+aux(doling-25, were-22)
+advmod(longer-24, no-23)
+advmod(doling-25, longer-24)
+advcl(talking-10, doling-25)
+prt(doling-25, out-26)
+det(health-28, the-27)
+dobj(doling-25, health-28)
+root(ROOT-0, care-29)
+det(way-34, the-31)
+advmod(minimal-33, most-32)
+amod(way-34, minimal-33)
+prep_in(care-29, way-34)
+amod(way-34, possible-35)
+
+(ROOT
+  (S
+    (NP (PRP One))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB look)
+            (PP (IN at)
+              (SBAR
+                (WHNP (WP what))
+                (S
+                  (VP (VBZ goes)
+                    (PP (TO to)
+                      (NP
+                        (NP (DT the) (JJ actual) (NNS functions))
+                        (VP (VBN involved)
+                          (PP (IN in)
+                            (NP
+                              (NP (NN care))
+                              (PP (IN for)
+                                (NP (NNS individuals))))))))))))))))
+    (. .)))
+
+nsubj(has-2, One-1)
+xsubj(look-4, One-1)
+root(ROOT-0, has-2)
+aux(look-4, to-3)
+xcomp(has-2, look-4)
+nsubj(goes-7, what-6)
+prepc_at(look-4, goes-7)
+det(functions-11, the-9)
+amod(functions-11, actual-10)
+prep_to(goes-7, functions-11)
+partmod(functions-11, involved-12)
+prep_in(involved-12, care-14)
+prep_for(care-14, individuals-16)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBG saving)
+          (NP (NNS billions))
+          (SBAR (IN if)
+            (S
+              (NP (NN health) (NN care))
+              (VP (VBD were)
+                (ADJP (JJ universal))
+                (, ,)
+                (PP (IN in)
+                  (NP
+                    (NP (NNS terms))
+                    (PP (IN of)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (NNS people)
+                            (CC and)
+                            (NNS companies))
+                          (ADVP (RB currently))
+                          (VP (VBP pay)))))))))))))
+    (. .)))
+
+nsubj(saving-4, We-1)
+aux(saving-4, would-2)
+aux(saving-4, be-3)
+root(ROOT-0, saving-4)
+dobj(saving-4, billions-5)
+mark(universal-10, if-6)
+nn(care-8, health-7)
+nsubj(universal-10, care-8)
+cop(universal-10, were-9)
+advcl(saving-4, universal-10)
+prep_in(universal-10, terms-13)
+dobj(pay-20, what-15)
+nsubj(pay-20, people-16)
+conj_and(people-16, companies-18)
+nsubj(pay-20, companies-18)
+advmod(pay-20, currently-19)
+prepc_of(terms-13, pay-20)
+
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP (JJR More) (IN than) (PDT half)))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (`` ``) (NNS profits) ('' ''))
+          (PP (IN in)
+            (NP (DT the) (NN health) (NN care) (`` ``) (NN business) ('' ''))))))
+    (VP (VBP are)
+      (VP (VBG being)
+        (VP (VBN eaten)
+          (PRT (RP up))
+          (PP (IN by)
+            (NP (NN insurance) (NNS companies))))))
+    (. .)))
+
+quantmod(half-3, More-1)
+quantmod(half-3, than-2)
+nsubjpass(eaten-18, half-3)
+det(profits-7, the-5)
+prep_of(half-3, profits-7)
+det(business-14, the-10)
+nn(business-14, health-11)
+nn(business-14, care-12)
+prep_in(profits-7, business-14)
+aux(eaten-18, are-16)
+auxpass(eaten-18, being-17)
+root(ROOT-0, eaten-18)
+prt(eaten-18, up-19)
+nn(companies-22, insurance-21)
+agent(eaten-18, companies-22)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP have)
+      (VP
+        (VP (VBN taken)
+          (PP (IN over)
+            (NP
+              (NP (NN authority))
+              (PP (IN for)
+                (NP (NN healthcare))))))
+        (CC and)
+        (VP (VBN left)
+          (NP (DT the) (NN liability))
+          (PP (IN for)
+            (NP (DT the) (NNS doctors)))
+          (S
+            (VP (TO to)
+              (VP (VB suck)
+                (PRT (RP on))))))))
+    (. .)))
+
+nsubj(taken-3, They-1)
+nsubj(left-9, They-1)
+xsubj(suck-16, They-1)
+aux(taken-3, have-2)
+root(ROOT-0, taken-3)
+prep_over(taken-3, authority-5)
+prep_for(authority-5, healthcare-7)
+conj_and(taken-3, left-9)
+det(liability-11, the-10)
+dobj(left-9, liability-11)
+det(doctors-14, the-13)
+prep_for(left-9, doctors-14)
+aux(suck-16, to-15)
+xcomp(left-9, suck-16)
+prt(suck-16, on-17)
+

@@ -1,0 +1,277 @@
+(ROOT
+  (S
+    (NP (NNP Health) (NN care))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ free))))
+    (. .)))
+
+nn(care-2, Health-1)
+nsubj(free-5, care-2)
+aux(free-5, should-3)
+cop(free-5, be-4)
+root(ROOT-0, free-5)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Doctors)
+        (CC and)
+        (NNS nurses))
+      (VP (MD should) (RB n't)
+        (VP (VB work)
+          (PP (IN for)
+            (ADJP (JJ free))))))
+    (, ,)
+    (S
+      (NP (DT the) (NN government))
+      (VP (MD should)
+        (VP (VB pay)
+          (NP (PRP them)))))
+    (, ,)
+    (S
+      (NP (PRP we))
+      (VP (MD should) (RB not)
+        (VP (VB have)
+          (S
+            (VP (TO to))))))
+    (. .)))
+
+nsubj(work-6, Doctors-1)
+conj_and(Doctors-1, nurses-3)
+nsubj(work-6, nurses-3)
+aux(work-6, should-4)
+neg(work-6, n't-5)
+root(ROOT-0, work-6)
+prep_for(work-6, free-8)
+det(government-11, the-10)
+nsubj(pay-13, government-11)
+aux(pay-13, should-12)
+ccomp(work-6, pay-13)
+dobj(pay-13, them-14)
+nsubj(have-19, we-16)
+xsubj(to-20, we-16)
+aux(have-19, should-17)
+neg(have-19, not-18)
+ccomp(work-6, have-19)
+xcomp(have-19, to-20)
+
+(ROOT
+  (S
+    (NP (NNP Health) (NN insurance))
+    (VP (VBZ is)
+      (ADJP (RB so) (JJ expensive)))
+    (. .)))
+
+nn(insurance-2, Health-1)
+nsubj(expensive-5, insurance-2)
+cop(expensive-5, is-3)
+advmod(expensive-5, so-4)
+root(ROOT-0, expensive-5)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (DT a) (NN family))
+        (PP (IN in)
+          (NP (DT the) (NN workplace)))))
+    (NP (PRP it))
+    (VP (VBZ costs)
+      (NP
+        (NP
+          (QP (RB about) (CD 1\/4)))
+        (PP (IN of)
+          (NP
+            (NP (DT each))
+            (PP (IN of)
+              (NP (PRP$ your) (NNS checks)
+                (S
+                  (VP (TO to)
+                    (VP (VB insure)
+                      (NP (PRP them)))))))))))
+    (. .)))
+
+det(family-3, a-2)
+prep_for(costs-8, family-3)
+det(workplace-6, the-5)
+prep_in(family-3, workplace-6)
+nsubj(costs-8, it-7)
+root(ROOT-0, costs-8)
+quantmod(1\/4-10, about-9)
+dobj(costs-8, 1\/4-10)
+prep_of(1\/4-10, each-12)
+poss(checks-15, your-14)
+prep_of(each-12, checks-15)
+aux(insure-17, to-16)
+infmod(checks-15, insure-17)
+dobj(insure-17, them-18)
+
+(ROOT
+  (S (CC Plus)
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NNS copays))
+        (PP (IN for)
+          (NP (DT the) (NN doctor)
+            (CC and)
+            (NN prescription)))))
+    (. .)))
+
+cc(are-4, Plus-1)
+expl(are-4, there-3)
+root(ROOT-0, are-4)
+nsubj(are-4, copays-5)
+det(doctor-8, the-7)
+prep_for(copays-5, doctor-8)
+prep_for(copays-5, prescription-10)
+conj_and(doctor-8, prescription-10)
+
+(ROOT
+  (S
+    (NP (JJ Many) (NNS people))
+    (VP
+      (VP (VB go)
+        (PP (IN without)))
+      (CC and)
+      (VP (VB end)
+        (PRT (RP up))
+        (S
+          (ADJP (RB very) (JJ sick))
+          (SBAR (IN because)
+            (S
+              (NP (PRP they))
+              (VP (VBP are) (RB n't)
+                (VP (VBG taking)
+                  (NP
+                    (NP (NN care))
+                    (PP (IN of)
+                      (NP (PRP themselves))))
+                  (ADVP (RB properly)))))))))
+    (. .)))
+
+amod(people-2, Many-1)
+nsubj(go-3, people-2)
+nsubj(end-6, people-2)
+root(ROOT-0, go-3)
+prep(go-3, without-4)
+conj_and(go-3, end-6)
+prt(end-6, up-7)
+advmod(sick-9, very-8)
+dep(taking-14, sick-9)
+mark(taking-14, because-10)
+nsubj(taking-14, they-11)
+aux(taking-14, are-12)
+neg(taking-14, n't-13)
+dep(end-6, taking-14)
+dobj(taking-14, care-15)
+prep_of(care-15, themselves-17)
+advmod(taking-14, properly-18)
+
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (NN top))
+        (PP (IN of)
+          (NP (DT that)))))
+    (, ,)
+    (NP (NNS children))
+    (VP (VBP are) (RB n't)
+      (VP (VBG getting)
+        (NP
+          (NP (DT the) (NN coverage))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (VBP need)))))))
+    (. .)))
+
+prep_on_top_of(getting-9, that-4)
+nsubj(getting-9, children-6)
+aux(getting-9, are-7)
+neg(getting-9, n't-8)
+root(ROOT-0, getting-9)
+det(coverage-11, the-10)
+dobj(getting-9, coverage-11)
+dobj(need-13, coverage-11)
+nsubj(need-13, they-12)
+rcmod(coverage-11, need-13)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNS Lots))
+        (PP (IN of)
+          (NP (NNS workplaces))))
+      (VP (VBP do) (RB n't)
+        (VP (VB offer)
+          (NP (JJ dental)))))
+    (, ,) (IN so)
+    (S
+      (ADVP (RB therefore))
+      (NP (NNS cavities))
+      (VP (VBP are) (RB not)
+        (VP (VBG getting)
+          (S
+            (VP (VBN filled))))))
+    (CC and)
+    (S
+      (NP (NNS kids) (NNS teeth))
+      (VP (VBP are)
+        (ADJP (VBG rotting))))
+    (. .)))
+
+nsubj(offer-6, Lots-1)
+prep_of(Lots-1, workplaces-3)
+aux(offer-6, do-4)
+neg(offer-6, n't-5)
+root(ROOT-0, offer-6)
+dobj(offer-6, dental-7)
+dep(offer-6, so-9)
+advmod(getting-14, therefore-10)
+nsubj(getting-14, cavities-11)
+aux(getting-14, are-12)
+neg(getting-14, not-13)
+dep(offer-6, getting-14)
+dep(getting-14, filled-15)
+nn(teeth-18, kids-17)
+nsubj(rotting-20, teeth-18)
+cop(rotting-20, are-19)
+conj_and(offer-6, rotting-20)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD would)
+      (ADVP (RB altogether))
+      (VP (VB be)
+        (ADJP
+          (ADJP (RBR more) (JJ healthy))
+          (SBAR (IN if)
+            (S
+              (NP (DT the) (NN government))
+              (VP (MD would)
+                (VP (VB pick)
+                  (PRT (RP up))
+                  (NP (DT the) (NN tab)))))))))
+    (. .)))
+
+nsubj(healthy-6, We-1)
+aux(healthy-6, would-2)
+advmod(healthy-6, altogether-3)
+cop(healthy-6, be-4)
+advmod(healthy-6, more-5)
+root(ROOT-0, healthy-6)
+mark(pick-11, if-7)
+det(government-9, the-8)
+nsubj(pick-11, government-9)
+aux(pick-11, would-10)
+ccomp(healthy-6, pick-11)
+prt(pick-11, up-12)
+det(tab-14, the-13)
+dobj(pick-11, tab-14)
+

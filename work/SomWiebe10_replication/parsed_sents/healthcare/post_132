@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (S
+      (NP (NN Single-payer) (NNS systems))
+      (VP (VBP make)
+        (S
+          (NP (PRP it))
+          (ADJP (JJR harder)
+            (S
+              (VP (TO to)
+                (VP (VB get)
+                  (NP (NN care))
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ 's)
+                        (ADJP (RBS most) (VBN needed))))))))))))
+    (NP (NNP Delays))
+    (VP (VBP are)
+      (NP
+        (NP (DT a) (JJ common) (NN feature))
+        (PP (IN of)
+          (NP (JJ single-payer) (NNS systems)))))
+    (. .)))
+
+nn(systems-2, Single-payer-1)
+nsubj(make-3, systems-2)
+dep(feature-18, make-3)
+nsubj(harder-5, it-4)
+xcomp(make-3, harder-5)
+aux(get-7, to-6)
+xcomp(harder-5, get-7)
+dobj(get-7, care-8)
+advmod(needed-13, when-9)
+nsubjpass(needed-13, it-10)
+auxpass(needed-13, 's-11)
+advmod(needed-13, most-12)
+advcl(get-7, needed-13)
+nsubj(feature-18, Delays-14)
+cop(feature-18, are-15)
+det(feature-18, a-16)
+amod(feature-18, common-17)
+root(ROOT-0, feature-18)
+amod(systems-21, single-payer-20)
+prep_of(feature-18, systems-21)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ means)
+      (SBAR (IN that) (, ,)
+        (S
+          (SBAR
+            (WHADVP (WRB when))
+            (S
+              (NP (DT a) (NN person))
+              (VP
+                (VP (VBZ is)
+                  (ADJP (JJ sick)))
+                (CC and)
+                (VP
+                  (ADVP (RBS most))
+                  (VBZ needs)
+                  (NP (DT an) (NN appointment))))))
+          (, ,)
+          (NP (PRP they))
+          (VP (MD may)
+            (VP (VB be)
+              (ADJP (JJ unable)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (NP (CD one)))))))))))
+    (. .)))
+
+nsubj(means-2, This-1)
+root(ROOT-0, means-2)
+complm(unable-19, that-3)
+advmod(sick-9, when-5)
+det(person-7, a-6)
+nsubj(sick-9, person-7)
+nsubj(needs-12, person-7)
+cop(sick-9, is-8)
+advcl(unable-19, sick-9)
+advmod(needs-12, most-11)
+conj_and(sick-9, needs-12)
+advcl(unable-19, needs-12)
+det(appointment-14, an-13)
+dobj(needs-12, appointment-14)
+nsubj(unable-19, they-16)
+aux(unable-19, may-17)
+cop(unable-19, be-18)
+ccomp(means-2, unable-19)
+aux(get-21, to-20)
+xcomp(unable-19, get-21)
+dobj(get-21, one-22)
+

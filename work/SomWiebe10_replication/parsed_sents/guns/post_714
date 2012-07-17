@@ -1,0 +1,161 @@
+(ROOT
+  (S
+    (NP (NNS Grenades)
+      (CC and)
+      (NNS bombs))
+    (VP (VBP are) (RB not)
+      (VP (VBN allowed)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN owned)
+                (PP (IN by)
+                  (NP (JJ private) (NNS people)))))))))
+    (. .)))
+
+nsubjpass(allowed-6, Grenades-1)
+xsubj(owned-9, Grenades-1)
+conj_and(Grenades-1, bombs-3)
+nsubjpass(allowed-6, bombs-3)
+xsubj(owned-9, bombs-3)
+auxpass(allowed-6, are-4)
+neg(allowed-6, not-5)
+root(ROOT-0, allowed-6)
+aux(owned-9, to-7)
+auxpass(owned-9, be-8)
+xcomp(allowed-6, owned-9)
+amod(people-12, private-11)
+agent(owned-9, people-12)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is) (RB not)
+        (PP (IN about)
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBZ has)
+                (NP (NNS guns))))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (PP (IN about)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (JJ licensed) (NNS carriers))
+            (VP (VBP have)
+              (NP (NNS guns)))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+ccomp(is-10, is-2)
+neg(is-2, not-3)
+nsubj(has-6, who-5)
+prepc_about(is-2, has-6)
+dobj(has-6, guns-7)
+nsubj(is-10, it-9)
+root(ROOT-0, is-10)
+advmod(have-15, where-12)
+amod(carriers-14, licensed-13)
+nsubj(have-15, carriers-14)
+prepc_about(is-10, have-15)
+dobj(have-15, guns-16)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (VP (VBP carry)
+        (ADVP (RB responsibly))
+        (PP (IN off)
+          (NP (NN campus)))
+        (ADVP (RB practically) (RB everywhere))))
+    (NP (PRP they))
+    (VP (VBP go)
+      (PP (IN from)
+        (NP (NNS restaurants) (, ,) (NNS churches) (, ,) (NN movie) (NNS theaters) (, ,)
+          (CC and)
+          (NN shopping) (NNS malls))))
+    (. .)))
+
+nsubj(carry-2, They-1)
+dep(go-9, carry-2)
+advmod(carry-2, responsibly-3)
+prep_off(carry-2, campus-5)
+advmod(everywhere-7, practically-6)
+advmod(carry-2, everywhere-7)
+nsubj(go-9, they-8)
+root(ROOT-0, go-9)
+nn(theaters-16, restaurants-11)
+dep(theaters-16, churches-13)
+dep(theaters-16, movie-15)
+prep_from(go-9, theaters-16)
+nn(malls-20, shopping-19)
+prep_from(go-9, malls-20)
+conj_and(theaters-16, malls-20)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ makes)
+        (S
+          (NP (NN college) (NNS campuses))
+          (ADJP (RB so) (JJ special))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ makes)
+                (S
+                  (NP (JJ licensed) (NNS carriers))
+                  (ADJP (JJ irresponsible))))))))
+      (NP
+        (NP (DT the) (NN moment))
+        (SBAR
+          (S
+            (NP (PRP they))
+            (VP (VBP cross)))))
+      (NP
+        (NP (DT the) (JJ magical) (NN line))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ separates)
+              (NP (DT the) (NN campus))
+              (PP (IN from)
+                (NP
+                  (NP (DT the) (NN rest))
+                  (PP (IN of)
+                    (NP (NN society))))))))))
+    (. ?)))
+
+nsubj(makes-2, What-1)
+root(ROOT-0, makes-2)
+nn(campuses-4, college-3)
+nsubj(makes-8, campuses-4)
+advmod(special-6, so-5)
+dep(makes-8, special-6)
+nsubj(makes-8, that-7)
+xcomp(makes-2, makes-8)
+amod(carriers-10, licensed-9)
+nsubj(irresponsible-11, carriers-10)
+xcomp(makes-8, irresponsible-11)
+det(moment-13, the-12)
+dep(makes-2, moment-13)
+dobj(cross-15, moment-13)
+nsubj(cross-15, they-14)
+rcmod(moment-13, cross-15)
+det(line-18, the-16)
+amod(line-18, magical-17)
+dep(makes-2, line-18)
+nsubj(separates-20, line-18)
+rcmod(line-18, separates-20)
+det(campus-22, the-21)
+dobj(separates-20, campus-22)
+det(rest-25, the-24)
+prep_from(separates-20, rest-25)
+prep_of(rest-25, society-27)
+

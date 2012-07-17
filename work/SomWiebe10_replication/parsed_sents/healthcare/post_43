@@ -1,0 +1,149 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP US) (NN health) (NN care))
+      (VP (VBZ is)
+        (ADJP (JJ fantastic))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (NNS millions))
+      (VP (MD ca) (RB n't)
+        (VP (VB afford)
+          (NP (PRP it)))))
+    (. .)))
+
+nn(care-3, US-1)
+nn(care-3, health-2)
+nsubj(fantastic-5, care-3)
+cop(fantastic-5, is-4)
+root(ROOT-0, fantastic-5)
+nsubj(afford-11, millions-8)
+aux(afford-11, ca-9)
+neg(afford-11, n't-10)
+conj_but(fantastic-5, afford-11)
+dobj(afford-11, it-12)
+
+(ROOT
+  (NP (NNP Edward) (NNP Kennedy) (. .)))
+
+nn(Kennedy-2, Edward-1)
+root(ROOT-0, Kennedy-2)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Health) (NN bill))
+    (VP (MD would)
+      (VP (VB fix)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBZ 's)
+              (VP (VBN broken) ('' '')))))))
+    (. .)))
+
+nn(bill-3, Health-2)
+nsubj(fix-5, bill-3)
+aux(fix-5, would-4)
+root(ROOT-0, fix-5)
+nsubjpass(broken-8, what-6)
+auxpass(broken-8, 's-7)
+ccomp(fix-5, broken-8)
+
+(ROOT
+  (NP (NNP Boston) (NNP Globe) (. .)))
+
+nn(Globe-2, Boston-1)
+root(ROOT-0, Globe-2)
+
+(ROOT
+  (NP
+    (NP (NNP May) (CD 28) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (S
+        (NP (PRP We))
+        (VP (VBP have)
+          (NP
+            (NP (DT the) (JJS greatest) (NNS doctors))
+            (CC and)
+            (NP
+              (NP (JJ medical) (NNS innovations))
+              (PP (IN in)
+                (NP (DT the) (NN world)))))))
+      (, ,)
+      (CC but)
+      (S
+        (NP
+          (ADJP (JJR more)
+            (CC and)
+            (JJR more))
+          (NNPS Americans))
+        (VP (VBP are)
+          (VP
+            (PP (IN on)
+              (NP (DT the) (NN outside)))
+            (VBG looking)
+            (PRT (RP in))
+            (PP (TO to)
+              (NP
+                (NP (DT a) (NN world))
+                (PP (IN of)
+                  (NP (NN progress)
+                    (CC and)
+                    (NN discovery)))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is)
+                      (VP (VBN denied)
+                        (PP (TO to)
+                          (NP (PRP them)))
+                        (SBAR (IN because)
+                          (S
+                            (NP (PRP they))
+                            (VP (MD can) (RB not)
+                              (VP (VB afford)
+                                (NP (NN quality) (NN healthcare))))))))))))))))
+    (. .)))
+
+root(ROOT-0, May-1)
+num(May-1, 28-2)
+num(May-1, 2009-4)
+nsubj(have-8, We-7)
+dep(May-1, have-8)
+det(doctors-11, the-9)
+amod(doctors-11, greatest-10)
+dobj(have-8, doctors-11)
+amod(innovations-14, medical-13)
+dobj(have-8, innovations-14)
+conj_and(doctors-11, innovations-14)
+det(world-17, the-16)
+prep_in(innovations-14, world-17)
+amod(Americans-23, more-20)
+conj_and(more-20, more-22)
+amod(Americans-23, more-22)
+nsubj(looking-28, Americans-23)
+aux(looking-28, are-24)
+det(outside-27, the-26)
+prep_on(looking-28, outside-27)
+dep(May-1, looking-28)
+conj_but(have-8, looking-28)
+prt(looking-28, in-29)
+det(world-32, a-31)
+prep_to(looking-28, world-32)
+nsubjpass(denied-39, world-32)
+prep_of(world-32, progress-34)
+prep_of(world-32, discovery-36)
+conj_and(progress-34, discovery-36)
+auxpass(denied-39, is-38)
+rcmod(world-32, denied-39)
+prep_to(denied-39, them-41)
+mark(afford-46, because-42)
+nsubj(afford-46, they-43)
+aux(afford-46, can-44)
+neg(afford-46, not-45)
+advcl(denied-39, afford-46)
+nn(healthcare-48, quality-47)
+dobj(afford-46, healthcare-48)
+

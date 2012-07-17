@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN care))
+    (VP (MD would)
+      (VP (VB protect)
+        (NP (NNS doctors\/hospitals))
+        (PP (IN from)
+          (NP
+            (NP (NNS free-loaders))
+            (SBAR
+              (S
+                (NP (NNP Uncompensated) (NN care))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT a) (NN problem))
+                    (PP (IN for)
+                      (NP (NNS hospitals)
+                        (CC and)
+                        (NNS doctors)))))))))))
+    (. .)))
+
+nn(care-2, Universal-1)
+nsubj(protect-4, care-2)
+aux(protect-4, would-3)
+root(ROOT-0, protect-4)
+dobj(protect-4, doctors\/hospitals-5)
+prep_from(protect-4, free-loaders-7)
+nn(care-9, Uncompensated-8)
+nsubj(problem-12, care-9)
+cop(problem-12, is-10)
+det(problem-12, a-11)
+rcmod(free-loaders-7, problem-12)
+prep_for(problem-12, hospitals-14)
+prep_for(problem-12, doctors-16)
+conj_and(hospitals-14, doctors-16)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT a) (JJ single-payer) (NN system)))
+    (, ,)
+    (NP (NNS doctors))
+    (VP (MD would) (RB not)
+      (VP (VB be)
+        (ADJP (JJ vulnerable)
+          (PP (TO to)
+            (NP (NN free-loading))))
+        (PRN (-LRB- -LRB-)
+          (ADJP
+            (ADJP (RB as) (JJ rare))
+            (SBAR (IN as)
+              (S
+                (NP (JJ willful) (NN free-loading))
+                (VP (VBZ is)))))
+          (-RRB- -RRB-))))
+    (. .)))
+
+det(system-4, a-2)
+amod(system-4, single-payer-3)
+prep_in(vulnerable-10, system-4)
+nsubj(vulnerable-10, doctors-6)
+aux(vulnerable-10, would-7)
+neg(vulnerable-10, not-8)
+cop(vulnerable-10, be-9)
+root(ROOT-0, vulnerable-10)
+prep_to(vulnerable-10, free-loading-12)
+advmod(rare-15, as-14)
+dep(vulnerable-10, rare-15)
+mark(is-19, as-16)
+amod(free-loading-18, willful-17)
+nsubj(is-19, free-loading-18)
+ccomp(rare-15, is-19)
+

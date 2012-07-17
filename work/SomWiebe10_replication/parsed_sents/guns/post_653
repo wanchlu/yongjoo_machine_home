@@ -1,0 +1,149 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm) (RB not)
+      (ADJP (JJ sure)
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (VP (VBG responding)
+                (PP (TO to))))))))
+    (. .)))
+
+nsubj(sure-4, I-1)
+cop(sure-4, 'm-2)
+neg(sure-4, not-3)
+root(ROOT-0, sure-4)
+dobj(responding-8, what-5)
+nsubj(responding-8, you-6)
+aux(responding-8, are-7)
+dep(sure-4, responding-8)
+prep(responding-8, to-9)
+
+(ROOT
+  (S
+    (ADVP (RB Maybe))
+    (NP (PRP it))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RBR more) (JJ productive)
+          (S
+            (VP (TO to)
+              (VP (VB find)
+                (PRT (RP out))
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP
+                      (NP (NNS restrictions))
+                      (SBAR
+                        (S
+                          (NP (PRP you))
+                          (VP (VBP think)))))
+                    (VP (VBP are)
+                      (ADJP (JJ reasonable)
+                        (CC and)
+                        (JJ constitutional)))))))))))
+    (. .)))
+
+advmod(productive-6, Maybe-1)
+nsubj(productive-6, it-2)
+aux(productive-6, would-3)
+cop(productive-6, be-4)
+advmod(productive-6, more-5)
+root(ROOT-0, productive-6)
+aux(find-8, to-7)
+xcomp(productive-6, find-8)
+prt(find-8, out-9)
+dobj(reasonable-15, what-10)
+dobj(think-13, restrictions-11)
+nsubj(reasonable-15, restrictions-11)
+nsubj(constitutional-17, restrictions-11)
+nsubj(think-13, you-12)
+rcmod(restrictions-11, think-13)
+cop(reasonable-15, are-14)
+ccomp(find-8, reasonable-15)
+ccomp(find-8, constitutional-17)
+conj_and(reasonable-15, constitutional-17)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WDT Which))
+      (PP (IN of)
+        (NP (DT the) (JJ proposed)
+          (CC or)
+          (JJ actual) (NNS laws) (NN I))))
+    (SQ
+      (VP (VBN mentioned)
+        (UCP
+          (NP
+            (NP (JJ above))
+            (SBAR
+              (S
+                (VP (VBP are)
+                  (ADJP (JJ reasonable))))))
+          (, ,)
+          (CC and)
+          (FRAG
+            (WHADVP (WRB why))))))
+    (. ?)))
+
+nsubj(mentioned-9, Which-1)
+dep(proposed-4, the-3)
+prep_of(Which-1, proposed-4)
+amod(I-8, actual-6)
+nn(I-8, laws-7)
+prep_of(Which-1, I-8)
+conj_or(proposed-4, I-8)
+root(ROOT-0, mentioned-9)
+dobj(mentioned-9, above-10)
+cop(reasonable-12, are-11)
+rcmod(above-10, reasonable-12)
+dobj(mentioned-9, why-15)
+conj_and(above-10, why-15)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (DT any))
+    (PP (IN of)
+      (NP
+        (NP (PRP$ my) (NNS facts))
+        (PP (IN in)
+          (NP (NN error)))))
+    (. ?)))
+
+root(ROOT-0, Are-1)
+nsubj(Are-1, any-2)
+poss(facts-5, my-4)
+prep_of(Are-1, facts-5)
+prep_in(facts-5, error-7)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Where))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN line))
+        (PP (IN between)
+          (NP
+            (NP (DT a) (JJ constitutional) (JJ local) (NN law))
+            (CC and)
+            (NP (DT an) (JJ unconstitutional) (NN infringement))))))
+    (. ?)))
+
+advmod(is-2, Where-1)
+root(ROOT-0, is-2)
+det(line-4, the-3)
+nsubj(is-2, line-4)
+det(law-9, a-6)
+amod(law-9, constitutional-7)
+amod(law-9, local-8)
+prep_between(line-4, law-9)
+det(infringement-13, an-11)
+amod(infringement-13, unconstitutional-12)
+prep_between(line-4, infringement-13)
+conj_and(law-9, infringement-13)
+

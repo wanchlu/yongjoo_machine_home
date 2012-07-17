@@ -1,0 +1,205 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP need)
+      (NP
+        (NP (DT the) (NN right))
+        (PP (IN of)
+          (NP
+            (NP (NN defense))
+            (, ,)
+            (NP
+              (NP (NN safty))
+              (, ,)
+              (NP (DT a) (NN gun)))))))
+    (. .)))
+
+nsubj(need-2, People-1)
+root(ROOT-0, need-2)
+det(right-4, the-3)
+dobj(need-2, right-4)
+prep_of(right-4, defense-6)
+appos(defense-6, safty-8)
+det(gun-11, a-10)
+appos(safty-8, gun-11)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP
+      (VP (VBP argue)
+        (SBAR (IN that)
+          (S
+            (NP (PRP it))
+            (VP (MD will)
+              (ADVP (RB just))
+              (VP (VB put)
+                (NP (NNS guns))
+                (PP (IN in)
+                  (NP (DT the) (JJ wrong) (NNS hands))))))))
+      (, ,)
+      (CC but)
+      (VP (VBP arent)
+        (NP (PRP they))
+        (ADVP (RB already))))
+    (. ?)))
+
+nsubj(argue-2, People-1)
+nsubj(arent-15, People-1)
+root(ROOT-0, argue-2)
+complm(put-7, that-3)
+nsubj(put-7, it-4)
+aux(put-7, will-5)
+advmod(put-7, just-6)
+ccomp(argue-2, put-7)
+dobj(put-7, guns-8)
+det(hands-12, the-10)
+amod(hands-12, wrong-11)
+prep_in(put-7, hands-12)
+conj_but(argue-2, arent-15)
+dobj(arent-15, they-16)
+advmod(arent-15, already-17)
+
+(ROOT
+  (S
+    (ADVP (RB Really))
+    (VP (MD will)
+      (VP (VB makeing)
+        (NP (PRP it))))
+    (NP
+      (NP (NNP Illegal))
+      (VP (VBP do)
+        (NP (NN anything))))
+    (. ?)))
+
+advmod(makeing-3, Really-1)
+aux(makeing-3, will-2)
+root(ROOT-0, makeing-3)
+dobj(makeing-3, it-4)
+dep(makeing-3, Illegal-5)
+dep(Illegal-5, do-6)
+dobj(do-6, anything-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (ADVP (RB not))
+      (, ,)
+      (PP (IN because)
+        (NP
+          (NP (PRP$ its)
+            (ADJP
+              (ADJP (RB not) (JJ Guns))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ kills)))))
+            (NNS people))
+          (, ,)
+          (NP (PRP$ its) (NNS people)))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+neg(think-2, not-3)
+poss(people-11, its-6)
+neg(Guns-8, not-7)
+amod(people-11, Guns-8)
+nsubj(kills-10, that-9)
+dep(Guns-8, kills-10)
+prep_because(think-2, people-11)
+poss(people-14, its-13)
+appos(people-11, people-14)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (NN gun) (NN wont))
+      (VP (VBP kill)
+        (NP (PRP you))
+        (PP (IN without)
+          (NP
+            (NP (NN someone))
+            (PP (IN behind)
+              (NP (PRP it)))))))
+    (, ,) (RB not)
+    (S
+      (NP (DT all) (NNS people))
+      (VP
+        (VP (VBP have)
+          (NP
+            (NP (DT the) (JJ right) (NNS reasons))
+            (PP (IN for)
+              (S
+                (VP (VBG haveing)
+                  (NP (DT a) (NN gun)))))))
+        (, ,)
+        (CC but)
+        (VP (VBZ does)
+          (SBAR (IN that)
+            (S
+              (NP
+                (NP (JJ mean) (NNS people))
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP do)
+                      (VP (VB have)
+                        (NP
+                          (NP (DT the) (NN right))
+                          (SBAR
+                            (S
+                              (NP (NNS reasons))
+                              (VP (MD will)
+                                (VP (VB be)
+                                  (VP (VBN punished)
+                                    (CC and)
+                                    (VBN left))))))))))))
+              (VP
+                (VP (VBD unarmed))
+                (, ,)
+                (CC and)
+                (VP (VBZ defensless))))))))
+    (. ?)))
+
+det(wont-3, The-1)
+nn(wont-3, gun-2)
+nsubj(kill-4, wont-3)
+root(ROOT-0, kill-4)
+dobj(kill-4, you-5)
+prep_without(kill-4, someone-7)
+prep_behind(someone-7, it-9)
+neg(kill-4, not-11)
+det(people-13, all-12)
+nsubj(have-14, people-13)
+nsubj(does-24, people-13)
+ccomp(kill-4, have-14)
+det(reasons-17, the-15)
+amod(reasons-17, right-16)
+dobj(have-14, reasons-17)
+prepc_for(reasons-17, haveing-19)
+det(gun-21, a-20)
+dobj(haveing-19, gun-21)
+ccomp(kill-4, does-24)
+conj_but(have-14, does-24)
+complm(unarmed-39, that-25)
+amod(people-27, mean-26)
+nsubj(have-30, people-27)
+nsubj(unarmed-39, people-27)
+nsubj(defensless-42, people-27)
+aux(have-30, do-29)
+rcmod(people-27, have-30)
+det(right-32, the-31)
+dobj(have-30, right-32)
+nsubjpass(punished-36, reasons-33)
+nsubjpass(left-38, reasons-33)
+aux(punished-36, will-34)
+auxpass(punished-36, be-35)
+rcmod(right-32, punished-36)
+rcmod(right-32, left-38)
+conj_and(punished-36, left-38)
+ccomp(does-24, unarmed-39)
+ccomp(does-24, defensless-42)
+conj_and(unarmed-39, defensless-42)
+

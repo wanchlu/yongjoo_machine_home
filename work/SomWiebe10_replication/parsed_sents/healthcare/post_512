@@ -1,0 +1,89 @@
+(ROOT
+  (NP (NNP Hmmm) (: ...)))
+
+root(ROOT-0, Hmmm-1)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (FRAG (, ,)
+    (NP (RB yes) (JJ ...))))
+
+
+(ROOT
+  (PRN (, ,)
+    (S
+      (NP (PRP you))
+      (VP (VBP do)
+        (VP (VB check)
+          (NP (PRP$ your) (NNS sources))
+          (FRAG
+            (ADVP (RB first))
+            (. .)))))))
+
+nsubj(check-4, you-2)
+aux(check-4, do-3)
+root(ROOT-0, check-4)
+poss(sources-6, your-5)
+dobj(check-4, sources-6)
+dep(check-4, first-7)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHNP (WP who))
+    (SQ
+      (VP (VBZ has)
+        (NP (DT the) (JJS most) (NNS points))))
+    (. ?)))
+
+cc(has-3, But-1)
+nsubj(has-3, who-2)
+root(ROOT-0, has-3)
+det(points-6, the-4)
+amod(points-6, most-5)
+dobj(has-3, points-6)
+
+(ROOT
+  (PRN
+    (S
+      (ADVP (RB So))
+      (NP (PRP you))
+      (VP (VBP see) (, ,)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's) (RB not)
+              (NP
+                (NP (DT all))
+                (PP (IN about)
+                  (NP
+                    (NP (NNS facts)
+                      (CC and)
+                      (NNS figures))
+                    (, ,)
+                    (SBAR
+                      (S
+                        (NP (PRP it))
+                        (VP (VBZ 's)
+                          (PP (IN about)
+                            (NP (NN entertainment) (NN value))))))
+                    (: ;)))))))))
+    (-RRB- -RRB-)))
+
+advmod(see-3, So-1)
+nsubj(see-3, you-2)
+root(ROOT-0, see-3)
+nsubj(all-8, it-5)
+cop(all-8, 's-6)
+neg(all-8, not-7)
+ccomp(see-3, all-8)
+prep_about(all-8, facts-10)
+prep_about(all-8, figures-12)
+conj_and(facts-10, figures-12)
+nsubj('s-15, it-14)
+rcmod(facts-10, 's-15)
+nn(value-18, entertainment-17)
+prep_about('s-15, value-18)
+

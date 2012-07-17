@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (ADVP (RB down))
+        (VP (VBD voted)
+          (NP (DT this) (NN argument)))))
+    (NP (PRP it))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP
+          (ADJP (RBR more) (JJ credible))
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (VBD gave)
+                (NP
+                  (NP (DT a) (NN reason))
+                  (FRAG
+                    (WHADVP (WRB why))))))))))
+    (. .)))
+
+mark(voted-4, If-1)
+nsubj(voted-4, you-2)
+advmod(voted-4, down-3)
+advcl(credible-11, voted-4)
+det(argument-6, this-5)
+dobj(voted-4, argument-6)
+nsubj(credible-11, it-7)
+aux(credible-11, would-8)
+cop(credible-11, be-9)
+advmod(credible-11, more-10)
+root(ROOT-0, credible-11)
+mark(gave-14, if-12)
+nsubj(gave-14, you-13)
+ccomp(credible-11, gave-14)
+det(reason-16, a-15)
+dobj(gave-14, reason-16)
+dep(reason-16, why-17)
+

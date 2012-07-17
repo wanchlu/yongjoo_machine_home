@@ -1,0 +1,111 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHADVP (WRB why))
+          (FRAG (CC but)
+            (NP (DT this) (NN topic)
+              (SBAR
+                (S
+                  (VP (VBZ is)
+                    (ADVP (RB always))
+                    (VP (VBN debated))))))
+            (. .)))))
+    (. .)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+advmod(topic-8, why-5)
+dep(topic-8, but-6)
+det(topic-8, this-7)
+advcl(know-4, topic-8)
+auxpass(debated-11, is-9)
+advmod(debated-11, always-10)
+ccomp(topic-8, debated-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (DT this))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (NN matter))
+              (PP (IN of)
+                (NP
+                  (NP (NNS faith-things))
+                  (SBAR
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP believe)
+                        (PP (IN with)
+                          (NP (DT no) (NN evidence)))
+                        (SBAR (IN that)
+                          (S
+                            (NP (PRP you))
+                            (ADVP (RB cant))
+                            (VP (VBP see))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(matter-6, this-3)
+cop(matter-6, is-4)
+det(matter-6, the-5)
+ccomp(think-2, matter-6)
+prep_of(matter-6, faith-things-8)
+nsubj(believe-10, you-9)
+rcmod(faith-things-8, believe-10)
+det(evidence-13, no-12)
+prep_with(believe-10, evidence-13)
+complm(see-17, that-14)
+nsubj(see-17, you-15)
+advmod(see-17, cant-16)
+ccomp(believe-10, see-17)
+
+(ROOT
+  (SQ
+    (VP
+      (VP (VB \/) (-RRB- -RRB-)
+        (NP (EX There))
+        (PP
+          (NP
+            (ADJP (VBP are)
+              (PP
+                (ADVP (RBR more))
+                (IN than)
+                (NP (CD one))))
+            (NX
+              (NX (NNS religion))
+              (CC and)))
+          (IN that)
+          (NP (NNS means))))
+      (VP
+        (NP (NNS people))
+        (S
+          (VP (VB believe)
+            (PP (IN in)
+              (NP (JJ different) (`` ``) (NNS gods)))
+            (. .)))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, There-3)
+dep(than-6, are-4)
+advmod(than-6, more-5)
+amod(religion-8, than-6)
+pobj(than-6, one-7)
+npadvmod(\/-1, religion-8)
+cc(religion-8, and-9)
+prep_that(\/-1, means-11)
+dep(\/-1, people-12)
+dep(people-12, believe-13)
+amod(gods-17, different-15)
+prep_in(believe-13, gods-17)
+

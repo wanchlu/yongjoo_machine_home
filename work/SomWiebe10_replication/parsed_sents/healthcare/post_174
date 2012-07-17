@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (NP
+      (NP
+        (ADJP (RBR Better))
+        (NNS technologies)
+        (CC and)
+        (NNS treatments))
+      (PP (IN in)
+        (NP (JJ private) (NN health) (NN care))))
+    (VP (VBZ aids)
+      (NP (NN prevention)))
+    (. .)))
+
+amod(technologies-2, Better-1)
+nsubj(aids-9, technologies-2)
+conj_and(technologies-2, treatments-4)
+nsubj(aids-9, treatments-4)
+amod(care-8, private-6)
+nn(care-8, health-7)
+prep_in(technologies-2, care-8)
+root(ROOT-0, aids-9)
+dobj(aids-9, prevention-10)
+
+(ROOT
+  (S
+    (NP (JJ Private) (NN health) (NN care) (NNS societies))
+    (VP (VBP are)
+      (VP (VBN known)
+        (PP (IN for)
+          (S
+            (VP (VBG having)
+              (NP
+                (NP (JJR better) (NN innovation))
+                (CC and)
+                (NP (JJR higher) (NN investment)))
+              (PP (IN in)
+                (NP (NN equipment)
+                  (CC and)
+                  (JJ high-end) (NNS treatments))))))))
+    (. .)))
+
+amod(societies-4, Private-1)
+nn(societies-4, health-2)
+nn(societies-4, care-3)
+nsubjpass(known-6, societies-4)
+auxpass(known-6, are-5)
+root(ROOT-0, known-6)
+prepc_for(known-6, having-8)
+amod(innovation-10, better-9)
+dobj(having-8, innovation-10)
+amod(investment-13, higher-12)
+dobj(having-8, investment-13)
+conj_and(innovation-10, investment-13)
+nn(treatments-18, equipment-15)
+conj_and(equipment-15, high-end-17)
+nn(treatments-18, high-end-17)
+prep_in(having-8, treatments-18)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS treatments))
+    (VP
+      (VP (MD can)
+        (VP (VB be)
+          (NP
+            (NP (DT a) (NN part))
+            (PP (IN of)
+              (NP (NN prevention)
+                (CC or)
+                (JJ early) (NN treatment))))))
+      (, ,)
+      (CC and)
+      (VP (MD can)
+        (VP (VB have)
+          (NP (JJR better) (NNS results))
+          (PP (IN than)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (VP (VBZ exists)
+                  (PP (IN in)
+                    (NP (JJ universal) (NN health) (NN care) (NNS systems))))))))))
+    (. .)))
+
+det(treatments-2, These-1)
+nsubj(part-6, treatments-2)
+nsubj(have-15, treatments-2)
+aux(part-6, can-3)
+cop(part-6, be-4)
+det(part-6, a-5)
+root(ROOT-0, part-6)
+nn(treatment-11, prevention-8)
+conj_or(prevention-8, early-10)
+nn(treatment-11, early-10)
+prep_of(part-6, treatment-11)
+aux(have-15, can-14)
+conj_and(part-6, have-15)
+amod(results-17, better-16)
+dobj(have-15, results-17)
+nsubj(exists-20, what-19)
+prepc_than(have-15, exists-20)
+amod(systems-25, universal-22)
+nn(systems-25, health-23)
+nn(systems-25, care-24)
+prep_in(exists-20, systems-25)
+

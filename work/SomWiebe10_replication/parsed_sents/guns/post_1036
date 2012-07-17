@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB Yes))
+      (IN if)
+      (S
+        (NP (NN someone))
+        (VP
+          (VP (VBZ has)
+            (NP (DT a) (DT a) (NN gun)))
+          (CC and)
+          (VP (VBZ is)
+            (ADJP (IN about)
+              (S
+                (VP (TO to)
+                  (VP (VB shoot)
+                    (NP (NN someone))))))))))
+    (, ,)
+    (NP (NN someone) (RB else))
+    (VP (MD could)
+      (VP
+        (VP (VB get)
+          (NP (PRP$ their) (NN gun)))
+        (CC and)
+        (VP (VB shoot)
+          (NP (PRP them)))))
+    (. !)))
+
+advmod(has-4, Yes-1)
+dep(has-4, if-2)
+nsubj(has-4, someone-3)
+advcl(get-18, has-4)
+predet(gun-7, a-5)
+det(gun-7, a-6)
+dobj(has-4, gun-7)
+cop(about-10, is-9)
+conj_and(has-4, about-10)
+advcl(get-18, about-10)
+aux(shoot-12, to-11)
+xcomp(about-10, shoot-12)
+dobj(shoot-12, someone-13)
+nsubj(get-18, someone-15)
+nsubj(shoot-22, someone-15)
+advmod(someone-15, else-16)
+aux(get-18, could-17)
+root(ROOT-0, get-18)
+poss(gun-20, their-19)
+dobj(get-18, gun-20)
+conj_and(get-18, shoot-22)
+dobj(shoot-22, them-23)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ r)
+      (NP
+        (NP (NNS rules))
+        (PP (IN for)
+          (SBAR (IN if)
+            (S
+              (NP
+                (NP (NN u) (NN abuse))
+                (NP (DT the) (NN right)))
+              (VP (TO to)
+                (VP (VB have)
+                  (NP (PRP them)))))))))
+    (. .)))
+
+expl(r-2, There-1)
+root(ROOT-0, r-2)
+dobj(r-2, rules-3)
+nsubj(r-2, rules-3)
+mark(have-11, if-5)
+nn(abuse-7, u-6)
+nsubj(have-11, abuse-7)
+det(right-9, the-8)
+dep(abuse-7, right-9)
+aux(have-11, to-10)
+prepc_for(rules-3, have-11)
+dobj(have-11, them-12)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP get)
+      (VP (VBN taken)
+        (PRT (RP away))))
+    (. .)))
+
+nsubjpass(taken-3, They-1)
+auxpass(taken-3, get-2)
+root(ROOT-0, taken-3)
+prt(taken-3, away-4)
+

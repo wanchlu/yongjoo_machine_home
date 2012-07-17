@@ -1,0 +1,104 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Framers))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNP Constitution))
+          (VP (VBG upholding)
+            (NP (DT an) (JJ individual) (NN right))
+            (S
+              (VP (TO to)
+                (VP (VB bear)
+                  (NP
+                    (NP (NNP arms) (NNP George) (NNP Washington))
+                    (, ,)
+                    (NP (NNP Thomas) (NNP Jefferson))
+                    (, ,)
+                    (NP (NNP Benjamin) (NNP Franklin))
+                    (, ,)
+                    (CC and)
+                    (NP (NNP John) (NNP Adams))))))))))
+    (VP (VBD were)
+      (PP (IN among)
+        (NP
+          (NP (DT a) (NN number))
+          (PP (IN of)
+            (NP
+              (NP (NNS framers))
+              (PP (IN of)
+                (NP
+                  (NP (DT the) (NN constitution))
+                  (SBAR
+                    (WHNP (WP who))
+                    (S
+                      (ADVP (RB clearly))
+                      (VP (VBD expressed)
+                        (NP
+                          (NP (DT the) (NN importance))
+                          (PP (IN of)
+                            (NP (DT an) (JJ individual) (NN right))))
+                        (S
+                          (VP (TO to)
+                            (VP (VB bear)
+                              (NP (NNS arms)))))))))))))))
+    (. .)))
+
+nsubj(were-24, Framers-1)
+det(Constitution-4, the-3)
+prep_of(Framers-1, Constitution-4)
+partmod(Constitution-4, upholding-5)
+det(right-8, an-6)
+amod(right-8, individual-7)
+dobj(upholding-5, right-8)
+aux(bear-10, to-9)
+xcomp(upholding-5, bear-10)
+nn(Washington-13, arms-11)
+nn(Washington-13, George-12)
+dobj(bear-10, Washington-13)
+nn(Jefferson-16, Thomas-15)
+dobj(bear-10, Jefferson-16)
+conj_and(Washington-13, Jefferson-16)
+nn(Franklin-19, Benjamin-18)
+dobj(bear-10, Franklin-19)
+conj_and(Washington-13, Franklin-19)
+nn(Adams-23, John-22)
+dobj(bear-10, Adams-23)
+conj_and(Washington-13, Adams-23)
+root(ROOT-0, were-24)
+det(number-27, a-26)
+prep_among(were-24, number-27)
+prep_of(number-27, framers-29)
+det(constitution-32, the-31)
+prep_of(framers-29, constitution-32)
+nsubj(expressed-35, constitution-32)
+advmod(expressed-35, clearly-34)
+rcmod(constitution-32, expressed-35)
+det(importance-37, the-36)
+dobj(expressed-35, importance-37)
+det(right-41, an-39)
+amod(right-41, individual-40)
+prep_of(importance-37, right-41)
+aux(bear-43, to-42)
+xcomp(expressed-35, bear-43)
+dobj(bear-43, arms-44)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (S
+      (VP (VB see)
+        (NP (DT the) (NN argument) (NN page))
+        (PP (IN for)
+          (NP
+            (NP (NNS quotes))
+            (PP (IN from)
+              (NP (PRP them)))))))
+    (-RRB- -RRB-)))
+
+root(ROOT-0, see-2)
+det(page-5, the-3)
+nn(page-5, argument-4)
+dobj(see-2, page-5)
+prep_for(see-2, quotes-7)
+prep_from(quotes-7, them-9)
+

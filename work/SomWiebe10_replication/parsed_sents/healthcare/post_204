@@ -1,0 +1,112 @@
+(ROOT
+  (S
+    (NP (NN Single-payer) (NNS systems))
+    (VP (VBP create)
+      (S
+        (NP (JJ rigid) (NNS prices))
+        (ADJP (JJ unresponsive)
+          (PP (TO to)
+            (NP (NNS shortages\/gluts) (NNP Michael) (NNP F.) (NNP Cannon))))))
+    (. .)))
+
+nn(systems-2, Single-payer-1)
+nsubj(create-3, systems-2)
+root(ROOT-0, create-3)
+amod(prices-5, rigid-4)
+nsubj(unresponsive-6, prices-5)
+xcomp(create-3, unresponsive-6)
+nn(Cannon-11, shortages\/gluts-8)
+nn(Cannon-11, Michael-9)
+nn(Cannon-11, F.-10)
+prep_to(unresponsive-6, Cannon-11)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Socialized) (NNP Medicine))
+    (VP (VBZ is)
+      (ADVP (RB Already))
+      (ADVP (RB Here) ('' '')))
+    (. .)))
+
+nn(Medicine-3, Socialized-2)
+nsubj(is-4, Medicine-3)
+root(ROOT-0, is-4)
+advmod(is-4, Already-5)
+advmod(is-4, Here-6)
+
+(ROOT
+  (NP (NNP CATO) (NNP Institute) (. .)))
+
+nn(Institute-2, CATO-1)
+root(ROOT-0, Institute-2)
+
+(ROOT
+  (FRAG
+    (NP (NNP September) (CD 6))
+    (, ,)
+    (NP
+      (NP (CD 2007) (`` ``) (JJ Consider) (CD two) (JJ distinguishing) (NNS features))
+      (PP (IN of)
+        (NP (JJ socialist) (NNS economies))))
+    (. .)))
+
+root(ROOT-0, September-1)
+num(September-1, 6-2)
+num(features-9, 2007-4)
+amod(features-9, Consider-6)
+num(features-9, two-7)
+amod(features-9, distinguishing-8)
+dep(September-1, features-9)
+amod(economies-12, socialist-11)
+prep_of(features-9, economies-12)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ first))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN government))
+          (VP (VBZ decides)
+            (NP
+              (NP
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (S
+                      (NP (NNS individuals))
+                      (VP (MD may)
+                        (VP (VB produce))))
+                    (PRN (, ,)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP consume))))
+                      (, ,)))))
+              (CC and)
+              (NP
+                (NP (DT the) (NNS terms))
+                (PP (IN of)
+                  (NP (NN exchange)))))))))
+    (. .)))
+
+det(first-2, The-1)
+nsubj(is-3, first-2)
+root(ROOT-0, is-3)
+complm(decides-7, that-4)
+det(government-6, the-5)
+nsubj(decides-7, government-6)
+ccomp(is-3, decides-7)
+dep(produce-11, what-8)
+nsubj(produce-11, individuals-9)
+aux(produce-11, may-10)
+dobj(decides-7, produce-11)
+dobj(consume-15, what-13)
+nsubj(consume-15, they-14)
+dep(produce-11, consume-15)
+det(terms-19, the-18)
+dobj(decides-7, terms-19)
+conj_and(produce-11, terms-19)
+prep_of(terms-19, exchange-21)
+

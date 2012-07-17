@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree))
+    (. .)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ first) (NN step))
+    (VP (MD would)
+      (VP (VB be)
+        (S
+          (VP (TO to)
+            (VP (VB harmonize)
+              (NP (NNS guns) (NNS laws))
+              (PP (DT all) (IN across)
+                (NP (DT the) (NN country))))))))
+    (. .)))
+
+det(step-3, The-1)
+amod(step-3, first-2)
+nsubj(be-5, step-3)
+aux(be-5, would-4)
+root(ROOT-0, be-5)
+aux(harmonize-7, to-6)
+xcomp(be-5, harmonize-7)
+nn(laws-9, guns-8)
+dobj(harmonize-7, laws-9)
+dep(harmonize-7, all-10)
+det(country-13, the-12)
+prep_across(harmonize-7, country-13)
+
+(ROOT
+  (S
+    (ADVP (RB Right) (RB now))
+    (, ,)
+    (SBAR (IN If)
+      (S
+        (NP (PRP I))
+        (VP (MD can) (RB not)
+          (VP (VB purchase)
+            (NP
+              (NP (DT a) (NN gun))
+              (PP (IN in)
+                (NP (PRP$ my) (NN state))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD can)
+      (VP
+        (VP (VB go)
+          (PP (TO to)
+            (NP (DT a) (NN neighbor) (NN state))))
+        (CC and)
+        (VP (VB buy)
+          (NP (PRP it))
+          (ADVP (RB there)))))
+    (. .)))
+
+advmod(now-2, Right-1)
+advmod(go-17, now-2)
+mark(purchase-8, If-4)
+nsubj(purchase-8, I-5)
+aux(purchase-8, can-6)
+neg(purchase-8, not-7)
+advcl(go-17, purchase-8)
+det(gun-10, a-9)
+dobj(purchase-8, gun-10)
+poss(state-13, my-12)
+prep_in(gun-10, state-13)
+nsubj(go-17, I-15)
+nsubj(buy-23, I-15)
+aux(go-17, can-16)
+root(ROOT-0, go-17)
+det(state-21, a-19)
+nn(state-21, neighbor-20)
+prep_to(go-17, state-21)
+conj_and(go-17, buy-23)
+dobj(buy-23, it-24)
+advmod(buy-23, there-25)
+

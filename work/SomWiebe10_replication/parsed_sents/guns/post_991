@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNS guns))
+        (VP (VBD were) (RB n't)
+          (ADJP (RB so) (RB freely) (JJ available))
+          (PP (IN in)
+            (NP (DT the) (NNP US)))
+          (NP (RB then)))))
+    (NP (EX there))
+    (VP (MD would) (RB n't)
+      (VP (VB be)
+        (VP
+          (ADVP (RB so)
+            (NP (JJ many) (NNS people)))
+          (VBG getting)
+          (NP (NN shot)))))
+    (. .)))
+
+mark(available-7, If-1)
+nsubj(available-7, guns-2)
+cop(available-7, were-3)
+neg(available-7, n't-4)
+advmod(available-7, so-5)
+advmod(available-7, freely-6)
+advcl(getting-19, available-7)
+det(US-10, the-9)
+prep_in(available-7, US-10)
+attr(available-7, then-11)
+expl(getting-19, there-12)
+aux(getting-19, would-13)
+neg(getting-19, n't-14)
+aux(getting-19, be-15)
+advmod(getting-19, so-16)
+amod(people-18, many-17)
+pobj(so-16, people-18)
+root(ROOT-0, getting-19)
+dobj(getting-19, shot-20)
+nsubj(getting-19, shot-20)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (ADJP (RB fairly) (JJ obvious)
+        (PP (TO to)
+          (NP (PRP us) (NNS Brits)))))
+    (. .)))
+
+nsubj(obvious-4, That-1)
+cop(obvious-4, is-2)
+advmod(obvious-4, fairly-3)
+root(ROOT-0, obvious-4)
+dep(Brits-7, us-6)
+prep_to(obvious-4, Brits-7)
+

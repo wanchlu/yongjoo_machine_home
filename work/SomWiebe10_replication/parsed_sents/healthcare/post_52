@@ -1,0 +1,178 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (VBZ leads)
+      (PP (TO to)
+        (NP
+          (NP (JJ socialized) (NN medicine))
+          (, ,)
+          (ADJP (JJ rationing) (, ,) (JJ long-lines))
+          ('' '')))
+      (NP
+        (NP (DT The) (NN End))
+        (PP (IN of)
+          (NP (NNP Private) (NNP Health) (NNP Insurance) ('' '')))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(leads-3, insurance-2)
+root(ROOT-0, leads-3)
+amod(medicine-6, socialized-5)
+prep_to(leads-3, medicine-6)
+amod(long-lines-10, rationing-8)
+amod(medicine-6, long-lines-10)
+det(End-13, The-12)
+dobj(leads-3, End-13)
+nn(Insurance-17, Private-15)
+nn(Insurance-17, Health-16)
+prep_of(End-13, Insurance-17)
+
+(ROOT
+  (NP
+    (NP (NNP Wall) (NNP Street) (NNP Journal))
+    (PRN (-LRB- -LRB-)
+      (NP (NN editorial))
+      (-RRB- -RRB-))
+    (. .)))
+
+nn(Journal-3, Wall-1)
+nn(Journal-3, Street-2)
+root(ROOT-0, Journal-3)
+appos(Journal-3, editorial-5)
+
+(ROOT
+  (NP
+    (NP (NNP April) (CD 13) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (S
+        (SBAR (IN Once)
+          (S
+            (NP (NN government))
+            (VP (VBZ takes)
+              (PP (IN over)
+                (NP
+                  (NP (DT the) (NN majority))
+                  (PP (IN of)
+                    (NP (NNP U.S.) (NN health-care) (NNS liabilities)))))
+              (PRN (-LRB- -LRB-)
+                (PP (IN with)
+                  (NP (DT a) (JJ public) (NN option)))
+                (-RRB- -RRB-)))))
+        (, ,)
+        (NP (PRP it))
+        (VP (MD can) (RB either)
+          (VP (VB provide)
+            (NP (DT every) (NN service))
+            (PP (IN at)
+              (NP
+                (ADJP (JJ huge)
+                  (CC and)
+                  (VBG growing))
+                (NN cost))))))
+      (, ,)
+      (CC or)
+      (S
+        (NP (PRP it))
+        (VP (MD can)
+          (VP (VB ration)
+            (NP (NNS services))))))
+    (. .)))
+
+root(ROOT-0, April-1)
+num(April-1, 13-2)
+num(April-1, 2009-4)
+mark(takes-9, Once-7)
+nsubj(takes-9, government-8)
+advcl(provide-27, takes-9)
+det(majority-12, the-11)
+prep_over(takes-9, majority-12)
+nn(liabilities-16, U.S.-14)
+nn(liabilities-16, health-care-15)
+prep_of(majority-12, liabilities-16)
+dep(takes-9, with-18)
+det(option-21, a-19)
+amod(option-21, public-20)
+pobj(with-18, option-21)
+nsubj(provide-27, it-24)
+aux(provide-27, can-25)
+advmod(provide-27, either-26)
+dep(April-1, provide-27)
+det(service-29, every-28)
+dobj(provide-27, service-29)
+amod(cost-34, huge-31)
+conj_and(huge-31, growing-33)
+amod(cost-34, growing-33)
+prep_at(provide-27, cost-34)
+nsubj(ration-39, it-37)
+aux(ration-39, can-38)
+dep(April-1, ration-39)
+conj_or(provide-27, ration-39)
+dobj(ration-39, services-40)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS People))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP need)
+            (NP
+              (NP (DT an) (NN MRI)
+                (CC or)
+                (NN hip) (NN replacement))
+              (CC or)
+              (SBAR
+                (WHNP (WDT whatever))))))))
+    (VP (MD will)
+      (VP (VB face)
+        (NP (VBG waiting) (NNS lines))))
+    (. .)))
+
+nsubj(need-3, People-1)
+nsubj(face-12, People-1)
+rcmod(People-1, need-3)
+det(replacement-8, an-4)
+nn(replacement-8, MRI-5)
+conj_or(MRI-5, hip-7)
+nn(replacement-8, hip-7)
+dobj(need-3, replacement-8)
+dobj(need-3, whatever-10)
+conj_or(replacement-8, whatever-10)
+rcmod(replacement-8, whatever-10)
+aux(face-12, will-11)
+root(ROOT-0, face-12)
+amod(lines-14, waiting-13)
+dobj(face-12, lines-14)
+
+(ROOT
+  (S
+    (NP (NNP Medical) (NN innovation))
+    (VP (MD will)
+      (VP (VB be)
+        (PP (IN at)
+          (NP
+            (NP (DT the) (NN mercy))
+            (PP (IN of)
+              (NP
+                (NP (DT the) (NN price) (NNS controls))
+                (VP (VBN hashed)
+                  (PRT (RP out))
+                  (PP (IN in)
+                    (NP (NNP Washington))))))))))
+    (. .)))
+
+nn(innovation-2, Medical-1)
+nsubj(be-4, innovation-2)
+aux(be-4, will-3)
+root(ROOT-0, be-4)
+det(mercy-7, the-6)
+prep_at(be-4, mercy-7)
+det(controls-11, the-9)
+nn(controls-11, price-10)
+prep_of(mercy-7, controls-11)
+partmod(controls-11, hashed-12)
+prt(hashed-12, out-13)
+prep_in(hashed-12, Washington-15)
+

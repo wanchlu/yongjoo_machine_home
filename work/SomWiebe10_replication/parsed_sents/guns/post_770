@@ -1,0 +1,69 @@
+(ROOT
+  (S
+    (ADVP (RB yeah))
+    (, ,)
+    (NP (FW i))
+    (VP
+      (VP (VBD reread)
+        (NP (PRP it))
+        (ADVP (RB afterward)))
+      (CC and)
+      (VP (VBD said)
+        (NP (NNS whoops))))
+    (. .)))
+
+advmod(reread-4, yeah-1)
+nsubj(reread-4, i-3)
+nsubj(said-8, i-3)
+root(ROOT-0, reread-4)
+dobj(reread-4, it-5)
+advmod(reread-4, afterward-6)
+conj_and(reread-4, said-8)
+dobj(said-8, whoops-9)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH no))
+      (, ,)
+      (CC but)
+      (NP (NNP CHL) (NNS holders))
+      (VP (VBP recognize)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (MD will)
+              (VP (VB be)
+                (VP (VBN held)
+                  (PP (TO to)
+                    (NP
+                      (NP (DT a) (JJR higher) (JJ legal) (NN standard))
+                      (PP (IN than)
+                        (NP (JJ non-CHL) (NNS holders))))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (VP (VB act)
+        (ADVP (RB accordingly))))
+    (. .)))
+
+dep(recognize-6, no-1)
+nn(holders-5, CHL-4)
+conj_but(recognize-6, holders-5)
+nsubj(recognize-6, holders-5)
+nsubj(act-22, holders-5)
+root(ROOT-0, recognize-6)
+complm(held-11, that-7)
+nsubjpass(held-11, they-8)
+aux(held-11, will-9)
+auxpass(held-11, be-10)
+ccomp(recognize-6, held-11)
+det(standard-16, a-13)
+amod(standard-16, higher-14)
+amod(standard-16, legal-15)
+prep_to(held-11, standard-16)
+amod(holders-19, non-CHL-18)
+prep_than(standard-16, holders-19)
+conj_and(recognize-6, act-22)
+advmod(act-22, accordingly-23)
+

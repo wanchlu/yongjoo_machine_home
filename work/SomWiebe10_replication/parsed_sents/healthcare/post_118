@@ -1,0 +1,51 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Universal) (NN health) (NN care) (NNS systems))
+      (VP (VBP suffer)
+        (PP (IN from)
+          (NP
+            (NP (NN inequality))
+            (PP (IN of)
+              (NP (NN care)))))))
+    (NP (DT Some) (NNS studies))
+    (VP (VBP have)
+      (VP (VBN found)
+        (SBAR (IN that)
+          (S
+            (NP (JJ universal) (NN health) (NN care) (NNS systems))
+            (VP (VBP are)
+              (ADJP (JJ vulnerable)
+                (PP (TO to)
+                  (NP
+                    (NP (JJ socio-economic) (NNS inequalities))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN care))
+                        (VP (VBN provided))))))))))))
+    (. .)))
+
+nn(systems-4, Universal-1)
+nn(systems-4, health-2)
+nn(systems-4, care-3)
+nsubj(suffer-5, systems-4)
+dep(found-13, suffer-5)
+prep_from(suffer-5, inequality-7)
+prep_of(inequality-7, care-9)
+det(studies-11, Some-10)
+nsubj(found-13, studies-11)
+aux(found-13, have-12)
+root(ROOT-0, found-13)
+complm(vulnerable-20, that-14)
+amod(systems-18, universal-15)
+nn(systems-18, health-16)
+nn(systems-18, care-17)
+nsubj(vulnerable-20, systems-18)
+cop(vulnerable-20, are-19)
+ccomp(found-13, vulnerable-20)
+amod(inequalities-23, socio-economic-22)
+prep_to(vulnerable-20, inequalities-23)
+det(care-26, the-25)
+prep_in(inequalities-23, care-26)
+partmod(care-26, provided-27)
+

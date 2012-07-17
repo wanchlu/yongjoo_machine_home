@@ -1,0 +1,35 @@
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Its))
+      (PP (IN about)
+        (NP (NN time) (NN congress))))
+    (VP (VBZ starts)
+      (S
+        (VP (VBG allowing)
+          (NP (PRP us))
+          (NP
+            (NP (NNS citizens))
+            (SBAR
+              (S
+                (NP (DT the) (NN right))
+                (VP (TO to)
+                  (VP (VB defend)
+                    (NP (PRP$ our) (NNS selves))))))))))
+    (. !)))
+
+nsubj(starts-5, Its-1)
+nn(congress-4, time-3)
+prep_about(Its-1, congress-4)
+root(ROOT-0, starts-5)
+xcomp(starts-5, allowing-6)
+iobj(allowing-6, us-7)
+dobj(allowing-6, citizens-8)
+det(right-10, the-9)
+nsubj(defend-12, right-10)
+aux(defend-12, to-11)
+infmod(citizens-8, defend-12)
+rcmod(citizens-8, defend-12)
+poss(selves-14, our-13)
+dobj(defend-12, selves-14)
+

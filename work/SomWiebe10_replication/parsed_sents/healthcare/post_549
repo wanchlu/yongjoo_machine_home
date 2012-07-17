@@ -1,0 +1,109 @@
+(ROOT
+  (S
+    (S
+      (S
+        (NP (NNP Insurance) (NNS companies))
+        (VP (VBP are)
+          (VP (VBG making)
+            (S
+              (VP (VBG healthcare)
+                (NP
+                  (NP (DT an)
+                    (ADJP (JJ unaffordable))
+                    (NN luxury))
+                  (PP (IN in)
+                    (NP (NN america)))))))))
+      (CC and)
+      (S
+        (NP (PRP it))
+        (ADVP (RB really))
+        (VP (VBZ needs)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN stopped))))))))
+    (CC and)
+    (S (CC or)
+      (S
+        (S
+          (VP (VBN regulated)
+            (ADVP (RB so))
+            (PP (IN at)
+              (NP
+                (NP (DT the)
+                  (ADJP (RB very) (JJS least))
+                  (NNS people))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBP have)
+                      (NP (NN insurance)))))))))
+        (VP (MD can)
+          (VP (VB receive)
+            (NP
+              (NP (DT the) (NN care))
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (VBP pay)
+                    (PP (IN for))))))))))
+    (. .)))
+
+nn(companies-2, Insurance-1)
+nsubj(making-4, companies-2)
+aux(making-4, are-3)
+root(ROOT-0, making-4)
+xcomp(making-4, healthcare-5)
+det(luxury-8, an-6)
+amod(luxury-8, unaffordable-7)
+dobj(healthcare-5, luxury-8)
+prep_in(luxury-8, america-10)
+nsubj(needs-14, it-12)
+xsubj(stopped-17, it-12)
+advmod(needs-14, really-13)
+conj_and(making-4, needs-14)
+aux(stopped-17, to-15)
+auxpass(stopped-17, be-16)
+xcomp(needs-14, stopped-17)
+cc(receive-31, or-19)
+csubj(receive-31, regulated-20)
+advmod(regulated-20, so-21)
+det(people-26, the-23)
+advmod(least-25, very-24)
+amod(people-26, least-25)
+prep_at(regulated-20, people-26)
+nsubj(have-28, people-26)
+rcmod(people-26, have-28)
+dobj(have-28, insurance-29)
+aux(receive-31, can-30)
+conj_and(making-4, receive-31)
+det(care-33, the-32)
+dobj(receive-31, care-33)
+prep_for(pay-35, care-33)
+nsubj(pay-35, they-34)
+rcmod(care-33, pay-35)
+
+(ROOT
+  (X
+    (ADVP (RB far)
+      (PP (TO to)
+        (NP
+          (NP (JJ many) (NNS people))
+          (SBAR
+            (S
+              (VP (VBP are)
+                (VP (VBG being)
+                  (ADJP (JJ bankrupt)
+                    (PP (IN by)
+                      (NP (DT this) (JJ current) (NN system)))))))))))))
+
+root(ROOT-0, far-1)
+amod(people-4, many-3)
+prep_to(far-1, people-4)
+aux(bankrupt-7, are-5)
+cop(bankrupt-7, being-6)
+rcmod(people-4, bankrupt-7)
+det(system-11, this-9)
+amod(system-11, current-10)
+prep_by(bankrupt-7, system-11)
+

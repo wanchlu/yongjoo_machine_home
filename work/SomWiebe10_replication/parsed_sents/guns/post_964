@@ -1,0 +1,192 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (PP (IN with)
+        (NP (NNP Johnshier))))
+    (. .)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+prep_with(agree-2, Johnshier-4)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Gun) (NN control))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (VP (VBD used)
+            (SBAR (IN as)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (VP (VBN meant)
+                    (S
+                      (VP (TO to)
+                        (VP (VB be)
+                          (VP (VBN used))))))))))))
+      (, ,)
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ is)
+            (NP
+              (NP (NN registration))
+              (, ,)
+              (CC and)
+              (NP (NN documentation))))))
+      (, ,))
+    (VP (VBZ is)
+      (NP (DT a) (JJ good) (NN idea)))
+    (. .)))
+
+nn(control-2, Gun-1)
+nsubj(idea-24, control-2)
+mark(used-5, if-4)
+dep(control-2, used-5)
+mark(meant-9, as-6)
+nsubjpass(meant-9, it-7)
+xsubj(used-12, it-7)
+auxpass(meant-9, is-8)
+advcl(used-5, meant-9)
+aux(used-12, to-10)
+auxpass(used-12, be-11)
+xcomp(meant-9, used-12)
+nsubj(registration-16, which-14)
+cop(registration-16, is-15)
+rcmod(control-2, registration-16)
+rcmod(control-2, documentation-19)
+conj_and(registration-16, documentation-19)
+cop(idea-24, is-21)
+det(idea-24, a-22)
+amod(idea-24, good-23)
+root(ROOT-0, idea-24)
+
+(ROOT
+  (S
+    (ADVP (RB However))
+    (, ,)
+    (NP (NNS democrats)
+      (CC and)
+      (NNS liberals))
+    (VP (VBP take)
+      (NP (NN gun) (NN control))
+      (SBAR (IN as) (`` ``)
+        (S
+          (NP (PRP we))
+          (VP (VBP control)
+            (NP
+              (NP (PDT all) (DT the) (NNS guns))
+              (, ,)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (VP (VBZ means)
+                    (S
+                      (NP (PRP you))
+                      (VP (VB get)
+                        (NP (NN none))))))))))))
+    (. .)))
+
+advmod(take-6, However-1)
+nsubj(take-6, democrats-3)
+conj_and(democrats-3, liberals-5)
+nsubj(take-6, liberals-5)
+root(ROOT-0, take-6)
+nn(control-8, gun-7)
+dobj(take-6, control-8)
+mark(control-12, as-9)
+nsubj(control-12, we-11)
+advcl(take-6, control-12)
+predet(guns-15, all-13)
+det(guns-15, the-14)
+dobj(control-12, guns-15)
+nsubj(means-18, guns-15)
+rcmod(guns-15, means-18)
+nsubj(get-20, you-19)
+ccomp(means-18, get-20)
+dobj(get-20, none-21)
+
+(ROOT
+  (S ('' '')
+    (S
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (S
+            (PP (IN in)
+              (NP (DT the) (JJ real) (NN world))))
+          (, ,)
+          (VP
+            (VP (MD ca) (RB n't))
+            (CC and)
+            (VP (VBZ does) (RB n't)
+              (VP (VB work))))))
+      (, ,)
+      (NP (RB as) (NNS criminals))
+      (VP (MD can)))
+    (CC and)
+    (S
+      (S
+        (VP (VB do)))
+      (VP (VBP get)
+        (NP (NNS guns))
+        (ADVP (RB regardless)
+          (PP (IN of)
+            (NP (NN gun) (NN control) (NNS laws))))))
+    (. .)))
+
+advmod(ca-8, when-2)
+ccomp(ca-8, in-3)
+det(world-6, the-4)
+amod(world-6, real-5)
+pobj(in-3, world-6)
+advcl(can-17, ca-8)
+neg(ca-8, n't-9)
+aux(work-13, does-11)
+neg(work-13, n't-12)
+conj_and(ca-8, work-13)
+advcl(can-17, work-13)
+advmod(criminals-16, as-15)
+nsubj(can-17, criminals-16)
+root(ROOT-0, can-17)
+csubj(get-20, do-19)
+conj_and(can-17, get-20)
+dobj(get-20, guns-21)
+nn(laws-26, gun-24)
+nn(laws-26, control-25)
+prep_regardless_of(get-20, laws-26)
+
+(ROOT
+  (S (CC And)
+    (NP
+      (NP (DT an) (JJ unregistered) (NN weapon))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NNS hands))
+          (PP (IN of)
+            (NP (DT a) (NN criminal))))))
+    (VP (VBZ is)
+      (ADJP (RBR more) (JJ dangerous)
+        (PP (IN than)
+          (NP (DT an) (JJ armed) (JJ registered) (NN citizen)))))
+    (. .)))
+
+cc(dangerous-13, And-1)
+det(weapon-4, an-2)
+amod(weapon-4, unregistered-3)
+nsubj(dangerous-13, weapon-4)
+det(hands-7, the-6)
+prep_in(weapon-4, hands-7)
+det(criminal-10, a-9)
+prep_of(hands-7, criminal-10)
+cop(dangerous-13, is-11)
+advmod(dangerous-13, more-12)
+root(ROOT-0, dangerous-13)
+det(citizen-18, an-15)
+amod(citizen-18, armed-16)
+amod(citizen-18, registered-17)
+prep_than(dangerous-13, citizen-18)
+

@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (ADVP (RB Actually))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP 're)
+      (ADJP (JJ right)))
+    (. .)))
+
+advmod(right-5, Actually-1)
+nsubj(right-5, you-3)
+cop(right-5, 're-4)
+root(ROOT-0, right-5)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT no) (NN need))
+        (PP (IN for)
+          (NP (PRP me)))
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (PP (TO to)
+                (NP (DT the) (NN office)))
+              (SBAR (IN since)
+                (S
+                  (NP (PRP I))
+                  (VP (MD can)
+                    (VP (VB work)
+                      (PP (IN from)
+                        (NP (NN home))))))))))))
+    (: ...)))
+
+expl('s-2, There-1)
+root(ROOT-0, 's-2)
+det(need-4, no-3)
+nsubj('s-2, need-4)
+prep_for(need-4, me-6)
+aux(go-8, to-7)
+infmod(need-4, go-8)
+det(office-11, the-10)
+prep_to(go-8, office-11)
+mark(work-15, since-12)
+nsubj(work-15, I-13)
+aux(work-15, can-14)
+advcl(go-8, work-15)
+prep_from(work-15, home-17)
+
+(ROOT
+  (PRN
+    (S
+      (ADVP (CC But)
+        (RB then))
+      (NP (PRP I))
+      (VP (MD would) (RB n't)
+        (VP (VB have)
+          (NP (NN anything))
+          (S
+            (VP (TO to)
+              (VP (VB complain)
+                (FRAG
+                  (ADJP (IN about))
+                  (: ;))))))))
+    (-RRB- -RRB-)))
+
+cc(then-2, But-1)
+advmod(have-6, then-2)
+nsubj(have-6, I-3)
+aux(have-6, would-4)
+neg(have-6, n't-5)
+root(ROOT-0, have-6)
+dobj(have-6, anything-7)
+aux(complain-9, to-8)
+xcomp(have-6, complain-9)
+dep(complain-9, about-10)
+

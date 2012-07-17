@@ -1,0 +1,410 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NNP Japan)))
+    (, ,)
+    (NP (NN everyone))
+    (VP (VBZ gets)
+      (NP (JJ equal) (NN treatment))
+      (SBAR (IN because)
+        (S
+          (NP (NN everyone))
+          (VP (VBZ gets)
+            (NP (JJ national) (NN health) (NN care))))))
+    (. .)))
+
+prep_in(gets-5, Japan-2)
+nsubj(gets-5, everyone-4)
+root(ROOT-0, gets-5)
+amod(treatment-7, equal-6)
+dobj(gets-5, treatment-7)
+mark(gets-10, because-8)
+nsubj(gets-10, everyone-9)
+advcl(gets-5, gets-10)
+amod(care-13, national-11)
+nn(care-13, health-12)
+dobj(gets-10, care-13)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT this) (NN country)))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (DT no) (NN money)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP do) (RB n't)
+      (VP (VB get)
+        (NP
+          (NP (DT a) (JJ good) (NN insurance) (NN plan))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ is) (RB not)
+                (ADJP (JJ fair))))))))
+    (. .)))
+
+det(country-3, this-2)
+prep_in(get-14, country-3)
+mark(have-7, if-5)
+nsubj(have-7, you-6)
+advcl(get-14, have-7)
+det(money-9, no-8)
+dobj(have-7, money-9)
+nsubj(get-14, you-11)
+aux(get-14, do-12)
+neg(get-14, n't-13)
+root(ROOT-0, get-14)
+det(plan-18, a-15)
+amod(plan-18, good-16)
+nn(plan-18, insurance-17)
+dobj(get-14, plan-18)
+nsubj(fair-22, plan-18)
+cop(fair-22, is-20)
+neg(fair-22, not-21)
+rcmod(plan-18, fair-22)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (NNS people))
+    (VP (VB expect)
+      (NP (DT a) (NN college) (NN student))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP (DT that) (JJ much) (NN money))))))
+    (. ?)))
+
+aux(expect-3, Do-1)
+nsubj(expect-3, people-2)
+root(ROOT-0, expect-3)
+det(student-6, a-4)
+nn(student-6, college-5)
+dobj(expect-3, student-6)
+aux(have-8, to-7)
+xcomp(expect-3, have-8)
+det(money-11, that-9)
+amod(money-11, much-10)
+dobj(have-8, money-11)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (NP (CD 2) (NNS jobs))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (ADVP (RB even))
+        (VP (VB get)
+          (NP
+            (NP
+              (QP (JJR more) (IN than) ($ $) (CD 1000)))
+            (NP (DT every) (NN month))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+num(jobs-4, 2-3)
+dobj(have-2, jobs-4)
+nsubj(get-11, I-7)
+aux(get-11, do-8)
+neg(get-11, n't-9)
+advmod(get-11, even-10)
+conj_but(have-2, get-11)
+quantmod($-14, more-12)
+quantmod($-14, than-13)
+dobj(get-11, $-14)
+number($-14, 1000-15)
+det(month-17, every-16)
+dep($-14, month-17)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADVP (RB really))
+      (VP (VBN frustrated)
+        (PP (IN with)
+          (NP (JJ American) (NN health) (NN insurance)))))
+    (. .)))
+
+nsubjpass(frustrated-4, I-1)
+auxpass(frustrated-4, am-2)
+advmod(frustrated-4, really-3)
+root(ROOT-0, frustrated-4)
+amod(insurance-8, American-6)
+nn(insurance-8, health-7)
+prep_with(frustrated-4, insurance-8)
+
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (NNP Massachusetts)))
+      (, ,)
+      (NP (EX there))
+      (VP (VBZ is)
+        (NP
+          (NP (NNP Masshealth))
+          (PP (IN for)
+            (NP (JJ poor) (NNS people))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADVP (RB only))
+        (NP
+          (NP (NNP Medicare))
+          (SBAR
+            (WHNP (WDT which))
+            (S
+              (VP (VBZ covers)
+                (NP (NN nothing))))))))
+    (. .)))
+
+prep_in(is-5, Massachusetts-2)
+expl(is-5, there-4)
+root(ROOT-0, is-5)
+nsubj(is-5, Masshealth-6)
+amod(people-9, poor-8)
+prep_for(Masshealth-6, people-9)
+nsubj(Medicare-15, it-12)
+cop(Medicare-15, 's-13)
+advmod(Medicare-15, only-14)
+conj_but(is-5, Medicare-15)
+nsubj(covers-17, Medicare-15)
+rcmod(Medicare-15, covers-17)
+dobj(covers-17, nothing-18)
+
+(ROOT
+  (S
+    (SBAR (RB so) (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP get)
+          (PP (IN into)
+            (NP (DT an) (NN accident))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD will)
+      (VP (VB end)
+        (PRT (RP up))
+        (S
+          (VP (VBG paying)
+            (NP
+              (NP (NNS thousands))
+              (PP (IN of)
+                (NP (NN money))))))))
+    (. .)))
+
+advmod(get-4, so-1)
+dep(get-4, if-2)
+nsubj(get-4, you-3)
+advcl(end-11, get-4)
+det(accident-7, an-6)
+prep_into(get-4, accident-7)
+nsubj(end-11, you-9)
+aux(end-11, will-10)
+root(ROOT-0, end-11)
+prt(end-11, up-12)
+xcomp(end-11, paying-13)
+dobj(paying-13, thousands-14)
+prep_of(thousands-14, money-16)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (ADVP (RB so)
+        (NP (JJ many) (NNS people)))
+      (VP (VBG living)
+        (PP (IN in)
+          (NP (DT this) (NN country)))))
+    (. .)))
+
+expl(living-6, There-1)
+aux(living-6, are-2)
+advmod(living-6, so-3)
+amod(people-5, many-4)
+pobj(so-3, people-5)
+root(ROOT-0, living-6)
+det(country-9, this-8)
+prep_in(living-6, country-9)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB understand)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP we))
+            (VP (VBP do) (RB n't)
+              (VP (VB have)
+                (NP (JJ national) (NN health) (NN care))))))))
+    (. .)))
+
+nsubj(understand-4, I-1)
+aux(understand-4, do-2)
+neg(understand-4, n't-3)
+root(ROOT-0, understand-4)
+advmod(have-9, why-5)
+nsubj(have-9, we-6)
+aux(have-9, do-7)
+neg(have-9, n't-8)
+advcl(understand-4, have-9)
+amod(care-12, national-10)
+nn(care-12, health-11)
+dobj(have-9, care-12)
+
+(ROOT
+  (S
+    (SBAR
+      (WHNP (WP What))
+      (S
+        (VP (VBZ annoys))))
+    (NP (PRP me))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NN medicare))
+            (CC and)
+            (NP (DT a) (JJ dental) (NN plan)))
+          (VP (VBP are)
+            (NP (CD two) (JJ separate) (NNS things))))))
+    (. .)))
+
+nsubj(annoys-2, What-1)
+dep(is-4, annoys-2)
+nsubj(is-4, me-3)
+root(ROOT-0, is-4)
+complm(things-14, that-5)
+nsubj(things-14, medicare-6)
+det(plan-10, a-8)
+amod(plan-10, dental-9)
+conj_and(medicare-6, plan-10)
+nsubj(things-14, plan-10)
+cop(things-14, are-11)
+num(things-14, two-12)
+amod(things-14, separate-13)
+ccomp(is-4, things-14)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 've)
+      (S
+        (VP (VBG visiting)
+          (NP (DT a) (NN dentist))
+          (SBAR (IN because)
+            (S
+              (NP (PRP I))
+              (VP (VBP have)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (ADJP (JJ rid))
+                      (PP (IN of)
+                        (NP
+                          (NP (PRP$ my) (NN wisdom) (NNS teeth))
+                          (SBAR
+                            (WHNP (WDT which))
+                            (S
+                              (VP (VBZ is)
+                                (NP
+                                  (NP (DT a) (NN lot))
+                                  (PP (IN of)
+                                    (NP
+                                      (NP (NN money))
+                                      (PP (IN with)
+                                        (NP (DT no) (JJ dental) (NN insurance))))))))))))))))))))
+    (. .)))
+
+nsubj('ve-2, I-1)
+root(ROOT-0, 've-2)
+xcomp('ve-2, visiting-3)
+det(dentist-5, a-4)
+dobj(visiting-3, dentist-5)
+mark(have-8, because-6)
+nsubj(have-8, I-7)
+xsubj(rid-11, I-7)
+advcl(visiting-3, have-8)
+aux(rid-11, to-9)
+dep(rid-11, get-10)
+xcomp(have-8, rid-11)
+poss(teeth-15, my-13)
+nn(teeth-15, wisdom-14)
+prep_of(rid-11, teeth-15)
+nsubj(lot-19, teeth-15)
+cop(lot-19, is-17)
+det(lot-19, a-18)
+rcmod(teeth-15, lot-19)
+prep_of(lot-19, money-21)
+det(insurance-25, no-23)
+amod(insurance-25, dental-24)
+prep_with(money-21, insurance-25)
+
+(ROOT
+  (S
+    (NP (CD one) (NN tooth))
+    (VP (VBZ costs)
+      (NP (PRP you))
+      (NP
+        (QP (RB about) (CD 350))
+        (NNS dollars)))
+    (. .)))
+
+num(tooth-2, one-1)
+nsubj(costs-3, tooth-2)
+root(ROOT-0, costs-3)
+iobj(costs-3, you-4)
+quantmod(350-6, about-5)
+num(dollars-7, 350-6)
+dobj(costs-3, dollars-7)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (PRP I))
+        (VP (VBP have)
+          (NP (CD 4) (NN wisdom) (NNS teeth)))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD will)
+      (VP (VB cost)
+        (NP (PRP me))
+        (NP
+          (NP
+            (QP (RB about) (CD 1500))
+            (NNS bucks))
+          (PP (IN in)
+            (NP (NN total))))))
+    (. .)))
+
+mark(have-3, Since-1)
+nsubj(have-3, I-2)
+advcl(cost-10, have-3)
+num(teeth-6, 4-4)
+nn(teeth-6, wisdom-5)
+dobj(have-3, teeth-6)
+nsubj(cost-10, it-8)
+aux(cost-10, will-9)
+root(ROOT-0, cost-10)
+iobj(cost-10, me-11)
+quantmod(1500-13, about-12)
+num(bucks-14, 1500-13)
+dobj(cost-10, bucks-14)
+prep_in(bucks-14, total-16)
+

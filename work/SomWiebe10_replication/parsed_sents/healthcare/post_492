@@ -1,0 +1,97 @@
+(ROOT
+  (NP (NNP #originalTopic) (NNP =) (NNP So_you_still_want_Nationalized_Health_Care)))
+
+nn(So_you_still_want_Nationalized_Health_Care-3, #originalTopic-1)
+nn(So_you_still_want_Nationalized_Health_Care-3, =-2)
+root(ROOT-0, So_you_still_want_Nationalized_Health_Care-3)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP she))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB pay)
+              (NP (PRP it))
+              (ADVP (RB back)))))))
+    (. ?)))
+
+advmod(have-4, Why-1)
+aux(have-4, should-2)
+nsubj(have-4, she-3)
+xsubj(pay-6, she-3)
+root(ROOT-0, have-4)
+aux(pay-6, to-5)
+xcomp(have-4, pay-6)
+dobj(pay-6, it-7)
+advmod(pay-6, back-8)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT the) (NN example))
+        (VP (VBN given))))
+    (, ,)
+    (NP (PRP she))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBG paying)
+          (NP (NNS taxes))
+          (PP (IN in)
+            (PP (TO to)
+              (NP
+                (NP (DT the) (NN system))
+                (PP (IN for)
+                  (NP (DT the) (JJ past) (CD 12) (NNS years)))))))))
+    (. .)))
+
+det(example-3, the-2)
+prep_in(paying-9, example-3)
+partmod(example-3, given-4)
+nsubj(paying-9, she-6)
+aux(paying-9, has-7)
+aux(paying-9, been-8)
+root(ROOT-0, paying-9)
+dobj(paying-9, taxes-10)
+prep(paying-9, in-11)
+pcomp(in-11, to-12)
+det(system-14, the-13)
+prep_to(in-11, system-14)
+det(years-19, the-16)
+amod(years-19, past-17)
+num(years-19, 12-18)
+prep_for(system-14, years-19)
+
+(ROOT
+  (FRAG (RB So) (WP what)
+    (SBAR (IN if)
+      (S
+        (NP (PRP she))
+        (VP (VBZ has)
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (NP (DT some)
+                  (ADJP (RB out) (JJ due)
+                    (PP (TO to)
+                      (NP (DT an) (NN uncontrollable))))
+                  (NN circumstance))))))))
+    (. ?)))
+
+root(ROOT-0, So-1)
+dep(So-1, what-2)
+mark(has-5, if-3)
+nsubj(has-5, she-4)
+xsubj(take-7, she-4)
+dep(So-1, has-5)
+aux(take-7, to-6)
+xcomp(has-5, take-7)
+det(circumstance-14, some-8)
+advmod(circumstance-14, out-9)
+det(uncontrollable-13, an-12)
+prep_due_to(circumstance-14, uncontrollable-13)
+dobj(take-7, circumstance-14)
+

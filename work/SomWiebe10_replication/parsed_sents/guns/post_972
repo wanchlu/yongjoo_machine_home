@@ -1,0 +1,105 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP do) (RB n't)
+      (VP (VB kill)
+        (NP (NNS people))))
+    (. .)))
+
+nsubj(kill-4, Guns-1)
+aux(kill-4, do-2)
+neg(kill-4, n't-3)
+root(ROOT-0, kill-4)
+dobj(kill-4, people-5)
+
+(ROOT
+  (NP (NNP I) (NNP DO) (NNP !!)))
+
+nn(!!-3, I-1)
+nn(!!-3, DO-2)
+root(ROOT-0, !!-3)
+
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (PRP$ our) (NN government))
+      (VP (VBD were)
+        (S
+          (VP (TO to)
+            (VP
+              (ADVP (RB ever))
+              (VB fall)
+              (PRT (RP apart))
+              (NP
+                (NP (-LRB- -LRB-) (NNP Jericho) (, ,) (NNP V))
+                (PP (IN for)
+                  (NP (NNP Vendetta)))))))))
+    (: ...)))
+
+mark(were-4, If-1)
+poss(government-3, our-2)
+nsubj(were-4, government-3)
+xsubj(fall-7, government-3)
+root(ROOT-0, were-4)
+aux(fall-7, to-5)
+advmod(fall-7, ever-6)
+xcomp(were-4, fall-7)
+prt(fall-7, apart-8)
+nn(V-12, Jericho-10)
+dobj(fall-7, V-12)
+prep_for(V-12, Vendetta-14)
+
+(ROOT
+  (S
+    (ADVP (RB -RRB-))
+    (NP (PRP we))
+    (VP (VBP have)
+      (NP (DT the) (JJ constitutional) (NN right)
+        (S
+          (VP (TO to)
+            (VP (VB bear)
+              (NP (NNS arms)))))))
+    (. .)))
+
+nsubj(have-3, we-2)
+root(ROOT-0, have-3)
+det(right-6, the-4)
+amod(right-6, constitutional-5)
+dobj(have-3, right-6)
+aux(bear-8, to-7)
+infmod(right-6, bear-8)
+dobj(bear-8, arms-9)
+
+(ROOT
+  (SBAR (IN If)
+    (S
+      (NP (PRP we))
+      (VP (VBP get)
+        (ADJP (JJ rid)
+          (PP (IN of)
+            (NP
+              (NP (DT that) (NN right))
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (MD ca) (RB n't)
+                    (VP (VB protect)
+                      (NP (PRP ourselves))
+                      (PP (IN from)
+                        (NP (PRP$ our) (JJ own) (NN government))))))))))))))
+
+mark(rid-4, If-1)
+nsubj(rid-4, we-2)
+dep(rid-4, get-3)
+root(ROOT-0, rid-4)
+det(right-7, that-6)
+prep_of(rid-4, right-7)
+nsubj(protect-11, we-8)
+aux(protect-11, ca-9)
+neg(protect-11, n't-10)
+rcmod(right-7, protect-11)
+dobj(protect-11, ourselves-12)
+poss(government-16, our-14)
+amod(government-16, own-15)
+prep_from(protect-11, government-16)
+

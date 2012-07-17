@@ -1,0 +1,101 @@
+(ROOT
+  (S
+    (NP (NNP God))
+    (ADVP (RB obviously))
+    (VP (VBZ exists))
+    (. .) (. .)))
+
+nsubj(exists-3, God-1)
+advmod(exists-3, obviously-2)
+root(ROOT-0, exists-3)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Everything))
+      (PP (IN in)
+        (NP (DT the) (NN world))))
+    (VP (VBZ needs)
+      (NP (DT a) (NN creator)))
+    (. .) (. .)))
+
+nsubj(needs-5, Everything-1)
+det(world-4, the-3)
+prep_in(Everything-1, world-4)
+root(ROOT-0, needs-5)
+det(creator-7, a-6)
+dobj(needs-5, creator-7)
+
+(ROOT
+  (S
+    (PP (IN Like)
+      (NP (DT a) (NN watchmaker)))
+    (NP (NNS makes))
+    (VP (VBZ watches))
+    (. .) (. .)))
+
+det(watchmaker-3, a-2)
+prep_like(watches-5, watchmaker-3)
+nsubj(watches-5, makes-4)
+root(ROOT-0, watches-5)
+
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (VP (VB look)
+          (PP (IN around)
+            (NP
+              (NP (DT the) (NN beauty))
+              (PP (IN of)
+                (NP (DT this) (NN world)))))
+          (. .))))
+    (. .)))
+
+mark(look-3, If-1)
+nsubj(look-3, we-2)
+root(ROOT-0, look-3)
+det(beauty-6, the-5)
+prep_around(look-3, beauty-6)
+det(world-9, this-8)
+prep_of(beauty-6, world-9)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (MD can)
+      (ADVP (RB only))
+      (VP (VB be)
+        (NP
+          (NP (CD one) (NN thing))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD could)
+                (VP (VB have)
+                  (VP (VBN created)
+                    (NP (DT this))))))))))
+    (. .) (. .)))
+
+expl(thing-6, There-1)
+aux(thing-6, can-2)
+advmod(thing-6, only-3)
+cop(thing-6, be-4)
+num(thing-6, one-5)
+root(ROOT-0, thing-6)
+nsubj(created-10, thing-6)
+aux(created-10, could-8)
+aux(created-10, have-9)
+rcmod(thing-6, created-10)
+dobj(created-10, this-11)
+
+(ROOT
+  (S (CC And)
+    (NP (DT that))
+    (VP (VBZ 's))))
+
+cc('s-3, And-1)
+nsubj('s-3, that-2)
+root(ROOT-0, 's-3)
+

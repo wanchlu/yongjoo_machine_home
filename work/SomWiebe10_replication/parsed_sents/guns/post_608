@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP state)
+      (SBAR (IN that) (`` ``)
+        (S
+          (NP (DT the) (NN right)
+            (S
+              (VP (TO to)
+                (VP (VB bear)
+                  (NP (NNS arms))))))
+          (VP (VBZ belongs)
+            (PP (TO to)
+              (NP
+                (NP (DT the) (NNP State) (POS 's))
+                (NN militia)))))))
+    (. .)))
+
+nsubj(state-2, You-1)
+root(ROOT-0, state-2)
+complm(belongs-10, that-3)
+det(right-6, the-5)
+nsubj(belongs-10, right-6)
+aux(bear-8, to-7)
+infmod(right-6, bear-8)
+dobj(bear-8, arms-9)
+ccomp(state-2, belongs-10)
+det(State-13, the-12)
+poss(militia-15, State-13)
+prep_to(belongs-10, militia-15)
+
+(ROOT
+  (FRAG
+    (ADVP (RB ''))
+    (, ,)
+    (PP (IN after)
+      (S
+        (VP (VBG quoting)
+          (NP (DT the) (JJ second) (NN amendment)))))
+    (. !)))
+
+dep(''-1, after-3)
+pcomp(after-3, quoting-4)
+det(amendment-7, the-5)
+amod(amendment-7, second-6)
+dobj(quoting-4, amendment-7)
+
+(ROOT
+  (S
+    (NP (NNP WHO))
+    (VP (MD may)
+      (VP (VB ask)
+        (SBAR
+          (S
+            (VP (VBZ is)
+              (VP ('' '')
+                (NP (DT The) (JJ PEOPLE))))))))
+    ('' '') (. ?)))
+
+nsubj(ask-3, WHO-1)
+aux(ask-3, may-2)
+root(ROOT-0, ask-3)
+aux(PEOPLE-7, is-4)
+det(PEOPLE-7, The-6)
+ccomp(ask-3, PEOPLE-7)
+

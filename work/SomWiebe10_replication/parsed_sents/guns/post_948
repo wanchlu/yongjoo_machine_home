@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNP Way))
+      (NP (JJR more) (NNS people)))
+    (VP (VBP are)
+      (VP (VBN killed)
+        (NP (DT each) (NN year))
+        (PP (IN by)
+          (NP (NN car) (NNS crashes)))
+        (ADVP (IN than)
+          (PP (IN by)
+            (NP (NN gun) (NN violence))))))
+    (. .)))
+
+nsubjpass(killed-5, Way-1)
+amod(people-3, more-2)
+dep(Way-1, people-3)
+auxpass(killed-5, are-4)
+root(ROOT-0, killed-5)
+det(year-7, each-6)
+tmod(killed-5, year-7)
+nn(crashes-10, car-9)
+agent(killed-5, crashes-10)
+advmod(killed-5, than-11)
+nn(violence-14, gun-13)
+prep_by(than-11, violence-14)
+
+(ROOT
+  (SQ (NNP Should)
+    (NP (PRP we))
+    (VP (VB ban)
+      (NP (NNS cars))
+      (ADVP (RB too)))
+    (. ?)))
+
+dep(ban-3, Should-1)
+nsubj(ban-3, we-2)
+root(ROOT-0, ban-3)
+dobj(ban-3, cars-4)
+advmod(ban-3, too-5)
+

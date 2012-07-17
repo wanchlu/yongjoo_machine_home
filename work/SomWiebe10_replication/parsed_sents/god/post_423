@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ Old) (NN Testament))
+    (VP (VBZ is)
+      (NP (DT the)
+        (ADJP (JJS oldest) (JJ reliable))
+        (NN text)))
+    (. .)))
+
+det(Testament-3, The-1)
+amod(Testament-3, Old-2)
+nsubj(text-8, Testament-3)
+cop(text-8, is-4)
+det(text-8, the-5)
+dep(reliable-7, oldest-6)
+amod(text-8, reliable-7)
+root(ROOT-0, text-8)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ has)
+      (VP (VBN passed)
+        (S
+          (NP (DT the) (CD three) (JJ scientific) (NNS tests))
+          (VP (TO to)
+            (VP (VB prove)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (VP (VBZ is)
+                    (ADJP (JJ reliable))))))))))
+    (. .)))
+
+nsubj(passed-3, It-1)
+aux(passed-3, has-2)
+root(ROOT-0, passed-3)
+det(tests-7, the-4)
+num(tests-7, three-5)
+amod(tests-7, scientific-6)
+nsubj(prove-9, tests-7)
+aux(prove-9, to-8)
+xcomp(passed-3, prove-9)
+complm(reliable-13, that-10)
+nsubj(reliable-13, it-11)
+cop(reliable-13, is-12)
+ccomp(prove-9, reliable-13)
+
+(ROOT
+  (S
+    (NP (JJ Many) (JJ outside) (NNS sources))
+    (VP (VBP provide)
+      (NP (NN proof))
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NN accuracy))
+          (PP (IN of)
+            (NP (DT the) (NNP Bible))))))
+    (. .)))
+
+amod(sources-3, Many-1)
+amod(sources-3, outside-2)
+nsubj(provide-4, sources-3)
+root(ROOT-0, provide-4)
+dobj(provide-4, proof-5)
+det(accuracy-8, the-7)
+prep_to(provide-4, accuracy-8)
+det(Bible-11, the-10)
+prep_of(accuracy-8, Bible-11)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ many) (NN account))
+        (PP (IN of)
+          (NP
+            (NP (DT the) (NN flood))
+            (PRN (-LRB- -LRB-)
+              (S
+                (NP (NNP Genesis) (NNP 6-8))
+                (, ,)
+                (NP (PRP I))
+                (VP (VBP think)))
+              (-RRB- -RRB-))))))))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(account-4, many-3)
+nsubj(are-2, account-4)
+det(flood-7, the-6)
+prep_of(account-4, flood-7)
+nn(6-8-10, Genesis-9)
+nsubj(think-13, 6-8-10)
+nsubj(think-13, I-12)
+dep(flood-7, think-13)
+

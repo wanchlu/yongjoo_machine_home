@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (S
+      (NP (VB Call))
+      (VP (VBZ is)
+        (VP (VBN socialised)
+          (NP (NN medicine))
+          (SBAR (IN if)
+            (S
+              (NP (PRP you))
+              (VP (MD will)))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP
+        (NP (DT the) (JJ universal) (NN health) (NNS schemes))
+        (PP (IN of)
+          (NP (NNP Canada) (, ,) (NNP Great) (NNP Britain)
+            (CC and)
+            (NNP Australia))))
+      (VP (VBD cost)
+        (SBAR
+          (S
+            (NP
+              (NP (JJR less))
+              (CC and)
+              (NP
+                (NP (DT the) (NNS people))
+                (PP (IN in)
+                  (NP (DT these) (NNS countries)))))
+            (VP (VBP have)
+              (NP (DT a) (JJR higher) (JJ average) (NN life) (NN expectancy))
+              (PP (IN than)
+                (NP (DT the) (NNP USA))))))))
+    (. .)))
+
+nsubjpass(socialised-3, Call-1)
+auxpass(socialised-3, is-2)
+root(ROOT-0, socialised-3)
+dobj(socialised-3, medicine-4)
+mark(will-7, if-5)
+nsubj(will-7, you-6)
+advcl(socialised-3, will-7)
+det(schemes-13, the-10)
+amod(schemes-13, universal-11)
+nn(schemes-13, health-12)
+nsubj(cost-21, schemes-13)
+nn(Britain-18, Canada-15)
+prep_of(schemes-13, Great-17)
+conj_and(Britain-18, Great-17)
+prep_of(schemes-13, Britain-18)
+prep_of(schemes-13, Australia-20)
+conj_and(Britain-18, Australia-20)
+conj_but(socialised-3, cost-21)
+nsubj(have-29, less-22)
+det(people-25, the-24)
+conj_and(less-22, people-25)
+nsubj(have-29, people-25)
+det(countries-28, these-27)
+prep_in(people-25, countries-28)
+ccomp(cost-21, have-29)
+det(expectancy-34, a-30)
+amod(expectancy-34, higher-31)
+amod(expectancy-34, average-32)
+nn(expectancy-34, life-33)
+dobj(have-29, expectancy-34)
+det(USA-37, the-36)
+prep_than(have-29, USA-37)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN cry))
+      (, ,) (`` ``)
+      (NP (NNP Socialised) (NN medicine))
+      ('' ''))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ bogey) (NN man))
+        (, ,)
+        (VP (VBN pushed)
+          (PP (IN by)
+            (NP
+              (NP (DT those))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBP benefit)
+                    (PP (IN from)
+                      (NP (DT the) (JJ present) (NNS arrangements)))))))))))
+    (. .)))
+
+det(cry-2, The-1)
+nsubj(man-11, cry-2)
+nn(medicine-6, Socialised-5)
+dep(cry-2, medicine-6)
+cop(man-11, is-8)
+det(man-11, a-9)
+amod(man-11, bogey-10)
+root(ROOT-0, man-11)
+partmod(man-11, pushed-13)
+agent(pushed-13, those-15)
+nsubj(benefit-17, those-15)
+rcmod(those-15, benefit-17)
+det(arrangements-21, the-19)
+amod(arrangements-21, present-20)
+prep_from(benefit-17, arrangements-21)
+

@@ -1,0 +1,39 @@
+(ROOT
+  (FRAG
+    (ADVP (RB as) (RB long))
+    (SBAR (IN as)
+      (S
+        (NP
+          (NP (NNS people))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (NP (NNS guns))))))
+        (VP (VBP use)
+          (NP (PRP they))
+          (ADVP (RB responsibly))
+          (SBAR
+            (S
+              (NP (PRP they))
+              (VP (MD should)
+                (ADVP (RB never))
+                (VP (VB be)
+                  (VP (VBN banned)))))))))))
+
+advmod(long-2, as-1)
+root(ROOT-0, long-2)
+mark(use-8, as-3)
+nsubj(have-6, people-4)
+nsubj(use-8, people-4)
+rcmod(people-4, have-6)
+dobj(have-6, guns-7)
+dep(long-2, use-8)
+dobj(use-8, they-9)
+advmod(use-8, responsibly-10)
+nsubjpass(banned-15, they-11)
+aux(banned-15, should-12)
+neg(banned-15, never-13)
+auxpass(banned-15, be-14)
+dep(use-8, banned-15)
+

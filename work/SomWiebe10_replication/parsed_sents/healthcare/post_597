@@ -1,0 +1,56 @@
+(ROOT
+  (S
+    (SBAR (RB Not)
+      (WHADVP (WRB when))
+      (S
+        (S
+          (VP (VBG failing)
+            (S
+              (VP (TO to)
+                (VP (VB address)
+                  (NP (DT the) (NN cause)))))))
+        (VP (VBZ leads)
+          (PP (TO to)
+            (NP
+              (ADJP (JJ unhappy)
+                (NP
+                  (NP (NNS customers))
+                  (, ,)
+                  (ADJP (JJ unhappy))))
+              (NNS customers))))))
+    (NP (DT that))
+    (VP (VBP look)
+      (PP (TO to)
+        (NP (JJ other) (NN healthcare) (NNS companies))))
+    (. .)))
+
+dep(leads-8, Not-1)
+advmod(leads-8, when-2)
+csubj(leads-8, failing-3)
+aux(address-5, to-4)
+xcomp(failing-3, address-5)
+det(cause-7, the-6)
+dobj(address-5, cause-7)
+dep(look-16, leads-8)
+amod(customers-14, unhappy-10)
+dep(unhappy-10, customers-11)
+amod(customers-11, unhappy-13)
+prep_to(leads-8, customers-14)
+nsubj(look-16, that-15)
+root(ROOT-0, look-16)
+amod(companies-20, other-18)
+nn(companies-20, healthcare-19)
+prep_to(look-16, companies-20)
+
+(ROOT
+  (NP
+    (NP (NNP Yay))
+    (PP (IN for)
+      (NP (NN king) (NN campitalism))
+      (: :))
+    (-RRB- -RRB-)))
+
+root(ROOT-0, Yay-1)
+nn(campitalism-4, king-3)
+prep_for(Yay-1, campitalism-4)
+

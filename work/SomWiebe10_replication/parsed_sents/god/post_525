@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB only))
+    (VP (VBD joined)
+      (S
+        (VP (TO to)
+          (VP (VB say)
+            (NP (DT this))))))
+    (. .)))
+
+nsubj(joined-3, I-1)
+xsubj(say-5, I-1)
+advmod(joined-3, only-2)
+root(ROOT-0, joined-3)
+aux(say-5, to-4)
+xcomp(joined-3, say-5)
+dobj(say-5, this-6)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NNP God))
+          (VP (VBZ exists)
+            (SBAR (IN since)
+              (S
+                (S
+                  (NP (PRP it))
+                  (VP (VBD was)
+                    (VP (VBN beaten)
+                      (PP (IN into)
+                        (NP (PRP$ my) (NN brain)))
+                      (PP (IN as)
+                        (NP (DT a) (NN kid))))))
+                (CC and)
+                (S
+                  (ADVP (RB now))
+                  (NP (FW i))
+                  (VP (VBP believe)
+                    (S
+                      (NP (PRP it))
+                      (VP (TO to)
+                        (VP (VB be)
+                          (ADJP (JJ true))
+                          (ADVP (RB now))
+                          (SBAR (IN that)
+                            (S
+                              (NP (PRP I))
+                              (VP (VBP 'm)
+                                (NP (DT an) (NN adult))))))))))))))))))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(exists-4, God-3)
+ccomp(think-2, exists-4)
+mark(beaten-8, since-5)
+nsubjpass(beaten-8, it-6)
+auxpass(beaten-8, was-7)
+advcl(exists-4, beaten-8)
+poss(brain-11, my-10)
+prep_into(beaten-8, brain-11)
+det(kid-14, a-13)
+prep_as(beaten-8, kid-14)
+advmod(believe-18, now-16)
+nsubj(believe-18, i-17)
+advcl(exists-4, believe-18)
+conj_and(beaten-8, believe-18)
+nsubj(true-22, it-19)
+aux(true-22, to-20)
+cop(true-22, be-21)
+xcomp(believe-18, true-22)
+advmod(true-22, now-23)
+complm(adult-28, that-24)
+nsubj(adult-28, I-25)
+cop(adult-28, 'm-26)
+det(adult-28, an-27)
+ccomp(true-22, adult-28)
+

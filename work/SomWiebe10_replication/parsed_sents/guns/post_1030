@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (PP (IN for)
+        (NP (NN self) (NN defense)
+          (CC and)
+          (NN plus)))
+      (SBAR (IN if)
+        (S
+          (NP (NN someone))
+          (VP (VBZ is)
+            (VP (VBG trying)
+              (S
+                (VP (TO to)
+                  (VP (VB kill)
+                    (NP (PRP you))
+                    (SBAR
+                      (S
+                        (NP (PRP you))
+                        (VP (VBP have)
+                          (NP (NN protection)))))))))))))))
+
+nsubj(is-2, It-1)
+root(ROOT-0, is-2)
+nn(defense-5, self-4)
+prep_for(is-2, defense-5)
+prep_for(is-2, plus-7)
+conj_and(defense-5, plus-7)
+mark(trying-11, if-8)
+nsubj(trying-11, someone-9)
+xsubj(kill-13, someone-9)
+aux(trying-11, is-10)
+advcl(is-2, trying-11)
+aux(kill-13, to-12)
+xcomp(trying-11, kill-13)
+dobj(kill-13, you-14)
+nsubj(have-16, you-15)
+dep(kill-13, have-16)
+dobj(have-16, protection-17)
+

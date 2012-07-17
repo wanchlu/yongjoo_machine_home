@@ -1,0 +1,55 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP do)
+      (VP (VB pay)
+        (PP (IN for)
+          (NP (NN police)))))
+    (. .)))
+
+nsubj(pay-3, You-1)
+aux(pay-3, do-2)
+root(ROOT-0, pay-3)
+prep_for(pay-3, police-5)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP
+          (NP (PRP$ your) (NNS paychecks))
+          (, ,)
+          (NP (PRP$ your) (JJ parking\/speeding) (NNS tickets)))
+        (, ,)
+        (CC and)
+        (PP (IN for)
+          (NP
+            (NP (DT some) (NNS services))
+            (VP (VBN performed)
+              (PP (IN by)
+                (NP (DT the) (NN police))))))))
+    (NP (PRP you))
+    (VP (VBP do)
+      (VP (VB pay)
+        (NP (PRP them))
+        (ADVP (RB directly))))
+    (. .)))
+
+poss(paychecks-3, your-2)
+prep_in(pay-19, paychecks-3)
+poss(tickets-7, your-5)
+amod(tickets-7, parking\/speeding-6)
+appos(paychecks-3, tickets-7)
+conj_and(paychecks-3, for-10)
+prep_in(pay-19, for-10)
+det(services-12, some-11)
+prep_for(paychecks-3, services-12)
+partmod(services-12, performed-13)
+det(police-16, the-15)
+agent(performed-13, police-16)
+nsubj(pay-19, you-17)
+aux(pay-19, do-18)
+root(ROOT-0, pay-19)
+dobj(pay-19, them-20)
+advmod(pay-19, directly-21)
+

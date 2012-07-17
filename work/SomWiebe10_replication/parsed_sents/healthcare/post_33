@@ -1,0 +1,208 @@
+(ROOT
+  (S
+    (NP (JJ Private) (NNS insurers))
+    (VP (VBN ration)
+      (NP
+        (QP (CD as-much)
+          (CC or)
+          (JJR more)))
+      (PP (IN than)
+        (NP (JJ public) (NN insurance))))
+    (. .)))
+
+amod(insurers-2, Private-1)
+nsubj(ration-3, insurers-2)
+root(ROOT-0, ration-3)
+dobj(ration-3, as-much-4)
+dobj(ration-3, more-6)
+conj_or(as-much-4, more-6)
+quantmod(as-much-4, more-6)
+amod(insurance-9, public-8)
+prep_than(ration-3, insurance-9)
+
+(ROOT
+  (S
+    (NP (NNS Critics))
+    (ADVP (RB frequently))
+    (VP (VBP argue)
+      (SBAR (IN that)
+        (S
+          (NP (JJ government-run) (NN health) (NN care))
+          (VP (VBZ involves)
+            (NP
+              (NP (DT the) (NN government))
+              (VP (`` ``) (VBG rationing) ('' '')
+                (NP (NN health) (NN care))))))))
+    (. .)))
+
+nsubj(argue-3, Critics-1)
+advmod(argue-3, frequently-2)
+root(ROOT-0, argue-3)
+complm(involves-8, that-4)
+amod(care-7, government-run-5)
+nn(care-7, health-6)
+nsubj(involves-8, care-7)
+ccomp(argue-3, involves-8)
+det(government-10, the-9)
+dobj(involves-8, government-10)
+partmod(government-10, rationing-12)
+nn(care-15, health-14)
+dobj(rationing-12, care-15)
+
+(ROOT
+  (S (CC Yet)
+    (, ,)
+    (NP (JJ private) (NN insurance) (NNS companies))
+    (VP
+      (VP (`` ``) (VB ration) ('' '')
+        (PP (TO to)
+          (NP
+            (NP (DT an)
+              (ADJP (RB even) (JJR greater))
+              (NN extent))
+            (PP (IN by)
+              (S
+                (VP
+                  (VP (VBG denying)
+                    (NP (NNS claims)))
+                  (CC and)
+                  (VP (VBG developing)
+                    (NP
+                      (NP (NNS methods))
+                      (PP (IN for)
+                        (NP (JJ maximize) (NNS profits)))))))))))
+      (, ,)
+      (CC and)
+      (VP (VB minimize)
+        (NP (NNS outlays))
+        (PP (TO to)
+          (NP
+            (NP (DT those))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBP are)
+                  (VP (VBG insuring)))))))))
+    (. .)))
+
+amod(companies-5, private-3)
+nn(companies-5, insurance-4)
+nsubj(ration-7, companies-5)
+nsubj(minimize-25, companies-5)
+root(ROOT-0, ration-7)
+det(extent-13, an-10)
+advmod(greater-12, even-11)
+amod(extent-13, greater-12)
+prep_to(ration-7, extent-13)
+prepc_by(extent-13, denying-15)
+dobj(denying-15, claims-16)
+prepc_by(extent-13, developing-18)
+conj_and(denying-15, developing-18)
+dobj(developing-18, methods-19)
+amod(profits-22, maximize-21)
+prep_for(methods-19, profits-22)
+conj_and(ration-7, minimize-25)
+dobj(minimize-25, outlays-26)
+prep_to(minimize-25, those-28)
+dobj(insuring-31, those-28)
+nsubj(insuring-31, they-29)
+aux(insuring-31, are-30)
+rcmod(those-28, insuring-31)
+
+(ROOT
+  (S ('' '')
+    (PP
+      (NP (NNP Rationing) ('' ''))
+      (IN in)
+      (NP
+        (NP (DT this))
+        (SBAR
+          (S
+            (VP (VBP sense))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (JJ core) (NNS businesses) (NN model))
+        (PP (IN of)
+          (NP (NN insurance) (NNS companies)))))
+    (. .)))
+
+dep(model-11, Rationing-2)
+prep_in(model-11, this-5)
+rcmod(this-5, sense-6)
+cop(model-11, is-7)
+det(model-11, the-8)
+amod(model-11, core-9)
+nn(model-11, businesses-10)
+root(ROOT-0, model-11)
+nn(companies-14, insurance-13)
+prep_of(model-11, companies-14)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB How))
+    (SQ (MD can)
+      (NP (DT a) (JJ government-run) (NN insurance) (NN option))
+      (VP (VB be)
+        (ADJP
+          (ADJP (RB any) (JJR worse))
+          (SBAR (IN than)
+            (S
+              (NP
+                (NP (DT this))
+                (, ,)
+                (SBAR
+                  (WHADVP
+                    (ADVP (RB particularly))
+                    (WRB when))
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ does) (RB not)
+                      (VP (VB have)
+                        (NP (DT the) (JJ for-profit) (NN motive))))))
+                (, ,))
+              (ADVP (RB so))
+              (VP (MD will)
+                (VP (VB offer)
+                  (PP (IN as)
+                    (NP (JJ much) (NN health) (NN care)))
+                  (PP (TO to)
+                    (NP
+                      (NP
+                        (QP (RB as) (JJ many))
+                        (NNS people))
+                      (ADJP (RB as) (JJ possible)))))))))))
+    (. ?)))
+
+advmod(worse-9, How-1)
+aux(worse-9, can-2)
+det(option-6, a-3)
+amod(option-6, government-run-4)
+nn(option-6, insurance-5)
+nsubj(worse-9, option-6)
+cop(worse-9, be-7)
+advmod(worse-9, any-8)
+root(ROOT-0, worse-9)
+mark(offer-25, than-10)
+tmod(have-18, this-11)
+nsubj(offer-25, this-11)
+advmod(when-14, particularly-13)
+advmod(have-18, when-14)
+nsubj(have-18, it-15)
+aux(have-18, does-16)
+neg(have-18, not-17)
+dep(this-11, have-18)
+det(motive-21, the-19)
+amod(motive-21, for-profit-20)
+dobj(have-18, motive-21)
+advmod(offer-25, so-23)
+aux(offer-25, will-24)
+dep(worse-9, offer-25)
+amod(care-29, much-27)
+nn(care-29, health-28)
+prep_as(offer-25, care-29)
+quantmod(many-32, as-31)
+num(people-33, many-32)
+prep_to(offer-25, people-33)
+advmod(possible-35, as-34)
+amod(people-33, possible-35)
+

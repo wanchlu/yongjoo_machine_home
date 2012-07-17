@@ -1,0 +1,77 @@
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (NN god))
+        (VP (VBD was) (RB n't)
+          (ADJP (JJ real)))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (VBP are)
+      (NP (PRP we))
+      (ADJP (JJ alive)))
+    (. .)))
+
+mark(real-5, If-1)
+nsubj(real-5, god-2)
+cop(real-5, was-3)
+neg(real-5, n't-4)
+advcl(alive-10, real-5)
+advmod(alive-10, why-7)
+cop(alive-10, are-8)
+nsubj(alive-10, we-9)
+root(ROOT-0, alive-10)
+
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB \/))
+      (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP say)
+          (NP (NN cavemen)))))
+    (, ,)
+    (NP
+      (NP (RB then))
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (VP (VBD created)
+            (S
+              (NP (DT the) (JJ caveman) (NNS \/) (-RRB- -RRB-))
+              (NP (DT Any) (JJ other) (NNS theories)))
+            (, ,)
+            (S
+              (ADVP (RB just))
+              (VP (VB ask)
+                (NP (PRP yourself))
+                (SBAR
+                  (WHADVP (WRB how))
+                  (S
+                    (VP (VBD was)
+                      (NP (PRP it)))))))))))
+    (VP (VBD created))))
+
+advmod(say-4, \/-1)
+dep(say-4, If-2)
+nsubj(say-4, you-3)
+advcl(created-24, say-4)
+dobj(say-4, cavemen-5)
+nsubj(created-9, then-7)
+nsubj(created-24, then-7)
+rcmod(then-7, created-9)
+det(\/-12, the-10)
+amod(\/-12, caveman-11)
+nsubj(theories-16, \/-12)
+det(theories-16, Any-14)
+amod(theories-16, other-15)
+xcomp(created-9, theories-16)
+advmod(ask-19, just-18)
+ccomp(created-9, ask-19)
+dobj(ask-19, yourself-20)
+advmod(it-23, how-21)
+cop(it-23, was-22)
+dep(ask-19, it-23)
+root(ROOT-0, created-24)
+

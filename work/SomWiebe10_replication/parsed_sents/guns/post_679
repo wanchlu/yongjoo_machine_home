@@ -1,0 +1,244 @@
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP (PRP I))
+        (VP (VBP agree)
+          (PP (IN with)
+            (NP (PRP$ your) (JJ basic) (NN point))))))
+    (, ,)
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (PRP I))
+        (VP (VBP think)))
+      (-RRB- -RRB-))
+    (NP (PRP you))
+    (ADVP (RB certainly))
+    (VP (VB come)
+      (S
+        (S
+          (ADVP (RB off) (RB as))
+          (ADJP (JJ irrational)))
+        (CC and)
+        (S
+          (ADVP
+            (NP (DT a) (NN tad))
+            (RB bit))
+          (ADJP (JJ crazy)))))
+    (. .)))
+
+mark(agree-3, While-1)
+nsubj(agree-3, I-2)
+advcl(come-15, agree-3)
+poss(point-7, your-5)
+amod(point-7, basic-6)
+prep_with(agree-3, point-7)
+nsubj(think-11, I-10)
+parataxis(come-15, think-11)
+nsubj(come-15, you-13)
+advmod(come-15, certainly-14)
+root(ROOT-0, come-15)
+advmod(as-17, off-16)
+advmod(irrational-18, as-17)
+dep(come-15, irrational-18)
+det(tad-21, a-20)
+npadvmod(bit-22, tad-21)
+advmod(crazy-23, bit-22)
+dep(come-15, crazy-23)
+conj_and(irrational-18, crazy-23)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (ADVP (RB just))
+    (VP (VBZ gives)
+      (NP (DT the) (JJ other) (NN side))
+      (NP (JJR more) (NN ammunition)))
+    (. .)))
+
+nsubj(gives-3, It-1)
+advmod(gives-3, just-2)
+root(ROOT-0, gives-3)
+det(side-6, the-4)
+amod(side-6, other-5)
+iobj(gives-3, side-6)
+amod(ammunition-8, more-7)
+dobj(gives-3, ammunition-8)
+
+(ROOT
+  (SQ (VBZ Is)
+    (NP (DT the) (NNP Brady) (NNP Campaing))
+    (ADJP (JJ dangerous))
+    (. ?)))
+
+cop(dangerous-5, Is-1)
+det(Campaing-4, the-2)
+nn(Campaing-4, Brady-3)
+nsubj(dangerous-5, Campaing-4)
+root(ROOT-0, dangerous-5)
+
+(ROOT
+  (INTJ (UH Yes) (. .)))
+
+root(ROOT-0, Yes-1)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT that) (NN statement))
+    (VP (VB need)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP
+              (NP (DT the) (JJ first) (NN line))
+              (PP (IN with)
+                (NP (DT an) (NN exclaimation) (NN point))))
+            (, ,)
+            (PP (IN in)
+              (NP
+                (NP (DT an) (NN argument))
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (VBZ is) (RB n't)
+                      (ADVP (RB even))
+                      (PP (IN about)
+                        (NP (DT the) (NNP Brady) (NNP Campaign))))))))))))
+    (. ?)))
+
+dep(need-4, Does-1)
+det(statement-3, that-2)
+nsubj(need-4, statement-3)
+xsubj(line-9, statement-3)
+root(ROOT-0, need-4)
+aux(line-9, to-5)
+cop(line-9, be-6)
+det(line-9, the-7)
+amod(line-9, first-8)
+xcomp(need-4, line-9)
+det(point-13, an-11)
+nn(point-13, exclaimation-12)
+prep_with(line-9, point-13)
+det(argument-17, an-16)
+prep_in(line-9, argument-17)
+nsubj(is-19, argument-17)
+rcmod(argument-17, is-19)
+neg(is-19, n't-20)
+advmod(is-19, even-21)
+det(Campaign-25, the-23)
+nn(Campaign-25, Brady-24)
+prep_about(is-19, Campaign-25)
+
+(ROOT
+  (S
+    (ADJP (VB No.))
+    (. .)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP You))
+      (VP (VBP 're)
+        (PP (IN on)
+          (NP (DT the) (JJ right) (NN track)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP you))
+      (VP (VBP need)
+        (S
+          (VP (TO to)
+            (VP
+              (VP (VB take)
+                (NP (DT a) (NN chill) (NN pill)))
+              (CC and)
+              (VP (VB present)
+                (NP (PRP$ your) (NNS arguments))
+                (PP (IN in)
+                  (NP (DT a)
+                    (ADJP (JJ calm) (, ,) (JJ rational)
+                      (CC and)
+                      (JJ reasonable))
+                    (NN way)))))))))
+    (. .)))
+
+nsubj('re-2, You-1)
+root(ROOT-0, 're-2)
+det(track-6, the-4)
+amod(track-6, right-5)
+prep_on('re-2, track-6)
+nsubj(need-10, you-9)
+xsubj(take-12, you-9)
+conj_but('re-2, need-10)
+aux(take-12, to-11)
+xcomp(need-10, take-12)
+det(pill-15, a-13)
+nn(pill-15, chill-14)
+dobj(take-12, pill-15)
+xcomp(need-10, present-17)
+conj_and(take-12, present-17)
+poss(arguments-19, your-18)
+dobj(present-17, arguments-19)
+det(way-27, a-21)
+amod(way-27, calm-22)
+conj_and(calm-22, rational-24)
+amod(way-27, rational-24)
+conj_and(calm-22, reasonable-26)
+amod(way-27, reasonable-26)
+prep_in(present-17, way-27)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VB sound)
+          (PP (IN like)
+            (NP (DT a) (JJ crazy) (NN person))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (VBP 're) (RB not)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB convince)
+              (NP (PRP them))
+              (SBAR (IN that)
+                (S
+                  (S
+                    (VP (VBG letting)
+                      (S
+                        (NP (PRP you))
+                        (VP (VB keep)
+                          (NP (PRP$ your) (NNS guns))))))
+                  (VP (VBZ is)
+                    (NP (DT a) (JJ good) (NN idea))))))))))
+    (. .)))
+
+mark(sound-3, If-1)
+nsubj(sound-3, you-2)
+advcl(going-12, sound-3)
+det(person-7, a-5)
+amod(person-7, crazy-6)
+prep_like(sound-3, person-7)
+nsubj(going-12, you-9)
+xsubj(convince-14, you-9)
+aux(going-12, 're-10)
+neg(going-12, not-11)
+root(ROOT-0, going-12)
+aux(convince-14, to-13)
+xcomp(going-12, convince-14)
+dobj(convince-14, them-15)
+complm(idea-25, that-16)
+csubj(idea-25, letting-17)
+nsubj(keep-19, you-18)
+ccomp(letting-17, keep-19)
+poss(guns-21, your-20)
+dobj(keep-19, guns-21)
+cop(idea-25, is-22)
+det(idea-25, a-23)
+amod(idea-25, good-24)
+ccomp(convince-14, idea-25)
+

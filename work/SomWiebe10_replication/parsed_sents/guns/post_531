@@ -1,0 +1,129 @@
+(ROOT
+  (S
+    (NP (DT This) (NN chart))
+    (VP (VBZ is)
+      (ADVP (IN out)
+        (PP (IN of)
+          (NP (NN date)
+            (CC and)
+            (NN woefully))))
+      (ADJP (JJ bereft)
+        (PP (IN of)
+          (NP (DT any) (JJ meaningful) (NNS data)))))
+    (. .)))
+
+det(chart-2, This-1)
+nsubj(bereft-9, chart-2)
+cop(bereft-9, is-3)
+prep_out_of(bereft-9, date-6)
+conj_and(date-6, woefully-8)
+prep_out_of(bereft-9, woefully-8)
+root(ROOT-0, bereft-9)
+det(data-13, any-11)
+amod(data-13, meaningful-12)
+prep_of(bereft-9, data-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (PP (IN like)
+        (S
+          (VP (VBG saying)
+            (SBAR (IN that)
+              (S
+                (NP (JJR more) (NNS cars))
+                (VP (VBP lead)
+                  (PP (TO to)
+                    (NP
+                      (NP (JJR more) (NNS deaths))
+                      (PP (IN in)
+                        (NP (NNS cars))))))))))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+prepc_like('s-2, saying-4)
+complm(lead-8, that-5)
+amod(cars-7, more-6)
+nsubj(lead-8, cars-7)
+ccomp(saying-4, lead-8)
+amod(deaths-11, more-10)
+prep_to(lead-8, deaths-11)
+prep_in(deaths-11, cars-13)
+
+(ROOT
+  (FRAG
+    (INTJ (UH Well))
+    (, ,)
+    (ADVP (RB duh))
+    (. !)))
+
+dep(duh-3, Well-1)
+root(ROOT-0, duh-3)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP it))
+    (VP (VBZ gives)
+      (NP (DT an) (JJ incomplete) (NN assessment)))
+    (. .)))
+
+dep(gives-3, So-1)
+nsubj(gives-3, it-2)
+root(ROOT-0, gives-3)
+det(assessment-6, an-4)
+amod(assessment-6, incomplete-5)
+dobj(gives-3, assessment-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (PP (IN like)
+        (NP
+          (NP (DT an) (JJ old) (NN electrician))
+          (VP (VBN used)
+            (S
+              (VP (TO to)
+                (VP (VB say) (, ,) (`` ``)
+                  (S
+                    (NP (JJR More) (NNS people))
+                    (VP (VB die)
+                      (PP (IN from)
+                        (NP (CD 110) (NN volt) (NN household) (NN current)))
+                      (SBAR (IN because)
+                        (S
+                          (NP (DT that))
+                          (VP (VBZ 's)
+                            (SBAR
+                              (WHNP (WP what))
+                              (S
+                                (NP (JJS most) (NN voltage))
+                                (VP (VBZ is))))))))))))))))
+    (. !) ('' '')))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+det(electrician-6, an-4)
+amod(electrician-6, old-5)
+prep_like('s-2, electrician-6)
+xsubj(say-9, electrician-6)
+partmod(electrician-6, used-7)
+aux(say-9, to-8)
+xcomp(used-7, say-9)
+amod(people-13, More-12)
+nsubj(die-14, people-13)
+ccomp(say-9, die-14)
+num(current-19, 110-16)
+nn(current-19, volt-17)
+nn(current-19, household-18)
+prep_from(die-14, current-19)
+mark('s-22, because-20)
+nsubj('s-22, that-21)
+advcl(die-14, 's-22)
+dobj(is-26, what-23)
+amod(voltage-25, most-24)
+nsubj(is-26, voltage-25)
+ccomp('s-22, is-26)
+

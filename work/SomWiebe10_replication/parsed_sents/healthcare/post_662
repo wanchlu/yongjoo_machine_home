@@ -1,0 +1,57 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR
+        (S
+          (NP (NNP Health))
+          (VP (VBZ is)
+            (NP
+              (NP (NN something))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (MD should) (RB not)
+                    (VP (VB be)
+                      (VP (VBN given)
+                        (PP (TO to)
+                          (NP
+                            (NP (DT the) (JJ rich))
+                            (SBAR
+                              (S
+                                (NP (PRP it))
+                                (VP (VBZ is)
+                                  (NP
+                                    (NP (NN something))
+                                    (PP (IN that)
+                                      (NP (DT every) (JJ human) (NN resource))))
+                                  (SBAR (RB just) (IN because)
+                                    (S
+                                      (NP (PRP they))
+                                      (VP (VBP are)
+                                        (ADJP (JJ human))))))))))))))))))))))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+nsubj(something-5, Health-3)
+cop(something-5, is-4)
+ccomp(agree-2, something-5)
+nsubjpass(given-10, something-5)
+aux(given-10, should-7)
+neg(given-10, not-8)
+auxpass(given-10, be-9)
+rcmod(something-5, given-10)
+det(rich-13, the-12)
+prep_to(given-10, rich-13)
+nsubj(something-16, it-14)
+cop(something-16, is-15)
+rcmod(rich-13, something-16)
+det(resource-20, every-18)
+amod(resource-20, human-19)
+prep_that(something-16, resource-20)
+advmod(human-25, just-21)
+dep(human-25, because-22)
+nsubj(human-25, they-23)
+cop(human-25, are-24)
+dep(something-16, human-25)
+

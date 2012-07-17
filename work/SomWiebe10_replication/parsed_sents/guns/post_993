@@ -1,0 +1,44 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Just)
+      (PP (TO to)
+        (NP (DT the) (JJ British) (NNS citizens))))
+    (, ,)
+    (ADVP (RB aye))
+    (. ?)))
+
+root(ROOT-0, Just-1)
+det(citizens-5, the-3)
+amod(citizens-5, British-4)
+prep_to(Just-1, citizens-5)
+dep(Just-1, aye-7)
+
+(ROOT
+  (VP (VB \/)
+    (NP (NNS \/))
+    (-RRB- -RRB-)
+    (ADVP (RB No.))))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-2)
+advmod(\/-1, No.-4)
+
+(ROOT
+  (SQ
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNS \/))
+      (-RRB- -RRB-)
+      (PP (TO To)
+        (NP
+          (NP (DT the) (NN majority))
+          (PP (IN of)
+            (NP (DT the) (NN world))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+det(majority-7, the-6)
+prep_to(\/-1, majority-7)
+det(world-10, the-9)
+prep_of(majority-7, world-10)
+

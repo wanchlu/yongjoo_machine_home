@@ -1,0 +1,245 @@
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (JJ first) (NN place)))
+    (NP (EX there))
+    (VP (VBZ has)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (NP (DT a) (JJ first) (NN cause))))))
+    (. .)))
+
+det(place-4, the-2)
+amod(place-4, first-3)
+prep_in(has-6, place-4)
+expl(has-6, there-5)
+xsubj(cause-11, there-5)
+root(ROOT-0, has-6)
+aux(cause-11, to-7)
+cop(cause-11, be-8)
+det(cause-11, a-9)
+amod(cause-11, first-10)
+xcomp(has-6, cause-11)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB start)
+            (ADVP (RB somewhere))))))
+    (. .)))
+
+nsubj(have-2, We-1)
+xsubj(start-4, We-1)
+root(ROOT-0, have-2)
+aux(start-4, to-3)
+xcomp(have-2, start-4)
+advmod(start-4, somewhere-5)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN science)))
+    (NP (DT this))
+    (VP (VBZ is)
+      (VP (VBN called)
+        (NP (DT the) (NNP Unified) (NNP Force))))
+    (. .)))
+
+prep_in(called-5, science-2)
+nsubjpass(called-5, this-3)
+auxpass(called-5, is-4)
+root(ROOT-0, called-5)
+det(Force-8, the-6)
+nn(Force-8, Unified-7)
+dobj(called-5, Force-8)
+
+(ROOT
+  (S
+    (SBAR (IN Since)
+      (S
+        (NP (NN energy))
+        (VP
+          (VP (MD can) (RB neither)
+            (VP (VB be)
+              (VP (VBN created))))
+          (CC nor)
+          (VP (VBD destroyed)))))
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ infinite)))
+    (. .)))
+
+mark(created-6, Since-1)
+nsubjpass(created-6, energy-2)
+nsubjpass(destroyed-8, energy-2)
+aux(created-6, can-3)
+advmod(created-6, neither-4)
+auxpass(created-6, be-5)
+advcl(infinite-11, created-6)
+conj_nor(created-6, destroyed-8)
+advcl(infinite-11, destroyed-8)
+nsubj(infinite-11, it-9)
+cop(infinite-11, is-10)
+root(ROOT-0, infinite-11)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (ADVP (RB also))
+    (VP (VBZ teaches)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (PP (IN beyond)
+              (NP (JJ direct) (NN observation)))
+            (SBAR (IN so)
+              (S
+                (NP (PRP it))
+                (VP (VBZ is)
+                  (ADJP (JJ unknowable)))))))))
+    (. .)))
+
+nsubj(teaches-3, Science-1)
+advmod(teaches-3, also-2)
+root(ROOT-0, teaches-3)
+complm(is-6, that-4)
+nsubj(is-6, it-5)
+ccomp(teaches-3, is-6)
+amod(observation-9, direct-8)
+prep_beyond(is-6, observation-9)
+mark(unknowable-13, so-10)
+nsubj(unknowable-13, it-11)
+cop(unknowable-13, is-12)
+advcl(is-6, unknowable-13)
+
+(ROOT
+  (S (IN So)
+    (NP (DT the) (NNP Unified) (NNP Force))
+    (VP (VBZ splits)
+      (PP (IN into)
+        (NP
+          (NP (DT the) (JJ Strong) (NN Force))
+          (, ,)
+          (NP (DT the) (NNP Weak) (NNP Force))
+          (CC and)
+          (NP (NNP Electromagnetism))))
+      (, ,)
+      (S
+        (VP (VBG creating)
+          (NP (DT the) (NN Universe)))))
+    (. .)))
+
+dep(splits-5, So-1)
+det(Force-4, the-2)
+nn(Force-4, Unified-3)
+nsubj(splits-5, Force-4)
+root(ROOT-0, splits-5)
+det(Force-9, the-7)
+amod(Force-9, Strong-8)
+prep_into(splits-5, Force-9)
+det(Force-13, the-11)
+nn(Force-13, Weak-12)
+prep_into(splits-5, Force-13)
+conj_and(Force-9, Force-13)
+prep_into(splits-5, Electromagnetism-15)
+conj_and(Force-9, Electromagnetism-15)
+xcomp(splits-5, creating-17)
+det(Universe-19, the-18)
+dobj(creating-17, Universe-19)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (ADVP (RB then))
+      (NP (CD two) (NNS questions)))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+advmod(are-2, then-3)
+num(questions-5, two-4)
+nsubj(are-2, questions-5)
+
+(ROOT
+  (FRAG
+    (NP (NNP First))
+    (, ,)
+    (SBAR
+      (WHNP (WP what))
+      (S
+        (VP (VBZ is)
+          (NP
+            (NP (DT the) (NN difference))
+            (PP (IN between)
+              (NP
+                (NP (DT the) (NNP Unified) (NNP Force))
+                (CC and)
+                (NP (NNP God))))))))
+    (. ?)))
+
+root(ROOT-0, First-1)
+nsubj(difference-6, what-3)
+cop(difference-6, is-4)
+det(difference-6, the-5)
+dep(First-1, difference-6)
+det(Force-10, the-8)
+nn(Force-10, Unified-9)
+prep_between(difference-6, Force-10)
+prep_between(difference-6, God-12)
+conj_and(Force-10, God-12)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT both) (NNS cases)))
+    (NP (PRP we))
+    (VP (VBP have)
+      (NP
+        (NP (DT an) (JJ infinite) (, ,) (JJ unknowable) (NN force))
+        (VP (VBG creating)
+          (NP (DT the) (NN Universe)))))
+    (. .)))
+
+det(cases-3, both-2)
+prep_in(have-5, cases-3)
+nsubj(have-5, we-4)
+root(ROOT-0, have-5)
+det(force-10, an-6)
+amod(force-10, infinite-7)
+amod(force-10, unknowable-9)
+dobj(have-5, force-10)
+partmod(force-10, creating-11)
+det(Universe-13, the-12)
+dobj(creating-11, Universe-13)
+
+(ROOT
+  (S
+    (ADVP (LS Second))
+    (, ,)
+    (NP (WDT what))
+    (VP (VBD caused)
+      (S
+        (NP (DT the) (NNP Unified) (NNP Force))
+        (VP (TO to)
+          (VP (VB break)
+            (NP (PRP itself))
+            (ADVP (RB apart))))))
+    (. ?)))
+
+advmod(caused-4, Second-1)
+nsubj(caused-4, what-3)
+root(ROOT-0, caused-4)
+det(Force-7, the-5)
+nn(Force-7, Unified-6)
+nsubj(break-9, Force-7)
+aux(break-9, to-8)
+xcomp(caused-4, break-9)
+dobj(break-9, itself-10)
+advmod(break-9, apart-11)
+

@@ -1,0 +1,123 @@
+(ROOT
+  (S
+    (NP
+      (NP (VBG Comparing) (NNS doctors))
+      (PP (TO to)
+        (NP
+          (NP (NNP Dr.) (NNP Nick))
+          (PP (IN on)
+            (NP (DT the) (NNPS Simpsons))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT an) (NN insult))
+        (PP (TO to)
+          (NP (DT the) (NN profession)))))
+    (. .)))
+
+amod(doctors-2, Comparing-1)
+nsubj(insult-11, doctors-2)
+nn(Nick-5, Dr.-4)
+prep_to(doctors-2, Nick-5)
+det(Simpsons-8, the-7)
+prep_on(Nick-5, Simpsons-8)
+cop(insult-11, is-9)
+det(insult-11, an-10)
+root(ROOT-0, insult-11)
+det(profession-14, the-13)
+prep_to(insult-11, profession-14)
+
+(ROOT
+  (S
+    (SBAR (RB Even) (IN if)
+      (S
+        (NP (DT a) (NN doctor))
+        (VP (VBD did)
+          (NP (NN act))
+          (PP (IN like)
+            (NP (NNP Dr.) (NNP Nick))))))
+    (NP (PRP they))
+    (VP (MD would)
+      (ADVP (RB quickly))
+      (VP (VB end)
+        (PRT (RP up))
+        (NP
+          (UCP
+            (PP (IN in)
+              (NP (NN court)))
+            (CC and)
+            (ADVP (RB eventually)))
+          (NN jail))
+        (PP (IN for)
+          (NP (NN malpractice)))))
+    (. .)))
+
+advmod(did-5, Even-1)
+dep(did-5, if-2)
+det(doctor-4, a-3)
+nsubj(did-5, doctor-4)
+advcl(end-13, did-5)
+dobj(did-5, act-6)
+nn(Nick-9, Dr.-8)
+prep_like(did-5, Nick-9)
+nsubj(end-13, they-10)
+aux(end-13, would-11)
+advmod(end-13, quickly-12)
+root(ROOT-0, end-13)
+prt(end-13, up-14)
+dep(jail-19, in-15)
+pobj(in-15, court-16)
+conj_and(in-15, eventually-18)
+dep(jail-19, eventually-18)
+dobj(end-13, jail-19)
+prep_for(end-13, malpractice-21)
+
+(ROOT
+  (S
+    (PP (IN On)
+      (NP
+        (NP (DT the) (JJ other) (NN hand))
+        (SBAR (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBD put)
+              (NP (DT the) (NN government))
+              (PP (IN in)
+                (NP
+                  (NP (NN charge))
+                  (PP (IN of)
+                    (NP (NN medicine))))))))))
+    (NP (PRP you))
+    (VP (MD might)
+      (VP (VB see)
+        (NP (DT the) (JJ medical) (NN equivalent))
+        (PP (TO to)
+          (NP (NNP Patty)
+            (CC and)
+            (NNP Selma)))))
+    (. .)))
+
+det(hand-4, the-2)
+amod(hand-4, other-3)
+prep_on(see-16, hand-4)
+mark(put-7, if-5)
+nsubj(put-7, you-6)
+dep(hand-4, put-7)
+det(government-9, the-8)
+dobj(put-7, government-9)
+prep_in(put-7, charge-11)
+prep_of(charge-11, medicine-13)
+nsubj(see-16, you-14)
+aux(see-16, might-15)
+root(ROOT-0, see-16)
+det(equivalent-19, the-17)
+amod(equivalent-19, medical-18)
+dobj(see-16, equivalent-19)
+prep_to(see-16, Patty-21)
+prep_to(see-16, Selma-23)
+conj_and(Patty-21, Selma-23)
+
+(ROOT
+  (NP (NN http:\/\/en.wikipedia.org\/wiki\/Patty_and_Selma_Bouvier)))
+
+root(ROOT-0, http:\/\/en.wikipedia.org\/wiki\/Patty_and_Selma_Bouvier-1)
+

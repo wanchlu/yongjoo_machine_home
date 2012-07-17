@@ -1,0 +1,144 @@
+(ROOT
+  (NP (NNP Hm) (: ...)))
+
+root(ROOT-0, Hm-1)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB already))
+    (VP (VBD said)
+      (NP (DT that)))
+    (. .)))
+
+nsubj(said-3, You-1)
+advmod(said-3, already-2)
+root(ROOT-0, said-3)
+dobj(said-3, that-4)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT that))
+    (VP (VB mean)
+      (S
+        (NP (PRP you))
+        (VP (VB give)
+          (PRT (RP up)))))
+    (. ?)))
+
+dep(mean-3, Does-1)
+nsubj(mean-3, that-2)
+root(ROOT-0, mean-3)
+nsubj(give-5, you-4)
+ccomp(mean-3, give-5)
+prt(give-5, up-6)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD should)
+      (VP (VB pray)
+        (PP (IN for)
+          (NP (DT an) (NN answer)
+            (S
+              (VP (TO to)
+                (VP (VB counter)
+                  (NP (PRP$ my) (NNS arguements)))))))
+        (, ,)
+        (PP (RB instead) (IN of)
+          (S
+            (ADVP (RB just))
+            (VP (VBG quoting)
+              (NP (NN scripture)))))))
+    (. .)))
+
+nsubj(pray-3, You-1)
+aux(pray-3, should-2)
+root(ROOT-0, pray-3)
+det(answer-6, an-5)
+prep_for(pray-3, answer-6)
+aux(counter-8, to-7)
+infmod(answer-6, counter-8)
+poss(arguements-10, my-9)
+dobj(counter-8, arguements-10)
+advmod(quoting-15, just-14)
+prepc_instead_of(pray-3, quoting-15)
+dobj(quoting-15, scripture-16)
+
+(ROOT
+  (S (CC Or)
+    (NP (PRP you))
+    (VP (MD could)
+      (VP
+        (VP (VB do)
+          (NP (DT some) (NN research)))
+        (, ,)
+        (CC and)
+        (VP (VB come)
+          (PRT (RP up))
+          (PP (IN with)
+            (NP
+              (NP (JJ valid) (NNS reasons))
+              (SBAR
+                (S
+                  (NP (PRP I))
+                  (VP (VBP 'm)
+                    (ADJP (JJ wrong))))))))))
+    (. .)))
+
+nsubj(do-4, you-2)
+nsubj(come-9, you-2)
+aux(do-4, could-3)
+root(ROOT-0, do-4)
+det(research-6, some-5)
+dobj(do-4, research-6)
+conj_and(do-4, come-9)
+prt(come-9, up-10)
+amod(reasons-13, valid-12)
+prep_with(come-9, reasons-13)
+nsubj(wrong-16, I-14)
+cop(wrong-16, 'm-15)
+rcmod(reasons-13, wrong-16)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (PP (IN by)
+      (NP (DT the) (NN way)))
+    (, ,)
+    (NP
+      (NP (PRP$ your) (JJ last) (CD two) (NNS arguements))
+      (SBAR
+        (S
+          (VP (VBP are)
+            (VP (VBN tagged)
+              (PP (IN as) (`` ``)
+                (NP (DT no)
+                  (NP (PRP$ its)
+                    (ADJP (RB not))
+                    ('' '') (NNS god)))))))))
+    (VP (MD would) (RB not)
+      (VP (VB be)
+        (ADJP (RB too) (JJ happy)
+          (PP (IN about)
+            (NP (DT that))))))
+    (: ...)))
+
+det(way-4, the-3)
+prep_by(happy-23, way-4)
+poss(arguements-9, your-6)
+amod(arguements-9, last-7)
+num(arguements-9, two-8)
+nsubj(happy-23, arguements-9)
+auxpass(tagged-11, are-10)
+rcmod(arguements-9, tagged-11)
+det(god-18, no-14)
+poss(god-18, its-15)
+amod(god-18, not-16)
+prep_as(tagged-11, god-18)
+aux(happy-23, would-19)
+neg(happy-23, not-20)
+cop(happy-23, be-21)
+advmod(happy-23, too-22)
+root(ROOT-0, happy-23)
+prep_about(happy-23, that-25)
+

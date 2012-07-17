@@ -1,0 +1,73 @@
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (DT the) (NNS laws))
+          (PP (IN of)
+            (NP (NN physics))))
+        (VP (VBP apply)
+          (ADVP (RB then))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (VP (VBZ is)
+                (ADVP (NN matter))
+                (VP (VBN destroyed)
+                  (PP (IN in)
+                    (NP (DT a) (NNP Black) (NNP Hole))))))))))
+    (. ?)))
+
+mark(apply-6, If-1)
+det(laws-3, the-2)
+nsubj(apply-6, laws-3)
+prep_of(laws-3, physics-5)
+root(ROOT-0, apply-6)
+advmod(apply-6, then-7)
+advmod(destroyed-11, why-8)
+auxpass(destroyed-11, is-9)
+advmod(destroyed-11, matter-10)
+advcl(apply-6, destroyed-11)
+det(Hole-15, a-13)
+nn(Hole-15, Black-14)
+prep_in(destroyed-11, Hole-15)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP (DT a) (NNP God)))))))
+    (CC and)
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (NP
+          (NP (DT no) (NN idea))
+          (SBAR
+            (WHADVP (WRB why))
+            (S
+              (NP (PRP He))
+              (VP (VBD created)
+                (NP (PRP you))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+expl(is-4, there-3)
+ccomp(think-2, is-4)
+det(God-6, a-5)
+nsubj(is-4, God-6)
+nsubj(have-9, I-8)
+conj_and(think-2, have-9)
+det(idea-11, no-10)
+dobj(have-9, idea-11)
+advmod(created-14, why-12)
+nsubj(created-14, He-13)
+rcmod(idea-11, created-14)
+dobj(created-14, you-15)
+

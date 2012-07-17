@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (FRAG
+      (S (MD might)
+        (NP (FW i))
+        (VP (VB add)
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (VBP have)
+                (NP (NN gun) (NNS laws))
+                (ADVP (RB here))
+                (PP (IN in)
+                  (NP (NN australia)))))))))
+    (, ,)
+    (S
+      (FRAG (RB not)
+        (ADVP (RB so) (RB long) (RB ago)))
+      (NP (PRP we))
+      (VP (VBD had)
+        (NP (DT an) (NN gun) (NN amnesty))))
+    (. .)))
+
+dep(add-3, might-1)
+nsubj(add-3, i-2)
+dep(had-17, add-3)
+nsubj(have-5, we-4)
+ccomp(add-3, have-5)
+nn(laws-7, gun-6)
+dobj(have-5, laws-7)
+advmod(have-5, here-8)
+prep_in(have-5, australia-10)
+dep(had-17, not-12)
+advmod(ago-15, so-13)
+advmod(ago-15, long-14)
+dep(not-12, ago-15)
+nsubj(had-17, we-16)
+root(ROOT-0, had-17)
+det(amnesty-20, an-18)
+nn(amnesty-20, gun-19)
+dobj(had-17, amnesty-20)
+
+(ROOT
+  (S
+    (NP
+      (UCP
+        (ADJP (RB unfotunately) (JJ due)
+          (PP (TO to)
+            (NP (DT some) (NN corruption))))
+        (, ,)
+        (NP (RB not) (DT the) (NN majority))
+        (, ,)
+        (PP (CC but)
+          (NP
+            (NP (DT a) (NN lot))
+            (PP (IN of)
+              (NP (DT those))))))
+      (NNS guns))
+    (VP (VBD were)
+      (VP (VBN sold)
+        (PRT (RP back))
+        (PP (TO to)
+          (NP (NNS criminals)))))
+    (. .)))
+
+advmod(guns-16, unfotunately-1)
+det(corruption-5, some-4)
+prep_due_to(guns-16, corruption-5)
+neg(majority-9, not-7)
+det(majority-9, the-8)
+dep(guns-16, majority-9)
+prep(guns-16, but-11)
+det(lot-13, a-12)
+dep(but-11, lot-13)
+prep_of(lot-13, those-15)
+nsubjpass(sold-18, guns-16)
+auxpass(sold-18, were-17)
+root(ROOT-0, sold-18)
+prt(sold-18, back-19)
+prep_to(sold-18, criminals-21)
+

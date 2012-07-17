@@ -1,0 +1,93 @@
+(ROOT
+  (S
+    (PP (IN By)
+      (NP (PRP$ your) (JJ unverified) (NNS statistics)))
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (CD 1) (NN death))
+        (PP (IN per)
+          (NP (CD 9333) (NNS guns)))))
+    (. .)))
+
+poss(statistics-4, your-2)
+amod(statistics-4, unverified-3)
+prep_by(is-6, statistics-4)
+expl(is-6, there-5)
+root(ROOT-0, is-6)
+num(death-8, 1-7)
+nsubj(is-6, death-8)
+num(guns-11, 9333-10)
+prep_per(death-8, guns-11)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS FARS))
+      (PRN (-LRB- -LRB-)
+        (NP (NNP http:\/\/www-fars.nhtsa.dot.gov\/Main\/index.aspx))
+        (-RRB- -RRB-)))
+    (VP (VBD reported)
+      (SBAR (IN that)
+        (S
+          (PP (IN in)
+            (NP (CD 2007)))
+          (NP (EX there))
+          (VP (VBD was)
+            (NP
+              (NP (CD 1) (NN death))
+              (PP (IN per)
+                (NP (CD 5523) (NNS cars))))))))
+    (. .)))
+
+nsubj(reported-5, FARS-1)
+appos(FARS-1, http:\/\/www-fars.nhtsa.dot.gov\/Main\/index.aspx-3)
+root(ROOT-0, reported-5)
+complm(was-10, that-6)
+prep_in(was-10, 2007-8)
+expl(was-10, there-9)
+ccomp(reported-5, was-10)
+num(death-12, 1-11)
+nsubj(was-10, death-12)
+num(cars-15, 5523-14)
+prep_per(death-12, cars-15)
+
+(ROOT
+  (S
+    (NP (DT A) (NN car))
+    (VP (VBZ is)
+      (ADJP
+        (NP (CD 59) (NN %))
+        (RBR more) (JJ likely))
+      (S
+        (VP (TO to)
+          (VP (VB kill)
+            (ADVP (RB then))
+            (NP (DT a) (NN gun))))))
+    (. .)))
+
+det(car-2, A-1)
+nsubj(likely-7, car-2)
+xsubj(kill-9, car-2)
+cop(likely-7, is-3)
+num(%-5, 59-4)
+dep(likely-7, %-5)
+advmod(likely-7, more-6)
+root(ROOT-0, likely-7)
+aux(kill-9, to-8)
+xcomp(likely-7, kill-9)
+advmod(kill-9, then-10)
+det(gun-12, a-11)
+dobj(kill-9, gun-12)
+
+(ROOT
+  (S
+    (VP (VB Ban)
+      (NP (NNS cars))
+      (ADVP (RB instead)))
+    (. .)))
+
+root(ROOT-0, Ban-1)
+dobj(Ban-1, cars-2)
+advmod(Ban-1, instead-3)
+

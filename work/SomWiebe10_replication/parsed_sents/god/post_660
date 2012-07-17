@@ -1,0 +1,91 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD got)
+              (ADJP (VBN confused)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP I))
+                    (VP (VBD said)
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (S
+                            (NP (PRP it))
+                            (VP (VBZ 's)
+                              (ADVP (RB completely) (RB away))
+                              (PP (IN from)
+                                (NP (PRP it)))))
+                          (CC and)
+                          (S
+                            (NP (NN someone))
+                            (VP (VBZ tells))))))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD was)
+      (VP (VBG referring)
+        (PP (TO to)
+          (NP (DT the) (NN school) (NNS teachers)))
+        (S
+          (VP (VBG attending)
+            (NP (DT a) (NN function))
+            (PP (IN at)
+              (NP
+                (NP (DT the) (NN church))
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBD was)
+                      (ADVP (RB completely) (RB away))
+                      (PP
+                        (PP (IN from)
+                          (NP (NN school)))
+                        (CC and)
+                        (PP (IN on)
+                          (NP (PRP$ their) (JJ own) (NN time)))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+ccomp(referring-22, think-2)
+nsubjpass(confused-5, you-3)
+auxpass(confused-5, got-4)
+ccomp(think-2, confused-5)
+advmod(said-8, when-6)
+nsubj(said-8, I-7)
+dep(confused-5, said-8)
+advmod('s-11, when-9)
+nsubj('s-11, it-10)
+advcl(said-8, 's-11)
+advmod(away-13, completely-12)
+advmod('s-11, away-13)
+prep_from('s-11, it-15)
+nsubj(tells-18, someone-17)
+advcl(said-8, tells-18)
+conj_and('s-11, tells-18)
+nsubj(referring-22, I-20)
+aux(referring-22, was-21)
+root(ROOT-0, referring-22)
+det(teachers-26, the-24)
+nn(teachers-26, school-25)
+prep_to(referring-22, teachers-26)
+xcomp(referring-22, attending-27)
+det(function-29, a-28)
+dobj(attending-27, function-29)
+det(church-32, the-31)
+prep_at(attending-27, church-32)
+nsubj(was-34, it-33)
+rcmod(church-32, was-34)
+advmod(was-34, completely-35)
+prep_away_from(was-34, school-38)
+rcmod(church-32, on-40)
+conj_and(was-34, on-40)
+poss(time-43, their-41)
+amod(time-43, own-42)
+pobj(on-40, time-43)
+

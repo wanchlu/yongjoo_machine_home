@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD must)
+      (VP (VB say)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (VBZ 's)
+              (NP (DT a) (JJ good) (NN decision)))))))
+    (. .)))
+
+nsubj(say-3, I-1)
+aux(say-3, must-2)
+root(ROOT-0, say-3)
+nsubj(decision-8, it-4)
+cop(decision-8, 's-5)
+det(decision-8, a-6)
+amod(decision-8, good-7)
+ccomp(say-3, decision-8)
+
+(ROOT
+  (S
+    (S
+      (VP (VBN Glad)))
+    (NP (PRP we))
+    (VP (VBP are)
+      (ADVP (RB now))
+      (ADJP (JJ able)
+        (S
+          (VP (TO to)
+            (VP (VB protect)
+              (NP (PRP ourselves))
+              (PP (IN in)
+                (NP (NNP National) (NNP Parks))))))))
+    (. .)))
+
+dep(able-5, Glad-1)
+nsubj(able-5, we-2)
+cop(able-5, are-3)
+advmod(able-5, now-4)
+root(ROOT-0, able-5)
+aux(protect-7, to-6)
+xcomp(able-5, protect-7)
+dobj(protect-7, ourselves-8)
+nn(Parks-11, National-10)
+prep_in(protect-7, Parks-11)
+
+(ROOT
+  (S
+    (NP (JJ Next) (NN time))
+    (NP (NNP College) (NNP Campus))
+    (VP (VBZ 's))
+    (. .)))
+
+amod(time-2, Next-1)
+nsubj('s-5, time-2)
+nn(Campus-4, College-3)
+nsubj('s-5, Campus-4)
+root(ROOT-0, 's-5)
+
+(ROOT
+  (SBAR
+    (X (SYM \*))
+    (S
+      (NP (PRP I))
+      (VP (VBP say)
+        (ADJP
+          (ADVP (DT all) (IN that) (RB seriously))
+          (JJ \*))))))
+
+dep(say-3, \*-1)
+nsubj(say-3, I-2)
+root(ROOT-0, say-3)
+dep(that-5, all-4)
+advmod(\*-7, that-5)
+advmod(that-5, seriously-6)
+acomp(say-3, \*-7)
+

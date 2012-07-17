@@ -1,0 +1,64 @@
+(ROOT
+  (SQ
+    (S
+      (NP (PRP He))
+      (VP (VBZ does)
+        (VP (VB exist))))
+    (, ,)
+    (SQ (MD can)
+      (NP (NN u))
+      (VP (VB prove)
+        (SBAR (IN that)
+          (S
+            (NP (PRP he))
+            (VP (VBZ does) (RB n't)
+              (VP (VB exist)))))))
+    (. ?)))
+
+nsubj(exist-3, He-1)
+aux(exist-3, does-2)
+dep(prove-7, exist-3)
+aux(prove-7, can-5)
+nsubj(prove-7, u-6)
+root(ROOT-0, prove-7)
+complm(exist-12, that-8)
+nsubj(exist-12, he-9)
+aux(exist-12, does-10)
+neg(exist-12, n't-11)
+ccomp(prove-7, exist-12)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT a) (NN belief))
+        (PP (IN in)
+          (NP (PRP itself)))
+        (SBAR
+          (S
+            (NP (EX there))
+            (VP (VBZ 's)
+              (NP (DT no) (JJ proven) (NN fact))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP he))
+                  (VP (VBZ does) (RB n't)
+                    (VP (VB exist))))))))))))
+
+nsubj(belief-4, That-1)
+cop(belief-4, 's-2)
+det(belief-4, a-3)
+root(ROOT-0, belief-4)
+prep_in(belief-4, itself-6)
+expl('s-8, there-7)
+rcmod(belief-4, 's-8)
+det(fact-11, no-9)
+amod(fact-11, proven-10)
+nsubj('s-8, fact-11)
+complm(exist-16, that-12)
+nsubj(exist-16, he-13)
+aux(exist-16, does-14)
+neg(exist-16, n't-15)
+ccomp('s-8, exist-16)
+

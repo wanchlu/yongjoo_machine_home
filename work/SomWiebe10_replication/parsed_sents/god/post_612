@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBZ is)
+      (NP
+        (NP (NN omnipotent))
+        (, ,)
+        (NP
+          (NP (NN omnibenevolent))
+          (, ,)
+          (NP (FW etc.) (FW etc.)))))
+    (. .)))
+
+nsubj(omnipotent-3, God-1)
+cop(omnipotent-3, is-2)
+root(ROOT-0, omnipotent-3)
+appos(omnipotent-3, omnibenevolent-5)
+nn(etc.-8, etc.-7)
+appos(omnibenevolent-5, etc.-8)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP God))
+      (VP (VBZ has)
+        (NP
+          (ADJP (RB as) (JJ infinite))
+          (NNS characteristics))))
+    (CC but)
+    (ADVP (RB ultimately))
+    (S
+      (NP (PRP he))
+      (VP (VBZ loves)
+        (SBAR
+          (S
+            (NP (PRP us))
+            (VP
+              (ADVP (RB all)
+                (CC and)
+                (RB only))
+              (VBZ wants)
+              (NP
+                (NP (DT the) (JJS best))
+                (PP (IN for)
+                  (NP (NN mankind)))))))))
+    (. .)))
+
+nsubj(has-2, God-1)
+root(ROOT-0, has-2)
+advmod(infinite-4, as-3)
+amod(characteristics-5, infinite-4)
+dobj(has-2, characteristics-5)
+advmod(has-2, ultimately-7)
+conj_but(has-2, ultimately-7)
+nsubj(loves-9, he-8)
+ccomp(has-2, loves-9)
+conj_but(has-2, loves-9)
+nsubj(wants-14, us-10)
+advmod(wants-14, all-11)
+conj_and(all-11, only-13)
+advmod(wants-14, only-13)
+ccomp(loves-9, wants-14)
+det(best-16, the-15)
+dobj(wants-14, best-16)
+prep_for(best-16, mankind-18)
+
+(ROOT
+  (S
+    (NP (NNP ^))
+    (VP (VBD Tried)
+      (S
+        (VP (TO to)
+          (VP (VB make)
+            (SBAR (IN that) (RB as)
+              (FRAG
+                (ADJP (RB short) (RB as) (JJ possible))))))))
+    (. .)))
+
+nsubj(Tried-2, ^-1)
+xsubj(make-4, ^-1)
+root(ROOT-0, Tried-2)
+aux(make-4, to-3)
+xcomp(Tried-2, make-4)
+complm(possible-9, that-5)
+advmod(possible-9, as-6)
+advmod(possible-9, short-7)
+advmod(possible-9, as-8)
+dep(make-4, possible-9)
+

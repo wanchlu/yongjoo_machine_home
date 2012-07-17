@@ -1,0 +1,212 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance) (NN option))
+    (VP (MD will)
+      (VP (VB increase)
+        (NP (NNS taxes)
+          (CC and)
+          (NN drag-down))
+        (NP (DT the) (NN economy))))
+    (. .)))
+
+nn(option-3, Public-1)
+nn(option-3, insurance-2)
+nsubj(increase-5, option-3)
+aux(increase-5, will-4)
+root(ROOT-0, increase-5)
+iobj(increase-5, taxes-6)
+iobj(increase-5, drag-down-8)
+conj_and(taxes-6, drag-down-8)
+det(economy-10, the-9)
+dobj(increase-5, economy-10)
+
+(ROOT
+  (NP (NNP Karl) (NNP Rove) (. .)))
+
+nn(Rove-2, Karl-1)
+root(ROOT-0, Rove-2)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP How))
+    (PP (TO to)
+      (NP
+        (NP (NNP Stop) (NNP Socialized) (NNP Health) (NNP Care) ('' ''))
+        (NP (NNP Wall) (NNP Street) (NNP Journal))))
+    (. .)))
+
+root(ROOT-0, How-2)
+dep(How-2, to-3)
+nn(Care-7, Stop-4)
+nn(Care-7, Socialized-5)
+nn(Care-7, Health-6)
+pobj(to-3, Care-7)
+nn(Journal-11, Wall-9)
+nn(Journal-11, Street-10)
+dep(Care-7, Journal-11)
+
+(ROOT
+  (S
+    (VP
+      (NP
+        (NP (NNP June) (CD 11) (, ,) (CD 2009))
+        (: :) (`` ``)
+        (SBAR
+          (WHNP (WP Who))
+          (S
+            (VP (VBZ covers)
+              (NP (DT the) (NN rest)))))))
+    (. ?)))
+
+root(ROOT-0, June-1)
+num(June-1, 11-2)
+num(June-1, 2009-4)
+nsubj(covers-8, Who-7)
+rcmod(June-1, covers-8)
+det(rest-10, the-9)
+dobj(covers-8, rest-10)
+
+(ROOT
+  (S
+    (NP (NNP Government))
+    (VP (VBZ passes)
+      (S
+        (NP
+          (NP (DT the) (NN bill))
+          (PP (IN for)
+            (NP
+              (NP (DT the) (JJ outstanding) (NN balance))
+              (PP (TO to)
+                (NP (NNS providers)
+                  (CC and)
+                  (NNS families))))))
+        (VP (RB not) (VBN covered)
+          (PP (IN by)
+            (NP (NN government) (NNS programs))))))
+    (. .)))
+
+nsubj(passes-2, Government-1)
+root(ROOT-0, passes-2)
+det(bill-4, the-3)
+nsubj(covered-14, bill-4)
+det(balance-8, the-6)
+amod(balance-8, outstanding-7)
+prep_for(bill-4, balance-8)
+prep_to(balance-8, providers-10)
+prep_to(balance-8, families-12)
+conj_and(providers-10, families-12)
+neg(covered-14, not-13)
+ccomp(passes-2, covered-14)
+nn(programs-17, government-16)
+prep_by(covered-14, programs-17)
+
+(ROOT
+  (S
+    (NP (DT This) (NN cost-shifting))
+    (VP (VBZ amounts)
+      (PP (TO to)
+        (NP (DT a) (JJ forced) (NN subsidy))))
+    (. .)))
+
+det(cost-shifting-2, This-1)
+nsubj(amounts-3, cost-shifting-2)
+root(ROOT-0, amounts-3)
+det(subsidy-7, a-5)
+amod(subsidy-7, forced-6)
+prep_to(amounts-3, subsidy-7)
+
+(ROOT
+  (S
+    (NP (NNS Families))
+    (VP (VBP pay)
+      (PP (IN about)
+        (NP
+          (NP ($ $) (CD 1,800))
+          (NP (RBR more) (DT a) (NN year))
+          (PP (IN for)
+            (NP
+              (NP (NN someone) (RB else) (POS 's))
+              (NN health) (NN care)))))
+      (PP (IN as)
+        (NP (DT a) (NN result)))
+      (, ,)
+      (PP (VBG according)
+        (PP (TO to)
+          (NP
+            (NP (DT a) (JJ recent) (NN study))
+            (PP (IN by)
+              (NP (NNP Milliman) (NNP Inc.)))))))
+    (. .)))
+
+nsubj(pay-2, Families-1)
+root(ROOT-0, pay-2)
+prep_about(pay-2, $-4)
+num($-4, 1,800-5)
+advmod(year-8, more-6)
+det(year-8, a-7)
+dep($-4, year-8)
+poss(care-14, someone-10)
+advmod(someone-10, else-11)
+nn(care-14, health-13)
+prep_for($-4, care-14)
+det(result-17, a-16)
+prep_as(pay-2, result-17)
+prepc_according_to(pay-2, to-20)
+det(study-23, a-21)
+amod(study-23, recent-22)
+pobj(pay-2, study-23)
+nn(Inc.-26, Milliman-25)
+prep_by(study-23, Inc.-26)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's)
+        (ADVP (RB also))
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (JJ many) (NNS doctors))
+            (VP (VBP limit)
+              (SBAR
+                (WHADJP (WRB how) (JJ many))
+                (S
+                  (NP (NNP Medicare))
+                  (VP (VBD patients)
+                    (SBAR
+                      (S
+                        (NP (PRP they))
+                        (VP (VBP take))))))))))))
+    (: :)
+    (S
+      (NP (PRP They))
+      (VP (MD can)
+        (VP (VB afford)
+          (NP
+            (QP (RB only) (RB so) (JJ much))
+            (NN charity) (NN care)))))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+advmod('s-2, also-3)
+advmod(limit-7, why-4)
+amod(doctors-6, many-5)
+nsubj(limit-7, doctors-6)
+advcl('s-2, limit-7)
+advmod(many-9, how-8)
+dep(patients-11, many-9)
+nsubj(patients-11, Medicare-10)
+ccomp(limit-7, patients-11)
+nsubj(take-13, they-12)
+ccomp(patients-11, take-13)
+nsubj(afford-17, They-15)
+aux(afford-17, can-16)
+parataxis('s-2, afford-17)
+quantmod(much-20, only-18)
+quantmod(much-20, so-19)
+num(care-22, much-20)
+nn(care-22, charity-21)
+dobj(afford-17, care-22)
+

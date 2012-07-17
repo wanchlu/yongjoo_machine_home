@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (S
+      (NP (DT this))
+      (VP (VBZ is)
+        (NP (PRP$ my) (JJ first) (NN argument) (: :) (NN ahem))))
+    (: ...)
+    (S
+      (NP (NNS atheists)
+        (CC and)
+        (NNS theists))
+      (VP (VBP are)
+        (NP
+          (NP (CD two) (NNS sides))
+          (PP (IN of)
+            (NP (DT the) (JJ same) (NN coin))))))
+    (. .)))
+
+nsubj(ahem-7, this-1)
+cop(ahem-7, is-2)
+poss(ahem-7, my-3)
+amod(ahem-7, first-4)
+nn(ahem-7, argument-5)
+root(ROOT-0, ahem-7)
+nsubj(sides-14, atheists-9)
+conj_and(atheists-9, theists-11)
+nsubj(sides-14, theists-11)
+cop(sides-14, are-12)
+num(sides-14, two-13)
+parataxis(ahem-7, sides-14)
+det(coin-18, the-16)
+amod(coin-18, same-17)
+prep_of(sides-14, coin-18)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP one))
+      (VP (VBZ is)
+        (ADJP (JJ certain)
+          (SBAR
+            (S
+              (NP (EX there))
+              (VP (VBZ is)
+                (NP (DT a) (NN god))))))))
+    (, ,)
+    (NP (DT the) (JJ other))
+    (VP (VBZ is)
+      (ADJP (JJ certain)
+        (SBAR
+          (S
+            (NP (EX there))
+            (VP (VBZ is) (RB not))
+            (. .)))))
+    (. .)))
+
+nsubj(certain-3, one-1)
+cop(certain-3, is-2)
+ccomp(is-11, certain-3)
+expl(is-5, there-4)
+dep(certain-3, is-5)
+det(god-7, a-6)
+nsubj(is-5, god-7)
+det(other-10, the-9)
+nsubj(is-11, other-10)
+root(ROOT-0, is-11)
+acomp(is-11, certain-12)
+expl(is-14, there-13)
+dep(certain-12, is-14)
+neg(is-14, not-15)
+
+(ROOT
+  (S
+    (NP (DT both))
+    (VP (VBP have)
+      (NP (JJ intelligent) (NNS people)))
+    (. .)))
+
+nsubj(have-2, both-1)
+root(ROOT-0, have-2)
+amod(people-4, intelligent-3)
+dobj(have-2, people-4)
+
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP have) (RB not)
+      (VP (VBN seen)
+        (UCP
+          (NP (NN god))
+          (, ,)
+          (CC but)
+          (SBAR (IN if)
+            (S
+              (NP (FW i))
+              (VP (VBP do)))))))
+    (: ...)))
+
+nsubj(seen-4, i-1)
+aux(seen-4, have-2)
+neg(seen-4, not-3)
+root(ROOT-0, seen-4)
+dobj(seen-4, god-5)
+mark(do-10, if-8)
+nsubj(do-10, i-9)
+dobj(seen-4, do-10)
+conj_but(god-5, do-10)
+

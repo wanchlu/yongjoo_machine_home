@@ -1,0 +1,63 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN statement))
+        (PP (IN of) ('' '')
+          (NP (NNS Guns))))
+      (VP (VBP kill)
+        (SBAR
+          (S
+            (NP (NNS people) (, ,) (NN Guns) (NN kill) (NNS children) ('' ''))
+            (VP (VBZ is)
+              (NP
+                (NP (JJ false) (NNS guns))
+                (VP (VBN dont)
+                  (S
+                    (VP (VB kill)
+                      (NP (NNS people)))))))))))
+    (, ,)
+    (NP (NNS people))
+    (VP (VBP kill)
+      (NP (NNS people)))
+    (. .)))
+
+det(statement-2, The-1)
+nsubj(kill-6, statement-2)
+prep_of(statement-2, Guns-5)
+ccomp(kill-21, kill-6)
+nn(children-11, people-7)
+dep(children-11, Guns-9)
+nn(children-11, kill-10)
+nsubj(guns-15, children-11)
+cop(guns-15, is-13)
+amod(guns-15, false-14)
+ccomp(kill-6, guns-15)
+partmod(guns-15, dont-16)
+ccomp(dont-16, kill-17)
+dobj(kill-17, people-18)
+nsubj(kill-21, people-20)
+root(ROOT-0, kill-21)
+dobj(kill-21, people-22)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Guns))
+      (VP (MD should)
+        (VP (VB be)
+          (ADVP (RB aloud)))))
+    (NP (JJ everywere) (NNS GUNS))
+    (VP (VBP ARE)
+      (VP (VBN GOOD)))
+    (. .)))
+
+nsubj(be-3, Guns-1)
+aux(be-3, should-2)
+dep(GOOD-8, be-3)
+advmod(be-3, aloud-4)
+amod(GUNS-6, everywere-5)
+nsubjpass(GOOD-8, GUNS-6)
+auxpass(GOOD-8, ARE-7)
+root(ROOT-0, GOOD-8)
+

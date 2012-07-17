@@ -1,0 +1,134 @@
+(ROOT
+  (S
+    (NP (DT The) (NN article))
+    (ADVP (RB clearly))
+    (VP (VBZ states)
+      (NP
+        (NP (DT the) (JJ high) (NN number))
+        (PP (IN of)
+          (NP
+            (NP (NNS lives))
+            (VP (VBN saved)
+              (PP (IN by)
+                (NP (NNS guns))))))))
+    (. .)))
+
+det(article-2, The-1)
+nsubj(states-4, article-2)
+advmod(states-4, clearly-3)
+root(ROOT-0, states-4)
+det(number-7, the-5)
+amod(number-7, high-6)
+dobj(states-4, number-7)
+prep_of(number-7, lives-9)
+partmod(lives-9, saved-10)
+agent(saved-10, guns-12)
+
+(ROOT
+  (S
+    (S
+      (INTJ (UH Yes))
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADJP (JJ unfortunate))
+        (SBAR (IN that)
+          (S
+            (S
+              (VP (VBG having)
+                (NP (DT a) (NN gun))))
+            (VP (VBZ does) (RB not)
+              (VP (VB guarentee)
+                (SBAR
+                  (S
+                    (NP (PRP you))
+                    (VP (MD will)
+                      (VP (VB survive)))))))))))
+    (CC but)
+    (S
+      (NP (PRP it))
+      (ADVP (RB definately))
+      (VP (VBZ improves)
+        (NP (PRP$ your) (NNS chances))))
+    (. .)))
+
+dep(unfortunate-4, Yes-1)
+nsubj(unfortunate-4, it-2)
+cop(unfortunate-4, is-3)
+root(ROOT-0, unfortunate-4)
+complm(guarentee-11, that-5)
+csubj(guarentee-11, having-6)
+det(gun-8, a-7)
+dobj(having-6, gun-8)
+aux(guarentee-11, does-9)
+neg(guarentee-11, not-10)
+ccomp(unfortunate-4, guarentee-11)
+nsubj(survive-14, you-12)
+aux(survive-14, will-13)
+ccomp(guarentee-11, survive-14)
+nsubj(improves-18, it-16)
+advmod(improves-18, definately-17)
+conj_but(unfortunate-4, improves-18)
+poss(chances-20, your-19)
+dobj(improves-18, chances-20)
+
+(ROOT
+  (S (CC And)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NNS laws))
+        (SBAR
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP attempt)
+                (S
+                  (VP (TO to)
+                    (VP (VB keep)
+                      (NP (DT the) (NNS guns))
+                      (PRT (RP away))
+                      (PP (IN from)
+                        (NP (NNS criminals)))))))))
+          (CC but)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ makes)
+                      (SBAR
+                        (S
+                          (NP (PRP them))
+                          (ADVP
+                            (NP (DT a) (NN crimianl))
+                            (RB now))
+                          (VP (VBZ is) (RB n't)
+                            (NP (PRP it))))))))))))))
+    (. ?)))
+
+cc(are-3, And-1)
+expl(are-3, there-2)
+root(ROOT-0, are-3)
+nsubj(are-3, laws-4)
+nsubj(attempt-6, laws-4)
+nsubj(is-16, laws-4)
+rcmod(laws-4, attempt-6)
+aux(keep-8, to-7)
+xcomp(attempt-6, keep-8)
+det(guns-10, the-9)
+dobj(keep-8, guns-10)
+prep_away_from(keep-8, criminals-13)
+rcmod(laws-4, is-16)
+conj_but(attempt-6, is-16)
+nsubj(makes-18, what-17)
+ccomp(is-16, makes-18)
+nsubj(it-25, them-19)
+det(crimianl-21, a-20)
+npadvmod(now-22, crimianl-21)
+advmod(it-25, now-22)
+cop(it-25, is-23)
+neg(it-25, n't-24)
+ccomp(makes-18, it-25)
+

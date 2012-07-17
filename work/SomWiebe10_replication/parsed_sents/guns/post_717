@@ -1,0 +1,286 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT a) (JJ drunk) (NN kid))
+      (PP (IN with)
+        (X (SYM a))))
+    (VP (VBP permit))
+    (. .) (. .)))
+
+det(kid-4, a-2)
+amod(kid-4, drunk-3)
+nsubj(permit-7, kid-4)
+prep(kid-4, with-5)
+dep(with-5, a-6)
+root(ROOT-0, permit-7)
+
+(ROOT
+  (S
+    (PP (IN at)
+      (NP (DT a) (NN party) ('' '')))
+    (ADVP (RB First) (RB off))
+    (, ,)
+    (NP
+      (NP (DT the) (NNS folks))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (MD would)
+            (VP (VB be)
+              (VP (VBN allowed)
+                (S
+                  (VP (TO to)
+                    (VP (VB carry)
+                      (PP (IN on)
+                        (NP (NN campus))))))))))))
+    (VP (MD would)
+      (VP (VB be)
+        (NP
+          (NP (DT the) (NNS ones))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are)
+                (VP (VBN LICENSED)
+                  (S
+                    (VP (TO to)
+                      (VP (VB do)
+                        (ADVP (RB so))))))))))))
+    (. .)))
+
+det(party-3, a-2)
+prep_at(ones-21, party-3)
+advmod(off-6, First-5)
+advmod(ones-21, off-6)
+det(folks-9, the-8)
+nsubjpass(allowed-13, folks-9)
+nsubj(ones-21, folks-9)
+aux(allowed-13, would-11)
+auxpass(allowed-13, be-12)
+rcmod(folks-9, allowed-13)
+aux(carry-15, to-14)
+xcomp(allowed-13, carry-15)
+prep_on(carry-15, campus-17)
+aux(ones-21, would-18)
+cop(ones-21, be-19)
+det(ones-21, the-20)
+root(ROOT-0, ones-21)
+nsubjpass(LICENSED-24, ones-21)
+auxpass(LICENSED-24, are-23)
+rcmod(ones-21, LICENSED-24)
+aux(do-26, to-25)
+xcomp(LICENSED-24, do-26)
+advmod(do-26, so-27)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (ADVP (RB ALREADY))
+    (VP (VBP carry)
+      (NP (DT these) (NNS firearms)))
+    (. .)))
+
+nsubj(carry-3, They-1)
+advmod(carry-3, ALREADY-2)
+root(ROOT-0, carry-3)
+det(firearms-5, these-4)
+dobj(carry-3, firearms-5)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP dont)
+      (VP (VB hear)
+        (PP (IN about)
+          (S
+            (NP (DT these) (NNS students))
+            (VP (`` ``) (VBG shooting) ('' '')
+              (NP
+                (NP (JJ other) (NNS students))
+                (PP (IN at)
+                  (NP (NNS parties)))))))))
+    (: ...)))
+
+nsubj(dont-2, We-1)
+root(ROOT-0, dont-2)
+dep(dont-2, hear-3)
+det(students-6, these-5)
+nsubj(shooting-8, students-6)
+prepc_about(hear-3, shooting-8)
+amod(students-11, other-10)
+dobj(shooting-8, students-11)
+prep_at(students-11, parties-13)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Allowing)
+        (NP (NNS students))
+        (S
+          (VP (TO to)
+            (VP (VB carry)
+              (PP (IN on)
+                (NP (NN campus))))))))
+    (VP (MD would)
+      (ADVP (RB just))
+      (VP (VB allow)
+        (S
+          (NP (PRP them))
+          (VP (TO to)
+            (VP (VB walk)
+              (PP (IN across)
+                (NP
+                  (NP (DT the) (NN campus) (NN line))
+                  (PP (IN with)
+                    (NP (PRP$ their) (NN firearm)))))
+              (SBAR (IN that)
+                (S
+                  (NP (PRP they))
+                  (ADVP (RB ALREADY))
+                  (VP (VBP carry)
+                    (NP (RB virtually) (RB everywhere) (RB else))))))))))
+    (. .)))
+
+csubj(allow-9, Allowing-1)
+dobj(Allowing-1, students-2)
+aux(carry-4, to-3)
+xcomp(Allowing-1, carry-4)
+prep_on(carry-4, campus-6)
+aux(allow-9, would-7)
+advmod(allow-9, just-8)
+root(ROOT-0, allow-9)
+nsubj(walk-12, them-10)
+aux(walk-12, to-11)
+xcomp(allow-9, walk-12)
+det(line-16, the-14)
+nn(line-16, campus-15)
+prep_across(walk-12, line-16)
+poss(firearm-19, their-18)
+prep_with(line-16, firearm-19)
+complm(carry-23, that-20)
+nsubj(carry-23, they-21)
+advmod(carry-23, ALREADY-22)
+ccomp(walk-12, carry-23)
+advmod(else-26, virtually-24)
+advmod(else-26, everywhere-25)
+dobj(carry-23, else-26)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (VP (VBG talking)
+        (NP
+          (QP (RB about) (CD concealed)))
+        (S
+          (VP (VB carry)
+            (PP (IN in)
+              (NP (DT a) (NNP CLASSROOM) (NN environment)))))))
+    (. .)))
+
+nsubj(talking-3, We-1)
+aux(talking-3, are-2)
+root(ROOT-0, talking-3)
+quantmod(concealed-5, about-4)
+dobj(talking-3, concealed-5)
+dep(talking-3, carry-6)
+det(environment-10, a-8)
+nn(environment-10, CLASSROOM-9)
+prep_in(carry-6, environment-10)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP dont)
+      (VP (VB hear)
+        (PP (IN about)
+          (NP
+            (NP (NNS Students))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP are)
+                  (VP (VBN licensed)
+                    (S
+                      (VP (TO to)
+                        (VP (VB carry))))
+                    (, ,)
+                    (S
+                      (VP (VBG shooting)
+                        (PRT (RP up))
+                        (NP (NNS parties))
+                        (PP (IN off)
+                          (NP (NN campus)))))))))))))
+    (. .)))
+
+nsubj(dont-2, We-1)
+root(ROOT-0, dont-2)
+dep(dont-2, hear-3)
+prep_about(hear-3, Students-5)
+nsubjpass(licensed-8, Students-5)
+auxpass(licensed-8, are-7)
+rcmod(Students-5, licensed-8)
+aux(carry-10, to-9)
+xcomp(licensed-8, carry-10)
+xcomp(licensed-8, shooting-12)
+prt(shooting-12, up-13)
+dobj(shooting-12, parties-14)
+prep_off(shooting-12, campus-16)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD would)
+      (NP (DT these)
+        (ADJP (CD 21) (JJ +) (NN year))
+        (NNS olds))
+      (VP (VB start)
+        (NP (NN opening) (NN fire))
+        (PP (IN at)
+          (NP (DT those) (JJ same) (NNS parties)))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP
+              (NP (DT the) (JJ only) (NN thing))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (MD would)
+                    (VP (VB change))))))
+            (VP (VBZ is)
+              (NP (DT the) (NN allowance)
+                (S
+                  (VP (TO to)
+                    (VP (VB carry)
+                      (PP (IN IN)
+                        (NP (NNP CLASS))))))))))))
+    (. .)))
+
+advmod(start-8, Why-1)
+aux(start-8, would-2)
+det(olds-7, these-3)
+number(year-6, 21-4)
+dep(year-6, +-5)
+amod(olds-7, year-6)
+nsubj(start-8, olds-7)
+root(ROOT-0, start-8)
+nn(fire-10, opening-9)
+dobj(start-8, fire-10)
+det(parties-14, those-12)
+amod(parties-14, same-13)
+prep_at(start-8, parties-14)
+advmod(allowance-24, when-15)
+det(thing-18, the-16)
+amod(thing-18, only-17)
+nsubj(change-21, thing-18)
+nsubj(allowance-24, thing-18)
+aux(change-21, would-20)
+rcmod(thing-18, change-21)
+cop(allowance-24, is-22)
+det(allowance-24, the-23)
+advcl(start-8, allowance-24)
+aux(carry-26, to-25)
+infmod(allowance-24, carry-26)
+prep_in(carry-26, CLASS-28)
+

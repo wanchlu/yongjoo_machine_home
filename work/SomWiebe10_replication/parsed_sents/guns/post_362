@@ -1,0 +1,117 @@
+(ROOT
+  (S
+    (PP (IN As)
+      (NP (DT a) (JJ handicapped) (NN person)))
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (PRP I))
+        (VP (VBP am)
+          (NP
+            (NP (DT a) (NNP BKA) (NNP Below))
+            (NP (DT the) (NN Knee) (NN Amputee)))))
+      (-RRB- -RRB-))
+    (NP (PRP I))
+    (VP (VBP am)
+      (ADJP (JJ unable)
+        (S
+          (VP (TO to)
+            (VP (VB flee)))))
+      (PRN (, ,)
+        (CC or)
+        (ADVP (RB back) (RB up))))
+    (. .)))
+
+det(person-4, a-2)
+amod(person-4, handicapped-3)
+prep_as(unable-17, person-4)
+nsubj(Below-10, I-6)
+cop(Below-10, am-7)
+det(Below-10, a-8)
+nn(Below-10, BKA-9)
+parataxis(unable-17, Below-10)
+det(Amputee-13, the-11)
+nn(Amputee-13, Knee-12)
+dep(Below-10, Amputee-13)
+nsubj(unable-17, I-15)
+cop(unable-17, am-16)
+root(ROOT-0, unable-17)
+aux(flee-19, to-18)
+xcomp(unable-17, flee-19)
+dep(up-23, or-21)
+advmod(up-23, back-22)
+dep(unable-17, up-23)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP tend)
+      (S
+        (VP (TO to)
+          (VP (VB fall)
+            (PRT (RP down))
+            (SBAR
+              (WHADVP (WRB whenever))
+              (S
+                (NP (PRP I))
+                (VP (VBP try)
+                  (S
+                    (VP (TO to)
+                      (VP (VB back)
+                        (PRT (RP away))))))))))))
+    (. .)))
+
+nsubj(tend-2, I-1)
+xsubj(fall-4, I-1)
+root(ROOT-0, tend-2)
+aux(fall-4, to-3)
+xcomp(tend-2, fall-4)
+prt(fall-4, down-5)
+advmod(try-8, whenever-6)
+nsubj(try-8, I-7)
+xsubj(back-10, I-7)
+advcl(fall-4, try-8)
+aux(back-10, to-9)
+xcomp(try-8, back-10)
+prt(back-10, away-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP feel)
+      (ADJP
+        (ADJP (RB much) (RBR more) (JJ secure))
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (PRP I))
+            (VP (VBP am)
+              (ADJP (JJ able)
+                (S
+                  (VP (TO to)
+                    (VP (VB have)
+                      (NP
+                        (NP (DT the) (NN protection))
+                        (PP (IN of)
+                          (NP
+                            (NP (DT a) (NN firearm))
+                            (PP (IN with)
+                              (NP (PRP me)))))))))))))))
+    (. .)))
+
+nsubj(feel-2, I-1)
+root(ROOT-0, feel-2)
+advmod(secure-5, much-3)
+advmod(secure-5, more-4)
+acomp(feel-2, secure-5)
+advmod(able-9, when-6)
+nsubj(able-9, I-7)
+cop(able-9, am-8)
+dep(secure-5, able-9)
+aux(have-11, to-10)
+xcomp(able-9, have-11)
+det(protection-13, the-12)
+dobj(have-11, protection-13)
+det(firearm-16, a-15)
+prep_of(protection-13, firearm-16)
+prep_with(firearm-16, me-18)
+

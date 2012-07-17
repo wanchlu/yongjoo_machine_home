@@ -1,0 +1,372 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ happens)
+        (SBAR
+          (WHADVP (WRB when))
+          (S
+            (NP (DT a) (JJ large) (NN company))
+            (VP (VBZ gives)
+              (NP (PRP you))
+              (NP (NN healthcare)))))))
+    (. ?)))
+
+nsubj(happens-2, What-1)
+root(ROOT-0, happens-2)
+advmod(gives-7, when-3)
+det(company-6, a-4)
+amod(company-6, large-5)
+nsubj(gives-7, company-6)
+advcl(happens-2, gives-7)
+iobj(gives-7, you-8)
+dobj(gives-7, healthcare-9)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (ADVP (RB then))
+      (VP (VBZ becomes)
+        (PP (IN in)
+          (NP (PRP$ their) (JJS best) (NN interest)))
+        (S
+          (VP (TO to) (`` ``)
+            (VP (VB take)
+              (NP
+                (NP (NN care))
+                (PP (IN of)
+                  (NP (PRP you)))))
+            ('' '')))))
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP begin)
+        (S
+          (VP (TO to)
+            (VP (VB say))))))
+    (, ,)
+    (S
+      (NP (PRP you))
+      (VP (MD must)
+        (VP (VB take)
+          (NP (DT a)
+            (ADJP (CD 10) (NN minute))
+            (NN break))
+          (NP (DT every) (CD two) (NNS hours)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP you))
+      (VP (MD must)
+        (VP (VB arm)
+          (SBAR
+            (SBAR
+              (S
+                (VP
+                  (VP (VBZ stretches))
+                  (, ,)
+                  (CC or)
+                  (VP (VBP rest)
+                    (NP (PRP$ your) (NNS eyes))
+                    (PP (IN from)
+                      (S
+                        (VP (VBG looking)
+                          (PP (IN at)
+                            (NP (PRP$ your) (NN computer) (NN monitor))))))))))
+            (, ,)
+            (CC or)
+            (SBAR
+              (WHNP (WDT whatever))
+              (S
+                (NP (PRP it))
+                (VP (MD may)
+                  (VP (VB be)))))))))
+    (. .)))
+
+nsubj(becomes-3, It-1)
+xsubj(take-10, It-1)
+advmod(becomes-3, then-2)
+root(ROOT-0, becomes-3)
+poss(interest-7, their-5)
+amod(interest-7, best-6)
+prep_in(becomes-3, interest-7)
+aux(take-10, to-8)
+xcomp(becomes-3, take-10)
+dobj(take-10, care-11)
+prep_of(care-11, you-13)
+nsubj(begin-17, they-16)
+xsubj(say-19, they-16)
+conj_and(becomes-3, begin-17)
+aux(say-19, to-18)
+xcomp(begin-17, say-19)
+nsubj(take-23, you-21)
+aux(take-23, must-22)
+ccomp(becomes-3, take-23)
+conj_and(becomes-3, take-23)
+det(break-27, a-24)
+number(minute-26, 10-25)
+amod(break-27, minute-26)
+iobj(take-23, break-27)
+det(hours-30, every-28)
+num(hours-30, two-29)
+dobj(take-23, hours-30)
+nsubj(arm-35, you-33)
+aux(arm-35, must-34)
+conj_and(becomes-3, arm-35)
+dep(arm-35, stretches-36)
+dep(arm-35, rest-39)
+conj_or(stretches-36, rest-39)
+poss(eyes-41, your-40)
+dobj(rest-39, eyes-41)
+prepc_from(rest-39, looking-43)
+poss(monitor-47, your-45)
+nn(monitor-47, computer-46)
+prep_at(looking-43, monitor-47)
+dobj(be-53, whatever-50)
+nsubj(be-53, it-51)
+aux(be-53, may-52)
+dep(arm-35, be-53)
+conj_or(stretches-36, be-53)
+
+(ROOT
+  (S (CC And)
+    (ADVP (RB even) (RB now))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (RBR more) (JJ expensive)
+        (S
+          (VP (TO to)
+            (VP (VB get)
+              (NP (NN health) (NN insurance))
+              (PP (IN for)
+                (NP (NNS people)))
+              (SBAR
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP smoke))))
+                (, ,)
+                (CC or)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBP are)
+                      (NP
+                        (NP (NN overweight))
+                        (, ,)
+                        (ADVP (RB then))
+                        (NP
+                          (NP (NNS people))
+                          (SBAR
+                            (WHNP (WP who))
+                            (S
+                              (VP
+                                (VP (VBP do) (RB n't))
+                                (CC or)
+                                (VP (VBP are) (RB n't))))))))))))))))
+    (. .)))
+
+cc(expensive-8, And-1)
+advmod(now-3, even-2)
+advmod(expensive-8, now-3)
+nsubj(expensive-8, it-5)
+cop(expensive-8, is-6)
+advmod(expensive-8, more-7)
+root(ROOT-0, expensive-8)
+aux(get-10, to-9)
+xcomp(expensive-8, get-10)
+nn(insurance-12, health-11)
+dobj(get-10, insurance-12)
+prep_for(get-10, people-14)
+nsubj(smoke-16, who-15)
+dep(get-10, smoke-16)
+nsubj(overweight-21, who-19)
+cop(overweight-21, are-20)
+dep(get-10, overweight-21)
+conj_or(smoke-16, overweight-21)
+advmod(overweight-21, then-23)
+dep(overweight-21, people-24)
+nsubj(do-26, people-24)
+nsubj(are-29, people-24)
+rcmod(people-24, do-26)
+neg(do-26, n't-27)
+rcmod(people-24, are-29)
+conj_or(do-26, are-29)
+neg(are-29, n't-30)
+
+(ROOT
+  (S
+    (NP (PRP$ My) (NN point))
+    (VP (VBG being))
+    (: ...)))
+
+poss(point-2, My-1)
+nsubj(being-3, point-2)
+root(ROOT-0, being-3)
+
+(ROOT
+  (S
+    (NP (WP What))
+    (VP (VBZ happens)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NN government))
+          (VP (VBZ takes)
+            (PP (IN over)
+              (NP (NN healthcare)))))))
+    (. .)))
+
+nsubj(happens-2, What-1)
+root(ROOT-0, happens-2)
+advmod(takes-6, when-3)
+det(government-5, the-4)
+nsubj(takes-6, government-5)
+advcl(happens-2, takes-6)
+prep_over(takes-6, healthcare-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (WP What) (NN kind))
+      (PP (IN of)
+        (NP (NNS rules\/laws))))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN placed)
+          (PP (IN on)
+            (NP (DT every) (NN citizen)))
+          (SBAR (IN because)
+            (S
+              (NP (NN everyone))
+              (VP (VBZ is)
+                (VP (VBG paying)
+                  (PP (IN for)
+                    (NP (NN everyone) (RB else))))))))))
+    (. .)))
+
+dep(kind-2, What-1)
+nsubjpass(placed-7, kind-2)
+prep_of(kind-2, rules\/laws-4)
+aux(placed-7, will-5)
+auxpass(placed-7, be-6)
+root(ROOT-0, placed-7)
+det(citizen-10, every-9)
+prep_on(placed-7, citizen-10)
+mark(paying-14, because-11)
+nsubj(paying-14, everyone-12)
+aux(paying-14, is-13)
+advcl(placed-7, paying-14)
+prep_for(paying-14, everyone-16)
+advmod(everyone-16, else-17)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should)
+      (NP (PRP I))
+      (VP (VB pay)
+        (PP (IN for)
+          (NP
+            (NP (NNP Joe) (NNP Smith))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP
+                  (VP (VBZ is)
+                    (ADJP
+                      (NP (CD 200) (NNS pounds))
+                      (JJ overweight)))
+                  (, ,)
+                  (VP (VBZ smokes))
+                  (, ,)
+                  (CC and)
+                  (VP (VBZ does) (RB n't)
+                    (VP (VB take)
+                      (NP
+                        (NP (NN care))
+                        (PP (IN of)
+                          (NP (PRP himself))))
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (NP (PRP I))
+                          (VP (VBP jog)
+                            (NP (DT every) (NN morning)))))))
+                  (, ,)
+                  (VP (VBP do) (RB n't)
+                    (VP (VB smoke)))
+                  (CC and)
+                  (VP (VBP am)
+                    (PP (IN in)
+                      (NP (JJ good) (NN health)))))))))))
+    (. ?)))
+
+advmod(pay-4, Why-1)
+aux(pay-4, should-2)
+nsubj(pay-4, I-3)
+root(ROOT-0, pay-4)
+nn(Smith-7, Joe-6)
+prep_for(pay-4, Smith-7)
+nsubj(overweight-12, Smith-7)
+nsubj(smokes-14, Smith-7)
+nsubj(take-19, Smith-7)
+nsubj(smoke-31, Smith-7)
+nsubj(am-33, Smith-7)
+cop(overweight-12, is-9)
+num(pounds-11, 200-10)
+npadvmod(overweight-12, pounds-11)
+rcmod(Smith-7, overweight-12)
+rcmod(Smith-7, smokes-14)
+conj_and(overweight-12, smokes-14)
+aux(take-19, does-17)
+neg(take-19, n't-18)
+rcmod(Smith-7, take-19)
+conj_and(overweight-12, take-19)
+dobj(take-19, care-20)
+prep_of(care-20, himself-22)
+advmod(jog-25, when-23)
+nsubj(jog-25, I-24)
+advcl(take-19, jog-25)
+det(morning-27, every-26)
+tmod(jog-25, morning-27)
+aux(smoke-31, do-29)
+neg(smoke-31, n't-30)
+rcmod(Smith-7, smoke-31)
+conj_and(overweight-12, smoke-31)
+rcmod(Smith-7, am-33)
+conj_and(overweight-12, am-33)
+amod(health-36, good-35)
+prep_in(am-33, health-36)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD could)
+        (VP (VB go)
+          (PRT (RP on)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (S
+          (NP (PRP you))
+          (VP (VB get)
+            (NP (DT the) (NN idea))))))
+    (. ...)))
+
+nsubj(go-3, I-1)
+aux(go-3, could-2)
+root(ROOT-0, go-3)
+prt(go-3, on-4)
+nsubj(think-8, I-7)
+conj_but(go-3, think-8)
+nsubj(get-10, you-9)
+ccomp(think-8, get-10)
+det(idea-12, the-11)
+dobj(get-10, idea-12)
+

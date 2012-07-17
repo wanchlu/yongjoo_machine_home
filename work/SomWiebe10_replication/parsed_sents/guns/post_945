@@ -1,0 +1,587 @@
+(ROOT
+  (SQ (MD Should)
+    (NP
+      (NP (-LRB- -LRB-) (NN citizen) (-RRB- -RRB-))
+      (NP (NNS guns)))
+    (VP (VB be)
+      (VP (VBN banned)))
+    (. ?)))
+
+aux(banned-7, Should-1)
+nsubjpass(banned-7, citizen-3)
+dep(citizen-3, guns-5)
+auxpass(banned-7, be-6)
+root(ROOT-0, banned-7)
+
+(ROOT
+  (NP (NNP hell) (NNPS no.)))
+
+nn(no.-2, hell-1)
+root(ROOT-0, no.-2)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ prevents)
+        (NP
+          (NP (NN overcrowding))
+          (PP (IN of)
+            (NP
+              (NP (NNS prisons))
+              (, ,)
+              (NP (NNS riots))
+              (, ,)))))
+      (CC and)
+      (VP (VBZ decreases)
+        (NP (JJ many) (NNS injuries))))
+    (. .)))
+
+nsubj(prevents-2, It-1)
+nsubj(decreases-10, It-1)
+root(ROOT-0, prevents-2)
+dobj(prevents-2, overcrowding-3)
+prep_of(overcrowding-3, prisons-5)
+appos(prisons-5, riots-7)
+conj_and(prevents-2, decreases-10)
+amod(injuries-12, many-11)
+dobj(decreases-10, injuries-12)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (NN return)))
+    (NP (NN health) (NNS costs))
+    (VP (VBP are) (RB not)
+      (VP (VBN forced)
+        (PP (TO to)
+          (NP (NN sky-rocket)))))
+    (. .)))
+
+prep_in(forced-7, return-2)
+nn(costs-4, health-3)
+nsubjpass(forced-7, costs-4)
+auxpass(forced-7, are-5)
+neg(forced-7, not-6)
+root(ROOT-0, forced-7)
+prep_to(forced-7, sky-rocket-9)
+
+(ROOT
+  (S
+    (SBAR
+      (S
+        (VP (TO To)
+          (VP (VB suit)
+            (NP
+              (NP (DT the) (NNS people))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBP believe)))))))))
+    (NP (NNS guns))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (RB completely) (JJ illegal))))
+    (: ...)))
+
+aux(suit-2, To-1)
+dep(illegal-11, suit-2)
+det(people-4, the-3)
+dobj(suit-2, people-4)
+nsubj(believe-6, people-4)
+rcmod(people-4, believe-6)
+nsubj(illegal-11, guns-7)
+aux(illegal-11, should-8)
+cop(illegal-11, be-9)
+advmod(illegal-11, completely-10)
+root(ROOT-0, illegal-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do)
+      (VP (VB feel)
+        (SBAR (IN that)
+          (S
+            (NP (JJR stricter) (NNS laws))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN enforced)
+                      (S
+                        (VP (TO to)
+                          (VP (VB acquire)
+                            (NP (JJ such) (NN equipment))))))))))))))
+    (. .)))
+
+nsubj(feel-3, I-1)
+aux(feel-3, do-2)
+root(ROOT-0, feel-3)
+complm(need-7, that-4)
+amod(laws-6, stricter-5)
+nsubj(need-7, laws-6)
+xsubj(enforced-10, laws-6)
+ccomp(feel-3, need-7)
+aux(enforced-10, to-8)
+auxpass(enforced-10, be-9)
+xcomp(need-7, enforced-10)
+aux(acquire-12, to-11)
+xcomp(enforced-10, acquire-12)
+amod(equipment-14, such-13)
+dobj(acquire-12, equipment-14)
+
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (TO to)
+        (NP
+          (NP (DT the) (NNP National) (NNP Rifle) (NNP Association))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP NRAILA))
+            (-RRB- -RRB-)))))
+    (, ,)
+    (S
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN state))
+          (PP (IN of)
+            (NP (NNP Texas)))))
+      (, ,)
+      (NP (DT an) (NN individual))
+      (VP (VBZ does) (RB not)
+        (VP (VB need)
+          (NP (DT a) (NN permit)
+            (S
+              (VP (TO to)
+                (VP (VB buy)
+                  (NP (DT a) (NN hangun)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP they))
+      (VP (VBP are) (RB not)
+        (VP (VBN required)
+          (S
+            (VP (TO to)
+              (VP (VB carry)
+                (NP
+                  (NP (NN registration))
+                  (CC or)
+                  (NP (DT a) (NN license)))))))))
+    (. .)))
+
+prepc_according_to(need-21, to-2)
+det(Association-6, the-3)
+nn(Association-6, National-4)
+nn(Association-6, Rifle-5)
+pobj(need-21, Association-6)
+abbrev(Association-6, NRAILA-8)
+det(state-13, the-12)
+prep_in(need-21, state-13)
+prep_of(state-13, Texas-15)
+det(individual-18, an-17)
+nsubj(need-21, individual-18)
+aux(need-21, does-19)
+neg(need-21, not-20)
+root(ROOT-0, need-21)
+det(permit-23, a-22)
+dobj(need-21, permit-23)
+aux(buy-25, to-24)
+infmod(permit-23, buy-25)
+det(hangun-27, a-26)
+dobj(buy-25, hangun-27)
+nsubjpass(required-33, they-30)
+xsubj(carry-35, they-30)
+auxpass(required-33, are-31)
+neg(required-33, not-32)
+conj_and(need-21, required-33)
+aux(carry-35, to-34)
+xcomp(required-33, carry-35)
+dobj(carry-35, registration-36)
+det(license-39, a-38)
+dobj(carry-35, license-39)
+conj_or(registration-36, license-39)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT This) (NN lack))
+        (PP (IN of)
+          (NP (NN legislation))))
+      (VP (VBZ is)
+        (NP
+          (NP (CD one))
+          (PP (IN of)
+            (NP
+              (NP (DT the) (JJ main) (NNS reasons))
+              (PP (IN for)
+                (NP
+                  (NP (DT the) (NN decrease))
+                  (PP (IN in)
+                    (NP (NN gun) (NN safety))))))))))
+    (, ,) (IN so)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP we))
+          (VP (VB fix)
+            (NP (DT this)))))
+      (, ,)
+      (NP (NNPS Americans))
+      (VP (MD can)
+        (VP (VB be)
+          (PP (IN on)
+            (NP (PRP$ their) (NN way)))
+          (PP (TO to)
+            (NP (DT a)
+              (ADJP (JJ happy))
+              (, ,) (NN gun) (JJ legal) (NN society))))))
+    (. .)))
+
+det(lack-2, This-1)
+nsubj(one-6, lack-2)
+prep_of(lack-2, legislation-4)
+cop(one-6, is-5)
+root(ROOT-0, one-6)
+det(reasons-10, the-8)
+amod(reasons-10, main-9)
+prep_of(one-6, reasons-10)
+det(decrease-13, the-12)
+prep_for(reasons-10, decrease-13)
+nn(safety-16, gun-15)
+prep_in(decrease-13, safety-16)
+dep(one-6, so-18)
+mark(fix-21, if-19)
+nsubj(fix-21, we-20)
+advcl(be-26, fix-21)
+dobj(fix-21, this-22)
+nsubj(be-26, Americans-24)
+aux(be-26, can-25)
+ccomp(one-6, be-26)
+poss(way-29, their-28)
+prep_on(be-26, way-29)
+det(society-36, a-31)
+amod(society-36, happy-32)
+nn(society-36, gun-34)
+amod(society-36, legal-35)
+prep_to(be-26, society-36)
+
+(ROOT
+  (VP (VB =) (-RRB- -RRB-)
+    (NP (NN http:\/\/www.the-eggman.com\/writings\/gun_ban.html))
+    (ADVP (RB http:\/\/www.the-eggman.com\/index.phphttp:\/\/crime.about.com\/od\/gunlawsbystate\/a\/gunlaws_tx.htm))))
+
+root(ROOT-0, =-1)
+dobj(=-1, http:\/\/www.the-eggman.com\/writings\/gun_ban.html-3)
+advmod(=-1, http:\/\/www.the-eggman.com\/index.phphttp:\/\/crime.about.com\/od\/gunlawsbystate\/a\/gunlaws_tx.htm-4)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (DT an) (NN arguement))
+        (VP (VBN made)
+          (PP (IN by)
+            (NP (NNP T.S.) (NNP Eggleston))))))
+    (, ,)
+    (SBAR (IN if)
+      (S
+        (NP (NNS guns))
+        (VP (VBD were)
+          (VP (VBN banned)))))
+    (, ,)
+    (NP (DT a) (JJ black) (NN market))
+    (VP (MD would)
+      (VP (VB arise)
+        (FRAG
+          (CONJP (RB as) (RB well) (IN as))
+          (NP (NN gun) (NN smuggling)))))
+    (. .)))
+
+det(arguement-3, an-2)
+prep_in(arise-18, arguement-3)
+partmod(arguement-3, made-4)
+nn(Eggleston-7, T.S.-6)
+agent(made-4, Eggleston-7)
+mark(banned-12, if-9)
+nsubjpass(banned-12, guns-10)
+auxpass(banned-12, were-11)
+advcl(arise-18, banned-12)
+det(market-16, a-14)
+amod(market-16, black-15)
+nsubj(arise-18, market-16)
+aux(arise-18, would-17)
+root(ROOT-0, arise-18)
+advmod(well-20, as-19)
+mwe(well-20, as-19)
+dep(smuggling-23, well-20)
+mwe(well-20, as-21)
+nn(smuggling-23, gun-22)
+dep(arise-18, smuggling-23)
+
+(ROOT
+  (SBARQ
+    (S
+      (NP
+        (NP (DT This))
+        (PP (IN in)
+          (NP (NN return))))
+      (VP (MD would)
+        (VP (VB lead)
+          (UCP
+            (PP (TO to)
+              (NP
+                (NP (DT an) (NN increase))
+                (PP (IN in)
+                  (NP (NN crime)))))
+            (CC and)
+            (ADVP (RB honestly))))))
+    (, ,)
+    (WHNP (WP who))
+    (SQ
+      (VP (VBZ wants)
+        (NP (JJR more) (NN crime))))
+    (. ?)))
+
+nsubj(lead-5, This-1)
+prep_in(This-1, return-3)
+aux(lead-5, would-4)
+dep(wants-15, lead-5)
+dep(lead-5, to-6)
+det(increase-8, an-7)
+pobj(to-6, increase-8)
+prep_in(increase-8, crime-10)
+dep(lead-5, honestly-12)
+conj_and(to-6, honestly-12)
+dobj(wants-15, who-14)
+nsubj(wants-15, who-14)
+root(ROOT-0, wants-15)
+amod(crime-17, more-16)
+dobj(wants-15, crime-17)
+
+(ROOT
+  (S
+    (NP (PRP He))
+    (VP (VBZ states)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (NNS citizens))
+            (PP (IN with)
+              (NP (DT no) (JJ previous) (JJ criminal) (NNS records))))
+          (VP (MD would)
+            (VP (VB surrender)
+              (NP (PRP$ their) (NNS guns))
+              (PP
+                (PP (TO to)
+                  (NP
+                    (NP (NNS officials))
+                    (, ,)
+                    (VP (VBG leaving)
+                      (S
+                        (NP (PRP them))
+                        (ADJP (JJ helpless))))))
+                (CC and)
+                (PP (IN at)
+                  (NP
+                    (NP (DT a) (JJR higher) (NN risk))
+                    (PP (IN for)
+                      (S
+                        (VP (VBG being)
+                          (VP (VBN injured)))))))))))))
+    (. .)))
+
+nsubj(states-2, He-1)
+root(ROOT-0, states-2)
+complm(surrender-12, that-3)
+det(citizens-5, the-4)
+nsubj(surrender-12, citizens-5)
+nsubj(surrender-12', citizens-5)
+det(records-10, no-7)
+amod(records-10, previous-8)
+amod(records-10, criminal-9)
+prep_with(citizens-5, records-10)
+aux(surrender-12, would-11)
+ccomp(states-2, surrender-12)
+ccomp(states-2, surrender-12')
+conj_and(surrender-12, surrender-12')
+poss(guns-14, their-13)
+dobj(surrender-12, guns-14)
+prep_to(surrender-12, officials-16)
+partmod(officials-16, leaving-18)
+nsubj(helpless-20, them-19)
+xcomp(leaving-18, helpless-20)
+det(risk-25, a-23)
+amod(risk-25, higher-24)
+prep_at(surrender-12', risk-25)
+auxpass(injured-28, being-27)
+prepc_for(risk-25, injured-28)
+
+(ROOT
+  (S
+    (NP (NNP Eggleston))
+    (ADVP (RB further))
+    (VP (VBZ explains)
+      (NP
+        (NP (DT that))
+        ('' '')
+        (SBAR
+          (S
+            (NP (NNP Criminals))
+            (VP (MD will)
+              (ADVP (RB always))
+              (VP (VB continue)
+                (S
+                  (VP (TO to)
+                    (VP (VB break)
+                      (NP
+                        (NP (DT the) (NN law)
+                          (CC and)
+                          (NN prey))
+                        (PP (IN on)
+                          (NP (DT the)
+                            (ADJP (JJ law-abiding)
+                              (CC but)
+                              (JJ disarmed))
+                            (NNS citizens)))))))))))))
+    (. .)))
+
+nsubj(explains-3, Eggleston-1)
+advmod(explains-3, further-2)
+root(ROOT-0, explains-3)
+dobj(explains-3, that-4)
+dobj(continue-9, that-4)
+nsubj(continue-9, Criminals-6)
+xsubj(break-11, Criminals-6)
+aux(continue-9, will-7)
+advmod(continue-9, always-8)
+rcmod(that-4, continue-9)
+aux(break-11, to-10)
+xcomp(continue-9, break-11)
+det(law-13, the-12)
+dobj(break-11, law-13)
+dobj(break-11, prey-15)
+conj_and(law-13, prey-15)
+det(citizens-21, the-17)
+amod(citizens-21, law-abiding-18)
+conj_but(law-abiding-18, disarmed-20)
+amod(citizens-21, disarmed-20)
+prep_on(law-13, citizens-21)
+
+(ROOT
+  (S ('' '')
+    (PP (IN For)
+      (NP
+        (NP (DT the) (JJ previous) (NNS arguements))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP claim)
+              (S (`` ``)
+                (NP (EX there))))))))
+    (VP (VBP are)
+      (ADVP (RB almost) (RB no))
+      (NP
+        (NP (NNS cases))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (DT an) (JJ innocent) (NN person))
+            (VP (VBZ has)
+              (VP (VBN defended)
+                (NP (PRP themselves))
+                (PP (IN with)
+                  (NP (DT a) (NN gun)))))))))
+    (. .)))
+
+det(arguements-5, the-3)
+amod(arguements-5, previous-4)
+nsubj(claim-7, arguements-5)
+prep_for(are-10, arguements-5)
+rcmod(arguements-5, claim-7)
+dep(claim-7, there-9)
+root(ROOT-0, are-10)
+advmod(no-12, almost-11)
+advmod(are-10, no-12)
+attr(are-10, cases-13)
+advmod(defended-19, where-14)
+det(person-17, an-15)
+amod(person-17, innocent-16)
+nsubj(defended-19, person-17)
+aux(defended-19, has-18)
+rcmod(cases-13, defended-19)
+dobj(defended-19, themselves-20)
+det(gun-23, a-22)
+prep_with(defended-19, gun-23)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Thats))
+    (VP (VBZ bull))
+    (. .)))
+
+nsubj(bull-3, Thats-2)
+root(ROOT-0, bull-3)
+
+(ROOT
+  (S
+    (PP (VBG According)
+      (PP (TO to)
+        (NP
+          (NP (JJ Eggleston)
+            (CC and)
+            (JJ other) (NNS statistics))
+          (, ,) (`` ``)
+          (NP (DT every) (CD 13) (NNS seconds)))))
+    (, ,)
+    (NP (DT an) (NNP American))
+    (VP (VBZ uses)
+      (NP
+        (NP (DT a) (JJ legal) (NN firearm))
+        (PP (IN in)
+          (NP
+            (NP (NN defense))
+            (PP (IN against)
+              (NP (DT a) (NN criminal)))))))
+    (. .)))
+
+prepc_according_to(uses-15, to-2)
+amod(statistics-6, Eggleston-3)
+conj_and(Eggleston-3, other-5)
+amod(statistics-6, other-5)
+pobj(uses-15, statistics-6)
+det(seconds-11, every-9)
+num(seconds-11, 13-10)
+dep(statistics-6, seconds-11)
+det(American-14, an-13)
+nsubj(uses-15, American-14)
+root(ROOT-0, uses-15)
+det(firearm-18, a-16)
+amod(firearm-18, legal-17)
+dobj(uses-15, firearm-18)
+prep_in(firearm-18, defense-20)
+det(criminal-23, a-22)
+prep_against(defense-20, criminal-23)
+
+(ROOT
+  (S ('' '')
+    (ADVP (RB So))
+    (, ,)
+    (PP (IN for)
+      (NP (NN self-protection)))
+    (, ,)
+    (NP (NNS guns))
+    (VP (MD should)
+      (VP (VB remain)
+        (ADJP (JJ legal))))
+    (. .)))
+
+advmod(legal-10, So-2)
+prep_for(legal-10, self-protection-5)
+nsubj(legal-10, guns-7)
+aux(legal-10, should-8)
+cop(legal-10, remain-9)
+root(ROOT-0, legal-10)
+

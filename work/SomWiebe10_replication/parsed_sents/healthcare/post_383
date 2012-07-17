@@ -1,0 +1,154 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP
+              (ADJP (RBR more) (JJ careful))
+              (SBAR (IN before)
+                (S
+                  (NP (PRP I))
+                  (VP (VBP have)
+                    (NP (PRP$ my) (NN morning) (NN coffee))))))))))
+    (: ...)))
+
+nsubj(have-2, I-1)
+xsubj(careful-6, I-1)
+root(ROOT-0, have-2)
+aux(careful-6, to-3)
+cop(careful-6, be-4)
+advmod(careful-6, more-5)
+xcomp(have-2, careful-6)
+mark(have-9, before-7)
+nsubj(have-9, I-8)
+ccomp(careful-6, have-9)
+poss(coffee-12, my-10)
+nn(coffee-12, morning-11)
+tmod(have-9, coffee-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN extent))
+      (PP (IN of)
+        (NP (PRP$ our) (NNP Universal) (NNP Health) (NNP Care))))
+    (VP (VBZ is)
+      (NP (DT the) (NN requirement))
+      (SBAR (IN that)
+        (S
+          (NP (NNS hospitals))
+          (VP (VBP treat)
+            (NP (NN anyone))
+            (PP (IN in)
+              (NP
+                (NP (NN need))
+                (PP (IN of)
+                  (NP (NN emergency) (NN care)))))))))
+    (. .)))
+
+det(extent-2, The-1)
+nsubj(requirement-10, extent-2)
+poss(Care-7, our-4)
+nn(Care-7, Universal-5)
+nn(Care-7, Health-6)
+prep_of(extent-2, Care-7)
+cop(requirement-10, is-8)
+det(requirement-10, the-9)
+root(ROOT-0, requirement-10)
+complm(treat-13, that-11)
+nsubj(treat-13, hospitals-12)
+ccomp(requirement-10, treat-13)
+dobj(treat-13, anyone-14)
+prep_in(treat-13, need-16)
+nn(care-19, emergency-18)
+prep_of(need-16, care-19)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (JJ expensive))
+      (, ,)
+      (SBAR (IN as)
+        (S
+          (NP (DT a) (NN problem))
+          (VP (VBZ has)
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (NP
+                    (ADJP
+                      (ADJP (RB very) (JJ severe))
+                      (SBAR (IN before)
+                        (S
+                          (NP (PRP it))
+                          (VP (`` ``) (VBZ needs) ('' '')))))
+                    (NN emergency) (NN care)))))))))
+    (. .)))
+
+nsubj(expensive-3, This-1)
+cop(expensive-3, is-2)
+root(ROOT-0, expensive-3)
+mark(has-8, as-5)
+det(problem-7, a-6)
+nsubj(has-8, problem-7)
+xsubj(care-19, problem-7)
+advcl(expensive-3, has-8)
+aux(care-19, to-9)
+cop(care-19, be-10)
+advmod(severe-12, very-11)
+amod(care-19, severe-12)
+mark(needs-16, before-13)
+nsubj(needs-16, it-14)
+ccomp(severe-12, needs-16)
+nn(care-19, emergency-18)
+xcomp(has-8, care-19)
+
+(ROOT
+  (S
+    (NP (VBG Expanding) (NN coverage))
+    (VP (MD will)
+      (VP (VB help)
+        (S
+          (S
+            (VP (VB reduce)
+              (NP (DT these) (NNS costs))
+              (PP (IN by)
+                (S
+                  (VP (VBG treating)
+                    (NP (NNS problems)))))
+              (SBAR (IN before)
+                (S
+                  (NP (PRP they))
+                  (VP (VBP become)
+                    (NP (NNS emergencies)))))))
+          (: ...)
+          (CC and)
+          (S
+            (VP (VBG keeping)
+              (S
+                (NP (DT the) (NN population))
+                (ADJP (RBR healthier))))))))
+    (. .)))
+
+amod(coverage-2, Expanding-1)
+nsubj(help-4, coverage-2)
+aux(help-4, will-3)
+root(ROOT-0, help-4)
+dep(help-4, reduce-5)
+det(costs-7, these-6)
+dobj(reduce-5, costs-7)
+prepc_by(reduce-5, treating-9)
+dobj(treating-9, problems-10)
+mark(emergencies-14, before-11)
+nsubj(emergencies-14, they-12)
+cop(emergencies-14, become-13)
+advcl(reduce-5, emergencies-14)
+dep(help-4, keeping-17)
+conj_and(reduce-5, keeping-17)
+det(population-19, the-18)
+nsubj(healthier-20, population-19)
+xcomp(keeping-17, healthier-20)
+

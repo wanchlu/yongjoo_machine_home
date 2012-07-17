@@ -1,0 +1,61 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP agree)
+      (SBAR (IN that)
+        (S
+          (NP (NN gun) (NN ownership))
+          (VP (MD should)
+            (VP (VB be)
+              (VP
+                (ADVP (RB strictly))
+                (VBN controlled)))))))
+    (. .)))
+
+nsubj(agree-2, I-1)
+root(ROOT-0, agree-2)
+complm(controlled-9, that-3)
+nn(ownership-5, gun-4)
+nsubjpass(controlled-9, ownership-5)
+aux(controlled-9, should-6)
+auxpass(controlled-9, be-7)
+advmod(controlled-9, strictly-8)
+ccomp(agree-2, controlled-9)
+
+(ROOT
+  (S
+    (S
+      (VP (VB Put)
+        (NP (DT a) (NN gun))
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS hands))
+            (PP (IN of)
+              (NP (DT a) (NN crackpot)))))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (VBZ 's)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (NP (DT a) (NN problem))))))))
+    (. .)))
+
+root(ROOT-0, Put-1)
+det(gun-3, a-2)
+dobj(Put-1, gun-3)
+det(hands-6, the-5)
+prep_in(Put-1, hands-6)
+det(crackpot-9, a-8)
+prep_of(hands-6, crackpot-9)
+expl(going-13, there-11)
+xsubj(problem-17, there-11)
+aux(going-13, 's-12)
+conj_and(Put-1, going-13)
+aux(problem-17, to-14)
+cop(problem-17, be-15)
+det(problem-17, a-16)
+xcomp(going-13, problem-17)
+

@@ -1,0 +1,235 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP applaud)
+      (NP (PRP$ your) (NN honesty)))
+    (. .)))
+
+nsubj(applaud-2, I-1)
+root(ROOT-0, applaud-2)
+poss(honesty-4, your-3)
+dobj(applaud-2, honesty-4)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ is) (RB not)
+      (SBAR
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP
+              (VP (VBZ is))
+              (CC or)
+              (VP (VBZ is) (RB n't)))))
+        (, ,)
+        (CONJP (CC but)
+          (RB instead))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (MD might)
+              (CC or)
+              (MD might) (RB not)
+              (VP (VB be)))))))
+    (. .)))
+
+nsubj(is-2, Science-1)
+root(ROOT-0, is-2)
+neg(is-2, not-3)
+nsubj(is-5, what-4)
+nsubj(is-7, what-4)
+dep(is-2, is-5)
+dep(is-2, is-7)
+conj_or(is-5, is-7)
+neg(is-7, n't-8)
+nsubj(be-17, what-12)
+aux(be-17, might-13)
+conj_negcc(is-5, might-15)
+aux(be-17, might-15)
+conj_or(be-17, might-15)
+neg(be-17, not-16)
+dep(is-2, be-17)
+conj_negcc(is-5, be-17)
+
+(ROOT
+  (S
+    (NP (NNP Science) (NN explanation))
+    (VP (VBZ does) (RB not)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ true)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ useful) (, ,) (RB just) (JJ consistent))
+                      (PP (IN with)
+                        (NP
+                          (NP (JJS most))
+                          (PP (IN of)
+                            (NP (DT the) (NN evidence))))))))))))))
+    (. .)))
+
+nn(explanation-2, Science-1)
+nsubj(have-5, explanation-2)
+xsubj(true-8, explanation-2)
+aux(have-5, does-3)
+neg(have-5, not-4)
+root(ROOT-0, have-5)
+aux(true-8, to-6)
+cop(true-8, be-7)
+xcomp(have-5, true-8)
+aux(consistent-14, to-9)
+cop(consistent-14, be-10)
+amod(consistent-14, useful-11)
+advmod(consistent-14, just-13)
+xcomp(true-8, consistent-14)
+prep_with(consistent-14, most-16)
+det(evidence-19, the-18)
+prep_of(most-16, evidence-19)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHNP (WRB How) (RB much))
+      (PP (IN of)
+        (NP (NN science))))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN been)
+          (VP (VBN disapproved)
+            (PP (IN with)
+              (NP (JJ new) (NNS technologies)))))))
+    (. .)))
+
+advmod(much-2, How-1)
+nsubjpass(disapproved-7, much-2)
+prep_of(much-2, science-4)
+aux(disapproved-7, has-5)
+auxpass(disapproved-7, been-6)
+root(ROOT-0, disapproved-7)
+amod(technologies-10, new-9)
+prep_with(disapproved-7, technologies-10)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP mean)
+      (NP
+        (NP (NN look))
+        (SBAR
+          (WHNP
+            (WHNP (WRB how) (RB much))
+            (PP (IN of)
+              (NP (NNP Darwin))))
+          (S
+            (VP (VBZ has)
+              (VP (VBN been)
+                (VP (VBN disputed)
+                  (PP (IN as)
+                    (ADJP (JJ inaccurate)))
+                  (, ,)
+                  (ADVP (NNS thanks)
+                    (PP (TO to)
+                      (NP (JJ molecular) (NNP Biology)))))))))))
+    (. .)))
+
+nsubj(mean-2, I-1)
+root(ROOT-0, mean-2)
+dobj(mean-2, look-3)
+advmod(much-5, how-4)
+nsubjpass(disputed-10, much-5)
+prep_of(much-5, Darwin-7)
+aux(disputed-10, has-8)
+auxpass(disputed-10, been-9)
+rcmod(look-3, disputed-10)
+prep_as(disputed-10, inaccurate-12)
+amod(Biology-17, molecular-16)
+prep_thanks_to(disputed-10, Biology-17)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB Follow)
+        (NP (DT the) (NN evidence)))
+      (, ,)
+      (VP (VB make)
+        (NP (DT a) (NN decision))))
+    (. .)))
+
+root(ROOT-0, Follow-1)
+det(evidence-3, the-2)
+dobj(Follow-1, evidence-3)
+dep(Follow-1, make-5)
+det(decision-7, a-6)
+dobj(make-5, decision-7)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB encourage)
+        (NP (PRP you))
+        (PP (IN as)
+          (NP (DT a)
+            (ADJP (RB seemingly) (JJ logical))
+            (NN scientist)
+            (S
+              (VP (TO to)
+                (VP (VB study)
+                  (NP (JJR more))
+                  (PP (IN on)
+                    (NP
+                      (NP (NNP Robert) (NNP Collins) (NNP Fine) (NNP Tuning))
+                      (, ,)
+                      (NP
+                        (NP (NNP Michael) (NNP Behe))
+                        (, ,)
+                        (NP
+                          (NP (NNP Jonathan) (NNP Wells))
+                          (PRN (-LRB- -LRB-)
+                            (NP (JJ molecular) (NN Biology))
+                            (-RRB- -RRB-))))
+                      (, ,)
+                      (CC and)
+                      (NP (NNP David) (NNP Berlinski)))))))))))
+    (. .)))
+
+nsubj(encourage-3, I-1)
+aux(encourage-3, would-2)
+root(ROOT-0, encourage-3)
+dobj(encourage-3, you-4)
+det(scientist-9, a-6)
+advmod(logical-8, seemingly-7)
+amod(scientist-9, logical-8)
+prep_as(encourage-3, scientist-9)
+aux(study-11, to-10)
+infmod(scientist-9, study-11)
+dobj(study-11, more-12)
+nn(Tuning-17, Robert-14)
+nn(Tuning-17, Collins-15)
+nn(Tuning-17, Fine-16)
+prep_on(study-11, Tuning-17)
+nn(Behe-20, Michael-19)
+prep_on(study-11, Behe-20)
+conj_and(Tuning-17, Behe-20)
+nn(Wells-23, Jonathan-22)
+appos(Behe-20, Wells-23)
+amod(Biology-26, molecular-25)
+appos(Wells-23, Biology-26)
+nn(Berlinski-31, David-30)
+prep_on(study-11, Berlinski-31)
+conj_and(Tuning-17, Berlinski-31)
+
+(ROOT
+  (NP
+    (NP (JJ Good) (NN life))
+    (PP (TO to)
+      (NP (PRP you)))))
+
+amod(life-2, Good-1)
+root(ROOT-0, life-2)
+prep_to(life-2, you-4)
+

@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP support)
+      (S
+        (NP (DT the) (NN police))
+        (VP (VBG getting)
+          (NP (JJR higher) (NN powered) (NNS weapons))
+          (S
+            (VP (TO to)
+              (VP (VB defend)
+                (NP (PRP themselves))
+                (PP (IN against)
+                  (NP (NNS felons))))))))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (VP (MD should)
+            (NP (NN law))
+            (S
+              (VP (VBG abiding)
+                (SBAR
+                  (S
+                    (NP (NNS citizens))
+                    (VP (VBP have)
+                      (NP (DT the) (JJ same) (NN chance)
+                        (S
+                          (VP (TO to)
+                            (VP (VB defend)
+                              (NP (PRP themselves)))))))))))))))
+    (. ?)))
+
+nsubj(support-2, You-1)
+root(ROOT-0, support-2)
+det(police-4, the-3)
+nsubj(getting-5, police-4)
+dep(support-2, getting-5)
+amod(weapons-8, higher-6)
+nn(weapons-8, powered-7)
+dobj(getting-5, weapons-8)
+aux(defend-10, to-9)
+xcomp(getting-5, defend-10)
+dobj(defend-10, themselves-11)
+prep_against(defend-10, felons-13)
+advmod(should-16, why-15)
+advcl(support-2, should-16)
+dobj(should-16, law-17)
+xcomp(should-16, abiding-18)
+nsubj(have-20, citizens-19)
+ccomp(abiding-18, have-20)
+det(chance-23, the-21)
+amod(chance-23, same-22)
+dobj(have-20, chance-23)
+aux(defend-25, to-24)
+infmod(chance-23, defend-25)
+dobj(defend-25, themselves-26)
+

@@ -1,0 +1,97 @@
+(ROOT
+  (FRAG
+    (WHADVP (WRB Why))
+    (RB not)
+    (VP (VB repeat)
+      (NP (PRP myself)))
+    (. ?)))
+
+dep(not-2, Why-1)
+root(ROOT-0, not-2)
+dep(not-2, repeat-3)
+dobj(repeat-3, myself-4)
+
+(ROOT
+  (NP
+    (NP (NNP \/) (NNP \/) (-RRB- -RRB-) (NNP Hey))
+    (NP (NN world))
+    (. !)))
+
+nn(Hey-4, \/-1)
+nn(Hey-4, \/-2)
+root(ROOT-0, Hey-4)
+dep(Hey-4, world-5)
+
+(ROOT
+  (SQ (NNP Does)
+    (NP (DT any) (NN one))
+    (VP (VB believe)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN natural))
+          (VP (VBZ is)
+            (NP
+              (NP (DT the) (JJ ultimate) (NN cause))
+              (PP (IN for)
+                (NP (NN nature))))))))
+    (. ?)))
+
+dep(believe-4, Does-1)
+det(one-3, any-2)
+nsubj(believe-4, one-3)
+root(ROOT-0, believe-4)
+complm(cause-11, that-5)
+det(natural-7, the-6)
+nsubj(cause-11, natural-7)
+cop(cause-11, is-8)
+det(cause-11, the-9)
+amod(cause-11, ultimate-10)
+ccomp(believe-4, cause-11)
+prep_for(cause-11, nature-13)
+
+(ROOT
+  (S
+    (S
+      (VP (VBD \/) (-RRB- -RRB-)
+        (NP
+          (NP (DT The) (NN proposition))
+          (PP (IN of)
+            (NP (NN deity))))
+        (ADVP (VBD works))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ is)
+        (NP
+          (NP (DT the) (JJ only) (NN explanation))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ does)))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+det(proposition-4, The-3)
+dobj(\/-1, proposition-4)
+prep_of(proposition-4, deity-6)
+advmod(\/-1, works-7)
+nsubj(explanation-13, it-9)
+cop(explanation-13, is-10)
+det(explanation-13, the-11)
+amod(explanation-13, only-12)
+conj_and(\/-1, explanation-13)
+nsubj(does-15, explanation-13)
+rcmod(explanation-13, does-15)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBP reject)
+        (NP (PRP it))))
+    (. ?)))
+
+advmod(reject-2, Why-1)
+root(ROOT-0, reject-2)
+dobj(reject-2, it-3)
+

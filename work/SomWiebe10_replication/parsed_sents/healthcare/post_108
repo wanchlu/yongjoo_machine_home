@@ -1,0 +1,45 @@
+(ROOT
+  (S
+    (NP (NNP Health) (NN care))
+    (VP (VBZ is)
+      (VP (VBN considered)
+        (NP
+          (NP (DT a) (NN right))
+          (PP (IN in)
+            (NP (JJ international) (NN law))))))
+    (. .)))
+
+nn(care-2, Health-1)
+nsubjpass(considered-4, care-2)
+auxpass(considered-4, is-3)
+root(ROOT-0, considered-4)
+det(right-6, a-5)
+dobj(considered-4, right-6)
+amod(law-9, international-8)
+prep_in(right-6, law-9)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP UN) (NNP Universal) (NNP Declaration))
+      (PP (IN of)
+        (NP (NNP Human) (NNPS Rights))))
+    (VP (VBZ enumerates)
+      (NP (JJ medical) (NN care))
+      (PP (IN as)
+        (NP (DT a) (JJ universal) (NN right))))
+    (. .)))
+
+det(Declaration-4, The-1)
+nn(Declaration-4, UN-2)
+nn(Declaration-4, Universal-3)
+nsubj(enumerates-8, Declaration-4)
+nn(Rights-7, Human-6)
+prep_of(Declaration-4, Rights-7)
+root(ROOT-0, enumerates-8)
+amod(care-10, medical-9)
+dobj(enumerates-8, care-10)
+det(right-14, a-12)
+amod(right-14, universal-13)
+prep_as(enumerates-8, right-14)
+

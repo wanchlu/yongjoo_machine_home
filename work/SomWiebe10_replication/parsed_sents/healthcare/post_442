@@ -1,0 +1,89 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (ADVP (RB pretty) (RB well))
+    (VP (VBZ sums)
+      (PRT (RP up))
+      (NP
+        (NP (DT the) (NN case))
+        (PP (IN against)
+          (NP
+            (NP (DT the) (NN claim))
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP (DT the) (NN healthcare) (`` ``) (NN crisis) ('' ''))
+                  (VP (VBZ is)
+                    (NP
+                      (NP (DT the) (NN result))
+                      (PP (IN of)
+                        (NP (JJ raw) (NN capitalism)))))))
+              (: ;)
+              (SBAR
+                (ADVP (RB clearly))
+                (IN as)
+                (S
+                  (VP (VBN mentioned)
+                    (PP (IN in)
+                      (NP
+                        (NP (DT this) (NN argument))
+                        (PP (IN from)
+                          (NP (NNP FIRM)))))))))))))
+    (. .)))
+
+nsubj(sums-4, This-1)
+advmod(well-3, pretty-2)
+advmod(sums-4, well-3)
+root(ROOT-0, sums-4)
+prt(sums-4, up-5)
+det(case-7, the-6)
+dobj(sums-4, case-7)
+det(claim-10, the-9)
+prep_against(case-7, claim-10)
+dep(result-19, that-11)
+det(crisis-15, the-12)
+nn(crisis-15, healthcare-13)
+nsubj(result-19, crisis-15)
+cop(result-19, is-17)
+det(result-19, the-18)
+dep(claim-10, result-19)
+amod(capitalism-22, raw-21)
+prep_of(result-19, capitalism-22)
+advmod(mentioned-26, clearly-24)
+dep(mentioned-26, as-25)
+dep(result-19, mentioned-26)
+det(argument-29, this-28)
+prep_in(mentioned-26, argument-29)
+prep_from(argument-29, FIRM-31)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN with)
+        (NP (NNP LASIK))))
+    (NP (NN competition))
+    (VP (VBZ seems)
+      (PP (IN like)
+        (NP (DT the) (RB only) (JJ real) (NN way)))
+      (S
+        (VP (TO to)
+          (VP (VB drive)
+            (PRT (RP down))
+            (NP (NNS costs))))))
+    (. .)))
+
+prep(seems-5, As-1)
+pcomp(As-1, with-2)
+prep_with(As-1, LASIK-3)
+nsubj(seems-5, competition-4)
+xsubj(drive-12, competition-4)
+root(ROOT-0, seems-5)
+det(way-10, the-7)
+advmod(way-10, only-8)
+amod(way-10, real-9)
+prep_like(seems-5, way-10)
+aux(drive-12, to-11)
+xcomp(seems-5, drive-12)
+prt(drive-12, down-13)
+dobj(drive-12, costs-14)
+

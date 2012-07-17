@@ -1,0 +1,128 @@
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (INTJ (UH well))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD would) (RB rather)
+      (VP (VB be)
+        (ADJP
+          (ADVP (NN cursed) (IN than))
+          (VBN blessed)
+          (PP (IN by)
+            (NP (DT a) (NN priest))))))
+    (. .)))
+
+dep(blessed-10, Oh-1)
+dep(blessed-10, well-2)
+nsubjpass(blessed-10, I-4)
+aux(blessed-10, would-5)
+advmod(blessed-10, rather-6)
+auxpass(blessed-10, be-7)
+dep(than-9, cursed-8)
+advmod(blessed-10, than-9)
+root(ROOT-0, blessed-10)
+det(priest-13, a-12)
+agent(blessed-10, priest-13)
+
+(ROOT
+  (INTJ (UH Amen) (. !)))
+
+root(ROOT-0, Amen-1)
+
+(ROOT
+  (S (CC ;)
+    (VP (VB -RRB-) (-LRB- -LRB-)
+      (NP (PRP I))
+      (S
+        (VP (VB joke)
+          (NP (DT a) (JJ little)))))
+    (. .)))
+
+dobj(joke-5, I-4)
+root(ROOT-0, joke-5)
+det(little-7, a-6)
+dobj(joke-5, little-7)
+
+(ROOT
+  (S
+    (ADVP (RB Really))
+    (NP (PRP it))
+    (VP (MD would)
+      (VP (VB depend)
+        (SBAR
+          (SBAR
+            (WHPP (IN on)
+              (WHNP (WDT what) (NN faith)))
+            (S
+              (NP (DT the) (NN priest))
+              (VP (VBD practiced))))
+          (CC and)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (DT the) (NN curse)
+                (CC or)
+                (NN blessing))
+              (VP (VBD was)
+                (VP (VBN meant)
+                  (S
+                    (VP (TO to)
+                      (VP (VB do)))))))))))
+    (. .)))
+
+advmod(depend-4, Really-1)
+nsubj(depend-4, it-2)
+aux(depend-4, would-3)
+root(ROOT-0, depend-4)
+dep(practiced-10, on-5)
+det(faith-7, what-6)
+pobj(on-5, faith-7)
+det(priest-9, the-8)
+nsubj(practiced-10, priest-9)
+dep(depend-4, practiced-10)
+dobj(meant-18, what-12)
+det(curse-14, the-13)
+nsubjpass(meant-18, curse-14)
+xsubj(do-20, curse-14)
+conj_or(curse-14, blessing-16)
+nsubjpass(meant-18, blessing-16)
+xsubj(do-20, blessing-16)
+auxpass(meant-18, was-17)
+dep(depend-4, meant-18)
+conj_and(practiced-10, meant-18)
+aux(do-20, to-19)
+xcomp(meant-18, do-20)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (VBD was)
+      (NP (DT a) (JJ great) (NN opportunity)
+        (S
+          (VP (TO to)
+            (VP (VB use)
+              (NP
+                (NP (DT the) (NN word) (`` ``) (NN amen) ('' ''))
+                (PP (IN in)
+                  (NP (DT a)
+                    (ADJP (RB totally) (JJ tongue-in-cheek))
+                    (NN fashion)))))))))
+    (. .) (-RRB- -RRB-)))
+
+cc(opportunity-6, But-1)
+nsubj(opportunity-6, it-2)
+cop(opportunity-6, was-3)
+det(opportunity-6, a-4)
+amod(opportunity-6, great-5)
+root(ROOT-0, opportunity-6)
+aux(use-8, to-7)
+infmod(opportunity-6, use-8)
+det(amen-12, the-9)
+nn(amen-12, word-10)
+dobj(use-8, amen-12)
+det(fashion-18, a-15)
+advmod(tongue-in-cheek-17, totally-16)
+amod(fashion-18, tongue-in-cheek-17)
+prep_in(amen-12, fashion-18)
+

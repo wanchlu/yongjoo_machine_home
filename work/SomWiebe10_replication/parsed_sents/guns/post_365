@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (PRP$ Your))
+    (ADJP (RB so) (JJ right))
+    (. .)))
+
+dep(right-3, Your-1)
+advmod(right-3, so-2)
+root(ROOT-0, right-3)
+
+(ROOT
+  (S
+    (NP (NNS Thats))
+    (SBAR
+      (WHADVP (WRB why))
+      (S
+        (NP (PRP we))
+        (VP (VBP need)
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (S
+                  (NP (DT the) (NNS steps))
+                  (VP (TO to)
+                    (VP (VB protect)
+                      (NP (PRP$ our) (NNS selfs))
+                      (PP (IN with)
+                        (NP (PRP$ our) (NNS guns))))))))))))
+    (. .)))
+
+dep(need-4, Thats-1)
+advmod(need-4, why-2)
+nsubj(need-4, we-3)
+xsubj(take-6, we-3)
+root(ROOT-0, need-4)
+aux(take-6, to-5)
+xcomp(need-4, take-6)
+det(steps-8, the-7)
+nsubj(protect-10, steps-8)
+aux(protect-10, to-9)
+xcomp(take-6, protect-10)
+poss(selfs-12, our-11)
+dobj(protect-10, selfs-12)
+poss(guns-15, our-14)
+prep_with(protect-10, guns-15)
+

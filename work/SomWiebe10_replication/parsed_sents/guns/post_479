@@ -1,0 +1,131 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP carry)
+      (NP
+        (NP (DT a) (JJ licensed) (NN handgun))
+        (PP (IN in)
+          (NP (PRP$ your) (NN car)))))
+    (. .)))
+
+nsubj(carry-2, You-1)
+root(ROOT-0, carry-2)
+det(handgun-5, a-3)
+amod(handgun-5, licensed-4)
+dobj(carry-2, handgun-5)
+poss(car-8, your-7)
+prep_in(handgun-5, car-8)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP are)
+      (PP (IN on)
+        (NP
+          (NP (NN vacation))
+          (VP (VBG driving)
+            (PP (IN across)
+              (NP (NN country)))))))
+    (. .)))
+
+nsubj(are-2, You-1)
+root(ROOT-0, are-2)
+prep_on(are-2, vacation-4)
+partmod(vacation-4, driving-5)
+prep_across(driving-5, country-7)
+
+(ROOT
+  (S
+    (NP (PRP$ Your) (NN license))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ good))
+        (ADVP (RB anywhere)
+          (PP (IN in)
+            (NP (DT the) (NN country))))))
+    (. .)))
+
+poss(license-2, Your-1)
+nsubj(good-5, license-2)
+aux(good-5, should-3)
+cop(good-5, be-4)
+root(ROOT-0, good-5)
+advmod(good-5, anywhere-6)
+det(country-9, the-8)
+prep_in(anywhere-6, country-9)
+
+(ROOT
+  (NP (RB Even) (RB in) (DT the) (JJ national) (NN park) (. .)))
+
+advmod(park-5, Even-1)
+advmod(park-5, in-2)
+det(park-5, the-3)
+amod(park-5, national-4)
+root(ROOT-0, park-5)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (VP (VB need)
+      (NP (PRP it))
+      (ADVP (RB there)))
+    (. ?)))
+
+aux(need-3, Do-1)
+nsubj(need-3, you-2)
+root(ROOT-0, need-3)
+dobj(need-3, it-4)
+advmod(need-3, there-5)
+
+(ROOT
+  (S
+    (ADJP (VB No.))
+    (. .)))
+
+root(ROOT-0, No.-1)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB why))
+    (SQ (MD should)
+      (NP (PRP you))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB worry)
+              (PP (IN about)
+                (S
+                  (VP (VBG remembering)
+                    (S
+                      (VP (TO to)
+                        (VP (VB unload)
+                          (NP (PRP it))
+                          (SBAR (RB just) (IN because)
+                            (S
+                              (NP (PRP you))
+                              (VP (VBP are)
+                                (VP (VBG driving)
+                                  (PP (IN through)
+                                    (NP (DT the) (NN park))))))))))))))))))
+    (. .)))
+
+cc(have-5, But-1)
+advmod(have-5, why-2)
+aux(have-5, should-3)
+nsubj(have-5, you-4)
+xsubj(worry-7, you-4)
+root(ROOT-0, have-5)
+aux(worry-7, to-6)
+xcomp(have-5, worry-7)
+prepc_about(worry-7, remembering-9)
+aux(unload-11, to-10)
+xcomp(remembering-9, unload-11)
+dobj(unload-11, it-12)
+advmod(driving-17, just-13)
+dep(driving-17, because-14)
+nsubj(driving-17, you-15)
+aux(driving-17, are-16)
+dep(unload-11, driving-17)
+det(park-20, the-19)
+prep_through(driving-17, park-20)
+

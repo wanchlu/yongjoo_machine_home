@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (ADVP (RB Kennesaw))
+    (, ,)
+    (NP (NNP GA))
+    (VP (VBD passed)
+      (NP
+        (NP (DT a) (NN law))
+        (PP (IN in)
+          (NP (CD 1982)))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD required)
+              (NP (DT every) (NN household)
+                (S
+                  (VP (TO to)
+                    (VP (VB have)
+                      (NP (DT a) (NN gun)))))))))))
+    (. .)))
+
+advmod(passed-4, Kennesaw-1)
+nsubj(passed-4, GA-3)
+root(ROOT-0, passed-4)
+det(law-6, a-5)
+dobj(passed-4, law-6)
+nsubj(required-10, law-6)
+prep_in(law-6, 1982-8)
+rcmod(law-6, required-10)
+det(household-12, every-11)
+dobj(required-10, household-12)
+aux(have-14, to-13)
+infmod(household-12, have-14)
+det(gun-16, a-15)
+dobj(have-14, gun-16)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (JJ last) (NN murder))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (NN gun))
+            (PP (IN in)
+              (NP (NNP Kennesaw) (, ,) (NNP GA))))))
+      (VP (VBD was)
+        (PP (IN in)
+          (NP (CD 1986)))))
+    (CC and)
+    (S
+      (NP (DT the) (JJ last) (NN homicide))
+      (VP
+        (VP (VBD was)
+          (PP (IN in)
+            (NP (CD 1989))))
+        (, ,)
+        (CC and)
+        (VP (VBD was)
+          (VP (VBN committed)
+            (PP (IN with)
+              (NP (DT a) (NN knife)))))))
+    (. .)))
+
+det(murder-3, The-1)
+amod(murder-3, last-2)
+nsubj(was-11, murder-3)
+det(gun-6, a-5)
+prep_with(murder-3, gun-6)
+nn(GA-10, Kennesaw-8)
+prep_in(gun-6, GA-10)
+root(ROOT-0, was-11)
+prep_in(was-11, 1986-13)
+det(homicide-17, the-15)
+amod(homicide-17, last-16)
+nsubj(was-18, homicide-17)
+nsubjpass(committed-24, homicide-17)
+conj_and(was-11, was-18)
+prep_in(was-18, 1989-20)
+auxpass(committed-24, was-23)
+conj_and(was-11, committed-24)
+conj_and(was-18, committed-24)
+det(knife-27, a-26)
+prep_with(committed-24, knife-27)
+
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (, ,)
+    (NP (NNS guns))
+    (VP (VBD did) (RB n't)
+      (VP (VB make)
+        (S
+          (NP (PRP them))
+          (ADJP
+            (ADJP (JJR safer))
+            (, ,)
+            (ADJP (JJ right))))))
+    (. ?)))
+
+prep_of(make-7, course-2)
+nsubj(make-7, guns-4)
+aux(make-7, did-5)
+neg(make-7, n't-6)
+root(ROOT-0, make-7)
+nsubj(safer-9, them-8)
+xcomp(make-7, safer-9)
+dep(safer-9, right-11)
+

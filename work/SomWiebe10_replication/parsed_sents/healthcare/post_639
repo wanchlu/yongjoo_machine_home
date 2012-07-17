@@ -1,0 +1,126 @@
+(ROOT
+  (S
+    (NP (NNP Health))
+    (VP (VBP care))
+    (. .)))
+
+nsubj(care-2, Health-1)
+root(ROOT-0, care-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP am)
+      (PP (IN in)
+        (NP (DT a) (JJ private) (NN health) (NN care) (NN scheme)))
+      (PP (IN through)
+        (NP (PRP$ my) (NN employer))))
+    (. .)))
+
+nsubj(am-2, I-1)
+root(ROOT-0, am-2)
+det(scheme-8, a-4)
+amod(scheme-8, private-5)
+nn(scheme-8, health-6)
+nn(scheme-8, care-7)
+prep_in(am-2, scheme-8)
+poss(employer-11, my-10)
+prep_through(am-2, employer-11)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP I))
+    (VP (VBD jumped)
+      (PP (IN at)
+        (NP (PRP it))))
+    (. .)))
+
+cc(jumped-3, And-1)
+nsubj(jumped-3, I-2)
+root(ROOT-0, jumped-3)
+prep_at(jumped-3, it-5)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP NHS))
+    (VP (VBZ produces)
+      (NP
+        (NP (NNS doctors))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (MD will)
+              (VP (VB see)
+                (S
+                  (NP (PRP you))
+                  (ADJP (JJR quicker))
+                  (SBAR (IN if)
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP are)
+                        (VP (VBN registered)
+                          (PP (TO to)
+                            (NP (NNP BUPA))))))))))))))
+    (. .)))
+
+det(NHS-2, The-1)
+nsubj(produces-3, NHS-2)
+root(ROOT-0, produces-3)
+dobj(produces-3, doctors-4)
+nsubj(see-7, doctors-4)
+aux(see-7, will-6)
+rcmod(doctors-4, see-7)
+nsubjpass(registered-13, you-8)
+dep(registered-13, quicker-9)
+mark(registered-13, if-10)
+nsubjpass(registered-13, you-11)
+auxpass(registered-13, are-12)
+xcomp(see-7, registered-13)
+prep_to(registered-13, BUPA-15)
+
+(ROOT
+  (FRAG
+    (NP (DT The) (JJ same) (NNS doctors))
+    (. .)))
+
+det(doctors-3, The-1)
+amod(doctors-3, same-2)
+root(ROOT-0, doctors-3)
+
+(ROOT
+  (SQ
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (PRP I))
+      (ADVP (RB once)
+        (NP (CD saw) (NNS doctors))
+        (PP (IN as)
+          (NP
+            (NP (DT the) (JJ last) (NN hope))
+            (PP (IN of)
+              (NP (NN idealism)))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, I-3)
+advmod(\/-1, once-4)
+num(doctors-6, saw-5)
+pobj(once-4, doctors-6)
+det(hope-10, the-8)
+amod(hope-10, last-9)
+prep_as(once-4, hope-10)
+prep_of(hope-10, idealism-12)
+
+(ROOT
+  (S
+    (NP (NNP Realism))
+    (VP (VBD won)
+      (NP (DT that) (NN one))
+      (ADVP (RB again)))
+    (. .)))
+
+nsubj(won-2, Realism-1)
+root(ROOT-0, won-2)
+det(one-4, that-3)
+dobj(won-2, one-4)
+advmod(won-2, again-5)
+

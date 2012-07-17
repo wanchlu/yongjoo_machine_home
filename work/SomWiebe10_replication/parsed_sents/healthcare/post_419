@@ -1,0 +1,138 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (JJ only) (NN person))
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (MD would)
+            (ADVP (RB ever))
+            (VP (VB invoke) (`` ``)
+              (S
+                (VP (VBG having)
+                  (S
+                    (VP (TO to)
+                      (VP (VB wait) ('' '')
+                        (SBAR (IN as)
+                          (S
+                            (NP (DT a) (NN reason))
+                            (VP (TO to)
+                              (VP (VB reject)
+                                (NP (JJ universal) (NN health) (NN care))))))))))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (NN someone))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ is)
+              (ADJP (JJ wealthy) (RB enough)
+                (S
+                  (VP (TO to)
+                    (VP (VB get)
+                      (NP (NN access))
+                      (ADVP (IN at) (DT all)))))))))))
+    (. !)))
+
+det(person-3, The-1)
+amod(person-3, only-2)
+nsubj(invoke-7, person-3)
+nsubj(someone-22, person-3)
+aux(invoke-7, would-5)
+advmod(invoke-7, ever-6)
+rcmod(person-3, invoke-7)
+xcomp(invoke-7, having-9)
+aux(wait-11, to-10)
+xcomp(having-9, wait-11)
+mark(reject-17, as-13)
+det(reason-15, a-14)
+nsubj(reject-17, reason-15)
+aux(reject-17, to-16)
+advcl(wait-11, reject-17)
+xcomp(wait-11, reject-17)
+amod(care-20, universal-18)
+nn(care-20, health-19)
+dobj(reject-17, care-20)
+cop(someone-22, is-21)
+root(ROOT-0, someone-22)
+nsubj(wealthy-25, someone-22)
+cop(wealthy-25, is-24)
+rcmod(someone-22, wealthy-25)
+advmod(wealthy-25, enough-26)
+aux(get-28, to-27)
+xcomp(wealthy-25, get-28)
+dobj(get-28, access-29)
+advmod(get-28, at-30)
+pobj(at-30, all-31)
+
+(ROOT
+  (S
+    (PP (VBN Given)
+      (NP
+        (NP (DT the) (NN choice))
+        (PP (IN between)
+          (S
+            (VP
+              (VP (VBG waiting)
+                (PP (IN for)
+                  (NP (NN care))))
+              (CC or)
+              (RB not)
+              (VP (VBG having)
+                (NP
+                  (NP (NN care))
+                  (PP (IN at)
+                    (NP (DT all))))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP (JJ sure)
+        (SBAR
+          (S
+            (NP (JJS most) (NNS people))
+            (VP (MD would)
+              (VP (VB choose)
+                (NP (DT the) (JJ former))))))))
+    (. !)))
+
+prep(sure-17, Given-1)
+det(choice-3, the-2)
+dep(Given-1, choice-3)
+prepc_between(choice-3, waiting-5)
+prep_for(waiting-5, care-7)
+prepc_between(choice-3, not-9)
+conj_or(waiting-5, not-9)
+neg(waiting-5, not-9)
+dep(waiting-5, having-10)
+dobj(having-10, care-11)
+prep_at(care-11, all-13)
+nsubj(sure-17, I-15)
+cop(sure-17, 'm-16)
+root(ROOT-0, sure-17)
+amod(people-19, most-18)
+nsubj(choose-21, people-19)
+aux(choose-21, would-20)
+dep(sure-17, choose-21)
+det(former-23, the-22)
+dobj(choose-21, former-23)
+
+(ROOT
+  (FRAG
+    (ADJP (JJ Signed))
+    (, ,)
+    (NP (DT a)
+      (ADJP (JJ proud)
+        (CC and)
+        (JJ grateful)
+        (CC and)
+        (JJ healthy))
+      (NN Canadian))))
+
+dep(Canadian-9, Signed-1)
+det(Canadian-9, a-3)
+dep(grateful-6, proud-4)
+amod(Canadian-9, grateful-6)
+conj_and(grateful-6, healthy-8)
+amod(Canadian-9, healthy-8)
+root(ROOT-0, Canadian-9)
+

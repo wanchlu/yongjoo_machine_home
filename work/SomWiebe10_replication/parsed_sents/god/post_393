@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT an) (NN example))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NN fear))
+          (VP (VBN employed)
+            (S
+              (VP (TO to)
+                (VP (VB get)
+                  (NP
+                    (NP (NNS people))
+                    (PP (JJ such) (IN as)
+                      (NP (PRP yourself))))
+                  (S
+                    (VP (TO to)
+                      (VP (VB believe)
+                        (NP (FW i))))))))))))
+    (VP (VBP suspect))))
+
+det(example-2, an-1)
+nsubj(suspect-16, example-2)
+det(fear-5, the-4)
+prep_of(example-2, fear-5)
+xsubj(get-8, fear-5)
+partmod(fear-5, employed-6)
+aux(get-8, to-7)
+xcomp(employed-6, get-8)
+dobj(get-8, people-9)
+prep_such_as(people-9, yourself-12)
+aux(believe-14, to-13)
+xcomp(get-8, believe-14)
+dobj(believe-14, i-15)
+root(ROOT-0, suspect-16)
+

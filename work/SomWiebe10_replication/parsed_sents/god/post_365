@@ -1,0 +1,79 @@
+(ROOT
+  (S (CC Or)
+    (, ,)
+    (NP (PRP you))
+    (VP (MD could)
+      (ADVP (RB actually))
+      (VP
+        (VP (VB do)
+          (NP (DT some) (NN research)))
+        (CC and)
+        (VP (VB find)
+          (PRT (RP out))
+          (SBAR (IN that)
+            (S
+              (NP (EX there))
+              (VP (VBP are)
+                (NP
+                  (NP (NNS processes))
+                  (SBAR
+                    (WHPP (IN by)
+                      (WHNP (WDT which)))
+                    (S
+                      (NP (NN complexity))
+                      (VP (MD can)
+                        (VP (VB be)
+                          (VP (VBN created)
+                            (PP (IN from)
+                              (NP (NN simplicity)))))))))))))))
+    (. .)))
+
+nsubj(do-6, you-3)
+nsubj(find-10, you-3)
+aux(do-6, could-4)
+advmod(do-6, actually-5)
+root(ROOT-0, do-6)
+det(research-8, some-7)
+dobj(do-6, research-8)
+conj_and(do-6, find-10)
+prt(find-10, out-11)
+complm(are-14, that-12)
+expl(are-14, there-13)
+ccomp(find-10, are-14)
+nsubj(are-14, processes-15)
+agent(created-21, processes-15)
+nsubjpass(created-21, complexity-18)
+aux(created-21, can-19)
+auxpass(created-21, be-20)
+rcmod(processes-15, created-21)
+prep_from(created-21, simplicity-23)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (NP
+      (NP
+        (NP (NNP EX))
+        (: :)
+        (NP
+          (NP (NNP Evolution))
+          (, ,)
+          (NP
+            (NP
+              (NP (NNP Conway) (POS 's))
+              (NN Game))
+            (PP (IN of)
+              (NP (NNP Life))))))
+      (, ,)
+      (NP (JJ Chaotic) (NNS systems))
+      (, ,) (FW etc.))
+    (-RRB- -RRB-)))
+
+root(ROOT-0, EX-2)
+dep(EX-2, Evolution-4)
+poss(Game-8, Conway-6)
+appos(Evolution-4, Game-8)
+prep_of(Game-8, Life-10)
+amod(systems-13, Chaotic-12)
+appos(EX-2, systems-13)
+dep(EX-2, etc.-15)
+

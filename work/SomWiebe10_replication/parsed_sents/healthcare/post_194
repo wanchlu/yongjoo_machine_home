@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ lowers)
+      (NP
+        (NP (JJ long-term) (NN health) (NNS costs))
+        (SBAR
+          (S
+            (NP (NNP Universal) (NN health) (NN care) (NNS systems))
+            (ADVP (RB better))
+            (VP (VBP encourage)
+              (S
+                (NP (NNS patients))
+                (VP (TO to)
+                  (VP (VB seek)
+                    (NP (JJ preventive) (NN care))))))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(lowers-4, care-3)
+root(ROOT-0, lowers-4)
+amod(costs-7, long-term-5)
+nn(costs-7, health-6)
+dobj(lowers-4, costs-7)
+dobj(encourage-13, costs-7)
+nn(systems-11, Universal-8)
+nn(systems-11, health-9)
+nn(systems-11, care-10)
+nsubj(encourage-13, systems-11)
+advmod(encourage-13, better-12)
+rcmod(costs-7, encourage-13)
+nsubj(seek-16, patients-14)
+aux(seek-16, to-15)
+xcomp(encourage-13, seek-16)
+amod(care-18, preventive-17)
+dobj(seek-16, care-18)
+
+(ROOT
+  (S
+    (NP (DT The) (NN result))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT a) (JJ dramatic) (NN reduction))
+          (PP (IN in)
+            (NP (DT the) (JJ long-term) (NN health) (NN care) (NNS needs))))
+        (, ,)
+        (CC and)
+        (RB thus)
+        (NP (NNS costs))
+        (, ,)
+        (PP (IN of)
+          (NP
+            (NP (NNS individuals) (NNS citizens))
+            (PP (IN in)
+              (NP (DT a) (NN society)))))))
+    (. .)))
+
+det(result-2, The-1)
+nsubj(reduction-6, result-2)
+cop(reduction-6, is-3)
+det(reduction-6, a-4)
+amod(reduction-6, dramatic-5)
+root(ROOT-0, reduction-6)
+det(needs-12, the-8)
+amod(needs-12, long-term-9)
+nn(needs-12, health-10)
+nn(needs-12, care-11)
+prep_in(reduction-6, needs-12)
+advmod(reduction-6, thus-15)
+conj_and(reduction-6, thus-15)
+dep(reduction-6, costs-16)
+conj_and(reduction-6, of-18)
+nn(citizens-20, individuals-19)
+prep_of(reduction-6, citizens-20)
+det(society-23, a-22)
+prep_in(citizens-20, society-23)
+

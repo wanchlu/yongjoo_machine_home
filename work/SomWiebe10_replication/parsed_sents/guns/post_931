@@ -1,0 +1,36 @@
+(ROOT
+  (S
+    (NP (NNS guns))
+    (VP (VBP dont)
+      (VP (VB kill)
+        (NP (NNS people))
+        (PRN (, ,)
+          (S
+            (NP (NNS people))
+            (VP (VBP kill)
+              (NP (NNS people))))
+          (, ,))
+        (PP (IN from)
+          (NP
+            (NP (DT a) (JJ gunsdont) (NN kill) (NNS people))
+            (SBAR
+              (S
+                (NP (FW i))
+                (VP (VBP do)
+                  (NP (NN corperation)))))))))))
+
+nsubj(dont-2, guns-1)
+root(ROOT-0, dont-2)
+xcomp(dont-2, kill-3)
+dobj(kill-3, people-4)
+nsubj(kill-7, people-6)
+parataxis(kill-3, kill-7)
+dobj(kill-7, people-8)
+det(people-14, a-11)
+amod(people-14, gunsdont-12)
+nn(people-14, kill-13)
+prep_from(kill-3, people-14)
+nsubj(do-16, i-15)
+rcmod(people-14, do-16)
+dobj(do-16, corperation-17)
+

@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJR fewer) (NN assault) (NNS weapons))
+        (PP (IN at)
+          (NP
+            (NP (NN crime) (NNS scenes))
+            (PP (IN since)
+              (NP (DT the) (NN ban)))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(weapons-5, fewer-3)
+nn(weapons-5, assault-4)
+nsubj(are-2, weapons-5)
+nn(scenes-8, crime-7)
+prep_at(weapons-5, scenes-8)
+det(ban-11, the-10)
+prep_since(scenes-8, ban-11)
+
+(ROOT
+  (S ('' '')
+    (PP (IN Since)
+      (NP
+        (NP (NN enactment))
+        (PP (IN of)
+          (NP (DT the) (NN law)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN number))
+      (PP (IN of)
+        (NP
+          (NP (NN assault) (NNS weapons))
+          (VP (VBN traced)
+            (PP (TO to)
+              (NP (NN crime) (NNS scenes)))))))
+    (VP (VBZ has)
+      (VP (VBN dropped)
+        (NP (CD 45) (NN %))
+        (, ,)
+        (PP (VBG according)
+          (PP (TO to)
+            (NP
+              (NP (NNP Crime) (NNP Gun) (NNPS Solutions) (NNP LLC))
+              (, ,)
+              (NP (DT a) (VBG consulting) (NN firm)))))))
+    (. .)))
+
+prep_since(dropped-18, enactment-3)
+det(law-6, the-5)
+prep_of(enactment-3, law-6)
+det(number-9, the-8)
+nsubj(dropped-18, number-9)
+nn(weapons-12, assault-11)
+prep_of(number-9, weapons-12)
+partmod(weapons-12, traced-13)
+nn(scenes-16, crime-15)
+prep_to(traced-13, scenes-16)
+aux(dropped-18, has-17)
+root(ROOT-0, dropped-18)
+num(%-20, 45-19)
+dobj(dropped-18, %-20)
+prepc_according_to(dropped-18, to-23)
+nn(LLC-27, Crime-24)
+nn(LLC-27, Gun-25)
+nn(LLC-27, Solutions-26)
+pobj(dropped-18, LLC-27)
+det(firm-31, a-29)
+amod(firm-31, consulting-30)
+appos(LLC-27, firm-31)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 1))
+      (-RRB- -RRB-))))
+
+appos(''-1, 1-3)
+

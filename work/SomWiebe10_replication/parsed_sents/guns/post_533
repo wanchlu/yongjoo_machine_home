@@ -1,0 +1,333 @@
+(ROOT
+  (S
+    (NP (JJR More) (NNS guns))
+    (VP (SYM =)
+      (NP (JJR more) (NN gun) (NNS deaths)))
+    (. .)))
+
+amod(guns-2, More-1)
+nsubj(deaths-6, guns-2)
+dep(deaths-6, =-3)
+amod(deaths-6, more-4)
+nn(deaths-6, gun-5)
+root(ROOT-0, deaths-6)
+
+(ROOT
+  (S
+    (PP
+      (ADVP (RB Yes))
+      (IN of)
+      (NP (NN course)))
+    (, ,)
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBD said)
+      (ADVP (RB otherwise)))
+    (. .)))
+
+advmod(said-7, Yes-1)
+prep_of(said-7, course-3)
+nsubj(said-7, I-5)
+neg(said-7, never-6)
+root(ROOT-0, said-7)
+advmod(said-7, otherwise-8)
+
+(ROOT
+  (SINV
+    (ADVP (RB Clearly))
+    (VP (VBG having)
+      (NP (NNS guns)))
+    (VP (VBZ provides))
+    (NP
+      (NP (NN utility))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN form))
+          (PP (IN of)
+            (NP (NN safety))))))
+    (. .)))
+
+advmod(having-2, Clearly-1)
+root(ROOT-0, having-2)
+dobj(having-2, guns-3)
+dep(having-2, provides-4)
+nsubj(having-2, utility-5)
+det(form-8, the-7)
+prep_in(utility-5, form-8)
+prep_of(form-8, safety-10)
+
+(ROOT
+  (S
+    (ADVP (RB Indeed))
+    (NP (NNS guns))
+    (VP (MD may)
+      (ADVP (RB actually))
+      (VP (VB save)
+        (NP (NNS lives))
+        (PP (IN in)
+          (NP (DT some) (NNS instances)))
+        (, ,)
+        (SBAR (IN although)
+          (S
+            (NP (PRP I))
+            (VP (VBP have)
+              (ADVP (RB never))
+              (VP (VBN seen)
+                (NP (DT any) (NNS data))
+                (S
+                  (VP (TO to)
+                    (VP (VB indicate)
+                      (SBAR
+                        (S
+                          (NP (DT this) (NN effect))
+                          (VP (VBZ is)
+                            (ADVP (RB even))
+                            (NP
+                              (NP (DT the) (JJ same) (NN order))
+                              (PP (IN of)
+                                (NP
+                                  (NP (NN magnitude))
+                                  (PP (IN as)
+                                    (NP (PRP$ its) (JJ dominant) (NN effect))))))))))))))))))
+    (. .)))
+
+advmod(save-5, Indeed-1)
+nsubj(save-5, guns-2)
+aux(save-5, may-3)
+advmod(save-5, actually-4)
+root(ROOT-0, save-5)
+dobj(save-5, lives-6)
+det(instances-9, some-8)
+prep_in(save-5, instances-9)
+mark(seen-15, although-11)
+nsubj(seen-15, I-12)
+aux(seen-15, have-13)
+neg(seen-15, never-14)
+advcl(save-5, seen-15)
+det(data-17, any-16)
+dobj(seen-15, data-17)
+aux(indicate-19, to-18)
+xcomp(seen-15, indicate-19)
+det(effect-21, this-20)
+nsubj(order-26, effect-21)
+cop(order-26, is-22)
+advmod(order-26, even-23)
+det(order-26, the-24)
+amod(order-26, same-25)
+ccomp(indicate-19, order-26)
+prep_of(order-26, magnitude-28)
+poss(effect-32, its-30)
+amod(effect-32, dominant-31)
+prep_as(magnitude-28, effect-32)
+
+(ROOT
+  (S
+    (INTJ (VB Please))
+    (VP (VB look)
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN relationship))
+          (PP (IN between)
+            (NP
+              (NP (NNP Switzerland))
+              (CC and)
+              (NP (DT the) (NNP USA)))))))
+    (. .)))
+
+dep(look-2, Please-1)
+root(ROOT-0, look-2)
+det(relationship-5, the-4)
+prep_at(look-2, relationship-5)
+prep_between(relationship-5, Switzerland-7)
+det(USA-10, the-9)
+prep_between(relationship-5, USA-10)
+conj_and(Switzerland-7, USA-10)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ does)
+      (VP (VB appear)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (NP (DT a)
+                (ADJP (RBR more) (RB carefully) (VBN balanced))
+                (NN policy)
+                (SBAR
+                  (WHNP (WDT that))
+                  (S
+                    (VP (MD can)
+                      (VP (VB lead)
+                        (NP
+                          (NP
+                            (UCP
+                              (PP (TO to)
+                                (NP (PDT all) (DT the) (NNS positives)))
+                              (CC and)
+                              (RB not)
+                              (ADJP (RB so) (JJ many)))
+                            (NNS negatives))
+                          (PP (IN of)
+                            (NP (NN gun) (NN ownership))))))))))))))
+    (. .)))
+
+expl(appear-3, There-1)
+xsubj(policy-10, There-1)
+aux(appear-3, does-2)
+root(ROOT-0, appear-3)
+aux(policy-10, to-4)
+cop(policy-10, be-5)
+det(policy-10, a-6)
+advmod(balanced-9, more-7)
+advmod(balanced-9, carefully-8)
+amod(policy-10, balanced-9)
+xcomp(appear-3, policy-10)
+nsubj(lead-13, that-11)
+aux(lead-13, can-12)
+ccomp(policy-10, lead-13)
+dep(negatives-22, to-14)
+predet(positives-17, all-15)
+det(positives-17, the-16)
+pobj(to-14, positives-17)
+conj_and(to-14, not-19)
+dep(negatives-22, not-19)
+advmod(many-21, so-20)
+dep(to-14, many-21)
+dobj(lead-13, negatives-22)
+nn(ownership-25, gun-24)
+prep_of(negatives-22, ownership-25)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP
+          (NP (NN answer))
+          (PP (TO to)
+            (NP (PRP$ your) (JJ specific) (NNS points))))
+        (: :)
+        (ADVP (RB Out)
+          (PP (IN of)
+            (NP (NN date))))))
+    (: ;)
+    (NP (DT The) (NNS studies))
+    (VP (VBP span)
+      (NP (CD 5) (NNS years))
+      (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT the) (JJS newest))
+          (ADVP
+            (NP (RB only) (CD 4) (NNS years))
+            (RB ago)))))
+    (. .)))
+
+prep_in(span-14, answer-2)
+poss(points-6, your-4)
+amod(points-6, specific-5)
+prep_to(answer-2, points-6)
+prep_out_of(answer-2, date-10)
+det(studies-13, The-12)
+nsubj(span-14, studies-13)
+root(ROOT-0, span-14)
+num(years-16, 5-15)
+tmod(span-14, years-16)
+det(newest-20, the-19)
+prep_with(span-14, newest-20)
+advmod(years-23, only-21)
+num(years-23, 4-22)
+npadvmod(ago-24, years-23)
+advmod(newest-20, ago-24)
+
+(ROOT
+  (SQ (MD Could)
+    (NP (PRP you))
+    (VP (VB point)
+      (NP (PRP me))
+      (PP (TO to)
+        (NP (NN something)))
+      (S
+        (VP (TO to)
+          (VP (VBZ shows)
+            (NP (DT a) (JJ dramatic) (NN change))
+            (PP (IN during)
+              (NP (DT this) (NN time)))))))
+    (. ?)))
+
+aux(point-3, Could-1)
+nsubj(point-3, you-2)
+xsubj(shows-8, you-2)
+root(ROOT-0, point-3)
+dobj(point-3, me-4)
+prep_to(point-3, something-6)
+aux(shows-8, to-7)
+xcomp(point-3, shows-8)
+det(change-11, a-9)
+amod(change-11, dramatic-10)
+dobj(shows-8, change-11)
+det(time-14, this-13)
+prep_during(shows-8, time-14)
+
+(ROOT
+  (S
+    (FRAG
+      (NP
+        (NP (NNP Bereft))
+        (PP (IN of)
+          (NP (NNS data)))))
+    (: ;)
+    (S
+      (INTJ (UH Well) (UH no))
+      (, ,)
+      (NP (PRP it))
+      (VP (VBZ contains)
+        (NP
+          (NP (RB exactly) (DT the) (NNS data))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (VBZ indicates)))))))
+    (. .)))
+
+dep(contains-9, Bereft-1)
+prep_of(Bereft-1, data-3)
+dep(contains-9, Well-5)
+dep(Well-5, no-6)
+nsubj(contains-9, it-8)
+root(ROOT-0, contains-9)
+advmod(data-12, exactly-10)
+det(data-12, the-11)
+dobj(contains-9, data-12)
+dobj(indicates-14, data-12)
+nsubj(indicates-14, it-13)
+rcmod(data-12, indicates-14)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB How))
+      (S
+        (NP (PRP you))
+        (VP (VBP choose)
+          (S
+            (VP (TO to)
+              (VP (VB interpret)
+                (NP (DT the) (NNS data))))))))
+    (VP (VBZ is)
+      (NP (DT the) (JJ interesting) (NN part)))
+    (. .)))
+
+advmod(choose-3, How-1)
+nsubj(choose-3, you-2)
+xsubj(interpret-5, you-2)
+csubj(part-11, choose-3)
+aux(interpret-5, to-4)
+xcomp(choose-3, interpret-5)
+det(data-7, the-6)
+dobj(interpret-5, data-7)
+cop(part-11, is-8)
+det(part-11, the-9)
+amod(part-11, interesting-10)
+root(ROOT-0, part-11)
+

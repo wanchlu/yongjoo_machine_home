@@ -1,0 +1,140 @@
+(ROOT
+  (S
+    (VP (VB Ha))
+    (. !)))
+
+root(ROOT-0, Ha-1)
+
+(ROOT
+  (S
+    (NP (NNP BullIt))
+    (VP (VBZ 's)
+      (ADVP (RB exactly))
+      (NP (DT the) (NN opposite)))
+    (. .)))
+
+nsubj(opposite-5, BullIt-1)
+cop(opposite-5, 's-2)
+advmod(opposite-5, exactly-3)
+det(opposite-5, the-4)
+root(ROOT-0, opposite-5)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Statistical) (NNS motherloads))
+      (, ,)
+      (SBAR (IN like)
+        (S
+          (NP (NNP Eurostat)
+            (CC and)
+            (NNP UN))
+          (VP (VBP show)
+            (SBAR (IN that)
+              (S
+                (NP
+                  (NP (DT the) (JJS most) (NN secular) (NNS countries))
+                  (, ,)
+                  (PP (IN like)
+                    (NP (NNP Sweden) (, ,) (NNP Norway) (, ,)
+                      (CC and)
+                      (NNP Denmark)))
+                  (, ,))
+                (VP (TO to)
+                  (VP (VB name)
+                    (NP (DT a) (JJ few)))))))))
+      (, ,))
+    (VP (VBP are)
+      (VP (VBN rated)
+        (PP (IN with)
+          (NP
+            (NP (DT the) (JJS highest) (NN quality))
+            (PP (IN of)
+              (NP (NN life)))))))
+    (. .)))
+
+nn(motherloads-2, Statistical-1)
+nsubjpass(rated-29, motherloads-2)
+mark(show-8, like-4)
+nsubj(show-8, Eurostat-5)
+conj_and(Eurostat-5, UN-7)
+nsubj(show-8, UN-7)
+dep(motherloads-2, show-8)
+complm(name-24, that-9)
+det(countries-13, the-10)
+amod(countries-13, most-11)
+nn(countries-13, secular-12)
+nsubj(name-24, countries-13)
+prep_like(countries-13, Sweden-16)
+prep_like(countries-13, Norway-18)
+conj_and(Sweden-16, Norway-18)
+prep_like(countries-13, Denmark-21)
+conj_and(Sweden-16, Denmark-21)
+aux(name-24, to-23)
+ccomp(show-8, name-24)
+xcomp(show-8, name-24)
+det(few-26, a-25)
+dobj(name-24, few-26)
+auxpass(rated-29, are-28)
+root(ROOT-0, rated-29)
+det(quality-33, the-31)
+amod(quality-33, highest-32)
+prep_with(rated-29, quality-33)
+prep_of(quality-33, life-35)
+
+(ROOT
+  (S
+    (NP (DT This) (NN index))
+    (VP (VBZ includes)
+      (NP (NNS factors))
+      (PP (IN like)
+        (NP
+          (NP (NNP Life) (NNP Expectancy))
+          (, ,)
+          (NP (NNP Social) (NNP Welfare))
+          (, ,)
+          (NP (NNP Education))
+          (, ,)
+          (CC and)
+          (NP (NNP Infant) (NNP Mortality) (NNP btw)))))
+    (. .)))
+
+det(index-2, This-1)
+nsubj(includes-3, index-2)
+root(ROOT-0, includes-3)
+dobj(includes-3, factors-4)
+nn(Expectancy-7, Life-6)
+prep_like(includes-3, Expectancy-7)
+nn(Welfare-10, Social-9)
+prep_like(includes-3, Welfare-10)
+conj_and(Expectancy-7, Welfare-10)
+prep_like(includes-3, Education-12)
+conj_and(Expectancy-7, Education-12)
+nn(btw-17, Infant-15)
+nn(btw-17, Mortality-16)
+prep_like(includes-3, btw-17)
+conj_and(Expectancy-7, btw-17)
+
+(ROOT
+  (S
+    (VP (VBG Whereas)
+      (PP (IN for)
+        (NP
+          (NP (NNP Bolivia) (, ,) (NNP Colombia) (, ,) (NNP Paraguay) (, ,))
+          (CC and)
+          (NP
+            (NP (DT a) (NN handful))
+            (PP (IN of)
+              (NP (JJ African) (NNS countries)))))))
+    (: ...)))
+
+root(ROOT-0, Whereas-1)
+nn(Paraguay-7, Bolivia-3)
+appos(Paraguay-7, Colombia-5)
+prep_for(Whereas-1, Paraguay-7)
+det(handful-11, a-10)
+prep_for(Whereas-1, handful-11)
+conj_and(Paraguay-7, handful-11)
+amod(countries-14, African-13)
+prep_of(handful-11, countries-14)
+

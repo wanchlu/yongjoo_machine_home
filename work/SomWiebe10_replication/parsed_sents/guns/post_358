@@ -1,0 +1,107 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB totally))
+    (VP (VBP agree)
+      (PP (IN with)
+        (NP (DT the) (NN argument)))
+      (SBAR (IN that)
+        (S
+          (NP (NNS guns))
+          (VP (VBP make)
+            (S
+              (NP (PRP you))
+              (ADJP (JJR safer)))))))
+    (. .)))
+
+nsubj(agree-3, I-1)
+advmod(agree-3, totally-2)
+root(ROOT-0, agree-3)
+det(argument-6, the-5)
+prep_with(agree-3, argument-6)
+complm(make-9, that-7)
+nsubj(make-9, guns-8)
+ccomp(agree-3, make-9)
+nsubj(safer-11, you-10)
+xcomp(make-9, safer-11)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are)
+      (ADJP (RB perfectly) (JJ safe)
+        (PP (IN in)
+          (NP
+            (NP (DT the) (NNS hands))
+            (PP (IN of)
+              (NP (JJ responsible) (, ,) (JJ law-abiding) (NNS citizens)))))))
+    (. .)))
+
+nsubj(safe-4, They-1)
+cop(safe-4, are-2)
+advmod(safe-4, perfectly-3)
+root(ROOT-0, safe-4)
+det(hands-7, the-6)
+prep_in(safe-4, hands-7)
+amod(citizens-12, responsible-9)
+amod(citizens-12, law-abiding-11)
+prep_of(hands-7, citizens-12)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP disagree)
+      (PP (IN with)
+        (NP (NN handgun) (NNS bans)))
+      (SBAR (IN because)
+        (S
+          (NP
+            (NP (DT the) (JJ only) (NN thing))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (VP (VBP do)))))
+          (VP (VBZ is)
+            (S
+              (VP (VB give)
+                (NP (NNS criminals))
+                (NP (DT an) (NN advantage))
+                (PP (IN by)
+                  (S
+                    (VP (VBG taking)
+                      (PRT (RP away))
+                      (NP
+                        (NP (DT the) (NN right))
+                        (PP (IN of)
+                          (NP (NNS citizens))))
+                      (S
+                        (VP (TO to)
+                          (VP (VB protect)
+                            (NP (PRP themselves))))))))))))))
+    (. .)))
+
+nsubj(disagree-2, I-1)
+root(ROOT-0, disagree-2)
+nn(bans-5, handgun-4)
+prep_with(disagree-2, bans-5)
+mark(is-12, because-6)
+det(thing-9, the-7)
+amod(thing-9, only-8)
+dobj(do-11, thing-9)
+nsubj(is-12, thing-9)
+nsubj(do-11, they-10)
+rcmod(thing-9, do-11)
+advcl(disagree-2, is-12)
+ccomp(is-12, give-13)
+iobj(give-13, criminals-14)
+det(advantage-16, an-15)
+dobj(give-13, advantage-16)
+prepc_by(give-13, taking-18)
+prt(taking-18, away-19)
+det(right-21, the-20)
+dobj(taking-18, right-21)
+prep_of(right-21, citizens-23)
+aux(protect-25, to-24)
+xcomp(taking-18, protect-25)
+dobj(protect-25, themselves-26)
+

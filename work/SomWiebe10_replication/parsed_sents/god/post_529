@@ -1,0 +1,76 @@
+(ROOT
+  (S
+    (NP
+      (NP (RB yes))
+      (CONJP (CC but)
+        (RB not))
+      (NP
+        (NP (RB as) (DT a))
+        (NP (DT all))))
+    (VP (VBP know)
+      (NP
+        (NP (NN figur))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD can)
+              (VP (VB do)
+                (NP (NN anything))))))))
+    (. .)))
+
+nsubj(know-7, yes-1)
+advmod(a-5, as-4)
+conj_negcc(yes-1, a-5)
+nsubj(know-7, a-5)
+dep(a-5, all-6)
+root(ROOT-0, know-7)
+dobj(know-7, figur-8)
+nsubj(do-11, figur-8)
+aux(do-11, can-10)
+rcmod(figur-8, do-11)
+dobj(do-11, anything-12)
+
+(ROOT
+  (S
+    (NP (NN god))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (NN thing))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN back))
+                (PP (IN of)
+                  (NP (PRP you))))))
+          (VP (VBP head)
+            (SBAR (IN that)
+              (S
+                (VP (VBZ is)
+                  (VP (VBG telling)
+                    (S
+                      (NP (PRP you))
+                      (VP (TO to)
+                        (VP (VB vote)
+                          (PRT (RP up))
+                          (NP (DT this) (NN argument)))))))))))))
+    (. .)))
+
+nsubj(is-2, god-1)
+root(ROOT-0, is-2)
+complm(head-10, that-3)
+nsubj(head-10, thing-4)
+det(back-7, the-6)
+prep_in(thing-4, back-7)
+prep_of(back-7, you-9)
+ccomp(is-2, head-10)
+complm(telling-13, that-11)
+aux(telling-13, is-12)
+ccomp(head-10, telling-13)
+nsubj(vote-16, you-14)
+aux(vote-16, to-15)
+xcomp(telling-13, vote-16)
+prt(vote-16, up-17)
+det(argument-19, this-18)
+dobj(vote-16, argument-19)
+

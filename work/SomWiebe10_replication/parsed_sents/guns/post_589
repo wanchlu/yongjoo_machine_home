@@ -1,0 +1,48 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (DT The) (NN beauty))
+      (PP (IN of)
+        (NP (DT the) (JJ second) (NN amendment))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (MD will) (RB not)
+            (VP (VB be)
+              (VP (VBN needed)
+                (SBAR (IN until)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP try)
+                      (S
+                        (VP (TO to)
+                          (VP (VB take)
+                            (NP (PRP it))))))))))))))
+    (. .)))
+
+det(beauty-3, The-2)
+nsubj(is-8, beauty-3)
+det(amendment-7, the-5)
+amod(amendment-7, second-6)
+prep_of(beauty-3, amendment-7)
+root(ROOT-0, is-8)
+complm(needed-14, that-9)
+nsubjpass(needed-14, it-10)
+aux(needed-14, will-11)
+neg(needed-14, not-12)
+auxpass(needed-14, be-13)
+ccomp(is-8, needed-14)
+mark(try-17, until-15)
+nsubj(try-17, they-16)
+advcl(needed-14, try-17)
+aux(take-19, to-18)
+xcomp(try-17, take-19)
+dobj(take-19, it-20)
+
+(ROOT
+  (NP (NNP '') (NNP Thomas) (NNP Jefferson)))
+
+nn(Jefferson-3, Thomas-2)
+root(ROOT-0, Jefferson-3)
+

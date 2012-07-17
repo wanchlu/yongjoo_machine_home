@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (PP (IN Of)
+      (NP (NN course)))
+    (NP (PRP I))
+    (VP (VBP agree))
+    (. .)))
+
+prep_of(agree-4, course-2)
+nsubj(agree-4, I-3)
+root(ROOT-0, agree-4)
+
+(ROOT
+  (S (CC But)
+    (ADVP (RB then))
+    (ADVP (RB again))
+    (NP (PRP you))
+    (VP (VBP pull)
+      (NP
+        (NP (DT a) (NN gun))
+        (PP (IN on)
+          (NP (DT a) (NN subway) (NN EVEN))))
+      (SBAR (IN though)
+        (S
+          (NP (PRP one))
+          (VP (VBZ 's)
+            (VP (VBN pulled)
+              (PP (IN on)
+                (NP (PRP you)))))))
+      (, ,)
+      (S
+        (NP (PRP$ your) (NN gonna))
+        (VP (VB end)
+          (PRT (RP up))
+          (PP (IN in)
+            (NP (NN jail))))))
+    (. .)))
+
+cc(pull-5, But-1)
+advmod(pull-5, then-2)
+advmod(pull-5, again-3)
+nsubj(pull-5, you-4)
+root(ROOT-0, pull-5)
+det(gun-7, a-6)
+dobj(pull-5, gun-7)
+det(EVEN-11, a-9)
+nn(EVEN-11, subway-10)
+prep_on(gun-7, EVEN-11)
+mark(pulled-15, though-12)
+nsubjpass(pulled-15, one-13)
+auxpass(pulled-15, 's-14)
+advcl(pull-5, pulled-15)
+prep_on(pulled-15, you-17)
+poss(gonna-20, your-19)
+nsubj(end-21, gonna-20)
+dep(pull-5, end-21)
+prt(end-21, up-22)
+prep_in(end-21, jail-24)
+
+(ROOT
+  (S
+    (SBAR (IN Unless)
+      (S
+        (NP (PRP you))
+        (VP (VBP 've)
+          (VP (VBN got)
+            (NP (DT a) (JJ concealed) (NN weapon))))))
+    (VP (VBP license))
+    (. .)))
+
+mark(got-4, Unless-1)
+nsubj(got-4, you-2)
+aux(got-4, 've-3)
+csubj(license-8, got-4)
+det(weapon-7, a-5)
+amod(weapon-7, concealed-6)
+dobj(got-4, weapon-7)
+root(ROOT-0, license-8)
+

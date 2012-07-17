@@ -1,0 +1,323 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Guns))
+      (VP (VBP dont)
+        (VP (VB kill)
+          (NP (NNS people)))))
+    (, ,)
+    (NP (NNS people))
+    (VP (VBP kill)
+      (NP (NNS people)))
+    (. .)))
+
+nsubj(dont-2, Guns-1)
+ccomp(kill-7, dont-2)
+xcomp(dont-2, kill-3)
+dobj(kill-3, people-4)
+nsubj(kill-7, people-6)
+root(ROOT-0, kill-7)
+dobj(kill-7, people-8)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS People))
+      (ADVP (RB sometimes))
+      (VP (VB kill)
+        (S
+          (NP (JJ other) (NNS people))
+          (VP (VB innocently)
+            (NP
+              (NP (DT a) (JJR lower) (NN percentage))
+              (PP (IN of)
+                (NP (DT the) (NN time))))))))
+    (CC but)
+    (S
+      (INTJ (UH yes))
+      (NP (PRP it))
+      (VP (VBZ is)
+        (ADVP (RB there))))
+    (. .)))
+
+nsubj(kill-3, People-1)
+advmod(kill-3, sometimes-2)
+root(ROOT-0, kill-3)
+amod(people-5, other-4)
+nsubj(innocently-6, people-5)
+ccomp(kill-3, innocently-6)
+det(percentage-9, a-7)
+amod(percentage-9, lower-8)
+dobj(innocently-6, percentage-9)
+det(time-12, the-11)
+prep_of(percentage-9, time-12)
+dep(is-16, yes-14)
+nsubj(is-16, it-15)
+conj_but(kill-3, is-16)
+advmod(is-16, there-17)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (VP (VBN called)
+        (NP (NN self) (NN defense))))
+    (. .)))
+
+nsubjpass(called-3, It-1)
+auxpass(called-3, is-2)
+root(ROOT-0, called-3)
+nn(defense-5, self-4)
+dobj(called-3, defense-5)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (NN someone))
+          (VP (VBZ breaks)
+            (PP (IN into)
+              (NP (PRP$ your) (NN house)))))
+        (CC and)
+        (S
+          (NP (PRP you))
+          (VP (VBP shoot)
+            (CC and)
+            (VBP kill)
+            (NP (DT that) (NN man))))))
+    (VP (VBZ is)
+      (NP (RB that) (DT a) (JJ bad) (NN thing)))
+    (. ?)))
+
+mark(breaks-3, If-1)
+nsubj(breaks-3, someone-2)
+csubj(thing-18, breaks-3)
+poss(house-6, your-5)
+prep_into(breaks-3, house-6)
+nsubj(shoot-9, you-8)
+nsubj(kill-11, you-8)
+conj_and(breaks-3, shoot-9)
+csubj(thing-18, shoot-9)
+conj_and(breaks-3, kill-11)
+conj_and(shoot-9, kill-11)
+det(man-13, that-12)
+dobj(shoot-9, man-13)
+cop(thing-18, is-14)
+advmod(thing-18, that-15)
+det(thing-18, a-16)
+amod(thing-18, bad-17)
+root(ROOT-0, thing-18)
+
+(ROOT
+  (S
+    (SBAR
+      (ADVP (RB Also))
+      (IN if)
+      (S
+        (NP (PRP it))
+        (VP (VBZ is) (RB not)
+          (NP (NNS guns))
+          (ADVP (RB then)))))
+    (NP (PRP it))
+    (VP (MD will)
+      (VP (VB be)
+        (NP
+          (NP (JJ homemade) (NNS bombs))
+          (CC or)
+          (RB just)
+          (NP (NN kitchen) (NNS knives)))))
+    (. .)))
+
+advmod(guns-6, Also-1)
+dep(guns-6, if-2)
+nsubj(guns-6, it-3)
+cop(guns-6, is-4)
+neg(guns-6, not-5)
+advcl(bombs-12, guns-6)
+advmod(guns-6, then-7)
+nsubj(bombs-12, it-8)
+aux(bombs-12, will-9)
+cop(bombs-12, be-10)
+amod(bombs-12, homemade-11)
+root(ROOT-0, bombs-12)
+advmod(bombs-12, just-14)
+conj_or(bombs-12, just-14)
+nn(knives-16, kitchen-15)
+dep(bombs-12, knives-16)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP (RB almost) (JJ impossible)
+          (S
+            (VP (TO to)
+              (VP (VB ban)
+                (ADVP (RB just))
+                (PP (IN like)
+                  (NP (DT the) (JJ alchohol) (NN ban))))))
+          (SBAR
+            (S
+              (NP (DT the) (NNP US) (NN gov))
+              (VP (VBD tried)))))))
+    (. .)))
+
+nsubj(impossible-5, It-1)
+aux(impossible-5, would-2)
+cop(impossible-5, be-3)
+advmod(impossible-5, almost-4)
+root(ROOT-0, impossible-5)
+aux(ban-7, to-6)
+xcomp(impossible-5, ban-7)
+advmod(ban-7, just-8)
+det(ban-12, the-10)
+amod(ban-12, alchohol-11)
+prep_like(ban-7, ban-12)
+det(gov-15, the-13)
+nn(gov-15, US-14)
+nsubj(tried-16, gov-15)
+dep(impossible-5, tried-16)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBP wont)
+      (NP (NN work))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (JJ southern) (NNS states))
+          (SBAR
+            (S
+              (NP (PRP I))
+              (VP (VBP gurantee)
+                (NP (PRP it))))))))
+    (. .)))
+
+nsubj(wont-2, It-1)
+root(ROOT-0, wont-2)
+dobj(wont-2, work-3)
+det(states-7, the-5)
+amod(states-7, southern-6)
+prep_in(wont-2, states-7)
+nsubj(gurantee-9, I-8)
+rcmod(states-7, gurantee-9)
+dobj(gurantee-9, it-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJS Most))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (CD 16) (NN year) (NNS olds))
+          (CC and)
+          (NP
+            (NP (JJR higher))
+            (SBAR (IN that)
+              (S
+                (NP (PRP I))
+                (VP (VB KNOW))))))))
+    (VP (VBP own)
+      (NP (DT a) (NN gun)))
+    (. .)))
+
+nsubj(own-12, Most-1)
+det(olds-6, the-3)
+num(olds-6, 16-4)
+nn(olds-6, year-5)
+prep_of(Most-1, olds-6)
+prep_of(Most-1, higher-8)
+conj_and(olds-6, higher-8)
+dobj(KNOW-11, higher-8)
+complm(KNOW-11, that-9)
+nsubj(KNOW-11, I-10)
+dep(higher-8, KNOW-11)
+root(ROOT-0, own-12)
+det(gun-14, a-13)
+dobj(own-12, gun-14)
+
+(ROOT
+  (NP
+    (NP
+      (QP (IN at) (JJS least) (CD 25) (NN %)))
+    (PP (IN of)
+      (NP (PRP them)))
+    (. .)))
+
+quantmod(%-4, at-1)
+mwe(at-1, least-2)
+pobj(at-1, least-2)
+number(%-4, 25-3)
+root(ROOT-0, %-4)
+prep_of(%-4, them-6)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Which))
+    (SQ
+      (VP (VBZ means)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP are)
+              (ADVP (RB already))
+              (VP (VBG toting)
+                (ADVP (RB illegaly))
+                (SBAR (RB so) (IN if)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (ADVP (RB already))
+                      (SBAR
+                        (WHADVP (WRB how))
+                        (S
+                          (VP (VBZ is)
+                            (S
+                              (NP (DT the) (NN gov) (NN gonna))
+                              (VP (VB enforce)
+                                (NP (PRP it))
+                                (SBAR (IN if)
+                                  (S
+                                    (NP (PRP they))
+                                    (VP (VBP are)
+                                      (ADVP (RB already))
+                                      (VP (VBG having)
+                                        (S
+                                          (NP (NNS KIDS))
+                                          (VP (VB slip)
+                                            (PP (IN under)
+                                              (NP (DT the) (NN radar)))))))))))))))))))))))
+    (. ?)))
+
+nsubj(means-2, Which-1)
+root(ROOT-0, means-2)
+complm(toting-7, that-3)
+nsubj(toting-7, they-4)
+aux(toting-7, are-5)
+advmod(toting-7, already-6)
+ccomp(means-2, toting-7)
+advmod(toting-7, illegaly-8)
+advmod(are-12, so-9)
+dep(are-12, if-10)
+nsubj(are-12, they-11)
+ccomp(toting-7, are-12)
+advmod(are-12, already-13)
+advmod(is-15, how-14)
+ccomp(are-12, is-15)
+det(gonna-18, the-16)
+nn(gonna-18, gov-17)
+nsubj(enforce-19, gonna-18)
+ccomp(is-15, enforce-19)
+dobj(enforce-19, it-20)
+mark(having-25, if-21)
+nsubj(having-25, they-22)
+aux(having-25, are-23)
+advmod(having-25, already-24)
+advcl(enforce-19, having-25)
+nsubj(slip-27, KIDS-26)
+ccomp(having-25, slip-27)
+det(radar-30, the-29)
+prep_under(slip-27, radar-30)
+

@@ -1,0 +1,57 @@
+(ROOT
+  (FRAG
+    (NP
+      (NP (JJR More) (NNS guns))
+      (, ,)
+      (NP (JJR less) (NN crime))
+      (. .))
+    (. .)))
+
+amod(guns-2, More-1)
+root(ROOT-0, guns-2)
+amod(crime-5, less-4)
+appos(guns-2, crime-5)
+
+(ROOT
+  (NP
+    (NP (JJR More) (NN freedom))
+    (, ,)
+    (NP (JJR less) (NN crime))
+    (. .)))
+
+amod(freedom-2, More-1)
+root(ROOT-0, freedom-2)
+amod(crime-5, less-4)
+appos(freedom-2, crime-5)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS facts))
+    (VP (VB speak)
+      (PP (IN for)
+        (NP (PRP themselves)))
+      (. .))
+    (. .)))
+
+det(facts-2, The-1)
+nsubj(speak-3, facts-2)
+root(ROOT-0, speak-3)
+prep_for(speak-3, themselves-5)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (JJR More) (NN freedom))
+    (VP (VBZ means)
+      (NP (JJR more) (NN adherence))
+      (PP (TO to)
+        (NP (DT the) (NN constitution))))
+    (-RRB- -RRB-) (. .)))
+
+amod(freedom-3, More-2)
+nsubj(means-4, freedom-3)
+root(ROOT-0, means-4)
+amod(adherence-6, more-5)
+dobj(means-4, adherence-6)
+det(constitution-9, the-8)
+prep_to(means-4, constitution-9)
+

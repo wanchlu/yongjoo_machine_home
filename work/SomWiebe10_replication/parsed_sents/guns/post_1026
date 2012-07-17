@@ -1,0 +1,163 @@
+(ROOT
+  (S
+    (NP (JJ Legal) (NNS guns))
+    (VP (VBP prevent)
+      (NP (NN crime)))
+    (. .)))
+
+amod(guns-2, Legal-1)
+nsubj(prevent-3, guns-2)
+root(ROOT-0, prevent-3)
+dobj(prevent-3, crime-4)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (NP (DT a) (JJ proven) (NN fact)))
+    (. .)))
+
+nsubj(fact-5, It-1)
+cop(fact-5, is-2)
+det(fact-5, a-3)
+amod(fact-5, proven-4)
+root(ROOT-0, fact-5)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (NNS places))
+        (PP (IN in)
+          (NP (DT the) (NNP US)))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP it))
+            (VP (VBZ is)
+              (NP
+                (NP (JJ mandatory))
+                (PP (IN for)
+                  (NP (NNS citizens)
+                    (S
+                      (VP (TO to)
+                        (VP (VB carry)
+                          (NP (JJ legal) (NN fire) (NNS arms)))))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+nsubj(are-2, places-3)
+det(US-6, the-5)
+prep_in(places-3, US-6)
+advmod(mandatory-10, where-7)
+nsubj(mandatory-10, it-8)
+cop(mandatory-10, is-9)
+rcmod(places-3, mandatory-10)
+prep_for(mandatory-10, citizens-12)
+aux(carry-14, to-13)
+infmod(citizens-12, carry-14)
+amod(arms-17, legal-15)
+nn(arms-17, fire-16)
+dobj(carry-14, arms-17)
+
+(ROOT
+  (S
+    (NP (NN Result))
+    (VP (VBP zero)
+      (NP (NN crime) (NN rate)))
+    (. .)))
+
+nsubj(zero-2, Result-1)
+root(ROOT-0, zero-2)
+nn(rate-4, crime-3)
+dobj(zero-2, rate-4)
+
+(ROOT
+  (S
+    (SBAR (IN Before)
+      (S
+        (NP (NNP Bernard) (NNP Getz))
+        (VP (VBD came)
+          (ADVP (RB forward)))))
+    (, ,)
+    (NP
+      (NP (NN crime))
+      (PP (IN in)
+        (NP (DT the) (NNP NYC) (NN subway) (NN system))))
+    (VP (VBD dropped)
+      (ADVP (RB tremendously)))
+    (. .)))
+
+mark(came-4, Before-1)
+nn(Getz-3, Bernard-2)
+nsubj(came-4, Getz-3)
+advcl(dropped-13, came-4)
+advmod(came-4, forward-5)
+nsubj(dropped-13, crime-7)
+det(system-12, the-9)
+nn(system-12, NYC-10)
+nn(system-12, subway-11)
+prep_in(crime-7, system-12)
+root(ROOT-0, dropped-13)
+advmod(dropped-13, tremendously-14)
+
+(ROOT
+  (S
+    (NP (DT A) (NN criminal))
+    (VP (VBZ is)
+      (ADJP (RBR less) (JJ apt)
+        (S
+          (VP (TO to)
+            (VP (VB commit)
+              (NP (DT a) (NN crime))))))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP he))
+          (VP (VBZ is) (RB n't)
+            (ADJP (JJ sure)
+              (SBAR
+                (S
+                  (NP (DT some) (NN one))
+                  (VP (VBZ has)
+                    (NP (DT a) (NN gun))))))))))
+    (. .)))
+
+det(criminal-2, A-1)
+nsubj(apt-5, criminal-2)
+cop(apt-5, is-3)
+advmod(apt-5, less-4)
+root(ROOT-0, apt-5)
+aux(commit-7, to-6)
+xcomp(apt-5, commit-7)
+det(crime-9, a-8)
+dobj(commit-7, crime-9)
+mark(sure-15, if-11)
+nsubj(sure-15, he-12)
+cop(sure-15, is-13)
+neg(sure-15, n't-14)
+advcl(apt-5, sure-15)
+det(one-17, some-16)
+nsubj(has-18, one-17)
+dep(sure-15, has-18)
+det(gun-20, a-19)
+dobj(has-18, gun-20)
+
+(ROOT
+  (S
+    (NP (NNS Criminals))
+    (VP (VBP do) (RB not)
+      (VP (VB use)
+        (NP (JJ legal) (NN fire) (NNS arms))))
+    (. .)))
+
+nsubj(use-4, Criminals-1)
+aux(use-4, do-2)
+neg(use-4, not-3)
+root(ROOT-0, use-4)
+amod(arms-7, legal-5)
+nn(arms-7, fire-6)
+dobj(use-4, arms-7)
+

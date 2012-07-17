@@ -1,0 +1,81 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP
+              (NP (DT some) (NN form))
+              (PP (IN of)
+                (NP
+                  (NP (NN control))
+                  (PP (IN over)
+                    (NP (NNS guns))))))))))
+    (. .)))
+
+nsubj(have-2, You-1)
+xsubj(have-4, You-1)
+root(ROOT-0, have-2)
+aux(have-4, to-3)
+xcomp(have-2, have-4)
+det(form-6, some-5)
+dobj(have-4, form-6)
+prep_of(form-6, control-8)
+prep_over(control-8, guns-10)
+
+(ROOT
+  (S
+    (S
+      (NP (DT That))
+      (VP (VBZ does) (RB n't)
+        (VP (VB mean)
+          (S
+            (VP (VBG banning)
+              (NP (PRP them)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (VBZ means)
+      (S
+        (VP
+          (VP (VBG controlling)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBZ has)
+                  (NP (PRP them))))))
+          (CC and)
+          (VP (VBG making)
+            (ADJP (JJ sure)
+              (SBAR
+                (S
+                  (NP (PRP we))
+                  (VP (VBP know)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (VBZ has)
+                          (NP (PRP them)))))))))))))
+    (. .)))
+
+nsubj(mean-4, That-1)
+aux(mean-4, does-2)
+neg(mean-4, n't-3)
+ccomp(means-9, mean-4)
+xcomp(mean-4, banning-5)
+dobj(banning-5, them-6)
+nsubj(means-9, it-8)
+root(ROOT-0, means-9)
+ccomp(means-9, controlling-10)
+nsubj(has-12, who-11)
+ccomp(controlling-10, has-12)
+dobj(has-12, them-13)
+ccomp(means-9, making-15)
+conj_and(controlling-10, making-15)
+acomp(making-15, sure-16)
+nsubj(know-18, we-17)
+dep(sure-16, know-18)
+nsubj(has-20, who-19)
+ccomp(know-18, has-20)
+dobj(has-20, them-21)
+

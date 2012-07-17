@@ -1,0 +1,99 @@
+(ROOT
+  (S
+    (ADVP (DT no) (RB no) (RB no))
+    (NP (PRP you))
+    (VP (VBD missed)
+      (NP (DT the) (NN point))
+      (PP (IN in)
+        (NP (DT that) (NN part))))
+    (. .)))
+
+dep(no-3, no-1)
+advmod(no-3, no-2)
+advmod(missed-5, no-3)
+nsubj(missed-5, you-4)
+root(ROOT-0, missed-5)
+det(point-7, the-6)
+dobj(missed-5, point-7)
+det(part-10, that-9)
+prep_in(missed-5, part-10)
+
+(ROOT
+  (S
+    (NP (DT the) (NN point))
+    (VP (VBD was)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBD was)
+            (VP (VBG saying)
+              (SBAR (IN that)
+                (S
+                  (NP (EX there))
+                  (VP (VBP are)
+                    (NP
+                      (NP
+                        (NP (NNS flaws))
+                        (PP (IN in)
+                          (NP (DT the) (NN bible))))
+                      (: ...)
+                      (S
+                        (S
+                          (VP (VBG saying)
+                            (SBAR (IN that)
+                              (S
+                                (NP (EX there))
+                                (VP (VBP have)
+                                  (VP (VBN been)
+                                    (NP
+                                      (NP (JJ other) (NNS accounts))
+                                      (PP (IN of)
+                                        (NP (NNS floods))))
+                                    (PP (JJ due) (TO to)
+                                      (NP
+                                        (NP (JJ different) (NNS gods))
+                                        (PP (IN in)
+                                          (NP (JJ different) (NNS religions)))))))))))
+                        (: ...)
+                        (S
+                          (VP (VB try)
+                            (S
+                              (VP (VBG reading)
+                                (NP
+                                  (ADJP
+                                    (NP (DT a) (RB little))
+                                    (JJR slower))
+                                  (JJ =) (NNS \/))))))))))))))))))
+
+det(point-2, the-1)
+nsubj(was-3, point-2)
+root(ROOT-0, was-3)
+nsubj(saying-6, I-4)
+aux(saying-6, was-5)
+ccomp(was-3, saying-6)
+complm(are-9, that-7)
+expl(are-9, there-8)
+ccomp(saying-6, are-9)
+nsubj(are-9, flaws-10)
+det(bible-13, the-12)
+prep_in(flaws-10, bible-13)
+dep(flaws-10, saying-15)
+complm(accounts-21, that-16)
+expl(accounts-21, there-17)
+aux(accounts-21, have-18)
+cop(accounts-21, been-19)
+amod(accounts-21, other-20)
+ccomp(saying-15, accounts-21)
+prep_of(accounts-21, floods-23)
+amod(gods-27, different-26)
+prep_due_to(accounts-21, gods-27)
+amod(religions-30, different-29)
+prep_in(gods-27, religions-30)
+parataxis(saying-15, try-32)
+xcomp(try-32, reading-33)
+det(little-35, a-34)
+npadvmod(slower-36, little-35)
+amod(\/-38, slower-36)
+amod(\/-38, =-37)
+dobj(reading-33, \/-38)
+

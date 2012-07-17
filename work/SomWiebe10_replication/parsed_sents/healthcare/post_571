@@ -1,0 +1,130 @@
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (VP (VB come)
+      (PRT (RP on)))
+    (. .)))
+
+dep(come-2, Oh-1)
+root(ROOT-0, come-2)
+prt(come-2, on-3)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD threw)
+      (S
+        (NP (PRP you))
+        (NP (DT a) (NN softball))))
+    (. .)))
+
+nsubj(threw-2, I-1)
+root(ROOT-0, threw-2)
+nsubj(softball-5, you-3)
+det(softball-5, a-4)
+xcomp(threw-2, softball-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD said)
+      (ADVP (RB everywhere))
+      (, ,)
+      (SBAR (IN that)
+        (S
+          (VP (VBZ means)
+            (SBAR
+              (S
+                (NP (PRP you))
+                (VP (MD could)
+                  (VP (VB have)
+                    (VP
+                      (VP (VBN picked)
+                        (FRAG
+                          (WHADVP
+                            (ADVP
+                              (NP (DT any) (NN country))
+                              (RB any))
+                            (WRB where))))
+                      (CC and)
+                      (VP (VBN made)
+                        (NP (DT the) (NN case))
+                        (SBAR (IN that)
+                          (S
+                            (NP (DT this) (NN country))
+                            (VP (VBZ is)
+                              (NP
+                                (NP (DT the) (NN reason))
+                                (SBAR
+                                  (S
+                                    (NP (PRP we))
+                                    (VP (VBP need)
+                                      (NP (NNP UHC)))))))))))))))))))
+    (. .)))
+
+nsubj(said-2, I-1)
+root(ROOT-0, said-2)
+advmod(said-2, everywhere-3)
+complm(means-6, that-5)
+ccomp(said-2, means-6)
+nsubj(picked-10, you-7)
+nsubj(made-16, you-7)
+aux(picked-10, could-8)
+aux(picked-10, have-9)
+ccomp(means-6, picked-10)
+det(country-12, any-11)
+npadvmod(any-13, country-12)
+advmod(where-14, any-13)
+dep(picked-10, where-14)
+ccomp(means-6, made-16)
+conj_and(picked-10, made-16)
+det(case-18, the-17)
+dobj(made-16, case-18)
+complm(reason-24, that-19)
+det(country-21, this-20)
+nsubj(reason-24, country-21)
+cop(reason-24, is-22)
+det(reason-24, the-23)
+ccomp(made-16, reason-24)
+nsubj(need-26, we-25)
+rcmod(reason-24, need-26)
+dobj(need-26, UHC-27)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD could) (RB n't)
+      (VP (VB find)
+        (NP (CD one))))
+    (. .)))
+
+nsubj(find-4, You-1)
+aux(find-4, could-2)
+neg(find-4, n't-3)
+root(ROOT-0, find-4)
+dobj(find-4, one-5)
+
+(ROOT
+  (S (CC But)
+    (, ,)
+    (PRN
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (ADVP (RB really))
+          (VP (VBP need)
+            (NP (CD one))))
+        (: ...)))
+    (VP (VBP try)
+      (NP (NNP Canada)))
+    (. .)))
+
+cc(try-9, But-1)
+mark(need-6, if-3)
+nsubj(need-6, you-4)
+advmod(need-6, really-5)
+parataxis(try-9, need-6)
+dobj(need-6, one-7)
+root(ROOT-0, try-9)
+dobj(try-9, Canada-10)
+

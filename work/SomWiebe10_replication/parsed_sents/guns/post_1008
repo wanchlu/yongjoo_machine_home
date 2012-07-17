@@ -1,0 +1,35 @@
+(ROOT
+  (NP (NNP Stupid) (NNP American) (: ...)))
+
+nn(American-2, Stupid-1)
+root(ROOT-0, American-2)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (SBAR (IN if)
+    (S
+      (NP (DT no) (NN one))
+      (VP (VBD had)
+        (NP
+          (NP (NNS guns))
+          (SBAR
+            (S
+              (NP (PRP it))
+              (VP (MD would)
+                (VP (VB be)
+                  (ADJP (JJR safer)))))))))))
+
+mark(had-4, if-1)
+det(one-3, no-2)
+nsubj(had-4, one-3)
+root(ROOT-0, had-4)
+dobj(had-4, guns-5)
+dobj(safer-9, guns-5)
+nsubj(safer-9, it-6)
+aux(safer-9, would-7)
+cop(safer-9, be-8)
+rcmod(guns-5, safer-9)
+

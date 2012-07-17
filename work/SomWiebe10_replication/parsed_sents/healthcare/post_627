@@ -1,0 +1,198 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (NN healthcare))
+          (VP (MD should)
+            (VP (VB be)
+              (ADJP (JJ free)))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(free-6, healthcare-3)
+aux(free-6, should-4)
+cop(free-6, be-5)
+ccomp(think-2, free-6)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS People))
+      (VP (VBP talk)
+        (PP (IN about)
+          (SBAR
+            (WHADVP (WRB how))
+            (S
+              (NP (NNS taxes))
+              (VP (MD would)
+                (VP (VB be)
+                  (ADJP
+                    (ADJP (JJR higher)
+                      (SBAR
+                        (S
+                          (NP (NN well) (NNS taxes))
+                          (VP (VBP are)
+                            (VP (VBG killing)
+                              (NP (NNS people)))))))
+                    (PRN
+                      (ADVP (RB too) (RB so))
+                      (ADVP (IN at) (JJS least)))
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP they))
+                        (VP (VBD were)
+                          (ADVP (RB somewhere))))))
+                  (SBAR
+                    (S
+                      (NP (PRP they))
+                      (VP (MD could) (RB not)
+                        (VP (VB worry)
+                          (PP (IN about)
+                            (S
+                              (VP (VBG having)
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB deal)
+                                      (PP (IN with)
+                                        (NP
+                                          (ADVP
+                                            (NP (CD one))
+                                            (RBR more))
+                                          (NN thing) (RB perhaps))))))))))))))))))))
+    (NP (DT the) (NNP US))
+    (VP (MD would)
+      (VP (VB be)
+        (ADJP
+          (NP (DT a) (RB little))
+          (JJR better))))
+    (. .)))
+
+nsubj(talk-2, People-1)
+dep(better-41, talk-2)
+advmod(higher-8, how-4)
+nsubj(higher-8, taxes-5)
+aux(higher-8, would-6)
+cop(higher-8, be-7)
+prepc_about(talk-2, higher-8)
+nn(taxes-10, well-9)
+nsubj(killing-12, taxes-10)
+aux(killing-12, are-11)
+dep(higher-8, killing-12)
+dobj(killing-12, people-13)
+advmod(so-15, too-14)
+dep(higher-8, so-15)
+dep(so-15, at-16)
+pobj(at-16, least-17)
+mark(were-20, if-18)
+nsubj(were-20, they-19)
+ccomp(higher-8, were-20)
+advmod(were-20, somewhere-21)
+nsubj(worry-25, they-22)
+aux(worry-25, could-23)
+neg(worry-25, not-24)
+ccomp(higher-8, worry-25)
+prepc_about(worry-25, having-27)
+aux(deal-29, to-28)
+xcomp(having-27, deal-29)
+npadvmod(more-32, one-31)
+advmod(thing-33, more-32)
+prep_with(deal-29, thing-33)
+advmod(thing-33, perhaps-34)
+det(US-36, the-35)
+nsubj(better-41, US-36)
+aux(better-41, would-37)
+cop(better-41, be-38)
+det(little-40, a-39)
+npadvmod(better-41, little-40)
+root(ROOT-0, better-41)
+
+(ROOT
+  (S
+    (NP (DT A) (NN doctor)
+      (CC or)
+      (NN health) (NN care) (NN person))
+    (VP (MD should) (RB not)
+      (VP (VB go)
+        (PP (TO to)
+          (NP (NN school)))
+        (S
+          (VP (TO to)
+            (VP (VB make)
+              (ADJP (JJ sure))
+              (SBAR
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (VBZ makes)
+                      (NP
+                        (NP (DT a) (NN lot))
+                        (PP (IN of)
+                          (NP (NN money)))))))
+                (CC but)
+                (SBAR (IN if)
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ is)
+                      (NP (PRP$ their) (NN will)
+                        (S
+                          (VP (TO to)
+                            (VP (VB be)
+                              (NP (DT a) (NN doctor))
+                              (S (RB then)
+                                (VP (VB be)
+                                  (NP
+                                    (NP (DT the) (NN doctor))
+                                    (PP (IN for)
+                                      (NP
+                                        (NP (DT the) (JJ very) (NN reason))
+                                        (PP (IN of)
+                                          (S
+                                            (VP (VBG helping)
+                                              (NP (DT a) (JJ sick) (NN person)))))))))))))))))))))))
+    (. .)))
+
+det(doctor-2, A-1)
+nsubj(go-9, doctor-2)
+xsubj(make-13, doctor-2)
+nn(person-6, health-4)
+nn(person-6, care-5)
+conj_or(doctor-2, person-6)
+nsubj(go-9, person-6)
+xsubj(make-13, person-6)
+aux(go-9, should-7)
+neg(go-9, not-8)
+root(ROOT-0, go-9)
+prep_to(go-9, school-11)
+aux(make-13, to-12)
+xcomp(go-9, make-13)
+acomp(make-13, sure-14)
+nsubj(makes-16, he-15)
+dep(make-13, makes-16)
+det(lot-18, a-17)
+dobj(makes-16, lot-18)
+prep_of(lot-18, money-20)
+mark(will-26, if-22)
+nsubj(will-26, it-23)
+cop(will-26, is-24)
+poss(will-26, their-25)
+dep(make-13, will-26)
+conj_but(makes-16, will-26)
+aux(doctor-30, to-27)
+cop(doctor-30, be-28)
+det(doctor-30, a-29)
+infmod(will-26, doctor-30)
+advmod(doctor-34, then-31)
+cop(doctor-34, be-32)
+det(doctor-34, the-33)
+dep(doctor-30, doctor-34)
+det(reason-38, the-36)
+amod(reason-38, very-37)
+prep_for(doctor-34, reason-38)
+prepc_of(reason-38, helping-40)
+det(person-43, a-41)
+amod(person-43, sick-42)
+dobj(helping-40, person-43)
+

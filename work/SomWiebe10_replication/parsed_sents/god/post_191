@@ -1,0 +1,36 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (DT that) (NN answer))
+      (ADJP (JJ clear)))
+    (. ?)))
+
+advmod(clear-5, Why-1)
+cop(clear-5, is-2)
+det(answer-4, that-3)
+nsubj(clear-5, answer-4)
+root(ROOT-0, clear-5)
+
+(ROOT
+  (S
+    (VP (VBZ Seems)
+      (S
+        (VP (TO to)
+          (VP (VB raise)
+            (S
+              (NP
+                (NP (JJR more) (NNS questions))
+                (PP (IN than)
+                  (NP (NN answer))))
+              (NP (PRP them)))))))
+    (. .)))
+
+root(ROOT-0, Seems-1)
+aux(raise-3, to-2)
+xcomp(Seems-1, raise-3)
+amod(questions-5, more-4)
+nsubj(them-8, questions-5)
+prep_than(questions-5, answer-7)
+xcomp(raise-3, them-8)
+

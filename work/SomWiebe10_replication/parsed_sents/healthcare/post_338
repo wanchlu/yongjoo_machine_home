@@ -1,0 +1,170 @@
+(ROOT
+  (S (`` ``)
+    (NP
+      (NP (NNP First))
+      (PP (IN of)
+        (NP
+          (NP (DT all))
+          (, ,)
+          (NP (NNS people)))))
+    (VP (VBP are)
+      (VP (VBG calling)
+        (NP (PRP it))
+        (NP (JJ single) (NN payer))))
+    (. .)))
+
+nsubj(calling-8, First-2)
+prep_of(First-2, all-4)
+appos(all-4, people-6)
+aux(calling-8, are-7)
+root(ROOT-0, calling-8)
+iobj(calling-8, it-9)
+amod(payer-11, single-10)
+dobj(calling-8, payer-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's) (RB not))
+    (. .)))
+
+nsubj('s-2, It-1)
+root(ROOT-0, 's-2)
+neg('s-2, not-3)
+
+(ROOT
+  (S
+    (NP (DT A) (JJ single) (NN payer) (NN system))
+    (VP (VBZ is)
+      (NP (CD one))
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (DT the) (NN government))
+          (VP (VBZ pays)
+            (PP (IN for)
+              (NP (NN everything)))
+            (PP (IN through)
+              (NP (NN tax) (NN revenue))))))
+      (, ,)
+      (SBAR (IN like)
+        (S
+          (NP (PRP they))
+          (VP (VBP have)
+            (VP
+              (PP (IN in)
+                (NP (NNP Canada))))))))
+    (. .)))
+
+det(system-4, A-1)
+amod(system-4, single-2)
+nn(system-4, payer-3)
+nsubj(one-6, system-4)
+cop(one-6, is-5)
+root(ROOT-0, one-6)
+advmod(pays-10, where-7)
+det(government-9, the-8)
+nsubj(pays-10, government-9)
+advcl(one-6, pays-10)
+prep_for(pays-10, everything-12)
+nn(revenue-15, tax-14)
+prep_through(pays-10, revenue-15)
+mark(in-20, like-17)
+nsubj(in-20, they-18)
+aux(in-20, have-19)
+advcl(one-6, in-20)
+pobj(in-20, Canada-21)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ public) (NN option))
+        ('' '')
+        (SBAR
+          (WHNP
+            (ADVP (RB So))
+            (WP what))
+          (S
+            (VP (VBZ is)
+              (NP (DT a) (JJ public) (NN option)))))))
+    (. ?)))
+
+nsubj(option-5, This-1)
+cop(option-5, is-2)
+det(option-5, a-3)
+amod(option-5, public-4)
+root(ROOT-0, option-5)
+advmod(what-8, So-7)
+nsubj(option-12, what-8)
+cop(option-12, is-9)
+det(option-12, a-10)
+amod(option-12, public-11)
+rcmod(option-5, option-12)
+
+(ROOT
+  (SQ (MD Will)
+    (NP (NNS individuals))
+    (VP (VB get)
+      (S
+        (VP (TO to)
+          (VP (VB choose)
+            (S
+              (VP
+                (VP (TO to)
+                  (VP (VB pay)))
+                (CC or)
+                (VP (RB not) (TO to)
+                  (VP (VB pay)))))))))
+    (. ?)))
+
+aux(get-3, Will-1)
+nsubj(get-3, individuals-2)
+xsubj(choose-5, individuals-2)
+root(ROOT-0, get-3)
+aux(choose-5, to-4)
+xcomp(get-3, choose-5)
+aux(pay-7, to-6)
+ccomp(choose-5, pay-7)
+neg(pay-11, not-9)
+aux(pay-11, to-10)
+ccomp(choose-5, pay-11)
+conj_or(pay-7, pay-11)
+
+(ROOT
+  (S
+    (NP (NN Everyone))
+    (VP (VBZ keeps)
+      (S
+        (VP (VBG saying)
+          (SBAR
+            (S
+              (S
+                (NP (PRP it))
+                (VP (VBZ 's)
+                  (PP (IN like)
+                    (NP (NN medicare)))))
+              (CC but)
+              (S
+                (NP (PRP I))
+                (VP (VBP hate)
+                  (NP
+                    (NP (DT the) (NN concept))
+                    (PP (IN of)
+                      (NP (NN medicare)))))))))))
+    (: ...)))
+
+nsubj(keeps-2, Everyone-1)
+root(ROOT-0, keeps-2)
+xcomp(keeps-2, saying-3)
+nsubj('s-5, it-4)
+dep(saying-3, 's-5)
+prep_like('s-5, medicare-7)
+nsubj(hate-10, I-9)
+dep(saying-3, hate-10)
+conj_but('s-5, hate-10)
+det(concept-12, the-11)
+dobj(hate-10, concept-12)
+prep_of(concept-12, medicare-14)
+

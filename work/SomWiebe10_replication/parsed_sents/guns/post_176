@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Images))
+      (WHPP (IN about)
+        (WHNP (WDT what) (NN continent))))
+    (VP (VBP prevail)
+      (PP (IN in)
+        (S
+          (S
+            (NP (NN gun) (NN ownership))
+            (VP (VBP are)
+              (ADJP (JJ erroneous))))
+          (CC and)
+          (S
+            (NP (DT an) (JJ general) (JJ international) (NN picture))
+            (VP (VBZ is)
+              (ADJP (JJ hard)
+                (S
+                  (VP (TO to)
+                    (VP (VB use)
+                      (NP (NN evidence)))))))))))))
+
+nsubj(prevail-5, Images-1)
+det(continent-4, what-3)
+prep_about(Images-1, continent-4)
+root(ROOT-0, prevail-5)
+nn(ownership-8, gun-7)
+nsubj(erroneous-10, ownership-8)
+cop(erroneous-10, are-9)
+prepc_in(prevail-5, erroneous-10)
+det(picture-15, an-12)
+amod(picture-15, general-13)
+amod(picture-15, international-14)
+nsubj(hard-17, picture-15)
+cop(hard-17, is-16)
+prepc_in(prevail-5, hard-17)
+conj_and(erroneous-10, hard-17)
+aux(use-19, to-18)
+xcomp(hard-17, use-19)
+dobj(use-19, evidence-20)
+

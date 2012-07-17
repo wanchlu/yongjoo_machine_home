@@ -1,0 +1,82 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP have)
+        (VP (VBN been)
+          (VP (VBN told)
+            (SBAR (IN that)
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT a) (NN bull) (NN elephant))
+                    (PP (IN in)
+                      (NP (DT this) (NN phone) (NN booth)))))))))))
+    (, ,)
+    (CC and)
+    (S
+      (SBAR (IN though)
+        (S
+          (NP (PRP I))
+          (VP (VBP have)
+            (VP (VBD searched)
+              (ADVP (JJ high)
+                (CC and)
+                (JJ low))))))
+      (, ,)
+      (NP (PRP I))
+      (VP (VBP have) (RB n't)
+        (VP (VBN found)
+          (S
+            (NP (PRP him))
+            (ADVP (RB yet))))))
+    (. .)))
+
+nsubjpass(told-4, I-1)
+aux(told-4, have-2)
+auxpass(told-4, been-3)
+root(ROOT-0, told-4)
+complm(is-7, that-5)
+expl(is-7, there-6)
+ccomp(told-4, is-7)
+det(elephant-10, a-8)
+nn(elephant-10, bull-9)
+nsubj(is-7, elephant-10)
+det(booth-14, this-12)
+nn(booth-14, phone-13)
+prep_in(elephant-10, booth-14)
+mark(searched-20, though-17)
+nsubj(searched-20, I-18)
+aux(searched-20, have-19)
+advcl(found-28, searched-20)
+advmod(searched-20, high-21)
+advmod(searched-20, low-23)
+conj_and(high-21, low-23)
+nsubj(found-28, I-25)
+aux(found-28, have-26)
+neg(found-28, n't-27)
+conj_and(told-4, found-28)
+dep(found-28, him-29)
+advmod(him-29, yet-30)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ does) (RB n't)
+      (VP (VB mean)
+        (S
+          (NP (PRP I))
+          (VP (MD wo) (RB n't)))
+        (ADVP (RB though))))
+    (: ...)))
+
+nsubj(mean-4, That-1)
+aux(mean-4, does-2)
+neg(mean-4, n't-3)
+root(ROOT-0, mean-4)
+nsubj(wo-6, I-5)
+ccomp(mean-4, wo-6)
+neg(wo-6, n't-7)
+advmod(mean-4, though-8)
+

@@ -1,0 +1,50 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (SBAR (IN if)
+      (S
+        (NP
+          (NP (PRP He))
+          (PRN (-LRB- -LRB-)
+            (NP
+              (NP (DT the) (NNP First) (NNP Cause) (, ,))
+              (SBAR (IN as)
+                (S
+                  (NP (PRP you))
+                  (VP (VBD put)
+                    (NP (PRP it))))))
+            (-RRB- -RRB-)))
+        (VP (VBD anthropomorphized)
+          (NP (PRP himself))
+          (PP (IN for)
+            (NP (PRP us))))))
+    (. ?)))
+
+dep(anthropomorphized-14, What-1)
+mark(anthropomorphized-14, if-2)
+nsubj(anthropomorphized-14, He-3)
+det(Cause-7, the-5)
+nn(Cause-7, First-6)
+dep(He-3, Cause-7)
+mark(put-11, as-9)
+nsubj(put-11, you-10)
+dep(Cause-7, put-11)
+dobj(put-11, it-12)
+root(ROOT-0, anthropomorphized-14)
+dobj(anthropomorphized-14, himself-15)
+prep_for(anthropomorphized-14, us-17)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP we))
+    (VP (MD could)
+      (VP (VB understand)
+        (NP (PRP him))))
+    (. ?)))
+
+dep(understand-4, So-1)
+nsubj(understand-4, we-2)
+aux(understand-4, could-3)
+root(ROOT-0, understand-4)
+dobj(understand-4, him-5)
+

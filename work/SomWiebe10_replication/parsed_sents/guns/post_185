@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (ADJP (JJ sorry))))
+    (CC but)
+    (S
+      (NP
+        (NP (DT the)
+          (QP (CD 30) (CD million))
+          (NN plus) (NNS victims))
+        (PP (IN of)
+          (NP
+            (NP (NNP Mao) (NNP Zedong) (POS 's))
+            (NN regime))))
+      (VP (VBP disagree)
+        (PP (IN with)
+          (NP (PRP you)))))
+    (. .)))
+
+nsubj(sorry-3, I-1)
+cop(sorry-3, am-2)
+root(ROOT-0, sorry-3)
+det(victims-9, the-5)
+number(million-7, 30-6)
+num(victims-9, million-7)
+nn(victims-9, plus-8)
+nsubj(disagree-15, victims-9)
+nn(Zedong-12, Mao-11)
+poss(regime-14, Zedong-12)
+prep_of(victims-9, regime-14)
+conj_but(sorry-3, disagree-15)
+prep_with(disagree-15, you-17)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP am)
+        (ADJP (JJ sure)
+          (SBAR (IN if)
+            (S
+              (NP (PRP it))
+              (VP (VBD was)
+                (ADJP (JJ possible)
+                  (S
+                    (VP (TO to)
+                      (VP (VB ask)
+                        (NP (PRP them))))))))))))
+    (NP (PRP they))
+    (VP (MD would)
+      (VP (VB wish)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBD had)
+              (VP (VBN been)
+                (VP (VBN armed))))))))
+    (. .)))
+
+nsubj(sure-3, I-1)
+cop(sure-3, am-2)
+dep(wish-13, sure-3)
+mark(possible-7, if-4)
+nsubj(possible-7, it-5)
+cop(possible-7, was-6)
+ccomp(sure-3, possible-7)
+aux(ask-9, to-8)
+xcomp(possible-7, ask-9)
+dobj(ask-9, them-10)
+nsubj(wish-13, they-11)
+aux(wish-13, would-12)
+root(ROOT-0, wish-13)
+complm(armed-18, that-14)
+nsubjpass(armed-18, they-15)
+aux(armed-18, had-16)
+auxpass(armed-18, been-17)
+ccomp(wish-13, armed-18)
+

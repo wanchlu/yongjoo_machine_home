@@ -1,0 +1,67 @@
+(ROOT
+  (FRAG
+    (ADJP (RB Too) (RB darn) (JJ expensive))
+    (S
+      (VP (TO to)
+        (VP (VB be)
+          (ADJP (JJ free)
+            (PP (IN at)
+              (NP
+                (NP (NN point))
+                (PP (IN of)
+                  (NP (NN delivery)))))))))
+    (. .)))
+
+advmod(expensive-3, Too-1)
+advmod(expensive-3, darn-2)
+root(ROOT-0, expensive-3)
+aux(free-6, to-4)
+cop(free-6, be-5)
+dep(expensive-3, free-6)
+prep_at(free-6, point-8)
+prep_of(point-8, delivery-10)
+
+(ROOT
+  (S
+    (S
+      (NP (WP What))
+      (VP (VBP are)
+        (NP (`` ``)
+          (NP (NN world) (NN class) (NNPS Standards))
+          ('' '')
+          (SBAR
+            (S
+              (VP (MD would)
+                (VP (VB fall))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP
+        (NP (NNS people))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBD had)
+              (NP (NN money))))))
+      (VP (MD would)
+        (VP (VB have)
+          (NP (DT the) (JJS best) (NN treatment)))))
+    (. .)))
+
+nsubj(Standards-6, What-1)
+cop(Standards-6, are-2)
+nn(Standards-6, world-4)
+nn(Standards-6, class-5)
+root(ROOT-0, Standards-6)
+aux(fall-9, would-8)
+rcmod(Standards-6, fall-9)
+nsubj(had-14, people-12)
+nsubj(have-17, people-12)
+rcmod(people-12, had-14)
+dobj(had-14, money-15)
+aux(have-17, would-16)
+conj_and(Standards-6, have-17)
+det(treatment-20, the-18)
+amod(treatment-20, best-19)
+dobj(have-17, treatment-20)
+

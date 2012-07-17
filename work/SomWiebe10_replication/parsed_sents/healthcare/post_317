@@ -1,0 +1,168 @@
+(ROOT
+  (FRAG
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (PRP$ our) (JJ primary) (NN business) (NNS competitors))
+          (PRN (-LRB- -LRB-)
+            (NP (NNP excepting) (NNP China))
+            (-RRB- -RRB-)))
+        (VP (VBP have)
+          (NP
+            (NP (NN health) (NN coverage))
+            (PP (IN for)
+              (NP
+                (NP (DT all))
+                (, ,)
+                (SBAR
+                  (WHADVP (WRB why))
+                  (S
+                    (VP (VBP do) (RB n't))
+                    (NP (PRP we))))))))))
+    (. ?)))
+
+mark(have-10, If-1)
+poss(competitors-5, our-2)
+amod(competitors-5, primary-3)
+nn(competitors-5, business-4)
+nsubj(have-10, competitors-5)
+nn(China-8, excepting-7)
+appos(competitors-5, China-8)
+root(ROOT-0, have-10)
+nn(coverage-12, health-11)
+dobj(have-10, coverage-12)
+prep_for(coverage-12, all-14)
+advmod(do-17, why-16)
+rcmod(all-14, do-17)
+neg(do-17, n't-18)
+dep(do-17, we-19)
+
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (, ,)
+    (NP (DT the) (NN answer))
+    (VP (VBZ is)
+      (NP
+        (NP (JJ GREEDY) (NN insurance) (NNS companies))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBP buy)
+              (S
+                (NP (PRP$ your))
+                (NP (NNP Rep)
+                  (CC &)
+                  (NNP Senator))))))))
+    (. .)))
+
+dep(companies-8, Oh-1)
+det(answer-4, the-3)
+nsubj(companies-8, answer-4)
+cop(companies-8, is-5)
+amod(companies-8, GREEDY-6)
+nn(companies-8, insurance-7)
+root(ROOT-0, companies-8)
+nsubj(buy-10, companies-8)
+rcmod(companies-8, buy-10)
+nsubj(Rep-12, your-11)
+xcomp(buy-10, Rep-12)
+xcomp(buy-10, Senator-14)
+conj_and(Rep-12, Senator-14)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT the) (NNP Clinton) (NN proposal))
+        (VP (VBD was)
+          (VP (VBN made)))))
+    (NP (PRP they))
+    (VP (VBD paid)
+      (NP ($ $) (CD 125,000,000))
+      (S
+        (VP (TO to)
+          (VP (VB defeat)
+            (NP (DT the) (NN measure))))))
+    (. .)))
+
+advmod(made-6, When-1)
+det(proposal-4, the-2)
+nn(proposal-4, Clinton-3)
+nsubjpass(made-6, proposal-4)
+auxpass(made-6, was-5)
+advcl(paid-8, made-6)
+nsubj(paid-8, they-7)
+root(ROOT-0, paid-8)
+dobj(paid-8, $-9)
+num($-9, 125,000,000-10)
+aux(defeat-12, to-11)
+xcomp(paid-8, defeat-12)
+det(measure-14, the-13)
+dobj(defeat-12, measure-14)
+
+(ROOT
+  (S
+    (NP (JJ Next) (NN time))
+    (NP (PRP it))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (DT a) (NNP BILLION) (NNPS DOLLARS))
+        (SBAR (IN if)
+          (S
+            (NP (PRP they))
+            (VP (VBP feel)
+              (S
+                (NP (DT the) (NN need))
+                (VP (TO to)
+                  (VP (VB spend)
+                    (S
+                      (NP (DT that))
+                      (ADJP (JJ much)))))))))))
+    (. .)))
+
+amod(time-2, Next-1)
+nsubj(DOLLARS-8, time-2)
+nsubj(DOLLARS-8, it-3)
+aux(DOLLARS-8, will-4)
+cop(DOLLARS-8, be-5)
+det(DOLLARS-8, a-6)
+nn(DOLLARS-8, BILLION-7)
+root(ROOT-0, DOLLARS-8)
+mark(feel-11, if-9)
+nsubj(feel-11, they-10)
+advcl(DOLLARS-8, feel-11)
+det(need-13, the-12)
+nsubj(spend-15, need-13)
+aux(spend-15, to-14)
+xcomp(feel-11, spend-15)
+nsubj(much-17, that-16)
+xcomp(spend-15, much-17)
+
+(ROOT
+  (S
+    (VP (VB FIRE)
+      (NP
+        (NP (DT THE) (NNP INSURANCE) (NNP COMPANIES)
+          (CC AND)
+          (NNP VOTE) (NNP OUT) (NNP ANYONE) (NNP THAT) (NNP STANDS))
+        (PP (IN IN)
+          (NP (DT THE) (NNP WAYjust) (JJ my) (NN opinion)))))
+    (: ...)))
+
+root(ROOT-0, FIRE-1)
+det(COMPANIES-4, THE-2)
+nn(COMPANIES-4, INSURANCE-3)
+dobj(FIRE-1, COMPANIES-4)
+nn(STANDS-10, VOTE-6)
+nn(STANDS-10, OUT-7)
+nn(STANDS-10, ANYONE-8)
+nn(STANDS-10, THAT-9)
+dobj(FIRE-1, STANDS-10)
+conj_and(COMPANIES-4, STANDS-10)
+det(opinion-15, THE-12)
+nn(opinion-15, WAYjust-13)
+amod(opinion-15, my-14)
+prep_in(COMPANIES-4, opinion-15)
+

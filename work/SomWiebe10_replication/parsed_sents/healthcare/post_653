@@ -1,0 +1,140 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (JJ such) (NN thing))
+        (PP (IN as)
+          (NP (`` ``) (JJ free) ('' '') (NN healthcare)))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(thing-5, no-3)
+amod(thing-5, such-4)
+nsubj(is-2, thing-5)
+amod(healthcare-10, free-8)
+prep_as(thing-5, healthcare-10)
+
+(ROOT
+  (S
+    (NP (NN Someone))
+    (VP (MD will)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB pay)
+              (PP (IN for)
+                (NP (PRP it))))))))
+    (. .)))
+
+nsubj(have-3, Someone-1)
+xsubj(pay-5, Someone-1)
+aux(have-3, will-2)
+root(ROOT-0, have-3)
+aux(pay-5, to-4)
+xcomp(have-3, pay-5)
+prep_for(pay-5, it-7)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP mean))))
+    (, ,)
+    (NP (NN somebody) (RB else))
+    (VP (MD should)
+      (VP (VB pay)
+        (PP (IN for)
+          (NP (PRP$ my) (NN healthcare)))
+        (SBAR
+          (SBAR (IN because)
+            (S
+              (NP (PRP I))
+              (VP
+                (VP (MD ca) (RB n't))
+                (CC or)
+                (VP (VBP do) (RB n't)
+                  (VP (VB want)
+                    (PP (TO to)))))))
+          (, ,)
+          (ADVP (RB then))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ 's)
+                (NP (DT a) (JJ different) (NN debate))))))))
+    (. .)))
+
+mark(mean-3, If-1)
+nsubj(mean-3, you-2)
+advcl(pay-8, mean-3)
+nsubj(pay-8, somebody-5)
+advmod(somebody-5, else-6)
+aux(pay-8, should-7)
+root(ROOT-0, pay-8)
+poss(healthcare-11, my-10)
+prep_for(pay-8, healthcare-11)
+mark(ca-14, because-12)
+nsubj(ca-14, I-13)
+nsubj(want-19, I-13)
+dep(pay-8, ca-14)
+neg(ca-14, n't-15)
+aux(want-19, do-17)
+neg(want-19, n't-18)
+dep(pay-8, want-19)
+conj_or(ca-14, want-19)
+prep(want-19, to-20)
+advmod(ca-14, then-22)
+nsubj(debate-27, that-23)
+cop(debate-27, 's-24)
+det(debate-27, a-25)
+amod(debate-27, different-26)
+dep(ca-14, debate-27)
+
+(ROOT
+  (S
+    (ADVP (RB Certainly))
+    (, ,)
+    (S
+      (NP (NN healthcare))
+      (VP (VBZ is) (RB n't)
+        (NP (DT an) (JJ equal) (NN right))
+        (SBAR (IN if)
+          (S
+            (NP (DT some))
+            (VP (VBP are)
+              (VP (VBG paying)
+                (PP (IN for)
+                  (NP (PRP themselves)
+                    (CC and)
+                    (NNS others)))))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (NNS others))
+      (VP (VBP are)
+        (VP (VBG contributing)
+          (NP (NN nothing)))))
+    (. .)))
+
+advmod(right-8, Certainly-1)
+nsubj(right-8, healthcare-3)
+cop(right-8, is-4)
+neg(right-8, n't-5)
+det(right-8, an-6)
+amod(right-8, equal-7)
+root(ROOT-0, right-8)
+mark(paying-12, if-9)
+nsubj(paying-12, some-10)
+aux(paying-12, are-11)
+advcl(right-8, paying-12)
+prep_for(paying-12, themselves-14)
+prep_for(paying-12, others-16)
+conj_and(themselves-14, others-16)
+nsubj(contributing-21, others-19)
+aux(contributing-21, are-20)
+conj_and(right-8, contributing-21)
+dobj(contributing-21, nothing-22)
+

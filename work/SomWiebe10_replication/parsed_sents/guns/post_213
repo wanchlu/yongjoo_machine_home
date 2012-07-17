@@ -1,0 +1,106 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP First))
+        (PP (IN of)
+          (NP (DT all)))))
+    (, ,)
+    (S
+      (NP (PRP I))
+      (VP (MD ca) (RB n't)
+        (VP (VB think)
+          (PP (IN of)
+            (NP
+              (NP (JJ many) (NNS troops))
+              (SBAR
+                (WHNP (WP who))
+                (S
+                  (VP (VBD enlisted)
+                    (S
+                      (VP (TO to)
+                        (VP (VB defend)
+                          (NP (DT this) (NN country)))))))))))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (NP
+          (NP (NNS people))
+          (VP
+            (ADVP (RB suddenly))
+            (VBG turning)
+            (PRT (RP around))))))
+    (CC and)
+    (S
+      (NP (NN start) (NN killing))
+      (VP (VBD said)
+        (NP (NNS people))))
+    (. .)))
+
+root(ROOT-0, First-1)
+prep_of(First-1, all-3)
+nsubj(think-8, I-5)
+aux(think-8, ca-6)
+neg(think-8, n't-7)
+conj_and(First-1, think-8)
+amod(troops-11, many-10)
+prep_of(think-8, troops-11)
+nsubj(enlisted-13, troops-11)
+rcmod(troops-11, enlisted-13)
+aux(defend-15, to-14)
+xcomp(enlisted-13, defend-15)
+det(country-17, this-16)
+dobj(defend-15, country-17)
+nsubj(people-21, it-19)
+cop(people-21, 's-20)
+conj_and(First-1, people-21)
+advmod(turning-23, suddenly-22)
+partmod(people-21, turning-23)
+prt(turning-23, around-24)
+nn(killing-27, start-26)
+nsubj(said-28, killing-27)
+conj_and(First-1, said-28)
+dobj(said-28, people-29)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (ADJP
+        (ADJP (JJ sure)
+          (SBAR
+            (S
+              (NP (DT a) (JJ few))
+              (VP (MD would)
+                (VP (VB stay)
+                  (PRT (RP behind)))))))
+        (, ,)
+        (CC but)
+        (ADJP
+          (ADVP (RB surely) (RB not))
+          (JJ enough)
+          (S
+            (VP (TO to)
+              (VP (VB fight)
+                (NP (DT the) (NNP US) (NN populace))))))))
+    (. .)))
+
+nsubj(sure-3, I-1)
+nsubj(enough-13, I-1)
+cop(sure-3, 'm-2)
+root(ROOT-0, sure-3)
+det(few-5, a-4)
+nsubj(stay-7, few-5)
+aux(stay-7, would-6)
+dep(sure-3, stay-7)
+prt(stay-7, behind-8)
+advmod(not-12, surely-11)
+neg(enough-13, not-12)
+conj_but(sure-3, enough-13)
+aux(fight-15, to-14)
+xcomp(enough-13, fight-15)
+det(populace-18, the-16)
+nn(populace-18, US-17)
+dobj(fight-15, populace-18)
+

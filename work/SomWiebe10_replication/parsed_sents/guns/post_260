@@ -1,0 +1,136 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Really))
+    (. ?)))
+
+root(ROOT-0, Really-1)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ does))
+    (. ?)))
+
+nsubj(does-2, It-1)
+root(ROOT-0, does-2)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP make)
+      (NP (NN stuff))
+      (PRT (RP up)))
+    (. .)))
+
+nsubj(make-2, You-1)
+root(ROOT-0, make-2)
+dobj(make-2, stuff-3)
+prt(make-2, up-4)
+
+(ROOT
+  (S
+    (NP (NNP Gun) (NNS owners))
+    (VP (VBP are)
+      (NP (DT the) (NN type)
+        (S
+          (VP (TO to)
+            (VP (VB IDENTIFY)
+              (NP (DT A) (NN TARGET))
+              (PP (IN before)
+                (S
+                  (VP (VBG pulling)
+                    (NP (DT the) (NN trigger))))))))))
+    (. .)))
+
+nn(owners-2, Gun-1)
+nsubj(type-5, owners-2)
+cop(type-5, are-3)
+det(type-5, the-4)
+root(ROOT-0, type-5)
+aux(IDENTIFY-7, to-6)
+infmod(type-5, IDENTIFY-7)
+det(TARGET-9, A-8)
+dobj(IDENTIFY-7, TARGET-9)
+prepc_before(IDENTIFY-7, pulling-11)
+det(trigger-13, the-12)
+dobj(pulling-11, trigger-13)
+
+(ROOT
+  (S
+    (NP (NNP ESPECIALLY))
+    (VP (VBZ PARENTS))
+    (. .)))
+
+nsubj(PARENTS-2, ESPECIALLY-1)
+root(ROOT-0, PARENTS-2)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Parents)
+        (CC and)
+        (NN gun))
+      (VP (VBG owning)
+        (NP (NNS parents))))
+    (VP (VBP think)
+      (PP (IN through)
+        (NP
+          (NP (NNS scenarios))
+          (PP (IN like)
+            (NP (DT this)))))
+      (NP (PDT all) (DT the) (NN time))
+      (, ,)
+      (S
+        (NP (DT every) (NN day))))
+    (. .)))
+
+nsubj(think-6, Parents-1)
+conj_and(Parents-1, gun-3)
+nsubj(think-6, gun-3)
+partmod(Parents-1, owning-4)
+dobj(owning-4, parents-5)
+root(ROOT-0, think-6)
+prep_through(think-6, scenarios-8)
+prep_like(scenarios-8, this-10)
+predet(time-13, all-11)
+det(time-13, the-12)
+dobj(think-6, time-13)
+det(day-16, every-15)
+dep(think-6, day-16)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADVP (RB just))
+      (ADJP (RB plain) (JJ ignorant))
+      (S
+        (VP (TO to)
+          (VP (VB assume)
+            (SBAR
+              (S
+                (NP (NN nobody) (RB else))
+                (VP (VBZ does)
+                  (SBAR (RB just) (IN because)
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP do) (RB n't)))))))))))
+    (. .)))
+
+nsubj(ignorant-5, It-1)
+xsubj(assume-7, It-1)
+cop(ignorant-5, is-2)
+advmod(ignorant-5, just-3)
+advmod(ignorant-5, plain-4)
+root(ROOT-0, ignorant-5)
+aux(assume-7, to-6)
+xcomp(ignorant-5, assume-7)
+nsubj(does-10, nobody-8)
+advmod(nobody-8, else-9)
+ccomp(assume-7, does-10)
+advmod(do-14, just-11)
+dep(do-14, because-12)
+nsubj(do-14, you-13)
+ccomp(does-10, do-14)
+neg(do-14, n't-15)
+

@@ -1,0 +1,149 @@
+(ROOT
+  (S
+    (NP (JJ Honest) (NNS people))
+    (VP (MD will)
+      (VP (VB need)
+        (NP (DT the) (NN right))
+        (PP (TO to)
+          (NP (JJ own) (NNS guns)))
+        (ADVP
+          (ADVP (RB as) (RB long))
+          (SBAR (IN as)
+            (S
+              (NP (NNS criminals))
+              (VP (VBP have)
+                (NP (PRP them))))))))
+    (. .)))
+
+amod(people-2, Honest-1)
+nsubj(need-4, people-2)
+aux(need-4, will-3)
+root(ROOT-0, need-4)
+det(right-6, the-5)
+dobj(need-4, right-6)
+amod(guns-9, own-8)
+prep_to(need-4, guns-9)
+advmod(long-11, as-10)
+advmod(need-4, long-11)
+mark(have-14, as-12)
+nsubj(have-14, criminals-13)
+ccomp(long-11, have-14)
+dobj(have-14, them-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A)
+        (ADJP (RB truely) (JJ free))
+        (NN society))
+      (PP (IN with)
+        (NP (NN privacy) (NNS rights))))
+    (VP (MD will)
+      (VP (VB find)
+        (S
+          (NP (PRP it))
+          (ADJP (RB very) (JJ difficult))
+          (S
+            (VP (TO to)
+              (VP (VB take)
+                (NP (PRP them))
+                (PRT (RP away))
+                (PP (IN from)
+                  (NP (NNS criminals)))))))))
+    (. .)))
+
+det(society-4, A-1)
+advmod(free-3, truely-2)
+amod(society-4, free-3)
+nsubj(find-9, society-4)
+nn(rights-7, privacy-6)
+prep_with(society-4, rights-7)
+aux(find-9, will-8)
+root(ROOT-0, find-9)
+nsubj(take-14, it-10)
+advmod(difficult-12, very-11)
+dep(take-14, difficult-12)
+aux(take-14, to-13)
+xcomp(find-9, take-14)
+dobj(take-14, them-15)
+prep_away_from(take-14, criminals-18)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP
+          (NP (DT the) (NN police))
+          (PP (IN in)
+            (NP (NNP Dallas) (NNP Texas))))
+        (VP (VBP take)
+          (NP (CD 20) (NNS minutes))
+          (S
+            (VP (TO to)
+              (VP (VB respond)
+                (PP (TO to)
+                  (NP (DT a) (NN home) (NN invasion)))))))))
+    (, ,)
+    (NP (DT the) (NN homeowner))
+    (VP (VBZ needs)
+      (S
+        (VP (TO to)
+          (VP (VB be)
+            (ADJP (JJ armed))))))
+    (. .)))
+
+advmod(take-7, When-1)
+det(police-3, the-2)
+nsubj(take-7, police-3)
+nn(Texas-6, Dallas-5)
+prep_in(police-3, Texas-6)
+advcl(needs-19, take-7)
+num(minutes-9, 20-8)
+dobj(take-7, minutes-9)
+aux(respond-11, to-10)
+xcomp(take-7, respond-11)
+det(invasion-15, a-13)
+nn(invasion-15, home-14)
+prep_to(respond-11, invasion-15)
+det(homeowner-18, the-17)
+nsubj(needs-19, homeowner-18)
+xsubj(armed-22, homeowner-18)
+root(ROOT-0, needs-19)
+aux(armed-22, to-20)
+cop(armed-22, be-21)
+xcomp(needs-19, armed-22)
+
+(ROOT
+  (FRAG
+    (NP (NNP BTW))
+    (: :)
+    (S
+      (NP (DT the) (NNS criminals))
+      (VP (VBP have)
+        (S
+          (VP (TO to)
+            (VP (VB guess)
+              (SBAR
+                (WHNP (WDT which))
+                (S
+                  (NP
+                    (NP (CD 1))
+                    (PP (IN of)
+                      (NP (CD 10))))
+                  (VP (VBZ is) (RB n't)))))))))
+    (. .)))
+
+root(ROOT-0, BTW-1)
+det(criminals-4, the-3)
+nsubj(have-5, criminals-4)
+xsubj(guess-7, criminals-4)
+dep(BTW-1, have-5)
+aux(guess-7, to-6)
+xcomp(have-5, guess-7)
+dobj(is-12, which-8)
+nsubj(is-12, 1-9)
+prep_of(1-9, 10-11)
+ccomp(guess-7, is-12)
+neg(is-12, n't-13)
+

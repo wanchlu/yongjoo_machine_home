@@ -1,0 +1,38 @@
+(ROOT
+  (S
+    (INTJ (UH Oh))
+    (VP (VB hey) (, ,)
+      (S
+        (NP (PRP I))
+        (VP (VBD missed)
+          (NP (DT this)))))
+    (. .)))
+
+dep(hey-2, Oh-1)
+root(ROOT-0, hey-2)
+nsubj(missed-5, I-4)
+ccomp(hey-2, missed-5)
+dobj(missed-5, this-6)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (MD might)
+      (VP (VB be)
+        (VP (VBG forgetting)
+          (SBAR (IN that)
+            (S
+              (NP (NN guidance))
+              (VP (VBZ is)
+                (NP (NN help))))))))
+    (. .)))
+
+nsubj(forgetting-4, You-1)
+aux(forgetting-4, might-2)
+aux(forgetting-4, be-3)
+root(ROOT-0, forgetting-4)
+complm(help-8, that-5)
+nsubj(help-8, guidance-6)
+cop(help-8, is-7)
+ccomp(forgetting-4, help-8)
+

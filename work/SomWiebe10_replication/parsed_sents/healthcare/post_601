@@ -1,0 +1,38 @@
+(ROOT
+  (SINV
+    (PP (IN Because)
+      (NP (NN everyone)))
+    (VP (VBZ deserves))
+    (NP (DT the) (NN right)
+      (S
+        (VP (TO to)
+          (VP (VB receive)
+            (NP (JJ good) (JJ medical) (NN attention))
+            (PP (IN without)
+              (S
+                (VP (VBG having)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (PP (IN in)
+                          (NP
+                            (NP (NN debt))
+                            (PP (IN for)
+                              (NP (NN life)))))))))))))))
+    (. .)))
+
+prep_because(deserves-3, everyone-2)
+root(ROOT-0, deserves-3)
+det(right-5, the-4)
+nsubj(deserves-3, right-5)
+aux(receive-7, to-6)
+infmod(right-5, receive-7)
+amod(attention-10, good-8)
+amod(attention-10, medical-9)
+dobj(receive-7, attention-10)
+prepc_without(receive-7, having-12)
+aux(be-14, to-13)
+xcomp(having-12, be-14)
+prep_in(be-14, debt-16)
+prep_for(debt-16, life-18)
+

@@ -1,0 +1,195 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP have)
+      (NP (DT no) (NN solution)))
+    (. ?)))
+
+nsubj(have-2, You-1)
+root(ROOT-0, have-2)
+det(solution-4, no-3)
+dobj(have-2, solution-4)
+
+(ROOT
+  (FRAG (WRB Why) (. ?)))
+
+root(ROOT-0, Why-1)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (NP (DT the) (NN expert)))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD should)
+      (VP (VB have)
+        (NP (DT a) (NN solution))))
+    (. ?)))
+
+mark(expert-5, If-1)
+nsubj(expert-5, you-2)
+cop(expert-5, are-3)
+det(expert-5, the-4)
+advcl(have-9, expert-5)
+nsubj(have-9, you-7)
+aux(have-9, should-8)
+root(ROOT-0, have-9)
+det(solution-11, a-10)
+dobj(have-9, solution-11)
+
+(ROOT
+  (S
+    (ADVP (RB Further))
+    (, ,)
+    (SBAR
+      (WHADVP (WRB why))
+      (S
+        (VP (VBP do)
+          (NP
+            (NP (DT those))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBP want)
+                  (NP (JJ universal) (NN insurance))))))
+          (, ,)
+          (SBAR (IN because)
+            (S
+              (S
+                (VP (VBG calling)
+                  (S
+                    (NP (PRP it))
+                    (VP (VB care)))))
+              (VP (VBZ is)
+                (ADJP (RB intellectually) (JJ dishonest))))))))
+    (, ,)
+    (VP (VBP analyze)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are) (RB not)
+              (VP (VBN insured)))))))
+    (. .)))
+
+advmod(analyze-19, Further-1)
+advmod(do-4, why-3)
+advcl(analyze-19, do-4)
+dobj(do-4, those-5)
+nsubj(want-7, those-5)
+rcmod(those-5, want-7)
+amod(insurance-9, universal-8)
+dobj(want-7, insurance-9)
+mark(dishonest-17, because-11)
+csubj(dishonest-17, calling-12)
+nsubj(care-14, it-13)
+ccomp(calling-12, care-14)
+cop(dishonest-17, is-15)
+advmod(dishonest-17, intellectually-16)
+advcl(do-4, dishonest-17)
+root(ROOT-0, analyze-19)
+dobj(analyze-19, those-20)
+nsubjpass(insured-24, those-20)
+auxpass(insured-24, are-22)
+neg(insured-24, not-23)
+rcmod(those-20, insured-24)
+
+(ROOT
+  (SQ (MD Could)
+    (NP
+      (NP (DT some))
+      (PP (IN of)
+        (NP (PRP them))))
+    (VP
+      (ADVP (RB simply) (RB not))
+      (VB want)
+      (S
+        (VP (TO to)
+          (VP (VB spend))))
+      (, ,)
+      (PP (IN in)
+        (NP
+          (NP (PRP$ their) (NN view))
+          (, ,)
+          (NP
+            (NP (NN money))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD would)
+                  (VP (VB be)
+                    (VP (VBN wasted))))))))))
+    (. ?)))
+
+aux(want-7, Could-1)
+nsubj(want-7, some-2)
+xsubj(spend-9, some-2)
+prep_of(some-2, them-4)
+advmod(not-6, simply-5)
+neg(want-7, not-6)
+root(ROOT-0, want-7)
+aux(spend-9, to-8)
+xcomp(want-7, spend-9)
+poss(view-13, their-12)
+prep_in(want-7, view-13)
+appos(view-13, money-15)
+nsubjpass(wasted-19, money-15)
+aux(wasted-19, would-17)
+auxpass(wasted-19, be-18)
+rcmod(money-15, wasted-19)
+
+(ROOT
+  (SBARQ
+    (WHNP
+      (WHADJP (WRB How) (JJ many))
+      (PP (IN of)
+        (NP (PRP$ your) (JJ guesstimated) (CD 47) (NN mil))))
+    (SQ
+      (VP (MD would)
+        (VP (VB fall)
+          (PP (IN in)
+            (PP (TO to)
+              (NP (DT that) (NN category)))))))
+    (. ?)))
+
+advmod(many-2, How-1)
+nsubj(fall-9, many-2)
+poss(mil-7, your-4)
+amod(mil-7, guesstimated-5)
+num(mil-7, 47-6)
+prep_of(many-2, mil-7)
+aux(fall-9, would-8)
+root(ROOT-0, fall-9)
+prep(fall-9, in-10)
+pcomp(in-10, to-11)
+det(category-13, that-12)
+prep_to(in-10, category-13)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB never))
+    (VP (VBP seem)
+      (S
+        (VP (TO to)
+          (VP (VB get)
+            (NP (DT an) (NN answer))
+            (PP (TO to)
+              (NP (DT these) (NNS questions)))))))
+    (. .)))
+
+nsubj(seem-3, I-1)
+xsubj(get-5, I-1)
+neg(seem-3, never-2)
+root(ROOT-0, seem-3)
+aux(get-5, to-4)
+xcomp(seem-3, get-5)
+det(answer-7, an-6)
+dobj(get-5, answer-7)
+det(questions-10, these-9)
+prep_to(get-5, questions-10)
+

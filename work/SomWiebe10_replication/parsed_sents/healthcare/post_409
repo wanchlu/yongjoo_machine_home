@@ -1,0 +1,40 @@
+(ROOT
+  (S (: ...)
+    (NP (PRP you))
+    (VP (VBP end)
+      (PRT (RP up))
+      (PP (IN with)
+        (NP (DT a) (JJ simple) (NN equation))))
+    (. .)))
+
+nsubj(end-3, you-2)
+root(ROOT-0, end-3)
+prt(end-3, up-4)
+det(equation-8, a-6)
+amod(equation-8, simple-7)
+prep_with(end-3, equation-8)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJ national-healthcare) (NNS systems))
+      (VP (VBP spend)
+        (ADJP (JJR less))))
+    (: ...)
+    (CC and)
+    (S
+      (NP (DT the) (NNS results))
+      (VP (VBP are)
+        (ADJP (JJR better))))
+    (. .)))
+
+det(systems-3, The-1)
+amod(systems-3, national-healthcare-2)
+nsubj(spend-4, systems-3)
+root(ROOT-0, spend-4)
+acomp(spend-4, less-5)
+det(results-9, the-8)
+nsubj(better-11, results-9)
+cop(better-11, are-10)
+conj_and(spend-4, better-11)
+

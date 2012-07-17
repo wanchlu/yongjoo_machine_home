@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (PP (IN over)
+        (NP
+          (NP (CD 20,000) (NN gun) (NN control) (NNS laws))
+          (PP (IN on)
+            (NP (DT the) (NNS books))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+num(laws-7, 20,000-4)
+nn(laws-7, gun-5)
+nn(laws-7, control-6)
+prep_over(are-2, laws-7)
+det(books-10, the-9)
+prep_on(laws-7, books-10)
+
+(ROOT
+  (SINV
+    (VP (VBZ Is))
+    (NP
+      (NP (DT that)
+        (ADJP (RB too) (JJ few))
+        (NN ??) (NN Remember))
+      (: :)
+      (NP
+        (NP (DT NO) (NN law))
+        (SBAR
+          (S
+            (VP (MD can)
+              (VP (VB prevent)
+                (NP (NN anything) (NNS !!))))))))))
+
+root(ROOT-0, Is-1)
+det(Remember-6, that-2)
+advmod(few-4, too-3)
+amod(Remember-6, few-4)
+nn(Remember-6, ??-5)
+nsubj(Is-1, Remember-6)
+det(law-9, NO-8)
+dep(Remember-6, law-9)
+aux(prevent-11, can-10)
+rcmod(law-9, prevent-11)
+nn(!!-13, anything-12)
+dobj(prevent-11, !!-13)
+

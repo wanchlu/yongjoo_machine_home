@@ -1,0 +1,47 @@
+(ROOT
+  (NP (NNP Dirty) (NNP South) (. .)))
+
+nn(South-2, Dirty-1)
+root(ROOT-0, South-2)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP like)
+      (NP (PRP$ our) (NNS guns)))
+    (. .)))
+
+nsubj(like-2, We-1)
+root(ROOT-0, like-2)
+poss(guns-4, our-3)
+dobj(like-2, guns-4)
+
+(ROOT
+  (S
+    (NP (NNP Grenache))
+    (VP (VBN nailed)
+      (NP (PRP it)))
+    (. .)))
+
+nsubj(nailed-2, Grenache-1)
+root(ROOT-0, nailed-2)
+dobj(nailed-2, it-3)
+
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP are)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN middle))
+          (PP (IN of)
+            (NP (DT the) (NN equation))))))
+    (. .)))
+
+nsubj(are-2, Guns-1)
+root(ROOT-0, are-2)
+det(middle-5, the-4)
+prep_in(are-2, middle-5)
+det(equation-8, the-7)
+prep_of(middle-5, equation-8)
+

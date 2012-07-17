@@ -1,0 +1,80 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (MD may)
+        (ADVP (RB just))
+        (VP (VB be)
+          (NP (DT a) (JJ pedantic) (NN point)))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NNP US) (JJ armed) (NNS forces))
+      (VP (VBP do) (RB not)
+        (VP (VB swear)
+          (S
+            (VP (TO to)
+              (VP (VB defend)
+                (NP (DT the) (NN government))))))))
+    (. .)))
+
+nsubj(point-7, It-1)
+aux(point-7, may-2)
+advmod(point-7, just-3)
+cop(point-7, be-4)
+det(point-7, a-5)
+amod(point-7, pedantic-6)
+root(ROOT-0, point-7)
+det(forces-13, the-10)
+nn(forces-13, US-11)
+amod(forces-13, armed-12)
+nsubj(swear-16, forces-13)
+xsubj(defend-18, forces-13)
+aux(swear-16, do-14)
+neg(swear-16, not-15)
+conj_but(point-7, swear-16)
+aux(defend-18, to-17)
+xcomp(swear-16, defend-18)
+det(government-20, the-19)
+dobj(defend-18, government-20)
+
+(ROOT
+  (S
+    (VP
+      (NP (DT The) (NN swear)
+        (PRN (-LRB- -LRB-)
+          (CC and)
+          (S
+            (NP (PRP I))
+            (VP (VBD swore)))
+          (-RRB- -RRB-))
+        (S
+          (VP (TO to)
+            (VP (VB defend)
+              (NP (DT the) (NNP Constitution))
+              (PP (IN against)
+                (NP
+                  (NP (NNS enemies) (JJ foreign))
+                  (CC AND)
+                  (NP (JJ domestic)))))))))
+    (. .)))
+
+det(swear-2, The-1)
+root(ROOT-0, swear-2)
+dep(swore-6, and-4)
+nsubj(swore-6, I-5)
+dep(swear-2, swore-6)
+aux(defend-9, to-8)
+infmod(swear-2, defend-9)
+det(Constitution-11, the-10)
+dobj(defend-9, Constitution-11)
+prep_against(defend-9, enemies-13)
+amod(enemies-13, foreign-14)
+prep_against(defend-9, domestic-16)
+conj_and(enemies-13, domestic-16)
+
+(ROOT
+  (NP (NNP James)))
+
+root(ROOT-0, James-1)
+

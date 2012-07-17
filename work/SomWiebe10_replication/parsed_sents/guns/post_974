@@ -1,0 +1,102 @@
+(ROOT
+  (SINV
+    (VP (VBG Allowing)
+      (NP (NNS civilians))
+      (S
+        (VP (TO to)
+          (VP (VB have)
+            (NP (NNS guns))))))
+    (VP (VBZ allows)
+      (NP (NNS civilians)))
+    (NP
+      (NP (FW de) (FW facto) (NN acceptance))
+      (PP (TO to)
+        (NP (NN use) (NNS guns))))
+    (. .)))
+
+root(ROOT-0, Allowing-1)
+dobj(Allowing-1, civilians-2)
+aux(have-4, to-3)
+xcomp(Allowing-1, have-4)
+dobj(have-4, guns-5)
+dep(Allowing-1, allows-6)
+dobj(allows-6, civilians-7)
+nn(acceptance-10, de-8)
+nn(acceptance-10, facto-9)
+nsubj(Allowing-1, acceptance-10)
+nn(guns-13, use-12)
+prep_to(acceptance-10, guns-13)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Allowing)
+        (S
+          (NP (PRP them))
+          (VP (TO to)
+            (VP (VB use)
+              (NP (NNS guns)))))))
+    (VP (VBZ gives)
+      (NP (PRP them))
+      (NP
+        (NP (FW de) (FW facto) (NN acceptance))
+        (PP (IN into)
+          (S
+            (VP (VBG administering)
+              (NP (DT the) (NN death) (NN penalty))
+              (S
+                (VP (TO to)
+                  (VP (VB stop)
+                    (NP (NNS crimes))))))))))
+    (. .)))
+
+csubj(gives-6, Allowing-1)
+nsubj(use-4, them-2)
+aux(use-4, to-3)
+xcomp(Allowing-1, use-4)
+dobj(use-4, guns-5)
+root(ROOT-0, gives-6)
+iobj(gives-6, them-7)
+nn(acceptance-10, de-8)
+nn(acceptance-10, facto-9)
+dobj(gives-6, acceptance-10)
+prepc_into(acceptance-10, administering-12)
+det(penalty-15, the-13)
+nn(penalty-15, death-14)
+dobj(administering-12, penalty-15)
+aux(stop-17, to-16)
+xcomp(administering-12, stop-17)
+dobj(stop-17, crimes-18)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP believe)
+      (SBAR
+        (S
+          (NP (JJ only) (NNS judges)
+            (CC and)
+            (NNS juries))
+          (VP (MD should)
+            (VP (VB hold)
+              (NP
+                (NP (DT this) (NN power))
+                (, ,) (RB not)
+                (NP (DT the) (JJ common) (NN man))))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+amod(judges-4, only-3)
+nsubj(hold-8, judges-4)
+conj_and(judges-4, juries-6)
+nsubj(hold-8, juries-6)
+aux(hold-8, should-7)
+ccomp(believe-2, hold-8)
+det(power-10, this-9)
+dobj(hold-8, power-10)
+neg(power-10, not-12)
+det(man-15, the-13)
+amod(man-15, common-14)
+dep(power-10, man-15)
+

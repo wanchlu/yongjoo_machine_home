@@ -1,0 +1,137 @@
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP do) (RB n't)
+      (VP (VB kill)
+        (NP (NNS people))))
+    (. .)))
+
+nsubj(kill-4, Guns-1)
+aux(kill-4, do-2)
+neg(kill-4, n't-3)
+root(ROOT-0, kill-4)
+dobj(kill-4, people-5)
+
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBP kill)
+      (NP (NNS people)))
+    (. .)))
+
+nsubj(kill-2, People-1)
+root(ROOT-0, kill-2)
+dobj(kill-2, people-3)
+
+(ROOT
+  (S (IN So)
+    (NP (PRP you) (NNS guys))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (SBAR (IN since)
+            (S
+              (NP (NNS guns))
+              (VP (VBP kill)
+                (NP (NNS people)))))
+          (, ,)
+          (NP (PRP we))
+          (VP (MD should)
+            (VP (VB ban)
+              (NP (DT those))
+              (, ,)
+              (ADVP (RB right)))))))
+    (. ?)))
+
+dep(think-4, So-1)
+dep(guys-3, you-2)
+nsubj(think-4, guys-3)
+root(ROOT-0, think-4)
+complm(ban-13, that-5)
+mark(kill-8, since-6)
+nsubj(kill-8, guns-7)
+advcl(ban-13, kill-8)
+dobj(kill-8, people-9)
+nsubj(ban-13, we-11)
+aux(ban-13, should-12)
+ccomp(think-4, ban-13)
+dobj(ban-13, those-14)
+advmod(ban-13, right-16)
+
+(ROOT
+  (SQ
+    (S
+      (NP (NNS Knives))
+      (VP (VBP kill)
+        (NP (NNS people))
+        (ADVP (RB too))))
+    (, ,)
+    (SQ (MD should)
+      (NP (PRP they))
+      (VP (VB be)
+        (VP (VBN banned))))
+    (. ?)))
+
+nsubj(kill-2, Knives-1)
+dep(banned-9, kill-2)
+dobj(kill-2, people-3)
+advmod(kill-2, too-4)
+aux(banned-9, should-6)
+nsubjpass(banned-9, they-7)
+auxpass(banned-9, be-8)
+root(ROOT-0, banned-9)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBD cut)
+      (NP (PRP$ our) (NN meat))
+      (PP (IN with)
+        (NP
+          (NP (NNS knives))
+          (ADJP (RB so) (JJ no.)))))))
+
+nsubj(cut-2, We-1)
+root(ROOT-0, cut-2)
+poss(meat-4, our-3)
+dobj(cut-2, meat-4)
+prep_with(cut-2, knives-6)
+advmod(no.-8, so-7)
+amod(knives-6, no.-8)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP
+      (VP (VB kill)
+        (NP (NNS animals)))
+      (CC and)
+      (VP (VB eat)
+        (NP (PRP$ their) (NN meat))
+        (PP (IN with)
+          (NP (NNS guns)))
+        (ADVP (RB so) (RB no)
+          (SBAR
+            (S
+              (NP (PRP we))
+              (VP (MD should) (RB n't)
+                (VP (VB ban)
+                  (NP (NNS guns)))))))))
+    (. .)))
+
+nsubj(kill-2, We-1)
+nsubj(eat-5, We-1)
+root(ROOT-0, kill-2)
+dobj(kill-2, animals-3)
+conj_and(kill-2, eat-5)
+poss(meat-7, their-6)
+dobj(eat-5, meat-7)
+prep_with(eat-5, guns-9)
+advmod(no-11, so-10)
+advmod(eat-5, no-11)
+nsubj(ban-15, we-12)
+aux(ban-15, should-13)
+neg(ban-15, n't-14)
+dep(no-11, ban-15)
+dobj(ban-15, guns-16)
+

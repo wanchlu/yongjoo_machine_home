@@ -1,0 +1,148 @@
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ puts)
+      (NP (NN government))
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN role))
+          (PP (IN of)
+            (NP
+              (NP (NN arbiter))
+              (PP (IN of)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (NP (NNS practices))
+                    (VP (VBP are)
+                      (ADJP (JJ healthy)
+                        (CC and)
+                        (JJ unhealthy)))))))))))
+    (. .)))
+
+nsubj(puts-2, This-1)
+root(ROOT-0, puts-2)
+dobj(puts-2, government-3)
+det(role-6, the-5)
+prep_in(puts-2, role-6)
+prep_of(role-6, arbiter-8)
+dobj(healthy-13, what-10)
+nsubj(healthy-13, practices-11)
+nsubj(unhealthy-15, practices-11)
+cop(healthy-13, are-12)
+prepc_of(arbiter-8, healthy-13)
+prepc_of(arbiter-8, unhealthy-15)
+conj_and(healthy-13, unhealthy-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN collection)
+        (CC and)
+        (NN enforcement))
+      (PP (IN of)
+        (NP (DT these) (NNS taxes))))
+    (VP
+      (VP (VBZ is) (RB not)
+        (ADJP (JJ free)))
+      (, ,)
+      (CC but)
+      (VP (MD will)
+        (VP (VB entail)
+          (NP (JJ additional) (NN bureaucracy)))))
+    (. .)))
+
+det(collection-2, The-1)
+nsubj(free-10, collection-2)
+nsubj(entail-14, collection-2)
+conj_and(collection-2, enforcement-4)
+nsubj(free-10, enforcement-4)
+det(taxes-7, these-6)
+prep_of(collection-2, taxes-7)
+cop(free-10, is-8)
+neg(free-10, not-9)
+root(ROOT-0, free-10)
+aux(entail-14, will-13)
+conj_but(free-10, entail-14)
+amod(bureaucracy-16, additional-15)
+dobj(entail-14, bureaucracy-16)
+
+(ROOT
+  (S
+    (NP (DT Some) (JJ controversial) (NNS practices))
+    (VP (MD could)
+      (VP (VB be)
+        (VP (VBN taxed))))
+    (. .)))
+
+det(practices-3, Some-1)
+amod(practices-3, controversial-2)
+nsubjpass(taxed-6, practices-3)
+aux(taxed-6, could-4)
+auxpass(taxed-6, be-5)
+root(ROOT-0, taxed-6)
+
+(ROOT
+  (S
+    (VP (VB e.g.)
+      (NP (JJ medical) (NN marijuana)))
+    (. .)))
+
+root(ROOT-0, e.g.-1)
+amod(marijuana-3, medical-2)
+dobj(e.g.-1, marijuana-3)
+
+(ROOT
+  (S
+    (NP (JJ Such) (NNS taxes))
+    (VP (VBP are)
+      (ADJP (JJ likely)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (ADJP (JJ regressive))
+              (PRN (, ,)
+                (ADVP (RB especially))
+                (NP
+                  (NP (NNS taxes))
+                  (PP (IN on)
+                    (NP (NN tobacco))))))))))
+    (. .)))
+
+amod(taxes-2, Such-1)
+nsubj(likely-4, taxes-2)
+cop(likely-4, are-3)
+root(ROOT-0, likely-4)
+aux(regressive-7, to-5)
+cop(regressive-7, be-6)
+xcomp(likely-4, regressive-7)
+dep(taxes-10, especially-9)
+dep(regressive-7, taxes-10)
+prep_on(taxes-10, tobacco-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNS healthfulness))
+      (PP (IN of)
+        (NP (DT some) (NNS things))))
+    (VP (VBZ is)
+      (ADJP (JJ dependent)
+        (PP (IN on)
+          (NP
+            (NP (NN context))
+            (, ,)
+            (NP (JJ e.g.) (NN pain) (NNS killers))))))
+    (. .)))
+
+det(healthfulness-2, The-1)
+nsubj(dependent-7, healthfulness-2)
+det(things-5, some-4)
+prep_of(healthfulness-2, things-5)
+cop(dependent-7, is-6)
+root(ROOT-0, dependent-7)
+prep_on(dependent-7, context-9)
+amod(killers-13, e.g.-11)
+nn(killers-13, pain-12)
+appos(context-9, killers-13)
+

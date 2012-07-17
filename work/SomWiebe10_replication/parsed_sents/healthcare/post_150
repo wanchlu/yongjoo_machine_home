@@ -1,0 +1,42 @@
+(ROOT
+  (S
+    (NP
+      (NP (NN Government) (NNS intrudes))
+      (PP (IN in)
+        (NP
+          (NP (JJ medical) (NNS decisions))
+          (PP (IN in)
+            (NP (DT a) (JJ single-payer) (NN system) (NN Government))))))
+    (VP (MD will)
+      (VP (VB involve)
+        (NP (PRP itself))
+        (PP (IN in)
+          (NP
+            (NP (NNS decisions))
+            (PP (IN between)
+              (NP (NNS doctors)
+                (CC and)
+                (NNS patients)))))
+        (PP (IN under)
+          (NP (DT a) (JJ single-payer) (NN system)))))
+    (. .)))
+
+nn(intrudes-2, Government-1)
+nsubj(involve-12, intrudes-2)
+amod(decisions-5, medical-4)
+prep_in(intrudes-2, decisions-5)
+det(Government-10, a-7)
+amod(Government-10, single-payer-8)
+nn(Government-10, system-9)
+prep_in(decisions-5, Government-10)
+aux(involve-12, will-11)
+root(ROOT-0, involve-12)
+dobj(involve-12, itself-13)
+prep_in(involve-12, decisions-15)
+prep_between(decisions-15, doctors-17)
+prep_between(decisions-15, patients-19)
+conj_and(doctors-17, patients-19)
+det(system-23, a-21)
+amod(system-23, single-payer-22)
+prep_under(involve-12, system-23)
+

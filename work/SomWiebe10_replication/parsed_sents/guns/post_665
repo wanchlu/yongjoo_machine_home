@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP WELL))
+      (VP (VBD said)))
+    (PRN (, ,)
+      (S
+        (NP (PRP they))
+        (VP (VBD were)
+          (ADJP (JJ aware)
+            (PP (IN of)
+              (NP (DT the) (NNS dangers) (NN therin))))))
+      (, ,))
+    (CC and)
+    (S
+      (PP (IN at)
+        (NP (DT the) (JJ same) (NN time)))
+      (NP (PRP they))
+      (VP (VBD wrote)
+        (NP (DT the) (JJ second) (NN ammendment))))
+    (: ...)))
+
+nsubj(said-2, WELL-1)
+root(ROOT-0, said-2)
+nsubj(aware-6, they-4)
+cop(aware-6, were-5)
+dep(said-2, aware-6)
+det(therin-10, the-8)
+nn(therin-10, dangers-9)
+prep_of(aware-6, therin-10)
+det(time-16, the-14)
+amod(time-16, same-15)
+prep_at(wrote-18, time-16)
+nsubj(wrote-18, they-17)
+conj_and(said-2, wrote-18)
+det(ammendment-21, the-19)
+amod(ammendment-21, second-20)
+dobj(wrote-18, ammendment-21)
+
+(ROOT
+  (S
+    (VP (VBG Sounds)
+      (PP (IN like)
+        (NP (NN foreknowledge))))
+    (: ...)))
+
+root(ROOT-0, Sounds-1)
+prep_like(Sounds-1, foreknowledge-3)
+
+(ROOT
+  (S
+    (NP (NNP Todays) (NNP ELITE)
+      (CC &)
+      (NNP intellectuals))
+    (VP (VBP have)
+      (NP (DT a) (JJ long) (NN way)
+        (S
+          (VP (TO to)
+            (VP (VB go)
+              (S
+                (VP (TO to)
+                  (VP (VB catch)
+                    (NP
+                      (NP (DT the) (NNS smarts))
+                      (PP (IN of)
+                        (NP (PRP$ our) (NNS fathers))))))))))))
+    (: ...)))
+
+nn(ELITE-2, Todays-1)
+nsubj(have-5, ELITE-2)
+conj_and(ELITE-2, intellectuals-4)
+nsubj(have-5, intellectuals-4)
+root(ROOT-0, have-5)
+det(way-8, a-6)
+amod(way-8, long-7)
+dobj(have-5, way-8)
+aux(go-10, to-9)
+infmod(way-8, go-10)
+aux(catch-12, to-11)
+xcomp(go-10, catch-12)
+det(smarts-14, the-13)
+dobj(catch-12, smarts-14)
+poss(fathers-17, our-16)
+prep_of(smarts-14, fathers-17)
+

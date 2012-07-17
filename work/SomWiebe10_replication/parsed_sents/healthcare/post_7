@@ -1,0 +1,275 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN health) (NN insurance))
+    (VP (VBZ creates)
+      (NP (JJ two-tiered) (NN system\/choice)))
+    (. .)))
+
+nn(insurance-3, Public-1)
+nn(insurance-3, health-2)
+nsubj(creates-4, insurance-3)
+root(ROOT-0, creates-4)
+amod(system\/choice-6, two-tiered-5)
+dobj(creates-4, system\/choice-6)
+
+(ROOT
+  (NP (NNP Ronald) (NNP Bailey) (. .)))
+
+nn(Bailey-2, Ronald-1)
+root(ROOT-0, Bailey-2)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NN beginning))
+    (PP (IN of)
+      (NP
+        (NP (DT the) (NN end))
+        (PP (IN of)
+          (NP (JJ private) (NN health) (NN insurance)))
+        ('' '')))
+    (. .)))
+
+det(beginning-3, The-2)
+root(ROOT-0, beginning-3)
+dep(beginning-3, of-4)
+det(end-6, the-5)
+pobj(of-4, end-6)
+amod(insurance-10, private-8)
+nn(insurance-10, health-9)
+prep_of(end-6, insurance-10)
+
+(ROOT
+  (S
+    (VP (VBN Reason))
+    (. .)))
+
+root(ROOT-0, Reason-1)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 9) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (NP
+        (NP (DT The) (JJS best) (NN result))
+        (PP (IN of)
+          (S
+            (VP (VBG creating)
+              (NP (DT a) (JJ parallel) (JJ public) (NN insurance) (NN scheme))))))
+      (VP (VBZ is)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NNP United) (NNPS States))
+            (VP (MD would)
+              (VP (VB end)
+                (PRT (RP up))
+                (PP (IN with)
+                  (NP
+                    (NP (DT an) (JJ explicit) (JJ two-tier) (JJ medical) (NN system))
+                    (SBAR
+                      (WHPP (IN in)
+                        (WHNP (WDT which)))
+                      (S
+                        (NP
+                          (ADJP (RB privately) (VBN insured))
+                          (NNS Americans))
+                        (VP (VBP have)
+                          (NP (JJR better) (NN access))
+                          (PP (TO to)
+                            (NP (JJR better) (JJ medical) (NN care))))))))))))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 9-2)
+num(June-1, 2009-4)
+det(result-9, The-7)
+amod(result-9, best-8)
+nsubj(is-17, result-9)
+prepc_of(result-9, creating-11)
+det(scheme-16, a-12)
+amod(scheme-16, parallel-13)
+amod(scheme-16, public-14)
+nn(scheme-16, insurance-15)
+dobj(creating-11, scheme-16)
+dep(June-1, is-17)
+complm(end-23, that-18)
+det(States-21, the-19)
+nn(States-21, United-20)
+nsubj(end-23, States-21)
+aux(end-23, would-22)
+ccomp(is-17, end-23)
+prt(end-23, up-24)
+det(system-30, an-26)
+amod(system-30, explicit-27)
+amod(system-30, two-tier-28)
+amod(system-30, medical-29)
+prep_with(end-23, system-30)
+rel(have-36, which-32)
+advmod(insured-34, privately-33)
+amod(Americans-35, insured-34)
+nsubj(have-36, Americans-35)
+rcmod(system-30, have-36)
+amod(access-38, better-37)
+dobj(have-36, access-38)
+amod(care-42, better-40)
+amod(care-42, medical-41)
+prep_to(have-36, care-42)
+
+(ROOT
+  (S
+    (NP (JJ Such) (JJ two-tier) (NN health) (NN care) (NNS systems))
+    (ADVP (RB already))
+    (VP (VBP exist)
+      (PP (IN in)
+        (NP
+          (NP (NNS countries))
+          (PP (IN with)
+            (NP
+              (NP (JJ national) (NN health) (NN care) (NNS schemes))
+              (PP (JJ such) (IN as)
+                (NP
+                  (NP (DT the) (NNP United) (NNP Kingdom))
+                  (CC and)
+                  (NP (NNP Germany)))))))))
+    (. .)))
+
+amod(systems-5, Such-1)
+amod(systems-5, two-tier-2)
+nn(systems-5, health-3)
+nn(systems-5, care-4)
+nsubj(exist-7, systems-5)
+advmod(exist-7, already-6)
+root(ROOT-0, exist-7)
+prep_in(exist-7, countries-9)
+amod(schemes-14, national-11)
+nn(schemes-14, health-12)
+nn(schemes-14, care-13)
+prep_with(countries-9, schemes-14)
+det(Kingdom-19, the-17)
+nn(Kingdom-19, United-18)
+prep_such_as(schemes-14, Kingdom-19)
+prep_such_as(schemes-14, Germany-21)
+conj_and(Kingdom-19, Germany-21)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP (DT the) (NNP United) (NNP Kingdom)))
+    (, ,)
+    (NP
+      (ADJP (JJR more)
+        (CC and)
+        (JJR more))
+      (NNS Britons))
+    (VP (VBP are)
+      (VP (VBG opting)
+        (PP (IN for)
+          (NP
+            (NP (JJ private) (NN health) (NN insurance))
+            (PP (RB instead) (IN of)
+              (S
+                (VP (VBG remaining)
+                  (PP (IN with)
+                    (NP
+                      (NP (DT that) (NN country) (POS 's))
+                      (NNP National) (NNP Health) (NNP Service))))))))))
+    (. .)))
+
+det(Kingdom-4, the-2)
+nn(Kingdom-4, United-3)
+prep_in(opting-11, Kingdom-4)
+amod(Britons-9, more-6)
+conj_and(more-6, more-8)
+amod(Britons-9, more-8)
+nsubj(opting-11, Britons-9)
+aux(opting-11, are-10)
+root(ROOT-0, opting-11)
+amod(insurance-15, private-13)
+nn(insurance-15, health-14)
+prep_for(opting-11, insurance-15)
+prepc_instead_of(insurance-15, remaining-18)
+det(country-21, that-20)
+poss(Service-25, country-21)
+nn(Service-25, National-23)
+nn(Service-25, Health-24)
+prep_with(remaining-18, Service-25)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB Privately))
+      (NP (JJ insured) (NNPS Americans))
+      (VP (MD would)
+        (VP (VB get)
+          (NP
+            (ADJP (JJR higher) (NN quality))
+            (NN health) (NN care)))))
+    (, ,)
+    (CC but)
+    (S
+      (SBAR (IN because)
+        (S
+          (NP
+            (NP (DT the) (NN market))
+            (PP (IN for)
+              (NP (JJ medical) (NN innovation))))
+          (VP (MD would)
+            (VP (VB be)
+              (ADJP (JJR smaller))))))
+      (, ,)
+      (NP (NN everybody))
+      (VP (MD will)
+        (VP (VB get)
+          (NP (JJR worse) (NN care))
+          (SBAR (IN than)
+            (S
+              (NP (PRP they))
+              (VP (MD would)
+                (ADVP (RB otherwise))
+                (VP (VB have)
+                  (VP (VBN received)
+                    (VP (VBN had)
+                      (NP
+                        (NP (JJS most) (NN health) (NN care))
+                        (SBAR
+                          (S (RB not)
+                            (VP (VBN been)
+                              (VP (VBN nationalized)))))))))))))))
+    (. .)))
+
+advmod(get-5, Privately-1)
+amod(Americans-3, insured-2)
+nsubj(get-5, Americans-3)
+aux(get-5, would-4)
+root(ROOT-0, get-5)
+dep(quality-7, higher-6)
+amod(care-9, quality-7)
+nn(care-9, health-8)
+dobj(get-5, care-9)
+mark(smaller-20, because-12)
+det(market-14, the-13)
+nsubj(smaller-20, market-14)
+amod(innovation-17, medical-16)
+prep_for(market-14, innovation-17)
+aux(smaller-20, would-18)
+cop(smaller-20, be-19)
+advcl(get-24, smaller-20)
+nsubj(get-24, everybody-22)
+aux(get-24, will-23)
+conj_but(get-5, get-24)
+amod(care-26, worse-25)
+dobj(get-24, care-26)
+mark(received-32, than-27)
+nsubj(received-32, they-28)
+aux(received-32, would-29)
+advmod(received-32, otherwise-30)
+aux(received-32, have-31)
+advcl(get-24, received-32)
+dep(received-32, had-33)
+amod(care-36, most-34)
+nn(care-36, health-35)
+dobj(had-33, care-36)
+neg(nationalized-39, not-37)
+auxpass(nationalized-39, been-38)
+rcmod(care-36, nationalized-39)
+

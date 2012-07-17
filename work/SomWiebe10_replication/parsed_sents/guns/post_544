@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VB forget)
+        (NP (DT the) (JJ exact) (NN year))))
+    (, ,)
+    (CC but)
+    (S
+      (PP
+        (ADVP (RB sometime))
+        (IN in)
+        (NP
+          (NP (DT the) (`` ``) (NNS 70) (POS 's))
+          (CC or)
+          (NP (JJ early))))
+      (`` ``)
+      (NP
+        (NP (CD 80) (POS 's))
+        (NP (DT the) (NN police))
+        (PP (IN in)
+          (NP (NNP Albuquerque) (NNP N.M.))))
+      (VP (VBD went)
+        (PP (IN on)
+          (NP (NN strike)))))
+    (. .)))
+
+nsubj(forget-2, I-1)
+root(ROOT-0, forget-2)
+det(year-5, the-3)
+amod(year-5, exact-4)
+tmod(forget-2, year-5)
+advmod(went-24, sometime-8)
+det(70-12, the-10)
+prep_in(went-24, 70-12)
+possessive(70-12, 's-13)
+conj_or(70-12, early-15)
+prep_in(went-24, early-15)
+nsubj(went-24, 80-17)
+possessive(80-17, 's-18)
+det(police-20, the-19)
+dep(80-17, police-20)
+nn(N.M.-23, Albuquerque-22)
+prep_in(80-17, N.M.-23)
+conj_but(forget-2, went-24)
+prep_on(went-24, strike-26)
+
+(ROOT
+  (S
+    (PP (IN During)
+      (NP (DT that) (NN period)))
+    (, ,)
+    (NP (DT the) (JJ violent) (NN crime))
+    (VP (VBD dropped)
+      (ADVP (RB quite)
+        (NP (DT a) (RB bit))))
+    (. .)))
+
+det(period-3, that-2)
+prep_during(dropped-8, period-3)
+det(crime-7, the-5)
+amod(crime-7, violent-6)
+nsubj(dropped-8, crime-7)
+root(ROOT-0, dropped-8)
+advmod(dropped-8, quite-9)
+det(bit-11, a-10)
+pobj(quite-9, bit-11)
+

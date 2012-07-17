@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (NNS people))
+    (VP (MD will)
+      (ADVP (RB still))
+      (VP (VB get)
+        (NP
+          (NP (NNS guns)
+            (CC and)
+            (NNS whats))
+          (VP (VBG going)
+            (S
+              (VP (TO to)
+                (VP (VB happen)
+                  (PP (TO to)
+                    (NP (PDT all) (DT the) (NNS guns)))
+                  (PP (DT all) (IN over)
+                    (NP (DT the) (NN world))))))))))
+    (. .)))
+
+nsubj(get-4, people-1)
+aux(get-4, will-2)
+advmod(get-4, still-3)
+root(ROOT-0, get-4)
+dobj(get-4, guns-5)
+xsubj(happen-10, guns-5)
+dobj(get-4, whats-7)
+conj_and(guns-5, whats-7)
+xsubj(happen-10, whats-7)
+partmod(guns-5, going-8)
+aux(happen-10, to-9)
+xcomp(going-8, happen-10)
+predet(guns-14, all-12)
+det(guns-14, the-13)
+prep_to(happen-10, guns-14)
+dep(happen-10, all-15)
+det(world-18, the-17)
+prep_over(happen-10, world-18)
+
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (MD will)
+      (ADVP (RB never))
+      (VP (VB be)
+        (NP (NN world) (NN peace))))
+    (. .)))
+
+expl(peace-6, there-1)
+aux(peace-6, will-2)
+neg(peace-6, never-3)
+cop(peace-6, be-4)
+nn(peace-6, world-5)
+root(ROOT-0, peace-6)
+
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (MD will)
+      (ADVP (RB always))
+      (VP (VB be)
+        (NP (NNS weapons))))
+    (. .)))
+
+expl(weapons-5, there-1)
+aux(weapons-5, will-2)
+advmod(weapons-5, always-3)
+cop(weapons-5, be-4)
+root(ROOT-0, weapons-5)
+
+(ROOT
+  (S
+    (NP (NNS people))
+    (VP (MD will)
+      (ADVP (RB always))
+      (VP (VB kill)
+        (NP (JJ other) (NNS people))))
+    (. .)))
+
+nsubj(kill-4, people-1)
+aux(kill-4, will-2)
+advmod(kill-4, always-3)
+root(ROOT-0, kill-4)
+amod(people-6, other-5)
+dobj(kill-4, people-6)
+
+(ROOT
+  (FRAG
+    (NP
+      (NP (PRP$ its))
+      (ADJP (RB as) (JJ simple)))
+    (PP (IN as)
+      (WHNP (WDT that)))))
+
+root(ROOT-0, its-1)
+advmod(simple-3, as-2)
+amod(its-1, simple-3)
+dep(its-1, as-4)
+pobj(as-4, that-5)
+

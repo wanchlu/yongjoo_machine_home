@@ -1,0 +1,70 @@
+(ROOT
+  (S
+    (NP (JJ Government-run) (NN health) (NN care))
+    (VP (MD would)
+      (VP (VB be)
+        (VP (VBN evaluated)
+          (PP
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN health))
+                (PP (IN of)
+                  (NP (DT the) (NN public)))))
+            (, ,) (RB not)
+            (PP (IN on)
+              (SBAR
+                (WHADVP (WRB how))
+                (S
+                  (ADVP (RB cheaply))
+                  (NP (PRP it))
+                  (VP (MD could)
+                    (VP (VB get)
+                      (NP (DT the) (NN public)
+                        (S
+                          (VP (TO to)
+                            (VP (VB shut)
+                              (PRT (RP up)))))))))))))))
+    (. .)))
+
+amod(care-3, Government-run-1)
+nn(care-3, health-2)
+nsubjpass(evaluated-6, care-3)
+aux(evaluated-6, would-4)
+auxpass(evaluated-6, be-5)
+root(ROOT-0, evaluated-6)
+det(health-9, the-8)
+prep_on(evaluated-6, health-9)
+det(public-12, the-11)
+prep_of(health-9, public-12)
+neg(evaluated-6, not-14)
+advmod(get-20, how-16)
+advmod(get-20, cheaply-17)
+nsubj(get-20, it-18)
+aux(get-20, could-19)
+prepc_on(evaluated-6, get-20)
+det(public-22, the-21)
+dobj(get-20, public-22)
+aux(shut-24, to-23)
+infmod(public-22, shut-24)
+prt(shut-24, up-25)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN aim))
+      (PP (IN of)
+        (NP (JJ private) (NN health) (NN care))))
+    (VP (VBZ is)
+      (ADVP (RB always))
+      (NP (NN profit)))
+    (. .)))
+
+det(aim-2, The-1)
+nsubj(profit-9, aim-2)
+amod(care-6, private-4)
+nn(care-6, health-5)
+prep_of(aim-2, care-6)
+cop(profit-9, is-7)
+advmod(profit-9, always-8)
+root(ROOT-0, profit-9)
+

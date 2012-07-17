@@ -1,0 +1,67 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Guns))
+      (VP (MD should)
+        (VP (VB be)
+          (VP (VBN banned)))))
+    (CC and)
+    (S
+      (NP (EX there))
+      (VP (MD will)
+        (VP (VB be)
+          (NP
+            (NP
+              (ADJP (RB extremely) (JJ low))
+              (NNS cases))
+            (PP (IN of)
+              (NP (NN gun) (JJ related) (NN murder)))))))
+    (. .)))
+
+nsubjpass(banned-4, Guns-1)
+aux(banned-4, should-2)
+auxpass(banned-4, be-3)
+root(ROOT-0, banned-4)
+expl(cases-11, there-6)
+aux(cases-11, will-7)
+cop(cases-11, be-8)
+advmod(low-10, extremely-9)
+amod(cases-11, low-10)
+conj_and(banned-4, cases-11)
+nn(murder-15, gun-13)
+amod(murder-15, related-14)
+prep_of(cases-11, murder-15)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (NP (NNS guns))
+          (PP (IN over)
+            (NP (DT the) (NN world))))
+        (VP (VBZ is)
+          (VP (VBN banned)))))
+    (, ,)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB get)
+        (NP (NN world) (NN peace))
+        (PP (IN for)
+          (NP (DT a) (NN while)))))
+    (. .)))
+
+mark(banned-7, If-1)
+nsubjpass(banned-7, guns-2)
+det(world-5, the-4)
+prep_over(guns-2, world-5)
+auxpass(banned-7, is-6)
+advcl(get-11, banned-7)
+nsubj(get-11, we-9)
+aux(get-11, will-10)
+root(ROOT-0, get-11)
+nn(peace-13, world-12)
+dobj(get-11, peace-13)
+det(while-16, a-15)
+prep_for(get-11, while-16)
+

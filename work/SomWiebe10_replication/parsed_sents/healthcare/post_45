@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP Insurance) (NNS companies))
+      (VP (VBP insure)
+        (NP (DT the) (NN well))))
+    (: ;)
+    (S
+      (NP (JJ public) (NN plan))
+      (VP (VBZ insures)
+        (NP (JJ unhealthy))))
+    (. .)))
+
+nn(companies-2, Insurance-1)
+nsubj(insure-3, companies-2)
+root(ROOT-0, insure-3)
+det(well-5, the-4)
+dobj(insure-3, well-5)
+amod(plan-8, public-7)
+nsubj(insures-9, plan-8)
+parataxis(insure-3, insures-9)
+dobj(insures-9, unhealthy-10)
+
+(ROOT
+  (NP (NNP Ezra) (NNP Klein) (. .)))
+
+nn(Klein-2, Ezra-1)
+root(ROOT-0, Klein-2)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (NNP Health) (NNP Care) (NNP Reform))
+    (PP (IN for)
+      (NP
+        (NX
+          (NP (NNP Beginners))
+          (: :)
+          (NP
+            (NP (DT The) (JJ Many) (NNS Flavors))
+            (PP (IN of)
+              (NP (DT the) (NNP Public) (NNP Plan) ('' '')))))
+        (NNP Washington) (NNP Post)))
+    (. .)))
+
+nn(Reform-4, Health-2)
+nn(Reform-4, Care-3)
+root(ROOT-0, Reform-4)
+dep(Reform-4, for-5)
+dep(Flavors-10, Beginners-6)
+det(Flavors-10, The-8)
+amod(Flavors-10, Many-9)
+dep(Post-17, Flavors-10)
+det(Plan-14, the-12)
+nn(Plan-14, Public-13)
+prep_of(Flavors-10, Plan-14)
+nn(Post-17, Washington-16)
+pobj(for-5, Post-17)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 8) (, ,) (CD 2009))
+    (: :)
+    (S (`` ``)
+      (NP (DT The) (JJ private) (NN insurance) (NN market))
+      (VP (VBZ is)
+        (NP (DT a) (NN mess))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 8-2)
+num(June-1, 2009-4)
+det(market-10, The-7)
+amod(market-10, private-8)
+nn(market-10, insurance-9)
+nsubj(mess-13, market-10)
+cop(mess-13, is-11)
+det(mess-13, a-12)
+dep(June-1, mess-13)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP
+      (VP (VBZ 's)
+        (VP (VBN supposed)
+          (S
+            (VP (TO to)
+              (VP (VB cover)
+                (NP (DT the) (JJ sick)))))))
+      (CC and)
+      (ADVP (RB instead))
+      (VP (VBZ competes)
+        (S
+          (VP (TO to)
+            (VP (VB insure)
+              (NP (DT the) (NN well)))))))
+    (. .)))
+
+nsubjpass(supposed-3, It-1)
+xsubj(cover-5, It-1)
+nsubj(competes-10, It-1)
+xsubj(insure-12, It-1)
+auxpass(supposed-3, 's-2)
+root(ROOT-0, supposed-3)
+aux(cover-5, to-4)
+xcomp(supposed-3, cover-5)
+det(sick-7, the-6)
+dobj(cover-5, sick-7)
+advmod(supposed-3, instead-9)
+conj_and(supposed-3, instead-9)
+conj_and(supposed-3, competes-10)
+aux(insure-12, to-11)
+xcomp(competes-10, insure-12)
+det(well-14, the-13)
+dobj(insure-12, well-14)
+

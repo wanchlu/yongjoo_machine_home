@@ -1,0 +1,459 @@
+(ROOT
+  (S
+    (NP (DT This) (NN comment))
+    (VP (MD should)
+      (VP (VB be)
+        (PP
+          (PP (IN under)
+            (NP (JJ brads) (NN statement)))
+          (, ,)
+          (CC but)
+          (PP (TO to)
+            (NP (NN dispute))))))
+    (. .)))
+
+det(comment-2, This-1)
+nsubj(be-4, comment-2)
+nsubj(be-4', comment-2)
+aux(be-4, should-3)
+root(ROOT-0, be-4)
+conj_but(be-4, be-4')
+amod(statement-7, brads-6)
+prep_under(be-4, statement-7)
+prep_to(be-4', dispute-11)
+
+(ROOT
+  (S
+    (S
+      (NP (NN Timing))
+      (VP (MD may)
+        (ADVP (RB just))
+        (VP (VB be)
+          (NP (DT a) (NN statement)))))
+    (CC but)
+    (S
+      (NP (DT the) (NNS guns))
+      (VP (VBP are)
+        (ADVP (RB still))
+        (NP (DT the) (JJ main) (NN focus))))
+    (. .)))
+
+nsubj(statement-6, Timing-1)
+aux(statement-6, may-2)
+advmod(statement-6, just-3)
+cop(statement-6, be-4)
+det(statement-6, a-5)
+root(ROOT-0, statement-6)
+det(guns-9, the-8)
+nsubj(focus-14, guns-9)
+cop(focus-14, are-10)
+advmod(focus-14, still-11)
+det(focus-14, the-12)
+amod(focus-14, main-13)
+conj_but(statement-6, focus-14)
+
+(ROOT
+  (S
+    (NP (NNS Guns))
+    (VP (VBP shouldnt)
+      (VP (VB be)
+        (VP (VB allow)
+          (SBAR (IN because)
+            (S
+              (NP (DT the) (NNS defenders))
+              (VP (VBP want)
+                (S
+                  (VP (TO to)
+                    (VP (VB shoot)
+                      (NP
+                        (NP
+                          (QP (RB just) (RB as) (JJ much)))
+                        (PP (IN as)
+                          (NP (DT the) (NNS intruders)))))))))))))
+    (. .)))
+
+nsubj(shouldnt-2, Guns-1)
+root(ROOT-0, shouldnt-2)
+aux(allow-4, be-3)
+dep(shouldnt-2, allow-4)
+mark(want-8, because-5)
+det(defenders-7, the-6)
+nsubj(want-8, defenders-7)
+advcl(allow-4, want-8)
+aux(shoot-10, to-9)
+xcomp(want-8, shoot-10)
+quantmod(much-13, just-11)
+quantmod(much-13, as-12)
+dobj(shoot-10, much-13)
+det(intruders-16, the-15)
+prep_as(much-13, intruders-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (FW i))
+          (VP (VBD covered)
+            (NP
+              (NP (DT this))
+              (PP (IN in)
+                (NP
+                  (NP (JJR more) (NN detail))
+                  (SBAR
+                    (WHADVP (WRB when))
+                    (S
+                      (NP (FW i))
+                      (VP (VBD explained)
+                        (NP
+                          (NP (DT the) (NNS pros))
+                          (PP (IN of)
+                            (S
+                              (VP (VBG having)
+                                (S
+                                  (NP (NNS citizens))
+                                  (VP (VBG being)
+                                    (ADJP (RB gun) (JJ free))))))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+nsubj(covered-4, i-3)
+ccomp(think-2, covered-4)
+dobj(covered-4, this-5)
+amod(detail-8, more-7)
+prep_in(this-5, detail-8)
+tmod(explained-11, detail-8)
+advmod(explained-11, when-9)
+nsubj(explained-11, i-10)
+dep(detail-8, explained-11)
+det(pros-13, the-12)
+dobj(explained-11, pros-13)
+prepc_of(pros-13, having-15)
+nsubj(free-19, citizens-16)
+cop(free-19, being-17)
+advmod(free-19, gun-18)
+ccomp(having-15, free-19)
+
+(ROOT
+  (S
+    (VP
+      (ADVP (RB Even) ('' ''))
+      (S
+        (SBAR (IN If)
+          (S
+            (VP (MD criminals)
+              (VP (VB keep)
+                (NP
+                  (NP (PRP$ their))
+                  (VP (VBN guns) ('' ''))
+                  (, ,)
+                  (PRN (-LRB- -LRB-)
+                    (SBAR (IN if)
+                      (S
+                        (NP (PRP we))
+                        (VP (VBD were)
+                          (S
+                            (VP (TO to)
+                              (VP (VB confiscate)
+                                (NP (DT all) (NNS guns))))))))
+                    (-RRB- -RRB-)))
+                ('' '')
+                (NP
+                  (NP (PRP they))
+                  (SBAR
+                    (S
+                      (VP (VBP wont)
+                        (VP (VB be)
+                          (ADJP (JJ able)
+                            (S
+                              (VP (TO to)
+                                (VP (VB use)
+                                  (NP (PRP them)))))))))))))))))
+    (. .)))
+
+root(ROOT-0, Even-1)
+mark(criminals-4, If-3)
+dep(Even-1, criminals-4)
+dep(criminals-4, keep-5)
+dobj(keep-5, their-6)
+partmod(their-6, guns-7)
+mark(were-13, if-11)
+nsubj(were-13, we-12)
+xsubj(confiscate-15, we-12)
+dep(their-6, were-13)
+parataxis(guns-7, were-13)
+aux(confiscate-15, to-14)
+xcomp(were-13, confiscate-15)
+det(guns-17, all-16)
+dobj(confiscate-15, guns-17)
+dobj(keep-5, they-20)
+rcmod(they-20, wont-21)
+cop(able-23, be-22)
+dep(wont-21, able-23)
+aux(use-25, to-24)
+xcomp(able-23, use-25)
+dobj(use-25, them-26)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (S
+          (NP (DT no) (NN one))
+          (VP (VBD had)
+            (NP
+              (NP (DT a) (NN gun))
+              (PP (IN in)
+                (NP (DT an) (NN area))))))
+        (CC and)
+        (S
+          (NP (CD one) (JJ single) (NN shot))
+          (VP (VBD was)
+            (VP (VBN heard))))))
+    (, ,)
+    (NP (DT the) (JJ whole) (NN area))
+    (VP (MD would)
+      (VP (VB be)
+        (PP (IN on)
+          (NP
+            (NP (NN alert))
+            (SBAR
+              (WHPP (IN for)
+                (WHNP (WDT that)))
+              (S
+                (NP
+                  (NP (CD one) (NN shot))
+                  (CC and)
+                  (NP (DT the) (NN gun)))
+                (VP (MD would)
+                  (VP (VB get)
+                    (VP (VBN confiscated))))))))))
+    (. .)))
+
+mark(had-4, If-1)
+det(one-3, no-2)
+nsubj(had-4, one-3)
+advcl(be-21, had-4)
+det(gun-6, a-5)
+dobj(had-4, gun-6)
+det(area-9, an-8)
+prep_in(gun-6, area-9)
+num(shot-13, one-11)
+amod(shot-13, single-12)
+nsubjpass(heard-15, shot-13)
+auxpass(heard-15, was-14)
+conj_and(had-4, heard-15)
+advcl(be-21, heard-15)
+det(area-19, the-17)
+amod(area-19, whole-18)
+nsubj(be-21, area-19)
+aux(be-21, would-20)
+root(ROOT-0, be-21)
+prep_on(be-21, alert-23)
+rel(confiscated-33, that-25)
+num(shot-27, one-26)
+nsubjpass(confiscated-33, shot-27)
+det(gun-30, the-29)
+conj_and(shot-27, gun-30)
+nsubjpass(confiscated-33, gun-30)
+aux(confiscated-33, would-31)
+auxpass(confiscated-33, get-32)
+rcmod(alert-23, confiscated-33)
+
+(ROOT
+  (S
+    (PP (IN In)
+      (NP
+        (NP (NNS countries))
+        (PP (IN like)
+          (NP (JJ great) (NN britan)))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (EX there))
+            (VP (VBZ is)
+              (NP (JJ strict) (NN gun) (NN control)))))))
+    (, ,)
+    (NP (DT this))
+    (VP (VBZ happens)
+      (NP (PDT all) (DT the) (NN time)))
+    (. .)))
+
+prep_in(happens-14, countries-2)
+amod(britan-5, great-4)
+prep_like(countries-2, britan-5)
+advmod(is-8, where-6)
+expl(is-8, there-7)
+rcmod(countries-2, is-8)
+amod(control-11, strict-9)
+nn(control-11, gun-10)
+nsubj(is-8, control-11)
+nsubj(happens-14, this-13)
+root(ROOT-0, happens-14)
+predet(time-17, all-15)
+det(time-17, the-16)
+dobj(happens-14, time-17)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP we))
+        (ADVP (RB just))
+        (VP (VBP assume)
+          (NP (PRP$ its) (JJ useless) (NN cause))
+          (SBAR
+            (SBAR
+              (S
+                (NP (PRP we))
+                (VP (VBP have)
+                  (NP (DT some) (NNS criminals)))))
+            (CC and)
+            (SBAR (RB just)
+              (S
+                (VP (VBP have)
+                  (PP (TO to)
+                    (NP (JJ bare) (NNS arms)))
+                  (S
+                    (VP (TO to)
+                      (VP (VB balance)
+                        (NP (PRP it))
+                        (PP (RB out) (RB then)
+                          (NP
+                            (NP (PRP$ its)
+                              (QP (RB just) (RB twice)))
+                            (ADJP (RB as) (JJ dangerous))))))))))))))
+    (, ,)
+    (NP (CD two) (NNS lefts))
+    (VP (VBP do) (RB n't)
+      (VP (VB make)
+        (NP (DT a) (NN right))))
+    (. .)))
+
+mark(assume-4, If-1)
+nsubj(assume-4, we-2)
+advmod(assume-4, just-3)
+advcl(make-33, assume-4)
+poss(cause-7, its-5)
+amod(cause-7, useless-6)
+dobj(assume-4, cause-7)
+nsubj(have-9, we-8)
+nsubj(have-14, we-8)
+dep(assume-4, have-9)
+det(criminals-11, some-10)
+dobj(have-9, criminals-11)
+advmod(have-14, just-13)
+dep(assume-4, have-14)
+conj_and(have-9, have-14)
+amod(arms-17, bare-16)
+prep_to(have-14, arms-17)
+aux(balance-19, to-18)
+xcomp(have-14, balance-19)
+dobj(balance-19, it-20)
+prep(balance-19, out-21)
+advmod(out-21, then-22)
+poss(twice-25, its-23)
+quantmod(twice-25, just-24)
+pobj(out-21, twice-25)
+advmod(dangerous-27, as-26)
+amod(twice-25, dangerous-27)
+num(lefts-30, two-29)
+nsubj(make-33, lefts-30)
+aux(make-33, do-31)
+neg(make-33, n't-32)
+root(ROOT-0, make-33)
+det(right-35, a-34)
+dobj(make-33, right-35)
+
+(ROOT
+  (S
+    (NP
+      (NP (NN Anyone))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBZ is)
+            (VP (VBN considered)
+              (NP (DT a) (`` ``) (NN criminal) ('' '')))))))
+    (VP
+      (VP (VBZ is)
+        (PP (IN on)
+          (NP
+            (NP (NN record))
+            (PP (IN by)
+              (NP (DT the) (NNP US) (NN government))))))
+      (CC and)
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN searched)
+            (PP (IN before)
+              (NP
+                (NP (DT the) (NNS citizens))
+                (PP (IN for)
+                  (NP (DT that) (NN reason)))))))))
+    (. .)))
+
+nsubjpass(considered-4, Anyone-1)
+nsubj(is-9, Anyone-1)
+nsubjpass(searched-19, Anyone-1)
+auxpass(considered-4, is-3)
+rcmod(Anyone-1, considered-4)
+det(criminal-7, a-5)
+dobj(considered-4, criminal-7)
+root(ROOT-0, is-9)
+prep_on(is-9, record-11)
+det(government-15, the-13)
+nn(government-15, US-14)
+prep_by(record-11, government-15)
+aux(searched-19, will-17)
+auxpass(searched-19, be-18)
+conj_and(is-9, searched-19)
+det(citizens-22, the-21)
+prep_before(searched-19, citizens-22)
+det(reason-25, that-24)
+prep_for(citizens-22, reason-25)
+
+(ROOT
+  (S
+    (NP (DT The) (NN government))
+    (VP (VBZ is)
+      (ADJP (JJ smart) (RB enough)
+        (S
+          (VP (TO to)
+            (VP (VB realize)
+              (SBAR (IN that)
+                (S
+                  (NP (NNS criminals))
+                  (VP (MD would)
+                    (VP (VB have)
+                      (NP
+                        (NP (NNS guns))
+                        (, ,)
+                        (NP
+                          (NP (PRP$ its) (RB not) (NN something) (NNS thats))
+                          (VP
+                            (ADVP (RB just))
+                            (VBN overlooked)))))))))))))
+    (. .)))
+
+det(government-2, The-1)
+nsubj(smart-4, government-2)
+cop(smart-4, is-3)
+root(ROOT-0, smart-4)
+advmod(smart-4, enough-5)
+aux(realize-7, to-6)
+xcomp(smart-4, realize-7)
+complm(have-11, that-8)
+nsubj(have-11, criminals-9)
+aux(have-11, would-10)
+ccomp(realize-7, have-11)
+dobj(have-11, guns-12)
+poss(thats-17, its-14)
+neg(thats-17, not-15)
+nn(thats-17, something-16)
+appos(guns-12, thats-17)
+advmod(overlooked-19, just-18)
+partmod(thats-17, overlooked-19)
+

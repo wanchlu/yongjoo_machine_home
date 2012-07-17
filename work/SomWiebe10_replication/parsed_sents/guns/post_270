@@ -1,0 +1,147 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB want)
+        (S
+          (VP (TO to)
+            (VP (VB live)
+              (PP (IN in)
+                (NP (DT a) (NN land)))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP
+                    (NP (JJ only) (NNS criminals))
+                    (CC and)
+                    (NP (JJ political) (NNS folks)))
+                  (VP (VBP decide)
+                    (SBAR
+                      (WHNP (WP who))
+                      (S
+                        (VP (MD can)
+                          (VP (VB have)
+                            (S
+                              (NP
+                                (NP (DT a) (NN gun))
+                                (, ,)
+                                (NP
+                                  (ADJP (RB too) (JJ many))
+                                  (ADJP (RB politically) (VBN inclined))
+                                  (NNS people)))
+                              (VP (VB turn)
+                                (PRT (RP out))
+                                (S
+                                  (VP (TO to)
+                                    (VP (VB be)
+                                      (NP (NNS criminals))
+                                      (ADVP (RB also)))))))))))))))))))
+    (. .)))
+
+nsubj(want-4, I-1)
+xsubj(live-6, I-1)
+aux(want-4, do-2)
+neg(want-4, n't-3)
+root(ROOT-0, want-4)
+aux(live-6, to-5)
+xcomp(want-4, live-6)
+det(land-9, a-8)
+prep_in(live-6, land-9)
+advmod(decide-16, where-10)
+amod(criminals-12, only-11)
+nsubj(decide-16, criminals-12)
+amod(folks-15, political-14)
+conj_and(criminals-12, folks-15)
+nsubj(decide-16, folks-15)
+advcl(live-6, decide-16)
+nsubj(have-19, who-17)
+aux(have-19, can-18)
+ccomp(decide-16, have-19)
+det(gun-21, a-20)
+nsubj(turn-28, gun-21)
+xsubj(criminals-32, gun-21)
+advmod(many-24, too-23)
+amod(people-27, many-24)
+advmod(inclined-26, politically-25)
+amod(people-27, inclined-26)
+appos(gun-21, people-27)
+ccomp(have-19, turn-28)
+prt(turn-28, out-29)
+aux(criminals-32, to-30)
+cop(criminals-32, be-31)
+xcomp(turn-28, criminals-32)
+advmod(criminals-32, also-33)
+
+(ROOT
+  (S
+    (VP (VBG Speaking)
+      (PP (IN of)
+        (NP
+          (NP (NNS guns))
+          (CC and)
+          (NP (JJR bigger) (NNS bangs)))))
+    (: ...)))
+
+root(ROOT-0, Speaking-1)
+prep_of(Speaking-1, guns-3)
+amod(bangs-6, bigger-5)
+prep_of(Speaking-1, bangs-6)
+conj_and(guns-3, bangs-6)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (NNP McCain))
+        (VP (VBD had)
+          (VP (VBN associated)
+            (PP (IN with)
+              (NP (JJ unrepentant) (NN abortion) (NN clinic) (NNS bombers)))))))
+    (VP (MD would)
+      (VP (VB anyone)
+        (PP (IN at)
+          (NP
+            (NP (DT all) (NN vote))
+            (PP (IN for)
+              (NP (PRP him)))))))
+    (. ?)))
+
+mark(associated-4, If-1)
+nsubj(associated-4, McCain-2)
+aux(associated-4, had-3)
+csubj(anyone-11, associated-4)
+amod(bombers-9, unrepentant-6)
+nn(bombers-9, abortion-7)
+nn(bombers-9, clinic-8)
+prep_with(associated-4, bombers-9)
+aux(anyone-11, would-10)
+root(ROOT-0, anyone-11)
+det(vote-14, all-13)
+prep_at(anyone-11, vote-14)
+prep_for(vote-14, him-16)
+
+(ROOT
+  (SBARQ
+    (FRAG (IN If) (RB not))
+    (, ,)
+    (SBARQ
+      (WHADVP (WRB why))
+      (SQ (VBZ is)
+        (NP
+          (NP (NN anyone))
+          (PP (IN at)
+            (NP
+              (NP (DT all) (NN voting))
+              (PP (IN for)
+                (NP (NNP Obama))))))))
+    (. ?)))
+
+dep(is-5, If-1)
+neg(If-1, not-2)
+advmod(is-5, why-4)
+root(ROOT-0, is-5)
+nsubj(is-5, anyone-6)
+det(voting-9, all-8)
+prep_at(anyone-6, voting-9)
+prep_for(voting-9, Obama-11)
+

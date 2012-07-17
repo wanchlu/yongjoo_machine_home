@@ -1,0 +1,403 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN penalty))
+        (PP (IN for)
+          (S
+            (VP (RB not) (VBG having)
+              (NP (NN insurance)))))
+        (PP (IN in)
+          (NP (NNP MA))))
+      (VP (VBZ is)
+        (NP
+          (QP (RB about) ($ $) (CD 900)))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (VBZ 's)
+        (ADVP (RB actually))
+        (ADJP (JJR cheaper))
+        (S
+          (VP (TO to)
+            (VP (VB pay)
+              (NP (DT the) (NN fee))
+              (SBAR (IN than)
+                (S
+                  (VP (TO to)
+                    (VP (VB pay)
+                      (PP (IN for)
+                        (NP (DT the) (NN insurance))))))))))))
+    (. .)))
+
+det(penalty-2, The-1)
+nsubj($-11, penalty-2)
+neg(having-5, not-4)
+prepc_for(penalty-2, having-5)
+dobj(having-5, insurance-6)
+prep_in(penalty-2, MA-8)
+cop($-11, is-9)
+quantmod($-11, about-10)
+root(ROOT-0, $-11)
+number($-11, 900-12)
+nsubj(cheaper-18, it-15)
+xsubj(pay-20, it-15)
+cop(cheaper-18, 's-16)
+advmod(cheaper-18, actually-17)
+conj_and($-11, cheaper-18)
+aux(pay-20, to-19)
+xcomp(cheaper-18, pay-20)
+det(fee-22, the-21)
+dobj(pay-20, fee-22)
+mark(pay-25, than-23)
+aux(pay-25, to-24)
+advcl(pay-20, pay-25)
+xcomp(pay-20, pay-25)
+det(insurance-28, the-27)
+prep_for(pay-25, insurance-28)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP
+      (VP (VBP know)
+        (NP
+          (NP (NNS individuals))
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP have)
+                (VP (VBN paid)
+                  (NP (DT the) (NN penalty))))))))
+      (CONJP (RB rather) (IN than))
+      (VP (VB spend)
+        (NP (JJR more))
+        (PP (IN for)
+          (NP (DT the) (JJ actual) (NN coverage)))))
+    (. .)))
+
+nsubj(know-2, I-1)
+nsubj(spend-11, I-1)
+root(ROOT-0, know-2)
+dobj(know-2, individuals-3)
+nsubj(paid-6, individuals-3)
+aux(paid-6, have-5)
+rcmod(individuals-3, paid-6)
+det(penalty-8, the-7)
+dobj(paid-6, penalty-8)
+conj_negcc(know-2, spend-11)
+dobj(spend-11, more-12)
+det(coverage-16, the-14)
+amod(coverage-16, actual-15)
+prep_for(spend-11, coverage-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP find)
+      (S
+        (NP (DT that))
+        (ADJP (RB incredibly) (JJ depressing))))
+    (. .)))
+
+nsubj(find-2, I-1)
+root(ROOT-0, find-2)
+nsubj(depressing-5, that-3)
+advmod(depressing-5, incredibly-4)
+xcomp(find-2, depressing-5)
+
+(ROOT
+  (S
+    (S
+      (S
+        (NP
+          (NP (JJ Socialist) (NNS countries))
+          (PP (JJ such) (IN as)
+            (NP (NNP Denmark))))
+        (VP (VBP are)
+          (ADJP (RB incredibly) (JJ expensive))))
+      (CC and)
+      (S
+        (NP (DT the) (JJ average) (NN Dane))
+        (VP
+          (VP (VBZ pays)
+            (NP
+              (NP
+                (QP (RB about) (CD 51))
+                (NN %))
+              (PP (IN of)
+                (NP (NN his\/her) (NN paycheck))))
+            (PP (IN in)
+              (NP (NNS taxes))))
+          (, ,)
+          (CC but)
+          (VP (VBP look)
+            (PP (IN at)
+              (NP (DT the) (NNPS Danes)))))))
+    (: :)
+    (S
+      (NP (PRP they))
+      (VP
+        (VP (VBP 're)
+          (ADJP (JJ healthy)))
+        (CC and)
+        (VP
+          (ADVP (RB well))
+          (VP (VBD tended))
+          (, ,)
+          (VP (VBP have)
+            (NP
+              (NP (DT a)
+                (ADJP (RB very) (JJ high))
+                (NN standard))
+              (PP (IN of)
+                (NP (NN living))))))))
+    (. .)))
+
+amod(countries-2, Socialist-1)
+nsubj(expensive-8, countries-2)
+prep_such_as(countries-2, Denmark-5)
+cop(expensive-8, are-6)
+advmod(expensive-8, incredibly-7)
+root(ROOT-0, expensive-8)
+det(Dane-12, the-10)
+amod(Dane-12, average-11)
+nsubj(pays-13, Dane-12)
+nsubj(look-24, Dane-12)
+conj_and(expensive-8, pays-13)
+quantmod(51-15, about-14)
+num(%-16, 51-15)
+dobj(pays-13, %-16)
+nn(paycheck-19, his\/her-18)
+prep_of(%-16, paycheck-19)
+prep_in(pays-13, taxes-21)
+conj_and(expensive-8, look-24)
+conj_but(pays-13, look-24)
+det(Danes-27, the-26)
+prep_at(look-24, Danes-27)
+nsubj(healthy-31, they-29)
+nsubj(tended-34, they-29)
+cop(healthy-31, 're-30)
+parataxis(expensive-8, healthy-31)
+advmod(tended-34, well-33)
+parataxis(expensive-8, tended-34)
+conj_and(healthy-31, tended-34)
+dep(tended-34, have-36)
+det(standard-40, a-37)
+advmod(high-39, very-38)
+amod(standard-40, high-39)
+dobj(have-36, standard-40)
+prep_of(standard-40, living-42)
+
+(ROOT
+  (S
+    (S
+      (PP (IN In)
+        (NP (DT another) (NN thought)))
+      (, ,)
+      (SBAR (IN if)
+        (S
+          (NP (PRP$ our) (NNS taxes))
+          (ADVP (RB actually))
+          (VP (VBD went)
+            (ADVP (RB somewhere)))))
+      (, ,)
+      (VP (VBD went)
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (PRP they))
+            (VP (VBD were)
+              (VP (VBN supposed)
+                (S
+                  (VP (TO to)))))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB see)
+        (SBAR
+          (WHADVP (WRB why))
+          (S
+            (NP (PRP we))
+            (VP (MD could) (RB n't)
+              (VP (VB pay)
+                (PP
+                  (PP (IN for)
+                    (NP (NN health) (NN care)))
+                  (CC or)
+                  (PP (IN for)
+                    (NP (PRP$ our) (NN university) (NN system))))))))))
+    (. .)))
+
+det(thought-3, another-2)
+prep_in(went-12, thought-3)
+mark(went-9, if-5)
+poss(taxes-7, our-6)
+nsubj(went-9, taxes-7)
+advmod(went-9, actually-8)
+dep(went-12, went-9)
+advmod(went-9, somewhere-10)
+ccomp(see-22, went-12)
+advmod(supposed-16, where-13)
+nsubjpass(supposed-16, they-14)
+xsubj(to-17, they-14)
+auxpass(supposed-16, were-15)
+advcl(went-12, supposed-16)
+xcomp(supposed-16, to-17)
+nsubj(see-22, I-19)
+aux(see-22, do-20)
+neg(see-22, n't-21)
+root(ROOT-0, see-22)
+advmod(pay-27, why-23)
+nsubj(pay-27, we-24)
+aux(pay-27, could-25)
+neg(pay-27, n't-26)
+advcl(see-22, pay-27)
+nn(care-30, health-29)
+prep_for(pay-27, care-30)
+poss(system-35, our-33)
+nn(system-35, university-34)
+prep_for(pay-27, system-35)
+conj_or(care-30, system-35)
+
+(ROOT
+  (S
+    (NP (DT Every) (JJ European) (NN I))
+    (VP (VBP have)
+      (VP (VBN met)
+        (SBAR
+          (SBAR
+            (S
+              (VP
+                (VP (VBZ scoffs))
+                (CC and)
+                (VP (VBZ is)
+                  (ADJP (JJ incredulous)
+                    (SBAR (IN that)
+                      (S
+                        (NP (PRP we))
+                        (VP (VBP have)
+                          (NP (DT no) (JJ universal) (NN healthcare))))))))))
+          (CC and)
+          (SBAR (IN that)
+            (S
+              (NP (PRP we))
+              (VP (VBP pay)
+                (PP (IN for)
+                  (NP (NN university)))))))))
+    (. .)))
+
+det(I-3, Every-1)
+amod(I-3, European-2)
+nsubj(met-5, I-3)
+aux(met-5, have-4)
+root(ROOT-0, met-5)
+ccomp(met-5, scoffs-6)
+cop(incredulous-9, is-8)
+ccomp(met-5, incredulous-9)
+conj_and(scoffs-6, incredulous-9)
+complm(have-12, that-10)
+nsubj(have-12, we-11)
+ccomp(incredulous-9, have-12)
+det(healthcare-15, no-13)
+amod(healthcare-15, universal-14)
+dobj(have-12, healthcare-15)
+complm(pay-19, that-17)
+nsubj(pay-19, we-18)
+ccomp(met-5, pay-19)
+conj_and(scoffs-6, pay-19)
+prep_for(pay-19, university-21)
+
+(ROOT
+  (S (CC And)
+    (PP (TO to)
+      (NP (JJ further) (NN drive) (NN home) (NN frustration)))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP am)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP
+            (NP (DT those))
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP
+                  (VP
+                    (ADVP (RB then))
+                    (VBZ gets)
+                    (NP (JJ tangential)))
+                  (CC and)
+                  (VP (VBZ thinks)
+                    (PP (IN about)
+                      (NP (DT the)
+                        (X (SYM f))
+                        (JJS \*) (NN ing)))
+                    (NP
+                      (NP
+                        (NP (NN war))
+                        (PP (IN in)
+                          (NP (NNP Iraq))))
+                      (CC and)
+                      (NP
+                        (NP (DT the) (JJ other) (JJ heinous) (NN government) (NN spending))
+                        (SBAR
+                          (S
+                            (NP (PRP we))
+                            (VP (VBP 've)
+                              (VP (VBN suffered)
+                                (PP (IN in)
+                                  (NP (DT the) (JJ last) (JJ X) (JJ many) (NNS years)))))))))))))))))
+    (. .)))
+
+cc(one-10, And-1)
+amod(frustration-6, further-3)
+nn(frustration-6, drive-4)
+nn(frustration-6, home-5)
+prep_to(one-10, frustration-6)
+nsubj(one-10, I-8)
+cop(one-10, am-9)
+root(ROOT-0, one-10)
+prep_of(one-10, those-12)
+nsubj(gets-15, those-12)
+nsubj(thinks-18, those-12)
+advmod(gets-15, then-14)
+rcmod(those-12, gets-15)
+dobj(gets-15, tangential-16)
+rcmod(those-12, thinks-18)
+conj_and(gets-15, thinks-18)
+det(ing-23, the-20)
+dep(ing-23, f-21)
+amod(ing-23, \*-22)
+prep_about(thinks-18, ing-23)
+dobj(thinks-18, war-24)
+prep_in(war-24, Iraq-26)
+det(spending-32, the-28)
+amod(spending-32, other-29)
+amod(spending-32, heinous-30)
+nn(spending-32, government-31)
+dobj(thinks-18, spending-32)
+conj_and(war-24, spending-32)
+dobj(suffered-35, spending-32)
+nsubj(suffered-35, we-33)
+aux(suffered-35, 've-34)
+rcmod(spending-32, suffered-35)
+det(years-41, the-37)
+amod(years-41, last-38)
+amod(years-41, X-39)
+amod(years-41, many-40)
+prep_in(suffered-35, years-41)
+
+(ROOT
+  (NP
+    (NP (JJ Big) (NN mess))
+    (, ,)
+    (NP (NN huh) (NNS !?))))
+
+amod(mess-2, Big-1)
+root(ROOT-0, mess-2)
+nn(!?-5, huh-4)
+appos(mess-2, !?-5)
+

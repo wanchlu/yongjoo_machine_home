@@ -1,0 +1,110 @@
+(ROOT
+  (S
+    (S
+      (NP (NNS Knives))
+      (VP (VBP are)
+        (ADJP
+          (ADJP (RBR more) (JJ deadly)
+            (PP (IN than)
+              (NP (NN assault) (NNS weapons))))
+          (SBAR (IN Because)
+            (S
+              (NP (NNS knives))
+              (VP (VBP are)
+                (NP
+                  (NP (DT a)
+                    (ADJP (RBR more) (JJ common))
+                    (NN weapon))
+                  (PP (IN of)
+                    (NP
+                      (NP (NN choice))
+                      (PP (IN for)
+                        (NP (NNS criminals))))))
+                (, ,)
+                (SBAR (RB particularly) (IN because)
+                  (S
+                    (NP (PRP they))
+                    (VP (VBP are)
+                      (ADJP (JJ concealable)))))))))))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP have)
+      (VP (VBN led)
+        (PP (TO to)
+          (NP
+            (NP (JJR more) (NNS deaths))
+            (PP (IN than)
+              (NP (NN assault) (NNS weapons)))))))
+    (. .)))
+
+nsubj(deadly-4, Knives-1)
+cop(deadly-4, are-2)
+advmod(deadly-4, more-3)
+ccomp(led-28, deadly-4)
+nn(weapons-7, assault-6)
+prep_than(deadly-4, weapons-7)
+mark(weapon-14, Because-8)
+nsubj(weapon-14, knives-9)
+cop(weapon-14, are-10)
+det(weapon-14, a-11)
+advmod(common-13, more-12)
+amod(weapon-14, common-13)
+ccomp(deadly-4, weapon-14)
+prep_of(weapon-14, choice-16)
+prep_for(choice-16, criminals-18)
+advmod(concealable-24, particularly-20)
+dep(concealable-24, because-21)
+nsubj(concealable-24, they-22)
+cop(concealable-24, are-23)
+dep(weapon-14, concealable-24)
+nsubj(led-28, they-26)
+aux(led-28, have-27)
+root(ROOT-0, led-28)
+amod(deaths-31, more-30)
+prep_to(led-28, deaths-31)
+nn(weapons-34, assault-33)
+prep_than(deaths-31, weapons-34)
+
+(ROOT
+  (S
+    (ADVP (RB Yet))
+    (, ,)
+    (NP (NNP Knives))
+    (VP (VBP are) (RB n't)
+      (VP (VBN banned)))
+    (. .)))
+
+advmod(banned-6, Yet-1)
+nsubjpass(banned-6, Knives-3)
+auxpass(banned-6, are-4)
+neg(banned-6, n't-5)
+root(ROOT-0, banned-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ important)
+        (S
+          (VP (TO to)
+            (VP (VB keep)
+              (NP
+                (NP (DT the)
+                  (ADJP (RB relatively) (JJ low))
+                  (JJ societal) (NNS risks))
+                (PP (IN in)
+                  (NP (NN mind)))))))))
+    (. .)))
+
+nsubj(important-3, It-1)
+cop(important-3, 's-2)
+root(ROOT-0, important-3)
+aux(keep-5, to-4)
+xcomp(important-3, keep-5)
+det(risks-10, the-6)
+advmod(low-8, relatively-7)
+amod(risks-10, low-8)
+amod(risks-10, societal-9)
+dobj(keep-5, risks-10)
+prep_in(risks-10, mind-12)
+

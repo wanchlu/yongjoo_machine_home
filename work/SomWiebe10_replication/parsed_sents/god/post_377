@@ -1,0 +1,83 @@
+(ROOT
+  (SBARQ
+    (S
+      (VP (VB ask)
+        (NP (PRP yourself))))
+    (, ,)
+    (WHNP (WRB how))
+    (SQ (VBD did)
+      (NP (NNS humans))
+      (VP (VBN existed)
+        (PP (IN in)
+          (NP (DT this) (NN world)))))
+    (. ?)))
+
+dep(existed-7, ask-1)
+dobj(ask-1, yourself-2)
+dep(existed-7, how-4)
+aux(existed-7, did-5)
+nsubj(existed-7, humans-6)
+root(ROOT-0, existed-7)
+det(world-10, this-9)
+prep_in(existed-7, world-10)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (RB very) (JJ impossible))
+      (SBAR (IN that)
+        (S
+          (PP (IN without)
+            (NP (DT any) (NN creator)))
+          (, ,)
+          (NP (NNS people))
+          (VP (MD would)
+            (VP (VB exist)
+              (PP (IN in)
+                (NP (DT this) (NN world))))))))
+    (. .)))
+
+nsubj(impossible-4, It-1)
+cop(impossible-4, is-2)
+advmod(impossible-4, very-3)
+root(ROOT-0, impossible-4)
+complm(exist-12, that-5)
+det(creator-8, any-7)
+prep_without(exist-12, creator-8)
+nsubj(exist-12, people-10)
+aux(exist-12, would-11)
+ccomp(impossible-4, exist-12)
+det(world-15, this-14)
+prep_in(exist-12, world-15)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN pair))
+      (PP (IN of)
+        (NP (NNS cells))))
+    (VP (VBZ is)
+      (VP (VBN needed)
+        (PP (IN in)
+          (NP (NN order)))
+        (S
+          (VP (TO to)
+            (VP (VB produce)
+              (NP (DT a) (JJ new) (NN living) (NN thing)))))))
+    (. .)))
+
+det(pair-2, A-1)
+nsubjpass(needed-6, pair-2)
+xsubj(produce-10, pair-2)
+prep_of(pair-2, cells-4)
+auxpass(needed-6, is-5)
+root(ROOT-0, needed-6)
+prep_in(needed-6, order-8)
+aux(produce-10, to-9)
+xcomp(needed-6, produce-10)
+det(thing-14, a-11)
+amod(thing-14, new-12)
+nn(thing-14, living-13)
+dobj(produce-10, thing-14)
+

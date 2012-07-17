@@ -1,0 +1,98 @@
+(ROOT
+  (S
+    (NP (NNP Semi) (JJ automatic) (NN assault) (NNS weapons))
+    (VP (VBP are)
+      (ADVP (RB often))
+      (NP
+        (NP (NNP misrepresented) (NNP Semi))
+        (SBAR
+          (S
+            (NP (JJ automatic) (NN assault) (NNS weapons))
+            (VP (VBP are)
+              (NP
+                (NP (NNS weapons))
+                (SBAR
+                  (WHPP (IN in)
+                    (WHNP (WDT which)))
+                  (S
+                    (NP
+                      (NP (CD one) (NN pull))
+                      (PP (IN of)
+                        (NP (DT the) (NN trigger))))
+                    (VP (VBZ shoots)
+                      (NP (CD one) (NN bullet)))))))))))
+    (. .)))
+
+nn(weapons-4, Semi-1)
+amod(weapons-4, automatic-2)
+nn(weapons-4, assault-3)
+nsubj(Semi-8, weapons-4)
+cop(Semi-8, are-5)
+advmod(Semi-8, often-6)
+nn(Semi-8, misrepresented-7)
+root(ROOT-0, Semi-8)
+amod(weapons-11, automatic-9)
+nn(weapons-11, assault-10)
+nsubj(weapons-13, weapons-11)
+cop(weapons-13, are-12)
+rcmod(Semi-8, weapons-13)
+rel(shoots-21, which-15)
+num(pull-17, one-16)
+nsubj(shoots-21, pull-17)
+det(trigger-20, the-19)
+prep_of(pull-17, trigger-20)
+rcmod(weapons-13, shoots-21)
+num(bullet-23, one-22)
+dobj(shoots-21, bullet-23)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS weapons))
+    (VP (VBP are)
+      (ADVP (RB commonly))
+      (VP (VBN used)
+        (PP
+          (PP (IN at)
+            (NP (JJ shooting) (NNS ranges)))
+          (CC and)
+          (PP (IN in)
+            (NP (NN hunting))))))
+    (. .)))
+
+det(weapons-2, These-1)
+nsubjpass(used-5, weapons-2)
+nsubjpass(used-5', weapons-2)
+auxpass(used-5, are-3)
+advmod(used-5, commonly-4)
+root(ROOT-0, used-5)
+conj_and(used-5, used-5')
+amod(ranges-8, shooting-7)
+prep_at(used-5, ranges-8)
+prep_in(used-5', hunting-11)
+
+(ROOT
+  (S
+    (ADVP (RB Yet))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADVP (RB often))
+      (VP (VBN misrepresented)
+        (PP (IN as) (`` ``)
+          (NP (NN machine) (NNS guns))
+          ('' ''))
+        (PP (IN with)
+          (NP (JJ heavy) (JJ destructive) (NN force)))))
+    (. .)))
+
+advmod(misrepresented-6, Yet-1)
+nsubjpass(misrepresented-6, they-3)
+auxpass(misrepresented-6, are-4)
+advmod(misrepresented-6, often-5)
+root(ROOT-0, misrepresented-6)
+nn(guns-10, machine-9)
+prep_as(misrepresented-6, guns-10)
+amod(force-15, heavy-13)
+amod(force-15, destructive-14)
+prep_with(misrepresented-6, force-15)
+

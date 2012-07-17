@@ -1,0 +1,250 @@
+(ROOT
+  (SQ (VBP Are)
+    (NP (EX there))
+    (VP
+      (ADVP (RBR more))
+      (VBN guns)
+      (PRT (RP out))
+      (NP (RB there) (NN today)))
+    (. ?)))
+
+auxpass(guns-4, Are-1)
+expl(guns-4, there-2)
+advmod(guns-4, more-3)
+root(ROOT-0, guns-4)
+prt(guns-4, out-5)
+advmod(today-7, there-6)
+tmod(guns-4, today-7)
+
+(ROOT
+  (S
+    (ADVP (RB Yes))
+    (NP (EX there))
+    (VP (VBZ is))
+    (. ...)))
+
+advmod(is-3, Yes-1)
+expl(is-3, there-2)
+root(ROOT-0, is-3)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (S
+    (VP (VB and)
+      (ADVP
+        (NP (DT a) (RB lot))
+        (RBR more)))
+    (. .)))
+
+root(ROOT-0, and-1)
+det(lot-3, a-2)
+npadvmod(more-4, lot-3)
+advmod(and-1, more-4)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (JJR more) (NNS guns))
+        (VP (JJ equal)
+          (NP (JJR more) (NNS deaths)))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (VBZ has)
+      (NP (DT the) (NN death) (NN rate))
+      (VP (VBN decreased)
+        (NP
+          (NP
+            (QP (RB about) (CD 40))
+            (NN %))
+          (PP (IN in)
+            (NP (DT the) (NNS governments))))
+        (S
+          (NP (JJS latest) (NNS statistics)))))
+    (. .)))
+
+mark(equal-4, If-1)
+amod(guns-3, more-2)
+nsubj(equal-4, guns-3)
+advcl(decreased-13, equal-4)
+amod(deaths-6, more-5)
+dobj(equal-4, deaths-6)
+advmod(decreased-13, why-8)
+aux(decreased-13, has-9)
+det(rate-12, the-10)
+nn(rate-12, death-11)
+nsubj(decreased-13, rate-12)
+root(ROOT-0, decreased-13)
+quantmod(40-15, about-14)
+num(%-16, 40-15)
+dobj(decreased-13, %-16)
+det(governments-19, the-18)
+prep_in(%-16, governments-19)
+amod(statistics-21, latest-20)
+dep(decreased-13, statistics-21)
+
+(ROOT
+  (S
+    (NP (NNP Japan))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ homogenious) (NN society))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ has)
+              (NP
+                (QP (NNS thousands) (IN of) (NNS years))
+                (JJ social) (NN structure))
+              (PP (IN unlike)
+                (NP (DT these) (NNP United) (NNPS States))))))))
+    (. .)))
+
+nsubj(society-5, Japan-1)
+cop(society-5, is-2)
+det(society-5, a-3)
+amod(society-5, homogenious-4)
+root(ROOT-0, society-5)
+nsubj(has-7, society-5)
+rcmod(society-5, has-7)
+dep(years-10, thousands-8)
+quantmod(years-10, of-9)
+num(structure-12, years-10)
+amod(structure-12, social-11)
+dobj(has-7, structure-12)
+det(States-16, these-14)
+nn(States-16, United-15)
+prep_unlike(has-7, States-16)
+
+(ROOT
+  (S
+    (ADVP (RB Yes))
+    (NP (PRP they))
+    (VP (VBP have)
+      (NP (JJ few) (NNS guns)))
+    (. .)))
+
+advmod(have-3, Yes-1)
+nsubj(have-3, they-2)
+root(ROOT-0, have-3)
+amod(guns-5, few-4)
+dobj(have-3, guns-5)
+
+(ROOT
+  (S
+    (INTJ (UH Yes))
+    (, ,)
+    (NP (DT the) (NN suicide) (NN rate))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB much) (JJR higher))
+        (PP (IN than)
+          (NP (PRP ours)))))
+    (. .)))
+
+dep(higher-8, Yes-1)
+det(rate-5, the-3)
+nn(rate-5, suicide-4)
+nsubj(higher-8, rate-5)
+cop(higher-8, is-6)
+advmod(higher-8, much-7)
+root(ROOT-0, higher-8)
+prep_than(higher-8, ours-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Austrailia))
+      (, ,)
+      (NP (NNP Great) (NNP Britain))
+      (, ,)
+      (CC and)
+      (NP (NNP Canada)))
+    (VP (VBP have)
+      (VP
+        (ADVP (RB greatly))
+        (VBN restricted)
+        (CC or)
+        (VBN banned)
+        (NP
+          (NP (JJS most))
+          (SBAR
+            (S
+              (VP
+                (VP (VBZ firearms))
+                (CC and)
+                (VP
+                  (ADVP (RB now))
+                  (VBP are)
+                  (VP (VBG experiencing)
+                    (NP
+                      (NP (DT a) (JJ huge) (NN increase))
+                      (PP (IN in)
+                        (NP (NN crime))))))))))
+        (PP (VBN compared)
+          (PP (TO to)
+            (NP (RB before) (DT the) (NNS restrictions))))))
+    (. .)))
+
+nsubj(restricted-10, Austrailia-1)
+nsubj(banned-12, Austrailia-1)
+nn(Britain-4, Great-3)
+conj_and(Austrailia-1, Britain-4)
+nsubj(restricted-10, Britain-4)
+conj_and(Austrailia-1, Canada-7)
+nsubj(restricted-10, Canada-7)
+aux(restricted-10, have-8)
+advmod(restricted-10, greatly-9)
+root(ROOT-0, restricted-10)
+conj_or(restricted-10, banned-12)
+dobj(restricted-10, most-13)
+rcmod(most-13, firearms-14)
+advmod(experiencing-18, now-16)
+aux(experiencing-18, are-17)
+rcmod(most-13, experiencing-18)
+conj_and(firearms-14, experiencing-18)
+det(increase-21, a-19)
+amod(increase-21, huge-20)
+dobj(experiencing-18, increase-21)
+prep_in(increase-21, crime-23)
+prepc_compared_to(restricted-10, to-25)
+advmod(restrictions-28, before-26)
+det(restrictions-28, the-27)
+pobj(restricted-10, restrictions-28)
+
+(ROOT
+  (SQ
+    (VP (VB Remember)
+      (SBAR
+        (WHADVP (WRB when))
+        (S
+          (NP (DT the) (NNPS Bobbies))
+          (VP (VBD did) (RB n't)
+            (VP (VB carry)
+              (NP (NNS firearms)))))))
+    (. ?)))
+
+root(ROOT-0, Remember-1)
+advmod(carry-7, when-2)
+det(Bobbies-4, the-3)
+nsubj(carry-7, Bobbies-4)
+aux(carry-7, did-5)
+neg(carry-7, n't-6)
+advcl(Remember-1, carry-7)
+dobj(carry-7, firearms-8)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ
+      (VP (VBZ has)
+        (VP (VBN changed))))
+    (. ?)))
+
+nsubj(changed-3, What-1)
+aux(changed-3, has-2)
+root(ROOT-0, changed-3)
+

@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN government))
+          (VP (MD should)
+            (VP (VB offer)
+              (NP (JJ Universal) (NN health) (NN care))
+              (SBAR (IN because)
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (ADVP (RB already))
+                    (PP (IN over)
+                      (NP
+                        (NP
+                          (QP (CD 40) (CD million))
+                          (JJ uninsured) (NNS Americans))
+                        (VP (VBG living)
+                          (PP (IN in)
+                            (NP (DT the) (NNP U.S.))))))))))))))
+    (. .)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+complm(offer-7, that-3)
+det(government-5, the-4)
+nsubj(offer-7, government-5)
+aux(offer-7, should-6)
+ccomp(think-2, offer-7)
+amod(care-10, Universal-8)
+nn(care-10, health-9)
+dobj(offer-7, care-10)
+mark(is-13, because-11)
+expl(is-13, there-12)
+advcl(offer-7, is-13)
+advmod(is-13, already-14)
+number(million-17, 40-16)
+num(Americans-19, million-17)
+amod(Americans-19, uninsured-18)
+prep_over(is-13, Americans-19)
+partmod(Americans-19, living-20)
+det(U.S.-23, the-22)
+prep_in(living-20, U.S.-23)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP We))
+      (VP (VBP do)
+        (ADVP (RB live))
+        (PP (IN in)
+          (NP (DT the) (JJ 21st) (NN century)))))
+    (CC and)
+    (S
+      (NP (PRP we))
+      (VP (VBP have)
+        (VP
+          (ADVP (RB just)
+            (PP (IN about)
+              (NP (NN everything))))
+          (VBN imaginable) (, ,)
+          (PP (IN except)
+            (NP (JJ Universal) (NN health) (NN care))))))
+    (. .)))
+
+nsubj(do-2, We-1)
+root(ROOT-0, do-2)
+advmod(do-2, live-3)
+det(century-7, the-5)
+amod(century-7, 21st-6)
+prep_in(do-2, century-7)
+nsubj(imaginable-14, we-9)
+aux(imaginable-14, have-10)
+advmod(imaginable-14, just-11)
+prep_about(just-11, everything-13)
+conj_and(do-2, imaginable-14)
+amod(care-19, Universal-17)
+nn(care-19, health-18)
+prep_except(imaginable-14, care-19)
+

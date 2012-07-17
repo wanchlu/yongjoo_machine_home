@@ -1,0 +1,186 @@
+(ROOT
+  (S
+    (NP (DT A) (NN handgun))
+    (VP (VBZ is)
+      (ADJP (RB uniquely) (JJ valuable)
+        (PP (IN in)
+          (NP
+            (NP (NN self) (NN defense))
+            (PP (IN in)
+              (NP
+                (NP
+                  (NP (CD one) (POS 's))
+                  (NN home) (NNP U.S.) (NNP Court))
+                (PP (IN of)
+                  (NP (NNP Appeals))))))))
+      (SBAR (IN for)
+        (S
+          (NP (DT the) (NNP D.C.) (NNP Circuit))
+          (VP (VBD ruled) (, ,) (`` ``)
+            (S
+              (ADVP (RB Essentially))
+              (, ,)
+              (NP (DT the) (NNS appellants))
+              (VP (VBP claim)
+                (S
+                  (NP (DT a) (NN right))
+                  (VP (TO to)
+                    (VP (VB possess)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP describe)
+                            (PP (IN as)
+                              (NP
+                                (NP (`` ``) (JJ functional) (NNS firearms) ('' ''))
+                                (, ,)
+                                (SBAR
+                                  (WHPP (IN by)
+                                    (WHNP (WDT which)))
+                                  (S
+                                    (NP (PRP they))
+                                    (VP (VBP mean)
+                                      (NP
+                                        (NP (NNS ones))
+                                        (SBAR
+                                          (WHNP (WDT that))
+                                          (S
+                                            (VP (MD could)
+                                              (VP (VB be)
+                                                (ADJP (`` ``) (RB readily) (JJ accessible)
+                                                  (S
+                                                    (VP (TO to)
+                                                      (VP (VB be)
+                                                        (VP (VBN used)))))))))))))))))))
+                      (ADVP (RB effectively))
+                      (SBAR
+                        (WHADVP (WRB when))
+                        (S
+                          (ADJP (JJ necessary) ('' '')
+                            (PP (IN for)
+                              (NP (NN self-defense)))
+                            (PP (IN in)
+                              (NP (DT the) (NN home)))))))))))))))
+    (. .)))
+
+det(handgun-2, A-1)
+nsubj(valuable-5, handgun-2)
+cop(valuable-5, is-3)
+advmod(valuable-5, uniquely-4)
+root(ROOT-0, valuable-5)
+nn(defense-8, self-7)
+prep_in(valuable-5, defense-8)
+poss(Court-14, one-10)
+nn(Court-14, home-12)
+nn(Court-14, U.S.-13)
+prep_in(defense-8, Court-14)
+prep_of(Court-14, Appeals-16)
+mark(ruled-21, for-17)
+det(Circuit-20, the-18)
+nn(Circuit-20, D.C.-19)
+nsubj(ruled-21, Circuit-20)
+advcl(valuable-5, ruled-21)
+advmod(claim-28, Essentially-24)
+det(appellants-27, the-26)
+nsubj(claim-28, appellants-27)
+ccomp(ruled-21, claim-28)
+det(right-30, a-29)
+nsubj(possess-32, right-30)
+aux(possess-32, to-31)
+xcomp(claim-28, possess-32)
+dobj(describe-35, what-33)
+nsubj(describe-35, they-34)
+ccomp(possess-32, describe-35)
+amod(firearms-39, functional-38)
+prep_as(describe-35, firearms-39)
+rel(mean-45, which-43)
+nsubj(mean-45, they-44)
+rcmod(firearms-39, mean-45)
+dobj(mean-45, ones-46)
+nsubj(accessible-52, ones-46)
+aux(accessible-52, could-48)
+cop(accessible-52, be-49)
+advmod(accessible-52, readily-51)
+rcmod(ones-46, accessible-52)
+aux(used-55, to-53)
+auxpass(used-55, be-54)
+xcomp(accessible-52, used-55)
+advmod(possess-32, effectively-56)
+advmod(necessary-58, when-57)
+advcl(possess-32, necessary-58)
+prep_for(necessary-58, self-defense-61)
+det(home-64, the-63)
+prep_in(necessary-58, home-64)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP are) (RB not)
+      (VP (VBG asserting)
+        (NP (DT a) (NN right)
+          (S
+            (VP (TO to)
+              (VP (VB carry)
+                (NP (JJ such) (NNS weapons))
+                (PP (IN outside)
+                  (NP (PRP$ their) (NNS homes)))))))))
+    (. .)))
+
+nsubj(asserting-4, They-1)
+aux(asserting-4, are-2)
+neg(asserting-4, not-3)
+root(ROOT-0, asserting-4)
+det(right-6, a-5)
+dobj(asserting-4, right-6)
+aux(carry-8, to-7)
+infmod(right-6, carry-8)
+amod(weapons-10, such-9)
+dobj(carry-8, weapons-10)
+poss(homes-13, their-12)
+prep_outside(carry-8, homes-13)
+
+(ROOT
+  (SINV (CC Nor)
+    (VBP are)
+    (NP
+      (NP (PRP they))
+      (VP (VBG challenging)
+        (NP
+          (NP (DT the) (NNP District) (POS 's))
+          (NN authority))
+        (ADVP (FW per) (FW se))
+        (S
+          (VP (TO to)
+            (VP (VB require)
+              (NP
+                (NP (DT the) (NN registration))
+                (PP (IN of)
+                  (NP (NNS firearms)))))))))
+    (. .)))
+
+cc(they-3, Nor-1)
+dep(they-3, are-2)
+root(ROOT-0, they-3)
+xsubj(require-12, they-3)
+partmod(they-3, challenging-4)
+det(District-6, the-5)
+poss(authority-8, District-6)
+dobj(challenging-4, authority-8)
+nn(se-10, per-9)
+advmod(challenging-4, se-10)
+aux(require-12, to-11)
+xcomp(challenging-4, require-12)
+det(registration-14, the-13)
+dobj(require-12, registration-14)
+prep_of(registration-14, firearms-16)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 3))
+      (-RRB- -RRB-))))
+
+appos(''-1, 3-3)
+

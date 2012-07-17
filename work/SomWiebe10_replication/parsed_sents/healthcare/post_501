@@ -1,0 +1,57 @@
+(ROOT
+  (FRAG
+    (NP (NNP OMG))
+    (. !)))
+
+root(ROOT-0, OMG-1)
+
+(ROOT
+  (NP (CD Grow) (RB up) (. !)))
+
+root(ROOT-0, Grow-1)
+advmod(Grow-1, up-2)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP want)
+          (S
+            (NP (DT the) (NN government))
+            (VP (TO to)
+              (VP (VB take)
+                (NP
+                  (NP (NN care))
+                  (PP (IN of)
+                    (NP (PRP you))))
+                (ADVP (RB then))))))))
+    (NP (PRP you))
+    (ADVP (RB never))
+    (VP (VBD stopped)
+      (S
+        (VP (VBG suckling)
+          (PP (IN on)
+            (NP
+              (NP (PRP$ your) (NN mother) (POS 's))
+              (NN tit))))))
+    (. !)))
+
+mark(want-3, If-1)
+nsubj(want-3, you-2)
+advcl(stopped-14, want-3)
+det(government-5, the-4)
+nsubj(take-7, government-5)
+aux(take-7, to-6)
+xcomp(want-3, take-7)
+dobj(take-7, care-8)
+prep_of(care-8, you-10)
+advmod(take-7, then-11)
+nsubj(stopped-14, you-12)
+neg(stopped-14, never-13)
+root(ROOT-0, stopped-14)
+xcomp(stopped-14, suckling-15)
+poss(mother-18, your-17)
+poss(tit-20, mother-18)
+prep_on(suckling-15, tit-20)
+

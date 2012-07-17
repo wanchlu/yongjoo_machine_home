@@ -1,0 +1,135 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP love)
+      (NP (PRP$ my) (NN family)))
+    (. .)))
+
+nsubj(love-2, I-1)
+root(ROOT-0, love-2)
+poss(family-4, my-3)
+dobj(love-2, family-4)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP protect)
+      (NP (PRP$ my) (NN family)))
+    (. .)))
+
+nsubj(protect-2, I-1)
+root(ROOT-0, protect-2)
+poss(family-4, my-3)
+dobj(protect-2, family-4)
+
+(ROOT
+  (S
+    (NP (DT An) (NN intruder))
+    (VP (MD would) (RB not)
+      (VP (VB hesitate)
+        (S
+          (VP (TO to)
+            (VP (VB use)
+              (NP
+                (NP (NN his\/her) (NN weapon))
+                (PP (IN of)
+                  (NP (NN choice)))))))))
+    (. .)))
+
+det(intruder-2, An-1)
+nsubj(hesitate-5, intruder-2)
+xsubj(use-7, intruder-2)
+aux(hesitate-5, would-3)
+neg(hesitate-5, not-4)
+root(ROOT-0, hesitate-5)
+aux(use-7, to-6)
+xcomp(hesitate-5, use-7)
+nn(weapon-9, his\/her-8)
+dobj(use-7, weapon-9)
+prep_of(weapon-9, choice-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would) (RB not)
+      (VP (VB hesitate)
+        (S
+          (VP (TO to)
+            (VP (VB protect)
+              (NP (PRP$ my) (NN family)))))))
+    (. .)))
+
+nsubj(hesitate-4, I-1)
+xsubj(protect-6, I-1)
+aux(hesitate-4, would-2)
+neg(hesitate-4, not-3)
+root(ROOT-0, hesitate-4)
+aux(protect-6, to-5)
+xcomp(hesitate-4, protect-6)
+poss(family-8, my-7)
+dobj(protect-6, family-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (MD would)
+      (VP (VB choose)
+        (NP (DT this) (NN decision))
+        (SBAR (IN as)
+          (S
+            (VP (VBN opposed)
+              (PP (TO to)
+                (S
+                  (VP (VBG living)
+                    (PP (IN with)
+                      (SBAR
+                        (WHNP (WP what))
+                        (S
+                          (NP (PRP I))
+                          (VP (VBD chose) (`` ``)
+                            (X (RB not))))))))))))
+        ('' '')
+        (S
+          (VP (TO to)
+            (VP (VB do)
+              (SBAR
+                (WHADVP (WRB when))
+                (S
+                  (NP
+                    (NP (NN someone))
+                    (SBAR
+                      (S
+                        (NP (PRP I))
+                        (VP (VBD loved)))))
+                  (VP (VBD was)
+                    (VP (VBN harmed)
+                      (PP (IN in)
+                        (NP (DT a) (NN home) (NN invasion))))))))))))
+    (. .)))
+
+nsubj(choose-3, I-1)
+xsubj(do-18, I-1)
+aux(choose-3, would-2)
+root(ROOT-0, choose-3)
+det(decision-5, this-4)
+dobj(choose-3, decision-5)
+mark(opposed-7, as-6)
+advcl(choose-3, opposed-7)
+prepc_to(opposed-7, living-9)
+dobj(chose-13, what-11)
+nsubj(chose-13, I-12)
+prepc_with(living-9, chose-13)
+dep(chose-13, not-15)
+aux(do-18, to-17)
+xcomp(choose-3, do-18)
+advmod(harmed-24, when-19)
+dobj(loved-22, someone-20)
+nsubjpass(harmed-24, someone-20)
+nsubj(loved-22, I-21)
+rcmod(someone-20, loved-22)
+auxpass(harmed-24, was-23)
+advcl(do-18, harmed-24)
+det(invasion-28, a-26)
+nn(invasion-28, home-27)
+prep_in(harmed-24, invasion-28)
+

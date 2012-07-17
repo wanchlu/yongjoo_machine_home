@@ -1,0 +1,120 @@
+(ROOT
+  (S
+    (NP (VBG Aging) (NNS countries))
+    (VP (MD can) (RB not)
+      (VP (VB afford)
+        (NP (JJ universal) (NN health) (NN care))))
+    (. .)))
+
+amod(countries-2, Aging-1)
+nsubj(afford-5, countries-2)
+aux(afford-5, can-3)
+neg(afford-5, not-4)
+root(ROOT-0, afford-5)
+amod(care-8, universal-6)
+nn(care-8, health-7)
+dobj(afford-5, care-8)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT a) (NN country))
+        (VP (VBZ 's)
+          (NP (NN population) (NNS ages)))))
+    (, ,)
+    (NP
+      (NP (DT the) (NN strain))
+      (PP (IN of)
+        (NP (DT a) (JJ universal) (NN health) (NN care) (NN program))))
+    (VP (VBZ grows) (, ,)
+      (PP (IN with)
+        (NP
+          (NP (DT a) (JJR larger) (NN percentage))
+          (PP (IN of)
+            (NP (DT the) (NN population)))))
+      (S
+        (VP (VBG reaching)
+          (NP
+            (NP (DT an) (NN age))
+            (SBAR
+              (WHPP (IN in)
+                (WHNP (WDT which)))
+              (S
+                (NP (PRP they))
+                (VP (VBP require)
+                  (NP (NN health) (NN care)))))))))
+    (. .)))
+
+advmod(ages-6, When-1)
+det(country-3, a-2)
+nsubj(ages-6, country-3)
+cop(ages-6, 's-4)
+nn(ages-6, population-5)
+advcl(grows-16, ages-6)
+det(strain-9, the-8)
+nsubj(grows-16, strain-9)
+det(program-15, a-11)
+amod(program-15, universal-12)
+nn(program-15, health-13)
+nn(program-15, care-14)
+prep_of(strain-9, program-15)
+root(ROOT-0, grows-16)
+det(percentage-21, a-19)
+amod(percentage-21, larger-20)
+prep_with(grows-16, percentage-21)
+det(population-24, the-23)
+prep_of(percentage-21, population-24)
+xcomp(grows-16, reaching-25)
+det(age-27, an-26)
+dobj(reaching-25, age-27)
+rel(require-31, which-29)
+nsubj(require-31, they-30)
+rcmod(age-27, require-31)
+nn(care-33, health-32)
+dobj(require-31, care-33)
+
+(ROOT
+  (S
+    (ADVP (RB Therefore))
+    (, ,)
+    (PP (IN in)
+      (NP
+        (NP (NNS countries))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (DT the) (NN population))
+            (VP (VBZ is)
+              (VP (VBG aging)))))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD may)
+      (VP (VB be)
+        (ADJP (JJ important)
+          (S
+            (VP (TO to)
+              (VP (VB avoid)
+                (NP (DT a) (JJ universal) (NN health) (NN care) (NN program))))))))
+    (. .)))
+
+advmod(important-14, Therefore-1)
+prep_in(important-14, countries-4)
+advmod(aging-9, where-5)
+det(population-7, the-6)
+nsubj(aging-9, population-7)
+aux(aging-9, is-8)
+rcmod(countries-4, aging-9)
+nsubj(important-14, it-11)
+aux(important-14, may-12)
+cop(important-14, be-13)
+root(ROOT-0, important-14)
+aux(avoid-16, to-15)
+xcomp(important-14, avoid-16)
+det(program-21, a-17)
+amod(program-21, universal-18)
+nn(program-21, health-19)
+nn(program-21, care-20)
+dobj(avoid-16, program-21)
+

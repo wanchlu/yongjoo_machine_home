@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (NP (PRP we))
+    (VP (VBP need)
+      (S
+        (NP (NNS guns))
+        (ADJP (JJ !!))))))
+
+nsubj(need-2, we-1)
+root(ROOT-0, need-2)
+nsubj(!!-4, guns-3)
+xcomp(need-2, !!-4)
+
+(ROOT
+  (SBARQ
+    (WHNP (WRB how) (RB else))
+    (SQ (VBP are)
+      (NP (PRP we))
+      (VP (VBG gonna)
+        (NP (NN shoot) (NNS people))
+        (SBAR (IN that)
+          (S
+            (NP (NN dont))
+            (VP (VBP agree)
+              (SBAR (IN with)
+                (S
+                  (NP (PRP us))
+                  (VP (VBZ !!)))))))))))
+
+advmod(else-2, how-1)
+dep(gonna-5, else-2)
+aux(gonna-5, are-3)
+nsubj(gonna-5, we-4)
+root(ROOT-0, gonna-5)
+nn(people-7, shoot-6)
+dobj(gonna-5, people-7)
+complm(agree-10, that-8)
+nsubj(agree-10, dont-9)
+ccomp(gonna-5, agree-10)
+mark(!!-13, with-11)
+nsubj(!!-13, us-12)
+advcl(agree-10, !!-13)
+

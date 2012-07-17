@@ -1,0 +1,58 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD meant)
+      (SBAR (IN that)
+        (S
+          (NP (PRP I))
+          (VP (VBD wanted)
+            (NP (NNS guns))
+            (S
+              (VP (TO to)
+                (VP (VB be)
+                  (VP (VBN kept)
+                    (PP (IN in)
+                      (NP (DT the) (JJ right) (NNS hands)))))))))))
+    (. .)))
+
+nsubj(meant-2, I-1)
+root(ROOT-0, meant-2)
+complm(wanted-5, that-3)
+nsubj(wanted-5, I-4)
+ccomp(meant-2, wanted-5)
+dobj(wanted-5, guns-6)
+aux(kept-9, to-7)
+auxpass(kept-9, be-8)
+xcomp(wanted-5, kept-9)
+det(hands-13, the-11)
+amod(hands-13, right-12)
+prep_in(kept-9, hands-13)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD did) (RB not)
+      (VP (VB mean)
+        (SBAR (IN that)
+          (S
+            (NP (PRP I))
+            (VP (VBD wanted)
+              (NP (NNS guns))
+              (S
+                (VP (TO to)
+                  (VP (VB be)
+                    (VP (VBN banned))))))))))
+    (. .)))
+
+nsubj(mean-4, I-1)
+aux(mean-4, did-2)
+neg(mean-4, not-3)
+root(ROOT-0, mean-4)
+complm(wanted-7, that-5)
+nsubj(wanted-7, I-6)
+ccomp(mean-4, wanted-7)
+dobj(wanted-7, guns-8)
+aux(banned-11, to-9)
+auxpass(banned-11, be-10)
+xcomp(wanted-7, banned-11)
+

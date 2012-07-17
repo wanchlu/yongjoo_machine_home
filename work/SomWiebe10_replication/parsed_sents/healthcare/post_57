@@ -1,0 +1,231 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance) (NN option))
+    (VP (VBZ has)
+      (NP
+        (NP (JJR lower) (JJ administrative) (NNS costs))
+        (NP (NNP Robert) (NNP Reich))))
+    (. .)))
+
+nn(option-3, Public-1)
+nn(option-3, insurance-2)
+nsubj(has-4, option-3)
+root(ROOT-0, has-4)
+amod(costs-7, lower-5)
+amod(costs-7, administrative-6)
+dobj(has-4, costs-7)
+iobj(has-4, costs-7)
+nn(Reich-9, Robert-8)
+dobj(has-4, Reich-9)
+dep(costs-7, Reich-9)
+
+(ROOT
+  (S ('' '')
+    (PP (VBG Why)
+      (NP
+        (NP (NNS critics))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJ public) (NN option))
+            (PP (IN for)
+              (NP (NN healthcare)))))))
+    (VP (VBP are)
+      (ADJP (JJ wrong) ('' '')))
+    (. .)))
+
+prep_why(wrong-11, critics-3)
+det(option-7, a-5)
+amod(option-7, public-6)
+prep_of(critics-3, option-7)
+prep_for(option-7, healthcare-9)
+cop(wrong-11, are-10)
+root(ROOT-0, wrong-11)
+
+(ROOT
+  (S
+    (VP (VBN Salon))
+    (. .)))
+
+root(ROOT-0, Salon-1)
+
+(ROOT
+  (S
+    (NP (NNP June))
+    (NP
+      (NP (CD 24))
+      (, ,)
+      (FRAG
+        (ADJP (JJ 2009))
+        (: :)))
+    ('' '')
+    (PRN (-LRB- -LRB-)
+      (S
+        (NP (DT the) (NNS critics))
+        (VP (VBP say)))
+      (-RRB- -RRB-))
+    (NP
+      (NP (DT the) (NN public))
+      (NP (NN plan)))
+    (VP (VBZ starts)
+      (PRT (RP off))
+      (PP (IN with)
+        (NP (DT an) (JJ unfair) (NN advantage)))
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ 's)
+            (ADJP (JJ likely)
+              (S
+                (VP (TO to)
+                  (VP (VB have)
+                    (NP (JJR lower) (JJ administrative) (NNS costs))))))))))
+    (. .)))
+
+tmod(starts-15, June-1)
+nsubj(starts-15, 24-2)
+dep(24-2, 2009-4)
+det(critics-9, the-8)
+nsubj(say-10, critics-9)
+parataxis(starts-15, say-10)
+det(public-13, the-12)
+nsubj(starts-15, public-13)
+dep(public-13, plan-14)
+root(ROOT-0, starts-15)
+prt(starts-15, off-16)
+det(advantage-20, an-18)
+amod(advantage-20, unfair-19)
+prep_with(starts-15, advantage-20)
+mark(likely-24, because-21)
+nsubj(likely-24, it-22)
+cop(likely-24, 's-23)
+advcl(starts-15, likely-24)
+aux(have-26, to-25)
+xcomp(likely-24, have-26)
+amod(costs-29, lower-27)
+amod(costs-29, administrative-28)
+dobj(have-26, costs-29)
+
+(ROOT
+  (SBARQ
+    (SBAR
+      (WHNP (WDT That))
+      (S
+        (VP (MD may)
+          (VP (VB be)
+            (ADJP (JJ true)
+              (SBAR
+                (S
+                  (NP
+                    (NP
+                      (NP (NNP Medicare) (POS 's))
+                      (JJ administrative) (NNS costs))
+                    (PP (IN per)
+                      (NP (NN enrollee))))
+                  (VP (VBP are)
+                    (NP
+                      (NP (DT a) (JJ small) (NN fraction))
+                      (PP (IN of)
+                        (NP
+                          (NP (JJ typical) (JJ private) (NN insurance) (NNS costs))
+                          (PP (CC but)
+                            (NP (RB here))))))
+                    (ADVP (RB again))))))))))
+    (, ,)
+    (WHADVP (WRB why) (RB exactly))
+    (SQ (VBZ is)
+      (NP (DT this))
+      (ADJP (JJ unfair)))
+    (. ?)))
+
+nsubj(true-4, That-1)
+aux(true-4, may-2)
+cop(true-4, be-3)
+dep(unfair-28, true-4)
+poss(costs-8, Medicare-5)
+amod(costs-8, administrative-7)
+nsubj(fraction-14, costs-8)
+prep_per(costs-8, enrollee-10)
+cop(fraction-14, are-11)
+det(fraction-14, a-12)
+amod(fraction-14, small-13)
+dep(true-4, fraction-14)
+amod(costs-19, typical-16)
+amod(costs-19, private-17)
+nn(costs-19, insurance-18)
+prep_of(fraction-14, costs-19)
+prep(costs-19, but-20)
+dep(but-20, here-21)
+advmod(fraction-14, again-22)
+advmod(exactly-25, why-24)
+advmod(unfair-28, exactly-25)
+cop(unfair-28, is-26)
+nsubj(unfair-28, this-27)
+root(ROOT-0, unfair-28)
+
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP
+      (NP (CD one))
+      (PP (IN of)
+        (NP
+          (NP (DT the) (NNS goals))
+          (PP (IN of)
+            (NP
+              (NP (NN healthcare) (NN cost) (NN containment))
+              (PP (TO to)
+                (NP (JJR lower) (JJ administrative) (NNS costs))))))))
+    (. ?)))
+
+root(ROOT-0, Is-1)
+neg(Is-1, n't-2)
+nsubj(Is-1, one-3)
+det(goals-6, the-5)
+prep_of(one-3, goals-6)
+nn(containment-10, healthcare-8)
+nn(containment-10, cost-9)
+prep_of(goals-6, containment-10)
+amod(costs-14, lower-12)
+amod(costs-14, administrative-13)
+prep_to(containment-10, costs-14)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (JJ public) (NN option))
+        (VP (VBZ pushes)
+          (S
+            (NP (JJ private) (NNS plans))
+            (VP (TO to)
+              (VP
+                (VP (VB trim)
+                  (NP (PRP$ their) (NNS bureaucracies)))
+                (CC and)
+                (VP (VB become)
+                  (ADJP (RBR more) (JJ efficient)))))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (ADJP (JJ fine)))
+    (. .)))
+
+mark(pushes-5, If-1)
+det(option-4, the-2)
+amod(option-4, public-3)
+nsubj(pushes-5, option-4)
+advcl(fine-19, pushes-5)
+amod(plans-7, private-6)
+nsubj(trim-9, plans-7)
+nsubj(efficient-15, plans-7)
+aux(trim-9, to-8)
+xcomp(pushes-5, trim-9)
+poss(bureaucracies-11, their-10)
+dobj(trim-9, bureaucracies-11)
+cop(efficient-15, become-13)
+advmod(efficient-15, more-14)
+xcomp(pushes-5, efficient-15)
+conj_and(trim-9, efficient-15)
+nsubj(fine-19, that-17)
+cop(fine-19, 's-18)
+root(ROOT-0, fine-19)
+

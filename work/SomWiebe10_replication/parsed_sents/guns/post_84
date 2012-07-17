@@ -1,0 +1,176 @@
+(ROOT
+  (S
+    (NP (NNP Gun))
+    (VP (VBZ bans) (RB only)
+      (VP (VB disarm)
+        (NP
+          (NP (NNS citizens))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP are) (RB not)
+                (ADJP (JJ inclined)
+                  (S
+                    (VP (TO to)
+                      (VP (VB commit)
+                        (NP
+                          (NP (NNS crimes))
+                          (SBAR
+                            (S
+                              (NP
+                                (NP
+                                  (NP (NNP Thomas) (NNP Jefferson))
+                                  (, ,)
+                                  (NP (NNP Commonplace) (NNP Book))
+                                  (, ,)
+                                  (NP (CD 1774-1776)))
+                                (PRN (-LRB- -LRB-)
+                                  (NP (CD 8))
+                                  (-RRB- -RRB-)))
+                              (`` ``)
+                              (VP (VBZ Laws)
+                                (SBAR (IN that)
+                                  (S
+                                    (VP (VBD forbid)
+                                      (NP
+                                        (NP (DT the) (NN carrying))
+                                        (PP (IN of)
+                                          (NP (NNS arms)))))))))))))))))))))
+    (. .)))
+
+nsubj(bans-2, Gun-1)
+root(ROOT-0, bans-2)
+advmod(bans-2, only-3)
+dep(bans-2, disarm-4)
+dobj(disarm-4, citizens-5)
+nsubj(inclined-9, citizens-5)
+cop(inclined-9, are-7)
+neg(inclined-9, not-8)
+rcmod(citizens-5, inclined-9)
+aux(commit-11, to-10)
+xcomp(inclined-9, commit-11)
+dobj(commit-11, crimes-12)
+nn(Jefferson-14, Thomas-13)
+nsubj(Laws-24, Jefferson-14)
+nn(Book-17, Commonplace-16)
+appos(Jefferson-14, Book-17)
+appos(Jefferson-14, 1774-1776-19)
+appos(Jefferson-14, 8-21)
+rcmod(crimes-12, Laws-24)
+complm(forbid-26, that-25)
+ccomp(Laws-24, forbid-26)
+det(carrying-28, the-27)
+dobj(forbid-26, carrying-28)
+prep_of(carrying-28, arms-30)
+
+(ROOT
+  (S
+    (VP (VB disarm)
+      (NP
+        (NP (RB only) (DT those))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP are)
+              (ADJP (CC neither)
+                (ADJP (JJ inclined))
+                (CC nor)
+                (ADJP (JJ determined)
+                  (S
+                    (VP (TO to)
+                      (VP (VB commit)
+                        (NP (NNS crimes))))))))))))
+    (. .)))
+
+root(ROOT-0, disarm-1)
+advmod(those-3, only-2)
+dobj(disarm-1, those-3)
+nsubj(inclined-7, those-3)
+nsubj(determined-9, those-3)
+cop(inclined-7, are-5)
+preconj(inclined-7, neither-6)
+rcmod(those-3, inclined-7)
+rcmod(those-3, determined-9)
+conj_nor(inclined-7, determined-9)
+aux(commit-11, to-10)
+xcomp(determined-9, commit-11)
+dobj(commit-11, crimes-12)
+
+(ROOT
+  (S
+    (S
+      (NP (JJ Such) (NNS laws))
+      (VP (VBP make)
+        (S
+          (NP (NNS things))
+          (ADJP
+            (ADJP (JJR worse)
+              (PP (IN for)
+                (NP (DT the) (NN assaulted))))
+            (CC and)
+            (ADJP (JJR better))))
+        (PP (IN for)
+          (NP (DT the) (NNS assailants)))))
+    (: ;)
+    (S
+      (NP (PRP they))
+      (VP (VBP serve)
+        (S
+          (ADVP (RB rather))
+          (VP (TO to)
+            (VP (VB encourage)
+              (SBAR (IN than)
+                (S
+                  (VP (TO to)
+                    (VP (VB prevent)
+                      (NP (NNS homicides)))))))))
+        (, ,)
+        (SBAR (IN for)
+          (S
+            (NP (DT an) (JJ unarmed) (NN man))
+            (VP (MD may)
+              (VP (VB be)
+                (VP (VBN attacked)
+                  (PP (IN with)
+                    (NP
+                      (NP (JJR greater) (NN confidence))
+                      (PP (IN than)
+                        (NP (DT an) (JJ armed) (NN man))))))))))))
+    (. .) ('' '')))
+
+amod(laws-2, Such-1)
+nsubj(make-3, laws-2)
+root(ROOT-0, make-3)
+nsubj(worse-5, things-4)
+nsubj(better-10, things-4)
+xcomp(make-3, worse-5)
+det(assaulted-8, the-7)
+prep_for(worse-5, assaulted-8)
+xcomp(make-3, better-10)
+conj_and(worse-5, better-10)
+det(assailants-13, the-12)
+prep_for(make-3, assailants-13)
+nsubj(serve-16, they-15)
+xsubj(encourage-19, they-15)
+parataxis(make-3, serve-16)
+advmod(encourage-19, rather-17)
+aux(encourage-19, to-18)
+xcomp(serve-16, encourage-19)
+mark(prevent-22, than-20)
+aux(prevent-22, to-21)
+advcl(encourage-19, prevent-22)
+xcomp(encourage-19, prevent-22)
+dobj(prevent-22, homicides-23)
+mark(attacked-31, for-25)
+det(man-28, an-26)
+amod(man-28, unarmed-27)
+nsubjpass(attacked-31, man-28)
+aux(attacked-31, may-29)
+auxpass(attacked-31, be-30)
+advcl(serve-16, attacked-31)
+amod(confidence-34, greater-33)
+prep_with(attacked-31, confidence-34)
+det(man-38, an-36)
+amod(man-38, armed-37)
+prep_than(confidence-34, man-38)
+

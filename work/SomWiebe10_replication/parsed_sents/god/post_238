@@ -1,0 +1,60 @@
+(ROOT
+  (S
+    (NP (DT This) (NN universe))
+    (VP (VBZ has) (RB n't)
+      (ADVP (RB always))
+      (VP (VBN existed)))
+    (. .)))
+
+det(universe-2, This-1)
+nsubj(existed-6, universe-2)
+aux(existed-6, has-3)
+neg(existed-6, n't-4)
+advmod(existed-6, always-5)
+root(ROOT-0, existed-6)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBD had)
+        (NP (DT a) (NN beginning))))
+    (CC and)
+    (S
+      (NP (PRP it))
+      (VP (MD will)
+        (VP (VB cease)
+          (S
+            (VP (TO to)
+              (VP (VB exist)
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ reaches)
+                      (NP (JJ absolute) (NN zero))
+                      (SBAR (IN unless)
+                        (S
+                          (NP (NN something))
+                          (VP (VBZ changes)))))))))))))
+    (. .)))
+
+nsubj(had-2, It-1)
+root(ROOT-0, had-2)
+det(beginning-4, a-3)
+dobj(had-2, beginning-4)
+nsubj(cease-8, it-6)
+xsubj(exist-10, it-6)
+aux(cease-8, will-7)
+conj_and(had-2, cease-8)
+aux(exist-10, to-9)
+xcomp(cease-8, exist-10)
+advmod(reaches-13, when-11)
+nsubj(reaches-13, it-12)
+advcl(exist-10, reaches-13)
+amod(zero-15, absolute-14)
+dobj(reaches-13, zero-15)
+mark(changes-18, unless-16)
+nsubj(changes-18, something-17)
+advcl(reaches-13, changes-18)
+

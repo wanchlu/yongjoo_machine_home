@@ -1,0 +1,130 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN ban))
+      (PP (IN on)
+        (NP (JJ legal) (NNS handguns))))
+    (VP (VBZ disadvantages)
+      (NP
+        (NP (NNS citizens))
+        (PP (IN against)
+          (NP (JJ armed) (NNS criminals)))))
+    (. .)))
+
+det(ban-2, A-1)
+nsubj(disadvantages-6, ban-2)
+amod(handguns-5, legal-4)
+prep_on(ban-2, handguns-5)
+root(ROOT-0, disadvantages-6)
+dobj(disadvantages-6, citizens-7)
+amod(criminals-10, armed-9)
+prep_against(citizens-7, criminals-10)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Criminals))
+      (, ,)
+      (SBAR
+        (WHNP (WP who))
+        (S
+          (VP (VBP are)
+            (ADJP (JJ able)
+              (S
+                (VP (TO to)
+                  (VP (VB acquire)
+                    (NP (NNS guns))
+                    (, ,)
+                    (ADVP (RB irrespective)
+                      (PP (IN of)
+                        (NP (DT the) (NN illegality))))
+                    (PP (IN of)
+                      (S
+                        (VP (VBG doing)
+                          (ADVP (RB so))))))))))))
+      (, ,))
+    (VP (VBP welcome)
+      (NP
+        (NP (DT a) (NN ban))
+        (PP (IN on)
+          (NP (JJ legal) (NN handgun) (NN ownership)))))
+    (. .)))
+
+nsubj(able-5, Criminals-1)
+nsubj(welcome-18, Criminals-1)
+cop(able-5, are-4)
+rcmod(Criminals-1, able-5)
+aux(acquire-7, to-6)
+xcomp(able-5, acquire-7)
+dobj(acquire-7, guns-8)
+det(illegality-13, the-12)
+prep_irrespective_of(acquire-7, illegality-13)
+prepc_of(acquire-7, doing-15)
+advmod(doing-15, so-16)
+root(ROOT-0, welcome-18)
+det(ban-20, a-19)
+dobj(welcome-18, ban-20)
+amod(ownership-24, legal-22)
+nn(ownership-24, handgun-23)
+prep_on(ban-20, ownership-24)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (SBAR (IN because)
+        (S
+          (NP (PRP it))
+          (VP (VBZ decreases)
+            (NP (DT the) (NNS risks))
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP (PRP they))
+                  (VP (MD will)
+                    (VP (VB rob)
+                      (CC or)
+                      (VB attack)
+                      (NP
+                        (NP (DT a) (NN citizen))
+                        (SBAR
+                          (WHNP (WDT that))
+                          (S
+                            (VP (VBZ has)
+                              (NP (DT a) (NN handgun))))))))))
+              (, ,)
+              (CC and)
+              (SBAR
+                (WHNP (WP whom))
+                (S
+                  (VP (MD may)
+                    (VP (VB attack)
+                      (ADVP (RB back)))))))))))
+    (. .)))
+
+nsubj(is-2, This-1)
+root(ROOT-0, is-2)
+mark(decreases-5, because-3)
+nsubj(decreases-5, it-4)
+advcl(is-2, decreases-5)
+det(risks-7, the-6)
+dobj(decreases-5, risks-7)
+complm(rob-11, that-8)
+nsubj(rob-11, they-9)
+nsubj(attack-13, they-9)
+aux(rob-11, will-10)
+ccomp(decreases-5, rob-11)
+ccomp(decreases-5, attack-13)
+conj_or(rob-11, attack-13)
+det(citizen-15, a-14)
+dobj(rob-11, citizen-15)
+nsubj(has-17, citizen-15)
+rcmod(citizen-15, has-17)
+det(handgun-19, a-18)
+dobj(has-17, handgun-19)
+nsubj(attack-24, whom-22)
+aux(attack-24, may-23)
+ccomp(decreases-5, attack-24)
+conj_and(rob-11, attack-24)
+advmod(attack-24, back-25)
+

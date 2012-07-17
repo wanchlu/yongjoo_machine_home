@@ -1,0 +1,176 @@
+(ROOT
+  (S
+    (NP (NNP Uhh))
+    (, ,)
+    (ADVP (RB well))
+    (, ,)
+    (VP (VBD hell)
+      (INTJ (UH yes)))
+    (. .)))
+
+nsubj(hell-5, Uhh-1)
+advmod(hell-5, well-3)
+root(ROOT-0, hell-5)
+dep(hell-5, yes-6)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD should) (RB all)
+      (VP (VB get)
+        (VP (VBN used)
+          (PP
+            (PP (TO to)
+              (S
+                (VP (VBG seeing)
+                  (NP (NNS citizens))
+                  (S
+                    (VP (VBG carrying)
+                      (NP (NNS guns)))))))
+            (, ,) (RB just) (IN like)
+            (PP (IN in)
+              (NP (DT the) (NNP Old) (NNP West)))))))
+    (. .)))
+
+nsubjpass(used-5, We-1)
+aux(used-5, should-2)
+advmod(used-5, all-3)
+auxpass(used-5, get-4)
+root(ROOT-0, used-5)
+prepc_to(like-13, seeing-7)
+dobj(seeing-7, citizens-8)
+xcomp(seeing-7, carrying-9)
+dobj(carrying-9, guns-10)
+advmod(like-13, just-12)
+prep(used-5, like-13)
+pcomp(like-13, in-14)
+det(West-17, the-15)
+nn(West-17, Old-16)
+prep_in(like-13, West-17)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS cops))
+    (VP (VBP carry)
+      (NP (PRP them)))
+    (. .)))
+
+det(cops-2, The-1)
+nsubj(carry-3, cops-2)
+root(ROOT-0, carry-3)
+dobj(carry-3, them-4)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD should) (RB n't)
+      (NP (NNS citizens))
+      (VP (VB carry)
+        (NP (PRP them))))
+    (. ?)))
+
+advmod(carry-5, Why-1)
+aux(carry-5, should-2)
+neg(carry-5, n't-3)
+nsubj(carry-5, citizens-4)
+root(ROOT-0, carry-5)
+dobj(carry-5, them-6)
+
+(ROOT
+  (S
+    (NP (NNPS Citizens))
+    (VP (VBP carry)
+      (NP (NNS guns))
+      (PP (IN for)
+        (NP (DT the) (JJ same) (NNS reasons)))
+      (SBAR (IN that)
+        (S
+          (NP (NNS cops))
+          (VP (VBP carry)
+            (NP (PRP them))))))
+    (. .)))
+
+nsubj(carry-2, Citizens-1)
+root(ROOT-0, carry-2)
+dobj(carry-2, guns-3)
+det(reasons-7, the-5)
+amod(reasons-7, same-6)
+prep_for(carry-2, reasons-7)
+complm(carry-10, that-8)
+nsubj(carry-10, cops-9)
+ccomp(carry-2, carry-10)
+dobj(carry-10, them-11)
+
+(ROOT
+  (S
+    (VP (VB Self-preservation))
+    (. .)))
+
+root(ROOT-0, Self-preservation-1)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB just))
+    (VP (VBP do) (RB n't)
+      (VP (VB see)
+        (NP (DT a) (NN problem))
+        (PP (IN with)
+          (NP (DT that)))))
+    (. .)))
+
+nsubj(see-5, I-1)
+advmod(see-5, just-2)
+aux(see-5, do-3)
+neg(see-5, n't-4)
+root(ROOT-0, see-5)
+det(problem-7, a-6)
+dobj(see-5, problem-7)
+prep_with(see-5, that-9)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP are)
+          (ADJP (JJ uncomfortable)
+            (S
+              (VP (VBG seeing)
+                (NP (NN someone))
+                (PP (IN with)
+                  (NP
+                    (NP (DT a) (NN gun))
+                    (PP (IN on)
+                      (NP (PRP$ his) (NN hip)))))))))))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD should)
+      (VP
+        (VP (VB stay)
+          (NP (NN home)))
+        (CC and)
+        (VP (VB watch)
+          (NP (DT the) (NNP Disney) (NNP Channel)))))
+    (. .)))
+
+mark(uncomfortable-4, If-1)
+nsubj(uncomfortable-4, you-2)
+cop(uncomfortable-4, are-3)
+advcl(home-17, uncomfortable-4)
+dep(uncomfortable-4, seeing-5)
+dobj(seeing-5, someone-6)
+det(gun-9, a-8)
+prep_with(seeing-5, gun-9)
+poss(hip-12, his-11)
+prep_on(gun-9, hip-12)
+nsubj(home-17, you-14)
+nsubj(watch-19, you-14)
+aux(home-17, should-15)
+cop(home-17, stay-16)
+root(ROOT-0, home-17)
+conj_and(home-17, watch-19)
+det(Channel-22, the-20)
+nn(Channel-22, Disney-21)
+dobj(watch-19, Channel-22)
+

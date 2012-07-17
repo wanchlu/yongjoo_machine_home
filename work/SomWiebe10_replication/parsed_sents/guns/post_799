@@ -1,0 +1,267 @@
+(ROOT
+  (NP
+    (NP (RB So) (NNP Brady))
+    (: ...)))
+
+advmod(Brady-2, So-1)
+root(ROOT-0, Brady-2)
+
+(ROOT
+  (S
+    (PP (IN At)
+      (NP
+        (NP
+          (NP (NNP ALL) (CD 9) (NNP Public) (NNP Universities))
+          (PP (IN in)
+            (NP (NNP Utah))))
+        (, ,)
+        (CONJP (RB as) (RB well) (IN as))
+        (NP
+          (NP (NNP Colorado) (NNP State) (NNP University)
+            (CC and)
+            (NNP Blue) (NNP Ridge) (NNP Community) (NNP College))
+          (PP (IN in)
+            (NP (NNP Virginia))))))
+    (NP (EX there))
+    (VP (VBZ has)
+      (ADVP (RB NEVER))
+      (VP (VBN been)
+        (NP
+          (NP (DT a) (NN gun) (NN theft))
+          (PP (IN on)
+            (NP (NN campus))))))
+    (. .)))
+
+nn(Universities-5, ALL-2)
+num(Universities-5, 9-3)
+nn(Universities-5, Public-4)
+prep_at(theft-28, Universities-5)
+prep_in(Universities-5, Utah-7)
+nn(University-14, Colorado-12)
+nn(University-14, State-13)
+conj_and(Universities-5, University-14)
+prep_at(theft-28, University-14)
+nn(College-19, Blue-16)
+nn(College-19, Ridge-17)
+nn(College-19, Community-18)
+conj_and(Universities-5, College-19)
+conj_and(University-14, College-19)
+prep_in(University-14, Virginia-21)
+expl(theft-28, there-22)
+aux(theft-28, has-23)
+neg(theft-28, NEVER-24)
+cop(theft-28, been-25)
+det(theft-28, a-26)
+nn(theft-28, gun-27)
+root(ROOT-0, theft-28)
+prep_on(theft-28, campus-30)
+
+(ROOT
+  (S (CC And)
+    (SBAR (IN as)
+      (S
+        (NP (PRP you))
+        (VP (VBP know))))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (PP (IN of)
+        (NP (DT these) (NNS places))))
+    (ADVP (RB currently))
+    (VP (VBP allow)
+      (S
+        (NP (NNP LICENSED) (NNS students))
+        (VP (TO to)
+          (VP (VB carry)
+            (PP (IN on)
+              (NP (NN campus)))))))
+    (. .)))
+
+cc(allow-11, And-1)
+mark(know-4, as-2)
+nsubj(know-4, you-3)
+advcl(allow-11, know-4)
+nsubj(allow-11, all-6)
+det(places-9, these-8)
+prep_of(all-6, places-9)
+advmod(allow-11, currently-10)
+root(ROOT-0, allow-11)
+nn(students-13, LICENSED-12)
+nsubj(carry-15, students-13)
+aux(carry-15, to-14)
+xcomp(allow-11, carry-15)
+prep_on(carry-15, campus-17)
+
+(ROOT
+  (S
+    (NP (DT These) (CD 21) (JJ +) (NN year) (NNS olds))
+    (VP (VBP are) (RB not)
+      (NP
+        (NP (DT the) (NNS students))
+        (UCP
+          (VP (VBG living)
+            (PP (IN in)
+              (NP (NNS dorms))))
+          (, ,)
+          (CC or)
+          (PP (IN on)
+            (NP (NN campus))
+            (. .)))))
+    (. .)))
+
+det(olds-5, These-1)
+num(olds-5, 21-2)
+amod(olds-5, +-3)
+nn(olds-5, year-4)
+nsubj(students-9, olds-5)
+cop(students-9, are-6)
+neg(students-9, not-7)
+det(students-9, the-8)
+root(ROOT-0, students-9)
+dep(students-9, living-10)
+prep_in(living-10, dorms-12)
+dep(students-9, on-15)
+conj_or(living-10, on-15)
+pobj(on-15, campus-16)
+
+(ROOT
+  (S
+    (NP (JJS Most) (NNS Universities))
+    (VP (VBP wont)
+      (VP (VB allow)
+        (NP
+          (NP (NNS students))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBP have)
+                (PP (IN over)
+                  (NP
+                    (NP (CD 60) (NNS hours))
+                    (PRN (-LRB- -LRB-)
+                      (ADJP
+                        (NP (CD 19-20) (NNS years))
+                        (JJ old))
+                      (-RRB- -RRB-))))
+                (S
+                  (VP (TO to)
+                    (VP (VB live)
+                      (PP (IN on)
+                        (NP (NN campus))))))))))))
+    (. .)))
+
+amod(Universities-2, Most-1)
+nsubj(wont-3, Universities-2)
+root(ROOT-0, wont-3)
+xcomp(wont-3, allow-4)
+dobj(allow-4, students-5)
+nsubj(have-7, students-5)
+rcmod(students-5, have-7)
+num(hours-10, 60-9)
+prep_over(have-7, hours-10)
+num(years-13, 19-20-12)
+npadvmod(old-14, years-13)
+dep(hours-10, old-14)
+aux(live-17, to-16)
+xcomp(have-7, live-17)
+prep_on(live-17, campus-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP It))
+      (VP (VBZ 's) (RB not)
+        (NP (`` ``) (JJ increasing) (NN gun) (NN ownership) ('' ''))))
+    (, ,)
+    (NP (DT these) (NNS students))
+    (VP (VBP are)
+      (NP
+        (NP (NNP ALREADY))
+        (VP (VBN licensed)
+          (S
+            (VP (TO to)
+              (VP (VB carry)
+                (S
+                  (NP (RB virtually) (NNP EVERYWHERE))
+                  (ADJP (RB else)))))))))
+    (. .)))
+
+nsubj(ownership-7, It-1)
+cop(ownership-7, 's-2)
+neg(ownership-7, not-3)
+amod(ownership-7, increasing-5)
+nn(ownership-7, gun-6)
+ccomp(ALREADY-13, ownership-7)
+det(students-11, these-10)
+nsubj(ALREADY-13, students-11)
+cop(ALREADY-13, are-12)
+root(ROOT-0, ALREADY-13)
+xsubj(carry-16, ALREADY-13)
+partmod(ALREADY-13, licensed-14)
+aux(carry-16, to-15)
+xcomp(licensed-14, carry-16)
+advmod(EVERYWHERE-18, virtually-17)
+nsubj(else-19, EVERYWHERE-18)
+xcomp(carry-16, else-19)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP They))
+      (ADVP (RB already))
+      (VP (VBP have)
+        (NP (DT the) (NNS licenses))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP they))
+      (ADVP (RB already))
+      (VP (VBP have)
+        (NP
+          (NP (DT the) (NNS firearms))
+          (PRN (-LRB- -LRB-)
+            (CC and)
+            (S
+              (NP (EX there))
+              (VP (VBP havent)
+                (VP (VBN been)
+                  (NP (DT any) (NNS problems)))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+nsubj(have-3, They-1)
+advmod(have-3, already-2)
+root(ROOT-0, have-3)
+det(licenses-5, the-4)
+dobj(have-3, licenses-5)
+nsubj(have-10, they-8)
+advmod(have-10, already-9)
+conj_and(have-3, have-10)
+det(firearms-12, the-11)
+dobj(have-10, firearms-12)
+dep(havent-16, and-14)
+expl(havent-16, there-15)
+dep(firearms-12, havent-16)
+cop(problems-19, been-17)
+det(problems-19, any-18)
+dep(havent-16, problems-19)
+nsubj(havent-16, problems-19)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB When))
+    (SQ (MD will)
+      (NP (DT the) (NNP Brady) (NNP Campaign))
+      (VP (VB stop)
+        (NP (DT the) (JJ LIES) (NN ???))))))
+
+advmod(stop-6, When-1)
+aux(stop-6, will-2)
+det(Campaign-5, the-3)
+nn(Campaign-5, Brady-4)
+nsubj(stop-6, Campaign-5)
+root(ROOT-0, stop-6)
+det(???-9, the-7)
+amod(???-9, LIES-8)
+dobj(stop-6, ???-9)
+

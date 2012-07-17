@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (S
+      (NP (JJ Higher-end) (NN treatment))
+      (VP (VBZ is)
+        (ADJP (JJ important))))
+    (: ;)
+    (S
+      (ADVP (RB sometimes))
+      (NP (PRP you))
+      (VP (MD ca) (RB n't)
+        (VP (VB prevent)
+          (NP (NN illness)))))
+    (. .)))
+
+amod(treatment-2, Higher-end-1)
+nsubj(important-4, treatment-2)
+cop(important-4, is-3)
+root(ROOT-0, important-4)
+advmod(prevent-10, sometimes-6)
+nsubj(prevent-10, you-7)
+aux(prevent-10, ca-8)
+neg(prevent-10, n't-9)
+parataxis(important-4, prevent-10)
+dobj(prevent-10, illness-11)
+
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (JJ higher-end) (NNS treatments))
+        (PP (IN in)
+          (NP (JJ privatized) (NN health) (NN care) (NNS societies)))))
+    (, ,)
+    (NP (NN treatment))
+    (VP (VBZ is)
+      (ADJP (RB often) (JJ superior)))
+    (. .)))
+
+amod(treatments-3, higher-end-2)
+prep_with(superior-13, treatments-3)
+amod(societies-8, privatized-5)
+nn(societies-8, health-6)
+nn(societies-8, care-7)
+prep_in(treatments-3, societies-8)
+nsubj(superior-13, treatment-10)
+cop(superior-13, is-11)
+advmod(superior-13, often-12)
+root(ROOT-0, superior-13)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP
+        (NP (DT those))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (MD will)
+              (VP (VB contract)
+                (NP (NNS illnesses)
+                  (CC or)
+                  (NNS cancers))
+                (ADVP (RB regardless)
+                  (PP (IN of)
+                    (NP
+                      (NP (DT any) (JJ preventative) (NNS measures))
+                      (SBAR
+                        (S
+                          (NP (PRP they))
+                          (VP (VBP take)))))))))))))
+    (, ,)
+    (NP (JJ such) (JJ high-end) (NN treatment))
+    (VP (VBZ is)
+      (ADJP (JJ welcome)))
+    (. .)))
+
+nsubj(contract-5, those-2)
+prep_for(welcome-21, those-2)
+aux(contract-5, will-4)
+rcmod(those-2, contract-5)
+dobj(contract-5, illnesses-6)
+dobj(contract-5, cancers-8)
+conj_or(illnesses-6, cancers-8)
+det(measures-13, any-11)
+amod(measures-13, preventative-12)
+prep_regardless_of(contract-5, measures-13)
+dobj(take-15, measures-13)
+nsubj(take-15, they-14)
+rcmod(measures-13, take-15)
+amod(treatment-19, such-17)
+amod(treatment-19, high-end-18)
+nsubj(welcome-21, treatment-19)
+cop(welcome-21, is-20)
+root(ROOT-0, welcome-21)
+

@@ -1,0 +1,116 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Studies))
+      (SBAR
+        (WHNP (WDT that))
+        (S
+          (VP (VBP have)
+            (VP (VBD showed)
+              (SBAR
+                (S
+                  (NP (DT the) (NN murder) (NN rate))
+                  (VP (VBZ has)
+                    (VP (VBN decreased))))))))))
+    (VP (VBD were)
+      (ADJP (JJ flawedThe)
+        (SBAR
+          (S
+            (NP
+              (NP (NN methodology))
+              (PP (IN of)
+                (NP (DT the) (NNS studies))))
+            (VP (VBZ has)
+              (VP (VBN proven)
+                (S
+                  (VP (TO to)
+                    (VP (VB be)
+                      (ADJP (JJ flawed)))))))))))
+    (. .)))
+
+nsubj(showed-4, Studies-1)
+nsubj(flawedThe-11, Studies-1)
+aux(showed-4, have-3)
+rcmod(Studies-1, showed-4)
+det(rate-7, the-5)
+nn(rate-7, murder-6)
+nsubj(decreased-9, rate-7)
+aux(decreased-9, has-8)
+ccomp(showed-4, decreased-9)
+cop(flawedThe-11, were-10)
+root(ROOT-0, flawedThe-11)
+nsubj(proven-17, methodology-12)
+xsubj(flawed-20, methodology-12)
+det(studies-15, the-14)
+prep_of(methodology-12, studies-15)
+aux(proven-17, has-16)
+dep(flawedThe-11, proven-17)
+aux(flawed-20, to-18)
+cop(flawed-20, be-19)
+xcomp(proven-17, flawed-20)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ goes)
+      (S
+        (VP (TO to)
+          (VP (VB show)
+            (SBAR (IN that)
+              (S
+                (SBAR
+                  (WHADVP (WRB when))
+                  (S
+                    (NP (NNS arguments))
+                    (VP (VBP are)
+                      (VP (VBN supported)
+                        (PP (IN by)
+                          (NP
+                            (NP (NNS studies))
+                            (SBAR
+                              (WHNP (WDT that))
+                              (S
+                                (VP (VBP support)
+                                  (SBAR (IN that)
+                                    (S
+                                      (NP (DT the) (NN murder) (NN rate))
+                                      (VP (VBZ has)
+                                        (VP (VBN decreased))))))))))))))
+                (NP (PRP$ their) (NN validity)
+                  (CC and)
+                  (NN reliability))
+                (VP (VBZ is)
+                  (VP (VBN undermined)
+                    (PP (IN by)
+                      (NP (DT a) (JJ flawed) (NN methodology)))))))))))
+    (. .)))
+
+nsubj(goes-2, This-1)
+xsubj(show-4, This-1)
+root(ROOT-0, goes-2)
+aux(show-4, to-3)
+xcomp(goes-2, show-4)
+complm(undermined-25, that-5)
+advmod(supported-9, when-6)
+nsubjpass(supported-9, arguments-7)
+auxpass(supported-9, are-8)
+advcl(undermined-25, supported-9)
+agent(supported-9, studies-11)
+nsubj(support-13, studies-11)
+rcmod(studies-11, support-13)
+complm(decreased-19, that-14)
+det(rate-17, the-15)
+nn(rate-17, murder-16)
+nsubj(decreased-19, rate-17)
+aux(decreased-19, has-18)
+ccomp(support-13, decreased-19)
+poss(validity-21, their-20)
+nsubjpass(undermined-25, validity-21)
+conj_and(validity-21, reliability-23)
+nsubjpass(undermined-25, reliability-23)
+auxpass(undermined-25, is-24)
+ccomp(show-4, undermined-25)
+det(methodology-29, a-27)
+amod(methodology-29, flawed-28)
+agent(undermined-25, methodology-29)
+

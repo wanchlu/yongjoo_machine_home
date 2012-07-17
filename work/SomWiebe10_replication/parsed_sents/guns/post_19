@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (NP (NNP Law) (NN enforcement) (NNS agents))
+    (VP (VBP are)
+      (VP (VBN put)
+        (PP (IN at)
+          (NP
+            (NP (DT a) (JJR greater) (NN risk))
+            (ADJP (JJ due)
+              (PP (TO to)
+                (NP (NN assault) (NNS weapons))))))))
+    (. .)))
+
+nn(agents-3, Law-1)
+nn(agents-3, enforcement-2)
+nsubjpass(put-5, agents-3)
+auxpass(put-5, are-4)
+root(ROOT-0, put-5)
+det(risk-9, a-7)
+amod(risk-9, greater-8)
+prep_at(put-5, risk-9)
+nn(weapons-13, assault-12)
+prep_due_to(risk-9, weapons-13)
+
+(ROOT
+  (S
+    (NP (JJ Assault) (NNS weapons))
+    (VP (VBP are)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (NP (CD 1))))
+      (PP (IN in)
+        (NP
+          (NP (CD 5) (NNS deaths))
+          (PP (IN of)
+            (NP (NN law) (NN enforcement) (NNS agents))))))
+    (. .)))
+
+amod(weapons-2, Assault-1)
+nsubj(responsible-4, weapons-2)
+cop(responsible-4, are-3)
+root(ROOT-0, responsible-4)
+prep_for(responsible-4, 1-6)
+num(deaths-9, 5-8)
+prep_in(responsible-4, deaths-9)
+nn(agents-13, law-11)
+nn(agents-13, enforcement-12)
+prep_of(deaths-9, agents-13)
+

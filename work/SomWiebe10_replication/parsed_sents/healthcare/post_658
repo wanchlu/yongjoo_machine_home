@@ -1,0 +1,46 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (ADJP (JJ insane))
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNP US))
+          (VP (VBZ does) (RB not)
+            (VP (VB have)
+              (NP (JJ universal) (NN health) (NN care)))))))
+    (. .)))
+
+nsubj(insane-3, It-1)
+cop(insane-3, is-2)
+root(ROOT-0, insane-3)
+complm(have-9, that-4)
+det(US-6, the-5)
+nsubj(have-9, US-6)
+aux(have-9, does-7)
+neg(have-9, not-8)
+ccomp(insane-3, have-9)
+amod(care-12, universal-10)
+nn(care-12, health-11)
+dobj(have-9, care-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP \/) (NNP \/) (-RRB- -RRB-) (NNP The) (NNP notion))
+      (PP (IN of)
+        (NP (JJ affordable) (NN health) (NN care))))
+    (VP (VBZ is)
+      (ADJP (JJ idiotic)))
+    (. .)))
+
+nn(notion-5, \/-1)
+nn(notion-5, \/-2)
+nn(notion-5, The-4)
+nsubj(idiotic-11, notion-5)
+amod(care-9, affordable-7)
+nn(care-9, health-8)
+prep_of(notion-5, care-9)
+cop(idiotic-11, is-10)
+root(ROOT-0, idiotic-11)
+

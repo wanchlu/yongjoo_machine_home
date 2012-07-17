@@ -1,0 +1,113 @@
+(ROOT
+  (NP
+    (NP (DT All))
+    (PP (IN of)
+      (NP (DT those) (NN school) (NNS shootings)))
+    (: ...)))
+
+root(ROOT-0, All-1)
+det(shootings-5, those-3)
+nn(shootings-5, school-4)
+prep_of(All-1, shootings-5)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB highly))
+    (VP (VBP doubt)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NNS kids))
+          (VP
+            (VP (VBD went)
+              (PRT (RP out)))
+            (CC and)
+            (VP (VBD bought)
+              (S
+                (NP (PRP them))
+                (NP (PRP themselves))))))))
+    (. .)))
+
+nsubj(doubt-3, I-1)
+advmod(doubt-3, highly-2)
+root(ROOT-0, doubt-3)
+complm(went-7, that-4)
+det(kids-6, the-5)
+nsubj(went-7, kids-6)
+nsubj(bought-10, kids-6)
+ccomp(doubt-3, went-7)
+prt(went-7, out-8)
+ccomp(doubt-3, bought-10)
+conj_and(went-7, bought-10)
+nsubj(themselves-12, them-11)
+xcomp(bought-10, themselves-12)
+
+(ROOT
+  (S
+    (ADVP (RBR More) (IN than) (RB likely))
+    (, ,)
+    (NP (PRP they))
+    (VP (VBD were)
+      (VP (VBN retrieved)
+        (PP (IN from)
+          (NP (NN home)))))
+    (. .)))
+
+advmod(than-2, More-1)
+advmod(retrieved-7, than-2)
+advmod(than-2, likely-3)
+nsubjpass(retrieved-7, they-5)
+auxpass(retrieved-7, were-6)
+root(ROOT-0, retrieved-7)
+prep_from(retrieved-7, home-9)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (PRP you))
+        (VP (VBP 're)
+          (PRT (RP out))
+          (PP (IN in)
+            (NP (NN public))))))
+    (, ,)
+    (NP (NN anyone))
+    (VP (MD could)
+      (VP (VB have)
+        (NP (DT a) (NN gun))))
+    (. .)))
+
+advmod('re-3, When-1)
+nsubj('re-3, you-2)
+advcl(have-10, 're-3)
+prt('re-3, out-4)
+prep_in('re-3, public-6)
+nsubj(have-10, anyone-8)
+aux(have-10, could-9)
+root(ROOT-0, have-10)
+det(gun-12, a-11)
+dobj(have-10, gun-12)
+
+(ROOT
+  (S
+    (NP
+      (NP (RB Only) (NN government) (NNS officials))
+      (, ,)
+      (PP (JJ such) (IN as)
+        (NP (DT the) (NN police)))
+      (, ,))
+    (VP (MD should)
+      (VP (VB carry)
+        (NP (NNS guns))))
+    (. .)))
+
+advmod(officials-3, Only-1)
+nn(officials-3, government-2)
+nsubj(carry-11, officials-3)
+det(police-8, the-7)
+prep_such_as(officials-3, police-8)
+aux(carry-11, should-10)
+root(ROOT-0, carry-11)
+dobj(carry-11, guns-12)
+

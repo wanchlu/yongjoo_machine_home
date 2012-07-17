@@ -1,0 +1,143 @@
+(ROOT
+  (S
+    (SBAR
+      (SBAR (IN Before)
+        (S
+          (NP (PRP you))
+          (VP (VBP call)
+            (S
+              (NP (PRP me))
+              (ADJP (JJ unpatriotic))))))
+      (, ,)
+      (CC or)
+      (SBAR
+        (WHNP (WDT whatever))
+        (S
+          (NP (PRP you))
+          (VP (MD can)
+            (VP (VB think)
+              (PP (IN of)
+                (PP (IN as)
+                  (NP (DT an) (NN insult)))))))))
+    (, ,)
+    (VP (VB listen)
+      (PP (TO to)
+        (NP (PRP$ my) (NN argument))))
+    (. .)))
+
+mark(call-3, Before-1)
+nsubj(call-3, you-2)
+dep(listen-17, call-3)
+nsubj(unpatriotic-5, me-4)
+xcomp(call-3, unpatriotic-5)
+dobj(think-11, whatever-8)
+nsubj(think-11, you-9)
+aux(think-11, can-10)
+conj_or(call-3, think-11)
+dep(listen-17, think-11)
+prepc_as_of(think-11, as-13)
+det(insult-15, an-14)
+pobj(think-11, insult-15)
+root(ROOT-0, listen-17)
+poss(argument-20, my-19)
+prep_to(listen-17, argument-20)
+
+(ROOT
+  (S
+    (NP (NNP Universal) (NNP HealthCare))
+    (, ,)
+    (PP (IN like)
+      (NP (NN communism)))
+    (, ,)
+    (VP (VBZ works)
+      (PRT (RP out))
+      (ADVP (JJ great))
+      (PP (IN on)
+        (NP (NN paper)))
+      (, ,)
+      (PRN (CC but)
+        (ADVP (RB never))
+        (PP (IN in)
+          (NP (NN practice)))))
+    (. .)))
+
+nn(HealthCare-2, Universal-1)
+nsubj(works-7, HealthCare-2)
+prep_like(works-7, communism-5)
+root(ROOT-0, works-7)
+prt(works-7, out-8)
+advmod(works-7, great-9)
+prep_on(works-7, paper-11)
+dep(in-15, but-13)
+dep(in-15, never-14)
+dep(works-7, in-15)
+pobj(in-15, practice-16)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Quite)
+        (ADVP (RB honestly))))
+    (, ,)
+    (NP (PRP you))
+    (ADVP (RB just))
+    (VP (MD ca) (RB n't)
+      (VP (VB expect)
+        (NP (DT a) (JJ semi) (JJ corrupted) (, ,) (JJ inefficent) (NN government))
+        (PP (IN with)
+          (NP (DT another) (NN branch)))))
+    (. .)))
+
+partmod(expect-8, Quite-1)
+advmod(Quite-1, honestly-2)
+nsubj(expect-8, you-4)
+advmod(expect-8, just-5)
+aux(expect-8, ca-6)
+neg(expect-8, n't-7)
+root(ROOT-0, expect-8)
+det(government-14, a-9)
+amod(government-14, semi-10)
+amod(government-14, corrupted-11)
+amod(government-14, inefficent-13)
+dobj(expect-8, government-14)
+det(branch-17, another-16)
+prep_with(expect-8, branch-17)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Especially))
+    (SBAR (IN if)
+      (S
+        (NP (DT that) (NN branch))
+        (VP (VBZ is)
+          (NP (NNP Healthcare)))))
+    (. .)))
+
+root(ROOT-0, Especially-1)
+mark(Healthcare-6, if-2)
+det(branch-4, that-3)
+nsubj(Healthcare-6, branch-4)
+cop(Healthcare-6, is-5)
+dep(Especially-1, Healthcare-6)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (VBP are)
+      (ADJP
+        (ADJP (JJR better) (RP off)
+          (PP (IN with)
+            (NP (JJ privatized) (NN healthcare))))
+        (CC and)
+        (ADJP (JJ medicaid))))
+    (. .)))
+
+nsubj(better-3, We-1)
+nsubj(medicaid-9, We-1)
+cop(better-3, are-2)
+root(ROOT-0, better-3)
+dep(better-3, off-4)
+amod(healthcare-7, privatized-6)
+prep_with(better-3, healthcare-7)
+conj_and(better-3, medicaid-9)
+

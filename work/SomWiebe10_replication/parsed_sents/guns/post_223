@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Soldiers))
+      (, ,)
+      (PP (IN with)
+        (S
+          (VP (VBG disregard)
+            (PP (TO to)
+              (NP (DT the) (NN law))))))
+      (, ,))
+    (VP (VBD confiscated)
+      (NP
+        (NP (JJ massive) (NNS amounts))
+        (PP (IN of)
+          (NP (NNS firearms)))))
+    (. .)))
+
+nsubj(confiscated-9, Soldiers-1)
+prepc_with(Soldiers-1, disregard-4)
+det(law-7, the-6)
+prep_to(disregard-4, law-7)
+root(ROOT-0, confiscated-9)
+amod(amounts-11, massive-10)
+dobj(confiscated-9, amounts-11)
+prep_of(amounts-11, firearms-13)
+
+(ROOT
+  (S
+    (NP (JJS Most))
+    (VP (VBP have)
+      (ADVP (RB never))
+      (VP (VBN been)
+        (VP (VBN returned))))))
+
+nsubjpass(returned-5, Most-1)
+aux(returned-5, have-2)
+neg(returned-5, never-3)
+auxpass(returned-5, been-4)
+root(ROOT-0, returned-5)
+

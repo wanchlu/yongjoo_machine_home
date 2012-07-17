@@ -1,0 +1,75 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP What))
+    (SQ (VBP are)
+      (NP
+        (NP (NNS samples))
+        (PP (IN from)
+          (NP
+            (SBAR
+              (WHNP (WDT which))
+              (S
+                (NP (DT these) (NNS percentages))
+                (VP (VBP are)
+                  (VP (VBN drawn)))))
+            (CC and)
+            (SBAR
+              (WHNP (WP who))
+              (S
+                (VP (VBD did)
+                  (NP (DT the) (NN data) (NN collection))
+                  (PP (IN in)
+                    (NP (CD 2006))))))))))
+    (. ?)))
+
+attr(are-2, What-1)
+root(ROOT-0, are-2)
+nsubj(are-2, samples-3)
+dobj(drawn-9, which-5)
+rel(drawn-9, which-5)
+det(percentages-7, these-6)
+nsubjpass(drawn-9, percentages-7)
+auxpass(drawn-9, are-8)
+prep_from(samples-3, drawn-9)
+nsubj(did-12, who-11)
+prep_from(samples-3, did-12)
+conj_and(drawn-9, did-12)
+det(collection-15, the-13)
+nn(collection-15, data-14)
+dobj(did-12, collection-15)
+prep_in(did-12, 2006-17)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ impossible)
+        (S
+          (VP (TO to)
+            (VP (VB evaluate)
+              (NP (PRP$ your) (NNS statements))
+              (PP (VBN based)
+                (PP (IN on)
+                  (SBAR
+                    (WHNP (WP what))
+                    (S
+                      (NP (PRP you))
+                      (VP (VBP have)
+                        (VP (VBN written)
+                          (ADVP (RB here)))))))))))))
+    (. .)))
+
+nsubj(impossible-3, It-1)
+cop(impossible-3, 's-2)
+root(ROOT-0, impossible-3)
+aux(evaluate-5, to-4)
+xcomp(impossible-3, evaluate-5)
+poss(statements-7, your-6)
+dobj(evaluate-5, statements-7)
+prepc_based_on(evaluate-5, on-9)
+dobj(written-13, what-10)
+nsubj(written-13, you-11)
+aux(written-13, have-12)
+pcomp(evaluate-5, written-13)
+advmod(written-13, here-14)
+

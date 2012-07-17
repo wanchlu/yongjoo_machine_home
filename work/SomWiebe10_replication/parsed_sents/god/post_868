@@ -1,0 +1,83 @@
+(ROOT
+  (S
+    (NP (NNP Evolution))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP (RB so) (RB much) (RBR more) (JJ believable))
+        (PP (IN than)
+          (NP
+            (NP (DT the) (NN existence))
+            (PP (IN of)
+              (NP (NN god)))))))
+    (. .)))
+
+nsubj(believable-6, Evolution-1)
+cop(believable-6, is-2)
+advmod(believable-6, so-3)
+advmod(believable-6, much-4)
+advmod(believable-6, more-5)
+root(ROOT-0, believable-6)
+det(existence-9, the-8)
+prep_than(believable-6, existence-9)
+prep_of(existence-9, god-11)
+
+(ROOT
+  (S (CC Plus)
+    (NP (FW i))
+    (VP (VBP think)
+      (SBAR
+        (S
+          (NP (DT the) (NN bible))
+          (VP (VBZ is)
+            (ADJP (JJ sexist)
+              (CC and)
+              (JJ unfair))
+            (PP (TO to)
+              (NP (JJ womens) (NNS rights)))))))
+    (. .)))
+
+cc(think-3, Plus-1)
+nsubj(think-3, i-2)
+root(ROOT-0, think-3)
+det(bible-5, the-4)
+nsubj(sexist-7, bible-5)
+nsubj(unfair-9, bible-5)
+cop(sexist-7, is-6)
+ccomp(think-3, sexist-7)
+ccomp(think-3, unfair-9)
+conj_and(sexist-7, unfair-9)
+amod(rights-12, womens-11)
+prep_to(sexist-7, rights-12)
+
+(ROOT
+  (S
+    (NP (NNP God))
+    (VP (VBZ is)
+      (ADVP (RB always))
+      (VP (VBN seen)
+        (PP (IN as)
+          (NP
+            (NP (NN male))
+            (, ,)
+            (NP (NNP Jesus))
+            (, ,)
+            (NP
+              (NP (JJ male) (, ,) (NNP Jesus) ('' '') (CD 12) (NN deciples))
+              (, ,)
+              (NP (NN male)))
+            (, ,)
+            (X (NN etc.))))))))
+
+nsubjpass(seen-4, God-1)
+auxpass(seen-4, is-2)
+advmod(seen-4, always-3)
+root(ROOT-0, seen-4)
+prep_as(seen-4, male-6)
+appos(male-6, Jesus-8)
+amod(deciples-15, male-10)
+dep(deciples-15, Jesus-12)
+num(deciples-15, 12-14)
+appos(male-6, deciples-15)
+appos(deciples-15, male-17)
+dep(male-6, etc.-19)
+

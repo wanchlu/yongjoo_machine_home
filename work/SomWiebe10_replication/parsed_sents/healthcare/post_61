@@ -1,0 +1,254 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurer))
+    (VP (MD can)
+      (ADVP (RBS best))
+      (VP (VB negotiate)
+        (PRT (RP down))
+        (NP
+          (NP (NN drug) (NNS prices))
+          (NP (NNP Robert) (NNP Reich)))))
+    (. .)))
+
+nn(insurer-2, Public-1)
+nsubj(negotiate-5, insurer-2)
+aux(negotiate-5, can-3)
+advmod(negotiate-5, best-4)
+root(ROOT-0, negotiate-5)
+prt(negotiate-5, down-6)
+nn(prices-8, drug-7)
+dobj(negotiate-5, prices-8)
+iobj(negotiate-5, prices-8)
+nn(Reich-10, Robert-9)
+dobj(negotiate-5, Reich-10)
+dep(prices-8, Reich-10)
+
+(ROOT
+  (S ('' '')
+    (PP (VBG Why)
+      (NP
+        (NP (NNS critics))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJ public) (NN option))
+            (PP (IN for)
+              (NP (NN healthcare)))))))
+    (VP (VBP are)
+      (ADJP (JJ wrong) ('' '')))
+    (. .)))
+
+prep_why(wrong-11, critics-3)
+det(option-7, a-5)
+amod(option-7, public-6)
+prep_of(critics-3, option-7)
+prep_for(option-7, healthcare-9)
+cop(wrong-11, are-10)
+root(ROOT-0, wrong-11)
+
+(ROOT
+  (S
+    (VP (VBN Salon))
+    (. .)))
+
+root(ROOT-0, Salon-1)
+
+(ROOT
+  (NP
+    (NP (NNP June) (CD 24) (, ,) (CD 2009))
+    (: :)
+    (S (`` ``)
+      (NP (JJ Private) (NNS insurers))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (DT a) (JJ public) (NN option))
+            (VP (MD would)
+              (VP (VB have)
+                (NP
+                  (NP (DT an) (JJ unfair) (NN advantage))
+                  (PP (IN in)
+                    (S
+                      (VP (VBG achieving)
+                        (NP (DT this) (NN goal))))))))))))
+    (. .)))
+
+root(ROOT-0, June-1)
+num(June-1, 24-2)
+num(June-1, 2009-4)
+amod(insurers-8, Private-7)
+nsubj(say-9, insurers-8)
+dep(June-1, say-9)
+det(option-12, a-10)
+amod(option-12, public-11)
+nsubj(have-14, option-12)
+aux(have-14, would-13)
+ccomp(say-9, have-14)
+det(advantage-17, an-15)
+amod(advantage-17, unfair-16)
+dobj(have-14, advantage-17)
+prepc_in(advantage-17, achieving-19)
+det(goal-21, this-20)
+dobj(achieving-19, goal-21)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Being)
+        (NP (DT the) (CD one) (JJ public) (NN plan))))
+    (, ,)
+    (NP (PRP it))
+    (VP (MD will)
+      (VP (VB have)
+        (NP
+          (NP (JJ large) (NNS economies))
+          (PP (IN of)
+            (NP (NN scale)))
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (MD will)
+                (VP (VB enable)
+                  (S
+                    (NP (PRP it))
+                    (VP (TO to)
+                      (VP (VB negotiate)
+                        (NP (JJR more) (JJ favorable) (NNS terms))
+                        (PP (IN with)
+                          (NP
+                            (NP (JJ pharmaceutical) (NNS companies))
+                            (CC and)
+                            (NP (JJ other) (NNS providers))))))))))))))
+    (. .)))
+
+cop(plan-5, Being-1)
+det(plan-5, the-2)
+num(plan-5, one-3)
+amod(plan-5, public-4)
+partmod(have-9, plan-5)
+nsubj(have-9, it-7)
+aux(have-9, will-8)
+root(ROOT-0, have-9)
+amod(economies-11, large-10)
+dobj(have-9, economies-11)
+nsubj(enable-16, economies-11)
+prep_of(economies-11, scale-13)
+aux(enable-16, will-15)
+rcmod(economies-11, enable-16)
+nsubj(negotiate-19, it-17)
+aux(negotiate-19, to-18)
+xcomp(enable-16, negotiate-19)
+amod(terms-22, more-20)
+amod(terms-22, favorable-21)
+dobj(negotiate-19, terms-22)
+amod(companies-25, pharmaceutical-24)
+prep_with(negotiate-19, companies-25)
+amod(providers-28, other-27)
+prep_with(negotiate-19, providers-28)
+conj_and(companies-25, providers-28)
+
+(ROOT
+  (SBARQ (CC But)
+    (WHADVP (WRB why))
+    (PRN (, ,)
+      (S
+        (VP (VB exactly)))
+      (, ,))
+    (SQ (VBZ is)
+      (NP (DT this))
+      (ADJP (JJ unfair)))
+    (. ?)))
+
+cc(unfair-8, But-1)
+advmod(unfair-8, why-2)
+dep(unfair-8, exactly-4)
+cop(unfair-8, is-6)
+nsubj(unfair-8, this-7)
+root(ROOT-0, unfair-8)
+
+(ROOT
+  (SQ (VBZ Is) (RB n't)
+    (NP
+      (NP (DT the) (JJ whole) (NN point))
+      (PP (IN of)
+        (NP (NN cost))))
+    (NP
+      (NP (NN containment))
+      (S
+        (VP (TO to)
+          (VP (VB provide)
+            (NP (DT the) (NN public))
+            (PP (IN with)
+              (NP
+                (NP (NN healthcare))
+                (PP (IN on)
+                  (NP
+                    (ADJP (RBR more) (JJ favorable))
+                    (NNS terms)))))))))
+    (. ?)))
+
+cop(containment-8, Is-1)
+neg(containment-8, n't-2)
+det(point-5, the-3)
+amod(point-5, whole-4)
+nsubj(containment-8, point-5)
+prep_of(point-5, cost-7)
+root(ROOT-0, containment-8)
+aux(provide-10, to-9)
+infmod(containment-8, provide-10)
+det(public-12, the-11)
+dobj(provide-10, public-12)
+prep_with(provide-10, healthcare-14)
+advmod(favorable-17, more-16)
+amod(terms-18, favorable-17)
+prep_on(healthcare-14, terms-18)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (DT the) (JJ public) (NN plan))
+        (VP (VBZ negotiates)
+          (NP (JJR better) (NNS terms))
+          (ADVP (RB thereby))
+          (S
+            (VP (VBG demonstrating)
+              (SBAR (IN that)
+                (S
+                  (NP
+                    (NP (NN drug) (NNS companies))
+                    (CC and)
+                    (NP (JJ other) (NNS providers)))
+                  (VP (MD can)
+                    (VP (VB meet)
+                      (NP (PRP them)))))))))))
+    (NP (JJ private) (NNS plans))
+    (VP (MD could)
+      (VP (VB seek)
+        (NP (JJ similar) (NNS deals))))
+    (. .)))
+
+mark(negotiates-5, If-1)
+det(plan-4, the-2)
+amod(plan-4, public-3)
+nsubj(negotiates-5, plan-4)
+advcl(seek-22, negotiates-5)
+amod(terms-7, better-6)
+dobj(negotiates-5, terms-7)
+advmod(negotiates-5, thereby-8)
+xcomp(negotiates-5, demonstrating-9)
+complm(meet-17, that-10)
+nn(companies-12, drug-11)
+nsubj(meet-17, companies-12)
+amod(providers-15, other-14)
+conj_and(companies-12, providers-15)
+nsubj(meet-17, providers-15)
+aux(meet-17, can-16)
+ccomp(demonstrating-9, meet-17)
+dobj(meet-17, them-18)
+amod(plans-20, private-19)
+nsubj(seek-22, plans-20)
+aux(seek-22, could-21)
+root(ROOT-0, seek-22)
+amod(deals-24, similar-23)
+dobj(seek-22, deals-24)
+

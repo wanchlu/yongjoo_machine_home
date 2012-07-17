@@ -1,0 +1,71 @@
+(ROOT
+  (SQ (MD Can)
+    (NP (PRP you))
+    (VP (VB elaborate))
+    (. ?)))
+
+aux(elaborate-3, Can-1)
+nsubj(elaborate-3, you-2)
+root(ROOT-0, elaborate-3)
+
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ long))
+    (SQ (VBD were)
+      (NP
+        (NP (PRP you))
+        (PP (IN in)
+          (NP
+            (NP (NNP Austria))
+            (CC and)
+            (NP (WP what)))))
+      (PP (IN for)))
+    (. ?)))
+
+advmod(long-2, How-1)
+dep(were-3, long-2)
+root(ROOT-0, were-3)
+nsubj(were-3, you-4)
+prep_in(you-4, Austria-6)
+prep_in(you-4, what-8)
+conj_and(Austria-6, what-8)
+prep(were-3, for-9)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (DT the) (NNS doctors))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB find)
+              (S
+                (NP (NN something))
+                (ADJP (JJ wrong)
+                  (PP (IN with)
+                    (NP (PRP you))))))))
+        (SBAR (IN in) (NN order)
+          (S
+            (VP (TO to)
+              (VP (VB make)
+                (NP (NN money))))))))
+    (. ?)))
+
+advmod(have-5, Why-1)
+aux(have-5, do-2)
+det(doctors-4, the-3)
+nsubj(have-5, doctors-4)
+xsubj(find-7, doctors-4)
+root(ROOT-0, have-5)
+aux(find-7, to-6)
+xcomp(have-5, find-7)
+nsubj(wrong-9, something-8)
+xcomp(find-7, wrong-9)
+prep_with(wrong-9, you-11)
+mark(make-15, in-12)
+dep(make-15, order-13)
+aux(make-15, to-14)
+purpcl(have-5, make-15)
+dobj(make-15, money-16)
+

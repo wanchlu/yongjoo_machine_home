@@ -1,0 +1,41 @@
+(ROOT
+  (S
+    (INTJ (UH No))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP do) (RB n't))
+    (. .)))
+
+dep(do-4, No-1)
+nsubj(do-4, I-3)
+root(ROOT-0, do-4)
+neg(do-4, n't-5)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (MD can)
+        (VP (VB ramble)
+          (PP (IN on)
+            (NP
+              (QP (RB about) (CD why)))))))
+    (CC but)
+    (S
+      (NP (PRP I))
+      (VP (VBP 'm) (RB not)
+        (VP (VBG going)
+          (PP (TO to)))))
+    (. .)))
+
+nsubj(ramble-3, I-1)
+aux(ramble-3, can-2)
+root(ROOT-0, ramble-3)
+quantmod(why-6, about-5)
+prep_on(ramble-3, why-6)
+nsubj(going-11, I-8)
+aux(going-11, 'm-9)
+neg(going-11, not-10)
+conj_but(ramble-3, going-11)
+prep(going-11, to-12)
+

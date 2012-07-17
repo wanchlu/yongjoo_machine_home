@@ -1,0 +1,146 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ creates)
+      (NP
+        (NP (DT a) (JJ universal) (NN standard))
+        (PP (IN of)
+          (NP (NN care) (NNP Nathan) (NNP Newman)))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(creates-4, care-3)
+root(ROOT-0, creates-4)
+det(standard-7, a-5)
+amod(standard-7, universal-6)
+dobj(creates-4, standard-7)
+nn(Newman-11, care-9)
+nn(Newman-11, Nathan-10)
+prep_of(standard-7, Newman-11)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Medical) (NNP Malpractice)
+      (CC and)
+      (NNP Universal) (NNP Health))
+    (VP (VBP Care) ('' ''))
+    (. .)))
+
+nn(Malpractice-3, Medical-2)
+nsubj(Care-7, Malpractice-3)
+nn(Health-6, Universal-5)
+conj_and(Malpractice-3, Health-6)
+nsubj(Care-7, Health-6)
+root(ROOT-0, Care-7)
+
+(ROOT
+  (NP (NNP Progressive) (NNP Populist) (. .)))
+
+nn(Populist-2, Progressive-1)
+root(ROOT-0, Populist-2)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP October) (CD 01) (, ,) (CD 2002))
+      (`` ``)
+      (NP (DT The) (JJ other) (NN advantage))
+      (PP (IN of)
+        (NP (JJ universal) (NN health) (NN care))))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (PRP it))
+          (VP (VBZ creates)
+            (NP
+              (NP (DT a) (JJ clear) (NN standard))
+              (PP (IN of)
+                (NP (NN care))))))))
+    (. .)))
+
+nsubj(is-13, October-1)
+num(October-1, 01-2)
+num(October-1, 2002-4)
+det(advantage-8, The-6)
+amod(advantage-8, other-7)
+dep(October-1, advantage-8)
+amod(care-12, universal-10)
+nn(care-12, health-11)
+prep_of(October-1, care-12)
+root(ROOT-0, is-13)
+complm(creates-16, that-14)
+nsubj(creates-16, it-15)
+ccomp(is-13, creates-16)
+det(standard-19, a-17)
+amod(standard-19, clear-18)
+dobj(creates-16, standard-19)
+prep_of(standard-19, care-21)
+
+(ROOT
+  (S
+    (NP (WP What) (NN government))
+    (VP (VBZ pays)
+      (SBAR (IN for)
+        (S
+          (VP (VBZ becomes)
+            (NP
+              (NP (DT the) (JJ reasonable) (NN standard))
+              (PP (IN of)
+                (NP
+                  (NP (NN care))
+                  (, ,)
+                  (NP
+                    (NP (DT a) (NN standard))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (MD can)
+                          (VP (VB be)
+                            (VP
+                              (VP (VBN debated)
+                                (NP
+                                  (ADJP (RB democratically)
+                                    (PP (IN at)
+                                      (NP (NNS appropriations))))
+                                  (NN time))
+                                (PP (IN for)
+                                  (NP (DT the) (NN health) (NN care) (NN budget))))
+                              (CONJP (RB rather) (IN than))
+                              (VP (VBN haggled)
+                                (PP (IN for)
+                                  (ADVP (RB erratically))))
+                              (PP (IN in)
+                                (NP (DT the) (NNS courts))))))))))))))))
+    (. .)))
+
+dep(government-2, What-1)
+nsubj(pays-3, government-2)
+root(ROOT-0, pays-3)
+mark(standard-8, for-4)
+cop(standard-8, becomes-5)
+det(standard-8, the-6)
+amod(standard-8, reasonable-7)
+advcl(pays-3, standard-8)
+prep_of(standard-8, care-10)
+det(standard-13, a-12)
+appos(care-10, standard-13)
+nsubj(debated-17, standard-13)
+nsubj(haggled-29, standard-13)
+aux(debated-17, can-15)
+aux(debated-17, be-16)
+rcmod(standard-13, debated-17)
+amod(time-21, democratically-18)
+prep_at(democratically-18, appropriations-20)
+dobj(debated-17, time-21)
+det(budget-26, the-23)
+nn(budget-26, health-24)
+nn(budget-26, care-25)
+prep_for(debated-17, budget-26)
+rcmod(standard-13, haggled-29)
+conj_negcc(debated-17, haggled-29)
+prep(haggled-29, for-30)
+pcomp(for-30, erratically-31)
+det(courts-34, the-33)
+prep_in(debated-17, courts-34)
+

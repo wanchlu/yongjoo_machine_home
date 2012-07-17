@@ -1,0 +1,100 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP think)
+      (PRN (, ,)
+        (SBAR (RB even) (IN if)
+          (S
+            (NP (NNP God) (NNP doesnt))
+            (VP (VBP exist))))
+        (, ,))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBP im)
+            (S (RB not)
+              (VP (VBG saying)
+                (SBAR
+                  (S
+                    (NP (PRP he))
+                    (VP (VBZ does))))))))))
+    (: ...)))
+
+nsubj(think-2, I-1)
+root(ROOT-0, think-2)
+advmod(exist-8, even-4)
+dep(exist-8, if-5)
+nn(doesnt-7, God-6)
+nsubj(exist-8, doesnt-7)
+parataxis(think-2, exist-8)
+nsubj(im-11, which-10)
+ccomp(think-2, im-11)
+neg(saying-13, not-12)
+xcomp(im-11, saying-13)
+nsubj(does-15, he-14)
+ccomp(saying-13, does-15)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP believe)
+        (NP
+          (NP (CD 100) (NN %))
+          (SBAR
+            (S
+              (NP (PRP He))
+              (VP (VBZ does)))))))
+    (, ,)
+    (CC but)
+    (S
+      (SBAR (RB even) (IN if)
+        (S
+          (NP (PRP he))
+          (VP (VBD did) (RB n't))))
+      (NP
+        (NP (DT the) (JJ mere) (NN thought))
+        (PP (IN of)
+          (NP (PRP$ his) (NN existance))))
+      (VP (VBZ has)
+        (VP (VBN made)
+          (NP
+            (NP (JJ many) (NNS people))
+            (ADJP
+              (ADJP (RB morally) (JJR better))
+              (, ,)
+              (CC and)
+              (ADJP (RB just) (JJR happier))
+              (CC and)
+              (ADJP (JJR nicer)))))))
+    (. .)))
+
+nsubj(believe-2, I-1)
+root(ROOT-0, believe-2)
+num(%-4, 100-3)
+dobj(believe-2, %-4)
+dobj(does-6, %-4)
+nsubj(does-6, He-5)
+rcmod(%-4, does-6)
+advmod(did-12, even-9)
+dep(did-12, if-10)
+nsubj(did-12, he-11)
+advcl(made-21, did-12)
+neg(did-12, n't-13)
+det(thought-16, the-14)
+amod(thought-16, mere-15)
+nsubj(made-21, thought-16)
+poss(existance-19, his-18)
+prep_of(thought-16, existance-19)
+aux(made-21, has-20)
+conj_but(believe-2, made-21)
+amod(people-23, many-22)
+dobj(made-21, people-23)
+advmod(better-25, morally-24)
+amod(people-23, better-25)
+advmod(happier-29, just-28)
+amod(people-23, happier-29)
+conj_and(better-25, happier-29)
+amod(people-23, nicer-31)
+conj_and(better-25, nicer-31)
+

@@ -1,0 +1,392 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN used)
+          (S
+            (ADJP (RB excessively)
+              (PP (IN at)
+                (NP (JJR greater) (NN cost))))))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubjpass(used-5, insurance-2)
+aux(used-5, will-3)
+auxpass(used-5, be-4)
+root(ROOT-0, used-5)
+dep(used-5, excessively-6)
+amod(cost-9, greater-8)
+prep_at(excessively-6, cost-9)
+
+(ROOT
+  (NP (NNP Walton) (NNP J.) (NNP Francis) (. .)))
+
+nn(Francis-3, Walton-1)
+nn(Francis-3, J.-2)
+root(ROOT-0, Francis-3)
+
+(ROOT
+  (NP ('' '')
+    (CC Why)
+    (NP
+      (NP (DT a) (JJ new) (JJ public) (NN plan))
+      (VP (MD will) (RB not)
+        (VP (VB improve)
+          (NP (JJ American) (NN health) (NN care)))
+        ('' '')))
+    (. .)))
+
+cc(plan-6, Why-2)
+det(plan-6, a-3)
+amod(plan-6, new-4)
+amod(plan-6, public-5)
+root(ROOT-0, plan-6)
+aux(improve-9, will-7)
+neg(improve-9, not-8)
+dep(plan-6, improve-9)
+amod(care-12, American-10)
+nn(care-12, health-11)
+dobj(improve-9, care-12)
+
+(ROOT
+  (NP (NNP Heritage) (NNP Foundation) (. .)))
+
+nn(Foundation-2, Heritage-1)
+root(ROOT-0, Foundation-2)
+
+(ROOT
+  (NP
+    (NP (NNP May) (CD 5) (, ,) (CD 2009))
+    (: :)
+    (NP (`` ``) (NNPS Excess) (NNP Use))
+    (. .)))
+
+root(ROOT-0, May-1)
+num(May-1, 5-2)
+num(May-1, 2009-4)
+nn(Use-8, Excess-7)
+dep(May-1, Use-8)
+
+(ROOT
+  (S (RB Then)
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN matter))
+        (PP (IN of)
+          (S
+            (VP (VBG managing)
+              (NP (JJ patient) (NN care))
+              (S
+                (VP (TO to)
+                  (VP
+                    (VP (VB improve)
+                      (NP (NNS outcomes)))
+                    (CC and)
+                    (VP (VB reduce)
+                      (NP (NNS costs)))))))))))
+    (. .)))
+
+advmod(is-3, Then-1)
+expl(is-3, there-2)
+root(ROOT-0, is-3)
+det(matter-5, the-4)
+nsubj(is-3, matter-5)
+prepc_of(matter-5, managing-7)
+amod(care-9, patient-8)
+dobj(managing-7, care-9)
+aux(improve-11, to-10)
+xcomp(managing-7, improve-11)
+dobj(improve-11, outcomes-12)
+xcomp(managing-7, reduce-14)
+conj_and(improve-11, reduce-14)
+dobj(reduce-14, costs-15)
+
+(ROOT
+  (S
+    (NP (NNP Medicare))
+    (VP (VBZ spends)
+      (NP (CD zero))
+      (PP (IN on)
+        (NP (DT this) (NN function))))
+    (. .)))
+
+nsubj(spends-2, Medicare-1)
+root(ROOT-0, spends-2)
+dobj(spends-2, zero-3)
+det(function-6, this-5)
+prep_on(spends-2, function-6)
+
+(ROOT
+  (S
+    (SBAR
+      (PRN (-LRB- -LRB-)
+        (NP (CD 31))
+        (-RRB- -RRB-))
+      (S
+        (NP (JJ Private) (NNS plans))
+        (VP (VBP spend)
+          (PRT (RP around))
+          (NP
+            (NP (CD 5) (NN percent))
+            (PP (IN in)
+              (NP (JJ administrative) (NNS costs))))
+          (S
+            (VP (TO to)
+              (VP
+                (VP (VB manage)
+                  (NP (NN care))
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (NP (JJ second) (JJ surgical) (NNS opinions))
+                      (, ,)
+                      (NP (NN pre-certification)))
+                    (PP (IN for)
+                      (NP
+                        (NP (NN hospital) (NNS stays))
+                        (, ,)
+                        (CC and)
+                        (NP
+                          (NP (DT the) (NN review))
+                          (PP (IN of)
+                            (NP (JJ preferred) (NN provider) (NNS outcomes))))
+                        (, ,)
+                        (X (NN etc.))))
+                    (-RRB- -RRB-)))
+                (CC and)
+                (VP
+                  (ADVP (RB often))
+                  (VB save)
+                  (PRT (RP around))
+                  (NP
+                    (NP (CD 10) (NN percent))
+                    (PP (IN in)
+                      (NP
+                        (NP (VBN reduced) (NN use))
+                        (PP (IN of)
+                          (NP (NN health)))))))))))))
+    (VP (VBP care)
+      (NP (NN ser) (NNS vices)))
+    (. .)))
+
+dep(spend-6, 31-2)
+amod(plans-5, Private-4)
+nsubj(spend-6, plans-5)
+csubj(care-47, spend-6)
+prt(spend-6, around-7)
+num(percent-9, 5-8)
+dobj(spend-6, percent-9)
+amod(costs-12, administrative-11)
+prep_in(percent-9, costs-12)
+aux(manage-14, to-13)
+xcomp(spend-6, manage-14)
+dobj(manage-14, care-15)
+amod(opinions-19, second-17)
+amod(opinions-19, surgical-18)
+dep(manage-14, opinions-19)
+appos(opinions-19, pre-certification-21)
+dep(opinions-19, for-22)
+nn(stays-24, hospital-23)
+pobj(for-22, stays-24)
+det(review-28, the-27)
+pobj(for-22, review-28)
+conj_and(stays-24, review-28)
+amod(outcomes-32, preferred-30)
+nn(outcomes-32, provider-31)
+prep_of(review-28, outcomes-32)
+dep(stays-24, etc.-34)
+advmod(save-38, often-37)
+xcomp(spend-6, save-38)
+conj_and(manage-14, save-38)
+prt(save-38, around-39)
+num(percent-41, 10-40)
+dobj(save-38, percent-41)
+amod(use-44, reduced-43)
+prep_in(percent-41, use-44)
+prep_of(use-44, health-46)
+root(ROOT-0, care-47)
+nn(vices-49, ser-48)
+dobj(care-47, vices-49)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP Medicare) (POS 's))
+        (JJ administrative) (NNS costs))
+      (VP (VBP look)
+        (NP (JJR better) (NN arithmetically))
+        (SBAR (IN because)
+          (S
+            (S
+              (NP (DT the) (NN denominator))
+              (VP (VBZ is)
+                (ADJP (JJR higher))))
+            (CC and)
+            (S
+              (NP (DT the) (NN numerator))
+              (VP (VBZ is)
+                (ADJP (JJR lower))))))))
+    (, ,)
+    (CC but)
+    (S
+      (NP (DT the) (NN advantage))
+      (VP (VBZ is)
+        (ADVP (RB again))
+        (ADJP (RB entirely) (JJ illusory)
+          (SBAR
+            (S
+              (NP
+                (NP ($ $) (CD 100))
+                (PP (IN in)
+                  (NP (JJ frugal) (NN care))))
+              (VP (VBZ costs)
+                (NP (DT the) (JJ private) (NN plan))
+                (NP
+                  (NP ($ $) (CD 16))
+                  (PRN (-LRB- -LRB-)
+                    (NP
+                      (NP (DT the) (JJ previous) ($ $) (CD 11))
+                      (CC plus)
+                      (NP ($ $) (CD 5)))
+                    (-RRB- -RRB-)))))))
+        (, ,)
+        (SBAR (IN while)
+          (S
+            (NP (NNP Medicare))
+            (VP (VBZ is)
+              (VP
+                (VP (VBG spending)
+                  (NP ($ $) (CD 120)))
+                (CC and)
+                (VP (VBG wasting)
+                  (NP
+                    (NP ($ $) (CD 20))
+                    (ADJP ($ $) (CD 10)))
+                  (PP (IN on)
+                    (NP
+                      (NP (NN fraud))
+                      (CC and)
+                      (NP
+                        (NP
+                          (NP ($ $) (CD 10))
+                          (PP (IN on)
+                            (NP (NN overuse))))
+                        (CONJP (IN in) (NN addition) (TO to))
+                        (NP
+                          (NP (DT the) ($ $) (CD 5))
+                          (SBAR
+                            (S
+                              (NP (PRP it))
+                              (VP (VBZ spends)
+                                (PP (IN on)
+                                  (NP
+                                    (NP (NN bill))
+                                    (VP (VBG paying))))))))))))))))))
+    (. .)))
+
+poss(costs-4, Medicare-1)
+amod(costs-4, administrative-3)
+nsubj(look-5, costs-4)
+root(ROOT-0, look-5)
+amod(arithmetically-7, better-6)
+dobj(look-5, arithmetically-7)
+mark(higher-12, because-8)
+det(denominator-10, the-9)
+nsubj(higher-12, denominator-10)
+cop(higher-12, is-11)
+advcl(look-5, higher-12)
+det(numerator-15, the-14)
+nsubj(lower-17, numerator-15)
+cop(lower-17, is-16)
+advcl(look-5, lower-17)
+conj_and(higher-12, lower-17)
+det(advantage-21, the-20)
+nsubj(illusory-25, advantage-21)
+cop(illusory-25, is-22)
+advmod(illusory-25, again-23)
+advmod(illusory-25, entirely-24)
+conj_but(look-5, illusory-25)
+nsubj(costs-31, $-26)
+num($-26, 100-27)
+amod(care-30, frugal-29)
+prep_in($-26, care-30)
+dep(illusory-25, costs-31)
+det(plan-34, the-32)
+amod(plan-34, private-33)
+iobj(costs-31, plan-34)
+dobj(costs-31, $-35)
+num($-35, 16-36)
+det($-40, the-38)
+amod($-40, previous-39)
+dep($-35, $-40)
+num($-40, 11-41)
+dep($-35, $-43)
+conj_plus($-40, $-43)
+num($-43, 5-44)
+mark(spending-50, while-47)
+nsubj(spending-50, Medicare-48)
+nsubj(wasting-54, Medicare-48)
+aux(spending-50, is-49)
+advcl(illusory-25, spending-50)
+dobj(spending-50, $-51)
+num($-51, 120-52)
+advcl(illusory-25, wasting-54)
+conj_and(spending-50, wasting-54)
+dobj(wasting-54, $-55)
+num($-55, 20-56)
+amod($-55, $-57)
+number($-57, 10-58)
+prep_on(wasting-54, fraud-60)
+prep_on(wasting-54, $-62)
+conj_and(fraud-60, $-62)
+num($-62, 10-63)
+prep_on($-62, overuse-65)
+det($-70, the-69)
+conj_and(fraud-60, $-70)
+conj_in($-62, $-70)
+dobj(spends-73, $-70)
+num($-70, 5-71)
+nsubj(spends-73, it-72)
+rcmod($-70, spends-73)
+prep_on(spends-73, bill-75)
+partmod(bill-75, paying-76)
+
+(ROOT
+  (S
+    (ADVP (RB Again))
+    (, ,)
+    (NP
+      (NP
+        (ADJP (DT the) (JJR worse))
+        (DT the) (JJ actual) (NN performance))
+      (, ,)
+      (NP
+        (NP (DT the) (JJR better) (NN Medicare) (POS 's))
+        (JJ administrative) (NNS costs)))
+    (VP (VBP appear)
+      (PP (IN as)
+        (NP
+          (NP (DT a) (NN percentage))
+          (PP (IN of)
+            (NP (JJ total) (NN spending))))))
+    (. .)))
+
+advmod(appear-15, Again-1)
+dep(worse-4, the-3)
+amod(performance-7, worse-4)
+det(performance-7, the-5)
+amod(performance-7, actual-6)
+nsubj(appear-15, performance-7)
+det(Medicare-11, the-9)
+amod(Medicare-11, better-10)
+poss(costs-14, Medicare-11)
+amod(costs-14, administrative-13)
+appos(performance-7, costs-14)
+root(ROOT-0, appear-15)
+det(percentage-18, a-17)
+prep_as(appear-15, percentage-18)
+amod(spending-21, total-20)
+prep_of(percentage-18, spending-21)
+

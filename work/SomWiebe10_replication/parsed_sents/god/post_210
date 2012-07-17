@@ -1,0 +1,183 @@
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (VBZ deals)
+      (ADVP (RB only))
+      (PP (IN with)
+        (NP (DT the) (NN creation))))
+    (. .)))
+
+nsubj(deals-2, Science-1)
+root(ROOT-0, deals-2)
+advmod(deals-2, only-3)
+det(creation-6, the-5)
+prep_with(deals-2, creation-6)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (MD can) (RB not)
+      (VP (VB deal)
+        (PP (IN with)
+          (NP (DT the) (NN creator)))
+        (SBAR (IN because)
+          (S
+            (NP (DT the) (NN creator))
+            (VP (VBZ exists)
+              (PP (IN outside)
+                (NP
+                  (NP (DT the) (NN box))
+                  (PP (IN of)
+                    (NP (NN creation)))))
+              (SBAR (IN that)
+                (S
+                  (NP (NN science))
+                  (VP (VBZ is)
+                    (VP (VBN trapped)
+                      (PP (IN within)))))))))))
+    (. .)))
+
+nsubj(deal-4, It-1)
+aux(deal-4, can-2)
+neg(deal-4, not-3)
+root(ROOT-0, deal-4)
+det(creator-7, the-6)
+prep_with(deal-4, creator-7)
+mark(exists-11, because-8)
+det(creator-10, the-9)
+nsubj(exists-11, creator-10)
+advcl(deal-4, exists-11)
+det(box-14, the-13)
+prep_outside(exists-11, box-14)
+prep_of(box-14, creation-16)
+complm(trapped-20, that-17)
+nsubjpass(trapped-20, science-18)
+auxpass(trapped-20, is-19)
+ccomp(exists-11, trapped-20)
+prep(trapped-20, within-21)
+
+(ROOT
+  (S
+    (S
+      (NP (DT The) (JJS best) (NN science))
+      (VP (MD can)
+        (VP (VB do)
+          (SBAR
+            (S
+              (VP (VBZ is)
+                (VP (VB say)
+                  (SBAR (IN once)
+                    (S
+                      (NP (EX there))
+                      (VP (VBD was)
+                        (NP (DT a) (`` ``) (JJ big) (NN bang) ('' ''))))))))))))
+    (, ,)
+    (S
+      (NP (NN something))
+      (VP (VBD happened)))
+    (CC and)
+    (S
+      (NP
+        (NP (DT a) (NN bunch))
+        (PP (IN of)
+          (NP (NN energy))))
+      (VP (VBD exploded)
+        (PP (IN into)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP we))
+              (VP
+                (VP (VBP know)
+                  (PP (IN as)
+                    (NP (NN reality))))
+                (CC and)
+                (VP (VBN cooled)
+                  (CC and)
+                  (VBN formed)
+                  (NP
+                    (NP (DT the) (NN universe))
+                    (CC and)
+                    (NP
+                      (NP (VBN created) (NNS laws))
+                      (PP (IN of)
+                        (NP (NN physics)))))
+                  (SBAR (IN that)
+                    (S
+                      (NP (PRP we))
+                      (VP (VBP have)
+                        (VP (VBN discovered))))))))))))
+    (. .)))
+
+det(science-3, The-1)
+amod(science-3, best-2)
+nsubj(do-5, science-3)
+aux(do-5, can-4)
+root(ROOT-0, do-5)
+aux(say-7, is-6)
+ccomp(do-5, say-7)
+mark(was-10, once-8)
+expl(was-10, there-9)
+advcl(say-7, was-10)
+det(bang-14, a-11)
+amod(bang-14, big-13)
+nsubj(was-10, bang-14)
+nsubj(happened-18, something-17)
+conj_and(do-5, happened-18)
+det(bunch-21, a-20)
+nsubj(exploded-24, bunch-21)
+prep_of(bunch-21, energy-23)
+conj_and(do-5, exploded-24)
+dobj(know-28, what-26)
+nsubj(know-28, we-27)
+nsubj(cooled-32, we-27)
+prepc_into(exploded-24, know-28)
+prep_as(know-28, reality-30)
+prepc_into(exploded-24, cooled-32)
+conj_and(know-28, cooled-32)
+conj_and(know-28, formed-34)
+conj_and(cooled-32, formed-34)
+det(universe-36, the-35)
+dobj(cooled-32, universe-36)
+amod(laws-39, created-38)
+dobj(cooled-32, laws-39)
+conj_and(universe-36, laws-39)
+prep_of(laws-39, physics-41)
+complm(discovered-45, that-42)
+nsubj(discovered-45, we-43)
+aux(discovered-45, have-44)
+ccomp(cooled-32, discovered-45)
+
+(ROOT
+  (S
+    (NP (NNP Science))
+    (VP (MD can) (RB not)
+      (VP (VB tell)
+        (NP (PRP us))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (VP (VBD went)
+              (NP (NN bang) (NNS nor))
+              (SBAR
+                (WHADVP (WRB why))
+                (S
+                  (NP (PRP it))
+                  (VP (VBD went)
+                    (NP (NN bang))))))))))
+    (. .)))
+
+nsubj(tell-4, Science-1)
+aux(tell-4, can-2)
+neg(tell-4, not-3)
+root(ROOT-0, tell-4)
+dobj(tell-4, us-5)
+nsubj(went-7, what-6)
+dep(tell-4, went-7)
+nn(nor-9, bang-8)
+dobj(went-7, nor-9)
+advmod(went-12, why-10)
+nsubj(went-12, it-11)
+advcl(went-7, went-12)
+dobj(went-12, bang-13)
+

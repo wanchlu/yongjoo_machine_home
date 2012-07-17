@@ -1,0 +1,35 @@
+(ROOT
+  (S (CC And)
+    (NP (NN freedom))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN lost)
+          (PP (IN with)
+            (NP
+              (NP (NNS guns))
+              (PP (IN in)
+                (NP (DT the) (JJ wrong) (NNS hands))))))))
+    (. .)))
+
+cc(lost-5, And-1)
+nsubjpass(lost-5, freedom-2)
+aux(lost-5, can-3)
+auxpass(lost-5, be-4)
+root(ROOT-0, lost-5)
+prep_with(lost-5, guns-7)
+det(hands-11, the-9)
+amod(hands-11, wrong-10)
+prep_in(guns-7, hands-11)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ works)
+      (NP (DT both) (NN way)))
+    (. .)))
+
+nsubj(works-2, It-1)
+root(ROOT-0, works-2)
+det(way-4, both-3)
+dobj(works-2, way-4)
+

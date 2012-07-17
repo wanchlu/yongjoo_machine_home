@@ -1,0 +1,1232 @@
+(ROOT
+  (FRAG
+    (SBAR (IN Because)
+      (S
+        (NP (PRP I))
+        (VP (VBP 'm)
+          (ADVP (RB just))
+          (VP (VBG going)
+            (S
+              (VP (TO to)
+                (VP
+                  (VP (VB go)
+                    (PP (TO to)
+                      (NP (NN town))))
+                  (CC and)
+                  (VP (VB summarize)
+                    (NP (PRP$ my) (NN position))))))))))
+    (. .)))
+
+mark(going-5, Because-1)
+nsubj(going-5, I-2)
+xsubj(go-7, I-2)
+aux(going-5, 'm-3)
+advmod(going-5, just-4)
+root(ROOT-0, going-5)
+aux(go-7, to-6)
+xcomp(going-5, go-7)
+prep_to(go-7, town-9)
+xcomp(going-5, summarize-11)
+conj_and(go-7, summarize-11)
+poss(position-13, my-12)
+dobj(summarize-11, position-13)
+
+(ROOT
+  (S
+    (VP
+      (ADVP (RB Just))
+      (VBG going)
+      (PP (TO to)
+        (NP (NN town))))
+    (. .)))
+
+advmod(going-2, Just-1)
+root(ROOT-0, going-2)
+prep_to(going-2, town-4)
+
+(ROOT
+  (S (IN So)
+    (NP (RB here))
+    (VP (VBP are)
+      (NP
+        (NP (DT the) (NNS facts))
+        (SBAR
+          (S
+            (NP (CD .47) (NNP Million) (NNPS Americans))
+            (VP (VBP do) (RB n't)
+              (VP (VB have)
+                (NP (NN health) (NN insurance))))))))
+    (. .)))
+
+dep(facts-5, So-1)
+nsubj(facts-5, here-2)
+cop(facts-5, are-3)
+det(facts-5, the-4)
+root(ROOT-0, facts-5)
+num(Americans-8, .47-6)
+nn(Americans-8, Million-7)
+nsubj(have-11, Americans-8)
+aux(have-11, do-9)
+neg(have-11, n't-10)
+rcmod(facts-5, have-11)
+nn(insurance-13, health-12)
+dobj(have-11, insurance-13)
+
+(ROOT
+  (NP (NNS http:\/\/www.cnn.com\/2009\/HEALTH\/03\/04\/uninsured.epidemic) (. .)))
+
+root(ROOT-0, http:\/\/www.cnn.com\/2009\/HEALTH\/03\/04\/uninsured.epidemic-1)
+
+(ROOT
+  (S
+    (NP (NN obama))
+    (ADVP
+      (NP (CD \/) (NNS Millions))
+      (RBR more))
+    (VP (VBP are)
+      (ADJP (JJ under-insured)))
+    (. .)))
+
+nsubj(under-insured-6, obama-1)
+num(Millions-3, \/-2)
+npadvmod(more-4, Millions-3)
+advmod(under-insured-6, more-4)
+cop(under-insured-6, are-5)
+root(ROOT-0, under-insured-6)
+
+(ROOT
+  (S
+    (ADVP (RB http:\/\/www.nytimes.com\/2008\/07\/17\/business\/17health.html?_r=1&ref=todayspaper))
+    (NP (DT That))
+    (VP (VBZ 's)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP
+            (NP (JJS most) (NNS bankruptcies))
+            (PP (IN in)
+              (NP (DT the) (NNP US))))
+          (VP (VBP are)
+            (PP (IN about)
+              (NP (JJ medical) (NNS bills)))))))
+    (. .)))
+
+advmod('s-3, http:\/\/www.nytimes.com\/2008\/07\/17\/business\/17health.html?_r=1&ref=todayspaper-1)
+nsubj('s-3, That-2)
+root(ROOT-0, 's-3)
+advmod(are-10, why-4)
+amod(bankruptcies-6, most-5)
+nsubj(are-10, bankruptcies-6)
+det(US-9, the-8)
+prep_in(bankruptcies-6, US-9)
+advcl('s-3, are-10)
+amod(bills-13, medical-12)
+prep_about(are-10, bills-13)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS http:\/\/www.msnbc.msn.com\/id\/31103572))
+      (VP (VBZ \/)))
+    (CC And)
+    (S
+      (NP
+        (NP (DT a) (JJ third))
+        (PP (IN of)
+          (NP
+            (NP (NNS people))
+            (VP (VBG responding)
+              (PP (TO to)
+                (NP (NNS surveys)))))))
+      (VP (VBP say)
+        (SBAR (IN that)
+          (S
+            (NP (PRP they))
+            (VP (VBP are) (RB n't)
+              (VP (VBG complying)
+                (PP (IN with)
+                  (NP
+                    (NP (NNS perscriptions))
+                    (PP (RB because) (IN of)
+                      (NP (DT the) (NN cost)))))
+                (, ,)
+                (ADVP (RB up)
+                  (PP (IN from)
+                    (NP
+                      (QP (DT a) (JJ fourth)))
+                    (ADVP
+                      (NP (RB about) (CD three) (NNS years))
+                      (RB ago))))))))))
+    (. .)))
+
+nsubj(\/-2, http:\/\/www.msnbc.msn.com\/id\/31103572-1)
+root(ROOT-0, \/-2)
+det(third-5, a-4)
+nsubj(say-11, third-5)
+prep_of(third-5, people-7)
+partmod(people-7, responding-8)
+prep_to(responding-8, surveys-10)
+conj_and(\/-2, say-11)
+complm(complying-16, that-12)
+nsubj(complying-16, they-13)
+aux(complying-16, are-14)
+neg(complying-16, n't-15)
+ccomp(say-11, complying-16)
+prep_with(complying-16, perscriptions-18)
+det(cost-22, the-21)
+prep_because_of(perscriptions-18, cost-22)
+advmod(complying-16, up-24)
+quantmod(fourth-27, a-26)
+prep_from(up-24, fourth-27)
+advmod(years-30, about-28)
+num(years-30, three-29)
+npadvmod(ago-31, years-30)
+advmod(up-24, ago-31)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS http:\/\/www.nytimes.com\/2009\/06\/04\/us\/04pharmacy.html?ref=todayspaper))
+      (ADVP (RB Yes)))
+    (, ,)
+    (NP (PRP you))
+    (VP (MD can)
+      (VP (VB go)
+        (PP (TO to)
+          (NP
+            (NP (DT an) (NN emergency) (NN room))
+            (RRC
+              (ADVP (DT no) (NN matter))
+              (NP (WP what)))))))
+    (. .)))
+
+ccomp(go-6, http:\/\/www.nytimes.com\/2009\/06\/04\/us\/04pharmacy.html?ref=todayspaper-1)
+advmod(http:\/\/www.nytimes.com\/2009\/06\/04\/us\/04pharmacy.html?ref=todayspaper-1, Yes-2)
+nsubj(go-6, you-4)
+aux(go-6, can-5)
+root(ROOT-0, go-6)
+det(room-10, an-8)
+nn(room-10, emergency-9)
+prep_to(go-6, room-10)
+dep(matter-12, no-11)
+advmod(what-13, matter-12)
+rcmod(room-10, what-13)
+
+(ROOT
+  (S
+    (ADVP (RB Unfortunately))
+    (, ,)
+    (NP (DT an) (NNP ER) (NN visit))
+    (VP (VBZ does) (RB n't)
+      (VP (VB give)
+        (NP (PRP you))
+        (NP (DT any) (JJ preventative) (NN medicine))))
+    (. .)))
+
+advmod(give-8, Unfortunately-1)
+det(visit-5, an-3)
+nn(visit-5, ER-4)
+nsubj(give-8, visit-5)
+aux(give-8, does-6)
+neg(give-8, n't-7)
+root(ROOT-0, give-8)
+iobj(give-8, you-9)
+det(medicine-12, any-10)
+amod(medicine-12, preventative-11)
+dobj(give-8, medicine-12)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP do) (RB n't)
+        (VP (VB have)
+          (NP
+            (NP (DT a) (NN link))
+            (PP (IN for)
+              (NP (DT this)))))))
+    (, ,)
+    (CC but)
+    (S
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (VBP doubt))))
+      (NP (PRP me))
+      (VP (VBP please)
+        (VP
+          (VP (VB go)
+            (PP (TO to)
+              (NP (DT an) (NNP ER))))
+          (CC and)
+          (VP (VB ask)
+            (PP (IN for)
+              (NP
+                (NP (DT a) (NN colonoscopy))
+                (CC or)
+                (NP (DT a) (NN mammogram))))))))
+    (. .)))
+
+nsubj(have-4, I-1)
+aux(have-4, do-2)
+neg(have-4, n't-3)
+root(ROOT-0, have-4)
+det(link-6, a-5)
+dobj(have-4, link-6)
+prep_for(link-6, this-8)
+mark(doubt-13, if-11)
+nsubj(doubt-13, you-12)
+advcl(please-15, doubt-13)
+nsubj(please-15, me-14)
+conj_but(have-4, please-15)
+dep(please-15, go-16)
+det(ER-19, an-18)
+prep_to(go-16, ER-19)
+dep(please-15, ask-21)
+conj_and(go-16, ask-21)
+det(colonoscopy-24, a-23)
+prep_for(ask-21, colonoscopy-24)
+det(mammogram-27, a-26)
+prep_for(ask-21, mammogram-27)
+conj_or(colonoscopy-24, mammogram-27)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP American) (NNP Cancer) (NNP Society))
+    (VP (VBD found)
+      (SBAR (IN that)
+        (PRN (-LRB- -LRB-)
+          (S (CC and)
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP (NN sort))
+                (PP (IN of)
+                  (NP (DT a) (NN duh) (NN thing))))))
+          (-RRB- -RRB-))
+        (S
+          (NP (NN cancer))
+          (VP (VBZ kills)
+            (ADVP
+              (ADVP (RBR more) (RB often))
+              (SBAR (IN if)
+                (S
+                  (NP (PRP you))
+                  (VP (VBP do) (RB n't)
+                    (VP (VB have)
+                      (NP (JJ adequate) (NN health) (NN insurance)))))))))))
+    (. .)))
+
+det(Society-4, The-1)
+nn(Society-4, American-2)
+nn(Society-4, Cancer-3)
+nsubj(found-5, Society-4)
+root(ROOT-0, found-5)
+complm(kills-18, that-6)
+cc(sort-11, and-8)
+nsubj(sort-11, this-9)
+cop(sort-11, is-10)
+dep(kills-18, sort-11)
+det(thing-15, a-13)
+nn(thing-15, duh-14)
+prep_of(sort-11, thing-15)
+nsubj(kills-18, cancer-17)
+ccomp(found-5, kills-18)
+advmod(often-20, more-19)
+advmod(kills-18, often-20)
+mark(have-25, if-21)
+nsubj(have-25, you-22)
+aux(have-25, do-23)
+neg(have-25, n't-24)
+dep(often-20, have-25)
+amod(insurance-28, adequate-26)
+nn(insurance-28, health-27)
+dobj(have-25, insurance-28)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (JJ http:\/\/www.nytimes.com\/2008\/01\/03\/opinion\/03thu3.html?scp=1&sq=case) (NNS +))
+        (PP (IN for)
+          (NP (JJ +) (NN providingIf))))
+      (NP (PRP you))
+      (VP (VBP want)
+        (NP
+          (NP (DT the) (JJ statistical) (NN cost))
+          (PP (IN of)
+            (NP (PRP$ our) (JJ current) (NN health) (NN care) (NN system))))))
+    (, ,)
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (CD three) (NNS numbers))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBP need)
+              (S
+                (VP (TO to)
+                  (VP (VB remember)))))))))
+    (. .)))
+
+amod(+-2, http:\/\/www.nytimes.com\/2008\/01\/03\/opinion\/03thu3.html?scp=1&sq=case-1)
+nsubj(want-7, +-2)
+amod(providingIf-5, +-4)
+prep_for(+-2, providingIf-5)
+nsubj(want-7, you-6)
+ccomp(are-19, want-7)
+det(cost-10, the-8)
+amod(cost-10, statistical-9)
+dobj(want-7, cost-10)
+poss(system-16, our-12)
+amod(system-16, current-13)
+nn(system-16, health-14)
+nn(system-16, care-15)
+prep_of(cost-10, system-16)
+expl(are-19, there-18)
+root(ROOT-0, are-19)
+num(numbers-21, three-20)
+nsubj(are-19, numbers-21)
+dobj(need-23, numbers-21)
+nsubj(need-23, you-22)
+xsubj(remember-25, you-22)
+rcmod(numbers-21, need-23)
+aux(remember-25, to-24)
+xcomp(need-23, remember-25)
+
+(ROOT
+  (NP
+    (NP (CD 12,000))
+    (, ,)
+    (NP
+      (NP (CD 18,000))
+      (, ,)
+      (CC and)
+      (NP (CD 100,000)))
+    (. .)))
+
+root(ROOT-0, 12,000-1)
+appos(12,000-1, 18,000-3)
+appos(12,000-1, 100,000-6)
+conj_and(18,000-3, 100,000-6)
+
+(ROOT
+  (S
+    (NP (NNP Feel))
+    (VP (VBP free)
+      (S
+        (VP (TO to)
+          (VP (VB repeat)
+            (SBAR
+              (S
+                (NP (DT those) (CD .12,000))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT the) (NN number))
+                    (PP (IN of)
+                      (NP (NNS children))))
+                  (SBAR (IN that)
+                    (S
+                      (VP (MD would)
+                        (VP
+                          (VP (VB live))
+                          (, ,) (RB not)
+                          (VP (VB die))))))
+                  (, ,)
+                  (NP
+                    (NP (DT each) (NN year))
+                    (SBAR (IN if)
+                      (S
+                        (NP
+                          (NP (DT the) (NNP US) (POS 's))
+                          (JJ infant) (NN mortality) (NN rate))
+                        (VP (VBD were)
+                          (ADJP (RB as) (JJ low))
+                          (PP (IN as)
+                            (NP
+                              (NP (NNP Japans))
+                              (, ,)
+                              (NP (NNP Sweden) (POS 's))
+                              (, ,)
+                              (NP (NNP France) (NNP 's))
+                              (, ,)
+                              (NP (NNP Germany) (POS 's))
+                              (CC or)
+                              (NP (NNP Italy) (POS 's)))))))))))))))
+    (. .)))
+
+nsubj(free-2, Feel-1)
+xsubj(repeat-4, Feel-1)
+root(ROOT-0, free-2)
+aux(repeat-4, to-3)
+xcomp(free-2, repeat-4)
+det(.12,000-6, those-5)
+nsubj(number-9, .12,000-6)
+cop(number-9, is-7)
+det(number-9, the-8)
+ccomp(repeat-4, number-9)
+prep_of(number-9, children-11)
+complm(live-14, that-12)
+aux(live-14, would-13)
+ccomp(number-9, live-14)
+neg(live-14, not-16)
+dep(live-14, die-17)
+det(year-20, each-19)
+attr(number-9, year-20)
+mark(low-30, if-21)
+det(US-23, the-22)
+poss(rate-27, US-23)
+amod(rate-27, infant-25)
+nn(rate-27, mortality-26)
+nsubj(low-30, rate-27)
+cop(low-30, were-28)
+advmod(low-30, as-29)
+dep(year-20, low-30)
+prep_as(low-30, Japans-32)
+prep_as(low-30, Sweden-34)
+conj_or(Japans-32, Sweden-34)
+nn('s-38, France-37)
+prep_as(low-30, 's-38)
+conj_or(Japans-32, 's-38)
+prep_as(low-30, Germany-40)
+conj_or(Japans-32, Germany-40)
+prep_as(low-30, Italy-43)
+conj_or(Japans-32, Italy-43)
+
+(ROOT
+  (S
+    (NP (DT An) (JJ American) (NN mother))
+    (VP (VBZ is)
+      (ADJP
+        (ADVP
+          (NP (CD three) (NNS times))
+          (RBR more))
+        (JJ likely)
+        (S
+          (VP (TO to)
+            (VP (VB lose)
+              (NP (DT a) (NN child))
+              (PP (IN before)
+                (NP
+                  (NP (DT the) (NN age))
+                  (PP (IN of)
+                    (NP (CD 5)))))
+              (PP (IN as)
+                (NP
+                  (NP (DT a) (NN mother))
+                  (PP (IN in)
+                    (NP (DT the) (NNP Czech) (NNP Republic))))))))))
+    (. .)))
+
+det(mother-3, An-1)
+amod(mother-3, American-2)
+nsubj(likely-8, mother-3)
+cop(likely-8, is-4)
+num(times-6, three-5)
+npadvmod(more-7, times-6)
+advmod(likely-8, more-7)
+root(ROOT-0, likely-8)
+aux(lose-10, to-9)
+xcomp(likely-8, lose-10)
+det(child-12, a-11)
+dobj(lose-10, child-12)
+det(age-15, the-14)
+prep_before(lose-10, age-15)
+prep_of(age-15, 5-17)
+det(mother-20, a-19)
+prep_as(lose-10, mother-20)
+det(Republic-24, the-22)
+nn(Republic-24, Czech-23)
+prep_in(mother-20, Republic-24)
+
+(ROOT
+  (S
+    (VP (VB Hoo-ha))
+    (. .)))
+
+root(ROOT-0, Hoo-ha-1)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJ http:\/\/select.nytimes.com\/2007\/05\/21\/opinion\/21kristof.html?scp=5&sq=kristof) (JJ +) (NN infant))
+      (VP (VBG +)
+        (NP
+          (NP (NN mortality) (VBG +) (NN rate))
+          (CC &)
+          (NP
+            (NP (NN st))
+            (SBAR
+              (S
+                (VP (SYM =)
+                  (NP (CD nyt18) (CD ,000) (NNS Americans)))))))))
+    (VP (VBP die)
+      (NP
+        (NP (DT every) (NN year))
+        (PP (RB because) (IN of)
+          (NP
+            (NP (DT a) (NN lack))
+            (PP (IN of)
+              (NP (NN health) (NN coverage)))))))
+    (. .)))
+
+amod(infant-3, http:\/\/select.nytimes.com\/2007\/05\/21\/opinion\/21kristof.html?scp=5&sq=kristof-1)
+amod(infant-3, +-2)
+nsubj(die-14, infant-3)
+partmod(infant-3, +-4)
+nn(rate-7, mortality-5)
+amod(rate-7, +-6)
+dobj(+-4, rate-7)
+dobj(+-4, st-9)
+conj_and(rate-7, st-9)
+dep(Americans-13, =-10)
+num(Americans-13, nyt18-11)
+num(Americans-13, ,000-12)
+rcmod(st-9, Americans-13)
+root(ROOT-0, die-14)
+det(year-16, every-15)
+dobj(die-14, year-16)
+det(lack-20, a-19)
+prep_because_of(year-16, lack-20)
+nn(coverage-23, health-22)
+prep_of(lack-20, coverage-23)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP do) (RB n't)
+      (VP (VB get)
+        (NP
+          (NP (JJ preventative) (NN care))
+          (, ,)
+          (NP (JJ timely) (NNS diagnoses))
+          (, ,)
+          (CC or)
+          (NP (NN specialist) (NNS treatments)))))
+    (. .)))
+
+nsubj(get-4, They-1)
+aux(get-4, do-2)
+neg(get-4, n't-3)
+root(ROOT-0, get-4)
+amod(care-6, preventative-5)
+dobj(get-4, care-6)
+amod(diagnoses-9, timely-8)
+dobj(get-4, diagnoses-9)
+conj_or(care-6, diagnoses-9)
+nn(treatments-13, specialist-12)
+dobj(get-4, treatments-13)
+conj_or(care-6, treatments-13)
+
+(ROOT
+  (S
+    (UCP
+      (ADJP (JJ http:\/\/www.usatoday.com\/news\/health\/healthcare\/2002-05-22-insurance-deaths.htm))
+      (CC And)
+      (ADVP (RB lastly)))
+    (, ,)
+    (NP
+      (NP (DT the) (JJ big) (NN number))
+      (: --)
+      (NP (CD 100,000) (NNS Americans)))
+    (VP (MD would)
+      (VP (VB survive)
+        (NP (DT every) (NN year))
+        (SBAR (IN if)
+          (S
+            (NP (PRP$ our) (NN health) (NN care) (NN system))
+            (VP (VBD did)
+              (ADVP (RB as) (RB well))
+              (PP (IN on)
+                (NP
+                  (NP (JJ prevantable) (NNS deaths))
+                  (ADJP (JJ due)
+                    (S
+                      (VP (TO to)
+                        (VP (VB treatable)
+                          (NP (NNS conditions))
+                          (PP (IN as)
+                            (NP
+                              (NP (NN health) (NN care))
+                              (PP (IN in)
+                                (NP (NNP Japan) (, ,) (NNP France) (, ,)
+                                  (CC and)
+                                  (NNP Australia))))))))))))))))
+    (. .)))
+
+dep(survive-12, http:\/\/www.usatoday.com\/news\/health\/healthcare\/2002-05-22-insurance-deaths.htm-1)
+advmod(http:\/\/www.usatoday.com\/news\/health\/healthcare\/2002-05-22-insurance-deaths.htm-1, lastly-3)
+conj_and(http:\/\/www.usatoday.com\/news\/health\/healthcare\/2002-05-22-insurance-deaths.htm-1, lastly-3)
+dep(survive-12, lastly-3)
+det(number-7, the-5)
+amod(number-7, big-6)
+nsubj(survive-12, number-7)
+num(Americans-10, 100,000-9)
+dep(number-7, Americans-10)
+aux(survive-12, would-11)
+root(ROOT-0, survive-12)
+det(year-14, every-13)
+tmod(survive-12, year-14)
+mark(did-20, if-15)
+poss(system-19, our-16)
+nn(system-19, health-17)
+nn(system-19, care-18)
+nsubj(did-20, system-19)
+advcl(survive-12, did-20)
+advmod(well-22, as-21)
+mwe(well-22, as-21)
+advmod(did-20, well-22)
+amod(deaths-25, prevantable-24)
+prep_on(did-20, deaths-25)
+amod(deaths-25, due-26)
+aux(treatable-28, to-27)
+xcomp(due-26, treatable-28)
+dobj(treatable-28, conditions-29)
+nn(care-32, health-31)
+prep_as(treatable-28, care-32)
+prep_in(care-32, Japan-34)
+prep_in(care-32, France-36)
+conj_and(Japan-34, France-36)
+prep_in(care-32, Australia-39)
+conj_and(Japan-34, Australia-39)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP US))
+    (VP (VBZ has)
+      (NP
+        (NP (DT the) (JJS worst) (NN ranking))
+        (PP (IN throughout)
+          (NP
+            (NP (VBN industrialized) (NNS nations))
+            (PP (IN in)
+              (NP (DT this) (NN area)))))))
+    (. .)))
+
+det(US-2, The-1)
+nsubj(has-3, US-2)
+root(ROOT-0, has-3)
+det(ranking-6, the-4)
+amod(ranking-6, worst-5)
+dobj(has-3, ranking-6)
+amod(nations-9, industrialized-8)
+prep_throughout(ranking-6, nations-9)
+det(area-12, this-11)
+prep_in(nations-9, area-12)
+
+(ROOT
+  (S
+    (ADVP
+      (NP (CD http:\/\/www.reuters.com\/article\/healthNews\/idUSN0765165020080108?rpc=28))
+      (IN So))
+    (NP (DT that))
+    (VP (VBZ 's)
+      (ADVP (RB just))
+      (NP
+        (NP (NN death))
+        (, ,)
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (ADVP (RB just))
+            (VP (VBZ refers)
+              (PP (TO to)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ dies))))))))))
+    (. .)))
+
+npadvmod(So-2, http:\/\/www.reuters.com\/article\/healthNews\/idUSN0765165020080108?rpc=28-1)
+advmod(death-6, So-2)
+nsubj(death-6, that-3)
+cop(death-6, 's-4)
+advmod(death-6, just-5)
+root(ROOT-0, death-6)
+nsubj(refers-10, death-6)
+advmod(refers-10, just-9)
+rcmod(death-6, refers-10)
+nsubj(dies-13, who-12)
+prepc_to(refers-10, dies-13)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ
+      (VP (VBZ knows)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ survives)
+              (NP
+                (NP (DT the) (NN subpar) (NN treatment))
+                (, ,)
+                (SBAR
+                  (WHNP (WP who))
+                  (S
+                    (VP (VBZ lives)
+                      (PP (IN with)
+                        (NP
+                          (NP (JJ chronic) (NN injury)
+                            (CC and)
+                            (JJ crippling) (NN pain))
+                          (, ,)
+                          (NP
+                            (NP (DT a) (VBN lowered) (NN quality))
+                            (PP (IN of)
+                              (NP (NN life)))))))))))))))
+    (. ?)))
+
+nsubj(knows-2, Who-1)
+root(ROOT-0, knows-2)
+nsubj(survives-4, who-3)
+ccomp(knows-2, survives-4)
+det(treatment-7, the-5)
+nn(treatment-7, subpar-6)
+dobj(survives-4, treatment-7)
+nsubj(lives-10, treatment-7)
+rcmod(treatment-7, lives-10)
+amod(injury-13, chronic-12)
+prep_with(lives-10, injury-13)
+amod(pain-16, crippling-15)
+prep_with(lives-10, pain-16)
+conj_and(injury-13, pain-16)
+det(quality-20, a-18)
+amod(quality-20, lowered-19)
+appos(injury-13, quality-20)
+prep_of(quality-20, life-22)
+
+(ROOT
+  (SBARQ (RB So)
+    (WHADVP (WRB how))
+    (SQ (VBZ does)
+      (NP (DT that))
+      (VP (VB measure)
+        (PRT (RP up))
+        (PP (TO to)
+          (SBAR
+            (WHADJP (WRB how) (JJ much))
+            (S
+              (NP (PRP we))
+              (VP (VBP spend)
+                (PP (IN on)
+                  (NP (PRP it)))))))))
+    (. ?)))
+
+advmod(measure-5, So-1)
+advmod(measure-5, how-2)
+aux(measure-5, does-3)
+nsubj(measure-5, that-4)
+root(ROOT-0, measure-5)
+prt(measure-5, up-6)
+advmod(much-9, how-8)
+dep(spend-11, much-9)
+nsubj(spend-11, we-10)
+prepc_to(measure-5, spend-11)
+prep_on(spend-11, it-13)
+
+(ROOT
+  (S
+    (FRAG (RB Not)
+      (ADVP (RB well)))
+    (: ...)
+    (S
+      (ADVP (RB http:\/\/www.nytimes.com\/packages\/other\/business\/20061018health.xls))
+      (NP (PRP We))
+      (VP (VBP spend)
+        (NP
+          (NP
+            (QP (RB twice) (RB as) (JJ much)))
+          (PP (IN as)
+            (NP
+              (NP (DT a) (NN lot))
+              (PP (IN of)
+                (NP
+                  (NP (NNS countries))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (VBP are)
+                        (VP (VBG outperforming)
+                          (NP (PRP us)))))))))))))
+    (. .)))
+
+dep(spend-6, Not-1)
+dep(Not-1, well-2)
+advmod(spend-6, http:\/\/www.nytimes.com\/packages\/other\/business\/20061018health.xls-4)
+nsubj(spend-6, We-5)
+root(ROOT-0, spend-6)
+quantmod(much-9, twice-7)
+quantmod(much-9, as-8)
+dobj(spend-6, much-9)
+det(lot-12, a-11)
+prep_as(much-9, lot-12)
+prep_of(lot-12, countries-14)
+nsubj(outperforming-17, countries-14)
+aux(outperforming-17, are-16)
+rcmod(countries-14, outperforming-17)
+dobj(outperforming-17, us-18)
+
+(ROOT
+  (S
+    (S (IN So)
+      (NP (PRP we))
+      (VP (VBP 're)
+        (PP (IN at)
+          (NP (DT the) (JJ big) (NN problem) (NN stage)))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP hope)
+      (SBAR
+        (S
+          (NP (NN you\/d))
+          (VP (VBP agree)))))
+    (. .)))
+
+dep('re-3, So-1)
+nsubj('re-3, we-2)
+ccomp(hope-11, 're-3)
+det(stage-8, the-5)
+amod(stage-8, big-6)
+nn(stage-8, problem-7)
+prep_at('re-3, stage-8)
+nsubj(hope-11, I-10)
+root(ROOT-0, hope-11)
+nsubj(agree-13, you\/d-12)
+ccomp(hope-11, agree-13)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is) (RB n't)
+      (NP
+        (NP (NN something))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBZ needs)
+              (S
+                (VP (VBG trimming)
+                  (PP (IN around)
+                    (NP (DT the) (NNS edges))))))))))
+    (. .)))
+
+nsubj(something-4, This-1)
+cop(something-4, is-2)
+neg(something-4, n't-3)
+root(ROOT-0, something-4)
+nsubj(needs-6, something-4)
+rcmod(something-4, needs-6)
+xcomp(needs-6, trimming-7)
+det(edges-10, the-9)
+prep_around(trimming-7, edges-10)
+
+(ROOT
+  (INTJ (UH Okay) (. .)))
+
+root(ROOT-0, Okay-1)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Next) (RB up))
+    (. ?)))
+
+advmod(up-2, Next-1)
+root(ROOT-0, up-2)
+
+(ROOT
+  (S
+    (VP (VBG Explaining)
+      (SBAR
+        (WHNP (WP what))
+        (S
+          (NP (NNP Obama))
+          (VP (VBZ is)
+            (VP (VBG talking) (IN about))))))
+    (. .)))
+
+root(ROOT-0, Explaining-1)
+dobj(talking-5, what-2)
+nsubj(talking-5, Obama-3)
+aux(talking-5, is-4)
+ccomp(Explaining-1, talking-5)
+dep(talking-5, about-6)
+
+(ROOT
+  (S
+    (NP (NNP Health) (NNP Care))
+    (VP (VBZ is)
+      (ADJP (RB really) (, ,) (RB really) (JJ important)))
+    (. .)))
+
+nn(Care-2, Health-1)
+nsubj(important-7, Care-2)
+cop(important-7, is-3)
+advmod(important-7, really-4)
+advmod(important-7, really-6)
+root(ROOT-0, important-7)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (ADJP (JJ important)
+        (S
+          (VP (TO to)
+            (VP (VB determine)
+              (SBAR (IN whether)
+                (S
+                  (NP (NN health) (NN care))
+                  (VP (VBZ is)
+                    (ADVP (RB actually))
+                    (PP (IN in)
+                      (NP
+                        (NP (NN need))
+                        (PP (IN of)
+                          (NP (JJ serious) (NN overhaul)))))
+                    (, ,)
+                    (NP
+                      (NP
+                        (QP (CC or)
+                          (RB just)))
+                      (NP (DT a) (NN bit))
+                      (PP (IN of)
+                        (S
+                          (VP (VBG trimming)
+                            (PP (IN around)
+                              (NP (DT the) (NNS edges)))))))))))))))
+    (. .)))
+
+nsubj(important-3, It-1)
+cop(important-3, 's-2)
+root(ROOT-0, important-3)
+aux(determine-5, to-4)
+xcomp(important-3, determine-5)
+complm(just-18, whether-6)
+nn(care-8, health-7)
+nsubj(just-18, care-8)
+cop(just-18, is-9)
+advmod(just-18, actually-10)
+prep_in(just-18, need-12)
+amod(overhaul-15, serious-14)
+prep_of(need-12, overhaul-15)
+cc(just-18, or-17)
+ccomp(determine-5, just-18)
+det(bit-20, a-19)
+dep(just-18, bit-20)
+prepc_of(just-18, trimming-22)
+det(edges-25, the-24)
+prep_around(trimming-22, edges-25)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG going)
+        (S
+          (VP (TO to)
+            (VP (VB try)
+              (CC and)
+              (VB prove)
+              (PP (TO to)
+                (NP (PRP you)))
+              (, ,)
+              (PP (IN with)
+                (NP (NNS sources)
+                  (CC and)
+                  (NN everything)))
+              (, ,)
+              (SBAR
+                (WHADVP (WRB why))
+                (S
+                  (NP (PRP we))
+                  (VP (VBP need)
+                    (NP
+                      (NP (DT the) (JJ public) (NN option))
+                      (SBAR
+                        (WHNP (WDT that))
+                        (S
+                          (VP (VBZ 's)
+                            (ADVP (RB currently))
+                            (PP (IN on)
+                              (NP
+                                (NP (DT the) (NN table))
+                                (PP (IN in)
+                                  (NP (NN congress)))))))))))))))))
+    (. .)))
+
+nsubj(going-3, I-1)
+xsubj(try-5, I-1)
+aux(going-3, 'm-2)
+root(ROOT-0, going-3)
+aux(try-5, to-4)
+xcomp(going-3, try-5)
+xcomp(going-3, prove-7)
+conj_and(try-5, prove-7)
+prep_to(try-5, you-9)
+xcomp(going-3, with-11)
+conj_and(try-5, with-11)
+prep_with(try-5, sources-12)
+prep_with(try-5, everything-14)
+conj_and(sources-12, everything-14)
+advmod(need-18, why-16)
+nsubj(need-18, we-17)
+advcl(try-5, need-18)
+det(option-21, the-19)
+amod(option-21, public-20)
+dobj(need-18, option-21)
+nsubj('s-23, option-21)
+rcmod(option-21, 's-23)
+advmod('s-23, currently-24)
+det(table-27, the-26)
+prep_on('s-23, table-27)
+prep_in(table-27, congress-29)
+
+(ROOT
+  (S
+    (LST (JJ First))
+    (PP (IN of)
+      (NP (DT all)))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD 'll)
+      (VP (VB say)
+        (SBAR (IN that)
+          (S
+            (NP (NNP US) (NNP Health-care))
+            (VP (VBZ is)
+              (ADVP (RB indeed))
+              (NP
+                (NP (DT the)
+                  (ADJP (RBS most) (RB technologically) (JJ advanced))
+                  (NN health) (NN care))
+                (PP (IN in)
+                  (NP (DT the) (NN world)))))))))
+    (. .)))
+
+dep(say-7, First-1)
+prep_of(say-7, all-3)
+nsubj(say-7, I-5)
+aux(say-7, 'll-6)
+root(ROOT-0, say-7)
+complm(care-18, that-8)
+nn(Health-care-10, US-9)
+nsubj(care-18, Health-care-10)
+cop(care-18, is-11)
+advmod(care-18, indeed-12)
+det(care-18, the-13)
+advmod(advanced-16, most-14)
+advmod(advanced-16, technologically-15)
+amod(care-18, advanced-16)
+nn(care-18, health-17)
+ccomp(say-7, care-18)
+det(world-21, the-20)
+prep_in(care-18, world-21)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (ADVP (RB firmly))
+    (VP (VBP believe)
+      (NP (DT that)))
+    (. .)))
+
+nsubj(believe-3, I-1)
+advmod(believe-3, firmly-2)
+root(ROOT-0, believe-3)
+dobj(believe-3, that-4)
+
+(ROOT
+  (S
+    (ADVP (RB Unfortunately))
+    (, ,)
+    (NP
+      (NP (DT all))
+      (PP (IN of)
+        (NP (DT that) (JJ great) (NN technology))))
+    (VP (VBZ does) (RB n't)
+      (VP (VB do)
+        (S
+          (NP (PRP us))
+          (ADJP (RB much) (JJ good))
+          (SBAR (IN if)
+            (S
+              (NP (PRP it))
+              (VP (MD can)
+                (ADVP (RB only))
+                (VP (VB be)
+                  (VP (VBN used)
+                    (PP (IN by)
+                      (NP
+                        (NP (CD ten) (NNS people))
+                        (NP (DT a) (NN year))))))))))))
+    (. .)))
+
+advmod(do-10, Unfortunately-1)
+nsubj(do-10, all-3)
+det(technology-7, that-5)
+amod(technology-7, great-6)
+prep_of(all-3, technology-7)
+aux(do-10, does-8)
+neg(do-10, n't-9)
+root(ROOT-0, do-10)
+nsubjpass(used-19, us-11)
+advmod(good-13, much-12)
+dep(used-19, good-13)
+mark(used-19, if-14)
+nsubjpass(used-19, it-15)
+aux(used-19, can-16)
+advmod(used-19, only-17)
+auxpass(used-19, be-18)
+xcomp(do-10, used-19)
+num(people-22, ten-21)
+agent(used-19, people-22)
+det(year-24, a-23)
+dep(people-22, year-24)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Living)
+        (PP (IN in)
+          (NP (DT a) (NN country)))
+        (PP (IN with)
+          (NP
+            (NP (DT a) (JJ high-tech) (NN machine))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (MD can)
+                  (VP (VB save)
+                    (NP (PRP$ your) (NN life))))))))))
+    (VP (VBZ is)
+      (ADJP (JJ meaningless))
+      (SBAR (IN if)
+        (S
+          (NP (PRP you))
+          (VP (MD ca) (RB n't)
+            (VP (VB afford)
+              (NP (PRP it)))))))
+    (. .)))
+
+csubj(meaningless-15, Living-1)
+det(country-4, a-3)
+prep_in(Living-1, country-4)
+det(machine-8, a-6)
+amod(machine-8, high-tech-7)
+prep_with(Living-1, machine-8)
+nsubj(save-11, machine-8)
+aux(save-11, can-10)
+rcmod(machine-8, save-11)
+poss(life-13, your-12)
+dobj(save-11, life-13)
+cop(meaningless-15, is-14)
+root(ROOT-0, meaningless-15)
+mark(afford-20, if-16)
+nsubj(afford-20, you-17)
+aux(afford-20, ca-18)
+neg(afford-20, n't-19)
+advcl(meaningless-15, afford-20)
+dobj(afford-20, it-21)
+

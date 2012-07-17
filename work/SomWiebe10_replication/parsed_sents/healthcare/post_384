@@ -1,0 +1,65 @@
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN problem))
+      (PP (IN with)
+        (NP (NN health) (NN care) (NN reform))))
+    (VP (VBZ is)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (VP (VBG being)
+              (VP (VBN treated)
+                (PP (IN in)
+                  (NP (DT the) (NNS media)))
+                (PP (IN as)
+                  (NP
+                    (NP (DT a) (NN choice))
+                    (PP (IN between)
+                      (NP
+                        (NP (NNP Obama) (POS 's))
+                        (NN plan)
+                        (CC or)
+                        (NN nothing)))))))))))
+    (. .)))
+
+det(problem-2, The-1)
+nsubj(is-7, problem-2)
+nn(reform-6, health-4)
+nn(reform-6, care-5)
+prep_with(problem-2, reform-6)
+root(ROOT-0, is-7)
+nsubjpass(treated-11, it-8)
+aux(treated-11, is-9)
+auxpass(treated-11, being-10)
+ccomp(is-7, treated-11)
+det(media-14, the-13)
+prep_in(treated-11, media-14)
+det(choice-17, a-16)
+prep_as(treated-11, choice-17)
+poss(plan-21, Obama-19)
+prep_between(choice-17, plan-21)
+prep_between(choice-17, nothing-23)
+conj_or(plan-21, nothing-23)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNP Being))
+      (PP (IN for)
+        (NP (NN reform))))
+    (ADVP (RB then))
+    (VP (VBZ means)
+      (S
+        (VP (VBG supporting)
+          (NP (NNP Obama)))))
+    (. .)))
+
+nsubj(means-5, Being-1)
+prep_for(Being-1, reform-3)
+advmod(means-5, then-4)
+root(ROOT-0, means-5)
+xcomp(means-5, supporting-6)
+dobj(supporting-6, Obama-7)
+

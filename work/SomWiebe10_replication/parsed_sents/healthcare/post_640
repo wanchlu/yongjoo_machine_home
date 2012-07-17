@@ -1,0 +1,106 @@
+(ROOT
+  (FRAG
+    (ADVP (RB Absolutely))
+    (. !)))
+
+root(ROOT-0, Absolutely-1)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ 's)
+      (NP (DT an) (NN embarassment))
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT the) (JJS richest) (NN country))
+            (PP (IN in)
+              (NP
+                (NP (DT the) (NN world))
+                (, ,)
+                (CC and)
+                (ADVP (RB supposedly))
+                (NP
+                  (NP (DT the) (RBS most) (JJ Christian))
+                  (ADVP (RB as) (RB well)))
+                (, ,))))
+          (VP (VBZ permits)
+            (NP
+              (NP (NNS millions))
+              (PP (IN of)
+                (NP (PRP$ its) (NNS citizens)
+                  (S
+                    (VP (TO to)
+                      (VP (VB suffer)
+                        (PP (IN without)
+                          (NP (NN access)))
+                        (PP (TO to)
+                          (NP (JJ good) (NN healthcare)))))))))))))
+    (. .)))
+
+nsubj(embarassment-4, It-1)
+cop(embarassment-4, 's-2)
+det(embarassment-4, an-3)
+root(ROOT-0, embarassment-4)
+complm(permits-21, that-5)
+det(country-8, the-6)
+amod(country-8, richest-7)
+nsubj(permits-21, country-8)
+det(world-11, the-10)
+prep_in(country-8, world-11)
+prep_in(country-8, supposedly-14)
+advmod(world-11, supposedly-14)
+conj_and(world-11, supposedly-14)
+det(Christian-17, the-15)
+advmod(Christian-17, most-16)
+prep_in(country-8, Christian-17)
+conj_and(world-11, Christian-17)
+advmod(well-19, as-18)
+mwe(well-19, as-18)
+advmod(Christian-17, well-19)
+ccomp(embarassment-4, permits-21)
+dobj(permits-21, millions-22)
+poss(citizens-25, its-24)
+prep_of(millions-22, citizens-25)
+aux(suffer-27, to-26)
+infmod(citizens-25, suffer-27)
+prep_without(suffer-27, access-29)
+amod(healthcare-32, good-31)
+prep_to(suffer-27, healthcare-32)
+
+(ROOT
+  (S
+    (NP
+      (NP (PRP$ Our) (JJ infant) (NN fatality) (NN rate))
+      (, ,)
+      (NP (NN life) (NN expectancy))
+      (, ,)
+      (CC and)
+      (NP (JJ other) (NN health) (NNS statistics)))
+    (VP (VBP bear)
+      (PRT (RP out))
+      (NP
+        (NP (DT the) (NNS failures))
+        (PP (IN of)
+          (NP (PRP$ our) (JJ present) (NN system)))))
+    (. .)))
+
+poss(rate-4, Our-1)
+amod(rate-4, infant-2)
+nn(rate-4, fatality-3)
+nsubj(bear-13, rate-4)
+nn(expectancy-7, life-6)
+conj_and(rate-4, expectancy-7)
+nsubj(bear-13, expectancy-7)
+amod(statistics-12, other-10)
+nn(statistics-12, health-11)
+conj_and(rate-4, statistics-12)
+nsubj(bear-13, statistics-12)
+root(ROOT-0, bear-13)
+prt(bear-13, out-14)
+det(failures-16, the-15)
+dobj(bear-13, failures-16)
+poss(system-20, our-18)
+amod(system-20, present-19)
+prep_of(failures-16, system-20)
+

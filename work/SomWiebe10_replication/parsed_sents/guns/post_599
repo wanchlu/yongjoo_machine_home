@@ -1,0 +1,57 @@
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP
+        (NP (DT the) (NN malitia))
+        (PP (VBG according)
+          (PP (TO to)
+            (NP (PRP$ our) (NNS founders) (NN ??))))))))
+
+attr(is-2, Who-1)
+root(ROOT-0, is-2)
+det(malitia-4, the-3)
+nsubj(is-2, malitia-4)
+prepc_according_to(malitia-4, to-6)
+poss(??-9, our-7)
+nn(??-9, founders-8)
+pobj(malitia-4, ??-9)
+
+(ROOT
+  (FRAG
+    (NP (DT Every)
+      (ADJP (JJ able) (JJ bodied))
+      (NN citizen))
+    (PP (IN with)
+      (NP (DT a) (NN gun))
+      (: ...))))
+
+det(citizen-4, Every-1)
+amod(bodied-3, able-2)
+amod(citizen-4, bodied-3)
+root(ROOT-0, citizen-4)
+dep(citizen-4, with-5)
+det(gun-7, a-6)
+pobj(with-5, gun-7)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP know) (, ,)
+      (S
+        (NP (PRP Me))
+        (NP
+          (NP (CC &)
+            (NN you))
+          (, ,)
+          (FRAG (WP who) (RB else)))))
+    (: ...)))
+
+nsubj(know-2, You-1)
+root(ROOT-0, know-2)
+nsubj(you-6, Me-4)
+cc(you-6, &-5)
+xcomp(know-2, you-6)
+dep(else-9, who-8)
+dep(you-6, else-9)
+

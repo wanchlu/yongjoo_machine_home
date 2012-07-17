@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (VBZ frees)
+      (NP (NNS doctors))
+      (PP (IN from)
+        (NP
+          (NP (NN paperwork))
+          (PP (IN with)
+            (NP (JJ private) (NNS insurers))))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(frees-3, insurance-2)
+root(ROOT-0, frees-3)
+dobj(frees-3, doctors-4)
+prep_from(frees-3, paperwork-6)
+amod(insurers-9, private-8)
+prep_with(paperwork-6, insurers-9)
+
+(ROOT
+  (S
+    (NP (NNP Washington) (NNP State) (NNP Congressman) (NNP Jim) (NNP McDermott))
+    (VP (VBD said)
+      (PP (IN in)
+        (NP (NNP July) (JJ 22nd) (NN comment)))
+      (PP (TO to)
+        (NP
+          (NP (NNP Fox) (NNP News))
+          (: :) (`` ``)
+          (SBARQ
+            (SBAR (IN If)
+              (S
+                (NP (NNS things))
+                (VP (VBP are)
+                  (ADJP (RB so) (JJ good))
+                  (PRN (-LRB- -LRB-)
+                    (PP (IN for)
+                      (NP (NNS doctors)))
+                    (-RRB- -RRB-)))))
+            (, ,)
+            (WHADVP (WRB why))
+            (SQ (VBP are)
+              (NP (NNS doctors))
+              (VP (VBN buried)
+                (PP (IN under)
+                  (NP
+                    (NP (DT an) (JJ ever-increasing) (NN mountain))
+                    (PP (IN of)
+                      (NP (NN paperwork)))))
+                (PP (IN from)
+                  (NP (NN insurance) (NNS companies)))))
+            (. ?)))))))
+
+nn(McDermott-5, Washington-1)
+nn(McDermott-5, State-2)
+nn(McDermott-5, Congressman-3)
+nn(McDermott-5, Jim-4)
+nsubj(said-6, McDermott-5)
+root(ROOT-0, said-6)
+nn(comment-10, July-8)
+amod(comment-10, 22nd-9)
+prep_in(said-6, comment-10)
+nn(News-13, Fox-12)
+prep_to(said-6, News-13)
+mark(good-20, If-16)
+nsubj(good-20, things-17)
+cop(good-20, are-18)
+advmod(good-20, so-19)
+advcl(buried-29, good-20)
+dep(good-20, for-22)
+pobj(for-22, doctors-23)
+advmod(buried-29, why-26)
+auxpass(buried-29, are-27)
+nsubjpass(buried-29, doctors-28)
+dep(News-13, buried-29)
+det(mountain-33, an-31)
+amod(mountain-33, ever-increasing-32)
+prep_under(buried-29, mountain-33)
+prep_of(mountain-33, paperwork-35)
+nn(companies-38, insurance-37)
+prep_from(buried-29, companies-38)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 14))
+      (-RRB- -RRB-))))
+
+appos(''-1, 14-3)
+

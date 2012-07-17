@@ -1,0 +1,84 @@
+(ROOT
+  (S
+    (NP (JJ Many) (NNS uninsured))
+    (VP (VBP are)
+      (NP
+        (NP (JJ lazy) (NNS free-loaders))
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBP do) (RB n't)
+              (VP (VB deserve)
+                (NP
+                  (NP (NN care))
+                  (SBAR
+                    (S
+                      (NP (JJ Many) (NNS uninsured))
+                      (VP
+                        (VP (VBP are)
+                          (ADVP (RB simply))
+                          (ADJP (JJ lazy)))
+                        (, ,)
+                        (CC and)
+                        (VP (VBP believe)
+                          (SBAR
+                            (S
+                              (NP (PRP they))
+                              (VP (MD can)
+                                (VP (VB get)
+                                  (NP (DT a) (JJ free) (NN ride))
+                                  (PRT (RP off))
+                                  (PP (IN of)
+                                    (NP (DT the) (NN system))))))))))))))))))
+    (. .)))
+
+amod(uninsured-2, Many-1)
+nsubj(free-loaders-5, uninsured-2)
+cop(free-loaders-5, are-3)
+amod(free-loaders-5, lazy-4)
+root(ROOT-0, free-loaders-5)
+nsubj(deserve-9, free-loaders-5)
+aux(deserve-9, do-7)
+neg(deserve-9, n't-8)
+rcmod(free-loaders-5, deserve-9)
+dobj(deserve-9, care-10)
+dobj(lazy-15, care-10)
+amod(uninsured-12, Many-11)
+nsubj(lazy-15, uninsured-12)
+nsubj(believe-18, uninsured-12)
+cop(lazy-15, are-13)
+advmod(lazy-15, simply-14)
+rcmod(care-10, lazy-15)
+rcmod(care-10, believe-18)
+conj_and(lazy-15, believe-18)
+nsubj(get-21, they-19)
+aux(get-21, can-20)
+ccomp(believe-18, get-21)
+det(ride-24, a-22)
+amod(ride-24, free-23)
+dobj(get-21, ride-24)
+det(system-28, the-27)
+prep_off_of(get-21, system-28)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS people))
+    (VP (VBP do) (RB not)
+      (VP (VB deserve)
+        (NP
+          (NP (JJ free) (, ,) (JJ universal) (NN care))
+          (PP (IN from)
+            (NP (DT the) (NN system))))))
+    (. .)))
+
+det(people-2, These-1)
+nsubj(deserve-5, people-2)
+aux(deserve-5, do-3)
+neg(deserve-5, not-4)
+root(ROOT-0, deserve-5)
+amod(care-9, free-6)
+amod(care-9, universal-8)
+dobj(deserve-5, care-9)
+det(system-12, the-11)
+prep_from(care-9, system-12)
+

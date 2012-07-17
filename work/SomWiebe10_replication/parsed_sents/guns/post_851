@@ -1,0 +1,40 @@
+(ROOT
+  (S
+    (ADVP (RB Psst))
+    (, ,)
+    (S
+      (NP (NNS criminals))
+      (VP (VBP do) (RB n't)
+        (VP (VB plan)
+          (PP (IN on)
+            (NP (JJ following) (NN gun) (NNS laws))))))
+    (, ,) (IN so)
+    (S
+      (S
+        (VP (VBG banning)
+          (NP (NNS guns))))
+      (VP (MD will) (RB not)
+        (VP (VB prevent)
+          (NP (NNS robberies)
+            (CC or)
+            (NNS crimes)))))
+    (. .)))
+
+advmod(plan-6, Psst-1)
+nsubj(plan-6, criminals-3)
+aux(plan-6, do-4)
+neg(plan-6, n't-5)
+root(ROOT-0, plan-6)
+amod(laws-10, following-8)
+nn(laws-10, gun-9)
+prep_on(plan-6, laws-10)
+dep(plan-6, so-12)
+csubj(prevent-17, banning-13)
+dobj(banning-13, guns-14)
+aux(prevent-17, will-15)
+neg(prevent-17, not-16)
+ccomp(plan-6, prevent-17)
+dobj(prevent-17, robberies-18)
+dobj(prevent-17, crimes-20)
+conj_or(robberies-18, crimes-20)
+

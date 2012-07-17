@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Single-payer) (, ,) (JJ universal) (NN health) (NN care) (NNS results))
+      (PP (IN in)
+        (NP (RB long))))
+    (VP (VBZ waits)
+      (PP (IN for)
+        (NP
+          (NP (NNS patients))
+          (SBAR
+            (S
+              (NP (NNP Canada))
+              (VP (VBZ is)
+                (NP
+                  (NP (DT a) (JJ prime) (NN example))
+                  (PP (IN of)
+                    (NP (DT this))))))))))
+    (. .)))
+
+amod(results-6, Single-payer-1)
+amod(results-6, universal-3)
+nn(results-6, health-4)
+nn(results-6, care-5)
+nsubj(waits-9, results-6)
+prep(results-6, in-7)
+pobj(in-7, long-8)
+root(ROOT-0, waits-9)
+prep_for(waits-9, patients-11)
+nsubj(example-16, Canada-12)
+cop(example-16, is-13)
+det(example-16, a-14)
+amod(example-16, prime-15)
+rcmod(patients-11, example-16)
+prep_of(example-16, this-18)
+
+(ROOT
+  (S
+    (NP (JJ Many) (NNS people))
+    (VP
+      (VP (VBP find)
+        (NP (PRP themselves))
+        (S
+          (VP (VBG waiting)
+            (PP (IN for)
+              (NP
+                (NP (JJ long) (NNS periods))
+                (PP (IN for)
+                  (NP (NN care)))))
+            (PP (IN in)
+              (NP (NNP Canada))))))
+      (, ,)
+      (CC and)
+      (VP
+        (ADVP (RB sometimes))
+        (VBP come)
+        (PP (TO to)
+          (NP (DT the) (NNP United) (NNPS States)))
+        (S
+          (VP (TO to)
+            (VP (VB receive)
+              (NP
+                (ADJP (JJR faster)
+                  (CC and)
+                  (JJR higher))
+                (NN quality) (NN care)))))))
+    (. .)))
+
+amod(people-2, Many-1)
+nsubj(find-3, people-2)
+nsubj(come-16, people-2)
+xsubj(receive-22, people-2)
+root(ROOT-0, find-3)
+dobj(find-3, themselves-4)
+xcomp(find-3, waiting-5)
+amod(periods-8, long-7)
+prep_for(waiting-5, periods-8)
+prep_for(periods-8, care-10)
+prep_in(waiting-5, Canada-12)
+advmod(come-16, sometimes-15)
+conj_and(find-3, come-16)
+det(States-20, the-18)
+nn(States-20, United-19)
+prep_to(come-16, States-20)
+aux(receive-22, to-21)
+xcomp(come-16, receive-22)
+amod(care-27, faster-23)
+conj_and(faster-23, higher-25)
+amod(care-27, higher-25)
+nn(care-27, quality-26)
+dobj(receive-22, care-27)
+

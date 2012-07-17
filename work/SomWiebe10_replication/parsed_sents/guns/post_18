@@ -1,0 +1,71 @@
+(ROOT
+  (S
+    (NP (JJ Assault) (NNS weapons))
+    (VP (VBP are)
+      (VP (VBN used)
+        (S
+          (VP (TO to)
+            (VP (VB kill)
+              (NP
+                (NP (DT a) (JJR greater) (NN number))
+                (PP (IN of)
+                  (NP (NNS people)))))))))
+    (. .)))
+
+amod(weapons-2, Assault-1)
+nsubjpass(used-4, weapons-2)
+xsubj(kill-6, weapons-2)
+auxpass(used-4, are-3)
+root(ROOT-0, used-4)
+aux(kill-6, to-5)
+xcomp(used-4, kill-6)
+det(number-9, a-7)
+amod(number-9, greater-8)
+dobj(kill-6, number-9)
+prep_of(number-9, people-11)
+
+(ROOT
+  (S
+    (NP (JJ Assault) (NNS weapons))
+    (VP (MD can)
+      (VP (VB hold)
+        (CC and)
+        (VB fire)
+        (NP (JJR more) (NNS rounds))))
+    (. .)))
+
+amod(weapons-2, Assault-1)
+nsubj(hold-4, weapons-2)
+nsubj(fire-6, weapons-2)
+aux(hold-4, can-3)
+root(ROOT-0, hold-4)
+conj_and(hold-4, fire-6)
+amod(rounds-8, more-7)
+dobj(hold-4, rounds-8)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ is)
+      (ADJP (RB directly) (JJ proportional)
+        (PP (TO to)
+          (SBAR
+            (WHADJP (WRB how) (JJ many))
+            (S
+              (NP (NNS people))
+              (VP (MD can)
+                (VP (VB be)
+                  (VP (VBN killed)))))))))
+    (. .)))
+
+nsubj(proportional-4, This-1)
+cop(proportional-4, is-2)
+advmod(proportional-4, directly-3)
+root(ROOT-0, proportional-4)
+advmod(many-7, how-6)
+dep(killed-11, many-7)
+nsubjpass(killed-11, people-8)
+aux(killed-11, can-9)
+auxpass(killed-11, be-10)
+prepc_to(proportional-4, killed-11)
+

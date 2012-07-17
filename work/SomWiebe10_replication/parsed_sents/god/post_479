@@ -1,0 +1,73 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP BELIEVE)
+      (SBAR (IN that)
+        (S
+          (NP (NNP G.O.D))
+          (VP
+            (VP (VBZ stands)
+              (PP (IN for)
+                (NP
+                  (NP (NNS governers))
+                  (PP (IN of)
+                    (NP (NN destiny))))))
+            (CC and)
+            (VP (VBZ represents)
+              (NP
+                (NP (DT the) (NNS governments))
+                (PP (IN of)
+                  (NP (DT the) (NN world)))))))))
+    (. .)))
+
+nsubj(BELIEVE-2, I-1)
+root(ROOT-0, BELIEVE-2)
+complm(stands-5, that-3)
+nsubj(stands-5, G.O.D-4)
+nsubj(represents-11, G.O.D-4)
+ccomp(BELIEVE-2, stands-5)
+prep_for(stands-5, governers-7)
+prep_of(governers-7, destiny-9)
+ccomp(BELIEVE-2, represents-11)
+conj_and(stands-5, represents-11)
+det(governments-13, the-12)
+dobj(represents-11, governments-13)
+det(world-16, the-15)
+prep_of(governments-13, world-16)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Life))
+      (VP (VBZ is)
+        (NP
+          (NP (JJ THEIR) (NN game))
+          (PP (IN of)
+            (NP (NN chess))))))
+    (CC and)
+    (S
+      (NP
+        (NP (NNP WE))
+        (PRN (-LRB- -LRB-)
+          (NP
+            (NP (PRP YOU))
+            (CC &)
+            (NP (PRP I)))
+          (-RRB- -RRB-)))
+      (VP (VBP are)
+        (NP (DT the) (NNS pawns))))
+    (. .)))
+
+nsubj(game-4, Life-1)
+cop(game-4, is-2)
+amod(game-4, THEIR-3)
+root(ROOT-0, game-4)
+prep_of(game-4, chess-6)
+nsubj(pawns-16, WE-8)
+dep(WE-8, YOU-10)
+dep(WE-8, I-12)
+conj_and(YOU-10, I-12)
+cop(pawns-16, are-14)
+det(pawns-16, the-15)
+conj_and(game-4, pawns-16)
+

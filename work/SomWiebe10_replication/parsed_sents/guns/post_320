@@ -1,0 +1,141 @@
+(ROOT
+  (NP (: ...)
+    (NP (RB as) (RB too) (JJ many))
+    (VP (VBG guns))
+    (. .)))
+
+advmod(many-4, as-2)
+advmod(many-4, too-3)
+root(ROOT-0, many-4)
+partmod(many-4, guns-5)
+
+(ROOT
+  (S
+    (NP (NN Child) (NN Death) (NNS statistics))
+    (VP (VBP are)
+      (ADJP (RB notoriously) (JJ faked))
+      (, ,)
+      (S
+        (VP (VBG referring)
+          (PP (IN to) ('' '')
+            (NP
+              (NP (NNS children))
+              ('' '')
+              (PP (IN as)
+                (ADJP (JJ old)
+                  (PP (IN as)
+                    (ADJP
+                      (NP (CD 32) (NNS years))
+                      (JJ old))))))))))
+    (. .)))
+
+nn(statistics-3, Child-1)
+nn(statistics-3, Death-2)
+nsubj(faked-6, statistics-3)
+cop(faked-6, are-4)
+advmod(faked-6, notoriously-5)
+root(ROOT-0, faked-6)
+xcomp(faked-6, referring-8)
+prep_to(referring-8, children-11)
+prep_as(children-11, old-14)
+num(years-17, 32-16)
+npadvmod(old-18, years-17)
+prep_as(old-14, old-18)
+
+(ROOT
+  (S
+    (NP (DT A) (NN gun))
+    (VP (VBZ is)
+      (NP
+        (NP (DT no) (NN guarantee))
+        (PP (IN of)
+          (NP (NN safety)))))
+    (. .)))
+
+det(gun-2, A-1)
+nsubj(guarantee-5, gun-2)
+cop(guarantee-5, is-3)
+det(guarantee-5, no-4)
+root(ROOT-0, guarantee-5)
+prep_of(guarantee-5, safety-7)
+
+(ROOT
+  (S
+    (VP (VBG Having)
+      (S
+        (NP (DT a) (NN gun))
+        (VP (MD will) (RB not)
+          (VP (VB make)
+            (S
+              (NP (PRP you))
+              (ADJP (JJ immune)
+                (PP (TO to)
+                  (NP
+                    (NP (NNS others))
+                    (, ,)
+                    (NP (NN no.))))))))))))
+
+root(ROOT-0, Having-1)
+det(gun-3, a-2)
+nsubj(make-6, gun-3)
+aux(make-6, will-4)
+neg(make-6, not-5)
+ccomp(Having-1, make-6)
+nsubj(immune-8, you-7)
+xcomp(make-6, immune-8)
+prep_to(immune-8, others-10)
+appos(others-10, no.-12)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (ADVP (IN at) (JJS least))
+    (VP (VBZ gives)
+      (NP (PRP you))
+      (NP (DT a) (NN fighting) (NN chance)))
+    (. .)))
+
+cc(gives-5, But-1)
+nsubj(gives-5, it-2)
+advmod(gives-5, at-3)
+pobj(at-3, least-4)
+root(ROOT-0, gives-5)
+iobj(gives-5, you-6)
+det(chance-9, a-7)
+nn(chance-9, fighting-8)
+dobj(gives-5, chance-9)
+
+(ROOT
+  (UCP
+    (ADJP (RB Deliberately) (JJ helpless))
+    (, ,)
+    (CC or)
+    (NP
+      (NP (RB even) (DT a) (JJ small) (NN chance))
+      (SBAR
+        (S
+          (VP (TO to)
+            (VP (VB fend)
+              (FRAG
+                (PP (IN for)
+                  (NP (PRP yourself)))
+                (. ?)))))))))
+
+advmod(helpless-2, Deliberately-1)
+root(ROOT-0, helpless-2)
+advmod(chance-8, even-5)
+det(chance-8, a-6)
+amod(chance-8, small-7)
+conj_or(helpless-2, chance-8)
+aux(fend-10, to-9)
+infmod(chance-8, fend-10)
+dep(fend-10, for-11)
+pobj(for-11, yourself-12)
+
+(ROOT
+  (FRAG
+    (NP (NNP DUH))
+    (. !)))
+
+root(ROOT-0, DUH-1)
+

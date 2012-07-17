@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (NP (JJ Single-payer) (NN health) (NN care))
+    (VP (VBZ is)
+      (NP (`` ``)
+        (NP (JJ socialized) (NN medicine))
+        ('' '')
+        (SBAR
+          (S
+            (NP (NNP Lenin))
+            (VP (VBD said) (, ,) (`` ``)
+              (S
+                (NP (NN medicine))
+                (VP (VBZ is)
+                  (NP
+                    (NP (DT the) (NN keystone))
+                    (PP (IN in)
+                      (NP
+                        (NP (DT the) (NN arch))
+                        (PP (IN of)
+                          (NP (NN socialism)))))))))))))
+    (. .)))
+
+amod(care-3, Single-payer-1)
+nn(care-3, health-2)
+nsubj(medicine-7, care-3)
+cop(medicine-7, is-4)
+amod(medicine-7, socialized-6)
+root(ROOT-0, medicine-7)
+dobj(said-10, medicine-7)
+nsubj(said-10, Lenin-9)
+rcmod(medicine-7, said-10)
+nsubj(keystone-16, medicine-13)
+cop(keystone-16, is-14)
+det(keystone-16, the-15)
+ccomp(said-10, keystone-16)
+det(arch-19, the-18)
+prep_in(keystone-16, arch-19)
+prep_of(arch-19, socialism-21)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Government))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (UCP
+          (PP (IN in)
+            (NP
+              (NP (NN control))
+              (PP (IN of)
+                (NP (NN medicine)))))
+          (CC and)
+          (S
+            (VP (MD should)
+              (ADVP (RB generally))
+              (RB not)
+              (VP (VB be)
+                (PP (IN in)
+                  (NP
+                    (NP
+                      (ADJP (RB too) (JJ many))
+                      (NNS features))
+                    (PP (IN of)
+                      (NP (PRP$ our) (NNS lives)))))))))))
+    (. .)))
+
+nsubj(be-5, Government-2)
+aux(be-5, should-3)
+neg(be-5, not-4)
+root(ROOT-0, be-5)
+dep(be-5, in-6)
+pobj(in-6, control-7)
+prep_of(control-7, medicine-9)
+aux(be-14, should-11)
+advmod(be-14, generally-12)
+neg(be-14, not-13)
+dep(be-5, be-14)
+conj_and(in-6, be-14)
+advmod(many-17, too-16)
+amod(features-18, many-17)
+prep_in(be-14, features-18)
+poss(lives-21, our-20)
+prep_of(features-18, lives-21)
+
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ is)
+      (UCP (DT both)
+        (ADJP (JJ inefficient))
+        (CC and)
+        (PP
+          (NP (DT an) (NN intrusion))
+          (PP (IN on)
+            (NP (PRP$ our) (JJ fundamental) (NNS rights))))))
+    (. .)))
+
+nsubj(inefficient-4, It-1)
+cop(inefficient-4, is-2)
+preconj(inefficient-4, both-3)
+root(ROOT-0, inefficient-4)
+det(intrusion-7, an-6)
+dep(inefficient-4, intrusion-7)
+conj_and(inefficient-4, on-8)
+poss(rights-11, our-9)
+amod(rights-11, fundamental-10)
+prep_on(inefficient-4, rights-11)
+

@@ -1,0 +1,96 @@
+(ROOT
+  (S
+    (S
+      (NP (NNP US) (NNS polls))
+      (VP (VBP find)
+        (SBAR
+          (S
+            (NP (DT a) (NN majority))
+            (VP (VBP favor)
+              (NP (DT a) (JJ public) (NN insurance) (NN option))
+              (NP (DT A) (NNP March) (CD 2009)))))))
+    (NP (NNP Lake) (NNP Research))
+    (VP (VBD found)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (CD 73) (NN %))
+            (PP (IN of)
+              (NP (NNS voters))))
+          (VP (VBP want)
+            (NP (NN everyone))
+            (S
+              (VP (TO to)
+                (VP (VB have)
+                  (NP
+                    (NP (DT a) (NN choice))
+                    (PP (IN of)
+                      (NP
+                        (NP (JJ private) (NN health) (NN insurance))
+                        (CC or)
+                        (NP (DT a) (JJ public) (NN health) (NN insurance) (NN plan)))))
+                  (SBAR (IN while)
+                    (S
+                      (NP
+                        (QP (RB only) (CD 15))
+                        (NN %))
+                      (VP (VBP want)
+                        (NP (NN everyone))
+                        (S
+                          (VP (TO to)
+                            (VP (VB have)
+                              (NP (JJ private) (NN insurance)))))))))))))))
+    (. .)))
+
+nn(polls-2, US-1)
+nsubj(find-3, polls-2)
+dep(found-16, find-3)
+det(majority-5, a-4)
+nsubj(favor-6, majority-5)
+ccomp(find-3, favor-6)
+det(option-10, a-7)
+amod(option-10, public-8)
+nn(option-10, insurance-9)
+dobj(favor-6, option-10)
+det(March-12, A-11)
+tmod(favor-6, March-12)
+num(March-12, 2009-13)
+nn(Research-15, Lake-14)
+nsubj(found-16, Research-15)
+root(ROOT-0, found-16)
+complm(want-22, that-17)
+num(%-19, 73-18)
+nsubj(want-22, %-19)
+prep_of(%-19, voters-21)
+ccomp(found-16, want-22)
+dobj(want-22, everyone-23)
+aux(have-25, to-24)
+xcomp(want-22, have-25)
+det(choice-27, a-26)
+dobj(have-25, choice-27)
+amod(insurance-31, private-29)
+nn(insurance-31, health-30)
+prep_of(choice-27, insurance-31)
+det(plan-37, a-33)
+amod(plan-37, public-34)
+nn(plan-37, health-35)
+nn(plan-37, insurance-36)
+prep_of(choice-27, plan-37)
+conj_or(insurance-31, plan-37)
+mark(want-42, while-38)
+quantmod(15-40, only-39)
+num(%-41, 15-40)
+nsubj(want-42, %-41)
+advcl(have-25, want-42)
+dobj(want-42, everyone-43)
+aux(have-45, to-44)
+xcomp(want-42, have-45)
+amod(insurance-47, private-46)
+dobj(have-45, insurance-47)
+
+(ROOT
+  (PRN (-LRB- -LRB-)
+    (NP (CD 17))
+    (-RRB- -RRB-)))
+
+

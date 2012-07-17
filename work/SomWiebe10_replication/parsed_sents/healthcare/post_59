@@ -1,0 +1,328 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (MD would) (RB not)
+      (VP (VB waste)
+        (NP (NN money))
+        (PP (IN on)
+          (NP (NN advertising)))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(waste-5, insurance-2)
+aux(waste-5, would-3)
+neg(waste-5, not-4)
+root(ROOT-0, waste-5)
+dobj(waste-5, money-6)
+prep_on(waste-5, advertising-8)
+
+(ROOT
+  (NP (NNP Signe) (NNP Wilkinson) (. .)))
+
+nn(Wilkinson-2, Signe-1)
+root(ROOT-0, Wilkinson-2)
+
+(ROOT
+  (S (CC But)
+    (NP (PRP it))
+    (VP (VBZ 's)
+      (NP (DT a) (NN cinch))
+      (SBAR (IN that)
+        (S
+          (NP (JJ government-run) (NN health) (NN insurance))
+          (VP (MD would) (RB n't)
+            (VP (VB spend)
+              (NP (NN money))
+              (PP (IN on)
+                (NP (NNS fireworks)
+                  (CC or)
+                  (NN advertising))))))))
+    (. .)))
+
+cc(cinch-5, But-1)
+nsubj(cinch-5, it-2)
+cop(cinch-5, 's-3)
+det(cinch-5, a-4)
+root(ROOT-0, cinch-5)
+complm(spend-12, that-6)
+amod(insurance-9, government-run-7)
+nn(insurance-9, health-8)
+nsubj(spend-12, insurance-9)
+aux(spend-12, would-10)
+neg(spend-12, n't-11)
+ccomp(cinch-5, spend-12)
+dobj(spend-12, money-13)
+prep_on(spend-12, fireworks-15)
+prep_on(spend-12, advertising-17)
+conj_or(fireworks-15, advertising-17)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (JJ Unhealthy) (NNS arguments))
+    (PP (IN against)
+      (NP
+        (NP (JJ public) (NN option) ('' '') (NNP Philadelphia))
+        (NP (NNP Daily) (NNP News))))
+    (. .)))
+
+amod(arguments-3, Unhealthy-2)
+root(ROOT-0, arguments-3)
+dep(arguments-3, against-4)
+amod(Philadelphia-8, public-5)
+nn(Philadelphia-8, option-6)
+pobj(against-4, Philadelphia-8)
+nn(News-10, Daily-9)
+dep(Philadelphia-8, News-10)
+
+(ROOT
+  (NP
+    (NP
+      (NP (NNP July) (CD 14) (, ,) (CD 2009))
+      (: :)
+      (NP (`` ``)
+        (NP (NNP JUST) (NNP IMAGINE))
+        (: :)
+        (NP
+          (NP (`` ``)
+            (NP (NNP Fireworks) (NNP Night))
+            ('' '')
+            (PP (IN at)
+              (NP (DT the) (NNPS Phillies) ('' '') (NN game))))
+          (VP (VBN brought)
+            (PP (TO to)
+              (NP (PRP you)))
+            (PP (IN by))))))
+    (: ...)))
+
+root(ROOT-0, July-1)
+num(July-1, 14-2)
+num(July-1, 2009-4)
+nn(IMAGINE-8, JUST-7)
+dep(July-1, IMAGINE-8)
+nn(Night-12, Fireworks-11)
+dep(IMAGINE-8, Night-12)
+det(game-18, the-15)
+nn(game-18, Phillies-16)
+prep_at(Night-12, game-18)
+partmod(Night-12, brought-19)
+prep_to(brought-19, you-21)
+prep(brought-19, by-22)
+
+(ROOT
+  (FRAG
+    (NP (NNP Medicare))
+    (. .)))
+
+root(ROOT-0, Medicare-1)
+
+(ROOT
+  (S
+    (VP (VBG Would)
+      (SBAR
+        (S
+          (NP (PRP you))
+          (VP (VBP wonder)
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (DT the) (JJ federal) (NN government))
+                (VP (VBD was)
+                  (VP (VBG spending)
+                    (NP (NN beacoup) (NNS bucks))
+                    (PP (IN on)
+                      (S
+                        (NP
+                          (NP (NNS pyrotechnics))
+                          (CC and)
+                          (NP (DT a) (JJ huge) (NN sign)))
+                        (VP (VBG saying) ('' '')
+                          (NP (NNS Choose)))))))))))))
+    (: ...)))
+
+root(ROOT-0, Would-1)
+nsubj(wonder-3, you-2)
+ccomp(Would-1, wonder-3)
+advmod(spending-9, why-4)
+det(government-7, the-5)
+amod(government-7, federal-6)
+nsubj(spending-9, government-7)
+aux(spending-9, was-8)
+advcl(wonder-3, spending-9)
+nn(bucks-11, beacoup-10)
+dobj(spending-9, bucks-11)
+nsubj(saying-18, pyrotechnics-13)
+det(sign-17, a-15)
+amod(sign-17, huge-16)
+conj_and(pyrotechnics-13, sign-17)
+nsubj(saying-18, sign-17)
+prepc_on(spending-9, saying-18)
+dobj(saying-18, Choose-20)
+
+(ROOT
+  (S
+    (NP (DT the) (NNP Public))
+    (VP (VBP Option) ('' ''))
+    (. ?)))
+
+det(Public-2, the-1)
+nsubj(Option-3, Public-2)
+root(ROOT-0, Option-3)
+
+(ROOT
+  (S
+    (S
+      (ADVP (RB -RRB-))
+      (ADVP (RB Yet))
+      (NP (DT the) (NNS fireworks))
+      (VP (VBZ shows)
+        (PP (IN at)
+          (NP (NNPS Citizens) (NNP Bank) (NNP Park)))
+        (NP (JJ last) (NNP Thursday))))
+    (CC and)
+    (S
+      (NP (NNP Friday))
+      (VP (VBD were)
+        (VP (VBN brought)
+          (PP (TO to)
+            (NP (DT the) (JJ sellout) (NNS crowds)))
+          (PP (IN by)
+            (NP (NNP Independence) (NNP Blue) (NNP Cross))))))
+    (. .)))
+
+advmod(shows-5, Yet-2)
+det(fireworks-4, the-3)
+nsubj(shows-5, fireworks-4)
+root(ROOT-0, shows-5)
+nn(Park-9, Citizens-7)
+nn(Park-9, Bank-8)
+prep_at(shows-5, Park-9)
+amod(Thursday-11, last-10)
+tmod(shows-5, Thursday-11)
+nsubjpass(brought-15, Friday-13)
+auxpass(brought-15, were-14)
+conj_and(shows-5, brought-15)
+det(crowds-19, the-17)
+amod(crowds-19, sellout-18)
+prep_to(brought-15, crowds-19)
+nn(Cross-23, Independence-21)
+nn(Cross-23, Blue-22)
+agent(brought-15, Cross-23)
+
+(ROOT
+  (S
+    (SBAR
+      (WHADVP (WRB When))
+      (S
+        (NP (DT the) (NNS lights))
+        (VP (VBD were)
+          (VP (VBN dimmed)
+            (S
+              (VP (TO to)
+                (VP
+                  (ADVP (RBR better))
+                  (VB view)
+                  (NP (DT the) (NN display)))))))))
+    (, ,)
+    (NP (CD one) (JJ huge) (NN sign))
+    (VP (VBD stayed)
+      (SBAR
+        (S
+          (VP (VBD lit) (: :) (`` ``)
+            (S
+              (VP (VB Choose)
+                (NP (NNP Blue))))))))
+    (. .)))
+
+advmod(dimmed-5, When-1)
+det(lights-3, the-2)
+nsubjpass(dimmed-5, lights-3)
+xsubj(view-8, lights-3)
+auxpass(dimmed-5, were-4)
+advcl(stayed-15, dimmed-5)
+aux(view-8, to-6)
+advmod(view-8, better-7)
+xcomp(dimmed-5, view-8)
+det(display-10, the-9)
+dobj(view-8, display-10)
+num(sign-14, one-12)
+amod(sign-14, huge-13)
+nsubj(stayed-15, sign-14)
+root(ROOT-0, stayed-15)
+ccomp(stayed-15, lit-16)
+ccomp(lit-16, Choose-19)
+dobj(Choose-19, Blue-20)
+
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (NNP -RRB-) (NNP Blue) (NNP Cross))
+        (CC and)
+        (NP (JJ other) (JJ major) (NN health-care) (NNS insurers)))
+      (VP (VBP are)
+        (PP (IN among)
+          (NP
+            (NP (DT the)
+              (ADJP (RBS most) (JJ vocal))
+              (NNS opponents))
+            (PP (IN of)
+              (NP
+                (NP (DT a) (JJ robust) (`` ``) (JJ public) (NN option) ('' ''))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (JJ health-care) (NN reform) (NN legislation))
+                    (VP (VBG being)
+                      (VP (VBN negotiated)
+                        (PP (IN in)
+                          (NP (NNP Congress)))))))))))))
+    (: ;)
+    (S
+      (NP (PRP they))
+      (VP (VBP say)
+        (SBAR
+          (S
+            (NP (PRP it))
+            (VP (MD wo) (RB n't)
+              (VP (VB work)
+                (SBAR (IN because)
+                  (S
+                    (NP (NN government))
+                    (VP (VBZ is)
+                      (ADJP (RB congenitally) (JJ wasteful)))))))))))
+    (. .)))
+
+nn(Cross-3, Blue-2)
+nsubj(are-9, Cross-3)
+amod(insurers-8, other-5)
+amod(insurers-8, major-6)
+nn(insurers-8, health-care-7)
+conj_and(Cross-3, insurers-8)
+nsubj(are-9, insurers-8)
+root(ROOT-0, are-9)
+det(opponents-14, the-11)
+advmod(vocal-13, most-12)
+amod(opponents-14, vocal-13)
+prep_among(are-9, opponents-14)
+det(option-20, a-16)
+amod(option-20, robust-17)
+amod(option-20, public-19)
+prep_of(opponents-14, option-20)
+det(legislation-26, the-23)
+amod(legislation-26, health-care-24)
+nn(legislation-26, reform-25)
+prep_in(option-20, legislation-26)
+auxpass(negotiated-28, being-27)
+partmod(legislation-26, negotiated-28)
+prep_in(negotiated-28, Congress-30)
+nsubj(say-33, they-32)
+parataxis(are-9, say-33)
+nsubj(work-37, it-34)
+aux(work-37, wo-35)
+neg(work-37, n't-36)
+ccomp(say-33, work-37)
+mark(wasteful-42, because-38)
+nsubj(wasteful-42, government-39)
+cop(wasteful-42, is-40)
+advmod(wasteful-42, congenitally-41)
+advcl(work-37, wasteful-42)
+

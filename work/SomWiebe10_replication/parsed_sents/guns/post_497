@@ -1,0 +1,59 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ
+      (VP (VBP have)
+        (NP (DT a) (NN gun))
+        (UCP
+          (PP (IN if)
+            (NP (PRP$ its) (NN unloaded)))
+          (CC and)
+          (VP (VBN locked)
+            (PRT (RP up))))))
+    (. ?)))
+
+advmod(have-2, Why-1)
+root(ROOT-0, have-2)
+det(gun-4, a-3)
+dobj(have-2, gun-4)
+dep(have-2, if-5)
+poss(unloaded-7, its-6)
+pobj(if-5, unloaded-7)
+dep(have-2, locked-9)
+conj_and(if-5, locked-9)
+prt(locked-9, up-10)
+
+(ROOT
+  (SBARQ
+    (WHADJP (WRB How) (JJ good))
+    (SQ (VBZ is)
+      (NP (PRP it))
+      (PP (IN for)
+        (NP (NN self-defense))))
+    (. ?)))
+
+advmod(good-2, How-1)
+attr(is-3, good-2)
+root(ROOT-0, is-3)
+nsubj(is-3, it-4)
+prep_for(is-3, self-defense-6)
+
+(ROOT
+  (S
+    (NP (NNS Thats))
+    (VP (VBP like)
+      (S
+        (VP (VBG having)
+          (NP (DT a) (NN car))
+          (PP (IN with)
+            (NP (DT no) (NN engine))))))
+    (. .)))
+
+nsubj(like-2, Thats-1)
+root(ROOT-0, like-2)
+xcomp(like-2, having-3)
+det(car-5, a-4)
+dobj(having-3, car-5)
+det(engine-8, no-7)
+prep_with(having-3, engine-8)
+

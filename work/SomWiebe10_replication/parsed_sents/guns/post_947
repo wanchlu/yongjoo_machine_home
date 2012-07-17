@@ -1,0 +1,66 @@
+(ROOT
+  (S
+    (NP (NNPS Studies))
+    (VP (VBP have)
+      (VP (VBN shown)
+        (PRN (-LRB- -LRB-)
+          (S
+            (VP (VB look)
+              (PP (IN at)
+                (NP
+                  (NP (NNS cities))
+                  (PP (IN in)
+                    (NP (NNP Australia)))))))
+          (-RRB- -RRB-))
+        (SBAR (IN that)
+          (S
+            (SBAR
+              (WHADVP (WRB when))
+              (S
+                (NP (PRP you))
+                (VP (VB disarm)
+                  (NP (DT a) (NN population)))))
+            (NP (NN crime) (NNS rates))
+            (VP (VBP go)
+              (PRT (RP up))
+              (SBAR (IN because)
+                (S
+                  (NP (NNS people))
+                  (ADVP (RB no) (RB longer))
+                  (VP (VBP have)
+                    (NP
+                      (NP (DT the) (NN fear))
+                      (PP (IN of)
+                        (NP
+                          (NP (NNS people))
+                          (VP (VBG defending)
+                            (NP (PRP themselves))))))))))))))
+    (. .)))
+
+nsubj(shown-3, Studies-1)
+aux(shown-3, have-2)
+root(ROOT-0, shown-3)
+parataxis(shown-3, look-5)
+prep_at(look-5, cities-7)
+prep_in(cities-7, Australia-9)
+complm(go-19, that-11)
+advmod(disarm-14, when-12)
+nsubj(disarm-14, you-13)
+advcl(go-19, disarm-14)
+det(population-16, a-15)
+dobj(disarm-14, population-16)
+nn(rates-18, crime-17)
+nsubj(go-19, rates-18)
+ccomp(shown-3, go-19)
+prt(go-19, up-20)
+mark(have-25, because-21)
+nsubj(have-25, people-22)
+advmod(longer-24, no-23)
+advmod(have-25, longer-24)
+advcl(go-19, have-25)
+det(fear-27, the-26)
+dobj(have-25, fear-27)
+prep_of(fear-27, people-29)
+partmod(people-29, defending-30)
+dobj(defending-30, themselves-31)
+

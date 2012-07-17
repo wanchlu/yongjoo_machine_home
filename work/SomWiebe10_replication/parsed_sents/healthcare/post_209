@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (NNP Universal) (NN health) (NN care))
+    (VP (VBZ creates)
+      (NP
+        (NP (DT a) (JJ big) (, ,) (JJ inefficient) (NN bureaucracy))
+        (SBAR
+          (S
+            (NP
+              (NP (DT The) (NN cause))
+              (PP (IN of)
+                (NP (DT this))))
+            (VP (VBZ is)
+              (NP
+                (NP (JJR greater) (JJ bureaucratic) (NN oversight))
+                (CC and)
+                (NP (JJR more) (NN paperwork))))))))
+    (. .)))
+
+nn(care-3, Universal-1)
+nn(care-3, health-2)
+nsubj(creates-4, care-3)
+root(ROOT-0, creates-4)
+det(bureaucracy-9, a-5)
+amod(bureaucracy-9, big-6)
+amod(bureaucracy-9, inefficient-8)
+dobj(creates-4, bureaucracy-9)
+det(cause-11, The-10)
+nsubj(oversight-17, cause-11)
+prep_of(cause-11, this-13)
+cop(oversight-17, is-14)
+amod(oversight-17, greater-15)
+amod(oversight-17, bureaucratic-16)
+rcmod(bureaucracy-9, oversight-17)
+amod(paperwork-20, more-19)
+rcmod(bureaucracy-9, paperwork-20)
+conj_and(oversight-17, paperwork-20)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP
+      (VP (VBZ lowers)
+        (NP
+          (NP (DT the) (NN productivity))
+          (PP (IN of)
+            (NP (NNS hospitals)))))
+      (, ,)
+      (CC and)
+      (VP
+        (ADVP (RB thus))
+        (VBZ increases)
+        (NP (DT the) (NNS costs))
+        (PP (IN for)
+          (NP
+            (NP (DT the) (JJ same) (NN amount))
+            (PP (IN of)
+              (NP
+                (NP (NN work))
+                (VP (VBN done))))))))
+    (. .)))
+
+nsubj(lowers-2, This-1)
+nsubj(increases-10, This-1)
+root(ROOT-0, lowers-2)
+det(productivity-4, the-3)
+dobj(lowers-2, productivity-4)
+prep_of(productivity-4, hospitals-6)
+advmod(increases-10, thus-9)
+conj_and(lowers-2, increases-10)
+det(costs-12, the-11)
+dobj(increases-10, costs-12)
+det(amount-16, the-14)
+amod(amount-16, same-15)
+prep_for(increases-10, amount-16)
+prep_of(amount-16, work-18)
+partmod(work-18, done-19)
+

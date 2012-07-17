@@ -1,0 +1,128 @@
+(ROOT
+  (S
+    (NP (PRP It))
+    (VP (VBZ says)
+      (NP
+        (NP
+          (NP (DT the) (NN right))
+          (PP (IN of)
+            (NP (DT the) (NNS people))))
+        (, ,) (RB not)
+        (NP
+          (NP (DT the) (NN right))
+          (PP (IN of)
+            (NP (DT the) (NN militia))))))
+    (. .)))
+
+nsubj(says-2, It-1)
+root(ROOT-0, says-2)
+det(right-4, the-3)
+dobj(says-2, right-4)
+det(people-7, the-6)
+prep_of(right-4, people-7)
+neg(right-4, not-9)
+det(right-11, the-10)
+dep(right-4, right-11)
+det(militia-14, the-13)
+prep_of(right-11, militia-14)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBZ is)
+      (NP (DT the) (NN militia))
+      (ADVP (RB anyway)))
+    (. ?)))
+
+attr(is-2, Who-1)
+root(ROOT-0, is-2)
+det(militia-4, the-3)
+nsubj(is-2, militia-4)
+advmod(is-2, anyway-5)
+
+(ROOT
+  (NP
+    (NP (DT All)
+      (ADJP (JJ able) (JJ bodied))
+      (NNS persons))
+    (ADJP
+      (ADJP (JJ armed)
+        (CC and)
+        (JJ capable))
+      (PP (IN of)
+        (S
+          (VP (VBG fighting)
+            (PP (IN with)
+              (NP (DT those) (NNS weapons)))))))
+    (. .)))
+
+det(persons-4, All-1)
+amod(bodied-3, able-2)
+amod(persons-4, bodied-3)
+root(ROOT-0, persons-4)
+amod(persons-4, armed-5)
+amod(persons-4, capable-7)
+conj_and(armed-5, capable-7)
+prepc_of(armed-5, fighting-9)
+det(weapons-12, those-11)
+prep_with(fighting-9, weapons-12)
+
+(ROOT
+  (S (IN So)
+    (NP (DT the) (NN militia))
+    (VP (VBZ is) (RB all)
+      (NP (JJ armed) (NNS people)))
+    (. .)))
+
+dep(people-7, So-1)
+det(militia-3, the-2)
+nsubj(people-7, militia-3)
+cop(people-7, is-4)
+advmod(people-7, all-5)
+amod(people-7, armed-6)
+root(ROOT-0, people-7)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ means)
+      (SBAR
+        (S
+          (NP (PRP it))
+          (VP (VBZ is)
+            (NP (DT an) (JJ individual) (NN right)
+              (S
+                (VP (TO to)
+                  (VP
+                    (VP (VB own)
+                      (NP (NNS guns)))
+                    (CC and)
+                    (VP (VB form)
+                      (PRT (RP together))
+                      (S
+                        (VP (TO to)
+                          (VP (VB fight)
+                            (NP (DT an)
+                              (ADJP (JJ oppressive))
+                              (NN government))))))))))))))
+    (. .)))
+
+nsubj(means-2, That-1)
+root(ROOT-0, means-2)
+nsubj(right-7, it-3)
+cop(right-7, is-4)
+det(right-7, an-5)
+amod(right-7, individual-6)
+ccomp(means-2, right-7)
+aux(own-9, to-8)
+infmod(right-7, own-9)
+dobj(own-9, guns-10)
+infmod(right-7, form-12)
+conj_and(own-9, form-12)
+prt(form-12, together-13)
+aux(fight-15, to-14)
+xcomp(form-12, fight-15)
+det(government-18, an-16)
+amod(government-18, oppressive-17)
+dobj(fight-15, government-18)
+

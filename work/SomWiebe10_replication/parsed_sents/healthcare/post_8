@@ -1,0 +1,102 @@
+(ROOT
+  (S
+    (NP (JJ Government-run) (NN health) (NN insurance))
+    (VP (VBZ restricts)
+      (NP (JJ doctor\/patient) (NNS choices)))
+    (. .)))
+
+amod(insurance-3, Government-run-1)
+nn(insurance-3, health-2)
+nsubj(restricts-4, insurance-3)
+root(ROOT-0, restricts-4)
+amod(choices-6, doctor\/patient-5)
+dobj(restricts-4, choices-6)
+
+(ROOT
+  (S
+    (S
+      (NP (NNPS Republicans))
+      (VP (VBD argued)
+        (PP (IN in)
+          (NP (DT a) (NNP June) (CD 2009) (NN letter)))
+        (PP (TO to)
+          (NP (NNP President) (NNP Obama)))))
+    (: :) ('' '')
+    (S
+      (NP
+        (PRN (-LRB- -LRB-)
+          (NP (NNP Public) (NN insurance))
+          (-RRB- -RRB-)))
+      (VP (MD would)
+        (VP (VB be)
+          (NP
+            (NP (DT a) (JJ federal) (NN government) (NN takeover))
+            (PP (IN of)
+              (NP (PRP$ our) (NN healthcare) (NN system))))
+          (, ,)
+          (S
+            (VP
+              (VP (VBG taking)
+                (NP
+                  (NP (NNS decisions))
+                  (PP (RB out) (IN of)
+                    (NP
+                      (NP (DT the) (NNS hands))
+                      (PP (IN of)
+                        (NP (NNS doctors)
+                          (CC and)
+                          (NNS patients)))))))
+              (CC and)
+              (VP (VBG placing)
+                (NP (PRP them))
+                (PP (IN in)
+                  (NP
+                    (NP (DT the) (NNS hands))
+                    (PP (IN of)
+                      (NP (DT a) (NNP Washington) (NN bureaucracy)))))))))))
+    (. .)))
+
+nsubj(argued-2, Republicans-1)
+root(ROOT-0, argued-2)
+det(letter-7, a-4)
+nn(letter-7, June-5)
+num(letter-7, 2009-6)
+prep_in(argued-2, letter-7)
+nn(Obama-10, President-9)
+prep_to(argued-2, Obama-10)
+nn(insurance-15, Public-14)
+nsubj(takeover-22, insurance-15)
+aux(takeover-22, would-17)
+cop(takeover-22, be-18)
+det(takeover-22, a-19)
+amod(takeover-22, federal-20)
+nn(takeover-22, government-21)
+ccomp(argued-2, takeover-22)
+poss(system-26, our-24)
+nn(system-26, healthcare-25)
+prep_of(takeover-22, system-26)
+dep(takeover-22, taking-28)
+dobj(taking-28, decisions-29)
+det(hands-33, the-32)
+prep_out_of(decisions-29, hands-33)
+prep_of(hands-33, doctors-35)
+prep_of(hands-33, patients-37)
+conj_and(doctors-35, patients-37)
+dep(takeover-22, placing-39)
+conj_and(taking-28, placing-39)
+dobj(placing-39, them-40)
+det(hands-43, the-42)
+prep_in(placing-39, hands-43)
+det(bureaucracy-47, a-45)
+nn(bureaucracy-47, Washington-46)
+prep_of(hands-43, bureaucracy-47)
+
+(ROOT
+  (NP
+    (NP (NNP ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 2))
+      (-RRB- -RRB-))))
+
+appos(''-1, 2-3)
+

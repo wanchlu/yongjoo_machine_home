@@ -1,0 +1,79 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (PP (IN against)
+        (S
+          (VP (VBG depending)
+            (PP (IN on)
+              (NP
+                (NP (DT the) (NN government))
+                (PP (IN for)
+                  (NP (PRP$ our) (NN health) (NN care)))))))))
+    (. .)))
+
+nsubj('m-2, I-1)
+root(ROOT-0, 'm-2)
+prepc_against('m-2, depending-4)
+det(government-7, the-6)
+prep_on(depending-4, government-7)
+poss(care-11, our-9)
+nn(care-11, health-10)
+prep_for(government-7, care-11)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP
+      (VP (MD 'll)
+        (VP (VB reduce)
+          (NP
+            (NP (DT the) (NN quality))
+            (PP (IN of)
+              (NP (NN service))))))
+      (, ,)
+      (CC and)
+      (VP (MD will)
+        (VP (VB be)
+          (ADJP (RB pretty) (JJ selective)))))
+    (. .)))
+
+nsubj(reduce-3, They-1)
+nsubj(selective-13, They-1)
+aux(reduce-3, 'll-2)
+root(ROOT-0, reduce-3)
+det(quality-5, the-4)
+dobj(reduce-3, quality-5)
+prep_of(quality-5, service-7)
+aux(selective-13, will-10)
+cop(selective-13, be-11)
+advmod(selective-13, pretty-12)
+conj_and(reduce-3, selective-13)
+
+(ROOT
+  (SINV
+    (VP (VB \/) (-RRB- -RRB-)
+      (NP (NNS \/))
+      (-RRB- -RRB-))
+    (NP
+      (NP (PRP We))
+      (SBAR
+        (S
+          (VP (MD should)
+            (VP (VB get)
+              (NP (PRP$ our) (JJ own) (NN health))
+              (FRAG
+                (NP (NN insurance) (NNS plans))
+                (. .)))))))))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+nsubj(\/-1, We-5)
+aux(get-7, should-6)
+rcmod(We-5, get-7)
+poss(health-10, our-8)
+amod(health-10, own-9)
+dobj(get-7, health-10)
+nn(plans-12, insurance-11)
+dep(get-7, plans-12)
+

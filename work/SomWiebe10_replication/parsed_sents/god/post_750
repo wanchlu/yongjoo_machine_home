@@ -1,0 +1,51 @@
+(ROOT
+  (NP (JJ dumbo) (NN alert) (. .)))
+
+amod(alert-2, dumbo-1)
+root(ROOT-0, alert-2)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP do) (RB n't)
+      (VP (VB know)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (VP (VBZ 's)
+              (UCP
+                (NP (JJR thicker) (NN you))
+                (CC or)
+                (ADVP (RB misterguy))))))))
+    (. .)))
+
+nsubj(know-4, I-1)
+aux(know-4, do-2)
+neg(know-4, n't-3)
+root(ROOT-0, know-4)
+nsubj(you-8, who-5)
+cop(you-8, 's-6)
+amod(you-8, thicker-7)
+ccomp(know-4, you-8)
+ccomp(know-4, misterguy-10)
+advmod(you-8, misterguy-10)
+conj_or(you-8, misterguy-10)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP guess)
+      (SBAR
+        (S
+          (NP (RB only) (NN time))
+          (VP (MD will)
+            (VP (VB tell))))))
+    (. .)))
+
+nsubj(guess-2, I-1)
+root(ROOT-0, guess-2)
+advmod(time-4, only-3)
+nsubj(tell-6, time-4)
+aux(tell-6, will-5)
+ccomp(guess-2, tell-6)
+

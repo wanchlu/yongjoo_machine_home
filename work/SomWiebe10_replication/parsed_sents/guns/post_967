@@ -1,0 +1,78 @@
+(ROOT
+  (S
+    (NP (DT Every) (JJ smart) (NN person))
+    (VP (MD should)
+      (VP (VB have)
+        (NP (DT a) (NN gun))))
+    (. .)))
+
+det(person-3, Every-1)
+amod(person-3, smart-2)
+nsubj(have-5, person-3)
+aux(have-5, should-4)
+root(ROOT-0, have-5)
+det(gun-7, a-6)
+dobj(have-5, gun-7)
+
+(ROOT
+  (S
+    (NP (RB Too) (JJ many) (JJ stupid) (NNS people))
+    (VP (VBP do))
+    (. .)))
+
+advmod(people-4, Too-1)
+amod(people-4, many-2)
+amod(people-4, stupid-3)
+nsubj(do-5, people-4)
+root(ROOT-0, do-5)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP
+          (ADJP (RBR more) (JJ smart))
+          (NNS people))
+        (VP (VBD had)
+          (NP (NNS guns)))))
+    (, ,)
+    (S
+      (NP
+        (ADJP (RBR more) (JJ stupid))
+        (NNS people))
+      (VP (MD would)
+        (VP (VB be)
+          (UCP
+            (ADJP (JJ dead))
+            (CC or)
+            (PP (IN in)
+              (NP (NN jail)))))))
+    (, ,)
+    (CC and)
+    (S
+      (NP (PRP$ our) (NNS lives))
+      (VP (MD would)
+        (VP (VB be)
+          (ADJP (JJR better)))))
+    (. .)))
+
+mark(had-5, If-1)
+advmod(smart-3, more-2)
+amod(people-4, smart-3)
+nsubj(had-5, people-4)
+advcl(dead-13, had-5)
+dobj(had-5, guns-6)
+advmod(stupid-9, more-8)
+amod(people-10, stupid-9)
+nsubj(dead-13, people-10)
+aux(dead-13, would-11)
+cop(dead-13, be-12)
+root(ROOT-0, dead-13)
+conj_or(dead-13, in-15)
+prep_in(dead-13, jail-16)
+poss(lives-20, our-19)
+nsubj(better-23, lives-20)
+aux(better-23, would-21)
+cop(better-23, be-22)
+conj_and(dead-13, better-23)
+

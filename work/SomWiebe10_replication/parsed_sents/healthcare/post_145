@@ -1,0 +1,135 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJ Single-payer) (NNS systems))
+      (SBAR
+        (S
+          (VP (VBP involve)
+            (NP
+              (NP
+                (NP (NN government))
+                (VP (VBG paying)
+                  (PP (IN for)
+                    (NP (JJ private) (NNS services)))
+                  (NP
+                    (ADJP (RBS Most) (JJ single-payer))
+                    (NNS systems))
+                  (PP (IN in)
+                    (NP (NNP Europe)))))
+              (, ,)
+              (CONJP (RB as) (RB well) (IN as))
+              (NP
+                (NP (NNS ones))
+                (VP (VBN proposed)
+                  (PP (IN in)
+                    (NP (DT the) (NNP United) (NNPS States))))))
+            (PRN (-LRB- -LRB-)
+              (S
+                (VP (VBG building)
+                  (PP (IN on)
+                    (NP (NNP Medicare)))))
+              (-RRB- -RRB-))))))
+    (, ,)
+    (VP (VB involve)
+      (NP
+        (NP (DT the) (NN government))
+        (VP (VBG paying)
+          (PP (IN for)
+            (NP
+              (NP (DT the) (NN insurance))
+              (PP (IN of)
+                (NP (NNS individuals))))))))
+    (. .)))
+
+amod(systems-2, Single-payer-1)
+nsubj(involve-30, systems-2)
+rcmod(systems-2, involve-3)
+dobj(involve-3, government-4)
+partmod(government-4, paying-5)
+amod(services-8, private-7)
+prep_for(paying-5, services-8)
+advmod(single-payer-10, Most-9)
+amod(systems-11, single-payer-10)
+dobj(paying-5, systems-11)
+prep_in(paying-5, Europe-13)
+dobj(involve-3, ones-18)
+conj_and(government-4, ones-18)
+partmod(ones-18, proposed-19)
+det(States-23, the-21)
+nn(States-23, United-22)
+prep_in(proposed-19, States-23)
+parataxis(involve-3, building-25)
+prep_on(building-25, Medicare-27)
+root(ROOT-0, involve-30)
+det(government-32, the-31)
+dobj(involve-30, government-32)
+partmod(government-32, paying-33)
+det(insurance-36, the-35)
+prep_for(paying-33, insurance-36)
+prep_of(insurance-36, individuals-38)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP (VBZ means)
+      (SBAR (IN that)
+        (S
+          (NP (NNS individuals))
+          (VP (MD would)
+            (ADVP (RB still))
+            (VP (VB go)
+              (PP (TO to)
+                (NP (JJ private) (NNS hospitals)
+                  (CC and)
+                  (NNS doctors))))))))
+    (. .)))
+
+nsubj(means-2, This-1)
+root(ROOT-0, means-2)
+complm(go-7, that-3)
+nsubj(go-7, individuals-4)
+aux(go-7, would-5)
+advmod(go-7, still-6)
+ccomp(means-2, go-7)
+amod(hospitals-10, private-9)
+prep_to(go-7, hospitals-10)
+prep_to(go-7, doctors-12)
+conj_and(hospitals-10, doctors-12)
+
+(ROOT
+  (S
+    (NP (DT The) (JJ only) (NN difference))
+    (VP (VBZ is)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (JJ government-funded) (NN insurance))
+          (VP (VBZ pays)
+            (PP (IN for)
+              (S
+                (NP
+                  (NP (NNS services))
+                  (PP (RB instead) (IN of)
+                    (NP (DT the) (NN money))))
+                (VP (VBG coming)
+                  (PP (IN from)
+                    (NP (PRP$ your) (JJ own) (NN insurance) (NN company))))))))))
+    (. .)))
+
+det(difference-3, The-1)
+amod(difference-3, only-2)
+nsubj(is-4, difference-3)
+root(ROOT-0, is-4)
+complm(pays-9, that-5)
+det(insurance-8, the-6)
+amod(insurance-8, government-funded-7)
+nsubj(pays-9, insurance-8)
+ccomp(is-4, pays-9)
+nsubj(coming-16, services-11)
+det(money-15, the-14)
+prep_instead_of(services-11, money-15)
+prepc_for(pays-9, coming-16)
+poss(company-21, your-18)
+amod(company-21, own-19)
+nn(company-21, insurance-20)
+prep_from(coming-16, company-21)
+

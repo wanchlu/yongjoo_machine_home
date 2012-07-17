@@ -1,0 +1,155 @@
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (VP
+      (ADVP (RB actually))
+      (VBN read)
+      (NP (DT the) (NN newspaper)))
+    (. ?)))
+
+aux(read-4, Have-1)
+nsubj(read-4, you-2)
+advmod(read-4, actually-3)
+root(ROOT-0, read-4)
+det(newspaper-6, the-5)
+dobj(read-4, newspaper-6)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP
+        (NP (JJ several) (NNS cases))
+        (CC and)
+        (NP (DT some)))
+      (SBAR (IN that)
+        (S
+          (NP (DT a) (NN gun))
+          (VP (VBD prevented)
+            (NP (PRP them))
+            (PP (IN from)
+              (S
+                (VP (VBG being)
+                  (NP (DT a) (JJ dead) (NN victim)))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(cases-4, several-3)
+nsubj(are-2, cases-4)
+nsubj(are-2, some-6)
+conj_and(cases-4, some-6)
+complm(prevented-10, that-7)
+det(gun-9, a-8)
+nsubj(prevented-10, gun-9)
+ccomp(are-2, prevented-10)
+dobj(prevented-10, them-11)
+cop(victim-16, being-13)
+det(victim-16, a-14)
+amod(victim-16, dead-15)
+prepc_from(prevented-10, victim-16)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP speak)
+      (PP (IN from)
+        (NP (NN experience))))
+    (. .)))
+
+nsubj(speak-2, I-1)
+root(ROOT-0, speak-2)
+prep_from(speak-2, experience-4)
+
+(ROOT
+  (S
+    (PP (IN As)
+      (PP (IN for)
+        (NP
+          (NP (DT the) (JJ easy) (NN access))
+          (PP (IN of)
+            (NP (NNS guns))))))
+    (, ,)
+    (NP (NNS criminals))
+    (VP (MD would)
+      (VP (VB have)
+        (NP (NN access))
+        (PP (TO to)
+          (NP
+            (NP (NNS guns))
+            (PP (IN in)
+              (NP (DT the) (JJ black) (NN market)))))
+        (ADVP (RB regardless)
+          (SBAR (IN if)
+            (S
+              (NP (PRP they))
+              (VP (VBD banned)
+                (NP (NNS guns))))))))
+    (. .)))
+
+prepc_as_for(have-11, for-2)
+det(access-5, the-3)
+amod(access-5, easy-4)
+pobj(have-11, access-5)
+prep_of(access-5, guns-7)
+nsubj(have-11, criminals-9)
+aux(have-11, would-10)
+root(ROOT-0, have-11)
+dobj(have-11, access-12)
+prep_to(have-11, guns-14)
+det(market-18, the-16)
+amod(market-18, black-17)
+prep_in(guns-14, market-18)
+advmod(have-11, regardless-19)
+mark(banned-22, if-20)
+nsubj(banned-22, they-21)
+dep(regardless-19, banned-22)
+dobj(banned-22, guns-23)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Cocaine))
+      (VP (VBZ is)
+        (ADJP (JJ illegal))
+        (PRN (CC but)
+          (NP
+            (NP (DT some))
+            (SBAR
+              (WHADVP (WRB how))
+              (S
+                (NP (NNS people))
+                (ADVP (RB still))
+                (VP (VB gain)
+                  (NP (NN access)))))))
+        (PP (TO to)
+          (NP (PRP it)))))
+    (: ...)
+    (S
+      (ADVP (RB well))
+      (, ,)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (VP (VBZ does))))
+      (NP (DT that))
+      (VP (VBP happen)))
+    (. ?)))
+
+nsubj(illegal-3, Cocaine-1)
+cop(illegal-3, is-2)
+root(ROOT-0, illegal-3)
+dep(some-5, but-4)
+dep(illegal-3, some-5)
+advmod(gain-9, how-6)
+nsubj(gain-9, people-7)
+advmod(gain-9, still-8)
+dep(some-5, gain-9)
+dobj(gain-9, access-10)
+prep_to(illegal-3, it-12)
+advmod(happen-19, well-14)
+advmod(does-17, how-16)
+dep(happen-19, does-17)
+nsubj(happen-19, that-18)
+parataxis(illegal-3, happen-19)
+

@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (INTJ (RB Sure))
+    (, ,)
+    (VP (VB provide)
+      (NP (NN government) (NN healthcare))
+      (PP (TO to)
+        (NP (DT all))))
+    (. .)))
+
+dep(provide-3, Sure-1)
+root(ROOT-0, provide-3)
+nn(healthcare-5, government-4)
+dobj(provide-3, healthcare-5)
+prep_to(provide-3, all-7)
+
+(ROOT
+  (S
+    (NP (PRP$ Its))
+    (VP (VBZ seems)
+      (SBAR (IN that)
+        (S
+          (NP (NNS people))
+          (VP (VBP complain)
+            (SBAR (IN that)
+              (S
+                (NP (PRP$ their) (`` ``) (NN illness) ('' ''))
+                (VP (VBZ prevents)
+                  (NP (PRP them))
+                  (PP (IN from)
+                    (S
+                      (VP (VBG working)))))))))))
+    (. .)))
+
+nsubj(seems-2, Its-1)
+root(ROOT-0, seems-2)
+complm(complain-5, that-3)
+nsubj(complain-5, people-4)
+ccomp(seems-2, complain-5)
+complm(prevents-11, that-6)
+poss(illness-9, their-7)
+nsubj(prevents-11, illness-9)
+ccomp(complain-5, prevents-11)
+dobj(prevents-11, them-12)
+prepc_from(prevents-11, working-14)
+
+(ROOT
+  (S
+    (ADVP (RB So))
+    (, ,)
+    (VP
+      (VP (VB provide)
+        (NP (NN healthcare))
+        (SBAR (IN for)
+          (S
+            (NP (DT all))
+            (VP (VBP get)
+              (NP (PRP them))
+              (ADVP (RB well))))))
+      (CC and)
+      (VP (VB get)
+        (ADJP (JJ rid)
+          (PP (IN of)
+            (NP (NN welfare))))
+        (S
+          (VP (TO to)
+            (VP (VB help)
+              (VP (VB balance)
+                (NP
+                  (NP (DT the) (NN cost))
+                  (PP (IN of)
+                    (NP (NN healthcare))))))))))
+    (. .)))
+
+advmod(provide-3, So-1)
+root(ROOT-0, provide-3)
+dobj(provide-3, healthcare-4)
+mark(get-7, for-5)
+nsubj(get-7, all-6)
+advcl(provide-3, get-7)
+dobj(get-7, them-8)
+advmod(get-7, well-9)
+dep(rid-12, get-11)
+conj_and(provide-3, rid-12)
+prep_of(rid-12, welfare-14)
+aux(help-16, to-15)
+xcomp(rid-12, help-16)
+xcomp(help-16, balance-17)
+det(cost-19, the-18)
+dobj(balance-17, cost-19)
+prep_of(cost-19, healthcare-21)
+

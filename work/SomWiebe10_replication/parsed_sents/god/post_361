@@ -1,0 +1,114 @@
+(ROOT
+  (X
+    (ADVP (RB Once) (RB again))
+    (, ,)
+    (X (IN in))
+    (NP
+      (NP (NN response))
+      (PP (TO to)
+        (NP (DT the) (NN video))))
+    (. .)))
+
+advmod(again-2, Once-1)
+dep(response-5, again-2)
+dep(response-5, in-4)
+root(ROOT-0, response-5)
+det(video-8, the-7)
+prep_to(response-5, video-8)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (EX there))
+        (VP (VBP are)
+          (NP
+            (NP (CD two) (NNS ultimatums))
+            (, ,)
+            (SBAR
+              (SBAR (IN that)
+                (S
+                  (NP (NNP Everything))
+                  (VP (VBD came)
+                    (PP (IN from)
+                      (NP (NN nothing))))))
+              (, ,)
+              (CC or)
+              (SBAR (IN that)
+                (S
+                  (NP (PRP it))
+                  (ADVP (RB always))
+                  (VP (VBD existed)))))))))
+    (, ,)
+    (WHADVP
+      (ADVP (RB then))
+      (WRB why))
+    (SQ (VBZ does)
+      (NP (DT the) (NN universe))
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB have)
+              (NP (DT a) (NN beginning)))))))
+    (. ?)))
+
+mark(are-3, If-1)
+expl(are-3, there-2)
+advcl(have-24, are-3)
+num(ultimatums-5, two-4)
+nsubj(are-3, ultimatums-5)
+dep(came-9, that-7)
+nsubj(came-9, Everything-8)
+dep(ultimatums-5, came-9)
+prep_from(came-9, nothing-11)
+dep(existed-17, that-14)
+nsubj(existed-17, it-15)
+advmod(existed-17, always-16)
+dep(ultimatums-5, existed-17)
+conj_or(came-9, existed-17)
+advmod(why-20, then-19)
+advmod(have-24, why-20)
+aux(have-24, does-21)
+det(universe-23, the-22)
+nsubj(have-24, universe-23)
+xsubj(have-26, universe-23)
+root(ROOT-0, have-24)
+aux(have-26, to-25)
+xcomp(have-24, have-26)
+det(beginning-28, a-27)
+dobj(have-26, beginning-28)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (VBP 've)
+        (ADVP (RB just))
+        (VP (VBN assumed)
+          (NP (DT this))))
+      (CC and)
+      (VP
+        (ADVP (RB then))
+        (VBD closed)
+        (PRT (RP off))
+        (NP (DT the) (JJ causality) (NN cycle))
+        (PP (IN with)
+          (NP (DT the) (JJ opposite) (NN argument)))))
+    (. .)))
+
+nsubj(assumed-4, You-1)
+nsubj(closed-8, You-1)
+aux(assumed-4, 've-2)
+advmod(assumed-4, just-3)
+root(ROOT-0, assumed-4)
+dobj(assumed-4, this-5)
+advmod(closed-8, then-7)
+conj_and(assumed-4, closed-8)
+prt(closed-8, off-9)
+det(cycle-12, the-10)
+amod(cycle-12, causality-11)
+dobj(closed-8, cycle-12)
+det(argument-16, the-14)
+amod(argument-16, opposite-15)
+prep_with(closed-8, argument-16)
+

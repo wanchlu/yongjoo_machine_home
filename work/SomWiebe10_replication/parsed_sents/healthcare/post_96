@@ -1,0 +1,85 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance))
+    (VP (MD will)
+      (VP (VB discourage)
+        (NP (NNS people))
+        (PP (IN from)
+          (S
+            (VP (VBG becoming)
+              (NP (NNS doctors)))))))
+    (. .)))
+
+nn(insurance-2, Public-1)
+nsubj(discourage-4, insurance-2)
+aux(discourage-4, will-3)
+root(ROOT-0, discourage-4)
+dobj(discourage-4, people-5)
+prepc_from(discourage-4, becoming-7)
+attr(becoming-7, doctors-8)
+
+(ROOT
+  (S
+    (NP
+      (NP (JJ Public) (NN insurance))
+      (, ,)
+      (CC and)
+      (NP
+        (NP (DT the) (NN specter))
+        (PP (IN of)
+          (NP
+            (ADJP (RB increasingly) (JJ socialized))
+            (NN medicine))))
+      (, ,))
+    (VP (MD will)
+      (VP (VB discourage)
+        (NP (JJ prospective) (NNS doctors))
+        (PP (IN from)
+          (S
+            (VP (VBG entering)
+              (NP (DT the) (NN industry)))))
+        (, ,)
+        (SBAR (IN as)
+          (S
+            (NP (PRP they))
+            (VP (MD will)
+              (VP (VB fear)
+                (SBAR (IN that)
+                  (S
+                    (NP (PRP$ their) (JJ hard) (NN work))
+                    (VP (MD will) (RB not)
+                      (VP (VB be)
+                        (VP
+                          (ADVP (RB fairly))
+                          (VBN rewarded))))))))))))
+    (. .)))
+
+amod(insurance-2, Public-1)
+nsubj(discourage-13, insurance-2)
+det(specter-6, the-5)
+conj_and(insurance-2, specter-6)
+nsubj(discourage-13, specter-6)
+advmod(socialized-9, increasingly-8)
+amod(medicine-10, socialized-9)
+prep_of(specter-6, medicine-10)
+aux(discourage-13, will-12)
+root(ROOT-0, discourage-13)
+amod(doctors-15, prospective-14)
+dobj(discourage-13, doctors-15)
+prepc_from(discourage-13, entering-17)
+det(industry-19, the-18)
+dobj(entering-17, industry-19)
+mark(fear-24, as-21)
+nsubj(fear-24, they-22)
+aux(fear-24, will-23)
+advcl(discourage-13, fear-24)
+complm(rewarded-33, that-25)
+poss(work-28, their-26)
+amod(work-28, hard-27)
+nsubjpass(rewarded-33, work-28)
+aux(rewarded-33, will-29)
+neg(rewarded-33, not-30)
+auxpass(rewarded-33, be-31)
+advmod(rewarded-33, fairly-32)
+ccomp(fear-24, rewarded-33)
+

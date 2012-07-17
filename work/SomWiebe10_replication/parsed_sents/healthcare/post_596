@@ -1,0 +1,49 @@
+(ROOT
+  (S
+    (VP (VB Thank)
+      (NP (PRP you)))
+    (. !)))
+
+root(ROOT-0, Thank-1)
+dobj(Thank-1, you-2)
+
+(ROOT
+  (S
+    (VP (VB See)
+      (S
+        (NP (PRP you))
+        (VP (VB get)
+          (NP (PRP it))
+          (PP (IN for)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP it))
+                (VP (VBZ is))))))))
+    (. .)))
+
+root(ROOT-0, See-1)
+nsubj(get-3, you-2)
+ccomp(See-1, get-3)
+dobj(get-3, it-4)
+dobj(is-8, what-6)
+nsubj(is-8, it-7)
+prepc_for(get-3, is-8)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (MD ca) (RB n't)
+      (NP (NN anyone) (NN else))
+      (VP (VB see)
+        (NP (DT this)))
+      (. !))))
+
+advmod(see-6, Why-1)
+aux(see-6, ca-2)
+neg(see-6, n't-3)
+nn(else-5, anyone-4)
+nsubj(see-6, else-5)
+root(ROOT-0, see-6)
+dobj(see-6, this-7)
+

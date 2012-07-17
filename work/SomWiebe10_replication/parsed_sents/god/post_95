@@ -1,0 +1,52 @@
+(ROOT
+  (FRAG
+    (ADJP (RB too) (JJ bad)
+      (PP (IN for)
+        (NP (PRP them))))
+    (SBAR (IN that)
+      (S
+        (NP (PRP they))
+        (VP (VBP are) (RB all)
+          (ADJP (JJ false)))))
+    (. .)))
+
+advmod(bad-2, too-1)
+root(ROOT-0, bad-2)
+prep_for(bad-2, them-4)
+dep(false-9, that-5)
+nsubj(false-9, they-6)
+cop(false-9, are-7)
+advmod(false-9, all-8)
+dep(bad-2, false-9)
+
+(ROOT
+  (SQ (VBP Have)
+    (NP (PRP you))
+    (VP
+      (ADVP (RB ever))
+      (VBN noticed)
+      (SBAR
+        (WHADVP (WRB how))
+        (S
+          (NP (NNS gods))
+          (VP (VBP want)
+            (SBAR
+              (WHADJP (RB exactly) (WP what))
+              (S
+                (NP (NN thier) (NNS inventers))
+                (VP (VBP want))))))))
+    (. ?)))
+
+aux(noticed-4, Have-1)
+nsubj(noticed-4, you-2)
+advmod(noticed-4, ever-3)
+root(ROOT-0, noticed-4)
+advmod(want-7, how-5)
+nsubj(want-7, gods-6)
+ccomp(noticed-4, want-7)
+dep(want-12, exactly-8)
+dep(exactly-8, what-9)
+nn(inventers-11, thier-10)
+nsubj(want-12, inventers-11)
+ccomp(want-7, want-12)
+

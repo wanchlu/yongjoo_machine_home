@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBD WAS)
+      (NP
+        (NP (NNP LOST)
+          (CC AND)
+          (NNP NOW) (NNP I) (NNP AM) (NNP FOUND))
+        (PRN (-LRB- -LRB-)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (NN sense))
+              (VP (VBZ does)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBP make)))))))
+          (-RRB- -RRB-))
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP (JJ utter) (NNS foolishness))
+              (SBAR (IN that)
+                (S
+                  (NP (NN god))
+                  (VP
+                    (VP (VBD saved)
+                      (NP (PRP you)))
+                    (CC or)
+                    (VP (VBD brought)
+                      (NP (PRP you))
+                      (ADVP (RB back)))))))))))
+    (: ...)))
+
+nsubj(FOUND-8, I-1)
+cop(FOUND-8, WAS-2)
+nn(FOUND-8, LOST-3)
+conj_and(LOST-3, NOW-5)
+nn(FOUND-8, NOW-5)
+nn(FOUND-8, I-6)
+nn(FOUND-8, AM-7)
+root(ROOT-0, FOUND-8)
+dep(does-12, what-10)
+dobj(make-14, what-10)
+nsubj(does-12, sense-11)
+dep(FOUND-8, does-12)
+nsubj(make-14, it-13)
+ccomp(does-12, make-14)
+nsubj(foolishness-19, this-16)
+cop(foolishness-19, is-17)
+amod(foolishness-19, utter-18)
+rcmod(FOUND-8, foolishness-19)
+complm(saved-22, that-20)
+nsubj(saved-22, god-21)
+nsubj(brought-25, god-21)
+ccomp(foolishness-19, saved-22)
+dobj(saved-22, you-23)
+ccomp(foolishness-19, brought-25)
+conj_or(saved-22, brought-25)
+dobj(brought-25, you-26)
+advmod(brought-25, back-27)
+

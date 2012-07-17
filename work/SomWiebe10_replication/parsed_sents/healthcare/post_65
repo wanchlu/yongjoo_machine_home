@@ -1,0 +1,133 @@
+(ROOT
+  (S
+    (NP
+      (NP (NNS Costs))
+      (PP (IN of)
+        (NP (JJ public) (NN insurance))))
+    (VP (MD will)
+      (VP (VB grow)
+        (SBAR (IN as)
+          (S
+            (NP (PRP it))
+            (VP (VBZ pushes)
+              (PRT (RP out))
+              (NP (JJ private) (NN insurance)))))))
+    (. .)))
+
+nsubj(grow-6, Costs-1)
+amod(insurance-4, public-3)
+prep_of(Costs-1, insurance-4)
+aux(grow-6, will-5)
+root(ROOT-0, grow-6)
+mark(pushes-9, as-7)
+nsubj(pushes-9, it-8)
+advcl(grow-6, pushes-9)
+prt(pushes-9, out-10)
+amod(insurance-12, private-11)
+dobj(pushes-9, insurance-12)
+
+(ROOT
+  (S
+    (NP (DT The) (NNP American) (NNP Medical) (NNP Association))
+    (VP (VBD argued)
+      (PP (IN in)
+        (NP
+          (NP (NNP June))
+          (PP (IN of)
+            (NP
+              (NP (CD 2009) (NN letter))
+              (PP (TO to)
+                (NP (DT the) (NNP Senate) (NNP Finance) (NNP Committee)))))))
+      (: :) (`` ``)
+      (S
+        (SBAR (IN If)
+          (S
+            (NP (JJ private) (NNS insurers))
+            (VP (VBP are)
+              (VP (VBN pushed)
+                (PRT (RP out))
+                (PP (IN of)
+                  (NP (DT the) (NN market)))))))
+        (PRN (, ,)
+          (S
+            (NP (DT the) (NN group))
+            (VP (VBD said)))
+          (, ,))
+        (`` ``)
+        (NP
+          (NP (DT the) (JJ corresponding) (NN surge))
+          (PP (IN in)
+            (NP (JJ public) (NN plan) (NN participation))))
+        (VP (MD would)
+          (ADVP (RB likely))
+          (VP (VB lead)
+            (PP (TO to)
+              (NP
+                (NP (DT an) (NN explosion))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS costs))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (MD would)
+                          (VP (VB need)
+                            (S
+                              (VP (TO to)
+                                (VP (VB be)
+                                  (VP (VBN absorbed)
+                                    (PP (IN by)
+                                      (NP (NNS taxpayers)))))))))))))))))))
+    (. .)))
+
+det(Association-4, The-1)
+nn(Association-4, American-2)
+nn(Association-4, Medical-3)
+nsubj(argued-5, Association-4)
+root(ROOT-0, argued-5)
+prep_in(argued-5, June-7)
+num(letter-10, 2009-9)
+prep_of(June-7, letter-10)
+det(Committee-15, the-12)
+nn(Committee-15, Senate-13)
+nn(Committee-15, Finance-14)
+prep_to(letter-10, Committee-15)
+mark(pushed-22, If-18)
+amod(insurers-20, private-19)
+nsubjpass(pushed-22, insurers-20)
+auxpass(pushed-22, are-21)
+advcl(lead-42, pushed-22)
+det(market-26, the-25)
+prep_out_of(pushed-22, market-26)
+det(group-29, the-28)
+nsubj(said-30, group-29)
+parataxis(lead-42, said-30)
+det(surge-35, the-33)
+amod(surge-35, corresponding-34)
+nsubj(lead-42, surge-35)
+amod(participation-39, public-37)
+nn(participation-39, plan-38)
+prep_in(surge-35, participation-39)
+aux(lead-42, would-40)
+advmod(lead-42, likely-41)
+ccomp(argued-5, lead-42)
+det(explosion-45, an-44)
+prep_to(lead-42, explosion-45)
+prep_of(explosion-45, costs-47)
+nsubj(need-50, costs-47)
+aux(need-50, would-49)
+rcmod(costs-47, need-50)
+aux(absorbed-53, to-51)
+auxpass(absorbed-53, be-52)
+xcomp(need-50, absorbed-53)
+agent(absorbed-53, taxpayers-55)
+
+(ROOT
+  (NP
+    (NP (NN '') ('' ''))
+    (PRN (-LRB- -LRB-)
+      (NP (CD 9))
+      (-RRB- -RRB-))))
+
+appos(''-1, 9-4)
+

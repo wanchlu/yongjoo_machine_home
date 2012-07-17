@@ -1,0 +1,92 @@
+(ROOT
+  (S
+    (VP (VB ok)
+      (ADVP (RB then)))
+    (. .)))
+
+root(ROOT-0, ok-1)
+advmod(ok-1, then-2)
+
+(ROOT
+  (SINV
+    (ADVP (RB So))
+    (VP (VBP do))
+    (NP
+      (NP (NNS cars))
+      (, ,)
+      (NP
+        (NP (NNS trains))
+        (, ,)
+        (NP (NNS boats))
+        (, ,)
+        (NP (NNS planes))
+        (, ,)
+        (NP (NNS stoves))
+        (, ,)
+        (NP (NNS showers))
+        (, ,)
+        (NP (NNS bathtubs)))
+      (, ,))
+    (: ...)))
+
+advmod(do-2, So-1)
+root(ROOT-0, do-2)
+nsubj(do-2, cars-3)
+appos(cars-3, trains-5)
+appos(trains-5, boats-7)
+appos(trains-5, planes-9)
+appos(trains-5, stoves-11)
+appos(trains-5, showers-13)
+appos(trains-5, bathtubs-15)
+
+(ROOT
+  (INTJ (UH .)))
+
+
+(ROOT
+  (S
+    (INTJ (UH uh))
+    (VP (VB wait)
+      (NP
+        (NP (DT a) (NN sec))
+        (: ...)
+        (SQ (VBD did)
+          (NP (PRP you))
+          (VP (VB mean)
+            (SBAR (IN that)
+              (S
+                (NP (NNS people))
+                (VP (MD can)
+                  (VP (VB use)
+                    (S
+                      (NP (NNS guns))
+                      (VP (TO to)
+                        (VP (VB kill)
+                          (NP (NNS people)))))))))))))
+    (. ?)))
+
+dep(wait-2, uh-1)
+root(ROOT-0, wait-2)
+det(sec-4, a-3)
+dobj(wait-2, sec-4)
+aux(mean-8, did-6)
+nsubj(mean-8, you-7)
+dep(sec-4, mean-8)
+complm(use-12, that-9)
+nsubj(use-12, people-10)
+aux(use-12, can-11)
+ccomp(mean-8, use-12)
+nsubj(kill-15, guns-13)
+aux(kill-15, to-14)
+xcomp(use-12, kill-15)
+dobj(kill-15, people-16)
+
+(ROOT
+  (S
+    (NP (PRP$ My))
+    (ADJP (JJ bad))
+    (. !)))
+
+dep(bad-2, My-1)
+root(ROOT-0, bad-2)
+

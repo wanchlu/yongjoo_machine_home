@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (MD should)
+      (VP (VB pay)
+        (ADVP (RB only))
+        (PP (IN for)
+          (NP
+            (NP (NN health) (NNS services))
+            (SBAR
+              (S
+                (NP (PRP they))
+                (ADVP (PRP themselves))
+                (VP (VBP receive)
+                  (SBAR
+                    (SBARQ
+                      (WHADVP (WRB Why))
+                      (SQ (MD should)
+                        (NP (NN one) (NN person))
+                        (VP (VB pay)
+                          (PP (IN for)
+                            (NP
+                              (NP (DT the) (NN health) (NNS services))
+                              (PP (IN of)
+                                (NP (DT another) (NN person)))))))
+                      (. ?))))))))))))
+
+nsubj(pay-3, People-1)
+aux(pay-3, should-2)
+root(ROOT-0, pay-3)
+advmod(pay-3, only-4)
+nn(services-7, health-6)
+prep_for(pay-3, services-7)
+nsubj(receive-10, they-8)
+advmod(receive-10, themselves-9)
+rcmod(services-7, receive-10)
+advmod(pay-15, Why-11)
+aux(pay-15, should-12)
+nn(person-14, one-13)
+nsubj(pay-15, person-14)
+dep(receive-10, pay-15)
+det(services-19, the-17)
+nn(services-19, health-18)
+prep_for(pay-15, services-19)
+det(person-22, another-21)
+prep_of(services-19, person-22)
+
+(ROOT
+  (S
+    (PP (IN With)
+      (NP
+        (NP (DT the) (JJ possible) (NN exception))
+        (PP (IN of)
+          (NP
+            (NP (JJ life-threatening) (NNS circumstances))
+            (: ;)
+            (SQ (VBZ is) (RB n't)
+              (NP (PRP it))
+              (ADJP (JJR better))
+              (SBAR (IN that)
+                (S
+                  (NP (NNS individuals))
+                  (VP (VBP pay)
+                    (PP (IN for)
+                      (NP (DT the) (NNS services)))))))))))
+    (NP (PRP they))
+    (VP (VBP receive))
+    (. .)))
+
+det(exception-4, the-2)
+amod(exception-4, possible-3)
+prep_with(receive-20, exception-4)
+amod(circumstances-7, life-threatening-6)
+prep_of(exception-4, circumstances-7)
+cop(better-12, is-9)
+neg(better-12, n't-10)
+nsubj(better-12, it-11)
+dep(circumstances-7, better-12)
+complm(pay-15, that-13)
+nsubj(pay-15, individuals-14)
+dep(better-12, pay-15)
+det(services-18, the-17)
+prep_for(pay-15, services-18)
+nsubj(receive-20, they-19)
+root(ROOT-0, receive-20)
+

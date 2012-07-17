@@ -1,0 +1,66 @@
+(ROOT
+  (FRAG
+    (NP (NNP OMG))
+    (. !)))
+
+root(ROOT-0, OMG-1)
+
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP (VBP 're)
+      (VP (VBG quoting)
+        (NP
+          (NP (DT The) (NNP N.Y.) (NNP Times))
+          (PP (IN as)
+            (NP (PRP$ your) (NN source))))))
+    (. ?)))
+
+nsubj(quoting-3, You-1)
+aux(quoting-3, 're-2)
+root(ROOT-0, quoting-3)
+det(Times-6, The-4)
+nn(Times-6, N.Y.-5)
+dobj(quoting-3, Times-6)
+poss(source-9, your-8)
+prep_as(Times-6, source-9)
+
+(ROOT
+  (S
+    (VP (VB Lol))
+    (. !)))
+
+root(ROOT-0, Lol-1)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ 's)
+      (PP (IN like)
+        (S
+          (NP (PRP me))
+          (VP (VBG quoting)
+            (NP
+              (NP (NNP Fox) (NNP News))
+              (PP (IN as)
+                (NP (PRP$ my) (NN source))))))))
+    (. !)))
+
+nsubj('s-2, That-1)
+root(ROOT-0, 's-2)
+nsubj(quoting-5, me-4)
+prepc_like('s-2, quoting-5)
+nn(News-7, Fox-6)
+dobj(quoting-5, News-7)
+poss(source-10, my-9)
+prep_as(News-7, source-10)
+
+(ROOT
+  (FRAG
+    (ADVP (RB Still))
+    (NP (NN lol))
+    (. !)))
+
+dep(lol-2, Still-1)
+root(ROOT-0, lol-2)
+

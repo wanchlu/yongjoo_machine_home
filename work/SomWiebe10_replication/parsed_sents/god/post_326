@@ -1,0 +1,35 @@
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBP do)
+      (NP (NNS things))
+      (VP (VB happen)
+        (PP (IN by)
+          (NP (NN chance)))
+        (ADVP (RB then))))
+    (. ?)))
+
+advmod(happen-4, Why-1)
+aux(happen-4, do-2)
+nsubj(happen-4, things-3)
+root(ROOT-0, happen-4)
+prep_by(happen-4, chance-6)
+advmod(happen-4, then-7)
+
+(ROOT
+  (SBARQ
+    (WHADVP (WRB Why))
+    (SQ (VBZ is)
+      (NP (EX there))
+      (VP (VBN randomness)
+        (PP (IN in)
+          (NP (DT the) (NN world)))))
+    (. ?)))
+
+advmod(randomness-4, Why-1)
+auxpass(randomness-4, is-2)
+expl(randomness-4, there-3)
+root(ROOT-0, randomness-4)
+det(world-7, the-6)
+prep_in(randomness-4, world-7)
+

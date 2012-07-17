@@ -1,0 +1,61 @@
+(ROOT
+  (FRAG
+    (NP (NNS guns))
+    (VP
+      (ADVP (RB just))
+      (VB help)
+      (S
+        (NP (NNS people))
+        (VP (VB kill)
+          (NP (DT each) (JJ other))))
+      (PRN (CC but)
+        (NP
+          (NP (PRP$ its)
+            (ADJP (RB not) (DT the))
+            (NNS guns))
+          (SBAR
+            (S
+              (VP (VBP fault)
+                (SBAR
+                  (S
+                    (NP (PRP it))
+                    (VP (VBZ has)
+                      (NP (DT no) (NN control))))))))
+          (PP (IN of)
+            (NP (PRP$ its) (NN self) (NNS people)))))
+      (NP (NNS choices)
+        (S
+          (VP (TO to)
+            (VP (VB use)
+              (NP
+                (NP (DT the) (NN gun))
+                (PP (IN in)
+                  (NP (NN crime)))))))))))
+
+root(ROOT-0, guns-1)
+advmod(help-3, just-2)
+dep(guns-1, help-3)
+nsubj(kill-5, people-4)
+ccomp(help-3, kill-5)
+det(other-7, each-6)
+dobj(kill-5, other-7)
+dep(guns-12, but-8)
+poss(guns-12, its-9)
+neg(the-11, not-10)
+amod(guns-12, the-11)
+dep(help-3, guns-12)
+rcmod(guns-12, fault-13)
+nsubj(has-15, it-14)
+ccomp(fault-13, has-15)
+det(control-17, no-16)
+dobj(has-15, control-17)
+poss(people-21, its-19)
+nn(people-21, self-20)
+prep_of(guns-12, people-21)
+dobj(help-3, choices-22)
+aux(use-24, to-23)
+infmod(choices-22, use-24)
+det(gun-26, the-25)
+dobj(use-24, gun-26)
+prep_in(gun-26, crime-28)
+

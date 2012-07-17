@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (ADVP (RB only))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB look) (: :)
+            (SBARQ
+              (WHADVP (WRB Where))
+              (SQ (VBP are)
+                (NP (EX there))
+                (ADJP (RBR more) (JJ shootings))))))))
+    (. ?)))
+
+nsubj(have-3, You-1)
+xsubj(look-5, You-1)
+advmod(have-3, only-2)
+root(ROOT-0, have-3)
+aux(look-5, to-4)
+xcomp(have-3, look-5)
+advmod(shootings-11, Where-7)
+cop(shootings-11, are-8)
+expl(shootings-11, there-9)
+advmod(shootings-11, more-10)
+parataxis(look-5, shootings-11)
+
+(ROOT
+  (NP (NNP A.) (NNP Gun) (NNP StoresB) (. .)))
+
+nn(StoresB-3, A.-1)
+nn(StoresB-3, Gun-2)
+root(ROOT-0, StoresB-3)
+
+(ROOT
+  (S
+    (VP (VB Gun)
+      (NP
+        (NP (JJ free) (NNS zones))
+        (PP (IN like)
+          (NP (NN schoolsOnly)))
+        (SBAR
+          (S
+            (NP (DT an) (NN idiot))
+            (VP (VBZ thinks)
+              (SBAR (IN that)
+                (S
+                  (NP (DT no) (NNS guns))
+                  (VP (VBZ equals)
+                    (NP (NN safety))))))))))))
+
+root(ROOT-0, Gun-1)
+amod(zones-3, free-2)
+dobj(Gun-1, zones-3)
+prep_like(zones-3, schoolsOnly-5)
+det(idiot-7, an-6)
+nsubj(thinks-8, idiot-7)
+rcmod(zones-3, thinks-8)
+complm(equals-12, that-9)
+det(guns-11, no-10)
+nsubj(equals-12, guns-11)
+ccomp(thinks-8, equals-12)
+dobj(equals-12, safety-13)
+

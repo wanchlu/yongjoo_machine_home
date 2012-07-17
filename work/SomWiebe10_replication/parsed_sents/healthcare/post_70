@@ -1,0 +1,143 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance) (NN option))
+    (VP (MD may)
+      (VP (VB force)
+        (NP (JJ private) (NNS insurers))
+        (S
+          (VP (TO to)
+            (VP (VB increase)
+              (NP (NNS rates)))))))
+    (. .)))
+
+nn(option-3, Public-1)
+nn(option-3, insurance-2)
+nsubj(force-5, option-3)
+aux(force-5, may-4)
+root(ROOT-0, force-5)
+amod(insurers-7, private-6)
+dobj(force-5, insurers-7)
+aux(increase-9, to-8)
+xcomp(force-5, increase-9)
+dobj(increase-9, rates-10)
+
+(ROOT
+  (FRAG ('' '')
+    (NP (DT The) (NN End))
+    (PP (IN of)
+      (NP (NNP Private) (NNP Health) (NNP Insurance) ('' '')))
+    (. .)))
+
+det(End-3, The-2)
+root(ROOT-0, End-3)
+dep(End-3, of-4)
+nn(Insurance-7, Private-5)
+nn(Insurance-7, Health-6)
+pobj(of-4, Insurance-7)
+
+(ROOT
+  (NP
+    (NP (NNP Wall) (NNP Street) (NNP Journal))
+    (PRN (-LRB- -LRB-)
+      (NP (NN editorial))
+      (-RRB- -RRB-))
+    (. .)))
+
+nn(Journal-3, Wall-1)
+nn(Journal-3, Street-2)
+root(ROOT-0, Journal-3)
+appos(Journal-3, editorial-5)
+
+(ROOT
+  (NP
+    (NP (NNP April) (CD 13) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (SBAR (IN As)
+        (S
+          (NP (NNS people))
+          (VP (VBP gravitate)
+            (PP (TO to)
+              (NP
+                (ADJP (`` ``) (JJ free) ('' '')
+                  (CC or)
+                  (RB heavily) (JJ subsidized))
+                (NN care))))))
+      (, ,)
+      (NP (DT the) (JJ inevitably) (JJ explosive) (NNS costs))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN covered)
+            (PP (IN in)
+              (NP (NN part)))
+            (PP (IN with)
+              (NP (VBN increased) (NNS outlays)
+                (S
+                  (VP (TO to)
+                    (VP
+                      (VP (VB keep)
+                        (S
+                          (NP (NNS premiums))
+                          (ADJP (RB artificially) (JJ low))))
+                      (CC or)
+                      (VP
+                        (ADVP (RB even))
+                        (VB offer)
+                        (NP (JJ extra) (NNS benefits))))))))))))
+    (. .)))
+
+root(ROOT-0, April-1)
+num(April-1, 13-2)
+num(April-1, 2009-4)
+mark(gravitate-9, As-7)
+nsubj(gravitate-9, people-8)
+advcl(covered-25, gravitate-9)
+conj_or(subsidized-16, free-12)
+amod(care-17, free-12)
+advmod(subsidized-16, heavily-15)
+conj_or(subsidized-16, heavily-15)
+amod(care-17, heavily-15)
+amod(care-17, subsidized-16)
+prep_to(gravitate-9, care-17)
+det(costs-22, the-19)
+amod(costs-22, inevitably-20)
+amod(costs-22, explosive-21)
+nsubjpass(covered-25, costs-22)
+aux(covered-25, will-23)
+auxpass(covered-25, be-24)
+dep(April-1, covered-25)
+prep_in(covered-25, part-27)
+amod(outlays-30, increased-29)
+prep_with(covered-25, outlays-30)
+aux(keep-32, to-31)
+infmod(outlays-30, keep-32)
+nsubj(low-35, premiums-33)
+advmod(low-35, artificially-34)
+xcomp(keep-32, low-35)
+advmod(offer-38, even-37)
+infmod(outlays-30, offer-38)
+conj_or(keep-32, offer-38)
+amod(benefits-40, extra-39)
+dobj(offer-38, benefits-40)
+
+(ROOT
+  (S
+    (S
+      (VP (VBG Lacking)
+        (NP (JJ such) (NN taxpayer) (NN cash))))
+    (, ,)
+    (NP (JJ private) (NN insurance) (NNS rates))
+    (VP (MD will)
+      (VP (VB escalate)))
+    (. .)))
+
+partmod(escalate-10, Lacking-1)
+amod(cash-4, such-2)
+nn(cash-4, taxpayer-3)
+dobj(Lacking-1, cash-4)
+amod(rates-8, private-6)
+nn(rates-8, insurance-7)
+nsubj(escalate-10, rates-8)
+aux(escalate-10, will-9)
+root(ROOT-0, escalate-10)
+

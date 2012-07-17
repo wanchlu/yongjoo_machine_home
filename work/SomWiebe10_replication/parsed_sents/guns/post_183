@@ -1,0 +1,74 @@
+(ROOT
+  (S
+    (NP
+      (NP (CD One))
+      (PP (IN of)
+        (NP (DT the) (NN BIGGEST))))
+    (VP (VBZ violators)
+      (PP (IN of)
+        (NP (JJ civil) (NNS rights))))
+    (. .)))
+
+nsubj(violators-5, One-1)
+det(BIGGEST-4, the-3)
+prep_of(One-1, BIGGEST-4)
+root(ROOT-0, violators-5)
+amod(rights-8, civil-7)
+prep_of(violators-5, rights-8)
+
+(ROOT
+  (FRAG (WRB Why) (. ?)))
+
+root(ROOT-0, Why-1)
+
+(ROOT
+  (NP (DT No) (NNS guns) (. .)))
+
+det(guns-2, No-1)
+root(ROOT-0, guns-2)
+
+(ROOT
+  (S
+    (NP (PRP They))
+    (VP (VBP do) (RB n't)
+      (VP (VB have)
+        (ADJP (RB too) (JJ much)
+          (S
+            (VP (TO to)
+              (VP (VB worry)
+                (PP (IN about)
+                  (NP
+                    (NP (PRP$ their) (NNS people))
+                    (VP (VBG fighting)
+                      (ADVP (RB back)))))))))))
+    (. .)))
+
+nsubj(much-6, They-1)
+aux(much-6, do-2)
+neg(much-6, n't-3)
+dep(much-6, have-4)
+advmod(much-6, too-5)
+root(ROOT-0, much-6)
+aux(worry-8, to-7)
+xcomp(much-6, worry-8)
+poss(people-11, their-10)
+prep_about(worry-8, people-11)
+partmod(people-11, fighting-12)
+advmod(fighting-12, back-13)
+
+(ROOT
+  (SQ (VBP Do)
+    (NP (PRP you))
+    (ADVP (RB really))
+    (VP (VB want)
+      (NP (DT that))
+      (ADVP (RB here)))
+    (. ?)))
+
+aux(want-4, Do-1)
+nsubj(want-4, you-2)
+advmod(want-4, really-3)
+root(ROOT-0, want-4)
+dobj(want-4, that-5)
+advmod(want-4, here-6)
+

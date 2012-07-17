@@ -1,0 +1,54 @@
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP recommend)
+      (S
+        (NP (PRP you))
+        (VP
+          (VP (VB get)
+            (ADJP (JJ sober)))
+          (CC or)
+          (VP
+            (VP (VB take)
+              (NP (DT a) (JJ happy) (NN pill)))
+            (CC and)
+            (VP (VB stop)
+              (S
+                (VP (VBG debating)
+                  (PP (IN with)
+                    (NP
+                      (NP (JJ high) (NNS schoolers))
+                      (SBAR
+                        (WHNP (WP who))
+                        (S
+                          (VP (MD can)
+                            (VP (VB form)
+                              (NP (JJR better) (NNS thoughts))
+                              (ADVP (RB then)))))))))))
+            (NP (PRP you))))))
+    (. .)))
+
+nsubj(recommend-2, I-1)
+root(ROOT-0, recommend-2)
+nsubj(sober-5, you-3)
+nsubj(take-7, you-3)
+dep(sober-5, get-4)
+ccomp(recommend-2, sober-5)
+ccomp(recommend-2, take-7)
+conj_or(sober-5, take-7)
+det(pill-10, a-8)
+amod(pill-10, happy-9)
+dobj(take-7, pill-10)
+conj_or(sober-5, stop-12)
+conj_and(take-7, stop-12)
+xcomp(stop-12, debating-13)
+amod(schoolers-16, high-15)
+prep_with(debating-13, schoolers-16)
+nsubj(form-19, schoolers-16)
+aux(form-19, can-18)
+rcmod(schoolers-16, form-19)
+amod(thoughts-21, better-20)
+dobj(form-19, thoughts-21)
+advmod(form-19, then-22)
+dobj(take-7, you-23)
+

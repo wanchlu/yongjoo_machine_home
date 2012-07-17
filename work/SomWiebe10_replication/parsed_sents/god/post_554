@@ -1,0 +1,366 @@
+(ROOT
+  (S
+    (NP (NNS People))
+    (VP (VBD used)
+      (S
+        (VP (TO to)
+          (VP (VB tell)
+            (NP (NNS stories))
+            (PP (TO to)
+              (NP (NNS children)))))))
+    (. .)))
+
+nsubj(used-2, People-1)
+xsubj(tell-4, People-1)
+root(ROOT-0, used-2)
+aux(tell-4, to-3)
+xcomp(used-2, tell-4)
+dobj(tell-4, stories-5)
+prep_to(tell-4, children-7)
+
+(ROOT
+  (S
+    (NP (DT These) (NNS stories))
+    (VP
+      (VP (VBP are)
+        (VP (VBN passed)
+          (PRT (RP on))))
+      (CC and)
+      (VP (VBD extended)))
+    (. .)))
+
+det(stories-2, These-1)
+nsubjpass(passed-4, stories-2)
+nsubjpass(extended-7, stories-2)
+auxpass(passed-4, are-3)
+root(ROOT-0, passed-4)
+prt(passed-4, on-5)
+conj_and(passed-4, extended-7)
+
+(ROOT
+  (S
+    (S
+      (NP (NNP Children) (NNS brains))
+      (VP (MD can)
+        (VP (VB be)
+          (VP (VBN formed)))))
+    (, ,) (IN so)
+    (S
+      (NP (NNS children))
+      (VP (MD will)
+        (VP (VB believe)
+          (S
+            (NP (DT those) (NNS stories))
+            (VP (TO to)
+              (VP
+                (VP (VB be)
+                  (ADJP (JJ true)))
+                (CC and)
+                (VP (VB pass)
+                  (NP (PRP them))
+                  (PRT (RP on)))))))))
+    (. .)))
+
+nn(brains-2, Children-1)
+nsubjpass(formed-5, brains-2)
+aux(formed-5, can-3)
+auxpass(formed-5, be-4)
+root(ROOT-0, formed-5)
+dep(formed-5, so-7)
+nsubj(believe-10, children-8)
+aux(believe-10, will-9)
+ccomp(formed-5, believe-10)
+det(stories-12, those-11)
+nsubj(true-15, stories-12)
+nsubj(pass-17, stories-12)
+aux(true-15, to-13)
+cop(true-15, be-14)
+xcomp(believe-10, true-15)
+xcomp(believe-10, pass-17)
+conj_and(true-15, pass-17)
+dobj(pass-17, them-18)
+prt(pass-17, on-19)
+
+(ROOT
+  (S
+    (NP (DT The) (NNS stories))
+    (VP (VBP have)
+      (VP (VBN become)
+        (NP (NN religion))))
+    (. .)))
+
+det(stories-2, The-1)
+nsubj(religion-5, stories-2)
+aux(religion-5, have-3)
+cop(religion-5, become-4)
+root(ROOT-0, religion-5)
+
+(ROOT
+  (S
+    (NP (DT That))
+    (VP (VBZ is)
+      (SBAR
+        (WHADVP (WRB why))
+        (S
+          (NP (NNS people))
+          (VP
+            (VP (VBP believe)
+              (PP (IN in)
+                (NP
+                  (NP (NNS stories))
+                  (PP (IN from)
+                    (NP (JJ bible) (, ,) (JJ koran) (NN etc))))))
+            (CC and)
+            (ADVP (RB therefore))
+            (VP (VBP think)
+              (SBAR (IN that)
+                (S
+                  (NP (EX there))
+                  (VP (VBZ is)
+                    (NP (DT a) (NN god))))))))))
+    (. .)))
+
+nsubj(is-2, That-1)
+root(ROOT-0, is-2)
+advmod(believe-5, why-3)
+nsubj(believe-5, people-4)
+nsubj(think-15, people-4)
+advcl(is-2, believe-5)
+prep_in(believe-5, stories-7)
+amod(etc-12, bible-9)
+amod(etc-12, koran-11)
+prep_from(stories-7, etc-12)
+advcl(is-2, therefore-14)
+advmod(believe-5, therefore-14)
+conj_and(believe-5, therefore-14)
+advcl(is-2, think-15)
+conj_and(believe-5, think-15)
+complm(is-18, that-16)
+expl(is-18, there-17)
+ccomp(think-15, is-18)
+det(god-20, a-19)
+nsubj(is-18, god-20)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (VP (MD could)
+      (ADVP (RB also))
+      (VP (VB believe)
+        (S
+          (VP (TO to)
+            (VP (VB live)
+              (PP (IN on)
+                (NP
+                  (NP (DT a) (NN toe) (NN nail))
+                  (PP (IN of)
+                    (NP
+                      (NP (DT a) (RB really) (JJ big) (NN giant))
+                      (-LRB- -LRB-)
+                      (PP (VBN guess)
+                        (SBAR
+                          (WHNP (WP what))
+                          (S
+                            (NP
+                              (NP (DT the) (NN score))
+                              (PP (IN on)
+                                (NP
+                                  (NP (DT a) (NN debate))
+                                  (PP (IN with)
+                                    (NP (DT that) (NN statement))))))
+                            (VP (MD would)
+                              (VP (VB be))))))
+                      (: ...))))))))))))
+
+nsubj(believe-4, We-1)
+xsubj(live-6, We-1)
+aux(believe-4, could-2)
+advmod(believe-4, also-3)
+root(ROOT-0, believe-4)
+aux(live-6, to-5)
+xcomp(believe-4, live-6)
+det(nail-10, a-8)
+nn(nail-10, toe-9)
+prep_on(live-6, nail-10)
+det(giant-15, a-12)
+advmod(giant-15, really-13)
+amod(giant-15, big-14)
+prep_of(nail-10, giant-15)
+prep(giant-15, guess-17)
+dobj(be-28, what-18)
+det(score-20, the-19)
+nsubj(be-28, score-20)
+det(debate-23, a-22)
+prep_on(score-20, debate-23)
+det(statement-26, that-25)
+prep_with(debate-23, statement-26)
+aux(be-28, would-27)
+pcomp(guess-17, be-28)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ is)
+      (NP (DT no) (NN god))
+      (SBAR (IN unless)
+        (S
+          (NP (PRP we))
+          (VP (VBP have)
+            (NP
+              (NP (JJ strong) (NNS indications))
+              (CC or)
+              (NP
+                (NP (NN proof))
+                (SBAR
+                  (WHNP (WDT which))
+                  (S
+                    (NP (PRP we))
+                    (VP (VBP do) (RB n't))))))
+            (SBAR (IN so)
+              (S
+                (NP (EX there))
+                (VP (VBZ is)
+                  (NP (DT no) (NN reason)
+                    (S
+                      (VP (TO to)
+                        (VP (VB think)
+                          (SBAR (IN that)
+                            (S
+                              (NP (DT this) (NN statement))
+                              (VP (VBZ is)
+                                (ADJP (JJ true))))))))))))))))
+    (. .)))
+
+expl(is-2, There-1)
+root(ROOT-0, is-2)
+det(god-4, no-3)
+nsubj(is-2, god-4)
+mark(have-7, unless-5)
+nsubj(have-7, we-6)
+advcl(is-2, have-7)
+amod(indications-9, strong-8)
+dobj(have-7, indications-9)
+dobj(have-7, proof-11)
+conj_or(indications-9, proof-11)
+dobj(do-14, proof-11)
+rel(do-14, which-12)
+nsubj(do-14, we-13)
+rcmod(proof-11, do-14)
+neg(do-14, n't-15)
+mark(is-18, so-16)
+expl(is-18, there-17)
+advcl(have-7, is-18)
+det(reason-20, no-19)
+nsubj(is-18, reason-20)
+aux(think-22, to-21)
+infmod(reason-20, think-22)
+complm(true-27, that-23)
+det(statement-25, this-24)
+nsubj(true-27, statement-25)
+cop(true-27, is-26)
+ccomp(think-22, true-27)
+
+(ROOT
+  (S
+    (NP
+      (NP (NNS Stories))
+      (PP (IN from)
+        (NP (DT the) (NN past))))
+    (VP (VBP are)
+      (NP
+        (NP (DT no) (NN proof))
+        (CC or)
+        (RB even)
+        (NP (NNS indications)))
+      (SBAR (IN as)
+        (S
+          (NP (PRP they))
+          (VP (VBP are)
+            (ADVP (RB mostly))
+            (VP (VBN made)
+              (PRT (RP up)))))))
+    (. .)))
+
+nsubj(proof-7, Stories-1)
+det(past-4, the-3)
+prep_from(Stories-1, past-4)
+cop(proof-7, are-5)
+det(proof-7, no-6)
+root(ROOT-0, proof-7)
+advmod(proof-7, even-9)
+conj_or(proof-7, even-9)
+dep(proof-7, indications-10)
+mark(made-15, as-11)
+nsubjpass(made-15, they-12)
+auxpass(made-15, are-13)
+advmod(made-15, mostly-14)
+advcl(proof-7, made-15)
+prt(made-15, up-16)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP believe)
+          (PP (IN in)
+            (NP (NN god))))))
+    (, ,)
+    (NP (PRP you))
+    (VP
+      (VP (VBP are)
+        (VP (VBN brainwashed)
+          (ADVP (RB pretty) (RB well))
+          (PP (IN by)
+            (NP (NNS parents)))))
+      (CC and\/or)
+      (VP (VBZ society)))
+    (. .)))
+
+mark(believe-3, If-1)
+nsubj(believe-3, you-2)
+advcl(brainwashed-9, believe-3)
+prep_in(believe-3, god-5)
+nsubjpass(brainwashed-9, you-7)
+nsubj(society-15, you-7)
+auxpass(brainwashed-9, are-8)
+root(ROOT-0, brainwashed-9)
+advmod(well-11, pretty-10)
+advmod(brainwashed-9, well-11)
+agent(brainwashed-9, parents-13)
+conj_and\/or(brainwashed-9, society-15)
+
+(ROOT
+  (S (-LRB- -LRB-)
+    (NP (TO to))
+    (VP (VBP be)
+      (VP (VBN verified)
+        (PP (IN by)
+          (NP (DT the) (NN fact)))
+        (SBAR (IN that)
+          (S
+            (NP (PRP$ your) (NN belief))
+            (VP (VBZ matches)
+              (NP
+                (NP (DT the) (NN belief))
+                (PP (IN of)
+                  (NP
+                    (NP (NNS people))
+                    (PP (IN around)
+                      (NP (PRP you)))))))))))
+    (. ...)))
+
+nsubjpass(verified-4, to-2)
+auxpass(verified-4, be-3)
+root(ROOT-0, verified-4)
+det(fact-7, the-6)
+agent(verified-4, fact-7)
+complm(matches-11, that-8)
+poss(belief-10, your-9)
+nsubj(matches-11, belief-10)
+ccomp(verified-4, matches-11)
+det(belief-13, the-12)
+dobj(matches-11, belief-13)
+prep_of(belief-13, people-15)
+prep_around(people-15, you-17)
+

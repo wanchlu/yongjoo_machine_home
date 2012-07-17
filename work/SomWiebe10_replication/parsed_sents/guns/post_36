@@ -1,0 +1,24 @@
+(ROOT
+  (S
+    (NP (JJ Assault) (NNS weapons))
+    (VP (VBP are)
+      (ADVP
+        (NP (JJ military) (NN caliber) (NNS weapons))
+        (RB not))
+      (VP (VBN suited)
+        (PP (IN for)
+          (NP (NN home) (NN protection) (NNS purposes)))))
+    (. .)))
+
+amod(weapons-2, Assault-1)
+nsubjpass(suited-8, weapons-2)
+auxpass(suited-8, are-3)
+amod(weapons-6, military-4)
+nn(weapons-6, caliber-5)
+npadvmod(not-7, weapons-6)
+neg(suited-8, not-7)
+root(ROOT-0, suited-8)
+nn(purposes-12, home-10)
+nn(purposes-12, protection-11)
+prep_for(suited-8, purposes-12)
+

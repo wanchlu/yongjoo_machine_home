@@ -1,0 +1,108 @@
+(ROOT
+  (FRAG
+    (WHNP (WDT What))
+    (. ?)))
+
+root(ROOT-0, What-1)
+
+(ROOT
+  (SQ (VBP Are)
+    (NP (EX there))
+    (ADJP (RB words)
+      (SBAR
+        (S
+          (NP (PRP I))
+          (VP (VBP 'm) (RB not)
+            (VP (VBG seeing)
+              (ADVP (RB there)))))))
+    (. ?)))
+
+cop(words-3, Are-1)
+expl(words-3, there-2)
+root(ROOT-0, words-3)
+nsubj(seeing-7, I-4)
+aux(seeing-7, 'm-5)
+neg(seeing-7, not-6)
+dep(words-3, seeing-7)
+advmod(seeing-7, there-8)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Who))
+    (SQ (VBP are)
+      (NP (PRP you))
+      (VP (VBG referring)
+        (PP (TO to))
+        (PP (IN with) (`` ``)
+          (NP (DT both))
+          ('' ''))))
+    (. ?)))
+
+dobj(referring-4, Who-1)
+aux(referring-4, are-2)
+nsubj(referring-4, you-3)
+root(ROOT-0, referring-4)
+prep(referring-4, to-5)
+prep_with(referring-4, both-8)
+
+(ROOT
+  (S (`` ``)
+    (NP (DT Both))
+    ('' '')
+    (VP
+      (ADVP (RB still))
+      (VBP retarin)
+      (NP (NN knowledge)))
+    (. ...)))
+
+nsubj(retarin-5, Both-2)
+advmod(retarin-5, still-4)
+root(ROOT-0, retarin-5)
+dobj(retarin-5, knowledge-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NNP Human))
+      (VP (VBG Being)
+        (VP (VBN created)
+          (PP (IN by)
+            (NP (`` ``)
+              (NP (DT both))
+              ('' '')
+              (SBAR
+                (S
+                  (SBAR (IN If)
+                    (S
+                      (NP (DT this))
+                      (VP (VBD were)
+                        (NP (DT a) (NN cell) (NN phone) (NN conversation)))))
+                  (NP (PRP I))
+                  (VP (MD 'd)
+                    (VP (VB say)
+                      (NP (PRP you)))))))))))
+    (VP (VBD were)
+      (VP (VBG breaking)
+        (PRT (RP up))))
+    (. .)))
+
+det(Human-2, The-1)
+nsubj(breaking-21, Human-2)
+auxpass(created-4, Being-3)
+partmod(Human-2, created-4)
+agent(created-4, both-7)
+mark(conversation-15, If-9)
+nsubj(conversation-15, this-10)
+cop(conversation-15, were-11)
+det(conversation-15, a-12)
+nn(conversation-15, cell-13)
+nn(conversation-15, phone-14)
+advcl(say-18, conversation-15)
+nsubj(say-18, I-16)
+aux(say-18, 'd-17)
+rcmod(both-7, say-18)
+dobj(say-18, you-19)
+aux(breaking-21, were-20)
+root(ROOT-0, breaking-21)
+prt(breaking-21, up-22)
+

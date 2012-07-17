@@ -1,0 +1,86 @@
+(ROOT
+  (S
+    (NP (NN Single-payer) (NNS systems))
+    (ADVP (RB typically))
+    (VP (VBP mean)
+      (NP (JJR higher) (NNS taxes)))
+    (. .)))
+
+nn(systems-2, Single-payer-1)
+nsubj(mean-4, systems-2)
+advmod(mean-4, typically-3)
+root(ROOT-0, mean-4)
+amod(taxes-6, higher-5)
+dobj(mean-4, taxes-6)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT A) (NN country))
+      (SBAR
+        (WHNP (WDT which))
+        (S
+          (VP (VBZ adopts)
+            (NP
+              (NP (DT a)
+                (ADJP (RB totally)
+                  (NP (NN tax))
+                  (JJ funded))
+                (JJ socialized) (NN form))
+              (PP (IN of)
+                (NP (NN health) (NN care))))))))
+    (VP (MD will)
+      (VP (VB have)
+        (S
+          (VP (TO to)
+            (VP (VB increase)
+              (NP (DT the) (JJ average) (NN tax) (NN rate))
+              (PP (IN by)
+                (NP (DT an) (NN amount) (NN equivalent)))
+              (PP (TO to)
+                (NP
+                  (NP (DT the) (NN cost))
+                  (PP (IN of)
+                    (S
+                      (VP
+                        (VP (VBG providing)
+                          (NP (NN health) (NN care)))
+                        (CC and)
+                        (VP (VBG administering)
+                          (NP (DT the) (NN system)))))))))))))
+    (. .)))
+
+det(country-2, A-1)
+nsubj(adopts-4, country-2)
+nsubj(have-15, country-2)
+xsubj(increase-17, country-2)
+rcmod(country-2, adopts-4)
+det(form-10, a-5)
+advmod(funded-8, totally-6)
+npadvmod(funded-8, tax-7)
+amod(form-10, funded-8)
+amod(form-10, socialized-9)
+dobj(adopts-4, form-10)
+nn(care-13, health-12)
+prep_of(form-10, care-13)
+aux(have-15, will-14)
+root(ROOT-0, have-15)
+aux(increase-17, to-16)
+xcomp(have-15, increase-17)
+det(rate-21, the-18)
+amod(rate-21, average-19)
+nn(rate-21, tax-20)
+dobj(increase-17, rate-21)
+det(equivalent-25, an-23)
+nn(equivalent-25, amount-24)
+prep_by(increase-17, equivalent-25)
+det(cost-28, the-27)
+prep_to(increase-17, cost-28)
+prepc_of(cost-28, providing-30)
+nn(care-32, health-31)
+dobj(providing-30, care-32)
+prepc_of(cost-28, administering-34)
+conj_and(providing-30, administering-34)
+det(system-36, the-35)
+dobj(administering-34, system-36)
+

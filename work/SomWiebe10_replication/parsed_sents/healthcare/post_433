@@ -1,0 +1,415 @@
+(ROOT
+  (S
+    (INTJ (UH Okay))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBD read)
+      (NP
+        (NP (DT the) (NN article))
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD linked))))))
+    (. .)))
+
+dep(read-4, Okay-1)
+nsubj(read-4, I-3)
+root(ROOT-0, read-4)
+det(article-6, the-5)
+dobj(read-4, article-6)
+dobj(linked-8, article-6)
+nsubj(linked-8, you-7)
+rcmod(article-6, linked-8)
+
+(ROOT
+  (S
+    (NP (JJ Many) (NN good))
+    (VP
+      (VP (VBZ points))
+      (, ,)
+      (CC and)
+      (VP
+        (ADJP (RB many) (JJ bogus))
+        (PP (TO to)
+          (NP (PRP$ my) (NN thinking)))))
+    (. .)))
+
+amod(good-2, Many-1)
+nsubj(points-3, good-2)
+nsubj(bogus-7, good-2)
+root(ROOT-0, points-3)
+advmod(bogus-7, many-6)
+conj_and(points-3, bogus-7)
+poss(thinking-10, my-9)
+prep_to(bogus-7, thinking-10)
+
+(ROOT
+  (S
+    (VP (VB Make)
+      (S
+        (NP (PRP$ your) (NNS insights))
+        (NP
+          (NP (DT an) (JJ important) (NN influence))
+          (PP (IN on)
+            (NP
+              (NP
+                (NP (DT the) (JJ final))
+                (PRN (-LRB- -LRB-)
+                  (CC or)
+                  (ADVP (IN at) (JJS least))
+                  (NP (DT the) (JJ first) (NN iteration))
+                  (-RRB- -RRB-)))
+              (PP (IN of)
+                (NP (DT the) (NN solution))))))))
+    (. .)))
+
+root(ROOT-0, Make-1)
+poss(insights-3, your-2)
+nsubj(influence-6, insights-3)
+det(influence-6, an-4)
+amod(influence-6, important-5)
+xcomp(Make-1, influence-6)
+det(final-9, the-8)
+prep_on(influence-6, final-9)
+dep(iteration-16, or-11)
+dep(iteration-16, at-12)
+pobj(at-12, least-13)
+det(iteration-16, the-14)
+amod(iteration-16, first-15)
+appos(final-9, iteration-16)
+det(solution-20, the-19)
+prep_of(final-9, solution-20)
+
+(ROOT
+  (SQ
+    (INTJ (RB So))
+    (, ,) (MD can)
+    (NP (PRP we))
+    (VP (VB count)
+      (PP (IN on)
+        (NP (PRP$ your)
+          (ADJP (RB no) (VBG changing))))
+      (PP (TO to)
+        (NP (DT a) (NN yes))))
+    (. ?)))
+
+dep(count-5, So-1)
+aux(count-5, can-3)
+nsubj(count-5, we-4)
+root(ROOT-0, count-5)
+poss(changing-9, your-7)
+advmod(changing-9, no-8)
+prep_on(count-5, changing-9)
+det(yes-12, a-11)
+prep_to(count-5, yes-12)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (DT this))
+            (VP (VBZ is)
+              (NP
+                (NP
+                  (NP (DT the) (JJ central) (NN issue))
+                  (PP (IN of)
+                    (NP (DT the) (NN decade))))
+                (, ,)
+                (CC and)
+                (NP (DT the)
+                  (ADJP (RBS most) (JJ important))
+                  (NN conversation))))))))
+    (NP (PRP we))
+    (VP (MD can)
+      (VP (VB have)))
+    (. .)))
+
+nsubj(think-2, I-1)
+dep(have-19, think-2)
+nsubj(issue-7, this-3)
+cop(issue-7, is-4)
+det(issue-7, the-5)
+amod(issue-7, central-6)
+ccomp(think-2, issue-7)
+det(decade-10, the-9)
+prep_of(issue-7, decade-10)
+det(conversation-16, the-13)
+advmod(important-15, most-14)
+amod(conversation-16, important-15)
+ccomp(think-2, conversation-16)
+conj_and(issue-7, conversation-16)
+nsubj(have-19, we-17)
+aux(have-19, can-18)
+root(ROOT-0, have-19)
+
+(ROOT
+  (S
+    (SBAR (IN As)
+      (S
+        (NP (DT the) (NN baby))
+        (VP (VBP boomer)
+          (NP (JJ demographic) (NN bulge) (NNS moves))
+          (PP (IN into)
+            (NP
+              (NP (DT the) (JJ medicare) (NN end))
+              (PP (IN of)
+                (NP
+                  (NP (NN life))
+                  (NP (JJ medical) (NNS issues) (NN era)))))))))
+    (, ,)
+    (NP (NN health) (NN care))
+    (VP (VBZ represents)
+      (NP
+        (NP (DT the) (JJS biggest) (NN opportunity))
+        (CC and)
+        (NP
+          (NP (NN challenge))
+          (PP (IN of)
+            (NP (PRP$ our) (NN generation))))))
+    (. .)))
+
+mark(boomer-4, As-1)
+det(baby-3, the-2)
+nsubj(boomer-4, baby-3)
+advcl(represents-20, boomer-4)
+amod(moves-7, demographic-5)
+nn(moves-7, bulge-6)
+dobj(boomer-4, moves-7)
+det(end-11, the-9)
+amod(end-11, medicare-10)
+prep_into(boomer-4, end-11)
+prep_of(end-11, life-13)
+amod(era-16, medical-14)
+nn(era-16, issues-15)
+dep(life-13, era-16)
+nn(care-19, health-18)
+nsubj(represents-20, care-19)
+root(ROOT-0, represents-20)
+det(opportunity-23, the-21)
+amod(opportunity-23, biggest-22)
+dobj(represents-20, opportunity-23)
+dobj(represents-20, challenge-25)
+conj_and(opportunity-23, challenge-25)
+poss(generation-28, our-27)
+prep_of(challenge-25, generation-28)
+
+(ROOT
+  (S
+    (SBAR (RB Just) (IN as)
+      (S
+        (NP (NN transportation)
+          (CC and)
+          (NNS computers))
+        (VP (VBD dominated)
+          (NP
+            (NP (DT the) (NNS economies))
+            (PP (IN of)
+              (NP (DT the) (JJ last) (NN century)))))))
+    (, ,)
+    (NP (NN health) (NN care))
+    (VP (MD will)
+      (VP (VB be)
+        (NP
+          (NP (DT the) (JJ economic) (NN engine))
+          (PP (IN of)
+            (NP (DT this) (NN one))))))
+    (. .)))
+
+advmod(dominated-6, Just-1)
+dep(dominated-6, as-2)
+nsubj(dominated-6, transportation-3)
+conj_and(transportation-3, computers-5)
+nsubj(dominated-6, computers-5)
+advcl(engine-20, dominated-6)
+det(economies-8, the-7)
+dobj(dominated-6, economies-8)
+det(century-12, the-10)
+amod(century-12, last-11)
+prep_of(economies-8, century-12)
+nn(care-15, health-14)
+nsubj(engine-20, care-15)
+aux(engine-20, will-16)
+cop(engine-20, be-17)
+det(engine-20, the-18)
+amod(engine-20, economic-19)
+root(ROOT-0, engine-20)
+det(one-23, this-22)
+prep_of(engine-20, one-23)
+
+(ROOT
+  (S
+    (S
+      (NP (NNS Fortunes))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN made)))))
+    (, ,)
+    (S
+      (NP (NN governance))
+      (VP (MD will)
+        (VP (VB be)
+          (VP (VBN adjusted)))))
+    (CC and)
+    (S
+      (PP (IN at)
+        (NP
+          (NP (DT the) (NN end))
+          (PP (IN of)
+            (NP (DT the) (NN day)))))
+      (NP (PRP$ our) (JJ national) (NN vision))
+      (VP (MD will)
+        (VP (VB be)
+          (S
+            (VP (TO to)
+              (VP (VB live)
+                (ADVP (RB forever))))))))
+    (. .)))
+
+nsubjpass(made-4, Fortunes-1)
+aux(made-4, will-2)
+auxpass(made-4, be-3)
+root(ROOT-0, made-4)
+nsubjpass(adjusted-9, governance-6)
+aux(adjusted-9, will-7)
+auxpass(adjusted-9, be-8)
+conj_and(made-4, adjusted-9)
+det(end-13, the-12)
+prep_at(be-21, end-13)
+det(day-16, the-15)
+prep_of(end-13, day-16)
+poss(vision-19, our-17)
+amod(vision-19, national-18)
+nsubj(be-21, vision-19)
+aux(be-21, will-20)
+conj_and(made-4, be-21)
+aux(live-23, to-22)
+xcomp(be-21, live-23)
+advmod(live-23, forever-24)
+
+(ROOT
+  (S (CC And)
+    (NP (PRP we))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (DT the) (JJ first) (NN generation)
+          (S
+            (VP (TO to)
+              (VP (VB achieve)
+                (NP (DT that) (NN goal))))))))
+    (. .)))
+
+cc(generation-7, And-1)
+nsubj(generation-7, we-2)
+aux(generation-7, will-3)
+cop(generation-7, be-4)
+det(generation-7, the-5)
+amod(generation-7, first-6)
+root(ROOT-0, generation-7)
+aux(achieve-9, to-8)
+infmod(generation-7, achieve-9)
+det(goal-11, that-10)
+dobj(achieve-9, goal-11)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP urge)
+      (SBAR
+        (S
+          (NP (PDT all) (DT those))
+          (VP (VBD opposed)
+            (PP (TO to)
+              (NP (DT the) (JJ current)))
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP they))
+                (VP (VBP believe)
+                  (S
+                    (VP (TO to)
+                      (VP (VB be)
+                        (NP (DT the) (JJ proposed) (JJ new) (NN paradigm)
+                          (S
+                            (VP (TO to)
+                              (VP (VB flip)
+                                (NP (PRP$ their) (NN thought) (NN process))
+                                (PP (TO to)
+                                  (NP
+                                    (NP (DT the)
+                                      (ADJP (JJ contrarian))
+                                      (NN point))
+                                    (PP (IN of)
+                                      (NP (NN view)))))))))))))))))))
+    (. .)))
+
+nsubj(urge-2, I-1)
+root(ROOT-0, urge-2)
+predet(those-4, all-3)
+nsubj(opposed-5, those-4)
+ccomp(urge-2, opposed-5)
+det(current-8, the-7)
+prep_to(opposed-5, current-8)
+dep(believe-11, what-9)
+nsubj(believe-11, they-10)
+xsubj(paradigm-17, they-10)
+ccomp(opposed-5, believe-11)
+aux(paradigm-17, to-12)
+cop(paradigm-17, be-13)
+det(paradigm-17, the-14)
+amod(paradigm-17, proposed-15)
+amod(paradigm-17, new-16)
+xcomp(believe-11, paradigm-17)
+aux(flip-19, to-18)
+infmod(paradigm-17, flip-19)
+poss(process-22, their-20)
+nn(process-22, thought-21)
+dobj(flip-19, process-22)
+det(point-26, the-24)
+amod(point-26, contrarian-25)
+prep_to(flip-19, point-26)
+prep_of(point-26, view-28)
+
+(ROOT
+  (S
+    (VP (VBG Bring)
+      (NP (JJ new) (, ,) (JJ outrageous) (NNS ideas))
+      (PP (TO to)
+        (NP (DT the) (NN table))))
+    (. .)))
+
+root(ROOT-0, Bring-1)
+amod(ideas-5, new-2)
+amod(ideas-5, outrageous-4)
+dobj(Bring-1, ideas-5)
+det(table-8, the-7)
+prep_to(Bring-1, table-8)
+
+(ROOT
+  (S
+    (S
+      (NP (DT This))
+      (VP (VBZ is)
+        (VP (VBG going)
+          (S
+            (VP (TO to)
+              (VP (VB happen)))))))
+    (, ,)
+    (NP (DT that))
+    (VP (VBZ 's)
+      (NP (DT a) (JJ given)))
+    (. .)))
+
+nsubj(going-3, This-1)
+xsubj(happen-5, This-1)
+aux(going-3, is-2)
+ccomp(given-10, going-3)
+aux(happen-5, to-4)
+xcomp(going-3, happen-5)
+nsubj(given-10, that-7)
+cop(given-10, 's-8)
+det(given-10, a-9)
+root(ROOT-0, given-10)
+

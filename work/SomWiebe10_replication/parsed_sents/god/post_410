@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (SBAR (RB so) (IN if)
+      (S
+        (NP (FW i))
+        (VP (VBD was)
+          (NP (JJ french) (NN irish)))))
+    (VP (VBZ does)
+      (SBAR (IN that)
+        (S
+          (NP (JJ mean) (NNS i))
+          (VP (MD would)
+            (VP (VB have)
+              (S
+                (VP (TO to)
+                  (VP
+                    (VP (VB half-believe)
+                      (PP (IN in)
+                        (NP (NN god))))
+                    (, ,)
+                    (CC or)
+                    (VP (VB believe)
+                      (PP (IN in)
+                        (NP (DT a) (JJ different) (NN god))))))))))))
+    (. ?)))
+
+advmod(irish-6, so-1)
+dep(irish-6, if-2)
+nsubj(irish-6, i-3)
+cop(irish-6, was-4)
+amod(irish-6, french-5)
+advcl(does-7, irish-6)
+csubj(does-7, irish-6)
+root(ROOT-0, does-7)
+complm(have-12, that-8)
+amod(i-10, mean-9)
+nsubj(have-12, i-10)
+xsubj(half-believe-14, i-10)
+aux(have-12, would-11)
+ccomp(does-7, have-12)
+aux(half-believe-14, to-13)
+xcomp(have-12, half-believe-14)
+prep_in(half-believe-14, god-16)
+xcomp(have-12, believe-19)
+conj_or(half-believe-14, believe-19)
+det(god-23, a-21)
+amod(god-23, different-22)
+prep_in(believe-19, god-23)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP feel)
+          (VP (VBN compelled)
+            (S
+              (VP (TO to)
+                (VP (VB believe)
+                  (NP
+                    (NP (PRP$ your) (NNS parents))
+                    (SBAR
+                      (WHNP (WDT that))
+                      (S
+                        (VP (VBZ does) (RB n't)
+                          (VP (VB mean)))))))))))))
+    (NP (PRP they))
+    (VP (VBP are)
+      (ADJP (JJ right)))
+    (. .)))
+
+mark(feel-3, If-1)
+nsubj(feel-3, you-2)
+xsubj(believe-6, you-2)
+advcl(right-15, feel-3)
+dep(feel-3, compelled-4)
+aux(believe-6, to-5)
+xcomp(compelled-4, believe-6)
+poss(parents-8, your-7)
+dobj(believe-6, parents-8)
+nsubj(mean-12, parents-8)
+aux(mean-12, does-10)
+neg(mean-12, n't-11)
+rcmod(parents-8, mean-12)
+nsubj(right-15, they-13)
+cop(right-15, are-14)
+root(ROOT-0, right-15)
+

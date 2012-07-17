@@ -1,0 +1,169 @@
+(ROOT
+  (S
+    (NP
+      (ADJP
+        (ADJP
+          (QP (CD 1,145) (NNS times)))
+        (NP (DT a) (NN day)))
+      (NNS handguns))
+    (VP (VBP are)
+      (VP (VBN used)
+        (PP (IN against)
+          (NP (NNS robbers)))))
+    (. .)))
+
+number(times-2, 1,145-1)
+amod(handguns-5, times-2)
+det(day-4, a-3)
+tmod(times-2, day-4)
+nsubjpass(used-7, handguns-5)
+auxpass(used-7, are-6)
+root(ROOT-0, used-7)
+prep_against(used-7, robbers-9)
+
+(ROOT
+  (S
+    (NP
+      (ADJP
+        (ADJP
+          (QP (CD 416) (NNS times)))
+        (NP (DT each) (NN day)))
+      (NNS women))
+    (VP (VBP use)
+      (NP (PRP$ their) (NNS handguns))
+      (S
+        (VP (TO to)
+          (VP (VB protect)
+            (NP (PRP themselves))
+            (PP (IN from)
+              (NP (NNS rapists)))))))
+    (. .)))
+
+number(times-2, 416-1)
+amod(women-5, times-2)
+det(day-4, each-3)
+tmod(times-2, day-4)
+nsubj(use-6, women-5)
+root(ROOT-0, use-6)
+poss(handguns-8, their-7)
+dobj(use-6, handguns-8)
+aux(protect-10, to-9)
+xcomp(use-6, protect-10)
+dobj(protect-10, themselves-11)
+prep_from(protect-10, rapists-13)
+
+(ROOT
+  (S
+    (ADVP (RB Overall))
+    (, ,)
+    (NP
+      (NP (DT a) (NN gun))
+      (PP (IN in)
+        (NP (DT the) (NN home))))
+    (VP (VBZ is)
+      (ADJP
+        (ADJP
+          (NP (CD 216) (NNS times))
+          (RBR more) (JJ likely))
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN used)
+                (PP (IN in)
+                  (NP (NN self) (NN defense)))))))
+        (SBAR (IN than)
+          (S
+            (VP (TO to)
+              (VP (VB cause)
+                (NP
+                  (NP (DT the) (NN death))
+                  (PP (IN of)
+                    (NP (DT an) (JJ innocent) (NN victim))))))))))
+    (. .)))
+
+advmod(likely-12, Overall-1)
+det(gun-4, a-3)
+nsubj(likely-12, gun-4)
+det(home-7, the-6)
+prep_in(gun-4, home-7)
+cop(likely-12, is-8)
+num(times-10, 216-9)
+dep(likely-12, times-10)
+advmod(likely-12, more-11)
+root(ROOT-0, likely-12)
+aux(used-15, to-13)
+auxpass(used-15, be-14)
+xcomp(likely-12, used-15)
+nn(defense-18, self-17)
+prep_in(used-15, defense-18)
+mark(cause-21, than-19)
+aux(cause-21, to-20)
+dep(likely-12, cause-21)
+det(death-23, the-22)
+dobj(cause-21, death-23)
+det(victim-27, an-25)
+amod(victim-27, innocent-26)
+prep_of(death-23, victim-27)
+
+(ROOT
+  (S (CC And)
+    (SBAR (RB even) (IN if)
+      (S
+        (NP (PRP you))
+        (VP (VBP do) (RB n't)
+          (VP (VB own)
+            (NP (DT a) (NN gun))
+            (, ,)
+            (S
+              (VP (VBG preserving)
+                (NP
+                  (NP (DT the) (NN right))
+                  (PP (IN of)
+                    (NP (PRP$ your) (NNS neighbors)
+                      (S
+                        (VP (TO to)
+                          (VP (VB own)))))))))))))
+    (NP (PRP them))
+    (VP (VBZ is)
+      (NP
+        (NP (CD one))
+        (PP (IN of)
+          (NP (DT the) (JJS best) (NNS ways)))
+        (S
+          (VP (TO to)
+            (VP (VB keep)
+              (NP (NNS criminals))
+              (PRT (RP out))
+              (PP (IN of)
+                (NP (PRP$ your) (NN neighborhood))))))))
+    (. .)))
+
+cc(one-21, And-1)
+advmod(own-7, even-2)
+dep(own-7, if-3)
+nsubj(own-7, you-4)
+aux(own-7, do-5)
+neg(own-7, n't-6)
+dep(one-21, own-7)
+det(gun-9, a-8)
+dobj(own-7, gun-9)
+partmod(own-7, preserving-11)
+xcomp(own-7, preserving-11)
+det(right-13, the-12)
+dobj(preserving-11, right-13)
+poss(neighbors-16, your-15)
+prep_of(right-13, neighbors-16)
+aux(own-18, to-17)
+infmod(neighbors-16, own-18)
+nsubj(one-21, them-19)
+cop(one-21, is-20)
+root(ROOT-0, one-21)
+det(ways-25, the-23)
+amod(ways-25, best-24)
+prep_of(one-21, ways-25)
+aux(keep-27, to-26)
+infmod(one-21, keep-27)
+dobj(keep-27, criminals-28)
+poss(neighborhood-32, your-31)
+prep_out_of(keep-27, neighborhood-32)
+

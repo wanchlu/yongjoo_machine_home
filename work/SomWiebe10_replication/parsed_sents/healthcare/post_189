@@ -1,0 +1,130 @@
+(ROOT
+  (S
+    (NP (NN Competition))
+    (VP (VBZ causes)
+      (NP
+        (NP (DT the) (JJ wasteful) (NN duplication))
+        (PP (IN of)
+          (NP
+            (NP (JJ expensive) (NNS forms))
+            (PP (IN of)
+              (S
+                (VP (VBG care) ('' '')
+                  (NP (NNP Single-Payer) (NNP FAQ))
+                  ('' ''))))))))
+    (. .)))
+
+nsubj(causes-2, Competition-1)
+root(ROOT-0, causes-2)
+det(duplication-5, the-3)
+amod(duplication-5, wasteful-4)
+dobj(causes-2, duplication-5)
+amod(forms-8, expensive-7)
+prep_of(duplication-5, forms-8)
+prepc_of(forms-8, care-10)
+nn(FAQ-13, Single-Payer-12)
+dobj(care-10, FAQ-13)
+
+(ROOT
+  (NP
+    (NP (NNP Physicians))
+    (PP (IN for)
+      (NP (DT a) (NNP National) (NNP Health) (NN Program)))
+    (. .)))
+
+root(ROOT-0, Physicians-1)
+det(Program-6, a-3)
+nn(Program-6, National-4)
+nn(Program-6, Health-5)
+prep_for(Physicians-1, Program-6)
+
+(ROOT
+  (S
+    (VP (VB Retrieved)
+      (NP
+        (NP (NNP May) (CD 30th) (, ,) (CD 2008))
+        (`` ``)
+        (SBAR
+          (WHADVP (WRB When))
+          (S (, ,)
+            (PP (IN for)
+              (NP (NN example)))
+            (, ,)
+            (NP (NNS hospitals))
+            (VP (VBP compete)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (ADVP (RB often))
+                  (VP (VB duplicate)
+                    (NP (JJ expensive) (NN equipment))
+                    (SBAR (IN in) (NN order)
+                      (S
+                        (VP (TO to)
+                          (VP (VB corner)
+                            (NP
+                              (NP (JJR more))
+                              (PP (IN of)
+                                (NP
+                                  (NP (DT the) (NN market))
+                                  (PP (IN for)
+                                    (NP (JJ lucrative) (JJ procedure-oriented) (NN care))))))))))))))))))
+    (. .)))
+
+root(ROOT-0, Retrieved-1)
+dobj(Retrieved-1, May-2)
+num(May-2, 30th-3)
+num(May-2, 2008-5)
+advmod(compete-13, When-7)
+prep_for(compete-13, example-10)
+nsubj(compete-13, hospitals-12)
+dep(May-2, compete-13)
+nsubj(duplicate-16, they-14)
+advmod(duplicate-16, often-15)
+ccomp(compete-13, duplicate-16)
+amod(equipment-18, expensive-17)
+dobj(duplicate-16, equipment-18)
+mark(corner-22, in-19)
+dep(corner-22, order-20)
+aux(corner-22, to-21)
+purpcl(duplicate-16, corner-22)
+dobj(corner-22, more-23)
+det(market-26, the-25)
+prep_of(more-23, market-26)
+amod(care-30, lucrative-28)
+amod(care-30, procedure-oriented-29)
+prep_for(market-26, care-30)
+
+(ROOT
+  (S
+    (NP (DT This))
+    (VP
+      (VP (VBZ drives)
+        (PRT (RP up))
+        (NP
+          (NP (JJ overall) (JJ medical) (NNS costs))
+          (SBAR
+            (S
+              (VP (TO to)
+                (VP (VB pay)
+                  (PP (IN for)
+                    (NP (DT the) (NN equipment)))))))))
+      (CC and)
+      (VP (VBZ encourages)
+        (NP (NN overtreatment))))
+    (. .)))
+
+nsubj(drives-2, This-1)
+nsubj(encourages-13, This-1)
+root(ROOT-0, drives-2)
+prt(drives-2, up-3)
+amod(costs-6, overall-4)
+amod(costs-6, medical-5)
+dobj(drives-2, costs-6)
+aux(pay-8, to-7)
+infmod(costs-6, pay-8)
+det(equipment-11, the-10)
+prep_for(pay-8, equipment-11)
+conj_and(drives-2, encourages-13)
+dobj(encourages-13, overtreatment-14)
+

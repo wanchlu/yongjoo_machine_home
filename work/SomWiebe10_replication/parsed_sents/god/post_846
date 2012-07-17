@@ -1,0 +1,65 @@
+(ROOT
+  (S (IN So)
+    (ADVP (RB much) (RB around))
+    (NP (PRP us))
+    (VP (VBZ is)
+      (NP (NN proof))
+      (SBAR (IN that)
+        (S
+          (NP (EX there))
+          (VP (VBZ is)
+            (NP (DT no) (NN god))))))
+    (. .)))
+
+dep(proof-6, So-1)
+advmod(around-3, much-2)
+advmod(proof-6, around-3)
+nsubj(proof-6, us-4)
+cop(proof-6, is-5)
+root(ROOT-0, proof-6)
+complm(is-9, that-7)
+expl(is-9, there-8)
+ccomp(proof-6, is-9)
+det(god-11, no-10)
+nsubj(is-9, god-11)
+
+(ROOT
+  (SBARQ
+    (SBAR (IN If)
+      (S
+        (NP (EX there))
+        (VP (VBD was)
+          (NP (DT a) (NN god)))))
+    (, ,)
+    (WHADVP (WRB why))
+    (SQ (MD would)
+      (NP (NN hitler))
+      (VP (VB have)
+        (VP (VBN killed)
+          (NP (PDT all) (DT the) (NNS jews)))))
+    (. ?)))
+
+mark(was-3, If-1)
+expl(was-3, there-2)
+advcl(killed-11, was-3)
+det(god-5, a-4)
+nsubj(was-3, god-5)
+advmod(killed-11, why-7)
+aux(killed-11, would-8)
+nsubj(killed-11, hitler-9)
+aux(killed-11, have-10)
+root(ROOT-0, killed-11)
+predet(jews-14, all-12)
+det(jews-14, the-13)
+dobj(killed-11, jews-14)
+
+(ROOT
+  (NP (NNP AND) (NNP WHY) (NNP DID) (NNP MY) (NNP DOG) (NNP DIE) (. !)))
+
+nn(DIE-6, AND-1)
+nn(DIE-6, WHY-2)
+nn(DIE-6, DID-3)
+nn(DIE-6, MY-4)
+nn(DIE-6, DOG-5)
+root(ROOT-0, DIE-6)
+

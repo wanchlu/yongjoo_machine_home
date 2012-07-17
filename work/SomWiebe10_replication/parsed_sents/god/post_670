@@ -1,0 +1,64 @@
+(ROOT
+  (S
+    (NP (NNS Sources))
+    (VP (VBP please))
+    (. .)))
+
+nsubj(please-2, Sources-1)
+root(ROOT-0, please-2)
+
+(ROOT
+  (S
+    (S
+      (NP (PRP I))
+      (VP (VBP fail)
+        (S
+          (VP (TO to)
+            (VP (VB see)
+              (NP (NN anything))
+              (PP (IN in)
+                (NP
+                  (NP (DT this) (JJ semi) (NN literate) (NN rant))
+                  (SBAR
+                    (WHNP (WDT that))
+                    (S
+                      (VP (MD would)
+                        (VP (VB convince)
+                          (NP (PRP me)))))))))))))
+    (NP (PRP you))
+    (VP (VBP have)
+      (NP
+        (NP (DT any) (NN idea))
+        (SBAR
+          (WHNP (WP what))
+          (S
+            (NP (PRP you))
+            (VP (VBP are)
+              (VP (VBG talking) (IN about)))))))
+    (. .)))
+
+nsubj(fail-2, I-1)
+xsubj(see-4, I-1)
+dep(have-16, fail-2)
+aux(see-4, to-3)
+xcomp(fail-2, see-4)
+dobj(see-4, anything-5)
+det(rant-10, this-7)
+amod(rant-10, semi-8)
+nn(rant-10, literate-9)
+prep_in(see-4, rant-10)
+nsubj(convince-13, rant-10)
+aux(convince-13, would-12)
+rcmod(rant-10, convince-13)
+dobj(convince-13, me-14)
+nsubj(have-16, you-15)
+root(ROOT-0, have-16)
+det(idea-18, any-17)
+dobj(have-16, idea-18)
+dobj(talking-22, idea-18)
+rel(talking-22, what-19)
+nsubj(talking-22, you-20)
+aux(talking-22, are-21)
+rcmod(idea-18, talking-22)
+dep(talking-22, about-23)
+

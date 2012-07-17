@@ -1,0 +1,43 @@
+(ROOT
+  (S
+    (LST (LS 1) (-RRB- -RRB-))
+    (NP (WDT which))
+    (VP (VBZ god))
+    (. ?)))
+
+dep(god-4, 1-1)
+nsubj(god-4, which-3)
+root(ROOT-0, god-4)
+
+(ROOT
+  (S
+    (LST (LS 2))
+    (-RRB- -RRB-)
+    (VP
+      (ADVP (WRB how))
+      (VBZ is)
+      (ADJP
+        (NP (PRP it))
+        (JJ worth)
+        (SBAR
+          (NP (PRP it))
+          (IN if)
+          (S
+            (NP (PRP you))
+            (VP (VBZ worship)
+              (NP (DT the) (JJ wrong) (NN god)))))))
+    (. ?)))
+
+dep(worth-6, 2-1)
+advmod(worth-6, how-3)
+cop(worth-6, is-4)
+npadvmod(worth-6, it-5)
+root(ROOT-0, worth-6)
+dep(worship-10, it-7)
+dep(worship-10, if-8)
+nsubj(worship-10, you-9)
+ccomp(worth-6, worship-10)
+det(god-13, the-11)
+amod(god-13, wrong-12)
+dobj(worship-10, god-13)
+

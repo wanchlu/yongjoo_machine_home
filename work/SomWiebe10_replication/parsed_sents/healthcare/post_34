@@ -1,0 +1,302 @@
+(ROOT
+  (S
+    (NP (NNP US))
+    (VP (VBZ has)
+      (NP
+        (NP (VBG existing) (NNS examples))
+        (PP (IN of)
+          (NP
+            (NP (JJ public) (NN insurance))
+            (, ,)
+            (NP (JJ public-private) (NNS hybrids))))))
+    (. .)))
+
+nsubj(has-2, US-1)
+root(ROOT-0, has-2)
+amod(examples-4, existing-3)
+dobj(has-2, examples-4)
+amod(insurance-7, public-6)
+prep_of(examples-4, insurance-7)
+amod(hybrids-10, public-private-9)
+appos(insurance-7, hybrids-10)
+
+(ROOT
+  (NP (NNP Tom) (NNP Daschle) (. .)))
+
+nn(Daschle-2, Tom-1)
+root(ROOT-0, Daschle-2)
+
+(ROOT
+  (S ('' '')
+    (NP (DT A) (JJ public) (NN plan))
+    (VP (MD will)
+      (VP
+        (VP (VB reduce)
+          (NP (NNS costs)))
+        (CC and)
+        (VP (VB improve)
+          (NP (NN access) ('' '')))))
+    (. .)))
+
+det(plan-4, A-2)
+amod(plan-4, public-3)
+nsubj(reduce-6, plan-4)
+nsubj(improve-9, plan-4)
+aux(reduce-6, will-5)
+root(ROOT-0, reduce-6)
+dobj(reduce-6, costs-7)
+conj_and(reduce-6, improve-9)
+dobj(improve-9, access-10)
+
+(ROOT
+  (S
+    (VP (VB Newsweek))
+    (. .)))
+
+root(ROOT-0, Newsweek-1)
+
+(ROOT
+  (NP
+    (NP (NNP May) (CD 2) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (NP
+        (NP (DT A) (VBG growing) (NN number))
+        (PP (IN of)
+          (NP (NNPS Americans))))
+      (VP
+        (ADVP (RB already))
+        (VBP get)
+        (NP (PRP$ their) (NN health) (NN care))
+        (PP (IN from)
+          (NP (DT a) (JJ public) (NN plan)))))
+    (, ,)
+    (PP (VBG including)
+      (NP
+        (NP (NNP Medicare) (, ,) (NNP Medicaid))
+        (CC and)
+        (NP
+          (NP
+            (NP (DT the) (NNP Children) (POS 's))
+            (NNP Health) (NNP Insurance) (NNP Plan))
+          (PRN (-LRB- -LRB-)
+            (S
+              (NP
+                (NP (DT the) (NNP Department))
+                (PP (IN of)
+                  (NP
+                    (NP (NNP Veterans) (NNPS Affairs))
+                    (, ,)
+                    (PP (IN of)
+                      (NP (NN course)))
+                    (, ,))))
+              (ADVP (RB also))
+              (VP (VBZ provides)
+                (NP (NNS benefits))))
+            (-RRB- -RRB-)))))
+    (. .)))
+
+root(ROOT-0, May-1)
+num(May-1, 2-2)
+num(May-1, 2009-4)
+det(number-9, A-7)
+amod(number-9, growing-8)
+nsubj(get-13, number-9)
+prep_of(number-9, Americans-11)
+advmod(get-13, already-12)
+dep(May-1, get-13)
+poss(care-16, their-14)
+nn(care-16, health-15)
+dobj(get-13, care-16)
+det(plan-20, a-18)
+amod(plan-20, public-19)
+prep_from(get-13, plan-20)
+nn(Medicaid-25, Medicare-23)
+prep_including(May-1, Medicaid-25)
+det(Children-28, the-27)
+poss(Plan-32, Children-28)
+nn(Plan-32, Health-30)
+nn(Plan-32, Insurance-31)
+prep_including(May-1, Plan-32)
+conj_and(Medicaid-25, Plan-32)
+det(Department-35, the-34)
+nsubj(provides-44, Department-35)
+nn(Affairs-38, Veterans-37)
+prep_of(Department-35, Affairs-38)
+prep_of(Affairs-38, course-41)
+advmod(provides-44, also-43)
+dep(Plan-32, provides-44)
+dobj(provides-44, benefits-45)
+
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBP are)
+      (NP (JJ public-private) (NNS hybrids))
+      (ADVP (RB as) (RB well))
+      (, ,)
+      (PP (IN like)
+        (NP
+          (NP (NN state) (NN employee) (NN health) (NNS plans))
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (DT the) (NN government))
+              (VP (VBZ assumes)
+                (SBAR
+                  (S
+                    (NP (DT the) (NN risk)
+                      (CC and)
+                      (NN insurance) (NNS companies))
+                    (VP (VBP are)
+                      (ADJP (JJ responsible)
+                        (PP (IN for)
+                          (NP (DT the) (NN management)))))))))))))
+    (. .)))
+
+expl(are-2, There-1)
+root(ROOT-0, are-2)
+amod(hybrids-4, public-private-3)
+nsubj(are-2, hybrids-4)
+advmod(well-6, as-5)
+mwe(well-6, as-5)
+advmod(are-2, well-6)
+nn(plans-12, state-9)
+nn(plans-12, employee-10)
+nn(plans-12, health-11)
+prep_like(are-2, plans-12)
+advmod(assumes-16, where-13)
+det(government-15, the-14)
+nsubj(assumes-16, government-15)
+rcmod(plans-12, assumes-16)
+det(companies-21, the-17)
+nn(companies-21, risk-18)
+conj_and(risk-18, insurance-20)
+nn(companies-21, insurance-20)
+nsubj(responsible-23, companies-21)
+cop(responsible-23, are-22)
+ccomp(assumes-16, responsible-23)
+det(management-26, the-25)
+prep_for(responsible-23, management-26)
+
+(ROOT
+  (S
+    (NP
+      (NP (DT The) (NN use))
+      (PP (IN of)
+        (NP
+          (NP (DT a) (JJ public) (NN plan))
+          (SBAR (IN as)
+            (S
+              (NP (PRP it))
+              (VP (VBZ is)
+                (ADVP (RB currently))
+                (VP (VBN proposed))))))))
+    (VP (VBZ is)
+      (ADVP (RB simply))
+      (NP
+        (NP (DT an) (NN extension))
+        (PP (IN of)
+          (SBAR
+            (WHNP (WP what))
+            (S
+              (NP (PRP we))
+              (VP (VBP have)
+                (ADVP (RB already))
+                (VP (VBN done)
+                  (PP (IN in)
+                    (NP (JJ public) (NN policy)))
+                  (PP (IN during)
+                    (NP (DT the) (JJ last) (CD 50) (NNS years))))))))))
+    (. .)))
+
+det(use-2, The-1)
+nsubj(extension-15, use-2)
+det(plan-6, a-4)
+amod(plan-6, public-5)
+prep_of(use-2, plan-6)
+mark(proposed-11, as-7)
+nsubjpass(proposed-11, it-8)
+auxpass(proposed-11, is-9)
+advmod(proposed-11, currently-10)
+dep(plan-6, proposed-11)
+cop(extension-15, is-12)
+advmod(extension-15, simply-13)
+det(extension-15, an-14)
+root(ROOT-0, extension-15)
+dobj(done-21, what-17)
+nsubj(done-21, we-18)
+aux(done-21, have-19)
+advmod(done-21, already-20)
+prepc_of(extension-15, done-21)
+amod(policy-24, public-23)
+prep_in(done-21, policy-24)
+det(years-29, the-26)
+amod(years-29, last-27)
+num(years-29, 50-28)
+prep_during(done-21, years-29)
+
+(ROOT
+  (S
+    (NP (PRP We))
+    (ADVP (RB just))
+    (VP (VBP have)
+      (S
+        (VP (TO to)
+          (VP (VB circle)
+            (NP (DT the) (NNS bases))))))
+    (. .)))
+
+nsubj(have-3, We-1)
+xsubj(circle-5, We-1)
+advmod(have-3, just-2)
+root(ROOT-0, have-3)
+aux(circle-5, to-4)
+xcomp(have-3, circle-5)
+det(bases-7, the-6)
+dobj(circle-5, bases-7)
+
+(ROOT
+  (S ('' '')
+    (NP (DT This))
+    (VP (MD should)
+      (VP (VB dampen)
+        (NP
+          (NP
+            (NP (NNS concerns))
+            (SBAR (IN that)
+              (S
+                (NP (DT a) (JJ public) (NN plan))
+                (VP (VBZ is)
+                  (ADVP (RB somehow))
+                  (`` ``)
+                  (ADJP (JJ foreign))
+                  ('' '')))))
+          (, ,)
+          (CC and)
+          (NP (DT a) (JJ dramatic) (NN attempt)
+            (S
+              (VP (TO to)
+                (VP (VB socialize)
+                  (NP (NN medicine)))))))))
+    (. .)))
+
+nsubj(dampen-4, This-2)
+aux(dampen-4, should-3)
+root(ROOT-0, dampen-4)
+dobj(dampen-4, concerns-5)
+complm(foreign-13, that-6)
+det(plan-9, a-7)
+amod(plan-9, public-8)
+nsubj(foreign-13, plan-9)
+cop(foreign-13, is-10)
+advmod(foreign-13, somehow-11)
+dep(concerns-5, foreign-13)
+det(attempt-19, a-17)
+amod(attempt-19, dramatic-18)
+dobj(dampen-4, attempt-19)
+conj_and(concerns-5, attempt-19)
+aux(socialize-21, to-20)
+infmod(attempt-19, socialize-21)
+dobj(socialize-21, medicine-22)
+

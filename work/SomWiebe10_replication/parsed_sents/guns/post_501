@@ -1,0 +1,126 @@
+(ROOT
+  (S
+    (NP (PRP You))
+    (VP
+      (VP (MD can)
+        (VP (VB carry)
+          (NP (NNP IWB))
+          (PRN (-LRB- -LRB-)
+            (PP (IN in)
+              (NP (JJ waist) (NN band)))
+            (-RRB- -RRB-))))
+      (CC or)
+      (VP
+        (PP (IN in)
+          (NP (NN pocket)))))
+    (. .)))
+
+nsubj(carry-3, You-1)
+aux(carry-3, can-2)
+root(ROOT-0, carry-3)
+dobj(carry-3, IWB-4)
+dep(carry-3, in-6)
+amod(band-8, waist-7)
+pobj(in-6, band-8)
+conj_or(carry-3, in-11)
+pobj(in-11, pocket-12)
+
+(ROOT
+  (S
+    (NP (RB Not) (DT all) (NNS handguns))
+    (VP (VBP hold)
+      (NP
+        (NP (CD 15) (NNS rounds))
+        (PP (IN of)
+          (NP (CD .40) (NN caliber)))))
+    (. .)))
+
+neg(handguns-3, Not-1)
+det(handguns-3, all-2)
+nsubj(hold-4, handguns-3)
+root(ROOT-0, hold-4)
+num(rounds-6, 15-5)
+dobj(hold-4, rounds-6)
+num(caliber-9, .40-8)
+prep_of(rounds-6, caliber-9)
+
+(ROOT
+  (S (CC And)
+    (PP (RB as) (IN for)
+      (S
+        (VP (VBG being)
+          (NP
+            (NP (DT a) (JJ good) (NN shot))
+            (PP (IN with)
+              (NP (DT a) (NN handgun)))))))
+    (, ,)
+    (NP (PRP I))
+    (VP (VBP 'm)
+      (VP (VBG guessing)
+        (SBAR
+          (S
+            (NP (PRP you))
+            (VP (VBD did) (RB n't)
+              (VP (VB start)
+                (PRT (RP out))
+                (PP (IN as)
+                  (NP
+                    (NP (DT a) (JJ good) (NN shot))
+                    (PP (IN with)
+                      (NP (DT a) (NN rifle)))))
+                (ADVP (RB either))))))))
+    (. .)))
+
+cc(guessing-14, And-1)
+cop(shot-7, being-4)
+det(shot-7, a-5)
+amod(shot-7, good-6)
+prepc_as_for(guessing-14, shot-7)
+det(handgun-10, a-9)
+prep_with(shot-7, handgun-10)
+nsubj(guessing-14, I-12)
+aux(guessing-14, 'm-13)
+root(ROOT-0, guessing-14)
+nsubj(start-18, you-15)
+aux(start-18, did-16)
+neg(start-18, n't-17)
+ccomp(guessing-14, start-18)
+prt(start-18, out-19)
+det(shot-23, a-21)
+amod(shot-23, good-22)
+prep_as(start-18, shot-23)
+det(rifle-26, a-25)
+prep_with(shot-23, rifle-26)
+advmod(start-18, either-27)
+
+(ROOT
+  (S
+    (NP (DT A) (NN lot) (NN practice))
+    (VP (VBZ goes)
+      (NP (DT a) (JJ little) (NN way)))
+    (. .)))
+
+det(practice-3, A-1)
+nn(practice-3, lot-2)
+nsubj(goes-4, practice-3)
+root(ROOT-0, goes-4)
+det(way-7, a-5)
+amod(way-7, little-6)
+dobj(goes-4, way-7)
+
+(ROOT
+  (SQ (CC Or)
+    (VBZ is)
+    (NP (PRP it))
+    (NP (DT the) (JJ other) (NN way))
+    (ADVP (RB around))
+    (. ?)))
+
+cc(way-6, Or-1)
+cop(way-6, is-2)
+nsubj(way-6, it-3)
+det(way-6, the-4)
+amod(way-6, other-5)
+root(ROOT-0, way-6)
+advmod(way-6, around-7)
+

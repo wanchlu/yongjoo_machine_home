@@ -1,0 +1,109 @@
+(ROOT
+  (S
+    (NP (FW i))
+    (VP (VBP think)
+      (SBAR (IN if)
+        (S
+          (NP (NNS people))
+          (VP (VBP are)
+            (ADJP (JJ responsible)
+              (SBAR
+                (S
+                  (NP (PRP they))
+                  (VP (MD should)
+                    (VP (VB be)
+                      (ADJP (JJ able)
+                        (S
+                          (VP (TO to)
+                            (VP (VB buy)
+                              (CC and)
+                              (VB use)
+                              (NP (NNS firarms)))))))))))))))
+    (. .)))
+
+nsubj(think-2, i-1)
+root(ROOT-0, think-2)
+mark(responsible-6, if-3)
+nsubj(responsible-6, people-4)
+cop(responsible-6, are-5)
+advcl(think-2, responsible-6)
+nsubj(able-10, they-7)
+aux(able-10, should-8)
+cop(able-10, be-9)
+dep(responsible-6, able-10)
+aux(buy-12, to-11)
+xcomp(able-10, buy-12)
+xcomp(able-10, use-14)
+conj_and(buy-12, use-14)
+dobj(buy-12, firarms-15)
+
+(ROOT
+  (X (CC but)
+    (S
+      (VP (VBZ theres)
+        (NP (DT some) (NNS people))
+        (SBAR
+          (SBAR
+            (WHNP (WP who))
+            (S
+              (VP (VBP use)
+                (NP (PRP them))
+                (PP (IN for)
+                  (NP (DT the) (JJ wrong) (NN reason))))))
+          (CC and)
+          (SBAR
+            (WHNP (WDT that))
+            (S
+              (VP (VBZ is)
+                (SBAR
+                  (WHNP (WP what))
+                  (S
+                    (VP (VBZ makes)
+                      (S
+                        (NP (JJ little) (NNS familys))
+                        (VP (VB cry)
+                          (SBAR (IN because)
+                            (S
+                              (NP (EX there))
+                              (VP (VBD loved)
+                                (SBAR
+                                  (S
+                                    (NP (PRP one))
+                                    (VP (VBD was)
+                                      (VP (VBN gunned)
+                                        (PRT (RP down))
+                                        (PP (IN by)
+                                          (NP
+                                            (NP (DT a) (JJ horable) (NN person))
+                                            (: ;)
+                                            (NP (-LRB- -LRB-) (NNP -LRB-) (-LRB- -LRB-) (NNP -LRB-) (-LRB- -LRB-) (NNP -LRB-) (-LRB- -LRB-) (NNP -LRB-) (NNP -LRB-) (NNP -LRB-) (NNP -LRB-))))))))))))))))))))))))
+
+dep(theres-2, but-1)
+root(ROOT-0, theres-2)
+det(people-4, some-3)
+dobj(theres-2, people-4)
+nsubj(use-6, who-5)
+dep(theres-2, use-6)
+dobj(use-6, them-7)
+det(reason-11, the-9)
+amod(reason-11, wrong-10)
+prep_for(use-6, reason-11)
+nsubj(is-14, that-13)
+dep(theres-2, is-14)
+conj_and(use-6, is-14)
+nsubj(makes-16, what-15)
+ccomp(is-14, makes-16)
+amod(familys-18, little-17)
+nsubj(cry-19, familys-18)
+ccomp(makes-16, cry-19)
+mark(loved-22, because-20)
+expl(loved-22, there-21)
+advcl(cry-19, loved-22)
+nsubjpass(gunned-25, one-23)
+auxpass(gunned-25, was-24)
+ccomp(loved-22, gunned-25)
+prt(gunned-25, down-26)
+det(person-30, a-28)
+amod(person-30, horable-29)
+agent(gunned-25, person-30)
+

@@ -1,0 +1,115 @@
+(ROOT
+  (S
+    (NP (DT The) (JJ 2nd) (NN Amendment))
+    (VP (VBD was)
+      (VP (VBN influenced)
+        (PP (IN by)
+          (NP
+            (NP (DT the) (NNP English) (NNP Bill))
+            (PP (IN of)
+              (NP (NNP Rights)))))
+        (S
+          (VP (TO to)
+            (VP (VB confer)
+              (NP (DT an) (JJ individual) (NN right))
+              (S
+                (VP (TO to)
+                  (VP (VB bear)
+                    (NP (NNS arms))))))))))
+    (. .)))
+
+det(Amendment-3, The-1)
+amod(Amendment-3, 2nd-2)
+nsubjpass(influenced-5, Amendment-3)
+xsubj(confer-13, Amendment-3)
+auxpass(influenced-5, was-4)
+root(ROOT-0, influenced-5)
+det(Bill-9, the-7)
+nn(Bill-9, English-8)
+agent(influenced-5, Bill-9)
+prep_of(Bill-9, Rights-11)
+aux(confer-13, to-12)
+xcomp(influenced-5, confer-13)
+det(right-16, an-14)
+amod(right-16, individual-15)
+dobj(confer-13, right-16)
+aux(bear-18, to-17)
+xcomp(confer-13, bear-18)
+dobj(bear-18, arms-19)
+
+(ROOT
+  (NP
+    (NP (JJ Oral) (NNS arguments))
+    (PP (IN in)
+      (NP (NNP DC)
+        (CC vs.)
+        (NNP Heller)))
+    (. .)))
+
+amod(arguments-2, Oral-1)
+root(ROOT-0, arguments-2)
+prep_in(arguments-2, DC-4)
+prep_in(arguments-2, Heller-6)
+conj_vs.(DC-4, Heller-6)
+
+(ROOT
+  (NP
+    (NP
+      (NP (NNP March) (CD 19th) (, ,) (CD 2008))
+      (`` ``)
+      (NP (NNP JUSTICE) (NNP KENNEDY)))
+    (: :)
+    (S
+      (NP (PRP You))
+      (VP (VBP think)
+        (SBAR
+          (S
+            (NP (NNP Madison))
+            (VP (VBD was)
+              (VP (VBN guided)
+                (PP (IN by)
+                  (NP
+                    (NP (DT the) (NN experience))
+                    (CC and)
+                    (NP
+                      (NP (DT the) (NNS expressions))
+                      (PP (IN of)
+                        (NP
+                          (NP (DT the) (NN right))
+                          (PP (IN in)
+                            (NP (JJ English) (NN law))))))))))))))
+    (, ,)
+    (VP (VBG including)
+      (NP
+        (NP (DT the) (NN Bill))
+        (PP (IN of)
+          (NP (NNP Rights)))))
+    (PP (IN of)
+      (NP (CD 1689)))
+    (. ?)))
+
+root(ROOT-0, March-1)
+num(March-1, 19th-2)
+num(March-1, 2008-4)
+nn(KENNEDY-7, JUSTICE-6)
+dep(March-1, KENNEDY-7)
+nsubj(think-10, You-9)
+dep(March-1, think-10)
+nsubjpass(guided-13, Madison-11)
+auxpass(guided-13, was-12)
+ccomp(think-10, guided-13)
+det(experience-16, the-15)
+agent(guided-13, experience-16)
+det(expressions-19, the-18)
+agent(guided-13, expressions-19)
+conj_and(experience-16, expressions-19)
+det(right-22, the-21)
+prep_of(expressions-19, right-22)
+amod(law-25, English-24)
+prep_in(right-22, law-25)
+partmod(March-1, including-27)
+det(Bill-29, the-28)
+dobj(including-27, Bill-29)
+prep_of(Bill-29, Rights-31)
+prep_of(March-1, 1689-33)
+

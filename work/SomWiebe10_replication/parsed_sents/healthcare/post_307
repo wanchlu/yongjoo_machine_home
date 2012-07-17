@@ -1,0 +1,108 @@
+(ROOT
+  (S
+    (NP (NNP Healthcare))
+    (VP (MD should) (RB not)
+      (VP (VB be)
+        (NP
+          (NP (JJ universal) (NN becasue))
+          (PP (IN like)
+            (NP
+              (NP (JJ many) (NNS things))
+              (PP (IN in)
+                (NP
+                  (NP (DT the) (NN world))
+                  (SBAR
+                    (S
+                      (NP (PRP it))
+                      (VP (VBZ needs)
+                        (S
+                          (VP (TO to)
+                            (VP (VB be)
+                              (VP (VBN earned)))))))))))))))
+    (. .)))
+
+nsubj(becasue-6, Healthcare-1)
+aux(becasue-6, should-2)
+neg(becasue-6, not-3)
+cop(becasue-6, be-4)
+amod(becasue-6, universal-5)
+root(ROOT-0, becasue-6)
+amod(things-9, many-8)
+prep_like(becasue-6, things-9)
+det(world-12, the-11)
+prep_in(things-9, world-12)
+dobj(needs-14, world-12)
+nsubj(needs-14, it-13)
+rcmod(world-12, needs-14)
+aux(earned-17, to-15)
+auxpass(earned-17, be-16)
+xcomp(needs-14, earned-17)
+
+(ROOT
+  (S
+    (SBAR (IN If)
+      (S
+        (NP (PRP you))
+        (VP (VBP have)
+          (NP (JJR more) (NN money)))))
+    (NP (PRP you))
+    (VP (MD can)
+      (VP (VB get)
+        (NP (JJR better) (NN insurance))
+        (SBAR (IN so)
+          (S
+            (NP
+              (NP (NN someone))
+              (SBAR
+                (WHNP (WDT that))
+                (S
+                  (VP (VBZ earns)
+                    (NP
+                      (NP (NN alot))
+                      (PP (IN of)
+                        (NP (NN money))))))))
+            (VP (MD should)
+              (VP (VB be)
+                (ADJP (JJ able)
+                  (S
+                    (VP (TO to)
+                      (VP (VB pay)
+                        (PP (IN for)
+                          (NP
+                            (NP (JJR better) (NN heatlh) (NN care))
+                            (ADVP (RB then)
+                              (NP (DT some) (NN bum))
+                              (PP (IN off)
+                                (NP (DT the) (NNS streets))))))))))))))))
+    (. .)))
+
+mark(have-3, If-1)
+nsubj(have-3, you-2)
+advcl(get-8, have-3)
+amod(money-5, more-4)
+dobj(have-3, money-5)
+nsubj(get-8, you-6)
+aux(get-8, can-7)
+root(ROOT-0, get-8)
+amod(insurance-10, better-9)
+dobj(get-8, insurance-10)
+mark(able-20, so-11)
+nsubj(earns-14, someone-12)
+nsubj(able-20, someone-12)
+rcmod(someone-12, earns-14)
+dobj(earns-14, alot-15)
+prep_of(alot-15, money-17)
+aux(able-20, should-18)
+cop(able-20, be-19)
+advcl(get-8, able-20)
+aux(pay-22, to-21)
+xcomp(able-20, pay-22)
+amod(care-26, better-24)
+nn(care-26, heatlh-25)
+prep_for(pay-22, care-26)
+advmod(care-26, then-27)
+det(bum-29, some-28)
+pobj(then-27, bum-29)
+det(streets-32, the-31)
+prep_off(then-27, streets-32)
+

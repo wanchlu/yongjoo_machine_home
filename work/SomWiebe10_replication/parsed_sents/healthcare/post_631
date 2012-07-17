@@ -1,0 +1,54 @@
+(ROOT
+  (S (RB Not)
+    (NP (DT all) (NN health) (NN care))
+    (VP (MD should)
+      (VP (VB be)
+        (ADJP (JJ free))))
+    (. .)))
+
+neg(free-7, Not-1)
+det(care-4, all-2)
+nn(care-4, health-3)
+nsubj(free-7, care-4)
+aux(free-7, should-5)
+cop(free-7, be-6)
+root(ROOT-0, free-7)
+
+(ROOT
+  (S
+    (SBAR (IN Because)
+      (S
+        (NP (PRP$ their))
+        (VP (VBP are)
+          (ADJP (JJ rich)))))
+    (NP
+      (NP (NNS people))
+      (CC and)
+      (NP (PRP they)))
+    (VP (MD should)
+      (VP (VB pay)
+        (S
+          (VP (TO to)
+            (VP (VB give)
+              (NP (NN money))
+              (PP (TO to)
+                (NP (DT the) (NNS doctors))))))))
+    (. .)))
+
+mark(rich-4, Because-1)
+nsubj(rich-4, their-2)
+cop(rich-4, are-3)
+advcl(pay-9, rich-4)
+nsubj(pay-9, people-5)
+xsubj(give-11, people-5)
+conj_and(people-5, they-7)
+nsubj(pay-9, they-7)
+xsubj(give-11, they-7)
+aux(pay-9, should-8)
+root(ROOT-0, pay-9)
+aux(give-11, to-10)
+xcomp(pay-9, give-11)
+dobj(give-11, money-12)
+det(doctors-15, the-14)
+prep_to(give-11, doctors-15)
+

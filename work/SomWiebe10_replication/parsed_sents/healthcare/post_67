@@ -1,0 +1,127 @@
+(ROOT
+  (S
+    (NP (NNP Public) (NN insurance) (NNS inefficiencies))
+    (VP (MD can)
+      (VP (VB be)
+        (VP (VBN hidden)
+          (PP (IN by)
+            (NP (NN taxpayer-funding))))))
+    (. .)))
+
+nn(inefficiencies-3, Public-1)
+nn(inefficiencies-3, insurance-2)
+nsubjpass(hidden-6, inefficiencies-3)
+aux(hidden-6, can-4)
+auxpass(hidden-6, be-5)
+root(ROOT-0, hidden-6)
+agent(hidden-6, taxpayer-funding-8)
+
+(ROOT
+  (NP (NNP Michael) (NNP F.) (NNP Cannon) (. .)))
+
+nn(Cannon-3, Michael-1)
+nn(Cannon-3, F.-2)
+root(ROOT-0, Cannon-3)
+
+(ROOT
+  (S ('' '')
+    (NP (NNP Fannie))
+    (VP (VBZ Med))
+    (. ?)))
+
+nsubj(Med-3, Fannie-2)
+root(ROOT-0, Med-3)
+
+(ROOT
+  (NP (NNP '') (NNP CATO) (NNP Institute) (. .)))
+
+nn(Institute-3, CATO-2)
+root(ROOT-0, Institute-3)
+
+(ROOT
+  (NP
+    (NP (NNP August) (CD 6) (, ,) (CD 2009))
+    (: :) (`` ``)
+    (S
+      (S
+        (NP
+          (NP (DT The) (JJ central) (NN problem))
+          (PP (IN with)
+            (NP (NNS proposals)
+              (S
+                (VP (TO to)
+                  (VP (VB create)
+                    (NP (DT a) (JJ new) (NN government) (NN program))))))))
+        (, ,)
+        (ADVP (RB however))
+        (, ,)
+        (VP (VBZ is) (RB not)
+          (SBAR (IN that)
+            (S
+              (NP (NN government))
+              (VP (VBZ is)
+                (ADJP (RBR less) (JJ efficient)
+                  (PP (IN than)
+                    (NP (JJ private) (NNS insurers)))))))))
+      (, ,)
+      (CC but)
+      (S
+        (NP (DT that) (NN government))
+        (VP (MD can)
+          (VP
+            (VP (VB hide)
+              (NP (PRP$ its) (NNS inefficiencies)))
+            (CC and)
+            (VP (VB draw)
+              (NP (NNS consumers))
+              (PRT (RP away))
+              (PP (IN from)
+                (NP (JJ private) (NN insurance)))
+              (, ,)
+              (PP (IN despite)
+                (S
+                  (VP (VBG offering)
+                    (NP (DT an) (JJ inferior) (NN product))))))))))
+    (. .)))
+
+root(ROOT-0, August-1)
+num(August-1, 6-2)
+num(August-1, 2009-4)
+det(problem-9, The-7)
+amod(problem-9, central-8)
+nsubj(is-21, problem-9)
+prep_with(problem-9, proposals-11)
+aux(create-13, to-12)
+infmod(proposals-11, create-13)
+det(program-17, a-14)
+amod(program-17, new-15)
+nn(program-17, government-16)
+dobj(create-13, program-17)
+advmod(is-21, however-19)
+dep(August-1, is-21)
+neg(is-21, not-22)
+complm(efficient-27, that-23)
+nsubj(efficient-27, government-24)
+cop(efficient-27, is-25)
+advmod(efficient-27, less-26)
+ccomp(is-21, efficient-27)
+amod(insurers-30, private-29)
+prep_than(efficient-27, insurers-30)
+det(government-34, that-33)
+nsubj(hide-36, government-34)
+nsubj(draw-40, government-34)
+aux(hide-36, can-35)
+dep(August-1, hide-36)
+conj_but(is-21, hide-36)
+poss(inefficiencies-38, its-37)
+dobj(hide-36, inefficiencies-38)
+conj_but(is-21, draw-40)
+conj_and(hide-36, draw-40)
+dobj(draw-40, consumers-41)
+amod(insurance-45, private-44)
+prep_away_from(draw-40, insurance-45)
+prepc_despite(draw-40, offering-48)
+det(product-51, an-49)
+amod(product-51, inferior-50)
+dobj(offering-48, product-51)
+

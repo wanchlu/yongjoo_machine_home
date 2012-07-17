@@ -1,0 +1,88 @@
+(ROOT
+  (S
+    (NP
+      (NP (JJR More) (NNS Guns))
+      (PP (IN in)
+        (NP (JJR More) (NNS Places))))
+    (VP (VBZ Equals)
+      (NP (JJR More) (NN Danger)))
+    (. ?)))
+
+amod(Guns-2, More-1)
+nsubj(Equals-6, Guns-2)
+amod(Places-5, More-4)
+prep_in(Guns-2, Places-5)
+root(ROOT-0, Equals-6)
+amod(Danger-8, More-7)
+dobj(Equals-6, Danger-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP suppose)
+      (SBAR (IN that)
+        (S
+          (VP (VBZ is)
+            (SBAR
+              (WHADVP (WRB why))
+              (S
+                (NP (EX there))
+                (VP (VBP are)
+                  (ADVP (RB so))
+                  (NP
+                    (NP (JJ many) (JJ mass) (NNS murders))
+                    (PP (IN at)
+                      (NP
+                        (NP (NNP Gun) (NNP Shows))
+                        (, ,)
+                        (NP (NNP NRA) (NNP Conventions))
+                        (CC and)
+                        (NP (NNP Police) (NNPS Stations))))))))))))
+    (. ?)))
+
+nsubj(suppose-2, I-1)
+root(ROOT-0, suppose-2)
+complm(is-4, that-3)
+ccomp(suppose-2, is-4)
+advmod(are-7, why-5)
+expl(are-7, there-6)
+advcl(is-4, are-7)
+advmod(are-7, so-8)
+amod(murders-11, many-9)
+amod(murders-11, mass-10)
+nsubj(are-7, murders-11)
+nn(Shows-14, Gun-13)
+prep_at(murders-11, Shows-14)
+nn(Conventions-17, NRA-16)
+prep_at(murders-11, Conventions-17)
+conj_and(Shows-14, Conventions-17)
+nn(Stations-20, Police-19)
+prep_at(murders-11, Stations-20)
+conj_and(Shows-14, Stations-20)
+
+(ROOT
+  (S (CC And)
+    (S
+      (NP (NN nobody))
+      (VP (VBZ is)
+        (ADVP (RB ever))
+        (VP (VBN murdered)
+          (PP (IN in) ('' '')
+            (NP (NNP Gun) (NNP Free))))))
+    ('' '')
+    (NP (NNS Zones))
+    (VP (VBP are)
+      (NP (PRP they)))
+    (. ?)))
+
+cc(they-13, And-1)
+nsubjpass(murdered-5, nobody-2)
+auxpass(murdered-5, is-3)
+advmod(murdered-5, ever-4)
+dep(they-13, murdered-5)
+nn(Free-9, Gun-8)
+prep_in(murdered-5, Free-9)
+nsubj(they-13, Zones-11)
+cop(they-13, are-12)
+root(ROOT-0, they-13)
+

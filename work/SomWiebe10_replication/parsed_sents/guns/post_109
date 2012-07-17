@@ -1,0 +1,29 @@
+(ROOT
+  (FRAG
+    (NP
+      (NP (NNP Mayor) (NNP Daley))
+      (PP (IN of)
+        (NP (NNP Los) (NNP Angeles))))
+    (PP
+      (ADVP (RB together))
+      (IN with)
+      (NP
+        (NP (JJ other) (NNS lawmakers))
+        (VP
+          (ADVP (RB publicly))
+          (VBN supported)
+          (NP (DT the) (NNP DC) (NN handgun) (NN ban)))))))
+
+nn(Daley-2, Mayor-1)
+root(ROOT-0, Daley-2)
+nn(Angeles-5, Los-4)
+prep_of(Daley-2, Angeles-5)
+amod(lawmakers-9, other-8)
+prep_together_with(Daley-2, lawmakers-9)
+advmod(supported-11, publicly-10)
+partmod(lawmakers-9, supported-11)
+det(ban-15, the-12)
+nn(ban-15, DC-13)
+nn(ban-15, handgun-14)
+dobj(supported-11, ban-15)
+

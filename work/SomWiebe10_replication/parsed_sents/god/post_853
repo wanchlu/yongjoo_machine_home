@@ -1,0 +1,199 @@
+(ROOT
+  (S
+    (NP (EX There))
+    (VP (VBZ 's)
+      (NP
+        (NP (DT the) (JJ odd) (NN thought))
+        (PP (IN of) (`` ``)
+          (NP (WP what))))
+      (ADVP (IN if)))
+    (. ?)))
+
+expl('s-2, There-1)
+root(ROOT-0, 's-2)
+det(thought-5, the-3)
+amod(thought-5, odd-4)
+nsubj('s-2, thought-5)
+prep_of(thought-5, what-8)
+advmod('s-2, if-9)
+
+(ROOT
+  (NP ('' '')
+    (CC but)
+    (NP
+      (NP (NN nobody))
+      (SBAR
+        (S
+          (VP (VBZ 's)
+            (VP (VBN given)
+              (NP (PRP me))
+              (NP (DT any) (NN proof)))))))
+    (. .)))
+
+cc(nobody-3, but-2)
+root(ROOT-0, nobody-3)
+auxpass(given-5, 's-4)
+rcmod(nobody-3, given-5)
+iobj(given-5, me-6)
+det(proof-8, any-7)
+dobj(given-5, proof-8)
+
+(ROOT
+  (S
+    (NP (PRP I))
+    (VP (VBP have)
+      (NP (RB just)
+        (ADJP (RB as) (JJ much))
+        (NN evidence)
+        (SBAR (IN that)
+          (S
+            (NP (DT the) (NN universe))
+            (VP (VBZ is)
+              (ADVP (RB actually))
+              (NP (DT a) (NN toilet)))))))
+    (. .)))
+
+nsubj(have-2, I-1)
+root(ROOT-0, have-2)
+advmod(evidence-6, just-3)
+advmod(much-5, as-4)
+amod(evidence-6, much-5)
+dobj(have-2, evidence-6)
+complm(toilet-13, that-7)
+det(universe-9, the-8)
+nsubj(toilet-13, universe-9)
+cop(toilet-13, is-10)
+advmod(toilet-13, actually-11)
+det(toilet-13, a-12)
+ccomp(evidence-6, toilet-13)
+
+(ROOT
+  (S
+    (VP
+      (VP (VB \/) (-RRB- -RRB-)
+        (NP (NNS \/))
+        (-RRB- -RRB-)
+        (ADVP (RB @Homestar)))
+      (: :)
+      (NP
+        (NP (DT That))
+        (SBAR
+          (S
+            (VP (VBZ 's)
+              (ADJP (RB completely) (JJ incorrect)))))))
+    (. .)))
+
+root(ROOT-0, \/-1)
+dobj(\/-1, \/-3)
+advmod(\/-1, @Homestar-5)
+dobj(\/-1, That-7)
+cop(incorrect-10, 's-8)
+advmod(incorrect-10, completely-9)
+rcmod(That-7, incorrect-10)
+
+(ROOT
+  (S
+    (PP (IN For)
+      (NP (NN example)))
+    (, ,)
+    (NP (PRP I))
+    (VP (MD could)
+      (VP (VB reason)
+        (SBAR (IN that)
+          (S
+            (NP (NNP Bob))
+            (VP (VBZ is)
+              (NP (DT a) (NN robot))
+              (, ,)
+              (SBAR (IN because)
+                (S
+                  (NP (PRP I))
+                  (VP (VBP 've)
+                    (ADVP (RB never))
+                    (VP (VBN seen)
+                      (S
+                        (NP (PRP him))
+                        (VP (VB eat)
+                          (CC or)
+                          (VB sleep))))))))))))
+    (. .)))
+
+prep_for(reason-6, example-2)
+nsubj(reason-6, I-4)
+aux(reason-6, could-5)
+root(ROOT-0, reason-6)
+complm(robot-11, that-7)
+nsubj(robot-11, Bob-8)
+cop(robot-11, is-9)
+det(robot-11, a-10)
+ccomp(reason-6, robot-11)
+mark(seen-17, because-13)
+nsubj(seen-17, I-14)
+aux(seen-17, 've-15)
+neg(seen-17, never-16)
+advcl(robot-11, seen-17)
+nsubj(eat-19, him-18)
+nsubj(sleep-21, him-18)
+ccomp(seen-17, eat-19)
+ccomp(seen-17, sleep-21)
+conj_or(eat-19, sleep-21)
+
+(ROOT
+  (S (CC Or)
+    (, ,)
+    (NP (PRP I))
+    (VP (MD could)
+      (VP (VB lop)
+        (PRT (RP off))
+        (NP (PRP$ his) (NN arm))
+        (, ,)
+        (S
+          (VP
+            (VP (VBG noting)
+              (NP
+                (NP (DT the) (NN flesh) (, ,) (NN blood) (, ,)
+                  (CC and)
+                  (NN bone))
+                (ADVP (RB inside))))
+            (, ,)
+            (VP (VBG proving)
+              (S
+                (NP (PRP him))
+                (VP (TO to)
+                  (VP (VB be)
+                    (ADJP (JJ human))))))))))
+    (. .)))
+
+cc(lop-5, Or-1)
+nsubj(lop-5, I-3)
+aux(lop-5, could-4)
+root(ROOT-0, lop-5)
+prt(lop-5, off-6)
+poss(arm-8, his-7)
+dobj(lop-5, arm-8)
+dep(lop-5, noting-10)
+det(flesh-12, the-11)
+dobj(noting-10, flesh-12)
+dobj(noting-10, blood-14)
+conj_and(flesh-12, blood-14)
+dobj(noting-10, bone-17)
+conj_and(flesh-12, bone-17)
+advmod(flesh-12, inside-18)
+dep(noting-10, proving-20)
+nsubj(human-24, him-21)
+aux(human-24, to-22)
+cop(human-24, be-23)
+xcomp(proving-20, human-24)
+
+(ROOT
+  (SBARQ
+    (WHNP (WP Which))
+    (SQ (VBZ is)
+      (ADJP (RBR more) (JJ convincing)))
+    (. ?)))
+
+attr(convincing-4, Which-1)
+cop(convincing-4, is-2)
+advmod(convincing-4, more-3)
+root(ROOT-0, convincing-4)
+

@@ -1,0 +1,94 @@
+(ROOT
+  (S
+    (NP (JJ Assault) (NNS weapons))
+    (VP (VBP empower)
+      (S
+        (NP (DT the) (NN deranged))
+        (VP (TO to)
+          (VP (VB kill)
+            (NP (JJ many) (NNS people))))))
+    (. .)))
+
+amod(weapons-2, Assault-1)
+nsubj(empower-3, weapons-2)
+root(ROOT-0, empower-3)
+det(deranged-5, the-4)
+nsubj(kill-7, deranged-5)
+aux(kill-7, to-6)
+xcomp(empower-3, kill-7)
+amod(people-9, many-8)
+dobj(kill-7, people-9)
+
+(ROOT
+  (S
+    (SBAR (IN While)
+      (S
+        (NP
+          (NP (DT the) (NN phrase))
+          (`` ``)
+          (S
+            (S
+              (NP (NNS guns))
+              (VP (VBP do) (RB n't)
+                (VP (VB kill)
+                  (NP (NNS people)))))
+            (, ,)
+            (NP (NNS people))
+            (VP (VBP kill)
+              (NP (NNS people))))
+          ('' ''))
+        (VP (VBZ is)
+          (VP (VBN used)
+            (ADVP (RB widely))
+            (, ,)
+            (SBAR
+              (WHNP (WP what))
+              (S
+                (NP (PRP it))
+                (VP (VBZ misses))))))))
+    (VP (VBZ is)
+      (NP
+        (NP (DT the) (NN extent))
+        (SBAR
+          (WHPP (TO to)
+            (WHNP (WDT which)))
+          (S
+            (NP (NN assault) (NNS weapons))
+            (VP (VBP enable)
+              (S
+                (NP (JJ deranged) (NNS individuals))
+                (VP (TO to)
+                  (VP (VB kill)
+                    (ADVP (RB massively))))))))))
+    (. .)))
+
+mark(used-16, While-1)
+det(phrase-3, the-2)
+nsubjpass(used-16, phrase-3)
+nsubj(kill-8, guns-5)
+aux(kill-8, do-6)
+neg(kill-8, n't-7)
+ccomp(kill-12, kill-8)
+dobj(kill-8, people-9)
+nsubj(kill-12, people-11)
+dep(phrase-3, kill-12)
+dobj(kill-12, people-13)
+auxpass(used-16, is-15)
+csubj(extent-24, used-16)
+advmod(used-16, widely-17)
+dobj(misses-21, what-19)
+nsubj(misses-21, it-20)
+ccomp(used-16, misses-21)
+cop(extent-24, is-22)
+det(extent-24, the-23)
+root(ROOT-0, extent-24)
+rel(enable-29, which-26)
+nn(weapons-28, assault-27)
+nsubj(enable-29, weapons-28)
+rcmod(extent-24, enable-29)
+amod(individuals-31, deranged-30)
+nsubj(kill-33, individuals-31)
+aux(kill-33, to-32)
+xcomp(enable-29, kill-33)
+advmod(kill-33, massively-34)
+

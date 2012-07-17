@@ -1,0 +1,68 @@
+(ROOT
+  (S
+    (S
+      (NP
+        (NP (DT The) (NN lack))
+        (PP (IN of)
+          (NP (JJ universal) (NN health) (NN care))))
+      (VP (VBZ is)
+        (NP
+          (NP (DT a) (VBG leading) (NN cause))
+          (PP (IN of)
+            (NP (NN bankruptcy))))))
+    (NP (DT A) (NNP Harvard) (NN study))
+    (VP (VBZ indicates)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP (DT a) (NN lack))
+            (PP (IN of)
+              (NP (JJ universal) (NN health) (NN care))))
+          (VP (VBZ is)
+            (NP
+              (NP (DT a) (VBG leading) (NN cause))
+              (PP (IN in)
+                (NP
+                  (NP (CD 50) (NN %))
+                  (PP (IN of)
+                    (NP
+                      (NP (NNS bankruptcies))
+                      (VP (VBN filed)
+                        (ADVP (RB annually))
+                        (PP (IN in)
+                          (NP (DT the) (NNP United) (NNPS States)))))))))))))
+    (. .)))
+
+det(lack-2, The-1)
+nsubj(cause-10, lack-2)
+amod(care-6, universal-4)
+nn(care-6, health-5)
+prep_of(lack-2, care-6)
+cop(cause-10, is-7)
+det(cause-10, a-8)
+amod(cause-10, leading-9)
+dep(indicates-16, cause-10)
+prep_of(cause-10, bankruptcy-12)
+det(study-15, A-13)
+nn(study-15, Harvard-14)
+nsubj(indicates-16, study-15)
+root(ROOT-0, indicates-16)
+complm(cause-27, that-17)
+det(lack-19, a-18)
+nsubj(cause-27, lack-19)
+amod(care-23, universal-21)
+nn(care-23, health-22)
+prep_of(lack-19, care-23)
+cop(cause-27, is-24)
+det(cause-27, a-25)
+amod(cause-27, leading-26)
+ccomp(indicates-16, cause-27)
+num(%-30, 50-29)
+prep_in(cause-27, %-30)
+prep_of(%-30, bankruptcies-32)
+partmod(bankruptcies-32, filed-33)
+advmod(filed-33, annually-34)
+det(States-38, the-36)
+nn(States-38, United-37)
+prep_in(filed-33, States-38)
+
