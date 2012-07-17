@@ -5,8 +5,12 @@ my $input = shift;
 my $seed_size = shift;
 my $test_size = shift;
 
-`shuffle.pl < $input > ./data/temp`;
-`head -n$seed_size ./data/temp > data/A_seeds.txt`;
+`shuffle.pl < $input | grep "^0" > ./data/temp0`;
+`shuffle.pl < $input | grep "^1" > ./data/temp1`;
+my $half_seed_size = $seed_size/2;
+`head -n$half_seed_size ./data/temp0 > data/A_seeds.txt`;
+`head -n$half_seed_size ./data/temp1 >> data/A_seeds.txt`;
+`head -n -$half_seed_size ./data/temp0 >data/temp`;
+`head -n -$half_seed_size ./data/temp1 >>data/temp`;
 
-my $sum = $seed_size + $test_size;
-`head -n$sum ./data/temp | tail -n$test_size > data/A_test.txt`;
+`shuffle.pl < ./data/temp | shuffle.pl | head -n$test_size  > data/A_test.txt`;
