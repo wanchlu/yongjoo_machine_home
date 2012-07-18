@@ -17,9 +17,10 @@ import java.util.Random;
 
 class Global {
 	public static final int iterations = 1000;	// for random walk
+	public static final int coarse_sampling_iterations = 300;
 	public static final Double maxSteps = 30.0;
 	public static final int numClasses = 2;
-	public static final boolean verbal = true;
+	public static final int verbal = 1;
 }
 class BipartiteGraph {
 	private ExampleNodeSet example_node_set;
@@ -37,13 +38,14 @@ class BipartiteGraph {
 		return example_node_set.GetTestSize();
 	}
 	
-	public Integer ComputeAllHittingTime () {	// compute two classes hitting time for all example nodes, and return the unlabeled node who has minimum difference
+	/*public Integer ComputeAllHittingTime () {	// compute two classes hitting time for all example nodes, and return the unlabeled node who has minimum difference
 		Integer most_uncertain_id = example_node_set.GetSeedSize();
 		Double min_diff = Global.maxSteps;
 		for (int i = example_node_set.GetSeedSize(); i < example_node_set.GetTotalSize(); i++) {
-			if (example_node_set.GetExampleNode(i).IsLabeled() == false) {
-				Double t0 = RandomWalkHittingTime (i, 0);
-				Double t1 = RandomWalkHittingTime (i, 1);
+			if (example_node_set.GetExampleNode(i).IsLabeled() == false 
+			&& example_node_set.GetExampleNode(i).IsSudoLabeled() == false) {
+				Double t0 = GetAndSetRandomWalkHittingTime (i, 0);
+				Double t1 = GetAndSetRandomWalkHittingTime (i, 1);
 				Double diff = Math.abs(t0 - t1);
 				if (diff < min_diff) {
 					min_diff = diff;
@@ -52,32 +54,77 @@ class BipartiteGraph {
 			}
 		}
 		return most_uncertain_id;		
+	}*/
+	
+	public void ComputeAllHittingTime (int sampling_times) {
+		for (int i = example_node_set.GetSeedSize(); i < example_node_set.GetTotalSize(); i++) {
+			if (example_node_set.GetExampleNode(i).IsLabeled() == false 
+					&& example_node_set.GetExampleNode(i).IsSudoLabeled() == false) {
+				GetAndSetRandomWalkHittingTime (i, 0, sampling_times);
+				GetAndSetRandomWalkHittingTime (i, 1, sampling_times);
+			}
+		}
+	}
+	
+	public void ComputeAllHittingTime () {
+		this.ComputeAllHittingTime(Global.iterations);
+	}
+	
+	public Integer GetMinimumRiskId () {
+		double min_risk = Double.MAX_VALUE;
+		Integer min_risk_id = example_node_set.GetSeedSize();
+		for (int i = example_node_set.GetSeedSize(); i < example_node_set.GetTotalSize(); i++) {
+			if (example_node_set.GetExampleNode(i).IsLabeled() == false) {
+				// R (label xi) = prob (xi = 0) * R (label xi 0) + prob (xi = 1) * R (label xi 1)
+				double p_0 = example_node_set.SudoLabelExample(i, 0);
+				this.ComputeAllHittingTime(Global.coarse_sampling_iterations);
+				double R_0 = example_node_set.Risk();
+				example_node_set.SudoLabelExample(i, 1);
+				this.ComputeAllHittingTime(Global.coarse_sampling_iterations);
+				example_node_set.UnSoduLabelExample(i);
+				double R_1 = example_node_set.Risk();
+				double R_i = p_0 * R_0 + (1.0 - p_0) * R_1;
+				if (min_risk > R_i) {
+					min_risk = R_i;
+					min_risk_id = i;
+				}
+				if (Global.verbal >=2 ) {
+					System.out.print("Sudo label example "+i+", ");
+					System.out.println(p_0+"*"+R_0+"+"+(1.0-p_0)+"*"+R_1+" = "+R_i);
+				}
+			}
+		}
+		if (Global.verbal >= 2) {
+			System.out.println(" Minimum risk is "+min_risk);
+		}
+		return min_risk_id;
 	}
 	
 	public void LabelOneMoreExample (Integer id) {
-		example_node_set.LabelOneMoreExample(id);
+		example_node_set.LabelOneMoreExample(id, feature_node_set);
 	}
 	
-	private Double RandomWalkHittingTime (Integer start_id, int target_class) {
+	private Double GetAndSetRandomWalkHittingTime (Integer start_id, int target_class, int sampling_times) {
 		Double total_time = 0.0;
-		for (int it = 0; it < Global.iterations; it++) {
+		for (int it = 0; it < sampling_times; it++) {
 			total_time += OneSampleHittingTime (start_id, target_class);
 		}
-		Double avg = total_time/Global.iterations;
+		Double avg = total_time/sampling_times;
 		example_node_set.GetExampleNode(start_id).SetHittingTime(avg, target_class);
 		return avg;
 	}
 	
 	private Double OneSampleHittingTime (Integer start_id, int target_class) {
 		Double steps = 0.0;
-		boolean hit = example_node_set.GetExampleNode(start_id).IsLabeled(target_class);
+		boolean hit = ( example_node_set.GetExampleNode(start_id).IsLabeled(target_class)
+				|| example_node_set.GetExampleNode(start_id).IsSudoLabeled(target_class));
 		Integer current_example_id = start_id;
 		Integer current_feature_id;
 		while (hit == false && steps < Global.maxSteps) {
 			steps ++;
 			current_feature_id = example_node_set.RandomStep(current_example_id);
 			current_example_id = feature_node_set.RandomStep(current_feature_id);
-			hit = example_node_set.GetExampleNode(current_example_id).IsLabeled(target_class);
+			hit = (example_node_set.GetExampleNode(current_example_id).IsLabeled(target_class) || example_node_set.GetExampleNode(current_example_id).IsSudoLabeled(target_class) );
 		}
 		return steps;
 	}
@@ -85,6 +132,9 @@ class BipartiteGraph {
 	public double Accuracy () {
 		int total = example_node_set.GetTotalSize() - example_node_set.GetLabeledSize();
 		int correct = example_node_set.CountCorrect();
+		if (Global.verbal >= 3) {
+			System.out.print(correct+" correct out of "+total);
+		}
 		return (double) correct / (double) total;
 	}
 
@@ -196,23 +246,38 @@ class ExampleNodeSet {
 		return example_nodes.get(id);
 	}
 	
-	public void LabelOneMoreExample (Integer selected_id) {
-		if (Global.verbal) {
-			System.out.println("Label exmaple "+selected_id);
+	public void LabelOneMoreExample (Integer selected_id, FeatureNodeSet feature_node_set) {
+		if (Global.verbal >= 1) {
+			System.out.println("Label exmaple "+selected_id+", 2nd degree is "+example_nodes.get(selected_id).SecondDegree(feature_node_set));
 //--			example_nodes.get(selected_id).Print();
 		}
 		example_nodes.get(selected_id).SetIsLabeled();
 		labeled_ids.add(selected_id);
 	}
+	
+	public double SudoLabelExample (Integer id, int c) {	// return probability that this example is label c
+		example_nodes.get(id).SudoLabel(c);
+		return example_nodes.get(id).Probability(c);
+	}
+	
+	public void UnSoduLabelExample (Integer id) {
+		example_nodes.get(id).UnSudoLabel();
+	}
+	
+	public double Risk () {
+		double sum_risk = 0.0;
+		for (ExampleNode n:example_nodes) {
+			sum_risk += n.Risk();
+		}
+		return sum_risk;
+	}
 
 	public int CountCorrect () {
 		int cnt = 0;
 		for (int i = seed_size; i < this.GetTotalSize(); i++) {
-	//--		if (Global.verbal)	System.out.println();
 			if (example_nodes.get(i).IsLabeled() == false) {
 				if (example_nodes.get(i).PredictionIsCorrect()) {
 					cnt ++;
-			//--		if (Global.verbal)	System.out.print(i+ " ");
 				}
 			}
 		//--	if (Global.verbal)	System.out.println();
@@ -226,7 +291,9 @@ class ExampleNodeSet {
 }
 class ExampleNode {
 	private int true_label;
+	private int sudo_label;
 	private boolean is_labeled;	// if is seed, or active learned
+	private boolean is_sudo_labeled;
 	private ArrayList<Double> hitting_times; 	// hitting_times.get(i) is the hitting time for class i
 	private List<Integer> feature_nodes;
 	private String fstring;
@@ -261,16 +328,31 @@ class ExampleNode {
 		return is_labeled;
 	}
 	public boolean IsLabeled (int c) {
-		if (is_labeled && true_label == c)
-			return true;
-		else
-			return false;
+		return (is_labeled && true_label == c);
 	}
-	public int Degree () {
-		return feature_nodes.size();
+	
+	public boolean IsSudoLabeled () {
+		return is_sudo_labeled;
+	}
+	public boolean IsSudoLabeled (int c) {
+		return (is_sudo_labeled && sudo_label == c);
+	}
+	public int SecondDegree (FeatureNodeSet feature_node_set) {
+        int sum = 0;
+        for (Integer fid:feature_nodes) {
+            sum += feature_node_set.GetFeatureNode(fid).Degree();
+        }
+		return sum;
 	}
 	public void SetIsLabeled () {
 		is_labeled = true;
+	}
+	public void SudoLabel (int c) {
+		is_sudo_labeled = true;
+		sudo_label =c;
+	}
+	public void UnSudoLabel () {
+		is_sudo_labeled = false;
 	}
 	public void SetHittingTime (Double t, int c) {
 		hitting_times.set(c, t);
@@ -292,6 +374,38 @@ class ExampleNode {
 		else
 			System.out.println(id+"\t "+fstring+"\tC0="+hitting_times.get(0)+"\tC1="+hitting_times.get(1));
 	}
+	public double Risk () {
+		if (is_labeled || is_sudo_labeled)
+			return 0.0;
+		else {
+			double min_hitting_time = Global.maxSteps;
+			double sum_hitting_time = 0;
+			for (int i = 0; i < Global.numClasses; i++) {
+				sum_hitting_time += hitting_times.get(i);
+				if (min_hitting_time > hitting_times.get(i)) {
+					min_hitting_time = hitting_times.get(i);
+				}
+			}
+			return min_hitting_time/sum_hitting_time;
+		}
+	}
+
+	public double Probability (int c) {
+		if (is_labeled) {
+			if  (true_label == c)
+				return 1;
+			else 
+				return 0;
+		}
+		else {
+			double sum_hitting_time = 0;
+			for (int i = 0; i < Global.numClasses; i++) {
+				sum_hitting_time += hitting_times.get(i);
+			}
+			return hitting_times.get(c) / sum_hitting_time;
+		}
+	}
+
 }
 class FeatureNodeSet {
 	private ArrayList<FeatureNode> feature_nodes;
@@ -390,19 +504,21 @@ public class HTAL {
 				al_size = Integer.parseInt(args[3]);
 		}
 		
-		if (Global.verbal)	graph.Print();
+//		if (Global.verbal >= 3)	graph.Print();
 		
 		for (int i = 0; i < al_size; i++) {
-			Integer next_to_label = graph.ComputeAllHittingTime();
+			graph.ComputeAllHittingTime();
+			System.out.println(" Accuracy: "+graph.Accuracy()+"\n");
+
+			Integer next_to_label = graph.GetMinimumRiskId();
 			graph.LabelOneMoreExample(next_to_label);
-			System.out.println(" Accuracy: "+graph.Accuracy());
-			if (Global.verbal) graph.PrintClassNumbers();
-			if (Global.verbal)	graph.Print();
+			if (Global.verbal >= 3) graph.PrintClassNumbers();
+			if (Global.verbal >= 4)	graph.Print();
 		}		
         graph.ComputeAllHittingTime();
         System.out.println(" Accuracy: "+graph.Accuracy());
-        if (Global.verbal)  graph.PrintClassNumbers();
-        if (Global.verbal)	graph.Print();
+        if (Global.verbal >= 3)  graph.PrintClassNumbers();
+        if (Global.verbal >= 4)	graph.Print();
 	}
 	
 }
