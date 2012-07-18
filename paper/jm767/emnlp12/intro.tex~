@@ -1,0 +1,79 @@
+\section{Introduction}
+\label{sec:intro}
+
+Researchers and scholars often face the problem of keeping up with the
+ever increasing number of publications in their fields of research.
+In addition, research is increasingly becoming inter-disciplinary,
+bridging different areas and forcing researchers to 
+familiarize themselves with new areas.  For instance, cancer
+researchers often have to quickly move into a new area in their
+research;
+a pathologist may want to learn about new medical devices
+or drug developments; 
+business researchers are interested in
+understanding user behavior in an online community; 
+and social scientists may be interested in learning new computational models
+that explain certain social phenomena.
+Inter-disciplinary review
+panels and funding agencies often need to make decisions on proposals
+from a wide range of newly emerging areas. Thus they have to learn
+about the development of ideas in a new discipline and be able to
+relate their expertise to the proposals.
+
+In this paper, we present Surveyor, a summary generation system that
+addresses such needs by generating surveys of key developments on a
+research topic.  The solution that we propose uses different sources
+of information (i.e., source texts and citations) and exploits the
+citation network to produce summaries that compete expert-written
+surveys.
+
+Previous work has noted the difference between conventional
+multi-document summarization and summarizing scientific
+literature~\cite{mohammad-EtAl:2009:NAACLHLT09}.  In the case of
+multi-document summarization, the goal is to produce a readable
+presentation of multiple documents, whereas in the case of technical
+survey creation, the goal is to convey the key features and basic
+underpinnings of a particular field, temporal developments, important
+contributions, emergence of sub-fields, and basic definitions and
+examples that enable rapid understanding of a field by non-experts.
+
+One example of expert-written surveys is the set of
+end-of-chapter summaries and ``historical notes'' that appear at the
+end of chapters in the \emph{Speech and Language Processing}
+textbook~\cite{JurafskyM08}. Each summary or historical note is about
+a sub-field in Natural Language Processing (NLP), and includes
+information about the background,  early and recent developments,
+state-of-the-art results, etc. Table~\ref{tbl:jm} shows parts
+of the historical notes that Jurafsky and Martin wrote for ``Machine
+Translation.'' The example shows that this survey includes various
+information for non-expert readers including some history, early
+developments, toolkits, evaluations and additional references and
+tutorials for further reading. 
+
+\begin{table*}
+\centering
+{\scriptsize
+\begin{tabular}{p{1cm}cp{14cm}} \hline
+\multicolumn{3}{c}{{\bf Historical Notes: Machine Translation}}\\ \hline
+history & & {\it Work on models of the process and goals of translation goes back at least to Saint Jerome in the fourth century (Kelley, 1979)...}\\ [1.5ex]
+%& & {\it ... The late 1970s saw the birth of another wave of academic interest in MT. One strand attempted to apply meaning-based techniques developed for story understanding and knowledge engineering (Carbonell et al., 1981)...} \\ [2ex]
+early work & & {\it ... At the same time, the IBM group, drawing directly on algorithms for speech recognition (many of which had themselves been developed originally at IBM!) proposed the Candide system, based on the IBM statistical models we have described (Brown et al., 1990, 1993) ...}\\ [1.5ex]
+tools & & {\it ... Progress was made hugely easier by the development of publicly-available toolkits, particularly tools extended from  the EGYPT toolkit developed by the Statistical Machine Translation team in during the summer 1999 research workshop at the Center for Language and Speech Processing at the Johns Hopkins University. These include the GIZA++ aligner, developed by Franz Joseph Och by extending the GIZA toolkit (Och and Ney, 2003), which implements IBM models 1-5 as well as the HMM alignment model ...} \\ [1.5ex]
+evaluations & & {\it ... These included the use of doze and Shannon tasks to measure intelligibility as well as a metric of edit distance from a human translation, the intuition that underlies all modern automatic evaluation metrics like BLEU ...}\\ [1.5ex]
+other resources & & {\it ... Nirenburg et al. (2002) is a comprehensive collection of classic readings in MT. Knight (1999b) is an excellent tutorial introduction to statistical MT ...}\\ \hline
+\end{tabular}}
+\caption{Part of the historical note in ~\cite{JurafskyM08} signifying the history, early and late developments and evaluation in ``machine translation''}\label{tbl:jm}
+\end{table*}
+
+The goal of our paper is to present a framework that generates
+summaries similar to the one in Table~\ref{tbl:jm}. After a review of
+related work in Section~\ref{sec:rel}, we present our data
+preparation, including scanning and parsing citations in
+\cite{JurafskyM08} and the ACL Anthology Network~\cite{radev&al2009},
+which is used as the source for summary generation in
+Section~\ref{sec:data}. We propose a new approach that repurposes both
+citations and source text of papers and exploits the citation graph to
+build a survey in Section~\ref{sec:approach}. Finally,
+Section~\ref{sec:exp} present our experiments and results on the
+Jurafsky and Martin textbook and Section~\ref{sec:con} concludes the
+paper.

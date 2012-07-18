@@ -1,0 +1,83 @@
+\section{Datasets}
+\label{sec:data}
+
+
+\ignore{
+\subsection{767}
+The first author of this paper organized a seminar on Advanced NLP and IR
+in Winter 2006 and Winter 2010. As part of the seminar, the students
+in the class took turns and presented surveys of specific topics in
+NLP and IR, two or three each week. In addition to their presentation, 
+the students had to write chapter-length surveys of their topic. 
+
+\begin{table*}[htbp]
+\begin{tabular}{|l|}
+\hline
+Sentiment and Polarity Extraction - Arzucan Ozgur \\
+Science Maps - Matt Simmons \\
+Document Similarity - Ben Montgomery \\
+Graph Random walks for Clustering, Classification, and Ranking - Ahmed Hassan \\
+Language Networks - Yang Liu \\
+String Kernels and Tree Kernels - Pradeep Muthukrishnan: \\
+Spectral graph-based methods for NLP - Mike Bommarito \\
+Sentence Simplification / Compression - Amjad Abu-Jbara \\
+Text as Representation, Structured Data from Unstructured Text - Terry Szymanski \\
+Automatic Structured Feature Mining for Instance Classification - Shilpa Arora \\
+Information Diffusion In Graphs - Vahed Qazvinian \\
+Recent Ideas in Summarization - Arzucan Ozgur \\
+Evaluation methods in NLP - Abe Gong \\
+Web Search Log Mining - Ahmed Hassan \\
+Mining Online Discussions - Xiao Wei \\
+Bibliographic Text Mining - Matt Simmons \\
+Financial Networks - Mike Bommarito \\
+Query Expansion - Ben Montgomery \\
+Topic Segmentation - Vaibhav Mallya \\
+Combining link-based and text-based networks - Pradeep Muthukrishnan \\
+Mincuts - Yang Liu \\
+Multiple Sequence Alignment - Terry Szymanski \\
+Computational Advertising - Vahed Qazvinian \\
+Active learning - Abe Gong \\
+\hline
+\end{tabular}
+\end{table*}
+}
+
+In this section, we first describe the ACL Anthology Network, which is used as the source dataset for generating system surveys. We then explain our gold standard preparation from the Jurafsky and Martin textbook.
+
+\subsection{The ACL Anthology Network}
+The ACL Anthology\footnote{http://www.aclweb.org/anthology-new/} includes all papers published by ACL and related organizations as 
+well as the Computational Linguistics journal over a period of four decades. 
+\newcite{radev&al2009} have further processed this Anthology to produce the the ACL Anthology Network (AAN)\footnote{http://clair.si.umich.edu/clair/anthology/}.  The AAN includes more than $16,000$ papers, each distinguished with a unique ACL ID, together with their full-texts, abstracts, and citation information. It also includes other valuable meta-data such as author affiliations, citation and collaboration networks, and various centrality measures~\cite{radev&al2009,Joseph&Radev07}.
+In our experiments, we generate a set of automatic summaries using the papers in AAN.
+
+\subsection{Gold Standard Preparation}
+We use 2 sets of gold standards both extracted from the Jurafsky and Martin textbook\footnote{we use the shorthand ``JM book'' in the rest of this paper} \emph{Speech and Language Processing} ~\cite{JurafskyM08}: end-of-chapter summaries and the historical notes.
+
+\subsubsection{End-of-chapter Summaries}
+We were fortunate to obtain the end of chapter summaries in the JM book in text format. Each summary is generally a few paragraphs long and explains the main points discussed in the chapter. We will refer to these gold standards as {\bf chapter summaries}.
+
+\subsubsection{Historical Notes}
+\label{sec:hist}
+We also use the  {\bf historical notes} at the end of each chapter in the JM book as the second set of gold standards.
+Each historical note, corresponding to one chapter, is generally 1-2 pages long and summarizes the history, early developments and the state-of-art methods in each NLP topic.
+
+In order to prepare this gold standard, we first scanned the historical notes of the chapters as well as the references in the JM book. Next, we used a commercial OCR tool to convert the scanned files to plain text.
+We further processed the OCR output by removing end-of-line hyphens and fixing sentence fragments and line breaks.\footnote{Parsing the bibliographies from the OCR output is more challenging than historical notes because of the smaller fonts and frequent out-of-vocabulary words such as author names. However, OCR errors are tolerated in bibliographies since we use minimum edit distance to find the corresponding papers in AAN.}
+Cleaning-up references included identifying entry boundaries and combining multiple lines corresponding to one entry. 
+ 
+We used the extracted references and citations in each historical note to extract the set of papers that are cited by ~\cite{JurafskyM08} and are part of AAN. 
+We use these papers as the seed source papers to generate automatic summaries. 
+To extract the list of AAN papers that are cited in each historical note, we first map each reference in the JM book to an AAN paper. 
+First, for each reference we represent it by a vector of metadata that consists of the author names, title (stop words removed), canonical name of the venue, and publication year. 
+We then compare these vectors with with AAN metadata and find the closest match by computing the minimum edit distance of corresponding metadata vectors when the publication dates agree. 
+Finally, we manually verify the output of the above procedure and correct mismatches. 
+%If a mismatch is found during manual verification, we either immediately discard the item if it is a non-AAN citation, or look up the paper manually.
+
+\ignore{
+The JM book uses the same citation convention as the ACL Anthology: ``first author (\& second author) (et al.), year''.
+Using the list of matches between JM references list and AAN papers, we extract the list of papers that are cited in each historical note and are part of the AAN. We map a citation to a bibliography item by comparing the publication year and up to 2 authors. We resolve possible ties by manually identifying the right cited paper. 
+}
+
+
+
+

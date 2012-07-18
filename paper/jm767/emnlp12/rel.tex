@@ -1,0 +1,125 @@
+\section{Related Work}
+\label{sec:rel}
+In this section, we first summarize previous work on citation analysis and summarization, then
+we review graph-based summarization systems. 
+
+\subsection{Citation Analysis}
+Citation patterns and collaboration networks have been studied
+before~\cite{Newman01a,leskovec2005graphs}.  \newcite{Bradshaw03}
+introduces ``Reference Directed Indexing'' to improve the results of a
+search engine by using citations.
+\newcite{Nanba&Okumura99} report that co-citation implies similarities
+by showing that the textual similarity of co-cited papers is
+proportional to the proximity of their citations in the citing
+article~\cite{NanbaKO00}.  Previous work uses citation role
+classification for survey generation
+\cite{teufel2006,Nanba&Okumura99}.  Using 160 pre-defined phrase-based
+rules, they analyze citation sentences and automatically
+categorize citations into three types: (1) theories and methods; (2)
+problems or gaps; (3) neither \cite{NanbaKO00,NanbaEtal04}.
+
+Previous work has used abstracts of scientific articles to produce
+summaries \cite{Kupiec95}.  However, other work has shown that 
+citation sentences are as important in understanding the main
+contributions of a paper.  \newcite{Elkiss&al.08} perform a
+large-scale study on citations and their importance. Their experiments
+on more than $2,000$ articles from the free PubMedCentral repository
+suggest that the average cosine between sentences in the set of
+citations to an article is consistently higher than that of its
+abstract.  
+%They also show that this number is much larger than the
+%average cosine of the citation sentences with that of a randomly
+%chosen document, and so is the case for the abstract.
+%Finally, they concluded that the content of citing sentences has much greater uniformity than the contents of the corresponding abstract, implying that citations are more focused and contain additional information that does not appear in abstracts.
+
+\newcite{kan2002} use annotated bibliographies for summarization and
+suggest that summaries should include metadata and critical document
+features as well as the prominent content-based
+features. \newcite{simone2007} describe a new reference task and show
+high annotator agreement as well as an improvement on the performance
+of \emph{argumentative zoning} \cite{teufel2005}.  In argumentative
+zoning---a rhetorical classification task---seven classes (Own, Other,
+Background, Textual, Aim, Basis, and Contrast) are used to label
+sentences according to their roles in the author's argument.
+
+\ignore{
+Little work has been done on automatic citation extraction from
+research papers. \newcite{kaplan&al.2009} define``citation-site'' as
+the block of text in which the cited paper is discussed. They use a
+machine learning method for extracting citations from research papers
+and evaluates the results using 4 annotated articles.}
+
+Previously, \newcite{Qazvinian&Radev08a} show that the set of
+citations to a paper describe the most important contributions of a
+given paper.  \newcite{qazvinian2010citation} propose a keyphrase
+extraction system to extract such contributions and produce a summary
+that covers them.
+\newcite{mohammad-EtAl:2009:NAACLHLT09} extend citation summarization
+to a set of papers that represent a topic and show that citations can
+be employed to effectively produce surveys for two Natural Language
+Processing tasks: Question Answering and Dependency Parsing.
+
+\ignore{
+A framework of more coherent summarization system is proposed in
+\cite{qazvinian-radev:2010:ACL,abu2011coherent}. The former paper
+proposes a framework to extract implicit citations and context
+information to improve information coverage, and the latter presents a
+pipeline to produce cleaner summaries from citations.}
+
+In the Elsevier's Grand Challenge 2009, a new research tool 
+Citation-Sensitive In-Browser Summarizer (CSIBS)~\cite{WanPD10}
+ was designed to facilitate biomedical researchers reviewing academic literature.
+In the scenario of one reading a document, a large number of citations 
+point to a set of cited documents. 
+Based on user requirements analysis and citation context analysis,
+the CSIBS will recommend the most relevant articles
+to the user.
+
+\subsection{Graph-based summarization systems}
+
+As a representative of graph-based methods applied to summarization,
+LexRank~\cite{Erkan&Radev04c} constructs a graph whose vertices are
+sentences from all the documents in a cluster. The graph is
+characterized by a sentence connectivity matrix representing  the Markov
+transition probabilities among vertices. Sentences of high
+centralities are then selected to form the summary
+%, following the
+%intuition that salient sentences or passages should receive more
+%``votes" or ``recommendations" among each others, via higher value of
+%transition probabilities associated with links.  
+C-LexRank ~\cite{Qazvinian&Radev08a} extends the framework by
+incorporating community clustering to address the need of covering
+different aspects of contributions in a scientific work.  We use both
+methods as baselines in our experiment. 
+
+Motivated by the similar idea of applying PageRank and HITS
+~\cite{Kleinberg:1999} on graphs of sentences,
+~\newcite{rada04textrank} present TextRank, a system for keyword
+extraction and sentence extraction, and successfully apply it to
+producing extractive summaries.  The system is proved scalable to
+multi-document summarization tasks, and also language-independent
+~\cite{Mihalcea2005}.
+
+More recent work has integrated link analysis and other techniques as
+re-ranking process to improve the effectiveness of summarization based
+on graph-based ranking. ~\newcite{Wan2006} incorporate
+\emph{information richness} and \emph{information novelty} into the
+criteria of selecting important sentences. These two parameters are
+determined by a sentence affinity graph reflecting the semantic
+relationships between sentences. They also distinguish between
+intra-document and inter-document links, biasing the latter for
+information richness computation.
+%A diversity penalty process follows to penalize redundant information. 
+%The whole process and be viewed as a re-ranking process. 
+
+Another optimization ClusterCMRW (and ClusterHITS) proposed in
+~\cite{Wan2008a} assumes that a given document set covers a few topic
+themes or subtopics that are of different degrees of importance. The
+idea of clustering sentences according to subtopics is comparable to
+C-LexRank. Designed for summarizing scientific contributions,
+C-LexRank looks for a comprehensive coverage of each subtopic or
+contribution aspect, while ClusterCMRW (and ClusterHITS) focus at
+ranking on the cluster level, so that sentence centralities are scaled
+by the centralities of the clusters in which they belong.
+
+

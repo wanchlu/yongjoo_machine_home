@@ -1,0 +1,51 @@
+\section{The Bipartite Graph Model}
+\subsection{Graph Construction}
+
+We first formulate a classification task with the following parameters:
+
+\begin{enumerate}[a.]
+
+    \item A set of $n$ examples, among which only $p$ of them has been labeled
+        ($n >> p$).
+        The $p$ labeled examples and their labels form a training set:
+        $(X_1, y_1), (X_2, y_2), ..., (X_p, y_p)$;
+
+    \item Denote the rest of $n-p$ unlabeled examples
+        $X_{p+1}, X_{p+2}, ... X_{n}$; 
+
+    \item Each example's feature is a subset of the norminal feature set 
+        $F = \{f_1, f_2, ..., f_m\}$. 
+        Write $X_i = (X_i^1, X_i^2, ..., X_i^m)$, and $X_i^j =
+        1$ if example $X_i$ has nominal feature $f_j$, otherwise $X_i^j = 0$. 
+
+\end{enumerate}
+The goal is to predict the labels of any (all) unlabeled examples.
+
+To construct the bipartite graph $G = (X, F, E)$ ($X, F$ are node sets and $E$
+is edge set), we create examples nodes for each
+example $X=\{X_1, X_2, ..., X_n\}$, and feature nodes for each nominal feature
+$F=\{f_1, f_2, ..., f_m\}$.
+We connect an example node and a feature node using an undirected
+edge if and only if the feature is present in the example, $(X_i, f_i) \in E
+\mbox{ iff } X_i^j = 1$.  
+
+
+\subsection{Random Walk}
+
+// Describe the random walk hitting time method.
+
+// add algorithm
+
+
+\subsection{Label Propagation}
+
+
+An alternative impelmentation that solves the same problems as performing random
+walks is label propagation.
+
+
+// add algorithm of tumbl
+
+// explain or prove the equivalence of the two algorithms theoretically
+
+// cite Zhu's 2002 paper

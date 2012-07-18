@@ -1,0 +1,37 @@
+
+\subsection{Nugget-based Evaluations}
+In addition to Rouge, we evaluate the quality of the automatic summaries using the \emph{pyramid score}. This evaluation metric relies on human judgments and manual nugget annotations~\cite{jimmy06,nenkova2004ecs,Wesley:2004,Vorhees:2003}. In pyramid evaluation, different factoids \cite{vahed&radev2011} obtain different weights, and the quality of a summary is measured using the F-measure calculated from its factoid recall and  precision values. 
+
+In order to evaluate the performance of the proposed graph-based algorithm with respect to human extracted nuggets, we use the QA dataset from~\cite{mohammad-EtAl:2009:NAACLHLT09}. In their work, \newcite{mohammad-EtAl:2009:NAACLHLT09} performed their experiments on  a set of papers in the research area of Question Answering (QA).
+They selected the papers in each corpus by matching the phrases ``Question Answering'' in the title and the content of AAN papers. The QA dataset contains 10 papers cited in 146 sentences from 62 papers in AAN.
+
+\newcite{mohammad-EtAl:2009:NAACLHLT09} created a set of gold standards for the QA data from citation texts and abstracts, respectively.
+They asked three human judges to identify important nuggets of information worth including in a survey from QA citations and QA abstract.
+More particularly, they instruct annotators to extract prioritized lists of 2--8 nuggets from abstracts and citations of each paper. These lists are them merged to build the pyramid model that can be used to evaluate automatically generated summaries.
+
+We use this dataset to evaluate the performance of the HITS algorithm using the nugget-based pyramid method. We obtain the citations and the nuggets for the QA papers, which were extracted from AAN's 2009 release. 
+We also obtained the source text of the QA papers from the most recent AAN papers to build the graph. 
+Since the nuggets that were extracted by \newcite{mohammad-EtAl:2009:NAACLHLT09} were from citations and abstracts, and that our source papers may not be identical to the original set, we only evaluate automatic summaries that are generated using citations in this section, and not the full-text.
+
+When evaluated on this data, the HITS algorithm outperforms LexRank and C-LexRank. Table~\ref{tab:nugget} shows that the summaries generated using  the HITS model that employs weights on network edges produces higher quality summaries that LexRank and C-LexRank as well as the  Random summarizer, which pick sentences from citation sets randomly.
+
+\begin{table}
+{\small
+\centering
+\begin{tabular}{l cc}
+\hline
+\multicolumn{3}{c}{\bf System Performance: Pyramid F-measure}\\ \hline
+& \multicolumn{2}{c}{\bf Nuggets:}\\ 
+System & QA--CT & QA--AB\\ \hline \hline
+{\bf Random}                    & 0.321 & 0.395\\
+{\bf LexRank}                   & 0.295 & 0.320\\
+{\bf C-LexRank}                 & 0.434 & 0.388\\
+{\bf HITS}                      & 0.421 & 0.347\\
+{\bf HITS with weights}         & {\bf 0.474} & {\bf 0.462}\\
+{\bf HITS with weights/priors}  & 0.149 & 0.101\\
+\hline
+\end{tabular}}
+\caption{Pyramid F-measure scores of automatic surveys of QA data. The surveys are evaluated using nuggets drawn from QA citation texts (QA--CT) and QA abstracts (QA--AB).}
+\label{tab:nugget}
+\end{table}
+

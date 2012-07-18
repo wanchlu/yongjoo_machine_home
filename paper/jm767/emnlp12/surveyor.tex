@@ -1,0 +1,75 @@
+% File acl2012.tex
+%
+% Contact: gdzhou@suda.edu.cn
+%%
+%% Based on the style files for ACL2008 by Joakim Nivre and Noah Smith
+%% and that of ACL2010 by Jing-Shin Chang and Philipp Koehn
+
+
+\documentclass[11pt]{article}
+\usepackage{acl2012}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{balance}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{url}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\setlength\titlebox{3.5cm}    % Expanding the titlebox
+
+\newcommand{\ignore}[1]{}
+
+\newcommand{\B}{\mathcal{B}} 
+
+\title{Surveyor: Generating Scientific Historical Notes}
+
+
+\ignore{
+\author{Vahed Qazvinian \and Amjad Abu-Jbara \and  Wanchen Lu \and  Aditya Tayade \and Dragomir R. Radev \\
+  University of Michigan, Ann Arbor\\
+  {\tt \{radev,vahed,amjbara,wanchlu,atayade\}@umich.edu} \\
+}
+}
+
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We describe Surveyor, a system that automatically generates surveys of
+collections of papers that represent scientific domains. Surveyor
+extracts the main contributions of the underlying articles by
+using heterogeneous sources: source texts and citations.  Using
+Surveyor, we generate summaries of 10 topics in Natural Language
+Processing corresponding to 10 chapters from the Jurafsky and Martin
+textbook \emph{Speech and Language Processing}~\cite{JurafskyM08}. We evaluate the generated
+summaries by comparing them to end-of-chapter summaries and
+historical notes from the textbook and show that using heterogeneous
+sources results in higher Rouge scores than state-of-art
+summarization systems. Finally, we present our experiments on a benchmark dataset using nugget-based pyramid score. We show that our proposed model can outperform previous survey generation systems (such as C-LexRank) by 9.2\% when citation nuggets are employed.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%
+\input{intro}
+%%%%%%%%%%%%%%%%%%%%%
+\input{rel}
+%%%%%%%%%%%%%%%%%%%%%
+\input{data}
+%%%%%%%%%%%%%%%%%%%%%
+\input{approach}
+%%%%%%%%%%%%%%%%%%%%%
+\input{exp}
+%%%%%%%%%%%%%%%%%%%%%
+\input{con}
+
+
+
+
+\balance
+\bibliographystyle{acl2012}
+\bibliography{ref}
+
+\end{document}

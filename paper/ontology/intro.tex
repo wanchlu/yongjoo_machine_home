@@ -1,0 +1,64 @@
+\section{Introduction}
+
+Over the last decade, ontology engineering has received considerable attention
+in the AI community, accelerated by the Semantic Web movement \cite{}. Automatic or
+semi-automatic ontology induction and ontology acquisition methodologies that
+utilize machine learning and natural language processing techniques to discover
+ontological knowledge from various data resources have been leading the research
+trend.
+
+In this paper we describe a weakly-supervised construction of a light-weight ontology for the
+computational linguistics research community, based on a corpus of papers published
+during the last few decades. This task can be categorized to automatic ontology population, 
+or Ontology Driven Information Extraction ~\cite{Bontcheva_Cunningham_2003}, 
+whose goal is extracting and classifying instances of concepts and relations predefined in an ontology.
+The motivation of developing an ontology for scientific research is originated
+from the increasing interest of studying the dynamics of reasearch communities. 
+
+This is in contrast to standard upper ontologies that incorporate philosophical
+understanding of concepts' categories  and designed to be applicable to general tasks,
+ such as SUMO (Suggested Upper Merged Ontology) and Cyc upper ontology
+(OpenCyc). 
+Our ontology structure is also different to the various domain
+ ontologies and task ontologies that already exist. (How?...)
+
+%\section{Ontology Components}
+Although hierarchical struture is commonly used in standard ontologies, to better serve the application purposes,  we
+define the ontology in the format of a graph, each vertex representing a concept
+, with a required class tag attaching to it, representing the
+concept class it belongs to. 
+
+\textbf{Concept Classes}
+
+We define the following classes in the ontology:
+\emph{Task(T), Method/Algorithm(M), Software/Tool(S),
+Language(L), Corpus(C), Other(O)}
+%a detailed explanation w/ examples
+
+\textbf{Relations} 
+
+There are two basic types of relations: intra-class relation and
+inter-class relation. 
+
+Inter-class relations are undirectional, and the semantic 
+interpretation is uniquely decided by the classes of the two concepts. For example, if the
+concept ``Part-Of-Speech tagging'' of class \emph{T} is connected to the concept
+``Hidden Markov Model''  of class \emph{M}, there should be a unique interpretation
+``\emph{isUsedFor} (Hidden Markov Model, Part-Of-Speech tagging)''. Except for the \emph{Language} class, whose relations are constrained to \emph{T}, \emph{S} or \emph{C}, every possible pair of classes have a uniquely defined relation. (add definitions to appendix)
+
+
+Intra-class relations are directional and defined only within class \emph{T}. 
+There are two kinds of relations between two Task concepts: ``\emph{ISA}'' and 
+``\emph{isUsedIn}''.
+``\emph{ISA} (A, B)'' relation describes task A as a 
+special case of task B, or a subfield of B. For example, 
+we can have \emph{ISA} (Statistical Machine Translation, Machine Translation).
+\emph{isUsedIn}(A, B) relation describes task A as a sub-component of task B, which
+means A is performed to achieve B. Similar to the \emph{isUsedFor} (M, T) relation, 
+This is a ``soft'' link since usually a path
+to approach a problem is highly variable among researchers.% We can have
+%\emph{isUsedIn} (Anaphora Resolution, Question and Answering)
+
+
+%Our goal is to reflect a science map of the computational linguistics community
+%with its latest progress. From the ontology, it should be easily 

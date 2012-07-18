@@ -1,0 +1,30 @@
+\section{Evaluation}
+
+The ontology graph constructed using the above methods contains [ ] vertices
+(concepts) and [ ] links (relations). Since we are lack of a gold standard existing ontology
+that encodes all relations we are interested in, we adopt a data-driven
+appraoch, described by ~\cite{brewster_et_al_2004b}.  We sample the results by taking
+a part of the ontology that is around a specific concept out and evaluate its
+fitness to that particular domain of knowledge. We picked [ ] well-studied NLP tasks
+(enumerate... ) and selected for each topic a comprehensive survey article (the
+surveys are not in the corpus we used to build the ontology). An ideal ontology
+should encode every concept and relation of interests that appear in the survey
+article, and also free of false relations or irrelevant concepts. The evaluation 
+is seperately done for the two aspects: concepts and relations. 
+
+\subsection{Concept Level Evaluation}
+ extracted a set of relevant domain-specific terms from the corpus of documents, 
+using latent semantic analysis. The amount of overlap 
+between the domain-specific terms and the terms appearing 
+in the ontology (e.g. as names of concepts) can then be used 
+to measure the fit between the ontology and the corpu
+
+\subsection{Relation Level Evaluation}
+
+To create an accurate and complete gold standard for relations, we extracted all
+sentences in the survey article that contain at least two concepts in the
+ontology or one concept and a pronoun (considering correfence)
+and manually extracted the relations of interests. 
+In calculating the precision, we only consider the relations between concepts
+that both are validated by the survey (overlapping concepts in the concept level
+evaluation).

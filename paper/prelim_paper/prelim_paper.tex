@@ -1,0 +1,67 @@
+%
+% File acl2012.tex
+%
+% Contact: Maggie Li (cswjli@comp.polyu.edu.hk), Michael White (mwhite@ling.osu.edu)
+%%
+%% Based on the style files for ACL2008 by Joakim Nivre and Noah Smith
+%% and that of ACL2010 by Jing-Shin Chang and Philipp Koehn
+
+
+\documentclass[11pt]{article}
+\usepackage{acl2012}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{url}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\setlength\titlebox{3.5cm}    % Expanding the titlebox
+\newcommand{\ignore}[1]{}
+
+%\newcommand{\B}{\mathcal{B}} 
+
+\title{A Model of Random Walks on Bipartite Graph for Classification Problems}
+
+\ignore{
+\author{First Author \\
+}
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We introduce a general framework of semi-supervised graphical model that is
+applicable to any classification tasks that can be represented with norminal
+features, requiring only a handhul of labeled examples.
+We conducted experiments on three different NLP tasks: prepositional phrase 
+attachment, named entity classification, and domain-specific terminology extraction. 
+We show both theoretically and empirically how the graph structure helps making 
+use of large amount of unlabeled data.
+Based on the empirically study of underlying correlations between graph structures and
+classification performance, we incorporate active learning techniques to 
+achieve the best learning rate with minimum requirement on labeled data. 
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%
+\input{intro}
+%%%%%%%%%%%%%%%%%%%%%
+\input{approach}
+%%%%%%%%%%%%%%%%%%%%%
+\input{al}
+
+\input{exp}
+%%%%%%%%%%%%%%%%%%%%%
+\input{rel}
+%%%%%%%%%%%%%%%%%%%%%
+\input{con}
+
+
+
+\bibliographystyle{acl2012}
+\bibliography{ref}
+
+\end{document}
