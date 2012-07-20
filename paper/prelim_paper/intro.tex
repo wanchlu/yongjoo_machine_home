@@ -1,37 +1,52 @@
 \section{Introduction}
 
-Semi-supervised learning on graphs is a direction that has drawn great
-attentions from NLP researchers. %The general idea behind various semi-supervised
 %graphical methods is constructing a graph can be automated, while 
-An abstract framework that we have often seen in graph based NLP is constructing
-a graph in which each vertex represents an instance which can
-be a word, a concept, a sentence, an article etc. Edges
-are connected and weighted according to some manually selected
-function that defines the closeness or similarity of any two instances in the
-context of the application. 
-One possible usage of the graph is to predict the
-property (label) of a node via comparing the distances of this node to other
-nodes with known labels. For example, //add a citation here
+%An abstract framework that we have often seen in graph based NLP is constructing
+%a graph in which each vertex represents an instance which can
+%be a word, a concept, a sentence, an article etc. Edges
+%are connected and weighted according to some manually selected
+%function that defines the closeness or similarity of any two instances in the
+%context of the application. 
+%One possible usage of the graph is to predict the
+%property (label) of a node via comparing the distances of this node to other
+%nodes with known labels. For example, //add a citation here
+%
+%Another information we can obtain from the graph is the importance of a node.
+%We see algorithms such as PageRank\cite{}, HITS\cite{}, and graph based
+%summarization systems\cite{} .
 
-Another information we can obtain from the graph is the importance of a node.
-We see algorithms such as PageRank\cite{}, HITS\cite{}, and graph based
-summarization systems\cite{} .
+Semi-supervised learning is favored by its ability of effectively utilizing
+unlabeled data. Especially in NLP applications, labeled data usually requires
+expensive manual annotation work from linguistics experts, while on the
+contrary, large amount of unlabeled documents and text are easily acquired from
+the web. Among others,
+semi-supervised learning on graphs is a direction that has drawn great
+attentions from NLP researchers. %The general idea behind various semi-supervised
+
+In this paper, we first have an overview of various semi-supervised graph methods in section
+\ref{sec:overview}. In section \ref{sec:approach}, we introduce a model that
+%originated from the common idea the common idea of smooth assumption, while
+presents novelty in its bipartite graph structure and active learning
+capability. 
+Section \ref{sec:experiment} describes the experiments on three datasets for
+different NLP tasks. We empirically evaluate the model and compare with other
+approaches. We look at other work that apply semi-supervised graph
+methods to NLP appications in section \ref{sec:related work}.
 
 
 
-
-In this paper, we introduce a model that shares with many other graphical
-methods the idea of encoding similarities between instances into a graphical
-structure and learning from unlabeled instances, while presents its novelty in
-the following two aspects. First, the graph is bipartite. Example nodes and
-feature nodes form two subsets of the bipartite graph. We will show later this
-can be equivalently converted to a graph consisting of only example nodes
-assuming a special edge weight definition. This
-assumption simplifies the graph construction by a factor of the number of example nodes. 
-Second, we observe from experiment that when the labeled training size is very
-small compared to the entire graph, performance of the model is unstable due to the
-randomness in sampling training examples. We extend the model with an active
-learning technique that intellegently chooses the most ``informative'' unlabeled
-examples to learn. Such property is well appreciated in applications where
-labeled examples are very expensive to obtain.  
-
+%In this paper, we introduce a model that shares with many other graphical
+%methods the idea of encoding similarities between instances into a graphical
+%structure and learning from unlabeled instances, while presents its novelty in
+%the following two aspects. First, the graph is bipartite. Example nodes and
+%feature nodes form two subsets of the bipartite graph. We will show later this
+%can be equivalently converted to a graph consisting of only example nodes
+%assuming a special edge weight definition. This
+%assumption simplifies the graph construction by a factor of the number of example nodes. 
+%Second, we observe from experiment that when the labeled training size is very
+%small compared to the entire graph, performance of the model is unstable due to the
+%randomness in sampling training examples. We extend the model with an active
+%learning technique that intellegently chooses the most ``informative'' unlabeled
+%examples to learn. Such property is well appreciated in applications where
+%labeled examples are very expensive to obtain.  
+%

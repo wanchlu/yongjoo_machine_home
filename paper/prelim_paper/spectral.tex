@@ -1,0 +1,108 @@
+\subsection{Spectral Methods}\label{sec:spec}
+Spectral clustering is an unsupervised graph method. The central role of graph
+Laplacian connects several methods in previous section from the spectral theory
+view. We first look at the formal definitions of normalized, unnormalized graph
+Laplacian and their properties. The rest of the section discusses some points of
+view that connect spectral clustering with other graph methods.
+
+\subsubsection*{Graph Laplacian}\label{sec:specdef}
+
+
+We will be using the following notations to describe an undirected graph $G = (V, E)$:\\
+The node set $V = {x_1, ..., x_n}$;\\
+The adjacency matrix $W = (w_{ij} ) _{i,j = 1, ..., n} $;\\
+The degree of $x_i$, $d_i = \sum_{j=i}^{n}w_{ij}$;\\
+The degree matrix D is the diagonal matrix with degrees $d_1, ..., d_n$ on the diagonal;\\
+
+The unnormalized graph Laplacian is defined as \[L=D-W\] For every function $f: [n]\rightarrow \mathbb{R}  $,
+\begin{equation} 
+f^T L f = \frac{1}{2} \sum_{i,j=1}^{n}w_{ij}(f(x_i)-f(x_j))^2
+\end{equation}
+It's trivially proved that $L$ is positive semi-definite and symmetric. 
+It follows that $L$ has n non-negative eigenvalues, $0 = \lambda_1\leq \lambda_2 \leq ... \leq \lambda_n$. We denote their corresponding eigenvectors $\phi_1, ..., \phi_n$. The spectral decomposition is $L = \sum_{i=1}^n \lambda_i\phi_i\phi_i^T$.
+
+An important property used in spectral clustering is that the number of zero eigenvalues equals the number of connected components in the graph.\\
+
+The normalized graph Laplacian is defined as \[ \mathcal{L} = \mathbf{I} - D^{-1\/2}W D^{-1\/2}\]
+For every function  $f: [n]\rightarrow \mathbb{R}  $,
+
+\begin{equation} 
+f^T \mathcal{L} f = \frac{1}{2} \sum_{i,j=1}^{n}w_{ij}(\frac{f(x_i)}{\sqrt{d_i}}-\frac{f(x_j)}{\sqrt{d_j}})^2
+\end{equation}
+The properties of $L$ discussed above apply to $ \mathcal{L}$.
+\par
+Graph Laplacian in SSL is used to encode the smoothness of function $f$.   For
+example, $f^T L f$ can be used as a regularizer in transductive classification
+since a low value of  $f^T L f$ requires $f$ changing very little in high
+density regions.  In other words, $f^T L f$ makes a ``cluster assumption'' that
+decision boundary of a classifier lies in low density regions.
+
+\subsubsection*{Spectral clustering algorithm}\label{sec:specalg}
+The spectral clustering works as follows: From the first $k$ eigenvectors of $L$,
+$\phi_1, ..., \phi_k$, we span a new space $V \in \mathbb{R}^{n\times k}$ which
+contains the $k$ eigenvectors as columns. Then the data points are mapped to the
+rows of $V$, i.e., for $i = 1, ..., n$, the projection of data point $x_i$ is
+the $i$-th row of $V$. We then perform clustering using traditional methods such as
+k-means on the new projections of data points.
+%
+%Shi and Malik\cite{shi} propose a normalized spectral clustering algorithm, where instead of using the first k eigenvectors of $L$,  they use the k eigenvectors of the generalized eigen problem $L\phi = \lambda D \phi$.  Another way of normalization (Ng et al.\cite{ng2}) uses normalized graph Laplacian $\mathcal{L}$ to compute the k eigenvetors, and normalize the matrix $V$ to such that the row sums have norm $\mathbf{1}$.
+%
+%\subsubsection{Spectral clustering in practice}
+%As has been stated before, the effectiveness of similarity function encoded in  $W$ is substantial to the performance of all graph-based methods, which is beyond the discussion of this section. In additional, spectral clustering is also very sensitive to the choice of graph type and parameters \cite{luxburg} (section \ref{sec:graphconst}).
+%
+%A general problem for unsupervised clustering is how to determine the number of clusters $k$.  The common approach is the eigengap heuristic. In the ideal case when we have $k$  disconnected subgraphs, the clustering is easily solved by  finding the $k$ zero eigenvectors. When the clusters are not perfectly separated (links exist between clusters), we find the eigenvector $\phi_k$ such that $\phi_{k+1} - \phi_{k}$ is relatively large. The eigengap heuristic indicates the data set contains $k$ clusters.
+\subsubsection*{Connection with Graph Cut}
+
+Recall that Mincut can be interpreted as a problem of minimizing the objective function (\ref{eq:mincut}) with the constraints of $f$ being discrete labels and consistent with clamped labels. 
+
+Consider the RatioCut objective function (\ref{eq:ratiocut}), we define $f$    
+\begin{equation}\label{eq:fi}  
+f(x_i) = \left\{ \begin{array}{ll}
+\sqrt{|B|/|A|} & \mbox{if }x_i \in A \\
+\sqrt{|A|/|B|} & \mbox{if }x_i \in B \end{array} \right. \end{equation}
+and thus can rewrite 
+
+\begin{align} 
+    f^TLf & = \frac{1}{2}\sum_{i,j=1}^{n}w_{ij}(f(x_i)-f(x_j))^2 \\
+    &= |V|\cdot RatioCut(A, B)
+\end{align}
+
+If we relax the constraints $f$ being a binary function to real numbers, we are
+able to use the above equation to approximate the problem of minimizing  $
+RatioCut(A, B)$ to minimizing $ f^TLf$ subject to constraint (\ref{eq:fi}),
+which is equivalent to $f \bot \mathbb{1}$ and $\|f\| = \sqrt{n}$. The solution
+of the relaxed problem is the second eigenvector of $L$. The real-valued
+solutions can easily be transformed to labels or classes by taking threshold $0$.
+
+Following similar lines of calculations we can show that relaxed Normalized Ncut
+defined by (\ref{eq:ncut}) can be approximated by normalized spectral
+clustering \cite{shi}.
+
+\subsubsection*{Connection with Random Walk}
+
+From the random walk point of view, we define the transition matrix $P$ as
+\[P = D^{-1}W\]
+The stationary probability $\pi_i = d_i/\sum_{j,k=1}^{n} w_{jk}$ is unique if
+the graph is connected and non-bipartite. For disjoint subset $A$,$ B$, denote
+$P(B|A)$ as the the probability of a random walk starting with a node in $A$
+ends at a node in $B$. It has been proved that \[Ncut(A, B) = P(A|B) + P(B|A)\].
+We thus can interprete the problem of minimizing Ncut equivalently as a
+partition of the graph such that random walks seldom transit across different
+classes. This consequently relates random walks to the normalized graph
+Laplacian.
+
+Another concept that connects random walks with graph Laplacian is the commute
+distance. The commute distance is the expected time it takes for a random walker
+starting at $x_i$ to travel to $x_j$ and then back to $x_i$.  
+Nodes are closer if there exist multiple
+paths so the commute distances are shorter in dense regions. The commute
+distance can be computed from the generalized inverse of the graph Laplacian
+$L$ \cite{klein}. 
+
+%\subsubsection{Spectual Method in SSL: Spectual Graph Transducer}
+%
+%Joachims\cite{sgt} introduces the transductive version of k-NN graph and the Spectral Graph Transducer (SGT), which uses spectral Laplacian to effectively solve the k-NN problem. It also provides a general review of several SSL approaches: transductive SVM, s-t mincuts and Co-trainig. Their connections, strengths and drawbacks are discussed.
+%Experiment results of TSVM, kNN, SGT on six datasets are reported.
+%\par
+%Pham et al.~\cite{pham} later applied the SGT algorithm to WSD and combined it with co-training.
+%

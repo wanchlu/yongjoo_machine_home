@@ -1,32 +1,79 @@
 \section{Related Work}
 
-1) Relation to Zhu's method harmonic function and Gaussian fields
+In this section we review the related work where semi-supervised graphical
+models are successfully applied to various NLP tasks.
 
--- distribution assumption
+\subsection*{Sentence subjectivity classification using Mincut}
 
-Zhu's method assumes Gaussian random fields, the propability distribution of random
-walk is a continuous Gaussian distribution on the reverse of the distance
-between any two nodes. The graph is fully connected. 
+\cite{pang04} applied Mincut to a graph constructed of individual
+sentences as nodes to classify whether a sentence is subjective or objective.  
+Only two nodes $s$ and $t$ are labeled initially, representing hte "subjective"
+class and "objective" class. They assign edge weight $w_{ij} = assoc(x_i,
+x_j)$ for all pairs of sentence nodes   
+and weights $ind1(x_i)$, $ind2(x_i)$ to the edges connecting $x_i$ and the $s,    
+t$ nodes.\par 
 
-
-It is a good model when the geometric distance is well defined.
-
-In the bipartite graph model, the propability of one random step is propotional to the number of
-common features shared by the two example nodes. It is actually the dot product
-of two examples (recall that an example is a vector of dimention $m$).
-If the number of features connected to every example 
-is same, i.e. every example has same magnitude, like in the pp attachment case,
-then it's also cosine). The random walk propability is a discrete distribution.
-
--- advantage of tumbl
-
-graph construction is cheap: $O(nm)$, Zhu's method needs
-to compute a $n \times n$ weight matrix, where each entry contains calculation
-of distance, so the complexity is $O(n^2m)$
-
-2) random walk/ label propagation applied to NLP tasks
-
-Todo: check the related work cited in the word polarity paper, 
- e.g. Rao (2009) for sentiment classification
+The notation $assoc(x_i, x_j)$ (short for ``association'') is a similarity
+metric of how likely the two sentences will be in the same         
+subjectivity class. In the experiments it is calculated by a                                        
+\emph{proximity} function of two sentences from a same document.
+$ind1(x_i)$,  $ind2(x_i)$ (short for ``individual'') for sentence $x_i$ are
+non negative possibilities that the sentence belongs to  
+the two subjectivity classes. 
+The scores can be priorly obtained from
+a first-pass classifier using sentence features and employing linguistic
+knowledge of sentiment indicators. The authors use unigram features to train a
+Naive Bayes classifier as the first-pass classifier.
+They then run a Mincut algorithm on the constructed graph and obtain the
+subjectivity classes for individual sentences. 
 
 
+\subsection*{Word Sense Disambiguation (WSD) using label propagation}
+
+ It has been shown that iterative label propagation (LP) algorithm converges to
+ the harmonic function. \cite{niu05} implement an LP classifier for
+ the WSD task. Their graph is constructed from labeled and unlabeled examples
+ drawn from the standard SENSEVAL-3 task set and two other benchmark corpora. 
+  The weighting of the graph is calculated using 
+  contextual features, including part-of-speech of neighboring
+  words with position information, unordered single words in topical context,
+  and local collocations \cite{niu05}. 
+  The graph is built as a kNN graph, namely, two nodes are connected if either
+  one is within the k nearest neighbor of the other, by either the cosine or 
+  the JS divergence distance metric.
+ 
+ On the same WSD task utilizing the LP algorithm, \cite{alex}
+  proposed a data-driven approach for graph construction. It learns a projection
+  from initial feature vector to a subspace. The new graph construction method
+  is proved to be improving performance of the LP
+  classification for WSD task.
+
+\subsection*{Sentiment classification using label propagation and Mincut}
+
+ \cite{rao} build a lexical graph  of unlabeled and
+ labeled nodes, representing words that can be either positive or negative.
+ word that can be either positive or negative. Edges represent some
+ semantic relatedness that can be constructed using resources like WordNet or
+ other thesaurus. They evaluate two semi-supervised methods: Mincut (including
+ its variant randomized Mincut) and label propagation on the word sentiment
+ classification task. 
+
+ \cite{Blair08} use a similar label propagation method on a
+ lexical graph built from WordNet, where a small set of words with known
+ polarities are seeds. They predict sentiment of more words on the lexical graph
+ to augment the sentiment word lexicon. \cite{brody} use
+ label propagation over a graph constructed of adjectives to classify
+ sentiments.
+
+
+ \subsection*{Multi-document summarization using random walks}
+
+ Lexrank \cite{lexrank} is a graph-based model for calculating sentence salience
+ and has been applied to multi-document summarization. The graph consists of sentence
+ nodes and edges represent the similarity of sentences, 
+which can be cosine similarity with a cutoff threshold, or other distance
+ measures. A salient sentence should share similar information with many
+ sentences and is favored to be selected into the summary. Lexrank adopts the
+ damping factor notion used in PageRank \cite{pagerank}, which simulates a small
+ probability of randomness (jumping to a random node instead of following the
+ distribution of edges).

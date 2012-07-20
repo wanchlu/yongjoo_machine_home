@@ -100,6 +100,21 @@ class BipartiteGraph {
 		return min_risk_id;
 	}
 	
+	public Integer GetRandomUnlabeledId () {
+		int unlabeled_size = example_node_set.GetTotalSize() - example_node_set.GetLabeledSize();
+		Random rand = new Random ();
+		int ii = rand.nextInt(unlabeled_size);
+		int counter = 0;
+		int id = example_node_set.GetSeedSize();
+		while (counter <= ii) {
+			if (example_node_set.GetExampleNode(id).IsLabeled() == false) {
+				counter ++;
+			}
+			id ++;
+		}
+		return id;
+	}
+	
 	public void LabelOneMoreExample (Integer id) {
 		example_node_set.LabelOneMoreExample(id, feature_node_set);
 	}
@@ -494,7 +509,8 @@ class FeatureNode {
 public class HTAL {
 	public static void main(String[] args) {
 	// arguments: 
-	// seed file, test file, feature file, number of addition examples to label	
+	// seed file, test file, feature file, number of addition examples to label
+		// heuristic: 0 random, 1 minimize risk,
 	
 		BipartiteGraph graph = new BipartiteGraph (args[0], args[1], args[2]);
 		
@@ -510,7 +526,13 @@ public class HTAL {
 			graph.ComputeAllHittingTime();
 			System.out.println(" Accuracy: "+graph.Accuracy()+"\n");
 
-			Integer next_to_label = graph.GetMinimumRiskId();
+			Integer next_to_label = 0;
+			if (args[4].equals("1")) {
+				next_to_label = graph.GetMinimumRiskId();
+			} else if (args[4].equals("0")) {
+				next_to_label = graph.GetRandomUnlabeledId();
+			}
+			
 			graph.LabelOneMoreExample(next_to_label);
 			if (Global.verbal >= 3) graph.PrintClassNumbers();
 			if (Global.verbal >= 4)	graph.Print();

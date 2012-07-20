@@ -1,0 +1,231 @@
+\section{An Overview of Semi-Supervised Learning on Graphs}
+
+%It is also known as transductive learning, when the instances of
+%interest are limited to the unlabeled instances observable at training stage, in
+%other words, the predictor does not need to deal with future test data.
+Semi-supervised learning uses both labeled instances and unlabeled instances as
+training data. 
+Typically the unlabeled data size is much larger than labeled data size. The
+learning aims at predicting the labels for unlabeled data.
+
+\subsection{Graph Construction} \label{sec:graphconst}
+Graph-based SSL represents the labeled and unlabeled instances\footnote{We use
+the term ``instance'' and ``example'' interchangabally in this paper.} jointly on a
+graph as nodes. Suppose there is a set of 
+$n$ examples, among which $l$ are labeled, $u$ are unlabeled;
+$n = l + u$, usually $n >> l$.\footnote{Notations introduced in this section will be used throughout
+the paper.}
+Denote $L$ the labeled example set and $U$ the unlabeled example set.
+
+$L:= \{(x_1, y_1), (x_2, y_2), ..., (x_l, y_l)\}$;
+
+$U:= \{x_{l+1}, x_{l+2}, ... x_{l+u}\}$.
+
+Edges are usually undirected, representing the similarity of two instances.
+Denote the edge weight connecting two nodes $x_i$ and $x_j$ as
+$w_{ij}$, there can be several types of graph encoding the edge weights:
+
+\textbf{Fully connected graph.} Eedge weight is defined by the Gaussian
+kernel, also known as Radial Basis Function (RBF) kernel: \[ w_{ij} =
+exp(- (\|x_i-x_j\|^2/2\sigma ^2) \]
+The edge weight decreases as the Euclidean distance of the two nodes
+increases, with rate depending on the parameter $\sigma$.
+
+\textbf{$\epsilon$NN graph.} 
+$\epsilon$ is the threshold distance value for two nodes to be connected
+by an edge. In the unweighted setting, \( w_{ij} = 1 \mbox{ if } \|x_i-x_j\| \leq
+\epsilon \mbox{ and } 0 \mbox{ otherwise }\).
+
+%        Use of $\epsilon$NN graph needs the graph to be uniformly scaled over
+%        the data space. If the graph contains data points of different scales in
+%        different regions, $\epsilon$NN graph faces the difficulty of choosing
+%        effective parameter  $\epsilon$. 
+
+\textbf{kNN graph.} Every node links to the $k$ nearest neighbors in Euclidean
+distance. The edges can either be unweighted 
+       % (i.e. edge weight is $1$ if
+       % two nodes are connected and $0$ otherwise),
+or weighted using the Gaussian kernel function defined above. 
+       % However, the neighborhood
+       % relationship is not symmetric. There can be two nodes $i, j$ that $j$ is
+       % among the k nearest neighbors of $i$ while $i$ is not among the k
+       % nearest neighbors of $j$.
+The common definition of a kNN graph connects
+$i, j$ if the kNN relationship exists in at least one direction.
+%        Thus
+%        the average degree of a kNN graph is usually larger than k. As opposed
+%        to  $\epsilon$NN graph, kNN graph can connect points on different
+%        scales. It is possible to have connected nodes in two relatively far
+%        away clusters of different densities.
+
+%         An alternative construction is called \emph{mutual kNN graph}, where
+%         edges exist only when two nodes have kNN relationship mutually. Mutual
+%         kNN graph has the property in between kNN graph and $\epsilon$NN graph.
+%         It connects nodes within regions of constant density but does not
+%         connect regions of different density scales together and is thus suited
+%         for detecting clusters of different densities.
+
+
+
+
+
+Apart from the choice of weighting, a more substantial pre-requisite for all
+graph-based learning methods is a well chosen feature space and an effective
+similarity function, so that the "neighborhoods" deduced from the similarity
+or distance metric are meaningful.  
+This is however, often difficult to practice in NLP tasks because of the
+discrete or heterogeneous feature spaces.
+How to select features and possibly project the features
+into a subspace is still an under-investigated problem \cite{alex}.
+
+
+\subsection{Mincut}\label{sec:mincut}
+
+Blum and Chawla first formulated an SSL algorithm as a graph cut problem in
+\cite{blum}. In the binary classification case, each positive labeled instance
+acts as ``source'' and negative labeled instance acts as ``sink''.
+A cut is defined as a set of edges whose removal
+blocks the flow from ``sources'' to ``sinks''.
+The Mincut algorithm aims at finding the cut whose
+edge weight sum is the minimum.
+Utilizing the Ford-Fulkerson method for computing Max Flow, it is solvable in polynomial time. 
+The learned predictor assigns
+positive label to every unlabeled node that ends up in the same component with
+positive labeled examples, and vice versa. 
+
+Mincut is based on a Marcov random field
+assumption. Edge weights represent the Markov transition probability between
+nodes, thus similar nodes have higher edge weights. The binary label case is
+equivalent to Boltzmann machine. Formalizing Mincut as a regularized risk
+minimization problem, we minimize the sum of a loss function and a regularizer.
+Suppose binary labels $1$ and $0$, the loss function is \[ \infty  \sum_{i\in
+L} (y_i - f(x_i))^2\]
+The infinity weight forces the labeled data to be fixed at their given labels.
+The regularizer is 
+\begin{equation}\label{eq:mincut}
+    \frac{1}{2}\sum_{i,j=1}^{u+l}w_{ij}(f(x_i)-f(x_j))^2 \mbox{, where
+    }f(x_i)\in\{0,1\}\end{equation}
+    corresponding to the cut size. 
+
+
+\subsubsection*{Variants of Mincut}
+    There are two drawbacks for the plain Mincut method.
+    First, the infinity weight in loss function forces a ``hard cut'' -- labeled
+    data are fixed at the original labels, unable to handle noises in labeled
+    data.  
+    Second, there's no guarantee for balanced cut in sense of resulting class
+    size. When multiple minimum cuts exist, the algorithm always returns the
+    first solution,
+    %Due to the working mechanism of its algorithm, this
+    %solution is the nearest to one class of labels,
+    which is often not the
+    optimal one from the practice perspective. 
+
+    To address these problems, \cite{blum2} extend the plain
+    Mincut by randomizing the graph structure. They
+    disturb the graph by adding artificial random noise to edge weights, then
+    solve the Mincut on resulting graphs. 
+
+    RatioCut \cite{ratiocut} and NCut \cite{shi}
+    circumvent the problem of unbalanced cut. Ratiocut measure class balance in
+    terms of class size, while NCut balances edge weights.
+    \begin{equation}\label{eq:ratiocut}
+        RatioCut(A, B) =  \frac{ \sum_{i \in A, j \in B} w_{ij}}{ |A|} +
+        \frac{ \sum_{i \in B, j \in A} w_{ij}}{ |B|}
+    \end{equation}
+
+    \begin{equation}\label{eq:ncut}
+        NCut(A, B) =  \frac{ \sum_{i \in A, j \in B} w_{ij}}{ \sum_{i \in
+        A} d_i} + \frac{ \sum_{i \in B, j \in A} w_{ij}}{\sum_{i \in B} d_i},
+    \end{equation}
+    where the degree of node $x_i$ is defined as  $d_i =
+    \sum_{j=i}^{n}w_{ij}$.
+
+
+
+    \subsection{Harmonic Function and Gaussian Fields}
+
+%1) Relation to Zhu's method harmonic function and Gaussian fields
+%
+%-- distribution assumption
+%
+%Zhu's method assumes Gaussian random fields, the propability distribution of random
+%walk is a continuous Gaussian distribution on the reverse of the distance
+%between any two nodes. The graph is fully connected. 
+%
+%
+%It is a good model when the geometric distance is well defined.
+%
+%In the bipartite graph model, the propability of one random step is propotional to the number of
+%common features shared by the two example nodes. It is actually the dot product
+%of two examples (recall that an example is a vector of dimention $m$).
+%If the number of features connected to every example 
+%is same, i.e. every example has same magnitude, like in the pp attachment case,
+%then it's also cosine). The random walk propability is a discrete distribution.
+%
+%-- advantage of tumbl
+%
+%graph construction is cheap: $O(nm)$, Zhu's method needs
+%to compute a $n \times n$ weight matrix, where each entry contains calculation
+%of distance, so the complexity is $O(n^2m)$
+%
+%
+    \cite{zhu03} applies Gaussian random fields on a graph consisting of
+    labeled and unlabeled instances. Edges are weighted using the RBF kernel.
+    The method shares the same assumption with other graph-based methods like 
+    nearest neighbor and mincuts, that similar examples should belong
+    to same class. The difference is the Gaussian field is a continuous space,
+    rather than discreet space over the unlabeled nodes. 
+
+    If we express the regularization using the loss function and regularizer,
+    we find it has the same loss function as Mincut,  \[ \infty
+    \sum_{i\in L} (y_i - f(x_i))^2 \]  which fixes labeled data at given labels. The
+    regularizer (equation \ref{eq:reg}) is based on the graph combinatorial Laplacian $L$ 
+    \ref{sec:spec}), with an important relaxation that $f_i \in (0, 1)$, instead
+    of $f_i \in \{0,1\}$ as in Mincut.
+
+    \begin{equation} \label{eq:reg}
+        \frac{1}{2} \sum_{i,j=1}^{u+l}w_{ij}(f(x_i)-f(x_j))^2 =   f^T L f 
+    \end{equation}
+
+    The solution to the problem is a harmonic function that has a closed form
+    solution easily computed by matrix calculation. It also has the ``harmonic''
+    property as in equation \ref{eq:har}.
+    \begin{equation} \label{eq:har}
+    f(j) = \frac{1}{\sum_i w_{ij}}}\sum_{i\in Neighbor(j)} w_{ij} f(i),\end{equation}
+    \[
+        \mbox{for }j=l+1, l+2, ..., l+u
+    \]      
+    This provides the theoretical support that iterative label propagation algorithm
+    converges to the harmonic function solution.
+
+    \subsubsection*{Connection to random walks}
+
+    On the same graph, a random walker starts from node $x_i$. We can define the
+    probability of stepping to node $x_j$  in the next move be the normalized
+    weight $w_{ij}$. If we assign 0 and 1 to the two classes
+    of labeled examples, the harmonic function's solution at node $x_i$: $f(x_i)$
+    is the probability for a random walker starting from $x_i$ and hitting an
+    example labeled $1$ before hitting a $0$.
+
+%
+%    We can also build an electrical circuit to simulate the harmonic energy
+%    minimization procedure. Nodes in the graph are transformed to nodes of
+%    the electrical network, edge weights represent the conductance (the
+%    inverse of resistance) between each pair of nodes. If we apply 1 Volt
+%    voltage to all the labeled nodes of one class, and connect the other
+%    class of labeled nodes to ground, the circuit will finally stable at an
+%    equilibrium state, which minimizes energy dissipation. The electric
+%    potentials for each node in the steady state are exactly the solution to
+%    the harmonic function.
+%
+
+
+
+
+
+
+
+
+
+    \input{spectral}

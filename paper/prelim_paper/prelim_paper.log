@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.26)  18 JUL 2012 13:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.5.26)  19 JUL 2012 23:32
 entering extended mode
  %&-line parsing enabled.
 **prelim_paper
@@ -179,22 +179,26 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Warning: No \author given.
 
 (./intro.tex
-Underfull \hbox (badness 1533) in paragraph at lines 3--15
-\OT1/ptm/m/n/10.95 Semi-supervised learn-ing on graphs is a di-rec-
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 16--19
-[]\OT1/ptm/m/n/10.95 Another in-for-ma-tion we can ob-tain from the
- []
-
-) (./approach.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
 
-Underfull \hbox (badness 2065) in paragraph at lines 24--31
-\OT1/ptm/m/n/10.95 ($\OML/cmm/m/it/10.95 X; F$ \OT1/ptm/m/n/10.95 are node sets
- and $\OML/cmm/m/it/10.95 E$ \OT1/ptm/m/n/10.95 is edge set), we
+
+LaTeX Warning: Reference `sec:overview' on page 1 undefined on input line 27.
+
+
+LaTeX Warning: Reference `sec:approach' on page 1 undefined on input line 27.
+
+
+LaTeX Warning: Reference `sec:experiment' on page 1 undefined on input line 31.
+
+
+
+LaTeX Warning: Reference `sec:related work' on page 1 undefined on input line 3
+4.
+
+) (./overview.tex
+Underfull \hbox (badness 2181) in paragraph at lines 6--10
+\OT1/ptm/m/n/10.95 Semi-supervised learn-ing uses both la-beled in-
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -202,46 +206,87 @@ Underfull \hbox (badness 2065) in paragraph at lines 24--31
 
 
 
-]) (./al.tex) (./exp.tex)
-(./rel.tex
-Underfull \hbox (badness 1688) in paragraph at lines 23--26
-[]\OT1/ptm/m/n/10.95 graph con-struc-tion is cheap: $\OML/cmm/m/it/10.95 O\OT1/
-cmr/m/n/10.95 (\OML/cmm/m/it/10.95 nm\OT1/cmr/m/n/10.95 )$\OT1/ptm/m/n/10.95 , 
-Zhu's
+]
+Overfull \hbox (2.1195pt too wide) detected at line 135
+\OML/cmm/m/it/10.95 RatioCut\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 A; B\OT1/cm
+r/m/n/10.95 ) = [] + []
  []
 
-) (./con.tex [2]) (./prelim_paper.bbl
+[2]
+! Extra }, or forgotten $.
+l.195     f(j) = \frac{1}{\sum_i w_{ij}}}
+                                         \sum_{i\in Neighbor(j)} w_{ij} f(i)...
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \end{thebibliography}
-                         
 ? 
-) [3
+(./spectral.tex
+Underfull \hbox (badness 1400) in paragraph at lines 11--16
+[]\OT1/ptm/m/n/10.95 We will be us-ing the fol-low-ing no-ta-tions to
+ []
 
-] (./prelim_paper.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
+
+ []
+
+! Undefined control sequence.
+l.17 ... every function $f: [n]\rightarrow \mathbb
+                                                  {R}  $,
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+! Undefined control sequence.
+l.27 ...every function  $f: [n]\rightarrow \mathbb
+                                                  {R}  $,
+? 
+! Undefined control sequence.
+l.42 ...phi_k$, we span a new space $V \in \mathbb
+                                                  {R}^{n\times k}$ which
+? 
+[3]
+! Undefined control sequence.
+l.73 which is equivalent to $f \bot \mathbb
+                                           {1}$ and $\|f\| = \sqrt{n}$. The ...
+
+? 
+)) (./approach.tex
+Underfull \hbox (badness 2065) in paragraph at lines 24--31
+\OT1/ptm/m/n/10.95 ($\OML/cmm/m/it/10.95 X; F$ \OT1/ptm/m/n/10.95 are node sets
+ and $\OML/cmm/m/it/10.95 E$ \OT1/ptm/m/n/10.95 is edge set), we
+ []
+
+[4]) (./al.tex) (./exp.tex) (./rel.tex [5]
+
+LaTeX Warning: Citation `pagerank' on page 6 undefined on input line 77.
+
+) (./con.tex) (./prelim_paper.bbl) [6] (./prelim_paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1729 strings out of 493848
- 21157 string characters out of 1152823
- 80350 words of memory out of 3000000
- 4983 multiletter control sequences out of 15000+50000
- 17676 words of font info for 46 fonts, out of 3000000 for 9000
+ 1795 strings out of 493848
+ 21813 string characters out of 1152823
+ 81776 words of memory out of 3000000
+ 5028 multiletter control sequences out of 15000+50000
+ 28304 words of font info for 66 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 27i,9n,20p,225b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb><
-/usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb>
-Output written on prelim_paper.pdf (3 pages, 86853 bytes).
+ 27i,9n,20p,561b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pf
+b></usr/share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
+Output written on prelim_paper.pdf (6 pages, 159994 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
