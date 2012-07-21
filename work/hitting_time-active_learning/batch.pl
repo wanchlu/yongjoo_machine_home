@@ -5,8 +5,8 @@ STDERR->autoflush(1);
 STDOUT->autoflush(1);
 
 my $seed_size = 2;
-my $test_size = 550;
-my $al_size = 50;
+my $test_size = 220;
+my $al_size = 20;
 my $seed_size_for_normal = $seed_size + $al_size;
 my $test_size_for_normal = $test_size - $al_size;
 
