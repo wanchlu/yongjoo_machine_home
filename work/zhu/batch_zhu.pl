@@ -17,7 +17,8 @@ $tag =~ s/\W+//g;
 #for my $trainsize (5, 10, 15, 20, 25, 50, 75, 100, 150, 200, 250, 300, 350, 400, 450, 500) {
 #for my $trainsize (5, 10, 15, 20, 25 ) {
 `mkdir $tag`;
-for my $trainsize (2, 4, 6, 8, 10, 12, 14, 16, 18, 20) {
+#for my $trainsize (2, 4, 6, 8, 10, 12, 14, 16, 18, 20) {
+for my $trainsize (1..30) {
   print "Size: $trainsize\n";
   my $v1 = 0;
   for (my $iter = 0; $iter < $MAXIT; $iter++) {
