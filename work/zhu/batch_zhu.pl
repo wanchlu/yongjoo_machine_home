@@ -13,6 +13,7 @@ $testfile = "$testfile.$testsize";
 my $MAXIT = 1;
 my $tag = localtime(time);
 $tag =~ s/\W+//g;
+$tag =~ s/2012//g;
 
 #for my $trainsize (5, 10, 15, 20, 25, 50, 75, 100, 150, 200, 250, 300, 350, 400, 450, 500) {
 #for my $trainsize (5, 10, 15, 20, 25 ) {
@@ -35,7 +36,6 @@ for my $trainsize (1..30) {
 
   print "$f1\n";
   `cp $trainfile.$trainsize.sim $tag/$trainsize.sim`;
-  `cp zhu.out $tag/$trainsize.out`;
   `echo "$f1" > $tag/$trainsize.acc`;
   `cp $trainfile.$trainsize.shuffle $tag/$trainsize.train`;
   }
@@ -47,3 +47,5 @@ for my $trainsize (1..30) {
   print "\n";
   #sleep (1);
 }
+
+`rm -fr ./data/zhu/subset/*shuffle ./data/zhu/subset/*labels ./data/zhu/subset/*sim ./data/zhu/subset/*devtt\.*`;
