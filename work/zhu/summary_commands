@@ -1,0 +1,16 @@
+cat MonJul23203508/*/1.acc |cuts -f6
+cat MonJul23203508/*/1.stats |grep diameter |cuts -f4
+cat MonJul23203508/*/1.stats |grep average | grep degree |cuts -f5
+cat MonJul23203508/*/1.stats |grep power |grep r- |cuts -f10
+cat MonJul23203508/*/1.stats |grep power |grep r- |cuts -f12
+cat MonJul23203508/*/1.stats |grep power |grep relationship |cuts -f14 |cut -b1,2,3,4
+cat MonJul23203508/*/1.stats |grep power |grep Newman|cuts -f11 |cut -b1-4
+cat MonJul23203508/*/1.stats |grep power |grep Newman|cuts -f13
+cat MonJul23203508/*/1.stats |grep components |cuts -f6
+cat MonJul23203508/*/1.stats |grep Watts |cuts -f9
+cat MonJul23203508/*/1.stats |grep Newman |grep clustering |cuts -f8
+cat MonJul23203508/*/1.stats |grep clair |cuts -f8
+cat MonJul23203508/*/1.stats |grep Ferrer |cuts -f8
+cat MonJul23203508/*/1.stats |grep distance: |cuts -f7 
+cat MonJul23203508/*/1.stats |grep self |cuts -f11
+cat MonJul23203508/*/1.stats |grep full |cuts -f7

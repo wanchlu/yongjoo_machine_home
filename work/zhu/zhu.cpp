@@ -66,11 +66,11 @@ int main (int argc, char **argv) {
     exit (1);
   }
 
-  fprintf (stderr, "allocating edges..\n");
+  //fprintf (stderr, "allocating edges..\n");
   edges = (edge_t *) malloc(n_edges * sizeof(edge_t));
   read_edges();
 
-  fprintf (stderr, "allocating nodes..\n");
+  //fprintf (stderr, "allocating nodes..\n");
   nodes = (node_t *) malloc(n_nodes * sizeof(node_t));
   memset (nodes, 0, n_nodes * sizeof(node_t));
   for (unsigned int i=0; i < n_nodes; i++) {
@@ -98,7 +98,7 @@ int main (int argc, char **argv) {
 
   do {
     max_error = propagate_labels();
-    fprintf (stderr, "error: %f\n", max_error);
+    //fprintf (stderr, "error: %f\n", max_error);
   } while (max_error > 0.001);
 
   output_labels();
@@ -230,7 +230,7 @@ void process_args(int argc, char **argv) {
       if (argc <= argi + 1) goto usage;
       n_classes = atoi(argv[argi+1]);
       argi += 2;
-      fprintf (stderr, "classes: %hd\n", n_classes);
+      //fprintf (stderr, "classes: %hd\n", n_classes);
     }
   }
   return;
