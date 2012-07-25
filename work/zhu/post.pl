@@ -9,7 +9,7 @@ foreach my $trainsize(1..20) {
     `cat $dir/*/$trainsize.stats |grep power |grep r- | cut -d" " -f10 >ttt04`;
     `cat $dir/*/$trainsize.stats |grep power |grep r- | cut -d" " -f12 >ttt05`;
     `cat $dir/*/$trainsize.stats |grep power |grep relationship | cut -d" " -f14 |cut -b1,2,3,4 >ttt06`;
-    `cat $dir/*/$trainsize.stats |grep power |grep Newman| cut -d" " -f11 |cut -b1-4 >ttt07`;
+    `cat $dir/*/$trainsize.stats |grep power |grep Newman| cut -d" " -f11 |cut -b1,2,3,4 >ttt07`;
     `cat $dir/*/$trainsize.stats |grep power |grep Newman| cut -d" " -f13 >ttt08`;
     `cat $dir/*/$trainsize.stats |grep components | cut -d" " -f6 >ttt09`;
     `cat $dir/*/$trainsize.stats |grep Watts | cut -d" " -f9 >ttt10`;
