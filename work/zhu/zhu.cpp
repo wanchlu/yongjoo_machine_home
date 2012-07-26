@@ -112,6 +112,9 @@ void output_labels () {
   gp = fopen (test_label_file, "r");
   int total=0,correct=0;
 
+  FILE *fp;
+  fp = fopen (output_file, "w");
+
   for (unsigned int i=0; i < n_nodes; i++) {
     if (!nodes[i].labeled) {
       short label;
@@ -119,17 +122,20 @@ void output_labels () {
       total++;
       if (nodes[i].old_values[0] < nodes[i].old_values[1])
       {
+      fprintf (fp, "%d\t1\t%f\t%f\n", i+1 , nodes[i].old_values[0], nodes[i].old_values[1]);
        if (label == 1)
          correct++;
       }
       else
       {
+      fprintf (fp, "%d\t0\t%f\t%f\n", i+1 , nodes[i].old_values[0], nodes[i].old_values[1]);
        if (label == 0)
          correct++;
       }
     }
   }
   fclose (gp);
+  fclose (fp);
 
   printf ("Accuracy: %d / %d : %f\n",
                    correct, total, (correct+0.0)/total);

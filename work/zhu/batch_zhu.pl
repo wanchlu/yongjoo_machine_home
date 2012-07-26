@@ -37,6 +37,7 @@ for my $trainsize (1..20) {
 
         print "$f1\n";
         `cp $trainfile.$trainsize.sim $tag/$trainsize.sim`;
+        `mv zhu.out $tag/$trainsize.out`;
         `echo "$f1" > $tag/$trainsize.acc`;
         `cp $trainfile.$trainsize.shuffle $tag/$trainsize.train`;
         `cp $testfile $tag/test`;
