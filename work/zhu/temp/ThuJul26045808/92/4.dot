@@ -1,0 +1,61 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_improv_rate_at_entitynam " "0_negoti_rate_with_thrift " "1_pai_rate_of_% " "0_tell_report_in_offic "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_reach_rate_of_% " "1_had_rate_of_% " "1_file_report_to_network " "1_reduc_rate_on_million " "1_wa_risk_to_entitynam " "1_lower_rate_on_million " "1_lift_rate_for_entitynam "}
+edge [color="#B0E2FF"];
+
+	"0_improv_rate_at_entitynam " -- "0_negoti_rate_with_thrift " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_pai_rate_of_% " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"0_improv_rate_at_entitynam " -- "1_lift_rate_for_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_negoti_rate_with_thrift " -- "1_pai_rate_of_% " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"1_pai_rate_of_% " -- "1_reach_rate_of_% " [w="3", color="#0000cd" , len=0.6];
+	"1_pai_rate_of_% " -- "1_count_risk_of_new " [w="1", color="#87cefa" ];
+	"1_pai_rate_of_% " -- "1_had_rate_of_% " [w="3", color="#0000cd" , len=0.6];
+	"1_pai_rate_of_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_pai_rate_of_% " -- "1_'s_risk_of_messag " [w="1", color="#87cefa" ];
+	"1_pai_rate_of_% " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"1_pai_rate_of_% " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "1_file_report_to_network " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_count_risk_of_new " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_had_rate_of_% " [w="3", color="#0000cd" , len=0.6];
+	"1_reach_rate_of_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_'s_risk_of_messag " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"0_file_report_by_phone " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"0_file_report_by_phone " -- "1_file_report_to_network " [w="2", color="#1e90ff" , len=0.8];
+	"1_count_risk_of_new " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"1_count_risk_of_new " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_count_risk_of_new " -- "1_'s_risk_of_messag " [w="2", color="#1e90ff" , len=0.8];
+	"1_had_rate_of_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_'s_risk_of_messag " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"0_sent_report_to_entitynam " -- "1_file_report_to_network " [w="2", color="#1e90ff" , len=0.8];
+	"0_sent_report_to_entitynam " -- "1_wa_risk_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_sent_report_to_entitynam " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"1_file_report_to_network " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_million " -- "0_support_role_on_condit " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_million " -- "1_lower_rate_on_million " [w="3", color="#0000cd" , len=0.6];
+	"1_reduc_rate_on_million " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"1_wa_risk_to_entitynam " -- "1_'s_risk_of_messag " [w="1", color="#87cefa" ];
+	"1_wa_risk_to_entitynam " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"0_support_role_on_condit " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_million " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+}

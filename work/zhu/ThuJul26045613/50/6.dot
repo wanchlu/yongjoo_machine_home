@@ -1,0 +1,72 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_write_report_to_panel " "1_plai_role_in_group " "1_is_rate_on_loan " "0_rais_rate_for_busi " "1_follow_report_of_earn " "1_follow_report_of_a "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_allow_report_into_room " "0_hold_rate_for_advertis " "0_have_rate_in_year " "0_plai_role_in_slide "}
+edge [color="#B0E2FF"];
+
+	"0_write_report_to_panel " -- "1_follow_report_of_earn " [w="1", color="#87cefa" ];
+	"0_write_report_to_panel " -- "1_follow_report_of_a " [w="1", color="#87cefa" ];
+	"0_write_report_to_panel " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_plai_role_in_group " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_plai_role_in_group " -- "0_plai_role_in_slide " [w="3", color="#0000cd" , len=0.6];
+	"1_is_rate_on_loan " -- "0_rais_rate_for_busi " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "0_hold_rate_for_advertis " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "0_hold_rate_for_advertis " [w="2", color="#1e90ff" , len=0.8];
+	"0_rais_rate_for_busi " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "1_follow_report_of_a " [w="3", color="#0000cd" , len=0.6];
+	"1_follow_report_of_earn " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_follow_report_of_earn " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_calcul_rate_of_option " -- "1_reach_rate_of_% " [w="2", color="#1e90ff" , len=0.8];
+	"1_calcul_rate_of_option " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_calcul_rate_of_option " -- "1_establish_rate_of_% " [w="2", color="#1e90ff" , len=0.8];
+	"1_calcul_rate_of_option " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_calcul_rate_of_option " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+	"1_reach_rate_of_% " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_establish_rate_of_% " [w="3", color="#0000cd" , len=0.6];
+	"1_reach_rate_of_% " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_reach_rate_of_% " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+	"0_have_rate_in_year " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "0_plai_role_in_slide " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_establish_rate_of_% " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_establish_rate_of_% " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+	"1_push_rate_of_inflat " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+}

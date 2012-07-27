@@ -1,0 +1,20 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_turn_rate_sinc_debut "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_wa_rate_of_month " "1_support_role_for_entitynam " "1_take_risk_on_outcom " "1_support_role_of_entitynam " "1_hedg_risk_in_market "}
+edge [color="#B0E2FF"];
+
+	"0_turn_rate_sinc_debut " -- "0_increas_rate_in_yearnum " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"0_increas_rate_in_yearnum " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_increas_rate_in_yearnum " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"0_increas_rate_in_yearnum " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_wa_rate_of_month " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"1_wa_rate_of_month " -- "1_support_role_of_entitynam " [w="1", color="#87cefa" ];
+	"1_support_role_for_entitynam " -- "1_support_role_of_entitynam " [w="3", color="#0000cd" , len=0.6];
+	"1_take_risk_on_outcom " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+}

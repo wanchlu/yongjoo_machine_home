@@ -1,0 +1,25 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_know_report_of_entitynam " "0_rais_risk_with_them " "0_plai_role_over_year " "0_rais_rate_on_debt " "0_file_report_on_time "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_includ_report_on_trade " "1_compar_rate_of_group " "1_follow_rule_by_judg " "1_hedg_risk_in_market " "1_reduc_rate_on_million "}
+edge [color="#B0E2FF"];
+
+	"1_know_report_of_entitynam " -- "0_file_report_on_time " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_rais_risk_with_them " -- "0_rais_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_rais_risk_with_them " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_rais_risk_with_them " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_plai_role_over_year " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_rais_rate_on_debt " -- "0_file_report_on_time " [w="1", color="#87cefa" ];
+	"0_rais_rate_on_debt " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"0_rais_rate_on_debt " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_rais_rate_on_debt " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"0_file_report_on_time " -- "1_includ_report_on_trade " [w="2", color="#1e90ff" , len=0.8];
+	"0_file_report_on_time " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

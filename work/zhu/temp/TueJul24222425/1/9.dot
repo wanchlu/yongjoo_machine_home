@@ -1,0 +1,38 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_is_role_of_alli " "0_retain_rate_for_period " "1_back_role_as_mediat " "0_present_report_to_member " "1_plai_role_in_fuel " "0_call_report_off_base " "0_lower_rate_befor_end " "1_know_report_of_entitynam " "0_earn_rate_for_period "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_wa_risk_to_entitynam " "0_plai_role_in_decis " "1_suppli_report_on_plan "}
+edge [color="#B0E2FF"];
+
+	"1_is_role_of_alli " -- "1_back_role_as_mediat " [w="1", color="#87cefa" ];
+	"1_is_role_of_alli " -- "1_plai_role_in_fuel " [w="1", color="#87cefa" ];
+	"1_is_role_of_alli " -- "1_know_report_of_entitynam " [w="1", color="#87cefa" ];
+	"1_is_role_of_alli " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_is_role_of_alli " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_is_role_of_alli " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "0_lower_rate_befor_end " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "0_earn_rate_for_period " [w="3", color="#0000cd" , len=0.6];
+	"1_back_role_as_mediat " -- "1_plai_role_in_fuel " [w="1", color="#87cefa" ];
+	"1_back_role_as_mediat " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_back_role_as_mediat " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_present_report_to_member " -- "0_call_report_off_base " [w="1", color="#87cefa" ];
+	"0_present_report_to_member " -- "1_know_report_of_entitynam " [w="1", color="#87cefa" ];
+	"0_present_report_to_member " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"0_present_report_to_member " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"0_present_report_to_member " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fuel " -- "0_plai_role_in_decis " [w="3", color="#0000cd" , len=0.6];
+	"1_plai_role_in_fuel " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"0_call_report_off_base " -- "1_know_report_of_entitynam " [w="1", color="#87cefa" ];
+	"0_call_report_off_base " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"0_call_report_off_base " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_lower_rate_befor_end " -- "0_earn_rate_for_period " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_plai_role_in_decis " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"0_allow_report_into_room " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+}

@@ -1,0 +1,22 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_usher_rule_for_busi " "1_undertak_role_of_decis-make " "1_requir_report_of_varieti " "1_spread_risk_of_polici "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"1_usher_rule_for_busi " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_undertak_role_of_decis-make " -- "1_requir_report_of_varieti " [w="1", color="#87cefa" ];
+	"1_undertak_role_of_decis-make " -- "1_spread_risk_of_polici " [w="1", color="#87cefa" ];
+	"1_undertak_role_of_decis-make " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_undertak_role_of_decis-make " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_requir_report_of_varieti " -- "1_spread_risk_of_polici " [w="1", color="#87cefa" ];
+	"1_requir_report_of_varieti " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_requir_report_of_varieti " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_spread_risk_of_polici " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_spread_risk_of_polici " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

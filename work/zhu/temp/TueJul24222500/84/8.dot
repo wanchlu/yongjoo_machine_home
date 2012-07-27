@@ -1,0 +1,49 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_assum_rate_of_inflat " "1_post_rate_in_year " "1_be_rule_of_dai " "0_retain_rate_for_period " "1_prepar_report_on_impact " "1_slash_rate_of_taxat " "0_cut_rate_on_them " "1_carri_rate_of_point "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"1_assum_rate_of_inflat " -- "1_post_rate_in_year " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_be_rule_of_dai " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "0_retain_rate_for_period " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_slash_rate_of_taxat " [w="2", color="#1e90ff" , len=0.8];
+	"1_assum_rate_of_inflat " -- "0_cut_rate_on_them " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_carri_rate_of_point " [w="2", color="#1e90ff" , len=0.8];
+	"1_assum_rate_of_inflat " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_assum_rate_of_inflat " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "0_retain_rate_for_period " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_slash_rate_of_taxat " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "0_cut_rate_on_them " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_carri_rate_of_point " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_be_rule_of_dai " -- "1_slash_rate_of_taxat " [w="1", color="#87cefa" ];
+	"1_be_rule_of_dai " -- "1_carri_rate_of_point " [w="1", color="#87cefa" ];
+	"1_be_rule_of_dai " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_be_rule_of_dai " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_slash_rate_of_taxat " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "0_cut_rate_on_them " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_carri_rate_of_point " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_prepar_report_on_impact " -- "0_cut_rate_on_them " [w="1", color="#87cefa" ];
+	"1_prepar_report_on_impact " -- "1_includ_report_on_trade " [w="2", color="#1e90ff" , len=0.8];
+	"1_prepar_report_on_impact " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_slash_rate_of_taxat " -- "0_cut_rate_on_them " [w="1", color="#87cefa" ];
+	"1_slash_rate_of_taxat " -- "1_carri_rate_of_point " [w="2", color="#1e90ff" , len=0.8];
+	"1_slash_rate_of_taxat " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_slash_rate_of_taxat " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_cut_rate_on_them " -- "1_carri_rate_of_point " [w="1", color="#87cefa" ];
+	"0_cut_rate_on_them " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"0_cut_rate_on_them " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_cut_rate_on_them " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_carri_rate_of_point " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_carri_rate_of_point " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

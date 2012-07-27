@@ -1,0 +1,57 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_plai_report_of_tension " "0_scour_report_for_clue " "0_confus_rate_with_payment " "1_is_rule_of_thumb "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_reduc_rate_for_deposit " "1_relai_report_on_tendenc " "1_reduc_rate_of_growth " "1_expect_rate_of_increas " "1_reduc_rate_on_debt " "1_lift_rate_for_entitynam " "1_hedg_risk_in_market "}
+edge [color="#B0E2FF"];
+
+	"1_plai_report_of_tension " -- "0_scour_report_for_clue " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "1_is_rule_of_thumb " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "1_relai_report_on_tendenc " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "0_cite_report_as_sourc " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "1_expect_rate_of_increas " [w="1", color="#87cefa" ];
+	"1_plai_report_of_tension " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"0_scour_report_for_clue " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_scour_report_for_clue " -- "1_relai_report_on_tendenc " [w="1", color="#87cefa" ];
+	"0_scour_report_for_clue " -- "0_cite_report_as_sourc " [w="1", color="#87cefa" ];
+	"0_scour_report_for_clue " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"0_scour_report_for_clue " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_scour_report_for_clue " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_expect_rate_of_increas " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_reduc_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"1_is_rule_of_thumb " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"1_is_rule_of_thumb " -- "1_expect_rate_of_increas " [w="1", color="#87cefa" ];
+	"1_is_rule_of_thumb " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "1_reduc_rate_of_growth " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "0_charg_rate_for_time " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "1_expect_rate_of_increas " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "1_reduc_rate_on_debt " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "1_lift_rate_for_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_support_role_on_condit " -- "1_relai_report_on_tendenc " [w="1", color="#87cefa" ];
+	"0_support_role_on_condit " -- "1_reduc_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_support_role_on_condit " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_relai_report_on_tendenc " -- "0_cite_report_as_sourc " [w="1", color="#87cefa" ];
+	"1_relai_report_on_tendenc " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"1_relai_report_on_tendenc " -- "1_reduc_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_cite_report_as_sourc " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"1_reduc_rate_of_growth " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_reduc_rate_of_growth " -- "1_expect_rate_of_increas " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_of_growth " -- "1_reduc_rate_on_debt " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_of_growth " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_reduc_rate_of_growth " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_expect_rate_of_increas " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_reduc_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_lift_rate_for_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"1_expect_rate_of_increas " -- "1_reduc_rate_on_debt " [w="1", color="#87cefa" ];
+	"1_expect_rate_of_increas " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_expect_rate_of_increas " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_debt " -- "1_lift_rate_for_entitynam " [w="1", color="#87cefa" ];
+}

@@ -1,0 +1,25 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_write_report_to_panel " "0_rais_rate_by_point " "1_await_rule_by_court " "1_ar_report_of_gene " "1_had_rate_of_% "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_hedg_risk_in_market " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"0_write_report_to_panel " -- "1_ar_report_of_gene " [w="1", color="#87cefa" ];
+	"0_write_report_to_panel " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_await_rule_by_court " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_await_rule_by_court " -- "1_follow_rule_by_judg " [w="2", color="#1e90ff" , len=0.8];
+	"1_ar_report_of_gene " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"1_ar_report_of_gene " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_ar_report_of_gene " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_had_rate_of_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

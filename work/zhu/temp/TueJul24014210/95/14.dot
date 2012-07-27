@@ -1,0 +1,58 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_sell_facil_to_entitynam " "0_sell_chain_to_manag " "1_seen_case_of_incompet " "1_sell_stake_in_hors " "0_us_entitynam_as_broker " "1_hold_stock_in_entitynam " "0_see_entitynam_as_resort " "1_us_all_over_world " "0_sell_reactor_to_entitynam " "1_seek_repay_of_loan " "1_seek_permiss_from_council " "0_acquir_entitynam_from_vehicl " "1_see_cloud_across_bai " "0_seek_term_in_bid "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_seek_return_on_invest " "1_acquir_entitynam_of_entitynam "}
+edge [color="#B0E2FF"];
+
+	"0_sell_facil_to_entitynam " -- "0_sell_chain_to_manag " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_facil_to_entitynam " -- "1_sell_stake_in_hors " [w="1", color="#87cefa" ];
+	"0_sell_facil_to_entitynam " -- "1_hold_stock_in_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_facil_to_entitynam " -- "0_sell_reactor_to_entitynam " [w="3", color="#0000cd" , len=0.6];
+	"0_sell_facil_to_entitynam " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_facil_to_entitynam " -- "1_hold_share_of_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_chain_to_manag " -- "1_sell_stake_in_hors " [w="1", color="#87cefa" ];
+	"0_sell_chain_to_manag " -- "0_sell_reactor_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"1_seen_case_of_incompet " -- "1_seek_repay_of_loan " [w="1", color="#87cefa" ];
+	"1_seen_case_of_incompet " -- "1_see_modicum_of_normalci " [w="1", color="#87cefa" ];
+	"1_seen_case_of_incompet " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"1_seen_case_of_incompet " -- "1_hold_share_of_entitynam " [w="1", color="#87cefa" ];
+	"1_sell_stake_in_hors " -- "1_hold_stock_in_entitynam " [w="1", color="#87cefa" ];
+	"1_sell_stake_in_hors " -- "0_sell_reactor_to_entitynam " [w="1", color="#87cefa" ];
+	"1_sell_stake_in_hors " -- "0_seek_term_in_bid " [w="1", color="#87cefa" ];
+	"1_sell_stake_in_hors " -- "1_hold_stake_in_concern " [w="2", color="#1e90ff" , len=0.8];
+	"0_us_entitynam_as_broker " -- "0_see_entitynam_as_resort " [w="2", color="#1e90ff" , len=0.8];
+	"0_us_entitynam_as_broker " -- "1_us_all_over_world " [w="1", color="#87cefa" ];
+	"0_us_entitynam_as_broker " -- "0_acquir_entitynam_from_vehicl " [w="1", color="#87cefa" ];
+	"0_us_entitynam_as_broker " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"1_hold_stock_in_entitynam " -- "0_sell_reactor_to_entitynam " [w="1", color="#87cefa" ];
+	"1_hold_stock_in_entitynam " -- "0_seek_term_in_bid " [w="1", color="#87cefa" ];
+	"1_hold_stock_in_entitynam " -- "1_hold_stake_in_concern " [w="2", color="#1e90ff" , len=0.8];
+	"1_hold_stock_in_entitynam " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"1_hold_stock_in_entitynam " -- "1_hold_share_of_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_see_entitynam_as_resort " -- "0_acquir_entitynam_from_vehicl " [w="1", color="#87cefa" ];
+	"0_see_entitynam_as_resort " -- "1_see_cloud_across_bai " [w="1", color="#87cefa" ];
+	"0_see_entitynam_as_resort " -- "1_see_modicum_of_normalci " [w="1", color="#87cefa" ];
+	"0_see_entitynam_as_resort " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_reactor_to_entitynam " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_reactor_to_entitynam " -- "1_hold_share_of_entitynam " [w="1", color="#87cefa" ];
+	"1_seek_repay_of_loan " -- "1_seek_permiss_from_council " [w="1", color="#87cefa" ];
+	"1_seek_repay_of_loan " -- "0_seek_term_in_bid " [w="1", color="#87cefa" ];
+	"1_seek_repay_of_loan " -- "0_seek_return_on_invest " [w="1", color="#87cefa" ];
+	"1_seek_repay_of_loan " -- "1_see_modicum_of_normalci " [w="1", color="#87cefa" ];
+	"1_seek_repay_of_loan " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"1_seek_repay_of_loan " -- "1_hold_share_of_entitynam " [w="1", color="#87cefa" ];
+	"1_seek_permiss_from_council " -- "0_acquir_entitynam_from_vehicl " [w="1", color="#87cefa" ];
+	"1_seek_permiss_from_council " -- "0_seek_term_in_bid " [w="1", color="#87cefa" ];
+	"1_seek_permiss_from_council " -- "0_seek_return_on_invest " [w="1", color="#87cefa" ];
+	"0_acquir_entitynam_from_vehicl " -- "1_acquir_entitynam_of_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"1_see_cloud_across_bai " -- "1_see_modicum_of_normalci " [w="1", color="#87cefa" ];
+	"0_seek_term_in_bid " -- "1_hold_stake_in_concern " [w="1", color="#87cefa" ];
+	"0_seek_term_in_bid " -- "0_seek_return_on_invest " [w="1", color="#87cefa" ];
+	"1_hold_stake_in_concern " -- "1_hold_share_of_entitynam " [w="1", color="#87cefa" ];
+	"1_see_modicum_of_normalci " -- "1_acquir_entitynam_of_entitynam " [w="1", color="#87cefa" ];
+	"1_see_modicum_of_normalci " -- "1_hold_share_of_entitynam " [w="1", color="#87cefa" ];
+	"1_acquir_entitynam_of_entitynam " -- "1_hold_share_of_entitynam " [w="2", color="#1e90ff" , len=0.8];
+}

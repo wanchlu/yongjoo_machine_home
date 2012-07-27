@@ -10,22 +10,23 @@ my $dir = shift;
 my @simfiles = `ls $dir/*/*sim`;
 chomp(@simfiles);
 
-
 foreach my $file (@simfiles) {
     my $trainfile = $file;
     $trainfile =~ s/sim/train/g;
     my $testfile = $file;
     $testfile =~ s#\/\d+\.sim$#\/test#g;
-    my $trainsize = 1;
-    if ($trainfile =~ m/.*\/(\d+)\.train$/) {
-        $trainsize = $1;
-    }
-    my $trainlabel = $trainfile.".".$trainsize.".labels";
+    my $trainlabel = $trainfile.".labels";
     my $testlabel = $testfile.".labels";
     my $output = $file;
     $output =~ s/sim/out/g;
-    `./data/convert_to_zhu_format.pl $trainfile $trainsize $testfile`;
-    `./zhu -graph $file -trainlabels $trainlabel -testlabels $testlabel -out $output -classes 2`;
+    my $accfile = $file;
+    $accfile =~ s/sim/acc/g;
+    `./data/convert_to_zhu_format2.pl $trainfile $testfile`;
+    my $f1 = `./zhu -graph $file -trainlabels $trainlabel -testlabels $testlabel -out $output -classes 2`;
+    chomp($f1);
+
+    $f1 =~ m/.*:\s+(.*)$/;
+    `echo "$f1" > $accfile`;
 }
 
 `rm -f $dir/*/*labels`;

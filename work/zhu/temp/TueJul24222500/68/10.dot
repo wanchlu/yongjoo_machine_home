@@ -1,0 +1,46 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_take_role_at_compani " "1_confirm_report_in_entitynam " "0_turn_rate_sinc_debut " "1_term_rate_of_% " "1_label_report_of_friction " "0_boost_rate_to_% " "0_accept_risk_in_order " "1_review_rate_on_bond " "0_rais_risk_with_them " "1_lower_rate_on_million "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_follow_rule_by_judg " "1_hedg_risk_in_market "}
+edge [color="#B0E2FF"];
+
+	"1_take_role_at_compani " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_confirm_report_in_entitynam " -- "1_label_report_of_friction " [w="1", color="#87cefa" ];
+	"1_confirm_report_in_entitynam " -- "0_accept_risk_in_order " [w="1", color="#87cefa" ];
+	"1_confirm_report_in_entitynam " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_confirm_report_in_entitynam " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "1_term_rate_of_% " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "0_boost_rate_to_% " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "1_review_rate_on_bond " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_turn_rate_sinc_debut " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_term_rate_of_% " -- "1_label_report_of_friction " [w="1", color="#87cefa" ];
+	"1_term_rate_of_% " -- "0_boost_rate_to_% " [w="2", color="#1e90ff" , len=0.8];
+	"1_term_rate_of_% " -- "1_review_rate_on_bond " [w="1", color="#87cefa" ];
+	"1_term_rate_of_% " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"1_term_rate_of_% " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_term_rate_of_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_label_report_of_friction " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_label_report_of_friction " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_review_rate_on_bond " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_lower_rate_on_million " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_accept_risk_in_order " -- "0_rais_risk_with_them " [w="1", color="#87cefa" ];
+	"0_accept_risk_in_order " -- "1_hedg_risk_in_market " [w="2", color="#1e90ff" , len=0.8];
+	"1_review_rate_on_bond " -- "1_lower_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_review_rate_on_bond " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"0_rais_risk_with_them " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_rais_risk_with_them " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_million " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_million " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_million " -- "1_reduc_rate_on_million " [w="3", color="#0000cd" , len=0.6];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

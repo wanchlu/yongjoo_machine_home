@@ -1,0 +1,54 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_boost_rate_over_year " "0_had_rate_in_studi " "0_seen_report_among_patient "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_increas_risk_of_default " "1_calcul_rate_of_option " "1_reach_rate_of_% " "1_establish_rate_of_% " "1_push_rate_of_inflat " "1_wa_rate_of_month "}
+edge [color="#B0E2FF"];
+
+	"0_boost_rate_over_year " -- "0_had_rate_in_studi " [w="1", color="#87cefa" ];
+	"0_boost_rate_over_year " -- "0_hold_rate_for_advertis " [w="1", color="#87cefa" ];
+	"0_boost_rate_over_year " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_boost_rate_over_year " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_boost_rate_over_year " -- "0_have_rate_in_year " [w="2", color="#1e90ff" , len=0.8];
+	"0_boost_rate_over_year " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_boost_rate_over_year " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_boost_rate_over_year " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "0_hold_rate_for_advertis " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "0_have_rate_in_year " [w="2", color="#1e90ff" , len=0.8];
+	"0_had_rate_in_studi " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "0_plai_role_in_slide " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_seen_report_among_patient " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_hold_rate_for_advertis " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_calcul_rate_of_option " -- "1_reach_rate_of_% " [w="2", color="#1e90ff" , len=0.8];
+	"1_calcul_rate_of_option " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_calcul_rate_of_option " -- "1_establish_rate_of_% " [w="2", color="#1e90ff" , len=0.8];
+	"1_calcul_rate_of_option " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_calcul_rate_of_option " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+	"1_reach_rate_of_% " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_establish_rate_of_% " [w="3", color="#0000cd" , len=0.6];
+	"1_reach_rate_of_% " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_reach_rate_of_% " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+	"0_have_rate_in_year " -- "1_establish_rate_of_% " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "0_plai_role_in_slide " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_establish_rate_of_% " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_establish_rate_of_% " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+	"1_push_rate_of_inflat " -- "1_wa_rate_of_month " [w="2", color="#1e90ff" , len=0.8];
+}

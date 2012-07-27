@@ -1,0 +1,83 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_rais_rate_for_busi " "0_pull_rate_to_% " "1_lower_rate_of_debt " "0_question_rate_in_hear " "0_receiv_rate_from_entitynam " "1_rais_rate_on_stock " "0_confus_rate_with_payment " "1_accept_risk_of_fluctuat " "1_lower_rate_on_issu " "0_is_report_in_bureau " "1_seen_report_of_unawar " "1_is_report_in_bureau " "1_plai_role_of_dummi " "1_lower_rate_on_debt "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_wa_risk_to_entitynam " "0_plai_role_in_decis " "0_allow_report_into_room "}
+edge [color="#B0E2FF"];
+
+	"0_rais_rate_for_busi " -- "0_pull_rate_to_% " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_lower_rate_of_debt " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "0_question_rate_in_hear " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "0_receiv_rate_from_entitynam " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_rais_rate_on_stock " [w="2", color="#1e90ff" , len=0.8];
+	"0_rais_rate_for_busi " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_lower_rate_on_issu " [w="1", color="#87cefa" ];
+	"0_rais_rate_for_busi " -- "1_lower_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "1_lower_rate_of_debt " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "0_question_rate_in_hear " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "0_receiv_rate_from_entitynam " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "1_rais_rate_on_stock " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "1_lower_rate_on_issu " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "1_lower_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_pull_rate_to_% " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "0_question_rate_in_hear " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "0_receiv_rate_from_entitynam " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_rais_rate_on_stock " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_accept_risk_of_fluctuat " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_lower_rate_on_issu " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_of_debt " -- "1_seen_report_of_unawar " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_plai_role_of_dummi " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_lower_rate_on_debt " [w="3", color="#0000cd" , len=0.6];
+	"1_lower_rate_of_debt " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "0_receiv_rate_from_entitynam " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_rais_rate_on_stock " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_lower_rate_on_issu " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "0_is_report_in_bureau " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_is_report_in_bureau " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_lower_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_receiv_rate_from_entitynam " -- "1_rais_rate_on_stock " [w="1", color="#87cefa" ];
+	"0_receiv_rate_from_entitynam " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"0_receiv_rate_from_entitynam " -- "1_lower_rate_on_issu " [w="1", color="#87cefa" ];
+	"0_receiv_rate_from_entitynam " -- "1_lower_rate_on_debt " [w="1", color="#87cefa" ];
+	"0_receiv_rate_from_entitynam " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_rais_rate_on_stock " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"1_rais_rate_on_stock " -- "1_lower_rate_on_issu " [w="2", color="#1e90ff" , len=0.8];
+	"1_rais_rate_on_stock " -- "1_lower_rate_on_debt " [w="2", color="#1e90ff" , len=0.8];
+	"1_rais_rate_on_stock " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_lower_rate_on_issu " [w="1", color="#87cefa" ];
+	"0_confus_rate_with_payment " -- "1_lower_rate_on_debt " [w="1", color="#87cefa" ];
+	"1_accept_risk_of_fluctuat " -- "1_seen_report_of_unawar " [w="1", color="#87cefa" ];
+	"1_accept_risk_of_fluctuat " -- "1_plai_role_of_dummi " [w="1", color="#87cefa" ];
+	"1_accept_risk_of_fluctuat " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_accept_risk_of_fluctuat " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_issu " -- "1_lower_rate_on_debt " [w="3", color="#0000cd" , len=0.6];
+	"1_lower_rate_on_issu " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_seen_report_of_unawar " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_is_report_in_bureau " [w="4", style=bold, color="#000080", len=0.4];
+	"0_is_report_in_bureau " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_is_report_in_bureau " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_plai_role_of_dummi " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_plai_role_of_dummi " -- "0_plai_role_in_decis " [w="2", color="#1e90ff" , len=0.8];
+	"1_plai_role_of_dummi " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_plai_role_of_dummi " -- "1_plai_role_in_declin " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_on_debt " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_plai_role_in_decis " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"0_allow_report_into_room " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+}

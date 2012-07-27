@@ -1,0 +1,38 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_post_rate_in_year " "1_carri_report_on_factori " "1_have_role_in_assess " "1_lower_rate_on_stock " "0_increas_rate_in_coupl " "0_fix_rate_in_state "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_follow_rule_by_judg " "1_hedg_risk_in_market " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"1_post_rate_in_year " -- "1_have_role_in_assess " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "0_increas_rate_in_coupl " [w="2", color="#1e90ff" , len=0.8];
+	"1_post_rate_in_year " -- "0_fix_rate_in_state " [w="2", color="#1e90ff" , len=0.8];
+	"1_post_rate_in_year " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_carri_report_on_factori " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"1_carri_report_on_factori " -- "1_includ_report_on_trade " [w="2", color="#1e90ff" , len=0.8];
+	"1_carri_report_on_factori " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "0_increas_rate_in_coupl " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "0_fix_rate_in_state " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "0_have_role_with_audit " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_on_stock " -- "0_increas_rate_in_coupl " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "0_fix_rate_in_state " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"0_increas_rate_in_coupl " -- "0_fix_rate_in_state " [w="2", color="#1e90ff" , len=0.8];
+	"0_increas_rate_in_coupl " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_increas_rate_in_coupl " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_increas_rate_in_coupl " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_fix_rate_in_state " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_fix_rate_in_state " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_fix_rate_in_state " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

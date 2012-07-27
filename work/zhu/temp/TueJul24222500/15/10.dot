@@ -1,0 +1,42 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_admit_role_in_scandal " "1_plai_role_of_messiah " "0_file_report_on_time " "1_relish_role_as_home " "0_lower_rate_from_hold " "0_cut_rate_to_hold " "1_have_role_in_assess " "1_is_rule_in_univers " "0_transfer_risk_to_investor " "1_seen_report_of_unawar "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_includ_report_on_trade " "1_compar_rate_of_group " "1_reduc_rate_on_million " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"1_admit_role_in_scandal " -- "1_plai_role_of_messiah " [w="1", color="#87cefa" ];
+	"1_admit_role_in_scandal " -- "1_relish_role_as_home " [w="1", color="#87cefa" ];
+	"1_admit_role_in_scandal " -- "1_have_role_in_assess " [w="2", color="#1e90ff" , len=0.8];
+	"1_admit_role_in_scandal " -- "1_is_rule_in_univers " [w="1", color="#87cefa" ];
+	"1_admit_role_in_scandal " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_admit_role_in_scandal " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_plai_role_of_messiah " -- "1_relish_role_as_home " [w="1", color="#87cefa" ];
+	"1_plai_role_of_messiah " -- "1_have_role_in_assess " [w="1", color="#87cefa" ];
+	"1_plai_role_of_messiah " -- "1_seen_report_of_unawar " [w="1", color="#87cefa" ];
+	"1_plai_role_of_messiah " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_plai_role_of_messiah " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_file_report_on_time " -- "1_seen_report_of_unawar " [w="1", color="#87cefa" ];
+	"0_file_report_on_time " -- "1_includ_report_on_trade " [w="2", color="#1e90ff" , len=0.8];
+	"0_file_report_on_time " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_relish_role_as_home " -- "1_have_role_in_assess " [w="1", color="#87cefa" ];
+	"1_relish_role_as_home " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_lower_rate_from_hold " -- "0_cut_rate_to_hold " [w="2", color="#1e90ff" , len=0.8];
+	"0_lower_rate_from_hold " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_lower_rate_from_hold " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "0_transfer_risk_to_investor " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "1_is_rule_in_univers " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "0_have_role_with_audit " [w="2", color="#1e90ff" , len=0.8];
+	"1_is_rule_in_univers " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_is_rule_in_univers " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_transfer_risk_to_investor " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

@@ -1,0 +1,26 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_acquir_posit_in_compani " "1_hold_%_of_share " "0_hold_stake_in_carrier " "1_see_group_of_letter "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_seek_contract_of_pact " "0_acquir_entitynam_for_billion "}
+edge [color="#B0E2FF"];
+
+	"1_acquir_posit_in_compani " -- "0_hold_stake_in_carrier " [w="1", color="#87cefa" ];
+	"1_acquir_posit_in_compani " -- "0_acquir_entitynam_for_billion " [w="1", color="#87cefa" ];
+	"1_acquir_posit_in_compani " -- "1_see_increas_in_pai " [w="1", color="#87cefa" ];
+	"1_hold_%_of_share " -- "0_hold_stake_in_carrier " [w="1", color="#87cefa" ];
+	"1_hold_%_of_share " -- "1_see_group_of_letter " [w="1", color="#87cefa" ];
+	"1_hold_%_of_share " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_hold_%_of_share " -- "1_hold_hear_on_bill " [w="1", color="#87cefa" ];
+	"1_hold_%_of_share " -- "1_hold_stake_of_share " [w="3", color="#0000cd" , len=0.6];
+	"0_hold_stake_in_carrier " -- "1_see_increas_in_pai " [w="1", color="#87cefa" ];
+	"0_hold_stake_in_carrier " -- "1_hold_hear_on_bill " [w="1", color="#87cefa" ];
+	"0_hold_stake_in_carrier " -- "1_hold_stake_of_share " [w="2", color="#1e90ff" , len=0.8];
+	"1_see_group_of_letter " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_see_group_of_letter " -- "1_see_increas_in_pai " [w="1", color="#87cefa" ];
+	"1_see_group_of_letter " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"0_seek_contract_of_pact " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"1_hold_hear_on_bill " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+}

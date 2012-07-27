@@ -1,0 +1,85 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_enact_rule_by_end " "1_avoid_risk_of_reject " "0_expect_rate_from_entitynam " "1_plai_role_in_loyalti " "1_brush_report_about_infight " "1_occupi_role_in_societi " "1_know_report_of_entitynam " "1_had_rate_of_% " "1_lower_rate_on_stock " "1_lower_rate_on_stock "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_assum_role_after_year " "0_plai_role_in_phase " "0_plai_role_in_decis "}
+edge [color="#B0E2FF"];
+
+	"1_avoid_risk_of_reject " -- "1_know_report_of_entitynam " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_increas_risk_of_default " [w="2", color="#1e90ff" , len=0.8];
+	"1_avoid_risk_of_reject " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_know_report_of_entitynam " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_pai_rate_for_fund " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"0_expect_rate_from_entitynam " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_plai_role_in_loyalti " -- "1_occupi_role_in_societi " [w="2", color="#1e90ff" , len=0.8];
+	"1_plai_role_in_loyalti " -- "0_assum_role_after_year " [w="1", color="#87cefa" ];
+	"1_plai_role_in_loyalti " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_loyalti " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_plai_role_in_loyalti " -- "0_plai_role_in_phase " [w="3", color="#0000cd" , len=0.6];
+	"1_plai_role_in_loyalti " -- "0_plai_role_in_decis " [w="3", color="#0000cd" , len=0.6];
+	"1_brush_report_about_infight " -- "1_know_report_of_entitynam " [w="1", color="#87cefa" ];
+	"1_brush_report_about_infight " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_occupi_role_in_societi " -- "0_assum_role_after_year " [w="1", color="#87cefa" ];
+	"1_occupi_role_in_societi " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_occupi_role_in_societi " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_occupi_role_in_societi " -- "0_plai_role_in_phase " [w="2", color="#1e90ff" , len=0.8];
+	"1_occupi_role_in_societi " -- "0_plai_role_in_decis " [w="2", color="#1e90ff" , len=0.8];
+	"1_know_report_of_entitynam " -- "1_had_rate_of_% " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_hurt_report_of_earn " [w="2", color="#1e90ff" , len=0.8];
+	"1_know_report_of_entitynam " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_know_report_of_entitynam " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_pai_rate_for_fund " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_reach_rate_of_% " [w="3", color="#0000cd" , len=0.6];
+	"1_had_rate_of_% " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_had_rate_of_% " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_on_stock " -- "1_lower_rate_on_stock " [w="4", style=bold, color="#000080", len=0.4];
+	"1_lower_rate_on_stock " -- "1_pai_rate_for_fund " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_pai_rate_for_fund " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_assum_role_after_year " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"0_assum_role_after_year " -- "0_plai_role_in_phase " [w="1", color="#87cefa" ];
+	"0_assum_role_after_year " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "1_wa_risk_to_entitynam " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "0_plai_role_in_phase " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_pai_rate_for_fund " -- "1_reach_rate_of_% " [w="1", color="#87cefa" ];
+	"1_pai_rate_for_fund " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_reinforc_role_of_institut " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_reach_rate_of_% " -- "1_push_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_reinforc_role_of_institut " -- "0_plai_role_in_phase " [w="1", color="#87cefa" ];
+	"1_reinforc_role_of_institut " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_reinforc_role_of_institut " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_reinforc_role_of_institut " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_reinforc_role_of_institut " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_wa_risk_to_entitynam " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"0_plai_role_in_phase " -- "0_plai_role_in_decis " [w="3", color="#0000cd" , len=0.6];
+	"1_hurt_report_of_earn " -- "1_increas_risk_of_default " [w="1", color="#87cefa" ];
+	"1_hurt_report_of_earn " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_increas_risk_of_default " -- "1_push_rate_of_inflat " [w="1", color="#87cefa" ];
+}

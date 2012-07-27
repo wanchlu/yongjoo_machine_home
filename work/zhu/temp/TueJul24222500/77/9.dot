@@ -1,0 +1,39 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_give_rate_to_those " "1_spread_risk_of_polici " "1_plai_role_in_oper " "0_ignor_role_as_sourc " "0_cut_rate_to_hold " "1_scrutin_report_on_product " "0_reckon_rate_at_% " "0_negoti_rate_with_thrift " "1_tighten_rule_on_gift "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_compar_rate_of_group " "1_reduc_rate_on_million "}
+edge [color="#B0E2FF"];
+
+	"0_give_rate_to_those " -- "0_cut_rate_to_hold " [w="2", color="#1e90ff" , len=0.8];
+	"0_give_rate_to_those " -- "0_reckon_rate_at_% " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "0_negoti_rate_with_thrift " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_spread_risk_of_polici " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_spread_risk_of_polici " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_oper " -- "0_ignor_role_as_sourc " [w="1", color="#87cefa" ];
+	"1_plai_role_in_oper " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_oper " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_ignor_role_as_sourc " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "0_reckon_rate_at_% " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "0_negoti_rate_with_thrift " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_scrutin_report_on_product " -- "1_tighten_rule_on_gift " [w="1", color="#87cefa" ];
+	"1_scrutin_report_on_product " -- "1_includ_report_on_trade " [w="2", color="#1e90ff" , len=0.8];
+	"1_scrutin_report_on_product " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "0_negoti_rate_with_thrift " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_negoti_rate_with_thrift " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_tighten_rule_on_gift " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_tighten_rule_on_gift " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_tighten_rule_on_gift " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

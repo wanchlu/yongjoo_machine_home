@@ -1,0 +1,21 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_seen_chanc_at_commiss " "1_acquir_%_of_entitynam " "0_sell_product_under_label " "1_see_lot_of_interest " "0_acquir_entitynam_for_million "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_seek_contract_of_pact "}
+edge [color="#B0E2FF"];
+
+	"1_acquir_%_of_entitynam " -- "1_see_lot_of_interest " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "0_acquir_entitynam_for_million " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "0_acquir_entitynam_for_billion " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"1_see_lot_of_interest " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_see_lot_of_interest " -- "1_see_increas_in_pai " [w="1", color="#87cefa" ];
+	"1_see_lot_of_interest " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"0_acquir_entitynam_for_million " -- "0_acquir_entitynam_for_billion " [w="3", color="#0000cd" , len=0.6];
+	"0_seek_contract_of_pact " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"1_hold_hear_on_bill " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+}

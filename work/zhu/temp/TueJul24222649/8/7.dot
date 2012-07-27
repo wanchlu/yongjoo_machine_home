@@ -1,0 +1,61 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_have_rate_of_othernum " "1_plai_role_in_oper " "1_review_rate_on_bond " "1_avoid_risk_of_reject " "1_ban_role_in_assassin " "1_have_rate_of_injuri " "1_reduc_rate_on_incom "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_charg_rate_for_time " "0_have_rate_in_year "}
+edge [color="#B0E2FF"];
+
+	"1_have_rate_of_othernum " -- "1_review_rate_on_bond " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "1_avoid_risk_of_reject " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "1_have_rate_of_injuri " [w="3", color="#0000cd" , len=0.6];
+	"1_have_rate_of_othernum " -- "1_reduc_rate_on_incom " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_have_rate_of_othernum " -- "0_have_rate_in_year " [w="2", color="#1e90ff" , len=0.8];
+	"1_have_rate_of_othernum " -- "1_calcul_rate_of_option " [w="2", color="#1e90ff" , len=0.8];
+	"1_plai_role_in_oper " -- "1_ban_role_in_assassin " [w="2", color="#1e90ff" , len=0.8];
+	"1_plai_role_in_oper " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_plai_role_in_oper " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_oper " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "1_have_rate_of_injuri " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "1_reduc_rate_on_incom " [w="2", color="#1e90ff" , len=0.8];
+	"1_review_rate_on_bond " -- "1_await_report_on_loss " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_review_rate_on_bond " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_have_rate_of_injuri " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_avoid_risk_of_reject " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_ban_role_in_assassin " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_ban_role_in_assassin " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_ban_role_in_assassin " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_have_rate_of_injuri " -- "1_reduc_rate_on_incom " [w="1", color="#87cefa" ];
+	"1_have_rate_of_injuri " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_have_rate_of_injuri " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_have_rate_of_injuri " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_have_rate_of_injuri " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_have_rate_of_injuri " -- "0_have_rate_in_year " [w="2", color="#1e90ff" , len=0.8];
+	"1_have_rate_of_injuri " -- "1_calcul_rate_of_option " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_on_incom " -- "1_await_report_on_loss " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_incom " -- "1_reduc_rate_for_deposit " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_on_incom " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_incom " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_incom " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "0_charg_rate_for_time " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_adopt_rule_of_construct " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+}

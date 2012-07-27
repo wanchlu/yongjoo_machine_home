@@ -1,0 +1,45 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_increas_rate_over_time " "1_slow_rate_of_increas " "0_manag_rate_to_level " "1_plai_role_in_settlement " "0_take_risk_in_market " "1_plai_role_in_fuel " "1_confirm_rate_on_paper " "0_enact_rule_by_end " "0_produc_rate_over_dai " "1_abandon_role_as_investor "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_compar_rate_of_group " "1_follow_rule_by_judg " "1_reduc_rate_on_million " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"0_increas_rate_over_time " -- "1_slow_rate_of_increas " [w="1", color="#87cefa" ];
+	"0_increas_rate_over_time " -- "0_manag_rate_to_level " [w="1", color="#87cefa" ];
+	"0_increas_rate_over_time " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"0_increas_rate_over_time " -- "0_produc_rate_over_dai " [w="2", color="#1e90ff" , len=0.8];
+	"0_increas_rate_over_time " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_increas_rate_over_time " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_slow_rate_of_increas " -- "0_manag_rate_to_level " [w="1", color="#87cefa" ];
+	"1_slow_rate_of_increas " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"1_slow_rate_of_increas " -- "0_produc_rate_over_dai " [w="1", color="#87cefa" ];
+	"1_slow_rate_of_increas " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_slow_rate_of_increas " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_manag_rate_to_level " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"0_manag_rate_to_level " -- "0_produc_rate_over_dai " [w="1", color="#87cefa" ];
+	"0_manag_rate_to_level " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_manag_rate_to_level " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_plai_role_in_settlement " -- "0_take_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_settlement " -- "1_plai_role_in_fuel " [w="3", color="#0000cd" , len=0.6];
+	"1_plai_role_in_settlement " -- "1_abandon_role_as_investor " [w="1", color="#87cefa" ];
+	"1_plai_role_in_settlement " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_settlement " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"0_take_risk_in_market " -- "1_plai_role_in_fuel " [w="1", color="#87cefa" ];
+	"0_take_risk_in_market " -- "1_hedg_risk_in_market " [w="3", color="#0000cd" , len=0.6];
+	"1_plai_role_in_fuel " -- "1_abandon_role_as_investor " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fuel " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fuel " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "0_produc_rate_over_dai " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"0_enact_rule_by_end " -- "1_follow_rule_by_judg " [w="2", color="#1e90ff" , len=0.8];
+	"0_produc_rate_over_dai " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_produc_rate_over_dai " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_abandon_role_as_investor " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

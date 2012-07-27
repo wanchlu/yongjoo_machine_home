@@ -1,0 +1,27 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_present_report_to_member " "0_win_rate_from_critic " "0_lower_risk_in_portfolio "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_pursu_role_of_senat " "1_await_report_on_loss " "1_reduc_rate_for_deposit " "1_adopt_rule_of_construct " "1_hedg_risk_in_market " "1_calcul_rate_of_option "}
+edge [color="#B0E2FF"];
+
+	"0_present_report_to_member " -- "1_await_report_on_loss " [w="1", color="#87cefa" ];
+	"0_win_rate_from_critic " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_win_rate_from_critic " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_win_rate_from_critic " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_win_rate_from_critic " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_lower_risk_in_portfolio " -- "1_hedg_risk_in_market " [w="2", color="#1e90ff" , len=0.8];
+	"0_lower_risk_in_portfolio " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "0_charg_rate_for_time " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_adopt_rule_of_construct " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+}

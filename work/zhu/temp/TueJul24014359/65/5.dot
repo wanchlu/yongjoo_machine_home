@@ -1,0 +1,42 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_see_exercis_in_fact " "0_acquir_share_for_penc " "1_sell_billion_of_bill " "1_sell_share_in_entitynam " "0_sell_million_at_time "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_sell_product_to_forc " "0_sell_major_to_entitynam " "0_sell_chain_to_manag "}
+edge [color="#B0E2FF"];
+
+	"0_see_exercis_in_fact " -- "1_sell_share_in_entitynam " [w="1", color="#87cefa" ];
+	"0_see_exercis_in_fact " -- "1_see_improv_in_margin " [w="2", color="#1e90ff" , len=0.8];
+	"0_see_exercis_in_fact " -- "1_hold_job_in_manag " [w="1", color="#87cefa" ];
+	"0_acquir_share_for_penc " -- "1_sell_share_in_entitynam " [w="1", color="#87cefa" ];
+	"0_acquir_share_for_penc " -- "1_acquir_%_of_stock " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "1_sell_share_in_entitynam " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "0_sell_million_at_time " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "1_acquir_%_of_stock " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "0_sell_product_to_forc " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "0_sell_major_to_entitynam " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "0_sell_chain_to_manag " [w="1", color="#87cefa" ];
+	"1_sell_billion_of_bill " -- "1_sell_othernum_of_model " [w="2", color="#1e90ff" , len=0.8];
+	"1_sell_share_in_entitynam " -- "0_sell_million_at_time " [w="1", color="#87cefa" ];
+	"1_sell_share_in_entitynam " -- "1_see_improv_in_margin " [w="1", color="#87cefa" ];
+	"1_sell_share_in_entitynam " -- "1_hold_job_in_manag " [w="1", color="#87cefa" ];
+	"1_sell_share_in_entitynam " -- "0_sell_product_to_forc " [w="1", color="#87cefa" ];
+	"1_sell_share_in_entitynam " -- "0_sell_major_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"1_sell_share_in_entitynam " -- "0_sell_chain_to_manag " [w="1", color="#87cefa" ];
+	"1_sell_share_in_entitynam " -- "1_sell_othernum_of_model " [w="1", color="#87cefa" ];
+	"0_sell_million_at_time " -- "0_sell_product_to_forc " [w="1", color="#87cefa" ];
+	"0_sell_million_at_time " -- "0_sell_major_to_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_million_at_time " -- "0_sell_chain_to_manag " [w="1", color="#87cefa" ];
+	"0_sell_million_at_time " -- "1_sell_othernum_of_model " [w="1", color="#87cefa" ];
+	"1_see_improv_in_margin " -- "1_hold_job_in_manag " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_stock " -- "1_sell_othernum_of_model " [w="1", color="#87cefa" ];
+	"1_hold_job_in_manag " -- "0_sell_chain_to_manag " [w="1", color="#87cefa" ];
+	"0_sell_product_to_forc " -- "0_sell_major_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_product_to_forc " -- "0_sell_chain_to_manag " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_product_to_forc " -- "1_sell_othernum_of_model " [w="1", color="#87cefa" ];
+	"0_sell_major_to_entitynam " -- "0_sell_chain_to_manag " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_major_to_entitynam " -- "1_sell_othernum_of_model " [w="1", color="#87cefa" ];
+	"0_sell_chain_to_manag " -- "1_sell_othernum_of_model " [w="1", color="#87cefa" ];
+}

@@ -1,0 +1,67 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_lower_rate_on_stock " "0_carri_rate_with_% " "0_increas_rate_to_% "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_plai_role_in_decad " "1_take_role_in_manag " "1_establish_rule_of_immun " "1_plai_role_in_declin " "1_wa_rate_of_month " "1_reduc_rate_of_growth " "1_reduc_rate_on_million " "1_hurt_report_of_earn "}
+edge [color="#B0E2FF"];
+
+	"1_lower_rate_on_stock " -- "0_carri_rate_with_% " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "0_increas_rate_to_% " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_impos_rule_on_state " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "0_pai_rate_in_quarter " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_take_risk_on_outcom " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_on_stock " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"0_carri_rate_with_% " -- "0_increas_rate_to_% " [w="2", color="#1e90ff" , len=0.8];
+	"0_carri_rate_with_% " -- "0_pai_rate_in_quarter " [w="1", color="#87cefa" ];
+	"0_carri_rate_with_% " -- "0_push_rate_to_% " [w="2", color="#1e90ff" , len=0.8];
+	"0_carri_rate_with_% " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_carri_rate_with_% " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"0_carri_rate_with_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_carri_rate_with_% " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"0_increas_rate_to_% " -- "0_pai_rate_in_quarter " [w="1", color="#87cefa" ];
+	"0_increas_rate_to_% " -- "0_push_rate_to_% " [w="3", color="#0000cd" , len=0.6];
+	"0_increas_rate_to_% " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_increas_rate_to_% " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"0_increas_rate_to_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_increas_rate_to_% " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_impos_rule_on_state " -- "1_take_risk_on_outcom " [w="1", color="#87cefa" ];
+	"1_impos_rule_on_state " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_impos_rule_on_state " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "1_plai_role_in_decad " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "1_take_role_in_manag " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_pai_rate_in_quarter " -- "0_eas_rate_in_respons " [w="2", color="#1e90ff" , len=0.8];
+	"0_push_rate_to_% " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"0_push_rate_to_% " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"0_push_rate_to_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_push_rate_to_% " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_plai_role_in_decad " -- "1_take_role_in_manag " [w="2", color="#1e90ff" , len=0.8];
+	"1_plai_role_in_decad " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"1_plai_role_in_decad " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_take_role_in_manag " -- "1_take_risk_on_outcom " [w="1", color="#87cefa" ];
+	"1_take_role_in_manag " -- "1_plai_role_in_declin " [w="2", color="#1e90ff" , len=0.8];
+	"1_take_role_in_manag " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_take_risk_on_outcom " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_establish_rule_of_immun " -- "1_wa_rate_of_month " [w="1", color="#87cefa" ];
+	"1_establish_rule_of_immun " -- "1_reduc_rate_of_growth " [w="1", color="#87cefa" ];
+	"1_establish_rule_of_immun " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_plai_role_in_declin " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_wa_rate_of_month " -- "1_reduc_rate_of_growth " [w="2", color="#1e90ff" , len=0.8];
+	"1_wa_rate_of_month " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_wa_rate_of_month " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_wa_rate_of_month " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_reduc_rate_of_growth " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_of_growth " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_reduc_rate_of_growth " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+	"1_reduc_rate_on_million " -- "0_eas_rate_in_respons " [w="1", color="#87cefa" ];
+}

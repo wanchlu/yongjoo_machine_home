@@ -1,0 +1,23 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_seen_report_among_patient " "1_brush_report_about_infight " "1_reckon_rate_on_bond " "1_were_report_of_death "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_wa_risk_to_entitynam " "1_plai_role_in_declin " "0_allow_report_into_room "}
+edge [color="#B0E2FF"];
+
+	"0_seen_report_among_patient " -- "1_brush_report_about_infight " [w="1", color="#87cefa" ];
+	"0_seen_report_among_patient " -- "1_were_report_of_death " [w="1", color="#87cefa" ];
+	"0_seen_report_among_patient " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"0_seen_report_among_patient " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_brush_report_about_infight " -- "1_were_report_of_death " [w="1", color="#87cefa" ];
+	"1_brush_report_about_infight " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_brush_report_about_infight " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_reckon_rate_on_bond " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_were_report_of_death " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_were_report_of_death " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_were_report_of_death " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_plai_role_in_decis " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"0_allow_report_into_room " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+}

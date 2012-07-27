@@ -1,0 +1,25 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_propos_rule_next_year " "1_is_report_in_bureau " "0_had_rate_in_studi " "0_confus_rate_with_payment " "1_seen_report_of_unawar "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_wa_risk_to_entitynam " "1_establish_rule_of_immun " "1_plai_role_in_declin " "0_allow_report_into_room "}
+edge [color="#B0E2FF"];
+
+	"0_propos_rule_next_year " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_had_rate_in_studi " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_seen_report_of_unawar " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "0_confus_rate_with_payment " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"0_had_rate_in_studi " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_establish_rule_of_immun " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_seen_report_of_unawar " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_plai_role_in_decis " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"0_allow_report_into_room " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+}

@@ -2,18 +2,20 @@
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
+#include <iostream>
+using namespace std;
 
 
 typedef struct edge {
   unsigned int ids[2];
-  float weight;
+  double weight;
 } edge_t;
 
 
 typedef struct node {
-  float *old_values;
-  float *new_values;
-  float influx;
+  double *old_values;
+  double *new_values;
+  double influx;
   char labeled;
 }node_t;
 
@@ -29,14 +31,14 @@ edge_t *edges;
 void process_args(int argc, char **argv);
 void read_labels();
 void read_edges();
-float propagate_labels();
+double propagate_labels();
 void output_labels ();
 
 void determine_limits () {
   FILE *fp;
   fp = fopen (sim_file, "r");
   unsigned int n1, n2;
-  float weight;
+  double weight;
 
   while ((fscanf(fp, "%d %d %f\n", &n1, &n2, &weight)) != EOF) {
     if (weight <= 0.0) continue;
@@ -66,7 +68,7 @@ int main (int argc, char **argv) {
     exit (1);
   }
 
-  //fprintf (stderr, "allocating edges..\n");
+//fprintf (stderr, "allocating edges..\n");
   edges = (edge_t *) malloc(n_edges * sizeof(edge_t));
   read_edges();
 
@@ -74,8 +76,8 @@ int main (int argc, char **argv) {
   nodes = (node_t *) malloc(n_nodes * sizeof(node_t));
   memset (nodes, 0, n_nodes * sizeof(node_t));
   for (unsigned int i=0; i < n_nodes; i++) {
-    nodes[i].old_values = (float *) malloc (n_classes * sizeof(float));
-    nodes[i].new_values = (float *) malloc (n_classes * sizeof(float));
+    nodes[i].old_values = (double *) malloc (n_classes * sizeof(double));
+    nodes[i].new_values = (double *) malloc (n_classes * sizeof(double));
   }
 
   read_labels();
@@ -94,12 +96,12 @@ int main (int argc, char **argv) {
     nodes[edges[i].ids[1]].influx += edges[i].weight;
   }
 
-  float max_error;
+  double max_error;
 
   do {
     max_error = propagate_labels();
-    //fprintf (stderr, "error: %f\n", max_error);
-  } while (max_error > 0.001);
+  //  fprintf (stderr, "error: %f\n", max_error);
+  } while (max_error > 0.0002);
 
   output_labels();
 
@@ -122,12 +124,20 @@ void output_labels () {
       total++;
       if (nodes[i].old_values[0] < nodes[i].old_values[1])
       {
+          if (! (nodes[i].old_values[0] >=0 and nodes[i].old_values[0] <= 1)){
+              cout<<sim_file;
+              cout<<i;
+          }
       fprintf (fp, "%d\t1\t%f\t%f\n", i+1 , nodes[i].old_values[0], nodes[i].old_values[1]);
        if (label == 1)
          correct++;
       }
       else
       {
+          if (! (nodes[i].old_values[0] >=0 and nodes[i].old_values[0] <= 1)){
+              cout<<sim_file;
+              cout<<i;
+          }
       fprintf (fp, "%d\t0\t%f\t%f\n", i+1 , nodes[i].old_values[0], nodes[i].old_values[1]);
        if (label == 0)
          correct++;
@@ -143,28 +153,35 @@ void output_labels () {
 
 
 
-float propagate_labels() {
+double propagate_labels() {
 
-  float max_error = 0;
+  double max_error = 0;
 
   for (unsigned int i=0; i < n_edges; i++) {
-    if (!(nodes[edges[i].ids[0]].labeled))
-      for (short j=0; j < n_classes; j++)
+    if (!(nodes[edges[i].ids[0]].labeled)) {
+      for (short j=0; j < n_classes; j++) {
         nodes[edges[i].ids[0]].new_values[j] += nodes[edges[i].ids[1]].old_values[j] * edges[i].weight;
-    if (!(nodes[edges[i].ids[1]].labeled))
-      for (short j=0; j < n_classes; j++)
+      //  fprintf(stderr," - node %d update class %d value to %f\n", edges[i].ids[0], j, nodes[edges[i].ids[0]].new_values[j]);
+      }
+    }
+    if (!(nodes[edges[i].ids[1]].labeled)) {
+      for (short j=0; j < n_classes; j++) {
         nodes[edges[i].ids[1]].new_values[j] += nodes[edges[i].ids[0]].old_values[j] * edges[i].weight;
+       // fprintf(stderr," - node %d update class %d value to %f\n", edges[i].ids[0], j, nodes[edges[i].ids[0]].new_values[j]);
+      }
+    }
   }
 
   for (unsigned int i=0; i < n_nodes; i++) {
     if ((!nodes[i].labeled) && nodes[i].influx > 0) {
       for (short j=0; j < n_classes; j++) {
-        float new_value = nodes[i].new_values[j] / nodes[i].influx;
-        float error = new_value - nodes[i].old_values[j];
+        double new_value = nodes[i].new_values[j] / nodes[i].influx;
+        double error = new_value - nodes[i].old_values[j];
         if (error < 0) error = -error;
         if (error > max_error) max_error = error;
         nodes[i].old_values[j] = new_value;
         nodes[i].new_values[j] = 0;
+      //  fprintf(stderr," --- node %d update class %d value to %f\n", i, j, new_value);
       }
     }
   }
@@ -179,7 +196,7 @@ float propagate_labels() {
 void read_edges() {
   FILE *fp;
   unsigned int count=0, n1, n2;
-  float weight;
+  double weight;
   fp = fopen (sim_file, "r");
 
   while ((fscanf(fp, "%d %d %f\n", &n1, &n2, &weight)) != EOF) {
@@ -204,7 +221,7 @@ void read_labels() {
   while ((fscanf(fp, "%d %hd\n", &n1, &c)) != EOF) {
     nodes[n1-1].old_values[c] = 1.0;
     nodes[n1-1].labeled = 1;
-   // fprintf (stderr, "label: %hd\n", c);
+    //fprintf (stderr, "label: %hd\n", c);
   }
   fclose(fp);
 }

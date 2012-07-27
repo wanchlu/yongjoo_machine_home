@@ -1,0 +1,35 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_rais_rate_by_% " "1_set_rate_on_refund " "0_call_report_off_base " "1_outweigh_risk_to_environ " "0_lower_rate_from_hold " "1_is_report_in_bureau " "1_plai_role_in_number " "1_were_report_of_death "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_compar_rate_of_group " "1_follow_rule_by_judg " "1_reduc_rate_on_million " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"0_rais_rate_by_% " -- "1_set_rate_on_refund " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_% " -- "0_lower_rate_from_hold " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_% " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_% " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_set_rate_on_refund " -- "0_lower_rate_from_hold " [w="1", color="#87cefa" ];
+	"1_set_rate_on_refund " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_set_rate_on_refund " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_set_rate_on_refund " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"0_call_report_off_base " -- "1_is_report_in_bureau " [w="1", color="#87cefa" ];
+	"0_call_report_off_base " -- "1_were_report_of_death " [w="1", color="#87cefa" ];
+	"0_call_report_off_base " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_outweigh_risk_to_environ " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_lower_rate_from_hold " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_lower_rate_from_hold " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_plai_role_in_number " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_were_report_of_death " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_number " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_number " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_were_report_of_death " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_were_report_of_death " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

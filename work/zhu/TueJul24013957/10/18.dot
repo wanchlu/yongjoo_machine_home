@@ -1,0 +1,75 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_seek_suggest_from_lobbyist " "1_hold_auction_of_secur " "0_sell_stock_at_bottom " "0_sell_loan_to_owner " "0_hold_posit_until_retir " "0_sell_asset_to_entitynam " "1_sell_access_to_packag " "0_acquir_busi_for_dollar " "0_sell_stake_to_newcom " "0_sell_interest_to_unit " "1_us_proce_of_offer " "0_see_thi_as_exercis " "1_hold_vote_on_amend " "1_acquir_%_of_entitynam " "0_sell_invest_to_sharehold " "0_seen_peak_for_year " "1_hold_stake_in_ventur " "1_acquir_othernum_of_share "}
+{node [color="#fff0f5", fontcolor="#b22222"] "0_seek_contract_of_pact " "1_see_increas_in_pai "}
+edge [color="#B0E2FF"];
+
+	"0_seek_suggest_from_lobbyist " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "0_hold_posit_until_retir " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_us_proce_of_offer " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_hold_vote_on_amend " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_acquir_%_of_entitynam " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_hold_stake_in_ventur " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_acquir_othernum_of_share " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_hold_hear_on_bill " [w="1", color="#87cefa" ];
+	"1_hold_auction_of_secur " -- "1_hold_stake_of_share " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_stock_at_bottom " -- "0_sell_loan_to_owner " [w="1", color="#87cefa" ];
+	"0_sell_stock_at_bottom " -- "0_sell_asset_to_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_stock_at_bottom " -- "1_sell_access_to_packag " [w="1", color="#87cefa" ];
+	"0_sell_stock_at_bottom " -- "0_sell_stake_to_newcom " [w="1", color="#87cefa" ];
+	"0_sell_stock_at_bottom " -- "0_sell_interest_to_unit " [w="1", color="#87cefa" ];
+	"0_sell_stock_at_bottom " -- "0_sell_invest_to_sharehold " [w="1", color="#87cefa" ];
+	"0_sell_loan_to_owner " -- "0_sell_asset_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_loan_to_owner " -- "1_sell_access_to_packag " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_loan_to_owner " -- "0_sell_stake_to_newcom " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_loan_to_owner " -- "0_sell_interest_to_unit " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_loan_to_owner " -- "0_sell_invest_to_sharehold " [w="2", color="#1e90ff" , len=0.8];
+	"0_hold_posit_until_retir " -- "1_hold_vote_on_amend " [w="1", color="#87cefa" ];
+	"0_hold_posit_until_retir " -- "1_hold_stake_in_ventur " [w="1", color="#87cefa" ];
+	"0_hold_posit_until_retir " -- "1_hold_hear_on_bill " [w="1", color="#87cefa" ];
+	"0_hold_posit_until_retir " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"0_sell_asset_to_entitynam " -- "1_sell_access_to_packag " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_asset_to_entitynam " -- "0_sell_stake_to_newcom " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_asset_to_entitynam " -- "0_sell_interest_to_unit " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_asset_to_entitynam " -- "1_acquir_%_of_entitynam " [w="1", color="#87cefa" ];
+	"0_sell_asset_to_entitynam " -- "0_sell_invest_to_sharehold " [w="2", color="#1e90ff" , len=0.8];
+	"1_sell_access_to_packag " -- "0_sell_stake_to_newcom " [w="2", color="#1e90ff" , len=0.8];
+	"1_sell_access_to_packag " -- "0_sell_interest_to_unit " [w="2", color="#1e90ff" , len=0.8];
+	"1_sell_access_to_packag " -- "0_sell_invest_to_sharehold " [w="2", color="#1e90ff" , len=0.8];
+	"0_acquir_busi_for_dollar " -- "1_acquir_%_of_entitynam " [w="1", color="#87cefa" ];
+	"0_acquir_busi_for_dollar " -- "0_seen_peak_for_year " [w="1", color="#87cefa" ];
+	"0_acquir_busi_for_dollar " -- "1_acquir_othernum_of_share " [w="1", color="#87cefa" ];
+	"0_acquir_busi_for_dollar " -- "0_acquir_entitynam_for_billion " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_stake_to_newcom " -- "0_sell_interest_to_unit " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_stake_to_newcom " -- "0_sell_invest_to_sharehold " [w="2", color="#1e90ff" , len=0.8];
+	"0_sell_stake_to_newcom " -- "1_hold_stake_in_ventur " [w="1", color="#87cefa" ];
+	"0_sell_stake_to_newcom " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"0_sell_interest_to_unit " -- "0_sell_invest_to_sharehold " [w="2", color="#1e90ff" , len=0.8];
+	"1_us_proce_of_offer " -- "1_acquir_%_of_entitynam " [w="1", color="#87cefa" ];
+	"1_us_proce_of_offer " -- "1_acquir_othernum_of_share " [w="1", color="#87cefa" ];
+	"1_us_proce_of_offer " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_us_proce_of_offer " -- "0_us_it_as_wai " [w="1", color="#87cefa" ];
+	"1_us_proce_of_offer " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"0_see_thi_as_exercis " -- "0_us_it_as_wai " [w="1", color="#87cefa" ];
+	"0_see_thi_as_exercis " -- "1_see_increas_in_pai " [w="1", color="#87cefa" ];
+	"1_hold_vote_on_amend " -- "1_hold_stake_in_ventur " [w="1", color="#87cefa" ];
+	"1_hold_vote_on_amend " -- "1_hold_hear_on_bill " [w="2", color="#1e90ff" , len=0.8];
+	"1_hold_vote_on_amend " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "1_acquir_othernum_of_share " [w="2", color="#1e90ff" , len=0.8];
+	"1_acquir_%_of_entitynam " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "0_acquir_entitynam_for_billion " [w="1", color="#87cefa" ];
+	"1_acquir_%_of_entitynam " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"0_seen_peak_for_year " -- "0_acquir_entitynam_for_billion " [w="1", color="#87cefa" ];
+	"1_hold_stake_in_ventur " -- "1_see_increas_in_pai " [w="1", color="#87cefa" ];
+	"1_hold_stake_in_ventur " -- "1_hold_hear_on_bill " [w="1", color="#87cefa" ];
+	"1_hold_stake_in_ventur " -- "1_hold_stake_of_share " [w="2", color="#1e90ff" , len=0.8];
+	"1_acquir_othernum_of_share " -- "0_seek_contract_of_pact " [w="1", color="#87cefa" ];
+	"1_acquir_othernum_of_share " -- "0_acquir_entitynam_for_billion " [w="1", color="#87cefa" ];
+	"1_acquir_othernum_of_share " -- "1_hold_stake_of_share " [w="2", color="#1e90ff" , len=0.8];
+	"0_seek_contract_of_pact " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+	"1_hold_hear_on_bill " -- "1_hold_stake_of_share " [w="1", color="#87cefa" ];
+}

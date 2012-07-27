@@ -1,0 +1,60 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_retain_rate_for_period " "1_drive_rate_on_secur " "1_present_risk_for_investor " "0_spread_risk_over_base " "0_set_rate_at_% " "0_question_rate_in_hear " "0_cut_rate_to_hold " "0_propos_rule_next_year " "0_transfer_risk_to_investor " "1_is_rate_on_loan " "1_elimin_risk_of_prepay " "1_follow_report_of_a "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_compar_rate_of_group " "1_follow_rule_by_judg " "1_hedg_risk_in_market " "1_reduc_rate_on_million " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"0_retain_rate_for_period " -- "1_drive_rate_on_secur " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_present_risk_for_investor " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "0_set_rate_at_% " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "0_question_rate_in_hear " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "0_cut_rate_to_hold " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_retain_rate_for_period " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "0_set_rate_at_% " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "0_question_rate_in_hear " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "0_cut_rate_to_hold " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "1_is_rate_on_loan " [w="2", color="#1e90ff" , len=0.8];
+	"1_drive_rate_on_secur " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_present_risk_for_investor " -- "0_spread_risk_over_base " [w="1", color="#87cefa" ];
+	"1_present_risk_for_investor " -- "0_transfer_risk_to_investor " [w="2", color="#1e90ff" , len=0.8];
+	"1_present_risk_for_investor " -- "1_elimin_risk_of_prepay " [w="1", color="#87cefa" ];
+	"1_present_risk_for_investor " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_spread_risk_over_base " -- "0_transfer_risk_to_investor " [w="1", color="#87cefa" ];
+	"0_spread_risk_over_base " -- "1_elimin_risk_of_prepay " [w="1", color="#87cefa" ];
+	"0_spread_risk_over_base " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_set_rate_at_% " -- "0_question_rate_in_hear " [w="1", color="#87cefa" ];
+	"0_set_rate_at_% " -- "0_cut_rate_to_hold " [w="1", color="#87cefa" ];
+	"0_set_rate_at_% " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_set_rate_at_% " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_set_rate_at_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "0_cut_rate_to_hold " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_question_rate_in_hear " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "0_transfer_risk_to_investor " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_cut_rate_to_hold " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_propos_rule_next_year " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"0_transfer_risk_to_investor " -- "1_elimin_risk_of_prepay " [w="1", color="#87cefa" ];
+	"0_transfer_risk_to_investor " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_elimin_risk_of_prepay " -- "1_follow_report_of_a " [w="1", color="#87cefa" ];
+	"1_elimin_risk_of_prepay " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_elimin_risk_of_prepay " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_follow_report_of_a " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

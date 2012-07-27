@@ -1,0 +1,30 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_view_rate_as_weapon " "0_produc_rate_over_dai " "1_abandon_role_as_investor " "0_cut_rate_amid_grow " "0_is_report_in_bureau " "1_is_report_in_bureau " "0_post_rate_sinc_spring "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_wa_risk_to_entitynam " "0_plai_role_in_decis " "1_establish_rule_of_immun " "1_suppli_report_on_plan "}
+edge [color="#B0E2FF"];
+
+	"0_view_rate_as_weapon " -- "0_produc_rate_over_dai " [w="1", color="#87cefa" ];
+	"0_view_rate_as_weapon " -- "1_abandon_role_as_investor " [w="1", color="#87cefa" ];
+	"0_view_rate_as_weapon " -- "0_cut_rate_amid_grow " [w="1", color="#87cefa" ];
+	"0_view_rate_as_weapon " -- "0_post_rate_sinc_spring " [w="1", color="#87cefa" ];
+	"0_produc_rate_over_dai " -- "0_cut_rate_amid_grow " [w="1", color="#87cefa" ];
+	"0_produc_rate_over_dai " -- "0_post_rate_sinc_spring " [w="1", color="#87cefa" ];
+	"1_abandon_role_as_investor " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_abandon_role_as_investor " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_cut_rate_amid_grow " -- "0_post_rate_sinc_spring " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_is_report_in_bureau " [w="4", style=bold, color="#000080", len=0.4];
+	"0_is_report_in_bureau " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"0_is_report_in_bureau " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_plai_role_in_decis " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_plai_role_in_declin " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "0_allow_report_into_room " [w="1", color="#87cefa" ];
+	"1_is_report_in_bureau " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+	"0_plai_role_in_decis " -- "1_plai_role_in_declin " [w="3", color="#0000cd" , len=0.6];
+	"0_allow_report_into_room " -- "1_suppli_report_on_plan " [w="1", color="#87cefa" ];
+}

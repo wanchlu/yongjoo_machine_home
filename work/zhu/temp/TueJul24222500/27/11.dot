@@ -1,0 +1,53 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_resum_role_as_supplier " "1_have_rule_on_time " "1_prepar_report_on_contact " "0_tell_report_in_offic " "1_postpon_rule_on_lawsuit " "0_be_risk_dure_year " "1_have_role_in_assess " "1_carri_rate_of_% " "1_entitynam_rate_after_expens " "1_taken_role_on_strategi " "1_plai_role_in_loyalti "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_hedg_risk_in_market " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"1_resum_role_as_supplier " -- "1_have_role_in_assess " [w="1", color="#87cefa" ];
+	"1_resum_role_as_supplier " -- "1_taken_role_on_strategi " [w="1", color="#87cefa" ];
+	"1_resum_role_as_supplier " -- "1_plai_role_in_loyalti " [w="1", color="#87cefa" ];
+	"1_resum_role_as_supplier " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "1_prepar_report_on_contact " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "1_postpon_rule_on_lawsuit " [w="2", color="#1e90ff" , len=0.8];
+	"1_have_rule_on_time " -- "1_have_role_in_assess " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "1_taken_role_on_strategi " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_have_rule_on_time " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_prepar_report_on_contact " -- "0_tell_report_in_offic " [w="1", color="#87cefa" ];
+	"1_prepar_report_on_contact " -- "1_postpon_rule_on_lawsuit " [w="1", color="#87cefa" ];
+	"1_prepar_report_on_contact " -- "1_taken_role_on_strategi " [w="1", color="#87cefa" ];
+	"1_prepar_report_on_contact " -- "1_includ_report_on_trade " [w="2", color="#1e90ff" , len=0.8];
+	"1_prepar_report_on_contact " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "1_have_role_in_assess " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "1_plai_role_in_loyalti " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"0_tell_report_in_offic " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_postpon_rule_on_lawsuit " -- "1_taken_role_on_strategi " [w="1", color="#87cefa" ];
+	"1_postpon_rule_on_lawsuit " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_postpon_rule_on_lawsuit " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_postpon_rule_on_lawsuit " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_be_risk_dure_year " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "1_taken_role_on_strategi " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "1_plai_role_in_loyalti " [w="2", color="#1e90ff" , len=0.8];
+	"1_have_role_in_assess " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_have_role_in_assess " -- "0_have_role_with_audit " [w="2", color="#1e90ff" , len=0.8];
+	"1_carri_rate_of_% " -- "1_entitynam_rate_after_expens " [w="1", color="#87cefa" ];
+	"1_carri_rate_of_% " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_carri_rate_of_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_entitynam_rate_after_expens " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_entitynam_rate_after_expens " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "1_plai_role_in_loyalti " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_plai_role_in_loyalti " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_loyalti " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

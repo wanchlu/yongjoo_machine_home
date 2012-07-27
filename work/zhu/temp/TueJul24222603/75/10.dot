@@ -1,0 +1,53 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_retain_rate_on_paper " "0_have_rate_to_extent " "1_plai_role_in_fall " "1_lower_rate_on_stock " "1_credit_report_of_genocid " "0_steer_report_to_offic " "1_provid_role_for_govern " "1_plai_role_in_loyalti " "0_see_risk_on_dimens " "1_cut_rate_on_loan "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_file_report_to_network "}
+edge [color="#B0E2FF"];
+
+	"1_retain_rate_on_paper " -- "0_have_rate_to_extent " [w="1", color="#87cefa" ];
+	"1_retain_rate_on_paper " -- "1_lower_rate_on_stock " [w="2", color="#1e90ff" , len=0.8];
+	"1_retain_rate_on_paper " -- "0_see_risk_on_dimens " [w="1", color="#87cefa" ];
+	"1_retain_rate_on_paper " -- "1_cut_rate_on_loan " [w="2", color="#1e90ff" , len=0.8];
+	"1_retain_rate_on_paper " -- "1_equal_rate_of_% " [w="1", color="#87cefa" ];
+	"0_have_rate_to_extent " -- "1_lower_rate_on_stock " [w="1", color="#87cefa" ];
+	"0_have_rate_to_extent " -- "0_steer_report_to_offic " [w="1", color="#87cefa" ];
+	"0_have_rate_to_extent " -- "1_cut_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_have_rate_to_extent " -- "1_equal_rate_of_% " [w="1", color="#87cefa" ];
+	"0_have_rate_to_extent " -- "1_file_report_to_network " [w="1", color="#87cefa" ];
+	"0_have_rate_to_extent " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fall " -- "1_provid_role_for_govern " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fall " -- "1_plai_role_in_loyalti " [w="3", color="#0000cd" , len=0.6];
+	"1_lower_rate_on_stock " -- "0_see_risk_on_dimens " [w="1", color="#87cefa" ];
+	"1_lower_rate_on_stock " -- "1_cut_rate_on_loan " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_on_stock " -- "1_equal_rate_of_% " [w="1", color="#87cefa" ];
+	"1_credit_report_of_genocid " -- "0_steer_report_to_offic " [w="1", color="#87cefa" ];
+	"1_credit_report_of_genocid " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"1_credit_report_of_genocid " -- "1_equal_rate_of_% " [w="1", color="#87cefa" ];
+	"1_credit_report_of_genocid " -- "1_entitynam_report_of_trade " [w="2", color="#1e90ff" , len=0.8];
+	"1_credit_report_of_genocid " -- "1_file_report_to_network " [w="1", color="#87cefa" ];
+	"1_credit_report_of_genocid " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"1_credit_report_of_genocid " -- "1_hurt_report_of_earn " [w="2", color="#1e90ff" , len=0.8];
+	"0_steer_report_to_offic " -- "0_file_report_by_phone " [w="1", color="#87cefa" ];
+	"0_steer_report_to_offic " -- "1_entitynam_report_of_trade " [w="1", color="#87cefa" ];
+	"0_steer_report_to_offic " -- "1_file_report_to_network " [w="2", color="#1e90ff" , len=0.8];
+	"0_steer_report_to_offic " -- "0_sent_report_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"0_steer_report_to_offic " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_provid_role_for_govern " -- "1_plai_role_in_loyalti " [w="1", color="#87cefa" ];
+	"0_see_risk_on_dimens " -- "1_cut_rate_on_loan " [w="1", color="#87cefa" ];
+	"1_cut_rate_on_loan " -- "1_equal_rate_of_% " [w="1", color="#87cefa" ];
+	"0_file_report_by_phone " -- "1_entitynam_report_of_trade " [w="1", color="#87cefa" ];
+	"0_file_report_by_phone " -- "1_file_report_to_network " [w="2", color="#1e90ff" , len=0.8];
+	"0_file_report_by_phone " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"0_file_report_by_phone " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_equal_rate_of_% " -- "1_entitynam_report_of_trade " [w="1", color="#87cefa" ];
+	"1_equal_rate_of_% " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"1_entitynam_report_of_trade " -- "1_file_report_to_network " [w="1", color="#87cefa" ];
+	"1_entitynam_report_of_trade " -- "0_sent_report_to_entitynam " [w="1", color="#87cefa" ];
+	"1_entitynam_report_of_trade " -- "1_hurt_report_of_earn " [w="2", color="#1e90ff" , len=0.8];
+	"1_file_report_to_network " -- "0_sent_report_to_entitynam " [w="2", color="#1e90ff" , len=0.8];
+	"1_file_report_to_network " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+	"0_sent_report_to_entitynam " -- "1_hurt_report_of_earn " [w="1", color="#87cefa" ];
+}

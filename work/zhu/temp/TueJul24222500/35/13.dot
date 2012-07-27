@@ -1,0 +1,77 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_reduc_rate_by_point " "1_post_rate_in_year " "1_is_rule_of_journal " "0_boost_rate_to_% " "1_is_rate_on_loan " "0_take_risk_with_capit " "1_taken_role_on_strategi " "1_told_report_at_entitynam " "1_expect_rate_of_loan " "1_follow_rule_on_depreci " "1_assum_rate_of_inflat " "0_rais_rate_from_yearnum " "0_push_rate_to_% "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_hedg_risk_in_market "}
+edge [color="#B0E2FF"];
+
+	"0_reduc_rate_by_point " -- "1_post_rate_in_year " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "0_boost_rate_to_% " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "1_expect_rate_of_loan " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "1_assum_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "0_rais_rate_from_yearnum " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"0_reduc_rate_by_point " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_post_rate_in_year " -- "0_boost_rate_to_% " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_expect_rate_of_loan " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_assum_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "0_rais_rate_from_yearnum " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_post_rate_in_year " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_is_rule_of_journal " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"1_is_rule_of_journal " -- "1_expect_rate_of_loan " [w="1", color="#87cefa" ];
+	"1_is_rule_of_journal " -- "1_follow_rule_on_depreci " [w="1", color="#87cefa" ];
+	"1_is_rule_of_journal " -- "1_assum_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_is_rule_of_journal " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_is_rule_of_journal " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_is_rate_on_loan " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_expect_rate_of_loan " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_assum_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "0_rais_rate_from_yearnum " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "0_push_rate_to_% " [w="3", color="#0000cd" , len=0.6];
+	"0_boost_rate_to_% " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_boost_rate_to_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_taken_role_on_strategi " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_expect_rate_of_loan " [w="2", color="#1e90ff" , len=0.8];
+	"1_is_rate_on_loan " -- "1_follow_rule_on_depreci " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_assum_rate_of_inflat " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "0_rais_rate_from_yearnum " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_is_rate_on_loan " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"0_take_risk_with_capit " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_take_risk_with_capit " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "1_follow_rule_on_depreci " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_taken_role_on_strategi " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_told_report_at_entitynam " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_expect_rate_of_loan " -- "1_assum_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_expect_rate_of_loan " -- "0_rais_rate_from_yearnum " [w="1", color="#87cefa" ];
+	"1_expect_rate_of_loan " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"1_expect_rate_of_loan " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_expect_rate_of_loan " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_follow_rule_on_depreci " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_follow_rule_on_depreci " -- "1_follow_rule_by_judg " [w="2", color="#1e90ff" , len=0.8];
+	"1_follow_rule_on_depreci " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "0_rais_rate_from_yearnum " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_assum_rate_of_inflat " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_rais_rate_from_yearnum " -- "0_push_rate_to_% " [w="1", color="#87cefa" ];
+	"0_rais_rate_from_yearnum " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_rais_rate_from_yearnum " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_push_rate_to_% " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"0_push_rate_to_% " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}

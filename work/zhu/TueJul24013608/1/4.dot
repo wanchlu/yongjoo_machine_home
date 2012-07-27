@@ -1,0 +1,24 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "0_acquir_entitynam_for_othernum " "1_acquir_on_of_machin " "0_us_it_for_year " "0_sell_busi_to_entitynam "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_us_stock_of_capit " "1_see_improv_in_margin " "1_hold_meet_for_sharehold " "1_acquir_othernum_of_restaur "}
+edge [color="#B0E2FF"];
+
+	"0_acquir_entitynam_for_othernum " -- "1_acquir_on_of_machin " [w="1", color="#87cefa" ];
+	"0_acquir_entitynam_for_othernum " -- "0_us_it_for_year " [w="1", color="#87cefa" ];
+	"0_acquir_entitynam_for_othernum " -- "1_hold_meet_for_sharehold " [w="1", color="#87cefa" ];
+	"0_acquir_entitynam_for_othernum " -- "1_acquir_othernum_of_restaur " [w="1", color="#87cefa" ];
+	"1_acquir_on_of_machin " -- "1_us_stock_of_capit " [w="1", color="#87cefa" ];
+	"1_acquir_on_of_machin " -- "1_acquir_othernum_of_restaur " [w="2", color="#1e90ff" , len=0.8];
+	"0_us_it_for_year " -- "0_us_peopl_as_control " [w="1", color="#87cefa" ];
+	"0_us_it_for_year " -- "1_us_stock_of_capit " [w="1", color="#87cefa" ];
+	"0_us_it_for_year " -- "1_hold_meet_for_sharehold " [w="1", color="#87cefa" ];
+	"0_sell_busi_to_entitynam " -- "0_sell_put_at_profit " [w="1", color="#87cefa" ];
+	"0_sell_busi_to_entitynam " -- "0_sell_coffe_under_brand " [w="1", color="#87cefa" ];
+	"0_us_peopl_as_control " -- "1_us_stock_of_capit " [w="1", color="#87cefa" ];
+	"0_sell_put_at_profit " -- "0_sell_coffe_under_brand " [w="1", color="#87cefa" ];
+	"1_us_stock_of_capit " -- "1_acquir_othernum_of_restaur " [w="1", color="#87cefa" ];
+}

@@ -1,0 +1,63 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_outweigh_risk_to_environ " "0_file_report_on_time " "0_give_rate_to_those " "1_hit_rate_of_leader " "1_assum_rate_of_inflat " "0_rais_rate_to_% " "0_ha_role_in_hemispher " "0_restor_rate_to_level "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_await_report_on_loss " "1_reduc_rate_for_deposit " "1_hedg_risk_in_market " "1_calcul_rate_of_option "}
+edge [color="#B0E2FF"];
+
+	"1_outweigh_risk_to_environ " -- "0_give_rate_to_those " [w="1", color="#87cefa" ];
+	"1_outweigh_risk_to_environ " -- "0_rais_rate_to_% " [w="1", color="#87cefa" ];
+	"1_outweigh_risk_to_environ " -- "0_restor_rate_to_level " [w="1", color="#87cefa" ];
+	"1_outweigh_risk_to_environ " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_file_report_on_time " -- "1_await_report_on_loss " [w="2", color="#1e90ff" , len=0.8];
+	"0_file_report_on_time " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "1_hit_rate_of_leader " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "1_assum_rate_of_inflat " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "0_rais_rate_to_% " [w="2", color="#1e90ff" , len=0.8];
+	"0_give_rate_to_those " -- "0_restor_rate_to_level " [w="2", color="#1e90ff" , len=0.8];
+	"0_give_rate_to_those " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_give_rate_to_those " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "1_assum_rate_of_inflat " [w="2", color="#1e90ff" , len=0.8];
+	"1_hit_rate_of_leader " -- "0_rais_rate_to_% " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "0_restor_rate_to_level " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_hit_rate_of_leader " -- "1_calcul_rate_of_option " [w="2", color="#1e90ff" , len=0.8];
+	"1_assum_rate_of_inflat " -- "0_rais_rate_to_% " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "0_restor_rate_to_level " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_assum_rate_of_inflat " -- "1_calcul_rate_of_option " [w="2", color="#1e90ff" , len=0.8];
+	"0_rais_rate_to_% " -- "0_restor_rate_to_level " [w="2", color="#1e90ff" , len=0.8];
+	"0_rais_rate_to_% " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_rais_rate_to_% " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_rais_rate_to_% " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_rais_rate_to_% " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_ha_role_in_hemispher " -- "1_pursu_role_of_senat " [w="1", color="#87cefa" ];
+	"0_ha_role_in_hemispher " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_ha_role_in_hemispher " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_restor_rate_to_level " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_restor_rate_to_level " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_restor_rate_to_level " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_restor_rate_to_level " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "0_charg_rate_for_time " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_adopt_rule_of_construct " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+}

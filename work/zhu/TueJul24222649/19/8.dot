@@ -1,0 +1,65 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_involv_risk_than_portfolio " "1_turn_rate_at_entitynam " "0_reckon_rate_at_% " "0_be_risk_dure_year " "0_rais_rate_by_point " "0_jolt_rate_in_month " "1_confirm_rate_on_paper " "0_lower_rate_by_% "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_pursu_role_of_senat " "1_reduc_rate_for_deposit " "1_adopt_rule_of_construct " "1_hedg_risk_in_market " "1_calcul_rate_of_option "}
+edge [color="#B0E2FF"];
+
+	"1_involv_risk_than_portfolio " -- "0_be_risk_dure_year " [w="1", color="#87cefa" ];
+	"1_involv_risk_than_portfolio " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "0_reckon_rate_at_% " [w="2", color="#1e90ff" , len=0.8];
+	"1_turn_rate_at_entitynam " -- "0_rais_rate_by_point " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "0_jolt_rate_in_month " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "0_lower_rate_by_% " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_turn_rate_at_entitynam " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "0_rais_rate_by_point " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "0_jolt_rate_in_month " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "0_lower_rate_by_% " [w="2", color="#1e90ff" , len=0.8];
+	"0_reckon_rate_at_% " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_reckon_rate_at_% " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_be_risk_dure_year " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_be_risk_dure_year " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "0_jolt_rate_in_month " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "0_lower_rate_by_% " [w="2", color="#1e90ff" , len=0.8];
+	"0_rais_rate_by_point " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_rais_rate_by_point " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_jolt_rate_in_month " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"0_jolt_rate_in_month " -- "0_lower_rate_by_% " [w="1", color="#87cefa" ];
+	"0_jolt_rate_in_month " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_jolt_rate_in_month " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_jolt_rate_in_month " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"0_jolt_rate_in_month " -- "0_have_rate_in_year " [w="2", color="#1e90ff" , len=0.8];
+	"0_jolt_rate_in_month " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "0_lower_rate_by_% " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_await_report_on_loss " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_lower_rate_by_% " -- "1_reduc_rate_for_deposit " [w="1", color="#87cefa" ];
+	"0_lower_rate_by_% " -- "0_charg_rate_for_time " [w="1", color="#87cefa" ];
+	"0_lower_rate_by_% " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_lower_rate_by_% " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_adopt_rule_of_construct " [w="1", color="#87cefa" ];
+	"1_pursu_role_of_senat " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "0_charg_rate_for_time " [w="2", color="#1e90ff" , len=0.8];
+	"1_reduc_rate_for_deposit " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"1_reduc_rate_for_deposit " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_charg_rate_for_time " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_adopt_rule_of_construct " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+	"1_hedg_risk_in_market " -- "0_have_rate_in_year " [w="1", color="#87cefa" ];
+	"0_have_rate_in_year " -- "1_calcul_rate_of_option " [w="1", color="#87cefa" ];
+}

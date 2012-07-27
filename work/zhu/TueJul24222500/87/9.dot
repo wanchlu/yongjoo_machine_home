@@ -1,0 +1,39 @@
+Graph G{ 
+    node
+    [shape=polygon,style=filled,width=.5,height=.06,color="#BDFCC9",fixedsize=true,fontsize=4,
+    fontcolor="#2f4f4f"];
+    {node
+    [color="#ffffe0", fontcolor="#8b7d6b"] "1_back_role_as_mediat " "1_lower_rate_of_debt " "0_spread_risk_over_base " "1_increas_rate_of_return " "0_review_rule_over_month " "1_plai_role_in_fall " "1_drive_rate_on_secur " "1_confirm_rate_on_paper " "1_plai_role_in_fuel "}
+{node [color="#fff0f5", fontcolor="#b22222"] "1_follow_rule_by_judg " "0_have_role_with_audit "}
+edge [color="#B0E2FF"];
+
+	"1_back_role_as_mediat " -- "1_plai_role_in_fall " [w="1", color="#87cefa" ];
+	"1_back_role_as_mediat " -- "1_plai_role_in_fuel " [w="1", color="#87cefa" ];
+	"1_back_role_as_mediat " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_increas_rate_of_return " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_of_debt " -- "1_drive_rate_on_secur " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"1_lower_rate_of_debt " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_lower_rate_of_debt " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_spread_risk_over_base " -- "0_review_rule_over_month " [w="1", color="#87cefa" ];
+	"0_spread_risk_over_base " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_increas_rate_of_return " -- "1_drive_rate_on_secur " [w="1", color="#87cefa" ];
+	"1_increas_rate_of_return " -- "1_confirm_rate_on_paper " [w="1", color="#87cefa" ];
+	"1_increas_rate_of_return " -- "1_compar_rate_of_group " [w="2", color="#1e90ff" , len=0.8];
+	"1_increas_rate_of_return " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"0_review_rule_over_month " -- "1_follow_rule_by_judg " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fall " -- "1_plai_role_in_fuel " [w="3", color="#0000cd" , len=0.6];
+	"1_plai_role_in_fall " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fall " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "1_confirm_rate_on_paper " [w="2", color="#1e90ff" , len=0.8];
+	"1_drive_rate_on_secur " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_drive_rate_on_secur " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_confirm_rate_on_paper " -- "1_includ_report_on_trade " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_compar_rate_of_group " [w="1", color="#87cefa" ];
+	"1_confirm_rate_on_paper " -- "1_reduc_rate_on_million " [w="2", color="#1e90ff" , len=0.8];
+	"1_plai_role_in_fuel " -- "1_hedg_risk_in_market " [w="1", color="#87cefa" ];
+	"1_plai_role_in_fuel " -- "0_have_role_with_audit " [w="1", color="#87cefa" ];
+	"1_includ_report_on_trade " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+	"1_compar_rate_of_group " -- "1_reduc_rate_on_million " [w="1", color="#87cefa" ];
+}
